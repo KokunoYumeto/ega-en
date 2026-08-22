@@ -3,8 +3,8 @@
 [Open the current complete linked English PDF](reader/00_EGA_EN_COMPLETE_LINKED_READER.pdf)
 
 - Stable English-edition DOI: [10.5281/zenodo.21921591](https://doi.org/10.5281/zenodo.21921591)
-- Exact public release: [10.5281/zenodo.22058763](https://doi.org/10.5281/zenodo.22058763)
-- Compact Figshare mirror: [10.6084/m9.figshare.33314847.v1](https://doi.org/10.6084/m9.figshare.33314847.v1)
+- Exact public release: [10.5281/zenodo.22061885](https://doi.org/10.5281/zenodo.22061885)
+- Compact Figshare mirror: [10.6084/m9.figshare.33314847.v2](https://doi.org/10.6084/m9.figshare.33314847.v2)
 - Global EGA directory: [10.5281/zenodo.20414353](https://doi.org/10.5281/zenodo.20414353)
 - Controlling French edition: [10.5281/zenodo.21921588](https://doi.org/10.5281/zenodo.21921588)
 
@@ -13,6 +13,8 @@
 This repository contains the complete linked standalone English EGA 0–IV source tree and reader. The inherited English text is a discovery witness: the cumulative direct-French recheck is complete through the terminal page of EGA III-1, and the sealed complete EGA III-2 handoff is integrated. This wording does not claim that every inherited EGA IV page has completed the direct-French recheck.
 
 Every admitted departure, retained correction, fidelity repair, normalization, erratum and reversal is controlled against the French NUMDAM authority. The French and English editions remain independent; no bilingual, parallel, side-by-side, paired or interleaved reader is produced.
+
+This release adds provenance control `CORR43`: the already-corrected contravariant composition identity in the remark after EGA I 1.2.3 is now explicitly classified as a source-grounded repair of an authorial French error. The English source and reader body remain byte-identical.
 
 ## Contents
 
@@ -23,6 +25,6 @@ Every admitted departure, retained correction, fidelity repair, normalization, e
 - `release/`: editable-source archive, public manifest and full-provenance pointer.
 - `evidence/`: exact release identity and access to decisions, inverses and QA.
 
-The tracked PDF contains 1,376 pages, 15,280,496 bytes, SHA-256 `C27977B186C24AD508B586CA1F8A97FA9224EC6841F1F24BE8C3B6345A1463B9`.
+The tracked PDF contains 1,376 pages, 15,280,497 bytes, SHA-256 `94CA8A11EB6CB90E252F0654766F679901ECC770241ABB88D138A85E7EC463D7`.
 
 No human review, institutional certification or endorsement by the authors, IHÉS, NUMDAM or an upstream Stacks maintainer is claimed. Project contribution: `AI typesetting & translation`.
