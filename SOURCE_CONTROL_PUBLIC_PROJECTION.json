@@ -1,24 +1,100 @@
 {
   "schema": "ega_compact_english_source_manifest_successor_v1",
-  "id": "R31B42R",
+  "id": "R31B46",
   "edition": "independent standalone/global English recheck",
-  "date": "2026-08-22",
+  "date": "2026-08-23",
   "pass": true,
-  "status": "append-only co-current source successor after a sibling-owned EGA IV-2 visual-fidelity repair; EGA III-1 owned source remains byte-identical and complete through its final printed page",
-  "predecessor": {"path": "controls/R31B42.json", "bytes": 4858, "sha256": "E5A19D80BE5F26F032A847BD88733FAE1EE5FF256997817D8525886A0F2E5728", "files": 127, "bytes_total": 7373516, "serialization_bytes": 12890, "tree_sha256": "29E97E1DB70D9F8AA88B451912BC96F81CEF21838E3A15ECA7BE444FF80AF3AC"},
-  "paired_french": {"path": "French controls/F38BN.json", "bytes": 4425, "sha256": "3F60472396E1A9574EDD94B9BC62414DAD9B0F7041C1E024B91E67968B35DE2D", "tree_sha256": "F2C255EABFD495A3AA38479B1760151125FDE2FFBD94ABEF351ACD810E6F02DB"},
-  "contract": {"path_list_from": {"path": "controls/R296.json", "bytes": 25530, "sha256": "FC49CB3B5EC5E05D4738CDE06FBB46910C9F33902644C9FCEDE02C00A338573D"}, "file_count": 127, "total_bytes": 7373516, "serialization_bytes": 12890, "canonical_tree_sha256": "CABE2E7468FAA80D51B9261B92C056513AE571FE5817B01358D86C2E3D5C23D1", "canonicalization": "exact sealed 127-member source contract in .NET StringComparer.Ordinal path order; relative_path TAB decimal_bytes TAB uppercase_sha256 LF; UTF-8 without BOM"},
-  "owned_ega_iii1": {"relative_path": "ega3/ega3-5.tex", "bytes": 57464, "sha256": "049F86A740B5A38CDF36B6F7001D6E7A8B34D1975ED5CD990A75BA833D0173E8", "disposition": "unchanged from R31B42; the EGA III-1 exact inverse remains solely the append truncation recorded there"},
-  "co_current_sibling_update": {
-    "ownership": "read-only EGA IV-2 source bytes supplied by the sibling owner; EGA III-1 neither altered nor independently certified the sibling source",
-    "relative_path": "components/09_section59_z_pure_z_closed_modules.tex",
-    "before": {"bytes": 17147, "sha256": "FCA9F520F5292E83CC6B3B308B19E41D4A6A51FB967EE3B37FB674C32A77C856"},
-    "after": {"bytes": 17147, "sha256": "AFBF5B5BAA75E7FA89142C1D4ED1FFD78AF46E5BCC4BB311E1F189DD242F2C49"},
-    "mechanical_delta": {"zero_based_byte_offsets": [13564, 13846], "before_byte": 94, "after_byte": 95, "description": "two lower horizontal xymatrix labels changed from superscript marker ^ to subscript marker _"},
-    "reader_disposition": "included so the cumulative/global reader is co-current; the final page 841 render was independently localized and visually inspected for below-arrow placement"
+  "status": "exact isolated release-source successor admitting seven directly verified EGA I authorial defects through CORR45 and CORR46; three English files changed, diplomatic French remains unchanged, and eight unrelated mutable shared-English rows remain excluded",
+  "predecessor": {
+    "path": "controls/R31B42R.json",
+    "bytes": 3771,
+    "sha256": "B66EC9D8F6E6F731E81FDF22C4A8EBC7D507548DEB785C78AD2AAB9B32B81594",
+    "files": 127,
+    "bytes_total": 7373516,
+    "serialization_bytes": 12890,
+    "tree_sha256": "CABE2E7468FAA80D51B9261B92C056513AE571FE5817B01358D86C2E3D5C23D1"
   },
-  "build_source_isolation": {"root": "tmp/pdfs/b42r-en-src", "mode": "exact 127-member source snapshot; no metadata files or files outside the sealed contract", "snapshot": {"files": 127, "total_bytes": 7373516, "serialization_bytes": 12890, "tree_sha256": "CABE2E7468FAA80D51B9261B92C056513AE571FE5817B01358D86C2E3D5C23D1"}, "final_live_replay": "127/127 exact after the five-pass build"},
-  "exact_inverse": {"scope": "this append-only co-current control and isolated reader snapshot only", "operation": "restore the R31B42 source-control pointer and its exact isolated snapshot; do not mutate the live sibling-owned source row", "result_tree_sha256": "29E97E1DB70D9F8AA88B451912BC96F81CEF21838E3A15ECA7BE444FF80AF3AC", "owned_ega_iii1_inverse": "controls/R31B42.json", "sibling_source_inverse": "belongs exclusively to the EGA IV-2 producer lineage"},
+  "paired_french": {
+    "path": "French controls/F38BN.json",
+    "bytes": 4425,
+    "sha256": "3F60472396E1A9574EDD94B9BC62414DAD9B0F7041C1E024B91E67968B35DE2D",
+    "tree_sha256": "F2C255EABFD495A3AA38479B1760151125FDE2FFBD94ABEF351ACD810E6F02DB",
+    "disposition": "unchanged diplomatic French; printed defects are catalogued separately"
+  },
+  "correction_controls": [
+    {
+      "path": "French controls/CORR45.json",
+      "bytes": 9151,
+      "sha256": "EB6939D1F54D58E572CE07617458660728D91660C5ED31B052C21D60CDD1DA85",
+      "findings": 6
+    },
+    {
+      "path": "French controls/CORR46.json",
+      "bytes": 3340,
+      "sha256": "5FD955CC612065E30B109AF71F9AA224E522C1FF0790D9F14E30BC34EF635968",
+      "findings": 1
+    }
+  ],
+  "contract": {
+    "path_list_from": {
+      "path": "controls/R296.json",
+      "bytes": 25530,
+      "sha256": "FC49CB3B5EC5E05D4738CDE06FBB46910C9F33902644C9FCEDE02C00A338573D"
+    },
+    "file_count": 127,
+    "total_bytes": 7373604,
+    "serialization_bytes": 12890,
+    "canonical_tree_sha256": "FD20159C51B06C2096EEEAB961B3C6382B2412A545886BF4315F28A01ECEF6C6",
+    "canonicalization": "exact sealed 127-member source contract in .NET StringComparer.Ordinal path order; relative_path TAB decimal_bytes TAB uppercase_sha256 LF; UTF-8 without BOM"
+  },
+  "changed_rows": [
+    {
+      "relative_path": "ega1/ega1-5.tex",
+      "before": {"bytes": 48204, "sha256": "6F4B57A25F15B50A3F9D6C9D37192C79C6D5CBA8AD1BA46198272C2D053EA0F1"},
+      "after": {"bytes": 48242, "sha256": "90DC0324229DD94C91C066EA2BEEF9914AB33C75CD62B6A39AFD3588E19CC375"},
+      "findings": ["5.5.5 citation", "5.5.9 citations", "5.5.11 doubled-plane condition description"],
+      "retained_correction": "5.5.11 doubled-origin ideal already correctly reads (s)"
+    },
+    {
+      "relative_path": "ega1/ega1-6.tex",
+      "before": {"bytes": 54978, "sha256": "F893DB8467CCEC86C895B1401540229A229277F75FA21875C9B0F6E86CAC166D"},
+      "after": {"bytes": 55021, "sha256": "990DF9E209D804AAC103CE3B23C5F5F2307CD57B87C3A6F4F6E699AA9227C9FD"},
+      "findings": ["6.1.8 missing intersection with U", "6.1.12 missing nonempty hypothesis"]
+    },
+    {
+      "relative_path": "ega1/ega1-10.tex",
+      "before": {"bytes": 143891, "sha256": "A2C0E4054629D417FB0CF18C9F6833336CF9A136AF83379B6304984FEB00F621"},
+      "after": {"bytes": 143898, "sha256": "018981F67E0754648A685A6B54FABCF8AFE5F4FE8132A2794E26476E9FDC7E1E"},
+      "finding": "10.9.9 missing 'formal' before prescheme X_{/X'}"
+    }
+  ],
+  "owned_ega_iii1": {
+    "relative_path": "ega3/ega3-5.tex",
+    "bytes": 57464,
+    "sha256": "049F86A740B5A38CDF36B6F7001D6E7A8B34D1975ED5CD990A75BA833D0173E8",
+    "disposition": "unchanged and hash-identical"
+  },
+  "build_source_isolation": {
+    "root": "French tmp/pdfs/c45-en-src/source",
+    "mode": "exact 127-member release snapshot incrementally advanced by the three admitted English rows only",
+    "snapshot": {
+      "files": 127,
+      "total_bytes": 7373604,
+      "serialization_bytes": 12890,
+      "tree_sha256": "FD20159C51B06C2096EEEAB961B3C6382B2412A545886BF4315F28A01ECEF6C6"
+    },
+    "exclusion": "eight independently mutable shared-English rows are not compiled or certified"
+  },
+  "exact_inverse": {
+    "operation": "apply the exact CORR46 inverse, then the five CORR45 textual inverses, to the three changed rows; all other rows remain byte-identical",
+    "result_files": 127,
+    "result_serialization_bytes": 12890,
+    "result_tree_sha256": "CABE2E7468FAA80D51B9261B92C056513AE571FE5817B01358D86C2E3D5C23D1",
+    "proof": "the inverse tree serialization was recomputed in memory from all 127 current rows using the recorded predecessor identities and .NET ordinal ordering"
+  },
   "separation": "independent English edition only; no bilingual, parallel, paired, side-by-side, or interleaved edition",
-  "cursor": {"paired_ega_iii1_through": "final printed page 511 of EGA III, premiere partie", "next": "STOP: EGA III-1 complete; EGA III-2 is a sealed read-only dependency and is not production scope"}
+  "cursor": {
+    "owned_ega_iii1": "complete through final printed page 511",
+    "canon_keeper": "seven newly admitted EGA I findings sealed; resume bounded findings and terminal IV handoff monitoring"
+  }
 }
