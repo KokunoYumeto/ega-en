@@ -699,7 +699,7 @@ If we set $X_\lambda=f^{-1}(Y_\lambda)$, everything reduces, by taking \sref{I.4
 But if we set $Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$ and $X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$, then $X_\lambda\times_Y X_\mu$ can be identified with the product $X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$ \sref{I.3.2.6.4}, and so also with $X_{\lambda\mu}\times_Y X_{\lambda\mu}$ \sref{I.3.2.5}, and finally with an open subset of $X_\lambda\times_Y X_\lambda$, which proves our claim \sref{I.3.2.7}.
 \end{proof}
 
-Proposition~\sref{I.5.5.4} allows us, by taking an affine open cover of $Y$, to reduce the study of separated morphisms to that of separated morphisms taking values in affine schemes.
+Proposition~\sref{I.5.5.5} allows us, by taking an affine open cover of $Y$, to reduce the study of separated morphisms to that of separated morphisms taking values in affine schemes.
 
 \begin{proposition}[5.5.6]
 \label{I.5.5.6}
@@ -740,8 +740,8 @@ For a morphism $f:X\to Y$ to be separated, it is necessary for the induced presc
 \end{corollary}
 
 \begin{proof}
-The necessity of the condition follows from \sref{I.5.5.4} and \sref{I.5.5.1}[ii];
-the sufficiency follows from \sref{I.5.5.4} and \sref{I.5.5.8}, taking into account the existence of affine open covers of $Y$.
+The necessity of the condition follows from \sref{I.5.5.5} and \sref{I.5.5.1}[ii];
+the sufficiency follows from \sref{I.5.5.5} and \sref{I.5.5.8}, taking into account the existence of affine open covers of $Y$.
 \end{proof}
 
 In particular, if $X$ and $Y$ are affine schemes, then \emph{every} morphism $X\to Y$ is separated.
@@ -771,14 +771,14 @@ we now obtain, by gluing, a \emph{non-separated integral} prescheme $X$, because
 It is immediate here that $\Gamma(X,\sh{O}_X)\to\Gamma(X_1,\sh{O}_X)=K[s]$ is an isomorphism;
 the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\mathfrak{j}_y\neq(s)$, $f^{-1}(y)$ consists of a single point, but for $\mathfrak{j}_y=(s)$, $f^{-1}(y)$ consists of \emph{two} distinct points\footnote{\emph{[Trans.] The French source prints $(0)$ in both ideal conditions. For the doubled origin in $\Spec(K[s])$, the relevant prime ideal is $(s)$; $(0)$ is the generic point.}} (we say that $X$ is the ``affine line over $K$ with the point $0$ doubled'').
 
-We can also give examples where \emph{neither} of the two conditions of \sref{I.5.5.6} is satisfied.
+We can also give an example where the first of the two conditions of \sref{I.5.5.6} is not satisfied.
 First note that, in the prime spectrum $Y$ of the ring $A=K[s,t]$ of polynomials in two indeterminates over a field $K$, the open subset $U$ given by the union of $D(s)$ and $D(t)$ is \emph{not an affine open subset}.
 Indeed, if $z$ is a section of $\sh{O}_Y$ over $U$, there exist two integers $m,n\geq0$ such that $s^mz$ and $t^nz$ are the restrictions of polynomials in $s$ and $t$ to $U$ \sref{I.1.4.1}, which is clearly possible only if the section $z$ extends to a section over the whole of $Y$, identified with a polynomial in $s$ and $t$.
 If $U$ were an affine open subset, then the injection morphism $U\to Y$ would be an isomorphism \sref{I.1.7.3}, which is a contradiction, since $U\neq Y$.
 
 With the above in mind, take two affine schemes $Y_1$ and $Y_2$, prime spectra of the rings $A_1=K[s_1,t_1]$ and $A_2=K[s_2,t_2]$ (respectively);
 take $U_{12}=D(s_1)\cup D(t_1)$ and $U_{21}=D(s_2)\cup D(t_2)$, and take $u_{12}$ to be the restriction of an isomorphism $Y_2\to Y_1$ to $U_{21}$ corresponding to the isomorphism of rings that sends $f(s_1,t_1)$ to $f(s_2,t_2)$;
-we then have an example where neither condition of \sref{I.5.5.6} is satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$ with the point $0$ doubled'').
+we then have an example where the first condition of \sref{I.5.5.6} is not satisfied, while the second is satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$ with the point $0$ doubled'').
 \end{examples}
 
 \begin{remark}[5.5.12]
