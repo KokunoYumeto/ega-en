@@ -1835,9 +1835,10 @@ Let $\mathrm{C}'=\mathrm{C}\otimes_{\mathrm{A}}({}^{hs}\!\mathrm{A})$ and $\math
 let $f:\mathrm{C}\to\mathrm{C}'$, $g:{}^{hs}\!\mathrm{A}\to\mathrm{C}'$, $\vphi_i:\mathrm{C}'\to\mathrm{C}'_i$ be the canonical maps.
 \[
   \xymatrix{
-    && {}^{hs}\!\mathrm{C} \ar@/^1.2pc/[d]^{w'} \\
-    \mathrm{C} \ar[urr]^{v} \ar[r]_{f} & \mathrm{C}' \ar[r] & \mathrm{C}'_i \ar@/^1.2pc/[u]^{w} \\
-    \mathrm{A} \ar[u] \ar[r] & {}^{hs}\!\mathrm{A} \ar[u]^{g} \ar[uur]_{u}
+    &&& {}^{hs}\!\mathrm{C} \ar@<0.8ex>[dl]_{w'} \\
+    && \mathrm{C}'_i \ar@<0.8ex>[ur]_{w} \\
+    \mathrm{C} \ar[uurrr]^{v} \ar[r]_{f} & \mathrm{C}' \ar[ur] \\
+    \mathrm{A} \ar[u] \ar[r] & {}^{hs}\!\mathrm{A} \ar[u]^{g} \ar[uuurr]_{u}
   }
 \]
 Let $v:\mathrm{C}\to{}^{hs}\!\mathrm{C}$ be the canonical local homomorphism;
@@ -1949,7 +1950,7 @@ Then the formal fibres of $\mathrm{A}$ are geometrically integral (hence geometr
 \end{theorem}
 
 \begin{proof}
-The two assertions stated are in fact equivalent, a prescheme that is locally Noetherian connected and normal being integral.
+The two assertions stated are in fact equivalent, a prescheme that is locally Noetherian, connected and normal being integral.
 As every finite integral A-algebra is a Henselian local ring \sref{IV.18.5.9} and \sref{IV.18.5.10}, it follows from \sref{IV.7.3.16.2} that one is reduced to proving that if one further supposes A \emph{integral}, then the fibre of the morphism $\Spec(\hat{\mathrm{A}})\to\Spec(\mathrm{A})$ at the generic point of $\Spec(\mathrm{A})$ is \emph{integral}, which follows from the following corollary.
 \end{proof}
 
@@ -1984,7 +1985,9 @@ As $g$ is a faithfully flat and quasi-compact morphism \sref{IV.2.3.12}, one kno
 It therefore amounts to seeing that an open and closed subset $\mathrm{U}'$ of $\mathrm{X}'$ is \emph{saturated} for this relation.
 Now, as the morphism $\Spec(\mathrm{A}')\to\Spec(\mathrm{A})$ has its fibres geometrically connected \sref{IV.18.9.1}, the fibres of $g$ are connected, whence our assertion immediately follows.
 
-In particular, if X is locally connected (which will be the case if X is locally Noetherian), then, for every connected component U of X (which is open and closed), $g^{-1}(\mathrm{U})$ is connected (Bourbaki, \emph{Top. g\'{e}n.}, chap.~I\textsuperscript{er}, 3\textsuperscript{e} \'{e}d., \S~11, no~3, prop.~7).
+In particular, if X is locally connected (which will be the case if X is locally Noetherian), then, for every connected component U of X (which is open and closed
+\oldpage[IV]{151}
+in X), $g^{-1}(\mathrm{U})$ is connected (Bourbaki, \emph{Top. g\'{e}n.}, chap.~I\textsuperscript{er}, 3\textsuperscript{e} \'{e}d., \S~11, no~3, prop.~7).
 If one denotes by $\pi_0(\mathrm{X})$ the set of connected components of X, the map $\pi_0(\mathrm{X}')\to\pi_0(\mathrm{X})$ canonically deduced from $g$ is therefore \emph{bijective}.
 \end{proof}
 
@@ -2000,11 +2003,10 @@ from the category of \'{e}tale preschemes over $\mathrm{X}$, to that of \'{e}tal
 \end{corollary}
 
 \begin{proof}
-\oldpage[IV]{151}
 Let $\mathrm{Z}_1$, $\mathrm{Z}_2$ be two \'{e}tale preschemes over X, and set $\mathrm{Z}'_i=\mathrm{Z}_i\otimes_{\mathrm{A}}\mathrm{A}'$ ($i=1,2$);
 it is a matter of proving that every $\mathrm{X}'$-morphism $\mathrm{Z}'_1\to\mathrm{Z}'_2$ comes, by base change, from a unique X-morphism $\mathrm{Z}_1\to\mathrm{Z}_2$.
 Suppose first that $\mathrm{Z}_2$ is \emph{separated} over X;
-then, as $\Hom_{\mathrm{X}}(\mathrm{Z}_1,\mathrm{Z}_2)$ identifies with $\Gamma((\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2)/\mathrm{Z}_1)$, and that $\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2$ is \'{e}tale and separated over $\mathrm{Z}_1$, by virtue of \sref{IV.17.9.3}, to the set of open and closed subsets U of $\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2$ such that the restriction to U of the projection $p:\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2\to\mathrm{Z}_1$ is a surjective and radicial morphism.
+then, as $\Hom_{\mathrm{X}}(\mathrm{Z}_1,\mathrm{Z}_2)$ identifies with $\Gamma((\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2)/\mathrm{Z}_1)$, and as $\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2$ is \'{e}tale and separated over $\mathrm{Z}_1$, $\Hom_{\mathrm{X}}(\mathrm{Z}_1,\mathrm{Z}_2)$ identifies functorially, by virtue of \sref{IV.17.9.3}, with the set of open and closed subsets U of $\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2$ such that the restriction to U of the projection $p:\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2\to\mathrm{Z}_1$ is a surjective and radicial morphism.
 The assertion thus follows from \sref{IV.18.9.4} and the fact that $\mathrm{Z}'_1\times_{\mathrm{X}'}\mathrm{Z}'_2=(\mathrm{Z}_1\times_{\mathrm{X}}\mathrm{Z}_2)\otimes_{\mathrm{A}}\mathrm{A}'$.
 
 Let us pass to the general case.
@@ -2013,7 +2015,7 @@ Indeed, the restriction to $\Gamma$ of the projection $p:\mathrm{Z}\to\mathrm{Z}
 The conclusion then follows from the characterisation of graphs \sref[I]{I.5.3}.
 
 If $q:\mathrm{Z}'=\mathrm{Z}\otimes_{\mathrm{A}}\mathrm{A}'\to\mathrm{Z}$ is the canonical projection, it remains to prove that $\Gamma'=q^{-1}(\Gamma)$ for an open subset $\Gamma$ of Z.
-Since $q$ is faithfully flat and quasi-compact, it suffices \sref{IV.2.3.12} to prove that $\Gamma'=q^{-1}(\mathrm{U})$ for an open subset $\mathrm{U}\subset\mathrm{Z}$.
+Since $q$ is faithfully flat and quasi-compact, it suffices \sref{IV.2.3.12} to prove that $\Gamma'=q^{-1}(\mathrm{U})$ for a subset $\mathrm{U}\subset\mathrm{Z}$.
 Let $\mathrm{Z}''=\mathrm{Z}'\times_{\mathrm{Z}}\mathrm{Z}'=\mathrm{Z}\times_{\mathrm{X}}\mathrm{X}''$ where $\mathrm{X}''=\mathrm{X}'\times_{\mathrm{X}}\mathrm{X}'$, and let $q_1:\mathrm{Z}''\to\mathrm{Z}'$, $q_2:\mathrm{Z}''\to\mathrm{Z}'$ be the canonical projections.
 Applying \sref{IV.4.5.19.1}, it suffices to show that $q_1^{-1}(\Gamma')=q_2^{-1}(\Gamma')$.
 But this is a property which is true if and only if it is true after each base change $\Spec(k(x))\to\mathrm{X}$, where $x$ ranges over X.
@@ -2026,13 +2028,14 @@ but as every X-prescheme that is \'{e}tale is automatically \emph{separated} ove
 \begin{enumerate}[label=\emph{\roman*)}]
   \item It is possible that, if the residue field of A is of characteristic 0, the functor \sref{IV.18.9.5.1} induces even an \emph{equivalence} of the category of \'{e}tale coverings of X and the category of \'{e}tale coverings of $\mathrm{X}'$.
   One can indeed prove this when A is \emph{excellent}, using the resolution of singularities of Hironaka (M.~Artin).
-  It is plausible that an analogous statement is still true without restriction on the characteristic of the residue field, provided one restricts to the \'{e}tale coverings whose ``principal Galois groups'' have order prime to the residual characteristic (cf.~[41]).
+  It is plausible that an analogous statement is still true without restriction on the characteristic of the residue field, provided one restricts to the ``principal Galois'' coverings whose group has order prime to the residual characteristic (cf.~[41]).
 
+  \oldpage[IV]{152}
   \item One does not know whether the formal fibres of A are geometrically connected (or even geometrically irreducible) when A is any Henselian local ring.
   It would suffice that, for every Noetherian Henselian local \emph{integral} ring A, $\Spec(\hat{\mathrm{A}})$ be irreducible.
   One does not know if this is always the case.
 
-  \item One does not know whether, when A is an excellent local ring, its strict Henselization ${}^{hs}\!\mathrm{A}$ has geometrically regular formal fibres.
+  \item One does not know whether, when A is an excellent local ring, its strict Henselization ${}^{hs}\!\mathrm{A}$ is excellent.
   To elucidate this question, one can reduce to the case where $\mathrm{A}=k[[\mathrm{T}_1,\ldots,\mathrm{T}_n]]$, $k$ being a field of characteristic $p>0$.
   Taking account of \sref{IV.18.8.17}, the question is whether the formal fibres of ${}^{hs}\!\mathrm{A}$ are geometrically regular.
   The answer is affirmative when $n=1$, but is not known for $n=2$.
@@ -2044,9 +2047,8 @@ The connectedness assertion made in \sref{IV.18.9.1} generalises in the followin
 
 \begin{theorem}[18.9.7]
 \label{IV.18.9.7}
-\oldpage[IV]{152}
 Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $\rho:\mathrm{A}\to\mathrm{B}$ a local homomorphism, $f:\Spec(\mathrm{B})=\mathrm{X}\to\Spec(\mathrm{A})=\mathrm{Y}$ the corresponding morphism.
-Suppose the following conditions satisfied:
+Suppose that the following conditions are satisfied:
 \begin{enumerate}[label=\emph{\roman*)}]
   \item $f$ is flat and all the fibres $\mathrm{X}_y=f^{-1}(y)$ ($y\in\mathrm{Y}$) are geometrically reduced \sref{IV.4.6.2}.
   \item Either the ring $\mathrm{A}$ is geometrically unibranch \sref[0]{0.23.2.1}, or else the ring A is unibranch \sref[0]{0.23.2.1} and $k(\mathrm{B})$ is a primary extension \sref{IV.4.3.1} of $k(\mathrm{A})$.
@@ -2068,7 +2070,9 @@ If K is the field of fractions of A, there then exists a finite A-subalgebra $\m
 Since A is unibranch, $\mathrm{A}'$ is a local ring, and hence so is $\mathrm{A}''$.
 Let us show that the ring $\mathrm{B}''=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}''$ is also local.
 Indeed, $\mathrm{B}''$ is a finite B-algebra, hence a Noetherian semilocal ring.
-If $k''$ is the residue field of $\mathrm{A}''$, the maximal ideals of $\mathrm{B}''$ are the points of $\Spec(\mathrm{B}'')$ lying over the closed point of $\Spec(\mathrm{B})$, hence the points of $\Spec(k(\mathrm{B})\otimes_{k(\mathrm{A})}k'')$ \sref[I]{I.3.4.9}, since the closed point of $\Spec(\mathrm{A}'')$ is the only point lying over the closed point of $\Spec(\mathrm{A})$.
+If $k''$ is the residue field of $\mathrm{A}''$, the maximal ideals of $\mathrm{B}''$ are the points of $\Spec(\mathrm{B}'')$ lying over the closed point of $\Spec(\mathrm{B})$, hence the points of $\Spec(k(\mathrm{B})\otimes_{k(\mathrm{A})}k'')$ \sref[I]{I.3.4.9},
+\oldpage[IV]{153}
+since the closed point of $\Spec(\mathrm{A}'')$ is the only point lying over the closed point of $\Spec(\mathrm{A})$.
 Now, when A is geometrically unibranch, $k''$ is a radicial extension of $k(\mathrm{A})$, so $\Spec(k(\mathrm{B})\otimes_{k(\mathrm{A})}k'')$ is radicial over $\Spec(k(\mathrm{B}))$ and consequently consists of a single point.
 When A is unibranch and $k(\mathrm{B})$ is a primary extension of $k(\mathrm{A})$, $\Spec(k(\mathrm{B})\otimes_{k(\mathrm{A})}k'')$ is irreducible \sref{IV.4.3.2}; since it is a finite discrete space \sref[I]{I.6.4.4}, it again consists of a single point.
 Thus $\mathrm{B}''$ is local in both cases considered.
@@ -2097,7 +2101,7 @@ One is thus reduced to proving the following lemma.
 \begin{lemma}[18.9.7.3]
 \label{IV.18.9.7.3}
 Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $\mathrm{Y}=\Spec(\mathrm{A})$, $\mathrm{X}=\Spec(\mathrm{B})$, $\rho:\mathrm{A}\to\mathrm{B}$ a local homomorphism, $f:\mathrm{X}\to\mathrm{Y}$ the corresponding morphism.
-Suppose the following conditions satisfied:
+Suppose that the following conditions are satisfied:
 \begin{enumerate}[label=\emph{\roman*)}]
   \item $f$ is flat and all the fibres $\mathrm{X}_y$ ($y\in\mathrm{Y}$) are geometrically reduced.
   \item A is integral, geometrically unibranch and $\dim(\mathrm{A})\geq 1$.
@@ -2106,7 +2110,6 @@ Then, if $b$ is the closed point of $\mathrm{X}$, $\mathrm{X}-\{b\}$ is connecte
 \end{lemma}
 
 \begin{proof}
-\oldpage[IV]{153}
 Note first that by virtue of the theorem of Hartshorne \sref{IV.5.10.7}, $\mathrm{X}-\{b\}$ is connected if $\operatorname{prof}(\mathrm{B})\geq 2$.
 Now one has \sref{IV.6.3.1}
 \begin{equation}
@@ -2188,7 +2191,7 @@ Keeping the notations of \sref{IV.18.9.7.5}, and setting $\mathrm{A}^{(1)}=\Gamm
 By virtue of \sref{IV.2.3.1} and of the definition of $\mathrm{A}^{(1)}$, one has a canonical isomorphism $\Gamma(\mathrm{V},\sh{O}_{\mathrm{X}})\xrightarrow{\sim}\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}^{(1)}$, and it suffices therefore to prove that this last ring is \emph{local}, since a local ring cannot be a product of two nonzero rings \sref[III]{III.7.8.6.1}.
 But we have seen \sref{IV.18.9.7.5} that $\mathrm{A}^{(1)}$ is a sub-A-algebra of the integral closure $\mathrm{A}'$ of A, since $\dim(\mathrm{A})\geq 2$.
 The hypothesis that A is geometrically unibranch implies that the morphism $\Spec(\mathrm{A}')\to\Spec(\mathrm{A})$ is radicial at the point $y$ \sref{IV.6.15.3};
-\emph{a fortiori} $g_1$ is radicial at the closed point of X;
+\emph{a fortiori} $g:\mathrm{Y}_1\to\mathrm{Y}$ is radicial at the point $y$, and consequently $g_1$ is radicial at the closed point $x$ of X;
 furthermore $g_1$ is an integral morphism, hence the closed points of $\mathrm{X}_1$ are above $x$, hence there is only one closed point of $\mathrm{X}_1$, which completes the proof of \sref{IV.18.9.7.7}.
 
 It is clear that \sref{IV.18.9.7.7} proves \sref{IV.18.9.7.3} when $\dim(\mathrm{A})\geq 2$ (even without supposing the fibres geometrically reduced).
@@ -2210,7 +2213,7 @@ this concludes the proof of \sref{IV.18.9.7.3} and of \sref{IV.18.9.7}.
 \begin{remark}[18.9.7.8]
 \label{IV.18.9.7.8}
 In case C) of the proof of \sref{IV.18.9.7.3}, one can avoid making appeal to the delicate result \sref{IV.6.15.10} by reasoning as follows:
-since A is integral and unibranch of dimension 1, it follows from the theorem of Krull-Akizuki (Bourbaki, \emph{Alg. comm.}, chap.~VII, \S~2, no~5, prop.~5) that its integral closure $\mathrm{A}'$ is a \emph{Noetherian} ring.
+since A is integral and of dimension 1, it follows from the theorem of Krull-Akizuki (Bourbaki, \emph{Alg. comm.}, chap.~VII, \S~2, no~5, prop.~5) that its integral closure $\mathrm{A}'$ is a \emph{Noetherian} ring.
 The same reasoning as at the beginning of the proof of \sref{IV.18.9.7} shows that $\mathrm{B}'=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}'$ is a local ring;
 furthermore, by flatness, $\mathrm{B}'$ is contained in the total ring of fractions R of the reduced $\mathrm{B}$ \sref{IV.3.3.5}.
 Now, the theorem of Krull-Akizuki (Bourbaki, \emph{loc. cit.}) also applies to a local Noetherian \emph{reduced} ring of dimension 1, and shows that for every such ring B, everything contained between B and its total ring of fractions is \emph{Noetherian}.
@@ -2219,7 +2222,7 @@ The ring $\mathrm{B}'$ being a local Noetherian ring and the morphism $\Spec(\ma
 
 \begin{corollary}[18.9.8]
 \label{IV.18.9.8}
-With the notations of \sref{IV.18.9.7}, suppose verified the condition~(i) of \sref{IV.18.9.7} and one of the two conditions:
+With the notations of \sref{IV.18.9.7}, suppose that condition~(i) of \sref{IV.18.9.7} and one of the following two conditions hold:
 \begin{enumerate}
   \item[\rm(ii$'$)] A is a strictly local ring \sref{IV.18.8.2}.
   \item[\rm(ii$''$)] A is a Henselian local ring and $k(\mathrm{B})$ is a primary extension of $k(\mathrm{A})$.
@@ -2247,7 +2250,7 @@ It suffices to apply \sref{IV.18.9.8} in the case where $\mathrm{B}=\hat{\mathrm
 
 \begin{remark}[18.9.10]
 \label{IV.18.9.10}
-The proofs of \sref{IV.18.9.4} and \sref{IV.18.9.5} do not use the fact that the formal fibres of A are geometrically connected.
+The proofs of \sref{IV.18.9.4} and \sref{IV.18.9.5} use only the fact that the formal fibres of A are geometrically connected.
 The conclusions
 \oldpage[IV]{157}
 of these two propositions are therefore still valid when one supposes the local ring A Noetherian, Henselian and universally Japanese.
@@ -2256,7 +2259,7 @@ of these two propositions are therefore still valid when one supposes the local 
 \begin{corollary}[18.9.11]
 \label{IV.18.9.11}
 Let $\mathrm{X}$, $\mathrm{Y}$ be two locally Noetherian preschemes, $\mathrm{Y}$ being supposed geometrically unibranch and X connected.
-Let $f:\mathrm{X}\to\mathrm{Y}$ be a reduced morphism (i.e.~\sref{IV.6.8.1}), flat and with geometrically reduced fibres.
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a reduced morphism (i.e. flat and with geometrically reduced fibres; \sref{IV.6.8.1}).
 Then, for every closed subset $\mathrm{T}$ of $\mathrm{X}$ such that $f(\mathrm{T})$ is rare in $\mathrm{Y}$, $\mathrm{X}-\mathrm{T}$ is connected.
 \end{corollary}
 
@@ -2275,7 +2278,7 @@ which satisfies conditions~(i) and~(ii) of this theorem, and to the closed subse
 
 \begin{theorem}[18.10.1]
 \label{IV.18.10.1}
-Let $f:X\to Y$ be a locally of finite presentation morphism, $x$ a point of $X$, $y=f(x)$.
+Let $f:X\to Y$ be a morphism locally of finite presentation, $x$ a point of $X$, $y=f(x)$.
 Suppose that $Y$ is integral and geometrically unibranch at the point $y$.
 Then, for $f$ to be \'etale at the point $x$, it is necessary and sufficient that the following two conditions be satisfied:
 \begin{enumerate}[label=\emph{\roman*)}]
@@ -2296,19 +2299,19 @@ It is clear on the other hand that the conditions (i) and (ii) are necessary for
 Let us prove that these conditions are sufficient.
 
 Set $\mathrm{A}=\sh{O}_{Y,y}$, $\mathrm{A}'={}^{\mathrm{hs}}\mathrm{A}$ \sref{IV.18.8.7}, $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A}')$, $\mathrm{X}'=\mathrm{X}\times_{\mathrm{Y}}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$.
-Let $y'$ be the closed point of $\mathrm{Y}'$, $x'$ a point of $\mathrm{X}'$ above $x$ and $y'$; since the morphism $g:\mathrm{Y}'\to\mathrm{Y}$ is \emph{flat} \sref{IV.18.8.8}, it amounts to showing that $f'$ is \'etale at the point $x'$ \sref{IV.17.7.1},(ii)).
+Let $y'$ be the closed point of $\mathrm{Y}'$, $x'$ a point of $\mathrm{X}'$ above $x$ and $y'$; since the morphism $g:\mathrm{Y}'\to\mathrm{Y}$ is \emph{flat} \sref{IV.18.8.8}, it amounts to showing that $f'$ is \'etale at the point $x'$ \sref{IV.17.7.1},~(iii).
 The hypothesis (ii) implies that the morphism $\operatorname{Spec}(\sh{O}_{X,x})\to\operatorname{Spec}(\sh{O}_{Y,y})$ is dominant \sref[I]{I.1.2.7}; as $\sh{O}_{Y,y}$ is integral, $\operatorname{Spec}(\sh{O}_{Y,y})$ has a single generic point $y_1$, and there is a generization $x_1$ of $x$ in $\mathrm{X}$ above $y_1$.
-The projection morphism $\mathrm{X}'\to\mathrm{X}$ being flat, there exists a generization $x_1'$ of $x'$ above $x_1$ \sref{IV.2.3.4}; set $y_1'=f'(x_1')$.
+The projection morphism $\mathrm{X}'\to\mathrm{X}$ being flat, there exists a generization $x_1'$ of $x'$ above $x_1$ \sref{IV.2.3.4}; set $y_1'=f'(x_1')$. We then have $g(y_1')=y_1$.
 Now, the hypothesis on $y$ implies that $\mathrm{A}'$ is \emph{integral} \sref{IV.18.8.15}, hence $\mathrm{Y}'$ has a single generic point $\eta$, necessarily above $y_1$ since $g$
 \oldpage[IV]{158}
 is flat \sref{IV.2.3.4}; on the other hand, $\eta$ is also the generic point of $g^{-1}(y_1)$ \sref[0]{0.2.1.8}, and one knows on the other hand that the fibres of $g$ are discrete spaces \sref{IV.18.8.12}, hence $g^{-1}(y_1)=\{\eta\}$, and consequently $y_1'=\eta$.
 The morphism $\operatorname{Spec}(\sh{O}_{X',x'})\to\operatorname{Spec}(\sh{O}_{Y',y'})$, restriction of $f'$, is therefore dominant, and since $\sh{O}_{Y',y'}=\mathrm{A}'$ is integral, the corresponding homomorphism $\sh{O}_{Y',y'}\to\sh{O}_{X',x'}$ is injective \sref[I]{I.1.2.7}.
-On the other hand, $f'$ is unramified at the point $x'$; hence \sref{IV.18.8.3},~d), there exists a neighbourhood $\mathrm{U}$ of $x'$ in $\mathrm{X}'$ such that $f'|\mathrm{U}$ is a \emph{closed immersion} of U into $\mathrm{Y}'$.
+On the other hand, $f'$ is unramified at the point $x'$; hence \sref{IV.18.8.3},~d), there exists a neighbourhood $\mathrm{U}$ of $x'$ in $\mathrm{X}'$ such that $f'|\mathrm{U}$ is a \emph{closed immersion} of $\mathrm{U}$ into $\mathrm{Y}'$.
 \emph{A fortiori} the homomorphism $\sh{O}_{Y',y'}\to\sh{O}_{X',x'}$ is surjective, and since it is injective, it is therefore \emph{bijective}.
 But then $\sh{O}_{X',x'}$ is a flat $\sh{O}_{Y',y'}$-module, and $f'$ is therefore \'etale at the point $x'$ \sref{IV.17.6.1}.
 
 Finally, when $\sh{O}_{Y,y}$ is Noetherian, we know that if $f$ is \'etale at the point $x$, we have $\dim\sh{O}_{Y,y}=\dim\sh{O}_{X,x}$ \sref{IV.17.6.4}.
-Conversely, suppose the conditions (i) and (ii~bis) satisfied, and let us show that they imply conditions (i) and (ii).
+Conversely, suppose the conditions (i) and (ii~bis) satisfied, and let us show that they imply (ii).
 Let $\mathfrak{J}$ be the kernel of the canonical homomorphism $\sh{O}_{Y,y}\to\sh{O}_{X,x}$; restricting Y as needed to a neighbourhood of $y$, we may suppose that $\mathfrak{J}=\sh{J}_y$, where $\sh{J}$ is an ideal of $\sh{O}_Y$.
 If $\mathrm{Y}_1$ is the closed subscheme of $\mathrm{Y}$ defined by $\sh{J}$, one can, restricting further $\mathrm{X}$ and $\mathrm{Y}$ to neighbourhoods of $x$ and $y$ respectively, suppose that $f$ factorises as $\mathrm{X}\xrightarrow{f_1}\mathrm{Y}_1\to\mathrm{Y}$ \sref[I]{I.6.5.1}.
 It is clear that $f_1$ is still unramified at the point $x$, hence quasi-finite at this point \sref{IV.17.4.1}; the proof of \sref{IV.5.4.1},~(i) then shows that $\dim(\sh{O}_{X,x})\leq\dim(\sh{O}_{Y,y}/\mathfrak{J})$.
@@ -2336,7 +2339,7 @@ Then, for $\sh{O}_{X,x}$ to be an $\sh{O}_{Y,y}$-algebra \emph{essentially \'eta
 There is nothing more than proving the sufficiency of these conditions.
 Taking into account \sref{IV.18.4.12}, it suffices to show that $f$ is \emph{flat} at the point $x$.
 Now, by going back to the proof of \sref{IV.18.10.1} and the notations used in this proof, it suffices to show that $f'$ is flat at the point $x'$ \sref{IV.2.5.1}; by \sref{IV.17.1.3} furthermore $f'$ is formally unramified at the point $x'$.
-One can therefore restrict to carrying out the proof when $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is a \emph{strictly local} local ring and $y=f(x)$ the closed point of $\mathrm{Y}$.
+One can therefore restrict to carrying out the proof when $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is a \emph{strictly local} ring and $y=f(x)$ the closed point of $\mathrm{Y}$.
 Using then \sref{IV.18.8.3} we see that $\sh{O}_{Y,y}\to\sh{O}_{X,x}$ is surjective, hence \emph{bijective} by virtue of the hypothesis, and this suffices to show the flatness of $f$ at the point $x$.
 
 Suppose furthermore that $\mathrm{Y}$ is \emph{locally integral} at the point $y$ \sref[I]{I.2.1.8}.
@@ -2354,9 +2357,9 @@ Then, if $f$ is formally unramified, $f$ is \'etale, and $\mathrm{X}$ is integra
 \begin{proof}
 It follows from the hypothesis and from \sref{IV.18.4.13} that $f$ is \'etale at all the points where it is flat, and in particular at the points of $f^{-1}(\eta)$, since $\sh{O}_{Y,\eta}=k(\eta)$ is a field.
 The open set $\mathrm{U}$ of points of $\mathrm{X}$ where $f$ is \'etale is therefore \emph{non-empty}.
-Let us show on the other hand that for all $x\in\mathrm{U}$, the homomorphism $\sh{O}_{Y,f(x)}\to\sh{O}_{X,x}$ is \emph{injective}.
+Let us show on the other hand that for all $x\in\overline{\mathrm{U}}$, the homomorphism $\sh{O}_{Y,f(x)}\to\sh{O}_{X,x}$ is \emph{injective}.
 Indeed, let $s$ be a section of $\sh{O}_Y$ over an open neighbourhood of $f(x)$, which one may always suppose to be $\mathrm{Y}$ itself (the question being local on $\mathrm{X}$ and $\mathrm{Y}$), and suppose that its image $t\in\Gamma(\mathrm{Y},f_*(\sh{O}_X))=\Gamma(\mathrm{X},\sh{O}_X)$ has zero germ at the point $x$, hence vanishes in a neighbourhood $\mathrm{V}$ of $x$; then the restriction of $t$ to the non-empty open set $\mathrm{U}\cap\mathrm{V}$ is zero. But the restriction $f|(\mathrm{U}\cap\mathrm{V})$ is \'etale, hence $\mathrm{W}=f(\mathrm{U}\cap\mathrm{V})$ is open in $\mathrm{Y}$ and consequently contains the generic point $\eta$. Since the homomorphism $\sh{O}_{Y,\eta}\to\sh{O}_{X,z}$ is injective for every point $z\in f^{-1}(\eta)$, the hypothesis that $t|(\mathrm{U}\cap\mathrm{V})=0$ implies that $s_\eta=0$; and as $\mathrm{Y}$ is integral, this implies $s=0$, proving our assertion.
-Applying now \sref{IV.18.10.2},~(iii)), we conclude that $f$ is \emph{flat} at the point $x$, in other words $x\in\mathrm{U}$, hence $\mathrm{U}$ is both open and closed in $\mathrm{X}$; as it is non-empty and $\mathrm{X}$ is connected, we have $\mathrm{U}=\mathrm{X}$.
+Applying now \sref{IV.18.10.2},~(iii), we conclude that $f$ is \emph{flat} at the point $x$, in other words $x\in\mathrm{U}$, hence $\mathrm{U}$ is both open and closed in $\mathrm{X}$; as it is non-empty and $\mathrm{X}$ is connected, we have $\mathrm{U}=\mathrm{X}$.
 
 Note now that since $f$ is \'etale, hence locally quasi-finite and $\mathrm{Y}$ is irreducible, the maximal points of $\mathrm{X}$ belong to $f^{-1}(\eta)$ \sref{IV.2.3.4} and for all $x\in\mathrm{X}$, there is a neighbourhood of $x$ that contains only a finite number of these maximal points; in other words, the set of irreducible components of $\mathrm{X}$ is locally finite.
 But by \sref{IV.18.10.1}, $\mathrm{X}$ is integral and geometrically unibranch at every point, hence every point of $\mathrm{X}$ belongs to only one irreducible component; and since the irreducible components form a locally finite family, they are open (and closed) in $\mathrm{X}$. Since $\mathrm{X}$ is connected, it is integral.
@@ -2367,7 +2370,7 @@ But by \sref{IV.18.10.1}, $\mathrm{X}$ is integral and geometrically unibranch a
 \label{IV.18.10.3.1}
 If $f:\mathrm{X}\to\mathrm{Y}$ is locally of finite presentation, dominant and quasi-compact, the fibre $f^{-1}(\eta)$ is non-empty by virtue of \sref[I]{I.1.1.5}.
 On the other hand, if one does not suppose $f$ quasi-compact, $f$ \emph{can be unramified and dominant without being \'etale} (still assuming that the hypotheses of \sref{IV.18.10.3} are satisfied for $\mathrm{X}$ and $\mathrm{Y}$).
-This is what the following example shows: one takes for $\mathrm{Y}$ the affine plane $\operatorname{Spec}(\mathbf{C}[\mathrm{T},\mathrm{U}])$; one considers on the other hand a family $(\mathrm{X}_i)_{i\in\mathbf{Z}}$ of preschemes isomorphic to the affine line $\operatorname{Spec}(\mathbf{C}[\mathrm{T}])$, and one forms the prescheme obtained by ``gluing together'' $\mathrm{X}_{2j}$ and $\mathrm{X}_{2j+1}$ at the point $-1$ and $\mathrm{X}_{2j+1}$ and $\mathrm{X}_{2j+2}$ at the point $+1$.
+This is what the following example shows: one takes for $\mathrm{Y}$ the affine plane $\operatorname{Spec}(\mathbf{C}[\mathrm{T},\mathrm{U}])$; one considers on the other hand a family $(\mathrm{X}_j)_{j\in\mathbf{Z}}$ of preschemes isomorphic to the affine line $\operatorname{Spec}(\mathbf{C}[\mathrm{T}])$, and one forms the prescheme obtained by ``gluing together'' $\mathrm{X}_{2j}$ and $\mathrm{X}_{2j+1}$ at the point $-1$ and $\mathrm{X}_{2j+1}$ and $\mathrm{X}_{2j+2}$ at the point $+1$.
 Let us define on the other hand $f:\mathrm{X}\to\mathrm{Y}$ as being equal on $\mathrm{X}_{2j}$ to the closed immersion whose image is the line of equation $y=2j$, transforming the point $-1$ to $(2j-1,2j)$ and the point $1$ to $(2j+1,2j)$; on $\mathrm{X}_{2j+1}$, $f_j$ is the closed immersion whose image is the line of equation $x=2j+1$, transforming the point $-1$ to $(2j+1,2j)$ and the point $1$ to $(2j+1,2j+2)$.
 It is clear that $f$ is a local immersion (hence unramified) and dominant, but the fibre over the generic point of $\mathrm{Y}$ is empty and $f$ is not \'etale.
 \end{remark}
@@ -2380,7 +2383,7 @@ Then, for $f$ to be \'etale at the point $x$, it is necessary and sufficient tha
 \end{corollary}
 
 \begin{proof}
-The conditions are necessary by virtue of the fact that if $f$ is \'etale at the point $x$, it follows from this that $f_s$ is also flat and quasi-finite at the point $x$ \sref{IV.6.1.2}.
+The conditions are necessary because if $f$ is \'etale at the point $x$, the same is true of $f_s:h^{-1}(s)\to g^{-1}(s)$, and the conclusion then follows from the fact that $f_s$ is flat and quasi-finite at the point $x$ \sref{IV.6.1.2}.
 Conversely, if the conditions of the statement are satisfied, in order to see that $f$ is \'etale at the point $x$, it suffices, by virtue of \sref{IV.17.8.3}, to see that $f_s$ is so.
 One can therefore restrict to the case where $\mathrm{S}$ is the spectrum of a field.
 It then follows from the hypothesis $\dim_x\mathrm{X}=\dim_y\mathrm{Y}$ and from the fact that $f$ is unramified at the point $x$ that one has, by \sref{IV.5.2.3} and \sref{IV.17.4.1}, $\dim\sh{O}_{X,x}=\dim\sh{O}_{Y,y}$. Since $f$ is quasi-finite at the point $x$ and $\sh{O}_{Y,y}$ is integral, we deduce from \sref[0]{0.7.4.4} and \sref[0]{0.16.3.10} that the homomorphism $\sh{O}_{Y,y}\to\sh{O}_{X,x}$ is injective; it then suffices to apply \sref{IV.18.10.1}.
@@ -2398,7 +2401,7 @@ It remains only to prove the sufficiency of the conditions. It follows from \sre
 
 \begin{lemma}[18.10.6]
 \label{IV.18.10.6}
-Let $f:\mathrm{X}\to\mathrm{Y}$ be a flat and locally quasi-finite morphism.
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a flat and locally quasi-finite morphism $(\mathrm{Err}_{\mathrm{III}}, 20)$.
 \begin{enumerate}[label=(\roman*)]
   \item The set $\mathrm{Max}(\mathrm{X})$ of maximal points of $\mathrm{X}$ is in canonical bijection with the set $\coprod_{y\in\mathrm{Max}(\mathrm{Y})}f^{-1}(y)$.
   \item If $\mathrm{Y}$ is irreducible with generic point $\eta$, the set of irreducible components of $\mathrm{X}$ is in canonical bijection with $f^{-1}(\eta)$, and is in particular finite if and only if $f^{-1}(\eta)$ is finite.
@@ -2434,7 +2437,7 @@ Moreover $f'$ is a local isomorphism; for $f'$ to be an open immersion, it is ne
 \end{proposition}
 
 \begin{proof}
-By virtue of \sref{IV.18.10.7}, one can restrict to the case where $\mathrm{X}$ is integral and normal.
+By virtue of \sref{IV.18.10.7}, one can restrict to the case where $\mathrm{X}$ is integral and normal, with $\mathrm{L}$ as its field of rational functions and $f$ dominant.
 The existence and uniqueness of the factorisation considered for $f$ follow from \sref[II]{II.6.3.9}.
 As $f'$ is birational and locally quasi-finite, the final assertions follow from \sref{IV.8.12.10}.
 \end{proof}
@@ -2445,8 +2448,8 @@ Under the hypotheses of \sref{IV.18.10.8}, for $f$ to be a finite morphism (in o
 \end{corollary}
 
 \begin{proof}
-If $f$ is finite, the canonical injection $j:\mathrm{X}\to\mathrm{Y}'$ (which is an open immersion) is also a finite morphism \sref[II]{II.6.1.5},~(v)), hence a closed morphism \sref[II]{II.6.1.10}, and as $j(\mathrm{X})$ is dense in $\mathrm{Y}'$ by \sref{IV.18.10.8}, we have $j(\mathrm{X})=\mathrm{Y}'$.
-Conversely, as $\mathrm{Y}$ is normal and $\mathrm{L}$ is a composed direct product of finite separable extensions of $\mathrm{K}$, $\mathrm{Y}'$ is finite over $\mathrm{Y}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection~1, n\textsuperscript{o}~6, cor.~1 of prop.~18), whence the corollary.
+If $f$ is finite, the canonical injection $j:\mathrm{X}\to\mathrm{Y}'$ (which is an open immersion) is also a finite morphism \sref[II]{II.6.1.5},~(v), hence a closed morphism \sref[II]{II.6.1.10}, and as $j(\mathrm{X})$ is dense in $\mathrm{Y}'$ by \sref{IV.18.10.8}, we have $j(\mathrm{X})=\mathrm{Y}'$.
+Conversely, as $\mathrm{Y}$ is normal and $\mathrm{L}$ is a direct product of finite separable extensions of $\mathrm{K}$, $\mathrm{Y}'$ is finite over $\mathrm{Y}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection~1, n\textsuperscript{o}~6, cor.~1 of prop.~18), whence the corollary.
 \end{proof}
 
 \begin{env}[18.10.10]
@@ -2502,8 +2505,9 @@ Furthermore, if $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ and $\mathrm{Y}'=\o
 \end{corollary}
 
 \begin{proof}
+Indeed, $\mathrm{L}\otimes_{\mathrm{K}}\mathrm{K}'$ is a direct product of finite separable extensions of $\mathrm{K}'$, and $\mathrm{L}_1$
 \oldpage[IV]{163}
-Indeed, $\mathrm{L}\otimes_{\mathrm{K}}\mathrm{K}'$ is a direct product of finite separable extensions of $\mathrm{K}'$, and $\mathrm{L}_1$ is one of these extensions; hence the integral closure of $\mathrm{Y}'$ in $\mathrm{L}\otimes_{\mathrm{K}}\mathrm{K}'$ is a disjoint union of preschemes, one of which is the integral closure of $\mathrm{Y}'$ in $\mathrm{L}_1$.
+is one of these extensions; hence the integral closure of $\mathrm{Y}'$ in $\mathrm{L}\otimes_{\mathrm{K}}\mathrm{K}'$ is a disjoint union of preschemes, one of which is the integral closure of $\mathrm{Y}'$ in $\mathrm{L}_1$.
 The corollary therefore follows immediately from \sref{IV.18.10.13}.
 
 When, for example, $\mathrm{A}$ is the ring of integers of an algebraic number field $\mathrm{K}$, and $\mathrm{K}'$ and $\mathrm{L}$ are algebraic extensions of $\mathrm{K}$, there are classical examples showing that the relation $\mathrm{C}_1=\mathrm{A}[\mathrm{C},\mathrm{A}']$ fails when $\mathrm{L}$ is not unramified over $\mathrm{A}$.
@@ -2511,14 +2515,14 @@ When, for example, $\mathrm{A}$ is the ring of integers of an algebraic number f
 
 \begin{env}[18.10.15]
 \label{IV.18.10.15}
-Suppose that $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ is affine, $\mathrm{A}$ being integral and integrally closed; let $\mathrm{K}$ be its field of fractions, $\mathrm{L}$ a finite separable extension of $\mathrm{K}$, and we suppose that the integral closure $\mathrm{C}$ of $\mathrm{A}$ in $\mathrm{L}$ is a \emph{projective} $\mathrm{A}$-module of finite type (which will be the case for example if $\mathrm{A}$ is a Dedekind ring (Bourbaki, \emph{Alg.\ comm.}, chap.~VII, \textsection~4, n\textsuperscript{o}~10, prop.~22)).
+Suppose that $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ is affine, $\mathrm{A}$ being integral and integrally closed; let $\mathrm{K}$ be its field of fractions and $\mathrm{L}$ a finite separable extension of $\mathrm{K}$, and suppose that the integral closure $\mathrm{C}$ of $\mathrm{A}$ in $\mathrm{L}$ is a \emph{projective} $\mathrm{A}$-module of finite type (which will be the case for example if $\mathrm{A}$ is a Dedekind ring (Bourbaki, \emph{Alg.\ comm.}, chap.~VII, \textsection~4, n\textsuperscript{o}~10, prop.~22)).
 To say that $\mathrm{L}$ is unramified over $\mathrm{A}$ means that $\mathrm{C}$ is \'etale \sref{IV.18.10.10}; by \sref{IV.18.2.7},~(ii), this is equivalent to saying that the \emph{discriminant} $d_{\mathrm{C}/\mathrm{A}}$ of $\operatorname{Spec}(\mathrm{C})$ over $\operatorname{Spec}(\mathrm{A})$ is \emph{invertible} in $\mathrm{A}$.
 In the particular case where $\mathrm{C}$ is a \emph{free} $\mathrm{A}$-module and $(x_i)_{1\leq i\leq n}$ a basis of $\mathrm{C}$ over $\mathrm{A}$, this means that $\det(\operatorname{Tr}_{\mathrm{C}/\mathrm{A}}(x_ix_j))$ is invertible in $\mathrm{A}$.
 \end{env}
 
 \begin{theorem}[18.10.16]
 \label{IV.18.10.16}
-Let $\mathrm{Y}$ be an integral prescheme, $\eta$ its generic point, $f:\mathrm{X}\to\mathrm{Y}$ a separated and locally of finite type morphism.
+Let $\mathrm{Y}$ be an integral prescheme, $\eta$ its generic point, and $f:\mathrm{X}\to\mathrm{Y}$ a separated morphism locally of finite type.
 Suppose that every irreducible component of $\mathrm{X}$ dominates $\mathrm{Y}$ and that the generic fibre $\mathrm{X}_\eta=f^{-1}(\eta)$ is a finite prescheme over $\mathrm{K}=k(\eta)$; then $(\mathrm{X}_\eta)_{\mathrm{red}}=\operatorname{Spec}(\mathrm{L})$, where $\mathrm{L}=\prod_i\mathrm{L}_i$ is a product of finite extensions $\mathrm{L}_i$ of $\mathrm{K}$.
 Set
 \[
@@ -2528,8 +2532,8 @@ Let $y$ be a geometrically unibranch point of $\mathrm{Y}$, and denote by $n(y)$
 Then:
 \begin{enumerate}[label=(\roman*)]
   \item One has $n(y)\leq n_s\leq n$.
-  \item Suppose $\mathrm{X}$ reduced and the point $y$ normal in $\mathrm{Y}$.
-For $n(y)=n$, it is necessary and sufficient that there exist a neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that the restriction $f^{-1}(\mathrm{U})\to\mathrm{U}$ of $f$ is an \'etale and finite morphism.
+  \item Suppose $\mathrm{X}$ is reduced and the point $y$ is normal in $\mathrm{Y}$.
+For $n(y)=n$, it is necessary and sufficient that there exists a neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that the restriction $f^{-1}(\mathrm{U})\to\mathrm{U}$ of $f$ is an \'etale and finite morphism.
 \end{enumerate}
 \end{theorem}
 
@@ -2538,9 +2542,9 @@ For $n(y)=n$, it is necessary and sufficient that there exist a neighbourhood $\
 One knows \sref{IV.13.1.4} that the set $\mathrm{Z}$ of isolated points $x\in\mathrm{X}$ of $f^{-1}(f(x))$ is open in $\mathrm{X}$ and by hypothesis $\mathrm{Z}$ contains $f^{-1}(\eta)$.
 Since $f^{-1}(\eta)$ is finite, $\mathrm{Z}$ is an increasing filtered union of quasi-compact open sets $\mathrm{V}_\lambda$ containing $f^{-1}(\eta)$ (dense in $\mathrm{X}$ by hypothesis).
 If $n_\lambda(y)$ is the sum of the separable degrees over $k(y)$ of the residue fields of the points of $\mathrm{V}_\lambda\cap f^{-1}(y)$, we have $n(y)=\sup n_\lambda(y)$; to prove (i), it will therefore suffice to show that $n_\lambda(y)\leq n_s$.
-On the other hand, if $n(y)=n$, there is an index $\lambda$ such that $n_\lambda(y)=n$. Suppose that we have shown that there then exists a neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that the restriction $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})\to\mathrm{U}$ of $f$ is an \'etale and finite morphism; since $f$ is separated, the canonical injection $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})\to f^{-1}(\mathrm{U})$ is then also a finite morphism \sref[II]{II.6.1.5},~(v)), hence $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})$ is closed in $f^{-1}(\mathrm{U})$; but being everywhere dense in $f^{-1}(\mathrm{U})$, it is necessarily equal to it.
+On the other hand, if $n(y)=n$, there is an index $\lambda$ such that $n_\lambda(y)=n$. Suppose that we have shown that there then exists a neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that the restriction $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})\to\mathrm{U}$ of $f$ is an \'etale and finite morphism; since $f$ is separated, the canonical injection $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})\to f^{-1}(\mathrm{U})$ is then also a finite morphism \sref[II]{II.6.1.5},~(v), hence $\mathrm{V}_\lambda\cap f^{-1}(\mathrm{U})$ is closed in $f^{-1}(\mathrm{U})$; but being everywhere dense in $f^{-1}(\mathrm{U})$, it is necessarily equal to it.
 
-\emph{B) Reduction to the case where $\mathrm{X}$ is reduced, $f$ finite, and $\mathrm{Y}=\operatorname{Spec}(\sh{O}_{Y,y})$.} ---
+\emph{B) Reduction to the case where $\mathrm{X}$ is reduced, $f$ is finite, and $\mathrm{Y}=\operatorname{Spec}(\sh{O}_{Y,y})$.} ---
 We note that the hypothesis on $f$ implies that it is also satisfied for $f_{\mathrm{red}}$, and that the conclusion of (i) concerns only $f_{\mathrm{red}}$.
 One can therefore replace $f$ everywhere by $f_{\mathrm{red}}$ and thus suppose $\mathrm{X}$ reduced.
 
@@ -2548,7 +2552,7 @@ One can therefore replace $f$ everywhere by $f_{\mathrm{red}}$ and thus suppose 
 On the other hand, by virtue of \sref{IV.18.12.13} (${}^1$), one can (after having replaced $\mathrm{Y}$ by an open affine neighbourhood $\mathrm{V}$ of $y$ and $f$ by its restriction $f^{-1}(\mathrm{V})\to\mathrm{V}$) factorise $f$ as $\mathrm{X}\xrightarrow{j}\mathrm{X}'\xrightarrow{g}\mathrm{Y}$, where $g$ is \emph{finite} and $j$ an open immersion.
 Since $\mathrm{X}$ is reduced, one can replace $\mathrm{X}'$ by the reduced closed sub-prescheme with underlying space $\overline{j(\mathrm{X})}$ \sref[I]{I.5.2.2}, hence suppose $\mathrm{X}'$ reduced and such that every irreducible component of $\mathrm{X}'$ dominates $\mathrm{Y}$.
 Moreover, $j(\mathrm{X})$ is an open dense set in $\mathrm{X}'$ and has only a finite number of irreducible components by virtue of the hypothesis; hence \sref[0]{0.1.2.7} the irreducible components of $\mathrm{X}'$ are the closures of those of $j(\mathrm{X})$, and by construction the fibre $g^{-1}(\eta)$ identifies with $f^{-1}(\eta)$.
-If one supposes the theorem proved for $f$ finite, one can apply it to $g$, and as $f^{-1}(y)$ identifies with a sub-prescheme of $g^{-1}(y)$, the relation (i) for $g$ implies the same relation for $f$.
+If one supposes the theorem proved when $f$ is finite, one can apply it to $g$, and as $f^{-1}(y)$ identifies with a sub-prescheme of $g^{-1}(y)$, the relation (i) for $g$ implies the same relation for $f$.
 Suppose, on the other hand, that $n(y)=n$; then, by what precedes, one can apply the conclusion of (ii) to the morphism $g$, and after replacing $\mathrm{Y}$ if necessary by a neighbourhood of $y$, one may suppose that $g$ is \'etale, and consequently so is $f$; moreover, one then has $f^{-1}(y)=g^{-1}(y)$.
 As the morphism $g$ is closed and $j(\mathrm{X})$ is open in $\mathrm{X}'$, there exists a neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that $j(\mathrm{X})\cap g^{-1}(\mathrm{U})=j(f^{-1}(\mathrm{U}))$, which proves that (ii) is also true for $f$.
 
@@ -2563,7 +2567,7 @@ Let $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A}')$, and let $y'$ and $\eta'$ be 
 Set $\mathrm{X}'=\mathrm{X}\times_{\mathrm{Y}}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$; $f'$ is finite and since $g$ is flat, every irreducible component of $\mathrm{X}'$ dominates $\mathrm{Y}'$ \sref{IV.2.3.7}.
 If $n'(y')$, $n'$ and $n_s'$ are the numbers defined for $f'$ in the same way as $n(y)$, $n$ and $n_s$ for $f$, we have $n_s'=n_s$ and $n'(y')=n(y)$ \sref[I]{I.6.4.8}, and it therefore amounts to proving the assertion (i) for $f$ or for $f'$.
 Moreover, if $\mathrm{X}$ is reduced and $y$ is a normal point of $\mathrm{Y}$ (hence $\mathrm{A}$ is integrally closed), then $\mathrm{A}'$ is integrally closed \sref{IV.18.8.12}.
-On the other hand, it follows from the definition \sref{IV.18.8.7}, from the remark \sref{IV.8.1.2},~$a$)) and from the theorem of the double inductive limit, that $\mathrm{A}'$ is the inductive limit of rings $\mathrm{A}_\alpha$ such that the morphisms $\operatorname{Spec}(\mathrm{A}_\alpha)\to\operatorname{Spec}(\mathrm{A})=\mathrm{Y}$ are \'etale; consequently $\mathrm{X}'$ is the projective limit of the $\mathrm{X}_\alpha=\mathrm{X}\otimes_{\mathrm{A}}\mathrm{A}_\alpha$, which are \'etale over $\mathrm{X}$, hence reduced since $\mathrm{X}$ is \sref{IV.17.5.7}; by passage to the limit,
+On the other hand, it follows from the definition \sref{IV.18.8.7}, from the remark \sref{IV.8.1.2},~$a$) and from the theorem of the double inductive limit, that $\mathrm{A}'$ is the inductive limit of rings $\mathrm{A}_\alpha$ such that the morphisms $\operatorname{Spec}(\mathrm{A}_\alpha)\to\operatorname{Spec}(\mathrm{A})=\mathrm{Y}$ are \'etale; consequently $\mathrm{X}'$ is the projective limit of the $\mathrm{X}_\alpha=\mathrm{X}\otimes_{\mathrm{A}}\mathrm{A}_\alpha$, which are \'etale over $\mathrm{X}$, hence reduced since $\mathrm{X}$ is \sref{IV.17.5.7}; by passage to the limit,
 
 \footnotetext{(${}^1$) The reader will verify that \sref{IV.18.10.16} is not used in the proof of \sref{IV.18.12.13}. If $f$ is supposed locally of finite presentation (resp.\ quasi-projective), one can replace \sref{IV.18.12.13} by \sref{IV.8.12.8} (resp.\ \sref{IV.8.12.6}).}
 
@@ -2573,9 +2577,9 @@ This being so, if $n(y)=n$, one has $n_s=n$, and consequently the residue fields
 The morphism $f'$ therefore has the same properties as $f$, and if one proves that $f'$ is \'etale, it will follow from \sref{IV.17.7.1} that $f$ is \'etale.
 
 \emph{D) End of the proof.} ---
-Suppose therefore $\mathrm{A}$ strictly local.
-Since $\mathrm{A}$ is henselian and the morphism $f$ finite, it follows from \sref{IV.18.5.11} that if $x_j$ ($1\leq j\leq m$) are the distinct points of $f^{-1}(y)$, $\mathrm{X}$ is the \emph{sum} of open sub-preschemes $\operatorname{Spec}(\sh{O}_{X,x_j})=\mathrm{X}_j$, which are the connected components of $\mathrm{X}$.
-By hypothesis, each of them dominates $\mathrm{Y}$, hence every irreducible component of $\mathrm{X}$ meets $f^{-1}(\eta)$, and so the number of points of $f^{-1}(\eta)$ is $\geq m$; \emph{a fortiori} we have $n_s\geq m$.
+Suppose therefore that $\mathrm{A}$ is strictly local.
+Since $\mathrm{A}$ is henselian and the morphism $f$ is finite, it follows from \sref{IV.18.5.11} that if $x_j$ ($1\leq j\leq m$) are the distinct points of $f^{-1}(y)$, $\mathrm{X}$ is the \emph{sum} of open sub-preschemes $\operatorname{Spec}(\sh{O}_{X,x_j})=\mathrm{X}_j$, which are the connected components of $\mathrm{X}$.
+By hypothesis, each of them dominates $\mathrm{Y}$, hence meets $f^{-1}(\eta)$, and so the number of points of $f^{-1}(\eta)$ is $\geq m$; \emph{a fortiori} we have $n_s\geq m$.
 But since $k(y)$ is separably closed and the $k(x_j)$ are algebraic over $k(y)$, they are necessarily radicial extensions of $k(y)$; hence $m=n(y)$, and this proves (i).
 Suppose now the hypotheses of (ii) satisfied; the relations $n(y)=n_s=n$ imply first of all, since every irreducible component of $\mathrm{X}$ dominates $\mathrm{Y}$, that each of the $\mathrm{X}_j$ is \emph{irreducible}; moreover, as the $\mathrm{X}_j$ are \emph{reduced}, they are \emph{integral}; finally the relations $m=n_s=n$ imply that for the generic point $\xi_j$ of $\mathrm{X}_j$, $k(\xi_j)$ is a separable extension of $k(\eta)$ of degree $1$, hence isomorphic to $k(\eta)$; in other words, the restriction $f|\mathrm{X}_j:\mathrm{X}_j\to\mathrm{Y}$ of $f$ is \emph{finite and birational}; moreover, $\mathrm{X}_j$ is \emph{integral} and by hypothesis $\mathrm{Y}$ is \emph{normal}; hence \sref{IV.8.12.10.1} $f|\mathrm{X}_j$ is an \emph{isomorphism}, which proves that $f$ is \'etale, and finishes the proof of \sref{IV.18.10.16}.
 \end{proof}
@@ -2593,11 +2597,11 @@ Then, for every generisation $y'$ of $y$, we have $n(y)\leq n(y')$.
 \end{env}
 
 \begin{proof}
-One can replace $\mathrm{Y}$ by the reduced closed sub-prescheme $\overline{\{y'\}}$ and $\mathrm{X}$ by $f^{-1}(\mathrm{Z})$, hence suppose $\mathrm{Y}$ integral with generic point $y'$.
+One can replace $\mathrm{Y}$ by the reduced closed sub-prescheme $\mathrm{Z}$ with underlying space $\overline{\{y'\}}$ and $\mathrm{X}$ by $f^{-1}(\mathrm{Z})$, hence suppose $\mathrm{Y}$ integral with generic point $y'$.
 Using \sref{IV.18.12.13} (as in \sref{IV.18.10.16},~B)), one can suppose that $\mathrm{X}$ is an open dense subset of a prescheme $\mathrm{X}'$ and that $f$ is the restriction to $\mathrm{X}$ of a finite morphism $g:\mathrm{X}'\to\mathrm{Y}$.
 Let us show that $g^{-1}(y')=f^{-1}(y')$.
 Indeed, let $i:g^{-1}(y')\to\mathrm{X}'$ be the canonical injection, which is a flat morphism since $y'$ is the generic point of $\mathrm{Y}$ \sref[I]{I.3.6.5}; one can write $f^{-1}(y')=i^{-1}(\mathrm{X})$.
-On the other hand, the canonical injection $j:\mathrm{X}\to\mathrm{X}'$ is a morphism of finite type since the composite $g\circ j=f$ is of finite type and $g$ is separated \sref{IV.1.5.4}; hence $\mathrm{X}$ is a retrocompact open subset of $\mathrm{X}'$, and consequently pro-constructible in $\mathrm{X}'$ \sref[I]{I.1.9.5},~(v)).
+On the other hand, the canonical injection $j:\mathrm{X}\to\mathrm{X}'$ is a morphism of finite type since the composite $g\circ j=f$ is of finite type and $g$ is separated \sref{IV.1.5.4}; hence $\mathrm{X}$ is a retrocompact open subset of $\mathrm{X}'$, and consequently pro-constructible in $\mathrm{X}'$ \sref{IV.1.9.5},~(v).
 One concludes therefore from \sref{IV.2.3.10} that $i^{-1}(\overline{\mathrm{X}})=\overline{i^{-1}(\mathrm{X})}$, in other words $f^{-1}(y')$ is dense in $g^{-1}(y')$; but as $g^{-1}(y')$ is discrete, we necessarily have $f^{-1}(y')=g^{-1}(y')$.
 
 We are thus reduced to proving that the sum of the numbers $[k(x):k(y)]_s$ where $x$ ranges over the points of $g^{-1}(y)$ where $g$ is universally open, is at most equal to
@@ -2666,9 +2670,8 @@ Finally, under the last hypotheses of the statement, as $\mathrm{Z}$ is closed a
 \begin{remark}[18.10.20]
 \label{IV.18.10.20}
 Let $\mathrm{Y}$ be a locally Noetherian prescheme.
-One says that a morphism $f:\mathrm{X}\to\mathrm{Y}$ is \emph{essentially proper} if it is locally of finite type and if, for every base change $\mathrm{Y}''\to\mathrm{Y}$, where $\mathrm{Y}''$ is \emph{locally Noetherian}, the image by $f_{(\mathrm{Y}'')}:\mathrm{X}_{(\mathrm{Y}'')}\to\mathrm{Y}''$ of every closed irreducible subset of $\mathrm{X}''$ is \emph{closed}.
+One says that a morphism $f:\mathrm{X}\to\mathrm{Y}$ is \emph{essentially proper} if it is locally of finite type and if, for every $\mathrm{Y}$-scheme of the form $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is a discrete valuation ring, the canonical map \sref[II]{II.7.3.2.2} relative to the $\mathrm{Y}'$-prescheme $\mathrm{X}\times_{\mathrm{Y}}\mathrm{Y}'$ is bijective.
 \oldpage[IV]{168}
-To say that $f$ is essentially proper means that, for every $\mathrm{Y}$-scheme of the form $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is a discrete valuation ring, the canonical map \sref[II]{II.7.3.2.2} relative to the $\mathrm{Y}'$-prescheme $\mathrm{X}\times_{\mathrm{Y}}\mathrm{Y}'$ is bijective.
 The reasoning of \sref[II]{II.7.3.8} proves that this is the same as saying that $f$ (supposed locally of finite type) is \emph{separated} and that for every base change $\mathrm{Y}''\to\mathrm{Y}$, where $\mathrm{Y}''$ is \emph{locally Noetherian}, the image by $f_{(\mathrm{Y}'')}: \mathrm{X}_{(\mathrm{Y}'')}\to\mathrm{Y}''$ of every closed irreducible subset of $\mathrm{X}''$ is \emph{closed}.
 To say that $f$ is \emph{proper} (for $\mathrm{Y}$ locally Noetherian) means therefore that $f$ is \emph{essentially proper and of finite type} \sref[II]{II.7.3.8}; but one encounters important examples of essentially proper morphisms that are not of finite type (for example certain ``Picard preschemes'' or certain ``preschemes of N\'eron-Severi'' (chap.~VI)).
 It follows immediately from \sref{IV.18.10.19} that if $\mathrm{Y}$ is \emph{locally Noetherian, reduced, and geometrically unibranch}, and if $f:\mathrm{X}\to\mathrm{Y}$ is \emph{essentially proper and unramified}, then every $\mathrm{Y}$-rational section of $f$ is \emph{defined everywhere}.
@@ -2691,7 +2694,7 @@ To show that it is sufficient, let us first note that by \sref{IV.17.5.1}, it su
 The question is local on $\mathrm{X}$; hence, by \sref{IV.16.4.22} and \sref[0]{0.5.2.2}, one may suppose that $\mathrm{X}$ is affine and that there exist $r$ sections $s_i$ ($1\leq i\leq r$) of $\sh{O}_X$ over $\mathrm{X}$ such that the sections $d_{\mathrm{X}/\mathrm{Y}}(s_i)$ generate $\Omega^1_{\mathrm{X}/\mathrm{Y}}$.
 Let
 \[
-  g:\mathrm{X}\to\mathrm{Z}=\mathrm{Y}[\mathrm{T}_1,\ldots,\mathrm{T}_r]=\mathbf{V}_{\mathrm{Y}}
+  g:\mathrm{X}\to\mathrm{Z}=\mathrm{Y}[\mathrm{T}_1,\ldots,\mathrm{T}_r]=\mathbf{V}_{\mathrm{Y}}^r
 \]
 be the $\mathrm{Y}$-morphism corresponding to the homomorphism $\sh{O}_{\mathrm{Y}}^r\to f_*(\sh{O}_X)$ of $\sh{O}_Y$-modules defined by the $s_i$ (considered as sections of $f_*(\sh{O}_X)$ over $\mathrm{Y}$) \sref[II]{II.1.2.7}.
 We have the exact sequence \sref{IV.16.4.19}
@@ -2727,7 +2730,7 @@ Let $k$ be a field, let $\mathrm{A}$ be a complete Noetherian local ring that is
 \end{enumerate}
 Furthermore, for every subfield $k_0$ of $k$ such that $\Omega^1_{k/k_0}$ is a finite-dimensional $k$-vector space, $\hat{\Omega}^1_{\mathrm{A}/k_0}$ is a free $\mathrm{A}$-module of rank
 \[
-  \dim(\mathrm{A})+\operatorname{rg}_{\mathrm{K}}(\Omega^1_{\mathrm{K}/k_0})-\operatorname{rg}_{\mathrm{K}}(\Upsilon_{\mathrm{K}/k_0})+\operatorname{rg}_{\mathrm{K}}(\Omega^1_{k/k_0}).
+  \dim(\mathrm{A})+\operatorname{rg}_{\mathrm{K}}(\Omega^1_{\mathrm{K}/k_0})-\operatorname{rg}_{\mathrm{K}}(\Upsilon_{\mathrm{K}/k_0})+\operatorname{rg}_{k}(\Omega^1_{k/k_0}).
 \]
 \end{lemma}
 
@@ -2789,7 +2792,11 @@ Let $k$ be a field, let $p$ be its characteristic exponent, and suppose that $[k
 \end{lemma}
 
 \begin{proof}
-Since $\mathrm{A}$ is Noetherian and $\operatorname{Spec}(\mathrm{A})$ is regular (and hence, a fortiori, integral) at $\mathfrak{p}$, the point $\mathfrak{p}$ lies on only one irreducible component of $\operatorname{Spec}(\mathrm{A})$. Thus it contains only one minimal ideal $\mathfrak{q}$ of $\mathrm{A}$, and moreover $\mathfrak{q}_{\mathfrak{p}}=0$. Put $\mathrm{B}=\mathrm{A}/\mathfrak{q}$. The sequence \sref[0]{0.20.7.20}
+Since $\mathrm{A}$ is Noetherian and $\operatorname{Spec}(\mathrm{A})$ is regular (and hence, a fortiori, integral) at $\mathfrak{p}$, the point $\mathfrak{p}$ lies on only one irreducible component of $\operatorname{Spec}(\mathrm{A})$. Thus it contains
+
+\oldpage[IV]{171}
+
+only one minimal ideal $\mathfrak{q}$ of $\mathrm{A}$, and moreover $\mathfrak{q}_{\mathfrak{p}}=0$. Put $\mathrm{B}=\mathrm{A}/\mathfrak{q}$. The sequence \sref[0]{0.20.7.20}
 \[
   \mathfrak{q}/\mathfrak{q}^2\longrightarrow
   \hat{\Omega}^1_{\mathrm{A}/k}\widehat{\otimes}_{\mathrm{A}}\mathrm{B}
@@ -2914,7 +2921,7 @@ The conclusion of (ii) now follows because $\Omega^1_{\mathrm{A}'/k'}$ is the di
 
 \begin{proposition}[18.11.5]
 \label{IV.18.11.5}
-Let $k$ be a field, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, whose residue field is a finite extension of $k$, $\mathfrak{p}$ a prime ideal of $\mathrm{A}$ distinct from the maximal ideal $\mathfrak{m}$, such that there exists a unique minimal prime ideal $\mathfrak{q}\subset\mathfrak{p}$ for which $\dim(\mathrm{A}/\mathfrak{q})=\dim(\mathrm{A})$ (which will in particular hold when $\mathrm{A}$ is equidimensional), $m$ an integer $\geq 0$.
+Let $k$ be a field, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, whose residue field is a finite extension of $k$, $\mathfrak{p}$ a prime ideal of $\mathrm{A}$ distinct from the maximal ideal $\mathfrak{m}$, such that there exists a minimal prime ideal $\mathfrak{q}\subset\mathfrak{p}$ for which $\dim(\mathrm{A}/\mathfrak{q})=\dim(\mathrm{A})$ (which will in particular hold when $\mathrm{A}$ is equidimensional), $m$ an integer $\geq 0$.
 The following conditions are equivalent:
 \begin{enumerate}[label=\alph*)]
   \item The $\mathrm{A}_\mathfrak{p}$-module $(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}$ admits a system of $m$ generators.
@@ -2927,9 +2934,7 @@ To prove that $b)$ implies $a)$, note that by Lemma \sref{IV.18.11.3.5} one has 
 \[
   \hat{\Omega}^1_{\mathrm{B}/k}\otimes_\mathrm{B}\mathrm{A}\to\hat{\Omega}^1_{\mathrm{A}/k}\to\Omega^1_{\mathrm{A}/\mathrm{B}}\to 0
 \]
-since $\mathrm{A}$ is a $\mathrm{B}$-algebra finite; localising at $\mathfrak{p}$ and noting that by hypothesis $(\Omega^1_{\mathrm{A}/\mathrm{B}})_\mathfrak{p}=0$ \sref{IV.17.4.1}, one obtains a surjective homomorphism $(\hat{\Omega}^1_{\mathrm{B}/k}\otimes_\mathrm{B}\mathrm{A})_\mathfrak{p}\to(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}$, and
-\oldpage[IV]{175}
-the conclusion follows because $\hat{\Omega}^1_{\mathrm{B}/k}$ is a free $\mathrm{B}$-module of rank $m$ \sref[0]{0.21.9.3}.
+since $\mathrm{A}$ is a $\mathrm{B}$-algebra finite; localising at $\mathfrak{p}$ and noting that by hypothesis $(\Omega^1_{\mathrm{A}/\mathrm{B}})_\mathfrak{p}=0$ \sref{IV.17.4.1}, one obtains a surjective homomorphism $(\hat{\Omega}^1_{\mathrm{B}/k}\otimes_\mathrm{B}\mathrm{A})_\mathfrak{p}\to(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}$, and the conclusion follows because $\hat{\Omega}^1_{\mathrm{B}/k}$ is a free $\mathrm{B}$-module of rank $m$ \sref[0]{0.21.9.3}.
 
 To prove that $a)$ implies $b)$, let us first prove the following lemmas.
 \end{proof}
@@ -2939,6 +2944,8 @@ To prove that $a)$ implies $b)$, let us first prove the following lemmas.
 Let $k$ be a field, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, whose residue field is a finite extension of $k$, $\mathfrak{p}$ a prime ideal of $\mathrm{A}$, $\mathfrak{q}$ a minimal prime ideal of $\mathrm{A}$ contained in $\mathfrak{p}$.
 Then the minimum number of generators of the $\mathrm{A}_\mathfrak{p}$-module $(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}$ is at least equal to $\dim(\mathrm{A}/\mathfrak{q})$.
 \end{lemma}
+
+\oldpage[IV]{175}
 
 \begin{proof}
 Set $n=\dim(\mathrm{A}/\mathfrak{q})$, and let $m$ be the minimum number of generators of the $\mathrm{A}_\mathfrak{p}$-module $(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}$, which is equal to $\operatorname{rg}_{k(\mathfrak{p})}((\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak{p}\otimes_{\mathrm{A}_\mathfrak{p}}k(\mathfrak{p}))$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \textsection~3, n\textsuperscript{o}~2, cor.~2 of prop.~4).
@@ -3013,6 +3020,8 @@ Then the minimum number of generators of the $\mathrm{A}_\mathfrak{p}$-module $(
 This is a special case of \sref{IV.18.11.5.1}.
 \end{proof}
 
+\oldpage[IV]{177}
+
 \begin{corollary}[18.11.8]
 \label{IV.18.11.8}
 Let $k$ be a field, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, integral, whose residue field is a finite extension of $k$.
@@ -3023,7 +3032,6 @@ If $\mathrm{K}$ is the field of fractions of $\mathrm{A}$, one has $\operatornam
 It suffices to set $\mathfrak{p}=0$ in \sref{IV.18.11.7}.
 \end{proof}
 
-\oldpage[IV]{177}
 \begin{corollary}[18.11.9]
 \label{IV.18.11.9}
 Let $k$ be a field, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, of dimension $n$, whose residue field is a finite extension of $k$.
@@ -3064,12 +3072,15 @@ But \sref{IV.18.11.4} gives
   \simeq (\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak p
   \otimes_{\mathrm{A}_\mathfrak p}(\mathrm{A}_i')_{\mathfrak p_i'},
 \]
-and $(\mathrm{A}_i')_{\mathfrak p_i'}$ is faithfully flat over $\mathrm{A}_\mathfrak p$. Therefore $(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak p$ is a free $\mathrm{A}_\mathfrak p$-module of finite type \sref{IV.2.5.2}; and \sref{IV.18.11.5.1}, together with $\dim(\mathrm{A}/\mathfrak q)=n$, shows that its rank is $n$.
+and $(\mathrm{A}_i')_{\mathfrak p_i'}$ is faithfully flat over $\mathrm{A}_\mathfrak p$. Therefore $(\hat{\Omega}^1_{\mathrm{A}/k})_\mathfrak p$ is a free $\mathrm{A}_\mathfrak p$-module of finite type \sref{IV.2.5.2};
+
+\oldpage[IV]{178}
+
+and \sref{IV.18.11.5.1}, together with $\dim(\mathrm{A}/\mathfrak q)=n$, shows that its rank is $n$.
 \end{proof}
 
 \begin{theorem}[18.11.10]
 \label{IV.18.11.10}
-\oldpage[IV]{178}
 Let $k$ be a field of characteristic exponent $p$, $\mathrm{A}$ a $k$-algebra, local Noetherian and complete, whose residue field is a finite extension of $k$, $\mathfrak{p}$ a prime ideal of $\mathrm{A}$ distinct from the maximal ideal.
 The following conditions are equivalent:
 \begin{enumerate}[label=\alph*)]
@@ -3346,7 +3357,7 @@ The following lemma will be used in the proof.
 \begin{lemma}[18.12.7.1]
 \label{IV.18.12.7.1}
 Let $f:\mathrm{X}\to\mathrm{Y}$ be a closed morphism, and let $y\in\mathrm{Y}$ be a point such that every neighbourhood of $\mathrm{X}_y$ contains an affine neighbourhood of $\mathrm{X}_y$ (a condition which is always satisfied when $\mathrm{X}_y$ is empty or consists of a single point).
-Then there exists an open neighbourhood $\mathrm{U}$ of $y$ such that $f^{-1}(\mathrm{U})\to\mathrm{U}$ is affine.
+Then there exists an affine open neighbourhood $\mathrm{U}$ of $y$ such that $f^{-1}(\mathrm{U})\to\mathrm{U}$ is affine.
 \end{lemma}
 
 \begin{proof}
@@ -3401,7 +3412,7 @@ For $f$ to be a universal homeomorphism \sref{IV.2.4.2}, it is necessary and suf
 
 \begin{proof}
 One knows that the conditions are sufficient \sref{IV.2.4.5}; they are necessary by virtue of \sref{IV.18.12.10} and \sref{IV.18.12.4}.
-The last proposition improves \sref{IV.8.11.2}.
+The following proposition improves \sref{IV.8.11.2}.
 \end{proof}
 
 \begin{proposition}[18.12.12]
@@ -3534,7 +3545,7 @@ With the notation of \sref[II]{II.4.5.2}, the conditions in \sref[II]{II.4.5.2} 
   \item[\rm b$'''$)] $\mathrm{G}(\varepsilon)=\mathrm{X}$ and the canonical morphism $u$ is radicial.
 \end{enumerate}
 
-If $\mathrm{Z}=\operatorname{Spec}(\mathrm{A})$, then $\mathrm{S}$ is canonically a graded $\mathrm{A}$-algebra; hence there is a structural morphism $g:\operatorname{Proj}(\mathrm{S})\to\mathrm{Z}$, which is separated \sref[II]{II.2.4.2}, and $h=g\circ u$. Since every radicial morphism is separated \sref[I]{I.1.8.7.1}, condition~b$'''$) implies condition~b$''$). Condition~b) of \sref[II]{II.4.5.2} plainly implies b$''$), so it remains to prove that b$''$) implies that $\mathscr{L}$ is ample.
+If $\mathrm{Z}=\operatorname{Spec}(\mathrm{A})$, then $\mathrm{S}$ is canonically a graded $\mathrm{A}$-algebra; hence there is a structural morphism $g:\operatorname{Proj}(\mathrm{S})\to\mathrm{Z}$, which is separated \sref[II]{II.2.4.2}, and $h=g\circ u$. Since every radicial morphism is separated \sref[I]{I.1.8.7.1}, condition~b$'''$) implies condition~b$''$). Condition~b) of \sref[II]{II.4.5.2} plainly implies b$'''$), so it remains to prove that b$''$) implies that $\mathscr{L}$ is ample.
 
 Since $h=g\circ u$ is of finite type and $g$ is separated, $u$ is of finite type \sref[I]{I.6.3.4}; condition~b$''$) therefore implies that $u$ is quasi-finite and separated \sref[I]{I.5.5.1}. Put $\mathrm{Y}=\operatorname{Proj}(\mathrm{S})$. As $\mathrm{X}$ is quasi-compact, there exist an integer $n>0$ and finitely many elements $f_j\in\mathrm{S}_n$ such that the inverse images $u^{-1}(\mathrm{D}_+(f_j))$ cover $\mathrm{X}$. We may thus regard $u$ as a quasi-finite separated morphism from $\mathrm{X}$ to the open subscheme
 \[

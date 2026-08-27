@@ -275,7 +275,7 @@ Moreover, in the preceding condition, one may restrict to the case where $A$ is 
 
 \begin{proof}
 If $Y'$ is as in the statement, the necessity of the condition follows from the fact that $f'$ must be open at the point $x'$, and the criterion \sref{IV.1.10.3}.
-To see that the condition is sufficient, consider a morphism of finite type $g:Y''\to U$, and let $X''=X\times_Y Y''$, $f''=f_{(Y'')}:X''\to Y''$, and $x''$ a point of $X''$ above $x$.
+To see that the condition is sufficient, consider a morphism of finite type $g:Y''\to Y$\footnote{The printed source has $g:Y''\to U$ here, although $U$ is undefined; the subsequent fibre product is over $Y$.}, and let $X''=X\times_Y Y''$, $f''=f_{(Y'')}:X''\to Y''$, and $x''$ a point of $X''$ above $x$.
 Set $y''=f''(x'')$, and let $t$ be a generization of $y''$ in $Y''$, distinct from $y''$.
 Since $Y''$ is locally Noetherian, it follows from \sref[II]{II.7.1.9} and $(\mathbf{0}_{\mathrm{III}},~10.3.1)$ that there exists a scheme $Y'=\Spec(A)$, where $A$ is a complete discrete valuation ring whose residue field is an algebraic closure of $k(x'')$, and a morphism $g:Y'\to Y''$ such that, if $s$ and $y'$ are the generic point and the closed point respectively, we have $g(s)=t$ and $g(y')=y''$.
 There is then a point $x'$ of $X'=X\times_Y Y'=X''\times_{Y''}Y'$ whose projections in $X''$ and $Y'$ are $x''$ and $y'$ respectively, and which is rational over $k(y')$ \sref[I]{I.3.4.9}.
@@ -582,7 +582,7 @@ The following conditions are equivalent:
 Furthermore, when these conditions are satisfied, for every reduced closed sub-prescheme $X_i$ of $X$ having as underlying space an irreducible component of $X$ containing $x$, the restriction $f_i:X_i\to Y$ of $f$ is an equidimensional morphism at the point $x$, and universally open at all the points of the irreducible components of $f^{-1}(y)\cap X_i$ which contain $x$.
 \end{proposition}
 
-Condition \emph{a)} implies that $f$ is equidimensional at all the generic points of the irreducible components of $f^{-1}(y)$ containing $x$ \sref{IV.13.3.1}, and consequently \sref{IV.14.4.4} universally open at these points; the same argument applied to each $f_i$ (taking into account \sref{IV.13.3.3}) proves the last assertion of the proposition, in view of {\hyperlink{ega4.c04.subsec.14-3-3-1}{(14.3.3.1, (ii))}}.
+Condition \emph{a)} implies that $f$ is equidimensional at all the generic points of the irreducible components of $f^{-1}(y)$ containing $x$ \sref{IV.13.3.1}, and consequently \sref{IV.14.4.4} universally open at these points; the same argument applied to each $f_i$ (taking into account \sref{IV.13.3.3}) proves the last assertion of the proposition, in view of {\hyperlink{ega4.c04.subsec.14-3-3-1}{(14.3.3.1, (iii))}}.
 Furthermore, by \sref{IV.14.2.1}, we have the relations
 \begin{align}
   \dim(\sh{O}_{X_i,x}) &= \dim(\sh{O}_y) + \dim(\sh{O}_{X_i,x}\otimes_{\sh{O}_y}\kappa(y))
@@ -670,7 +670,7 @@ Let us recall however \sref{IV.12.1.1.5} that if $Y$ is locally Noetherian, $f:X
 (iv) The Chevalley criterion \sref{IV.14.4.4} explains the importance of the notion of universally open morphism.
 This notion allows in effect, in numerous results, more or less classical, to replace a hypothesis of \emph{normality} by the hypothesis that a certain morphism is universally open; the more general statement
 \oldpage[IV-3]{216}
-thus obtained will in particular apply to \emph{flat} morphisms \sref{IV.2.4.6}, whose importance in algebraic geometry is well known.
+thus obtained will in particular apply to \emph{flat} morphisms \sref{IV.2.4.6}, whose importance in algebraic geometry is growing.
 One can consider that the statements involving the hypothesis that a morphism is universally open are common generalisations of statements involving a hypothesis of normality and of statements involving a hypothesis of flatness.
 \end{remarks}
 
@@ -726,7 +726,7 @@ For every $g$ having these properties, $X'$ is equidimensional over $Y$ at the p
 
 \oldpage[IV-3]{217}
 One can restrict to the case where $X=U$ is an open affine neighbourhood of $x$ such that all the irreducible components of $f^{-1}(y)$ contain $x$.
-These components correspond to the minimal prime ideals of $\sh{O}_x/\mathfrak{m}_y\sh{O}_x$, and by hypothesis these ideals are distinct from $\mathfrak{m}_x/\mathfrak{m}_y\sh{O}_x$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~1, n\textsuperscript{o}~1, prop.~2); to obtain a $g\in\Gamma(U,\sh{O}_X)$ satisfying the conditions of the statement, it suffices to take $g\in\mathfrak{p}_x$ such that the image of $g$ in $\mathfrak{m}_x$ does not belong to any of the preceding prime ideals.
+These components correspond to the minimal prime ideals of $\sh{O}_x/\mathfrak{m}_y\sh{O}_x$, and by hypothesis these ideals are distinct from $\mathfrak{m}_x/\mathfrak{m}_y\sh{O}_x$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~1, n\textsuperscript{o}~1, prop.~2); to obtain a $g\in\Gamma(U,\sh{O}_X)$ satisfying the conditions of the statement, it suffices to take $g\in\mathfrak{j}_x$ such that the image of $g$ in $\mathfrak{m}_x$ does not belong to any of the preceding prime ideals.
 Moreover, as $\codim(X',X)\leq 1$ \sref{IV.5.1.8}, and as $X'$ does not contain any of the irreducible components of $f^{-1}(y)$ of dimension $e$, and since these are all the irreducible components of $f^{-1}(y)$, we have \sref[0]{0.14.2.2.2} $\dim_x(X'\cap f^{-1}(y))\leq e-1$.
 It then suffices to apply \sref{IV.14.5.1}.
 
@@ -770,8 +770,8 @@ The following conditions are equivalent:
 
 The equivalence of \emph{a)}, \emph{b)}, \emph{c)} and \emph{d)} has already been shown \sref{IV.14.3.8}.
 It is clear that \emph{e)} implies \emph{d)}, since for every irreducible component $X_i$ of $X$ meeting $f^{-1}(y)$, there exists in $X_i\cap f^{-1}(y)$ a closed point \sref{IV.5.1.11}.
-It suffices to prove that \emph{c)} implies \emph{e)}: consider a closed point $x$ of $f^{-1}(y)$ and let $X_i$ be an irreducible component of $X$ containing $x$.
-As the restriction $f_i:X_i\to Y$ of $f$ to $X_i$ is a dominant morphism, it follows from the equivalence of \emph{c)} and \emph{d)} for $f_i$ that this morphism is open at the generic points of $X_i\cap f^{-1}(y)$, hence from \sref{IV.14.4.2} that $f_i$ is equidimensional at the point $x$, and we conclude with the aid of \sref{IV.14.5.3}.
+Finally, to prove that \emph{c)} implies \emph{e)}, we may restrict to the case where $f$ is a morphism of finite type; consider a closed point $x$ of $f^{-1}(y)$ and let $X_i$ be an irreducible component of $X$ containing $x$.
+As the restriction $f_i:X_i\to Y$ of $f$ to $X_i$ is a dominant morphism, it follows from the equivalence of \emph{c)} and \emph{d)} for $f_i$ that this morphism is open at the generic points of $X_i\cap f^{-1}(y)$. It follows from \sref{IV.14.2.2} that $f_i$ is equidimensional at the point $x$, and we conclude with the aid of \sref{IV.14.5.3}.
 
 \begin{remark}[14.5.7]
 \label{IV.14.5.7}
