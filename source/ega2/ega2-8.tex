@@ -1481,7 +1481,7 @@ There is a canonical $C$-isomorphism
 
 \begin{proof}
 Suppose first of all that $Y=\Spec(A)$ is affine, so that $\sh{S}=\widetilde{S}$, with $S$ a positively-graded $A$-algebra, and $C=\Spec(S)$.
-Definition~\sref{II.8.2.7.4} then shows, with the notation of \sref{II.8.2.6}, that $\sh{S}^\natural=(S^\natural)\supertilde$.
+Definition~\sref{II.8.2.6.2} then shows, with the notation of \sref{II.8.2.6}, that $\sh{S}^\natural=(S^\natural)\supertilde$.
 To define \sref{II.8.7.3.1}, consider a homogeneous element $f\in S_d$ ($d>0$) and the corresponding element $f^\natural\in S^\natural$ \sref{II.8.2.6};
 the $S$-isomorphism in \sref{II.8.2.7.3} then defines a $C$-isomorphism
 \[
@@ -1561,19 +1561,19 @@ We then have, by \sref{II.1.5.2}, that $C_{U'} = C_U\times_X X' = C_U\times_U U'
 \oldpage[II]{176}
     a $Y$-morphism $v:C\to C''$ (with $C''=\Spec(\sh{S}'')$) such that $\sh{A}(v)=\vphi$, and, since $\vphi$ is a homomorphism of graded algebras, $\vphi$ induces a $v$-morphism of graded algebras $\psi:\sh{S}^{\prime\prime\natural}\to\sh{S}^\natural$ \sref{II.1.4.1}.
     Furthermore, it follows from \sref{II.8.2.10}[iv] and from the hypothesis on $\vphi$ that $\Proj(\psi)$ is everywhere defined.
-    Finally, taking \sref{II.3.5.6.1} into account, there is a canonical $u$-morphism $\sh{S}_{X''}\to\sh{S}_X$, whence \sref{II.1.5.6} a morphism $w:C_{X''}\to C_X$.
+    Finally, taking \sref{II.3.5.6.1} into account, there is a canonical $u$-morphism $\sh{S}_{X''}\to\sh{S}_X$, whence \sref{II.1.5.6} a morphism $w:C_X\to C_{X''}$.
     With this in mind, the diagram
     \[
     \label{II.8.7.4.2}
       \xymatrix{
-        C_{X''}
+        C_X
           \ar[r]^-{\sim}
           \ar[d]_{w}
-      & \Proj(\sh{S}^{\prime\prime\natural})
-          \ar[d]^{\Proj(\psi)}
-      \\C_X
-          \ar[r]^-{\sim}
       & \Proj(\sh{S}^\natural)
+          \ar[d]^{\Proj(\psi)}
+      \\C_{X''}
+          \ar[r]^-{\sim}
+      & \Proj(\sh{S}^{\prime\prime\natural})
       }
     \tag{8.7.4.2}
     \]
@@ -2443,6 +2443,7 @@ since $q=u\circ q'$ is proper, we finally conclude, from \sref{II.5.4.3} and \sr
 \begin{proposition}[8.11.7]
 \label{II.8.11.7}
 Let $Y$ be a prescheme, $X$ an \emph{integral} prescheme, $p:X\to Y$ a proper morphism, $\sh{L}$ a $p$-ample invertible $\sh{O}_X$-module, $C$ a \emph{normal} $Y$-prescheme, $\varepsilon:Y\to C$ a $Y$-section, and $q:V=\bb{V}(\sh{L})\to C$ a $Y$-morphism, all such that the diagram in \sref{II.8.9.1.1} commutes.
+Suppose that $q$ is proper and that the restriction of $q$ to $V\setmin j(X)$ is an isomorphism to $C\setmin\varepsilon(Y)$.
 Suppose further that, if $p=(p_0,\theta)$, then $\theta:\sh{O}_Y\to p_*(\sh{O}_X)$ is an isomorphism.
 Let $\sh{S}'=\bigoplus_{n\geq0}p_*(\sh{L}^{\otimes n})$ and $C'=\Spec(\sh{S}')$, and let $q':\bb{V}(\sh{L})\to C'$ be the canonical $Y$-morphism \sref{II.8.8.5}.
 Then the unique $Y$-morphism $u:C'\to C$ such that $q=u\circ q'$ is an \emph{isomorphism}.
