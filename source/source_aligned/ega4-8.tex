@@ -62,7 +62,7 @@ In what follows, when we apply the results that follow to any one of the three p
 \label{IV.8.1.3}
 In example \emph{a)} of \sref{IV.8.1.2}, we saw that if $\mathrm{Y}$ is an integral prescheme with generic point $y$, $f:\mathrm{X}\to\mathrm{Y}$ a morphism of finite presentation, and if the generic fibre $f^{-1}(y)$ is proper over $\boldsymbol{k}(y)$, then there exists an open neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{Y}$ such that $f^{-1}(\mathrm{U})$ is proper over $\mathrm{U}$; it follows \emph{a fortiori} that for every $s\in\mathrm{U}$, $f^{-1}(s)$ is proper over $\boldsymbol{k}(s)$.
 It turns out that one needs a converse, ensuring that if $f^{-1}(s)$ is proper over $\boldsymbol{k}(s)$ for ``sufficiently many'' points $s\in\mathrm{U}$, then $f^{-1}(y)$ is proper over $\boldsymbol{k}(y)$.
-For example, suppose that $\mathrm{X}$ and $\mathrm{Y}$ are algebraic preschemes over an algebraically closed field $k$ (one can take for $k$ the field $\mathbf{C}$ of complex numbers, to fix ideas); one sometimes needs to know that, for every $s\in\mathrm{Y}$, \emph{rational over $k$}, the fibre $f^{-1}(s)$ is proper over $\boldsymbol{k}(s)$, then $f^{-1}(y)$ is proper over $\boldsymbol{k}(y)$, and consequently $f^{-1}(\mathrm{U})$ is proper over $\mathrm{U}$ for a neighbourhood $\mathrm{U}$ of $y$\footnote{We note that such a statement is ultimately purely geometric in nature, in the sense that it only appeals to rational points over $k$, and not to generic points; for example, when $k=\mathbf{C}$, this statement has an obvious topological significance for the analyst, interpreting ``proper'' in the topological sense of the term, for the underlying analytic spaces formed by the points of $\mathrm{X}$ and $\mathrm{Y}$ rational over $\mathbf{C}$.}.
+For example, suppose that $\mathrm{X}$ and $\mathrm{Y}$ are algebraic preschemes over an algebraically closed field $k$ (one can take for $k$ the field $\mathbf{C}$ of complex numbers, to fix ideas); one sometimes needs to know that if, for every $s\in\mathrm{Y}$, \emph{rational over $k$}, the fibre $f^{-1}(s)$ is proper over $\boldsymbol{k}(s)$, then $f^{-1}(y)$ is proper over $\boldsymbol{k}(y)$, and consequently $f^{-1}(\mathrm{U})$ is proper over $\mathrm{U}$ for a neighbourhood $\mathrm{U}$ of $y$\footnote{We note that such a statement is ultimately purely geometric in nature, in the sense that it only appeals to rational points over $k$, and not to generic points; for example, when $k=\mathbf{C}$, this statement has an obvious topological significance for the analyst, interpreting ``proper'' in the topological sense of the term, for the underlying analytic spaces formed by the points of $\mathrm{X}$ and $\mathrm{Y}$ rational over $\mathbf{C}$.}.
 Now this statement will follow easily from the following: the set $\mathrm{E}$ of points $s\in\mathrm{Y}$ such that $f^{-1}(s)$ is proper over $\boldsymbol{k}(s)$ is \emph{constructible} (and therefore identical to all of $\mathrm{Y}$ if it contains the closed points of $\mathrm{Y}$, by the theorem of zeros of Hilbert \sref[I]{I.10.4.8}); this amounts again to saying that if $f^{-1}(y)$ \emph{is not proper} over $\boldsymbol{k}(y)$, then there exists an open neighbourhood $\mathrm{U}$ of $y$ such that $f^{-1}(s)$ is not proper over $\boldsymbol{k}(s)$ for every $s\in\mathrm{U}$ (cf.\ \sref{IV.9.6.1},~(iv))).
 This example illustrates the interest of systematically developing \emph{criteria of constructibility}: this is what will be done in \textsection\,9.
 \end{env}
@@ -222,7 +222,7 @@ In particular, we have thus proved the
 
 \begin{corollary}[8.2.10]
 \label{IV.8.2.10}
-Let $(\mathrm{A}_\lambda)_{\lambda\in\mathrm{L}}$ be a filtered inductive system of rings, and let $\varphi_\lambda:\mathrm{A}_\lambda\to\mathrm{A}$ be the canonical homomorphisms.
+Let $(\mathrm{A}_\lambda)_{\lambda\in\mathrm{L}}$ be a filtered inductive system of rings, and let $\mathrm{A}=\varinjlim\mathrm{A}_\lambda$, $\varphi_\lambda:\mathrm{A}_\lambda\to\mathrm{A}$ be the canonical homomorphisms.
 The canonical map $\mathfrak{p}\mapsto(\varphi_\lambda^{-1}(\mathfrak{p}))$ is a homeomorphism of $\operatorname{Spec}(\mathrm{A})$ onto the topological space $\varprojlim\operatorname{Spec}(\mathrm{A}_\lambda)$.
 \end{corollary}
 
@@ -237,7 +237,7 @@ This follows from the fact that, by definition of the projective limit topology,
 
 \begin{corollary}[8.2.12]
 \label{IV.8.2.12}
-With the notations of \sref{IV.8.2.8}, the inductive limit of the inductive system of homomorphisms $\theta_\lambda^*:\psi_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\to\sh{O}_\mathrm{S}$ of sheaves of rings on $\mathrm{S}$ is an isomorphism
+With the notations of \sref{IV.8.2.8}, the inductive limit of the inductive system of homomorphisms $\theta_\lambda^\sharp:\psi_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\to\sh{O}_\mathrm{S}$ of sheaves of rings on $\mathrm{S}$ is an isomorphism
 \begin{equation}
   \varinjlim_\lambda\psi_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\xrightarrow{\sim}\sh{O}_\mathrm{S}.
   \label{IV.8.2.12.1}
@@ -252,7 +252,7 @@ We can evidently suppose the $\mathrm{S}_\lambda$ affine; with the notations of 
 \begin{proposition}[8.2.13]
 \label{IV.8.2.13}
 Suppose that the morphisms $u_{\lambda\mu}:\mathrm{S}_\mu\to\mathrm{S}_\lambda$ are open immersions, so that $\mathrm{S}_\mu$ identifies with the subscheme induced on an open subset of $\mathrm{S}_\lambda$ for $\lambda\leqslant\mu$.
-Then, for every $\alpha\in\mathrm{L}$, the underlying space of the prescheme $\mathrm{S}$ identifies with the intersection of the $\mathrm{S}_\lambda$ for $\lambda\geqslant\alpha$, and the structural sheaf $\sh{O}_\mathrm{S}$ identifies with the sheaf induced \textnormal{(}$\mathrm{G}$, II, $1.5$\textnormal{)} by $\sh{O}_{\mathrm{S}_\alpha}$ on this intersection; more generally, for every $\sh{O}_{\mathrm{S}_\alpha}$-Module $\sh{F}_\alpha$, $u_\alpha^*(\sh{F}_\alpha)$ identifies with the $\sh{O}_\mathrm{S}$-Module induced by $\sh{F}_\alpha$ on $\mathrm{S}$.
+Then, for every $\alpha\in\mathrm{L}$, the underlying space of the prescheme $\mathrm{S}$ identifies with the subspace of $\mathrm{S}_\alpha$ given by the intersection of the $\mathrm{S}_\lambda$ for $\lambda\geqslant\alpha$, and the structural sheaf $\sh{O}_\mathrm{S}$ identifies with the sheaf induced \textnormal{(}$\mathrm{G}$, II, $1.5$\textnormal{)} by $\sh{O}_{\mathrm{S}_\alpha}$ on this intersection; more generally, for every $\sh{O}_{\mathrm{S}_\alpha}$-Module $\sh{F}_\alpha$, $u_\alpha^*(\sh{F}_\alpha)$ identifies with the $\sh{O}_\mathrm{S}$-Module induced by $\sh{F}_\alpha$ on $\mathrm{S}$.
 \end{proposition}
 
 \begin{proof}
@@ -278,7 +278,7 @@ and the functor $\rho^*$ is exact, the inductive limit of the $\rho_\lambda^*(\s
 \[
  \omega^\sharp:\rho^*(\sh{O}_\mathrm{S})\longrightarrow\sh{O}_\mathrm{Y}
 \]
-such that $\omega_\lambda^\sharp=\omega^\sharp\circ\rho^*(\theta_\lambda^*)$ for every $\lambda$, which proves the assertion.
+such that $\omega_\lambda^\sharp=\omega^\sharp\circ\rho^*(\theta_\lambda^\sharp)$ for every $\lambda$, which proves the assertion.
 \end{remark}
 
 \subsection{Constructible subsets of a projective limit of preschemes}
@@ -320,7 +320,7 @@ Set
 \[
   \mathrm{G}_\lambda=\mathrm{E}_\lambda\cap(\mathrm{S}_\lambda-\mathrm{F}_\lambda),\qquad \mathrm{G}=\mathrm{E}\cap(\mathrm{S}-\mathrm{F}).
 \]
-Then $\mathrm{G}_\lambda$ is a pro-constructible subset of $\mathrm{S}_\lambda$ \sref{IV.1.9.5},~(i), and by virtue of \sref{IV.8.3.2.1} and (ii) we have
+Then $\mathrm{G}_\lambda$ is a pro-constructible subset of $\mathrm{S}_\lambda$ \sref{IV.1.9.5},~(ii), and by virtue of \sref{IV.8.3.2.1} and condition (ii) we have
 \[
   \mathrm{G}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{G}_\lambda)\qquad\text{for }\lambda\leqslant\mu
 \]
@@ -332,7 +332,7 @@ We are thus reduced to proving the particular case of \sref{IV.8.3.2} correspond
 
 \begin{corollary}[8.3.3]
 \label{IV.8.3.3}
-For every $\lambda$, let $\mathrm{E}_\lambda$ be a pro-constructible subset of $\mathrm{S}_\lambda$ such that $\mathrm{E}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{E}_\lambda)$.
+For every $\lambda$, let $\mathrm{E}_\lambda$ be a pro-constructible subset of $\mathrm{S}_\lambda$ such that, for $\lambda\leqslant\mu$, $\mathrm{E}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{E}_\lambda)$.
 Suppose that there exists $\alpha\in\mathrm{L}$ such that $\mathrm{S}_\alpha$ is quasi-compact.
 Then the following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
@@ -355,7 +355,7 @@ whence
 \[
   \mathrm{E}_\lambda\cap u_\lambda(\mathrm{S})=\bigcap_{\mu\geqslant\lambda}(\mathrm{E}_\lambda\cap u_{\lambda\mu}(\mathrm{S}_\mu)).
 \]
-Now, since $u_\lambda$ and the $u_{\lambda\mu}$ are quasi-compact, $u_\lambda(\mathrm{S})$ and $u_{\lambda\mu}(\mathrm{S}_\mu)$ are pro-constructible in $\mathrm{S}_\lambda$ \sref{IV.1.9.5},~(vii), hence the sets $\mathrm{E}_\lambda\cap u_{\lambda\mu}(\mathrm{S}_\mu)$ for $\mu\geqslant\lambda$ form a filtered decreasing family of pro-constructible subsets of $\mathrm{S}_\lambda$.
+Now, since $u_\lambda$ and the $u_{\lambda\mu}$ are quasi-compact, $u_\lambda(\mathrm{S})$ and $u_{\lambda\mu}(\mathrm{S}_\mu)$ are pro-constructible in $\mathrm{S}_\lambda$ \sref{IV.1.9.5},~(viii), hence the sets $\mathrm{E}_\lambda\cap u_{\lambda\mu}(\mathrm{S}_\mu)$ for $\mu\geqslant\lambda$ form a filtered decreasing family of pro-constructible subsets of $\mathrm{S}_\lambda$.
 Since $\mathrm{S}_\lambda$ is quasi-compact, the hypothesis \emph{b)} implies that the intersection of this family is empty, hence \sref{IV.1.9.9} one of the sets $\mathrm{E}_\lambda\cap u_{\lambda\mu}(\mathrm{S}_\mu)$ is empty, hence $\mathrm{E}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{E}_\lambda)$ is empty.
 \end{proof}
 
@@ -481,18 +481,18 @@ Furthermore:
 
 \begin{theorem}[8.3.11]
 \label{IV.8.3.11}
-Suppose that there exists $\alpha$ such that $\mathrm{S}_\alpha$ is quasi-compact and quasi-separated.
+Suppose that there exists $\alpha\in\mathrm{L}$ such that $\mathrm{S}_\alpha$ is quasi-compact and quasi-separated.
 Then the canonical maps \sref{IV.8.3.9.2}, \sref{IV.8.3.9.3}, \sref{IV.8.3.9.4}, and \sref{IV.8.3.9.5} are \emph{bijective}.
 \end{theorem}
 
 \begin{proof}
 By virtue of the preceding remark, it remains to prove that these maps are \emph{surjective}; as every constructible subset of $\mathrm{S}$ is a finite union of sets of the form $\mathrm{U}\cap\complement\mathrm{V}$, where $\mathrm{U}$ and $\mathrm{V}$ are open and constructible, it will suffice to prove that \sref{IV.8.3.9.3} is surjective for it to be the same for \sref{IV.8.3.9.2} (and also for \sref{IV.8.3.9.4}, by passing to complements).
-Now, since the morphisms $\mathrm{S}_\lambda\to\mathrm{S}_\alpha$ and $\mathrm{S}\to\mathrm{S}_\alpha$ are affine, hence separated, the $\mathrm{S}_\lambda$ for $\lambda\geqslant\alpha$ and $\mathrm{S}$ are quasi-compact and quasi-separated, and one knows that the constructible open subsets of such a prescheme are none other than the quasi-compact open subsets \sref{IV.1.8.1}.
+Now, since the morphisms $\mathrm{S}_\lambda\to\mathrm{S}_\alpha$ and $\mathrm{S}\to\mathrm{S}_\alpha$ are affine, hence separated, the $\mathrm{S}_\lambda$ for $\lambda\geqslant\alpha$ and $\mathrm{S}$ are quasi-compact and quasi-separated \sref{IV.1.2.2}, and one knows that the constructible open subsets of such a prescheme are none other than the quasi-compact open subsets \sref{IV.1.8.1}.
 The conclusion then follows from \sref{IV.8.2.11} except for the map \sref{IV.8.3.9.5}.
 To prove that this last map is surjective, consider a locally closed and constructible subset $\mathrm{Z}$ of $\mathrm{S}$; $\mathrm{Z}$ is therefore quasi-compact ($\mathbf{0}_{\mathrm{III}}$,~9.1.4).
-Since every point $x\in\mathrm{Z}$ admits by hypothesis an open quasi-compact neighbourhood $\mathrm{V}_x$ in $\mathrm{S}$ such that $\mathrm{Z}\cap\mathrm{V}_x$ is closed in $\mathrm{V}_x$, we can cover $\mathrm{Z}$ by a finite number of the $\mathrm{V}_x$; hence there is a quasi-compact open subset $\mathrm{U}$ containing $\mathrm{Z}$ such that $\mathrm{Z}$ is closed in $\mathrm{U}$; in other words, $\mathrm{Z}$ is also constructible in $\mathrm{U}$ ($\mathbf{0}_{\mathrm{III}}$,~9.1.8).
+Since every point $x\in\mathrm{Z}$ admits by hypothesis an open quasi-compact neighbourhood $\mathrm{V}_x$ in $\mathrm{S}$ such that $\mathrm{Z}\cap\mathrm{V}_x$ is closed in $\mathrm{V}_x$, we can cover $\mathrm{Z}$ by a finite number of the $\mathrm{V}_x$; in other words, there is a quasi-compact open subset $\mathrm{U}$ containing $\mathrm{Z}$ such that $\mathrm{Z}$ is closed in $\mathrm{U}$; since $\mathrm{Z}$ is constructible in $\mathrm{S}$, it is also constructible in $\mathrm{U}$ ($\mathbf{0}_{\mathrm{III}}$,~9.1.8).
 We know \sref{IV.8.2.11} that there exist $\lambda$ and a quasi-compact open subset $\mathrm{U}_\lambda$ of $\mathrm{S}_\lambda$ such that $\mathrm{U}=u_\lambda^{-1}(\mathrm{U}_\lambda)$.
-Applying to $\mathrm{U}$ (which is a projective limit of $\mathrm{U}_\mu=u_{\lambda\mu}^{-1}(\mathrm{U}_\lambda)$ for $\mu\geqslant\lambda$) the fact that the map \sref{IV.8.3.9.4} is surjective, one sees that there exist $\mu\geqslant\lambda$ and a closed constructible subset $\mathrm{Z}_\mu$ in $\mathrm{U}_\mu$ such that $\mathrm{Z}=u_\mu^{-1}(\mathrm{Z}_\mu)$.
+Applying to $\mathrm{U}$ (which is the projective limit of the $\mathrm{U}_\mu=u_{\lambda\mu}^{-1}(\mathrm{U}_\lambda)$ for $\mu\geqslant\lambda$) the fact that the map \sref{IV.8.3.9.4} is surjective, one sees that there exist $\mu\geqslant\lambda$ and a closed constructible subset $\mathrm{Z}_\mu$ in $\mathrm{U}_\mu$ such that $\mathrm{Z}=u_\mu^{-1}(\mathrm{Z}_\mu)$.
 But since the canonical immersion $\mathrm{U}_\mu\to\mathrm{S}_\mu$ is quasi-compact by hypothesis \sref{IV.1.2.7}, it is of finite presentation \sref{IV.1.6.2},~(i), and $\mathrm{Z}_\mu$ is also a constructible subset \emph{of} $\mathrm{S}_\mu$ by virtue of \sref{IV.1.8.4} and \sref{IV.1.8.1}; since $\mathrm{Z}_\mu$ is evidently locally closed in $\mathrm{S}_\mu$, this completes the proof.
 \end{proof}
 
@@ -511,7 +511,7 @@ Since $\mathrm{L}$ is filtered and each $\mathrm{Z}\cap\mathrm{U}^{(i)}$ is cons
 
 \begin{proposition}[8.3.13]
 \label{IV.8.3.13}
-Suppose that the morphisms $u_{\lambda\mu}:\mathrm{S}_\mu\to\mathrm{S}_\lambda$ are flat and that there exists $\alpha$ such that $\mathrm{S}_\alpha$ is quasi-compact.
+Suppose that the morphisms $u_{\lambda\mu}:\mathrm{S}_\mu\to\mathrm{S}_\lambda$ are flat for $\lambda\leqslant\mu$, and that there exists $\alpha$ such that $\mathrm{S}_\alpha$ is quasi-compact.
 For every $\lambda$, let $\mathrm{Z}'_\lambda$, $\mathrm{Z}''_\lambda$ be two pro-constructible subsets of $\mathrm{S}_\lambda$, such that $\mathrm{Z}'_\mu=u_{\lambda\mu}^{-1}(\mathrm{Z}'_\lambda)$ and $\mathrm{Z}''_\mu=u_{\lambda\mu}^{-1}(\mathrm{Z}''_\lambda)$ for $\mu\geqslant\lambda$; suppose further that $\overline{\mathrm{Z}'_\alpha}$ is constructible in $\mathrm{S}_\alpha$.
 Set $\mathrm{Z}'=u_\lambda^{-1}(\mathrm{Z}'_\lambda)$, $\mathrm{Z}''=u_\lambda^{-1}(\mathrm{Z}''_\lambda)$; for $\mathrm{Z}''\subset\overline{\mathrm{Z}'}$, it is necessary and sufficient that there exist $\lambda\geqslant\alpha$ such that $\mathrm{Z}''_\lambda\subset\overline{\mathrm{Z}'_\lambda}$.
 \end{proposition}
@@ -575,12 +575,12 @@ This lemma being proved, one can suppose that for every $\lambda$, $u_\lambda$ i
 On the other hand, if $\mathrm{U}_i$ is the open subset of $\mathrm{S}$ complementary to the union of the $\mathrm{Y}_j$ of index $j\neq i$ ($1\leqslant i\leqslant m$), the $\mathrm{U}_i$ are pairwise disjoint and $\mathrm{Y}_i=\overline{\mathrm{U}_i}$ \sref[0]{0.2.1.6}.
 Since the underlying space of $\mathrm{S}$ is Noetherian, the $\mathrm{U}_i$ are quasi-compact, hence there exist an index $\lambda$ and open subsets $\mathrm{U}_{i\lambda}$ of $\mathrm{S}_\lambda$ such that $\mathrm{U}_i=u_\lambda^{-1}(\mathrm{U}_{i\lambda})$ for $1\leqslant i\leqslant m$ \sref{IV.8.2.11}.
 From this one concludes that if one sets $\mathrm{U}_{i\mu}=u_{\lambda\mu}^{-1}(\mathrm{U}_{i\lambda})$ for $\lambda\leqslant\mu$, the $\mathrm{U}_{i\mu}$ are pairwise disjoint, because the $\mathrm{U}_i=u_\mu^{-1}(\mathrm{U}_{i\mu})$ are so and $u_\mu$ is dominant.
-Consequently, none of the closures $\overline{\mathrm{U}_{i\mu}}$ is contained in another, and $u_\mu(\mathrm{U}_i)$ is dense in $\mathrm{U}_{i\mu}$ since $u_\mu$ is dominant; hence $\overline{\mathrm{U}_{i\mu}}=\overline{u_\mu(\mathrm{Y}_i)}$, which proves that the $\overline{u_\mu(\mathrm{Y}_i)}$ are the irreducible components of $\mathrm{S}_\mu$ \sref[0]{0.2.1.7} and completes the proof.
+Consequently, none of the closures $\overline{\mathrm{U}_{i\mu}}$ is contained in another, and $u_\mu(\mathrm{U}_i)$ is dense in $\mathrm{U}_{i\mu}$ since $u_\mu$ is dominant; hence $\overline{\mathrm{U}_{i\mu}}=\overline{u_\mu(\mathrm{Y}_i)}$, which proves that the $\overline{\mathrm{U}_{i\mu}}$ are the irreducible components of $\mathrm{S}_\mu$ \sref[0]{0.2.1.7} and completes the proof.
 
   \item Since the underlying space $\mathrm{S}$ is Noetherian, the $\mathrm{C}_j$ are open and closed in $\mathrm{S}$ and quasi-compact; the same reasoning as in (i) shows that there exist $\lambda$ and open subsets $\mathrm{V}_{j\lambda}$ of $\mathrm{S}_\lambda$ such that $\mathrm{C}_j=u_\lambda^{-1}(\mathrm{V}_{j\lambda})$ for $1\leqslant j\leqslant n$.
-One sees also, as in (i), that if one sets $\mathrm{V}_{j\mu}=u_{\lambda\mu}^{-1}(\mathrm{V}_{j\lambda})$ for $\mu\geqslant\lambda$, the $\mathrm{V}_{j\mu}$ are pairwise disjoint, and $u_\mu(\mathrm{C}_j)$ is dense in $\mathrm{V}_{j\mu}$.
+One sees also, as in (i), that if one sets $\mathrm{V}_{j\mu}=u_{\lambda\mu}^{-1}(\mathrm{V}_{j\lambda})$ for $\mu\geqslant\lambda$, the $\mathrm{V}_{j\mu}$ are pairwise disjoint, and $u_\mu(\mathrm{C}_j)$ is dense in $\mathrm{V}_{j\mu}$; this implies that $\mathrm{V}_{j\mu}$ is connected.
 Furthermore, it follows from \sref{IV.8.3.4} that for $\mu$ sufficiently large, the union of the $\mathrm{V}_{j\mu}$ is $\mathrm{S}_\mu$, since every open subset of a prescheme is ind-constructible \sref{IV.1.9.6}.
-The $\mathrm{V}_{j\mu}$ are thus the connected components of $\mathrm{S}_\mu$, this completes the proof.
+The $\mathrm{V}_{j\mu}$ are thus the connected components of $\mathrm{S}_\mu$, and this completes the proof.
 \end{enumerate}
 \end{proof}
 

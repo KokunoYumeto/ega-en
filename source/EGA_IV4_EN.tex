@@ -1,0 +1,64 @@
+% This volume-only reader cannot provide destinations owned by EGA IV, Parts
+% One--Three or by the other EGA volumes.  Keep their printed references, but
+% suppress broken PDF links here; the cumulative/global reader retains links.
+\PassOptionsToPackage{hyperfootnotes=false,draft}{hyperref}
+\input{preamble}
+\input{EGA4_reference_v2_registry}
+\input{EGA4_reference_v2_links}
+% Six Chapter 0 targets cited in inherited IV-4 source are outside this
+% volume-only reader.  Supply printable, non-linking label stubs locally so
+% the references remain visible without claiming that their targets are here.
+\makeatletter
+\newcommand{\EGAIVFourExternalLabel}[1]{%
+  \expandafter\gdef\csname r@#1\endcsname{{#1}{0}{}{#1}{}}}
+\EGAIVFourExternalLabel{0.4.3.3}
+\EGAIVFourExternalLabel{0.5.4.3}
+\EGAIVFourExternalLabel{0.5.4.5}
+\EGAIVFourExternalLabel{0.5.4.7}
+\EGAIVFourExternalLabel{0.6.1.2}
+\EGAIVFourExternalLabel{0.16.4.6}
+\makeatother
+\setlength{\emergencystretch}{3em}
+
+\hypersetup{
+  pdftitle={Elements of Algebraic Geometry IV, Part Four -- English Edition},
+  pdfauthor={Alexander Grothendieck and Jean Dieudonne; English translation},
+  pdfsubject={Standalone English reader of EGA IV, Part Four}
+}
+
+\begin{document}
+
+\title{Elements of Algebraic Geometry IV\\Part Four}
+\author{Alexander Grothendieck and Jean Dieudonn\'e}
+\date{}
+\maketitle
+
+\begin{center}
+\large Standalone English reader
+\end{center}
+
+\tableofcontents
+
+\setcounter{section}{15}
+\input{source_aligned/ega4-16}
+\input{source_aligned/ega4-17}
+\input{source_aligned/ega4-18}
+\input{source_aligned/ega4-19}
+\input{source_aligned/ega4-20}
+\input{source_aligned/ega4-21}
+
+\input{source_aligned/ega4-backmatter-bibliography}
+\input{source_aligned/ega4-backmatter-notation}
+\input{source_aligned/ega4-backmatter-terminology}
+\input{source_aligned/ega4-backmatter-contents}
+\input{source_aligned/ega4-errata-addenda-list3}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Consolidated bibliography}
+\section*{Consolidated bibliography}
+\nocite{*}
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}

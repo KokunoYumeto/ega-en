@@ -1,30 +1,20 @@
 # Elements of Algebraic Geometry (EGA) — complete linked English reader
 
-[Open the current complete linked English PDF](reader/00_EGA_EN_COMPLETE_LINKED_READER.pdf)
+[Open the complete cumulative reader](reader/00_EGA_EN_COMPLETE_LINKED_READER.pdf)
 
-- Stable English-edition DOI: [10.5281/zenodo.21921591](https://doi.org/10.5281/zenodo.21921591)
-- Exact public C47 release: [10.5281/zenodo.22072594](https://doi.org/10.5281/zenodo.22072594)
-- Compact Figshare mirror currently available: [10.6084/m9.figshare.33314847.v2](https://doi.org/10.6084/m9.figshare.33314847.v2)
-- Global EGA directory: [10.5281/zenodo.20414353](https://doi.org/10.5281/zenodo.20414353)
-- Controlling French edition: [10.5281/zenodo.21921588](https://doi.org/10.5281/zenodo.21921588)
+- Stable concept DOI: https://doi.org/10.5281/zenodo.21921591
+- Immutable polished release DOI: https://doi.org/10.5281/zenodo.22131647
 
-## Verified scope
+## Complete scope
 
-This repository contains the complete linked standalone English EGA 0–IV source tree and reader. The inherited English text is a discovery witness: the cumulative direct-French recheck is complete through the terminal page of EGA III-1, and the completed EGA III-2 handoff is integrated. This wording does not claim that every inherited EGA IV page has completed the direct-French recheck.
+This version is complete: EGA 0/I, II, III-1, III-2, and IV-1 through IV-4.
 
-Every admitted departure, retained correction, fidelity repair, normalization, erratum and reversal is controlled against the French NUMDAM authority. The French and English editions remain independent; no bilingual, parallel, side-by-side, paired or interleaved reader is produced.
+The English reader is independently maintained and source-rechecked against the French authority; it is not a parallel or interleaved edition.
 
-C47 admits source-grounded corrected readings for verified EGA I defects: the 5.5.5/5.5.9 cross-references, the doubled-plane conditions in 5.5.11, the missing restrictions in 6.1.8/6.1.12, the ill-typed `Γ(Y,O_X)` in 10.9.4, and the omitted word “formal” in 10.9.9. The three changed source files and their exact inverses are bound by `R31B46` and the public source manifest.
+The cumulative PDF has **1,410 physical pages**: one editorial cover followed by the complete body. It is 13,962,552 bytes; SHA-256 `9AFA08631F0655CCD464961B7DA6C0B4FFF867302E6F6E5A0F2AA2A678D81DFE`.
 
-## Contents
+## Verifiable contents
 
-- `reader/`: the current complete linked English PDF, fronted in the repository.
-- `source/`: the exact 127-file TeX source tree of the public release.
-- `SOURCE_MANIFEST.json`: ordinal manifest; tree SHA-256 `FD20159C51B06C2096EEEAB961B3C6382B2412A545886BF4315F28A01ECEF6C6`.
-- `build/BUILD.ps1`: serialized pdfLaTeX/BibTeX build.
-- `release/`: editable-source archive, public manifest and full-provenance pointer.
-- `evidence/`: exact release identity and access to decisions, inverses and QA.
+The repository binds 131 editable source files (7,450,641 bytes), source-tree SHA-256 `593B381BC0930B7FFB760FFAD250C4D6126BDD395D8C68EC72EF295F4B4118AA`. The release also contains the standalone EGA IV-4 reader, flattened privacy-projected provenance, and SHA-256 checksums.
 
-The tracked PDF contains 1,376 pages, 15,280,628 bytes, SHA-256 `3541071C7A9C59ECF763A51B09130AB39967A8EAB2CDDAD95E13D673EA14B8B9`.
-
-No human review, institutional certification or endorsement by the authors, IHÉS, NUMDAM or an upstream Stacks maintainer is claimed. Project contribution: `AI typesetting & translation`.
+French and English remain independent; no bilingual, parallel, side-by-side, paired, or interleaved reader is produced. No endorsement by the authors, IHÉS, NUMDAM, or an upstream Stacks maintainer is claimed. Project contribution: `AI typesetting & translation`.

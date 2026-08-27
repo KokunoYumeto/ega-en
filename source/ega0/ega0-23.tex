@@ -27,7 +27,7 @@ If, for every finite radicial extension $K'$ of $K$, the integral closure of $A$
 
 \begin{proof}
 Since $A$ is Noetherian, it suffices, to verify that $A$ is a Japanese ring, to see that for every finite \emph{quasi-Galois} extension $L$ of $K$, the integral closure $B$ of $A$ in $L$ is an $A$-module of finite type.
-Now $L$ is a \emph{Galois} extension of the largest \emph{Galois} extension $K'$ of $K$ contained in $L$; and if $A'$ is the integral closure of $A$ in $K'$, $B$ is the integral closure of $A'$ in $L$.
+Now $L$ is a \emph{Galois} extension of the largest \emph{radicial} extension $K'$ of $K$ contained in $L$; and if $A'$ is the integral closure of $A$ in $K'$, $B$ is the integral closure of $A'$ in $L$.
 But we know that in a \emph{separable} extension, the integral closure of $A'$ is an $A'$-module of finite type (Bourbaki, \emph{Alg.~comm.}, chap.~V, \textsection1, n\textsuperscript{o}~6, cor.~1 of prop.~20), whence the proposition.
 \end{proof}
 
@@ -117,7 +117,7 @@ Let $A$ be a complete local Noetherian integral ring, $K$ its field of fractions
 \end{corollary}
 
 \begin{proof}
-We already know from \sref{0.23.1.5} that $A'$ is a finite $A$-algebra, hence a semi-local Noetherian ring, and consequently a \emph{direct product} of local rings; but since $A'$ is integral, it is necessarily a local ring.
+We already know from \sref{0.23.1.5} that $A'$ is a finite $A$-algebra, hence a complete semi-local Noetherian ring, and consequently a \emph{direct product} of local rings; but since $A'$ is integral, it is necessarily a local ring.
 \end{proof}
 
 \begin{proposition}[23.1.7]
@@ -154,21 +154,20 @@ The hypothesis implies that the $L_i$ are separable extensions of $K$, hence $K'
 \begin{env}[23.2.1]
 \label{0.23.2.1}
 In what follows, for every ring $A$, we will write $A_\red$ for short for the quotient of $A$ by its nilradical (so that if $X=\Spec(A)$, we have $X_\red=\Spec(A_\red)$).
-\end{env}
-
 We will say that a \emph{local} ring $A$ is \emph{unibranch} if $A_\red$ is integral and if the integral closure of $A_\red$ is a \emph{local} ring, which generalizes the definition given in \sref[III]{III.4.3.6}.
 We will say that $A$ is \emph{geometrically unibranch} if it is unibranch and if the residue field of the local ring that is the integral closure of $A_\red$ is a \emph{radicial} extension of that of $A$.
 It is clear that a local ring that is integrally closed is geometrically unibranch; it follows from \sref{0.23.1.6} that a complete local Noetherian integral ring is unibranch.
+\end{env}
 
 \begin{lemma}[23.2.2]
 \label{0.23.2.2}
-Let $A$ be an integral ring, $A'$ its integral closure; for the canonical morphism $f:\Spec(A')\to\Spec(A)$ to be radiciel, it is necessary and sufficient that for every $\mathfrak{p}\in\Spec(A)$, $A_\mathfrak{p}$ be geometrically unibranch; when this is so, $f$ is a homeomorphism.\footnote{In the rest of this section, we use notions and follows from chap.~IV, \textsection\textsection2 and~5; since the results of this section are not used before chap.~IV, \textsection6, this does not lead to circular reasoning.}
+Let $A$ be an integral ring, $A'$ its integral closure; for the canonical morphism $f:\Spec(A')\to\Spec(A)$ to be radiciel, it is necessary and sufficient that for every $\mathfrak{p}\in\Spec(A)$, $A_\mathfrak{p}$ be geometrically unibranch; when this is so, $f$ is a homeomorphism.\footnote{In the remainder of this item, we use notions and results set out in chap.~IV, \textsection\textsection2 and~5; since the results of this item are not used before chap.~IV, \textsection6, this does not lead to circular reasoning.}
 \end{lemma}
 
 \begin{proof}
-Indeed, for every $\mathfrak{p}\in\Spec(A)$, the integral closure of $A_\mathfrak{p}$ is $A'_\mathfrak{p}$ (Bourbaki, \emph{Alg.~comm.}, chap.~V, \textsection1, n\textsuperscript{o}~5, prop.~16), and all the prime ideals of $A'_\mathfrak{p}$ are maximal (\emph{loc.~cit.}, \textsection2, n\textsuperscript{o}~1, prop.~1).
+Indeed, for every $\mathfrak{p}\in\Spec(A)$, the integral closure of $A_\mathfrak{p}$ is $A'_\mathfrak{p}$ (Bourbaki, \emph{Alg.~comm.}, chap.~V, \textsection1, n\textsuperscript{o}~5, prop.~16), and all the prime ideals of $A'_\mathfrak{p}$ above $\mathfrak{p}A_\mathfrak{p}$ are maximal (\emph{loc.~cit.}, \textsection2, n\textsuperscript{o}~1, prop.~1).
 Saying that $f$ is \emph{injective} thus means that for every $\mathfrak{p}\in\Spec(A)$, $A'_\mathfrak{p}$ is a \emph{local} ring, that is to say that the $A_\mathfrak{p}$ are unibranch.
-Saying that $A_\mathfrak{p}$ is geometrically unibranch then means that $f$ is radiciel by virtue of \sref[I]{I.3.5.8}.
+Saying that every $A_\mathfrak{p}$ is geometrically unibranch then means that $f$ is radiciel by virtue of \sref[I]{I.3.5.8}.
 When this is so, $f$ is surjective and closed \sref[II]{II.6.1.10}, hence a homeomorphism.
 \end{proof}
 
@@ -185,14 +184,15 @@ Then, for every sub-$A$-algebra $A'$ of $K'$, the canonical homomorphism
 is injective.\footnote{The French source prints ``(23.1.8.1)''; the formula occurs in Lemma~23.2.3 and is therefore numbered (23.2.3.1) here.}
 \end{lemma}
 
-\oldpage[0\textsubscript{IV-1}]{218}
 \begin{proof}
 We can in fact consider the canonical homomorphism $h:A'\otimes_A B\to K'\otimes_A R$ as the composition of the following homomorphisms
 \[
   A'\otimes_A B\xrightarrow{u}K'\otimes_A B\xrightarrow{v}K'\otimes_A B_1\xrightarrow{w}K'\otimes_A R.
 \]
 Since $B$ is a flat $A$-module, $u$ is injective; similarly, $K'$ being a flat $K$-module and $K$ a flat $A$-module, $K'$ is a flat $A$-module, and $w$ is therefore injective since $B_1$ is reduced, hence the homomorphism $B_1\to R$ is injective.
-Finally, for the same reason, if $\mathfrak{R}$ is the nilradical of $B$, the kernel of $v$ is $K'\otimes_A\mathfrak{R}$, hence it is contained in the nilradical of $K'\otimes_A B$; we immediately conclude that if the image by $h=w\circ v\circ u$ of an element $x\in A'\otimes_A B$ is nilpotent, then $x$ is nilpotent, which proves the lemma.
+Finally, for the same reason, if $\mathfrak{R}$ is
+\oldpage[0\textsubscript{IV-1}]{218}
+the nilradical of $B$, the kernel of $v$ is $K'\otimes_A\mathfrak{R}$, hence it is contained in the nilradical of $K'\otimes_A B$; we immediately conclude that if the image by $h=w\circ v\circ u$ of an element $x\in A'\otimes_A B$ is nilpotent, then $x$ is nilpotent, which proves the lemma.
 \end{proof}
 
 \begin{proposition}[23.2.4]
@@ -216,8 +216,8 @@ Then:
 \begin{proof}
 \medskip\noindent
 (i).
-Let $B_1=B_\red$, and let $R$ be the total ring of fractions of $B_1$; since $A$ is integral and $B$ is a flat $A$-module, every element $\neq 0$ of $A$ is $B$-regular \sref[0\textsubscript{I}]{0.6.3.4}, hence the composite homomorphism $A\to B\to B_\red=C$ is injective and extends to an injective homomorphism of the field of fractions $K$ of $A$ into the total ring of fractions $R$ of $C$; and the integral closure $B'$ of $B$ in $K'$ is a $B$-module of finite type, and the integral closure of $B'$ of $B$ in $(K'\otimes_A R)_\red$ is a finite $B$-module of finite type.
-By virtue of \sref{0.23.2.3}, the $(C_\alpha\otimes_A B)_\red$ are canonically identified with subrings of $(K'\otimes_A R)_\red$ which are \emph{finite} $B$-algebras, hence contained in $B'$.
+Let $B_1=B_\red$, and let $R$ be the total ring of fractions of $B_1$; since $A$ is integral and $B$ is a flat $A$-module, every element $\neq 0$ of $A$ is $B$-regular \sref[0\textsubscript{I}]{0.6.3.4}, hence the composite homomorphism $A\to B\to B_1$ extends to a homomorphism $K\to R$. We can therefore write $K'\otimes_A R=(K'\otimes_A K)\otimes_K R$, and since $K'\otimes_A K$ is identified with $K'$, we have $K'\otimes_A R=K'\otimes_K R$. Since $R$ is the direct product of the fields of fractions $L_i$ of the $B/\mathfrak{q}_i$, $K'\otimes_A R$ is the direct product of the $K'\otimes_K L_i$, and hence $(K'\otimes_A R)_\red$ is the direct product of a finite number of finite extensions of the $L_i$. By hypothesis, the integral closure of $B/\mathfrak{q}_i$ in a finite extension of $L_i$ is a finite $(B/\mathfrak{q}_i)$-module, hence a finite $B$-module; it follows that the integral closure $B'$ of $B$ in $(K'\otimes_A R)_\red$ is a finite $B$-module.
+By virtue of \sref{0.23.2.3}, the $(C_\lambda\otimes_A B)_\red$ are canonically identified with subrings of $(K'\otimes_A R)_\red$ which are \emph{finite} $B$-algebras, hence contained in $B'$.
 Since $B$ is Noetherian and $B'$ a $B$-module of finite type, the filtering family of the $(C_\alpha\otimes_A B)_\red$ admits a \emph{greatest element} $(C_\alpha\otimes_A B)_\red$, which proves~(i).
 
 \medskip\noindent
@@ -234,7 +234,7 @@ Then there exists $\alpha$ such that the homomorphism $(\hat{C}_\alpha)_\red\to(
 
 \oldpage[0\textsubscript{IV-1}]{219}
 \begin{proof}
-We apply \sref{0.23.2.4} taking $B=\hat{A}$; since the $B/\mathfrak{q}_i$ are complete local Noetherian rings, they are Japanese rings \sref{0.23.1.5} and $B$ is a faithfully flat $A$-module \sref[0\textsubscript{I}]{0.7.3.5}; moreover we have $C_\alpha\otimes_A B=\hat{C}_\alpha$ (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection3, n\textsuperscript{o}~4, th.~3 and chap.~IV, \textsection2, n\textsuperscript{o}~5, cor.~3 of prop.~9).
+We apply \sref{0.23.2.4} taking $B=\hat{A}$; since the $B/\mathfrak{q}_i$ are complete local Noetherian rings, they are Japanese rings \sref{0.23.1.5} and $B$ is a faithfully flat $A$-module \sref[0\textsubscript{I}]{0.7.3.5}; moreover we have $C_\lambda\otimes_A B=\hat{C}_\lambda$ (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection3, n\textsuperscript{o}~4, th.~3 and chap.~IV, \textsection2, n\textsuperscript{o}~5, cor.~3 of prop.~9).
 \end{proof}
 
 \begin{corollary}[23.2.6]
@@ -243,14 +243,14 @@ Under the hypotheses of \sref{0.23.2.5}, the integral closure $A'$ of $A$ in $K'
 \end{corollary}
 
 \begin{proof}
-The fact that the homomorphism $(\hat{C}_\alpha)_\red\to(\hat{C}_\lambda)_\red$ is bijective for $\lambda\geq\alpha$ implies that the number of maximal ideals of $C_\alpha$ is \emph{constant} for $\lambda\geq\alpha$, and that if $\mathfrak{m}_\alpha$ is the unique maximal ideal of $C_\alpha$ above $\mathfrak{m}_\alpha$, the fields $C_\alpha/\mathfrak{m}_\alpha$ and $C_\lambda/\mathfrak{m}_\lambda$ are canonically isomorphic.
-The conclusion follows from the fact that $\mathfrak{m}'=\varinjlim\mathfrak{m}_\alpha$ and $A'/\mathfrak{m}'=\varinjlim C_\alpha/\mathfrak{m}_\alpha$ \sref[0\textsubscript{III}]{0.10.3.1.3}.
+The fact that the homomorphism $(\hat{C}_\alpha)_\red\to(\hat{C}_\lambda)_\red$ is bijective for $\lambda\geq\alpha$ implies that the number of maximal ideals of $C_\lambda$ is \emph{constant} for $\lambda\geq\alpha$, and that if $\mathfrak{m}_\alpha$ is a maximal ideal of $C_\alpha$ and $\mathfrak{m}_\lambda$ is the unique maximal ideal of $C_\lambda$ above $\mathfrak{m}_\alpha$, the fields $C_\alpha/\mathfrak{m}_\alpha$ and $C_\lambda/\mathfrak{m}_\lambda$ are canonically isomorphic.
+The conclusion follows from the fact that $\mathfrak{m}'=\varinjlim\mathfrak{m}_\lambda$ and $A'/\mathfrak{m}'=\varinjlim C_\lambda/\mathfrak{m}_\lambda$ \sref[0\textsubscript{III}]{0.10.3.1.3}.
 \end{proof}
 
 \begin{proposition}[23.2.7]
 \label{0.23.2.7}
 \textnormal{(Y.~Mori)}
-Let $A$ be a local Noetherian integral ring, $A'$ the integral closure of $A$.
+Let $A$ be a local Noetherian integral ring, $K$ its field of fractions, and $A'$ the integral closure of $A$.
 Then $A'$ is a Krull ring \textnormal{(Bourbaki, \emph{Alg.~comm.}, chap.~VII, \textsection1)} that is semi-local; in other words, there exists a family $(V_\lambda)$ of discrete valuation rings having $K$ as their field of fractions, such that $A'=\bigcap V_\lambda$ and that every $x\in K$ belongs to all but a finite number of the $V_\lambda$.
 Moreover, there exists a subalgebra $C$ of $K$ which is a finite $A$-algebra, and such that the $V_\lambda$ are the integral closures of the rings $C_{\mathfrak{p}_\lambda}$, where $(\mathfrak{p}_\lambda)$ is the family of prime ideals of height $1$ of the local ring $C$.
 \end{proposition}
@@ -271,13 +271,14 @@ To prove the last assertion, note that the integral closure $A'$ of $A$ is conta
 Conversely, let $x\in C'\cap K$; $x$ is then integral over $C$, and \emph{a fortiori} over $B$, that is to say $B[x]$ is a finite $B$-algebra; moreover, $K$ is identified with a subring of $B\otimes_A K$, and the subring $B[x]$ of $B\otimes_A K$ is identified with $B\otimes_A A[x]$ by flatness; we conclude that $A[x]$ is an $A$-module of finite type (Bourbaki, \emph{Alg.~comm.}, chap.~I\textsuperscript{er}, \textsection3, n\textsuperscript{o}~6, prop.~11), hence $x\in A'$.
 \end{proof}
 
-\oldpage[0\textsubscript{IV-1}]{220}
 \begin{proof}[Proof of Proposition~{\rm\sref{0.23.2.7}}]
-This lemma being established, let us apply it to the canonical injection of $A$ into its completion $\hat{A}$, which is a faithfully flat $A$-module; $B=(\hat{A})_\red=\hat{A}/\mathfrak{R}$ (where $\mathfrak{R}$ is the nilradical of $\hat{A}$) is a complete local Noetherian reduced ring, whose total ring of fractions $R$ is a direct product of a finite number of fields $L_i$; the canonical image $B_i$ of $B$ in $L_i$ is a complete local Noetherian \emph{integral} ring, whose field of fractions is $L_i$, and the integral closure $B'$ of $B$ in $R$ is the \emph{direct product} of the $B'_i$, where $B'_i$ is the integral closure of $B_i$.
+This lemma being established, let us apply it to the canonical injection of $A$ into its completion $\hat{A}$, which is a faithfully flat $A$-module; $B=(\hat{A})_\red=\hat{A}/\mathfrak{R}$ (where $\mathfrak{R}$ is the nilradical of $\hat{A}$) is a complete local Noetherian reduced ring, whose total ring of
+\oldpage[0\textsubscript{IV-1}]{220}
+fractions $R$ is a direct product of a finite number of fields $L_i$; the canonical image $B_i$ of $B$ in $L_i$ is a complete local Noetherian \emph{integral} ring, whose field of fractions is $L_i$, and the integral closure $B'$ of $B$ in $R$ is the \emph{direct product} of the $B'_i$, where $B'_i$ is the integral closure of $B_i$.
 But by virtue of \sref{0.23.1.5}, $B'_i$ is a finite $B_i$-algebra, hence an integrally closed local Noetherian ring.
 We know (Bourbaki, \emph{Alg.~comm.}, chap.~VII, \textsection1, n\textsuperscript{o}~3, cor.~of th.~2) that $B'_i$ is a Krull ring.
 Now, for every $i$, there is a homomorphism $\vphi_i:K\to L_i$, which is injective, and so $\vphi_i^{-1}(B'_i)$ is a Krull ring in $K$.
-But since $A'=B'\cap K$ by virtue of the lemma and $B'=\bigcap\vphi_i^{-1}(B'_i)$, $A'$ is an intersection of a finite number of Krull rings and is therefore a Krull ring.
+But since $A'=B'\cap K$ by virtue of the lemma and $A'=\bigcap\vphi_i^{-1}(B'_i)$, $A'$ is an intersection of a finite number of Krull rings and is therefore a Krull ring.\footnote{The French source prints $B'=\bigcap_i\vphi_i^{-1}(B'_i)$ here; the required intersection inside $K$ is $A'=\bigcap_i\vphi_i^{-1}(B'_i)$.}
 To prove the last assertion of the proposition, note that there exists a finite $A$-algebra $C\subset K$ such that the morphism $\Spec(A')\to\Spec(C)$ is radiciel and a homeomorphism \sref{0.23.2.4}; for every prime ideal $\mathfrak{p}'\in\Spec(A')$, $\mathfrak{p}'$ is thus the only prime ideal of $A'$ above $\mathfrak{p}=\mathfrak{p}'\cap C$ and $A'_{\mathfrak{p}'}$ the integral closure of $C_\mathfrak{p}$; on the other hand the fact that $\Spec(A')\to\Spec(C)$ is a homeomorphism implies that the map $\mathfrak{p}'\mapsto\mathfrak{p}'\cap C$ is a \emph{bijection} of the set of prime ideals of height~$1$ of $A'$ onto the set of prime ideals of height~$1$ of $C$; whence the conclusion, by virtue of Bourbaki, \emph{Alg.~comm.}, chap.~VII, \textsection1, n\textsuperscript{o}~6, th.~4.
 \end{proof}
 
