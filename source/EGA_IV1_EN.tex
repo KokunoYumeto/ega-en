@@ -1,0 +1,63 @@
+% Standalone release driver. External destinations owned by EGA 0 sections
+% 1--13 and EGA IV Parts Two--Four remain deliberately non-linking here.
+\PassOptionsToPackage{hyperfootnotes=false,draft}{hyperref}
+\input{preamble}
+\input{EGA4_reference_v2_registry}
+\input{EGA4_reference_v2_links}
+\setlength{\emergencystretch}{3em}
+
+% Register the three external labels referenced by IV.1 without inventing
+% false landing pages in this standalone volume.
+\makeatletter
+\newcommand{\EGAIVOneKnownExternalLabel}[1]{%
+  \expandafter\gdef\csname r@#1\endcsname{{}{0}{}{}{}}}
+\EGAIVOneKnownExternalLabel{subsection:I.6.3}
+\EGAIVOneKnownExternalLabel{subsection:I.6.6}
+\EGAIVOneKnownExternalLabel{section:0.9}
+\makeatother
+
+\hypersetup{
+  pdftitle={Elements of Algebraic Geometry IV, Part One -- English Edition},
+  pdfauthor={Alexander Grothendieck and Jean Dieudonne; English translation},
+  pdfsubject={Standalone English reader of EGA IV, Part One}
+}
+
+\begin{document}
+
+\title{Elements of Algebraic Geometry IV\\Part One}
+\author{Alexander Grothendieck and Jean Dieudonn\'e}
+\date{}
+\maketitle
+
+\begin{center}
+\large Standalone English edition
+\end{center}
+
+\tableofcontents
+
+% Chapter 0 continuation printed in EGA IV, Part One.
+\setcounter{section}{13}
+\input{ega0/ega0-14}
+\input{ega0/ega0-15}
+\input{ega0/ega0-16}
+\input{ega0/ega0-17}
+\input{ega0/ega0-18}
+\input{ega0/ega0-19}
+\input{ega0/ega0-20}
+\input{ega0/ega0-21}
+\input{ega0/ega0-22}
+\input{ega0/ega0-23}
+
+% Chapter IV begins with section 1 in this part.
+\setcounter{section}{0}
+\input{ega4-1.source_aligned_r1}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Consolidated bibliography}
+\section*{Consolidated bibliography}
+\nocite{*}
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}
