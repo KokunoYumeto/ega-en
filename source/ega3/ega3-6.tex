@@ -2909,25 +2909,25 @@ isomorphism,
   \otimes_BB_g.
 \]
 
-Let $M_{\bullet\bullet}^{(i)}$ be a projective
+Let $M_{\bullet\bullet\bullet}^{(i)}$ be a projective
 Cartan--Eilenberg resolution of $L_{\bullet\bullet}^{(i)}$,
 chosen to consist of $B_i$-modules.  Because $(B_i)_{g_i}$ is
 flat over $B_i$,
 \[
-  M_{\bullet\bullet}^{\prime(i)}
+  M_{\bullet\bullet\bullet}^{\prime(i)}
   =
-  M_{\bullet\bullet}^{(i)}
+  M_{\bullet\bullet\bullet}^{(i)}
   \otimes_{B_i}(B_i)_{g_i}
 \]
 is a projective Cartan--Eilenberg resolution of
 $L_{\bullet\bullet}^{\prime(i)}$.  Moreover,
 \[
-  M_{\bullet\bullet}^{\prime(1)}
-  \otimes_A M_{\bullet\bullet}^{\prime(2)}
+  M_{\bullet\bullet\bullet}^{\prime(1)}
+  \otimes_A M_{\bullet\bullet\bullet}^{\prime(2)}
   =
   \bigl(
-    M_{\bullet\bullet}^{(1)}
-    \otimes_A M_{\bullet\bullet}^{(2)}
+    M_{\bullet\bullet\bullet}^{(1)}
+    \otimes_A M_{\bullet\bullet\bullet}^{(2)}
   \bigr)
   \otimes_BB_g.
 \]
@@ -3010,7 +3010,7 @@ up to canonical isomorphism,
   \otimes_A L_{\bullet\bullet}^{(2)}.
 \]
 Since a projective Cartan--Eilenberg resolution
-$M_{\bullet\bullet}^{(i)}$ of $L_{\bullet\bullet}^{(i)}$ may be
+$M_{\bullet\bullet\bullet}^{(i)}$ of $L_{\bullet\bullet}^{(i)}$ may be
 chosen to consist of $A_h$-modules, the desired canonical
 isomorphism follows immediately.
 \end{env}
@@ -3021,7 +3021,8 @@ Let $S$ be a prescheme, let
 $f_i:X^{(i)}\to Y^{(i)}$ be a separated and quasi-compact
 $S$-morphism of $S$-preschemes, and let
 $\sh P_\bullet^{(i)}$ be a bounded-below complex of
-quasi-coherent $\sh O_{X^{(i)}}$-modules $(i=1,2)$.  Put
+quasi-coherent $\sh O_{X^{(i)}}$-modules $(i=1,2)$.  Write
+$u_i:Y^{(i)}\to S$ for the structural morphisms, and put
 \[
   Y=Y^{(1)}\times_SY^{(2)}.
 \]
@@ -3034,9 +3035,10 @@ There exists a bi-$\partial$-functor
   \bigr)
 \]
 with values in the category of quasi-coherent
-$\sh O_Y$-modules, such that if $V^{(i)}$ is an affine open
-subset of $Y^{(i)}$ $(i=1,2)$ and
-$V=V^{(1)}\times_SV^{(2)}$, then
+$\sh O_Y$-modules, such that if $S_\alpha$ is an affine open
+subset of $S$, $V^{(i)}$ is an affine open subset of
+$Y_\alpha^{(i)}=u_i^{-1}(S_\alpha)$ $(i=1,2)$, and
+$V=V^{(1)}\times_{S_\alpha}V^{(2)}$, then
 \[
 \begin{split}
   &\mathfrak{Tor}_\bullet^S
@@ -3046,7 +3048,7 @@ $V=V^{(1)}\times_SV^{(2)}$, then
   \bigr)\bigm|_V\\
   &\quad=
   \left(
-    \mathbf{Tor}_\bullet^S
+    \mathbf{Tor}_\bullet^{S_\alpha}
     \left(
       f_1^{-1}(V^{(1)}),f_2^{-1}(V^{(2)});
       \sh P_\bullet^{(1)}|f_1^{-1}(V^{(1)}),
@@ -3744,7 +3746,7 @@ coverings $u_i^{-1}(\mathfrak U^{(i)})$.
 
 \oldpage[III]{163}
 
-The bicomplex
+There is a canonical homomorphism from the bicomplex
 \[
   C^\bullet
   \bigl(
@@ -3753,7 +3755,7 @@ The bicomplex
   =
   L_{\bullet\bullet}^{(i)}
 \]
-may canonically be regarded as a sub-bicomplex of
+to
 \[
   C^\bullet
   \bigl(
