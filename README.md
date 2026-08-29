@@ -1,5 +1,7 @@
 # Elements of Algebraic Geometry (EGA) — complete linked English edition
 
+> **Translation atlas:** browse EGA, FGA, and SGA editions by work and language in the [Grothendieck Translation Atlas](https://github.com/KokunoYumeto/ega-fga-sga).
+
 ## Readers
 
 - [Open the complete cumulative EGA 0–IV reader](reader/00_EGA_EN_COMPLETE_LINKED_READER.pdf)
