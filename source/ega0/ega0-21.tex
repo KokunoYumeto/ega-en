@@ -170,7 +170,7 @@ Preserving the same notations, if $P$ is a base of the $A$-module $C$, to say th
 
 \begin{theorem}[21.2.1]
 \label{0.21.2.1}
-Let $B$ be a ring, $A$ a subring of $B$ such that $B^p\subset A\subset B$.
+Let $B$ be a ring, $A$ a subring of $B$ such that $B^p\subset A\subset B$, $(x_\alpha)_{\alpha\in I}$ a $p$-base of $B$ over $A$.
 Let $E$ be an $A$-algebra, $u:A\to E$ the structural homomorphism, $q:E\to B$ a surjective $A$-homomorphism, $\mathfrak{R}$ its kernel, and suppose that $\mathfrak{R}^p=0$.
 Then:
 \begin{enumerate}
@@ -180,19 +180,23 @@ Then:
 \end{theorem}
 
 \begin{proof}
+If there exists an $A$-homomorphism $v:B\to E$ right inverse to $q$, then $v(a)=u(a)$ for every $a\in A\subset B$, and hence $v(q(z)^p)=u(q(z)^p)$ for every $z\in E$, since $B^p\subset A$.
+Moreover $v(q(z))\equiv z\pmod{\mathfrak{R}}$, so $(v(q(z)))^p=z^p$ because $\mathfrak{R}^p=0$; as $v(q(z)^p)=(v(q(z)))^p$, this proves the necessity of (i).
+The sufficiency of condition (i) follows from (ii).
+
+Under the hypotheses of (ii), uniqueness is clear because the monomials $\prod_\alpha x_\alpha^{n(\alpha)}$ generate the $A$-module $B$.
+As these monomials, for finitely supported families with $0\leq n(\alpha)<p$, form an $A$-basis of $B$, there is an $A$-linear map $v:B\to E$ such that
+\[
+  v\left(\prod_\alpha x_\alpha^{n(\alpha)}\right)=\prod_\alpha z_\alpha^{n(\alpha)}.
+\]
+It remains to prove that $v$ is multiplicative. One can write
+\[
+  \left(\prod_\alpha x_\alpha^{m(\alpha)}\right)\left(\prod_\alpha x_\alpha^{n(\alpha)}\right)=a\prod_\alpha x_\alpha^{r(\alpha)},
+\]
+where $r(\alpha)=m(\alpha)+n(\alpha)$ if this sum is less than $p$, and $r(\alpha)=m(\alpha)+n(\alpha)-p$ otherwise, while $a\in A$
 \oldpage[0\textsubscript{IV-1}]{158}
-If there exists an $A$-homomorphism $v:B\to E$, one must have $v(a)=u(a)$ for all $a\in A\subset B$, hence $v(q(z)^p)=u(q(z)^p)$ for all $z\in E$, since $B^p\subset A$.
-But one has $v(q(z)^p)=(v(q(z)))^p$ and by definition $v(q(z))\equiv z\pmod{\mathfrak{R}}$ so $q\circ v=1_B$, hence $(v(q(z)))^p=z^p$ since $\mathfrak{R}^p=0$; whence the necessity of (i).
-The sufficiency of condition (i) will follow from (ii).
-
-Under the hypotheses of (ii), the uniqueness of $v$ is evident since the monomials $\prod_\alpha x_\alpha^{n(\alpha)}$ generate the $A$-module $B$; as these monomials also form a \emph{base} of the $A$-module $B$, there exists an $A$-\emph{linear} map $v$ of $B$ into $E$ such that $v\big(\prod_\alpha x_\alpha^{n(\alpha)}\big)=\prod_\alpha z_\alpha^{n(\alpha)}$ for every family $(n(\alpha))_{\alpha\in I}$ with finite support with $0\leq n(\alpha)<p$.
-It remains to see that $v$ is a ring homomorphism.
-But, one can write $(\prod_\alpha x_\alpha^{m(\alpha)})(\prod_\alpha x_\alpha^{n(\alpha)})=a.\prod_\alpha x_\alpha^{r(\alpha)}$, where $r(\alpha)=m(\alpha)+n(\alpha)$ if $m(\alpha)+n(\alpha)<p$, $r(\alpha)=m(\alpha)+n(\alpha)-p$ in the opposite case, and $a\in A$ is the product of the $x_\alpha^p$ for the $\alpha\in I$ such that $m(\alpha)+n(\alpha)\geq p$; it suffices to see that $v$ is a ring homomorphism, and by construction, one has $f(q(z)^p)=z^p$ for every $z\in E$, the condition (i) of \sref{0.21.2.1} is therefore satisfied by construction, and by the application of \sref{0.21.2.1}, one is therefore in the conditions of application of the theorem in this case.
-
-For the general case, consider a fundamental system $(\mathfrak{J}_\lambda)$ of open ideals, and let $E_\lambda=E/\mathfrak{J}_\lambda$, $\mathfrak{R}_\lambda=(\mathfrak{R}+\mathfrak{J}_\lambda)/\mathfrak{J}_\lambda$, $C_\lambda=E_\lambda/\mathfrak{R}_\lambda=E/(\mathfrak{R}+\mathfrak{J}_\lambda)$; as $E=\varprojlim E_\lambda$ ($\mathbf{0_I}$, 7.2.2).
-For every pair $(\alpha,\lambda)$, denote by $z_{\alpha\lambda}$ the canonical image of $z_\alpha$ in $E_\lambda$, and by $p_\lambda:C_\lambda\to C_\lambda$ the canonical homomorphism and by $q_\lambda:E_\lambda\to C_\lambda$ the canonical homomorphism.
-As by hypothesis $\mathfrak{R}_\lambda$ is nilpotent, the first part of the proof shows the existence and uniqueness of an $A$-homomorphism $w_\lambda:B\to E_\lambda$ such that $p_\lambda\circ v=q_\lambda\circ w_\lambda$ and $w_\lambda(x_\alpha)=z_{\alpha\lambda}$ for all $\alpha$.
-The uniqueness of the $w_\lambda$ shows immediately that $(w_\lambda)$ is a projective system of homomorphisms, and $w=\varprojlim w_\lambda$ answers the question.
+is the product of the $x_\alpha^p$ over the indices for which $m(\alpha)+n(\alpha)\geq p$.
+Thus it suffices to prove $u(a)=\prod_\alpha z_\alpha^p$, and this follows from $q(z_\alpha)=x_\alpha$ and condition (i).
 \end{proof}
 
 \begin{corollary}[21.2.2]
@@ -297,12 +301,12 @@ Then, for every family $(z_\alpha)_{\alpha\in I}$ of elements of $E$ such that $
 \oldpage[0\textsubscript{IV-1}]{160}
 Consider first the case where $E$ is \emph{discrete}, hence $\mathfrak{R}$ is nilpotent; moreover, the reasoning of \sref{0.19.4.3} allows one to suppose $\mathfrak{R}^2=0$ and by consequence $\mathfrak{R}^p=0$.
 Finally, by considering the inverse image of the extension $E$ of $C$ by $\mathfrak{R}$, one can reduce to the case where $C=B$ and $v$ is the identity \sref{0.19.4.4}.
-As the ring homomorphism $\mathrm{F}_B:z\mapsto z^p$ annihilates $\mathfrak{R}$, it factors as $E\xrightarrow{q}B\xrightarrow{\mathrm{F}'} E$, and $\mathrm{F}'$, considered as a homomorphism of $B$ into $E^{(p)}$, is an $A$-\emph{homomorphism} defining the structure of $A$-algebra on $E^{(p)}$ with the help of the composite homomorphism $A\xrightarrow{r} E\xrightarrow{\mathrm{F}_E} E^{(p)}$, where $r:A\to E$ is the structural homomorphism of the $A$-algebra $E$; moreover $r:A^{(p)}\to E^{(p)}$ is also an $A$-homomorphism.
+As the ring homomorphism $\mathrm{F}_E:E\to E^{(p)}$ annihilates $\mathfrak{R}$, it factors as $E\xrightarrow{q}B\xrightarrow{\mathrm{F}'}E^{(p)}$, and $\mathrm{F}'$, considered as a homomorphism of $B$ into $E^{(p)}$, is an $A$-\emph{homomorphism} defining the structure of $A$-algebra on $E^{(p)}$ with the help of the composite homomorphism $A\xrightarrow{r} E\xrightarrow{\mathrm{F}_E} E^{(p)}$, where $r:A\to E$ is the structural homomorphism of the $A$-algebra $E$; moreover $r:A^{(p)}\to E^{(p)}$ is also an $A$-homomorphism.
 There is therefore a unique $A$-homomorphism $f:A^{(p)}\otimes_A B\to E^{(p)}$ such that the composites of $f$ with the canonical homomorphisms $A^{(p)}\to A^{(p)}\otimes_A B$ and $B\to A^{(p)}\otimes_A B$ are respectively $r$ and $\mathrm{F}'$.
 But, by hypothesis, one can identify $A^{(p)}\otimes_A B$ with $A[B^p]$, the canonical homomorphisms $A^{(p)}\to A^{(p)}\otimes_A B$ and $B\to A^{(p)}\otimes_A B$ becoming identified respectively with $u$ and $\mathrm{F}_B$.
 One can therefore now consider $E$ as an $A[B^p]$-algebra by means of the homomorphism $f$, and, by construction, one has $f(q(z)^p)=z^p$ for every $z\in E$; one is therefore in the conditions of application of \sref{0.21.2.1}, whence the theorem in this case.
 
-For the general case, consider a fundamental system $(\mathfrak{J}_\lambda)$ of open ideals, and let $E_\lambda=E/\mathfrak{J}_\lambda$, $\mathfrak{R}_\lambda=(\mathfrak{R}+\mathfrak{J}_\lambda)/\mathfrak{J}_\lambda$, $C_\lambda=E_\lambda/\mathfrak{R}_\lambda$; as $E=\varprojlim E_\lambda$ ($\mathbf{0_I}$, 7.2.2).
+For the general case, consider a fundamental system $(\mathfrak{J}_\lambda)$ of open ideals, and let $E_\lambda=E/\mathfrak{J}_\lambda$, $\mathfrak{R}_\lambda=(\mathfrak{R}+\mathfrak{J}_\lambda)/\mathfrak{J}_\lambda$, $C_\lambda=E_\lambda/\mathfrak{R}_\lambda$; as $E$ is admissible, one has $E=\varprojlim E_\lambda$ ($\mathbf{0_I}$, 7.2.2).
 For every pair $(\alpha,\lambda)$, denote by $z_{\alpha\lambda}$ the canonical image of $z_\alpha$ in $E_\lambda$; the first part of the proof shows the existence and uniqueness of an $A$-homomorphism $w_\lambda:B\to E_\lambda$ such that $p_\lambda\circ v=q_\lambda\circ w_\lambda$ and $w_\lambda(x_\alpha)=z_{\alpha\lambda}$ for all $\alpha$.
 The uniqueness of the $w_\lambda$ shows immediately that $(w_\lambda)$ is a projective system of homomorphisms, and $w=\varprojlim w_\lambda$ answers the question.
 \end{proof}
@@ -706,7 +710,7 @@ Let $k_0\subset k\subset K\subset L$ be four fields.
 \begin{proof}
 \begin{enumerate}
   \item[(i)] The assertions follow trivially from the exactness of the sequence \sref{0.21.6.1.1}.
-  \item[(ii)] If $L$ is separable over $k$, one has $\Upsilon_{L/K/k_0}=0$ \sref{0.20.6.19}, hence condition $b)$ of (i) is satisfied; if $L$ is separable over $K$, one has $\Upsilon_{L/K/k_0}=0$ \sref{0.20.6.19}, hence condition $a)$ of (i) is satisfied; finally, if $k\subset k_0(K^p)$, it follows that $\Upsilon_{L/K/k_0}=\Upsilon_{L/K/k}$ by virtue of \sref{0.21.1.5.1}, and the condition $a)$ of (i) is satisfied.
+  \item[(ii)] If $L$ is separable over $k$, one has $\Upsilon_{L/k/k_0}=0$ \sref{0.20.6.19}, hence condition $b)$ of (i) is satisfied; if $L$ is separable over $K$, one has $\Upsilon_{L/K/k_0}=0$ \sref{0.20.6.19}, hence condition $a)$ of (i) is satisfied; finally, if $k\subset k_0(K^p)$, it follows that $\Upsilon_{L/K/k_0}=\Upsilon_{L/K/k}$ by virtue of \sref{0.21.1.5.1}, and the condition $a)$ of (i) is satisfied.
 \end{enumerate}
 \end{proof}
 
@@ -945,7 +949,7 @@ If $(x_i)_{1\leqslant i\leqslant n}$ is a finite family of elements of $K$ that 
 \end{lemma}
 
 \begin{proof}
-Indeed, to say that the family $(x_i)$ is $p$-free over a subfield $k$ of $K$ means that the finite family of monomials $\prod_{i=0}^n x_i^{m(i)}$ with $0\leqslant m(i)<p$ is free over $k(K^p)$; it suffices therefore to apply the lemma \sref{0.21.8.1} to this family of monomials in the vector space $V=K$, and to the subfields $k_\alpha(K^p)$ and $k_0(K^p)$ of $K$.
+Indeed, to say that the family $(x_i)$ is $p$-free over a subfield $k$ of $K$ means that the finite family of monomials $\prod_{i=1}^n x_i^{m(i)}$ with $0\leqslant m(i)<p$ is free over $k(K^p)$; it suffices therefore to apply the lemma \sref{0.21.8.1} to this family of monomials in the vector space $V=K$, and to the subfields $k_\alpha(K^p)$ and $k_0(K^p)$ of $K$.
 \end{proof}
 
 \begin{theorem}[21.8.3]
@@ -988,7 +992,7 @@ To prove that $c)$ implies $b)$, it suffices therefore to show that the canonica
 \end{equation}
 is injective for every vector space $V$ over $K$ (and in particular for $V=L$).
 Now this is evident if $V=K^n$ since then $W\otimes_K V=W^n$ for every vector space $W$ over $K$ and projective limits and products commute.
-On the other hand, for every element $z$ of the first member of \sref{0.21.8.3.2} there exists a subspace $V'$ of $V$ of finite rank containing $z$ (identified canonically with a subspace of $\Omega^1_{K/k_0}\otimes_K V'$); if $z\neq 0$, its image $\varprojlim(\Omega^1_{K/k_\alpha}\otimes_K V')$ is also non-zero; as the $\varprojlim$ functor is exact on the left, the image of $z$ in the second member of \sref{0.21.8.3.2} is therefore also $\neq 0$, which finishes the proof that $c)$ implies $b)$.
+On the other hand, for every element $z$ of the first member of \sref{0.21.8.3.2} there exists a subspace $V'$ of $V$ of finite rank such that $z\in\Omega^1_{K/k_0}\otimes_K V'$ (identified canonically with a subspace of $\Omega^1_{K/k_0}\otimes_K V$); if $z\neq 0$, its image $\varprojlim(\Omega^1_{K/k_\alpha}\otimes_K V')$ is also non-zero; as the $\varprojlim$ functor is exact on the left, the image of $z$ in the second member of \sref{0.21.8.3.2} is therefore also $\neq 0$, which finishes the proof that $c)$ implies $b)$.
 
 It is trivial that $b)$ implies $b')$; let us show that $b')$ implies $a)$.
 Using the notations of $b')$, one can suppose $L\neq K$.
@@ -1119,7 +1123,7 @@ Then, for all $\alpha\geqslant\gamma$, one has
   gf\in k_\gamma[[T_1,\ldots,T_r]]\cap k_\alpha((T_1,\ldots,T_r))=k_\alpha[[T_1,\ldots,T_r]]
 \]
 by virtue of the lemma \sref{0.21.8.8.2}.
-But it is clear that the intersection of the rings $k_\alpha[[T_1,\ldots,T_r]]$ is $k_0[[T_1,\ldots,T_r]]$, and one has thus $gf\in k_0((T_1,\ldots,T_r))$.
+But it is clear that the intersection of the rings $k_\alpha[[T_1,\ldots,T_r]]$ is $k_0[[T_1,\ldots,T_r]]$, and one has thus $f\in k_0((T_1,\ldots,T_r))$.
 \end{proof}
 
 \subsection{Completed modules of differentials in formal power series rings}
@@ -1236,7 +1240,7 @@ Let us note that if $\mathfrak{m}_0$ is the maximal ideal of $A_0$, the topology
 One knows \sref{0.21.9.1} that $\widehat{\Omega}^1_{A/k}$ is an $A$-module of finite type.
 \oldpage[0\textsubscript{IV-1}]{178}
 By virtue of \sref{0.21.9.3}, $\widehat{\Omega}^1_{A_0/k}$ is a free $A_0$-module of rank $r=\dim(A_0)=\dim(A)$ \sref{0.16.1.5}; the tensor product $\widehat{\Omega}^1_{A_0/k}\otimes_{A_0}A$ is therefore a free $A$-module of rank $r$, identical with its separated completion.
-Finally, $\widehat{\Omega}^1_{A/k}$ is an $A$-module of finite type \sref{0.20.4.7}, hence identical with its separated completion \sref{0.7.3.6}.
+Finally, $\widehat{\Omega}^1_{A/A_0}$ is an $A$-module of finite type \sref{0.20.4.7}, hence identical with its separated completion \sref{0.7.3.6}.
 This being so, in the sequence of homomorphisms
 \begin{equation}
 \tag{21.9.5.2}
@@ -1302,7 +1306,7 @@ Let $E$ be a finite type extension of $L_0$.
   \[
     \xymatrix{
       K_0\ar[r] & M_0\ar[r] & L_0\ar[r] & E\\
-      k\ar[u]\ar[r] & N\ar[u]\ar[r] & M\ar[u] & \\
+      k\ar[u]\ar[r] & N\ar[u]\ar[r] & M\ar[u]\ar[r] & L\ar[u] \\
       k_0\ar[u]\ar[r] & k'_0\ar[u]\ar[r] & N'\ar[u] &
     }
   \]

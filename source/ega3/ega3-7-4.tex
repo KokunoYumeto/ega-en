@@ -147,57 +147,62 @@ the exact sequence
 is zero by definition \emph{(M, IV, 1)}, so $T_p$ is left
 exact.
 
-Conversely, let us prove that (b) implies (c).  Put
+Conversely, let us prove that (b) implies (c). Put
 \[
-  Z_{p+1}(P_\bullet)
-  =
-  \Ker(P_{p+1}\longrightarrow P_p).
+ C=Z'_p(P_\bullet),\qquad
+ B=B_p(P_\bullet)=\Im(d_{p+1}),\qquad
+ Z=Z_{p+1}(P_\bullet)=\Ker(d_{p+1}).
 \]
-There is an exact sequence
+There are two short exact sequences
 \[
-  0
-  \longrightarrow Z_{p+1}(P_\bullet)
-  \longrightarrow P_{p+1}
-  \longrightarrow Z'_p(P_\bullet)
-  \longrightarrow 0
+ 0\longrightarrow B\longrightarrow P_p\longrightarrow C\longrightarrow0,
+ \qquad
+ 0\longrightarrow Z\longrightarrow P_{p+1}\longrightarrow B\longrightarrow0.
 \]
-in which $P_{p+1}$ and $Z'_p(P_\bullet)$ are flat.  Hence
-$Z_{p+1}(P_\bullet)$ is flat \sref[0]{0.6.1.2}.  Define
+Since $C$ and $P_p$ are flat, $B$ is flat; since $B$ and $P_{p+1}$
+are flat, $Z$ is flat. Both sequences remain exact after tensoring with
+any left $A$-module $M$ \sref[0]{0.6.1.2}. In particular, the canonical
+maps identify $B\otimes_A M$ with the image of $d_{p+1}\otimes1_M$
+and $Z\otimes_A M$ with its kernel.
+
+Define a complex $U_\bullet$ by $U_i=P_i$ for $i\geq p+2$,
+$U_{p+1}=Z$, and $U_i=0$ for $i\leq p$; its differential in degree
+$p+2$ is $d_{p+2}$ with target restricted to $Z$, and its other nonzero
+differentials are inherited from $P_\bullet$. Similarly, define
+$L_\bullet$ by $L_i=P_i$ for $i\leq p-1$, $L_p=C$, and $L_i=0$
+for $i\geq p+1$; its differential in degree $p$ is induced by $d_p$
+on the quotient $C$.
+Then $P'_\bullet=U_\bullet\oplus L_\bullet$ is a complex of flat
+modules, with $P'_i=P_i$ for $i\ne p,p+1$, $P'_p=C$,
+$P'_{p+1}=Z$, and $d'_{p+1}=0$.
+
+The inclusion in degree $p+1$ defines a map of complexes
+$a:U_\bullet\to P_\bullet$, and the quotient in degree $p$ defines
+a map $b:P_\bullet\to L_\bullet$. After tensoring with $M$, the
+first induces homology isomorphisms in every degree $i\geq p+1$:
+in degree $p+1$ this follows from the kernel identification above;
+in degree $p+2$, from the injectivity of
+$Z\otimes_A M\to P_{p+1}\otimes_A M$; the higher degrees are
+unchanged. The second induces homology isomorphisms in every degree
+$i\leq p$: in degree $p$, one takes the quotient by the image
+$B\otimes_A M$; in degree $p-1$, one uses the surjectivity of
+$P_p\otimes_A M\to C\otimes_A M$; the lower degrees are unchanged.
+Taking the inverses of the first isomorphisms and retaining the second
+ones therefore gives natural isomorphisms, for every $i$,
 \[
-  P'_i=P_i\quad(i\neq p,p+1),\qquad
-  P'_p=Z'_p(P_\bullet),\qquad
-  P'_{p+1}=Z_{p+1}(P_\bullet).
+ H_i(P_\bullet\otimes_A M)\xrightarrow{\sim}
+ H_i(P'_\bullet\otimes_A M).
 \]
-For $i\neq p,p+1$, let $d'_i:P'_i\to P'_{i-1}$ be the
-differential of $P_\bullet$; let $d'_p$ be the homomorphism
-\[
-  Z'_p(P_\bullet)\longrightarrow P_{p-1}
-\]
-induced by $d_p$ after passage to the quotient, and set
-$d'_{p+1}=0$.  From the flatness just established one has
-\[
-\begin{split}
-  Z'_i(P_\bullet\otimes_A M)
-    &=Z'_i(P_\bullet)\otimes_A M,\\
-  Z_i(P_\bullet\otimes_A M)
-    &=Z_i(P_\bullet)\otimes_A M,\\
-  B_i(P_\bullet\otimes_A M)
-    &=B_i(P_\bullet)\otimes_A M,
-\end{split}
-\]
-where
-\[
-  B_i(P_\bullet)=\Im(P_{i+1}\longrightarrow P_i).
-\]
-One immediately obtains functorial isomorphisms
-\[
-  H_i(P_\bullet\otimes_A M)
-  \simeq
-  H_i(P'_\bullet\otimes_A M)
-\]
-for every $i$.  That these form an isomorphism of
-$\partial$-functors follows directly from the definition of
-$\partial$ \emph{(M, IV, 1)}.
+These commute with the boundary maps associated to every short exact
+sequence $0\to M'\to M\to M''\to0$: in degrees $i\geq p+2$ and
+$i\leq p$, this follows from naturality for the maps of complexes $a$
+and $b$. In degree $p+1$, every cycle in $P_\bullet\otimes_A M''$
+comes from $Z\otimes_A M''$ and lifts, through the surjection
+$Z\otimes_A M\to Z\otimes_A M''$, to a cycle in
+$P_\bullet\otimes_A M$, so the boundary map is zero. The boundary
+map for $P'_\bullet$ is also zero because $d'_{p+1}=0$.
+Thus these isomorphisms form the required isomorphism of
+$\partial$-functors.
 
 We also note that the conditions of \sref{III.7.4.2} imply
 that $B_p(P_\bullet)$ is flat, since there is an exact sequence

@@ -1,0 +1,44 @@
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\input{preamble}
+\input{EGA4_reference_v2_registry}
+\input{EGA4_reference_v2_links}
+\setlength{\emergencystretch}{3em}
+
+\hypersetup{
+  pdftitle={Elements of Algebraic Geometry IV, Part Two -- English Edition},
+  pdfauthor={Alexander Grothendieck and Jean Dieudonne; English translation},
+  pdfsubject={Standalone English reader of EGA IV, Part Two}
+}
+
+\begin{document}
+
+\title{Elements of Algebraic Geometry IV\\Part Two}
+\author{Alexander Grothendieck and Jean Dieudonn\'e}
+\date{}
+\maketitle
+
+\begin{center}
+\large Standalone English reader
+\end{center}
+
+\tableofcontents
+\input{EGA_IV2_standalone_reference_fallbacks_r52}
+
+% EGA IV, Part Two contains sections 2--7 of Chapter IV.
+\setcounter{section}{1}
+\input{ega4-2.source_aligned_r1}
+\input{ega4-3.source_aligned_r1}
+\input{ega4-4.source_aligned_r1}
+\input{ega4-5.source_aligned_r1}
+\input{source_aligned/ega4-6}
+\input{source_aligned/ega4-7}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Consolidated bibliography}
+\section*{Consolidated bibliography}
+\nocite{*}
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}

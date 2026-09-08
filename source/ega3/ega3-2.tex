@@ -541,7 +541,7 @@ Let
 \[
   \sh{F}\longrightarrow\sh{G}\longrightarrow\sh{H}
 \]
-be an exact sequence of coherent $\sh{O}_X$-modules such that the supports of $\sh{F}$ and $\sh{H}$ are proper over $Y$ \sref[II]{II.5.4.10}.
+be an exact sequence of coherent $\sh{O}_X$-modules such that the support of $\operatorname{Im}(\sh{F}\to\sh{G})$ is proper over $Y$ \sref[II]{II.5.4.10}.
 Then there exists an integer $N$ such that, for $n\geq N$, the sequence
 \[
   f_*(\sh{F}(n))
@@ -564,29 +564,40 @@ where $\sh{S}$ is a quasi-coherent $\sh{O}_Y$-algebra graded in positive degrees
 \]
 with $i:X\to Z$ the canonical immersion \sref[II]{II.4.4.7}.
 
-Now $\Supp(\sh{G})$ is closed in $X$ and contained in
+Set
+$\sh{G}_1=\operatorname{Im}(\sh{F}\to\sh{G})
+=\operatorname{Ker}(\sh{G}\to\sh{H})$, which is coherent. Since we have the
+exact sequence $0\to\sh{G}_1(n)\to\sh{G}(n)\to\sh{H}(n)$ and the functor
+$f_*$ is left exact, the sequence
+$0\to f_*(\sh{G}_1(n))\to f_*(\sh{G}(n))\to f_*(\sh{H}(n))$ is exact for every
+$n$; it therefore suffices to show that, for sufficiently large $n$, the
+sequence $f_*(\sh{F}(n))\to f_*(\sh{G}_1(n))\to0$ is exact. In other words, we
+may restrict to the case where $\sh{H}=0$ and the support of $\sh{G}$ is
+proper over $Y$, hence \emph{closed in $Z$} (II, 5.4.10). Consequently
+$\sh{G}'=i_*(\sh{G})$ is a coherent $\sh{O}_Z$-Module such that
+$\sh{G}'|X=\sh{G}$. We know from (I, 9.4.3) that there exists a coherent
+$\sh{O}_Z$-Module $\sh{F}'$ such that $\sh{F}'|X=\sh{F}$. Moreover, since $X$
+is open in $Z$ and $\operatorname{Supp}(\sh{G})\subset X$ is closed in $Z$, it
+is immediate that one defines a surjective homomorphism
+$u':\sh{F}'\to\sh{G}'$ of sheaves such that $u'|X$ is the given surjective
+homomorphism $u:\sh{F}\to\sh{G}$, by taking $u'|U=0$ for every open subset $U$
+of $Z$ not meeting $\operatorname{Supp}(\sh{G})$ and $u'|U=u|U$ for every open
+subset $U\subset X$. This being so, as at the beginning of the proof of
+(2.2.2), we see that we may reduce to the case where $Y$ is affine; it is
+therefore enough to show that, for sufficiently large $n$, the homomorphism
+$\Gamma(u):\Gamma(X,\sh{F}(n))\to\Gamma(X,\sh{G}(n))$ is surjective. We have
+the commutative diagram
 \[
-  \Supp(\sh{F})\cup\Supp(\sh{H});
+\xymatrix@C=35mm@R=12mm{
+\Gamma(Z,\sh{F}'(n)) \ar[r]^{\Gamma(u')} \ar[d]_v &
+\Gamma(Z,\sh{G}'(n)) \ar[d]^w \\
+\Gamma(X,\sh{F}(n)) \ar[r]_{\Gamma(u)} & \Gamma(X,\sh{G}(n))
+}
 \]
-it is therefore proper over $Y$.
-The supports of $\sh{F}$, $\sh{G}$, and $\sh{H}$ are consequently closed in $Z$ \sref[II]{II.5.4.10}.
-Thus
-\[
-  \sh{F}'=i_*(\sh{F}),\qquad
-  \sh{G}'=i_*(\sh{G}),\qquad
-  \sh{H}'=i_*(\sh{H})
-\]
-are coherent $\sh{O}_Z$-modules, and the sequence
-\[
-  \sh{F}'\longrightarrow\sh{G}'\longrightarrow\sh{H}'
-\]
-is exact.
-If $g:Z\to Y$ is the structural morphism, then $f=g\circ i$, and clearly
-\[
-  \sh{F}'(n)=i_*(\sh{F}(n)),
-\]
-with analogous identities for $\sh{G}'$ and $\sh{H}'$.
-The conclusion follows from \sref{III.2.2.3}, applied to $\sh{F}'$, $\sh{G}'$, and $\sh{H}'$.
+where $v$ and $w$ are the restriction homomorphisms. The definition of
+$\sh{G}'$ moreover shows that $w$ is \emph{bijective}; and by (2.2.3),
+$\Gamma(u')$ is \emph{surjective} for sufficiently large $n$, so the same is
+true of $\Gamma(u)$.
 \end{proof}
 
 \begin{env}[2.2.5]
@@ -621,9 +632,20 @@ It follows from \sref{III.1.4.3.1} and \sref{III.1.1.3.5} that
 \[
   \HH^r(X,\sh{O}_X^{\otimes n})
   =\HH^r(X,\sh{O}_X)
-  =A\neq0
+  \neq0
 \]
 for every $n$.
+(iii) Under the hypotheses of (2.2.4) concerning $X$, $Y$, $f$, and $\sh{L}$,
+it is immediate that if $\sh{H}$ is a coherent $\sh{O}_X$-Module whose support
+is \emph{proper over $Y$}, an argument analogous to that of (2.2.4) shows
+that there exists an integer $N$ such that, for $n\geq N$,
+$\RR^if_*(\sh{H}(n))=0$ for every $i>0$. It follows from the exact
+cohomology sequence that if $u:\sh{F}\to\sh{G}$ is a homomorphism of coherent
+$\sh{O}_X$-Modules such that $\Ker(u)$ and $\Coker(u)$ have supports
+\emph{proper over $Y$}, then there exists $N$ such that for $n\geq N$, the
+corresponding homomorphism
+$\RR^if_*(\sh{F}(n))\to\RR^if_*(\sh{G}(n))$ is \emph{bijective} for every
+$i>0$.
 \end{env}
 
 
@@ -1225,7 +1247,7 @@ On the other hand, since $g$ is affine and $f'$ is separated and quasi-compact, 
   g_*\bigl(\RR^p f'_*(\widetilde{\sh{M}})\bigr)
 \]
 is bijective \sref{III.1.4.14}.
-As above, it is an isomorphism of $\sh{S}$-modules, this time by using the commutativity in \sref[0]{0.12.6.2}.
+As above, it is an isomorphism of $\sh{S}$-modules, this time by using the commutativity in \sref[0]{0.12.2.6.2}.
 Now $f'$ is projective and $\widetilde{\sh{M}}$ is coherent, so $\RR^p f'_*(\widetilde{\sh{M}})$ is a coherent $\sh{O}_{Y'}$-module by \sref{III.2.2.1}.
 It follows that
 \[

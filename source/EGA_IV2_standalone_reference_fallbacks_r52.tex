@@ -1,0 +1,37 @@
+% Standalone-only routing for references whose targets are outside EGA IV-2.
+% Mathematical source files remain unchanged. All fallback destinations land
+% on this notice; the cumulative reader retains statement-level routing.
+\clearpage
+\phantomsection
+\section*{Cross-volume references}
+
+This part-only reader preserves the citation text and link affordances of the
+maintained edition. References whose source statements are not reproduced in
+Part Two resolve to this notice. Statement-level cross-volume navigation is
+available in the cumulative EGA reader.
+
+% One inherited raw hyperref target is not represented in the EGA IV stable
+% registry; provide its non-linking standalone destination explicitly.
+\phantomsection
+\label{0.16.4.6.i}
+
+\makeatletter
+\newcommand{\EGAIVTwoRegisterExternalTargets}[1]{%
+  \@for\EGAIVTwoExternalTarget:=#1\do{%
+    \edef\EGAIVTwoResolvedTarget{\EGAIVTwoExternalTarget}%
+    \expandafter\sgaStableTarget\expandafter{\EGAIVTwoResolvedTarget}%
+  }%
+}
+\makeatother
+
+\EGAIVTwoRegisterExternalTargets{%
+ega4.c04.cor.1-1-4,ega4.c04.cor.1-10-4,ega4.c04.cor.1-8-5,ega4.c04.cor.1-9-12,ega4.c04.cor.11-3-11,ega4.c04.cor.8-4-5,%
+ega4.c04.def.1-4-2,ega4.c04.def.1-5-2,ega4.c04.def.1-6-1,ega4.c04.lem.13-1-1,%
+ega4.c04.prop.1-1-2,ega4.c04.prop.1-1-5,ega4.c04.prop.1-1-6,ega4.c04.prop.1-10-3,ega4.c04.prop.1-2-2,%
+ega4.c04.prop.1-2-5,ega4.c04.prop.1-3-11,ega4.c04.prop.1-3-4,ega4.c04.prop.1-3-6,ega4.c04.prop.1-3-9,%
+ega4.c04.prop.1-4-3,ega4.c04.prop.1-4-4,ega4.c04.prop.1-4-6,ega4.c04.prop.1-5-4,ega4.c04.prop.10-6-1,%
+ega4.c04.prop.1-9-5,ega4.c04.def.1-9-4,ega4.c04.statement.1-7-21,%
+ega4.c04.prop.14-3-2,ega4.c04.prop.17-6-3,ega4.c04.prop.8-9-3,ega4.c04.rem.12-1-4,ega4.c04.rem.18-8-11,%
+ega4.c04.statement.1-3-10,ega4.c04.statement.1-3-8,ega4.c04.statement.1-7-4,ega4.c04.statement.1-7-8,%
+ega4.c04.statement.18-9-6,ega4.c04.subsec.17-3-2,ega4.c04.thm.11-3-10,ega4.c04.thm.17-5-1%
+}

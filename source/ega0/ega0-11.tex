@@ -38,7 +38,7 @@ It is clear that we then have, up to isomorphism,
     \[
     \label{0.11.1.1.3}
       E_\infty^{pq}=Z_\infty(E_2^{pq})/B_\infty(E_2^{pq}).
-      \tag{11.1.1.1.3}
+      \tag{11.1.1.3}
     \]
   \item[(e)]
 \oldpage[0\textsubscript{III}]{24}
@@ -134,7 +134,7 @@ But as the filtrations of the $E^n$ and the $E^{\prime n}$ are discrete and exha
 It follows from (\hyperref[0.11.1.1.2]{11.1.1.2}) and the definition (\hyperref[0.11.1.1.3]{11.1.1.3}) that if, for a spectral sequence $E$, we have $E_r^{pq}=0$, then we have $E_k^{pq}=0$ for $k\geq r$ and $E_\infty^{pq}=0$.
 We say that a spectral sequence \emph{degenerates} if there exists an integer $r\geq 2$ and, for every integer $n\in\bb{Z}$, an integer $q(n)$ such that \emph{$E_r^{n-q,q}=0$ for every $q\neq q(n)$}.
 We first deduce from the previous remark that we also have $E_k^{n-q,q}=0$ for $k\geq r$ (including $k=\infty$) and $q\neq q(n)$.
-In addition, the definition of $E_{r+1}^{pq}$ shows that we have $E_{r+1}^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; if $E$ is \emph{weakly convergent}, then we also have $E_\infty^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; in other words, for every $n\in\bb{Z}$, $\gr_p(E^n)=0$ for $p\neq q(n)$ and $\gr_{q(n)}(E^n)=E_r^{n-q(n),q(n)}$.
+In addition, the definition of $E_{r+1}^{pq}$ shows that we have $E_{r+1}^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; if $E$ is \emph{weakly convergent}, then we also have $E_\infty^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; in other words, for every $n\in\bb{Z}$, $\gr_p(E^n)=0$ for $p\neq n-q(n)$ and $\gr_{n-q(n)}(E^n)=E_r^{n-q(n),q(n)}$.
 If in addition the filtration of $E^n$ is \emph{discrete} and \emph{exhaustive}, then the spectral sequence $E$ is \emph{regular}, and we have $E^n=E_r^{n-q(n),q(n)}$ up to isomorphism.
 \end{env}
 
@@ -188,7 +188,7 @@ Recall in this case that for a complex $K^\bullet$ (resp. $K_\bullet$), we will 
 
 If $K^\bullet=(K^i)$ (resp. $K_\bullet=(K_i)$) is a complex in $\cat{C}$ and $T:\cat{C}\to\cat{C}'$ a functor from $\cat{C}$ to an abelian category $\cat{C}'$, then we denote by $T(K^\bullet)$ (resp. $T(K_\bullet)$) the complex $(T(K^i))$ (resp. $(T(K_i))$) in $\cat{C}'$.
 
-We will not review the definition of the \emph{$\partial$-functors} (T, 2.1), except to note that we \emph{also} say $\partial$-functor in place of $\partial^*$-functor when the morphism $\partial$ decreases the degree of a unit, the context clarifying this point if there is cause for confusion.
+We will not review the definition of the \emph{$\partial$-functors} (T, 2.1), except to note that we \emph{also} say $\partial$-functor in place of $\partial^*$-functor when the morphism $\partial$ decreases the degree by one, the context clarifying this point if there is cause for confusion.
 
 Finally, we say that a \emph{graded object $(A_i)_{i\in\bb{Z}}$} of $\cat{C}$ is \emph{bounded below} (resp. \emph{above}) if there exists an $i_0$ such that $A_i=0$ for $i<i_0$ (resp. $i>i_0$).
 \end{env}
@@ -235,7 +235,7 @@ This defines a filtration on $E^n(K^\bullet)=\HH^n(K^\bullet)$; we will not give
 \begin{env}[11.2.3]
 \label{0.11.2.3}
 The \emph{functorial} nature of $E(K^\bullet)$ is understood in the following way: given two \emph{filtered} complexes $K^\bullet$ and $K^{\prime\bullet}$ in $\cat{C}$ and a morphism of complexes $u:K^\bullet\to K^{\prime\bullet}$ that is \emph{compatible with the filtrations}, we induce in an evident way the morphisms $u_r^{pq}$ (for $r\geq 1$) and $u^n$, and we show that these morphisms are compatible with the $d_r^{pq}$, $\alpha_r^{pq}$, and $\beta^{pq}$ in the sense of \sref{0.11.1.2}, and thus define a well-defined morphism $E(u):E(K^\bullet)\to E(K^{\prime\bullet})$ of spectral sequences.
-In addition, we show that if $u$ and $v$ are morphisms $K^\bullet\to K^{\prime\bullet}$ of the above type, \emph{homotopic in degree $\leq k$}, then $u_r^{pq}=v_r^{pq}$ for $r>k$ and $u^n=v^n$ for all $n$ (M,~XV,~3.1).
+In addition, we show that if $u$ and $v$ are morphisms $K^\bullet\to K^{\prime\bullet}$ of the above type, \emph{homotopic of order $\leq k$}, then $u_r^{pq}=v_r^{pq}$ for $r>k$ and $u^n=v^n$ for all $n$ (M,~XV,~3.1).
 \end{env}
 
 \begin{env}[11.2.4]
@@ -449,16 +449,16 @@ endowed with a morphism $\varepsilon: A \rightarrow L^0$, called the \emph{augme
 \]
 such that the sequence
 \[
-  0 \rightarrow A \xrightarrow{\varepsilon} L^0 \rightarrow L^1 \ldots
+  0 \rightarrow A \xrightarrow{\varepsilon} L^0 \rightarrow L^1 \longrightarrow \ldots
 \]
 is exact.
-Similarly, a \emph{left resolution} (or \emph{homological resolution}) of $A$ is a complex $0 \leftarrow L_0 \leftarrow L_1 \leftarrow L_2 \ldots$ of objects in $\cat{C}$, whose differential operator is of degree~$-1$, endowed with an \emph{augmentation} $L_0 \xrightarrow{\varepsilon} A$ such that the sequence
+Similarly, a \emph{left resolution} (or \emph{homological resolution}) of $A$ is a complex $0 \leftarrow L_0 \leftarrow L_1 \leftarrow L_2 \leftarrow \ldots$ of objects in $\cat{C}$, whose differential operator is of degree~$-1$, endowed with an \emph{augmentation} $L_0 \xrightarrow{\varepsilon} A$ such that the sequence
 \[
-  0 \leftarrow A \xleftarrow{\varepsilon} L_0 \leftarrow L_1 \ldots
+  0 \leftarrow A \xleftarrow{\varepsilon} L_0 \leftarrow L_1 \leftarrow \ldots
 \]
 is exact.
 
-When the right resolution $(L_i)_{i\geq 0}$ of an object $A$ is such that $L_i=0$ for $i\geq n+1$, we say that this resolution is \emph{of length $\leq n$}.
+When the right resolution $(L^i)_{i\geq 0}$ of an object $A$ is such that $L^i=0$ for $i\geq n+1$, we say that this resolution is \emph{of length $\leq n$}.
 We define a left resolution of length $\leq n$ similarly.
 A resolution which is of length $\leq n$ for some integer $n$ is said to be \emph{finite}.
 
@@ -610,7 +610,7 @@ it is the abutment of two spectral sequences whose $E_2$ terms are given by
 Here $\RR^q T(K^\bullet, K'^\bullet)$ is the bicomplex $(\RR^q T(K^i, K'^j))_{(i,j)\in \bb{Z}\times \bb{Z}}$, and the right-hand side of \sref{0.11.4.6.1} is its cohomology when we consider it as a simple complex.
 
 Furthermore, the first spectral sequence is always regular, and the two spectral sequences are biregular when there exists $n$ such that every object of $\cat{C}$ and every object of $\cat{C}'$ admit an injective resolution of length $\leq n$, or when $K^\bullet$ and $K'^\bullet$ are bounded below;
-in the latter case, we can furthermore omit the hypothesis that inductive limits exist in $\cat{C}$ and $\cat{C}'$.
+in the latter case, we can furthermore omit the hypothesis that inductive limits exist in $\cat{C}''$.
 
 If $K_1^\bullet$ and ${K'_1}^\bullet$ are two other complexes of $\cat{C}$ and $\cat{C}'$ (respectively), $f$ and $g$ \emph{homotopic} morphisms from $K^\bullet$ to $K_1^\bullet$, 
 and $f'$ and $g'$ \emph{homotopic} morphisms from $K'^\bullet$ to ${K'_1}^\bullet$, then the morphisms $\RR^\bullet  T(K^\bullet, K'^\bullet) \rightarrow \RR^\bullet  T(K_1^\bullet, {K'_1}^\bullet)$ induced by $f$ and $f'$ on the one hand, and by $g$ and $g'$ on the other hand, are identical, and the same is true for the morphisms of the hypercohomology spectral sequences.
@@ -620,10 +620,10 @@ We can generalize easily to any additive covariant multifunctor.
 
 \begin{proposition}[11.4.7]
 \label{0.11.4.7}
-Suppose that for any injective object $\cat{I}$ of $\cat{C}$ (resp. $\cat{I'}$ of $\cat{C}'$), $\cat{A'}\mapsto T(\cat{I}, \cat{A'})$ (resp. $\cat{A}\mapsto T(\cat{A}, \cat{I'})$) is an exact functor.
-Then, with the notation of \sref{0.11.4.6}, we have a canonical isomorphism
+Suppose that for any injective object $I$ of $\cat{C}$ (resp. $I'$ of $\cat{C}'$), $A'\mapsto T(I, A')$ (resp. $A\mapsto T(A, I')$) is an exact functor.
+Then, with the notation of \sref{0.11.4.6}, we have canonical isomorphisms
 \[
-  \RR^\bullet T(K^\bullet, K'^\bullet) \simto \HH^\bullet(T(L^{\bullet\bullet}, K'^\bullet)) \simto \HH^\bullet(T(K^\bullet, L'^{\bullet\bullet})) 
+  \label{0.11.4.7.1} \RR^\bullet T(K^\bullet, K'^\bullet) \simto \HH^\bullet(T(L^{\bullet\bullet}, K'^\bullet)) \simto \HH^\bullet(T(K^\bullet, L'^{\bullet\bullet})) \tag{11.4.7.1} 
 \]
 where the last two terms are the cohomology of simple complexes defined by the tricomplexes $T(L^{\bullet\bullet}, K'^\bullet)$ and $T(K^\bullet, L'^{\bullet\bullet})$ (respectively).
 \end{proposition}
@@ -774,14 +774,14 @@ that coincides with $h^i$ on $\mathrm{B}^i(A^\bullet)$ and with $f'^i$ on $A'^i$
 
 On the other hand, consider the morphism
 \[
-  f''^{i+1}\circ d^i:C^i\longrightarrow\mathrm{B}^{i+1}(Q^\bullet),
+  f'^{i+1}\circ d^i:C^i\longrightarrow\mathrm{B}^{i+1}(Q^\bullet),
 \]
 which vanishes on $\mathrm{Z}^i(A^\bullet)$.
 Since $\mathrm{B}^{i+1}(Q^\bullet)$ is injective, there is a morphism
 \[
   g''^i:A^i\longrightarrow\mathrm{B}^{i+1}(Q^\bullet)
 \]
-that coincides with $f''^{i+1}\circ d^i$ on $C^i$ and with zero on $\mathrm{Z}^i(A^\bullet)$.
+that coincides with $f'^{i+1}\circ d^i$ on $C^i$ and with zero on $\mathrm{Z}^i(A^\bullet)$.
 Taking $g^i=g'^i+g''^i$ allows the induction to continue.
 
 \smallskip
@@ -907,18 +907,18 @@ Moreover, if one considers only the category $\cat{K}$ of complexes $K^\bullet$ 
 
 Another case in which \sref{0.11.5.2} holds without any additional hypothesis on $T$ is when there is an integer $m>0$ such that every object of $\cat{C}$ admits an injective resolution of length at most $m$.
 Indeed, in the proof of \sref{0.11.5.1}, all the injective resolutions of objects of $\cat{C}$ that occur may be chosen of length at most $m$.
-It follows at once that, for a fixed total degree $n$ and for $r$ sufficiently large, the terms of total degree $n$ in $T(L^{\bullet\bullet}_{(r)})$ are equal to those in $T(L^{\bullet\bullet})$ and are finite in number.
+It follows at once that, for a fixed total degree $n$ and for $-r$ sufficiently large, the terms of total degree $n$ in $T(L^{\bullet\bullet}_{(r)})$ are equal to those in $T(L^{\bullet\bullet})$ and are finite in number.
 Consequently,
 \[
   \HH^n(T(L^{\bullet\bullet}))
   =\HH^n(T(L^{\bullet\bullet}_{(r)}))
 \]
-for $r$ sufficiently large.
+for $-r$ sufficiently large.
 With the notation of \sref{0.11.5.2}, one likewise has
 \[
   \RR^nT(K^\bullet_{(r)})=\RR^nT(K^\bullet)
 \]
-for $r$ sufficiently large (depending on $n$), and similarly for $K'^\bullet$ and $K''^\bullet$, which proves the conclusion.
+for $-r$ sufficiently large (depending on $n$), and similarly for $K'^\bullet$ and $K''^\bullet$, which proves the conclusion.
 In the same way, \sref{0.11.5.3} holds without an additional condition on $T$ when $\cat{C}$ satisfies the preceding hypothesis and the resolutions $L^{i,\bullet}$ are taken to have length at most $m$.
 \end{remark}
 

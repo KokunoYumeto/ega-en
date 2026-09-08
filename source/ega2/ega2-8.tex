@@ -259,7 +259,7 @@ With the notation of \sref{II.8.1.8}, the underlying space of $X'$ is the set of
 \end{corollary}
 
 \begin{proof}
-Indeed, if $c_x$ is a generator of the fibre $(\sh{O}_X(1))_x$ at a point $x$, then $s_x\otimes c_x$ is canonically identified with a generator of the fibre of $\sh{I}_{1,X}$ at the point $x$, and is thus invertible if and only if $s_x\not\in\mathfrak{m}_x(\sh{O}_x(-1))_x$, or, equivalently, if and only if $s(x)\neq0$.
+Indeed, if $c_x$ is a generator of the fibre $(\sh{O}_X(1))_x$ at a point $x$, then $s_x\otimes c_x$ is canonically identified with a generator of the fibre of $\sh{I}_{1,X}$ at the point $x$, and is thus invertible if and only if $s_x\not\in\mathfrak{m}_x(\sh{O}_X(-1))_x$, or, equivalently, if and only if $s(x)\neq0$.
 \end{proof}
 
 \begin{proposition}[8.1.11]
@@ -294,7 +294,7 @@ We define
   S^\leq = \bigoplus_{n\leq0} S_n
 \tag{8.2.1.1}
 \]
-which are both graded subrings of $S$, in only positive and negative degrees (respectively).
+which are both graded subrings of $S$, in only nonnegative and nonpositive degrees (respectively).
 If $f$ is a homogeneous element of degree $d$ (positive or negative) in $S$, then the localization $S_f=S'$ is again endowed with the structure of a graded ring, by taking $S'_n$ ($n\in\bb{Z}$) to be the set of the $x/f^k$ for $x\in S_{n+kd}$ ($k\geq0$);
 we define $S_{(f)}=S'_0$, and will write $S_f^\geq$ and $S_f^\leq$ for $S^{'\geq}$ and $S^{'\leq}$ (respectively).
 If $d>0$, then
@@ -319,7 +319,7 @@ If $M$ is a graded $S$-module, then we similarly define
   M^\leq = \bigoplus_{n\leq0} M_n
 \tag{8.2.1.4}
 \]
-which are (respectively) a graded $S^\geq$-module and a graded $S^\leq$-module, and their intersection is the $S_0$ module $M_0$.
+which are (respectively) a graded $S^\geq$-module and a graded $S^\leq$-module, and their intersection is the $S_0$-module $M_0$.
 If $f\in S_d$, then we define $M_f$ to be the graded $S_f$-module whose elements of degree $n$ are the $z/f^k$ for $z\in M_{n+kd}$ ($k\geq0$);
 we denote by $M_{(f)}$ the set of elements of degree zero of $M_f$, and this is an $S_{(f)}$-module, and we will write $M_f^\geq$ and $M_f^\leq$ to mean $(M_f)^\geq$ and $(M_f)^\leq$ (respectively).
 If $d>0$, then we see, as above, that
@@ -392,7 +392,7 @@ It is clear that the $S$-module
   \widehat{M} = M \otimes_S \widehat{S} = M \otimes_S S[\bb{z}]
 \tag{8.2.4.1}
 \]
-is the direct sum of the $S$-modules $M\otimes_S S\bb{z}^n$, and thus of the abelian groups $M_k\otimes_S S\bb{z}^n$ ($k\in\bb{Z}$, $n\geq0$);
+is the direct sum of the $S$-modules $M\otimes_S S\bb{z}^n$, and thus of the abelian groups $M_k\otimes S\bb{z}^n$ ($k\in\bb{Z}$, $n\geq0$);
 we define on $\widehat{M}$ the structure of a graded $\widehat{S}$-module by setting
 \[
 \label{II.8.2.4.2}
@@ -999,7 +999,7 @@ In the current case, the morphism $G_m\times_Y C\to C$ is defined by the data of
 
 Conversely, suppose that we are given a quasi-coherent, \emph{a priori non-graded}, $\sh{O}_Y$-algebra $\sh{S}$, and, on $C=\Spec(\sh{S})$, a structure of a ``\emph{$Y$-scheme in sets endowed with a group of operators}'' that has the $Y$-scheme in groups $G_m$ as its domain of operators;
 then we canonically obtain a \emph{grading} of $\sh{O}_Y$-algebras on $\sh{S}$.
-Indeed, the data of a $Y$-morphism $G_m\times_Y C\to C$ is equivalent to that of a homomorphism of $\sh{O}_Y$-algebras $\psi:\sh{S}\to\sh{S}[T,T^{-1}]$, which can be written as $\psi=\sum_{n\in\bb{Z}}\psi_n T^n$, where the $\psi_n:\sh{S}\to\sh{S}$ are homomorphisms of $\sh{O}_Y$-modules (with $\psi_n(s)=0$ except for finitely many $n$ for every section $s\in\Gamma(U,\sh{S})$, for any open subset $U$ of $Y$).
+Indeed, the data of a $Y$-morphism $G_m\times_Y C\to C$ is equivalent to that of a homomorphism of $\sh{O}_Y$-algebras $\psi:\sh{S}\to\sh{S}[T,T^{-1}]$, which can be written as $\psi=\sum_{n\in\bb{Z}}\psi_n T^n$, where the $\psi_n:\sh{S}\to\sh{S}$ are homomorphisms of $\sh{O}_Y$-modules (where, for every section $s\in\Gamma(U,\sh{S})$, for any open subset $U$ of $Y$, and every point $x\in U$, there is an open neighbourhood $V\subset U$ of $x$ such that $\psi_n(s)|_V=0$ except for finitely many $n$).
 We can then prove that the axioms of sets endowed with a group of operators imply that the $\psi_n(\sh{S})=\sh{S}_n$ define a grading (with arbitrary integer degrees) of $\sh{O}_Y$-algebras on $\sh{S}$, with the $\psi_n$ being the corresponding projectors.
 We thus obtain the notion of a structure of an ``\emph{affine cone}'' on every affine $Y$-scheme, defined in a ``geometric'' way without any reference to any prior grading.
 \oldpage[II]{168}
@@ -1025,7 +1025,7 @@ The projective closure of a vector bundle $\bb{V}(\sh{E})$ on $Y$ is canonically
 \label{II.8.4.3}
 Take, for example, $\sh{E}=\sh{O}_Y^r$ with $r\geq2$;
 then the punctured cones $E$ and $\widehat{E}$ defined by $\sh{S}$ are neither affine nor projective over $Y$ if $Y\neq\emp$.
-The second claim is immediate, because $\widehat{C}=\bb{P}(\sh{O}_Y^{r+1})$ is projective over $Y$, and the underlying spaces of $E$ and $\widehat{E}$ are non-closed open subsets of $\widehat{C}$, and so the canonical immersions $E\to\widehat{E}$ and $\widehat{E}\to\widehat{C}$ are not projective \sref{II.5.5.3}; we then conclude by \sref{II.5.5.5}[v].
+The second claim is immediate, because $\widehat{C}=\bb{P}(\sh{O}_Y^{r+1})$ is projective over $Y$, and the underlying spaces of $E$ and $\widehat{E}$ are non-closed open subsets of $\widehat{C}$, and so the canonical immersions $E\to\widehat{C}$ and $\widehat{E}\to\widehat{C}$ are not projective \sref{II.5.5.3}; we then conclude by \sref{II.5.5.5}[v].
 Now, supposing, for example, that $Y=\Spec(A)$ is affine, and $r=2$, then $C=\Spec(A[T_1,T_2])$, and $E$ is then the prescheme induced by $C$ on the open subset $D(T_1)\cup D(T_2)$;
 but we have already seen that the latter is not affine \sref[I]{I.5.5.11};
 \emph{a fortiori} $\widehat{E}$ cannot be affine, since $E$ is the open subset where the section $\bb{z}$ over $\widehat{E}$ does not vanish \sref{II.8.3.2}.

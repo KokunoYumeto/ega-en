@@ -13,9 +13,7 @@ This section is devoted, on the one hand, to a study of regular immersions \sref
 Let $X$ be a locally Noetherian prescheme, $j:Y\to X$ an immersion, and $y$ a regular point of $Y$. For $j$ to be a regular immersion at the point $y$, it is necessary and sufficient that $X$ be regular at the point $j(y)$.
 \end{proposition}
 
-\begin{proof}
-Taking \sref{IV.16.9.10} into account, we are reduced to proving the analogous result for local rings, which follows from \sref[0]{0.17.3.3}.
-\end{proof}
+Taking \sref{IV.16.9.10} into account, we are reduced to proving the following corollary.
 
 \begin{corollary}[19.1.2]
 \label{IV.19.1.2}
@@ -184,7 +182,7 @@ Then, as $\mathfrak{J}_1/\mathfrak{J}_1^2$ is a free $(\mathrm{A}_1/\mathfrak{J}
 We can therefore define, as in \sref[I]{I.4.1.3} and \sref{IV.4.2.1}, the notions of a (locally closed) ringed subspace of $X$, locally defined by an ideal $\sh{J}$ of a sheaf $\sh{O}_U$, where $U$ is an open subset of $X$, and of an immersion.
 The definitions of quasi-regular and regular immersions and of transverse codimension then apply without change, and the results of \sref{IV.19.1.5},~(i) to~(iv) are still valid,
 \footnote{The printed text reads ``{\hyperlink{ega4.c04.prop.19-1-4}{(19.1.4)}}, (i) to (iv)''; the reference must be to {\hyperlink{ega4.c04.prop.19-1-5}{Proposition~19.1.5}}, the itemized proposition immediately above.}
-provided that, in the second assertion of~(i) and in~(iv), the sheaf $\sh{O}_X$ is coherent and the local rings $\sh{O}_{X,x}$ are Noetherian; as for~(ii), it is necessary to \emph{define} $Y'$ as the ringed subspace defined by the $\sh{O}_{X'}$-ideal $g^*(\sh{J})$; the proofs are unchanged.
+provided that, in the second assertion of~(ii) and in~(iv), the sheaf $\sh{O}_X$ is coherent and the local rings $\sh{O}_{X,x}$ are Noetherian; as for~(ii), it is necessary to \emph{define} $Y'$ as the ringed subspace defined by the $\sh{O}_{X'}$-ideal $g^*(\sh{J})$; the proofs are unchanged.
 \end{enumerate}
 \end{remarks}
 
@@ -267,7 +265,7 @@ Since $X_s$ is locally Noetherian, it follows from \sref{IV.16.9.11},
 \sref{IV.16.9.5}, and hypothesis~\emph{b)} that the images $(\overline f_i)_y=(f_i)_y\otimes 1$, sections of $\sh{J}_s=\sh{J}\otimes_{\sh{O}_S}\mathbf{k}(s)$ over a neighbourhood of $y$ in $X_s$, form a regular sequence generating the restriction of $\sh{J}_s$ to this neighbourhood.
 Since $\mathfrak{m}_s\sh{O}_{X,y}$ is contained in the radical of $\sh{O}_{X,y}$, and since in both cases under consideration $\sh{J}_y$ is an ideal of finite type of $\sh{O}_{X,y}$, Nakayama's lemma shows that the $(f_i)_y$ also generate $\sh{J}_y$; since $\sh{J}$ is an ideal of finite type of $\sh{O}_X$ in both cases, there is a neighbourhood $U$ of $y$ in $X$ such that the $f_i|U$ generate $\sh{J}|U$ (\sref[0]{0.5.2.2}).
 The implication \emph{b)}$\Rightarrow$\emph{c)} now follows from \sref[0]{0.15.1.16} when $S$ and $X$ are locally Noetherian, and from \sref{IV.11.3.8} when $g$ and $h$ are locally of finite presentation; in the latter case, \sref{IV.11.3.8} also proves the equivalence of \emph{c)} and \emph{c$'$)}, which is immediate when $X$ and $S$ are locally Noetherian (\sref[0]{0.15.1.11}).
-Finally, if \emph{c)} holds, then to prove \emph{a)} we may again reduce to the case where $Y$ is a closed sub-prescheme of $X$ defined by $\sh{J}$. By hypothesis there is a regular sequence $(f_i)$ of sections of $\sh{J}$ over a neighbourhood $U$ of $y$ in $X$ such that the $f_i$ generate $\sh{J}|U$ and $h$ is flat on $U$; to see that \emph{c)} implies \emph{a)}, it again suffices to apply \sref[0]{0.15.1.6} when $S$ and $X$ are locally Noetherian, and \sref{IV.11.3.8} when $g$ and $h$ are locally of finite presentation.
+Finally, if \emph{c)} holds, then to prove \emph{a)} we may again reduce to the case where $Y$ is a closed sub-prescheme of $X$ defined by $\sh{J}$. By hypothesis there is a regular sequence $(f_i)$ of sections of $\sh{J}$ over a neighbourhood $U$ of $y$ in $X$ such that the $f_i$ generate $\sh{J}|U$ and $h$ is flat on $U$; to see that \emph{c)} implies \emph{a)}, it again suffices to apply \sref[0]{0.15.1.16} when $S$ and $X$ are locally Noetherian, and \sref{IV.11.3.8} when $g$ and $h$ are locally of finite presentation.
 \end{proof}
 
 \begin{remarks}[19.2.5]
@@ -297,7 +295,7 @@ Indeed, \sref{IV.19.1.1} shows that the immersion $Y_s\to X_s$ is regular at the
 \label{IV.19.2.7}
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
-  \item Every open $S$-immersion is transversally regular relative to $S$.
+  \item Every open $S$-immersion whose source is flat over $S$ is transversally regular relative to $S$.
   \item Let $f:Y\to X$ be an S-immersion, $g:S'\to S$ a morphism and set $X'=X_{(S')}$, $Y'=Y_{(S')}$, $f'=f_{(S')}:Y'\to X'$.
 If $f$ is transversally regular relative to $S$, then $f'$ is transversally regular relative to $S'$. The converse holds if $g$ is faithfully flat and, moreover, $X$ and $Y$ are locally of finite presentation over $S$.
   \item If $f:Y\to X$ and $g:Z\to Y$ are transversally regular immersions relative to $S$, so is $f\circ g:Z\to X$.
@@ -353,7 +351,7 @@ Set $X_s=f^{-1}(s)$. By hypothesis, the ring $\sh{O}_{X_s,x}$ is Cohen--Macaulay
 There is an open neighbourhood $U$ of $x$ in $X$ and sections $h_i$ ($1\leq i\leq n$) of $\sh{O}_X$ over $U$ such that the $t_i$ are the canonical images of the germs $(h_i)_x$ in the quotient ring $\sh{O}_{X_s,x}$ of $\sh{O}_{X,x}$.
 Let $\sh{J}$ be the ideal of $\sh{O}_U$ generated by the $h_i$, and let $Y$ be the closed sub-prescheme of $U$ defined by $\sh{J}$.
 We may suppose that $f|U$ is locally of finite presentation; by the definition of $Y$, the same is then true of $g$.
-The equivalence of \emph{c')} and \emph{a)} in \sref{IV.11.3.8} shows that the sequence $((h_i)_x)$ is regular in $\sh{O}_{X,x}$ and that $\sh{O}_{Y,x}$ is flat over $\sh{O}_{S,s}$. By \sref{IV.11.3.1}, $f$ and $g$ are therefore flat in a neighbourhood of $x$, and \sref{IV.19.2.4} shows that $j$ is a transversally regular immersion relative to $S$, after replacing $Y$, if necessary, by $Y\cap V$ for an open neighbourhood $V$ of $x$ in $X$.
+The equivalence of \emph{c)} and \emph{a)} in \sref{IV.11.3.8} shows that the sequence $((h_i)_x)$ is regular in $\sh{O}_{X,x}$ and that $\sh{O}_{Y,x}$ is flat over $\sh{O}_{S,s}$. By \sref{IV.11.3.1}, $f$ and $g$ are therefore flat in a neighbourhood of $x$, and \sref{IV.19.2.4} shows that $j$ is a transversally regular immersion relative to $S$, after replacing $Y$, if necessary, by $Y\cap V$ for an open neighbourhood $V$ of $x$ in $X$.
 Thus~(i) is proved, and we may suppose that $g:Y\to S$ is flat.
 Since $\sh{O}_{Y_s,x}$, the quotient of $\sh{O}_{X_s,x}$ by the ideal generated by the $t_i$, is Artinian by construction (\sref[0]{0.16.3.6}), $x$ is a maximal point of $Y_s$.
 Finally, every Artinian ring is Cohen--Macaulay (\sref[0]{0.16.5.1}); replacing $Y$, if necessary, by its intersection with an open neighbourhood of $x$ in $X$, we may therefore suppose, by \sref{IV.12.1.7},~(iii), that $g$ is a Cohen--Macaulay morphism.
@@ -614,14 +612,14 @@ If $Y$ is regular, every point of $X-Y$ which is a generization of a point of $Y
 \label{IV.19.4.6}
 Let $g:X\to S$ be a morphism, $Y$ a closed sub-prescheme of $X$ defined by a quasi-coherent Ideal $\sh{J}$, $X'$ the X-scheme obtained by blowing up $Y$, $Y'$ the inverse image of $Y$ in $X'$.
 \begin{enumerate}[label=(\roman*)]
-  \item The following conditions are equivalent:
+  \item Conditions \emph{a)} and \emph{b)} below are equivalent. They imply condition \emph{c)}; if $X$ is S-flat, condition \emph{c)} is also equivalent to them:
   \begin{enumerate}[label=\emph{\alph*)}]
     \item $\operatorname{gr}_\sh{J}^*(\sh{O}_X)$ is a $g$-flat $\sh{O}_X$-algebra.
     \item For every $n\geq 0$, the $\sh{O}_X$-Module $\sh{O}_X/\sh{J}^{n+1}$ is $g$-flat (in other words, the $n$-th infinitesimal neighbourhood $Y^{(n)}$ of $Y$ in $X$ \sref{IV.16.1.2} is S-flat).
     \item For every base change $S_1\to S$ and every integer $n\geq 1$, if $X_1=X\times_S S_1$, the canonical homomorphism $\sh{J}^n\otimes_{\sh{O}_S}\sh{O}_{S_1}\to\sh{J}^n\sh{O}_{X_1}$ is bijective.
   \end{enumerate}
-When this is so, $Y'$ is S-flat, and for every change of base $S_1\to S$, if $Y_1$ is the inverse image of $Y$ in $X_1$, the prescheme $X_1'$ obtained by blowing up $Y_1$ in $X_1$ is canonically isomorphic to $X'\times_S S_1$.
-  \item Suppose that the equivalent conditions of~(i) are satisfied and moreover that the morphisms $X\to S$ and $Y\to S$ are locally of finite presentation.
+When condition \emph{a)}, or equivalently \emph{b)}, holds, $Y'$ is S-flat, and for every change of base $S_1\to S$, if $Y_1$ is the inverse image of $Y$ in $X_1$, the prescheme $X_1'$ obtained by blowing up $Y_1$ in $X_1$ is canonically isomorphic to $X'\times_S S_1$.
+  \item Suppose that conditions \emph{a)} and \emph{b)} of~(i) hold and moreover that the morphisms $X\to S$ and $Y\to S$ are locally of finite presentation.
 Then $\sh{S}=\bigoplus_{n\geq 0}\sh{J}^n$ is a $\sh{O}_X$-Algebra of finite presentation, the morphism $X'\to X$ is of finite presentation, the canonical immersion $Y'\to X'$ is transversally regular of codimension $1$ relatively to $S$, and the set of points of $X$ (resp.\ $X'$) where $X$ (resp.\ $X'$) is S-flat, is a neighbourhood of $Y$ (resp.\ $Y'$).
 \end{enumerate}
 \end{proposition}
@@ -629,7 +627,7 @@ Then $\sh{S}=\bigoplus_{n\geq 0}\sh{J}^n$ is a $\sh{O}_X$-Algebra of finite pres
 \begin{proof}
 \oldpage[IV-4]{200}
 \begin{enumerate}[label=(\roman*)]
-  \item The equivalence of \emph{a)} and \emph{b)} follows immediately from \sref[0]{0.6.1.2}. To prove the equivalence of \emph{b)} and \emph{c)}, we may suppose that $S=\operatorname{Spec}(\mathrm{A})$ and $X=\operatorname{Spec}(\mathrm{B})$ are affine, with $\sh{J}=\widetilde{\mathfrak{J}}$. The Tor exact sequence shows that~\emph{c)} implies $\operatorname{Tor}_1^{\mathrm{A}}(\mathrm{B}/\mathfrak{J}^{n+1},\mathrm{A}')=0$ for every $n\geq0$ and every $\mathrm{A}$-algebra $\mathrm{A}'$. Taking $\mathrm{A}'=\mathrm{A}\oplus\mathrm{M}$, for an arbitrary $\mathrm{A}$-module $\mathrm{M}$ and multiplication $(a,m)(a',m')=(aa',am'+a'm)$, shows that this is equivalent to $\operatorname{Tor}_1^{\mathrm{A}}(\mathrm{B}/\mathfrak{J}^{n+1},\mathrm{M})=0$, and hence to the flatness of $\mathrm{B}/\mathfrak{J}^{n+1}$ over $\mathrm{A}$.
+  \item We may work affinely, with $S=\operatorname{Spec}(\mathrm{A})$, $X=\operatorname{Spec}(\mathrm{B})$, and $\sh{J}=\widetilde{\mathfrak{J}}$. Put $Q_m=\mathrm{B}/\mathfrak{J}^m$ for $m\geq1$ and $G_r=\mathfrak{J}^r/\mathfrak{J}^{r+1}$ for $r\geq0$. The graded algebra in~\emph{a)} is flat if and only if every $G_r$ is flat. Since $Q_1=G_0$, the exact sequences $0\to G_r\to Q_{r+1}\to Q_r\to0$ for $r\geq1$ prove the equivalence of~\emph{a)} and~\emph{b)}: extensions of flat modules are flat, and the kernel of a surjection between flat modules is flat \sref[0]{0.6.1.2}. The Tor exact sequence associated to $0\to\mathfrak{J}^m\to\mathrm{B}\to Q_m\to0$ shows that~\emph{b)} implies~\emph{c)}. Conversely, suppose that $\mathrm{B}$ is flat over $\mathrm{A}$ and that~\emph{c)} holds. For every $\mathrm{A}$-algebra $\mathrm{A}'$, the same exact sequence and the injectivity in~\emph{c)} give $\operatorname{Tor}_1^{\mathrm{A}}(Q_m,\mathrm{A}')=0$. Taking the square-zero algebra $\mathrm{A}'=\mathrm{A}\oplus\mathrm{M}$, with multiplication $(a,m)(a',m')=(aa',am'+a'm)$, for an arbitrary $\mathrm{A}$-module $\mathrm{M}$, gives $\operatorname{Tor}_1^{\mathrm{A}}(Q_m,\mathrm{M})=0$. Thus every $Q_m$ is flat, proving the conditional converse. The following conclusions are made under~\emph{a)}, or equivalently~\emph{b)}.
 If $\mathfrak{J}_1=\mathfrak{J}\otimes_{\mathrm{A}}\mathrm{A}_1$, then
 \[
   \bigoplus_{n\geq0}\mathfrak{J}_1^n=\left(\bigoplus_{n\geq0}\mathfrak{J}^n\right)\otimes_{\mathrm{A}}\mathrm{A}_1,
@@ -734,7 +732,7 @@ Referring to the definition of $\alpha_1^{\#}$ (\sref[II]{II.2.6.2.2}), we see t
 \]
 of $\mathrm{E}\otimes_\mathrm{A}\mathrm{S}_{(t)}$, where the $x^{(i)}$ and $x_k^{(i)}$ belong to $\mathrm{E}$, it assigns
 \[
-  \sum_i\frac{x^{(i)}x_1^{(i)}x_2^{(i)}\cdots x_n^{(i)}}{t^{n+1}}
+  \sum_i\frac{x^{(i)}x_1^{(i)}x_2^{(i)}\cdots x_n^{(i)}}{t^n}
   \quad\text{in }(\mathrm{S}(1))_{(t)}.
 \]
 To prove~(i), it is enough to show that, if this last element is zero, then the image of

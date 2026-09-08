@@ -39,7 +39,7 @@ Let $f:X\to Y$ be a morphism of preschemes, $\sh{F}$ a quasi-coherent $\sh{O}_X$
 The questions being local on $X$ and $Y$, we can restrict to the case where $Y=\Spec(B)$, $X=\Spec(A)$, $\sh{F}=\widetilde{M}$, where $M$ is an $A$-module.
 It is clear that \emph{a)} implies \emph{a$'$)};
 condition~\emph{a$'$)} implies that for every $x\in X$, the functor $N\mapsto M_\mathfrak{n}\otimes_{B_\mathfrak{n}}N$ is exact in the category of $B_\mathfrak{n}$-modules, $\mathfrak{n}$ being the ideal $\mathfrak{j}_{f(x)}$ of $B$; this means that $M_\mathfrak{n}$ is a flat $B_\mathfrak{n}$-module, and it follows from~\sref[0\textsubscript{I}]{0.6.3.3} and from~\sref{IV.2.1.2} that $\sh{F}$ is $f$-flat.
-Finally, to see that \emph{b)} implies \emph{a)}, we can also restrict to the case where $Y'=\Spec(A')$ is affine and $\sh{G}'=\widetilde{N'}$, where $N'$ is an $A'$-module; the conclusion then follows from~\sref{IV.2.1.2} and from the definition of flatness, since $(M\otimes_A N')^{\sim}=\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$.
+Finally, to see that \emph{b)} implies \emph{a)}, we can also restrict to the case where $Y'=\Spec(A')$ is affine and $\sh{G}'=\widetilde{N'}$, where $N'$ is an $A'$-module; the conclusion then follows from~\sref{IV.2.1.2} and from the definition of flatness, since $(M\otimes_B N')^{\sim}=\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$.
 \end{proof}
 
 \begin{proposition}[2.1.4]
@@ -958,16 +958,19 @@ flat \textnormal{(}resp.\ faithfully flat\textnormal{)} relative to $f'$.
 \end{proposition}
 
 \begin{proof}
-Apply~\sref{IV.2.2.10}, replacing its $X$, $Y'$, $Z$, $\sh{F}$, and
-$\sh{G}'$ respectively by $Y'$, $X$, $Y$, $\sh{O}_{Y'}$, and $\sh{F}$.
-This identifies the required flatness \textnormal{(}resp.\ faithful
-flatness\textnormal{)} condition after base change with the corresponding
-condition relative to $g\circ f'$. On the other hand, $g'$ is faithfully
-flat~\sref{IV.2.2.13} and
+The direct implication follows from~\sref{IV.2.1.5} in the flat case and
+from~\sref{IV.2.2.11}[i] in the faithfully flat case. Conversely, suppose
+that $\sh{F}'$ is flat \textnormal{(}resp.\ faithfully flat\textnormal{)}
+relative to $f'$. Since $g$ is faithfully flat, $\sh{F}'$ is then flat
+relative to $g\circ f'$ in the first case, by~\sref{IV.2.1.6}, and
+faithfully flat relative to $g\circ f'$ in the second, by
+~\sref{IV.2.2.11}[ii]. But $g':X'\to X$ is faithfully
+flat~\sref{IV.2.2.13}, and
 \[
   g\circ f'=f\circ g'.
 \]
-The assertion therefore follows from~\sref{IV.2.2.11}[iii].
+Thus~\sref{IV.2.2.11}[iii] shows that $\sh{F}$ is flat
+\textnormal{(}resp.\ faithfully flat\textnormal{)} relative to $f$.
 \end{proof}
 
 \begin{proposition}[2.5.2]

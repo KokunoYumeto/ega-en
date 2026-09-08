@@ -19,7 +19,7 @@ We define a rational function on a prescheme $X$ to be any rational $X$-section 
 
 By an abuse of language, whenever we are discussing only $S$-preschemes, we will say ``rational map'' instead of ``rational $S$-map'' if no confusion may arise.
 
-Let $f$ be a rational map from $X$ to $Y$, and $U$ an open subset of $X$; if $f_1$ and $f_2$ are two morphisms belonging to the class of $f$, defined (respectively) on dense open subsets $V$ and $W$ of $X$, then the restrictions $f_1|(U\cap V)$ and $f_2|(U\cap W)$ agree on $U\cap V\cap W$, which is dense in $U$; the class $f$ of morphisms thus defines a rational map from $U$ to $Y$, called the \emph{restriction of $f$ to $U$}, and denoted by $f|U$.
+Let $f$ be a rational map from $X$ to $Y$, and $U$ an open subset of $X$; if $f_1$ and $f_2$ are two morphisms belonging to the class of $f$, defined (respectively) on dense open subsets $V$ and $W$ of $X$, then the restrictions $f_1|(U\cap V)$ and $f_2|(U\cap W)$ agree on an open subset of $U\cap V\cap W$ that is dense in $U$\footnote{\emph{[Trans.] The French text asserts agreement on the whole intersection. Equivalence gives an open subset $T$ of $V\cap W$, dense in $X$, on which the representatives agree; their restrictions agree on $U\cap T$, which is dense in $U$.}}; the class $f$ of morphisms thus defines a rational map from $U$ to $Y$, called the \emph{restriction of $f$ to $U$}, and denoted by $f|U$.
 
 If, to every $S$-morphism $f:X\to Y$, we take the corresponding rational $S$-map
 \oldpage[I]{156}
@@ -423,7 +423,7 @@ The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty
 In particular:
 \begin{corollary}[7.4.3]
 \label{I.7.4.3}
-On an integral prescheme $X$, every torsion-free quasi-coherent $\sh{O}_X$-module of rank $1$ (in particular, every invertible $\sh{O}_X$-module) is isomorphic to an $\sh{O}_X$-submodule of $\sh{R}(X)$, and vice versa.
+On an integral prescheme $X$, every torsion-free quasi-coherent $\sh{O}_X$-module of rank $1$ (in particular, every invertible $\sh{O}_X$-module) is isomorphic to a nonzero quasi-coherent $\sh{O}_X$-submodule of $\sh{R}(X)$, and vice versa.
 \end{corollary}
 
 \begin{corollary}[7.4.4]
@@ -434,7 +434,7 @@ In order to have $f\otimes f'=0$, it is necessary and sufficient for one of the 
 
 \begin{proof}
 Let $x$ be the generic point of $X$; we have, by hypothesis, that $(f\otimes f')_x=f_x\otimes f'_x=0$.
-Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with $\sh{O}_x$-submodules of the field $\sh{O}_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{I.7.3.5}.
+Since $\sh{L}_x$ and $\sh{L}'_x$ are vector spaces over the field $\sh{O}_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{I.7.3.5}.
 \end{proof}
 
 \begin{proposition}[7.4.5]

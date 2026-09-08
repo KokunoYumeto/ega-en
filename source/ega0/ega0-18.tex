@@ -120,8 +120,8 @@ More precisely, suppose we are given an $A$-ring $F$ augmented over $B$ and an $
 \oldpage[0\textsubscript{IV-1}]{54}
 The homomorphism $h$ defines on all the ideals of $F$ (and in particular on $\mathfrak{R}$) a structure of $G$-bimodule.
 Let $\theta:\mathfrak{R}\to G$ be a homomorphism of $G$-bimodules making the diagram \sref{0.18.1.7.1} commutative; this implies that $\theta$ is \emph{injective} and that $\mathfrak{J}'\cap\theta(\mathfrak{R})=0$; as $\theta(\mathfrak{R})$ is a bilateral ideal of $G$, and $h(\theta(\mathfrak{R}))=\mathfrak{R}$, the composite homomorphism $g\circ h:G\to B$ factors as $G\xrightarrow{q}G/\theta(\mathfrak{R})\xrightarrow{f}B$, where $f$ is surjective; moreover the image $\mathfrak{J}$ of $\mathfrak{J}'$ in $E=G/\theta(\mathfrak{R})$ is the kernel of $f$ (the kernel of $g\circ h$ being $\mathfrak{J}'\oplus\theta(\mathfrak{R})$), and the restriction to $\mathfrak{J}'$ of the canonical homomorphism $q:G\to E$ is injective.
-One can therefore form the \emph{fibre product} $G'=E\times_B F$, and as the two $A$-homomorphisms $q:G\to E$ and $h:G\to F$ are such that $f\circ q=g\circ h$, they define a unique $A$-homomorphism $u:G'\to G$ by the universal property of $G'$ \sref{0.18.1.2}; we shall now see that $u$ is \emph{bijective}.
-It suffices to prove this when $u$ is considered as a homomorphism of $A$-bimodules; but one then notes that $u$ is compatible with the finite filtrations on $G'$ and $G$ formed respectively by $G'$ and $\mathfrak{J}''=\operatorname{Ker}(G'\to F)$, and by $G$ and $\mathfrak{J}'$; moreover, one has seen \sref{0.18.1.3} that $\operatorname{gr}_0 u:F\to F$ is the identity and that $\operatorname{gr}_1 u:\mathfrak{J}''\to\mathfrak{J}'$ is bijective, hence $u$ itself is bijective (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \S~2, no.~8, cor.~3 of th.~1).
+One can therefore form the \emph{fibre product} $G'=E\times_B F$, and as the two $A$-homomorphisms $q:G\to E$ and $h:G\to F$ are such that $f\circ q=g\circ h$, they define a unique $A$-homomorphism $u:G\to G'$ by the universal property of $G'$ \sref{0.18.1.2}; we shall now see that $u$ is \emph{bijective}.
+It suffices to prove this when $u$ is considered as a homomorphism of $A$-bimodules; but one then notes that $u$ is compatible with the finite filtrations on $G$ and $G'$ formed respectively by $G$ and $\mathfrak{J}'$, and by $G'$ and $\mathfrak{J}''=\operatorname{Ker}(G'\to F)$; moreover, one has seen \sref{0.18.1.3} that $\operatorname{gr}_0 u:F\to F$ is the identity and that $\operatorname{gr}_1 u:\mathfrak{J}'\to\mathfrak{J}''$ is bijective, hence $u$ itself is bijective (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \S~2, no.~8, cor.~3 of th.~1).
 \end{env}
 
 \subsection{Extensions of a ring by a bimodule}
@@ -501,7 +501,7 @@ This being so, one sets $(u,v,w)_*=(1_{A'},1_{B'},w)_*\circ(1_{A'},v,1_L)_*\circ
 
 The existence of the homomorphism of groups \sref{0.18.3.6.1} shows in particular that if $E$ is a trivial $A$-extension of $B$ by $L$, the extension $E\oplus_L L'$ of $B$ by $L'$ defined in \sref{0.18.2.8} is also trivial, which one moreover verifies directly without difficulty.
 
-On the other hand, for every element $z$ of the \emph{centre} $Z$ of $B$, the homothety $h_z:y\mapsto yz=zy$ is an endomorphism of the $B$-bimodule $L$, hence $(h_z)_*$ is an endomorphism of the commutative group $\operatorname{Exan}_A(B,L)$, and by functoriality, these endomorphisms define on $\operatorname{Exan}_A(B,L)$ a structure of $Z$-\emph{module}.
+On the other hand, for every element $z$ of the \emph{centre} $Z$ of $B$, the homothety $h_z:y\mapsto yz$ is an endomorphism of the $B$-bimodule $L$, hence $(h_z)_*$ is an endomorphism of the commutative group $\operatorname{Exan}_A(B,L)$, and by functoriality, these endomorphisms define on $\operatorname{Exan}_A(B,L)$ a structure of $Z$-\emph{module}.
 \end{env}
 
 \begin{env}[18.3.7]
@@ -601,11 +601,11 @@ It suffices to apply this remark to the homomorphism $L\times L\to L$ defining t
 Let $A$ be a \emph{commutative} ring.
 The category of $A$-\emph{algebras} is then a full subcategory of that of $A$-rings, characterized by the fact that the structural homomorphisms $\rho:A\to B$ are \emph{central}.
 
-If $B$ is an $A$-algebra, $L$ a $B$-bimodule, it is immediate that the $A$-extension of trivial type $D_B(L)$ is an $A$-algebra.
+If $B$ is an $A$-algebra and $L$ a $B$-bimodule whose two $A$-module structures induced through $B$ coincide, it is immediate that the $A$-extension of trivial type $D_B(L)$ is an $A$-algebra.
 Similarly, in the construction of \sref{0.18.2.5} (resp.\ of \sref{0.18.2.8}), if $B$, $B'$ and $E'$ (resp.\ $B$ and $E$) are $A$-algebras, it is the same for $E'\times_{B'} B$ (resp.\ for $E\oplus_L L'$).
 Finally, if $B$ is an $A$-algebra and $E$ an $A$-extension of $B$ by a $B$-bimodule $L$ that is an $A$-algebra, every $A$-extension $E'$ of $B$ by $L$, $A$-\emph{equivalent} to $E$, is also an $A$-algebra.
 One deduces then immediately from the definition \sref{0.18.3.4} that the classes of equivalent $A$-extensions of $B$ by $L$ which are $A$-\emph{algebras} form a \emph{subgroup}, denoted $\operatorname{Exal}_A(B,L)$, of $\operatorname{Exan}_A(B,L)$.
-Let $\boldsymbol{K}'$ be the full subcategory of $\boldsymbol{K}$ defined in \sref{0.18.3.5}, whose objects $(A,B,L)$ are such that $A$ is commutative and $B$ an $A$-algebra.
+Let $\boldsymbol{K}'$ be the full subcategory of $\boldsymbol{K}$ defined in \sref{0.18.3.5}, whose objects $(A,B,L)$ are such that $A$ is commutative, $B$ is an $A$-algebra, and the two $A$-module structures on $L$ induced through $B$ coincide.
 Then what precedes shows that
 \[
   (A,B,L)\mapsto\operatorname{Exal}_A(B,L)
@@ -707,7 +707,7 @@ With the notations introduced above, a $2$-cocycle of $\mathrm{P}'_\bullet$ corr
 
 \begin{env}[18.4.6]
 \label{0.18.4.6}
-In the particular case where one considers a commutative \emph{field} $k$, an extension $K$ of $k$, one has $\operatorname{Ext}^1_K(M,L)=0$ whatever the $K$-vector spaces $L$, $M$ and consequently (M, VI, 3.3 $a$)), one has a canonical isomorphism
+In the particular case where one considers a commutative \emph{field} $k$, an extension $K$ of $k$, one has $\operatorname{Ext}^1_K(M,L)=0$ whatever the $K$-vector spaces $L$, $M$ and consequently (M, VI, 3.3 $a$), one has a canonical isomorphism
 \begin{equation}
 \tag{18.4.6.1}
   \label{0.18.4.6.1}

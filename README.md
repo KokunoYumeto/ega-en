@@ -1,41 +1,17 @@
-# Elements of Algebraic Geometry (EGA) — complete linked English edition
+# Elements of Algebraic Geometry (EGA) — Complete Linked English Reader
 
-[Read or download the complete cumulative reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_English_Complete_Linked_Reader.pdf)
+[Read the complete cumulative edition](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_English_Complete_Linked_Reader.pdf)
 
-- Stable concept DOI: <https://doi.org/10.5281/zenodo.21921591>
-- Current release: `ega-en-2026-09-06-r12`
+<p>A complete linked English edition of <em>Elements of Algebraic Geometry</em> by Alexander Grothendieck and Jean Dieudonné, covering EGA I with Chapter 0, EGA II, EGA III-1 and III-2, and EGA IV-1 through IV-4.</p><p>The English text is maintained against the French sources. Corrections and editorial departures are documented so readers can distinguish the translated current text from the printed French witness. The collection includes the cumulative reader, the available standalone readers, editable TeX sources, provenance and editorial decisions, and checksums.</p><p>Start with <strong>EGA_English_Complete_Linked_Reader.pdf</strong> to read the whole edition. <a href="https://github.com/KokunoYumeto/ega-en">English sources and releases</a> are also available on GitHub.</p><p>The <a href="https://doi.org/10.5281/zenodo.21921588">French diplomatic edition</a> and its <a href="https://github.com/KokunoYumeto/ega-fr">GitHub repository</a> preserve the original-language reading separately. French and English are distinct editions.</p>
 
-## Coverage
+[Zenodo edition](https://doi.org/10.5281/zenodo.21921591) · [French diplomatic edition](https://doi.org/10.5281/zenodo.21921588)
 
-EGA 0/I, II, III-1, III-2, and IV-1 through IV-4.
-
-The English edition is independently maintained and rechecked against the
-diplomatic French authority. Corrections, departures, rejected candidates,
-typesetting decisions, and exact inverses are recorded in the provenance.
-
-## Readers and sources in r12
-
-- [Complete cumulative reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_English_Complete_Linked_Reader.pdf)
-- [Standalone EGA III-2 reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_III2_English_Standalone_Reader.pdf)
-- [Standalone EGA IV-1 reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_IV1_English_Standalone_Reader.pdf)
-- [Standalone EGA IV-2 reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_IV2_English_Standalone_Reader.pdf)
-- [Standalone EGA IV-3 reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_IV3_English_Standalone_Reader.pdf)
-- [Standalone EGA IV-4 reader](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_IV4_English_Standalone_Reader.pdf)
-- [Editable TeX sources](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_English_Editable_Sources.zip)
-- [Provenance, decisions, and controls](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/EGA_English_Provenance_and_Decisions.zip)
-- [SHA-256 checksums](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-06-r12/SHA256SUMS.txt)
-
-The cumulative reader has 1,411 physical pages. The editable source archive
-contains the exact 134 `.tex`/`.bib` inputs of the six current
-readers. The provenance archive provides a private-path-free projection of
-4,675 decision, control, source-restoration, build, and visual-
-QA records.
-
-Release r12 adopts Canon R66. In EGA IV-3, 8.12.4, it restores the source-
-grounded qualifier “decreasing” in the proof; the provenance also binds the
-companion-English proof-structure reconciliation and its exact inverse.
-
-French and English remain independent editions; no bilingual, parallel,
-side-by-side, paired, or interleaved reader is produced. No endorsement by the
-authors, IHÉS, NUMDAM, or an upstream Stacks maintainer is claimed. Project
-contribution: `AI typesetting & translation`.
+- [EGA_English_Complete_Linked_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_English_Complete_Linked_Reader.pdf)
+- [EGA_English_Editable_Sources.zip](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_English_Editable_Sources.zip)
+- [EGA_English_Provenance_and_Decisions.zip](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_English_Provenance_and_Decisions.zip)
+- [EGA_III2_English_Standalone_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_III2_English_Standalone_Reader.pdf)
+- [EGA_IV1_English_Standalone_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_IV1_English_Standalone_Reader.pdf)
+- [EGA_IV2_English_Standalone_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_IV2_English_Standalone_Reader.pdf)
+- [EGA_IV3_English_Standalone_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_IV3_English_Standalone_Reader.pdf)
+- [EGA_IV4_English_Standalone_Reader.pdf](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/EGA_IV4_English_Standalone_Reader.pdf)
+- [SHA256SUMS.txt](https://github.com/KokunoYumeto/ega-en/releases/download/ega-en-2026-09-08-r13/SHA256SUMS.txt)

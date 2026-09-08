@@ -119,7 +119,7 @@ to which we can apply the exact sequence in homology
 \]
 But it is evident that $\HH_p(K_0\otimes L_\bullet)=K_0\otimes\HH_p(L_\bullet)$ and $\HH_p(K_1\otimes L_\bullet)=K_1\otimes\HH_{p-1}(L_\bullet)$ for all $p$; in addition, we verify immediately that the operator $\partial:K_1\otimes\HH_p(L_\bullet)\to K_0\otimes\HH_p(L_\bullet)$ is none other than $d_1\otimes 1$; the lemma thus follows from the above exact sequence and the definition of $\HH_0(K_\bullet\otimes\HH_p(L_\bullet))$ and $\HH_1(K_\bullet\otimes\HH_{p-1}(L_\bullet))$.
 
-The lemma having been established, the end of the proof of Proposition \sref{III.1.1.4} is immediate: the induction hypothesis of Lemma \sref{III.1.1.4.1} gives $\HH_p(K_\bullet\otimes L_\bullet)=0$ for $p\geq 2$; in addition if we show that $\HH_1(K_\bullet,\HH_0(L_\bullet))=0$, then we also deduce from Lemma \sref{III.1.1.4.1} that $\HH_1(K_\bullet\otimes L_\bullet)=0$; but by definition, $\HH_1(K_\bullet,\HH_0(L_\bullet))$ is none other than the kernel of the scaling $z\mapsto f_r\cdot z$ on $M_{r-1}$, and as by hypothesis this kernel is zero, this finishes the proof.
+The lemma having been established, the end of the proof of Proposition \sref{III.1.1.4} is immediate: the induction hypothesis and Lemma \sref{III.1.1.4.1} gives $\HH_p(K_\bullet\otimes L_\bullet)=0$ for $p\geq 2$; in addition if we show that $\HH_1(K_\bullet,\HH_0(L_\bullet))=0$, then we also deduce from Lemma \sref{III.1.1.4.1} that $\HH_1(K_\bullet\otimes L_\bullet)=0$; but by definition, $\HH_1(K_\bullet,\HH_0(L_\bullet))$ is none other than the kernel of the scaling $z\mapsto f_r\cdot z$ on $M_{r-1}$, and as by hypothesis this kernel is zero, this finishes the proof.
 \end{proof}
 
 \begin{env}[1.1.5]
@@ -169,7 +169,7 @@ The latter homomorphisms evidently satisfy the transitivity condition $\vphi_{\m
   \tag{1.1.6.5}
 \]
 the last equality following from the fact that passing to the inductive limit commutes with the functor $\HH^\bullet$ (G, I, 2.1).
-We will later see \sref{III.1.4.3} that $\HH^\bullet((\mathbf{f}),M)$ does not depend on the \emph{ideal $(\mathbf{f})$} of $A$ (and similarly on the $(\mathbf{f})$-pre-adic topology on $A$), which justifies the notations.
+We will later see \sref{III.1.4.3} that $\HH^\bullet((\mathbf{f}),M)$ depends in fact only on the \emph{ideal $(\mathbf{f})$} of $A$ (and even only on the $(\mathbf{f})$-pre-adic topology on $A$), which justifies the notations.
 
 It is clear that $M\mapsto C^\bullet((\mathbf{f}),M)$ is an exact $A$-linear functor, and $M\mapsto\HH^\bullet((\mathbf{f}),M)$ is a cohomological functor.
 \end{env}
@@ -507,7 +507,7 @@ We note that Corollary~\sref{III.1.4.7}[i] gives a simpler proof of the relation
 \begin{lemma}[1.4.9]
 \label{III.1.4.9}
 \oldpage[III]{91}
-Let $X$ be a quasi-compact scheme, $\mathfrak{U}=(U_i)_{1\leq i\leq n}$ a finite cover of $X$ by affine open sets, and $\sh{F}$ a quasi-coherent $\sh{O}_X$-module.
+Let $X$ be a quasi-compact scheme, $\mathfrak{U}=(U_i)_{1\leq i\leq n}$ a finite cover of $X$ by affine open sets, and ${\sh{F}}$ a quasi-coherent $\sh{O}_X$-module.
 The complex of sheaves $\sh{C}^\bullet(\mathfrak{U},\sh{F})$ defined by the cover $\mathfrak{U}$ (G, II, 5.2) is then a quasi-coherent $\sh{O}_X$-module.
 \end{lemma}
 
@@ -617,7 +617,7 @@ The homomorphism of presheaves defining the canonical homomorphism
 
 \begin{proposition}[1.4.15]
 \label{III.1.4.15}
-Let $u:X\to Y$ be a separated morphism of finite type, $v:Y'\to Y$ a flat morphism of preschemes \sref[0]{0.6.7.1}; let $u'=u_{(Y')}$, such that we have the commutative diagram
+Let $u:X\to Y$ be a separated morphism quasi-compact, $v:Y'\to Y$ a flat morphism of preschemes \sref[0]{0.6.7.1}; let $u'=u_{(Y')}$, such that we have the commutative diagram
 \[
   \xymatrix{
     X\ar[d]_u &
@@ -681,7 +681,7 @@ But by the functoriality of $\theta_q$, we have the commutative diagram
 \]
 \oldpage[III]{94}
 and as by definition \sref[0]{0.4.4.3} ${v'}^*(\rho)$ is the inverse of $\sigma$, we see that the composite morphism considered above is finally none other than $\theta_q$; as a result, $\psi^\sharp$ is the associated $B$-homomorphism $\HH^q(X,\sh{F})\otimes_A B\to\HH^q(X',\sh{F}')$.
-As $u$ is of finite type, $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq r$); let $\mathfrak{U}$ be the cover $(U_i)$.
+As $u$ is quasi-compact, $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq r$); let $\mathfrak{U}$ be the cover $(U_i)$.
 As $v$ is an affine morphism, so is $v'$ \sref[II]{II.1.6.2}[iii], and as a result the $U_i'={v'}^{-1}(U_i)$ form an affine open cover $\mathfrak{U}'$ of $X'$.
 We then know \sref[0]{0.12.1.4.2} that the diagram
 \[
