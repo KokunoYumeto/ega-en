@@ -707,11 +707,17 @@ Let $A$ be a topological ring.
   canonical diagrams show that $w$ is an $S^{-1}A$-homomorphism and that
   $u$ is the composite $T^{-1}B\xrightarrow{w}C\to C/\mathfrak{J}$.
 
-  \item[(v)] This is immediate: giving a continuous $A$-homomorphism from
-  $B=\prod_{i=1}^n B_i$ to $C$ (resp. $C/\mathfrak{J}$) is equivalent to
-  giving $n$ continuous $A$-homomorphisms $B_i\to C$ (resp.
-  $B_i\to C/\mathfrak{J}$), and every such homomorphism from a factor gives by
-  composition a continuous homomorphism from $B$.
+  \item[(v)] Necessity follows from (iv), since each $B_i$ is the localization of
+  $B=\prod_{i=1}^n B_i$ at its canonical idempotent. Conversely, let $C$ be a
+  discrete $A$-algebra, $\mathfrak{J}$ a nilpotent ideal of $C$, and
+  $u:B\to C/\mathfrak{J}$ a continuous $A$-homomorphism. The images under $u$
+  of the canonical idempotents of $B$ form a finite family of pairwise
+  orthogonal idempotents with sum $1$; lift this family to pairwise orthogonal
+  idempotents $e_i$ of $C$ with sum $1$. Writing $C_i=e_iC$ and
+  $\mathfrak{J}_i=e_i\mathfrak{J}$, the restriction of $u$ to $B_i$ is a
+  continuous $A$-homomorphism $B_i\to C_i/\mathfrak{J}_i$. Formal smoothness of
+  $B_i$ lifts it to a continuous $A$-homomorphism $B_i\to C_i$. The product of
+  these lifts is a continuous $A$-homomorphism $B\to C$ lifting $u$.
 \end{enumerate}
 \end{proof}
 
@@ -1884,7 +1890,7 @@ therefore {\rm(ii)} is equivalent to {\rm(ii')}.
 \subsection{The case of algebras over a field}
 \label{subsection:0.19.6}
 
-\begin{theorem}[19.6.1) (Cohen]
+\begin{theorem}[19.6.1 (Cohen)]
 \label{0.19.6.1}
 Let $k$ be a field, $K$ an extension of $k$, $k$ and $K$ being equipped with the discrete topologies.
 For $K$ to be a formally smooth $k$-algebra, it is necessary and sufficient that $K$ be a separable extension of $k$.
@@ -1948,7 +1954,7 @@ if $p>0$, $A'$ is a field; otherwise,
 
 \oldpage[0\textsubscript{IV-1}]{102}
 
-every element of $A'$ being invertible in $A$, the field of fractions of $A'$ (isomorphic to $\mathbf{Q}$) is also contained in $A$.
+every nonzero element of $A'$ being invertible in $A$, the field of fractions of $A'$ (isomorphic to $\mathbf{Q}$) is also contained in $A$.
 
 Let us prove finally that $a)$ implies $c)$;
 the condition $a)$ implies that $A$ contains a prime subfield $k_0$, isomorphic to the prime subfield of $k$, and whose $k$ is therefore a separable extension.
@@ -2061,11 +2067,17 @@ the hypothesis $b')$ remains true when $k'$ is replaced by any one of its finite
 In particular, one can suppose $k'$ \emph{quasi-Galois}, hence a Galois extension of a radicial extension $k_0'$ of $k$;
 $A'=\widehat{A}\otimes_k k'$ can then be written
 $A_0'\otimes_{k_0'}k'$, where $A_0'=\widehat{A}\otimes_k k_0'$ is a complete local ring.
-We know (Bourbaki, \emph{Alg.}, chap.~VIII, \S\,8, prop.~4) that $A'$ is a direct product of local rings isomorphic to $A_0'$ as $k_0'$-algebras.
-Now one of these rings is, by hypothesis, $k'$-isomorphic to a formal power series ring
-$K'[[T_1,\ldots,T_n]]$, where $K'$ is a separable extension of $k'$, hence also a separable extension of $k_0'$.
-In view of \sref{0.19.6.4}, $A_0'$ is therefore a formally smooth $k_0'$-algebra.
-But as $k_0'$ is a $k$-module which is faithfully flat, projective and of finite type, one concludes by \sref{0.19.4.7} that $\widehat{A}$ is a formally smooth $k$-algebra.
+The Galois group of $k'/k_0'$ acts transitively on the local components of $A'$
+(Bourbaki, \emph{Alg.}, chap.~VIII, \S\,8, prop.~4), so these components are
+mutually Galois-conjugate. By hypothesis one of them is $k'$-isomorphic to a
+formal power series ring $K'[[T_1,\ldots,T_n]]$, where $K'$ is a separable
+extension of $k'$, and is therefore a formally smooth $k'$-algebra by
+\sref{0.19.6.4}. Its conjugates are likewise formally smooth over $k'$, hence
+their product $A'$ is formally smooth over $k'$ by \sref{0.19.3.5}, (v). Since
+$k'$ is faithfully flat, projective and of finite type over $k_0'$, it follows
+from \sref{0.19.4.6} that $A_0'$ is formally smooth over $k_0'$. Finally, as
+$k_0'$ has the same properties over $k$, a second application of
+\sref{0.19.4.6} shows that $\widehat{A}$ is a formally smooth $k$-algebra.
 
 We have already seen \sref{0.19.6.5} that $a)$ implies $c)$; it remains to verify that $c)$ implies $b)$.
 If $c)$ holds, then, for every finite radicial extension $k'$ of $k$ containing $k_0$, $A\otimes_k k'$ is a regular local ring whose residue field $K'$ is a separable extension of $k'$.
@@ -2116,7 +2128,7 @@ Now, the hypothesis that $(x_i^0)$ is a $B_0$-regular sequence of elements of th
 
 \begin{lemma}[19.7.1.2]
 \label{0.19.7.1.2}
-Let $A$ be a topological ring, $B$, $C$ two topological $A$-algebras that are local Noetherian rings.
+Let $A$ be a topological ring, $B$, $C$ two topological $A$-algebras that are local Noetherian rings, $\mathfrak{m}$, $\mathfrak{n}'$ their respective maximal ideals.
 Suppose further that $C$ is complete and that the residue field $B/\mathfrak{m}$ of $B$ is an $A$-module of finite type.
 Let $E$ be the completed tensor product $B\widehat{\otimes}_A C$.
 Then:

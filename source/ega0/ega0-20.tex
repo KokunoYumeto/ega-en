@@ -44,7 +44,7 @@ Given an $A$-ring $B$ and a $B$-bimodule $L$, we call an \emph{$A$-derivation} o
 It follows from \sref{0.20.1.1} that the kernel of an $A$-derivation $D:B\to L$ is a sub-$A$-ring of $B$.
 
 One sometimes calls a \emph{derivation} of $B$ into $L$ a $\mathbf{Z}$-derivation, that is, an additive map of $B$ into $L$ satisfying \sref{0.20.1.1.1}; one then has $D(1)=0$ for such a map.
-If $B$ is an algebra over a \emph{prime field} $P$, every $\mathbf{Z}$-derivation of $B$ is a $P$-derivation: this is evident from the above if $P$ is of characteristic $>0$, and otherwise, the relation $n\cdot n^{-1}=1$ for $n\in\mathbf{Z}$ gives
+If $B$ is an algebra over a \emph{prime field} $P$, every $\mathbf{Z}$-derivation of $B$ is a $P$-derivation: this is evident from the above if $P$ is of characteristic $>0$, and otherwise, the relation $n\cdot n^{-1}=1$ for $n\in\mathbf{Z}-\{0\}$ gives
 \[
   nD(n^{-1}) = 0
 \]
@@ -100,7 +100,7 @@ We note that the bijection thus established between (i) and (ii) respects the gr
 
 \begin{corollary}[20.1.7]
 \label{0.20.1.7}
-Let $A$ be a ring, $C$ an $A$-ring, $L$ an $A$-bimodule, $E$ a trivial $A$-extension of $C$ by $L$, $p:E\to C$ the augmentation.
+Let $A$ be a ring, $C$ an $A$-ring, $L$ a $C$-bimodule, $E$ a trivial $A$-extension of $C$ by $L$, $p:E\to C$ the augmentation.
 The set of $A$-derivations $D$ of $E$ into $L$ such that $D(x)=x$ in $L$ is identical to the set of maps $x\mapsto x-w(p(x))$, where $w$ runs through the set of $A$-homomorphisms inverse on the right of $p$.
 \end{corollary}
 
@@ -197,7 +197,7 @@ for $x\in B$, $z\in C$, which gives $D'(v(x))=D(x)$; the kernel of $\partial$ is
 
 \medskip
 \noindent 4)\enspace
-The kernel of $u^1$ is the set of classes of $B$-extensions of $C$ by $L$ which are $A$-trivial, hence (up to equivalence) of the form $D_C(L)$, where the structure of $A$-ring of $D_C(L)$ is defined by the homomorphism $t\mapsto(u(t),0)$.
+The kernel of $u^1$ is the set of classes of $B$-extensions of $C$ by $L$ which are $A$-trivial, hence (up to equivalence) of the form $D_C(L)$, where the structure of $A$-ring of $D_C(L)$ is defined by the homomorphism $t\mapsto(v(u(t)),0)$.
 Now, every structure of $B$-extension on $D_C(L)$ is defined by a homomorphism $\alpha:x\mapsto(v(x),D(x))$, where $D$ is a $\mathbf{Z}$-derivation of $B$ into $L$ \sref{0.20.1.5}; to say that the structure of $A$-ring of this $B$-extension is deduced from its structure of $B$-ring by means of $u:A\to B$ means that $D(u(t))=0$ for $t\in A$, hence that $D$ is an $A$-derivation, or equivalently that the class of the $B$-extension considered is of the form $\partial(D)$; whence the exactness at $\operatorname{Exan}_B(C,L)$.
 
 \medskip
@@ -347,7 +347,7 @@ There is a canonical exact sequence of $A$-modules, functorial in $L$,
 
 \begin{corollary}[20.3.8]
 \label{0.20.3.8}
-Under the hypotheses of \sref{0.20.3.5} \textup{(}resp.\ \sref{0.20.3.6}\textup{)} there is a canonical exact sequence, functorial in $L$
+Under the hypotheses of \sref{0.20.3.6} \textup{(}resp.\ \sref{0.20.3.7}\textup{)} there is a canonical exact sequence, functorial in $L$
 \begin{equation}
 \tag{20.3.8.1}
   \label{0.20.3.8.1}
@@ -530,7 +530,7 @@ We note that the topology of $B$ identifies (by $p_1$) with the \emph{quotient} 
 
 (ii) The fact that $d_{B/A}$ is an $A$-derivation of $B$ follows from the definition \sref{0.20.4.6} and from \sref{0.20.1.1}.
 
-  To prove the universal property, recall that $\operatorname{D\acute{e}r.\ cont}_A(B,L)$ identifies canonically with the set of continuous $A$-algebra homomorphisms $u:B\to D_B(L)$ such that the composite $B\xrightarrow{u}D_B(L)\xrightarrow{q}B$ is the identity (where $q(b,0)=b$ is the projection; cf.\ \sref{0.20.1.6} and \sref{0.20.3.2}).
+  To prove the universal property, recall that $\operatorname{D\acute{e}r.\ cont}_A(B,L)$ identifies canonically with the set of continuous $A$-algebra homomorphisms $u:B\to D_B(L)$ such that the composite $B\xrightarrow{u}D_B(L)\xrightarrow{q}B$ is the identity (where $q(b,x)=b$ is the projection; cf.\ \sref{0.20.1.6} and \sref{0.20.3.2}).
 On the other hand, by virtue of the isomorphism $\varphi$, $\operatorname{Hom.\ cont}_B(\Omega^1_{B/A},L)$ identifies canonically with the set of continuous $B$-algebra homomorphisms $v:\mathrm{P}^1_{B/A}\to D_B(L)$ such that the composite $\mathrm{P}^1_{B/A}\xrightarrow{v}D_B(L)\xrightarrow{q}B$ is the augmentation $\varepsilon$.
 As $p_2=p_1-d_{B/A}$ by definition, it suffices to prove that every $u\in G$ factors as
 \[
@@ -548,7 +548,7 @@ Now, one already has a continuous $A$-algebra homomorphism $j:b\mapsto(b,0)$ fro
 }
 \]
 commutative.
-One therefore has by definition $w(b\otimes 1-1\otimes b)=j(b)-u(b)\in L$, and by virtue of \sref{0.20.4.4}, this implies $w(\mathfrak{J})\subset L$, hence $w(\mathfrak{J}^2)=0$; $w$ therefore factors as $B\otimes_A B\to\mathrm{P}^1_{B/A}\xrightarrow{v}D_B(L)$, where $v$ is a continuous $A$-algebra homomorphism; moreover, as $v\circ p_1=j$ is a homomorphism of $B$-algebras, $v$ is a $B$-algebra homomorphism by the definition of the $B$-algebra structure of $\mathrm{P}^1_{B/A}$; as one has by definition $u=v\circ p_2$, this completes the proof.
+\mbox{One} therefore has by definition $w(b\otimes 1-1\otimes b)=j(b)-u(b)\in L$, and by virtue of \sref{0.20.4.4}, this implies $w(\mathfrak{J})\subset L$, hence $w(\mathfrak{J}^2)=0$; $w$ therefore factors as $B\otimes_A B\to\mathrm{P}^1_{B/A}\xrightarrow{v}D_B(L)$, where $v$ is a continuous $A$-algebra homomorphism; moreover, as $v\circ p_1=j$ is a homomorphism of $B$-algebras, $v$ is a $B$-algebra homomorphism by the definition of the $B$-algebra structure of $\mathrm{P}^1_{B/A}$; as one has by definition $u=v\circ p_2$, this completes the proof.
 \end{proof}
 
 \begin{theorem}[20.4.9]
@@ -598,7 +598,20 @@ Indeed, one has $\Der_A(B,L)=0$ for every $B$-module $L$ by virtue of \sref{0.20
 Then $\Omega^1_{B/A}$ is a free $B$-module, of which the $dX_\alpha$ form a \emph{basis}.
 Indeed, the $dX_\alpha$ generate this $B$-module \sref{0.20.4.7}.
 On the other hand, if $L$ is a free $B$-module with basis $(z_\alpha)_{\alpha\in I}$ whose index set $I$ is the same, there exists an $A$-homomorphism $u$ of $B$ into $D_B(L)$ such that $u(X_\alpha)=(X_\alpha,z_\alpha)$ for every $\alpha\in I$, hence \sref{0.20.1.5} a derivation $D$ of $B$ into $L$ such that $D(X_\alpha)=z_\alpha$ for every $\alpha$; by virtue of \sref{0.20.4.8.1}, this proves that the $dX_\alpha$ are linearly independent.
-  \item[\rm(ii)] Let $A$ be a ring, $L$ an $A$-module, $B$ the $A$-algebra $D_A(L)$; then the canonical homomorphism $x\mapsto d_{B/A}x$ of $L$ into $\Omega^1_{B/A}$ is \emph{bijective}, for it is immediate that the $B$-derivations of $B=D_A(L)$ into a $B$-module $M$ are the maps of the form $(b,x)\mapsto u(x)$, where $u\in\Hom_A(L,M)$; one concludes by \sref{0.20.4.8}, (ii).
+  \item[\rm(ii)] Let $A$ be a ring, $L$ an $A$-module, and $B$ the square-zero
+  $A$-algebra $D_A(L)$. For every $B$-module $M$, restriction to $L$ identifies
+  $\Der_A(B,M)$ with the $A$-linear maps $u:L\to M$ such that
+  \[
+    (0,x)u(y)+(0,y)u(x)=0\quad\text{for all }x,y\in L.
+  \]
+  Consequently, $\Omega^1_{B/A}$ has the presentation
+  \[
+    B\otimes_A(L\otimes_A L)\longrightarrow B\otimes_A L
+    \longrightarrow\Omega^1_{B/A}\longrightarrow0,
+  \]
+  where the first arrow sends $b\otimes(x\otimes y)$ to
+  $b((0,x)\otimes y+(0,y)\otimes x)$ and the second sends $b\otimes x$ to
+  $b\,d_{B/A}(0,x)$.
   \item[\rm(iii)] Suppose that $B$ is the product of two topological $A$-algebras $B_1$, $B_2$ (identified with ideals of $B$).
 Then the images of $B_1\otimes_A B_2$ and $B_2\otimes_A B_1$ by the homomorphism $p$ \sref{0.20.4.1.1} are zero, whence it follows immediately that $\mathrm{P}^1_{B/A}$ identifies with the \emph{product} (topological) $\mathrm{P}^1_{B_1/A}\times\mathrm{P}^1_{B_2/A}$, and that the $B$-module $\Omega^1_{B/A}$ is the \emph{direct sum} (topological) of the $B$-modules $\Omega^1_{B_1/A}$ and $\Omega^1_{B_2/A}$ (annihilated by $B_2$ and $B_1$ respectively).
   \item[\rm(iv)] Let $A$, $B$ be two integral domains such that $A\subset B$, $B$ integral over $A$, and the field of fractions of $B$ a \emph{separable} extension of that of $A$.
@@ -765,11 +778,11 @@ one deduces from \sref{0.20.5.2.4} and \sref{0.20.5.3.3}, by composition, a homo
   \label{0.20.5.4.1}
   \Omega^1_{B/A}\otimes_B B'\xrightarrow{v_{B'/B/A}}\Omega^1_{B'/A}\xrightarrow{u_{B'/A'/A}}\Omega^1_{B'/A'}
 \end{equation}
-such that the diagram of $A'$-homomorphisms
+such that the diagram of $A$-homomorphisms
 \[
 \xymatrix{
   \Omega^1_{B/A}\otimes_B B' \ar[r] & \Omega^1_{B'/A'} \\
-  B' \ar[u]^{d_{B/A}\otimes 1} \ar[r]^{\mathrm{I}_{B'}} & B' \ar[u]_{d_{B'/A'}}
+  B \ar[u]^{x\mapsto d_{B/A}x\otimes 1} \ar[r]^v & B' \ar[u]_{d_{B'/A'}}
 }
 \tag{20.5.4.2}
   \label{0.20.5.4.2}
@@ -986,7 +999,7 @@ is bijective.
 \begin{equation}
 \tag{20.5.12.2}
   \label{0.20.5.12.2}
-  0\to\Der_A(C,L)\xrightarrow{v^0}\Der_A(B,L)\xrightarrow{\partial}\operatorname{Exalcom}_B(C,L)
+  0\to\Der_A(C,L)\xrightarrow{u^0}\Der_A(B,L)\xrightarrow{\partial}\operatorname{Exalcom}_B(C,L)
   \xrightarrow{v^1}\operatorname{Exalcom}_A(C,L)\xrightarrow{u^1}\operatorname{Exalcom}_A(B,L)
 \end{equation}
 where $v$ denotes the homomorphism $A\to B$.
@@ -1741,7 +1754,7 @@ It follows immediately from the definitions that if, in \sref{0.20.5.2} and \sre
 
 Moreover, $u_{C/B/A}:\Omega^1_{C/A}\to\Omega^1_{C/B}$ is a \emph{strict surjective morphism} of topological $C$-modules; indeed, it is also so of the canonical homomorphism $C\otimes_A C\to C\otimes_B C$, taking into account the definition of the tensor product topology; by passing to quotients one deduces that the corresponding homomorphism $\mathrm{P}^1_{C/A}\to\mathrm{P}^1_{C/B}$ is a strict surjective morphism, and $u_{C/B/A}$ is the restriction of this last to $\Omega^1_{C/A}$.
 
-In \sref{0.20.5.5}, if $A'$ and $B$ are topological $A$-algebras, and if $B'=\Omega^1_{B/A}\otimes_B B'$ are equipped with the tensor product topologies, the homomorphism \sref{0.20.5.5.1} is a topological isomorphism, taking into account that $\mathrm{P}^1_{B/A}$ is the same as the direct topological sum of $B$ and $\Omega^1_{B/A}$.
+In \sref{0.20.5.5}, if $A'$ and $B$ are topological $A$-algebras, and if $B'$ and $\Omega^1_{B/A}\otimes_B B'$ are equipped with the tensor product topologies, the homomorphism \sref{0.20.5.5.1} is a topological isomorphism, taking into account that $\mathrm{P}^1_{B/A}$ is the same as the direct topological sum of $B$ and $\Omega^1_{B/A}$.
 \end{env}
 
 \begin{proposition}[20.7.2]
@@ -1928,7 +1941,7 @@ If $\mathfrak{M}''$ (resp.\ $\mathfrak{R}''$) is a second open ideal of $A$ (res
   \varphi_{(\mathfrak{M}'',\mathfrak{R}''),({\mathfrak{M}',\mathfrak{R}'})}:\Omega^1_{B''/A''}\to\Omega^1_{B'/A'}
 \]
 and these homomorphisms form a \emph{projective system}.
-If one notices that the $((\mathfrak{J}\cap\mathfrak{U}')+\mathfrak{J}^2)/\mathfrak{J}^2$ form a fundamental system of neighbourhoods of $0$ in $\Omega^1_{B/A}$, one sees therefore that the \emph{separated completion} $\widehat{\Omega}^1_{B/A}$ of the topological $B$-module $\Omega^1_{B/A}$ is given, up to a canonical isomorphism, by
+If one notices that the $((\mathfrak{J}\cap\mathfrak{U})+\mathfrak{J}^2)/\mathfrak{J}^2$ form a fundamental system of neighbourhoods of $0$ in $\Omega^1_{B/A}$, one sees therefore that the \emph{separated completion} $\widehat{\Omega}^1_{B/A}$ of the topological $B$-module $\Omega^1_{B/A}$ is given, up to a canonical isomorphism, by
 \begin{equation}
 \tag{20.7.14.2}
   \label{0.20.7.14.2}
@@ -2048,7 +2061,7 @@ Let $A$ be a topological ring, $B$ a topological $A$-algebra, metrizable and com
 \]
 and, reasoning as in \sref{0.20.7.17}, one sees that the canonical homomorphism
 \[
-  \widehat{u}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}longrightarrow\widehat{\Omega}^1_{C/A}
+  \widehat{u}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}\longrightarrow\widehat{\Omega}^1_{C/A}
 \]
 is \emph{surjective} and that $\operatorname{Im}(\widehat{\delta}_{C/B/A})$ is \emph{dense} in $\ker(\widehat{u}_{C/B/A})$.
 \end{env}

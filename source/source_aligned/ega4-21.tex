@@ -1056,9 +1056,9 @@ The sections over $\mathrm{X}$ of the image $c(\sh{D}iv_\mathrm{X})\subset\maths
 \oldpage[IV-4]{274}
 called \emph{locally principal cycles};
 such a cycle $\mathrm{Z}$ is therefore characterised by the fact that, for all $y\in\mathrm{X}$, there is an open neighbourhood $\mathrm{U}$ of $y$ in $\mathrm{X}$ and a regular meromorphic function $f$ on $\mathrm{U}$ such that $\mathrm{Z}|\mathrm{U}=\sum_{x\in\mathrm{U}\cap\mathrm{X}^{(1)}}o_x(f)(\overline{\{x\}}\cap\mathrm{U})$.
-If $\mathrm{Z}=\sum_{x\in\mathrm{X}^{(1)}}n_x.\overline{\{x\}}$, setting $\mathrm{T}_y=\Spec(\sh{O}_{\mathrm{X},y})$ and $\mathrm{Z}_y=\sum_{x\in\mathrm{X}^{(1)}\cap\mathrm{T}_y}n_x(\overline{\{x\}}\cap\mathrm{T}_y)$, $\mathrm{Z}_y$ is \emph{principal}, otherwise said there exists a regular meromorphic function $g$ on $\mathrm{T}_y$ such that $\mathrm{Z}_y=\operatorname{cyc}(\operatorname{div}(g))$.
+If $\mathrm{Z}=\sum_{x\in\mathrm{X}^{(1)}}n_x.\overline{\{x\}}$, it is equivalent to saying that, for every $y\in\mathrm{X}$, setting $\mathrm{T}_y=\Spec(\sh{O}_{\mathrm{X},y})$ and $\mathrm{Z}_y=\sum_{x\in\mathrm{X}^{(1)}\cap\mathrm{T}_y}n_x(\overline{\{x\}}\cap\mathrm{T}_y)$, $\mathrm{Z}_y$ is \emph{principal}, otherwise said there exists a regular meromorphic function $g$ on $\mathrm{T}_y$ such that $\mathrm{Z}_y=\operatorname{cyc}(\operatorname{div}(g))$.
 This follows at once from the definition above and from \sref{IV.20.3.7}{} which establishes a bijective correspondence between the regular meromorphic functions on $\mathrm{T}_y$ and the germs of regular meromorphic functions on the open neighbourhoods of $y$ in $\mathrm{X}$ when $\mathrm{X}$ is locally Noetherian.
-We express this further by saying that $\mathrm{Z}_y$ is principal in saying that $\mathrm{Z}$ is \emph{principal at the point $y$}.
+We also express the fact that $\mathrm{Z}_y$ is principal by saying that $\mathrm{Z}$ is \emph{principal at the point $y$}.
 The set of points where $\mathrm{Z}$ is principal is evidently \emph{open}, by virtue of what precedes.
 
 We deduce from the canonical homomorphism $\operatorname{cyc}:\operatorname{Div}(\mathrm{X})\to\mathfrak{Z}^1(\mathrm{X})$ a homomorphism $\operatorname{Div}(\mathrm{X})/\operatorname{Div.princ}(\mathrm{X})\to\mathfrak{Z}^1(\mathrm{X})/\mathfrak{Z}^1_\mathrm{princ}(\mathrm{X})$, by virtue of the definition of $\mathfrak{Z}^1_\mathrm{princ}(\mathrm{X})$.
@@ -1200,10 +1200,10 @@ whence the conclusion follows from \sref{IV.21.6.9},{}~(i).
 
 \oldpage[IV-4]{277}
 To prove that the homomorphism $\varinjlim\operatorname{Div}(\mathrm{U}_\lambda)\to\mathfrak{Z}^1(\mathrm{X})$ is bijective, it will suffice to prove that for all $\mathrm{Z}\in\mathfrak{Z}^1(\mathrm{X})$ and all $x\in\mathrm{T}$, there is a neighbourhood $\mathrm{W}(x)$ of $x$ in $\mathrm{X}$ and a divisor $\mathrm{D}^{(x)}$ on $\mathrm{W}(x)$ such that $\operatorname{cyc}(\mathrm{D}^{(x)})=\mathrm{Z}|\mathrm{W}(x)$.
-Indeed, we can then cover the quasi-compact set $\mathrm{T}$ by a finite number of the $\mathrm{W}(x_i)$, and by the first part of the proof, there will exist an index $\lambda$ such that in each of the $\mathrm{W}(x_i)\cap\mathrm{W}(x_j)\cap\mathrm{U}_\lambda$, the restrictions of $\mathrm{D}^{(x_i)}$ and $\mathrm{D}^{(x_j)}$ coincide;
+Indeed, we can then cover the quasi-compact set $\mathrm{T}$ by a finite number of the $\mathrm{W}(x_i)$, and by the first part of the proof, since the pairs $(i,j)$ are finite in number, there will exist an index $\lambda$ such that in each of the $\mathrm{W}(x_i)\cap\mathrm{W}(x_j)\cap\mathrm{U}_\lambda$, the restrictions of $\mathrm{D}^{(x_i)}$ and $\mathrm{D}^{(x_j)}$ coincide;
 since we can moreover assume that $\mathrm{U}_\lambda$ is contained in the union of the $\mathrm{W}(x_i)$, we see that the restrictions $\mathrm{D}^{(x_i)}|(\mathrm{W}(x_i)\cap\mathrm{U}_\lambda)$ are the restrictions of a single divisor $\mathrm{D}\in\operatorname{Div}(\mathrm{U}_\lambda)$ which will be such that $\operatorname{cyc}(\mathrm{D})=\mathrm{Z}|\mathrm{U}_\lambda$.
 We are thus reduced again to the case where $\mathrm{X}=\Spec(\sh{O}_{\mathrm{X},x})$ with $x\in\mathrm{T}$;
-but as $\sh{O}_{\mathrm{X},x}$ is factorial, it is Noetherian, integral and integrally closed, and it suffices to apply \sref{IV.21.6.9},{}~(ii).
+but as $\sh{O}_{\mathrm{X},x}$ is factorial, the same is true of its localizations (Bourbaki, \emph{Alg.\ comm.}, chap.~VII, \textsection~3, n\textsuperscript{o}~4, prop.~3), and it suffices to apply \sref{IV.21.6.9},{}~(ii).
 \end{proof}
 
 \begin{corollary}[21.6.13]
@@ -1214,7 +1214,7 @@ For $\mathrm{A}$ to be factorial, it is necessary and sufficient that $\mathrm{U
 \end{corollary}
 
 \begin{proof}
-Indeed, to say that $\mathrm{A}$ is factorial is equivalent to saying that $\mathfrak{Cl}(\mathrm{X})=0$ (Bourbaki, \emph{Alg.\ comm.}, chap.~VII, \textsection~1, n\textsuperscript{o}~4, cor.\ du th.~2 et \textsection~3, th.~1);
+Indeed, to say that $\mathrm{A}$ is factorial is equivalent to saying that $\mathfrak{Cl}(\mathrm{X})=0$ (Bourbaki, \emph{Alg.\ comm.}, chap.~VII, \textsection~1, n\textsuperscript{o}~4, cor.\ du th.~2 et \textsection~3, n\textsuperscript{o}~2, th.~1);
 it therefore suffices to use the existence of the second isomorphism \sref{IV.21.6.12.1}, taking the family $(\mathrm{U}_\lambda)$ restricted to the single open $\mathrm{U}$.
 \end{proof}
 
@@ -1861,12 +1861,12 @@ We propose to show that:
 \end{enumerate}
 
 To prove A), let us first suppose that $x\notin\mathrm{T}$ and that $x$ satisfies one of the conditions $2^{\mathrm{o}}$ or $3^{\mathrm{o}}$ of \sref{IV.21.10.1}; then $n_x=0$ and if one is in case $2^{\mathrm{o}}$, we have $n_{x'}=0$; if one is in case $3^{\mathrm{o}}$, we have $\mathrm{Z}_x=0$ since $\operatorname{Supp}(\mathrm{Z})\subset\mathrm{T}$, so again $n_{x'}=0$.
-It remains to consider the case where one is simultaneously in cases $2^{\mathrm{o}}$ and $3^{\mathrm{o}}$; then, since $\dim(\sh{O}_{\mathrm{X},x})=1$, $\sh{O}_{\mathrm{X},x}$ is a discrete valuation ring; if $t$ is a uniformiser of this ring, the divisor corresponding to $\mathrm{Z}_x$ is $\operatorname{div}(t^{n_x})$ in $\operatorname{Div}(\sh{O}_{\mathrm{X},x})$, and its image in $\operatorname{Div}(\sh{O}_{\mathrm{X}',x'})$ is the divisor of $t'^{n_x}$, where $t'$ is the image of $t$.
+It remains to consider the case where one is simultaneously in cases $2^{\mathrm{o}}$ and $3^{\mathrm{o}}$; then, since $\dim(\sh{O}_{\mathrm{X},x})=1$, $\sh{O}_{\mathrm{X},x}$ is a discrete valuation ring; if $t$ is a uniformiser of this ring, the divisor corresponding to $\mathrm{Z}_x$ is $\operatorname{div}(t^{n_x})$ in $\operatorname{Div}(\sh{O}_{\mathrm{X},x})$, and its image in $\operatorname{Div}(\sh{O}_{\mathrm{X}',x'})$ is the divisor of $t'^{n_x}$, where $t'$ is the (regular) element of $\sh{O}_{\mathrm{X}',x'}$ that is the image of $t$.
 We may clearly reduce to the case $n_x=1$; then the definition \sref{IV.21.6.5.1} shows that the image of $\mathrm{Z}_x$ under \sref{IV.21.10.1.2} is $\lambda_{x'}$, completing the proof of A).
 
 Let us now prove B).
 Set $\mathrm{T}_0=\operatorname{Supp}(\mathrm{Z})\subset\mathrm{T}$, $\mathrm{T}_0'=f^{-1}(\mathrm{T}_0)$; it suffices to prove that the relation $n_{x'}\neq 0$ implies that $x'$ belongs to the set of maximal points of $\mathrm{T}_0'$, this last being locally finite in $\mathrm{X}'$.
-It is immediate that if $x'$ was not maximal in the closed set $\mathrm{T}_0'$, there would exist
+It is immediate that $x'\in\mathrm{T}_0'$ necessarily; if $x'$ was not maximal in the closed set $\mathrm{T}_0'$, there would exist
 \oldpage[IV-4]{291}
 a generisation $y'$ of $x'$ in $\mathrm{T}_0'$, distinct from $x'$, and since $x'\in\mathrm{X}'^{(1)}$, $y'$ would necessarily be a maximal point of $\mathrm{X}'$; as a result $y=f(y')$ would be a maximal point of $\mathrm{X}$ by hypothesis; but this is absurd since $y\in\mathrm{T}_0$ and $\mathrm{T}_0$ is purely of codimension $1$ in $\mathrm{X}$.
 \end{env}
@@ -1982,7 +1982,7 @@ The most general case where we place ourselves is the one where $f$ transforms e
   \item[(iv)] $x\in\mathrm{X}^{(1)}$, $\mathfrak{m}_{x}\notin\operatorname{Ass}(\sh{O}_{\mathrm{X},x})$, and, in addition, if $\mathrm{A}=\widehat{\sh{O}}_{\mathrm{X},x}$, $\mathrm{A}'=\widehat{\sh{O}}_{\mathrm{X}',x'}$, and $\mathrm{K}$ denotes the total ring of fractions of $\mathrm{A}$, then $\mathrm{A}'$ is a finite $\mathrm{A}$-algebra and $\mathrm{K}'=\mathrm{A}'\otimes_{\mathrm{A}}\mathrm{K}$ is a free $\mathrm{K}$-module.
 \end{enumerate}
 
-Let us note then $r_{x'}$ the rank of the free $\mathrm{K}$-module $\mathrm{K}'$, $q_{x'}$ the degree of $\boldsymbol{k}(x')$ over $\boldsymbol{k}(x)=\boldsymbol{k}(\mathrm{A})$, and set $\mu_{x'}=r_{x'}/q_{x'}$.
+Let us note then $r_{x'}$ the rank of the free $\mathrm{K}$-module $\mathrm{K}'$, $q_{x'}$ the degree of $\boldsymbol{k}(x')=\boldsymbol{k}(\mathrm{A}')$ over $\boldsymbol{k}(x)=\boldsymbol{k}(\mathrm{A})$, and set $\mu_{x'}=r_{x'}/q_{x'}$.
 For a $1$-codimensional cycle with support contained in $\mathrm{T}$, given by \sref{IV.21.10.1.1} and for all $x'\in\mathrm{X}'^{(1)}$, we define $c_{x'}\in\bb{Q}$ to equal $n_{x'}$ when one is in one of the cases $1^{\mathrm{o}}$, $2^{\mathrm{o}}$, $3^{\mathrm{o}}$ of \sref{IV.21.10.1}; but there remains here a fourth possibility:
 \begin{enumerate}
   \item[$4^{\mathrm{o}}$] if $x'$ satisfies condition (iv) above, we set $c_{x'}=\mu_{x'}n_x\in\bb{Q}$.
@@ -2030,7 +2030,7 @@ and hence, by tensoring, a homomorphism of sheaves of ordered $\bb{Q}$-vector sp
 \begin{remark}[21.10.12]
 \label{IV.21.10.12}
 When one is in the situation of \sref{IV.21.10.10}, one can effectively, for $1$-codimensional cycles $\mathrm{Z}$ on $\mathrm{X}$, have for $f^*(Z)$ cycles $1$-codimensional with \emph{non-integer} coefficients; in other words, the numbers $\mu_{x'}$ can be non-integers.
-An example is obtained by taking the integral domain $\mathrm{A}$ and its integral closure $\mathrm{A}'$ from $(\mathbf{0}_{\mathrm{IV}},6.15.11)$,~(ii): the closed point $x'$ of $\Spec(\mathrm{A}')$ satisfies condition (iv) of \sref{IV.21.10.10}, and $\mu_{x'}=\frac12$.
+An example is obtained by taking the complete integral domain $\mathrm{A}$ and its integral closure $\mathrm{A}'$ from $(\mathbf{0}_{\mathrm{IV}},6.15.11)$,~(ii): the closed point $x'$ of $\Spec(\mathrm{A}')$ satisfies condition (iv) of \sref{IV.21.10.10}, and $\mu_{x'}=\frac12$.
 \end{remark}
 
 \begin{lemma}[21.10.13]
@@ -2215,10 +2215,10 @@ Then $f$ satisfies condition \emph{b)} of \sref{IV.21.10.14}, and for every divi
 
 \begin{proof}
 Since $f$ is flat and finite, condition $b)$ of \sref{IV.21.10.14} and the relation $f(\mathrm{X}'^{(1)})\subset\mathrm{X}^{(1)}$ follow from \sref{IV.6.1.1}.
-The definition \sref{IV.21.10.14.1} shows that we can reduce to the case where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})=\operatorname{Spec}(\sh{O}_{\mathrm{X},x})$ for an $x\in\mathrm{X}^{(1)}$; then $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is a
+The definition \sref{IV.21.10.14.1} shows that we can reduce to the case where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})=\operatorname{Spec}(\sh{O}_{\mathrm{X},x})$ for an $x\in\mathrm{X}^{(1)}$; then $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is an $\mathrm{A}$-algebra which is a
 \oldpage[IV-4]{298}
-free A-module of finite rank; furthermore, we can suppose that $\mathrm{D}'=\operatorname{div}(t')$, where $t'$ is a regular element of $\mathrm{A}'$; we then have $f_*(\mathrm{D}')=\operatorname{div}(t)$, where $t=\mathrm{N}_{\mathrm{A}'/\mathrm{A}}(t')$ is a regular element of $\mathrm{A}$ \sref{IV.21.5.2}.
-We can restrict to the case where $t'$ is not invertible in $\mathrm{A}'$, which is equivalent to $t$ not being invertible in $\mathrm{A}$; the ring $\mathrm{A}/t\mathrm{A}$ is then nonzero and of finite length, and $\mathrm{A}'$ is a finite direct product of local rings $\mathrm{A}_i'$ ($1\leq i\leq r$), whose residue fields are $\boldsymbol{k}(x_i')$, where the $x_i'$ are the points of $\mathrm{X}'$ lying above $x$.
+free $\mathrm{A}$-module of finite rank; furthermore, we can suppose that $\mathrm{D}'=\operatorname{div}(t')$, where $t'$ is a regular element of $\mathrm{A}'$; we then have $f_*(\mathrm{D}')=\operatorname{div}(t)$, where $t=\mathrm{N}_{\mathrm{A}'/\mathrm{A}}(t')$ is a regular element of $\mathrm{A}$ \sref{IV.21.5.2}.
+We can restrict to the case where $t'$ is not invertible in $\mathrm{A}'$, which is equivalent to $t$ not being invertible in $\mathrm{A}$; the ring $\mathrm{A}/t\mathrm{A}$ is then nonzero and of finite length, and $\mathrm{A}'/t\mathrm{A}'$ is a finite direct product of Artinian local rings $\mathrm{A}_i'$ ($1\leq i\leq r$), whose residue fields are $\boldsymbol{k}(x_i')$, where the $x_i'$ are the points of $\mathrm{X}'$ lying above $x$.
 If $t_i'$ is the image of $t'$ in $\mathrm{A}_i'$, $\mathrm{A}'/t'\mathrm{A}'$ is the direct product of the $\mathrm{A}_i'/t_i'\mathrm{A}_i'$; since the product $\operatorname{length}_{\mathrm{A}_i'}(\mathrm{A}_i'/t_i'\mathrm{A}_i')\cdot[\boldsymbol{k}(x_i'):\boldsymbol{k}(x)]$ is equal to $\operatorname{length}_{\mathrm{A}}(\mathrm{A}_i'/t_i'\mathrm{A}_i')$, we see that the multiplicity at point $x$ of the left-hand side of \sref{IV.21.10.17.1} is $\operatorname{length}_{\mathrm{A}}(\mathrm{A}'/t'\mathrm{A}')$, so the formula to prove reduces to
 \[
 \label{IV.21.10.17.2}
@@ -2255,7 +2255,7 @@ It follows from I) that
   \operatorname{length}_{\mathrm{B}}(\operatorname{Coker} u')=\operatorname{length}_{\mathrm{B}}(\mathrm{B}/(\det u')\mathrm{B}).
   \tag{21.10.17.5}
 \]
-But $\det u'=\mathrm{N}_{\mathrm{A}/\mathrm{B}}(\det u)$, therefore, by applying \sref{IV.21.10.17.4} to the homothety $x\mapsto(\det u)x$ of the free $\mathrm{B}$-module $\mathrm{A}$, we get
+But $\det u'=\mathrm{N}_{\mathrm{A}/\mathrm{B}}(\det u)$ (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection~12, n\textsuperscript{o}~2, prop.~7), therefore, by applying \sref{IV.21.10.17.4} to the homothety $x\mapsto(\det u)x$ of the free $\mathrm{B}$-module $\mathrm{A}$, we get
 \[
   \operatorname{length}_{\mathrm{B}}(\mathrm{B}/(\det u')\mathrm{B})=\operatorname{length}_{\mathrm{B}}(\mathrm{A}/(\det u)\mathrm{A}),
 \]
@@ -2306,7 +2306,7 @@ Let $\mathrm{M}$ be a free A-module of finite type, $u$ an endomorphism of $\mat
 \end{lemma}
 
 \begin{proof}
-Since $\mathfrak{m}\notin\operatorname{Ass}(\mathrm{A})$, we have a reduced primary decomposition $(0)=\bigcap_{1\leq i\leq n}\mathfrak{q}_i$, where the ideal $\mathfrak{q}_i$ is $\mathfrak{p}_i$-primary for $1\leq i\leq n$.
+Since $\mathfrak{m}\notin\operatorname{Ass}(\mathrm{A})$, we have a unique reduced primary decomposition $(0)=\bigcap_{1\leq i\leq n}\mathfrak{q}_i$, where the ideal $\mathfrak{q}_i$ is $\mathfrak{p}_i$-primary for $1\leq i\leq n$.
 If we set $\mathrm{M}_i'=\mathrm{M}\otimes_{\mathrm{A}}(\mathrm{A}/\mathfrak{q}_i)$, we have therefore an exact sequence
 \[
   0\to\mathrm{M}\to\bigoplus_i\mathrm{M}_i'\to\mathrm{M}''\to 0
@@ -2316,7 +2316,7 @@ of A-modules, where $\mathrm{M}''$ is of \emph{finite length}: indeed by localis
 the support of $\mathrm{M}''$ is therefore reduced to $\mathfrak{m}$, hence $\mathrm{M}''$ is of finite length $(\mathbf{0}$, $16.1.10)$.
 If we set $u_i'=u\otimes 1_{\mathrm{A}/\mathfrak{q}_i}$, and if $u''$ is the endomorphism of $\mathrm{M}''$ deduced from $\bigoplus u_i'$ by passing to quotients, we deduce from \sref{IV.21.10.17.6} that $\chi(\mathrm{M},u)+\chi(\mathrm{M}'',u'')=\sum_i\chi(\mathrm{M}_i',u_i')$, and since $\mathrm{M}''$ is of finite length, $\chi(\mathrm{M}'',u'')=0$.
 To prove \sref{IV.21.10.17.8}, we can therefore reduce to the case where $n=1$.
-We will then denote by $\mathfrak{p}$ the unique minimal prime ideal of $\mathrm{A}$; if $\mathrm{A}_0=\mathrm{A}/\mathfrak{p}$, $\mathrm{M}_0=\mathrm{M}\otimes_{\mathrm{A}}\mathrm{A}_0$, $u_0=u\otimes 1_{\mathrm{A}_0}$, it is a matter of proving that if $\chi(\mathrm{M}_0,u_0)$ is defined, then
+We will then denote by $\mathfrak{p}$ the unique minimal prime ideal of $\mathrm{A}$, which is the nilradical of $\mathrm{A}$; if $\mathrm{A}_0=\mathrm{A}/\mathfrak{p}$, $\mathrm{M}_0=\mathrm{M}\otimes_{\mathrm{A}}\mathrm{A}_0$, $u_0=u\otimes 1_{\mathrm{A}_0}$, it is a matter of proving that if $\chi(\mathrm{M}_0,u_0)$ is defined, then
 \[
 \label{IV.21.10.17.9}
   \chi(\mathrm{M},u)=\operatorname{length}\mathrm{A}_{\mathfrak{p}}\cdot\chi(\mathrm{M}_0,u_0).
@@ -2357,7 +2357,7 @@ and by virtue of a preceding remark, $\sum_j l_j$ is none other than the length 
 To apply this lemma when $\mathrm{A}$ is a complete ring and $\mathfrak{m}\notin\operatorname{Ass}(\mathrm{A})$, we observe that if $u$ is injective, so is each of the $u_i$ (with the notation of the lemma): indeed, $\det u$ is then a regular element of $\mathrm{A}$, so is not contained in any of the $\mathfrak{p}_i$, and its image $\det u_i$ in $\mathrm{A}/\mathfrak{p}_i$ is therefore a nonzero element of this integral ring, which proves that $u_i$ is injective.
 Since $\operatorname{Coker}(u_i)$ is an image of $\operatorname{Coker}(u)$, it too has finite length, so $\chi(\mathrm{M}_i,u_i)$ is defined for every $i$; formula \sref{IV.21.10.17.8} therefore applies.
 On the other hand, since $\det(u)$ is a regular element of $\mathrm{A}$, it is not contained in any of the $\mathfrak{p}_i$; the ideal $(\det u)\mathrm{A}$ is therefore $\mathfrak{m}$-primary and the quotient $\mathrm{A}/(\det u)\mathrm{A}$ is of finite length.
-Applying the same reasoning above to the injective homothety $t:\xi\to(\det u)\xi$ of $\mathrm{A}$ and to its images $t_i=\det u_i$ in the $\mathrm{A}/\mathfrak{p}_i$, we get
+Applying the same reasoning above to the injective homothety $t:\xi\mapsto(\det u)\xi$ of $\mathrm{A}$ and to its images $t_i=\det u_i$ in the $\mathrm{A}/\mathfrak{p}_i$, we get
 \[
   \chi(\mathrm{A},t)=\sum_i\operatorname{length}(\mathrm{A}_{\mathfrak{p}_i})\cdot\chi(\mathrm{A}/\mathfrak{p}_i,t_i).
 \]
@@ -2370,7 +2370,7 @@ This finishes the proof of \sref{IV.21.10.17}.
 
 \begin{proposition}[21.10.18]
 \label{IV.21.10.18}
-Let $\mathrm{X}$, $\mathrm{X}'$ be two locally Noetherian preschemes, $f:\mathrm{X}'\to\mathrm{X}$ a finite morphism, transforming every maximal point of $\mathrm{X}'$ into a maximal point of $\mathrm{X}$, and satisfying for all $x'\in\mathrm{X}'$ one of the conditions (ii), (iii), (iv) of \sref{IV.21.10.10}.
+Let $\mathrm{X}$, $\mathrm{X}'$ be two locally Noetherian preschemes, $f:\mathrm{X}'\to\mathrm{X}$ a finite morphism, transforming every maximal point of $\mathrm{X}'$ into a maximal point of $\mathrm{X}$, and satisfying for all $x'\in\mathrm{X}'^{(1)}$ one of the conditions (ii), (iii), (iv) of \sref{IV.21.10.10}.
 Suppose furthermore that there exists an integer $n$ such that, for every maximal point $x$ of $\mathrm{X}$, $(f_*(\sh{O}_{\mathrm{X}'}))_x$ is a free $\sh{O}_{\mathrm{X},x}$-module of rank $n$.
 Then, for every $1$-codimensional cycle $\mathrm{Z}$ on $\mathrm{X}$, we have
 \[
@@ -2803,7 +2803,7 @@ It all comes down to proving, with the notations of \sref{IV.21.12.12}, that $\m
 \begin{remarks}[21.12.14]
 \label{IV.21.12.14}
 (i)
-The conclusion of \sref{IV.21.12.12} applies when $\mathrm{Y}$ is regular and integral, by virtue of the Auslander-Buchsbaum theorem \sref{IV.21.11.1}.
+The conclusion of \sref{IV.21.12.12} applies when $\mathrm{Y}$ is regular and integral and $\mathrm{X}$ is integral; by virtue of the Auslander-Buchsbaum theorem \sref{IV.21.11.1}, $\mathrm{Y}$ is then locally factorial.
 On the contrary, one knows examples where $\mathrm{X}$ and $\mathrm{Y}$ are normal algebraic schemes of dimension $3$, over an algebraically closed field of any characteristic, and where the conclusion of \sref{IV.21.12.12} is no longer valid.
 
 (ii)
@@ -2815,7 +2815,7 @@ This justifies the title given to this section.
 
 \oldpage[IV-4]{311}
 (iii)
-Without assuming that $\mathrm{Y}$ is locally factorial, but assuming instead that $\mathrm{X}$ is a complete intersection over $\mathrm{Y}$ (chap.~V), we shall see in chap.~V a result more precise than \sref{IV.21.12.12}, expressing $\mathrm{T}$ as the $1$-codimensional cycle of an invertible $\sh{O}_{\mathrm{X}}$-Module canonically associated with $g$.
+Without assuming that $\mathrm{Y}$ is locally factorial, but assuming instead that $\mathrm{X}$ is a complete intersection over $\mathrm{Y}$ (chap.~V), we shall see in chap.~V a result more precise than \sref{IV.21.12.12}, expressing $\mathrm{T}$ as the $1$-codimensional cycle of a section of an invertible $\sh{O}_{\mathrm{X}}$-Module canonically associated with $g$.
 This applies notably when $\mathrm{X}$ and $\mathrm{Y}$ are both regular, or when $g$ is a S-morphism, $\mathrm{X}$ and $\mathrm{Y}$ being smooth preschemes over $\mathrm{S}$.
 
 (iv) One may ask whether \sref{IV.21.12.10} has a converse.  In other words, let $\mathrm{A}$ be a local Noetherian ring, set $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, and let $y$ be its closed point.  Suppose that, for every locally Noetherian prescheme $\mathrm{X}$ and every morphism $g:\mathrm{X}\to\mathrm{Y}$ for which $g':\mathrm{X}'\to\mathrm{Y}'$ is an open immersion, every irreducible component of $\mathrm{X}_y$ has codimension $\leq 1$ in $\mathrm{X}$ or is reduced to a single point.  Must $\mathrm{A}$ then satisfy condition (W) of \sref{IV.21.12.8}?
@@ -2838,14 +2838,14 @@ Since $h$ is flat, every maximal point of $\mathrm{Y}$ lies above a maximal poin
 We must therefore show that $f$ is an \emph{open immersion}.
 In view of \sref{IV.17.9.5}, it suffices to prove that $f_s:\mathrm{X}_s\to\mathrm{Y}_s$ is an open immersion for every $s\in\mathrm{S}$.
 
-Every $s\in\mathrm{S}$ is a generisation of a maximal point $\eta$.  Making the base change $\operatorname{Spec}(\sh{O}_{\mathrm{S}',s})\to\mathrm{S}$, where $\mathrm{S}'$ is the reduced sub-prescheme of $\mathrm{S}$ with underlying space $\overline{\{\eta\}}$, we may first reduce to the case where $\mathrm{S}$ is a local integral scheme with closed point $s$ and generic point $\eta$; the fibres at $s$ and $\eta$ and the relevant properties of $g$, $h$, and $f$ are unchanged by this base change.
+Every $s\in\mathrm{S}$ is a specialization of a maximal point $\eta$.  Making the base change $\operatorname{Spec}(\sh{O}_{\mathrm{S}',s})\to\mathrm{S}$, where $\mathrm{S}'$ is the reduced sub-prescheme of $\mathrm{S}$ with underlying space $\overline{\{\eta\}}$, we may first reduce to the case where $\mathrm{S}$ is a local integral scheme with closed point $s$ and generic point $\eta$; the fibres at $s$ and $\eta$ and the relevant properties of $g$, $h$, and $f$ are unchanged by this base change.
 The question is local on $\mathrm{Y}$.  Replacing $\mathrm{Y}$ by an affine open neighbourhood of a point of $\mathrm{Y}_s$, and $\mathrm{X}$ by its inverse image (which is quasi-compact because $f$ is proper), we may also suppose that $\mathrm{X}$ and $\mathrm{Y}$ are of finite presentation over $\mathrm{S}$.
 There then exist a local Noetherian subring $\mathrm{A}_0$ of $\mathrm{A}=\sh{O}_{\mathrm{S},s}$, with $\mathrm{A}_0\to\mathrm{A}$ local, finite-type morphisms
 \[
   g_0:\mathrm{X}_0\to\mathrm{S}_0=\operatorname{Spec}(\mathrm{A}_0),
   \qquad h_0:\mathrm{Y}_0\to\mathrm{S}_0,
 \]
-and an $\mathrm{S}_0$-morphism $f_0:\mathrm{X}_0\to\mathrm{Y}_0$ from which $g$, $h$, and $f$ are obtained by base change $(\mathbf{IV}$, $8.9.1$ and $5.13.3)$.  We may moreover suppose that $g_0$ is flat $(\mathbf{IV}$, $11.2.7)$, $h_0$ smooth $(\mathbf{IV}$, $17.7.0)$, and $f_0$ proper $(\mathbf{IV}$, $8.10.5$,~(xii)).
+and an $\mathrm{S}_0$-morphism $f_0:\mathrm{X}_0\to\mathrm{Y}_0$ from which $g$, $h$, and $f$ are obtained by base change $(\mathbf{IV}$, $8.9.1$ and $5.13.3)$.  We may moreover suppose that $g_0$ is flat $(\mathbf{IV}$, $11.2.7)$, $h_0$ smooth $(\mathbf{IV}$, $17.7.9)$, and $f_0$ proper $(\mathbf{IV}$, $8.10.5$,~(xii)).
 The image in $\mathrm{S}_0$ of the generic point $\eta$ of $\mathrm{S}$ is the generic point $\eta_0$ of $\mathrm{S}_0$, and $(f_0)_{\eta_0}:(\mathrm{X}_0)_{\eta_0}\to(\mathrm{Y}_0)_{\eta_0}$ is an isomorphism $(\mathbf{IV}$, $2.7.1$,~(viii)).  The closed point $s$ of $\mathrm{S}$ lies above the closed point $s_0$ of $\mathrm{S}_0$, and $(\mathrm{X}_0)_{s_0}$ is geometrically irreducible $(\mathbf{IV}$, $4.5.6)$.
 Thus we may reduce to the case where $\mathrm{S}$ is the spectrum of a Noetherian local integral ring, while weakening the fibre hypothesis to require only that $\mathrm{X}_s$ and $\mathrm{X}_\eta$ be geometrically irreducible; under these hypotheses we must prove that $f_s$ is an open immersion.
 
@@ -3194,14 +3194,14 @@ Let us first show that if the pair $(\mathrm{X},\mathrm{Y})$ is parafactorial, e
 Taking into account the preceding remark, it all amounts to seeing that if $\mathrm{T}_y=\operatorname{Spec}(\sh{O}_{\mathrm{X},y})$ and $\mathrm{U}_y=\mathrm{T}_y-\{y\}$, every invertible $\sh{O}_{\mathrm{U}_y}$-module $\mathscr{L}_0$ is isomorphic to $\sh{O}_{\mathrm{U}_y}$.
 Now, when $\mathrm{V}$ ranges over the open neighbourhoods of $y$ in $\mathrm{X}$, it follows from \sref{IV.8.2.13} and \sref[I]{I.2.4.2} that the prescheme $\mathrm{U}_y$ is projective limit of the preschemes induced by $\mathrm{X}$ on the opens $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$, which are quasi-compact since $\mathrm{X}$ is Noetherian.
 Since the opens $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$ are separated, it follows from \sref{IV.8.5.2},~(ii) and \sref{IV.8.5.5} that there exist an affine open neighbourhood $\mathrm{V}$ of $y$ in $\mathrm{X}$ and an invertible module $\mathscr{L}_{\mathrm{V}}'$ on $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$ which induces $\mathscr{L}_0$ on $\mathrm{U}_y$.
-But the hypothesis implies, by \sref{IV.21.13.6},~(i), that the pair $(\mathrm{V},\mathrm{V}\cap\overline{\{y\}})$ is parafactorial. Hence there exists an invertible $\sh{O}_{\mathrm{V}}$-Module $\mathscr{L}_{\mathrm{V}}$ inducing $\mathscr{L}_{\mathrm{V}}'$ on $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$. Replacing $\mathrm{V}$ if necessary by a smaller open neighbourhood of $y$, we may suppose that $\mathscr{L}_{\mathrm{V}}\cong\sh{O}_{\mathrm{V}}$; it follows that $\mathscr{L}_0\cong\sh{O}_{\mathrm{U}_y}$.
+But the hypothesis implies, by \sref{IV.21.13.6},~(i) and (ii), that the pair $(\mathrm{V},\mathrm{V}\cap\overline{\{y\}})$ is parafactorial. Hence there exists an invertible $\sh{O}_{\mathrm{V}}$-Module $\mathscr{L}_{\mathrm{V}}$ inducing $\mathscr{L}_{\mathrm{V}}'$ on $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$. Replacing $\mathrm{V}$ if necessary by a smaller open neighbourhood of $y$, we may suppose that $\mathscr{L}_{\mathrm{V}}\cong\sh{O}_{\mathrm{V}}$; it follows that $\mathscr{L}_0\cong\sh{O}_{\mathrm{U}_y}$.
 
 Conversely, let us prove that if all the $\sh{O}_{\mathrm{X},y}$ ($y\in\mathrm{Y}$) are parafactorial, the pair $(\mathrm{X},\mathrm{Y})$ is parafactorial.
 This is evidently reduced, taking into account the remark at the beginning, to showing that for every invertible $\sh{O}_{\mathrm{U}}$-module $\mathscr{L}$, $j_*(\mathscr{L})$ is an invertible $\sh{O}_{\mathrm{X}}$-module.
 The set of $x\in\mathrm{X}$ such that the restriction of $j_*(\mathscr{L})$ to an open neighbourhood of $x$ in $\mathrm{X}$ is invertible is evidently open in $\mathrm{X}$; it is a matter of showing that $\mathrm{V}=\mathrm{X}$.
 For this, suppose the contrary and set $\mathrm{Z}=\mathrm{X}-\mathrm{V}\neq\varnothing$.
 Let $y$ be a \emph{maximal} point of $\mathrm{Z}$; since $\mathrm{Z}\subset\mathrm{Y}$, $\sh{O}_{\mathrm{X},y}$ is by hypothesis a parafactorial ring.
-Replacing $\mathrm{X}$ if necessary by an open neighbourhood of $y$, we may suppose that the restriction of $j_*(\mathscr{L})$ to $\mathrm{V}-(\mathrm{V}\cap\overline{\{y\}})$ is invertible. With the notation introduced above, the invertible $\sh{O}_{\mathrm{U}_y}$-Module $\mathscr{L}_0$ induced by $j_*(\mathscr{L})$ is therefore invertible. Since $\sh{O}_{\mathrm{X},y}$ is parafactorial, $\mathscr{L}_0$ is induced by an invertible $\sh{O}_{\mathrm{T}_y}$-Module $\mathscr{L}'$.
+Replacing $\mathrm{X}$ if necessary by an open neighbourhood of $y$, we may suppose that the restriction of $j_*(\mathscr{L})$ to $\mathrm{X}-\overline{\{y\}}$ is invertible. With the notation introduced above, the invertible $\sh{O}_{\mathrm{U}_y}$-Module $\mathscr{L}_0$ induced by $j_*(\mathscr{L})$ is therefore invertible. Since $\sh{O}_{\mathrm{X},y}$ is parafactorial, $\mathscr{L}_0$ is induced by an invertible $\sh{O}_{\mathrm{T}_y}$-Module $\mathscr{L}'$.
 
 As $\mathrm{T}_y$ is the projective limit of the open neighbourhoods $\mathrm{W}$ of $y$ in $\mathrm{X}$, another application of \sref{IV.8.5.2},~(ii) and \sref{IV.8.5.5} yields such a neighbourhood $\mathrm{W}$ and an invertible $\sh{O}_{\mathrm{W}}$-Module $\mathscr{L}''$ inducing $\mathscr{L}'$ on $\mathrm{T}_y$, and therefore inducing $\mathscr{L}_0$ on $\mathrm{U}_y$. By \sref{IV.8.5.2.5} and \sref{IV.8.5.2},~(i), after replacing $\mathrm{W}$ by a smaller open neighbourhood of $y$, we may suppose that the restrictions of $j_*(\mathscr{L})$ and $\mathscr{L}''$ to $\mathrm{W}-(\mathrm{W}\cap\overline{\{y\}})$ are equal.
 
@@ -3280,7 +3280,7 @@ Property $a)$ may in turn be expressed as follows. If the closed set $\mathrm{N}
 
 \emph{$a')$ If there exists a closed subset $\mathrm{Y}$ contained in one of the sets $\mathrm{X}-\mathrm{U}_\lambda$, such that $\operatorname{codim}(\mathrm{Y},\mathrm{X})\geq 2$ and $\mathrm{Z}|(\mathrm{X}-\mathrm{Y})$ is locally principal, then $\mathrm{Z}$ is locally principal.}
 
-Condition $b)$ implies $b')$ by \sref{IV.21.13.10}. Conversely, if $b')$ holds and $x\notin\mathrm{U}_\lambda$, then $\mathrm{Y}=\{x\}$ is contained in $\mathrm{X}-\mathrm{U}_\lambda$ and $\operatorname{codim}(\mathrm{Y},\mathrm{X})\geq 2$; it follows again from \sref{IV.21.13.10} that $\sh{O}_{\mathrm{X},x}$ is parafactorial. This proves the equivalence of $b)$ and $b')$.
+Condition $b)$ implies $b')$ by \sref{IV.21.13.10}. Conversely, if $b')$ holds and $x\notin\mathrm{U}_\lambda$, then $\mathrm{Y}=\overline{\{x\}}$ is contained in $\mathrm{X}-\mathrm{U}_\lambda$ and $\operatorname{codim}(\mathrm{Y},\mathrm{X})\geq 2$; it follows again from \sref{IV.21.13.10} that $\sh{O}_{\mathrm{X},x}$ is parafactorial. This proves the equivalence of $b)$ and $b')$.
 
 We are thus reduced to proving the equivalence of $a')$ and $b')$. Since $\mathrm{X}$ is normal, for every closed subset $\mathrm{Y}$ of $\mathrm{X}$ such that $\operatorname{codim}(\mathrm{Y},\mathrm{X})\geq 2$, one has $\operatorname{prof}_{\mathrm{Y}}(\sh{O}_{\mathrm{X}})\geq 2$ \sref{IV.5.8.6}. If $\mathrm{U}=\mathrm{X}-\mathrm{Y}$ and $j:\mathrm{U}\to\mathrm{X}$ is the canonical injection, the homomorphism $\sh{O}_{\mathrm{X}}\to j_*(\sh{O}_{\mathrm{U}})$ is therefore bijective \sref{IV.21.13.4}. Since $a')$ and $b')$ are local conditions, it suffices to prove, for $\mathrm{X}$ Noetherian and normal and $\mathrm{Y}$ closed with $\operatorname{codim}(\mathrm{Y},\mathrm{X})\geq 2$, the equivalence of:
 
@@ -3346,7 +3346,7 @@ Then every $1$-codimensional cycle on $\operatorname{Spec}(\mathrm{B})$ which is
 \begin{proof}
 \oldpage[IV-4]{324}
 If $k=\mathrm{A}/\mathfrak{m}$ is the residue field of $\mathrm{A}$, then $\mathrm{B}/\mathfrak{m}\mathrm{B}$ is a formally smooth $k$-algebra for its preadic topology $(\mathbf{0}$, $19.3.5)$, hence regular and in particular integral. Thus $\mathfrak{p}=\mathfrak{m}\mathrm{B}$ is indeed a prime ideal of $\mathrm{B}$, which justifies the statement.
-It evidently all amounts to proving that every prime ideal $\mathfrak{q}$ of $\mathrm{B}$ not contained in $\mathfrak{m}\mathrm{B}$ is \emph{principal}.
+It evidently all amounts to proving that every prime ideal $\mathfrak{q}$ of height one of $\mathrm{B}$ not contained in $\mathfrak{m}\mathrm{B}$ is \emph{principal}.
 
 Let $\widehat{\mathrm{A}}$, $\widehat{\mathrm{B}}$ be the completions of $\mathrm{A}$ and $\mathrm{B}$ respectively, so that the maximal ideal of $\widehat{\mathrm{A}}$ is $\mathfrak{m}\widehat{\mathrm{A}}$; we know $(\mathbf{0}$, $19.3.6)$ that $\widehat{\mathrm{B}}$ is a formally smooth $\widehat{\mathrm{A}}$-algebra for the adic topologies.
 Let $k'$ be the residue field of $\widehat{\mathrm{B}}$, a finite extension of $k$. There exists a local homomorphism $\widehat{\mathrm{A}}\to\mathrm{C}$, where $\mathrm{C}$ is a local Noetherian ring which is finite and flat (hence free) as an $\widehat{\mathrm{A}}$-module and such that $\mathrm{C}/\mathfrak{m}\mathrm{C}\cong k'$ $(\mathbf{0}_{\mathrm{III}}$, $10.3.1)$. It follows that $\mathrm{C}$ is complete, and then from \sref{IV.7.5.1}, \sref{IV.7.5.3}, and \sref{IV.6.5.4},~(ii) that $\mathrm{C}$ is \emph{integral} and \emph{integrally closed}.
@@ -3457,7 +3457,7 @@ If $(\mathrm{X}_\mu,\mathrm{Y}_\mu)$ is parafactorial for all sufficiently large
   j_*(\sh{O}_{\mathrm{U}})=p_\mu^*((j_\mu)_*(\sh{O}_{\mathrm{U}_\mu}))
   \qquad (\mathbf{II},\ 1.5.2),
 \]
-so the canonical map $\sh{O}_{\mathrm{X}}\to j_*(\sh{O}_{\mathrm{U}})$ is the pullback of the corresponding map on $\mathrm{X}_\mu$, and is therefore bijective. Moreover, for every invertible $\sh{O}_{\mathrm{U}}$-module $\mathscr{L}$, there is, for sufficiently large $\mu$, an invertible $\sh{O}_{\mathrm{U}_\mu}$-module $\mathscr{L}_\mu$ such that $\mathscr{L}\simeq(p'_mu)^*(\mathscr{L}_\mu)$ \sref{IV.8.5.2} and \sref{IV.8.5.5}; here we use that $\mathrm{U}_\lambda$ is quasi-compact because $\mathrm{X}_\lambda$ is Noetherian. By parafactoriality, $\mathscr{L}_\mu$ extends to an invertible $\sh{O}_{\mathrm{X}_\mu}$-module $\mathscr{L}'_\mu$, whose pullback extends $\mathscr{L}$. Hence it remains only to prove (ii) when $\mathrm{A}$ is an integrally closed $\bb{Z}$-algebra of finite type.
+so the canonical map $\sh{O}_{\mathrm{X}}\to j_*(\sh{O}_{\mathrm{U}})$ is the pullback of the corresponding map on $\mathrm{X}_\mu$, and is therefore bijective. Moreover, for every invertible $\sh{O}_{\mathrm{U}}$-module $\mathscr{L}$, there is, for sufficiently large $\mu$, an invertible $\sh{O}_{\mathrm{U}_\mu}$-module $\mathscr{L}_\mu$ such that $\mathscr{L}\simeq(p'_\mu)^*(\mathscr{L}_\mu)$ \sref{IV.8.5.2} and \sref{IV.8.5.5}; here we use that $\mathrm{U}_\lambda$ is quasi-compact because $\mathrm{X}_\lambda$ is Noetherian. By parafactoriality, $\mathscr{L}_\mu$ extends to an invertible $\sh{O}_{\mathrm{X}_\mu}$-module $\mathscr{L}'_\mu$, whose pullback extends $\mathscr{L}$. Hence it remains only to prove (ii) when $\mathrm{A}$ is an integrally closed $\bb{Z}$-algebra of finite type.
 
 The local rings $\sh{O}_{\mathrm{S},s}$ are then excellent integrally closed rings, and their completions are integrally closed $(\mathbf{0},\ 7.8.3,\ \text{(ii), (iii), and (vii)})$. By \sref{IV.21.13.10}, it is enough to show that $\sh{O}_{\mathrm{X},x}$ is parafactorial for every $x\in\mathrm{Y}$. Choose a closed point $y$ of $\mathrm{Y}_{f(x)}$ which is a specialization of $x$ \sref{IV.5.1.11}, and put $s=f(x)=f(y)$. The completion of $\sh{O}_{\mathrm{S},s}$ is integrally closed, and $\sh{O}_{\mathrm{X},y}$ is a formally smooth $\sh{O}_{\mathrm{S},s}$-algebra for the preadic topologies \sref{IV.17.5.3}. Since $\mathrm{Y}$ contains no irreducible component of $\mathrm{X}_s$,
 \[
@@ -3499,7 +3499,7 @@ Let $\mathrm{S}$ and $\mathrm{T}$ be two preschemes locally of finite type over 
   \item For all $s\in\mathrm{S}$, $\mathrm{Z}$ is principal at the maximal points of the fibre $\mathrm{X}_s$.
 \end{enumerate}
 Then $\mathrm{Z}$ is locally principal.
-In other words, since $\mathrm{X}$ is normal \sref{IV.6.14.1}, for every $x\in\mathrm{X}$ which is not maximal in its fibre $\mathrm{X}_s$ and which belongs to none of the ``generic fibres'' $\mathrm{X}_\eta$ (which implies $\dim(\sh{O}_{\mathrm{X},x})\geq2$ by \sref{IV.6.1.1}), the local ring $\sh{O}_{\mathrm{X},x}$ is parafactorial, by \sref{IV.21.12.15}.\footnote{In the cited paper Seshadri in fact assumes that $k$ is algebraically closed and that $\mathrm{T}$ is separated and ``semi-complete'' (that is, $\Gamma(\mathrm{T},\sh{O}_{\mathrm{T}})\simeq k$), and replaces condition $3^{\mathrm{o}}$ by the stronger hypothesis that $\operatorname{Supp}(\mathrm{Z})$ contains no fibre $\mathrm{X}_s$, $s\in\mathrm{S}$. Since the statement is local on $\mathrm{S}$, however, condition $3^{\mathrm{o}}$ suffices. The resulting conclusion, interpreted as above in terms of parafactoriality of the rings $\sh{O}_{\mathrm{X},x}$, is local on both $\mathrm{S}$ and $\mathrm{T}$; this removes altogether the assumptions that $\mathrm{T}$ is semi-complete and that $k$ is algebraically closed. Indeed, after first passing to an algebraic closure of $k$, one may assume that $\mathrm{T}$ is affine, embed it as an open subscheme of a normal projective prescheme over $k$, and apply Seshadri's result. This reduction also shows that it is enough to prove Seshadri's theorem when $\mathrm{T}$ is projective (rather than merely semi-complete), the case in which the Picard-scheme theory used by Seshadri is contained in chap.~VI of this Treatise.}
+In other words, since $\mathrm{X}$ is normal \sref{IV.6.14.1}, for every $x\in\mathrm{X}$ which is not maximal in its fibre $\mathrm{X}_s$ and which belongs to none of the ``generic fibres'' $\mathrm{X}_\eta$ (which implies $\dim(\sh{O}_{\mathrm{X},x})\geq2$ by \sref{IV.6.1.1}), the local ring $\sh{O}_{\mathrm{X},x}$ is parafactorial, by \sref{IV.21.13.15},~(b).\footnote{In the cited paper Seshadri in fact assumes that $k$ is algebraically closed and that $\mathrm{T}$ is separated and ``semi-complete'' (that is, $\Gamma(\mathrm{T},\sh{O}_{\mathrm{T}})\simeq k$), and replaces condition $3^{\mathrm{o}}$ by the stronger hypothesis that $\operatorname{Supp}(\mathrm{Z})$ contains no fibre $\mathrm{X}_s$, $s\in\mathrm{S}$. Since the statement is local on $\mathrm{S}$, however, condition $3^{\mathrm{o}}$ suffices. The resulting conclusion, interpreted as above in terms of parafactoriality of the rings $\sh{O}_{\mathrm{X},x}$, is local on both $\mathrm{S}$ and $\mathrm{T}$; this removes altogether the assumptions that $\mathrm{T}$ is semi-complete and that $k$ is algebraically closed. Indeed, after first passing to an algebraic closure of $k$, one may assume that $\mathrm{T}$ is affine, embed it as an open subscheme of a normal projective prescheme over $k$, and apply Seshadri's result. This reduction also shows that it is enough to prove Seshadri's theorem when $\mathrm{T}$ is projective (rather than merely semi-complete), the case in which the Picard-scheme theory used by Seshadri is contained in chap.~VI of this Treatise.}
 \end{env}
 
 \subsection{Relative divisors}

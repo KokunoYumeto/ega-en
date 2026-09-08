@@ -193,7 +193,7 @@ and
 where $\psi'$ is the map \sref{0.15.1.5.2} in which one replaces $n$ by $n-1$, $\mathfrak{J}$ by $\mathfrak{J}''$, and $\gr'_\bullet(M)$ by $\gr''_\bullet(M)$.
 The induction hypothesis implies that $\psi'$ is bijective, and it remains to see, by applying \sref{0.15.1.6}, that it suffices to show that $f_n$ is $\gr''_\bullet(M)$-regular.
 But $\gr''_\bullet(M)$ identifies with $(\gr_\bullet(M)\otimes(A/\mathfrak{J}''))[T_1,\ldots,T_{n-1}]$;
-by hypothesis, the homothety of ratio $f_n$ in $\gr_\bullet(M)\otimes(A/\mathfrak{J}'')$ is bijective;
+by hypothesis, the homothety of ratio $f_n$ in $\gr_\bullet(M)\otimes(A/\mathfrak{J}'')$ is injective;
 since $A[T_1,\ldots,T_{n-1}]$ is a free $A$-module, it follows that $f_n$ is $\gr''_\bullet(M)$-regular.
 \end{proof}
 
@@ -291,7 +291,7 @@ the converse is true if $B$ is a faithfully flat $A$-module.
 \end{corollary}
 
 \begin{proof}
-Indeed, $M'/(\sum_{j=1}^{i-1}f'_jM')$ identifies with $(M/(\sum_{j=1}^{i-1}f_jM))\otimes_AB$, and the homothety of ratio $f'_i$ in the $B$-module $M'/(\sum_{j=1}^{i-1}f'_jM')$ with the homothety of ratio $f_i$ in the $A$-module $(M/(\sum_{j=1}^{i-1}f_jM))\otimes_AB$;
+Indeed, $M'/(\sum_{j=1}^{i-1}f'_jM')$ identifies with $(M/(\sum_{j=1}^{i-1}f_jM))\otimes_AB$, and the homothety of ratio $f'_i$ in the $B$-module $M'/(\sum_{j=1}^{i-1}f'_jM')$ is identified with the homothety of ratio $f_i$ in the $A$-module $(M/(\sum_{j=1}^{i-1}f_jM))\otimes_AB$;
 the assertion thus follows from \sref{0.15.1.13}.
 \end{proof}
 
@@ -384,7 +384,7 @@ Then:
 
 \begin{proof}
 Assertion (i) follows from the hypothesis on $f$ and from Bourbaki, \emph{Alg.~comm.}, chap.~III, \S~2, no.~8, cor.~1 of th.~1.
-As $\gr_\bullet(M/M_k)$ is a direct factor of $\gr_\bullet(M)$, $f$ is $\gr_\bullet(M/M_k)$-regular by (i), which establishes (ii).
+As $\gr_\bullet(M/M_k)$ is a direct factor of $\gr_\bullet(M)$, $f$ is $\gr_\bullet(M/M_k)$-regular for every $k$, hence $(M/M_k)$-regular by (i), which establishes (ii).
 To prove (iii), it suffices to see that the map $M_{k+1}/fM_{k+1}\to M_k/fM_k$ is injective:
 now, if $x\in M_{k+1}$ is such that $x\in fM_k$, it follows from (ii) that $x\in fM_{k+1}$, which finishes proving the lemma.
 \end{proof}
@@ -443,7 +443,7 @@ The following properties are equivalent:
 \begin{proof}
 The fact that a) implies b) follows from \sref{0.15.1.13} and from ($\mathbf{0_{III}}$, 10.2.2).
 Conversely, if the sequence $(f_i)$ is $M$-regular, it is $M$-quasi-regular \sref{0.15.1.9}, hence the homomorphism \sref{0.15.1.1.1} is bijective.
-But as the sequence $(f_i)_{1\leq i\leq n}$ is also supposed $A$-regular, it is $A$-quasi-regular, and the corresponding canonical homomorphism $(A/\mathfrak{J})[T_1,\ldots,T_n]\to\gr_\bullet(A)$ is bijective.
+But as the sequence $(f_i)_{1\leq i\leq n}$ is also supposed $A$-regular, it is $A$-quasi-regular \sref{0.15.1.9}, and the corresponding canonical homomorphism $(A/\mathfrak{J})[T_1,\ldots,T_n]\to\gr_\bullet(A)$ is bijective.
 One concludes that the canonical morphism ($\mathbf{0_{III}}$, 10.1.1.2)
 \[
   \gr_0(M)\otimes_{A/\mathfrak{J}}\gr_\bullet(A) \to \gr_\bullet(M)
@@ -472,8 +472,8 @@ for every open set $U$ of $X$ (or of a base of the topology of $X$), one conside
   \varphi_{k,U} : (\gr_0(\Gamma(U,\sh{F})))\otimes_{\bb{Z}}S_k \to \gr_k(\Gamma(U,\sh{F}))
 \]
 defined by the $n$ sections $f_i|U\in\Gamma(U,\sh{O}_X)$, the $\Gamma(U,\sh{O}_X)$-module $\Gamma(U,\sh{F})$ being filtered by the submodules $(\Gamma(U,\sh{J}))^k\Gamma(U,\sh{F})$.
-The $\sh{O}_X$-Module $\gr_k(\sh{F})$ being associated to the presheaf $U\mapsto\gr_k(\Gamma(U,\sh{F}))$ for all $k$, the $\varphi_{k,U}$ define a homomorphism of \sref{0.15.2.1.1}.
-By virtue of the exactness properties of inductive limits of modules and their commutation with tensor products, it follows from the above that for all $x\in X$, the homomorphism of the stalks of the two members of \sref{0.15.2.1.1} at the point $x$ identifies with the homomorphism of \sref{0.15.1.1}
+The $\sh{O}_X$-Module $\gr_k(\sh{F})$ being associated to the presheaf $U\mapsto\gr_k(\Gamma(U,\sh{F}))$ for all $k$, the $\varphi_{k,U}$ define the homomorphism of $\sh{O}_X$-Modules \sref{0.15.2.1.1}.
+By virtue of the exactness properties of inductive limits of modules and their commutation with tensor products, it follows from the above that for all $x\in X$, the homomorphism $(\varphi_k)_x$ of the stalks of the two members of \sref{0.15.2.1.1} at the point $x$ identifies with the homomorphism of \sref{0.15.1.1}
 \[
 \label{0.15.2.1.2}
   \gr_0(\sh{F}_x)\otimes_{\bb{Z}}S_k \to \gr_k(\sh{F}_x)
@@ -484,7 +484,7 @@ defined by the sequence $((f_i)_x)_{1\leq i\leq n}$ of elements of $\sh{O}_x$.
 
 \begin{env}[15.2.2]
 \label{0.15.2.2}
-The notations being those of \sref{0.15.2.1}, we say that the sequence $(f_i)_{1\leq i\leq n}$ is \emph{$\sh{F}$-regular} if, denoting by $f_j\sh{F}$ the sub-$\sh{O}_X$-Module of $\sh{F}$, the image of the endomorphism of $\sh{F}$ defined by $f_j$, the endomorphism of $\sh{F}/(\sum_{j=1}^{i-1}f_j\sh{F})$ defined by $f_i$ is \emph{injective} for $1\leq i\leq n$;
+The notations being those of \sref{0.15.2.1}, we say that the sequence $(f_i)_{1\leq i\leq n}$ is \emph{$\sh{F}$-regular} if, denoting by $f_j\sh{F}$ the sub-$\sh{O}_X$-Module of $\sh{F}$ that is the image of the endomorphism of $\sh{F}$ defined by $f_j$, the endomorphism of $\sh{F}/(\sum_{j=1}^{i-1}f_j\sh{F})$ defined by $f_i$ is \emph{injective} for $1\leq i\leq n$;
 we say that the sequence $(f_i)$ is \emph{$\sh{F}$-quasi-regular} if the homomorphisms \sref{0.15.2.1.1} are injective.
 It follows from these definitions and the remarks of \sref{0.15.2.1} that for the sequence $(f_i)$ to be $\sh{F}$-regular (resp. $\sh{F}$-quasi-regular), it is necessary and sufficient that, for all $x\in X$, the sequence $((f_i)_x)_{1\leq i\leq n}$ be $\sh{F}_x$-regular (resp. $\sh{F}_x$-quasi-regular).
 Every $\sh{F}$-regular sequence is thus $\sh{F}$-quasi-regular \sref{0.15.1.9};
@@ -527,8 +527,8 @@ we have
 \[
   \sh{G}_x=\psi_x^*(\sh{F}_y)\otimes_{\psi_x^*(\sh{O}_y)}\sh{O}_x,
   \qquad\text{and}\qquad
-  (g_i)_x=\theta_x^*(\psi_x^*((f_i)_y));
+  (g_i)_x=\theta_x^\#(\psi_x^*((f_i)_y));
 \]
-as $\theta_x^*:\psi_x^*(\sh{O}_y)\to\sh{O}_x$ makes $\sh{O}_x$ a flat $\psi_x^*(\sh{O}_y)$-module, and since the functor $\psi^*$ is exact, the first assertion follows from the corresponding assertion of \sref{0.15.1.14};
-the same holds for the second, taking into account the fact that $u$ being faithfully flat means that $\psi$ is surjective and that $\theta_x^*$ makes $\sh{O}_x$ a faithfully flat $\psi_x^*(\sh{O}_y)$-module.
+as $\theta_x^\#:\psi_x^*(\sh{O}_y)\to\sh{O}_x$ makes $\sh{O}_x$ a flat $\psi_x^*(\sh{O}_y)$-module, and since the functor $\psi^*$ is exact, the first assertion follows from the corresponding assertion of \sref{0.15.1.14};
+the same holds for the second, taking into account the fact that $u$ being faithfully flat means that $\psi$ is surjective and that $\theta_x^\#$ makes $\sh{O}_x$ a faithfully flat $\psi_x^*(\sh{O}_y)$-module.
 \end{proof}

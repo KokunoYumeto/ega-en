@@ -377,10 +377,12 @@ This follows immediately from \sref{IV.8.3.3} by passing to complements.
 \label{IV.8.3.5}
 For every $\lambda$, let $\mathrm{E}_\lambda$, $\mathrm{F}_\lambda$ be two constructible subsets of $\mathrm{S}_\lambda$ such that, for $\mu\geqslant\lambda$, one has $\mathrm{E}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{E}_\lambda)$ and $\mathrm{F}_\mu\supset u_{\lambda\mu}^{-1}(\mathrm{F}_\lambda)$.
 Suppose that there exists $\alpha$ such that $\mathrm{S}_\alpha$ is quasi-compact.
-Then, for $\mathrm{E}\subset\mathrm{F}$ \textnormal{(}resp.\ $\mathrm{E}=\mathrm{F}$\textnormal{)}, it is necessary and sufficient that there exist $\lambda$ such that $\mathrm{E}_\lambda\subset\mathrm{F}_\lambda$ \textnormal{(}resp.\ $\mathrm{E}_\lambda=\mathrm{F}_\lambda$\textnormal{)}, in which case one also has $\mathrm{E}_\mu\subset\mathrm{F}_\mu$ \textnormal{(}resp.\ $\mathrm{E}_\mu=\mathrm{F}_\mu$\textnormal{)} for $\mu\geqslant\lambda$.
+Then, for $\mathrm{E}\subset\mathrm{F}$, it is necessary and sufficient that there exist $\lambda$ such that $\mathrm{E}_\lambda\subset\mathrm{F}_\lambda$, in which case one also has $\mathrm{E}_\mu\subset\mathrm{F}_\mu$ for $\mu\geqslant\lambda$.\footnote{The printed text also includes three parenthetical equality assertions; these do not follow from the stated one-sided transition hypotheses.}
 
 This is a particular case of \sref{IV.8.3.2}.
 \end{corollary}
+
+In particular:
 
 \begin{corollary}[8.3.6]
 \label{IV.8.3.6}
@@ -622,7 +624,7 @@ But if $\mathrm{K}$ is the largest separable extension contained in $k'$, the mo
   \item The proof of \sref{IV.8.4.2} shows that the conclusion of this proposition is valid if one supposes that the underlying space of $\mathrm{S}$ is Noetherian, that there exists $\alpha$ such that $\mathrm{S}_\alpha$ is quasi-compact, and finally that the $u_\lambda:\mathrm{S}\to\mathrm{S}_\lambda$ are dominant.
   \item On the other hand, the conclusion of \sref{IV.8.4.2} can be at fault when the $u_\lambda$ are not dominant for $\lambda$ sufficiently large, even when the $\mathrm{S}_\lambda$ and $\mathrm{S}$ are Noetherian, as shown by the following example.
 Take $\mathbf{N}$ for index set, all the $\mathrm{S}_n$ equal to $\operatorname{Spec}(\mathrm{A}\times\mathrm{K})=\operatorname{Spec}(\mathrm{A})\amalg\operatorname{Spec}(\mathrm{K})$, where $\mathrm{K}$ is a field, $\mathrm{A}$ any $\mathrm{K}$-algebra, and all the morphisms $u_{n,n+1}$ equal to the same morphism corresponding to the homomorphism $(x,y)\mapsto(j(y),y)$ of $\mathrm{A}\times\mathrm{K}$ into itself, where $j:\mathrm{K}\to\mathrm{A}$ is the canonical homomorphism.
-One easily verifies that the inductive limit of this system of rings is $\mathrm{K}$, the canonical homomorphism $\mathrm{A}\times\mathrm{K}\to\mathrm{K}$ being the second projection.
+One easily verifies that the inductive limit of this system of rings is $\mathrm{K}$, the canonical homomorphism $u_n$ corresponding to the second projection $\mathrm{A}\times\mathrm{K}\to\mathrm{K}$.
 One thus sees that $\mathrm{S}=\operatorname{Spec}(\mathrm{K})$ is irreducible even though none of the $\mathrm{S}_n$ is connected.
 \end{enumerate}
 \end{remark}
@@ -656,7 +658,7 @@ It is clear that the maps $f_\lambda\mapsto u_{\lambda\mu}^*(f_\lambda)$ from $\
 \]
 whence, by passing to the inductive limit, a canonical homomorphism of abelian groups
 \begin{equation}
-  u_{\sh{F},\sh{G}}^*:\varinjlim\operatorname{Hom}_{\sh{O}_{\mathrm{S}_\lambda}}(\sh{F}_\lambda,\sh{G}_\lambda)\to\operatorname{Hom}_\mathrm{S}(\sh{F},\sh{G}).
+  u_{\sh{F},\sh{G}}:\varinjlim\operatorname{Hom}_{\sh{O}_{\mathrm{S}_\lambda}}(\sh{F}_\lambda,\sh{G}_\lambda)\to\operatorname{Hom}_\mathrm{S}(\sh{F},\sh{G}).
   \tag{8.5.1.3}
 \label{IV.8.5.1.3}
 \end{equation}
@@ -673,7 +675,7 @@ Note that when $\sh{F}_\lambda=\sh{O}_{\mathrm{S}_\lambda}$, the condition \sref
 \label{IV.8.5.2}
 \begin{enumerate}[label=(\roman*)]
   \item Suppose $\mathrm{S}_0$ quasi-compact (resp.\ quasi-compact and quasi-separated) and that, for some $\lambda\in\mathrm{L}$, $\sh{F}_\lambda$ is quasi-coherent and of finite type (resp.\ of finite presentation) and $\sh{G}_\lambda$ quasi-coherent.
-Then the homomorphism $u_{\sh{F},\sh{G}}^*$ is injective (resp.\ bijective).
+Then the homomorphism $u_{\sh{F},\sh{G}}$ is injective (resp.\ bijective).
   \item Suppose $\mathrm{S}_0$ quasi-compact and quasi-separated.
 For every quasi-coherent $\sh{O}_\mathrm{S}$-Module $\sh{F}$ of finite presentation, there exist $\lambda\in\mathrm{L}$ and an $\sh{O}_{\mathrm{S}_\lambda}$-Module quasi-coherent of finite presentation $\sh{F}_\lambda$ such that $\sh{F}$ is isomorphic to $u_\lambda^*(\sh{F}_\lambda)$.
 \end{enumerate}
@@ -714,7 +716,7 @@ Now, if $\mathrm{M}_0$ is of finite type (resp.\ of finite presentation), one ha
 
 \medskip
 Let us pass to the case where $\mathrm{S}_0$ is quasi-compact, and let $(\mathrm{U}_i)$ be a finite covering of $\mathrm{S}_0$ by affine open subsets; for every $\lambda$, the $\mathrm{U}_{i\lambda}=u_{0\lambda}^{-1}(\mathrm{U}_i)$ form an open affine covering of $\mathrm{S}_\lambda$, and the $\mathrm{V}_i=u_0^{-1}(\mathrm{U}_i)$ an open affine covering of $\mathrm{S}$.
-To show that $u_{\sh{F},\sh{G}}^*$ is injective, it suffices to show that if $f_\lambda:\sh{F}_\lambda\to\sh{G}_\lambda$ is such that $f=u_\lambda^*(f_\lambda)=0$, then there exists $\mu\geqslant\lambda$ such that $u_{\lambda\mu}^*(f_\lambda)=0$.
+To show that $u_{\sh{F},\sh{G}}$ is injective, it suffices to show that if $f_\lambda:\sh{F}_\lambda\to\sh{G}_\lambda$ is such that $f=u_\lambda^*(f_\lambda)=0$, then there exists $\mu\geqslant\lambda$ such that $u_{\lambda\mu}^*(f_\lambda)=0$.
 By virtue of the lemma \sref{IV.8.5.2.1}, for each $i$ there exists an index $\lambda_i$ such that $f_\mu|_{\mathrm{U}_{i\mu}}=0$ for $\mu\geqslant\lambda_i$.
 It suffices therefore to take $\mu$ greater than all the $\lambda_i$.
 
@@ -778,8 +780,8 @@ Since $\mathrm{U}_{ij\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}$ is
 \]
 such that $u_{\lambda_{ij}}^*(\theta_{ij})$ is the identity automorphism of $\sh{F}|(\mathrm{V}_i\cap\mathrm{V}_j)$; one can further suppose all the $\lambda_{ij}$ equal to $\lambda$.
 Changing the notations, one can therefore suppose that it holds for every pair $(i,j)$ an isomorphism $\theta_{ij}:\sh{F}_i|_{\mathrm{U}_{ij\lambda}}\xrightarrow{\sim}\sh{F}_j|_{\mathrm{U}_{ij\lambda}}$ such that $u_\lambda^*(\theta_{ij})$ is the identity automorphism of $\sh{F}|_{(\mathrm{V}_i\cap\mathrm{V}_j)}$.
-Finally, for any three indices $i$, $j$, $k$, if one sets $\mathrm{U}_{ijk,\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}\cap\mathrm{U}_{k\lambda}$, $\mathrm{U}_{ijk,\lambda}$ is quasi-compact, and if $\theta'_{ij}$, $\theta'_{jk}$, and $\theta'_{ik}$ denote the restrictions of $\theta_{ij}$, $\theta_{jk}$, and $\theta_{ik}$ to $\mathrm{U}_{ijk,\lambda}$, one has $u_\lambda^*(\theta'_{ij}\circ\theta'_{jk})=u_\lambda^*(\theta'_{ik})$.
-There is, hence, by virtue of (i), an index $\mu\geqslant\lambda$ such that $u_{\lambda\mu}^*(\theta'_{ik})=u_{\lambda\mu}^*(\theta'_{ij}\circ\theta'_{jk})$, hence the isomorphisms $u_{\lambda\mu}^*(\theta'_{ij}):u_{\lambda\mu}^*(\sh{F}_i)|_{\mathrm{U}_{ij\mu}}\xrightarrow{\sim}u_{\lambda\mu}^*(\sh{F}_j)|_{\mathrm{U}_{ij\mu}}$ satisfy the gluing condition, and define on $\mathrm{S}_\mu$ a quasi-coherent $\sh{O}_{\mathrm{S}_\mu}$-Module $\sh{F}_\mu$ of finite presentation \sref[0]{0.3.3.1} such that $\sh{F}$ is isomorphic to $u_\mu^*(\sh{F}_\mu)$.
+Finally, for any three indices $i$, $j$, $k$, if one sets $\mathrm{U}_{ijk,\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}\cap\mathrm{U}_{k\lambda}$, $\mathrm{U}_{ijk,\lambda}$ is quasi-compact, and if $\theta'_{ij}$, $\theta'_{jk}$, and $\theta'_{ik}$ denote the restrictions of $\theta_{ij}$, $\theta_{jk}$, and $\theta_{ik}$ to $\mathrm{U}_{ijk,\lambda}$, one has $u_\lambda^*(\theta'_{jk}\circ\theta'_{ij})=u_\lambda^*(\theta'_{ik})$.
+There is, hence, by virtue of (i), an index $\mu\geqslant\lambda$ such that $u_{\lambda\mu}^*(\theta'_{ik})=u_{\lambda\mu}^*(\theta'_{jk}\circ\theta'_{ij})$, hence the isomorphisms $u_{\lambda\mu}^*(\theta_{ij}):u_{\lambda\mu}^*(\sh{F}_i)|_{\mathrm{U}_{ij\mu}}\xrightarrow{\sim}u_{\lambda\mu}^*(\sh{F}_j)|_{\mathrm{U}_{ij\mu}}$ satisfy the gluing condition, and define on $\mathrm{S}_\mu$ a quasi-coherent $\sh{O}_{\mathrm{S}_\mu}$-Module $\sh{F}_\mu$ of finite presentation \sref[0]{0.3.3.1} such that $\sh{F}$ is isomorphic to $u_\mu^*(\sh{F}_\mu)$.
 \end{proof}
 
 \begin{env}[8.5.3]
@@ -831,7 +833,7 @@ If one sets $\sh{H}'_\nu=\operatorname{Coker}(\sh{F}_\nu\to\sh{G}_\nu)$, one has
 
 \begin{corollary}[8.5.7]
 \label{IV.8.5.7}
-Suppose $\mathrm{S}_0$ quasi-compact, $\sh{F}_\lambda$ quasi-coherent, $\sh{G}_\lambda$ quasi-coherent of finite type, and let $f_\lambda:\sh{F}_\lambda\to\sh{G}_\lambda$ be a homomorphism.
+Suppose $\mathrm{S}_0$ is quasi-compact, $\sh{F}_\lambda$ quasi-coherent, $\sh{G}_\lambda$ quasi-coherent of finite type, and let $f_\lambda:\sh{F}_\lambda\to\sh{G}_\lambda$ be a homomorphism.
 For $f=u_\lambda^*(f_\lambda):\sh{F}\to\sh{G}$ to be surjective, it is necessary and sufficient that there exist $\mu\geqslant\lambda$ such that $f_\mu=u_{\lambda\mu}^*(f_\lambda):\sh{F}_\mu\to\sh{G}_\mu$ be so.
 \end{corollary}
 
@@ -841,7 +843,7 @@ This is the particular case of \sref{IV.8.5.6} applied to the sequence $0\to\sh{
 
 \begin{corollary}[8.5.8]
 \label{IV.8.5.8}
-Suppose $\mathrm{S}_0$ quasi-compact and the morphisms $u_{\lambda\mu}:\mathrm{S}_\mu\to\mathrm{S}_\lambda$ flat.
+Suppose that $\mathrm{S}_0$ is quasi-compact and that the morphisms $u_{\lambda\mu}:\mathrm{S}_\mu\to\mathrm{S}_\lambda$ are flat.
 Then:
 \begin{enumerate}[label=(\roman*)]
   \item Let $\sh{F}_\lambda\xrightarrow{f_\lambda}\sh{G}_\lambda\xrightarrow{g_\lambda}\sh{H}_\lambda$ be a sequence of homomorphisms of $\sh{O}_{\mathrm{S}_\lambda}$-Modules quasi-coherent, such that $\operatorname{Im} f_\lambda$ and $\operatorname{Ker} g_\lambda$ are of finite type.
@@ -937,7 +939,7 @@ Taking into account the remarks of \sref{IV.8.6.1}, the assertions relative to \
 It remains to consider the map \eqref{IV.8.6.2.1}.
 Let us first prove that it is surjective when $S_0$ is quasi-compact and quasi-separated.
 Let $Z$ be a sub-prescheme of $S$, of finite presentation over $S$; as $S$ is quasi-compact, so is $Z$, and therefore there exists an open quasi-compact $U$ of $S$ such that $Z$ is a sub-prescheme of $U$, closed in $U$, of finite presentation over $U$.
-There then exist an index $\lambda$ and an open quasi-compact $U_\lambda$ of $S_\lambda$ such that $U=u_\lambda^{-1}(U_\lambda)$ \sref{IV.8.2.11}; as $S_\lambda$ is quasi-separated, it is of the same nature as $U_\lambda$ \sref[I]{I.1.2.7}, and consequently one can restrict to the case where $U=S$; but in this case, one is reduced to the fact that \eqref{IV.8.6.2.3} is surjective.
+There then exist an index $\lambda$ and an open quasi-compact $U_\lambda$ of $S_\lambda$ such that $U=u_\lambda^{-1}(U_\lambda)$ \sref{IV.8.2.11}; as $S_\lambda$ is quasi-separated, so is $U_\lambda$ \sref{IV.1.2.7}, and consequently one can restrict to the case where $U=S$; but in this case, one is reduced to the fact that \eqref{IV.8.6.2.3} is surjective.
 
 Finally, to see that \eqref{IV.8.6.2.1} is injective when $S_0$ is quasi-compact, it will suffice to prove the following more precise result:
 \end{proof}
@@ -950,9 +952,9 @@ For $Z'=u_\lambda^{-1}(Z'_\lambda)$ to be majorised by $Z''=u_\lambda^{-1}(Z''_\
 
 \begin{proof}
 It is trivial that the condition is sufficient.
-To see that it is necessary, note first that the underlying sets $Z'_\lambda$ and $Z''_\lambda$ are locally constructible in $S_\lambda$ by hypothesis \sref[I]{I.1.8.4}, hence the hypothesis implies the existence of a $\nu\geqslant\lambda$ such that $Z'_\nu\subset Z''_\nu$ \sref{IV.8.3.5}; replacing $\lambda$ by $\nu$, we can therefore already suppose that $Z'_\lambda\subset Z''_\lambda$.
-Furthermore, by hypothesis \sref[I]{I.1.6.1}, the sub-spaces $Z'_\lambda$ and $Z''_\lambda$ of $S_\lambda$ are quasi-compact; for every point $x\in Z'_\lambda$, there is an open quasi-compact neighbourhood $V(x)$ in $S_\lambda$ such that $V(x)\cap Z'_\lambda$ and $V(x)\cap Z''_\lambda$ are closed in $V(x)$.
-By covering $S_\lambda$ by a finite number of such neighbourhoods, we see that there is an open quasi-compact $U_\lambda$ of $S_\lambda$ containing $Z'_\lambda$ and such that $Z'_\lambda$ and $Z''_\lambda\cap U_\lambda$ are closed in $U_\lambda$.
+To see that it is necessary, note first that the underlying sets $Z'_\lambda$ and $Z''_\lambda$ are locally constructible in $S_\lambda$ by hypothesis \sref{IV.1.8.4}, hence the hypothesis implies the existence of a $\nu\geqslant\lambda$ such that $Z'_\nu\subset Z''_\nu$ \sref{IV.8.3.5}; replacing $\lambda$ by $\nu$, we can therefore already suppose that $Z'_\lambda\subset Z''_\lambda$.
+Furthermore, by hypothesis \sref{IV.1.6.1}, the sub-spaces $Z'_\lambda$ and $Z''_\lambda$ of $S_\lambda$ are quasi-compact; for every point $x\in Z'_\lambda$, there is an open quasi-compact neighbourhood $V(x)$ in $S_\lambda$ such that $V(x)\cap Z'_\lambda$ and $V(x)\cap Z''_\lambda$ are closed in $V(x)$.
+By covering $Z'_\lambda$ by a finite number of such neighbourhoods, we see that there is an open quasi-compact $U_\lambda$ of $S_\lambda$ containing $Z'_\lambda$ and such that $Z'_\lambda$ and $Z''_\lambda\cap U_\lambda$ are closed in $U_\lambda$.
 If we denote by $Y_\lambda$ the sub-prescheme of $S_\lambda$ induced by $Z''_\lambda$ on $U_\lambda\cap Z''_\lambda$, it is clear that with the usual notations, $Y_\mu$ (resp.\ $Y$) is induced by $Z''_\mu$ on $U_\mu\cap Z''_\mu$ for $\mu\geqslant\lambda$ (resp.\ by $Z''$ on $U\cap Z''$); moreover $Z'$ is majorised by $Y$ \sref[I]{I.4.4.1}, and as it suffices to prove that $Z'_\mu$ is majorised by $Y_\mu$ for $\mu$
 \oldpage[IV-3]{27}
 large enough, we see finally that one is reduced (replacing $S_\lambda$ by $U_\lambda$) to the case where $Z'_\lambda$ and $Z''_\lambda$ are closed sub-preschemes of $S_\lambda$.
@@ -1020,12 +1022,12 @@ Then, for $S$ to be integral, it is necessary and sufficient that there exist $\
 \end{corollary}
 
 \begin{proof}
-To say that a prescheme is integral means that it is both reduced and irreducible; the corollary thus follows from \sref{IV.8.7.2} and from \sref{IV.8.4.3}.
+To say that a prescheme is integral means that it is both reduced and irreducible. Reducedness follows from \sref{IV.8.7.2}. In case (a), irreducibility follows from \sref{IV.8.4.3}. In case (b), \sref{IV.8.3.8} shows that every morphism $S\to S_\lambda$ is faithfully flat, hence surjective; thus irreducibility of $S$ implies irreducibility of every $S_\lambda$. Conversely, eventual irreducibility of the $S_\lambda$ implies irreducibility of $S$ by the general projective-limit argument used in the proof of \sref{IV.8.4.1}.
 \end{proof}
 
 \begin{remark}[8.7.4]
 \label{IV.8.7.4}
-If one makes no hypothesis on the $u_{\lambda\mu}$, it can happen that $S$ is integral even though all the $S_\lambda$ are neither reduced nor connected, as the example \sref{IV.8.4.4} shows, where one takes the ring $A$ non reduced.
+If one makes no hypothesis on the $u_{\lambda\mu}$, it can happen that $S$ is integral even though all the $S_\lambda$ are neither reduced nor connected, as the example \sref{IV.8.4.6},~(ii) shows, where one takes the ring $A$ non reduced.
 \end{remark}
 
 \subsection{Preschemes of finite presentation over a projective limit of preschemes}
@@ -1033,7 +1035,7 @@ If one makes no hypothesis on the $u_{\lambda\mu}$, it can happen that $S$ is in
 
 \begin{env}[8.8.1]
 \label{IV.8.8.1}
-Always preserving the notations and hypotheses of \sref{IV.8.2.2}, we shall suppose given in this section two $S_\alpha$-preschemes $X_\alpha$, $Y_\alpha$, which defines \sref{IV.8.2.5} two projective systems of preschemes $(X_\lambda,v_{\lambda\mu})$ and $(Y_\lambda,w_{\lambda\mu})$ by setting $X_\lambda=X_\alpha\times_{S_\alpha}S_\lambda$, $v_{\lambda\mu}=1_{X_\alpha}\times u_{\lambda\mu}$, $w_{\lambda\mu}=1_{Y_\alpha}\times u_{\lambda\mu}$ (for $\alpha\leqslant\lambda\leqslant\mu$), whose projective limits are respectively $X=X_\alpha\times_{S_\alpha}S$, $Y=Y_\alpha\times_{S_\alpha}S$, with the canonical morphisms $v_\lambda:X\to X_\lambda$ and $w_\lambda:Y\to Y_\lambda$.
+Always preserving the notations and hypotheses of \sref{IV.8.2.2}, we shall suppose given in this section two $S_\alpha$-preschemes $X_\alpha$, $Y_\alpha$, which defines \sref{IV.8.2.5} two projective systems of preschemes $(X_\lambda,v_{\lambda\mu})$ and $(Y_\lambda,w_{\lambda\mu})$ by setting $X_\lambda=X_\alpha\times_{S_\alpha}S_\lambda$, $Y_\lambda=Y_\alpha\times_{S_\alpha}S_\lambda$, $v_{\lambda\mu}=1_{X_\alpha}\times u_{\lambda\mu}$, $w_{\lambda\mu}=1_{Y_\alpha}\times u_{\lambda\mu}$ (for $\alpha\leqslant\lambda\leqslant\mu$), whose projective limits are respectively $X=X_\alpha\times_{S_\alpha}S$, $Y=Y_\alpha\times_{S_\alpha}S$, with the canonical morphisms $v_\lambda=1_{X_\alpha}\times u_\lambda:X\to X_\lambda$ and $w_\lambda=1_{Y_\alpha}\times u_\lambda:Y\to Y_\lambda$.
 For $\alpha\leqslant\lambda\leqslant\mu$, there is a canonical map $e_{\mu\lambda}:\operatorname{Hom}_{S_\lambda}(X_\lambda,Y_\lambda)\to\operatorname{Hom}_{S_\mu}(X_\mu,Y_\mu)$, which to every $S_\lambda$-morphism $f_\lambda:X_\lambda\to Y_\lambda$ associates $f_\mu=f_\lambda\times 1_{S_\mu}:X_\lambda\times_{S_\lambda}S_\mu\to Y_\lambda\times_{S_\lambda}S_\mu$, and it is clear that $(\operatorname{Hom}_{S_\lambda}(X_\lambda,Y_\lambda),e_{\mu\lambda})$ is an \emph{inductive system} of sets.
 Similarly, there is a canonical map $e_\lambda:\operatorname{Hom}_{S_\lambda}(X_\lambda,Y_\lambda)\to\operatorname{Hom}_S(X,Y)$ which to $f_\lambda$ associates $f=f_\lambda\times 1_S:X_\lambda\times_{S_\lambda}S\to Y_\lambda\times_{S_\lambda}S$ and $(e_\lambda)$ is an inductive system of maps; whence, by passing to the inductive limit, a canonical map, functorial in $S_\alpha$, $X_\alpha$, and $Y_\alpha$:
 \[
@@ -1106,7 +1108,7 @@ for $1\leqslant i\leqslant n$; one therefore deduces for every $\nu\geqslant\mu$
 \end{proof}
 
 Let us now pass to the case where $X_\alpha$ is quasi-compact and $Y_\alpha$ locally of finite type over $S_\alpha$.
-Set $Z_\alpha=X_\alpha\times_{S_\alpha}Y_\alpha$ and introduce the projective system corresponding to $Z_\lambda=X_\lambda\times_{S_\lambda}Y_\lambda$ and its limit $Z=X\times_S Y$; the canonical bijections \sref[I]{I.3.3.14} give commutative diagrams
+Set $Z_\alpha=X_\alpha\times_{S_\alpha}Y_\alpha$ and introduce the projective system corresponding to $Z_\lambda=Z_\alpha\times_{S_\alpha}S_\lambda=X_\lambda\times_{S_\lambda}Y_\lambda$ and its limit $Z=Z_\alpha\times_{S_\alpha}S=X\times_S Y$; the canonical bijections \sref[I]{I.3.3.14} give commutative diagrams
 \[
 \xymatrix{
   \operatorname{Hom}_{S_\lambda}(X_\lambda,Y_\lambda) \ar[r]^-{e_{\mu\lambda}} \ar[d]^{\wr} & \operatorname{Hom}_{S_\mu}(X_\mu,Y_\mu) \ar[r]^-{e_\mu} \ar[d]^{\wr} & \operatorname{Hom}_S(X,Y) \ar[d]^{\wr}\\
@@ -1114,7 +1116,7 @@ Set $Z_\alpha=X_\alpha\times_{S_\alpha}Y_\alpha$ and introduce the projective sy
 }
 \]
 and consequently we are reduced to proving that \eqref{IV.8.8.1.1} is injective in the particular case where $S_\alpha=X_\alpha$ (taking into account \sref[I]{I.1.3.4}).
-Moreover, as $X_\alpha$ is quasi-compact, hence a finite union of open affines, we may suppose $X_\alpha$ affine (since $L$ is filtered). Suppose therefore given two $X_\alpha$-morphisms $f'_\alpha:X_\alpha\to Y_\alpha$, $f''_\alpha:X_\alpha\to Y_\alpha$ such that $f'$ and $f''$ are equal $X$-morphisms from $X$ to $Y$; we must prove that $f'_\mu=f''_\mu$ for $\mu\geqslant\alpha$ sufficiently large. As $X_\alpha$ is quasi-compact, so is $f'_\alpha(X_\alpha)\cup f''_\alpha(X_\alpha)$, and as $Y_\alpha$ is locally of finite type over $X_\alpha$, this union is contained in a finite union of affine opens $V_{i\alpha}$ of $Y_\alpha$, of finite type over $X_\alpha$. Set $U'_{i\alpha}=f_\alpha^{'-1}(V_{i\alpha})$, $U''_{i\alpha}=f_\alpha^{''-1}(V_{i\alpha})$, $U_{i\alpha}=U'_{i\alpha}\cap U''_{i\alpha}$, and $U_\alpha=\bigcup_iU_{i\alpha}$. The hypothesis $f'=f''$ implies $v_\alpha^{-1}(U'_{i\alpha})=v_\alpha^{-1}(U''_{i\alpha})$, these two sets being respectively equal to $f^{'-1}(w_\alpha^{-1}(V_{i\alpha}))$ and $f^{''-1}(w_\alpha^{-1}(V_{i\alpha}))$. Since the $V_{i\alpha}$ cover $Y_\alpha$, one has $v_\alpha^{-1}(U_\alpha)=f^{'-1}(Y)=X$. Since $X_\alpha$ is quasi-compact and every open subset of $X_\lambda$ is ind-constructible, it follows from \sref{IV.8.3.4} that there is an index $\mu\geqslant\alpha$ such that the $U_{i\mu}=v_{\alpha\mu}^{-1}(U_{i\alpha})$ form a covering of $X_\mu$. Replacing $\alpha$ by $\mu$, we may therefore suppose that the $U_{i\alpha}$ cover $X_\alpha$; this implies that for every $x\in X_\alpha$, there is an affine open neighbourhood $W(x)$ contained in one of the $U_{i\alpha}$, in other words such that the restrictions of $f'_\alpha$ and $f''_\alpha$ to $W(x)$ map $W(x)$ into the same affine open $V_{i\alpha}$. Since $X_\alpha$ is quasi-compact, it is covered by a finite number of affine opens $W(x_k)$; by virtue of Lemma~\sref{IV.8.8.2.1} and the fact that $L$ is filtered, there exists $\lambda\geqslant\alpha$ such that the restrictions of $f'_\lambda$ and $f''_\lambda$ to each of the opens $v_{\alpha\lambda}^{-1}(W(x_k))$ are equal, whence $f'_\lambda=f''_\lambda$.
+Moreover, as $X_\alpha$ is quasi-compact, hence a finite union of open affines, we may suppose $X_\alpha$ affine (since $L$ is filtered). Suppose therefore given two $X_\alpha$-morphisms $f'_\alpha:X_\alpha\to Y_\alpha$, $f''_\alpha:X_\alpha\to Y_\alpha$ such that $f'$ and $f''$ are equal $X$-morphisms from $X$ to $Y$; we must prove that $f'_\mu=f''_\mu$ for $\mu\geqslant\alpha$ sufficiently large. As $X_\alpha$ is quasi-compact, so is $f'_\alpha(X_\alpha)\cup f''_\alpha(X_\alpha)$, and as $Y_\alpha$ is locally of finite type over $X_\alpha$, this union is contained in a finite union of affine opens $V_{i\alpha}$ of $Y_\alpha$, of finite type over $X_\alpha$. Set $U'_{i\alpha}=f_\alpha^{'-1}(V_{i\alpha})$, $U''_{i\alpha}=f_\alpha^{''-1}(V_{i\alpha})$, $U_{i\alpha}=U'_{i\alpha}\cap U''_{i\alpha}$, and $U_\alpha=\bigcup_iU_{i\alpha}$. The hypothesis $f'=f''$ implies $v_\alpha^{-1}(U'_{i\alpha})=v_\alpha^{-1}(U''_{i\alpha})$, these two sets being respectively equal to $f^{'-1}(w_\alpha^{-1}(V_{i\alpha}))$ and $f^{''-1}(w_\alpha^{-1}(V_{i\alpha}))$. Since $\bigcup_i V_{i\alpha}$ contains $f'_\alpha(X_\alpha)\cup f''_\alpha(X_\alpha)$, one has $v_\alpha^{-1}(U_\alpha)=X$. Since $X_\alpha$ is quasi-compact and every open subset of $X_\lambda$ is ind-constructible, it follows from \sref{IV.8.3.4} that there is an index $\mu\geqslant\alpha$ such that the $U_{i\mu}=v_{\alpha\mu}^{-1}(U_{i\alpha})$ form a covering of $X_\mu$. Replacing $\alpha$ by $\mu$, we may therefore suppose that the $U_{i\alpha}$ cover $X_\alpha$; this implies that for every $x\in X_\alpha$, there is an affine open neighbourhood $W(x)$ contained in one of the $U_{i\alpha}$, in other words such that the restrictions of $f'_\alpha$ and $f''_\alpha$ to $W(x)$ map $W(x)$ into the same affine open $V_{i\alpha}$. Since $X_\alpha$ is quasi-compact, it is covered by a finite number of affine opens $W(x_k)$; by virtue of Lemma~\sref{IV.8.8.2.1} and the fact that $L$ is filtered, there exists $\lambda\geqslant\alpha$ such that the restrictions of $f'_\lambda$ and $f''_\lambda$ to each of the opens $v_{\alpha\lambda}^{-1}(W(x_k))$ are equal, whence $f'_\lambda=f''_\lambda$.
 
 Suppose now $X_\alpha$ quasi-compact and quasi-separated and $Y_\alpha$ locally of finite presentation over $S_\alpha$, and let us prove that \eqref{IV.8.8.1.1} is surjective.
 Suppose therefore given an $X$-morphism $f:X\to Y$.
@@ -1177,7 +1179,7 @@ Let $Z_{rs}$ be the inverse image under $g_r$ of the sub-prescheme induced on th
 \[
  g'_{rs}:Z_{rs}\xrightarrow{\sim}X_r\cap X_s
 \]
-be the restriction of $g_r$. By \sref{IV.8.8.2.5}, there exist $\mu\geqslant\lambda$ and, for every pair $(r,s)$, a quasi-compact open $Z_{rs\mu}$ of $Z_{r\mu}=v_{\lambda\mu}^{-1}(Z_{r\lambda})$ such that $Z_{rs}$ is the inverse image of $Z_{rs\mu}$. Moreover, since $S_\mu$ is quasi-separated and $W_{i(r),\mu}$ is a quasi-compact open of $S_\mu$, each $Z_{rs\mu}$ is of finite presentation over $S_\mu$ \sref[I]{I.1.6.2}.
+be the restriction of $g_r$. By \sref{IV.8.2.11}, there exist $\mu\geqslant\lambda$ and, for every pair $(r,s)$, a quasi-compact open $Z_{rs\mu}$ of $Z_{r\mu}=v_{\lambda\mu}^{-1}(Z_{r\lambda})$ such that $Z_{rs}$ is the inverse image of $Z_{rs\mu}$. Moreover, since $S_\mu$ is quasi-separated and $W_{i(r),\mu}$ is a quasi-compact open of $S_\mu$, each $Z_{rs\mu}$ is of finite presentation over $S_\mu$ \sref[I]{I.1.6.2}.
 
 For every pair $(r,s)$, consider the isomorphism
 \[
@@ -1408,7 +1410,7 @@ If $S_0$ is furthermore supposed quasi-separated, the same conclusion holds when
 \end{theorem}
 
 \begin{proof}
-The case where $\mathbf{P}$ is one of the properties (i) or (v) was not inserted in the statement for the record; in these cases, the theorem follows from what has been proved respectively in \sref{IV.8.8.2.4} and \sref{IV.8.10.4}.
+The case where $\mathbf{P}$ is one of the properties (i) or (v) was included in the statement only as a reminder; in these cases, the theorem follows from what has been proved respectively in \sref{IV.8.8.2.4} and \sref{IV.8.10.4}.
 Furthermore, taking into account \sref[I]{I.5.4.1} and \sref[I]{I.5.3.4}, (v) also results from (iv).
 The case (i\,\emph{bis}) follows immediately from (i), by using \sref[I]{I.5.3.8} and by noting (as we have already used in \sref{IV.8.10.4}) that the diagonal $\Delta_f$ is deduced from $\Delta_{f_\lambda}$ by the base change $S\to S_\lambda$.
 
@@ -1434,7 +1436,7 @@ To prove it in case~(vii), note that the structural morphism $X_\alpha\times_{S_
 noting that $\Delta_{f_\lambda}=\Delta_{f_\alpha}\times1_{S_\lambda}$ and $\Delta_f=\Delta_{f_\alpha}\times1_S$ \sref[I]{I.5.3.4} and \sref[I]{I.3.3.11}.
 
 \emph{Cases} (viii) \emph{and} (ix): As $S=\operatorname{Spec}(A)$ is affine, to say that $f:X\to S$ is affine (resp.\ quasi-affine) means that there exists an integer $r$ and a closed immersion (resp.\ an immersion) $j:X\to\mathbf{V}^r_S=\operatorname{Spec}(A[T_1,\ldots,T_r])$ of $S$-preschemes, since $f$ is of finite type and $S$ quasi-compact \sref[II]{II.5.1.9}.
-As $\mathbf{V}^r_S=\mathbf{V}^r_{S_\lambda}\times_{S_\lambda}S$, and $\mathbf{V}^r_{S_\lambda}$ is an $S_0$-prescheme of finite presentation, it results from \sref{IV.8.8.2},~(i) applied to the $S$-morphism $j$, that there exists $\lambda$ and an $S_\lambda$-morphism $j_\lambda:X_\lambda\to\mathbf{V}^r_{S_\lambda}$ such that $j=j_\lambda\times 1_S$; applying (iv) (resp.\ (ii)) to $j$, one deduces that there exists $\mu\geqslant\lambda$ such that $j_\mu$ is a closed immersion (resp.\ an immersion); hence $f_\mu$ is affine (resp.\ quasi-affine).
+As $\mathbf{V}^r_S=\mathbf{V}^r_{S_0}\times_{S_0}S$, and $\mathbf{V}^r_{S_0}$ is an $S_0$-prescheme of finite presentation, it results from \sref{IV.8.8.2},~(i) applied to the $S$-morphism $j$, that there exists $\lambda$ and an $S_\lambda$-morphism $j_\lambda:X_\lambda\to\mathbf{V}^r_{S_\lambda}$ such that $j=j_\lambda\times 1_S$; applying (iv) (resp.\ (ii)) to $j$, one deduces that there exists $\mu\geqslant\lambda$ such that $j_\mu$ is a closed immersion (resp.\ an immersion); hence $f_\mu$ is affine (resp.\ quasi-affine).
 
 \emph{Case} (x): By hypothesis, $X=\operatorname{Spec}(B)$, where $B$ is an $A$-algebra which is an $A$-module of finite presentation \sref{IV.1.4.7}; it results therefore from \sref{IV.8.5.2},~(ii) that there is $\lambda$ and an $A_\lambda$-module of finite presentation $B_\lambda$ such that the $A$-module $B$ is isomorphic to $B_\lambda\otimes_{A_\lambda}A$.
 The structure of $A$-algebra of $B$ is defined by an $A$-homomorphism $m:B\otimes_A B\to B$; as $B\otimes_A B=(B_\lambda\otimes_{A_\lambda}B_\lambda)\otimes_{A_\lambda} A$, there exists by \sref{IV.8.5.2},~(i) $\mu\geqslant\lambda$ and an $A_\mu$-homomorphism $m_\mu:B_\mu\otimes_{A_\mu}B_\mu\to B_\mu$ such that $m=m_\mu\otimes 1$.
@@ -1466,7 +1468,7 @@ X'_0 \arrow[r,"j_0"] \arrow[d,"g_0"'] & P_0 \arrow[d,"p_0"] \\
 X_0 \arrow[r,"f_0"'] & Y_0
 \end{tikzcd}
 \]
-is commutative, $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. The assertions follow from the invariance of these properties under base change \sref[II]{II.5.5.5},~(iii), \sref[I]{I.3.5.2}, and \sref{IV.4.3.2}.
+is commutative, $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. The assertions follow from the invariance of these properties under base change \sref[II]{II.5.5.5},~(iii), \sref[I]{I.3.5.2}, and \sref[I]{I.4.3.2}.
 \end{proof}
 
 \begin{proof}[Continuation of the proof of \sref{IV.8.10.5}]
@@ -1559,7 +1561,7 @@ The following properties are equivalent:
 \end{proposition}
 
 It is clear that \emph{a)} implies \emph{b)}.
-To see that \emph{b)} implies \emph{c)}, let us note \sref[I]{I.5.3.8} that for all $y\in Y$, the morphism $f^{-1}(y)\to\operatorname{Spec}(k(y))$ deduced from $f$ by extension of the base is a monomorphism, hence injective, and consequently $f^{-1}(y)$ is empty or reduced to a point, and in every case affine.
+To see that \emph{b)} implies \emph{c)}, let us note \sref[I]{I.3.3.12} that for all $y\in Y$, the morphism $f^{-1}(y)\to\operatorname{Spec}(k(y))$ deduced from $f$ by extension of the base is a monomorphism, hence injective, and consequently $f^{-1}(y)$ is empty or reduced to a point, and in every case affine.
 Furthermore, if $A$ is the ring of $f^{-1}(y)$, the canonical homomorphism $A\otimes_k A\to A$ is bijective \sref[I]{I.5.3.8}.
 This evidently implies that $A=k$, for otherwise there would exist an element $a\in A$ not in $k$ and the images of $a\otimes 1$ and of $1\otimes a$ in $A$ would both be equal to $a$, whereas $a\otimes 1\neq1\otimes a$ since $1$ and $a$ form a free system over $k$.
 
@@ -1568,7 +1570,7 @@ It follows first from \sref{IV.8.11.1} that $f$ is a \emph{finite} morphism, so 
 It suffices therefore to prove that the canonical homomorphism $\sh{O}_Y\to\sh{A}$ is \emph{surjective} \sref[II]{II.1.4.10}, or equivalently that for all $y\in Y$, the homomorphism $\sh{O}_y\to\sh{A}_y$ is surjective.
 But by hypothesis
 \oldpage[IV-3]{43}
-$f^{-1}(y)=\operatorname{Spec}(\sh{A}_y/\mathfrak{m}_y\sh{A}_y)$ \sref[II]{II.1.5.5} is such that the corresponding homomorphism $k(y)=\sh{O}_y/\mathfrak{m}_y\to\sh{A}_y/\mathfrak{m}_y\sh{A}_y$ is bijective; as $\sh{A}_y$ is an $\sh{O}_y$-module of finite type, the lemma of Nakayama shows that $\sh{O}_y\to\sh{A}_y$ is surjective, which completes the proof.
+$f^{-1}(y)=\operatorname{Spec}(\sh{A}_y/\mathfrak{m}_y\sh{A}_y)$ \sref[II]{II.1.5.5} is such that the corresponding homomorphism $k(y)=\sh{O}_y/\mathfrak{m}_y\to\sh{A}_y/\mathfrak{m}_y\sh{A}_y$ is surjective; as $\sh{A}_y$ is an $\sh{O}_y$-module of finite type, the lemma of Nakayama shows that $\sh{O}_y\to\sh{A}_y$ is surjective, which completes the proof.
 
 \begin{remark}[8.11.5.1]
 \label{IV.8.11.5.1}
@@ -1599,7 +1601,7 @@ Then, for the closed image of $X$ by $g$ \sref[I]{I.9.5.3} to equal $Z$, it is n
 \end{lemma}
 
 \begin{proof}
-The hypothesis implies that $f_*(\sh{O}_X)$ is an $\sh{O}_Y$-Algebra quasi-coherent \sref{IV.1.7.5}; furthermore, as the canonical morphism $h:Z\to Y$ is affine, hence quasi-compact and quasi-separated \sref{IV.1.2.2} and \sref{IV.1.1.2}, $g_*(\sh{O}_X)$ is an $\sh{O}_Z$-Algebra quasi-coherent \sref{IV.1.7.5}.
+The hypothesis implies that $f_*(\sh{O}_X)$ is an $\sh{O}_Y$-Algebra quasi-coherent \sref{IV.1.7.5}; furthermore, as the canonical morphism $h:Z\to Y$ is affine, hence quasi-compact and separated, $g$ is a quasi-compact and quasi-separated morphism \sref{IV.1.2.2} and \sref{IV.1.1.2}, hence $g_*(\sh{O}_X)$ is an $\sh{O}_Z$-Algebra quasi-coherent \sref{IV.1.7.5}.
 This being so, saying that the closed image of $X$ by $g$ equals $Z$ signifies \sref[I]{I.9.5.2} that the canonical homomorphism $\theta:\sh{O}_Z\to g_*(\sh{O}_X)$ is injective.
 But one has $h_*(\sh{O}_Z)=\sh{C}$ by definition of $Z$ \sref[II]{II.1.3.1}, and $h_*(g_*(\sh{O}_X))=f_*(\sh{O}_X)$.
 As $Z$ is affine over $Y$, it amounts to the same to say that the homomorphism $\theta:\sh{O}_Z\to g_*(\sh{O}_X)$ is injective or that the corresponding homomorphism $\varphi=h_*(\theta):\sh{C}\to f_*(\sh{O}_X)$ is injective \sref[I]{I.1.3.9}.
@@ -1625,7 +1627,7 @@ It suffices to apply \sref[II]{II.3.8.4} by replacing $\sh{L}$ by $\sh{O}_X$ and
 \begin{proposition}[8.12.3]
 \label{IV.8.12.3}
 Let $Y$ be a prescheme quasi-compact and quasi-separated, $f:X\to Y$ a separated morphism of finite type.
-Let $\sh{B}=f_*(\sh{O}_X)$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[I]{I.9.2.2}); let $\sh{C}$ be the integral closure of $\sh{O}_Y$ in $\sh{B}$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[II]{II.6.3.4}); set $Z=\operatorname{Spec}(\sh{C})$, and let $g:X\to Z$ be the $Y$-morphism corresponding to the injection $\sh{C}\to\sh{B}=f_*(\sh{O}_X)$, and for all $\lambda$, let $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\sh{C}_\lambda)$ be the $Y$-morphism corresponding to the injection $\sh{C}_\lambda\to\sh{B}=f_*(\sh{O}_X)$.
+Let $\sh{B}=f_*(\sh{O}_X)$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[I]{I.9.2.2}; let $\sh{C}$ be the integral closure of $\sh{O}_Y$ in $\sh{B}$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[II]{II.6.3.4}; set $Z=\operatorname{Spec}(\sh{C})$, and let $g:X\to Z$ be the $Y$-morphism corresponding to the canonical injection $\varphi:\sh{C}\to\sh{B}=f_*(\sh{O}_X)$ \sref[II]{II.1.2.7}. Let $(\sh{C}_\lambda)$ be the filtered increasing family of quasi-coherent sub-$\sh{O}_Y$-Algebras of finite type of $\sh{C}$ (whose union is $\sh{C}$ \sref[I]{I.9.6.6} and \sref{IV.1.7.9}), and for all $\lambda$, let $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\sh{C}_\lambda)$ be the $Y$-morphism corresponding to the injection $\sh{C}_\lambda\to\sh{B}=f_*(\sh{O}_X)$.
 Then the following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
   \item[\emph{a)}] There exists a factorisation of $f$ as
@@ -1646,7 +1648,7 @@ The fact that \emph{a)} implies \emph{a$'$)} follows also from \sref{IV.8.12.1},
 The equivalence of \emph{b)} and \emph{c)} follows from \sref{IV.8.12.2} as well as the fact that $g_\lambda$ is then an immersion for $\lambda$ large enough.
 It is clear that \emph{c)} implies \emph{a)}, since $Z_\lambda$ is finite over $Y$ \sref[II]{II.6.3.4} and \sref[II]{II.6.1.2}.
 Let us finally show that \emph{a)} implies \emph{c)}.
-One has seen above that $Y'$ is the closed image of $X$ by $f'$, and it then follows from \sref{IV.8.12.1} that if one sets $\sh{B}'=u_*(\sh{O}_{Y'})$, the homomorphism $\varphi':\sh{B}'\to\sh{B}=f_*(\sh{O}_X)$ is \emph{injective}.
+One has seen above that one can suppose that $Y'$ is the closed image of $X$ by $f'$, and it then follows from \sref{IV.8.12.1} that if one sets $\sh{B}'=u_*(\sh{O}_{Y'})$, so that $Y'$ identifies with $\operatorname{Spec}(\sh{B}')$, the homomorphism $\varphi':\sh{B}'\to\sh{B}=f_*(\sh{O}_X)$ is \emph{injective}.
 But as by hypothesis $\sh{B}'$ is a finite $\sh{O}_Y$-algebra, it identifies by definition of $\sh{C}$ with one of the $\sh{O}_Y$-subalgebras $\sh{C}_\lambda$, which proves \emph{c)}.
 
 We will say that a morphism $f:X\to Y$, where $Y$ is quasi-compact and quasi-separated, is \emph{pseudo-finite}, if it is of finite type and satisfies condition \emph{a)} of \sref{IV.8.12.3} (in which case it is necessarily separated).
@@ -1672,7 +1674,7 @@ Then, for $f$ to be pseudo-finite, it is necessary and sufficient that, for all 
 To see that it is sufficient, observe (with the notation of \sref{IV.8.12.3}) that if one sets $X_\lambda=f^{-1}(U_\lambda)$, then $\sh{B}|U_\lambda=(f_\lambda)_*(\sh{O}_{X_\lambda})$, and $\sh{C}|U_\lambda$ is the integral closure of $\sh{O}_{U_\lambda}$ in $\sh{B}|U_\lambda$. Consequently, if $h:Z\to Y$ is the canonical morphism, $Z_\lambda=\operatorname{Spec}(\sh{C}|U_\lambda)$ identifies with $h^{-1}(U_\lambda)$. For $g:X\to Z$ to be an immersion, it is necessary and sufficient that for every $\lambda$ its restriction $g_\lambda:f^{-1}(U_\lambda)\to h^{-1}(U_\lambda)$ be an immersion \sref[I]{I.4.2.4}. The conclusion now follows from \sref{IV.8.12.3}.
 
 (iii) It suffices, in virtue of (ii), to prove that for all $y\in Y$ there exists a neighbourhood $U$ of $y$ such that the restriction $f^{-1}(U)\to U$ of $f$ be pseudo-finite.
-Designate by $(U_\lambda)$ the projective filtering system of affine open neighbourhoods of $y$, and apply the method of \sref{IV.8.1.2},~$a$)).
+Designate by $(U_\lambda)$ the decreasing projective filtering system of affine open neighbourhoods of $y$, and apply the method of \sref{IV.8.1.2},~$a$)).
 Since $Y$ is Noetherian, the restrictions $f_\lambda:f^{-1}(U_\lambda)\to U_\lambda$ of $f$ are of finite presentation, and the same is true of $f_y$.
 By hypothesis $f_y$ factorises as $X_y\xrightarrow{g_y}Z_y\xrightarrow{u_y}\operatorname{Spec}(\sh{O}_y)$, where $u_y$ is finite and $g_y$ is an immersion.
 As $\sh{O}_y$ is Noetherian, so is $Z_y$; and since $Z_y$ is of finite presentation over $\operatorname{Spec}(\sh{O}_y)$, there exist $\lambda$ and a morphism of finite presentation $u_\lambda:Z_\lambda\to U_\lambda$ such that $Z_y$ identifies with $Z_\lambda\times_{U_\lambda}\operatorname{Spec}(\sh{O}_y)$ and $u_y$ with $u_\lambda\times 1$ \sref{IV.8.8.2},~(ii)). Moreover, there exists a morphism $g_\lambda:X_\lambda\to Z_\lambda$ such that $g_y=g_\lambda\times 1$ and $f_\lambda=u_\lambda\circ g_\lambda$ \sref{IV.8.8.2},~(i)). One may further take $\lambda$ so that $g_\lambda$ is an immersion and $u_\lambda$ a finite morphism \sref{IV.8.10.5},~(ii) and (x)), which proves that $f_\lambda$ is pseudo-finite.
