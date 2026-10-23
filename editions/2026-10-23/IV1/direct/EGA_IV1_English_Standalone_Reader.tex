@@ -14599,17 +14599,48 @@ Then, for every family $(z_\alpha)_{\alpha\in I}$ of elements of $E$ such that $
 \end{theorem}
 
 \begin{proof}
-\oldpage[0\textsubscript{IV-1}]{160}
-Consider first the case where $E$ is \emph{discrete}, hence $\mathfrak{R}$ is nilpotent; moreover, the reasoning of \sref{0.19.4.3} allows one to suppose $\mathfrak{R}^2=0$ and by consequence $\mathfrak{R}^p=0$.
-Finally, by considering the inverse image of the extension $E$ of $C$ by $\mathfrak{R}$, one can reduce to the case where $C=B$ and $v$ is the identity \sref{0.19.4.4}.
-As the ring homomorphism $\mathrm{F}_E:E\to E^{(p)}$ annihilates $\mathfrak{R}$, it factors as $E\xrightarrow{q}B\xrightarrow{\mathrm{F}'}E^{(p)}$, and $\mathrm{F}'$, considered as a homomorphism of $B$ into $E^{(p)}$, is an $A$-\emph{homomorphism} defining the structure of $A$-algebra on $E^{(p)}$ with the help of the composite homomorphism $A\xrightarrow{r} E\xrightarrow{\mathrm{F}_E} E^{(p)}$, where $r:A\to E$ is the structural homomorphism of the $A$-algebra $E$; moreover $r:A^{(p)}\to E^{(p)}$ is also an $A$-homomorphism.
-There is therefore a unique $A$-homomorphism $f:A^{(p)}\otimes_A B\to E^{(p)}$ such that the composites of $f$ with the canonical homomorphisms $A^{(p)}\to A^{(p)}\otimes_A B$ and $B\to A^{(p)}\otimes_A B$ are respectively $r$ and $\mathrm{F}'$.
-But, by hypothesis, one can identify $A^{(p)}\otimes_A B$ with $A[B^p]$, the canonical homomorphisms $A^{(p)}\to A^{(p)}\otimes_A B$ and $B\to A^{(p)}\otimes_A B$ becoming identified respectively with $u$ and $\mathrm{F}_B$.
-One can therefore now consider $E$ as an $A[B^p]$-algebra by means of the homomorphism $f$, and, by construction, one has $f(q(z)^p)=z^p$ for every $z\in E$; one is therefore in the conditions of application of \sref{0.21.2.1}, whence the theorem in this case.
+Consider first the case where $E$ is discrete, hence $\mathfrak{R}$ is nilpotent.
+One can restrict to the case where $v$ is surjective; moreover, the reasoning of
+\sref{0.19.4.3} allows one to suppose $\mathfrak{R}^2=0$ and consequently
+$\mathfrak{R}^p=0$. Finally, by considering the inverse image under $v$ of the
+extension $E$ of $C$ by $\mathfrak{R}$, one can restrict to the case where $C=B$
+and $v$ is the identity \sref{0.19.4.4}. As the ring homomorphism
+$\mathrm{F}_E:z\rightsquigarrow z^p$ vanishes on $\mathfrak{R}$, it factors as
+$E\xrightarrow q B\xrightarrow{\mathrm{F}'}E$, and $\mathrm{F}'$, considered as a
+homomorphism from $B$ to $E^{(p)}$, is an $A$-\emph{homomorphism} by definition
+of the $A$-algebra structure on $E^{(p)}$ using the composite homomorphism
+$A\xrightarrow r E\xrightarrow{\mathrm{F}_E}E^{(p)}$, where $r:A\to E$ is the
+structural homomorphism of the $A$-algebra $E$; moreover,
+$r:A^{(p)}\to E^{(p)}$ is also an $A$-homomorphism. There is therefore a unique
+$A$-homomorphism $f:A^{(p)}\otimes_A B\to E^{(p)}$ such that the composites of $f$
+with the canonical homomorphisms $A^{(p)}\to A^{(p)}\otimes_A B$ and
+$B\to A^{(p)}\otimes_A B$ are respectively $r$ and $\mathrm{F}'$. Now, by hypothesis,
+one can identify $A^{(p)}\otimes_A B$ with $A[B^p]$, the canonical homomorphisms
+$A^{(p)}\to A^{(p)}\otimes_A B$ and $B\to A^{(p)}\otimes_A B$ being identified
+respectively with $u$ and $\mathrm{F}_B$. One can therefore now consider $E$
+as an $A[B^p]$-algebra by means of the homomorphism $f$, and, by construction,
+one has $f(q(z)^p)=z^p$ for every $z\in E$; the conditions for applying
+\sref{0.21.2.1} are therefore satisfied, whence the theorem in this case.
 
-For the general case, consider a fundamental system $(\mathfrak{J}_\lambda)$ of open ideals, and let $E_\lambda=E/\mathfrak{J}_\lambda$, $\mathfrak{R}_\lambda=(\mathfrak{R}+\mathfrak{J}_\lambda)/\mathfrak{J}_\lambda$, $C_\lambda=E_\lambda/\mathfrak{R}_\lambda$; as $E$ is admissible, one has $E=\varprojlim E_\lambda$ ($\mathbf{0_I}$, 7.2.2).
-For every pair $(\alpha,\lambda)$, denote by $z_{\alpha\lambda}$ the canonical image of $z_\alpha$ in $E_\lambda$; the first part of the proof shows the existence and uniqueness of an $A$-homomorphism $w_\lambda:B\to E_\lambda$ such that $p_\lambda\circ v=q_\lambda\circ w_\lambda$ and $w_\lambda(x_\alpha)=z_{\alpha\lambda}$ for all $\alpha$.
-The uniqueness of the $w_\lambda$ shows immediately that $(w_\lambda)$ is a projective system of homomorphisms, and $w=\varprojlim w_\lambda$ answers the question.
+To pass to the general case, consider a fundamental system
+$(\mathfrak{J}_\lambda)$ of open ideals of $E$, and put
+$E_\lambda=E/\mathfrak{J}_\lambda$,
+$\mathfrak{R}_\lambda=(\mathfrak{R}+\mathfrak{J}_\lambda)/\mathfrak{J}_\lambda$,
+$C_\lambda=E_\lambda/\mathfrak{R}_\lambda=E/(\mathfrak{R}+\mathfrak{J}_\lambda)$;
+as $E$ is admissible, one has $E=\varprojlim E_\lambda$ ($\mathbf{0_I}$, 7.2.2).
+For every pair $(\alpha,\lambda)$, denote by $z_{\alpha\lambda}$ the canonical
+image of $z_\alpha$ in $E_\lambda$, by $p_\lambda:C\to C_\lambda$ the canonical
+homomorphism,
+\oldpage[0\textsubscript{IV-1}]{160}
+and by $q_\lambda$ the canonical homomorphism $E_\lambda\to C_\lambda$.
+Since by hypothesis $\mathfrak{R}_\lambda$ is nilpotent in $E_\lambda$, the first
+part of the proof establishes the existence and uniqueness of an
+$A$-homomorphism $w_\lambda:B\to E_\lambda$ such that
+$p_\lambda\circ v=q_\lambda\circ w_\lambda$ and
+$w_\lambda(x_\alpha)=z_{\alpha\lambda}$ for every $\alpha$.
+The uniqueness of the $w_\lambda$ then immediately shows that $(w_\lambda)$ is a
+projective system of homomorphisms, and $w=\varprojlim w_\lambda$ answers the
+question.
 \end{proof}
 
 \begin{remark}[21.2.8]
