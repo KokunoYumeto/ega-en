@@ -1,0 +1,56 @@
+% Standalone-only routing for references whose targets are outside EGA IV-3.
+% Mathematical source files remain unchanged.  All fallback destinations land
+% on this notice; the cumulative reader retains statement-level routing.
+\clearpage
+\phantomsection
+\section*{Cross-volume references}
+
+This part-only reader preserves the citation text and link affordances of the
+maintained edition.  References whose source statements are not reproduced in
+Part Three resolve to this notice.  Statement-level cross-volume navigation is
+available in the cumulative EGA reader.
+
+\phantomsection
+\label{0.2.1.8}
+\label{0.2.2.2}
+\label{0.6.3.4}
+\label{0.7.3.5}
+\label{0.9.2.5}
+
+\makeatletter
+\newcommand{\EGAIVThreeRegisterExternalTargets}[1]{%
+  \@for\EGAIVThreeExternalTarget:=#1\do{%
+    \edef\EGAIVThreeResolvedTarget{\EGAIVThreeExternalTarget}%
+    \expandafter\sgaStableTarget\expandafter{\EGAIVThreeResolvedTarget}%
+  }%
+}
+\makeatother
+
+\EGAIVThreeRegisterExternalTargets{%
+ega4.c04.cor.1-10-2,ega4.c04.cor.1-10-4,ega4.c04.cor.1-2-3,ega4.c04.cor.1-2-8,ega4.c04.cor.1-4-5,ega4.c04.cor.1-8-6,ega4.c04.cor.1-9-9,ega4.c04.cor.17-4-2,%
+ega4.c04.cor.2-1-10,ega4.c04.cor.2-1-6,ega4.c04.cor.2-2-11,ega4.c04.cor.2-2-13,ega4.c04.cor.2-2-8,ega4.c04.cor.2-3-11,ega4.c04.cor.2-3-12,ega4.c04.cor.2-3-14,%
+ega4.c04.cor.2-3-5,ega4.c04.cor.2-3-8,ega4.c04.cor.2-4-10,ega4.c04.cor.2-7-2,ega4.c04.cor.3-1-4,ega4.c04.cor.4-1-2-1,ega4.c04.cor.4-1-4,ega4.c04.cor.4-2-2,%
+ega4.c04.cor.4-2-6,ega4.c04.cor.4-2-8,ega4.c04.cor.4-5-11,ega4.c04.cor.4-5-13-1,ega4.c04.cor.4-5-8,ega4.c04.cor.4-6-3,ega4.c04.cor.4-6-8,ega4.c04.cor.4-7-9,%
+ega4.c04.cor.5-1-11,ega4.c04.cor.5-1-5,ega4.c04.cor.5-1-8,ega4.c04.cor.5-12-4,ega4.c04.cor.5-13-2,ega4.c04.cor.5-2-2,ega4.c04.cor.5-2-3,ega4.c04.cor.5-4-2,%
+ega4.c04.cor.5-6-7,ega4.c04.cor.6-1-2,ega4.c04.cor.6-1-4,ega4.c04.cor.6-15-9,ega4.c04.cor.6-3-3,ega4.c04.cor.6-5-4,ega4.c04.cor.6-7-8,ega4.c04.cor.6-8-7,%
+ega4.c04.cor.6-9-3,ega4.c04.cor.7-1-13,ega4.c04.cor.7-2-9,ega4.c04.def.1-6-1,ega4.c04.def.1-9-4,ega4.c04.def.17-3-7,ega4.c04.def.2-4-2,ega4.c04.def.3-2-2,%
+ega4.c04.def.3-2-5,ega4.c04.def.4-1-1,ega4.c04.def.4-5-2,ega4.c04.def.4-6-17,ega4.c04.def.4-6-2,ega4.c04.def.4-6-22,ega4.c04.def.4-6-9,ega4.c04.def.4-7-12,%
+ega4.c04.def.4-7-4,ega4.c04.def.4-7-5,ega4.c04.def.5-6-2,ega4.c04.def.5-7-1,ega4.c04.def.5-7-2,ega4.c04.def.6-7-6,ega4.c04.def.6-8-1,ega4.c04.eq.3-4-1-1,%
+ega4.c04.eq.4-1-1-3,ega4.c04.eq.5-1-12-2,ega4.c04.eq.5-1-2-1,ega4.c04.eq.5-6-5-2,ega4.c04.eq.5-6-5-3,ega4.c04.eq.6-11-2-1,ega4.c04.item.6-15-11,ega4.c04.item.6-5-5,%
+ega4.c04.lem.1-8-4-1,ega4.c04.lem.1-8-7-1,ega4.c04.lem.2-3-1,ega4.c04.lem.3-4-1-4,ega4.c04.lem.3-4-6-1,ega4.c04.lem.5-1-10-1,ega4.c04.lem.5-10-8-1,ega4.c04.lem.5-11-1-1,%
+ega4.c04.lem.5-13-7-1,ega4.c04.lem.6-11-1,ega4.c04.lem.6-12-4-1,ega4.c04.lem.6-15-8,ega4.c04.lem.6-9-2,ega4.c04.prop.1-1-2,ega4.c04.prop.1-10-3,ega4.c04.prop.1-2-2,%
+ega4.c04.prop.1-2-4,ega4.c04.prop.1-2-6,ega4.c04.prop.1-2-7,ega4.c04.prop.1-3-4,ega4.c04.prop.1-4-3,ega4.c04.prop.1-4-7,ega4.c04.prop.1-5-4,ega4.c04.prop.1-6-2,%
+ega4.c04.prop.1-8-2,ega4.c04.prop.1-8-7,ega4.c04.prop.1-9-10,ega4.c04.prop.1-9-11,ega4.c04.prop.1-9-5,ega4.c04.prop.16-4-11,ega4.c04.prop.17-6-3,ega4.c04.prop.2-1-13,%
+ega4.c04.prop.2-1-2,ega4.c04.prop.2-1-4,ega4.c04.prop.2-1-8,ega4.c04.prop.2-2-7,ega4.c04.prop.2-3-4,ega4.c04.prop.2-4-3,ega4.c04.prop.2-4-4,ega4.c04.prop.2-4-5,%
+ega4.c04.prop.2-7-1,ega4.c04.prop.3-1-3,ega4.c04.prop.3-1-6,ega4.c04.prop.3-1-7,ega4.c04.prop.3-2-1,ega4.c04.prop.3-2-6,ega4.c04.prop.3-3-4,ega4.c04.prop.3-4-3,%
+ega4.c04.prop.3-4-4,ega4.c04.prop.3-4-5,ega4.c04.prop.3-4-6,ega4.c04.prop.4-2-7,ega4.c04.prop.4-3-2,ega4.c04.prop.4-5-1,ega4.c04.prop.4-5-13,ega4.c04.prop.4-5-6,%
+ega4.c04.prop.4-5-9,ega4.c04.prop.4-6-1,ega4.c04.prop.4-6-10,ega4.c04.prop.4-6-5,ega4.c04.prop.4-6-6,ega4.c04.prop.4-7-10,ega4.c04.prop.4-7-11,ega4.c04.prop.4-7-13,%
+ega4.c04.prop.4-7-3,ega4.c04.prop.4-7-8,ega4.c04.prop.5-1-10,ega4.c04.prop.5-1-2,ega4.c04.prop.5-1-4,ega4.c04.prop.5-10-2,ega4.c04.prop.5-12-2,ega4.c04.prop.5-12-5,%
+ega4.c04.prop.5-13-1,ega4.c04.prop.5-13-3,ega4.c04.prop.5-2-1,ega4.c04.prop.5-5-3,ega4.c04.prop.5-6-1,ega4.c04.prop.5-6-10,ega4.c04.prop.5-6-4,ega4.c04.prop.5-6-5,%
+ega4.c04.prop.5-7-4,ega4.c04.prop.6-11-2,ega4.c04.prop.6-11-5,ega4.c04.prop.6-14-4,ega4.c04.prop.6-15-5,ega4.c04.prop.6-2-1,ega4.c04.prop.6-2-3,ega4.c04.prop.6-4-1,%
+ega4.c04.prop.6-7-1,ega4.c04.rem.4-1-3,ega4.c04.rem.5-12-3,ega4.c04.rem.5-12-6,ega4.c04.sec.5-1-1-5,ega4.c04.sec.5-2-5,ega4.c04.sec.5-5,ega4.c04.sec.5-6,%
+ega4.c04.sec.5-6-3,ega4.c04.sec.5-7-3,ega4.c04.statement.1-3-8,ega4.c04.statement.1-7-19,ega4.c04.statement.1-7-4,ega4.c04.statement.1-7-5,ega4.c04.statement.1-7-9,ega4.c04.statement.1-8-1,%
+ega4.c04.statement.1-9-2-1,ega4.c04.statement.1-9-6,ega4.c04.statement.2-3-3,ega4.c04.statement.4-4-1,ega4.c04.statement.5-1-12,ega4.c04.statement.6-15-1,ega4.c04.statement.6-15-2,ega4.c04.statement.7-8-3,%
+ega4.c04.statement.7-8-5,ega4.c04.subsec.3-4.key-iv-3-4,ega4.c04.subsec.4-5.key-iv-4-5,ega4.c04.subsec.4-6.key-iv-4-6,ega4.c04.subsec.4-7,ega4.c04.subsec.4-8,ega4.c04.subsec.5-12.key-iv-5-12,ega4.c04.thm.1-10-1,%
+ega4.c04.thm.1-8-4,ega4.c04.thm.2-3-10,ega4.c04.thm.2-4-6,ega4.c04.thm.4-1-2,ega4.c04.thm.5-10-7,ega4.c04.thm.5-8-6,ega4.c04.thm.6-9-1%
+}
