@@ -1,16 +1,9 @@
-# Rights, attribution, and caveats
+# Rights and attribution
 
-The original EGA publications by Alexander Grothendieck and Jean Dieudonné are
-reproduced and studied from the public NUMDAM authority. This release makes no
-exclusive claim over the original works.
+The original *Éléments de géométrie algébrique* is by Alexandre Grothendieck and Jean Dieudonné. This unofficial English translation and its typesetting are not endorsed by the authors, IHÉS or NUMDAM.
 
-The Zenodo license field is left unspecified because this en-language
-release bundles original scholarship, modern TeX typesetting, translation or
-editorial work, and machine-generated provenance with distinct histories. The
-files are provided openly for reading, verification, correction, and scholarly
-reuse. Applicable attribution and source authority must be preserved.
+The project licence applies only to material whose rights are held by this project. Original works and retained third-party material remain subject to their respective rights and notices. No additional rights over those works are granted by this repository.
 
-No human-review or institutional-certification claim is made. This is unofficial
-AI-assisted typesetting and translation work and is not endorsed by the authors,
-IHES, NUMDAM, or an upstream Stacks maintainer. Open items are disclosed in the
-evidence package and may be corrected in later versions of the same concept DOI.
+Source preparation and assembly include OpenAI Codex, GPT-6 Astra, Ultra; the III-1 sources also include GPT-5.6 Sol, Ultra. These credits concern the recorded source work and do not attribute the entire inherited translation to either model.
+
+The cumulative reader, separate editions and their editable sources are linked from the [edition guide](README.md). The III-1 diplomatic translation and corrected edition have distinct source projects.
