@@ -4,6 +4,8 @@
 
 Alexandre Grothendieck and Jean Dieudonné’s *Éléments de géométrie algébrique* in English. The 1,411-page cumulative reader brings together the preliminaries of EGA 0 and Chapters I–IV: the language of schemes, the global study of morphisms, the cohomology of coherent sheaves, and the local study of schemes and morphisms.
 
+The English text incorporates substantial work from the human community translation [ryankeleti/ega](https://github.com/ryankeleti/ega), whose named contributors are **Mateo Carmona, Tim Holzschuh, Tim Hosgood, Ryan Keleti, Thiago Solovera & Nery, and Wayne Yang**. Their translation and TeX contributions are distinct from this edition's subsequent AI-assisted additions, corrections and assembly. See [translation sources, contribution scope and rights](ATTRIBUTION.md).
+
 Seven standalone readers accompany the cumulative edition. EGA III, Part One has separate corrected and diplomatic editions; the diplomatic translation preserves the printed mathematical readings. Each reader has an assembled LaTeX document and an editable source project containing its modular text, formulas, diagrams, styles, bibliography and build inputs.
 
 | Edition | Reader | Assembled LaTeX | Source project |
