@@ -18,6 +18,16 @@ The inherited English wording includes the following parts, with subsequent edit
 
 The upstream project is an incomplete translation of the full EGA corpus. The cumulative edition also contains later translation work, additions, mathematical corrections, reference repairs and typesetting. The upstream contributors are credited for their own work; they are not represented as authors or reviewers of those later additions. Reused translation remains their contribution even where it has been edited.
 
-Subsequent source preparation, correction and assembly include AI-assisted work by OpenAI Codex, GPT-6 Astra, Ultra; the EGA III-1 sources also include work by GPT-5.6 Sol, Ultra. These credits concern those contributions, not authorship of the inherited human translation. No endorsement by the upstream contributors, the original authors, IHÉS or NUMDAM is implied.
+The additional translation is AI-translated. Subsequent corrections, editing, typesetting and assembly are AI-produced. Recorded work includes OpenAI Codex, GPT-6 Astra, Ultra; the EGA III-1 sources also include GPT-5.6 Sol, Ultra. The publisher did not translate the text. The inherited human translation remains the work of its credited contributors; it is not attributed to the AI models.
 
-The cited upstream snapshot has no repository-wide licence notice covering its translation text. Its `scripts/README.md` identifies separate Stacks Project scripts and links their licence; that notice does not designate the EGA translation as open-licensed. This repository's limited CC BY 4.0 grant applies only to rights held by this project and does not relicense the community translation or the French original. Attribution records authorship and provenance; it does not assert permission from their rights holders.
+No endorsement by the upstream contributors, the original authors, IHÉS or NUMDAM is implied.
+
+The cited upstream snapshot has no repository-wide licence notice covering its translation text. Its `scripts/README.md` identifies separate Stacks Project scripts and links their licence; that notice does not designate the EGA translation as open-licensed. Attribution records authorship and provenance; it does not establish permission from rights holders.
+
+## Rights and availability
+
+Rights in the original works and in any protected contributions to these derivative translations and transcriptions remain with their respective rights holders. This project does not dedicate those works or contributions to the public domain or grant a licence over them. Existing third-party notices and any permissions already granted remain applicable.
+
+These editions are made available free of charge for non-commercial, purely educational purposes, on the presumption that the respective rights holders would not object to these translations and transcriptions being freely available alongside the French originals on [NUMDAM](https://www.numdam.org/journals/PMIHES/). This presumption is not a statement that permission has been obtained; free access to the originals does not itself grant permission to translate, adapt or republish them.
+
+If you hold rights in any material presented here and object to its availability, please [open a GitHub issue](https://github.com/KokunoYumeto/ega-en/issues). The publisher will take down the affected material at the rights holder's request.
