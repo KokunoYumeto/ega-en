@@ -1,0 +1,120 @@
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\input{preamble}
+\input{ega-heading-anchor}
+\input{EGA4_reference_v2_registry}
+\input{EGA4_reference_v2_links}
+\setlength{\emergencystretch}{3em}
+
+\hypersetup{
+  pdftitle={Elements of Algebraic Geometry, EGA 0--IV -- Cumulative English Reader},
+  pdfauthor={Alexandre Grothendieck and Jean Dieudonne; English translation},
+  pdfsubject={Linked English reader of EGA 0, I, II, III, and IV}
+}
+
+\newcommand{\EGAResetVolumeCounters}{%
+  \setcounter{section}{0}%
+  \setcounter{subsection}{0}%
+  \setcounter{equation}{0}%
+  \setcounter{figure}{0}%
+  \setcounter{table}{0}%
+  \setcounter{footnote}{0}%
+}
+
+\newcommand{\EGAVolumeTitlePage}[3]{%
+  \clearpage
+  \EGAResetVolumeCounters
+  \renewcommand*{\theHtable}{#1.\arabic{table}}%
+  \phantomsection
+  \label{section:#1}%
+  \pdfbookmark[0]{#2: #3}{volume.#1}%
+  \addcontentsline{toc}{part}{#2: #3}%
+  \thispagestyle{empty}%
+  \vspace*{\fill}%
+  \begin{center}
+    {\Huge\bfseries #2\par}
+    \vspace{1.5em}
+    {\LARGE #3\par}
+    \vspace{2em}
+    {\large Alexandre Grothendieck and Jean Dieudonn\'e\par}
+    \vspace{1em}
+    {\large English reader\par}
+  \end{center}
+  \vspace*{\fill}%
+  \clearpage
+}
+
+\begin{document}
+
+\title{Elements of Algebraic Geometry\\EGA 0--IV}
+\author{Alexandre Grothendieck and Jean Dieudonn\'e}
+\date{}
+\maketitle
+
+% BEGIN SCHOLARLY TRANSLATION ATTRIBUTION
+
+\begingroup
+\small
+\begin{quote}
+\textbf{Translation sources and contributors.}
+The original work is by Alexandre Grothendieck and Jean Dieudonn\'e.
+The EGA English edition series draws on the human community translation
+\texttt{github.com/ryankeleti/ega}, source version \texttt{3d7afe28}.
+Its named contributors are Mateo Carmona, Tim Holzschuh, Tim Hosgood,
+Ryan Keleti, Thiago Solovera \& Nery, and Wayne Yang.
+Substantial English text in Chapter 0, Chapters I and II, and parts of Chapters III and IV derives from this community translation.
+The additional translation is AI-translated; subsequent corrections, editing,
+typesetting and assembly are AI-produced. The publisher did not translate
+the text. Recorded AI work includes OpenAI Codex,
+GPT-6 Astra, Ultra; the III-1 sources also include GPT-5.6 Sol, Ultra.
+The accompanying \texttt{ATTRIBUTION.md} gives source links, contribution
+scope and rights information. Attribution does not assert endorsement
+or a licence grant from the upstream contributors.
+
+\medskip
+\textbf{Rights and availability.}
+Rights in the original works and in any protected contributions to these
+derivative translations and transcriptions remain with their respective
+rights holders. This project does not dedicate those works or contributions
+to the public domain or grant a licence over them. Existing third-party
+notices and any permissions already granted remain applicable.
+
+These editions are available free of charge for non-commercial, purely
+educational purposes, on the presumption that the respective rights holders
+would not object to these translations and transcriptions being freely
+available alongside the French originals on NUMDAM
+(\texttt{www.numdam.org/journals/PMIHES/}). This presumption is not a statement
+that permission has been obtained; free access to the originals does not
+itself grant permission to translate, adapt or republish them.
+
+Rights holders who object to the availability of their material may open
+an issue at \texttt{github.com/KokunoYumeto/ega-en/issues}. The publisher
+will take down the affected material at the rights holder's request.
+\end{quote}
+\endgroup
+% END SCHOLARLY TRANSLATION ATTRIBUTION
+
+
+\phantomsection
+\label{reader:ega-global}
+
+\begin{center}
+\large Linked English reader
+\end{center}
+
+\tableofcontents
+
+\input{global_volume_ega0}
+\input{global_volume_ega1}
+\input{global_volume_ega2}
+\input{global_volume_ega3}
+\input{global_volume_ega4}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Consolidated bibliography}
+\section*{Consolidated bibliography}
+\nocite{*}
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}
