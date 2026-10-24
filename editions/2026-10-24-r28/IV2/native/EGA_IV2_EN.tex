@@ -1,0 +1,88 @@
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\input{preamble}
+\input{EGA4_reference_v2_registry}
+\input{EGA4_reference_v2_links}
+\setlength{\emergencystretch}{3em}
+
+\hypersetup{
+  pdftitle={Elements of Algebraic Geometry IV, Part Two -- English Edition},
+  pdfauthor={Alexandre Grothendieck and Jean Dieudonne; English translation},
+  pdfsubject={Standalone English reader of EGA IV, Part Two}
+}
+
+\begin{document}
+
+\title{Elements of Algebraic Geometry IV\\Part Two}
+\author{Alexandre Grothendieck and Jean Dieudonn\'e}
+\date{}
+\maketitle
+
+% BEGIN SCHOLARLY TRANSLATION ATTRIBUTION
+
+\begingroup
+\small
+\begin{quote}
+\textbf{Translation sources and contributors.}
+The original work is by Alexandre Grothendieck and Jean Dieudonn\'e.
+The EGA English edition series draws on the human community translation
+\texttt{github.com/ryankeleti/ega}, source version \texttt{3d7afe28}.
+Its named contributors are Mateo Carmona, Tim Holzschuh, Tim Hosgood,
+Ryan Keleti, Thiago Solovera \& Nery, and Wayne Yang.
+This volume belongs to the wider EGA English edition series; the community translation's contribution to that series is described in the accompanying attribution notice.
+The additional translation is AI-translated; subsequent corrections, editing,
+typesetting and assembly are AI-produced. The publisher did not translate
+the text. Recorded AI work includes OpenAI Codex,
+GPT-6 Astra, Ultra.
+The accompanying \texttt{ATTRIBUTION.md} gives source links, contribution
+scope and rights information. Attribution does not assert endorsement
+or a licence grant from the upstream contributors.
+
+\medskip
+\textbf{Rights and availability.}
+Rights in the original works and in any protected contributions to these
+derivative translations and transcriptions remain with their respective
+rights holders. This project does not dedicate those works or contributions
+to the public domain or grant a licence over them. Existing third-party
+notices and any permissions already granted remain applicable.
+
+These editions are available free of charge for non-commercial, purely
+educational purposes, on the presumption that the respective rights holders
+would not object to these translations and transcriptions being freely
+available alongside the French originals on NUMDAM
+(\texttt{www.numdam.org/journals/PMIHES/}). This presumption is not a statement
+that permission has been obtained; free access to the originals does not
+itself grant permission to translate, adapt or republish them.
+
+Rights holders who object to the availability of their material may open
+an issue at \texttt{github.com/KokunoYumeto/ega-en/issues}. The publisher
+will take down the affected material at the rights holder's request.
+\end{quote}
+\endgroup
+% END SCHOLARLY TRANSLATION ATTRIBUTION
+
+
+\begin{center}
+\large Standalone English reader
+\end{center}
+
+\tableofcontents
+\input{EGA_IV2_standalone_reference_fallbacks_r52}
+
+% EGA IV, Part Two contains sections 2--7 of Chapter IV.
+\setcounter{section}{1}
+\input{ega4-2.source_aligned_r1}
+\input{ega4-3.source_aligned_r1}
+\input{ega4-4.source_aligned_r1}
+\input{ega4-5.source_aligned_r1}
+\input{source_aligned/ega4-6}
+\input{source_aligned/ega4-7}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Consolidated bibliography}
+\section*{Consolidated bibliography}
+\nocite{*}
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}
