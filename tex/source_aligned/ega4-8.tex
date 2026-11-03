@@ -314,10 +314,7 @@ Set
 Then $\mathrm{G}_\lambda$ is a pro-constructible subset of $\mathrm{S}_\lambda$ \sref{IV.1.9.5},~(ii), and by virtue of \sref{IV.8.3.2.1} and condition (ii) we have
 \[
   \mathrm{G}_\mu\subset u_{\lambda\mu}^{-1}(\mathrm{G}_\lambda)\qquad\text{for }\lambda\leqslant\mu
-\]
-\[
-  \mathrm{G}=\bigcap_\lambda u_\lambda^{-1}(\mathrm{G}_\lambda).
-\]
+\] $\mathrm{G}=\bigcap_\lambda u_\lambda^{-1}(\mathrm{G}_\lambda)$.
 We are thus reduced to proving the particular case of \sref{IV.8.3.2} corresponding to $\mathrm{F}_\lambda=\varnothing$ for every $\lambda$:
 \end{theorem}
 
@@ -1154,10 +1151,7 @@ Consider first the case where $S_0=\operatorname{Spec}(A_0)$ and $X=\operatornam
 To prove (ii) in the general case, note that $S$ is quasi-compact and quasi-separated. Since $X$ is of finite presentation over $S$, and $S$ is affine over $S_0$, there is a finite open cover $(U_i)$ of $S_0$ and, if $(W_i)$ denotes the affine open cover of $S$ formed by the inverse images of the $U_i$ under $S\to S_0$, a finite cover $(X_r)$ of $X$ by affine opens such that the image of each $X_r$ under $X\to S$ is contained in some $W_{i(r)}$. The ring $A(X_r)$ is then an algebra of finite presentation over $A(W_{i(r)})$ \sref{IV.1.4.6}.
 
 By Lemma~\sref{IV.1.8.4.2} and the fact that $L$ is filtered, there exist an index $\lambda\in L$ and, for every $r$, an affine scheme $Z_{r\lambda}$ of finite presentation over the inverse image $W_{i(r),\lambda}$ of $U_{i(r)}$ in $S_\lambda$, together with an $S$-isomorphism $g_r:Z_{r\lambda}\times_{S_\lambda}S\xrightarrow{\sim}X_r$.
-Let $Z_{rs}$ be the inverse image under $g_r$ of the sub-prescheme induced on the open $X_r\cap X_s$ of $X_r$, which is quasi-compact because $X$ is quasi-separated, and let
-\[
- g'_{rs}:Z_{rs}\xrightarrow{\sim}X_r\cap X_s
-\]
+Let $Z_{rs}$ be the inverse image under $g_r$ of the sub-prescheme induced on the open $X_r\cap X_s$ of $X_r$, which is quasi-compact because $X$ is quasi-separated, and let $g'_{rs}:Z_{rs}\xrightarrow{\sim}X_r\cap X_s$
 be the restriction of $g_r$. By \sref{IV.8.2.11}, there exist $\mu\geqslant\lambda$ and, for every pair $(r,s)$, a quasi-compact open $Z_{rs\mu}$ of $Z_{r\mu}=v_{\lambda\mu}^{-1}(Z_{r\lambda})$ such that $Z_{rs}$ is the inverse image of $Z_{rs\mu}$. Moreover, since $S_\mu$ is quasi-separated and $W_{i(r),\mu}$ is a quasi-compact open of $S_\mu$, each $Z_{rs\mu}$ is of finite presentation over $S_\mu$ \sref[I]{I.1.6.2}.
 
 For every pair $(r,s)$, consider the isomorphism
@@ -1287,10 +1281,7 @@ Since the canonical immersion $T_\lambda\to S_\lambda$ is of finite presentation
 As $T'$ is affine, we see finally that it is enough to treat the case where $T'=S$ is affine.
 
 Then, with the notation of \sref{IV.8.9.1}, there exist $\lambda$, a morphism of finite type $u_\lambda:X_\lambda\to S_\lambda$, and a coherent $\sh{O}_{X_\lambda}$-Module $\sh{F}_\lambda$ such that $X$ is isomorphic to $X_\lambda\times_{S_\lambda}S$ and $\sh{F}$ to $\sh{F}_\lambda\otimes_{\sh{O}_{X_\lambda}}\sh{O}_X$.
-Applying \sref{IV.6.9.3} to $S_\lambda$, $X_\lambda$, and $\sh{F}_\lambda$, we obtain subpreschemes $S'_{\lambda i}$ of $S_\lambda$ whose underlying sets form a partition of $S_\lambda$ and which are such that, on putting $X_{\lambda i}=X_\lambda\times_{S_\lambda}S'_{\lambda i}$, the Module
-\[
-\sh{F}_{\lambda i}=\sh{F}_\lambda\otimes_{\sh{O}_{X_\lambda}}\sh{O}_{X_{\lambda i}}
-\]
+Applying \sref{IV.6.9.3} to $S_\lambda$, $X_\lambda$, and $\sh{F}_\lambda$, we obtain subpreschemes $S'_{\lambda i}$ of $S_\lambda$ whose underlying sets form a partition of $S_\lambda$ and which are such that, on putting $X_{\lambda i}=X_\lambda\times_{S_\lambda}S'_{\lambda i}$, the Module $\sh{F}_{\lambda i}=\sh{F}_\lambda\otimes_{\sh{O}_{X_\lambda}}\sh{O}_{X_{\lambda i}}$
 is flat over $S'_{\lambda i}$.
 The subpreschemes $S'_i=S'_{\lambda i}\times_{S_\lambda}S$ of $S$ then have the required properties by \sref{IV.2.1.4}.
 \end{proof}
@@ -1449,10 +1440,7 @@ X'_0 \arrow[r,"j_0"] \arrow[d,"g_0"'] & P_0 \arrow[d,"p_0"] \\
 X_0 \arrow[r,"f_0"'] & S_0
 \end{tikzcd}
 \]
-where $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. For each $\lambda$ one obtains the analogous diagram in which $p_\lambda=p_0\times1_{S_\lambda}$, $g_\lambda=g_0\times1_{S_\lambda}$, and $j_\lambda=j_0\times1_{S_\lambda}$ have the same respective properties, and similarly for the inverse-limit morphisms $p=p_0\times1_S$, $g=g_0\times1_S$, and $j=j_0\times1_S$. Since $g$ is proper \sref[II]{II.5.5.3}, so is $p\circ j=f\circ g$ \sref[II]{II.5.4.2}; and since $p$ is separated, $j$ is proper, hence a closed immersion. Apply case~(iv) to $j$, noting that $X'_0$ and $P_0$ are $S_0$-preschemes of finite presentation by \sref{IV.8.10.5.1} and \sref{IV.1.6.2}. There exists $\lambda$ such that $j_\lambda$ is a closed immersion, hence proper \sref[II]{II.5.4.2}. Thus
-\[
-  f_\lambda\circ g_\lambda=p_\lambda\circ j_\lambda
-\]
+where $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. For each $\lambda$ one obtains the analogous diagram in which $p_\lambda=p_0\times1_{S_\lambda}$, $g_\lambda=g_0\times1_{S_\lambda}$, and $j_\lambda=j_0\times1_{S_\lambda}$ have the same respective properties, and similarly for the inverse-limit morphisms $p=p_0\times1_S$, $g=g_0\times1_S$, and $j=j_0\times1_S$. Since $g$ is proper \sref[II]{II.5.5.3}, so is $p\circ j=f\circ g$ \sref[II]{II.5.4.2}; and since $p$ is separated, $j$ is proper, hence a closed immersion. Apply case~(iv) to $j$, noting that $X'_0$ and $P_0$ are $S_0$-preschemes of finite presentation by \sref{IV.8.10.5.1} and \sref{IV.1.6.2}. There exists $\lambda$ such that $j_\lambda$ is a closed immersion, hence proper \sref[II]{II.5.4.2}. Thus $f_\lambda\circ g_\lambda=p_\lambda\circ j_\lambda$
 is proper \sref[II]{II.5.5.3} and \sref[II]{II.5.4.2}. Since $g_\lambda$ is surjective and, by the hypothesis on $f$ and case~(v), $f_\lambda$ may be supposed separated, \sref[II]{II.5.4.3} shows that $f_\lambda$ is proper.
 
 \emph{Cases (xiii) and (xiv).} By case~(xii) and \sref[II]{II.5.5.3}, which applies because the $S_\lambda$ are quasi-compact and quasi-separated by \sref{IV.1.7.19}, it is enough to consider the case where $f$ is quasi-projective. Suppose there is an invertible $\sh{O}_X$-Module $\sh{L}$ which is ample for $f$. Since $S_0$ is quasi-compact and quasi-separated, so is $X_0$ \sref{IV.1.2.3}; hence there are $\lambda$ and a quasi-coherent $\sh{O}_{X_\lambda}$-Module $\sh{L}_\lambda$ of finite presentation such that $\sh{L}=v_\lambda^*(\sh{L}_\lambda)$ \sref{IV.8.5.2},~(ii). By \sref{IV.8.5.5}, one may moreover suppose $\sh{L}_\lambda$ invertible. The assertion now follows from the more precise lemma below.

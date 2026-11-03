@@ -1287,11 +1287,8 @@ This being so, the transitivity of fibres \sref[I]{I.3.6.4} and the prop.~\sref{
 In particular, we have $\dim_x(Z_s)=\dim_{x_0}((Z_0)_{s_0})$.
 On the other hand, if $Z_s^{(\beta)}$ are the irreducible components of $Z_s$ containing $x$ and $X_s^{(\alpha)}$ the irreducible components of $X_s$
 \oldpage[IV-3]{89}
-containing $x$, we have
-\[
-  \operatorname{codim}_x(Z_s,X_s)
-  =\inf_{\beta}\sup_{\alpha}\operatorname{codim}(Z_s^{(\beta)},X_s^{(\alpha)}),
-\]
+containing $x$, we have $\operatorname{codim}_x(Z_s,X_s)
+=\inf_{\beta}\sup_{\alpha}\operatorname{codim}(Z_s^{(\beta)},X_s^{(\alpha)})$,
 where $(\alpha,\beta)$ ranges over the pairs such that $x\in Z_s^{(\beta)}\subset X_s^{(\alpha)}$ ($0$, \sref{IV.14.2.6}).
 As irreducible algebraic preschemes are biequidimensional \sref{IV.5.2.1}, we can write, by virtue of ($0$, \sref{IV.14.3.3.1})
 \begin{equation}
@@ -1307,10 +1304,7 @@ The formula \sref{IV.9.9.1.1} (and the analogous formula applied to $(X_0)_{s_0}
 \]
 
 We thus see that if $E$ (resp.~$E_0$) is the set of $x\in X$ (resp.~$x_0\in X_0$) satisfying one of the conditions (i), (ii), (iii) of the statement (resp.~the same condition), then $E=h^{-1}(E_0)$; by \sref{IV.1.8.2}, we may therefore restrict to the case where $A$, and hence also $B$, is Noetherian.
-Taking account of ($0_{\mathrm{III}}$, \sref{IV.9.2.3}) and of \sref{IV.9.9.1.1}, it remains to show that for every $x\in X$ there is a neighbourhood $V$ of $x$ in $\overline{\{x\}}$ such that, for every $x'\in V$, the sets of dimensions of the irreducible components of $X_{f(x')}$ and of $Z_{f(x')}$ containing $x'$ are constant, and likewise the set of pairs
-\[
-  \bigl(\dim Z_{f(x')}^{(\beta)},\dim X_{f(x')}^{(\alpha)}\bigr),
-\]
+Taking account of ($0_{\mathrm{III}}$, \sref{IV.9.2.3}) and of \sref{IV.9.9.1.1}, it remains to show that for every $x\in X$ there is a neighbourhood $V$ of $x$ in $\overline{\{x\}}$ such that, for every $x'\in V$, the sets of dimensions of the irreducible components of $X_{f(x')}$ and of $Z_{f(x')}$ containing $x'$ are constant, and likewise the set of pairs $\bigl(\dim Z_{f(x')}^{(\beta)},\dim X_{f(x')}^{(\alpha)}\bigr)$,
 where $X_{f(x')}^{(\alpha)}$ is an irreducible component of $X_{f(x')}$ and $Z_{f(x')}^{(\beta)}$ is an irreducible component of $Z_{f(x')}$ contained in it and containing $x'$.
 For this purpose we may replace $S$ by the reduced closed subprescheme $S'$ whose underlying space is $\overline{\{f(x)\}}$, and $X$ by $X'=f^{-1}(S')$, since the fibres of $X$ and $X'$ at points of $S'$ are the same.
 Thus we may suppose that $S$ is integral and that $\eta=f(x)$ is its generic point.
@@ -1380,21 +1374,12 @@ By \sref{IV.9.7.7}, \sref{IV.9.7.8}, and \sref{IV.9.5.3}, for every $s$ near $\e
 At a point $y\in X_s$, the Module $\sh{F}_s$ is geometrically integral exactly when it is geometrically reduced there and $y$ belongs to only one of the $(Z_i)_s$ \sref{IV.4.6.22}.
 The conclusion follows from (iv) and from \sref{IV.9.5.1} applied to $\overline{\{x\}}\cap Z_i$ for each $i$.
 
-(vi) Keeping the notations of (ii), \sref{IV.6.2.1} gives
-\[
-  \dim.\operatorname{proj}((\sh{F}_s)_x)
-  =\dim.\operatorname{proj}(((\sh{F}_0)_{s_0})_{x_0}),
-\]
-so we may again restrict to the case where $A$ is Noetherian. It remains to show that for every $x\in X$ there is a neighbourhood $V$ of $x$ in $\overline{\{x\}}$ such that
-\[
-  \dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
-  =\dim.\operatorname{proj}((\sh{F}_{f(x)})_x)
-\]
-for every $x'\in V$. As above, we may suppose that $S$ is integral and that $\eta=f(x)$ is its generic point, so $(\sh{F}_\eta)_x=\sh{F}_x$. By generic flatness \sref{IV.6.9.1}, after replacing $S$ by an open neighbourhood of $\eta$, we may suppose that $f$ is flat and that $\sh{F}$ is $f$-flat. Then \sref{IV.6.2.3} gives
-\[
-  \dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
-  =\dim.\operatorname{proj}(\sh{F}_{x'})
-\]
+(vi) Keeping the notations of (ii), \sref{IV.6.2.1} gives $\dim.\operatorname{proj}((\sh{F}_s)_x)
+=\dim.\operatorname{proj}(((\sh{F}_0)_{s_0})_{x_0})$,
+so we may again restrict to the case where $A$ is Noetherian. It remains to show that for every $x\in X$ there is a neighbourhood $V$ of $x$ in $\overline{\{x\}}$ such that $\dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
+=\dim.\operatorname{proj}((\sh{F}_{f(x)})_x)$
+for every $x'\in V$. As above, we may suppose that $S$ is integral and that $\eta=f(x)$ is its generic point, so $(\sh{F}_\eta)_x=\sh{F}_x$. By generic flatness \sref{IV.6.9.1}, after replacing $S$ by an open neighbourhood of $\eta$, we may suppose that $f$ is flat and that $\sh{F}$ is $f$-flat. Then \sref{IV.6.2.3} gives $\dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
+=\dim.\operatorname{proj}(\sh{F}_{x'})$
 for every $x'\in X$. By \sref{IV.6.11.1}, after replacing $X$ by an open neighbourhood of $x$, we may suppose that
 \[
   \dim.\operatorname{proj}(\sh{F}_{x'})
