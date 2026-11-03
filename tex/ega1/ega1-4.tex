@@ -33,13 +33,13 @@ It obviously suffices (\hyperref[I.2.1.3]{2.1.3}) to consider the case where
 $X$ is an affine scheme, and to show that in this case $Y$ is closed in
 $X$ and is an \emph{affine scheme}. Indeed, if
 $X=\operatorname{Spec}(A)$, we have $\mathscr{O}_X=\widetilde{A}$ and
-$\mathscr{I}=\widetilde{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of
+$\mathscr{I}=\widetilde{\mathfrak{J}}$, where $\mathfrak{J}$ is an ideal of
 $A$ (\hyperref[I.1.4.1]{1.4.1}); $Y$ is then equal to the closed subset
-$V(\mathfrak{I})$ of $X$ and is identified with the prime spectrum of the ring
-$B=A/\mathfrak{I}$ (\hyperref[I.1.1.11]{1.1.11}); moreover, if $\varphi$
-is the canonical homomorphism $A\to B=A/\mathfrak{I}$, the direct image
+$V(\mathfrak{J})$ of $X$ and is identified with the prime spectrum of the ring
+$B=A/\mathfrak{J}$ (\hyperref[I.1.1.11]{1.1.11}); moreover, if $\varphi$
+is the canonical homomorphism $A\to B=A/\mathfrak{J}$, the direct image
 ${}^a\varphi_*(\widetilde{B})$ is canonically identified with the sheaf
-$\widetilde{A}/\widetilde{\mathfrak{I}}=\mathscr{O}_X/\mathscr{I}$
+$\widetilde{A}/\widetilde{\mathfrak{J}}=\mathscr{O}_X/\mathscr{I}$
 (\hyperref[I.1.6.3]{1.6.3} and \hyperref[I.1.3.9]{1.3.9}), which completes
 the proof.
 
@@ -136,7 +136,7 @@ We shall always make the preceding identification from now on.
 Let $Y$ be a sub-prescheme of a prescheme $X$, and denote by $\psi$
 the canonical injection $Y\to X$ of the \emph{underlying spaces}; we know that
 the inverse image $\psi^*(\mathscr{O}_X)$ is the restriction
-$\mathscr{O}_X|Y$ (\hyperref[0.3.7.1]{0, 3.7.1}). If, for every $y\in Y$,
+$\mathscr{O}_X|Y$ (\hyperref[0.3.7.1]{\textbf{0}, 3.7.1}). If, for every $y\in Y$,
 we denote by $\omega_y$ the canonical homomorphism
 $(\mathscr{O}_X)_y\to(\mathscr{O}_Y)_y$, these homomorphisms are the
 restrictions to the stalks of a \emph{surjective} homomorphism $\omega$ of
@@ -148,7 +148,7 @@ nothing but the restrictions to the stalks of the homomorphism
 $\mathscr{O}_X|Y\to(\mathscr{O}_X/\mathscr{I})|Y$.
 
 We have thus defined a \emph{monomorphism of ringed spaces}
-(\hyperref[0.4.1.1]{0, 4.1.1}) $j=(\psi,\omega^b)$, which is obviously a
+(\hyperref[0.4.1.1]{\textbf{0}, 4.1.1}) $j=(\psi,\omega^\flat)$, which is obviously a
 morphism $Y\to X$ of preschemes (\hyperref[I.2.2.1]{2.2.1}), and which we
 shall call the \emph{canonical injection morphism}.
 
@@ -185,7 +185,7 @@ by a quasi-coherent sheaf $\mathscr{I}$ of ideals of $\mathscr{O}_X$.
 Set $f=(\psi,\theta)$, and let $\mathscr{J}$ be the sheaf of ideals of
 $\psi^*(\mathscr{O}_X)$ which is the kernel of
 $\theta^\sharp:\psi^*(\mathscr{O}_X)\to\mathscr{O}_Z$; taking into account the
-properties of the functor $\psi^*$ (\hyperref[0.3.7.2]{0, 3.7.2}),
+properties of the functor $\psi^*$ (\hyperref[0.3.7.2]{\textbf{0}, 3.7.2}),
 the hypothesis implies that for every $z\in Z$ we have
 $(\psi^*(\mathscr{I}))_z\subset\mathscr{J}_z$, and consequently
 $\psi^*(\mathscr{I})\subset\mathscr{J}$. Hence $\theta^\sharp$
@@ -194,13 +194,13 @@ factorizes as
   \psi^*(\mathscr{O}_X)\longrightarrow
   \psi^*(\mathscr{O}_X)/\psi^*(\mathscr{I})
   =\psi^*(\mathscr{O}_X/\mathscr{I})
-  \xrightarrow{\omega}\mathscr{O}_Z,
+  \xrightarrow{\omega}\mathscr{O}_Z
 \]
 the first arrow being the canonical homomorphism. Let $\psi'$ be the continuous
 map $Z\to Y$ coinciding with $\psi$; it is clear that we have
 ${\psi'}^*(\mathscr{O}_Y)=\psi^*(\mathscr{O}_X/\mathscr{I})$; on the other
 hand, $\omega$ is obviously a local homomorphism, so
-$g=(\psi',\omega^b)$ is a morphism $Z\to Y$
+$g=(\psi',\omega^\flat)$ is a morphism $Z\to Y$
 \oldpage[I]{122}
 of preschemes (\hyperref[I.2.2.1]{2.2.1}) which, by virtue of the
 foregoing, is such that $f=j\circ g$, whence the proposition.
@@ -220,7 +220,7 @@ We then write $Z\leq Y$, and this relation is obviously an
 
 \begin{definition}[4.2.1]
 \label{I.4.2.1}
-A morphism $f:Y\to X$ is said to be an \emph{immersion} (resp. a
+A morphism $f:Y\to X$ is said to be an immersion (resp. a
 \emph{closed immersion}, an \emph{open immersion}) if it factorizes as
 $Y\xrightarrow{g}Z\xrightarrow{j}X$, where $g$ is an isomorphism, $Z$ a
 sub-prescheme of $X$ (resp. a closed sub-prescheme, a sub-prescheme induced
@@ -252,7 +252,7 @@ morphism (\hyperref[I.3.5.4]{3.5.4}).
   $y\in Y$ the homomorphism
   $\theta_y^\sharp:\mathscr{O}_{\psi(y)}\to\mathscr{O}_y$ be bijective.
   \item[b)] For a morphism $f=(\psi,\theta):Y\to X$ to be an
-  \emph{immersion} (resp. a \emph{closed immersion}), it is necessary and
+  immersion (resp. a \emph{closed immersion}), it is necessary and
   sufficient that $\psi$ be a homeomorphism of $Y$ onto a locally closed
   (resp. closed) subset of $X$, and that for every $y\in Y$ the homomorphism
   $\theta_y^\sharp:\mathscr{O}_{\psi(y)}\to\mathscr{O}_y$ be surjective.
@@ -269,7 +269,7 @@ morphism (\hyperref[I.3.5.4]{3.5.4}).
   \item[b)] The conditions being obviously necessary, let us prove that they
   are sufficient. Consider first the special case where it is assumed that
   $X$ is an affine scheme and that $Z=\psi(Y)$ is \emph{closed} in $X$. We
-  know (\hyperref[0.3.4.6]{0, 3.4.6}) that $\psi_*(\mathscr{O}_Y)$ then has
+  know (\hyperref[0.3.4.6]{\textbf{0}, 3.4.6}) that $\psi_*(\mathscr{O}_Y)$ then has
   support $Z$ and that, if we denote by $\mathscr{O}'_Z$ its restriction
   to $Z$, the ringed space $(Z,\mathscr{O}'_Z)$ is deduced from
   $(Y,\mathscr{O}_Y)$ by transport of structure by means of the
@@ -294,7 +294,7 @@ morphism (\hyperref[I.3.5.4]{3.5.4}).
   (\hyperref[I.1.6.3]{1.6.3}), which proves our
   assertion, because of the local character of quasi-coherent sheaves.
   Moreover, the hypothesis that $\psi$ is a homeomorphism implies
-  (\hyperref[0.3.4.5]{0, 3.4.5}) that for every $y\in Y$, $\psi_y$ is an
+  (\hyperref[0.3.4.5]{\textbf{0}, 3.4.5}) that for every $y\in Y$, $\psi_y$ is an
   isomorphism
   $(\psi_*(\mathscr{O}_Y))_{\psi(y)}\to\mathscr{O}_y$; since the diagram
   \phantomsection\label{I.4.2.2.theta-diagram}
@@ -308,7 +308,7 @@ morphism (\hyperref[I.3.5.4]{3.5.4}).
     }
   \]
   is commutative and the two vertical arrows are isomorphisms
-  (\hyperref[0.3.7.2]{0, 3.7.2}), the hypothesis that $\theta_y^\sharp$ is
+  (\hyperref[0.3.7.2]{\textbf{0}, 3.7.2}), the hypothesis that $\theta_y^\sharp$ is
   surjective implies that so is $\theta_{\psi(y)}$. Since the
   support of $\psi_*(\mathscr{O}_Y)$ is $Z=\psi(Y)$, $\theta$ is a
   \emph{surjective} homomorphism of $\mathscr{O}_X=\widetilde{A}$ into the
@@ -364,24 +364,24 @@ $\Gamma(\theta):\Gamma(\mathscr{O}_X)\to\Gamma(\mathscr{O}_Y)$ be surjective.
 \oldpage[I]{124}
   that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ be
   an immersion (resp. an open immersion) into $V_\lambda$.
-  \item[b)] Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ an open covering
+  \item[\textup{b)}] Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ an open covering
   of $X$. For $f$ to be a closed immersion, it is necessary and sufficient
   that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ be
   a closed immersion into $V_\lambda$.
 \end{enumerate}
 \end{corollary}
 
-Let $f=(\psi,\theta)$; in case a), $\theta_y^\sharp$ is surjective
-(resp. bijective) for every $y\in Y$, and in case b) $\theta_y^\sharp$ is
+Let $f=(\psi,\theta)$; in case \emph{a)}, $\theta_y^\sharp$ is surjective
+(resp. bijective) for every $y\in Y$, and in case \emph{b)} $\theta_y^\sharp$ is
 surjective for every $y\in Y$; it therefore suffices to verify that $\psi$, in
 case a), is a homeomorphism of $Y$ onto a locally closed (resp.
 open) subset of $X$, and in case b), a homeomorphism of $Y$ onto a closed
 subset of $X$. Now, $\psi$ is obviously injective and transforms every
 neighbourhood of $y$ in $Y$ into a neighbourhood of $\psi(y)$ in $\psi(Y)$ for
-every $y\in Y$, by virtue of the hypothesis; in case a), $\psi(Y)\cap V_\lambda$
+every $y\in Y$, by virtue of the hypothesis; in case \emph{a)}, $\psi(Y)\cap V_\lambda$
 is locally closed (resp. open) in $V_\lambda$, so $\psi(Y)$ is locally closed
 (resp. open) in the union of the $V_\lambda$, and \emph{a fortiori} in $X$;
-in case b), $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so
+in case \emph{b)}, $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so
 $\psi(Y)$ is closed in $X$ since $X=\bigcup_\lambda V_\lambda$.
 
 \begin{proposition}[4.2.5]
@@ -401,9 +401,9 @@ This follows trivially from (\hyperref[I.4.1.6]{4.1.6}).
 Let $\alpha:X'\to X$, $\beta:Y'\to Y$ be two $S$-morphisms; if $\alpha$ and
 $\beta$ are immersions (resp. open immersions, closed
 immersions), then $\alpha\times_S\beta$ is an immersion (resp. an open
-immersion, a closed immersion). Moreover, if $\alpha$ (resp. $\beta$)
-identifies $X'$ (resp. $Y'$) with a sub-prescheme $X''$ (resp. $Y''$) of $X$
-(resp. $Y$), then $\alpha\times_S\beta$ identifies the underlying space of
+immersion, a closed immersion). Moreover, if $\alpha$ (\textup{resp.} $\beta$)
+identifies $X'$ (resp. $Y'$) with a sub-prescheme $X''$ (\textup{resp.} $Y''$) of $X$
+(\textup{resp.} $Y$), then $\alpha\times_S\beta$ identifies the underlying space of
 $X'\times_S Y'$ with the subspace $p^{-1}(X'')\cap q^{-1}(Y'')$ of the
 underlying space of $X\times_S Y$, where $p$ and $q$ denote the projections of
 $X\times_S Y$ to $X$ and $Y$ respectively.
@@ -481,7 +481,7 @@ $B'\otimes_A C'$ (\hyperref[I.3.2.2]{3.2.2} and
 $\alpha\times_S\beta$ is indeed an immersion. Moreover, if $\mathfrak{b}$
 (resp. $\mathfrak{c}$) is the kernel of $\rho$ (resp. $\sigma$), the kernel of
 $\tau$ is the sum of the ideals generated by $u(\mathfrak{b})$ and $v(\mathfrak{c})$, where $u$ (resp. $v$) is
-the homomorphism $b\mapsto b\otimes1$ (resp. $c\mapsto1\otimes c$). Since
+the homomorphism $b\to b\otimes1$ (resp. $c\to1\otimes c$). Since
 $p=({}^a u,\widetilde{u})$ and $q=({}^a v,\widetilde{v})$, this kernel
 corresponds, in the prime spectrum of $B\otimes_A C$, to the closed set
 $p^{-1}(X')\cap q^{-1}(Y')$ (\hyperref[I.1.2.2.1]{1.2.2.1} and
@@ -532,7 +532,7 @@ the identity and every morphism $h:Z\to X$ is therefore majorized by $j'$, so
 $X\xrightarrow{g}Y'\xrightarrow{j}Y$.
 
 When $y$ is a \emph{closed} point of $Y$ and
-$Y'=\operatorname{Spec}(k(y))$ the smallest closed sub-prescheme of $Y$ having
+$Y'=\operatorname{Spec}(\boldsymbol{k}(y))$ the smallest closed sub-prescheme of $Y$ having
 $\{y\}$ as underlying space (\hyperref[I.4.1.9]{4.1.9}), the
 closed sub-prescheme $f^{-1}(Y')$ is canonically isomorphic to the
 \emph{fibre} $f^{-1}(y)$ defined in (\hyperref[I.3.6.2]{3.6.2}), with

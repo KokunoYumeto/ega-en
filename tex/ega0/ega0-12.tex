@@ -28,7 +28,7 @@ groups on $X$ (G, II, 7.2.1).
 Set $A=\Gamma(X,\sh{O}_X)$.
 Since every element of $A$ defines an endomorphism of the abelian group
 $\Gamma(X,\sh{F})$, it defines by functoriality an endomorphism of the
-$\delta$-functor $\HH^\bullet(X,\sh{F})$.
+$\partial$-functor $\HH^\bullet(X,\sh{F})$.
 These endomorphisms endow each $\HH^p(X,\sh{F})$ with an
 $A$-module structure, and the boundary operator $\partial$ is
 $A$-linear.
@@ -52,10 +52,10 @@ For every open covering $\mathfrak{U}$ of $X$, we shall always denote
 by $\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ (contrary to
 (G, II, 5.1)) the complex of alternating cochains of the nerve of
 $\mathfrak{U}$ with values in the coefficient system
-$\Gamma(U_\alpha,\sh{F})$.
+$\Gamma(U_\sigma,\sh{F})$.
 It is clear that
 $\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ is a graded
-$A$-module, so that the cohomology groups
+$A$-\emph{module}, so that the cohomology groups
 $\check{\HH}^p(\mathfrak{U},\sh{F})$ of this complex are endowed with
 an $A$-module structure.
 Moreover, the canonical maps
@@ -89,8 +89,8 @@ groups on $X$, the functor
 \[
   \sh{F}\longmapsto\HH^\bullet(X',\psi^*(\sh{F}))
 \]
-is a $\delta$-functor on that category, and it is known that there is a
-canonical homomorphism of $\delta$-functors
+is a $\partial$-functor on that category, and it is known that there is a
+canonical homomorphism of $\partial$-functors
 \[
 \label{0.12.1.3.2}
 \tag{12.1.3.2}
@@ -125,7 +125,7 @@ By the uniqueness property for extending morphisms of universal
 cohomological functors (T, 2.2), one obtains unique extensions of
 $\mu$ and $\mu'$ to cohomology which make the diagrams analogous to
 \sref{0.12.1.3.3} commutative.
-Thus \sref{0.12.1.3.2} is a homomorphism of $A$-modules.
+Thus \sref{0.12.1.3.2} is a homomorphism of $A$-\emph{modules}.
 
 Now note that
 \[
@@ -206,7 +206,7 @@ $X'$, there is a morphism
   \psi^*(\sh{L}^\bullet)\longrightarrow\sh{L}'^\bullet
 \]
 of complexes of sheaves of abelian groups, compatible with the
-augmentations (M, V, 1.1.a), and determined up to homotopy.
+augmentations (M, V, 1.1.\emph{a)}, and determined up to homotopy.
 One thereby obtains homomorphisms
 \[
   \Gamma(X,\sh{L}^\bullet)
@@ -217,7 +217,7 @@ One thereby obtains homomorphisms
 \]
 of complexes of abelian groups.
 Their composite, on passing to cohomology, gives a morphism of
-$\delta$-functors
+$\partial$-functors
 \[
   \HH^\bullet(X,\sh{F})
   \longrightarrow
@@ -509,18 +509,18 @@ It follows that the diagram
 \label{0.12.1.6.2}
 \tag{12.1.6.2}
   \xymatrix@C=6pt{
-    \cdots\ar[r]
+    \ldots\ar[r]
       & \HH^p(X,\sh{F})\ar[r]\ar[d]_{u_p}
       & \HH^p(X,\sh{G})\ar[r]\ar[d]_{v_p}
       & \HH^p(X,\sh{H})\ar[r]^-\partial\ar[d]_{w_p}
       & \HH^{p+1}(X,\sh{F})\ar[r]\ar[d]_{u_{p+1}}
-      & \cdots\\
-    \cdots\ar[r]
+      & \ldots\\
+    \ldots\ar[r]
       & \HH^p(X',\sh{F}')\ar[r]
       & \HH^p(X',\sh{G}')\ar[r]
       & \HH^p(X',\sh{H}')\ar[r]_-\partial
       & \HH^{p+1}(X',\sh{F}')\ar[r]
-      & \cdots
+      & \ldots
   }
 \]
 is commutative.
@@ -541,8 +541,8 @@ Indeed, \sref{0.12.1.6.1} factors as
 where the middle row is exact
 \sref[0\textsubscript{I}]{0.3.7.2}.
 It is then enough to use the fact that \sref{0.12.1.3.2} is a
-homomorphism of $\delta$-functors and that the
-$\HH^p(X',\sh{F}')$ form a $\delta$-functor in $\sh{F}'$.
+homomorphism of $\partial$-functors and that the
+$\HH^p(X',\sh{F}')$ form a $\partial$-functor in $\sh{F}'$.
 \end{remark}
 
 \begin{env}[12.1.7]
@@ -1104,10 +1104,10 @@ there are an open neighbourhood $U$ of $x$ in $X$ and an exact
 sequence of $(\sh{O}_X|U)$-modules
 \[
   0\longrightarrow\sh{R}\longrightarrow\sh{L}_{p-1}
-  \longrightarrow\cdots\longrightarrow\sh{L}_0
+  \longrightarrow\ldots\longrightarrow\sh{L}_0
   \longrightarrow\sh{F}|U\longrightarrow0,
 \]
-where each $\sh{L}_i$ ($0\leq i\leq p-1$) is isomorphic to
+where each $\sh{L}_i$ ($0\leq i\leq p\setmin 1$) is isomorphic to
 $\sh{O}_X^{n_i}|U$, and $\sh{R}$ is coherent.
 This follows by induction on $p$ from
 \sref[0\textsubscript{I}]{0.5.3.2} and
@@ -1365,14 +1365,14 @@ given by
 \begin{equation}
 \label{0.12.4.1.1}
 \tag{12.4.1.1}
-  {}'E_2^{pq}
+  {}'\mathcal E_2^{pq}
   =\sh{H}^p\bigl(\sh{H}^q(f,\sh{K}^\bullet)\bigr)
 \end{equation}
 and
 \begin{equation}
 \label{0.12.4.1.2}
 \tag{12.4.1.2}
-  {}''E_2^{pq}
+  {}''\mathcal E_2^{pq}
   =\sh{H}^p\bigl(f,\sh{H}^q(\sh{K}^\bullet)\bigr)
   \quad
   \bigl(=\RR^p f_*(\sh{H}^q(\sh{K}^\bullet))\bigr).

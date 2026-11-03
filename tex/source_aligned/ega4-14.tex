@@ -91,7 +91,7 @@ Then we have the relation
 \begin{equation}
 \tag{14.2.1.1}
 \label{IV.14.2.1.1}
-  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}k(y)).
+  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)).
 \end{equation}
 \end{theorem}
 
@@ -140,7 +140,7 @@ This follows immediately from \sref{IV.14.2.3}.
 \begin{corollary}[14.2.5]
 \label{IV.14.2.5}
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a proper morphism, $y\in Y$ a point such that $f$ is open at all the points of $f^{-1}(y)$.
-Then the function $z\mapsto\dim(f^{-1}(z))$ is constant in a neighbourhood of $y$.
+Then the function $z\leadsto\dim(f^{-1}(z))$ is constant in a neighbourhood of $y$.
 \end{corollary}
 
 \begin{proof}
@@ -148,7 +148,7 @@ Let $Y_i$ ($1\leq i\leq n$) be the closed reduced sub-preschemes of $Y$ having a
 As the union of the $Y_i$ is a neighbourhood of $y$ in $Y$,
 \oldpage[IV-3]{203}
 we see that one can restrict to proving the corollary when $Y$ is irreducible; let $\eta$ be its generic point.
-It follows from \sref{IV.14.2.4} that $d(y)\leq d(\eta)$; on the other hand, as $f$ is proper, we deduce from \sref{IV.13.1.5} that $z\mapsto\dim(f^{-1}(z))$ is upper semi-continuous; in particular $d(y)\geq d(\eta)$, hence $d(y)=d(\eta)$.
+It follows from \sref{IV.14.2.4} that $d(y)\leq d(\eta)$; on the other hand, as $f$ is proper, we deduce from \sref{IV.13.1.5} that $z\leadsto\dim(f^{-1}(z))$ is upper semi-continuous; in particular $d(y)\geq d(\eta)$, hence $d(y)=d(\eta)$.
 Moreover, there is a neighbourhood $V$ of $y$ such that $d(z)\leq d(y)$ for every $z\in V$; but as every $z$ is a specialisation of $\eta$, we have on the other hand $d(z)\geq d(\eta)$, whence finally $d(z)=d(y)$ for $z\in V$.
 \end{proof}
 
@@ -159,7 +159,7 @@ Let $y_i$ ($1\leq i\leq n$) be the generic points of the irreducible components 
 Then, with the notations of \sref{IV.14.2.4}:
 \begin{enumerate}[label=(\roman*)]
   \item If for $1\leq i\leq n$, we have $\mathrm{E}(y)=\mathrm{E}(y_i)$ (resp.\ $d(y)=d(y_i)$), the function $\mathrm{E}$ (resp.\ $d$) is constant in a neighbourhood of $y$.
-  \item There exists an open neighbourhood $U$ of $f^{-1}(y)$ such that the function $z\mapsto\dim(U\cap f^{-1}(z))$ is constant in a neighbourhood of $y$.
+  \item There exists an open neighbourhood $U$ of $f^{-1}(y)$ such that the function $z\leadsto\dim(U\cap f^{-1}(z))$ is constant in a neighbourhood of $y$.
 \end{enumerate}
 \end{corollary}
 
@@ -170,14 +170,14 @@ Then, with the notations of \sref{IV.14.2.4}:
   Now, by virtue of \sref{IV.9.5.5}, the functions $\mathrm{E}$ and $d$ are locally constructible, hence it follows from $(\mathbf{0}_{\mathrm{III}},~9.2.5)$ applied to the set of $z$ such that $\mathrm{E}(z)=\mathrm{E}(y)$ (resp.\ $d(z)=d(y)$) that this set is a neighbourhood of $y$.
 
   \item For each of the $y_i$, $f^{-1}(y_i)$ is a Noetherian space since $f$ is of finite type; let $x_{ij}$ ($1\leq j\leq m_i$) be the generic points of its irreducible components, and set $X_{ij}'=\overline{\{x_{ij}\}}$; let us show that the complement $U$ in $X$ of the union of the $X_{ij}'$ that do not meet $f^{-1}(y)$ (which is evidently an open neighbourhood of $f^{-1}(y)$) answers the question.
-  Indeed, the restriction $f|U:U\to Y$ of $f$ is an open morphism of finite type \sref[I]{I.6.3.5}; for every pair $(i,j)$ such that $x_{ij}\in U$, $x_{ij}$ is a maximal point of $U\cap f^{-1}(y_i)$, and it follows from \sref{IV.13.1.1} applied to the restriction $X_{ij}'\to Y_i=\overline{\{y_i\}}$ of $f$ (taking into account \sref[I]{I.5.2.2} and \sref{IV.1.5.4}) that all the irreducible components of $X_{ij}'\cap f^{-1}(y)$ have dimension $\geq\dim(X_{ij}'\cap f^{-1}(y_i))$.
+  Indeed, the restriction $f|U:U\to Y$ of $f$ is an open morphism of finite type \sref[I]{I.6.3.5}; for every pair $(i,j)$ such that $x_{ij}\in U$, $x_{ij}$ is a maximal point of $U\cap f^{-1}(y_i)$ and it follows from \sref{IV.13.1.1} applied to the restriction $X_{ij}'\to Y_i=\overline{\{y_i\}}$ of $f$ (taking into account \sref[I]{I.5.2.2} and \sref{IV.1.5.4}) that all the irreducible components of $X_{ij}'\cap f^{-1}(y)$ have dimension $\geq\dim(X_{ij}'\cap f^{-1}(y_i))$.
   Taking into account \sref{IV.14.2.3} applied to the restriction $f^{-1}(Y_i)\to Y_i$ of $f$, which is an open morphism \sref{IV.14.1.2}, $f^{-1}(y)$ is, for each $i$, the union of the irreducible components of $X_{ij}'\cap f^{-1}(y)$ ($1\leq j\leq m_i$), hence $\dim(f^{-1}(y))\geq\dim(U\cap f^{-1}(y_i))$; but as $f|U$ is open, we also have $\dim(f^{-1}(y))\leq\dim(f^{-1}(y_i)\cap U)$ in virtue of \sref{IV.14.2.4}; we see therefore that one can apply (i) to $f|U$, whence the conclusion.
 \end{enumerate}
 \end{proof}
 
 \begin{remark}[14.2.7]
 \label{IV.14.2.7}
-The example \sref{IV.13.2.12},~(iii)) shows that under the hypotheses of \sref{IV.14.2.5} or \sref{IV.14.2.6},~(ii)), one cannot, in the conclusion, replace the function $z\mapsto\dim(f^{-1}(z))$ by the function $z\mapsto\mathrm{E}(z)$; indeed, in this example, $f$ is proper and flat (hence universally open \sref{IV.2.4.6}) and every neighbourhood of the unique point of $f^{-1}(y_0)$ contains the generic points of the irreducible components of $f^{-1}(\eta)$.
+The example \sref{IV.13.2.12},~(iii)) shows that under the hypotheses of \sref{IV.14.2.5} or \sref{IV.14.2.6},~(ii)), one cannot, in the conclusion, replace the function $z\leadsto\dim(f^{-1}(z))$ by the function $z\leadsto\mathrm{E}(z)$; indeed, in this example, $f$ is proper and flat (hence universally open \sref{IV.2.4.6}) and every neighbourhood of the unique point of $f^{-1}(y_0)$ contains the generic points of the irreducible components of $f^{-1}(\eta)$.
 \end{remark}
 
 \oldpage[IV-3]{204}
@@ -270,15 +270,15 @@ For $f$ to be universally open at a point $x\in X$, it is necessary and sufficie
 
 \oldpage[IV-3]{206}
 
-Moreover, in the preceding condition, one may restrict to the case where $A$ is complete, its residue field is algebraically closed, and $x'$ is rational over $k(y')$.
+Moreover, in the preceding condition, one may restrict to the case where $A$ is complete, its residue field is algebraically closed, and $x'$ is rational over $\boldsymbol{k}(y')$.
 \end{proposition}
 
 \begin{proof}
 If $Y'$ is as in the statement, the necessity of the condition follows from the fact that $f'$ must be open at the point $x'$, and the criterion \sref{IV.1.10.3}.
 To see that the condition is sufficient, consider a morphism of finite type $g:Y''\to Y$\footnote{The printed source has $g:Y''\to U$ here, although $U$ is undefined; the subsequent fibre product is over $Y$.}, and let $X''=X\times_Y Y''$, $f''=f_{(Y'')}:X''\to Y''$, and $x''$ a point of $X''$ above $x$.
 Set $y''=f''(x'')$, and let $t$ be a generization of $y''$ in $Y''$, distinct from $y''$.
-Since $Y''$ is locally Noetherian, it follows from \sref[II]{II.7.1.9} and $(\mathbf{0}_{\mathrm{III}},~10.3.1)$ that there exists a scheme $Y'=\Spec(A)$, where $A$ is a complete discrete valuation ring whose residue field is an algebraic closure of $k(x'')$, and a morphism $g:Y'\to Y''$ such that, if $s$ and $y'$ are the generic point and the closed point respectively, we have $g(s)=t$ and $g(y')=y''$.
-There is then a point $x'$ of $X'=X\times_Y Y'=X''\times_{Y''}Y'$ whose projections in $X''$ and $Y'$ are $x''$ and $y'$ respectively, and which is rational over $k(y')$ \sref[I]{I.3.4.9}.
+Since $Y''$ is locally Noetherian, it follows from \sref[II]{II.7.1.9} and $(\mathbf{0}_{\mathrm{III}},~10.3.1)$ that there exists a scheme $Y'=\Spec(A)$, where $A$ is a complete discrete valuation ring whose residue field is an algebraic closure of $\boldsymbol{k}(x'')$, and a morphism $g:Y'\to Y''$ such that, if $s$ and $y'$ are the generic point and the closed point respectively, we have $g(s)=t$ and $g(y')=y''$.
+There is then a point $x'$ of $X'=X\times_Y Y'=X''\times_{Y''}Y'$ whose projections in $X''$ and $Y'$ are $x''$ and $y'$ respectively, and which is rational over $\boldsymbol{k}(y')$ \sref[I]{I.3.4.9}.
 The hypothesis implies that there is a generization $z'$ of $x'$ in $X'$ whose projection in $Y'$ is $s$; if $z''$ is the projection of $z'$ in $X''$, $z''$ is a generization of $x''$ and its projection in $Y''$ is $t$; we conclude therefore from \sref{IV.1.10.3} that $f''$ is open at the point $x''$, hence $f$ is universally open at the point $x$ {\hyperref[IV.14.3.3.1]{(14.3.3.1, (i))}}.
 \end{proof}
 
@@ -363,7 +363,7 @@ Then, for every generization $s'$ of a point $s\in S$, we have $d(s)\leq d(s')$.
 
 \begin{proof}
 We know from \sref[II]{II.7.1.4} that there exists a valuation ring $A'$ and a morphism $h:S'=\Spec(A')\to S$ such that, if $a$ (resp.\ $b$) is the closed point (resp.\ the generic point) of $S'$, we have $h(a)=s$, $h(b)=s'$.
-Furthermore, the projection $p:X_s\otimes_{k(s)}k(a)\to X_s$ is surjective and open \sref{IV.2.4.10}, and thus makes $X_s$ a quotient space of $X_s\otimes_{k(s)}k(a)$ by an open equivalence relation; consequently, for every subset $M$ of $X_s$, $p^{-1}(\overline{M})=\overline{p^{-1}(M)}$ (Bourbaki, \emph{General Topology}, Chap.~I, 4th ed., \S5, no.~3, Prop.~7).
+Furthermore, the projection $p:X_s\otimes_{\mathbf{k}(s)}\boldsymbol{k}(a)\to X_s$ is surjective and open \sref{IV.2.4.10}, and thus makes $X_s$ a quotient space of $X_s\otimes_{\mathbf{k}(s)}\boldsymbol{k}(a)$ by an open equivalence relation; consequently, for every subset $M$ of $X_s$, $p^{-1}(\overline{M})=\overline{p^{-1}(M)}$ (Bourbaki, \emph{General Topology}, Chap.~I, 4th ed., \S5, no.~3, Prop.~7).
 One reasons in the same way for $X_{s'}$; taking account of \sref[I]{I.3.4.8}, \sref{IV.4.2.7}, and the fact that the $g_\lambda$ are universally open, we see that it suffices to prove the proposition after the base change $S'\to S$.
 Suppose therefore $S'=S$, $s$ being the closed point and $s'$ the generic point of $S$.
 The hypothesis that $g_\lambda$ is open implies that every irreducible component of $Y_\lambda$ dominates $S$ \sref{IV.1.10.4}, hence its generic point is a maximal point of $(Y_\lambda)_{s'}$; if $Z$ denotes the closure in $X$ of $Z(s')$, we have therefore $u_\lambda(Y_\lambda)\subset Z$, and consequently $(u_\lambda)_s((Y_\lambda)_s)\subset Z_s=Z\cap X_s$; in other words, $Z(s)\subset Z_s$, whence $\dim(Z(s))\leq\dim(Z_s)$.
@@ -389,10 +389,10 @@ Consider the following conditions:
 \oldpage[IV-3]{209}
 
 \begin{enumerate}[label=\emph{\alph*$'$)}]
-  \item[b$'$)] For every open neighbourhood $U$ of $x$ in $X$ and every generization $y'$ of $y$, we have $\dim(U\cap X_{y'})\geq\dim_x(U\cap X_y)$.
+  \item[\textup{b$'$)}] For every open neighbourhood $U$ of $x$ in $X$ and every generization $y'$ of $y$, we have $\dim(U\cap X_{y'})\geq\dim_x(U\cap X_y)$.
 \end{enumerate}
 
-Then we have the implications $a)\Rightarrow b)\Leftrightarrow b')$.
+Then we have the implications $\mathrm{a})\Rightarrow\mathrm{b})\Leftrightarrow\mathrm{b}')$.
 \end{proposition}
 
 \begin{proof}
@@ -462,7 +462,7 @@ Let $K$ (resp.\ $L$) be the field of fractions of $A$ (resp.\ $B$), $A'$ the int
 \]
 As $B'$ is integral over $B$, there exists a prime ideal $\mathfrak{n}'$ of $B'$ such that $\mathfrak{n}'\cap B=\mathfrak{n}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~2, n\textsuperscript{o}~1, th.~1), and (for the same reason) $\Spec(A')\to\Spec(A)$ is surjective.
 On the other hand, as $A$ is unibranch, $A'$ is a \emph{local} ring, so $\mathfrak{n}'\cap A'$, which is above the maximal ideal $\mathfrak{m}$ of $A$, is necessarily equal to the unique maximal ideal $\mathfrak{m}'$ of $A'$.
-By virtue of the second theorem of Cohen--Seidenberg (\emph{loc.\ cit.}, \S~2, n\textsuperscript{o}~4, th.~3) the morphism $\Spec(B'_{\mathfrak{n}'})\to\Spec(A')$ is surjective, so it is the same for the composite $\Spec(B'_{\mathfrak{n}'})\to\Spec(A')\to\Spec(A)$; but this morphism is also the composite $\Spec(B'_{\mathfrak{n}'})\to\Spec(B_\mathfrak{n})\to\Spec(A)$, so the morphism $\Spec(B_\mathfrak{n})\to\Spec(A)$ is surjective.
+By virtue of the second theorem of Cohen-Seidenberg (\emph{loc.\ cit.}, \S~2, n\textsuperscript{o}~4, th.~3) the morphism $\Spec(B'_{\mathfrak{n}'})\to\Spec(A')$ is surjective, so it is the same for the composite $\Spec(B'_{\mathfrak{n}'})\to\Spec(A')\to\Spec(A)$; but this morphism is also the composite $\Spec(B'_{\mathfrak{n}'})\to\Spec(B_\mathfrak{n})\to\Spec(A)$, so the morphism $\Spec(B_\mathfrak{n})\to\Spec(A)$ is surjective.
 
 These lemmas being established, let us return to the proof of the implication $b)\Rightarrow a)$ in \sref{IV.14.4.1}.
 By virtue of {\hyperref[IV.14.3.3.1]{(14.3.3.1, (i))}}, it suffices to prove that, for every integer $n\geq 0$ and every point $x'$ of $X'=X[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ above $x$, the morphism
@@ -539,7 +539,7 @@ If moreover $Y$ is locally Noetherian, these conditions are also equivalent to t
 \label{IV.14.4.4}
 (Chevalley's criterion).
 Let $f:X\to Y$ be a morphism locally of finite type.
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item If $f$ is equidimensional at a point $x\in X$ \sref{IV.13.3.2} and if $y=f(x)$ is a geometrically unibranch point of $Y$, $f$ is universally open at the point $x$.
   \item If $Y$ is geometrically unibranch, $f$ is universally open at all the points of $X$ where $f$ is equidimensional, and the set of these points is open in $X$.
 In particular, if $f$ is equidimensional, it is universally open.
@@ -582,7 +582,7 @@ The following conditions are equivalent:
 Furthermore, when these conditions are satisfied, for every reduced closed sub-prescheme $X_i$ of $X$ having as underlying space an irreducible component of $X$ containing $x$, the restriction $f_i:X_i\to Y$ of $f$ is an equidimensional morphism at the point $x$, and universally open at all the points of the irreducible components of $f^{-1}(y)\cap X_i$ which contain $x$.
 \end{proposition}
 
-Condition \emph{a)} implies that $f$ is equidimensional at all the generic points of the irreducible components of $f^{-1}(y)$ containing $x$ \sref{IV.13.3.1}, and consequently \sref{IV.14.4.4} universally open at these points; the same argument applied to each $f_i$ (taking into account \sref{IV.13.3.3}) proves the last assertion of the proposition, in view of {\hyperref[IV.14.3.3.1]{(14.3.3.1, (iii))}}.
+Condition \emph{a)} implies that $f$ is equidimensional at all the generic points of the irreducible components of $f^{-1}(y)$ containing $x$ \sref{IV.13.3.1}, and consequently \sref{IV.14.4.4} universally open at these points; the same argument applied to each $f_i$ (taking into account \sref{IV.13.3.3}) proves the last assertion of the proposition, in view of {\hyperref[IV.14.3.3.1]{(14.3.3.1, (ii))}}.
 Furthermore, by \sref{IV.14.2.1}, we have the relations
 \begin{align}
   \dim(\sh{O}_{X_i,x}) &= \dim(\sh{O}_y) + \dim(\sh{O}_{X_i,x}\otimes_{\sh{O}_y}\kappa(y))
@@ -660,7 +660,7 @@ If so, the Noetherian hypotheses are also superfluous in \sref{IV.14.4.2}, \sref
 
 (ii) One can give examples of morphisms $f:X\to Y$ with the following properties: $Y$ is Noetherian, regular and of dimension~2, $f$ is \emph{universally open} and of finite type, $X$ has two irreducible components $X_1$, $X_2$, but the restriction $X_1\to Y$ of $f$ to one of them is \emph{not an open morphism}.
 The principle of the construction relies on the general method of ``recollement'' which will be presented in chap.~V, and which can therefore only be sketched here.
-Start with a closed point $y$ of $Y$, and consider the $Y$-scheme $Y_1$ obtained by blowing up $y$ \sref[II]{II.8.1.3}. If $f_1:Y_1\to Y$ is the structural morphism, we know that the restriction of $f_1$ to $f_1^{-1}(Y-\{y\})$ is an \emph{isomorphism} over $Y-\{y\}$ (\emph{loc.\ cit.}), while the fibre $f_1^{-1}(y)$ is isomorphic to $\operatorname{Proj}(S)$, where $S=\bigoplus_{k=0}^{\infty}\mathfrak{m}_y^k/\mathfrak{m}_y^{k+1}$ \sref[II]{II.3.5.3}, i.e.\ here $\mathbf{P}^1_{\kappa(y)}$: it follows from \sref{IV.14.4.1} that $f_1$ is not open at the generic point of $f_1^{-1}(y)$.
+Start with a closed point $y$ of $Y$, and consider the $Y$-scheme $Y_1$ obtained by blowing up $y$ \sref[II]{II.8.1.3}. If $f_1:Y_1\to Y$ is the structural morphism, we know that the restriction of $f_1$ to $f_1^{-1}(Y\setmin\{y\})$ is an \emph{isomorphism} over $Y\setmin\{y\}$ (\emph{loc.\ cit.}), while the fibre $f_1^{-1}(y)$ is isomorphic to $\operatorname{Proj}(S)$, where $S=\bigoplus_{k=0}^{\infty}\mathfrak{m}_y^k/\mathfrak{m}_y^{k+1}$ \sref[II]{II.3.5.3}, i.e.\ here $\mathbf{P}^1_{\kappa(y)}$: it follows from \sref{IV.14.4.1} that $f_1$ is not open at the generic point of $f_1^{-1}(y)$.
 On the other hand, let us set $Y_2=\mathbf{P}^1_Y$, and let $f_2:Y_2\to Y$ be the structural morphism. It follows from \sref[II]{II.8.4.4} that $f_2$ is flat, hence universally open \sref{IV.2.4.6}; moreover, by \sref[II]{II.3.5.3}, $f_2^{-1}(y)$ is isomorphic to $\mathbf{P}^1_{\kappa(y)}$. It then suffices to ``glue'' $Y_1$ and $Y_2$ along the isomorphic fibres $f_1^{-1}(y)$ and $f_2^{-1}(y)$; this gives a morphism $f:X\to Y$ whose irreducible components $X_1$, $X_2$ identify canonically with $Y_1$, $Y_2$, respectively, and whose restrictions to these components are $f_1$, $f_2$.
 
 Let us recall however \sref{IV.12.1.1.5} that if $Y$ is locally Noetherian, $f:X\to Y$ is of finite type and \emph{flat}, then every irreducible component of $X$ is equidimensional over $Y$ (and consequently the restriction of $f$ to such a component is \emph{universally open} if all the points of $Y$ are \emph{geometrically unibranch}).
@@ -675,15 +675,15 @@ One can consider that the statements involving the hypothesis that a morphism is
 \end{remarks}
 
 
-\subsection{Universally open morphisms and quasi-sections}
+\subsection{Universally open morphisms and quasi-sections.}
 \label{subsection:IV.14.5}
 \label{IV.14.5}
 
 \begin{lemma}[14.5.1]
 \label{IV.14.5.1}
 Let $Y$ be an irreducible locally Noetherian prescheme, $f:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, such that $f$ is equidimensional \sref{IV.13.3.2} at the point $x$; set $y=f(x)$, $e=\dim_x(f^{-1}(y))$.
-Let $X'$ be a closed irreducible subspace of $X$ containing $x$, $n$ an integer such that $\codim(X',X)\leq n$ and $\dim_x(X'\cap f^{-1}(y))\leq e-n$.
-Then necessarily $\codim(X',X)=n$, $\dim_x(X'\cap f^{-1}(y))=e-n$, and the restriction $X'\to Y$ of $f$ is an equidimensional morphism at $x$ (and a fortiori dominant).
+Let $X'$ be a closed irreducible subspace of $X$ containing $x$, $n$ an integer such that $\codim(X',X)\leq n$ and $\dim_x(X'\cap f^{-1}(y))\leq e\setmin n$.
+Then necessarily $\codim(X',X)=n$, $\dim_x(X'\cap f^{-1}(y))=e\setmin n$, and the restriction $X'\to Y$ of $f$ is an equidimensional morphism at $x$ (and \textup{a fortiori} dominant).
 \end{lemma}
 
 The question being local on $X$, we can suppose that $f$ is of finite type and \emph{equidimensional}, so that for \emph{every} $z\in Y$, \emph{all} the irreducible components of $f^{-1}(z)$ are of dimension $e$ {\hyperref[IV.13.3.1]{(13.3.1, $a''$))}}.
@@ -702,16 +702,16 @@ On the other hand, reasoning in the reduced preschemes of $Y$ and $X$ having $Y'
 \end{equation}
 By hypothesis, $f^{-1}(y')$ is biequidimensional \sref{IV.5.2.1} and of dimension $e$, hence \sref[0]{0.14.3.5}, by virtue of \eqref{IV.14.5.1.2} and \eqref{IV.14.5.1.1}
 \begin{equation}
-  e'=\dim(X'\cap f^{-1}(y'))=e-\codim(X',Z)\geq e-n
+  e'=\dim(X'\cap f^{-1}(y'))=e-\codim(X',Z)\geq e\setmin n
   \tag{14.5.1.3}\label{IV.14.5.1.3}
 \end{equation}
 the equality holding if and only if $\codim(X',X)=n$ and if $f(X')$ is dense in $Y$.
 Finally, \sref{IV.13.1.1}, we have $\dim_x(X'\cap f^{-1}(y))\geq e'$, whence, by \eqref{IV.14.5.1.3},
 \begin{equation}
-  \dim_x(X'\cap f^{-1}(y))\geq e'\geq e-n.
+  \dim_x(X'\cap f^{-1}(y))\geq e'\geq e\setmin n.
   \tag{14.5.1.4}\label{IV.14.5.1.4}
 \end{equation}
-But, by hypothesis, we also have $\dim_x(X'\cap f^{-1}(y))\leq e-n$, whence the conclusions of the proposition.
+But, by hypothesis, we also have $\dim_x(X'\cap f^{-1}(y))\leq e\setmin n$, whence the conclusions of the proposition.
 
 \begin{corollary}[14.5.2]
 \label{IV.14.5.2}
@@ -719,7 +719,7 @@ The hypotheses on $f$, $X$, $Y$, $x$ being those of \sref{IV.14.5.1}, suppose mo
 Then there exists an affine open neighbourhood $U$ of $x$ in $X$ and a section $g\in\Gamma(U,\sh{O}_X)$ such that the set $X'$ of $x'\in U$ such that $g(x')=0$ contains $x$ and does not contain any maximal point of $f^{-1}(y)$.
 For every $g$ having these properties, $X'$ is equidimensional over $Y$ at the point $x$, and we have
 \begin{equation}
-  \dim_x(X'\cap f^{-1}(y))=e-1 \qquad\text{and}\qquad \codim(X',X)=1.
+  \dim_x(X'\cap f^{-1}(y))=e\setmin 1 \qquad\text{and}\qquad \codim(X',X)=1.
   \tag{14.5.2.1}\label{IV.14.5.2.1}
 \end{equation}
 \end{corollary}
@@ -727,7 +727,7 @@ For every $g$ having these properties, $X'$ is equidimensional over $Y$ at the p
 \oldpage[IV-3]{217}
 One can restrict to the case where $X=U$ is an open affine neighbourhood of $x$ such that all the irreducible components of $f^{-1}(y)$ contain $x$.
 These components correspond to the minimal prime ideals of $\sh{O}_x/\mathfrak{m}_y\sh{O}_x$, and by hypothesis these ideals are distinct from $\mathfrak{m}_x/\mathfrak{m}_y\sh{O}_x$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~1, n\textsuperscript{o}~1, prop.~2); to obtain a $g\in\Gamma(U,\sh{O}_X)$ satisfying the conditions of the statement, it suffices to take $g\in\mathfrak{j}_x$ such that the image of $g$ in $\mathfrak{m}_x$ does not belong to any of the preceding prime ideals.
-Moreover, as $\codim(X',X)\leq 1$ \sref{IV.5.1.8}, and as $X'$ does not contain any of the irreducible components of $f^{-1}(y)$ of dimension $e$, and since these are all the irreducible components of $f^{-1}(y)$, we have \sref[0]{0.14.2.2.2} $\dim_x(X'\cap f^{-1}(y))\leq e-1$.
+Moreover, as $\codim(X',X)\leq 1$ \sref{IV.5.1.8}, and as $X'$ does not contain any of the irreducible components of $f^{-1}(y)$ of dimension $e$, and since these are all the irreducible components of $f^{-1}(y)$, we have \sref[0]{0.14.2.2.2} $\dim_x(X'\cap f^{-1}(y))\leq e\setmin 1$.
 It then suffices to apply \sref{IV.14.5.1}.
 
 \begin{proposition}[14.5.3]
@@ -737,7 +737,7 @@ Suppose that $f$ is equidimensional at the point $x$ and that $x$ is closed in $
 Then there exists an irreducible subset $X'$ of $X$, locally closed in $X$, containing $x$, such that the restriction $X'\to Y$ of $f$ (where $X'$ is endowed with the reduced subscheme structure induced from $X$) is a \emph{quasi-finite and dominant} morphism.
 \end{proposition}
 
-Indeed, with the notation of \sref{IV.14.5.2}, the hypothesis that $x$ is closed in $f^{-1}(y)$ implies that $x$ is not a maximal point of $X'\cap f^{-1}(y)$ as long as $e-1\geq 1$.
+Indeed, with the notation of \sref{IV.14.5.2}, the hypothesis that $x$ is closed in $f^{-1}(y)$ implies that $x$ is not a maximal point of $X'\cap f^{-1}(y)$ as long as $e\setmin 1\geq 1$.
 It therefore suffices to apply \sref{IV.14.5.2} by descending induction on $e=\dim_x(f^{-1}(f(x)))$ until one arrives at $e=1$; the application of \sref{IV.14.5.2} in this last case gives a subspace $X'$ such that $X'\cap f^{-1}(f(x))$ is Noetherian and of dimension $0$, hence finite and discrete; as $X'$ is equidimensional over $Y$, $X'\cap f^{-1}(f(x'))$ is of dimension $0$ for every $x'\in X'$, which implies that the restriction $X'\to Y$ of $f$ is a quasi-finite morphism \sref[II]{II.6.2.2}.
 
 \begin{corollary}[14.5.4]
@@ -787,7 +787,7 @@ Let $x$ be a point of $f^{-1}(y)$; in order that $f$ be universally open at $x$,
 For every complete discrete valuation ring $A$ with algebraically closed residue field, every morphism $g:Y'=\Spec(A)\to Y$ such that the image under $g$ of the closed point $y'$ of $Y'$ is equal to $y$, and every element $u_0\in X(\Spec(\kappa(y')))$ such that $u_0(y')=x$, there exist a discrete valuation ring $B$, a local homomorphism $A\to B$ making $B$ into a finite $A$-algebra, and, if we set $Z'=\Spec(B)$, an element $u\in X(Z')$ such that, if $z'$ is the closed point of $Z'$, the diagram
 \[
   \xymatrix{
-    \Spec(\kappa(z')) \ar[r] \ar[d]^{\ell} & Z' \ar[d]^{u} \\
+    \Spec(\kappa(z')) \ar[r] \ar[d]^{\wr} & Z' \ar[d]^{u} \\
     \Spec(\kappa(y')) \ar[r]_-{u_0} & X
   }
 \]
@@ -830,12 +830,12 @@ Then there exists a finite surjective morphism $g:Y'\to Y$ such that, if we set 
 
 We will prove the proposition in several steps.
 
-\emph{I) Reduction to the case where $Y$ is integral.}
+I) \emph{Reduction to the case where $Y$ is integral.}
 If we have proved the proposition for each of the reduced sub-preschemes $Y_i$ having as underlying space an irreducible component of $Y$, and for the inverse images $f^{-1}(Y_i)$, it is clear that the prescheme $Y'$ which is the \emph{sum} of the corresponding $Y'_i$ will answer the question.
 We can therefore suppose $Y$ \emph{integral} and what follows will be limited to this case.
 Furthermore, in the conclusion, we will also be able to take $Y'$ integral (up to replacing it by a suitable irreducible component).
 
-\emph{II) Local character on $Y$.}
+II) \emph{Local character on $Y$.}
 We will show that if $Y$ can be covered by finitely many open sets $U_j$ such that, for every $j$, the conclusion of the proposition holds for the morphism $f^{-1}(U_j)\to U_j$, the restriction of $f$, then the conclusion also holds for $f$.
 Indeed, we can evidently suppose the $U_j$ affine, so that $U_j=\Spec(A_j)$, where $A_j$ is an integral Noetherian ring whose field of fractions $K=R(Y)$ is the field of rational functions on $Y$.
 For every $j$, by hypothesis there is a finite integral $A_j$-algebra $A'_j$ such that the homomorphism $A_j\to A'_j$ is injective \sref[I]{I.1.2.7} and that the corresponding morphism $g_j:U'_j=\Spec(A'_j)\to\Spec(A_j)=U_j$ satisfies the conditions of the statement (for $U_j$ and $f^{-1}(U_j)$).
@@ -861,13 +861,13 @@ In other words, the restriction $g^{-1}(U_j)\to U_j$ of $g$ factors as
 \]
 and since the local existence of sections is stable under base change, this proves our assertion, every $y\in Y$ belonging to some $U_j$.
 
-\emph{III) Reduction to the case where $Y$ is integral, local and geometrically unibranch.}
+III) \emph{Reduction to the case where $Y$ is integral, local and geometrically unibranch.}
 Suppose first that the proposition has been proved when $Y$ is integral and \emph{local} (with $Y'$ integral), and show that it is valid when $Y$ is integral (Noetherian) affine.
 Indeed, by virtue of the reduction II), it suffices to prove that for every point $y\in Y$, the proposition holds for an open affine neighbourhood $V$ of $y$ in $Y$.
 Let $Y=\Spec(A)$, $\mathfrak{p}=\mathfrak{j}_y$, let $Y_1=\Spec(A_\mathfrak{p})$, and set $X_1=X\times_Y Y_1$.
 By hypothesis, there exists a finite surjective morphism $g_1:Y'_1\to Y_1$, where $Y'_1=\Spec(B_1)$ and $B_1$ is a finite integral $A_\mathfrak{p}$-algebra, hence a semilocal ring, such that $g_1$ satisfies the conditions of the statement for $Y_1$ and $X_1$.
 If $y'_j$ ($1\leq j\leq r$) are the closed points of $Y'_1$, there is therefore a covering of $Y'_1$ by open sets $U'_j$ such that $y'_j\in U'_j$ and there exists a $U'_j$-section $h'_j$ of $X\times_Y U'_j$ ($1\leq j\leq r$).
-The $A_\mathfrak{p}$-module $B_1$ admits a finite system of generators of the form $z_i/s$ (with $s\in A-\mathfrak{p}$,
+The $A_\mathfrak{p}$-module $B_1$ admits a finite system of generators of the form $z_i/s$ (with $s\in A\setmin\mathfrak{p}$,
 \oldpage[IV-3]{221}
 $z_i$ integral over $A$), which one may suppose (multiplying $s$, if necessary, by an element of $A$) to be elements of the field of fractions of $B_1$ integral over $A_s$, so that if $V$ is the open affine set $D(s)=\Spec(A_s)\subset Y$, $Y'_1$ identifies with $Y_1\times_V V'$, where $V'$ is the spectrum of the finite $A_s$-algebra generated by the $z_i/s$; $g:V'\to V$ is therefore a finite surjective morphism and $g_1=g_{(Y_1)}$.
 Moreover, applying the method of \sref{IV.8.1.2},~$a$), one may suppose that each $U'_j$ is the inverse image under $p:Y'_1\to V'$ of an open set $W'_j$ of $V'$, that the $W'_j$ cover $V'$ \sref{IV.8.3.11}, and that each section $h'_j$ is of the form $(v'_j)_{(Y_1)}$, where $v'_j$ is a $W'_j$-section of $X\times_Y W'_j$ \sref{IV.8.8.2},~(i).
@@ -875,7 +875,7 @@ We are thus indeed reduced to proving the proposition when $Y=\Spec(A)$, where $
 We then know that there exists a finite integral $A$-algebra $B$, having the same field of fractions as $A$, such that $A\subset B$ and $\Spec(B)$ is geometrically unibranch \sref[0]{0.23.2.5} and \sref{IV.6.15.5}; as the morphism $\Spec(B)\to\Spec(A)$ is surjective, one may evidently replace $Y$ by $\Spec(B)$ and $X$ by $X\otimes_A B$ to prove the proposition.
 Arguing as at the beginning of the reduction III), we may therefore suppose that $A$ is local and integral and that $Y=\Spec(A)$ is geometrically unibranch.
 
-\emph{IV) Reduction to the case where $X$ is integral, affine, and $f$ quasi-finite, surjective, birational and universally open.}
+IV) \emph{Reduction to the case where $X$ is integral, affine, and $f$ quasi-finite, surjective, birational and universally open.}
 Suppose therefore $Y=\Spec(A)$ integral, local and geometrically unibranch.
 There exists then an irreducible sub-prescheme $X_0$ of $X$ such that the restriction $f_0:X_0\to Y$ of $f$ is a quasi-finite and \emph{dominant} morphism and $f_0(X_0)$ contains the closed point $y$ of $Y$ \sref{IV.14.5.9}; as $Y$ is geometrically unibranch, it follows from \sref{IV.14.4.1} that $f_0$ is still \emph{universally open}.
 Furthermore, we may suppose $X_0$ reduced, hence integral, and we see that, by replacing $X$ by $X_0$, we may suppose $X$ integral, $f$ \emph{quasi-finite and dominant}, and $f(X)$ containing $y$; since $f$ is \emph{open} and every open subset of $Y$ containing $y$ is equal to $Y$, $f$ is surjective.
@@ -890,7 +890,7 @@ Applying once more \sref{IV.14.4.1} to the quasi-finite and dominant morphism $f
 open in $Y$ and contains $y$, hence is equal to $Y$.
 One may thus replace $X$ by $U$ in order to prove the proposition.
 
-\emph{V) End of the proof.}
+V) \emph{End of the proof.}
 We suppose therefore $Y$ local, integral and geometrically unibranch, $X$ integral and affine, $f$ quasi-finite, surjective, birational and universally open; it follows that $f$ is automatically \emph{separated}.
 By virtue of the Main theorem \sref{IV.8.12.6}, there exists a factorisation $X\xrightarrow{j}Z\xrightarrow{u}Y$, where $j$ is an open immersion and $u$ a \emph{finite} morphism.
 Replacing moreover $Z$ by the closed image of $j$ \sref[I]{I.9.5.10}, we may suppose that $Z$ is \emph{integral}; as $u$ is finite and birational and $Y$ geometrically unibranch, it follows from \sref[III]{III.4.3.5} and \sref[III]{III.4.3.4} that $u$ (and consequently $f$) is a \emph{radicial} morphism; as $f$ is universally open and surjective, it is therefore a universal \emph{homeomorphism}.
@@ -917,7 +917,7 @@ Or, if we set
 \]
 $f'_1$ is affine by virtue of the hypothesis.
 We are therefore reduced to proving the corollary by replacing $Y$, $X$, $f$ and $Y'$ by $Y_1$, $X_1$, $f_1$ and $Y'_1$; in other words, it suffices to prove that $f$ is affine when, in the statement of \sref{IV.14.5.11}, one assumes in addition that every point of $Y$ admits an open neighbourhood $U$ such that there exists a $U$-section of $g^{-1}(U)$.
-The question being local on $Y$, one may even suppose that there exists a $Y$-section $s$ of $Y'$.
+The question being local on $Y$, one may even suppose that there exists a $Y$-\emph{section} $s$ of $Y'$.
 Now we have the following elementary lemma (valid in any category admitting fibre products):
 
 \begin{lemma}[14.5.11.1]
@@ -935,8 +935,7 @@ This is a particular case of \sref[I]{I.3.3.11}, where one replaces the diagram 
 }
 \]
 \end{proof}
-
-Applying this lemma with $S$, $Y$ replaced by $Y$, $Y'$, one sees that one can write $f=(f')_{(Y)}$ for the base change $s:Y\to Y'$, hence $f$ is affine since $f'$ is.
+\noindent Applying this lemma with $S$, $Y$ replaced by $Y$, $Y'$, one sees that one can write $f=(f')_{(Y)}$ for the base change $s:Y\to Y'$, hence $f$ is affine since $f'$ is.
 Q.E.D.
 
 A variant of this criterion is the following:

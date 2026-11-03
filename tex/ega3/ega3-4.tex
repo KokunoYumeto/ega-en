@@ -13,7 +13,7 @@ proper morphism, let $Y'$ be a closed subset of $Y$, and let
   X'=f^{-1}(Y').
 \]
 We denote by $\widehat{X}$ and $\widehat{Y}$ the formal preschemes
-$X_{/X'}$ and $Y_{/Y'}$, obtained by completing $X$ and $Y$ along
+$X_{/X'}$ and $Y_{/Y'}$ obtained by completing $X$ and $Y$ along
 $X'$ and $Y'$, respectively \sref[I]{I.10.8.5}.
 We denote by $\widehat{f}:\widehat{X}\to\widehat{Y}$ the extension of
 $f$ to these completions \sref[I]{I.10.9.1}.
@@ -496,8 +496,7 @@ and hence gives a homomorphism
   \tag{4.1.7.8}
   \label{III.4.1.7.8}
 \]
-Let
-\[
+L\[
   S=\bigoplus_{k\geq0}\mathfrak{J}^k
 \]
 be the graded $A$-algebra.
@@ -580,7 +579,7 @@ It also shows that the graded $S$-module
 \[
   \mathrm{R}=\bigoplus_{k\geq0}\mathrm{R}_k
 \]
-is a quotient of the sub-$S$-module
+is a \emph{quotient} of the sub-$S$-module
 \[
   \mathrm{M}
   =
@@ -805,11 +804,11 @@ We therefore obtain the commutative diagram
     &
     \mathrm{R}_{k+m}\ar[r]\ar[u]
     &
-    \mathrm{H}\ar[r]\ar@{=}[u]
+    \mathrm{H}\ar[r]\ar[u]^{\textit{id.}}
     &
     \mathrm{H}_{k+m}\ar[r]\ar[u]
     &
-    \mathrm{Q}_{k+m}\ar[r]\ar[u]^{\nu_m}
+    \mathrm{Q}_{k+m}\ar[r]\ar[u]_{\nu_m}
     &
     0,
   }
@@ -987,7 +986,7 @@ by \sref{III.1.3.4}; and, taking \sref[I]{I.10.9.5} into account,
 \[
   \RR^n\widehat{f}_*(\widehat{\sh{F}})
   =
-  \RR^n\widehat{(f\circ u)}_*(\widehat{\sh{G}}).
+  \RR^n(f\circ u)^{\widehat{\,}}_*(\widehat{\sh{G}}).
 \]
 We may therefore apply \sref{III.4.1.5} to $\sh{G}$ and to the proper
 morphism $f\circ u$.
@@ -1704,7 +1703,7 @@ $f^{-1}(f(x))$, being connected by \sref{III.4.3.2}, must then
 consist of the single point $x$.
 
 Since $f$ is closed, for every open neighbourhood $V$ of $x$ in
-$X$, the closed set $f(X-V)$ does not contain $y=f(x)$.  If $U$ is
+$X$, the closed set $f(X\setmin V)$ does not contain $y=f(x)$.  If $U$ is
 its complement in $Y$, then $f^{-1}(U)\subset V$.  Thus the inverse
 images under $f$ of a fundamental system of open neighbourhoods of
 $y$ form a fundamental system of open neighbourhoods of $x$.
@@ -1712,7 +1711,7 @@ The equality $f_*(\sh{O}_X)=\sh{O}_Y$ and the definition of the
 direct image of a sheaf \sref[0]{0.3.4.1}, \sref{III.4.2.1} now
 imply that, if $f=(\psi,\theta)$, the homomorphism
 \[
-  \theta_y^\#:\sh{O}_y\longrightarrow\sh{O}_x
+  \theta_y^\sharp:\sh{O}_y\longrightarrow\sh{O}_x
 \]
 is an isomorphism.  Hence there are open neighbourhoods $V$ of $x$
 and $U$ of $y$ such that the restriction of $f$ is an isomorphism
@@ -1822,7 +1821,7 @@ type, let $\mathfrak q$ be a prime ideal of $B$, and let $\mathfrak p$
 be its inverse image in $A$.  Suppose that $\mathfrak q$ is both
 maximal and minimal in the set of prime ideals of $B$ whose inverse
 image is $\mathfrak p$.  Then there exist an element
-$g\in B-\mathfrak q$, a finite $A$-algebra $A'$, and an element
+$g\in B\setmin\mathfrak q$, a finite $A$-algebra $A'$, and an element
 $f'\in A'$ such that the $A$-algebras $B_g$ and $A'_{f'}$ are
 isomorphic.
 \end{corollary}
@@ -1894,7 +1893,7 @@ integrally closed, and $\sh{O}_x$ and $\sh{O}_y$ have the same field
 of fractions \sref[I]{I.7.1.5}.  We may therefore apply
 \sref{III.4.4.8}; if $f=(\psi,\theta)$, the homomorphism
 \[
-  \theta_y^\#:\sh{O}_y\longrightarrow\sh{O}_x
+  \theta_y^\sharp:\sh{O}_y\longrightarrow\sh{O}_x
 \]
 is bijective.  It follows from \sref[I]{I.6.5.4} that $f$ is a local
 isomorphism.  Since $f$ is separated and $X$ is integral, $f$ is an
@@ -2146,7 +2145,7 @@ denote the completed homomorphism \sref[I]{I.10.8.4}.  There is a
 canonical isomorphism
 \[
 \label{III.4.5.3.1}
-  \left(\Hom_{\sh{O}_X}(\sh{F},\sh{G})\right)^\wedge
+  \left(\Hom_{\sh{O}_X}(\sh{F},\sh{G})\right)^{\widehat{\,}}
   \isoto
   \Hom_{\sh{O}_{\hat{X}}}(\hat{\sh{F}},\hat{\sh{G}}),
   \tag{4.5.3.1}
@@ -2155,7 +2154,7 @@ where the left-hand side is the separated completion, for the
 $\mathfrak J$-preadic topology, of the $A$-module
 $\Hom_{\sh{O}_X}(\sh{F},\sh{G})$.  This isomorphism is obtained by
 passing to separated completions in the homomorphism
-$u\mapsto\hat{u}$.
+$u\to\hat{u}$.
 \end{corollary}
 
 
@@ -2559,7 +2558,7 @@ isomorphism) \sref[II]{II.6.1.1}, \sref[I]{I.4.2.4}.  Since $h$ is
 closed, there is an open neighbourhood $U$ of $z$ such that
 $h^{-1}(U)\subset V$, and the proposition follows.
 
-\noindent\textit{(i)} First note that $f$ is proper
+\noindent (i) First note that $f$ is proper
 \sref[II]{II.5.4.3}.  If
 $f_z$ is finite, the required neighbourhood $V_y$, for each
 $y\in h^{-1}(z)$, exists by \sref{III.4.4.11}.
@@ -2596,7 +2595,7 @@ is surjective.  Since $\sh{B}_y$ is a finite $\sh{O}_y$-module and
 $\sh{O}_y$ is a local Noetherian ring, the conclusion follows, as
 in \sref{III.4.6.3}, from Nakayama's lemma.
 
-\noindent\textit{(ii)} The same reasoning shows that it is now
+\noindent (ii) The same reasoning shows that it is now
 enough to prove
 that $u_y$ is bijective, knowing that $u_y\otimes1$ is bijective.
 The required injectivity follows from the lemma below; surjectivity
@@ -2816,7 +2815,7 @@ of $f$ to $f^{-1}(U)$.
 \begin{proof}
 \oldpage[III]{145}
 
-\noindent\textit{I)} Put
+\noindent I) Put
 \[
   Y'=\Spec(\sh{O}_y),\qquad
   X'=X\times_Y Y',\qquad
@@ -3068,7 +3067,7 @@ for $m\leq n$,
   A_m\simeq A_n/\mathfrak{R}^{m+1}A_n.
 \]
 It follows that $\mathfrak{X}\simeq\Spf(A)$, where
-$A=\varprojlim A_n$, and the conclusion follows from
+$A=\varprojlim_n A_n$, and the conclusion follows from
 \sref[0]{0.7.2.9}.
 
 Finally, to prove that \emph{c)} implies \emph{a)}, we may again

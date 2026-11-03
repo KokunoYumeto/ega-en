@@ -1,6 +1,6 @@
 \subsection{Relations between the properties of a Noetherian local
 ring \texorpdfstring{$A$}{A} and of a quotient ring
-\texorpdfstring{$A/tA$}{A/tA}}
+\texorpdfstring{$A/tA$.}{A/tA}}
 \label{subsection:IV.5.12}
 \label{IV.5.12}
 
@@ -16,7 +16,7 @@ depth.
 Let $A$ be a Noetherian local ring, put $X=\Spec(A)$, and let $t$
 be an element of $A$ belonging to a system of parameters
 \sref[0]{0.16.3.6}.  Let $X_0$ be the closed subspace $V(t)$ of
-$X$, and let $X_1=X-X_0$.  Let $Z$ be a subset of $X$ stable
+$X$, and let $X_1=X\setmin X_0$.  Let $Z$ be a subset of $X$ stable
 under specialization.  Suppose that $X$ is biequidimensional
 (as is the case when $A$ is equidimensional and is a quotient of
 a regular local ring \sref[0]{0.16.5.12}).  If
@@ -47,19 +47,19 @@ for all $\alpha$ give
 \]
 Suppose therefore that $Z$ is closed.  Then
 \[
-  \codim(Z,X)=\dim(X)-\dim(Z)
+  \codim(Z,X)=\dim(X)\setmin\dim(Z)
 \]
 by \sref[0]{0.14.3.5.1}.
 
 \oldpage[IV-2]{127}
 
 Moreover, $X_0$ is catenary and equidimensional, and
-$\dim(X_0)=\dim(X)-1$ by \sref[0]{0.16.3.4}; hence
+$\dim(X_0)=\dim(X)\setmin 1$ by \sref[0]{0.16.3.4}; hence
 \[
   \codim(Z_0,X_0)
-  =\dim(X)-1-\dim(Z_0).
+  =\dim(X)\setmin 1\setmin\dim(Z_0)
 \]
-Since $\dim(Z_0)\geq\dim(Z)-1$ \sref[0]{0.16.3.4}, the first
+Since $\dim(Z_0)\geq\dim(Z)\setmin 1$ \sref[0]{0.16.3.4}, the first
 inequality in \eqref{IV.5.12.1.1} follows.
 \end{proof}
 
@@ -206,13 +206,13 @@ let $P(U,V)\in k[U,V]$ be irreducible, with the curve $\Gamma$
 defined by $(P)$ in $\Spec(k[U,V])$ singular at the maximal ideal
 $(U)+(V)$.  One may take, for example,
 \[
-  P(U,V)=U(U^2+V^2)+(U^2-V^2),
+  P(U,V)=U(U^2+V^2)+(U^2\setmin V^2),
 \]
 which defines a cubic with a double point.  Let
 $B=k[T,U,V,W]$, let $C$ be the local ring of $B$ at the maximal
 ideal $BT+BU+BV+BW$, and put
 \[
-  \mathfrak p=CW+CP(U-T,V),\qquad \mathfrak q=CU.
+  \mathfrak p=CW+CP(U\setmin T,V),\qquad \mathfrak q=CU.
 \]
 Consider the local ring $A=C/\mathfrak p\mathfrak q$.
 Geometrically, the corresponding closed subscheme $X$ of affine
@@ -227,7 +227,7 @@ there is $A/tA$, which is reduced and has dimension $2$.  By
 contrast, the generic point $y$ of $Y$, defined by the image in
 $A$ of
 \[
-  C(U-T)+CV+CW,
+  C(U\setmin T)+CV+CW,
 \]
 is a singular point of $X$, and $\sh O_{X,y}$ has dimension $1$.
 Thus $A/tA$ is reduced and satisfies $(\mathrm R_1)$, whereas

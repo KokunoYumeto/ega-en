@@ -58,7 +58,7 @@ general concepts\footnote{Most of the properties in question are due to Chevalle
 \label{0.14.1.1}
 Let $I$ be an ordered set; a \emph{chain} of elements of $I$ is by
 definition a strictly increasing finite sequence
-$i_0<i_1<\cdots<i_n$ of elements of $I$ ($n\geq 0$); by definition the
+$i_0<i_1<\ldots<i_n$ of elements of $I$ ($n\geq 0$); by definition the
 \emph{length} of this chain is $n$. If $X$ is a topological space,
 the set of its \emph{irreducible closed} subsets is ordered by
 inclusion, whence the notion of a \emph{chain} of irreducible closed subsets of
@@ -112,10 +112,10 @@ irreducible components have the same dimension (then equal to $\dim(X)$ by
 
 \begin{proof}
 For every irreducible closed subset $Z$ of $Y$, the closure $\overline Z$ of
-$Z$ in $X$ is irreducible ($0_{\mathrm I}$, 2.1.2) and
+$Z$ in $X$ is irreducible ($\mathbf{0}_{\mathrm I}$, 2.1.2) and
 $\overline Z\cap Y=Z$, whence (i). On the other hand, if
 $X=\bigcup_{i=1}^n X_i$, where the $X_i$ are closed, every irreducible closed
-subset of $X$ is contained in one of the $X_i$ ($0_{\mathrm I}$, 2.1.1),
+subset of $X$ is contained in one of the $X_i$ ($\mathbf{0}_{\mathrm I}$, 2.1.1),
 and consequently every chain of irreducible closed subsets of $X$ is contained
 in one of the $X_i$; whence (ii).
 \end{proof}
@@ -163,9 +163,9 @@ $\dim(X)=\sup_{x\in X}\dim_x(X)$.
 \begin{proof}
 It follows from the definition (14.1.2) and from Proposition (14.1.4) that
 $\dim_x(X)\leq\dim(X)$ for every $x\in X$. On the other hand, let
-$Z_0\subset Z_1\subset\cdots\subset Z_n$ be a chain of irreducible closed
+$Z_0\subset Z_1\subset\ldots\subset Z_n$ be a chain of irreducible closed
 subsets of $X$, and let $x\in Z_0$; for every open subset $U\subset X$
-containing $x$, $U\cap Z_i$ is irreducible ($0_{\mathrm I}$, 2.1.6) and
+containing $x$, $U\cap Z_i$ is irreducible ($\mathbf{0}_{\mathrm I}$, 2.1.6) and
 closed in $U$, and since we have $\overline{U\cap Z_i}=Z_i$ in $X$, the
 $U\cap Z_i$ are pairwise distinct; therefore we have $\dim(U)\geq n$, which
 completes the proof.
@@ -192,14 +192,14 @@ by (14.1.4), whence the second assertion.
 
 \begin{corollary}[14.1.8]
 \label{0.14.1.8}
-Let $X$ be a Noetherian Kolmogorov space ($0_{\mathrm I}$, 2.1.3), and
+Let $X$ be a Noetherian Kolmogorov space ($\mathbf{0}_{\mathrm I}$, 2.1.3), and
 let $F$ be the set of closed points of $X$. Then
 $\dim(X)=\sup_{x\in F}\dim_x(X)$.
 \end{corollary}
 
 \begin{proof}
 With the notation of the proof of (14.1.6), it suffices to remark
-that there exists a closed point in $Z_0$ ($0_{\mathrm I}$, 2.1.3).
+that there exists a closed point in $Z_0$ ($\mathbf{0}_{\mathrm I}$, 2.1.3).
 \end{proof}
 
 \begin{proposition}[14.1.9]
@@ -213,7 +213,7 @@ If a space $X$ is separated (and \emph{a fortiori} if $X$ is a discrete
 space), the only irreducible closed sets of $X$ consist of a single
 point, so $\dim(X)=0$. Conversely, suppose that $X$ is a Noetherian
 Kolmogorov space such that $\dim(X)=0$; since every irreducible
-component of $X$ contains a closed point ($0_{\mathrm I}$, 2.1.3), it
+component of $X$ contains a closed point ($\mathbf{0}_{\mathrm I}$, 2.1.3), it
 must reduce to that point. Since $X$ has only finitely many irreducible
 components, it is finite and discrete.
 \end{proof}
@@ -234,7 +234,7 @@ since $U$ is a Noetherian Kolmogorov space, $U$ is finite and discrete.
 
 \begin{proposition}[14.1.11]
 \label{0.14.1.11}
-The function $x\mapsto\dim_x(X)$ is upper semi-continuous on $X$.
+The function $x\leadsto\dim_x(X)$ is upper semi-continuous on $X$.
 \end{proposition}
 
 \begin{proof}
@@ -260,7 +260,7 @@ $b$ the generic point; if $K$ and $k$ are the field of fractions and the
 residue field of $A$, then $X$ is the spectrum of the ring $k\times K$ and $f$
 is the continuous map corresponding to the homomorphism
 $(\varphi,\psi):A\to k\times K$, where $\varphi:A\to k$ and $\psi:A\to K$ are
-the canonical homomorphisms (cf. IV, 5.4.3).
+the canonical homomorphisms (cf. \textbf{IV}, 5.4.3).
 \end{remark}
 
 \subsection{Codimension of a closed subset}
@@ -352,7 +352,7 @@ open subset $U$ of $X$, we have
   \operatorname{codim}(Y\cap U,U)\geq\operatorname{codim}(Y,X).
   \tag{14.2.3.1}\label{0.14.2.3.1}
 \]
-Moreover, for the two sides of (14.2.3.1) to be equal, it is necessary and
+Moreover, for the two sides of \textup{(14.2.3.1)} to be equal, it is necessary and
 sufficient that, if $(Y_\alpha)$ is the family of irreducible components of
 $Y$ meeting $U$, we have
 $\operatorname{codim}(Y,X)=
@@ -360,7 +360,7 @@ $\operatorname{codim}(Y,X)=
 \end{proposition}
 
 \begin{proof}
-We know ($0_{\mathrm I}$, 2.1.6) that $Z\mapsto\overline Z$ is a bijection
+We know ($\mathbf{0}_{\mathrm I}$, 2.1.6) that $Z\leadsto\overline Z$ is a bijection
 from the set of irreducible closed subsets of $U$ onto the set of
 irreducible closed subsets of $X$ meeting $U$, and in particular maps
 the irreducible components of $Y\cap U$ to the irreducible components
@@ -389,7 +389,7 @@ By virtue of (14.2.3), we can also write
 the limit being taken along the decreasing filtered set of open
 neighbourhoods of $x$ in $X$. Note that we have
 \[
-  \operatorname{codim}_x(Y,X)=+\infty\quad\text{if}\quad x\in X-Y.
+  \operatorname{codim}_x(Y,X)=+\infty\quad\text{if}\quad x\in X\setmin Y.
 \]
 
 \oldpage[0\textsubscript{IV-1}]{10}
@@ -408,7 +408,7 @@ topological space $X$, and $Y$ is the union of this family, we have
 Indeed, every irreducible component of one of the $Y_i$ is contained in
 an irreducible component of $Y$, and conversely every irreducible
 component of $Y$ is also an irreducible component of one of the $Y_i$
-($0_{\mathrm I}$, 2.1.1); the conclusion therefore follows from the definition
+($\mathbf{0}_{\mathrm I}$, 2.1.1); the conclusion therefore follows from the definition
 (14.2.1) and from the inequality (14.2.2.3).
 \end{proof}
 
@@ -418,12 +418,12 @@ Let $X$ be a topological space and $Y$ a locally Noetherian closed
 subspace of $X$.
 \begin{enumerate}
   \item[\rm(i)] For every $x\in X$, there exist only finitely many
-  irreducible components $Y_i$ ($1\leq i\leq n$) of $Y$ containing $x$,
+  irreducible components $Y_i$ \textup{($1\leq i\leq n$)} of $Y$ containing $x$,
   and we have
   $\operatorname{codim}_x(Y,X)=
   \inf_i(\operatorname{codim}(Y_i,X))$.
   \item[\rm(ii)] The function
-  $x\mapsto\operatorname{codim}_x(Y,X)$ is lower semi-continuous
+  $x\leadsto\operatorname{codim}_x(Y,X)$ is lower semi-continuous
   on $X$.
 \end{enumerate}
 \end{corollary}
@@ -452,7 +452,7 @@ proves (ii).
 \begin{env}[14.3.1]
 \label{0.14.3.1}
 In a topological space $X$, we will say that a chain
-$Z_0\subset Z_1\subset\cdots\subset Z_n$ of irreducible closed subsets is
+$Z_0\subset Z_1\subset\ldots\subset Z_n$ of irreducible closed subsets is
 \emph{saturated} if there exists no irreducible closed subset $Z'$ distinct
 from the $Z_i$ and such that $Z_k\subset Z'\subset Z_{k+1}$ for some index $k$.
 \end{env}
@@ -481,7 +481,7 @@ It is immediate that a) implies b). Conversely, suppose that b) holds, and
 let us prove that if two saturated chains with the same endpoints have lengths
 $m$ and $n\leq m$, we necessarily have $m=n$. We argue by induction on
 $n$, the proposition being evident for $n=1$. So suppose $n>1$, $n<m$,
-and let $Z_0\subset Z_1\subset\cdots\subset Z_n$ be a
+and let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a
 \oldpage[0\textsubscript{IV-1}]{11}
 saturated chain such that there exists another saturated chain with endpoints
 $Z_0$, $Z_n$ and of length $m$. Since
@@ -503,13 +503,13 @@ following conditions are equivalent:
   \item[\rm(a)] Any two maximal chains of irreducible closed subsets of $X$
   have the same length.
   \item[\rm(b)] $X$ is equidimensional, equicodimensional and catenary.
-  \item[\rm(c)] $X$ is equidimensional, and for any two irreducible closed
+  \item[\textup{c)}] $X$ is equidimensional, and for any two irreducible closed
   subsets $Y$, $Z$ of $X$ such that $Y\subset Z$, we have
   \[
     \dim(Z)=\dim(Y)+\operatorname{codim}(Y,Z).
     \tag{14.3.3.1}\label{0.14.3.3.1}
   \]
-  \item[\rm(d)] $X$ is equicodimensional, and for any two irreducible closed
+  \item[\textup{d)}] $X$ is equicodimensional, and for any two irreducible closed
   subsets $Y$, $Z$ of $X$ such that $Y\subset Z$, we have
   \[
     \operatorname{codim}(Y,X)=
@@ -522,7 +522,7 @@ following conditions are equivalent:
 \begin{proof}
 The hypotheses on $X$ imply that the endpoints of a maximal chain of
 irreducible closed subsets of $X$ are necessarily a closed point and
-an irreducible component of $X$ ($0_{\mathrm I}$, 2.1.3); moreover, every
+an irreducible component of $X$ ($\mathbf{0}_{\mathrm I}$, 2.1.3); moreover, every
 saturated chain with endpoints $Y$, $Z$ (with $Y\subset Z$) is contained in a
 maximal chain whose elements other than those of the given chain are
 either contained in $Y$ or contain $Z$. These remarks
@@ -541,7 +541,7 @@ $\operatorname{codim}(\{x\},X)=\dim(Z)$; we conclude that c) implies b).
 Likewise, (14.3.3.2) implies (14.3.2.1), hence the chain condition;
 moreover, with the same choice of $Y$ and $Z$ as above, (14.3.3.2) again
 implies $\operatorname{codim}(\{x\},X)=\dim(Z)$, so (every irreducible
-component of $X$ containing a closed point by virtue of ($0_{\mathrm I}$,
+component of $X$ containing a closed point by virtue of ($\mathbf{0}_{\mathrm I}$,
 2.1.3)) d) implies b).
 \end{proof}
 
@@ -562,7 +562,7 @@ every closed point $x$ of $X$ and every irreducible component $Z$ of $X$, we hav
 \oldpage[0\textsubscript{IV-1}]{12}
 \begin{proof}
 The last equality follows from the fact that if
-$Y_0=\{x\}\subset Y_1\subset\cdots\subset Y_m$ is a maximal chain of
+$Y_0=\{x\}\subset Y_1\subset\ldots\subset Y_m$ is a maximal chain of
 irreducible closed subsets of $X$ and $U$ is an open neighbourhood of $x$, the
 $U\cap Y_i$ are pairwise distinct irreducible closed subsets of $U$
 (since $\overline{U\cap Y_i}=Y_i$), whence
@@ -585,7 +585,7 @@ for every closed subset $Y$ of $X$, we then have
 Since every chain of irreducible closed subsets of $X$ is contained in an
 irreducible component of $X$, the first assertion follows immediately from
 (14.3.3). Moreover, if $X'$ is an irreducible closed subset of $X$, $X'$
-trivially satisfies the conditions (14.3.3, c)), whence the second assertion.
+trivially satisfies the conditions (14.3.3, \emph{c)}), whence the second assertion.
 
 Finally, to prove (14.3.5.1), let us remark that we saw in the
 proof of (14.3.3) that this relation holds when $Y$ is

@@ -108,8 +108,8 @@ subprescheme having $Z$ as its underlying space
 quotient ring of $A$ is therefore adic and Noetherian.
 
 We then have $f(X')=Y'$.  If $V$ is an open neighbourhood of $X'$
-in $X$, the set $f(X-V)$ is closed in $Y$ and does not meet $Y'$.
-This is impossible unless $X-V$ is empty, because $\mathfrak{J}$
+in $X$, the set $f(X\setmin V)$ is closed in $Y$ and does not meet $Y'$.
+This is impossible unless $X\setmin V$ is empty, because $\mathfrak{J}$
 is contained in the radical of $A$
 \sref[I]{I.1.1.15} \sref[0]{0.7.1.10}.  Thus $V=X$.
 \end{proof}
@@ -165,7 +165,7 @@ The most important case is the following:
 \begin{corollary}[5.1.6]
 \label{III.5.1.6}
 Suppose that $X$ is proper over $Y=\Spec(A)$.  Then the functor
-$\sh{F}\mapsto\widehat{\sh{F}}$ is an equivalence between the
+$\sh{F}\leadsto\widehat{\sh{F}}$ is an equivalence between the
 category of coherent $\sh{O}_X$-modules and the category of
 coherent $\sh{O}_{\widehat{X}}$-modules.
 \end{corollary}
@@ -436,7 +436,7 @@ It follows that, for $h\leq k$, the canonical map
   \tag{5.2.3.5}
   \label{III.5.2.3.5}
 \]
-is surjective.  Thus, for every $q$, the projective system
+is \emph{surjective}.  Thus, for every $q$, the projective system
 \[
   \bigl(\HH^q(\mathfrak{X},\sh{F}_k(n))\bigr)_{k\geq0}
 \]
@@ -491,7 +491,7 @@ over
 \oldpage[III]{153}
 $\mathfrak{X}$.  Equivalently, $\sh{F}$ is isomorphic to a quotient
 of an $\sh{O}_{\mathfrak{X}}$-module of the form
-$(\sh{O}_{\mathfrak{X}}(-n))^k$.
+$(\sh{O}_{\mathfrak{X}}(\setmin n))^k$.
 \end{corollary}
 
 \begin{proof}
@@ -752,7 +752,7 @@ $\sh{M}_1=h^*(\sh{M})$ is a coherent ideal of $\sh{O}_{X_1}$ and
   =h^{-1}\bigl(\Supp(\sh{O}_X/\sh{M})\bigr)
 \]
 \sref[I]{I.9.1.13}.  Thus, if
-$U_1=X_1-\Supp(\sh{O}_{X_1}/\sh{M}_1)$, then
+$U_1=X_1\setmin\Supp(\sh{O}_{X_1}/\sh{M}_1)$, then
 $U_1=h^{-1}(U)$, and the restriction
 $f_1^{-1}(U_1)\to U_1$ is an isomorphism
 \sref[I]{I.3.2.7}.  Finally, $\widehat{\sh{M}}$ and
@@ -817,7 +817,7 @@ quasi-projective, $g$ is projective and surjective, and there is a
 nonempty open subset $U$ of $X$ for which
 $g^{-1}(U)\to U$ is an isomorphism.  Let $\sh{M}$ be a coherent
 ideal of $\sh{O}_X$ defining a closed subprescheme with underlying
-space $X-U$ \sref[I]{I.5.2.2}, and let $\sh{F}$ be a coherent
+space $X\setmin U$ \sref[I]{I.5.2.2}, and let $\sh{F}$ be a coherent
 $\sh{O}_{\widehat{X}}$-module whose support $E$ is proper over $Y$.
 Denote by $\widehat{Z}$ the completion of $Z$ along
 $h^{-1}(Y')$, and by
@@ -847,7 +847,7 @@ and cokernel $\sh{R}$ of
 \]
 are annihilated by a power $\widehat{\sh{M}}^{\,n}$.  Let $T$ be
 the closed subprescheme of $X$ defined by $\sh{M}^n$, whose
-underlying space is $X-U$, and let $j:T\to X$ be the canonical
+underlying space is $X\setmin U$, and let $j:T\to X$ be the canonical
 injection.  Its extension
 $\widehat{j}:\widehat{T}\to\widehat{X}$ is the canonical injection
 \sref[I]{I.10.14.7}, and we may write
@@ -883,7 +883,7 @@ $\widehat{S}$, $\widehat{X}$, and $\widehat{Y}$ be the completions
 of $S$, $X$, and $Y$ along $S'$, $u^{-1}(S')$, and $v^{-1}(S')$,
 respectively.  For every $S$-morphism $f:X\to Y$, let
 $\widehat{f}:\widehat{X}\to\widehat{Y}$ be its extension to the
-completions.  Then the map $f\mapsto\widehat{f}$ is a bijection
+completions.  Then the map $f\leadsto\widehat{f}$ is a bijection
 \[
   \Hom_S(X,Y)
   \xrightarrow{\ \sim\ }
@@ -955,20 +955,20 @@ Let $g:X\to T$ be the inverse of $p\circ i$, and put
 \]
 Then $f:X\to Y$ has graph $\Gamma_f=i\circ g$.  Since
 $\widehat{g}$ is the inverse of
-$\widehat{p\circ i}$, we have
+$(p\circ i)^{\widehat{\,}}$, we have
 \[
-  \widehat{\Gamma_f}
+  (\Gamma_f)^{\widehat{\,}}
   =\widehat{i}\circ\widehat{g}
   =j\circ w
   =\Gamma_h.
 \]
-But $\widehat{\Gamma_f}=\Gamma_{\widehat{f}}$
+But $(\Gamma_f)^{\widehat{\,}}=\Gamma_{\widehat{f}}$
 \sref[I]{I.10.9.8}; hence $h=\widehat{f}$, which completes the
 proof.
 \end{proof}
 
 In categorical language, the functor
-$X\mapsto\widehat{X}$ is therefore fully faithful
+$X\leadsto\widehat{X}$ is therefore fully faithful
 \sref[0]{0.8.1.6} from the category of preschemes proper over
 $\Spec(A)$ to the category of formal preschemes proper over
 $\Spf(A)$, for every adic Noetherian ring $A$.  It consequently
@@ -1322,15 +1322,15 @@ $Z'\cap X_0=\varnothing$, and proves that $P\subset Z$.
 \section*{BIBLIOGRAPHY (continued)}
 
 \begin{flushleft}
-\egabib{III-27}{27}[27] P. Gabriel, \emph{Des catégories abéliennes}, thesis, Paris (1961).
+\egabib{III-27}{27}[27] P. \textsc{Gabriel}, \emph{Des catégories abéliennes}, thesis, Paris (1961).
 
 \medskip
-\egabib{III-28}{28}[28] J. E. Roos, \emph{Sur les foncteurs dérivés de $\varprojlim$.
-Applications}, C. R. Acad. Sci. Paris, vol. CCLII, 1961, pp. 3702--3704.
+\egabib{III-28}{28}[28] J. E. \textsc{Roos}, Sur les foncteurs dérivés de $\varprojlim$.
+Applications, C. R. Acad. Sci. Paris, vol. CCLII, 1961, pp. 3702-3704.
 
 \medskip
-\egabib{III-29}{29}[29] H. Cartan, \emph{Séminaire de l'École Normale Supérieure},
-13th year (1960--1961), lecture no. 11.
+\egabib{III-29}{29}[29] H. \textsc{Cartan}, Séminaire de l'École Normale Supérieure,
+13th year (1960-1961), lecture no. 11.
 \end{flushleft}
 
 \clearpage
@@ -1338,122 +1338,122 @@ Applications}, C. R. Acad. Sci. Paris, vol. CCLII, 1961, pp. 3702--3704.
 \section*{INDEX OF NOTATION}
 
 \begin{flushleft}
-$\Set$: 0, 8.1.1.
+$\Set$: \textbf{0}, 8.1.1.
 
 $h_X(Y)$, $h_X(u)$ ($X$, $Y$ objects of a category $\C$, $u$ a morphism
-of $\C$): 0, 8.1.1.
+of $\C$): \textbf{0}, 8.1.1.
 
-$h_w(Y)$ ($Y$ an object and $w$ a morphism of $\C$): 0, 8.1.2.
+$h_w(Y)$ ($Y$ an object and $w$ a morphism of $\C$): \textbf{0}, 8.1.2.
 
-$Z_k(E_r^{pq})$, $B_k(E_r^{pq})$ ($k\geq r$): 0, 11.1.1.
+$Z_k(E_r^{pq})$, $B_k(E_r^{pq})$ ($k\geq r$): \textbf{0}, 11.1.1.
 
-$Z_\infty(E_2^{pq})$, $B_\infty(E_2^{pq})$: 0, 11.1.1.
+$Z_\infty(E_2^{pq})$, $B_\infty(E_2^{pq})$: \textbf{0}, 11.1.1.
 
-$K^\bullet$, $K_\bullet$ (complexes): 0, 11.2.1.
+$K^\bullet$, $K_\bullet$ (complexes): \textbf{0}, 11.2.1.
 
-$K^{\bullet\bullet}$, $K_{\bullet\bullet}$ (bicomplexes): 0, 11.2.1.
+$K^{\bullet\bullet}$, $K_{\bullet\bullet}$ (bicomplexes): \textbf{0}, 11.2.1.
 
 $B^i(K^\bullet)$, $Z^i(K^\bullet)$, $H^i(K^\bullet)$,
-$H^\bullet(K^\bullet)$: 0, 11.2.1.
+$H^\bullet(K^\bullet)$: \textbf{0}, 11.2.1.
 
 $B_i(K_\bullet)$, $Z_i(K_\bullet)$, $H_i(K_\bullet)$,
-$H_\bullet(K_\bullet)$: 0, 11.2.1.
+$H_\bullet(K_\bullet)$: \textbf{0}, 11.2.1.
 
-$T(K^\bullet)$, $T(K_\bullet)$ ($T$ a functor): 0, 11.2.1.
+$T(K^\bullet)$, $T(K_\bullet)$ ($T$ a functor): \textbf{0}, 11.2.1.
 
-$E(K^\bullet)$ ($K^\bullet$ a filtered complex): 0, 11.2.2.
+$E(K^\bullet)$ ($K^\bullet$ a filtered complex): \textbf{0}, 11.2.2.
 
 $K^{i,\bullet}$, $K^{\bullet,j}$, $Z_{\mathrm{II}}^p(K^{i,\bullet})$,
 $B_{\mathrm{II}}^p(K^{i,\bullet})$, $H_{\mathrm{II}}^p(K^{i,\bullet})$,
 $Z_{\mathrm I}^p(K^{\bullet,j})$, $B_{\mathrm I}^p(K^{\bullet,j})$,
-$H_{\mathrm I}^p(K^{\bullet,j})$: 0, 11.3.1.
+$H_{\mathrm I}^p(K^{\bullet,j})$: \textbf{0}, 11.3.1.
 
 $H_{\mathrm{II}}^p(K^{\bullet\bullet})$,
 $Z_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet}))$,
 $B_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet}))$,
 $H_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet}))$,
-$H^n(K^{\bullet\bullet})$: 0, 11.3.1.
+$H^n(K^{\bullet\bullet})$: \textbf{0}, 11.3.1.
 
 $F_{\mathrm I}^p(K^{\bullet\bullet})$,
 $F_{\mathrm{II}}^p(K^{\bullet\bullet})$, ${}'E(K^{\bullet\bullet})$,
-${}''E(K^{\bullet\bullet})$: 0, 11.3.2.
+${}''E(K^{\bullet\bullet})$: \textbf{0}, 11.3.2.
 
 $K_{i,\bullet}$, $K_{\bullet,j}$, $H_p^{\mathrm{II}}(K_{i,\bullet})$,
 $H_p^{\mathrm I}(K_{\bullet,j})$, $H_p^{\mathrm{II}}(K_{\bullet\bullet})$,
 $H_p^{\mathrm I}(K_{\bullet\bullet})$,
 $H_q^{\mathrm I}(H_p^{\mathrm{II}}(K_{\bullet\bullet}))$,
 $H_q^{\mathrm{II}}(H_p^{\mathrm I}(K_{\bullet\bullet}))$,
-$H_n(K_{\bullet\bullet})$: 0, 11.3.5.
+$H_n(K_{\bullet\bullet})$: \textbf{0}, 11.3.5.
 
-$\RR^\bullet T(K^\bullet)$ ($T$ an additive covariant functor): 0, 11.4.3.
+$\RR^\bullet T(K^\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.4.3.
 
 $\RR^\bullet T(K^\bullet,K'^{\bullet})$ ($T$ an additive covariant
-bifunctor): 0, 11.4.6.
+bifunctor): \textbf{0}, 11.4.6.
 
-$\LL_\bullet T(K_\bullet)$ ($T$ an additive covariant functor): 0, 11.6.2.
+$\LL_\bullet T(K_\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.6.2.
 
 $\LL_\bullet T(K_\bullet,K'_\bullet)$ ($T$ an additive covariant
-bifunctor): 0, 11.6.6.
+bifunctor): \textbf{0}, 11.6.6.
 
 $\LL_\bullet T(K_{\bullet\bullet})$ ($T$ an additive covariant functor):
-0, 11.7.2.
+\textbf{0}, 11.7.2.
 
 $|\sigma|$, $\Sigma(A)$, $\mathrm C_\bullet(A)$, $\mathrm L_\bullet(A)$
-($A$ a finite set, $\sigma$ a simplex of $A$): 0, 11.8.1.
+($A$ a finite set, $\sigma$ a simplex of $A$): \textbf{0}, 11.8.1.
 
 $\mathrm C^\bullet(A,B;\sh{S})$, $\mathrm L^\bullet(A,B;\sh{S})$
-($A$, $B$ finite sets, $\sh{S}$ a coefficient system): 0, 11.8.4.
+($A$, $B$ finite sets, $\sh{S}$ a coefficient system): \textbf{0}, 11.8.4.
 
 $\mathrm P^\bullet(A,B;\sh{S})$ ($A$, $B$ finite sets, $\sh{S}$ a
-coefficient system): 0, 11.8.6.
+coefficient system): \textbf{0}, 11.8.6.
 
 $\mathrm C^\bullet(A,B;\sh{S}^\bullet)$,
 $\mathrm L^\bullet(A,B;\sh{S}^\bullet)$ ($A$, $B$ finite sets,
-$\sh{S}^\bullet$ a complex of coefficient systems): 0, 11.8.8.
+$\sh{S}^\bullet$ a complex of coefficient systems): \textbf{0}, 11.8.8.
 
 $\mathrm P^\bullet(A,B;\sh{S}^\bullet)$ ($A$, $B$ finite sets,
-$\sh{S}^\bullet$ a complex of coefficient systems): 0, 11.8.10.
+$\sh{S}^\bullet$ a complex of coefficient systems): \textbf{0}, 11.8.10.
 
 $\chi(M^\bullet)$ ($M^\bullet$ a finite complex of finite-length modules):
-0, 11.10.1.
+\textbf{0}, 11.10.1.
 
-$\check C^\bullet(\mathfrak U,\sh{F})$ ($\sh{F}$ a sheaf of abelian groups
-on $X$, $\mathfrak U$ an open cover of $X$): 0, 12.1.2.
+$C^\bullet(\mathfrak U,\sh{F})$ ($\sh{F}$ a sheaf of abelian groups
+on $X$, $\mathfrak U$ an open cover of $X$): \textbf{0}, 12.1.2.
 
 $\RR^p f_*(\sh{F})$ ($f:X\to Y$ a morphism of ringed spaces,
-$\sh{F}$ a sheaf of $\sh{O}_X$-Modules): 0, 12.2.1.
+$\sh{F}$ a sheaf of $\sh{O}_X$-Modules): \textbf{0}, 12.2.1.
 
 $\sh{H}^p(f,\sh{K}^\bullet)$,
 $\sh{H}^p_f(\sh{K}^\bullet)$, ${}'E(f,\sh{K}^\bullet)$,
 ${}''E(f,\sh{K}^\bullet)$ ($f:X\to Y$ a morphism of ringed spaces,
-$\sh{K}^\bullet$ a complex of $\sh{O}_X$-Modules): 0, 12.4.1.
+$\sh{K}^\bullet$ a complex of $\sh{O}_X$-Modules): \textbf{0}, 12.4.1.
 
 $\mathbf H^\bullet(X,\sh{K}^\bullet)$,
 $\mathbf H^\bullet(V,\sh{K}^\bullet)$ ($X$ a ringed space,
 $\sh{K}^\bullet$ a complex of $\sh{O}_X$-Modules, $V$ open in $X$):
-0, 12.4.2.
+\textbf{0}, 12.4.2.
 
-$\operatorname{gr}^\bullet(A)$ ($A$ a projective system satisfying (ML)):
-0, 13.4.2.
+$\mathbf{gr}^\bullet(A)$ ($A$ a projective system satisfying (ML)):
+\textbf{0}, 13.4.2.
 
-$E(A)$ ($A$ a filtered object): 0, 13.6.4.
+$E(A)$ ($A$ a filtered object): \textbf{0}, 13.6.4.
 
 $K_\bullet(\mathbf f)$, $i_{\mathbf f}$ ($\mathbf f$ a finite family of
-elements of a ring): III, 1.1.1.
+elements of a ring): \textbf{III}, 1.1.1.
 
 $K^\bullet(\mathbf f,M)$, $K_\bullet(\mathbf f,M)$ ($\mathbf f$ a finite
-family of elements of a ring $A$, $M$ an $A$-module): III, 1.1.2.
+family of elements of a ring $A$, $M$ an $A$-module): \textbf{III}, 1.1.2.
 
 $H^\bullet(\mathbf f,M)$, $H_\bullet(\mathbf f,M)$ ($\mathbf f$ a finite
-family of elements of a ring $A$, $M$ an $A$-module): III, 1.1.3.
+family of elements of a ring $A$, $M$ an $A$-module): \textbf{III}, 1.1.3.
 
 $C^\bullet((\mathbf f),M)$, $H^\bullet((\mathbf f),M)$ ($\mathbf f$ a
-finite family of elements of a ring $A$, $M$ an $A$-module): III, 1.1.6.
+finite family of elements of a ring $A$, $M$ an $A$-module): \textbf{III}, 1.1.6.
 
-$H^\bullet(U,\sh{F}^{(*)})$,
-$H^\bullet(\mathfrak U,\sh{F}^{(*)})$ ($\sh{F}$ a quasi-coherent
+$H^\bullet(U,\sh{F}(*))$,
+$H^\bullet(\mathfrak U,\sh{F}(*))$ ($\sh{F}$ a quasi-coherent
 $\sh{O}_X$-Module, $U$ open in $X$, $\mathfrak U$ an open cover of $X$):
-III, 2.1.1.
+\textbf{III}, 2.1.1.
 \end{flushleft}
 
 \clearpage
@@ -1461,149 +1461,149 @@ III, 2.1.1.
 \section*{TERMINOLOGICAL INDEX}
 
 \begin{flushleft}
-Abutment of a spectral sequence: 0, 11.1.1.
+Abutment of a spectral sequence: \textbf{0}, 11.1.1.
 
-Algebraizable ($\sh{O}_X$-Module): III, 5.2.1.
+Algebraizable ($\sh{O}_{\widehat X}$-Module): \textbf{III}, 5.2.1.
 
-Algebraizable (formal scheme): III, 5.4.2.
+Algebraizable (formal scheme): \textbf{III}, 5.4.2.
 
-Analytically integral (ring): III, 4.3.6.
+Analytically integral (ring): \textbf{III}, 4.3.6.
 
-Quasi-compact map: 0, 9.1.1.
+Quasi-compact map: \textbf{0}, 9.1.1.
 
-Augmentation of a resolution: 0, 11.4.1.
+Augmentation of a resolution: \textbf{0}, 11.4.1.
 
-Euler--Poincaré characteristic of a complex: 0, 11.10.1.
+Euler--Poincaré characteristic of a complex: \textbf{0}, 11.10.1.
 
 Euler--Poincaré characteristic of a coherent $\sh{O}_X$-Module
-($X$ projective over $\Spec(A)$, $A$ an Artinian ring): III, 2.5.1.
+($X$ projective over $\Spec(A)$, $A$ an Artinian ring): \textbf{III}, 2.5.1.
 
-Bi-alternating cochain: 0, 11.8.4.
+Bi-alternating cochain: \textbf{0}, 11.8.4.
 
-Complex defined by a bicomplex: 0, 11.3.1.
+Complex defined by a bicomplex: \textbf{0}, 11.3.1.
 
-Exterior algebra complex: III, 1.1.1.
+Exterior algebra complex: \textbf{III}, 1.1.1.
 
-Condition (ML): 0, 13.1.2.
+Condition (ML): \textbf{0}, 13.1.2.
 
-Constructible (subset, set): 0, 9.1.2.
+Constructible (subset, set): \textbf{0}, 9.1.2.
 
-Constructible (function): 0, 9.3.1.
+Constructible (function): \textbf{0}, 9.3.1.
 
-Cup product: 0, 12.1.2.
+Cup product: \textbf{0}, 12.1.2.
 
-Di-homomorphism for algebraic structures on categories: 0, 8.2.1.
+Di-homomorphism for algebraic structures on categories: \textbf{0}, 8.2.1.
 
-Exact (subset) in an abelian category: III, 3.1.1.
+Exact (subset) in an abelian category: \textbf{III}, 3.1.1.
 
-Essentially constant (projective system): 0, 13.4.2.
+Essentially constant (projective system): \textbf{0}, 13.4.2.
 
-Stein factorization: III, 4.3.3.
+Stein factorization: \textbf{III}, 4.3.3.
 
 Co-discrete, co-separated, discrete, exhaustive, finite, separated
-(filtration): 0, 11.1.3.
+(filtration): \textbf{0}, 11.1.3.
 
-Final (object) of a category: 0, 8.1.10.
+Final (object) of a category: \textbf{0}, 8.1.10.
 
-Finite (morphism) of formal preschemes: III, 4.8.2.
+Finite (morphism) of formal preschemes: \textbf{III}, 4.8.2.
 
 Finite (formal prescheme) over $\mathfrak Y$,
-$\mathfrak Y$-finite (formal prescheme): III, 4.8.2.
+$\mathfrak Y$-finite (formal prescheme): \textbf{III}, 4.8.2.
 
-Canonical covariant functor $\C\to\CHom(\C\op,\Set)$: 0, 8.1.2.
+Canonical covariant functor $\C\to\CHom(\C\op,\Set)$: \textbf{0}, 8.1.2.
 
-Arithmetic genus: III, 2.5.1.
+Arithmetic genus: \textbf{III}, 2.5.1.
 
-Geometrically connected (fibre): III, 4.3.4.
+Geometrically connected (fibre): \textbf{III}, 4.3.4.
 
-Homomorphism of algebraic structures on categories: 0, 8.2.1.
+Homomorphism of algebraic structures on categories: \textbf{0}, 8.2.1.
 
 Hypercohomology of a functor with respect to a complex $K^\bullet$:
-0, 11.4.3.
+\textbf{0}, 11.4.3.
 
 Hypercohomology of a bifunctor with respect to two complexes
-$K^\bullet$, $K'^{\bullet}$: 0, 11.4.6.
+$K^\bullet$, $K'^{\bullet}$: \textbf{0}, 11.4.6.
 
 Hyperhomology of a functor with respect to a complex $K_\bullet$:
-0, 11.6.2.
+\textbf{0}, 11.6.2.
 
 Hyperhomology of a bifunctor with respect to two complexes $K_\bullet$,
-$K'_\bullet$: 0, 11.6.6.
+$K'_\bullet$: \textbf{0}, 11.6.6.
 
-Hyperhomology of a functor with respect to a bicomplex: 0, 11.7.2.
+Hyperhomology of a functor with respect to a bicomplex: \textbf{0}, 11.7.2.
 
-Locally constructible (set): 0, 9.1.11.
+Locally constructible (set): \textbf{0}, 9.1.11.
 
-External (internal) composition law on the objects of a category: 0, 8.2.1.
+External (internal) composition law on the objects of a category: \textbf{0}, 8.2.1.
 
 \oldpage[III]{164}
 
-Filtered $S$-$\C$-module, graded $\operatorname{gr}^\bullet(S)$-$\C$-module,
-bigraded $\operatorname{gr}^{\bullet\bullet}(S)$-$\C$-module: 0, 13.6.6.
+Filtered $S$-$\C$-module, graded $\mathbf{gr}^\bullet(S)$-$\C$-module,
+bigraded $\mathbf{gr}^\bullet(S)$-$\C$-module: \textbf{0}, 13.6.6.
 
-Morphism of spectral sequences: 0, 11.1.2.
+Morphism of spectral sequences: \textbf{0}, 11.1.2.
 
-Geometric number of connected components of a fibre: III, 4.3.4.
+Geometric number of connected components of a fibre: \textbf{III}, 4.3.4.
 
-Group object in $\C$, $\C$-group, $\C$-ring, $\C$-module: 0, 8.2.3.
+Group object in $\C$, $\C$-group, $\C$-ring, $\C$-module: \textbf{0}, 8.2.3.
 
 Object of boundaries, object of coboundaries, object of cocycles, object of
-cycles: 0, 11.2.1.
+cycles: \textbf{0}, 11.2.1.
 
-Object of universal images: 0, 13.1.1.
+Object of universal images: \textbf{0}, 13.1.1.
 
-Graded object associated with a projective system satisfying (ML): 0, 13.4.2.
+Graded object associated with a projective system satisfying (ML): \textbf{0}, 13.4.2.
 
-Graded object bounded below (above): 0, 11.2.1.
+Graded object bounded below (above): \textbf{0}, 11.2.1.
 
-Proper subset (over $\mathfrak Y$) of a formal prescheme: III, 3.4.1.
+Proper subset (over $\mathfrak Y$) of a formal prescheme: \textbf{III}, 3.4.1.
 
-Full (subcategory): 0, 8.1.5.
+Full (subcategory): \textbf{0}, 8.1.5.
 
-Fully faithful (functor): 0, 8.1.5.
+Fully faithful (functor): \textbf{0}, 8.1.5.
 
-Hilbert polynomial: III, 2.5.3.
+Hilbert polynomial: \textbf{III}, 2.5.3.
 
-Proper (morphism) of formal preschemes: III, 3.4.1.
+Proper (morphism) of formal preschemes: \textbf{III}, 3.4.1.
 
-Representable (functor): 0, 8.1.8.
+Representable (functor): \textbf{0}, 8.1.8.
 
 Cohomological, right, left, homological, injective, free, flat, projective
-(resolution): 0, 11.4.1.
+(resolution): \textbf{0}, 11.4.1.
 
-Right, injective Cartan--Eilenberg resolution: 0, 11.4.2.
+Right, injective Cartan--Eilenberg resolution: \textbf{0}, 11.4.2.
 
-Left, projective Cartan--Eilenberg resolution: 0, 11.6.1.
+Left, projective Cartan--Eilenberg resolution: \textbf{0}, 11.6.1.
 
-Retrocompact (set): 0, 9.1.1.
+Retrocompact (set): \textbf{0}, 9.1.1.
 
-Strict (projective system): 0, 13.4.2.
+Strict (projective system): \textbf{0}, 13.4.2.
 
-Spectral sequence in an abelian category: 0, 11.1.1.
+Spectral sequence in an abelian category: \textbf{0}, 11.1.1.
 
 Weakly convergent, regular, coregular, biregular (spectral sequence):
-0, 11.1.3.
+\textbf{0}, 11.1.3.
 
-Degenerate spectral sequence: 0, 11.1.6.
+Degenerate spectral sequence: \textbf{0}, 11.1.6.
 
-Spectral sequence of a functor relative to a filtered object: 0, 13.6.4.
+Spectral sequence of a functor relative to a filtered object: \textbf{0}, 13.6.4.
 
-Spectral sequences of a bicomplex: 0, 11.3.2 and 11.3.5.
+Spectral sequences of a bicomplex: \textbf{0}, 11.3.2 and 11.3.5.
 
 Hypercohomology spectral sequences of a functor with respect to a complex:
-0, 11.4.3.
+\textbf{0}, 11.4.3.
 
 Hyperhomology spectral sequences of a functor with respect to a complex:
-0, 11.6.2.
+\textbf{0}, 11.6.2.
 
 Hyperhomology spectral sequences of a functor with respect to a bicomplex:
-0, 11.7.2.
+\textbf{0}, 11.7.2.
 
-Coefficient system: 0, 11.8.4.
+Coefficient system: \textbf{0}, 11.8.4.
 
-Unibranch (ring, point): III, 4.3.6.
+Unibranch (ring, point): \textbf{III}, 4.3.6.
 
-Universally open (morphism): III, 4.3.9.
+Universally open (morphism): \textbf{III}, 4.3.9.
 \end{flushleft}
 
 \clearpage
@@ -1611,6 +1611,8 @@ Universally open (morphism): III, 4.3.9.
 \section*{TABLE OF CONTENTS}
 
 \begin{flushleft}
+\hfill\textsc{Pages}
+
 \textsc{Chapter 0.} --- \textbf{Preliminaries (continued)} \dotfill 5
 
 \medskip

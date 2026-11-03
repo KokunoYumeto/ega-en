@@ -65,7 +65,7 @@ contraction $\mathfrak r\cap A$ also has height $1$
 \]
 
 Let $A'$ be the integral closure of $A$ and put
-$S=A-\mathfrak p$.  The integral closure of $A_{\mathfrak p}$ is
+$S=A\setmin\mathfrak p$.  The integral closure of $A_{\mathfrak p}$ is
 $S^{-1}A'$ (Bourbaki, \emph{Alg\`ebre commutative}, chap.~V,
 \S1, no.~5, prop.~17); it equals $A_{\mathfrak p}$ because this
 ring is a discrete valuation ring.  Consequently there is only
@@ -164,7 +164,7 @@ following hypotheses:
 Let $(x_i)_{1\leq i\leq n}$ be a sequence of $n$ elements of
 $A$, and put
 \[
-  \mathfrak J=x_1A+\cdots+x_nA.
+  \mathfrak J=x_1A+\ldots+x_nA.
 \]
 Suppose that:
 \begin{enumerate}[{\rm(i)}]
@@ -177,9 +177,9 @@ Suppose that:
 \end{enumerate}
 Then, for every $i$ with $0\leq i\leq n$, the quotient
 \[
-  A/(x_1A+\cdots+x_iA)
+  A/(x_1A+\ldots+x_iA)
 \]
-is integrally closed and has dimension $\dim(A)-i$.  In
+is integrally closed and has dimension $\dim(A)\setmin i$.  In
 particular, $\mathfrak J$ is prime and equals $\mathfrak p$, the
 ring $A$ is integrally closed, and $(x_i)_{1\leq i\leq n}$ is an
 $A$-regular sequence.
@@ -190,11 +190,11 @@ We argue by induction on $n$.  The assertion is trivial for
 $n=0$ and is Hironaka's lemma for $n=1$, so suppose $n\geq2$.
 Put
 \[
-  \mathfrak J'=x_1A+\cdots+x_{n-1}A,
+  \mathfrak J'=x_1A+\ldots+x_{n-1}A,
 \]
 and let $\mathfrak q$ be a prime minimal among those containing
 $\mathfrak J'$.  Then
-$\operatorname{ht}(\mathfrak q)\leq n-1$
+$\operatorname{ht}(\mathfrak q)\leq n\setmin 1$
 \sref[0]{0.16.3.1}.  We first show that
 $\mathfrak q\subset\mathfrak p$.  If $\mathfrak p'$ is minimal
 among the primes containing $\mathfrak q+x_nA$, then
@@ -216,7 +216,7 @@ $\mathfrak J'A_{\mathfrak p}$ is prime.  Consequently
   \mathfrak q=A\cap\mathfrak J'A_{\mathfrak p}
 \]
 is the unique nonembedded associated prime of
-$A/\mathfrak J'$, and has height $n-1$.  Moreover,
+$A/\mathfrak J'$, and has height $n\setmin 1$.  Moreover,
 \[
   \mathfrak qA_{\mathfrak q}
   =\mathfrak J'A_{\mathfrak q},
@@ -258,8 +258,8 @@ lemma therefore gives
 
 The induction hypothesis applied to
 $x_1,\ldots,x_{n-1}$ now shows that
-$A/(x_1A+\cdots+x_iA)$ is integrally closed and has dimension
-$\dim(A)-i$ for $0\leq i\leq n-1$, and that
+$A/(x_1A+\ldots+x_iA)$ is integrally closed and has dimension
+$\dim(A)\setmin i$ for $0\leq i\leq n\setmin 1$, and that
 $\mathfrak q=\mathfrak J'$.  Hence
 \[
   \mathfrak p=\mathfrak J'+x_nA=\mathfrak J,
@@ -269,7 +269,7 @@ $\dim(A_{\mathfrak p})=n$, and biequidimensionality of $A$
 gives
 \[
   \dim(A/\mathfrak p)
-  =\dim(A)-\dim(A_{\mathfrak p})
+  =\dim(A)\setmin\dim(A_{\mathfrak p})
   =\dim(A)-n.
 \]
 This completes the induction.

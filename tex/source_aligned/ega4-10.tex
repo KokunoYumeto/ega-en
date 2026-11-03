@@ -48,12 +48,12 @@ The following conditions are equivalent:
   \item[\rm a$'$)] For every closed subset $Z$ of $X$, we have $Z=\overline{Z\cap X_0}$.
   \item For every locally quasi-constructible subset $Z\neq\varnothing$ of $X$, we have $Z\cap X_0\neq\varnothing$.
   \item[\rm b$'$)] For every locally quasi-constructible subset $Z$ of $X$, we have $Z\subset\overline{Z\cap X_0}$ (in other words, $Z\cap X_0$ is dense in $Z$).
-  \item The map $U\mapsto U\cap X_0$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(X_0)$ is injective (hence bijective).
-  \item[\rm c$'$)] The map $F\mapsto F\cap X_0$ of $\mathfrak{F}(X)$ into $\mathfrak{F}(X_0)$ is injective (hence bijective).
-  \item[\rm c$''$)] The map $Z\mapsto Z\cap X_0$ of $\mathfrak{Qc}(X)$ into $\mathfrak{Qc}(X_0)$ is injective (hence bijective).
-  \item[\rm c$'''$)] The map $Z\mapsto Z\cap X_0$ of $\mathfrak{Lqc}(X)$ into $\mathfrak{Lqc}(X_0)$ is injective.
+  \item The map $U\leadsto U\cap X_0$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(X_0)$ is injective (hence bijective).
+  \item[\rm c$'$)] The map $F\leadsto F\cap X_0$ of $\mathfrak{F}(X)$ into $\mathfrak{F}(X_0)$ is injective (hence bijective).
+  \item[\rm c$''$)] The map $Z\leadsto Z\cap X_0$ of $\mathfrak{Qc}(X)$ into $\mathfrak{Qc}(X_0)$ is injective (hence bijective).
+  \item[\rm c$'''$)] The map $Z\leadsto Z\cap X_0$ of $\mathfrak{Lqc}(X)$ into $\mathfrak{Lqc}(X_0)$ is injective.
 \end{enumerate}
-Furthermore, when these conditions are satisfied, the map $Z\mapsto Z\cap X_0$ of $\mathfrak{Lqc}(X)$ into $\mathfrak{Lqc}(X_0)$ is bijective.
+Furthermore, when these conditions are satisfied, the map $Z\leadsto Z\cap X_0$ of $\mathfrak{Lqc}(X)$ into $\mathfrak{Lqc}(X_0)$ is bijective.
 \end{proposition}
 
 \begin{proof}
@@ -71,10 +71,10 @@ By virtue of $c)$, we have $(V\cup W)\cap X_0\neq W\cap X_0$, hence $V\cap X_0\n
 
 To see that $b)$ implies $b')$, it suffices to apply $b)$ to $Z\cap U$, where $U$ is an open neighbourhood of an arbitrary point of $Z$.
 As $\overline{Z\cap X_0}\subset\overline{Z}$, it is trivial that $b')$ implies $a')$.
-To show that $a')$ implies $a)$, let us note that if $Z$ is locally closed in $X$, we can write $Z=F-F'$ where $F$ and $F'$ are closed in $X$ and $F'\subset F$; whence $Z\cap X_0=(F\cap X_0)-(F'\cap X_0)$.
+To show that $a')$ implies $a)$, let us note that if $Z$ is locally closed in $X$, we can write $Z=F\setmin F'$ where $F$ and $F'$ are closed in $X$ and $F'\subset F$; whence $Z\cap X_0=(F\cap X_0)\setmin(F'\cap X_0)$.
 If $Z\cap X_0=\varnothing$, then, by virtue of $a')$, we would have $F\cap X_0=F'\cap X_0$, hence $F=F'$, i.e.\ $Z=\varnothing$.
 
-To see that $a)$ implies $c''')$, it suffices to show that if $Z\neq\varnothing$ is locally quasi-constructible, then $Z\cap X_0\neq\varnothing$: indeed, the relation $Z'\cap X_0=Z''\cap X_0$ is equivalent to $((Z'\cup Z'')-(Z'\cap Z''))\cap X_0=\varnothing$.
+To see that $a)$ implies $c''')$, it suffices to show that if $Z\neq\varnothing$ is locally quasi-constructible, then $Z\cap X_0\neq\varnothing$: indeed, the relation $Z'\cap X_0=Z''\cap X_0$ is equivalent to $((Z'\cup Z'')\setmin(Z'\cap Z''))\cap X_0=\varnothing$.
 In other words, it suffices to prove that $a)$ implies $b)$; indeed, replacing $X$ and $X_0$ by $U$ and $U\cap X_0$ respectively, one is reduced to the case where $Z$ is locally closed in $X$, whence the conclusion.
 
 It remains to show that the map $\mathfrak{Lqc}(X)\to\mathfrak{Lqc}(X_0)$ is surjective.
@@ -109,17 +109,17 @@ As every locally closed subset of $U$ is locally closed in $X$, the first assert
 Let $X_0$, $X$ be two topological spaces, $f:X_0\to X$ a continuous map.
 The following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
-  \item The map $U\mapsto f^{-1}(U)$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(X_0)$ is bijective.
-  \item[\rm a$'$)] The map $F\mapsto f^{-1}(F)$ of $\mathfrak{F}(X)$ into $\mathfrak{F}(X_0)$ is bijective.
+  \item The map $U\leadsto f^{-1}(U)$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(X_0)$ is bijective.
+  \item[\rm a$'$)] The map $F\leadsto f^{-1}(F)$ of $\mathfrak{F}(X)$ into $\mathfrak{F}(X_0)$ is bijective.
   \item The topology of $X_0$ is the inverse image by $f$ of that of $X$, and $f(X_0)$ is very dense \sref{IV.10.1.3} in $X$.
-  \item The functor $\sh{F}\mapsto f^*(\sh{F})$ from the category of sheaves of sets (resp.\ sheaves of abelian groups) on $X$ to the category of sheaves of sets (resp.\ sheaves of abelian groups) on $X_0$ is an equivalence of categories.
+  \item The functor $\sh{F}\leadsto f^*(\sh{F})$ from the category of sheaves of sets (resp.\ sheaves of abelian groups) on $X$ to the category of sheaves of sets (resp.\ sheaves of abelian groups) on $X_0$ is an equivalence of categories.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 It is clear that $a)$ and $a')$ are equivalent, and $a)$ implies that the topology of $X_0$ is the inverse image by $f$ of that of $X$.
 On the other hand, if $f(X_0)$ is not very dense in $X$, there are two distinct open subsets $U_1$, $U_2$ of $X$ such that $U_1\cap f(X_0)=U_2\cap f(X_0)$, and hence $f^{-1}(U_1)=f^{-1}(U_2)$, which completes showing that $a)$ implies $b)$.
-Conversely, the condition $b)$ implies that the maps $U\mapsto U\cap f(X_0)$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(f(X_0))$ and $V\mapsto f^{-1}(V)$ of $\mathfrak{O}(f(X_0))$ into $\mathfrak{O}(X_0)$ are bijective, hence so is the composite $U\mapsto f^{-1}(U)$.
+Conversely, the condition $b)$ implies that the maps $U\leadsto U\cap f(X_0)$ of $\mathfrak{O}(X)$ into $\mathfrak{O}(f(X_0))$ and $V\leadsto f^{-1}(V)$ of $\mathfrak{O}(f(X_0))$ into $\mathfrak{O}(X_0)$ are bijective, hence so is the composite $U\leadsto f^{-1}(U)$.
 
 To see that $a)$ implies $c)$, it suffices to apply the definition of $f^*(\sh{F})$ \sref[0]{0.3.7.1} and the axioms for sheaves: $a)$ means that for every open $U$ of $X$, the canonical map $\Gamma(U,\sh{F})\to\Gamma(f^{-1}(U),f^*(\sh{F}))$ is a functorial bijection in $\sh{F}$, whence $c)$.
 It remains to show that $c)$ implies $b)$.
@@ -162,7 +162,7 @@ Let $f:X\to Y$ be a quasi-homeomorphism, $Y'$ a locally quasi-constructible subs
 It is clear by virtue of \sref{IV.10.2.1},~$b)$ that the topology induced on $X'$ by that of $X$ is the inverse image by $f'$ of the topology induced on $Y'$ by that of $Y$.
 On the other hand,
 \oldpage[IV-3]{99}
-let $Z\neq\varnothing$ be a closed subset \emph{in} $Y'$, and $z\in Z$; there is an open neighbourhood $U$ of $z$ in $Y$ such that $U\cap Y'$ is the union of a finite number of closed subsets $Y'_j$ of $U$; if $j$ is an index such that $z\in Y'_j$, $Z\cap Y'_j$ is therefore closed in $U$.
+let $Z\neq\varnothing$ be a closed subset \emph{in} $Y'$, and $z\in Z$; there is an open neighbourhood $U$ of $z$ in $Y$ such that $U\cap Y'$ is the union of a finite number of closed subsets $Y'_i$ of $U$; if $j$ is an index such that $z\in Y'_j$, $Z\cap Y'_j$ is therefore closed in $U$.
 Since $f(X)\cap U$ is very dense in $U$ \sref{IV.10.1.4}, $Z\cap Y'_j\cap f(X)$ is not empty \sref{IV.10.1.2},~$a)$, nor, \emph{a fortiori}, is $Z\cap f(X)$; but as $Z\subset Y'$, we have $Z\cap f(X)=Z\cap f'(X')$; the criterion \sref{IV.10.1.2},~$a)$ shows that $f'(X')$ is very dense in $Y'$, and we conclude by \sref{IV.10.2.1},~$b)$.
 \end{proof}
 
@@ -183,7 +183,7 @@ For $Y'$ to be quasi-compact (resp.\ Noetherian, resp.\ retrocompact in $Y$), it
 \begin{proof}
 Let us prove the first two assertions; by virtue of \sref{IV.10.2.4}, one can restrict to the case where $Y'=Y$.
 To say that $X$ is quasi-compact (resp.\ Noetherian) means that for every increasing filtered family $(U_\alpha)$ in $\mathfrak{O}(X)$ having $X$ as greatest element (resp.\ for every increasing filtered family $(U_\alpha)$ in $\mathfrak{O}(X)$), there exists $\gamma$ such that $U_\alpha=U_\gamma$ for $\alpha\geq\gamma$.
-As $U\mapsto f^{-1}(U)$ is a bijection of $\mathfrak{O}(Y)$ onto $\mathfrak{O}(X)$, our assertion follows immediately from the preceding remark.
+As $U\leadsto f^{-1}(U)$ is a bijection of $\mathfrak{O}(Y)$ onto $\mathfrak{O}(X)$, our assertion follows immediately from the preceding remark.
 
 The quasi-compact open subsets of $X$ are therefore the sets of the form $f^{-1}(U)$ where $U$ is an open quasi-compact subset of $Y$, by virtue of \sref{IV.10.2.1},~$a)$ and of what precedes.
 For $X'$ to be retrocompact in $X$, it is necessary and sufficient that for every quasi-compact open $U$ in $Y$, $f^{-1}(U)\cap X'=f^{-1}(U\cap Y')$ be quasi-compact \sref[$0_{\mathrm{III}}$]{0.9.1.1}; the first part of the proof shows that this amounts to saying that $U\cap Y'$ is quasi-compact for every open quasi-compact $U$, i.e.\ that $Y'$ is retrocompact in $Y$.
@@ -192,7 +192,7 @@ For $X'$ to be retrocompact in $X$, it is necessary and sufficient that for ever
 \begin{proposition}[10.2.7]
 \label{IV.10.2.7}
 Let $f:X\to Y$ be a quasi-homeomorphism.
-Then the map $Z\mapsto f^{-1}(Z)$ of $\mathfrak{P}(Y)$ into $\mathfrak{P}(X)$ defines by restriction the bijections (cf.\ \sref{IV.10.1.1} for the notation):
+Then the map $Z\leadsto f^{-1}(Z)$ of $\mathfrak{P}(Y)$ into $\mathfrak{P}(X)$ defines by restriction the bijections (cf.\ \sref{IV.10.1.1} for the notation):
 \[
   \mathfrak{O}(Y)\xrightarrow{\sim}\mathfrak{O}(X)
 \]
@@ -245,7 +245,7 @@ We conclude that if $f$ is a quasi-homeomorphism, $f^*$ is also an \emph{equival
 Given two ringed spaces $(X,\sh{O}_X)$, $(Y,\sh{O}_Y)$, we will say that a morphism of ringed spaces $f=(\psi,\theta):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$ is a \emph{quasi-isomorphism} if $\psi$ is a quasi-homeomorphism of $X$ into $Y$ and $\theta^\sharp:\psi^*(\sh{O}_Y)\to\sh{O}_X$ an isomorphism of sheaves of rings; when this is so, the ringed space $(X,\sh{O}_X)$ is entirely determined, up to isomorphism, by $(Y,\sh{O}_Y)$, the space $X$, and the quasi-homeomorphism $\psi$ (which can be chosen arbitrarily).
 When $f$ is a quasi-isomorphism of ringed spaces, the functor
 \[
-  \sh{F}\mapsto f^*(\sh{F})
+  \sh{F}\leadsto f^*(\sh{F})
 \]
 is an \emph{equivalence} of the category of $\sh{O}_Y$-Modules and of that of $\sh{O}_X$-Modules, since $f^*(\sh{F})$ is canonically identified here with $\psi^*(\sh{F})$.
 We conclude for example isomorphisms of bi-$\partial$-functors
@@ -423,7 +423,7 @@ Every $S$-endomorphism of $X$ which is radicial is surjective (hence bijective).
 \end{env}
 
 \begin{proof}
-Let $f:X\to S$ be the structural morphism, $g:X\to X$ the $S$-endomorphism considered, and, for every $s\in S$, let $g_s$ be the morphism deduced from $g$ by the base change $\operatorname{Spec}(k(s))\to S$, which is a $k(s)$-endomorphism of the fibre $f^{-1}(s)=X\times_S\operatorname{Spec}(k(s))$.
+Let $f:X\to S$ be the structural morphism, $g:X\to X$ the $S$-endomorphism considered, and, for every $s\in S$, let $g_s$ be the morphism deduced from $g$ by the base change $\operatorname{Spec}(\boldsymbol{k}(s))\to S$, which is a $\boldsymbol{k}(s)$-endomorphism of the fibre $f^{-1}(s)=X\times_S\operatorname{Spec}(\boldsymbol{k}(s))$.
 
 To prove that $g$ is surjective, it suffices to prove that $g_s$ is surjective for every $s\in S$, hence one can (by virtue of \sref[I]{I.3.5.7}) reduce to the case where $S=\operatorname{Spec}(k)$ is the spectrum of a field $k$, in which case $f$ is a morphism of finite presentation, since $S$ is Noetherian.
 Applying \sref{IV.8.9.1} and \sref{IV.8.10.5},~(vii), one reduces to the case where $S=\operatorname{Spec}(A)$, where $A$ is a sub-$\mathbf{Z}$-algebra of finite type of $k$.
@@ -432,18 +432,18 @@ But then $X$ is a Jacobson prescheme \sref{IV.10.4.7}, and $g(X)$ is constructib
 \begin{lemma}[10.4.11.1]
 \label{IV.10.4.11.1}
 Let $Y$ be a $\mathbf{Z}$-prescheme of finite type.
-\begin{enumerate}[label=(\roman*)]
-  \item For a point $y\in Y$ to be closed in $Y$, it is necessary and sufficient that $k(y)$ be a finite field.
-  \item For every prime number $p$ and every integer $d\geq 1$, the set of points $y\in Y$ such that $k(y)$ is an extension of $\mathbf{F}_p$ of degree dividing $d$ is finite.
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item For a point $y\in Y$ to be closed in $Y$, it is necessary and sufficient that $\boldsymbol{k}(y)$ be a finite field.
+  \item For every prime number $p$ and every integer $d\geq 1$, the set of points $y\in Y$ such that $\boldsymbol{k}(y)$ is an extension of $\mathbf{F}_p$ of degree dividing $d$ is finite.
 \end{enumerate}
 \end{lemma}
 
 The assertion (i) follows from the fact that the image of a closed point $y\in Y$ in $\operatorname{Spec}(\mathbf{Z})$ is a closed point \sref{IV.10.4.7}, in other words a prime number, and from \sref[I]{I.6.4.2}.
 On the other hand, as $Y$ is a finite union of affine open subsets of finite type over $\mathbf{Z}$, one can restrict to proving (ii) in the case where $Y=\operatorname{Spec}(C)$, where $C$ is a $\mathbf{Z}$-algebra of finite type.
-Now, the points $y\in Y$ such that the degree of $k(y)$ over $\mathbf{F}_p$ divides $d$ are precisely the kernels of the homomorphisms $C\to\mathbf{F}_{p^d}$; but if $(t_i)$ is a system of generators of the $\mathbf{Z}$-algebra $C$, every homomorphism of $C$ is determined by its values on the elements $t_i$, and there are therefore only a finite number of homomorphisms of $C$ into a finite field.
+Now, the points $y\in Y$ such that the degree of $\boldsymbol{k}(y)$ over $\mathbf{F}_p$ divides $d$ are precisely the kernels of the homomorphisms $C\to\mathbf{F}_{p^d}$; but if $(t_i)$ is a system of generators of the $\mathbf{Z}$-algebra $C$, every homomorphism of $C$ is determined by its values on the elements $t_i$, and there are therefore only a finite number of homomorphisms of $C$ into a finite field.
 
-This being so, since $X$ is a $\mathbf{Z}$-prescheme of finite type, let $T_{p,d}$ be the set of closed points $z\in X$ such that $k(z)$ is an extension of $\mathbf{F}_p$ of degree dividing $d$; it follows from \sref{IV.10.4.11.1} that the set $T_{p,d}$ is finite and that the set of closed points of $X$ is the union of the $T_{p,d}$.
-Furthermore, if $z\in T_{p,d}$ and if $h$ is any endomorphism of $X$, $k(h(z))$ is isomorphic to a subfield of $k(z)$, hence $h(z)\in T_{p,d}$; in other words $T_{p,d}$ is \emph{stable} under every endomorphism of $X$.
+This being so, since $X$ is a $\mathbf{Z}$-prescheme of finite type, let $T_{p,d}$ be the set of closed points $z\in X$ such that $\boldsymbol{k}(z)$ is an extension of $\mathbf{F}_p$ of degree dividing $d$; it follows from \sref{IV.10.4.11.1} that the set $T_{p,d}$ is finite and that the set of closed points of $X$ is the union of the $T_{p,d}$.
+Furthermore, if $z\in T_{p,d}$ and if $h$ is any endomorphism of $X$, $\boldsymbol{k}(h(z))$ is isomorphic to a subfield of $\boldsymbol{k}(z)$, hence $h(z)\in T_{p,d}$; in other words $T_{p,d}$ is \emph{stable} under every endomorphism of $X$.
 As $g$ is by hypothesis injective, its restriction to $T_{p,d}$ is \emph{bijective} since $T_{p,d}$ is finite, which completes proving the proposition.
 
 We will see further on \sref{IV.17.9.6} that when one further supposes that $X$ is an $S$-prescheme of finite presentation, and on the other hand that $g$ is a monomorphism, then one can assert that $g$ is an \emph{automorphism} of $X$.
@@ -465,7 +465,7 @@ The conditions equivalent to $a)$ through $d)$ of \sref{IV.10.4.4} are then also
 
 \begin{proof}
 \oldpage[IV-3]{105}
-It follows indeed from the Artin--Tate theorem \sref[0]{0.16.3.3} that conditions $a)$ and $f)$ are equivalent.
+It follows indeed from the Artin-Tate theorem \sref[0]{0.16.3.3} that conditions $a)$ and $f)$ are equivalent.
 Condition $f)$ implies that $\operatorname{Spec}(B)$ is the union of the set of its closed points and of its generic point, hence $f)$ implies $e)$ without assuming $B$ to be Noetherian.
 Finally, $e)$ implies $d)$ without assuming $B$ to be Noetherian, for the generic point $x$ of $X$ is the complement of the union of the closures $\overline{\{y\}}$, where $y$ ranges over the set of points $y\neq x$, and as these points are finite in number, $\{x\}$ is the complement of a closed set in $X$.
 \end{proof}
@@ -503,7 +503,7 @@ A Noetherian prescheme $X$ satisfying the equivalent conditions of \sref{IV.10.5
 \begin{proposition}[10.5.5]
 \label{IV.10.5.5}
 Let $X$ be a Noetherian prescheme.
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item The set $X_0$ of points $x\in X$ such that $\overline{\{x\}}$ is finite is very dense in $X$.
   \item For $X$ to be a Jacobson prescheme, it is necessary and sufficient that there exist no sub-prescheme of $X$ isomorphic to the spectrum of a semi-local integral ring of dimension $1$.
 \end{enumerate}
@@ -526,19 +526,19 @@ We conclude by \sref{IV.10.3.3}.
 \begin{proposition}[10.5.7]
 \label{IV.10.5.7}
 Let $X$ be a locally Noetherian prescheme, $Y$ a closed subset of $X$ such that every non-empty closed subset of $X$ meets $Y$.
-Then the subprescheme induced on the open subset $X-Y$ is a Jacobson prescheme.
+Then the subprescheme induced on the open subset $X\setmin Y$ is a Jacobson prescheme.
 \end{proposition}
 
 \begin{proof}
-Apply the criterion \sref{IV.10.5.5},~(ii), and suppose that there is in $X-Y$ a sub-prescheme $Z$ which is the spectrum of a semi-local integral ring of dimension $1$. The generic point $z$ of $Z$ is then isolated in $Z$ (or in the closure $\overline{Z}$ of $Z$ in $X$), and $Z$ is distinct from $\{z\}$.
+Apply the criterion \sref{IV.10.5.5},~(ii), and suppose that there is in $X\setmin Y$ a sub-prescheme $Z$ which is the spectrum of a semi-local integral ring of dimension $1$. The generic point $z$ of $Z$ is then isolated in $Z$ (or in the closure $\overline{Z}$ of $Z$ in $X$), and $Z$ is distinct from $\{z\}$.
 Let $y\neq z$ be a point of $Z$; as it does not belong to $Y$, it is not a closed point in $X$, and its closure $\overline{\{y\}}$ in $X$ meets $Y$ at a point $x\neq y$, which is therefore a specialisation of $y$.
-The existence of the chain $\{x\}\subset\overline{\{y\}}\subset\overline{\{z\}}$ then shows that the dimension of $\overline{\{z\}}$ would be $\geq 2$, and the same would be true of the dimension of $U\cap\overline{\{z\}}$, where $U$ is an affine (hence Noetherian) open neighbourhood of $x$ in $X$.
+The existence of the chain $\overline{\{x\}}\subset\overline{\{y\}}\subset\overline{\{z\}}$ then shows that the dimension of $\overline{\{z\}}$ would be $\geq 2$, and the same would be true of the dimension of $U\cap\overline{\{z\}}$, where $U$ is an affine (hence Noetherian) open neighbourhood of $x$ in $X$.
 But this contradicts the fact that the generic point $z$ of $U\cap\overline{\{z\}}$ is isolated in $U\cap\overline{\{z\}}$ \sref{IV.10.5.3}.
 \end{proof}
 
 \begin{corollary}[10.5.8]
 \label{IV.10.5.8}
-Let $A$ be a Noetherian ring; for every element $f$ of the radical $\mathfrak{R}$ of $A$, the ring $A_f$ is a Jacobson ring, and the open subset $\operatorname{Spec}(A)-V(\mathfrak{R})$ is a Jacobson scheme.
+Let $A$ be a Noetherian ring; for every element $f$ of the radical $\mathfrak{R}$ of $A$, the ring $A_f$ is a Jacobson ring, and the open subset $\operatorname{Spec}(A)\setmin V(\mathfrak{R})$ is a Jacobson scheme.
 \end{corollary}
 
 \begin{proof}
@@ -548,7 +548,7 @@ If $f\in\mathfrak{R}$, the open $D(f)$ does not meet $V(\mathfrak{R})$, and is a
 
 \begin{corollary}[10.5.9]
 \label{IV.10.5.9}
-Let $A$ be a Noetherian local ring, $\mathfrak{m}$ its maximal ideal, $X=\operatorname{Spec}(A)$, $Y=X-\{\mathfrak{m}\}$; then $Y$ is a Jacobson scheme, whose closed points are the prime ideals $\mathfrak{p}\in\operatorname{Spec}(A)$ such that $\dim(A/\mathfrak{p})=1$.
+Let $A$ be a Noetherian local ring, $\mathfrak{m}$ its maximal ideal, $X=\operatorname{Spec}(A)$, $Y=X\setmin\{\mathfrak{m}\}$; then $Y$ is a Jacobson scheme, whose closed points are the prime ideals $\mathfrak{p}\in\operatorname{Spec}(A)$ such that $\dim(A/\mathfrak{p})=1$.
 \end{corollary}
 
 \begin{proof}
@@ -567,7 +567,7 @@ Suppose first that $A$ is integral and of dimension $1$; by virtue of the Nagata
 \oldpage[IV-3]{107}
 integrally closed and of dimension $1$ and a finite $A$-algebra; it is therefore a discrete valuation ring, and the proposition follows immediately in this case.
 
-Let us pass to the general case; let $x$ be the closed point of $X=\operatorname{Spec}(A)$, and set $Y=X-\{x\}$; we know \sref{IV.10.5.9} that $Y$ is a Jacobson prescheme.
+Let us pass to the general case; let $x$ be the closed point of $X=\operatorname{Spec}(A)$, and set $Y=X\setmin\{x\}$; we know \sref{IV.10.5.9} that $Y$ is a Jacobson prescheme.
 Let us show that the intersection of the prime ideals $\mathfrak{p}$ of $A$ such that $\dim(A/\mathfrak{p})=1$ is reduced to $0$; the proposition will then follow since, for each of these ideals $\mathfrak{p}$, the intersection of the kernels of the local homomorphisms of $A/\mathfrak{p}$ into discrete valuation rings $V$ which make $V$ a finite $(A/\mathfrak{p})$-algebra is reduced to $0$.
 But to say that the intersection of these prime ideals is reduced to $0$ means that the set of these ideals is dense in $X$, or equivalently in $Y$ (since $Y$ is dense in $X$), and this follows immediately from \sref{IV.10.5.9}.
 \end{proof}
@@ -581,11 +581,11 @@ The results of this section make more precise, in certain cases, and generalise 
 \label{IV.10.6.1}
 Let $S$ be a locally Noetherian prescheme, satisfying in addition the conditions: $1^\circ$~$S$ is a Jacobson prescheme; $2^\circ$~for every $s\in S$, $\sh{O}_{S,s}$ is universally catenary \sref{IV.5.6.2}; $3^\circ$~every irreducible component $S'$ of $S$ is equicodimensional (in other words, for every closed point $s$ of $S'$ and every sub-prescheme of $S$ having $S'$ as underlying space, we have $\dim(S')=\dim(\sh{O}_{S',s})$).
 We then have the following properties:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item For every morphism locally of finite type $g:X\to S$, $X$ satisfies conditions $1^\circ$, $2^\circ$, and $3^\circ$ above.
 In particular, if $X$ is equidimensional (for example if $X$ is irreducible), $X$ is biequidimensional (in other words $X$ is catenary and for every closed point $x$ of $X$, we have $\dim(\sh{O}_{X,x})=\dim(X)$ \sref[0]{0.14.3.3}).
   \item Let $X$, $Y$ be two $S$-preschemes locally of finite type over $S$, $f:X\to Y$ an $S$-morphism; suppose $X$ irreducible and $f$ dominant.
-If $\xi$ (resp.\ $\eta$) is the generic point of $X$ (resp.\ $Y$) and $e=\dim(f^{-1}(\eta))=\deg.\mathrm{tr}_{k(\eta)}k(\xi)$, we have
+If $\xi$ (resp.\ $\eta$) is the generic point of $X$ (resp.\ $Y$) and $e=\dim(f^{-1}(\eta))=\deg.\mathrm{tr}_{\mathbf{k}(\eta)}\boldsymbol{k}(\xi)$, we have
 \begin{equation}
 \label{IV.10.6.1.1}
 \tag{10.6.1.1}
@@ -598,7 +598,7 @@ Then we have
 \tag{10.6.1.2}
 \dim(X)\geq\dim(Y)+n
 \end{equation}
-(resp.
+\textup{(resp.}
 \begin{equation}
 \label{IV.10.6.1.3}
 \tag{10.6.1.3}
@@ -617,7 +617,7 @@ To show that $X$ satisfies condition $3^\circ$, consider several cases:
 \emph{a)} $X$ is a closed irreducible sub-prescheme of $S$; let $S'$ be an irreducible component of $S$ containing $X$, $\xi$ the generic point of $X$, $x$ a closed point of $X$; for every $s\in S'$, $\sh{O}_{S',s}$, a quotient of $\sh{O}_{S,s}$, is catenary \sref{IV.5.6.1}, hence conditions $2^\circ$ and $3^\circ$ imply that $S'$ is biequidimensional \sref[0]{0.14.3.3}.
 By virtue of \sref{IV.5.1.2} and of \sref[0]{0.14.3.3.2}, we therefore have
 \[
-  \dim(\sh{O}_{X,x})=\dim(\sh{O}_{S',x})-\dim(\sh{O}_{S',\xi})=\dim(S')-\dim(\sh{O}_{S',\xi})
+  \dim(\sh{O}_{X,x})=\dim(\sh{O}_{S',x})\setmin\dim(\sh{O}_{S',\xi})=\dim(S')\setmin\dim(\sh{O}_{S',\xi})
 \]
 which proves that $\dim(\sh{O}_{X,x})$ does not depend on the closed point $x$ considered, whence the assertion in this case \sref{IV.5.1.4}.
 
@@ -664,7 +664,7 @@ For every $x\in Y$, and every open neighbourhood $U$ of $x$ in $X$ not meeting t
 \tag{10.6.3.1}
 \dim_x(Y)=\dim(U\cap Y)=\dim\overline{\{x\}}+\operatorname{codim}(\overline{\{x\}},Y)=\sup_i\dim(Y_i)
 \end{equation}
-where $Y_i$ ($1\leq i\leq m$) are the irreducible components of $Y$ containing $x$.
+where $Y_i$ \textup{(}$1\leq i\leq m$\textup{)} are the irreducible components of $Y$ containing $x$.
 \end{proposition}
 
 \begin{proof}
@@ -735,7 +735,7 @@ We have seen \sref{IV.5.2.5},~(i) for $n=1$; let us prove it by induction on $n$
 As $A[T_1,\ldots,T_{n+1}]$ is a free, hence faithfully flat, $A[T_1,\ldots,T_n]$-module, there are maximal ideals $\mathfrak{m}'$ and $\mathfrak{n}'$ of $A[T_1,\ldots,T_{n+1}]$ lying respectively over $\mathfrak{m}$ and $\mathfrak{n}$ \sref[0]{0.6.5.1}; by \sref{IV.5.5.3}, these ideals have respective heights $n+1$ and $n+2$, proving the assertion.
 Suppose $n\geq 2$ in what follows.
 Let $\mathfrak{J}=\mathfrak{m}\cap\mathfrak{n}=\mathfrak{m}\mathfrak{n}$ and let $R=1+\mathfrak{J}$, which is a multiplicative subset of $B$.
-If $B'=R^{-1}B$, the ideal $\mathfrak{J}'=R^{-1}\mathfrak{J}$ is contained in the radical of $B'$ (Bourbaki, \emph{Alg\`ebre commutative}, Chap.~III, \S3, no.~5, Prop.~12).
+If $B'=R^{-1}B$, the ideal $\mathfrak{J}'=R^{-1}\mathfrak{J}$ is contained in the \emph{radical} of $B'$ (Bourbaki, \emph{Alg\`ebre commutative}, Chap.~III, \S3, no.~5, Prop.~12).
 As a topological space, $X'=\operatorname{Spec}(B')$ is identified with a subspace of $X=\operatorname{Spec}(B)$, and at the points $x$ of $X'$ the local rings $\sh{O}_{X,x}$ and $\sh{O}_{X',x}$ are the same \sref[I]{I.1.6.2}.
 Consider in $X'$ the closed subset $Y'=V(\mathfrak{J}')$, and put $S=X'\setminus Y'$.
 Then $S$ is a Jacobson prescheme \sref{IV.10.5.7}, and is evidently irreducible and Noetherian; moreover, for every $s\in S$, the local ring $\sh{O}_{S,s}=\sh{O}_{X,s}$ is universally catenary by \sref{IV.5.6.3}, since $A$ is universally catenary \sref{IV.5.6.4}.
@@ -813,18 +813,18 @@ whence the lemma.
 
 \begin{corollary}[10.8.4]
 \label{IV.10.8.4}
-Under the hypotheses of \sref{IV.10.8.3}, the function $x\mapsto\operatorname{prof}^*_x(\sh{F})$ is lower semi-continuous.
+Under the hypotheses of \sref{IV.10.8.3}, the function $x\leadsto\operatorname{prof}^*_x(\sh{F})$ is lower semi-continuous.
 \end{corollary}
 
 \begin{proof}
-This follows from \sref{IV.10.8.3.1}, since $x\mapsto\dim.\operatorname{proj}(\sh{F}_x)$ is upper semi-continuous \sref{IV.6.11.1}.
+This follows from \sref{IV.10.8.3.1}, since $x\leadsto\dim.\operatorname{proj}(\sh{F}_x)$ is upper semi-continuous \sref{IV.6.11.1}.
 \end{proof}
 
 \begin{proposition}[10.8.5]
 \label{IV.10.8.5}
 Let $S$ be a locally Noetherian prescheme, $X$ a prescheme locally of finite type over $S$, $\sh{F}$ a coherent $\sh{O}_X$-module.
 Suppose that $S$ satisfies the conditions: $1^\circ$~$S$ is a Jacobson prescheme; $2^\circ$~$S$ is regular; $3^\circ$~the irreducible components of $S$ are equicodimensional.
-Then the function $x\mapsto\operatorname{prof}^*_x(\sh{F})$ is lower semicontinuous; in other terms, for every integer $n$, the set $U_n$ of $x\in X$ such that $\operatorname{prof}^*_x(\sh{F})\geq n$ is open.
+Then the function $x\leadsto\operatorname{prof}^*_x(\sh{F})$ is lower semicontinuous; in other terms, for every integer $n$, the set $U_n$ of $x\in X$ such that $\operatorname{prof}^*_x(\sh{F})\geq n$ is open.
 \end{proposition}
 
 \begin{proof}
@@ -869,18 +869,18 @@ Indeed, by definition, $\operatorname{coprof}(\sh{F}_x)=\dim(\sh{F}_x)-\operator
 
 \begin{corollary}[10.8.8]
 \label{IV.10.8.8}
-Suppose the hypotheses on $f$ and $\sh{F}$ are those of \sref{IV.9.9.1}. Then the function $x\mapsto\operatorname{prof}^*_x(\sh{F}_{f(x)})$ is constructible.
+Suppose the hypotheses on $f$ and $\sh{F}$ are those of \sref{IV.9.9.1}. Then the function $x\leadsto\operatorname{prof}^*_x(\sh{F}_{f(x)})$ is constructible.
 \end{corollary}
 
 \begin{proof}
-For every $s\in S$, the fibre $X_s$, being locally of finite type over $k(s)$, is a Jacobson prescheme \sref{IV.10.4.7}. Since $\operatorname{Spec}(k(s))$ satisfies the conditions of \sref{IV.10.6.1}, one has
+For every $s\in S$, the fibre $X_s$, being locally of finite type over $\boldsymbol{k}(s)$, is a Jacobson prescheme \sref{IV.10.4.7}. Since $\operatorname{Spec}(\boldsymbol{k}(s))$ satisfies the conditions of \sref{IV.10.6.1}, one has
 \[
   \operatorname{prof}^*_x(\sh{F}_{f(x)})
   =\dim_x(\operatorname{Supp}(\sh{F}_{f(x)}))
    -\operatorname{coprof}((\sh{F}_{f(x)})_x)
 \]
 by \sref{IV.10.8.7}.
-Now, if $Z=\operatorname{Supp}(\sh{F})$, we have $Z_{f(x)}=\operatorname{Supp}(\sh{F}_{f(x)})$ \sref[I]{I.9.1.13} and $Z$ is locally constructible \sref{IV.8.9.1}; therefore the functions $x\mapsto\dim_x(\operatorname{Supp}(\sh{F}_{f(x)}))$ and $x\mapsto\operatorname{coprof}((\sh{F}_{f(x)})_x)$ are locally constructible (\sref{IV.9.9.1} and \sref{IV.9.9.3}), which proves the proposition.
+Now, if $Z=\operatorname{Supp}(\sh{F})$, we have $Z_{f(x)}=\operatorname{Supp}(\sh{F}_{f(x)})$ \sref[I]{I.9.1.13} and $Z$ is locally constructible \sref{IV.8.9.1}; therefore the functions $x\leadsto\dim_x(\operatorname{Supp}(\sh{F}_{f(x)}))$ and $x\leadsto\operatorname{coprof}((\sh{F}_{f(x)})_x)$ are locally constructible (\sref{IV.9.9.1} and \sref{IV.9.9.3}), which proves the proposition.
 \end{proof}
 
 \subsection{Maximal spectra and ultra-preschemes}
@@ -891,9 +891,9 @@ The results of this section will not be used in what follows.
 \begin{env}[10.9.1]
 \label{IV.10.9.1}
 Let $X$ be a Jacobson prescheme, and let $S(X)$ be the \emph{ringed space} whose underlying space is the subspace of closed points of $X$, and the sheaf of rings the sheaf induced on this subspace by $\sh{O}_X$, in other words the sheaf $\psi^*(\sh{O}_X)$, where $\psi:S(X)\to X$ denotes the canonical injection.
-As $\psi$ is a quasi-
+As $\psi$ is a quasi-%
 \oldpage[IV-3]{113}
-homeomorphism, we have seen \sref{IV.10.2.8},~(ii) that if $\theta:\sh{O}_X\to\psi_*(\sh{O}_{S(X)})$ is the homomorphism of sheaves of rings such that $\theta^\sharp:\psi^*(\sh{O}_X)\to\sh{O}_{S(X)}$ is the identity, then $j_X=(\psi,\theta)$ is a \emph{quasi-isomorphism} of ringed spaces, and $\sh{F}\mapsto j_X^*(\sh{F})$ is an equivalence of the category of $\sh{O}_X$-Modules and that of $\sh{O}_{S(X)}$-Modules.
+homeomorphism, we have seen \sref{IV.10.2.8},~(ii) that if $\theta:\sh{O}_X\to\psi_*(\sh{O}_{S(X)})$ is the homomorphism of sheaves of rings such that $\theta^\sharp:\psi^*(\sh{O}_X)\to\sh{O}_{S(X)}$ is the identity, then $j_X=(\psi,\theta)$ is a \emph{quasi-isomorphism} of ringed spaces, and $\sh{F}\leadsto j_X^*(\sh{F})$ is an equivalence of the category of $\sh{O}_X$-Modules and that of $\sh{O}_{S(X)}$-Modules.
 It is clear that under this equivalence, locally free (resp.\ coherent) $\sh{O}_X$-modules correspond to locally free (resp.\ coherent) $\sh{O}_{S(X)}$-modules. Furthermore, if $\sh{L}$ is a locally free $\sh{O}_X$-module and $U$ is an open subset of $X$ such that $\sh{L}|_U\simeq(\sh{O}_X|_U)^n$, then
 \[
   j_X^*(\sh{L})|_{U\cap S(X)}
@@ -933,7 +933,7 @@ Let $B$ be a second Jacobson ring, $Y=\operatorname{Spec}(B)$, $\varphi:B\to A$ 
   S(f):\operatorname{Spm}(A)\to\operatorname{Spm}(B)
 \]
 the morphism of ringed spaces corresponding to $f$.
-It is clear that $S(f)=(\psi,\theta)$ is a morphism of ringed spaces in local rings, i.e.\ $(\mathrm{Err}_{\mathrm{II}},1.8.2)$ for every $x\in\operatorname{Spm}(A)$, $\theta^\sharp_x$ is a \emph{local} homomorphism.
+It is clear that $S(f)=(\psi,\theta)$ is a morphism of ringed spaces in local rings, i.e.\ $(\mathbf{Err}_{\mathrm{II}},1.8.2)$ for every $x\in\operatorname{Spm}(A)$, $\theta^\sharp_x$ is a \emph{local} homomorphism.
 Conversely:
 \end{env}
 
@@ -963,11 +963,11 @@ It is clear that the category $C''_0$ thus defined is a subcategory of $C'$ that
 
 \begin{proposition}[10.9.6]
 \label{IV.10.9.6}
-The functor $X\mapsto S(X)$ of $\mathbf{C}$ into $\mathbf{C}''_0$ is an equivalence of categories.
+The functor $X\leadsto S(X)$ of $\mathbf{C}$ into $\mathbf{C}''_0$ is an equivalence of categories.
 \end{proposition}
 
 \begin{proof}
-$1^\circ$ Let us first show that the functor $X\mapsto S(X)$ is \emph{fully faithful}, in other words that for $X$, $Y$ in $\mathbf{C}$, the canonical map
+$1^\circ$ Let us first show that the functor $X\leadsto S(X)$ is \emph{fully faithful}, in other words that for $X$, $Y$ in $\mathbf{C}$, the canonical map
 \[
   \operatorname{Hom}_{\mathbf{C}}(X,Y)\to\operatorname{Hom}_{\mathbf{C}''_0}(S(X),S(Y))
 \]
@@ -1011,10 +1011,10 @@ One can therefore define the diagonal morphism $\Delta_{X'}:X'\to X'\times_k X'$
 The simplifications that come from the hypothesis that $k$ is algebraically closed amount first of all to this: for every $k$-prescheme $X$ locally of finite type, there is a bijective correspondence between \emph{closed points of $X$}, \emph{points of $X$ with values in $k$} \sref[I]{I.3.4.4}, and \emph{rational points of $X$ over $k$} \sref[I]{I.3.4.5}, by virtue of \sref[I]{I.6.4.2}.
 This shows in particular \sref[I]{I.3.4.3.1} that for two $k$-prealgebraic spaces $X'$, $Y'$, the underlying set of the product $X'\times_kY'$ is identical to the \emph{product set} $X'\times Y'$ of the underlying sets (but of course the topology of the space underlying $X'\times_kY'$ is not the \emph{product topology} of the topologies of the spaces underlying $X'$ and $Y'$; in general, it is strictly finer than that topology).
 
-On the other hand, the local rings $\sh{O}_x$ at the points of a prealgebraic space $X'$ over $k$ are $k$-algebras whose residue field is \emph{isomorphic to $k$}; if $A$ and $B$ are two such $k$-algebras, a $k$-homomorphism $\varphi:A\to B$ is necessarily \emph{local}: indeed, if an element $x$ of the maximal ideal of $A$ were such that $\varphi(x)$ is invertible, there would exist $\lambda\in k$ nonzero such that $\varphi(x-\lambda.1)$ belongs to the maximal ideal of $B$, which is absurd since $x-\lambda.1$ is invertible.
-We conclude immediately from this that if $X'=S(X)$, $Y'=S(Y)$ are two prealgebraic spaces over $k$, every morphism $X'\to Y'$ of \emph{$k$-ringed spaces} is also a morphism of $k$-ringed spaces \emph{in local rings} ((I,~1.8.2); cf.\ $\mathrm{Err}_{\mathrm{II}}$). Moreover, with the preceding notation, if $A$ and $B$ are $k$-algebras of finite type, the corresponding homomorphism makes $B$ an $A$-algebra of finite type; hence every morphism $X'\to Y'$ of $k$-ringed spaces is, by \sref{IV.10.9.6}, of the form $S(f)$, where $f:X\to Y$ is a morphism of $k$-preschemes.
+On the other hand, the local rings $\sh{O}_x$ at the points of a prealgebraic space $X'$ over $k$ are $k$-algebras whose residue field is \emph{isomorphic to $k$}; if $A$ and $B$ are two such $k$-algebras, a $k$-homomorphism $\varphi:A\to B$ is necessarily \emph{local}: indeed, if an element $x$ of the maximal ideal of $A$ were such that $\varphi(x)$ is invertible, there would exist $\lambda\in k$ nonzero such that $\varphi(x\setmin\lambda.1)$ belongs to the maximal ideal of $B$, which is absurd since $x\setmin\lambda.1$ is invertible.
+We conclude immediately from this that if $X'=S(X)$, $Y'=S(Y)$ are two prealgebraic spaces over $k$, every morphism $X'\to Y'$ of \emph{$k$-ringed spaces} is also a morphism of $k$-ringed spaces \emph{in local rings} ((I,~1.8.2); cf.\ $\mathbf{Err}_{\mathrm{II}}$). Moreover, with the preceding notation, if $A$ and $B$ are $k$-algebras of finite type, the corresponding homomorphism makes $B$ an $A$-algebra of finite type; hence every morphism $X'\to Y'$ of $k$-ringed spaces is, by \sref{IV.10.9.6}, of the form $S(f)$, where $f:X\to Y$ is a morphism of $k$-preschemes.
 
-Finally, for every open $U$ of $X'$, every section $s\in\Gamma(U,\sh{O}_{X'})$, and every $x\in U$, $s(x)$ \sref[0]{0.5.5.1} is identified with an element of $k$; thus $s$ determines a map $\overline{s}:x\mapsto s(x)$ from $U$ to $k$, in other words a section over $U$ of the sheaf $\sh{A}(X')$ of germs of maps from $X'$ to $k$. Since $h_U:s\mapsto\overline{s}$ is evidently a homomorphism of rings $\Gamma(U,\sh{O}_{X'})\to\Gamma(U,\sh{A}(X'))$ and commutes with restriction to an open $V\subset U$, the $h_U$ define a homomorphism of sheaves of rings $h:\sh{O}_{X'}\to\sh{A}(X')$.
+Finally, for every open $U$ of $X'$, every section $s\in\Gamma(U,\sh{O}_{X'})$, and every $x\in U$, $s(x)$ \sref[0]{0.5.5.1} is identified with an element of $k$; thus $s$ determines a map $\overline{s}:x\leadsto s(x)$ from $U$ to $k$, in other words a section over $U$ of the sheaf $\sh{A}(X')$ of germs of maps from $X'$ to $k$. Since $h_U:s\leadsto\overline{s}$ is evidently a homomorphism of rings $\Gamma(U,\sh{O}_{X'})\to\Gamma(U,\sh{A}(X'))$ and commutes with restriction to an open $V\subset U$, the $h_U$ define a homomorphism of sheaves of rings $h:\sh{O}_{X'}\to\sh{A}(X')$.
 If one takes $U$ to be ultra-affine, $\operatorname{Spm}(A)$, where $A$ is a Jacobson ring, to say that $\overline{s}=0$ means that for every maximal ideal $\mathfrak{m}$ of $A$, $s$ belongs to $\mathfrak{m}$, or equivalently that $s$ is in the \emph{radical} of $A$; but as $A$ is a Jacobson ring, its radical is its nilradical. Consequently $h_U$ is injective if and only if $A$ is reduced.
 \end{env}
 

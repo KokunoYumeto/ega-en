@@ -27,7 +27,7 @@ it is immediate that this class depends only on $\xi$ and on $P$, and if $S_k$ i
 \]
 which is surjective by definition of $\mathfrak{J}^k M$.
 
-We will say in what follows that an element $f\in A$ is \emph{not a zero divisor in an $A$-module} $M$ if the homothety $f_M:x\mapsto fx$ of $M$ is injective.
+We will say in what follows that an element $f\in A$ is \emph{not a zero divisor in an $A$-module} $M$ if the homothety $f_M:x\leadsto fx$ of $M$ is injective.
 \end{env}
 
 \begin{lemma}[15.1.2]
@@ -47,7 +47,7 @@ The converse is true if $M$ is separated for the $(fA)$-preadic topology.
 We have here $\gr_k(M)=f^kM/f^{k+1}M$;
 to say that $\varphi$ is injective means that for all $x\in M$ and all $k$, the relation $f^kx\in f^{k+1}M$ implies $x\in fM$;
 it is clear that this is indeed the case if $f$ is not a zero divisor in $M$.
-Conversely, note that the homothety $f_M:x\mapsto fx$ defines, by passing to quotients, homomorphisms $\gr_k(M)\to\gr_{k+1}(M)$, hence a graded homomorphism $g$ of degree $1$ of $\gr_\bullet(M)$ into itself;
+Conversely, note that the homothety $f_M:x\leadsto fx$ defines, by passing to quotients, homomorphisms $\gr_k(M)\to\gr_{k+1}(M)$, hence a graded homomorphism $g$ of degree $1$ of $\gr_\bullet(M)$ into itself;
 and to say that $\varphi$ is injective also means that $g$ is injective.
 If we further suppose the filtration of $M$ separated, it follows that $f_M$ is injective
 (Bourbaki, \emph{Alg.~comm.}, chap.~III, \S~2, no.~8, cor.~1 of th.~1).
@@ -87,11 +87,11 @@ Suppose now that $M$ is equipped with a \emph{filtration} $(M_k)$ such that $M_0
 The notations being those of \sref{0.15.1.1}, set, for all $k\geq 0$,
 \[
 \label{0.15.1.5.1}
-  M'_k = M_k + \mathfrak{J}M_{k-1} + \cdots + \mathfrak{J}^{k-1}M_1 + \mathfrak{J}^k M_0.
+  M'_k = M_k + \mathfrak{J}M_{k-1} + \ldots + \mathfrak{J}^{k-1}M_1 + \mathfrak{J}^k M_0.
 \tag{15.1.5.1}
 \]
 It is clear that $(M'_k)$ is a filtration on $M$.
-When $M_k=\mathfrak{Q}^k M$, where $\mathfrak{Q}$ is an ideal of $A$, the filtration $(M'_k)$ is none other than the $(\mathfrak{J}+\mathfrak{Q})$-preadic filtration.
+When $M_k=\mathfrak{Q}^k M$, where $\mathfrak{Q}$ is an ideal of $A$, the filtration $(M'_k)$ is none other than the $(\mathfrak{J}+\mathfrak{L})$-preadic filtration.
 We will again write $(\gr_\bullet(M)\otimes_A(A/\mathfrak{J}))[T_1,\ldots,T_n]$ for the graded tensor product of graded $A$-modules ($\mathbf{II}$, 2.1.2)
 $(\gr_\bullet(M)\otimes_A(A/\mathfrak{J}))\otimes_A A[T_1,\ldots,T_n]$.
 We define a \emph{surjective graded homomorphism of graded $A$-modules}, of degree $0$,
@@ -130,14 +130,14 @@ As these filtrations are \emph{finite}, it suffices to prove that the homomorphi
 Now $\gr_i(Q_k)=((M_i/M_{i+1})\otimes_A(A/fA))T^{k-i}$;
 on the other hand, $(Q'_k)_{i+1}$ is the image of
 \[
-  M_k+fM_{k-1}+\cdots+f^{k-i-1}M_{i+1}
+  M_k+fM_{k-1}+\ldots+f^{k-i-1}M_{i+1}
 \]
 \oldpage[0\textsubscript{IV-1}]{15}
 in $M'_k/M'_{k+1}$.
 We are thus led to write that, for $x\in M_i$, the relation
 \[
 \label{0.15.1.6.2}
-  f^{k-i}x\in M_k+fM_{k-1}+\cdots+f^{k-i-1}M_{i+1}+M'_{k+1}
+  f^{k-i}x\in M_k+fM_{k-1}+\ldots+f^{k-i-1}M_{i+1}+M'_{k+1}
 \tag{15.1.6.2}
 \]
 implies $x\in fM_i+M_{i+1}$.
@@ -167,17 +167,17 @@ The proposition is none other than \sref{0.15.1.6} for $n=1$;
 let us reason by induction on $n$.
 Set $\mathfrak{J}''=\sum_{i=1}^{n-1}f_iA$, so that $\mathfrak{J}=\mathfrak{J}''+f_nA$, and let
 \[
-  M''_k = M_k+\mathfrak{J}''M_{k-1}+\cdots+\mathfrak{J}''^{k-1}M_1+\mathfrak{J}''^kM_0;
+  M''_k = M_k+\mathfrak{J}''M_{k-1}+\ldots+\mathfrak{J}''^{k-1}M_1+\mathfrak{J}''^kM_0;
 \]
 one can then write
 \[
-  M'_k = M''_k + f_nM''_{k-1}+\cdots+f_n^{k-1}M''_1+f_n^kM''_0.
+  M'_k = M''_k + f_nM''_{k-1}+\ldots+f_n^{k-1}M''_1+f_n^kM''_0.
 \]
 Let us write $\gr''_\bullet(M)$ for the graded $A$-module associated to $M$ filtered by the filtration $(M''_k)$.
 One can write, up to canonical isomorphisms,
 \[
-  (\gr_\bullet(M)\otimes(A/\mathfrak{J}))\otimes_A A[T_1,\ldots,T_n]
-  = (\gr_\bullet(M)\otimes(A/\mathfrak{J}''))[T_1,\ldots,T_{n-1}]\otimes(A/f_nA)\otimes_A A[T_n]
+  (\gr_\bullet(M)\otimes(A/\mathfrak{J}))\otimes A[T_1,\ldots,T_n]
+  = (\gr_\bullet(M)\otimes(A/\mathfrak{J}''))[T_1,\ldots,T_{n-1}]\otimes(A/f_nA)\otimes A[T_n]
 \]
 and by \sref{0.15.1.5.2}, $\psi$ factorizes as
 \[
@@ -187,8 +187,8 @@ and by \sref{0.15.1.5.2}, $\psi$ factorizes as
 \]
 and
 \[
-  ((\gr_\bullet(M)\otimes(A/\mathfrak{J}''))[T_1,\ldots,T_{n-1}])\otimes(A/f_nA)\otimes_A A[T_n]
-  \xrightarrow{\psi'\otimes 1} \gr''_\bullet(M)\otimes(A/f_nA)\otimes_A A[T_n]
+  ((\gr_\bullet(M)\otimes(A/\mathfrak{J}''))[T_1,\ldots,T_{n-1}])\otimes(A/f_nA)\otimes A[T_n]
+  \xrightarrow{\psi'\otimes 1} \gr''_\bullet(M)\otimes(A/f_nA)\otimes A[T_n]
 \]
 where $\psi'$ is the map \sref{0.15.1.5.2} in which one replaces $n$ by $n-1$, $\mathfrak{J}$ by $\mathfrak{J}''$, and $\gr'_\bullet(M)$ by $\gr''_\bullet(M)$.
 The induction hypothesis implies that $\psi'$ is bijective, and it remains to see, by applying \sref{0.15.1.6}, that it suffices to show that $f_n$ is $\gr''_\bullet(M)$-regular.
@@ -228,7 +228,7 @@ One sees therefore that the sequence $(f_i)_{1\leq i\leq n-1}$ is $M$-regular.
 On the other hand, let us show that if $y\in M/\mathfrak{J}''M$ is such that $f_n^ky\in f_n^{k+1}(M/\mathfrak{J}''M)$, then $y\in f_n(M/\mathfrak{J}''M)$.
 Indeed, if $x$ is a representative of $y$, let us show that $f_n^kx\in\mathfrak{J}^{k+1}M$;
 our assertion will then follow from the fact that \sref{0.15.1.9.1} is injective.
-The hypothesis implies $f_n^kx\in f_n^{k+1}M+\mathfrak{J}''M\subset\mathfrak{J}M$, whence, since $\varphi$ is injective, $f_n^{k-1}x\in\mathfrak{J}^kM$;
+The hypothesis implies $f_n^kx\in f_n^{k+1}M+\mathfrak{J}''M\subset\mathfrak{J}M$, whence, since $\varphi$ is injective, $f_n^{k-1}x\in\mathfrak{J}M$;
 by induction, one thus obtains $x\in\mathfrak{J}M$, and finally $f_n^kx\in\mathfrak{J}^{k+1}M$.
 We finish the reasoning as in \sref{0.15.1.2}:
 on $M/\mathfrak{J}''M$, the $\mathfrak{J}$-preadic filtration is identical to the $(f_nA)$-preadic filtration, which is separated by hypothesis, and one concludes that the homothety of ratio $f_n$ in $M/\mathfrak{J}''M$ is injective, which finishes showing that the sequence $(f_i)_{1\leq i\leq n}$ is $M$-regular.
@@ -244,7 +244,7 @@ One will note that the hypothesis of \sref{0.15.1.10} implies that, if the seque
 
 \begin{corollary}[15.1.11]
 \label{0.15.1.11}
-Let $A$ be a Noetherian ring, $M$ a finitely generated $A$-module, $(f_i)_{1\leq i\leq n}$ a finite sequence of elements contained in the radical of $A$.
+Let $A$ be a Noetherian ring, $M$ a finitely generated $A$-module, $(f_i)_{1\leq i\leq n}$ a finite sequence of elements contained in the \textup{radical} of $A$.
 Then, for the sequence $(f_i)$ to be $M$-regular, it is necessary and sufficient that it be $M$-quasi-regular.
 \end{corollary}
 
@@ -299,7 +299,7 @@ the assertion thus follows from \sref{0.15.1.13}.
 \label{0.15.1.15}
 Let $A$ be a ring, $B$ a commutative $A$-algebra, $(f_i)_{1\leq i\leq n}$ a finite sequence of elements of $B$, $M$ a $B$-module.
 Suppose that the sequence $(f_i)$ is $M$-regular and that each of the $A$-modules $M/(\sum_{j=1}^{i-1}f_jM)$ ($1\leq i\leq n+1$) is flat.
-Then, for every ring homomorphism $\rho:A\to A'$, setting $B'=B\otimes_AA'$, $M'=M\otimes_AA'$, and $f'_i=f_i\otimes 1$ ($1\leq i\leq n$), the sequence $(f'_i)$ is $M'$-regular and the $A'$-modules $M'/(\sum_{j=1}^{i-1}f'_jM')$ ($1\leq i\leq n+1$) are flat.
+Then, for every ring homomorphism $\rho:A\to A'$, setting $B'=B\otimes_AA'$, $M'=M\otimes_AA'$, and $f'_i=f_i\otimes 1$ \textup{($1\leq i\leq n$)}, the sequence $(f'_i)$ is $M'$-regular and the $A'$-modules $M'/(\sum_{j=1}^{i-1}f'_jM')$ ($1\leq i\leq n+1$) are flat.
 \end{proposition}
 
 \begin{proof}
@@ -331,7 +331,7 @@ The following conditions are equivalent:
   \item[a)] The sequence $(f_i)$ is $M$-regular and the quotients $M_i=M/(\sum_{j=1}^i f_jM)$ are flat $A$-modules for $1\leq i\leq n$.
   \item[b)] The sequence $(f_i)$ is $M$-regular and the $A$-module $M_n$ is flat.
   \item[c)] The $A$-module $M$ is flat and the sequence $(g_i)_{1\leq i\leq n}$ is $(M\otimes_Ak)$-regular.
-  \item[d)] The $A$-module $M$ is flat, and for every ring homomorphism $\rho:A\to A'$, if we set $B'=B\otimes_AA'$, $M'=M\otimes_AA'$, $f'_i=f_i\otimes 1$ ($1\leq i\leq n$), the sequence $(f'_i)$ is $M'$-regular.
+  \item[d)] The $A$-module $M$ is flat, and for every ring homomorphism $\rho:A\to A'$, if we set $B'=B\otimes_AA'$, $M'=M\otimes_AA'$, $f'_i=f_i\otimes 1$ \textup{($1\leq i\leq n$)}, the sequence $(f'_i)$ is $M'$-regular.
 \end{enumerate}
 \end{proposition}
 
@@ -353,9 +353,9 @@ One will note that the proof that c) implies a) does not use the fact that the $
 The hypotheses on $A$ and $B$ being those of \sref{0.15.1.16}, let $M$ be a finitely generated $B$-module, flat over $A$, $R$ a sub-$B$-module of $M$ such that $N=M/R$ is a flat $A$-module.
 Let $(f_i)_{1\leq i\leq n}$ be a sequence of elements of the maximal ideal of $B$ having the following properties:
 \begin{enumerate}
-  \item[(i)] $f_iM\subset R$ for $1\leq i\leq n$.
-  \item[(ii)] If $g_i$ is the image of $f_i$ in $B\otimes_Ak$, the sequence $(g_i)_{1\leq i\leq n}$ is $(M\otimes_Ak)$-regular.
-  \item[(iii)] The sum of the sub-$(B\otimes_Ak)$-modules $g_i(M\otimes_Ak)$ of $M\otimes_Ak$ is the image of $R\otimes_Ak$ in $M\otimes_Ak$ (equal to the kernel of the canonical homomorphism $M\otimes_Ak\to N\otimes_Ak$).
+  \item[\textup{(i)}] $f_iM\subset R$ for $1\leq i\leq n$.
+  \item[\textup{(ii)}] If $g_i$ is the image of $f_i$ in $B\otimes_Ak$, the sequence $(g_i)_{1\leq i\leq n}$ is $(M\otimes_Ak)$-regular.
+  \item[\textup{(iii)}] The sum of the sub-$(B\otimes_Ak)$-modules $g_i(M\otimes_Ak)$ of $M\otimes_Ak$ is the image of $R\otimes_Ak$ in $M\otimes_Ak$ (equal to the kernel of the canonical homomorphism $M\otimes_Ak\to N\otimes_Ak$).
 \end{enumerate}
 Then the sequence $(f_i)$ is $M$-regular and $R=\sum_{i=1}^n f_iM$.
 \end{corollary}
@@ -372,9 +372,9 @@ As $M$ is a finitely generated $B$-module and $B$ is Noetherian, $R$ is also a f
 Let $A$ be a ring, $M$ an $A$-module equipped with a separated and exhaustive filtration $(M_k)_{k\geq 0}$, and let $f\in A$ be a $\gr_\bullet(M)$-regular element.
 Then:
 \begin{enumerate}
-  \item[(i)] $f$ is $M$-regular.
-  \item[(ii)] For all $k$, one has $M_k\cap fM=fM_k$, and the canonical image $M'_k$ of $M_k$ in $M'=M/fM$ is thus canonically isomorphic to $M_k/fM_k$.
-  \item[(iii)] The sequence
+  \item[\textup{(i)}] $f$ is $M$-regular.
+  \item[\textup{(ii)}] For all $k$, one has $M_k\cap fM=fM_k$, and the canonical image $M'_k$ of $M_k$ in $M'=M/fM$ is thus canonically isomorphic to $M_k/fM_k$.
+  \item[\textup{(iii)}] The sequence
   \[
     0 \to M_{k+1}/fM_{k+1} \to M_k/fM_k \to \gr_k(M)/f\cdot\gr_k(M) \to 0
   \]
@@ -435,8 +435,8 @@ but for the filtration of $N/f_nN$ given by the quotient filtration of $(N_k)$, 
 Let $A$, $B$ be two Noetherian local rings, $\varphi:A\to B$ a local homomorphism, $M$ a finitely generated $B$-module, $(f_i)_{1\leq i\leq n}$ an $A$-regular sequence of elements of the maximal ideal of $A$.
 The following properties are equivalent:
 \begin{enumerate}
-  \item[a)] $M$ is a flat $A$-module.
-  \item[b)] If $\mathfrak{J}$ is the ideal $\sum_{i\leq n}f_iA$, $M/\mathfrak{J}M$ is a flat $A/\mathfrak{J}$-module and the sequence $(f_i)$ is $M$-regular.
+  \item[\textup{a)}] $M$ is a flat $A$-module.
+  \item[\textup{b)}] If $\mathfrak{J}$ is the ideal $\sum_{i\leq n}f_iA$, $M/\mathfrak{J}M$ is a flat $A/\mathfrak{J}$-module and the sequence $(f_i)$ is $M$-regular.
 \end{enumerate}
 \end{proposition}
 
@@ -472,7 +472,7 @@ for every open set $U$ of $X$ (or of a base of the topology of $X$), one conside
   \varphi_{k,U} : (\gr_0(\Gamma(U,\sh{F})))\otimes_{\bb{Z}}S_k \to \gr_k(\Gamma(U,\sh{F}))
 \]
 defined by the $n$ sections $f_i|U\in\Gamma(U,\sh{O}_X)$, the $\Gamma(U,\sh{O}_X)$-module $\Gamma(U,\sh{F})$ being filtered by the submodules $(\Gamma(U,\sh{J}))^k\Gamma(U,\sh{F})$.
-The $\sh{O}_X$-Module $\gr_k(\sh{F})$ being associated to the presheaf $U\mapsto\gr_k(\Gamma(U,\sh{F}))$ for all $k$, the $\varphi_{k,U}$ define the homomorphism of $\sh{O}_X$-Modules \sref{0.15.2.1.1}.
+The $\sh{O}_X$-Module $\gr_k(\sh{F})$ being associated to the presheaf $U\leadsto\gr_k(\Gamma(U,\sh{F}))$ for all $k$, the $\varphi_{k,U}$ define the homomorphism of $\sh{O}_X$-Modules \sref{0.15.2.1.1}.
 By virtue of the exactness properties of inductive limits of modules and their commutation with tensor products, it follows from the above that for all $x\in X$, the homomorphism $(\varphi_k)_x$ of the stalks of the two members of \sref{0.15.2.1.1} at the point $x$ identifies with the homomorphism of \sref{0.15.1.1}
 \[
 \label{0.15.2.1.2}
@@ -527,8 +527,8 @@ we have
 \[
   \sh{G}_x=\psi_x^*(\sh{F}_y)\otimes_{\psi_x^*(\sh{O}_y)}\sh{O}_x,
   \qquad\text{and}\qquad
-  (g_i)_x=\theta_x^\#(\psi_x^*((f_i)_y));
+  (g_i)_x=\theta_x^\sharp(\psi_x^*((f_i)_y));
 \]
-as $\theta_x^\#:\psi_x^*(\sh{O}_y)\to\sh{O}_x$ makes $\sh{O}_x$ a flat $\psi_x^*(\sh{O}_y)$-module, and since the functor $\psi^*$ is exact, the first assertion follows from the corresponding assertion of \sref{0.15.1.14};
-the same holds for the second, taking into account the fact that $u$ being faithfully flat means that $\psi$ is surjective and that $\theta_x^\#$ makes $\sh{O}_x$ a faithfully flat $\psi_x^*(\sh{O}_y)$-module.
+as $\theta_x^\sharp:\psi_x^*(\sh{O}_y)\to\sh{O}_x$ makes $\sh{O}_x$ a flat $\psi_x^*(\sh{O}_y)$-module, and since the functor $\psi^*$ is exact, the first assertion follows from the corresponding assertion of \sref{0.15.1.14};
+the same holds for the second, taking into account the fact that $u$ being faithfully flat means that $\psi$ is surjective and that $\theta_x^\sharp$ makes $\sh{O}_x$ a faithfully flat $\psi_x^*(\sh{O}_y)$-module.
 \end{proof}

@@ -11,7 +11,7 @@ coherent $\sh O_X$-module.  For every subset $T$ of $X$, put
 \begin{equation}
 \label{IV.5.10.1.1}
 \operatorname{prof}_T(\sh F)
- =\inf_{z\in T}\operatorname{prof}(\sh F_z).
+ =\inf_{z\in T}\operatorname{prof}(\sh F_z)
 \tag{5.10.1.1}
 \end{equation}
 
@@ -34,7 +34,7 @@ equivalent to:
 
 \begin{proof}
 To say that $\sh F$ is $Z$-pure means that, for every Noetherian
-open subset $V$ of $X$ and every open subset $U\supset X-Z$, the
+open subset $V$ of $X$ and every open subset $U\supset X\setmin Z$, the
 restriction homomorphism
 \[
   \Gamma(V,\sh F)\longrightarrow\Gamma(V\cap U,\sh F)
@@ -113,10 +113,10 @@ The question is local.  For each $x\in Z$, it is enough to prove
 the theorem for $\sh F|U$, where $U$ is an affine open
 neighbourhood of $x$; we may thus suppose that $X=U$ is affine.
 Then $\operatorname{Ass}(\sh F)$ is finite \sref{IV.3.1.6}, and,
-since $\operatorname{Ass}(\sh F)\subset X-Z$, there is a section
+since $\operatorname{Ass}(\sh F)\subset X\setmin Z$, there is a section
 $f$ of $\sh O_X$ over $X$ such that
 \[
-  \operatorname{Ass}(\sh F)\subset X_f\subset X-Z
+  \operatorname{Ass}(\sh F)\subset X_f\subset X\setmin Z
   \qquad\text{\sref[II]{II.4.5.4}}.
 \]
 It follows that $f$ is $\sh F$-regular \sref{IV.3.1.9}, and for
@@ -138,7 +138,7 @@ Consider the exact sequence
    \longrightarrow\sh F/f\sh F\longrightarrow0,
 \]
 where multiplication by $f$ is injective by hypothesis.  Put
-$W=X-Z$.  We have the commutative diagram
+$W=X\setmin Z$.  We have the commutative diagram
 \[
 \xymatrix{
   0 \ar[r] &
@@ -206,19 +206,19 @@ Let $X$ be a locally Noetherian prescheme and let $Y$ be a closed
 subset of $X$.  Suppose that
 $\operatorname{prof}(\sh O_{X,y})\geq2$ for every $y\in Y$.
 Then, for every connected component $C$ of $X$,
-$C-(C\cap Y)$ is connected.
+$C\setmin(C\cap Y)$ is connected.
 \end{theorem}
 
 \begin{proof}
 We may restrict ourselves to the case in which $X$ is connected.
 By \sref{IV.5.10.5}, the canonical homomorphism
 \[
-  \sh O_X\longrightarrow i_*(\sh O_X|X-Y),
+  \sh O_X\longrightarrow i_*(\sh O_X|X\setmin Y),
 \]
-where $i:X-Y\to X$ is the canonical injection, is bijective.
+where $i:X\setmin Y\to X$ is the canonical injection, is bijective.
 Consequently the restriction homomorphism
 \[
-  \Gamma(X,\sh O_X)\longrightarrow\Gamma(X-Y,\sh O_X)
+  \Gamma(X,\sh O_X)\longrightarrow\Gamma(X\setmin Y,\sh O_X)
 \]
 is also bijective.  It remains to apply
 \sref[III]{III.7.8.6.1}.
@@ -251,7 +251,7 @@ $\codim(Y,X)\geq d$, then
 $\dim(\sh O_{X,y})\geq d$ for every $y\in Y$
 \sref{IV.5.1.3}; hence
 $\operatorname{prof}(\sh O_{X,y})\geq2$ for every $y\in Y$, and
-\sref{IV.5.10.7} shows that $X-Y$ is connected.
+\sref{IV.5.10.7} shows that $X\setmin Y$ is connected.
 
 For $\codim(Y,X)\geq d$, it is necessary and sufficient that,
 for every $y\in Y$, there be an open neighbourhood $V$ of $y$
@@ -274,7 +274,7 @@ for every $y\in Y$, there exist an open neighbourhood $V$ of $y$
 in $X$ and a $Y_y\in\mathfrak Y$ such that
 $V\cap Y=V\cap Y_y$.  The following conditions are equivalent:
 \begin{enumerate}[{\rm a)}]
-  \item For every $Y\in\mathfrak Y$, the space $X-Y$ is connected.
+  \item For every $Y\in\mathfrak Y$, the space $X\setmin Y$ is connected.
   \item If $X'$ and $X''$ are two distinct irreducible components
   of $X$, there is a sequence $(X_i)_{0\leq i\leq n}$ of
   irreducible components of $X$ such that $X_0=X'$, $X_n=X''$,
@@ -288,7 +288,7 @@ $V\cap Y=V\cap Y_y$.  The following conditions are equivalent:
 
 \begin{proof}
 Suppose {\rm b)} holds and let $Y\in\mathfrak Y$.  Put
-$U=X-Y$.  If $U'$ and $U''$ are two distinct irreducible
+$U=X\setmin Y$.  If $U'$ and $U''$ are two distinct irreducible
 components of $U$, there are irreducible components $X'$ and
 $X''$ of $X$ such that
 $X'\cap U=U'$ and $X''\cap U=U''$ \sref[0]{0.2.1.6}.
@@ -311,7 +311,7 @@ an open neighbourhood $V$ meeting only finitely many irreducible
 components of $X$.  It follows both that $Y$ is closed and that
 $V\cap Y$ is the intersection of $V$ with a member of
 $\mathfrak Y$.  By hypothesis, $Y\in\mathfrak Y$; hence
-$U=X-Y$ is connected.  Moreover, $Y$ is nowhere dense in $X$.
+$U=X\setmin Y$ is connected.  Moreover, $Y$ is nowhere dense in $X$.
 
 Let $X'$ and $X''$ be distinct irreducible components of $X$, and
 let $U'$ and $U''$ be their respective traces on $U$.  They are

@@ -15,7 +15,7 @@ $u(t)=t\cdot(s|U)$; we say that $u$ is \emph{defined by the section $s$}. If
 now $I$ is an arbitrary index set, consider the direct sum
 sheaf $\mathcal{O}_X^{(I)}$, and for every $i\in I$, let $h_i$ be
 the canonical injection of the $i$-th factor into $\mathcal{O}_X^{(I)}$; we know
-that $u\mapsto(u\circ h_i)$ is an isomorphism of
+that $u\to(u\circ h_i)$ is an isomorphism of
 $\operatorname{Hom}_{\mathcal{O}_X}(\mathcal{O}_X^{(I)},\mathcal{F})$ onto the
 product
 $\bigl(\operatorname{Hom}_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{F})\bigr)^I$.
@@ -528,7 +528,7 @@ canonical functorial homomorphism
 \[
   f^*(\check{\mathcal{L}})
   \longrightarrow
-  \check{\bigl(f^*(\mathcal{L})\bigr)}
+  \bigl(f^*(\mathcal{L})\bigr)\check{}
 \]
 (4.4.6), and when $\mathcal{L}$ is locally free, this homomorphism is
 \emph{bijective}: indeed, one is again reduced to the case where
@@ -565,9 +565,9 @@ This abelian group is endowed with a structure of \emph{graded module} over
 the graded ring $\Gamma_*(\mathcal{L})$ as follows: to the pair
 $(s_n,u_m)$, where $s_n\in\Gamma(X,\mathcal{L}^{\otimes n})$ and
 $u_m\in\Gamma(X,
-\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes m})$, one
+\mathcal{F}\otimes\mathcal{L}^{\otimes m})$, one
 assigns the section of
-$\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes(m+n)}$ that corresponds
+$\mathcal{F}\otimes\mathcal{L}^{\otimes(m+n)}$ that corresponds
 canonically (5.4.4.1) to $s_n\otimes u_m$; the verification of the module
 axioms is immediate. For fixed $X$ and $\mathcal{L}$,
 $\Gamma_*(\mathcal{L},\mathcal{F})$ is a covariant functor in
@@ -598,17 +598,17 @@ $\Gamma_*(\mathcal{L})\to\Gamma_*(f^*(\mathcal{L}))$. The same canonical
 homomorphism (4.4.3) likewise defines a homomorphism of abelian groups
 \[
   \Gamma\bigl(X,
-    \mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes n}\bigr)
+    \mathcal{F}\otimes\mathcal{L}^{\otimes n}\bigr)
   \longrightarrow
   \Gamma\bigl(Y,
-    f^*(\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes n})\bigr),
+    f^*(\mathcal{F}\otimes\mathcal{L}^{\otimes n})\bigr),
 \]
 and since
 \[
-  f^*(\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes n})
-  =f^*(\mathcal{F})\otimes_{\mathcal{O}_Y}
+  f^*(\mathcal{F}\otimes\mathcal{L}^{\otimes n})
+  =f^*(\mathcal{F})\otimes
    (f^*(\mathcal{L}))^{\otimes n}
-  \tag{4.3.3.1}
+  \quad\text{(4.3.3.1),}
 \]
 
 \oldpage[0\textsubscript{I}]{51}
@@ -747,7 +747,7 @@ $\varepsilon_{\lambda\mu}$, it is clear that $f^*(\mathcal{L})$ is obtained by
 gluing the $\mathcal{O}_Y|\psi^{-1}(U_\lambda)$ by means of the
 automorphisms $f^*(\theta_{\lambda\mu})$, and it therefore suffices to verify that
 the latter correspond to the cocycle
-$(\omega^\#(\varepsilon_{\lambda\mu}))$, which follows at once from the
+$(\omega^\sharp(\varepsilon_{\lambda\mu}))$, which follows at once from the
 definitions (we have identified $\varepsilon_{\lambda\mu}$ with its canonical image
 under $\rho$ (3.7.2), a section of $\psi^*(\mathcal{O}_X^*)$ over
 $\psi^{-1}(U_\lambda\cap U_\mu)$).
@@ -760,7 +760,7 @@ $\mathcal{F}$ being assumed \emph{locally free}, and let $\mathcal{G}$ be an
 $\mathcal{O}_X$-module that is an \emph{extension of $\mathcal{F}$ by $\mathcal{E}$},
 in other words such that there exists an exact sequence
 \[
-  0\longrightarrow\mathcal{E}\xrightarrow{i}\mathcal{G}
+  0\longrightarrow\mathcal{E}\xrightarrow{j}\mathcal{G}
   \xrightarrow{p}\mathcal{F}\longrightarrow 0.
 \]
 Then, for every $x\in X$, there exists an open neighbourhood $U$ of $x$ such that
@@ -784,7 +784,7 @@ $\mathcal{O}_Y$-module of finite rank. There then exists a canonical isomorphism
 \[
   f_*(\mathcal{F})\otimes_{\mathcal{O}_Y}\mathcal{L}
   \xrightarrow{\sim}
-  f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*(\mathcal{L})\bigr).
+  f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*(\mathcal{L})\bigr)
   \tag{5.4.10.1}\label{0.5.4.10.1}
 \]
 
@@ -797,7 +797,7 @@ canonical homomorphism
   \xrightarrow{1\otimes\rho}
   f_*(\mathcal{F})\otimes_{\mathcal{O}_Y}f_*(f^*(\mathcal{L}))
   \xrightarrow{\alpha}
-  f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*(\mathcal{L})\bigr),
+  f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*(\mathcal{L})\bigr)
 \]
 where $\rho$ is the homomorphism (4.4.3.2) and $\alpha$ the homomorphism (4.2.2.1).
 To show that this homomorphism is bijective when $\mathcal{L}$ is locally free,
@@ -818,7 +818,7 @@ We shall say that a ringed space $(X,\mathcal{O}_X)$ is a \emph{ringed
 space in local rings} if, for every $x\in X$, $\mathcal{O}_x$ is a
 local ring; these ringed spaces will be by far the most frequent of those
 considered in this work. We shall then denote by
-$\mathfrak{m}_x$ the \emph{maximal ideal} of $\mathcal{O}_x$, and by $k(x)$ the
+$\mathfrak{m}_x$ the \emph{maximal ideal} of $\mathcal{O}_x$, and by $\boldsymbol{k}(x)$ the
 \emph{residue field} $\mathcal{O}_x/\mathfrak{m}_x$; for every
 $\mathcal{O}_X$-module $\mathcal{F}$, every open set $U$ of $X$, every point
 $x\in U$ and every section $f\in\Gamma(U,\mathcal{F})$, we shall denote by
@@ -842,7 +842,7 @@ $X$. Then the following three properties at a point $x\in X$ are
     $f(x)\neq0$);
   \item[$c)$] \emph{There exists a section $g$ of $\mathcal{L}^{-1}$ over
     an open neighbourhood $V$ of $x$ such that the canonical image of $f\otimes
-    g$ in $\Gamma(V,\mathcal{O}_X)$ (5.4.3) is the unit section}.
+    g$ in $\Gamma(V,\mathcal{O}_X)$ \textup{(5.4.3)} is the unit section}.
 \end{enumerate}
 
 Indeed, the question being local, one may restrict oneself to the case where
@@ -865,7 +865,7 @@ Under the hypotheses of (5.5.2), let $\mathcal{L}'$ be a second invertible
 $\mathcal{O}_X$-module; then, if
 $f\in\Gamma(X,\mathcal{L})$ and $g\in\Gamma(X,\mathcal{L}')$, one has
 \[
-  X_f\cap X_g=X_{f\otimes g}.
+  X_f\cap X_g=X_{f\otimes g}
 \]
 Indeed, one is immediately reduced to the case where
 $\mathcal{L}=\mathcal{L}'=\mathcal{O}_X$ (the question being local); since
@@ -886,16 +886,16 @@ $\mathcal{F}=\mathcal{O}_X^n$; moreover, for every $x\in X$,
   (\bigwedge^p\mathcal{F})_x/
   \mathfrak{m}_x(\bigwedge^p\mathcal{F})_x
 \]
-is a vector space of dimension $\binom{n}{p}$ over $k(x)$, which
+is a vector space of dimension $\binom{n}{p}$ over $\boldsymbol{k}(x)$, which
 is canonically identified with
 \[
   \bigwedge^p(\mathcal{F}_x/\mathfrak{m}_x\mathcal{F}_x).
 \]
 Let
 $s_1,\ldots,s_p$ be sections of $\mathcal{F}$ over an open set $U$ of $X$, and
-let $s=s_1\wedge\cdots\wedge s_p$, which is a section of
+let $s=s_1\wedge\ldots\wedge s_p$, which is a section of
 $\bigwedge^p\mathcal{F}$ over $U$ (4.1.5); one has
-$s(x)=s_1(x)\wedge\cdots\wedge s_p(x)$, and consequently, to say that
+$s(x)=s_1(x)\wedge\ldots\wedge s_p(x)$, and consequently, to say that
 $s_1(x),\ldots,s_p(x)$ are \emph{linearly dependent} means that
 $s(x)=0$. One concludes that \emph{the set of $x\in U$ such that
 $s_1(x),\ldots,s_p(x)$ are linearly independent is open in
@@ -912,7 +912,7 @@ $u:\mathcal{O}_X^n|U\to\mathcal{F}|U$ defined by the $s_i$ (5.1.1) is an
 \emph{isomorphism}: indeed, one may restrict oneself to the case where
 $\mathcal{F}=\mathcal{O}_X^n$ and where
 $\bigwedge^n\mathcal{F}$ and $\mathcal{O}_X$ are canonically identified;
-$s=s_1\wedge\cdots\wedge s_n$ is then an \emph{invertible} section of $\mathcal{O}_X$
+$s=s_1\wedge\ldots\wedge s_n$ is then an \emph{invertible} section of $\mathcal{O}_X$
 over $U$, and one defines an inverse homomorphism
 of $u$ by means of Cramer's formulas.
 \end{env}

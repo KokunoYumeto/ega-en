@@ -41,7 +41,7 @@ Let $A$ be a Noetherian ring, $M$ an $A$-module, $X=\operatorname{Spec}(A)$, $\s
 \end{proposition}
 
 \begin{proof}
-This follows from the definition \sref{IV.3.1.1} and from Bourbaki, \emph{loc.\ cit.}, \textsection~1, no~2, cor.\ of prop.~5, applied to $S=A-\mathfrak{j}_x$.
+This follows from the definition \sref{IV.3.1.1} and from Bourbaki, \emph{loc.\ cit.}, \textsection~1, no~2, cor.\ of prop.~5, applied to $S=A\setmin\mathfrak{j}_x$.
 \end{proof}
 
 \begin{proposition}[3.1.3]
@@ -52,8 +52,8 @@ The following conditions are equivalent:
 \begin{enumerate}
   \item[\emph{a)}] $x\in\operatorname{Ass}(\sh{F})$.
 \oldpage[IV-2]{37}
-  \item[\emph{b)}] There exist an open neighbourhood $U$ of $x$ and a section $f\in\Gamma(U,\sh{F})$ such that $U\cap Z$ is equal to $\operatorname{Supp}(\sh{O}_U\cdot f)$.
-  \item[\emph{b$'$)}] There exist an open neighbourhood $U$ of $x$ and a section $f\in\Gamma(U,\sh{F})$ such that $U\cap Z$ is an irreducible component of $\operatorname{Supp}(\sh{O}_U\cdot f)$.
+  \item[\emph{b)}] There exist an open neighbourhood $U$ of $x$ and a section $f\in\Gamma(U,\sh{F})$ such that $U\cap Z$ is equal to $\operatorname{Supp}(\sh{O}_U.f)$.
+  \item[\emph{b$'$)}] There exist an open neighbourhood $U$ of $x$ and a section $f\in\Gamma(U,\sh{F})$ such that $U\cap Z$ is an irreducible component of $\operatorname{Supp}(\sh{O}_U.f)$.
   \item[\emph{c)}] There exist an open neighbourhood $U$ of $x$ and a submodule of $\sh{F}|U$ isomorphic to $\sh{O}_Z|U$ ($\sh{O}_Z$ being identified with a quotient of $\sh{O}_X$).
   \item[\emph{c$'$)}] There exist an open neighbourhood $U$ of $x$ and a coherent submodule $\sh{G}$ of $\sh{F}|U$ such that $U\cap Z$ is an irreducible component of $\operatorname{Supp}(\sh{G})$.
 \end{enumerate}
@@ -122,7 +122,7 @@ We immediately reduce to the corresponding propositions for modules (Bourbaki, \
 \begin{proposition}[3.1.8]
 \phantomsection
 \label{IV.3.1.8}
-Let $X$ be a locally Noetherian prescheme, $\sh{F}$ a quasi-coherent $\sh{O}_X$-module, $U$ an open subset of $X$, and $\sh{J}$ a coherent ideal of $\sh{O}_X$ defining a closed sub-prescheme of $X$ having $X-U$ as underlying space.
+Let $X$ be a locally Noetherian prescheme, $\sh{F}$ a quasi-coherent $\sh{O}_X$-module, $U$ an open subset of $X$, and $\sh{J}$ a coherent ideal of $\sh{O}_X$ defining a closed sub-prescheme of $X$ having $X\setmin U$ as underlying space.
 The following conditions are equivalent:
 \begin{enumerate}
   \item[\emph{a)}] $\operatorname{Ass}(\sh{F})\subset U$.
@@ -133,9 +133,9 @@ The following conditions are equivalent:
 
 \begin{proof}
 The question being local, we can suppose $X=\operatorname{Spec}(A)$ affine, $A$ being a Noetherian ring, $\sh{F}=\widetilde{M}$, where $M$ is an $A$-module, and $\sh{J}=\widetilde{\mathfrak{J}}$, where $\mathfrak{J}$ is an ideal of $A$.
-The homomorphism $M\to\operatorname{Hom}_A(\mathfrak{J},M)$ sends $m\in M$ to the homomorphism $x\mapsto xm$ of $\mathfrak{J}$ into $M$; to say that it is not injective means that there exists $m\neq 0$ in $M$ such that $\mathfrak{J} m=0$.
+The homomorphism $M\to\operatorname{Hom}_A(\mathfrak{J},M)$ sends $m\in M$ to the homomorphism $x\leadsto xm$ of $\mathfrak{J}$ into $M$; to say that it is not injective means that there exists $m\neq 0$ in $M$ such that $\mathfrak{J} m=0$.
 
-Let us first show that \emph{c)} implies \emph{a)}. If $\operatorname{Ass}(\sh{F})$ met $X-U$, there would be a prime ideal $\mathfrak{p}\in\operatorname{Ass}(M)$ containing $\mathfrak{J}$, hence an element $m\neq 0$ of $M$ such that $\mathfrak{p}m=0$, and therefore $\mathfrak{J}m=0$, contradicting \emph{c)}.
+Let us first show that \emph{c)} implies \emph{a)}. If $\operatorname{Ass}(\sh{F})$ met $X\setmin U$, there would be a prime ideal $\mathfrak{p}\in\operatorname{Ass}(M)$ containing $\mathfrak{J}$, hence an element $m\neq 0$ of $M$ such that $\mathfrak{p}m=0$, and therefore $\mathfrak{J}m=0$, contradicting \emph{c)}.
 
 Next, \emph{b)} implies \emph{c)}. Indeed, if $\mathfrak{J}m=0$ for some $m\neq 0$ in $M$, then for every prime ideal $\mathfrak{q}$ not containing $\mathfrak{J}$ there exists $a\in\mathfrak{J}$ with $a\notin\mathfrak{q}$. The relation $am=0$ then implies that the canonical image of $m$ in $M_\mathfrak{q}$ is zero. Thus $m$ would define a nonzero section of $\sh{F}$ over $X$ whose restriction to $U$ is zero, contrary to \emph{b)}.
 
@@ -302,7 +302,7 @@ We say that such a decomposition is \emph{reduced} if the sets $\operatorname{As
 
 If $(\sh{F}_\alpha)_{\alpha\in I}$ is an irredundant decomposition (resp.\ a reduced irredundant decomposition) of $\sh{F}$ and $\sh{F}_\alpha=\sh{F}/\sh{G}_\alpha$, we also say that the family $(\sh{G}_\alpha)_{\alpha\in I}$ of $\sh{O}_X$-submodules of $\sh{F}$ is a \emph{primary decomposition of $0$ in $\sh{F}$}.  The injectivity of the canonical homomorphism $\sh{F}\to\bigoplus_{\alpha\in I}\sh{F}_\alpha$ is equivalent to the condition $\bigcap_{\alpha\in I}\sh{G}_\alpha=0$.
 
-If $(\sh{F}_\alpha)$ is an irredundant decomposition of $\sh{F}$, to say that it is reduced is equivalent to saying that the sets $\operatorname{Ass}(\sh{F}_\alpha)$ are pairwise distinct and contained in $\operatorname{Ass}(\sh{F})$.  If $\operatorname{Ass}(\sh{F}_\alpha)=\{x_\alpha\}$ for every $\alpha\in I$, then $\alpha\mapsto x_\alpha$ is a bijection from $I$ onto $\operatorname{Ass}(\sh{F})$.  These properties are local and therefore follow from Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection~2, no~3, prop.~4.
+If $(\sh{F}_\alpha)$ is an irredundant decomposition of $\sh{F}$, to say that it is reduced is equivalent to saying that the sets $\operatorname{Ass}(\sh{F}_\alpha)$ are pairwise distinct and contained in $\operatorname{Ass}(\sh{F})$.  If $\operatorname{Ass}(\sh{F}_\alpha)=\{x_\alpha\}$ for every $\alpha\in I$, then $\alpha\leadsto x_\alpha$ is a bijection from $I$ onto $\operatorname{Ass}(\sh{F})$.  These properties are local and therefore follow from Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection~2, no~3, prop.~4.
 
 \phantomsection
 \begin{proposition}[3.2.6]
@@ -314,7 +314,7 @@ For every $x\in\operatorname{Ass}(\sh{F})$ such that $\overline{\{x\}}$ is not e
 
 \begin{proof}
 For every $x\in\operatorname{Ass}(\sh{F})$, let $U$ be an affine open neighbourhood of $x$, with ring $A$, and write $\sh{F}|U=\widetilde{M}$, where $M$ is a finitely generated $A$-module.
-We know (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection~1, no~1, prop.~4) that there exists a submodule $N$ of $M$ such that, on setting $P=M/N$, one has $\operatorname{Ass}(P)=\{x\}$ and $\operatorname{Ass}(N)=\operatorname{Ass}(M)-\{x\}$.
+We know (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection~1, no~1, prop.~4) that there exists a submodule $N$ of $M$ such that, on setting $P=M/N$, one has $\operatorname{Ass}(P)=\{x\}$ and $\operatorname{Ass}(N)=\operatorname{Ass}(M)\setmin\{x\}$.
 Let $\sh{G}=\widetilde{P}$, a quasi-coherent $\sh{O}_U$-module, and let $j:U\to X$ be the canonical inclusion.  Let $u:j^*(\sh{F})\to\sh{G}$ be the surjective homomorphism corresponding to $M\to P$.  It induces a homomorphism $j_*(u):j_*(j^*(\sh{F}))\to j_*(\sh{G})$, and hence, by composition, a homomorphism
 \[
 v:\sh{F}\xrightarrow{\rho_\sh{F}}j_*(j^*(\sh{F}))\xrightarrow{j_*(u)}j_*(\sh{G})
@@ -733,7 +733,7 @@ Consequently
   &=
   \operatorname{length}(M'/tM')
   +
-  \operatorname{length}(M''/tM''),\\
+  \operatorname{length}(M''/tM'')\\
 \operatorname{length}(M_{\mathfrak p_i})
   &=
   \operatorname{length}(M'_{\mathfrak p_i})
@@ -752,7 +752,7 @@ By the induction hypothesis, this is equivalent to condition \emph{$\beta$)} for
 \phantomsection
 \label{IV.3.4.2}
 Under the general hypotheses of \sref{IV.3.4.1}, suppose that $Z$ is not equal to any of the $S_i$ and that $\operatorname{length}((\sh{F}/t\sh{F})_z)=1$.
-Then there is a unique $S_i$ containing $Z$, and for this value of $i$, $\operatorname{length}(\sh{F}_{s_i})=1$; moreover, $\sh{O}_{S_i,z}$ is a discrete valuation ring with uniformizer $t_z$, and $t_z$ is $\sh{F}_z$-regular.
+Then there is a unique $S_i$ containing $Z$, and for this value of $i$, $\operatorname{length}(\sh{F}_{s_i})=1$; moreover, $\sh{O}_{S,z}$ is a discrete valuation ring with uniformizer $t_z$, and $t_z$ is $\sh{F}_z$-regular.
 \end{corollary}
 
 \begin{proof}
@@ -830,7 +830,7 @@ The conclusion follows from \sref{IV.3.4.2}.
 The hypotheses being those of \sref{IV.3.4.1}, let $x$ be a point of $Y$.
 Suppose that $Y$ does not contain any of the $S_i$ containing $x$, and that $\sh{F}/t\sh{F}$ is reduced at the point $x$ \sref{IV.3.2.2}.
 Then $t_x$ is $\sh{F}_x$-regular and $\sh{F}$ is reduced at the point $x$.
-Moreover, if $z_j$ is the generic point of an irreducible component of $\operatorname{Supp}(\sh{F}/t\sh{F})$ containing $x$, then $z_j$ is contained in a unique $S_i$, and $\sh{O}_{S_i,z_j}$ is a discrete valuation ring with uniformizer $t_{z_j}$.
+Moreover, if $z_j$ is the generic point of an irreducible component of $\operatorname{Supp}(\sh{F}/t\sh{F})$ containing $x$, then $z_j$ is contained in a unique $S_i$, and $\sh{O}_{S,z_j}$ is a discrete valuation ring with uniformizer $t_{z_j}$.
 \end{proposition}
 
 \begin{proof}
@@ -899,7 +899,7 @@ is integral \sref{IV.3.2.4}, then $M$ is integral and the sequence $(x_i)_{1\leq
 Induction on $k$ immediately reduces us to the case $k=1$; write $x$ for $x_1$.
 The hypothesis that $x$ forms part of a system of parameters for $M$ implies
 \[
-\dim(N)=\dim(M)-1
+\dim(N)=\dim(M)\setmin 1
 \]
 by \sref[0]{0.16.3.7}.
 Put $n=\dim(N)$.

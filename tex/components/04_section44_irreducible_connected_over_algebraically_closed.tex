@@ -100,7 +100,7 @@ $X'=X'_1\cup X'_2$, and, for $i=1,2$, let $X_i$ be the set of
 $x\in X$ such that $f^{-1}(x)\subset X'_i$.
 Then
 \[
-X-X_i=f(X'-X'_i),
+X-X_i=f(X'\setmin X'_i),
 \]
 and, since $f$ is open, $X_i$ is a closed subset of $X$.
 For every $x\in X$, the fibre $f^{-1}(x)$ is irreducible by hypothesis
@@ -125,7 +125,7 @@ fibres $f^{-1}(x)$ are irreducible without $X'$ being connected.
 For example, take for $X$ an irreducible scheme---the affine line
 $\Spec(k[T])$ over an algebraically closed field $k$, say---choose a
 closed point $x_0$ of $X$, and take for $X'$ the topological sum of
-$\{x_0\}$ and the open subspace $X-\{x_0\}$ of $X$.
+$\{x_0\}$ and the open subspace $X\setmin\{x_0\}$ of $X$.
 
 Likewise, if the hypothesis that $f$ is open is replaced by the
 hypothesis that $f$ is closed, or even proper, then it can happen that
@@ -134,11 +134,11 @@ irreducible, even though this replacement does ensure that the topology
 of $X$ is the quotient of that of $X'$ by the relation defined by $f$.
 Again take $X$ to be the affine line over $k$, and put
 \[
-S=X\times_k\mathbf P,
+S=X\times_k P,
 \]
-where $\mathbf P$ is the projective line over $k$.
+where $P$ is the projective line over $k$.
 Let $x_0$ be a closed point of $X$, let $t_0$ be a closed point of
-$\mathbf P$, and let
+$P$, and let
 \[
 p:S\longrightarrow X,
 \qquad

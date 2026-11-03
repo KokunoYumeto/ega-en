@@ -36,14 +36,14 @@ We note finally that for a ring (even reduced), the residue fields at its prime 
 \begin{env}[21.1.4]
 \label{0.21.1.4}
 In all the rest of this section, we fix a \emph{prime number $p$} and all rings will be assumed \emph{of characteristic $p$}, unless express mention to the contrary.
-For such a ring $A$, the map $x\mapsto x^p$ is an \emph{endomorphism} of $A$, which we denote $\mathrm{F}_A$; if $A$ is \emph{reduced}, $\mathrm{F}_A$ is \emph{injective}.
+For such a ring $A$, the map $x\leadsto x^p$ is an \emph{endomorphism} of $A$, which we denote $\mathrm{F}_A$; if $A$ is \emph{reduced}, $\mathrm{F}_A$ is \emph{injective}.
 We set $A^p=\mathrm{F}_A(A)$ (subring of $A$ formed by the $x^p$ for $x\in A$); one can naturally consider $A$ as an $A^p$-algebra.
 
-One can also consider $A$ as an $A$-algebra \emph{by means of the homomorphism} $\mathrm{F}_A:x\mapsto x^p$ of $A$ into $A$; in other words, this is the $A$-algebra $A_{[\mathrm{F}_A]}$, for which the product $\lambda.x$ of $x\in A$ by a scalar $\lambda\in A$ is the product $\lambda^p x$ in the ring $A$; we denote this $A$-algebra $A^{(p)}$.
+One can also consider $A$ as an $A$-algebra \emph{by means of the homomorphism} $\mathrm{F}_A:x\leadsto x^p$ of $A$ into $A$; in other words, this is the $A$-algebra $A_{[\mathrm{F}_A]}$, for which the product $\lambda.x$ of $x\in A$ by a scalar $\lambda\in A$ is the product $\lambda^p x$ in the ring $A$; we denote this $A$-algebra $A^{(p)}$.
 It is clear that for every ring homomorphism $u:A\to B$ the pair $(u,u)$ is a \emph{di-homomorphism} of $A$-algebras $A^{(p)}\to B^{(p)}$.
 For every $A$-module $E$, we set $E^{(p)}=E\otimes_A A^{(p)}$ where $A^{(p)}$ is considered as an $(A,A)$-bimodule, the structure of $A$-module on the left being that which one has just defined, and the structure of $A$-module on the right coming from the structure of $A$-module of $A^{(p)}$ provenant of the ring structure, so that for $x\in E$, $\alpha$, $\beta$ in $A$, one has
 \[
-  \alpha(x\otimes\beta)=x\otimes(\alpha\beta) \quad\text{and}\quad (\alpha x)\otimes\beta=x\otimes\alpha^p\beta.
+  \alpha(x\otimes\beta)=x\otimes(\alpha\beta) \quad\text{and}\quad (\alpha x)\otimes\beta=\alpha^p(x\otimes\beta)=x\otimes\alpha^p\beta.
 \]
 \end{env}
 
@@ -56,12 +56,12 @@ When $\mathrm{F}_A$ is \emph{injective}, one can identify $A^{(p)}$ as an algebr
 Let $A$, $B$ be two rings, $u:A\to B$ a homomorphism.
 \begin{enumerate}
   \item[\rm(i)] Every $A$-derivation of $B$ in a $B$-module $L$ is zero in $A[B^p]$ \textup{(}hence is an $A[B^p]$-derivation\textup{)}.
-  \item[\rm(ii)] For every sub-$A$-algebra $A'$ of $A[B^p]$, if $j:A'\to B$ is the canonical injection, the canonical homomorphism
+  \item[\rm\textup{(ii)}] For every sub-$A$-algebra $A'$ of $A[B^p]$, if $j:A'\to B$ is the canonical injection, the canonical homomorphism
 \[
   j_{B/A'/A}:\Omega^1_{B/A}\to\Omega^1_{B/A'}
 \]
 is bijective.
-  \item[\rm(iii)] Suppose that there exists an integer $s\geq 0$ such that $u(A)\supset B^{p^s}$.
+  \item[\rm\textup{(iii)}] Suppose that there exists an integer $s\geq 0$ such that $u(A)\supset B^{p^s}$.
   Then, in the ring $B\otimes_A B$, $\mathfrak{J}_{B/A}$ is a nilideal.
 \end{enumerate}
 \end{proposition}
@@ -71,8 +71,8 @@ is bijective.
 
 (ii) In view of \sref{0.20.4.8}, the assertion (ii) is only a translation of (i), this last being written $\Der_{A[B^p]}(B,L)=\Der_A(B,L)$ for every $B$-module $L$.
 
-(iii) For every $x\in B$, one has $(x\otimes 1-1\otimes x)^{p^s}=x^{p^s}\otimes 1-1\otimes x^{p^s}=0$, since $x^{p^s}\in u(A)$.
-The conclusion follows from the fact that the elements $1\otimes x-x\otimes 1$ generate $\mathfrak{J}_{B/A}$ \sref{0.20.4.4}.
+(iii) For every $x\in B$, one has $(x\otimes 1\setmin1\otimes x)^{p^s}=x^{p^s}\otimes 1\setmin1\otimes x^{p^s}=0$, since $x^{p^s}\in u(A)$.
+The conclusion follows from the fact that the elements $1\otimes x\setmin x\otimes 1$ generate $\mathfrak{J}_{B/A}$ \sref{0.20.4.4}.
 \end{proof}
 
 It follows immediately from \sref{0.21.1.5} that one has, for every pair of ring homomorphisms $A\to B\to C$,
@@ -108,7 +108,7 @@ Let $R$ be a ring, $S$ a finite $R$-algebra; if the canonical homomorphism $\pi:
 \end{lemma}
 
 \begin{proof}
-It suffices to show that for every maximal ideal $\mathfrak{m}$ of $R$, if one sets $T=R-\mathfrak{m}$, the homomorphism $u_\mathfrak{m}:R_\mathfrak{m}\to T^{-1}S$ is surjective (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S\,3, n$^\circ$\,3, th.~1); or the hypothesis implies that the homomorphism $(T^{-1}S)\otimes_{R_\mathfrak{m}}(S/\mathfrak{m}S)\to T^{-1}S$ is bijective, and as $T^{-1}S$ is a finite $R_\mathfrak{m}$-algebra, one sees that one can reduce to the case where $R$ is a local ring.
+It suffices to show that for every maximal ideal $\mathfrak{m}$ of $R$, if one sets $T=R\setmin\mathfrak{m}$, the homomorphism $u_\mathfrak{m}:R_\mathfrak{m}\to T^{-1}S$ is surjective (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S\,3, n$^\circ$\,3, th.~1); or the hypothesis implies that the homomorphism $(T^{-1}S)\otimes_{R_\mathfrak{m}}(S/\mathfrak{m}S)\to T^{-1}S$ is bijective, and as $T^{-1}S$ is a finite $R_\mathfrak{m}$-algebra, one sees that one can reduce to the case where $R$ is a \emph{local} ring.
 Denoting again by $\mathfrak{m}$ its maximal ideal, it suffices to prove that $u\otimes 1:R/\mathfrak{m}\to S/\mathfrak{m}S$ is surjective, by virtue of the lemma of Nakayama; as the canonical homomorphism $(S/\mathfrak{m}S)\otimes_{R/\mathfrak{m}}(S/\mathfrak{m}S)\to S/\mathfrak{m}S$ is bijective and $S/\mathfrak{m}S$ is a finite $(R/\mathfrak{m})$-algebra, one is finally reduced to the case where $R$ is a \emph{field}; but then the ranks of $S\otimes_R S$ and of $S$ over $R$ must be equal, which is possible only if $S$ is of rank $0$ or $1$, hence $u:R\to S$ is surjective.
 \end{proof}
 
@@ -143,7 +143,7 @@ When $B$ is a \emph{field}, we will demonstrate the equivalence of properties a)
 \begin{definition}[21.1.9]
 \label{0.21.1.9}
 Let $A$ be a ring (of characteristic $p$), $B$ an $A$-algebra.
-One says that a family $(x_\alpha)_{\alpha\in I}$ of elements of $B$ is \emph{$p$-free over $A$} (resp.\ a \emph{system of $p$-generators} of $B$ over $A$, resp.\ a \emph{$p$-base} of $B$ over $A$) if the family of monomials $\prod_\alpha x_\alpha^{n(\alpha)}$ $(0\leq n(\alpha)<p$, $(n(\alpha))_{\alpha\in I}$ with finite support) is a free family (resp.\ a system of generators, resp.\ a base) in the $A[B^p]$-module $B$.
+One says that a family $(x_\alpha)_{\alpha\in I}$ of elements of $B$ is \emph{$p$-free over $A$} (resp.\ a \emph{system of $p$-generators} of $B$ over $A$, \textup{resp.}\ a \emph{$p$-base} of $B$ over $A$) if the family of monomials $\prod_\alpha x_\alpha^{n(\alpha)}$ $(0\leq n(\alpha)<p$, $(n(\alpha))_{\alpha\in I}$ with finite support) is a free family (resp.\ a system of generators, resp.\ a base) in the $A[B^p]$-module $B$.
 \end{definition}
 
 One has corresponding definitions for a \emph{subset} $M$ of elements of $B$, by considering the family defined by the canonical injection $M\to B$.
@@ -191,9 +191,9 @@ As these monomials, for finitely supported families with $0\leq n(\alpha)<p$, fo
 \]
 It remains to prove that $v$ is multiplicative. One can write
 \[
-  \left(\prod_\alpha x_\alpha^{m(\alpha)}\right)\left(\prod_\alpha x_\alpha^{n(\alpha)}\right)=a\prod_\alpha x_\alpha^{r(\alpha)},
+  \left(\prod_\alpha x_\alpha^{m(\alpha)}\right)\left(\prod_\alpha x_\alpha^{n(\alpha)}\right)=a.\prod_\alpha x_\alpha^{r(\alpha)},
 \]
-where $r(\alpha)=m(\alpha)+n(\alpha)$ if this sum is less than $p$, and $r(\alpha)=m(\alpha)+n(\alpha)-p$ otherwise, while $a\in A$
+where $r(\alpha)=m(\alpha)+n(\alpha)$ if this sum is less than $p$, and $r(\alpha)=m(\alpha)+n(\alpha)\setmin p$ otherwise, while $a\in A$
 \oldpage[0\textsubscript{IV-1}]{158}
 is the product of the $x_\alpha^p$ over the indices for which $m(\alpha)+n(\alpha)\geq p$.
 Thus it suffices to prove $u(a)=\prod_\alpha z_\alpha^p$, and this follows from $q(z_\alpha)=x_\alpha$ and condition (i).
@@ -207,7 +207,7 @@ If there exists a $p$-base of $B$ over $A$, $B$ is an $A$-algebra formally smoot
 \begin{proof}
 Indeed, let $E$ be an $A$-extension of $B$ by a $B$-module $L$, $q:E\to B$ the augmentation, $u:A\to E$ the structural homomorphism.
 To say that $E$ is $B^p$-trivial means that there exists an $A$-homomorphism $v:B\to E$ such that $q(v(b))=b$ and $v(b^p)=u(b^p)$ for all $b\in B$.
-But one has $u(q(z)^p)=v(q(z)^p)=(v(q(z)))^p$; but by the relation $L^2=0$, one also has $L^p=0$, and as $v(q(z))-z\in L$, one has $(v(q(z)))^p=z^p$; the condition of \sref{0.21.2.1}, (i) is therefore satisfied, and $E$ is $B$-trivial.
+But one has $u(q(z)^p)=v(q(z)^p)=(v(q(z)))^p$; but by the relation $L^2=0$, one also has $L^p=0$, and as $v(q(z))\setmin z\in L$, one has $(v(q(z)))^p=z^p$; the condition of \sref{0.21.2.1}, (i) is therefore satisfied, and $E$ is $B$-trivial.
 \end{proof}
 
 \begin{corollary}[21.2.3]
@@ -221,7 +221,7 @@ Then:
 \end{corollary}
 
 \begin{proof}
-Given a derivation $D$ of $A$ in $L$, consider the ring $E=\mathrm{D}_B(L)$ and the homomorphism $u:A\to E$ defined by $u(a)=(a,D(a))$; an $A$-homomorphism right inverse $v:B\to E$ is then of the form $x\mapsto(x,D'(x))$, where $D'$ is a derivation of $B$ in $L$ extending $D$ \sref{0.20.1.5}; as $u(q(z)^p)=(q(z)^p,D(q(z)^p))$ for $z\in E$, the corollary follows immediately from \sref{0.21.2.1} applied to $E$.
+Given a derivation $D$ of $A$ in $L$, consider the ring $E=\mathrm{D}_B(L)$ and the homomorphism $u:A\to E$ defined by $u(a)=(a,D(a))$; an $A$-homomorphism right inverse $v:B\to E$ is then of the form $x\leadsto(x,D'(x))$, where $D'$ is a derivation of $B$ in $L$ extending $D$ \sref{0.20.1.5}; as $u(q(z)^p)=(q(z)^p,D(q(z)^p))$ for $z\in E$, the corollary follows immediately from \sref{0.21.2.1} applied to $E$.
 \end{proof}
 
 It follows from \sref{0.21.2.3} that the sequence
@@ -272,7 +272,7 @@ Let $A$, $B$ be two rings, $u:A\to B$ a ring homomorphism; one has (with the not
   \label{0.21.2.6.1}
 \xymatrix{
   A^{(p)} \ar[r]^{u} & B^{(p)} \\
-  A \ar[u]^{\mathrm{F}_A} \ar[r]^{u} & B \ar[u]_{\mathrm{F}_B}
+  A \ar[u]^{\mathrm{F}_A} \ar[r]_{u} & B \ar[u]_{\mathrm{F}_B}
 }
 \end{equation}
 One deduces therefore canonically a homomorphism of $B$-algebras
@@ -348,7 +348,7 @@ The verification of the existence and uniqueness of the homomorphism $w:B\to E$ 
 Indeed, one can reduce to the case where $\mathfrak{R}^2=0$; as $\Der_A(B,\mathfrak{R})=\Hom_B(\Omega^1_{B/A},\mathfrak{R})$ by \sref{0.20.4.8}, there exists an $A$-derivation $D$ of $B$ in $\mathfrak{R}$ and a unique one such that $D(x_\alpha)=z'_\alpha$ for every family $(z'_\alpha)$ of elements of $\mathfrak{R}$; the conclusion follows from \sref{0.20.1.1}.
 \end{remark}
 
-\subsection{\texorpdfstring{$p$}{p}-bases and modules of imperfection}
+\subsection{\texorpdfstring{$p$}{p}-bases and modules of imperfection.}
 \label{subsection:0.21.3}
 
 \begin{env}[21.3.1]
@@ -444,7 +444,7 @@ If $B$ is a flat $A$-module \textup{(}for $i$\textup{)}, the sequence \sref{0.21
 \begin{proof}
 This follows from the definition of flatness.
 The proposition \sref{0.21.3.4} applies in particular when $B^p\subset A\subset B$, $i$ and $j$ being respectively the canonical injection and $\mathrm{F}_B$ (so that $B$ is then a free $A$-module).
-But even in this case the kernel $\Xi_{B/A}$ is not necessarily zero.
+But even in this case the kernel $\pi_{B/A}$ is not necessarily zero.
 However:
 \end{proof}
 
@@ -462,8 +462,8 @@ is bijective, and the elements $d_A(x^p_\lambda)\otimes 1$ form a base of the $B
 
 \begin{proof}
 \oldpage[0\textsubscript{IV-1}]{162}
-As $B$ is reduced, $x\mapsto x^p$ is an isomorphism of structure of $B$ onto $B^p$, and by transport of structure via this isomorphism, one sees that $(x^p_\lambda)$ and the $y_\mu$ form a $p$-base of $B^p$ over $A^p$ \sref{0.21.1.10}; by consequence \sref{0.21.1.5}, (ii) and \sref{0.21.2.5} the $d_A(x^p_\lambda)$ and the $d_A(y_\mu)$ form a \emph{base} of the $A$-module $\Omega^1_A$.
-But, the image of $d_A(x_\lambda)\otimes 1$ by $i_{B/A}$ is $d_B(x^p_\lambda)=0$; on the other hand, the image of $d_A(y_\mu)$ by $i_{B/A}$ is $d_B(i(y_\mu))$, and as the $y_\mu$ and the $x_\lambda$ form a $p$-base of $B$ over $B^p$ \sref{0.21.1.10}, the $d_B(y_\mu)$ are part of a base of $\Omega^1_B$ \sref{0.21.2.5}, and are thus linearly independent over $B$.
+As $B$ is reduced, $x\rightsquigarrow x^p$ is an isomorphism of structure of $B$ onto $B^p$, and by transport of structure via this isomorphism, one sees that $(x^p_\lambda)$ and the $y_\mu$ form a $p$-base of $B^p$ over $A^p$ \sref{0.21.1.10}; by consequence \sref{0.21.1.5}, (ii) and \sref{0.21.2.5} the $d_A(x^p_\lambda)$ and the $d_A(y_\mu)$ form a \emph{base} of the $A$-module $\Omega^1_A$.
+But, the image of $d_A(x_\lambda)\otimes 1$ by $i_{B/A}$ is $d_B(x^p_\lambda)=0$; on the other hand, the image of $d_A(y_\mu)$ by $i_{B/A}$ is $d_B(y_\mu)$, and as the $y_\mu$ and the $x_\lambda$ form a $p$-base of $B$ over $B^p$ \sref{0.21.1.10}, the $d_B(y_\mu)$ are part of a base of $\Omega^1_B$ \sref{0.21.2.5}, and are thus linearly independent over $B$.
 Hence the kernel of $i_{B/A}$ has a base formed by the $d_A(x^p_\lambda)\otimes 1$, and as these are the images by \sref{0.21.3.5.1}, these last form a base of the $B$-module $\Omega^1_{B/A}\otimes_B B^{(p)}$ \sref{0.21.2.5}, the homomorphism \sref{0.21.3.5.1} of $B$-modules is bijective.
 \end{proof}
 
@@ -481,7 +481,7 @@ Then the canonical homomorphism $\Omega^1_{B/A}\to\Omega^1_{B'/A'}$ \sref{0.20.5
 \[
 \xymatrix{
   0 \ar[r] & \Xi_{B/A} \ar[r] \ar[d] & \Theta_{B/A} \ar[r]^{\pi_{B/A}} \ar[d] & \Omega^1_A \ar[d] \\
-  0 \ar[r] & \Xi_{B'/A'} \ar[r] & \Theta_{B'/A'} \ar[r]^{\pi_{B'/A'}} & \Omega^1_{A'}
+  0 \ar[r] & \Xi_{B'/A'} \ar[r] & \Theta_{B'/A'} \ar[r]_{\pi_{B'/A'}} & \Omega^1_{A'}
 }
 \]
 
@@ -520,7 +520,7 @@ For an element $x\in K$ to be $p$-free over $k$, it is necessary and sufficient 
 \end{lemma}
 
 \begin{proof}
-Indeed, $x$ is a root of the polynomial $X^p-x^p$ of $k(K^p)[X]$, and one knows (Bourbaki, \emph{Alg.}, chap.~V, \S\,8, n$^\circ$\,1, prop.~1) that if $x\notin k(K^p)$ this polynomial is irreducible, so that the elements $1,x,\ldots,x^{p-1}$ form a base of the $k(K^p)$-module $k(K^p)(x)$.
+Indeed, $x$ is a root of the polynomial $X^p\setmin x^p$ of $k(K^p)[X]$, and one knows (Bourbaki, \emph{Alg.}, chap.~V, \S\,8, n$^\circ$\,1, prop.~1) that if $x\notin k(K^p)$ this polynomial is irreducible, so that the elements $1,x,\ldots,x^{p-1}$ form a base of the $k(K^p)$-module $k(K^p)(x)$.
 \end{proof}
 
 \begin{theorem}[21.4.2]
@@ -587,8 +587,8 @@ Let us prove conversely that if the $d_{K/k}(x_\alpha)$ are linearly independent
 Let $k$ be a field of characteristic $p>0$, $K$ an extension of $k$, $x$ an element of $K$.
 The three following conditions are equivalent:
 \begin{enumerate}
-  \item[\rm a)] $x\notin k(K^p)$.
-  \item[\rm b)] $d_{K/k}(x)\neq 0$.
+  \item[\rm \textup{a)}] $x\notin k(K^p)$.
+  \item[\rm \textup{b)}] $d_{K/k}(x)\neq 0$.
   \item[\rm c)] The element $x$ is $p$-free over $k$.
 \end{enumerate}
 \end{corollary}
@@ -632,7 +632,7 @@ In this and the following numbers, \emph{we no longer assume} that the rings con
 \begin{env}[21.5.1]
 \label{0.21.5.1}
 Let us first note that the criterion \sref{0.21.2.7} allows us to prove one part of the Cohen theorem on separable extensions \sref{0.19.6.1}, namely that if $k$ is a field of characteristic $p>0$ and if $K$ is a separable extension of $k$, then $K$ is a formally smooth $k$-algebra.
-Indeed, $K$ admits a $p$-base over $k$ \sref{0.21.4.2}, and on the other hand, it follows from the criterion of MacLane (Bourbaki, \emph{Alg.}, chap.~V, \S~8, no.~2, prop.~3) that in an algebraic closure of $K$, $k^{p^{-1}}$ and $K$ are linearly disjoint over $k$, and consequently the canonical homomorphism $k^{p^{-1}}\otimes_k K\to k^{p^{-1}}(K)$ is bijective, which is precisely the condition (i) of \sref{0.21.2.7}, after transport of structure by the isomorphism $x\mapsto x^p$.
+Indeed, $K$ admits a $p$-base over $k$ \sref{0.21.4.2}, and on the other hand, it follows from the criterion of MacLane (Bourbaki, \emph{Alg.}, chap.~V, \S~8, no.~2, prop.~3) that in an algebraic closure of $K$, $k^{p^{-1}}$ and $K$ are linearly disjoint over $k$, and consequently the canonical homomorphism $k^{p^{-1}}\otimes_k K\to k^{p^{-1}}(K)$ is bijective, which is precisely the condition (i) of \sref{0.21.2.7}, after transport of structure by the isomorphism $x\rightsquigarrow x^p$.
 \end{env}
 
 \begin{proposition}[21.5.2]
@@ -662,7 +662,7 @@ The same reasoning proves that $a)$ implies $c)$, taking $C=B/\mathfrak{n}^2$, $
 Let us prove next that $c')$ implies $a)$.
 The two homomorphisms $u_1$ and $u'_1$ are such that $u'_1=u_1+D$, where $D$ is a derivation of $A/\mathfrak{m}^2$ into $\mathfrak{n}/\mathfrak{n}^2$ \sref{0.20.1.1}; moreover, the hypothesis $\operatorname{gr}_1(u'_1)=\operatorname{gr}_1(u_1)$ means that $D$ is zero in $\mathfrak{m}/\mathfrak{m}^2$, and can thus be considered as a derivation of $K=A/\mathfrak{m}$ into $\mathfrak{n}/\mathfrak{n}^2$, and $\mathfrak{n}/\mathfrak{n}^2$ identifies (by choice of a uniformizer of $B$) with the $K$-module $L$ (for $u_0$).
 On the other hand, the conditions imposed on $w_1$ imply that $\operatorname{gr}_1(w_1)$ is also the identity (since $u_1(\mathfrak{m}/\mathfrak{m}^2)$ generates $\mathfrak{n}/\mathfrak{n}^2$);
-$w_1$ is thus of the form $z\mapsto z+D'(z)$, where $D'$ is this time a derivation of $B/\mathfrak{n}^2$ in the $(B/\mathfrak{n}^2)$-module $\mathfrak{n}/\mathfrak{n}^2$; as $w_1$ is the identity on $\mathfrak{n}/\mathfrak{n}^2$, $D'$ can again (by the preceding identification of $\mathfrak{n}/\mathfrak{n}^2$ and of $L$) be considered as a derivation \emph{of $L$ into $L$};
+$w_1$ is thus of the form $z\rightsquigarrow z+D'(z)$, where $D'$ is this time a derivation of $B/\mathfrak{n}^2$ in the $(B/\mathfrak{n}^2)$-module $\mathfrak{n}/\mathfrak{n}^2$; as $w_1$ is the identity on $\mathfrak{n}/\mathfrak{n}^2$, $D'$ can again (by the preceding identification of $\mathfrak{n}/\mathfrak{n}^2$ and of $L$) be considered as a derivation \emph{of $L$ into $L$};
 finally, the relation $u'_1=w_1\circ u_1$ means that $D'$ \emph{extends} $D$.
 Let us note, on the other hand, that every derivation $D$ of $K$ into $L$ corresponds to a homomorphism $u'_1$ satisfying the conditions of $c')$ \sref{0.20.1.1}; condition $c')$ therefore means that every derivation of $K$ into $L$ extends to a derivation of $L$ into itself, that is to say \sref{0.20.6.5}, that $L$ is separable over $K$.
 
@@ -680,7 +680,7 @@ It then suffices, to obtain an automorphism $w_1$ satisfying the question, to ta
   \item[(i)] The differential properties of fields allow us to solve the question of the \emph{uniqueness} of the representative field in a complete local Noetherian ring $C$ \sref{0.19.8.7}, (ii).
     Let $\mathfrak{J}$ be the maximal ideal of $C$, $K=C/\mathfrak{J}$ the residue field of $C$; we can restrict to the case $\mathfrak{J}\neq 0$.
     Suppose there exists a homomorphism $u:K\to C$ that, composed with the augmentation $C\to K$, gives the identity; then, \emph{for this homomorphism to be unique, it is necessary and sufficient that} $\Omega^1_K=0$.
-    Indeed, the condition $\Omega^1_K=0$ implies that $K$ is formally unramified on its prime field \sref{0.20.7.4}; if there existed a second homomorphism $v\neq u$ satisfying the question, there would exist a largest integer $n$ such that $\mathfrak{J}^n$ contains the set of the $u(x)-v(x)$ for $x\in K$; by passage to the quotient, $u$ and $v$ would give two distinct homomorphisms $u'$, $v'$ of $K$ into $C/\mathfrak{J}^{n+1}$, whose composites with $C/\mathfrak{J}^{n+1}\to C/\mathfrak{J}^n$ would be equal, which contradicts the definition \sref{0.19.10.2}.
+    Indeed, the condition $\Omega^1_K=0$ implies that $K$ is formally unramified on its prime field \sref{0.20.7.4}; if there existed a second homomorphism $v\neq u$ satisfying the question, there would exist a largest integer $n$ such that $\mathfrak{J}^n$ contains the set of the $u(x)\setmin v(x)$ for $x\in K$; by passage to the quotient, $u$ and $v$ would give two distinct homomorphisms $u'$, $v'$ of $K$ into $C/\mathfrak{J}^{n+1}$, whose composites with $C/\mathfrak{J}^{n+1}\to C/\mathfrak{J}^n$ would be equal, which contradicts the definition \sref{0.19.10.2}.
     Conversely, suppose $\Omega^1_K\neq 0$; then there exists a derivation $D\neq 0$ of $K$ into $\mathfrak{J}/\mathfrak{J}^2$ \sref{0.20.4.8}, hence a homomorphism $v_1:K\to C/\mathfrak{J}^2$ such that, if $u_1:K\to C/\mathfrak{J}^2$ is obtained by passage to quotients from $u$, one has $v_1=u_1+D$ \sref{0.20.1.1}.
     If $k$ is the prime field of $K$, $C$ is a $k$-algebra and $K$ a formally smooth $k$-algebra \sref{0.19.6.1}, and the restrictions of $u_1$ and $v_1$ to $k$ coincide, hence $v_1$ factors as $K\xrightarrow{v} C\to C/\mathfrak{J}^2$ and one has $v\neq u$.
 
@@ -693,7 +693,7 @@ It then suffices, to obtain an automorphism $w_1$ satisfying the question, to ta
 \end{enumerate}
 \end{remarks}
 
-\subsection{Admissible fields for an extension}
+\subsection{Admissible fields for an extension.}
 \label{subsection:0.21.6}
 
 \begin{env}[21.6.1]
@@ -717,7 +717,7 @@ We set
 \begin{env}[21.6.1.2]
 \label{0.21.6.1.2}
 \[
-  \Delta(L/K,k/k_0)=\operatorname{Coker}(\Upsilon_{K/k/k_0}\otimes_K L\to\Upsilon_{L/k/k_0})\simeq\operatorname{Ker}(\Upsilon_{L/K/k_0}\to\Upsilon_{L/K/k})
+  \Delta(L/K,k/k_0)=\operatorname{Coker}(\Upsilon_{K/k/k_0}\otimes_K L\to\Upsilon_{L/k/k_0})\cong\operatorname{Ker}(\Upsilon_{L/K/k_0}\to\Upsilon_{L/K/k})
 \]
 (vector space over $L$); its rank will be denoted $d(L/K,k/k_0)$ and called the \emph{defect of $k_0$-admissibility of $k$ for the extension $L$ of $K$} (it is evidently zero if and only if $k$ is $k_0$-admissible for this extension).
 When $k_0$ is the prime field, one writes $\Delta(L/K,k)$ and $d(L/K,k)$ instead of $\Delta(L/K,k/k_0)$ and $d(L/K,k/k_0)$.
@@ -730,7 +730,7 @@ Let $k_0\subset k\subset K\subset L$ be four fields.
   \item[\rm (i)] The following conditions are equivalent:
   \begin{enumerate}
     \item[\rm a)] The field $k$ is $k_0$-admissible for the extension $L$ of $K$ \textup{(}in other words, the homomorphism $\Upsilon_{L/K/k_0}\to\Upsilon_{L/K/k}$ is injective, hence bijective\textup{)}.
-    \item[\rm b)] The canonical homomorphism $u:\Upsilon_{K/k/k_0}\to\Upsilon_{L/k/k_0}$ is zero.
+    \item[\rm b)] The canonical homomorphism $u:\Upsilon_{L/k/k_0}\to\Upsilon_{L/K/k_0}$ is zero.
     \item[\rm c)] The canonical homomorphism $v:\Upsilon_{K/k/k_0}\otimes_K L\to\Upsilon_{L/k/k_0}$ is surjective \textup{(}hence bijective\textup{)}.
     \item[\rm d)] One has $d(L/K,k/k_0)=0$ \textup{(}or $\Delta(L/K,k/k_0)=0$\textup{)}.
   \end{enumerate}
@@ -922,7 +922,7 @@ One has the exact sequence \sref{0.20.6.1.1}
 \]
 hence the first member of \sref{0.21.7.3.1} is equal to
 \[
-  \operatorname{rg}_L\Omega^1_{L/k}-\operatorname{rg}_L\Upsilon_{L/K/k}
+  \operatorname{rg}_L\Omega^1_{L/K}-\operatorname{rg}_L\Upsilon_{L/K/k}
 \]
 and it suffices to apply \sref{0.21.7.2}.
 \end{proof}
@@ -989,7 +989,7 @@ Let $K$ be a field of characteristic $p>0$, $k_0$ a subfield of $K$, $(k_\alpha)
 The following conditions are equivalent:
 \begin{enumerate}
   \item[\rm a)] $\bigcap_\alpha k_\alpha(K^p)=k_0(K^p)$.
-  \item[\rm b)] For every extension $L$ of $K$ such that $\Upsilon_{L/K/k_\alpha}$ is an $L$-vector space of finite rank \textup{(}which holds in particular if $L$ is a finite type extension by virtue of \sref{0.21.7.2}\textup{)}, there exists $\alpha\in I$ such that $k_\alpha$ is $k_0$-admissible for the extension $L$ of $K$.
+  \item[\rm b)] For every extension $L$ of $K$ such that $\Upsilon_{L/K/k_0}$ is an $L$-vector space of finite rank \textup{(}which holds in particular if $L$ is a finite type extension by virtue of \sref{0.21.7.2}\textup{)}, there exists $\alpha\in I$ such that $k_\alpha$ is $k_0$-admissible for the extension $L$ of $K$.
   \item[\rm b$'$)] For every extension $L=K(x)$ of $K$, with $x^p\in K$, there exists $\alpha\in I$ such that $k_\alpha$ is $k_0$-admissible for the extension $L$ of $K$.
   \item[\rm c)] The canonical map
   \begin{equation}
@@ -1027,9 +1027,9 @@ On the other hand, for every element $z$ of the first member of \sref{0.21.8.3.2
 
 It is trivial that $b)$ implies $b')$; let us show that $b')$ implies $a)$.
 Using the notations of $b')$, one can suppose $L\neq K$.
-It then follows from \sref{0.21.4.7} that one has $\operatorname{rg}\Upsilon_{L/K}\leqslant 1$.
-If $\Upsilon_{L/K/k_\alpha}=0$ there is nothing to prove by virtue of \sref{0.21.6.1.1}.
-Otherwise, $\Upsilon_{L/K/k_\alpha}$ is identified canonically with $\Upsilon_{L/K}$, and if one sets $a=x^p$, $\Upsilon_{L/K}$ is a one-dimensional space generated by the single element $d_K(a)\otimes 1$ \sref{0.21.4.7}; $\Upsilon_{L/K/k_\alpha}$ is thus a one-dimensional space generated by the single element $d_{K/k_\alpha}(a)\otimes 1$, i.e., to say that a subfield $k_\alpha$ is $k_0$-admissible for the extension $L$ of $K$ means that one has $d_{K/k_\alpha}(a)\neq 0$, or equivalently \sref{0.21.4.6} that $a\notin k_\alpha(K^p)$.
+It then follows from \sref{0.21.4.7} that one has $\operatorname{rg}\Upsilon_{L/K/k_0}\leqslant\operatorname{rg}\Upsilon_{L/K}\leqslant 1$.
+If $\Upsilon_{L/K/k_0}=0$ there is nothing to prove by virtue of \sref{0.21.6.1.1}.
+Otherwise, $\Upsilon_{L/K/k_0}$ is identified canonically with $\Upsilon_{L/K}$, and if one sets $a=x^p$, $\Upsilon_{L/K}$ is a one-dimensional space generated by the single element $d_Ka\otimes 1$ \sref{0.21.4.7}; $\Upsilon_{L/K/k_0}$ is thus a one-dimensional space generated by the single element $d_{K/k_\alpha}(a)\otimes 1$, i.e., to say that a subfield $k_\alpha$ is $k_0$-admissible for the extension $L$ of $K$ means that one has $d_{K/k_\alpha}(a)\neq 0$, or equivalently \sref{0.21.4.6} that $a\notin k_\alpha(K^p)$.
 Now, for every $a\notin k_0(K^p)$, one has $d_{K/k_0}(a)\neq 0$ and $K(a^{1/p})\neq K$, hence one can apply $b')$, which proves the existence of an $\alpha$ such that $a\notin k_\alpha(K^p)$; as this holds for every $a\notin k_0(K^p)$, we have shown $b')\Rightarrow a)$.
 
 It remains to show that $a)$ implies $c)$.
@@ -1080,7 +1080,7 @@ If $L$ is an extension of $K$ such that $\Upsilon_{L/K/k_0}$ is an $L$-vector sp
 
 \begin{proof}
 It suffices indeed, by virtue of \sref{0.21.8.3}, to construct a decreasing filtering family $(k_\alpha)_{\alpha\in I}$ of subfields of $K$, containing $K^p$ and $k_0$, for which $[K:k_\alpha]<+\infty$ and $\bigcap_\alpha k_\alpha=k_0(K^p)$.
-For this one considers a $p$-base $(x_\lambda)_{\lambda\in J}$ of $K$ over $k_0$ and, for every finite subset $H$ of $J$, one considers the subfield $k_H$ of $K$ generated by $k_0(K^p)$ and the $x_\lambda$ for $\lambda\in J-H$; it follows from this definition that $(x_\lambda)_{\lambda\in H}$ is a $p$-base of $K$ over $k_H$, and one concludes immediately that the $k_H$ satisfy the required conditions.
+For this one considers a $p$-base $(x_\lambda)_{\lambda\in J}$ of $K$ over $k_0$ and, for every finite subset $H$ of $J$, one considers the subfield $k_H$ of $K$ generated by $k_0(K^p)$ and the $x_\lambda$ for $\lambda\in J\setmin H$; it follows from this definition that $(x_\lambda)_{\lambda\in H}$ is a $p$-base of $K$ over $k_H$, and one concludes immediately that the $k_H$ satisfy the required conditions.
 \end{proof}
 
 \begin{remarks}[21.8.7]
@@ -1094,7 +1094,7 @@ For this one considers a $p$-base $(x_\lambda)_{\lambda\in J}$ of $K$ over $k_0$
     Let us take for $k_0$ the prime field $\mathbf{F}_p$, for $K$ a field such that $[K:K^p]$ is countably infinite (for example the field of rational functions $\mathbf{F}_p(X_1,\ldots,X_n,\ldots)$ with a countable infinity of indeterminates);
     the construction procedure of \sref{0.21.8.6} then shows that there exists an infinite strictly decreasing sequence $(K_n)$ of subfields of $K$ such that $K_0=K$ and $\bigcap_n K_n=K^p$.
     We shall construct increasing finite extensions $M_n$ of $K^p$, such that if $M$ is the union of the $M_n$, the extension $L=M^{1/p}$ of $K$ gives \sref{0.21.8.5} a counterexample.
-    Namely, take an element $x$ of $K-K^p$, set $M_0=K^p$, and $M_n=K^p(a_1 x,a_2 x,\ldots,a_n x)$ for $n\geqslant 1$, where the $a_n$ are constructed by induction so that $a_n\in K_n$ and $a_{n+1}\notin M_n(x)$ for all $n$: this is possible, since $M_n(x)$ is of finite degree over $K^p$, while $K_n$ is not of finite degree over $K^p$.
+    Namely, take an element $x$ of $K\setmin K^p$, set $M_0=K^p$, and $M_n=K^p(a_1 x,a_2 x,\ldots,a_n x)$ for $n\geqslant 1$, where the $a_n$ are constructed by induction so that $a_n\in K_n$ and $a_{n+1}\notin M_n(x)$ for all $n$: this is possible, since $M_n(x)$ is of finite degree over $K^p$, while $K_n$ is not of finite degree over $K^p$.
     One concludes also that $x\notin M=L^p$, but as $x=(a_n x)a_n^{-1}$, one has $x\in K_n(M)=K_n(L^p)$ for all $n$, hence $x\in\bigcap_n K_n(L^p)$, which proves our assertion.
 \end{enumerate}
 \end{remarks}
@@ -1187,10 +1187,10 @@ is injective \sref{0.20.6.14.5}, where $u$ denotes the structural homomorphism $
 But since $A$ is a formally smooth $k_0$-algebra by hypothesis, it follows from \sref{0.20.7.2} that $u_{A/k_0/P}$ is formally left invertible; hence \sref{0.19.1.7}, $u_{A/k_0/P}\otimes1_K$ is left invertible and \emph{a fortiori} injective, proving our assertion.
 Applying the exact sequence \sref{0.20.6.22.1}, with $\Lambda,A,B,C$ replaced by $P,k_0,A,K$, gives the exact sequence
 \[
-  0\longrightarrow\Upsilon^K_{A/k_0}
+  0\longrightarrow\Upsilon_{K/k_0}
   \longrightarrow\mathfrak{m}/\mathfrak{m}^2
   \longrightarrow\Omega^1_{A/k_0}\otimes_AK
-  \longrightarrow\Omega^1_{K/k_0}\longrightarrow0,
+  \longrightarrow\Omega^1_{K/k_0}\longrightarrow0
 \]
 so that
 \[
@@ -1198,7 +1198,7 @@ so that
   \operatorname{rg}_K(\Omega^1_{A/k_0}\otimes_AK)
   &={\operatorname{rg}}_K(\mathfrak{m}/\mathfrak{m}^2)
     +\bigl(\operatorname{rg}_K(\Omega^1_{K/k_0})
-    -\operatorname{rg}_K(\Upsilon_{K/k_0})\bigr)\\
+    \setmin\operatorname{rg}_K(\Upsilon_{K/k_0})\bigr)\\
   &={\operatorname{rg}}_K(\mathfrak{m}/\mathfrak{m}^2)
     +\deg.\operatorname{tr}_{k_0}K
 \end{split}
@@ -1210,7 +1210,7 @@ $\widehat{\Omega}^1_{A/k_0}/\mathfrak{m}^{j+1}\widehat{\Omega}^1_{A/k_0}$ is a p
 $n=\operatorname{rg}_K(\Omega^1_{A/k_0}\otimes_AK)$.
 By virtue of \sref{0.21.9.1}, $\widehat{\Omega}^1_{A/k_0}$ is an $A$-module of finite type; moreover this $A$-module is flat by virtue of ($\mathbf{0_{III}}$, 10.2.1), and is therefore free ($\mathbf{0_{III}}$, 10.1.3) of rank $n$, proving the first assertion.
 
-Since, by hypothesis, $\Omega^1_{k_0/k}$ has finite rank over $k_0$, the completed tensor product $\Omega^1_{k_0/k}\widehat{\otimes}_{k_0}A$ identifies with $\Omega^1_{k_0/k}\otimes_{k_0}A$.
+Since, by hypothesis, $\Omega^1_{k_0/k}$ has finite rank over $k_0$, the completed tensor product $\widehat\Omega^1_{k_0/k}\widehat{\otimes}_{k_0}A$ identifies with $\Omega^1_{k_0/k}\otimes_{k_0}A$.
 As $A$ is a formally smooth $k_0$-algebra, it follows from \sref{0.20.7.18} that the homomorphism
 \[
   \widehat{u}_{A/k_0/k}:\Omega^1_{k_0/k}\otimes_{k_0}A
@@ -1306,16 +1306,16 @@ Let $E$ be a finite type extension of $L_0$.
   \begin{equation}
   \tag{21.9.6.1}
   \label{0.21.9.6.1}
-    \operatorname{rg}_E\Omega^1_{E/M}-\operatorname{rg}_{K_0}\Omega^1_{K_0/k}=(r+\deg.\operatorname{tr}_{L_0} E)+d(E/K_0,k_0)+d(E/M_0,N/k_0)
+    \operatorname{rg}_E\Omega^1_{E/M}\setmin\operatorname{rg}_{K_0}\Omega^1_{K_0/k}=(r+\deg.\operatorname{tr}_{L_0} E)+d(E/K_0,k_0)+d(E/M_0,N/k_0)
   \end{equation}
   \textup{(}notations of \sref{0.21.6.1}\textup{)}, and in particular one has
   \begin{equation}
   \tag{21.9.6.2}
   \label{0.21.9.6.2}
-    \operatorname{rg}_E\Omega^1_{E/M}-\operatorname{rg}_{K_0}\Omega^1_{K_0/k}\geqslant r+\deg.\operatorname{tr}_{L_0} E+d(E/K_0,k_0).
+    \operatorname{rg}_E\Omega^1_{E/M}\setmin\operatorname{rg}_{K_0}\Omega^1_{K_0/k}\geqslant r+\deg.\operatorname{tr}_{L_0} E+d(E/K_0,k_0).
   \end{equation}
   Furthermore, if the two members of \sref{0.21.9.6.2} are equal, they remain so when one replaces $k$ by a subfield $k'$ such that $k_0\subset k'\subset k$.
-  \item[\rm (ii)] Suppose moreover that $[k_0:k_0^p]<+\infty$.
+  \item[\rm \textup{(ii)}] Suppose moreover that $[k_0:k_0^p]<+\infty$.
   Let $(k_\alpha)$ be a decreasing filtering family of subfields of $K_0$ containing $k_0$, such that $[K_0:k_\alpha]<+\infty$ for all $\alpha$ and that $\bigcap_\alpha k_\alpha(K_0^p)=k_0(K_0^p)$; then there exists $\alpha$ such that, for $k=k_\alpha$, the two members of \sref{0.21.9.6.2} are equal.
 \end{enumerate}
 \end{proposition}
@@ -1342,7 +1342,7 @@ Let $E$ be a finite type extension of $L_0$.
 
   It follows from \sref{0.21.7.3} that one has
   \[
-    \operatorname{rg}_E\Omega^1_{E/M}-\operatorname{rg}_{M_0}\Omega^1_{M_0/M}=\deg.\operatorname{tr}_{M_0}E+d(E/M_0,M)
+    \operatorname{rg}_E\Omega^1_{E/M}\setmin\operatorname{rg}_{M_0}\Omega^1_{M_0/M}=\deg.\operatorname{tr}_{M_0}E+d(E/M_0,M)
   \]
   and as $L_0$ is a finite extension of $M_0$, one has $\deg.\operatorname{tr}_{L_0} E=\deg.\operatorname{tr}_{M_0} E$.
   On the other hand, a $p$-base of $K_0$ over $k=k(K_0^p)$ is also a $p$-base of $M_0$ over $M$, hence \sref{0.21.4.5}, one has
@@ -1353,7 +1353,7 @@ Let $E$ be a finite type extension of $L_0$.
   \begin{equation}
   \tag{21.9.6.3}
   \label{0.21.9.6.3}
-    \delta=d(E/M_0,M)-d(E/K_0,k_0)-r.
+    \delta=d(E/M_0,M)\setmin d(E/K_0,k_0)\setmin r.
   \end{equation}
 
   Let us now note the following classical lemma.
@@ -1366,7 +1366,7 @@ Let $E$ be a finite type extension of $L_0$.
   \begin{proof}
   Let us briefly recall the proof for completeness.
   It suffices (Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no.~3, proof of th.~1) to prove that for every finite extension $k'$ of $k$, $K\otimes_k k'$ has no nilpotent element.
-  Set $A=k[[T_1,\ldots,T_r]]$ and $S=A-\{0\}$.
+  Set $A=k[[T_1,\ldots,T_r]]$ and $S=A\setmin\{0\}$.
   Then $K\otimes_k k'=S^{-1}(A\otimes_k k')$, while $A\otimes_k k'$ identifies canonically with the integral ring $A'=k'[[T_1,\ldots,T_r]]$ and $A$ with a subring of $A'$; the conclusion follows.
   \end{proof}
 
@@ -1381,11 +1381,11 @@ Let $E$ be a finite type extension of $L_0$.
     d(E/M_0,M)=d(E/L_0,M)+d(L_0/M_0,M),
   \]
   \[
-    d(L_0/M_0,M)=d(L_0/M_0,M/N)+d(L_0/M_0,N),
+    d(L_0/M_0,M)=d(L_0/M_0,M/N)+d(L_0/M_0,N)
   \]
   whence
   \[
-    \delta=d(E/L_0,M)+d(L_0/M_0,N)-d(E/L_0,k_0)+d(L_0/M_0,M/N)-r.
+    \delta=d(E/L_0,M)+d(L_0/M_0,N)\setmin d(E/L_0,k_0)+d(L_0/M_0,M/N)\setmin r.
   \]
 
   We shall show that
@@ -1396,23 +1396,23 @@ Let $E$ be a finite type extension of $L_0$.
   \end{equation}
   Indeed, by definition,
   \[
-    d(L_0/M_0,M/N)=\operatorname{rg}_{L_0}\Upsilon_{L_0/M/N}-\operatorname{rg}_{M_0}\Upsilon_{M_0/M/N}.
+    d(L_0/M_0,M/N)=\operatorname{rg}_{L_0}\Upsilon_{L_0/M/N}\setmin\operatorname{rg}_{M_0}\Upsilon_{M_0/M/N}.
   \]
   Taking account of the two exact sequences
   \[
   \begin{aligned}
     0&\longrightarrow\Upsilon_{L_0/M/N}\longrightarrow\Omega^1_{M/N}\otimes_ML_0
-      \longrightarrow\Omega^1_{L_0/N}\longrightarrow\Omega^1_{L_0/M}\longrightarrow0,\\
+      \longrightarrow\Omega^1_{L_0/N}\longrightarrow\Omega^1_{L_0/M}\longrightarrow0\\
     0&\longrightarrow\Upsilon_{M_0/M/N}\longrightarrow\Omega^1_{M/N}\otimes_MM_0
-      \longrightarrow\Omega^1_{M_0/N}\longrightarrow\Omega^1_{M_0/M}\longrightarrow0,
+      \longrightarrow\Omega^1_{M_0/N}\longrightarrow\Omega^1_{M_0/M}\longrightarrow0
   \end{aligned}
   \]
   one obtains
   \[
   \begin{split}
     d(L_0/M_0,M/N)={}&\operatorname{rg}_{L_0}\Omega^1_{L_0/M}
-      -\operatorname{rg}_{L_0}\Omega^1_{L_0/N}\\
-      &-\operatorname{rg}_{M_0}\Omega^1_{M_0/M}
+      \setmin\operatorname{rg}_{L_0}\Omega^1_{L_0/N}\\
+      &\setmin\operatorname{rg}_{M_0}\Omega^1_{M_0/M}
       +\operatorname{rg}_{M_0}\Omega^1_{M_0/N}.
   \end{split}
   \]
@@ -1428,7 +1428,7 @@ Let $E$ be a finite type extension of $L_0$.
 
   One has again, by \sref{0.21.6.4.2},
   \[
-    d(E/L_0,M)=d(E/L_0,k_0)+d(E/L_0,M/k_0)
+    d(E/L_0,M)-d(E/L_0,k_0)=d(E/L_0,M/k_0)
   \]
   and
   \[
@@ -1461,7 +1461,7 @@ Let $E$ be a finite type extension of $L_0$.
   \]
   and a final application of \sref{0.21.6.4.2} gives
   \[
-    \delta=d(E/M_0,N/k_0),
+    \delta=d(E/M_0,N/k_0)\geqslant0
   \]
   which proves \sref{0.21.9.6.1}.
 
@@ -1524,12 +1524,12 @@ Since $E$ is algebraic over $M_0$, the assertion follows from \sref{0.21.7.1} an
 \label{0.21.9.8}
 Let $k_0$ be a field \textup{(}of arbitrary characteristic\textup{)}, $K_0$ a separable extension of $k_0$, $A$ a local Noetherian complete ring, which is a $k_0$-algebra and whose residue field is a finite extension of $K_0$.
 \oldpage[0\textsubscript{IV-1}]{182}
-For every prime ideal $\mathfrak{p}$ of $A$, let $k(\mathfrak{p})$ be the residue field of $A$ at $\mathfrak{p}$.
+For every prime ideal $\mathfrak{p}$ of $A$, let $\boldsymbol{k}(\mathfrak{p})$ be the residue field of $A$ at $\mathfrak{p}$.
 Then, for every field $k$ such that $k_0\subset k\subset K_0$ and such that $[K_0:k]<+\infty$, one has
 \begin{equation}
 \tag{21.9.8.1}
   \label{0.21.9.8.1}
-  \operatorname{rg}_{k(\mathfrak{p})}(\widehat{\Omega}^1_{(A/\mathfrak{p})/k}\otimes_{A/\mathfrak{p}} k(\mathfrak{p}))-\operatorname{rg}_{K_0}\Omega^1_{K_0/k}\geqslant\dim(A/\mathfrak{p})+\operatorname{rg}_{k(\mathfrak{p})}\Upsilon_{k(\mathfrak{p})/k_0}.
+  \operatorname{rg}_{\mathbf{k}(\mathfrak{p})}(\widehat{\Omega}^1_{(A/\mathfrak{p})/k}\otimes_{A/\mathfrak{p}} k(\mathfrak{p}))-\operatorname{rg}_{K_0}\Omega^1_{K_0/k}\geqslant\dim(A/\mathfrak{p})+\operatorname{rg}_{\mathbf{k}(\mathfrak{p})}\Upsilon_{\mathbf{k}(\mathfrak{p})/k_0}.
 \end{equation}
 
 Suppose moreover that $[k_0:k_0^p]<+\infty$ \textup{(}where $p$ is the exponential characteristic of $k_0$\textup{)}.
@@ -1537,7 +1537,7 @@ Then one can find a field $k$ such that $k_0(K_0^p)\subset k\subset K_0$ and $[K
 \end{proposition}
 
 \begin{proof}
-As $A/\mathfrak{p}$ has the same residue field $K$ as $A$ and is complete, one can restrict to the case where $A$ is integral and $\mathfrak{p}=0$; one will then set $E=k(\mathfrak{p})$, field of fractions of $A$.
+As $A/\mathfrak{p}$ has the same residue field $K$ as $A$ and is complete, one can restrict to the case where $A$ is integral and $\mathfrak{p}=0$; one will then set $E=\boldsymbol{k}(\mathfrak{p})$, field of fractions of $A$.
 As $K_0$ is formally smooth over $k_0$ \sref{0.19.6.1}, there exists a $k_0$-monomorphism $K_0\to A$ making $A$ into a $K_0$-algebra; one knows in particular that there exists a sub-$K_0$-algebra $A_0$ of $A$, $K_0$-isomorphic to a formal power series algebra $K_0[[T_1,\ldots,T_r]]$ and such that $A$ is an $A_0$-algebra \emph{finite} \sref{0.19.8.9}, which implies that $E$ is a finite extension of the field of fractions $L_0=K_0((T_1,\ldots,T_r))$ of $A_0$.
 One has $\Upsilon_{K_0/k_0}=0$ since $K_0$ is separable over $k_0$, and $\deg.\operatorname{tr}_{L_0}E=0$; moreover, as $A$ is a finite $A_0$-algebra, $\dim(A)=\dim(A_0)$ \sref{0.16.1.5}.
 

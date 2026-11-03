@@ -12,15 +12,15 @@ each $\alpha$ there is a homeomorphism $\varphi_\alpha$ of $X_\alpha$ onto
 $X'_\alpha$. If each of the $X'_\alpha$ is endowed with the sheaf
 $(\varphi_\alpha)_*(\mathscr{O}_{X_\alpha})$, it is clear that $X$ becomes a
 prescheme, which is called the \emph{sum} of the family of preschemes $(X_\alpha)$
-and which is denoted by $\bigsqcup_\alpha X_\alpha$. If $Y$ is a prescheme,
-the map $f\mapsto(f\circ\varphi_\alpha)$ is a \emph{bijection} of
+and which is denoted by $\coprod_\alpha X_\alpha$. If $Y$ is a prescheme,
+the map $f\to(f\circ\varphi_\alpha)$ is a \emph{bijection} of
 the set $\operatorname{Hom}(X,Y)$ onto the product set
 $\prod_\alpha\operatorname{Hom}(X_\alpha,Y)$. In particular, if the
 $X_\alpha$ are $S$-preschemes, with structural morphisms $\psi_\alpha$,
 $X$ is an $S$-prescheme by means of the unique morphism $\psi:X\to S$ such that
 $\psi\circ\varphi_\alpha=\psi_\alpha$ for all $\alpha$. The sum of two
-preschemes $X$, $Y$ is denoted by $X\sqcup Y$. It is immediate that if
-$X=\operatorname{Spec}(A)$, $Y=\operatorname{Spec}(B)$, then $X\sqcup Y$
+preschemes $X$, $Y$ is denoted by $X\amalg Y$. It is immediate that if
+$X=\operatorname{Spec}(A)$, $Y=\operatorname{Spec}(B)$, then $X\amalg Y$
 is canonically identified with $\operatorname{Spec}(A\times B)$.
 
 \subsection{Product of preschemes.}
@@ -33,13 +33,13 @@ $(Z,p_1,p_2)$ consisting of an $S$-prescheme $Z$ and of two $S$-morphisms
 $p_1:Z\to X$, $p_2:Z\to Y$ is a product of the
 \oldpage[I]{105}
 $S$-preschemes $X$ and $Y$ if, for every $S$-prescheme $T$, the map
-$f\mapsto(p_1\circ f,p_2\circ f)$ is a bijection of the set of
+$f\to(p_1\circ f,p_2\circ f)$ is a bijection of the set of
 $S$-morphisms from $T$ to $Z$ onto the set of pairs consisting of an
 $S$-morphism $T\to X$ and an $S$-morphism $T\to Y$ (in other words, a
 bijection
 \[
   \operatorname{Hom}_S(T,Z)\xrightarrow{\sim}
-  \operatorname{Hom}_S(T,X)\times\operatorname{Hom}_S(T,Y)).
+  \operatorname{Hom}_S(T,X)\times\operatorname{Hom}_S(T,Y))
 \]
 \end{definition}
 
@@ -68,8 +68,8 @@ in the preceding notation.
 Let $X$, $Y$, $S$ be three affine schemes, and $B$, $C$, $A$ their respective
 rings. Let $Z=\operatorname{Spec}(B\otimes_A C)$, and let $p_1$, $p_2$ be the
 $S$-morphisms corresponding (\hyperref[I.2.2.4]{2.2.4}) to the
-canonical $A$-homomorphisms $u:b\mapsto b\otimes1$ and
-$v:c\mapsto1\otimes c$ of $B$ and $C$ into $B\otimes_A C$; then
+canonical $A$-homomorphisms $u:b\to b\otimes1$ and
+$v:c\to1\otimes c$ of $B$ and $C$ into $B\otimes_A C$; then
 $(Z,p_1,p_2)$ is a product of $X$ and $Y$.
 \end{proposition}
 
@@ -89,8 +89,8 @@ and from the relation $b\otimes c=(b\otimes1)(1\otimes c)$.
 Let $T$ be an affine scheme with ring $D$, and
 $\alpha=({}^a\rho,\widetilde{\rho})$
 (resp. $\beta=({}^a\sigma,\widetilde{\sigma})$) an $S$-morphism $T\to X$
-(resp. $T\to Y$), where $\rho$ (resp. $\sigma$) is an $A$-homomorphism of $B$
-(resp. $C$) into $D$; then
+\textup{(resp. $T\to Y$)}, where $\rho$ \textup{(resp. $\sigma$)} is an $A$-homomorphism of $B$
+\textup{(resp. $C$)} into $D$; then
 $(\alpha,\beta)_S=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism
 $B\otimes_A C\to D$ such that $\tau(b\otimes c)=\rho(b)\sigma(c)$.
 \end{corollary}
@@ -149,7 +149,7 @@ by hypothesis there is therefore one and only one $S$-morphism $f:T\to Z$ such
 that $g=p\circ f$, $h=q\circ f$. Since $p(f(T))\subset U$, $q(f(T))\subset V$,
 we have
 \[
-  f(T)\subset p^{-1}(U)\cap q^{-1}(V)=W,
+  f(T)\subset p^{-1}(U)\cap q^{-1}(V)=W
 \]
 whence our assertion.
 
@@ -203,7 +203,7 @@ $W_{\alpha\lambda}\cap W_{\beta\mu}$ by definition. Since
 \[
   W_{\alpha\lambda}\cap W_{\beta\mu}
   =p^{-1}(U_\alpha\cap U_\beta)\cap
-   q^{-1}(V_\lambda\cap V_\mu),
+   q^{-1}(V_\lambda\cap V_\mu)
 \]
 it follows from (\hyperref[I.3.2.6.1]{3.2.6.1}) that
 $W_{\alpha\lambda}\cap W_{\beta\mu}$ and the restrictions of $p$ and $q$ to
@@ -237,7 +237,7 @@ $W_{ij}$. Moreover, for a third pair $k=(\gamma,\nu)$, we have
 $f_{ik}=f_{ij}\circ f_{jk}$ in $W_{ki}\cap W_{kj}$, as follows from
 applying (\hyperref[I.3.2.6.1]{3.2.6.1}) to the open sets
 $U_\alpha\cap U_\beta\cap U_\gamma$ and
-$V_\lambda\cap V_\mu\cap V_\nu$, in $U_\beta$ and $V_\mu$
+$V_\lambda\cap V_\mu\cap V_\nu$ in $U_\beta$ and $V_\mu$
 respectively. Consequently there exist a prescheme $Z$, an open covering
 $(Z_i)$ of the underlying space of $Z$ and, for each $i$, an isomorphism $g_i$
 of the induced prescheme $Z_i$ onto the prescheme
@@ -287,7 +287,7 @@ $Y_{ij}=Y_i\cap Y_j=\psi^{-1}(S_i\cap S_j)$; by virtue of
 $Z_{ij}=X_{ij}\times_S Y_{ij}$ exists. Now note that if $T$ is an
 $S$-prescheme and $g:T\to X_i$, $h:T\to Y_j$ are $S$-morphisms, we
 necessarily have
-$\varphi(g(T))=\psi(h(T))\subset S_i\cap S_j$, by the definition of an
+$\varphi(g(T))=\psi(h(T))\subset S_i\cap S_j$ by the definition of an
 $S$-morphism, hence $g(T)\subset X_{ij}$ and $h(T)\subset Y_{ij}$; it is
 then immediate that $Z_{ij}$ is a product of $X_i$ and $Y_j$.
 
@@ -312,10 +312,10 @@ foregoing; but then the products $X_i\times_S Y_i$ also exist
 \begin{corollary}[3.2.7]
 \label{I.3.2.7}
 Let $Z=X\times_S Y$ be the product of two $S$-preschemes, $p$, $q$ the
-projections of $Z$ to $X$ and $Y$, and $\varphi$ (resp. $\psi$) the structural
-morphism of $X$ (resp. $Y$). Let $S'$ be an open subset of $S$, and $U$
-(resp. $V$) an open subset of $X$ (resp. $Y$) contained in
-$\varphi^{-1}(S')$ (resp. $\psi^{-1}(S')$). Then the product
+projections of $Z$ to $X$ and $Y$, and $\varphi$ \textup{(resp. $\psi$)} the structural
+morphism of $X$ \textup{(resp. $Y$)}. Let $S'$ be an open subset of $S$, and $U$
+\textup{(resp. $V$)} an open subset of $X$ \textup{(resp. $Y$)} contained in
+$\varphi^{-1}(S')$ \textup{(resp. $\psi^{-1}(S')$)}. Then the product
 $U\times_{S'}V$ is canonically identified with the prescheme induced by $Z$ on
 $p^{-1}(U)\cap q^{-1}(V)$ (regarded as an $S'$-prescheme). Moreover, if
 $f:T\to X$, $g:T\to Y$ are $S$-morphisms such that $f(T)\subset U$,
@@ -368,9 +368,9 @@ is commutative.
 \begin{proposition}[3.3.3]
 \label{I.3.3.3}
 For every $S$-prescheme $X$, the first (resp. second) projection of
-$X\times_S S$ (resp. $S\times_S X$) is a functorial isomorphism of
-$X\times_S S$ (resp. $S\times_S X$) onto $X$, whose inverse isomorphism
-is $(1_X,\varphi)_S$ (resp. $(\varphi,1_X)_S$), where $\varphi$ denotes
+$X\times_S S$ \textup{(resp. $S\times_S X$)} is a functorial isomorphism of
+$X\times_S S$ \textup{(resp. $S\times_S X$)} onto $X$, whose inverse isomorphism
+is $(1_X,\varphi)_S$ \textup{(resp. $(\varphi,1_X)_S$)}, where $\varphi$ denotes
 the structural morphism $X\to S$; we can therefore write, up to canonical
 isomorphism,
 \[
@@ -403,12 +403,12 @@ One can define, in the same way as in
 arbitrary finite number $n$ of $S$-preschemes; the existence of these products
 follows from (\hyperref[I.3.2.6]{3.2.6}) by induction on $n$, noting
 that
-$(X_1\times_S X_2\times_S\cdots\times_S X_{n-1})\times_S X_n$ satisfies
+$(X_1\times_S X_2\times\cdots\times_S X_{n-1})\times_S X_n$ satisfies
 the definition of the product. The uniqueness of the product implies, as in
 every category, its \emph{commutativity} and \emph{associativity} properties.
 If, for example, $p_1$, $p_2$, $p_3$ denote the projections of
-$X_1\times_S X_2\times_S X_3$, and if this prescheme is identified with
-$(X_1\times_S X_2)\times_S X_3$, the projection to $X_1\times_S X_2$ is
+$X_1\times X_2\times X_3$, and if this prescheme is identified with
+$(X_1\times X_2)\times X_3$, the projection to $X_1\times X_2$ is
 identified with $(p_1,p_2)_S$.
 \end{env}
 
@@ -594,7 +594,7 @@ a canonical \emph{one-to-one correspondence}
 \phantomsection\label{I.3.3.14.correspondence}
 \[
   \operatorname{Hom}_S(S',X)\overset{\sim}{\longrightarrow}
-  \operatorname{Hom}_{S'}(S',X').
+  \operatorname{Hom}_{S'}(S',X')
 \]
 We say that $f'$ is the \emph{graph morphism} of $f$, and we denote it by
 $\Gamma_f$.
@@ -638,7 +638,7 @@ points}
 Let $X$ be a prescheme; for every prescheme $T$, we also denote by $X(T)$
 the set $\operatorname{Hom}(T,X)$ of morphisms $T\to X$, and the elements of
 this set are also called \emph{points of $X$ with values in $T$}. If to
-every morphism $f:T\to T'$ we associate the map $u'\mapsto u'\circ f$ of $X(T')$
+every morphism $f:T\to T'$ we associate the map $u'\to u'\circ f$ of $X(T')$
 into $X(T)$, we see that, for fixed $X$, $X(T)$ is a \emph{contravariant functor
 in $T$}, from the category of preschemes to that of sets. Moreover,
 every morphism of preschemes $g:X\to Y$ defines a functorial homomorphism
@@ -731,22 +731,22 @@ $X$ the \emph{points of $X$ with values in a field $K$}: giving such a
 point therefore amounts to giving its
 \oldpage[I]{113}
 locality $x$ in the underlying space of $X$ and an \emph{extension} $K$ of
-$k(x)$; $K$ will be called the \emph{field of values} of the corresponding
+$\boldsymbol{k}(x)$; $K$ will be called the \emph{field of values} of the corresponding
 geometric point, and we also say that this geometric point is \emph{localized
 at $x$}. We thus define a map $X(K)\to X$, sending a geometric point with
 values in $K$ to its locality.
 
 If $S'=\operatorname{Spec}(K)$ is an $S$-prescheme (in other words, if $K$ is
-regarded as an extension of a residue field $k(s)$, where $s\in S$) and if $X$
+regarded as an extension of a residue field $\boldsymbol{k}(s)$, where $s\in S$) and if $X$
 is an $S$-prescheme, an element of $X(K)_S$, or, as one also says, a
 \emph{geometric point of $X$ over $s$ with values in $K$}, consists
-of giving a $k(s)$-monomorphism of a residue field $k(x)$ into $K$, where
-$x$ is a point of $X$ \emph{over $s$} (hence $k(x)$ an extension of
-$k(s)$).
+of giving a $\boldsymbol{k}(s)$-monomorphism of a residue field $\boldsymbol{k}(x)$ into $K$, where
+$x$ is a point of $X$ \emph{over $s$} (hence $\boldsymbol{k}(x)$ an extension of
+$\boldsymbol{k}(s)$).
 
 More particularly, if $S=\operatorname{Spec}(K)=\{\xi\}$, \emph{the geometric
 points of $X$ with values in $K$ are identified with the points $x\in X$ such
-that $k(x)=K$}; we also say that the latter are the \emph{points of the
+that $\boldsymbol{k}(x)=K$}; we also say that the latter are the \emph{points of the
 $K$-prescheme $X$ rational over $K$}; if $K'$ is an extension of $K$, the
 geometric points of $X$ with values in $K'$ therefore correspond
 one-to-one to the points of $X'=X_{(K')}$ rational over $K'$
@@ -757,15 +757,15 @@ one-to-one to the points of $X'=X_{(K')}$ rational over $K'$
 \label{I.3.4.6}
 Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, $s$ a point of $S$, and $x_i$
 ($1\leq i\leq n$) a point of $X_i$ over $s$. Then there exist an
-extension $K$ of $k(s)$ and a geometric point of the product
-$Y=X_1\times_S X_2\times_S\cdots\times_S X_n$, with values in $K$, whose
+extension $K$ of $\boldsymbol{k}(s)$ and a geometric point of the product
+$Y=X_1\times_S X_2\times\ldots\times_S X_n$, with values in $K$, whose
 projections are localized at the $x_i$.
 \end{lemma}
 
-Indeed, there exist $k(s)$-monomorphisms $k(x_i)\to K$ into one and the same
-extension $K$ of $k(s)$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4, Prop. 2). The
-composites $k(s)\to k(x_i)\to K$ are all identical, so the morphisms
-$\operatorname{Spec}(K)\to X_i$ corresponding to $k(x_i)\to K$ are
+Indeed, there exist $\boldsymbol{k}(s)$-monomorphisms $\boldsymbol{k}(x_i)\to K$ into one and the same
+extension $K$ of $\boldsymbol{k}(s)$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4, Prop. 2). The
+composites $\boldsymbol{k}(s)\to \boldsymbol{k}(x_i)\to K$ are all identical, so the morphisms
+$\operatorname{Spec}(K)\to X_i$ corresponding to $\boldsymbol{k}(x_i)\to K$ are
 $S$-morphisms, and we conclude that they define a unique morphism
 $\operatorname{Spec}(K)\to Y$. If $y$ is the corresponding point of $Y$, it
 is clear that its projection to each of the $X_i$ is $x_i$.
@@ -774,7 +774,7 @@ is clear that its projection to each of the $X_i$ is $x_i$.
 \label{I.3.4.7}
 Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, and for each index $i$,
 let $x_i$ be a point of $X_i$. For there to exist a point $y$ of
-$Y=X_1\times_S X_2\times_S\cdots\times_S X_n$ whose projection of index $i$ is
+$Y=X_1\times_S X_2\times\ldots\times_S X_n$ whose projection of index $i$ is
 $x_i$ for $1\leq i\leq n$, it is necessary and sufficient that the $x_i$ lie
 over one and the same point $s$ of $S$.
 \end{proposition}
@@ -797,11 +797,11 @@ $K\otimes_k K'$ in general has several distinct prime ideals
 \label{I.3.4.8}
 Let $f:X\to Y$ be an $S$-morphism, and $f_{(S')}:X_{(S')}\to Y_{(S')}$ the
 $S'$-morphism deduced from $f$ by an extension $S'\to S$ of the base prescheme.
-Let $p$ (resp. $q$) be the projection $X_{(S')}\to X$ (resp.
+Let $p$ (resp. $q$) be the projection $X_{(S')}\to X$ (\textup{resp.}
 $Y_{(S')}\to Y$); for every subset $M$ of $X$, we have
 \phantomsection\label{I.3.4.8.base-change-image}
 \[
-  q^{-1}(f(M))=f_{(S')}(p^{-1}(M)).
+  q^{-1}(f(M))=f_{(S')}(p^{-1}(M))
 \]
 \end{corollary}
 
@@ -828,64 +828,64 @@ Lemma (\hyperref[I.3.4.6]{3.4.6}) can be made more precise as follows:
 Let $X$, $Y$ be two $S$-preschemes, $x$ a point of $X$, and $y$ a point of $Y$,
 lying over the same point $s\in S$. The set of points of $X\times_S Y$ having
 $x$ and $y$ as projections is in canonical one-to-one correspondence with
-the set of types of composite extensions of $k(x)$ and $k(y)$, regarded
-as extensions of $k(s)$ (Bourbaki, \emph{Alg.}, Chap. VIII, \S~8, Prop. 2).
+the set of types of composite extensions of $\boldsymbol{k}(x)$ and $\boldsymbol{k}(y)$, regarded
+as extensions of $\boldsymbol{k}(s)$ (Bourbaki, \emph{Alg.}, Chap. VIII, \S~8, Prop. 2).
 \end{proposition}
 
 Let $p$ (resp. $q$) be the projection of $X\times_S Y$ to $X$ (resp. $Y$) and
 let $E$ be the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of
 $X\times_S Y$. Note first that the morphisms
-$\operatorname{Spec}(k(x))\to S$ and $\operatorname{Spec}(k(y))\to S$
+$\operatorname{Spec}(\boldsymbol{k}(x))\to S$ and $\operatorname{Spec}(\boldsymbol{k}(y))\to S$
 factorize as
-$\operatorname{Spec}(k(x))\to\operatorname{Spec}(k(s))\to S$ and
-$\operatorname{Spec}(k(y))\to\operatorname{Spec}(k(s))\to S$; since
-$\operatorname{Spec}(k(s))\to S$ is a monomorphism
+$\operatorname{Spec}(\boldsymbol{k}(x))\to\operatorname{Spec}(\boldsymbol{k}(s))\to S$ and
+$\operatorname{Spec}(\boldsymbol{k}(y))\to\operatorname{Spec}(\boldsymbol{k}(s))\to S$; since
+$\operatorname{Spec}(\boldsymbol{k}(s))\to S$ is a monomorphism
 (\hyperref[I.2.4.7]{2.4.7}), it follows from
 (\hyperref[I.3.2.4]{3.2.4}) that we have
 \phantomsection\label{I.3.4.9.tensor-product-fibre}
 \[
-  P=\operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(y))
-  =\operatorname{Spec}(k(x))\times_{\operatorname{Spec}(k(s))}
-   \operatorname{Spec}(k(y))
-  =\operatorname{Spec}\bigl(k(x)\otimes_{k(s)}k(y)\bigr).
+  P=\operatorname{Spec}(\boldsymbol{k}(x))\times_S\operatorname{Spec}(\boldsymbol{k}(y))
+  =\operatorname{Spec}(\boldsymbol{k}(x))\times_{\operatorname{Spec}(\boldsymbol{k}(s))}
+   \operatorname{Spec}(\boldsymbol{k}(y))
+  =\operatorname{Spec}\bigl(\boldsymbol{k}(x)\otimes_{\boldsymbol{k}(s)}\boldsymbol{k}(y)\bigr)
 \]
 
 We shall define two maps $\alpha:P_0\to E$, $\beta:E\to P_0$,
 inverse to each other ($P_0$ denoting the underlying set of the
-prescheme $P$). If $i:\operatorname{Spec}(k(x))\to X$ and
-$j:\operatorname{Spec}(k(y))\to Y$ are the canonical morphisms
+prescheme $P$). If $i:\operatorname{Spec}(\boldsymbol{k}(x))\to X$ and
+$j:\operatorname{Spec}(\boldsymbol{k}(y))\to Y$ are the canonical morphisms
 (\hyperref[I.2.4.5]{2.4.5}), we take for $\alpha$ the map of
 underlying spaces corresponding to the morphism $i\times_S j$. On the other
-hand, every $z\in E$ defines by hypothesis two $k(s)$-monomorphisms
-$k(x)\to k(z)$ and $k(y)\to k(z)$, hence a tensor product
-$k(s)$-homomorphism $k(x)\otimes_{k(s)}k(y)\to k(z)$ and consequently a
-morphism $\operatorname{Spec}(k(z))\to P$; $\beta(z)$ will be the image of $z$
+hand, every $z\in E$ defines by hypothesis two $\boldsymbol{k}(s)$-monomorphisms
+$\boldsymbol{k}(x)\to \boldsymbol{k}(z)$ and $\boldsymbol{k}(y)\to \boldsymbol{k}(z)$, hence a tensor product
+$\boldsymbol{k}(s)$-homomorphism $\boldsymbol{k}(x)\otimes_{k(s)}\boldsymbol{k}(y)\to \boldsymbol{k}(z)$ and consequently a
+morphism $\operatorname{Spec}(\boldsymbol{k}(z))\to P$; $\beta(z)$ will be the image of $z$
 in $P_0$ under this morphism. The verification that $\alpha\circ\beta$ and
 $\beta\circ\alpha$ are the identity maps follows from
 (\hyperref[I.2.4.5]{2.4.5}) and from the definition of the product
 (\hyperref[I.3.2.1]{3.2.1}). Finally, we know that $P_0$ is in one-to-one
-correspondence with the set of types of composite extensions of $k(x)$ and
-$k(y)$ (Bourbaki, \emph{Alg.}, Chap. VIII, \S~8, Prop. 1).
+correspondence with the set of types of composite extensions of $\boldsymbol{k}(x)$ and
+$\boldsymbol{k}(y)$ (Bourbaki, \emph{Alg.}, Chap. VIII, \S~8, Prop. 1).
 
 \subsection{Surjections and injections}
 \label{subsection:I.3.5}
 
 \begin{env}[3.5.1]
 \label{I.3.5.1}
-In general, consider a property $\mathbf{P}$ of morphisms of
+In general, consider a property $\boldsymbol{P}$ of morphisms of
 preschemes, and the following two propositions:
 \begin{enumerate}
   \item[(i)] If $f:X\to X'$, $g:Y\to Y'$ are two $S$-morphisms having
-  property $\mathbf{P}$, then $f\times_S g$ has property $\mathbf{P}$.
+  property $\boldsymbol{P}$, then $f\times_S g$ has property $\boldsymbol{P}$.
   \item[(ii)] If $f:X\to Y$ is an $S$-morphism having property
-  $\mathbf{P}$, every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$ deduced
+  $\boldsymbol{P}$, every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$ deduced
   from $f$ by extension of the base prescheme has property
-  $\mathbf{P}$.
+  $\boldsymbol{P}$.
 \end{enumerate}
 
 \oldpage[I]{115}
 Since $f_{(S')}=f\times_S 1_{S'}$, we see that if for every prescheme $X$
-the \emph{identity} $1_X$ has property $\mathbf{P}$, then (i) implies
+the \emph{identity} $1_X$ has property $\boldsymbol{P}$, then (i) implies
 (ii); since, on the other hand, $f\times_S g$ is the composite morphism
 \phantomsection\label{I.3.5.1.product-composition}
 \[
@@ -893,7 +893,7 @@ the \emph{identity} $1_X$ has property $\mathbf{P}$, then (i) implies
   \xrightarrow{1_{X'}\times g}X'\times_S Y'
 \]
 we see that if the \emph{composite} of two morphisms having property
-$\mathbf{P}$ also has this property, then (ii) implies (i).
+$\boldsymbol{P}$ also has this property, then (ii) implies (i).
 \end{env}
 
 A first application of this remark is the following
@@ -930,14 +930,14 @@ commutative.
 
 The condition is sufficient, since for every $y\in Y$ it suffices to apply it
 to a morphism $\operatorname{Spec}(K)\to Y$ corresponding to a monomorphism
-$k(y)\to K$, $K$ being an extension of $k(y)$
+$\boldsymbol{k}(y)\to K$, $K$ being an extension of $\boldsymbol{k}(y)$
 (\hyperref[I.2.4.6]{2.4.6}). Conversely, suppose $f$ surjective, and let
 $y\in Y$ be the image of the unique point of $\operatorname{Spec}(K)$; there
 exists $x\in X$ such that $f(x)=y$; consider the corresponding monomorphism
-$k(y)\to k(x)$ (\hyperref[I.2.2.1]{2.2.1}); it then suffices to take for
-$K'$ an extension of $k(y)$ such that there exist $k(y)$-monomorphisms of
-$k(x)$ and of $K$ into $K'$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4, Prop. 2);
-the morphism $\operatorname{Spec}(K')\to X$ corresponding to $k(x)\to K'$
+$\boldsymbol{k}(y)\to \boldsymbol{k}(x)$ (\hyperref[I.2.2.1]{2.2.1}); it then suffices to take for
+$K'$ an extension of $\boldsymbol{k}(y)$ such that there exist $\boldsymbol{k}(y)$-monomorphisms of
+$\boldsymbol{k}(x)$ and of $K$ into $K'$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4, Prop. 2);
+the morphism $\operatorname{Spec}(K')\to X$ corresponding to $\boldsymbol{k}(x)\to K'$
 answers the question.
 
 In the language introduced in (\hyperref[I.3.4.5]{3.4.5}), we can also say
@@ -1008,29 +1008,29 @@ seen (\hyperref[I.3.4.2.1]{3.4.2.1}) that
   (X'\times_S Y')(K)=X'(K)\times_{S(K)}Y'(K)
 \]
 the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to
-$f\times_S g$ is then identified with $(u,v)\mapsto(f\circ u,g\circ v)$, and
+$f\times_S g$ is then identified with $(u,v)\to(f\circ u,g\circ v)$, and
 the proposition follows at once.
 
 \begin{proposition}[3.5.8]
 \label{I.3.5.8}
 For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and
 sufficient that $\psi$ be injective and that, for every $x\in X$, the
-monomorphism $\theta^x:k(\psi(x))\to k(x)$ make $k(x)$ a radicial extension of
-$k(\psi(x))$.
+monomorphism $\theta^x:\boldsymbol{k}(\psi(x))\to\boldsymbol{k}(x)$ make $\boldsymbol{k}(x)$ a radicial extension of
+$\boldsymbol{k}(\psi(x))$.
 \end{proposition}
 
 Suppose $f$ radicial, and let us first show that the relation
 $\psi(x_1)=\psi(x_2)=y$ necessarily implies $x_1=x_2$. Indeed, there
-exist a field $K$, an extension of $k(y)$, and $k(y)$-monomorphisms
-$k(x_1)\to K$, $k(x_2)\to K$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4,
+exist a field $K$, an extension of $\boldsymbol{k}(y)$, and $\boldsymbol{k}(y)$-monomorphisms
+$\boldsymbol{k}(x_1)\to K$, $\boldsymbol{k}(x_2)\to K$ (Bourbaki, \emph{Alg.}, Chap. V, \S~4,
 Prop. 2); the corresponding morphisms
 $u_1:\operatorname{Spec}(K)\to X$, $u_2:\operatorname{Spec}(K)\to X$ are
 therefore such that $f\circ u_1=f\circ u_2$, hence $u_1=u_2$ by hypothesis,
-and this implies in particular $x_1=x_2$. Now regard $k(x)$ as an
-extension of $k(\psi(x))$ by means of $\theta^x$: if $k(x)$ is not a
-radicial extension of $k(\psi(x))$, there exist two distinct
-$k(\psi(x))$-monomorphisms of $k(x)$ into an algebraically
-closed extension $K$ of $k(\psi(x))$, and the two corresponding morphisms
+and this implies in particular $x_1=x_2$. Now regard $\boldsymbol{k}(x)$ as an
+extension of $\boldsymbol{k}(\psi(x))$ by means of $\theta^x$: if $\boldsymbol{k}(x)$ is not a
+radicial extension of $\boldsymbol{k}(\psi(x))$, there exist two distinct
+$\boldsymbol{k}(\psi(x))$-monomorphisms of $\boldsymbol{k}(x)$ into an algebraically
+closed extension $K$ of $\boldsymbol{k}(\psi(x))$, and the two corresponding morphisms
 $\operatorname{Spec}(K)\to X$ would violate the hypothesis. Conversely, taking
 into account (\hyperref[I.2.4.6]{2.4.6}), it is immediate that the
 conditions of the statement are sufficient for $f$ to be radicial.
@@ -1079,8 +1079,8 @@ morphism). Indeed, the condition is necessary by virtue of
 (\hyperref[I.3.5.7]{3.5.7, (ii)}) and of
 (\hyperref[I.3.5.8]{3.5.8}). Conversely, the condition first implies that
 $\psi$ is injective; if for some $x\in X$ the monomorphism
-$\theta^x:k(\psi(x))\to k(x)$ were not radicial, there would be an extension
-$K$ of $k(\psi(x))$ and two distinct morphisms
+$\theta^x:\boldsymbol{k}(\psi(x))\to\boldsymbol{k}(x)$ were not radicial, there would be an extension
+$K$ of $\boldsymbol{k}(\psi(x))$ and two distinct morphisms
 $\operatorname{Spec}(K)\to X$ corresponding to the same morphism
 $\operatorname{Spec}(K)\to Y$ (\hyperref[I.3.5.8]{3.5.8}). But then, on
 setting $Y'=\operatorname{Spec}(K)$, there would be two distinct $Y'$-sections
@@ -1130,11 +1130,11 @@ where $s\notin\mathfrak{j}_y$, and Proposition
 \begin{env}[3.6.2]
 \label{I.3.6.2}
 Throughout the rest of this Treatise, when we regard a fibre
-$f^{-1}(y)$ of a morphism as endowed with a structure of $k(y)$-prescheme,
+$f^{-1}(y)$ of a morphism as endowed with a structure of $\boldsymbol{k}(y)$-prescheme,
 \emph{it will always be the prescheme obtained by transporting the structure
-of $X\times_Y\operatorname{Spec}(k(y))$ by the projection to $X$}. We
-shall also write this last product as $X\otimes_Y k(y)$, or
-$X\otimes_{\mathcal{O}_Y}k(y)$; more generally, if $B$ is an
+of $X\times_Y\operatorname{Spec}(\boldsymbol{k}(y))$ by the projection to $X$}. We
+shall also write this last product as $X\otimes_Y \boldsymbol{k}(y)$, or
+$X\otimes_{\mathcal{O}_Y}\boldsymbol{k}(y)$; more generally, if $B$ is an
 $\mathcal{O}_y$-algebra, we shall denote by $X\otimes_Y B$ or
 $X\otimes_{\mathcal{O}_Y}B$ the product
 $X\times_Y\operatorname{Spec}(B)$.
@@ -1142,7 +1142,7 @@ $X\times_Y\operatorname{Spec}(B)$.
 
 With the preceding convention, it follows from
 (\hyperref[I.3.5.10]{3.5.10}) that the points of $X$ with values in an
-extension $K$ of $k(y)$ are identified with the \emph{points of $f^{-1}(y)$
+extension $K$ of $\boldsymbol{k}(y)$ are identified with the \emph{points of $f^{-1}(y)$
 with values in $K$}.
 
 \begin{env}[3.6.3]
@@ -1151,8 +1151,8 @@ Let $f:X\to Y$, $g:Y\to Z$ be two morphisms, and $h=g\circ f$ their composite;
 for every $z\in Z$, the fibre $h^{-1}(z)$ is a prescheme isomorphic to
 \phantomsection\label{I.3.6.3.fibre-composition}
 \[
-  X\times_Z\operatorname{Spec}(k(z))
-  =(X\times_Y Y)\times_Z\operatorname{Spec}(k(z))
+  X\times_Z\operatorname{Spec}(\boldsymbol{k}(z))
+  =(X\times_Y Y)\times_Z\operatorname{Spec}(\boldsymbol{k}(z))
   =X\times_Y g^{-1}(z)
 \]
 \oldpage[I]{118}
@@ -1167,13 +1167,13 @@ Let $f:X\to Y$, $g:Y'\to Y$ be two morphisms; set
 $X'=X\times_Y Y'=X_{(Y')}$, and
 $f'=f_{(Y')}:X'\to Y'$. For every $y'\in Y'$, if we set $y=g(y')$, the
 prescheme $f'^{-1}(y')$ is isomorphic to
-$f^{-1}(y)\otimes_{k(y)}k(y')$.
+$f^{-1}(y)\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$.
 \end{proposition}
 
 Indeed, this amounts to noting that the two preschemes
-$(X\otimes_Y k(y))\otimes_{k(y)}k(y')$ and
-$(X\times_Y Y')\otimes_{Y'}k(y')$ are both canonically isomorphic to
-$X\times_Y\operatorname{Spec}(k(y'))$ by
+$(X\otimes_Y \boldsymbol{k}(y))\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$ and
+$(X\times_Y Y')\otimes_{Y'}\boldsymbol{k}(y')$ are both canonically isomorphic to
+$X\times_Y\operatorname{Spec}(\boldsymbol{k}(y'))$ by
 (\hyperref[I.3.3.9.1]{3.3.9.1}).
 
 In particular, if $V$ is an open neighbourhood of $y$ in $Y$, and if
@@ -1198,12 +1198,12 @@ open set containing $y$ (\hyperref[I.2.4.2]{2.4.2}), we can, as in
 $X=\operatorname{Spec}(A)$ and $Y=\operatorname{Spec}(B)$ are affine schemes,
 $A$ being a $B$-algebra. Then $X\times_Y Z$ is the prime spectrum
 of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$,
-where $S$ is the image of $B-\mathfrak{j}_y$ in $A$ (0, 1.5.2); since $p$
+where $S$ is the image of $B\setmin\mathfrak{j}_y$ in $A$ (\textbf{0}, 1.5.2); since $p$
 then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition
 follows from (\hyperref[I.1.6.2]{1.6.2}).
 
 \subsection{Application: reduction of a prescheme mod.
-\texorpdfstring{$\mathfrak{J}$\protect\footnotemark}{J}}
+\texorpdfstring{$\mathfrak{J}$\protect\footnotemark}{J}.}
 \label{subsection:I.3.7}
 \label{I.3.7}
 \footnotetext{This subsection, which makes use of notions and results from
@@ -1232,9 +1232,9 @@ this language was used, $A$ was a local ring of dimension 1 (most
 often a discrete valuation ring), and it was understood (more or less
 explicitly) that the given $K$-prescheme $X'$ was a
 closed sub-prescheme of a $K$-prescheme $P'$ (in fact, a standard projective
-space $\mathbf{P}_K^r$, cf. II, 4.1.1), itself of the form
+space $\mathbf{P}_K^r$, cf. \textbf{II}, 4.1.1), itself of the form
 $P'=P\otimes_A K$, where $P$ is a given $A$-prescheme (in fact, the $A$-scheme
-$\mathbf{P}_A^r$, with the notation of II, 4.1.1). In our language, the
+$\mathbf{P}_A^r$, with the notation of \textbf{II}, 4.1.1). In our language, the
 definition of $X_0$ in terms of $X'$ is formulated as follows:
 
 Consider the affine scheme $Y=\operatorname{Spec}(A)$, consisting of two
@@ -1249,7 +1249,7 @@ particular, if $\varphi$ is the structural morphism $P\to Y$, a
 closed sub-prescheme $X'$ of $P'=\varphi^{-1}(U)$ is therefore a (locally
 closed) sub-prescheme of $P$. If $P$ is Noetherian (for example if $A$ is
 Noetherian and $P$ is of finite type over $A$), there exists a smallest
-closed sub-prescheme $X=\overline{X'}$ of $P$ which majorizes $X'$ (9.5.10),
+closed sub-prescheme $X=\overline{X}'$ of $P$ which majorizes $X'$ (9.5.10),
 and $X'$ is the prescheme induced by $X$ on the open set
 $\varphi^{-1}(U)\cap X$, hence is isomorphic to $X\otimes_A K$ (9.5.10).
 \emph{The immersion of $X'$ into $P'=P\otimes_A K$ therefore makes it possible
@@ -1274,9 +1274,9 @@ Finally, let us point out a very special fact, which has no doubt contributed
 to delaying the conceptual clarification of the situation considered here: if
 $A$ is a discrete valuation ring and $X$ is \emph{proper over $A$}
 (which is in fact the case if $X$ is a closed sub-prescheme of a
-$\mathbf{P}_A^r$, cf. II, 5.5.4), the points of $X$ with values in $A$ and the
+$\mathbf{P}_A^r$, cf. \textbf{II}, 5.5.4), the points of $X$ with values in $A$ and the
 points of $X'$ with values in $K$ are in one-to-one correspondence
-(II, 7.3.8). This is why one has often believed oneself to be proving results
+(\textbf{II}, 7.3.8). This is why one has often believed oneself to be proving results
 concerning $X'$, whereas in reality one was proving statements concerning
 $X$, which remain valid (in this form) when the local base ring is no longer
 assumed to be of dimension 1.

@@ -14,7 +14,7 @@ quasi-coherent $\sh{O}_Y$-Modules defined by
 \oldpage[III]{205}
 We say that $\sh{P}_\bullet$ is \emph{homologically flat over
 $Y$ at $y$, in dimension $p$} (or \emph{cohomologically flat
-over $Y$ at $y$, in dimension $-p$}) if there is an open
+over $Y$ at $y$, in dimension $\setmin p$}) if there is an open
 neighbourhood $U$ of $y$ in $Y$ such that
 \[
   \sh{T}_p^U=\sh{T}^{-p}_U
@@ -54,15 +54,15 @@ subset of a quasi-compact scheme.
 With the notation and hypotheses of \sref{III.7.8.1}, the
 following conditions are equivalent:
 \begin{enumerate}
-  \item[a)] $\sh{P}_\bullet$ is homologically flat over $Y$
+  \item[\textup{a)}] $\sh{P}_\bullet$ is homologically flat over $Y$
   at $y$, in dimension $p$.
-  \item[b)] There is an open neighbourhood $U$ of $y$ in
+  \item[\textup{b)}] There is an open neighbourhood $U$ of $y$ in
   $Y$ such that $\sh{T}_p^U$ and $\sh{T}_{p+1}^U$ are right
   exact.
-  \item[c)] There is an open neighbourhood $U$ of $y$ in
+  \item[\textup{c)}] There is an open neighbourhood $U$ of $y$ in
   $Y$ such that $\sh{T}_p^U$ and $\sh{T}_{p-1}^U$ are left
   exact.
-  \item[d)] There is an open neighbourhood $U$ of $y$ in
+  \item[\textup{d)}] There is an open neighbourhood $U$ of $y$ in
   $Y$ such that $\sh{T}_{p+1}^U$ is right exact and
   $\sh{T}_{p-1}^U$ is left exact.
 \end{enumerate}
@@ -83,10 +83,10 @@ $\sh{O}_X$-Modules, and let $\sh{T}_\bullet$ be the functor
 defined by \eqref{III.7.7.1.1}.  For every $y\in Y$, the
 following conditions are equivalent:
 \begin{enumerate}
-  \item[a)] $\sh{P}_\bullet$ is homologically flat over $Y$
+  \item[\textup{a)}] $\sh{P}_\bullet$ is homologically flat over $Y$
   at $y$, in dimension $p$.
-  \item[b)] The functor $\sh{T}_p^{\sh{O}_y}$ is exact.
-  \item[c)] There is an integer $n_0$ such that, for
+  \item[\textup{b)}] The functor $\sh{T}_p^{\sh{O}_y}$ is exact.
+  \item[\textup{c)}] There is an integer $n_0$ such that, for
   $n\geq n_0$,
   \[
     \operatorname{length}
@@ -101,7 +101,7 @@ following conditions are equivalent:
     \tag{7.8.4.1}\label{III.7.8.4.1}
   \]
   Here all lengths are lengths of $\sh{O}_y$-modules.
-  \item[d)] There is an open neighbourhood $U$ of $y$ such
+  \item[\textup{d)}] There is an open neighbourhood $U$ of $y$ such
   that
   \[
     \mathscr{H}^{-p}(f,\sh{P}^\bullet)|U
@@ -123,8 +123,8 @@ following conditions are equivalent:
 \end{enumerate}
 When these conditions hold, one also has:
 \begin{enumerate}
-  \item[e)] There is a neighbourhood of $y$ on which the
-  function $z\mapsto d_p(z)$, defined in
+  \item[\textup{e)}] There is a neighbourhood of $y$ on which the
+  function $z\leadsto d_p(z)$, defined in
   \eqref{III.7.7.5.1}, is constant.
 \end{enumerate}
 Moreover, if $Y$ is reduced at $y$ \sref[0]{0.4.1.4},
@@ -133,7 +133,7 @@ condition e) is equivalent to the other conditions.
 
 \begin{proof}
 \oldpage[III]{206}
-Indeed, condition b) is equivalent to saying that
+Indeed, condition \emph{b)} is equivalent to saying that
 $\sh{T}_p^{\sh{O}_y}$ and $\sh{T}_{p+1}^{\sh{O}_y}$ are
 right exact \sref{III.7.3.3}.  The equivalence of a) and b)
 then follows from \sref{III.7.7.10} and
@@ -177,11 +177,11 @@ functor $\sh{T}_p^U$ \eqref{III.7.7.2.2}.
 Under the hypotheses of \sref{III.7.8.4}, the following
 conditions are equivalent:
 \begin{enumerate}
-  \item[a)] $\sh{P}_\bullet$ is homologically flat over $Y$
+  \item[\textup{a)}] $\sh{P}_\bullet$ is homologically flat over $Y$
   in every dimension $i\leq p$.
-  \item[b)] For $i\leq p+1$, the functors $\sh{T}_i$ are
+  \item[\textup{b)}] For $i\leq p+1$, the functors $\sh{T}_i$ are
   right exact.
-  \item[c)] For $i\geq -p$, the $\sh{O}_Y$-Modules
+  \item[\textup{c)}] For $i\geq -p$, the $\sh{O}_Y$-Modules
   $\mathscr{H}^{i}(f,\sh{P}^\bullet)$ are locally free.
 \end{enumerate}
 \end{proposition}
@@ -192,7 +192,7 @@ The equivalence of a) and b) is immediate from
 \sref{III.7.8.4}.
 
 Conversely, suppose that c) holds.  Recall also that
-$\sh{L}_i=0$ for $i<i_0$ \sref{III.7.7.4}, and hence
+$\sh{L}_i=0$ for $i\leq i_0$ \sref{III.7.7.4}, and hence
 $\sh{T}_i=0$ for $i\leq i_0$.  Every point $y\in Y$
 therefore has an affine neighbourhood
 $U=\Spec(A)$ such that $T_i^A(A)$ is a free $A$-module for
@@ -311,9 +311,9 @@ is already surjective.
 Under the hypotheses of \sref{III.7.8.6}, there is an open
 neighbourhood $U$ of $y$ such that:
 \begin{enumerate}
-  \item[(i)] $f_*(\sh{O}_X)|U$ is isomorphic to an
+  \item[\textup{(i)}] $f_*(\sh{O}_X)|U$ is isomorphic to an
   $(\sh{O}_Y|U)$-Module of the form $(\sh{O}_Y|U)^m$;
-  \item[(ii)] for every $z\in U$, the canonical
+  \item[\textup{(ii)}] for every $z\in U$, the canonical
   homomorphism
   \[
     \bigl(f_*(\sh{O}_X)\bigr)_z
@@ -385,7 +385,7 @@ Under the hypotheses of \sref{III.7.8.6}, consider the
 Stein factorisation of $f$ \sref{III.4.3.3},
 \[
   \xymatrix{
-    X \ar[r]^{f'} & Y' \ar[r]^{g} & Y .
+    X \ar[r]^{f'} & Y' \ar[r]^{g} & Y
   }
 \]
 \oldpage[III]{208}

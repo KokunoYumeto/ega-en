@@ -267,7 +267,7 @@ By hypothesis, $f^{-1}(\eta)$ is irreducible of generic point $\xi$ and of dimen
 As $\mathrm{Y}$ is irreducible and of dimension~$1$, we have $\dim(\sh{O}_y)=1$ for all $y\neq\eta$, and $\sh{O}_y$ is universally catenary by virtue of \sref{IV.7.1.12},~(ii).
 If $y\in f(\mathrm{X})$ and if $z$ is a generic point of an irreducible component $\mathrm{Z}$ of $f^{-1}(y)$, we have therefore, by \sref{IV.5.6.5}
 \[
-  \dim(\mathrm{Z})=1+\dim(f^{-1}(\eta))-\dim(\sh{O}_{\mathrm{X},z}).
+  \dim(\mathrm{Z})=1+\dim(f^{-1}(\eta))\setmin\dim(\sh{O}_{\mathrm{X},z}).
 \]
 But we have $\dim(\sh{O}_{\mathrm{X},z})\leqslant\dim(\sh{O}_y)$ \sref[0]{0.16.3.9}, and on the other hand, as $z$ is not the generic point of $\mathrm{X}$, $\dim(\sh{O}_{\mathrm{X},z})>0$; hence $\dim(\sh{O}_{\mathrm{X},z})=1$ and $\dim(\mathrm{Z})=\dim(f^{-1}(\eta))$.
 \end{proof}
@@ -310,18 +310,18 @@ As it comes to the same thing to say that $\mathrm{A}$ is a Cohen-Macaulay ring 
 \begin{proposition}[7.2.2]
 \label{IV.7.2.2}
 Let $\mathrm{A}$ be a local Noetherian integral ring; set $\mathrm{A}'=\widehat{\mathrm{A}}$, $\mathrm{X}=\Spec(\mathrm{A})$, $\mathrm{X}'=\Spec(\mathrm{A}')$ and denote by $f:\mathrm{X}'\to\mathrm{X}$ the canonical morphism.
-Let $a$ be the closed point of $\mathrm{X}$, $j:\mathrm{X}-\{a\}\to\mathrm{X}$ the canonical injection.
+Let $a$ be the closed point of $\mathrm{X}$, $j:\mathrm{X}\setmin\{a\}\to\mathrm{X}$ the canonical injection.
 Let $\sh{F}$ be a coherent $\sh{O}_\mathrm{X}$-Module, $\sh{F}'=f^*(\sh{F})=\sh{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_{\mathrm{X}'}$; then the following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
-  \item The $\sh{O}_\mathrm{X}$-Module $j_*(\sh{F}|\mathrm{X}-\{a\})$ is coherent.
+  \item The $\sh{O}_\mathrm{X}$-Module $j_*(\sh{F}|\mathrm{X}\setmin\{a\})$ is coherent.
   \item For all $x'\in\operatorname{Ass}(\sh{F}')$, we have $\dim(\overline{\{x'\}})\geqslant 2$.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
-Let $a'$ be the closed point of $\mathrm{X}'$, which is the unique point of the fibre $f^{-1}(a)$, and let $j':\mathrm{X}'-\{a'\}\to\mathrm{X}'$ be the canonical injection.
-As the morphism $f$ is faithfully flat and quasi-compact, it is equivalent to say that $j_*(\sh{F}|\mathrm{X}-\{a\})$ is coherent or that $j'_*(\sh{F}'|\mathrm{X}'-\{a'\})$ is coherent.
-On the other hand, as $\mathrm{A}'$ is isomorphic to a quotient of a regular local ring by the theorem of Cohen \sref[0]{0.19.8.8}, it follows from \sref{IV.5.11.4} that condition~$b)$ of the statement is equivalent to the fact that $j'_*(\sh{F}'|\mathrm{X}'-\{a'\})$ is coherent.
+Let $a'$ be the closed point of $\mathrm{X}'$, which is the unique point of the fibre $f^{-1}(a)$, and let $j':\mathrm{X}'\setmin\{a'\}\to\mathrm{X}'$ be the canonical injection.
+As the morphism $f$ is faithfully flat and quasi-compact, it is equivalent to say that $j_*(\sh{F}|\mathrm{X}\setmin\{a\})$ is coherent or that $j'_*(\sh{F}'|\mathrm{X}'\setmin\{a'\})$ is coherent.
+On the other hand, as $\mathrm{A}'$ is isomorphic to a quotient of a regular local ring by the theorem of Cohen \sref[0]{0.19.8.8}, it follows from \sref{IV.5.11.4} that condition~$b)$ of the statement is equivalent to the fact that $j'_*(\sh{F}'|\mathrm{X}'\setmin\{a'\})$ is coherent.
 Whence the proposition.
 
 Instead of applying \sref{IV.5.11.4} and using the theorem of Cohen, which (by \sref{IV.5.11.2}) implicitly appeals to the cohomological results of chap.~III, one can also use the fact that $\mathrm{A}'$ is universally catenary \sref{IV.5.6.4} and universally Japanese by virtue of \sref{IV.7.6.5} (the proof of this last result not using \sref{IV.7.2.2}).
@@ -422,15 +422,15 @@ We proceed in two steps, $n$ being $\geqslant 1$.
 \medskip\noindent
 I) \emph{Suppose first that $\mathrm{A}$ satisfies $(\mathrm{S}_2)$.} ---
 Set $\mathrm{X}=\Spec(\mathrm{A})$, $\mathrm{A}'=\widehat{\mathrm{A}}$, $\mathrm{X}'=\Spec(\mathrm{A}')$ and let $u:\mathrm{X}'\to\mathrm{X}$ be the canonical morphism; it amounts to showing that for all $x'\in\operatorname{Ass}(\sh{O}_{\mathrm{X}'})$, we have $\dim(\overline{\{x'\}})=n$.
-Let $f\neq 0$ be an element of the maximal ideal of $\mathrm{A}$, and set $\mathrm{C}=\mathrm{A}/f\mathrm{A}$; we know \sref{IV.5.7.6} that $\mathrm{A}/f\mathrm{A}$ satisfies $(\mathrm{S}_1)$; moreover, as the prime ideals of $\mathrm{A}$ minimal among those containing $f$ have height $1$ by virtue of the Hauptidealsatz, and as $\mathrm{C}$ is catenary, $\mathrm{C}=\mathrm{A}/f\mathrm{A}$ is \emph{strictly equidimensional} and $\dim(\mathrm{C})=n-1$.
+Let $f\neq 0$ be an element of the maximal ideal of $\mathrm{A}$, and set $\mathrm{C}=\mathrm{A}/f\mathrm{A}$; we know \sref{IV.5.7.6} that $\mathrm{A}/f\mathrm{A}$ satisfies $(\mathrm{S}_1)$; moreover, as the prime ideals of $\mathrm{A}$ minimal among those containing $f$ have height $1$ by virtue of the Hauptidealsatz, and as $\mathrm{C}$ is catenary, $\mathrm{C}=\mathrm{A}/f\mathrm{A}$ is \emph{strictly equidimensional} and $\dim(\mathrm{C})=n\setmin 1$.
 We have $\widehat{\mathrm{C}}=\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'=\mathrm{A}'/f\mathrm{A}'$, and $f$ is $\mathrm{A}'$-regular by flatness \sref[0]{0.6.3.4}; if we set $\mathrm{Y}'=\mathrm{V}(f\mathrm{A}')=\Spec(\widehat{\mathrm{C}})$, then, for every maximal point $y'$ of $\mathrm{Y}'\cap\overline{\{x'\}}$, we have $y'\in\operatorname{Ass}(\sh{O}_{\mathrm{Y}'})$ by virtue of \sref{IV.3.4.3}; on the other hand, we have $y'\neq x'$ since $u(x')$ is the generic point of $\mathrm{X}$ \sref{IV.3.3.2} and $u(y')\in\mathrm{V}(f\mathrm{A})$; we conclude from \sref{IV.5.1.8} that
 \[
-  \dim(\overline{\{y'\}})=\dim(\overline{\{x'\}})-1.
+  \dim(\overline{\{y'\}})=\dim(\overline{\{x'\}})\setmin 1.
   \tag{7.2.5.1}
 \label{IV.7.2.5.1}
 \]
 
-But the quotient ring $\mathrm{C}=\mathrm{A}/f\mathrm{A}$ also satisfies hypothesis $c)$ of the statement \sref{IV.5.6.1} and \sref{IV.5.11.7},~(ii)), hence by the induction hypothesis, we have $\dim(\overline{\{y'\}})=\dim(\mathrm{C})=n-1$; the conclusion therefore follows in this case from {\hyperref[IV.7.2.5.1]{(7.2.5.1)}}.
+But the quotient ring $\mathrm{C}=\mathrm{A}/f\mathrm{A}$ also satisfies hypothesis $c)$ of the statement \sref{IV.5.6.1} and \sref{IV.5.11.7},~(ii)), hence by the induction hypothesis, we have $\dim(\overline{\{y'\}})=\dim(\mathrm{C})=n\setmin 1$; the conclusion therefore follows in this case from {\hyperref[IV.7.2.5.1]{(7.2.5.1)}}.
 
 \medskip\noindent
 II) \emph{General case.} ---
@@ -545,7 +545,7 @@ We will suppose throughout what follows that the property $\boldsymbol{Q}$ is su
   If $f:\mathrm{X}\to\mathrm{Y}$ is a regular morphism \sref{IV.6.8.1} and $g:\mathrm{Y}\to\mathrm{Z}$ is a $\boldsymbol{P}$-morphism, then $g\circ f$ is a $\boldsymbol{P}$-morphism.
   \item[$(\mathrm{P_{II}})$] \emph{(descent).} ---
   If $f:\mathrm{X}\to\mathrm{Y}$ and $g:\mathrm{Y}\to\mathrm{Z}$ are morphisms of locally Noetherian preschemes such that $f$ is faithfully flat and that $g\circ f$ is a $\boldsymbol{P}$-morphism, then $g$ is a $\boldsymbol{P}$-morphism.
-  \item[$(\mathrm{P_{III}})$] ---
+  \item[$(\mathrm{P_{III}})$.] ---
   For every field $k$, the property $\boldsymbol{P}(\Spec(k),k)$ is true.
 \end{enumerate}
 \end{env}
@@ -559,7 +559,7 @@ We will suppose throughout what follows that the property $\boldsymbol{Q}$ is su
 
   \item In certain cases, the property $\boldsymbol{Q}$ will be such that the following condition is also satisfied:
   \begin{enumerate}
-    \item[$(\mathrm{P'_I})$] ---
+    \item[$(\mathrm{P'_I})$.] ---
     If $f:\mathrm{X}\to\mathrm{Y}$ and $g:\mathrm{Y}\to\mathrm{Z}$ are two $\boldsymbol{P}$-morphisms, then $g\circ f$ is a $\boldsymbol{P}$-morphism.
   \end{enumerate}
 \end{enumerate}
@@ -800,7 +800,7 @@ As $f$ is faithfully flat and quasi-compact \sref{IV.2.3.12}, and as by hypothes
   Then $\Spec(\mathrm{A})$ consists of the closed point $a$, corresponding to the maximal ideal $\mathfrak{m}$, and the maximal points $b_i$ ($1\leqslant i\leqslant r$), corresponding to the minimal prime ideals of $\mathrm{A}$.
   One has $\dim(\widehat{\mathrm{A}})=1$, and the maximal ideal of $\widehat{\mathrm{A}}$ is $\mathfrak{m}\widehat{\mathrm{A}}$.
   The formal fibre of $\mathrm{A}$ at $a$ is therefore $\Spec(k)$, where $k=\mathrm{A}/\mathfrak{m}$ is the residue field of $\mathrm{A}$; the formal fibre at each $b_i$ is the spectrum of an Artinian ring whose residue fields are the residue fields $L_{ij}$ of $\Spec(\widehat{\mathrm{A}})$ at the maximal points $b_{ij}$ lying over $b_i$.
-  Since an Artinian ring is Cohen--Macaulay, $\mathrm{A}$ is a $\boldsymbol{P}$-ring when $\boldsymbol{P}$ is property~(ii) of \sref{IV.7.3.8}.
+  Since an Artinian ring is Cohen-Macaulay, $\mathrm{A}$ is a $\boldsymbol{P}$-ring when $\boldsymbol{P}$ is property~(ii) of \sref{IV.7.3.8}.
   Moreover, since a reduced Artinian ring is a direct sum of fields, the following properties are equivalent \sref{IV.6.7.7}:
   \begin{enumerate}[label=\emph{\alph*)}]
     \item the formal fibres of $\mathrm{A}$ are geometrically reduced;
@@ -911,7 +911,7 @@ If $\boldsymbol{P}$ satisfies $(\mathrm{P_{IV}})$, then $\mathrm{B}$ is a $\bold
 Let $(x_i)_{1\leqslant i\leqslant m}$ be a system of generators of the $\mathrm{A}$-algebra $\mathrm{C}$; let us show first that we can argue by induction on $m$.
 Let $\mathrm{C}'$ be the sub-$\mathrm{A}$-algebra of $\mathrm{C}$ generated by $x_1,\ldots,x_{m-1}$, and let $\mathfrak{n}'=\mathfrak{n}\cap\mathrm{C}'$.
 The homomorphism $\mathrm{A}\to\mathrm{C}_\mathfrak{n}$ factors through the local homomorphisms $\mathrm{A}\to\mathrm{C}'_{\mathfrak{n}'}\to\mathrm{C}_\mathfrak{n}$; if $k''$ is the residue field of $\mathrm{C}'_{\mathfrak{n}'}$, the extension $k\to k'$ factors through $k''$, hence $k''$ is a finite extension of $k$ and $k'$ a finite extension of $k''$.
-The induction hypothesis implies that $\mathrm{C}'_{\mathfrak{n}'}$ is a $\boldsymbol{P}$-ring. If $\mathrm{S}'=\mathrm{C}'-\mathfrak{n}'$, then $\mathrm{C}_\mathfrak{n}$ is a local ring of $\mathrm{S}'^{-1}\mathrm{C}=\mathrm{C}'_{\mathfrak{n}'}[x_m/1]$; the induction hypothesis applied once more shows that $\mathrm{C}_\mathfrak{n}$ is a $\boldsymbol{P}$-ring. Thus the problem reduces to the case where $\mathrm{C}$ is an $\mathrm{A}$-algebra generated by a \emph{single} element $t$.
+The induction hypothesis implies that $\mathrm{C}'_{\mathfrak{n}'}$ is a $\boldsymbol{P}$-ring. If $\mathrm{S}'=\mathrm{C}'\setmin\mathfrak{n}'$, then $\mathrm{C}_\mathfrak{n}$ is a local ring of $\mathrm{S}'^{-1}\mathrm{C}=\mathrm{C}'_{\mathfrak{n}'}[x_m/1]$; the induction hypothesis applied once more shows that $\mathrm{C}_\mathfrak{n}$ is a $\boldsymbol{P}$-ring. Thus the problem reduces to the case where $\mathrm{C}$ is an $\mathrm{A}$-algebra generated by a \emph{single} element $t$.
 
 Applying \sref{IV.7.4.3},~(ii), with $\mathrm{A}'=\widehat{\mathrm{A}}$, the ring $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$ is a local ring of $\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$ at a prime ideal above $\mathfrak{n}$; as $\mathrm{A}$ and $\mathrm{A}'$ have the same residue field $k$, the residue field of $\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$ at this prime ideal is equal to $k'$.
 Moreover $\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$ is generated by a single element over $\mathrm{A}'$.
@@ -919,7 +919,7 @@ It follows therefore from \sref{IV.7.4.3},~(ii) that one can restrict to proving
 
 To show that the formal fibres of $\mathrm{B}=\mathrm{C}_\mathfrak{n}$ are then geometrically regular, let us apply the criterion \sref{IV.7.3.16},~$b)$).
 Let $\mathrm{B}_1$ be a finite integral $\mathrm{B}$-algebra, hence generated by a finite number of elements integral over $\mathrm{B}$.
-By multiplying these elements by an element of $\mathrm{S}=\mathrm{C}-\mathfrak{n}$, one can suppose that they are integral over $\mathrm{C}$, and we can therefore write $\mathrm{B}_1=\mathrm{S}^{-1}\mathrm{C}_1$, where $\mathrm{C}_1$ is a sub-C-algebra of $\mathrm{B}_1$ generated by a finite number of integral elements over $\mathrm{C}$, hence a finite integral C-algebra.
+By multiplying these elements by an element of $\mathrm{S}=\mathrm{C}\setmin\mathfrak{n}$, one can suppose that they are integral over $\mathrm{C}$, and we can therefore write $\mathrm{B}_1=\mathrm{S}^{-1}\mathrm{C}_1$, where $\mathrm{C}_1$ is a sub-C-algebra of $\mathrm{B}_1$ generated by a finite number of integral elements over $\mathrm{C}$, hence a finite integral C-algebra.
 On the other hand, $\mathrm{B}_1$ is a semi-local ring, and every local ring $\mathrm{B}_2$ of $\mathrm{B}_1$ at a maximal ideal is a local ring of $\mathrm{C}_1$, such that $\mathrm{A}\to\mathrm{B}_2$ is a local homomorphism; moreover, the residue field of $\mathrm{B}_2$ is a finite extension of $k'$, hence of $k$.
 We see therefore (taking into account \sref{IV.7.3.14} and~(i)) that we are reduced to the following question: let $\mathrm{C}$ be a Noetherian integral ring containing a subring $\mathrm{C}_0$ which is an $\mathrm{A}$-algebra generated by a single element $t$ and such that $\mathrm{C}$ is a finite $\mathrm{C}_0$-algebra; if $\mathfrak{n}$ is a maximal ideal of $\mathrm{C}$
 \oldpage[IV-2]{201}
@@ -946,9 +946,9 @@ We may reduce to the case $\mathfrak{p}=0$. Indeed, in general, set $\mathfrak{q
 
 Suppose therefore that $\mathfrak{p}=0$, so that $\mathrm{Z}$ is the generic fibre of $f$ and the homomorphism $\mathrm{B}\to\mathrm{B}'/\mathfrak{p}'$ is injective. Set $\mathrm{V}=\mathrm{B}'/\mathfrak{p}'$, and distinguish two cases.
 
-\emph{I) $\mathrm{V}$ is a finite $\mathrm{A}$-algebra.} Since $\mathrm{B}\subset\mathrm{V}$, $\mathrm{B}$ is \emph{a fortiori} a finite $\mathrm{A}$-algebra; as $\mathrm{A}$ is complete, so is $\mathrm{B}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection\,2, n\textsuperscript{o}\,5, cor.~3 of prop.~9). Hence $\mathrm{B}'=\mathrm{B}$ and $\mathfrak{p}'=0$, so $\mathrm{B}'_{\mathfrak{p}'}$ is a field, contrary to the hypothesis.
+I) \emph{$\mathrm{V}$ is a finite $\mathrm{A}$-algebra.} Since $\mathrm{B}\subset\mathrm{V}$, $\mathrm{B}$ is \emph{a fortiori} a finite $\mathrm{A}$-algebra; as $\mathrm{A}$ is complete, so is $\mathrm{B}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection\,2, n\textsuperscript{o}\,5, cor.~3 of prop.~9). Hence $\mathrm{B}'=\mathrm{B}$ and $\mathfrak{p}'=0$, so $\mathrm{B}'_{\mathfrak{p}'}$ is a field, contrary to the hypothesis.
 
-\emph{II) $\mathrm{V}$ is not a finite $\mathrm{A}$-algebra.} Since the local ring $\mathrm{A}$ is complete, $\mathrm{V}$ is not a quasi-finite $\mathrm{A}$-algebra \sref[0]{0.7.4.1} and \sref[0]{0.7.4.2}; but the residue field $k'$ of $\mathrm{V}$ is a finite extension of the residue field $k$ of $\mathrm{A}$,
+II) \emph{$\mathrm{V}$ is not a finite $\mathrm{A}$-algebra.} Since the local ring $\mathrm{A}$ is complete, $\mathrm{V}$ is not a quasi-finite $\mathrm{A}$-algebra \sref[0]{0.7.4.1} and \sref[0]{0.7.4.2}; but the residue field $k'$ of $\mathrm{V}$ is a finite extension of the residue field $k$ of $\mathrm{A}$,
 
 \oldpage[IV-2]{202}
 
@@ -958,7 +958,7 @@ It follows first that $\dim(\mathrm{C})\leqslant 1$ \sref[0]{0.16.1.5}; but sinc
   \dim(\mathrm{V})\leqslant\dim(\mathrm{B}')=\dim(\mathrm{B})\leqslant\dim(\mathrm{C})
 \]
 show that $\dim(\mathrm{C})=\dim(\mathrm{B})=\dim(\mathrm{B}')=\dim(\mathrm{B}'/\mathfrak{p}')=1$, and consequently $\mathfrak{p}'$ is a minimal prime ideal of $\mathrm{B}'$. We therefore obtain a contradiction once we prove that $\mathrm{B}'_{\mathfrak{p}'}$ is a field, or equivalently that $\mathrm{B}'$ is reduced.
-Since $\mathrm{C}$ is a finite-type $k$-algebra, its integral closure $\mathrm{C}_1$ is a finite $\mathrm{C}$-algebra (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection\,3, n\textsuperscript{o}\,2, th.~2). If $\mathrm{S}=\mathrm{C}-\mathfrak{n}$, then $\mathrm{B}_1=\mathrm{S}^{-1}\mathrm{C}_1$ is the integral closure of $\mathrm{B}$, hence a finite $\mathrm{B}$-algebra and therefore a one-dimensional semi-local Noetherian integral and integrally closed ring \sref[0]{0.16.1.5}. If $\mathfrak{m}_j$ ($1\leqslant j\leqslant h$) are its maximal ideals, the rings $(\mathrm{B}_1)_{\mathfrak{m}_j}$ are discrete valuation rings \sref[II]{II.7.1.6}, and the completion $\mathrm{B}'_1$ of $\mathrm{B}_1$ is the direct product of the completed discrete valuation rings $(\mathrm{B}_1)_{\mathfrak{m}_j}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \textsection\,2, n\textsuperscript{o}\,13, prop.~18). Thus $\mathrm{B}'_1$ is reduced; since the completion $\mathrm{B}'$ of $\mathrm{B}$ is a subring of $\mathrm{B}'_1$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection\,2, n\textsuperscript{o}\,5, cor.~3 of prop.~9), $\mathrm{B}'$ is reduced as well.
+Since $\mathrm{C}$ is a finite-type $k$-algebra, its integral closure $\mathrm{C}_1$ is a finite $\mathrm{C}$-algebra (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection\,3, n\textsuperscript{o}\,2, th.~2). If $\mathrm{S}=\mathrm{C}\setmin\mathfrak{n}$, then $\mathrm{B}_1=\mathrm{S}^{-1}\mathrm{C}_1$ is the integral closure of $\mathrm{B}$, hence a finite $\mathrm{B}$-algebra and therefore a one-dimensional semi-local Noetherian integral and integrally closed ring \sref[0]{0.16.1.5}. If $\mathfrak{m}_j$ ($1\leqslant j\leqslant h$) are its maximal ideals, the rings $(\mathrm{B}_1)_{\mathfrak{m}_j}$ are discrete valuation rings \sref[II]{II.7.1.6}, and the completion $\mathrm{B}'_1$ of $\mathrm{B}_1$ is the direct product of the completed discrete valuation rings $(\mathrm{B}_1)_{\mathfrak{m}_j}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \textsection\,2, n\textsuperscript{o}\,13, prop.~18). Thus $\mathrm{B}'_1$ is reduced; since the completion $\mathrm{B}'$ of $\mathrm{B}$ is a subring of $\mathrm{B}'_1$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection\,2, n\textsuperscript{o}\,5, cor.~3 of prop.~9), $\mathrm{B}'$ is reduced as well.
 \end{proof}
 
 \begin{corollary}[7.4.5]
@@ -1066,7 +1066,7 @@ Let $f={}^a\varphi:\Spec(\mathrm{B})\to\Spec(\mathrm{A})$, and suppose that $\bo
 \begin{proof}
 In other words, property $\boldsymbol{P}$ for the fibre over the closed point of $\Spec(\mathrm{A})$ entails the same property for all fibres of $f$; that is, $f$ is a $\boldsymbol{P}$-morphism \sref{IV.7.3.1}. We proceed in several steps.
 
-\emph{I) Reduction to the study of the local rings of the generic fibre.} Apply \sref{IV.7.3.16.2}. It suffices to show that, for every finite integral $\mathrm{A}$-algebra $\mathrm{A}'$ with field of fractions $\mathrm{K}'$, if $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$, then every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ satisfies $\boldsymbol{R}$. The ring $\mathrm{A}'$ (resp.\ $\mathrm{B}'$) is complete and semi-local, the latter because it is a finite $\mathrm{B}$-algebra, and is therefore a direct product of complete local rings. Since $\mathrm{A}'$ is integral it is local. Every maximal ideal $\mathfrak{n}'$ of $\mathrm{B}'$ lies over the maximal ideal $\mathfrak{n}$ of $\mathrm{B}$, hence over $\mathfrak{m}$, and its inverse image in $\mathrm{A}'$ is consequently the maximal ideal $\mathfrak{m}'$ of $\mathrm{A}'$. Every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ is a local ring of $\Spec(\mathrm{B}')$, and hence of one of the $\Spec(\mathrm{B}'_{\mathfrak{n}'})$ over the generic point of $\mathrm{A}'$. Thus it is enough to prove that the local rings of
+I) \emph{Reduction to the study of the local rings of the generic fibre.} Apply \sref{IV.7.3.16.2}. It suffices to show that, for every finite integral $\mathrm{A}$-algebra $\mathrm{A}'$ with field of fractions $\mathrm{K}'$, if $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$, then every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ satisfies $\boldsymbol{R}$. The ring $\mathrm{A}'$ (resp.\ $\mathrm{B}'$) is complete and semi-local, the latter because it is a finite $\mathrm{B}$-algebra, and is therefore a direct product of complete local rings. Since $\mathrm{A}'$ is integral it is local. Every maximal ideal $\mathfrak{n}'$ of $\mathrm{B}'$ lies over the maximal ideal $\mathfrak{n}$ of $\mathrm{B}$, hence over $\mathfrak{m}$, and its inverse image in $\mathrm{A}'$ is consequently the maximal ideal $\mathfrak{m}'$ of $\mathrm{A}'$. Every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ is a local ring of $\Spec(\mathrm{B}')$, and hence of one of the $\Spec(\mathrm{B}'_{\mathfrak{n}'})$ over the generic point of $\mathrm{A}'$. Thus it is enough to prove that the local rings of
 \[
   \Spec(\mathrm{B}'_{\mathfrak{n}'}\otimes_{\mathrm{A}'}\mathrm{K}')
 \]
@@ -1080,7 +1080,7 @@ are also local rings of $\Spec(\mathrm{B}\otimes_\mathrm{A}k'')$. The hypothesis
 \]
 We are thus reduced to the case where $\mathrm{A}$ is integral with field of fractions $\mathrm{K}$, and to proving that the local rings of $\Spec(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$ satisfy $\boldsymbol{R}$.
 
-\emph{II) The case $\dim(\mathrm{A})=1$.} Let $\mathrm{A}'$ be the integral closure of $\mathrm{A}$. By \sref[0]{0.23.1.6}, $\mathrm{A}'$ is a finite $\mathrm{A}$-algebra and a complete local ring. If $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$, then
+II) \emph{The case $\dim(\mathrm{A})=1$.} Let $\mathrm{A}'$ be the integral closure of $\mathrm{A}$. By \sref[0]{0.23.1.6}, $\mathrm{A}'$ is a finite $\mathrm{A}$-algebra and a complete local ring. If $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$, then
 \[
   \mathrm{B}\otimes_\mathrm{A}\mathrm{K}=\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}.
 \]
@@ -1090,7 +1090,7 @@ The same argument as in~I) shows that it suffices, for every maximal ideal $\mat
 \]
 is true, where $k'$ is the residue field of $\mathrm{A}'$. Since $\dim(\mathrm{A}')=1$ \sref[0]{0.16.1.5} and $\mathrm{A}'$ is integral and integrally closed, it is a complete discrete valuation ring. We may therefore suppose that $\mathrm{A}$ itself is a complete discrete valuation ring. If $u$ is a uniformizer of $\mathrm{A}$, then $u$ is $\mathrm{A}$-regular, and the flatness of $\mathrm{B}$ over $\mathrm{A}$ implies that $t=\varphi(u)$ is $\mathrm{B}$-regular and belongs to the maximal ideal of $\mathrm{B}$. The hypothesis on $\Spec(\mathrm{B}\otimes_\mathrm{A}k)$ implies in particular that $\boldsymbol{R}(\mathrm{B}/t\mathrm{B})$ is true; hence $\boldsymbol{R}(\mathrm{B})$ is true by $(\mathrm{R}_{\mathrm{IV}})$. Thus $\mathrm{U}_{\boldsymbol{R}}(\Spec(\mathrm{B}))$ contains the closed point. It is open by $(\mathrm{R}_{\mathrm{III}})$, and $\Spec(\mathrm{B})$ is the only open subset of itself containing its closed point. Consequently all local rings of $\Spec(\mathrm{B})$, and in particular those of $\Spec(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$, satisfy $\boldsymbol{R}$.
 
-\emph{III) The general case.} The case $\dim(\mathrm{A})=0$ is trivial, since then $\mathrm{A}=k$; we may therefore suppose that $\dim(\mathrm{A})\geqslant1$. By \sref{IV.6.12.7}, $\Spec(\mathrm{A})$ contains a non-empty open subset $\mathrm{V}$ all of whose points are regular. The intersection $\mathrm{V}'$ of $\mathrm{V}$ with the complement of the closed point of $\Spec(\mathrm{A})$ is non-empty and therefore contains the generic point. It suffices to prove that
+III) \emph{The general case.} The case $\dim(\mathrm{A})=0$ is trivial, since then $\mathrm{A}=k$; we may therefore suppose that $\dim(\mathrm{A})\geqslant1$. By \sref{IV.6.12.7}, $\Spec(\mathrm{A})$ contains a non-empty open subset $\mathrm{V}$ all of whose points are regular. The intersection $\mathrm{V}'$ of $\mathrm{V}$ with the complement of the closed point of $\Spec(\mathrm{A})$ is non-empty and therefore contains the generic point. It suffices to prove that
 \[
   f^{-1}(\mathrm{V}')\subset\mathrm{U}_{\boldsymbol{R}}(\Spec(\mathrm{B})).
 \]
@@ -1152,7 +1152,7 @@ is true. Then $\boldsymbol{P}(f^{-1}(x),\boldsymbol{k}(x))$ is true for every $x
 \begin{proof}
 We proceed in two steps.
 
-\emph{I) Reduction to the study of the local rings of the generic fibre.} Apply \sref{IV.7.3.16.2} once more. The only difference from part~I) of the proof of \sref{IV.7.5.1} is that $\mathrm{A}'$ is now only a semi-local integral ring, not necessarily local. Every maximal ideal $\mathfrak{n}'$ of $\mathrm{B}'$ lies above a maximal ideal $\mathfrak{m}'$ of $\mathrm{A}'$. Every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ is a local ring of $\Spec(\mathrm{B}')$, hence of one of the $\Spec(\mathrm{B}'_{\mathfrak{n}'})$ over the generic point of $\Spec(\mathrm{A}'_{\mathfrak{m}'})$. Thus it is enough to prove that the local rings of
+I) \emph{Reduction to the study of the local rings of the generic fibre.} Apply \sref{IV.7.3.16.2} once more. The only difference from part~I) of the proof of \sref{IV.7.5.1} is that $\mathrm{A}'$ is now only a semi-local integral ring, not necessarily local. Every maximal ideal $\mathfrak{n}'$ of $\mathrm{B}'$ lies above a maximal ideal $\mathfrak{m}'$ of $\mathrm{A}'$. Every local ring of $\Spec(\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{K}')$ is a local ring of $\Spec(\mathrm{B}')$, hence of one of the $\Spec(\mathrm{B}'_{\mathfrak{n}'})$ over the generic point of $\Spec(\mathrm{A}'_{\mathfrak{m}'})$. Thus it is enough to prove that the local rings of
 \[
   \Spec(\mathrm{B}'_{\mathfrak{n}'}\otimes_{\mathrm{A}'_{\mathfrak{m}'}}\mathrm{K}')
 \]
@@ -1168,7 +1168,7 @@ is true: indeed, the completion of $\mathrm{A}'_{\mathfrak{m}'}$ is one of the l
 \]
 Part~I) of the proof of \sref{IV.7.5.1} therefore proves the assertion. We may consequently suppose that $\mathrm{A}$ is integral and need only prove, for its field of fractions $\mathrm{K}$, that the local rings of $\Spec(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$ satisfy $\boldsymbol{R}$.
 
-\emph{II) Reduction to the case where $\mathrm{A}$ and $\mathrm{B}$ are complete.} Let $\xi$ be the generic point of $\Spec(\mathrm{A})$ and let $y\in f^{-1}(\xi)$. We must prove $\boldsymbol{R}(\sh{O}_y)$. By $(\mathrm{R}_{\mathrm{II}})$, it is enough to find a point $z\in\Spec(\widehat{\mathrm{B}})$ over $y$ such that $\boldsymbol{R}(\sh{O}_z)$ is true. The hypothesis on $\Spec(\widehat{\mathrm{B}}\otimes_{\widehat{\mathrm{A}}}k)$ and \sref{IV.7.5.1} imply that the morphism
+II) \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{B}$ are complete.} Let $\xi$ be the generic point of $\Spec(\mathrm{A})$ and let $y\in f^{-1}(\xi)$. We must prove $\boldsymbol{R}(\sh{O}_y)$. By $(\mathrm{R}_{\mathrm{II}})$, it is enough to find a point $z\in\Spec(\widehat{\mathrm{B}})$ over $y$ such that $\boldsymbol{R}(\sh{O}_z)$ is true. The hypothesis on $\Spec(\widehat{\mathrm{B}}\otimes_{\widehat{\mathrm{A}}}k)$ and \sref{IV.7.5.1} imply that the morphism
 \[
   \widehat{f}:\Spec(\widehat{\mathrm{B}})\to\Spec(\widehat{\mathrm{A}})
 \]
@@ -1182,7 +1182,7 @@ Consider the following properties $\boldsymbol{R}(\mathrm{C})$, where $\mathrm{C
   \item also denoted $(\mathrm{i}_n)$, $\operatorname{coprof}(\mathrm{C})\leqslant n$;
   \oldpage[IV-2]{206}
   \item also denoted $(\mathrm{ii}_n)$, $\mathrm{C}$ satisfies $(\mathrm{S}_n)$;
-  \item $\mathrm{C}$ is a Cohen--Macaulay ring;
+  \item $\mathrm{C}$ is a Cohen-Macaulay ring;
   \item $\mathrm{C}$ is a regular ring;
   \item also denoted $(\mathrm{v}_n)$, $\mathrm{C}$ is integral, integrally closed, and satisfies $(\mathrm{R}_n)$;
   \item $\mathrm{C}$ is integral and integrally closed;
@@ -1191,7 +1191,7 @@ Consider the following properties $\boldsymbol{R}(\mathrm{C})$, where $\mathrm{C
 \end{enumerate}
 All these properties satisfy $(\mathrm{R}_{\mathrm{III}})$, as was seen in \sref{IV.7.3.19},~(i). They also satisfy $(\mathrm{R}_{\mathrm{IV}})$. For~(i), this follows from \sref[0]{0.16.4.10},~(ii); for~(ii) and~(iii), from \sref{IV.5.12.4} and the fact that a complete Noetherian local ring is catenary \sref{IV.5.6.4}; for~(iv), it is the special case \sref[0]{0.17.1.8}; for~(vii), it follows from \sref{IV.3.4.5}, and for~(viii), from \sref{IV.3.4.6}; for~(vi), from \sref{IV.5.12.7} and the catenarity just recalled; and finally, for~(v), from the preceding facts and \sref{IV.5.12.5}.
 
-Theorem \sref{IV.7.5.1} is therefore applicable when $\boldsymbol{R}$ is any one of the above properties. We have also observed in \sref{IV.7.3.11} that properties~(i) to~(viii) satisfy $(\mathrm{R}_{\mathrm{II}})$, except that for~(vii) this follows from \sref{IV.2.1.14}. As for $(\mathrm{R}_{\mathrm{V}})$, if one takes $\boldsymbol{R}'=\boldsymbol{R}$, it reduces to condition $(\mathrm{R}'_{\mathrm{I}})$ of \sref{IV.7.3.11}; properties~(ii) to~(vi), and~(viii), satisfy this condition. For~(i), one may take for $\boldsymbol{R}'$ the property of being Cohen--Macaulay, by \sref{IV.6.3.2}. For~(vii), condition $(\mathrm{R}'_{\mathrm{I}})$ is not satisfied, as shown by \sref{IV.6.15.11},~(ii) or \sref{IV.6.5.5},~(ii). However, $(\mathrm{R}_{\mathrm{V}})$ is true if $\boldsymbol{R}'$ is the property of being regular: apply \sref{IV.7.5.1.1} with $\mathcal{C}$ the category of all Noetherian local rings and with $\boldsymbol{R}(\mathrm{C})$ the property of being integral; this is possible by \sref{IV.3.4.5}.
+Theorem \sref{IV.7.5.1} is therefore applicable when $\boldsymbol{R}$ is any one of the above properties. We have also observed in \sref{IV.7.3.11} that properties~(i) to~(viii) satisfy $(\mathrm{R}_{\mathrm{II}})$, except that for~(vii) this follows from \sref{IV.2.1.14}. As for $(\mathrm{R}_{\mathrm{V}})$, if one takes $\boldsymbol{R}'=\boldsymbol{R}$, it reduces to condition $(\mathrm{R}'_{\mathrm{I}})$ of \sref{IV.7.3.11}; properties~(ii) to~(vi), and~(viii), satisfy this condition. For~(i), one may take for $\boldsymbol{R}'$ the property of being Cohen-Macaulay, by \sref{IV.6.3.2}. For~(vii), condition $(\mathrm{R}'_{\mathrm{I}})$ is not satisfied, as shown by \sref{IV.6.15.11},~(ii) or \sref{IV.6.5.5},~(ii). However, $(\mathrm{R}_{\mathrm{V}})$ is true if $\boldsymbol{R}'$ is the property of being regular: apply \sref{IV.7.5.1.1} with $\mathcal{C}$ the category of all Noetherian local rings and with $\boldsymbol{R}(\mathrm{C})$ the property of being integral; this is possible by \sref{IV.3.4.5}.
 
 In particular, when $\boldsymbol{R}$ is any of properties~(i) to~(viii), the conclusion of \sref{IV.7.5.2} applies if the formal fibres of $\mathrm{A}$ are geometrically regular; see \sref{IV.7.8.2}.
 \end{examples}
@@ -1245,7 +1245,7 @@ Let $k$ be a field, and let $\mathrm{A}$ and $\mathrm{B}$ be complete Noetherian
 \end{proposition}
 
 \begin{proof}
-By \sref{IV.7.5.5},~(iii), each homomorphism $\mathrm{A}\to\mathrm{C}_j$ is local; by \sref{IV.7.5.5},~(ii), each $\mathrm{C}_j$ is flat over $\mathrm{A}$; and by \sref{IV.7.5.5},~(iv), its residue field is a finite extension of $\mathrm{A}/\mathfrak{m}$. Moreover,
+By \sref{IV.7.5.5},~(iii), each homomorphism $\mathrm{A}\to\mathrm{C}_j$ is \emph{local}; by \sref{IV.7.5.5},~(ii), each $\mathrm{C}_j$ is flat over $\mathrm{A}$; and by \sref{IV.7.5.5},~(iv), its residue field is a finite extension of $\mathrm{A}/\mathfrak{m}$. Moreover,
 \[
   \mathrm{C}/\mathfrak{m}\mathrm{C}
   =(\mathrm{A}/\mathfrak{m})\otimes_k\mathrm{B},
@@ -1374,9 +1374,9 @@ To show that $a)$ implies $a')$, it suffices to verify that the $\mathrm{L}_i$ a
 Therefore, by associativity of the tensor product,
 \[
   \widehat{\mathrm{B}}\otimes_\mathrm{B}\mathrm{K}'
-  =\widehat{\mathrm{B}'}\otimes_{\mathrm{B}'}\mathrm{K}'.
+  =\widehat{\mathrm{B}}'\otimes_{\mathrm{B}'}\mathrm{K}'.
 \]
-Now $\mathrm{B}'$ is a finite integral $\mathrm{A}$-algebra, so $\widehat{\mathrm{B}'}$ is reduced by $a)$. Since $\widehat{\mathrm{B}'}$ is flat over $\mathrm{B}'$, the nonzero elements of $\mathrm{B}'$ are $\widehat{\mathrm{B}'}$-regular; hence $\widehat{\mathrm{B}'}\otimes_{\mathrm{B}'}\mathrm{K}'$ identifies with a subring of the total ring of fractions of $\widehat{\mathrm{B}'}$, and is therefore reduced.
+Now $\mathrm{B}'$ is a finite integral $\mathrm{A}$-algebra, so $\widehat{\mathrm{B}'}$ is reduced by $a)$. Since $\widehat{\mathrm{B}'}$ is flat over $\mathrm{B}'$, the nonzero elements of $\mathrm{B}'$ are $\widehat{\mathrm{B}'}$-regular; hence $\widehat{\mathrm{B}}'\otimes_{\mathrm{B}'}\mathrm{K}'$ identifies with a subring of the total ring of fractions of $\widehat{\mathrm{B}'}$, and is therefore reduced.
 
 To see that $a')$ implies $a'')$, consider any point $x$ of $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, and let $\mathrm{Y}$ be the integral closed subprescheme of $\mathrm{X}$ having $\overline{\{x\}}$ as its underlying space. Then $\mathrm{Y}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}$ is an integral quotient ring of $\mathrm{A}$, and $\operatorname{Spec}(\widehat{\mathrm{B}})=\mathrm{Y}\times_\mathrm{X}\operatorname{Spec}(\widehat{\mathrm{A}})$. Thus the formal fibre of $\mathrm{A}$ at $x$ is the same as that of $\mathrm{B}$ at its generic point, namely $\operatorname{Spec}(\widehat{\mathrm{B}}\otimes_\mathrm{B}\mathrm{K})$. Its local rings are those of $\operatorname{Spec}(\widehat{\mathrm{B}})$ at the points of this fibre, so the hypothesis implies that $\widehat{\mathrm{B}}\otimes_\mathrm{B}\mathrm{K}$ is reduced; the remaining condition in $a')$ then says that it is a separable $\mathrm{K}$-algebra \sref{IV.4.6.1}.
 
@@ -1477,7 +1477,7 @@ Let us first show that $b)$ implies $c)$; every integral quotient ring of $\math
 
 \oldpage[IV-2]{213}
 
-Let us show secondly that, if $\mathrm{A}$ satisfies $c)$, so does every $\mathrm{A}$-algebra of finite type $\mathrm{B}$. In the first instance, for every prime ideal $\mathfrak{q}$ of $\mathrm{B}$, $\mathrm{B}_\mathfrak{q}$ is a local ring in $\mathrm{S}^{-1}\mathrm{B}$, where $\mathrm{S}=\mathrm{A}-\mathfrak{p}$, $\mathfrak{p}$ being the inverse image of $\mathfrak{q}$ in $\mathrm{A}$; as by hypothesis every integral quotient ring of $\mathrm{A}_\mathfrak{p}$ is a Japanese ring, so is every integral quotient ring of $\mathrm{B}_\mathfrak{q}$, since $\mathrm{S}^{-1}\mathrm{B}$ is an $\mathrm{A}_\mathfrak{p}$-algebra of finite type \sref{IV.7.6.5}. On the other hand, if $\mathrm{C}$ is an integral quotient ring of $\mathrm{B}$, with field of fractions $\mathrm{K}$, $\mathrm{K}'$ a finite radicial extension of $\mathrm{K}$ and $\mathrm{C}'$ a sub-$\mathrm{C}$-algebra finite of $\mathrm{K}'$, with field of fractions $\mathrm{K}'$, $\mathrm{C}'$ is an $\mathrm{A}$-algebra integral of finite type, and in virtue of \sref{IV.6.13.7}, the hypothesis $c)$ on $\mathrm{A}$ entails that the spectrum of $\mathrm{C}'$ contains a non-empty open part whose points are all normal; in other words, there is a $g'\neq 0$ in $\mathrm{C}'$ such that $\mathrm{C}'_{g'}$ is integrally closed, which proves our assertion.
+Let us show secondly that, if $\mathrm{A}$ satisfies $c)$, so does every $\mathrm{A}$-algebra of finite type $\mathrm{B}$. In the first instance, for every prime ideal $\mathfrak{q}$ of $\mathrm{B}$, $\mathrm{B}_\mathfrak{q}$ is a local ring in $\mathrm{S}^{-1}\mathrm{B}$, where $\mathrm{S}=\mathrm{A}\setmin\mathfrak{p}$, $\mathfrak{p}$ being the inverse image of $\mathfrak{q}$ in $\mathrm{A}$; as by hypothesis every integral quotient ring of $\mathrm{A}_\mathfrak{p}$ is a Japanese ring, so is every integral quotient ring of $\mathrm{B}_\mathfrak{q}$, since $\mathrm{S}^{-1}\mathrm{B}$ is an $\mathrm{A}_\mathfrak{p}$-algebra of finite type \sref{IV.7.6.5}. On the other hand, if $\mathrm{C}$ is an integral quotient ring of $\mathrm{B}$, with field of fractions $\mathrm{K}$, $\mathrm{K}'$ a finite radicial extension of $\mathrm{K}$ and $\mathrm{C}'$ a sub-$\mathrm{C}$-algebra finite of $\mathrm{K}'$, with field of fractions $\mathrm{K}'$, $\mathrm{C}'$ is an $\mathrm{A}$-algebra integral of finite type, and in virtue of \sref{IV.6.13.7}, the hypothesis $c)$ on $\mathrm{A}$ entails that the spectrum of $\mathrm{C}'$ contains a non-empty open part whose points are all normal; in other words, there is a $g'\neq 0$ in $\mathrm{C}'$ such that $\mathrm{C}'_{g'}$ is integrally closed, which proves our assertion.
 
 This result shows that, to prove the equivalence of $a)$, $b)$ and $c)$, it suffices to show that $c)$ implies $b)$, and even that for every integral quotient ring $\mathrm{B}$ of $\mathrm{A}$, with field of fractions $\mathrm{K}$, the integral closure $\mathrm{B}'$ of $\mathrm{B}$ is a $\mathrm{B}$-module of finite type. Now, condition $c)$ implies that there exists $f\neq0$ in $\mathrm{B}$ such that $\mathrm{B}_f$ is integrally closed, and thus condition~(i) of \sref{IV.6.13.6} has been verified for $\mathrm{B}$. Condition~(ii) of \sref{IV.6.13.6} is also verified for $\mathrm{B}$: for every maximal ideal $\mathfrak{q}$ of $\mathrm{B}$, $\mathrm{B}_\mathfrak{q}$ is a quotient of a local ring $\mathrm{A}_\mathfrak{p}$, where $\mathfrak{p}$ is maximal in $\mathrm{A}$; since every integral quotient ring of $\mathrm{A}_\mathfrak{p}$ is a Japanese ring by hypothesis, so is $\mathrm{B}_\mathfrak{q}$. Moreover, for every prime ideal $\mathfrak{r}$ of $\mathrm{B}$, $\mathrm{B}_\mathfrak{r}$ is a ring of fractions of some $\mathrm{B}_\mathfrak{q}$, where $\mathfrak{q}$ is a maximal ideal of $\mathrm{B}$, and is therefore again a Japanese ring. This proves the assertion.
 
@@ -1571,7 +1571,7 @@ In particular, if $\mathfrak{J}$ is contained in the radical of $\mathrm{A}$ (fo
 
 (vii) Let $\mathrm{A}$ be a reduced excellent local ring. Then the completion $\widehat{\mathrm{A}}$ is reduced, the integral closure $\mathrm{A}'$ of $\mathrm{A}$ in its total ring of fractions is a finite $\mathrm{A}$-algebra (hence a semi-local Noetherian ring), and the integral closure of $\widehat{\mathrm{A}}$ in its total ring of fractions is isomorphic to the completion $\widehat{\mathrm{A}}'$ of $\mathrm{A}'$. Furthermore, there is a bijective canonical correspondence between the set of maximal points of $\operatorname{Spec}(\widehat{\mathrm{A}})$ (in other words, the set of minimal prime ideals of $\widehat{\mathrm{A}}$) and the set of closed points of $\operatorname{Spec}(\mathrm{A}')$ (in other words, the set of maximal ideals of $\mathrm{A}'$). For the local ring $\mathrm{A}$ to be unibranch, it is necessary and sufficient that $\widehat{\mathrm{A}}$ be integral; for $\mathrm{A}$ to be geometrically unibranch, it is necessary and sufficient that $\widehat{\mathrm{A}}$ be.
 
-(viii) If $\mathrm{A}$ is an excellent integral ring, the integral closure of $\mathrm{A}$ is the intersection of the integral closures of the $\mathrm{A}_\mathfrak{p}$, where $\mathfrak{p}$ ranges over the set of prime ideals of $\mathrm{A}$ of height~$1$.
+\textup{(viii)} If $\mathrm{A}$ is an excellent integral ring, the integral closure of $\mathrm{A}$ is the intersection of the integral closures of the $\mathrm{A}_\mathfrak{p}$, where $\mathfrak{p}$ ranges over the set of prime ideals of $\mathrm{A}$ of height~$1$.
 
 (ix) Let $\mathrm{A}$ be an excellent ring, $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, $\mathrm{Z}$ a closed subset of $\mathrm{X}$, $\mathrm{U}=\mathrm{X}-\mathrm{Z}$, $i:\mathrm{U}\to\mathrm{X}$ the canonical injection, $\sh{F}$ a coherent $\sh{O}_\mathrm{U}$-Module. For the $\sh{O}_\mathrm{X}$-Module $i_*(\sh{F})$ to be coherent, it is necessary and sufficient that, for every $x\in\operatorname{Ass}(\sh{F})$, one has $\operatorname{codim}(\overline{\{x\}}\cap\mathrm{Z},\overline{\{x\}})\geqslant 2$. In particular, if $\mathrm{A}$ is integral and $\sh{F}$ nonzero and torsion-free, for $i_*(\sh{F})$ to be coherent, it is necessary and sufficient that $\operatorname{codim}(\mathrm{Z},\mathrm{X})\geqslant 2$.
 
@@ -1621,7 +1621,7 @@ On the other hand, the complement of the closed point in $\operatorname{Spec}(\m
 \]
 \end{env}
 
-Indeed, Remark~(i) shows that, under only the hypotheses (ii) and (iii) of \sref{IV.7.8.2}, the analogues of the properties (ii), (v), (vi) and (vii) of \sref{IV.7.8.3} remain valid. It follows first from (vi) and (ii) that the $\mathrm{A}'_i$ satisfy \sref{IV.7.8.2},~(ii) and (iii); then (v) shows that the completions $((\mathrm{A}'_i)_{\mathfrak{m}'})^\wedge$ are integral (and integrally closed). Let now $\mathfrak{m}$ be an arbitrary maximal ideal of $\mathrm{A}$. For every $i$ such that $\mathfrak{p}_i\subset\mathfrak{m}$, the integral closure of $\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m}$ is a finite $(\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m})$-algebra by (vi), hence is semi-local, and its local components are of the form $(\mathrm{A}'_i)_{\mathfrak{m}'}$, where $\mathfrak{m}'$ is a prime ideal (necessarily maximal) of $\mathrm{A}'_i$ above $\mathfrak{m}/\mathfrak{p}_i$. It then follows from (vii), from what precedes, and from \sref{IV.7.8.4.1} that the quotients of the completion $(\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m})^\wedge$ by its minimal prime ideals all have the same dimension, equal to $\dim(\mathrm{A}_\mathfrak{m})$. Consequently, by \sref{IV.7.1.9} and \sref{IV.7.1.8},~$b)$), $\mathrm{A}_\mathfrak{m}$ is formally catenary, and \emph{a fortiori} universally catenary by \sref{IV.7.1.11}. The same is therefore true of $\mathrm{A}_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $\mathrm{A}$ by \sref{IV.5.6.3},~(i), hence also of $\mathrm{A}$.
+Indeed, Remark~(i) shows that, under only the hypotheses (ii) and (iii) of \sref{IV.7.8.2}, the analogues of the properties (ii), (v), (vi) and (vii) of \sref{IV.7.8.3} remain valid. It follows first from (vi) and (ii) that the $\mathrm{A}'_i$ satisfy \sref{IV.7.8.2},~(ii) and (iii); then (v) shows that the completions $((\mathrm{A}'_i)_{\mathfrak{m}'})^{\widehat{\,}}$ are integral (and integrally closed). Let now $\mathfrak{m}$ be an arbitrary maximal ideal of $\mathrm{A}$. For every $i$ such that $\mathfrak{p}_i\subset\mathfrak{m}$, the integral closure of $\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m}$ is a finite $(\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m})$-algebra by (vi), hence is semi-local, and its local components are of the form $(\mathrm{A}'_i)_{\mathfrak{m}'}$, where $\mathfrak{m}'$ is a prime ideal (necessarily maximal) of $\mathrm{A}'_i$ above $\mathfrak{m}/\mathfrak{p}_i$. It then follows from (vii), from what precedes, and from \sref{IV.7.8.4.1} that the quotients of the completion $(\mathrm{A}_\mathfrak{m}/\mathfrak{p}_i\mathrm{A}_\mathfrak{m})^{\widehat{\,}}$ by its minimal prime ideals all have the same dimension, equal to $\dim(\mathrm{A}_\mathfrak{m})$. Consequently, by \sref{IV.7.1.9} and \sref{IV.7.1.8},~$b)$), $\mathrm{A}_\mathfrak{m}$ is formally catenary, and \emph{a fortiori} universally catenary by \sref{IV.7.1.11}. The same is therefore true of $\mathrm{A}_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $\mathrm{A}$ by \sref{IV.5.6.3},~(i), hence also of $\mathrm{A}$.
 
 In particular, if $\mathrm{A}$ is normal, or more generally if $\mathrm{A}_\mathfrak{m}$ is unibranch for every maximal ideal $\mathfrak{m}$ of $\mathrm{A}$, the condition (i$'$) is always satisfied, since $\mathfrak{m}$ can contain only a single prime ideal $\mathfrak{p}_i$ \sref[0]{0.16.1.5}; one can then omit (i) from the definition \sref{IV.7.8.2}. More particularly, if $\mathrm{A}$ is a Noetherian \emph{local unibranch ring}, it is excellent if and only if its formal fibres are geometrically regular.
 
@@ -1632,7 +1632,7 @@ In particular, if $\mathrm{A}$ is normal, or more generally if $\mathrm{A}_\math
 
 \begin{env}[7.8.5]
 \label{IV.7.8.5}
-One says that a locally Noetherian prescheme $\mathrm{X}$ is \emph{excellent} if for some covering $(\mathrm{U}_\alpha)$ of $\mathrm{X}$ by affine opens, each of the rings $\mathrm{A}_\alpha$ of the $\mathrm{U}_\alpha$ is excellent; this property is then true for \emph{every} covering $(\mathrm{U}_\alpha)$ of $\mathrm{X}$ by affine opens.
+One says that a locally Noetherian prescheme $\mathrm{X}$ is \emph{excellent} if for some covering $(\mathrm{U}_\alpha)$ of $\mathrm{X}$ by affine opens, each of the rings $\mathrm{A}_\alpha$ of the $\mathrm{U}_\alpha$ is \emph{excellent}; this property is then true for \emph{every} covering $(\mathrm{U}_\alpha)$ of $\mathrm{X}$ by affine opens.
 \end{env}
 
 \begin{proposition}[7.8.6]
@@ -1663,7 +1663,7 @@ Given a \emph{locally Noetherian reduced} prescheme $\mathrm{X}$, one calls a \e
 
 \begin{env}[7.9.2]
 \label{IV.7.9.2}
-It is clear that if one can resolve $\mathrm{X}$, one can also resolve every prescheme induced on an \emph{open subset} of $\mathrm{X}$ and every local prescheme $\operatorname{Spec}(\sh{O}_x)$ of $\mathrm{X}$ (\textbf{II}, $5.4.2$). On the other hand, if one can resolve $\mathrm{X}$, it is clear that there exists in $\mathrm{X}$ an open subset \emph{everywhere} dense contained in $\operatorname{Reg}(\mathrm{X})$. These remarks show immediately that if, for every closed \emph{integral} sub-prescheme $\mathrm{Y}$ of $\mathrm{X}$ and every $\mathrm{Y}$-prescheme $\mathrm{Y}'$ \emph{integral, finite} and \emph{radicial} over $\mathrm{Y}$, one can resolve $\mathrm{Y}'$, then the affine opens of $\mathrm{X}$ \emph{satisfy condition} (iii) of \sref{IV.7.8.2}.
+It is clear that if one can resolve $\mathrm{X}$, one can also resolve every prescheme induced on an \emph{open subset} of $\mathrm{X}$ and every local prescheme $\operatorname{Spec}(\sh{O}_x)$ of $\mathrm{X}$ (\textbf{II}, $5.4.2$). On the other hand, if one can resolve $\mathrm{X}$, it is clear that there exists in $\mathrm{X}$ an open subset \emph{everywhere dense} contained in $\operatorname{Reg}(\mathrm{X})$. These remarks show immediately that if, for every closed \emph{integral} sub-prescheme $\mathrm{Y}$ of $\mathrm{X}$ and every $\mathrm{Y}$-prescheme $\mathrm{Y}'$ \emph{integral, finite} and \emph{radicial} over $\mathrm{Y}$, one can resolve $\mathrm{Y}'$, then the affine opens of $\mathrm{X}$ \emph{satisfy condition} (iii) of \sref{IV.7.8.2}.
 
 On the other hand, for local schemes, one has the following proposition:
 \end{env}
@@ -1836,24 +1836,24 @@ is \emph{geometrically regular}, is \emph{stable under generization}. We do not 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
 
-\textbf{[33]} M.~\textsc{Nagata}, ``Note on a chain condition for prime
-ideals,'' \emph{Mem. Coll. Sci. Kyoto}, vol.~32 (1959), pp.~85--90.
+[33] M.~\textsc{Nagata}, ``Note on a chain condition for prime
+ideals,'' \emph{Mem. Coll. Sci. Kyoto}, vol.~32 (1959), pp.~85-90.
 
-\textbf{[34]} H.~\textsc{Hironaka}, forthcoming article on \emph{Projective
+[34] H.~\textsc{Hironaka}, forthcoming article on \emph{Projective
 morphisms}.
 
-\textbf{[35]} H.~\textsc{Hironaka}, ``Resolution of singularities of an
+[35] H.~\textsc{Hironaka}, ``Resolution of singularities of an
 algebraic variety over a field of characteristic zero,'' \emph{Ann. of Math.},
-vol.~79 (1964), pp.~109--326.
+vol.~79 (1964), pp.~109-326.
 
-\textbf{[36]} S.~\textsc{Abhyankar}, ``Local uniformization on algebraic
+[36] S.~\textsc{Abhyankar}, ``Local uniformization on algebraic
 surfaces over ground fields of characteristic $p\ne0$,'' \emph{Ann. of
-Math.}, vol.~63 (1956), pp.~491--526.
+Math.}, vol.~63 (1956), pp.~491-526.
 
-\textbf{[37]} H.~\textsc{Cartan}, \emph{Séminaire de l'École Normale
-Supérieure}, 13th year (1960--61).
+[37] H.~\textsc{Cartan}, Séminaire de l'École Normale
+Supérieure, 13th year (1960-61).
 
-\textbf{[38]} J.-P.~\textsc{Serre}, \emph{Groupes algébriques et corps de
+[38] J.-P.~\textsc{Serre}, \emph{Groupes algébriques et corps de
 classes}, Paris (Hermann), 1959.
 
 \endgroup
@@ -1873,7 +1873,7 @@ $\mathfrak S(X)$ ($X$ a prescheme): 2.2.15 and 4.8.1.
 
 $\operatorname{Ass}(\mathscr F)$ ($\mathscr F$ an $\mathcal O_X$-Module): 3.1.1.
 
-$\operatorname{deg.tr.}_K L$ ($L$ an extension of the field $K$): 4.1.
+$\operatorname{deg.tr}_K L$ ($L$ an extension of the field $K$): 4.1.
 
 $\lambda_x(\mathscr F)$ ($\mathscr F$ an $\mathcal O_X$-Module, $x$ a maximal
 point of $\operatorname{Supp}(\mathscr F)$): 4.7.5.
@@ -2109,7 +2109,7 @@ with a property $R$ of Noetherian local rings}{7.3.10}
 \small
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1.5pt}
-\newcommand{\EGAIVtwoContentsLineEN}[3]{\textbf{#1}\quad #2\dotfill #3\par}
+\newcommand{\EGAIVtwoContentsLineEN}[3]{#1\quad #2\dotfill #3\par}
 
 \EGAIVtwoContentsLineEN{Chapter IV.}{\textbf{Local study of schemes and
 morphisms of schemes} \emph{(continued)}}{5}
@@ -2156,7 +2156,7 @@ morphisms of schemes} \emph{(continued)}}{5}
 \EGAIVtwoContentsLineEN{5.8.}{Regular preschemes and property $(R_k)$. Serre's criterion for normality}{107}
 \EGAIVtwoContentsLineEN{5.9.}{$Z$-pure and $Z$-closed Modules}{109}
 \EGAIVtwoContentsLineEN{5.10.}{Property $(S_2)$ and $Z$-closure}{114}
-\EGAIVtwoContentsLineEN{5.11.}{Coherence criteria for the Modules $\mathcal H^0_{X/Z}(\mathscr F)$}{122}
+\EGAIVtwoContentsLineEN{5.11.}{Coherence criteria for the Modules $\mathscr H^0_{X/Z}(\mathscr F)$}{122}
 \EGAIVtwoContentsLineEN{5.12.}{Relations between the properties of a Noetherian local ring $A$ and of a quotient ring $A/tA$}{126}
 \EGAIVtwoContentsLineEN{5.13.}{Permanence properties under passage to the inductive limit}{131}
 

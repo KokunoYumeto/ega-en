@@ -8,7 +8,7 @@
 \label{IV.15.1.1}
 \oldpage[IV-3]{223}
 Let $\mathrm{Y}$ be a locally Noetherian irreducible prescheme, with generic point $\eta$, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $y$ a point of $\mathrm{Y}$, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-Module;
-we set $\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\mathbf{k}(y)$ (sheaf of modules on the fibre $f^{-1}(y)$).
+we set $\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\boldsymbol{k}(y)$ (sheaf of modules on the fibre $f^{-1}(y)$).
 Let $z$ be the generic point of an irreducible component of $\operatorname{Supp}(\sh{F}_y)$, and let $\mathrm{X}_i$ ($1\leqslant i\leqslant n$) be those of the reduced closed sub-preschemes of $\mathrm{X}$ whose underlying space is an irreducible component of $\operatorname{Supp}(\sh{F})$ containing $z$, and which are such that the restriction $\mathrm{X}_i\to\mathrm{Y}$ of $f$ is a universally open morphism at the point $z$; let $z_i$ be the generic point of $\mathrm{X}_i$ ($1\leqslant i\leqslant n$).
 If $\lambda_x(\sh{F}_y)$ (resp.~$\lambda_t(\sh{F}_\eta)$) denotes the geometric length of $\sh{F}_y$ at a point $x\in f^{-1}(y)$ (resp.~that of $\sh{F}_\eta$ at a point $t\in f^{-1}(\eta)$) \sref{IV.4.7.5}, then we have
 \[
@@ -27,7 +27,7 @@ If furthermore we suppose the ring $\sh{O}_y$ regular, then we have
 \begin{proof}
 \label{IV.15.1.1-proof}
 \oldpage[IV-3]{224}
-The fibres $f^{-1}(y')$ of $f$ (for all $y'\in\mathrm{Y}$) do not change when we replace $f$ by $f_\mathrm{red}$, so we can suppose that $\mathrm{X}$ and $\mathrm{Y}$ are reduced \sref{IV.2.4.3},~(vi), and hence $\mathrm{Y}$ integral; we will set $\mathrm{K}=\mathbf{k}(\eta)$.
+The fibres $f^{-1}(y')$ of $f$ (for all $y'\in\mathrm{Y}$) do not change when we replace $f$ by $f_\mathrm{red}$, so we can suppose that $\mathrm{X}$ and $\mathrm{Y}$ are reduced \sref{IV.2.4.3},~(vi), and hence $\mathrm{Y}$ integral; we will set $\mathrm{K}=\boldsymbol{k}(\eta)$.
 We can furthermore replace $f$ by the restriction $\operatorname{Supp}(\sh{F})\to\mathrm{Y}$ of $f$ to the reduced closed sub-prescheme of $\mathrm{X}$ having $\operatorname{Supp}(\sh{F})$ as underlying space, and hence restrict to the case where $\mathrm{X}=\operatorname{Supp}(\sh{F})$.
 Finally, if $y=\eta$, there is only a single irreducible component $\mathrm{X}_i$ of $\mathrm{X}$ containing $z$ \sref[0]{0.2.1.8}, and we have $z_i=z$, which renders \sref{IV.15.1.1.1} and \sref{IV.15.1.1.2} trivial (without hypotheses on $f$).
 We can thus restrict to the case $y\neq\eta$; it follows then from the hypothesis and from \sref{IV.1.10.3} that the $z_i$ belong to $f^{-1}(\eta)$, so the second members of \sref{IV.15.1.1.1} and \sref{IV.15.1.1.2} are well-defined.
@@ -40,8 +40,8 @@ If $z_i'$ denotes the unique point of $f^{-1}(\eta)\otimes_\mathrm{K}\mathrm{K}'
   \lambda_{z_i}(\sh{F}_\eta)=\lambda_{z_i'}(\sh{F}_\eta\otimes_\mathrm{K}\mathrm{K}')=\operatorname{length}((\sh{F}_\eta\otimes_\mathrm{K}\mathrm{K}')_{z_i'}).
 \]
 
-Let $\mathrm{V}$ be a discrete valuation ring, with field of fractions $\mathrm{K}'$, dominating $\sh{O}_y$ \sref[II]{II.7.1.7}; set $\mathrm{Y}'=\operatorname{Spec}(\mathrm{V})$, $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $\sh{F}'=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$; if $g:\mathrm{Y}'\to\mathrm{Y}$ is the structural morphism, $\eta'$ the generic point of $\mathrm{Y}'$ and $y'$ its closed point, then we have $g(y')=y$, $g(\eta')=\eta$; the morphism $\operatorname{Spec}(\mathbf{k}(y'))\to\operatorname{Spec}(\mathbf{k}(y))$ being faithfully flat, it is the same for the projection $g':f'^{-1}(y')\to f^{-1}(y)$ \sref{IV.2.2.13}, and hence \sref{IV.2.3.4}, there is a generic point $z'$ of an irreducible component of $f'^{-1}(y')$ such that $g'(z')=z$.
-By construction, we have $\mathbf{k}(\eta')=\mathrm{K}'$, hence $f'^{-1}(\eta')=f^{-1}(\eta)\otimes_\mathrm{K}\mathrm{K}'$; on the other hand, if we set $\mathrm{X}_i'=\mathrm{X}_i\times_\mathrm{Y}\mathrm{Y}'$, the restriction $\mathrm{X}_i'\to\mathrm{Y}'$ of $f'$ is a universally open morphism at the point $z'$, and hence \sref{IV.1.10.3} there exists a point $z_i''\in f'^{-1}(\eta')$ which is a generization of $z'$, and one can evidently suppose that $z_i''$ is the generic point of an irreducible component of $\mathrm{X}_i'\cap f'^{-1}(\eta')$; as the projection of $\mathrm{X}_i'\cap f'^{-1}(\eta')$ in $f^{-1}(\eta)$ is $\mathrm{Z}_i$, we have $z_i''=z_i'$.
+Let $\mathrm{V}$ be a discrete valuation ring, with field of fractions $\mathrm{K}'$, dominating $\sh{O}_y$ \sref[II]{II.7.1.7}; set $\mathrm{Y}'=\operatorname{Spec}(\mathrm{V})$, $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $\sh{F}'=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$; if $g:\mathrm{Y}'\to\mathrm{Y}$ is the structural morphism, $\eta'$ the generic point of $\mathrm{Y}'$ and $y'$ its closed point, then we have $g(y')=y$, $g(\eta')=\eta$; the morphism $\operatorname{Spec}(\boldsymbol{k}(y'))\to\operatorname{Spec}(\boldsymbol{k}(y))$ being faithfully flat, it is the same for the projection $g':f'^{-1}(y')\to f^{-1}(y)$ \sref{IV.2.2.13}, and hence \sref{IV.2.3.4}, there is a generic point $z'$ of an irreducible component of $f'^{-1}(y')$ such that $g'(z')=z$.
+By construction, we have $\boldsymbol{k}(\eta')=\mathrm{K}'$, hence $f'^{-1}(\eta')=f^{-1}(\eta)\otimes_\mathrm{K}\mathrm{K}'$; on the other hand, if we set $\mathrm{X}_i'=\mathrm{X}_i\times_\mathrm{Y}\mathrm{Y}'$, the restriction $\mathrm{X}_i'\to\mathrm{Y}'$ of $f'$ is a universally open morphism at the point $z'$, and hence \sref{IV.1.10.3} there exists a point $z_i''\in f'^{-1}(\eta')$ which is a generization of $z'$, and one can evidently suppose that $z_i''$ is the generic point of an irreducible component of $\mathrm{X}_i'\cap f'^{-1}(\eta')$; as the projection of $\mathrm{X}_i'\cap f'^{-1}(\eta')$ in $f^{-1}(\eta)$ is $\mathrm{Z}_i$, we have $z_i''=z_i'$.
 By virtue of \sref{IV.4.7.9} and \sref{IV.4.7.5}, we have
 \[
 \tag{15.1.1.4}
@@ -65,12 +65,12 @@ There exists a discrete valuation ring $\mathrm{V}$ dominating $\mathrm{A}$, hav
 
 \oldpage[IV-3]{225}
 Set $\mathrm{S}=\operatorname{Spec}(\mathrm{A})$, and consider the $\mathrm{S}$-scheme $\mathrm{P}$ obtained by blowing up the closed point $s$ of $\mathrm{S}$ \sref[II]{II.8.1.3}; if $\mathfrak{m}$ is the maximal ideal of $\mathrm{A}$, we have by definition $\mathrm{P}=\operatorname{Proj}(\mathrm{B})$, where $\mathrm{B}$ is the $\mathrm{A}$-algebra graded by $\bigoplus_{n\geqslant 0}\mathfrak{m}^n$.
-If $h:\mathrm{P}\to\mathrm{S}$ is the structural morphism, the fibre $h^{-1}(s)$ is isomorphic to $\operatorname{Proj}(\mathrm{B}\otimes_\mathrm{A} k)$ \sref[II]{II.2.8.10}, and by definition $\mathrm{B}\otimes_\mathrm{A} k$ is the $k$-algebra graded by $\bigoplus_{n\geqslant 0}\mathfrak{m}^n/\mathfrak{m}^{n+1}$; but as $\mathrm{A}$ is regular, this algebra is isomorphic to a polynomial algebra $k[t_1,\ldots,t_e]$ ($t_i$ indeterminates) \sref[0]{0.17.1.1} and it follows that $h^{-1}(s)$ is isomorphic to $\mathbf{P}_k^{e-1}$.
-Let $\zeta$ be the generic point of $h^{-1}(s)$; if $t_i'$ ($1\leqslant i\leqslant e$) are the elements of $\mathfrak{m}$ whose classes $\bmod\mathfrak{m}^2$ are the $t_i$, $\mathrm{B}_{(t_e')}$ is the ring of an affine open neighbourhood of $\zeta$ in $\mathrm{P}$, and we have $\mathbf{k}(\zeta)=k(t_1,\ldots,t_{e-1})$; on the other hand, as $\mathrm{A}$ is integrally closed, one easily verifies that $\mathrm{B}$ is as well (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S\,1, no~8, cor.~1 of prop.~21), so $\mathrm{B}_{(t_e')}$ is also integrally closed, and hence so is the local ring $\sh{O}_{\mathrm{P},\zeta}$.
-Finally, as $\mathrm{A}=\sh{O}_s$ is regular, hence a universally catenary ring \sref{IV.5.6.4}, we have, by virtue of \sref{IV.5.6.5}, $\dim(\sh{O}_{\mathrm{P},\zeta})=\dim(\sh{O}_s)-(e-1)$, since $h$ is a birational morphism, $\dim(h^{-1}(s))=e-1$, and the local ring of the fibre $h^{-1}(s)$ at its generic point $\zeta$ is of dimension $0$.
+If $h:\mathrm{P}\to\mathrm{S}$ is the structural morphism, the fibre $h^{-1}(s)$ is isomorphic to $\operatorname{Proj}(\mathrm{B}\otimes_\mathrm{A} k)$ \sref[II]{II.2.8.10}, and by definition $\mathrm{B}\otimes_\mathrm{A} k$ is the $k$-algebra graded by $\bigoplus_{n\geqslant 0}\mathfrak{m}^n/\mathfrak{m}^{n+1}$; but as $\mathrm{A}$ is regular, this algebra is isomorphic to a polynomial algebra $k[t_1,\ldots,t_e]$ ($t_i$ indeterminates) \sref[0]{0.17.1.1} and it follows that $h^{-1}(s)$ is isomorphic to $\boldsymbol{P}_k^{e-1}$.
+Let $\zeta$ be the generic point of $h^{-1}(s)$; if $t_i'$ ($1\leqslant i\leqslant e$) are the elements of $\mathfrak{m}$ whose classes $\bmod\mathfrak{m}^2$ are the $t_i$, $\mathrm{B}_{(t_e')}$ is the ring of an affine open neighbourhood of $\zeta$ in $\mathrm{P}$, and we have $\boldsymbol{k}(\zeta)=k(t_1,\ldots,t_{e-1})$; on the other hand, as $\mathrm{A}$ is integrally closed, one easily verifies that $\mathrm{B}$ is as well (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S\,1, no~8, cor.~1 of prop.~21), so $\mathrm{B}_{(t_e')}$ is also integrally closed, and hence so is the local ring $\sh{O}_{\mathrm{P},\zeta}$.
+Finally, as $\mathrm{A}=\sh{O}_s$ is regular, hence a universally catenary ring \sref{IV.5.6.4}, we have, by virtue of \sref{IV.5.6.5}, $\dim(\sh{O}_{\mathrm{P},\zeta})=\dim(\sh{O}_s)\setmin(e\setmin 1)$, since $h$ is a birational morphism, $\dim(h^{-1}(s))=e\setmin 1$, and the local ring of the fibre $h^{-1}(s)$ at its generic point $\zeta$ is of dimension $0$.
 But $\dim(\sh{O}_s)=e$, hence $\dim(\sh{O}_{\mathrm{P},\zeta})=1$, and $\sh{O}_{\mathrm{P},\zeta}=\mathrm{V}$ is a discrete valuation ring, Noetherian, of dimension $1$ and integrally closed \sref[II]{II.7.1.6}; it clearly answers the question.
 
-This lemma being established, one can resume the reasoning for the inequality \sref{IV.15.1.1.1} with $\mathrm{Y}'=\operatorname{Spec}(\mathrm{V})$; this time $\mathbf{k}(y')$ is a \emph{separable} extension of $\mathbf{k}(y)$, and by \sref{IV.4.7.9}, we have $\operatorname{length}((\sh{F}_y)_z)=\operatorname{length}((\sh{F}_{y'}')_{z'})$; as furthermore $f'^{-1}(\eta')=f^{-1}(\eta)$ and $\sh{F}_{\eta'}'=\sh{F}_\eta$, one is again reduced to proving the inequality \sref{IV.15.1.1.5}.
+This lemma being established, one can resume the reasoning for the inequality \sref{IV.15.1.1.1} with $\mathrm{Y}'=\operatorname{Spec}(\mathrm{V})$; this time $\boldsymbol{k}(y')$ is a \emph{separable} extension of $\boldsymbol{k}(y)$, and by \sref{IV.4.7.9}, we have $\operatorname{length}((\sh{F}_y)_z)=\operatorname{length}((\sh{F}_{y'}')_{z'})$; as furthermore $f'^{-1}(\eta')=f^{-1}(\eta)$ and $\sh{F}_{\eta'}'=\sh{F}_\eta$, one is again reduced to proving the inequality \sref{IV.15.1.1.5}.
 Now, if $t$ is a uniformiser of $\sh{O}_{y'}$, $f'^{-1}(y')$ is the closed sub-prescheme of $\mathrm{X}'$ defined by the ideal $t\sh{O}_{\mathrm{X}'}$; on the other hand, we have $\sh{F}_{y'}'=\sh{F}'/t\sh{F}'$; one also verifies immediately \sref[I]{I.9.1.12} that $(\sh{F}_\eta')_{z_i'}=\sh{F}_{z_i'}'$; the inequality to prove \sref{IV.15.1.1.5} is thus nothing but a particular case of \sref{IV.3.4.1.1}.
 \end{proof}
 
@@ -85,7 +85,7 @@ This follows immediately from \sref{IV.15.1.1}, noting that one has necessarily,
 \begin{corollary}[15.1.3]
 \label{IV.15.1.3}
 Let $\mathrm{Y}$ be an irreducible locally Noetherian prescheme of generic point $\eta$, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module of support $\mathrm{X}$, $x$ a point of $\mathrm{X}$, $y=f(x)$.
-Suppose that: $1^\circ$~$x$ belongs to a single irreducible component $\mathrm{Z}$ of $f^{-1}(y)$; $2^\circ$~$\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\mathbf{k}(y)$ is geometrically reduced over $\mathbf{k}(y)$, in other words, if $z$ is the generic point of $\mathrm{Z}$, $\lambda_z(\sh{F}_y)=1$ (resp.~$\sh{O}_y$ is regular and $\operatorname{length}((\sh{F}_y)_z)=1$).
+Suppose that: $1^\circ$~$x$ belongs to a single irreducible component $\mathrm{Z}$ of $f^{-1}(y)$; $2^\circ$~$\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\boldsymbol{k}(y)$ is geometrically reduced over $\boldsymbol{k}(y)$, in other words, if $z$ is the generic point of $\mathrm{Z}$, $\lambda_z(\sh{F}_y)=1$ (resp.~$\sh{O}_y$ is regular and $\operatorname{length}((\sh{F}_y)_z)=1$).
 Then there exists at most one irreducible component $\mathrm{X}'$ of $\mathrm{X}$ containing $x$, such that $\dim_x(\mathrm{X}'\cap f^{-1}(y))=\dim_x(f^{-1}(y))$ and that the restriction $\mathrm{X}'\to\mathrm{Y}$ of $f$ is universally open at the generic points of the irreducible components of $\mathrm{X}'\cap f^{-1}(y)$ containing $x$.
 Moreover, if such a component $\mathrm{X}'$ exists and if $z'$ is its generic point, then $\lambda_{z'}(\sh{F}_\eta)=1$ (resp.~$\operatorname{length}((\sh{F}_\eta)_{z'})=1$).
 \end{corollary}
@@ -116,10 +116,10 @@ We have a partial converse of this result under additional hypotheses:
 \label{IV.15.2.2}
 Let $\mathrm{Y}$ be a locally Noetherian prescheme, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module, $x$ a point of $\mathrm{X}$, $y=f(x)$.
 Suppose the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item $\operatorname{Supp}(\sh{F})=\mathrm{X}$.
   \item $f$ is universally open at the generic points of the irreducible components of $f^{-1}(y)$ containing $x$.
-  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\mathbf{k}(y)$ is geometrically reduced at the point $x$ \sref{IV.4.6.22}.
+  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\boldsymbol{k}(y)$ is geometrically reduced at the point $x$ \sref{IV.4.6.22}.
   \item The ring $\sh{O}_y$ is reduced.
 \end{enumerate}
 Then $\sh{F}$ is $f$-flat at the point $x$.
@@ -137,10 +137,10 @@ We see thus that we are reduced to proving the following
 \label{IV.15.2.2.1}
 Let $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ be the spectrum of a discrete valuation ring, $y$ its closed point, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $x$ a point of $f^{-1}(y)$, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module.
 Suppose the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item $\operatorname{Supp}(\sh{F})=\mathrm{X}$.
   \item $f$ is open at the generic points of the irreducible components of $f^{-1}(y)$ containing $x$.
-  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\mathbf{k}(y)$ is reduced at the point $x$ \sref{IV.3.2.2}.
+  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\boldsymbol{k}(y)$ is reduced at the point $x$ \sref{IV.3.2.2}.
 \end{enumerate}
 Then $\sh{F}$ is $f$-flat at the point $x$.
 \end{lemma}
@@ -154,9 +154,9 @@ It remains to show that under these conditions $\mathrm{M}$ is a \emph{torsion-f
 \label{IV.15.2.3}
 Let $\mathrm{Y}$ be a locally Noetherian prescheme, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $x$ a point of $\mathrm{X}$, $y=f(x)$.
 Suppose the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item $f$ is universally open at the generic points of the irreducible components of $f^{-1}(y)$ containing $x$.
-  \item $f^{-1}(y)$ is geometrically reduced over $\mathbf{k}(y)$ at the point $x$ \sref{IV.4.6.9}.
+  \item $f^{-1}(y)$ is geometrically reduced over $\boldsymbol{k}(y)$ at the point $x$ \sref{IV.4.6.9}.
   \item The ring $\sh{O}_y$ is reduced.
 \end{enumerate}
 Under these conditions $f$ is flat at the point $x$.
@@ -172,10 +172,10 @@ One thus sees that one cannot, in \sref{IV.15.2.2}, suppress condition~(iv).
 Even if conditions~(i), (iii), and (iv) are satisfied, one cannot replace (ii) by the weaker hypothesis that $f$ is universally open \emph{at the point $x$ only}.
 This is what the example \sref{IV.14.1.3},~(i) shows, where $f$ is evidently universally open at every point of $\mathrm{X}_2$, hence in particular at the point $x$, intersection of $\mathrm{X}_1$ and $\mathrm{X}_2$; conditions~(ii) and (iii) of \sref{IV.15.2.3} are also satisfied by this example.
 However, $\sh{O}_x$ is not a torsion-free $\sh{O}_y$-module: $\sh{O}_y$ identifies with a subring of $\sh{O}_x$ that contains zero divisors in $\sh{O}_x$; hence $f$ is not flat at the point $x$.
-  \item In \sref{IV.15.2.3}, the conclusion is not necessarily valid when we replace hypothesis~(ii) by the weaker hypothesis that $f^{-1}(y)$, considered as a $\mathbf{k}(y)$-prescheme, \emph{has no immersed associated prime cycles}.
+  \item In \sref{IV.15.2.3}, the conclusion is not necessarily valid when we replace hypothesis~(ii) by the weaker hypothesis that $f^{-1}(y)$, considered as a $\boldsymbol{k}(y)$-prescheme, \emph{has no immersed associated prime cycles}.
 An example is provided by taking for $\mathrm{Y}$ a curve having a cusp, for example $\mathrm{Y}=\operatorname{Spec}(\mathrm{K}[\mathrm{S},\mathrm{T}]/(\mathrm{S}^3-\mathrm{T}^2))$, $\mathrm{K}$ being an algebraically closed field, and for $\mathrm{X}$ its \emph{normalisation} \sref[II]{II.6.3.8}.
 If $s$ and $t$ are the classes of $\mathrm{S}$ and $\mathrm{T}$ in $\mathrm{A}=\mathrm{K}[\mathrm{S},\mathrm{T}]/(\mathrm{S}^3-\mathrm{T}^2)$, one verifies immediately that $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}=\mathrm{K}[s,t,u]$, $u$ being the element $t/s$ of the field of fractions of $\mathrm{A}$, and since $s=u^2$, $t=u^3$, we also have $\mathrm{B}=\mathrm{K}[u]$, isomorphic to a polynomial ring in one indeterminate over $\mathrm{K}$.
-The only point $x$ of $\mathrm{X}$ above the point $y$ corresponding to the maximal ideal $(s)+(t)$ corresponds to the maximal ideal $(u)$; but since the class $\bar{u}$ of $u$ in $\sh{O}_x/\mathfrak{m}_y\sh{O}_x$ satisfies $\bar{u}^2=0$, $f^{-1}(y)$ is not a reduced $\mathbf{k}(y)$-prescheme.
+The only point $x$ of $\mathrm{X}$ above the point $y$ corresponding to the maximal ideal $(s)+(t)$ corresponds to the maximal ideal $(u)$; but since the class $\bar{u}$ of $u$ in $\sh{O}_x/\mathfrak{m}_y\sh{O}_x$ satisfies $\bar{u}^2=0$, $f^{-1}(y)$ is not a reduced $\boldsymbol{k}(y)$-prescheme.
 Here $f$ is a finite, surjective and radicial morphism, hence a universal homeomorphism \sref{IV.2.4.5}, but it is not flat at the point $x$, for if $\sh{O}_x$ were a flat $\sh{O}_y$-module, it would be an $\sh{O}_y$-module
 \oldpage[IV-3]{228}
 free of rank $1$ generated by the element $1$ of $\sh{O}_x$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S\,3, no~2, prop.~5), which is absurd.
@@ -192,8 +192,8 @@ However, $f$ is not flat at the point $x$, for if $\mathrm{A}'$ were a flat $\ma
 To construct the rings $\mathrm{A}$ and $\mathrm{A}'$, let us start from an imperfect field $k$ of characteristic $p>0$; let $\mathrm{K}_0=k((\mathrm{T}))$ be the field of formal Laurent series over $k$, and let $\mathrm{A}_0$ be its valuation ring for the discrete valuation given by the order of a formal Laurent series; the residue field of $\mathrm{A}_0$ is thus $k$.
 Let $\alpha$ be an element of $k$ that is not a $p$-th power, and let us take $k'=k(\alpha^{1/p})$; $\mathrm{K}=k'((\mathrm{T}))$ is then a finite radicial extension of $\mathrm{K}_0$, and $\mathrm{A}'=\mathrm{A}_0\otimes_k k'$ is the discrete valuation ring for $\mathrm{K}$.
 If $\mathfrak{m}'$ is the maximal ideal of $\mathrm{A}'$, conditions~$1)$ and $2)$ are satisfied by taking $\mathrm{A}=\mathrm{A}_0+\mathfrak{m}'$: indeed, as $\mathrm{A}_0$ is Noetherian and $\mathrm{A}'$ is an $\mathrm{A}_0$-module of finite type, $\mathrm{A}$ is a finite $\mathrm{A}_0$-algebra, hence a Noetherian ring; since $\mathrm{A}'$ is finite over $\mathrm{A}$, $\mathfrak{m}'$ is the only maximal ideal of $\mathrm{A}$, which is thus a complete local ring, evidently of dimension $1$ (being finite over $\mathrm{A}_0$) and geometrically unibranch, since $\mathrm{A}'$ is integrally closed and has the same field of fractions $\mathrm{K}$ as $\mathrm{A}$.
-  \item The proof of \sref{IV.15.2.2} shows however that one can weaken condition~(iii) by replacing ``geometrically reduced'' by ``reduced'' when one can apply the valuative criterion of flatness \sref{IV.11.8.1} using only discrete valuation rings $\mathrm{A}'$ whose residue field $k'$ is \emph{separable} over $\mathbf{k}(y)$; indeed, if $x'$ and $z'$ have the same meanings as in \sref{IV.15.2.2}, the radicial multiplicities $\mu_i(\mathbf{k}(z')|k')$ and $\mu_i(\mathbf{k}(z)|\mathbf{k}(y))$ are the same, by virtue of \sref{IV.4.7.3}, hence it follows from \sref{IV.4.7.9} that $\operatorname{length}((\sh{F}_y)_z)$ and $\operatorname{length}((\sh{F}_{y'}')_{z'})$ are equal, and we are again reduced to the case where $\mathrm{Y}$ is the spectrum of a discrete valuation ring and $y$ its closed point.
-For example, one obtains this stronger result when $\sh{O}_y$ is \emph{unibranch} and dominated by a discrete valuation ring whose residue field is a separable extension of $\mathbf{k}(y)$, by virtue of \sref{IV.11.6.2}.\footnote{The printed text cites (11.6.4), which does not occur in {\hyperref[subsection:IV.11.6]{\S11.6}}; the applicable unibranch descent result is Corollary~{\hyperref[IV.11.6.2]{(11.6.2)}}.}
+  \item The proof of \sref{IV.15.2.2} shows however that one can weaken condition~(iii) by replacing ``geometrically reduced'' by ``reduced'' when one can apply the valuative criterion of flatness \sref{IV.11.8.1} using only discrete valuation rings $\mathrm{A}'$ whose residue field $k'$ is \emph{separable} over $\boldsymbol{k}(y)$; indeed, if $x'$ and $z'$ have the same meanings as in \sref{IV.15.2.2}, the radicial multiplicities $\mu_i(\boldsymbol{k}(z')|k')$ and $\mu_i(\boldsymbol{k}(z)|\boldsymbol{k}(y))$ are the same, by virtue of \sref{IV.4.7.3}, hence it follows from \sref{IV.4.7.9} that $\operatorname{length}((\sh{F}_y)_z)$ and $\operatorname{length}((\sh{F}_{y'}')_{z'})$ are equal, and we are again reduced to the case where $\mathrm{Y}$ is the spectrum of a discrete valuation ring and $y$ its closed point.
+For example, one obtains this stronger result when $\sh{O}_y$ is \emph{unibranch} and dominated by a discrete valuation ring whose residue field is a separable extension of $\boldsymbol{k}(y)$, by virtue of \sref{IV.11.6.2}.\footnote{The printed text cites (11.6.4), which does not occur in {\hyperref[subsection:IV.11.6]{\S11.6}}; the applicable unibranch descent result is Corollary~{\hyperref[IV.11.6.2]{(11.6.2)}}.}
 This is the case, for instance, when $\sh{O}_y$ is a \emph{regular} ring, by \sref{IV.15.1.1.6}.
 But, as Hironaka has pointed out, there are Noetherian local rings that are \emph{integrally closed}, of dimension $2$ (coming from algebraic local schemes over imperfect fields) that do not satisfy the preceding condition.
 \end{enumerate}
@@ -207,8 +207,8 @@ But, as Hironaka has pointed out, there are Noetherian local rings that are \emp
 Let $\mathrm{Y}$ be a locally Noetherian prescheme, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module, $x$ a point of $\mathrm{X}$, $y=f(x)$.
 Suppose conditions~\emph{(i)}, \emph{(ii)}, and \emph{(iii)} of \sref{IV.15.2.2} are satisfied.
 Then:
-\begin{enumerate}[label=(\roman*)]
-  \item There exists a neighbourhood $\mathrm{U}$ of $x$ in $\mathrm{X}$ such that $f|\mathrm{U}$ is universally open and that, for all $x'\in\mathrm{U}$, $\sh{F}_{f(x')}$ is geometrically reduced over $\mathbf{k}(f(x'))$ at the point $x'$.
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item There exists a neighbourhood $\mathrm{U}$ of $x$ in $\mathrm{X}$ such that $f|\mathrm{U}$ is universally open and that, for all $x'\in\mathrm{U}$, $\sh{F}_{f(x')}$ is geometrically reduced over $\boldsymbol{k}(f(x'))$ at the point $x'$.
   \item If furthermore $\mathrm{Y}$ is reduced at the point $y$, there exists a neighbourhood $\mathrm{U}_1\subset\mathrm{U}$ of $x$ such that $\sh{F}|\mathrm{U}_1$ is $f$-flat and reduced.
 \end{enumerate}
 \end{proposition}
@@ -240,10 +240,10 @@ Since moreover $\sh{F}|\mathrm{U}$ is $f$-flat, it follows from \sref{IV.2.3.4} 
 \begin{corollary}[15.3.3]
 \label{IV.15.3.3}
 The notations being those of \sref{IV.15.3.1}, suppose the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item $\operatorname{Supp}(\sh{F})=\mathrm{X}$.
   \item $f$ is universally open at the generic points of the irreducible components of $f^{-1}(y)$ containing $x$.
-  \item $\sh{F}_y$ is geometrically pointwise integral over $\mathbf{k}(y)$ at the point $x$ \sref{IV.4.6.22}.
+  \item $\sh{F}_y$ is geometrically pointwise integral over $\boldsymbol{k}(y)$ at the point $x$ \sref{IV.4.6.22}.
   \item $\mathrm{Y}$ is geometrically unibranch at the point $y$.
 \end{enumerate}
 Then $x$ belongs to a single irreducible component of $\mathrm{X}$.
@@ -272,7 +272,7 @@ It is unknown whether, in this statement, the hypothesis that $\sh{O}_y$ is regu
 \begin{proposition}[15.4.1]
 \label{IV.15.4.1}
 Let $\mathrm{Y}$ be a locally Noetherian prescheme, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module such that $\operatorname{Supp}(\sh{F})=\mathrm{X}$, $x$ a point of $\mathrm{X}$, $y=f(x)$.
-We set, for all $z\in\mathrm{X}$, $\mathrm{X}_{f(z)}=f^{-1}(f(z))$, $\sh{F}_{f(z)}=\sh{F}\otimes_{\sh{O}_{f(z)}}\mathbf{k}(f(z))$.
+We set, for all $z\in\mathrm{X}$, $\mathrm{X}_{f(z)}=f^{-1}(f(z))$, $\sh{F}_{f(z)}=\sh{F}\otimes_{\sh{O}_{f(z)}}\boldsymbol{k}(f(z))$.
 Suppose that $\sh{F}$ is $f$-flat at the point $x$ and that $\sh{F}_y$ is a Cohen-Macaulay $\sh{O}_{\mathrm{X}_y}$-module at the point $x$.
 Then $f$ is
 \oldpage[IV-3]{230}
@@ -293,7 +293,7 @@ Then (with the notations of \sref{IV.15.4.1}) the following conditions are equiv
   \item $f$ is universally open in a neighbourhood of $x$.
   \item $f$ is open at the generic points of the irreducible components of $\mathrm{X}_y$ containing $x$.
   \item $\dim(\sh{F}_x)=\dim(\sh{O}_y)+\dim((\sh{F}_y)_x)$.
-  \item[\emph{e}$'$)] $\dim(\sh{O}_{\mathrm{X},x})=\dim(\sh{O}_y)+\dim(\sh{O}_{\mathrm{X},x}\otimes_{\sh{O}_y}\mathbf{k}(y))$.
+  \item[\emph{e}$'$)] $\dim(\sh{O}_{\mathrm{X},x})=\dim(\sh{O}_y)+\dim(\sh{O}_{\mathrm{X},x}\otimes_{\sh{O}_y}\boldsymbol{k}(y))$.
 \end{enumerate}
 As $\operatorname{Supp}(\sh{F})=\mathrm{X}$, conditions $e)$ and $e')$ are equivalent by definition \sref{IV.5.1.12}.
 Condition $a)$ trivially implies $b)$; $b)$ implies that $\sh{F}$ is $f$-flat at the points of a neighbourhood of $x$ \sref{IV.11.1.1}, hence $b)$ implies $c)$ \sref{IV.2.4.6}; $c)$ trivially implies $d)$, and $d)$ implies $e')$ by \sref{IV.14.2.1}.
@@ -313,7 +313,7 @@ Then (with the notations of \sref{IV.15.4.1}) the following conditions are equiv
 \begin{proof}
 \label{IV.15.4.3-proof}
 Let us first show that $b)$ implies $a)$.
-Set $h:\mathrm{Y}'\to\mathrm{Y}$; the $\mathbf{k}(y)$-prescheme $\mathrm{Y}_y'=h^{-1}(y)$ is regular \sref[0]{0.17.3.7}; let $\mathrm{A}$ be the local ring of this prescheme at the point $y'=g(x)$, $k$ its residue field, and $\mathrm{B}$ the local ring of $\mathrm{X}_y$ at the point $x$; set further $(\sh{F}_y)_x=\mathrm{M}$, which is a $\mathrm{B}$-module of finite type.
+Set $h:\mathrm{Y}'\to\mathrm{Y}$; the $\boldsymbol{k}(y)$-prescheme $\mathrm{Y}_y'=h^{-1}(y)$ is regular \sref[0]{0.17.3.7}; let $\mathrm{A}$ be the local ring of this prescheme at the point $y'=g(x)$, $k$ its residue field, and $\mathrm{B}$ the local ring of $\mathrm{X}_y$ at the point $x$; set further $(\sh{F}_y)_x=\mathrm{M}$, which is a $\mathrm{B}$-module of finite type.
 The hypothesis that the morphism $g$ is quasi-finite implies the same for $g_y:\mathrm{U}_y\to\mathrm{Y}_y'$ \sref[II]{II.6.2.4}, hence $\mathrm{M}\otimes_\mathrm{A} k$ is a $(\mathrm{B}\otimes_\mathrm{A} k)$-module of finite length \sref[II]{II.6.2.2}; since $\mathrm{M}$ is a flat $\mathrm{A}$-module by hypothesis and $\mathrm{A}$ is a Cohen-Macaulay ring, $\mathrm{M}$ is a Cohen-Macaulay $\mathrm{B}$-module \sref{IV.6.3.3}.
 The fact that $\sh{F}$ is $f$-flat at the point $x$ follows from its being $g$-flat and from the fact that the morphism $h$ is flat \sref{IV.2.1.6}.
 
@@ -334,15 +334,15 @@ Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a separated and quasi-fini
 For every $z\in Y$, let $n(z)$ be the geometric number of points of $f^{-1}(z)$ (or \emph{separable rank} of $f^{-1}(z)$ over $\kappa(z)$; cf.\ \sref[I]{I.6.4.8}).
 We have the following properties:
 \begin{enumerate}[label=(\roman*)]
-  \item The function $z\mapsto n(z)$ is lower semi-continuous at every point $y\in Y$ such that $f$ is universally open at the points of $f^{-1}(y)$.
-  \item Let $y$ be a point of $Y$ such that $f$ is universally open at the points of $f^{-1}(y)$; if the function $z\mapsto n(z)$ is constant in a neighbourhood of $y$, then $f$ is proper at the point $y$ \sref{IV.15.7.1}.
-  \item Suppose that $f$ is universally open and that every point of $Y$ is geometrically unibranch; then, if the function $z\mapsto n(z)$ is locally constant in $Y$, the irreducible components of $X$ are pairwise disjoint.
+  \item The function $z\leadsto n(z)$ is lower semi-continuous at every point $y\in Y$ such that $f$ is universally open at the points of $f^{-1}(y)$.
+  \item Let $y$ be a point of $Y$ such that $f$ is universally open at the points of $f^{-1}(y)$; if the function $z\leadsto n(z)$ is constant in a neighbourhood of $y$, then $f$ is proper at the point $y$ \sref{IV.15.7.1}.
+  \item Suppose that $f$ is universally open and that every point of $Y$ is geometrically unibranch; then, if the function $z\leadsto n(z)$ is locally constant in $Y$, the irreducible components of $X$ are pairwise disjoint.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 (i)
-Note that since $f$ is quasi-finite, the number $n(z)$ is the geometric number of connected components of $f^{-1}(z)$; we know that the function $z\mapsto n(z)$ is locally constructible \sref{IV.9.7.9}; taking into account $(\mathbf{0}_{\mathrm{III}},~9.3.4)$, we are reduced to proving the
+Note that since $f$ is quasi-finite, the number $n(z)$ is the geometric number of connected components of $f^{-1}(z)$; we know that the function $z\leadsto n(z)$ is locally constructible \sref{IV.9.7.9}; taking into account $(\mathbf{0}_{\mathrm{III}},~9.3.4)$, we are reduced to proving the
 
 \begin{corollary}[15.5.2]
 \label{IV.15.5.2}
@@ -407,7 +407,7 @@ and for the extreme members to be equal, we need $n_i(y)=n_i(y')=1$ for every $i
 As we saw in (i), if $n_i(y)=1$ for every $i$, $X_i\cap f^{-1}(y)$ is nonempty and the restriction $X_i\to Y$ of $f$ is an isomorphism; since the $X_i$ are closed sub-preschemes of $X$, this implies that $f$ is proper (\sref[II]{II.5.4.5}).
 
 (iii)
-We can restrict to the case where $Y$ is affine and reduced, and since $Y$ is by hypothesis locally integral (\sref[I]{I.5.1.4}), we can suppose $Y$ integral, and the function $y\mapsto n(y)$ constant in $Y$.
+We can restrict to the case where $Y$ is affine and reduced, and since $Y$ is by hypothesis locally integral (\sref[I]{I.5.1.4}), we can suppose $Y$ integral, and the function $y\leadsto n(y)$ constant in $Y$.
 Let again $X_i$ ($1\leq i\leq m$) be the irreducible components of $X$.
 It follows from \sref{IV.1.10.4} that if $y'$ is the generic point of $Y$, each of the $X_i\cap f^{-1}(y')$ consists of a single point; the restriction $f_i:X_i\to Y$ of $f$ being a quasi-finite and dominant morphism and every point of $Y$ being geometrically unibranch, it follows from the criterion of Chevalley \sref{IV.14.4.4} that $f_i$ is \emph{universally open}.
 So then for any point $y$ of $Y$, we have $n_i(y)\leq n_i(y')$; on the other hand, since the $X_i\cap f^{-1}(y')$\footnote{The printed source has $X_i\cap f^{-1}(y)$ here; the following equality $\sum_i n_i(y')=n(y')$ and the generic-fibre argument require $y'$.} are pairwise disjoint, $\sum_i n_i(y')=n(y')$; we therefore still have the relations \sref{IV.15.5.2.4}.
@@ -420,7 +420,7 @@ Combining this proposition with the connectivity theorem of Zariski and its cons
 \label{IV.15.5.3}
 Let $Y$ be an irreducible locally Noetherian prescheme, $f:X\to Y$ a proper morphism; for every $y\in Y$, let $n(y)$ be the geometric number of connected components \sref{IV.4.5.2} of $f^{-1}(y)$.
 Suppose that the restriction of $f$ to every irreducible component of $X$ is dominant onto $Y$.
-Then, if $y_0$ is a geometrically unibranch point of $Y$, the function $y\mapsto n(y)$ is lower semi-continuous at the point $y_0$.
+Then, if $y_0$ is a geometrically unibranch point of $Y$, the function $y\leadsto n(y)$ is lower semi-continuous at the point $y_0$.
 \end{proposition}
 
 \begin{proof}
@@ -434,7 +434,7 @@ The conclusion therefore follows from \sref{IV.15.5.2} and from the fact that th
 \label{IV.15.5.4}
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a proper morphism; let $y$ be a point of $Y$ such that $f$ is universally open at the points of $f^{-1}(y)$;
 \oldpage[IV-3]{234}
-then, with the notations of \sref{IV.15.5.3}, the function $z\mapsto n(z)$ is lower semi-continuous at the point $y$.
+then, with the notations of \sref{IV.15.5.3}, the function $z\leadsto n(z)$ is lower semi-continuous at the point $y$.
 \end{corollary}
 
 \begin{proof}
@@ -444,9 +444,9 @@ With the notations of \sref{IV.15.5.3}, note that in the Stein factorisation $f=
 \begin{remarks}[15.5.5]
 \label{IV.15.5.5}
 (i)
-Even if $Y$ is integral and normal, $X$ integral, $f$ finite and surjective (hence universally open by virtue of the criterion of Chevalley \sref{IV.14.4.4}), the function $y\mapsto n(y)$ is not necessarily locally constant.
+Even if $Y$ is integral and normal, $X$ integral, $f$ finite and surjective (hence universally open by virtue of the criterion of Chevalley \sref{IV.14.4.4}), the function $y\leadsto n(y)$ is not necessarily locally constant.
 We have an example by taking $Y=\Spec(k[\mathrm{T}])$ where $k$ is algebraically closed, and $X=\Spec(A)$, where $A=k[\mathrm{S},\mathrm{T}]/(\mathrm{S}^2+\mathrm{T}^2-1)$; at the points $y'$, $y''$ of $Y$ corresponding to the maximal ideals $(\mathrm{T}-1)$ and $(\mathrm{T}+1)$, we have $n(y')=n(y'')=1$, but $n(y)=2$ at all other points of $Y$.
-We shall give below an additional condition ensuring that $y\mapsto n(y)$ is locally constant \sref{IV.15.5.7}.
+We shall give below an additional condition ensuring that $y\leadsto n(y)$ is locally constant \sref{IV.15.5.7}.
 
 (ii)
 The example \sref{IV.14.4.10} (ii) shows that in \sref{IV.15.5.1},~(iii), one cannot suppress the hypothesis that the points of $Y$ are geometrically unibranch.
@@ -455,7 +455,7 @@ The example \sref{IV.14.4.10} (ii) shows that in \sref{IV.15.5.1},~(iii), one ca
 The example \sref{IV.11.7.5} shows that the conclusion of \sref{IV.15.5.1},~(i) is no longer valid if one only supposes that the morphism $f$ is \emph{open} (even if, as is the case in the cited example, $f$ is finite and surjective).
 
 (iv)
-Finally, in \sref{IV.15.5.1}, one cannot dispense with the hypothesis that the morphism $f$ is \emph{separated}, as shown by the example where $X$ is the affine line in which a point $x$ has been ``doubled'' (\sref[I]{I.5.5.11}), and $Y$ is the affine line: here $f$ is a local isomorphism (hence flat) and is quasi-finite, but $z\mapsto n(z)$ is not lower semi-continuous.
+Finally, in \sref{IV.15.5.1}, one cannot dispense with the hypothesis that the morphism $f$ is \emph{separated}, as shown by the example where $X$ is the affine line in which a point $x$ has been ``doubled'' (\sref[I]{I.5.5.11}), and $Y$ is the affine line: here $f$ is a local isomorphism (hence flat) and is quasi-finite, but $z\leadsto n(z)$ is not lower semi-continuous.
 \end{remarks}
 
 \begin{lemma}[15.5.6]
@@ -472,19 +472,19 @@ We will use the following purely topological lemma (a special case of a more gen
 \begin{lemma}[15.5.6.1]
 \label{IV.15.5.6.1}
 Let $X$ be a locally Noetherian topological space, every closed irreducible subset of which admits a generic point.
-Let $Z$ be a nowhere dense closed subset of $X$ having the following property: for every $x\in Z$, if one denotes by $\mathrm{T}_x$ the set of generizations of $x$ in $X$, then $\mathrm{T}_x-\{x\}$ is connected.
-Under these conditions, if $X$ is connected, $X-Z$ is connected.
+Let $Z$ be a nowhere dense closed subset of $X$ having the following property: for every $x\in Z$, if one denotes by $\mathrm{T}_x$ the set of generizations of $x$ in $X$, then $\mathrm{T}_x\setmin\{x\}$ is connected.
+Under these conditions, if $X$ is connected, $X\setmin Z$ is connected.
 \end{lemma}
 
 \begin{proof}
 Let us give an independent proof.
-Arguing by contradiction, suppose that the open set $U=X-Z$, which is dense in $X$ since $Z$ is nowhere dense, is the union of two disjoint nonempty open sets $U'$ and $U''$, and denote by $X'$ and $X''$ the closures in $X$ of $U'$ and $U''$.
+Arguing by contradiction, suppose that the open set $U=X\setmin Z$, which is dense in $X$ since $Z$ is nowhere dense, is the union of two disjoint nonempty open sets $U'$ and $U''$, and denote by $X'$ and $X''$ the closures in $X$ of $U'$ and $U''$.
 Since $X=\overline{U}=X'\cup X''$ and $X$ is connected, we have $X'\cap X''\neq\varnothing$, and it is clear that $X'\cap X''\subset Z$.
 Let $x$ be a generic point of an irreducible component of $X'\cap X''$.
 Since $X$ is locally Noetherian, there is an open neighbourhood $V$ of $x$ in $X$ such that $V\cap U'$ and $V\cap U''$ have only a finite number of irreducible components; since $x$ is adherent to $U'$ and to $U''$, it is necessarily in the closure of an irreducible component $Z'$ of $V\cap U'$ and in the closure of an irreducible component $Z''$ of $V\cap U''$.
 But $\overline{Z'}$ (resp.\ $\overline{Z''}$) is closed and irreducible in $X$, hence admits a generic point $z'$ (resp.\ $z''$), and we necessarily have $z'\in U'$ and $z''\in U''$.
-This proves that the intersections of $\mathrm{T}_x-\{x\}$ with $U'$ and $U''$ are nonempty.
-But by definition $(X'\cap X'')\cap(\mathrm{T}_x-\{x\})=\varnothing$; therefore the intersections of $X'$ and of $X''$ with $\mathrm{T}_x-\{x\}$ are two nonempty disjoint closed sets in $\mathrm{T}_x-\{x\}$, whose union is $\mathrm{T}_x-\{x\}$; this contradicts the hypothesis that $\mathrm{T}_x-\{x\}$ is connected.
+This proves that the intersections of $\mathrm{T}_x\setmin\{x\}$ with $U'$ and $U''$ are nonempty.
+But by definition $(X'\cap X'')\cap(\mathrm{T}_x\setmin\{x\})=\varnothing$; therefore the intersections of $X'$ and of $X''$ with $\mathrm{T}_x\setmin\{x\}$ are two nonempty disjoint closed sets in $\mathrm{T}_x\setmin\{x\}$, whose union is $\mathrm{T}_x\setmin\{x\}$; this contradicts the hypothesis that $\mathrm{T}_x\setmin\{x\}$ is connected.
 \end{proof}
 \end{proof}
 
@@ -492,8 +492,8 @@ But by definition $(X'\cap X'')\cap(\mathrm{T}_x-\{x\})=\varnothing$; therefore 
 \begin{proof}[Proof of {\rm {\hyperref[IV.15.5.6]{(15.5.6)}}}]
 To prove \sref{IV.15.5.6}, we apply the lemma \sref{IV.15.5.6.1} to $X$ and to its nowhere dense closed subset $Z=f^{-1}(a)$, which is nowhere dense because $f$ is open.
 Note that by hypothesis, taking into account \sref{IV.15.2.2.1}, this implies that $f$ is \emph{flat} at the points of $f^{-1}(a)$.
-For any such point $x$, $\sh{O}_x$ is therefore an $\sh{O}_a$-module without torsion ($\mathbf{0}_{\mathrm{I}},~6.3.4$), and in particular, if $t$ is a uniformiser of $\sh{O}_a$, $t$ is an $\sh{O}_x$-regular element; moreover $\sh{O}_x/t\sh{O}_x$ is reduced by hypothesis. If it is of depth $0$, it is therefore a field ($\mathbf{0},~16.4.7$), and as $t\sh{O}_x$ is then the maximal ideal of $\sh{O}_x$, $\sh{O}_x$ is a discrete valuation ring ($\mathbf{0},~17.1.4$); hence $\Spec(\sh{O}_x)-\{x\}$ consists of a single point, and \emph{a fortiori} is connected.
-If on the contrary $\operatorname{depth}(\sh{O}_x/t\sh{O}_x)\geq 1$, we have $\operatorname{depth}(\sh{O}_x)\geq 2$ since $t$ is $\sh{O}_x$-regular ($\mathbf{0},~16.4.6$); it then follows from the theorem of Hartshorne \sref{IV.5.10.7} that $\Spec(\sh{O}_x)-\{x\}$ is connected, which completes the proof.
+For any such point $x$, $\sh{O}_x$ is therefore an $\sh{O}_a$-module without torsion ($\mathbf{0}_{\mathrm{I}},~6.3.4$), and in particular, if $t$ is a uniformiser of $\sh{O}_a$, $t$ is an $\sh{O}_x$-regular element; moreover $\sh{O}_x/t\sh{O}_x$ is reduced by hypothesis. If it is of depth $0$, it is therefore a field ($\mathbf{0},~16.4.7$), and as $t\sh{O}_x$ is then the maximal ideal of $\sh{O}_x$, $\sh{O}_x$ is a discrete valuation ring ($\mathbf{0},~17.1.4$); hence $\Spec(\sh{O}_x)\setmin\{x\}$ consists of a single point, and \emph{a fortiori} is connected.
+If on the contrary $\operatorname{depth}(\sh{O}_x/t\sh{O}_x)\geq 1$, we have $\operatorname{depth}(\sh{O}_x)\geq 2$ since $t$ is $\sh{O}_x$-regular ($\mathbf{0},~16.4.6$); it then follows from the theorem of Hartshorne \sref{IV.5.10.7} that $\Spec(\sh{O}_x)\setmin\{x\}$ is connected, which completes the proof.
 \end{proof}
 
 \begin{proposition}[15.5.7]
@@ -501,11 +501,11 @@ If on the contrary $\operatorname{depth}(\sh{O}_x/t\sh{O}_x)\geq 1$, we have $\o
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a proper morphism.
 For every $z\in Y$, let $n(z)$ be the geometric number of connected components of $f^{-1}(z)$.
 Let $y$ be a point of $Y$ such that $f$ is universally open at the points of $f^{-1}(y)$ and that $f^{-1}(y)$ is geometrically reduced over $\kappa(y)$ \sref{IV.4.6.2}.
-Then the function $z\mapsto n(z)$ is constant in a neighbourhood of $y$.
+Then the function $z\leadsto n(z)$ is constant in a neighbourhood of $y$.
 \end{proposition}
 
 \begin{proof}
-We already know from \sref{IV.15.5.4} that under the conditions of the statement, $z\mapsto n(z)$ is lower semi-continuous at the point $y$; it remains to see that it is also upper semi-continuous, and by the same reasoning as at the beginning of the proof of \sref{IV.15.5.1},~(i), it suffices to show that if $y'$ is a generization of $y$, we have
+We already know from \sref{IV.15.5.4} that under the conditions of the statement, $z\leadsto n(z)$ is lower semi-continuous at the point $y$; it remains to see that it is also upper semi-continuous, and by the same reasoning as at the beginning of the proof of \sref{IV.15.5.1},~(i), it suffices to show that if $y'$ is a generization of $y$, we have
 \begin{equation}
 \tag{15.5.7.1}
 \label{IV.15.5.7.1}
@@ -523,7 +523,7 @@ Since $f^{-1}(y)$ is not empty, this proves \sref{IV.15.5.7.1}.
 \begin{remarks}[15.5.8]
 \label{IV.15.5.8}
 The relation \sref{IV.15.5.7.1} is not necessarily valid if $f$ is not supposed proper, even if it satisfies the other hypotheses of \sref{IV.15.5.7}.
-With the notations of \sref{IV.15.5.5},~(i), it suffices to consider the restriction of $f$ to $X-\{x'\}$, where $x'$ is one of the two points of $X$ above a point $y$ distinct from $y'$ and $y''$; we then have $n(y)=1$, whereas if $\eta$ is the generic point of $Y$, $n(\eta)=2$.
+With the notations of \sref{IV.15.5.5},~(i), it suffices to consider the restriction of $f$ to $X\setmin\{x'\}$, where $x'$ is one of the two points of $X$ above a point $y$ distinct from $y'$ and $y''$; we then have $n(y)=1$, whereas if $\eta$ is the generic point of $Y$, $n(\eta)=2$.
 \end{remarks}
 
 \oldpage[IV-3]{236}
@@ -532,8 +532,8 @@ With the notations of \sref{IV.15.5.5},~(i), it suffices to consider the restric
 \label{IV.15.5.9}
 Let $f:X\to Y$ be a flat and locally of finite presentation morphism; for every $y\in Y$, let $n(y)$ be the geometric number of connected components of $f^{-1}(y)$.
 \begin{enumerate}[label=(\roman*)]
-  \item If $f$ is separated and quasi-finite, the function $y\mapsto n(y)$ (then equal to the geometric number of points of $f^{-1}(y)$) is lower semi-continuous on $Y$; if it is constant in a neighbourhood of $y_0$, $f$ is proper at $y_0$.
-  \item If $f$ is proper, the function $y\mapsto n(y)$ is lower semi-continuous on $Y$; if in addition $f^{-1}(y_0)$ is geometrically reduced over $\kappa(y_0)$, $n(y)$ is constant in a neighbourhood of $y_0$.
+  \item If $f$ is separated and quasi-finite, the function $y\leadsto n(y)$ (then equal to the geometric number of points of $f^{-1}(y)$) is lower semi-continuous on $Y$; if it is constant in a neighbourhood of $y_0$, $f$ is proper at $y_0$.
+  \item If $f$ is proper, the function $y\leadsto n(y)$ is lower semi-continuous on $Y$; if in addition $f^{-1}(y_0)$ is geometrically reduced over $\kappa(y_0)$, $n(y)$ is constant in a neighbourhood of $y_0$.
 \end{enumerate}
 \end{proposition}
 
@@ -551,7 +551,7 @@ The proof of \sref{IV.15.5.7} given above has the advantage of exhibiting the re
 \end{remarks}
 
 
-\subsection{Connected components of fibres along a section}
+\subsection{Connected components of fibres along a section.}
 \label{subsection:IV.15.6}
 
 \begin{proposition}[15.6.1]
@@ -584,20 +584,20 @@ The reasoning of (i) shows moreover that if the two members of \sref{IV.15.6.1.1
 \begin{corollary}[15.6.2]
 \label{IV.15.6.2}
 With the notations of \sref{IV.15.6.1}, suppose moreover that for every $y\in Y$, $X_y^0$ is irreducible.
-Then the function $z\mapsto\dim(X_z^0)$ is upper semi-continuous on $Y$.
+Then the function $z\leadsto\dim(X_z^0)$ is upper semi-continuous on $Y$.
 If moreover this function is constant in a neighbourhood of a point $y\in Y$, then $X_y^0\subset\overline{X_{y'}^0}$ for every generization $y'$ of $y$.
 \end{corollary}
 
 \begin{proof}
 Let $y$ be a point of $Y$, and let $U$ be an open affine neighbourhood of $g(y)$ in $X$; then there is an open neighbourhood $V$ of $y$ in $Y$ such that $g(V)\subset U$, and for every $z\in V$, $U\cap X_z^0$ is dense in $X_z^0$, hence $\dim(X_z^0)=\dim(U\cap X_z^0)$ (\sref{IV.4.1.1.3}).
 Replacing $X$ by $U$, we can suppose that $f$ is a morphism of finite type.
-We then know from \sref{IV.9.7.10} that the function $z\mapsto\dim(X_z^0)$ is locally constructible, and the assertions of the corollary follow from \sref{IV.15.6.1} and from $(\mathbf{0}_{\mathrm{III}},~9.3.4)$.
+We then know from \sref{IV.9.7.10} that the function $z\leadsto\dim(X_z^0)$ is locally constructible, and the assertions of the corollary follow from \sref{IV.15.6.1} and from $(\mathbf{0}_{\mathrm{III}},~9.3.4)$.
 \end{proof}
 
 \begin{proposition}[15.6.3]
 \label{IV.15.6.3}
 With the notations of \sref{IV.15.6.1}, suppose that for every $y\in Y$, $X_y^0$ is geometrically irreducible \sref{IV.4.5.2}.
-Then, for every $y\in Y$ such that the function $z\mapsto\dim(X_z^0)$ is constant in a neighbourhood of $y$, $f$ is universally open at the points of $X_y^0$.
+Then, for every $y\in Y$ such that the function $z\leadsto\dim(X_z^0)$ is constant in a neighbourhood of $y$, $f$ is universally open at the points of $X_y^0$.
 \end{proposition}
 
 \begin{proof}
@@ -633,7 +633,7 @@ Moreover, the morphism $u$ corresponds to a $Y'$-section $v$ of $X'$ such that $
 Finally, it is clear that $p_y^{-1}(X_y^0)$ is geometrically reduced over $\kappa(z)$.
 
 In other words, we are reduced to the case where $Y$ is the spectrum of a discrete valuation ring, $y$ its closed point, $y'$ its generic point.
-Since $f^{-1}(y)-X_y^0$ is then closed in $X$, replacing $X$ by the open set $X-(f^{-1}(y)-X_y^0)$, we can suppose that $X_y^0=f^{-1}(y)$; similarly, one may replace $X$ by the open subset that is the connected component of $X$ containing $g(Y)$, this connected component evidently containing $X^0$; in other words, we can suppose that $X$ is \emph{connected}.
+Since $f^{-1}(y)\setmin X_y^0$ is then closed in $X$, replacing $X$ by the open set $X\setmin(f^{-1}(y)\setmin X_y^0)$, we can suppose that $X_y^0=f^{-1}(y)$; similarly, one may replace $X$ by the open subset that is the connected component of $X$ containing $g(Y)$, this connected component evidently containing $X^0$; in other words, we can suppose that $X$ is \emph{connected}.
 The proposition will then be established if we show that $X^0=X$, or equivalently that $X_{y'}$ is connected; but $f^{-1}(y')$ is geometrically reduced over $\kappa(y')$, and \emph{a fortiori} \emph{reduced}; moreover, $f$ is open at the points of $f^{-1}(y)$, so we can apply the lemma \sref{IV.15.5.6}, whence the conclusion.
 \end{proof}
 
@@ -660,17 +660,17 @@ Let $g$ be a $Y$-section of $X$; for every $y\in Y$, let $X_y^0$ be the connecte
 Suppose that, for every $y\in Y$, $X_y^0$ is geometrically irreducible.
 Then:
 \begin{enumerate}[label=(\roman*)]
-  \item The function $y\mapsto\dim(X_y^0)$ is upper semi-continuous in $Y$.
+  \item The function $y\leadsto\dim(X_y^0)$ is upper semi-continuous in $Y$.
   \item Let $x_0\in X^0$, $y_0=f(x_0)$.
-If the function $y\mapsto\dim(X_y^0)$ is constant in a neighbourhood of $y_0$, there exists an open neighbourhood $U$ of $y_0$ such that $f$ is universally open at all points of $X^0\cap f^{-1}(U)$.
+If the function $y\leadsto\dim(X_y^0)$ is constant in a neighbourhood of $y_0$, there exists an open neighbourhood $U$ of $y_0$ such that $f$ is universally open at all points of $X^0\cap f^{-1}(U)$.
 If moreover $Y$ is reduced and $f^{-1}(y_0)$ geometrically reduced over $\kappa(y_0)$ at the point $x_0$, $f$ is flat at the point $x_0$.
   \item Conversely, suppose that $f$ is universally open at the generic point of $X_{y_0}^0$ and in addition that one of the following conditions is satisfied:
   \begin{enumerate}
     \item[$\alpha$)] The fibre $f^{-1}(y_0)$ is geometrically reduced over $\kappa(y_0)$ at the point $g(y_0)$ and the ring $\sh{O}_{Y,y_0}$ is Noetherian.
     \item[$\beta$)] For every generic point $y'$ of an irreducible component of $Y$ containing $y_0$, we have $\dim(f^{-1}(y'))=\dim(X_{y'}^0)$.
   \end{enumerate}
-Then the function $y\mapsto\dim(X_y^0)$ is constant in a neighbourhood of $y_0$.
-  \item The set $W$ of points $x\in X^0$ such that the function $y\mapsto\dim(X_y^0)$ is constant in a neighbourhood of $f(x)$ and $X_{f(x)}^0$ is geometrically reduced over $\kappa(f(x))$, is open in $X$.
+Then the function $y\leadsto\dim(X_y^0)$ is constant in a neighbourhood of $y_0$.
+  \item The set $W$ of points $x\in X^0$ such that the function $y\leadsto\dim(X_y^0)$ is constant in a neighbourhood of $f(x)$ and $X_{f(x)}^0$ is geometrically reduced over $\kappa(f(x))$, is open in $X$.
 \end{enumerate}
 \end{proposition}
 
@@ -713,7 +713,7 @@ Consider a point $x_0$ of $W$ and let us prove that $W$ is a neighbourhood of $x
 Assume that the preliminary conditions of \sref{IV.15.6.6} are satisfied by $f$, and suppose moreover that for every $y\in Y$, $X_y^0$ is geometrically integral over $\kappa(y)$.
 Then the following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
-  \item The function $y\mapsto\dim(X_y^0)$ is locally constant in $Y$.
+  \item The function $y\leadsto\dim(X_y^0)$ is locally constant in $Y$.
   \item The morphism $f_{(Y_\mathrm{red})}:X\times_Y Y_\mathrm{red}\to Y_\mathrm{red}$ deduced from $f$ by base change, is flat at the points of $X^0$.
 \end{enumerate}
 \oldpage[IV-3]{241}
@@ -761,9 +761,9 @@ Moreover, if $z$ is a maximal point of $X_{y'}^0$, we may suppose that $z\in V$.
 The supplementary hypothesis on the existence of an irreducible component of $X_{y'}^0$ containing $g(y')$ and of dimension equal to $\dim(X_{y'}^0)$, made in \sref{IV.15.6.1}, is not superfluous, as shown by the following example.
 Let $A$ be a discrete valuation ring, $\pi$ a uniformiser of $A$, $K$ the field of fractions of $A$, and $k$ its residue field. Set $Y=\Spec(A)$, and denote by $y$ and $y'$ the closed point and the generic point of $Y$.
 Consider the two $Y$-schemes: $X_1=\Spec(A[t])$, $X_2=\Spec(K[u,v])$, where $t$, $u$, $v$ are indeterminates (we note that the projection of $X_2$ to $Y$ is therefore $\{y'\}$).
-In the ring $A[t]$, the principal ideal $(\pi t-1)$ is \emph{maximal}, and thus corresponds to a closed point $x_1$ of $X_1$, which projects to the \emph{generic point} $y'$ of $Y$ and is such that $\kappa(x_1)=K$.
+In the ring $A[t]$, the principal ideal $(\pi t\setmin 1)$ is \emph{maximal}, and thus corresponds to a closed point $x_1$ of $X_1$, which projects to the \emph{generic point} $y'$ of $Y$ and is such that $\kappa(x_1)=K$.
 \oldpage[IV-3]{242}
-Consider also the closed point $x_2$ of $X_2$ corresponding to the maximal ideal $\left(u-\frac{1}{\pi}\right)+(v)$ of $K[u,v]$; we have also $\kappa(x_2)=K$.
+Consider also the closed point $x_2$ of $X_2$ corresponding to the maximal ideal $\left(u\setmin\frac{1}{\pi}\right)+(v)$ of $K[u,v]$; we have also $\kappa(x_2)=K$.
 As one will see in Ch.\ V, one can therefore \emph{reglue} $X_1$ and $X_2$ along two closed sub-preschemes $Z_1$ and $Z_2$ of $X_1$ and $X_2$ having respectively $\{x_1\}$ and $\{x_2\}$ as underlying spaces, by means of the unique $Y$-isomorphism from $Z_1$ onto $Z_2$.
 Denote by $X$ the $Y$-prescheme thus obtained, and by $x$ the point of $X$ which is the image of $x_1$ and $x_2$.
 The ``null section'' $g$ of $X_1$ (\sref[II]{II.1.7.9}) is then also a $Y$-section of $X$; $f^{-1}(y)$ is equal to $(X_1)_y$, whereas $f^{-1}(y')$ has two irreducible components, respectively isomorphic to $(X_1)_{y'}^0$ and $(X_2)_{y'}^0$, having the unique point $x$ in common and having respective dimensions~1 and~2. See, however, Proposition~\sref{IV.15.6.9}.
@@ -776,9 +776,9 @@ Moreover, $X^0$ is not a neighbourhood of $X_{y_0}^0$ in $X$, which shows that i
 (iii)
 In Ch.\ VI, we will apply the preceding results to $Y$-\emph{group preschemes} locally of finite type over a locally Noetherian prescheme $Y$.
 If $G$ is such a prescheme, there exists the canonical $Y$-section $g$, the ``unit section'', and one shows that $G_y^0$ is always geometrically irreducible and $\dim(G_y^0)=\dim(G_y)$, setting $G_y=f^{-1}(y)$.
-It then follows from \sref{IV.15.6.2} and \sref{IV.15.6.3} that the function $z\mapsto\dim(G_z)$ is upper semi-continuous, and that if it is constant in a neighbourhood of a point $y$, $f$ is universally open at the points of $G_y^0$.
+It then follows from \sref{IV.15.6.2} and \sref{IV.15.6.3} that the function $z\leadsto\dim(G_z)$ is upper semi-continuous, and that if it is constant in a neighbourhood of a point $y$, $f$ is universally open at the points of $G_y^0$.
 If moreover $G_y$ is geometrically reduced over $\kappa(y)$ at one of its points, one shows that $G_y$ is \emph{smooth} \sref{IV.6.8.1} over $\kappa(y)$ at all its points; it will follow then from \sref{IV.15.6.6} that if moreover $\sh{O}_y$ is reduced, then also $f$ is smooth at all the points of $G_y^0$ (though not necessarily at all points of $G_y$).
-These results will apply for example in the theory of Picard schemes, where we shall use a general theorem ensuring that, under certain conditions, the function $z\mapsto\dim(G_z)$ is locally constant.
+These results will apply for example in the theory of Picard schemes, where we shall use a general theorem ensuring that, under certain conditions, the function $z\leadsto\dim(G_z)$ is locally constant.
 Let us remark that it is with applications of this nature in view that the statements such as \sref{IV.15.6.1} are given for morphisms \emph{locally} of finite type, and not only for morphisms of finite type.
 
 We note also that in the case of a $Y$-group prescheme $G$, the hypothesis $\beta$) of \sref{IV.15.6.6} is always satisfied.
@@ -819,7 +819,7 @@ The question is local on $Y$, so we may suppose that $Y$ is affine, hence Noethe
 \[
   \xymatrix{
     P \ar[d]_-{p} & X' \ar[l]_-{j} \ar[d]^-{g} \\
-    Y & X \ar[l]^-{f}
+    Y & X \ar[l]
   }
 \]
 is commutative.
@@ -829,7 +829,7 @@ It suffices to prove that there exists an open neighbourhood $U$ of $y$ such tha
   j^{-1}\bigl(p^{-1}(U)\bigr)=g^{-1}\bigl(f^{-1}(U)\bigr)=V
 \]
 will be an isomorphism onto $p^{-1}(U)$. Hence the restriction $V\to U$ of $f\circ g$ will be proper, and, since the restriction $V\to f^{-1}(U)$ of $g$ is surjective, the restriction $f^{-1}(U)\to U$ of $f$ will be proper (\sref[II]{II.5.4.3}).
-Since $T=P-j(X')$ is closed in $P$, $p(T)$ is closed in $Y$, and it suffices to show that $y\notin p(T)$, or even that every $z'\in P$ such that $p(z')=y$ \emph{belongs} to $j(X')$.
+Since $T=P\setmin j(X')$ is closed in $P$, $p(T)$ is closed in $Y$, and it suffices to show that $y\notin p(T)$, or even that every $z'\in P$ such that $p(z')=y$ \emph{belongs} to $j(X')$.
 Now, the field of rational functions $R(P)$ is equal to $R(X')$, hence to $R(X)$ by construction; since one can restrict to the case where $z'$ is not the generic point of $P$, there is a discrete valuation ring $A$ having $R(X)$ as field of fractions and dominating $\sh{O}_{z'}$ (\sref[II]{II.7.1.7}); since $p(z')=y$, $A$ dominates $\sh{O}_y$, hence by hypothesis there exists $x\in X$ such that $f(x)=y$ and $A$ dominates $\sh{O}_x$.
 Since $g$ is proper, there exists $x'\in X'$ such that $g(x')=x$ and $A$ dominates $\sh{O}_{x'}$ (\sref[II]{II.7.3.10}); therefore $z'$ and $j(x')$ are two points of $P$ whose local rings $\sh{O}_{z'}$ and $\sh{O}_{j(x')}=\sh{O}_{x'}$ are related by (\sref[I]{I.8.1.4}); since $P$ is a scheme, this implies $z'=j(x')$ (\sref[I]{I.8.2.2}), which completes the proof.
 \end{proof}
@@ -996,7 +996,7 @@ Then, if $f'$ is submersive (resp.\ universally submersive), $f$ is also.
 \begin{proof}
 We can restrict to the case where $f'$ is submersive.
 Indeed, suppose it proved in this case, and let us show that if $f'$ is universally submersive, then $f$ is also.
-Let $Y_1\to Y$ be any morphism, and set $Y_1'=Y'\times_Y Y_1$; if $X_1'=X'\times_{Y'} Y_1'$, we have $f_1'=(f')_{(Y_1')}:X_1'\to Y_1'$; $f_1'$ is submersive by hypothesis; moreover, the morphism $g_1:Y_1'\to Y_1$ is surjective, and proper (resp.\ flat and quasi-compact) if $g$ is.
+Let $Y_1\to Y$ be any morphism, and set $Y_1'=Y'\times_Y Y_1$; if $X_1'=X'\times_{Y'} Y_1'$, we have $f_1'=(f')_{(Y_1)}:X_1'\to Y_1'$; $f_1'$ is submersive by hypothesis; moreover, the morphism $g_1:Y_1'\to Y_1$ is surjective, and proper (resp.\ flat and quasi-compact) if $g$ is.
 Hence, if one sets $X_1=X\times_Y Y_1$, $f_1=f_{(Y_1)}$, it follows from the hypothesis and from the fact that $X_1'=X_1\times_{Y_1} Y_1'$, that $f_1$ is submersive, hence $f$ universally submersive.
 Suppose therefore only that $f'$ is submersive.
 It is clear first of all that $f$ is surjective.

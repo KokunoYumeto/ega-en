@@ -68,7 +68,7 @@ Let $M$ be a flat $A$-module and $N$ an arbitrary $A$-module; for any two
 submodules $N'$, $N''$ of $N$, we then have
 \[
   \operatorname{Im}(M\otimes(N'+N''))
-  =\operatorname{Im}(M\otimes N')+\operatorname{Im}(M\otimes N''),
+  =\operatorname{Im}(M\otimes N')+\operatorname{Im}(M\otimes N'')
 \]
 \[
   \operatorname{Im}(M\otimes(N'\cap N''))
@@ -97,7 +97,7 @@ $\mathfrak{J}M'=M'\cap\mathfrak{J}M$.
 When an additive group $M$ is endowed with several module structures
 relative to rings $A$, $B$, \ldots, instead of saying that $M$ is flat
 as an $A$-module, $B$-module, \ldots, we shall sometimes also say that $M$
-is \emph{$A$-flat}, \emph{$B$-flat}, \ldots
+is $A$-\emph{flat}, $B$-\emph{flat}, \ldots
 
 \begin{env}[6.2.1]
 \label{0.6.2.1}
@@ -124,7 +124,7 @@ presentation; then the canonical homomorphism
   \tag{6.2.2.1}\label{0.6.2.2.1}
 \]
 (which sends $u\otimes b$ to the homomorphism
-$m\otimes b'\longmapsto u(m)\otimes b'b$) is an isomorphism.
+$m\otimes b'\to u(m)\otimes b'b$) is an isomorphism.
 \end{env}
 
 \begin{env}[6.2.3]
@@ -238,8 +238,8 @@ maximal ideal $\mathfrak{m}$ of $A$.
 \label{0.6.3.4}
 Let $M$ be an $A$-module; if $M$ is flat and if $f\in A$ is not a divisor
 of $0$ in $A$, then $f$ annihilates no element $\neq0$ of $M$, because
-the homomorphism $m\mapsto f\cdot m$ can be written $1\otimes u$, where $u$ is the
-multiplication $a\mapsto f\cdot a$ in $A$ and $M$ is identified with
+the homomorphism $m\to f.m$ can be written $1\otimes u$, where $u$ is the
+multiplication $a\to f.a$ in $A$ and $M$ is identified with
 $M\otimes_A A$; if $u$ is injective, the same therefore holds for
 $1\otimes u$, since $M$ is flat. In particular, if $A$ is
 \emph{integral}, $M$ is \emph{torsion-free}.
@@ -332,7 +332,7 @@ because $M$ is $A$-flat (6.3.3), and we have
   \otimes_{A_\mathfrak{m}}
   (A_\mathfrak{m}/\mathfrak{m}A_\mathfrak{m})
   =M\otimes_A(A/\mathfrak{m})
-  =M/\mathfrak{m}M,
+  =M/\mathfrak{m}M
 \]
 so the hypothesis implies that $M/\mathfrak{m}M\neq0$ for every maximal
 ideal $\mathfrak{m}$ of $A$, which proves our assertion (6.4.1).
@@ -346,7 +346,7 @@ ideal $\mathfrak{m}$ of $A$, which proves our assertion (6.4.1).
 Let $A$ be a ring and $\varphi:A\to B$ a ring homomorphism making
 $B$ an $A$-algebra. Suppose there exists a $B$-module $N$ that is a
 \emph{faithfully flat} $A$-module. Then, for every $A$-module $M$,
-the homomorphism $x\mapsto 1\otimes x$ from $M$ to
+the homomorphism $x\to 1\otimes x$ from $M$ to
 $B\otimes_A M=M_{(B)}$ is \emph{injective}. In particular, $\varphi$ is
 injective; for every ideal $\mathfrak{a}$ of $A$, we have
 $\varphi^{-1}(\mathfrak{a}B)=\mathfrak{a}$; for every maximal (resp.
@@ -360,7 +360,7 @@ When the condition of (6.5.1) is satisfied, we identify $A$ with a
 subring of $B$ by means of $\varphi$, and more generally, for every $A$-module
 $M$, we identify $M$ with a sub-$A$-module of $M_{(B)}$. Note that if
 $B$ is then \emph{Noetherian}, so is $A$, because the map
-$\mathfrak{a}\mapsto\mathfrak{a}B$ is an increasing injection of
+$\mathfrak{a}\to\mathfrak{a}B$ is an increasing injection of
 the set of ideals of $A$ into the set of ideals of $B$;
 the existence of an infinite strictly increasing sequence of ideals of $A$
 would therefore imply the existence of an analogous sequence of ideals of $B$.
@@ -382,8 +382,8 @@ $A$-algebra. The following five properties are equivalent:
 \oldpage[0\textsubscript{I}]{59}
 
   \item[$c)$] The $A$-module $B$ is flat (in other words, the functor
-    $M_{(B)}$ is exact), and for every $A$-module $M$, the homomorphism
-    $x\mapsto1\otimes x$ from $M$ to $M_{(B)}$ is injective.
+    $M_{(B)}$ is \emph{exact}), and for every $A$-module $M$, the homomorphism
+    $x\to1\otimes x$ from $M$ to $M_{(B)}$ is injective.
   \item[$d)$] The $A$-module $B$ is flat and for every ideal $\mathfrak a$ of
     $A$, we have $\varphi^{-1}(\mathfrak aB)=\mathfrak a$.
   \item[$e)$] The $A$-module $B$ is flat and for every maximal ideal
@@ -451,7 +451,7 @@ resp. $f$-flat).
 With the notation of (6.7.1), if $\mathcal F$ is $f$-flat at $x$, then for every
 open neighbourhood $U$ of $y=f(x)$, the functor
 $(f^*(\mathcal G)\otimes_{\mathcal O_X}\mathcal F)_x$ in $\mathcal G$ is
-exact in the category of $(\mathcal O_Y|U)$-modules; indeed, this
+\emph{exact} in the category of $(\mathcal O_Y|U)$-modules; indeed, this
 stalk is canonically identified with
 $\mathcal G_y\otimes_{\mathcal O_y}\mathcal F_x$, and our assertion follows
 from the definition. In particular, if $f$ is a flat morphism, the functor
@@ -523,7 +523,7 @@ the canonical homomorphism of bifunctors (4.4.6)
 is an isomorphism when $\mathcal F$ admits a finite presentation
 (5.2.5).
 
-Indeed, the question being local, we can assume that there exists an exact
+Indeed, the question being \emph{local}, we can assume that there exists an exact
 sequence $\mathcal O_Y^m\to\mathcal O_Y^n\to\mathcal F\to0$. Now, both
 sides of (6.7.6.1) are left exact functors in $\mathcal F$ by
 virtue of the hypothesis on $f$; we are then reduced to proving the proposition

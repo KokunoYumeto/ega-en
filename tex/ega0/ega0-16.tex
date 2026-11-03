@@ -110,7 +110,7 @@ Then $\dim(\mathrm{B})\leq\dim(\mathrm{A})$; if in addition $\rho$ is injective,
 \oldpage[0\textsubscript{IV-1}]{24}
 If $\mathfrak{n}$ is the kernel of $\rho$, $\rho(\mathrm{A})$ is isomorphic to $\mathrm{A}/\mathfrak{n}$, hence $\dim\rho(\mathrm{A})\leq\dim(\mathrm{A})$ by \sref{0.16.1.2.1}, and since $\mathrm{B}$ is integral over $\rho(\mathrm{A})$, one can reduce to proving the second assertion.
 If $\mathfrak{p}_0'\subset\mathfrak{p}_1'\subset\ldots\subset\mathfrak{p}_n'$ is a chain of prime ideals of $\mathrm{B}$, the $\mathfrak{p}_i'\cap\mathrm{A}$ are then distinct prime ideals in $\mathrm{A}$ (Bourbaki, \emph{Alg.~comm.}, chap.~V, \textsection~2, n\textsuperscript{o}~1, cor.~1 of prop.~1), hence they form a chain of prime ideals.
-Conversely, for every chain $\mathfrak{p}_0\subset\mathfrak{p}_1\subset\ldots\subset\mathfrak{p}_m$ of prime ideals of $\mathrm{A}$, we know that for each $i$ there exists a prime ideal $\mathfrak{p}_i'$ of $\mathrm{B}$ such that $\mathfrak{p}_i'\cap\mathrm{A}=\mathfrak{p}_i$ and $\mathfrak{p}_i'\subset\mathfrak{p}_{i+1}'$ for $0\leq i\leq m-1$ (\emph{loc.~cit.}, cor.~2 of th.~1).
+Conversely, for every chain $\mathfrak{p}_0\subset\mathfrak{p}_1\subset\ldots\subset\mathfrak{p}_m$ of prime ideals of $\mathrm{A}$, we know that for each $i$ there exists a prime ideal $\mathfrak{p}_i'$ of $\mathrm{B}$ such that $\mathfrak{p}_i'\cap\mathrm{A}=\mathfrak{p}_i$ and $\mathfrak{p}_i'\subset\mathfrak{p}_{i+1}'$ for $0\leq i\leq m\setmin 1$ (\emph{loc.~cit.}, cor.~2 of th.~1).
 Hence the conclusion.
 \end{proof}
 
@@ -200,13 +200,13 @@ Indeed, the ring $\mathrm{B}_\mathrm{M}$ of homotheties of the $\mathrm{B}$-modu
 Let $\mathrm{A}$ be a Noetherian ring; if $\mathrm{M}$ is an $\mathrm{A}$-module of \emph{finite length}, we know (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, prop.~7 and cor.~1 of prop.~7) that $\Supp(\mathrm{M})$ is a finite discrete set, hence $\dim(\mathrm{M})=0$ if $\mathrm{M}\neq 0$; conversely, if $\mathrm{M}$ is an $\mathrm{A}$-module of finite type such that $\dim(\mathrm{M})=0$, every point of $\Supp(\mathrm{M})$ is closed, in other words it is a maximal ideal of $\mathrm{A}$, hence (\emph{loc.~cit.}, prop.~7) $\mathrm{M}$ is of finite length.
 \end{env}
 
-\subsection[Dimension of a semi-local Noetherian ring]{Dimension of a semi-local Noetherian ring\protect\footnote{This section reproduces the lecture given by Serre in a course at the Collège de France in 1958.}}
+\subsection[Dimension of a semi-local Noetherian ring]{Dimension of a semi-local Noetherian ring\protect\footnote{This section reproduces the lecture given by Serre in a course at the Collège de France in 1958.}.}
 \label{subsection:0.16.2}
 
 \begin{env}[16.2.1]
 \label{0.16.2.1}
 Let $\mathrm{A}$ be a \emph{semi-local Noetherian} ring, $\mathfrak{r}$ its radical; recall that an \emph{ideal of definition} $\mathfrak{q}$ of $\mathrm{A}$ is an ideal such that $\mathfrak{q}\subset\mathfrak{r}$ and $\mathfrak{q}$ contains a power of $\mathfrak{r}$, or equivalently, that the only prime ideals containing $\mathfrak{q}$ are \emph{maximal}, or that $\mathrm{A}/\mathfrak{q}$ is an Artinian ring.
-Let $\mathrm{M}$ be an $\mathrm{A}$-module of finite type; for every integer $n>0$, $\mathrm{M}/\mathfrak{q}^n\mathrm{M}$ is an $\mathrm{A}$-module of \emph{finite length}, equal to $\sum_{i=0}^{n-1}\operatorname{long}(\gr_i(\mathrm{M}))$, where $\gr_\bullet(\mathrm{M})$ is the $(\mathrm{A}/\mathfrak{q})$-graded module associated to $\mathrm{M}$ equipped with the $\mathfrak{q}$-preadic filtration.
+Let $\mathrm{M}$ be an $\mathrm{A}$-module of finite type; for every integer $n>0$, $\mathrm{M}/\mathfrak{q}^n\mathrm{M}$ is an $\mathrm{A}$-module of \emph{finite length}, equal to $\sum_{i=0}^{n\setmin 1}\operatorname{long}(\gr_i(\mathrm{M}))$, where $\gr_\bullet(\mathrm{M})$ is the $(\mathrm{A}/\mathfrak{q})$-graded module associated to $\mathrm{M}$ equipped with the $\mathfrak{q}$-preadic filtration.
 Recall that there exists a \emph{polynomial} $\mathrm{Q}(n)$ with rational coefficients such that $\operatorname{long}(\gr_n(\mathrm{M}))=\mathrm{Q}(n)$ for $n$ sufficiently large $(\mathbf{III},~2.5.4)$; from this one deduces immediately that there exists a polynomial $\mathrm{P}_\mathfrak{q}(\mathrm{M},n)$ in $n$, with rational coefficients, such that $\operatorname{long}(\mathrm{M}/\mathfrak{q}^n\mathrm{M})=\mathrm{P}_\mathfrak{q}(\mathrm{M},n)$ \emph{for $n$ sufficiently large}; it is clear that this polynomial is unique and that its leading coefficient is $>0$ if $\mathrm{M}\neq 0$; we call it the \emph{Hilbert--Samuel polynomial} of $\mathrm{M}$ for the $\mathfrak{q}$-preadic filtration.
 \end{env}
 
@@ -230,7 +230,7 @@ If $\mathfrak{q}'$ is a second ideal of definition, one has $\mathfrak{q}'\supse
 \begin{lemma}[16.2.2.2]
 \label{0.16.2.2.2}
 Let $0\to\mathrm{M}'\to\mathrm{M}\to\mathrm{M}''\to 0$ be a short exact sequence of $\mathrm{A}$-modules of finite type.
-Then the polynomial $\mathrm{P}_\mathfrak{q}(\mathrm{M},n)-\mathrm{P}_\mathfrak{q}(\mathrm{M}',n)-\mathrm{P}_\mathfrak{q}(\mathrm{M}'',n)$ has degree $\leq d(\mathrm{M}')-1\leq d(\mathrm{M})-1$.
+Then the polynomial $\mathrm{P}_\mathfrak{q}(\mathrm{M},n)-\mathrm{P}_\mathfrak{q}(\mathrm{M}',n)-\mathrm{P}_\mathfrak{q}(\mathrm{M}'',n)$ has degree $\leq d(\mathrm{M}')\setmin 1\leq d(\mathrm{M})\setmin 1$.
 \end{lemma}
 
 \begin{proof}
@@ -295,9 +295,9 @@ This implies that $\mathfrak{p}_0$ is a \emph{minimal} element of $\Supp(\mathrm
 Let then $\mathfrak{p}_0\subset\mathfrak{p}_1\subset\ldots\subset\mathfrak{p}_n$ be a chain of distinct prime ideals in $\mathrm{A}$, and let us show that $n\leq d(\mathrm{N})$.
 This is evident if $n=0$.
 Otherwise, there exists $x\in\mathfrak{p}_1\cap\mathfrak{r}$ such that $x\notin\mathfrak{p}_0$, for the relation $\mathfrak{p}_0\supset\mathfrak{p}_1\cap\mathfrak{r}$ would imply $\mathfrak{p}_0\supset\mathfrak{r}$ since $\mathfrak{p}_0$ does not contain $\mathfrak{p}_1$, hence $\mathfrak{p}_0$ would be maximal, which is absurd.
-We have $\mathfrak{p}_i\in\Supp(\mathrm{N}/x\mathrm{N})$, for $i\geq 1$, hence $n-1\leq\dim(\mathrm{N}/x\mathrm{N})$ \sref{0.16.1.7}.
+We have $\mathfrak{p}_i\in\Supp(\mathrm{N}/x\mathrm{N})$, for $i\geq 1$, hence $n\setmin 1\leq\dim(\mathrm{N}/x\mathrm{N})$ \sref{0.16.1.7}.
 As ${}_x\mathrm{N}=0$ by the choice of $x$, we have $d(\mathrm{N}/x\mathrm{N})\leq d(\mathrm{N})-1$ by \sref{0.16.2.3.1}, (iii).
-The induction hypothesis then implies $d(\mathrm{N}/x\mathrm{N})=\dim(\mathrm{N}/x\mathrm{N})\geq n-1$, hence $n-1\leq d(\mathrm{N})-1$.
+The induction hypothesis then implies $d(\mathrm{N}/x\mathrm{N})=\dim(\mathrm{N}/x\mathrm{N})\geq n\setmin 1$, hence $n\setmin 1\leq d(\mathrm{N})-1$.
 
 \begin{env}[16.2.3.3]
 \label{0.16.2.3.3}
@@ -306,7 +306,7 @@ $d(\mathrm{M})\leq s(\mathrm{M})$.
 
 Let indeed $(x_i)_{1\leq i\leq n}$ be a family of elements of $\mathfrak{r}$ such that, if we set $\mathfrak{a}=x_1\mathrm{A}+\ldots+x_n\mathrm{A}$, $\mathrm{M}/\mathfrak{a}\mathrm{M}$ is of finite length.
 The ideals associated to $\mathrm{M}/\mathfrak{a}\mathrm{M}$ are then maximal (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, prop.~7) and since these are the only prime ideals containing $\mathfrak{q}=\mathfrak{a}+(\mathfrak{r}\cap\operatorname{Ann}(\mathrm{M}))$, $\mathrm{A}/\mathfrak{q}$ is Artinian (\emph{loc.~cit.}, prop.~9) and $\mathfrak{q}$ is an ideal of definition of $\mathrm{A}$.
-But as $\mathfrak{q}^m\mathrm{M}/\mathfrak{q}^{m+1}\mathrm{M}=\mathfrak{a}^m\mathrm{M}/\mathfrak{a}^{m+1}\mathrm{M}$, and if $\mathrm{M}$ is generated by $r$ elements $z_j$, $\mathfrak{a}^m\mathrm{M}/\mathfrak{a}^{m+1}\mathrm{M}$ is an $(\mathrm{A}/\mathfrak{q})$-module generated by the canonical images of $x_1^{\nu_1}x_2^{\nu_2}\cdots x_n^{\nu_n}z_j$ where $\sum_i\nu_i=m$, hence by $r\binom{m+n-1}{n-1}$ elements; its length is therefore $\leq ar\binom{m+n-1}{n-1}$, where $a$ is a constant, and one deduces immediately that the degree of $\mathrm{P}_\mathfrak{q}(\mathrm{M},n)$ is $\leq n$; whence $d(\mathrm{M})\leq s(\mathrm{M})$.
+But as $\mathfrak{q}^m\mathrm{M}/\mathfrak{q}^{m+1}\mathrm{M}=\mathfrak{a}^m\mathrm{M}/\mathfrak{a}^{m+1}\mathrm{M}$, and if $\mathrm{M}$ is generated by $r$ elements $z_j$, $\mathfrak{a}^m\mathrm{M}/\mathfrak{a}^{m+1}\mathrm{M}$ is an $(\mathrm{A}/\mathfrak{q})$-module generated by the canonical images of $x_1^{\nu_1}x_2^{\nu_2}\ldots x_n^{\nu_n}z_j$ where $\sum_i\nu_i=m$, hence by $r\binom{m+n\setmin 1}{n\setmin 1}$ elements; its length is therefore $\leq ar\binom{m+n\setmin 1}{n\setmin 1}$, where $a$ is a constant, and one deduces immediately that the degree of $\mathrm{P}_\mathfrak{q}(\mathrm{M},n)$ is $\leq n$; whence $d(\mathrm{M})\leq s(\mathrm{M})$.
 
 \begin{env}[16.2.3.4]
 \label{0.16.2.3.4}
@@ -332,7 +332,7 @@ Under the hypotheses of \sref{0.16.2.3}, we have
 \oldpage[0\textsubscript{IV-1}]{28}
 
 \begin{proof}
-Indeed, $\mathrm{M}/\mathfrak{r}^n\mathrm{M}$ and $\widehat{\mathrm{M}}/\mathfrak{r}^n\widehat{\mathrm{M}}$ are isomorphic, hence $d(\widehat{\mathrm{M}})=d(\mathrm{M})$.
+Indeed, $\mathrm{M}/\widehat{\mathfrak{r}}^n\mathrm{M}$ and $\widehat{\mathrm{M}}/\mathfrak{r}^n\widehat{\mathrm{M}}$ are isomorphic, hence $d(\widehat{\mathrm{M}})=d(\mathrm{M})$.
 \end{proof}
 
 \begin{corollary}[16.2.5]
@@ -362,13 +362,13 @@ Indeed, we know that if the $x_i$ $(1\leq i\leq n)$ are elements of $\mathfrak{m
 
 \begin{proposition}[16.2.7]
 \label{0.16.2.7}
-Let $k$ be a field, $\mathrm{B}$ a graded $k$-algebra of finite type generated by its elements of degree $1$ and such that $\mathrm{B}_0=k$; let $\mathrm{E}$ be a graded $\mathrm{B}$-module of finite type, such that $(\mathbf{III},~2.5.4)$ for $n$ sufficiently large, $\rg_k(\mathrm{E}_n)=r(n)$ is of the form $\Phi(n)-\Phi(n-1)$, where $\Phi$ is a polynomial in $n$ of degree $d$.
+Let $k$ be a field, $\mathrm{B}$ a graded $k$-algebra of finite type generated by its elements of degree $1$ and such that $\mathrm{B}_0=k$; let $\mathrm{E}$ be a graded $\mathrm{B}$-module of finite type, such that $(\mathbf{III},~2.5.4)$ for $n$ sufficiently large, $\rg_k(\mathrm{E}_n)=r(n)$ is of the form $\Phi(n)\setmin\Phi(n\setmin 1)$, where $\Phi$ is a polynomial in $n$ of degree $d$.
 Then there exist $d$ homogeneous elements of degree $\geq 1$ in $\mathrm{B}$, $t_1,\ldots,t_d$, forming a family $(t_i)_{1\leq i\leq d}$ such that $\mathrm{E}/(\sum_i t_i\mathrm{E})$ is of finite rank over $k$.
 \end{proposition}
 
 \begin{proof}
 Let $\mathfrak{q}$ be the maximal ideal $\bigoplus_{n\geq 1}\mathrm{B}_n$ of $\mathrm{B}$, and, for every $n$, let $\mathrm{E}_n'$ be the sub-$\mathrm{B}$-module $\bigoplus_{h\geq n+1}\mathrm{E}_h$ of $\mathrm{E}$.
-Every element of $\mathrm{B}-\mathfrak{q}$ determines an injective homothety in the Artinian $\mathrm{B}$-module $\mathrm{E}/\mathrm{E}_n'$, and this homothety is thus bijective (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection~2, n\textsuperscript{o}~2, lemma~3), which implies that $(\mathrm{E}/\mathrm{E}_n')_\mathfrak{q}$ identifies with $\mathrm{E}/\mathrm{E}_n'$; as the residue field of $\mathrm{B}_\mathfrak{q}$ is $k$, one deduces from the hypothesis that $\operatorname{long}_{\mathrm{B}_\mathfrak{q}}((\mathrm{E}/\mathrm{E}_n')_\mathfrak{q})$ is a polynomial in $n$ of degree $d$. Moreover, $\mathrm{E}$ is a $\mathrm{B}$-module of finite type and $\mathrm{B}$ is generated over $k$ by its homogeneous elements of degree $1$, hence the filtration $(\mathrm{E}_n')$ is $\mathfrak{q}$-good (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~1, n\textsuperscript{o}~3, lemma~1), hence the filtration $((\mathrm{E}_n')_\mathfrak{q})$ on $\mathrm{E}_\mathfrak{q}$ is $\mathfrak{q}\mathrm{B}_\mathfrak{q}$-good.
+Every element of $\mathrm{B}\setmin\mathfrak{q}$ determines an injective homothety in the Artinian $\mathrm{B}$-module $\mathrm{E}/\mathrm{E}_n'$, and this homothety is thus bijective (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection~2, n\textsuperscript{o}~2, lemma~3), which implies that $(\mathrm{E}/\mathrm{E}_n')_\mathfrak{q}$ identifies with $\mathrm{E}/\mathrm{E}_n'$; as the residue field of $\mathrm{B}_\mathfrak{q}$ is $k$, one deduces from the hypothesis that $\operatorname{long}_{\mathrm{B}_\mathfrak{q}}((\mathrm{E}/\mathrm{E}_n')_\mathfrak{q})$ is a polynomial in $n$ of degree $d$. Moreover, $\mathrm{E}$ is a $\mathrm{B}$-module of finite type and $\mathrm{B}$ is generated over $k$ by its homogeneous elements of degree $1$, hence the filtration $(\mathrm{E}_n')$ is $\mathfrak{q}$-good (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~1, n\textsuperscript{o}~3, lemma~1), hence the filtration $((\mathrm{E}_n')_\mathfrak{q})$ on $\mathrm{E}_\mathfrak{q}$ is $\mathfrak{q}\mathrm{B}_\mathfrak{q}$-good.
 Since $\mathrm{B}_\mathfrak{q}$ is a local Noetherian ring, one concludes from \sref{0.16.2.3} and \sref{0.16.2.2.1} that $\dim(\mathrm{E}_\mathfrak{q})=d$. We argue by induction on $d$, the assertion being evident if $d=0$.
 Suppose $d\geq 1$, and observe that the minimal prime ideals $\mathfrak{p}_i$ $(1\leq i\leq r)$ in $\operatorname{Ass}(\mathrm{E})$ are \emph{graded} (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~3, n\textsuperscript{o}~1, prop.~1), and that $\mathfrak{q}$ is distinct from the union of the $\mathfrak{p}_i$ since $d\geq 1$; there is therefore a \emph{homogeneous} element $t_1\in\mathfrak{q}$ not belonging to any of the $\mathfrak{p}_i$ (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~1, n\textsuperscript{o}~4, prop.~8).
 As the prime ideals $(\mathfrak{p}_i)_\mathfrak{q}$ are the minimal elements of $\operatorname{Ass}(\mathrm{E}_\mathfrak{q})$ (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~1, n\textsuperscript{o}~2, prop.~5), we have $\dim(\mathrm{E}_\mathfrak{q}/t_1\mathrm{E}_\mathfrak{q})=d-1$ \sref{0.16.3.4}.
@@ -390,7 +390,7 @@ The following conditions are equivalent:
 
 \begin{proof}
 Condition b) implies that $\mathfrak{a}\mathrm{A}_\mathfrak{p}$ is an ideal of definition of $\mathrm{A}_\mathfrak{p}$, whence a) by virtue of \sref{0.16.2.5}.
-Conversely, if a) holds, there exists an ideal of definition $\mathfrak{b}$ of $\mathrm{A}_\mathfrak{p}$ generated by $n$ elements $x_i/s$, with $s\in\mathrm{A}-\mathfrak{p}$.
+Conversely, if a) holds, there exists an ideal of definition $\mathfrak{b}$ of $\mathrm{A}_\mathfrak{p}$ generated by $n$ elements $x_i/s$, with $s\in\mathrm{A}\setmin\mathfrak{p}$.
 By virtue of the one-to-one correspondence between prime ideals of $\mathrm{A}_\mathfrak{p}$ and prime ideals of $\mathrm{A}$ contained in $\mathfrak{p}$, the ideal $\mathfrak{a}$ of $\mathrm{A}$ generated by the $x_i$ satisfies b).
 \end{proof}
 
@@ -399,7 +399,7 @@ For $n=1$, one obtains the special case:
 
 \begin{corollary}[16.3.2]
 \label{0.16.3.2}
-\textup{(``Hauptidealsatz'').}
+\textup{(«~Hauptidealsatz~»).}
 For a prime ideal in a Noetherian ring to be of height $\leq 1$, it is necessary and sufficient that it be minimal in the set of prime ideals containing a suitable principal ideal.
 \end{corollary}
 
@@ -421,7 +421,7 @@ As the product of the $\mathfrak{m}_i$ is not zero, since $\mathrm{A}$ is integr
 Let us now prove that $b)$ implies $a)$; the hypothesis $b)$ means that every prime ideal $\mathfrak{p}\neq 0$ of $\mathrm{A}$ contains $f$.
 Let $\mathfrak{p}_i$ $(1\leq i\leq n)$ be the minimal prime ideals among those containing $f$ (which are finite in number since $\mathrm{A}/f\mathrm{A}$ is Noetherian); it suffices to prove that the $\mathfrak{p}_i$ are \emph{maximal} ideals, for then every nonzero prime ideal necessarily contains one of the $\mathfrak{p}_i$ and is therefore equal to it.
 Suppose then that there exists a maximal ideal $\mathfrak{m}$ containing one of the $\mathfrak{p}_i$ and distinct from the $\mathfrak{p}_i$; $\mathfrak{m}$ is therefore not contained in the union of the $\mathfrak{p}_i$ (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~1, n\textsuperscript{o}~1, prop.~2), in other words there exists $g\in\mathfrak{m}$ not belonging to any of the $\mathfrak{p}_i$.
-Let $\mathfrak{q}$ be a minimal prime ideal among those containing $g$; it follows from the ``Hauptidealsatz'' \sref{0.16.3.2} that $\mathfrak{q}$ is of height 1, hence $\neq 0$; it therefore contains by assumption $f$, hence also one of the $\mathfrak{p}_i$, and as $g$ does not belong to any of the $\mathfrak{p}_i$, $\mathfrak{q}$ is distinct from the $\mathfrak{p}_i$; it would thus be of height $\geq 2$, which is a contradiction.
+Let $\mathfrak{q}$ be a minimal prime ideal among those containing $g$; it follows from the «~Hauptidealsatz~» \sref{0.16.3.2} that $\mathfrak{q}$ is of height 1, hence $\neq 0$; it therefore contains by assumption $f$, hence also one of the $\mathfrak{p}_i$, and as $g$ does not belong to any of the $\mathfrak{p}_i$, $\mathfrak{q}$ is distinct from the $\mathfrak{p}_i$; it would thus be of height $\geq 2$, which is a contradiction.
 \end{proof}
 
 \begin{proposition}[16.3.4]
@@ -445,7 +445,7 @@ Set $\mathrm{N}=\mathrm{M}/x\mathrm{M}$.
 If $x_1,\ldots,x_n$ are elements of $\mathfrak{r}$ such that $\mathrm{M}/(x\mathrm{M}+x_1\mathrm{M}+\ldots+x_n\mathrm{M})$ is of finite length, we have $s(\mathrm{M})\leq n+1$, hence $\dim(\mathrm{M})\leq n+1$ by \sref{0.16.2.3}, and as one can choose them so that $n=s(\mathrm{N})=\dim(\mathrm{N})$, we get \sref{0.16.3.4.1}.
 
 The fact that the two members of \sref{0.16.3.4.1} are equal when $x$ does not belong to any of the $\mathfrak{p}_i$ follows from \sref{0.16.3.4.1} and \sref{0.16.2.3.1}.
-Conversely, if \oldpage[0\textsubscript{IV-1}]{30} $\dim(\mathrm{M}/x\mathrm{M})=\dim(\mathrm{M})-1$, none of the $\mathfrak{p}_i$ can belong to $\Supp(\mathrm{M}/x\mathrm{M})$, and the prime ideals in the support of the latter are those containing $\operatorname{Ann}(\mathrm{M})+\mathrm{A}x$; since the $\mathfrak{p}_i$ contain $\operatorname{Ann}(\mathrm{M})$, they cannot contain $x$.
+Conversely, if \oldpage[0\textsubscript{IV-1}]{30} $\dim(\mathrm{M}/x\mathrm{M})=\dim(\mathrm{M})\setmin 1$, none of the $\mathfrak{p}_i$ can belong to $\Supp(\mathrm{M}/x\mathrm{M})$, and the prime ideals in the support of the latter are those containing $\operatorname{Ann}(\mathrm{M})+\mathrm{A}x$; since the $\mathfrak{p}_i$ contain $\operatorname{Ann}(\mathrm{M})$, they cannot contain $x$.
 \end{proof}
 
 \begin{corollary}[16.3.5]
@@ -499,7 +499,7 @@ Then there exist $r$ elements $x_1,\ldots,x_r$ of $\mathfrak{a}$, forming part o
 \begin{proof}
 Let $\mathfrak{p}_i$ $(1\leq i\leq m)$ be the minimal prime ideals of the ring $\mathrm{A}$, $\mathfrak{q}_j$ $(1\leq j\leq n)$ the minimal prime ideals among those containing $\mathfrak{a}$; we have \sref{0.14.2.1} $\codim(\mathrm{V}(\mathfrak{a}),\mathrm{X})=\inf_j(\dim(\mathrm{A}_{\mathfrak{q}_j}))$ \sref{0.16.1.3.2}.
 The hypothesis $r>0$ implies that $\mathfrak{a}$ is not contained in any of the $\mathfrak{p}_i$; hence there exists $x\in\mathfrak{a}$ not belonging to any of the $\mathfrak{p}_i$ (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~1, n\textsuperscript{o}~1, prop.~2).
-One has as above $\codim(\mathrm{V}(\mathfrak{a}),\mathrm{V}(\mathrm{A}x))=\inf_j(\dim((\mathrm{A}/\mathrm{A}x)_{\mathfrak{q}_j/\mathrm{A}x}))=\inf_j(\dim(\mathrm{A}_{\mathfrak{q}_j}/\mathrm{A}_{\mathfrak{q}_j}x))$; but as $x/1$ is not in any of the minimal prime ideals of $\mathrm{A}_{\mathfrak{q}_j}$, $\dim(\mathrm{A}_{\mathfrak{q}_j}/\mathrm{A}_{\mathfrak{q}_j}x)=\dim(\mathrm{A}_{\mathfrak{q}_j})-1$ \sref{0.16.3.4}, whence $\codim(\mathrm{V}(\mathfrak{a}),\mathrm{V}(\mathrm{A}x))=r-1$.
+One has as above $\codim(\mathrm{V}(\mathfrak{a}),\mathrm{V}(\mathrm{A}x))=\inf_j(\dim((\mathrm{A}/\mathrm{A}x)_{\mathfrak{q}_j/\mathrm{A}x}))=\inf_j(\dim(\mathrm{A}_{\mathfrak{q}_j}/\mathrm{A}_{\mathfrak{q}_j}x))$; but as $x/1$ is not in any of the minimal prime ideals of $\mathrm{A}_{\mathfrak{q}_j}$ $\dim(\mathrm{A}_{\mathfrak{q}_j}/\mathrm{A}_{\mathfrak{q}_j}x)=\dim(\mathrm{A}_{\mathfrak{q}_j})-1$ \sref{0.16.3.4}, whence $\codim(\mathrm{V}(\mathfrak{a}),\mathrm{V}(\mathrm{A}x))=r-1$.
 For the same reason, $\dim(\mathrm{A}/\mathrm{A}x)=\dim(\mathrm{A})-1$.
 We argue by induction on $r$; if $r>1$, there exist $r-1$ elements $x_i'$ $(2\leq i\leq r)$ of $\mathrm{A}'=\mathrm{A}/\mathrm{A}x$, forming part of a system of parameters of $\mathrm{A}'$ and such that $\codim(\mathrm{V}(\mathfrak{a}/\mathrm{A}x),\mathrm{V}(\mathrm{A}'x_2'+\ldots+\mathrm{A}'x_r'))=0$.
 Let $(x_i')_{r+1\leq i\leq s}$ be a family of elements of $\mathrm{A}'$ such that $(x_i')_{2\leq i\leq s}$ is a system of parameters of $\mathrm{A}'$; for every $i$ such that $2\leq i\leq s$, let $x_i$ be a representative of the class $x_i'$ in $\mathrm{A}$, with $x_i\in\mathfrak{a}$ for $2\leq i\leq r$. It is immediate that $\mathrm{A}/(\mathrm{A}x+\mathrm{A}x_2+\ldots+\mathrm{A}x_s)$ is of finite length, and as $\dim(\mathrm{A})=s$, we see that $x_1=x$ and the $x_i$ for $i\geq 2$ satisfy the conditions of the statement.
@@ -675,7 +675,7 @@ We know that there exists a short exact sequence
 \[
   0\to\mathrm{M}'\to\mathrm{M}\to\mathrm{M}''\to 0
 \]
-such that $\operatorname{Ass}(\mathrm{M}')=\{\mathfrak{p}\}$, $\operatorname{Ass}(\mathrm{M}'')=\operatorname{Ass}(\mathrm{M})-\{\mathfrak{p}\}$ (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~1, n\textsuperscript{o}~1, prop.~4); as $t$ is $\mathrm{M}$-regular, it is also $\mathrm{M}'$-regular and $\mathrm{M}''$-regular (\emph{loc.~cit.}, \textsection~1, n\textsuperscript{o}~1, cor.~2 of prop.~2).
+such that $\operatorname{Ass}(\mathrm{M}')=\{\mathfrak{p}\}$, $\operatorname{Ass}(\mathrm{M}'')=\operatorname{Ass}(\mathrm{M})\setmin\{\mathfrak{p}\}$ (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~1, n\textsuperscript{o}~1, prop.~4); as $t$ is $\mathrm{M}$-regular, it is also $\mathrm{M}'$-regular and $\mathrm{M}''$-regular (\emph{loc.~cit.}, \textsection~1, n\textsuperscript{o}~1, cor.~2 of prop.~2).
 One deduces that the sequence
 \[
   0\to\mathrm{M}'/t\mathrm{M}'\to\mathrm{M}/t\mathrm{M}\to\mathrm{M}''/t\mathrm{M}''\to 0
@@ -702,7 +702,7 @@ One notes that if $\mathfrak{p}$ is a prime ideal of $\mathrm{A}$, one can \emph
 it suffices to take $\mathrm{A}$ a local integral ring of dimension $\geq 1$; we have $\operatorname{prof}(\mathrm{A})\geq 1$ but $\operatorname{prof}(\mathrm{K})=0$ for the field of fractions $\mathrm{K}$ of $\mathrm{A}$.
 For an example of the second case, consider a Noetherian integral local ring $\mathrm{A}_0$ of dimension $\geq 2$, with maximal ideal $\mathfrak{m}_0$ and residue field $k=\mathrm{A}_0/\mathfrak{m}_0$; let $\mathrm{A}=\mathrm{A}_0\oplus\mathfrak{J}$ be the trivial extension of $\mathrm{A}_0$ by the $\mathrm{A}_0$-module $k$ (so that the multiplication in $\mathrm{A}$ is given by $(x,z)(x',z')=(xx',xz'+x'z)$).
 It is clear that $\mathfrak{J}$ is the nilradical of $\mathrm{A}$ and $\mathrm{A}/\mathfrak{J}$ is isomorphic to $\mathrm{A}_0$, so that every prime ideal $\mathfrak{p}$ of $\mathrm{A}$ is of the form $\mathfrak{p}_0\oplus\mathfrak{J}$, where $\mathfrak{p}_0$ is a prime ideal of $\mathrm{A}_0$; in particular $\mathfrak{m}=\mathfrak{m}_0\oplus\mathfrak{J}$ is the only maximal ideal of $\mathrm{A}$.
-As every element of $\mathfrak{m}_0$ annihilates $\mathfrak{J}$, we have $\operatorname{prof}(\mathrm{A})=\operatorname{prof}(\mathrm{A}_\mathfrak{m})=0$; on the contrary, if $\mathfrak{p}_0\neq\mathfrak{m}_0$, the elements of $\mathfrak{J}$ are annihilated by those of $\mathfrak{m}_0-\mathfrak{p}_0$, hence $\mathrm{A}_\mathfrak{p}$ is canonically isomorphic to $(\mathrm{A}_0)_{\mathfrak{p}_0}$, and as $\mathrm{A}_0$ is integral, $\operatorname{prof}((\mathrm{A}_0)_{\mathfrak{p}_0})\geq 1$ if $\mathfrak{p}_0\neq 0$.
+As every element of $\mathfrak{m}_0$ annihilates $\mathfrak{J}$, we have $\operatorname{prof}(\mathrm{A})=\operatorname{prof}(\mathrm{A}_\mathfrak{m})=0$; on the contrary, if $\mathfrak{p}_0\neq\mathfrak{m}_0$, the elements of $\mathfrak{J}$ are annihilated by those of $\mathfrak{m}_0\setmin\mathfrak{p}_0$, hence $\mathrm{A}_\mathfrak{p}$ is canonically isomorphic to $(\mathrm{A}_0)_{\mathfrak{p}_0}$, and as $\mathrm{A}_0$ is integral, $\operatorname{prof}((\mathrm{A}_0)_{\mathfrak{p}_0})\geq 1$ if $\mathfrak{p}_0\neq 0$.
 \end{env}
 
 \begin{corollary}[16.4.7]
@@ -824,9 +824,9 @@ One can also say that $\mathrm{M}$ (or $\Supp(\mathrm{M})$) is \emph{equidimensi
 Let $\mathrm{A}$ be a local Noetherian ring, $\mathfrak{m}$ its maximal ideal, $\mathrm{M}$ an $\mathrm{A}$-module of finite type $\neq 0$, $x$ an element of $\mathfrak{m}$.
 Suppose that $\mathrm{M}$ is a Cohen-Macaulay module; then the following conditions are equivalent:
 \begin{enumerate}
-  \item[a)] $x$ is $\mathrm{M}$-regular;
-  \item[b)] $\dim(\mathrm{M}/x\mathrm{M})=\dim(\mathrm{M})-1$;
-  \item[c)] $x$ does not belong to any \emph{minimal} element of $\Supp(\mathrm{M})$.
+  \item[\textup{a)}] $x$ is $\mathrm{M}$-regular;
+  \item[\textup{b)}] $\dim(\mathrm{M}/x\mathrm{M})=\dim(\mathrm{M})-1$;
+  \item[\textup{c)}] $x$ does not belong to any \emph{minimal} element of $\Supp(\mathrm{M})$.
 \end{enumerate}
 Furthermore, $\mathrm{M}/x\mathrm{M}$ is then a Cohen-Macaulay module.
 \end{proposition}
@@ -841,9 +841,9 @@ The fact that $\mathrm{M}/x\mathrm{M}$ is a Cohen-Macaulay module follows finall
 Under the hypotheses of \sref{0.16.5.5}, let $(x_i)_{1\leq i\leq r}$ be a sequence of elements of $\mathfrak{m}$.
 The following conditions are equivalent:
 \begin{enumerate}
-  \item[a)] The sequence $(x_i)$ is $\mathrm{M}$-regular.
-  \item[b)] $\dim(\mathrm{M}/(x_1\mathrm{M}+\ldots+x_r\mathrm{M}))=\dim(\mathrm{M})-r$.
-  \item[c)] The $x_i$ form part of a system of parameters for $\mathrm{M}$.
+  \item[\textup{a)}] The sequence $(x_i)$ is $\mathrm{M}$-regular.
+  \item[\textup{b)}] $\dim(\mathrm{M}/(x_1\mathrm{M}+\ldots+x_r\mathrm{M}))=\dim(\mathrm{M})-r$.
+  \item[\textup{c)}] The $x_i$ form part of a system of parameters for $\mathrm{M}$.
 \end{enumerate}
 Furthermore, when these conditions are satisfied, $\mathrm{N}=\mathrm{M}/(x_1\mathrm{M}+\ldots+x_r\mathrm{M})$ is a Cohen-Macaulay module, hence for every prime ideal $\mathfrak{p}\in\operatorname{Ass}(\mathrm{N})$, we have $\dim(\mathrm{A}/\mathfrak{p})=\dim(\mathrm{M})-r$.
 \end{corollary}
@@ -881,7 +881,7 @@ If we set $\mathrm{P}=\mathrm{M}/y_1\mathrm{M}$, then $(y_i)_{2\leq i\leq n}$ is
 \label{0.16.5.9}
 Let $\mathrm{A}$ be a local Noetherian ring, $\mathrm{M}$ an $\mathrm{A}$-module of finite type.
 Suppose that $\mathrm{M}$ is a Cohen-Macaulay module.
-Let $\mathfrak{p}\in\Supp(\mathrm{M})$, and set $r=\dim(\mathrm{M})-\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})$.
+Let $\mathfrak{p}\in\Supp(\mathrm{M})$, and set $r=\dim(\mathrm{M})\setmin\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})$.
 Then there exists an $\mathrm{M}$-regular sequence $(x_i)_{1\leq i\leq r}$, formed of elements of $\mathfrak{p}$; for every such sequence, we have
 \[
   \dim(\mathrm{M}/(x_1\mathrm{M}+\ldots+x_r\mathrm{M}))=\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})=\dim(\mathrm{A}/\mathfrak{p}),
@@ -893,7 +893,7 @@ and $\mathfrak{p}$ is a \emph{minimal} element of $\operatorname{Ass}(\mathrm{M}
 Let us first prove the existence of the $x_i$; there is nothing to prove for $r=0$.
 For $r>0$, we proceed by induction.
 As for every prime ideal $\mathfrak{q}_i$ associated to $\mathrm{M}$ we have $\dim(\mathrm{A}/\mathfrak{q}_i)=\dim(\mathrm{M})$ \sref{0.16.5.4}, the hypothesis $\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})<\dim(\mathrm{M})$ implies that $\mathfrak{p}$ cannot be contained in any of the $\mathfrak{q}_i$, the latter being the minimal prime ideals among those containing $\operatorname{Ann}(\mathrm{M})$ \sref{0.16.1.2.2} and \sref{0.16.1.7}; one concludes that $\mathfrak{p}$ is not contained in the union of the $\mathfrak{q}_i$ (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~1, n\textsuperscript{o}~1, prop.~2), and hence there exists $x_1\in\mathfrak{p}$ that is $\mathrm{M}$-regular (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~1, n\textsuperscript{o}~1, cor.~2 of prop.~2).
-It follows from \sref{0.16.5.5} that $\mathrm{N}=\mathrm{M}/x_1\mathrm{M}$ is a Cohen-Macaulay module, of dimension $\dim(\mathrm{M})-1$; as $x_1\in\mathfrak{p}$, moreover $\mathrm{N}/\mathfrak{p}\mathrm{N}=\mathrm{M}/\mathfrak{p}\mathrm{M}$, whence $\dim(\mathrm{N})-\dim(\mathrm{N}/\mathfrak{p}\mathrm{N})=r-1$; one can therefore apply the induction hypothesis to $\mathrm{N}$, and if $(x_i)_{2\leq i\leq r}$ is an $\mathrm{N}$-regular sequence formed of elements of $\mathfrak{p}$, it is clear that $(x_i)_{1\leq i\leq r}$ is an $\mathrm{M}$-regular sequence formed of elements of $\mathfrak{p}$.
+It follows from \sref{0.16.5.5} that $\mathrm{N}=\mathrm{M}/x_1\mathrm{M}$ is a Cohen-Macaulay module, of dimension $\dim(\mathrm{M})-1$; as $x_1\in\mathfrak{p}$, moreover $\mathrm{N}/\mathfrak{p}\mathrm{N}=\mathrm{M}/\mathfrak{p}\mathrm{M}$, whence $\dim(\mathrm{N})\setmin\dim(\mathrm{N}/\mathfrak{p}\mathrm{N})=r-1$; one can therefore apply the induction hypothesis to $\mathrm{N}$, and if $(x_i)_{2\leq i\leq r}$ is an $\mathrm{N}$-regular sequence formed of elements of $\mathfrak{p}$, it is clear that $(x_i)_{1\leq i\leq r}$ is an $\mathrm{M}$-regular sequence formed of elements of $\mathfrak{p}$.
 
 Now if one sets $\mathrm{P}=\mathrm{M}/(x_1\mathrm{M}+\ldots+x_r\mathrm{M})$, we have $\mathrm{P}/\mathfrak{p}\mathrm{P}=\mathrm{M}/\mathfrak{p}\mathrm{M}$ since the $x_i$ are in $\mathfrak{p}$, and $\dim(\mathrm{P})=\dim(\mathrm{P}/\mathfrak{p}\mathrm{P})$ by \sref{0.16.5.6}.
 But since $\mathrm{P}$ is a Cohen-Macaulay module, we also have $\dim(\mathrm{P})=\dim(\mathrm{A}/\mathfrak{p}')$ for every $\mathfrak{p}'\in\operatorname{Ass}(\mathrm{P})$ \sref{0.16.5.4}.
@@ -917,7 +917,7 @@ Under the same hypotheses as in \sref{0.16.5.9}:
 \begin{proof}
 With the notations of \sref{0.16.5.9}, let $x_i'$ be the canonical images of the $x_i$ in $\mathrm{A}_\mathfrak{p}$ $(1\leq i\leq r)$; as the $x_i'$ belong to the maximal ideal of $\mathrm{A}_\mathfrak{p}$ and form a $\mathrm{M}_\mathfrak{p}$-regular sequence by flatness \sref{0.15.1.14}, we have
 \[
-  \operatorname{prof}_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\geq r=\dim(\mathrm{M})-\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})\geq\dim_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})
+  \operatorname{prof}_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\geq r=\dim(\mathrm{M})\setmin\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})\geq\dim_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})
 \]
 (by virtue of \sref{0.16.1.8.1}).
 But taking into account \sref{0.16.4.5.1}, the three terms of this inequality are necessarily equal, whence the corollary.

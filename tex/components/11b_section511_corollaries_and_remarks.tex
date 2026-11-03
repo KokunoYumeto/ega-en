@@ -29,7 +29,7 @@ $1$, whereas $\mathfrak nA$ has height $2$, contradicting
 \begin{corollary}[5.11.4]
 \label{IV.5.11.4}
 Let $X$ be a locally Noetherian prescheme, let $Z$ be a closed
-subset of $X$, put $U=X-Z$, and let $i:U\to X$ be the canonical
+subset of $X$, put $U=X\setmin Z$, and let $i:U\to X$ be the canonical
 injection.  Let $\sh F$ be a coherent $\sh O_U$-module.  A
 necessary condition for $i_*(\sh F)$ to be a coherent
 $\sh O_X$-module is that
@@ -79,13 +79,13 @@ definition.
 Let $X$ be a locally Noetherian prescheme, let $Z$ be a subset
 of $X$ stable under specialization, and let $\sh F$ be a coherent
 $\sh O_X$-module such that
-$\operatorname{Ass}(\sh F)\subset X-Z$.  Consider the conditions:
+$\operatorname{Ass}(\sh F)\subset X\setmin Z$.  Consider the conditions:
 \begin{enumerate}[{\rm a)}]
   \item $\sh H^0_{X/Z}(\sh F)$ is a coherent
   $\sh O_X$-module.
   \item[{\rm d)}] For every subset $T$ of $Z$ closed in $X$,
-  $i_*(\sh F|X-T)$ is coherent, where
-  $i:X-T\to X$ is the canonical injection.  It is enough here
+  $i_*(\sh F|X\setmin T)$ is coherent, where
+  $i:X\setmin T\to X$ is the canonical injection.  It is enough here
 
 \oldpage[IV-2]{125}
 
@@ -105,7 +105,7 @@ The hypothesis and \sref{IV.3.1.13} give
 \]
 It follows from \sref{IV.5.10.2} that the canonical maps
 \[
-  i_*(\sh F|X-T)\longrightarrow\sh H^0_{X/Z}(\sh F)
+  i_*(\sh F|X\setmin T)\longrightarrow\sh H^0_{X/Z}(\sh F)
 \]
 are injective.  Condition {\rm a)} therefore implies {\rm d)}.
 
@@ -136,10 +136,10 @@ following properties:
     \geq2
   \]
   for every
-  $x\in\operatorname{Ass}(\sh F)\cap(X-Z)$, the module
+  $x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$, the module
   $\sh H^0_{X/Z}(\sh F)$ is coherent.
   \item For every closed subset $T$ of $X$ and every coherent
-  $\sh O_U$-module $\sh G$, where $U=X-T$, such that
+  $\sh O_U$-module $\sh G$, where $U=X\setmin T$, such that
   \[
     \codim\bigl(\overline{\{x\}}\cap T,\overline{\{x\}}\bigr)
     \geq2

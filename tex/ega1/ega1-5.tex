@@ -37,7 +37,7 @@ $\mathscr{O}_X$.
 \label{I.5.1.2}
 Let $X$ be a prescheme; the closed sub-prescheme of $X$ defined by the sheaf
 of ideals $\mathscr{N}_X$ is the only reduced sub-prescheme
-(\hyperref[0.4.1.4]{0, 4.1.4}) of $X$ having $X$ as underlying space;
+(\hyperref[0.4.1.4]{\textbf{0}, 4.1.4}) of $X$ having $X$ as underlying space;
 it is also the smallest sub-prescheme of $X$ having $X$ as underlying
 space.
 \end{corollary}
@@ -112,7 +112,7 @@ $\theta^\sharp$ a homomorphism
 it is clear that for every $x\in X$,
 $\omega_x:\mathscr{O}_{\psi(x)}/\mathscr{N}_{\psi(x)}
 \to\mathscr{O}_x/\mathscr{N}_x$ is a local homomorphism, so
-$(\psi,\omega^b)$ is a morphism of preschemes
+$(\psi,\omega^\flat)$ is a morphism of preschemes
 $X_{\mathrm{red}}\to Y_{\mathrm{red}}$, which we will denote by
 $f_{\mathrm{red}}$ and call the \emph{reduced} morphism associated to $f$. It
 is immediate that for two morphisms $f:X\to Y$, $g:Y\to Z$, we have
@@ -146,7 +146,7 @@ $f$.
 \end{proposition}
 
 The proposition is trivial if $f$ is surjective; if $f$ is radicial, it
-follows from the fact that for every $x\in X$, the field $k(x)$ is the same
+follows from the fact that for every $x\in X$, the field $\boldsymbol{k}(x)$ is the same
 for the preschemes $X$ and $X_{\mathrm{red}}$
 (\hyperref[I.3.5.8]{3.5.8}). Finally, if $f=(\psi,\theta)$ is an
 immersion, a closed immersion or a local immersion (resp. an open immersion,
@@ -224,7 +224,7 @@ and since the underlying topological spaces $X_0$ and $X$ are identical,
 $\mathfrak{K}=\Gamma(X_0,\mathscr{J})$; moreover, since
 $\mathscr{J}^2=0$, $\mathscr{J}$ is a quasi-coherent
 $(\mathscr{O}_X/\mathscr{J})$-module, so we have
-$\mathscr{J}\simeq\widetilde{\mathfrak{K}}$ and
+$\mathscr{J}\cong\widetilde{\mathfrak{K}}$ and
 $\mathfrak{K}_x=\mathscr{J}_x$ for every $x\in X_0$
 (\hyperref[I.1.4.1]{1.4.1}).
 
@@ -288,7 +288,7 @@ $\mathscr{F}$ (T, 4.2.3); it all comes down, therefore, to proving that such
 an extension $\mathscr{G}$ is trivial. Now, for every $y\in Y$, there is a
 neighbourhood $V$ of $y$ in $Y$ such that $\mathscr{G}|V$ is isomorphic to
 $\mathscr{F}|V\oplus\mathscr{O}_Y|V$
-(\hyperref[0.5.4.9]{0, 5.4.9}); we conclude that $\mathscr{G}$ is a
+(\hyperref[0.5.4.9]{\textbf{0}, 5.4.9}); we conclude that $\mathscr{G}$ is a
 quasi-coherent $\mathscr{O}_Y$-module. If $A$ is the ring of $Y$, we
 therefore have $\mathscr{F}=\widetilde{M}$, $\mathscr{G}=\widetilde{N}$,
 where $M$ and $N$ are $A$-modules, and by hypothesis $N$ is an extension of
@@ -360,9 +360,9 @@ $Z$ on the open subspace $X$ by virtue of the uniqueness
 
 \begin{corollary}[5.2.4]
 \label{I.5.2.4}
-Let $f:X\to Y$ be a morphism, and $X'$ (resp. $Y'$) a closed sub-prescheme of
-$X$ (resp. $Y$) defined by a quasi-coherent sheaf of ideals $\mathscr{J}$
-(resp. $\mathscr{K}$) of $\mathscr{O}_X$ (resp. $\mathscr{O}_Y$). Suppose
+Let $f:X\to Y$ be a morphism, and $X'$ (\textup{resp.} $Y'$) a closed sub-prescheme of
+$X$ (\textup{resp.} $Y$) defined by a quasi-coherent sheaf of ideals $\mathscr{J}$
+(\textup{resp.} $\mathscr{K}$) of $\mathscr{O}_X$ (\textup{resp.} $\mathscr{O}_Y$). Suppose
 that $X'$ is reduced and that $f(X')\subset Y'$. Then we have
 $f^*(\mathscr{K})\mathscr{O}_X\subset\mathscr{J}$.
 \end{corollary}
@@ -642,35 +642,35 @@ $\Delta_X(X)$ by virtue of the commutativity of the diagram
 \begin{corollary}[5.3.17]
 \label{I.5.3.17}
 Let $f_1:Y\to X$, $f_2:Y\to X$ be two $S$-morphisms, and $y$ a point of $Y$
-such that $f_1(y)=f_2(y)=x$ and such that the homomorphisms $k(x)\to k(y)$
+such that $f_1(y)=f_2(y)=x$ and such that the homomorphisms $\boldsymbol{k}(x)\to\boldsymbol{k}(y)$
 corresponding to $f_1$ and $f_2$ are identical. Then, if
 $f=(f_1,f_2)_S$, the point $f(y)$ belongs to the diagonal
 $\Delta_{X|S}(X)$.
 \end{corollary}
 
-The two homomorphisms $k(x)\to k(y)$ corresponding to $f_i$ ($i=1,2$)
+The two homomorphisms $\boldsymbol{k}(x)\to\boldsymbol{k}(y)$ corresponding to $f_i$ ($i=1,2$)
 define two $S$-morphisms
-$g_i:\operatorname{Spec}(k(y))\to\operatorname{Spec}(k(x))$ such that the
+$g_i:\operatorname{Spec}(\boldsymbol{k}(y))\to\operatorname{Spec}(\boldsymbol{k}(x))$ such that the
 diagrams
 \[
   \xymatrix{
-    \operatorname{Spec}(k(y))\ar[r]^{g_i}\ar[d] &
-    \operatorname{Spec}(k(x))\ar[d]\\
+    \operatorname{Spec}(\boldsymbol{k}(y))\ar[r]^{g_i}\ar[d] &
+    \operatorname{Spec}(\boldsymbol{k}(x))\ar[d]\\
     Y\ar[r]_{f_i} & X
   }
 \]
 are commutative. The diagram
 \[
   \xymatrix{
-    \operatorname{Spec}(k(y))\ar[rr]^{(g_1,g_2)_S}\ar[d] & &
-    \operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(x))\ar[d]\\
+    \operatorname{Spec}(\boldsymbol{k}(y))\ar[rr]^{(g_1,g_2)_S}\ar[d] & &
+    \operatorname{Spec}(\boldsymbol{k}(x))\times_S\operatorname{Spec}(\boldsymbol{k}(x))\ar[d]\\
     Y\ar[rr]_{(f_1,f_2)_S} & & X\times_S X
   }
 \]
 is therefore also commutative. Now it follows from the equality $g_1=g_2$
 that the image under $(g_1,g_2)_S$ of the unique point of
-$\operatorname{Spec}(k(y))$ belongs to the diagonal of
-$\operatorname{Spec}(k(x))\times_S\operatorname{Spec}(k(x))$; the conclusion
+$\operatorname{Spec}(\boldsymbol{k}(y))$ belongs to the diagonal of
+$\operatorname{Spec}(\boldsymbol{k}(x))\times_S\operatorname{Spec}(\boldsymbol{k}(x))$; the conclusion
 therefore follows from (\hyperref[I.5.3.15]{5.3.15}).
 
 \subsection{Separated morphisms and preschemes.}
@@ -752,7 +752,7 @@ $S$-scheme. If two $S$-sections $f$, $g$ of $X$ are such that $f(s)=g(s)$,
 then $f=g$.
 \end{corollary}
 
-Indeed, if $x=f(s)=g(s)$, the homomorphisms $k(x)\to k(s)$ corresponding to
+Indeed, if $x=f(s)=g(s)$, the homomorphisms $\boldsymbol{k}(x)\to\boldsymbol{k}(s)$ corresponding to
 $f$ and $g$ are necessarily identical. If $h=(f,g)_S$, we deduce from this
 (\hyperref[I.5.3.17]{5.3.17}) that $h(s)$ belongs to the diagonal
 $Z=\Delta_X(X)$; but since $S=\overline{\{s\}}$ and $Z$ is closed by
@@ -893,7 +893,7 @@ closed in $X\times_Y X$, so is their union $\Delta_X(X)$.
 Suppose in particular that the $X_k$ are the
 \emph{irreducible components} of $X$; then we may suppose that the $Y_k$
 are irreducible components of $Y$
-(\hyperref[0.2.1.5]{0, 2.1.5}); in this case Proposition
+(\hyperref[0.2.1.5]{\textbf{0}, 2.1.5}); in this case Proposition
 (\hyperref[I.5.5.4]{5.5.4}) therefore reduces the notion of separatedness
 to the case of \emph{integral} preschemes (\hyperref[I.2.1.7]{2.1.7}).
 
@@ -907,7 +907,7 @@ of its restrictions $f^{-1}(Y_\lambda)\to Y_\lambda$ be separated.
 \end{proposition}
 
 If we set $X_\lambda=f^{-1}(Y_\lambda)$, it all comes down, taking into
-account (\hyperref[I.4.2.4]{4.2.4, b)}) and the identity of the products
+account (\hyperref[I.4.2.4]{4.2.4, \emph{b)}}) and the identity of the products
 $X_\lambda\times_Y X_\lambda$ and
 $X_\lambda\times_{Y_\lambda}X_\lambda$
 (\hyperref[I.3.2.5]{3.2.5}), to proving that the

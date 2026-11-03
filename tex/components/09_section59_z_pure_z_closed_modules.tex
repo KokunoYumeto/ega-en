@@ -16,7 +16,7 @@ that $Z$ is the union of a filtered increasing family $(Z_\alpha)$ of
 closed subsets of $X$; conversely, such a union is plainly stable
 under specialization.
 
-Put $U_\alpha=X-Z_\alpha$.  Then $X-Z$ is the intersection of the
+Put $U_\alpha=X\setmin Z_\alpha$.  Then $X-Z$ is the intersection of the
 filtered decreasing family of open subsets $U_\alpha$.  Let
 $i_\alpha:U_\alpha\to X$ be the canonical injection, and, whenever
 $U_\alpha\supset U_\beta$, let
@@ -58,7 +58,7 @@ This $\sh O_X$-module does not depend on the increasing family
 $(Z_\alpha)$ of closed subsets having union $Z$.  Indeed, let $V$ be
 a Noetherian open subset of $X$.  In the category of
 $\sh O_V$-modules, the functor
-$\sh G\mapsto\Gamma(V,\sh G)$ commutes with inductive limits
+$\sh G\leadsto\Gamma(V,\sh G)$ commutes with inductive limits
 (G,~II, 3.10.1); hence \eqref{IV.5.9.1.1} gives
 \begin{equation}
 \label{IV.5.9.1.2}
@@ -81,7 +81,7 @@ there is a $\lambda$ such that
 \]
 Equivalently, $V\cap Z_\alpha\subset V\cap Z'_\lambda$.  The two
 filtered decreasing families $V\cap U_\alpha$ and
-$V\cap U'_\lambda$, where $U'_\lambda=X-Z'_\lambda$, are therefore
+$V\cap U'_\lambda$, where $U'_\lambda=X\setmin Z'_\lambda$, are therefore
 cofinal.  The asserted independence follows from
 \eqref{IV.5.9.1.2}.
 
@@ -92,10 +92,10 @@ $X=\Spec(A)$, where $A$ is a Noetherian domain having infinitely many
 maximal ideals, and let $Z$ be the complement of the generic point of
 $X$.
 
-If $Z$ is closed and $i:X-Z\to X$ is the canonical injection, then
+If $Z$ is closed and $i:X\setmin Z\to X$ is the canonical injection, then
 \begin{equation}
 \label{IV.5.9.1.3}
- \sh H^0_{X/Z}(\sh F)=i_*(\sh F|X-Z).
+ \sh H^0_{X/Z}(\sh F)=i_*(\sh F|X\setmin Z)
 \tag{5.9.1.3}
 \end{equation}
 In particular, when $Z=\varnothing$,
@@ -105,7 +105,7 @@ $\sh H^0_{X/Z}(\sh F)=\sh F$.
 \label{IV.5.9.2}
 \begin{enumerate}[{\rm(i)}]
   \item\label{IV.5.9.2.i}
-    The functor $\sh F\mapsto\sh H^0_{X/Z}(\sh F)$ is left exact.
+    The functor $\sh F\leadsto\sh H^0_{X/Z}(\sh F)$ is left exact.
   \item\label{IV.5.9.2.ii}
     If $\sh F$ is quasi-coherent, so is
     $\sh H^0_{X/Z}(\sh F)$.
@@ -153,7 +153,7 @@ $\sh F$, there is a canonical isomorphism
 \label{IV.5.9.4.1}
  f^*(\sh H^0_{X/Z}(\sh F))
  \xrightarrow{\sim}
- \sh H^0_{X'/Z'}(f^*\sh F).
+ \sh H^0_{X'/Z'}(f^*\sh F)
 \tag{5.9.4.1}
 \end{equation}
 \end{proposition}
@@ -164,7 +164,7 @@ $Z'_\alpha=f^{-1}(Z_\alpha)$ is closed in $X'$, and $Z'$ is the
 union of the $Z'_\alpha$.  The base change of $i_\alpha$ to $X'$ is
 the canonical injection
 $i'_\alpha:U'_\alpha\to X'$, where
-$U'_\alpha=X'-Z'_\alpha=f^{-1}(U_\alpha)$.
+$U'_\alpha=X'\setmin Z'_\alpha=f^{-1}(U_\alpha)$.
 Since $f$ is flat, the canonical homomorphism
 \[
  f^*((i_\alpha)_*(\sh F|U_\alpha))
@@ -220,7 +220,7 @@ isomorphism
 \label{IV.5.9.6.1}
  (\sh H^0_{X/Z}(\sh F))_x
  \xrightarrow{\sim}
- \sh H^0_{X_x/Z_x}(\widetilde{\sh F}_x).
+ \sh H^0_{X_x/Z_x}(\widetilde{\sh F}_x)
 \tag{5.9.6.1}
 \end{equation}
 \end{corollary}
@@ -242,7 +242,7 @@ These homomorphisms form an inductive system, and passage to the
 limit gives a canonical functorial homomorphism
 \begin{equation}
 \label{IV.5.9.7.1}
- \rho_{X/Z}:\sh F\longrightarrow\sh H^0_{X/Z}(\sh F).
+ \rho_{X/Z}:\sh F\longrightarrow\sh H^0_{X/Z}(\sh F)
 \tag{5.9.7.1}
 \end{equation}
 \end{env}
@@ -270,9 +270,9 @@ They are also equivalent to:
     For every closed subset $T\subset Z$ of $X$, the canonical
     homomorphism \sref[0]{0.4.4.3.2}
     \[
-      \sh F\longrightarrow i_*(\sh F|X-T),
+      \sh F\longrightarrow i_*(\sh F|X\setmin T),
     \]
-    where $i:X-T\to X$ is the canonical injection, is injective
+    where $i:X\setmin T\to X$ is the canonical injection, is injective
     (respectively bijective).
   \item[{\rm b')}] \label{IV.5.9.8.b-prime}
     For every closed subset $T\subset Z$ and every Noetherian open
@@ -296,7 +296,7 @@ $(\rho_{X/Z})_V$ is the composite
 \label{IV.5.9.8.1}
  \Gamma(V,\sh F)\longrightarrow
  \Gamma(V\cap(X-T),\sh F)\longrightarrow
- \varinjlim_\alpha\Gamma(V\cap U_\alpha,\sh F).
+ \varinjlim_\alpha\Gamma(V\cap U_\alpha,\sh F)
 \tag{5.9.8.1}
 \end{equation}
 Thus b) implies b') in the injective case, while b') implies b)
@@ -311,7 +311,7 @@ $U'\subset U$ are open subsets of $V$ containing $V\cap(X-Z)$, the
 restriction homomorphism
 $\Gamma(U,\sh F)\to\Gamma(U',\sh F)$ is injective.  This follows from
 the injectivity of $\rho_{X/Z}$ by replacing $V$ with $U$ and
-$V\cap(X-T)$ with $U'$.
+$V\cap(X\setmin T)$ with $U'$.
 \end{proof}
 
 \begin{definition}[5.9.9]
@@ -333,7 +333,7 @@ to saying that
 \[
  \sh F_x\longrightarrow(\sh H^0_{X/Z}(\sh F))_x
 \]
-is injective (respectively bijective).  At every point $x\in X-Z$,
+is injective (respectively bijective).  At every point $x\in X\setmin Z$,
 $\sh F$ is $Z$-closed by \sref{IV.5.9.8}.
 
 \begin{corollary}[5.9.10]
@@ -372,7 +372,7 @@ are contained in $Z$, then $v$ is an isomorphism.
 \end{proposition}
 
 \begin{proof}
-The first assertion says that, for every $x\in X-Z$,
+The first assertion says that, for every $x\in X\setmin Z$,
 \[
  \ker(\rho_{X/Z})_x=\operatorname{coker}(\rho_{X/Z})_x=0.
 \]
@@ -433,18 +433,18 @@ is an isomorphism.  If a section
 $t\in\Gamma(V,\sh H^0_{X/Z}(\sh F))$ maps to zero, then, for some
 $\alpha$, it is represented by a section on $V\cap U_\alpha$.
 By the hypothesis on $u$, its germ vanishes at every point of
-$V\cap(X-Z)$.  It therefore vanishes on an open neighbourhood of
-$V\cap(X-Z)$, and so represents zero in
+$V\cap(X\setmin Z)$.  It therefore vanishes on an open neighbourhood of
+$V\cap(X\setmin Z)$, and so represents zero in
 $\Gamma(V,\sh H^0_{X/Z}(\sh F))$.
 
 Conversely, let $s'\in\Gamma(V,\sh F')$.  For every
-$x\in V\cap(X-Z)$, there is an open neighbourhood $W^{(x)}$ of $x$
+$x\in V\cap(X\setmin Z)$, there is an open neighbourhood $W^{(x)}$ of $x$
 and a section $s^{(x)}$ of $\sh F$ on $W^{(x)}$ whose image under
 $u$ is $s'|W^{(x)}$.  Hence $s'|W^{(x)}$ is also the image under $v$
 of a section $t^{(x)}$ of $\sh H^0_{X/Z}(\sh F)$.  Since $v$ is
 injective, these sections agree on overlaps.  They therefore glue to
 a section $t$ over an open subset $U\subset V$ containing
-$V\cap(X-Z)$.  As $\sh H^0_{X/Z}(\sh F)$ is $Z$-closed, $t$ extends
+$V\cap(X\setmin Z)$.  As $\sh H^0_{X/Z}(\sh F)$ is $Z$-closed, $t$ extends
 uniquely over $V$; its image under $v$ agrees with $s'$ on $U$, and
 hence on $V$ by the same argument.
 
@@ -458,16 +458,16 @@ of $\sh F$.
 \label{IV.5.9.12}
 \begin{enumerate}[{\rm(i)}]
   \item\label{IV.5.9.12.i}
-    Let $\mathcal C(X)$ be the category of $\sh O_X$-modules, and let
-    $\mathcal C_Z(X)$ be its full subcategory of modules whose support
+    Let $\boldsymbol{C}(X)$ be the category of $\sh O_X$-modules, and let
+    $\boldsymbol{C}_Z(X)$ be its full subcategory of modules whose support
     is contained in $Z$.  This is a localizing subcategory in the
     sense of Gabriel, and $\sh H^0_{X/Z}$ is precisely Gabriel's
     localization functor (cf.~\textup{[27]}); this gives another proof of
     \sref{IV.5.9.11}.  When $Z$ is closed, the functor
-    $i^*:\mathcal C(X)\to\mathcal C(X-Z)$, where
-    $i:X-Z\to X$, defines an equivalence
+    $i^*:\boldsymbol{C}(X)\to\boldsymbol{C}(X\setmin Z)$, where
+    $i:X\setmin Z\to X$, defines an equivalence
     \[
-      \mathcal C(X)/\mathcal C_Z(X)\simeq\mathcal C(X-Z).
+      \boldsymbol{C}(X)/\boldsymbol{C}_Z(X)\simeq\boldsymbol{C}(X-Z).
     \]
   \item\label{IV.5.9.12.ii}
     By \sref{IV.5.9.11},

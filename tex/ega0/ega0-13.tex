@@ -7,7 +7,7 @@
 \begin{env}[13.1.1]
 \label{0.13.1.1}
 Let $\cat{C}$ be an abelian category in which infinite products exist
-(axiom AB~3* of T, 1.5).
+(axiom AB~3*) of T, 1.5).
 Then the infimum of a family of subobjects of an object of $\cat{C}$
 exists, and every projective system of objects of $\cat{C}$ has a
 projective limit; the latter is a left exact functor of the projective
@@ -50,7 +50,7 @@ $(A'_\alpha,f_{\alpha\beta}|A'_\beta)$ is a projective system and
 For a projective system $(A_\alpha,f_{\alpha\beta})$ in $\cat{C}$,
 the following is called the \emph{Mittag-Leffler condition}:
 \begin{itemize}
-  \item[\textbf{(ML)}]
+  \item[(ML)]
   \emph{For every index $\alpha$, there is a $\beta\geq\alpha$ such
   that, for every $\gamma\geq\beta$,}
   \[
@@ -187,7 +187,7 @@ $y_\lambda\in B_\lambda$ such that
   h_{\beta\lambda}\bigl(v_\lambda(y_\lambda)\bigr).
 \]
 Hence
-$v_\beta(y_\beta-g_{\beta\lambda}(y_\lambda))=0$, and therefore
+$v_\beta(y_\beta\setmin g_{\beta\lambda}(y_\lambda))=0$, and therefore
 there is an $x_\beta\in A_\beta$
 \oldpage[0\textsubscript{III}]{66}
 such that
@@ -282,7 +282,7 @@ Indeed, take $y_\lambda\in E_\lambda$ and set
 \]
 Let $y'_\alpha=g_{\alpha\beta}(y'_\beta)$ for some
 $y'_\beta\in E_\beta$.
-Then $y'_\beta-y_\beta=x_\beta\in A_\beta$, and by hypothesis there
+Then $y'_\beta\setmin y_\beta=x_\beta\in A_\beta$, and by hypothesis there
 is an $x_\lambda\in A_\lambda$ such that
 \[
   g_{\alpha\beta}(x_\beta)
@@ -402,10 +402,10 @@ It follows from \sref{0.13.2.2} that
 \]
 is exact.
 Now
-$\varprojlim_\alpha\mathrm{B}^n(\mathrm{K}^\bullet_\alpha)$
+$\varprojlim\mathrm{B}^n(\mathrm{K}^\bullet_\alpha)$
 identifies with a subgroup of $\mathrm{K}^{n}$ containing
 $\mathrm{B}^n(\mathrm{K}^\bullet)$, while
-$\varprojlim_\alpha\mathrm{Z}^n(\mathrm{K}^\bullet_\alpha)$
+$\varprojlim\mathrm{Z}^n(\mathrm{K}^\bullet_\alpha)$
 identifies with a subgroup of $\mathrm{Z}^n(\mathrm{K}^\bullet)$.
 Consequently, $h_n$ is surjective.
 
@@ -430,7 +430,7 @@ exact sequence
   \longrightarrow0.
 \]
 Since
-$\varprojlim_\alpha\mathrm{B}^n(\mathrm{K}^\bullet_\alpha)
+$\varprojlim\mathrm{B}^n(\mathrm{K}^\bullet_\alpha)
 \supset\mathrm{B}^n(\mathrm{K}^\bullet)$
 and the composite of $u$ with the injection
 \[
@@ -648,14 +648,14 @@ Taking the projective limit of the exact sequences
   0\longrightarrow\sh{F}_k
   \longrightarrow\sh{C}^0(X,\sh{F}_k)
   \longrightarrow\sh{C}^1(X,\sh{F}_k)
-  \longrightarrow\cdots
+  \longrightarrow\ldots
 \]
 plainly gives a complex of sheaves of abelian groups
 \[
   0\longrightarrow\sh{F}
   \longrightarrow\sh{G}^0
   \longrightarrow\sh{G}^1
-  \longrightarrow\cdots.
+  \longrightarrow\ldots.
 \]
 To prove our assertion, it remains to establish that
 $\sh{H}^i(\sh{G}^\bullet)=0$ for $i>0$.
@@ -669,7 +669,7 @@ the projective system of complexes of abelian groups
 \[
   \bigl(\Gamma(U,\sh{C}^\bullet(X,\sh{F}_k))\bigr)_{k\in\bb{N}}
 \]
-(0\textsubscript{I}, \hyperref[0.3.2.6]{3.2.6}).
+(\textbf{0}\textsubscript{I}, \hyperref[0.3.2.6]{3.2.6}).
 We saw in part~\emph{a)} that, for every $i\geq0$, the maps
 \[
   \Gamma(U,\sh{C}^i(X,\sh{F}_k))
@@ -724,7 +724,7 @@ are surjective; the conclusion therefore follows once more from
   \item[{\rm(i)}]
   The statement of \sref{0.13.3.1} is of interest only for $i>0$,
   since, for $i=0$, $h_i$ is always an isomorphism without any
-  hypothesis (0\textsubscript{I}, \hyperref[0.3.2.6]{3.2.6}).
+  hypothesis (\textbf{0}\textsubscript{I}, \hyperref[0.3.2.6]{3.2.6}).
 
   \item[{\rm(ii)}]
   Conditions~{\rm(i)} and~{\rm(ii)} of \sref{0.13.3.1} are satisfied,
@@ -920,7 +920,7 @@ This proves that $\bb{A}$ satisfies (ML).
 \begin{env}[13.4.4]
 \label{0.13.4.4}
 Suppose that the projective limit
-$A=\varprojlim_k A_k$ exists in $\cat{C}$.
+$A=\varprojlim A_k$ exists in $\cat{C}$.
 In the definitions of \sref{0.13.4.1}, one may then replace $A_k$ by
 $A$, and the filtration thereby defined on $A$ still satisfies
 \begin{equation}
@@ -937,7 +937,7 @@ $A$, and the filtration thereby defined on $A$ still satisfies
 \begin{corollary}[13.4.5]
 \label{0.13.4.5}
 Suppose that $\cat{C}$ is the category of abelian groups.
-If the projective system $\bb{A}$ satisfies (ML) and
+If the projective system $\bb{A}$ satisfies \textup{(ML)} and
 $A=\varprojlim_k A_k$, then for every $p\in\bb{Z}$ there is a
 canonical isomorphism
 \begin{equation}
@@ -1267,8 +1267,8 @@ $\mathrm{F}^i(A)$.
 
 \begin{proof}
 Let $p$ (respectively, $q>p$) be the largest index such that
-$\mathrm{F}^p(A)=A$ (respectively, the smallest index such that
-$\mathrm{F}^q(A)=0$).
+$\mathrm{F}^i(A)=A$ (respectively, the smallest index such that
+$\mathrm{F}^i(A)=0$).
 We argue by induction on $q-p$, the lemma being immediate when
 $q-p=1$.
 Suppose that an injective resolution ${X''}^\bullet$ of
@@ -1481,7 +1481,7 @@ homomorphism
 \oldpage[0\textsubscript{III}]{75}
 such that, for every $t\in\mathrm{F}^i(S)$,
 \[
-  h_t(\mathrm{F}^j(A))
+  h_t(\mathrm{F}^i(A))
   \subset
   \mathrm{F}^{i+j}(A)
 \]
@@ -1560,7 +1560,7 @@ for this type of structure.
 We note that, when $\cat{C}'$ is the category of abelian groups, the
 structures of an $S$--$\cat{C}'$-module (respectively, of a graded or
 bigraded $\mathrm{gr}^\bullet(S)$--$\cat{C}'$-module) are simply the
-usual structures of an $S$-module (respectively, a graded or
+usual structures of an $S$-\emph{module} (respectively, a graded or
 bigraded $\mathrm{gr}^\bullet(S)$-module).
 \end{env}
 
@@ -1581,10 +1581,10 @@ be an additive covariant functor.
 Consider a strict projective system
 $\bb{A}=(A_k)_{k\in\bb{Z}}$ in $\cat{C}$, bounded below; more
 precisely, suppose that $A_k=0$ for $k<k_0$.
-To this system we canonically associate, on each $A_k$, the
+To this system we canonically associate, on each $A_k$ the
 filtration $(\mathrm{F}^p(A_k))_{p\in\bb{Z}}$ given by
 \sref{0.13.4.1.1}.
-Since the projective system is strict, the canonical morphisms
+Since the projective system is \emph{strict}, the canonical morphisms
 \begin{equation}
 \label{0.13.7.1.1}
 \tag{13.7.1.1}
@@ -1613,7 +1613,7 @@ compatible with the filtrations and making
 $\bb{X}^\bullet=(\mathrm{X}_k^\bullet)_{k\in\bb{Z}}$ a projective
 system of complexes.
 \oldpage[0\textsubscript{III}]{76}
-We may moreover suppose that this projective system is strict.
+We may moreover suppose that this projective system is \emph{strict}.
 Indeed, by \sref{0.13.7.1.1},
 \[
   A_k
@@ -1718,7 +1718,7 @@ equivalent, and \sref{0.13.7.4.1} is just
 Let $\sh{F}=(\sh{F}_k)_{k\in\bb{N}}$ be a projective system of
 sheaves of abelian groups satisfying conditions {\rm(i)}, {\rm(ii)},
 and {\rm(iii)} of \sref{0.13.3.1}, and put
-$\sh{F}=\varprojlim_k\sh{F}_k$.
+$\sh{F}=\varprojlim\sh{F}_k$.
 Suppose that, for the functor
 $\sh{G}\longmapsto\Gamma(X,\sh{G})$, the projective system
 $(\mathrm{E}_r^{pq}(\sh{F}))_r$ is essentially constant whenever

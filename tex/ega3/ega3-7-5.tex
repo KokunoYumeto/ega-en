@@ -27,7 +27,7 @@ plainly form a projective system of $A$-homomorphisms.  On
 passing to the limit they therefore give an
 $\widehat A$-homomorphism, functorial in $M$,
 \[
-  \widehat{T(M)}
+  (T(M))^{\widehat{\,}}
   \longrightarrow
   \varprojlim_n T(M_n),
   \tag{7.5.1.1}\label{III.7.5.1.1.eq}
@@ -52,7 +52,7 @@ canonical homomorphism \eqref{III.7.5.1.1.eq} is an
 isomorphism.  Then the following conditions are equivalent:
 \begin{enumerate}
   \item[(a)] $T$ is right exact;
-  \item[(b)] for every $n$, the functor $N\mapsto T(N)$ is
+  \item[(b)] for every $n$, the functor $N\leadsto T(N)$ is
     right exact in the category of finite-type $A_n$-modules;
     equivalently, $T$ is right exact in the category of
     finite-length $A$-modules;
@@ -81,20 +81,20 @@ where $M$ and $N$ are of finite type.
 The modules $T(M)$ and $T(N)$ are then of finite type.  Since
 $A$ is Noetherian and local, it is enough to prove that
 \[
-  \widehat{T(u)}:
-  \widehat{T(M)}
+  (T(u))^{\widehat{\,}}:
+  (T(M))^{\widehat{\,}}
   \longrightarrow
   \widehat{T(N)}
 \]
 is surjective \sref[0]{0.7.3.5} and \sref[0]{0.6.4.1}.
-By hypothesis, $\widehat{T(M)}$ and $\widehat{T(N)}$ are,
+By hypothesis, $(T(M))^{\widehat{\,}}$ and $\widehat{T(N)}$ are,
 respectively,
 \[
   \varprojlim_n T(M_n)
   \quad\hbox{and}\quad
   \varprojlim_n T(N_n).
 \]
-Thus $\widehat{T(u)}$ is the inverse limit of the projective
+Thus $(T(u))^{\widehat{\,}}$ is the inverse limit of the projective
 system of homomorphisms
 \[
   T(u\otimes 1_{A_n}):T(M_n)\longrightarrow T(N_n).
@@ -102,7 +102,7 @@ system of homomorphisms
 Condition (b) says precisely that these homomorphisms are
 surjective.  Moreover, $T(M_n)$ is a finite-type
 $A_n$-module, and $A_n$ is Artinian.  It follows that
-$\widehat{T(u)}$ is surjective \sref[0]{0.13.1.2} and
+$(T(u))^{\widehat{\,}}$ is surjective \sref[0]{0.13.1.2} and
 \sref[0]{0.13.2.2}.
 
 Clearly (a) implies (c), and (c) implies (d).  Finally,
@@ -123,13 +123,13 @@ Since $k$ is the only simple $A$-module,
 \eqref{III.7.3.5.4.eq} shows that $T(E)=0$ for every
 finite-length $A$-module $E$.  If $M$ is of finite type, then
 \[
-  \widehat{T(M)}
+  (T(M))^{\widehat{\,}}
   \simeq
   \varprojlim_n T(M_n).
 \]
-Each $M_n$ has finite length, so $\widehat{T(M)}=0$.  By
+Each $M_n$ has finite length, so $(T(M))^{\widehat{\,}}=0$.  By
 hypothesis $T(M)$ is of finite type, and it embeds in
-$\widehat{T(M)}$ \sref[0]{0.7.3.5}; hence $T(M)=0$.
+$(T(M))^{\widehat{\,}}$ \sref[0]{0.7.3.5}; hence $T(M)=0$.
 Finally, for an arbitrary $A$-module $M$, the module $T(M)$
 is the inductive limit of the $T(N_\alpha)$, where the
 $N_\alpha$ run through the finite-type submodules of $M$.
@@ -170,7 +170,7 @@ conditions are equivalent:
       T_p(A_n)\longrightarrow T_p(k)
     \]
     are surjective;
-  \item[(e)] for every $n$, the functor $N\mapsto T_p(N)$ is
+  \item[(e)] for every $n$, the functor $N\leadsto T_p(N)$ is
     exact in the category of finite-type $A_n$-modules.
 \end{enumerate}
 \end{proposition}
@@ -196,9 +196,9 @@ of (a) and (b) therefore follows from \sref{III.7.3.1} and
 \label{III.7.5.5}
 Suppose that the general hypotheses of \sref{III.7.5.4} hold.
 \begin{enumerate}
-  \item[(i)] If $T_p(k)=0$, then $T_p=0$, the functor
+  \item[\textup{(i)}] If $T_p(k)=0$, then $T_p=0$, the functor
     $T_{p+1}$ is right exact, and $T_{p-1}$ is left exact.
-  \item[(ii)] If $T_{p-1}(k)=T_{p+1}(k)=0$, then $T_p$ is
+  \item[\textup{(ii)}] If $T_{p-1}(k)=T_{p+1}(k)=0$, then $T_p$ is
     exact, the canonical homomorphism
     \[
       T_p(A)\otimes_A M
@@ -224,9 +224,9 @@ Suppose that the general hypotheses of \sref{III.7.5.4} hold,
 and suppose in addition that $A$ is a discrete valuation
 ring.
 \begin{enumerate}
-  \item[(i)] The functor $T_p$ is right exact if and only if
+  \item[\textup{(i)}] The functor $T_p$ is right exact if and only if
     $T_{p-1}(A)$ is a free $A$-module.
-  \item[(ii)] The functor $T_p$ is exact if and only if
+  \item[\textup{(ii)}] The functor $T_p$ is exact if and only if
     $T_p(A)$ and $T_{p-1}(A)$ are free $A$-modules.
 \end{enumerate}
 \end{corollary}
@@ -258,7 +258,7 @@ gives the exact homology sequence
   \longrightarrow T_p(k)
   \longrightarrow T_{p-1}(A)
   \xrightarrow{h_f}
-  T_{p-1}(A).
+  T_{p-1}(A)
 \]
 Thus $T_{p-1}(A)$ is free if and only if
 $T_p(A)\to T_p(k)$ is surjective, and the conclusion follows

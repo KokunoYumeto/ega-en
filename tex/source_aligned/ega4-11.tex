@@ -75,7 +75,7 @@ The question being evidently local on $\mathrm{X}$ and $\mathrm{Y}$, we can supp
 \medskip
 \phantomsection\egalabel{IV.11.1.1.1}{11.1.1.1}
 \noindent\textbf{(11.1.1.1)}
-\emph{Let $\mathrm{A}$ be a Noetherian ring, $\mathrm{B}$ an $\mathrm{A}$-algebra of finite type, $\mathrm{M}$ a $\mathrm{B}$-module of finite type, $\mathfrak{q}$ a prime ideal of $\mathrm{B}$, $\mathfrak{p}$ its inverse image in $\mathrm{A}$. Suppose that $\mathrm{M}_\mathfrak{q}$ is a flat $\mathrm{A}_\mathfrak{p}$-module. Then there exists $g\in\mathrm{B}-\mathfrak{q}$ such that, for every prime ideal $\mathfrak{q}'\supset\mathfrak{q}$ of $\mathrm{B}$ such that $g\notin\mathfrak{q}'$, $\mathrm{M}_{\mathfrak{q}'}$ is a flat $\mathrm{A}_{\mathfrak{p}'}$-module, where $\mathfrak{p}'$ denotes the inverse image of $\mathfrak{q}'$ in $\mathrm{A}$ (it amounts to the same $(\mathbf{0}_\mathrm{I},~6.3.1)$ to say that $\mathrm{M}_{\mathfrak{q}'}$ is a flat $\mathrm{A}$-module).}
+\emph{Let $\mathrm{A}$ be a Noetherian ring, $\mathrm{B}$ an $\mathrm{A}$-algebra of finite type, $\mathrm{M}$ a $\mathrm{B}$-module of finite type, $\mathfrak{q}$ a prime ideal of $\mathrm{B}$, $\mathfrak{p}$ its inverse image in $\mathrm{A}$. Suppose that $\mathrm{M}_\mathfrak{q}$ is a flat $\mathrm{A}_\mathfrak{p}$-module. Then there exists $g\in\mathrm{B}\setmin\mathfrak{q}$ such that, for every prime ideal $\mathfrak{q}'\supset\mathfrak{q}$ of $\mathrm{B}$ such that $g\notin\mathfrak{q}'$, $\mathrm{M}_{\mathfrak{q}'}$ is a flat $\mathrm{A}_{\mathfrak{p}'}$-module, where $\mathfrak{p}'$ denotes the inverse image of $\mathfrak{q}'$ in $\mathrm{A}$ (it amounts to the same $(\mathbf{0}_\mathrm{I},~6.3.1)$ to say that $\mathrm{M}_{\mathfrak{q}'}$ is a flat $\mathrm{A}$-module).}
 \medskip
 
 To this end, regard $\mathrm{B}_{\mathfrak{q}'}$ as an $\mathrm{A}$-algebra; clearly
@@ -124,7 +124,7 @@ thus reduced to proving the following lemma.
 
 \begin{lemma}[11.1.1.2]
 \label{IV.11.1.1.2}
-Under the conditions of \emph{{\hyperref[IV.11.1.1.1]{(11.1.1.1)}}}, there exists $g\in\mathrm{B}-\mathfrak{q}$ such that:
+Under the conditions of \emph{{\hyperref[IV.11.1.1.1]{(11.1.1.1)}}}, there exists $g\in\mathrm{B}\setmin\mathfrak{q}$ such that:
 \begin{enumerate}[label=\emph{\roman*)}]
   \item $(\mathrm{M}/\mathfrak{p}\mathrm{M})_g$ is a flat $(\mathrm{A}/\mathfrak{p})$-module;
   \item $(\operatorname{Tor}_1^\mathrm{A}(\mathrm{M},\mathrm{A}/\mathfrak{p}))_g=0$.
@@ -139,7 +139,7 @@ $(\mathrm{A}/\mathfrak{p})$-algebra
 $\mathrm{B}/\mathfrak{p}\mathrm{B}$, and the finite-type
 $(\mathrm{B}/\mathfrak{p}\mathrm{B})$-module
 $\mathrm{M}/\mathfrak{p}\mathrm{M}$, there exists
-$h\in\mathrm{A}-\mathfrak{p}$ such that, if $\bar h$ denotes its canonical
+$h\in\mathrm{A}\setmin\mathfrak{p}$ such that, if $\bar h$ denotes its canonical
 image in $\mathrm{A}/\mathfrak{p}$,
 $(\mathrm{M}/\mathfrak{p}\mathrm{M})_{\bar h}$ is a flat
 $(\mathrm{A}/\mathfrak{p})$-module. On the other hand,
@@ -157,7 +157,7 @@ Since $\mathrm{A}$ and $\mathrm{B}$ are Noetherian,
 $\operatorname{Tor}_1^\mathrm{A}
 (\mathrm{M},\mathrm{A}/\mathfrak p)$ is a finite-type
 $\mathrm{B}$-module. Thus $(\mathbf{0}_\mathrm{I},~5.2.2)$ gives an element
-$g\in\mathrm{B}-\mathfrak q$ such that
+$g\in\mathrm{B}\setmin\mathfrak q$ such that
 \[
   \bigl(\operatorname{Tor}_1^\mathrm{A}
   (\mathrm{M},\mathrm{A}/\mathfrak p)\bigr)_g=0.
@@ -177,8 +177,8 @@ $(\mathbf{0}_\mathrm{I},~6.3.2)$. Finally,
   \bigl(\operatorname{Tor}_1^\mathrm{A}
   (\mathrm{M},\mathrm{A}/\mathfrak p)\bigr)_{hg}=0,
 \]
-and $hg\in\mathrm{B}-\mathfrak q$ because
-$h\in\mathrm{A}-\mathfrak p$. This proves the lemma and the theorem.
+and $hg\in\mathrm{B}\setmin\mathfrak q$ because
+$h\in\mathrm{A}\setmin\mathfrak p$. This proves the lemma and the theorem.
 \end{proof}
 
 \begin{corollary}[11.1.2]
@@ -252,7 +252,7 @@ Let $\mathrm{Y}$ be a locally Noetherian prescheme, $f:\mathrm{X}\to\mathrm{Y}$ 
 \oldpage[IV-3]{119}
 Since $\sh{F}$ is $f$-flat, it follows from
 $(\mathbf{0},~15.1.16)$ that $\mathrm{U}$ is also the set of points
-$x\in\mathrm{X}$ for which the sequence $((g_i)_x)$ is
+$x\in\mathrm{X}$ for which the sequence $(g_i)_x$ is
 $\sh{F}_x$-regular and the $\sh{O}_x$-module
 \[
   \sh{G}_x,\qquad
@@ -452,7 +452,7 @@ $h_{\beta\alpha}^0:\mathrm{F}(\mathrm{M}_\alpha)\to
 $h'_\alpha:\mathrm{F}(\mathrm{M}_\alpha)\to\mathrm{F}(\mathrm{M}')$
 are the $\mathrm{A}_\alpha$-homomorphisms induced by
 $h_{\beta\alpha}$ and $h_\alpha$, respectively, then
-$(\mathrm{F}(\mathrm{M}_\alpha),h^0_{\beta\alpha})$ is an inductive
+$(\mathrm{F}(\mathrm{M}_\alpha),h'_{\beta\alpha})$ is an inductive
 system of $\mathrm{A}_\alpha$-modules and $(h'_\alpha)$ is an inductive
 system of homomorphisms. Moreover,
 \[
@@ -600,7 +600,7 @@ $\mathrm{M}'=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'
 $\mathfrak{p}'$ be a prime ideal of $\mathrm{B}'$ containing
 $\mathfrak{J}'\mathrm{B}'$. Suppose that one of the following
 hypotheses holds:
-\begin{enumerate}[label=\emph{\alph*)}]
+\begin{enumerate}[label=\textit{\alph*)}]
   \item $\mathfrak{J}$ is nilpotent.
   \item $\mathrm{A}'$ is Noetherian, $\mathrm{B}'$ is an $\mathrm{A}'$-algebra of finite type, $\mathrm{M}'$ a $\mathrm{B}'$-module of finite type.
 \end{enumerate}
@@ -711,7 +711,7 @@ $\mathrm{B}_0$-module of finite presentation. Put
 One needs only prove that the conditions are necessary $(2.1.4)$. We will proceed in several steps.
 
 \medskip
-\noindent\textbf{I)} \emph{Reduction to the case where the
+\noindent I) \emph{Reduction to the case where the
 $\mathrm{A}_\lambda$ are Noetherian.} --- By $(8.9.1)$ there exist a
 subring $\mathrm{A}'_0\subset\mathrm{A}_0$ which is a finite-type
 $\mathbf{Z}$-algebra, a finite-type $\mathrm{A}'_0$-algebra
@@ -785,10 +785,10 @@ $\mathrm{A}_\lambda$ are Noetherian, although $\mathrm A$ itself need
 not be.
 
 \medskip
-\noindent\textbf{II)} \emph{Reduction of the global statement (ii) to the pointwise statement (i).} --- Suppose $\sh{F}$ is $f$-flat. For every $\lambda$, let $\mathrm{U}_\lambda$ be the set of $x_\lambda\in\mathrm{X}_\lambda$ such that $\sh{F}_\lambda$ is $f_\lambda$-flat at the point $x_\lambda$; we know that $\mathrm{U}_\lambda$ is open in $\mathrm{X}_\lambda$, since $\mathrm{S}_\lambda$ is Noetherian and $f_\lambda$ is of finite type \sref{IV.11.1.1}; let $\mathrm{V}_\lambda=v_\lambda^{-1}(\mathrm{U}_\lambda)$ its inverse image in $\mathrm{X}$. By hypothesis, for every $x\in\mathrm{X}$, the projection of $x$ in $\mathrm{X}_\lambda$ belongs to $\mathrm{U}_\lambda$ for some $\lambda$, which means that $\mathrm{X}=\bigcup\mathrm{V}_\lambda$. Moreover, by $(2.1.4)$, for $\lambda\leqslant\mu$, $\mathrm{V}_\lambda\subset\mathrm{V}_\mu$, hence, since $\mathrm{X}$ is quasi-compact, there exists an index $\mu$ such that $\mathrm{X}=\mathrm{V}_\mu$. As the $\mathrm{X}_\lambda$ are quasi-compact, it follows from $(8.3.4)$ that there exists a $\nu\geqslant\mu$ such that $v_{\mu\nu}^{-1}(\mathrm{U}_\mu)=\mathrm{X}_\nu$; but by $(2.1.4)$, this implies that $\sh{F}_\nu$ is $f_\nu$-flat.
+\noindent II) \emph{Reduction of the global statement (ii) to the pointwise statement (i).} --- Suppose $\sh{F}$ is $f$-flat. For every $\lambda$, let $\mathrm{U}_\lambda$ be the set of $x_\lambda\in\mathrm{X}_\lambda$ such that $\sh{F}_\lambda$ is $f_\lambda$-flat at the point $x_\lambda$; we know that $\mathrm{U}_\lambda$ is open in $\mathrm{X}_\lambda$, since $\mathrm{S}_\lambda$ is Noetherian and $f_\lambda$ is of finite type \sref{IV.11.1.1}; let $\mathrm{V}_\lambda=v_\lambda^{-1}(\mathrm{U}_\lambda)$ its inverse image in $\mathrm{X}$. By hypothesis, for every $x\in\mathrm{X}$, the projection of $x$ in $\mathrm{X}_\lambda$ belongs to $\mathrm{U}_\lambda$ for some $\lambda$, which means that $\mathrm{X}=\bigcup\mathrm{V}_\lambda$. Moreover, by $(2.1.4)$, for $\lambda\leqslant\mu$, $\mathrm{V}_\lambda\subset\mathrm{V}_\mu$, hence, since $\mathrm{X}$ is quasi-compact, there exists an index $\mu$ such that $\mathrm{X}=\mathrm{V}_\mu$. As the $\mathrm{X}_\lambda$ are quasi-compact, it follows from $(8.3.4)$ that there exists a $\nu\geqslant\mu$ such that $v_{\mu\nu}^{-1}(\mathrm{U}_\mu)=\mathrm{X}_\nu$; but by $(2.1.4)$, this implies that $\sh{F}_\nu$ is $f_\nu$-flat.
 
 \medskip
-\noindent\textbf{III)} \emph{End of the proof.} --- It remains to prove
+\noindent III) \emph{End of the proof.} --- It remains to prove
 (i), with $\mathrm S_0$ affine and Noetherian. Let $y_0$ be the
 projection of $x$ in $\mathrm S_0$. By $(2.1.4)$ and
 $(\mathbf I,~3.6.5)$ we may replace $\mathrm S_0$ by
@@ -822,7 +822,7 @@ their canonical images in
 $\operatorname{Tor}_1^\mathrm A
 (\mathrm A/\mathfrak m_0\mathrm A,\mathrm M)$. The preceding
 localization equality gives an element
-$h\in\mathrm B-\mathfrak p$ such that $ht_i=0$ for all $i$.
+$h\in\mathrm B\setmin\mathfrak p$ such that $ht_i=0$ for all $i$.
 
 By \eref{IV.11.2.2.1},
 \[
@@ -857,7 +857,7 @@ over $\mathrm A_\lambda$, completing the proof.
 \label{IV.11.2.7}
 Let $\mathrm{S}=\Spec(\mathrm{A})$ be an affine scheme, $f:\mathrm{X}\to\mathrm{S}$ a morphism, $\sh{F}$ an $\sh{O}_\mathrm{X}$-Module quasi-coherent, $x$ a point of $\mathrm{X}$. The following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
-  \item $f$ is a morphism of finite presentation, $\sh{F}$ is an $\sh{O}_\mathrm{X}$-Module of finite presentation and $\sh{F}$ is $f$-flat at the point $x$ (resp.\ $f$-flat).
+  \item $f$ is a morphism of finite presentation, $\sh{F}$ is an $\sh{O}_\mathrm{X}$-Module of finite presentation and $\sh{F}$ is $f$-flat at the point $x$ (\textup{resp.}\ $f$-flat).
 \oldpage[IV-3]{126}
   \item There exists an affine Noetherian scheme $\mathrm{S}_0=\Spec(\mathrm{A}_0)$, a morphism of finite type $f_0:\mathrm{X}_0\to\mathrm{S}_0$, an $\sh{O}_{\mathrm{X}_0}$-Module coherent $\sh{F}_0$, a morphism $\mathrm{S}\to\mathrm{S}_0$ such that the S-prescheme $\mathrm{X}_0\otimes_{\mathrm{S}_0}\mathrm{S}$ is S-isomorphic to $\mathrm{X}$ and that $\sh{F}$ is isomorphic to $\sh{F}_0\otimes_{\sh{O}_{\mathrm{S}_0}}\sh{O}_\mathrm{S}$, and $\sh{F}_0$ is $f_0$-flat at the point $x_0$ the projection of $x$ in $\mathrm{X}_0$ (resp.\ $f_0$-flat).
   \item The conditions of $b)$ are satisfied and in addition $\mathrm{A}_0$ is a sub-$\mathbf{Z}$-algebra of finite type of $\mathrm{A}$, the morphism $\mathrm{S}\to\mathrm{S}_0$ corresponding to the canonical injection $\mathrm{A}_0\to\mathrm{A}$.
@@ -957,7 +957,7 @@ is exact, which proves the lemma.
 To prove the necessity of the conditions of \sref{IV.11.2.9}, we proceed in several steps.
 
 \medskip
-\noindent\textbf{I)} \emph{Reduction to the case where the $\mathrm{A}_\lambda$
+\noindent I) \emph{Reduction to the case where the $\mathrm{A}_\lambda$
 are Noetherian.} --- One proceeds as in reduction I) of
 \sref{IV.11.2.6.1}, retaining the notation; it is enough to begin by replacing
 $\mathrm{A}'_0$ by a finite-type sub-$\mathrm{A}'_0$-algebra
@@ -988,7 +988,7 @@ $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$ is a flat
 $\mathrm{A}_\lambda$-module.
 
 \medskip
-\noindent\textbf{II)} \emph{Preliminary lemmas.}
+\noindent II) \emph{Preliminary lemmas.}
 
 \begin{lemma}[11.2.9.3]
 \label{IV.11.2.9.3}
@@ -1091,10 +1091,10 @@ It is therefore enough to apply \sref{IV.11.2.9.3} to $\mathrm{R}$.
 \end{proof}
 
 \medskip
-\noindent\textbf{III)} \emph{Reduction to the case where the homomorphisms of transitions $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}_\mu$ (for $\lambda\leqslant\mu$) are injective.} --- Let $\mathrm{A}'_\lambda$ be the image of $\mathrm{A}_\lambda$ by the canonical homomorphism $\varphi_\lambda:\mathrm{A}_\lambda\to\mathrm{A}$; it is clear that the $\mathrm{A}'_\lambda$ form an inductive system of sub-rings \emph{Noetherian} of $\mathrm{A}$, and the homomorphisms of transition $\mathrm{A}'_\lambda\to\mathrm{A}'_\mu$ (for $\lambda\leqslant\mu$) are injective. Set $\mathrm{B}'_\lambda=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda$, $\mathfrak{J}'_\lambda=\mathfrak{J}_0\mathrm{B}'_\lambda$, $\mathrm{M}'_\lambda=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda=\mathrm{M}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}'_\lambda$; one has still $\mathrm{B}=\varinjlim\mathrm{B}'_\lambda$, $\mathrm{M}=\varinjlim\mathrm{M}'_\lambda$. Suppose one has proved that there exists $\lambda$ such that, for $\mu\geqslant\lambda$, $\operatorname{gr}^*_{\mathfrak{J}'_\mu}(\mathrm{M}'_\mu)$ is a flat $\mathrm{A}'_\mu$-module. Let $a_\lambda$ be the kernel of the homomorphism $\varphi_\lambda$, which is an ideal of the Noetherian ring $\mathrm{A}_\lambda$. It follows from the definition of the inductive limit that there exists an index $\mu\geqslant\lambda$ such that $\varphi_{\mu\lambda}(a_\lambda)=0$, in other words $\varphi_{\mu\lambda}$ factorises as $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}'_\lambda\to\mathrm{A}_\mu$, and one can write $\mathrm{B}_\mu=\mathrm{B}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$, $\mathfrak{J}_\mu=\mathfrak{J}'_\lambda\mathrm{B}_\mu$ and $\mathrm{M}_\mu=\mathrm{M}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$; one deduces then from \sref{IV.11.2.9.2} that $\operatorname{gr}^*_{\mathfrak{J}_\mu}(\mathrm{M}_\mu)$ is a flat $\mathrm{A}_\mu$-module.
+\noindent III) \emph{Reduction to the case where the homomorphisms of transitions $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}_\mu$ (for $\lambda\leqslant\mu$) are injective.} --- Let $\mathrm{A}'_\lambda$ be the image of $\mathrm{A}_\lambda$ by the canonical homomorphism $\varphi_\lambda:\mathrm{A}_\lambda\to\mathrm{A}$; it is clear that the $\mathrm{A}'_\lambda$ form an inductive system of sub-rings \emph{Noetherian} of $\mathrm{A}$, and the homomorphisms of transition $\mathrm{A}'_\lambda\to\mathrm{A}'_\mu$ (for $\lambda\leqslant\mu$) are injective. Set $\mathrm{B}'_\lambda=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda$, $\mathfrak{J}'_\lambda=\mathfrak{J}_0\mathrm{B}'_\lambda$, $\mathrm{M}'_\lambda=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda=\mathrm{M}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}'_\lambda$; one has still $\mathrm{B}=\varinjlim\mathrm{B}'_\lambda$, $\mathrm{M}=\varinjlim\mathrm{M}'_\lambda$. Suppose one has proved that there exists $\lambda$ such that, for $\mu\geqslant\lambda$, $\operatorname{gr}^*_{\mathfrak{J}'_\mu}(\mathrm{M}'_\mu)$ is a flat $\mathrm{A}'_\mu$-module. Let $a_\lambda$ be the kernel of the homomorphism $\varphi_\lambda$, which is an ideal of the Noetherian ring $\mathrm{A}_\lambda$. It follows from the definition of the inductive limit that there exists an index $\mu\geqslant\lambda$ such that $\varphi_{\mu\lambda}(a_\lambda)=0$, in other words $\varphi_{\mu\lambda}$ factorises as $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}'_\lambda\to\mathrm{A}_\mu$, and one can write $\mathrm{B}_\mu=\mathrm{B}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$, $\mathfrak{J}_\mu=\mathfrak{J}'_\lambda\mathrm{B}_\mu$ and $\mathrm{M}_\mu=\mathrm{M}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$; one deduces then from \sref{IV.11.2.9.2} that $\operatorname{gr}^*_{\mathfrak{J}_\mu}(\mathrm{M}_\mu)$ is a flat $\mathrm{A}_\mu$-module.
 
 \medskip
-\noindent\textbf{IV)} \emph{Reduction to the case where $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ and $\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)=\mathrm{B}_0$.} --- By virtue of the hypothesis, there is a system $(t_i)_{1\leqslant i\leqslant n}$ of generators of the finite-type $\mathrm{A}_0$-algebra $\mathrm{B}_0$, such that the $t_i$ for $i\leqslant m$ generate the ideal $\mathfrak{J}_0$ of $\mathrm{B}_0$. Set $\mathrm{B}'_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, a polynomial algebra (hence Noetherian), and let $\mathfrak{J}'_0$ be the ideal of $\mathrm{B}'_0$ generated by the $\mathrm{T}_i$ with $i\leqslant m$; there is then a surjective $\mathrm{A}_0$-homomorphism $u_0:\mathrm{B}'_0\to\mathrm{B}_0$ taking each $\mathrm{T}_i$ to $t_i$ ($1\leqslant i\leqslant n$), and hence satisfying $u_0(\mathfrak{J}'_0)=\mathfrak{J}_0$. This homomorphism allows us to regard $\mathrm{M}_0$ as a finite-type $\mathrm{B}'_0$-module. Set
+\noindent IV) \emph{Reduction to the case where $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ and $\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)=\mathrm{B}_0$.} --- By virtue of the hypothesis, there is a system $(t_i)_{1\leqslant i\leqslant n}$ of generators of the finite-type $\mathrm{A}_0$-algebra $\mathrm{B}_0$, such that the $t_i$ for $i\leqslant m$ generate the ideal $\mathfrak{J}_0$ of $\mathrm{B}_0$. Set $\mathrm{B}'_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, a polynomial algebra (hence Noetherian), and let $\mathfrak{J}'_0$ be the ideal of $\mathrm{B}'_0$ generated by the $\mathrm{T}_i$ with $i\leqslant m$; there is then a surjective $\mathrm{A}_0$-homomorphism $u_0:\mathrm{B}'_0\to\mathrm{B}_0$ taking each $\mathrm{T}_i$ to $t_i$ ($1\leqslant i\leqslant n$), and hence satisfying $u_0(\mathfrak{J}'_0)=\mathfrak{J}_0$. This homomorphism allows us to regard $\mathrm{M}_0$ as a finite-type $\mathrm{B}'_0$-module. Set
 \[
   \mathrm{B}'_\lambda=\mathrm{B}'_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda
   =\mathrm{A}_\lambda[\mathrm{T}_1,\ldots,\mathrm{T}_n],
@@ -1129,7 +1129,7 @@ as $\mathrm{A}$-modules, and
 as $\mathrm{A}_\lambda$-modules. We may therefore substitute $\mathrm{B}'$, $\mathrm{B}'_\lambda$, $\mathfrak{J}'$, and $\mathfrak{J}'_\lambda$ for $\mathrm{B}$, $\mathrm{B}_\lambda$, $\mathfrak{J}$, and $\mathfrak{J}_\lambda$, respectively, in the proof. Note also that, by construction, $\operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{B}')$ identifies with $\mathrm{B}'$, and $\operatorname{gr}^*_{\mathfrak{J}'_\lambda}(\mathrm{B}'_\lambda)$ with $\mathrm{B}'_\lambda$.
 
 \medskip
-\noindent\textbf{V)} \emph{Proof that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$-module of finite presentation.} --- We thus suppose from now on that $\mathrm{A}_0$ and the $\mathrm{A}_\lambda$ are Noetherian, that the transition homomorphisms $\mathrm{A}_\lambda\to\mathrm{A}_\mu$ are injective, that $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, and that $\mathfrak{J}_0$ is generated by the $\mathrm{T}_i$ with $i\leqslant m$. The ring $\mathrm{C}_0=\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)$ therefore identifies with $\mathrm{B}_0$, and $\mathrm{C}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ identifies with $\mathrm{B}$; at first, in what follows, we shall use only the fact that $\mathrm{C}\cong\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}$.
+\noindent V) \emph{Proof that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$-module of finite presentation.} --- We thus suppose from now on that $\mathrm{A}_0$ and the $\mathrm{A}_\lambda$ are Noetherian, that the transition homomorphisms $\mathrm{A}_\lambda\to\mathrm{A}_\mu$ are injective, that $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, and that $\mathfrak{J}_0$ is generated by the $\mathrm{T}_i$ with $i\leqslant m$. The ring $\mathrm{C}_0=\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)$ therefore identifies with $\mathrm{B}_0$, and $\mathrm{C}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ identifies with $\mathrm{B}$; at first, in what follows, we shall use only the fact that $\mathrm{C}\cong\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}$.
 
 We will need the following variant of $(6.9.3)$:
 
@@ -1141,7 +1141,7 @@ $\mathrm{B}_0$, $\mathrm{M}_0$ a $\mathrm{B}_0$-module of finite type. There
 exists a sequence $(\mathrm{S}_{0i})_{1\leqslant i\leqslant m}$ of
 subschemes of $\mathrm{S}_0=\Spec(\mathrm{A}_0)$ having the following
 properties:
-\begin{enumerate}[label=\arabic{enumi}\textsuperscript{o}]
+\begin{enumerate}[label=\textup{\arabic{enumi}}\textsuperscript{o}]
   \item The underlying spaces of the $\mathrm{S}_{0i}$ are pairwise disjoint and form a covering of $\mathrm{S}_0$.
   \item For each $i$, the set $\mathrm{S}_{0i}$ is open in $\bigcup_{j\geqslant i}\mathrm{S}_{0j}$.
   \item Each scheme $\mathrm{S}_{0i}$ is affine.
@@ -1348,7 +1348,7 @@ Since there is an exact sequence
 it follows that $\operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$ is a finitely presented module over $\mathrm{C}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$. Applying \sref{IV.11.2.9.4}, with $\mathrm{A}$, $\mathrm{B}$, and $\mathrm{M}$ replaced respectively by $\mathrm{B}_\mathfrak{p}$, $\mathrm{C}_\mathfrak{p}$, and $\operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})$, we conclude that $\mathrm{Q}_\mathfrak{p}$ is a finite-type $\mathrm{C}_\mathfrak{p}$-module. Nakayama's lemma (and the fact that $\mathrm{C}=\mathrm{B}$) now shows that the images of the $q_h$ in $\mathrm{Q}_\mathfrak{p}$ generate this $\mathrm{C}_\mathfrak{p}$-module. This completes the proof of \sref{IV.11.2.9.6}, and also proves that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a finitely presented $\mathrm{C}$-module.
 
 \medskip
-\noindent\textbf{VI)} \emph{End of the proof.} --- For brevity, set $\mathrm{C}_\lambda=\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda$ (in fact equal to $\mathrm{B}_\lambda$), $\mathrm{N}_\lambda=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$, and $\mathrm{N}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$. First note that, for every integer $k$, $\mathfrak{J}^k\mathrm{M}$ identifies with $\varinjlim_\lambda\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ by exactness of the functor $\varinjlim_\lambda$: the image of $\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ in $\mathrm{M}_\mu$ for $\lambda\leqslant\mu$ (respectively in $\mathrm{M}$) generates $\mathfrak{J}_\mu^k\mathrm{M}_\mu$ (respectively $\mathfrak{J}^k\mathrm{M}$). Using exactness of $\varinjlim$ once more, we conclude that $\mathrm{N}$ identifies canonically with $\varinjlim_\lambda\mathrm{N}_\lambda$. With this identification, we shall first prove:
+\noindent VI) \emph{End of the proof.} --- For brevity, set $\mathrm{C}_\lambda=\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda$ (in fact equal to $\mathrm{B}_\lambda$), $\mathrm{N}_\lambda=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$, and $\mathrm{N}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$. First note that, for every integer $k$, $\mathfrak{J}^k\mathrm{M}$ identifies with $\varinjlim_\lambda\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ by exactness of the functor $\varinjlim_\lambda$: the image of $\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ in $\mathrm{M}_\mu$ for $\lambda\leqslant\mu$ (respectively in $\mathrm{M}$) generates $\mathfrak{J}_\mu^k\mathrm{M}_\mu$ (respectively $\mathfrak{J}^k\mathrm{M}$). Using exactness of $\varinjlim$ once more, we conclude that $\mathrm{N}$ identifies canonically with $\varinjlim_\lambda\mathrm{N}_\lambda$. With this identification, we shall first prove:
 \begin{equation}
 \label{IV.11.2.9.9}
 \tag{11.2.9.9}
@@ -1395,7 +1395,7 @@ $\mathrm{A}_\mu$-module for every $\mu\geqslant\lambda$. For such a
 $\mu$ we have a commutative diagram
 \[
 \xymatrix{
-  \mathrm{P}_\mu \ar[r] \ar[d]^{w_\mu} & \mathrm{N} \ar@{=}[d] \\
+  \mathrm{P}_\mu \ar[r] \ar[d]_{w_\mu} & \mathrm{N} \ar@{=}[d] \\
   \mathrm{N}_\mu \ar[r] & \mathrm{N}
 }
 \]
@@ -1630,7 +1630,7 @@ Applying $(\mathbf{0}_\mathrm{I},~6.1.2)$ to the exact sequence
   0\longrightarrow(\sh{F}'_0)_{x_0}
   \longrightarrow(\sh{F}_0)_{x_0}
   \longrightarrow(\operatorname{Coker}u_0)_{x_0}
-  \longrightarrow0,
+  \longrightarrow0
 \]
 we conclude that $u_x$ is injective, which proves condition $a)$.
 
@@ -1758,7 +1758,7 @@ the vertical arrows are isomorphisms. Since the first horizontal arrow is an iso
 \begin{theorem}[11.3.10]
 \label{IV.11.3.10}
 (Flatness criterion by fibres). --- Let $\mathrm{S}$ be a prescheme, $g:\mathrm{X}\to\mathrm{S}$, $h:\mathrm{Y}\to\mathrm{S}$ two morphisms, $f:\mathrm{X}\to\mathrm{Y}$ an $\mathrm{S}$-morphism, $\sh{F}$ a quasi-coherent $\sh{O}_\mathrm{X}$-Module, $x$ a point of $\mathrm{X}$, $y=f(x)$, $s=h(y)=g(x)$. Suppose that one of the following two hypotheses holds:
-\begin{enumerate}[label=\arabic{enumi}\textsuperscript{o}]
+\begin{enumerate}[label=\textup{\arabic{enumi}\textsuperscript{o}}]
   \item $\mathrm{S}$, $\mathrm{X}$ and $\mathrm{Y}$ are locally Noetherian and $\sh{F}$ is coherent.
   \item $g$ and $h$ are locally of finite presentation and $\sh{F}$ is of finite presentation.
 \end{enumerate}
@@ -1802,24 +1802,24 @@ Consider, on the other hand, the following four properties:
   \item $\mathrm{B}/\mathfrak{J}\mathrm{B}$ is a flat $(\mathrm{A}/\mathfrak{J})$-module and for every maximal ideal $\mathfrak{m}\supset\mathfrak{J}\mathrm{B}$ of $\mathrm{B}$ one has $\mathfrak{m}\mathrm{M}\neq\mathrm{M}$.
 \end{enumerate}
 Then:
-\begin{enumerate}[label=\arabic{enumi}\textsuperscript{o}]
+\begin{enumerate}[label=\textup{\arabic{enumi}\textsuperscript{o}}]
   \item If one of the conditions (i) or (ii) holds, the conjunction of $a)$ and $b)$ implies $c)$, and $c)$ implies $a)$.
   \item \oldpage[IV-3]{139} If the condition (i) or the conjunction of (ii) and (iii) is verified, the conjunction of $c)$ and $d)$ implies the conjunction of $a)$ and $b)$.
 \end{enumerate}
 \end{lemma}
 
 \begin{proof}
-1\textsuperscript{o} The first assertion is immediate $(\mathbf{0}_\mathrm{I},~6.2.1)$. Suppose therefore $c)$ verified, and let us prove $a)$. Consider the graded rings $\operatorname{gr}^*_\mathfrak{J}(\mathrm{A})$, $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ and the graded module $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ (over both $\operatorname{gr}^*_\mathfrak{J}(\mathrm{A})$ and $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$) relative to the $\mathfrak{J}$-preadic filtrations, as well as the surjective canonical maps $(\mathbf{0}_{\mathrm{III}},~10.1.1.2)$
+1\textsuperscript{o} The first assertion is immediate $(\mathbf{0}_\mathrm{I},~6.2.1)$. Suppose therefore $c)$ verified, and let us prove $a)$. Consider the graded rings $\operatorname{gr}^\bullet_\mathfrak{J}(\mathrm{A})$, $\operatorname{gr}^\bullet_\mathfrak{J}(\mathrm{B})$ and the graded module $\operatorname{gr}^\bullet_\mathfrak{J}(\mathrm{M})$ (over both $\operatorname{gr}^\bullet_\mathfrak{J}(\mathrm{A})$ and $\operatorname{gr}^\bullet_\mathfrak{J}(\mathrm{B})$) relative to the $\mathfrak{J}$-preadic filtrations, as well as the surjective canonical maps $(\mathbf{0}_{\mathrm{III}},~10.1.1.2)$
 \begin{align*}
-  u &: \operatorname{gr}^0(\mathrm{B})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^*(\mathrm{A})\to\operatorname{gr}^*(\mathrm{B}) \\
-  v &: \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^*(\mathrm{A})\to\operatorname{gr}^*(\mathrm{M}) \\
-  w &: \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{B})}\operatorname{gr}^*(\mathrm{B})\to\operatorname{gr}^*(\mathrm{M})
+  u &: \operatorname{gr}^0(\mathrm{B})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^\bullet(\mathrm{A})\to\operatorname{gr}^\bullet(\mathrm{B}) \\
+  v &: \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^\bullet(\mathrm{A})\to\operatorname{gr}^\bullet(\mathrm{M}) \\
+  w &: \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{B})}\operatorname{gr}^\bullet(\mathrm{B})\to\operatorname{gr}^\bullet(\mathrm{M})
 \end{align*}
 It is clear there is a commutative diagram
 \begin{equation}
 \xymatrix{
-  \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^*(\mathrm{A}) \ar[rr]^{v} \ar[dr]_{1\otimes u} & & \operatorname{gr}^*(\mathrm{M}) \\
-  & \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{B})}\operatorname{gr}^*(\mathrm{B}) \ar[ur]_{w} &
+  \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{A})}\operatorname{gr}^\bullet(\mathrm{A}) \ar[rr]^{v} \ar[dr]_{1\otimes u} & & \operatorname{gr}^\bullet(\mathrm{M}) \\
+  & \operatorname{gr}^0(\mathrm{M})\otimes_{\operatorname{gr}^0(\mathrm{B})}\operatorname{gr}^\bullet(\mathrm{B}) \ar[ur]_{w} &
 }
   \label{IV.11.3.10.3}
 \tag{11.3.10.3}
@@ -2164,7 +2164,7 @@ and therefore
 \oldpage[IV-3]{145}
 The homomorphism $f_\lambda$ can therefore be written
 \[
-1\otimes\operatorname{gr}(u_\lambda) : \mathrm{M}_0\otimes_{\mathrm{A}_0}\operatorname{gr}(\mathrm{A}) \to \mathrm{M}_0\otimes_{\mathrm{A}_0}\operatorname{gr}_\mathfrak{J}(\mathrm{B}_\lambda),
+1\otimes\operatorname{gr}(u_\lambda) : \mathrm{M}_0\otimes_{\mathrm{A}_0}\operatorname{gr}(\mathrm{A}) \to \mathrm{M}_0\otimes_{\mathrm{A}_0}\operatorname{gr}_\mathfrak{J}(\mathrm{B}_\lambda)
 \]
 and since by hypothesis $\mathrm{M}_0$ is an $\mathrm{A}_0$-module \emph{flat}, the kernel of $f_\lambda$ is equal to $\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{R}_\lambda$,
 where $\mathrm{R}_\lambda$ is the kernel of $\operatorname{gr}(u_\lambda):\operatorname{gr}(\mathrm{A})\to\operatorname{gr}_\mathfrak{J}(\mathrm{B}_\lambda)$. It therefore suffices to prove that
@@ -2286,16 +2286,16 @@ have the same property.
 \label{IV.11.4.6}
 Let $\mathrm{A}$ be a ring such that $\operatorname{Spec}(\mathrm{A})$ is irreducible, $\mathfrak{p}$ its unique
 minimal prime ideal, $\mathrm{B}$ an $\mathrm{A}$-algebra of finite presentation, $\mathrm{M}$ a $\mathrm{B}$-module of finite presentation.
-Suppose that $\mathrm{M}_\mathfrak{p}$ is a flat $\mathrm{A}_\mathfrak{p}$-module; then there exists $t\in\mathrm{A}-\mathfrak{p}$ such that $\mathrm{M}_t$ is a free $\mathrm{A}_t$-module.
+Suppose that $\mathrm{M}_\mathfrak{p}$ is a flat $\mathrm{A}_\mathfrak{p}$-module; then there exists $t\in\mathrm{A}\setmin\mathfrak{p}$ such that $\mathrm{M}_t$ is a free $\mathrm{A}_t$-module.
 \end{corollary}
 
 \begin{proof}
 Applying \sref{IV.11.4.5} with $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, $\sh{F}=\widetilde{\mathrm{M}}$, one can (replacing
-$\mathrm{A}$ by $\mathrm{A}_h$ as needed, where $h\in\mathrm{A}-\mathfrak{p}$) suppose that there exists an ideal of finite type $\mathfrak{J}$ in $\mathrm{A}$
+$\mathrm{A}$ by $\mathrm{A}_h$ as needed, where $h\in\mathrm{A}\setmin\mathfrak{p}$) suppose that there exists an ideal of finite type $\mathfrak{J}$ in $\mathrm{A}$
 such that the $\mathrm{A}$-algebras $\mathrm{A}'$ for which $\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'$ is an $\mathrm{A}'$-module free (or flat) are
 exactly those such that $\mathfrak{J}\mathrm{A}'=0$. In particular, the hypothesis implies that $\mathrm{M}_\mathfrak{p}$ is a flat
 $\mathrm{A}_\mathfrak{p}$-module, hence $\mathfrak{J}\mathrm{A}_\mathfrak{p}=0$, or $\mathfrak{J}_\mathfrak{p}=0$. But since $\mathfrak{J}$ is of finite type, there
-exists $t\in\mathrm{A}-\mathfrak{p}$ such that $\mathfrak{J}_t=0$, or equivalently $\mathfrak{J}\mathrm{A}_t=0$, and therefore $\mathrm{M}_t$ is a free $\mathrm{A}_t$-module.
+exists $t\in\mathrm{A}\setmin\mathfrak{p}$ such that $\mathfrak{J}_t=0$, or equivalently $\mathfrak{J}\mathrm{A}_t=0$, and therefore $\mathrm{M}_t$ is a free $\mathrm{A}_t$-module.
 \end{proof}
 
 \begin{proposition}[11.4.7]
@@ -2366,12 +2366,12 @@ coherent $\sh{O}_\mathrm{X}$-module. Let $(\mathrm{A}'_\alpha)$ be a family of l
 a homomorphism of rings (necessarily local). Set $\mathrm{Y}'_\alpha=\operatorname{Spec}(\mathrm{A}'_\alpha)$, $\mathrm{X}'_\alpha=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'_\alpha$,
 $\sh{F}'_\alpha=\sh{F}\otimes_\mathrm{A}\mathrm{A}'_\alpha$. Let $x$ be a point
 of $\mathrm{X}$, and suppose the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item The intersection of the kernels of the $u_\alpha$ is reduced to $0$.
-  \item The extension $k(x)$ of the residue field $k$ of $\mathrm{A}$ is primary $(4.3.1)$ (a condition automatically
+  \item The extension $\boldsymbol{k}(x)$ of the residue field $k$ of $\mathrm{A}$ is primary $(4.3.1)$ (a condition automatically
   satisfied if $k$ is separably closed).
 \end{enumerate}
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \setcounter{enumi}{2}
   \item For all $\alpha$, there exists a point $x'_\alpha\in\mathrm{X}'_\alpha$ whose projections in $\mathrm{X}$ and $\mathrm{Y}'_\alpha$
   are $x$ and the closed point $y'_\alpha$ of $\mathrm{Y}'_\alpha$, and such that $\sh{F}'_\alpha$ is $\mathrm{Y}'_\alpha$-flat at the point $x'_\alpha$.
@@ -2385,7 +2385,7 @@ The question being local on $\mathrm{X}$, one can evidently restrict to the case
 a morphism of finite type and suppose $\sh{F}_x\neq 0$. We will proceed in several steps.
 
 \medskip
-\noindent\textbf{I)} \emph{Reduction to the case where $\mathrm{A}'_\alpha$ is a local ring of a $\mathrm{Y}$-prescheme of finite type and where the
+\noindent I) \emph{Reduction to the case where $\mathrm{A}'_\alpha$ is a local ring of a $\mathrm{Y}$-prescheme of finite type and where the
 residue field $k'_\alpha$ of $\mathrm{A}'_\alpha$ is a finite extension of $k$.}
 
 \medskip
@@ -2409,15 +2409,15 @@ ring; hence, by $(10.4.6)$, $\mathrm{Z}'_1$ and $\mathrm{T}'_1$ are Jacobson pre
 a point $t'_0$ in $\mathrm{V}$ that is closed in $\mathrm{V}$, and its image $z'_0$ in $\mathrm{Z}'_1$ is a \emph{closed} point of $\mathrm{Z}'_1$ $(10.4.7)$.
 Let $f_1$ be the restriction of $f$ to $\mathrm{X}_1$, and let $f'_1:\mathrm{T}'_1\to\mathrm{Z}'_1$ be the canonical projection. Then
 $\mathrm{V}\cap f_1'^{-1}(z'_0)$ is a nonempty open subset of
-$f_1^{-1}(y)\otimes_{k(y)}k(z'_0)$; since this latter prescheme is flat over $f_1^{-1}(y)$, a maximal point $t'_1$ of
+$f_1^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(z'_0)$; since this latter prescheme is flat over $f_1^{-1}(y)$, a maximal point $t'_1$ of
 $\mathrm{V}\cap f_1'^{-1}(z'_0)$ necessarily lies above the unique maximal point $x$ of $\mathrm{X}_1$ $(2.3.4)$.
-Finally, $k(z'_0)$ is a \emph{finite} extension of $k$ (\textbf{I},~$6.4.2$), and the homomorphism
+Finally, $\boldsymbol{k}(z'_0)$ is a \emph{finite} extension of $k$ (\textbf{I},~$6.4.2$), and the homomorphism
 $\mathrm{A}=\sh{O}_{\mathrm{Y},y}\to\mathrm{A}'=\sh{O}_{\mathrm{Z}',z'}$ factors as
 $\sh{O}_{\mathrm{Y},y}\to\sh{O}_{\mathrm{Z}',z'_0}\to\sh{O}_{\mathrm{Z}',z'}$; its kernel is therefore contained in that of
 $\sh{O}_{\mathrm{Y},y}\to\sh{O}_{\mathrm{Z}',z'_0}$. This completes the announced reduction.
 
 \medskip
-\noindent\textbf{II)} \emph{Reduction to the case where there are only finitely many $\mathrm{A}'_\alpha$ and they are finite $\mathrm{A}$-algebras.} --- Let $\mathfrak{m}'_\alpha$ be
+\noindent II) \emph{Reduction to the case where there are only finitely many $\mathrm{A}'_\alpha$ and they are finite $\mathrm{A}$-algebras.} --- Let $\mathfrak{m}'_\alpha$ be
 the maximal ideal of $\mathrm{A}'_\alpha$. Since $\mathrm{A}'_\alpha$ is a Noetherian local ring, the intersection of the $\mathfrak{m}'^n_\alpha$
 is $0$ $(\mathbf{0}_\mathrm{I},~7.3.5)$. The intersection of the $u_\alpha^{-1}(\mathfrak{m}'^n_\alpha)$, over all indices $n$ and $\alpha$, is therefore
 equal to the intersection of the kernels of the $u_\alpha$, and hence is reduced to $0$ by hypothesis (i). Since $\mathrm{A}$
@@ -2428,7 +2428,7 @@ $\mathrm{A}''_i=\mathrm{A}'_i/\mathfrak{m}'^{n_i}_i$ is a finite $\mathrm{A}$-al
 therefore follows from $(2.1.4)$.
 
 \medskip
-\noindent\textbf{III)} \emph{End of the proof.} --- Suppose now that there are only finitely many $\mathrm{A}'_i$ $(1\leq i\leq r)$ and that
+\noindent III) \emph{End of the proof.} --- Suppose now that there are only finitely many $\mathrm{A}'_i$ $(1\leq i\leq r)$ and that
 they are finite $\mathrm{A}$-algebras. For every $i$, the residue field $k_i$ of $\mathrm{A}'_i$ is a finite extension of $k$; using
 hypothesis (ii), one concludes that the inverse image of $x$ in $\mathrm{X}'_i$ consists of the \emph{single} point $x'_i$ $(4.3.2)$.
 Let $\mathrm{Y}'$ be the disjoint union of the $\mathrm{Y}'_i$, let $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$ be the disjoint union of the
@@ -2453,7 +2453,7 @@ Let $(\mathrm{A}'_\alpha)$ be a family of local rings, and for each $\alpha$, $u
 of rings. Set $\mathrm{Y}'_\alpha=\operatorname{Spec}(\mathrm{A}'_\alpha)$, $\mathrm{X}'_\alpha=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'_\alpha$,
 $f'_\alpha=f_{(\mathrm{Y}'_\alpha)}$, and $\sh{F}'_\alpha=\sh{F}\otimes_\mathrm{A}\mathrm{A}'_\alpha$. Let $x$ be a point
 of $\mathrm{X}$, and suppose that the following conditions are satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item The intersection of the kernels of the $u_\alpha$ is reduced to $0$.
   \item For all $\alpha$, $\sh{F}'_\alpha$ is $f'_\alpha$-flat at every point $x'_\alpha\in\mathrm{X}'_\alpha$ whose projections in $\mathrm{X}$ and $\mathrm{Y}'_\alpha$
   are $x$ and the closed point $y'_\alpha$ of $\mathrm{Y}'_\alpha$.
@@ -2495,7 +2495,7 @@ Let $\mathrm{A}$ be an Artinian local ring, $\mathrm{Y}=\operatorname{Spec}(\mat
 morphism locally of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-module. Let $(\mathrm{Y}'_\alpha)$ be a family of
 $\mathrm{Y}$-preschemes, and for all $\alpha$, set $\mathrm{X}'_\alpha=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'_\alpha$, $f'_\alpha=f_{(\mathrm{Y}'_\alpha)}$, and $\sh{F}'_\alpha=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'_\alpha$. Let $x$ be a point
 of $\mathrm{X}$ and suppose the following hypotheses satisfied:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item The intersection of the kernels of the homomorphisms $\mathrm{A}\to\Gamma(\mathrm{Y}'_\alpha,\sh{O}_{\mathrm{Y}'_\alpha})$ corresponding to the
   structural morphisms is reduced to $0$.
   \item For all $\alpha$, $\sh{F}'_\alpha$ is $f'_\alpha$-flat at every point $x'_\alpha\in\mathrm{X}'_\alpha$ whose projection in $\mathrm{X}$ is $x$.
@@ -2532,11 +2532,11 @@ the canonical homomorphism (\textbf{I},~$2.4.4$); suppose that the finite inters
 $u_\alpha^{-1}(\mathfrak{m}'_\alpha{}^{n_\alpha})$
 form a fundamental system of neighbourhoods of $0$ in $\sh{O}_y$. Set $\mathrm{X}'_\alpha=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'_\alpha$, $f'_\alpha=f_{(\mathrm{Y}'_\alpha)}$,
 $\sh{F}'_\alpha=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'_\alpha$, and suppose that one of the following hypotheses holds:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item For all $\alpha$, $\sh{F}'_\alpha$ is $f'_\alpha$-flat at every point whose projection in $\mathrm{X}$ is equal
   to $x$ and whose projection in $\mathrm{Y}'_\alpha$ is equal to $y'_\alpha$.
   \item For all $\alpha$, there exists a point $x'_\alpha\in\mathrm{X}'_\alpha$ whose projection on $\mathrm{X}$ is $x$ and whose projection in $\mathrm{Y}'_\alpha$
-  is equal to $y'_\alpha$, such that $\sh{F}'_\alpha$ is $f'_\alpha$-flat at the point $x'_\alpha$, and $k(x)$ is a primary extension of $k(y)$.
+  is equal to $y'_\alpha$, such that $\sh{F}'_\alpha$ is $f'_\alpha$-flat at the point $x'_\alpha$, and $\boldsymbol{k}(x)$ is a primary extension of $\boldsymbol{k}(y)$.
 \end{enumerate}
 
 Under these conditions, $\sh{F}$ is $f$-flat at the point $x$.
@@ -2605,7 +2605,7 @@ flat $(\mathbf{0}_\mathrm{I},~7.3.5)$ and $\hat{\mathrm{A}}'=\mathrm{A}'\otimes_
 Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism locally of finite presentation,
 $\sh{F}$ a quasi-coherent $\sh{O}_\mathrm{X}$-module of finite presentation, $x$ a point of $\mathrm{X}$, $y=f(x)$, $g=(\psi,\theta):\mathrm{Y}'\to\mathrm{Y}$
 a proper morphism of finite presentation. Suppose that:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item The homomorphism $\theta_y:\sh{O}_y\to(g_*(\sh{O}_{\mathrm{Y}'}))_y$ is injective.
   \item For every $x'\in\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$ whose projection in $\mathrm{X}$ is $x$, $\sh{F}'=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'$ is
   $\mathrm{Y}'$-flat at the point $x'$.
@@ -2729,7 +2729,7 @@ Let $\mathrm{U}'$ be the set of $x'\in\mathrm{X}'$ such that $\sh{F}'$ is $f'$-f
 that $\mathrm{U}'$ is open in $\mathrm{X}'$ since $f'$ is of finite presentation $(1.6.2)$; similarly the
 set $\mathrm{U}'_\lambda$ of points of $\mathrm{X}'_\lambda$ where $\sh{F}'_\lambda$ is $f'_\lambda$-flat is open in $\mathrm{X}'_\lambda$, and one knows moreover
 \sref{IV.11.2.6} that $\mathrm{U}'$ is the union of the $v_\lambda^{-1}(\mathrm{U}'_\lambda)$, where $v_\lambda:\mathrm{X}'\to\mathrm{X}'_\lambda$ is the canonical projection.
-Let us consider the scheme $\mathrm{T}=\operatorname{Spec}(k(x))$; set $\mathrm{T}'=\mathrm{T}\times_\mathrm{Y}\mathrm{Y}'$, $\mathrm{T}'_\lambda=\mathrm{T}\times_\mathrm{Y}\mathrm{Y}'_\lambda$, and let
+Let us consider the scheme $\mathrm{T}=\operatorname{Spec}(\boldsymbol{k}(x))$; set $\mathrm{T}'=\mathrm{T}\times_\mathrm{Y}\mathrm{Y}'$, $\mathrm{T}'_\lambda=\mathrm{T}\times_\mathrm{Y}\mathrm{Y}'_\lambda$, and let
 $w_\lambda:\mathrm{T}'\to\mathrm{T}'_\lambda$, $g':\mathrm{T}'\to\mathrm{X}'$, $g'_\lambda:\mathrm{T}'_\lambda\to\mathrm{X}'_\lambda$ be the canonical projections. Let us set $\mathrm{V}'_\lambda=g_\lambda'^{-1}(\mathrm{U}'_\lambda)$,
 $\mathrm{V}'=g'^{-1}(\mathrm{U}')=\bigcup w_\lambda^{-1}(\mathrm{V}'_\lambda)$. By hypothesis (and taking into account (\textbf{I},~$3.6.1$)), $\mathrm{V}'=\mathrm{T}'$;
 as $\mathrm{T}'$ is quasi-compact, there exists $\lambda$ such that $w_\lambda^{-1}(\mathrm{V}'_\lambda)=\mathrm{T}'$. One deduces then from $(8.3.3)$
@@ -2757,7 +2757,7 @@ One can restrict to the case where $f$ is of finite presentation, the question b
 on $\mathrm{X}$. We will proceed in several steps.
 
 \medskip
-\noindent\textbf{I)} \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{A}'$ are integrally closed local rings.}
+\noindent I) \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{A}'$ are integrally closed local rings.}
 
 \medskip
 Since $u$ is injective and $\mathrm{A}$ is integral, there exists a prime ideal $\mathfrak{p}'$ of $\mathrm{A}'$ such that
@@ -2776,7 +2776,7 @@ the \emph{sole} prime ideal of $\mathrm{A}_1$ above $\mathfrak{m}$, since $\math
 \emph{Alg.\ comm.}, chap.~V, \S~2, n\textsuperscript{o}~1, prop.~1); since $\mathfrak{m}'\cap\mathrm{A}=\mathfrak{m}$, one has $\mathfrak{m}'\cap\mathrm{A}_1\cap\mathrm{A}=\mathfrak{m}$,
 hence $\mathfrak{m}'\cap\mathrm{A}_1=\mathfrak{m}_1$. Set $\mathrm{Y}_1=\operatorname{Spec}(\mathrm{A}_1)$, $\mathrm{X}_1=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}_1$, $f_1=f_{(\mathrm{Y}_1)}$, $\sh{F}_1=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}_1$, and
 let $x_1$ be the projection of $x'$ in $\mathrm{X}_1$; let us denote furthermore by $y_1$ the unique closed point
-of $\mathrm{Y}_1$, so that $y_1=f_1(x_1)$. By hypothesis the morphism $\operatorname{Spec}(k(y_1))\to\operatorname{Spec}(k(y))$
+of $\mathrm{Y}_1$, so that $y_1=f_1(x_1)$. By hypothesis the morphism $\operatorname{Spec}(\boldsymbol{k}(y_1))\to\operatorname{Spec}(\boldsymbol{k}(y))$
 is \emph{radicial}, whence one concludes, by the transitivity of fibres (\textbf{I},~$3.6.4$) and (\textbf{I},~$3.5.7$), that
 the morphism $f_1^{-1}(y_1)\to f^{-1}(y)$ is radicial, and in particular $x_1$ is the \emph{sole} point of $\mathrm{X}_1$
 whose projections in $\mathrm{X}$ and $\mathrm{Y}_1$ are $x$ and $y_1$ respectively; moreover, as one has seen, $y_1$
@@ -2786,7 +2786,7 @@ apply \sref{IV.11.5.5}, whence the conclusion. One is therefore brought back to 
 is also \emph{integrally closed}.
 
 \medskip
-\noindent\textbf{II)} \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{A}'$ are local rings of $\mathbf{Z}$-algebras of finite type integrally
+\noindent II) \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{A}'$ are local rings of $\mathbf{Z}$-algebras of finite type integrally
 closed.}
 
 \medskip
@@ -2815,7 +2815,7 @@ point $x'_\mu$, projection of $x'$ in $\mathrm{X}'_\mu$, and moreover, by constr
 of $x'_\mu$ in $\mathrm{Y}'_\mu$ is the closed point of $\mathrm{Y}'_\mu$.
 
 \medskip
-\noindent\textbf{III)} \emph{Reduction to the case where the residue field $k'$ of $\mathrm{A}'$ is a finite extension and radicial of the
+\noindent III) \emph{Reduction to the case where the residue field $k'$ of $\mathrm{A}'$ is a finite extension and radicial of the
 residue field $k$ of $\mathrm{A}$.}
 
 \medskip
@@ -2861,7 +2861,7 @@ But $(\sh{F}_1)_{x_1}=\sh{F}_x\otimes_{\sh{O}_x}\sh{O}_{x_1}$, and $\sh{O}_{x_1}
 Since $\mathrm{X}'_1=\mathrm{X}_1\times_{\mathrm{Y}_1}\mathrm{Y}'_1$ and $\sh{F}'_1=\sh{F}_1\otimes_{\mathrm{Y}_1}\mathrm{Y}'_1$, we have indeed reduced to the situation of \sref{IV.11.6.1}, with $\mathrm{A}$ and $\mathrm{A}'$ replaced respectively by $\mathrm{A}_1$ and $\mathrm{B}_1$.
 
 \medskip
-\noindent\textbf{IV)} \emph{End of the proof.} --- We are finally reduced to proving \sref{IV.11.6.1} under the following supplementary hypotheses:
+\noindent IV) \emph{End of the proof.} --- We are finally reduced to proving \sref{IV.11.6.1} under the following supplementary hypotheses:
 \begin{enumerate}[label=(\roman*)]
   \item $\mathrm{A}$ and $\mathrm{A}'$ are local rings of $\mathbf{Z}$-algebras of finite type (hence \emph{excellent} rings \sref{IV.7.8.3});
   \item $\mathrm{A}$ is integrally closed;
@@ -2916,7 +2916,7 @@ We shall now show that the result of \sref{IV.11.5.4} loses its validity when $f
 Let $k$ be a field, let $\mathrm{A}_0=k[\mathrm{S},\mathrm{T}]$, and let $\mathrm{A}=\mathrm{A}_0/\mathrm{A}_0\mathrm{S}\mathrm{T}$. Thus $\mathrm{Y}=\Spec(\mathrm{A})$ is the reducible curve formed by the two ``coordinate axes'' in the affine plane $\mathrm{V}_k^2=\Spec(\mathrm{A}_0)$.
 The ring $\mathrm{A}$ has two minimal prime ideals $\mathfrak{p}_1=\mathrm{A}_0\mathrm{S}/\mathrm{A}_0\mathrm{S}\mathrm{T}$ and $\mathfrak{p}_2=\mathrm{A}_0\mathrm{T}/\mathrm{A}_0\mathrm{S}\mathrm{T}$. Since $\mathrm{A}$ is reduced, it embeds canonically into $\mathrm{B}=\mathrm{B}_1\oplus\mathrm{B}_2$, where $\mathrm{B}_1=\mathrm{A}/\mathfrak{p}_1$ and $\mathrm{B}_2=\mathrm{A}/\mathfrak{p}_2$. Moreover, $\mathrm{B}_1$ identifies with $k[\mathrm{T}]$ and $\mathrm{B}_2$ with $k[\mathrm{S}]$; these are integrally closed integral rings, and consequently $\mathrm{Z}=\Spec(\mathrm{B})$ is precisely the normalization of $\mathrm{Y}$ relative to $\mathrm{R}(\mathrm{Y})$ \sref[II]{II.6.3.8}, the sum of the two schemes $\mathrm{Z}_1=\Spec(\mathrm{B}_1)$ and $\mathrm{Z}_2=\Spec(\mathrm{B}_2)$.
 Denote by $y$ the ``double point'' of $\mathrm{Y}$ corresponding to the maximal ideal $\mathfrak{p}_1+\mathfrak{p}_2=\mathfrak{m}$ of $\mathrm{A}$, and by $z_1,z_2$ the points of $\mathrm{Z}$ above $y$, corresponding respectively to the maximal ideals $\mathfrak{m}_1=(\mathrm{T})$ and $\mathfrak{m}_2=(\mathrm{S})$ of $\mathrm{B}_1$ and $\mathrm{B}_2$.
-Let $\mathrm{X}$ be the subprescheme of $\mathrm{Z}$ induced on the complement of $z_2$. Thus $\mathrm{X}=\Spec(\mathrm{B}_1\oplus(\mathrm{B}_2)_\mathrm{S})$. It is immediate that the homomorphism $\mathrm{A}\to\mathrm{A}'=\mathrm{B}_1\oplus(\mathrm{B}_2)_\mathrm{S}$ is injective, but the corresponding morphism $f:\mathrm{X}\to\mathrm{Y}$ is not closed, since $f(\mathrm{Z}_2-\{z_2\})$ is not closed in $\mathrm{Y}$ although $\mathrm{Z}_2-\{z_2\}$ is closed in $\mathrm{X}$; \emph{a fortiori}, $f$ is not proper.
+Let $\mathrm{X}$ be the subprescheme of $\mathrm{Z}$ induced on the complement of $z_2$. Thus $\mathrm{X}=\Spec(\mathrm{B}_1\oplus(\mathrm{B}_2)_\mathrm{S})$. It is immediate that the homomorphism $\mathrm{A}\to\mathrm{A}'=\mathrm{B}_1\oplus(\mathrm{B}_2)_\mathrm{S}$ is injective, but the corresponding morphism $f:\mathrm{X}\to\mathrm{Y}$ is not closed, since $f(\mathrm{Z}_2\setmin\{z_2\})$ is not closed in $\mathrm{Y}$ although $\mathrm{Z}_2\setmin\{z_2\}$ is closed in $\mathrm{X}$; \emph{a fortiori}, $f$ is not proper.
 We shall now see that $f$ is not flat at $z_1$. It is enough to show \sref[0]{0.6.6.2} that $\sh{O}_{z_1}$ is not a faithfully flat $\sh{O}_y$-module, and for this it suffices to observe that the canonical homomorphism $\sh{O}_y\to\sh{O}_{z_1}$ is not injective. This is immediate, since $\sh{O}_{z_1}$ is an integral ring whereas $\sh{O}_y$ has zero-divisors.
 Nevertheless, the first projection $p:\mathrm{X}\times_\mathrm{Y}\mathrm{X}\to\mathrm{X}$ is an isomorphism. Indeed,
 \[
@@ -2929,9 +2929,9 @@ while $(\mathrm{B}_2)_\mathrm{S}\otimes_\mathrm{A}(\mathrm{B}_2)_\mathrm{S}=(\ma
 
 \begin{env}[11.7.3]
 \label{IV.11.7.3}
-The preceding example can be generalized. Over a field $k$, consider a reduced algebraic curve $\mathrm{Y}$ admitting a single ``ordinary double point'' $y$ (a notion that will be defined later in general), together with its normalization $\mathrm{Z}$, such that $g:\mathrm{Z}\to\mathrm{Y}$ is finite, the restriction of $g$ to $\mathrm{Z}-g^{-1}(y)$ is an isomorphism onto $\mathrm{Y}-\{y\}$, and $g^{-1}(y)$ consists of two ``simple'' points $z_1,z_2$. Moreover, the prescheme $g^{-1}(y)$ is the sum of the two preschemes $\Spec(k(z_1))$ and $\Spec(k(z_2))$, each canonically isomorphic to $\Spec(k(y))$.
-Let $\mathrm{X}$ be the subprescheme of $\mathrm{Z}$ induced on the open set $\mathrm{Z}-\{z_2\}$. The morphism $f:\mathrm{X}\to\mathrm{Y}$ obtained by restricting $g$ is not proper; otherwise \sref[II]{II.5.4.3} would imply the same for the canonical injection $j:\mathrm{X}\to\mathrm{Z}$, which is not closed.
-The morphism $f$ is radicial: for every $y'\in\mathrm{Y}$, the fibre $f^{-1}(y')$ consists of a single point $x'$, and $k(y')\to k(x')$ is an isomorphism. It follows first that the diagonal $\Delta_f:\mathrm{X}\to\mathrm{X}\times_\mathrm{Y}\mathrm{X}$ is bijective (1.7.7.1). On the other hand, since $f$ is unramified \sref{IV.17.4.2}[(d')], $\Delta_f$ is an open immersion \sref{IV.17.4.2}[(b')]. Consequently $\Delta_f$ is an isomorphism, and the first projection $p:\mathrm{X}\times_\mathrm{Y}\mathrm{X}\to\mathrm{X}$ is its inverse.
+The preceding example can be generalized. Over a field $k$, consider a reduced algebraic curve $\mathrm{Y}$ admitting a single ``ordinary double point'' $y$ (a notion that will be defined later in general), together with its normalization $\mathrm{Z}$, such that $g:\mathrm{Z}\to\mathrm{Y}$ is finite, the restriction of $g$ to $\mathrm{Z}\setmin g^{-1}(y)$ is an isomorphism onto $\mathrm{Y}\setmin\{y\}$, and $g^{-1}(y)$ consists of two ``simple'' points $z_1,z_2$. Moreover, the prescheme $g^{-1}(y)$ is the sum of the two preschemes $\Spec(\boldsymbol{k}(z_1))$ and $\Spec(\boldsymbol{k}(z_2))$, each canonically isomorphic to $\Spec(\boldsymbol{k}(y))$.
+Let $\mathrm{X}$ be the subprescheme of $\mathrm{Z}$ induced on the open set $\mathrm{Z}\setmin\{z_2\}$. The morphism $f:\mathrm{X}\to\mathrm{Y}$ obtained by restricting $g$ is not proper; otherwise \sref[II]{II.5.4.3} would imply the same for the canonical injection $j:\mathrm{X}\to\mathrm{Z}$, which is not closed.
+The morphism $f$ is radicial: for every $y'\in\mathrm{Y}$, the fibre $f^{-1}(y')$ consists of a single point $x'$, and $\boldsymbol{k}(y')\to\boldsymbol{k}(x')$ is an isomorphism. It follows first that the diagonal $\Delta_f:\mathrm{X}\to\mathrm{X}\times_\mathrm{Y}\mathrm{X}$ is bijective (1.7.7.1). On the other hand, since $f$ is unramified \sref{IV.17.4.2}[(d')], $\Delta_f$ is an open immersion \sref{IV.17.4.2}[(b')]. Consequently $\Delta_f$ is an isomorphism, and the first projection $p:\mathrm{X}\times_\mathrm{Y}\mathrm{X}\to\mathrm{X}$ is its inverse.
 Nevertheless, $f$ is not flat at $z_1$. Otherwise $\sh{O}_{z_1}$ would be a faithfully flat $\sh{O}_y$-module \sref[0]{0.6.6.2}; since $\sh{O}_y$ contains two distinct minimal prime ideals $\mathfrak{p}_1,\mathfrak{p}_2$, corresponding to the two branches of $\mathrm{Y}$ at $y$, there would then be two distinct prime ideals of $\sh{O}_{z_1}$ whose inverse images under $u:\sh{O}_y\to\sh{O}_{z_1}$ were $\mathfrak{p}_1$ and $\mathfrak{p}_2$ \sref[0]{0.6.5.1}. This is absurd, since $\sh{O}_{z_1}$ has only two distinct prime ideals, $0$ and its maximal ideal $\mathfrak{m}_1$, while $u^{-1}(\mathfrak{m}_1)$ is the maximal ideal $\mathfrak{m}$ of $\sh{O}_y$.
 \end{env}
 
@@ -2950,15 +2950,15 @@ Indeed, with the preceding notation, it suffices to take $\mathrm{A}=\sh{O}_y$, 
 The examples of \sref{IV.11.7.2} and \sref{IV.11.7.3} explain the restriction to \emph{unibranch} local rings in \sref{IV.11.6.1} and \sref{IV.11.6.2}.
 We shall now see that in \sref{IV.11.6.1}, one cannot weaken the hypothesis on $\mathrm{A}$ by supposing only that $\mathrm{A}$ is unibranch.
 Consider the complete local integral ring $\mathrm{A}=\mathbf{R}[[\mathrm{U},\mathrm{V}]]/(\mathrm{U}^2+\mathrm{V}^2)$, which is unibranch but not geometrically unibranch \sref{IV.6.15.11}.
-One knows (\emph{loc.\ cit.}) that if $u$ and $v$ are the images of $\mathrm{U}$ and $\mathrm{V}$ in $\mathrm{A}$, the integral closure of $\mathrm{A}$ is $\bar{\mathrm{A}}=\mathrm{A}[t]$, where $t=v/u$ and $t^2=-1$, so that $\bar{\mathrm{A}}$ is isomorphic to $\mathbf{C}[[\mathrm{U}]]$.
+One knows (\emph{loc.\ cit.}) that if $u$ and $v$ are the images of $\mathrm{U}$ and $\mathrm{V}$ in $\mathrm{A}$, the integral closure of $\mathrm{A}$ is $\bar{\mathrm{A}}=\mathrm{A}[t]$, where $t=v/u$ and $t^2=\setmin 1$, so that $\bar{\mathrm{A}}$ is isomorphic to $\mathbf{C}[[\mathrm{U}]]$.
 Set $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ and $\mathrm{X}=\operatorname{Spec}(\bar{\mathrm{A}})$, the normalization of $\mathrm{Y}$ \sref[II]{II.6.3.8}, and let $y$ and $x$ be the closed points of $\mathrm{Y}$ and $\mathrm{X}$ respectively.
 We shall show that for a suitable local $\mathrm{A}$-algebra $\mathrm{A}'$, if one sets $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A}')$ and $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, and if $y'$ denotes the closed point of $\mathrm{Y}'$, then $\sh{O}_{\mathrm{X}'}$ is $\mathrm{Y}'$-flat at one point of $\mathrm{X}'$ whose projections in $\mathrm{X}$ and $\mathrm{Y}'$ are respectively $x$ and $y'$, but is not $\mathrm{Y}'$-flat at every point having these projections.
 It will then follow from \sref{IV.2.1.4} that $\sh{O}_\mathrm{X}$ is not $\mathrm{Y}$-flat at $x$ (which is moreover trivial \emph{a priori}, since $\bar{\mathrm{A}}$ is not a free $\mathrm{A}$-module).
 
 Let $\mathrm{B}=\mathrm{A}\otimes_\mathbf{R}\mathbf{C}$, which is isomorphic to $\mathbf{C}[[\mathrm{U},\mathrm{V}]]/((\mathrm{U}+i\mathrm{V})(\mathrm{U}-i\mathrm{V}))$.
-The ring $\mathrm{B}$ has two minimal prime ideals $\mathfrak{p}'$ and $\mathfrak{p}''$, generated respectively by $u+iv$ and $u-iv$, and $\mathfrak{n}=\mathfrak{p}'+\mathfrak{p}''$ is the maximal ideal of the complete local ring $\mathrm{B}$.
-Let $\bar{\mathrm{B}}=\bar{\mathrm{A}}\otimes_\mathbf{R}\mathbf{C}$; it is the direct product of two algebras isomorphic to $\mathbf{C}[[\mathrm{U}]]$, generated by the idempotents $e'=(1\otimes 1+t\otimes i)/2$ and $e''=(1\otimes 1-t\otimes i)/2$.
-Since the homomorphism $\mathrm{A}\to\bar{\mathrm{A}}$ is injective, so is $\mathrm{B}\to\bar{\mathrm{B}}$; the images of $u+iv$ and $u-iv$ under this injection are respectively $2ue'$ and $2ue''$.
+The ring $\mathrm{B}$ has two minimal prime ideals $\mathfrak{p}'$ and $\mathfrak{p}''$, generated respectively by $u+iv$ and $u\setmin iv$, and $\mathfrak{n}=\mathfrak{p}'+\mathfrak{p}''$ is the maximal ideal of the complete local ring $\mathrm{B}$.
+Let $\bar{\mathrm{B}}=\bar{\mathrm{A}}\otimes_\mathbf{R}\mathbf{C}$; it is the direct product of two algebras isomorphic to $\mathbf{C}[[\mathrm{U}]]$, generated by the idempotents $e'=(1\otimes 1+t\otimes i)/2$ and $e''=(1\otimes 1\setmin t\otimes i)/2$.
+Since the homomorphism $\mathrm{A}\to\bar{\mathrm{A}}$ is injective, so is $\mathrm{B}\to\bar{\mathrm{B}}$; the images of $u+iv$ and $u\setmin iv$ under this injection are respectively $2ue'$ and $2ue''$.
 It follows immediately that $\bar{\mathrm{B}}$ identifies canonically with $(\mathrm{B}/\mathfrak{p}')\oplus(\mathrm{B}/\mathfrak{p}'')$.
 Now take for $\mathrm{A}'$ the local ring $\mathrm{B}/\mathfrak{p}'$; then $\bar{\mathrm{A}}\otimes_\mathrm{A}\mathrm{A}'$ identifies with $\bar{\mathrm{B}}\otimes_\mathrm{B}\mathrm{A}'$.
 But $(\mathrm{B}/\mathfrak{p}')\otimes_\mathrm{B}(\mathrm{B}/\mathfrak{p}')=\mathrm{B}/\mathfrak{p}'$ and $(\mathrm{B}/\mathfrak{p}')\otimes_\mathrm{B}(\mathrm{B}/\mathfrak{p}'')=\mathrm{B}/\mathfrak{n}$, so $\bar{\mathrm{A}}\otimes_\mathrm{A}\mathrm{A}'$ is isomorphic to $\mathrm{A}'\oplus(\mathrm{B}/\mathfrak{n})$.
@@ -3058,13 +3058,13 @@ But this relation is no longer exact in general
 \oldpage[IV-3]{162}
 when $\mathrm{L}$ is \emph{infinite}, and the fact that the intersection of the kernels of the $\varphi_\lambda$ is zero \emph{does not therefore entail},
 in general, that the family $(\varphi_\lambda)$ is separating.
-For example, suppose $\mathrm{A}$ is a discrete valuation ring with maximal ideal $\mathfrak{m}$, and consider the family of homomorphisms $\varphi_k:\mathrm{A}\to\mathrm{A}/\mathfrak{m}^k$; their kernels are the ideals $\mathfrak{m}^k$, whose intersection is zero. This family is nevertheless not separating, for the fibres of all the $\mathfrak{m}^k$ at the generic point $x$ of $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$ (which is open in $\mathrm{X}$) are equal to $\sh{O}_x=k(x)$, the field of fractions of $\mathrm{A}$, and hence their intersection is not zero.
+For example, suppose $\mathrm{A}$ is a discrete valuation ring with maximal ideal $\mathfrak{m}$, and consider the family of homomorphisms $\varphi_k:\mathrm{A}\to\mathrm{A}/\mathfrak{m}^k$; their kernels are the ideals $\mathfrak{m}^k$, whose intersection is zero. This family is nevertheless not separating, for the fibres of all the $\mathfrak{m}^k$ at the generic point $x$ of $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$ (which is open in $\mathrm{X}$) are equal to $\sh{O}_x=\boldsymbol{k}(x)$, the field of fractions of $\mathrm{A}$, and hence their intersection is not zero.
 \end{env}
 
 \begin{env}[11.9.5]
 \label{IV.11.9.5}
 We will mainly be concerned in what follows with the problem of \emph{change of base} for separating families.
-The notations being those of \sref{IV.11.9.1}, consider a morphism $g:\mathrm{X}'\to\mathrm{X}$ and set $\mathscr{F}'=\mathscr{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_{\mathrm{X}'}=g^*(\mathscr{F})$, and, for every $\lambda$, $\mathrm{Z}'_\lambda=\mathrm{Z}_\lambda\times_\mathrm{X}\mathrm{X}'$, $f'_\lambda=f_\lambda\times 1$, $\sh{G}'_\lambda=\sh{G}_\lambda\otimes_{\sh{O}_{\mathrm{Z}_\lambda}}\sh{O}_{\mathrm{Z}'_\lambda}=(g'_\lambda)^*(\sh{G}_\lambda)$, where $g'_\lambda:\mathrm{Z}'_\lambda\to\mathrm{Z}_\lambda$ is the projection.
+The notations being those of \sref{IV.11.9.1}, consider a morphism $g:\mathrm{X}'\to\mathrm{X}$ and set $\mathscr{F}'=\mathscr{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_{\mathrm{X}'}=g^*(\mathscr{F})$, and, for every $\lambda$, $\mathrm{Z}'_\lambda=\mathrm{Z}_\lambda\times_\mathrm{X}\mathrm{X}'$, $f'_\lambda=f_\lambda\times 1$, $\sh{G}'_\lambda=\sh{G}_\lambda\otimes_{\sh{O}_{\mathrm{Z}_\lambda}}\sh{O}_{\mathrm{Z}'_\lambda}=g'^*_\lambda(\sh{G}_\lambda)$, where $g'_\lambda:\mathrm{Z}'_\lambda\to\mathrm{Z}_\lambda$ is the projection.
 For every $\lambda$, we denote by $u'_\lambda:\mathscr{F}'\to(f'_\lambda)_*(\sh{G}'_\lambda)$ the homomorphism obtained as follows: let
 \[
   \psi:(f_\lambda)_*(\sh{G}_\lambda)\to(f_\lambda)_*((g'_\lambda)_*((g'_\lambda)^*(\sh{G}_\lambda)))=g_*((f'_\lambda)_*(\sh{G}'_\lambda))
@@ -3081,7 +3081,7 @@ When $f_\lambda:\mathrm{Z}_\lambda\to\mathrm{X}$ is an \emph{affine} morphism, $
 One can also interpret $u'_\lambda$ in the following manner: it suffices to know the value of $u'_\lambda(t')$, where $t'$ is a section of $\mathscr{F}'$ above an open $\mathrm{U}'$ of $\mathrm{X}'$, of the following particular type: $t'$ is the restriction to $\mathrm{U}'$ of the canonical image by $\Gamma(\mathrm{U},\mathscr{F})\to\Gamma(g^{-1}(\mathrm{U}),\mathscr{F}')$ of a section $t$ of $\mathscr{F}$ above an open $\mathrm{U}$ of $\mathrm{X}$ containing $g(\mathrm{U}')$ (these sections generate the $\sh{O}_{\mathrm{X}'}$-Module $\mathscr{F}'$ \sref[0]{0.3.7.1}).
 Consider the section $u_\lambda(t)$ of $\sh{G}_\lambda$ above $f_\lambda^{-1}(\mathrm{U})$, and its canonical image $t''$ by $\Gamma(f_\lambda^{-1}(\mathrm{U}),\sh{G}_\lambda)\to\Gamma(g_\lambda'^{-1}(f_\lambda^{-1}(\mathrm{U})),\sh{G}'_\lambda)$; then $u'_\lambda(t')$ is the restriction of $t''$ to $f_\lambda'^{-1}(\mathrm{U}')$.
 Consider in particular the case where $\mathrm{Z}_\lambda$ is the sub-prescheme induced on an open subset of $\mathrm{X}$, where $\sh{G}_\lambda=j_\lambda^*(\mathscr{F})$, with $j_\lambda:\mathrm{Z}_\lambda\to\mathrm{X}$ the canonical injection, and where $u_\lambda$ is the canonical homomorphism $\rho_\mathscr{F}:\mathscr{F}\to(j_\lambda)_*(j_\lambda^*(\mathscr{F}))=(j_\lambda)_*(\sh{G}_\lambda)$ \sref[0]{0.4.4.3.2} corresponding to $j_\lambda$.
-Then $\mathrm{Z}'_\lambda$ is induced on an open subset of $\mathrm{X}'$, and the preceding interpretation shows that $u'_\lambda$ is none other than the canonical homomorphism $\rho_{\mathscr{F}'}:\mathscr{F}'\to(j'_\lambda)_*((j'_\lambda)^*(\mathscr{F}'))=(j'_\lambda)_*(\sh{G}'_\lambda)$ corresponding to the canonical injection $j'_\lambda:\mathrm{Z}'_\lambda\to\mathrm{X}'$.
+Then $\mathrm{Z}'_\lambda$ is induced on an open subset of $\mathrm{X}'$, and the preceding interpretation shows that $u'_\lambda$ is none other than the canonical homomorphism $\rho_{\mathscr{F}'}:\mathscr{F}'\to(j'_\lambda)_*(j'^*_\lambda(\mathscr{F}'))=(j'_\lambda)_*(\sh{G}'_\lambda)$ corresponding to the canonical injection $j'_\lambda:\mathrm{Z}'_\lambda\to\mathrm{X}'$.
 \end{env}
 
 \begin{env}[11.9.6]
@@ -3178,7 +3178,7 @@ Let $\mathrm{X}$ be a prescheme, $(u_\lambda)$ a family of homomorphisms \sref{I
   Indeed, setting $k=m_n$ and noting that the $s_i^k$ ($1\leq i\leq n$) generate the unit ideal of $\mathrm{A}$, the assertion $(*_n)$ will show that $z'$, as a linear combination of the $s_i^k z'$, is zero.
 
   Let us prove $(*_i)$ by induction on $i$, the assertion being trivially true for $i=0$.
-  Suppose $i>0$ and let $m$ be a common multiple of the $m_j$ for $j\leq i-1$.
+  Suppose $i>0$ and let $m$ be a common multiple of the $m_j$ for $j\leq i\setmin 1$.
   We note (for $1\leq h\leq n$) that if $\mathfrak{J}'_h$ is the ideal generated by the $s_j^m$ ($1\leq j\leq h$), then $\mathfrak{J}_h/\mathfrak{J}'_h$ is nilpotent.
   Replacing the $s_j$ by $s_j^m$ for $1\leq j\leq n$ therefore amounts to replacing, for $1\leq h\leq n$, $\mathrm{A}_h$ by
   $\mathrm{B}_h=\mathrm{A}_{s_h}/\mathfrak{J}'_{h-1}\mathrm{A}_{s_h}$, so that
@@ -3218,7 +3218,7 @@ It suffices to prove that if $t'$ is a section of $\mathscr{F}'$ above an open a
 If $h_\alpha:\mathrm{X}'\to\mathrm{X}''_\alpha$ is the canonical projection,
 \oldpage[IV-3]{166}
 it follows from \sref{IV.8.2.11} that there exists an index $\alpha$ and an open quasi-compact $\mathrm{U}''_\alpha\subset\mathrm{X}''_\alpha$ such that $\mathrm{U}'=h_\alpha^{-1}(\mathrm{U}''_\alpha)$; moreover, by virtue of \sref{IV.8.5.2},~(i), one can suppose that $t'$ is the canonical image of a section $t''_\alpha$ of $\mathscr{F}''_\alpha$ above $\mathrm{U}''_\alpha$.
-Replacing, if necessary, $\mathrm{S}$, $\mathrm{X}$, $\mathrm{Z}_\lambda$, $f_\lambda$, $\mathscr{F}$, $\sh{G}_\lambda$, and $u_\lambda$ by $\mathrm{S}''_\alpha$, $\mathrm{U}''_\alpha$, $(f''_{\alpha\lambda})^{-1}(\mathrm{U}''_\alpha)$, and the corresponding restrictions of $\mathscr{F}''_\alpha$, $\sh{G}''_{\alpha\lambda}$, and $u''_{\alpha\lambda}$, we may therefore suppose that $\mathrm{U}'=\mathrm{X}'$, that $t'$ is the canonical image of a section $t$ of $\mathscr{F}$ above $\mathrm{X}$, and that the homomorphism $\mathrm{A}\to\mathrm{A}'$ is injective; equivalently, if $p:\mathrm{S}'\to\mathrm{S}$ is the corresponding morphism, the homomorphism $\sh{O}_\mathrm{S}\to p_*(\sh{O}_{\mathrm{S}'})$ occurring in the definition of $p$ is \emph{injective}.
+Replacing, if necessary, $\mathrm{S}$, $\mathrm{X}$, $\mathrm{Z}_\lambda$, $f_\lambda$, $\mathscr{F}$, $\sh{G}_\lambda$, and $u_\lambda$ by $\mathrm{S}''_\alpha$, $\mathrm{U}''_\alpha$, $f^{\prime\prime-1}_{\alpha\lambda}(\mathrm{U}''_\alpha)$, and the corresponding restrictions of $\mathscr{F}''_\alpha$, $\sh{G}''_{\alpha\lambda}$, and $u''_{\alpha\lambda}$, we may therefore suppose that $\mathrm{U}'=\mathrm{X}'$, that $t'$ is the canonical image of a section $t$ of $\mathscr{F}$ above $\mathrm{X}$, and that the homomorphism $\mathrm{A}\to\mathrm{A}'$ is injective; equivalently, if $p:\mathrm{S}'\to\mathrm{S}$ is the corresponding morphism, the homomorphism $\sh{O}_\mathrm{S}\to p_*(\sh{O}_{\mathrm{S}'})$ occurring in the definition of $p$ is \emph{injective}.
 It follows at once by virtue of the flatness of $\sh{G}_\lambda$ on $\mathrm{S}$ (and by reducing for example to the case where $\mathrm{Z}_\lambda$ is affine on $\mathrm{S}$ \sref[I]{I.1.6.3} and \sref[I]{I.1.6.5}) that the canonical homomorphism $\rho:\sh{G}_\lambda\to(g'_\lambda)_*(\sh{G}'_\lambda)$ is also \emph{injective}.
 But the composite homomorphism
 \[
@@ -3275,7 +3275,7 @@ Since by hypothesis $u_\lambda(t)=0$, one deduces that $u_{\lambda 0}(t_\alpha^0
 \begin{theorem}[11.9.16]
 \label{IV.11.9.16}
 Let the notations be those of \sref{IV.11.9.1}, and suppose that $\mathrm{X}$ is a locally Noetherian $\mathrm{S}$-prescheme, $\mathscr{F}$ a coherent $\sh{O}_\mathrm{X}$-Module, and that the $\sh{G}_\lambda$ are $\mathrm{S}$-flat.
-For every $s\in\mathrm{S}$, let $((u_\lambda)_s)_{\lambda\in\mathrm{L}}$ be the family obtained from $(u_\lambda)$ by the change of base $\mathrm{X}_s=\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(k(s))\to\mathrm{X}$.
+For every $s\in\mathrm{S}$, let $((u_\lambda)_s)_{\lambda\in\mathrm{L}}$ be the family obtained from $(u_\lambda)$ by the change of base $\mathrm{X}_s=\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(\boldsymbol{k}(s))\to\mathrm{X}$.
 For the family $(u_\lambda)$ to be universally separating relative to $\mathrm{S}$, it is necessary and sufficient that for every $s\in\mathrm{S}$, the family $((u_\lambda)_s)$ be separating.
 \end{theorem}
 
@@ -3293,7 +3293,7 @@ It suffices therefore to prove that the family deduced from $(u_\lambda)$ by the
 But then the $\mathfrak{m}^k/\mathfrak{m}^{k+1}$ are $(\mathrm{A}/\mathfrak{m})$-modules free, and, by virtue of the hypothesis on the $(u_\lambda)_s$, one is precisely in the conditions of application of \sref{IV.11.9.15}, whence the conclusion announced.
 
 Let now $h:\mathrm{S}'\to\mathrm{S}$ be a change-of-base morphism, and let $(u'_\lambda)$ be the family obtained from $(u_\lambda)$ by the change of base $h':\mathrm{X}\times_\mathrm{S}\mathrm{S}'\to\mathrm{X}$; let us prove that $(u'_\lambda)$ is also separating.
-Suppose first that $h$ is \emph{locally of finite type}; then the same is true of $h'$, and hence $\mathrm{X}'=\mathrm{X}\times_\mathrm{S}\mathrm{S}'$ is locally Noetherian. Moreover, if $s'\in\mathrm{S}'$ lies above $s\in\mathrm{S}$, it follows from \sref{IV.11.9.13}, applied to $\mathrm{X}_s$ and to $\mathrm{X}_{s'}=\mathrm{X}_s\otimes_{k(s)}k(s')$, that the family $((u'_\lambda)_{s'})$ is separating for every $s'\in\mathrm{S}'$; one may therefore conclude from the first part of the proof that $(u'_\lambda)$ is separating in this case.
+Suppose first that $h$ is \emph{locally of finite type}; then the same is true of $h'$, and hence $\mathrm{X}'=\mathrm{X}\times_\mathrm{S}\mathrm{S}'$ is locally Noetherian. Moreover, if $s'\in\mathrm{S}'$ lies above $s\in\mathrm{S}$, it follows from \sref{IV.11.9.13}, applied to $\mathrm{X}_s$ and to $\mathrm{X}_{s'}=\mathrm{X}_s\otimes_{\mathbf{k}(s)}\boldsymbol{k}(s')$, that the family $(u'_\lambda)_{s'}$ is separating for every $s'\in\mathrm{S}'$; one may therefore conclude from the first part of the proof that $(u'_\lambda)$ is separating in this case.
 
 Finally, if $h$ is arbitrary, one can evidently restrict to the case where $\mathrm{S}=\operatorname{Spec}(\mathrm{A})$ and $\mathrm{S}'=\operatorname{Spec}(\mathrm{A}')$ are affine, and consider $\mathrm{A}'$ as an inductive limit of its sub-$\mathrm{A}$-algebras of finite type.
 As the $\sh{G}_\lambda$ are $\mathrm{S}$-flat, it suffices to apply what precedes and the lemma \sref{IV.11.9.12} to complete the proof.
@@ -3302,7 +3302,7 @@ As the $\sh{G}_\lambda$ are $\mathrm{S}$-flat, it suffices to apply what precede
 \begin{proposition}[11.9.17]
 \label{IV.11.9.17}
 Let $f:\mathrm{X}\to\mathrm{S}$ be a morphism locally of finite presentation, $\mathscr{F}$ a quasi-coherent $\sh{O}_\mathrm{X}$-Module of finite presentation and $f$-flat, $\mathrm{U}$ an open of $\mathrm{X}$, $j:\mathrm{U}\to\mathrm{X}$ the canonical injection, $u:\mathscr{F}\to j_*(j^*(\mathscr{F}))$ the canonical homomorphism \sref[0]{0.4.4.3.2}.
-For every $s\in\mathrm{S}$, let $\mathrm{X}_s$ be the fibre $\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(k(s))$, $\mathrm{U}_s$ the open $\mathrm{U}\cap\mathrm{X}_s$ of $\mathrm{X}_s$, $\mathscr{F}_s=\mathscr{F}\otimes_{\sh{O}_\mathrm{S}}k(s)$, $j_s:\mathrm{U}_s\to\mathrm{X}_s$ the canonical injection, $u_s:\mathscr{F}_s\to(j_s)_*((j_s)^*(\mathscr{F}_s))$ the canonical homomorphism.
+For every $s\in\mathrm{S}$, let $\mathrm{X}_s$ be the fibre $\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(\boldsymbol{k}(s))$, $\mathrm{U}_s$ the open $\mathrm{U}\cap\mathrm{X}_s$ of $\mathrm{X}_s$, $\mathscr{F}_s=\mathscr{F}\otimes_{\sh{O}_\mathrm{S}}k(s)$, $j_s:\mathrm{U}_s\to\mathrm{X}_s$ the canonical injection, $u_s:\mathscr{F}_s\to(j_s)_*((j_s)^*(\mathscr{F}_s))$ the canonical homomorphism.
 For $u$ to be universally injective relative to $\mathrm{S}$, it is necessary and sufficient that $u_s$ be injective for every $s\in\mathrm{S}$.
 \end{proposition}
 
@@ -3312,7 +3312,7 @@ When $\mathrm{X}$ is locally Noetherian, the proposition is an immediate corolla
 We shall now reduce to this case in two stages, restricting, as we clearly may, to the case where $\mathrm{S}=\operatorname{Spec}(\mathrm{A})$ and $\mathrm{X}$ are affine.
 \medskip
 
-\emph{A) Case where $\mathrm{U}$ is quasi-compact.} --- We will use the following lemma:
+A) \emph{Case where $\mathrm{U}$ is quasi-compact.} --- We will use the following lemma:
 
 \begin{lemma}[11.9.17.1]
 \label{IV.11.9.17.1}
@@ -3334,7 +3334,7 @@ But the lemma \sref{IV.11.9.17.1}, applied to $u_\alpha$, shows that $\mathrm{E}
 But then, since $\mathrm{X}_\alpha$ is Noetherian, $u_\alpha$ is universally injective by virtue of \sref{IV.11.9.16}, whence $u$ is also universally injective.
 \medskip
 
-\emph{B) General case.} --- The open $\mathrm{U}$ is a filtered increasing union of quasi-compact opens $\mathrm{U}_\lambda$; if $j_\lambda:\mathrm{U}_\lambda\to\mathrm{X}$ is the canonical injection and $u_\lambda:\mathscr{F}\to(j_\lambda)_*(j_\lambda^*(\mathscr{F}))$ the canonical homomorphism corresponding, it follows from the lemma \sref{IV.11.9.17.1} applied to $u_\lambda$, that the set $\mathrm{E}_\lambda$ of the $s\in\mathrm{S}$ such that $(u_\lambda)_s$ is injective is constructible.
+B) \emph{General case.} --- The open $\mathrm{U}$ is a filtered increasing union of quasi-compact opens $\mathrm{U}_\lambda$; if $j_\lambda:\mathrm{U}_\lambda\to\mathrm{X}$ is the canonical injection and $u_\lambda:\mathscr{F}\to(j_\lambda)_*((j_\lambda)^*(\mathscr{F}))$ the canonical homomorphism corresponding, it follows from the lemma \sref{IV.11.9.17.1} applied to $u_\lambda$, that the set $\mathrm{E}_\lambda$ of the $s\in\mathrm{S}$ such that $(u_\lambda)_s$ is injective is constructible.
 On the other hand, for every $s\in\mathrm{S}$, to say that $u_s$ (resp.\ $(u_\lambda)_s$) is injective signifies that $\operatorname{Ass}(\mathscr{F}_s)\subset\mathrm{U}\cap\mathrm{X}_s$ (resp.\ $\operatorname{Ass}(\mathscr{F}_s)\subset\mathrm{U}_\lambda\cap\mathrm{X}_s$) \sref{IV.5.10.2}.
 As $\operatorname{Ass}(\mathscr{F}_s)$ is finite \sref{IV.3.1.6}, to say that $u_s$ is injective signifies therefore that there exists $\lambda$ such that $s\in\mathrm{E}_\lambda$.
 The hypothesis therefore signifies that $\mathrm{S}=\bigcup_\lambda\mathrm{E}_\lambda$.
@@ -3352,7 +3352,7 @@ Let $\mathrm{X}$ be a prescheme, $\mathscr{F}$, $\sh{G}$ two quasi-coherent $\sh
 The following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
   \item for every morphism $g:\mathrm{X}'\to\mathrm{X}$, the homomorphism $g^*(u):g^*(\mathscr{F})\to g^*(\sh{G})$ is injective;
-  \item for every $x\in\mathrm{X}$, the homomorphism $u\otimes 1_{k(x)}:\mathscr{F}\otimes_{\sh{O}_{\mathrm{X}}}k(x)\to\sh{G}\otimes_{\sh{O}_\mathrm{X}}k(x)$ is injective;
+  \item for every $x\in\mathrm{X}$, the homomorphism $u\otimes 1_{\mathbf{k}(x)}:\mathscr{F}\otimes_{\sh{O}_{\mathrm{X}}}k(x)\to\sh{G}\otimes_{\sh{O}_\mathrm{X}}k(x)$ is injective;
   \item for every $x\in\mathrm{X}$, there exists a neighbourhood $\mathrm{U}$ of $x$ such that $u|\mathrm{U}:\mathscr{F}|\mathrm{U}\to\sh{G}|\mathrm{U}$ is an isomorphism of $\mathscr{F}|\mathrm{U}$ onto a direct factor of $\sh{G}|\mathrm{U}$.
 \end{enumerate}
 
@@ -3491,7 +3491,7 @@ When the $f_\lambda$ are canonical immersions $\mathrm{Z}_\lambda\to\mathrm{X}$,
 \begin{theorem}[11.10.9]
 \label{IV.11.10.9}
 Let the notations be those of \sref{IV.11.10.5}, and suppose that $\mathrm{X}$ is a locally Noetherian $\mathrm{S}$-prescheme and that the $\mathrm{Z}_\lambda$ are all $\mathrm{S}$-flat.
-For every $s\in\mathrm{S}$, let $\mathrm{X}_s=\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(k(s))$, $(\mathrm{Z}_\lambda)_s=\mathrm{Z}_\lambda\times_\mathrm{S}\operatorname{Spec}(k(s))$, $(f_\lambda)_s=f_\lambda\times 1:(\mathrm{Z}_\lambda)_s\to\mathrm{X}_s$.
+For every $s\in\mathrm{S}$, let $\mathrm{X}_s=\mathrm{X}\times_\mathrm{S}\operatorname{Spec}(\boldsymbol{k}(s))$, $(\mathrm{Z}_\lambda)_s=\mathrm{Z}_\lambda\times_\mathrm{S}\operatorname{Spec}(\boldsymbol{k}(s))$, $(f_\lambda)_s=f_\lambda\times 1:(\mathrm{Z}_\lambda)_s\to\mathrm{X}_s$.
 For the family $(f_\lambda)$ to be universally schematically dominant relative to $\mathrm{S}$, it is necessary and sufficient that for every $s\in\mathrm{S}$, the family $((f_\lambda)_s)$ be schematically dominant.
 \end{theorem}
 

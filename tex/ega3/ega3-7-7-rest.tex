@@ -69,10 +69,10 @@ $v:\sh{Q}'\to\sh{Q}$ of $\sh{O}_Y$-Modules for which
 \[
 \xymatrix@C=42pt@R=28pt{
   \Gamma(X,\sh{F}\otimes_{\sh{O}_Y}\sh{M})
-    \ar[r]\ar[d]_-{\sim}
+    \ar[r]\ar[d]_-{\wr}
   &
   \Gamma(X,\sh{F}'\otimes_{\sh{O}_Y}\sh{M})
-    \ar[d]^-{\sim}
+    \ar[d]^-{\wr}
   \\
   \Hom_{\sh{O}_Y}(\sh{Q},\sh{M})
     \ar[r]
@@ -111,7 +111,7 @@ $\sh{O}_Y$-Module $\sh{M}$,
   \bigl(
     \sh{G},
     \sh{F}\otimes_{\sh{O}_Y}\sh{M}
-  \bigr),\\
+  \bigr)\\
   T(\sh{M})
   &=
   \Gamma(Y,\sh{T}(\sh{M}))\\
@@ -239,7 +239,7 @@ to use
   \bigl(\sh{Q},g_*(\sh{M}')\bigr)
   =
   \Hom_{\sh{O}_{Y'}}
-  \bigl(g^*(\sh{Q}),\sh{M}'\bigr),
+  \bigl(g^*(\sh{Q}),\sh{M}'\bigr)
 \]
 which is \sref[0]{0.4.4.3.1}.
 
@@ -289,7 +289,7 @@ and because, for $i=0,1$,
 \textnormal{(ii)}
 Condition (ii) in \sref{III.7.7.8} is satisfied by every
 coherent $\sh{O}_X$-Module $\sh{G}$ whenever there exists a
-$Y$-ample invertible $\sh{O}_X$-Module; this holds, for
+$Y$-\emph{ample} invertible $\sh{O}_X$-Module; this holds, for
 example, when $Y$ is affine and $f:X\to Y$ is projective.
 Indeed, by \sref[II]{II.5.5.1} and \sref[II]{II.2.7.10},
 there is a finite-type locally free $\sh{O}_X$-Module
@@ -317,9 +317,9 @@ Under the general hypotheses of \sref{III.7.7.5}, let
 $y\in Y$ and let $p$ be an integer.  The following
 conditions are equivalent:
 \begin{enumerate}
-  \item[a)] The functor $T_p^{\sh{O}_y}$ is right exact.
+  \item[\textup{a)}] The functor $T_p^{\sh{O}_y}$ is right exact.
 
-  \item[b)] The canonical homomorphism
+  \item[\textup{b)}] The canonical homomorphism
     \[
       T_p^{\sh{O}_y}(\sh{O}_y)
       \longrightarrow
@@ -327,7 +327,7 @@ conditions are equivalent:
     \]
     is surjective.
 
-  \item[c)] For every integer $n$, the canonical
+  \item[\textup{c)}] For every integer $n$, the canonical
     homomorphism
     \[
       T_p^{\sh{O}_y}
@@ -349,7 +349,7 @@ That the locus $U$ on which $T_p^{\sh{O}_y}$ is right exact
 is open follows from \sref{III.7.4.4}.  Conversely, if
 $\sh{T}^V_p$ is right exact, then
 $T_p^{\sh{O}_y}$ is right exact for every $y\in V$, by
-condition c) of \sref{III.7.7.5} and \sref{III.7.6.1}.
+condition \emph{c)} of \sref{III.7.7.5} and \sref{III.7.6.1}.
 \end{proof}
 
 \begin{corollary}[7.7.11]
@@ -419,7 +419,7 @@ Define a complex $L'_\bullet$ of $A$-modules by
   \qquad
   L'_i=0\quad(i>i_1),
 \]
-and put $\sh{L}'_\bullet=\widetilde{L'_\bullet}$.  Plainly
+and put $\sh{L}'_\bullet=\widetilde{L}'_\bullet$.  Plainly
 \[
   \mathscr{H}_i
   (\sh{L}'_\bullet\otimes_{\sh{O}_Y}\sh{M})
@@ -483,7 +483,7 @@ that, when $Y=\Spec(A)$ is affine,
     \sh{L}_\bullet\otimes_{\sh{O}_Y}\sh{M}
   \bigr),
   \qquad
-  \sh{L}_\bullet=\widetilde{L_\bullet},
+  \sh{L}_\bullet=\widetilde{L}_\bullet,
 \]
 where $L_\bullet$ is a complex of finite-type free
 $A$-modules.  This proves the assertion.

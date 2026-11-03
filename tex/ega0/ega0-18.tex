@@ -29,7 +29,7 @@ to the $A$-ring $(C,\sigma)$, it is also an $A'$-homomorphism from the $A'$-ring
 \label{0.18.1.2}
 Let $B$, $E$, $F$ be three $A$-rings, $f:E\to B$, $g:F\to B$ two $A$-homomorphisms.
 Recall that one calls \emph{fibre product} of $E$ and $F$ over $B$ (for the homomorphisms $f$ and $g$) and one denotes $E\times_B F$ the subring of the product $E\times F$ formed of the pairs $(x,y)$ such that $f(x)=g(y)$; the restrictions $p_1:G\to E$, $p_2:G\to F$ of the projections $\operatorname{pr}_1$ and $\operatorname{pr}_2$ to $G$ are still called the \emph{canonical projections};
-the structure of $A$-ring of $G$ is defined by the homomorphism $\alpha\mapsto(\rho(\alpha),\sigma(\alpha))$ (where $\rho:A\to E$ and $\sigma:A\to F$ are the structural homomorphisms), which indeed maps $A$ into $G$ by virtue of \sref{0.18.1.1}.
+the structure of $A$-ring of $G$ is defined by the homomorphism $\alpha\to(\rho(\alpha),\sigma(\alpha))$ (where $\rho:A\to E$ and $\sigma:A\to F$ are the structural homomorphisms), which indeed maps $A$ into $G$ by virtue of \sref{0.18.1.1}.
 The characteristic property of $E\times_B F$ is that, for every pair of $A$-homomorphisms $u:C\to E$, $v:C\to F$ such that $f\circ u=g\circ v$, there exists one and only one $A$-homomorphism $w:C\to G$ such that $u=p_1\circ w$, $v=p_2\circ w$.
 One can still say that $E\times_B F$ is the \emph{projective limit} of the projective system formed by $B$, $E$, $F$ and the $A$-homomorphisms $f$, $g$, in the category of $A$-rings ($\mathbf{0_{III}}$, 8.1.9).
 \end{env}
@@ -37,18 +37,18 @@ One can still say that $E\times_B F$ is the \emph{projective limit} of the proje
 \begin{env}[18.1.3]
 \label{0.18.1.3}
 Let $\mathfrak{J}$ be the bilateral ideal of $E$, kernel of $f$; it is immediate that the kernel $\mathfrak{J}'$ of $p_2:G\to F$ is the ideal formed of the elements $(x,0)$ where $x\in\mathfrak{J}$; the restriction $i_1:\mathfrak{J}'\to\mathfrak{J}$ of $p_1$ is an isomorphism of rings without identity, and also an isomorphism of $A$-bimodules.
-Similarly, if $\mathfrak{R}$ is the kernel of $g$, the kernel $\mathfrak{R}'$ of $p_1:G\to E$ is the ideal of the elements $(0,y)$ where $y\in\mathfrak{R}$, and the restriction $i_2:\mathfrak{R}'\to\mathfrak{R}$ of $p_2$ is an isomorphism (in the same sense).
-Finally, it is clear that the kernel of the $A$-homomorphism $q=f\circ p_1=g\circ p_2$ of $E\times_B F$ into $B$ is $\mathfrak{J}\times\mathfrak{R}=\mathfrak{J}'\oplus\mathfrak{R}'$, so that one has a commutative diagram
+Similarly, if $\mathfrak{K}$ is the kernel of $g$, the kernel $\mathfrak{K}'$ of $p_1:G\to E$ is the ideal of the elements $(0,y)$ where $y\in\mathfrak{K}$, and the restriction $i_2:\mathfrak{K}'\to\mathfrak{K}$ of $p_2$ is an isomorphism (in the same sense).
+Finally, it is clear that the kernel of the $A$-homomorphism $q=f\circ p_1=g\circ p_2$ of $E\times_B F$ into $B$ is $\mathfrak{J}\times\mathfrak{K}=\mathfrak{J}'\oplus\mathfrak{K}'$, so that one has a commutative diagram
 \begin{equation}
 \tag{18.1.3.1}
   \label{0.18.1.3.1}
   \xymatrix@C=2.2pc@R=1.8pc{
     0\ar[dr] & & 0\ar[d] & 0\ar[d]\\
-    & \mathfrak{J}'\oplus\mathfrak{R}'\ar[r]\ar[d]\ar[dr]
-      & \mathfrak{R}'\ar[r]^{i_2}_{\sim}\ar[d]^j
-      & \mathfrak{R}\ar[d]^{p_2}\\
-    0\ar[r] & \mathfrak{J}'\ar[r]\ar[d]^{i_1}_{\sim}
-      & G\ar[r]\ar[d]^{p_1}\ar[dr]^q & F\ar[d]^g\\
+    & \mathfrak{J}'\oplus\mathfrak{K}'\ar[r]\ar[d]\ar[dr]
+      & \mathfrak{K}'\ar[r]^{\overset{i_2}{\sim}}\ar[d]_j
+      & \mathfrak{K}\ar[d]_{p_2}\\
+    0\ar[r] & \mathfrak{J}'\ar[r]\ar[d]_{i_1}_{\sim}
+      & G\ar[r]\ar[d]_{p_1}\ar[dr]_q & F\ar[d]^g\\
     0\ar[r] & \mathfrak{J}\ar[r] & E\ar[r]_f & B
   }
 \end{equation}
@@ -100,17 +100,17 @@ This result implies in particular that if $E$ is a trivial augmented $A$-ring, s
 
 \begin{env}[18.1.7]
 \label{0.18.1.7}
-Let us take up again the situation described in \sref{0.18.1.2} and \sref{0.18.1.3}; on $\mathfrak{R}$ one has evidently a structure of $G$-\emph{bimodule}, coming from its structure of $F$-bimodule and the homomorphism of rings $p_2:G\to F$.
-As $i_2$ is bijective one has moreover an injection $\theta=j\circ i_2^{-1}:\mathfrak{R}\to G$, which is a homomorphism of $G$-\emph{bimodules}.
+Let us take up again the situation described in \sref{0.18.1.2} and \sref{0.18.1.3}; on $\mathfrak{K}$ one has evidently a structure of $G$-\emph{bimodule}, coming from its structure of $F$-bimodule and the homomorphism of rings $p_2:G\to F$.
+As $i_2$ is bijective one has moreover an \emph{injection} $\theta=j\circ i_2^{-1}:\mathfrak{K}\to G$, which is a homomorphism of $G$-\emph{bimodules}.
 We shall now see conversely that, when one supposes moreover that $f$ and $g$ are \emph{surjective}, in other words that $E$ and $F$ are $A$-rings \emph{augmented} over $B$, the data of such a homomorphism $\theta$ allows us to reconstruct the augmented ring $E$ (over $B$) from the augmented ring $G$ (over $F$).
 
-More precisely, suppose we are given an $A$-ring $F$ augmented over $B$ and an $A$-ring $G$ augmented over $F$, the augmentation ideals being denoted $\mathfrak{R}$ and $\mathfrak{J}'$ respectively:
+More precisely, suppose we are given an $A$-ring $F$ augmented over $B$ and an $A$-ring $G$ augmented over $F$, the augmentation ideals being denoted $\mathfrak{K}$ and $\mathfrak{J}'$ respectively:
 \begin{equation}
 \tag{18.1.7.1}
   \label{0.18.1.7.1}
   \xymatrix@C=2pc@R=1.5pc{
     & & 0\ar[d] & & \\
-    & & \mathfrak{R}\ar[ld]^\theta\ar[d] & & \\
+    & & \mathfrak{K}\ar[ld]^\theta\ar[d] & & \\
     0\ar[r] & \mathfrak{J}'\ar[r] & G\ar[r]_h & F\ar[r]\ar[d]^g & 0\\
     & & & B\ar[d] & \\
     & & & 0 &
@@ -118,13 +118,13 @@ More precisely, suppose we are given an $A$-ring $F$ augmented over $B$ and an $
 \end{equation}
 
 \oldpage[0\textsubscript{IV-1}]{54}
-The homomorphism $h$ defines on all the ideals of $F$ (and in particular on $\mathfrak{R}$) a structure of $G$-bimodule.
-Let $\theta:\mathfrak{R}\to G$ be a homomorphism of $G$-bimodules making the diagram \sref{0.18.1.7.1} commutative; this implies that $\theta$ is \emph{injective} and that $\mathfrak{J}'\cap\theta(\mathfrak{R})=0$; as $\theta(\mathfrak{R})$ is a bilateral ideal of $G$, and $h(\theta(\mathfrak{R}))=\mathfrak{R}$, the composite homomorphism $g\circ h:G\to B$ factors as $G\xrightarrow{q}G/\theta(\mathfrak{R})\xrightarrow{f}B$, where $f$ is surjective; moreover the image $\mathfrak{J}$ of $\mathfrak{J}'$ in $E=G/\theta(\mathfrak{R})$ is the kernel of $f$ (the kernel of $g\circ h$ being $\mathfrak{J}'\oplus\theta(\mathfrak{R})$), and the restriction to $\mathfrak{J}'$ of the canonical homomorphism $q:G\to E$ is injective.
+The homomorphism $h$ defines on all the ideals of $F$ (and in particular on $\mathfrak{K}$) a structure of $G$-\emph{bimodule}.
+Let $\theta:\mathfrak{K}\to G$ be a homomorphism of $G$-\emph{bimodules} making the diagram \sref{0.18.1.7.1} commutative; this implies that $\theta$ is \emph{injective} and that $\mathfrak{J}'\cap\theta(\mathfrak{K})=0$; as $\theta(\mathfrak{K})$ is a bilateral ideal of $G$, and $h(\theta(\mathfrak{K}))=\mathfrak{K}$, the composite homomorphism $g\circ h:G\to B$ factors as $G\xrightarrow{q}G/\theta(\mathfrak{K})\xrightarrow{f}B$, where $f$ is surjective; moreover the image $\mathfrak{J}$ of $\mathfrak{J}'$ in $E=G/\theta(\mathfrak{K})$ is the kernel of $f$ (the kernel of $g\circ h$ being $\mathfrak{J}'\oplus\theta(\mathfrak{K})$), and the restriction to $\mathfrak{J}'$ of the canonical homomorphism $q:G\to E$ is injective.
 One can therefore form the \emph{fibre product} $G'=E\times_B F$, and as the two $A$-homomorphisms $q:G\to E$ and $h:G\to F$ are such that $f\circ q=g\circ h$, they define a unique $A$-homomorphism $u:G\to G'$ by the universal property of $G'$ \sref{0.18.1.2}; we shall now see that $u$ is \emph{bijective}.
 It suffices to prove this when $u$ is considered as a homomorphism of $A$-bimodules; but one then notes that $u$ is compatible with the finite filtrations on $G$ and $G'$ formed respectively by $G$ and $\mathfrak{J}'$, and by $G'$ and $\mathfrak{J}''=\operatorname{Ker}(G'\to F)$; moreover, one has seen \sref{0.18.1.3} that $\operatorname{gr}_0 u:F\to F$ is the identity and that $\operatorname{gr}_1 u:\mathfrak{J}'\to\mathfrak{J}''$ is bijective, hence $u$ itself is bijective (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \S~2, no.~8, cor.~3 of th.~1).
 \end{env}
 
-\subsection{Extensions of a ring by a bimodule}
+\subsection{Extensions of a ring by a bimodule.}
 \label{subsection:0.18.2}
 
 \begin{env}[18.2.1]
@@ -151,7 +151,7 @@ One says that two $A$-extensions $E$, $E'$ of $B$ by $L$ are \emph{$A$-equivalen
 \tag{18.2.2.1}
   \label{0.18.2.2.1}
   \xymatrix@C=2.1pc@R=1.2pc{
-    & & E\ar[dr]\ar[dd]_u\ar@{}[dd]|{\wr} & & \\
+    & & E\ar[dr]\ar[dd]_u^{\wr} & & \\
     0\ar[r] & L\ar[ur]\ar[dr] & & B\ar[r] & 0\\
     & & E'\ar[ur] & &
   }
@@ -195,7 +195,7 @@ In the first place, consider an $A$-extension $E'$ of $B'$ by $L'$
 and an $A$-homomorphism of rings $v:B\to B'$, and let $F=E'\times_{B'} B$ be the \emph{inverse image} of $E'$ \sref{0.18.1.5}, so that one has a commutative diagram
 \[
   \xymatrix{
-    0\ar[r] & L_0\ar[r]\ar[d]^{i}\ar@{}[d]|{\wr} & F\ar[r]^{p_2}\ar[d]^{p_1} & B\ar[r]\ar[d]^v & 0\\
+    0\ar[r] & L_0\ar[r]\ar[d]^{i}\ar@{}[d]|{\wr} & F\ar[r]^{p_2}\ar[d]_{p_1} & B\ar[r]\ar[d]^v & 0\\
     0\ar[r] & L'\ar[r]_{j'} & E'\ar[r]_{f'} & B'\ar[r] & 0
   }
 \]
@@ -205,15 +205,15 @@ The functorial character
 of the fibre product with respect to each of the factors shows moreover that if one has a morphism of two extensions of $B'$
 \[
   \xymatrix{
-    0\ar[r] & L'_1\ar[r]\ar[d]^h & E'_1\ar[r]\ar[d]^g & B'\ar[r]\ar[d]^{1_{B'}} & 0\\
+    0\ar[r] & L'_1\ar[r]\ar[d]_h & E'_1\ar[r]\ar[d]_g & B'\ar[r]\ar[d]^{1_{B'}} & 0\\
     0\ar[r] & L'_2\ar[r] & E'_2\ar[r] & B'\ar[r] & 0
   }
 \]
 one deduces from it a morphism \emph{inverse image by $v$}
 \[
   \xymatrix{
-    0\ar[r] & L'_1\ar[r]\ar[d]^h & E'_1\times_{B'}B\ar[r]\ar[d]^{g\times_{B'}1_B} & B\ar[r]\ar[d]^{1_B} & 0\\
-    0\ar[r] & L'_2\ar[r] & E'_2\times_{B'}B\ar[r] & B\ar[r] & 0.
+    0\ar[r] & L'_1\ar[r]\ar[d]^h & E'_1\times_{B'}B\ar[r]\ar[d]^{g\times_{B'}1_B} & B\ar[r]\ar[d]^{1_B}_{\wr} & 0\\
+    0\ar[r] & L'_2\ar[r] & E'_2\times_{B'}B\ar[r] & B\ar[r] & 0
   }
 \]
 
@@ -222,8 +222,8 @@ In particular, if $E'_1$ and $E'_2$ are $A$-equivalent $A$-extensions of $B'$ by
 The definition of the fibre product shows that when one has a morphism \sref{0.18.2.4.1} of $A$-extensions, it \emph{factors through} the inverse image of $E'$ by $v$; more precisely, there exists a unique $A$-homomorphism $u_0:E\to F=E'\times_{B'}B$ making the diagram
 \[
   \xymatrix{
-    0\ar[r] & L\ar[r]^j\ar[d]^{w_0} & E\ar[r]^f\ar[d]^{u_0} & B\ar[r]\ar[d]^{1_B} & 0\\
-    0\ar[r] & L_0\ar[r]\ar[d]^i\ar@{}[d]|{\wr} & F\ar[r]^{p_2}\ar[d]^{p_1} & B\ar[r]\ar[d]^v & 0\\
+    0\ar[r] & L\ar[r]^j\ar[d]_{w_0} & E\ar[r]^f\ar[d]_{u_0} & B\ar[r]\ar[d]^{1_B} & 0\\
+    0\ar[r] & L_0\ar[r]\ar[d]_{i\wr} & F\ar[r]^{p_2}\ar[d]_{p_1} & B\ar[r]\ar[d]^v & 0\\
     0\ar[r] & L'\ar[r]_{j'} & E'\ar[r]_{f'} & B'\ar[r] & 0
   }
 \]
@@ -233,23 +233,23 @@ commutative, where $w_0$ is the restriction of $u_0$ to $L$ and $p_1\circ u_0=u$
 \begin{env}[18.2.6]
 \label{0.18.2.6}
 Let us study the inverse image of extensions by surjective $A$-homomorphisms.
-Consider a surjective $A$-homomorphism $v:B\to B'$, an $A$-extension $F$ of $B$ by a $B$-bimodule $L$, and the bilateral ideal $\mathfrak{R}$ of $B$, kernel of $v$ (which can be considered as an $F$-bimodule by means of the augmentation $F\to B$); one has seen \sref{0.18.1.7} that every homomorphism of $F$-bimodules $\theta:\mathfrak{R}\to F$ making the diagram
+Consider a surjective $A$-homomorphism $v:B\to B'$, an $A$-extension $F$ of $B$ by a $B$-bimodule $L$, and the bilateral ideal $\mathfrak{K}$ of $B$, kernel of $v$ (which can be considered as an $F$-bimodule by means of the augmentation $F\to B$); one has seen \sref{0.18.1.7} that every homomorphism of $F$-bimodules $\theta:\mathfrak{K}\to F$ making the diagram
 \[
   \xymatrix{
-    & \mathfrak{R}\ar@/^/[ld]^\theta\ar[d]\\
+    & \mathfrak{K}\ar@/^/[ld]_\theta\ar[d]\\
     F\ar[r] & B
   }
 \]
-commutative determines an extension $E'$ of $B'=B/\mathfrak{R}$ by $L$ whose inverse image by $v:B\to B'$ is $A$-equivalent to $F$, and that every $A$-extension $E$ of $B'$ by $L$ having this last property is obtained in this way (up to $A$-equivalence).
-Moreover, for two homomorphisms $\theta_1$, $\theta_2$ of $F$-bimodules of $\mathfrak{R}$ into $F$ to give two $A$-equivalent $A$-extensions of $B'$ by $L$, it is necessary and sufficient that there exists an $A$-\emph{equivalence} $u$ of the $A$-extension $F$ onto itself such that
+commutative determines an extension $E'$ of $B'=B/\mathfrak{K}$ by $L$ whose inverse image by $v:B\to B'$ is $A$-equivalent to $F$, and that every $A$-extension $E$ of $B'$ by $L$ having this last property is obtained in this way (up to $A$-equivalence).
+Moreover, for two homomorphisms $\theta_1$, $\theta_2$ of $F$-bimodules of $\mathfrak{K}$ into $F$ to give two $A$-equivalent $A$-extensions of $B'$ by $L$, it is necessary and sufficient that there exists an $A$-\emph{equivalence} $u$ of the $A$-extension $F$ onto itself such that
 \oldpage[0\textsubscript{IV-1}]{57}
 $\theta_2=u\circ\theta_1$; this follows at once from what was seen in \sref{0.18.2.5} and from the definition of the canonical bijection of $F$ onto the fibre product $E'\times_{B'}B$ \sref{0.18.1.7}.
 \end{env}
 
 \begin{env}[18.2.7]
 \label{0.18.2.7}
-Consider now the left square of \sref{0.18.2.4.1}, and recall first the notion of \emph{amalgamated sum} in the category of $A$-bimodules: given three $A$-bimodules $X$, $Y$, $Z$ and two $A$-homomorphisms $f:X\to Y$, $g:X\to Z$, the amalgamated sum $Y\oplus_X Z$ is the \emph{inductive limit} of the inductive system formed by $X$, $Y$, $Z$ and the $A$-homomorphisms $f$, $g$ in the category of $A$-bimodules ($\mathbf{0_{III}}$, 8.1.11).
-One defines this $A$-bimodule as quotient of the product $Y\times Z$ by the sub-$A$-bimodule $M$ image of $X$ by the homomorphism $x\mapsto(f(x),-g(x))$.
+Consider now the left square of \sref{0.18.2.4.1}, and recall first the notion of \emph{amalgamated sum} in the category of $A$-bimodules: given three $A$-bimodules $X$, $Y$, $Z$ and two $A$-homomorphisms $f:X\to Y$, $g:X\to Z$, the amalgamated sum $Y\oplus_X Z$ is the \emph{inductive limit} of the inductive system formed by $X$, $Y$, $Z$ and the $A$-homomorphisms $f$, $g$ in the category of $A$-\emph{bimodules} ($\mathbf{0_{III}}$, 8.1.11).
+One defines this $A$-bimodule as quotient of the product $Y\times Z$ by the sub-$A$-bimodule $M$ image of $X$ by the homomorphism $x\leadsto(f(x),\setmin g(x))$.
 Its characteristic property is that, for every pair of homomorphisms of $A$-bimodules $u:Y\to T$, $v:Z\to T$ such that $u\circ f=v\circ g$, there exists a unique homomorphism $w:Y\oplus_X Z\to T$ such that $u=w\circ j_1$ and $v=w\circ j_2$, where $j_1:Y\to Y\oplus_X Z$ and $j_2:Z\to Y\oplus_X Z$ are the canonical maps.
 \end{env}
 
@@ -266,13 +266,13 @@ Let $H$ be the $A$-bimodule amalgamated sum $E\oplus_L L'$; let us show how one 
 \]
 
 Let us note for this that $L'$ is equipped with a structure of $E$-\emph{bimodule} by means of the augmentation homomorphism $E\to B$; one can therefore form the $A$-extension of trivial type $G=D_E(L')$ \sref{0.18.2.3}.
-Consider then the map $\theta:z\mapsto(j(z),-w(z))$ from $L$ into $G$; it is a homomorphism of $G$-\emph{bimodules} ($L$ being considered as a $G$-bimodule by means of the canonical homomorphism $\rho:G\to E$).
-Indeed, for $(x,z')\in G$ and $z\in L$, one has $(j(z),-w(z))(x,z')=(j(z)x,j(z)z'-w(z)f(x))$; but $j(z)z'=f(j(z))z'=0$ by definition of the structure of $E$-bimodule on $L'$, and $w(z)f(x)=w(zf(x))$ by definition of the structure of $B$-bimodule on $L'$; one thus verifies that $\theta$ is also a homomorphism of $G$-modules on the left.
+Consider then the map $\theta:z\leadsto(j(z),\setmin w(z))$ from $L$ into $G$; it is a homomorphism of $G$-\emph{bimodules} ($L$ being considered as a $G$-bimodule by means of the canonical homomorphism $p:G\to E$).
+Indeed, for $(x,z')\in G$ and $z\in L$, one has $(j(z),\setmin w(z))(x,z')=(j(z)x,j(z)z'\setmin w(z)x)$; but $j(z)z'=f(j(z))z'=0$ by definition of the structure of $E$-bimodule on $L'$, and $w(z)f(x)=w(zf(x))$ by definition of the structure of $B$-bimodule on $L'$; one thus verifies that $\theta$ is also a homomorphism of $G$-modules on the left.
 One can then apply the result of \sref{0.18.1.7} to the diagram
 \[
   \xymatrix@C=2pc@R=1.4pc{
     & & 0\ar[d] & & \\
-    & & L\ar[ld]^\theta\ar[d]^j & & \\
+    & & L\ar[ld]_\theta\ar[d]^j & & \\
     0\ar[r] & L'\ar[r] & G\ar[r]_p & E\ar[r]\ar[d]^f & 0\\
     & & & B\ar[d]\\
     & & & 0
@@ -286,14 +286,14 @@ One says that the $A$-extension $H$ of $B$ by $L'$ is \emph{deduced from $E$ by 
 The functorial character of the amalgamated sum in each of the summands shows moreover that if one has a morphism of extensions
 \[
   \xymatrix{
-    0\ar[r] & L\ar[r]\ar[d]^{1_L}\ar@{}[d]|{\wr} & E_1\ar[r]\ar[d]^g & B_1\ar[r]\ar[d]^h & 0\\
+    0\ar[r] & L\ar[r]\ar[d]^{1_L}_{\wr} & E_1\ar[r]\ar[d]^g & B_1\ar[r]\ar[d]^h & 0\\
     0\ar[r] & L\ar[r] & E_2\ar[r] & B_2\ar[r] & 0
   }
 \]
 one deduces from it canonically a morphism of deduced extensions
 \[
   \xymatrix{
-    0\ar[r] & L'\ar[r]\ar[d]^{1_{L'}}\ar@{}[d]|{\wr} & E_1\oplus_L L'\ar[r]\ar[d]^{g\oplus_L1_{L'}} & B_1\ar[r]\ar[d]^h & 0\\
+    0\ar[r] & L'\ar[r]\ar[d]^{1_{L'}}_{\wr} & E_1\oplus_L L'\ar[r]\ar[d]^{g\oplus_L1_{L'}} & B_1\ar[r]\ar[d]^h & 0\\
     0\ar[r] & L'\ar[r] & E_2\oplus_L L'\ar[r] & B_2\ar[r] & 0
   }
 \]
@@ -304,8 +304,8 @@ When one has a morphism \sref{0.18.2.4.1} of $A$-extensions, it factors through 
 in fact, the definition of the amalgamated sum shows that there exists a unique $A$-homomorphism $u_0:H\to E'$ of $A$-bimodules, making the diagram
 \[
   \xymatrix{
-    0\ar[r] & L\ar[r]^j\ar[d]^{w_0} & E\ar[r]^f\ar[d]^{j_1} & B\ar[r]\ar[d]^{1_B}\ar@{}[d]|{\wr} & 0\\
-    0\ar[r] & L'_0\ar[r]^{j_2}\ar[d]^{j_0}\ar@{}[d]|{\wr} & H\ar[r]^{f_0}\ar[d]^{u_0} & B\ar[r]\ar[d]^v & 0\\
+    0\ar[r] & L\ar[r]^j\ar[d]_{w_0} & E\ar[r]^f\ar[d]^{j_1} & B\ar[r]\ar[d]^{1_B}_{\wr} & 0\\
+    0\ar[r] & L'_0\ar[r]_{j_2}\ar[d]^{j_0}_{\wr} & H\ar[r]_{f_0}\ar[d]^{u_0} & B\ar[r]\ar[d]^v & 0\\
     0\ar[r] & L'\ar[r]_{j'} & E'\ar[r]_{f'} & B'\ar[r] & 0
   }
 \]
@@ -330,7 +330,7 @@ where the vertical arrows are the canonical injections.
 \oldpage[0\textsubscript{IV-1}]{59}
 
 \begin{proof}
-Indeed, $u$ cannot be other than the map $(x,s)\mapsto(v(x),w(s))$ and it remains to verify that it is an $A$-homomorphism of rings, which follows trivially from the definition \sref{0.18.2.3}.
+Indeed, $u$ cannot be other than the map $(x,s)\leadsto(v(x),w(s))$ and it remains to verify that it is an $A$-homomorphism of rings, which follows trivially from the definition \sref{0.18.2.3}.
 One notes that $u$ also makes commutative the diagram
 \[
   \xymatrix@C=2.2pc@R=1.5pc{
@@ -344,14 +344,14 @@ where this time the vertical arrows are the augmentations.
 \begin{proposition}[18.2.10]
 \label{0.18.2.10}
 Let $B$ be an $A$-ring, $L$ a $B$-bimodule, and $E$ an $A$-extension of $B$ by $L$.
-There is a bijection from the set $G$ of homomorphisms of $B$-rings from $B$ into $E$ (in other words, the set of $A$-homomorphisms right inverse to the augmentation $E\to B$) onto the set $G'$ of $A$-equivalences from $D_B(L)$ onto $E$: to every $g\in G$ it assigns the $A$-equivalence $g':(x,s)\mapsto g(x)+s$, and the inverse map assigns to every $g'\in G'$ the $B$-homomorphism $x\mapsto g'(x,0)$.
+There is a bijection from the set $G$ of homomorphisms of $B$-rings from $B$ into $E$ (in other words, the set of $A$-homomorphisms right inverse to the augmentation $E\to B$) onto the set $G'$ of $A$-equivalences from $D_B(L)$ onto $E$: to every $g\in G$ it assigns the $A$-equivalence $g':(x,s)\leadsto g(x)+s$, and the inverse map assigns to every $g'\in G'$ the $B$-homomorphism $x\leadsto g'(x,0)$.
 \end{proposition}
 
 \begin{proof}
 This follows immediately from the definitions.
 \end{proof}
 
-\subsection{The group of classes of A-extensions}
+\subsection{The group of classes of A-extensions.}
 \label{subsection:0.18.3}
 
 \begin{env}[18.3.1]
@@ -380,7 +380,7 @@ by virtue of the general properties of inductive limits (cf.\ for example ($\mat
 
 \oldpage[0\textsubscript{IV-1}]{60}
 
-relation (18.3.2.1). If $\mathbf C_B$ denotes the category of $B$-bimodules, one sees that one has thus defined a \emph{covariant functor} $T:\mathbf C_B\to\mathbf{Sets}$.
+relation (18.3.2.1). If $\boldsymbol{C}_B$ denotes the category of $B$-bimodules, one sees that one has thus defined a \emph{covariant functor} $T:\boldsymbol{C}_B\to\boldsymbol{Sets}$.
 \end{env}
 
 \begin{env}[18.3.3]
@@ -420,7 +420,7 @@ Denote by $\boldsymbol{K}$ the category whose objects are the triplets $(A,B,L)$
 \[
   \xymatrix{
     A\ar[r] & B & L\ar[d]^w\\
-    A'\ar[u]^u\ar[r] & B'\ar[u]^v & L'
+    A'\ar[u]^u\ar[r] & B'\ar[u]_v & L'
   }
 \]
 where the horizontal arrows are the structural homomorphisms; finally $w:L\to L'$ is a homomorphism of commutative groups such that one has $w(v(b')z)=b'w(z)$ and
@@ -501,7 +501,7 @@ This being so, one sets $(u,v,w)_*=(1_{A'},1_{B'},w)_*\circ(1_{A'},v,1_L)_*\circ
 
 The existence of the homomorphism of groups \sref{0.18.3.6.1} shows in particular that if $E$ is a trivial $A$-extension of $B$ by $L$, the extension $E\oplus_L L'$ of $B$ by $L'$ defined in \sref{0.18.2.8} is also trivial, which one moreover verifies directly without difficulty.
 
-On the other hand, for every element $z$ of the \emph{centre} $Z$ of $B$, the homothety $h_z:y\mapsto yz$ is an endomorphism of the $B$-bimodule $L$, hence $(h_z)_*$ is an endomorphism of the commutative group $\operatorname{Exan}_A(B,L)$, and by functoriality, these endomorphisms define on $\operatorname{Exan}_A(B,L)$ a structure of $Z$-\emph{module}.
+On the other hand, for every element $z$ of the \emph{centre} $Z$ of $B$, the homothety $h_z:y\leadsto yz$ is an endomorphism of the $B$-bimodule $L$, hence $(h_z)_*$ is an endomorphism of the commutative group $\operatorname{Exan}_A(B,L)$, and by functoriality, these endomorphisms define on $\operatorname{Exan}_A(B,L)$ a structure of $Z$-\emph{module}.
 \end{env}
 
 \begin{env}[18.3.7]
@@ -572,11 +572,10 @@ in other words $(u,1_C,w)$ is a morphism of extensions \sref{0.18.2.4}.
 One deduces from it a morphism of extensions
 \[
   \xymatrix{
-    0\ar[r] & L\ar[r]\ar[d]^{1_L}\ar@{}[d]|{\wr} & E'\ar[r]\ar[d]^{u'} & C\ar[r]\ar[d]^{1_C}\ar@{}[d]|{\wr} & 0\\
-    0\ar[r] & L\ar[r]_j & E\ar[r]_p & C\ar[r] & 0
+    0\ar[r] & L\ar[r]\ar[d]_{1_L}^{\wr} & E'\ar[r]\ar[d]^{u'} & C\ar[r]\ar[d]^{1_C}_{\wr} & 0\\
+    0\ar[r] & L\ar[r] & E\ar[r] & C\ar[r] & 0
   }
 \]
-
 \oldpage[0\textsubscript{IV-1}]{64}
 
 where $E'=F\oplus_{(\mathfrak J/\mathfrak J^2)}L$ \sref{0.18.2.8}; it remains to prove that $u'$ is a $B$-\emph{equivalence}, which will establish that $\eta_L$ is bijective.
@@ -585,7 +584,7 @@ By the construction in \sref{0.18.2.8}, it suffices (in view of \sref{0.18.1.7})
 It remains to see that $\eta_L$ is a homomorphism of \emph{groups}; now, for every $B$-homomorphism $h:L\to L'$, it is immediate that the diagram
 \[
   \xymatrix{
-    \operatorname{Hom}_C(\mathfrak{J}/\mathfrak{J}^2,L)\ar[r]^{\eta_L}\ar[d]^{\operatorname{Hom}(1,h)} & \operatorname{Exan}_B(C,L)\ar[d]^{h_*}\\
+    \operatorname{Hom}_C(\mathfrak{J}/\mathfrak{J}^2,L)\ar[r]^{\overset{\eta_L}{\sim}}\ar[d]^{\operatorname{Hom}(1,h)} & \operatorname{Exan}_B(C,L)\ar[d]^{h_*}\\
     \operatorname{Hom}_C(\mathfrak{J}/\mathfrak{J}^2,L')\ar[r]_{\eta_{L'}} & \operatorname{Exan}_B(C,L')
   }
 \]
@@ -667,14 +666,14 @@ The classes of commutative Hochschild extensions of $B$ by $L$ form therefore a 
 \begin{env}[18.4.4]
 \label{0.18.4.4}
 Let us restrict to the case where $A$ and $B$ are \emph{commutative} and $L$ a $B$-module, and recall in this case the equivalent definition of the Hochschild cohomology groups $\mathrm{H}^i_A(B,L)$ (M, IX, 6).
-One considers a complex $\mathrm{P}_\bullet=(\mathrm{P}_n)_{n\geqslant 0}$ of $B$-modules, where $\mathrm{P}_n=B^{\otimes(n+1)}=B\otimes_A B\otimes\cdots\otimes_A B$ ($n+1$ times), the structure of $B$-module being defined
+One considers a complex $\mathrm{P}_\bullet=(\mathrm{P}_n)_{n\geqslant 0}$ of $B$-modules, where $\mathrm{P}_n=B^{\otimes(n+1)}=B\otimes_A B\otimes\ldots\otimes_A B$ ($n+1$ times), the structure of $B$-module being defined
 
 \oldpage[0\textsubscript{IV-1}]{66}
 
-by $x(y_1\otimes y_2\otimes\cdots\otimes y_{n+1})=(xy_1)\otimes y_2\otimes\cdots\otimes y_{n+1}$; the differential, of degree $-1$, $d_n:\mathrm{P}_n\to\mathrm{P}_{n-1}$, is defined by
+by $x(y_1\otimes y_2\otimes\ldots\otimes y_{n+1})=(xy_1)\otimes y_2\otimes\ldots\otimes y_{n+1}$; the differential, of degree $-1$, $d_n:\mathrm{P}_n\to\mathrm{P}_{n-1}$, is defined by
 \begin{align*}
-  d_n(x_1\otimes x_2\otimes\cdots\otimes x_{n+1})&=(x_1 x_2)\otimes x_3\otimes\cdots\otimes x_{n+1}-x_1\otimes(x_2 x_3)\otimes\cdots\otimes x_{n+1}+\cdots\\
-  &\quad +(-1)^{n-1} x_1\otimes x_2\otimes\cdots\otimes(x_n x_{n+1})+(-1)^n(x_{n+1} x_1)\otimes x_2\otimes\cdots\otimes x_n
+  d_n(x_1\otimes x_2\otimes\ldots\otimes x_{n+1})&=(x_1 x_2)\otimes x_3\otimes\ldots\otimes x_{n+1}\setmin x_1\otimes(x_2 x_3)\otimes\ldots\otimes x_{n+1}+\ldots\\
+  &\quad +(\setmin 1)^{n-1} x_1\otimes x_2\otimes\ldots\otimes(x_n x_{n+1})+(\setmin 1)^n(x_{n+1} x_1)\otimes x_2\otimes\ldots\otimes x_n
 \end{align*}
 which is $B$-linear since $B$ is commutative.
 
@@ -698,7 +697,7 @@ For this, modify the complex $\mathrm{P}_\bullet$ in degree $3$ considering a ne
 \]
 we take $\mathrm{P}'_3=\mathrm{P}_3\oplus(B\otimes_A B\otimes_A B)$, $d'_3$ coinciding with $d_3$ on $\mathrm{P}_3$, and being given by
 \[
-  d'_3(x\otimes y\otimes z)=x\otimes y\otimes z-x\otimes z\otimes y.
+  d'_3(x\otimes y\otimes z)=x\otimes y\otimes z\setmin x\otimes z\otimes y.
 \]
 
 The relation $d_2 d'_3=0$ follows from the above with the commutativity of $B$.

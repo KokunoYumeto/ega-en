@@ -10,7 +10,7 @@ $\sh H^0_{X/Z}(\sh F)$ is coherent.  Then:
     \operatorname{prof}_Z\bigl(\sh H^0_{X/Z}(\sh F)\bigr)\geq2.
   \]
   \item For every
-  $x\in\operatorname{Ass}(\sh F)\cap(X-Z)$,
+  $x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$,
   \[
     \codim\bigl(Z\cap\overline{\{x\}},\overline{\{x\}}\bigr)
     \geq2.
@@ -20,7 +20,7 @@ $\sh H^0_{X/Z}(\sh F)$ is coherent.  Then:
     \operatorname{prof}_{Z_x}(\widetilde{\sh F}_x)\geq2
   \]
   (with the notation of \sref{IV.5.9.6}) is open in $X$;
-  moreover, $X-U\subset Z$, and $U$ is the largest open subset of
+  moreover, $X\setmin U\subset Z$, and $U$ is the largest open subset of
   $X$ such that $\sh F|U$ is $(Z\cap U)$-closed.
 \end{enumerate}
 \end{proposition}
@@ -35,8 +35,8 @@ Put, for brevity,
 By \sref{IV.5.9.11}, $\sh F'$ is $Z$-closed, so assertion
 {\rm(i)} follows from \sref{IV.5.10.5}.
 
-Let $x\in\operatorname{Ass}(\sh F)\cap(X-Z)$.  The restrictions of
-$\sh F$ and $\sh F'$ to $X-Z$ are canonically isomorphic
+Let $x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$.  The restrictions of
+$\sh F$ and $\sh F'$ to $X\setmin Z$ are canonically isomorphic
 \sref{IV.5.9.11}; hence $x\in\operatorname{Ass}(\sh F')$.
 For $y\in Z\cap\overline{\{x\}}$, let $\mathfrak p$ be the prime
 ideal of $\sh O_y$ corresponding to $x$.  It is associated to the
@@ -62,7 +62,7 @@ $\operatorname{Coker}(\rho_{X/Z})$.  These are coherent
 $\sh O_X$-modules by the hypothesis and \sref[0]{0.5.3.4}, so
 their supports are closed \sref[0]{0.5.2.2}.  Hence $U$ is open.
 It is plainly the largest open subset on which $\sh F$ is
-$(Z\cap U)$-closed, and $X-U\subset Z$ follows from
+$(Z\cap U)$-closed, and $X\setmin U\subset Z$ follows from
 \sref{IV.5.9.11}.
 \end{proof}
 
@@ -108,7 +108,7 @@ Use the notation of \sref{IV.5.10.11}.
     X_x=\Spec(\sh O_{X,x}),
   \]
   is an isomorphism if and only if $\sh O_X$ is $Z$-closed at
-  $x$.  This condition holds for every $x\in X-Z$.
+  $x$.  This condition holds for every $x\in X\setmin Z$.
 
   \item Put $Z'=g^{-1}(Z)$ and suppose that $X'$ is locally
   Noetherian.  Then $\sh F'$ is $Z'$-closed.  If, in addition,
@@ -127,7 +127,7 @@ Use the notation of \sref{IV.5.10.11}.
     \quad\text{and}\quad
     \operatorname{prof}_{Z_x}(\widetilde{\sh F}_x)\geq2
   \]
-  is open in $X$ and satisfies $X-U\subset Z$.  Moreover, $U$ is
+  is open in $X$ and satisfies $X\setmin U\subset Z$.  Moreover, $U$ is
   the largest open subset of $X$ such that
   $g^{-1}(U)\to U$ is an isomorphism and the restriction to $U$
   of the canonical $g$-morphism from $\sh F$ to $\sh F'$ is an
@@ -140,7 +140,7 @@ Assertion {\rm(i)} follows from the definitions, and {\rm(iii)}
 is an immediate consequence of \sref{IV.5.10.10}, {\rm(iii)}.
 
 For {\rm(ii)}, let $V$ be an open subset of $X$ containing
-$X-Z$, put $V'=g^{-1}(V)$, and let
+$X\setmin Z$, put $V'=g^{-1}(V)$, and let
 $i:V\to X$ and $i':V'\to X'$ be the canonical injections.
 
 \oldpage[IV-2]{119}
@@ -159,10 +159,10 @@ homomorphism
 by \sref[II]{II.1.4.2} and \sref{IV.5.10.11.1}.
 Since $\sh H^0_{X/Z}(\sh F)$ is $Z$-closed
 \sref{IV.5.9.11}, $\rho_{X/Z}$ is an isomorphism, and therefore
-so is $\rho_{X'/Z'}$.  The open subset $X'-Z'$ is the
+so is $\rho_{X'/Z'}$.  The open subset $X'\setmin Z'$ is the
 intersection of the filtered family of inverse images
 $g^{-1}(V)$, as $V$ ranges over the open subsets of $X$
-containing $X-Z$.  Since $X'$ is locally Noetherian,
+containing $X\setmin Z$.  Since $X'$ is locally Noetherian,
 \sref{IV.5.9.1} now shows that $\sh F'$ is $Z'$-closed.
 The final assertion follows from \sref{IV.5.10.5}.
 \end{proof}

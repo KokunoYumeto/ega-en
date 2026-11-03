@@ -33,7 +33,7 @@ The abelian groups (\hyperref[III.2.1.1.2]{2.1.1.2}) and (\hyperref[III.2.1.1.3]
   (\HH^\bullet(U,\sh{F}(*)))_{mn} = \HH^m(U,\sh{F}\otimes\sh{L}^{\otimes n})
 \]
 and an analogous definition for (\hyperref[III.2.1.1.3]{2.1.1.3}).
-For the second grading, it is clear that these groups are graded $S$-modules, as follows, for example, from the fact that $\sh{F}\mapsto\HH^m(U,\sh{F})$ and $\sh{F}\mapsto\HH^m(\mathfrak{U},\sh{F})$ are functors.
+For the second grading, it is clear that these groups are graded $S$-modules, as follows, for example, from the fact that $\sh{F}\leadsto\HH^m(U,\sh{F})$ and $\sh{F}\leadsto\HH^m(\mathfrak{U},\sh{F})$ are functors.
 \end{env}
 
 \begin{env}[2.1.2]
@@ -48,11 +48,11 @@ Consider now the graded $S$-module \sref[0]{0.5.4.6}
 \oldpage[III]{96}
 If $X$ is a prescheme whose underlying space is Noetherian, or a quasi-compact scheme, it follows from \sref[I]{I.9.3.1} that, setting as usual $U_{i_0 i_1\cdots i_p} = \bigcap_{k=0}^p U_{i_k}$, we have, up to canonical isomorphism,
 \[
-  \Gamma(U_{i_0 i_1\cdots i_p},\sh{F}(*)) = \HH^0(U_{i_0 i_1\cdots i_p},\sh{F}(*)) = M_{f_{i_0}f_{i_1}\cdots f_{i_p}}.
+  \Gamma(U_{i_0 i_1\cdots i_p},\sh{F}(*)) = \HH^0(U_{i_0 i_1\cdots i_p},\sh{F}(*)) = M_{f_{i_0}f_{i_1}\ldots f_{i_p}}.
 \]
 
-We can further, with the notation of (\hyperref[III.1.2.2]{1.2.2}), identify $M_{f_{i_0}f_{i_1}\cdots f_{i_p}}$ with $\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$.
-This identification is an isomorphism of \emph{graded} $S$-modules if we define the degree of a homogeneous element $z\in\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$ as follows: $z$ is the canonical image of a homogeneous element $x\in M_{i_0 i_1\cdots i_p}^{(n)} = M$ of degree $m$, and we take the degree of $z$ to be the number $m-n(d_{i_0}+d_{i_1}+\cdots+d_{i_p})$.
+We can further, with the notation of (\hyperref[III.1.2.2]{1.2.2}), identify $M_{f_{i_0}f_{i_1}\ldots f_{i_p}}$ with $\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$.
+This identification is an isomorphism of \emph{graded} $S$-modules if we define the degree of a homogeneous element $z\in\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$ as follows: $z$ is the canonical image of a homogeneous element $x\in M_{i_0 i_1\cdots i_p}^{(n)} = M$ of degree $m$, and we take the degree of $z$ to be the number $m-n(d_{i_0}+d_{i_1}+\ldots+d_{i_p})$.
 Taking into account the definition of the homomorphisms $\vphi_{kh}:M_{i_0 i_1\cdots i_p}^{(h)}\to M_{i_0 i_1\cdots i_p}^{(k)}$ (\hyperref[III.1.2.2]{1.2.2}), we see immediately that this definition does not depend on the ``representative'' $x$ of $z$ that was chosen.
 Denoting, as in (\hyperref[III.1.2.2]{1.2.2}), by $C_n^p(M)$ the set of alternating maps from $[1,r]^{p+1}$ to $M$ (for every $n$), we similarly define a graded $S$-module structure on $\varinjlim_n C_n^p(M)$; as in (\hyperref[III.1.2.2]{1.2.2}), we then have
 \[
@@ -67,7 +67,7 @@ We also have, as in (\hyperref[III.1.2.2]{1.2.2}),
   C^p(\mathfrak{U},\sh{F}(*)) = C^{p+1}((\mathbf{f}),M) = \varinjlim_n K^{p+1}(\mathbf{f}^n,M)
   \tag{2.1.2.3}
 \]
-with the isomorphism \emph{preserving degrees}: the degree of an element of $\varinjlim_n K^{p+1}(\mathbf{f}^n,M)$, which is the canonical image of a cochain $g\in K^{p+1}(\mathbf{f}^n,M)$ whose values $g(i_0,\dots,i_p)$ lie in one and the same homogeneous component $M_m$ of $M$, is $m-n(d_{i_0}+\cdots+d_{i_p})$, independently of the choice of this cochain as a representative of the element in question.
+with the isomorphism \emph{preserving degrees}: the degree of an element of $\varinjlim_n K^{p+1}(\mathbf{f}^n,M)$, which is the canonical image of a cochain $g\in K^{p+1}(\mathbf{f}^n,M)$ whose values $g(i_0,\dots,i_p)$ lie in one and the same homogeneous component $M_m$ of $M$, is $m-n(d_{i_0}+\ldots+d_{i_p})$, independently of the choice of this cochain as a representative of the element in question.
 
 Since the preceding isomorphisms are compatible with the coboundary operators, we conclude, as in (\hyperref[III.1.2.2]{1.2.2}), that:
 \end{env}
@@ -119,7 +119,7 @@ The ``local'' proposition analogous to \sref{III.2.1.3} is the following.
 \begin{proposition}[2.1.5]
 \label{III.2.1.5}
 Let $S$ be a positively graded ring, let the $f_i$ ($1\leq i\leq r$) be homogeneous elements of $S_+$ of degrees $d_i$, and let $M$ be a graded $S$-module.
-Let $X=\Proj(S)$ be the homogeneous prime spectrum of $S$, and set $U_i=\mathrm{D}_+(f_i)$, $U=\bigcup_i U_i$, and $\HH^\bullet(U,\widetilde{M}(*))=\bigoplus_{n\in\bb{Z}}\HH^\bullet(U,(M(n))^\sim)$.
+Let $X=\Proj(S)$ be the homogeneous prime spectrum of $S$, and set $U_i=\mathit{D}_+(f_i)$, $U=\bigcup_i U_i$, and $\HH^\bullet(U,\widetilde{M}(*))=\bigoplus_{n\in\bb{Z}}\HH^\bullet(U,(M(n))^\sim)$.
 There are canonical isomorphisms, functorial in $M$ and of degree $0$ for the graded $S$-module structures,
 \[
 \label{III.2.1.5.1}
@@ -139,17 +139,17 @@ in which all the homomorphisms are of degree $0$.
 \begin{proof}
 Indeed, by definition \sref[II]{II.2.5.2},
 \[
-  \Gamma(U_{i_0i_1\cdots i_p},(M(n))^\sim)
-  =(M_{f_{i_0}\cdots f_{i_p}})_n,
+  \Gamma(U_{i_0i_1\ldots i_p},(M(n))^\sim)
+  =(M_{f_{i_0}\ldots f_{i_p}})_n,
 \]
-and therefore $\Gamma(U_{i_0i_1\cdots i_p},\widetilde{M}(*))=M_{f_{i_0}\cdots f_{i_p}}$.
+and therefore $\Gamma(U_{i_0i_1\ldots i_p},\widetilde{M}(*))=M_{f_{i_0}\ldots f_{i_p}}$.
 The rest of the argument is the same as in the proof of \sref{III.2.1.4}, taking into account that $X$ is a scheme.
 \end{proof}
 
 \begin{env}[2.1.6]
 \label{III.2.1.6}
 \emph{Remarks.} ---
-(i) Under the hypotheses of \sref{III.2.1.5}, the functors $\Gamma(U_{i_0i_1\cdots i_p},\widetilde{M}(*))$ are exact in $M$, by \sref[0]{0.1.3.2}.
+(i) Under the hypotheses of \sref{III.2.1.5}, the functors $\Gamma(U_{i_0i_1\ldots i_p},\widetilde{M}(*))$ are exact in $M$, by \sref[0]{0.1.3.2}.
 The same argument as in (\hyperref[III.1.2.5]{1.2.5}) therefore shows that, if $0\to M'\to M\to M''\to0$ is an exact sequence of graded $S$-modules whose homomorphisms have degree $0$, then for every $p\geq0$ there are commutative diagrams
 \[
 \label{III.2.1.6.1}
@@ -174,11 +174,11 @@ We are thus essentially reduced to computing $\HH^\bullet((\mathbf{T}),S)$, wher
 
 \begin{lemma}[2.1.8]
 \label{III.2.1.8}
-If $S=A[\mathrm{T}_0,\dots,\mathrm{T}_r]$, then, with $\mathbf{T}=(\mathrm{T}_i)_{0\leq i\leq r}$,
+If $S=A[\mathrm{T}_0,\dots,\mathrm{T}_r]$, then, with $\mathbf{T}=(\mathrm{T}_i)_{0\leq i\leq r}$
 \[
 \label{III.2.1.8.1}
   \HH^i(\mathbf{T}^n,S)=0
-  \qquad\text{if }i\neq r+1,
+  \qquad\text{if }i\neq r+1
   \tag{2.1.8.1}
 \]
 \[
@@ -188,7 +188,7 @@ If $S=A[\mathrm{T}_0,\dots,\mathrm{T}_r]$, then, with $\mathbf{T}=(\mathrm{T}_i)
 \]
 The $A$-module $\HH^{r+1}(\mathbf{T}^n,S)$ therefore has an $A$-basis formed by the classes modulo $(\mathbf{T}^n)$ of the monomials
 \[
-  \mathrm{T}_{\mathbf{p}}=\mathrm{T}_0^{p_0}\cdots\mathrm{T}_r^{p_r},
+  \mathrm{T}_{\mathbf{p}}=\mathrm{T}_0^{p_0}\ldots\mathrm{T}_r^{p_r},
   \qquad \mathbf{p}=(p_0,\dots,p_r),\quad 0\leq p_i<n\ \text{for every }i.
 \]
 \end{lemma}
@@ -205,10 +205,10 @@ For $i=r+1$, the inductive system consists of the modules $S/(\mathbf{T}^n)$, th
   \vphi_{nm}:S/(\mathbf{T}^n)\longrightarrow S/(\mathbf{T}^m)
   \qquad (0\leq n\leq m)
 \]
-being multiplication by $(\mathrm{T}_0\cdots\mathrm{T}_r)^{m-n}$.
-For $n\geq\sup(p_i)_{0\leq i\leq r}$, denote by $\xi_{\mathbf{p}}^{(n)}=\xi_{p_0,\dots,p_r}^{(n)}$ the class of $\mathrm{T}_0^{n-p_0}\cdots\mathrm{T}_r^{n-p_r}$ modulo $(\mathbf{T}^n)$.
+being multiplication by $(\mathrm{T}_0\ldots\mathrm{T}_r)^{m-n}$.
+For $n\geq\sup(p_i)_{0\leq i\leq r}$, denote by $\xi_{\mathbf{p}}^{(n)}=\xi_{p_0,\dots,p_r}^{(n)}$ the class of $\mathrm{T}_0^{n-p_0}\ldots\mathrm{T}_r^{n-p_r}$ modulo $(\mathbf{T}^n)$.
 Then $\vphi_{nm}(\xi_{\mathbf{p}}^{(n)})=\xi_{\mathbf{p}}^{(m)}$, so these elements have the same canonical image $\xi_{\mathbf{p}}=\xi_{p_0,\dots,p_r}$ in the inductive limit $\HH^{r+1}((\mathbf{T}),S)$.
-By the definition of degree in (\hyperref[III.2.1.2]{2.1.2}), the degree of $\xi_{\mathbf{p}}$ is $-|\mathbf{p}|=-(p_0+p_1+\cdots+p_r)$.
+By the definition of degree in (\hyperref[III.2.1.2]{2.1.2}), the degree of $\xi_{\mathbf{p}}$ is $-|\mathbf{p}|=-(p_0+p_1+\ldots+p_r)$.
 It is clear that the $\xi_{\mathbf{p}}^{(n)}$ with $0<p_i\leq n$ for $0\leq i\leq r$ form a basis of $S/(\mathbf{T}^n)$.
 We therefore deduce immediately from \sref{III.2.1.8}:
 \end{env}
@@ -219,7 +219,7 @@ With the notation of \sref{III.2.1.8},
 \[
 \label{III.2.1.10.1}
   \HH^i((\mathbf{T}),S)=0
-  \qquad\text{for }i\neq r+1,
+  \qquad\text{for }i\neq r+1
   \tag{2.1.10.1}
 \]
 and $\HH^{r+1}((\mathbf{T}),S)$ is a free $A$-module with basis the elements $\xi_{p_0,\dots,p_r}$ such that $p_i>0$ for $0\leq i\leq r$.
@@ -233,7 +233,7 @@ The argument of \sref{III.2.1.8} shows more generally that
 \[
 \label{III.2.1.11.1}
   \HH^i(\mathbf{T}^n,M)=0
-  \qquad\text{if }i\neq r+1,
+  \qquad\text{if }i\neq r+1
   \tag{2.1.11.1}
 \]
 \[
@@ -244,10 +244,10 @@ The argument of \sref{III.2.1.8} shows more generally that
 Indeed, the latter formula follows directly from (\hyperref[III.1.1.3.5]{1.1.3.5}).
 Moreover, it is clear that
 \[
-  M/(\mathrm{T}_0^nM+\cdots+\mathrm{T}_{i-1}^nM)
-  =\bigl(S/(\mathrm{T}_0^nS+\cdots+\mathrm{T}_{i-1}^nS)\bigr)\otimes_A N,
+  M/(\mathrm{T}_0^nM+\ldots+\mathrm{T}_{i-1}^nM)
+  =\bigl(S/(\mathrm{T}_0^nS+\ldots+\mathrm{T}_{i-1}^nS)\bigr)\otimes_A N,
 \]
-since the ideal $\mathrm{T}_0^nS+\cdots+\mathrm{T}_{i-1}^nS$ is a direct summand of the $A$-module $S$.
+since the ideal $\mathrm{T}_0^nS+\ldots+\mathrm{T}_{i-1}^nS$ is a direct summand of the $A$-module $S$.
 This permits us to apply \sref{III.1.1.4} to $M$, and yields (\hyperref[III.2.1.11.1]{2.1.11.1}).
 \end{env}
 
@@ -261,7 +261,7 @@ Then:
   \item[{\rm(i)}] $\HH^i(X,\sh{O}_X(*))=0$ for $i\neq0,r$.
   \item[{\rm(ii)}] The canonical homomorphism $\alpha:S\to\HH^0(X,\sh{O}_X(*))$ \sref[II]{II.2.6.2} is bijective.
 \oldpage[III]{99}
-  \item[{\rm(iii)}] $\HH^r(X,\sh{O}_X(*))$ is a free $A$-module with basis the elements $\xi_{p_0,\dots,p_r}$, where $p_i>0$ for $0\leq i\leq r$; the element $\xi_{p_0,\dots,p_r}$ has degree $-|\mathbf{p}|=-(p_0+\cdots+p_r)$, and
+  \item[{\rm(iii)}] $\HH^r(X,\sh{O}_X(*))$ is a free $A$-module with basis the elements $\xi_{p_0,\dots,p_r}$, where $p_i>0$ for $0\leq i\leq r$; the element $\xi_{p_0,\dots,p_r}$ has degree $-|\mathbf{p}|=-(p_0+\ldots+p_r)$, and
   \[
     \mathrm{T}_i\xi_{p_0,\dots,p_r}
     =\xi_{p_0,\dots,p_{i-1},p_i-1,p_{i+1},\dots,p_r}.
@@ -297,7 +297,7 @@ The only values of $i$ and $n$ for which $\RR^if_*(\sh{O}_X(n))\neq0$ can occur 
 Moreover, the canonical homomorphism \sref[II]{II.3.3.2}
 \[
   \alpha:\bb{S}_{\sh{O}_Y}(\sh{E})
-  \longrightarrow \Gamma_*(\sh{O}_X)
+  \longrightarrow \bbGamma_*(\sh{O}_X)
   =\RR^0f_*(\sh{O}_X(*))
   =\bigoplus_{n\in\bb{Z}}f_*(\sh{O}_X(n))
 \]
@@ -426,7 +426,7 @@ Moreover, if $j:X\to P$ is the canonical injection, then $j_*(\sh{F})$ is a cohe
   j_*(\sh{F}(n))=(j_*\sh{F})(n)
 \]
 by \sref[II]{II.3.4.5} and \sref[II]{II.3.5.2}.
-In view of (G, II, Corollary to Theorem~4.9.1), we are therefore reduced to proving \sref{III.2.2.2} in the special case
+In view of (G, \textbf{II}, Corollary to Theorem~4.9.1), we are therefore reduced to proving \sref{III.2.2.2} in the special case
 \[
   X=\bb{P}_A^r,
   \qquad S=A[T_0,\ldots,T_r].
@@ -452,7 +452,7 @@ where $\sh{R}$ is coherent \sref[0]{0.5.3.3} and $\sh{E}$ satisfies (i) and (iii
 Since twisting is exact, for every $n\in\bb{Z}$ we also have an exact sequence
 \[
   0\longrightarrow\sh{R}(n)\longrightarrow\sh{E}(n)
-   \longrightarrow\sh{F}(n)\longrightarrow0,
+   \longrightarrow\sh{F}(n)\longrightarrow0
 \]
 and hence an exact cohomology sequence
 \[
@@ -499,11 +499,11 @@ Since twisting is exact, it is enough to prove that, for $n$ sufficiently large,
   0&\longrightarrow f_*(\sh{F}'(n))
     \longrightarrow f_*(\sh{F}(n))
     \longrightarrow f_*(\sh{G}'(n))
-    \longrightarrow0,\\
+    \longrightarrow0\\
   0&\longrightarrow f_*(\sh{G}'(n))
     \longrightarrow f_*(\sh{G}(n))
     \longrightarrow f_*(\sh{G}''(n))
-    \longrightarrow0,\\
+    \longrightarrow0\\
   0&\longrightarrow f_*(\sh{G}''(n))
     \longrightarrow f_*(\sh{H}(n))
     \longrightarrow f_*(\sh{H}''(n))
@@ -522,7 +522,7 @@ The cohomology sequence is then
   \longrightarrow f_*(\sh{G}(n))
   \longrightarrow f_*(\sh{H}(n))
   \longrightarrow \RR^1f_*(\sh{F}(n))
-  \longrightarrow\cdots,
+  \longrightarrow\ldots,
 \]
 and the conclusion follows from \sref{III.2.2.1}, (ii).
 \end{proof}
@@ -573,7 +573,7 @@ $0\to f_*(\sh{G}_1(n))\to f_*(\sh{G}(n))\to f_*(\sh{H}(n))$ is exact for every
 $n$; it therefore suffices to show that, for sufficiently large $n$, the
 sequence $f_*(\sh{F}(n))\to f_*(\sh{G}_1(n))\to0$ is exact. In other words, we
 may restrict to the case where $\sh{H}=0$ and the support of $\sh{G}$ is
-proper over $Y$, hence \emph{closed in $Z$} (II, 5.4.10). Consequently
+proper over $Y$, hence \emph{closed in $Z$} (\textbf{II}, 5.4.10). Consequently
 $\sh{G}'=i_*(\sh{G})$ is a coherent $\sh{O}_Z$-Module such that
 $\sh{G}'|X=\sh{G}$. We know from (I, 9.4.3) that there exists a coherent
 $\sh{O}_Z$-Module $\sh{F}'$ such that $\sh{F}'|X=\sh{F}$. Moreover, since $X$
@@ -659,7 +659,7 @@ Let $Y$ be a Noetherian prescheme, let $\sh{S}$ be a quasi-coherent $\sh{O}_Y$-a
   X=\Proj(\sh{S}),
 \]
 and let $q:X\to Y$ be the structural morphism.
-Let $\sh{M}$ be a quasi-coherent graded $\sh{S}$-module satisfying condition \textbf{(TF)}.
+Let $\sh{M}$ be a quasi-coherent graded $\sh{S}$-module satisfying condition \textup{\textbf{(TF)}}.
 There then exists an integer $N$ such that, for $n\geq N$, the canonical homomorphism \sref[II]{II.8.14.5.1}
 \[
   \alpha_n:\sh{M}_n
@@ -706,8 +706,8 @@ Consider the commutative diagram
 \[
   \xymatrix{
     \widetilde{L'_n}\ar[r]\ar[d]_{\alpha_n} &
-    \widetilde{L_n}\ar[r]\ar[d]^{\alpha_n} &
-    \widetilde{M_n}\ar[r]\ar[d]^{\alpha_n} &
+    \widetilde{L_n}\ar[r]\ar[d]_{\alpha_n} &
+    \widetilde{M_n}\ar[r]\ar[d]_{\alpha_n} &
     0\\
     q_*(\widetilde{L'}(n))\ar[r] &
     q_*(\widetilde{L}(n))\ar[r] &
@@ -778,9 +778,9 @@ Finally, let $\cat{K}_X$ be the category of quasi-coherent graded $\sh{S}_X$-mod
 
 By \sref[II]{II.8.14.8}, \sref[II]{II.8.14.10}, and \sref{III.2.3.2}, the functors
 \[
-  \sh{M}\longmapsto\shProj(\sh{M}),
+  \sh{M}\leadsto\shProj(\sh{M}),
   \qquad
-  \sh{F}\longmapsto\bbGamma_*(\sh{F})
+  \sh{F}\leadsto\bbGamma_*(\sh{F})
 \]
 define an equivalence (T, I, 1.2) between the quotient category
 \[
@@ -1124,9 +1124,9 @@ Let $Y$ be a Noetherian prescheme, let $\sh{S}$ be a quasi-coherent $\sh{O}_Y$-a
 be a projective morphism, set $\sh{S}'=f^*(\sh{S})$, and let $\sh{M}$ be a quasi-coherent $\sh{S}'$-module of finite type.
 Then:
 \begin{enumerate}
-  \item[(i)] For every $p\in\bb Z$, $\RR^p f_*(\sh{M})$ is an $\sh{S}$-module of finite type.
+  \item[\textup{(i)}] For every $p\in\bb Z$, $\RR^p f_*(\sh{M})$ is an $\sh{S}$-module of finite type.
 
-  \item[(ii)] Suppose in addition that $\sh{L}$ is an invertible $\sh{O}_X$-module ample for $f$, and, for every $n\in\bb Z$, set
+  \item[\textup{(ii)}] Suppose in addition that $\sh{L}$ is an invertible $\sh{O}_X$-module ample for $f$, and, for every $n\in\bb Z$, set
   \[
     \sh{M}(n)=\sh{M}\otimes\sh{L}^{\otimes n}.
   \]
@@ -1413,10 +1413,10 @@ There is therefore an integer $r>0$ for which the long exact cohomology sequence
   \longrightarrow\HH^0(X,\sh{F})
   \longrightarrow\HH^0(X,\sh{F}'')
   \longrightarrow\HH^1(X,\sh{F}')
-  \longrightarrow\cdots
+  \longrightarrow\ldots
 \]
 \[
-  \cdots\longrightarrow\HH^r(X,\sh{F}')
+  \ldots\longrightarrow\HH^r(X,\sh{F}')
   \longrightarrow\HH^r(X,\sh{F})
   \longrightarrow\HH^r(X,\sh{F}'')
   \longrightarrow0.
@@ -1439,21 +1439,21 @@ For every $n\in\bb Z$, put
   \sh{F}(n)=\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n}.
 \]
 \begin{enumerate}
-  \item[(i)] There is a unique polynomial $P\in\bb Q[T]$ such that
+  \item[\textup{(i)}] There is a unique polynomial $P\in\bb Q[T]$ such that
   \[
     \chi_A(\sh{F}(n))=P(n)
   \]
   for every $n\in\bb Z$.
   The polynomial $P$ is called the \emph{Hilbert polynomial} of $\sh{F}$ with respect to $A$.
 
-  \item[(ii)] For all sufficiently large $n$,
+  \item[\textup{(ii)}] For all sufficiently large $n$,
   \[
     \chi_A(\sh{F}(n))
     =
     \operatorname{length}_A\Gamma(X,\sh{F}(n)).
   \]
 
-  \item[(iii)] The coefficient of the highest-degree term of $\chi_A(\sh{F}(n))$ is nonnegative.
+  \item[\textup{(iii)}] The coefficient of the highest-degree term of $\chi_A(\sh{F}(n))$ is nonnegative.
 \end{enumerate}
 \end{theorem}
 
@@ -1487,7 +1487,7 @@ Indeed, there is an integer $s>0$ such that $\mathfrak{m}^s=0$, and $\sh{F}(n)$ 
 \[
   \sh{F}(n)
   \supset\mathfrak{m}\sh{F}(n)
-  \supset\cdots
+  \supset\ldots
   \supset\mathfrak{m}^{s-1}\sh{F}(n)
   \supset0.
 \]
@@ -1568,16 +1568,16 @@ By the Hilbert syzygy theorem (M, VIII, 6.5), $M$ has a finite resolution by gra
 \[
   0\longrightarrow L_q
   \longrightarrow L_{q-1}
-  \longrightarrow\cdots
+  \longrightarrow\ldots
   \longrightarrow L_1
   \longrightarrow M
   \longrightarrow0.
 \]
-Since the functor $M\mapsto\widetilde{M}$ is exact \sref[II]{II.2.5.4}, we obtain an exact sequence
+Since the functor $\widetilde{M}$ is exact \sref[II]{II.2.5.4}, we obtain an exact sequence
 \[
   0\longrightarrow\widetilde{L}_q
   \longrightarrow\widetilde{L}_{q-1}
-  \longrightarrow\cdots
+  \longrightarrow\ldots
   \longrightarrow\widetilde{L}_1
   \longrightarrow\widetilde{M}
   \longrightarrow0,
@@ -1586,7 +1586,7 @@ and hence, for every $n\in\bb Z$, an exact sequence
 \[
   0\longrightarrow\widetilde{L}_q(n)
   \longrightarrow\widetilde{L}_{q-1}(n)
-  \longrightarrow\cdots
+  \longrightarrow\ldots
   \longrightarrow\widetilde{L}_1(n)
   \longrightarrow\widetilde{M}(n)
   \longrightarrow0.
@@ -1752,7 +1752,7 @@ closed point, and therefore is all of $X$, since $X$ is Noetherian
 
 Let $\sh{J}$, respectively $\sh{J}'$, be the quasi-coherent ideal of
 $\sh{O}_X$ defining the reduced closed subprescheme whose underlying
-space is $X-U$, respectively $(X-U)\cup\{x\}$ \sref[I]{I.5.2.1}.
+space is $X-U$, respectively $(X\setmin U)\cup\{x\}$ \sref[I]{I.5.2.1}.
 The ideals $\sh{J}$ and $\sh{J}'$ are coherent \sref[I]{I.6.1.1},
 $\sh{J}'\subset\sh{J}$, and
 \[
@@ -1805,7 +1805,7 @@ $\sh{L}$ be an invertible $\sh{O}_X$-module, and set
   \sh{L}'=g^*(\sh{L}).
 \]
 Suppose that there exists a subset $Z$ of $X$, proper over $Y$
-\sref[II]{II.5.4.10}, such that, for every $x\in X-Z$, either $X$ is
+\sref[II]{II.5.4.10}, such that, for every $x\in X\setmin Z$, either $X$ is
 normal at $x$, or
 \[
   \bigl(g_*(\sh{O}_{X'})\bigr)_x
@@ -1866,12 +1866,12 @@ Henceforth we suppose that $Y$ is affine and that $X$ is reduced.
 \end{env}
 
 The hypotheses of \sref[II]{II.6.6.11} are now satisfied.
-There exist a reduced $Y$-prescheme $X_2$ and a finite birational
+There exist a reduced $Y$-prescheme $X_2$, and a finite birational
 $Y$-morphism
 \[
   h:X_2\to X
 \]
-whose restriction to $h^{-1}(X-Z)$ is an isomorphism onto $X-Z$, and
+whose restriction to $h^{-1}(X\setmin Z)$ is an isomorphism onto $X\setmin Z$, and
 such that $h^*(\sh{L})$ is ample.
 Replacing $X'$ by $X_2$, we are reduced to proving the proposition under
 the additional assumption that $g$ has the properties just listed for
@@ -1906,8 +1906,8 @@ $X_1$, $\sh{L}_1$, $g_1$, and $Z_1$.
 \oldpage[III]{113}
 
 This permits us to prove \sref{III.2.6.2} by Noetherian induction
-\sref[0]{0.2.2.2} when the restriction of $g$ to $g^{-1}(X-Z)$ is an
-isomorphism onto $X-Z$; as seen in \sref{III.2.6.2.1}, that case is
+\sref[0]{0.2.2.2} when the restriction of $g$ to $g^{-1}(X\setmin Z)$ is an
+isomorphism onto $X\setmin Z$; as seen in \sref{III.2.6.2.1}, that case is
 sufficient.
 It is enough to show that if the conclusion of \sref{III.2.6.2} holds
 for $\sh{L}_1$ on every closed subprescheme $X_1$ of $X$ whose
@@ -1941,7 +1941,7 @@ It follows that
 \]
 Clearly $\sh{K}_x=\sh{A}_x$ at every point admitting a neighbourhood
 $W_x$ on which $g:g^{-1}(W_x)\to W_x$ is an isomorphism.
-This holds in particular at every point of $X-Z$, and in a
+This holds in particular at every point of $X\setmin Z$, and in a
 neighbourhood of every generic point of an irreducible component of
 $X$.
 
@@ -1960,8 +1960,8 @@ We may therefore reduce to the case
 \[
   Z=\Spec(\sh{A}/\sh{K}).
 \]
-Since $X-Z_1$ is a nonempty open subset of $X$, we may in addition
-suppose that the underlying space of $Z$ is distinct from $X$.
+Since $X\setmin Z_1$ is a nonempty open subset of $X$, we may in addition
+suppose that the underlying space of $Z$ is \emph{distinct} from $X$.
 \end{env}
 
 \begin{env}[2.6.2.5]
@@ -1996,8 +1996,8 @@ We distinguish two cases.
 
 \smallskip
 \noindent
-$1^\circ$ Suppose first that $x\in X-Z$.
-We may clearly suppose that $U\subset X-Z$, so that
+$1^\circ$ Suppose first that $x\in X\setmin Z$.
+We may clearly suppose that $U\subset X\setmin Z$, so that
 $U'=g^{-1}(U)$ does not meet $Z'$.
 Since $\sh{L}'$ is ample, there exist $n>0$ and a section $s'$ of
 $\sh{L}'^{\otimes n}$ over $X'$ such that
@@ -2028,7 +2028,7 @@ $s''$ plainly has the required properties.
 \noindent
 $2^\circ$ Suppose now that $x\in Z$.
 Let $\sh{J}$ be the coherent ideal of $\sh{O}_X$ defining the reduced
-closed subprescheme whose underlying space is $X-U$, and consider in
+closed subprescheme whose underlying space is $X\setmin U$, and consider in
 $\sh{B}$ the coherent ideals
 
 \oldpage[III]{114}
@@ -2082,7 +2082,7 @@ sufficiently large $n$, the canonical map
     (\sh{J}'/\sh{J}'\sh{K}')\otimes\sh{L}'^{\otimes n}
   \bigr)
 \]
-is surjective.
+is \emph{surjective}.
 By \sref[0]{0.5.4.10}, it follows that the canonical map
 \[
   \Gamma(X,\sh{J}\sh{B}\otimes\sh{L}^{\otimes n})
@@ -2093,7 +2093,7 @@ By \sref[0]{0.5.4.10}, it follows that the canonical map
       \otimes\sh{L}^{\otimes n}
   \bigr)
 \]
-is surjective.
+is \emph{surjective}.
 
 Let $i:Z\to X$ and $i':Z'\to X'$ be the canonical immersions.
 They fit into the commutative diagram
@@ -2117,7 +2117,7 @@ Since $\sh{L}'$ is ample, $\sh{M}'$ is ample
   \sh{M}'=h^*(\sh{M}).
 \]
 The Noetherian induction hypothesis, applied because $Z\neq X$, now
-shows that $\sh{M}$ is ample.
+shows that $\sh{M}$ is \emph{ample}.
 Consequently, for all sufficiently large $n$,
 \[
   i^*(\sh{J}/\sh{J}\sh{K})\otimes\sh{M}^{\otimes n}
@@ -2157,7 +2157,7 @@ The diagram \eqref{III.2.6.2.6} therefore implies that $t$ is a section
 of $\sh{J}\otimes\sh{L}^{\otimes n}$, hence in particular a section of
 $\sh{L}^{\otimes n}$.
 We have $t(x)\neq0$, so $x\in X_t$.
-By the definition of $\sh{J}$, the section $t$ vanishes on $X-U$, the
+By the definition of $\sh{J}$, the section $t$ vanishes on $X\setmin U$, the
 support of $\sh{O}_X/\sh{J}$.
 Thus $X_t\subset U$, and the proof is complete.
 \end{env}

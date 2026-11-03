@@ -116,9 +116,9 @@ of $A$-modules
   \mathbf{S}_n(E)\otimes L^{\otimes n}
 \]
 by assigning to
-$(x_1\otimes y_1)\cdots(x_n\otimes y_n)$ the element
+$(x_1\otimes y_1)\ldots(x_n\otimes y_n)$ the element
 \[
-  (x_1x_2\cdots x_n)\otimes(y_1\otimes y_2\otimes\cdots\otimes y_n)
+  (x_1x_2\ldots x_n)\otimes(y_1\otimes y_2\otimes\ldots\otimes y_n)
   \qquad(x_i\in E,\ y_i\in L\text{ for }1\leq i\leq n)~;
 \]
 we verify immediately (by reducing to the case where $L=A$) that this
@@ -229,12 +229,12 @@ On the other hand, let $V$ be an affine open subset of $X$ contained in
 $r^{-1}(D_+(f))$, and let $B$ be its ring, which is an $A$-algebra; set
 $S=\mathbf{S}_A(E)$; the restriction of $r$ to $V$ corresponds to an
 $A$-homomorphism $\omega:S_{(f)}\to B$, and we have
-$q^*(\mathcal{E})|V=\widetilde{E\otimes_A B}$ and
-$\mathcal{L}_r|V=\widetilde{L_r}$, where
+$q^*(\mathcal{E})|V=(E\otimes_A B)\supertilde$ and
+$\mathcal{L}_r|V=\widetilde{L}_r$, where
 $L_r=(S(1))_{(f)}\otimes_{S_{(f)}}B_{[\omega]}$
 (\hyperref[I.1.6.5]{I, 1.6.5}). The restriction of $\varphi_r$ to
 $q^*(\mathcal{E})|V$ corresponds to the $B$-homomorphism
-$u:E\otimes_A B\to L_r$ that sends $x\otimes1$ to
+$u:E\otimes_A B\to L_r$, that sends $x\otimes1$ to
 $(x/1)\otimes1=(f/1)\otimes\omega(x/f)$. The canonical extension of
 $\varphi_r$ to a homomorphism of $\mathcal{O}_X$-algebras
 \[
@@ -258,7 +258,7 @@ $\varphi:q^*(\mathcal{E})\to\mathcal{L}$ there corresponds canonically a
 homomorphism of quasi-coherent $\mathcal{O}_X$-algebras
 \[
   \psi:\mathbf{S}(q^*(\mathcal{E}))=q^*(\mathbf{S}(\mathcal{E}))
-  \longrightarrow\bigoplus_{n\geq0}\mathcal{L}^{\otimes n},
+  \longrightarrow\bigoplus_{n\geq0}\mathcal{L}^{\otimes n}
 \]
 and consequently (\hyperref[II.3.7.1]{3.7.1}) a $Y$-morphism
 $r_{\mathcal{L},\psi}:G(\psi)\to
@@ -273,8 +273,8 @@ $r_{\mathcal{L},\varphi}$ is everywhere defined. Moreover, with the notation of
 \label{II.4.2.3}
 Given a morphism $q:X\to Y$ and a quasi-coherent $\mathcal{O}_Y$-module
 $\mathcal{E}$, the maps
-$r\mapsto(\mathcal{L}_r,\varphi_r)$ and
-$(\mathcal{L},\varphi)\mapsto r_{\mathcal{L},\varphi}$ put in
+$r\to(\mathcal{L}_r,\varphi_r)$ and
+$(\mathcal{L},\varphi)\to r_{\mathcal{L},\varphi}$ put in
 bijective correspondence the set of $Y$-morphisms
 $r:X\to\mathbf{P}(\mathcal{E})$ and the set of equivalence classes of
 pairs $(\mathcal{L},\varphi)$ consisting of an invertible $\mathcal{O}_X$-module
@@ -393,22 +393,22 @@ In particular:
   (\hyperref[II.4.2.6]{4.2.6}) applies when $Y$ is a
   \emph{local scheme} (\hyperref[I.2.4.8]{I, 2.4.8}). Let $Y$ be an
   arbitrary prescheme, $y$ a point of $Y$, and
-  $Y'=\operatorname{Spec}(k(y))$; the fibre $p^{-1}(y)$ of
+  $Y'=\operatorname{Spec}(\boldsymbol{k}(y))$; the fibre $p^{-1}(y)$ of
   $\mathbf{P}(\mathcal{E})$ is, by virtue of
   (\hyperref[II.4.1.3.1]{4.1.3.1}), identified with
   $\mathbf{P}(\mathcal{E}^y)$, where
-  $\mathcal{E}^y=\mathcal{E}_y\otimes_{\mathcal{O}_y}k(y)
+  $\mathcal{E}^y=\mathcal{E}_y\otimes_{\mathcal{O}_y}\boldsymbol{k}(y)
   =\mathcal{E}_y/\mathfrak{m}_y\mathcal{E}_y$ is considered as a vector
-  space over $k(y)$. More generally, if $K$ is an extension of
-  $k(y)$, $p^{-1}(y)\otimes_{k(y)}K$ is identified with
-  $\mathbf{P}(\mathcal{E}^y\otimes_{k(y)}K)$. Corollary
+  space over $\boldsymbol{k}(y)$. More generally, if $K$ is an extension of
+  $\boldsymbol{k}(y)$, $p^{-1}(y)\otimes_{\boldsymbol{k}(y)}K$ is identified with
+  $\mathbf{P}(\mathcal{E}^y\otimes_{\boldsymbol{k}(y)}K)$. Corollary
   (\hyperref[II.4.2.6]{4.2.6}) therefore shows that the set of
   \emph{geometric points of $\mathbf{P}(\mathcal{E})$ with values in
-  the extension $K$ of $k(y)$} (\hyperref[I.3.4.5]{I, 3.4.5}), which one
+  the extension $K$ of $\boldsymbol{k}(y)$} (\hyperref[I.3.4.5]{I, 3.4.5}), which one
   can also call the \emph{rational geometric fibre over $K$ of
   $\mathbf{P}(\mathcal{E})$ above the point $y$}, is identified with
   the \emph{projective space} associated to the \emph{dual} of the $K$-vector
-  space $\mathcal{E}^y\otimes_{k(y)}K$.
+  space $\mathcal{E}^y\otimes_{\boldsymbol{k}(y)}K$.
   \item[2\textsuperscript{o}] Suppose that $Y$ is affine with ring $A$, and
   moreover that every invertible $\mathcal{O}_Y$-module is trivial; take,
   moreover, $\mathcal{E}=\mathcal{O}_Y^n$; then, in
@@ -459,7 +459,7 @@ $\mathcal{E}\otimes_{\mathcal{O}_Y}\mathcal{L}'$ (converse of
 (\hyperref[II.4.1.4]{4.1.4})). This will make it possible to determine the
 sheaf of germs of automorphisms of $\mathbf{P}(\mathcal{E})$ as the quotient
 of the sheaf of groups $\mathcal{A}ut(\mathcal{E})$ (locally isomorphic to
-$\operatorname{GL}(n,\mathcal{O}_Y)$ if $\mathcal{E}$ is of rank $n$) by
+$\mathbf{GL}(n,\mathcal{O}_Y)$ if $\mathcal{E}$ is of rank $n$) by
 $\mathcal{O}_Y^*$.
 \end{remark}
 
@@ -514,8 +514,8 @@ $\varphi_{(Y')}:q_{(Y')}^*(\mathcal{E}')=
     & P'=P_{(Y')} \ar[l]_{p_{(Y')}} \ar[d]^{u}
     & X_{(Y')} \ar[l]_{r_{(Y')}} \ar[d]^{v}
     \\Y
-    & P \ar[l]_{p}
-    & X \ar[l]_{r}
+    & P \ar[l]^{p}
+    & X \ar[l]^{r}
   }
 \]
 By (\hyperref[II.4.1.3.2]{4.1.3.2}), we have
@@ -557,7 +557,7 @@ $r=p_1\circ q_1=p_2\circ q_2$ is the structural morphism $Q\to Y$, we have
   q_2^*(p_2^*(\mathcal{F}))
 \]
 (\hyperref[0.4.3.3]{0, 4.3.3}); the canonical surjective homomorphisms
-(\hyperref[II.4.1.5.1]{4.1.5.1})
+(\hyperref[II.4.1.5.1]{4.1.5.1})~:
 $p_1^*(\mathcal{E})\to\mathcal{O}_{P_1}(1)$,
 $p_2^*(\mathcal{F})\to\mathcal{O}_{P_2}(1)$ therefore give, by tensor
 product, a canonical homomorphism
@@ -580,7 +580,7 @@ which is evidently surjective; we therefore deduce from it
 Let us make the morphism $\varsigma$ explicit when $Y=\operatorname{Spec}(A)$ is
 affine, $\mathcal{E}=\widetilde{E}$, $\mathcal{F}=\widetilde{F}$, $E$ and $F$
 being two $A$-modules, whence
-$\mathcal{E}\otimes_{\mathcal{O}_Y}\mathcal{F}=\widetilde{E\otimes_A F}$
+$\mathcal{E}\otimes_{\mathcal{O}_Y}\mathcal{F}=(E\otimes_A F)\supertilde$
 (\hyperref[I.1.3.12]{I, 1.3.12}); set
 $R=\mathbf{S}_A(E)$, $S=\mathbf{S}_A(F)$,
 $T=\mathbf{S}_A(E\otimes_A F)$; let $f\in E$, $g\in F$, and consider
@@ -600,7 +600,7 @@ and the element $c=(f/1)\otimes(g/1)$ is a generator of $L$ considered as a
 free $B$-module (\hyperref[II.2.5.7]{2.5.7}). The homomorphism
 (\hyperref[II.4.3.1.1]{4.3.1.1}) corresponds to the homomorphism
 \[
-  (x\otimes y)\otimes b\longmapsto b((x/1)\otimes(y/1))
+  (x\otimes y)\otimes b\to b((x/1)\otimes(y/1))
 \]
 from $(E\otimes_A F)\otimes_AB$ to $L$. With the notation of
 (\hyperref[II.3.7.2]{3.7.2}), we therefore have
@@ -652,7 +652,7 @@ $\alpha_1^g(y)=y/1$ in $(S(1))_{(g)}$. The definition of $\tau$ given in
 with the notation of (\hyperref[II.3.1.4]{3.1.4}). Indeed, taking into account
 (\hyperref[II.3.3.3]{3.3.3}), formula
 (\hyperref[II.4.3.2.2]{4.3.2.2}) reduces us (by returning to the affine case,
-with the help of (\hyperref[I.3.2.7]{I, 3.2.7} and
+with the help of (\hyperref[I.3.2.7]{\textbf{I}, 3.2.7} and
 (\hyperref[I.3.2.3]{3.2.3})) to proving the following lemma:
 
 \begin{lemma}[4.3.2.4]
@@ -669,7 +669,7 @@ canonical projections, it follows from
 (\hyperref[I.1.2.2.2]{I, 1.2.2.2}) that we have
 $p^{-1}(D(t))=D(t\otimes1)$ and
 $p'^{-1}(D(t'))=D(1\otimes t')$; the conclusion follows from
-(\hyperref[I.3.2.7]{I, 3.2.7}) and
+(\hyperref[I.3.2.7]{\textbf{I}, 3.2.7}) and
 (\hyperref[I.1.1.9.1]{I, 1.1.9.1}), since
 $(t\otimes1)(1\otimes t')=t\otimes t'$.
 \end{proof}
@@ -708,9 +708,9 @@ $\mathcal{E}\to\mathcal{E}'$ is a surjective $\mathcal{O}_Y$-homomorphism,
 the diagram
 \[
   \xymatrix{
-    \mathbf{P}(\mathcal{E}')\times_Y\mathbf{P}(\mathcal{F})
+    \mathbf{P}(\mathcal{E}')\times\mathbf{P}(\mathcal{F})
       \ar[r]^{j\times1} \ar[d]_{\varsigma}
-    & \mathbf{P}(\mathcal{E})\times_Y\mathbf{P}(\mathcal{F})
+    & \mathbf{P}(\mathcal{E})\times\mathbf{P}(\mathcal{F})
       \ar[d]^{\varsigma}
     \\\mathbf{P}(\mathcal{E}'\otimes\mathcal{F}) \ar[r]
     & \mathbf{P}(\mathcal{E}\otimes\mathcal{F})
@@ -752,7 +752,7 @@ $\mathbf{P}(\mathcal{E}'\otimes\mathcal{F}')$ is identified with
 $(\mathbf{P}(\mathcal{E}\otimes\mathcal{F}))_{(Y')}$
 (\hyperref[II.4.1.3.1]{4.1.3.1}). Finally,
 $\mathcal{O}_{P_1'}(1)\otimes_{Y'}\mathcal{O}_{P_2'}(1)=\mathcal{L}'$
-is identified with $\mathcal{L}\otimes_Y\mathcal{O}_{Y'}$, by virtue of
+is identified with $\mathcal{L}\otimes_Y\mathcal{O}_{Y'}$ by virtue of
 (\hyperref[II.4.1.3.2]{4.1.3.2}) and of
 (\hyperref[I.9.1.11]{I, 9.1.11}). The canonical homomorphism
 $(r_{(Y')})^*(\mathcal{E}'\otimes\mathcal{F}')\to\mathcal{L}'$ is then
@@ -837,7 +837,7 @@ invertible $\mathcal{O}_X$-module.
   $\mathcal{E}$ such that, if $\mathcal{S}'$ is the subalgebra of
   $\mathcal{S}$ generated by $\mathcal{E}$, the homomorphism
   $q^*(\mathcal{E})\to\mathcal{L}^{\otimes n}$ is surjective and
-  $r_{\mathcal{L}',\psi'}:X\to\operatorname{Proj}(\mathcal{S}')$ is everywhere
+  $r_{\mathcal{L},\psi'}:X\to\operatorname{Proj}(\mathcal{S}')$ is everywhere
   defined and is an immersion. On the other hand, we have a canonical
   surjective homomorphism $\mathbf{S}(\mathcal{E})\to\mathcal{S}'$, to which
   there corresponds a closed immersion
@@ -871,7 +871,7 @@ $i^*(\mathcal{O}_P(1))$.
 It amounts to the same (\hyperref[II.4.2.3]{4.2.3}) to say that there exist a
 quasi-coherent $\mathcal{O}_Y$-module $\mathcal{E}$ and a surjective
 homomorphism $\varphi:q^*(\mathcal{E})\to\mathcal{L}$ such that
-$r_{\mathcal{L},\varphi}:X\to\mathbf{P}(\mathcal{E})$ is an immersion.
+$r_{\mathcal{L},\varphi}:X\to\mathbf{P}(\mathcal{E})$ is an \emph{immersion}.
 
 Note that the existence of an $\mathcal{O}_X$-module very ample relative
 to $Y$ implies that $q$ is separated
@@ -947,7 +947,7 @@ every $\alpha$.
 \end{corollary}
 
 \begin{proof}
-Indeed, condition b) of (\hyperref[II.4.4.4]{4.4.4}) is local on
+Indeed, condition \emph{b)} of (\hyperref[II.4.4.4]{4.4.4}) is local on
 $Y$.
 \end{proof}
 
@@ -984,7 +984,7 @@ isomorphic to $i^*(\mathcal{O}_P(1))$.
 \end{corollary}
 
 \begin{proof}
-Indeed, condition b') of (\hyperref[II.4.4.6]{4.4.6}) is satisfied;
+Indeed, condition \emph{b')} of (\hyperref[II.4.4.6]{4.4.6}) is satisfied;
 the structural morphism $p:\mathbf{P}(\mathcal{E})=P'\to Y$ is then separated
 and of finite type (\hyperref[II.3.1.3]{3.1.3}), so $P'$ is a
 quasi-compact scheme (resp. a Noetherian prescheme) if $Y$ is a quasi-compact
@@ -1027,13 +1027,13 @@ $\mathcal{L}=r^*(\mathcal{O}_P(1))$. Set
 $Q=\mathbf{P}(\mathcal{E}\otimes\mathcal{E}')$ and consider the Segre
 morphism $\varsigma:P\times_YP'\to Q$ (\hyperref[II.4.3.1]{4.3.1}). Since
 $r$ is an immersion, so is
-$(r,r')_Y:X\to P\times_YP'$ (\hyperref[I.5.3.14]{I, 5.3.14}); but since
+$(r,r')_Y:X\to P\times_YP'$ (\hyperref[I.5.3.14]{\textbf{I}, 5.3.14}); but since
 $\varsigma$ is an immersion (\hyperref[II.4.3.3]{4.3.3}), so is
-$r'':X\xrightarrow{(r,r')_Y}P\times_YP'\xrightarrow{\varsigma}Q$. On the other
+$r'':X\xrightarrow{(r,r')}P\times_YP'\xrightarrow{\varsigma}Q$. On the other
 hand (\hyperref[II.4.3.2.1]{4.3.2.1}),
 $\varsigma^*(\mathcal{O}_Q(1))$ is isomorphic to
 $\mathcal{O}_P(1)\otimes_Y\mathcal{O}_{P'}(1)$, so
-(\hyperref[I.9.1.4]{I, 9.1.4}) $r''^*(\mathcal{O}_Q(1))$ is isomorphic to
+(\hyperref[I.9.1.4]{\textbf{I}, 9.1.4}) $r''^*(\mathcal{O}_Q(1))$ is isomorphic to
 $\mathcal{L}\otimes\mathcal{L}'$, which proves the proposition.
 \end{proof}
 
@@ -1059,7 +1059,7 @@ the necessity of condition (i); on the other hand, if
 $\mathcal{L}\otimes q^*(\mathcal{K})$ is very ample, then so is
 $(\mathcal{L}\otimes q^*(\mathcal{K}))\otimes q^*(\mathcal{K}^{-1})$
 by what precedes, and this last $\mathcal{O}_X$-module is isomorphic to
-$\mathcal{L}$ (\hyperref[0.5.4.3]{0, 5.4.3} and
+$\mathcal{L}$ (\hyperref[0.5.4.3]{\textbf{0}, 5.4.3} and
 \hyperref[0.5.4.5]{5.4.5}).
 \end{proof}
 
@@ -1069,7 +1069,7 @@ $\mathcal{L}$ (\hyperref[0.5.4.3]{0, 5.4.3} and
   \item[\rm{(i)}] For every prescheme $Y$, every invertible
   $\mathcal{O}_Y$-module $\mathcal{L}$ is very ample relative to the identity
   morphism $1_Y$.
-  \item[\rm{(i bis)}] Let $f:X\to Y$ be a morphism and $j:X'\to X$ an
+  \item[\rm{(i \emph{bis})}] Let $f:X\to Y$ be a morphism and $j:X'\to X$ an
   immersion. If $\mathcal{L}$ is an $\mathcal{O}_X$-module very ample
   relative to $f$, then $j^*(\mathcal{L})$ is very ample relative to
   $f\circ j$.
@@ -1102,16 +1102,16 @@ $\mathcal{L}$ (\hyperref[0.5.4.3]{0, 5.4.3} and
 Property (i bis) follows immediately from the definition
 (\hyperref[II.4.4.2]{4.4.2}), and it is immediate that (vi) is deduced
 formally from (i bis) and (v) by an argument modelled on that of
-(\hyperref[I.5.5.12]{I, 5.5.12}), which we leave to the reader. To
+(\hyperref[I.5.5.12]{\textbf{I}, 5.5.12}), which we leave to the reader. To
 prove (v), consider, as in
-(\hyperref[I.5.5.12]{I, 5.5.12}), the factorization
+(\hyperref[I.5.5.12]{\textbf{I}, 5.5.12}), the factorization
 $X\xrightarrow{\Gamma_f}X\times_ZY\xrightarrow{p_2}Y$, noting that
 $p_2=(g\circ f)\times1_Y$. It follows from the hypothesis and from (i) and (iv)
 that $\mathcal{L}\otimes_{\mathcal{O}_Z}\mathcal{O}_Y$ is very ample for
 $p_2$; on the other hand, we have
 $\mathcal{L}=\Gamma_f^*(\mathcal{L}\otimes_{\mathcal{O}_Z}\mathcal{O}_Y)$
-(\hyperref[I.9.1.4]{I, 9.1.4}), and $\Gamma_f$ is an immersion
-(\hyperref[I.5.3.11]{I, 5.3.11}); we can therefore apply (i bis).
+(\hyperref[I.9.1.4]{\textbf{I}, 9.1.4}), and $\Gamma_f$ is an immersion
+(\hyperref[I.5.3.11]{\textbf{I}, 5.3.11}); we can therefore apply (i bis).
 
 \oldpage[II]{82}
 
@@ -1127,7 +1127,7 @@ $\mathcal{E}'=g^*(\mathcal{E})$, $\mathcal{E}'$ is a quasi-coherent
 $\mathcal{O}_{Y'}$-module and we have
 $P'=\mathbf{P}(\mathcal{E}')=P_{(Y')}$
 (\hyperref[II.4.1.3.1]{4.1.3.1}), $i_{(Y')}$ is an immersion of
-$X_{(Y')}$ into $P'$ (\hyperref[I.4.3.2]{I, 4.3.2}), and $\mathcal{L}'$ is
+$X_{(Y')}$ into $P'$ (\hyperref[I.4.3.2]{\textbf{I}, 4.3.2}), and $\mathcal{L}'$ is
 isomorphic to $(i_{(Y')})^*(\mathcal{O}_{P'}(1))$
 (\hyperref[II.4.2.10]{4.2.10}).
 
@@ -1136,7 +1136,7 @@ $r_i:X_i\to P_i=\mathbf{P}(\mathcal{E}_i)$, where $\mathcal{E}_i$ is a
 quasi-coherent $\mathcal{O}_{Y_i}$-module, and
 $\mathcal{L}_i=r_i^*(\mathcal{O}_{P_i}(1))$ ($i=1,2$);
 $r_1\times_Sr_2$ is an $S$-immersion of $X_1\times_SX_2$ into
-$P_1\times_SP_2$ (\hyperref[I.4.3.1]{I, 4.3.1}), and the inverse image of
+$P_1\times_SP_2$ (\hyperref[I.4.3.1]{\textbf{I}, 4.3.1}), and the inverse image of
 $\mathcal{O}_{P_1}(1)\otimes_S\mathcal{O}_{P_2}(1)$ under this immersion is
 $\mathcal{L}_1\otimes_S\mathcal{L}_2$. On the other hand, set
 $T=Y_1\times_SY_2$, and let $p_1,p_2$ be the projections of $T$ to $Y_1,Y_2$
@@ -1153,7 +1153,7 @@ $P_i'=\mathbf{P}(p_i^*(\mathcal{E}_i))$ ($i=1,2$), we have by
 up to canonical isomorphism. Likewise, we have
 $\mathcal{O}_{P_i'}(1)=\mathcal{O}_{P_i}(1)\otimes_{Y_i}\mathcal{O}_T$
 (\hyperref[II.4.1.3.2]{4.1.3.2}), and an analogous calculation (based in
-particular on (\hyperref[I.9.1.9.1]{I, 9.1.9.1} and
+particular on (\hyperref[I.9.1.9.1]{\textbf{I}, 9.1.9.1} and
 \hyperref[I.9.1.2]{9.1.2})) shows that, in the preceding identification,
 $\mathcal{O}_{P_1'}(1)\otimes_T\mathcal{O}_{P_2'}(1)$ is identified with
 $\mathcal{O}_{P_1}(1)\otimes_S\mathcal{O}_{P_2}(1)$. We can therefore regard
@@ -1228,7 +1228,7 @@ $\mathcal{K}$, we conclude from (iv) that
 $\mathcal{O}_{P_2}(1)\otimes_Y\mathcal{K}$ is very ample for $Z$; the same is
 true of
 $\mathcal{M}=j_2^*(\mathcal{O}_{P_2}(1)\otimes_Y\mathcal{K})$ by virtue of
-(i bis), and $\mathcal{O}_P(1)$ is isomorphic to
+(i \emph{bis}), and $\mathcal{O}_P(1)$ is isomorphic to
 $\mathcal{M}\otimes_Y\mathcal{K}^{\otimes(-m-1)}$, which completes the
 proof.
 \end{proof}
@@ -1236,7 +1236,7 @@ proof.
 \begin{proposition}[4.4.11]
 \label{II.4.4.11}
 Let $f:X\to Y$ and $f':X'\to Y$ be two morphisms, $X''$ the sum prescheme
-$X\sqcup X'$, and $f''$ the morphism $X''\to Y$ that coincides with $f$ (resp.
+$X\amalg X'$, and $f''$ the morphism $X''\to Y$ that coincides with $f$ (resp.
 $f'$) on $X$ (resp. $X'$). Let $\mathcal{L}$ (resp. $\mathcal{L}'$) be an
 invertible $\mathcal{O}_X$-module (resp. an invertible
 $\mathcal{O}_{X'}$-module), and let $\mathcal{L}''$ be the invertible
@@ -1249,7 +1249,7 @@ relative to $f$ and $\mathcal{L}'$ very ample relative to $f'$.
 \begin{proof}
 We are immediately reduced to the case where $Y$ is affine. If $\mathcal{L}''$
 is very ample, then so are $\mathcal{L}$ and $\mathcal{L}'$, by virtue of
-(\hyperref[II.4.4.10]{4.4.10, (i bis)}). Conversely, if $\mathcal{L}$ and
+(\hyperref[II.4.4.10]{4.4.10, (i \emph{bis})}). Conversely, if $\mathcal{L}$ and
 $\mathcal{L}'$ are very ample, it follows immediately from the definition
 (\hyperref[II.4.4.2]{4.4.2}) and from
 (\hyperref[II.4.3.6]{4.3.6}) that $\mathcal{L}''$ is very ample.
@@ -1269,8 +1269,8 @@ $\mathcal{F}(n)=\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{L}^{\otimes n}$
 \[
   S=\bigoplus_{n\geq0}\Gamma(X,\mathcal{L}^{\otimes n})
 \]
-(a graded subring of the ring $\Gamma_\bullet(\mathcal{L})$ defined in
-(\hyperref[0.5.4.6]{0, 5.4.6})). If we regard $X$ as a
+(a graded subring of the ring $\Gamma_*(\mathcal{L})$ defined in
+(\hyperref[0.5.4.6]{\textbf{0}, 5.4.6})). If we regard $X$ as a
 $\mathbf{Z}$-prescheme and denote by $p$ the structural morphism
 $X\to\operatorname{Spec}(\mathbf{Z})$, there is a bijective correspondence
 between the homomorphisms
@@ -1279,7 +1279,7 @@ between the homomorphisms
   \bigoplus_{n\geq0}\mathcal{L}^{\otimes n}
 \]
 of graded $\mathcal{O}_X$-algebras and the endomorphisms of the graded ring
-$S$ (\hyperref[I.2.2.5]{I, 2.2.5}); the homomorphism
+$S$ (\hyperref[I.2.2.5]{\textbf{I}, 2.2.5}); the homomorphism
 \[
   \varepsilon:p^*(\widetilde{S})\longrightarrow
   \bigoplus_{n\geq0}\mathcal{L}^{\otimes n}
@@ -1336,21 +1336,21 @@ $x\in X$ has an affine neighbourhood $U$ such that
 $\mathcal{L}|U$ is isomorphic to $\mathcal{O}_X|U$; if
 $f\in\Gamma(X,\mathcal{L}^{\otimes n})$ is such that $x\in X_f\subset U$,
 then $X_f$ is also the set of $x'\in U$ such that $(f|U)(x')\neq0$, and it is
-consequently an affine open subset (\hyperref[I.1.3.6]{I, 1.3.6}). To prove
+consequently an affine open subset (\hyperref[I.1.3.6]{\textbf{I}, 1.3.6}). To prove
 that a') implies b), it suffices to prove the last assertion of the statement
 and to verify, moreover, that if $X=\bigcup_\alpha X_{f_\alpha}$, condition
 (iv) of (\hyperref[II.3.8.2]{3.8.2}) is satisfied. This last point
-follows immediately from (\hyperref[I.9.3.1]{I, 9.3.1, (i)}). As for the
+follows immediately from (\hyperref[I.9.3.1]{\textbf{I}, 9.3.1, (i)}). As for the
 last assertion of (\hyperref[II.4.5.2]{4.5.2}), since
 $X_{f_\alpha}$ is the inverse image of
 $(\operatorname{Proj}(S))_{f_\alpha}$ under
 $G(\varepsilon)\to\operatorname{Proj}(S)$, it suffices to apply
-(\hyperref[I.9.3.2]{I, 9.3.2}). Hence a), a'), b), b') are equivalent.
+(\hyperref[I.9.3.2]{\textbf{I}, 9.3.2}). Hence \emph{a)}, \emph{a')}, \emph{b)}, \emph{b')} are equivalent.
 
 To show that a') implies c), note that if $X_f$ is affine (with
 $f\in S_k$), $\mathcal{F}|X_f$ is generated by its sections over
-$X_f$ (\hyperref[I.1.3.9]{I, 1.3.9}); on the other hand
-(\hyperref[I.9.3.1]{I, 9.3.1, (ii)}), such a section $s$ is of the form
+$X_f$ (\hyperref[I.1.3.9]{\textbf{I}, 1.3.9}); on the other hand
+(\hyperref[I.9.3.1]{\textbf{I}, 9.3.1, (ii)}), such a section $s$ is of the form
 $(t|X_f)\otimes(f|X_f)^{-m}$ where
 $t\in\Gamma(X,\mathcal{F}(km))$; by definition, $t$ is also a section
 of $\mathcal{F}_{km}$, so $s$ is indeed a section of
@@ -1359,7 +1359,7 @@ that c) implies c'), and it remains to show that c') implies a). Now let $U$
 be an open neighbourhood of $x\in X$, and let $\mathcal{J}$ be a quasi-coherent
 sheaf of ideals of $\mathcal{O}_X$ defining a closed sub-prescheme of $X$
 having $X-U$ as underlying space
-(\hyperref[I.5.2.1]{I, 5.2.1}). Hypothesis c') implies that there exist an
+(\hyperref[I.5.2.1]{\textbf{I}, 5.2.1}). Hypothesis c') implies that there exist an
 integer $n>0$ and a section $f$ of $\mathcal{J}(n)$ over $X$ such
 that $f(x)\neq0$. But we evidently have $f\in S_n$, and $x\in X_f\subset U$,
 which proves a).
@@ -1369,7 +1369,7 @@ When $X$ is a prescheme whose underlying space is Noetherian, the
 equivalent conditions of (\hyperref[II.4.5.2]{4.5.2}) imply that
 $X$ is a scheme, since it is isomorphic to a sub-prescheme of the scheme
 $P=\operatorname{Proj}(S)$ by virtue of
-(\hyperref[II.4.5.2]{4.5.2, b)}).
+(\hyperref[II.4.5.2]{4.5.2, \emph{b)}}).
 
 \begin{definition}[4.5.3]
 \label{II.4.5.3}
@@ -1378,7 +1378,7 @@ $X$ is a quasi-compact scheme and if the equivalent conditions of
 (\hyperref[II.4.5.2]{4.5.2}) are satisfied.
 \end{definition}
 
-It follows evidently from criterion (\hyperref[II.4.5.2]{4.5.2, a)}) that if
+It follows evidently from criterion (\hyperref[II.4.5.2]{4.5.2, \emph{a)}}) that if
 $\mathcal{L}$ is an ample $\mathcal{O}_X$-module, then, for every quasi-compact open subset
 $U$ of $X$, $\mathcal{L}|U$ is an ample $(\mathcal{O}_X|U)$-module.
 
@@ -1396,18 +1396,18 @@ neighbourhood of $Z$ contained in $U$.
 \begin{proof}
 \oldpage[II]{85}
 
-By virtue of (\hyperref[II.4.5.2]{4.5.2, b)}), we may restrict ourselves to proving
+By virtue of (\hyperref[II.4.5.2]{4.5.2, \emph{b)}}), we may restrict ourselves to proving
 that for every finite subset $Z'$ of $\operatorname{Proj}(S)$ and every
 open neighbourhood $U$ of $Z'$, there exists a homogeneous element $f\in S_+$ such
 that $Z'\subset(\operatorname{Proj}(S))_f\subset U$
 (\hyperref[II.2.4.1]{2.4.1}). Now, by definition, the closed subset $Y$,
 the complement of $U$ in $\operatorname{Proj}(S)$, is of the form
-$V_+(\mathfrak{I})$, where $\mathfrak{I}$ is a graded ideal of $S$ not
+$V_+(\mathfrak{J})$, where $\mathfrak{J}$ is a graded ideal of $S$ not
 containing $S_+$ (\hyperref[II.2.3.2]{2.3.2}); on the other hand, the
 points of $Z'$ are by definition graded prime ideals
-$\mathfrak{p}_i$ of $S_+$ not containing $\mathfrak{I}$
+$\mathfrak{p}_i$ of $S_+$ not containing $\mathfrak{J}$
 (\hyperref[II.2.3.1]{2.3.1}). There therefore exists an element
-$f\in\mathfrak{I}$ belonging to none of the $\mathfrak{p}_i$ (Bourbaki,
+$f\in\mathfrak{J}$ belonging to none of the $\mathfrak{p}_i$ (Bourbaki,
 \emph{Alg. comm.}, chap.~II, \S~1, n\textsuperscript{o}~1, prop.~2), and since
 the $\mathfrak{p}_i$ are graded, the argument given \emph{loc. cit.}
 shows that we may even assume $f$ homogeneous; this element then answers the
@@ -1438,10 +1438,10 @@ Since $X$ is quasi-compact, if a quasi-coherent $\mathcal{O}_X$-module of
 finite type $\mathcal{F}$ is such that $\mathcal{F}(n)$ (which is of finite type)
 is generated by its sections over $X$, then $\mathcal{F}(n)$ is
 generated by finitely many of these sections
-(\hyperref[0.5.2.3]{0, 5.2.3}); hence d) implies d'), and it is clear that
+(\hyperref[0.5.2.3]{\textbf{0}, 5.2.3}); hence d) implies d'), and it is clear that
 d') implies d''). Since every quasi-coherent $\mathcal{O}_X$-module
 $\mathcal{G}$ is the inductive limit of its sub-$\mathcal{O}_X$-modules of
-finite type (\hyperref[I.9.4.9]{I, 9.4.9}), to verify condition c')
+finite type (\hyperref[I.9.4.9]{\textbf{I}, 9.4.9}), to verify condition \emph{c')}
 of (\hyperref[II.4.5.2]{4.5.2}) it suffices to do so for a quasi-coherent
 sheaf of ideals of $\mathcal{O}_X$ that is of finite type, and d'')
 therefore implies c'). It remains to see that if $\mathcal{L}$ is ample, property
@@ -1451,10 +1451,10 @@ $f_i$ by suitable powers (which does not change the $X_{f_i}$),
 we may assume all the $n_i$ equal to the same integer $m$. The sheaf
 $\mathcal{F}|X_{f_i}$, being of finite type by hypothesis, is generated by
 finitely many of its sections $h_{ij}$ over $X_{f_i}$
-(\hyperref[I.1.3.13]{I, 1.3.13}); there therefore exists an integer $k_0$ such that
+(\hyperref[I.1.3.13]{\textbf{I}, 1.3.13}); there therefore exists an integer $k_0$ such that
 the section $h_{ij}\otimes f_i^{\otimes k_0}$ extends to a section of
 $\mathcal{F}(k_0m)$ over $X$ for every pair $(i,j)$
-(\hyperref[I.9.3.1]{I, 9.3.1}). \emph{A fortiori} the
+(\hyperref[I.9.3.1]{\textbf{I}, 9.3.1}). \emph{A fortiori} the
 $h_{ij}\otimes f_i^{\otimes k}$ extend to sections of
 $\mathcal{F}(km)$ over $X$ for every $k\geq k_0$, and for these values
 of $k$, $\mathcal{F}(km)$ is therefore generated by its sections over
@@ -1490,14 +1490,14 @@ Property (i) is an evident consequence of criterion a) of
 (\hyperref[II.4.5.2]{4.5.2}), since $X_{f^{\otimes n}}=X_f$. On the other
 hand, if $\mathcal{L}$ is ample, then for every $x\in X$ and every neighbourhood $U$ of
 $x$ there exist $m>0$ and $f\in\Gamma(X,\mathcal{L}^{\otimes m})$ such that
-$x\in X_f\subset U$ (\hyperref[II.4.5.2]{4.5.2, a)}); if
+$x\in X_f\subset U$ (\hyperref[II.4.5.2]{4.5.2, \emph{a)}}); if
 $f'\in\Gamma(X,\mathcal{L}'^{\otimes n})$ is such that $f'(x)\neq0$, we will have
 $s(x)\neq0$ for
 $s=f^{\otimes n}\otimes f'^{\otimes m}\in
 \Gamma(X,(\mathcal{L}\otimes\mathcal{L}')^{\otimes mn})$, hence
 $x\in X_s\subset X_f\subset U$, which proves that
 $\mathcal{L}\otimes\mathcal{L}'$ is ample
-(\hyperref[II.4.5.2]{4.5.2, a)}).
+(\hyperref[II.4.5.2]{4.5.2, \emph{a)}}).
 \end{proof}
 
 \begin{corollary}[4.5.7]
@@ -1523,7 +1523,7 @@ its sections over $X$ for $m\geq m_0$; by
 \begin{remark}[4.5.9]
 \label{II.4.5.9}
 Let $P=\mathrm{H}^1(X,\mathcal{O}_X^*)$ be the group of classes of
-invertible $\mathcal{O}_X$-modules (\hyperref[0.5.4.7]{0, 5.4.7}), and
+invertible $\mathcal{O}_X$-modules (\hyperref[0.5.4.7]{\textbf{0}, 5.4.7}), and
 let $P^+$ be the subset of $P$ formed by the classes of ample sheaves. Suppose
 that $P^+$ is non-empty. Then it follows from
 (\hyperref[II.4.5.7]{4.5.7}) and
@@ -1574,11 +1574,11 @@ $X\to P=\mathbf{P}(\widetilde{E})$ and such that we have
 $\mathcal{L}=i^*(\mathcal{O}_P(1))$; since the $D_+(f)$ for $f$ homogeneous
 in $(\mathbf{S}(E))_+$ form a basis of the topology of $P$, and since
 $i^{-1}(D_+(f))=X_{\psi^\flat(f)}$ by
-(\hyperref[II.3.7.3.1]{3.7.3.1}), we see that condition a) of
+(\hyperref[II.3.7.3.1]{3.7.3.1}), we see that condition \emph{a)} of
 (\hyperref[II.4.5.2]{4.5.2}) is satisfied, so $\mathcal{L}$ is ample.
 
 Let us now prove that if $q$ is of finite type and $\mathcal{L}$ is
-ample, then it satisfies condition e). In the first place, it follows from criterion b)
+ample, then it satisfies condition \emph{e)}. In the first place, it follows from criterion b)
 of (\hyperref[II.4.5.2]{4.5.2}) and from
 (\hyperref[II.4.4.1]{4.4.1, (i)}) that there exists
 
@@ -1611,7 +1611,7 @@ large. Moreover, since $Z$ is quasi-compact, the argument of
 (\hyperref[II.3.4.6]{3.4.6}) reduces us to proving the proposition in the case
 where $Z$ is affine. Now $\mathcal{K}$ is then ample by virtue of
 (\hyperref[II.4.5.10]{4.5.10, (i)}), and the conclusion follows from
-(\hyperref[II.4.5.5]{4.5.5, d')}).
+(\hyperref[II.4.5.5]{4.5.5, \emph{d')}}).
 \end{env}
 \end{proof}
 
@@ -1645,7 +1645,7 @@ the same conclusion for $\mathcal{L}^{\otimes(n+1)}$.
 \begin{proposition}[4.5.13]
 \label{II.4.5.13}
 Let $X$ be a quasi-compact prescheme, $Z$ a closed sub-prescheme of $X$
-defined by a nilpotent quasi-coherent sheaf $\mathcal{J}$ of ideals of
+defined by a \textup{nilpotent} quasi-coherent sheaf $\mathcal{J}$ of ideals of
 $\mathcal{O}_X$, and $j$ the canonical injection $Z\to X$. For an
 invertible $\mathcal{O}_X$-module $\mathcal{L}$ to be ample, it is necessary and
 sufficient that $\mathcal{L}'=j^*(\mathcal{L})$ be an ample
@@ -1669,7 +1669,7 @@ $X_k=(X,\mathcal{O}_X/\mathcal{J}^{k+1})$, each of which is a closed
 sub-prescheme of the next, defined by a sheaf of ideals of square zero. Moreover,
 $X$ is a scheme, since $X_{\mathrm{red}}$ is one by hypothesis
 ((\hyperref[II.4.5.3]{4.5.3}) and
-(\hyperref[I.5.5.1]{I, 5.5.1})). Criterion a) of
+(\hyperref[I.5.5.1]{\textbf{I}, 5.5.1})). Criterion a) of
 (\hyperref[II.4.5.2]{4.5.2}) shows that it will suffice to prove
 
 \begin{lemma}[4.5.13.1]
@@ -1709,7 +1709,7 @@ $\mathcal{L}'^{\otimes k}\otimes_{\mathcal{O}_Z}\mathcal{J}(n)
 $s\in\Gamma(X,\mathcal{L}'^{\otimes k})$, tensor multiplication by
 $s$ is therefore a homomorphism $\mathcal{J}(n)\to\mathcal{J}(n+k)$ of
 $\mathcal{O}_Z$-modules, which consequently gives a homomorphism
-$\mathrm{H}^i(X,\mathcal{J}(n))\to
+$\mathrm{H}^i(X,\mathcal{J}(n))\xrightarrow{s}
 \mathrm{H}^i(X,\mathcal{J}(n+k))$ of cohomology groups.
 
 This being so, we will see that we have
@@ -1721,7 +1721,7 @@ This being so, we will see that we have
 for some sufficiently large $m>0$. Indeed, $Z_g$ is an affine open subset of $Z$, and
 we therefore have $\mathrm{H}^1(Z_g,\mathcal{J}(n))=0$ when $\mathcal{J}(n)$ is
 regarded as an $\mathcal{O}_Z$-module
-(\hyperref[I.5.1.9.2]{I, 5.1.9.2}). In particular, if we set
+(\hyperref[I.5.1.9.2]{\textbf{I}, 5.1.9.2}). In particular, if we set
 $g'=g|Z_g$ and consider its image under the map
 $\partial:\Gamma(Z_g,\mathcal{L}'^{\otimes n})\to
 \mathrm{H}^1(Z_g,\mathcal{J}(n))$, we have $\partial g'=0$. To make
@@ -1751,7 +1751,7 @@ $U_\alpha\cap U_\beta\cap Z_g$ (G, II, 5.11). This being so, there is an integer
 $m>0$ such that $g^{\otimes m}\otimes h_\alpha$ is the restriction to
 $U_\alpha\cap Z_g$ of a section
 $t_\alpha\in\Gamma(U_\alpha,\mathcal{J}(n+nm))$ for every $\alpha$
-(\hyperref[I.9.3.1]{I, 9.3.1}); we therefore have
+(\hyperref[I.9.3.1]{\textbf{I}, 9.3.1}); we therefore have
 \[
   g^{\otimes m}\otimes(g_{\alpha|\beta}-g_{\beta|\alpha})
   =t_{\alpha|\beta}-t_{\beta|\alpha}
@@ -1807,7 +1807,7 @@ $\mathcal{L}$ to be ample, it is necessary and sufficient that $j^*(\mathcal{L})
 an ample $\mathcal{O}_{X_{\mathrm{red}}}$-module.
 \end{corollary}
 
-This follows from (\hyperref[I.6.1.6]{I, 6.1.6}).
+This follows from (\hyperref[I.6.1.6]{\textbf{I}, 6.1.6}).
 
 
 \subsection{Relatively ample sheaves}
@@ -1827,7 +1827,7 @@ $\mathcal{O}_{X_\alpha}$-module for every $\alpha$.
 
 The existence of an $f$-ample $\mathcal{O}_X$-module implies that $f$ is
 necessarily separated ((\hyperref[II.4.5.3]{4.5.3}) and
-(\hyperref[I.5.5.5]{I, 5.5.5})).
+(\hyperref[I.5.5.5]{\textbf{I}, 5.5.5})).
 
 \begin{proposition}[4.6.2]
 \label{II.4.6.2}
@@ -1885,18 +1885,18 @@ defined in (\hyperref[II.3.7.9.2]{3.7.9.2}) is an isomorphism.
 \end{proposition}
 
 We have remarked that a) implies that $f$ is separated, so $\mathcal{S}$ is
-quasi-coherent (\hyperref[I.9.2.2]{I, 9.2.2, a)}). Since the fact that
+quasi-coherent (\hyperref[I.9.2.2]{I, 9.2.2, \emph{a)}}). Since the fact that
 $r_{\mathcal{L},\sigma}$ is an everywhere defined immersion is of a
 local character on $Y$, to prove that a) implies b) we may assume
 $Y$ affine and $\mathcal{L}$ ample;
 
 \oldpage[II]{90}
 
-the assertion then follows from (\hyperref[II.4.5.2]{4.5.2, b)}). It is
+the assertion then follows from (\hyperref[II.4.5.2]{4.5.2, \emph{b)}}). It is
 clear that b) implies b'); finally, to prove that b') implies a), it
 suffices to consider a covering of $Y$ by affine open subsets
 $U_\alpha$ and to apply criterion
-(\hyperref[II.4.5.2]{4.5.2, b')}) to each sheaf
+(\hyperref[II.4.5.2]{4.5.2, \emph{b')}}) to each sheaf
 $\mathcal{L}|f^{-1}(U_\alpha)$.
 
 For the last two assertions, we use the fact that
@@ -1907,7 +1907,7 @@ $\sigma^\flat$ is here the identity, and the explicit description of the homomor
 (\hyperref[II.4.6.3.2]{4.6.3.2}), we can reduce to the case where $Y$ is
 affine, hence $\mathcal{L}$ ample; it is clear that the homomorphism
 (\hyperref[II.4.6.3.2]{4.6.3.2}) is injective, and criterion
-(\hyperref[II.4.5.2]{4.5.2, c)}) shows that it is surjective, whence the
+(\hyperref[II.4.5.2]{4.5.2, \emph{c)}}) shows that it is surjective, whence the
 conclusion.
 
 \begin{corollary}[4.6.4]
@@ -1918,7 +1918,7 @@ $\mathcal{L}|f^{-1}(U_\alpha)$ be ample relative to $U_\alpha$ for
 every $\alpha$.
 \end{corollary}
 
-Indeed, condition b) is local on $Y$.
+Indeed, condition \emph{b)} is local on $Y$.
 
 \begin{corollary}[4.6.5]
 \label{II.4.6.5}
@@ -1939,8 +1939,8 @@ sufficient that $\mathcal{L}$ be ample.
 
 This is an immediate consequence of the definition
 (\hyperref[II.4.6.1]{4.6.1}) and of criteria
-(\hyperref[II.4.6.3]{4.6.3, b)}) and
-(\hyperref[II.4.5.2]{4.5.2, b)}), since here
+(\hyperref[II.4.6.3]{4.6.3, \emph{b)}}) and
+(\hyperref[II.4.5.2]{4.5.2, \emph{b)}}), since here
 $\operatorname{Proj}(\mathcal{S})
 =\operatorname{Proj}(\Gamma(Y,\mathcal{S}))$ by definition.
 
@@ -1954,7 +1954,7 @@ $\mathcal{L}=g^*(\mathcal{O}_P(1))$ is $Y$-ample.
 \end{corollary}
 
 Indeed, we may assume $Y$ affine; the corollary then follows from
-criterion (\hyperref[II.4.5.2]{4.5.2, a)}), from formula
+criterion (\hyperref[II.4.5.2]{4.5.2, \emph{a)}}), from formula
 (\hyperref[II.3.7.3.1]{3.7.3.1}) and from
 (\hyperref[II.4.2.3]{4.2.3}).
 
@@ -1981,27 +1981,27 @@ satisfied:
 
 Since $X$ is quasi-compact, so is $f(X)$, and there therefore exists
 a finite covering $(U_i)$ of $f(X)$ by affine open subsets of $Y$. To
-prove condition c) when $\mathcal{L}$ is $f$-ample, we can
+prove condition \emph{c)} when $\mathcal{L}$ is $f$-ample, we can
 replace $Y$ by the $U_i$ and $X$ by the $f^{-1}(U_i)$, since if we obtain
 for each $i$ an integer $n_i$ such that c) holds (for $U_i$,
 $f^{-1}(U_i)$ and $\mathcal{L}|f^{-1}(U_i)$) as soon as $n\geq n_i$, it
 will suffice to take for $n_0$ the largest of the $n_i$ in order to obtain c) for
-$Y$, $X$ and $\mathcal{L}$. Now when $Y$ is affine, condition c)
-follows from (\hyperref[II.4.5.5]{4.5.5, d)}), taking into account
+$Y$, $X$ and $\mathcal{L}$. Now when $Y$ is affine, condition \emph{c)}
+follows from (\hyperref[II.4.5.5]{4.5.5, \emph{d)}}), taking into account
 (\hyperref[II.4.6.6]{4.6.6}). It is trivial that c) implies c'). Finally,
 to prove that c') implies that $\mathcal{L}$ is $f$-ample, we may
 again restrict to the case where $Y$ is affine: indeed, every quasi-coherent
 sheaf of ideals of finite type $\mathcal{J}_i$ of
 $\mathcal{O}_X|f^{-1}(U_i)$ is the restriction of a quasi-coherent sheaf
 of ideals of finite type of $\mathcal{O}_X$
-(\hyperref[I.9.4.7]{I, 9.4.7}), and hypothesis c') implies that
+(\hyperref[I.9.4.7]{\textbf{I}, 9.4.7}), and hypothesis c') implies that
 
 \oldpage[II]{91}
 
 $\mathcal{J}_i\otimes(\mathcal{L}^{\otimes n}|f^{-1}(U_i))$ is generated
-by its sections (taking into account (\hyperref[I.9.2.2]{I, 9.2.2}) and
+by its sections (taking into account (\hyperref[I.9.2.2]{\textbf{I}, 9.2.2}) and
 (\hyperref[II.3.4.7]{3.4.7})); it therefore suffices to apply criterion
-(\hyperref[II.4.5.5]{4.5.5, d'')}).
+(\hyperref[II.4.5.5]{4.5.5, \emph{d'')}}).
 
 \begin{proposition}[4.6.9]
 \label{II.4.6.9}
@@ -2050,7 +2050,7 @@ $\mathcal{L}|f^{-1}(U_i)$ are ample. We conclude from this
 $\mathcal{L}^{\otimes n}|f^{-1}(U_i)$ is very ample relative to
 $f^{-1}(U_i)\to U_i$ for every $n\geq n_0$ and every $i$, so
 $\mathcal{L}^{\otimes n}$ is very ample relative to $f$
-(\hyperref[II.4.4.5]{4.4.5}). Conversely, d') already implies that
+(\hyperref[II.4.4.5]{4.4.5}). Conversely, \emph{d')} already implies that
 $\mathcal{L}^{\otimes n}$ is $f$-ample
 (\hyperref[II.4.6.2]{4.6.2}), so the same is true of $\mathcal{L}$
 (\hyperref[II.4.6.9]{4.6.9, (i)}).
@@ -2074,7 +2074,7 @@ affine open covering of $Y$ and
   \item[\rm{(i)}] For every prescheme $Y$, every invertible
   $\mathcal{O}_Y$-module $\mathcal{L}$ is ample relative
   to the identity morphism $1_Y$.
-  \item[\rm{(i bis)}] Let $f:X\to Y$ be a quasi-compact morphism and
+  \item[\rm{(i \textit{bis})}] Let $f:X\to Y$ be a quasi-compact morphism and
   $j:X'\to X$ a quasi-compact morphism that is a homeomorphism of
   the underlying space of $X'$ onto a subspace of $X$. If $\mathcal{L}$
   is an $\mathcal{O}_X$-module ample relative to $f$, then
@@ -2111,7 +2111,7 @@ affine open covering of $Y$ and
 \end{enumerate}
 \end{proposition}
 
-Note first that (v) and (vi) are derived from (i), (i bis) and (iv) by the
+Note first that (v) and (vi) are derived from (i), (i \emph{bis}) and (iv) by the
 same argument as in (\hyperref[II.4.4.10]{4.4.10}), using
 (\hyperref[II.4.6.4]{4.6.4}) instead of
 (\hyperref[II.4.4.5]{4.4.5}); we leave the details of the argument to the
@@ -2142,7 +2142,7 @@ will use the following lemma:
 It follows from the definitions that we can reduce to the case where all the
 preschemes considered are affine. Moreover, in (i), we may assume
 $\mathcal{L}=\mathcal{O}_S$; assertion (i) then follows immediately from
-(\hyperref[I.1.2.2.2]{I, 1.2.2.2}). Likewise, in (ii), we may
+(\hyperref[I.1.2.2.2]{\textbf{I}, 1.2.2.2}). Likewise, in (ii), we may
 restrict to the case where $\mathcal{L}=\mathcal{O}_Z$,
 $\mathcal{L}'=\mathcal{O}_{Z'}$, and then the assertion reduces to
 Lemma (\hyperref[II.4.3.2.4]{4.3.2.4}).
@@ -2151,11 +2151,11 @@ Let us now prove (i bis). We may assume $Y$ affine
 (\hyperref[II.4.6.4]{4.6.4}), hence $\mathcal{L}$ ample
 (\hyperref[II.4.6.6]{4.6.6}); as $s$ runs through the union
 of the $\Gamma(X,\mathcal{L}^{\otimes n})$ ($n>0$), the $X_s$ form a
-basis of the topology of $X$ (\hyperref[II.4.5.2]{4.5.2, a)}), so by
+basis of the topology of $X$ (\hyperref[II.4.5.2]{4.5.2, \emph{a)}}), so by
 hypothesis the $j^{-1}(X_s)$ form a basis of the topology of $X'$; we
 therefore conclude by Lemma
 (\hyperref[II.4.6.13.1]{4.6.13.1, (i)}) and by
-(\hyperref[II.4.5.2]{4.5.2, a)}) that $j^*(\mathcal{L})$ is ample.
+(\hyperref[II.4.5.2]{4.5.2, \emph{a)}}) that $j^*(\mathcal{L})$ is ample.
 
 Let us next prove (iii). We may again assume $Y$ and $Y'$ affine
 (\hyperref[II.4.6.4]{4.6.4}), from which it follows that the projection
@@ -2163,26 +2163,26 @@ $h:X'\to X$ is affine (\hyperref[II.1.5.5]{1.5.5}). Since
 $\mathcal{L}$ is ample (\hyperref[II.4.6.6]{4.6.6}), as $s$
 runs through the set of sections of the $\mathcal{L}^{\otimes n}$ ($n>0$)
 over $X$ such that $X_s$ is affine, the $X_s$ cover $X$
-(\hyperref[II.4.5.2]{4.5.2, a')}); hence the $h^{-1}(X_s)$ are affine
+(\hyperref[II.4.5.2]{4.5.2, \emph{a')}}); hence the $h^{-1}(X_s)$ are affine
 (\hyperref[II.1.2.5]{1.2.5}) and cover $X'$; it therefore follows again
 from Lemma (\hyperref[II.4.6.13.1]{4.6.13.1, (i)}) and from
-(\hyperref[II.4.5.2]{4.5.2, a')}) that $\mathcal{L}'$ is ample, the
+(\hyperref[II.4.5.2]{4.5.2, \emph{a')}}) that $\mathcal{L}'$ is ample, the
 morphism $f_{(Y')}$ being quasi-compact
-(\hyperref[I.6.6.4]{I, 6.6.4, (iii)}).
+(\hyperref[I.6.6.4]{\textbf{I}, 6.6.4, (iii)}).
 
 To prove (iv), note first that $f_1\times_S f_2$ is quasi-compact
-(\hyperref[I.6.6.4]{I, 6.6.4, (iv)}). We may moreover assume $S$,
+(\hyperref[I.6.6.4]{\textbf{I}, 6.6.4, (iv)}). We may moreover assume $S$,
 $Y_1$ and $Y_2$ affine ((\hyperref[II.4.6.4]{4.6.4}) and
-(\hyperref[I.3.2.7]{I, 3.2.7})), hence $\mathcal{L}_i$ ample ($i=1,2$)
+(\hyperref[I.3.2.7]{\textbf{I}, 3.2.7})), hence $\mathcal{L}_i$ ample ($i=1,2$)
 (\hyperref[II.4.6.6]{4.6.6}). The open subsets
 $(X_1)_{s_1}\times_S(X_2)_{s_2}$ form a covering of
 $X_1\times_S X_2$ as $s_i$ runs through the sections of the
 $\mathcal{L}_i^{\otimes n_i}$ such that $(X_i)_{s_i}$ is affine
-(\hyperref[II.4.5.2]{4.5.2, a')}). Moreover, by replacing $s_1$ and
+(\hyperref[II.4.5.2]{4.5.2, \emph{a')}}). Moreover, by replacing $s_1$ and
 $s_2$ by suitable powers, which does not change the
 $(X_i)_{s_i}$, we can always assume $n_1=n_2$. We then deduce from
 (\hyperref[II.4.6.13.1]{4.6.13.1, (ii)}) and from
-(\hyperref[II.4.5.2]{4.5.2, a')}) that
+(\hyperref[II.4.5.2]{4.5.2, \emph{a')}}) that
 $\mathcal{L}_1\otimes_S\mathcal{L}_2$ is ample, whence the assertion, since
 $Y_1\times_S Y_2$ is affine (\hyperref[II.4.6.6]{4.6.6}).
 
@@ -2196,7 +2196,7 @@ such that the $Y_{s_i}$
 \oldpage[II]{93}
 
 are affine and cover $Y$
-(\hyperref[II.4.5.2]{4.5.2, a')});
+(\hyperref[II.4.5.2]{4.5.2, \emph{a')}});
 replacing the $s_i$ by suitable powers, we may moreover
 assume all the $k_i$ equal to the same integer $k$. Let $s'_i$ be the
 sections of $f^*(\mathcal{K}^{\otimes k})$ over $X$ corresponding
@@ -2207,19 +2207,19 @@ cover $X$. Since $\mathcal{L}|X_{s'_i}$ is ample
 (\hyperref[II.4.6.6]{4.6.6})), there exist for each $i$ finitely many
 sections $t_{ij}\in\Gamma(X,\mathcal{L}^{\otimes n_{ij}})$ such that the
 $X_{t_{ij}}$ are affine, contained in $X_{s'_i}$, and cover
-$X_{s'_i}$ (\hyperref[II.4.5.2]{4.5.2, a')}); we may moreover
+$X_{s'_i}$ (\hyperref[II.4.5.2]{4.5.2, \emph{a')}}); we may moreover
 assume all the $n_{ij}$ equal to the same number $n$. This being so, $X$ is
 separated and quasi-compact, so there exist an integer $m>0$ and, for every
 $(i,j)$, a section
 \[
-  u_{ij}\in\Gamma(X,\mathcal{L}^{\otimes n}\otimes
+  u_{ij}\in\Gamma(X,\mathcal{L}^{\otimes n}\otimes_X
   f^*(\mathcal{K}^{\otimes mk}))
 \]
 such that $t_{ij}\otimes s_i'^{\otimes m}$ is the restriction to $X_{s'_i}$
-of $u_{ij}$ (\hyperref[I.9.3.1]{I, 9.3.1}); moreover, we have
+of $u_{ij}$ (\hyperref[I.9.3.1]{\textbf{I}, 9.3.1}); moreover, we have
 $X_{u_{ij}}=X_{t_{ij}}$, so the $X_{u_{ij}}$ are affine and cover
 $X$. We may moreover assume that $m$ is of the form $nr$; if we set
-$n_0=rk$, we therefore see (\hyperref[II.4.5.2]{4.5.2, a')}) that
+$n_0=rk$, we therefore see (\hyperref[II.4.5.2]{4.5.2, \emph{a')}}) that
 $\mathcal{L}\otimes_{\mathcal{O}_X}f^*(\mathcal{K}^{\otimes n_0})$ is
 ample. Moreover,
 there exists $h_0>0$ such that $\mathcal{K}^{\otimes h}$ is generated by its
@@ -2227,7 +2227,7 @@ sections over $Y$ as soon as $h\geq h_0$
 (\hyperref[II.4.5.5]{4.5.5}); \emph{a fortiori},
 $f^*(\mathcal{K}^{\otimes h})$ is generated by its sections over
 $X$ for $h\geq h_0$, by the definition of inverse images
-((\hyperref[0.3.7.1]{0, 3.7.1}) and
+((\hyperref[0.3.7.1]{\textbf{0}, 3.7.1}) and
 (\hyperref[II.4.4.1]{4.4.1})). We conclude that
 $\mathcal{L}\otimes f^*(\mathcal{K}^{\otimes n_0+h})$ is ample as soon as
 $h\geq h_0$ (\hyperref[II.4.5.6]{4.5.6}), which completes the
@@ -2280,7 +2280,7 @@ $Y_{\mathrm{red}}$ is also affine, so $\mathcal{L}'$ is ample
 virtue of (\hyperref[II.4.5.13]{4.5.13}), since then $X$ is
 Noetherian and $X_{\mathrm{red}}$ is a closed sub-prescheme of $X$ defined by
 a nilpotent quasi-coherent sheaf of ideals
-(\hyperref[I.6.1.6]{I, 6.1.6}).
+(\hyperref[I.6.1.6]{\textbf{I}, 6.1.6}).
 
 \begin{proposition}[4.6.17]
 \label{II.4.6.17}
@@ -2293,10 +2293,10 @@ relative to $f$ and $\mathcal{L}'$ ample relative to $f'$.
 \oldpage[II]{94}
 
 The necessity of the condition follows from
-(\hyperref[II.4.6.13]{4.6.13, (i bis)}). To see that the condition is
+(\hyperref[II.4.6.13]{4.6.13, (i \emph{bis})}). To see that the condition is
 sufficient, we may restrict to the case where $Y$ is affine, and then the fact
 that $\mathcal{L}''$ is ample follows from criterion
-(\hyperref[II.4.5.2]{4.5.2, a)}) applied to $\mathcal{L}$,
+(\hyperref[II.4.5.2]{4.5.2, \emph{a)}}) applied to $\mathcal{L}$,
 $\mathcal{L}'$ and $\mathcal{L}''$, observing that a section of
 $\mathcal{L}$ over $X$ extends (by $0$) to a section of
 $\mathcal{L}''$ over $X''$.

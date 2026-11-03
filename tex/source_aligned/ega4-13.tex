@@ -4,7 +4,7 @@
 \oldpage[IV-3]{187}
 
 This section is devoted to the study of the variation of the \emph{dimension} of the fibres of a morphism locally of finite type $f:X\to Y$ (which has already intervened with respect to the ``dimension formula'' in~\sref{IV.5.5} and~\sref{IV.5.6}).
-We first prove \sref{IV.13.1.3} that the function $x\mapsto\dim_x f^{-1}(f(x))$ is always \emph{upper semi-continuous} in $X$ (Chevalley's semi-continuity theorem).
+We first prove \sref{IV.13.1.3} that the function $x\leadsto\dim_x f^{-1}(f(x))$ is always \emph{upper semi-continuous} in $X$ (Chevalley's semi-continuity theorem).
 We then study more particularly the morphisms, called ``equidimensional'', for which this function is \emph{locally constant}.
 \oldpage[IV-3]{188}
 Unfortunately, the notion of equidimensional morphism is not stable under base change; this is why in many questions it is more convenient to work with the notion of universally open morphism, the study of which is the subject of \textsection\textsection~14 and~15.
@@ -29,7 +29,7 @@ As $f$ is dominant, $A$ is then a \emph{subring} of $B$.
 Consider $A$ as an inductive limit of its sub-$\bb{Z}$-algebras of finite type; it then follows from \sref{IV.8.9.1} that there exists such a subalgebra $A_0$ and an $A_0$-algebra of finite type $B_0$ such that $B=B_0\otimes_{A_0}A$.
 Set $Y_0=\Spec(A_0)$, $X_0=\Spec(B_0)$, and let $f_0:X_0\to Y_0$ be the morphism corresponding to the homomorphism $A_0\to B_0$, so that $f=f_0\times 1_Y$.
 It is not \emph{a priori} evident that the prescheme $X_0$ is integral, but we shall see that we can reduce to this case.
-Let $\eta_0$ be the generic point of $Y_0$, so that, if $g$ denotes the morphism $Y\to Y_0$, one has $g(\eta)=\eta_0$; by transitivity of fibres \sref[I]{I.3.6.4}, one has $f^{-1}(\eta)=f_0^{-1}(\eta_0)\otimes_{k(\eta_0)}k(\eta)$, and, since $f^{-1}(\eta)$ is irreducible by hypothesis, so is $f_0^{-1}(\eta_0)$ \sref{IV.4.4.1}.
+Let $\eta_0$ be the generic point of $Y_0$, so that, if $g$ denotes the morphism $Y\to Y_0$, one has $g(\eta)=\eta_0$; by transitivity of fibres \sref[I]{I.3.6.4}, one has $f^{-1}(\eta)=f_0^{-1}(\eta_0)\otimes_{\mathbf{k}(\eta_0)}\boldsymbol{k}(\eta)$, and, since $f^{-1}(\eta)$ is irreducible by hypothesis, so is $f_0^{-1}(\eta_0)$ \sref{IV.4.4.1}.
 Our assertion will then follow from the following lemma:
 
 \begin{lemma}[13.1.2]
@@ -53,7 +53,7 @@ For every $y\in f(X)$, we then have $y_0=g(y)\in f_0(X_0)$ and, by transitivity 
 \label{IV.13.1.3}
 \textnormal{(Chevalley).} ---
 Let $f:X\to Y$ be a morphism locally of finite type.
-For every integer $n$, the set $\mathrm{F}_n(X)$ of $x\in X$ such that $\dim_x(f^{-1}(f(x)))\geq n$ is closed; in other words, the function $x\mapsto\dim_x(f^{-1}(f(x)))$ is upper semi-continuous in $X$.
+For every integer $n$, the set $\mathrm{F}_n(X)$ of $x\in X$ such that $\dim_x(f^{-1}(f(x)))\geq n$ is closed; in other words, the function $x\leadsto\dim_x(f^{-1}(f(x)))$ is upper semi-continuous in $X$.
 \end{theorem}
 
 \begin{proof}
@@ -64,7 +64,7 @@ We know then \sref{IV.8.9.1} that there exist a Noetherian subring $A_0$ of $A$ 
 X=X_0\times_{Y_0}Y,\qquad f=f_0\times 1_Y,
 \]
 where $f_0:X_0\to Y_0$ is the morphism corresponding to the homomorphism $A_0\to B_0$.
-Let $g:Y\to Y_0$ be the morphism corresponding to the canonical injection $A_0\to A$, let $y$ be a point of $Y$, and set $y_0=g(y)$; we know that $f^{-1}(y)=f_0^{-1}(y_0)\otimes_{k(y_0)}k(y)$, and it follows from \sref{IV.4.2.7} that if $p$ is the canonical projection $f^{-1}(y)\to f_0^{-1}(y_0)$, the irreducible components of $f^{-1}(y)$ are the irreducible components of the spaces $p^{-1}(Z_0)$, where $Z_0$ runs over the set of irreducible components of $f_0^{-1}(y_0)$, and each irreducible component of $p^{-1}(Z_0)$ dominates $Z_0$ and has dimension $\dim(Z_0)$.
+Let $g:Y\to Y_0$ be the morphism corresponding to the canonical injection $A_0\to A$, let $y$ be a point of $Y$, and set $y_0=g(y)$; we know that $f^{-1}(y)=f_0^{-1}(y_0)\otimes_{\mathbf{k}(y_0)}\boldsymbol{k}(y)$, and it follows from \sref{IV.4.2.7} that if $p$ is the canonical projection $f^{-1}(y)\to f_0^{-1}(y_0)$, the irreducible components of $f^{-1}(y)$ are the irreducible components of the spaces $p^{-1}(Z_0)$, where $Z_0$ runs over the set of irreducible components of $f_0^{-1}(y_0)$, and each irreducible component of $p^{-1}(Z_0)$ dominates $Z_0$ and has dimension $\dim(Z_0)$.
 Taking into account \sref[0]{0.14.1.5}, we see therefore that if $g':X\to X_0$ is the canonical projection, $x$ a point of $X$ and $x_0=g'(x)$, we have $\dim_x(f^{-1}(f(x)))=\dim_{x_0}(f_0^{-1}(f_0(x_0)))$, whence $\mathrm{F}_n(X)={g'}^{-1}(\mathrm{F}_n(X_0))$, and we are reduced to proving the theorem when $Y$ is \emph{Noetherian}, which we will henceforth suppose.
 
 We can evidently suppose $X$ and $Y$ reduced \sref{IV.1.5.4}.
@@ -72,7 +72,7 @@ By considering the set of closed subsets $Y'$ of $Y$ such that the theorem is tr
 If $X_i$ ($1\leq i\leq m$) are the closed reduced sub-preschemes of $X$ whose underlying spaces are the irreducible components of $X$, we have $\mathrm{F}_n(X)=\bigcup_i\mathrm{F}_n(X_i)$ by virtue of \sref[0]{0.14.1.5}, and we can therefore restrict to proving the theorem for each $X_i$, in other words, we can suppose $X$ \emph{irreducible}.
 If $Z$ is the closed sub-prescheme of $Y$ having $\overline{f(X)}$ as underlying space, $f$ factorises as $X\xrightarrow{g}Z\xrightarrow{j}Y$, where $j$ is the canonical injection \sref[I]{I.5.2.2} and $g$ is of finite type \sref{IV.1.5.4}; it therefore suffices to prove the theorem for $Z$ and $g$. By the recurrence hypothesis, we are thus reduced to the case $Z=Y$, in other words to the case in which $Y$ is irreducible and $f$ is dominant.
 Let then $\eta$ be the generic point of $Y$ and set $e=\dim(f^{-1}(\eta))$; it follows from \sref{IV.13.1.1} that for $n\leq e$ we have $\mathrm{F}_n(X)=X$, and consequently we can restrict to the case where $n>e$.
-But then \sref{IV.9.5.6}, there is an open neighbourhood $U$ of $\eta$ in $Y$ such that $\mathrm{F}_n(X)\subset f^{-1}(Y-U)$; as $Y-U\neq Y$, the hypothesis of recurrence implies that $\mathrm{F}_n(X)$ is closed.
+But then \sref{IV.9.5.6}, there is an open neighbourhood $U$ of $\eta$ in $Y$ such that $\mathrm{F}_n(X)\subset f^{-1}(Y\setmin U)$; as $Y\setmin U\neq Y$, the hypothesis of recurrence implies that $\mathrm{F}_n(X)$ is closed.
 
 II) We now pass to the general case, still writing $S=\Spec(A)$ for the target and supposing $X=\Spec(B)$ affine, with $B$ an $A$-algebra of finite type, hence of the form
 \oldpage[IV-3]{190}
@@ -96,7 +96,7 @@ We note that we thus recover, under more general hypotheses, the consequence \sr
 \begin{corollary}[13.1.5]
 \label{IV.13.1.5}
 Under the hypotheses of \sref{IV.13.1.3}, suppose in addition that $f$ is a closed morphism.
-Then, for every integer $n$, the set of $y\in Y$ such that $\dim(f^{-1}(y))\geq n$ is closed; in other words, the map $y\mapsto\dim(f^{-1}(y))$ is upper semi-continuous; in particular, if $y$ is a specialisation of $y'$, we have $\dim(f^{-1}(y))\geq\dim(f^{-1}(y'))$.
+Then, for every integer $n$, the set of $y\in Y$ such that $\dim(f^{-1}(y))\geq n$ is closed; in other words, the map $y\leadsto\dim(f^{-1}(y))$ is upper semi-continuous; in particular, if $y$ is a specialisation of $y'$, we have $\dim(f^{-1}(y))\geq\dim(f^{-1}(y'))$.
 \end{corollary}
 
 \begin{proof}
@@ -124,7 +124,7 @@ There exists an integer $n$ such that, for every $y\in Y$, we have $\dim(f^{-1}(
 
 \begin{proof}
 As there is a finite affine open covering $(V_i)$ of $Y$ such that each $f^{-1}(V_i)$ is a finite union of affine open sets, we are immediately reduced to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, $B$ being an $A$-algebra of finite type.
-If $B$ admits a system of $n$ generators, then, for every $y\in Y$, $B\otimes_A k(y)$ is a $k(y)$-algebra admitting $n$ generators, hence $\dim(f^{-1}(y))\leq n$ by virtue of \sref{IV.4.1.1}.
+If $B$ admits a system of $n$ generators, then, for every $y\in Y$, $B\otimes_A k(y)$ is a $\boldsymbol{k}(y)$-algebra admitting $n$ generators, hence $\dim(f^{-1}(y))\leq n$ by virtue of \sref{IV.4.1.1}.
 \end{proof}
 
 \subsection{Equidimensional morphisms: case of dominant morphisms of irreducible preschemes}
@@ -155,7 +155,7 @@ Let $Y$ be an irreducible locally Noetherian prescheme, $X$ an irreducible presc
 \[
 \label{IV.13.2.3.1}
 \tag{13.2.3.1}
-  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}k(y)).
+  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)).
 \]
 Then $f$ is equidimensional at the point $x$.
 The converse holds if equality holds in \sref{IV.5.6.5.2}, in particular if $\sh{O}_y$ is universally catenary.
@@ -179,19 +179,19 @@ The formula \sref{IV.5.6.5.2} applied to the dominant morphism $f'$ and to the i
 \[
 \label{IV.13.2.4.2}
 \tag{13.2.4.2}
-  \dim(B')\leq\dim(A')+\dim(B'\otimes_{A'}k(y))-(\dim_x(f'^{-1}(y))-\dim(f'^{-1}(\eta')))
+  \dim(B')\leq\dim(A')+\dim(B'\otimes_{A'}\boldsymbol{k}(y))\setmin(\dim_x(f'^{-1}(y))\setmin\dim(f'^{-1}(\eta')))
 \]
-On the other hand, the local ring $A'$ (resp.\ $B'$, $B'\otimes_{A'}k(y)$) is a quotient of $A$ (resp.\ $B$, $B\otimes_A k(y)$), hence by \sref[0]{0.16.1.2.1} we have
+On the other hand, the local ring $A'$ (resp.\ $B'$, $B'\otimes_{A'}\boldsymbol{k}(y)$) is a quotient of $A$ (resp.\ $B$, $B\otimes_A k(y)$), hence by \sref[0]{0.16.1.2.1} we have
 \[
 \tag{13.2.4.3}
 \label{IV.13.2.4.3}
-  \dim(A')\leq\dim(A),\quad \dim(B')\leq\dim(B),\quad \dim(B'\otimes_{A'}k(y))\leq\dim(B\otimes_A k(y)).
+  \dim(A')\leq\dim(A),\quad \dim(B')\leq\dim(B),\quad \dim(B'\otimes_{A'}\boldsymbol{k}(y))\leq\dim(B\otimes_A k(y)).
 \]
 We deduce therefore first from \sref{IV.13.2.4.3} and \sref[0]{0.16.3.9}
 \[
 \label{IV.13.2.4.4}
 \tag{13.2.4.4}
-  \dim(B')\leq\dim(A')+\dim(B'\otimes_{A'}k(y))\leq\dim(A)+\dim(B\otimes_A k(y)).
+  \dim(B')\leq\dim(A')+\dim(B'\otimes_{A'}\boldsymbol{k}(y))\leq\dim(A)+\dim(B\otimes_A k(y)).
 \]
 Furthermore, by virtue of \sref[0]{0.16.3.9}, we also have the inequalities
 \[
@@ -211,21 +211,21 @@ With the notations of \sref{IV.13.2.4}, the following conditions are equivalent:
 \begin{enumerate}[label=\emph{\alph*)}]
   \item $\dim(B')=\dim(A)+\dim(B\otimes_A k(y))$.
   \item The following relations hold simultaneously:
-  \begin{enumerate}[label=(\roman*)]
+  \begin{enumerate}[label=\textup{(\roman*)}]
     \item $\dim(A')=\dim(A)$.
-    \item $\dim(B'\otimes_{A'}k(y))=\dim(B\otimes_A k(y))$, in other words
+    \item $\dim(B'\otimes_{A'}\boldsymbol{k}(y))=\dim(B\otimes_A k(y))$, in other words
     \[
       \dim_x(X'\cap f^{-1}(y))=\dim_x(f^{-1}(y)).
     \]
     \item $\dim_x(f'^{-1}(y))=\dim(f'^{-1}(\eta'))$, in other words $f':X'\to Y'$ is equidimensional \sref{IV.13.2.2} at the point $x$.
     \item We have the equality
     \[
-      \dim(B')=\dim(A')+\dim(B'\otimes_{A'}k(y))-(\dim_x(f'^{-1}(y))-\dim(f'^{-1}(\eta')))
+      \dim(B')=\dim(A')+\dim(B'\otimes_{A'}\boldsymbol{k}(y))\setmin(\dim_x(f'^{-1}(y))\setmin\dim(f'^{-1}(\eta')))
     \]
   \end{enumerate}
   (a relation which always holds when $A=\sh{O}_{Y,y}$ is a universally catenary ring, by virtue of \sref{IV.5.6.5}).
   \item The following relations hold simultaneously:
-  \begin{enumerate}[label=(\roman*)]
+  \begin{enumerate}[label=\textup{(\roman*)}]
     \item $\dim(B')=\dim(B)$.
     \item $\dim(B)=\dim(A)+\dim(B\otimes_A k(y))$.
   \end{enumerate}
@@ -252,7 +252,7 @@ Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism of finite type,
   \dim(\sh{O}_{X,x})\leq\dim(\sh{O}_{Y,y})+\dim(\sh{O}_{X,x}\otimes_{\sh{O}_{Y,y}}k(y)).
 \]
 For the two sides of \sref{IV.13.2.7.1} to be equal, it is necessary and sufficient that there exist an irreducible closed subset $X'$ of $X$ containing $x$ and satisfying simultaneously the following conditions:
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\textup{(\roman*)}]
   \item If $Y'=\overline{f(X')}$, we have $\dim(\sh{O}_{Y',y})=\dim(\sh{O}_{Y,y})$.
   \item $\dim_x(X'\cap f^{-1}(y))=\dim_x(f^{-1}(y))$ (in other words, $X'$ contains one of the irreducible components of $f^{-1}(y)$ of maximal dimension among those containing $x$). This amounts to saying that $\dim(\sh{O}_{X',x}\otimes_{\sh{O}_{Y',y}}k(y))=\dim(\sh{O}_{X,x}\otimes_{\sh{O}_{Y,y}}k(y))$.
   \item $X'$ is equidimensional over $Y'$ at the point $x$, in other words, we have
@@ -333,7 +333,7 @@ irreducible components of $f^{-1}(y)$, $z_i$ the generic point of $Z_i$, and con
 Then $a)$ implies $b)$ and $b)$ implies $c)$; furthermore, if $\sh{O}_{Y,y}$ is universally catenary, the three conditions $a)$, $b)$, $c)$ are equivalent.
 \end{proposition}
 
-The ring $\sh{O}_{X,z_i}\otimes_{\sh{O}_{Y,y}}k(y)$ being of dimension $0$ \sref{IV.5.1.2}, $a)$ implies $b)$ evidently; $b)$ implies $c)$ by virtue of \sref{IV.13.2.7} applied at the point $z_i$.
+The ring $\sh{O}_{X,z_i}\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y)$ being of dimension $0$ \sref{IV.5.1.2}, $a)$ implies $b)$ evidently; $b)$ implies $c)$ by virtue of \sref{IV.13.2.7} applied at the point $z_i$.
 Conversely, suppose that $\sh{O}_{Y,y}$ is universally catenary; as the condition $c)$ implies that $f(X_i)$ is dense in $Y$, it follows from $c)$ that the conditions (i) to (iv) of \sref{IV.13.2.7} are satisfied when we replace $X'$ by $X_i$ and $x$ by $z_i$, hence $c)$ implies $b)$; finally $b)$ implies $a)$ by \sref{IV.13.2.9}.
 
 \begin{corollary}[13.2.11]
@@ -385,15 +385,15 @@ Let us first prove the following lemma:
 \begin{lemma}[13.3.1.1]
 \label{IV.13.3.1.1}
 Let $Y=\Spec(A)$, $X=\Spec(B)$ be two affine schemes, $f:X\to Y$ a morphism of finite type, $y$ a point of $f(X)$, and set $e=\dim(f^{-1}(y))$.
-Then there exists a $Y$-morphism $g:X\to Y[T_1,\ldots,T_e]$ such that (if we set $X_y=X\times_Y\Spec(k(y))$), the morphism $g_y:X_y\to\Spec(k(y)[T_1,\ldots,T_e])$ is finite.
+Then there exists a $Y$-morphism $g:X\to Y[T_1,\ldots,T_e]$ such that (if we set $X_y=X\times_Y\Spec(\boldsymbol{k}(y))$), the morphism $g_y:X_y\to\Spec(\boldsymbol{k}(y)[T_1,\ldots,T_e])$ is finite.
 Furthermore, for any such morphism $g$, $g_y$ is necessarily surjective, and there exists an open neighbourhood $U$ of $f^{-1}(y)$ in $X$ such that $g|U$ is quasi-finite.
 \end{lemma}
 
 \begin{proof}
-Let $\mathfrak{p}=\mathfrak{j}_y$; the ring $B\otimes_A k(\mathfrak{p})$ is a $k(\mathfrak{p})$-algebra of finite type, hence by the normalisation lemma (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection~3, n$^{\text{o}}$~1, th.~1) there exist in $B\otimes_A k(\mathfrak{p})$ a finite sequence $(t_i)_{1\leq i\leq r}$ of elements algebraically independent over $k(\mathfrak{p})$ and such that if we set $C'=k(\mathfrak{p})[t_1,\ldots,t_r]$, $B\otimes_A k(\mathfrak{p})$ is a $C'$-algebra \emph{finite}; we therefore have $\dim(B\otimes_A k(\mathfrak{p}))=\dim(C')$ \sref[0]{0.16.1.5} and as $\dim(C')=r$ \sref{IV.5.2.1}, we have $r=e$.
-As $B\otimes_A k(\mathfrak{p})=(B/\mathfrak{p}B)\otimes_{A/\mathfrak{p}}k(\mathfrak{p})$, we can, by multiplying the $t_i$ by a suitable element $\neq0$
+Let $\mathfrak{p}=\mathfrak{j}_y$; the ring $B\otimes_A \boldsymbol{k}(\mathfrak{p})$ is a $\boldsymbol{k}(\mathfrak{p})$-algebra of finite type, hence by the normalisation lemma (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection~3, n$^{\text{o}}$~1, th.~1) there exist in $B\otimes_A \boldsymbol{k}(\mathfrak{p})$ a finite sequence $(t_i)_{1\leq i\leq r}$ of elements algebraically independent over $\boldsymbol{k}(\mathfrak{p})$ and such that if we set $C'=\boldsymbol{k}(\mathfrak{p})[t_1,\ldots,t_r]$, $B\otimes_A \boldsymbol{k}(\mathfrak{p})$ is a $C'$-algebra \emph{finite}; we therefore have $\dim(B\otimes_A \boldsymbol{k}(\mathfrak{p}))=\dim(C')$ \sref[0]{0.16.1.5} and as $\dim(C')=r$ \sref{IV.5.2.1}, we have $r=e$.
+As $B\otimes_A \boldsymbol{k}(\mathfrak{p})=(B/\mathfrak{p}B)\otimes_{A/\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$, we can, by multiplying the $t_i$ by a suitable element $\neq0$
 \oldpage[IV-3]{196}
-of $A/\mathfrak{p}$, suppose that each $t_i$ is the canonical image in $B\otimes_A k(\mathfrak{p})$ of an element $s_i\in B$.
+of $A/\mathfrak{p}$, suppose that each $t_i$ is the canonical image in $B\otimes_A \boldsymbol{k}(\mathfrak{p})$ of an element $s_i\in B$.
 Let then $u:A[T_1,\ldots,T_e]\to B$ be the homomorphism such that $u(T_i)=s_i$ for every $i$, and let $g:X\to Y[T_1,\ldots,T_e]$ be the corresponding morphism.
 It is clear that, by the choice of the $s_i$, $g_y$ is a finite morphism.
 For every morphism $g:X\to Y[T_1,\ldots,T_e]$, such that $g_y$ is finite, it follows from \sref{IV.5.4.2} and \sref{IV.4.1.2.1} that $g_y$ is necessarily surjective.
@@ -401,11 +401,11 @@ On the other hand, by \sref{IV.13.1.4}, the set $U$ of $x\in X$ that are isolate
 \end{proof}
 
 This lemma being established, to prove that $a)$ implies $b)$, it remains to show that if $x_\lambda$ is a maximal point of $U$, then $g(x_\lambda)=z_\lambda$ is a maximal point of $Z=Y[T_1,\ldots,T_e]$.
-By hypothesis $a)$, we may (after shrinking $U$ if necessary) suppose that $f(x_\lambda)$ is one of the generic points $y_\alpha$ of the irreducible components of $Y$ containing $y$. If $p:Z\to Y$ is the structural morphism, then $p(z_\lambda)=y_\alpha$, and $g$ consequently induces a quasi-finite $k(y_\alpha)$-morphism
+By hypothesis $a)$, we may (after shrinking $U$ if necessary) suppose that $f(x_\lambda)$ is one of the generic points $y_\alpha$ of the irreducible components of $Y$ containing $y$. If $p:Z\to Y$ is the structural morphism, then $p(z_\lambda)=y_\alpha$, and $g$ consequently induces a quasi-finite $\boldsymbol{k}(y_\alpha)$-morphism
 \[
 h:U\cap f^{-1}(y_\alpha)\longrightarrow p^{-1}(y_\alpha).
 \]
-Now $p^{-1}(y_\alpha)=\Spec(k(y_\alpha)[T_1,\ldots,T_e])$ is integral and of dimension $e$. If $z_\lambda$ were not a maximal point of $Z$, it would not be a maximal point of $p^{-1}(y_\alpha)$ \sref[0]{0.2.1.8}, and its closure $Z'_\lambda$ in $p^{-1}(y_\alpha)$ would therefore have dimension $<e$ \sref{IV.4.1.2.1}. But since $h$ is quasi-finite, it follows from \sref{IV.4.1.2} and hypothesis $a)$ that $\dim(Z'_\lambda)\geq e$ (the restriction of $h$ to $\overline{\{x_\lambda\}}$ factorising as
+Now $p^{-1}(y_\alpha)=\Spec(\boldsymbol{k}(y_\alpha)[T_1,\ldots,T_e])$ is integral and of dimension $e$. If $z_\lambda$ were not a maximal point of $Z$, it would not be a maximal point of $p^{-1}(y_\alpha)$ \sref[0]{0.2.1.8}, and its closure $Z'_\lambda$ in $p^{-1}(y_\alpha)$ would therefore have dimension $<e$ \sref{IV.4.1.2.1}. But since $h$ is quasi-finite, it follows from \sref{IV.4.1.2} and hypothesis $a)$ that $\dim(Z'_\lambda)\geq e$ (the restriction of $h$ to $\overline{\{x_\lambda\}}$ factorising as
 \[
 \overline{\{x_\lambda\}}\longrightarrow Z'_\lambda\longrightarrow p^{-1}(y_\alpha)
 \]
@@ -413,8 +413,8 @@ by \sref[I]{I.5.2.2}). This is a contradiction, and proves that $a)$ implies $b)
 
 Let us finally prove that $b)$ implies $a)$.
 Note that the structural morphism $p:Z=Y[T_1,\ldots,T_e]\to Y$ is faithfully flat; hence \sref{IV.2.3.4} the images under $p$ of the maximal points of $Z$ are the maximal points of $Y$. This already proves that the $f(x_\lambda)$ are generic points of the $Y_\alpha$.
-Furthermore, if $f(x_\lambda)=y_\alpha$, the $k(y_\alpha)$-morphism $h:U\cap f^{-1}(y_\alpha)\to p^{-1}(y_\alpha)$ deduced from $g$ is dominant and quasi-finite by hypothesis; hence \sref{IV.4.1.2} we have $\dim(U_\lambda\cap f^{-1}(y_\alpha))=e$ ($U_\lambda$ being the irreducible component of $U$ with generic point $x_\lambda$).
-Similarly, for every $x'\in U_\lambda$, the morphism $U_\lambda\cap f^{-1}(f(x'))\to p^{-1}(f(x'))$ deduced from $g$ is a $k(f(x'))$-morphism quasi-finite, hence \sref{IV.4.1.2} we have $\dim(f^{-1}(f(x'))\cap U_\lambda)\leq e$; but by \sref{IV.13.1.6} all the irreducible components of $U_\lambda\cap f^{-1}(f(x'))$ are of dimension $\geq e$; we see therefore that these components are of exactly dimension $e$, hence $b)$ implies $a)$.
+Furthermore, if $f(x_\lambda)=y_\alpha$, the $\boldsymbol{k}(y_\alpha)$-morphism $h:U\cap f^{-1}(y_\alpha)\to p^{-1}(y_\alpha)$ deduced from $g$ is dominant and quasi-finite by hypothesis; hence \sref{IV.4.1.2} we have $\dim(U_\lambda\cap f^{-1}(y_\alpha))=e$ ($U_\lambda$ being the irreducible component of $U$ with generic point $x_\lambda$).
+Similarly, for every $x'\in U_\lambda$, the morphism $U_\lambda\cap f^{-1}(f(x'))\to p^{-1}(f(x'))$ deduced from $g$ is a $\boldsymbol{k}(f(x'))$-morphism quasi-finite, hence \sref{IV.4.1.2} we have $\dim(f^{-1}(f(x'))\cap U_\lambda)\leq e$; but by \sref{IV.13.1.6} all the irreducible components of $U_\lambda\cap f^{-1}(f(x'))$ are of dimension $\geq e$; we see therefore that these components are of exactly dimension $e$, hence $b)$ implies $a)$.
 \end{proof}
 
 \begin{definition}[13.3.2]
@@ -475,7 +475,7 @@ Suppose that the ring $\sh{O}_y$ is equidimensional. Then, if $\sh{O}_x$ is equi
 \[
 \tag{13.3.6.1}
 \label{IV.13.3.6.1}
-  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}k(y))
+  \dim(\sh{O}_x)=\dim(\sh{O}_y)+\dim(\sh{O}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y))
 \]
 (cf.\ \sref{IV.13.2.7.1}) $f$ is equidimensional at the point $x$, and the converse is true if $\sh{O}_y$ is a universally catenary ring.
 \end{proposition}
@@ -483,7 +483,7 @@ Suppose that the ring $\sh{O}_y$ is equidimensional. Then, if $\sh{O}_x$ is equi
 \begin{proof}
 Keeping the notations of \sref{IV.13.3.3}, it follows from \sref{IV.13.2.8} and from the hypothesis that $\sh{O}_x$ is equidimensional that each $Y_j$ is an irreducible component of $Y$ and that each $f_j$ is equidimensional at the point $x$; moreover, by \sref{IV.13.2.8}, we have (taking into account \sref{IV.5.6.5})
 \[
-  \dim(\sh{O}_{X_j,x})=\dim(\sh{O}_{Y_j,y})+\dim_x(X_j\cap f^{-1}(y))-\deg.\mathrm{tr}_{k(y)}k(x).
+  \dim(\sh{O}_{X_j,x})=\dim(\sh{O}_{Y_j,y})+\dim_x(X_j\cap f^{-1}(y))\setmin\deg.\mathrm{tr}_{k(y)}k(x).
 \]
 
 \oldpage[IV-3]{198}
@@ -492,7 +492,7 @@ Now, since $\sh{O}_y$ is assumed equidimensional, this equality can be written
 \[
 \tag{13.3.6.2}
 \label{IV.13.3.6.2}
-  \dim_x(X_j\cap f^{-1}(y))=\dim(\sh{O}_{X,x})-\dim(\sh{O}_{Y,y})+\deg.\mathrm{tr}_{k(y)}k(x).
+  \dim_x(X_j\cap f^{-1}(y))=\dim(\sh{O}_{X,x})\setmin\dim(\sh{O}_{Y,y})+\deg.\mathrm{tr}_{k(y)}k(x).
 \]
 The first member of \sref{IV.13.3.6.2} is therefore independent of $j$; but as $f_j$ is equidimensional at the point $x$, we have $\dim_x(X_j\cap f^{-1}(y))=\dim(f_j^{-1}(y_j))$, hence the criterion of \sref{IV.13.3.3} shows that $f$ is equidimensional at the point $x$.
 
@@ -518,7 +518,7 @@ is lower semi-continuous in $X$.
 \begin{proof}
 As all the irreducible components of $f^{-1}(f(x))$ containing $x$ have the same dimension by hypothesis \sref{IV.13.3.1}, we have, by virtue of \sref{IV.5.2.1},
 \[
-  \operatorname{codim}_x(Z\cap f^{-1}(f(x)),f^{-1}(f(x)))=\dim_x(f^{-1}(f(x)))-\dim_x(Z\cap f^{-1}(f(x))).
+  \operatorname{codim}_x(Z\cap f^{-1}(f(x)),f^{-1}(f(x)))=\dim_x(f^{-1}(f(x)))\setmin\dim_x(Z\cap f^{-1}(f(x))).
 \]
 But by hypothesis the first term of the right-hand side is a continuous function of $x$ \sref{IV.13.3.1} and the second is an upper semi-continuous function of $x$ by \sref{IV.13.1.3}\footnote{The printed source cites (13.3.3) here; the upper semi-continuity invoked is Chevalley's theorem (13.1.3).}; whence the conclusion.
 \end{proof}

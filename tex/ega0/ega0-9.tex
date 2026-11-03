@@ -27,7 +27,7 @@ retrocompact in $X$.
 \begin{definition}[9.1.2]
 \label{0.9.1.2}
 Given a topological space $X$, we say that a subset of $X$ is
-\emph{constructible} if it belongs to the smallest set $\mathfrak{F}$ of
+constructible if it belongs to the smallest set $\mathfrak{F}$ of
 subsets of $X$ containing all the retrocompact open subsets of
 $X$ and stable under finite intersection and passage to the complement
 (which implies that $\mathfrak{F}$ is also stable under finite union).
@@ -82,7 +82,7 @@ $\complement{F}$ be retrocompact.
 An important case is that in which every quasi-compact open subset of $X$
 is retrocompact, in other words, in which the intersection of two
 quasi-compact open subsets of $X$ is quasi-compact
-(cf. \hyperref[I.5.5.6]{I, 5.5.6}). When $X$ itself is
+(cf. \hyperref[I.5.5.6]{\textbf{I}, 5.5.6}). When $X$ itself is
 quasi-compact, this means that the open subsets retrocompact in
 $X$ are identical with the quasi-compact open subsets of $X$, and the
 constructible subsets of $X$ with the finite unions of sets of the form
@@ -117,9 +117,9 @@ Let $X$ be a topological space and $U$ an open subset of $X$.
     to prove that it is sufficient. Taking into account
     (\hyperref[0.9.1.3]{9.1.3}), it suffices to consider the case where $Z$
     is open and retrocompact \emph{in $U$}, since it will then follow that
-    $U\setminus Z$ is constructible in $X$, and if $Z$, $Z'$ are two
+    $U\setmin Z$ is constructible in $X$, and if $Z$, $Z'$ are two
     open subsets retrocompact \emph{in $U$},
-    $Z\cap(U\setminus Z')$ will indeed be constructible in $X$. Now, if $W$ is
+    $Z\cap(U\setmin Z')$ will indeed be constructible in $X$. Now, if $W$ is
     open and quasi-compact in $X$ and $Z$ is open and retrocompact in $U$, we
     have $Z\cap W=Z\cap(W\cap U)$, and by hypothesis $W\cap U$ is open and
     quasi-compact in $U$; hence $W\cap Z$ is indeed quasi-compact, and
@@ -225,7 +225,7 @@ $\overline{E}\subset\bigcup_i F_i$. Consequently, if $\overline{E}=X$, $X$ is
 equal to one of the $F_i$, hence $E\supset U_i$, which completes the proof.
 
 When $X$ has a generic point $x$
-(\hyperref[0.2.1.2]{$0_{\mathrm I}$, 2.1.2}), the condition of
+(\hyperref[0.2.1.2]{$\mathbf{0}_{\mathrm I}$, 2.1.2}), the condition of
 (\hyperref[0.9.2.2]{9.2.2}) is equivalent to the relation $x\in E$.
 
 \begin{proposition}[9.2.3]
@@ -239,22 +239,22 @@ non-empty open subset of $Y$.
 The necessity of the condition comes from the fact that $E\cap Y$ must be a
 constructible subset of $Y$, and from (\hyperref[0.9.2.2]{9.2.2}), since a
 non-dense subset of $Y$ is necessarily rare in the irreducible space
-$Y$ (\hyperref[0.2.1.1]{$0_{\mathrm I}$, 2.1.1}). To prove that the
+$Y$ (\hyperref[0.2.1.1]{$\mathbf{0}_{\mathrm I}$, 2.1.1}). To prove that the
 condition is sufficient, let us apply the principle of Noetherian induction
-(\hyperref[0.2.2.2]{$0_{\mathrm I}$, 2.2.2}) to the set
+(\hyperref[0.2.2.2]{$\mathbf{0}_{\mathrm I}$, 2.2.2}) to the set
 $\mathfrak{F}$ of closed subsets $Y$ of $X$ such that $Y\cap E$ is
 constructible (relative to $Y$ or relative to $X$, which amounts to the
 same thing): we may therefore suppose that for every closed subset $Y\ne X$
 of $X$, $E\cap Y$ is constructible. Suppose first that $X$ is not
 irreducible, and let $X_i$ ($1\leq i\leq m$) be its irreducible
 components, which are necessarily finite in number
-(\hyperref[0.2.2.5]{$0_{\mathrm I}$, 2.2.5}); by hypothesis, the
+(\hyperref[0.2.2.5]{$\mathbf{0}_{\mathrm I}$, 2.2.5}); by hypothesis, the
 $E\cap X_i$ are constructible, hence so is their union $E$. Suppose
 next that $X$ is irreducible; then, by hypothesis, either $E$ is
 rare, so that $\overline{E}\ne X$ and $E=E\cap\overline{E}$ is constructible;
 or $E$ contains a non-empty open subset $U$ of $X$, and is therefore the union
-of $U$ and $E\cap(X\setminus U)$; but $X\setminus U$ is a closed set
-distinct from $X$, so $E\cap(X\setminus U)$ is constructible; $E$
+of $U$ and $E\cap(X\setmin U)$; but $X\setmin U$ is a closed set
+distinct from $X$, so $E\cap(X\setmin U)$ is constructible; $E$
 itself is consequently constructible, which completes the proof.
 
 \begin{corollary}[9.2.4]
@@ -273,7 +273,7 @@ hypothesis $2^\circ$ can be omitted.
 \end{corollary}
 
 Let us apply the principle of Noetherian induction
-(\hyperref[0.2.2.2]{$0_{\mathrm I}$, 2.2.2}) to the set
+(\hyperref[0.2.2.2]{$\mathbf{0}_{\mathrm I}$, 2.2.2}) to the set
 $\mathfrak{M}$ of closed subsets of $X$ contained in at least one of the
 $E_\alpha$; we may therefore suppose that every closed subset $Y\ne X$ of $X$ is
 contained in one of the $E_\alpha$. The proposition is evident if $X$ is not
@@ -281,14 +281,14 @@ irreducible, since each of the irreducible components $X_i$ of $X$
 ($1\leq i\leq m$) is contained in some $E_{\alpha_i}$, and there exists an
 $E_\alpha$ containing all the $E_{\alpha_i}$. So suppose $X$
 irreducible. By hypothesis, there exists $\beta$ such that
-$X=\overline{E_\beta}$, hence (\hyperref[0.9.2.2]{9.2.2}) $E_\beta$
+$X=\overline{E}_\beta$, hence (\hyperref[0.9.2.2]{9.2.2}) $E_\beta$
 contains a non-empty open subset $U$ of $X$. But then the closed set
-$X\setminus U$ is contained in some $E_\gamma$, and it suffices to take
+$X\setmin U$ is contained in some $E_\gamma$, and it suffices to take
 $E_\alpha$ containing $E_\beta$ and $E_\gamma$. When every irreducible
 closed subset $Y$ of $X$
 \oldpage[0\textsubscript{III}]{16}
 has a generic point $y$, there exists $\alpha$ such that $y\in E_\alpha$,
-hence $Y=\overline{\{y\}}\subset\overline{E_\alpha}$, and condition
+hence $Y=\overline{\{y\}}\subset\overline{E}_\alpha$, and condition
 $2^\circ$ is a consequence of $1^\circ$.
 
 \begin{proposition}[9.2.5]
@@ -313,8 +313,8 @@ neighbourhood of $x$ in $X$, the same is true of $E$. If $X$ is
 irreducible, $E$ is dense in $X$ by hypothesis, and therefore contains a
 non-empty open subset $U$ of $X$ (\hyperref[0.9.2.2]{9.2.2}); the
 proposition is then evident if $x\in U$; otherwise, $x$ is by hypothesis
-interior to $E\cap(X\setminus U)$ relative to $X\setminus U$, so the closure in
-$X$ of $X\setminus E$ does not contain $x$, and the complement of this
+interior to $E\cap(X\setmin U)$ relative to $X\setmin U$, so the closure in
+$X$ of $X\setmin E$ does not contain $x$, and the complement of this
 closure is a neighbourhood of $x$ contained in $E$, which completes the
 proof.
 
@@ -338,7 +338,7 @@ of its points, whence the conclusion.
 \begin{definition}[9.3.1]
 \label{0.9.3.1}
 Let $h$ be a map from a topological space $X$ to a set $T$.
-We say that $h$ is \emph{constructible} if $h^{-1}(t)$ is constructible for
+We say that $h$ is constructible if $h^{-1}(t)$ is constructible for
 every $t\in T$, and empty except for finitely many values of $t$; for
 every subset $S$ of $T$, $h^{-1}(S)$ is then constructible. We say that $h$
 is \emph{locally constructible} if every $x\in X$ has an open
@@ -375,7 +375,7 @@ constructible, and it then follows immediately from the definition
 (\hyperref[0.9.3.1]{9.3.1}) that $h$ is constructible. If $X$ is
 irreducible, there exists by hypothesis a non-empty open subset $U$ of $X$
 on which $h$ is constant; on the other hand, the restriction of $h$ to
-$X\setminus U$ is constructible by hypothesis, and it follows immediately
+$X\setmin U$ is constructible by hypothesis, and it follows immediately
 that $h$ is constructible.
 
 \begin{corollary}[9.3.3]

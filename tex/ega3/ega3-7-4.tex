@@ -1,5 +1,5 @@
 \subsection{\texorpdfstring{Exactness criteria for the functors
-$H_\bullet(P_\bullet\otimes_A M)$}{Exactness criteria for the functors H.(P. tensor M)}}
+$H_\bullet(P_\bullet\otimes_A M)$.}{Exactness criteria for the functors H.(P. tensor M)}}
 \label{subsection:III.7.4}
 \label{III.7.4}
 
@@ -70,7 +70,7 @@ equivalent:
   \item[(c)] there exists a complex $P'_\bullet$ of flat right
     $A$-modules for which the differential
     \[
-      d'_{p+1}:P'_{p+1}\longrightarrow P'_p
+      d_{p+1}:P'_{p+1}\longrightarrow P'_p
     \]
     is zero, together with an isomorphism of homological
     functors
@@ -129,7 +129,7 @@ Hence $T_p$, which is already half-exact, is left exact.  This
 proves the equivalence of (a) and (b).
 
 It is immediate that (c) implies (a).  Indeed, if
-$d'_{p+1}:P'_{p+1}\to P'_p$ is zero and
+$d_{p+1}:P'_{p+1}\to P'_p$ is zero and
 \[
   0\longrightarrow M'\longrightarrow M\longrightarrow M''
   \longrightarrow 0
@@ -282,7 +282,7 @@ hypothesis.  In that case the modules $Z'_i(P_\bullet)$ are of
 finite type.  Moreover, it is enough to prove the assertions
 concerning left exactness (cf.\ \sref{III.7.4.2}, (a)).
 
-Let $x\in U$.  Since $M\mapsto M_x$ is exact,
+Let $x\in U$.  Since $M\leadsto M_x$ is exact,
 \[
   \bigl(Z'_p(P_\bullet)\bigr)_x
   =
@@ -343,7 +343,7 @@ Conversely, suppose that $T_p$ is left exact.  As in
 $P_i$ are flat and of finite type, and hence, since $A$ is
 Noetherian, projective of finite type (Bourbaki,
 \emph{Alg\`ebre commutative}, chap.~II, \S~5, no.~2, cor.\ of
-th.~1).  The dual $\check{P}_i$ of $P_i$ is then also a
+th.~1).  The \emph{dual} $\check{P}_i$ of $P_i$ is then also a
 projective $A$-module of finite type, $P_i$ is canonically
 isomorphic to the dual of $\check{P}_i$, and the canonical
 homomorphism
@@ -415,11 +415,11 @@ of finite type.
 Suppose that the general hypotheses of \sref{III.7.4.4} hold.
 For every $A$-module $M$ of finite type:
 \begin{enumerate}
-  \item[(i)] the $T_i(M)$ are $A$-modules of finite type;
-  \item[(ii)] for every ideal $\mathfrak m$ of $A$, the
+  \item[\textup{(i)}] the $T_i(M)$ are $A$-modules of finite type;
+  \item[\textup{(ii)}] for every ideal $\mathfrak m$ of $A$, the
     canonical homomorphism
     \[
-      \widehat{T_i(M)}
+      (T_i(M))^{\widehat{\,}}
       \longrightarrow
       \varprojlim_n
       T_i\bigl(M\otimes_A(A/\mathfrak m^{n+1})\bigr)
@@ -452,11 +452,11 @@ $M$, put
 Then, for every ideal $\mathfrak m$ of $A$, the canonical
 homomorphisms
 \[
-  \widehat{K(M)}
+  (K(M))^{\widehat{\,}}
   \longrightarrow
   \varprojlim_n K(M_n),
   \qquad
-  \widehat{C(M)}
+  (C(M))^{\widehat{\,}}
   \longrightarrow
   \varprojlim_n C(M_n)
   \tag{7.4.7.3}\label{III.7.4.7.3.eq}
@@ -473,9 +473,9 @@ are bijective, where
 
 \begin{proof}
 The modules $E\otimes_A M$ and $F\otimes_A M$ are of finite
-type, and the functor $M\mapsto\widehat{M}$ is exact on the
+type, and the functor $M\leadsto\widehat{M}$ is exact on the
 category of finite-type $A$-modules \sref[0]{0.7.3.3}.
-Consequently, $\widehat{K(M)}$ and $\widehat{C(M)}$ are,
+Consequently, $(K(M))^{\widehat{\,}}$ and $(C(M))^{\widehat{\,}}$ are,
 respectively, the kernel and the cokernel of
 \[
   \widehat{u\otimes 1}:
@@ -485,7 +485,7 @@ respectively, the kernel and the cokernel of
 \]
 Left exactness of $\varprojlim$ therefore gives
 \[
-  \widehat{K(M)}
+  (K(M))^{\widehat{\,}}
   =
   \varprojlim_n K(M_n).
 \]
@@ -497,7 +497,7 @@ On the other hand, right exactness of the tensor product gives
 \]
 and hence
 \[
-  \widehat{C(M)}
+  (C(M))^{\widehat{\,}}
   =
   \varprojlim_n C(M_n)
 \]
