@@ -15,21 +15,13 @@ system in question (T, 1.8).
 \oldpage[0\textsubscript{III}]{65}
 Let $(A_\alpha,f_{\alpha\beta})$ be a projective system of objects of
 $\cat{C}$ whose index set $\mathrm{I}$ is filtered to the right.
-Put
-\[
-  A=\varprojlim A_\alpha,
-\]
+Put $A=\varprojlim A_\alpha$,
 and, for each $\alpha\in\mathrm{I}$, let
 $f_\alpha:A\longrightarrow A_\alpha$ be the canonical morphism.
 For every $\alpha\in\mathrm{I}$, the subobjects
 $f_{\alpha\beta}(A_\beta)$, for $\alpha\leq\beta$, form a decreasing
 filtered family of subobjects of $A_\alpha$.
-The subobject
-\[
-  A'_\alpha
-  =
-  \inf_{\beta\geq\alpha}f_{\alpha\beta}(A_\beta)
-\]
+The subobject $A'_\alpha=\inf_{\beta\geq\alpha}f_{\alpha\beta}(A_\beta)$
 is called the subobject of \emph{universal images} in $A_\alpha$.
 It is clear that
 \[
@@ -39,10 +31,7 @@ It is clear that
   \quad(\alpha\leq\beta).
 \]
 Thus
-$(A'_\alpha,f_{\alpha\beta}|A'_\beta)$ is a projective system and
-\[
-  A=\varprojlim A'_\alpha.
-\]
+$(A'_\alpha,f_{\alpha\beta}|A'_\beta)$ is a projective system and $A=\varprojlim A'_\alpha$.
 \end{env}
 
 \begin{env}[13.1.2]
@@ -52,12 +41,9 @@ the following is called the \emph{Mittag-Leffler condition}:
 \begin{itemize}
   \item[(ML)]
   \emph{For every index $\alpha$, there is a $\beta\geq\alpha$ such
-  that, for every $\gamma\geq\beta$,}
-  \[
-    f_{\alpha\gamma}(A_\gamma)
-    =
-    f_{\alpha\beta}(A_\beta).
-  \]
+  that, for every $\gamma\geq\beta$,} $f_{\alpha\gamma}(A_\gamma)
+=
+f_{\alpha\beta}(A_\beta)$.
 \end{itemize}
 
 It is clear that condition (ML) holds if all the
@@ -66,10 +52,7 @@ Conversely, suppose that (ML) holds, and for each
 $\alpha\in\mathrm{I}$ let $A'_\alpha$ be the subobject of universal
 images in $A_\alpha$.
 Then, for $\alpha\leq\beta$, the restriction of
-$f_{\alpha\beta}$ to $A'_\beta$ is an \emph{epimorphism}
-\[
-  A'_\beta\longrightarrow A'_\alpha.
-\]
+$f_{\alpha\beta}$ to $A'_\beta$ is an \emph{epimorphism} $A'_\beta\longrightarrow A'_\alpha$.
 Indeed, choose $\gamma\geq\beta$ such that
 \[
   f_{\beta\delta}(A_\delta)
@@ -143,16 +126,13 @@ $(A_\alpha)$, $(B_\alpha)$, and $(C_\alpha)$, respectively.
   g_{\alpha\lambda}(B_\lambda)
   \qquad(\lambda\geq\beta).
 \]
-Since $v_\beta$ and $v_\lambda$ are surjective,
-\[
-  h_{\alpha\beta}(C_\beta)
-  =
-  v_\alpha\bigl(g_{\alpha\beta}(B_\beta)\bigr)
-  =
-  v_\alpha\bigl(g_{\alpha\lambda}(B_\lambda)\bigr)
-  =
-  h_{\alpha\lambda}(C_\lambda)
-\]
+Since $v_\beta$ and $v_\lambda$ are surjective, $h_{\alpha\beta}(C_\beta)
+=
+v_\alpha\bigl(g_{\alpha\beta}(B_\beta)\bigr)
+=
+v_\alpha\bigl(g_{\alpha\lambda}(B_\lambda)\bigr)
+=
+h_{\alpha\lambda}(C_\lambda)$
 for $\lambda\geq\beta$.
 
 (ii) Let $\alpha\in\mathrm{I}$.
@@ -173,12 +153,9 @@ and then choose $\gamma\geq\beta$ such that
 Let $y_\alpha\in g_{\alpha\gamma}(B_\gamma)$, write
 $y_\alpha=g_{\alpha\gamma}(y_\gamma)$ with $y_\gamma\in B_\gamma$,
 and put $y_\beta=g_{\beta\gamma}(y_\gamma)$.
-Then
-\[
-  v_\beta(y_\beta)
-  =
-  h_{\beta\gamma}\bigl(v_\gamma(y_\gamma)\bigr).
-\]
+Then $v_\beta(y_\beta)
+=
+h_{\beta\gamma}\bigl(v_\gamma(y_\gamma)\bigr)$.
 For every $\lambda\geq\gamma$, there is, by hypothesis, a
 $y_\lambda\in B_\lambda$ such that
 \[
@@ -190,33 +167,21 @@ Hence
 $v_\beta(y_\beta\setmin g_{\beta\lambda}(y_\lambda))=0$, and therefore
 there is an $x_\beta\in A_\beta$
 \oldpage[0\textsubscript{III}]{66}
-such that
-\[
-  y_\beta
-  =
-  g_{\beta\lambda}(y_\lambda)+u_\beta(x_\beta).
-\]
-It follows that
-\[
-  y_\alpha
-  =
-  g_{\alpha\lambda}(y_\lambda)
-  +
-  u_\alpha\bigl(f_{\alpha\beta}(x_\beta)\bigr).
-\]
+such that $y_\beta
+=
+g_{\beta\lambda}(y_\lambda)+u_\beta(x_\beta)$.
+It follows that $y_\alpha
+=
+g_{\alpha\lambda}(y_\lambda)
++
+u_\alpha\bigl(f_{\alpha\beta}(x_\beta)\bigr)$.
 Since $\lambda\geq\beta$, there is an $x_\lambda\in A_\lambda$ such
-that
-\[
-  f_{\alpha\beta}(x_\beta)=f_{\alpha\lambda}(x_\lambda).
-\]
-Consequently,
-\[
-  y_\alpha
-  =
-  g_{\alpha\lambda}
-  \bigl(y_\lambda+u_\lambda(x_\lambda)\bigr)
-  \in g_{\alpha\lambda}(B_\lambda),
-\]
+that $f_{\alpha\beta}(x_\beta)=f_{\alpha\lambda}(x_\lambda)$.
+Consequently, $y_\alpha
+=
+g_{\alpha\lambda}
+\bigl(y_\lambda+u_\lambda(x_\lambda)\bigr)
+\in g_{\alpha\lambda}(B_\lambda)$,
 which proves the assertion.
 \end{proof}
 
@@ -243,16 +208,9 @@ is exact.
 \end{proposition}
 
 \begin{proof}
-It remains only to prove that the homomorphism
-\[
-  v=\varprojlim v_\alpha:
-  \varprojlim B_\alpha\longrightarrow\varprojlim C_\alpha
-\]
+It remains only to prove that the homomorphism $v=\varprojlim v_\alpha:\varprojlim B_\alpha\to\varprojlim C_\alpha$
 is surjective.
-Let $z=(z_\alpha)\in\varprojlim C_\alpha$, and put
-\[
-  E_\alpha=v_\alpha^{-1}(z_\alpha).
-\]
+Let $z=(z_\alpha)\in\varprojlim C_\alpha$, and put $E_\alpha=v_\alpha^{-1}(z_\alpha)$.
 The $E_\alpha$ plainly form a projective system of nonempty sets under
 the restrictions of the homomorphisms
 $g_{\alpha\beta}:B_\beta\longrightarrow B_\alpha$.
@@ -283,12 +241,9 @@ Indeed, take $y_\lambda\in E_\lambda$ and set
 Let $y'_\alpha=g_{\alpha\beta}(y'_\beta)$ for some
 $y'_\beta\in E_\beta$.
 Then $y'_\beta\setmin y_\beta=x_\beta\in A_\beta$, and by hypothesis there
-is an $x_\lambda\in A_\lambda$ such that
-\[
-  g_{\alpha\beta}(x_\beta)
-  =
-  g_{\alpha\lambda}(x_\lambda).
-\]
+is an $x_\lambda\in A_\lambda$ such that $g_{\alpha\beta}(x_\beta)
+=
+g_{\alpha\lambda}(x_\lambda)$.
 Thus
 \[
   y'_\alpha
@@ -516,11 +471,8 @@ Suppose that the following conditions hold:
   $(\HH^i(U,\sh{F}_k))_{k\in\bb{N}}$ satisfies (ML).
 
   \item[{\rm(ii)}]
-  For every $x\in X$ and every $i>0$, one has
-  \[
-    \varinjlim_U\bigl(\varprojlim_k
-    \HH^i(U,\sh{F}_k)\bigr)=0,
-  \]
+  For every $x\in X$ and every $i>0$, one has $\varinjlim_U\bigl(\varprojlim_k
+\HH^i(U,\sh{F}_k)\bigr)=0$,
   where $U$ ranges over the neighbourhoods of $x$ belonging to
   $\mathfrak{B}$.
 
@@ -577,11 +529,8 @@ are surjective.
 By definition, it is enough to show that, for every open subset $V$
 of $X$, the map
 $\Gamma(V,\sh{F}_k)\longrightarrow\Gamma(V,\sh{F}_h)$ is
-surjective. But the sequence
-\[
-  0\longrightarrow\sh{N}_{hk}\longrightarrow\sh{F}_k
-  \longrightarrow\sh{F}_h\longrightarrow0
-\]
+surjective. But the sequence $0\longrightarrow\sh{N}_{hk}\longrightarrow\sh{F}_k
+\longrightarrow\sh{F}_h\longrightarrow0$
 is exact by hypothesis and therefore gives the exact cohomology
 sequence
 \[
@@ -609,12 +558,9 @@ We may therefore apply \sref{0.13.2.3}, which gives
 
 \emph{b)}
 We now pass to the general case. For each $k\in\bb{N}$, consider the
-\emph{canonical resolution}
-\[
-  \sh{C}^\bullet(X,\sh{F}_k)
-  =
-  \bigl(\sh{C}^i(X,\sh{F}_k)\bigr)_{i\geq0}
-\]
+\emph{canonical resolution} $\sh{C}^\bullet(X,\sh{F}_k)
+=
+\bigl(\sh{C}^i(X,\sh{F}_k)\bigr)_{i\geq0}$
 of $\sh{F}_k$ by flasque sheaves (G, II, 4.3).
 For every $i\geq0$, it is clear that
 $(\sh{C}^i(X,\sh{F}_k))_{k\in\bb{N}}$ is a projective system of
@@ -622,19 +568,13 @@ flasque sheaves; let us show that it satisfies the conditions of
 part~\emph{a)}.
 \oldpage[0\textsubscript{III}]{69}
 Indeed, if $\sh{N}_{hk}$ denotes the kernel of $u_{hk}$ for $h\leq k$,
-then the sequence
-\[
-  0\longrightarrow\sh{N}_{hk}\longrightarrow\sh{F}_k
-  \longrightarrow\sh{F}_h\longrightarrow0
-\]
+then the sequence $0\longrightarrow\sh{N}_{hk}\longrightarrow\sh{F}_k
+\longrightarrow\sh{F}_h\longrightarrow0$
 is exact by~{\rm(iii)}, and our assertion follows from the exactness
 of the functor
 $\sh{A}\longmapsto\sh{C}^i(X,\sh{A})$ (G, II, 4.3).
 
-Put
-\[
-  \sh{G}^i=\varprojlim_k\sh{C}^i(X,\sh{F}_k).
-\]
+Put $\sh{G}^i=\varprojlim_k\sh{C}^i(X,\sh{F}_k)$.
 By part~\emph{a)}, one has
 $\HH^j(X,\sh{G}^i)=0$ for $j>0$ and $i\geq0$.
 We shall show that
@@ -677,12 +617,9 @@ We saw in part~\emph{a)} that, for every $i\geq0$, the maps
   \Gamma(U,\sh{C}^i(X,\sh{F}_h))
   \qquad(h\leq k)
 \]
-are surjective. On the other hand,
-\[
-  \HH^i(U,\sh{F}_k)
-  =
-  \HH^i\bigl(\Gamma(U,\sh{C}^\bullet(X,\sh{F}_k))\bigr),
-\]
+are surjective. On the other hand, $\HH^i(U,\sh{F}_k)
+=
+\HH^i\bigl(\Gamma(U,\sh{C}^\bullet(X,\sh{F}_k))\bigr)$,
 since the canonical resolution $\sh{C}^\bullet(U,\sh{F}_k|U)$ is
 induced on $U$ by $\sh{C}^\bullet(X,\sh{F}_k)$.
 By hypothesis~{\rm(i)}, for every $U\in\mathfrak{B}$ we may apply
@@ -730,10 +667,7 @@ are surjective; the conclusion therefore follows once more from
   Conditions~{\rm(i)} and~{\rm(ii)} of \sref{0.13.3.1} are satisfied,
   in particular, if
   $\HH^i(U,\sh{F}_k)=0$ for every $k$, every $i>0$, and every
-  $U\in\mathfrak{B}$, and if, for $U\in\mathfrak{B}$, the maps
-  \[
-    \Gamma(U,\sh{F}_k)\longrightarrow\Gamma(U,\sh{F}_h)
-  \]
+  $U\in\mathfrak{B}$, and if, for $U\in\mathfrak{B}$, the maps $\Gamma(U,\sh{F}_k)\longrightarrow\Gamma(U,\sh{F}_h)$
   are surjective. This is the most frequent case in which
   \sref{0.13.3.1} is applied.
 \end{enumerate}
@@ -822,10 +756,7 @@ We say that $\bb{A}$ is \emph{strict} if the morphisms
 $A_i\longrightarrow A_j$ $(j\leq i)$ are epimorphisms.
 
 When $\bb{A}$ is strict, it follows from \sref{0.13.4.1.3} that, for
-$p\leq k\leq h$, the canonical morphism
-\[
-  \mathrm{gr}^p(A_h)\longrightarrow\mathrm{gr}^p(A_k)
-\]
+$p\leq k\leq h$, the canonical morphism $\mathrm{gr}^p(A_h)\longrightarrow\mathrm{gr}^p(A_k)$
 is an isomorphism; in other words, the projective system
 $(\mathrm{gr}^p(A_k))_{k\in\bb{Z}}$ is essentially constant.
 The sequence of objects $\mathrm{gr}^p(A_p)$, identified for every
@@ -1274,22 +1205,16 @@ $q-p=1$.
 Suppose that an injective resolution ${X''}^\bullet$ of
 $A/\mathrm{F}^{q-1}(A)$ having the required properties has been
 constructed.
-Consider the exact sequence
-\[
-  0\longrightarrow\mathrm{F}^{q-1}(A)
-  \longrightarrow A
-  \longrightarrow A/\mathrm{F}^{q-1}(A)
-  \longrightarrow0,
-\]
+Consider the exact sequence $0\longrightarrow\mathrm{F}^{q-1}(A)
+\longrightarrow A
+\longrightarrow A/\mathrm{F}^{q-1}(A)
+\longrightarrow0$,
 take an injective resolution ${X'}^\bullet$ of
 $\mathrm{F}^{q-1}(A)$, and then choose an injective resolution
-$X^\bullet$ of $A$ so as to obtain an exact sequence
-\[
-  0\longrightarrow {X'}^\bullet
-  \longrightarrow X^\bullet
-  \longrightarrow {X''}^\bullet
-  \longrightarrow0
-\]
+$X^\bullet$ of $A$ so as to obtain an exact sequence $0\longrightarrow {X'}^\bullet
+\longrightarrow X^\bullet
+\longrightarrow {X''}^\bullet
+\longrightarrow0$
 compatible with the preceding sequence (M, V, 2.2).
 It is clear that $X^\bullet$ has the required properties.
 \end{proof}
@@ -1298,22 +1223,16 @@ It is clear that $X^\bullet$ has the required properties.
 \label{0.13.6.3}
 Let $B$ be a second object of $\cat{C}$, equipped with a finite
 filtration $(\mathrm{F}^i(B))_{i\in\bb{Z}}$, let $s$ be an integer,
-and let $u:A\longrightarrow B$ be a morphism such that
-\[
-  u(\mathrm{F}^i(A))\subset\mathrm{F}^{i+s}(B)
-\]
+and let $u:A\longrightarrow B$ be a morphism such that $u(\mathrm{F}^i(A))\subset\mathrm{F}^{i+s}(B)$
 for every $i\in\bb{Z}$.
 If $Y^\bullet=(Y^j)_{j\geq0}$ is an injective resolution of $B$
 equipped with a filtration
 $(\mathrm{F}^i(Y^\bullet))_{i\in\bb{Z}}$ having the properties stated
 in \sref{0.13.6.2}, then there exists a morphism
 $v:X^\bullet\longrightarrow Y^\bullet$, compatible with $u$, such
-that
-\[
-  v(\mathrm{F}^i(X^\bullet))
-  \subset
-  \mathrm{F}^{i+s}(Y^\bullet)
-\]
+that $v(\mathrm{F}^i(X^\bullet))
+\subset
+\mathrm{F}^{i+s}(Y^\bullet)$
 for every $i\in\bb{Z}$.
 Moreover, any two such morphisms $v$ and $v'$ are homotopic.
 \end{corollary}
@@ -1390,26 +1309,17 @@ Now suppose that the hypotheses of \sref{0.13.6.3} hold, and retain
 its notation.
 Since $\mathrm{F}^i(X^\bullet)$ (respectively,
 $\mathrm{F}^i(Y^\bullet)$) is a direct summand of $X^\bullet$
-(respectively, $Y^\bullet$), one has
-\[
-  (\mathrm{T}v)\bigl(\mathrm{T}(\mathrm{F}^i(X^\bullet))\bigr)
-  \subset
-  \mathrm{T}(\mathrm{F}^{i+s}(Y^\bullet))
-\]
+(respectively, $Y^\bullet$), one has $(\mathrm{T}v)\bigl(\mathrm{T}(\mathrm{F}^i(X^\bullet))\bigr)
+\subset
+\mathrm{T}(\mathrm{F}^{i+s}(Y^\bullet))$
 for every $i\in\bb{Z}$.
 The definitions in \sref{0.11.2.2} then show that, for
-$1\leq r\leq+\infty$, $\mathrm{T}v$ defines morphisms
-\[
-  \mathrm{B}_r^{pq}(\mathrm{T}(X^\bullet))
-  \longrightarrow
-  \mathrm{B}_r^{p+s,q-s}(\mathrm{T}(Y^\bullet))
-\]
-and
-\[
-  \mathrm{Z}_r^{pq}(\mathrm{T}(X^\bullet))
-  \longrightarrow
-  \mathrm{Z}_r^{p+s,q-s}(\mathrm{T}(Y^\bullet)),
-\]
+$1\leq r\leq+\infty$, $\mathrm{T}v$ defines morphisms $\mathrm{B}_r^{pq}(\mathrm{T}(X^\bullet))
+\longrightarrow
+\mathrm{B}_r^{p+s,q-s}(\mathrm{T}(Y^\bullet))$
+and $\mathrm{Z}_r^{pq}(\mathrm{T}(X^\bullet))
+\longrightarrow
+\mathrm{Z}_r^{p+s,q-s}(\mathrm{T}(Y^\bullet))$,
 and hence a morphism
 \[
   w_r:
@@ -1417,19 +1327,13 @@ and hence a morphism
   \longrightarrow
   \mathrm{E}_r^{p+s,q-s}(B).
 \]
-Similarly, on the abutments one has morphisms
-\[
-  u_n:
-  \RR^n\mathrm{T}(A)
-  \longrightarrow
-  \RR^n\mathrm{T}(B)
-\]
-such that
-\[
-  u_n\bigl(\mathrm{F}^p(\RR^n\mathrm{T}(A))\bigr)
-  \subset
-  \mathrm{F}^{p+s}(\RR^n\mathrm{T}(B)).
-\]
+Similarly, on the abutments one has morphisms $u_n:
+\RR^n\mathrm{T}(A)
+\longrightarrow
+\RR^n\mathrm{T}(B)$
+such that $u_n\bigl(\mathrm{F}^p(\RR^n\mathrm{T}(A))\bigr)
+\subset
+\mathrm{F}^{p+s}(\RR^n\mathrm{T}(B))$.
 The definition of the $d_r^{pq}$ (M, XV, 1) also shows that the
 diagrams
 \[
@@ -1479,12 +1383,9 @@ homomorphism
   h:S\longrightarrow\Hom_{\cat{C}}(A,A)
 \end{equation}
 \oldpage[0\textsubscript{III}]{75}
-such that, for every $t\in\mathrm{F}^i(S)$,
-\[
-  h_t(\mathrm{F}^i(A))
-  \subset
-  \mathrm{F}^{i+j}(A)
-\]
+such that, for every $t\in\mathrm{F}^i(S)$, $h_t(\mathrm{F}^i(A))
+\subset
+\mathrm{F}^{i+j}(A)$
 for every pair $i,j$.
 For brevity, we then say that $A$ is equipped with the structure of a
 \emph{filtered $S$--$\cat{C}$-module} over the filtered ring $S$.
@@ -1605,10 +1506,7 @@ For each $k$, construct an injective resolution
 $\mathrm{X}_k^\bullet=(\mathrm{X}_k^j)_{j\geq0}$ of $A_k$ having the
 properties of \sref{0.13.6.2}.
 The canonical morphisms $A_{k+1}\longrightarrow A_k$ allow us, by
-\sref{0.13.6.3}, to define for each $k$ a morphism of complexes
-\[
-  \mathrm{X}_{k+1}^\bullet\longrightarrow\mathrm{X}_k^\bullet
-\]
+\sref{0.13.6.3}, to define for each $k$ a morphism of complexes $\mathrm{X}_{k+1}^\bullet\longrightarrow\mathrm{X}_k^\bullet$
 compatible with the filtrations and making
 $\bb{X}^\bullet=(\mathrm{X}_k^\bullet)_{k\in\bb{Z}}$ a projective
 system of complexes.
@@ -1645,12 +1543,9 @@ $\mathrm{T}(\bb{X}^\bullet)$ of complexes
 $\mathrm{T}(\mathrm{X}_k^\bullet)$ satisfies the hypotheses of
 \sref{0.13.5.3}.
 The results of \sref{0.13.5.4}, \sref{0.13.5.5}, and
-\sref{0.13.5.6} therefore apply to the spectral sequences
-\[
-  \mathrm{E}\bigl(\mathrm{T}(\mathrm{X}_k^\bullet)\bigr)
-  =
-  \mathrm{E}(A_k).
-\]
+\sref{0.13.5.6} therefore apply to the spectral sequences $\mathrm{E}\bigl(\mathrm{T}(\mathrm{X}_k^\bullet)\bigr)
+=
+\mathrm{E}(A_k)$.
 For $1\leq r\leq+\infty$, we write
 $\mathrm{E}_r^{pq}(\bb{A})$ in place of
 $\mathrm{E}_r^{pq}(\mathrm{T}(\bb{X}^\bullet))$
@@ -2008,12 +1903,9 @@ and the following lemma.
 \label{0.13.7.7.2}
 Let $S$ be a Noetherian $\mathfrak{J}$-adic ring, and let $M$
 be an $S$-module equipped with a codiscrete filtration
-$(\mathrm{F}^p(M))_{p\in\bb{Z}}$ such that
-\[
-  \mathfrak{J}\mathrm{F}^p(M)
-  \subset
-  \mathrm{F}^{p+1}(M).
-\]
+$(\mathrm{F}^p(M))_{p\in\bb{Z}}$ such that $\mathfrak{J}\mathrm{F}^p(M)
+\subset
+\mathrm{F}^{p+1}(M)$.
 Thus $M$ is a filtered module over $S$ endowed with its
 $\mathfrak{J}$-adic filtration.
 Suppose moreover that $M$ is separated for the topology defined by
@@ -2039,14 +1931,11 @@ Then the following conditions are equivalent:
   They are induced by
   $\mathfrak{J}\otimes_S\mathrm{F}^p(M)
   \longrightarrow\mathrm{F}^{p+1}(M)$, taking account of the fact
-  that the image of the composite homomorphism
-  \[
-    \mathfrak{J}\otimes_S\mathrm{F}^{p+1}(M)
-    \longrightarrow
-    \mathfrak{J}\otimes_S\mathrm{F}^p(M)
-    \longrightarrow
-    \mathrm{F}^{p+1}(M)
-  \]
+  that the image of the composite homomorphism $\mathfrak{J}\otimes_S\mathrm{F}^{p+1}(M)
+\longrightarrow
+\mathfrak{J}\otimes_S\mathrm{F}^p(M)
+\longrightarrow
+\mathrm{F}^{p+1}(M)$
   is
   $\mathfrak{J}\mathrm{F}^{p+1}(M)
   \subset\mathrm{F}^{p+2}(M)$.

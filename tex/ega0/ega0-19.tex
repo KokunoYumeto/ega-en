@@ -206,27 +206,16 @@ Then, setting $w=\widehat v\circ s\circ j'$, one has $w\circ u=\widehat v\circ s
 \begin{corollary}[19.1.7]
 \label{0.19.1.7}
 Suppose that the topologies of $M$ and $N$ are derived from that of $A$, and let $(\mathfrak J_\lambda)$ be a fundamental system of open ideals in $A$.
-For $u$ to be formally left invertible, it is necessary and sufficient that, for every $\lambda$, the homomorphism
-\[
-  u_\lambda:M/\mathfrak J_\lambda M\longrightarrow N/\mathfrak J_\lambda N
-\]
+For $u$ to be formally left invertible, it is necessary and sufficient that, for every $\lambda$, the homomorphism $u_\lambda:M/\mathfrak J_\lambda M\longrightarrow N/\mathfrak J_\lambda N$
 induced by $u$ by passing to quotients be left invertible (in other words, be an isomorphism of $M/\mathfrak J_\lambda M$ onto a direct summand of $N/\mathfrak J_\lambda N$).
 \end{corollary}
 
 Indeed, the condition is sufficient, since for $V'=\mathfrak J_\lambda M$ in condition~b) of \sref{0.19.1.5}, one answers the question by taking $W''=\mathfrak J_\lambda N$, $V''=V'$, and $h$ such that $h\circ u_\lambda$ is the identity on $M/\mathfrak J_\lambda M$.
-Conversely, if $u$ is formally left invertible, then for every $\lambda$, by \sref{0.19.1.5}, b), there are $\mu$ with $\mathfrak J_\mu\subset\mathfrak J_\lambda$ and a homomorphism $h:N/\mathfrak J_\mu N\to M/\mathfrak J_\lambda M$ such that the canonical homomorphism $M/\mathfrak J_\mu M\to M/\mathfrak J_\lambda M$ factorizes as
-\[
-  M/\mathfrak J_\mu M\xrightarrow{u_\mu}N/\mathfrak J_\mu N
-  \xrightarrow{h}M/\mathfrak J_\lambda M.
-\]
+Conversely, if $u$ is formally left invertible, then for every $\lambda$, by \sref{0.19.1.5}, b), there are $\mu$ with $\mathfrak J_\mu\subset\mathfrak J_\lambda$ and a homomorphism $h:N/\mathfrak J_\mu N\to M/\mathfrak J_\lambda M$ such that the canonical homomorphism $M/\mathfrak J_\mu M\to M/\mathfrak J_\lambda M$ factorizes as $M/\mathfrak J_\mu M\xrightarrow{u_\mu}N/\mathfrak J_\mu N\xrightarrow{h}M/\mathfrak J_\lambda M$.
 But since
 $h(\mathfrak J_\lambda(N/\mathfrak J_\mu N))=\mathfrak J_\lambda h(N/\mathfrak J_\mu N)
  \subset\mathfrak J_\lambda(M/\mathfrak J_\lambda M)=0$,
-$h$ factorizes canonically as
-\[
-  N/\mathfrak J_\mu N\longrightarrow N/\mathfrak J_\lambda N
-  \xrightarrow{s}M/\mathfrak J_\lambda M,
-\]
+$h$ factorizes canonically as $N/\mathfrak J_\mu N\longrightarrow N/\mathfrak J_\lambda N\xrightarrow{s}M/\mathfrak J_\lambda M$,
 and it is immediate that $s$ is a left inverse of $u_\lambda$.
 
 \begin{proposition}[19.1.8]
@@ -259,11 +248,7 @@ We show by induction on $n$ that homomorphisms $s'_n:P_n\to N_n$ can be defined 
   }
 \]
 are commutative.
-Indeed, $g\circ s_{n+1}\setmin s'_n\circ h$ is a homomorphism from $P_{n+1}$ into
-\[
-  u_n(M_n)=u_{n+1}(M_{n+1})/
-  \mathfrak J_nu_{n+1}(M_{n+1});
-\]
+Indeed, $g\circ s_{n+1}\setmin s'_n\circ h$ is a homomorphism from $P_{n+1}$ into $u_n(M_n)=u_{n+1}(M_{n+1})/\mathfrak J_nu_{n+1}(M_{n+1})$;
 since $P_{n+1}$ is a projective $(A/\mathfrak J_{n+1})$-module, this homomorphism factorizes as
 \[
   P_{n+1}\xrightarrow{t_{n+1}}u_{n+1}(M_{n+1})
@@ -347,10 +332,7 @@ Moreover, one may suppose that $\mathfrak J$ is the maximal ideal $\mathfrak J_0
 
 \oldpage[0\textsubscript{IV-1}]{76}
 
-$u_{00}:M/\mathfrak J_0M\to N/\mathfrak J_0N$, obtained by tensoring $u_0$ with $1_{A/\mathfrak J_0}$, since
-\[
-  M/\mathfrak J_0M=(M/\mathfrak JM)\otimes_{A/\mathfrak J}(A/\mathfrak J_0).
-\]
+$u_{00}:M/\mathfrak J_0M\to N/\mathfrak J_0N$, obtained by tensoring $u_0$ with $1_{A/\mathfrak J_0}$, since $M/\mathfrak J_0M=(M/\mathfrak JM)\otimes_{A/\mathfrak J}(A/\mathfrak J_0)$.
 \footnote{The French source prints $N/\mathfrak J_0M$ as the codomain of $u_{00}$; the module type requires $N/\mathfrak J_0N$.}
 Suppose then that $\mathfrak J$ is maximal, so that $A/\mathfrak J$ is a field.
 It plainly suffices to prove that $M$ is a free $A$-module under the hypotheses of the statement:
@@ -478,10 +460,7 @@ for every open ideal $\mathfrak J$ of $A$, every pair of discrete $(A/\mathfrak 
 \label{0.19.2.2}
 To verify the condition of \sref{0.19.2.1}, one may plainly restrict, replacing $Q$ by $v(M)$ and $P$ by $u^{-1}(v(M))$, to the case where $v$ itself is surjective.
 Then $Q$ is isomorphic to $M/V$, where $V$ is an open submodule of $M$ such that $\mathfrak JM\subset V$.
-The condition of \sref{0.19.2.1} is therefore equivalent to requiring that, for every discrete $(A/\mathfrak J)$-module $P$ and every surjective $A$-homomorphism $u:P\to M/V$, there exist an open submodule $V'\subset V$ of $M$ and an $A$-homomorphism $w:M/V'\to P$ such that the canonical homomorphism $M/V'\to M/V$ factorizes as
-\[
-  M/V'\xrightarrow{w}P\xrightarrow{u}M/V.
-\]
+The condition of \sref{0.19.2.1} is therefore equivalent to requiring that, for every discrete $(A/\mathfrak J)$-module $P$ and every surjective $A$-homomorphism $u:P\to M/V$, there exist an open submodule $V'\subset V$ of $M$ and an $A$-homomorphism $w:M/V'\to P$ such that the canonical homomorphism $M/V'\to M/V$ factorizes as $M/V'\xrightarrow{w}P\xrightarrow{u}M/V$.
 It suffices to verify this condition when $\mathfrak J$ ranges over a fundamental system of neighbourhoods of $0$ in $A$ formed of ideals.
 \end{env}
 
@@ -507,10 +486,7 @@ Then $M$ is formally projective if and only if it is strictly formally projectiv
 We have just seen that the condition is sufficient.
 Conversely, suppose that $M$ is formally projective, and let $(\mathfrak J_\lambda)$ be a fundamental system of open ideals in $A$.
 For each $\lambda$, let $P$ be a free $(A/\mathfrak J_\lambda)$-module and let $u:P\to M/\mathfrak J_\lambda M$ be a surjective $(A/\mathfrak J_\lambda)$-homomorphism.
-There is then a $\mathfrak J_\mu\subset\mathfrak J_\lambda$ such that the canonical homomorphism $M/\mathfrak J_\mu M\to M/\mathfrak J_\lambda M$ factorizes as
-\[
-  M/\mathfrak J_\mu M\xrightarrow{w}P\xrightarrow{u}M/\mathfrak J_\lambda M.
-\]
+There is then a $\mathfrak J_\mu\subset\mathfrak J_\lambda$ such that the canonical homomorphism $M/\mathfrak J_\mu M\to M/\mathfrak J_\lambda M$ factorizes as $M/\mathfrak J_\mu M\xrightarrow{w}P\xrightarrow{u}M/\mathfrak J_\lambda M$.
 But since $w(\mathfrak J_\lambda(M/\mathfrak J_\mu M))\subset\mathfrak J_\lambda P=0$, $w$ factorizes through a map $v:M/\mathfrak J_\lambda M\to P$, and it is clear that $u\circ v$ is the identity on $M/\mathfrak J_\lambda M$.
 Thus this $(A/\mathfrak J_\lambda)$-module is projective.
 \end{proof}
@@ -543,10 +519,9 @@ Let $A$ be a topological ring, $M$ a topological $A$-module.
     W_{\lambda\mu}=\operatorname{Im}(M\otimes_A\mathfrak J'_\mu)+\operatorname{Im}(V_\lambda\otimes_A A'),
   \]
   where $\lambda$ and $\mu$ satisfy $\mathfrak J_\lambda A'\subset\mathfrak J'_\mu$.
-  Since
-  \[
-    (M\otimes_A A')/W_{\lambda\mu}=(M/V_\lambda)\otimes_{A/\mathfrak J_\lambda}(A'/\mathfrak J'_\mu)
-  \]
+  Since $(M\otimes_A A')/W_{\lambda\mu}
+    =(M/V_\lambda)\otimes_{A/\mathfrak J_\lambda}
+      (A'/\mathfrak J'_\mu)$
   and $M/V_\lambda$ is projective over $A/\mathfrak J_\lambda$, the module $M'/W_{\lambda\mu}$ is projective over $A'/\mathfrak J'_\mu$.
 \end{enumerate}
 \end{proof}
@@ -564,10 +539,7 @@ We say that $B$ is a \emph{formally smooth} $A$-algebra if, for every discrete t
 The definition \sref{0.19.3.1} amounts to saying that the following property holds:
 \begin{enumerate}
   \item[(P)] For every open ideal $\mathfrak{R}$ of the $A$-algebra $B$ and every $A$-homomorphism $u':B/\mathfrak{R}\to C/\mathfrak{J}$, there exists an open ideal $\mathfrak{R}'\subset\mathfrak{R}$ of $B$ such that the homomorphism
-  $B\to B/\mathfrak{R}\xrightarrow{u'}C/\mathfrak{J}$ factorizes as
-  \[
-    B\to B/\mathfrak{R}'\xrightarrow{v'}C\to C/\mathfrak{J},
-  \]
+  $B\to B/\mathfrak{R}\xrightarrow{u'}C/\mathfrak{J}$ factorizes as $B\to B/\mathfrak{R}'\xrightarrow{v'}C\to C/\mathfrak{J}$,
   where $v'$ is an $A$-homomorphism.
 \end{enumerate}
 
@@ -831,18 +803,12 @@ We shall use the following elementary lemma.
 \begin{lemma}[19.3.10.2]
 \label{0.19.3.10.2}
 Let $F$ be a ring, not necessarily commutative, and let $\mathfrak{a}$ and $\mathfrak{b}$ be two-sided ideals of $F$.
-Then the fibre product
-\[
-  (F/\mathfrak{a})\times_{F/(\mathfrak{a}+\mathfrak{b})}(F/\mathfrak{b})
-\]
+Then the fibre product $(F/\mathfrak{a})\times_{F/(\mathfrak{a}+\mathfrak{b})}(F/\mathfrak{b})$
 is canonically identified with $F/(\mathfrak{a}\cap\mathfrak{b})$.
 \end{lemma}
 
 \begin{proof}
-This is the special case of \sref{0.18.1.7} obtained by replacing, in diagram \sref{0.18.1.7.1}, $G$ by $F/(\mathfrak{a}\cap\mathfrak{b})$, $\mathfrak{J}'$ by $\mathfrak{b}/(\mathfrak{a}\cap\mathfrak{b})$, $F$ by $F/\mathfrak{b}$, $\mathfrak{R}$ by $(\mathfrak{a}+\mathfrak{b})/\mathfrak{b}$, $B$ by $F/(\mathfrak{a}+\mathfrak{b})$, and $\theta$ by the canonical isomorphism
-\[
-  (\mathfrak{a}+\mathfrak{b})/\mathfrak{b}\xrightarrow{\sim}\mathfrak{a}/(\mathfrak{a}\cap\mathfrak{b}).
-\]
+This is the special case of \sref{0.18.1.7} obtained by replacing, in diagram \sref{0.18.1.7.1}, $G$ by $F/(\mathfrak{a}\cap\mathfrak{b})$, $\mathfrak{J}'$ by $\mathfrak{b}/(\mathfrak{a}\cap\mathfrak{b})$, $F$ by $F/\mathfrak{b}$, $\mathfrak{R}$ by $(\mathfrak{a}+\mathfrak{b})/\mathfrak{b}$, $B$ by $F/(\mathfrak{a}+\mathfrak{b})$, and $\theta$ by the canonical isomorphism $(\mathfrak{a}+\mathfrak{b})/\mathfrak{b}\xrightarrow{\sim}\mathfrak{a}/(\mathfrak{a}\cap\mathfrak{b})$.
 \end{proof}
 
 \oldpage[0\textsubscript{IV-1}]{85}
@@ -1023,10 +989,7 @@ whence the conclusion.
 Let $A$ be a topological ring, $B$ a topological $A$-algebra (commutative).
 For $B$ to be a formally smooth $A$-algebra, it is necessary and sufficient that for
 \oldpage[0\textsubscript{IV-1}]{87}
-every discrete topological $B$-module $L$, annihilated by an open ideal of $B$, we have (cf.~\sref{0.18.5.1})
-\[
-  \operatorname{Exalcotop}_A(B,L)=0.
-\]
+every discrete topological $B$-module $L$, annihilated by an open ideal of $B$, we have (cf.~\sref{0.18.5.1}) $\operatorname{Exalcotop}_A(B,L)=0$.
 \end{proposition}
 
 \begin{proof}
@@ -1096,11 +1059,8 @@ As $B'$ is by hypothesis a formally smooth $A'$-algebra, there exists by \sref{0
 it is clear that if $\varphi:B_\mu\to B_\lambda$ is the canonical homomorphism, and $c$ the class of $f\circ(\varphi\times\varphi)$ in the group $\mathrm{H}^2_{A_\mu}(B_\mu,L)^s$, then $c'$ is the canonical image of $c$.
 Now, if $\mathrm{P}_\bullet$ is the complex relative to the rings $A_\mu$ and $B_\mu$ defined in \sref{0.18.4.5}, the analogous complex relative to the rings $A'_\mu$ and $B'_\mu$ is evidently $\mathrm{P}_\bullet\otimes_A A'$;
 under hypothesis~$1^\circ$, the construction of $\mathrm{P}_\bullet$ shows that it is a projective $A_\mu$-module of finite type.
-One concludes from Bourbaki, \emph{Alg.}, chap.~II, $3^{\text{e}}$~\'{e}d., \S\,5, n$^\circ$\,3, prop.~7 that, under both hypotheses, one has, up to canonical isomorphism,
-\[
-  \operatorname{Hom}_{A'_\mu}(\mathrm{P}_\bullet\otimes_A A',L\otimes_A A')
-  =\operatorname{Hom}_{A_\mu}(\mathrm{P}_\bullet,L)\otimes_A A'.
-\]
+One concludes from Bourbaki, \emph{Alg.}, chap.~II, $3^{\text{e}}$~\'{e}d., \S\,5, n$^\circ$\,3, prop.~7 that, under both hypotheses, one has, up to canonical isomorphism, $\operatorname{Hom}_{A'_\mu}(\mathrm{P}_\bullet\otimes_A A',L\otimes_A A')
+=\operatorname{Hom}_{A_\mu}(\mathrm{P}_\bullet,L)\otimes_A A'$.
 As $A'$ is a flat $A$-module, one has by \sref{0.18.4.5}
 \[
   \mathrm{H}^2_{A'_\mu}(B'_\mu,L')^s = (\mathrm{H}^2_{A_\mu}(B_\mu,L)^s)\otimes_A A'
@@ -1321,26 +1281,17 @@ all $n$ (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \S\,2, n$^\circ$\,8, cor.~3 of
 Under the general hypotheses of \sref{0.19.5.4}, suppose furthermore that $\mathfrak{J}$ is a \emph{maximal} ideal of $B$, so that $C=B/\mathfrak{J}$ is a field, and that $\mathfrak{J}/\mathfrak{J}^2$ is a vector space of \emph{finite} dimension.
 Then the conditions $a)$, $b)$ and $c)$ of \sref{0.19.5.4} are also equivalent to the following:
 \begin{enumerate}
-  \item[d)] \emph{Given} a polynomial algebra $E=C[T_1,\ldots,T_n]$ over the field $C$, and denoting by $\mathfrak{n}$ the maximal ideal of $E$ generated by the $T_i$ ($1\leq i\leq n$), then for every ideal $\mathfrak{b}$ of $E$ containing a power $\mathfrak{n}^k$, every homomorphism $v:B\to E/\mathfrak{b}$ of $C$-augmented $A$-algebras factorizes as
-  \[
-    B\xrightarrow{w}E/\mathfrak{n}^k\to E/\mathfrak{b},
-  \]
+  \item[d)] \emph{Given} a polynomial algebra $E=C[T_1,\ldots,T_n]$ over the field $C$, and denoting by $\mathfrak{n}$ the maximal ideal of $E$ generated by the $T_i$ ($1\leq i\leq n$), then for every ideal $\mathfrak{b}$ of $E$ containing a power $\mathfrak{n}^k$, every homomorphism $v:B\to E/\mathfrak{b}$ of $C$-augmented $A$-algebras factorizes as $B\xrightarrow{w}E/\mathfrak{n}^k\to E/\mathfrak{b}$,
   where $w$ is an $A$-homomorphism.
 \end{enumerate}
 Indeed, $\mathfrak{J}/\mathfrak{J}^2$ being here a free $C$-module, it suffices to verify that condition $d)$ implies that the canonical homomorphism
 $\varphi:\mathbf{S}_C^*(\mathfrak{J}/\mathfrak{J}^2)\to\gr_\mathfrak{J}^\bullet(B)$
 is bijective.
 Here $\mathbf{S}_C^*(\mathfrak{J}/\mathfrak{J}^2)$ identifies with the polynomial algebra $E=C[T_1,\ldots,T_n]$, where $n=\rg_C(\mathfrak{J}/\mathfrak{J}^2)$, and the ideal of augmentation of $E$ is the ideal $\mathfrak{n}$ generated by the $T_i$.
-For every integer $k\geq 0$, formal smoothness of the discrete $A$-algebra $C$ gives, as in \sref{0.19.5.4.2}, a surjective $A$-homomorphism
-\[
-  f:E/\mathfrak{n}^{k+1}\to B/\mathfrak{J}^{k+1}
-\]
+For every integer $k\geq 0$, formal smoothness of the discrete $A$-algebra $C$ gives, as in \sref{0.19.5.4.2}, a surjective $A$-homomorphism $f:E/\mathfrak{n}^{k+1}\to B/\mathfrak{J}^{k+1}$
 such that $\gr^j(f)=\varphi_j$ for every $j\leq k$.
-If $\mathfrak{b}/\mathfrak{n}^{k+1}=\Ker(f)$, then $B/\mathfrak{J}^{k+1}$ identifies with $E/\mathfrak{b}$, and condition $d)$ factorizes the canonical homomorphism $B\to B/\mathfrak{J}^{k+1}$ as
-\[
-  B\xrightarrow{w}E/\mathfrak{n}^{k+1}
-  \xrightarrow{f}B/\mathfrak{J}^{k+1}.
-\]
+If $\mathfrak{b}/\mathfrak{n}^{k+1}=\Ker(f)$, then $B/\mathfrak{J}^{k+1}$ identifies with $E/\mathfrak{b}$, and condition $d)$ factorizes the canonical homomorphism $B\to B/\mathfrak{J}^{k+1}$ as $B\xrightarrow{w}E/\mathfrak{n}^{k+1}
+\xrightarrow{f}B/\mathfrak{J}^{k+1}$.
 Since $\gr^0(f)$ is the identity, $w(\mathfrak{J})\subset\mathfrak{n}/\mathfrak{n}^{k+1}$, hence $w(\mathfrak{J}^{k+1})=0$.
 As in \sref{0.19.5.4.2}, it follows that $\varphi_k$ is injective for every $k$, which proves the assertion.
 \end{remark}
@@ -1363,17 +1314,11 @@ so that
   =(\mathfrak{b}_\alpha+\mathfrak{J}^n)/
    (\mathfrak{b}_\alpha+\mathfrak{J}^{n+1}).
 \]
-The $C$-modules
-\[
-  ((\mathfrak{b}_\alpha\cap\mathfrak{J}^n)+\mathfrak{J}^{n+1})/
-  \mathfrak{J}^{n+1}
-\]
+The $C$-modules $((\mathfrak{b}_\alpha\cap\mathfrak{J}^n)+\mathfrak{J}^{n+1})/
+\mathfrak{J}^{n+1}$
 of $\mathfrak{J}^n/\mathfrak{J}^{n+1}$ form a fundamental system of open submodules of the topological $C$-module $\mathfrak{J}^n/\mathfrak{J}^{n+1}$.
-Since
-\[
-  (\mathfrak{b}_\alpha\cap\mathfrak{J}^n)+\mathfrak{J}^{n+1}
-  =\mathfrak{J}^n\cap(\mathfrak{b}_\alpha+\mathfrak{J}^{n+1}),
-\]
+Since $(\mathfrak{b}_\alpha\cap\mathfrak{J}^n)+\mathfrak{J}^{n+1}
+=\mathfrak{J}^n\cap(\mathfrak{b}_\alpha+\mathfrak{J}^{n+1})$,
 we have
 \[
 \begin{aligned}
@@ -1608,18 +1553,12 @@ $\mathbf{gr}^0(v_{\beta\delta}):C_\delta\to C_\beta$ is nilpotent because $B$ is
 preadmissible.
 Thus $E_{\beta,n}$ identifies with $F_{\delta,n}/\mathfrak{R}$.
 Since $B$ is a formally smooth $A$-algebra, the continuous canonical
-$A$-homomorphism $p_{\beta,n}:B\to E_{\beta,n}$ factorizes as
-\[
-  B\xrightarrow{w}F_{\delta,n}
-  \xrightarrow{v_{\beta\delta}}E_{\beta,n},
-\]
+$A$-homomorphism $p_{\beta,n}:B\to E_{\beta,n}$ factorizes as $B\xrightarrow{w}F_{\delta,n}
+\xrightarrow{v_{\beta\delta}}E_{\beta,n}$,
 where $w$ is continuous.
 As $F_{\delta,n}$ is discrete, there exists $\lambda\geq\delta$ such that $w$
-vanishes on $\mathfrak{b}_\lambda$, and hence $w$ factorizes as
-\[
-  B\to B/\mathfrak{b}_\lambda
-  \xrightarrow{w_\lambda}F_{\delta,n}.
-\]
+vanishes on $\mathfrak{b}_\lambda$, and hence $w$ factorizes as $B\to B/\mathfrak{b}_\lambda
+\xrightarrow{w_\lambda}F_{\delta,n}$.
 Consider the composite
 \[
   B/\mathfrak{b}_\lambda\xrightarrow{w_\lambda}F_{\delta,n}
@@ -1774,11 +1713,7 @@ $\mathbf{gr}(p_{\gamma\lambda})=\mathbf{gr}(v_{\gamma\delta}\circ w_{\delta\lamb
   \subset\Ker\bigl(w_{\beta\gamma}\circ\gr(p_{\gamma\lambda})\bigr).
 \end{split}
 \]
-This proves the lemma: for every $\mu\geq\gamma$, define $u_{\beta\mu}$ as the composite
-\[
-  E_{\mu,n}\xrightarrow{p_{\gamma\mu}}E_{\gamma,n}
-  \xrightarrow{u_{\beta\gamma}}F_{\beta,n}.
-\]
+This proves the lemma: for every $\mu\geq\gamma$, define $u_{\beta\mu}$ as the composite $E_{\mu,n}\xrightarrow{p_{\gamma\mu}}E_{\gamma,n}\xrightarrow{u_{\beta\gamma}}F_{\beta,n}$.
 \end{proof}
 
 \begin{env}[19.5.6.8]
@@ -2058,11 +1993,8 @@ $B'\otimes_{k'}k''$ (equal to the formal power series ring
 $(K'\otimes_{k'}k'')[[T_1,\ldots,T_n]]$) are the rings
 $K_i''[[T_1,\ldots,T_n]]$, where the $K_i''$ are the field components of
 $K'\otimes_{k'}k''$.
-Since the local components of $B'\otimes_{k'}k''$ are also local components of
-\[
-  \widehat{A}\otimes_k k''
-  =(\widehat{A}\otimes_k k')\otimes_{k'}k'',
-\]
+Since the local components of $B'\otimes_{k'}k''$ are also local components of $\widehat{A}\otimes_k k''
+=(\widehat{A}\otimes_k k')\otimes_{k'}k''$,
 the hypothesis $b')$ remains true when $k'$ is replaced by any one of its finite extensions.
 In particular, one can suppose $k'$ \emph{quasi-Galois}, hence a Galois extension of a radicial extension $k_0'$ of $k$;
 $A'=\widehat{A}\otimes_k k'$ can then be written
@@ -2536,10 +2468,7 @@ The proof of \sref{0.19.4.3} transcribes immediately.
 \begin{proposition}[19.9.8]
 \label{0.19.9.8}
 Let $\Lambda$ be a topological ring, $A$ a topological $\Lambda$-algebra, $B$ a topological $A$-algebra.
-For $B$ to be an $A$-algebra formally smooth relative to $\Lambda$, it is necessary and sufficient that for every discrete topological $B$-module $L$, annihilated by an open ideal of $B$, one has (cf.\ 18.4.2)
-\[
-  \operatorname{Exalcotop}_{A/\Lambda}(B,L) = 0.
-\]
+For $B$ to be an $A$-algebra formally smooth relative to $\Lambda$, it is necessary and sufficient that for every discrete topological $B$-module $L$, annihilated by an open ideal of $B$, one has (cf.\ 18.4.2) $\operatorname{Exalcotop}_{A/\Lambda}(B,L)=0$.
 \end{proposition}
 
 \begin{proof}

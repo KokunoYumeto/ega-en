@@ -39,18 +39,12 @@ Let $X$ be a locally Noetherian prescheme and $Y$ a subprescheme regularly immer
 \end{proposition}
 
 \begin{proof}
-By virtue of \sref{IV.5.1.3.2}, $\operatorname{codim}_y(Y,X)$ is equal to the least value of the dimensions of the local rings $A=\sh O_{X,z}$, where $z$ runs through the generic points of the irreducible components of $Y$ containing $y$. Such a point $z$ belongs to every neighbourhood of $y$ in $X$, and $\sh J_z/\sh J_z^2$ is a free $(A/\sh J_z)$-module of rank
-\[
-  n=\operatorname{codim}_y^*(Y,X).
-\]
+By virtue of \sref{IV.5.1.3.2}, $\operatorname{codim}_y(Y,X)$ is equal to the least value of the dimensions of the local rings $A=\sh O_{X,z}$, where $z$ runs through the generic points of the irreducible components of $Y$ containing $y$. Such a point $z$ belongs to every neighbourhood of $y$ in $X$, and $\sh J_z/\sh J_z^2$ is a free $(A/\sh J_z)$-module of rank $n=\operatorname{codim}_y^*(Y,X)$.
 It therefore remains to prove that $\dim(A)=n$.
 
 \oldpage[IV-4]{186}
 
-Since $z$ is a maximal point of the subprescheme $Y$ defined by $\sh J$, one has $\dim(A/\sh J_z)=0$; hence $\sh J_z$ is an ideal of definition of the Noetherian local ring $A$. Moreover, the quasi-regularity of $\sh J$ implies that $\sh J_z^m/\sh J_z^{m+1}$ is a free $(A/\sh J_z)$-module of rank $\binom{m+n-1}{n-1}$. If $r$ denotes the length of the Artinian ring $A/\sh J_z$, the length of $\sh J_z^m/\sh J_z^{m+1}$ is therefore
-\[
-  r\binom{m+n-1}{n-1}.
-\]
+Since $z$ is a maximal point of the subprescheme $Y$ defined by $\sh J$, one has $\dim(A/\sh J_z)=0$; hence $\sh J_z$ is an ideal of definition of the Noetherian local ring $A$. Moreover, the quasi-regularity of $\sh J$ implies that $\sh J_z^m/\sh J_z^{m+1}$ is a free $(A/\sh J_z)$-module of rank $\binom{m+n-1}{n-1}$. If $r$ denotes the length of the Artinian ring $A/\sh J_z$, the length of $\sh J_z^m/\sh J_z^{m+1}$ is therefore $r\binom{m+n-1}{n-1}$.
 Consequently, the Hilbert--Samuel polynomial of $A$ for the $\sh J_z$-adic filtration has degree $n$, which proves the proposition by \sref[0]{0.16.2.3}.
 \end{proof}
 
@@ -564,10 +558,7 @@ The canonical immersion $Y'\to X'$ is regular and of codimension $1$, and $Y'$ i
 \end{lemma}
 
 \begin{proof}
-The second assertion follows from \sref[II]{II.3.5.3}, applied to the canonical injection $Y\to X$, because
-\[
-  \sh{S}\otimes_{\sh{O}_X}\sh{O}_Y=\operatorname{gr}_{\sh{J}}^*(\sh{O}_X)
-\]
+The second assertion follows from \sref[II]{II.3.5.3}, applied to the canonical injection $Y\to X$, because $\sh{S}\otimes_{\sh{O}_X}\sh{O}_Y=\operatorname{gr}_{\sh{J}}^*(\sh{O}_X)$
 by definition: $\sh{O}_Y\cong\sh{O}_X/\sh{J}$ and $\sh{J}^n\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J})\cong\sh{J}^n/\sh{J}^{n+1}$.
 \end{proof}
 
@@ -641,10 +632,7 @@ Finally, to prove that $Y'$ is $S$-flat, we may again suppose that $S$ and $X$ a
   \mathfrak{J}=\mathfrak{J}_0\mathrm{B},\qquad
   \operatorname{gr}_{\mathfrak{J}}^*(\mathrm{B})=\operatorname{gr}_{\mathfrak{J}_0}^*(\mathrm{B}_0)\otimes_{\mathrm{A}_0}\mathrm{A},
 \]
-with $\operatorname{gr}_{\mathfrak{J}_0}^*(\mathrm{B}_0)$ flat over $\mathrm{A}_0$. By~(i),
-\[
-  \bigoplus_{n\geq0}\mathfrak{J}^n=\left(\bigoplus_{n\geq0}\mathfrak{J}_0^n\right)\otimes_{\mathrm{A}_0}\mathrm{A}=\left(\bigoplus_{n\geq0}\mathfrak{J}_0^n\right)\otimes_{\mathrm{B}_0}\mathrm{B}.
-\]
+with $\operatorname{gr}_{\mathfrak{J}_0}^*(\mathrm{B}_0)$ flat over $\mathrm{A}_0$. By~(i), $\bigoplus_{n\geq0}\mathfrak{J}^n=\left(\bigoplus_{n\geq0}\mathfrak{J}_0^n\right)\otimes_{\mathrm{A}_0}\mathrm{A}=\left(\bigoplus_{n\geq0}\mathfrak{J}_0^n\right)\otimes_{\mathrm{B}_0}\mathrm{B}$.
 The algebra $\bigoplus_{n\geq0}\mathfrak{J}_0^n$ is generated over $\mathrm{B}_0$ by the finitely generated ideal $\mathfrak{J}_0$; it is therefore of finite type, and hence of finite presentation because $\mathrm{B}_0$ is Noetherian. Thus $\bigoplus_{n\geq0}\mathfrak{J}^n$ is a finitely presented $\mathrm{B}$-algebra. Likewise, $\operatorname{Proj}(\bigoplus_{n\geq0}\mathfrak{J}_0^n)\to\operatorname{Spec}(\mathrm{B}_0)$ is of finite type (\sref[II]{II.2.7.1}), hence of finite presentation, and its base change $X'\to X$ is of finite presentation.
 By \sref{IV.19.4.2}, the canonical immersion $Y'\to X'$ is regular. Since $Y'$ is $S$-flat by~(i), \sref{IV.19.2.4} shows that $Y'\to X'$ is transversally regular relative to $S$ and that $X'$ is $S$-flat at the points of $Y'$, hence on an open neighbourhood of $Y'$ by \sref{IV.11.3.1}. Finally, since $\operatorname{gr}_\sh{J}^*(\sh{O}_X)$ is an $S$-flat $\sh{O}_X$-algebra, \sref{IV.11.3.4} shows that $X$ is $S$-flat at the points of $Y$, and hence on a neighbourhood of $Y$ by \sref{IV.11.3.1}.
 \end{enumerate}
@@ -709,10 +697,7 @@ On the other hand, let $\mathrm{P}=\mathbf{P}(\sh{E})$ be the projective bundle 
 Finally, let $\sh{K}$ be the quasi-coherent Ideal of $\sh{O}_{\mathrm{P}}$ which is the image of the restriction $v:\sh{H}\to\sh{O}_{\mathrm{P}}$ of $p^*(u)$, and let $Z$ be the closed sub-prescheme of $\mathrm{P}$ defined by $\sh{K}$.
 \oldpage[IV-4]{202}
 \begin{enumerate}[label=(\roman*)]
-  \item The image of $X'$ by the closed immersion $j:X'\to\mathbf{P}(\sh{E})$ corresponding to the surjective homomorphism of graded $\sh{O}_X$-Algebras
-  \[
-    \mathbf{S}_{\sh{O}_X}(\sh{E})\longrightarrow\mathbf{S}_{\sh{O}_X}(\sh{J})\longrightarrow\bigoplus_{n\geq 0}\sh{J}^n
-  \]
+  \item The image of $X'$ by the closed immersion $j:X'\to\mathbf{P}(\sh{E})$ corresponding to the surjective homomorphism of graded $\sh{O}_X$-Algebras $\mathbf{S}_{\sh{O}_X}(\sh{E})\longrightarrow\mathbf{S}_{\sh{O}_X}(\sh{J})\longrightarrow\bigoplus_{n\geq 0}\sh{J}^n$
   (\sref[II]{II.3.6.2}) is a closed sub-prescheme of $Z$.
   \item If $\sh{E}$ is an $\sh{O}_X$-Module locally free of rank $m$, $\sh{H}$ is an $\sh{O}_{\mathrm{P}}$-Module locally free of rank $m-1$.
   \item Suppose $X$ is locally Noetherian, that $\sh{E}$ is locally free of finite type, that the sub-prescheme $Y$ is regular, and that at every point $x\in Y$, the canonical immersion $i:Y\to X$ is regular and of codimension equal to $\operatorname{rg}_{\sh{O}_{X,x}}(\sh{E}_x)$ (which we shall express by saying that the homomorphism $u$ is regular at the point $x$ (cf.\ chap.~V)).
@@ -1274,10 +1259,7 @@ Set $\mathrm{B}=\operatorname{gr}_\mathfrak{R}^*\mathrm{A}\otimes_{\mathrm{A}/\m
 \]
 \end{env}
 
-For this, set
-\[
-  \mathrm{Z}=\mathrm{Q}/((\mathrm{Q}\cap\mathrm{P})[\mathrm{T}_1,\ldots,\mathrm{T}_n]).
-\]
+For this, set $\mathrm{Z}=\mathrm{Q}/((\mathrm{Q}\cap\mathrm{P})[\mathrm{T}_1,\ldots,\mathrm{T}_n])$.
 This is a sub-$\mathrm{B}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$-module of
 \[
   \begin{aligned}
@@ -1286,10 +1268,7 @@ This is a sub-$\mathrm{B}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$-module of
   &\qquad=(\mathrm{P}/(\mathrm{Q}\cap\mathrm{P}))[\mathrm{T}_1,\ldots,\mathrm{T}_n].
   \end{aligned}
 \]
-As an $(\mathrm{A}/\mathfrak{L})$-module, it is therefore isomorphic to a submodule of a direct sum of $(\mathrm{A}/\mathfrak{L})$-modules isomorphic to
-\[
-  \mathrm{P}/(\mathrm{Q}\cap\mathrm{P})=(\mathrm{P}+\mathrm{Q})/\mathrm{Q}.
-\]
+As an $(\mathrm{A}/\mathfrak{L})$-module, it is therefore isomorphic to a submodule of a direct sum of $(\mathrm{A}/\mathfrak{L})$-modules isomorphic to $\mathrm{P}/(\mathrm{Q}\cap\mathrm{P})=(\mathrm{P}+\mathrm{Q})/\mathrm{Q}$.
 But $(\mathrm{P}+\mathrm{Q})/\mathrm{Q}$ is an $(\mathrm{A}/\mathfrak{L})$-module isomorphic to a submodule of $\mathrm{P}[\mathrm{T}_1,\ldots,\mathrm{T}_n]/\mathrm{Q}$, which is none other than $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$ by the diagram \sref{IV.19.7.1.1}.
 
 \begin{equation}

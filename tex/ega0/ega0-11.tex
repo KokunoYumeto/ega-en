@@ -156,11 +156,8 @@ if $\inf(F^p(X))=0$, \emph{discrete} if there exists a $p$ such that $F^p(X)=0$,
 \emph{co-discrete} if there exists $p$ such that $F^p(X)=X$.
 
 We will say that a spectral sequence $E=(E_r^{pq},E^n)$ is \emph{weakly
-convergent} if we have
-\[
-  B_\infty(E_2^{pq})=\sup_k(B_k(E_2^{pq})),\qquad
-  Z_\infty(E_2^{pq})=\inf_k(Z_k(E_2^{pq}))
-\]
+convergent} if we have $B_\infty(E_2^{pq})=\sup_k(B_k(E_2^{pq}))$,
+$Z_\infty(E_2^{pq})=\inf_k(Z_k(E_2^{pq}))$
 (in other words the objects $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$
 are determined by the data a) to c) of the spectral sequence E). We will say
 that the spectral sequence E is \emph{regular} if it is weakly
@@ -1154,10 +1151,7 @@ covariant additive functor
 from $\boldsymbol{C}$ to $\boldsymbol{C}'$ commuting with
 inductive limits (we suppose that filtered inductive limits exist
 and are exact in $\boldsymbol{C}$ and $\boldsymbol{C}'$). Then
-$\mathbf R^\bullet T(K^\bullet)$ is isomorphic to the inductive limit
-\[
-  \varinjlim_{r\to-\infty}\mathbf R^\bullet T(K_{(r)}^\bullet)
-\]
+$\mathbf R^\bullet T(K^\bullet)$ is isomorphic to the inductive limit $\varinjlim_{r\to-\infty}\mathbf R^\bullet T(K_{(r)}^\bullet)$
 as $r$ tends to $-\infty$.
 \end{lemma}
 
@@ -1192,11 +1186,7 @@ $-\infty$; since direct sums and inductive limits commute, the simple
 complex associated to $L^{\bullet\bullet}$ is also the inductive limit
 of the simple complex associated to $L_{(r)}^{\bullet\bullet}$. Since $T$
 commutes with inductive limits by hypothesis, and so does
-cohomology (because of the exactness of the functor $\varinjlim$), we indeed have
-\[
-  \mathrm H^\bullet(T(L^{\bullet\bullet}))=
-  \varinjlim\mathrm H^\bullet(T(L_{(r)}^{\bullet\bullet}))
-\]
+cohomology (because of the exactness of the functor $\varinjlim$), we indeed have $\mathrm H^\bullet(T(L^{\bullet\bullet}))=\varinjlim\mathrm H^\bullet(T(L_{(r)}^{\bullet\bullet}))$
 up to isomorphism.
 
 Lemma (\hyperref[0.11.5.1]{11.5.1}) makes it possible to extend to arbitrary complexes
@@ -1214,16 +1204,8 @@ $\boldsymbol{C}$.
 
 \begin{proof}
 Let us show that we can reduce to the case of complexes bounded below:
-if we have an exact sequence
-\[
-  0\longrightarrow K'^\bullet\longrightarrow K^\bullet
-  \longrightarrow K''^\bullet\longrightarrow0
-\]
-of complexes, we evidently deduce from it for each $r$ an exact sequence
-\[
-  0\longrightarrow K_{(r)}'^\bullet\longrightarrow K_{(r)}^\bullet
-  \longrightarrow K_{(r)}''^\bullet\longrightarrow0,
-\]
+if we have an exact sequence $0\longrightarrow K'^\bullet\longrightarrow K^\bullet\longrightarrow K''^\bullet\longrightarrow0$
+of complexes, we evidently deduce from it for each $r$ an exact sequence $0\longrightarrow K_{(r)}'^\bullet\longrightarrow K_{(r)}^\bullet\longrightarrow K_{(r)}''^\bullet\longrightarrow0$,
 whence, by hypothesis, an exact sequence
 \[
   \ldots\longrightarrow\mathbf R^nT(K_{(r)}'^\bullet)
@@ -1344,11 +1326,7 @@ $\boldsymbol{K}$.
 These preliminaries having been established, consider an injective
 Cartan--Eilenberg resolution $L'^{\bullet\bullet}$ of $K^\bullet$ and a
 resolution $L^{\bullet\bullet}$ of $K^\bullet$ consisting of objects of
-$\mathfrak J$, and let us show that we have an isomorphism
-\[
-  \mathrm H^\bullet(T(L'^{\bullet\bullet}))\xrightarrow{\sim}
-  \mathrm H^\bullet(T(L^{\bullet\bullet})).
-\]
+$\mathfrak J$, and let us show that we have an isomorphism $\mathrm H^\bullet(T(L'^{\bullet\bullet}))\xrightarrow{\sim}\mathrm H^\bullet(T(L^{\bullet\bullet}))$.
 Indeed, we deduce from (\hyperref[0.11.5.2.2]{11.5.2.2}) a morphism of
 bicomplexes $T(L'^{\bullet\bullet})\to T(L^{\bullet\bullet})$, and consequently
 a morphism
@@ -1754,21 +1732,12 @@ functor $T$ with respect to the simple complex $K_{i,\bullet}$.
 
 \begin{proof}
 Denote by $L_\bullet$ the simple complex associated to
-$K_{\bullet\bullet}$, so that
-\[
-L_i=\bigoplus_{r+s=i}K_{rs},
-\]
-and set
-\[
-N_{ij}=\bigoplus_{r+s=i}M_{rsj};
-\]
+$K_{\bullet\bullet}$, so that $L_i=\bigoplus_{r+s=i}K_{rs}$,
+and set $N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
 it is clear that for each $i$, $N_{i,\bullet}$ is a projective
 resolution of $L_i$ in $\boldsymbol{C}$; it therefore follows from
 (\hyperref[0.11.6.3]{11.6.3}) and
-(\hyperref[0.11.6.4]{11.6.4}) that we have a functorial isomorphism
-\[
-\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}));
-\]
+(\hyperref[0.11.6.4]{11.6.4}) that we have a functorial isomorphism $\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}))$;
 since the simple complex associated to the bicomplex $T(N_{\bullet\bullet})$ is
 also associated to the tricomplex $T(M_{\bullet\bullet\bullet})$, this proves
 the first assertion of the statement.
@@ -1779,10 +1748,7 @@ relative to the simple complex $L_\bullet$, which are none other than the
 sequences $\mathop{}^{(b')}E$ and $\mathop{}^{(a)}E$ respectively.
 
 Let us now regard $M_{\bullet\bullet\bullet}$ as a bicomplex
-$U_{\bullet\bullet}$ with
-\[
-U_{ij}=\bigoplus_{r+s=j}M_{irs};
-\]
+$U_{\bullet\bullet}$ with $U_{ij}=\bigoplus_{r+s=j}M_{irs}$;
 $H_\bullet(T(M_{\bullet\bullet\bullet}))$ is again the abutment of the two
 spectral sequences of the bicomplex $T(U_{\bullet\bullet})$. Now, for every $i$,
 $M_{i,\bullet\bullet}$ is a bicomplex satisfying the conditions of
@@ -1793,16 +1759,8 @@ $H_q^{\mathrm{II}}(T(U_{i,\bullet}))=
 $T(U_{\bullet\bullet})$ is none other than $\mathop{}^{(b)}E$. On the other
 hand, for every $r$, $M_{\bullet,r,\bullet}$ is a Cartan--Eilenberg resolution
 of the simple complex $K_{\bullet,r}$; the computation made in (M, XV, 2)
-shows that
-\[
-H_q^{\mathrm I}(T(M_{\bullet,rs}))
-=T(H_q^{\mathrm I}(M_{\bullet,rs})),
-\]
-whence
-\[
-H_q^{\mathrm I}(T(U_{\bullet,j}))
-=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}));
-\]
+shows that $H_q^{\mathrm I}(T(M_{\bullet,rs}))=T(H_q^{\mathrm I}(M_{\bullet,rs}))$,
+whence $H_q^{\mathrm I}(T(U_{\bullet,j}))=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}))$;
 in other words, the simple complex
 $H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ is none other than the simple complex
 associated to the bicomplex
@@ -1838,11 +1796,8 @@ in each of their degrees.
 $\boldsymbol{C}$ such that for each pair $(r,s)$,
 $M_{rs,\bullet}$ is a resolution of $K_{rs}$ and
 $L_nT(M_{ijk})=0$ for all triples $(i,j,k)$ and every $n>0$. Then we have
-an isomorphism
-\[
-\mathbf{L}_\bullet T(K_{\bullet\bullet})
-\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}));
-\]
+an isomorphism $\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
 indeed, with the notation of the proof of
 (\hyperref[0.11.7.2]{11.7.2}), $N_{i,\bullet}$ is a resolution of
 $L_i$ such that $L_nT(N_{ij})=0$ for $n>0$ and every pair $(i,j)$, and it
@@ -1877,31 +1832,17 @@ $A$); we set $|\sigma|=\{\alpha_0,\ldots,\alpha_h\}$; recall that the
 complex of chains $\mathrm C_\bullet(A)$ is the graded free abelian group
 generated by the elements of $\Sigma(A)$,
 $(\alpha_0,\ldots,\alpha_h)$ being of degree $h$, with a differential
-defined by
-\[
-d(\alpha_0,\ldots,\alpha_h)=
-\sum_{j=0}^{h}(-1)^j
-(\alpha_0,\ldots,\widehat{\alpha_j},\ldots,\alpha_h).
-\]
+defined by $d(\alpha_0,\ldots,\alpha_h)=\sum_{j=0}^{h}(-1)^j(\alpha_0,\ldots,\widehat{\alpha}_j,\ldots,\alpha_h)$.
 The subgroup $\mathrm D_\bullet(A)$ of $\mathrm C_\bullet(A)$ generated by
 the chains $\sigma=(\alpha_0,\ldots,\alpha_h)$ for which two of the
 $\alpha_i$ are equal, and by the chains
-$\pi(\sigma)-\varepsilon_\pi.\sigma$, where, for every permutation $\pi$,
-\[
-\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})
-\]
+$\pi(\sigma)-\varepsilon_\pi.\sigma$, where, for every permutation $\pi$, $\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$
 and $\varepsilon_\pi$ is the signature of $\pi$, is a subcomplex of
 $\mathrm C_\bullet(A)$ whose elements are called \emph{degenerate
 chains}; we set
 $\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, and we have a
-natural homomorphism of complexes
-\[
-p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A).
-\]
-On the other hand, we define a homomorphism of complexes
-\[
-j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)
-\]
+natural homomorphism of complexes $p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+On the other hand, we define a homomorphism of complexes $j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)$
 in the following way: we totally order $A$; to the class
 mod.~$\mathrm D_\bullet(A)$ of a simplex
 $\sigma=(\alpha_0,\ldots,\alpha_h)$ we assign $0$ if two of the
@@ -1924,26 +1865,13 @@ d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)
 \]
 The natural homomorphisms
 $\mathrm C_\bullet(A)\to\mathrm L_\bullet(A)$,
-$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ define a homomorphism
-\[
-p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
-\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B),
-\]
-the latter tensor product being isomorphic to
-\[
-\frac{\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)}
-{\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)
-+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B)}.
-\]
+$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ define a homomorphism $p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+the latter tensor product being isomorphic to $(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))/(\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B))$.
 Similarly, by means of the homomorphisms
 $\mathrm L_\bullet(A)\to\mathrm C_\bullet(A)$ and
 $\mathrm L_\bullet(B)\to\mathrm C_\bullet(B)$ defined in
 (\hyperref[0.11.8.1]{11.8.1}) (by means of total orders on $A$ and $B$),
-we define a homomorphism
-\[
-j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)
-\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
-\]
+we define a homomorphism $j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
 such that $p\circ j$ is the identity.
 \end{env}
 
@@ -1951,11 +1879,7 @@ such that $p\circ j$ is the identity.
 With this notation:
 \begin{proposition}[11.8.3]
 \label{0.11.8.3}
-\emph{There exists a homotopy
-\[
-h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
-\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),
-\]
+\emph{There exists a homotopy $h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$,
 such that $h(\sigma,\tau)$ is a linear combination of pairs of simplices
 $(\sigma_i,\tau_i)$ with $|\sigma_i|\subset|\sigma|$,
 $|\tau_i|\subset|\tau|$, and such that, for $f=j\circ p$, we have}
@@ -1969,14 +1893,8 @@ f-1=h\circ d+d\circ h.
 \begin{proof}
 It suffices to define $h$ on each pair $(\sigma,\tau)$ of simplices,
 arguing by induction on the sum of the degrees of $\sigma$ and $\tau$, since
-we can take $h=0$ when this sum is $0$. Let
-\[
-\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau));
-\]
-by virtue of the induction hypothesis and the definition of $d$, we have
-\[
-\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|).
-\]
+we can take $h=0$ when this sum is $0$. Let $\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau))$;
+by virtue of the induction hypothesis and the definition of $d$, we have $\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$.
 We have
 \[
 d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-d(h(d(\sigma,\tau)))
@@ -2017,10 +1935,7 @@ a complex of cochains $\mathrm C^\bullet(A,B;\mathscr S)$ as the set
 of families $\lambda=(\lambda(\sigma,\tau))$, where $(\sigma,\tau)$ ranges over
 $\Sigma(A)\times\Sigma(B)$, with
 $\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$ for every pair
-$(\sigma,\tau)$. The differential is given as follows: if
-\[
-d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i),
-\]
+$(\sigma,\tau)$. The differential is given as follows: if $d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i)$,
 we have $|\sigma_i|\subset|\sigma|$, $|\tau_i|\subset|\tau|$ for every $i$,
 and we take
 \[
@@ -2044,11 +1959,7 @@ $\mathrm L^\bullet(A,B;\mathscr S)$ of $\mathrm C^\bullet(A,B;\mathscr S)$.
 
 \begin{proposition}[11.8.5]
 \label{0.11.8.5}
-\emph{The canonical injection
-\[
-\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow
-\mathrm C^\bullet(A,B;\mathscr S)
-\]
+\emph{The canonical injection $\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
 defines an isomorphism on the cohomology of these two complexes.}
 \end{proposition}
 
@@ -2080,10 +1991,7 @@ isomorphic to the cohomology of the complex of cochains defined as follows:
 we form the complex of chains $\mathrm P_\bullet(A,B)$, consisting of the
 linear combinations of the $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ such
 that $\sigma$ and $\tau$ have the same degree; the differential of this
-complex is given by
-\[
-d(\sigma,\tau)=\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)
-\]
+complex is given by $d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$
 if
 \[
 d\sigma=\sum_j(-1)^j\sigma_j,\qquad
@@ -2184,26 +2092,17 @@ $(k\in\mathbb Z)$, and we have the commutative diagrams
 }
 \]
 \oldpage[0\textsubscript{III}]{46}
-for $(\sigma,\tau)\leq(\sigma',\tau')$. Then one verifies immediately that
-\[
-\mathrm C^\bullet(A,B;\mathscr S^\bullet)
-=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}
-\]
-is a bicomplex of abelian groups, and
-\[
-\mathrm L^\bullet(A,B;\mathscr S^\bullet)
-=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)
-\]
+for $(\sigma,\tau)\leq(\sigma',\tau')$. Then one verifies immediately that $\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+is a bicomplex of abelian groups, and $\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
 is a subbicomplex of it.
 \end{env}
 
 \begin{proposition}[11.8.9]
 \label{0.11.8.9}
-\emph{The canonical injection
-\[
-\mathrm L^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
-\mathrm C^\bullet(A,B;\mathscr S^\bullet)
-\]
+\emph{The canonical injection $\mathrm L^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
 defines an isomorphism on the cohomology of these two bicomplexes.}
 \end{proposition}
 
@@ -2216,11 +2115,8 @@ since $\mathrm C^{hk}=\mathrm L^{hk}=0$ for $h<0$, the second spectral
 sequences of these bicomplexes are regular
 (\hyperref[0.11.3.3]{11.3.3}); the homomorphism
 $\mathrm L^{\bullet\bullet}\to\mathrm C^{\bullet\bullet}$ therefore gives a
-morphism of spectral sequences
-\[
-{}''E(\mathrm L^{\bullet\bullet})\longrightarrow
-{}''E(\mathrm C^{\bullet\bullet})
-\]
+morphism of spectral sequences ${}''E(\mathrm L^{\bullet\bullet})\to
+{}''E(\mathrm C^{\bullet\bullet})$
 which, for the $E_2$ terms, reduces to
 \[
 \label{0.11.8.9.1}
@@ -2239,11 +2135,8 @@ therefore follows from (\hyperref[0.11.1.5]{11.1.5}).
 \begin{env}[11.8.10]
 \label{0.11.8.10}
 Similarly, with the notation of (\hyperref[0.11.8.6]{11.8.6}), we have
-canonical homomorphisms of bicomplexes
-\[
-\mathrm C^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
-\mathrm P^\bullet(A,B;\mathscr S^\bullet)
-\]
+canonical homomorphisms of bicomplexes $\mathrm C^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
+\mathrm P^\bullet(A,B;\mathscr S^\bullet)$
 (with the obvious notation), and the same reasoning as in
 (\hyperref[0.11.8.9]{11.8.9}), based this time on
 (\hyperref[0.11.8.6]{11.8.6}), shows that this homomorphism again gives
@@ -2323,11 +2216,8 @@ $B_j(Q_\bullet)\in\boldsymbol{K}'$ for $j<i$.
 \item[$(\mathrm{II}_i)$] For $j<i$, the homomorphism
 $H_j(Q_\bullet)\to H_j(P_\bullet)$ deduced from the family $(u_k)_{k\leq i}$
 is an isomorphism.
-\item[$(\mathrm{III}_i)$] The composite morphism
-\[
-v_i:Z_i(Q_\bullet)\longrightarrow Z_i(P_\bullet)
-\longrightarrow H_i(P_\bullet)
-\]
+\item[$(\mathrm{III}_i)$] The composite morphism $v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
 (where the left arrow is the restriction of $u_i$ and the right arrow
 the canonical morphism) is an epimorphism.
 \end{enumerate}
@@ -2377,19 +2267,13 @@ $B_i(Q_\bullet)=N_i$, which verifies $(\mathrm I_{i+1})$. The commutativity
 of the diagrams (\hyperref[0.11.9.1.3]{11.9.1.3}) and
 (\hyperref[0.11.9.1.4]{11.9.1.4}) shows that
 $d_{i+1}\circ u_{i+1}=u_i\circ d_{i+1}$. By definition of $N_i$, the
-morphism
-\[
-H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\longrightarrow H_i(P_\bullet)
-\]
+morphism $H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\to H_i(P_\bullet)$
 deduced from the system of the $u_k$ ($k\leq i+1$) is the morphism deduced
 from $v_i$ by passage to the quotients, so it is an isomorphism since $v_i$
 is an epimorphism, whence $(\mathrm{II}_{i+1})$. Finally, we have
 $Q''_{i+1}\subset Z_{i+1}(Q_\bullet)$ by definition; the choice of
-$u''_{i+1}$ shows that the morphism
-\[
-v_{i+1}:Z_{i+1}(Q_\bullet)\longrightarrow Z_{i+1}(P_\bullet)
-\longrightarrow H_{i+1}(P_\bullet)
-\]
+$u''_{i+1}$ shows that the morphism $v_{i+1}:Z_{i+1}(Q_\bullet)\to Z_{i+1}(P_\bullet)
+\to H_{i+1}(P_\bullet)$
 is an epimorphism, since its restriction to $Q''_{i+1}$ already is, whence
 $(\mathrm{III}_{i+1})$. The induction can therefore be continued, and the
 proposition is proved.
@@ -2424,10 +2308,7 @@ hypothesis that $A$ is Noetherian.
 \item[{\rm(i)}] Under the conditions of
 (\hyperref[0.11.9.2]{11.9.2}), suppose moreover that the $P_i$ are flat
 right $A$-modules. Then, for every left $A$-module $M$,
-the homomorphism of complexes
-\[
-u\otimes 1:Q_\bullet\otimes_A M\longrightarrow P_\bullet\otimes_A M
-\]
+the homomorphism of complexes $u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
 again defines an isomorphism
 $H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
 H_\bullet(P_\bullet\otimes_A M)$ of the homology, as we will see in
@@ -2470,10 +2351,7 @@ a complex of left $A$-modules of finite length. We call the
 \begin{proposition}[11.10.2]
 \label{0.11.10.2}
 \emph{For every finite complex $M^\bullet$ of left $A$-modules of finite
-length, we have
-\[
-\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))
-\]
+length, we have $\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))$
 ($H^\bullet(M^\bullet)$ being regarded as a complex with the trivial
 differential). In particular, if the sequence
 (\hyperref[0.11.10.1.1]{11.10.1.1}) is exact, we have

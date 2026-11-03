@@ -49,11 +49,7 @@ Let $M$, $N$ be two graded $S$-modules; we define on $M\otimes_S N$ a
 structure of \emph{graded} $S$-module as follows. On the tensor product
 $M\otimes_{\mathbf{Z}}N$, we can define a structure of graded
 $\mathbf{Z}$-module (where $\mathbf{Z}$ is graded by
-$\mathbf{Z}_0=\mathbf{Z}$, $\mathbf{Z}_n=0$ for $n\ne0$) by setting
-\[
-  (M\otimes_{\mathbf{Z}}N)_q
-  =\bigoplus_{m+n=q}M_m\otimes_{\mathbf{Z}}N_n
-\]
+$\mathbf{Z}_0=\mathbf{Z}$, $\mathbf{Z}_n=0$ for $n\ne0$) by setting $(M\otimes_{\mathbf{Z}}N)_q=\bigoplus_{m+n=q}M_m\otimes_{\mathbf{Z}}N_n$
 (since $M$ and $N$ are the direct sums of the $M_m$ and of the $N_n$
 respectively, we know that $M\otimes_{\mathbf{Z}}N$ can be canonically
 identified with the direct sum of all the
@@ -635,10 +631,7 @@ $\operatorname{Spec}(S_{(f)})$.
 \begin{proof}
 In the first place, $\psi_f$ is continuous; for if $h\in S_{nd}$ is such
 that $h/f^n\in\psi_f(\mathfrak{p})$, we have by definition
-$h\in\mathfrak{p}$, and conversely, hence
-\[
-  \psi_f^{-1}(D(h/f^n))=D_+(hf)
-\]
+$h\in\mathfrak{p}$, and conversely, hence $\psi_f^{-1}(D(h/f^n))=D_+(hf)$
 and our assertion follows from formula
 (\hyperref[II.2.3.3.2]{2.3.3.2}). Moreover, the $D_+(hf)$, where $h$
 runs through the sets $S_{nd}$, form a basis of the topology of
@@ -1212,10 +1205,7 @@ isomorphic, whence the proposition.
 
 \begin{corollary}[2.5.8]
 \label{II.2.5.8}
-On the open set
-\[
-  U=\bigcup_{f\in S_d}D_+(f),
-\]
+On the open set $U=\bigcup_{f\in S_d}D_+(f)$,
 the restriction of the $\mathcal{O}_X$-module $(S(nd))\supertilde$ is an
 invertible $(\mathcal{O}_X|U)$-module
 (\hyperref[0.5.4.1]{\textbf{0}, 5.4.1}).
@@ -1399,48 +1389,22 @@ Since $X$ is the union of the $D_+(f)$ for $f\in S_1$
 (\hyperref[II.2.3.14]{2.3.14}), we are reduced to proving that
 $\lambda_f$ and $\mu_f$ are isomorphisms, under the hypotheses considered,
 when $f$ is homogeneous and \emph{of degree $1$}. Now, we then define a
-$\mathbf{Z}$-bilinear map
-\[
-  M_m\times N_n\longrightarrow
-  M_{(f)}\otimes_{S_{(f)}}N_{(f)}
-\]
+$\mathbf{Z}$-bilinear map $M_m\times N_n\longrightarrow M_{(f)}\otimes_{S_{(f)}}N_{(f)}$
 by assigning to $(x,y)$ the element
 $(x/f^m)\otimes(y/f^n)$ (when $m<0$, we write $x/f^m$ for
 $f^{-m}x/1$); these maps define a
-$\mathbf{Z}$-linear map
-\[
-  M\otimes_{\mathbf{Z}}N\longrightarrow
-  M_{(f)}\otimes_{S_{(f)}}N_{(f)},
-\]
-and if $s\in S_q$, this map sends $(sx)\otimes y$ to
-\[
-  (s/f^q)\bigl((x/f^m)\otimes(y/f^n)\bigr)
-\]
+$\mathbf{Z}$-linear map $M\otimes_{\mathbf{Z}}N\longrightarrow M_{(f)}\otimes_{S_{(f)}}N_{(f)}$,
+and if $s\in S_q$, this map sends $(sx)\otimes y$ to $(s/f^q)\bigl((x/f^m)\otimes(y/f^n)\bigr)$
 (for $x\in M_m$, $y\in N_n$). We therefore deduce a di-homomorphism of
-modules
-\[
-  \gamma_f:M\otimes_S N\longrightarrow
-  M_{(f)}\otimes_{S_{(f)}}N_{(f)},
-\]
+modules $\gamma_f:M\otimes_S N\longrightarrow M_{(f)}\otimes_{S_{(f)}}N_{(f)}$,
 relative to the canonical homomorphism $S\to S_{(f)}$ (sending
 $s\in S_q$ to $s/f^q$). Suppose moreover that for an element
 $\sum_i(x_i\otimes y_i)$ of $M\otimes_S N$ ($x_i$, $y_i$ homogeneous of
-respective degrees $m_i$, $n_i$) we have
-\[
-  f^r\sum_i(x_i\otimes y_i)=0,
-\]
+respective degrees $m_i$, $n_i$) we have $f^r\sum_i(x_i\otimes y_i)=0$,
 in other words $\sum_i(f^rx_i\otimes y_i)=0$. We deduce by virtue of
-(\hyperref[0.1.3.4]{\textbf{0}, 1.3.4}) that
-\[
-  \sum_i(f^rx_i/f^{m_i+r})\otimes(y_i/f^{n_i})=0,
-\]
+(\hyperref[0.1.3.4]{\textbf{0}, 1.3.4}) that $\sum_i(f^rx_i/f^{m_i+r})\otimes(y_i/f^{n_i})=0$,
 that is, $\gamma_f(\sum_i(x_i\otimes y_i))=0$. Consequently $\gamma_f$
-factors as
-\[
-  M\otimes_S N\longrightarrow(M\otimes_S N)_f
-  \xrightarrow{\gamma'_f}
-  M_{(f)}\otimes_{S_{(f)}}N_{(f)}~;
-\]
+factors as $M\otimes_S N\longrightarrow(M\otimes_S N)_f\xrightarrow{\gamma'_f}M_{(f)}\otimes_{S_{(f)}}N_{(f)}$;
 if $\lambda'_f$ is the restriction of $\gamma'_f$
 \oldpage[II]{35}
 to $(M\otimes_S N)_{(f)}$, we verify immediately that $\lambda_f$ and
@@ -1462,11 +1426,7 @@ isomorphism
   \longrightarrow
   \bigl(\operatorname{Hom}_S(S(n),N)\bigr)_{(f)}.
 \]
-On the other hand, let $\eta'_f$ be the isomorphism
-\[
-  N_{(f)}\longrightarrow
-  \operatorname{Hom}_{S_{(f)}}\bigl(S(n)_{(f)},N_{(f)}\bigr)
-\]
+On the other hand, let $\eta'_f$ be the isomorphism $N_{(f)}\to\operatorname{Hom}_{S_{(f)}}(S(n)_{(f)},N_{(f)})$
 which assigns to every $z'\in N_{(f)}$ the homomorphism $v_{z'}$ such
 that $v_{z'}(s/f^k)=sz'/f^{n+k}$ (for
 $s\in S_{n+k}=(S(n))_k$). We easily check that the composite map
@@ -1642,10 +1602,7 @@ $M_0\to M_{(f)}$, and since $M_{(f)}$ is canonically
 \oldpage[II]{37}
 
 identified with $\Gamma(D_+(f),\widetilde{M})$, we thus obtain a
-homomorphism of abelian groups
-\[
-  \alpha_0^f:M_0\longrightarrow\Gamma(D_+(f),\widetilde{M}).
-\]
+homomorphism of abelian groups $\alpha_0^f:M_0\to\Gamma(D_+(f),\widetilde{M})$.
 It is clear that, for every $g\in S_e$ ($e>0$), the diagram
 \[
   \xymatrix{

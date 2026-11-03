@@ -59,10 +59,7 @@ For every integer $n$, the set $\mathrm{F}_n(X)$ of $x\in X$ such that $\dim_x(f
 \begin{proof}
 I) Suppose first that $f$ is locally of finite presentation.
 The question is evidently local on $X$ and on $Y$, and we can therefore suppose $Y=\Spec(A)$, $X=\Spec(B)$ affine, $B$ being an $A$-algebra of finite presentation.
-We know then \sref{IV.8.9.1} that there exist a Noetherian subring $A_0$ of $A$ and an $A_0$-algebra of finite type $B_0$ such that, on setting $Y_0=\Spec(A_0)$ and $X_0=\Spec(B_0)$, we have
-\[
-X=X_0\times_{Y_0}Y,\qquad f=f_0\times 1_Y,
-\]
+We know then \sref{IV.8.9.1} that there exist a Noetherian subring $A_0$ of $A$ and an $A_0$-algebra of finite type $B_0$ such that, on setting $Y_0=\Spec(A_0)$ and $X_0=\Spec(B_0)$, we have $X=X_0\times_{Y_0}Y$, $f=f_0\times 1_Y$,
 where $f_0:X_0\to Y_0$ is the morphism corresponding to the homomorphism $A_0\to B_0$.
 Let $g:Y\to Y_0$ be the morphism corresponding to the canonical injection $A_0\to A$, let $y$ be a point of $Y$, and set $y_0=g(y)$; we know that $f^{-1}(y)=f_0^{-1}(y_0)\otimes_{\mathbf{k}(y_0)}\boldsymbol{k}(y)$, and it follows from \sref{IV.4.2.7} that if $p$ is the canonical projection $f^{-1}(y)\to f_0^{-1}(y_0)$, the irreducible components of $f^{-1}(y)$ are the irreducible components of the spaces $p^{-1}(Z_0)$, where $Z_0$ runs over the set of irreducible components of $f_0^{-1}(y_0)$, and each irreducible component of $p^{-1}(Z_0)$ dominates $Z_0$ and has dimension $\dim(Z_0)$.
 Taking into account \sref[0]{0.14.1.5}, we see therefore that if $g':X\to X_0$ is the canonical projection, $x$ a point of $X$ and $x_0=g'(x)$, we have $\dim_x(f^{-1}(f(x)))=\dim_{x_0}(f_0^{-1}(f_0(x_0)))$, whence $\mathrm{F}_n(X)={g'}^{-1}(\mathrm{F}_n(X_0))$, and we are reduced to proving the theorem when $Y$ is \emph{Noetherian}, which we will henceforth suppose.
@@ -401,14 +398,9 @@ On the other hand, by \sref{IV.13.1.4}, the set $U$ of $x\in X$ that are isolate
 \end{proof}
 
 This lemma being established, to prove that $a)$ implies $b)$, it remains to show that if $x_\lambda$ is a maximal point of $U$, then $g(x_\lambda)=z_\lambda$ is a maximal point of $Z=Y[T_1,\ldots,T_e]$.
-By hypothesis $a)$, we may (after shrinking $U$ if necessary) suppose that $f(x_\lambda)$ is one of the generic points $y_\alpha$ of the irreducible components of $Y$ containing $y$. If $p:Z\to Y$ is the structural morphism, then $p(z_\lambda)=y_\alpha$, and $g$ consequently induces a quasi-finite $\boldsymbol{k}(y_\alpha)$-morphism
-\[
-h:U\cap f^{-1}(y_\alpha)\longrightarrow p^{-1}(y_\alpha).
-\]
-Now $p^{-1}(y_\alpha)=\Spec(\boldsymbol{k}(y_\alpha)[T_1,\ldots,T_e])$ is integral and of dimension $e$. If $z_\lambda$ were not a maximal point of $Z$, it would not be a maximal point of $p^{-1}(y_\alpha)$ \sref[0]{0.2.1.8}, and its closure $Z'_\lambda$ in $p^{-1}(y_\alpha)$ would therefore have dimension $<e$ \sref{IV.4.1.2.1}. But since $h$ is quasi-finite, it follows from \sref{IV.4.1.2} and hypothesis $a)$ that $\dim(Z'_\lambda)\geq e$ (the restriction of $h$ to $\overline{\{x_\lambda\}}$ factorising as
-\[
-\overline{\{x_\lambda\}}\longrightarrow Z'_\lambda\longrightarrow p^{-1}(y_\alpha)
-\]
+By hypothesis $a)$, we may (after shrinking $U$ if necessary) suppose that $f(x_\lambda)$ is one of the generic points $y_\alpha$ of the irreducible components of $Y$ containing $y$. If $p:Z\to Y$ is the structural morphism, then $p(z_\lambda)=y_\alpha$, and $g$ consequently induces a quasi-finite $\boldsymbol{k}(y_\alpha)$-morphism $h:U\cap f^{-1}(y_\alpha)\longrightarrow p^{-1}(y_\alpha)$.
+Now $p^{-1}(y_\alpha)=\Spec(\boldsymbol{k}(y_\alpha)[T_1,\ldots,T_e])$ is integral and of dimension $e$. If $z_\lambda$ were not a maximal point of $Z$, it would not be a maximal point of $p^{-1}(y_\alpha)$ \sref[0]{0.2.1.8}, and its closure $Z'_\lambda$ in $p^{-1}(y_\alpha)$ would therefore have dimension $<e$ \sref{IV.4.1.2.1}. But since $h$ is quasi-finite, it follows from \sref{IV.4.1.2} and hypothesis $a)$ that $\dim(Z'_\lambda)\geq e$ (the restriction of $h$ to $\overline{\{x_\lambda\}}$ factorising as $\overline{\{x_\lambda\}}\longrightarrow Z'_\lambda
+  \longrightarrow p^{-1}(y_\alpha)$
 by \sref[I]{I.5.2.2}). This is a contradiction, and proves that $a)$ implies $b)$.
 
 Let us finally prove that $b)$ implies $a)$.

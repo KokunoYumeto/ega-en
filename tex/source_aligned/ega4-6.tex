@@ -371,14 +371,8 @@ Let $\mathrm{B}$ be a quotient ring of $\mathrm{A}$, and let $f:\Spec(\hat{\math
 \begin{proof}
 As $\mathrm{B}$ is an $\mathrm{A}$-module of finite type, one has $\hat{\mathrm{B}}=\mathrm{B}\otimes_\mathrm{A}\hat{\mathrm{A}}$ \sref[0]{0.7.3.3}; hence $f$ is the restriction to $\Spec(\hat{\mathrm{B}})$ of the canonical morphism $\Spec(\hat{\mathrm{A}})\to\Spec(\mathrm{A})$, and the fibres of these two morphisms at a point of $\Spec(\mathrm{B})$ are the same.
 We are therefore reduced to proving the proposition when $\mathrm{B}=\mathrm{A}$.
-Let $\mathfrak{p}=\mathfrak{j}_x$ be a prime ideal of $\mathrm{A}$. Since $\mathfrak{p}\in\operatorname{Supp}(\mathrm{M})$ by hypothesis, there exists \sref[0]{0.16.5.6} a $\mathrm{M}$-regular sequence $(t_i)_{1\leqslant i\leqslant r}$ of elements of $\mathfrak{p}$ such that
-\[
- \mathrm{N}=\mathrm{M}\big/\Bigl(\sum_{i=1}^r t_i\mathrm{M}\Bigr)
-\]
-is a Cohen--Macaulay $\mathrm{A}$-module, $\mathfrak{p}$ is a minimal associated prime ideal of $\mathrm{N}$, and
-\[
- \dim(\mathrm{N})=\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})=\dim(\mathrm{A}/\mathfrak{p})
-\]
+Let $\mathfrak{p}=\mathfrak{j}_x$ be a prime ideal of $\mathrm{A}$. Since $\mathfrak{p}\in\operatorname{Supp}(\mathrm{M})$ by hypothesis, there exists \sref[0]{0.16.5.6} a $\mathrm{M}$-regular sequence $(t_i)_{1\leqslant i\leqslant r}$ of elements of $\mathfrak{p}$ such that $\mathrm{N}=\mathrm{M}\big/\Bigl(\sum_{i=1}^r t_i\mathrm{M}\Bigr)$
+is a Cohen--Macaulay $\mathrm{A}$-module, $\mathfrak{p}$ is a minimal associated prime ideal of $\mathrm{N}$, and $\dim(\mathrm{N})=\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})=\dim(\mathrm{A}/\mathfrak{p})$
 \sref[0]{0.16.5.9}. The same argument as at the beginning shows that one may replace $\mathrm{M}$ by $\mathrm{N}$ and $\mathrm{A}$ by $\mathrm{A}/(\sum_{i=1}^r t_i\mathrm{A})$; consequently one may suppose that $\mathfrak{p}$ is a minimal prime ideal of $\mathrm{A}$.
 \oldpage[IV-2]{141}
 Set, to simplify, $\mathrm{A}'=\hat{\mathrm{A}}$, $\mathrm{M}'=\hat{\mathrm{M}}=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'$ \sref[0]{0.7.3.3}; we know \sref[0]{0.16.5.2} that $\mathrm{M}'$ is a Cohen-Macaulay $\mathrm{A}'$-module, which implies that for every prime ideal $\mathfrak{p}'$ of $\mathrm{A}'$, $\mathrm{M}'_{\mathfrak{p}'}$ is a Cohen-Macaulay $\mathrm{A}'_{\mathfrak{p}'}$-module \sref[0]{0.16.5.10}.
@@ -666,22 +660,13 @@ B) Let $(\mathrm{L}_\lambda)$ be the filtered family of subextensions of $\mathr
 
 Take, for example, for $\mathrm{X}$ a normal algebraic curve over $k$ \sref[II]{II.7.4.2}. Since the local rings of $\mathrm{X}$ are integrally closed and of dimension~$1$, they are discrete valuation rings and hence regular \sref[II]{II.7.1.6}; consequently $\mathrm{X}$ is a regular $k$-scheme (and \emph{a fortiori} satisfies $(\mathrm{R}_n)$ for every $n\geqslant0$). To say that $\mathrm{X}$ is geometrically integral then means that its field $\mathrm{K}$ of rational functions is a separable and primary extension of $k$ \sref{IV.4.6.3}.
 
-Now let $k$ be a nonperfect field of characteristic $p>2$, and let $a\in k$ be an element not belonging to $k^p$. Let $\mathrm{B}=k[\mathrm{S},\mathrm{T}]$ be the polynomial ring in two indeterminates. The polynomial
-\[
- \mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^2-\mathrm{S}^p+a
-\]
+Now let $k$ be a nonperfect field of characteristic $p>2$, and let $a\in k$ be an element not belonging to $k^p$. Let $\mathrm{B}=k[\mathrm{S},\mathrm{T}]$ be the polynomial ring in two indeterminates. The polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^2-\mathrm{S}^p+a$
 is irreducible in $\mathrm{B}$, since one checks at once that $\mathrm{S}^p\setmin a$ is not a square in $k[\mathrm{S}]$; hence $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}=\mathrm{B}/\mathrm{PB}$, is an irreducible affine curve over $k$. To see that $\mathrm{X}$ is regular, it suffices to show that it is normal \sref[II]{II.7.4.5}. But $\mathrm{A}=k[\mathrm{S}][t]$, where $t$ is a root of $\mathrm{P}$ considered as a polynomial in $\mathrm{T}$ over $k[\mathrm{S}]$, so the field $\mathrm{K}=\mathrm{R}(\mathrm{X})$ of rational functions of $\mathrm{X}$ is the field of fractions $k(\mathrm{S})[\mathrm{T}]/(\mathrm{P})$ of $\mathrm{A}$, a quadratic extension of $k(\mathrm{S})$, hence separable over $k(\mathrm{S})$ and \emph{a fortiori} over $k$. Since $2$ is invertible in $k$, one checks at once that $\mathrm{A}$ is the integral closure of $k[\mathrm{S}]$ in $\mathrm{K}$; thus $\mathrm{A}$ is integrally closed, and $\mathrm{X}$ is regular. Moreover, if an element $f+tg$ of $\mathrm{K}$ (with $f,g\in k(\mathrm{S})$) is algebraic over $k$, then so are its norm and trace over $k(\mathrm{S})$; since $k(\mathrm{S})$ is a purely transcendental extension of $k$, it follows readily that $f\in k$ and $g=0$. Thus $k$ is algebraically closed in $\mathrm{K}$, and \emph{a fortiori} $\mathrm{K}$ is a primary extension
 
 \oldpage[IV-2]{148}
 
-of $k$ \sref{IV.4.3.1}. Nevertheless, if $k'=k(a^{1/p})$, then $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not normal: in $k'[\mathrm{S}]$ one has
-\[
- \mathrm{S}^p-a=(\mathrm{S}\setmin a^{1/p})^p,
-\]
-and $\mathrm{X}'$ is therefore isomorphic to $\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'=k'[\mathrm{S}][t']$ and $t'$ is a root of $\mathrm{T}^2-\mathrm{S}^p$. The ring $\mathrm{A}'$ is not integrally closed: the element $t''=t'/\mathrm{S}$ of its field of fractions $\mathrm{K}'=k'(\mathrm{S})[t']$ satisfies the integral-dependence equation
-\[
- t''^2-\mathrm{S}^{p-2}=0
-\]
+of $k$ \sref{IV.4.3.1}. Nevertheless, if $k'=k(a^{1/p})$, then $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not normal: in $k'[\mathrm{S}]$ one has $\mathrm{S}^p-a=(\mathrm{S}\setmin a^{1/p})^p$,
+and $\mathrm{X}'$ is therefore isomorphic to $\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'=k'[\mathrm{S}][t']$ and $t'$ is a root of $\mathrm{T}^2-\mathrm{S}^p$. The ring $\mathrm{A}'$ is not integrally closed: the element $t''=t'/\mathrm{S}$ of its field of fractions $\mathrm{K}'=k'(\mathrm{S})[t']$ satisfies the integral-dependence equation $t''^2-\mathrm{S}^{p-2}=0$
 over $\mathrm{A}'$, but does not belong to $\mathrm{A}'$. In classical terminology, the ``genus'' over $k'$ of the field $\mathrm{K}'$ of rational functions of $\mathrm{X}'$ is \emph{strictly smaller} than that of $\mathrm{K}$ over $k$.
 
 (ii) As recalled in (i), it follows from \sref{IV.4.6.1} that when $\mathrm{X}$ is not a geometrically reduced algebraic prescheme over $k$, there exist finite radicial extensions $k'$ of $k$ such that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not reduced. It is interesting to give an example where $\mathrm{X}$ is a regular scheme over $k$, such that $k$ is \emph{algebraically closed} in the field $\mathrm{K}$ of rational functions of $\mathrm{X}$. Let $k$ be a field of characteristic $p>0$, in which there exist two elements $a$, $b$ forming a $p$-free family over $k^p$. Denoting again by $\mathrm{B}$ the ring $k[\mathrm{S},\mathrm{T}]$, consider this time the polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^p-a\mathrm{S}^p-b$; as $a\mathrm{S}^p+b$ is not a $p$-th power in $k(\mathrm{S})$, $\mathrm{P}$ is irreducible as a polynomial of $k(\mathrm{S})[\mathrm{T}]$, and the scheme $\mathrm{X}_0=\operatorname{Spec}(\mathrm{B}/\mathrm{PB})$ is therefore an integral affine curve over $k$, whose field of rational functions is $\mathrm{K}=k(\mathrm{S})[t]$, where $t$ is a root of $\mathrm{P}$; let us show that $k$ is \emph{algebraically closed} in $\mathrm{K}$. Suppose indeed that $\mathrm{K}$ contains an element $z$ algebraic over $k$ and not in $k$; one would then also have $z\notin k(\mathrm{S})$, so $[k(\mathrm{S})[z]:k(\mathrm{S})]>1$; as $[\mathrm{K}:k(\mathrm{S})]=p$, and as $\mathrm{K}$ is radicial over $k(\mathrm{S})$, one would have $z^p\in k(\mathrm{S})$, so $c=z^p\in k$ since $z$ is algebraic over $k$; but then one would have $t^p=a\mathrm{S}^p+b\in k^p(\mathrm{S}^p)(c)$ hence $a$ and $b$ would belong to $k^p(c)$, which is absurd. So $\mathrm{X}$ is the normalisation of the curve $\mathrm{X}_0$ in $\mathrm{K}$, which is therefore a normal curve (and hence \emph{regular}) over $k$. If $k'=k(a^{1/p},b^{1/p})$, it is clear that $a\mathrm{S}^p+b$ is a $p$-th power in $k'(\mathrm{S})$, hence $\mathrm{K}\otimes_k k'$ is \emph{not reduced}, nor \emph{a fortiori} the scheme $\mathrm{X}\otimes_k k'$.
@@ -995,10 +980,7 @@ If $\mathfrak{a}$ is the annihilator of $\mathrm{M}$, we have therefore \sref[0]
 \[
 \mathrm{V}\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\cap\mathrm{V}(\mathfrak{a})\subset\mathrm{V}(\mathfrak{J}^n)\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})
 \]
-since by hypothesis $\mathrm{Y}\cap\operatorname{Spec}(\mathrm{A})=\mathrm{V}(\mathfrak{J})\cap\operatorname{Supp}(\mathrm{M})=\mathrm{V}(\mathfrak{J})$. Since on the other hand the $f_i$ belong to $\mathfrak{J}$, we have $\mathrm{V}(\mathfrak{J})\subset\mathrm{V}(\sum_{i=1}^d f_i\mathrm{A})$, which proves the last relation of (iii). It remains to show that the $f_i$ form part of a system of parameters for $\mathrm{M}$. Replacing $\mathrm{A}$ by $\mathrm{A}/\mathfrak{a}$ and the $f_i$ by their images in $\mathrm{A}/\mathfrak{a}$, one can limit oneself to the case where $\mathfrak{a}=0$; we have just seen that
-\[
-\dim(\mathrm{A}/\mathfrak{J})=\dim\Big(\mathrm{A}/\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\Big),
-\]
+since by hypothesis $\mathrm{Y}\cap\operatorname{Spec}(\mathrm{A})=\mathrm{V}(\mathfrak{J})\cap\operatorname{Supp}(\mathrm{M})=\mathrm{V}(\mathfrak{J})$. Since on the other hand the $f_i$ belong to $\mathfrak{J}$, we have $\mathrm{V}(\mathfrak{J})\subset\mathrm{V}(\sum_{i=1}^d f_i\mathrm{A})$, which proves the last relation of (iii). It remains to show that the $f_i$ form part of a system of parameters for $\mathrm{M}$. Replacing $\mathrm{A}$ by $\mathrm{A}/\mathfrak{a}$ and the $f_i$ by their images in $\mathrm{A}/\mathfrak{a}$, one can limit oneself to the case where $\mathfrak{a}=0$; we have just seen that $\dim(\mathrm{A}/\mathfrak{J})=\dim\Big(\mathrm{A}/\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\Big)$,
 and it remains therefore to prove \sref[0]{0.16.3.7} that we have
 \[
 \dim(\mathrm{A})\geqslant\dim(\mathrm{A}/\mathfrak{J})+d.
@@ -1314,10 +1296,7 @@ is upper semi-continuous. The last assertion follows from \sref{IV.6.11.4},~(i),
 
 \begin{remarks}[6.11.9]
 \label{IV.6.11.9}
-(i) If $\mathrm{X}$ satisfies (CMU), then every prescheme $\mathrm{X}'$ locally of finite type over $\mathrm{X}$ also satisfies (CMU). Let $\mathrm{Y}'$ be a closed integral subprescheme of $\mathrm{X}'$, let $y'$ be its generic point, put $y=u(y')$, and let $\mathrm{Y}$ be the integral closed subprescheme of $\mathrm{X}$ with underlying space $\overline{\{y\}}$. Then $u|_{\mathrm{Y}'}$ factors as
-\[
-  \mathrm{Y}'\xrightarrow{v}\mathrm{Y}\xrightarrow{j}\mathrm{X},
-\]
+(i) If $\mathrm{X}$ satisfies (CMU), then every prescheme $\mathrm{X}'$ locally of finite type over $\mathrm{X}$ also satisfies (CMU). Let $\mathrm{Y}'$ be a closed integral subprescheme of $\mathrm{X}'$, let $y'$ be its generic point, put $y=u(y')$, and let $\mathrm{Y}$ be the integral closed subprescheme of $\mathrm{X}$ with underlying space $\overline{\{y\}}$. Then $u|_{\mathrm{Y}'}$ factors as $\mathrm{Y}'\xrightarrow{v}\mathrm{Y}\xrightarrow{j}\mathrm{X}$,
 where $j$ is the canonical injection and $v$ is locally of finite type.
 
 Restricting to affine open neighbourhoods of $y$ and $y'$, we may suppose that $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is an integral Cohen--Macaulay ring, and $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is an integral finite-type $\mathrm{A}$-algebra containing $\mathrm{A}$.

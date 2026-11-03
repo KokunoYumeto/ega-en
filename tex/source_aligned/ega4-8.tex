@@ -265,19 +265,10 @@ The last assertion then follows from the definition of $u_\alpha^*(\sh{F}_\alpha
 \label{IV.8.2.14}
 The results of \sref{IV.8.2.9} and \sref{IV.8.2.12} show that $\mathrm{S}$ is a projective limit of the projective system $(\mathrm{S}_\lambda,u_{\lambda\mu})$ in the category of \emph{all} ringed spaces (or of all locally ringed spaces).
 Indeed, let $\mathrm{Y}$ be a ringed space, and consider a projective system of morphisms of ringed spaces $w_\lambda:\mathrm{Y}\to\mathrm{S}_\lambda$.
-If one writes $w_\lambda=(\rho_\lambda,\omega_\lambda)$, the $\rho_\lambda$ form a projective system of continuous maps and, by \sref{IV.8.2.9}, their projective limit identifies with a continuous map $\rho:\mathrm{Y}\to\mathrm{S}$ such that $\rho_\lambda=\psi_\lambda\circ\rho$. On the other hand, the homomorphisms
-\[
- \omega_\lambda^\sharp:\rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\longrightarrow\sh{O}_\mathrm{Y}
-\]
-form an inductive system of homomorphisms of sheaves of rings. Since
-\[
- \rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})
- =\rho^*\bigl(\psi_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\bigr)
-\]
-and the functor $\rho^*$ is exact, the inductive limit of the $\rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})$ is $\rho^*(\sh{O}_\mathrm{S})$ by \sref{IV.8.2.12}. There is therefore a unique homomorphism
-\[
- \omega^\sharp:\rho^*(\sh{O}_\mathrm{S})\longrightarrow\sh{O}_\mathrm{Y}
-\]
+If one writes $w_\lambda=(\rho_\lambda,\omega_\lambda)$, the $\rho_\lambda$ form a projective system of continuous maps and, by \sref{IV.8.2.9}, their projective limit identifies with a continuous map $\rho:\mathrm{Y}\to\mathrm{S}$ such that $\rho_\lambda=\psi_\lambda\circ\rho$. On the other hand, the homomorphisms $\omega_\lambda^\sharp:\rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\longrightarrow\sh{O}_\mathrm{Y}$
+form an inductive system of homomorphisms of sheaves of rings. Since $\rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})
+=\rho^*\bigl(\psi_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})\bigr)$
+and the functor $\rho^*$ is exact, the inductive limit of the $\rho_\lambda^*(\sh{O}_{\mathrm{S}_\lambda})$ is $\rho^*(\sh{O}_\mathrm{S})$ by \sref{IV.8.2.12}. There is therefore a unique homomorphism $\omega^\sharp:\rho^*(\sh{O}_\mathrm{S})\longrightarrow\sh{O}_\mathrm{Y}$
 such that $\omega_\lambda^\sharp=\omega^\sharp\circ\rho^*(\theta_\lambda^\sharp)$ for every $\lambda$, which proves the assertion.
 \end{remark}
 
@@ -723,10 +714,7 @@ It suffices therefore to take $\mu$ greater than all the $\lambda_i$.
 Suppose further that $\mathrm{S}_0$ is quasi-separated and $\sh{F}_0$ is of finite presentation, and let $f:\sh{F}\to\sh{G}$ be a homomorphism of $\sh{O}_\mathrm{S}$-Modules.
 By virtue of the lemma \sref{IV.8.5.2.1}, for every $i$ there exist an index $\lambda_i$ and a homomorphism $f_{\lambda_i}^{(i)}:\sh{F}_{\lambda_i}|\mathrm{U}_{i,\lambda_i}\to\sh{G}_{\lambda_i}|\mathrm{U}_{i,\lambda_i}$ such that $u_{\lambda_i}^*(f_{\lambda_i}^{(i)})=f|\mathrm{V}_i$.
 Since $\mathrm{L}$ is filtered, we can further suppose that all the $\lambda_i$ are equal to a single $\lambda$.
-Now $\mathrm{S}_\lambda$ is quasi-separated \sref{IV.1.2.3}, and $\sh{F}_\lambda$ is a quasi-coherent $\sh{O}_{\mathrm{S}_\lambda}$-Module of finite presentation \sref[0]{0.5.2.5}; since, for every pair of indices $i,j$, $\mathrm{U}_{ij\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}$ is quasi-compact and, by definition,
-\[
-  u_\lambda^*(f_\lambda^{(i)}|\mathrm{U}_{ij\lambda})=u_\lambda^*(f_\lambda^{(j)}|\mathrm{U}_{ij\lambda})=f|(\mathrm{V}_i\cap\mathrm{V}_j),
-\]
+Now $\mathrm{S}_\lambda$ is quasi-separated \sref{IV.1.2.3}, and $\sh{F}_\lambda$ is a quasi-coherent $\sh{O}_{\mathrm{S}_\lambda}$-Module of finite presentation \sref[0]{0.5.2.5}; since, for every pair of indices $i,j$, $\mathrm{U}_{ij\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}$ is quasi-compact and, by definition, $u_\lambda^*(f_\lambda^{(i)}|\mathrm{U}_{ij\lambda})=u_\lambda^*(f_\lambda^{(j)}|\mathrm{U}_{ij\lambda})=f|(\mathrm{V}_i\cap\mathrm{V}_j)$,
 it follows from what was proved above that there exists an index $\lambda_{ij}$ such that
 \[
   u_{\lambda\mu}^*(f_\lambda^{(i)}|\mathrm{U}_{ij\lambda})=u_{\lambda\mu}^*(f_\lambda^{(j)}|\mathrm{U}_{ij\lambda})\quad\text{for }\mu\geqslant\lambda_{ij}.
@@ -748,10 +736,7 @@ For $f=u_\lambda^*(f_\lambda):\sh{F}\to\sh{G}$ to be an isomorphism, it is neces
 \begin{proof}
 We can always suppose $\mathrm{S}_\lambda=\mathrm{S}_0$; the question being local on $\mathrm{S}_0$, we can further (since $\mathrm{S}_0$ is quasi-compact and $\mathrm{L}$ is filtered) reduce to the case where $\mathrm{S}_0$ is affine, hence quasi-separated.
 The condition being trivially sufficient, it remains to prove that it is necessary: by hypothesis there is an $\sh{O}_\mathrm{S}$-homomorphism $g:\sh{G}\to\sh{F}$ such that $g\circ f=1_\sh{F}$ and $f\circ g=1_\sh{G}$.
-Since $\sh{G}$ is of finite presentation, there exist an index $\nu\geqslant\lambda$ and a homomorphism $g_\nu:\sh{G}_\nu\to\sh{F}_\nu$ such that $g=u_\nu^*(g_\nu)$ by virtue of \sref{IV.8.5.2},~(i); one therefore has
-\[
-  u_\nu^*(g_\nu\circ f_\nu)=1_\sh{F}
-\]
+Since $\sh{G}$ is of finite presentation, there exist an index $\nu\geqslant\lambda$ and a homomorphism $g_\nu:\sh{G}_\nu\to\sh{F}_\nu$ such that $g=u_\nu^*(g_\nu)$ by virtue of \sref{IV.8.5.2},~(i); one therefore has $u_\nu^*(g_\nu\circ f_\nu)=1_\sh{F}$
 \oldpage[IV-3]{22}
 and $u_\nu^*(f_\nu\circ g_\nu)=1_\sh{G}$; since $\sh{F}_\nu$ and $\sh{G}_\nu$ are of finite type, it follows from \sref{IV.8.5.2},~(i) that there exists $\mu\geqslant\nu$ such that $g_\mu\circ f_\mu=1_{\sh{F}_\mu}$ and $f_\mu\circ g_\mu=1_{\sh{G}_\mu}$, whence the corollary.
 \end{proof}
@@ -774,10 +759,7 @@ Then the assertion is equivalent to the lemma \sref{IV.5.13.7.1}.
 
 In the general case, starting from a finite open affine covering $(\mathrm{U}_i)$ of $\mathrm{S}_0$, it follows from \sref{IV.5.13.7.1} that for every $i$ there exist an index $\lambda(i)$ and a quasi-coherent $\sh{O}_{\mathrm{U}_{i,\lambda(i)}}$-Module of finite presentation $\sh{F}_i$ such that $u_{\lambda(i)}^*(\sh{F}_i)=\sh{F}|_{\mathrm{V}_i}$ (with the notations of (i)).
 Furthermore, since $\mathrm{L}$ is filtered, we can suppose that all the $\lambda_i$ are equal to a single $\lambda$.
-Since $\mathrm{U}_{ij\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}$ is quasi-compact and quasi-separated \sref{IV.1.2.7}, it follows from \sref{IV.8.5.2.5} that for every pair $(i,j)$ there exist an index $\lambda_{ij}\geqslant\lambda$ and an isomorphism
-\[
-  \theta_{ij}:u_{\lambda,\lambda_{ij}}^*(\sh{F}_i|\mathrm{U}_{ij\lambda})\xrightarrow{\sim}u_{\lambda,\lambda_{ij}}^*(\sh{F}_j|\mathrm{U}_{ij\lambda})
-\]
+Since $\mathrm{U}_{ij\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}$ is quasi-compact and quasi-separated \sref{IV.1.2.7}, it follows from \sref{IV.8.5.2.5} that for every pair $(i,j)$ there exist an index $\lambda_{ij}\geqslant\lambda$ and an isomorphism $\theta_{ij}:u_{\lambda,\lambda_{ij}}^*(\sh{F}_i|\mathrm{U}_{ij\lambda})\xrightarrow{\sim}u_{\lambda,\lambda_{ij}}^*(\sh{F}_j|\mathrm{U}_{ij\lambda})$
 such that $u_{\lambda_{ij}}^*(\theta_{ij})$ is the identity automorphism of $\sh{F}|(\mathrm{V}_i\cap\mathrm{V}_j)$; one can further suppose all the $\lambda_{ij}$ equal to $\lambda$.
 Changing the notations, one can therefore suppose that it holds for every pair $(i,j)$ an isomorphism $\theta_{ij}:\sh{F}_i|_{\mathrm{U}_{ij\lambda}}\xrightarrow{\sim}\sh{F}_j|_{\mathrm{U}_{ij\lambda}}$ such that $u_\lambda^*(\theta_{ij})$ is the identity automorphism of $\sh{F}|_{(\mathrm{V}_i\cap\mathrm{V}_j)}$.
 Finally, for any three indices $i$, $j$, $k$, if one sets $\mathrm{U}_{ijk,\lambda}=\mathrm{U}_{i\lambda}\cap\mathrm{U}_{j\lambda}\cap\mathrm{U}_{k\lambda}$, $\mathrm{U}_{ijk,\lambda}$ is quasi-compact, and if $\theta'_{ij}$, $\theta'_{jk}$, and $\theta'_{ik}$ denote the restrictions of $\theta_{ij}$, $\theta_{jk}$, and $\theta_{ik}$ to $\mathrm{U}_{ijk,\lambda}$, one has $u_\lambda^*(\theta'_{jk}\circ\theta'_{ij})=u_\lambda^*(\theta'_{ik})$.
@@ -1171,10 +1153,7 @@ Consider first the case where $S_0=\operatorname{Spec}(A_0)$ and $X=\operatornam
 
 To prove (ii) in the general case, note that $S$ is quasi-compact and quasi-separated. Since $X$ is of finite presentation over $S$, and $S$ is affine over $S_0$, there is a finite open cover $(U_i)$ of $S_0$ and, if $(W_i)$ denotes the affine open cover of $S$ formed by the inverse images of the $U_i$ under $S\to S_0$, a finite cover $(X_r)$ of $X$ by affine opens such that the image of each $X_r$ under $X\to S$ is contained in some $W_{i(r)}$. The ring $A(X_r)$ is then an algebra of finite presentation over $A(W_{i(r)})$ \sref{IV.1.4.6}.
 
-By Lemma~\sref{IV.1.8.4.2} and the fact that $L$ is filtered, there exist an index $\lambda\in L$ and, for every $r$, an affine scheme $Z_{r\lambda}$ of finite presentation over the inverse image $W_{i(r),\lambda}$ of $U_{i(r)}$ in $S_\lambda$, together with an $S$-isomorphism
-\[
- g_r:Z_{r\lambda}\times_{S_\lambda}S\xrightarrow{\sim}X_r.
-\]
+By Lemma~\sref{IV.1.8.4.2} and the fact that $L$ is filtered, there exist an index $\lambda\in L$ and, for every $r$, an affine scheme $Z_{r\lambda}$ of finite presentation over the inverse image $W_{i(r),\lambda}$ of $U_{i(r)}$ in $S_\lambda$, together with an $S$-isomorphism $g_r:Z_{r\lambda}\times_{S_\lambda}S\xrightarrow{\sim}X_r$.
 Let $Z_{rs}$ be the inverse image under $g_r$ of the sub-prescheme induced on the open $X_r\cap X_s$ of $X_r$, which is quasi-compact because $X$ is quasi-separated, and let
 \[
  g'_{rs}:Z_{rs}\xrightarrow{\sim}X_r\cap X_s
@@ -1193,14 +1172,8 @@ such that $h_{sr}=h_{sr\nu}\times 1_S$. Finally, for every triple $(r,s,t)$, let
 
 \oldpage[IV-3]{33}
 
-$Z_{rs}\cap Z_{rt}$. It follows immediately from the definitions that $h'_{sr}$ is an isomorphism from $Z_{rs}\cap Z_{rt}$ onto $Z_{sr}\cap Z_{st}$ and that
-\[
- h'_{ts}\circ h'_{sr}=h'_{tr}.
-\]
-By \sref{IV.8.8.2},~(i), there therefore exists $\rho\geqslant\nu$ such that, for every triple $(r,s,t)$,
-\[
- h'_{ts\rho}\circ h'_{sr\rho}=h'_{tr\rho}.
-\]
+$Z_{rs}\cap Z_{rt}$. It follows immediately from the definitions that $h'_{sr}$ is an isomorphism from $Z_{rs}\cap Z_{rt}$ onto $Z_{sr}\cap Z_{st}$ and that $h'_{ts}\circ h'_{sr}=h'_{tr}$.
+By \sref{IV.8.8.2},~(i), there therefore exists $\rho\geqslant\nu$ such that, for every triple $(r,s,t)$, $h'_{ts\rho}\circ h'_{sr\rho}=h'_{tr\rho}$.
 Consequently the isomorphisms $h_{sr\rho}$ satisfy the gluing condition \sref[0\textsubscript{I}]{0.4.1.7} and hence define a prescheme $X_\rho$ such that $X$ is isomorphic to $X_\rho\times_{S_\rho}S$. Moreover, the $Z_{r\rho}$ are of finite presentation over $S_\rho$, and, identifying them with open subsets of $X_\rho$, their intersections $Z_{r\rho}\cap Z_{s\rho}$, which are isomorphic to the $Z_{rs\rho}$, are quasi-compact. Thus $X_\rho$ is of finite presentation over $S_\rho$ \sref[I]{I.1.6.3}.
 \end{proof}
 
@@ -1429,10 +1402,7 @@ For every $\mu\geqslant\lambda$, $X'_\mu=X'_\lambda\times_{S_\lambda}S_\mu$ is t
 
 \emph{Cases} (vi) \emph{and} (vii): We know \sref{IV.1.8.4.1} that $Z_\alpha=f_\alpha(X_\alpha)$ is constructible in $S_\alpha$; if we set $Z_\lambda=u_{\alpha\lambda}^{-1}(Z_\alpha)$ for $\lambda\geqslant\alpha$ and $Z=u_\alpha^{-1}(Z_\alpha)$, we have $Z_\lambda=f_\lambda(X_\lambda)$ and $Z=f(X)$ \sref[I]{I.3.4.8}.
 As $Z_\alpha$ is pro-constructible in $S_\alpha$, and by virtue of \sref{IV.8.3.11} the canonical map $\varinjlim\mathfrak{C}(S_\lambda)\to\mathfrak{C}(S)$ is injective, the relation $f(X)=S$ implies the existence of $\lambda\geqslant\alpha$ such that $f_\lambda(X_\lambda)=S_\lambda$, which proves the theorem in the case (vi).
-To prove it in case~(vii), note that the structural morphism $X_\alpha\times_{S_\alpha}X_\alpha\to S_\alpha$ is of finite presentation, since the first projection $X_\alpha\times_{S_\alpha}X_\alpha\to X_\alpha$ is so \sref{IV.1.6.2}. It is therefore enough, by \sref{IV.1.8.7.1}, to apply case~(vi) to the diagonal morphism
-\[
-  \Delta_{f_\alpha}:X_\alpha\longrightarrow X_\alpha\times_{S_\alpha}X_\alpha,
-\]
+To prove it in case~(vii), note that the structural morphism $X_\alpha\times_{S_\alpha}X_\alpha\to S_\alpha$ is of finite presentation, since the first projection $X_\alpha\times_{S_\alpha}X_\alpha\to X_\alpha$ is so \sref{IV.1.6.2}. It is therefore enough, by \sref{IV.1.8.7.1}, to apply case~(vi) to the diagonal morphism $\Delta_{f_\alpha}:X_\alpha\longrightarrow X_\alpha\times_{S_\alpha}X_\alpha$,
 noting that $\Delta_{f_\lambda}=\Delta_{f_\alpha}\times1_{S_\lambda}$ and $\Delta_f=\Delta_{f_\alpha}\times1_S$ \sref[I]{I.5.3.4} and \sref[I]{I.3.3.11}.
 
 \emph{Cases} (viii) \emph{and} (ix): As $S=\operatorname{Spec}(A)$ is affine, to say that $f:X\to S$ is affine (resp.\ quasi-affine) means that there exists an integer $r$ and a closed immersion (resp.\ an immersion) $j:X\to\mathbf{V}^r_S=\operatorname{Spec}(A[T_1,\ldots,T_r])$ of $S$-preschemes, since $f$ is of finite type and $S$ quasi-compact \sref[II]{II.5.1.9}.
@@ -2020,26 +1990,16 @@ Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{v_\lambda}V\xrightarrow{j}X,\qquad
 It remains to prove that \sref{IV.8.14.2.4} is surjective.
 Let $v:Z\to V$ be an $S$-morphism.
 By hypothesis there exist an index $\lambda$ and an $S$-morphism
-$w_\lambda:Z_\lambda\to X$ such that $j\circ v$ factors as
-\[
- Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X.
-\]
+$w_\lambda:Z_\lambda\to X$ such that $j\circ v$ factors as $Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X$.
 It suffices to prove that there is a $\mu\geqslant\lambda$ such that
 \[
  Z_\mu\xrightarrow{u_{\lambda\mu}}Z_\lambda\xrightarrow{w_\lambda}X
 \]
-(where $u_{\lambda\mu}$ is the transition morphism) factors as
-\[
- Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X.
-\]
+(where $u_{\lambda\mu}$ is the transition morphism) factors as $Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
 For every $\mu\geqslant\lambda$, set
 $U_\mu=u_{\lambda\mu}^{-1}(w_\lambda^{-1}(V))$.
-Then
-\[
- u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
- =u_\lambda^{-1}(w_\lambda^{-1}(V))
- =v^{-1}(V)=Z.
-\]
+Then $u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z$.
 The $Z_\lambda$ are quasi-compact and the $U_\mu$, being open, are
 ind-constructible \sref{IV.1.9.6}; hence \sref{IV.8.3.4} gives a
 $\mu\geqslant\lambda$ for which $U_\mu=Z_\mu$.
