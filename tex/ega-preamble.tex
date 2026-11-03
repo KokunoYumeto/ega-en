@@ -1,6 +1,6 @@
 % Preamble of the English EGA edition, written for this edition (dedicated to the public domain under CC0 1.0).
 % It defines the notation macros, cross-reference commands and numbered environments used by the sources.
-\usepackage[a4paper,inner=2.6cm,outer=3.6cm,top=2.8cm,bottom=2.8cm,marginparwidth=2.7cm,marginparsep=0.3cm]{geometry}
+\usepackage[a4paper,margin=22mm,marginparwidth=17mm,marginparsep=2.5mm]{geometry}% same page layout as the French edition
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -87,9 +87,9 @@
 \let\ega@pendingnote\relax
 \newcommand{\oldpage}[2][]{%
   \ifvmode
-    \gdef\ega@pendingnote{\footnotesize[#1\if\relax\detokenize{#1}\relax\else\,|\,\fi#2]}%
+    \gdef\ega@pendingnote{\scriptsize[#1\if\relax\detokenize{#1}\relax\else\,|\,\fi#2]}%
   \else
-    \marginnote{\footnotesize[#1\if\relax\detokenize{#1}\relax\else\,|\,\fi#2]}%
+    \marginnote{\scriptsize[#1\if\relax\detokenize{#1}\relax\else\,|\,\fi#2]}%
   \fi}
 \AddToHook{para/begin}{\ifx\ega@pendingnote\relax\else
   \let\ega@note\ega@pendingnote\global\let\ega@pendingnote\relax\marginnote{\ega@note}\fi}
