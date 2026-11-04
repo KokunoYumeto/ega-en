@@ -11,7 +11,8 @@ The text is AI-translated from the French transcription in [ega-fr](https://gith
 - by Claude Opus 5.5 (Anthropic): the Introduction; Chapter 0, §§1–11 and 14; Chapter I; Chapter II with its
   errata; Chapter III, §§1 and 3; Chapter IV: its introduction, §§1, 16, 17 and 20, and the bibliography and
   indexes that close its first part;
-- by OpenAI Codex models (GPT-6 Astra, GPT-5.6 Sol): the other sections.
+- by OpenAI Codex models (GPT-5.6 Sol, GPT-6.1 Sol): the other sections, which GPT-6 Astra (OpenAI Codex) then
+  checked, corrected and assembled.
 
 The mathematics, the numbering and the cross-references follow the French transcription. The French transcription
 is being checked page by page against the printed volumes, and the corrections from that check are carried into this
