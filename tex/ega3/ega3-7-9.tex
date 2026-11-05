@@ -38,7 +38,7 @@ Then, for every $\mathfrak p\in\Spec(A)$,
     \operatorname{rank}_{\kres(\mathfrak p)}
       T_i\bigl(\kres(\mathfrak p)\bigr)
   =
-  \sum_i(-1)^i\operatorname{rank}_{\mathfrak p}(P_i).
+  \sum_i(\setmin 1)^i\operatorname{rank}_{\mathfrak p}(P_i).
   \tag{7.9.2.1}\label{III.7.9.2.1}
 \]
 \end{proposition}
@@ -84,9 +84,9 @@ then the function
 \oldpage[III]{209}
 \[
   y\leadsto
-  \sum_i(-1)^i
+  \sum_i(\setmin 1)^i
     \operatorname{rank}_{\kres(y)}
-      \sh{T}_i\bigl(\kres(y)\bigr)
+      T_i\bigl(\kres(y)\bigr)
   \tag{7.9.4.1}\label{III.7.9.4.1}
 \]
 is locally constant on $Y$.
@@ -95,12 +95,12 @@ is locally constant on $Y$.
 \begin{proof}
 We may restrict ourselves to the case where
 $Y=\Spec(A)$ is affine and $A$ is Noetherian.  Since the
-complex $\sh{P}_\bullet$ is finite, \sref{III.7.7.12}{(i)}
+complex $\sh{P}_\bullet$ is finite, \sref{III.7.7.12},~(i)
 shows that $\sh{T}_p(\sh{M})
 =
 \mathscr{H}_p(\sh{L}_\bullet\otimes_{\sh{O}_Y}\sh{M})$,
 where $\sh{L}_\bullet=\widetilde{L}_\bullet$ and
-$L_\bullet$ is a finite complex of projective $A$-modules
+$L_\bullet$ is a \emph{finite} complex of projective $A$-modules
 of finite type.  The theorem now follows from
 \sref{III.7.9.3}.
 \end{proof}
@@ -174,16 +174,16 @@ $i<0$.  We then have the following exact sequence of
 complexes:
 \[
 \xymatrix@C=2.4em{
-  \cdots \ar[r] & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d]
-    & 0 \ar[r]\ar[d] & 0 \ar[r] & \cdots \\
-  \cdots \ar[r] & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d]
-    & \sh{P}_1 \ar[r]\ar[d] & \sh{P}_2 \ar[r] & \cdots \\
-  \cdots \ar[r] & 0 \ar[r]\ar[d] & \sh{P}_0 \ar[r]\ar[d]
-    & \sh{P}_1 \ar[r]\ar[d] & \sh{P}_2 \ar[r] & \cdots \\
-  \cdots \ar[r] & 0 \ar[r]\ar[d] & \sh{P}_0 \ar[r]\ar[d]
-    & 0 \ar[r]\ar[d] & 0 \ar[r] & \cdots \\
-  \cdots \ar[r] & 0 \ar[r] & 0 \ar[r]
-    & 0 \ar[r] & 0 \ar[r] & \cdots
+  \ldots \ar[r] & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d]
+    & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d] & \ldots \\
+  \ldots \ar[r] & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d]
+    & \sh{P}_1 \ar[r]\ar[d] & \sh{P}_2 \ar[r]\ar[d] & \ldots \\
+  \ldots \ar[r] & 0 \ar[r]\ar[d] & \sh{P}_0 \ar[r]\ar[d]
+    & \sh{P}_1 \ar[r]\ar[d] & \sh{P}_2 \ar[r]\ar[d] & \ldots \\
+  \ldots \ar[r] & 0 \ar[r]\ar[d] & \sh{P}_0 \ar[r]\ar[d]
+    & 0 \ar[r]\ar[d] & 0 \ar[r]\ar[d] & \ldots \\
+  \ldots \ar[r] & 0 \ar[r] & 0 \ar[r]
+    & 0 \ar[r] & 0 \ar[r] & \ldots
 }
 \]
 the nonzero vertical arrows being identity automorphisms.
@@ -193,7 +193,7 @@ gives
 \[
   \operatorname{EP}(\sh{P}_\bullet;y)
   =
-  \sum_i(\setmin 1)^i\operatorname{EP}(\sh{P}_i;y)
+  \sum(\setmin 1)^i\operatorname{EP}(\sh{P}_i;y)
   \tag{7.9.6.2}\label{III.7.9.6.2}
 \]
 
@@ -253,33 +253,33 @@ the case where $Y$ and $Y'$ are affine.
 Suppose that the hypotheses of \sref{III.7.9.4} hold and,
 in addition, that there is an integer $i_0$ such that
 \[
-  \sh{T}_i(\kres(y))=0
+  T_i(\kres(y))=0
   \qquad\text{for $i\neq i_0$ and every $y\in Y$.}
 \]
 Then $\sh{T}_{i_0}(\sh{O}_Y)
 =
-\mathscr{H}^{-i_0}(f,\sh{P}^\bullet)$
+\mathscr{H}^{-i_0}(f,\sh{P}_\bullet)$
 is a locally free $\sh{O}_Y$-Module, and its rank at
 $y\in Y$ is $(\setmin 1)^{i_0}\operatorname{EP}(f,\sh{P}_\bullet;y)$.
 \end{proposition}
 
 \begin{proof}
 First observe that the hypotheses of \sref{III.7.4.4} are
-satisfied by the functors $\sh{T}^{\sh{O}_y}_i$, so that
+satisfied by the functors $T^{\sh{O}_y}_j$, so that
 \sref{III.7.4.7} applies to them.  The hypothesis and
 \sref{III.7.5.3} imply that
-$\sh{T}^{\sh{O}_y}_i$ is zero for $i\neq i_0$.
-Consequently $\sh{T}_{i_0}$ is exact by
+$T^{\sh{O}_y}_i$ is \emph{zero} for $i\neq i_0$.
+Consequently $\sh{T}_{i_0}$ is also exact by
 \sref{III.7.3.3}, and \sref{III.7.8.4} shows that
-$\mathscr{H}^{-i_0}(f,\sh{P}^\bullet)$ is locally free.
+$\mathscr{H}^{-i_0}(f,\sh{P}_\bullet)$ is locally free.
 Its rank at $y\in Y$ is
 \[
   \operatorname{rank}_{\kres(y)}
-    \sh{T}_{i_0}(\kres(y))
+    T_{i_0}(\kres(y))
   =
   (\setmin 1)^{i_0}\operatorname{EP}(f,\sh{P}_\bullet;y),
 \]
-by definition, since $\sh{T}_i(\kres(y))=0$ for
+by definition, since $T_i(\kres(y))=0$ for
 $i\neq i_0$.\footnote{The printed French proof omits the
 factor $(\setmin 1)^{i_0}$ in this displayed equality; it is
 required both by the definition and by the statement of
@@ -370,12 +370,12 @@ then $\sh{L}_y$ is a very ample $\sh{O}_{X_y}$-Module
 functor $\sh{T}_\bullet$ associated with
 $\sh{P}_\bullet(n)$ we have
 \[
-  \sh{T}_i(\kres(y))
+  T_i(\kres(y))
   =
   H^{-i}\bigl(
     X_y,\sh{F}_y\otimes\sh{L}_y^{\otimes n}\bigr),
   \qquad
-  \sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\kres(y).
+  \sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\kres(y).
 \]
 Thus $\operatorname{EP}(f,\sh{F}(n);y)$ is precisely the
 Euler--Poincar\'e characteristic
@@ -386,8 +386,6 @@ $n$, its value is constant on each connected component of
 $Y$ by \sref{III.7.9.4}; this completes the proof.
 \end{proof}
 
-\begin{env}[7.9.12]
-\label{III.7.9.12}
 The polynomial \eqref{III.7.9.11.1}, with rational
 coefficients, will be denoted
 \[
@@ -405,6 +403,8 @@ terminology.  This invariant will play an essential role
 in Chapter~V, in the theory of ``moduli'' of coherent
 quotient sheaves of a given coherent sheaf.
 
+\begin{env}[7.9.12]
+\label{III.7.9.12}
 With the notation of \sref{III.7.9.6} and
 \sref{III.7.9.11}, we have
 \[
@@ -522,14 +522,14 @@ the proposition is proved.
 $\mathbf{Tor}_n^A(P_\bullet,Q_\bullet)$: 6.3.1.
 
 \medskip
-$\shTor_n^{\sh{O}_S}(\sh{P}_\bullet,\sh{Q}_\bullet)$,
-$\shTor_n^S(\sh{P}_\bullet,\sh{Q}_\bullet)$: 6.4.1 and 6.5.1.
+$\boldsymbol{\shTor}_n^{\sh{O}_S}(\sh{P}_\bullet,\sh{Q}_\bullet)$,
+$\boldsymbol{\shTor}_n^S(\sh{P}_\bullet,\sh{Q}_\bullet)$: 6.4.1 and 6.5.1.
 
 \medskip
 $\shTor_n^S(\sh{F},\sh{G})$: 6.5.1.
 
 \medskip
-$\shTor_q^S(\sh{P}_\bullet^{(1)},\sh{P}_\bullet^{(2)},\ldots,
+$\boldsymbol{\shTor}_q^S(\sh{P}_\bullet^{(1)},\sh{P}_\bullet^{(2)},\ldots,
 \sh{P}_\bullet^{(m)})$: 6.5.15.
 
 \medskip
@@ -548,12 +548,12 @@ $\shTor_n^S(\mathfrak U^{(1)},\mathfrak U^{(2)};
 \sh{P}_\bullet^{(1)},\sh{P}_\bullet^{(2)})$: 6.6.2.
 
 \medskip
-$\shTor_n^S(f_1,f_2;\sh{P}_\bullet^{(1)},
+$\boldsymbol{\shTor}_n^S(f_1,f_2;\sh{P}_\bullet^{(1)},
 \sh{P}_\bullet^{(2)})$: 6.6.8, 6.7.1, and 6.7.3.
 
 \medskip
-$\shTor_n^S((f_i)_{i\in I};(\sh{P}_\bullet^{(i)})_{i\in I})$,
-$\shTor_n^S(f_1,\ldots,f_m;\sh{P}_\bullet^{(1)},\ldots,
+$\boldsymbol{\shTor}_n^S((f_i)_{i\in I};(\sh{P}_\bullet^{(i)})_{i\in I})$,
+$\boldsymbol{\shTor}_n^S(f_1,\ldots,f_m;\sh{P}_\bullet^{(1)},\ldots,
 \sh{P}_\bullet^{(m)})$: 6.7.11.
 
 \medskip
@@ -738,63 +738,63 @@ $\sh{F}|V$ by $\sh{F}|U$.
 ``such that'', add: over an open neighborhood $U$ of $x$.
 
 \noindent\textbf{($\mathbf{0}_{\mathrm I}$, 7.6.9)} On line 3 from the bottom of p.
-73, replace $I_\lambda$ by $J_\lambda$.
+73, replace $J_\lambda$ by $\mathfrak J_\lambda$.
 
-\noindent\textbf{(I, 1.1.15)} On line 3 of p. 83, replace $\mathfrak a$ by
+\noindent\textbf{(\textbf{I}, 1.1.15)} On line 3 of p. 83, replace $\mathfrak a$ by
 $\mathfrak a\ne A$.
 
-\noindent\textbf{(I, 1.4.1)} On line 2 from the bottom of p. 90, replace
+\noindent\textbf{(\textbf{I}, 1.4.1)} On line 2 from the bottom of p. 90, replace
 $\widetilde N$ by $N$.
 
-\noindent\textbf{(I, 2.3.1)} On line 3 from the bottom of p. 101, replace (0,
+\noindent\textbf{(\textbf{I}, 2.3.1)} On line 3 of p. 101, replace (\textbf{0},
 4.1.6) by (\textbf{0}, 4.1.7).
 
-\noindent\textbf{(I, 2.3.2)} On line 11 of p. 101, replace $B$ by $B_s$ and
+\noindent\textbf{(\textbf{I}, 2.3.2)} On line 11 of p. 101, replace $B$ by $B_s$ and
 $C$ by $C_t$.
 
-\noindent\textbf{(I, 2.5.5)} On line 19 of p. 104, replace $S$-morphism by
+\noindent\textbf{(\textbf{I}, 2.5.5)} On line 19 of p. 104, replace $S$-morphism by
 $S$-prescheme.
 
-\noindent\textbf{(I, 3.3.7)} On line 17 of p. 109, replace $Y_{(S)}$ by
+\noindent\textbf{(\textbf{I}, 3.3.7)} On line 17 of p. 109, replace $Y_{(S)}$ by
 $Y_{(S')}$.
 
-\noindent\textbf{(I, 3.4.5)} On line 9 of p. 113, replace $\mathrm s$ by $s$.
+\noindent\textbf{(\textbf{I}, 3.4.5)} On line 9 of p. 113, replace $\mathrm s$ by $s$.
 
-\noindent\textbf{(I, 3.4.8)} On line 4 of p. 114, replace $p(x)$ by $f(x)$.
+\noindent\textbf{(\textbf{I}, 3.4.8)} On line 4 of p. 114, replace $p(x)$ by $f(x)$.
 
-\noindent\textbf{(I, 3.5.1)} On line 3 of p. 115, replace $1_X\times g$ by
+\noindent\textbf{(\textbf{I}, 3.5.1)} On line 3 of p. 115, replace $1_X\times g$ by
 $1_{X'}\times g$.
 
-\noindent\textbf{(I, 3.7.2)} On line 8 of p. 119, replace the first $X$ by
+\noindent\textbf{(\textbf{I}, 3.7.2)} On line 8 of p. 119, replace the first $X$ by
 $X'$.
 
-\noindent\textbf{(I, 4.2.2)} On line 8 of p. 123, in the left vertical arrow
-of the diagram, replace $\alpha_{\psi(y)}$ by $\vphi_{\psi(y)}$.
+\noindent\textbf{(\textbf{I}, 4.2.2)} On line 8 of p. 123, in the left vertical arrow
+of the diagram, replace $\alpha_{\psi(y)}$ by $\rho_{\psi(y)}$.
 
-\noindent\textbf{(I, 4.4.3)} On line 16 of p. 126, replace \emph{isomorphee}
+\noindent\textbf{(\textbf{I}, 4.4.3)} On line 16 of p. 126, replace \emph{isomorphee}
 by \emph{isomorphes}.
 
-\noindent\textbf{(I, 4.5.5)} On line 17 from the bottom of p. 127, replace
+\noindent\textbf{(\textbf{I}, 4.5.5)} On line 17 from the bottom of p. 127, replace
 (4.2.4) by (4.2.5).
 
-\noindent\textbf{(I, 5.1.4)} On line 14 from the bottom of p. 128, replace
+\noindent\textbf{(\textbf{I}, 5.1.4)} On line 14 from the bottom of p. 128, replace
 (2.1.7) by (2.1.8).
 
-\noindent\textbf{(I, 5.3.13)} On line 20 of p. 134, replace (4.2.4) by
+\noindent\textbf{(\textbf{I}, 5.3.13)} On line 20 of p. 134, replace (4.2.4) by
 (4.2.5).
 
-\noindent\textbf{(I, 6.4.2)} On line 1 from the bottom of p. 147, replace
+\noindent\textbf{(\textbf{I}, 6.4.2)} On line 1 from the bottom of p. 147, replace
 \emph{covering} by \emph{finite covering}.
 
-\noindent\textbf{(I, 9.1.13)} On line 15 of p. 171, replace
+\noindent\textbf{(\textbf{I}, 9.1.13)} On line 15 of p. 171, replace
 $p^{-1}(\sh{F})$ by $p^*(\sh{F})$.
 
-\noindent\textbf{(I, 9.5.11)} On line 7 of p. 179, replace $Y$ by $Y'$.
+\noindent\textbf{(\textbf{I}, 9.5.11)} On line 7 of p. 179, replace $Y$ by $Y'$.
 
-\noindent\textbf{(I, 9.6.5)} On line 17 from the bottom of p. 180, replace
-$(0,\,4.1.4)$ by $(0,\,4.1.3)$.
+\noindent\textbf{(\textbf{I}, 9.6.5)} On line 17 from the bottom of p. 180, replace
+(\textbf{0}, 4.1.4) by (\textbf{0}, 4.1.3).
 
-\noindent\textbf{(I, 10.12.2)} On line 14 from the bottom of p. 206, replace
+\noindent\textbf{(\textbf{I}, 10.12.2)} On line 14 from the bottom of p. 206, replace
 $(X_n)_{(S_n)}$ by $(X_n)_{(S_m)}$.
 
 \clearpage
@@ -804,35 +804,35 @@ $(X_n)_{(S_n)}$ by $(X_n)_{(S_m)}$.
 p. 222, replace \textbf{I}, 2.1.7 by \textbf{I}, 2.1.8; on line 19 from the bottom of p. 222,
 replace \textbf{I}, 2.1.8 by \textbf{I}, 2.1.7.
 
-\noindent\textbf{(II, 1.5.2)} On line 17 of p. 12, insert an $f$ beside the
+\noindent\textbf{(\textbf{II}, 1.5.2)} On line 17 of p. 12, insert an $f$ beside the
 left vertical arrow of the diagram.
 
-\noindent\textbf{(II, 4.2.7)} On line 16 from the bottom of p. 75, replace
-(III, 2.1.14) by (\textbf{III}, 2.1.13).
+\noindent\textbf{(\textbf{II}, 4.2.7)} On line 16 from the bottom of p. 75, replace
+(\textbf{III}, 2.1.14) by (\textbf{III}, 2.1.13).
 
-\noindent\textbf{(II, 5.2.1)} On line 16 from the bottom of p. 97, replace
-$X-U$ by $U$. On line 8 from the bottom of p. 97, replace $X^f$ by $X_f$.
+\noindent\textbf{(\textbf{II}, 5.2.1)} On line 16 from the bottom of p. 97, replace
+$X\setmin U$ by $U$. On line 8 from the bottom of p. 97, replace $X^f$ by $X_f$.
 
-\noindent\textbf{(II, 5.3.6)} On line 16 of p. 100, replace (4.6.18) by
+\noindent\textbf{(\textbf{II}, 5.3.6)} On line 16 of p. 100, replace (4.6.18) by
 (4.6.17).
 
-\noindent\textbf{(II, 6.2.7)} On line 9 from the bottom of p. 116, replace
+\noindent\textbf{(\textbf{II}, 6.2.7)} On line 9 from the bottom of p. 116, replace
 chap. V by chap. IV.
 
-\noindent\textbf{(II, 6.6.5)} On line 15 from the bottom of p. 132, replace
+\noindent\textbf{(\textbf{II}, 6.6.5)} On line 15 from the bottom of p. 132, replace
 chap. V by chap. IV.
 
-\noindent\textbf{(II, 7.4.12)} On line 1 of p. 151, replace chap. V by chap.
+\noindent\textbf{(\textbf{II}, 7.4.12)} On line 1 of p. 151, replace chap. V by chap.
 III.
 
-\noindent\textbf{(II, 8.1.4)} On line 15 of p. 154, replace (\textbf{III}, 2.3.8) by
+\noindent\textbf{(\textbf{II}, 8.1.4)} On line 15 of p. 154, replace (\textbf{III}, 2.3.8) by
 (\textbf{III}, 2.3.7).
 
-\noindent\textbf{(II, 8.10.5)} On line 17 from the bottom of p. 187, replace
+\noindent\textbf{(\textbf{II}, 8.10.5)} On line 17 from the bottom of p. 187, replace
 $g_{(j)x}$ by $g_{j(x)}$.
 
 \noindent\textbf{($\mathbf{0}_{\mathrm{III}}$, 10.2.7)} On line 1 of p. 20, replace
-$u$-adic by $\mathfrak n$-adic. On line 13 from the bottom of p. 20, replace
+$\mathfrak u$-adic by $\mathfrak n$-adic. On line 13 from the bottom of p. 20, replace
 $k$ by $k_i$.
 
 \noindent\textbf{($\mathbf{0}_{\mathrm{III}}$, 11.1.1)} On line 18 of p. 23, replace
@@ -843,33 +843,33 @@ $\operatorname{Im}(d_r^{p-r,q+r-1})$.
 p. 45, replace the arrows $\to$ by $\rightsquigarrow$ (4 times).
 
 \noindent\textbf{($\mathbf{0}_{\mathrm{III}}$, 12.3.4)} On line 4 of p. 61, replace
-$\rightsquigarrow$ by $\to$.
+$\xrightarrow{\sim}$ by $\to$.
 
 \noindent\textbf{($\mathbf{0}_{\mathrm{III}}$, 13.2.4)} On line 2 from the bottom of
 p. 67, replace $\varinjlim$ by $\varprojlim$ (2 times).
 
-\noindent\textbf{(III, 1.1.7)} On line 15 of p. 85, replace $A^r$ by
+\noindent\textbf{(\textbf{III}, 1.1.7)} On line 15 of p. 85, replace $A^r$ by
 $\wedge(A^r)$ (2 times).
 
-\noindent\textbf{(III, 1.2.4)} On line 7 of p. 87, replace
+\noindent\textbf{(\textbf{III}, 1.2.4)} On line 7 of p. 87, replace
 $\Gamma(U,\sh{F})$ by $\Gamma(U,\sh{O}_X)$ and replace $\sh{G}$ by $\sh{F}$.
 On line 8 of p. 87, replace $\HH^p(\mathfrak U,\sh{G})$ by
 $\HH^p(\mathfrak U,\sh{F})$.
 
-\noindent\textbf{(III, 2.5.3.1)} On line 3 of p. 111, replace $n>0$ by
+\noindent\textbf{(\textbf{III}, 2.5.3.1)} On line 3 of p. 111, replace $n>0$ by
 $n\geq0$. On line 8 of p. 111, replace $\setmin r\leq n\leq0$ by $\setmin r\leq n<0$.
 
-\noindent\textbf{(III, 3.1.2)} On line 13 of p. 116, replace $\sh{G}$ by
+\noindent\textbf{(\textbf{III}, 3.1.2)} On line 13 of p. 116, replace $\sh{G}$ by
 $\sh{G}\in\boldsymbol{K}'$.
 
-\noindent\textbf{(III, 4.3.6)} On line 7 of p. 133, replace
+\noindent\textbf{(\textbf{III}, 4.3.6)} On line 7 of p. 133, replace
 $K'=K\otimes_A\widehat A$ by $K'\supset K\otimes_A\widehat A$. On line 16 of
 p. 133, replace $R(X)$ by $R(Y)$.
 
-\noindent\textbf{(III, 4.4.12)} On line 10 of p. 138, replace chap. V by
+\noindent\textbf{(\textbf{III}, 4.4.12)} On line 10 of p. 138, replace chap. V by
 chap. IV.
 
-\noindent\textbf{(III, 4.6.6)} On line 19 of p. 142, replace ``chap. V'' by
+\noindent\textbf{(\textbf{III}, 4.6.6)} On line 19 of p. 142, replace ``chap. V'' by
 ``in a later section''.
 
 \begin{center}
@@ -919,11 +919,11 @@ ed., \S~3, no.~5, cor. 1 of prop. 9. The $\mathfrak J^n$ must likewise be
 assumed \emph{closed} in $A$ in statements ($\mathbf{0}_{\mathrm I}$, 7.2.5) and
 ($\mathbf{0}_{\mathrm I}$, 7.2.6).
 
-\noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 4)} After proposition (I,
+\noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 4)} After proposition (\textbf{I},
 2.2.5), add: with the notation of (\textbf{I}, 2.2.5), if $\mathfrak J$ is an ideal of
-$A$, we denote by $\widetilde{\mathfrak J\sh{F}}$ the
-$\sh{O}_X$-submodule $\mathfrak J\widetilde{\sh{F}}$ defined in
-$(0,\,4.3.5)$.
+$A$, we denote by $\mathfrak J\mathscr F$ the
+$\sh{O}_X$-submodule $\widetilde{\mathfrak J}\mathscr F$ defined in
+(\textbf{0}, 4.3.5).
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 5)} In (\textbf{I}, 3.4.5), on line
 1 from the bottom of p. 112, replace ``\emph{a field} $K$'' by ``\emph{an
@@ -948,7 +948,7 @@ $X'=X\times_Y\Spec(\sh{O}_y/\mathfrak a_y)$, then, for every point $x\in X'$,
 identified by $p$ with a point of $X$, we have
 $\sh{O}_{X',x}=\sh{O}_{X,x}/\mathfrak a_y\sh{O}_{X,x}$. Since the question is
 local on $X$ and $Y$, we may suppose that $X=\Spec(B)$ and $Y=\Spec(A)$; then
-$(B/\mathfrak a_yB)_x=B_x/\mathfrak a_yB_x$ by flatness $(0,\,1.3.2)$.
+$(B/\mathfrak a_yB)_x=B_x/\mathfrak a_yB_x$ by flatness (\textbf{0}, 1.3.2).
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 7)} In (\textbf{I}, 5.1.1), on line
 3 from the bottom of p. 127, replace ``quasi-coherent $\sh{O}_X$-Module'' by
@@ -1001,7 +1001,7 @@ $\sh{O}_X$-Module of finite type $\sh{F}$, to say that $\sh{F}$ is a
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 13)} In (\textbf{I}, 10.11.7), on
 lines 17 to 23 of p. 205, the end of the proof beginning ``It remains to
 prove\ldots{}'' is unnecessary by (10.11.6), since the sheaves in question
-are coherent by $(0,\,5.3.5)$.
+are coherent by (\textbf{0}, 5.3.5).
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 14)} In (\textbf{II}, 1.7.8), after
 line 10 from the bottom of p. 16, add: when $\sh{E}=\sh{O}_S^n$, we also write
@@ -1075,18 +1075,18 @@ over $A$, and consequently so are the $\sigma_i(u)$.
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 23)} In
 ($\mathbf{0}_{\mathrm{III}}$, 11.7.3), on line 10 of p. 43, after $\boldsymbol{C}''$, add:
-such that for every projective object $P$ of $\boldsymbol{C}'$ (resp. every
-projective object $P'$ of $\boldsymbol{C}''$), the functor
+such that for every projective object $P$ of $\boldsymbol{C}$ (resp. every
+projective object $P'$ of $\boldsymbol{C}'$), the functor
 $A'\rightsquigarrow T(P,A')$ (resp. $A\rightsquigarrow T(A,P')$) is exact in
 $\boldsymbol{C}'$ (resp. $\boldsymbol{C}$).
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 24)} The statement of
 ($\mathbf{0}_{\mathrm{III}}$, 13.7.7) is inaccurate and must be modified as follows:
-on line 6 of p. 78, delete ``and
+on line 6 of p. 78, delete ``\emph{and}
 $(\RR^{n+1}T(A_k))_{k\in\mathbf Z}$''; on line 7 of p. 78, replace
-``$\RR'^nT(\mathbf A)$ is an $S$-module of finite type'' by ``$\RR'^nT(\mathbf A)$ and
-$\RR'^{n+1}T(A)$ are $S$-modules of finite type''; on lines 12-13 of p. 78,
-delete ``and $p+q=n+1$''. In the proof, on line 23 of p. 78, delete ``and for
+``$\RR'^nT(\mathbf A)$ \emph{is an} $S$-\emph{module of finite type}'' by ``$\RR'^nT(\mathbf A)$ \emph{and}
+$\RR'^{n+1}T(\mathbf A)$ \emph{are} $S$-\emph{modules of finite type}''; on lines 12-13 of p. 78,
+delete ``\emph{and} $p+q=n+1$''. In the proof, on line 23 of p. 78, delete ``and for
 $n+1$''.
 
 \noindent\textbf{($\mathbf{Err}_{\mathrm{III}}$, 25)} In (\textbf{III}, 1.4.15), on
@@ -1191,4 +1191,4 @@ the intersection of the annihilators of the $x_i$. But the annihilator of
 $x_i$ is the kernel of the homomorphism $\sh{O}_X\to\sh{F}$ corresponding to
 the homomorphism $s\leadsto sx_i$ from $A$ to $M$; it is therefore indeed a
 quasi-coherent ideal (\textbf{I}, 4.1.1), and every finite intersection of such ideals
-is also a quasi-coherent ideal (I, 1.3.10).
+is also a quasi-coherent ideal (\textbf{I}, 1.3.10).

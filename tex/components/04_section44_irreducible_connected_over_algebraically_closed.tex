@@ -84,7 +84,7 @@ Then $X'$ is irreducible (resp.\ connected) if and only if $X$ is.
 
 \begin{proof}
 The assertion concerning connectedness is Bourbaki,
-\emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~11, no.~3, prop.~7.
+\emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~11, n\textsuperscript{o}~3, prop.~7.
 We prove the assertion concerning irreducibility.
 The condition is plainly necessary because $f$ is surjective; let us
 prove that it is sufficient.
@@ -94,9 +94,9 @@ $X'=X'_1\cup X'_2$, and, for $i=1,2$, let $X_i$ be the set of
 $x\in X$ such that $f^{-1}(x)\subset X'_i$.
 Then
 \[
-X-X_i=f(X'\setmin X'_i),
+X_i=X\setmin f(X'\setmin X'_i),
 \]
-and, since $f$ is open, $X_i$ is a closed subset of $X$.
+and, since $f$ is open, $X_i$ is a \emph{closed} subset of $X$.
 For every $x\in X$, the fibre $f^{-1}(x)$ is irreducible by hypothesis
 and is the union of the two closed subsets
 \[
@@ -106,7 +106,7 @@ X'_2\cap f^{-1}(x).
 \]
 One of them must equal $f^{-1}(x)$, so $x\in X_1$ or $x\in X_2$.
 Thus $X=X_1\cup X_2$.
-Since $X$ is irreducible, $X=X_1$ or $X=X_2$, and therefore
+Since $X$ is irreducible by hypothesis, $X=X_1$ or $X=X_2$, and therefore
 $X'=X'_1$ or $X'=X'_2$.
 \end{proof}
 
@@ -133,7 +133,7 @@ $P$, and let
 \[
 p:S\longrightarrow X,
 \qquad
-q:S\longrightarrow\mathbf P
+q:S\longrightarrow P
 \]
 be the projections.
 Let $X'$ be the reduced sub-prescheme whose underlying space is the
@@ -156,9 +156,9 @@ We saw in \sref{IV.4.4.1} that $p:X\otimes_k K\longrightarrow X$
 is faithfully flat and open.
 To apply \sref{IV.4.4.2}, it therefore suffices to verify that every
 fibre $p^{-1}(x)$ is irreducible.
-The $\kappa(x)$-prescheme $p^{-1}(x)$ is isomorphic to
+The $\boldsymbol{k}(x)$-prescheme $p^{-1}(x)$ is isomorphic to
 \[
-\Spec\bigl(\kappa(x)\otimes_k K\bigr)
+\Spec\bigl(\boldsymbol{k}(x)\otimes_k K\bigr)
 \]
 \sref[I]{I.3.6.2}, and is therefore integral by the hypothesis on $k$
 and \sref{IV.4.3.9}.
@@ -189,7 +189,7 @@ $X\otimes_k K$, and put $Z'=p^{-1}(Z)$.
 The equivalence relation $R$ defined by $p$ on $X'$ is open.
 The induced relation $R_{Z'}$ on the saturated subset $Z'$ is therefore
 also open, and $Z$ identifies with the quotient space $Z'/R_{Z'}$
-(Bourbaki, \emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~5, no.~2,
+(Bourbaki, \emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~5, n\textsuperscript{o}~2,
 prop.~4).
 We may thus apply \sref{IV.4.4.2} to $Z$ and $Z'$, proving the first
 assertion of \sref{IV.4.4.5}.
@@ -200,13 +200,13 @@ assertion of \sref{IV.4.4.5}.
 \label{IV.4.4.6}
 Under the hypotheses and notation of \sref{IV.4.4.5}, the map
 \[
-Z\longmapsto p^{-1}(Z)
+Z\leadsto p^{-1}(Z)
 \]
 is a bijection from the set of irreducible (resp.\ connected)
 components of $X$ to the set of irreducible (resp.\ connected)
 components of $X\otimes_k K$.
 Its inverse is
 \[
-Z'\longmapsto p(Z').
+Z'\leadsto p(Z').
 \]
 \end{corollary}

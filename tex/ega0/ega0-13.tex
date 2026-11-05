@@ -22,7 +22,7 @@ For every $\alpha\in\mathrm{I}$, the subobjects
 $f_{\alpha\beta}(A_\beta)$, for $\alpha\leq\beta$, form a decreasing
 filtered family of subobjects of $A_\alpha$.
 The subobject $A'_\alpha=\inf_{\beta\geq\alpha}f_{\alpha\beta}(A_\beta)$
-is called the subobject of \emph{universal images} in $A_\alpha$.
+is called the subobject of ``universal images'' in $A_\alpha$.
 It is clear that
 \[
   f_\alpha(A)\subset A'_\alpha,
@@ -47,25 +47,28 @@ f_{\alpha\beta}(A_\beta)$.
 \end{itemize}
 
 It is clear that condition (ML) holds if all the
-$f_{\alpha\beta}$ are epimorphisms.
+$f_{\alpha\beta}$ are \emph{epimorphisms}.
 Conversely, suppose that (ML) holds, and for each
-$\alpha\in\mathrm{I}$ let $A'_\alpha$ be the subobject of universal
-images in $A_\alpha$.
+$\alpha\in\mathrm{I}$ let $A'_\alpha$ be the subobject of ``universal
+images'' in $A_\alpha$.
 Then, for $\alpha\leq\beta$, the restriction of
 $f_{\alpha\beta}$ to $A'_\beta$ is an \emph{epimorphism} $A'_\beta\longrightarrow A'_\alpha$.
-Indeed, choose $\gamma\geq\beta$ such that
+Indeed, if $\gamma\geq\beta$ is such that
 \[
   f_{\beta\delta}(A_\delta)
   =
   f_{\beta\gamma}(A_\gamma)
-  \qquad(\delta\geq\gamma).
+  \qquad(\delta\geq\gamma),
 \]
-Then $A'_\beta=f_{\beta\gamma}(A_\gamma)$, and therefore
+we have $A'_\beta=f_{\beta\gamma}(A_\gamma)$, and this implies on the other hand
 \[
-  f_{\alpha\beta}(A'_\beta)
+  f_{\alpha\delta}(A_\delta)
   =
-  f_{\alpha\gamma}(A_\gamma),
-  \qquad
+  f_{\alpha\gamma}(A_\gamma)
+  \qquad(\delta\geq\gamma),
+\]
+hence
+\[
   A'_\alpha
   =
   f_{\alpha\gamma}(A_\gamma)
@@ -73,7 +76,7 @@ Then $A'_\beta=f_{\beta\gamma}(A_\gamma)$, and therefore
   f_{\alpha\beta}(A'_\beta).
 \]
 
-Condition (ML) also holds when the objects $A_\alpha$ are
+Note also that condition (ML) holds when the objects $A_\alpha$ are
 \emph{Artinian} in $\cat{C}$, that is, when every family of
 subobjects of $A_\alpha$ has a minimal member.
 Indeed, a minimal member of the decreasing filtered family
@@ -81,15 +84,14 @@ $\bigl(f_{\alpha\beta}(A_\beta)\bigr)$ of subobjects of $A_\alpha$
 is necessarily the smallest of those subobjects.
 \end{env}
 
-\begin{env}[13.1.3]
+\begin{remark}[13.1.3]
 \label{0.13.1.3}
-\emph{Remark} (13.1.3).
 Condition (ML) can also be formulated when $\cat{C}$ is, for
-example, the category of sets.
-One can again define the subset of universal images in $A_\alpha$,
-and the observations made in \sref{0.13.1.1} and
+example, the category of sets; one can then again define the
+subset of ``universal images'' of $A_\alpha$,
+and the remarks made on this subject in \sref{0.13.1.1} and
 \sref{0.13.1.2} remain valid.
-\end{env}
+\end{remark}
 
 \subsection{The Mittag-Leffler condition for abelian groups}
 \label{subsection:0.13.2}
@@ -302,16 +304,16 @@ Put
 The homomorphisms $h_n$ are defined by the commutative diagrams
 \[
   \xymatrix{
-    \cdots\ar[r]
+    \ldots\ar[r]
       & \mathrm{K}^{n-1}\ar[r]\ar[d]
       & \mathrm{K}^n\ar[r]\ar[d]
       & \mathrm{K}^{n+1}\ar[r]\ar[d]
-      & \cdots\\
-    \cdots\ar[r]
+      & \ldots\\
+    \ldots\ar[r]
       & \mathrm{K}^{n-1}_\alpha\ar[r]
       & \mathrm{K}^n_\alpha\ar[r]
       & \mathrm{K}^{n+1}_\alpha\ar[r]
-      & \cdots,
+      & \ldots,
   }
 \]
 \oldpage[0\textsubscript{III}]{67}
@@ -417,7 +419,7 @@ Thus $h_n$ is injective.
   projective system are uniformly continuous for the metrics in
   question, and that $(A_\alpha)$ satisfies the condition
   \begin{itemize}
-    \item[\textbf{(ML')}]
+    \item[(ML$'$)]
     \emph{For every index $\alpha$, there is a $\beta\geq\alpha$ such
     that, for every $\gamma\geq\beta$,
     $f_{\alpha\gamma}(A_\gamma)$ is dense in
@@ -461,7 +463,7 @@ Thus $h_n$ is injective.
 Let $X$ be a topological space, let
 $(\sh{F}_k)_{k\in\bb{N}}$ be a projective system of sheaves of
 abelian groups on $X$, and put
-$\sh{F}=\varprojlim_k\sh{F}_k$.
+$\sh{F}=\varprojlim\sh{F}_k$.
 Suppose that the following conditions hold:
 \begin{enumerate}
   \item[{\rm(i)}]
@@ -502,7 +504,7 @@ $\HH^i(X,\sh{F})=0$ for $i>0$.
 It suffices to prove that, for every open subset $U$ of $X$ and every
 covering $\mathfrak{U}$ of $U$ by open subsets of $U$, one has
 \[
-  \CHH^i(\mathfrak{U},\sh{F})=0
+  \HH^i(\mathfrak{U},\sh{F})=0
   \qquad (i>0).
 \]
 Indeed, it then follows first that, for \v{C}ech cohomology,
@@ -511,18 +513,18 @@ $\check{\HH}^{\,i}(U,\sh{F})=0$ for every $i>0$, and hence, by
 $\HH^i(X,\sh{F})=0$ for every $i>0$.
 
 Since the $\sh{F}_k$ are flasque, one has
-$\CHH^i(\mathfrak{U},\sh{F}_k)=0$ for every $i>0$
+$\HH^i(\mathfrak{U},\sh{F}_k)=0$ for every $i>0$
 (G, II, 5.2.3).
 For each $k$, consider the complex
-$\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F}_k)$ of alternating
+$C^\bullet(\mathfrak{U},\sh{F}_k)$ of alternating
 cochains on the nerve of the covering $\mathfrak{U}$ (G, II, 5.1);
 these complexes plainly form a projective system of complexes of
 abelian groups.
 Let us show that all the maps
 \[
-  \check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F}_k)
+  C^\bullet(\mathfrak{U},\sh{F}_k)
   \longrightarrow
-  \check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F}_h)
+  C^\bullet(\mathfrak{U},\sh{F}_h)
   \qquad(h\leq k)
 \]
 are surjective.
@@ -540,18 +542,18 @@ sequence
 since $\sh{N}_{hk}$ is flasque.
 
 The projective system
-$(\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F}_k))_{k\in\bb{N}}$
+$(C^\bullet(\mathfrak{U},\sh{F}_k))_{k\in\bb{N}}$
 therefore satisfies (ML), and the same is true of
-$(\CHH^i(\mathfrak{U},\sh{F}_k))_{k\in\bb{N}}$ for every $i\geq0$:
+$(\HH^i(\mathfrak{U},\sh{F}_k))_{k\in\bb{N}}$ for every $i\geq0$:
 for $i>0$ this is trivial, while for $i=0$ it follows from what
 precedes, since
-$\CHH^0(\mathfrak{U},\sh{F}_k)=\Gamma(U,\sh{F}_k)$
+$\HH^0(\mathfrak{U},\sh{F}_k)=\Gamma(U,\sh{F}_k)$
 (G, II, 5.2.2).
 We may therefore apply \sref{0.13.2.3}, which gives
 \[
-  \CHH^i(\mathfrak{U},\sh{F})
+  \HH^i(\mathfrak{U},\sh{F})
   =
-  \varprojlim_k\CHH^i(\mathfrak{U},\sh{F}_k)
+  \varprojlim_k\HH^i(\mathfrak{U},\sh{F}_k)
   =0
   \qquad(i>0).
 \]
@@ -572,14 +574,14 @@ then the sequence $0\longrightarrow\sh{N}_{hk}\longrightarrow\sh{F}_k
 \longrightarrow\sh{F}_h\longrightarrow0$
 is exact by~{\rm(iii)}, and our assertion follows from the exactness
 of the functor
-$\sh{A}\longmapsto\sh{C}^i(X,\sh{A})$ (G, II, 4.3).
+$\sh{A}\leadsto\sh{C}^i(X,\sh{A})$ (G, II, 4.3).
 
 Put $\sh{G}^i=\varprojlim_k\sh{C}^i(X,\sh{F}_k)$.
 By part~\emph{a)}, one has
 $\HH^j(X,\sh{G}^i)=0$ for $j>0$ and $i\geq0$.
 We shall show that
 $\sh{G}^\bullet=(\sh{G}^i)_{i\geq0}$ is a resolution of the sheaf
-$\sh{F}$. Since $\HH^j(X,\sh{G}^i)=0$ for $j>0$, the cohomology
+$\sh{F}$. Since $\HH^j(X,\sh{G}^\bullet)=0$ for $j>0$, the cohomology
 $\HH^\bullet(X,\sh{F})$ will then be equal to
 $\HH^\bullet(\Gamma(X,\sh{G}^\bullet))$ (G, II, 4.7.1).
 
@@ -601,7 +603,7 @@ To prove our assertion, it remains to establish that
 $\sh{H}^i(\sh{G}^\bullet)=0$ for $i>0$.
 This sheaf is generated by the presheaf
 \[
-  U\longmapsto\HH^i\bigl(\Gamma(U,\sh{G}^\bullet)\bigr)
+  U\leadsto\HH^i\bigl(\Gamma(U,\sh{G}^\bullet)\bigr)
 \]
 (G, II, 4.1).
 Now the complex $\Gamma(U,\sh{G}^\bullet)$ is the projective limit of
@@ -697,7 +699,7 @@ $(\mathrm{F}^p(A_k))_{p\in\bb{Z}}$ by
 By hypothesis,
 $\mathrm{F}^{k_0}(A_k)=A_k$ and
 $\mathrm{F}^{k+1}(A_k)=0$; in other words, the filtration under
-consideration is finite (\sref{0.11.1.3}).
+consideration is finite \sref{0.11.1.3}.
 The graded objects associated with this filtration are therefore
 \[
   \mathrm{gr}^p(A_k)
@@ -922,7 +924,7 @@ The morphisms
 $X^\bullet_k\longrightarrow X^\bullet_p$ ($p\leq k$) then become
 morphisms of \emph{filtered} complexes with finite filtrations.
 The functoriality of the spectral sequences of filtered complexes
-(\sref{0.11.2.3}) shows that the transition morphisms of
+\sref{0.11.2.3} shows that the transition morphisms of
 $\bb{X}^\bullet$ induce morphisms making
 \[
   \mathrm{E}(\bb{X}^\bullet)
@@ -1039,7 +1041,7 @@ such that the diagram
       \ar[d]
     \\
     \mathrm{E}_r^{pq}(\bb{X}^\bullet)
-      \ar[r]^{j_r}
+      \ar[r]_{j_r}
     &
     \mathrm{E}_\infty^{pq}(X^\bullet_{p+r-1})
   }
@@ -1057,11 +1059,11 @@ The existence of $i$ follows from
   \mathrm{B}_\infty^{pq}(X^\bullet_k)
   \qquad (r>p-p_0)
 \]
-(\sref{0.13.5.3},~a)).
+(\sref{0.13.5.3},~\emph{a)}).
 For $k+1\leq p+r$, one has $\mathrm{Z}_r^{pq}(X^\bullet_k)
 =
 \mathrm{Z}_\infty^{pq}(X^\bullet_k)$
-(\sref{0.13.5.3},~b)); in particular,
+(\sref{0.13.5.3},~\emph{b)}); in particular,
 \[
   \mathrm{Z}_r^{pq}(X^\bullet_{p+r-1})
   =
@@ -1097,7 +1099,7 @@ exists, then so does the other, and there is a canonical isomorphism
 \end{equation}
 Moreover, the projective system
 $(\mathrm{E}_r^{pq}(\bb{X}^\bullet))_{r\in\bb{Z}}$ is essentially
-constant (\sref{0.13.4.2}) if and only if the projective system
+constant \sref{0.13.4.2} if and only if the projective system
 $(\mathrm{E}_\infty^{pq}(X^\bullet_k))_{k\in\bb{Z}}$ is essentially
 constant.
 \end{corollary}
@@ -1260,7 +1262,7 @@ is finite and that, for fixed $p$ and $q$, the sequences
 \]
 are stationary.
 The preceding spectral sequence is therefore \emph{biregular}
-(\sref{0.11.1.3}).
+\sref{0.11.1.3}.
 We denote it by
 $\mathrm{E}(A)=(\mathrm{E}_r^{pq}(A))$ and call it the
 \emph{spectral sequence of the functor $\mathrm{T}$ relative to the
@@ -1331,7 +1333,7 @@ abutments:
     \mathrm{E}_\infty^{p+s,q-s}(B)
       \ar[r]_{\beta^{p+s,q-s}}
     &
-    \mathrm{gr}^{p+s}(\RR^{p+q}\mathrm{T}(B)).
+    \mathrm{gr}^{p+s}(\RR^{p+q}\mathrm{T}(B))
   }
 \]
 \end{env}
@@ -1347,7 +1349,7 @@ homomorphism
   h:S\longrightarrow\Hom_{\cat{C}}(A,A)
 \end{equation}
 \oldpage[0\textsubscript{III}]{75}
-such that, for every $t\in\mathrm{F}^i(S)$, $h_t(\mathrm{F}^i(A))
+such that, for every $t\in\mathrm{F}^j(S)$, $h_t(\mathrm{F}^i(A))
 \subset
 \mathrm{F}^{i+j}(A)$
 for every pair $i,j$.
@@ -1355,27 +1357,27 @@ For brevity, we then say that $A$ is equipped with the structure of a
 \emph{filtered $S$--$\cat{C}$-module} over the filtered ring $S$.
 
 Passing to the associated graded objects, every $h_t$, for
-$t\in\mathrm{F}^i(S)$, defines a graded endomorphism
+$t\in\mathrm{F}^j(S)$, defines a \emph{graded} endomorphism
 $\overline{h}_t$ of $\mathrm{gr}^\bullet(A)$, homogeneous of degree
-$i$.
+$j$.
 Moreover, this endomorphism depends only on the class of $t$ in
-$\mathrm{gr}^i(S)$, and one thereby obtains a homomorphism of
+$\mathrm{gr}^j(S)$, and one thereby obtains a homomorphism of
 \emph{graded rings}
 \[
   \overline{h}:
   \mathrm{gr}^\bullet(S)
   \longrightarrow
-  \Hom_{\cat{C}}^\bullet
+  \Hom_{\cat{C}}^g
   \bigl(\mathrm{gr}^\bullet(A),\mathrm{gr}^\bullet(A)\bigr),
 \]
-where the right-hand side is the ring of graded endomorphisms of
+where the right-hand side is the ring of \emph{graded} endomorphisms of
 $\mathrm{gr}^\bullet(A)$.
 We say that $\mathrm{gr}^\bullet(A)$ is equipped with the structure
 of a \emph{graded $\mathrm{gr}^\bullet(S)$--$\cat{C}$-module}.
 
 It follows from \sref{0.13.6.5} that, for
 $1\leq r\leq+\infty$, every
-$\overline{t}\in\mathrm{gr}^i(S)$ canonically defines, on the
+$\overline{t}\in\mathrm{gr}^j(S)$ canonically defines, on the
 bigraded objects
 \[
   \bigl(\mathrm{B}_r^{pq}(A)\bigr)_{(p,q)\in\bb{Z}\times\bb{Z}},
@@ -1385,41 +1387,42 @@ bigraded objects
 and $\mathrm{E}_r(A)
 =
 \bigl(\mathrm{E}_r^{pq}(A)\bigr)_{(p,q)\in\bb{Z}\times\bb{Z}}$,
-bigraded endomorphisms of degree $(i,-i)$.
+bigraded endomorphisms of degree $(j,-j)$.
 On $\mathrm{E}_r(A)$, for finite $r$, this endomorphism commutes with
 the bigraded endomorphism defined by the $d_r^{pq}$.
-These endomorphisms satisfy the usual associativity and
+Since these endomorphisms satisfy the usual associativity and
 distributivity conditions with respect to addition in
-$\mathrm{gr}^\bullet(S)$ and in the bigraded objects in question.
-For brevity, we say that the latter are
+$\mathrm{gr}^\bullet(S)$ and in the bigraded objects in question,
+we say for brevity that the latter are
 \emph{bigraded $\mathrm{gr}^\bullet(S)$--$\cat{C}'$-modules};
-it is immediate that the $\alpha_r^{pq}$ define an isomorphism for
+it is immediate that the $\alpha_r^{pq}$ define an \emph{isomorphism} for
 this type of structure.
 
 For every integer $n$, let $\mathrm{B}_r^{(n)}(A)$
 (respectively, $\mathrm{Z}_r^{(n)}(A)$ and
 $\mathrm{E}_r^{(n)}(A)$) denote the graded subobject of
-$\mathrm{B}_r^{\bullet,\bullet}(A)$
-(respectively, $\mathrm{Z}_r^{\bullet,\bullet}(A)$ and
-$\mathrm{E}_r^{\bullet,\bullet}(A)$) consisting of the terms for
-which $p+q=n$ ($1\leq r\leq+\infty$).
+$\mathrm{B}_r^{\bullet\bullet}(A)$
+(respectively, $\mathrm{Z}_r^{\bullet\bullet}(A)$ and
+$\mathrm{E}_r^{\bullet\bullet}(A)$) consisting of the $\mathrm{B}_r^{pq}(A)$
+(respectively, $\mathrm{Z}_r^{pq}(A)$ and $\mathrm{E}_r^{pq}(A)$) such
+that $p+q=n$ ($1\leq r\leq+\infty$).
 It is immediate that these are
 \emph{graded $\mathrm{gr}^\bullet(S)$--$\cat{C}'$-modules}.
 
-Finally, every $\overline{t}\in\mathrm{gr}^i(S)$ defines, for every
-$n$, a graded endomorphism of degree $i$ on the graded object
+Finally, every $\overline{t}\in\mathrm{gr}^j(S)$ defines, for every
+$n$, a graded endomorphism of degree $j$ on the graded object
 $\mathrm{gr}^\bullet(\RR^n\mathrm{T}(A))$, which thereby acquires the
-structure of a graded
-$\mathrm{gr}^\bullet(S)$--$\cat{C}'$-module.
-For $p+q=n$, the $\beta^{pq}$ define an isomorphism
+structure of a \emph{graded
+$\mathrm{gr}^\bullet(S)$--$\cat{C}'$-module}.
+For $p+q=n$, the $\beta^{pq}$ define an \emph{isomorphism}
 \[
-  \mathrm{E}^{(n)}(A)
+  \mathrm{E}_\infty^{(n)}(A)
   \isoto
   \mathrm{gr}^\bullet(\RR^n\mathrm{T}(A))
 \]
-for this type of structure.
+for this kind of structure.
 
-We note that, when $\cat{C}'$ is the category of abelian groups, the
+We note that, when $\cat{C}'$ is the category of \emph{abelian groups}, the
 structures of an $S$--$\cat{C}'$-module (respectively, of a graded or
 bigraded $\mathrm{gr}^\bullet(S)$--$\cat{C}'$-module) are simply the
 usual structures of an $S$-\emph{module} (respectively, a graded or
@@ -1571,13 +1574,13 @@ equivalent, and \sref{0.13.7.4.1} is just
 
 \begin{corollary}[13.7.5]
 \label{0.13.7.5}
-Let $\sh{F}=(\sh{F}_k)_{k\in\bb{N}}$ be a projective system of
+Let $\boldsymbol{\sh{F}}=(\sh{F}_k)_{k\in\bb{N}}$ be a projective system of
 sheaves of abelian groups satisfying conditions {\rm(i)}, {\rm(ii)},
 and {\rm(iii)} of \sref{0.13.3.1}, and put
 $\sh{F}=\varprojlim\sh{F}_k$.
 Suppose that, for the functor
-$\sh{G}\longmapsto\Gamma(X,\sh{G})$, the projective system
-$(\mathrm{E}_r^{pq}(\sh{F}))_r$ is essentially constant whenever
+$\sh{G}\leadsto\Gamma(X,\sh{G})$, the projective system
+$(\mathrm{E}_r^{pq}(\boldsymbol{\sh{F}}))_r$ is essentially constant whenever
 $p+q=n$ or $p+q=n+1$.
 On $\HH^{n+1}(X,\sh{F})$, consider the filtration $\mathrm{F}^p\bigl(\HH^{n+1}(X,\sh{F})\bigr)
 =
@@ -1592,7 +1595,7 @@ Then there is a canonical isomorphism
 \tag{13.7.5.1}
   \mathrm{gr}^p\bigl(\HH^{n+1}(X,\sh{F})\bigr)
   \isoto
-  \mathrm{E}_\infty^{p,n-p+1}(\sh{F})
+  \mathrm{E}_\infty^{p,n-p+1}(\boldsymbol{\sh{F}})
   \qquad(p\in\bb{Z}).
 \end{equation}
 \end{corollary}
@@ -1604,9 +1607,9 @@ abelian groups on $X$, $\cat{C}'$ the category of abelian groups,
 and $\mathrm{T}=\Gamma$.
 It gives, for every $p\in\bb{Z}$, a canonical isomorphism
 \[
-  \mathrm{gr}^p\bigl(\RR^{n+1}\Gamma(\sh{F})\bigr)
+  \mathrm{gr}^p\bigl(\RR^{n+1}\Gamma(\boldsymbol{\sh{F}})\bigr)
   \isoto
-  \mathrm{E}_\infty^{p,n-p+1}(\sh{F}).
+  \mathrm{E}_\infty^{p,n-p+1}(\boldsymbol{\sh{F}}).
 \]
 Moreover, by \sref{0.13.7.4}, the projective system
 $(\HH^n(X,\sh{F}_k))_{k\in\bb{Z}}$ satisfies {\rm(ML)}; hence
@@ -1615,13 +1618,15 @@ $(\HH^n(X,\sh{F}_k))_{k\in\bb{Z}}$ satisfies {\rm(ML)}; hence
   \HH^{n+1}(X,\sh{F})
   \isoto
   \varprojlim_k\HH^{n+1}(X,\sh{F}_k).
+\label{0.13.7.5.1b}
+\tag{13.7.5.2}
 \]
 
 Since the projective system
-$\RR^{n+1}\Gamma(\sh{F})$ satisfies {\rm(ML)} by
+$\RR^{n+1}\Gamma(\boldsymbol{\sh{F}})$ satisfies {\rm(ML)} by
 \sref{0.13.7.4}, there is a canonical isomorphism
 \[
-  \mathrm{gr}^p\bigl(\RR^{n+1}\Gamma(\sh{F})\bigr)
+  \mathrm{gr}^p\bigl(\RR^{n+1}\Gamma(\boldsymbol{\sh{F}})\bigr)
   \isoto
   \varprojlim_k
   \mathrm{gr}^p\bigl(\HH^{n+1}(X,\sh{F}_k)\bigr)
@@ -1633,17 +1638,17 @@ by \sref{0.13.4.3}, and a canonical isomorphism $\varprojlim_k
 \varprojlim_k\HH^{n+1}(X,\sh{F}_k)
 \right)$
 by \sref{0.13.4.5}.
-It remains only to check that the preceding isomorphism is
+It remains only to check that the isomorphism (\hyperref[0.13.7.5.1b]{13.7.5.2}) is
 compatible with the filtrations on its two sides.
 This follows immediately from the definitions and, for every $p$,
 from the commutativity of
 \[
   \xymatrix{
     \HH^{n+1}(X,\sh{F})
-      \ar[r]^-{\sim}\ar[dr]
-    &
+      \ar[rr]^-{\sim}\ar[dr]
+    &&
     \varprojlim_k\HH^{n+1}(X,\sh{F}_k)
-      \ar[d]
+      \ar[dl]
     \\
     &
     \HH^{n+1}(X,\sh{F}_{p-1}).
@@ -1674,7 +1679,7 @@ $1\leq r\leq+\infty$, the morphisms
 \]
 are morphisms of bigraded
 $\mathrm{gr}^\bullet(S)$--$\cat{C}'$-modules
-(\sref{0.13.6.5}), and that, for finite $r$, the families
+\sref{0.13.6.5}, and that, for finite $r$, the families
 \[
   \bigl(\mathrm{Z}_r^{pq}(\bb{A})\bigr),\qquad
   \bigl(\mathrm{B}_r^{pq}(\bb{A})\bigr),\qquad
@@ -1787,7 +1792,7 @@ Then:
   $(\mathrm{E}_r^{pq}(\bb{A}))_r$ is essentially constant whenever
   $p+q=n$ or $p+q=n+1$.
   Thus $\mathrm{E}_\infty^{pq}(\bb{A})$ is defined
-  (\sref{0.13.5.7}), and the isomorphisms
+  \sref{0.13.5.7}, and the isomorphisms
   \begin{equation}
   \label{0.13.7.7.1}
   \tag{13.7.7.1}
@@ -1886,10 +1891,10 @@ Then the following conditions are equivalent:
   $\mathfrak{J}\mathrm{F}^{p+1}(M)
   \subset\mathrm{F}^{p+2}(M)$.
 \end{enumerate}
+\end{lemma}
 
 For the proof, see Bourbaki, \emph{Alg.\ comm.}, chap.~III,
 \textsection3, n\textsuperscript{o}~1, prop.~3.
-\end{lemma}
 
 \begin{env}[13.7.7.4]
 \label{0.13.7.7.4}
@@ -1921,11 +1926,11 @@ is a canonical isomorphism
 \begin{proof}
 Indeed, $\RR^n\mathrm{T}(\bb{A})$ is an $S$-module of finite type,
 and $S_{\{f\}}$ is a Noetherian adic $S$-algebra
-(\sref[0\textsubscript{I}]{0.7.6.11}), namely the separated
+\sref[0\textsubscript{\mdseries I}]{0.7.6.11}, namely the separated
 completion of $S_f$ for the $\mathfrak{J}$-preadic topology
-(\sref[0\textsubscript{I}]{0.7.6.2}).
-It follows from \sref[0\textsubscript{I}]{0.7.7.8} and
-\sref[0\textsubscript{I}]{0.7.7.1} that $\RR^n\mathrm{T}(\bb{A})\otimes_S S_{\{f\}}$
+\sref[0\textsubscript{\mdseries I}]{0.7.6.2}.
+It follows from \sref[0\textsubscript{\mdseries I}]{0.7.7.8} and
+\sref[0\textsubscript{\mdseries I}]{0.7.7.1} that $\RR^n\mathrm{T}(\bb{A})\otimes_S S_{\{f\}}$
 is isomorphic to the separated completion of
 $\RR^n\mathrm{T}(\bb{A})\otimes_S S_f$ for the
 $\mathfrak{J}$-preadic topology.

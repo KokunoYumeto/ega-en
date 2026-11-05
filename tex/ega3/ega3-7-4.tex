@@ -6,10 +6,10 @@ $H_\bullet(P_\bullet\otimes_A M)$.}{Exactness criteria for the functors H.(P. te
 \begin{env}[7.4.1]
 \label{III.7.4.1}
 Let $A$ be a ring, not necessarily commutative, and let
-$P_\bullet$ be a complex of flat right $A$-modules.  Since the
+$P_\bullet$ be a complex of \emph{flat} right $A$-modules.  Since the
 functor
 \[
-  M\longmapsto P_k\otimes_A M
+  M\leadsto P_k\otimes_A M
 \]
 is then exact in $\cat{Ab}_A$ for every $k$, the
 $\partial$-functor
@@ -26,22 +26,22 @@ If $A$ is commutative, then, for every $A$-algebra $B$, the
 homological functor $T_\bullet^{(B)}$ \sref{III.7.3.8} is, by
 definition, given by
 \[
-  T_i^{(B)}(N)
+  T_\bullet^{(B)}(N)
   =
-  H_i(P_\bullet\otimes_A N_{[\rho]}),
+  H_\bullet(P_\bullet\otimes_A N_{[\rho]}),
   \tag{7.4.1.2}\label{III.7.4.1.2.eq}
 \]
 where $\rho:A\to B$ is the homomorphism defining the
 $A$-algebra structure on $B$.  Since one may also write $P_\bullet\otimes_A N_{[\rho]}=P_\bullet\otimes_A(B\otimes_B N)_{[\rho]}=(P_\bullet\otimes_A B)\otimes_B N$,
 it follows that
 \[
-  T_i^{(B)}(N)
+  T_\bullet^{(B)}(N)
   =
-  H_i(P'_\bullet\otimes_B N)
+  H_\bullet(P'_\bullet\otimes_B N)
   \tag{7.4.1.3}\label{III.7.4.1.3.eq}
 \]
 for every $B$-module $N$, where $P'_\bullet$ is the complex
-$P_\bullet\otimes_A B$ of flat $B$-modules
+$P_\bullet\otimes_A B$ of \emph{flat} $B$-modules
 \sref[0]{0.6.2.1}.
 \end{env}
 
@@ -51,8 +51,8 @@ Under the general hypotheses of \sref{III.7.4.1}, and for a
 given integer $p\in\bb{Z}$, the following conditions are
 equivalent:
 \begin{enumerate}
-  \item[(a)] $T_p$ is left exact, or, equivalently,
-    $T_{p+1}$ is right exact;
+  \item[(a)] $T_p$ is left exact \textup{(or, what amounts to the same,}
+    $T_{p+1}$ is right exact);
   \item[(b)] $Z'_p(P_\bullet)
 =
 \Coker(P_{p+1}\longrightarrow P_p)$
@@ -73,131 +73,107 @@ equivalent:
 \end{proposition}
 
 \begin{proof}
-By definition there is a sequence, exact and functorial in
-$M$,
+By definition, there is an exact sequence, functorial in $M$,
 \[
   0
   \longrightarrow
   T_p(M)
   \longrightarrow
-  Z'_p(P_\bullet)\otimes_A M
+  Z'_p(P_\bullet\otimes M)
   \longrightarrow
-  P_{p-1}\otimes_A M.
+  P_{p-1}\otimes M,
 \]
-Indeed, by right exactness of the tensor product, $Z'_p(P_\bullet\otimes_A M)
+where $Z'_p(P_\bullet\otimes M)
 =
-\Coker(P_{p+1}\otimes_A M\longrightarrow
-P_p\otimes_A M)
+\Coker(P_{p+1}\otimes M\longrightarrow
+P_p\otimes M)
 =
-Z'_p(P_\bullet)\otimes_A M$.
-For every homomorphism $f:M\to N$ one therefore has the
-commutative diagram
+Z'_p(P_\bullet)\otimes M$
+by the right exactness of the tensor product.  For every
+homomorphism $f:M\to N$ one therefore has a commutative diagram
 \[
 \xymatrix{
   0 \ar[r]
     & T_p(M) \ar[r] \ar[d]_{u}
-    & Z'_p(P_\bullet)\otimes_A M \ar[r] \ar[d]_{v}
-    & P_{p-1}\otimes_A M \ar[d]_{w} \\
+    & Z'_p(P_\bullet)\otimes M \ar[r] \ar[d]_{v}
+    & P_{p-1}\otimes M \ar[d]_{w} \\
   0 \ar[r]
     & T_p(N) \ar[r]
-    & Z'_p(P_\bullet)\otimes_A N \ar[r]
-    & P_{p-1}\otimes_A N,
+    & Z'_p(P_\bullet)\otimes N \ar[r]
+    & P_{p-1}\otimes N
 }
 \tag{7.4.2.1}\label{III.7.4.2.1.eq}
 \]
-whose rows are exact.  If $f$ is a monomorphism, then so is
-$w$, because $P_{p-1}$ is flat.  If $T_p$ is left exact,
-$u$ is likewise a monomorphism, and it follows that $v$ is a
-monomorphism.  Thus $Z'_p(P_\bullet)$ is flat.  Conversely, if
-$Z'_p(P_\bullet)$ is flat, then $v$ is a monomorphism for every
-monomorphism $f:M\to N$, and diagram
-\eqref{III.7.4.2.1.eq} shows that $u$ is a monomorphism.
-Hence $T_p$, which is already half-exact, is left exact.  This
-proves the equivalence of (a) and (b).
-
-It is immediate that (c) implies (a).  Indeed, if
-$d_{p+1}:P'_{p+1}\to P'_p$ is zero and $0\longrightarrow M'\longrightarrow M\longrightarrow M''
-\longrightarrow 0$
-is an exact sequence of $A$-modules, then the boundary map in
-the exact sequence
+whose rows are exact.  If $f$ is a monomorphism, so is $w$,
+since $P_{p-1}$ is flat; if $T_p$ is left exact, $u$ is also a
+monomorphism; one concludes that $v$ is a monomorphism, which
+implies that $Z'_p(P_\bullet)$ is flat.  Conversely, if this is
+so, $v$ is a monomorphism for every monomorphism $f:M\to N$, so
+diagram \eqref{III.7.4.2.1.eq} shows that $u$ is a
+monomorphism, and consequently $T_p$ (which is already
+semi-exact) is left exact.  Thus (a) and (b) are equivalent.
+It is immediate that (c) implies (a), because if
+$d_{p+1}:P_{p+1}\to P_p$ is zero and
+$0\to M'\to M\to M''\to0$ is an exact sequence of $A$-modules,
+the boundary operator in the exact sequence
 \[
-  H_{p+1}(P'_\bullet\otimes_A M'')
+  H_{p+1}(P_\bullet\otimes M'')
   \xrightarrow{\partial}
-  H_p(P'_\bullet\otimes_A M')
+  H_p(P_\bullet\otimes M')
   \longrightarrow
-  H_p(P'_\bullet\otimes_A M)
+  H_p(P_\bullet\otimes M)
 \]
 \oldpage[III]{187}
-is zero by definition \emph{(M, IV, 1)}, so $T_p$ is left
-exact.
-
-Conversely, let us prove that (b) implies (c). Put
+is zero by definition (M, IV, 1), so $T_p$ is left exact.  Let
+us prove conversely that (b) implies (c).  If
+$Z_{p+1}(P_\bullet)=\Ker(P_{p+1}\longrightarrow P_p)$, there
+is an exact sequence
 \[
- C=Z'_p(P_\bullet),\qquad
- B=B_p(P_\bullet)=\Im(d_{p+1}),\qquad
- Z=Z_{p+1}(P_\bullet)=\Ker(d_{p+1}).
+  0\longrightarrow Z_{p+1}(P_\bullet)\longrightarrow P_{p+1}
+  \longrightarrow Z'_p(P_\bullet)\longrightarrow0
 \]
-There are two short exact sequences
+in which $P_{p+1}$ and $Z'_p(P_\bullet)$ are flat, so
+$Z_{p+1}(P_\bullet)$ is flat \sref[0]{0.6.1.2}.  We shall take
 \[
- 0\longrightarrow B\longrightarrow P_p\longrightarrow C\longrightarrow0,
- \qquad
- 0\longrightarrow Z\longrightarrow P_{p+1}\longrightarrow B\longrightarrow0.
+  P'_i=P_i\quad\text{for }i\ne p\text{ and }i\ne p+1,
+  \qquad
+  P'_p=Z'_p(P_\bullet)
+  \qquad\text{and}\qquad
+  P'_{p+1}=Z_{p+1}(P_\bullet);
 \]
-Since $C$ and $P_p$ are flat, $B$ is flat; since $B$ and $P_{p+1}$
-are flat, $Z$ is flat. Both sequences remain exact after tensoring with
-any left $A$-module $M$ \sref[0]{0.6.1.2}. In particular, the canonical
-maps identify $B\otimes_A M$ with the image of $d_{p+1}\otimes1_M$
-and $Z\otimes_A M$ with its kernel.
+as differential $d'_i:P'_i\to P'_{i-1}$ we shall take that of
+the complex $P_\bullet$ for $i\ne p$ and $i\ne p+1$, $0$ for
+$i=p+1$, and for $i=p$ the homomorphism
+$Z'_p(P_\bullet)\to P_{p-1}$ deduced from $d_p$ by passage to
+the quotient.  Since the $P_i$ are flat, one has
+\[
+  Z'_i(P_\bullet\otimes M)=Z'_i(P_\bullet)\otimes M,
+  \qquad
+  Z_i(P_\bullet\otimes M)=Z_i(P_\bullet)\otimes M
+  \quad\text{and}\quad
+  B_i(P_\bullet\otimes M)=B_i(P_\bullet)\otimes M
+\]
+(putting $B_i(P_\bullet)=\Im(P_{i+1}\to P_i)$); one immediately
+concludes that there are, for every $M$, functorial isomorphisms
+$H_i(P_\bullet\otimes M)\xrightarrow{\sim}H_i(P'_\bullet\otimes M)$
+for every $i$, and the verification that they form an
+isomorphism of $\partial$-functors follows without difficulty
+from the definition of $\partial$ (M, IV, 1).
+\end{proof}
 
-Define a complex $U_\bullet$ by $U_i=P_i$ for $i\geq p+2$,
-$U_{p+1}=Z$, and $U_i=0$ for $i\leq p$; its differential in degree
-$p+2$ is $d_{p+2}$ with target restricted to $Z$, and its other nonzero
-differentials are inherited from $P_\bullet$. Similarly, define
-$L_\bullet$ by $L_i=P_i$ for $i\leq p-1$, $L_p=C$, and $L_i=0$
-for $i\geq p+1$; its differential in degree $p$ is induced by $d_p$
-on the quotient $C$.
-Then $P'_\bullet=U_\bullet\oplus L_\bullet$ is a complex of flat
-modules, with $P'_i=P_i$ for $i\ne p,p+1$, $P'_p=C$,
-$P'_{p+1}=Z$, and $d'_{p+1}=0$.
-
-The inclusion in degree $p+1$ defines a map of complexes
-$a:U_\bullet\to P_\bullet$, and the quotient in degree $p$ defines
-a map $b:P_\bullet\to L_\bullet$. After tensoring with $M$, the
-first induces homology isomorphisms in every degree $i\geq p+1$:
-in degree $p+1$ this follows from the kernel identification above;
-in degree $p+2$, from the injectivity of
-$Z\otimes_A M\to P_{p+1}\otimes_A M$; the higher degrees are
-unchanged. The second induces homology isomorphisms in every degree
-$i\leq p$: in degree $p$, one takes the quotient by the image
-$B\otimes_A M$; in degree $p-1$, one uses the surjectivity of
-$P_p\otimes_A M\to C\otimes_A M$; the lower degrees are unchanged.
-Taking the inverses of the first isomorphisms and retaining the second
-ones therefore gives natural isomorphisms, for every $i$, $H_i(P_\bullet\otimes_A M)\xrightarrow{\sim}
-H_i(P'_\bullet\otimes_A M)$.
-These commute with the boundary maps associated to every short exact
-sequence $0\to M'\to M\to M''\to0$: in degrees $i\geq p+2$ and
-$i\leq p$, this follows from naturality for the maps of complexes $a$
-and $b$. In degree $p+1$, every cycle in $P_\bullet\otimes_A M''$
-comes from $Z\otimes_A M''$ and lifts, through the surjection
-$Z\otimes_A M\to Z\otimes_A M''$, to a cycle in
-$P_\bullet\otimes_A M$, so the boundary map is zero. The boundary
-map for $P'_\bullet$ is also zero because $d'_{p+1}=0$.
-Thus these isomorphisms form the required isomorphism of
-$\partial$-functors.
-
-We also note that the conditions of \sref{III.7.4.2} imply
-that $B_p(P_\bullet)$ is flat, since there is an exact sequence $0\longrightarrow B_p(P_\bullet)\longrightarrow P_p
+Note that the conditions of \sref{III.7.4.2} also imply that
+$B_p(P_\bullet)$ is \emph{flat}, since there is an exact sequence
+$0\longrightarrow B_p(P_\bullet)\longrightarrow P_p
 \longrightarrow Z'_p(P_\bullet)\longrightarrow0$
 in which $P_p$ and $Z'_p(P_\bullet)$ are flat
 \sref[0]{0.6.1.2}.
-\end{proof}
 
 \begin{corollary}[7.4.3]
 \label{III.7.4.3}
 Suppose that $A$ is a regular Noetherian ring of dimension
-$1$, in other words, a product of Dedekind rings
+$1$, in other words, a \emph{product of Dedekind rings}
 \sref[0]{0.17.1.3} and \sref[0]{0.17.3.7}; for example, $A$
-may be a principal ideal ring.  Then $T_p$ is left exact if
+may be a \emph{principal} ideal ring.  Then $T_p$ is left exact if
 and only if $T_p(A)$ is a flat $A$-module.  The functor $T_p$
 is exact if and only if both $T_p(A)$ and $T_{p-1}(A)$ are
 flat $A$-modules.
@@ -293,7 +269,7 @@ Under the general hypotheses of \sref{III.7.4.4}, conditions
   \item[(d)] there exists an $A$-module $Q$ and a functorial
     isomorphism
     \[
-      T_p(M)\simeq\Hom_A(Q,M).
+      T_p(M)\xrightarrow{\sim}\Hom_A(Q,M).
       \tag{7.4.6.1}\label{III.7.4.6.1.eq}
     \]
 \end{enumerate}
@@ -307,10 +283,10 @@ representing object for a representable functor
 \sref[0]{0.8.1.5}.  It is clear that the right-hand side of
 \eqref{III.7.4.6.1.eq} is left exact.
 
-Conversely, suppose that $T_p$ is left exact.  As in
-\sref{III.7.4.4}, one may first reduce to the case where the
-$P_i$ are flat and of finite type, and hence, since $A$ is
-Noetherian, projective of finite type (Bourbaki,
+Conversely, to prove the existence of $Q$ when $T_p$ is left
+exact, one may first, as in \sref{III.7.4.4}, reduce to the
+case where the $P_i$ are flat and of finite type, and hence
+(since $A$ is Noetherian) \emph{projective} of finite type (Bourbaki,
 \emph{Alg\`ebre commutative}, chap.~II, \S~5, no.~2, cor.\ of
 th.~1).  The \emph{dual} $\check{P}_i$ of $P_i$ is then also a
 projective $A$-module of finite type, $P_i$ is canonically
@@ -336,7 +312,7 @@ where $v=d_p\otimes 1$.  Put $Q'=\Ker(d_p)$, so that
 \[
   0
   \longrightarrow Q'
-  \longrightarrow P_p
+  \xrightarrow{w} P_p
   \xrightarrow{d_p}
   P_{p-1}
 \]
@@ -345,7 +321,7 @@ is exact.  Transposition gives the exact sequence
   \check{P}_{p-1}
   \xrightarrow{{}^t d_p}
   \check{P}_p
-  \longrightarrow
+  \xrightarrow{{}^t w}
   \check{Q}'
   \longrightarrow 0.
 \]
@@ -353,10 +329,10 @@ We claim that $Q=\check{Q}'=\Coker({}^t d_p)$
 has the required property.  Indeed, there is an exact sequence
 \[
   0
-  \longrightarrow \Hom_A(Q,M)
-  \longrightarrow \Hom_A(\check{P}_p,M)
+  \longrightarrow \Hom(Q,M)
+  \longrightarrow \Hom(\check{P}_p,M)
   \xrightarrow{v'}
-  \Hom_A(\check{P}_{p-1},M),
+  \Hom(\check{P}_{p-1},M),
 \]
 \oldpage[III]{189}
 where $v'=\Hom_A({}^t d_p,1)$.  Under the canonical
@@ -438,20 +414,20 @@ category of finite-type $A$-modules \sref[0]{0.7.3.3}.
 Consequently, $(K(M))^{\widehat{\,}}$ and $(C(M))^{\widehat{\,}}$ are,
 respectively, the kernel and the cokernel of
 \[
-  \widehat{u\otimes 1}:
-  \widehat{E\otimes_A M}
+  (u\otimes 1)^{\widehat{\,}}:
+  (E\otimes_A M)^{\widehat{\,}}
   \longrightarrow
-  \widehat{F\otimes_A M}.
+  (F\otimes_A M)^{\widehat{\,}}.
 \]
 Left exactness of $\varprojlim$ therefore gives $(K(M))^{\widehat{\,}}
 =
-\varprojlim_n K(M_n)$.
+\varprojlim K(M_n)$.
 On the other hand, right exactness of the tensor product gives $C(M_n)
 =
 C(M)\otimes_A(A/\mathfrak m^{n+1})$,
 and hence $(C(M))^{\widehat{\,}}
 =
-\varprojlim_n C(M_n)$
+\varprojlim C(M_n)$
 by definition.
 \end{proof}
 

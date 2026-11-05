@@ -1,7 +1,6 @@
 \section{Derivations and differentials}
 \label{section:0.20}
 
-\oldpage[0\textsubscript{IV-1}]{116}
 The notions introduced in this section will be taken up again in geometric form in chapter~IV, \S\,16, and will play an important role in the study of preschemes.
 Their importance in this chapter stems first from their relations with the notion of a formally smooth algebra, and in particular from the theorems \sref{0.20.4.9}, \sref{0.20.5.7} and \sref{0.20.5.12}, which will be translated into geometric language in the section of chapter~IV devoted to smooth morphisms, and are in constant use in the applications.
 On the other hand, the differential notions will serve to prove in \S\,22 important criteria for regularity which will play an essential role in the detailed study of Noetherian local rings made in \S\,7 of chapter~IV.
@@ -38,10 +37,10 @@ conversely, if $D$ is null on $\rho(A)$ and satisfies \sref{0.20.1.1.1}, it also
 
 \begin{definition}[20.1.2]
 \label{0.20.1.2}
-Given an $A$-ring $B$ and a $B$-bimodule $L$, we call an \emph{$A$-derivation} of $B$ into $L$ a map $D:B\to L$ satisfying conditions \textup{(i)} and (ii) of \sref{0.20.1.1}.
+Given an $A$-ring $B$ and a $B$-bimodule $L$, we call an \emph{$A$-derivation} of $B$ into $L$ a map $D:B\to L$ satisfying conditions \textup{(i)} and (ii) of \textup{\sref{0.20.1.1}}.
 \end{definition}
 
-It follows from \sref{0.20.1.1} that the kernel of an $A$-derivation $D:B\to L$ is a sub-$A$-ring of $B$.
+It follows from \sref{0.20.1.1.1} that the kernel of an $A$-derivation $D:B\to L$ is a sub-$A$-ring of $B$.
 
 One sometimes calls a \emph{derivation} of $B$ into $L$ a $\mathbf{Z}$-derivation, that is, an additive map of $B$ into $L$ satisfying \sref{0.20.1.1.1}; one then has $D(1)=0$ for such a map.
 If $B$ is an algebra over a \emph{prime field} $P$, every $\mathbf{Z}$-derivation of $B$ is a $P$-derivation: this is evident from the above if $P$ is of characteristic $>0$, and otherwise, the relation $n\cdot n^{-1}=1$ for $n\in\mathbf{Z}-\{0\}$ gives
@@ -105,7 +104,7 @@ The set of $A$-derivations $D$ of $E$ into $L$ such that $D(x)=x$ in $L$ is iden
 \end{corollary}
 
 \begin{proof}
-It suffices to apply \sref{0.20.1.1} for $B=E$, $v_0=1_E$; if $v=1_E-D$, the condition $D(x)=x$ for $x\in L$ is equivalent to $v(x)=0$ for $x\in L$, that is, $v=w\circ p$, where $w:C\to E$ is an $A$-homomorphism; the condition $p\circ v=p$ then gives $p\circ w=1_C$, i.e., $w$ is inverse on the right of $p$.
+It suffices to apply \sref{0.20.1.1} for $B=E$, $v_0=1_E$; if $v=1_E\setmin D$, the condition $D(x)=x$ for $x\in L$ is equivalent to $v(x)=0$ for $x\in L$, that is, $v=w\circ p$, where $w:C\to E$ is an $A$-homomorphism; the condition $p\circ v=p$ then gives $p\circ w=1_C$, i.e., $w$ is inverse on the right of $p$.
 \end{proof}
 
 \subsection{Functorial properties of derivations}
@@ -139,7 +138,7 @@ Finally, let $u:A'\to A$ be a ring homomorphism making $B$ into an $A'$-ring; ev
   u^0:\Der_A(B,L)\to\Der_{A'}(B,L)
 \end{equation}
 and if $u':A''\to A'$ is a second ring homomorphism, one has $(u\circ u')^0=u'^0\circ u^0$;
-when $A$, $A'$ and $B$ are commutative and $L$ a $B$-module, \sref{0.20.2.1.3} is a homomorphism of $B$-modules.
+when $A$, $A'$ and $B$ are commutative and $L$ a $B$-module \sref{0.20.2.1.3} is a homomorphism of $B$-modules.
 
 One can also say that
 \[
@@ -239,8 +238,8 @@ Under the hypotheses of \sref{0.20.2.2} \textup{(}resp.\ \sref{0.20.2.3}\textup{
   \label{0.20.2.4.2}
   0\to\Der_B(C,L)\xrightarrow{u^0}\Der_A(C,L)\xrightarrow{v^0}\Der_A(B,L)\xrightarrow{\partial}\operatorname{Exalcom}_{B/A}(C,L)\to 0\text{).}
 \end{equation}
-This follows from the definition of $\operatorname{Exan}_{B/A}(C,L)$ \textup{(}resp.\ $\operatorname{Exalcom}_{B/A}(C,L)$\textup{)} \textup{(}(18.3.7) and (18.4.2)\textup{)}.
 \end{corollary}
+\noindent This follows from the definition of $\operatorname{Exan}_{B/A}(C,L)$ (resp.\ $\operatorname{Exalcom}_{B/A}(C,L)$) ((18.3.7) and (18.4.2)).
 
 \begin{remark}[20.2.5]
 \label{0.20.2.5}
@@ -289,7 +288,7 @@ If in $B$ the square of every open bilateral ideal is open, one has $\operatorna
 \end{proposition}
 
 \begin{proof}
-Indeed, if $\mathfrak{K}$ is an open bilateral ideal of $B$ annihilating $L$, and $D$ an $A$-derivation of $B$ into $L$, one has $D(\mathfrak{K}^2)\subset\mathfrak{K}.D(\mathfrak{K})+D(\mathfrak{K}).\mathfrak{K}=0$ \sref{0.20.1.1.1}, hence $D$ is continuous.
+Indeed, if $\mathfrak{K}$ is an open bilateral ideal of $B$ annihilating $L$, and $D$ an $A$-derivation of $B$ into $L$, one has $D(\mathfrak{K}^2)\subset\mathfrak{K}.D(\mathfrak{K})+D(\mathfrak{K}).\mathfrak{K}=0$ \sref{0.20.1.1.1} hence $D$ is continuous.
 \end{proof}
 
 \begin{env}[20.3.4]
@@ -306,7 +305,7 @@ There is then a canonical isomorphism
   \label{0.20.3.5.1}
   \varinjlim\Der_{A/\mathfrak{J}}(B/\mathfrak{K},L)\xrightarrow{\sim}\operatorname{D\acute{e}r.\ cont}_A(B,L)
 \end{equation}
-where in the first member the inductive limit is taken over the ordered filtered set of pairs $(\mathfrak{J},\mathfrak{K})$ of bilateral ideals such that $\mathfrak{K}.L=L.\mathfrak{K}=0$, $\mathfrak{J}.B\subset\mathfrak{K}$, $B.\mathfrak{J}\subset\mathfrak{K}$.
+where in the first member the inductive limit is taken over the ordered filtered set of pairs $(\mathfrak{J},\mathfrak{K})$ of open bilateral ideals such that $\mathfrak{K}.L=L.\mathfrak{K}=0$, $\mathfrak{J}.B\subset\mathfrak{K}$, $B.\mathfrak{J}\subset\mathfrak{K}$.
 \end{proposition}
 
 \begin{proof}
@@ -395,8 +394,9 @@ The \emph{augmented $B$-algebra of principal parts of order $1$} of $B$ over $A$
   \mathrm{P}^1_{B/A} = (B\otimes_A B)/\mathfrak{J}^2
 \end{equation}
 equipped with the structure of $B$-algebra defined by the homomorphism $\bar{j}_1:B\to\mathrm{P}^1_{B/A}$ (deduced from $j_1$ by composition with the canonical map $B\otimes_A B\to\mathrm{P}^1_{B/A}$), and with the augmentation of $B$-algebra $\varepsilon:\mathrm{P}^1_{B/A}\to B$ (also denoted $\varepsilon_{B/A}$) deduced from $p$ by passage to the quotient.
-As $p(b\otimes 1)=b$ by definition, it is clear that $\varepsilon$ is indeed an augmentation of $B$-algebra.
 \end{definition}
+
+As $p(b\otimes 1)=b$ by definition, it is clear that $\varepsilon$ is indeed an augmentation of $B$-algebra.
 
 \begin{definition}[20.4.3]
 \label{0.20.4.3}
@@ -458,7 +458,7 @@ Using the relation
   (xy)\otimes z\setmin x\otimes(yz)
   &=(x\otimes 1)(1\otimes z)(y\otimes 1\setmin 1\otimes y)\\
   &=xz\cdot(y\otimes 1\setmin 1\otimes y)\\
-  &\quad-x\cdot(z\otimes 1\setmin 1\otimes z)(y\otimes 1\setmin 1\otimes y)
+  &\quad\setmin x\cdot(z\otimes 1\setmin 1\otimes z)(y\otimes 1\setmin 1\otimes y)
   \end{aligned}
 \]
 in the $B$-module $B\otimes_A B$ (defined by $j_1$), and taking into account \sref{0.20.4.4}, one sees immediately that, if $\mathfrak{K}$ is an ideal of $B$, one has
@@ -558,13 +558,13 @@ Then the topological $B$-module $\Omega^1_{B/A}$ is \emph{formally projective}.
 \end{theorem}
 
 \begin{proof}
-Indeed, the hypothesis implies that $B\otimes_A B$ (equipped with the $B$-algebra structure defined by $j_1$) is a topological $B$-algebra formally smooth \sref{0.19.3.5}, (iii), and therefore also a topological $A$-algebra formally smooth \sref{0.19.3.5}, (ii); as $B$ is topologically isomorphic to the $A$-algebra quotient $(B\otimes_A B)/\mathfrak{J}$ and is a formally smooth $A$-algebra, the conclusion follows from \sref{0.19.5.3}.
+Indeed, the hypothesis implies that $B\otimes_A B$ (equipped with the $B$-algebra structure defined by $j_1$) is a topological $B$-algebra formally smooth (\ref{0.19.3.5}, (iii)), and therefore also a topological $A$-algebra formally smooth (\ref{0.19.3.5}, (ii)); as $B$ is topologically isomorphic to the $A$-algebra quotient $(B\otimes_A B)/\mathfrak{J}$ and is a formally smooth $A$-algebra, the conclusion follows from \sref{0.19.5.3}.
 \end{proof}
 
 \oldpage[0\textsubscript{IV-1}]{127}
 \begin{corollary}[20.4.10]
 \label{0.20.4.10}
-Suppose moreover that in $B$ the square of every open ideal is open; then, for every open ideal $\mathfrak{R}$ of $B$, $\Omega^1_{B/A}\otimes_B(B/\mathfrak{R})=\Omega^1_{B/A}/\mathfrak{R}.\Omega^1_{B/A}$ is a projective $(B/\mathfrak{R})$-module.
+Suppose moreover that in $B$ the square of every open ideal is open; then, for every open ideal $\mathfrak{K}$ of $B$, $\Omega^1_{B/A}\otimes_B(B/\mathfrak{K})=\Omega^1_{B/A}/\mathfrak{K}.\Omega^1_{B/A}$ is a projective $(B/\mathfrak{K})$-module.
 \end{corollary}
 
 \begin{proof}
@@ -598,25 +598,18 @@ Indeed, one has $\Der_A(B,L)=0$ for every $B$-module $L$ by virtue of \sref{0.20
 Then $\Omega^1_{B/A}$ is a free $B$-module, of which the $dX_\alpha$ form a \emph{basis}.
 Indeed, the $dX_\alpha$ generate this $B$-module \sref{0.20.4.7}.
 On the other hand, if $L$ is a free $B$-module with basis $(z_\alpha)_{\alpha\in I}$ whose index set $I$ is the same, there exists an $A$-homomorphism $u$ of $B$ into $D_B(L)$ such that $u(X_\alpha)=(X_\alpha,z_\alpha)$ for every $\alpha\in I$, hence \sref{0.20.1.5} a derivation $D$ of $B$ into $L$ such that $D(X_\alpha)=z_\alpha$ for every $\alpha$; by virtue of \sref{0.20.4.8.1}, this proves that the $dX_\alpha$ are linearly independent.
-  \item[\rm(ii)] Let $A$ be a ring, $L$ an $A$-module, and $B$ the square-zero
-  $A$-algebra $D_A(L)$. For every $B$-module $M$, restriction to $L$ identifies
-  $\Der_A(B,M)$ with the $A$-linear maps $u:L\to M$ such that
-  \[
-    (0,x)u(y)+(0,y)u(x)=0\quad\text{for all }x,y\in L.
-  \]
-  Consequently, $\Omega^1_{B/A}$ has the presentation
-  \[
-    B\otimes_A(L\otimes_A L)\longrightarrow B\otimes_A L
-    \longrightarrow\Omega^1_{B/A}\longrightarrow0,
-  \]
-  where the first arrow sends $b\otimes(x\otimes y)$ to
-  $b((0,x)\otimes y+(0,y)\otimes x)$ and the second sends $b\otimes x$ to
-  $b\,d_{B/A}(0,x)$.
+  \item[\rm(ii)] Let $A$ be a ring, $L$ an $A$-module, $B$ the
+  $A$-algebra $D_A(L)$; then the canonical homomorphism
+  $x\leadsto d_{B/A}x$ from $L$ to $\Omega^1_{B/A}$ is \emph{bijective}, for
+  it is immediate that the $A$-derivations of $B=D_A(L)$ into a $B$-module
+  $M$ are the maps of the form $(b,x)\leadsto u(x)$, where
+  $u\in\operatorname{Hom}_A(L,M)$; one therefore concludes by
+  \sref{0.20.4.8},~(ii).
   \item[\rm(iii)] Suppose that $B$ is the product of two topological $A$-algebras $B_1$, $B_2$ (identified with ideals of $B$).
 Then the images of $B_1\otimes_A B_2$ and $B_2\otimes_A B_1$ by the homomorphism $p$ \sref{0.20.4.1.1} are zero, whence it follows immediately that $\mathrm{P}^1_{B/A}$ identifies with the \emph{product} (topological) $\mathrm{P}^1_{B_1/A}\times\mathrm{P}^1_{B_2/A}$, and that the $B$-module $\Omega^1_{B/A}$ is the \emph{direct sum} (topological) of the $B$-modules $\Omega^1_{B_1/A}$ and $\Omega^1_{B_2/A}$ (annihilated by $B_2$ and $B_1$ respectively).
-  \item[\rm(iv)] Let $A$, $B$ be two integral domains such that $A\subset B$, $B$ integral over $A$, and the field of fractions of $B$ a \emph{separable} extension of that of $A$.
-Then the $B$-module $\Omega^1_{B/A}$ is a \emph{torsion} module.
-Indeed, for every $x\in B$, let $f$ be the minimal polynomial of $x$ over the field of fractions $K$ of $A$; there exists a nonzero $a\in A$ such that $af[T]\in A[T]$; as $x$ is separable over $K$, one has $f'(x)\neq 0$, and on the other hand from the relation $af(x)=0$ one deduces that $af'(x)d_{B/A}x=0$, whence our assertion by virtue of \sref{0.20.4.7}.
+  \item[\rm(iv)] Let $A$, $B$ be two integral domains such that $A\subset B$, that $A$ is integrally closed, $B$ integral over $A$, and that the field of fractions of $B$ is a \emph{separable} extension of that of $A$.
+Then the $B$-module $\Omega^1_{B/A}$ is a \emph{torsion module}.
+Indeed, for every $x\in B$, the minimal polynomial of $x$ over the field of fractions $K$ of $A$ is a polynomial $f(T)$ belonging to $A[T]$; as $x$ is separable over $K$, one has $f'(x)\neq 0$, and on the other hand one deduces from the relation $f(x)=0$ that $f'(x)d_{B/A}x=0$, whence our assertion by virtue of \sref{0.20.4.7}.
 \end{enumerate}
 \end{examples}
 
@@ -915,7 +908,7 @@ is bijective.
 \end{corollary}
 
 \begin{proof}
-It suffices to apply \sref{0.20.5.8} to $C=S^{-1}B$, which is a $B$-algebra formally \'{e}tale for the discrete topologies \sref{0.19.10.3}, (ii).
+It suffices to apply \sref{0.20.5.8} to $C=S^{-1}B$, which is a $B$-algebra formally \'{e}tale for the discrete topologies (\ref{0.19.10.3}, (ii)).
 \end{proof}
 
 Taking into account \sref{0.20.5.5}, one can therefore write
@@ -932,7 +925,7 @@ If $k$ is a field and $K=k(X_\alpha)_{\alpha\in I}$ a pure transcendental extens
 \end{corollary}
 
 \begin{proof}
-As $K$ is the field of fractions of the polynomial ring $k[X_\alpha]_{\alpha\in I}$, this follows from \sref{0.20.4.13}, (i) and \sref{0.20.5.9}.
+As $K$ is the field of fractions of the polynomial ring $k[X_\alpha]_{\alpha\in I}$, this follows from (\ref{0.20.4.13}, (i)) and \sref{0.20.5.9}.
 \end{proof}
 
 \oldpage[0\textsubscript{IV-1}]{133}
@@ -1019,9 +1012,10 @@ The existence of the exact sequence formed by the first 4 terms of \sref{0.20.5.
 \end{equation}
 whence, by tensoring with $C$ (considered as an $E$-algebra), the exact sequence
 \[
-  \mathfrak{K}^2/\mathfrak{K}^4\otimes_E C\to\Omega^1_{B/A}\otimes_B C\to\Omega^1_{E/A}\otimes_E C\to 0.
+  \mathfrak{K}^2/\mathfrak{K}^4\otimes_E C\xrightarrow{\delta'}\Omega^1_{B/A}\otimes_B C\to\Omega^1_{E/A}\otimes_E C\to 0.
 \]
-But if $x,y$ are two elements of $\mathfrak{K}$ and $\zeta$ the class of $xy$ modulo $\mathfrak{K}^4$, the image $\delta'(\zeta\otimes 1)$ is $(xd_{B/A}(y)+yd_{B/A}(x))\otimes 1$; but as the images of $x$ and of $y$ in $C$ are zero, one has also $d_{B/A}(xy)\otimes 1=0$ in $\Omega^1_{B/A}\otimes_B C$, which proves our assertion.
+
+Now, if $x,y$ are two elements of $\mathfrak{K}$, and $\zeta$ the class of $xy$ mod.~$\mathfrak{K}^4$, the image $\delta'(\zeta\otimes 1)$ is by definition $d_{B/A}(xy)\otimes 1=(xd_{B/A}(y)+yd_{B/A}(x))\otimes 1$; but as the images of $x$ and of $y$ in $C$ are zero, one also has $d_{B/A}(xy)\otimes 1=0$ in $\Omega^1_{B/A}\otimes_B C$, which proves our assertion.
 
 \medskip
 (iii) To say that $\delta_{C/B/A}$ is left-invertible amounts, taking into account the exactness of \sref{0.20.5.12.1}, to saying that the sequence
@@ -1030,10 +1024,10 @@ But if $x,y$ are two elements of $\mathfrak{K}$ and $\zeta$ the class of $xy$ mo
   \label{0.20.5.12.5}
   0\to\mathfrak{K}/\mathfrak{K}^2\xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C\xrightarrow{u_{C/B/A}}\Omega^1_{C/A}\to 0
 \end{equation}
-is \emph{exact and split}, and it is known (Bourbaki, \emph{loc.\ cit.}) that to say that $\Ker(u^1)=0$ in the exact sequence \sref{0.20.5.12.3} for every $L$, which shows the equivalence of the conditions $a)$ and $b)$ (cf.\ \sref{0.18.3.6.2}).
+is \emph{exact} and \emph{split}, and it amounts to the same (Bourbaki, \emph{loc.\ cit.}) to say that $\Ker(u^1)=0$ in the exact sequence \sref{0.20.5.12.3} for every $L$, which shows the equivalence of the conditions $a)$ and $b)$ (cf.\ \sref{0.18.3.6.2}).
 
 The fact that $b)$ implies $c)$ comes from the fact that the inverse image by $u:B\to C$ of the $A$-extension $E$ of $C$ by $\mathfrak{K}/\mathfrak{K}^2$ is $A$-trivial, $u$ being composed of the canonical homomorphisms $B\to E\to C$ \sref{0.18.1.6}.
-Conversely, $c)$ implies $b)$, since every $B$-extension of $C$ by $L$ is $B$-equivalent to $E\otimes_{\mathfrak{K}/\mathfrak{K}^2}L$ \sref{0.18.3.8}, in other words its class is the image of the class of $E$ (considered as $B$-\emph{extension}) by the homomorphism
+Conversely, $c)$ implies $b)$, since every $B$-\emph{extension} of $C$ by $L$ is $B$-equivalent to $E\oplus_{\mathfrak{K}/\mathfrak{K}^2}L$ \sref{0.18.3.8}, in other words its class is the image of the class of $E$ (considered as $B$-\emph{extension}) by the homomorphism
 \oldpage[0\textsubscript{IV-1}]{135}
 $w_*:\operatorname{Exan}_B(C,\mathfrak{K}/\mathfrak{K}^2)\to\operatorname{Exan}_B(C,L)$ corresponding to a $B$-homomorphism $w:\mathfrak{K}/\mathfrak{K}^2\to L$.
 The fact that $c)$ implies $b)$ then follows from the commutativity of the diagram \sref{0.18.3.6.5}
@@ -1046,21 +1040,22 @@ The fact that $c)$ implies $b)$ then follows from the commutativity of the diagr
 
 \medskip
 (iv) We have seen \sref{0.20.1.7} that the right inverses of $E\to C$ correspond bijectively, in a canonical fashion, to the set of elements $D\in\Der_A(E,\mathfrak{K}/\mathfrak{K}^2)$ such that $D(x)=x$ in $\mathfrak{K}/\mathfrak{K}^2$, hence also, by \sref{0.20.4.8}, to the set of $E$-homomorphisms $h:\Omega^1_{E/A}\to\mathfrak{K}/\mathfrak{K}^2$ such that the composite $\mathfrak{K}/\mathfrak{K}^2\xrightarrow{d_{E/A}}\Omega^1_{E/A}\xrightarrow{h}\mathfrak{K}/\mathfrak{K}^2$ is the identity.
-By tensorization with $C$, one deduces that the composite
+By tensorization with $C$, one deduces from this (since $\mathfrak{K}/\mathfrak{K}^2$ is a $C$-module) that the composite
 \[
-  \mathfrak{K}/\mathfrak{K}^2\xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C\xrightarrow{h\otimes 1}\mathfrak{K}/\mathfrak{K}^2
+  \mathfrak{K}/\mathfrak{K}^2\xrightarrow{\delta_{C/E/A}}\Omega^1_{E/A}\otimes_E C\xrightarrow{h\otimes 1}\mathfrak{K}/\mathfrak{K}^2
 \]
-is the identity; or, since $\mathfrak{K}/\mathfrak{K}^2$ is a $C$-module, $h\leadsto h\otimes 1$ is an isomorphism of the set $\Hom_E(\Omega^1_{E/A},\mathfrak{K}/\mathfrak{K}^2)$ onto $\Hom_C(\Omega^1_{E/A}\otimes_E C,\mathfrak{K}/\mathfrak{K}^2)$; and by (ii) elsewhere one can canonically identify $\Omega^1_{E/A}\otimes_E C$ and $\Omega^1_{B/A}\otimes_B C$, $\delta_{C/E/A}$ being identified with $\delta_{C/B/A}$.
+is the identity; now, since $\mathfrak{K}/\mathfrak{K}^2$ is a $C$-module, $h\leadsto h\otimes 1$ is an isomorphism of the set $\Hom_E(\Omega^1_{E/A},\mathfrak{K}/\mathfrak{K}^2)$ onto $\Hom_C(\Omega^1_{E/A}\otimes_E C,\mathfrak{K}/\mathfrak{K}^2)$; and moreover (ii) proves that one can canonically identify $\Omega^1_{E/A}\otimes_E C$ and $\Omega^1_{B/A}\otimes_B C$, $\delta_{C/E/A}$ then being identified with $\delta_{C/B/A}$. Q.E.D.
 \end{proof}
 
 \begin{example}[20.5.13]
 \label{0.20.5.13}
-Let $B=A[X_\alpha]_{\alpha\in I}$ be a polynomial algebra over $A$, $\mathfrak{K}$ an ideal of $B$ and $C=B/\mathfrak{K}$; we know that $\Omega^1_{B/A}$ is a free $B$-module whose $dX_\alpha$ form a basis \sref{0.20.4.13}, (i), hence the $dX_\alpha$ also form a basis of the free $C$-module $\Omega^1_{B/A}\otimes_B C$.
+Let $B=A[X_\alpha]_{\alpha\in I}$ be a polynomial algebra over $A$, $\mathfrak{K}$ an ideal of $B$, $(P_\lambda)$ a system of generators of $\mathfrak{K}$, and $C=B/\mathfrak{K}$; we know that $\Omega^1_{B/A}$ is a free $B$-module whose $dX_\alpha$ form a basis \sref{0.20.4.13}, (i), hence the $dX_\alpha$ also form a basis of the free $C$-module $\Omega^1_{B/A}\otimes_B C$.
 On the other hand, from the definition it follows immediately that the image of $\mathfrak{K}/\mathfrak{K}^2$ by $\delta_{C/B/A}$ is the sub-$C$-module generated by the
 \[
   dP_\lambda=\sum_\alpha\frac{\partial P_\lambda}{\partial X_\alpha}\,dX_\alpha.
 \]
-One concludes that $\Omega^1_{C/A}$ is isomorphic to the quotient of the free $C$-module with basis the $dX_\alpha$ by the sub-$C$-module generated by the $dP_\lambda$, which gives a description of the module of differentials of an \emph{arbitrary} $A$-algebra $C$ that can always be obtained in the above manner.
+
+One concludes that $\Omega^1_{C/A}$ is isomorphic to the quotient of the free $C$-module having the $dX_\alpha$ as basis by the sub-$C$-module generated by the $dP_\lambda$, which gives a description of a module of differentials of an \emph{arbitrary} algebra, since every $A$-algebra $C$ can be obtained in the preceding way.
 \end{example}
 
 \begin{corollary}[20.5.14]
@@ -1097,13 +1092,14 @@ is \emph{bijective}; this indeed follows from the exact sequence \sref{0.20.5.7.
 \begin{definition}[20.6.1]
 \label{0.20.6.1}
 Given two ring homomorphisms $u:A\to B$, $v:B\to C$, one calls the \emph{module of imperfection} of the $B$-algebra $C$ relative to $A$, and one denotes by $\Upsilon_{C/B/A}$, the kernel of the $C$-module homomorphism $v_{C/B/A}:\Omega^1_{B/A}\otimes_B C\to\Omega^1_{C/A}$.
+\end{definition}
+
 One therefore has by definition (cf.\ \sref{0.20.5.7}) the exact sequence
 \begin{equation}
 \tag{20.6.1.1}
   \label{0.20.6.1.1}
   0\to\Upsilon_{C/B/A}\to\Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\to 0.
 \end{equation}
-\end{definition}
 
 When $A=\bb{Z}$ (so that $\Omega^1_{B/A}$ and $\Omega^1_{C/A}$ are the modules of ``absolute'' differentials), one writes $\Upsilon_{C/B}$ instead of $\Upsilon_{C/B/\bb{Z}}$; when $B$ and $C$ are algebras over a prime field $P$, one has $\Upsilon_{C/B/P}=\Upsilon_{C/B}$.
 
@@ -1137,7 +1133,7 @@ Finally, to say that $K$ is a $k$-algebra formally smooth relative to $P$ amount
 
 \begin{env}[20.6.4]
 \label{0.20.6.4}
-Consider a commutative diagram of ring homomorphisms
+Consider a commutative diagram
 \begin{equation}
 \tag{20.6.4.1}
   \label{0.20.6.4.1}
@@ -1146,7 +1142,8 @@ Consider a commutative diagram of ring homomorphisms
   A \ar[u]^{f} \ar[r]^{u} & B \ar[u]^{g} \ar[r]^{v} & C \ar[u]^{h}
 }
 \end{equation}
-The commutativity of the diagram corresponding to \sref{0.20.5.7.3} implies the existence of a unique $C$-homomorphism
+\oldpage[0\textsubscript{IV-1}]{137}
+of homomorphisms of commutative rings. The commutativity of the diagram corresponding to \sref{0.20.5.7.3} implies the existence of a unique $C$-homomorphism
 \begin{equation}
 \tag{20.6.4.2}
   \label{0.20.6.4.2}
@@ -1473,7 +1470,7 @@ in the following way: let us denote temporarily by
   g:\Omega^1_{B/\Lambda}\otimes_B C\to\Omega^1_{C/\Lambda}
 \]
 the canonical homomorphisms $u_{B/A/\Lambda}\otimes 1_C$ and $v_{C/B/\Lambda}$ respectively, whose composite is $g\circ f=(v\circ u)_{C/A/\Lambda}$ (cf.\ \sref{0.20.6.14.4}).
-One will take $j_1(x)=(x,f(x))$, $p_1(y,z)=z\setmin f(y)$, $j_0(x)=(g(x),x)$, $p_0(y,z)=g(z)\setmin y$ so that $\operatorname{Im}(j_1)=\Ker(p_1)$ is the graph of $f$, and $\operatorname{Im}(j_0)=\Ker(p_0)$ is the graph of $g$, complementary to $\{0\}\oplus\mathrm{T}_1$ and $\mathrm{K}_1(C/A/\Lambda)\oplus\{0\}$ respectively; the verification of the commutativity of the diagram
+One will take $j_1(x)=(x,f(x))$, $p_1(y,z)=z\setmin f(y)$, $j_0(x)=(g(x),x)$, $p_0(y,z)=g(z)\setmin y$ so that $\operatorname{Im}(j_1)=\Ker(p_1)$ is the graph of $f$, and $\operatorname{Im}(j_0)=\Ker(p_0)$ is the graph of $g$, complementary to $\{0\}\oplus\mathrm{T}_1$ and $\mathrm{K}_0(C/A/\Lambda)\oplus\{0\}$ respectively; the verification of the commutativity of the diagram
 \[
 \xymatrix{
   0 \ar[r] & \mathrm{K}^C_1(B/A/\Lambda) \ar[r]^{j_1} \ar[d] & \mathrm{K}'_1(C/A/\Lambda) \ar[r]^{p_1} \ar[d] & \mathrm{K}_1(C/B/\Lambda) \ar[r] \ar[d] & 0 \\
@@ -1577,7 +1574,7 @@ If $\Upsilon_{F/E/P}=\Upsilon_{F/E}=0$, one therefore has $\Upsilon_{F/E/K}=0$, 
 (i) For every $x\in K$, let $f$ be the minimal polynomial of $x$ over $k$; as $f'(x)\neq 0$ and $d_{K/k}(f(x))=f'(x)d_{K/k}(x)=0$, one has $d_{K/k}(x)=0$ and our assertion follows from \sref{0.20.4.7}.
 
 (ii) There exists a pure extension $L$ of $k$ such that $k\subset L\subset K$ and $K$ is an algebraic extension of $L$.
-As $K$ is separable over $L$, it follows from \sref{0.20.6.19}, (i) that the sequence
+As $K$ is separable over $L$, it follows from (\ref{0.20.6.19}, (i)) that the sequence
 \[
   0\to\Omega^1_{L/k}\otimes_L K\to\Omega^1_{K/k}\to\Omega^1_{K/L}\to 0
 \]
@@ -1652,7 +1649,7 @@ It suffices then to apply the exact sequences \sref{0.20.6.17.1} and \sref{0.20.
 \[
 \xymatrix{
   \Upsilon_{C/A/\Lambda} \ar[r] \ar[d]_{\chi_E} & \Omega^1_{A/\Lambda}\otimes_A C \ar[d] \\
-  \Upsilon_{C/E/\Lambda}=\Upsilon_{C/B/\Lambda}=\mathfrak{K}/\mathfrak{K}^2 \ar[r]^-{\delta_{C/B/A}} \ar[d]^{\wr} & \Omega^1_{B/\Lambda}\otimes_B C=\Omega^1_{E/\Lambda}\otimes_E C \ar[d] \\
+  \Upsilon_{C/E/\Lambda}=\Upsilon_{C/B/\Lambda}=\mathfrak{K}/\mathfrak{K}^2 \ar[r]^-{\delta_{C/B/\Lambda}} \ar[d]^{\wr} & \Omega^1_{B/\Lambda}\otimes_B C=\Omega^1_{E/\Lambda}\otimes_E C \ar[d] \\
   \mathfrak{K}/\mathfrak{K}^2 \ar[r]_{\delta_{C/B/A}} & \Omega^1_{B/A}\otimes_B C
 }
 \]
@@ -1683,7 +1680,7 @@ as follows from \sref{0.20.6.21.3} and \sref{0.20.5.11.3}.
 
 \begin{corollary}[20.6.23]
 \label{0.20.6.23}
-Under the hypotheses of \sref{0.20.6.22}, suppose in addition that $B$ is an $A$-algebra formally smooth.
+Under the hypotheses of \textup{\sref{0.20.6.22}}, suppose in addition that $B$ is an $A$-algebra formally smooth.
 Then one has an exact sequence
 \begin{equation}
 \tag{20.6.23.1}
@@ -1693,7 +1690,7 @@ Then one has an exact sequence
 \end{corollary}
 
 \begin{proof}
-This follows from \sref{0.20.6.18}, (ii).
+This follows from (\ref{0.20.6.18}, (ii)).
 \end{proof}
 
 \begin{env}[20.6.24]
@@ -1709,11 +1706,11 @@ One then has an exact sequence
 \tag{20.6.25.1}
   \label{0.20.6.25.1}
 \begin{split}
-  0\to\Der_B(C,L)\xrightarrow{u^1}\Der_A(C,L)\xrightarrow{v^1}\Der_A(B,L)\xrightarrow{\partial} \\
+  0\to\Der_B(C,L)\xrightarrow{u^0}\Der_A(C,L)\xrightarrow{v^0}\Der_A(B,L)\xrightarrow{\partial} \\
   \xrightarrow{\partial}\operatorname{Exalcom}_{B/\Lambda}(C,L)\xrightarrow{u^1}\operatorname{Exalcom}_{A/\Lambda}(C,L)\xrightarrow{v^1}\operatorname{Exalcom}_{A/\Lambda}(B,L)\to 0
 \end{split}
 \end{equation}
-where $u^1$, $v^1$ are homomorphisms defined in \sref{0.18.3.6.4} and \sref{0.18.3.6.2}, and $\partial$ is defined as in \sref{0.20.2.2}.
+where $u^1$, $v^1$ are homomorphisms defined in \sref{0.18.3.6.4} and \sref{0.18.3.6.2}, and $\partial$ is defined as in \textup{\sref{0.20.2.2}}.
 \end{proposition}
 
 \begin{proof}
@@ -1734,7 +1731,7 @@ In this section, the complexes $\mathrm{K}_\bullet(C/B/A)$ have appeared as a te
 In reality, these complexes, considered as objects of the category of
 \oldpage[0\textsubscript{IV-1}]{147}
 complexes of $C$-modules ``up to homotopy'' (that is to say where the morphisms are the classes of homotopic homomorphisms) are remarkable invariants, finer than the pair formed by $\Omega^1_{C/B}$ and $\Upsilon_{C/B/A}$.
-When $k$ is a prime field, and $C$ a $k$-algebra formally smooth (for example a regular ring of finite type over an extension of $k$) (cf.\ ($\mathbf{IV}$, 6.8.6)) one can show that the complex $\mathrm{K}_\bullet(C/A/k)$ can be described solely by making intervene $C$ and $A$ (to the exclusion of $k$): one expresses $C$ as a quotient of a polynomial algebra $B$ over $A$ by an ideal $\mathfrak{L}$, and one considers the complex $\mathrm{F}_\bullet(C/A)$ with 2 nonzero terms
+When $k$ is a prime field, and $C$ a $k$-algebra formally smooth (for example a regular ring of finite type over an extension of $k$) (cf.\ ($\mathbf{IV}$, 6.8.6)), one can show that the complex $\mathrm{K}_\bullet(C/A/k)$ can be described solely by making intervene $C$ and $A$ (to the exclusion of $k$): one expresses $C$ as a quotient of a polynomial algebra $B$ over $A$ by an ideal $\mathfrak{L}$, and one considers the complex $\mathrm{F}_\bullet(C/A)$ with 2 nonzero terms
 \[
   \ldots\to 0\to\mathfrak{L}/\mathfrak{L}^2\to\Omega^1_{B/A}\otimes_B C\to 0\to\ldots
 \]
@@ -1826,7 +1823,7 @@ $\operatorname{D\acute{e}r.\ cont}_A(C,L)\to\operatorname{D\acute{e}r.\ cont}_A(
 \begin{corollary}[20.7.7]
 \label{0.20.7.7}
 Suppose that in $B$ and in $C$, the square of every open ideal is also open.
-If $C$ is a $B$-algebra formally \'{e}tale, then, for every open ideal $\mathfrak{K}_\lambda$ of $C$, the homomorphism \sref{0.20.7.3.1} is bijective.
+If $C$ is a $B$-algebra formally \'{e}tale, then, for every open ideal $\mathfrak{K}_\lambda$ of $C$, the homomorphism \textup{\sref{0.20.7.3.1}} is bijective.
 \end{corollary}
 
 \begin{proof}
@@ -1837,12 +1834,12 @@ Indeed, by virtue of \sref{0.19.1.1}, this homomorphism is surjective, and it is
 \label{0.20.7.8}
 Let $u:A\to B$ be a continuous homomorphism of topological rings, $\mathfrak{K}$ an ideal of $B$, $C$ the topological quotient $B/\mathfrak{K}$, $v:B\to C$ the canonical homomorphism.
 \begin{enumerate}
-  \item[\rm(i)] In the exact sequence \sref{0.20.5.12.1}
+  \item[\rm(i)] In the exact sequence \textup{\sref{0.20.5.12.1}}
 \[
   \mathfrak{K}/\mathfrak{K}^2\xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\to 0
 \]
 the homomorphism $\delta_{C/B/A}$ is continuous and the homomorphism $v_{C/B/A}$ is a strict morphism of topological $C$-modules.
-  \item[\rm(ii)] For $\delta_{C/B/A}$ to be formally left-invertible \sref{0.19.1.5}, it is necessary and sufficient that for every discrete $C$-module $L$ annihilated by an open ideal of $C$, the canonical homomorphism
+  \item[\rm(ii)] For $\delta_{C/B/A}$ to be formally left-invertible \textup{\sref{0.19.1.5}}, it is necessary and sufficient that for every discrete $C$-module $L$ annihilated by an open ideal of $C$, the canonical homomorphism
 \begin{equation}
 \tag{20.7.8.1}
   \label{0.20.7.8.1}
@@ -1869,7 +1866,7 @@ is surjective, and the conclusion follows from the exact sequence \sref{0.20.3.6
 
 The injectivity of \sref{0.20.7.8.1} can also be expressed as follows, taking into account the definition of its two members \sref{0.18.4.1}: for every open ideal $\mathfrak{M}$ of $A$, every open ideal $\mathfrak{N}$ of $B$ such that $\mathfrak{M}B\subset\mathfrak{N}$, and every $(A/\mathfrak{M})$-extension $E$ of $B/(\mathfrak{K}+\mathfrak{N})$ by a $(B/(\mathfrak{K}+\mathfrak{N}))$-module $L$, such that the inverse image of $E$ under the canonical homomorphism $B/\mathfrak{N}\to B/(\mathfrak{K}+\mathfrak{N})$ is $(A/\mathfrak{M})$-trivial, there exists an open ideal $\mathfrak{M}'\subset\mathfrak{M}$ of $A$,
 \oldpage[0\textsubscript{IV-1}]{150}
-an open ideal $\mathfrak{N}'\subset\mathfrak{N}$ of $B$ such that $\mathfrak{M}'B\subset\mathfrak{N}'$ and such that the inverse image of $E$ under the canonical homomorphism $B/(\mathfrak{K}+\mathfrak{N}')\to B/(\mathfrak{K}+\mathfrak{N})$ is $(A/\mathfrak{M}')$-trivial.
+an open ideal $\mathfrak{N}'\subset\mathfrak{N}$ of $B$ such that $\mathfrak{M}'B\subset\mathfrak{N}'$ and such that the inverse image of $E$ under the canonical homomorphism $B/(\mathfrak{K}+\mathfrak{N}')\to B/(\mathfrak{K}+\mathfrak{N})$ is $(A/\mathfrak{M}')$-trivial. In particular:
 \end{proof}
 
 \begin{corollary}[20.7.9]
@@ -1885,7 +1882,7 @@ In \sref{0.20.6.1}, when $A$, $B$, $C$ are topological rings and $u$ and $v$ con
   \label{0.20.7.10.1}
   \operatorname{Exalcotop}_{B/A}(C,L)\to\Hom.\operatorname{cont}_C(\Upsilon_{C/B/A},L)
 \end{equation}
-which can be described explicitly as follows (taking into account \sref{0.18.5.3.1}): for every open ideal $\mathfrak{M}$ of $A$, every open ideal $\mathfrak{K}$ of $B$ such that $\mathfrak{M}B\subset\mathfrak{K}$, every open ideal $\mathfrak{P}$ of $C$ such that $\mathfrak{K}C\subset\mathfrak{P}$ and $\mathfrak{P}.L=0$, every $(B/\mathfrak{K})$-extension $E$ of $C/\mathfrak{P}$ by $L$ which is $(A/\mathfrak{M})$-trivial comes from the datum of a continuous $C$-homomorphism $f$ of $\Omega^1_{B/A}\otimes_B C$ in $L$, and the homomorphism \sref{0.20.7.10.1} associates to the class of $E$ the restriction of $f$ to $\Upsilon_{C/B/A}$, called the \emph{characteristic homomorphism of $E$} and again denoted $\chi_E$.
+taking into account \sref{0.18.5.3.1}: for every open ideal $\mathfrak{M}$ of $A$, every open ideal $\mathfrak{N}$ of $B$ such that $\mathfrak{M}B\subset\mathfrak{N}$, every open ideal $\mathfrak{P}$ of $C$ such that $\mathfrak{N}C\subset\mathfrak{P}$ and $\mathfrak{P}.L=0$, every $(B/\mathfrak{N})$-extension $E$ of $C/\mathfrak{P}$ by $L$ which is $(A/\mathfrak{M})$-trivial comes from the datum of a continuous $C$-homomorphism $f$ of $\Omega^1_{B/A}\otimes_B C$ in $L$, and the homomorphism \sref{0.20.7.10.1} associates to the image in $\operatorname{Exalcotop}_{B/A}(C,L)$ of the class of $E$ the restriction of $f$ to $\Upsilon_{C/B/A}$, called the \emph{characteristic homomorphism of $E$} and again denoted $\chi_E$.
 \end{env}
 
 \begin{proposition}[20.7.11]
@@ -1901,7 +1898,7 @@ for every discrete $C$-module $L$ annihilated by an open ideal of $C$.
 \end{proposition}
 
 \begin{proof}
-One has indeed, in the exact sequence \sref{0.20.3.7.1}, $\operatorname{Exalcotop}_A(C,L)=0$ \sref{0.19.4.4}, hence $\operatorname{Exalcotop}_B(C,L)=\operatorname{Exalcotop}_{B/A}(C,L)$ and the homomorphism \sref{0.20.7.10.1} is none other than \sref{0.20.7.8.1}; the fact that it is bijective is deduced from \sref{0.20.6.13} by passage to the inductive limit by \sref{0.20.4.5} and \sref{0.19.2.4}.
+One has indeed, in the exact sequence \sref{0.20.3.7.1}, $\operatorname{Exalcotop}_A(C,L)=0$ \sref{0.19.4.4}, hence $\operatorname{Exalcotop}_B(C,L)=\operatorname{Exalcotop}_{B/A}(C,L)$ and the homomorphism \sref{0.20.7.11.1} is none other than \sref{0.20.7.10.1}; the fact that it is bijective is deduced from \sref{0.20.6.13} by passage to the inductive limit, taking into account the fact that the topology of $\Omega^1_{C/B}$ is then deduced from that of $C$ \sref{0.20.4.5}, and \sref{0.19.2.4}.
 \end{proof}
 
 \begin{env}[20.7.12]
@@ -1911,7 +1908,7 @@ In \sref{0.20.6.14} one also equips $\Upsilon^C_{B/A/\Lambda}$ with the topology
 
 \begin{env}[20.7.13]
 \label{0.20.7.13}
-If, in \sref{0.20.6.23}, one assumes that the rings $\Lambda$, $A$, $B$, $C$ are topological, the homomorphisms $s$, $u$, $v$ continuous and $L$ a discrete $C$-module annihilated by an open ideal of $C$, one can pass to the inductive limit as in \sref{0.20.3.6}, and one obtains an exact sequence
+If, in \sref{0.20.6.25}, one assumes that the rings $\Lambda$, $A$, $B$, $C$ are topological, the homomorphisms $s$, $u$, $v$ continuous and $L$ a discrete $C$-module annihilated by an open ideal of $C$, one can pass to the inductive limit as in \sref{0.20.3.6}, and one obtains an exact sequence
 \begin{equation}
 \tag{20.7.13.1}
   \label{0.20.7.13.1}
@@ -1984,20 +1981,20 @@ that $\Omega^1_{B/A}/\mathfrak{n}\Omega^1_{B/A}=\Omega^1_{B/A}\otimes_B B_0$ is 
 
 \begin{env}[20.7.16]
 \label{0.20.7.16}
-Proposition \sref{0.20.7.15} applies, for example, when $A$ is a field $k$, $B=k'[[T_1,\ldots,T_n]]$ is a formal power series algebra equipped with its usual topology, and $k'$ is a finite extension of $k$ (cf. \sref{0.21.9.2}). One will note that the field of fractions $K$ of $B$ has infinite transcendence degree over $k$; when $k$ has characteristic $0$, it follows immediately (with the aid, in particular, of \sref{0.20.4.13}, (i), and \sref{0.20.5.9}, also using the fact that every derivation of a field of characteristic $0$ extends to every extension) that $\Omega^1_{B/k}$ is \emph{not} a $B$-module of finite type.
+Proposition \sref{0.20.7.15} applies, for example, when $A$ is a field $k$, $B=k'[[T_1,\ldots,T_n]]$ is a formal power series algebra equipped with its usual topology, and $k'$ is a finite extension of $k$ (cf. \sref{0.21.9.2}). One will note that the field of fractions $K$ of $B$ has infinite transcendence degree over $k$; when $k$ has characteristic $0$, it follows immediately (with the aid, in particular, of (\ref{0.20.4.13}, (i)), and \sref{0.20.5.9}, also using the fact that every derivation of a field of characteristic $0$ extends to every extension) that $\Omega^1_{B/k}$ is \emph{not} a $B$-module of finite type.
 \end{env}
 
 \begin{env}[20.7.17]
 \label{0.20.7.17}
-Let $A$, $B$, $C$ be three topological rings, and let $u:A\to B$, $v:B\to C$ be two continuous homomorphisms. Replacing $A$, $B$, $C$ by quotients by open ideals $A'=A/\mathfrak{M}'$, $B'=B/\mathfrak{N}'$, $C'=C/\mathfrak{P}'$ with $u(\mathfrak{M}')\subset\mathfrak{N}'$ and $v(\mathfrak{N}')\subset\mathfrak{P}'$, so that one has homomorphisms $u':A'\to B'$, $v':B'\to C'$, one obtains canonical homomorphisms $u_{C'/B'/A'}$ and $v_{C'/B'/A'}$ which, by virtue of \sref{0.20.5.4}, form projective systems and consequently give, by passage to the limit, canonical homomorphisms extending to the separated completions the homomorphisms of the exact sequence \sref{0.20.5.7.1}
+Let $A$, $B$, $C$ be three topological rings, and let $u:A\to B$, $v:B\to C$ be two continuous homomorphisms. Replacing $A$, $B$, $C$ by quotients by open ideals $A'=A/\mathfrak{M}'$, $B'=B/\mathfrak{N}'$, $C'=C/\mathfrak{P}'$ with $u(\mathfrak{M}')\subset\mathfrak{N}'$ and $v(\mathfrak{N}')\subset\mathfrak{P}'$, so that one has homomorphisms $u':A'\to B'$, $v':B'\to C'$, one obtains canonical homomorphisms $u'_{C'/B'/A'}$ and $v'_{C'/B'/A'}$ which, by virtue of \sref{0.20.5.4}, form projective systems and consequently give, by passage to the limit, canonical homomorphisms extending to the separated completions the homomorphisms of the exact sequence \sref{0.20.5.7.1}
 \[
-  \Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow 0:
+  \Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow 0
 \]
 \begin{align}
   \widehat{v}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}&\longrightarrow\widehat{\Omega}^1_{C/A} \tag{20.7.17.1}\label{0.20.7.17.1}\\
   \widehat{u}_{C/B/A}:\widehat{\Omega}^1_{C/A}&\longrightarrow\widehat{\Omega}^1_{C/B} \tag{20.7.17.2}\label{0.20.7.17.2}
 \end{align}
-In the sequence
+and in the sequence
 \begin{equation}
 \tag{20.7.17.3}
 \label{0.20.7.17.3}
@@ -2005,51 +2002,52 @@ In the sequence
   \xrightarrow{\widehat{v}_{C/B/A}}\widehat{\Omega}^1_{C/A}
   \xrightarrow{\widehat{u}_{C/B/A}}\widehat{\Omega}^1_{C/B}\longrightarrow 0,
 \end{equation}
-the composite of two consecutive homomorphisms is $0$, but the sequence is \emph{not necessarily exact}. However, if $B$ and $C$ are metrizable, the homomorphism $\widehat{u}_{C/B/A}$ is \emph{surjective}, and $\operatorname{Im}(\widehat{v}_{C/B/A})$ is \emph{dense} in $\ker(\widehat{u}_{C/B/A})$: this follows immediately (cf. $\mathbf{0_I}$, 7.3.1) from the fact that, if $(\mathfrak{M}_k)$ (resp. $(\mathfrak{N}_k)$) is a decreasing sequence of ideals of $B$ (resp. $C$) forming a fundamental system of neighbourhoods of $0$, and if one sets $B_k=B/\mathfrak{M}_k$, $C_k=C/\mathfrak{N}_k$, the transition homomorphisms $\Omega^1_{C_{k+1}/B_{k+1}}\to\Omega^1_{C_k/B_k}$, $\Omega^1_{C_{k+1}/A}\to\Omega^1_{C_k/A}$ and $\Omega^1_{B_{k+1}/A}\to\Omega^1_{B_k/A}$ are surjective \sref{0.20.7.14}.
+the composite of two consecutive homomorphisms is $0$, but the sequence is \emph{not necessarily exact}. However, if $B$ and $C$ are \emph{metrizable}, the homomorphism $\widehat{u}_{C/B/A}$ is \emph{surjective}, and $\operatorname{Im}(\widehat{v}_{C/B/A})$ is \emph{dense} in $\ker(\widehat{u}_{C/B/A})$: this follows immediately (cf. $\mathbf{0_I}$, 7.3.1) from the fact that, if $(\mathfrak{M}_k)$ (resp. $(\mathfrak{N}_k)$) is a decreasing sequence of ideals of $B$ (resp. $C$) forming a fundamental system of neighbourhoods of $0$, and if one sets $B_k=B/\mathfrak{M}_k$, $C_k=C/\mathfrak{N}_k$, the transition homomorphisms $\Omega^1_{C_{k+1}/B_{k+1}}\to\Omega^1_{C_k/B_k}$, $\Omega^1_{C_{k+1}/A}\to\Omega^1_{C_k/A}$ and $\Omega^1_{B_{k+1}/A}\to\Omega^1_{B_k/A}$ are \emph{surjective} \sref{0.20.7.14}.
 \end{env}
 
 \begin{proposition}[20.7.18]
 \label{0.20.7.18}
-Let $A$, $B$, $C$ be three topological rings, and let $u:A\to B$, $v:B\to C$ be two continuous homomorphisms. Suppose that $B$ and $C$ are admissible ($\mathbf{0_I}$, 7.1.2) and metrizable. For the canonical homomorphism $\widehat{v}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}\longrightarrow\widehat{\Omega}^1_{C/A}$
+Let $A$, $B$, $C$ be three topological rings, and let $u:A\to B$, $v:B\to C$ be two continuous homomorphisms. Suppose that $B$ and $C$ are admissible ($\mathbf{0_I}$, 7.1.2) and metrizable. For the canonical homomorphism $\widehat{v}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C\longrightarrow\widehat{\Omega}^1_{C/A}$
 to admit a left inverse which is a continuous $C$-homomorphism, it is necessary and sufficient that $C$ be a $B$-algebra formally smooth relative to $A$.
 \end{proposition}
 
 \begin{proof}
 The condition is necessary by virtue of \sref{0.20.7.2} and \sref{0.19.1.6}. To see that it is sufficient, note that the topological $C$-module
 \[
-  L=\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}
+  L=\widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C
 \]
 is metrizable and complete by virtue of the hypotheses, hence $E=D_C(L)$, equipped with the product topology, is
 \oldpage[0\textsubscript{IV-1}]{153}
 metrizable and complete; it is moreover admissible, for if $\mathfrak{K}$ is an ideal of definition in $C$, the sequence $(\mathfrak{K}\oplus L)^n=\mathfrak{K}^n\oplus\mathfrak{K}^{n-1}L$ tends to $0$. Since the composite map
 \[
   D:B\xrightarrow{d_{B/A}}\Omega^1_{B/A}\longrightarrow
-  \widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}=L
+  \widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C=L
 \]
 is a continuous $A$-derivation of $B$ into $L$, the continuous $A$-homomorphism
 \[
   f:x\leadsto(v(x),D(x))
 \]
 from $B$ into $E$ defines on $E$ a structure of $B$-\emph{extension}. Since $L$ is a closed ideal in $E$, it follows from \sref{0.19.9.5} and from the hypothesis that the identity map $C\to E/L$ (which is a $B$-homomorphism) factors as $C\xrightarrow{g}E\to E/L$, where $g$ is a continuous homomorphism such that $g\circ v=f$; consequently \sref{0.20.1.3}, $g$ is of the form $y\leadsto(y,D'(y))$, where $D'$ is a continuous $B$-derivation of $C$ into $L$, in other words $D'\circ v=D$. Taking into account \sref{0.20.7.14.4}, one has $D'=h\circ\widehat{d}_{C/A}$, where $h:\widehat{\Omega}^1_{C/A}\to L$ is a continuous $C$-homomorphism; but one has $\widehat{d}_{C/A}\circ v=\widehat{v}_{C/B/A}\circ D$ by definition, and since the image of $B$ under $D$ generates topologically the $C$-module $L$ \sref{0.20.4.7}, the relation $D'\circ v=D$ gives $h\circ\widehat{v}_{C/B/A}=1_L$.
+\hfill Q.E.D.
 \end{proof}
 
 \begin{corollary}[20.7.19]
 \label{0.20.7.19}
-Under the hypotheses of \sref{0.20.7.18}, if one supposes in addition that in $B$ and $C$ the square of every open ideal is open, then, for $C$ to be a $B$-algebra formally smooth relative to $A$, it is necessary and sufficient that $\widehat{v}_{C/B/A}$ be left-invertible.
+Under the hypotheses of \textup{\sref{0.20.7.18}}, if one supposes in addition that in $B$ and $C$ the square of every open ideal is open, then, for $C$ to be a $B$-algebra formally smooth relative to $A$, it is necessary and sufficient that $\widehat{v}_{C/B/A}$ be left-invertible.
 \end{corollary}
 
 \begin{proof}
-Indeed, the topologies of $\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}$ and $\widehat{\Omega}^1_{C/A}$ are then deduced from that of $C$ \sref{0.20.4.5}, and every $C$-homomorphism from one to the other is necessarily continuous.
+Indeed, the topologies of $\widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C$ and $\widehat{\Omega}^1_{C/A}$ are then deduced from that of $C$ \sref{0.20.4.5}, and every $C$-homomorphism from one to the other is necessarily \emph{continuous}.
 \end{proof}
 
 \begin{env}[20.7.20]
 \label{0.20.7.20}
-Let $A$ be a topological ring, $B$ a topological $A$-algebra, metrizable and complete, $\mathfrak{K}$ a closed ideal of $B$, and $C=B/\mathfrak{K}$ the quotient topological ring, which is metrizable and complete. Let $(\mathfrak{M}_k)$ be a decreasing fundamental system of neighbourhoods of $0$ in $B$ formed of ideals, and set $B_k=B/\mathfrak{M}_k$, $\mathfrak{K}_k=(\mathfrak{K}+\mathfrak{M}_k)/\mathfrak{M}_k$, $C_k=B_k/\mathfrak{K}_k$. One has a projective system of homomorphisms $\delta_{C_k/B_k/A}:\mathfrak{K}_k/\mathfrak{K}_k^2\longrightarrow\Omega^1_{B_k/A}\otimes_{B_k}C_k$
+Let $A$ be a topological ring, $B$ a topological $A$-algebra, \emph{metrizable} and \emph{complete}, $\mathfrak{K}$ a \emph{closed} ideal of $B$, and $C=B/\mathfrak{K}$ the quotient topological ring, which is metrizable and complete. Let $(\mathfrak{M}_k)$ be a decreasing fundamental system of neighbourhoods of $0$ in $B$ formed of ideals, and set $B_k=B/\mathfrak{M}_k$, $\mathfrak{K}_k=(\mathfrak{K}+\mathfrak{M}_k)/\mathfrak{M}_k$, $C_k=B_k/\mathfrak{K}_k$. One has a projective system of homomorphisms $\delta_{C_k/B_k/A}:\mathfrak{K}_k/\mathfrak{K}_k^2\longrightarrow\Omega^1_{B_k/A}\otimes_{B_k}C_k$
 \sref{0.20.5.11.3}, from which one obtains by passage to the limit a canonical homomorphism
 \[
   \widehat{\delta}_{C/B/A}:\mathfrak{K}/\mathfrak{K}^2\longrightarrow
-  \widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C};
+  \widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C;
 \]
-and, reasoning as in \sref{0.20.7.17}, one sees that the canonical homomorphism $\widehat{u}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_{\widehat{B}}\widehat{C}\longrightarrow\widehat{\Omega}^1_{C/A}$
-is \emph{surjective} and that $\operatorname{Im}(\widehat{\delta}_{C/B/A})$ is \emph{dense} in $\ker(\widehat{u}_{C/B/A})$.
+and, reasoning as in \sref{0.20.7.17}, one sees that the canonical homomorphism $\widehat{v}_{C/B/A}:\widehat{\Omega}^1_{B/A}\widehat{\otimes}_B C\longrightarrow\widehat{\Omega}^1_{C/A}$
+is \emph{surjective} and that $\operatorname{Im}(\widehat{\delta}_{C/B/A})$ is \emph{dense} in $\ker(\widehat{v}_{C/B/A})$.
 \end{env}

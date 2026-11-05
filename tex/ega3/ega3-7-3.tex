@@ -28,7 +28,7 @@ equivalent:
     \eqref{III.7.3.1.1.eq} is an epimorphism;
   \item[(e)] $T_p$ is isomorphic to a functor of the form
     \[
-      M\longmapsto N\otimes_A M,
+      M\leadsto N\otimes_A M,
     \]
     where $N$ is a right $A$-module.
 \end{enumerate}
@@ -111,7 +111,7 @@ The equivalence of (b), (e), and ($\mathrm{e}'$) follows from
 the equivalence of (a), (c), and (d) in \sref{III.7.3.1}.
 Finally, to say that $T_p(A_s)$ is flat means that the functor
 \[
-  M\longmapsto T_p(A_s)\otimes_A M
+  M\leadsto T_p(A_s)\otimes_A M
 \]
 is left exact; the equivalence of (a), (f), and
 ($\mathrm{f}'$) again follows from the equivalence of (a), (c),
@@ -126,7 +126,7 @@ Suppose that $A$ is commutative, that $T_p$ is exact, and that
 $T_p(A)$ is an $A$-module of finite presentation.  Then the
 function
 \[
-  x\longmapsto
+  x\leadsto
   \operatorname{rank}_{\kres(x)}
   \bigl(T_p(\kres(x))\bigr)
 \]
@@ -321,7 +321,7 @@ By \sref{III.7.3.5.3}, equality can hold only if
 is exact.  By \sref{III.7.2.7} and \sref{III.7.2.5}, $T_p$ is
 isomorphic to a functor
 \[
-  M\longmapsto N\otimes_A M.
+  M\leadsto N\otimes_A M.
 \]
 The exactness of \eqref{III.7.3.5.8.eq}, together with the exact
 sequence of $\Tor$, shows that
@@ -387,7 +387,7 @@ homological functor from $\cat{Ab}_A$ to $\cat{Ab}$.  It
 follows from the definitions in \sref{III.7.1.3} that the
 functor from $\cat{Ab}_B$ to $\cat{Ab}$ obtained by extension
 of scalars from $A$ to $B$, denoted $T_\bullet^{(B)}=\bigl(T_i^{(B)}\bigr)$,
-is again a homological functor.
+is again a \emph{homological} functor.
 \end{env}
 
 \begin{corollary}[7.3.9]
@@ -406,21 +406,22 @@ is exact for $p\leq N$.
 \begin{proof}
 By hypothesis, $T_i$ is exact for $i\leq i_0$, so $T_i(A)$ is
 flat for these values of $i$.  By condition (b) of
-\sref{III.7.3.7}, it is enough to choose $f$ such that $T_i^{(A_f)}(A_f)=T_i(A_f)$
-is a free $A_f$-module for $i_0<i\leq N$.  Now
+\sref{III.7.3.7}, it is enough to choose $f$ such that $T_p^{(A_f)}(A_f)=T_p(A_f)$
+is a \emph{free} $A_f$-module for $i_0<p\leq N$.  Now
 \[
-  T_i(A_f)=\bigl(T_i(A)\bigr)_f,
+  T_p(A_f)=\bigl(T_p(A)\bigr)_f,
 \]
-since $T_i$ commutes with direct limits \sref{III.7.1.4}.  If
+since $T_p$ commutes with direct limits \sref{III.7.1.4}.  If
 $x$ is the generic point of $\Spec(A)$, then
-$\bigl(T_i(A)\bigr)_x$ is a finite-dimensional vector space
-over the fraction field of $A$.  Since each $T_i(A)$ is of
+$\bigl(T_p(A)\bigr)_x$ is a finite-dimensional vector space
+over the fraction field of $A$.  Since each $T_p(A)$ is of
 finite presentation, an $f$ with the desired property exists
 (Bourbaki, \emph{Alg\`ebre commutative}, chap.~II, \S~5,
 no.~1, cor.\ of prop.~2).
 
-If only finitely many indices $i$ satisfy $T_i\neq0$, one may
-choose $f\in A\setmin\{0\}$ such that every $T_p^{(A_f)}$ is exact.
+Note that if there are only a \emph{finite} number of indices $i$
+such that $T_i\neq0$, there exists $f\in A\setmin\{0\}$ such that
+\emph{all} the $T_p^{(A_f)}$ are exact.
 \end{proof}
 
 \begin{corollary}[7.3.10]
@@ -432,7 +433,7 @@ $A$-module of finite type.  Then, for every integer $N$, there
 is a dense open subset $U$ of $\Spec(A)$ such that, for every
 integer $p\leq N$, the function
 \[
-  x\longmapsto
+  x\leadsto
   \operatorname{rank}_{\kres(x)}
   \bigl(T_p(\kres(x))\bigr)
 \]
@@ -440,13 +441,13 @@ is constant on $U$.
 \end{corollary}
 
 \begin{proof}
-Let $\mathfrak p$ be a minimal prime ideal of $A$.  The ring
+Let $\mathfrak p$ be a minimal prime ideal of $A$; by hypothesis, the ring
 $B=A/\mathfrak p$ is an integral domain, and $\Spec(B)$ is
 identified with an irreducible component of the topological
 space $\Spec(A)$.  We prove by induction on $p\leq N$ that
 there is an $f_p\in B\setmin\{0\}$ such that, if
-$B'=B_{f_p}$, then $T_i^{(B')}$ is exact and $T_i(B')$ is a
-$B'$-module of finite type for $i\leq p$.
+$B'=B_{f_p}$, then $T_i^{(B')}$ is \emph{exact} and the $T_i(B')$ are
+$B'$-modules \emph{of finite type} for $i\leq p$.
 
 The assertion holds for $p\leq i_0$ by hypothesis, with
 $f_p=1$, so that $B'=B=A/\mathfrak p$.  Indeed, $T_p$ is then
@@ -456,8 +457,8 @@ $B$-module, of finite type.
 
 For the induction step, let $f_p$ be the canonical image in
 $B$ of an element $g_p\in A$, and put $A'=A_{g_p}$.  Then $B'=A'/\mathfrak p'$,
-where $\mathfrak p'$ is the minimal prime ideal
-$\mathfrak pA_{g_p}$ of $A'$.  Since $T_i(A_{g_p})=\bigl(T_i(A)\bigr)_{g_p}$,
+where $\mathfrak p'$ is a minimal prime ideal of $A'$, equal to
+$\mathfrak p_{g_p}$.  Since $T_i(A_{g_p})=\bigl(T_i(A)\bigr)_{g_p}$,
 the $T_i(A')$ are $A'$-modules of finite type.  Thus
 $T_\bullet^{(A')}$ satisfies the same hypotheses as
 $T_\bullet$, with $i_0$ replaced by $p$.
@@ -470,7 +471,7 @@ Consequently $T_{p+1}(A/\mathfrak p)$ is a quotient of
 $T_{p+1}(A)$, and is therefore of finite type.
 
 The proof of \sref{III.7.3.9} used the finite-type hypothesis
-on $T_i(A)$ only for $i\leq N$.  We may therefore apply that
+on the $T_p(A)$ only for $p\leq N$.  We may therefore apply that
 corollary to the integral domain $B$, the functor
 $T_\bullet^{(B)}$, and $N=p+1$, which completes the induction.
 There is consequently an $f_N\in B\setmin\{0\}$ such that
@@ -488,9 +489,9 @@ statement are constant, since
 \]
 Repeating the same argument for every irreducible component of
 $\Spec(A)$ proves the corollary.  We may therefore reduce to
-the case where $A$ is an integral domain.  The argument of
+the case where $A$ is an \emph{integral domain}.  The argument of
 \sref{III.7.3.9} then gives an $f\in A\setmin\{0\}$ such that the
-$T_p(A_f)$ are free $A_f$-modules of finite type for
+$T_p(A_f)$ are \emph{free} $A_f$-modules of finite type for
 $p\leq N$.  The conclusion follows from \sref{III.7.3.4}.
 \end{proof}
 
@@ -528,7 +529,7 @@ and are equivalent to them when $A$ is also reduced:
 \begin{proof}
 Since $T_q(A)$ is an $A$-module of finite presentation,
 condition (b) of \sref{III.7.3.7} is equivalent to saying that
-$T_q(A)$ is free for $q\leq p$ (Bourbaki,
+$T_q(A)$ is a \emph{free} $A$-module for $q\leq p$ (Bourbaki,
 \emph{Alg\`ebre commutative}, chap.~II, \S~3, no.~2, cor.~2
 of prop.~5).  Condition (c) implies
 \[
@@ -541,16 +542,12 @@ Thus the equivalent conditions of \sref{III.7.3.7} imply (d),
 and it is immediate that (d) implies ($\mathrm{d}'$).
 
 It remains to show that ($\mathrm{d}'$) implies (a) when $A$ is
-reduced.  We argue by induction on $q\leq p$, since $T_q$ is
+\emph{reduced}.  We argue by induction on $q\leq p$, since $T_q$ is
 exact for $q\leq i_0$.  Suppose that $T_k$ is exact for
-$k\leq q<p$.  We shall show that $T_{q+1}(A)$ is a free
-$A$-module.  By the induction hypothesis, the canonical map
-\[
-  T_{q+1}(A)\otimes_A M
-  \longrightarrow
-  T_{q+1}(M)
-\]
-is an isomorphism for every $A$-module $M$, by condition (c) of
+$k\leq q<p$.  We shall show that $T_{q+1}(A)$ is a \emph{free}
+$A$-module.  By the induction hypothesis,
+$T_{q+1}(A)\otimes_A M$ is isomorphic to $T_{q+1}(M)$
+for every $A$-module $M$, by condition (c) of
 \sref{III.7.3.7} and \sref{III.7.3.3}.  Applying this to
 $M=\kres(x_j)$ and $M=k$, condition ($\mathrm{d}'$) gives
 \[
@@ -559,7 +556,7 @@ $M=\kres(x_j)$ and $M=k$, condition ($\mathrm{d}'$) gives
   =
   \operatorname{rank}_k T_{q+1}(k)
 \]
-for every generic-point index $j$.  It follows that
+for every $i$.  It follows that
 $T_{q+1}(A)$ is free (Bourbaki,
 \emph{Alg\`ebre commutative}, chap.~II, \S~3, no.~2, prop.~7),
 which completes the proof.
@@ -568,4 +565,4 @@ which completes the proof.
 The preceding results will be considerably strengthened for
 the homological functors of the special type to be studied in
 \sref{III.7.4}: the resulting exactness criteria involve only
-a single one of the $T_p$.
+\emph{a single one} of the $T_p$.

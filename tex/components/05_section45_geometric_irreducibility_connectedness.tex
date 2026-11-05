@@ -100,7 +100,7 @@ the same is true of $Y\otimes_k K$.
 \label{IV.4.5.5}
 A morphism $f:X\to Y$ of preschemes is said to be
 \emph{irreducible} (resp.\ \emph{connected}) if, for every $y\in Y$,
-the $\kappa(y)$-prescheme $f^{-1}(y)$ is geometrically irreducible
+the $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is geometrically irreducible
 (resp.\ geometrically connected).
 \end{definition}
 
@@ -135,18 +135,18 @@ The converse holds if $g$ is surjective.
 \end{proposition}
 
 \begin{proof}
-For (i), if $\Omega$ is an algebraically closed extension of $K$, then
+(i) If $\Omega$ is an algebraically closed extension of $K$, then
 \[
 X\otimes_k\Omega
   =(X\otimes_k K)\otimes_K\Omega,
 \]
 which proves the assertion.
 
-For (ii), for every $y'\in Y'$, put $y=g(y')$.
+(ii) For every $y'\in Y'$, put $y=g(y')$.
 Then
 \[
 f'^{-1}(y')
-  =f^{-1}(y)\otimes_{\kappa(y)}\kappa(y')
+  =f^{-1}(y)\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')
 \]
 \sref[I]{I.3.6.4}, so both assertions follow from (i).
 \end{proof}
@@ -191,12 +191,12 @@ If $X$ and $Y$ are geometrically irreducible
 \end{corollary}
 
 \begin{proof}
-For (i), the structure morphism
+(i) The structure morphism
 $X\to\Spec(k)$ is surjective and universally open
 \sref{IV.2.4.9}, and it is also irreducible (resp.\ connected).
 It is therefore enough to apply \sref{IV.4.5.7}.
 
-For (ii), if $\Omega$ is an algebraically closed extension of $k$, then
+(ii) If $\Omega$ is an algebraically closed extension of $k$, then
 \[
 (X\times_k Y)\otimes_k\Omega
   =(X\otimes_k\Omega)\times_\Omega(Y\otimes_k\Omega)
@@ -228,7 +228,7 @@ $K$ of $k$;
 \phantomsection
 \label{IV.4.5.9.c}
 $X$ is irreducible and, if $x$ is its generic point,
-$\kappa(x)$ is a primary extension of $k$.
+$\boldsymbol{k}(x)$ is a primary extension of $k$.
 \end{enumerate}
 \end{proposition}
 
@@ -237,11 +237,11 @@ It is clear that (a) implies (b).
 To see that (b) implies (c), let $K$ be a finite separable extension
 of $k$ and let $p:X\otimes_k K\longrightarrow X$
 be the canonical projection.
-The maximal points of $X\otimes_k K$ are those of the fibre $p^{-1}(x)=\Spec\bigl(\kappa(x)\otimes_k K\bigr)$
+The maximal points of $X\otimes_k K$ are those of the fibre $p^{-1}(x)=\Spec\bigl(\boldsymbol{k}(x)\otimes_k K\bigr)$
 \sref{IV.2.3.4} and $(\mathbf{0}_{\mathrm I},2.1.8)$.
 Thus, saying that this fibre is irreducible for every finite separable
 extension $K$ of $k$ is equivalent, by \sref{IV.4.3.2}, to saying that
-$\kappa(x)$ is a primary extension of $k$.
+$\boldsymbol{k}(x)$ is a primary extension of $k$.
 Conversely, if (c) holds, the same argument, again using
 \sref{IV.4.3.2}, shows that $X\otimes_k K$ is irreducible for every
 extension $K$ of $k$.
@@ -254,7 +254,7 @@ Hence (c) implies (a).
 \phantomsection
 \label{IV.4.5.10}
 Let $X$ be an irreducible $k$-prescheme, let $x$ be its generic point,
-let $k'$ be the separable algebraic closure of $k$ in $\kappa(x)$,
+let $k'$ be the separable algebraic closure of $k$ in $\boldsymbol{k}(x)$,
 and let $k''$ be a Galois extension of $k$, of finite degree or not,
 containing $k'$.
 Suppose that $k'$ is finite over $k$.
@@ -266,7 +266,7 @@ number of irreducible components of $X$.
 \begin{proof}
 As in \sref{IV.4.5.9}, it is enough to consider the maximal points of
 \[
-\Spec\bigl(\kappa(x)\otimes_k k''\bigr).
+\Spec\bigl(\boldsymbol{k}(x)\otimes_k k''\bigr).
 \]
 By \sref{IV.4.3.4}, there are $[k':k]$ of them, and their residue
 fields, which are also the residue fields at the maximal points of
@@ -280,7 +280,7 @@ The result follows from \sref{IV.4.5.9}.
 Let $X$ be a $k$-prescheme.
 Suppose that $X$ has only finitely many maximal points
 $x_i$ $(1\leq i\leq r)$ and that, for each $i$, the separable
-algebraic closure $k'_i$ of $k$ in $\kappa(x_i)$ has finite degree
+algebraic closure $k'_i$ of $k$ in $\boldsymbol{k}(x_i)$ has finite degree
 over $k$.
 Then there is a finite separable extension $L$ of $k$ such that the
 irreducible components of $X\otimes_k L$ are geometrically
@@ -292,7 +292,7 @@ is the geometric number of irreducible components of $X$.
 \begin{proof}
 The maximal points of $X\otimes_k L$ are those of the various fibres
 \[
-\Spec\bigl(\kappa(x_i)\otimes_k L\bigr),
+\Spec\bigl(\boldsymbol{k}(x_i)\otimes_k L\bigr),
 \]
 by \sref{IV.2.3.4} and $(\mathbf{0}_{\mathrm I},2.1.8)$, applied to
 the irreducible components of $X$ and their inverse images in
@@ -304,9 +304,9 @@ $k$ containing all the $k'_i$ and to apply \sref{IV.4.5.10}.
 Notice that \sref{IV.4.5.11} applies in particular to every
 $k$-prescheme $X$ of finite type over $k$.
 Indeed, $X$ is then Noetherian, so it has only finitely many
-irreducible components; moreover, each $\kappa(x_i)$ is an extension
+irreducible components; moreover, each $\boldsymbol{k}(x_i)$ is an extension
 of finite type of $k$, and therefore so is the algebraic closure of
-$k$ in $\kappa(x_i)$ ([1], p.~6-06, Lemma~5).
+$k$ in $\boldsymbol{k}(x_i)$ ([1], p.~6-06, Lemma~5).
 
 \begin{remarks}[4.5.12]
 \phantomsection
@@ -322,23 +322,21 @@ For brevity, when it is necessary to name the base field, we may say
 This terminology is natural in the context of schemes, but is exactly
 opposite to Weil's.
 For Weil, ``$k$-irreducible'' (resp.\ ``$k$-connected'',
-``$k$-normal'', and so on) designates an intrinsic property of a
+``$k$-normal'', and so on) designates an \emph{intrinsic} property of a
 prescheme $X$, independent of the field $k$ chosen as base field
 (that is, independent of the chosen morphism
 $X\to\Spec(k)$); we express these properties simply by saying that
 $X$ is irreducible (resp.\ connected, normal, and so on).
-On the other hand, Weil says ``absolutely irreducible'',
-``absolutely connected'', ``absolutely normal'', and so on, for the
-corresponding notions relative to $X\otimes_k\Omega$, where $\Omega$
+On the other hand, Weil says ``\emph{absolutely irreducible}'',
+``\emph{absolutely connected}'', ``\emph{absolutely normal}'', and so on, for the
+corresponding notions relative to the prescheme $X\otimes_k\Omega$, where $\Omega$
 is a suitable algebraically closed extension of $k$.
 This terminology is explained by his different point of view:
-an ``algebraic variety'' $V$ is first given as a geometric object over
-
+an ``algebraic variety'' $V$ is given \emph{first} as a geometric object over
 \oldpage[IV-2]{64}
-
-an algebraically closed field $\Omega$; the datum of a smaller
+an \emph{algebraically closed} field $\Omega$; the datum of a smaller
 ``field of definition'' $k$ (that is, a scheme over $k$ which yields
-$V$ after extension of the base field to $\Omega$) is an additional
+$V$ after extension of the base field to $\Omega$) is for him an additional
 and, to some extent, secondary structure.
 Thus his use of ``absolute'' or ``intrinsic'' on the one hand and
 ``relative to $k$'' on the other is opposite to ours.\footnote{Zariski's
@@ -359,7 +357,7 @@ There is no analogous criterion for geometric connectedness.
 For example, take $X=\Spec\bigl(\mathbf{R}[[T,U]]/(T^2+U^2)\bigr)$,
 where $T$ and $U$ are indeterminates.
 Then $X$ is an integral $\mathbf{R}$-scheme, and its field of rational
-functions $\kappa(x)$ is $\mathbf{C}((T))$, as is readily verified.
+functions $\kres(x)$ is $\mathbf{C}((T))$, as is readily verified.
 The scheme $X\otimes_{\mathbf R}\mathbf C$ is the union of two
 irreducible components, the two ``isotropic lines'', which have a
 point in common: the maximal ideal in
@@ -387,8 +385,8 @@ Then $X$ is geometrically connected.
 \begin{proof}
 Let $\Omega$ be an algebraic closure of $k$, put
 \[
-X'=X\otimes_k\Omega,\qquad
-Y'=Y\otimes_k\Omega,
+X'=X_{(\Omega)},\qquad
+Y'=Y_{(\Omega)},
 \]
 and let $f'=f_{(\Omega)}:Y'\to X'$.
 It is enough to prove that $X'$ is connected.
@@ -397,7 +395,7 @@ The projections
 \[
 p:X'\longrightarrow X,\qquad q:Y'\longrightarrow Y
 \]
-are open \sref{IV.2.4.10}, and they are closed because $\Omega/k$ is
+are \emph{open} \sref{IV.2.4.10}, and they are \emph{closed} because $\Omega/k$ is
 algebraic \sref[II]{II.6.1.10}.
 Consequently $U=p(U')$ is a nonempty open-and-closed subset of $X$,
 and hence $U=X$.
@@ -406,8 +404,8 @@ is nonempty.
 It is also open and closed in $Y'$, which is connected by hypothesis,
 so $V'=Y'$.
 We conclude that $U'=X'$: otherwise, applying the same argument to
-the open-and-closed subset $X'\setminus U'$ would give
-$f'^{-1}(X'\setminus U')=Y'$, which is impossible because $Y'$ is
+the open-and-closed subset $X'\setmin U'$ would give
+$f'^{-1}(X'\setmin U')=Y'$, which is impossible because $Y'$ is
 nonempty.
 \end{proof}
 
@@ -434,15 +432,14 @@ geometrically connected.
 \end{corollary}
 
 \begin{proof}
-For (i), we may suppose that $Y$ is reduced, so that $f$ factors as $Y\xrightarrow{g}X_0\xrightarrow{j}X$,
+For (i), we may suppose that $Y$ is reduced, so that $f$ factors as $f:Y\xrightarrow{g}X_0\xrightarrow{j}X$,
 where $X_0$ denotes the reduced sub-prescheme of $X$ whose underlying
 space is the connected component $X_0$ \sref[I]{I.5.2.2}.
 Apply \sref{IV.4.5.13} to $g$.
 
-For (ii), choose a prescheme structure on the underlying space $Y$.
-Since a geometrically irreducible prescheme is in particular
-geometrically connected, (i) applies to the canonical injection
-$Y\to X$.
+For (ii), considering a prescheme having $Y$ as underlying space, and
+noting that $Y$ is \emph{a fortiori} geometrically connected, it suffices
+to apply (i) to the canonical injection $Y\to X$.
 \end{proof}
 
 \oldpage[IV-2]{65}
@@ -451,14 +448,14 @@ $Y\to X$.
 \phantomsection
 \label{IV.4.5.14}
 Let $X$ be a $k$-prescheme.
-If $x\in X$ is such that $\kappa(x)$ is a primary extension of $k$
-(in particular, if $x$ is a rational point of $X$), then the
+If $x\in X$ is such that $\kres(x)$ is a primary extension of $k$
+\textup{(in particular, if $x$ is a \emph{rational point} of $X$)}, then the
 connected component of $x$ in $X$ is geometrically connected.
 \end{corollary}
 
 \begin{proof}
 Apply \sref{IV.4.5.13.1} to
-$Y=\Spec(\kappa(x))$ and to the canonical morphism $Y\to X$.
+$Y=\Spec(\kres(x))$ and to the canonical morphism $Y\to X$.
 By \sref{IV.4.5.9}, the prescheme $Y$ is geometrically irreducible.
 \end{proof}
 
@@ -466,7 +463,7 @@ By \sref{IV.4.5.9}, the prescheme $Y$ is geometrically irreducible.
 \phantomsection
 \label{IV.4.5.15}
 Let $X$ be a $k$-prescheme, let $x\in X$, and let $k'$ be the
-separable algebraic closure of $k$ in $\kappa(x)$.
+separable algebraic closure of $k$ in $\kres(x)$.
 Suppose that:
 \begin{enumerate}
 \item[\rm(i)]
@@ -503,13 +500,13 @@ $x''_\alpha\in p^{-1}(x)$.
 The number of points of $p^{-1}(x)$ is the number of irreducible
 components of
 \[
-\Spec\bigl(\kappa(x)\otimes_k k''\bigr)
+\Spec\bigl(\kres(x)\otimes_k k''\bigr)
 \]
 \sref[I]{I.3.4.9}, namely $[k':k]$ by \sref{IV.4.3.4}.
 Therefore the number of connected components of $X''$ is at most
 $[k':k]$.
 For every $x''_\alpha\in p^{-1}(x)$, the field
-$\kappa(x''_\alpha)$ is a primary extension of $k''$, by
+$\kres(x''_\alpha)$ is a primary extension of $k''$, by
 \sref{IV.4.3.5} and \sref[I]{I.3.4.9}.
 Corollary \sref{IV.4.5.14}, applied to $x''_\alpha$ and $X''$, now
 shows that every connected component of $X''$ is geometrically
@@ -533,7 +530,7 @@ the family $(X_\alpha)$ is finite;
 \phantomsection
 \label{IV.4.5.16.ii}
 for every $\alpha$, the separable algebraic closure $k'_\alpha$ of
-$k$ in $\kappa(x_\alpha)$ is a finite extension of $k$.
+$k$ in $\kres(x_\alpha)$ is a finite extension of $k$.
 \end{enumerate}
 Then the geometric number of connected components of $X$ is at most $\sum_\alpha[k'_\alpha:k]$,
 and there exists a finite separable extension $k''$ of $k$ such that
@@ -555,7 +552,7 @@ finite Galois extension of $k$ containing all the $k'_\alpha$.
 \phantomsection
 \label{IV.4.5.17}
 Suppose that the $k$-prescheme $X$ contains a point $x$ such that the
-separable algebraic closure of $k$ in $\kappa(x)$ is finite over $k$.
+separable algebraic closure of $k$ in $\kres(x)$ is finite over $k$.
 Then $X$ is geometrically connected if and only if
 $X\otimes_k K$ is connected for every finite separable extension
 $K$ of $k$.
@@ -628,7 +625,7 @@ show, for every $s''\in S''$, that $p_1^{-1}(X'_0)\cap\varphi''^{-1}(s'')
 =p_2^{-1}(X'_0)\cap\varphi''^{-1}(s'')$.
 Put
 \[
-T=\Spec(\kappa(s'')),\qquad
+T=\Spec(\kres(s'')),\qquad
 U=X''\times_{S''}T=\varphi''^{-1}(s''),
 \]
 and let $v:U\to X''$ be the canonical projection.
@@ -665,7 +662,7 @@ w=p\circ p_1\circ v=p\circ p_2\circ v.
 \oldpage[IV-2]{67}
 
 There is a field $K$ which is a common extension of $k'$ and
-$\kappa(s'')$.
+$\kres(s'')$.
 If $P=\Spec(K)$, the diagram
 \[
 \xymatrix@C=3.5em@R=3em{

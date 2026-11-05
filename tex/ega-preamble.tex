@@ -40,7 +40,7 @@
 \newcommand{\sh}[1]{\mathscr{#1}}
 \newcommand{\bb}[1]{\mathbf{#1}}
 \newcommand{\bbGamma}{\boldsymbol{\Gamma}}
-\newcommand{\cat}[1]{\mathbf{#1}}
+\newcommand{\cat}[1]{\boldsymbol{#1}}% categories (C, K, Ab) in bold italic, as printed
 \newcommand{\vphi}{\varphi}
 \newcommand{\HH}{\mathrm{H}}
 \newcommand{\CHH}{\check{\mathrm{H}}}
@@ -133,9 +133,11 @@
 
 % ---- references ----------------------------------------------------------------
 % \sref[volume]{key}: the printed number of the labelled paragraph, in parentheses, linked; with a volume prefix
-% when the target is in another chapter, e.g. \sref[0]{0.6.7.4} gives (0, 6.7.4).
-\newcommand{\sref}[2][]{\hyperref[#2]{(\if\relax\detokenize{#1}\relax\else#1,~\fi\ref*{#2})}}
+% when the target is in another chapter, e.g. \sref[0]{0.6.7.4} gives (0, 6.7.4). As in EGA, the
+% volume number is bold (a subscript in ordinary weight: \sref[0\textsubscript{\mdseries I}]{...})
+% and the reference is upright, also inside the italic statements.
+\newcommand{\sref}[2][]{\hyperref[#2]{\textup{(\if\relax\detokenize{#1}\relax\else\textbf{#1},~\fi\ref*{#2})}}}
 % \eref{key}: a numbered formula, e.g. (11.2.1.1).
-\newcommand{\eref}[1]{\hyperref[#1]{(\ref*{#1})}}
+\newcommand{\eref}[1]{\hyperref[#1]{\textup{(\ref*{#1})}}}
 % \erratum[volume]{reference}: a reference as corrected in the errata of that volume (Err_IV).
 \newcommand{\erratum}[2][]{#2~[Err$_{\mathrm{#1}}$]}

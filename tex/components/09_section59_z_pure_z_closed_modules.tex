@@ -1,5 +1,5 @@
 \subsection{\texorpdfstring{$Z$}{Z}-pure and
-\texorpdfstring{$Z$}{Z}-closed modules}
+\texorpdfstring{$Z$}{Z}-closed Modules}
 \label{subsection:IV.5.9}
 
 Some of the notions and results in this section and the next are
@@ -16,17 +16,17 @@ that $Z$ is the union of a filtered increasing family $(Z_\alpha)$ of
 closed subsets of $X$; conversely, such a union is plainly stable
 under specialization.
 
-Put $U_\alpha=X\setmin Z_\alpha$.  Then $X-Z$ is the intersection of the
+Put $U_\alpha=X\setmin Z_\alpha$.  Then $X\setmin Z$ is the intersection of the
 filtered decreasing family of open subsets $U_\alpha$.  Let
 $i_\alpha:U_\alpha\to X$ be the canonical injection, and, whenever
 $U_\alpha\supset U_\beta$, let
 $i_{\alpha\beta}:U_\beta\to U_\alpha$ be the canonical injection, so
 that $i_\beta=i_\alpha\circ i_{\alpha\beta}$.
 
-Let $\sh F$ be an $\sh O_X$-module, not necessarily quasi-coherent.
+Let $\sh F$ be an $\sh O_X$-Module, not necessarily quasi-coherent.
 We have $(i_\beta)_*(\sh F|U_\beta)
 = (i_\alpha)_*((i_{\alpha\beta})_*(\sh F|U_\beta))$.
-The canonical homomorphism \sref[0]{0.4.4.3.2}
+The canonical homomorphism \sref[0\textsubscript{\mdseries I}]{0.4.4.3.2}
 \[
   \sh F|U_\alpha\longrightarrow
   (i_{\alpha\beta})_*(\sh F|U_\beta)
@@ -40,8 +40,8 @@ therefore gives, after applying $(i_\alpha)_*$, a homomorphism
 For $U_\alpha\supset U_\beta\supset U_\gamma$, one immediately
 checks that
 $\rho_{\gamma\alpha}=\rho_{\gamma\beta}\circ\rho_{\beta\alpha}$.
-Thus the modules $(i_\alpha)_*(\sh F|U_\alpha)$ form an inductive
-system under the homomorphisms $\rho_{\beta\alpha}$.  We put
+In other words, the $\sh O_X$-Modules $(i_\alpha)_*(\sh F|U_\alpha)$ form an
+\emph{inductive system} for the homomorphisms $\rho_{\beta\alpha}$.  We put
 \end{env}
 
 \begin{equation}
@@ -51,10 +51,10 @@ system under the homomorphisms $\rho_{\beta\alpha}$.  We put
 \tag{5.9.1.1}
 \end{equation}
 
-This $\sh O_X$-module does not depend on the increasing family
+This $\sh O_X$-Module does not depend on the increasing family
 $(Z_\alpha)$ of closed subsets having union $Z$.  Indeed, let $V$ be
 a Noetherian open subset of $X$.  In the category of
-$\sh O_V$-modules, the functor
+$\sh O_V$-Modules, the functor
 $\sh G\leadsto\Gamma(V,\sh G)$ commutes with inductive limits
 (G,~II, 3.10.1); hence \eqref{IV.5.9.1.1} gives
 \begin{equation}
@@ -74,7 +74,7 @@ filtered increasing family of closed subsets of $V\cap Z_\alpha$,
 there is a $\lambda$ such that
 \[
  V\cap Z_\alpha\cap Z'_\lambda=V\cap Z_\alpha
- \qquad\text{\sref[0]{0.9.2.4}}.
+ \qquad\text{\sref[0\textsubscript{\mdseries III}]{0.9.2.4}}.
 \]
 Equivalently, $V\cap Z_\alpha\subset V\cap Z'_\lambda$.  The two
 filtered decreasing families $V\cap U_\alpha$ and
@@ -112,20 +112,20 @@ $\sh H^0_{X/Z}(\sh F)=\sh F$.
 \begin{proof}
 Assertion~(i) follows from \eqref{IV.5.9.1.1}, from the left
 exactness of $(i_\alpha)_*$, and from the fact that inductive limits
-preserve exactness in the category of $\sh O_X$-modules.\ 
+preserve exactness in the category of $\sh O_X$-Modules.\
 Assertion~(ii) follows from \sref[I]{I.9.2.2} and from the fact that
-an inductive limit of quasi-coherent $\sh O_X$-modules is
+an inductive limit of quasi-coherent $\sh O_X$-Modules is
 quasi-coherent \sref[I]{I.1.3.9}.
 \end{proof}
 
 \begin{remark}[5.9.3]
 \label{IV.5.9.3}
-If $\sh F$ is an $\sh O_X$-algebra, then
-$\sh H^0_{X/Z}(\sh F)$ is one as well \sref[0]{0.4.2.4}.  In
+If $\sh F$ is an $\sh O_X$-\emph{algebra}, so is
+$\sh H^0_{X/Z}(\sh F)$ \sref[0\textsubscript{\mdseries I}]{0.4.2.4}; in
 particular, $\sh H^0_{X/Z}(\sh O_X)$ is a quasi-coherent
-$\sh O_X$-algebra, and, for every $\sh O_X$-module $\sh F$,
-$\sh H^0_{X/Z}(\sh F)$ is a module over that algebra; it is
-quasi-coherent when $\sh F$ is quasi-coherent \sref[I]{I.9.6.1}.
+$\sh O_X$-algebra, and, for every $\sh O_X$-Module $\sh F$,
+$\sh H^0_{X/Z}(\sh F)$ is an $\sh H^0_{X/Z}(\sh O_X)$-Module, which is
+quasi-coherent if $\sh F$ is quasi-coherent \sref[I]{I.9.6.1}.
 
 More specifically, suppose that $X=\Spec(A)$, where $A$ is a
 Noetherian domain.  Then $\sh H^0_{X/Z}(\sh O_X)$ is the
@@ -144,7 +144,7 @@ This follows at once from \eqref{IV.5.9.1.2} and
 Let $X$ be a locally Noetherian prescheme, let $Z\subset X$ be stable
 under specialization, let $X'$ be a locally Noetherian prescheme,
 and let $f:X'\to X$ be flat.  Then $Z'=f^{-1}(Z)$ is stable under
-specialization, and, for every quasi-coherent $\sh O_X$-module
+specialization, and, for every quasi-coherent $\sh O_X$-Module
 $\sh F$, there is a canonical isomorphism
 \begin{equation}
 \label{IV.5.9.4.1}
@@ -174,13 +174,13 @@ is bijective \sref{IV.2.3.1}.  For $\alpha\leq\beta$, the diagram
    & (i'_\beta)_*(f^*\sh F|U'_\beta)
 }
 \]
-is commutative.  Passing to the limit gives a canonical isomorphism $\varinjlim_\alpha f^*((i_\alpha)_*(\sh F|U_\alpha))
+is commutative.  Passing to the limit gives a canonical isomorphism $\varinjlim_\alpha(f^*((i_\alpha)_*(\sh F|U_\alpha)))
 \xrightarrow{\sim}
 \sh H^0_{X'/Z'}(f^*\sh F)$.
 
 \oldpage[IV-2]{111}
 
-Since $f^*$ commutes with inductive limits \sref[0]{0.4.3.2}, this
+Since $f^*$ commutes with inductive limits \sref[0\textsubscript{\mdseries I}]{0.4.3.2}, this
 is precisely \eqref{IV.5.9.4.1}.
 \end{proof}
 
@@ -194,7 +194,7 @@ $f$ is faithfully flat and quasi-compact.
 
 \begin{proof}
 The first assertion follows from \eqref{IV.5.9.4.1} and
-\sref[0]{0.5.3.11}.  The second amounts to saying that if
+\sref[0\textsubscript{\mdseries I}]{0.5.3.11}.  The second amounts to saying that if
 $\sh H^0_{X'/Z'}(f^*\sh F)$ is of finite type, then so is
 $\sh H^0_{X/Z}(\sh F)$; this follows from \eqref{IV.5.9.4.1} and
 \sref{IV.2.5.2}.
@@ -204,7 +204,7 @@ $\sh H^0_{X/Z}(\sh F)$; this follows from \eqref{IV.5.9.4.1} and
 \label{IV.5.9.6}
 Let $X$ be a locally Noetherian prescheme, let $Z\subset X$ be stable
 under specialization, and let $\sh F$ be a quasi-coherent
-$\sh O_X$-module.  For every $x\in X$, put
+$\sh O_X$-Module.  For every $x\in X$, put
 $X_x=\Spec(\sh O_x)$ and $Z_x=Z\cap X_x$.  There is a functorial
 isomorphism
 \begin{equation}
@@ -227,7 +227,7 @@ With the notation of \sref{IV.5.9.1}, for every $\alpha$ there is a
 canonical functorial homomorphism
 \[
  \sh F\longrightarrow(i_\alpha)_*(\sh F|U_\alpha)
- \qquad\text{\sref[0]{0.4.4.3.2}}.
+ \qquad\text{\sref[0\textsubscript{\mdseries I}]{0.4.4.3.2}}.
 \]
 These homomorphisms form an inductive system, and passage to the
 limit gives a canonical functorial homomorphism
@@ -241,7 +241,7 @@ limit gives a canonical functorial homomorphism
 \begin{proposition}[5.9.8]
 \label{IV.5.9.8}
 Let $X$ be a locally Noetherian prescheme, let $Z\subset X$ be stable
-under specialization, and let $\sh F$ be an $\sh O_X$-module.  The
+under specialization, and let $\sh F$ be an $\sh O_X$-Module.  The
 following conditions are equivalent:
 \begin{enumerate}[{\rm a)}]
   \item\label{IV.5.9.8.a}
@@ -259,7 +259,7 @@ They are also equivalent to:
 \begin{enumerate}
   \item[{\rm a')}] \label{IV.5.9.8.a-prime}
     For every closed subset $T\subset Z$ of $X$, the canonical
-    homomorphism \sref[0]{0.4.4.3.2}
+    homomorphism \sref[0\textsubscript{\mdseries I}]{0.4.4.3.2}
     \[
       \sh F\longrightarrow i_*(\sh F|X\setmin T),
     \]
@@ -270,7 +270,7 @@ They are also equivalent to:
     subset $V\subset X$, the restriction homomorphism
     \[
       \Gamma(V,\sh F)\longrightarrow
-      \Gamma(V\cap(X-T),\sh F)
+      \Gamma(V\cap(X\setmin T),\sh F)
     \]
     is injective (respectively bijective).
 \end{enumerate}
@@ -286,7 +286,7 @@ $(\rho_{X/Z})_V$ is the composite
 \begin{equation}
 \label{IV.5.9.8.1}
  \Gamma(V,\sh F)\longrightarrow
- \Gamma(V\cap(X-T),\sh F)\longrightarrow
+ \Gamma(V\cap(X\setmin T),\sh F)\longrightarrow
  \varinjlim_\alpha\Gamma(V\cap U_\alpha,\sh F)
 \tag{5.9.8.1}
 \end{equation}
@@ -296,7 +296,7 @@ directly from the definition of an inductive limit.
 \oldpage[IV-2]{112}
 
 It remains to show that, if $\rho_{X/Z}$ is bijective, then so is
-$\Gamma(V,\sh F)\to\Gamma(V\cap(X-T),\sh F)$.  By
+$\Gamma(V,\sh F)\to\Gamma(V\cap(X\setmin T),\sh F)$.  By
 \eqref{IV.5.9.8.1}, it is enough to observe that whenever
 $U'\subset U$ are open subsets of $V$ containing $V\cap(X-Z)$, the
 restriction homomorphism
@@ -307,22 +307,25 @@ $V\cap(X\setmin T)$ with $U'$.
 
 \begin{definition}[5.9.9]
 \label{IV.5.9.9}
-Under the hypotheses of \sref{IV.5.9.8}, the module $\sh F$ is called
-\emph{$Z$-pure} (respectively \emph{$Z$-closed}) if $\rho_{X/Z}$ is
-injective (respectively bijective).
+Under the hypotheses of \sref{IV.5.9.8}, we say that $\sh F$ is
+$Z$-pure \textup{(}respectively $Z$-closed\textup{)} if the homomorphism
+$\rho_{X/Z}$ is injective \textup{(}respectively bijective\textup{)}.
 \end{definition}
 
 If $X=\Spec(A)$ is affine and $\sh F=\widetilde M$, where $M$ is an
 $A$-module, we call $M$ $Z$-pure (respectively $Z$-closed) when
 $\sh F$ is.
 
-We say that $\sh F$ is \emph{$Z$-pure} (respectively
-\emph{$Z$-closed}) \emph{at a point} $x\in X$ if, with the notation
-of \sref{IV.5.9.6}, $\widetilde{\sh F}_x$ is $Z_x$-pure
-(respectively $Z_x$-closed).  By \sref{IV.5.9.6}, this is equivalent
-to saying that $\sh F_x\longrightarrow(\sh H^0_{X/Z}(\sh F))_x$
-is injective (respectively bijective).  At every point $x\in X\setmin Z$,
-$\sh F$ is $Z$-closed by \sref{IV.5.9.8}.
+We say that $\sh F$ is $Z$-\emph{pure} (respectively
+$Z$-\emph{closed}) \emph{at a point} $x\in X$ if (with the notation
+of \sref{IV.5.9.6}) $\sh F_x$ is $Z_x$-pure
+(respectively $Z_x$-closed); by \sref{IV.5.9.6}, this is equivalent
+to saying that the canonical homomorphism
+$\sh F_x\longrightarrow(\sh H^0_{X/Z}(\sh F))_x$
+is \emph{injective} (respectively \emph{bijective}).
+
+Note that for every $x\in X\setmin Z$, $\sh F$ is $Z$-\emph{closed at the
+point} $x$, by \sref{IV.5.9.8}.
 
 \begin{corollary}[5.9.10]
 \label{IV.5.9.10}
@@ -349,8 +352,8 @@ Under the hypotheses of \sref{IV.5.9.8}, the supports of
 $\ker(\rho_{X/Z})$ and $\operatorname{coker}(\rho_{X/Z})$ are
 contained in $Z$, and $\sh H^0_{X/Z}(\sh F)$ is $Z$-closed.
 
-Furthermore, if $u:\sh F\to\sh F'$ is an $\sh O_X$-module
-homomorphism and $\sh F'$ is $Z$-closed, then $u$ factors uniquely as $\sh F\xrightarrow{\rho_{X/Z}}\sh H^0_{X/Z}(\sh F)
+Furthermore, if $u:\sh F\to\sh F'$ is a homomorphism of
+$\sh O_X$-Modules and $\sh F'$ is $Z$-closed, then $u$ factors uniquely as $\sh F\xrightarrow{\rho_{X/Z}}\sh H^0_{X/Z}(\sh F)
 \xrightarrow{v}\sh F'$.
 If, in addition, the supports of $\ker(u)$ and $\operatorname{coker}(u)$
 are contained in $Z$, then $v$ is an isomorphism.
@@ -427,7 +430,7 @@ $V\cap(X\setmin Z)$.  As $\sh H^0_{X/Z}(\sh F)$ is $Z$-closed, $t$ extends
 uniquely over $V$; its image under $v$ agrees with $s'$ on $U$, and
 hence on $V$ by the same argument.
 
-The module $\sh H^0_{X/Z}(\sh F)$ is called the \emph{$Z$-closure}
+We say that $\sh H^0_{X/Z}(\sh F)$ is the $Z$-\emph{closure}
 of $\sh F$.
 \end{proof}
 
@@ -437,36 +440,39 @@ of $\sh F$.
 \label{IV.5.9.12}
 \begin{enumerate}[{\rm(i)}]
   \item\label{IV.5.9.12.i}
-    Let $\boldsymbol{C}(X)$ be the category of $\sh O_X$-modules, and let
-    $\boldsymbol{C}_Z(X)$ be its full subcategory of modules whose support
-    is contained in $Z$.  This is a localizing subcategory in the
-    sense of Gabriel, and $\sh H^0_{X/Z}$ is precisely Gabriel's
-    localization functor (cf.~\textup{[27]}); this gives another proof of
-    \sref{IV.5.9.11}.  When $Z$ is closed, the functor
-    $i^*:\boldsymbol{C}(X)\to\boldsymbol{C}(X\setmin Z)$, where
-    $i:X\setmin Z\to X$, defines an equivalence
+    Let $\boldsymbol{C}(X)$ be the category of $\sh O_X$-Modules, and let
+    $\boldsymbol{C}_Z(X)$ be the subcategory of $\boldsymbol{C}(X)$ formed by
+    the $\sh O_X$-Modules with support contained in $Z$; this subcategory
+    is localizing in the sense of Gabriel, and the functor
+    $\sh H^0_{X/Z}$ is none other than Gabriel's localization functor
+    (cf.~\textup{[27]}; this would provide another proof of
+    \sref{IV.5.9.11}).  When $Z$ is closed, the functor
+    $i^*:\boldsymbol{C}(X)\to\boldsymbol{C}(X\setmin Z)$ (where
+    $i:X\setmin Z\to X$ is the canonical injection) defines an
+    \emph{equivalence} of categories
     \[
-      \boldsymbol{C}(X)/\boldsymbol{C}_Z(X)\simeq\boldsymbol{C}(X-Z).
+      \boldsymbol{C}(X)/\boldsymbol{C}_Z(X)\approx\boldsymbol{C}(X\setmin Z).
     \]
   \item\label{IV.5.9.12.ii}
-    By \sref{IV.5.9.11},
-    $\sh H^0_{X/Z}(\sh F)=0$ if and only if
-    $\operatorname{Supp}(\sh F)\subset Z$.  Indeed, the vanishing
-    implies that $\ker(\rho_{X/Z})=\sh F$.  Conversely, if
-    $\operatorname{Supp}(\sh F)\subset Z$, apply the second part of
-    \sref{IV.5.9.11} to the unique map $u:\sh F\to0$; the
-    corresponding map $v:\sh H^0_{X/Z}(\sh F)\to0$ is an
-    isomorphism.
+    It follows from \sref{IV.5.9.11} that the condition
+    $\sh H^0_{X/Z}(\sh F)=0$ is \emph{equivalent} to
+    $\operatorname{Supp}(\sh F)\subset Z$.  Indeed, it implies the latter,
+    since the kernel of $\rho_{X/Z}$ is then equal to $\sh F$.
+    Conversely, if $\operatorname{Supp}(\sh F)\subset Z$, it suffices to
+    apply the second part of \sref{IV.5.9.11} to the unique homomorphism
+    $u:\sh F\to0$ to conclude that the corresponding homomorphism
+    $v:\sh H^0_{X/Z}(\sh F)\to0$ is an isomorphism.
   \item\label{IV.5.9.12.iii}
-    The preceding constructions make sense for every locally
+    The preceding developments keep a meaning for every locally
     Noetherian ringed space in which every closed irreducible subset
-    has a unique generic point.  In particular, on a locally
-    Noetherian prescheme they apply to arbitrary sheaves of abelian
-    groups, regarded as modules over the sheaf associated with the
-    constant presheaf $\mathbf Z$.  For every $x\in X$ one still has
+    has exactly one generic point.  In particular, on a locally
+    Noetherian prescheme they apply to arbitrary \emph{sheaves of abelian
+    groups} (regarded as Modules over the simple sheaf associated with
+    the constant presheaf $\mathbf Z$).  For every $x\in X$ one still has
     the canonical isomorphism \eqref{IV.5.9.6.1}, in which
-    $\widetilde{\sh F}_x$ denotes the sheaf induced by $\sh F$ on the
-    subspace $X_x$ of $X$.  A direct proof follows from
-    \eqref{IV.5.9.1.2} and the theorem on double inductive limits.
+    $\widetilde{\sh F}_x$ denotes the sheaf \emph{induced} on the
+    subspace $X_x$ of $X$ by the sheaf $\sh F$; the direct proof follows
+    immediately from the definition \eqref{IV.5.9.1.2} and the theorem
+    on double inductive limits.
 \end{enumerate}
 \end{remarks}

@@ -31,18 +31,18 @@ the following relations:
 \end{align}
 
 \begin{enumerate}
-\item[\rm(5.1.1.4)]
+\item[\textbf{(5.1.1.4)}]
 \phantomsection
 \egalabel{IV.5.1.1.4}{5.1.1.4}
 $\Spec(A)$ is a catenary space if and only if $A$ is a catenary ring.
-\item[\rm(5.1.1.5)]
+\item[\textbf{(5.1.1.5)}]
 \phantomsection
 \egalabel{IV.5.1.1.5}{5.1.1.5}
 $\Spec(A)$ is equidimensional if and only if $A$ is equidimensional,
 if and only if the minimal prime ideals $\mathfrak p_\alpha$ of $A$
 are such that the rings $A/\mathfrak p_\alpha$ all have the same
 dimension.
-\item[\rm(5.1.1.6)]
+\item[\textbf{(5.1.1.6)}]
 \phantomsection
 \egalabel{IV.5.1.1.6}{5.1.1.6}
 $\Spec(A)$ is equicodimensional if and only if $A$ is
@@ -133,7 +133,7 @@ one may plainly restrict to the local schemes at closed points of
 $X$.
 
 Every irreducible closed subset of $X$ contains a closed point when
-$X$ is quasi-compact \sref[0]{0.2.1.3}; we shall see below
+$X$ is quasi-compact \sref[0\textsubscript{\mdseries I}]{0.2.1.3}; we shall see below
 \sref{IV.5.1.11} that the same is true when $X$ is locally
 Noetherian.
 \end{proof}
@@ -185,7 +185,7 @@ $s_i(x)=0$ for every $i$.
 \phantomsection
 \label{IV.5.1.8}
 Let $X$ be a locally Noetherian prescheme, let $\sh L$ be an
-invertible $\sh O_X$-module, and let $f$ be a section of $\sh L$ over
+invertible $\sh O_X$-Module, and let $f$ be a section of $\sh L$ over
 $X$.
 Every irreducible component of the set $Z$ of points $x\in X$ such
 that $f(x)=0$ has codimension at most $1$ in $X$; it has codimension
@@ -225,8 +225,8 @@ If $x\in Y$ and $\sh O_{X,x}$ is a catenary ring, then
 
 \begin{proof}
 Let $Y_i$ ($1\leq i\leq n$) be the irreducible components of $Y$
-containing $x$; there are only finitely many because $Y$ is locally
-Noetherian.
+containing $x$ (which are \emph{finite} in number since $Y$ is locally
+Noetherian).
 Let $y_i$ be the generic point of $Y_i$.
 Put $A=\sh O_{X,x}$, and let $\mathfrak p_i$ be the prime ideal of
 $A$ corresponding to $Y_i\cap\Spec(A)$.
@@ -236,9 +236,9 @@ $\mathfrak p_i$, so $\dim(\sh O_{Y,x})=\sup_i\dim(A/\mathfrak p_i)$.
 On the other hand, $\sh O_{X,y_i}=A_{\mathfrak p_i}$, and the
 hypothesis on $A$ gives $\dim(A)=\dim(A/\mathfrak p_i)+\dim(A_{\mathfrak p_i})$
 by \sref[0]{0.16.1.4}.
-The conclusion follows from $\operatorname{codim}_x(Y,X)
-=\inf_i\dim(\sh O_{X,y_i})$
-using \eqref{IV.5.1.2.1} and \sref[0]{0.14.2.6}.
+The conclusion therefore follows from the relation $\operatorname{codim}_x(Y,X)
+=\inf_i(\dim(\sh O_{X,y_i}))$
+\sref{IV.5.1.2}, \sref[0]{0.14.2.6}.
 \end{proof}
 
 \begin{proposition}[5.1.10]
@@ -262,7 +262,7 @@ $y\ne x$ of $\overline{\{x\}}$ is closed in $X$.
 \end{proposition}
 
 \begin{proof}
-\sref{IV.5.1.10.i} is a special case of the following lemma.
+\textup{(i)} is a special case of the following lemma.
 \end{proof}
 
 \begin{lemma}[5.1.10.1]
@@ -287,12 +287,12 @@ The lemma applies to the underlying space of every prescheme $X$.
 Indeed, $Z$ is then itself the underlying space of a prescheme
 \sref[I]{I.5.2.1}, and one may take for $Z'$ an affine open subset of
 $Z$, which is a quasi-compact Kolmogorov space and therefore contains
-a closed point \sref[0]{0.2.1.3}.
+a closed point \sref[0\textsubscript{\mdseries I}]{0.2.1.3}.
 \end{proof}
 
 \oldpage[IV-2]{89}
 
-\begin{proof}[Proof of \sref{IV.5.1.10.ii}]
+\begin{proof}[Proof of \sref{IV.5.1.10},~(ii)]
 Let $Z$ be the reduced sub-prescheme of $X$ whose underlying space is
 $\overline{\{x\}}$.
 The hypothesis implies that $\{x\}$ is open in $Z$.
@@ -315,7 +315,7 @@ subset of $X$ contains a closed point.
 
 \begin{proof}
 Every closed subset of $X$ is constructible
-\sref[0]{0.9.1.1} and \sref[0]{0.9.1.5}, so it suffices to apply
+\sref[0\textsubscript{\mdseries III}]{0.9.1.1} and \sref[0\textsubscript{\mdseries III}]{0.9.1.5}, so it suffices to apply
 \sref{IV.5.1.10}.
 \end{proof}
 
@@ -323,9 +323,9 @@ Every closed subset of $X$ is constructible
 \phantomsection
 \label{IV.5.1.12}
 Let $X$ be a prescheme, let $\sh F$ be a quasi-coherent
-$\sh O_X$-module of finite type, and let
+$\sh O_X$-Module of finite type, and let
 $S=\operatorname{Supp}(\sh F)$ be its support, which is closed in
-$X$ \sref[0]{0.5.2.2}.
+$X$ \sref[0\textsubscript{\mdseries I}]{0.5.2.2}.
 For every $x\in X$, regard $\operatorname{Supp}(\sh F_x)$ as a closed
 subset of the local scheme $\Spec(\sh O_x)$.
 By definition \sref[0]{0.16.1.7}, $\dim(\sh F_x)=\dim(\operatorname{Supp}(\sh F_x))$.
@@ -376,7 +376,7 @@ $\dim(\sh F)=\dim(M)$ by \sref[0]{0.16.1.7} and
 \phantomsection
 \label{IV.5.1.13}
 Let $X$ be a prescheme, let $\sh F$ be a quasi-coherent
-$\sh O_X$-module of finite type, let $x\in X$, and let $x'$ be a
+$\sh O_X$-Module of finite type, let $x\in X$, and let $x'$ be a
 generization of $x$ in $X$. Then
 \begin{equation}
 \dim(\sh F_{x'})\leq\dim(\sh F_x).

@@ -43,7 +43,7 @@ are isomorphisms.
 The $A$-module $\HH^i(X,\sh{F})$ is of finite type
 \sref{III.3.2.4}, and is therefore identical with its separated
 completion for the $\mathfrak{J}$-preadic topology
-\sref[0]{0.7.3.6}.  The proposition is consequently a special case
+\sref[0\textsubscript{\mdseries I}]{0.7.3.6}.  The proposition is consequently a special case
 of \sref{III.4.1.10}.
 \end{proof}
 
@@ -57,8 +57,8 @@ of coherent $\sh{O}_X$-modules
 
 \begin{corollary}[5.1.3]
 \label{III.5.1.3}
-Let $\sh{F}$ and $\sh{G}$ be coherent $\sh{O}_X$-modules such that
-the intersection of their supports is proper over $Y$.  The
+Let $\sh{F}$ and $\sh{G}$ be two coherent $\sh{O}_X$-modules such that
+the intersection of their supports is proper over $Y$.  Then the
 canonical homomorphism
 \[
   \Hom_{\sh{O}_X}(\sh{F},\sh{G})
@@ -70,9 +70,9 @@ canonical homomorphism
 \]
 which sends a homomorphism $u:\sh{F}\to\sh{G}$ to its completion
 $\widehat{u}:\widehat{\sh{F}}\to\widehat{\sh{G}}$, is an
-isomorphism.  Moreover, when $f$ is closed,
-$\widehat{u}$ is injective (respectively, surjective) if and only
-if $u$ is injective (respectively, surjective).
+isomorphism.  Moreover, when the morphism $f$ is closed, for
+$\widehat{u}$ to be injective (\textup{respectively,} surjective), it is
+necessary and sufficient that $u$ be so.
 \end{corollary}
 
 \begin{proof}
@@ -108,7 +108,7 @@ We then have $f(X')=Y'$.  If $V$ is an open neighbourhood of $X'$
 in $X$, the set $f(X\setmin V)$ is closed in $Y$ and does not meet $Y'$.
 This is impossible unless $X\setmin V$ is empty, because $\mathfrak{J}$
 is contained in the radical of $A$
-\sref[I]{I.1.1.15} \sref[0]{0.7.1.10}.  Thus $V=X$.
+\sref[I]{I.1.1.15} \sref[0\textsubscript{\mdseries I}]{0.7.1.10}.  Thus $V=X$.
 \end{proof}
 
 If we restrict attention to coherent $\sh{O}_X$-modules whose
@@ -167,9 +167,8 @@ category of coherent $\sh{O}_X$-modules and the category of
 coherent $\sh{O}_{\widehat{X}}$-modules.
 \end{corollary}
 
-\begin{env}[5.1.7]
+\begin{scholium}[5.1.7]
 \label{III.5.1.7}
-\emph{Scholium.}
 Taking account of the characterization of coherent sheaves on
 formal preschemes \sref[I]{I.10.11.3}, we see that, under the
 conditions of \sref{III.5.1.1}, giving a coherent
@@ -184,7 +183,7 @@ $\sh{O}_{X_n}$-modules such that, for $m\leq n$,
 \[
   \sh{F}_m
   =
-  \sh{F}_n\otimes_{\sh{O}_{Y_n}}\sh{O}_{Y_m},
+  \sh{F}_n\otimes_{Y_n}\sh{O}_{Y_m},
   \qquad\text{or equivalently}\qquad
   \sh{F}_m
   =
@@ -203,7 +202,7 @@ ring.  Thus the $Y_n$ are spectra of local Artinian rings, and the
 results of this subsection and of the preceding ones reduce, to a
 large extent, algebraic geometry over a local adic Noetherian ring
 to algebraic geometry over local Artinian rings.
-\end{env}
+\end{scholium}
 
 \begin{corollary}[5.1.8]
 \label{III.5.1.8}
@@ -270,7 +269,7 @@ where $\sh{F}$ and $\sh{G}$ are coherent $\sh{O}_X$-modules whose
 supports are proper over $Y$.  By \sref{III.5.1.3},
 $u=\widehat{v}$ for a homomorphism
 $v:\sh{F}\to\sh{G}$.  Since completion is exact,
-$\Ker(\widehat{v})\simeq\widehat{\Ker(v)}$; and because the support
+$\Ker(\widehat{v})\simeq(\Ker(v))^{\wedge}$; and because the support
 of $\Ker(v)$ is contained in that of $\sh{F}$, it follows that
 $\Ker(u)$ is algebraizable.  The arguments for $\Im(u)$ and
 $\Coker(u)$ are the same.
@@ -314,7 +313,7 @@ The sheaves $\sh{M}_k
 =
 \mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}$,
 being annihilated by $\mathfrak{J}$, may be regarded as coherent
-$\sh{O}_{X_0}$-modules \sref[0]{0.5.3.10}.  Moreover, if $\sh{M}_k(n)
+$\sh{O}_{X_0}$-modules \sref[0\textsubscript{\mdseries I}]{0.5.3.10}.  Moreover, if $\sh{M}_k(n)
 =
 \sh{M}_k\otimes_{\sh{O}_{X_0}}\sh{L}_0^{\otimes n}$,
 then $\sh{M}_k(n)
@@ -355,24 +354,18 @@ $\sh{M}_k(n)$ consequently also satisfies
 Apply the exact cohomology sequence to
 \[
   0\longrightarrow
-  \frac{\mathfrak{J}^k\sh{F}(n)}
-       {\mathfrak{J}^{k+1}\sh{F}(n)}
+  \mathfrak{J}^k\sh{F}(n)/\mathfrak{J}^{k+1}\sh{F}(n)
   \longrightarrow
-  \frac{\mathfrak{J}^h\sh{F}(n)}
-       {\mathfrak{J}^{k+1}\sh{F}(n)}
+  \mathfrak{J}^h\sh{F}(n)/\mathfrak{J}^{k+1}\sh{F}(n)
   \longrightarrow
-  \frac{\mathfrak{J}^h\sh{F}(n)}
-       {\mathfrak{J}^{k}\sh{F}(n)}
+  \mathfrak{J}^h\sh{F}(n)/\mathfrak{J}^{k}\sh{F}(n)
   \longrightarrow0.
 \]
 For $0\leq h<k$, $n\geq n_0$, and $q>0$, induction on $k-h$
 gives
 \[
-  \HH^q\left(
-    \mathfrak{X},
-    \frac{\mathfrak{J}^h\sh{F}(n)}
-         {\mathfrak{J}^{k}\sh{F}(n)}
-  \right)=0,
+  \HH^q(\mathfrak{X},
+    \mathfrak{J}^h\sh{F}(n)/\mathfrak{J}^{k}\sh{F}(n))=0,
   \tag{5.2.3.2}
   \label{III.5.2.3.2}
 \]
@@ -389,11 +382,8 @@ Another part of the exact cohomology sequence, with $h=0$, gives
   \longrightarrow
   \HH^0(\mathfrak{X},\sh{F}_k(n))
   \longrightarrow
-  \HH^1\left(
-    \mathfrak{X},
-    \frac{\mathfrak{J}^k\sh{F}(n)}
-         {\mathfrak{J}^{k+1}\sh{F}(n)}
-  \right)
+  \HH^1(\mathfrak{X},
+    \mathfrak{J}^k\sh{F}(n)/\mathfrak{J}^{k+1}\sh{F}(n))
   =0.
   \tag{5.2.3.4}
   \label{III.5.2.3.4}
@@ -406,12 +396,12 @@ It follows that, for $h\leq k$, the canonical map
   \tag{5.2.3.5}
   \label{III.5.2.3.5}
 \]
-is \emph{surjective}.  Thus, for every $q$, the projective system $\bigl(\HH^q(\mathfrak{X},\sh{F}_k(n))\bigr)_{k\geq0}$
+is \emph{surjective}.  Thus, for every $q$, the projective system $\bigl(\HH^q(\mathfrak{X},\sh{F}_k(n))\bigr)\quad(k\geq0)$
 satisfies condition (ML) when $n\geq n_0$.
 
 Furthermore, every formal affine open $U$ of $\mathfrak{X}$ is an
 affine open in each $X_k$ \sref[I]{I.10.5.2}.  Hence
-$\HH^q(U,\sh{F}_k(n))=0$ for $q>0$ \sref[I]{I.1.3.1}, and $\HH^0(U,\sh{F}_k(n))
+$\HH^q(U,\sh{F}_k(n))=0$ for $q>0$ \sref{III.1.3.1}, and $\HH^0(U,\sh{F}_k(n))
 \longrightarrow
 \HH^0(U,\sh{F}_h(n))$
 is surjective for $h\leq k$ \sref[I]{I.1.3.9}.  The hypotheses of
@@ -466,12 +456,12 @@ $\sh{F}_0(n)$ \sref[0]{0.5.2.3}.  Since $\mathfrak{J}$ is
 contained in the maximal ideal of the local ring at every point
 of $\mathfrak{X}$, Nakayama's lemma applied to those local rings
 shows that the $s_i$ generate $\sh{F}(n)$
-\sref[0]{0.5.1.1}.
+\sref[0\textsubscript{\mdseries I}]{0.5.1.1}.
 \end{proof}
 
 \begin{env}[5.2.5]
 \label{III.5.2.5}
-\emph{Proof of the existence theorem: the projective case.}
+\textbf{Proof of the existence theorem: the projective case.}
 With the notation of \sref{III.5.1.4}, suppose that $f$ is
 projective, so that there is an ample $\sh{O}_X$-module $\sh{L}$
 \sref[I]{I.5.5.4}.  By definition, $X_n=\widehat{X}\times_{\widehat{Y}}Y_n$
@@ -491,7 +481,7 @@ completion of $(\sh{L}^{\otimes(-n)})^k$
 \sref[I]{I.10.8.10}, and is therefore algebraizable.  Let
 $u:\sh{G}\to\sh{F}$ be the canonical surjection, and put
 $\sh{H}=\Ker(u)$; this is a coherent
-$\sh{O}_{\widehat{X}}$-module \sref[0]{0.5.3.4}.  Applying the same
+$\sh{O}_{\widehat{X}}$-module \sref[0\textsubscript{\mdseries I}]{0.5.3.4}.  Applying the same
 argument to $\sh{H}$, we find an algebraizable
 $\sh{O}_{\widehat{X}}$-module $\sh{K}$ and a homomorphism
 $v:\sh{K}\to\sh{G}$ such that $\sh{H}=\Im(v)$.  Thus
@@ -501,7 +491,7 @@ $\sh{F}=\Coker(v)$, and $\sh{F}$ is algebraizable by
 
 \begin{env}[5.2.6]
 \label{III.5.2.6}
-\emph{Proof of the existence theorem: the quasi-projective case.}
+\textbf{Proof of the existence theorem: the quasi-projective case.}
 Retain the notation of \sref{III.5.1.4}, and now suppose that $f$
 is quasi-projective.  There is a projective morphism
 $g:Z\to Y$ such that $X$ is identified with the $Y$-prescheme
@@ -519,8 +509,8 @@ proper.  Hence $T'$ is proper over $Y$, and is therefore closed in
 $Z'$ \sref[II]{II.5.4.10}.  It follows that $\sh{F}'$ is induced
 on $\widehat{X}$ by the $\sh{O}_{\widehat{Z}}$-module $\sh{G}'$
 obtained by gluing $\sh{F}'$, on the open $\widehat{X}$, with the
-zero sheaf on the open $\widehat{Z}-T'$; the two sheaves agree on
-their intersection $\widehat{X}-T'$.
+zero sheaf on the open $\widehat Z\setmin T'$; the two sheaves agree on
+their intersection $\widehat X\setmin T'$.
 
 The module $\sh{G}'$ is coherent.  By \sref{III.5.2.5}, there is a
 coherent $\sh{O}_Z$-module $\sh{G}$ such that
@@ -622,14 +612,14 @@ subset of $X$, let $f:Z\to X$ be a proper morphism, and put
 \]
 Let $\widehat{f}:\widehat{Z}\to\widehat{X}$ be the extension of $f$
 to the completions.  Let $\sh{M}$ be a coherent ideal of
-$\sh{O}_X$ such that, if $U=X-\Supp(\sh{O}_X/\sh{M})$,
+$\sh{O}_X$ such that, if $U=X\setmin\Supp(\sh{O}_X/\sh{M})$,
 the restriction $f^{-1}(U)\to U$ of $f$ is an isomorphism.  Then,
 for every coherent $\sh{O}_{\widehat{X}}$-module $\sh{F}$, there is
 an integer $n>0$ such that the kernel and cokernel of the canonical
 homomorphism $\rho_{\sh{F}}:
 \sh{F}\longrightarrow
 \widehat{f}_*\bigl(\widehat{f}^{\,*}(\sh{F})\bigr)$
-\sref[0]{0.4.4.3} are annihilated by
+\sref[0\textsubscript{\mdseries I}]{0.4.4.3} are annihilated by
 $\widehat{\sh{M}}^{\,n}$.
 \end{lemma}
 
@@ -684,16 +674,12 @@ $\sh{F}=\widehat{\sh{G}}$, where $\sh{G}$ is the coherent
 $\sh{O}_X$-module $\widetilde{N}$ \sref[I]{I.10.10.5}, and
 \[
   \widehat{f}^{\,*}(\sh{F})
-  =\widehat{f^*(\sh{G})}
+  =(f^*(\sh{G}))^{\widehat{\,}}
 \]
 \sref[I]{I.10.9.5}.  By the first comparison theorem
 \sref{III.4.1.5},
-\[
-  \widehat{f}_*
-  \bigl(\widehat{f^*(\sh{G})}\bigr)
-  \simeq
-  \widehat{f_*\bigl(f^*(\sh{G})\bigr)},
-\]
+$\widehat{f}_*((f^*(\sh{G}))^{\widehat{\,}})$ is canonically identified with
+$(f_*(f^*(\sh{G})))^{\widehat{\,}}$,
 and, by \sref{III.5.1.3}, the canonical homomorphism
 $\rho_{\sh{F}}$ is precisely $\widehat{\rho}_{\sh{G}}$.
 
@@ -710,65 +696,56 @@ zero.  There is therefore an integer $n>0$ such that $\sh{M}^n\sh{P}=\sh{M}^n\sh
 
 \begin{env}[5.3.5]
 \label{III.5.3.5}
-\emph{End of the proof of the existence theorem.}
-Retain the hypotheses of \sref{III.5.1.4}.  We use Noetherian
-induction \sref[0]{0.2.2.2}, assuming the theorem known for every
-closed subprescheme $T$ of $X$ whose underlying space is distinct
-from $X$; here $\widehat{T}$ denotes the completion of $T$ along
-$T\cap X'$.  We may suppose that $X$ is nonempty.
+\textbf{End of the proof of the existence theorem.}
 
-Since $f$ is separated and of finite type, Chow's lemma
-\sref[II]{II.5.6.1} gives a $Y$-scheme $Z$ and a $Y$-morphism
-$g:Z\to X$ such that the structural morphism $h:Z\to Y$ is
-quasi-projective, $g$ is projective and surjective, and there is a
-nonempty open subset $U$ of $X$ for which
-$g^{-1}(U)\to U$ is an isomorphism.  Let $\sh{M}$ be a coherent
-ideal of $\sh{O}_X$ defining a closed subprescheme with underlying
-space $X\setmin U$ \sref[I]{I.5.2.2}, and let $\sh{F}$ be a coherent
-$\sh{O}_{\widehat{X}}$-module whose support $E$ is proper over $Y$.
-Denote by $\widehat{Z}$ the completion of $Z$ along
-$h^{-1}(Y')$, and by
-$\widehat{g}:\widehat{Z}\to\widehat{X}$ the extension of $g$ to
-the completions.
-
-The module $\widehat{g}^{\,*}(\sh{F})$ is a coherent
+The hypotheses being those of \sref{III.5.1.4}, we shall use the
+principle of Noetherian induction \sref[0\textsubscript{\mdseries I}]{0.2.2.2}, thus supposing
+the theorem true for every closed subprescheme $T$ of $X$ whose
+underlying space is distinct from $X$ (the completion $\widehat{T}$
+being of course the completion of $T$ along $T\cap X'$).  We may
+suppose $X$ nonempty.  Since $f$ is separated and of finite type, we
+may apply Chow's lemma \sref[II]{II.5.6.1}: there therefore exist a
+$Y$-scheme $Z$ and a $Y$-morphism $g:Z\to X$ such that the structural
+morphism $h:Z\to Y$ is quasi-projective, the morphism $g$ projective
+and surjective, and moreover a nonempty open subset $U$ of $X$ such
+that the restriction $g^{-1}(U)\to U$ is an isomorphism.  Let $\sh{M}$
+be a coherent ideal of $\sh{O}_X$ defining a closed subprescheme with
+underlying space $X\setmin U$ \sref[I]{I.5.2.2}, and let $\sh{F}$ be a
+coherent $\sh{O}_{\widehat{X}}$-module whose support $E$ is proper over
+$Y$; denote by $\widehat{Z}$ the completion of $Z$ along $h^{-1}(Y')$,
+and by $\widehat{g}:\widehat{Z}\to\widehat{X}$ the extension of $g$ to
+the completions.  Then $\widehat{g}^{\,*}(\sh{F})$ is a coherent
 $\sh{O}_{\widehat{Z}}$-module whose support is contained in
-$g^{-1}(E)$ and is therefore proper over $Y$, since $g$ is
-projective and hence proper \sref[II]{II.5.4.6}.  Since $h$ is
+$g^{-1}(E)$ and is consequently proper over $Y$, since $g$ is
+projective, hence proper \sref[II]{II.5.4.6}.  Since $h$ is
 quasi-projective, $\widehat{g}^{\,*}(\sh{F})$ is algebraizable by
-\sref{III.5.2.6}.
+virtue of \sref{III.5.2.6}.
 \oldpage[III]{156}
-It follows from \sref{III.5.3.3}, since $g$ is proper, that $\widehat{g}_*
-\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$
-is an algebraizable $\sh{O}_{\widehat{X}}$-module.
+We conclude that $\widehat{g}_*\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$
+is an algebraizable $\sh{O}_{\widehat{X}}$-module \sref{III.5.3.3},
+since $g$ is proper.  We can now apply to $\sh{F}$ and to $g$ the
+result of \sref{III.5.3.4}: the kernel $\sh{P}$ and the cokernel
+$\sh{R}$ of the homomorphism $\rho_{\sh{F}}:\sh{F}\to
+\widehat{g}_*\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$ are annihilated by
+a power $\widehat{\sh{M}}^{\,n}$; let $T$ be the closed subprescheme
+of $X$ defined by $\sh{M}^n$, having $X\setmin U$ as underlying space,
+and $j:T\to X$ the canonical injection, so that the extension to the
+completions $\widehat{j}:\widehat{T}\to\widehat{X}$ is the canonical
+injection \sref[I]{I.10.14.7}.  We may therefore write
+$\sh{P}=\widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{P})\bigr)$ and
+$\sh{R}=\widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{R})\bigr)$, and since
+$U$ is not empty, it follows from the induction hypothesis that
+$\widehat{j}^{\,*}(\sh{P})$ and $\widehat{j}^{\,*}(\sh{R})$ are
+algebraizable $\sh{O}_{\widehat{T}}$-modules; by virtue of
+\sref{III.5.3.3}, $\sh{P}$ and $\sh{R}$ are algebraizable, and we can
+then apply \sref{III.5.3.2}, which finally proves that $\sh{F}$ is
+algebraizable.
 
-Apply \sref{III.5.3.4} to $\sh{F}$ and $g$.  The kernel $\sh{P}$
-and cokernel $\sh{R}$ of $\rho_{\sh{F}}:
-\sh{F}\longrightarrow
-\widehat{g}_*\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$
-are annihilated by a power $\widehat{\sh{M}}^{\,n}$.  Let $T$ be
-the closed subprescheme of $X$ defined by $\sh{M}^n$, whose
-underlying space is $X\setmin U$, and let $j:T\to X$ be the canonical
-injection.  Its extension
-$\widehat{j}:\widehat{T}\to\widehat{X}$ is the canonical injection
-\sref[I]{I.10.14.7}, and we may write
-\[
-  \sh{P}=
-  \widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{P})\bigr),
-  \qquad
-  \sh{R}=
-  \widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{R})\bigr).
-\]
-Since $U$ is nonempty, the induction hypothesis shows that
-$\widehat{j}^{\,*}(\sh{P})$ and
-$\widehat{j}^{\,*}(\sh{R})$ are algebraizable
-$\sh{O}_{\widehat{T}}$-modules.  Lemma \sref{III.5.3.3} then shows
-that $\sh{P}$ and $\sh{R}$ are algebraizable, and
-\sref{III.5.3.2} finally proves that $\sh{F}$ is algebraizable.
+\hfill Q.E.D.
 \end{env}
 
 
-\subsection{Application: comparison between morphisms of ordinary preschemes and morphisms of formal preschemes. Algebraizable formal preschemes}
+\subsection{Application: comparison between morphisms of ordinary schemes and morphisms of formal schemes. Algebraizable formal schemes}
 \label{subsection:III.5.4}
 
 \begin{theorem}[5.4.1]
@@ -793,13 +770,13 @@ completions.  Then the map $f\leadsto\widehat{f}$ is a bijection
 \end{theorem}
 
 \begin{proof}
-We first prove injectivity.  Suppose that $f,g:X\to Y$ are
-$S$-morphisms such that $\widehat{f}=\widehat{g}$.  There is then
+We first show that $f\leadsto\widehat{f}$ is injective.  Suppose indeed that $f,g:X\to Y$ are
+two $S$-morphisms such that $\widehat{f}=\widehat{g}$.  There is then
 an open neighbourhood $V$ of $X'=u^{-1}(S')$ on which $f$ and $g$
 coincide \sref[I]{I.10.9.4}.  Since $u$ is closed,
 \sref{III.5.1.3.1} gives $V=X$, and hence $f=g$.
 
-We now prove surjectivity.  Let
+We now prove that $f\leadsto\widehat{f}$ is surjective; so let
 $h:\widehat{X}\to\widehat{Y}$ be an
 $\widehat{S}$-morphism.  Put $Z=X\times_S Y$,
 and denote the canonical projections by $p:Z\to X$ and
@@ -820,8 +797,8 @@ $\widehat{Z}$ associated with this immersion, and let
 $j:\mathfrak{T}\to\widehat{Z}$ be the canonical injection.  Thus $\Gamma_h=j\circ w$,
 where $w:\widehat{X}\to\mathfrak{T}$ is an isomorphism
 \sref[I]{I.10.14.3} whose inverse is
-$\widehat{p}\circ j$.  Moreover, $\mathfrak{T}$ is proper over
-$\widehat{S}$ because $\widehat{X}$ is.  It follows from
+$\widehat{p}\circ j$.  Moreover, $\mathfrak{T}$ is obviously proper over
+$\widehat{S}$, since $\widehat{X}$ is.  It follows from
 \sref{III.5.1.8} that there is a closed subprescheme $T$ of $Z$
 such that $\mathfrak{T}
 =\widehat{T}
@@ -829,16 +806,16 @@ such that $\mathfrak{T}
 and that $j=\widehat{i}$, where $i:T\to Z$ is the canonical
 injection \sref[I]{I.10.14.7}.
 
-The morphism $p\circ i:T\to X$ is an isomorphism: its extension to
-the completions is the isomorphism
-$\widehat{p}\circ\widehat{i}$, and it suffices to apply
+Then $p\circ i:T\to X$ is an isomorphism, since this is so for
+$(p\circ i)^{\widehat{\,}}=\widehat{p}\circ\widehat{i}$ by hypothesis,
+and it suffices to apply
 \sref{III.4.6.8}, noting as above that $S$ is the only
 neighbourhood of $S'$ in $S$.
 \oldpage[III]{157}
-Let $g:X\to T$ be the inverse of $p\circ i$, and put $f=q\circ i\circ g$.
-Then $f:X\to Y$ has graph $\Gamma_f=i\circ g$.  Since
+Let $g:X\to T$ be the inverse of $p\circ i$, and put $f=q\circ i\circ g$,
+which is a morphism $X\to Y$ whose graph is by definition $\Gamma_f=i\circ g$.  Since
 $\widehat{g}$ is the inverse of
-$(p\circ i)^{\widehat{\,}}$, we have $(\Gamma_f)^{\widehat{\,}}
+$(p\circ i)^{\widehat{\,}}=w$, we have $(\Gamma_f)^{\widehat{\,}}
 =\widehat{i}\circ\widehat{g}
 =j\circ w
 =\Gamma_h$.
@@ -847,21 +824,20 @@ But $(\Gamma_f)^{\widehat{\,}}=\Gamma_{\widehat{f}}$
 proof.
 \end{proof}
 
-In categorical language, the functor
-$X\leadsto\widehat{X}$ is therefore fully faithful
-\sref[0]{0.8.1.6} from the category of preschemes proper over
-$\Spec(A)$ to the category of formal preschemes proper over
-$\Spf(A)$, for every adic Noetherian ring $A$.  It consequently
-gives an equivalence between the first category and a full
-subcategory of the second.  The objects of this subcategory will
-henceforth be called \emph{algebraizable formal preschemes}.  For
-such a formal prescheme $\mathfrak{X}$, there is an ordinary
-prescheme $X$, proper over $\Spec(A)$ and determined up to unique
-isomorphism, such that $\mathfrak{X}\simeq\widehat{X}$.
+We can therefore say, in the language of categories, that the functor
+$X\leadsto\widehat{X}$ is \emph{fully faithful}
+\sref[0]{0.8.1.6} from the category of schemes proper over
+$\Spec(A)$ to the category of formal schemes proper over
+$\Spf(A)$, for every adic Noetherian ring $A$; it consequently
+establishes an equivalence between the first of these categories and a
+\emph{subcategory} of the second; the objects of the latter will
+be called \emph{algebraizable formal schemes}.  For
+such a scheme $\mathfrak{X}$, there exists an ordinary
+scheme $X$, proper over $\Spec(A)$, determined up to unique
+isomorphism, such that $\mathfrak{X}$ is isomorphic to $\widehat{X}$.
 
-\begin{env}[5.4.2]
+\begin{scholium}[5.4.2]
 \label{III.5.4.2}
-\emph{Scholium.}
 With the notation of \sref{III.5.4.1}, put
 \[
   S_n=\Spec(A/\mathfrak{J}^{n+1}),\qquad
@@ -872,18 +848,18 @@ It follows from \sref{III.5.4.1} and \sref[I]{I.10.12.3} that
 giving an $S$-morphism $f:X\to Y$ is equivalent to giving an adic
 inductive $(S_n)$-system \sref[I]{I.10.12.2} of
 $S_n$-morphisms $f_n:X_n\to Y_n$.
-\end{env}
+\end{scholium}
 
 \begin{remark}[5.4.3]
 \label{III.5.4.3}
 Contrary to what the existence theorem \sref{III.5.1.6} might
-suggest, there are formal preschemes proper over $\Spf(A)$ which
-are \emph{not algebraizable}, just as there are compact analytic
-spaces which do not arise from complex algebraic varieties.  We
-shall encounter such preschemes later in the ``theory of moduli,''
-which, when the base field is $\mathbb{C}$, deals precisely with
+suggest, there are formal schemes proper over $\Spf(A)$ which
+are \emph{not algebraizable} (just as there are compact analytic
+spaces which do not arise from complex algebraic varieties).  We
+shall encounter such schemes later in the ``theory of moduli,''
+which deals precisely (when the base field is $\mathbb{C}$) with
 infinitesimal variations of the complex structure of a complete
-algebraic variety; it is well known that such variations can give
+algebraic variety, and it is well known that such variations can give
 rise to analytic varieties which are not algebraic.
 \end{remark}
 
@@ -896,7 +872,7 @@ $\mathfrak{S}=\Spf(A)$, and let
   \qquad
   h:\mathfrak{Y}\to\mathfrak{S}
 \]
-be two proper morphisms of formal preschemes.  Let
+be two proper morphisms of formal schemes.  Let
 $f:\mathfrak{X}\to\mathfrak{Y}$ be an
 $\mathfrak{S}$-morphism.  If $f$ is finite and
 $\mathfrak{Y}$ is algebraizable, then $\mathfrak{X}$ is
@@ -904,25 +880,26 @@ algebraizable.
 \end{proposition}
 
 \begin{proof}
-The hypotheses on $g$ and $h$ already imply that $f$ is proper
-\sref{III.3.4.1}; for $f$ to be finite, it is enough that the fibre
-$f^{-1}(y)$ be finite for every $y\in\mathfrak{Y}$
-(0,~4.8.11).  By hypothesis, $\sh{B}=f_*(\sh{O}_{\mathfrak{X}})$
+Note that the hypotheses on $g$ and $h$ already imply that $f$ is proper
+\sref{III.3.4.1}, and that for $f$ to be finite, it is enough that, for every
+$y\in\mathfrak{Y}$, the fibre $f^{-1}(y)$ be \emph{finite}
+\sref{III.4.8.11}.  The hypothesis implies that $\sh{B}=f_*(\sh{O}_{\mathfrak{X}})$
 is a coherent $\sh{O}_{\mathfrak{Y}}$-algebra
-(0,~4.8.6).  Write
+\sref{III.4.8.6}; hence it follows from the existence theorem that, if
 $\mathfrak{Y}=\widehat{Y}$ and $h=\widehat{w}$, where
-$w:Y\to\Spec(A)$ is a proper morphism of ordinary preschemes.  The
-existence theorem gives a coherent $\sh{O}_Y$-algebra $\sh{C}$
-such that $\sh{B}=\widehat{\sh{C}}$.  Put $X=\Spec(\sh{C})$,
-and let $u:X\to Y$ be the structural morphism.  The definition of
-$\mathfrak{X}$ from $\sh{B}$ (0,~4.8.7) then shows that
+$w:Y\to\Spec(A)$ is a proper morphism of ordinary schemes, there
+exists a coherent $\sh{O}_Y$-algebra $\sh{C}$
+such that $\sh{B}=\widehat{\sh{C}}$.  Let $X=\Spec(\sh{C})$,
+and let $u:X\to Y$ be the structural morphism; then it follows
+immediately from the definition of
+$\mathfrak{X}$ in terms of $\sh{B}$ \sref{III.4.8.7} that
 $\mathfrak{X}$ is canonically isomorphic to $\widehat{X}$ and
-that $f$ is identified with $\widehat{u}$; it is enough to check
-this when $Y$ is affine.
-\end{proof}
+that $f$ is identified with $\widehat{u}$ (to see this, it suffices
+to consider the case where $Y$ is affine).
 
-Proposition \sref{III.5.1.8} is a special case of
+Note that \sref{III.5.1.8} is a special case of
 \sref{III.5.4.4}.
+\end{proof}
 
 \begin{theorem}[5.4.5]
 \label{III.5.4.5}
@@ -933,7 +910,7 @@ of definition of $A$, put
   \mathfrak{S}=\widehat{S}=\Spf(A),
 \]
 and let $f:\mathfrak{X}\to\mathfrak{S}$ be a proper morphism of
-formal preschemes.  Put
+formal schemes.  Put
 \[
   S_k=\Spec(A/\mathfrak{J}^{k+1}),\qquad
   X_k=\mathfrak{X}\times_{\mathfrak{S}}S_k,
@@ -945,111 +922,81 @@ and, for every $\sh{O}_{\mathfrak{X}}$-module $\sh{F}$, put $\sh{F}_k
 Let $\sh{L}$ be an invertible
 $\sh{O}_{\mathfrak{X}}$-module, and suppose that $\sh{L}_0=\sh{L}/\mathfrak{J}\sh{L}$
 is an ample $\sh{O}_{X_0}$-module.  Then $\mathfrak{X}$ is
-algebraizable.  Moreover, if $X$ is a proper $S$-prescheme such
-that $\mathfrak{X}\simeq\widehat{X}$, there is an ample
+algebraizable, and if $X$ is a proper $S$-scheme such
+that $\mathfrak{X}$ is isomorphic to $\widehat{X}$, there exists an ample
 $\sh{O}_X$-module $\sh{M}$ such that
-$\sh{L}\simeq\widehat{\sh{M}}$; in particular, $X$ is projective
-over $S$.
+$\sh{L}$ is isomorphic to $\widehat{\sh{M}}$ \textup{(which implies that
+$X$ is \emph{projective} over $S$)}.
 \end{theorem}
 
 \begin{proof}
-Apply \sref{III.5.2.3} with
-$\sh{F}=\sh{O}_{\mathfrak{X}}$.  There is an integer $n_0$ such
+Let us apply \sref{III.5.2.3} to
+$\sh{F}=\sh{O}_{\mathfrak{X}}$: there therefore exists an integer $n_0$ such
 that, for $n\geq n_0$, the canonical homomorphism $\Gamma(\mathfrak{X},\sh{L}^{\otimes n})
-\longrightarrow
+\to
 \Gamma(X_0,\sh{L}_0^{\otimes n})$
-is surjective.  Choose $n\geq n_0$ large enough that
-$\sh{L}_0^{\otimes n}$ is very ample for $S_0$
-\sref[II]{II.4.5.10}.  Since
+is \emph{surjective}.  We may suppose $n\geq n_0$ chosen large enough that
+$\sh{L}_0^{\otimes n}$ is \emph{very ample} for $S_0$
+\sref[II]{II.4.5.10}.  Since the morphism
 $f_0:X_0\to S_0$ is proper,
-$\Gamma(X_0,\sh{L}_0^{\otimes n})$ is a finite-type $A$-module
-\sref{III.3.2.1}.  There is consequently a finite-type
-$A$-submodule $E\subset\Gamma(\mathfrak{X},\sh{L}^{\otimes n})$
-whose image in $\Gamma(X_0,\sh{L}_0^{\otimes n})$ is the whole
-module.
-
-For every $k\geq0$, consider the homomorphism $u_k:
-E/\mathfrak{J}^{k+1}E
-\longrightarrow
+$\Gamma(X_0,\sh{L}_0^{\otimes n})$ is an $A$-module of finite type
+\sref{III.3.2.1}, so there exists a sub-$A$-module of finite type $E$ of
+$\Gamma(\mathfrak{X},\sh{L}^{\otimes n})$ whose image in
+$\Gamma(X_0,\sh{L}_0^{\otimes n})$ is the whole of the latter module.
+This being so, for every $k\geq0$, consider the homomorphism
+$u_k:E/\mathfrak{J}^{k+1}E\longrightarrow
 \Gamma(X_k,\sh{L}_k^{\otimes n})$
-induced by the canonical injection
-$E\to\Gamma(\mathfrak{X},\sh{L}^{\otimes n})$.  The module
-$(f_k)_*(\sh{L}_k^{\otimes n})$ is quasi-coherent, and $\Gamma\bigl(S_k,(f_k)_*(\sh{L}_k^{\otimes n})\bigr)
-=
-\Gamma(X_k,\sh{L}_k^{\otimes n})$.
-Thus $u_k$ defines a homomorphism
-\[
-  \widetilde{u}_k:
-  \widetilde{E/\mathfrak{J}^{k+1}E}
-  \longrightarrow
-  (f_k)_*(\sh{L}_k^{\otimes n}),
-\]
-and hence, by adjunction, a homomorphism
-\[
-  \widetilde{u}_k^{\,\sharp}:
-  f_k^*\bigl(\widetilde{E/\mathfrak{J}^{k+1}E}\bigr)
-  \longrightarrow
-  \sh{L}_k^{\otimes n}.
-\]
-Put
-\[
-  \sh{G}_k=
-  f_k^*\bigl(\widetilde{E/\mathfrak{J}^{k+1}E}\bigr).
-\]
-We have
-$\sh{G}_0=\sh{G}_k/\mathfrak{J}\sh{G}_k$
-\sref[I]{I.9.1.5}, and $\widetilde{u}_0^{\,\sharp}:
-\sh{G}_0/\mathfrak{J}\sh{G}_0
-\longrightarrow
-\sh{L}_0^{\otimes n}/
-\mathfrak{J}\sh{L}_0^{\otimes n}$
-is obtained from $\widetilde{u}_k^{\,\sharp}$ by passage to the
-quotients.
-
-By the definition of $E$, $\widetilde{u}_0^{\,\sharp}$ is the
-canonical homomorphism $\sigma:
-f_0^*\bigl((f_0)_*(\sh{L}_0^{\otimes n})\bigr)
-\longrightarrow
-\sh{L}_0^{\otimes n}$.
-Since $\sh{L}_0^{\otimes n}$ is very ample,
-$\widetilde{u}_0^{\,\sharp}$ is surjective
-\sref[II]{II.4.4.3}.  Nakayama's lemma then shows that every
-$\widetilde{u}_k^{\,\sharp}$ is surjective.
-
-Each $\widetilde{u}_k^{\,\sharp}$ therefore defines
-\sref[II]{II.4.2.2} an $S_k$-morphism $g_k:X_k\longrightarrow
-P_k=\mathbf{P}(E/\mathfrak{J}^{k+1}E)$.
-For $h\leq k$, $P_h=P_k\times_{S_k}S_h$
-by \sref[II]{II.4.1.3}.  The relations among the
-$\widetilde{u}_k^{\,\sharp}$ and \sref[II]{II.4.2.10} show that
-$(g_k)$ is an adic inductive $(S_k)$-system
-\sref[I]{I.10.12.2}.  The $g_k$ consequently define an
-$\mathfrak{S}$-morphism of formal preschemes $g:\mathfrak{X}\longrightarrow\mathfrak{P}$,
-where $\mathfrak{P}$ is the inductive limit of the system $(P_k)$,
-or equivalently the completion $\widehat{P}$ of
-$P=\mathbf{P}(E)$.  The very ampleness of
-$\sh{L}_0^{\otimes n}$ implies that $g_0$ is a closed immersion
-\sref[II]{II.4.4.3}.  Hence $g$ is a closed immersion of formal
-preschemes (0,~4.8.10), and $\mathfrak{X}$ is algebraizable
-by \sref{III.5.1.8}.
-
-The existence theorem \sref{III.5.1.6} now shows that $\sh{L}$ is
-the completion $\widehat{\sh{M}}$ of an invertible
-$\sh{O}_X$-module $\sh{M}$.  Moreover,
-$\sh{L}^{\otimes n}$ is the completion of
+deduced from the canonical injection
+$E\to\Gamma(\mathfrak{X},\sh{L}^{\otimes n})$.  Note that
+$(f_k)_*(\sh{L}_k^{\otimes n})$ is quasi-coherent, and since
+$\Gamma(S_k,(f_k)_*(\sh{L}_k^{\otimes n}))
+=\Gamma(X_k,\sh{L}_k^{\otimes n})$, $u_k$ defines a homomorphism
+$\widetilde{u}_k:(E/\mathfrak{J}^{k+1}E)^\sim
+\longrightarrow(f_k)_*(\sh{L}_k^{\otimes n})$,
+and consequently also a homomorphism
+$\widetilde{u}_k^{\,\sharp}:
+f_k^*((E/\mathfrak{J}^{k+1}E)^\sim)\longrightarrow
+\sh{L}_k^{\otimes n}$.
+Moreover, if we put
+$\sh{G}_k=f_k^*((E/\mathfrak{J}^{k+1}E)^\sim)$, we have
+$\sh{G}_0=\sh{G}_k/\mathfrak{J}\sh{G}_k$ \sref[I]{I.9.1.5}, so
+$\widetilde{u}_0^{\,\sharp}:\sh{G}_k/\mathfrak{J}\sh{G}_k
+\to\sh{L}_k^{\otimes n}/\mathfrak{J}\sh{L}_k^{\otimes n}$ is deduced
+from $\widetilde{u}_k^{\,\sharp}$ by passage to the quotients.  Now, by the
+definition of $E$, $\widetilde{u}_0^{\,\sharp}$ is none other than the
+canonical homomorphism
+$\sigma:f_0^*((f_0)_*(\sh{L}_0^{\otimes n}))\longrightarrow
+\sh{L}_0^{\otimes n}$,
+and the hypothesis that $\sh{L}_0^{\otimes n}$ is very ample implies that
+$\widetilde{u}_0^{\,\sharp}$ is \emph{surjective} \sref[II]{II.4.4.3}; it then
+follows from Nakayama's lemma that each of the $\widetilde{u}_k^{\,\sharp}$ is
+also \emph{surjective}.
+Each of the $\widetilde{u}_k^{\,\sharp}$ therefore defines \sref[II]{II.4.2.2} an
+$S_k$-morphism
+$g_k:X_k\longrightarrow P_k=\mathbf{P}(E/\mathfrak{J}^{k+1}E)$,
+and since $P_h=P_k\times_{S_k}S_h$ for $h\leq k$ by virtue of \sref[II]{II.4.1.3},
+$(g_k)$ is an $(S_k)$-\emph{adic inductive system} \sref[I]{I.10.12.2} by virtue of
+the relations between the $\widetilde{u}_k^{\,\sharp}$ and of \sref[II]{II.4.2.10}.
+The $g_k$ therefore define an $\mathfrak{S}$-morphism of formal schemes
+$g:\mathfrak{X}\to\mathfrak{P}$, where $\mathfrak{P}$ is the inductive limit of
+the system $(P_k)$, or again the completion $\widehat{P}$, where
+$P=\mathbf{P}(E)$.  Moreover, the hypothesis that $\sh{L}_0^{\otimes n}$ is very
+ample implies that $g_0$ is a \emph{closed immersion} \sref[II]{II.4.4.3}; we
+conclude that $g$ is a closed immersion of formal schemes \sref{III.4.8.10},
+so $\mathfrak{X}$ is algebraizable \sref{III.5.1.8}.  The fact that
+$\sh{L}$ is isomorphic to the completion $\widehat{\sh{M}}$ of an invertible
+$\sh{O}_X$-module then follows from the existence theorem \sref{III.5.1.6}.
+Moreover, $\sh{L}^{\otimes n}$ is then the completion of
 $\sh{M}^{\otimes n}$ \sref[I]{I.10.8.10}, and the homomorphisms
-$\widetilde{u}_k^{\,\sharp}$ define a unique homomorphism $v:f^*(\widetilde{E})
-\longrightarrow
-\sh{M}^{\otimes n}$
-\sref{III.5.1.7}.  Since the
-$\widetilde{u}_k^{\,\sharp}$ are surjective,
-$\widehat{v}$ is surjective \sref[I]{I.10.11.5}, and therefore so
-is $v$ \sref{III.5.1.3}.  Let $r:X\to P$ be the morphism defined
-by $v$ \sref[II]{II.4.2.2}.  Its extension to the completions is
-$g$.  Since $g$ is a closed immersion, so is $r$, by
-\sref{III.5.1.8} and \sref{III.5.4.1}.  It follows that
-$\sh{M}^{\otimes n}$ is very ample \sref[II]{II.4.4.6}, and hence
-that $\sh{M}$ is ample \sref[II]{II.4.5.10}.
+$\widetilde{u}_k^{\,\sharp}$ define a well-determined homomorphism
+$v:f^*(\widetilde{E})\longrightarrow\sh{M}^{\otimes n}$
+\sref{III.5.1.7}; moreover, since $\widetilde{u}_0^{\,\sharp}$ is surjective,
+so is $\widehat{v}$ \sref[I]{I.10.11.5}, hence so is $v$ \sref{III.5.1.3};
+furthermore, the morphism $r:X\to P$ defined by $v$ \sref[II]{II.4.2.2} has
+$g$ as its extension to the completions, and since $g$ is a closed immersion,
+so is $r$, by \sref{III.5.1.8} and \sref{III.5.4.1}; we conclude that
+$\sh{M}^{\otimes n}$ is very ample \sref[II]{II.4.4.6} and $\sh{M}$ is ample
+\sref[II]{II.4.5.10}.
 \end{proof}
 
 \begin{remark}[5.4.6]
@@ -1057,7 +1004,7 @@ that $\sh{M}$ is ample \sref[II]{II.4.5.10}.
 Let $A$ be an adic Noetherian ring, put
 $\mathfrak{S}=\Spf(A)$, and let
 $f:\mathfrak{X}\to\mathfrak{S}$ be a proper morphism of formal
-preschemes.  Let $\sh{N}$ be the coherent ideal of
+schemes.  Let $\sh{N}$ be the coherent ideal of
 $\sh{O}_{\mathfrak{X}}$ such that, for every affine formal open
 subset $U$ of $\mathfrak{X}$, $\Gamma(U,\sh{N})$
 is the nilradical of
@@ -1065,24 +1012,22 @@ $\Gamma(U,\sh{O}_{\mathfrak{X}})$.  The existence of this ideal
 follows readily from \sref[I]{I.10.10.2} and from the fact that
 every ring homomorphism $B\to C$ sends the nilradical of $B$ into
 that of $C$.  Let $\mathfrak{X}'$ be the closed formal
-subprescheme of $\mathfrak{X}$ defined by $\sh{N}$
-\sref[I]{I.10.14.2}.  It would be interesting to know whether
-algebraizability of $\mathfrak{X}'$ implies algebraizability of
-$\mathfrak{X}$ itself.
-
-One would doubtless arrive at a solution of this problem if one
-knew how to classify, for example by invariants
+subscheme of $\mathfrak{X}$ defined by $\sh{N}$
+\sref[I]{I.10.14.2}; it would be interesting to know whether,
+when $\mathfrak{X}'$ is algebraizable, $\mathfrak{X}$ itself is
+algebraizable.  One would doubtless arrive at a solution of this
+problem if one knew how to classify (for example by means of invariants
 \oldpage[III]{159}
-of a cohomological nature, the \emph{extensions} of a structural
-sheaf $\sh{O}_{\mathfrak{X}}$---for an ordinary or a formal
-prescheme---by a square-zero ideal.  Equivalently, these are the
+of a cohomological nature) the \emph{extensions} of a structural
+sheaf $\sh{O}_{\mathfrak{X}}$ (for an ordinary or a formal
+prescheme) by a square-zero ideal, in other words the
 $\sh{O}_{\mathfrak{X}}$-algebras $\sh{A}$ such that
-$\sh{O}_{\mathfrak{X}}\simeq\sh{A}/\sh{J}$, where $\sh{J}$ is a
+$\sh{O}_{\mathfrak{X}}$ is isomorphic to $\sh{A}/\sh{J}$, where $\sh{J}$ is a
 square-zero ideal of $\sh{A}$.
 \end{remark}
 
 
-\subsection{A decomposition of certain preschemes}
+\subsection{A decomposition of certain schemes}
 \label{subsection:III.5.5}
 
 \begin{proposition}[5.5.1]
@@ -1101,23 +1046,21 @@ $Y$, such that $Z\cap X_0=Z_0$.
 
 \begin{proof}
 By hypothesis, there is an open subset $T$ of $X$ such that
-$T\cap X_0=Z_0$.  Let $\widehat{T}$ be the completion along $Z_0$
-of the prescheme induced by $X$ on $T$.  The support of
-$\sh{O}_{\widehat{T}}$ is $Z_0$, which is proper over $Y_0$;
-hence $\widehat{T}$ is proper over
-$\widehat{Y}=\Spf(A)$ \sref{III.3.4.1}.
-
-It follows from \sref{III.5.1.8} that there is a closed
-subprescheme $Z$ of $T$, proper over $Y$, such that, if
-$i:Z\to T$ is the canonical injection, then $\widehat{i}:\widehat{Z}\longrightarrow\widehat{T}$
-is an isomorphism; here $\widehat{Z}$ is the completion of $Z$
-along $Z_0$.  By \sref{III.4.6.8}, there is an open neighbourhood
-$V$ of $Z_0$ in $T$ such that
-$i^{-1}(V)\to V$ is an isomorphism.  But $i^{-1}(V)$ is a
-neighbourhood of $Z_0$ in $Z$, and is therefore equal to $Z$ by
-\sref{III.5.1.3.1}.  Thus $Z$ is open in $T$, and hence in $X$.
-It is also closed in $X$, since $Z$ is proper over $Y$ and $X$ is
-separated over $Y$.  This proves the proposition.
+$T\cap X_0=Z_0$; let $\widehat{T}$ be the completion along $Z_0$
+of the scheme induced by $X$ on the open set $T$; since the support of
+$\sh{O}_{\widehat{T}}$ is $Z_0$, which is proper over $Y_0$,
+$\widehat{T}$ is proper over
+$\widehat{Y}=\Spf(A)$ \sref{III.3.4.1}.  It follows from \sref{III.5.1.8}
+that there exists a closed subscheme $Z$ of $T$, \emph{proper} over $Y$,
+such that, if $i:Z\to T$ is the canonical injection,
+$\widehat{i}:\widehat{Z}\to\widehat{T}$ is an isomorphism
+($\widehat{Z}$ being the completion of $Z$ along $Z_0$).  We conclude
+\sref{III.4.6.8} that there exists in $T$ an open neighbourhood $V$ of
+$Z_0$ such that the restriction $i^{-1}(V)\to V$ of $i$ is an
+isomorphism.  But $i^{-1}(V)$ is a neighbourhood of $Z_0$ in $Z$, and
+is therefore necessarily identical to $Z$ \sref{III.5.1.3.1}.  We
+conclude that $Z$ is open in $T$, hence in $X$, which completes the
+proof.
 \end{proof}
 
 \begin{corollary}[5.5.2]
@@ -1129,26 +1072,26 @@ which is proper over $Y$ is contained in $Z$.
 \end{corollary}
 
 \begin{proof}
-Apply \sref{III.5.5.1} with $Z_0=X_0$, and put $Z'=X-Z$.  For the
-last assertion, $P\cap Z'$ is closed in $P$ and is therefore proper
-over $Y$.  If it were nonempty, $f(P\cap Z')$ would be a nonempty
-closed subset of $Y$, and hence would meet $Y_0$
-\sref{III.5.1.3.1}.  This contradicts
-$Z'\cap X_0=\varnothing$, and proves that $P\subset Z$.
+The last assertion follows from the fact that $P\cap Z'$, being closed
+in $P$, is proper over $Y$; if $P\cap Z'$ were not empty, $f(P\cap Z')$
+would be closed and nonempty in $Y$, hence would meet $Y_0$
+\sref{III.5.1.3.1}, which contradicts the definition of $Z$.
 \end{proof}
 
-\bigskip
-\noindent\emph{(To be continued.)}
+\begin{flushright}
+\emph{(To be continued.)}
+\end{flushright}
 
 % Printed page 504 is blank.
 \clearpage
+\oldpage[III]{160}
 \thispagestyle{empty}
 \null
 \clearpage
 \thispagestyle{plain}
 
 \oldpage[III]{161}
-\section*{BIBLIOGRAPHY (continued)}
+\section*{BIBLIOGRAPHY \textit{(continued)}}
 
 \begin{flushleft}
 \egabib{III-27}{27}[27] P. \textsc{Gabriel}, \emph{Des catégories abéliennes}, thesis, Paris (1961).
@@ -1167,12 +1110,12 @@ Applications, C. R. Acad. Sci. Paris, vol. CCLII, 1961, pp. 3702-3704.
 \section*{INDEX OF NOTATION}
 
 \begin{flushleft}
-$\Set$: \textbf{0}, 8.1.1.
+$\boldsymbol{\mathit{Ens}}$: \textbf{0}, 8.1.1.
 
-$h_X(Y)$, $h_X(u)$ ($X$, $Y$ objects of a category $\C$, $u$ a morphism
-of $\C$): \textbf{0}, 8.1.1.
+$h_X(Y)$, $h_X(u)$ ($X$, $Y$ objects of a category $\boldsymbol{C}$, $u$ a morphism
+of $\boldsymbol{C}$): \textbf{0}, 8.1.1.
 
-$h_w(Y)$ ($Y$ an object and $w$ a morphism of $\C$): \textbf{0}, 8.1.2.
+$h_w(Y)$ ($Y$ an object and $w$ a morphism of $\boldsymbol{C}$): \textbf{0}, 8.1.2.
 
 $Z_k(E_r^{pq})$, $B_k(E_r^{pq})$ ($k\geq r$): \textbf{0}, 11.1.1.
 
@@ -1214,17 +1157,17 @@ $H_q^{\mathrm I}(H_p^{\mathrm{II}}(K_{\bullet\bullet}))$,
 $H_q^{\mathrm{II}}(H_p^{\mathrm I}(K_{\bullet\bullet}))$,
 $H_n(K_{\bullet\bullet})$: \textbf{0}, 11.3.5.
 
-$\RR^\bullet T(K^\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.4.3.
+$\mathbf{R}^\bullet T(K^\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.4.3.
 
-$\RR^\bullet T(K^\bullet,K'^{\bullet})$ ($T$ an additive covariant
+$\mathbf{R}^\bullet T(K^\bullet,K'^{\bullet})$ ($T$ an additive covariant
 bifunctor): \textbf{0}, 11.4.6.
 
-$\LL_\bullet T(K_\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.6.2.
+$\mathbf{L}_\bullet T(K_\bullet)$ ($T$ an additive covariant functor): \textbf{0}, 11.6.2.
 
-$\LL_\bullet T(K_\bullet,K'_\bullet)$ ($T$ an additive covariant
+$\mathbf{L}_\bullet T(K_\bullet,K'_\bullet)$ ($T$ an additive covariant
 bifunctor): \textbf{0}, 11.6.6.
 
-$\LL_\bullet T(K_{\bullet\bullet})$ ($T$ an additive covariant functor):
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ ($T$ an additive covariant functor):
 \textbf{0}, 11.7.2.
 
 $|\sigma|$, $\Sigma(A)$, $\mathrm C_\bullet(A)$, $\mathrm L_\bullet(A)$
@@ -1253,8 +1196,8 @@ $\RR^p f_*(\sh{F})$ ($f:X\to Y$ a morphism of ringed spaces,
 $\sh{F}$ a sheaf of $\sh{O}_X$-Modules): \textbf{0}, 12.2.1.
 
 $\sh{H}^p(f,\sh{K}^\bullet)$,
-$\sh{H}^p_f(\sh{K}^\bullet)$, ${}'E(f,\sh{K}^\bullet)$,
-${}''E(f,\sh{K}^\bullet)$ ($f:X\to Y$ a morphism of ringed spaces,
+$\sh{H}^p_f(\sh{K}^\bullet)$, ${}'\mathcal E(f,\sh{K}^\bullet)$,
+${}''\mathcal E(f,\sh{K}^\bullet)$ ($f:X\to Y$ a morphism of ringed spaces,
 $\sh{K}^\bullet$ a complex of $\sh{O}_X$-Modules): \textbf{0}, 12.4.1.
 
 $\mathbf H^\bullet(X,\sh{K}^\bullet)$,
@@ -1262,7 +1205,7 @@ $\mathbf H^\bullet(V,\sh{K}^\bullet)$ ($X$ a ringed space,
 $\sh{K}^\bullet$ a complex of $\sh{O}_X$-Modules, $V$ open in $X$):
 \textbf{0}, 12.4.2.
 
-$\mathbf{gr}^\bullet(A)$ ($A$ a projective system satisfying (ML)):
+$\mathbf{gr}^\bullet(\mathbf{A})$ ($\mathbf{A}$ a projective system satisfying (ML)):
 \textbf{0}, 13.4.2.
 
 $E(A)$ ($A$ a filtered object): \textbf{0}, 13.6.4.
@@ -1339,7 +1282,7 @@ Finite (morphism) of formal preschemes: \textbf{III}, 4.8.2.
 Finite (formal prescheme) over $\mathfrak Y$,
 $\mathfrak Y$-finite (formal prescheme): \textbf{III}, 4.8.2.
 
-Canonical covariant functor $\C\to\CHom(\C\op,\Set)$: \textbf{0}, 8.1.2.
+Canonical covariant functor $\boldsymbol{C}\to\boldsymbol{\mathit{Hom}}(\boldsymbol{C}^0,\boldsymbol{\mathit{Ens}})$: \textbf{0}, 8.1.2.
 
 Arithmetic genus: \textbf{III}, 2.5.1.
 
@@ -1367,14 +1310,14 @@ External (internal) composition law on the objects of a category: \textbf{0}, 8.
 
 \oldpage[III]{164}
 
-Filtered $S$-$\C$-module, graded $\mathbf{gr}^\bullet(S)$-$\C$-module,
-bigraded $\mathbf{gr}^\bullet(S)$-$\C$-module: \textbf{0}, 13.6.6.
+Filtered $S$-$\boldsymbol{C}$-module, graded $\mathbf{gr}^\bullet(S)$-$\boldsymbol{C}$-module,
+bigraded $\mathbf{gr}^\bullet(S)$-$\boldsymbol{C}$-module: \textbf{0}, 13.6.6.
 
 Morphism of spectral sequences: \textbf{0}, 11.1.2.
 
 Geometric number of connected components of a fibre: \textbf{III}, 4.3.4.
 
-Group object in $\C$, $\C$-group, $\C$-ring, $\C$-module: \textbf{0}, 8.2.3.
+Group object in $\boldsymbol{C}$, $\boldsymbol{C}$-group, $\boldsymbol{C}$-ring, $\boldsymbol{C}$-module: \textbf{0}, 8.2.3.
 
 Object of boundaries, object of coboundaries, object of cocycles, object of
 cycles: \textbf{0}, 11.2.1.
@@ -1509,6 +1452,8 @@ $K_{\bullet\bullet}$ \dotfill 41
 
 \oldpage[III]{166}
 
+\hfill\textsc{Pages}
+
 \S~13. Projective limits in homological algebra \dotfill 64
 
 13.1. The Mittag--Leffler condition \dotfill 64
@@ -1590,6 +1535,8 @@ finite filtration \dotfill 73
 
 \oldpage[III]{167}
 
+\hfill\textsc{Pages}
+
 \S~5. An existence theorem for coherent algebraic sheaves \dotfill 149
 
 5.1. Statement of the theorem \dotfill 149
@@ -1599,13 +1546,13 @@ finite filtration \dotfill 73
 
 5.3. Proof of the existence theorem: the general case \dotfill 154
 
-5.4. Application: comparison between morphisms of ordinary preschemes and
-morphisms of formal preschemes. Algebraizable formal preschemes \dotfill 156
+5.4. Application: comparison between morphisms of ordinary schemes and
+morphisms of formal schemes. Algebraizable formal schemes \dotfill 156
 
-5.5. A decomposition of certain preschemes \dotfill 159
+5.5. A decomposition of certain schemes \dotfill 159
 
 \medskip
-\textsc{Bibliography (continued)} \dotfill 161
+\textsc{Bibliography} \textit{(continued)} \dotfill 161
 
 \textsc{Index of notation} \dotfill 162
 

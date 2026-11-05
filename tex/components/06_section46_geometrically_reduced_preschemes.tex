@@ -36,7 +36,7 @@ $X\otimes_k k'$ is reduced;
 \phantomsection
 \label{IV.4.6.1.e}
 $X$ is reduced and, for every irreducible component $X_\alpha$ of
-$X$, with generic point $x_\alpha$, the field $\kappa(x_\alpha)$ is a
+$X$, with generic point $x_\alpha$, the field $\kres(x_\alpha)$ is a
 separable extension of $k$.
 \end{enumerate}
 \end{proposition}
@@ -49,37 +49,37 @@ Since $k'$ may be regarded as a subextension of $\Omega$,
 
 Suppose \emph{(d)}.
 Taking $k'=k$ first shows that $X$ is reduced.
-To prove that $\kappa(x_\alpha)$ is separable over $k$, it suffices to
-show that $\kappa(x_\alpha)\otimes_k k'$ is reduced for every finite
+To prove that $\kres(x_\alpha)$ is separable over $k$, it suffices to
+show that $\kres(x_\alpha)\otimes_k k'$ is reduced for every finite
 radicial extension $k'$ of $k$ \sref{IV.4.3.5}.
 We may reduce to the case $X=\Spec(A)$, where $A$ is a reduced
 $k$-algebra.
 Then $A\otimes_k k'$ is reduced by hypothesis \sref[I]{I.5.1.4}, and
-$\kappa(x_\alpha)\otimes_k k'$ is a ring of fractions of this ring;
-hence it is reduced $(\mathbf{0}_I,\,1.2.8)$.
+$\kres(x_\alpha)\otimes_k k'$ is a ring of fractions of this ring;
+hence it is reduced \sref[0\textsubscript{\mdseries I}]{0.1.2.8}.
 Thus \emph{(d)} implies \emph{(e)}.
 
 Finally, suppose \emph{(e)}.
 We may reduce to the affine case
 $X=\Spec(A)$ and $S=\Spec(B)$, where $A$ and $B$ are $k$-algebras.
-The fields $\kappa(x_\alpha)$ are the fields of fractions of the
+The fields $\kres(x_\alpha)$ are the fields of fractions of the
 quotient rings $A/\mathfrak p_\alpha$, where
 $\mathfrak p_\alpha=\mathfrak j_{x_\alpha}$ are the minimal prime
 ideals of $A$.
 Since $\bigcap_\alpha\mathfrak p_\alpha=0$, the algebra $A$ embeds in
 $\prod_\alpha A/\mathfrak p_\alpha$, and hence in
-$\prod_\alpha\kappa(x_\alpha)$.
+$\prod_\alpha\kres(x_\alpha)$.
 Likewise, $B$ may be regarded as a subalgebra of a product
 $\prod_\beta L_\beta$ of extensions of $k$.
-It follows that $A\otimes_k B$ embeds in $\left(\prod_\alpha\kappa(x_\alpha)\right)
+It follows that $A\otimes_k B$ embeds in $\left(\prod_\alpha\kres(x_\alpha)\right)
 \otimes_k
 \left(\prod_\beta L_\beta\right)$,
 and this tensor product itself embeds in $\prod_{\alpha,\beta}
-\bigl(\kappa(x_\alpha)\otimes_k L_\beta\bigr)$
+\bigl(\kres(x_\alpha)\otimes_k L_\beta\bigr)$
 (Bourbaki, \emph{Alg.}, chap.~II, 3rd ed., \S~7,
 n\textsuperscript{o}~7, prop.~15).
 By hypothesis the rings
-$\kappa(x_\alpha)\otimes_k L_\beta$ are reduced
+$\kres(x_\alpha)\otimes_k L_\beta$ are reduced
 \sref{IV.4.3.5}; hence $A\otimes_k B$ is reduced.
 Thus \emph{(e)} implies \emph{(a)}.
 \end{proof}
@@ -162,9 +162,9 @@ For the reduced assertion in~\emph{(ii)}, let $\Omega$ be an
 algebraically closed extension of $k$.
 Then $(X\times_k Y)\otimes_k\Omega=X\times_k(Y\otimes_k\Omega)$.
 Since $Y\otimes_k\Omega$ is reduced, the right-hand side is reduced by
-\sref{IV.4.6.1.a}.
+\sref{IV.4.6.1},~a).
 The remainder of~\emph{(ii)} follows from this and
-\sref{IV.4.5.8.ii}.
+\sref{IV.4.5.8},~(ii).
 \end{proof}
 
 \begin{proposition}[4.6.6]
@@ -228,7 +228,7 @@ n\textsuperscript{o}~9, prop.~14).
 By \sref[I]{I.5.1.8},
 $(X_{(k')})_{\mathrm{red}}\otimes_{k'}K$ is isomorphic to
 $(X_{(K)})_{\mathrm{red}}$, and hence is geometrically reduced.
-It follows from \sref{IV.4.6.5.i} that
+It follows from \sref{IV.4.6.5},~(i) that
 $(X_{(k')})_{\mathrm{red}}$ is geometrically reduced.
 \end{proof}
 
@@ -305,14 +305,14 @@ There is a point $z$ of $X'\times_X X''$ projecting to $x'$ and $x''$
 \sref[I]{I.3.4.7}.
 Let $s$ be the image of $z$ in
 $\Spec(k'\otimes_k k'')$ \sref[I]{I.3.4.9}, put
-$K=\kappa(s)$, and put $Z=X\otimes_kK$.
+$K=\kres(s)$, and put $Z=X\otimes_kK$.
 Then $K$ may be regarded as a composite extension of $k'$ and $k''$,
 and $z$ as a point of $Z$ whose images in $X'$ and $X''$ are,
 respectively, $x'$ and $x''$.
 By hypothesis, $\sh O_{Z,z}$ is reduced (resp.\ integral).
 Since $\sh O_{Z,z}$ is a faithfully flat
 $\sh O_{X'',x''}$-module, it follows that $\sh O_{X'',x''}$ is
-reduced (resp.\ integral) $(\mathbf{0}_I,\,6.5.1)$.
+reduced (resp.\ integral) \sref[0\textsubscript{\mdseries I}]{0.6.5.1}.
 \end{proof}
 
 \begin{corollary}[4.6.11]
@@ -360,7 +360,7 @@ the prescheme $X\otimes_k\Omega$ is reduced at one point above $x$;
 \phantomsection
 \label{IV.4.6.12.c}
 for every finite radicial extension $k'$ of $k$, the prescheme
-$X'=X\otimes_k k'$ is reduced at the unique point $x'$ above $x$;
+$X'=X\otimes_k k'$ is reduced at the unique point above $x$;
 
 \item[\rm(d)]
 \phantomsection
@@ -372,7 +372,7 @@ the prescheme $\Spec(\sh O_{X,x})$ is geometrically reduced over $k$;
 \label{IV.4.6.12.e}
 the local ring $\sh O_{X,x}$ is reduced and, for every irreducible
 component $Z$ of $X$ containing $x$, with generic point $z$, the field
-$\kappa(z)$ is a separable extension of $k$.
+$\kres(z)$ is a \emph{separable} extension of $k$.
 \end{enumerate}
 \end{proposition}
 
@@ -430,7 +430,7 @@ geometrically reduced over $k$.
 
 It follows from \sref{IV.4.6.13} that, when $X$ is locally Noetherian,
 the set of points $x\in X$ at which $X$ is geometrically reduced over
-$k$ is open; it is the largest open subset of $X$ that is
+$k$ is \emph{open}; it is the largest open subset of $X$ that is
 geometrically reduced over $k$.
 
 \begin{env}[4.6.14]
@@ -439,28 +439,28 @@ geometrically reduced over $k$.
 It follows from \sref{IV.4.6.10} and \sref{IV.4.6.11} that, if
 $\Omega$ is an algebraically closed extension of $k$, saying that $X$
 is geometrically punctually integral at $x$ is equivalent to saying
-that $X\otimes_k\Omega$ is integral at one point above $x$.
+that $X\otimes_k\Omega$ is integral at \emph{one} point above $x$.
 
 For $X$ to be geometrically punctually integral at $x$, it is
 necessary that $X$ be integral at $x$ and that, if $z$ is the generic
 point of the unique irreducible component of $X$ containing $x$, the
-field $\kappa(z)$ be a separable extension of $k$.
+field $\kres(z)$ be a separable extension of $k$.
 This follows from \sref{IV.4.6.10}.
-These conditions are not sufficient, as is shown by
-\sref{IV.4.5.12.ii}.
+But these conditions \emph{are not sufficient}, as follows from the
+example \sref{IV.4.5.12},~(ii).
 A sufficient but not necessary condition is that $X$ be geometrically
 reduced at $x$ and belong to only one irreducible component of $X$,
-and that this component be geometrically irreducible.
+and that this component be \emph{geometrically irreducible}.
 \oldpage[IV-2]{72}
 If in addition $X$ is locally Noetherian, then $x$ has an open
-neighbourhood in $X$ that is geometrically integral.
+neighbourhood in $X$ that is \emph{geometrically integral}.
 \end{env}
 
-Recall that a locally Noetherian prescheme that is punctually integral
-is locally integral \sref[I]{I.6.1.13}.
+Recall that a \emph{locally Noetherian} prescheme that is punctually integral
+is \emph{locally integral} \sref[I]{I.6.1.13}.
 Thus, if a $k$-prescheme $X$ locally of finite type over $k$ is
 geometrically punctually integral over $k$, then
-$X\otimes_k k'$ is locally integral for every extension $k'$ of $k$.
+$X\otimes_k k'$ is \emph{locally integral} for every extension $k'$ of $k$.
 In this case $X$ is also said to be
 \emph{geometrically locally integral}.
 
@@ -670,7 +670,7 @@ Thus \emph{(b)} implies \emph{(c)}, because the closed sub-prescheme
 $Y$ defined by $\sh J$ is geometrically reduced and geometrically
 irreducible, and hence geometrically integral.
 \oldpage[IV-2]{74}
-Conversely, if $Y$ is geometrically integral, then for every extension
+Conversely, if $Y$ is geometrically integral, then for \emph{every} extension
 $k'$ of $k$, the support $\operatorname{Supp}(\sh F')$ is
 irreducible.
 Consequently, whenever $X'$ is locally Noetherian, $\sh F'$ is
@@ -684,7 +684,7 @@ $k$.
 \phantomsection
 \label{IV.4.6.19}
 When $\sh F$ satisfies the equivalent conditions of
-\sref{IV.4.6.18}, it is said to be \emph{geometrically integral} over
+\sref{IV.4.6.18}, it is said to be geometrically integral over
 $k$.
 \end{definition}
 
@@ -701,7 +701,7 @@ $\sh F\otimes_kK$ is geometrically reduced
 \end{proposition}
 
 \begin{proof}
-For every finite extension $K'$ of $K$, $K$,
+For every finite extension $K'$ of $K$,
 $(X\otimes_k K)\otimes_K K'=X\otimes_k K'$
 is locally Noetherian.
 The proofs of \sref{IV.4.6.16} and \sref{IV.4.6.18} show that the
@@ -757,9 +757,9 @@ irreducible components of $X\times_kY$ \sref{IV.4.2.5}.
 We may therefore reduce further to the case in which $X$ and $Y$ are
 irreducible.
 If $X$ is geometrically reduced and $Y$ is reduced, then
-$X\times_kY$ is reduced \sref{IV.4.2.4.ii}.
+$X\times_kY$ is reduced \sref{IV.4.2.4},~(ii).
 If $X$ is geometrically integral and $Y$ is integral, then
-$X\times_kY$ is moreover irreducible \sref{IV.4.5.8.i}, and hence
+$X\times_kY$ is moreover irreducible \sref{IV.4.5.8},~(i), and hence
 integral.
 Finally, every maximal point $z$ of $X\times_kY$ lies above a maximal
 point $x$ of $X$ and a maximal point $y$ of $Y$.
@@ -773,7 +773,7 @@ After reducing to
 $X=\operatorname{Supp}(\sh F)$ and
 $Y=\operatorname{Supp}(\sh G)$, the prescheme $X\times_kY$ is
 geometrically reduced (resp.\ geometrically integral) by
-\sref{IV.4.6.5.ii}.
+\sref{IV.4.6.5},~(ii).
 \end{enumerate}
 \end{proof}
 

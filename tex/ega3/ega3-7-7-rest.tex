@@ -221,19 +221,19 @@ The assertion now follows from \sref{III.7.7.7}.
 \textnormal{(i)}
 In \sref{III.7.7.6}, \sref{III.7.7.7}, and
 \sref{III.7.7.8}, the formation of the $\sh{O}_Y$-Modules
-$\sh{Q}$, $\sh{R}$, and $\sh{N}$ commutes with base change.
+$\sh{Q}$, $\sh{R}$, and $\sh{N}$ \emph{commutes with base change}.
 For example, retaining the notation of \sref{III.7.7.2}, in
 the situation of \sref{III.7.7.6} one has, for every
-quasi-coherent $\sh{O}_{Y'}$-Module $\sh{M}'$,
+quasi-coherent $\sh{O}_{Y'}$-Module $\sh{M}'$, the isomorphism
 \[
   f'_*
   \bigl(\sh{F}\otimes_{\sh{O}_Y}\sh{M}'\bigr)
-  \simeq
+  \xrightarrow{\sim}
   \shHom_{\sh{O}_{Y'}}
   \bigl(g^*(\sh{Q}),\sh{M}'\bigr).
 \]
-Indeed, by the observation in \sref{III.7.7.2}, it is enough
-to use
+Indeed, by the observation made in \sref{III.7.7.2}, everything
+comes down to seeing that one has
 \[
   \Hom_{\sh{O}_Y}
   \bigl(\sh{Q},g_*(\sh{M}')\bigr)
@@ -259,7 +259,7 @@ $X,Y,f,\sh{M},\sh{F}$ are replaced by
 \]
 and $\sh{G}$ by $\sh{G}'
 =
-\sh{G}\otimes_{\sh{O}_X}\sh{O}_{X'}$,
+\sh{G}\otimes_{\sh{O}_Y}\sh{O}_{X'}$,
 then $\sh{N}$ must be replaced by $g^*(\sh{N})$.  This
 follows because there remains an exact sequence
 \[
@@ -269,15 +269,15 @@ follows because there remains an exact sequence
   \qquad
   \sh{E}'_i
   =
-  \sh{E}_i\otimes_{\sh{O}_X}\sh{O}_{X'},
+  \sh{E}_i\otimes_{\sh{O}_Y}\sh{O}_{X'},
 \]
 and because, for $i=0,1$,
 \[
-  (\sh{E}'_i)^\vee
+  \check{\sh{E}}'_i
   \otimes_{\sh{O}_{X'}}
   \bigl(\sh{F}\otimes_{\sh{O}_Y}\sh{M}'\bigr)
   =
-  \sh{E}_i^\vee
+  \check{\sh{E}}_i
   \otimes_{\sh{O}_X}
   \bigl(\sh{F}\otimes_{\sh{O}_Y}\sh{M}'\bigr).
 \]
@@ -287,7 +287,8 @@ and because, for $i=0,1$,
 Condition (ii) in \sref{III.7.7.8} is satisfied by every
 coherent $\sh{O}_X$-Module $\sh{G}$ whenever there exists a
 $Y$-\emph{ample} invertible $\sh{O}_X$-Module; this holds, for
-example, when $Y$ is affine and $f:X\to Y$ is projective.
+example, when $Y$ is affine and $f:X\to Y$ is a \emph{projective}
+morphism.
 Indeed, by \sref[II]{II.5.5.1} and \sref[II]{II.2.7.10},
 there is a finite-type locally free $\sh{O}_X$-Module
 $\sh{E}_0$ with $\sh{G}$ isomorphic to a quotient of
@@ -301,7 +302,7 @@ with $\sh{E}_0$ and $\sh{E}_1$ finite-type locally free.
 \medskip
 \textnormal{(iii)}
 We shall prove in Chapter V that the restrictive hypothesis
-(ii) of \sref{III.7.7.8} is redundant.
+(ii) of \sref{III.7.7.8} is \emph{redundant}.
 \end{remarks}
 
 \begin{proposition}[7.7.10]
@@ -438,11 +439,11 @@ defines
 \[
   \sh{T}_p(\sh{M})
   =
-  \mathbf{Tor}^Y_p
+  \boldsymbol{\shTor}^Y_p
   \bigl(f,1_Y;\sh{P}_\bullet,\sh{M}\bigr).
   \tag{7.7.12.1}\label{III.7.7.12.1}
 \]
-Indeed, $\mathbf{Tor}^Y_n
+Indeed, $\boldsymbol{\shTor}^Y_n
 \bigl(f,1_Y;\sh{P}_\bullet,\sh{O}_Y\bigr)$
 is then a coherent $\sh{O}_Y$-Module by
 \sref{III.6.7.9}.  The proof of \sref{III.6.10.5} applies

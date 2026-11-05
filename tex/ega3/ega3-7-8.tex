@@ -23,7 +23,7 @@ is exact.
 
 We say that $\sh{P}_\bullet$ is \emph{homologically flat in
 dimension $p$ over $Y$} (or \emph{cohomologically flat in
-dimension $-p$ over $Y$}) if it is homologically flat over
+dimension $\setmin p$ over $Y$}) if it is homologically flat over
 $Y$ at every point $y\in Y$, in dimension $p$.
 
 When $\sh{P}_\bullet$ is homologically flat over $Y$
@@ -85,33 +85,33 @@ following conditions are equivalent:
 \begin{enumerate}
   \item[\textup{a)}] $\sh{P}_\bullet$ is homologically flat over $Y$
   at $y$, in dimension $p$.
-  \item[\textup{b)}] The functor $\sh{T}_p^{\sh{O}_y}$ is exact.
+  \item[\textup{b)}] The functor $T_p^{\sh{O}_y}$ is exact.
   \item[\textup{c)}] There is an integer $n_0$ such that, for
   $n\geq n_0$,
   \[
     \operatorname{length}
-      \sh{T}_p^{\sh{O}_y}
+      T_p^{\sh{O}_y}
         \bigl(\sh{O}_y/\mathfrak m_y^{\,n+1}\bigr)
     =
     \operatorname{length}
-      \sh{T}_p^{\sh{O}_y}\bigl(\kres(y)\bigr)
+      T_p^{\sh{O}_y}\bigl(\kres(y)\bigr)
     \cdot
     \operatorname{length}
-      \bigl(\sh{O}_y/\mathfrak m_y^{\,n+1}\bigr).
+      \sh{O}_y/\mathfrak m_y^{\,n+1}.
     \tag{7.8.4.1}\label{III.7.8.4.1}
   \]
   Here all lengths are lengths of $\sh{O}_y$-modules.
   \item[\textup{d)}] There is an open neighbourhood $U$ of $y$ such
-  that $\mathscr{H}^{-p}(f,\sh{P}^\bullet)|U$
+  that $(\mathcal{H}^{-p}(f,\sh{P}^\bullet))|U$
   is isomorphic to an $(\sh{O}_Y|U)$-Module of the form
   $(\sh{O}_Y|U)^m$ and, for every quasi-coherent
   $(\sh{O}_Y|U)$-Module $\sh{M}$, the canonical
   homomorphism
   \[
-    \mathscr{H}^{-p}(f,\sh{P}^\bullet)|U
+    ((\mathcal{H}^{-p}(f,\sh{P}^\bullet))|U)
       \otimes_{\sh{O}_Y|U}\sh{M}
     \longrightarrow
-    \mathscr{H}^{-p}
+    \mathcal{H}^{-p}
       \bigl(f,(\sh{P}^\bullet|U)
         \otimes_{\sh{O}_Y|U}\sh{M}\bigr)
     \tag{7.8.4.2}\label{III.7.8.4.2}
@@ -124,24 +124,24 @@ When these conditions hold, one also has:
   function $z\leadsto d_p(z)$, defined in
   \eqref{III.7.7.5.1}, is constant.
 \end{enumerate}
-Moreover, if $Y$ is reduced at $y$ \sref[0]{0.4.1.4},
+Moreover, if $Y$ is \textup{reduced} at $y$ \sref[0]{0.4.1.4},
 condition e) is equivalent to the other conditions.
 \end{proposition}
 
 \begin{proof}
 \oldpage[III]{206}
 Indeed, condition \emph{b)} is equivalent to saying that
-$\sh{T}_p^{\sh{O}_y}$ and $\sh{T}_{p+1}^{\sh{O}_y}$ are
+$T_p^{\sh{O}_y}$ and $T_{p+1}^{\sh{O}_y}$ are
 right exact \sref{III.7.3.3}.  The equivalence of a) and b)
 then follows from \sref{III.7.7.10} and
 \sref{III.7.8.3}.
 
 Since $\sh{O}_y/\mathfrak m_y^{\,n+1}$ is Artinian, and
 \[
-  \sh{T}_p^{\sh{O}_y}
+  T_p^{\sh{O}_y}
     \bigl(\sh{O}_y/\mathfrak m_y^{\,n+1}\bigr)
   \quad\hbox{and}\quad
-  \sh{T}_p^{\sh{O}_y}\bigl(\kres(y)\bigr)
+  T_p^{\sh{O}_y}\bigl(\kres(y)\bigr)
 \]
 are finite-type
 $(\sh{O}_y/\mathfrak m_y^{\,n+1})$-modules
@@ -153,13 +153,13 @@ That a) implies e), and that a) and e) are equivalent when
 $\sh{O}_y$ is reduced, follows from \sref{III.7.6.9}.
 Finally, a) implies that \eqref{III.7.8.4.2} is bijective,
 by the definition \sref{III.7.8.1} and
-\sref{III.7.7.5}.  It also implies that $\bigl(\mathscr{H}^{-p}(f,\sh{P}^\bullet)\bigr)_y$
+\sref{III.7.7.5}.  It also implies that $\bigl(\mathcal{H}^{-p}(f,\sh{P}^\bullet)\bigr)_y$
 is a flat $\sh{O}_y$-module by condition (f) of
 \sref{III.7.3.3}, hence a
 free $\sh{O}_y$-module of finite type
 \sref[0]{0.10.1.3}, since it is of finite type by
 \sref{III.7.7.4}.  As
-$\mathscr{H}^{-p}(f,\sh{P}^\bullet)$ is a coherent
+$\mathcal{H}^{-p}(f,\sh{P}^\bullet)$ is a coherent
 $\sh{O}_Y$-Module \sref{III.7.7.4}, it is locally free in
 a neighbourhood of $y$ \sref[0]{0.5.2.7}.
 Conversely, d) plainly implies a), by the definition of the
@@ -175,8 +175,8 @@ conditions are equivalent:
   in every dimension $i\leq p$.
   \item[\textup{b)}] For $i\leq p+1$, the functors $\sh{T}_i$ are
   right exact.
-  \item[\textup{c)}] For $i\geq -p$, the $\sh{O}_Y$-Modules
-  $\mathscr{H}^{i}(f,\sh{P}^\bullet)$ are locally free.
+  \item[\textup{c)}] For $i\geq\setmin p$, the $\sh{O}_Y$-Modules
+  $\mathcal{H}^{i}(f,\sh{P}^\bullet)$ are locally free.
 \end{enumerate}
 \end{proposition}
 

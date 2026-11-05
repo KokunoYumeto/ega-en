@@ -6,16 +6,16 @@
 
 \begin{definition}[3.1.1]
 \label{III.3.1.1}
-Let $K$ be an abelian category. We say that a subset $\boldsymbol{K}'$ of
-the set of objects of $K$ is \emph{exact} if $0\in\boldsymbol{K}'$ and if, for every
+Let $\boldsymbol{K}$ be an abelian category. We say that a subset $\boldsymbol{K}'$ of
+the set of objects of $\boldsymbol{K}$ is \emph{exact} if $0\in\boldsymbol{K}'$ and if, for every
 exact sequence $0\to A'\to A\to A''\to0$
-in $K$ such that two of the objects $A$, $A'$, $A''$ are in $K'$, the
+in $\boldsymbol{K}$ such that two of the objects $A$, $A'$, $A''$ are in $\boldsymbol{K}'$, the
 third is also in $\boldsymbol{K}'$.
 \end{definition}
 
 \begin{theorem}[3.1.2]
 \label{III.3.1.2}
-Let $X$ be a Noetherian prescheme; we denote by $K$ the abelian category
+Let $X$ be a Noetherian prescheme; we denote by $\boldsymbol{K}$ the abelian category
 of coherent $\mathcal O_X$-modules. Let $\boldsymbol{K}'$ be an exact subset of
 $\boldsymbol{K}$, and $X'$ a closed subset of the underlying space of $X$. Suppose that
 for every irreducible closed subset $Y$ of $X'$, with generic point $y$, there
@@ -76,9 +76,9 @@ the preceding equality follows from (\textbf{I}, 5.2.1 and 1.1.5); if $z\notin Y
 therefore have $\mathcal J'_z=\mathcal J_z$, whence $\mathcal F'_z=\mathcal F_z$ and
 $\mathcal F''_z=0$, which establishes our assertion in this case; we argue
 in the same way if $z\notin Y'$. Consequently, the kernel and the cokernel of $u$,
-which are in $K$ (\textbf{0}\textsubscript{I}, 5.3.4), have their supports in $Y'\cap Y''$,
+which are in $\boldsymbol{K}$ (\textbf{0}\textsubscript{I}, 5.3.4), have their supports in $Y'\cap Y''$,
 and are therefore in $\boldsymbol{K}'$ by hypothesis; for the same reason, $\mathcal F'$ and
-$\mathcal F''$ are in $K'$, hence so is $\mathcal F'\oplus\mathcal F''$,
+$\mathcal F''$ are in $\boldsymbol{K}'$, hence so is $\mathcal F'\oplus\mathcal F''$,
 since $\boldsymbol{K}'$ is exact. The conclusion then follows from consideration of the
 two exact sequences
 \[
@@ -116,19 +116,19 @@ canonical projections of $\mathcal G^m\oplus\mathcal F$ are then
 homomorphisms of coherent $\mathcal O_X$-modules which, in $W$ and in
 $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and
 cokernels of $v$ and $w$ have their supports in the closed set
-$Y\setmin(Y\cap W)$, which is distinct from $Y$. They therefore belong to $K'$; on the
+$Y\setmin(Y\cap W)$, which is distinct from $Y$. They therefore belong to $\boldsymbol{K}'$; on the
 other hand, we have $\mathcal G^m\in\boldsymbol{K}'$ since $\mathcal G\in\boldsymbol{K}'$ and
-$K'$ is exact. We conclude successively, by the exactness of $K'$, that
+$\boldsymbol{K}'$ is exact. We conclude successively, by the exactness of $\boldsymbol{K}'$, that
 $\mathcal H_0\in\boldsymbol{K}'$ and then that $\mathcal F\in\boldsymbol{K}'$. Q.E.D.
 \end{enumerate}
 \end{proof}
 
 \begin{corollary}[3.1.3]
 \label{III.3.1.3}
-Suppose that the exact subset $\boldsymbol{K}'$ of $K$ moreover has the property
+Suppose that the exact subset $\boldsymbol{K}'$ of $\boldsymbol{K}$ moreover has the property
 that every coherent direct factor of a coherent $\mathcal O_X$-module
 $\mathcal M\in\boldsymbol{K}'$ also belongs to $\boldsymbol{K}'$. Under these conditions, the
-conclusion of (\hyperref[III.3.1.2]{3.1.2}) still holds when the
+conclusion of \textup{(\hyperref[III.3.1.2]{3.1.2})} still holds when the
 condition ``$\mathcal G_y$ is a $\boldsymbol{k}(y)$-vector space of dimension $1$''
 is replaced by $\mathcal G_y\neq0$ (which is equivalent to
 $\operatorname{Supp}(\mathcal G)=Y$).
@@ -158,14 +158,14 @@ $\mathcal O_Y$-modules $R^qf_*(\mathcal F)$ are coherent for $q\geq0$.
 The question being local on $Y$, we may suppose $Y$ Noetherian, hence $X$
 Noetherian (\textbf{I}, 6.3.7). The coherent $\mathcal O_X$-modules $\mathcal F$ for
 which the conclusion of Theorem (\hyperref[III.3.2.1]{3.2.1}) holds
-form an exact subset $\boldsymbol{K}'$ of the category $K$ of coherent
+form an \emph{exact} subset $\boldsymbol{K}'$ of the category $\boldsymbol{K}$ of coherent
 $\mathcal O_X$-modules.
 
 \oldpage[III]{117}
 Indeed, let
 $0\to\mathcal F'\to\mathcal F\to\mathcal F''\to0$ be an exact sequence of
 coherent $\mathcal O_X$-modules; suppose for example that $\mathcal F'$
-and $\mathcal F''$ belong to $K'$; we have the exact cohomology sequence
+and $\mathcal F''$ belong to $\boldsymbol{K}'$; we have the exact cohomology sequence
 \[
 R^{q-1}f_*(\mathcal F'')\xrightarrow{\partial}R^qf_*(\mathcal F')
 \longrightarrow R^qf_*(\mathcal F)\longrightarrow R^qf_*(\mathcal F'')
@@ -175,16 +175,16 @@ in which, by hypothesis, the four outer terms are coherent; the same is
 therefore true of the middle term $R^qf_*(\mathcal F)$ by
 (\textbf{0}\textsubscript{I}, 5.3.4 and 5.3.3). We show in the same way that
 when $\mathcal F$ and $\mathcal F'$ (resp. $\mathcal F$ and
-$\mathcal F''$) are in $K'$, the same is true of $\mathcal F''$ (resp.
+$\mathcal F''$) are in $\boldsymbol{K}'$, the same is true of $\mathcal F''$ (resp.
 $\mathcal F'$). Moreover, every coherent \emph{direct factor} $\mathcal F'$
-of an $\mathcal O_X$-module $\mathcal F\in\boldsymbol{K}'$ also belongs to $K'$:
+of an $\mathcal O_X$-module $\mathcal F\in\boldsymbol{K}'$ also belongs to $\boldsymbol{K}'$:
 indeed, $R^qf_*(\mathcal F')$ is then a direct factor of
 $R^qf_*(\mathcal F)$ (G, II, 4.4.4), hence is of finite type, and since it is
 quasi-coherent (\hyperref[III.1.4.10]{1.4.10}), it is coherent, $Y$
 being Noetherian. By virtue of (\hyperref[III.3.1.3]{3.1.3}), we are
 reduced to proving that when $X$ is \emph{irreducible} with generic point
-$x$, there exists a coherent $\mathcal O_X$-module $\mathcal F$ belonging to
-$K'$ such that $\mathcal F_x\neq0$: indeed, once this point is established,
+$x$, there exists \emph{a} coherent $\mathcal O_X$-module $\mathcal F$ belonging to
+$\boldsymbol{K}'$ such that $\mathcal F_x\neq0$: indeed, once this point is established,
 we can apply it to every irreducible closed sub-prescheme $Y$ of $X$, since
 if $j:Y\to X$ is the canonical injection, $f\circ j$ is proper (\textbf{II}, 5.4.2),
 and if $\mathcal G$ is a coherent $\mathcal O_Y$-module with support $Y$,
@@ -255,7 +255,7 @@ dimension}.
 \label{III.3.2.4}
 Let $Y$ be a locally Noetherian prescheme and $f:X\to Y$ a morphism of
 finite type. For every coherent $\mathcal O_X$-module $\mathcal F$ whose
-support is proper over $Y$ (\textbf{II}, 5.4.10), the $\mathcal O_Y$-modules
+support is proper over $Y$ \textup{(\textbf{II}, 5.4.10)}, the $\mathcal O_Y$-modules
 $R^qf_*(\mathcal F)$ are coherent.
 \end{corollary}
 
@@ -366,13 +366,13 @@ preschemes (\textbf{I}, 10.4.2) and $f:\mathfrak X\to\mathfrak S$ a morphism of
 formal preschemes. We will say that $f$ is a \emph{proper} morphism if it
 satisfies the following conditions:
 \begin{enumerate}
-\item[$1^\circ$] $f$ is a morphism of finite type (\textbf{I}, 10.13.3).
-\item[$2^\circ$] If $\mathcal K$ is an ideal of definition of $\mathfrak S$
-and if we set
+\item[$1^\circ$] \emph{$f$ is a morphism of finite type} (\textbf{I}, 10.13.3).
+\item[$2^\circ$] \emph{If $\mathcal K$ is an ideal of definition of $\mathfrak S$
+and if we set}
 $\mathcal J=f^*(\mathcal K)\mathcal O_{\mathfrak X}$,
 $X_0=(\mathfrak X,\mathcal O_{\mathfrak X}/\mathcal J)$,
-$S_0=(\mathfrak S,\mathcal O_{\mathfrak S}/\mathcal K)$, the morphism
-$f_0:X_0\to S_0$ deduced from $f$ (\textbf{I}, 10.5.6) is proper.
+$S_0=(\mathfrak S,\mathcal O_{\mathfrak S}/\mathcal K)$, \emph{the morphism}
+$f_0:X_0\to S_0$ \emph{deduced from} $f$ (\textbf{I}, 10.5.6) \emph{is proper}.
 \end{enumerate}
 
 It is immediate that this definition does not depend on the ideal of
@@ -441,7 +441,7 @@ $\mathcal O_{\mathfrak X}$-modules such that
 \[
 \mathcal F=\varprojlim_k\mathcal F_k
 \]
-by (\textbf{I}, 10.11.3). On the other hand, it will follow from
+(\textbf{I}, 10.11.3). On the other hand, it will follow from
 (\hyperref[III.3.4.2]{3.4.2}) that each of the $R^qf_*(\mathcal F)$, being
 coherent, is naturally endowed with a structure of topological
 $\mathcal O_{\mathfrak Y}$-module (\textbf{I}, 10.11.6), and the same holds
@@ -465,11 +465,11 @@ $\mathcal O_{\mathfrak Y}$-modules. We will prove, at the same time as
 
 \begin{corollary}[3.4.3]
 \label{III.3.4.3}
-Each of the homomorphisms (\hyperref[III.3.4.2.2]{3.4.2.2}) is a
+Each of the homomorphisms \textup{(\hyperref[III.3.4.2.2]{3.4.2.2})} is a
 topological isomorphism. Moreover, if $\mathfrak Y$ is Noetherian, the
 projective system
 $(R^qf_*(\mathcal F/\mathcal K^{k+1}\mathcal F))_{k\geq0}$ satisfies
-condition \textup{(ML)} (\textbf{0}, 13.1.1).
+condition \textup{(ML)} \textup{(\textbf{0}, 13.1.1)}.
 \end{corollary}
 
 We will begin by establishing (\hyperref[III.3.4.2]{3.4.2}) and
@@ -478,7 +478,7 @@ formal scheme (\textbf{I}, 10.4.1):
 
 \begin{corollary}[3.4.4]
 \label{III.3.4.4}
-Under the hypotheses of (\hyperref[III.3.4.2]{3.4.2}), suppose moreover
+Under the hypotheses of \textup{(\hyperref[III.3.4.2]{3.4.2})}, suppose moreover
 that $\mathfrak Y=\operatorname{Spf}(A)$, where $A$ is a Noetherian adic
 ring. Let $\mathfrak J$ be an ideal of definition of $A$, and set
 $\mathcal F_k=\mathcal F/\mathfrak J^{k+1}\mathcal F$ for $k\geq0$. Then
@@ -494,7 +494,7 @@ N_{n,k}=\operatorname{Ker}\bigl(H^n(\mathfrak X,\mathcal F)
 $\operatorname{Im}(H^n(\mathfrak X,\mathfrak J^{k+1}\mathcal F)
 \to H^n(\mathfrak X,\mathcal F))$ by the exact cohomology sequence), the
 $N_{n,k}$ define on $H^n(\mathfrak X,\mathcal F)$ a
-$\mathfrak J$-good filtration (\textbf{0}, 13.7.7); finally, the canonical homomorphism
+$\mathfrak J$-good filtration \textup{(\textbf{0}, 13.7.7)}; finally, the canonical homomorphism
 \[
 H^n(\mathfrak X,\mathcal F)
 \longrightarrow\varprojlim_kH^n(\mathfrak X,\mathcal F_k)
@@ -548,7 +548,7 @@ quasi-coherent $\mathcal O_{X_0}$-modules $\mathcal S$ and $\mathcal M$
 are associated respectively to
 \[
 S'=\bigoplus_{k\geq0}
-((\mathfrak J^k/\mathfrak J^{k+1})\otimes_{A_0}B_0)\quad\text{et}\quad
+((\mathfrak J^k/\mathfrak J^{k+1})\otimes_{A_0}B_0)\quad\text{and}\quad
 M'=\bigoplus_{k\geq0}\mathfrak J^kN/\mathfrak J^{k+1}N.
 \]
 For every $k\geq0$, multiplication induces a surjective map
@@ -674,7 +674,7 @@ We have moreover proved along the way:
 
 \begin{corollary}[3.4.6]
 \label{III.3.4.6}
-Under the hypotheses of (\hyperref[III.3.4.4]{3.4.4}), the canonical
+Under the hypotheses of \textup{(\hyperref[III.3.4.4]{3.4.4})}, the canonical
 homomorphism
 \[
 H^q(\mathfrak X,\mathcal F)

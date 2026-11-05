@@ -5,7 +5,7 @@
 \begin{env}[5.10.1]
 \label{IV.5.10.1}
 Let $X$ be a locally Noetherian prescheme and let $\sh F$ be a
-coherent $\sh O_X$-module.  For every subset $T$ of $X$, put
+coherent $\sh O_X$-Module.  For every subset $T$ of $X$, put
 \end{env}
 
 \begin{equation}
@@ -19,7 +19,7 @@ coherent $\sh O_X$-module.  For every subset $T$ of $X$, put
 \label{IV.5.10.2}
 Let $X$ be a locally Noetherian prescheme, let $Z$ be a subset of
 $X$ stable under specialization, and let $\sh F$ be a
-quasi-coherent $\sh O_X$-module.  The following conditions are
+quasi-coherent $\sh O_X$-Module.  The following conditions are
 equivalent:
 \begin{enumerate}[{\rm a)}]
   \item $\sh F$ is $Z$-pure.
@@ -51,7 +51,7 @@ $\operatorname{prof}(\sh F_x)=0$.  The equivalence of {\rm b)} and
 \label{IV.5.10.3}
 Let $0\longrightarrow\sh F'\longrightarrow\sh F
 \longrightarrow\sh F''\longrightarrow0$
-be an exact sequence of quasi-coherent $\sh O_X$-modules.  If
+be an exact sequence of quasi-coherent $\sh O_X$-Modules.  If
 $\sh F$ is $Z$-pure, then so is $\sh F'$.  Conversely, if $\sh F'$
 and $\sh F''$ are $Z$-pure, then so is $\sh F$.
 \end{corollary}
@@ -60,7 +60,7 @@ and $\sh F''$ are $Z$-pure, then so is $\sh F$.
 
 \begin{proof}
 This follows from the form \sref{IV.5.10.2}, {\rm b)}, of the
-condition for a quasi-coherent $\sh O_X$-module to be $Z$-pure,
+condition for a quasi-coherent $\sh O_X$-Module to be $Z$-pure,
 and from \sref{IV.3.1.7}.
 \end{proof}
 
@@ -80,7 +80,7 @@ This follows immediately from \sref{IV.5.10.2} and
 \label{IV.5.10.5}
 Let $X$ be a locally Noetherian prescheme, let $Z$ be a subset of
 $X$ stable under specialization, and let $\sh F$ be a coherent
-$\sh O_X$-module.  For $\sh F$ to be $Z$-closed, it is necessary
+$\sh O_X$-Module.  For $\sh F$ to be $Z$-closed, it is necessary
 and sufficient that $\operatorname{prof}_Z(\sh F)\geq2$.
 \end{theorem}
 
@@ -117,8 +117,8 @@ $\operatorname{prof}_Z(\sh F/f\sh F)\geq1$, or, by
 to show that this last property is equivalent to $\sh F$ being
 $Z$-closed.
 
-Consider the exact sequence $0\longrightarrow\sh F\xrightarrow{\,f\,}\sh F
-\longrightarrow\sh F/f\sh F\longrightarrow0$,
+Consider the exact sequence $0\to\sh F\xrightarrow{f}\sh F
+\to\sh F/f\sh F\to0$,
 where multiplication by $f$ is injective by hypothesis.  Put
 $W=X\setmin Z$.  We have the commutative diagram
 \[
@@ -167,7 +167,7 @@ follows from $Z$-purity.
 
 \begin{corollary}[5.10.6]
 \label{IV.5.10.6}
-Let $\sh F$ be a coherent $\sh O_X$-module.  For $\sh F$ to be
+Let $\sh F$ be a coherent $\sh O_X$-Module.  For $\sh F$ to be
 $Z$-closed at a point $x$, it is necessary and sufficient that $\operatorname{prof}_{Z_x}(\widetilde{\sh F}_x)\geq2$.
 \end{corollary}
 
@@ -208,11 +208,11 @@ distinct irreducible components of $X$, there is a sequence
 $(X_i)_{0\leq i\leq n}$ of irreducible components of $X$ such
 that $X_0=X'$, $X_n=X''$, and
 \[
-  \codim(X_{i-1}\cap X_i,X)\leq d-1
+  \codim(X_{i-1}\cap X_i,X)\leq d\setmin 1
   \qquad(1\leq i\leq n).
 \]
 In this case one says that $X$ is
-\emph{connected in codimension $\leq d-1$}.
+\emph{connected in codimension $\leq d\setmin 1$}.
 \end{corollary}
 
 \begin{proof}
@@ -261,13 +261,13 @@ Suppose {\rm b)} holds and let $Y\in\mathfrak Y$.  Put
 $U=X\setmin Y$.  If $U'$ and $U''$ are two distinct irreducible
 components of $U$, there are irreducible components $X'$ and
 $X''$ of $X$ such that
-$X'\cap U=U'$ and $X''\cap U=U''$ \sref[0]{0.2.1.6}.
+$X'\cap U=U'$ and $X''\cap U=U''$ \sref[0\textsubscript{\mdseries I}]{0.2.1.6}.
 
 \oldpage[IV-2]{117}
 
 Choose a sequence $(X_i)$ with the property in {\rm b)}, and put
 $U_i=X_i\cap U$ for $0\leq i\leq n$.  Each $U_i$ is an
-irreducible component of $U$ \sref[0]{0.2.1.6}, and
+irreducible component of $U$ \sref[0\textsubscript{\mdseries I}]{0.2.1.6}, and
 $U_i\cap U_{i-1}\ne\varnothing$ for $1\leq i\leq n$: otherwise
 $X_i\cap X_{i-1}\subset Y$, so
 $X_i\cap X_{i-1}\in\mathfrak Y$, contrary to the choice of the
@@ -285,7 +285,7 @@ $U=X\setmin Y$ is connected.  Moreover, $Y$ is nowhere dense in $X$.
 
 Let $X'$ and $X''$ be distinct irreducible components of $X$, and
 let $U'$ and $U''$ be their respective traces on $U$.  They are
-distinct irreducible components of $U$ \sref[0]{0.2.1.6}.
+distinct irreducible components of $U$ \sref[0\textsubscript{\mdseries I}]{0.2.1.6}.
 The union of those irreducible components $W$ of $U$ for which
 there is a sequence $(U_i)_{0\leq i\leq n}$ of irreducible
 components of $U$ satisfying
@@ -299,7 +299,7 @@ Noetherian and its irreducible components form a locally finite
 family of closed subsets.  Since $U$ is connected, there is such
 a sequence ending at $U''$.  Let $X_i$ be the irreducible
 component of $X$ such that $X_i\cap U=U_i$
-\sref[0]{0.2.1.6}.  Since $U_{i-1}\ne U_i$, one has
+\sref[0\textsubscript{\mdseries I}]{0.2.1.6}.  Since $U_{i-1}\ne U_i$, one has
 $X_{i-1}\ne X_i$.  If
 $X_{i-1}\cap X_i\in\mathfrak Y$ for some $i$, then
 $X_{i-1}\cap X_i\subset Y$, contrary to

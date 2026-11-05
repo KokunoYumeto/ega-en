@@ -14,7 +14,7 @@ We limit ourselves here to properties that do not make use of the general techni
 \begin{env}[2.1.1]
 \label{IV.2.1.1}
 Let $f:X\to Y$ be a morphism of preschemes, $\sh{F}$ an $\sh{O}_X$-Module;
-recall~\sref[0\textsubscript{I}]{0.6.7.1} that $\sh{F}$ is said to be \emph{$f$-flat} (or \emph{$Y$-flat}) \emph{at a point} $x\in X$ if $\sh{F}_x$ is a flat $\sh{O}_{f(x)}$-module, \emph{$f$-flat} (or \emph{$Y$-flat}) if it is $f$-flat at every $x\in X$, and finally that the morphism $f$ is said to be \emph{flat at the point} $x\in X$ (resp.\ \emph{flat}) if $\sh{O}_X$ is $f$-flat at the point $x$ (resp.\ $f$-flat).
+recall~\sref[0\textsubscript{\mdseries I}]{0.6.7.1} that $\sh{F}$ is said to be \emph{$f$-flat} (or \emph{$Y$-flat}) \emph{at a point} $x\in X$ if $\sh{F}_x$ is a flat $\sh{O}_{f(x)}$-module, \emph{$f$-flat} (or \emph{$Y$-flat}) if it is $f$-flat at every $x\in X$, and finally that the morphism $f$ is said to be \emph{flat at the point} $x\in X$ (resp.\ \emph{flat}) if $\sh{O}_X$ is $f$-flat at the point $x$ (resp.\ $f$-flat).
 When $f=1_X$, we will simply say that an $\sh{O}_X$-Module $\sh{F}$ is \emph{flat at the point} $x$ (resp.\ \emph{flat}) if it is $X$-flat at this point (resp.\ at every point $x\in X$), that is to say if $\sh{F}_x$ is a flat $\sh{O}_x$-module (resp.\ if this is the case for every $x\in X$).
 Recall that we have shown~\sref[III]{III.1.4.15.1} the following property:
 \end{env}
@@ -38,7 +38,7 @@ Let $f:X\to Y$ be a morphism of preschemes, $\sh{F}$ a quasi-coherent $\sh{O}_X$
 \begin{proof}
 The questions being local on $X$ and $Y$, we can restrict to the case where $Y=\Spec(B)$, $X=\Spec(A)$, $\sh{F}=\widetilde{M}$, where $M$ is an $A$-module.
 It is clear that \emph{a)} implies \emph{a$'$)};
-condition~\emph{a$'$)} implies that for every $x\in X$, the functor $N\leadsto M_\mathfrak{n}\otimes_{B_\mathfrak{n}}N$ is exact in the category of $B_\mathfrak{n}$-modules, $\mathfrak{n}$ being the ideal $\mathfrak{j}_{f(x)}$ of $B$; this means that $M_\mathfrak{n}$ is a flat $B_\mathfrak{n}$-module, and it follows from~\sref[0\textsubscript{I}]{0.6.3.3} and from~\sref{IV.2.1.2} that $\sh{F}$ is $f$-flat.
+condition~\emph{a$'$)} implies that for every $x\in X$, the functor $N\leadsto M_\mathfrak{n}\otimes_{B_\mathfrak{n}}N$ is exact in the category of $B_\mathfrak{n}$-modules, $\mathfrak{n}$ being the ideal $\mathfrak{j}_{f(x)}$ of $B$; this means that $M_\mathfrak{n}$ is a flat $B_\mathfrak{n}$-module, and it follows from~\sref[0\textsubscript{\mdseries I}]{0.6.3.3} and from~\sref{IV.2.1.2} that $\sh{F}$ is $f$-flat.
 Finally, to see that \emph{b)} implies \emph{a)}, we can also restrict to the case where $Y'=\Spec(A')$ is affine and $\sh{G}'=\widetilde{N}'$, where $N'$ is an $A'$-module; the conclusion then follows from~\sref{IV.2.1.2} and from the definition of flatness, since $(M\otimes_B N')^{\sim}=\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$.
 \end{proof}
 
@@ -111,12 +111,12 @@ an exact sequence of quasi-coherent $\sh{O}_X$-Modules, such that $\sh{F}''$ is 
 \end{proposition}
 
 \begin{proof}
-We can evidently suppose $X$, $Y$, $Y'$ affine; the conclusion then follows from~\sref{IV.2.1.2} and from~\sref[0\textsubscript{I}]{0.6.1.2}.
+We can evidently suppose $X$, $Y$, $Y'$ affine; the conclusion then follows from~\sref{IV.2.1.2} and from~\sref[0\textsubscript{\mdseries I}]{0.6.1.2}.
 \end{proof}
 
 \begin{corollary}[2.1.9]
 \label{IV.2.1.9}
-Let $\sh{L}^\bullet$ be a complex of quasi-coherent $\sh{O}_X$-Modules, $i$ an index such that if $d^i:\sh{L}^i\to\sh{L}^{i+1}$ is the derivation operator, $\sh{B}^{i+1}(\sh{L}^\bullet)=\operatorname{Im}(d^i)$ and $\sh{Z}^{i+1}(\sh{L}^\bullet)=\operatorname{Coker}(d^i)$ are $Y$-flat.
+Let $\sh{L}^\bullet$ be a complex of quasi-coherent $\sh{O}_X$-Modules, $i$ an index such that if $d^i:\sh{L}^i\to\sh{L}^{i+1}$ is the derivation operator, $\sh{B}^{i+1}(\sh{L}^\bullet)=\operatorname{Im}(d^i)$ and $\mathscr Z'^{i+1}(\sh{L}^\bullet)=\operatorname{Coker}(d^i)$ are $Y$-flat.
 Then, with the notations of~\sref{IV.2.1.8}, the canonical homomorphism
 \[
   \sh{H}^i(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}' \to \sh{H}^i(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')
@@ -127,25 +127,25 @@ is bijective.
 \begin{proof}
 As the tensor product is right exact, we have
 \[
-  \sh{Z}^{i+1}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}' = \operatorname{Coker}(d^i\otimes 1) = \sh{Z}^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')
+  \mathscr Z'^{i+1}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}' = \operatorname{Coker}(d^i\otimes 1) = \mathscr Z'^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')
 \]
-and $\sh{Z}^{i}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}' = \sh{Z}^{i}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')$.
+and $\mathscr Z'^{i}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}' = \mathscr Z'^{i}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')$.
 Moreover, in the exact sequence
 \[
-  0\to\sh{B}^{i+1}(\sh{L}^\bullet)\to\sh{L}^{i+1}\to\sh{Z}^{i+1}(\sh{L}^\bullet)\to 0
+  0\to\sh{B}^{i+1}(\sh{L}^\bullet)\to\sh{L}^{i+1}\to\mathscr Z'^{i+1}(\sh{L}^\bullet)\to 0
 \]
-$\sh{Z}^{i+1}(\sh{L}^\bullet)$ is $Y$-flat, so it follows from~\sref{IV.2.1.8}[(i)] that the exact sequence
+$\mathscr Z'^{i+1}(\sh{L}^\bullet)$ is $Y$-flat, so it follows from~\sref{IV.2.1.8},~(i) that the exact sequence
 \[
-  0\to\sh{B}^{i+1}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}'\to\sh{L}^{i+1}\otimes_{\sh{O}_Y}\sh{G}'\to\sh{Z}^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to 0
+  0\to\sh{B}^{i+1}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}'\to\sh{L}^{i+1}\otimes_{\sh{O}_Y}\sh{G}'\to\mathscr Z'^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to 0
 \]
 whence $\sh{B}^{i+1}(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}'=\operatorname{Im}(d^i\otimes 1)=\sh{B}^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')$.
 Then, as in the exact sequence
 \[
-  0\to\sh{H}^i(\sh{L}^\bullet)\to\sh{Z}^i(\sh{L}^\bullet)\to\sh{B}^{i+1}(\sh{L}^\bullet)\to 0
+  0\to\sh{H}^i(\sh{L}^\bullet)\to\mathscr Z'^i(\sh{L}^\bullet)\to\sh{B}^{i+1}(\sh{L}^\bullet)\to 0
 \]
-$\sh{B}^{i+1}(\sh{L}^\bullet)$ is $Y$-flat, it follows from~\sref{IV.2.1.8}[(i)] and from what precedes that the sequence
+$\sh{B}^{i+1}(\sh{L}^\bullet)$ is $Y$-flat, it follows from~\sref{IV.2.1.8},~(i) and from what precedes that the sequence
 \[
-  0\to\sh{H}^i(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}'\to\sh{Z}^i(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to\sh{B}^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to 0
+  0\to\sh{H}^i(\sh{L}^\bullet)\otimes_{\sh{O}_Y}\sh{G}'\to\mathscr Z'^i(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to\sh{B}^{i+1}(\sh{L}^\bullet\otimes_{\sh{O}_Y}\sh{G}')\to 0
 \]
 is exact, which proves the corollary.
 \end{proof}
@@ -156,14 +156,22 @@ is exact, which proves the corollary.
 Let $f:X\to Y$ be a morphism of preschemes, $\sh{F}$ a quasi-coherent $\sh{O}_X$-Module which is $Y$-flat, $\sh{L}_\bullet=(\sh{L}_i)$ a left resolution of $\sh{F}$ formed of quasi-coherent $\sh{O}_X$-Modules which are $Y$-flat.
 Then, for every morphism $g:Y'\to Y$ and every quasi-coherent $\sh{O}_{Y'}$-Module $\sh{G}'$, the complex $\sh{L}_\bullet\otimes_{\sh{O}_Y}\sh{G}'=(\sh{L}_i\otimes_{\sh{O}_Y}\sh{G}')_{i\geq 0}$ is a left resolution of $\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$.
 Moreover, if $\sh{Z}_i(\sh{L}_\bullet)=\operatorname{Ker}(\sh{L}_i\to\sh{L}_{i-1})$, the $\sh{Z}_i(\sh{L}_\bullet)$ are $Y$-flat, and we have $\sh{Z}_i(\sh{L}_\bullet)\otimes_{\sh{O}_Y}\sh{G}'=\sh{Z}_i(\sh{L}_\bullet\otimes_{\sh{O}_Y}\sh{G}')=\operatorname{Ker}(\sh{L}_i\otimes_{\sh{O}_Y}\sh{G}'\to\sh{L}_{i-1}\otimes_{\sh{O}_Y}\sh{G}')$.
+\end{corollary}
+
 Setting $\sh{R}_i=\operatorname{Im}(\sh{L}_{i+1}\to\sh{L}_i)=\sh{Z}_i(\sh{L}_\bullet)$; we then have the exact sequences
 \[
   0\leftarrow\sh{F}\leftarrow\sh{L}_0\leftarrow\sh{R}_0\leftarrow 0
 \]
 \[
-  0\leftarrow\sh{R}_i\leftarrow\sh{L}_{i+1}\leftarrow\sh{R}_{i+1}\leftarrow 0 \qquad (i\geq 0)
+\hbox to 12em{\dotfill}
 \]
-and since $\sh{F}$ and $\sh{L}_i$ are $Y$-flat, we deduce from~\sref{IV.2.1.8}[\textup{(ii)}] by induction that all the $\sh{R}_i$ are also $Y$-flat; using~\sref{IV.2.1.8}[(i)], we thus have the exact sequences
+\[
+  0\leftarrow\sh{R}_i\leftarrow\sh{L}_{i+1}\leftarrow\sh{R}_{i+1}\leftarrow 0
+\]
+\[
+\hbox to 12em{\dotfill}
+\]
+and since $\sh{F}$ and $\sh{L}_i$ are $Y$-flat, we deduce from~\sref{IV.2.1.8}[\textup{(ii)}] by induction that all the $\sh{R}_i$ are also $Y$-flat; using~\sref{IV.2.1.8},~(i), we thus have the exact sequences
 \[
   0\leftarrow\sh{F}\otimes_{\sh{O}_Y}\sh{G}'\leftarrow\sh{L}_0\otimes_{\sh{O}_Y}\sh{G}'\leftarrow\sh{R}_0\otimes_{\sh{O}_Y}\sh{G}'\leftarrow 0
 \]
@@ -171,7 +179,6 @@ and since $\sh{F}$ and $\sh{L}_i$ are $Y$-flat, we deduce from~\sref{IV.2.1.8}[\
   0\leftarrow\sh{R}_i\otimes_{\sh{O}_Y}\sh{G}'\leftarrow\sh{L}_{i+1}\otimes_{\sh{O}_Y}\sh{G}'\leftarrow\sh{R}_{i+1}\otimes_{\sh{O}_Y}\sh{G}'\leftarrow 0 \qquad (i\geq 0)
 \]
 which prove the corollary.
-\end{corollary}
 
 \begin{proposition}[2.1.11]
 \label{IV.2.1.11}
@@ -180,7 +187,7 @@ If $\sh{J}$ is the Ideal of $\sh{O}_Y$ annihilator of $\sh{F}$, $f^*(\sh{J})$ is
 \end{proposition}
 
 \begin{proof}
-We have indeed by definition an exact sequence~\sref[0\textsubscript{I}]{0.5.3.7}
+We have indeed by definition an exact sequence~\sref[0\textsubscript{\mdseries I}]{0.5.3.7}
 \[
   0\to\sh{J}\to\sh{O}_Y\to\shHom_{\sh{O}_Y}(\sh{F},\,\sh{F})
 \]
@@ -188,7 +195,7 @@ whence, since $f$ is flat, an exact sequence
 \[
   0\to f^*(\sh{J})\to\sh{O}_X\to f^*(\shHom_{\sh{O}_Y}(\sh{F},\,\sh{F}))
 \]
-and since $\sh{F}$ is an $\sh{O}_Y$-Module of finite presentation, $f^*(\shHom_{\sh{O}_Y}(\sh{F},\,\sh{F}))$ canonically identifies with $\shHom_{\sh{O}_X}(f^*(\sh{F}),f^*(\sh{F}))$~\sref[0\textsubscript{I}]{0.6.7.6}, whence the conclusion.
+and since $\sh{F}$ is an $\sh{O}_Y$-Module of finite presentation, $f^*(\shHom_{\sh{O}_Y}(\sh{F},\,\sh{F}))$ canonically identifies with $\shHom_{\sh{O}_X}(f^*(\sh{F}),f^*(\sh{F}))$~\sref[0\textsubscript{\mdseries I}]{0.6.7.6}, whence the conclusion.
 \end{proof}
 
 \begin{proposition}[2.1.12]
@@ -202,7 +209,7 @@ The following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-Indeed, $\sh{F}_x$ is a module of finite presentation over $\sh{O}_x$, and $\sh{O}_x$ is a local ring; it amounts to the same thing to say that $\sh{F}_x$ is a flat $\sh{O}_x$-module or a free $\sh{O}_x$-module (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~3, n\textsuperscript{o}~2, cor.~2 of prop.~5); whence the conclusion, taking into account~\sref[0\textsubscript{I}]{0.5.2.7}.
+Indeed, $\sh{F}_x$ is a module of finite presentation over $\sh{O}_x$, and $\sh{O}_x$ is a local ring; it amounts to the same thing to say that $\sh{F}_x$ is a flat $\sh{O}_x$-module or a free $\sh{O}_x$-module (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~3, n\textsuperscript{o}~2, cor.~2 of prop.~5); whence the conclusion, taking into account~\sref[0\textsubscript{\mdseries I}]{0.5.2.7}.
 We note that the proposition is valid for any \emph{ringed space with local rings}.
 \end{proof}
 
@@ -216,7 +223,7 @@ If $f$ is faithfully flat and if $X$ is reduced \textnormal{(}resp.\ normal\text
 
 \begin{proof}
 Set $\sh{O}_{f(x)}=A$, $\sh{O}_x=B$.
-If $B$ is a flat $A$-module, it is also a faithfully flat $A$-module~\sref[0\textsubscript{I}]{0.6.6.2}, so $A$ identifies with a subring of $B$; if $B$ is reduced, so is $A$.
+If $B$ is a flat $A$-module, it is also a faithfully flat $A$-module~\sref[0\textsubscript{\mdseries I}]{0.6.6.2}, so $A$ identifies with a subring of $B$; if $B$ is reduced, so is $A$.
 Suppose now that $B$ is integral and integrally closed, and let $L$ be its field of fractions; then $A\subset B$ is integral; denote by $K\subset L$ its field of fractions.
 The hypothesis implies that $B\cap K=A$ (Bourbaki, \emph{Alg.~comm.}, chap.~I, \textsection~3, n\textsuperscript{o}~5, prop.~10).
 If then $t\in K$ is integral over $A$, it is also integral over $B$, so belongs to $B$ by hypothesis, and thus $t\in A$, which proves that $A$ is integrally closed.
@@ -228,7 +235,7 @@ Let $f:X\to Y$ be a faithfully flat morphism. If $X$ is locally integral and if 
 \end{proposition}
 
 \begin{proof}
-Indeed, every $y\in Y$ is of the form $f(x)$ for some $x\in X$ and by hypothesis $\sh{O}_y$ identifies with a subring of $\sh{O}_x$~\sref[0\textsubscript{I}]{0.6.6.1}; as $\sh{O}_x$ is integral, so is $\sh{O}_y$ and this proves the proposition~\sref[I]{I.5.1.4}.
+Indeed, every $y\in Y$ is of the form $f(x)$ for some $x\in X$ and by hypothesis $\sh{O}_y$ identifies with a subring of $\sh{O}_x$~\sref[0\textsubscript{\mdseries I}]{0.6.6.1}; as $\sh{O}_x$ is integral, so is $\sh{O}_y$ and this proves the proposition~\sref[I]{I.5.1.4}.
 \end{proof}
 
 \subsection{Faithfully flat Modules on preschemes}
@@ -241,7 +248,7 @@ Let $f:X\to Y$ be a morphism of preschemes, $\sh{F}$ a quasi-coherent $\sh{O}_X$
   \item[\emph{a)}] For every base change $g:Y'\to Y$, if we set $X'=X\times_Y Y'$, the functor $\sh{G}'\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$, from the category of quasi-coherent $\sh{O}_{Y'}$-Modules to that of quasi-coherent $\sh{O}_{X'}$-Modules, is exact and faithful.
   \item[\emph{a$'$)}] Condition~\emph{a)} is satisfied for all canonical morphisms $g:\Spec(\sh{O}_y)\to Y$~\sref[I]{I.2.4.1}, where $y$ ranges over $Y$.
   \item[\emph{a$''$)}] Condition~\emph{a)} is satisfied for all canonical immersions $Y'\to Y$, where $Y'$ ranges over the set of affine open sub-preschemes of $Y$.
-  \item[\emph{b)}] $\sh{F}$ is $Y$-flat and, for every $y\in Y$, if we denote by $X_y$ the fibre $f^{-1}(y)$, the $\sh{O}_{X_y}$-Module $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}k(y)$ is nonzero.
+  \item[\emph{b)}] $\sh{F}$ is $Y$-flat and, for every $y\in Y$, if we denote by $X_y$ the fibre $f^{-1}(y)$, the $\sh{O}_{X_y}$-Module $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\boldsymbol{k}(y)$ is nonzero.
 \end{enumerate}
 \end{proposition}
 
@@ -258,14 +265,14 @@ In other words, we are reduced to proving the following more precise proposition
 Let $Y=\Spec(A)$ be an affine scheme, $f:X\to Y$ a morphism of preschemes, $\sh{F}$ a quasi-coherent $\sh{O}_X$-Module.
 Condition~\emph{a)} of~\sref{IV.2.2.1} is equivalent to each of the following:
 \begin{enumerate}
-  \item[\emph{b$'$)}] $\sh{F}$ is $Y$-flat and, for every closed point $y$ of $Y$, we have $\sh{F}_y\neq 0$.
+  \item[\emph{b$'$)}] $\sh{F}$ is $Y$-flat and, for every \textup{closed} point $y$ of $Y$, we have $\sh{F}_y\neq 0$.
   \item[\emph{c)}] The functor $\sh{G}\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}$ from the category of quasi-coherent $\sh{O}_Y$-Modules to that of quasi-coherent $\sh{O}_X$-Modules is exact and faithful.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
-If \emph{b$'$)} holds and $y$ is a closed point of $Y$, there is at least one $x\in f^{-1}(y)$ such that $(\sh{F}_y)_x\neq 0$; let $U=\Spec(B)$ be an affine open neighbourhood of $x$, and write $\sh{F}|_U=\widetilde{M}$, where $M$ is a $B$-module.
-Then \emph{b$'$)} implies that $M/\mathfrak{j}_yM$ is nonzero and hence, since $M$ is a flat $A$-module~\sref{IV.2.1.2}, that $M\otimes_A A_y$ is a faithfully flat $A_y$-module~\sref[0\textsubscript{I}]{0.6.4.5}.
+If \emph{b$'$)} holds, there is at least one $x\in f^{-1}(y)$ such that $(\sh{F}_y)_x\neq 0$; let $U=\Spec(B)$ be an affine open neighbourhood of $x$, and write $\sh{F}|U=\widetilde{M}$, where $M$ is a $B$-module.
+Then \emph{b$'$)} implies that $M/\mathfrak{j}_yM$ is nonzero and hence, since $M$ is a flat $A$-module~\sref{IV.2.1.2}, that $M\otimes_A A_y$ is a faithfully flat $A_y$-module~\sref[0\textsubscript{\mdseries I}]{0.6.4.5}.
 The relation $(\sh{F}\otimes_{\sh{O}_Y}\sh{G})\otimes_{\sh{O}_Y}\sh{O}_y=0$ for a closed point $y$ of $Y$ implies $(\sh{F}\otimes_{\sh{O}_Y}\sh{O}_y)\otimes_{\sh{O}_y}\sh{G}_y=0$,
 and therefore $\sh{G}_y=0$.
 But if $\sh{G}_y=0$ for every closed point $y$ of $Y$, we conclude that $\sh{G}=0$: indeed, if $\sh{G}=\widetilde{N}$, the annihilator of every element of $N$ is contained in no maximal ideal of $A$, and hence is all of~$A$.
@@ -273,14 +280,9 @@ The relation $\sh{F}\otimes_{\sh{O}_Y}\sh{G}=0$ implies therefore $\sh{G}=0$, in
 
 Finally, to see that \emph{c)} implies \emph{a)}, we can restrict to the case where $Y'$ is also affine.
 The morphism $g:Y'\to Y$ is then affine, and so is the projection $g':X'\to X$~\sref[II]{II.1.5.5}.
-Moreover, the functor $\sh{H}'\leadsto g'_*(\sh{H}')$ is exact in the category of quasi-coherent $\sh{O}_{X'}$-Modules~\sref[I]{I.1.6.4}; if $g'_*(\sh{H}')=0$, then $\sh{H}'=0$, so this functor is also faithful.
-Consequently, to show that $\sh{G}'\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$ is exact and faithful, it suffices to show that the functor
-\[
-  \sh{G}'\longmapsto
-  g'_*\bigl(g'^*(\sh{F})\otimes_{\sh{O}_{X'}}f'^*(\sh{G}')\bigr)
-\]
-is exact and faithful.
-The fact that $g$ is affine implies that we have a canonical isomorphism
+Moreover, the functor $\sh{H}'\leadsto g'_*(\sh{H}')$ is then exact in the category of quasi-coherent $\sh{O}_{X'}$-Modules~\sref[I]{I.1.6.4}, and if $g'_*(\sh{H}')=\sh{H}$, we have $\sh{H}'=\widetilde{\sh{H}}$, so the preceding functor is also faithful.
+Consequently, to show that $\sh{G}'\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}'$ is exact and faithful, it suffices to show that the functor $\sh{G}'\leadsto g'_*(\sh{F}\otimes_{\sh{O}_Y}\sh{G}')$ is.
+Now, if $f'=f_{(Y')}:X'\to Y'$, we have $g'_*(\sh{F}\otimes_{\sh{O}_Y}\sh{G}')=g'_*\bigl(g'^*(\sh{F})\otimes_{\sh{O}_{X'}}f'^*(\sh{G}')\bigr)$; the fact that $g$ is affine implies that we have a canonical isomorphism
 
 \begin{equation}
 \tag{2.2.2.1}
@@ -292,9 +294,8 @@ Indeed, we know~\sref[II]{II.1.5.2} that we have a canonical isomorphism
 \[
   f^*(g_*(\sh{G}'))\xrightarrow{\sim} g'_*(f'^*(\sh{G}')),
 \]
-and on the other hand a canonical homomorphism $\sh{F}\to g'_*(g'^*(\sh{F}))$~\sref[0\textsubscript{I}]{0.4.4.3.2}; composing the homomorphism $\sh{F}\otimes_{\sh{O}_X}f^*(g_*(\sh{G}'))\to g'_*(g'^*(\sh{F}))\otimes_{\sh{O}_X}g'_*(f'^*(\sh{G}'))$ with the canonical homomorphism~\sref[0\textsubscript{I}]{0.4.2.2.1}, we deduce the homomorphism~\sref{IV.2.2.2.1}; the verification that it is an isomorphism is immediate by reducing to the case where $X$ is affine.
-This being so, the functor $\sh{G}'\leadsto g_*(\sh{G}')$ is exact and faithful, and by hypothesis the same is true of the functor $\sh{G}\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}=\sh{F}\otimes_{\sh{O}_X}f^*(\sh{G})$ from quasi-coherent $\sh{O}_Y$-Modules to quasi-coherent $\sh{O}_X$-Modules.
-Their composite is therefore exact and faithful, which completes the proof of~\sref{IV.2.2.1} and~\sref{IV.2.2.2}.
+and on the other hand a canonical homomorphism $\sh{F}\to g'_*(g'^*(\sh{F}))$~\sref[0\textsubscript{\mdseries I}]{0.4.4.3.2}; composing the homomorphism $\sh{F}\otimes_{\sh{O}_X}f^*(g_*(\sh{G}'))\to g'_*(g'^*(\sh{F}))\otimes_{\sh{O}_X}g'_*(f'^*(\sh{G}'))$ with the canonical homomorphism~\sref[0\textsubscript{\mdseries I}]{0.4.2.2.1}, we deduce the homomorphism~\sref{IV.2.2.2.1}; the verification that it is an isomorphism is immediate by reducing to the case where $X$ is affine.
+This being so, the functor $\sh{G}'\leadsto g_*(\sh{G}')$ is exact and faithful, and by hypothesis the same is true of $\sh{G}\leadsto\sh{F}\otimes_{\sh{O}_Y}\sh{G}=\sh{F}\otimes_{\sh{O}_X}f^*(\sh{G})$; their composite is therefore exact and faithful, which completes the proof of~\sref{IV.2.2.1} and~\sref{IV.2.2.2}.
 \end{proof}
 
 \begin{corollary}[2.2.3]
@@ -304,7 +305,7 @@ For $\sh{F}$ to satisfy the equivalent conditions of~\sref{IV.2.2.1} \textnormal
 \end{corollary}
 
 \begin{proof}
-Indeed, condition~\emph{c)} of~\sref{IV.2.2.2} means that the functor $N\leadsto M\otimes_A N$ from the category of $A$-modules to that of $B$-modules is exact and faithful, and the conclusion follows from~\sref[0\textsubscript{I}]{0.6.4.1}.
+Indeed, condition~\emph{c)} of~\sref{IV.2.2.2} means that the functor $N\leadsto M\otimes_A N$ from the category of $A$-modules to that of $B$-modules is exact and faithful, and the conclusion follows from~\sref[0\textsubscript{\mdseries I}]{0.6.4.1}.
 \end{proof}
 
 \begin{definition}[2.2.4]
@@ -314,7 +315,7 @@ When the equivalent conditions of~\sref{IV.2.2.1} are satisfied, we say that the
 
 \oldpage[IV-2]{11}
 We note that this notion is local over $Y$, but \emph{not over} $X$; in particular we can have $\sh{F}_x=0$ for certain $x\in X$, in other words $\operatorname{Supp}(\sh{F})$ is not necessarily equal to~$X$.
-However, it follows immediately from criterion~\sref{IV.2.2.1}\emph{(b)} that for every $y\in Y$, there exists at least one $x\in f^{-1}(y)$ such that $(\sh{F}_y)_x=\sh{F}_x\otimes_{\sh{O}_y}k(y)\neq 0$, and \emph{a fortiori} $\sh{F}_x\neq 0$; in other terms:
+However, it follows immediately from criterion~\sref{IV.2.2.1}\emph{(b)} that for every $y\in Y$, there exists at least one $x\in f^{-1}(y)$ such that $(\sh{F}_y)_x=\sh{F}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)\neq 0$, and \emph{a fortiori} $\sh{F}_x\neq 0$; in other terms:
 
 \begin{corollary}[2.2.5]
 \label{IV.2.2.5}
@@ -331,7 +332,7 @@ Let $\sh{F}$ be a quasi-coherent $\sh{O}_X$-Module of finite type. For $\sh{F}$ 
 
 \begin{proof}
 Indeed, by~\sref[I]{I.9.1.13} and~\sref[I]{I.3.6.1}, we have $\operatorname{Supp}(\sh{F}_y)=f^{-1}(y)\cap\operatorname{Supp}(\sh{F})$, so in this case criterion~\sref{IV.2.2.1}\emph{(b)} is precisely the condition of the corollary.
-In particular, the $\sh{O}_X$-Module $\sh{O}_X$ is faithfully flat relative to $f$ if and only if $f$ is flat and surjective, that is to say if and only if the \emph{morphism $f$ is faithfully flat}~\sref[0\textsubscript{I}]{0.6.7.8}.
+In particular, the $\sh{O}_X$-Module $\sh{O}_X$ is faithfully flat relative to $f$ if and only if $f$ is flat and surjective, that is to say if and only if the \emph{morphism $f$ is faithfully flat}~\sref[0\textsubscript{\mdseries I}]{0.6.7.8}.
 \end{proof}
 
 Let us spell out the properties intervening in definition~\sref{IV.2.2.4}:
@@ -362,7 +363,7 @@ is injective.
 \end{corollary}
 
 \begin{proof}
-Indeed, there are canonical identifications~\sref[0\textsubscript{I}]{0.5.1.1}
+Indeed, there are canonical identifications~\sref[0\textsubscript{\mdseries I}]{0.5.1.1}
 \begin{align*}
   \Gamma(Y,\,\sh{G})
     &\simeq \operatorname{Hom}_{\sh{O}_Y}(\sh{O}_Y,\,\sh{G}),\\
@@ -392,7 +393,7 @@ Consider a base change $Z''\to Z$ and set $X''=X'\times_Z Z''$; if $\sh{G}'$ is 
 \begin{equation}
 \tag{2.2.10.1}
 \label{IV.2.2.10.1}
-\sh{H}''\leadsto\sh{H}''\otimes_Z\sh{G}'\to(\sh{H}''\otimes_Z\sh{G}')\otimes_{\sh{O}_Y}\sh{F}=\sh{H}''\otimes_Z(\sh{G}'\otimes_{\sh{O}_Y}\sh{F})
+\sh{H}''\leadsto\sh{H}''\otimes_Z\sh{G}'\leadsto(\sh{H}''\otimes_Z\sh{G}')\otimes_{\sh{O}_Y}\sh{F}=\sh{H}''\otimes_Z(\sh{G}'\otimes_{\sh{O}_Y}\sh{F})
 \end{equation}
 from the category of $\sh{O}_{Z''}$-Modules to that of $\sh{O}_{X''}$-Modules is composed of two exact and faithful functors, so this functor is also exact and faithful.
 Conversely, if this composite functor is exact \textnormal{(}resp.\ exact and faithful\textnormal{)}, the same is true of $\sh{H}''\leadsto\sh{H}''\otimes_Z\sh{G}'$, since the functor $\sh{M}'\leadsto\sh{M}'\otimes_{\sh{O}_Y}\sh{F}$ from quasi-coherent $\sh{O}_{Y'}$-Modules to quasi-coherent $\sh{O}_{X'}$-Modules is exact and faithful by hypothesis.
@@ -417,7 +418,7 @@ Conversely, if this composite functor is exact \textnormal{(}resp.\ exact and fa
 To prove~(i), we apply~\sref{IV.2.2.10}, replacing $Z$ by $Y'$ and $\sh{G}'$ by $\sh{O}_{Y'}$.
 To prove~(ii), we apply~\sref{IV.2.2.10} taking $Y'\to Y$ the identity and replacing $\sh{G}'$ by $\sh{O}_Y$.
 To prove~(iii), we apply~\sref{IV.2.2.10}, again taking $Y'\to Y$ to be the identity, and replacing $\sh{F}$ by $\sh{O}_X$ and $\sh{G}'$ by $\sh{G}$.
-Finally, (iv) is deduced from~(ii) by replacing $X$ by $\Spec(\sh{O}_x)$, $\sh{F}$ by $\sh{O}_X$, $Y$ by $\Spec(\sh{O}_{f(x)})$ and $Z$ by $\Spec(\sh{O}_{g(f(x))})$, and taking into account~\sref[0\textsubscript{I}]{0.6.6.2}.
+Finally, (iv) is deduced from~(ii) by replacing $X$ by $\Spec(\sh{O}_x)$, $\sh{F}$ by $\sh{O}_X$, $Y$ by $\Spec(\sh{O}_{f(x)})$ and $Z$ by $\Spec(\sh{O}_{g(f(x))})$, and taking into account~\sref[0\textsubscript{\mdseries I}]{0.6.6.2}.
 \end{proof}
 
 \begin{corollary}[2.2.12]
@@ -457,7 +458,7 @@ If $X$ is locally Noetherian, so is $Y$.
 
 \begin{proof}
 The question being local on $Y$, we can suppose $Y=\Spec(A)$ affine; as $f$ is quasi-compact, it follows from~\sref{IV.2.2.12} that we can also restrict to the case where $X=\Spec(B)$ is affine.
-Then $B$ is a Noetherian ring by hypothesis, and a faithfully flat $A$-module~\sref{IV.2.2.3}; so $A$ is Noetherian~\sref[0\textsubscript{I}]{0.6.5.2}.
+Then $B$ is a Noetherian ring by hypothesis, and a faithfully flat $A$-module~\sref{IV.2.2.3}; so $A$ is Noetherian~\sref[0\textsubscript{\mdseries I}]{0.6.5.2}.
 \end{proof}
 
 \begin{proposition}[2.2.15]
@@ -559,8 +560,8 @@ Let $f:X\to Y$ be a quasi-flat morphism~\sref{IV.2.3.3}. Then $f$ possesses the 
 It suffices, for example, to prove~(ii).
 By hypothesis, there is an $\sh{O}_X$-Module quasi-coherent of finite type $\sh{F}$, which is $f$-flat and such that $\operatorname{Supp}(\sh{F})=X$.
 For every $x\in X$, $\sh{F}_x$ is then an $\sh{O}_x$-module of finite type, nonzero, and moreover $\sh{F}_x$ is an $\sh{O}_y$-module \emph{flat}, for the homomorphism $\rho:\sh{O}_y\to\sh{O}_x$.
-As the latter is local and $\sh{F}_x\neq 0$, the Nakayama lemma shows that $\sh{F}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)\neq 0$, so $\sh{F}_x$ is a faithfully flat $\sh{O}_y$-module~\sref[0]{0.6.4.1}.
-It follows that for every prime ideal $\mathfrak{q}$ of $\sh{O}_y$, there exists a prime ideal $\mathfrak{p}$ of $\sh{O}_x$ such that $\mathfrak{q}=\rho^{-1}(\mathfrak{p})$~\sref[0]{0.6.5.1}, which proves~(ii).
+As the latter is local and $\sh{F}_x\neq 0$, the Nakayama lemma shows that $\sh{F}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)\neq 0$, so $\sh{F}_x$ is a faithfully flat $\sh{O}_y$-module~\sref[0\textsubscript{\mdseries I}]{0.6.4.1}.
+It follows that for every prime ideal $\mathfrak{q}$ of $\sh{O}_y$, there exists a prime ideal $\mathfrak{p}$ of $\sh{O}_x$ such that $\mathfrak{q}=\rho^{-1}(\mathfrak{p})$~\sref[0\textsubscript{\mdseries I}]{0.6.5.1}, which proves~(ii).
 \end{proof}
 
 \begin{corollary}[2.3.5]
@@ -579,14 +580,14 @@ Let $f:X\to Y$ be a morphism satisfying the equivalent conditions~(i), (ii), (ii
 (ii) It is clear that $\overline{f(\mathrm{T})}=Z$ is irreducible, and by virtue of~(i), $Z$ cannot be strictly contained in a closed irreducible part of $Y$.
 
 (iii) By virtue of~(ii), every irreducible component of $X$ dominates $Y$, and hence meets $f^{-1}(y)$, where $y$ is the generic point of $Y$.
-The conclusion then follows from~\sref[0]{0.2.1.8}.
+The conclusion then follows from~\sref[0\textsubscript{\mdseries I}]{0.2.1.8}.
 \end{proof}
 
 \begin{proposition}[2.3.6]
 \label{IV.2.3.6}
 Let $Y$ be a prescheme whose set of irreducible components is locally finite \textnormal{(}which is the case if the underlying space is locally Noetherian~(cf.~\sref[I]{I.6.1.9})\textnormal{)}.
 \begin{enumerate}
-  \item[\textup{(i)}] Every closed subset $W$ of $Y$ stable by generization~\sref[0]{0.2.1.2} is open. In particular, every connected component of $Y$ is open.
+  \item[\textup{(i)}] Every closed subset $W$ of $Y$ stable by generization~\sref[0\textsubscript{\mdseries I}]{0.2.1.2} is open. In particular, every connected component of $Y$ is open.
   \item[\textup{(ii)}] Let $f:X\to Y$ be a closed morphism satisfying in addition the equivalent conditions~(i), (ii), (iii) of~\sref{IV.2.3.4} \textnormal{(}which will be the case if $f$ is quasi-flat or open\textnormal{)}. Then the image under $f$ of every connected component $C$ of $X$ is a connected component of $Y$.
   \item[\textup{(iii)}] Let $f:X\to Y$ be a morphism satisfying the equivalent conditions~(i), (ii), (iii) of~\sref{IV.2.3.4}, and such that moreover for every $y\in Y$, the set $f^{-1}(y)$ is finite \textnormal{(}which will be the case if $f$ is quasi-finite or radicial\textnormal{)}. Then the set of irreducible components of $X$ is locally finite.
 \end{enumerate}
@@ -595,7 +596,7 @@ Let $Y$ be a prescheme whose set of irreducible components is locally finite \te
 \begin{proof}
 \oldpage[IV-2]{16}
 (i) If $y\in W$, the generic points $\eta_i$ ($1\leq i\leq m$) of the irreducible components $Y_i$ of $Y$ containing $y$ belong to $W$ by hypothesis.
-Since $W$ is closed, these components themselves are contained in $W$; and since there is by hypothesis a neighbourhood $U$ of $y$ which is the union of the $U\cap Y_i$~\sref[0]{0.2.1.6}, we have $U\subset W$, so $W$ is open.
+Since $W$ is closed, these components themselves are contained in $W$; and since there is by hypothesis a neighbourhood $U$ of $y$ which is the union of the $U\cap Y_i$~\sref[0\textsubscript{\mdseries I}]{0.2.1.6}, we have $U\subset W$, so $W$ is open.
 Since for every $y\in Y$, $\overline{\{y\}}$ is connected, a connected component of $Y$ is stable by generization, so the second assertion follows immediately from the first.
 
 (ii) Since $C$ is closed in $X$, $f(C)$ is closed in $Y$ by hypothesis.
@@ -644,8 +645,8 @@ Then the $\mathfrak{m}$-adic topology of $A$ is induced by the $\mathfrak{n}$-ad
 \begin{proof}
 \oldpage[IV-2]{17}
 Set $B'=B\otimes_A\widehat{A}$; by hypothesis $1^\circ$, $B'$ is of the form $S^{-1}(C\otimes_A\widehat{A})$, where $C$ is an $A$-algebra of finite type and $S$ is a multiplicative subset of $C$; hence $B'$ is Noetherian.
-As $A$ identifies with a subring of $\widehat{A}$~\sref[0]{0.7.3.5}, $A$ is integral by hypothesis $2^\circ$.
-Hypothesis $3^\circ$ implies that there exists a prime ideal $\mathfrak{q}$ of $B$ inducing the zero ideal of $A$~\sref[0]{0.1.5.8}; consequently, the local homomorphism $A\to B/\mathfrak{q}$ is injective.
+As $A$ identifies with a subring of $\widehat{A}$~\sref[0\textsubscript{\mdseries I}]{0.7.3.5}, $A$ is integral by hypothesis $2^\circ$.
+Hypothesis $3^\circ$ implies that there exists a prime ideal $\mathfrak{q}$ of $B$ inducing the zero ideal of $A$~\sref[0\textsubscript{\mdseries I}]{0.1.5.8}; consequently, the local homomorphism $A\to B/\mathfrak{q}$ is injective.
 We can therefore restrict to proving the conclusion of~\sref{IV.2.3.8} under the added hypothesis that $B$ is a local ring which is \emph{integral}.
 Apply~\sref{IV.2.3.7},~(ii) to $Y=\Spec(A)$, $X=\Spec(B)$, $Y'=\Spec(\widehat{A})$, and $X'=\Spec(B')$.
 Since $Y'\to Y$ is flat and the integral scheme $X$ dominates the integral scheme $Y$, every irreducible component of $X'$ dominates $Y'$.
@@ -659,8 +660,8 @@ Consequently, there is a commutative diagram of local homomorphisms of Noetheria
 \]
 in which $u$ and $v$ are injective~\sref[I]{I.1.2.7}.
 Identify $A$ and $\widehat{A}$ with subrings of $\sh{O}_{x'}$, and let $\mathfrak{r}$ be the maximal ideal of $\sh{O}_{x'}$.
-Then $\bigcap_k(\mathfrak{r}^k\cap\widehat{A})=0$~\sref[0]{0.7.3.5}; since $\widehat{A}$ is complete and these ideals are open in $\widehat{A}$, it follows (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~2, n\textsuperscript{o}~7, prop.~8) that the topology of $\widehat{A}$ is induced by the $\mathfrak{r}$-preadic topology of $\sh{O}_{x'}$.
-\emph{A fortiori}, the same is true of the topology of $A$~\sref[0]{0.7.3.5}.
+Then $\bigcap_k(\mathfrak{r}^k\cap\widehat{A})=0$~\sref[0\textsubscript{\mdseries I}]{0.7.3.5}; since $\widehat{A}$ is complete and these ideals are open in $\widehat{A}$, it follows (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~2, n\textsuperscript{o}~7, prop.~8) that the topology of $\widehat{A}$ is induced by the $\mathfrak{r}$-preadic topology of $\sh{O}_{x'}$.
+\emph{A fortiori}, the same is true of the topology of $A$~\sref[0\textsubscript{\mdseries I}]{0.7.3.5}.
 Moreover, $\mathfrak{n}^k\cap A\subset\mathfrak{r}^k\cap A$, so the $\mathfrak{n}$-preadic topology of $B$ induces on $A$ a topology finer than the $\mathfrak{m}$-preadic topology; but $\mathfrak{m}^k\subset\mathfrak{n}^k\cap A$, so these two topologies are identical.
 \end{proof}
 
@@ -673,7 +674,7 @@ This is why, in Algebraic Geometry over a base field, one generally states~\sref
 \begin{theorem}[2.3.10]
 \label{IV.2.3.10}
 Let $f:X\to Y$ be a quasi-flat morphism~\sref{IV.2.3.3}.
-Then, for every pro-constructible part~{\hyperref[IV.1.9.4]{(1.9.4)}} $Z$ of $Y$, we have $\overline{f^{-1}(Z)}=f^{-1}(\overline{Z})$.
+Then, for every pro-constructible part~{\hyperref[IV.1.9.4]{(1.9.4)}} $Z$ of $Y$, we have $f^{-1}(\overline Z)=\overline{f^{-1}(Z)}$.
 \end{theorem}
 
 \begin{proof}
@@ -791,33 +792,36 @@ We will see further on~\sref{IV.14.3.2} that when $Y$ is locally Noetherian, the
 Assertion~(i) follows from~\sref[I]{I.4.3.2}.
 Assertion~(ii) follows immediately from the definitions. The same is true of~(iii), after reducing to the case $Y=S$ and $Y'=S'$, as permitted by~\sref[I]{I.3.3.11}; assertion~(iv) follows from~(ii),~(iii), and~\sref[I]{I.3.5.1}.
 
-To prove~(v), note that after every morphism $Z'\to Z$, the base change $f_{(Z')}:X_{(Z')}\longrightarrow Y_{(Z')}$
-is surjective~\sref[I]{I.3.5.2}. It is therefore enough to use the following
-purely topological fact: if $f$ is surjective and $g\circ f$ is open
+To prove~(v), note that for every morphism $Z'\to Z$, $f_{(Z')}:X_{(Z')}\to Y_{(Z')}$
+is surjective~\sref[I]{I.3.5.2}; we may therefore restrict ourselves to proving
+that if $g\circ f$ is open
 \textnormal{(}resp.\ closed, resp.\ a
 \oldpage[IV-2]{20}
 homeomorphism onto its image, resp.\ a bijective homeomorphism\textnormal{)},
-then $g$ has the corresponding property. In the open and closed cases this
-is Bourbaki, \emph{Top.~g\'{e}n.}, chap.~I\textsuperscript{er},
+so is $g$, and this is therefore a purely topological question. For the case
+where $g\circ f$ is open \textnormal{(}resp.\ closed\textnormal{)}, the fact
+that $g$ is then open \textnormal{(}resp.\ closed\textnormal{)} follows from
+Bourbaki, \emph{Top.~g\'{e}n.}, chap.~I\textsuperscript{er},
 3\textsuperscript{e}~\'{e}d., \textsection~5, n\textsuperscript{o}~1,
-prop.~1. In the other two cases we may replace $Z$ by $g(Y)$ and thus
-suppose that $g(f(X))=g(Y)=Z$. Then $g\circ f$ is a homeomorphism of $X$
-onto $Z$; since $f$ is surjective, $g$ is bijective, and since the preceding
-case shows that $g$ is open, $g$ is a homeomorphism of $Y$ onto $Z$.
+prop.~1; for the other two cases, we may restrict ourselves to supposing that
+$g(f(X))=g(Y)=Z$, in other words to the case where $g\circ f$ is a
+homeomorphism of $X$ onto $Z$; since $f$ is surjective, $g$ is necessarily
+bijective, and since $g$ is a continuous open map by what precedes, $g$ is
+indeed a homeomorphism of $Y$ onto $Z$.
 To prove~(vi), note that a morphism $g$ is open \textnormal{(}resp.\ closed, resp.\ a homeomorphism onto its image, resp.\ a bijective homeomorphism\textnormal{)} if and only if $g_{\mathrm{red}}$ has the same property.
-On the other hand, for every morphism $Y''\to Y$, we have $\bigl(X_{\mathrm{red}}\times_{Y_{\mathrm{red}}}Y''_{\mathrm{red}}\bigr)_{\mathrm{red}}
-=(X\times_Y Y'')_{\mathrm{red}}$
+On the other hand, for every morphism $Y'\to Y$, we have $\bigl(X_{\mathrm{red}}\times_{Y_{\mathrm{red}}}Y'_{\mathrm{red}}\bigr)_{\mathrm{red}}
+=(X\times_Y Y')_{\mathrm{red}}$
 by~\sref[I]{I.5.1.8}; hence the preceding remark shows that if $f_{\mathrm{red}}$ is universally open \textnormal{(}resp.\ universally closed, resp.\ universally bicontinuous, resp.\ a universal homeomorphism\textnormal{)}, then so is $f$.
 The converse is proved in the same manner, noting here that for every morphism $Y''\to Y_{\mathrm{red}}$, we have $(X_{\mathrm{red}}\times_{Y_{\mathrm{red}}}Y'')_{\mathrm{red}}=(X\times_Y Y'')_{\mathrm{red}}$~\sref[I]{I.5.1.8}.
 
 Finally, the necessity of condition~(vii) follows immediately from~(iii).
 Conversely, suppose the condition satisfied, and let $g:Y'\to Y$ be a morphism; then the $g^{-1}(U_\alpha)=U'_\alpha$ form an open covering of $Y'$ and if one notes $f_\alpha$ the restriction $f^{-1}(U_\alpha)\to U_\alpha$ of $f$, and $f'$ the morphism $f_{(Y')}$, the restriction $f'^{-1}(U'_\alpha)\to U'_\alpha$ is nothing other than $(f_\alpha)_{(U'_\alpha)}$.
-We can therefore restrict to proving that $f'$ is open \textnormal{(}resp.\ closed, resp.\ a homeomorphism onto its image, resp.\ a homeomorphism onto $Y'$\textnormal{)}, which is immediate.
+We can therefore restrict to proving that $f$ is open \textnormal{(}resp.\ closed, resp.\ a homeomorphism onto its image, resp.\ a homeomorphism onto $Y$\textnormal{)}, which is immediate.
 \end{proof}
 
 \begin{proposition}[2.4.4]
 \label{IV.2.4.4}
-A universally bicontinuous morphism $f:X\to Y$ is radicial \textnormal{(}and hence separated~(I,~7.7.1)\textnormal{)}.
+A universally bicontinuous morphism $f:X\to Y$ is radicial \textnormal{(}and hence separated~\textup{(1.8.7.1)}\textnormal{)}.
 \end{proposition}
 
 \begin{proof}
@@ -834,7 +838,7 @@ Indeed, $f$ is universally injective by hypothesis~\sref[I]{I.3.5.11}.
 \end{proposition}
 
 \begin{proof}
-(i) The three properties of $f$ are preserved by base change~\sref[I]{I.3.5.2},~\sref[I]{I.3.5.7}, and~\sref[II]{II.6.1.5}. Since an integral morphism is closed~\sref[II]{II.6.1.10}, $f$ is a homeomorphism of $X$ onto $Y$.
+(i) It suffices to observe that the three properties of $f$ are preserved by base change~\sref[I]{I.3.5.2},~\sref[I]{I.3.5.7}, and~\sref[II]{II.6.1.5}, and since an integral morphism is closed~\sref[II]{II.6.1.10}, it is clear that $f$ is a homeomorphism of $X$ onto $Y$.
 
 (ii) The morphism $f$ is of finite type and universally closed by hypothesis, and it is separated by~\sref{IV.2.4.4}; hence it is proper~\sref[II]{II.5.4.1}. For every $y\in Y$, the fiber $f^{-1}(y)$ consists of a single point, so~\sref[III]{III.4.4.2} implies that $f$ is finite. It is plainly surjective, and it is radicial because it is universally injective~\sref[I]{I.3.5.11}.
 \end{proof}
@@ -847,10 +851,10 @@ In particular, a flat morphism locally of finite presentation is universally ope
 \end{theorem}
 
 \begin{proof}
-We know that for every base change $Y'\to Y$, $f_{(Y')}$ is quasi-flat~\sref{IV.2.3.3} and locally of finite presentation~\sref{IV.1.4.3}[iii].
+We know that for every base change $Y'\to Y$, $f_{(Y')}$ is quasi-flat~\sref{IV.2.3.3} and locally of finite presentation~\sref{IV.1.4.3},~(iii).
 It suffices therefore to prove that $f$ is an
 \oldpage[IV-2]{21}
-open morphism.
+\emph{open} morphism.
 But this follows from the criterion~\sref{IV.1.10.4} for morphisms locally of finite presentation, conditions~\emph{b)}, \emph{b$'$)}, and \emph{c)} of~\sref{IV.1.10.4} being nothing other than conditions~(i), (ii), (iii) of~\sref{IV.2.3.4}.
 \end{proof}
 
@@ -861,7 +865,7 @@ For every prescheme $Y$, the structural morphism
   \mathbf{V}_Y^n\longrightarrow Y,
   \qquad
   \mathbf{V}_Y^n
-  =Y\times_{\Spec(\mathbf{Z})}\Spec\bigl(\mathbf{Z}[T_1,\ldots,T_n]\bigr),
+  =Y\otimes_{\mathbf{Z}}\Spec\bigl(\mathbf{Z}[T_1,\ldots,T_n]\bigr),
 \]
 where $\mathbf{V}_Y^n$ is also denoted by $Y[T_1,\ldots,T_n]$, is universally open.
 \end{corollary}
@@ -870,34 +874,33 @@ where $\mathbf{V}_Y^n$ is also denoted by $Y[T_1,\ldots,T_n]$, is universally op
 Indeed, for $Y=\Spec(A)$, $Y[T_1,\ldots,T_n]=\Spec(A[T_1,\ldots,T_n])$, and $A[T_1,\ldots,T_n]$ is a free $A$-algebra of finite presentation.
 \end{proof}
 
-\begin{remark}[2.4.8]
+\begin{remarks}[2.4.8]
 \label{IV.2.4.8}
 \medskip\noindent
 \begin{enumerate}
   \item[(i)] A faithfully flat and quasi-compact morphism $f:X\to Y$ is \emph{not necessarily open}, even when $X$ and $Y$ are Noetherian.
-    For example, let $Y$ be a reduced irreducible algebraic curve~\sref[II]{II.7.4.2} with generic point $y$, let $X=Y\coprod\Spec(k(y))$, and let $f$ be the canonical morphism. It is clear that $f$ is flat and surjective, hence faithfully flat, and it is quasi-compact. But the image under $f$ of the open subset $\Spec(k(y))$ of $X$ is $\{y\}$, which is not open in $Y$~\sref[II]{II.7.4.3}.
-  \item[(ii)] For every prescheme $X$, the canonical morphism $f:X_{\mathrm{red}}\to X$ is a closed immersion and a \emph{universal homeomorphism} by~\sref{IV.2.4.3},~(vi). But when $X$ is locally Noetherian, $f$ is flat only if $X$ is reduced, in which case $f=1_X$~\sref{IV.2.2.17}.
+    For example, let $Y$ be a reduced irreducible algebraic curve~\sref[II]{subsection:II.7.4} with generic point $y$, let $X$ be the sum prescheme $Y\amalg\Spec(\boldsymbol{k}(y))$, and let $f$ be the canonical morphism. It is clear that $f$ is flat and surjective, hence faithfully flat, and it is quasi-compact. But the image under $f$ of the open subset $\Spec(\boldsymbol{k}(y))$ of $X$ is $\{y\}$, which is not open in $Y$~\sref[II]{II.7.4.3}.
+  \item[(ii)] For every prescheme $X$, the canonical morphism $f:X_{\mathrm{red}}\to X$ is a closed immersion and a \emph{universal homeomorphism} by~\sref{IV.2.4.3},~(vi). But when $X$ is locally Noetherian, $f$ is \emph{flat} only if $X$ is reduced, in which case $f=1_X$~\sref{IV.2.2.17}.
 \end{enumerate}
-\end{remark}
+\end{remarks}
 
 \begin{proposition}[2.4.9]
 \label{IV.2.4.9}
-Let $Y$ be a \emph{discret}e prescheme. Then every morphism $f:X\to Y$ is universally open.
+Let $Y$ be a \emph{discrete} prescheme. Then every morphism $f:X\to Y$ is universally open.
 \end{proposition}
 
 \begin{proof}
-The question is local on $Y$~\sref{IV.2.4.3},~(vii), so we may assume that the underlying space of $Y$ consists of a single point. Replacing $f$ by $f_{\mathrm{red}}$~\sref{IV.2.4.3},~(vi), we may further assume that $Y$ is the spectrum of a \emph{field} $k$. For every base change $Y'\to Y$, the inverse images in $X'=X\times_Y Y'$ of the affine open subsets of $X$ cover $X'$, so we may also suppose that $X=\Spec(B)$ is affine, with $B$ a $k$-algebra.
-It suffices then to prove that for every $k$-algebra $A'$, if we set $B'=B\otimes_k A'$, the image of every open subset of the form $U=D(t)$ ($t\in B'$) is open in $\Spec(A')$.
+The question is local on $Y$~\sref{IV.2.4.3},~(vii), so we may assume that the underlying space of $Y$ consists of a single point. Replacing $f$ by $f_{\mathrm{red}}$~\sref{IV.2.4.3},~(vi), we may further assume that $Y$ is the spectrum of a \emph{field} $k$. For every base change $Y'\to Y$, the inverse images in $X'=X\times_Y Y'$ of the affine open subsets of $X$ cover $X'$, so we may also suppose that $X=\Spec(B)$ is affine, with $B$ a \emph{$k$-algebra}.
+It suffices then to prove that for every $k$-algebra $A'$, if we set $B'=B\otimes_k A'$, the image under $f':\Spec(B')\to\Spec(A')$ of every open subset of the form $U=D(t)$ ($t\in B'$) is open in $\Spec(A')$.
 Now $B$ is the filtered direct limit of the increasing family $(B_\alpha)$ of its sub-$k$-algebras \emph{of finite type}. Since filtered direct limits commute with tensor products, $B'$ is the direct limit of the $A'$-algebras $B_\alpha\otimes_k A'=B'_\alpha$.
 There exists $\alpha$ such that $t$ is the image in $B'$ of an element $t_\alpha\in B'_\alpha$, so $D(t)$ is the inverse image under the canonical morphism $u_\alpha:\Spec(B')\to\Spec(B'_\alpha)$ of the open subset $U_\alpha=D(t_\alpha)$~\sref[I]{I.1.2.2.2}.
-But since $k$ is a field, $B_\alpha$ is a $k$-algebra of finite presentation and a $k$-module flat, hence $B'_\alpha$ is an $A'$-algebra of finite presentation and a flat $A'$-module; we thus conclude from~\sref{IV.2.4.6} that the image of $U_\alpha$ by $f'_\alpha:\Spec(B'_\alpha)\to\Spec(A')$ is \emph{open} in $\Spec(A')$.
+But since $k$ is a field, $B_\alpha$ is a $k$-algebra of finite presentation and a flat $k$-module, hence $B'_\alpha$ is an $A'$-algebra of finite presentation and a flat $A'$-module; we thus conclude from~\sref{IV.2.4.6} that the image of $U_\alpha$ by $f'_\alpha:\Spec(B'_\alpha)\to\Spec(A')$ is \emph{open} in $\Spec(A')$.
 It remains to prove that $f'(U)=f'_\alpha(U_\alpha)$. The inclusion $f'(U)\subset f'_\alpha(U_\alpha)$ is clear, so it remains to show that, for every point $y'\in f'_\alpha(U_\alpha)$, the intersection $V=U\cap f'^{-1}(y')$ is nonempty.
-Now $V=u_\alpha^{-1}(V_\alpha)$, where $V_\alpha=U_\alpha\cap f_\alpha'^{-1}(y')$; in other words, $V_\alpha$ is a non-empty open subset of the prescheme $\Spec(B'_\alpha\otimes_{A'}k(y'))=\Spec(B_\alpha\otimes_k k(y'))$ and $V$ is its inverse image by the morphism $v:\Spec(B\otimes_k k(y'))\to\Spec(B_\alpha\otimes_k k(y'))$.
-  Since $B_\alpha$ is a subalgebra of $B$ and $k(y')$ is flat over the field
-  $k$, the homomorphism
-  $B_\alpha\otimes_k \boldsymbol{k}(y')\to B\otimes_k \boldsymbol{k}(y')$ is \emph{injective}.
+Now $V=u_\alpha^{-1}(V_\alpha)$, where $V_\alpha=U_\alpha\cap f_\alpha'^{-1}(y')$; in other words, $V_\alpha$ is a non-empty open subset (by definition of $y'$) of the prescheme $\Spec(B'_\alpha\otimes_{A'}\boldsymbol{k}(y'))=\Spec(B_\alpha\otimes_k \boldsymbol{k}(y'))$ and $V$ is its inverse image by the morphism $v:\Spec(B\otimes_k \boldsymbol{k}(y'))\to\Spec(B_\alpha\otimes_k \boldsymbol{k}(y'))$.
+  Since $B_\alpha$ is a subalgebra of $B$ and $k$ is a field, the homomorphism
+  $B_\alpha\otimes_k \boldsymbol{k}(y')\to B\otimes_k \boldsymbol{k}(y')$ is \emph{injective} by flatness,
   \oldpage[IV-2]{22}
-  Thus $v$ is dominant~\sref[I]{I.1.2.7}, which shows that $V$ is nonempty.
+  so the morphism $v$ is \emph{dominant}~\sref[I]{I.1.2.7}, which completes the proof.
 \end{proof}
 
 \begin{corollary}[2.4.10]
@@ -912,8 +915,8 @@ It suffices to apply~\sref{IV.2.4.9} to the structural morphism $Y\to\Spec(k)$.
 
 \begin{remark}[2.4.11]
 \label{IV.2.4.11}
-If $f:X\to Y$ is an \emph{open} morphism, then for every subset $E$ of $Y$ we have $f^{-1}(\overline{E})=\overline{f^{-1}(E)}$ (Bourbaki, \emph{Top.~g\'{e}n.}, chap.~I, 3\textsuperscript{e}~\'{e}d., \textsection~5, n\textsuperscript{o}~4, prop.~7).
-This remark applies for example when $f$ is a morphism \emph{flat} locally of finite presentation~\sref{IV.2.4.6}, or a morphism projection $X\times_k Y\to X$ where $X$, $Y$ are preschemes over a field $k$~\sref{IV.2.4.10}, and generalises then~\sref{IV.2.3.10}.
+If $f:X\to Y$ is an \emph{open} morphism, we know that, for \emph{every} subset $E$ of $Y$, we have $f^{-1}(\overline{E})=\overline{f^{-1}(E)}$ (Bourbaki, \emph{Top.~g\'{e}n.}, chap.~I, 3\textsuperscript{e}~\'{e}d., \textsection~5, n\textsuperscript{o}~4, prop.~7).
+This remark applies for example when $f$ is a morphism \emph{flat locally of finite presentation}~\sref{IV.2.4.6}, or a morphism projection $X\times_k Y\to X$ where $X$, $Y$ are preschemes over a field $k$~\sref{IV.2.4.10}, and generalises then~\sref{IV.2.3.10}.
 \end{remark}
 
 \subsection{Permanence of properties of Modules by faithfully flat descent}
@@ -935,14 +938,14 @@ flat \textnormal{(}resp.\ faithfully flat\textnormal{)} relative to $f'$.
 
 \begin{proof}
 The direct implication follows from~\sref{IV.2.1.5} in the flat case and
-from~\sref{IV.2.2.11}[i] in the faithfully flat case. Conversely, suppose
+from~\sref{IV.2.2.11},~(i) in the faithfully flat case. Conversely, suppose
 that $\sh{F}'$ is flat \textnormal{(}resp.\ faithfully flat\textnormal{)}
 relative to $f'$. Since $g$ is faithfully flat, $\sh{F}'$ is then flat
 relative to $g\circ f'$ in the first case, by~\sref{IV.2.1.6}, and
 faithfully flat relative to $g\circ f'$ in the second, by
-~\sref{IV.2.2.11}[ii]. But $g':X'\to X$ is faithfully
+~\sref{IV.2.2.11},~(ii). But $g':X'\to X$ is faithfully
 flat~\sref{IV.2.2.13}, and $g\circ f'=f\circ g'$.
-Thus~\sref{IV.2.2.11}[iii] shows that $\sh{F}$ is flat
+Thus~\sref{IV.2.2.11},~(iii) shows that $\sh{F}$ is flat
 \textnormal{(}resp.\ faithfully flat\textnormal{)} relative to $f$.
 \end{proof}
 
@@ -958,14 +961,14 @@ of being:
   \item[\textup{(iii)}] locally free of finite type;
   \item[\textup{(iv)}] locally free of rank $n$.
 \end{enumerate}
-If $\mathbf{P}$ denotes any one of these properties, then $\sh{F}$ has
-property $\mathbf{P}$ if and only if $\sh{F}'$ does.
+If $\boldsymbol{P}$ denotes any one of these properties, then $\sh{F}$ has
+property $\boldsymbol{P}$ if and only if $\sh{F}'$ does.
 \end{proposition}
 
 \begin{proof}
 For a quasi-coherent $\sh{O}_X$-Module to be locally free of finite type,
 it is necessary and sufficient that it be flat over $X$ and of finite
-presentation (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~5, no.~2,
+presentation (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~5, n\textsuperscript{o}~2,
 cor.~2 of th.~1, taking~\sref{IV.2.1.2} into account). By
 \sref{IV.2.5.1}, applied with the identity morphism for $f$, $\sh{F}$ is
 flat over $X$ if and only if $\sh{F}'$ is flat over $X'$. Thus case~(iii)
@@ -980,7 +983,7 @@ To treat cases~(i) and~(ii), note that the question is local on $X$, so we
 may suppose that $X$ is affine. By~\sref{IV.2.2.12}, there is an affine
 scheme $X''$ and a faithfully flat local isomorphism $g:X''\to X'$.
 Consequently, it is equivalent for $f^*(\sh{F})$ or
-$g^*f^*(\sh{F})$ to have property $\mathbf{P}$. We are therefore reduced
+$g^*f^*(\sh{F})$ to have property $\boldsymbol{P}$. We are therefore reduced
 to
 \[
   X=\Spec(\mathrm{A}),\qquad X'=\Spec(\mathrm{A}').
@@ -999,7 +1002,7 @@ presentation\textnormal{)} if and only if $\mathrm{M}'$ is.
 \end{lemma}
 
 \begin{proof}
-For the proof, see Bourbaki, \emph{Alg.\ comm.}, chap.~I\textsuperscript{er}, \S~3, no.~6, prop.~11.
+For the proof, see Bourbaki, \emph{Alg.\ comm.}, chap.~I\textsuperscript{er}, \S~3, n\textsuperscript{o}~6, prop.~11.
 \end{proof}
 
 \begin{remark}[2.5.4]
@@ -1040,30 +1043,30 @@ corresponding map is $u_{\mathfrak{p}}\otimes 1:
 \longrightarrow
 \mathrm{Q}_{\mathfrak{p}}
 \otimes_{\mathrm{A}_{\mathfrak{p}}}\mathrm{N}'_{\mathfrak{q}}$
-\sref[0]{0.1.5.4}. By the support hypothesis
+\sref[0\textsubscript{\mdseries I}]{0.1.5.4}. By the support hypothesis
 $\mathrm{N}'_{\mathfrak{q}}\neq0$, and
 $\mathrm{N}'_{\mathfrak{q}}$ is flat over
-$\mathrm{A}_{\mathfrak{p}}$~\sref[0]{0.6.3.1}. Nakayama's lemma gives
+$\mathrm{A}_{\mathfrak{p}}$~\sref[0\textsubscript{\mdseries I}]{0.6.3.1}. Nakayama's lemma gives
 $\mathfrak{q}\mathrm{N}'_{\mathfrak{q}}\neq
 \mathrm{N}'_{\mathfrak{q}}$, hence a fortiori
 $\mathfrak{p}\mathrm{N}'_{\mathfrak{q}}\neq
 \mathrm{N}'_{\mathfrak{q}}$. Thus $\mathrm{N}'_{\mathfrak{q}}$ is
 faithfully flat over $\mathrm{A}_{\mathfrak{p}}$
-\sref[0]{0.6.4.1}, and $u_{\mathfrak{p}}$ is surjective. Since $f$ is
+\sref[0\textsubscript{\mdseries I}]{0.6.4.1}, and $u_{\mathfrak{p}}$ is surjective. Since $f$ is
 surjective, every $\mathfrak{p}\in\Spec(\mathrm{A})$ occurs in this way;
 therefore $u$ is surjective (Bourbaki, \emph{Alg.\ comm.}, chap.~II,
-\S~3, no.~3, th.~1).
+\S~3, n\textsuperscript{o}~3, th.~1).
 \end{proof}
 
 \begin{proposition}[2.5.5]
 \label{IV.2.5.5}
 Let $f:X\to Y$ be a morphism, let $\sh{F}$ be a quasi-coherent
 $\sh{O}_X$-Module of finite type which is flat relative to $f$, and let
-$\sh{G}$ be a quasi-coherent $\sh{O}_Y$-Module of finite type. For
+$\sh{E}$ be a quasi-coherent $\sh{O}_Y$-Module of finite type. For
 $y\in Y$, set $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\boldsymbol{k}(y)$.
 A point $x\in X$ is a maximal point of
-$\operatorname{Supp}(\sh{F}\otimes_Y\sh{G})$ if and only if
-$y=f(x)$ is a maximal point of $\operatorname{Supp}(\sh{G})$ and $x$
+$\operatorname{Supp}(\sh{E}\otimes_Y\sh{F})$ if and only if
+$y=f(x)$ is a maximal point of $\operatorname{Supp}(\sh{E})$ and $x$
 is a maximal point of $\operatorname{Supp}(\sh{F}_y)$ in $f^{-1}(y)$.
 When this holds, we have
 \end{proposition}
@@ -1071,45 +1074,45 @@ When this holds, we have
 \begin{env}[2.5.5.1]
 \label{IV.2.5.5.1}
 \[
-  \operatorname{length}\bigl((\sh{F}\otimes_Y\sh{G})_x\bigr)
+  \operatorname{length}\bigl((\sh{E}\otimes_Y\sh{F})_x\bigr)
   =
-  \operatorname{length}(\sh{G}_y)\,
+  \operatorname{length}(\sh{E}_y).
   \operatorname{length}\bigl((\sh{F}_y)_x\bigr)
 \]
 \end{env}
 
 \begin{proof}
-It is clear that $f\bigl(\operatorname{Supp}(\sh{F}\otimes_Y\sh{G})\bigr)
-\subset \operatorname{Supp}(\sh{G})$
-\sref[0]{0.5.2.2}; hence the image under $f$ of every irreducible
-component of $\operatorname{Supp}(\sh{F}\otimes_Y\sh{G})$ is contained
-in an irreducible component of $\operatorname{Supp}(\sh{G})$.
+It is clear that $f\bigl(\operatorname{Supp}(\sh{E}\otimes_Y\sh{F})\bigr)
+\subset \operatorname{Supp}(\sh{E})$
+\sref[0\textsubscript{\mdseries I}]{0.5.2.2}; hence the image under $f$ of every irreducible
+component of $\operatorname{Supp}(\sh{E}\otimes_Y\sh{F})$ is contained
+in an irreducible component of $\operatorname{Supp}(\sh{E})$.
 
   We may reduce to the case $\operatorname{Supp}(\sh{F})=X$. Indeed
   \textnormal{(}\textbf{Err}\textsubscript{III}, 30\textnormal{)},
   since $\sh{F}$ is of finite type, there is a closed subprescheme
   $X'\subset X$ with underlying space $\operatorname{Supp}(\sh{F})$ and a
-  quasi-coherent $\sh{O}_{X'}$-Module $\sh{H}$ of finite type such that,
+  quasi-coherent $\sh{O}_{X'}$-Module $\sh{G}$ of finite type such that,
   for the canonical injection $j:X'\to X$,
   \[
-    \sh{F}=j_*(\sh{H}).
+    \sh{F}=j_*(\sh{G}).
   \]
-  Set $f'=f\circ j$. Then $\sh{H}$ is flat relative to $f'$, and
+  Set $f'=f\circ j$. Then it is clear that $\sh{G}$ is flat relative to $f'$ and that
   \[
-    \operatorname{Supp}(\sh{F}\otimes_Y\sh{G})
+    \operatorname{Supp}(\sh{E}\otimes_Y\sh{F})
     =
-    \operatorname{Supp}(\sh{H}\otimes_Y\sh{G}).
+    \operatorname{Supp}(\sh{E}\otimes_Y\sh{G}).
   \]
 
   Suppose therefore that $\operatorname{Supp}(\sh{F})=X$. If $Z$ is an
-  irreducible component of $\operatorname{Supp}(\sh{G})$, then $f^{-1}(Z)\subset
-\operatorname{Supp}(\sh{F}\otimes_Y\sh{G})$
+  irreducible component of $\operatorname{Supp}(\sh{E})$, then $f^{-1}(Z)\subset
+\operatorname{Supp}(\sh{E}\otimes_Y\sh{F})$
   \sref[I]{I.9.1.13}; and~\sref{IV.2.3.4} shows that every irreducible
   component of $f^{-1}(Z)$ dominates $Z$. Thus, if $x$ is the generic
   point of an irreducible component of
-  $\operatorname{Supp}(\sh{F}\otimes_Y\sh{G})$ contained in $f^{-1}(Z)$,
+  $\operatorname{Supp}(\sh{E}\otimes_Y\sh{F})$ contained in $f^{-1}(Z)$,
   then $y=f(x)$ is the generic point of $Z$. Moreover,
-  by~\sref[0]{0.2.1.8}, $x$ is the generic point of an irreducible
+  by~\sref[0\textsubscript{\mdseries I}]{0.2.1.8}, $x$ is the generic point of an irreducible
   component of $f^{-1}(y)=\operatorname{Supp}(\sh{F}_y)$
   \sref[I]{I.9.1.13}; conversely, every generic point of one of these
   components is the generic point of an irreducible component of
@@ -1119,9 +1122,9 @@ in an irreducible component of $\operatorname{Supp}(\sh{G})$.
 
 It remains to prove~\sref{IV.2.5.5.1}. We have
 \[
-  (\sh{F}\otimes_Y\sh{G})_x
+  (\sh{E}\otimes_Y\sh{F})_x
   =
-  \sh{F}_x\otimes_{\sh{O}_{Y,y}}\sh{G}_y
+  \sh{E}_y\otimes_{\sh{O}_y}\sh{F}_x
 \]
 \sref[I]{I.9.1.12} and
 $(\sh{F}_y)_x=\sh{F}_x/\mathfrak{m}_y\sh{F}_x$; hence we are reduced to
@@ -1142,51 +1145,51 @@ $\mathrm{B}$-module. Then
 \begin{env}[2.5.5.3]
 \label{IV.2.5.5.3}
 \[
-  \operatorname{length}_{\mathrm{B}}(\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}) = \operatorname{length}_{\mathrm{A}}(\mathrm{M})\cdot\operatorname{length}_{\mathrm{B}}(\mathrm{N}/\mathfrak{m}\mathrm{N}).
+  \operatorname{length}_{\mathrm{B}}(\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}) = \operatorname{length}_{\mathrm{A}}(\mathrm{M}).\operatorname{length}_{\mathrm{B}}(\mathrm{N}/\mathfrak{m}\mathrm{N}).
 \]
 \end{env}
 
 \begin{proof}
 If $\mathrm{M}$ has infinite length, then so does
-$\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$. Indeed, every strictly
-increasing chain of $n$ submodules $\mathrm{M}_i$ of $\mathrm{M}$
-\textnormal{(}$1\leq i\leq n$\textnormal{)} yields pairwise distinct
-sub-$\mathrm{B}$-modules
-$\mathrm{M}_i\otimes_{\mathrm{A}}\mathrm{N}$ of
-$\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$. Since
-$\mathrm{N}\neq\mathfrak{m}\mathrm{N}$, formula~\sref{IV.2.5.5.3}
+$\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$, because for every strictly
+increasing sequence of $n$ submodules $\mathrm{M}_i$ of $\mathrm{M}$
+\textnormal{(}$1\leq i\leq n$\textnormal{)}, the
+$\mathrm{M}_i\otimes_{\mathrm{A}}\mathrm{N}$ identify with pairwise
+distinct sub-$\mathrm{B}$-modules of
+$\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$; since
+$\mathrm{N}\neq\mathfrak{m}\mathrm{N}$ because $\mathrm{N}$ is a
+faithfully flat $\mathrm{A}$-module, formula~\sref{IV.2.5.5.3}
 holds in this case.
 
-Suppose that $\mathrm{M}$ has finite length. If $\mathrm{M}=0$, both
-sides of~\sref{IV.2.5.5.3} vanish, so assume $\mathrm{M}\neq0$. Each
-$\mathfrak{m}^k\mathrm{M}$ has finite length, and if
-$\mathfrak{m}^k\mathrm{M}\neq0$, Nakayama's lemma gives
-$\mathfrak{m}^{k+1}\mathrm{M}\neq\mathfrak{m}^k\mathrm{M}$. Hence some
-$r$ satisfies $\mathfrak{m}^r\mathrm{M}=0$. The modules
-$\mathfrak{m}^k\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$ identify with
-sub-$\mathrm{B}$-modules of
-$\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$, and
-\[
- \frac{\mathfrak{m}^k\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}}
-      {\mathfrak{m}^{k+1}\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}}
- \simeq
- \frac{\mathfrak{m}^k\mathrm{M}}{\mathfrak{m}^{k+1}\mathrm{M}}
- \otimes_{\mathrm{A}/\mathfrak{m}}
- \frac{\mathrm{N}}{\mathfrak{m}\mathrm{N}}
-\]
-for $0\leq k\leq r-1$. Its length as a $\mathrm{B}$-module is the
-product of
+Suppose therefore that $\mathrm{M}$ has finite length. If $\mathrm{M}=0$, both
+sides of~\sref{IV.2.5.5.3} vanish, so we may assume $\mathrm{M}\neq0$. The
+$\mathfrak{m}^k\mathrm{M}$ are submodules of $\mathrm{M}$, hence of finite
+length, and if $\mathfrak{m}^k\mathrm{M}\neq0$, it follows from Nakayama's
+lemma that $\mathfrak{m}^{k+1}\mathrm{M}\neq\mathfrak{m}^k\mathrm{M}$; hence
+there is necessarily an integer $r$ such that $\mathfrak{m}^r\mathrm{M}=0$.
+The $\mathfrak{m}^k\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$ then identify
+with sub-$\mathrm{B}$-modules of $\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N}$,
+$(\mathfrak{m}^k\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N})/(\mathfrak{m}^{k+1}\mathrm{M}\otimes_{\mathrm{A}}\mathrm{N})$
+being isomorphic to
+$(\mathfrak{m}^k\mathrm{M}/\mathfrak{m}^{k+1}\mathrm{M})\otimes_{\mathrm{A}}\mathrm{N}$,
+hence also to
+$(\mathfrak{m}^k\mathrm{M}/\mathfrak{m}^{k+1}\mathrm{M})
+\otimes_{\mathrm{A}/\mathfrak{m}}(\mathrm{N}/\mathfrak{m}\mathrm{N})$
+$(0\leq k\leq r-1)$; the length of the latter, considered as a
+$\mathrm{B}$-module, is therefore the product of
 $\operatorname{length}_{\mathrm{B}}(\mathrm{N}/\mathfrak{m}\mathrm{N})$
-and the dimension of the $(\mathrm{A}/\mathfrak{m})$-vector space
-$\mathfrak{m}^k\mathrm{M}/\mathfrak{m}^{k+1}\mathrm{M}$; the latter
-dimension is the length of that quotient as an $\mathrm{A}$-module.
-Summing over $0\leq k\leq r-1$ gives~\sref{IV.2.5.5.3}.
+and the rank of the $(\mathrm{A}/\mathfrak{m})$-vector space
+$\mathfrak{m}^k\mathrm{M}/\mathfrak{m}^{k+1}\mathrm{M}$, a rank which is
+also the length of the $\mathrm{A}$-module
+$\mathfrak{m}^k\mathrm{M}/\mathfrak{m}^{k+1}\mathrm{M}$. By addition
+\textnormal{(}for $0\leq k\leq r-1$\textnormal{)}, we immediately deduce
+formula~\sref{IV.2.5.5.3}.
 \end{proof}
 
 \begin{remark}[2.5.5.4]
 \label{IV.2.5.5.4}
 When $\mathrm{N}$ is an $\mathrm{A}$-module \emph{of finite type}, it is
-faithfully flat over $\mathrm{A}$ if and only if it is flat and
+faithfully flat over $\mathrm{A}$ if and only if it is \emph{flat} and
 $\mathrm{N}\neq0$; indeed, Nakayama's lemma then shows that
 $\mathfrak{m}\mathrm{N}\neq\mathrm{N}$.
 \end{remark}
@@ -1244,7 +1247,7 @@ equivalent to:
 \begin{proof}
 An epimorphism from an $\mathrm{A}$-module $\mathrm{E}$ onto itself is
 bijective in either of the following cases: \(1^\circ\) $\mathrm{E}$ is
-Noetherian (Bourbaki, \emph{Alg.}, chap.~VIII, \S~2, no.~2, lemma~3);
+Noetherian (Bourbaki, \emph{Alg.}, chap.~VIII, \S~2, n\textsuperscript{o}~2, lemma~3);
 \(2^\circ\) $\mathrm{A}$ is commutative and $\mathrm{E}$ is of finite
 presentation~\sref{IV.8.9.3}\footnote{The reader may verify that
 \sref{IV.2.5.7} and \sref{IV.2.5.8} are not used before \S~9.}.
@@ -1263,7 +1266,7 @@ Let $\mathrm{A}$ be a commutative semilocal ring, let $\mathrm{B}$ be an
 $\mathrm{A}$-algebra \textnormal{(}not necessarily
 commutative\textnormal{)}, and let $\mathrm{V}$ and $\mathrm{W}$ be
 $\mathrm{B}$-modules. Let $\mathrm{A}'$ be a commutative
-$\mathrm{A}$-algebra which is faithfully flat as an $\mathrm{A}$-module,
+$\mathrm{A}$-algebra which is \textup{faithfully flat} as an $\mathrm{A}$-module,
 and set
 \[
   \mathrm{B}'=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}',\qquad
@@ -1286,11 +1289,11 @@ as $\mathrm{B}$-modules.
 \end{proposition}
 
 \begin{proof}
-In case~(ii), $\mathrm{W}'$, being isomorphic to $\mathrm{V}'$, is an
-$\mathrm{A}'$-module of finite type. It follows that $\mathrm{W}$ is an
+Note that in case~(ii), $\mathrm{W}'$, being $\mathrm{A}'$-isomorphic to $\mathrm{V}'$, is an
+$\mathrm{A}'$-module of finite type, whence it follows that $\mathrm{W}$ is an
 $\mathrm{A}$-module of finite type (Bourbaki, \emph{Alg.\ comm.},
-chap.~I\textsuperscript{er}, \S~3, no.~6, prop.~11). Thus in both cases
-$\mathrm{V}$ and $\mathrm{W}$ are $\mathrm{A}$-modules of finite type.
+chap.~I\textsuperscript{er}, \S~3, n\textsuperscript{o}~6, prop.~11); hence in all cases
+$\mathrm{V}$ and $\mathrm{W}$ are $\mathrm{A}$-modules of finite type. Moreover:
 
 \begin{env}[2.5.8.1]
 \label{IV.2.5.8.1}
@@ -1299,23 +1302,24 @@ $\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$
 \emph{is an $\mathrm{A}$-module of finite type.}
 \end{env}
 
-This is immediate in case~(i), because
+This is evident in case~(i), because
 $\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W})$ is then an
-$\mathrm{A}$-module of finite type and
-$\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$ is an
-$\mathrm{A}$-submodule. In case~(ii), $\mathrm{V}$ is a direct factor
-of a free $\mathrm{B}$-module $\mathrm{B}^n$. Consequently,
+$\mathrm{A}$-module of finite type, and
+$\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$ is a
+sub-$\mathrm{A}$-module of $\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W})$.
+In case~(ii), $\mathrm{V}$ is a direct factor
+of a free $\mathrm{B}$-module $\mathrm{B}_s^n$, hence
 $\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$ is a direct
-factor of $\operatorname{Hom}_{\mathrm{B}}(\mathrm{B}^n,\mathrm{W})
-=\mathrm{W}^n$.
-It is therefore of finite type over $\mathrm{A}$.
+factor of $\operatorname{Hom}_{\mathrm{B}}(\mathrm{B}_s^n,\mathrm{W})
+=\mathrm{W}^n$, and since $\mathrm{W}$ is an $\mathrm{A}$-module of finite
+type, so is $\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$.
 
 Set
 \[
-  \mathrm{C}=\operatorname{End}_{\mathrm{B}}(\mathrm{V}),\qquad \mathrm{M}=\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W}).
+  \mathrm{C}=\operatorname{End}_{\mathrm{B}}(\mathrm{V}),\qquad \mathrm{M}=\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W}),
 \]
-These are $\mathrm{A}$-modules of finite type in both cases. Under
-either hypothesis, the canonical homomorphism
+which are $\mathrm{A}$-modules of finite type in cases~(i) and~(ii). We
+know that under either of the conditions~(i), (ii), the canonical homomorphism
 
 \begin{env}[2.5.8.2]
 \label{IV.2.5.8.2}
@@ -1324,20 +1328,23 @@ either hypothesis, the canonical homomorphism
 \]
 \end{env}
 
-is bijective (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~2, no.~10,
-prop.~11). Since $\mathrm{A}'$ is flat over $\mathrm{A}$, $\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})
+is \emph{bijective} (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S~2, n\textsuperscript{o}~10,
+prop.~11). Since $\mathrm{A}'$ is a flat $\mathrm{A}$-module, $\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})
 \otimes_{\mathrm{A}}\mathrm{A}'$
 identifies canonically with a sub-$\mathrm{A}'$-module of
 $\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W})
-\otimes_{\mathrm{A}}\mathrm{A}'$. Its image under~\sref{IV.2.5.8.2}
-lies in $\operatorname{Hom}_{\mathrm{B}'}(\mathrm{V}',\mathrm{W}')$:
-if $u\in\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$ and
-$a'\in\mathrm{A}'$, the image of $u\otimes a'$ is the homomorphism
-$u':\mathrm{V}'\to\mathrm{W}'$ satisfying
-$u'(x\otimes1)=u(x)\otimes a'$, and $u'\bigl((b\otimes1)(x\otimes1)\bigr)
+\otimes_{\mathrm{A}}\mathrm{A}'$. The image of this submodule under the
+homomorphism~\sref{IV.2.5.8.2}
+is contained in $\operatorname{Hom}_{\mathrm{B}'}(\mathrm{V}',\mathrm{W}')$,
+because if $u\in\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$ and
+$a'\in\mathrm{A}'$, the image of $u\otimes a'$ under~\sref{IV.2.5.8.2} is the homomorphism
+$u':\mathrm{V}'\to\mathrm{W}'$ such that
+$u'(x\otimes1)=u(x)\otimes a'$; for every $b\in\mathrm{B}$, we therefore have
+$u'\bigl((b\otimes1)(x\otimes1)\bigr)
+=u'(bx\otimes1)
 =u(bx)\otimes a'
 =bu(x)\otimes a'
-=(b\otimes1)\bigl(u(x)\otimes a'\bigr)$.
+=(b\otimes1)\bigl(u(x)\otimes a'\bigr)$, whence our assertion. This being so:
 
 \begin{env}[2.5.8.3]
 \label{IV.2.5.8.3}
@@ -1354,25 +1361,27 @@ homomorphism}
 
 \emph{is bijective.}
 
-For $b\in\mathrm{B}$, let $h(b)$ \textnormal{(}resp.\ $h'(b)$\textnormal{)}
-denote the $\mathrm{A}$-endomorphism $x\leadsto bx$ of $\mathrm{V}$
-\textnormal{(}resp.\ $\mathrm{W}$\textnormal{)}. Let
+For every $b\in\mathrm{B}$, let $h(b)$ \textnormal{(}resp.\ $h'(b)$\textnormal{)}
+denote the homothety $x\leadsto bx$ in $\mathrm{V}$
+\textnormal{(}resp.\ $\mathrm{W}$\textnormal{)}, which is an
+$\mathrm{A}$-endomorphism. Let
 $(b_\alpha)_{\alpha\in\mathrm{I}}$ be a system of generators of the
-$\mathrm{A}$-algebra $\mathrm{B}$. The map
+$\mathrm{A}$-algebra $\mathrm{B}$; the map
 \[
   u\leadsto (h'(b_\alpha)\circ u - u\circ h(b_\alpha))_{\alpha\in\mathrm{I}}
 \]
 from $\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W})$ to
 $(\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W}))^{\mathrm{I}}$
-is $\mathrm{A}$-linear, and its kernel is precisely
-$\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$. Thus
+is $\mathrm{A}$-linear, and by definition its \emph{kernel} is none other than
+$\operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W})$; in other words, we
+have an exact sequence
 \[
   0 \to \operatorname{Hom}_{\mathrm{B}}(\mathrm{V},\mathrm{W}) \to \operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W}) \to (\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W}))^{\mathrm{I}}.
 \]
 
-The same reasoning applies after replacing $\mathrm{A}$, $\mathrm{B}$,
+The same reasoning applies on replacing $\mathrm{A}$, $\mathrm{B}$,
 $\mathrm{V}$, $\mathrm{W}$ by $\mathrm{A}'$, $\mathrm{B}'$,
-$\mathrm{V}'$, $\mathrm{W}'$. Moreover, there is a commutative diagram
+$\mathrm{V}'$, $\mathrm{W}'$; moreover, we have a diagram
 
 \begin{env}[2.5.8.5]
 \label{IV.2.5.8.5}
@@ -1384,190 +1393,188 @@ $\mathrm{V}'$, $\mathrm{W}'$. Moreover, there is a commutative diagram
 \]
 \end{env}
 
-Here $r$ is~\sref{IV.2.5.8.4}, $s$ is~\sref{IV.2.5.8.2}, and $t$ is
-the composite
+where $r$ is the homomorphism~\sref{IV.2.5.8.4}, $s$ the
+homomorphism~\sref{IV.2.5.8.2} and $t$ the composite homomorphism
 \[
   (\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W}))^{\mathrm{I}}\otimes_{\mathrm{A}}\mathrm{A}' \xrightarrow{w} (\operatorname{Hom}_{\mathrm{A}}(\mathrm{V},\mathrm{W})\otimes_{\mathrm{A}}\mathrm{A}')^{\mathrm{I}} \xrightarrow{s^{\mathrm{I}}} (\operatorname{Hom}_{\mathrm{A}'}(\mathrm{V}',\mathrm{W}'))^{\mathrm{I}}
 \]
-where $w$ is the canonical homomorphism (Bourbaki, \emph{Alg.},
-chap.~II, 3\textsuperscript{e}~ed., \S~3, no.~7). Since $\mathrm{A}'$
-is flat over $\mathrm{A}$, the rows of~\sref{IV.2.5.8.5} are exact.
+$w$ being the canonical homomorphism (Bourbaki, \emph{Alg.},
+chap.~II, 3\textsuperscript{e}~\'{e}d., \S~3, n\textsuperscript{o}~7). One verifies
+immediately that the diagram~\sref{IV.2.5.8.5} is commutative, and since
+$\mathrm{A}'$ is a flat $\mathrm{A}$-module, its rows are exact.
 
 \oldpage[IV-2]{26}
 
-The map $s$ is an isomorphism, hence so is $s^{\mathrm{I}}$. In case~(ii)
-we may take $\mathrm{I}$ \emph{fini}te, and then $w$ is bijective (Bourbaki,
-\emph{loc.\ cit.}, prop.~7). In case~(i), let $\mathrm{B}_1$
-\textnormal{(}resp.\ $\mathrm{B}_2$\textnormal{)} be the image of
+Finally, we have seen that $s$ is an isomorphism, and hence so is
+$s^{\mathrm{I}}$; in case~(ii), we may take $\mathrm{I}$ \emph{finite}, and we
+then know that $w$ is bijective (Bourbaki, \emph{loc.\ cit.}, prop.~7); in
+case~(i), we note that if $\mathrm{B}'$
+\textnormal{(}resp.\ $\mathrm{B}''$\textnormal{)} is the image of
 $\mathrm{B}$ under $h$ \textnormal{(}resp.\ $h'$\textnormal{)} in
 $\operatorname{End}_{\mathrm{A}}(\mathrm{V})$
 \textnormal{(}resp.\
-$\operatorname{End}_{\mathrm{A}}(\mathrm{W})$\textnormal{)}. Both
-images are $\mathrm{A}$-modules of finite type, so here too
-$\mathrm{I}$ may be chosen finite. Thus $t$, and consequently $r$, is
-bijective in both cases.
+$\operatorname{End}_{\mathrm{A}}(\mathrm{W})$\textnormal{)}, $\mathrm{B}'$
+and $\mathrm{B}''$ are $\mathrm{A}$-modules of finite type, so we may again
+take $\mathrm{I}$ \emph{finite}. Thus, in all cases, $t$ is bijective, and we
+conclude that the same holds for $r$.
 
 \begin{env}[2.5.8.6]
 \label{IV.2.5.8.6}
-It follows from~\sref{IV.2.5.8.4} that, if
+It therefore follows from~\sref{IV.2.5.8.4} that if we set
 \[
   \mathrm{C}'=\mathrm{C}\otimes_{\mathrm{A}}\mathrm{A}',\qquad \mathrm{M}'=\mathrm{M}\otimes_{\mathrm{A}}\mathrm{A}'
 \]
-then there are canonical bijections
+we have canonical bijections
 \[
   \mathrm{C}' \xrightarrow{\;\sim\;} \operatorname{End}_{\mathrm{B}'}(\mathrm{V}'),\qquad \mathrm{M}' \xrightarrow{\;\sim\;} \operatorname{Hom}_{\mathrm{B}'}(\mathrm{V}',\mathrm{W}')
 \]
-the first an isomorphism of $\mathrm{A}'$-algebras and the second,
-through the first, an isomorphism of right $\mathrm{C}'$-modules.
+of which the first is an isomorphism of $\mathrm{A}'$-algebras, the second
+forming with the first a di-isomorphism of right $\mathrm{C}'$-modules.
 \end{env}
 
 \begin{env}[2.5.8.7]
 \label{IV.2.5.8.7}
-\emph{Reduction to the case $\mathrm{V}=\mathrm{B}_s$.}
+\emph{Reduction to the case where $\mathrm{V}=\mathrm{B}_s$.}
 The hypothesis that $\mathrm{V}'$ and $\mathrm{W}'$ are isomorphic
 $\mathrm{B}'$-modules implies that $\mathrm{C}'_d$ and $\mathrm{M}'$
-are isomorphic right $\mathrm{C}'$-modules~\sref{IV.2.5.6}. To prove
-\sref{IV.2.5.8}, it is enough to find $u\in\mathrm{M}$ which generates
-$\mathrm{M}$ as a right $\mathrm{C}$-module. Indeed,
-$u'=u\otimes1$ then generates $\mathrm{M}'$ as a right
-$\mathrm{C}'$-module. In case~(i), $\mathrm{V}'$ and $\mathrm{W}'$ are
-Noetherian $\mathrm{A}'$-modules; in case~(ii), they are isomorphic
-$\mathrm{A}'$-modules of finite presentation. Corollary~\sref{IV.2.5.7}
-therefore shows that $u'$ is a $\mathrm{B}'$-isomorphism
-$\mathrm{V}'\to\mathrm{W}'$. Since $\mathrm{A}'$ is faithfully flat
-over $\mathrm{A}$, $u$ is bijective~\sref[0]{0.6.4.1}.
-
-In case~(i), $\mathrm{C}$ and $\mathrm{M}$ are $\mathrm{A}$-modules of
-finite type. In case~(ii), $\mathrm{C}$ is a direct factor of
-$\mathrm{V}^n$ by~\sref{IV.2.5.8.1}, hence a projective
-$\mathrm{A}$-module of finite type. After changing notation, we are
-therefore reduced to proving~\sref{IV.2.5.8} when
-$\mathrm{V}=\mathrm{B}_s$; it is enough to prove that the
-$\mathrm{B}$-module $\mathrm{W}$ has a generator. In this case
-$\mathrm{B}$ is an $\mathrm{A}$-module of finite type.
+are \emph{isomorphic} right $\mathrm{C}'$-modules~\sref{IV.2.5.6}. Let us
+show that to prove~\sref{IV.2.5.8}, it suffices to find an element
+$u\in\mathrm{M}$ which is a \emph{generator} of $\mathrm{M}$ as a right
+$\mathrm{C}$-module. Indeed, $u'=u\otimes1$ will be a generator of
+$\mathrm{M}'$ as a right $\mathrm{C}'$-module; now, in case~(i),
+$\mathrm{V}'$ and $\mathrm{W}'$ are $\mathrm{A}'$-modules of finite type,
+hence Noetherian since $\mathrm{A}'$ is Noetherian; in case~(ii),
+$\mathrm{V}'$ and $\mathrm{W}'$ are \textnormal{(}isomorphic\textnormal{)}
+$\mathrm{A}'$-modules of finite presentation. We may therefore
+apply~\sref{IV.2.5.7} to $\mathrm{A}'$, $\mathrm{B}'$, $\mathrm{V}'$ and
+$\mathrm{W}'$, and we conclude that $u'$ is a $\mathrm{B}'$-isomorphism of
+$\mathrm{V}'$ onto $\mathrm{W}'$. But since $\mathrm{A}'$ is faithfully
+flat over $\mathrm{A}$, this implies that $u$ is
+bijective~\sref[0\textsubscript{\mdseries I}]{0.6.4.1}, that is, the
+conclusion of~\sref{IV.2.5.8}. If we note that in case~(i), $\mathrm{C}$
+and $\mathrm{M}$ are $\mathrm{A}$-modules of finite type, and that in
+case~(ii), $\mathrm{C}$ is \textnormal{(}as we saw
+in~\sref{IV.2.5.8.1}\textnormal{)} a direct factor of $\mathrm{V}^n$, hence
+a projective $\mathrm{A}$-module of finite type, we see that we are reduced
+\textnormal{(}by changing the notation\textnormal{)} to proving~\sref{IV.2.5.8}
+in the particular case where $\mathrm{V}=\mathrm{B}_s$, and that it suffices
+to prove the existence of a \emph{generator} of the $\mathrm{B}$-module
+$\mathrm{W}$. Note that $\mathrm{B}$ is then an $\mathrm{A}$-module
+\emph{of finite type}.
 \end{env}
 
 \begin{env}[2.5.8.8]
 \label{IV.2.5.8.8}
 \emph{Reduction to the case where $\mathrm{A}$ and $\mathrm{A}'$ are
-fields and $\mathrm{B}$ is a simple $\mathrm{A}$-algebra with centre
+fields, $\mathrm{B}$ a simple $\mathrm{A}$-algebra with centre
 $\mathrm{A}$.}
+Let $\mathfrak{r}$ be the radical of the semilocal ring $\mathrm{A}$;
+it suffices to prove that $\mathrm{W}/\mathfrak{r}\mathrm{W}$ is a
+monogenic $(\mathrm{B}/\mathfrak{r}\mathrm{B})$-module, for if there
+exists a surjective homomorphism
+$\mathrm{B}_s/\mathfrak{r}\mathrm{B}_s\to\mathrm{W}/\mathfrak{r}\mathrm{W}$,
+it gives by composition a homomorphism
+$\mathrm{B}_s\to\mathrm{B}_s/\mathfrak{r}\mathrm{B}_s\to\mathrm{W}/\mathfrak{r}\mathrm{W}$,
+which itself \textnormal{(}since $\mathrm{B}_s$ is a free
+$\mathrm{B}$-module\textnormal{)} can be written
+$\mathrm{B}_s\xrightarrow{f}\mathrm{W}\to\mathrm{W}/\mathfrak{r}\mathrm{W}$,
+so that the surjective homomorphism considered is
+$f\otimes1:\mathrm{B}_s\otimes_{\mathrm{A}}(\mathrm{A}/\mathfrak{r})
+\longrightarrow\mathrm{W}\otimes_{\mathrm{A}}(\mathrm{A}/\mathfrak{r})$.
+Since $\mathrm{W}$ is an $\mathrm{A}$-module of finite type, Nakayama's
+lemma proves that $f$ is surjective (Bourbaki, \emph{Alg.\ comm.},
+chap.~II, \S~3, n\textsuperscript{o}~2, cor.~1 of prop.~4). If we set
+$\mathrm{A}_1=\mathrm{A}/\mathfrak{r}$,
+$\mathrm{A}'_1=\mathrm{A}'\otimes_{\mathrm{A}}\mathrm{A}_1=\mathrm{A}'/\mathfrak{r}\mathrm{A}'$,
+$\mathrm{B}_1=\mathrm{B}/\mathfrak{r}\mathrm{B}=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}_1$,
+$\mathrm{W}_1=\mathrm{W}/\mathfrak{r}\mathrm{W}=\mathrm{W}\otimes_{\mathrm{A}}\mathrm{A}_1$,
+the hypotheses~(i) \textnormal{(}resp.~(ii)\textnormal{)} remain satisfied
+when we replace $\mathrm{A}$, $\mathrm{A}'$, $\mathrm{B}$,
+$\mathrm{V}=\mathrm{B}_s$, $\mathrm{W}$ by $\mathrm{A}_1$, $\mathrm{A}'_1$,
+$\mathrm{B}_1$, $\mathrm{V}_1=(\mathrm{B}_1)_s$, $\mathrm{W}_1$
+respectively; moreover,
+$\mathrm{V}'_1=\mathrm{V}'\otimes_{\mathrm{A}}\mathrm{A}_1=\mathrm{V}_1\otimes_{\mathrm{A}_1}\mathrm{A}'_1$
+and
+$\mathrm{W}'_1=\mathrm{W}'\otimes_{\mathrm{A}}\mathrm{A}_1=\mathrm{W}_1\otimes_{\mathrm{A}_1}\mathrm{A}'_1$
+are $\mathrm{B}'_1$-isomorphic \textnormal{(}with
+$\mathrm{B}'_1=\mathrm{B}'\otimes_{\mathrm{A}}\mathrm{A}_1=\mathrm{B}_1\otimes_{\mathrm{A}_1}\mathrm{A}'_1$\textnormal{)}
+and $\mathrm{A}'_1$ is a faithfully flat $\mathrm{A}_1$-module. To prove
+\sref{IV.2.5.8} we may therefore suppose that $\mathrm{A}$ is a
+\emph{finite product of fields} \textnormal{(}commutative\textnormal{)}.
+Since $\mathrm{B}$ is an $\mathrm{A}$-module of finite type, it is an
+\emph{Artinian} ring; let $\mathfrak{R}$ be its radical. It will now
+suffice to prove that $\mathrm{W}/\mathfrak{R}\mathrm{W}$ is a monogenic
+$(\mathrm{B}/\mathfrak{R})$-module, for we see as above, using Nakayama's
+lemma, that this implies that $\mathrm{W}$ is a monogenic
+$\mathrm{B}$-module; on the other hand,
+$\mathrm{W}'/\mathfrak{R}\mathrm{W}'$ is
+$(\mathrm{B}'/\mathfrak{R}\mathrm{B}')$-isomorphic to
+$(\mathrm{B}'/\mathfrak{R}\mathrm{B}')_s$, and we have
+$\mathrm{B}'/\mathfrak{R}\mathrm{B}'=(\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}')\otimes_{\mathrm{B}}(\mathrm{B}/\mathfrak{R})=(\mathrm{B}/\mathfrak{R})\otimes_{\mathrm{A}}\mathrm{A}'$
+and likewise
+$\mathrm{W}'/\mathfrak{R}\mathrm{W}'=(\mathrm{W}\otimes_{\mathrm{A}}\mathrm{A}')\otimes_{\mathrm{B}}(\mathrm{B}/\mathfrak{R})=(\mathrm{W}/\mathfrak{R}\mathrm{W})\otimes_{\mathrm{A}}\mathrm{A}'$.
+We may therefore suppose in addition that $\mathfrak{R}=0$, that is, that
+$\mathrm{B}$ is a \emph{semisimple} $\mathrm{A}$-algebra.
 
-Let $\mathfrak{r}$ be the radical of the semilocal ring $\mathrm{A}$.
-It is enough to prove that
-$\mathrm{W}/\mathfrak{r}\mathrm{W}$ is a cyclic
-$(\mathrm{B}/\mathfrak{r}\mathrm{B})$-module. Indeed, a surjection $\mathrm{B}_s/\mathfrak{r}\mathrm{B}_s
-\longrightarrow \mathrm{W}/\mathfrak{r}\mathrm{W}$
-composes with $\mathrm{B}_s\to
-\mathrm{B}_s/\mathfrak{r}\mathrm{B}_s$ and, since $\mathrm{B}_s$ is
-free as a $\mathrm{B}$-module, lifts to a map
-$u:\mathrm{B}_s\to\mathrm{W}$. The displayed surjection is
-$u\otimes1$ after tensoring over $\mathrm{A}$ with
-$\mathrm{A}/\mathfrak{r}$. Since $\mathrm{W}$ is of finite type over
-$\mathrm{A}$, Nakayama's lemma shows that $u$ is surjective (Bourbaki,
-\emph{Alg.\ comm.}, chap.~II, \S~3, no.~2, cor.~1 of prop.~4).
+Note now that since $\mathrm{A}$ is a finite product of fields $k_i$
+$(1\leq i\leq n)$, $\mathrm{A}'$ is the direct composite of $k_i$-algebras
+$\mathrm{A}'_i$ $(1\leq i\leq n)$, each of the $\mathrm{A}'_i$ being
+annihilated by the $k_j$ of index $j\neq i$; the hypothesis that
+$\mathrm{A}'$ is a faithfully flat $\mathrm{A}$-module implies that the
+$\mathrm{A}'_i$ are $\neq0$; there is therefore a quotient
+$\mathrm{A}''_i$ of $\mathrm{A}'_i$ which is a field, and $\mathrm{A}''$,
+the direct composite of the $\mathrm{A}''_i$, is a faithfully flat
+$\mathrm{A}$-module and a quotient of $\mathrm{A}'$. If we then consider
+the ring
+$\mathrm{B}''=\mathrm{B}'\otimes_{\mathrm{A}'}\mathrm{A}''=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}''$,
+$\mathrm{W}''=\mathrm{W}'\otimes_{\mathrm{A}'}\mathrm{A}''=\mathrm{W}\otimes_{\mathrm{A}}\mathrm{A}''$
+is a $\mathrm{B}''$-module isomorphic to $\mathrm{B}''_s$; we may
+therefore restrict ourselves to proving~\sref{IV.2.5.8} on replacing
+$\mathrm{A}'$ by $\mathrm{A}''$, that is, we may also suppose that
+$\mathrm{A}'$ is a \emph{finite product of fields}.
 
-Put
-\[
-\begin{aligned}
-  \mathrm{A}_1&=\mathrm{A}/\mathfrak{r},&
-  \mathrm{A}'_1&=\mathrm{A}'\otimes_{\mathrm{A}}\mathrm{A}_1
-                    =\mathrm{A}'/\mathfrak{r}\mathrm{A}',\\
-  \mathrm{B}_1&=\mathrm{B}/\mathfrak{r}\mathrm{B}
-                    =\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}_1,&
-  \mathrm{W}_1&=\mathrm{W}/\mathfrak{r}\mathrm{W}
-                    =\mathrm{W}\otimes_{\mathrm{A}}\mathrm{A}_1.
-\end{aligned}
-\]
-The hypotheses remain valid after replacing $\mathrm{A}$, $\mathrm{A}'$,
-$\mathrm{B}$, $\mathrm{V}=\mathrm{B}_s$, and $\mathrm{W}$ by
-$\mathrm{A}_1$, $\mathrm{A}'_1$, $\mathrm{B}_1$,
-$\mathrm{V}_1=(\mathrm{B}_1)_s$, and $\mathrm{W}_1$. Moreover,
-$\mathrm{A}'_1$ is faithfully flat over $\mathrm{A}_1$, and the
-corresponding base changes of $\mathrm{V}_1$ and $\mathrm{W}_1$ remain
-isomorphic. We may therefore suppose that $\mathrm{A}$ is a finite
-product of fields.
-
-The ring $\mathrm{B}$ is then Artinian. Let $\mathfrak{N}$ be its
-radical. It is enough, by the same Nakayama argument, to prove that
-$\mathrm{W}/\mathfrak{N}\mathrm{W}$ is cyclic over
-$\mathrm{B}/\mathfrak{N}$. Since
-\[
-\begin{aligned}
-  \mathrm{B}'/\mathfrak{N}\mathrm{B}'
-    &=(\mathrm{B}/\mathfrak{N})\otimes_{\mathrm{A}}\mathrm{A}',\\
-  \mathrm{W}'/\mathfrak{N}\mathrm{W}'
-    &=(\mathrm{W}/\mathfrak{N}\mathrm{W})
-      \otimes_{\mathrm{A}}\mathrm{A}',
-\end{aligned}
-\]
-and the latter is isomorphic to the right regular module over the
-former, we may further suppose that $\mathfrak{N}=0$, that is, that
-$\mathrm{B}$ is a semisimple $\mathrm{A}$-algebra.
-
-Write $\mathrm{A}=\prod_{i=1}^n k_i$. Then
-$\mathrm{A}'=\prod_{i=1}^n\mathrm{A}'_i$, where each
-$\mathrm{A}'_i$ is a $k_i$-algebra and is annihilated by the other
-factors $k_j$. Faithful flatness implies
-$\mathrm{A}'_i\neq0$. Choose a field quotient
-$k'_i$ of each $\mathrm{A}'_i$ and set
-$\mathrm{A}''=\prod_i k'_i$. Then $\mathrm{A}''$ is faithfully flat
-over $\mathrm{A}$ and is a quotient of $\mathrm{A}'$. After the further
-base change,
-\[
-  \mathrm{B}''=\mathrm{B}\otimes_{\mathrm{A}}\mathrm{A}'',
-  \qquad
-  \mathrm{W}''=\mathrm{W}\otimes_{\mathrm{A}}\mathrm{A}'',
-\]
-the module $\mathrm{W}''$ remains isomorphic to
-$\mathrm{B}''_s$. Hence we may also suppose that $\mathrm{A}'$ is a
-finite product of fields.
-
-Let $\mathrm{Z}$ be the centre of $\mathrm{B}$. It is a finite product
-of fields and an $\mathrm{A}$-module of finite type; $\mathrm{B}$ and
-$\mathrm{W}$ are finite, hence projective, $\mathrm{Z}$-modules. Put
-$\mathrm{Z}'=\mathrm{Z}\otimes_{\mathrm{A}}\mathrm{A}'$. Then
-\[
-  \mathrm{B}'=\mathrm{B}\otimes_{\mathrm{Z}}\mathrm{Z}',
-  \qquad
-  \mathrm{W}'=\mathrm{W}\otimes_{\mathrm{Z}}\mathrm{Z}',
-\]
-and $\mathrm{Z}'$ is faithfully flat over $\mathrm{Z}$. We may replace
-$\mathrm{A}$ by $\mathrm{Z}$ and thus suppose that $\mathrm{A}$ is the
-centre of $\mathrm{B}$.
-
-If $k_i$ are the field factors of $\mathrm{A}$, then
-$\mathrm{B}=\prod_i\mathrm{B}_i$, with $\mathrm{B}_i$ a simple ring of
-centre $k_i$, and
-$\mathrm{W}=\bigoplus_i\mathrm{W}_i$, where the other factors
-$\mathrm{B}_j$ annihilate $\mathrm{W}_i$. We may suppose likewise that
-$\mathrm{A}'=\prod_i k'_i$, where $k'_i/k_i$ is a field extension.
-For every $i$,
-\[
-  (\mathrm{B}_i\otimes_{k_i}k'_i)_s
-  \quad\text{and}\quad
-  \mathrm{W}_i\otimes_{k_i}k'_i
-\]
-are isomorphic modules over $\mathrm{B}_i\otimes_{k_i}k'_i$.
-It therefore suffices to treat $n=1$: $\mathrm{A}$ and $\mathrm{A}'$
-are fields, and $\mathrm{B}$ is a simple algebra with centre
-$\mathrm{A}$.
+Let $\mathrm{Z}$ be the centre of $\mathrm{B}$, which is a finite product
+of fields and an $\mathrm{A}$-module of finite type; note that
+$\mathrm{B}$ and $\mathrm{W}$ are $\mathrm{Z}$-modules of finite type,
+projective like every $\mathrm{Z}$-module; moreover, we have
+$\mathrm{B}'=\mathrm{B}\otimes_{\mathrm{Z}}\mathrm{Z}'$ and
+$\mathrm{W}'=\mathrm{W}\otimes_{\mathrm{Z}}\mathrm{Z}'$ on setting
+$\mathrm{Z}'=\mathrm{Z}\otimes_{\mathrm{A}}\mathrm{A}'$, and
+$\mathrm{Z}'$ is a faithfully flat $\mathrm{Z}$-module. We may therefore
+replace $\mathrm{A}$ by $\mathrm{Z}$ in the hypothesis, in other words,
+suppose that $\mathrm{A}$ is the \emph{centre} of $\mathrm{B}$,
+$\mathrm{B}$ being semisimple and $\mathrm{A}'$ a finite product of
+fields. If $k_i$ $(1\leq i\leq n)$ are the component fields of
+$\mathrm{A}$, $\mathrm{B}$ is the direct composite of simple rings
+$\mathrm{B}_i$, $k_i$ being the centre of $\mathrm{B}_i$, and
+$\mathrm{W}$ is the direct sum of submodules $\mathrm{W}_i$
+$(1\leq i\leq n)$, $\mathrm{W}_i$ being annihilated by the $\mathrm{B}_j$
+of index $j\neq i$; moreover, the reasoning made above shows that we may
+suppose that $\mathrm{A}'$ is a product of fields $k'_i$
+$(1\leq i\leq n)$, $k'_i$ being an extension of $k_i$ and being
+annihilated by the $k_j$ of index $j\neq i$. The hypothesis that
+$\mathrm{B}'_s$ and $\mathrm{W}'$ are isomorphic $\mathrm{B}'$-modules
+then implies that, for every $i$,
+$(\mathrm{B}_i\otimes_{k_i}k'_i)_s$ and
+$\mathrm{W}_i\otimes_{k_i}k'_i$ are isomorphic
+$(\mathrm{B}_i\otimes_{k_i}k'_i)$-modules; it therefore suffices to prove
+\sref{IV.2.5.8} when $n=1$, that is, in the case where $\mathrm{A}$ and
+$\mathrm{A}'$ are \emph{fields}, $\mathrm{B}$ a \emph{simple} algebra with
+\emph{centre} $\mathrm{A}$.
 \end{env}
 
 \begin{env}[2.5.8.9]
 \label{IV.2.5.8.9}
-\emph{End of the proof.} Every $\mathrm{B}$-module is a direct sum of
-modules isomorphic to a minimal ideal of $\mathrm{B}$ (Bourbaki,
-\emph{Alg.}, chap.~VIII, \S~5, props.~6 and~8). Thus two
-$\mathrm{B}$-modules of finite rank over $\mathrm{A}$ are isomorphic
-if and only if they have the same rank over $\mathrm{A}$. By hypothesis, $[\mathrm{W}':\mathrm{A}']=[\mathrm{B}'_s:\mathrm{A}']$.
-But
-\[
-  [\mathrm{W}':\mathrm{A}']=[\mathrm{W}:\mathrm{A}],
-  \qquad
-  [\mathrm{B}'_s:\mathrm{A}']=[\mathrm{B}_s:\mathrm{A}],
-\]
-so $[\mathrm{W}:\mathrm{A}]=[\mathrm{B}_s:\mathrm{A}]$. This completes
+\emph{End of the proof.} We then know (Bourbaki,
+\emph{Alg.}, chap.~VIII, \S~5, props.~6 and~8) that every
+$\mathrm{B}$-module is a direct sum of modules isomorphic to a minimal
+ideal of $\mathrm{B}$, and two $\mathrm{B}$-modules of finite rank over
+$\mathrm{A}$ are therefore isomorphic if and only if they have \emph{the
+same rank} over $\mathrm{A}$. By hypothesis, we have
+$[\mathrm{W}':\mathrm{A}']=[\mathrm{B}'_s:\mathrm{A}']$. But we have
+$[\mathrm{W}':\mathrm{A}']=[\mathrm{W}:\mathrm{A}]$ and
+$[\mathrm{B}'_s:\mathrm{A}']=[\mathrm{B}_s:\mathrm{A}]$; hence
+$[\mathrm{W}:\mathrm{A}]=[\mathrm{B}_s:\mathrm{A}]$, which completes
 the proof.
 \end{env}
 \end{proof}
@@ -1596,8 +1603,8 @@ Consider, for a morphism, the property of being:
   \item[\textup{(iv)}] bijective;
   \item[\textup{(v)}] radicial.
 \end{enumerate}
-If $\mathbf{P}$ denotes any one of these properties and $f'$ has
-property $\mathbf{P}$, then so does $f$.
+If $\boldsymbol{P}$ denotes any one of these properties and $f'$ has
+property $\boldsymbol{P}$, then so does $f$.
 \end{proposition}
 
 \begin{proof}
@@ -1608,7 +1615,7 @@ $Y=\mathrm{S}$ and $Y'=\mathrm{S}'$. For $y\in Y$
 \textnormal{(}resp.\ $X'_{y'}$\textnormal{)} the fibre prescheme
 $f^{-1}(y)$ \textnormal{(}resp.\ $f'^{-1}(y')$\textnormal{)}
 \sref[I]{I.3.6.2}. If $y'\in Y'$ and $y=g(y')$, there is a canonical
-isomorphism $X'_{y'}\xrightarrow{\sim}X_y\otimes_{k(y)}k(y')$
+isomorphism $X'_{y'}\xrightarrow{\sim}X_y\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$
 \sref[I]{I.3.6.4}. Since
 $\Spec(\boldsymbol{k}(y'))\to\Spec(\boldsymbol{k}(y))$ is surjective, so is the projection
 $X'_{y'}\to X_y$~\sref[I]{I.3.5.2}. Therefore, if $X'_{y'}$ is
@@ -1650,8 +1657,8 @@ Consider, for a morphism, the property of being:
     subspace;
   \item[\textup{(iv)}] a homeomorphism.
 \end{enumerate}
-If $\mathbf{P}$ denotes any one of these properties and $f'$ has
-property $\mathbf{P}$, then so does $f$.
+If $\boldsymbol{P}$ denotes any one of these properties and $f'$ has
+property $\boldsymbol{P}$, then so does $f$.
 \end{proposition}
 
 \oldpage[IV-2]{28}
@@ -1675,22 +1682,22 @@ Let us prove~(iii), which also yields~(iv) in view of
 remains to prove that $f$, considered as a map from $X$ onto $f(X)$,
 is quasi-compact and open. Since $f'$ is quasi-compact, so is
 $f$~\sref{IV.1.1.4}. It is therefore enough to prove, for every closed
-subset $Z$ of $X$, that $Z=f^{-1}\bigl(\overline{f(Z)}\bigr)$.
+subset $Z$ of $X$, that $Z=f^{-1}\overline{(f(Z))}$.
 Since $g'$ is surjective, this is equivalent to
 \[
 \begin{aligned}
   g'^{-1}(Z)
-    &=g'^{-1}\!\left(f^{-1}\bigl(\overline{f(Z)}\bigr)\right)\\
-    &=f'^{-1}\!\left(g^{-1}\bigl(\overline{f(Z)}\bigr)\right).
+    &=g'^{-1}\!\left(f^{-1}\overline{(f(Z))}\right)\\
+    &=f'^{-1}\!\left(g^{-1}\overline{(f(Z))}\right).
 \end{aligned}
 \]
 The composite of the canonical injection $Z\to X$ with $f$ is
 quasi-compact, where $Z$ denotes here the reduced closed subprescheme of
 $X$ with underlying space $Z$. Applying~\sref{IV.2.3.10} to the subset
-$f(Z)$ of $Y$, the image of the morphism $f|_Z$, gives $g^{-1}\bigl(\overline{f(Z)}\bigr)
+$f(Z)$ of $Y$, the image of the morphism $f|_Z$, gives $g^{-1}\overline{(f(Z))}
 =
 \overline{g^{-1}\bigl(f(Z)\bigr)}$.
-If $Z'=g'^{-1}(Z)$, the required formula is consequently equivalent to $Z'=f'^{-1}\bigl(\overline{f'(Z')}\bigr)$,
+If $Z'=g'^{-1}(Z)$, the required formula is consequently equivalent to $Z'=f'^{-1}\overline{(f'(Z'))}$,
 which follows from the hypothesis that $f'$ is a homeomorphism from
 $X'$ onto $f'(X')$.
 \end{proof}
@@ -1710,7 +1717,7 @@ already assumed quasi-compact; the proof then uses only
 
 Finally, if $g$ is faithfully flat and locally of finite presentation,
 or if $g$ is surjective and $\mathrm{S}$ is discrete, the conclusion of
-\sref{IV.2.6.2} remains valid when $\mathbf{P}$ is the property
+\sref{IV.2.6.2} remains valid when $\boldsymbol{P}$ is the property
 \begin{enumerate}
   \item[(iii \emph{bis})] of being a homeomorphism onto its image
     subspace;
@@ -1733,8 +1740,8 @@ Consider, for a morphism, the property of being:
   \item[\textup{(v)}] quasi-compact;
   \item[\textup{(vi)}] quasi-compact and dominant.
 \end{enumerate}
-If $\mathbf{P}$ denotes any one of these properties, then $f$ has
-property $\mathbf{P}$ if and only if $f'$ does.
+If $\boldsymbol{P}$ denotes any one of these properties, then $f$ has
+property $\boldsymbol{P}$ if and only if $f'$ does.
 \end{corollary}
 
 \begin{proof}
@@ -1805,18 +1812,16 @@ Consider, for a morphism, the property of being:
   \item[\textup{(xvi)}] quasi-finite;
   \item[\textup{(xvii)}] integral.
 \end{enumerate}
-If $\mathbf{P}$ denotes any one of these properties, then $f$ has
-property $\mathbf{P}$ if and only if $f'$ does.
+If $\boldsymbol{P}$ denotes any one of these properties, then $f$ has
+property $\boldsymbol{P}$ if and only if $f'$ does.
 \end{proposition}
 
 \begin{proof}
 It was proved in Chapters~I and~II and in Chapter~IV, \S~1, that if
-$f$ has one of the properties $\mathbf{P}$ above, then so does $f'$
+$f$ has one of the properties $\boldsymbol{P}$ above, then so does $f'$
 \textnormal{(}without any hypothesis on $g:\mathrm{S}'\to\mathrm{S}$\textnormal{)}.
 It remains to prove the converse. Since the projection $Y'\to Y$ is
-
 \oldpage[IV-2]{30}
-
 a faithfully flat and quasi-compact morphism~\sref{IV.2.2.13}
 and~\sref{IV.1.1.2}, we may, by~\sref[I]{I.3.3.11}, reduce to the
 case $\mathrm{S}=Y$, $\mathrm{S}'=Y'$.
@@ -1858,7 +1863,7 @@ $(x'_i)$ is a finite set of generators of the $A'$-algebra $B'$, there
 is an index $\alpha$ such that every $x'_i$ belongs to the subalgebra
 $B_\alpha\otimes_A A'$ of $B'$. Hence
 $B'=B_\alpha\otimes_A A'$, and faithful flatness gives
-$B=B_\alpha$~\sref[0]{0.6.4.1}.
+$B=B_\alpha$~\sref[0\textsubscript{\mdseries I}]{0.6.4.1}.
 
 Now suppose that $B'$ is an $A'$-algebra of finite presentation. What
 precedes shows that $B$ is an $A$-algebra of finite type. Thus there
@@ -1879,11 +1884,11 @@ $\mathfrak{J}'=\mathfrak{J}\otimes_C C'$, and $C'$ is faithfully flat
 over $C$~\sref{IV.2.2.13} and~\sref{IV.2.2.3}. It follows that
 $\mathfrak{J}$ is a $C$-module of finite type
 \textnormal{(}Bourbaki, \emph{Alg\`ebre commutative}, Chap.~I, \S~3,
-no.~6, Prop.~11\textnormal{)}. Hence $B$ is an $A$-algebra of finite
+n\textsuperscript{o}~6, Prop.~11\textnormal{)}. Hence $B$ is an $A$-algebra of finite
 presentation.
 
 \textnormal{(v)} This follows from~\textnormal{(iii)} and
-\sref{IV.2.6.4}[(v)], by~\sref{IV.1.5.2}.
+\sref{IV.2.6.4},~(v), by~\sref{IV.1.5.2}.
 
 \textnormal{(vi)} This follows similarly from~\textnormal{(iv)},
 \textnormal{(v)}, and~\textnormal{(ii)}, by~\sref{IV.1.6.1}.
@@ -1921,7 +1926,7 @@ by~\textnormal{(viii)}, proving~\textnormal{(x)}.
 
 \textnormal{(xi)} If $f'$ is a quasi-compact immersion, then it is a
 quasi-compact and quasi-separated morphism~\sref{IV.1.2.2}; hence so
-is $f$, by~\textnormal{(ii)} and~\sref{IV.2.6.4}[(v)]. Let $Z$ be the
+is $f$, by~\textnormal{(ii)} and~\sref{IV.2.6.4},~(v). Let $Z$ be the
 closed subprescheme of $Y$ that is the closed image of $X$ under
 $f$~\sref{IV.1.7.8}, and write $f=j\circ q$, where $j:Z\to Y$ is the
 canonical injection. Then $f'=j'\circ q'$, with
@@ -1934,12 +1939,12 @@ by~\textnormal{(x)}, and therefore $f$ is an immersion.
 \textnormal{(xii)} To say that $f$ \textnormal{(}resp.\ $f'$\textnormal{)}
 is a closed immersion is to say that it is a quasi-compact immersion
 and a closed morphism. Thus~\textnormal{(xii)} follows
-from~\textnormal{(xi)} and~\sref{IV.2.6.2}[(ii)].
+from~\textnormal{(xi)} and~\sref{IV.2.6.2},~(ii).
 
 \textnormal{(xiii)} and~\textnormal{(xiv)}. Suppose that $f'$ is affine
 \textnormal{(}resp.\ quasi-affine\textnormal{)}. Then $f'$ is
 quasi-compact and quasi-separated~\sref[II]{II.5.1.1}, and so is $f$
-by~\textnormal{(ii)} and~\sref{IV.2.6.4}[(v)]. Put
+by~\textnormal{(ii)} and~\sref{IV.2.6.4},~(v). Put
 \[
   \sh{A}=f_*(\sh{O}_X),\qquad
   \sh{A}'=f'_*(\sh{O}_{X'}).
@@ -2025,7 +2030,7 @@ and~\sref[II]{II.4.6.13}. To prove sufficiency, we may, as
 in~\sref{IV.2.7.1}, reduce to the case $\mathrm{S}=Y$,
 $\mathrm{S}'=Y'$. The hypothesis on $\sh{L}'$ implies that $f'$ is
 quasi-compact and separated~\sref[II]{II.4.6.1}; hence so is $f$,
-by~\sref{IV.2.6.4}[(v)] and~\sref{IV.2.7.1}[(i)]. Put
+by~\sref{IV.2.6.4},~(v) and~\sref{IV.2.7.1},~(i). Put
 \[
   \sh{E}=f_*(\sh{L}),\qquad
   \sh{E}'=f'_*(\sh{L}').
@@ -2034,8 +2039,8 @@ By~\sref{IV.2.3.1}, the canonical homomorphism $u:g^*(\sh{E})\longrightarrow\sh{
 is bijective. Suppose first that $\sh{L}'$ is very ample for $f'$. The
 canonical homomorphism
 $\sigma':f'^*(\sh{E}')\to\sh{L}'$ is then surjective, and $r'=r_{\sh{L}',\sigma'}:X'\longrightarrow\mathbf{P}(\sh{E}')$
-is a necessarily quasi-compact immersion~\sref[II]{II.4.4.4}[(b)]
-and~\sref{IV.1.1.2}[(v)]. If
+is a necessarily quasi-compact immersion~\sref[II]{II.4.4.4},~(b)
+and~\sref{IV.1.1.2},~(v). If
 \[
   h:\mathbf{P}(\sh{E})\to Y,\qquad
   h':\mathbf{P}(\sh{E}')\to Y'
@@ -2062,15 +2067,15 @@ $P=\mathbf{P}(\sh{E})$ and $P'=\mathbf{P}(\sh{E}')$, and let
 $g'':P'\to P$ be the projection. Then $r'$ identifies with
 $r_{(P')}$~\sref[II]{II.4.2.10}, while $g''$ is faithfully flat and
 quasi-compact~\sref{IV.1.1.2} and~\sref{IV.2.2.13}.
-By~\sref{IV.2.7.1}[(xi)], $r$ is an immersion, and therefore
-$\sh{L}$ is very ample~\sref[II]{II.4.4.4}[(b)].
+By~\sref{IV.2.7.1},~(xi), $r$ is an immersion, and therefore
+$\sh{L}$ is very ample~\sref[II]{II.4.4.4},~(b).
 
 Now suppose that $\sh{L}'$ is ample for $f'$. To prove that $\sh{L}$
 is ample for $f$, we may reduce to the case where $Y$ is
 affine~\sref[II]{II.4.6.4}; by~\sref{IV.2.2.12}
 and~\sref[II]{II.4.6.13}, we may also suppose that $Y'$ is affine.
 Then $X$ and $X'$ are quasi-compact schemes, and we may apply the
-criterion of~\sref[II]{II.4.6.8}[(c)]. Let $\sh{F}$ be a
+criterion of~\sref[II]{II.4.6.8},~(c). Let $\sh{F}$ be a
 quasi-coherent $\sh{O}_X$-module of finite type, and let $\sigma:
 f^*f_*(\sh{F}\otimes\sh{L}^{\otimes n})
 \longrightarrow
@@ -2084,7 +2089,7 @@ composite
     \xrightarrow{\,\sigma'\,}
   \sh{F}'\otimes\sh{L}'^{\otimes n},
 \]
-where $\sh{F}'=g'^*(\sh{F})$, using~\sref[0]{0.4.3.3.1}, and where
+where $\sh{F}'=g'^*(\sh{F})$, using~\sref[0\textsubscript{\mdseries I}]{0.4.3.3.1}, and where
 $u$ is the canonical homomorphism $g^*f_*(\sh{F}\otimes\sh{L}^{\otimes n})
 \longrightarrow
 f'_*(\sh{F}'\otimes\sh{L}'^{\otimes n})$.
@@ -2114,7 +2119,7 @@ these values of $n$~\sref{IV.2.2.7}. This completes the proof.
   it can happen that $f$ is proper and $f'$ is projective while $f$ is
   not quasi-projective. Indeed, Hironaka~\cite{IV-34} gave an example
   of a proper nonprojective morphism $f:X\to Y$, where $X$ and $Y$ are
-  regular algebraic schemes~\sref[0]{0.4.1.4} over the same field
+  regular algebraic schemes~\sref[0\textsubscript{\mdseries I}]{0.4.1.4} over the same field
   $k$, with $Y$ projective over $k$. Moreover, $Y$ is the union of two
   affine open subsets $Y_i$ \textnormal{(}$i=1,2$\textnormal{)} such
   that $f_i:X\times_Y Y_i\longrightarrow Y_i$
@@ -2153,15 +2158,13 @@ fibre}
 Let $Y$ be a locally Noetherian, regular, irreducible prescheme of
 dimension $1$, with generic point $\eta$. Let $f:X\to Y$ be a
 morphism, let $X_\eta=f^{-1}(\eta)$ be the fibre at the generic point,
-
 \oldpage[IV-2]{34}
-
 and let $i:X_\eta\to X$ be the canonical morphism. Let $\sh{F}$ be a
 quasi-coherent $\sh{O}_X$-module, put
 $\sh{F}_\eta=i^*(\sh{F})$, let $\sh{G}'$ be an
 $\sh{O}_{X_\eta}$-module quotient of $\sh{F}_\eta$, and let
 $\overline{\sh{G}'}$ be the image of $\sh{F}$ under the composite
-homomorphism~\sref[0]{0.4.4.3.2}
+homomorphism~\sref[0\textsubscript{\mdseries I}]{0.4.4.3.2}
 \[
   \sh{F}
     \xrightarrow{\rho_{\sh{F}}}
@@ -2182,7 +2185,7 @@ Since $i$ is quasi-compact and quasi-separated
 from~\sref{IV.1.7.4} that, for every quasi-coherent
 $\sh{O}_{X_\eta}$-module $\sh{H}'$, the $\sh{O}_X$-module
 $i_*(\sh{H}')$ is quasi-coherent. Moreover, for every open subset
-$U$ of $X$, by definition~\sref[0]{0.3.4.1}, $i_*(\sh{H}')|U
+$U$ of $X$, by definition~\sref[0\textsubscript{\mdseries I}]{0.3.4.1}, $i_*(\sh{H}')|U
 =
 (i|U\cap X_\eta)_*
 \bigl(\sh{H}'|U\cap X_\eta\bigr)$.
@@ -2208,7 +2211,7 @@ is equal to $P'$.
 For every maximal ideal $\mathfrak{m}$ of $A$, the ring
 $A_\mathfrak{m}$ is a regular local ring of dimension $1$, hence a
 discrete valuation ring. Therefore an $A$-module $N$ is flat if and
-only if it is torsion-free~\sref[0]{0.6.3.4}. Since $N'$ is a
+only if it is torsion-free~\sref[0\textsubscript{\mdseries I}]{0.6.3.4}. Since $N'$ is a
 $K$-vector space, it is torsion-free as an $A$-module, and the same is
 therefore true of its submodule $\overline{N'}$. Moreover, one
 immediately verifies that $\overline{N'}_{(K)}$ identifies with $N'$.
@@ -2296,14 +2299,14 @@ $i=1,2$. Then
 \[
   \overline{\sh{G}'_1}\otimes_{\sh{O}_Y}\overline{\sh{G}'_2}
     =
-  \overline{\sh{G}'_1\otimes_{\mathbf{k}(\eta)}\sh{G}'_2}.
+  \overline{\sh{G}'_1\otimes_{\kres(\eta)}\sh{G}'_2}.
 \]
 \end{env}
 
 \begin{proof}
 Put $X=X_1\times_Y X_2$. The left-hand side
 of~\sref{IV.2.8.4.1} is a quasi-coherent $\sh{O}_X$-module flat over
-$Y$~\sref[0]{0.6.2.1}; its inverse image on $X_\eta$ is $\sh{G}'_1\otimes_{\mathbf{k}(\eta)}\sh{G}'_2$
+$Y$~\sref[0\textsubscript{\mdseries I}]{0.6.2.1}; its inverse image on $X_\eta$ is $\sh{G}'_1\otimes_{\kres(\eta)}\sh{G}'_2$
 \sref[I]{I.9.1.5}, and it is a quotient of
 $\sh{F}_1\otimes_{\sh{O}_Y}\sh{F}_2$. The conclusion therefore
 follows from the uniqueness assertion of~\sref{IV.2.8.1}.
@@ -2350,7 +2353,7 @@ subprescheme of $(X_i)_\eta$, for $i=1,2$. Then
 \[
   \overline{Z'_1}\times_Y\overline{Z'_2}
     =
-  \overline{Z'_1\times_{\mathbf{k}(\eta)}Z'_2}.
+  \overline{Z'_1\times_{\kres(\eta)}Z'_2}.
 \]
 \end{env}
 

@@ -26,20 +26,20 @@ Then we have
 \end{proposition}
 
 \begin{proof}
-We argue by induction on $n=\dim(\mathrm{A})$; the assertion is trivial for $n=0$, $\mathfrak{m}\mathrm{B}$ being then contained in the nilradical of $\mathrm{B}$.
+We argue by induction on $n=\dim(\mathrm{A})$; the assertion is trivial for $n=0$, $\mathfrak{m}\mathrm{B}$ being then contained in the nilradical of $\mathrm{B}$ since $\mathfrak{m}$ is the nilradical of $\mathrm{A}$.
 We may therefore suppose $n>0$.
 Let $\mathfrak{q}_i$ ($1\leqslant i\leqslant m$) be the minimal prime ideals of $\mathrm{B}$, and let $\mathfrak{p}_i=\varphi^{-1}(\mathfrak{q}_i)$; for every $i$, we have $\mathfrak{p}_i\neq\mathfrak{m}$; otherwise (since $n>0$) there would exist a prime ideal $\mathfrak{p}\neq\mathfrak{m}$ contained in $\mathfrak{p}_i$ and as $\mathfrak{q}_i$ is minimal among the prime ideals of $\mathrm{B}$ containing $\mathfrak{p}\mathrm{B}$, we would arrive at a contradiction with the hypothesis.
 Therefore $\mathfrak{m}$ is distinct from the union of the $\mathfrak{p}_i$ and of the minimal prime ideals $\mathfrak{p}'_j$ ($1\leqslant j\leqslant r$) of $\mathrm{A}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \textsection\,1, n\textsuperscript{o}\,1, prop.~2) and there exists an $a\in\mathfrak{m}$ not belonging to any of the $\mathfrak{p}_i$ nor any of the $\mathfrak{p}'_j$.
 Set $\mathrm{A}'=\mathrm{A}/a\mathrm{A}$, $\mathrm{B}'=\mathrm{B}/a\mathrm{B}$; we have \sref[0]{0.16.3.4}
 \[
-  \dim(\mathrm{A}')=\dim(\mathrm{A})-1,\quad
-  \dim(\mathrm{B}')=\dim(\mathrm{B})-1
+  \dim(\mathrm{A}')=\dim(\mathrm{A})\setmin 1,\quad
+  \dim(\mathrm{B}')=\dim(\mathrm{B})\setmin 1
 \]
-by construction of $a$, and on the other hand $\mathrm{B}'\otimes_{\mathrm{A}'}k=\mathrm{B}\otimes_\mathrm{A} k$, hence
+by construction of $a$, and on the other hand $\mathrm{B}'\otimes_{\mathrm{A}'}k=\mathrm{B}\otimes_\mathrm{A} k=\mathrm{B}/\mathfrak{m}\mathrm{B}$, hence
 \[
   \dim(\mathrm{B}'\otimes_{\mathrm{A}'}k)=\dim(\mathrm{B}\otimes_\mathrm{A} k)
 \]
-and it suffices to prove \sref{IV.6.1.1} for $\mathrm{A}'$ and $\mathrm{B}'$; now, by virtue of the bijective correspondence between ideals of $\mathrm{A}$ (resp.\ $\mathrm{B}$) containing $a$ and ideals of $\mathrm{A}'$ (resp.\ $\mathrm{B}'$), the hypotheses of the statement are also valid for $\mathrm{A}'$ and $\mathrm{B}'$; we may therefore apply the induction hypothesis, which completes the proof.
+and it therefore suffices to prove \sref{IV.6.1.1.1} for $\mathrm{A}'$ and $\mathrm{B}'$; now, by virtue of the bijective correspondence between ideals of $\mathrm{A}$ (resp.\ $\mathrm{B}$) containing $a$ and ideals of $\mathrm{A}'$ (resp.\ $\mathrm{B}'$), the hypotheses of the statement are also valid for $\mathrm{A}'$ and $\mathrm{B}'$; we may therefore apply the induction hypothesis, which completes the proof.
 \end{proof}
 
 \begin{corollary}[6.1.2]
@@ -63,7 +63,7 @@ every irreducible component of $f^{-1}(\mathrm{V}(\mathfrak{p}))$ \emph{dominate
 \begin{corollary}[6.1.3]
 \label{IV.6.1.3}
 Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $\mathfrak{m}$ the maximal ideal of $\mathrm{A}$, $k$ its residue field, $\varphi:\mathrm{A}\to\mathrm{B}$ a local homomorphism.
-Suppose that $\dim(\mathrm{B}\otimes_\mathrm{A} k)=0$ (that is to say \sref[0]{0.16.2.1} that $\mathfrak{m}\mathrm{B}$ is an \emph{ideal of definition} of $\mathrm{B}$).
+Suppose that $\dim(\mathrm{B}\otimes_\mathrm{A} k)=0$ \textup{(that is to say \sref[0]{0.16.2.1} that $\mathfrak{m}\mathrm{B}$ is an \emph{ideal of definition} of $\mathrm{B}$)}.
 Then we have $\dim(\mathrm{B})\leqslant\dim(\mathrm{A})$.
 If in addition there exists a $\mathrm{B}$-module of finite type $\mathrm{N}$ that is a flat $\mathrm{A}$-module and has support equal to $\Spec(\mathrm{B})$ (which holds in particular if $\mathrm{B}$ is a flat $\mathrm{A}$-module), then $\dim(\mathrm{B})=\dim(\mathrm{A})$.
 \end{corollary}
@@ -106,7 +106,7 @@ Then $\mathrm{M}$ is a flat $\mathrm{A}$-module.
 \begin{proof}
 We argue by induction on $n=\dim(\mathrm{A})$.
 If $n=0$, $\mathrm{A}$ is a field since it is regular \sref[0]{0.17.1.4} and the assertion is trivial.
-Suppose $n>0$; let $\mathfrak{m}$ be the maximal ideal of $\mathrm{A}$, and let $x\in\mathfrak{m}$ be an element not belonging to $\mathfrak{m}^2$; we know then \sref[0]{0.17.1.8} that $\mathrm{A}'=\mathrm{A}/x\mathrm{A}$ is regular and $\dim(\mathrm{A}')=\dim(\mathrm{A})-1$.
+Suppose $n>0$; let $\mathfrak{m}$ be the maximal ideal of $\mathrm{A}$, and let $x\in\mathfrak{m}$ be an element not belonging to $\mathfrak{m}^2$; we know then \sref[0]{0.17.1.8} that $\mathrm{A}'=\mathrm{A}/x\mathrm{A}$ is regular and $\dim(\mathrm{A}')=\dim(\mathrm{A})\setmin 1$.
 Set
 \[
   \mathrm{B}'=\mathrm{B}/x\mathrm{B},\quad \mathrm{M}'=\mathrm{M}/x\mathrm{M}=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}';
@@ -117,7 +117,7 @@ then
 \]
 and by virtue of \sref[0]{0.16.3.9.2} we have
 \[
-  \dim_{\mathrm{B}'}(\mathrm{M}')\leqslant\dim(\mathrm{A}')+\dim_{\mathrm{B}'\otimes_{\mathrm{A}'}k}(\mathrm{M}'\otimes_{\mathrm{A}'} k);
+  \dim_{\mathrm{B}'}(\mathrm{M}')\leqslant\dim(\mathrm{A}')+\dim_{\mathrm{B}'\otimes_{\mathrm{A}'}k}(\mathrm{M}'\otimes_\mathrm{A} k);
 \]
 \oldpage[IV-2]{137}
 we conclude therefore from \sref[0]{0.16.3.4} that we have
@@ -125,7 +125,7 @@ we conclude therefore from \sref[0]{0.16.3.4} that we have
   \dim_\mathrm{B}(\mathrm{M})\leqslant\dim_{\mathrm{B}'}(\mathrm{M}')+1\leqslant(\dim(\mathrm{A}')+\dim_{\mathrm{B}\otimes_\mathrm{A} k}(\mathrm{M}\otimes_\mathrm{A} k))+1=\dim(\mathrm{A})+\dim_{\mathrm{B}\otimes_\mathrm{A} k}(\mathrm{M}\otimes_\mathrm{A} k).
 \]
 
-Since by hypothesis the extreme terms of these inequalities are equal, we have necessarily: (i) $\dim_{\mathrm{B}'}(\mathrm{M}')=\dim_\mathrm{B}(\mathrm{M})-1$, and as $\mathrm{M}$ is by hypothesis a Cohen-Macaulay $\mathrm{B}$-module, this means that $x$ is M-\emph{regular} \sref[0]{0.16.1.9} and \sref[0]{0.16.5.5}; (ii) $\dim_{\mathrm{B}'}(\mathrm{M}')=\dim(\mathrm{A}')+\dim_{\mathrm{B}'\otimes_{\mathrm{A}'}k}(\mathrm{M}'\otimes_{\mathrm{A}'}k)$; as $\mathrm{M}'$ is a Cohen-Macaulay $\mathrm{B}'$-module by virtue of (i) and of \sref[0]{0.16.1.9} and \sref[0]{0.16.5.5} and $\mathrm{A}'$ is regular, the induction hypothesis proves that $\mathrm{M}'$ is a flat $\mathrm{A}'$-module; we deduce then from \sref[0]{0.10.2.7} that $\mathrm{M}$ is a flat $\mathrm{A}$-module, since $x$ is M-regular by~(i).
+Since by hypothesis the extreme terms of these inequalities are equal, we have necessarily: (i) $\dim_{\mathrm{B}'}(\mathrm{M}')=\dim_\mathrm{B}(\mathrm{M})-1$, and as $\mathrm{M}$ is by hypothesis a Cohen-Macaulay $\mathrm{B}$-module, this means that $x$ is M-\emph{regular} \sref[0]{0.16.1.9} and \sref[0]{0.16.5.5}; (ii) $\dim_{\mathrm{B}'}(\mathrm{M}')=\dim(\mathrm{A}')+\dim_{\mathrm{B}'\otimes_{\mathrm{A}'}k}(\mathrm{M}'\otimes_{\mathrm{A}'}k)$; as $\mathrm{M}'$ is a Cohen-Macaulay $\mathrm{B}'$-module by virtue of (i) and of \sref[0]{0.16.1.9} and \sref[0]{0.16.5.5} and $\mathrm{A}'$ is regular, the induction hypothesis proves that $\mathrm{M}'$ is a flat $\mathrm{A}'$-module; we deduce then from \sref[0\textsubscript{\mdseries III}]{0.10.2.7} that $\mathrm{M}$ is a flat $\mathrm{A}$-module, since $x$ is M-regular by~(i).
 \end{proof}
 
 \subsection{Flatness and projective dimension}
@@ -203,10 +203,10 @@ Consider a left resolution of $\mathrm{N}$ by free $\mathrm{B}$-modules of finit
 \[
   \ldots\to\mathrm{L}_i\to\mathrm{L}_{i-1}\to\ldots\to\mathrm{L}_0\to\mathrm{N}\to 0
 \]
-As the $\mathrm{L}_i$ and $\mathrm{N}$ are flat $\mathrm{A}$-modules ($\mathrm{B}$ being a flat $\mathrm{A}$-module) it follows from \sref{IV.2.1.10} that the $\mathrm{Z}_i(\mathrm{L}_\bullet)$ are flat $\mathrm{A}$-modules, that $\mathrm{L}_\bullet\otimes_\mathrm{A} k$ is a resolution of $\mathrm{N}\otimes_\mathrm{A} k$ and that $\mathrm{Z}_i(\mathrm{L}_\bullet\otimes_\mathrm{A} k)=\mathrm{Z}_i(\mathrm{L}_\bullet)\otimes_\mathrm{A} k$ for all $i$.
+As the $\mathrm{L}_i$ and $\mathrm{N}$ are \emph{flat} $\mathrm{A}$-modules ($\mathrm{B}$ being a flat $\mathrm{A}$-module) it follows from \sref{IV.2.1.10} that the $\mathrm{Z}_i(\mathrm{L}_\bullet)$ are \emph{flat} $\mathrm{A}$-modules, that $\mathrm{L}_\bullet\otimes_\mathrm{A} k$ is a left resolution of the ($\mathrm{B}\otimes_\mathrm{A} k$)-module $\mathrm{N}\otimes_\mathrm{A} k$ and that $\mathrm{Z}_i(\mathrm{L}_\bullet\otimes_\mathrm{A} k)=\mathrm{Z}_i(\mathrm{L}_\bullet)\otimes_\mathrm{A} k$ for all $i$.
 Note that since $\mathrm{B}$ is Noetherian, the $\mathrm{Z}_i(\mathrm{L}_\bullet)$ are $\mathrm{B}$-modules of finite type, hence the $\mathrm{Z}_i(\mathrm{L}_\bullet\otimes_\mathrm{A} k)$ are ($\mathrm{B}\otimes_\mathrm{A} k$)-modules of finite type.
-Now, to say that a $\mathrm{B}$-module (resp. a ($\mathrm{B}\otimes_\mathrm{A} k$)-module) of finite type is flat is equivalent to saying that it is \emph{free} or even \emph{projective.} \sref[0]{0.10.1.3}.
-As the $\mathrm{Z}_i(\mathrm{L}_\bullet)$ are flat $\mathrm{A}$-modules, it follows on the other hand from \sref[0]{0.10.2.5} (where we set $\mathrm{C}=\mathrm{B}$) that, for $\mathrm{Z}_i(\mathrm{L}_\bullet)$ to be a flat $\mathrm{B}$-module, it is necessary and sufficient that $\mathrm{Z}_i(\mathrm{L}_\bullet)\otimes_\mathrm{A} k$ be a ($\mathrm{B}\otimes_\mathrm{A} k$)-module that is flat.
+Now, to say that a $\mathrm{B}$-module (resp. a ($\mathrm{B}\otimes_\mathrm{A} k$)-module) of finite type is flat is equivalent to saying that it is \emph{free} or even \emph{projective} \sref[0\textsubscript{\mdseries III}]{0.10.1.3}.
+As the $\mathrm{Z}_i(\mathrm{L}_\bullet)$ are flat $\mathrm{A}$-modules, it follows on the other hand from \sref[0\textsubscript{\mdseries III}]{0.10.2.5} (where we set $\mathrm{C}=\mathrm{B}$) that, for $\mathrm{Z}_i(\mathrm{L}_\bullet)$ to be a flat $\mathrm{B}$-module, it is necessary and sufficient that $\mathrm{Z}_i(\mathrm{L}_\bullet\otimes_\mathrm{A} k)=\mathrm{Z}_i(\mathrm{L}_\bullet)\otimes_\mathrm{A} k$ be a ($\mathrm{B}\otimes_\mathrm{A} k$)-module that is flat.
 The smallest integer $n$ such that $\mathrm{Z}_{n-1}(\mathrm{L}_\bullet)$ is a free $\mathrm{B}$-module is therefore also the smallest integer $n$ such that $\mathrm{Z}_{n-1}(\mathrm{L}_\bullet\otimes_\mathrm{A} k)$ is a free ($\mathrm{B}\otimes_\mathrm{A} k$)-module, which proves the proposition \sref[0]{0.17.2.1}.
 \end{proof}
 
@@ -225,10 +225,10 @@ If $\mathrm{N}$ is a flat $\mathrm{A}$-module $\neq 0$, then we have
 \end{proposition}
 
 \begin{proof}
-We may restrict to the case where $\mathrm{M}\neq 0$, without which both sides of \sref{IV.6.3.1} are all equal to $+\infty$.
+We may restrict to the case where $\mathrm{M}\neq 0$, without which the two sides of \sref{IV.6.3.1.1} are both equal to $+\infty$.
 We will argue by induction on the integer $n$ equal to the second member of \sref{IV.6.3.1.1} (which is finite by virtue of the hypotheses, of \sref[0]{0.16.4.6.2} and of the lemma of Nakayama applied to $\mathrm{N}$).
-Suppose first $n=0$; then, if $\mathfrak{m}$ and $\mathfrak{n}$ denote the maximal ideals of $\mathrm{A}$ and $\mathrm{B}$ respectively, $\mathfrak{m}$ is a prime ideal associated to $\mathrm{M}$ and $\mathfrak{n}/\mathfrak{m}\mathrm{B}$ a prime ideal of $\mathrm{B}/\mathfrak{m}\mathrm{B}=\mathrm{B}\otimes_\mathrm{A} k$ associated to $\mathrm{N}\otimes_\mathrm{A} k$.
-We conclude then from \sref{IV.3.3.1} that $\mathfrak{n}$ is a prime ideal associated to $\mathrm{M}\otimes_\mathrm{A}\mathrm{N}$; hence, by \sref[0]{0.16.4.6}, (i), $\operatorname{prof}_\mathrm{B}(\mathrm{M}\otimes_\mathrm{A}\mathrm{N})=0$.
+Suppose first $n=0$; then, if $\mathfrak{m}$ and $\mathfrak{n}$ denote the maximal ideals of $\mathrm{A}$ and $\mathrm{B}$ respectively, $\mathfrak{m}$ is a prime ideal associated to $\mathrm{M}$ and $\mathfrak{n}/\mathfrak{m}\mathrm{B}$ a prime ideal of $\mathrm{B}/\mathfrak{m}\mathrm{B}=\mathrm{B}\otimes_\mathrm{A} k$ associated to $\mathrm{N}\otimes_\mathrm{A} k$ \sref[0]{0.16.4.6},~(i).
+We conclude then from \sref{IV.3.3.1} that $\mathfrak{n}$ is a prime ideal of $\mathrm{B}$ associated to $\mathrm{M}\otimes_\mathrm{A}\mathrm{N}$; hence, by \sref[0]{0.16.4.6}, (i), $\operatorname{prof}_\mathrm{B}(\mathrm{M}\otimes_\mathrm{A}\mathrm{N})=0$.
 Suppose therefore $n>0$, and distinguish two cases:
 
 \emph{a)} Suppose $\operatorname{prof}_\mathrm{A}(\mathrm{M})>0$.
@@ -245,7 +245,7 @@ since $x\in\mathfrak{m}$, and
   \mathrm{M}'\otimes_{\mathrm{A}'}\mathrm{N}'=(\mathrm{M}\otimes_\mathrm{A}\mathrm{N})/x(\mathrm{M}\otimes_\mathrm{A}\mathrm{N});
 \]
 \oldpage[IV-2]{139}
-in addition, as $\mathrm{N}$ is a flat $\mathrm{A}$-module, the hypothesis that $x$ is M-regular implies that $x$ is also ($\mathrm{M}\otimes_\mathrm{A}\mathrm{N}$)-regular.
+in addition, as $\mathrm{N}$ is a flat $\mathrm{A}$-module, the hypothesis that $x$ is M-regular implies that $x$ is also ($\mathrm{M}\otimes_\mathrm{A}\mathrm{N}$)-regular \sref[0\textsubscript{\mdseries I}]{0.6.1.1}.
 We thus have \sref[0]{0.16.4.6}, (ii), and \sref[0]{0.16.4.8}
 \[
   \operatorname{prof}_{\mathrm{A}'}(\mathrm{M}')=\operatorname{prof}_\mathrm{A}(\mathrm{M})-1,\quad \operatorname{prof}_{\mathrm{B}'}(\mathrm{M}'\otimes_{\mathrm{A}'}\mathrm{N}')=\operatorname{prof}_\mathrm{B}(\mathrm{M}\otimes_\mathrm{A}\mathrm{N})-1
@@ -255,15 +255,15 @@ and
   \operatorname{prof}_{\mathrm{B}'\otimes_{\mathrm{A}'}k}(\mathrm{N}'\otimes_{\mathrm{A}'}k)=\operatorname{prof}_{\mathrm{B}\otimes_\mathrm{A} k}(\mathrm{N}\otimes_\mathrm{A} k).
 \]
 
-The equality \sref{IV.6.3.1.1} is therefore a consequence of the same relation for $\mathrm{A}'$, $\mathrm{B}'$, $\mathrm{M}'$ and $\mathrm{N}'$; but as $\mathrm{N}$ is a flat $\mathrm{A}$-module, $\mathrm{N}'=\mathrm{N}\otimes_\mathrm{A}\mathrm{A}'$ is a flat $\mathrm{A}'$-module \sref[0]{0.6.2.1}; we may therefore apply the induction hypothesis, which proves \sref{IV.6.3.1.1} in this case.
+The equality \sref{IV.6.3.1.1} is therefore a consequence of the same relation for $\mathrm{A}'$, $\mathrm{B}'$, $\mathrm{M}'$ and $\mathrm{N}'$; but as $\mathrm{N}$ is a flat $\mathrm{A}$-module, $\mathrm{N}'=\mathrm{N}\otimes_\mathrm{A}\mathrm{A}'$ is a flat $\mathrm{A}'$-module \sref[0\textsubscript{\mdseries I}]{0.6.2.1}; we may therefore apply the induction hypothesis, which proves \sref{IV.6.3.1.1} in this case.
 
 \emph{b)} Suppose $\operatorname{prof}_{\mathrm{B}\otimes_\mathrm{A} k}(\mathrm{N}\otimes_\mathrm{A} k)>0$.
-Consider an element $y\in\mathfrak{n}$ which is ($\mathrm{N}\otimes_\mathrm{A} k$)-regular; it follows from \sref[0]{0.10.2.4} that $y$ is N-regular and that we then have
+Consider an element $y\in\mathfrak{n}$ which is ($\mathrm{N}\otimes_\mathrm{A} k$)-regular; it follows from \sref[0\textsubscript{\mdseries III}]{0.10.2.4} that $y$ is then N-regular and that
 \[
   \mathrm{N}'=\mathrm{N}/y\mathrm{N}
 \]
-is a flat $\mathrm{A}$-module, since $\mathrm{N}$ is supposed to be a flat $\mathrm{A}$-module.
-Applying \sref[0]{0.6.1.2} to the exact sequence of $\mathrm{A}$-modules
+is a \emph{flat} $\mathrm{A}$-module, since $\mathrm{N}$ is supposed to be a flat $\mathrm{A}$-module.
+Applying \sref[0\textsubscript{\mdseries I}]{0.6.1.2} to the exact sequence of $\mathrm{A}$-modules
 \[
   0\to\mathrm{N}\xrightarrow{y}\mathrm{N}\to\mathrm{N}'\to 0
 \]
@@ -369,15 +369,15 @@ Let $\mathrm{B}$ be a quotient ring of $\mathrm{A}$, and let $f:\Spec(\hat{\math
 \end{proposition}
 
 \begin{proof}
-As $\mathrm{B}$ is an $\mathrm{A}$-module of finite type, one has $\hat{\mathrm{B}}=\mathrm{B}\otimes_\mathrm{A}\hat{\mathrm{A}}$ \sref[0]{0.7.3.3}; hence $f$ is the restriction to $\Spec(\hat{\mathrm{B}})$ of the canonical morphism $\Spec(\hat{\mathrm{A}})\to\Spec(\mathrm{A})$, and the fibres of these two morphisms at a point of $\Spec(\mathrm{B})$ are the same.
+As $\mathrm{B}$ is an $\mathrm{A}$-module of finite type, one has $\hat{\mathrm{B}}=\mathrm{B}\otimes_\mathrm{A}\hat{\mathrm{A}}$ \sref[0\textsubscript{\mdseries I}]{0.7.3.3}; hence $f$ is the restriction to $\Spec(\hat{\mathrm{B}})$ of the canonical morphism $\Spec(\hat{\mathrm{A}})\to\Spec(\mathrm{A})$, and the fibres of these two morphisms at a point of $\Spec(\mathrm{B})$ are the same.
 We are therefore reduced to proving the proposition when $\mathrm{B}=\mathrm{A}$.
 Let $\mathfrak{p}=\mathfrak{j}_x$ be a prime ideal of $\mathrm{A}$. Since $\mathfrak{p}\in\operatorname{Supp}(\mathrm{M})$ by hypothesis, there exists \sref[0]{0.16.5.6} a $\mathrm{M}$-regular sequence $(t_i)_{1\leqslant i\leqslant r}$ of elements of $\mathfrak{p}$ such that $\mathrm{N}=\mathrm{M}\big/\Bigl(\sum_{i=1}^r t_i\mathrm{M}\Bigr)$
 is a Cohen--Macaulay $\mathrm{A}$-module, $\mathfrak{p}$ is a minimal associated prime ideal of $\mathrm{N}$, and $\dim(\mathrm{N})=\dim(\mathrm{M}/\mathfrak{p}\mathrm{M})=\dim(\mathrm{A}/\mathfrak{p})$
 \sref[0]{0.16.5.9}. The same argument as at the beginning shows that one may replace $\mathrm{M}$ by $\mathrm{N}$ and $\mathrm{A}$ by $\mathrm{A}/(\sum_{i=1}^r t_i\mathrm{A})$; consequently one may suppose that $\mathfrak{p}$ is a minimal prime ideal of $\mathrm{A}$.
 \oldpage[IV-2]{141}
-Set, to simplify, $\mathrm{A}'=\hat{\mathrm{A}}$, $\mathrm{M}'=\hat{\mathrm{M}}=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'$ \sref[0]{0.7.3.3}; we know \sref[0]{0.16.5.2} that $\mathrm{M}'$ is a Cohen-Macaulay $\mathrm{A}'$-module, which implies that for every prime ideal $\mathfrak{p}'$ of $\mathrm{A}'$, $\mathrm{M}'_{\mathfrak{p}'}$ is a Cohen-Macaulay $\mathrm{A}'_{\mathfrak{p}'}$-module \sref[0]{0.16.5.10}.
+Set, to simplify, $\mathrm{A}'=\hat{\mathrm{A}}$, $\mathrm{M}'=\hat{\mathrm{M}}=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'$ \sref[0\textsubscript{\mdseries I}]{0.7.3.3}; we know \sref[0]{0.16.5.2} that $\mathrm{M}'$ is a Cohen-Macaulay $\mathrm{A}'$-module, which implies that for every prime ideal $\mathfrak{p}'$ of $\mathrm{A}'$, $\mathrm{M}'_{\mathfrak{p}'}$ is a Cohen-Macaulay $\mathrm{A}'_{\mathfrak{p}'}$-module \sref[0]{0.16.5.10}.
 Taking into account \sref[I]{I.3.6.5}, one sees that if we set $\mathrm{A}''=\mathrm{A}'\otimes_\mathrm{A}\mathrm{A}_\mathfrak{p}$ and $\mathrm{M}''=\mathrm{M}'\otimes_\mathrm{A}\mathrm{A}_\mathfrak{p}$, $\mathrm{M}''$ is a Cohen-Macaulay $\mathrm{A}''$-module.
-For every prime ideal $\mathfrak{p}''$ of $\mathrm{A}''$ above $\mathfrak{p}$, $\mathrm{M}''_{\mathfrak{p}''}=\mathrm{M}_\mathfrak{p}\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''_{\mathfrak{p}''}$ is a Cohen-Macaulay $\mathrm{A}''_{\mathfrak{p}''}$-module \sref[0]{0.16.5.10}; on the other hand, $\mathrm{M}_\mathfrak{p}$ is by hypothesis a Cohen-Macaulay $\mathrm{A}_\mathfrak{p}$-module and $\mathrm{A}''_{\mathfrak{p}''}$ is a flat $\mathrm{A}_\mathfrak{p}$-module since $\mathrm{A}'$ is a flat $\mathrm{A}$-module \sref[0]{0.7.3.3} and \sref{IV.6.3.2}.
+For every prime ideal $\mathfrak{p}''$ of $\mathrm{A}''$ above $\mathfrak{p}$, $\mathrm{M}''_{\mathfrak{p}''}=\mathrm{M}_\mathfrak{p}\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''_{\mathfrak{p}''}$ is a Cohen-Macaulay $\mathrm{A}''_{\mathfrak{p}''}$-module \sref[0]{0.16.5.10}; on the other hand, $\mathrm{M}_\mathfrak{p}$ is by hypothesis a Cohen-Macaulay $\mathrm{A}_\mathfrak{p}$-module and $\mathrm{A}''_{\mathfrak{p}''}$ is a flat $\mathrm{A}_\mathfrak{p}$-module since $\mathrm{A}'$ is a flat $\mathrm{A}$-module \sref[0\textsubscript{\mdseries I}]{0.7.3.3} and \sref{IV.6.3.2}.
 We conclude from \sref{IV.6.3.3} that, if $k$ is the residue field of $\mathrm{A}_\mathfrak{p}$, $k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''_{\mathfrak{p}''}$ is a Cohen-Macaulay ring.
 But since $\mathrm{A}_\mathfrak{p}$ is of dimension~$0$, the prime ideals of $\mathrm{A}'$ correspond bijectively to those of $k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''$ \sref[I]{I.3.5.7}, and if $\mathfrak{q}''$ is the prime ideal of $k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''$ corresponding to $\mathfrak{p}''$, the local rings $(k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}'')_{\mathfrak{q}''}$ and $k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''_{\mathfrak{p}''}$ are isomorphic.
 Therefore \sref[0]{0.16.5.13}, the ring $k\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}''$ is a Cohen-Macaulay ring.
@@ -391,7 +391,7 @@ Therefore \sref[0]{0.16.5.13}, the ring $k\otimes_{\mathrm{A}_\mathfrak{p}}\math
 Let $X$, $Y$ be two locally Noetherian preschemes, $f:X\to Y$ a morphism, $\sh{E}$ a coherent $\sh{O}_Y$-Module, $\sh{F}$ a coherent $\sh{O}_X$-Module and $f$-flat.
 \begin{enumerate}[label=(\roman*)]
   \item Let $x\in\operatorname{Supp}(\sh{F})$ be such that $\sh{E}\otimes_{\sh{O}_Y}\sh{F}$ has property $(\mathrm{S}_k)$ at the point $x$; then $\sh{E}$ has property $(\mathrm{S}_k)$ at the point $y=f(x)$.
-  \item Suppose that for every $y\in f(\operatorname{Supp}(\sh{F}))$, $\sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\boldsymbol{k}(y)$ has property $(\mathrm{S}_k)$; then, if for a point $y\in f(\operatorname{Supp}(\sh{F}))$, $\sh{E}$ has property $(\mathrm{S}_k)$ at the point $y$, $\sh{E}\otimes_{\sh{O}_Y}\sh{F}$ has property $(\mathrm{S}_k)$ at every point of $f^{-1}(y)$.
+  \item Suppose that for every $y\in f(\operatorname{Supp}(\sh{F}))$, $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\boldsymbol{k}(y)$ has property $(\mathrm{S}_k)$; then, if for a point $y\in f(\operatorname{Supp}(\sh{F}))$, $\sh{E}$ has property $(\mathrm{S}_k)$ at the point $y$, $\sh{E}\otimes_{\sh{O}_Y}\sh{F}$ has property $(\mathrm{S}_k)$ at every point of $f^{-1}(y)$.
 \end{enumerate}
 \end{proposition}
 
@@ -455,7 +455,7 @@ Then, for $f^*(\sh{E})$ to have property $(\mathrm{S}_k)$ at a point $x$, it is 
 \label{IV.6.4.3}
 Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $k$ the residue field of $\mathrm{A}$, $\varphi:\mathrm{A}\to\mathrm{B}$ a local homomorphism, $\mathrm{M}$ a $\mathrm{B}$-module of finite type that is a flat $\mathrm{A}$-module, and suppose in addition that the $\mathrm{A}$-module $\mathrm{A}$ and the ($\mathrm{B}\otimes_\mathrm{A} k$)-module $\mathrm{M}\otimes_\mathrm{A} k$ have property $(\mathrm{S}_n)$; can one then conclude that the $\mathrm{B}$-module $\mathrm{M}$ has property $(\mathrm{S}_n)$?
 We do not know even when $n=1$, $\mathrm{M}=\mathrm{B}$ and $\mathrm{B}=\hat{\mathrm{A}}$, which is to say we do not know whether in general the \emph{completion} of a local Noetherian ring satisfying $(\mathrm{S}_n)$ also satisfies $(\mathrm{S}_n)$, even for $n=1$.
-Setting $Y=\Spec(\mathrm{A})$, $X=\Spec(\mathrm{B})$ and $\sh{F}=\widetilde{\mathrm{M}}$, it would suffice, by virtue of \sref{IV.6.4.1}, (ii), to show that for \emph{every} $y\in Y$, $\sh{F}_y$ has property $(\mathrm{S}_k)$ (and not only when $y$ is the closed point of $Y$); it would also suffice to show that the set $U$ of $x\in X$ such that $\sh{F}_x\otimes_{\sh{O}_{f(x)}}\boldsymbol{k}(f(x))$ satisfies $(\mathrm{S}_k)$ is \emph{open} in $X$ (since it contains the closed point of $X$ by hypothesis).
+Setting $Y=\Spec(\mathrm{A})$, $X=\Spec(\mathrm{B})$ and $\sh{F}=\widetilde{\mathrm{M}}$, it would suffice, by virtue of \sref{IV.6.4.1}, (ii), to show that for \emph{every} $y\in Y$, $\sh{F}_y$ has property $(\mathrm{S}_n)$ (and not only when $y$ is the closed point of $Y$); it would also suffice to show that the set $U$ of $x\in X$ such that $\sh{F}_x\otimes_{\sh{O}_{f(x)}}\boldsymbol{k}(f(x))$ satisfies $(\mathrm{S}_n)$ is \emph{open} in $X$ (since it contains the closed point of $X$ by hypothesis).
 We will show further on \sref{IV.12.1.4} that $U$ is open when $\mathrm{B}$ is a local ring of a finite type $\mathrm{A}$-algebra and $\mathrm{M}=\mathrm{B}$.
 On the other hand, for $\mathrm{B}=\hat{\mathrm{A}}$ and $\mathrm{M}=\mathrm{B}$, we have seen in \sref{IV.6.3.8} that the preschemes $f^{-1}(y)$ are Cohen-Macaulay preschemes (in other words, satisfy $(\mathrm{S}_n)$ for \emph{every} $n$) when $\mathrm{A}$ is a quotient of a local Cohen-Macaulay ring.
 We conclude that when $\mathrm{A}$ is a quotient of a local Cohen-Macaulay ring (or, more generally, of a local ring satisfying the hypotheses of \sref{IV.6.3.8}), \emph{for $\mathrm{A}$ to satisfy} $(\mathrm{S}_n)$, \emph{it is necessary and sufficient that its completion} $\hat{\mathrm{A}}$ \emph{satisfy} $(\mathrm{S}_n)$.
@@ -474,8 +474,9 @@ Then:
   \item If $\mathrm{B}$ is regular, $\mathrm{A}$ is regular.
   \item If $\mathrm{A}$ and $\mathrm{B}\otimes_\mathrm{A} k$ are regular, $\mathrm{B}$ is regular.
 \end{enumerate}
-This proposition is given here for the record, having already been proved in \sref[0]{0.17.3.3}.
 \end{proposition}
+
+This proposition is given here for the record, having already been proved in \sref[0]{0.17.3.3}.
 
 \begin{corollary}[6.5.2]
 \label{IV.6.5.2}
@@ -499,7 +500,7 @@ Let $X$, $Y$ be two locally Noetherian preschemes, $f:X\to Y$ a flat morphism.
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
   \item Set $y=f(x)$ and let $y'$ be a generization of $y$; as in the proof of \sref{IV.6.4.1}, there is a generic point $x'$ of an irreducible component of $f^{-1}(y')$ which is a generization of $x$; hence $\dim(\sh{O}_{x'}\otimes_{\sh{O}_{y'}}\boldsymbol{k}(y'))=0$ and by virtue of the hypothesis and of \sref{IV.6.1.2}, $\dim(\sh{O}_{x'})=\dim(\sh{O}_{y'})$.
-The hypothesis implies, provided that $\dim(\sh{O}_{x'})>k$, that $\sh{O}_{x'}$ is a regular ring, and then $\sh{O}_{y'}$ is regular by virtue of \sref{IV.6.5.1}.
+The hypothesis implies either that $\dim(\sh{O}_{x'})>k$, in which case $\dim(\sh{O}_{y'})>k$, or that $\sh{O}_{x'}$ is a regular ring, and then $\sh{O}_{y'}$ is a regular ring by virtue of \sref{IV.6.5.1}.
 
   \item As for every generization $x'$ of $x\in f^{-1}(y)$, $y'=f(x')$ is a generization of $y$, we may restrict to verifying that if $\dim(\sh{O}_x)\leqslant k$, then $\sh{O}_x$ is a regular ring.
 Now, by virtue of \sref{IV.6.1.2}
@@ -529,19 +530,19 @@ This follows immediately from the normality criterion of Serre \sref{IV.5.8.6} a
 \oldpage[IV-2]{144}
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
-  \item Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $\varphi:\mathrm{A}\to\mathrm{B}$ a local homomorphism such that $\mathrm{B}$ is a flat $\mathrm{A}$-module.
+  \item Let $\mathrm{A}$, $\mathrm{B}$ be two local Noetherian rings, $\varphi:\mathrm{A}\to\mathrm{B}$ a local homomorphism such that $\mathrm{B}$ is a \emph{flat} $\mathrm{A}$-module.
 Let $k$ be the residue field of $\mathrm{A}$, and suppose that the two rings $\mathrm{A}$ and $\mathrm{B}\otimes_\mathrm{A} k$ satisfy property $(\mathrm{R}_i)$ \sref{IV.5.8.2}; then \emph{it does not necessarily follow} that $\mathrm{B}$ satisfies $(\mathrm{R}_i)$, even in the particular case where $i=0$ or $i=1$ and where $\mathrm{B}$ is the \emph{completion} $\hat{\mathrm{A}}$ of $\mathrm{A}$.
 Nagata has in fact given an example where $\mathrm{A}$ is \emph{normal} (hence satisfies $(\mathrm{R}_1)$) but where $\hat{\mathrm{A}}$ is not even reduced (hence does not satisfy $(\mathrm{R}_0)$)~[30].
 We cannot apply the proposition \sref{IV.6.5.3} to this case because the fibres $f^{-1}(y)$ do not necessarily satisfy property $(\mathrm{R}_i)$ at the points distinct from the closed point of $Y=\Spec(\mathrm{A})$.
-We will show further on \sref{IV.7.8.3}, (v)) that such phenomena do not arise for the local Noetherian rings that one encounters most often in applications.
+We will however show further on \sref{IV.7.8.3},~(v) that such phenomena do not arise for the local Noetherian rings that one encounters most often in applications.
 
-  \item The property for a prescheme of being \emph{integral} does not at all behave like the properties we have just examined and the preceding ones: it can happen that $f:X\to Y$ is a flat morphism of finite type, that all the fibres $f^{-1}(y)$ are geometrically regular (and even geometrically regular \sref{IV.6.7.6}) and that $Y$ is integral, without $X$ being even locally integral.
+  \item The property for a prescheme of being \emph{integral} does not at all behave like the properties we have just examined in this number and the preceding ones: it can happen that $f:X\to Y$ is a flat morphism of finite type, that all the fibres $f^{-1}(y)$ are regular (and even geometrically regular \sref{IV.6.7.6}) and that $Y$ is integral, without $X$ being even locally integral.
 For example, let $k$ be an algebraically closed field of characteristic~$0$, and let $\mathrm{A}$ be the integral ring $k[\mathrm{U},\mathrm{V}]/(\mathrm{U}\mathrm{V}-(\mathrm{U}+\mathrm{V})^3)$ (whose spectrum is therefore a ``cubic with a double point''); $\mathrm{A}$ is not integrally closed, and if $u$, $v$ are the canonical images of $\mathrm{U}$, $\mathrm{V}$ in $\mathrm{A}$, the integral closure of $\mathrm{A}$ is the ring $\mathrm{C}=\mathrm{A}[t]$, with $t=(u-v)/(u+v)$, which satisfies the equation $t^2=1+u+v$, whence $u=\frac{1}{2}(t^3+t^2-t)$, $v=\frac{1}{2}(-t^3+t^2+t)$ and therefore $\mathrm{C}=k[t]$, isomorphic to a polynomial ring in one indeterminate over $k$.
 If $\mathfrak{m}=\mathrm{A} u+\mathrm{A} v$, the maximal ideal of $\mathrm{A}$ (corresponding to the ``double point'' of the cubic), there are two maximal ideals $\mathfrak{n}_1$, $\mathfrak{n}_2$ of $\mathrm{C}$, generated respectively by $t\setmin 1$ and $t+1$.
-Let $\mathrm{B}$ be the subring of the product $\mathrm{C}\times\mathrm{C}$ formed by the pairs of polynomials $(f,g)$ such that $f(1)=g(-1)$ and $f(-1)=g(1)$ ($\Spec(\mathrm{B})$ is the prescheme obtained by ``gluing'' two copies of $\Spec(\mathrm{C})$, the point $\mathfrak{n}_1$ (resp.\ $\mathfrak{n}_2$) of one of the two copies being ``glued'' to the point $\mathfrak{n}_2$ (resp.\ $\mathfrak{n}_1$) of the other; cf.\ chap.~V, where this operation will be discussed in a general way).
+Let $\mathrm{B}$ be the subring of the product $\mathrm{C}\times\mathrm{C}$ formed by the pairs of polynomials $(f,g)$ such that $f(1)=g(-1)$ and $f(-1)=g(1)$ ($\Spec(\mathrm{B})$ is the scheme obtained by ``gluing'' two copies of $\Spec(\mathrm{C})$, the point $\mathfrak{n}_1$ (resp.\ $\mathfrak{n}_2$) of one of the two copies being ``glued'' to the point $\mathfrak{n}_2$ (resp.\ $\mathfrak{n}_1$) of the other; cf.\ chap.~V, where this operation will be discussed in a general way).
 There are therefore two maximal ideals $\mathfrak{r}_1$, $\mathfrak{r}_2$ of $\mathrm{B}$ above the maximal ideal $\mathfrak{m}$ of $\mathrm{A}$.
-Moreover, as the ``gluing'' process commutes with localisation and completion, one easily verifies that the canonical homomorphisms $\hat{\mathrm{A}}_\mathfrak{m}\to\hat{\mathrm{B}}_{\mathfrak{r}_1}$ and $\hat{\mathrm{A}}_\mathfrak{m}\to\hat{\mathrm{B}}_{\mathfrak{r}_2}$ are bijective; consequently $\mathrm{B}_{\mathfrak{r}_1}$ and $\mathrm{B}_{\mathfrak{r}_2}$ are flat $\mathrm{A}_\mathfrak{m}$-modules (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \textsection\,3, n\textsuperscript{o}\,5, prop.~10).
-For every other maximal ideal $\mathfrak{p}$ of $\mathrm{A}$, there are two maximal ideals $\mathfrak{q}_1$, $\mathfrak{q}_2$ of $\mathrm{B}$ above $\mathfrak{p}$, and the homomorphisms $\mathrm{A}_\mathfrak{p}\to\mathrm{B}_{\mathfrak{q}_1}$ and $\mathrm{A}_\mathfrak{p}\to\mathrm{B}_{\mathfrak{q}_2}$ are bijective.
+Moreover, as the ``gluing'' process commutes with localisation and completion, one easily verifies that the canonical homomorphisms $\hat{\mathrm{A}}_\mathfrak{m}\to\hat{\mathrm{B}}_{\mathfrak{r}_1}$ and $\hat{\mathrm{A}}_\mathfrak{m}\to\hat{\mathrm{B}}_{\mathfrak{r}_2}$ are bijective; consequently $\mathrm{B}_{\mathfrak{r}_1}$ and $\mathrm{B}_{\mathfrak{r}_2}$ are flat $\mathrm{A}_\mathfrak{m}$-modules (Bourbaki, \emph{Alg.\ comm.}, chap.~III, \textsection\,3, n\textsuperscript{o}\,5, prop.~10), having moreover the same residue field as $\mathrm{A}_\mathfrak{m}$.
+For every other maximal ideal $\mathfrak{p}$ of $\mathrm{A}$, it is immediate that there are two maximal ideals $\mathfrak{q}_1$, $\mathfrak{q}_2$ of $\mathrm{B}$ above $\mathfrak{p}$, and that the homomorphisms $\mathrm{A}_\mathfrak{p}\to\mathrm{B}_{\mathfrak{q}_1}$ and $\mathrm{A}_\mathfrak{p}\to\mathrm{B}_{\mathfrak{q}_2}$ are bijective.
 We see thus that the morphism $\Spec(\mathrm{B})\to\Spec(\mathrm{A})$ is flat and finite, and that all its fibres are geometrically regular (it is even \emph{\'etale}, as we will see later \sref{IV.17.6.3}); however it is immediate that $\mathrm{B}$ is not integral.
 \end{enumerate}
 \end{remarks}
@@ -565,19 +566,19 @@ Let then $\mathrm{X}$, $\mathrm{Y}$, $\mathrm{Z}$ be three locally Noetherian pr
 \begin{enumerate}[label=(\roman*)]
   \item Suppose that $f$ and $g$ are flat and that for every $y\in f(\mathrm{X})$ \textnormal{(}resp.\ every $z\in g(\mathrm{Y})$\textnormal{)}, the prescheme $f^{-1}(y)$ \textnormal{(}resp.\ $g^{-1}(z)$\textnormal{)} satisfies $\boldsymbol{P}$. Then $h=g\circ f$ is flat and, for every $z\in h(\mathrm{X})$, $h^{-1}(z)$ satisfies $\boldsymbol{P}$.
 
-  \item Suppose the following conditions are satisfied: $f$ is faithfully flat, $h=g\circ f$ is flat, for every $y\in\mathrm{Y}$, the prescheme $f^{-1}(y)$ satisfies $\boldsymbol{P}$, and for every $z\in g(\mathrm{Y})$, the prescheme $h^{-1}(z)$ satisfies $\boldsymbol{P}$. Then $g$ is flat, and for every $z\in g(\mathrm{Y})$, $g^{-1}(z)$ satisfies $\boldsymbol{P}$.
+  \item Suppose the following conditions are satisfied: $f$ is faithfully flat, $h=g\circ f$ is flat, for every $y\in\mathrm{Y}$, the prescheme $f^{-1}(y)$ satisfies $\boldsymbol{P}$, and for every $z\in h(\mathrm{X})$, the prescheme $h^{-1}(z)$ satisfies $\boldsymbol{P}$. Then $g$ is flat, and for every $z\in g(\mathrm{Y})$, $g^{-1}(z)$ satisfies $\boldsymbol{P}$.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
-(i) We already know \sref[0]{0.2.1.6} that $h$ is flat; furthermore, for every $z\in\mathrm{Z}$, $f_z=f\otimes\mathbf{1}_{\boldsymbol{k}(z)}:h^{-1}(z)\to g^{-1}(z)$ is flat \sref[0]{0.2.1.4}, and for every $y\in g^{-1}(z)$, $f_z^{-1}(y)$ is isomorphic to $f^{-1}(y)$ \sref[I]{I.3.6.4}. The conclusion follows then respectively from \sref{IV.6.3.5},~(ii), \sref{IV.6.4.2}, \sref{IV.6.5.2},~(ii), \sref{IV.6.5.3},~(ii), \sref{IV.6.5.4},~(ii) and \sref{IV.3.3.5},~(ii).
+(i) We already know \sref{IV.2.1.6} that $h$ is flat; furthermore, for every $z\in\mathrm{Z}$, $f_z=f\otimes 1_{\boldsymbol{k}(z)}:h^{-1}(z)\to g^{-1}(z)$ is flat \sref{IV.2.1.4}, and for every $y\in g^{-1}(z)$, $f_z^{-1}(y)$ is isomorphic to $f^{-1}(y)$ by transitivity of fibres \sref[I]{I.3.6.4}. The conclusion follows then respectively from \sref{IV.6.3.5},~(ii), \sref{IV.6.4.2}, \sref{IV.6.5.2},~(ii), \sref{IV.6.5.3},~(ii), \sref{IV.6.5.4},~(ii) and \sref{IV.3.3.5},~(ii).
 
-(ii) We already know that $g$ is flat \sref{IV.2.2.13}; in addition, for every $z\in\mathrm{Z}$, $f_z$ is faithfully flat \sref{IV.2.2.13}. The conclusion follows then respectively from \sref{IV.6.3.5},~(i), \sref{IV.6.4.2}, \sref{IV.6.5.2},~(i), \sref{IV.6.5.3},~(i), \sref{IV.6.5.4},~(ii) and \sref{IV.2.1.13}.
+(ii) We already know that $g$ is flat \sref{IV.2.2.13}; in addition, for every $z\in\mathrm{Z}$, $f_z$ is faithfully flat \sref{IV.2.2.13}. The conclusion follows then respectively from \sref{IV.6.3.5},~(i), \sref{IV.6.4.2}, \sref{IV.6.5.2},~(i), \sref{IV.6.5.3},~(i), \sref{IV.6.5.4},~(i) and \sref{IV.2.1.13}.
 \end{proof}
 
 \begin{remark}[6.6.2]
 \label{IV.6.6.2}
-Suppose $h$ flat, $f$ faithfully flat, and suppose that for every $z\in\mathrm{Z}$, $h^{-1}(z)$ is of coprofundity $\leqslant n$ \sref{IV.5.7.1}; then it follows from the reasoning of \sref{IV.6.6.1},~(ii) and \sref{IV.6.3.2} that $g^{-1}(z)$ is of coprofundity $\leqslant n$ for every $z\in g(\mathrm{Y})$ and that for every $y\in\mathrm{Y}$, $f^{-1}(y)$ is of coprofundity $\leqslant n$.
+Suppose $h$ flat, $f$ faithfully flat, and suppose that for every $z\in\mathrm{Z}$, $h^{-1}(z)$ is \emph{of coprofundity} $\leqslant n$ \sref{IV.5.7.1}; then it follows from the reasoning of \sref{IV.6.6.1},~(ii) and \sref{IV.6.3.2} that $g^{-1}(z)$ is \emph{of coprofundity} $\leqslant n$ for every $z\in g(\mathrm{Y})$ and that for every $y\in\mathrm{Y}$, $f^{-1}(y)$ is \emph{of coprofundity} $\leqslant n$.
 \end{remark}
 
 \subsection{Application to base changes in algebraic preschemes}
@@ -594,7 +595,7 @@ Let $k$ be a field, $\mathrm{X}$ a $k$-prescheme locally Noetherian, $\sh{F}$ an
 
 \begin{proof}
 \oldpage[IV-2]{146}
-We know that $p$ is faithfully flat \sref{IV.2.2.13}; the two assertions are then consequences respectively of \sref{IV.6.3.2} and \sref{IV.6.4.2}, provided that one proves that $p^{-1}(x)=\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k k')$ is a Cohen-Macaulay prescheme; as one of the two fields $\boldsymbol{k}(x)$, $k'$ is an extension of finite type of $k$ by hypothesis, we are reduced to proving the following:
+We know that $p$ is faithfully flat \sref{IV.2.2.13}; the two assertions are then consequences respectively of \sref{IV.6.3.2} and \sref{IV.6.4.2}, provided that one proves that $p^{-1}(x)=\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k k')$ is a \emph{Cohen-Macaulay prescheme}; as one of the two fields $\boldsymbol{k}(x)$, $k'$ is an extension of finite type of $k$ by hypothesis, we are reduced to proving the following:
 \end{proof}
 
 \begin{lemma}[6.7.1.1]
@@ -603,12 +604,12 @@ Let $\mathrm{K}$, $\mathrm{L}$ be two extensions of a field $k$, one of which is
 \end{lemma}
 
 \begin{proof}
-Suppose for example that $\mathrm{L}$ is an extension of finite type of $k$, so that $\mathrm{L}$ is extension of a pure extension $k(\mathbf{t})$ of $k$ ($\mathbf{t}$ being a system $(t_i)_{1\leqslant i\leqslant m}$ of indeterminates). We then set $\mathrm{A}=\mathrm{K}\otimes_k k(\mathbf{t})$, $\mathrm{B}=\mathrm{K}\otimes_k\mathrm{L}$, $\mathrm{B}$ is an $\mathrm{A}$-module flat \sref[0]{0.6.2.1} and of finite type; the morphism $h:\operatorname{Spec}(\mathrm{B})\to\operatorname{Spec}(\mathrm{A})$ is finite, and as every Artinian prescheme is of Cohen-Macaulay, to prove that $\mathrm{B}$ is a Cohen-Macaulay ring, it suffices to prove that $\mathrm{A}$ is a Cohen-Macaulay ring \sref{IV.6.3.5}. Now, if $\mathrm{S}$ is the set of nonzero elements of $k[\mathbf{t}]$, then $\mathrm{A}=\mathrm{S}^{-1}\mathrm{A}'$, where $\mathrm{A}'=\mathrm{K}\otimes_k k[\mathbf{t}]=\mathrm{K}[\mathbf{t}]$; by \sref[0]{0.16.5.13}, it suffices to prove that $\mathrm{A}'$ is regular \sref[0]{0.17.3.7}.
+Suppose for example that $\mathrm{L}$ is an extension of finite type of $k$, so that $\mathrm{L}$ is a finite extension of a pure extension $k(\mathbf{t})$ of $k$ ($\mathbf{t}$ being a system $(t_i)_{1\leqslant i\leqslant m}$ of indeterminates). If one sets $\mathrm{A}=\mathrm{K}\otimes_k k(\mathbf{t})$, $\mathrm{B}=\mathrm{K}\otimes_k\mathrm{L}$, $\mathrm{B}$ is a flat $\mathrm{A}$-module \sref[0\textsubscript{\mdseries I}]{0.6.2.1} and of finite type; the morphism $h:\operatorname{Spec}(\mathrm{B})\to\operatorname{Spec}(\mathrm{A})$ is therefore finite, and as every Artinian prescheme is of Cohen-Macaulay, to prove that $\mathrm{B}$ is a Cohen-Macaulay ring, it suffices to prove that $\mathrm{A}$ is a Cohen-Macaulay ring \sref{IV.6.3.5}. Now, if $\mathrm{S}$ is the set of elements $\neq 0$ of $k[\mathbf{t}]$, then $\mathrm{A}=\mathrm{S}^{-1}\mathrm{A}'$, where $\mathrm{A}'=\mathrm{K}\otimes_k k[\mathbf{t}]=\mathrm{K}[\mathbf{t}]$; by \sref[0]{0.16.5.13}, it suffices to prove that $\mathrm{A}'$ is a Cohen-Macaulay ring; but this follows from the fact that $\mathrm{A}'$ is \emph{regular} \sref[0]{0.17.3.7}.
 \end{proof}
 
 \begin{corollary}[6.7.2]
 \label{IV.6.7.2}
-For $\sh{O}_x$ to be a Cohen--Macaulay ring (resp. for $\mathrm{X}$ to satisfy $(\mathrm{S}_n)$ at the point $x$), it is necessary and sufficient that $\sh{O}_{x'}$ be a Cohen--Macaulay ring (resp. that $\mathrm{X}'$ satisfy $(\mathrm{S}_n)$ at the point $x'$).
+For $\sh{O}_x$ to be a Cohen-Macaulay ring (resp. for $\mathrm{X}$ to satisfy $(\mathrm{S}_n)$ at the point $x$), it is necessary and sufficient that $\sh{O}_{x'}$ be a Cohen-Macaulay ring (resp. that $\mathrm{X}'$ satisfy $(\mathrm{S}_n)$ at the point $x'$).
 \end{corollary}
 
 \begin{corollary}[6.7.3]
@@ -617,14 +618,14 @@ Let $\mathrm{X}$ and $\mathrm{Y}$ be two locally Noetherian $k$-preschemes, at l
 \end{corollary}
 
 \begin{proof}
-The hypothesis implies that $\mathrm{X}\times_k\mathrm{Y}$ is locally Noetherian; let $p:\mathrm{X}\times_k\mathrm{Y}\to\mathrm{X}$ and $q:\mathrm{X}\times_k\mathrm{Y}\to\mathrm{Y}$ be the canonical projections, which are flat morphisms. Suppose, for example, that $\mathrm{X}$ is locally of finite type over $k$; we may write $\sh{F}\otimes_k\sh{G}=p^*(\sh{F})\otimes_k\sh{G}$, and since $\sh{F}$ is flat relative to the structural morphism $\mathrm{X}\to\operatorname{Spec}(k)$, $p^*(\sh{F})$ is $q$-flat \sref{IV.2.1.4}. Applying the criterion \sref{IV.6.4.1},~(ii) to the morphism $q$, it suffices to see that, for every $y\in\mathrm{Y}$, $p^*(\sh{F})\otimes_{\sh{O}_{\mathrm{Y}}}\boldsymbol{k}(y)$ has property $(\mathrm{S}_n)$; but
+The hypothesis implies that $\mathrm{X}\times_k\mathrm{Y}$ is locally Noetherian; let $p:\mathrm{X}\times_k\mathrm{Y}\to\mathrm{X}$ and $q:\mathrm{X}\times_k\mathrm{Y}\to\mathrm{Y}$ be the canonical projections, which are flat morphisms. Suppose, for example, that $\mathrm{X}$ is locally of finite type over $k$; we may write $\sh{F}\otimes_k\sh{G}=p^*(\sh{F})\otimes_k\mathscr G$ and since $\sh{F}$ is flat relative to the structural morphism $\mathrm{X}\to\operatorname{Spec}(k)$, $p^*(\sh{F})$ is $q$-flat \sref{IV.2.1.4}. Applying the criterion \sref{IV.6.4.1},~(ii) to the morphism $q$, it suffices to see that, for every $y\in\mathrm{Y}$, $p^*(\sh{F})\otimes_{\sh{O}_{\mathrm{Y}}}\boldsymbol{k}(y)$ has property $(\mathrm{S}_n)$; but
 $p^*(\sh{F})\otimes_{\sh{O}_{\mathrm{Y}}}\boldsymbol{k}(y)=\sh{F}\otimes_k\boldsymbol{k}(y)$, and since $\mathrm{X}$ is locally of finite type over $k$, the conclusion follows from \sref{IV.6.7.1},~(ii).
 \end{proof}
 
 \begin{proposition}[6.7.4]
 \label{IV.6.7.4}
 For a locally Noetherian prescheme $\mathrm{Z}$ and a point $z\in\mathrm{Z}$, let $\boldsymbol{P}(\mathrm{Z},z)$ be one of the following properties:
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\emph{\alph*)}]
   \item $\mathrm{Z}$ is regular at the point $z$.
   \item $\mathrm{Z}$ satisfies $(\mathrm{R}_n)$ at the point $z$.
   \item $\mathrm{Z}$ is normal at the point $z$.
@@ -634,10 +635,8 @@ Under the hypotheses and with the notation of \sref{IV.6.7.1}, if $\boldsymbol{P
 \end{proposition}
 
 \begin{proof}
-The case where $\boldsymbol{P}$ is property d) has been included only for the record, having already been treated in \sref{IV.2.1.13} and \sref{IV.4.6.1}. The same reasoning as at the beginning of the proof of \sref{IV.6.7.1} shows that the first assertion follows respectively from \sref{IV.6.5.2},~(i), \sref{IV.6.5.3},~(i), and \sref{IV.6.5.4},~(i); similarly, the second assertion follows from \sref{IV.6.5.2},~(ii), \sref{IV.6.5.3},~(ii), and \sref{IV.6.5.4},~(ii),
-
+The case where $\boldsymbol{P}$ is property \emph{d)} has been included only for the record, having already been treated in \sref{IV.2.1.13} and \sref{IV.4.6.1}. The same reasoning as at the beginning of \sref{IV.6.7.1} shows that the first assertion follows respectively from \sref{IV.6.5.2},~(i), \sref{IV.6.5.3},~(i), and \sref{IV.6.5.4},~(i); similarly, the second assertion follows from \sref{IV.6.5.2},~(ii), \sref{IV.6.5.3},~(ii), and \sref{IV.6.5.4},~(ii),
 \oldpage[IV-2]{147}
-
 provided that one proves that $p^{-1}(x)$ is a regular prescheme; in other words, we are reduced to proving the following lemma.
 \end{proof}
 
@@ -651,7 +650,7 @@ We distinguish two cases.
 
 A) $\mathrm{L}$ is an extension of finite type of $k$. With the notation of \sref{IV.6.7.1.1}, we may then suppose that $\mathrm{L}$ is a finite separable extension of $k(\mathbf{t})$. For every $s\in\operatorname{Spec}(\mathrm{A})$, the ring $\boldsymbol{k}(s)\otimes_{k(\mathbf{t})}\mathrm{L}$ is a direct sum of finitely many fields, finite separable extensions of $\boldsymbol{k}(s)$, and is therefore regular; it follows from \sref{IV.6.5.2},~(ii) that it suffices to prove that $\mathrm{A}$ is regular. Since $\mathrm{A}=\mathrm{S}^{-1}\mathrm{A}'$, it suffices to prove that $\mathrm{A}'$ is regular \sref[0]{0.17.3.6}, and this was proved in the proof of \sref{IV.6.7.1.1}.
 
-B) Let $(\mathrm{L}_\lambda)$ be the filtered family of subextensions of $\mathrm{L}$ that are of finite type over $k$. By A), each ring $\mathrm{C}_\lambda=\mathrm{K}\otimes_k\mathrm{L}_\lambda$ is regular; moreover, if $\mathrm{L}_\lambda\subset\mathrm{L}_\mu$, then $\mathrm{L}_\mu$ is a flat $\mathrm{L}_\lambda$-module, so $\mathrm{C}_\mu$ is a flat $\mathrm{C}_\lambda$-module \sref[0]{0.6.2.1}. Since $\mathrm{C}=\mathrm{K}\otimes_k\mathrm{L}=\varinjlim(\mathrm{K}\otimes_k\mathrm{L}_\lambda)$ is Noetherian, we may apply \sref{IV.5.13.7}, and $\mathrm{C}$ is therefore regular.
+B) Let $(\mathrm{L}_\lambda)$ be the filtered family of subextensions of $\mathrm{L}$ that are of finite type over $k$. By A), each ring $\mathrm{C}_\lambda=\mathrm{K}\otimes_k\mathrm{L}_\lambda$ is regular; moreover, if $\mathrm{L}_\lambda\subset\mathrm{L}_\mu$, then $\mathrm{L}_\mu$ is a flat $\mathrm{L}_\lambda$-module, so $\mathrm{C}_\mu$ is a flat $\mathrm{C}_\lambda$-module \sref[0\textsubscript{\mdseries I}]{0.6.2.1}. Since $\mathrm{C}=\mathrm{K}\otimes_k\mathrm{L}=\varinjlim(\mathrm{K}\otimes_k\mathrm{L}_\lambda)$ is Noetherian, we may apply \sref{IV.5.13.7}, and $\mathrm{C}$ is therefore regular.
 \end{proof}
 
 \begin{remarks}[6.7.5]
@@ -661,25 +660,23 @@ B) Let $(\mathrm{L}_\lambda)$ be the filtered family of subextensions of $\mathr
 Take, for example, for $\mathrm{X}$ a normal algebraic curve over $k$ \sref[II]{II.7.4.2}. Since the local rings of $\mathrm{X}$ are integrally closed and of dimension~$1$, they are discrete valuation rings and hence regular \sref[II]{II.7.1.6}; consequently $\mathrm{X}$ is a regular $k$-scheme (and \emph{a fortiori} satisfies $(\mathrm{R}_n)$ for every $n\geqslant0$). To say that $\mathrm{X}$ is geometrically integral then means that its field $\mathrm{K}$ of rational functions is a separable and primary extension of $k$ \sref{IV.4.6.3}.
 
 Now let $k$ be a nonperfect field of characteristic $p>2$, and let $a\in k$ be an element not belonging to $k^p$. Let $\mathrm{B}=k[\mathrm{S},\mathrm{T}]$ be the polynomial ring in two indeterminates. The polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^2-\mathrm{S}^p+a$
-is irreducible in $\mathrm{B}$, since one checks at once that $\mathrm{S}^p\setmin a$ is not a square in $k[\mathrm{S}]$; hence $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}=\mathrm{B}/\mathrm{PB}$, is an irreducible affine curve over $k$. To see that $\mathrm{X}$ is regular, it suffices to show that it is normal \sref[II]{II.7.4.5}. But $\mathrm{A}=k[\mathrm{S}][t]$, where $t$ is a root of $\mathrm{P}$ considered as a polynomial in $\mathrm{T}$ over $k[\mathrm{S}]$, so the field $\mathrm{K}=\mathrm{R}(\mathrm{X})$ of rational functions of $\mathrm{X}$ is the field of fractions $k(\mathrm{S})[\mathrm{T}]/(\mathrm{P})$ of $\mathrm{A}$, a quadratic extension of $k(\mathrm{S})$, hence separable over $k(\mathrm{S})$ and \emph{a fortiori} over $k$. Since $2$ is invertible in $k$, one checks at once that $\mathrm{A}$ is the integral closure of $k[\mathrm{S}]$ in $\mathrm{K}$; thus $\mathrm{A}$ is integrally closed, and $\mathrm{X}$ is regular. Moreover, if an element $f+tg$ of $\mathrm{K}$ (with $f,g\in k(\mathrm{S})$) is algebraic over $k$, then so are its norm and trace over $k(\mathrm{S})$; since $k(\mathrm{S})$ is a purely transcendental extension of $k$, it follows readily that $f\in k$ and $g=0$. Thus $k$ is algebraically closed in $\mathrm{K}$, and \emph{a fortiori} $\mathrm{K}$ is a primary extension
-
+is irreducible in $\mathrm{B}$, since one checks at once that $\mathrm{S}^p\setmin a$ is not a square in the ring $k[\mathrm{S}]$; hence $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}=\mathrm{B}/\mathrm{PB}$, is an irreducible affine curve over $k$. To see that $\mathrm{X}$ is regular, it suffices to show that it is normal \sref[II]{II.7.4.5}. But $\mathrm{A}=k[\mathrm{S}][t]$, where $t$ is a root of $\mathrm{P}$ considered as a polynomial in $\mathrm{T}$ over $k[\mathrm{S}]$, so the field $\mathrm{K}=\mathrm{R}(\mathrm{X})$ of rational functions of $\mathrm{X}$ is the field of fractions $k(\mathrm{S})[\mathrm{T}]/(\mathrm{P})$ of $\mathrm{A}$, a quadratic extension of $k(\mathrm{S})$, hence separable over $k(\mathrm{S})$ and \emph{a fortiori} over $k$. Since $2$ is invertible in $k$, one checks at once that $\mathrm{A}$ is the integral closure of $k[\mathrm{S}]$ in $\mathrm{K}$; thus $\mathrm{A}$ is integrally closed, and $\mathrm{X}$ is regular. Moreover, if an element $f+tg$ of $\mathrm{K}$ (with $f$, $g$ in $k(\mathrm{S})$) is algebraic over $k$, then so are its norm and trace over $k(\mathrm{S})$; since $k(\mathrm{S})$ is a purely transcendental extension of $k$, it follows readily that $f\in k$ and $g=0$. Thus $k$ is algebraically closed in $\mathrm{K}$, and \emph{a fortiori} $\mathrm{K}$ is a primary extension
 \oldpage[IV-2]{148}
-
 of $k$ \sref{IV.4.3.1}. Nevertheless, if $k'=k(a^{1/p})$, then $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not normal: in $k'[\mathrm{S}]$ one has $\mathrm{S}^p-a=(\mathrm{S}\setmin a^{1/p})^p$,
 and $\mathrm{X}'$ is therefore isomorphic to $\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'=k'[\mathrm{S}][t']$ and $t'$ is a root of $\mathrm{T}^2-\mathrm{S}^p$. The ring $\mathrm{A}'$ is not integrally closed: the element $t''=t'/\mathrm{S}$ of its field of fractions $\mathrm{K}'=k'(\mathrm{S})[t']$ satisfies the integral-dependence equation $t''^2-\mathrm{S}^{p-2}=0$
 over $\mathrm{A}'$, but does not belong to $\mathrm{A}'$. In classical terminology, the ``genus'' over $k'$ of the field $\mathrm{K}'$ of rational functions of $\mathrm{X}'$ is \emph{strictly smaller} than that of $\mathrm{K}$ over $k$.
 
-(ii) As recalled in (i), it follows from \sref{IV.4.6.1} that when $\mathrm{X}$ is not a geometrically reduced algebraic prescheme over $k$, there exist finite radicial extensions $k'$ of $k$ such that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not reduced. It is interesting to give an example where $\mathrm{X}$ is a regular scheme over $k$, such that $k$ is \emph{algebraically closed} in the field $\mathrm{K}$ of rational functions of $\mathrm{X}$. Let $k$ be a field of characteristic $p>0$, in which there exist two elements $a$, $b$ forming a $p$-free family over $k^p$. Denoting again by $\mathrm{B}$ the ring $k[\mathrm{S},\mathrm{T}]$, consider this time the polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^p-a\mathrm{S}^p-b$; as $a\mathrm{S}^p+b$ is not a $p$-th power in $k(\mathrm{S})$, $\mathrm{P}$ is irreducible as a polynomial of $k(\mathrm{S})[\mathrm{T}]$, and the scheme $\mathrm{X}_0=\operatorname{Spec}(\mathrm{B}/\mathrm{PB})$ is therefore an integral affine curve over $k$, whose field of rational functions is $\mathrm{K}=k(\mathrm{S})[t]$, where $t$ is a root of $\mathrm{P}$; let us show that $k$ is \emph{algebraically closed} in $\mathrm{K}$. Suppose indeed that $\mathrm{K}$ contains an element $z$ algebraic over $k$ and not in $k$; one would then also have $z\notin k(\mathrm{S})$, so $[k(\mathrm{S})[z]:k(\mathrm{S})]>1$; as $[\mathrm{K}:k(\mathrm{S})]=p$, and as $\mathrm{K}$ is radicial over $k(\mathrm{S})$, one would have $z^p\in k(\mathrm{S})$, so $c=z^p\in k$ since $z$ is algebraic over $k$; but then one would have $t^p=a\mathrm{S}^p+b\in k^p(\mathrm{S}^p)(c)$ hence $a$ and $b$ would belong to $k^p(c)$, which is absurd. So $\mathrm{X}$ is the normalisation of the curve $\mathrm{X}_0$ in $\mathrm{K}$, which is therefore a normal curve (and hence \emph{regular}) over $k$. If $k'=k(a^{1/p},b^{1/p})$, it is clear that $a\mathrm{S}^p+b$ is a $p$-th power in $k'(\mathrm{S})$, hence $\mathrm{K}\otimes_k k'$ is \emph{not reduced}, nor \emph{a fortiori} the scheme $\mathrm{X}\otimes_k k'$.
+(ii) As recalled in (i), it follows from \sref{IV.4.6.1} that when $\mathrm{X}$ is not a geometrically reduced algebraic prescheme over $k$, there exist finite radicial extensions $k'$ of $k$ such that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not reduced. It is interesting to give an example of this fact where $\mathrm{X}$ is a \emph{regular} scheme over $k$, such that $k$ is \emph{algebraically closed} in the field $\mathrm{K}$ of rational functions of $\mathrm{X}$. Let $k$ be a field of characteristic $p>0$, in which there exist two elements $a$, $b$ forming a $p$-free family over $k^p$. Denoting again by $\mathrm{B}$ the ring $k[\mathrm{S},\mathrm{T}]$, consider this time the polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^p-a\mathrm{S}^p-b$; as $a\mathrm{S}^p+b$ is not a $p$-th power in $k(\mathrm{S})$, $\mathrm{P}$ is irreducible as a polynomial of $k(\mathrm{S})[\mathrm{T}]$, and the scheme $\mathrm{X}_0=\operatorname{Spec}(\mathrm{B}/\mathrm{PB})$ is therefore an \emph{integral} affine curve over $k$, whose field of rational functions is $\mathrm{K}=k(\mathrm{S})[t]$, where $t$ is a root of $\mathrm{P}$; let us show that $k$ is \emph{algebraically closed} in $\mathrm{K}$. Suppose indeed that $\mathrm{K}$ contains an element $z$ algebraic over $k$ and not in $k$; one would then also have $z\notin k(\mathrm{S})$, so $[k(\mathrm{S})[z]:k(\mathrm{S})]>1$; as $[\mathrm{K}:k(\mathrm{S})]=p$, one would have $\mathrm{K}=k(\mathrm{S})[z]$, and as $\mathrm{K}$ is radicial over $k(\mathrm{S})$, one would have $z^p\in k(\mathrm{S})$, so $c=z^p\in k$ since $z$ is algebraic over $k$; but then one would have $t^p=a\mathrm{S}^p+b\in k^p(\mathrm{S}^p)(c)$ hence $a$ and $b$ would belong to $k^p(c)$, which is absurd. Let $\mathrm{X}$ then be the \emph{normalisation} of the curve $\mathrm{X}_0$ in $\mathrm{K}$, which is therefore a normal curve (and hence \emph{regular}) over $k$. If $k'=k(a^{1/p},b^{1/p})$, it is clear that $a\mathrm{S}^p+b$ is a $p$-th power in $k'(\mathrm{S})$, hence $\mathrm{K}\otimes_k k'$ is \emph{not reduced}, nor \emph{a fortiori} the scheme $\mathrm{X}\otimes_k k'$.
 \end{remarks}
 
 \begin{definition}[6.7.6]
 \label{IV.6.7.6}
 Let $k$ be a field, $\mathrm{X}$ a $k$-prescheme locally Noetherian. We say that $\mathrm{X}$ is \emph{geometrically regular} at a point $x$ (resp.\ has the property $(\mathrm{R}_n)$ \emph{geometric}) at a point $x$, resp.\ is geometrically normal at a point $x$) if, \emph{for every} finite extension $k'$ of $k$, $\mathrm{X}'=\mathrm{X}_{(k')}=\mathrm{X}\otimes_k k'$ is regular (resp.\ has the property $(\mathrm{R}_n)$\textup{, resp.}\ is normal) at every point $x'$ of $\mathrm{X}'$ whose projection in $\mathrm{X}$ is $x$. We say that $\mathrm{X}$ is \emph{geometrically regular} (resp.\ has the property $(\mathrm{R}_n)$ \emph{geometric}, or equivalently is geometrically regular in codimension $\leqslant n$)\textup{, resp.}\ is \emph{geometrically normal}) if $\mathrm{X}$ is geometrically regular (resp.\ has the property $(\mathrm{R}_n)$ geometric, resp.\ is geometrically normal) at every point.
+\end{definition}
 
 We say that an algebra $\mathrm{A}$ over $k$ is a \emph{geometrically regular ring} (resp.\ geometrically normal, resp.\ geometrically reduced, resp.\ having the property $(\mathrm{R}_n)$ geometric) if $\operatorname{Spec}(\mathrm{A})$ has the same property.
 
-If $\mathrm{X}=\operatorname{Spec}(\mathrm{K})$, where $\mathrm{K}$ is an extension of $k$, then saying that $\mathrm{X}$ is geometrically regular, or geometrically normal, or \emph{geometrically reduced}, amounts to saying that $\mathrm{K}$ is a \emph{separable} extension of $k$: this follows from \sref{IV.4.6.1} and the fact that if $\mathrm{K}$ is a separable extension of $k$ and $k'$ a finite extension of $k$, $\mathrm{K}\otimes_k k'$ is composed of a direct product of a finite number of fields (Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no~3, cor.~1 of th.~1).
-\end{definition}
+If $\mathrm{X}=\operatorname{Spec}(\mathrm{K})$, where $\mathrm{K}$ is an extension of $k$, then saying that $\mathrm{X}$ is geometrically regular, or geometrically normal, or \emph{geometrically reduced}, amounts to saying that $\mathrm{K}$ is a \emph{separable} extension of $k$: this follows from \sref{IV.4.6.1} and the fact that if $\mathrm{K}$ is a separable extension of $k$ and $k'$ a finite extension of $k$, $\mathrm{K}\otimes_k k'$ is composed of a direct product of a finite number of fields (Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, n\textsuperscript{o}~3, cor.~1 of th.~1).
 
 \oldpage[IV-2]{149}
 
@@ -703,13 +700,13 @@ Suppose in addition that $\mathrm{X}$ is locally of finite type over $k$; then t
 \begin{proof}
 To prove the equivalence of $a)$, $b)$ and $c)$, it clearly suffices to show that $b)$ implies $c)$. Let $\mathrm{K}$ be an extension of finite type of $k$, which is then the field of fractions of a $k$-algebra of finite type $\mathrm{A}$; set $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$. We know \sref{IV.4.6.6} that there exists a finite and radicial extension $k'$ of $k$ such that $\mathrm{Y}'=(\mathrm{Y}\otimes_k k')_{\mathrm{red}}$ is separable over $k'$; if $\eta'$ is the generic point of $\mathrm{Y}'$, $\mathrm{K}'=\boldsymbol{k}(\eta')$ is a separable extension of $k'$ by \sref{IV.4.6.1}. This being so, $\boldsymbol{P}(\mathrm{X}_{(k')},x')$ is true by hypothesis for every point $x'$ of $\mathrm{X}_{(k')}$ above $x$, so it follows from \sref{IV.6.7.4} that $\boldsymbol{P}(\mathrm{X}_{(\mathrm{K}')},x'')$ is true for every point $x''$ of $\mathrm{X}_{(\mathrm{K}')}$ above $x$, since $\mathrm{X}_{(\mathrm{K}')}=(\mathrm{X}_{(k')})_{(\mathrm{K}')}$, $x''$ is above a point $x'$ of $\mathrm{X}_{(k')}$, itself above $x$, and $\mathrm{K}'$ is separable over $k'$. But we also have $\mathrm{X}_{(\mathrm{K}')}=(\mathrm{X}_{(\mathrm{K})})_{(\mathrm{K}')}$ and for every $x_0\in\mathrm{X}_{(\mathrm{K})}$ above $x$, there exists $x''\in\mathrm{X}_{(\mathrm{K}')}$ above $x_0$; it therefore follows from \sref{IV.6.7.4} that $\boldsymbol{P}(\mathrm{X}_{(\mathrm{K})},x_0)$ is true.
 
-Suppose now that $\mathrm{X}$ is locally of finite type over $k$, so that for \emph{every} extension $\mathrm{K}$ of $k$, $\mathrm{X}_{(\mathrm{K})}$ is locally Noetherian. As a radicial extension of $k$ is isomorphic to a sub-extension of a perfect extension of $k$, it follows immediately from \sref{IV.6.7.4} that $e)$ implies $f)$; also, every finite radicial extension of $k$ is contained in an extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, so $f)$ implies $b)$; $d)$ trivially implies $e)$, and finally $e)$ implies $d)$. Indeed, if $\mathrm{K}$ is any extension \emph{whatever} of $k$, there exists an extension $\mathrm{K}'$ of $k$ containing (up to $k$-isomorphisms) $k'$ and $\mathrm{K}$; since $\mathrm{K}'$ is a separable extension of $k'$, one deduces from \sref{IV.6.7.4} that $\boldsymbol{Q}(k')$ is true, then that $Q(\mathrm{K})$ is true, reasoning as in the first part of the proof. It therefore suffices to prove that $b)$ \emph{implies} $e)$. We shall take $k'=k^{p^{-\infty}}$ in $e)$.
+Suppose now that $\mathrm{X}$ is locally of finite type over $k$, so that for \emph{every} extension $\mathrm{K}$ of $k$, $\mathrm{X}_{(\mathrm{K})}$ is locally Noetherian. As a radicial extension of $k$ is isomorphic to a sub-extension of any perfect extension of $k$, it follows immediately from \sref{IV.6.7.4} that $e)$ implies $f)$; also, every finite radicial extension of $k$ is contained in an extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, so $f)$ implies $b)$; $d)$ trivially implies $e)$, and finally $e)$ implies $d)$. Indeed, if $\mathrm{K}$ is any extension \emph{whatever} of $k$, there exists an extension $\mathrm{K}'$ of $k$ containing (up to $k$-isomorphisms) $k'$ and $\mathrm{K}$; since $\mathrm{K}'$ is a \emph{separable} extension of $k'$, one deduces from \sref{IV.6.7.4} that $\boldsymbol{Q}(\mathrm{K}')$ is true, then that $\boldsymbol{Q}(\mathrm{K})$ is true, reasoning as in the first part of the proof. It therefore suffices to prove that $b)$ \emph{implies} $e)$. We shall take $k'=k^{p^{-\infty}}$ in $e)$.
 
-The question being local on $\mathrm{X}$, one can furthermore limit oneself to the case where $\mathrm{X}$ is affine and of finite type over $k$, by replacing $\mathrm{X}$ by a neighbourhood of $x$; let then $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}$ is a $k$-algebra of finite type; furthermore, by definition of the property $\boldsymbol{P}$ in the cases considered, one can also replace $\mathrm{X}$ by the local scheme of $\mathrm{X}$ at the point $x$, hence suppose that $\mathrm{B}$ is a \emph{local} Noetherian ring. Set $\mathrm{B}'=\mathrm{B}\otimes_k k'$; $k'$ is the inductive limit of its finite sub-extensions $k'_\lambda$ and if one sets $\mathrm{B}'_\lambda=\mathrm{B}\otimes_k k'_\lambda$, the morphism $f_\lambda:\operatorname{Spec}(\mathrm{B}')\to\operatorname{Spec}(\mathrm{B}'_\lambda)$ is a \emph{homeomorphism} of $\operatorname{Spec}(\mathrm{B}')$ onto $\operatorname{Spec}(\mathrm{B}'_\lambda)$ for every $\lambda$;
+The question being local on $\mathrm{X}$, one can furthermore limit oneself to the case where $\mathrm{X}$ is affine and of finite type over $k$, by replacing $\mathrm{X}$ by a neighbourhood of $x$; let then $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}$ is a $k$-algebra of finite type; furthermore, by definition of the property $\boldsymbol{P}$ in the cases considered, one can also replace $\mathrm{X}$ by the local scheme of $\mathrm{X}$ at the point $x$, hence suppose that $\mathrm{B}$ is a \emph{local} Noetherian ring. Set $\mathrm{B}'=\mathrm{B}\otimes_k k'$; $k'$ is the inductive limit of its \emph{finite} sub-extensions $k'_\lambda$ and if one sets $\mathrm{B}'_\lambda=\mathrm{B}\otimes_k k'_\lambda$, the morphism $f_\lambda:\operatorname{Spec}(\mathrm{B}')\to\operatorname{Spec}(\mathrm{B}'_\lambda)$ is a \emph{homeomorphism} of $\operatorname{Spec}(\mathrm{B}')$ \emph{onto} $\operatorname{Spec}(\mathrm{B}'_\lambda)$ for every $\lambda$;
 
 \oldpage[IV-2]{150}
 
-indeed $f_\lambda$ is bijective by virtue of \sref[I]{I.3.5.2}, \sref{I.3.5.7} and \sref{I.3.5.8}; on the other hand, it is closed by \sref[II]{II.6.1.10}. One can now apply \sref{IV.5.13.6} which proves (by virtue of the hypothesis $b)$) that $b)$ implies $e)$ when $\boldsymbol{P}(\mathrm{Z},z)$ is the property $(\mathrm{R}_n)$ at the point $z$. The case where $\boldsymbol{P}$ is the property of being regular (i.e.\ of having the property $(\mathrm{R}_n)$ for every $n$) follows trivially. Finally, taking into account Serre's normality criterion \sref{IV.5.8.6}, $b)$ implies $e)$ further when $\boldsymbol{P}(\mathrm{Z},z)$ is the property of being normal at the point $z$, since this is equivalent to saying that $\mathrm{Z}$ has at the point $z$ the properties $(\mathrm{S}_2)$ and $(\mathrm{R}_1)$: one applies what precedes for $n=1$, and \sref{IV.6.7.2},~(ii) for $n=2$.
+indeed $f_\lambda$ is bijective by virtue of \sref[I]{I.3.5.2}, \sref[I]{I.3.5.7} and \sref[I]{I.3.5.8}; on the other hand, it is closed by \sref[II]{II.6.1.10}. One can now apply \sref{IV.5.13.6} which proves (by virtue of the hypothesis $b)$) that $b)$ implies $e)$ when $\boldsymbol{P}(\mathrm{Z},z)$ is the property $(\mathrm{R}_n)$ at the point $z$. The case where $\boldsymbol{P}$ is the property of being regular (i.e.\ of having the property $(\mathrm{R}_n)$ for every $n$) follows trivially. Finally, taking into account Serre's normality criterion \sref{IV.5.8.6}, $b)$ implies $e)$ further when $\boldsymbol{P}(\mathrm{Z},z)$ is the property of being normal at the point $z$, since this is equivalent to saying that $\mathrm{Z}$ has at the point $z$ the properties $(\mathrm{S}_2)$ and $(\mathrm{R}_1)$: one applies what precedes for $n=1$, and \sref{IV.6.7.2},~(ii) for $n=2$.
 \end{proof}
 
 \begin{corollary}[6.7.8]
@@ -728,7 +725,7 @@ Let $k'$ be an extension of $k$; one supposes either that $k'$ is of finite type
 \end{corollary}
 
 \begin{proof}
-This has already been seen for property (vii) \sref{IV.4.6.11}, and for properties (i), (ii), and (iii) \sref{IV.6.7.1}. For (iv), (v), and (vi), this follows from \sref{IV.6.7.7}: the necessity follows from the equivalence of criteria $a)$ and $c)$, and from the equivalence of $c)$ and $d)$ when $\mathrm{X}$ is locally of finite type over $k$. To prove sufficiency, let $k''$ be a finite radicial extension of $k$; one may regard $k'$ and $k''$ as subextensions of an extension $\mathrm{K}$ of $k$. Set $\mathrm{X}''=\mathrm{X}\otimes_k k''$ and $\mathrm{X}_0=\mathrm{X}\otimes_k\mathrm{K}$, and note that, since $k''$ is radicial over $k$, there is only \emph{one} point $x''$ of $\mathrm{X}''$ above $x$ \sref[I]{I.3.5.7} and \sref{I.3.5.8}. Let $x_0$ be any point of $\mathrm{X}_0$ above $x'$. If $\boldsymbol{P}(\mathrm{X}',x')$ is true, then so is $\boldsymbol{P}(\mathrm{X}_0,x_0)$ by \sref{IV.6.7.7},~$c)$ and $d)$ (if $k'$ is of finite type over $k$, one may suppose the same of $\mathrm{K}$; if $\mathrm{X}$ is locally of finite type over $k$, then $\mathrm{X}'$ is locally of finite type over $k'$). It follows from \sref{IV.6.7.4} that $\boldsymbol{Q}(k'')$ is true (with the notation of \sref{IV.6.7.7}), and hence $\boldsymbol{P}(\mathrm{X},x)$ is true by \sref{IV.6.7.7},~$b)$.
+This has already been seen for property (vii) \sref{IV.4.6.11}, and for properties (i), (ii), and (iii) \sref{IV.6.7.1}. For (iv), (v), and (vi), this follows from \sref{IV.6.7.7}: the necessity follows from the equivalence of criteria $a)$ and $c)$, and from the equivalence of $c)$ and $d)$ when $\mathrm{X}$ is locally of finite type over $k$. To prove sufficiency, let $k''$ be a finite radicial extension of $k$; one may regard $k'$ and $k''$ as subextensions of an extension $\mathrm{K}$ of $k$. Set $\mathrm{X}''=\mathrm{X}\otimes_k k''$ and $\mathrm{X}_0=\mathrm{X}\otimes_k\mathrm{K}$, and note that, since $k''$ is radicial over $k$, there is only \emph{one} point $x''$ of $\mathrm{X}''$ above $x$ \sref[I]{I.3.5.7} and \sref[I]{I.3.5.8}. Let $x_0$ be any point of $\mathrm{X}_0$ above $x'$. If $\boldsymbol{P}(\mathrm{X}',x')$ is true, then so is $\boldsymbol{P}(\mathrm{X}_0,x_0)$ by \sref{IV.6.7.7},~$c)$ and $d)$ (if $k'$ is of finite type over $k$, one may suppose the same of $\mathrm{K}$; if $\mathrm{X}$ is locally of finite type over $k$, then $\mathrm{X}'$ is locally of finite type over $k'$). It follows from \sref{IV.6.7.4} that $\boldsymbol{Q}(k'')$ is true (with the notation of \sref{IV.6.7.7}), and hence $\boldsymbol{P}(\mathrm{X},x)$ is true by \sref{IV.6.7.7},~$b)$.
 \end{proof}
 
 \subsection{Regular, normal, reduced, smooth morphisms}
@@ -773,10 +770,8 @@ The conclusions of (i) and (iii) are also true when $\boldsymbol{M}$ is the prop
 \end{proposition}
 
 \begin{proof}
-(i) We already know that if $f$ and $g$ are flat, so is $u=g\circ f$, and that if $f$ and $g\circ f$ are flat and $f$ is surjective, then $g$ is flat \sref{IV.2.1.6} and \sref{IV.2.2.13}. On the other hand, for every $z\in\mathrm{Z}$, the morphism $f_z=f\otimes\mathbf{1}_{\boldsymbol{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ is flat (resp.\ faithfully flat if $f$ is) and for every $y\in g^{-1}(z)$, $f^{-1}(y)$ is isomorphic to $f^{-1}(y)$ \sref[I]{I.3.6.4}. If $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true, $\boldsymbol{M}(g\circ f)$ is then true for the cases where $\boldsymbol{M}$ is the property of being Cohen-Macaulay or $(\mathrm{S}_n)$, by virtue of \sref{IV.6.6.1}. On the other hand, let $k'$ be a finite extension of $\boldsymbol{k}(z)$; setting $\mathrm{Y}'_z=g^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, $\mathrm{X}'_z=u^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, and $f'_z=f_z\otimes\mathbf{1}_{k'}:\mathrm{X}'_z\to\mathrm{Y}'_z$; the morphism $f'_z$
-
+(i) We already know that if $f$ and $g$ are flat, so is $u=g\circ f$, and that if $f$ and $g\circ f$ are flat and $f$ is surjective, then $g$ is flat \sref{IV.2.1.6} and \sref{IV.2.2.13}. On the other hand, for every $z\in\mathrm{Z}$, the morphism $f_z=f\otimes 1_{\boldsymbol{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ is flat (resp.\ faithfully flat if $f$ is) and for every $y\in g^{-1}(z)$, $f_z^{-1}(y)$ is isomorphic to $f^{-1}(y)$ \sref[I]{I.3.6.4}. If $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true, $\boldsymbol{M}(g\circ f)$ is then true for the cases where $\boldsymbol{M}$ is the property of being Cohen-Macaulay or $(\mathrm{S}_n)$, by virtue of \sref{IV.6.6.1}. On the other hand, let $k'$ be a finite extension of $\boldsymbol{k}(z)$; setting $\mathrm{Y}'_z=g^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, $\mathrm{X}'_z=u^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, and $f'_z=f_z\otimes 1_{k'}:\mathrm{X}'_z\to\mathrm{Y}'_z$; the morphism $f'_z$
 \oldpage[IV-2]{152}
-
 is flat (resp.\ faithfully flat) and for every $y'\in\mathrm{Y}'_z$, the fibre $f'^{-1}_z(y')$ is isomorphic to $f^{-1}(y)\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$, denoting by $y$ the image of $y'$ in $g^{-1}(z)$ \sref[I]{I.3.6.4}. When $\boldsymbol{M}$ is the property of being regular, $(\mathrm{R}_n)$, normal or reduced, the hypothesis that $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true implies that $\mathrm{Y}'_z$ and each of the fibres $f'^{-1}_z(y')$ for $y'\in\mathrm{Y}'_z$ have the corresponding property among the properties $c)$, $d)$, $e)$, $f)$ of \sref{IV.6.6.1}; one deduces from \sref{IV.6.6.1},~(i) that $\mathrm{X}'_z$ has the same property, hence $\boldsymbol{M}(g\circ f)$ is true.
 
 (ii) Conversely, the hypothesis that $\boldsymbol{M}(g\circ f)$ and $\boldsymbol{M}(f)$ are true and that $f$ is surjective implies that $\mathrm{Y}'_z$ has the corresponding property by virtue of \sref{IV.6.6.1},~(ii), since $f'_z$ is surjective for every $z$; hence $\boldsymbol{M}(g)$ is true.
@@ -859,15 +854,15 @@ Let $\mathrm{A}$ be an integral Noetherian ring, $\mathrm{B}$ a finite-type $\ma
 \oldpage[IV-2]{154}
 Denote by $\mathrm{K}$ the field of fractions of $\mathrm{A}$; then $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}$ is an algebra of finite type over $\mathrm{K}$ and $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}$ is a $(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$-module of finite type. We shall reason by induction on the \emph{dimension} $n$ of the support of $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}$, which is either $\setmin\infty$ or finite and $\geqslant 0$. Suppose first $n=\setmin\infty$, i.e.\ $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}=0$; if $(m_i)_{1\leqslant i\leqslant r}$ is a system of generators of the $\mathrm{B}$-module $\mathrm{M}$, there therefore exists $f\neq 0$ in $\mathrm{A}$ such that $fm_i=0$ for $1\leqslant i\leqslant r$; hence $\mathrm{M}_f=0$ and the lemma is true in this case.
 
-Suppose now $n\geqslant 0$. We know that there exists a composition series $\mathrm{M}=\mathrm{M}_1\supset\mathrm{M}_2\supset\ldots\supset\mathrm{M}_q=0$ of the $\mathrm{B}$-module $\mathrm{M}$ such that each quotient $\mathrm{N}_i=\mathrm{M}_i/\mathrm{M}_{i+1}$ is isomorphic to a $\mathrm{B}$-module of the form $\mathrm{B}/\mathfrak{p}_i$, where $\mathfrak{p}_i$ is a prime ideal of $\mathrm{B}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~1, no~4, th.~1). If the theorem is true for each $\mathrm{N}_i$, there exists for each $i$ an $f_i\neq 0$ in $\mathrm{A}$ such that $(\mathrm{N}_i)_{f_i}$ is free over $\mathrm{A}_{f_i}$; setting $f=f_1f_2\ldots f_{q-1}$, it follows that $(\mathrm{N}_i)_f$ is a free $\mathrm{A}_f$-module for $1\leqslant i\leqslant q-1$. But $(\mathrm{N}_i)_f=(\mathrm{M}_i)_f/(\mathrm{M}_{i+1})_f$ \sref[0]{0.1.3.2}, and since an extension of free modules is free, we deduce that $\mathrm{M}_f$ is a free $\mathrm{A}_f$-module.
+Suppose now $n\geqslant 0$. We know that there exists a composition series $\mathrm{M}=\mathrm{M}_1\supset\mathrm{M}_2\supset\ldots\supset\mathrm{M}_q=0$ of the $\mathrm{B}$-module $\mathrm{M}$ such that each quotient $\mathrm{N}_i=\mathrm{M}_i/\mathrm{M}_{i+1}$ is isomorphic to a $\mathrm{B}$-module of the form $\mathrm{B}/\mathfrak{p}_i$, where $\mathfrak{p}_i$ is a prime ideal of $\mathrm{B}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~1, n\textsuperscript{o}~4, th.~1). If the theorem is true for each $\mathrm{N}_i$, there exists for each $i$ an $f_i\neq 0$ in $\mathrm{A}$ such that $(\mathrm{N}_i)_{f_i}$ is free over $\mathrm{A}_{f_i}$; setting $f=f_1f_2\ldots f_{q-1}$, it follows that $(\mathrm{N}_i)_f$ is a free $\mathrm{A}_f$-module for $1\leqslant i\leqslant q-1$. But $(\mathrm{N}_i)_f=(\mathrm{M}_i)_f/(\mathrm{M}_{i+1})_f$ \sref[0\textsubscript{\mdseries I}]{0.1.3.2}, and since an extension of free modules is free, we deduce that $\mathrm{M}_f$ is a free $\mathrm{A}_f$-module.
 
-Replacing $\mathrm{B}$ by $\mathrm{B}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime ideal of $\mathrm{B}$, one can therefore reduce to the case $\mathrm{M}=\mathrm{B}$ with $\mathrm{B}$ integral. We then know (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, no~1, cor.~1 of th.~1) that there exist $g\neq 0$ in $\mathrm{A}$ and elements $t_i$ ($1\leqslant i\leqslant m$) of $\mathrm{B}$, algebraically independent over $\mathrm{A}$, such that $\mathrm{B}_g$ is integral over $\mathrm{A}_g[t_1,\ldots,t_m]$. One can replace $\mathrm{A}$ by $\mathrm{A}_g$, $\mathrm{B}$ by $\mathrm{B}_g$ and suppose that $\mathrm{B}$ is integral over $\mathrm{C}=\mathrm{A}[t_1,\ldots,t_m]$, hence a $\mathrm{C}$-module of finite type and \emph{without torsion}. We know furthermore \sref{IV.4.1.2} that the dimension of $\operatorname{Spec}(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$ is equal to $m$, hence $m=n$.
+Replacing $\mathrm{B}$ by $\mathrm{B}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime ideal of $\mathrm{B}$, one can therefore reduce to the case $\mathrm{M}=\mathrm{B}$ with $\mathrm{B}$ integral. We then know (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, n\textsuperscript{o}~1, cor.~1 of th.~1) that there exist $g\neq 0$ in $\mathrm{A}$ and elements $t_i$ ($1\leqslant i\leqslant m$) of $\mathrm{B}$, algebraically independent over $\mathrm{A}$, such that $\mathrm{B}_g$ is integral over $\mathrm{A}_g[t_1,\ldots,t_m]$. One can replace $\mathrm{A}$ by $\mathrm{A}_g$, $\mathrm{B}$ by $\mathrm{B}_g$ and suppose that $\mathrm{B}$ is integral over $\mathrm{C}=\mathrm{A}[t_1,\ldots,t_m]$, hence a $\mathrm{C}$-module of finite type and \emph{without torsion}. We know furthermore \sref{IV.4.1.2} that the dimension of $\operatorname{Spec}(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$ is equal to $m$, hence $m=n$.
 
 This being so, if $h$ is the rank of the $\mathrm{C}$-module without torsion $\mathrm{B}$, there exists a short exact sequence of $\mathrm{C}$-modules
 \[
 0\to\mathrm{C}^h\to\mathrm{B}\to\mathrm{M}'\to 0
 \]
-where $\mathrm{M}'$ is a torsion $\mathrm{C}$-module of finite type; the support of $\mathrm{M}'$ does not therefore contain the generic point of $\operatorname{Spec}(\mathrm{C})$ \sref[I]{I.7.4.6} and hence the support of $\mathrm{M}'\otimes_\mathrm{A}\mathrm{K}$ does not contain the generic point of $\operatorname{Spec}(\mathrm{C}\otimes_\mathrm{A}\mathrm{K})$ \sref[I]{I.9.1.13.1}; one concludes \sref{IV.4.1.2.1} that its dimension is $<n$. By the induction hypothesis, there exists $f\neq 0$ in $\mathrm{A}$ such that $\mathrm{M}'_f$ is a free $\mathrm{A}_f$-module; moreover $\mathrm{C}^h_f$ is a free $\mathrm{A}_f$-module, and therefore so is $\mathrm{B}_f$, which by \sref[0]{0.1.3.2} is an extension of free modules.
+where $\mathrm{M}'$ is a torsion $\mathrm{C}$-module of finite type; the support of $\mathrm{M}'$ does not therefore contain the generic point of $\operatorname{Spec}(\mathrm{C})$ \sref[I]{I.7.4.6} and hence the support of $\mathrm{M}'\otimes_\mathrm{A}\mathrm{K}$ does not contain the generic point of $\operatorname{Spec}(\mathrm{C}\otimes_\mathrm{A}\mathrm{K})$ \sref[I]{I.9.1.13.1}; one concludes \sref{IV.4.1.2.1} that its dimension is $<n$. By the induction hypothesis, there exists $f\neq 0$ in $\mathrm{A}$ such that $\mathrm{M}'_f$ is a free $\mathrm{A}_f$-module; moreover $\mathrm{C}^h_f$ is a free $\mathrm{A}_f$-module, and therefore so is $\mathrm{B}_f$, which by \sref[0\textsubscript{\mdseries I}]{0.1.3.2} is an extension of free modules.
 \end{proof}
 
 \begin{corollary}[6.9.3]
@@ -876,10 +871,8 @@ Let $\mathrm{S}$ be a Noetherian prescheme, $u:\mathrm{X}\to\mathrm{S}$ a morphi
 \end{corollary}
 
 \begin{proof}
-We proceed by Noetherian induction \sref[0]{0.2.2.2} on the set of closed subsets $\mathrm{T}$ of $\mathrm{S}$ such that the reduced closed sub-prescheme with underlying space $\mathrm{T}$ satisfies the conclusion of \sref{IV.6.9.3}. One can therefore limit oneself to proving the corollary for $\mathrm{S}$ by supposing that it is true for every reduced closed sub-prescheme whose underlying space is a closed subset distinct from $\mathrm{S}$. Since the morphism $\mathrm{S}_\mathrm{red}\to\mathrm{S}$ is of finite type and surjective, one can replace $\mathrm{S}$ by $\mathrm{S}_\mathrm{red}$, hence suppose $\mathrm{S}$ reduced and non-empty. Since $\mathrm{S}$ is Noetherian, the interior $\mathrm{T}$ of an irreducible component of $\mathrm{S}$ is non-empty, and the induced prescheme on $\mathrm{T}$ is integral; there therefore exists by virtue of \sref{IV.6.9.1} a non-empty open $\mathrm{U}\subset\mathrm{T}$
-
+We proceed by Noetherian induction \sref[0\textsubscript{\mdseries I}]{0.2.2.2} on the set of closed subsets $\mathrm{T}$ of $\mathrm{S}$ such that the reduced closed sub-prescheme with underlying space $\mathrm{T}$ satisfies the conclusion of \sref{IV.6.9.3}. One can therefore limit oneself to proving the corollary for $\mathrm{S}$ by supposing that it is true for every reduced closed sub-prescheme whose underlying space is a closed subset distinct from $\mathrm{S}$. Since the morphism $\mathrm{S}_\mathrm{red}\to\mathrm{S}$ is of finite type and surjective, one can replace $\mathrm{S}$ by $\mathrm{S}_\mathrm{red}$, hence suppose $\mathrm{S}$ reduced and non-empty. Since $\mathrm{S}$ is Noetherian, the interior $\mathrm{T}$ of an irreducible component of $\mathrm{S}$ is non-empty, and the induced prescheme on $\mathrm{T}$ is integral; there therefore exists by virtue of \sref{IV.6.9.1} a non-empty open $\mathrm{U}\subset\mathrm{T}$
 \oldpage[IV-2]{155}
-
 such that $\sh{F}|u^{-1}(\mathrm{U})$ is flat over $\mathrm{U}$. If $\mathrm{Y}$ is then the reduced closed sub-prescheme of $\mathrm{S}$ with underlying space $\mathrm{S}-\mathrm{U}$, there exists by hypothesis a partition $(\mathrm{Y}_i)$ of $\mathrm{Y}$ into locally closed subsets of $\mathrm{Y}$ (hence of $\mathrm{S}$) such that $\sh{F}_i=\sh{F}\otimes_{\sh{O}_\mathrm{S}}\sh{O}_{\mathrm{Y}_i}$ is flat over $\mathrm{Y}_i$ for every $i$; it is clear that the $\mathrm{Y}_i$ and $\mathrm{U}$ form a partition answering the question.
 \end{proof}
 
@@ -892,7 +885,7 @@ Let $\mathrm{X}$ be a locally Noetherian prescheme, $\sh{J}$ a quasi-coherent Id
 \[
 \bigoplus_{k=0}^{\infty}\sh{G}_k = j^*\Big(\bigoplus_{k=0}^{\infty}\sh{J}^k\sh{F}/\sh{J}^{k+1}\sh{F}\Big);
 \]
-  in particular, we have $\operatorname{gr}^0_\sh{J}(\sh{F})=\sh{G}_0=\sh{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_\mathrm{Y}=j^*(\sh{F})$. We shall say (following Hironaka) that $\sh{F}$ is \emph{normally flat along} $\mathrm{Y}$ if $\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$ is a flat $\sh{O}_\mathrm{Y}$-Module. This amounts to the same \sref{IV.2.1.12} and \sref[0]{0.6.1.2} as saying that each of the $\sh{O}_\mathrm{Y}$-Modules $\sh{G}_k=j^*(\sh{J}^k\sh{F})$ is \emph{locally free}.
+  in particular, we have $\operatorname{gr}^0_\sh{J}(\sh{F})=\sh{G}_0=\sh{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_\mathrm{Y}=j^*(\sh{F})$. We shall say (following Hironaka) that $\sh{F}$ is \emph{normally flat along} $\mathrm{Y}$ if $\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$ is a flat $\sh{O}_\mathrm{Y}$-Module. This amounts to the same \sref{IV.2.1.12} and \sref[0\textsubscript{\mdseries I}]{0.6.1.2} as saying that each of the $\sh{O}_\mathrm{Y}$-Modules $\sh{G}_k=j^*(\sh{J}^k\sh{F})$ is \emph{locally free}.
 \end{env}
 
 \begin{proposition}[6.10.2]
@@ -966,7 +959,7 @@ More precisely, there exist in $\sh{J}_x$ elements $f_i$ ($1\leqslant i\leqslant
 
 \begin{proof}
 \oldpage[IV-2]{157}
-As $\mathrm{Y}$ is assumed connected, the first assertion of (ii) follows from \sref{IV.6.10.3},~(i). If $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\varnothing$, assertion (i) is trivial with $\mathrm{P}=0$. Suppose now that $\operatorname{Supp}(\sh{F})\supset\mathrm{Y}$, and let $y$ be a maximal point of $\mathrm{Y}$. Since then $\mathrm{Y}=\operatorname{Supp}(\sh{F}/\sh{J}\sh{F})$, the module $\sh{F}_y/\sh{J}_y\sh{F}_y$ has finite length \sref{IV.3.1.4}. Setting $s(n)=\operatorname{length}(\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y))$, we know that there exists a polynomial $\mathrm{R}\in\bb{Q}[\mathrm{T}]$ such that $s(n)=\mathrm{R}(n)$ for $n$ large enough, namely $\mathrm{R}(n)=\mathrm{H}(n+1)\setmin \mathrm{H}(n)$, where $\mathrm{H}$ is the Hilbert-Samuel polynomial of $\sh{F}_y$ for the $\sh{J}_y$-adic filtration \sref[0]{0.16.2.1}. Since the $\sh{O}_{\mathrm{Y},y}$-modules $\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y)$ are free by hypothesis, we have $r(n)=s(n)/m$, denoting by $m$ the length of the $\sh{O}_{\mathrm{X},y}$-module $\sh{O}_{\mathrm{X},y}/\sh{J}_y$; thus (i) holds with $\mathrm{P}=\frac{1}{m}\mathrm{R}$. We know furthermore \sref[0]{0.16.2.3} that $\deg(\mathrm{H})=\dim(\sh{F}_y)$, whence the relation \sref{IV.6.10.5.2}; the relation \sref{IV.6.10.5.3} follows from \sref{IV.5.1.12.2}.
+As $\mathrm{Y}$ is assumed connected, the first assertion of (ii) follows from \sref{IV.6.10.3},~(i). If $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\varnothing$, assertion (i) is trivial with $\mathrm{P}=0$. Suppose now that $\operatorname{Supp}(\sh{F})\supset\mathrm{Y}$, and let $y$ be a maximal point of $\mathrm{Y}$. Since then $\mathrm{Y}=\operatorname{Supp}(\sh{F}/\sh{J}\sh{F})$, the module $\sh{F}_y/\sh{J}_y\sh{F}_y$ has finite length \sref{IV.3.1.4}. Setting $s(n)=\operatorname{length}(\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y))$, we know that there exists a polynomial $\mathrm{R}\in\bb{Q}[\mathrm{T}]$ such that $s(n)=\mathrm{R}(n)$ for $n$ large enough, namely $\mathrm{R}(n)=\mathrm{H}(n+1)\setmin \mathrm{H}(n)$, where $\mathrm{H}$ is the Hilbert-Samuel polynomial of $\sh{F}_y$ for the $\sh{J}_y$-adic filtration \sref[0]{0.16.2.1}. Since the $\sh{O}_{\mathrm{Y},y}$-modules $\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y)$ are free by hypothesis, we have $r(n)=s(n)/m$, denoting by $m$ the length of the $\sh{O}_{\mathrm{X},y}$-module $\sh{O}_{\mathrm{Y},y}=\sh{O}_{\mathrm{X},y}/\sh{J}_y$; thus (i) holds with $\mathrm{P}=\frac{1}{m}\mathrm{R}$. We know furthermore \sref[0]{0.16.2.3} that $\deg(\mathrm{H})=\dim(\sh{F}_y)$, whence the relation \sref{IV.6.10.5.2}; the relation \sref{IV.6.10.5.3} follows from \sref{IV.5.1.12.2}.
 
 It remains to prove (iii) for any point $x\in\mathrm{Y}$. Set $\mathrm{A}=\sh{O}_{\mathrm{X},x}$, $\mathfrak{J}=\sh{J}_x$, and $\mathrm{M}=\sh{F}_x$, so that $\sh{O}_{\mathrm{Y},x}=\mathrm{A}/\mathfrak{J}$; let $\mathrm{S}=\operatorname{gr}^{\bullet}_\mathfrak{J}(\mathrm{A})$, which is a graded $(\mathrm{A}/\mathfrak{J})$-algebra of finite type, with positive degrees, such that $\mathrm{S}_0=\mathrm{A}/\mathfrak{J}$, and generated by its homogeneous elements of degree $1$; let finally $\mathrm{N}=\operatorname{gr}^{\bullet}_\mathfrak{J}(\mathrm{M})$, which is a graded $\mathrm{S}$-module of finite type, each homogeneous component $\mathrm{N}_n$ being by hypothesis a free $(\mathrm{A}/\mathfrak{J})$-module of rank $r(n)$. Let $\mathfrak{m}$ be the maximal ideal of $\mathrm{A}$, $k=\mathrm{A}/\mathfrak{m}$ its residue field; $\mathrm{B}=\mathrm{S}\otimes_\mathrm{A}k$ is a graded $k$-algebra of finite type, with positive degrees, generated by its homogeneous elements of degree $1$ and such that $\mathrm{B}_0=k$, so that $\mathfrak{q}=\mathrm{B}^+=\bigoplus_{n\geqslant 1}\mathrm{B}_n$ is a maximal ideal of $\mathrm{B}$; $\mathrm{E}=\mathrm{N}\otimes_\mathrm{A}k$ is a graded $\mathrm{B}$-module of finite type such that $\operatorname{rg}_k(\mathrm{E}_n)=r(n)$. Applying \sref[0]{0.16.2.7} to $\mathrm{B}$ and $\mathrm{E}$, choose homogeneous elements $t_i\in\mathrm{B}_{n_i}$ ($1\leqslant i\leqslant d$), and lift each $t_i$ to an element $f_i\in\mathfrak{J}^{n_i}$. For $n\geqslant\sup_i(n_i)$, consider the $\mathrm{A}$-submodule $\sum_{i=1}^d f_i\mathfrak{J}^{n-n_i}\mathrm{M}$ of $\mathrm{M}$; as the homogeneous component of degree $n$ of the submodule $\sum_i t_i\mathrm{E}$ of $\mathrm{E}$ is equal to $\mathrm{E}_n$ as soon as $n$ is large enough, one sees that, for $n$ large enough, we have
 \[
@@ -976,7 +969,7 @@ and as $\mathfrak{J}^n\mathrm{M}$ is an $\mathrm{A}$-module of finite type, this
 \[
 \mathfrak{J}^n\mathrm{M} = \sum_{i=1}^d f_i\mathfrak{J}^{n-n_i}\mathrm{M} \subset \sum_{i=1}^d f_i\mathrm{M}.
 \]
-If $\mathfrak{a}$ is the annihilator of $\mathrm{M}$, we have therefore \sref[0]{0.1.7.5} in $\operatorname{Spec}(\mathrm{A})$
+If $\mathfrak{a}$ is the annihilator of $\mathrm{M}$, we have therefore \sref[0\textsubscript{\mdseries I}]{0.1.7.5} in $\operatorname{Spec}(\mathrm{A})$
 \[
 \mathrm{V}\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\cap\mathrm{V}(\mathfrak{a})\subset\mathrm{V}(\mathfrak{J}^n)\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})
 \]
@@ -1001,13 +994,13 @@ Let $\mathrm{X}$ be a locally Noetherian prescheme, $\sh{F}$ a coherent $\sh{O}_
 
 \begin{proof}
 \oldpage[IV-2]{158}
-Let $\mathrm{Y}'=\mathrm{Y}_\mathrm{red}$, which is a closed integral sub-prescheme of $\mathrm{Y}$ having the same underlying space, and defined by a locally nilpotent Ideal $\sh{J}$ of $\sh{O}_\mathrm{Y}$ \sref[I]{I.6.1.6}. It follows that $\operatorname{gr}^{\bullet}_{\sh{J}}(\sh{O}_\mathrm{Y})$ is a coherent $\sh{O}_{\mathrm{Y}'}$-Module, and as $\mathrm{Y}'$ is integral, there exists an open neighbourhood $\mathrm{V}$ of $y$ in $\mathrm{Y}'$ such that $\operatorname{gr}^{\bullet}_{\sh{J}}(\sh{O}_\mathrm{Y})|\mathrm{V}$ is locally free \sref[0]{0.5.2.7}; otherwise said, replacing $\mathrm{X}$ by a neighbourhood of $y$, one can suppose that $\sh{O}_\mathrm{Y}$ is \emph{normally flat} along $\mathrm{Y}'$; one then deduces from \sref{IV.6.10.3} that we have
+Let $\mathrm{Y}'=\mathrm{Y}_\mathrm{red}$, which is a closed integral sub-prescheme of $\mathrm{Y}$ having the same underlying space, and defined by a locally nilpotent Ideal $\sh{K}$ of $\sh{O}_\mathrm{Y}$ \sref[I]{I.6.1.6}. It follows that $\operatorname{gr}^{\bullet}_{\sh{K}}(\sh{O}_\mathrm{Y})$ is a coherent $\sh{O}_{\mathrm{Y}'}$-Module, and as $\mathrm{Y}'$ is integral, there exists an open neighbourhood $\mathrm{V}$ of $y$ in $\mathrm{Y}'$ such that $\operatorname{gr}^{\bullet}_{\sh{K}}(\sh{O}_\mathrm{Y})|\mathrm{V}$ is locally free \sref[0\textsubscript{\mdseries I}]{0.5.2.7}; otherwise said, replacing $\mathrm{X}$ by a neighbourhood of $y$, one can suppose that $\sh{O}_\mathrm{Y}$ is \emph{normally flat} along $\mathrm{Y}'$; one then deduces from \sref{IV.6.10.3} that we have
 \[
 \dim(\sh{O}_{\mathrm{Y},x})=\dim(\sh{O}_{\mathrm{Y}',x}),\qquad \operatorname{prof}(\sh{O}_{\mathrm{Y},x})=\operatorname{prof}(\sh{O}_{\mathrm{Y}',x})
 \]
 for every $x\in\mathrm{Y}$; this allows us to limit ourselves to the case where the closed sub-prescheme $\mathrm{Y}$ is \emph{integral}.
 
-This being so, by virtue of \sref{IV.6.10.2}, one can, replacing $\mathrm{X}$ by an open neighbourhood of $y$, suppose that $\sh{F}$ is \emph{normally flat} along $\mathrm{Y}$. Since $y\in\operatorname{Supp}(\sh{F})$, relation \sref{IV.6.10.6.1} follows from \sref{IV.6.10.5.2} and \sref{IV.6.10.5.4}. Suppose now $p=\operatorname{prof}(\sh{F}_y)$; replacing at need $\mathrm{X}$ by an open neighbourhood of $y$, one can further suppose that there exist $p$ sections $f_i$ ($1\leqslant i\leqslant p$) of $\sh{O}_\mathrm{X}$ above $\mathrm{X}$, forming an $\sh{F}$-regular sequence, such that the $(f_i)_y$ belong to the maximal ideal $\mathfrak{m}_y$ of $\sh{O}_{\mathrm{X}}$ at the point $y$ and that $\operatorname{prof}(\sh{F}_y/(\sum_{i=1}^p (f_i)_y\sh{F}_y))=0$ \sref[0]{0.16.4.6}. If $\sh{J}$ is the Ideal of $\sh{O}_\mathrm{X}$ defining $\mathrm{Y}$, we have $\sh{J}_y=\mathfrak{m}_y$ and, replacing $\mathrm{X}$ once more by a neighbourhood of $y$ if necessary, we may suppose that $f_i\in\Gamma(\mathrm{X},\sh{J})$ for $1\leqslant i\leqslant p$. Moreover, setting $\sh{G}=\sh{F}/(\sum_{i=1}^p f_i\sh{F})$, the hypothesis $\operatorname{prof}(\sh{G}_y)=0$ implies that $\sh{G}_y$ contains a sub-module isomorphic to $\sh{O}_{\mathrm{X},y}/\mathfrak{m}_y$ \sref[0]{0.16.4.6}; reasoning as above (taking into account \sref[0]{0.5.3.8} and \sref[0]{0.5.2.7}) shows that one can suppose that there exists a sub-$\sh{O}_\mathrm{X}$-Module $\sh{G}'$ of $\sh{G}$ \emph{isomorphic to} $\sh{O}_\mathrm{X}/\sh{J}$ so that $\sh{G}'_x=\sh{O}_{\mathrm{Y},x}$ for every $x\in\mathrm{Y}$. Setting $\sh{G}''=\sh{G}/\sh{G}'$; replacing $\mathrm{X}$ by an open neighbourhood of $y$, one can, by virtue of \sref{IV.6.10.2}, suppose that $\sh{G}'$ and $\sh{G}''$ are \emph{normally flat} along $\mathrm{Y}$. Let then $x$ be any point of $\mathrm{Y}$, and set $q=\operatorname{prof}(\sh{O}_{\mathrm{Y},x})=\operatorname{prof}(\sh{G}'_x)$; let $(g_j)_{1\leqslant j\leqslant q}$ be a maximal $\sh{G}'_x$-regular sequence of elements of the maximal ideal $\mathfrak{m}_x$ of $\sh{O}_{\mathrm{X},x}$. Each of the homogeneous components of $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is a flat $\sh{O}_{\mathrm{Y},x}$-module of finite type by hypothesis, hence a free $\sh{O}_{\mathrm{Y},x}$-module, and consequently $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is free as well; since the sequence $(g_j)$ is $\sh{O}_{\mathrm{Y},x}$-regular, it is therefore $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$-regular, whence it is $\sh{G}''_x$-regular \sref[0]{0.15.1.19}. Applying the lemma \sref[0]{0.15.1.18} to the exact sequence
+This being so, by virtue of \sref{IV.6.10.2}, one can, replacing $\mathrm{X}$ by an open neighbourhood of $y$, suppose that $\sh{F}$ is \emph{normally flat} along $\mathrm{Y}$. Since $y\in\operatorname{Supp}(\sh{F})$, relation \sref{IV.6.10.6.1} follows from \sref{IV.6.10.5.2} and \sref{IV.6.10.5.4}. Suppose now $p=\operatorname{prof}(\sh{F}_y)$; replacing at need $\mathrm{X}$ by an open neighbourhood of $y$, one can further suppose that there exist $p$ sections $f_i$ ($1\leqslant i\leqslant p$) of $\sh{O}_\mathrm{X}$ above $\mathrm{X}$, forming an $\sh{F}$-regular sequence, such that the $(f_i)_y$ belong to the maximal ideal $\mathfrak{m}_y$ of $\sh{O}_{\mathrm{X}}$ at the point $y$ and that $\operatorname{prof}(\sh{F}_y/(\sum_{i=1}^p (f_i)_y\sh{F}_y))=0$ \sref[0]{0.16.4.6}. If $\sh{J}$ is the Ideal of $\sh{O}_\mathrm{X}$ defining $\mathrm{Y}$, we have $\sh{J}_y=\mathfrak{m}_y$ and, replacing $\mathrm{X}$ once more by a neighbourhood of $y$ if necessary, we may suppose that $f_i\in\Gamma(\mathrm{X},\sh{J})$ for $1\leqslant i\leqslant p$. Moreover, setting $\sh{G}=\sh{F}/(\sum_{i=1}^p f_i\sh{F})$, the hypothesis $\operatorname{prof}(\sh{G}_y)=0$ implies that $\sh{G}_y$ contains a sub-module isomorphic to $\sh{O}_{\mathrm{X},y}/\mathfrak{m}_y$ \sref[0]{0.16.4.6}; reasoning as above (taking into account \sref[0\textsubscript{\mdseries I}]{0.5.3.8} and \sref[0\textsubscript{\mdseries I}]{0.5.2.7}) shows that one can suppose that there exists a sub-$\sh{O}_\mathrm{X}$-Module $\sh{G}'$ of $\sh{G}$ \emph{isomorphic to} $\sh{O}_\mathrm{X}/\sh{J}$ so that $\sh{G}'_x=\sh{O}_{\mathrm{Y},x}$ for every $x\in\mathrm{Y}$. Setting $\sh{G}''=\sh{G}/\sh{G}'$; replacing $\mathrm{X}$ by an open neighbourhood of $y$, one can, by virtue of \sref{IV.6.10.2}, suppose that $\sh{G}'$ and $\sh{G}''$ are \emph{normally flat} along $\mathrm{Y}$. Let then $x$ be any point of $\mathrm{Y}$, and set $q=\operatorname{prof}(\sh{O}_{\mathrm{Y},x})=\operatorname{prof}(\sh{G}'_x)$; let $(g_j)_{1\leqslant j\leqslant q}$ be a maximal $\sh{G}'_x$-regular sequence of elements of the maximal ideal $\mathfrak{m}_x$ of $\sh{O}_{\mathrm{X},x}$. Each of the homogeneous components of $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is a flat $\sh{O}_{\mathrm{Y},x}$-module of finite type by hypothesis, hence a free $\sh{O}_{\mathrm{Y},x}$-module, and consequently $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is free as well; since the sequence $(g_j)$ is $\sh{O}_{\mathrm{Y},x}$-regular, it is therefore $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$-regular, whence it is $\sh{G}''_x$-regular \sref[0]{0.15.1.19}. Applying the lemma \sref[0]{0.15.1.18} to the exact sequence
 \[
 0\to\sh{G}'_x\to\sh{G}_x\to\sh{G}''_x\to 0
 \]
@@ -1068,10 +1061,10 @@ at the point $x$ is open.
 
 \begin{proof}
 (i) The question being local on $\mathrm{X}$, one can, by virtue of the hypothesis, restrict to the
-case where $\mathrm{X}$ is a closed sub-prescheme of an affine regular scheme $\mathrm{Y}$. If $j:\mathrm{X}\to\mathrm{Y}$ is
+case where $\mathrm{X}$ is a closed subscheme of an affine regular scheme $\mathrm{Y}$. If $j:\mathrm{X}\to\mathrm{Y}$ is
 the canonical injection, and $\sh{G}=j_*(\sh{F})$, one knows that one has then, for every $x\in\mathrm{X}$,
 $\dim(\sh{F}_x)=\dim(\sh{G}_x)$ and $\operatorname{prof}(\sh{F}_x)=\operatorname{prof}(\sh{G}_x)$, hence $\operatorname{coprof}(\sh{F}_x)=\operatorname{coprof}(\sh{G}_x)$, and as
-$\operatorname{coprof}(\sh{G}_x)=0$ for $y\notin\mathrm{X}\text{---}\mathrm{Y}$, one is reduced to proving the property for $\sh{G}$;
+$\operatorname{coprof}(\sh{G}_y)=0$ for $y\in\mathrm{Y}\setmin\mathrm{X}$, one is reduced to proving the property for $\sh{G}$;
 in other words, one can restrict to the case where $\mathrm{X}$ is an affine \emph{regular} scheme. One knows then $(\mathbf{0},~17.3.4)$
 that one has
 \[
@@ -1129,7 +1122,7 @@ Indeed, it is the set $\mathrm{U}_{\mathrm{C}_0}(\sh{F})$.
 
 \begin{remarks}[6.11.4]
 \label{IV.6.11.4}
-(i) The reasoning of \sref{IV.6.11.2},~(ii)) proves that (without any
+(i) The reasoning of \sref{IV.6.11.2},~(ii) proves that (without any
 hypothesis on $\mathrm{X}$) when $\mathrm{U}_{\mathrm{C}_n}(\sh{F})$ is open for \emph{every} integer $n$, then $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$ is open
 for every integer $n$.
 
@@ -1154,17 +1147,18 @@ type. For every prime ideal $\mathfrak{p}$ of $\mathrm{A}$, we have
 
 \begin{proof}
 One can restrict to the case where $\mathrm{M}_\mathfrak{p}\neq 0$. As $\widehat{\mathrm{A}}$ is a faithfully flat $\mathrm{A}$-module
-$(\mathbf{0}_\mathrm{I},~7.3.5)$, there exists an ideal $\mathfrak{q}$ of $\widehat{\mathrm{A}}$ lying over $\mathfrak{p}$ $(\mathbf{0}_\mathrm{I},~6.5.1)$; as
-$\widehat{\mathrm{M}}_\mathfrak{q}=(\mathrm{M}\otimes_\mathrm{A}\widehat{\mathrm{A}})_\mathfrak{q}=\mathrm{M}\otimes_\mathrm{A}\widehat{\mathrm{A}}_\mathfrak{q}$ and $\widehat{\mathrm{A}}_\mathfrak{q}$ is a flat $\mathrm{A}$-module, hence also a flat
-$\mathrm{A}_\mathfrak{p}$-module
+$(\mathbf{0}_\mathrm{I},~7.3.5)$, there exists a prime ideal $\mathfrak{q}$ of $\widehat{\mathrm{A}}$ lying over $\mathfrak{p}$ $(\mathbf{0}_\mathrm{I},~6.5.1)$; as
+$\widehat{\mathrm{M}}_\mathfrak{q}=(\mathrm{M}\otimes_\mathrm{A}\widehat{\mathrm{A}})\otimes_{\widehat{\mathrm{A}}}\widehat{\mathrm{A}}_\mathfrak{q}=\mathrm{M}\otimes_\mathrm{A}\widehat{\mathrm{A}}_\mathfrak{q}$ and $\widehat{\mathrm{A}}_\mathfrak{q}$ is a flat $\widehat{\mathrm{A}}$-module, hence a flat
+$\mathrm{A}$-module
 $(\mathbf{0}_\mathrm{I},~6.2.1)$, it follows from $(6.3.2)$, applied to the local homomorphism $\mathrm{A}_\mathfrak{p}\to\widehat{\mathrm{A}}_\mathfrak{q}$, to $\mathrm{M}_\mathfrak{p}$
-and $\widehat{\mathrm{M}}_\mathfrak{q}$, that $\operatorname{coprof}_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\leqslant\operatorname{coprof}_{\widehat{\mathrm{A}}_\mathfrak{q}}(\widehat{\mathrm{M}}_\mathfrak{q})$. On the other part, $\mathrm{X}=\operatorname{Spec}(\widehat{\mathrm{A}})$
-is isomorphic to a sub-prescheme of a regular scheme by virtue of the Cohen structure theorem
+and $\widehat{\mathrm{M}}_\mathfrak{q}=\mathrm{M}_\mathfrak{p}\otimes_{\mathrm{A}_\mathfrak{p}}\widehat{\mathrm{A}}_\mathfrak{q}$, that $\operatorname{coprof}_{\mathrm{A}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\leqslant\operatorname{coprof}_{\widehat{\mathrm{A}}_\mathfrak{q}}(\widehat{\mathrm{M}}_\mathfrak{q})$. On the other hand, $\mathrm{X}=\operatorname{Spec}(\widehat{\mathrm{A}})$
+is isomorphic to a subscheme of a regular scheme by virtue of the theorem of Cohen
 $(\mathbf{0},~19.8.8,~\text{(i)})$. One deduces therefore from \sref{IV.6.11.2} that $\operatorname{coprof}_{\widehat{\mathrm{A}}_\mathfrak{q}}(\widehat{\mathrm{M}}_\mathfrak{q})\leqslant\operatorname{coprof}_{\widehat{\mathrm{A}}}(\widehat{\mathrm{M}})$; finally,
 one knows that $\operatorname{coprof}_{\widehat{\mathrm{A}}}(\widehat{\mathrm{M}})=\operatorname{coprof}_\mathrm{A}(\mathrm{M})$ $(\mathbf{0},~16.4.10)$, which finishes the proof of \sref{IV.6.11.5}.
+\end{proof}
+
 This proposition justifies the definition of the coprofundity of an $\mathrm{A}$-module when $\mathrm{A}$
 is not a local ring, given in $(5.7.12)$.
-\end{proof}
 
 \begin{proposition}[6.11.6]
 \label{IV.6.11.6}
@@ -1178,8 +1172,8 @@ Then the set $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$ is open in $\mathrm{X}$.
 The question being local on $\mathrm{X}$, one can restrict to the case where $\mathrm{X}$ is Noetherian.
 We shall reason by induction on $n$: for $n=1$, the set $\mathrm{U}_{\mathrm{S}_1}(\sh{F})$ is open
 in $\mathrm{X}$, for the set of $x\in\mathrm{X}$ where $\sh{F}$ does not satisfy $(\mathrm{S}_1)$ is the set of $x$ such that $\sh{F}_x$
-admits immersed associated prime ideals $(5.7.5)$; if $(\mathrm{Z}_j)$ is the finite family of the
-prime cycles associated to $\sh{F}$ which are immersed, then $\mathrm{U}_{\mathrm{S}_1}(\sh{F})=\mathrm{X}\setmin\bigcup_j\mathrm{Z}_j$,
+admits embedded associated prime ideals $(5.7.5)$; if $(\mathrm{Z}_j)$ is the finite family of the
+prime cycles associated to $\sh{F}$ which are embedded, then $\mathrm{U}_{\mathrm{S}_1}(\sh{F})=\mathrm{X}\setmin\bigcup_j\mathrm{Z}_j$,
 whence our assertion since the $\mathrm{Z}_j$ are closed. We shall therefore suppose henceforth that
 $n>1$. In the second place, one can restrict to the case where $\operatorname{Supp}(\sh{F})=\mathrm{X}$, for there is a
 closed sub-prescheme $\mathrm{T}$ of $\mathrm{X}$ having $\operatorname{Supp}(\sh{F})$ as underlying space, and an $\sh{O}_\mathrm{T}$-Module
@@ -1191,7 +1185,7 @@ $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$ is stable by generization. We shall now use 
 \begin{lemma}[6.11.6.1]
 \label{IV.6.11.6.1}
 Let $\mathrm{X}$ be a Noetherian space in which every irreducible closed subset
-admits a generic point. For $\mathrm{E}$ to be an open subset of $\mathrm{X}$, it is necessary and it
+admits a generic point, $\mathrm{E}$ a subset of $\mathrm{X}$. For $\mathrm{E}$ to be an open subset of $\mathrm{X}$, it is necessary and it
 suffices that $\mathrm{E}$ be stable by generization, and that, for every open part $\mathrm{V}$ of $\mathrm{X}$ and every irreducible
 closed subset $\mathrm{Y}$ of $\mathrm{V}$, such that $\mathrm{V}-\mathrm{Y}\subset\mathrm{E}$ and that the generic point of $\mathrm{Y}$ belongs to $\mathrm{E}$,
 $\mathrm{E}\cap\mathrm{Y}$ contains an open non-empty part of $\mathrm{Y}$.
@@ -1209,8 +1203,9 @@ of the irreducible components of $\mathrm{X}-\mathrm{U}$ would belong to $\mathr
 one of the irreducible components of $\mathrm{X}-\mathrm{U}$; if $\mathrm{T}$ is the union of the other
 irreducible components of $\mathrm{X}-\mathrm{U}$, $\mathrm{V}=\mathrm{X}-\mathrm{T}$ is open in $\mathrm{X}$, union of $\mathrm{U}$ and of
 the set $\mathrm{Y}=\overline{\{z\}}\cap\mathrm{V}$ closed in $\mathrm{V}$ and irreducible. By hypothesis $\mathrm{E}\cap\mathrm{Y}$ contains
-an open part $\mathrm{W}$ of $\mathrm{Y}$; we conclude that $\mathrm{U}\cup\mathrm{W}$ is open \emph{in} $\mathrm{V}$, hence in $\mathrm{X}$,
+a part $\mathrm{W}$ open \emph{in} $\mathrm{Y}$; we conclude that $\mathrm{U}\cup\mathrm{W}$ is open \emph{in} $\mathrm{V}$, hence in $\mathrm{X}$,
 which is absurd since $\mathrm{U}$ is supposed to be the interior of $\mathrm{E}$.
+\end{proof}
 
 \oldpage[IV-2]{161}
 
@@ -1221,13 +1216,13 @@ that $\sh{F}$ satisfies $(\mathrm{S}_n)$ in this neighbourhood. We distinguish t
 
 $1^\circ$ $y$ is a maximal point of $\mathrm{X}$; as there exists an open neighbourhood of $y$ meeting
 no irreducible component of $\mathrm{X}$ other than $\overline{\{y\}}$, one can suppose
-that $\mathrm{X}$ is irreducible, hence a \emph{fortiori} has the same underlying space as $\mathrm{Y}$, so that $\mathrm{Y}$ is defined
-by the Nilradical of $\sh{O}_\mathrm{X}$, which is \emph{nilpotent}. On the other hand, on can, replacing $\mathrm{X}$ by
+that $\mathrm{X}$ is irreducible, hence has the same underlying space as $\mathrm{Y}$, so that $\mathrm{Y}$ is defined
+by the Nilradical of $\sh{O}_\mathrm{X}$, which is \emph{nilpotent}. On the other hand, one can, replacing $\mathrm{X}$ by
 an open neighbourhood of $y$, suppose that $\sh{F}$ is \emph{normally flat} along $\mathrm{Y}$ $(6.9.1)$;
-it follows then from $(6.10.4)$ that $\mathrm{U}_{\mathrm{S}_n}(\sh{F})=\mathrm{U}_{\mathrm{S}_n}(\sh{O}_\mathrm{Y})$, and as the latter is by hypothesis an open
+it follows then from $(6.10.4)$ that $\mathrm{U}_{\mathrm{S}_n}(\sh{F})=\mathrm{U}_{\mathrm{S}_n}(\sh{O}_\mathrm{Y})$, and as the latter is by hypothesis a
 neighbourhood of $y$ in $\mathrm{X}$, this proves the proposition in this case.
 
-$2^\circ$ $y$ is not a maximal point of $\mathrm{X}$, in other words $\operatorname{Supp}(\sh{F})=\mathrm{X}$,
+$2^\circ$ $y$ is not a maximal point of $\mathrm{X}$, in other words (since $\operatorname{Supp}(\sh{F})=\mathrm{X}$),
 $\dim(\sh{F}_y)\geqslant 1$, hence also $\operatorname{prof}(\sh{F}_y)\geqslant 1$ since $\sh{F}$ satisfies by hypothesis $(\mathrm{S}_n)$ (and \emph{a fortiori} $(\mathrm{S}_1)$)
 at the point $y$. Replacing $\mathrm{X}$ by an open neighbourhood of $y$ if necessary, one can therefore suppose
 that there exists a section $f$ of $\sh{O}_\mathrm{X}$ over $\mathrm{X}$, $\sh{F}$-regular and such that $f_y\in\mathfrak{m}_y$, or
@@ -1235,16 +1230,16 @@ equivalently $f(y)=0$ $(\mathbf{0},~15.2.4)$; one has then also $f(x)=0$ for eve
 One knows that $\sh{F}/f\sh{F}$ satisfies $(\mathrm{S}_{n-1})$ at the point $y$ $(5.7.6)$. Applying the induction hypothesis,
 and replacing $\mathrm{X}$ by an open neighbourhood of $y$, one can therefore
 suppose that $\sh{F}/f\sh{F}$ satisfies $(\mathrm{S}_{n-1})$ at every point of $\mathrm{X}$. But for every $x\in\mathrm{Y}$, the relation
-$f(x)=0$ implies that $\operatorname{prof}(\sh{F}_x|f_x\sh{F}_x)=\operatorname{prof}(\sh{F}_x)-1$ and $\dim(\sh{F}_x|f_x\sh{F}_x)=\dim(\sh{F}_x)-1$
+$f(x)=0$ implies that $\operatorname{prof}(\sh{F}_x/f_x\sh{F}_x)=\operatorname{prof}(\sh{F}_x)-1$ and $\dim(\sh{F}_x/f_x\sh{F}_x)=\dim(\sh{F}_x)-1$
 $(\mathbf{0},~16.3.4$ and $16.4.6)$; the relation
 \[
-  \operatorname{prof}(\sh{F}_x|f_x\sh{F}_x)\geqslant\inf(n\setmin 1,\dim(\sh{F}_x|f_x\sh{F}_x))
+  \operatorname{prof}(\sh{F}_x/f_x\sh{F}_x)\geqslant\inf(n\setmin 1,\dim(\sh{F}_x/f_x\sh{F}_x))
 \]
 is therefore equivalent to
 \[
   \operatorname{prof}(\sh{F}_x)\geqslant\inf(n,\dim(\sh{F}_x)).
 \]
-As we supposed that $\sh{F}$ satisfies $(\mathrm{S}_{n-1})$ at every point of $\mathrm{X}-\mathrm{Y}$, this finishes the proof.
+As we supposed that $\sh{F}$ satisfies $(\mathrm{S}_n)$ at every point of $\mathrm{X}-\mathrm{Y}$, this finishes the proof.
 \end{proof}
 
 \begin{corollary}[6.11.7]
@@ -1252,8 +1247,8 @@ As we supposed that $\sh{F}$ satisfies $(\mathrm{S}_{n-1})$ at every point of $\
 With the notations being those of \sref{IV.6.11.6}:
 \begin{enumerate}[label=(\roman*)]
   \item The set $\mathrm{U}_{\mathrm{S}_1}(\sh{F})$ is open in $\mathrm{X}$.
-  \item For the set $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$ to be open, it suffices that every maximal point $x$ of $\operatorname{Supp}(\sh{F})$,
-belonging to $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$, is interior to $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$.
+  \item For the set $\mathrm{U}_{\mathrm{S}_2}(\sh{F})$ to be open, it suffices that every maximal point $x$ of $\operatorname{Supp}(\sh{F})$,
+belonging to $\mathrm{U}_{\mathrm{S}_2}(\sh{F})$, be interior to $\mathrm{U}_{\mathrm{S}_2}(\sh{F})$.
 \end{enumerate}
 \end{corollary}
 
@@ -1271,7 +1266,7 @@ is unnecessary to consider it.
 \label{IV.6.11.8}
 Let $\mathrm{X}$ be a locally Noetherian prescheme satisfying the following property:
 \begin{itemize}
-  \item[\textnormal{(CMU)}] Every closed integral sub-prescheme $\mathrm{Y}$ of $\mathrm{X}$ contains an open non-empty $\mathrm{W}$ such that the prescheme induced by $\mathrm{X}$ on $\mathrm{W}$
+  \item[\textnormal{(CMU)}] Every closed integral sub-prescheme $\mathrm{Y}$ of $\mathrm{X}$ contains an open non-empty $\mathrm{W}$ such that the prescheme induced by $\mathrm{Y}$ on $\mathrm{W}$
 is a Cohen-Macaulay prescheme.
 \end{itemize}
 Then, for every coherent $\sh{O}_\mathrm{X}$-Module $\sh{F}$, the function $x\leadsto\operatorname{coprof}(\sh{F}_x)$ is locally constructible and upper
@@ -1279,8 +1274,8 @@ semi-continuous; the sets $\mathrm{U}_{\mathrm{C}_n}(\sh{F})$ and $\mathrm{U}_{\
 \end{proposition}
 
 \begin{proof}
-Indeed, let $\mathrm{Y}$ be a closed integral sub-prescheme of $\mathrm{X}$, of generic point $y$; by virtue of $(6.10.6)$, there is a
-neighbourhood $\mathrm{V}$ of $y$ in $\mathrm{Y}$ such that, for every $x\in\mathrm{V}\cap\mathrm{Y}$, we have
+Indeed, let $\mathrm{Y}$ be a closed integral sub-prescheme of $\mathrm{X}$, of generic point $y$; by virtue of $(6.10.6)$, there is in $\mathrm{Y}$ an open
+neighbourhood $\mathrm{V}$ of $y$ such that, for every $x\in\mathrm{V}\cap\mathrm{Y}$, we have
 \begin{equation}
 \tag{6.11.8.1}
 \label{IV.6.11.8.1}
@@ -1296,12 +1291,9 @@ is upper semi-continuous. The last assertion follows from \sref{IV.6.11.4},~(i),
 
 \begin{remarks}[6.11.9]
 \label{IV.6.11.9}
-(i) If $\mathrm{X}$ satisfies (CMU), then every prescheme $\mathrm{X}'$ locally of finite type over $\mathrm{X}$ also satisfies (CMU). Let $\mathrm{Y}'$ be a closed integral subprescheme of $\mathrm{X}'$, let $y'$ be its generic point, put $y=u(y')$, and let $\mathrm{Y}$ be the integral closed subprescheme of $\mathrm{X}$ with underlying space $\overline{\{y\}}$. Then $u|_{\mathrm{Y}'}$ factors as $\mathrm{Y}'\xrightarrow{v}\mathrm{Y}\xrightarrow{j}\mathrm{X}$,
-where $j$ is the canonical injection and $v$ is locally of finite type.
-
-Restricting to affine open neighbourhoods of $y$ and $y'$, we may suppose that $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is an integral Cohen--Macaulay ring, and $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is an integral finite-type $\mathrm{A}$-algebra containing $\mathrm{A}$.
+(i) If $\mathrm{X}$ satisfies the hypothesis (CMU) of \sref{IV.6.11.8}, then, for every morphism $u:\mathrm{X}'\to\mathrm{X}$ \emph{locally of finite type}, $\mathrm{X}'$ also satisfies (CMU). Indeed, let $\mathrm{Y}'$ be a closed integral sub-prescheme of $\mathrm{X}'$, $y'$ its generic point, $y=u(y')$, and let $\mathrm{Y}$ be the integral sub-prescheme of $\mathrm{X}$ having $\overline{\{y\}}$ as underlying space; then $u|\mathrm{Y}'$ factors as $\mathrm{Y}'\xrightarrow{v}\mathrm{Y}\xrightarrow{j}\mathrm{X}$, where $j$ is the canonical injection \sref[I]{I.5.2.2}, and $v$ is locally of finite type \sref[I]{I.6.6.6}. Restricting to affine open neighbourhoods of $y$ and $y'$ respectively, one can therefore restrict to the case where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is an integral Cohen-Macaulay ring, and $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is an integral ring
 \oldpage[IV-2]{163}
-After replacing $\mathrm{A}$ by $\mathrm{A}_f$ for some $f\neq 0$, we may suppose that $\mathrm{A}'$ contains a polynomial ring $\mathrm{A}[\mathrm{T}_1,\ldots,\mathrm{T}_n]=\mathrm{A}''$ and is finite over $\mathrm{A}''$. The ring $\mathrm{A}''$ is Cohen--Macaulay \sref{IV.6.3.6}; hence we may reduce to the case where $\mathrm{A}'$ is finite over $\mathrm{A}$. After one further localisation, $\mathrm{A}'$ is a finite free $\mathrm{A}$-module. It is therefore a Cohen--Macaulay $\mathrm{A}$-module \sref[0]{0.16.5.1}; since it is finite over $\mathrm{A}$, it is also a Cohen--Macaulay $\mathrm{A}'$-module \sref[0]{0.16.5.3}, and hence a Cohen--Macaulay ring.
+containing $\mathrm{A}$ and which is an $\mathrm{A}$-algebra of finite type. Replacing $\mathrm{A}$ if necessary by a ring of fractions $\mathrm{A}_f$ (with $f\neq 0$), one can moreover suppose that $\mathrm{A}'$ contains a polynomial ring $\mathrm{A}[\mathrm{T}_1,\ldots,\mathrm{T}_n]=\mathrm{A}''$, and is a \emph{finite} $\mathrm{A}''$-algebra (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection\,3, n\textsuperscript{o}\,1, cor.~1 of th.~1). But $\mathrm{A}''$ is a Cohen-Macaulay ring \sref{IV.6.3.6}; hence one can restrict to the case where in addition $\mathrm{A}'$ is a \emph{finite} $\mathrm{A}$-algebra. There is then a $g\neq 0$ in $\mathrm{A}$ such that $\mathrm{A}'_g$ is a \emph{free} $\mathrm{A}_g$-module of finite type (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \textsection\,5, n\textsuperscript{o}\,1, cor.\ of prop.~2), so one can further suppose in addition that $\mathrm{A}'$ is a \emph{free} $\mathrm{A}$-module. But then $\mathrm{A}'$ is a Cohen-Macaulay $\mathrm{A}$-module \sref[0]{0.16.5.1}, and as $\mathrm{A}'$ is an $\mathrm{A}$-module of finite type, $\mathrm{A}'$ is also a Cohen-Macaulay $\mathrm{A}'$-module \sref[0]{0.16.5.3}, hence a Cohen-Macaulay ring.
 
 (ii) Suppose that there exists a coherent $\sh{O}_\mathrm{X}$-Module $\sh{F}$ such that $\operatorname{Supp}(\sh{F})=\mathrm{X}$ and that $\sh{F}$ is an $\sh{O}_\mathrm{X}$-Module
 \emph{of Cohen-Macaulay}. Then $\mathrm{X}$ satisfies the condition (CMU): indeed, with the notations of the proof of \sref{IV.6.11.8},
@@ -1309,8 +1301,8 @@ the relation \sref{IV.6.11.8.1} shows that $\operatorname{coprof}(\sh{O}_{\mathr
 generic point $y$ of $\mathrm{Y}$.
 
 It is unknown whether there exist locally Noetherian preschemes of dimension $\geqslant 2$ that do not satisfy (CMU)
-(if $\dim(\mathrm{X})=1$, it is immediate that every maximal point of $\mathrm{X}_{\mathrm{red}}$ admits an open neighbourhood of dimension $1$,
-hence a Cohen-Macaulay ring).
+(if $\dim(\mathrm{X})=1$, it is immediate that every maximal point of $\mathrm{X}_{\mathrm{red}}$ admits an integral open neighbourhood of dimension $1$,
+hence a Cohen-Macaulay one).
 \end{remarks}
 
 \subsection{Nagata's criteria for \texorpdfstring{$\operatorname{Reg}(\mathrm{X})$}{Reg(X)} to be open}
@@ -1371,11 +1363,12 @@ part of $\mathrm{Y}$.
 \end{corollary}
 
 \begin{proof}
-It is clear that $a)$ implies $b)$. Conversely, to see that $b)$ implies $a)$, consider
+It is clear that $a)$ implies $b)$, for if $\mathrm{Y}$ is integral and $y$ is its generic point, $\sh{O}_{\mathrm{Y},y}$ is a field, hence
+$y\in\operatorname{Reg}(\mathrm{Y})$. Conversely, to see that $b)$ implies $a)$, consider
 a closed integral sub-prescheme $\mathrm{Z}$ of $\mathrm{Y}$ with generic point $z$; if $\mathrm{Y}'$ is the
-integral closed sub-prescheme of $\mathrm{X}$ whose underlying space is the closure $\mathrm{Y}'=\overline{\{z\}}$ of $z$
+integral sub-prescheme of $\mathrm{X}$ whose underlying space is the closure $\mathrm{Y}'=\overline{\{z\}}$ of $z$
 in $\mathrm{X}$, $\mathrm{Z}$ is open in $\mathrm{Y}'$ and the sub-prescheme $\mathrm{Z}$ of $\mathrm{Y}'$, being reduced, is induced by $\mathrm{Y}'$
-on the open subset of $\mathrm{Z}$ in $\mathrm{Y}'$. Now the hypothesis implies that $\operatorname{Reg}(\mathrm{Y}')$ is
+on the open set $\mathrm{Z}$ of the underlying space of $\mathrm{Y}'$. Now the hypothesis implies that $\operatorname{Reg}(\mathrm{Y}')$ is
 a neighbourhood of $z$ in $\mathrm{Y}'$, hence $\operatorname{Reg}(\mathrm{Z})$ is a neighbourhood of $z$ in $\mathrm{Z}$; it suffices then
 to apply \sref{IV.6.12.2} by replacing $\mathrm{X}$ by $\mathrm{Y}$ and $\mathrm{Y}$ by $\mathrm{Z}$.
 \end{proof}
@@ -1403,10 +1396,10 @@ It remains therefore to prove that $c)$ implies $a)$. The question being local o
 first suppose that $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'$ is an $\mathrm{A}$-algebra of finite type; in view of
 \sref{IV.6.12.2}, it suffices to prove that for every closed integral sub-prescheme $\mathrm{Y}'$
 of $\mathrm{X}'$, $\operatorname{Reg}(\mathrm{Y}')$ contains an open non-empty part of $\mathrm{Y}'$. In other words, one can restrict
-to proving that if $\mathrm{A}'$ is an $\mathrm{A}$-algebra integral \emph{of finite type} and $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$,
-$\operatorname{Reg}(\mathrm{X}')$ contains an open non-empty part. Let $\mathrm{K}'$ be the field of fractions of $\mathrm{A}'$;
+to proving that if $\mathrm{A}'$ is an \emph{integral} $\mathrm{A}$-algebra \emph{of finite type} and $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$,
+$\operatorname{Reg}(\mathrm{X}')$ contains an open non-empty part of $\mathrm{X}'$. Let $\mathrm{K}'$ be the field of fractions of $\mathrm{A}'$;
 if $\mathfrak{p}$ is the canonical image in $\mathrm{X}$ of the generic point of $\mathrm{X}'$, $\mathrm{K}'$ is an extension of the
-field of fractions $\mathrm{K}$ of $\mathrm{A}/\mathfrak{p}$, and $\mathrm{A}/\mathfrak{p}$ is identified with a subring of $\mathrm{A}'$, $\mathrm{A}'$ being a finite
+field of fractions $\mathrm{K}$ of $\mathrm{A}/\mathfrak{p}$, and $\mathrm{A}/\mathfrak{p}$ is identified with a subring of $\mathrm{A}'$, $\mathrm{A}'$ being an
 $(\mathrm{A}/\mathfrak{p})$-algebra of finite type. One can obviously restrict in what follows to the proof
 when $\mathfrak{p}=0$. We distinguish two cases:
 
@@ -1415,7 +1408,7 @@ I) $\mathrm{K}'$ \emph{is a separable extension} of $\mathrm{K}$. --- One is the
 \begin{lemma}[6.12.4.1]
 \label{IV.6.12.4.1}
 Let $\mathrm{A}$ be a Noetherian integral ring, $\mathrm{A}'$ an $\mathrm{A}$-algebra integral
-of finite type, such that the field of fractions $\mathrm{K}'$ of $\mathrm{A}'$ is a separable extension of the
+of finite type, containing $\mathrm{A}$ and such that the field of fractions $\mathrm{K}'$ of $\mathrm{A}'$ is a separable extension of the
 field of fractions $\mathrm{K}$ of $\mathrm{A}$. If $\operatorname{Spec}(\mathrm{A})$ contains an open non-empty subset consisting of regular points, then
 so does $\operatorname{Spec}(\mathrm{A}')$.
 \end{lemma}
@@ -1433,18 +1426,18 @@ of rational functions $\mathrm{R}(\mathrm{X}')$ and $\mathrm{R}(\mathrm{X}'_1)$ 
 and $\mathrm{X}'_1$ are $\mathrm{A}$-preschemes of finite type, that there exists an open subset $\mathrm{U}'\subset\mathrm{X}'$ and an open
 $\mathrm{U}'_1\subset\mathrm{X}'_1$ which are $\mathrm{A}$-\emph{isomorphic} $(\mathbf{I},~6.5.5)$. One is therefore reduced to proving that $\operatorname{Reg}(\mathrm{X}'_1)$
 contains a non-empty open subset, in other words one can suppose that $\mathrm{A}'$ is an $\mathrm{A}_1$-algebra
-\emph{finite}. Now, one knows $(\mathbf{0},~17.3.7)$ that $\mathrm{A}_1$ is a regular ring, and one can therefore restrict to the
-case where $\mathrm{A}'$ is an $\mathrm{A}$-algebra \emph{finite} and $\mathrm{K}'$ an extension \emph{separable} and \emph{finite} of $\mathrm{K}$. Let $\xi$ be the
-generic point of $\mathrm{X}$, $\mathrm{A}'_\xi=\mathrm{K}'$ is then a free module over $\mathrm{A}_\xi=\mathrm{K}$, hence (Bourbaki, \emph{Alg.},
-\emph{comm.}, chap.~II, \S~5, no~1, cor.\ of prop.~2) one can, replacing $\mathrm{A}$ by a ring of fractions $\mathrm{A}_f$,
-suppose that $\mathrm{A}'$ is a free $\mathrm{A}$-module of finite type. Let then $(x_h)_{1\leqslant h\leqslant r}$ be a basis of
+\emph{finite}. Now, one knows $(\mathbf{0},~17.3.7)$ that $\mathrm{A}_1$ is a \emph{regular} ring, and one can therefore restrict to the
+case where $\mathrm{A}'$ is an $\mathrm{A}$-algebra \emph{finite} and $\mathrm{K}'$ an extension \emph{separable} and \emph{finite} of $\mathrm{K}$. If $\xi$ is the
+generic point of $\mathrm{X}$, $\mathrm{A}'_\xi=\mathrm{K}'$ is then a free module over $\mathrm{A}_\xi=\mathrm{K}$, hence (Bourbaki, \emph{Alg.\ comm.},
+chap.~II, \S~5, n\textsuperscript{o}~1, cor.\ of prop.~2) one can, replacing $\mathrm{A}$ if necessary by a ring of fractions $\mathrm{A}_f$,
+suppose that $\mathrm{A}'$ is a \emph{free} $\mathrm{A}$-module of finite type. Let then $(x_h)_{1\leqslant h\leqslant r}$ be a basis of
 this $\mathrm{A}$-module, and set
 \[
   d=\det(\operatorname{Tr}_{\mathrm{A}'/\mathrm{A}}(x_h x_k))=\det(\operatorname{Tr}_{\mathrm{K}'/\mathrm{K}}(x_h x_k))\in\mathrm{A}.
 \]
 
 As $\mathrm{K}'$ is separable over $\mathrm{K}$, one knows (Bourbaki, \emph{Alg.}, chap.~IX, \S~2, prop.~5)
-that $d\neq 0$; replacing $\mathrm{A}$ by a ring of fractions $\mathrm{A}_z$, one can therefore suppose $d$
+that $d\neq 0$; replacing $\mathrm{A}$ by a ring of fractions $\mathrm{A}_d$, one can therefore suppose $d$
 \emph{invertible} in $\mathrm{A}$. But then, for every $z\in\operatorname{Spec}(\mathrm{A})$, if one denotes by $\overline{x}_h$ $(1\leqslant h\leqslant r)$
 the canonical image of $x_h$ in $\mathrm{A}'(z)=\mathrm{A}'\otimes_\mathrm{A}\boldsymbol{k}(z)$, one has $\det(\operatorname{Tr}_{\mathrm{A}'(z)/\boldsymbol{k}(z)}(\overline{x}_h\overline{x}_k))=\overline{d}$, canonical
 image of $d$ in $\boldsymbol{k}(z)=\mathrm{A}_z/\mathfrak{m}_z$, and as $\overline{d}$ is invertible (hence $\neq 0$) in $\boldsymbol{k}(z)$, one
@@ -1457,19 +1450,19 @@ $z\in\mathrm{X}$; one concludes then from $(6.5.2,~\text{(ii)})$ that $\mathrm{X
 II) \emph{General case.} --- As $\mathrm{A}'$ is an $\mathrm{A}$-module without torsion, $\mathrm{A}'\otimes_\mathrm{A}\mathrm{K}$ is identified with a
 subring of $\mathrm{K}'$, hence $\mathrm{X}''=\operatorname{Spec}(\mathrm{A}'\otimes_\mathrm{A}\mathrm{K})$ is an integral $\mathrm{K}$-prescheme whose field of
 rational functions is $\mathrm{K}'$. One knows $(4.6.6)$ that there exists a finite radicial extension
-$\mathrm{K}_1$ of $\mathrm{K}$ such that $\mathrm{X}'_1=\operatorname{Spec}(\mathrm{A}'\otimes_\mathrm{A}\mathrm{K}_1)=\mathrm{X}''\otimes_\mathrm{K}\mathrm{K}_1$, $(\mathrm{X}'_1)_{\mathrm{red}}$ is a $\mathrm{K}_1$-prescheme \emph{geometrically
+$\mathrm{K}_1$ of $\mathrm{K}$ such that, if $\mathrm{X}''_1=\operatorname{Spec}(\mathrm{A}'\otimes_\mathrm{A}\mathrm{K}_1)=\mathrm{X}''\otimes_\mathrm{K}\mathrm{K}_1$, $(\mathrm{X}''_1)_{\mathrm{red}}$ is a $\mathrm{K}_1$-prescheme \emph{geometrically
 reduced} of finite type; furthermore, the morphism $\operatorname{Spec}(\mathrm{K}_1)\to\operatorname{Spec}(\mathrm{K})$ being radicial,
-finite and surjective, it is a universal homeomorphism $(2.4.5)$, hence $\mathrm{X}'_1$ is homeomorphic
-to $\mathrm{X}''$, and consequently $(\mathrm{X}'_1)_{\mathrm{red}}$ is integral; its field of rational functions $\mathrm{K}'_1$
+finite and surjective, it is a universal homeomorphism $(2.4.5)$, hence $\mathrm{X}''_1$ is homeomorphic
+to $\mathrm{X}''$, and consequently $(\mathrm{X}''_1)_{\mathrm{red}}$ is integral; furthermore, its field of rational functions $\mathrm{K}'_1$
 is a finite radicial extension of $\mathrm{K}'$ and a \emph{separable} extension of finite type of $\mathrm{K}_1$ $(4.6.1)$.
 By virtue of hypothesis $c)$ of the statement, there is a sub-$\mathrm{A}$-algebra \emph{finite} $\mathrm{A}_1$ of $\mathrm{K}_1$, having $\mathrm{K}_1$
 as field of fractions and such that if one sets $\mathrm{X}_1=\operatorname{Spec}(\mathrm{A}_1)$, $\operatorname{Reg}(\mathrm{X}_1)$ contains an
-open non-empty subset. Let $\mathrm{A}'_1$ be the image of the canonical homomorphism $\mathrm{A}'\otimes_\mathrm{A}\mathrm{A}_1\to\mathrm{K}'_1$
+open non-empty subset of $\mathrm{X}_1$. Let $\mathrm{A}'_1$ be the image of the canonical homomorphism $\mathrm{A}'\otimes_\mathrm{A}\mathrm{A}_1\to\mathrm{K}'_1$
 and let $\mathrm{X}'_1=\operatorname{Spec}(\mathrm{A}'_1)$; $\mathrm{A}'_1$ is an integral ring which is an $\mathrm{A}'$-algebra \emph{finite} and whose
-field of fractions is $\mathrm{K}'_1$; furthermore, as the composite homomorphism
+field of fractions is $\mathrm{K}'_1$ by construction; furthermore, as the composite homomorphism
 $\mathrm{A}'\to\mathrm{A}'\otimes_\mathrm{A}\mathrm{A}_1\to\mathrm{A}'_1\to\mathrm{K}'_1$ is identical to $\mathrm{A}'\to\mathrm{K}'\to\mathrm{K}'_1$, hence injective, the homomorphism
 $\mathrm{A}'\to\mathrm{A}'_1$ is injective; the morphism $g:\mathrm{X}'_1\to\mathrm{X}'$ is therefore finite and surjective $(\mathbf{II},~6.1.10)$.
-This being the hypothesis on $\mathrm{A}_1$ and part I) of the proof imply that $\operatorname{Reg}(\mathrm{X}'_1)$
+This being so, the hypothesis on $\mathrm{A}_1$ and part I) of the proof imply that $\operatorname{Reg}(\mathrm{X}'_1)$
 \oldpage[IV-2]{166}
 contains an open non-empty $\mathrm{V}'_1$; as $g$ is closed $(\mathbf{II},~6.1.10)$, one can suppose
 that $\mathrm{V}'_1=g^{-1}(\mathrm{V}')$, where $\mathrm{V}'$ is an open affine of $\mathrm{X}'$; replacing $\mathrm{A}'$ by the ring of $\mathrm{V}'$
@@ -1602,7 +1595,7 @@ open. As for $\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$, the stated condition is tr
 let us prove that it is sufficient. Let $\mathrm{X}''_\beta$ be the irreducible components of $\mathrm{X}$ such that,
 at their generic point $x''_\beta$, the prescheme $\mathrm{X}$ is reduced; by hypothesis there exists an open
 $\mathrm{U}\subset\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$ containing all the $x''_\beta$. Denote then by $\mathrm{Z}_\lambda$ the irreducible components
-of the closed set $\mathrm{Z}=\mathrm{X}-\mathrm{U}$ whose generic point $z_\lambda$ is such that $\dim(\sh{O}_{\mathrm{X},z_\lambda})\leqslant 1$
+of the closed set $\mathrm{Z}=\mathrm{X}\setmin\mathrm{U}$ whose generic point $z_\lambda$ is such that $\dim(\sh{O}_{\mathrm{X},z_\lambda})\leqslant 1$
 and that $\sh{O}_{\mathrm{X},z_\lambda}$ is non-regular. No point belonging to one of the $\mathrm{Z}_\lambda$ can belong
 \oldpage[IV-2]{168}
 to $\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$; but conversely, if $x\in\mathrm{Z}$ does not belong to any of the $\mathrm{Z}_\lambda$, then, for every
@@ -1635,7 +1628,7 @@ normalization $(\mathbf{II},~6.3.8)$. If the canonical morphism $f:\mathrm{X}'\t
 \end{proposition}
 
 \begin{proof}
-Indeed, on $\mathrm{X}'=\operatorname{Spec}(f_*(\sh{O}_{\mathrm{X}'}))$ and $f_*(\sh{O}_{\mathrm{X}'})$ is a coherent $\sh{O}_\mathrm{X}$-Algebra by
+Indeed, one has $\mathrm{X}'=\operatorname{Spec}(f_*(\sh{O}_{\mathrm{X}'}))$ and $f_*(\sh{O}_{\mathrm{X}'})$ is a \emph{coherent} $\sh{O}_\mathrm{X}$-Algebra by
 hypothesis $(\mathbf{II},~6.1.3)$. To say that $\mathrm{X}$ is normal at a point $x$ means that the canonical
 homomorphism $\sh{O}_x\to(f_*(\sh{O}_{\mathrm{X}'}))_x$ is bijective $(\mathbf{II},~6.3.4)$; but the set of these points is \emph{open}
 since $\sh{O}_\mathrm{X}$ and $f_*(\sh{O}_{\mathrm{X}'})$ are coherent $(\mathbf{0}_\mathrm{I},~5.2.7)$.
@@ -1650,15 +1643,15 @@ is open in $\operatorname{Spec}(\mathrm{A})$.
 \begin{proposition}[6.13.4]
 \label{IV.6.13.4}
 Let $\mathrm{X}$ be a locally Noetherian prescheme. For $\operatorname{Nor}(\mathrm{X})$
-to be open, it is necessary and it suffices that every maximal point $x$ of $\mathrm{X}$ such that $x\in\operatorname{Nor}(\mathrm{X})$ (which means
-that $\mathrm{X}$ is reduced at the point $x$) be interior to $\operatorname{Nor}(\mathrm{X})$.
+to be open, it is necessary and it suffices that every maximal point $x$ of $\mathrm{X}$ such that $x\in\operatorname{Nor}(\mathrm{X})$ \textup{(which means
+that $\mathrm{X}$ is \emph{reduced} at the point $x$)} be interior to $\operatorname{Nor}(\mathrm{X})$.
 \end{proposition}
 
 \begin{proof}
 There is only to prove the sufficiency of the condition. By virtue of the remark made
 in \sref{IV.6.13.1}, one can restrict (replacing $\mathrm{X}$ by an open of $\mathrm{X}$ in which $\mathrm{X}$
-is reduced), i.e.\ to suppose that the maximal points of $\mathrm{X}$ belong
-to $\mathrm{U}_{\mathrm{S}_1}(\mathrm{X})$ and to $\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$; as $\operatorname{Nor}(\mathrm{X})=\mathrm{U}_{\mathrm{S}_1}(\mathrm{X})\cap\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$ by virtue of Serre's
+is reduced) to the case where $\mathrm{X}$ is \emph{reduced}, i.e.\ suppose that the maximal points of $\mathrm{X}$ belong
+to $\mathrm{U}_{\mathrm{S}_2}(\mathrm{X})$ and to $\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$; as $\operatorname{Nor}(\mathrm{X})=\mathrm{U}_{\mathrm{S}_2}(\mathrm{X})\cap\mathrm{U}_{\mathrm{R}_1}(\mathrm{X})$ by virtue of Serre's
 criterion \sref{IV.5.8.6}, one deduces from \sref{IV.6.11.7} and \sref{IV.6.12.10} that these two sets are
 open; hence $\operatorname{Nor}(\mathrm{X})$ is open in $\mathrm{X}$.
 \end{proof}
@@ -1697,12 +1690,10 @@ morphism $\mathrm{X}_\lambda\to\mathrm{Y}$ and let $\mathrm{S}_\lambda=\mathrm{X
 which contain a finite set whose image in $\mathrm{A}'_f$ is a system of generators of the
 $\mathrm{A}_f$-module $\mathrm{A}'_f$; this implies, by virtue of hypothesis (i), that $(\mathrm{B}_\lambda)_f=\mathrm{A}'_f$ for every $\lambda$,
 or equivalently that $u_\lambda^{-1}(\mathrm{D}(f))$ is contained in $\operatorname{Nor}(\mathrm{X}_\lambda)$. By virtue of \sref{IV.6.13.2}, $\mathrm{S}_\lambda$ is therefore
-\emph{closed} in $\mathrm{Y}$. But for every
-$\mathfrak{p}\in\operatorname{Spec}(\mathrm{A})$, it exists by virtue of (ii) a $\lambda$ such that $(\mathrm{B}_\lambda)_\mathfrak{p}=\mathrm{A}'_\mathfrak{p}$, and consequently all points
+\emph{closed} in $\mathrm{X}_\lambda$, and as $u_\lambda$ is a finite morphism, $\mathrm{T}_\lambda$ is \emph{closed} in $\mathrm{Y}$. But for every
+$\mathfrak{p}\in\operatorname{Spec}(\mathrm{A})$, there exists by virtue of (ii) a $\lambda$ such that $(\mathrm{B}_\lambda)_\mathfrak{p}=\mathrm{A}'_\mathfrak{p}$, and consequently all points
 \oldpage[IV-2]{169}
-of $\mathrm{X}_\lambda$ lying over $\mathfrak{p}$ belong to $\operatorname{Nor}(\mathrm{X}_\lambda)$; in other words $\mathfrak{p}\notin\mathrm{T}_\lambda$; as
-$\mathfrak{p}\in\operatorname{Spec}(\mathrm{A})$, it exists by virtue of (ii) a $\lambda$ such that $(\mathrm{B}_\lambda)_\mathfrak{p}=\mathrm{A}'_\mathfrak{p}$, and consequently all points
-of $\mathrm{X}_\lambda$ lying over $\mathfrak{p}$ belong to $\operatorname{Nor}(\mathrm{X}_\lambda)$; in other words $\mathfrak{p}\notin\mathrm{T}_\lambda$; as
+of $\mathrm{X}_\lambda$ lying over $\mathfrak{p}$ belong to $\operatorname{Nor}(\mathrm{X}_\lambda)$; in other words $\bigcap_\lambda\mathrm{T}_\lambda=\varnothing$; as
 $\mathrm{Y}$ is Noetherian and the $\mathrm{T}_\lambda$ are closed, there exists a $\lambda_0$ such that $\mathrm{T}_{\lambda_0}=\varnothing$; hence $\mathrm{B}_{\lambda_0}$
 is integrally closed, and as its field of fractions is $\mathrm{K}'$, one has $\mathrm{B}_{\lambda_0}=\mathrm{A}'$.
 \end{proof}
@@ -1757,9 +1748,7 @@ a normal morphism $(6.8.1)$. Then, for every normal $\mathrm{Y}$-prescheme $\mat
 is normal.
 \end{proposition}
 
-\begin{proof}
-We note that in this statement one \emph{does not suppose} $\mathrm{X}$ locally Noetherian.
-\end{proof}
+We note that in this statement \emph{one does not suppose $\mathrm{X}$ locally Noetherian}.
 
 \begin{lemma}[6.14.1.1]
 \label{IV.6.14.1.1}
@@ -1774,23 +1763,23 @@ total ring of fractions, $\mathrm{A}$ is normal.
 
 \begin{proof}
 (i) As $\mathrm{A}$ is a subring of $\mathrm{R}$, $\mathrm{A}_\mathfrak{p}$ is a subring of $\mathrm{R}_\mathfrak{p}$ for every
-prime ideal $\mathfrak{p}$ of $\mathrm{A}$; furthermore $\mathrm{R}_\mathfrak{p}$ is a ring of fractions of $\mathrm{A}_\mathfrak{p}$; furthermore $\mathrm{R}_\mathfrak{p}$ is necessarily
-a direct product of finitely many fields, hence every non-zero divisor
-of $0$ in $\mathrm{R}_\mathfrak{p}$ is invertible; this proves that $\mathrm{R}_\mathfrak{p}$ is the total ring of fractions of $\mathrm{A}_\mathfrak{p}$.
+prime ideal $\mathfrak{p}$ of $\mathrm{A}$, and $\mathrm{R}_\mathfrak{p}$ is a ring of fractions of $\mathrm{A}_\mathfrak{p}$; furthermore $\mathrm{R}_\mathfrak{p}$ is necessarily
+a direct product of finitely many fields, hence every element of $\mathrm{R}_\mathfrak{p}$ that is not a
+divisor of $0$ is invertible; this proves that $\mathrm{R}_\mathfrak{p}$ is the total ring of fractions of $\mathrm{A}_\mathfrak{p}$.
 If $\mathrm{A}$ is integrally closed in $\mathrm{R}$, $\mathrm{A}_\mathfrak{p}$ is therefore integrally closed in $\mathrm{R}_\mathfrak{p}$; but
-if $\mathrm{R}_\mathfrak{p}$ is a direct product of at least two rings, the integral closure of $\mathrm{A}_\mathfrak{p}$ in $\mathrm{R}_\mathfrak{p}$ is
+if $\mathrm{R}_\mathfrak{p}$ is a direct product of at least two fields, the integral closure of $\mathrm{A}_\mathfrak{p}$ in $\mathrm{R}_\mathfrak{p}$ is
 a direct product of at least two nonzero rings, which is absurd since $\mathrm{A}_\mathfrak{p}$
 is a local ring; hence $\mathrm{R}_\mathfrak{p}$ is necessarily a field and $\mathrm{A}_\mathfrak{p}$ is integral and integrally
 closed, which by definition means that $\mathrm{A}$ is normal. Conversely, if $\mathrm{A}$ is normal,
 $\mathrm{R}_\mathfrak{p}$, total ring of fractions of an integral ring $\mathrm{A}_\mathfrak{p}$, is a field and $\mathrm{A}_\mathfrak{p}$ is integrally
-closed in $\mathrm{R}_\mathfrak{p}$; hence $\mathrm{R}$ is an integral element over $\mathrm{A}$, its image in each $\mathrm{R}_\mathfrak{p}$ is
+closed in $\mathrm{R}_\mathfrak{p}$; if $x\in\mathrm{R}$ is an element integral over $\mathrm{A}$, its image in each $\mathrm{R}_\mathfrak{p}$ is
 integral over $\mathrm{A}_\mathfrak{p}$, hence belongs to $\mathrm{A}_\mathfrak{p}$; we conclude that $x\in\mathrm{A}$ (Bourbaki, \emph{Alg.~comm.},
 chap.~II, \S~3, no~3, cor.~1 of th.~1), and hence $\mathrm{A}$ is integrally closed in $\mathrm{R}$.
 
 \oldpage[IV-2]{170}
 
 (ii) As $\mathrm{A}\subset\mathrm{A}_\lambda\subset\mathrm{R}$ for every $\lambda$, $\mathrm{R}$ is also the total ring of fractions of each $\mathrm{A}_\lambda$.
-In view of the characterisation of normal rings having $\mathrm{R}$ as total ring of fractions,
+In view of the characterisation of normal rings having $\mathrm{R}$ as total ring of fractions, given in (i),
 the assertion (ii) follows from Bourbaki, \emph{Alg.~comm.}, chap.~V,
 \S~1, no~3, prop.~12.
 \end{proof}
@@ -1798,29 +1787,29 @@ the assertion (ii) follows from Bourbaki, \emph{Alg.~comm.}, chap.~V,
 This lemma being proved, the proof of \sref{IV.6.14.1} proceeds in several steps.
 
 I) \emph{Reduction to the case where} $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, $\mathrm{Y}'=\operatorname{Spec}(\mathrm{A}')$, $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, $\mathrm{A}$, $\mathrm{A}'$ \emph{being
-local Noetherian rings,} $\mathrm{A}$ integral, $\mathrm{B}$ the integral closure of $\mathrm{A}$. --- It suffices to prove that
+local Noetherian rings,} $\mathrm{A}$ \emph{integral,} $\mathrm{B}$ \emph{the integral closure of} $\mathrm{A}$. --- We have to prove that
 for every $x'\in\mathrm{X}'$, the local ring $\sh{O}_{\mathrm{X}',x'}$ is integral and integrally closed; let $x$, $y$, $y'$
 be the canonical images of $x'$ in $\mathrm{X}$, $\mathrm{Y}$, $\mathrm{Y}'$ respectively; if one sets $\mathrm{A}=\sh{O}_{\mathrm{Y},y}$,
-$\mathrm{A}'=\sh{O}_{\mathrm{Y}',y'}$, $\mathrm{B}=\sh{O}_{\mathrm{X},x}$, the rings $\sh{O}_{\mathrm{X},x}$, $\sh{O}_{\mathrm{Y},y}$, $\sh{O}_{\mathrm{Y}',y'}$ for $x$, $y$, $y'$ fixed, are the local rings at the
-prime ideals of the ring $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$ $(\mathbf{I},~3.6.5)$, and so it suffices to prove that $\mathrm{B}'$
+$\mathrm{A}'=\sh{O}_{\mathrm{Y}',y'}$, $\mathrm{B}=\sh{O}_{\mathrm{X},x}$, the rings $\sh{O}_{\mathrm{X}',x'}$, for $x$, $y$, $y'$ fixed, are the local rings at the
+prime ideals of the ring $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$ $(\mathbf{I},~3.6.5)$, and we therefore have to prove that $\mathrm{B}'$
 is a \emph{normal} ring. Let us note on the other hand that $\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is a normal
-morphism by definition $(6.8.1$ and $\mathbf{I},~3.6.5)$; one is reduced to the case where $\mathrm{Y}$ and $\mathrm{Y}'$ are
-local schemes, that is to say to the case where $\mathrm{A}$ is an integral and integrally
-closed local ring $(\mathbf{0}_\mathrm{I},~6.8.1$ and $\mathbf{I},~3.6.5)$; one is reduced to the case where $\mathrm{Y}$ and $\mathrm{Y}'$
-are local schemes. Let us designate by $(\mathrm{B}_\alpha)$ the family of \emph{integral closures} of the sub-$\mathrm{A}$-algebras \emph{of finite type} of $\mathrm{B}$;
-it is clear that $\mathrm{B}$ is the union of the filtered increasing family of the $\mathrm{B}_\alpha$. As $\varinjlim$
-commutes with the tensor product, $\mathrm{B}'$ is therefore also the union of the filtered increasing family
-$\overline{\mathrm{B}'_\alpha}=\mathrm{B}_\alpha\otimes_\mathrm{A}\mathrm{A}'$. To prove that $\mathrm{B}'$ is normal, it suffices, by virtue of \sref{IV.5.13.6}, to
+morphism by definition $(6.8.1$ and $\mathbf{I},~3.6.5)$; one is therefore reduced to the case where $\mathrm{Y}$ and $\mathrm{Y}'$ are
+local schemes and $\mathrm{X}$ is the spectrum of a local ring $\mathrm{B}$ that is \emph{integral and integrally closed}.
+Let us denote by $(\mathrm{B}_\alpha)$ the family of the \emph{integral closures} of the sub-$\mathrm{A}$-algebras \emph{of finite type} of $\mathrm{B}$;
+it is clear that $\mathrm{B}$ is the union of the filtered increasing family of the $\mathrm{B}_\alpha$. As the functor $\varinjlim$
+commutes with the tensor product, $\mathrm{B}'$ is therefore isomorphic to $\varinjlim\mathrm{B}'_\alpha$, where we have set
+$\mathrm{B}'_\alpha=\mathrm{B}_\alpha\otimes_\mathrm{A}\mathrm{A}'$. To prove that $\mathrm{B}'$ is normal, it will suffice, by virtue of \sref{IV.5.13.6}, to
 show that the rings $\mathrm{B}'_\alpha$ are \emph{normal} and that, for $\alpha\leqslant\beta$, every irreducible component
-of $\operatorname{Spec}(\mathrm{B}'_\beta)$ \emph{dominates} one irreducible component of $\operatorname{Spec}(\mathrm{B}'_\alpha)$. But this
-last property follows from the hypothesis that $\mathrm{A}'$ is an $\mathrm{A}$-module flat and from $(2.3.7,~\text{(ii)})$.
+of $\operatorname{Spec}(\mathrm{B}'_\beta)$ \emph{dominates} an irreducible component of $\operatorname{Spec}(\mathrm{B}'_\alpha)$. But this
+last property follows from the hypothesis that $\mathrm{A}'$ is a flat $\mathrm{A}$-module and from $(2.3.7,~\text{(ii)})$, since
+$\mathrm{B}_\alpha$ and $\mathrm{B}_\beta$ are integral and $\mathrm{B}_\alpha\subset\mathrm{B}_\beta$.
 
 One can therefore restrict to proving that $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$ is normal when $\mathrm{B}$
-is the integral closure of a $\mathrm{A}$-algebra integral \emph{of finite type} $\mathrm{C}$; in this case, if one sets
+is the integral closure of an integral $\mathrm{A}$-algebra of finite type $\mathrm{C}$; in this case, if one sets
 $\mathrm{C}'=\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$, the morphism $\operatorname{Spec}(\mathrm{C}')\to\operatorname{Spec}(\mathrm{C})$ is normal $(6.8.2)$; as
 $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{C}\mathrm{C}'$,
 one sees that one can replace $\mathrm{A}$ and $\mathrm{A}'$ by $\mathrm{C}$ and $\mathrm{C}'$ respectively, hence suppose that $\mathrm{A}$
-is integral and that $\mathrm{B}$ is the \emph{integral closure} of $\mathrm{A}$. Finally, the procedure from the beginning allows to
+is integral and that $\mathrm{B}$ is the \emph{integral closure of} $\mathrm{A}$. Finally, the procedure of the beginning allows one to
 restrict to the case where $\mathrm{A}$ is \emph{local} (taking into account the fact that, if $\mathrm{B}$ is the integral closure of $\mathrm{A}$,
 $\mathrm{B}_\mathfrak{p}$ is the integral closure of $\mathrm{A}_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $\mathrm{A}$).
 
@@ -1836,7 +1825,7 @@ except for a finite number of indices $\lambda$. One therefore has an exact sequ
 Set $\mathrm{K}'=\mathrm{K}\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{V}'_\lambda=\mathrm{V}_\lambda\otimes_\mathrm{A}\mathrm{A}'$; by flatness, one deduces from the preceding
 exact sequence a new exact sequence
 \[
-  0\to\mathrm{B}'\to\mathrm{K}'\to\bigoplus(\mathrm{K}'_\lambda/\mathrm{V}'_\lambda)
+  0\to\mathrm{B}'\to\mathrm{K}'\to\bigoplus_\lambda(\mathrm{K}'/\mathrm{V}'_\lambda)
 \]
 
 \oldpage[IV-2]{171}
@@ -1858,75 +1847,71 @@ of $\mathrm{B}$ such that the morphism $\operatorname{Spec}(\mathrm{B})\to\opera
 in particular that $\mathrm{A}_1$ is also a local ring (obviously of dimension $1$); furthermore
 one can suppose that $\mathrm{B}$ and $\mathrm{A}_1$ have the same residue field (\emph{loc.~cit.}). One can therefore by the
 same method replace $\mathrm{A}$ by $\mathrm{A}_1$. Applying if necessary the procedure from the beginning of I),
-one can suppose finally that $\mathrm{A}'$ is also a local ring and that the homomorphism
+one can suppose finally that $\mathrm{A}'$ is also a \emph{local} ring and that the homomorphism
 $\mathrm{A}\to\mathrm{A}'$ is \emph{local}.
 
 III) \emph{End of the proof.} --- We shall first establish the following lemma:
-\end{proof}
 
 \begin{lemma}[6.14.1.2]
 \label{IV.6.14.1.2}
-Let $\mathrm{A}$ be a local Noetherian integral ring of dimension $1$, $\mathrm{A}'$ a local
-Noetherian integral ring, $\mathrm{A}\to\mathrm{A}'$ a local homomorphism such that the corresponding morphism
-$\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is \emph{normal}. Let $\mathrm{K}$ be the field of fractions of $\mathrm{A}$, $\mathfrak{m}$ the maximal ideal of $\mathrm{A}$,
-$\boldsymbol{k}=\mathrm{A}/\mathfrak{m}$ its residue field.
-\end{lemma}
-
-\begin{env}
 \label{IV.6.14.1.2.env}
+Let $\mathrm{A}$ be a local Noetherian integral ring of dimension $1$, $\mathrm{A}'$ a local
+Noetherian ring, $\mathrm{A}\to\mathrm{A}'$ a local homomorphism such that the corresponding morphism
+$\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is normal. Let $\mathrm{K}$ be the field of fractions of $\mathrm{A}$, $\mathfrak{m}$ the maximal ideal of $\mathrm{A}$,
+$k=\mathrm{A}/\mathfrak{m}$ its residue field.
 \begin{enumerate}[label=(\roman*)]
   \item If $\mathfrak{q}'_j$ $(1\leqslant j\leqslant r)$ are the minimal ideals of $\mathrm{A}'$, $\mathrm{K}'=\mathrm{K}\otimes_\mathrm{A}\mathrm{A}'$ is a direct product
-of integral rings and integrally closed $\mathrm{K}'_j\supset\mathrm{A}'/\mathfrak{q}'_j$ $(1\leqslant j\leqslant r)$, $\mathrm{K}'_j$ having as field of fractions
-the field of fractions $\mathrm{L}'_j$ of $\mathrm{A}'/\mathfrak{q}'_j$, so that the total ring of fractions $\mathrm{L}'$ of $\mathrm{A}'$
-is identified with the direct product of the $\mathrm{L}'_j$ and $\mathrm{A}'$ is a subring of $\mathrm{K}'$.
+of integral and integrally closed rings $\mathrm{K}'_j\supset\mathrm{A}'/\mathfrak{q}'_j$ $(1\leqslant j\leqslant r)$, $\mathrm{K}'_j$ having as field of fractions
+the field of fractions $\mathrm{L}'_j$ of $\mathrm{A}'/\mathfrak{q}'_j$ $(1\leqslant j\leqslant r)$, so that the total ring of fractions $\mathrm{L}'$ of $\mathrm{A}'$
+is identified with the direct product of the $\mathrm{L}'_j$, and $\mathrm{A}'$ with a subring of $\mathrm{K}'$.
   \item The ideal $\mathfrak{p}'=\mathfrak{m}\mathrm{A}'$ of $\mathrm{A}'$ is prime; the ring $\mathrm{A}'_{\mathfrak{p}'}$ is of dimension $1$ and is identified
-with a sub-product of the fields $\mathrm{L}'_j$ for the indices $j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$.
-  \item If $\overline{\mathrm{A}'_{\mathfrak{p}'}}$ denotes the subring of $\mathrm{L}'$, product of $\mathrm{A}'_{\mathfrak{p}'}$ and of the $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\not\subset\mathfrak{p}'$, one has
+with a subring of the product of the fields $\mathrm{L}'_j$ for the indices $j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$.
+  \item If $\overline{\mathrm{A}}'_{\mathfrak{p}'}$ denotes the subring of $\mathrm{L}'$, product of $\mathrm{A}'_{\mathfrak{p}'}$ and of the $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\not\subset\mathfrak{p}'$, one has
 \begin{equation}
 \tag{6.14.1.3}
 \label{IV.6.14.1.3}
-  \mathrm{A}'=\mathrm{K}'\cap\overline{\mathrm{A}'_{\mathfrak{p}'}}.
+  \mathrm{A}'=\mathrm{K}'\cap\overline{\mathrm{A}}'_{\mathfrak{p}'}.
 \end{equation}
 \end{enumerate}
-\end{env}
+\end{lemma}
 
 \begin{proof}
 \oldpage[IV-2]{172}
-Assertion (i) has already been seen in the course of the proof, independent of the hypothesis on the dimension of $\mathrm{A}$. The hypothesis that the morphism
-$\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is normal implies that $\mathrm{A}'\otimes_\mathrm{A}\boldsymbol{k}=\mathrm{A}'/\mathfrak{m}\mathrm{A}'$ is a normal \emph{local} ring
-and \emph{integral}, which shows already that $\mathfrak{p}'=\mathfrak{m}\mathrm{A}'$ is prime. One has,
+Assertion (i) has already been seen in the course of the proof of II), and it is independent of the hypothesis on the dimension of $\mathrm{A}$. The hypothesis that the morphism
+$\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is normal implies that $\mathrm{A}'\otimes_\mathrm{A} k=\mathrm{A}'/\mathfrak{m}\mathrm{A}'$ is a normal \emph{local}
+Noetherian ring, hence \emph{integral}, which already shows that $\mathfrak{p}'=\mathfrak{m}\mathrm{A}'$ is prime. One has,
 by \sref{IV.6.1.2}, $\dim(\mathrm{A}'_{\mathfrak{p}'})=\dim(\mathrm{A})+\dim(\mathrm{A}'_{\mathfrak{p}'}/\mathfrak{m}\mathrm{A}'_{\mathfrak{p}'})$. But $\mathrm{A}'_{\mathfrak{p}'}/\mathfrak{m}\mathrm{A}'_{\mathfrak{p}'}=\mathrm{A}'_{\mathfrak{p}'}/\mathfrak{p}'\mathrm{A}'_{\mathfrak{p}'}$ is
-the residue field of $\mathrm{A}'_{\mathfrak{p}'}$, hence $\dim(\mathrm{A}'_{\mathfrak{p}'})=1$. The fact that $\mathrm{A}'_{\mathfrak{p}'}$ is contained in the composed
-direct of the $\mathrm{L}'_j$ for these indices $j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$, for these indices $j$ are
+the residue field of $\mathrm{A}'_{\mathfrak{p}'}$, hence $\dim(\mathrm{A}'_{\mathfrak{p}'})=1$. The fact that $\mathrm{A}'_{\mathfrak{p}'}$ is contained in the direct
+product of the $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$ follows from the fact that the ideals $\mathfrak{q}'_j\mathrm{A}'_{\mathfrak{p}'}$ for these indices $j$ are
 the minimal prime ideals of $\mathrm{A}'_{\mathfrak{p}'}$.
 
-It remains to prove \sref{IV.6.14.1.3}. Conversely, let $y'$ be an
+It remains to prove \sref{IV.6.14.1.3}. One obviously has $\mathrm{A}'\subset\mathrm{K}'\cap\overline{\mathrm{A}}'_{\mathfrak{p}'}$. Conversely, let $y'$ be an
 element of this intersection; let $a$ be a ``parameter'' for $\mathrm{A}$, i.e.\ an element such that $\mathrm{A}a$ is $\mathfrak{m}$-primary,
-and let $a'$ be the image of $a$ in $\mathrm{A}'$; every element of $\mathrm{K}$ can be written $x/a^n$ for $x\in\mathrm{A}$ and
+and let $a'$ be the image of $a$ in $\mathrm{A}'$; every element of $\mathrm{K}$ can be written $x/a^n$ for $x\in\mathrm{A}$ and an
 $n>0$ since $\mathrm{A}a$ contains a power of $\mathfrak{m}$; hence one can write $y'=x'/a'^n$ with $x'\in\mathrm{A}'$.
-Note now that $\mathfrak{p}'$ is the \emph{only} prime ideal associated to $\mathrm{A}'/a'^n\mathrm{A}'=(A/a^n\mathrm{A})\otimes_\mathrm{A}\mathrm{A}'$:
+Note now that $\mathfrak{p}'$ is the \emph{only} prime ideal associated to $\mathrm{A}'/a'^n\mathrm{A}'=(\mathrm{A}/a^n\mathrm{A})\otimes_\mathrm{A}\mathrm{A}'$:
 as $\mathrm{A}'$ is a flat $\mathrm{A}$-module, this follows from $(3.3.1)$, $\mathfrak{m}$ being the only prime ideal
-associated to $\mathrm{A}/a^n\mathrm{A}$ since $\mathrm{A}$ is integral. Hence, $a'^n\mathrm{A}'$ is the inverse image in $\mathrm{A}'$
-of $a'^n\mathrm{A}'_{\mathfrak{p}'}$; as by hypothesis $y'\in\widehat{\mathrm{A}'_{\mathfrak{p}'}}$, the image of $x'$ in $\mathrm{A}'_{\mathfrak{p}'}$ belongs to $a'^n\mathrm{A}'_{\mathfrak{p}'}$;
+associated to $\mathrm{A}/a^n\mathrm{A}$ and $k\otimes_\mathrm{A}\mathrm{A}'$ being integral. Hence, $a'^n\mathrm{A}'$ is the inverse image in $\mathrm{A}'$
+of $a'^n\mathrm{A}'_{\mathfrak{p}'}$; as by hypothesis $y'\in\overline{\mathrm{A}}'_{\mathfrak{p}'}$, the image of $x'$ in $\mathrm{A}'_{\mathfrak{p}'}$ belongs to $a'^n\mathrm{A}'_{\mathfrak{p}'}$;
 whence $x'\in a'^n\mathrm{A}'$ and $y'\in\mathrm{A}'$, which finishes the proof.
 
-In the situation in which we have arrived at the end of II),
-$\mathrm{B}'$ is \emph{radicial} over $\mathrm{A}'$ $(\mathbf{I},~3.5.7)$ and is hence also a local ring; furthermore $\mathrm{B}'$ is
-integer over $\mathrm{A}'$, hence, if $\mathfrak{q}'$ is the unique prime ideal of $\mathrm{B}'$ lying over $\mathfrak{p}'$, $\mathfrak{q}'\mathrm{B}'_{\mathfrak{p}'}$ is the unique
-maximal ideal of $\mathrm{B}'_{\mathfrak{p}'}$ (Bourbaki, \emph{Alg.~comm.}, chap.~V, \S~2, no~1, prop.~1), hence
-$\mathrm{B}'_{\mathfrak{q}'}=\mathrm{B}'_{\mathfrak{p}'}=\mathrm{B}\otimes_{\mathrm{A}_\mathfrak{p}}\mathrm{A}'_{\mathfrak{p}'}$. We shall first prove that $\mathrm{B}'_{\mathfrak{p}'}$ is \emph{Noetherian}
-and \emph{normal}. $\mathrm{B}'_{\mathfrak{p}'}$ contains $\mathrm{A}'_{\mathfrak{p}'}$ and is contained in $\mathrm{K}'_{\mathfrak{p}'}$, hence in the product $\mathrm{L}_1$ of the $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$. The composed
-direct $\mathrm{L}''$ of the fields of fractions of these latter is also the total ring of fractions of $\mathrm{A}'$,
-hence also that of $\mathrm{B}'_{\mathfrak{p}'}$. For every index $j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$, let $\mathfrak{a}'_j$ be the product of the $\mathrm{L}'_h$ for these indices $h$ such that $h\neq j$, so that
-$\mathfrak{a}'_j\cap\mathrm{A}'_{\mathfrak{p}'}=\mathfrak{q}'_j\mathrm{A}'_{\mathfrak{p}'}$; as every element of $\mathrm{A}'\setmin\mathfrak{p}'$ is regular in $\mathrm{L}_1$, one has also
+This lemma being established, in the situation in which we have arrived at the end of II),
+$\mathrm{B}'$ is \emph{radicial} over $\mathrm{A}'$ $(\mathbf{I},~3.5.7)$ and is hence also a \emph{local} ring; furthermore $\mathrm{B}'$ is
+integral over $\mathrm{A}'$, hence, if $\mathfrak{q}'$ is the unique prime ideal of $\mathrm{B}'$ lying over $\mathfrak{p}'$, $\mathfrak{q}'\mathrm{B}'_{\mathfrak{p}'}$ is the unique
+maximal ideal of $\mathrm{B}'_{\mathfrak{p}'}$ (Bourbaki, \emph{Alg.~comm.}, chap.~V, \S~2, n\textsuperscript{o}~1, prop.~1), hence
+$\mathrm{B}'_{\mathfrak{q}'}=\mathrm{B}'_{\mathfrak{p}'}=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'_{\mathfrak{p}'}$. We shall first prove that $\mathrm{B}'_{\mathfrak{p}'}$ is a \emph{Noetherian}
+and \emph{normal} ring. Now, as $\mathrm{B}$ contains $\mathrm{A}$ and is contained in $\mathrm{K}$, and as $\mathrm{A}'_{\mathfrak{p}'}$ is a flat $\mathrm{A}$-module,
+$\mathrm{B}'_{\mathfrak{p}'}$ contains $\mathrm{A}'_{\mathfrak{p}'}$ and is contained in $\mathrm{K}'_{\mathfrak{p}'}$, hence in the product $\mathrm{L}_1$ of the $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$.
+For every index $j$ such that $\mathfrak{q}'_j\subset\mathfrak{p}'$, let $\mathfrak{a}'_j$ be the product of the $\mathrm{L}'_h$ such that $h\neq j$, so that
+$\mathfrak{a}'_j\cap\mathrm{A}'=\mathfrak{q}'_j$; as every element of $\mathrm{A}'\setmin\mathfrak{p}'$ is regular in $\mathrm{L}_1$, one has also
 \[
   \mathfrak{a}'_j\cap\mathrm{A}'_{\mathfrak{p}'}=\mathfrak{q}'_j\mathrm{A}'_{\mathfrak{p}'}.
 \]
 
 Let $\mathfrak{r}'_j=\mathrm{B}'_{\mathfrak{p}'}\cap\mathfrak{a}'_j$, so that $\mathrm{B}'_{\mathfrak{p}'}/\mathfrak{r}'_j$ is isomorphic to the projection of $\mathrm{B}'_{\mathfrak{p}'}$ in $\mathrm{L}'_j$;
-hence $\mathrm{B}'_{\mathfrak{p}'}/\mathfrak{r}'_j$ contains the local integral ring of \emph{dimension $1$}, $\mathrm{A}'_{\mathfrak{p}'}/\mathfrak{q}'_j\mathrm{A}'_{\mathfrak{p}'}$, and is contained
-in its field of fractions $\mathrm{L}'_j$; it is hence a Noetherian ring by virtue of the theorem of
-Krull-Akizuki (Bourbaki, \emph{Alg.~comm.}, chap.~VII, \S~2, no~5, prop.~5).
+hence $\mathrm{B}'_{\mathfrak{p}'}/\mathfrak{r}'_j$ contains the local ring $\mathrm{A}'_{\mathfrak{p}'}/\mathfrak{q}'_j\mathrm{A}'_{\mathfrak{p}'}$, \emph{integral of dimension} $1$, and is contained
+in its field of fractions $\mathrm{L}'_j$; it is hence Noetherian by virtue of the theorem of
+Krull-Akizuki (Bourbaki, \emph{Alg.~comm.}, chap.~VII, \S~2, n\textsuperscript{o}~5, prop.~5).
 
 \oldpage[IV-2]{173}
 
@@ -1941,7 +1926,7 @@ are Noetherian, so is $\mathrm{R}/(\mathfrak{a}\cap\mathfrak{b})$.
 
 \begin{proof}
 Indeed, let $\mathfrak{c}$ be an ideal of $\mathrm{R}$ such that $\mathfrak{a}\cap\mathfrak{b}\subset\mathfrak{c}$; one has therefore $\mathfrak{a}\cap\mathfrak{b}\subset\mathfrak{a}\cap\mathfrak{c}\subset\mathfrak{c}$; now
-$\mathfrak{c}/(\mathfrak{a}\cap\mathfrak{c})$ is an $\mathrm{R}$-module isomorphic to $(\mathfrak{a}+\mathfrak{c})/\mathfrak{a}$, hence an ideal of $\mathrm{R}/\mathfrak{a}$, and hence
+$\mathfrak{c}/(\mathfrak{a}\cap\mathfrak{c})$ is an $\mathrm{R}$-module isomorphic to $(\mathfrak{a}+\mathfrak{c})/\mathfrak{a}$, hence to an ideal of $\mathrm{R}/\mathfrak{a}$, and hence
 is of finite type; on the other hand $(\mathfrak{a}\cap\mathfrak{c})/(\mathfrak{a}\cap\mathfrak{b})$ is a sub-$\mathrm{R}$-module of $\mathfrak{a}/(\mathfrak{a}\cap\mathfrak{b})$, and
 this latter is isomorphic to $(\mathfrak{a}+\mathfrak{b})/\mathfrak{b}$, hence is of finite type as an ideal of $\mathrm{R}/\mathfrak{b}$;
 hence $(\mathfrak{a}\cap\mathfrak{c})/(\mathfrak{a}\cap\mathfrak{b})$ is also an $\mathrm{R}$-module of finite type, and it follows finally that
@@ -1949,20 +1934,20 @@ $\mathfrak{c}/(\mathfrak{a}\cap\mathfrak{b})$ is also an $\mathrm{R}$-module of 
 \end{proof}
 
 Let us note on the other hand that $\operatorname{Spec}(\mathrm{A})$ is made up of the closed point $\mathfrak{m}$ and of the generic
-point (o), of residue fields $\boldsymbol{k}$ and $\mathrm{K}$ respectively; as in the case where we
-are placed, the fields of fractions of $\mathrm{B}$ and its residue field are respectively
-isomorphic to $\mathrm{K}$ and $\boldsymbol{k}$, the fibres of the morphism $u:\operatorname{Spec}(\mathrm{B}'_{\mathfrak{p}'})\to\operatorname{Spec}(\mathrm{B})$ at the closed point
+point $(0)$, of residue fields $k$ and $\mathrm{K}$ respectively; as in the case where we
+are placed, the field of fractions of $\mathrm{B}$ and its residue field are respectively
+isomorphic to $\mathrm{K}$ and $k$, the fibres of the morphism $u:\operatorname{Spec}(\mathrm{B}'_{\mathfrak{p}'})\to\operatorname{Spec}(\mathrm{B})$ at the closed point
 and at the generic point of $\operatorname{Spec}(\mathrm{B})$ are respectively \emph{isomorphic} to the fibres of the morphism
 $\operatorname{Spec}(\mathrm{A}'_{\mathfrak{p}'})\to\operatorname{Spec}(\mathrm{A})$ at the closed point and at the generic point of $\operatorname{Spec}(\mathrm{A})$ $(\mathbf{I},~3.6.4)$, hence
-are \emph{geometrically normal}; as on the other hand the morphism $u$ is flat,
+are \emph{geometrically normal} by hypothesis; as on the other hand the morphism $u$ is flat,
 we conclude that it is \emph{normal} $(6.8.1)$. But $\mathrm{B}$ and $\mathrm{B}'_{\mathfrak{p}'}$ are Noetherian and $\mathrm{B}$ is normal, hence
 $(6.5.4)$ $\mathrm{B}'_{\mathfrak{p}'}$ is \emph{normal}.
 
-This being so, $\mathrm{B}$ is union of the filtered increasing family of its sub-$\mathrm{A}$-algebras of finite type
+This being so, $\mathrm{B}$ is union of the filtered increasing family of its finite sub-$\mathrm{A}$-algebras
 $\mathrm{A}_\alpha$; by flatness, $\mathrm{B}'$ is union of the filtered increasing family of the $\mathrm{A}'_\alpha=\mathrm{A}_\alpha\otimes_\mathrm{A}\mathrm{A}'$;
 if one sets $\mathfrak{p}'_\alpha=\mathfrak{q}'\cap\mathrm{A}'_\alpha$, $\mathrm{B}'_{\mathfrak{q}'}$ is also union of the filtered increasing family of the $(\mathrm{A}'_\alpha)_{\mathfrak{p}'_\alpha}$
 $(5.13.3)$. Denote by $\mathrm{L}''$ the direct product of the fields $\mathrm{L}'_j$ such that $\mathfrak{q}'_j\not\subset\mathfrak{p}'$; then for
-every $\alpha$, $(\mathrm{A}'_\alpha)_{\mathfrak{p}'_\alpha}$ is contained in $\mathrm{K}'_{\mathfrak{p}'}$, and the ring $\overline{\mathrm{B}'_{\mathfrak{q}'}}=\mathrm{L}''\times\mathrm{B}'_{\mathfrak{q}'}$ is therefore union of the
+every $\alpha$, $(\mathrm{A}'_\alpha)_{\mathfrak{p}'_\alpha}$ is contained in $\mathrm{K}'_{\mathfrak{p}'}$, and the ring $\overline{\mathrm{B}}'_{\mathfrak{q}'}=\mathrm{L}''\times\mathrm{B}'_{\mathfrak{q}'}$ is therefore union of the
 rings $\mathrm{L}''\times(\mathrm{A}'_\alpha)_{\mathfrak{p}'_\alpha}=(\overline{\mathrm{A}}'_\alpha)_{\mathfrak{p}'_\alpha}$. But each of the $\mathrm{A}_\alpha$ is local, Noetherian, integral and of
 dimension $1$, and the morphism $\operatorname{Spec}(\mathrm{A}'_\alpha)\to\operatorname{Spec}(\mathrm{A}_\alpha)$ is normal $(6.8.2)$, hence one can
 apply \sref{IV.6.14.1.2} and one has
@@ -1971,11 +1956,11 @@ apply \sref{IV.6.14.1.2} and one has
 \]
 for every $\alpha$; taking the inductive limit of each of the two members, it follows that
 \[
-  \mathrm{B}'=\mathrm{K}'\cap\overline{\mathrm{B}'_{\mathfrak{q}'}}.
+  \mathrm{B}'=\mathrm{K}'\cap\overline{\mathrm{B}}'_{\mathfrak{q}'}.
 \]
 
-But $\overline{\mathrm{B}'_{\mathfrak{q}'}}$, being the direct product of the normal rings $\mathrm{L}''$ and $\mathrm{B}'_{\mathfrak{q}'}$, is normal, and as
-it has the same total ring of fractions as $\mathrm{K}'$, the lemma \sref{IV.6.14.1.1} shows that $\mathrm{B}'$ is normal.
+But $\overline{\mathrm{B}}'_{\mathfrak{q}'}$, being the direct product of the normal rings $\mathrm{L}''$ and $\mathrm{B}'_{\mathfrak{q}'}$, is normal, and as
+the same is true of $\mathrm{K}'$, the lemma \sref{IV.6.14.1.1} shows that $\mathrm{B}'$ is normal.
 \end{proof}
 
 \begin{corollary}[6.14.2]
@@ -2056,18 +2041,7 @@ whence, by flatness, the exact sequence
 \]
 where one has set $\mathrm{B}'_0=\mathrm{B}_0\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{C}'_0=\mathrm{C}_0\otimes_\mathrm{A}\mathrm{A}'$. If one proves that $\mathrm{C}'_0$ is the integral
 closure of $\mathrm{A}'$ in $\mathrm{B}'_0$, the lemma \sref{IV.6.14.4.1} will prove that $\mathrm{C}'$ is the integral
-closure of $\mathrm{A}'$ in $\mathrm{B}'$. One can therefore restrict to the case where $\mathrm{B}$ is an $\mathrm{A}$-algebra of
-finite type; let $\mathfrak{q}_i$ $(1\leqslant i\leqslant n)$ be its minimal prime ideals; as $\mathrm{B}$
-is supposed \emph{reduced}, it is identified with a \emph{subring} of the product $\mathrm{B}_0$ of the $\mathrm{B}/\mathfrak{q}_i$; if $\mathrm{C}_0$ is the integral
-closure of $\mathrm{A}$ in $\mathrm{B}_0$, one has $\mathrm{C}=\mathrm{B}\cap\mathrm{C}_0$; if one sets $\mathrm{B}'_0=\mathrm{B}_0\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{C}'_0=\mathrm{C}_0\otimes_\mathrm{A}\mathrm{A}'$, one has,
-by flatness, $\mathrm{C}'=\mathrm{B}'\cap\mathrm{C}'_0$ $(\mathbf{0}_\mathrm{I},~6.1.3)$; it suffices therefore to prove that $\mathrm{C}'_0$ is the integral
-closure of $\mathrm{A}'$ in $\mathrm{B}'_0$. But $\mathrm{C}_0$ is the direct product of the $\mathrm{C}_i$, integral closures of $\mathrm{A}$
-in the $\mathrm{B}_i=\mathrm{B}/\mathfrak{q}_i$; hence $\mathrm{C}'_0$ is the direct product of the $\mathrm{C}'_i=\mathrm{C}_i\otimes_\mathrm{A}\mathrm{A}'$ and it suffices to show
-that $\mathrm{C}'_i$ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'_i=\mathrm{B}_i\otimes_\mathrm{A}\mathrm{A}'$. One is thus reduced to the case
-where $\mathrm{B}$ is integral and an $\mathrm{A}$-algebra of finite type; if $\mathfrak{p}$ is the kernel of the homomorphism $\mathrm{A}\to\mathrm{B}$,
-one has also $\mathrm{B}'=\mathrm{B}\otimes_{\mathrm{A}/\mathfrak{p}}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')$; as the morphism $\operatorname{Spec}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')\to\operatorname{Spec}(\mathrm{A}/\mathfrak{p})$ is
-normal, one can replace $\mathrm{A}$ by $\mathrm{A}/\mathfrak{p}$ and $\mathrm{A}'$ by $\mathrm{A}'/\mathfrak{p}\mathrm{A}'$, and suppose hence
-that $\mathrm{A}\subset\mathrm{B}$.
+closure of $\mathrm{A}'$ in $\mathrm{B}'$.
 
 \oldpage[IV-2]{175}
 
@@ -2079,21 +2053,22 @@ by flatness, and for the same reason $\mathrm{B}'$ is union of the filtered incr
 $\mathrm{B}'_\alpha$ and $\mathrm{C}'$ union of the filtered increasing family of the $\mathrm{C}'_\alpha$. If one proves that $\mathrm{C}'_\alpha$
 is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'_\alpha$, it will follow immediately that $\mathrm{C}'$ is the integral
 closure of $\mathrm{A}'$ in $\mathrm{B}'$. One can therefore restrict to the case where $\mathrm{B}$ is an $\mathrm{A}$-algebra of
-finite type; let $\mathfrak{q}_i$ $(1\leqslant i\leqslant n)$ be its minimal prime ideals; as $\mathrm{B}$
+finite type, hence Noetherian; let $\mathfrak{q}_i$ $(1\leqslant i\leqslant n)$ be its minimal prime ideals; as $\mathrm{B}$
 is supposed \emph{reduced}, it is identified with a \emph{subring} of the product $\mathrm{B}_0$ of the $\mathrm{B}/\mathfrak{q}_i$; if $\mathrm{C}_0$ is the integral closure of $\mathrm{A}$ in $\mathrm{B}_0$, one has $\mathrm{C}=\mathrm{B}\cap\mathrm{C}_0$; if one sets $\mathrm{B}'_0=\mathrm{B}_0\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{C}'_0=\mathrm{C}_0\otimes_\mathrm{A}\mathrm{A}'$, one has,
 by flatness, $\mathrm{C}'=\mathrm{B}'\cap\mathrm{C}'_0$ $(\mathbf{0}_\mathrm{I},~6.1.3)$; it suffices therefore to prove that $\mathrm{C}'_0$ is the integral
-closure of $\mathrm{A}'$ in $\mathrm{B}'_0$. But $\mathrm{C}_0$ is the direct product of the $\mathrm{C}_i$, integral closures of $\mathrm{A}$ in the $\mathrm{B}_i=\mathrm{B}/\mathfrak{q}_i$; hence $\mathrm{C}'_0$ is the direct product of the $\mathrm{C}'_i=\mathrm{C}_i\otimes_\mathrm{A}\mathrm{A}'$ and it suffices to show that $\mathrm{C}'_i$ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'_i=\mathrm{B}_i\otimes_\mathrm{A}\mathrm{A}'$. One is thus reduced to the case where $\mathrm{B}$ is integral and $\mathrm{A}$-algebra of finite type; if $\mathfrak{p}$ is the kernel of the homomorphism $\mathrm{A}\to\mathrm{B}$, one has also $\mathrm{B}'=\mathrm{B}\otimes_{\mathrm{A}/\mathfrak{p}}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')$; as the morphism $\operatorname{Spec}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')\to\operatorname{Spec}(\mathrm{A}/\mathfrak{p})$ is normal, one can replace $\mathrm{A}$ by $\mathrm{A}/\mathfrak{p}$ and $\mathrm{A}'$ by $\mathrm{A}'/\mathfrak{p}\mathrm{A}'$, and suppose hence that $\mathrm{A}\subset\mathrm{B}$.
+closure of $\mathrm{A}'$ in $\mathrm{B}'_0$. But $\mathrm{C}_0$ is the direct product of the $\mathrm{C}_i$, integral closures of $\mathrm{A}$ in the $\mathrm{B}_i=\mathrm{B}/\mathfrak{q}_i$; hence $\mathrm{C}'_0$ is the direct product of the $\mathrm{C}'_i=\mathrm{C}_i\otimes_\mathrm{A}\mathrm{A}'$ and it suffices to show that $\mathrm{C}'_i$ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'_i=\mathrm{B}_i\otimes_\mathrm{A}\mathrm{A}'$. One is thus reduced to the case where $\mathrm{B}$ is integral and an $\mathrm{A}$-algebra of finite type; if $\mathfrak{p}$ is the kernel of the homomorphism $\mathrm{A}\to\mathrm{B}$, one has also $\mathrm{B}'=\mathrm{B}\otimes_{\mathrm{A}/\mathfrak{p}}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')$; as the morphism $\operatorname{Spec}(\mathrm{A}'/\mathfrak{p}\mathrm{A}')\to\operatorname{Spec}(\mathrm{A}/\mathfrak{p})$ is normal, one can replace $\mathrm{A}$ by $\mathrm{A}/\mathfrak{p}$ and $\mathrm{A}'$ by $\mathrm{A}'/\mathfrak{p}\mathrm{A}'$, and suppose hence that $\mathrm{A}\subset\mathrm{B}$.
 
-III) \emph{Case where} $\mathrm{A}$ \emph{is a field,} $\mathrm{B}$ \emph{a field, finite extension of} $\mathrm{A}$ \emph{and such that} $\mathrm{A}$ \emph{is algebraically
+III) \emph{Case where} $\mathrm{A}$ \emph{is a field,} $\mathrm{B}$ \emph{a field, extension of finite type of} $\mathrm{A}$ \emph{and such that} $\mathrm{A}$ \emph{is algebraically
 closed in} $\mathrm{B}$. --- One has then $\mathrm{C}=\mathrm{A}$, and $\mathrm{A}'$ is a Noetherian geometrically
 normal $\mathrm{A}$-algebra, hence a direct product of integrally closed integral rings $\mathrm{A}'_i$, the
 fields of fractions $\mathrm{K}'_i$ of the $\mathrm{A}'_i$ being \emph{separable} extensions of $\mathrm{A}$ $(4.6.1)$. The $\mathrm{A}'$-algebra $\mathrm{B}'$
 is therefore the direct product of the $\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'_i=\mathrm{B}'_i$. One can therefore restrict to the case where $\mathrm{A}'$ is
-integral, its field of fractions $\mathrm{K}'$ being a separable extension of $\mathrm{A}$. Now, as $\mathrm{K}'$
+integral, its field of fractions $\mathrm{K}'$ being a separable extension of $\mathrm{A}$. Now, as $\mathrm{B}$ is a flat $\mathrm{A}$-module,
+$\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'=\mathrm{B}'$ is identified with a subring of $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}'$; as $\mathrm{K}'$
 is a separable extension of $\mathrm{A}$, $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}'$ is reduced $(4.3.7)$, and as furthermore $\mathrm{B}$ is a
-primary extension of $\mathrm{A}$, $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}'$ is integral $(4.3.2)$; it is hence of the same type as $\mathrm{B}'$.
+primary extension of $\mathrm{A}$, $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}'$ is integral $(4.3.2)$; the same is therefore true of $\mathrm{B}'$.
 Let $\mathrm{L}'$ be the field of fractions of $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}'$ (which is also that of $\mathrm{B}'$); it is obviously a
-composed field of $\mathrm{B}(\mathrm{K}')$ of its sub-fields $\mathrm{B}$ and $\mathrm{K}'$; as $\mathrm{A}$ is algebraically closed in $\mathrm{B}$,
+composite field $\mathrm{B}(\mathrm{K}')$ of its sub-fields $\mathrm{B}$ and $\mathrm{K}'$; as $\mathrm{A}$ is algebraically closed in $\mathrm{B}$,
 that $\mathrm{K}'$ is a separable extension of $\mathrm{A}$, and that $\mathrm{B}$ and $\mathrm{K}'$ are linearly disjoint over $\mathrm{A}$,
 $\mathrm{K}'$ is algebraically closed in $\mathrm{B}(\mathrm{K}')=\mathrm{L}'$ (Bourbaki, \emph{Alg.}, chap.~V, \S~9, exerc.~2);
 \emph{a fortiori}, $\mathrm{A}'$, being integrally closed, is integrally closed in $\mathrm{L}'$, hence in $\mathrm{B}'$,
@@ -2104,7 +2079,7 @@ Then $\mathrm{B}'=(\mathrm{A}'\otimes_\mathrm{A}\mathrm{K})\otimes_\mathrm{K}\ma
 hence $\mathrm{B}'$ is a direct product of integral rings; the total ring of fractions $\mathrm{L}'$ of $\mathrm{B}'$
 is then a direct product of finitely many fields. This being so, as $\mathrm{B}$ is the field of
 fractions of $\mathrm{C}$, $\mathrm{B}'$ is a ring of fractions of $\mathrm{C}'$ and $\mathrm{L}'$ is therefore also the total ring of
-fractions of $\mathrm{C}'$. Now $(\mathbf{0},~6.14.1)$ as $\mathrm{C}$ is a normal ring and $\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$
+fractions of $\mathrm{C}'$. Now \sref{IV.6.14.1}, as $\mathrm{C}$ is a normal ring and $\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$
 a normal morphism of Noetherian rings, $\mathrm{C}'$ is a normal ring; but it follows from
 \sref{IV.6.14.1.1} that $\mathrm{C}'$ is then integrally closed in $\mathrm{L}'$, and \emph{a fortiori} in $\mathrm{B}'$, and hence
 is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'$.
@@ -2114,21 +2089,21 @@ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'$.
 V) \emph{End of the proof.} --- By part II), one can suppose that $\mathrm{B}$ is an $\mathrm{A}$-algebra
 integral of finite type containing $\mathrm{A}$. Let $\mathrm{K}$ be the field of fractions of $\mathrm{A}$, $\mathrm{L}$ that of $\mathrm{B}$, which
 is a finite type extension of $\mathrm{K}$. Let $\mathrm{M}$ be the algebraic closure of $\mathrm{K}$ in $\mathrm{L}$, which
-is a finite algebraic extension of $\mathrm{K}$; let $\mathrm{C}_0$ be the integral closure of $\mathrm{A}$ in $\mathrm{M}$,
-which is also the integral closure of $\mathrm{A}$ in $\mathrm{L}$; if one sets
-$\mathrm{C}'_0=\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$, one has hence $\mathrm{C}'=\mathrm{B}'\cap\mathrm{C}'_0$ by flatness $(\mathbf{0}_\mathrm{I},~6.1.3)$. Now, it follows from IV)
+is a \emph{finite} algebraic extension of $\mathrm{K}$; let $\mathrm{C}_0$ be the integral closure of $\mathrm{A}$ in $\mathrm{M}$,
+which is also the integral closure of $\mathrm{A}$ in $\mathrm{L}$; one has therefore $\mathrm{C}=\mathrm{B}\cap\mathrm{C}_0$; if one sets
+$\mathrm{C}'_0=\mathrm{C}_0\otimes_\mathrm{A}\mathrm{A}'$, one has consequently $\mathrm{C}'=\mathrm{B}'\cap\mathrm{C}'_0$ by flatness $(\mathbf{0}_\mathrm{I},~6.1.3)$. Now, it follows from IV)
 that $\mathrm{C}'_0$ is the integral closure of $\mathrm{A}'$ in $\mathrm{M}'=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'$; furthermore, $\mathrm{M}'$ is a Noetherian
 ring and the morphism $\operatorname{Spec}(\mathrm{M}')\to\operatorname{Spec}(\mathrm{M})$ is normal (as we have seen in the
 course of IV)); applying III) to $\mathrm{M}$ and $\mathrm{M}'$ in place of $\mathrm{A}$ and $\mathrm{A}'$ and to $\mathrm{L}$ in place of $\mathrm{B}$, one deduces
-that $\mathrm{C}'_0$ is the integral closure of $\mathrm{A}'$ in $\mathrm{L}'$, and $\mathrm{C}'=\mathrm{C}'_0\cap\mathrm{B}'$ is the integral
-closure of $\mathrm{A}'$ in $\mathrm{L}'$, and hence $\mathrm{C}'$ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'$.
+that $\mathrm{M}'$ is integrally closed in $\mathrm{L}'=\mathrm{L}\otimes_\mathrm{A}\mathrm{A}'$; hence $\mathrm{C}'_0$ is the integral closure of $\mathrm{A}'$ in $\mathrm{L}'$,
+and $\mathrm{C}'=\mathrm{C}'_0\cap\mathrm{B}'$ is the integral closure of $\mathrm{A}'$ in $\mathrm{B}'$.
 \end{proof}
 
 \begin{corollary}[6.14.5]
 \label{IV.6.14.5}
 Let $\mathrm{A}$ be a Noetherian ring, $\mathrm{A}'$ a Noetherian $\mathrm{A}$-algebra
 such that the morphism $\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is normal. Let $\mathrm{B}$, $\mathrm{C}$ be two $\mathrm{A}$-algebras, $\varphi:\mathrm{B}\to\mathrm{C}$
-an $\mathrm{A}$-homomorphism, $\mathrm{D}$ the integral closure of $\mathrm{B}$ in $\mathrm{C}$. If one
+an $\mathrm{A}$-homomorphism making $\mathrm{C}$ a $\mathrm{B}$-algebra, $\mathrm{D}$ the integral closure of $\mathrm{B}$ in $\mathrm{C}$. If one
 sets $\mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{C}'=\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{D}'=\mathrm{D}\otimes_\mathrm{A}\mathrm{A}'$, $\mathrm{D}'$ is the integral closure of $\mathrm{B}'$ in $\mathrm{C}'$.
 \end{corollary}
 
@@ -2143,7 +2118,7 @@ is normal $(6.8.2)$; one can therefore apply \sref{IV.6.14.4} by replacing $\mat
 $\mathrm{B}'_\lambda$ and $\mathrm{C}$ respectively, whence the corollary.
 \end{proof}
 
-One can for example apply \sref{IV.6.14.5} when $\mathrm{A}$ is its local ring \emph{excellent}
+One can for example apply \sref{IV.6.14.5} when $\mathrm{A}$ is an \emph{excellent local} ring
 and $\mathrm{A}'$ its completion $\widehat{\mathrm{A}}$, since in this case $\operatorname{Spec}(\mathrm{A}')\to\operatorname{Spec}(\mathrm{A})$ is a regular
 morphism $(7.8.2)$.
 
@@ -2153,8 +2128,8 @@ morphism $(7.8.2)$.
 \begin{env}[6.15.1]
 \label{IV.6.15.1}
 We shall say that a prescheme $\mathrm{X}$ is \emph{unibranch} (resp.\ \emph{geometrically
-unibranch}) at a point $x$, or that the point $x$ is unibranch (resp.\ geometrically unibranch)
-in $\mathrm{X}$ if the local ring $\sh{O}_{\mathrm{X},x}$ is unibranch (resp.\ geometrically unibranch) $(\mathbf{0},~23.2.1)$;
+unibranch}) at a point $x$, or that the point $x$ is \emph{unibranch} (resp.\ \emph{geometrically unibranch})
+in $\mathrm{X}$ if the local ring $\sh{O}_{\mathrm{X},x}$ is \emph{unibranch} (resp.\ \emph{geometrically unibranch}) $(\mathbf{0},~23.2.1)$;
 we say that $\mathrm{X}$ is \emph{unibranch} (resp.\ \emph{geometrically unibranch}) if it is so at every point. It
 follows from this definition that, for $\mathrm{X}$ to be unibranch (resp.\ geometrically
 unibranch) at a point, it is necessary and it suffices that $\mathrm{X}_{\mathrm{red}}$ be so at this point.
@@ -2164,8 +2139,8 @@ unibranch) at a point, it is necessary and it suffices that $\mathrm{X}_{\mathrm
 \label{IV.6.15.2}
 One must take care that with the definitions of \sref{IV.6.15.1}, a \emph{local
 ring} $\mathrm{A}$ can be unibranch (resp.\ geometrically unibranch) \emph{without} $\operatorname{Spec}(\mathrm{A})$
-being so; in other terms, it can happen that there are prime ideals $\mathfrak{p}$ of $\mathrm{A}$ such
-that $\mathrm{A}_\mathfrak{p}$ is not unibranch; it amounts to the same to say that on a prescheme,
+\emph{being so}; in other terms, it can happen that there are prime ideals $\mathfrak{p}$ of $\mathrm{A}$ such
+that $\mathrm{A}_\mathfrak{p}$ is not unibranch; it also amounts to the same to say that on a prescheme,
 the notion of geometrically unibranch point \emph{is not stable by generization}. We
 shall see this on the following example.
 \end{env}
@@ -2173,18 +2148,18 @@ shall see this on the following example.
 \oldpage[IV-2]{177}
 
 Let $\mathrm{K}$ be an algebraically closed field of characteristic $0$, $\mathrm{B}$ the integral ring
-$\mathrm{K}[\mathrm{U},\mathrm{V},\mathrm{W}]/(\mathrm{U}^2(\mathrm{U}-\mathrm{W})-\mathrm{V}^2(\mathrm{U}+\mathrm{W}))$ ($\mathrm{U}$, $\mathrm{V}$, $\mathrm{W}$ indeterminates) so that
+$\mathrm{K}[\mathrm{U},\mathrm{V},\mathrm{W}]/(\mathrm{U}^2(\mathrm{U}\setmin\mathrm{W})\setmin\mathrm{V}^2(\mathrm{U}+\mathrm{W}))$ ($\mathrm{U}$, $\mathrm{V}$, $\mathrm{W}$ indeterminates) so that
 $\mathrm{Y}=\operatorname{Spec}(\mathrm{B})$ is a ``cone with vertex the origin, having a double generatrix''.
 We shall designate by $u$, $v$, $w$ the images of $\mathrm{U}$, $\mathrm{V}$, $\mathrm{W}$ in $\mathrm{B}$. Let $\mathrm{R}$ be the field of
 fractions of $\mathrm{B}$, and consider in $\mathrm{R}$ the element $t=v(u+w)/u$, which does not belong
 to $\mathrm{B}$; let us show that $\mathrm{C}=\mathrm{B}[t]$ is the \emph{integral closure} of $\mathrm{B}$. One has indeed $t^2=u^2\setmin w^2$,
 hence $t$ is integral over $\mathrm{B}$, and $v=tu/(u+w)$; the ring $\mathrm{C}_1=\mathrm{K}[t,u,w]$ is integrally
-closed, for it is isomorphic to $\mathrm{K}[\mathrm{T},\mathrm{U},\mathrm{W}]/(\mathrm{T}^2-\mathrm{U}^2+\mathrm{W}^2)$ and is therefore the integral
+closed, for it is isomorphic to $\mathrm{K}[\mathrm{T},\mathrm{U},\mathrm{W}]/(\mathrm{T}^2\setmin\mathrm{U}^2+\mathrm{W}^2)$ and is therefore the integral
 closure of the integrally closed ring $\mathrm{K}[\mathrm{U},\mathrm{W}]$ in the quadratic extension
 $\mathrm{K}(\mathrm{U},\mathrm{W})(\sqrt{\mathrm{U}^2-\mathrm{W}^2})$ of its field of fractions (Bourbaki, \emph{Alg.~comm.}, chap.~V, \S~1,
 no~6, prop.~18). The ring of fractions $\mathrm{K}[t,u,w,1/(u+w)]$ of $\mathrm{C}_1$ is hence
 integrally closed. Set $\mathrm{C}_2=\mathrm{K}[t,v,w]$ and $a=t-v$. The preceding identities give
-$t(t\setmin v)^2\setmin w^2(2v-t)=0$, or $t(a^2-w^2)=-2aw^2$.
+$t(t\setmin v)^2\setmin w^2(2v\setmin t)=0$, or $t(a^2-w^2)=-2aw^2$.
 In $(\mathrm{C}_2)_a$, the identity $(1-t/(2a))(a^2-w^2)=a^2$ shows that
 $a^2-w^2$ is invertible. Thus
 \[
@@ -2205,10 +2180,10 @@ also geometrically unibranch since its residue field $\mathrm{K}$ is algebraical
 But in $\mathrm{A}$ the prime ideal $\mathfrak{p}$ generated by $u$ and $v$ is such that the integral
 closure $\mathrm{A}_\mathfrak{p}[t]$ of $\mathrm{A}_\mathfrak{p}$ is not a local ring.
 
-We shall see further below $(9.7.10)$ that when $\mathrm{X}$ is a locally Noetherian prescheme
+We shall however see further below $(9.7.10)$ that when $\mathrm{X}$ is a locally Noetherian prescheme
 such that, if $\mathrm{X}'$ is the normalization of $\mathrm{X}_{\mathrm{red}}$, the canonical morphism $\mathrm{X}'\to\mathrm{X}$
 is \emph{finite} (which will be the case if $\mathrm{X}$ is such that the rings of its affine open subsets are
-\emph{universally Japanese} $(\mathbf{0},~23.1.1)$)), then the set of points $x\in\mathrm{X}$ where $\mathrm{X}$ is geometrically
+\emph{universally Japanese} $(\mathbf{0},~23.1.1)$), then the set of points $x\in\mathrm{X}$ where $\mathrm{X}$ is geometrically
 unibranch is \emph{locally constructible}.
 
 \begin{env}[6.15.3]
@@ -2216,7 +2191,7 @@ unibranch is \emph{locally constructible}.
 We shall say for short that a morphism $f:\mathrm{X}\to\mathrm{Y}$ is \emph{radicial at a
 point} $y\in\mathrm{Y}$, if $f^{-1}(y)$ is empty or reduced to a single point $x$ and if $\boldsymbol{k}(x)$ is a radicial extension
 of $\boldsymbol{k}(y)$. It amounts to the same to say that $f$ is radicial at every point of $\mathrm{Y}$
-or that $f$ is radicial $(\mathbf{I},~3.5.8)$. If $g:f^{-1}(y)\to\operatorname{Spec}(\boldsymbol{k}(y))$ is the base change inverse
+or that $f$ is radicial $(\mathbf{I},~3.5.8)$. If $g:f^{-1}(y)\to\operatorname{Spec}(\boldsymbol{k}(y))$ is the morphism inverse
 image of $f$ by the base change $\operatorname{Spec}(\boldsymbol{k}(y))\to\mathrm{Y}$, it amounts to the same to say that $f$
 is radicial at the point $y\in\mathrm{Y}$, or that $g$ is \emph{radicial}.
 \end{env}
@@ -2227,7 +2202,7 @@ is radicial at the point $y\in\mathrm{Y}$, or that $g$ is \emph{radicial}.
 at a point $y$ and $g$ radicial at the point $z=g(y)$, then $g\circ f$ is radicial at the point $g(y)$. The converse
 is true if $f$ is surjective.
 
-(ii) Let $f:\mathrm{X}\to\mathrm{Y}$, $h:\mathrm{Y}'\to\mathrm{Y}$ be two morphisms, and let $f'=f_{|\mathrm{Y}'}:\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'\to\mathrm{Y}'$.
+(ii) Let $f:\mathrm{X}\to\mathrm{Y}$, $h:\mathrm{Y}'\to\mathrm{Y}$ be two morphisms, and let $f'=f_{(\mathrm{Y}')}:\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'\to\mathrm{Y}'$.
 Let $y'\in\mathrm{Y}'$ and $y=h(y')$; then for $f$ to be radicial at the point $y$, it is necessary and it suffices that $f'$ be
 radicial at the point $y'$.
 \end{lemma}
@@ -2248,19 +2223,19 @@ $(\mathbf{I},~3.6.4)$, $g'$ is the inverse image of $g$ and the assertion reduce
 \end{proof}
 
 Suppose then $\mathrm{X}$ a prescheme \emph{reduced} not having more than a \emph{finite} number of irreducible components,
-and let $\mathrm{X}'$ be its \emph{normalization} $(\mathbf{II},~6.3.8)$; we say (\emph{loc.~cit.}) that the canonical morphism
+and let $\mathrm{X}'$ be its \emph{normalization} $(\mathbf{II},~6.3.8)$; we know (\emph{loc.~cit.}) that the canonical morphism
 $f:\mathrm{X}'\to\mathrm{X}$ is surjective. The definition \sref{IV.6.15.1} shows then that for $\mathrm{X}$ to be geometrically
 unibranch at a point, it is necessary and it suffices that $f$ be \emph{radicial at this point}; for
 $\mathrm{X}$ to be geometrically unibranch, it is necessary and it suffices that $f$ be \emph{radicial}.
 
 \begin{env}[6.15.4]
 \label{IV.6.15.4}
-Generalizing the definition given in $(\mathbf{I},~2.2.9)$, we shall say,
-for two reduced preschemes $\mathrm{X}$, $\mathrm{Y}$, a morphism $f:\mathrm{X}\to\mathrm{Y}$ is \emph{birational} if the restriction
+Generalizing the definition given in $(\mathbf{I},~2.2.9)$, we shall say that,
+for two \emph{reduced} preschemes $\mathrm{X}$, $\mathrm{Y}$, a morphism $f:\mathrm{X}\to\mathrm{Y}$ is \emph{birational} if the restriction
 of $f$ to the set of maximal points of $\mathrm{X}$ is a \emph{bijection} of this set onto
 the set of maximal points of $\mathrm{Y}$, and if, for every maximal point $y$ of $\mathrm{Y}$, the
 morphism $\mathrm{X}\times_\mathrm{Y}\operatorname{Spec}(\sh{O}_y)\to\operatorname{Spec}(\sh{O}_y)$ induced by $f$ is an isomorphism (in other words,
-if for the fibre $f^{-1}(y)$ reduced to a single point $x$ (maximal in $\mathrm{X}$) and if the homomorphism
+if the fibre $f^{-1}(y)$ is reduced to a single point $x$ (maximal in $\mathrm{X}$) and if the homomorphism
 $\boldsymbol{k}(y)\to\boldsymbol{k}(x)$ induced by $f$ is bijective); this notion reduces to that of $(\mathbf{I},~2.2.9)$ when $\mathrm{X}$
 and $\mathrm{Y}$ have only a \emph{finite} number of irreducible components.
 \end{env}
@@ -2268,16 +2243,16 @@ and $\mathrm{Y}$ have only a \emph{finite} number of irreducible components.
 \begin{lemma}[6.15.4.1]
 \label{IV.6.15.4.1}
 Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism, $g:\mathrm{Y}'\to\mathrm{Y}$ a flat morphism,
-$\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $f'=f_{|\mathrm{Y}'}:\mathrm{X}'\to\mathrm{Y}'$. If $f_{\mathrm{red}}$ is birational, so is $f'_{\mathrm{red}}$.
+$\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$. If $f_{\mathrm{red}}$ is birational, so is $f'_{\mathrm{red}}$.
 \end{lemma}
 
 \begin{proof}
 Indeed, if $y'$ is a maximal point of $\mathrm{Y}'$, one knows $(2.3.4,~\text{(ii)})$ that $y=g(y')$ is
-a maximal point of $\mathrm{Y}$; there is a unique point $x$ of $\mathrm{X}$ in $f^{-1}(y)$ by hypothesis; since moreover
+a maximal point of $\mathrm{Y}$; there is a unique point $x$ of $\mathrm{X}$ in $f^{-1}(y)$ by hypothesis; moreover $x$ is maximal in $\mathrm{X}$ and such that
 $\boldsymbol{k}(x)=\boldsymbol{k}(y)$. It follows therefore from $(\mathbf{I},~3.4.9)$ that
-$f'^{-1}(y')$ is reduced to a single point $x'$ and that $\boldsymbol{k}(x')=\boldsymbol{k}(y')$. We conclude from the reasoning
-that, noting $(2.3.7,~\text{(ii)})$, every irreducible component of $\mathrm{X}'$ dominates
-one irreducible component of $\mathrm{Y}'$.
+$f'^{-1}(y')$ is reduced to a single point $x'$ and that $\boldsymbol{k}(x')=\boldsymbol{k}(y')$. One concludes the reasoning
+by remarking that, by $(2.3.7,~\text{(ii)})$, every irreducible component of $\mathrm{X}'$ dominates
+an irreducible component of $\mathrm{Y}'$.
 \end{proof}
 
 \begin{proposition}[6.15.5]
@@ -2294,33 +2269,23 @@ unibranch and that $f$ be radicial.
 
 \begin{proof}
 One can obviously restrict to the case where $\mathrm{X}$ and $\mathrm{Y}$ are \emph{reduced}; the fact that $f$ is
-\emph{surjective} follows from the fact that $f$ is closed $(\mathbf{II},~6.1.10)$ and that $f(\mathrm{X})$ contains
-all the maximal points of $\mathrm{Y}$. This also shows immediately that (i) implies (ii).
+\emph{surjective} follows from the fact that $f$ is a closed morphism $(\mathbf{II},~6.1.10)$ and that $f(\mathrm{X})$ contains
+by hypothesis all the maximal points of $\mathrm{Y}$. This shows at once that (i) implies (ii).
 Using $(\mathbf{I},~3.6.5)$ and $(\mathbf{II},~6.1.5)$, one can suppose, to prove (i), that $\mathrm{Y}=\operatorname{Spec}(\sh{O}_{\mathrm{Y},y})$,
 \oldpage[IV-2]{179}
-in other words $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ (with $\mathrm{A}=\sh{O}_{\mathrm{X},x}$) is a local scheme. Note that $\mathrm{A}'=\sh{O}_{\mathrm{X}',x'}$
-is by hypothesis a faithfully flat $\mathrm{A}$-module, hence containing $\mathrm{A}$, and hence
-the hypothesis that $\mathrm{X}$ is geometrically unibranch at the point $x$, or the hypothesis that $\mathrm{X}'$ is
-geometrically unibranch at the point $x'$, both imply that $\mathrm{A}$ is a local ring
-\emph{integral} (since $\mathrm{A}$, being reduced, is also isomorphic to a subring of $\mathrm{A}'_{\mathrm{red}}$).
-Let $\mathrm{K}$ be the field of fractions of $\mathrm{A}$, $\mathrm{B}$ the integral closure of $\mathrm{A}$, and set $\mathrm{Y}=\operatorname{Spec}(\mathrm{B})$;
-it amounts to the same to say that $\mathrm{X}$ is geometrically unibranch at the point $x$ or that
-the morphism $g:\mathrm{Y}\to\mathrm{X}$ is radicial at the point $x$ $(6.15.3)$. Let $\mathrm{Y}'=\mathrm{Y}\otimes_k k'=\mathrm{Y}\times_\mathrm{X}\mathrm{X}'$
-so that one has the commutative diagram
-\[
-\xymatrix{
-  \mathrm{Y} \ar[r]^{h} & \mathrm{Y}' \\
-  \mathrm{X} \ar[u]^{g} \ar[r]_{f} & \mathrm{X}' \ar[u]_{g'}
-}
-\]
-
-Note that $f$ is a flat morphism; hence $(6.15.4.1)$ the entire morphism $g'_{\mathrm{red}}$ is
-birational. As $\mathrm{Y}$ is normal, $\mathrm{Y}'$ is geometrically unibranch
-$(6.15.6)$. For $\mathrm{X}$ to be geometrically unibranch at the point $x$, it is necessary and it suffices therefore
-that $g'$ be radicial at the point $x'$ $(6.15.5)$. Now, $x$ is the projection of $x'$ in $\mathrm{X}$ and it is
-equivalent to say that $g$ is radicial at the point $x$ or that $g'$ is radicial at the point $x'$
-$(6.15.3.1)$; finally, for $\mathrm{X}$ to be geometrically unibranch at this point, it is necessary and it
-suffices that $g$ be radicial at this point, whence the proposition.
+in other words $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is \emph{local}. As $f$ is affine, one also has
+$\mathrm{X}=\operatorname{Spec}(\mathrm{B})$. If $\mathrm{A}$ is geometrically unibranch, it is \emph{integral}, hence so is $\mathrm{B}$
+since $f$ is birational; conversely, if $f$ is radicial at the point $y$ and $\mathrm{X}$ geometrically unibranch at the
+point $x$, $\mathrm{B}$ has only one maximal ideal (since it is integral over $\mathrm{A}$ and every maximal ideal of $\mathrm{B}$
+therefore lies over that of $\mathrm{A}$), in other words $\mathrm{B}$ is a \emph{local} ring, and to say that $\mathrm{X}$ is
+geometrically unibranch at the point $x$ means that $\mathrm{B}$ is geometrically unibranch, hence \emph{integral}.
+As $f$ is dominant by hypothesis and $\mathrm{A}$ is reduced, one concludes that $\mathrm{A}\subset\mathrm{B}$ $(\mathbf{I},~1.2.7)$,
+hence $\mathrm{A}$ is also \emph{integral}. Thus, to prove (i), one can restrict to the case where $\mathrm{A}$ and $\mathrm{B}$
+are local and integral, $\mathrm{A}$ being contained in $\mathrm{B}$ and having the same field of fractions, and consequently
+(since $\mathrm{B}$ is integral over $\mathrm{A}$) the same \emph{integral closure} $\mathrm{C}$. But then the assertion follows
+from $(6.15.3.1,~\text{(i)})$ applied to the morphisms $\operatorname{Spec}(\mathrm{C})\to\operatorname{Spec}(\mathrm{B})$ and
+$\operatorname{Spec}(\mathrm{B})\to\operatorname{Spec}(\mathrm{A})$, in view of the interpretation given in $(6.15.3)$ of the
+property of being geometrically unibranch at a point.
 \end{proof}
 
 \begin{proposition}[6.15.6]
@@ -2336,18 +2301,18 @@ of $k''$ and $k''$ a separable extension of $k$. One knows $(6.14.2)$ that $\mat
 as $\mathrm{X}\otimes_k k'=\mathrm{X}''\otimes_{k''}k'$, one sees that one can restrict to the case where the extension $k'$ of $k$
 is \emph{radicial}. Furthermore $(\mathbf{I},~3.6.5)$, one can suppose that $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$, where $\mathrm{A}$ is a
 \emph{local integral and integrally closed} ring (since $\mathrm{X}$ is normal). The projection morphism $f:\mathrm{X}'\to\mathrm{X}$
-is a universal homeomorphism, since $\operatorname{Spec}(k')\to\operatorname{Spec}(k)$ is a universal homeomorphism
+is a homeomorphism, since $\operatorname{Spec}(k')\to\operatorname{Spec}(k)$ is a universal homeomorphism
 $(2.4.5)$; as $\mathrm{X}'=\operatorname{Spec}(\mathrm{A}')$ where $\mathrm{A}'=\mathrm{A}\otimes_k k'$, one sees therefore that $\mathrm{A}'$ is a
 local ring whose nilradical $\mathfrak{N}'$ is the unique minimal prime ideal, whence $\mathrm{X}'_{\mathrm{red}}=\operatorname{Spec}(\mathrm{A}'_0)$,
 where $\mathrm{A}'_0=\mathrm{A}'/\mathfrak{N}'$ is a local integral ring; furthermore, if $\mathrm{K}$ is the field of fractions of $\mathrm{A}$,
 the field of fractions $\mathrm{K}'_0$ of $\mathrm{A}'_0$ is radicial over $\mathrm{K}$, since the morphism $f$ is radicial.
-But $\mathrm{A}'_0$ is integer over $\mathrm{A}$, its integral closure $\mathrm{B}$ is also the integral closure of $\mathrm{A}$,
-and one knows (Bourbaki, \emph{Alg.~comm.}, chap.~V,
+As $\mathrm{A}'_0$ is integral over $\mathrm{A}$, its integral closure $\mathrm{B}$ is also the integral closure of $\mathrm{A}$ in $\mathrm{K}'_0$.
+But as $\mathrm{A}$ is integrally closed, one knows (Bourbaki, \emph{Alg.~comm.}, chap.~V,
 \S~2, no~3, lemma~3) that $\mathrm{B}$ is the set of $x\in\mathrm{K}'_0$ of which a power $p^m$-th (for $m$
 large enough) belongs to $\mathrm{A}$ ($p$ being the characteristic exponent of $\mathrm{K}$); furthermore there exists
 only a single prime ideal of $\mathrm{B}$ lying over every prime ideal of $\mathrm{A}$; in particular $\mathrm{B}$
 is a local ring and its residue field is a radicial extension of that of $\mathrm{A}$, and
-\emph{a fortiori} of the same type for $\mathrm{A}'_0$, which proves that $\mathrm{A}'_0$ is geometrically unibranch, and hence
+\emph{a fortiori} of that of $\mathrm{A}'_0$, which proves that $\mathrm{A}'_0$ is geometrically unibranch, and hence
 so is $\mathrm{X}'$ as well.
 \end{proof}
 
@@ -2364,19 +2329,19 @@ The second assertion follows from the first and from the fact that the projectio
 is a surjective morphism. To prove the first assertion, one can, by virtue of
 $(\mathbf{I},~5.1.8)$, restrict to the case where $\mathrm{X}$ is reduced, and by virtue of $(\mathbf{I},~3.6.5)$, to the case
 \oldpage[IV-2]{180}
-where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$ (with $\mathrm{A}=\sh{O}_{\mathrm{X},x}$) is a local scheme. Note that $\mathrm{A}'=\sh{O}_{\mathrm{X}',x'}$ is
+where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$ (with $\mathrm{A}=\sh{O}_{\mathrm{X},x}$) is a \emph{local} scheme. Note that $\mathrm{A}'=\sh{O}_{\mathrm{X}',x'}$ is
 by hypothesis a faithfully flat $\mathrm{A}$-module, hence containing $\mathrm{A}$, and hence
 the hypothesis that $\mathrm{X}$ is geometrically unibranch at the point $x$, or the hypothesis that $\mathrm{X}'$ is
-geometrically unibranch at the point $x'$, both imply that $\mathrm{A}$ is a local ring
-\emph{integral} (since $\mathrm{A}$, being reduced, is also isomorphic to a subring of $\mathrm{A}'_{\mathrm{red}}$).
+geometrically unibranch at the point $x'$, both imply that $\mathrm{A}$ is an \emph{integral}
+local ring (since $\mathrm{A}$, being reduced, is also isomorphic to a subring of $\mathrm{A}'_{\mathrm{red}}$).
 Let $\mathrm{K}$ be the field of fractions of $\mathrm{A}$, $\mathrm{B}$ the integral closure of $\mathrm{A}$, and set $\mathrm{Y}=\operatorname{Spec}(\mathrm{B})$;
 it amounts to the same to say that $\mathrm{X}$ is geometrically unibranch at the point $x$ or that
 the morphism $g:\mathrm{Y}\to\mathrm{X}$ is radicial at the point $x$ $(6.15.3)$. Let $\mathrm{Y}'=\mathrm{Y}\otimes_k k'=\mathrm{Y}\times_\mathrm{X}\mathrm{X}'$
 so that one has the commutative diagram
 \[
 \xymatrix{
-  \mathrm{Y} \ar[d]_{g} & \mathrm{Y}' \ar[l]^{h} \ar[d]_{g'} \\
-  \mathrm{X} & \mathrm{X}' \ar[l]_{f}
+  \mathrm{Y} \ar[d]_{g} & \mathrm{Y}' \ar[l]_{h} \ar[d]_{g'} \\
+  \mathrm{X} & \mathrm{X}' \ar[l]^{f}
 }
 \]
 
@@ -2391,30 +2356,30 @@ whence the proposition.
 
 \begin{lemma}[6.15.8]
 \label{IV.6.15.8}
-Let $k$ be a separably closed field (in other words, such that the
-algebraic closure of $k$ is \emph{radicial} over $k$), $\mathrm{X}$ a $k$-prescheme locally of finite type over $k$,
-$x$ a closed point of $\mathrm{X}$. If $\mathrm{X}$ is unibranch at the point $x$, it is \emph{geometrically unibranch} at this point.
+Let $k$ be a separably closed field \textup{(in other words, such that the
+algebraic closure of $k$ is \emph{radicial} over $k$)}, $\mathrm{X}$ a $k$-prescheme locally of finite type over $k$,
+$x$ a \emph{closed} point of $\mathrm{X}$. If $\mathrm{X}$ is unibranch at the point $x$, it is geometrically unibranch at this point.
 \end{lemma}
 
 \begin{proof}
 Indeed, one knows $(\mathbf{I},~6.4.2)$ that $\boldsymbol{k}(x)$ is an \emph{algebraic} extension of $k$; as the
-residue field of the integral closure $(\sh{O}_x)_{\mathrm{red}}$ (integral closure which is by hypothesis
-a local ring) is an algebraic extension of $\boldsymbol{k}(x)$, it is a radicial extension of $k$
+residue field of the integral closure of $(\sh{O}_x)_{\mathrm{red}}$ (integral closure which is by hypothesis
+a local ring) is an algebraic extension of $\boldsymbol{k}(x)$, it is a \emph{radicial} extension of $k$
 by hypothesis, hence also of $\boldsymbol{k}(x)$.
 \end{proof}
 
 \begin{corollary}[6.15.9]
 \label{IV.6.15.9}
 Let $k$ be a field, $\mathrm{X}$ a $k$-prescheme locally of finite type over $k$,
-$k'$ a separable extension close of $k$ (in other words, such that the algebraic closure of $k$
-is radicial over $k'$); then, for $\mathrm{X}$ to be geometrically unibranch, it is necessary and it suffices
+$k'$ a separably closed extension of $k$ \textup{(in other words, such that the algebraic closure of $k'$
+is radicial over $k'$)}; then, for $\mathrm{X}$ to be geometrically unibranch, it is necessary and it suffices
 that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ be unibranch.
 \end{corollary}
 
 \begin{proof}
 In view of \sref{IV.6.15.7}, one is reduced to proving that if $\mathrm{X}$ is unibranch and $k$
 separably closed, then $\mathrm{X}$ is geometrically unibranch. Now, $\mathrm{X}$ is geometrically
-unibranch at its closed points \sref{IV.6.15.8}; we conclude from $(10.4.9)$ that $\mathrm{X}$
+unibranch at its closed points \sref{IV.6.15.8}; we shall conclude in $(10.4.9)$ that $\mathrm{X}$
 is geometrically unibranch at all its points, relying on the fact (pointed out
 at the end of \sref{IV.6.15.2}) that the set of points where $\mathrm{X}$ is geometrically unibranch
 is constructible (of course, the corollary \sref{IV.6.15.9} will not be used before that point).
@@ -2453,8 +2418,8 @@ by hypothesis a local ring; set $\mathrm{Z}=\operatorname{Spec}(\mathrm{C})$, $\
 so that one has the commutative diagram
 \[
 \xymatrix{
-  \mathrm{Z} \ar[d]_{l} & \mathrm{Z}' \ar[l] \ar[d]^{f'} \\
-  \mathrm{X} & \mathrm{X}' \ar[l]_{p}
+  \mathrm{Z} \ar[d]_{f} & \mathrm{Z}' \ar[l] \ar[d]^{f'} \\
+  \mathrm{X} & \mathrm{X}' \ar[l]^{p}
 }
 \]
 
@@ -2479,6 +2444,7 @@ when $\mathrm{B}$ is.
 ``geometrically unibranch'' by ``integral'' in the statement, even if the residue field
 $\boldsymbol{k}(x)$ is algebraically closed and the morphism $g$ is \'etale.
 
+\oldpage[IV-2]{182}
 Nor can ``geometrically unibranch'' be replaced there by ``unibranch''.
 Indeed, let $\mathrm{A}=\mathbb{R}[[\mathrm{U},\mathrm{V}]]/(\mathrm{U}^2+\mathrm{V}^2)$
 and let $u,v$ be the images of $\mathrm{U},\mathrm{V}$ in $\mathrm{A}$; the maximal
@@ -2489,5 +2455,5 @@ $\mathbb{C}[[\mathrm{U}]]$.
 Since the residue field of $\mathbb{C}[[\mathrm{U}]]$ is $\mathbb{C}$,
 $\mathrm{A}$ is unibranch but not geometrically unibranch.
 Yet $\mathrm{A}\otimes_{\mathbb{R}}\mathbb{C}$ is not integral: it is isomorphic to $\mathbb{C}[[\mathrm{U},\mathrm{V}]]/
-((\mathrm{U}-i\mathrm{V})(\mathrm{U}+i\mathrm{V}))$.
+((\mathrm{U}\setmin i\mathrm{V})(\mathrm{U}+i\mathrm{V}))$.
 \end{remarks}

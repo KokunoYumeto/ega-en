@@ -11,13 +11,13 @@ We shall be concerned here with the case $n=2$.
 \begin{proposition}[5.10.14]
 \label{IV.5.10.14}
 Let $X$ be a locally Noetherian prescheme, and let $\sh F$ be a
-coherent $\sh O_X$-module whose support is $X$.
+coherent $\sh O_X$-Module whose support is $X$.
 \begin{enumerate}[{\rm(i)}]
-  \item The module $\sh F$ satisfies $(\mathrm S_1)$ if and only
-  if it is $Z^{(1)}$-pure.
-  \item The module $\sh F$ satisfies $(\mathrm S_2)$ if and only
-  if it is $Z^{(2)}$-closed and $Z^{(1)}$-pure, or equivalently,
-  if it is $Z^{(2)}$-closed and has no associated prime cycle of
+  \item For $\sh F$ to satisfy $(\mathrm S_1)$, it is necessary and
+  sufficient that it be $Z^{(1)}$-pure.
+  \item For $\sh F$ to satisfy $(\mathrm S_2)$, it is necessary and
+  sufficient that it be $Z^{(2)}$-closed and $Z^{(1)}$-pure, or again
+  that it be $Z^{(2)}$-closed and have no associated prime cycle of
   codimension $1$.
 \end{enumerate}
 \end{proposition}
@@ -60,11 +60,11 @@ satisfies $(\mathrm S_1)$ by {\rm(i)}; as observed above, all its
 associated prime cycles then have codimension $0$, so the same
 argument applies.
 
-Notice that a module may be $Z^{(2)}$-closed without satisfying
-$(\mathrm S_1)$.  For example, if $\dim X=1$, then
-$Z^{(2)}=\varnothing$ and every $\sh O_X$-module is
-$Z^{(2)}$-closed, even though a module may have embedded
-associated prime cycles.
+Note that it can happen that $\sh F$ is $Z^{(2)}$-closed and does not
+satisfy $(\mathrm S_1)$: this is the case for example when $X$ has
+dimension $1$ (for then $Z^{(2)}=\varnothing$, and every
+$\sh O_X$-Module is $Z^{(2)}$-closed) and has embedded associated
+prime cycles.
 
 We recall that Chapter~III gives, by means of local cohomology, a
 characterization of $(\mathrm S_n)$ for every $n\geq1$ that
@@ -74,7 +74,7 @@ generalizes \sref{IV.5.10.14}.
 \begin{corollary}[5.10.15]
 \label{IV.5.10.15}
 Let $X$ be a locally Noetherian prescheme, and let $\sh F$ be a
-coherent $\sh O_X$-module with support $X$.  Suppose that $\sh F$
+coherent $\sh O_X$-Module with support $X$.  Suppose that $\sh F$
 has no associated prime cycle of codimension $1$ and that $\sh F'=\sh H^0_{X/Z^{(2)}}(\sh F)$
 is coherent.  Then:
 \begin{enumerate}[{\rm(i)}]
@@ -83,7 +83,7 @@ is coherent.  Then:
 \oldpage[IV-2]{120}
 
   \item The set $U$ of points $x\in X$ at which $\sh F$
-  satisfies $(\mathrm S_2)$ \sref{IV.5.7.2} is open in $X$, and $\codim(X-U,X)\geq2$.
+  satisfies $(\mathrm S_2)$ \sref{IV.5.7.2} is open in $X$, and $\codim(X\setmin U,X)\geq2$.
 \end{enumerate}
 \end{corollary}
 
@@ -127,7 +127,7 @@ codimension $1$.
   an isomorphism.  This condition always holds if $\codim\bigl(\overline{\{x\}},X\bigr)\leq1$.
   \item Suppose in addition that $g$ is finite (see
   \sref{IV.5.11.2} for sufficient conditions).  Then the set
-  $U$ of points at which $X$ satisfies $(\mathrm S_2)$ is open, $\codim(X-U,X)\geq2$,
+  $U$ of points at which $X$ satisfies $(\mathrm S_2)$ is open, $\codim(X\setmin U,X)\geq2$,
   and $U$ is the largest open subset of $X$ for which
   $g^{-1}(U)\to U$ is an isomorphism.
   \item Under the hypotheses of {\rm(ii)}, $X'$ satisfies
@@ -136,9 +136,9 @@ codimension $1$.
 =
 \codim\bigl(\overline{\{x'\}},X'\bigr)$.
   \item Under the hypotheses of {\rm(ii)}, let $\sh F$ be a
-  coherent $\sh O_X$-module with support $X$, and suppose that
+  coherent $\sh O_X$-Module with support $X$, and suppose that
   $\sh H^0_{X/Z^{(2)}}(\sh F)$ is coherent.  The
-  $\sh O_{X'}$-module $\sh F'$ defined by $g_*(\sh F')=\sh H^0_{X/Z^{(2)}}(\sh F)$
+  $\sh O_{X'}$-Module $\sh F'$ defined by $g_*(\sh F')=\sh H^0_{X/Z^{(2)}}(\sh F)$
   is coherent and satisfies $(\mathrm S_2)$, and its support is
   a union of irreducible components of $X'$.
 \end{enumerate}
@@ -212,7 +212,7 @@ Suppose that $A^{(1)}$ is a finite $A$-algebra.  Then:
   the canonical homomorphism $A_{\mathfrak p}\longrightarrow(A^{(1)})_{\mathfrak p}$
   is bijective is precisely the set of primes for which
   $A_{\mathfrak p}$ satisfies $(\mathrm S_2)$.  The set $U$ is
-  open in $X=\Spec(A)$ and $\codim(X-U,X)\geq2$.
+  open in $X=\Spec(A)$ and $\codim(X\setmin U,X)\geq2$.
   \item For every multiplicative subset $S$ of $A$,
   $(S^{-1}A)^{(1)}$ is a finite $S^{-1}A$-algebra.
   \item Let $B$ be a finite integral $A$-algebra that is an
@@ -240,41 +240,23 @@ Since $A^{(1)}$ is finite over $A$, its localization
 $S^{-1}A^{(1)}$ is finite over $S^{-1}A$.
 
 To prove {\rm(iv)}, put $Y=\Spec(B)$ and let $f:Y\to X$ be the
-structural morphism.  Since $f$ is finite, \sref{IV.5.4.1}
-gives, for every $y\in Y$, $\dim(\sh O_{Y,y})\leq\dim(\sh O_{X,f(y)})$.
-Consequently, if $T=f^{-1}\bigl(Z^{(2)}(X)\bigr)$,
-then $T\supset Z^{(2)}(Y)$.
-
-We claim that $\sh G=
-\sh H^0_{X/Z^{(2)}(X)}\bigl(f_*(\sh O_Y)\bigr)$
-is coherent.  The module $f_*(\sh O_Y)$ corresponds to $B$
-viewed as an $A$-module.  Since $B$ is a finite integral
-$A$-algebra and an integral domain, its field of fractions is
-finite over the field of fractions of $A$; hence $B$ is
-contained in a finite free $A$-module.  By
-\sref{IV.5.9.2}, {\rm(i)}, $\sh G$ is therefore a
-quasi-coherent $\sh O_X$-submodule of $\bigl(\sh H^0_{X/Z^{(2)}(X)}(\sh O_X)\bigr)^n$
-for a suitable $n$.  The latter module is coherent by
-hypothesis, and hence so is $\sh G$.
-
-By the definition \sref{IV.5.9.1.2}, there is an isomorphism
-\[
-  \sh G\simeq
-  f_*\bigl(\sh H^0_{Y/T}(\sh O_Y)\bigr).
-\]
-It follows, in particular, that
-$\sh H^0_{Y/T}(\sh O_Y)$ is a coherent $\sh O_Y$-module.
-Applying \sref{IV.5.10.10}, {\rm(ii)}, to $\sh O_Y$ and the
-generic point of $Y$, we obtain $\codim(T,Y)\geq2$,
-that is, $T\subset Z^{(2)}(Y)$.  Thus
-$T=Z^{(2)}(Y)$.  Formula \sref{IV.5.9.3.1} now identifies the
-corresponding algebra with $B^{(1)}$, proving that $B^{(1)}$ is
-finite over $B$.  Finally, if $\mathfrak q$ has height $1$, then
-$\mathfrak q\notin T$, so
-$\mathfrak q\cap A\notin Z^{(2)}(X)$.  Incomparability for the
-integral extension $A\subset B$ excludes
-$\mathfrak q\cap A=(0)$; hence
-\[
-  \operatorname{ht}(\mathfrak q\cap A)=1.
-\]
+structural morphism; since it is finite, it follows from \sref{IV.5.4.1}
+that for every $y\in Y$ we have
+$\dim(\sh O_{Y,y})\leq\dim(\sh O_{X,f(y)})$; hence, if
+$T=f^{-1}\bigl(Z^{(2)}(X)\bigr)$, we have $T\supset Z^{(2)}(Y)$.  Let us
+show that $\sh G=\sh H^0_{X/Z^{(2)}(X)}\bigl(f_*(\sh O_Y)\bigr)$
+is coherent; indeed $f_*(\sh O_Y)=\widetilde B$, $B$ being regarded as
+an $A$-module; but since $B$ is a finite integral $A$-algebra, its field
+of fractions is finite over the field of fractions of $A$, so $B$ is
+contained in a free $A$-module of finite type, and consequently
+\sref{IV.5.9.2},~{\rm(i)} $\sh G$ is a quasi-coherent
+sub-$\sh O_X$-Module of $\bigl(\sh H^0_{X/Z^{(2)}(X)}(\sh O_X)\bigr)^n$
+for a suitable $n$; the latter being coherent by hypothesis, so is
+$\sh G$.  Now it follows from the definition \sref{IV.5.9.1.2} that
+$\sh G$ is isomorphic to $f_*\bigl(\sh H^0_{Y/T}(\sh O_Y)\bigr)$; this
+proves \emph{a fortiori} that $\sh H^0_{Y/T}(\sh O_Y)$ is a coherent
+$\sh O_Y$-Module.  It then follows from \sref{IV.5.10.10},~{\rm(ii)},
+applied to $\sh O_Y$ and to the generic point of $Y$, that
+$\codim(T,Y)\geq2$, that is, $T\subset Z^{(2)}(Y)$, and finally
+$T=Z^{(2)}(Y)$.  This proves the two assertions of {\rm(iv)}.
 \end{proof}

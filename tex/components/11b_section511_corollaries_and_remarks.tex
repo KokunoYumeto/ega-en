@@ -20,129 +20,127 @@ $A'\subset A^{(1)}$, so finiteness of $A^{(1)}$ would force
 $A^{(1)}=A'$.  This is impossible: one of the two prime ideals of
 $A'$ above the maximal ideal $\mathfrak nA$ of $A$ has height
 $1$, whereas $\mathfrak nA$ has height $2$, contradicting
-\sref{IV.5.10.17}[iv].
+\sref{IV.5.10.17},~(iv).
 \end{remark}
 
 \begin{corollary}[5.11.4]
 \label{IV.5.11.4}
-Let $X$ be a locally Noetherian prescheme, let $Z$ be a closed
-subset of $X$, put $U=X\setmin Z$, and let $i:U\to X$ be the canonical
-injection.  Let $\sh F$ be a coherent $\sh O_U$-module.  A
-necessary condition for $i_*(\sh F)$ to be a coherent
-$\sh O_X$-module is that
+Let $X$ be a locally Noetherian prescheme, $Z$ a closed subset of $X$,
+$U=X\setmin Z$, $i:U\to X$ the canonical injection, and $\sh F$ a
+coherent $\sh O_U$-Module.  For $i_*(\sh F)$ to be a coherent
+$\sh O_X$-Module, it is necessary that, for every
+$x\in\operatorname{Ass}(\sh F)$, we have
 \[
   \codim\bigl(\overline{\{x\}}\cap Z,\overline{\{x\}}\bigr)
-  \geq2
-  \qquad
-  \text{for every }x\in\operatorname{Ass}(\sh F).
+  \geq2.
 \]
-This condition is sufficient in either of the following cases:
+This condition is sufficient in each of the following two cases:
 \begin{enumerate}[{\rm(i)}]
-  \item $X$ is locally immersible in a regular scheme.
-  \item $X$ is universally catenary and universally Japanese;
-  by definition, the latter means that every point $x\in X$ has
-  an affine open neighbourhood whose ring is universally
-  Japanese \sref[0]{0.23.1.1}.
+  \item The prescheme $X$ is locally immersible in a regular scheme.
+  \item The prescheme $X$ is universally catenary and universally
+  Japanese \textup{(which means, by definition, that every point
+  $x\in X$ has an affine open neighbourhood whose ring is}
+  universally Japanese \textup{\sref[0]{0.23.1.1})}.
 \end{enumerate}
 \end{corollary}
 
 \begin{proof}
-By \sref[I]{I.9.4.7}, there is a coherent
-$\sh O_X$-submodule $\sh G$ of $i_*(\sh F)$ such that
-$\sh G|U=\sh F$.  Plainly, $\operatorname{Ass}(\sh G)
-\subset\operatorname{Ass}(\sh F)
+We know \sref[I]{I.9.4.7} that there is a \emph{coherent}
+sub-$\sh O_X$-Module $\sh G$ of $i_*(\sh F)$ such that
+$\sh G|U=\sh F$.  We evidently have $\operatorname{Ass}(\sh F)
+\subset\operatorname{Ass}(\sh G)
 \subset\operatorname{Ass}\bigl(i_*(\sh F)\bigr)$,
-and
+and since
 \[
   \operatorname{Ass}\bigl(i_*(\sh F)\bigr)
   =\operatorname{Ass}(\sh F)
 \]
-by \sref{IV.3.1.13}.  Hence
-$\operatorname{Ass}(\sh G)=\operatorname{Ass}(\sh F)$.
-It remains to apply \sref{IV.5.11.1} to $\sh G$, observing that $i_*(\sh F)=\sh H^0_{X/Z}(\sh G)$,
+\sref{IV.3.1.13}, we have
+$\operatorname{Ass}(\sh G)=\operatorname{Ass}(\sh F)$;
+it then suffices to apply \sref{IV.5.11.1} to the coherent
+$\sh O_X$-Module $\sh G$, noting that $i_*(\sh F)=\sh H^0_{X/Z}(\sh G)$
 and that, when $X$ is universally catenary and universally
-Japanese, hypothesis {\rm(ii)} of \sref{IV.5.11.1} holds by
+Japanese, hypothesis {\rm(ii)} of \sref{IV.5.11.1} is satisfied by
 definition.
 \end{proof}
 
 \begin{corollary}[5.11.5]
 \label{IV.5.11.5}
-Let $X$ be a locally Noetherian prescheme, let $Z$ be a subset
-of $X$ stable under specialization, and let $\sh F$ be a coherent
-$\sh O_X$-module such that
-$\operatorname{Ass}(\sh F)\subset X\setmin Z$.  Consider the conditions:
+Let $X$ be a locally Noetherian prescheme, $Z$ a subset
+of $X$ stable under specialization, and $\sh F$ a coherent
+$\sh O_X$-Module such that
+$\operatorname{Ass}(\sh F)\subset X\setmin Z$.  Then the condition:
 \begin{enumerate}[{\rm a)}]
   \item $\sh H^0_{X/Z}(\sh F)$ is a coherent
-  $\sh O_X$-module.
-  \item[{\rm d)}] For every subset $T$ of $Z$ closed in $X$,
-  $i_*(\sh F|X\setmin T)$ is coherent, where
-  $i:X\setmin T\to X$ is the canonical injection.  It is enough here
+  $\sh O_X$-Module
+\end{enumerate}
+implies the following:
+\begin{enumerate}
+  \item[{\rm d)}] For every subset $T$ of $Z$ closed in $X$
+  \textup{(or only for a filtered}
 
 \oldpage[IV-2]{125}
 
-  to consider an increasing filtered family of such closed
-  subsets whose union is $Z$.
+  increasing family \textup{of closed subsets $T$ of $Z$, with union
+  $Z$)}, $i_*(\sh F|X\setmin T)$ \textup{(}where
+  $i:X\setmin T\to X$ is the canonical injection\textup{)} is coherent.
 \end{enumerate}
-Then {\rm a)} implies {\rm d)}.  If $X$ satisfies either
-hypothesis {\rm(i)} or {\rm(ii)} of \sref{IV.5.11.1}, the two
-conditions are equivalent.
+When $X$ satisfies one of the hypotheses \textup{(i), (ii)} of
+\sref{IV.5.11.1}, \textup{a)} and \textup{d)} are equivalent.
 \end{corollary}
 
 \begin{proof}
-The hypothesis and \sref{IV.3.1.13} give
+Note that we have
 \[
-  \operatorname{Ass}\bigl(i_*(\sh F|X-T)\bigr)
-  =\operatorname{Ass}(\sh F).
+  \operatorname{Ass}\bigl(i_*(\sh F|X\setmin T)\bigr)
+  =\operatorname{Ass}(\sh F)
 \]
-It follows from \sref{IV.5.10.2} that the canonical maps
+by the hypothesis and \sref{IV.3.1.13}; it therefore follows from
+\sref{IV.5.10.2} that the canonical maps
 \[
   i_*(\sh F|X\setmin T)\longrightarrow\sh H^0_{X/Z}(\sh F)
 \]
-are injective.  Condition {\rm a)} therefore implies {\rm d)}.
-
-Conversely, condition {\rm d)} and \sref{IV.5.11.1} imply, in
-the notation of that proposition, that $\codim(T\cap Y_\alpha,Y_\alpha)\geq2$.
-Since $Z$ is the union of its subsets closed in $X$, it follows
-that $\codim(Z\cap Y_\alpha,Y_\alpha)\geq2$.
-The last assertion now follows from \sref{IV.5.11.1}.
+are \emph{injective}; the fact that \emph{a)} implies \emph{d)} is
+therefore a consequence of this remark.  Conversely, condition
+\emph{d)} implies, by \sref{IV.5.11.1}, that
+$\codim(T\cap Y_\alpha,Y_\alpha)\geq2$ with the notation of
+\sref{IV.5.11.1}; consequently
+$\codim(Z\cap Y_\alpha,Y_\alpha)\geq2$, since $Z$ is the union of
+its subsets which are closed in $X$, and the last assertion of the
+corollary follows from \sref{IV.5.11.1}.
 \end{proof}
 
 \begin{corollary}[5.11.6]
 \label{IV.5.11.6}
-Let $A$ be a Noetherian ring and put $X=\Spec(A)$.  Consider the
+Let $A$ be a Noetherian ring and $X=\Spec(A)$.  Consider the
 following properties:
 \begin{enumerate}[{\rm a)}]
-  \item For every quotient domain $B$ of $A$, the ring $B^{(1)}$
-  \sref{IV.5.11.2} is a finite $B$-algebra.
-  \item For every coherent $\sh O_X$-module $\sh F$ and every
-  subset $Z$ of $X$ stable under specialization such that $\codim\bigl(\overline{\{x\}}\cap Z,\overline{\{x\}}\bigr)
-\geq2$
-  for every
-  $x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$, the module
-  $\sh H^0_{X/Z}(\sh F)$ is coherent.
+  \item For every integral quotient ring $B$ of $A$, the ring $B^{(1)}$
+  \textup{(notation of \sref{IV.5.11.2})} is a finite $B$-algebra.
+  \item For every coherent $\sh O_X$-Module $\sh F$ and every
+  subset $Z$ of $X$, stable under specialization, and such that for
+  every $x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$ we have
+  $\codim\bigl(\overline{\{x\}}\cap Z,\overline{\{x\}}\bigr)\geq2$,
+  the $\sh O_X$-Module $\sh H^0_{X/Z}(\sh F)$ is coherent.
   \item For every closed subset $T$ of $X$ and every coherent
-  $\sh O_U$-module $\sh G$, where $U=X\setmin T$, such that
-  \[
-    \codim\bigl(\overline{\{x\}}\cap T,\overline{\{x\}}\bigr)
-    \geq2
-    \qquad
-    (x\in\operatorname{Ass}(\sh G)),
-  \]
-  the module $i_*(\sh G)$ is coherent, where $i:U\to X$ is the
-  canonical injection.
-  \item For every quotient domain $B$ of $A$ and every ideal
-  $\mathfrak J$ of $B$ of height at least $2$, the ring $\bigcap_{\mathfrak p\not\supseteq\mathfrak J}
-B_{\mathfrak p}$
+  $\sh O_U$-Module $\sh G$ \textup{(}where $U=X\setmin T$\textup{)} such
+  that for every $x\in\operatorname{Ass}(\sh G)$ we have
+  $\codim\bigl(\overline{\{x\}}\cap T,\overline{\{x\}}\bigr)\geq2$,
+  $i_*(\sh G)$ \textup{(}where $i:U\to X$ is the canonical
+  injection\textup{)} is a coherent $\sh O_X$-Module.
+  \item For every integral quotient ring $B$ of $A$ and every ideal
+  $\mathfrak J$ of height $\geq2$ in $B$, the ring
+  $\bigcap_{\mathfrak p\not\supset\mathfrak J}B_{\mathfrak p}$
   is a finite $B$-algebra.
 \end{enumerate}
-Then
+We then have the implications
 \[
   {\rm a)}\Longleftrightarrow{\rm b)}
   \Longrightarrow{\rm c)}
   \Longleftrightarrow{\rm d)}.
 \]
-Moreover, all four properties hold in either of the following
-cases:
+Moreover, conditions \textup{a), b), c)} and \textup{d)} are satisfied
+in each of the following two cases:
 \begin{enumerate}[{\rm(i)}]
   \item $A$ is a quotient of a regular ring.
   \item $A$ is universally catenary and universally Japanese.
@@ -151,61 +149,64 @@ cases:
 
 \begin{proof}
 Let $B=A/\mathfrak q$, where $\mathfrak q$ is a prime ideal of
-$A$, so that $Y=\Spec(B)=V(\mathfrak q)$ is a closed subset of
-$X$.  Put $Z=Z^{(2)}(Y)$, viewed as a subset of $X$ stable under
-specialization.  Since $B$ is a domain,
-$\operatorname{Ass}(A/\mathfrak q)$ consists only of the generic
-point $\mathfrak q$ of $Y$.  If {\rm b)} holds, apply it to $\sh F=(A/\mathfrak q)^{\sim}$
-and to $Z$.  Formula \sref{IV.5.9.3.1} then shows that $B^{(1)}$
-is a finite $A$-module, and hence a finite $B$-module.  Thus
-{\rm b)} implies {\rm a)}.
-
-Conversely, suppose {\rm a)} holds.  Let $\sh F$ and $Z$ satisfy
-the assumptions in {\rm b)}, and use the notation of
-\sref{IV.5.11.1}.  Each
-$Y_\alpha=\Spec(B_\alpha)$, where $B_\alpha$ is a quotient
-domain of $A$.  Since
-$Z_\alpha\subset Z^{(2)}(Y_\alpha)$, condition {\rm a)},
-\sref{IV.5.10.2}, and the fact that
-$\operatorname{Ass}(\sh O_{Y_\alpha})$ consists of the generic
-point show that $\sh H^0_{Y_\alpha/Z_\alpha}(\sh O_{Y_\alpha})$
-is coherent.  Property {\rm b)} follows from
+$A$, so that $Y=\Spec(B)$ is the closed subset $V(\mathfrak q)$ of
+$X$; put $Z=Z^{(2)}(Y)$, which is a subset of $X$ stable under
+specialization; since $B$ is integral,
+$\operatorname{Ass}(A/\mathfrak q)$ reduces to the generic point
+$\mathfrak q$ of $Y$.  If condition \emph{b)} is satisfied, we can
+apply it to the coherent $\sh O_X$-Module $\sh F=(A/\mathfrak q)^{\sim}$
+and to $Z$, and by \sref{IV.5.9.3.1} this shows that $B^{(1)}$
+is an $A$-module of finite type, and \emph{a fortiori} a $B$-module of
+finite type.  Conversely, suppose \emph{a)} satisfied; then, if $\sh F$
+is a coherent $\sh O_X$-Module such that for every
+$x\in\operatorname{Ass}(\sh F)\cap(X\setmin Z)$ we have
+$\codim\bigl(\overline{\{x\}}\cap Z,\overline{\{x\}}\bigr)\geq2$, we can
+apply (with the notation of \sref{IV.5.11.1}) the result of \emph{a)}
+to each of the affine schemes $Y_\alpha=\Spec(B_\alpha)$, where
+$B_\alpha$ is an integral quotient ring of $A$; since by hypothesis
+$Z_\alpha$ is contained in $Z^{(2)}(Y_\alpha)$, condition \emph{a)}
+\textup{(}taking into account \sref{IV.5.10.2} and the fact that
+$\operatorname{Ass}(\sh O_{Y_\alpha})$ reduces to the generic point of
+$Y_\alpha$\textup{)} implies that
+$\sh H^0_{Y_\alpha/Z_\alpha}(\sh O_{Y_\alpha})$ is a coherent
+$\sh O_{Y_\alpha}$-Module, and \emph{b)} then follows from
 \sref{IV.5.11.1}.
 
 \oldpage[IV-2]{126}
 
-To prove that {\rm c)} implies {\rm d)}, argue as above with
-$\sh G=(A/\mathfrak q)^{\sim}|U$ and $T=V(\mathfrak J)$.
-Conversely, {\rm d)} implies {\rm c)} by applying the same
-componentwise argument and \sref{IV.5.11.1}.  Property {\rm c)}
-is plainly a special case of {\rm b)}.  Finally,
-\sref{IV.5.11.2}, together with the definitions of universally
-catenary and universally Japanese rings, proves all four
-properties under either hypothesis {\rm(i)} or {\rm(ii)}.
+To see that \emph{c)} implies \emph{d)}, we reason as above, applying
+\emph{c)} to the case where $\sh G=(A/\mathfrak q)^{\sim}|U$ and
+$T=V(\mathfrak J)$; conversely, one proves that \emph{d)} implies
+\emph{c)} by again using the equivalence of \emph{a)} and \emph{b)} in
+\sref{IV.5.11.1}.  It is evident that \emph{c)} is a particular case of
+\emph{b)}.  Finally, the fact that \emph{a)} \textup{(}and consequently
+each of the other conditions\textup{)} is satisfied when $A$ satisfies one
+of the hypotheses {\rm(i)}, {\rm(ii)} follows from \sref{IV.5.11.2}, in
+view of the definition of universally catenary rings and of universally
+Japanese rings.
 \end{proof}
 
 \begin{remarks}[5.11.7]
 \label{IV.5.11.7}
 \begin{enumerate}[{\rm(i)}]
-  \item It is not known whether condition {\rm d)} in
-  \sref{IV.5.11.5} implies condition {\rm a)} without an
-  additional hypothesis on $X$.  We shall see in
-  \sref{IV.7.2.4} that it does when $X$ is a local scheme.
-  Likewise, when $A$ is a Noetherian local ring, the four
-  properties {\rm a)}, {\rm b)}, {\rm c)}, and {\rm d)} of
-  \sref{IV.5.11.6} are equivalent \sref{IV.7.2.4}.  It is not
-  known whether this result extends to every Noetherian ring.
+  \item It is not known whether, in \sref{IV.5.11.5}, condition
+  \emph{d)} implies \emph{a)} without an additional hypothesis on $X$;
+  we shall see later \sref{IV.7.2.4} that this is indeed so when $X$
+  is a \emph{local} scheme.  Likewise, we shall prove that when $A$ is
+  a Noetherian \emph{local} ring the four properties \emph{a)},
+  \emph{b)}, \emph{c)}, \emph{d)} of \sref{IV.5.11.6} are equivalent
+  \sref{IV.7.2.4}.  It is not known whether this result extends to all
+  Noetherian rings.
 
-  \item If $A$ satisfies property {\rm a)} of
-  \sref{IV.5.11.6}, then so does every localization $S^{-1}A$
-  and every finite $A$-algebra $C$.  Indeed, every quotient
-  domain of $S^{-1}A$ has the form $S^{-1}(A/\mathfrak q)$,
-  where $\mathfrak q$ is a prime ideal of $A$ disjoint from
-  $S$.  On the other hand, if $\mathfrak r$ is a prime ideal of
-  $C$ and $\mathfrak p$ is its inverse image in $A$, then
-  $C/\mathfrak r$ is a finite integral
-  $(A/\mathfrak p)$-algebra containing $A/\mathfrak p$.  The
-  assertions therefore follow from \sref{IV.5.10.17}[iii] and
-  \sref{IV.5.10.17}[iv].
+  \item If $A$ satisfies property \emph{a)} of
+  \sref{IV.5.11.6}, so does every \emph{ring of fractions} $S^{-1}A$
+  and every \emph{finite} $A$-algebra $C$.  Indeed, every integral
+  quotient ring of $S^{-1}A$ is of the form $S^{-1}(A/\mathfrak q)$,
+  where $\mathfrak q$ is a prime ideal of $A$ not meeting $S$; and on
+  the other hand, if $\mathfrak r$ is a prime ideal of $C$ and
+  $\mathfrak p$ its inverse image in $A$, $C/\mathfrak r$ is a finite
+  integral $(A/\mathfrak p)$-algebra containing $A/\mathfrak p$; our
+  assertions are therefore consequences of
+  \sref{IV.5.10.17},~(iii) and~(iv).
 \end{enumerate}
 \end{remarks}

@@ -8,7 +8,7 @@ In the present section, we take up again the notions studied in (\textbf{0}, 19)
 
 \begin{definition}[17.1.1]\label{IV.17.1.1}
 \EGAReaderTarget{ega4.c04.def.17-1-1}{IV.17.1.1}
-Let $f:X\to Y$ be a morphism of preschemes. We say that $f$ is \emph{formally smooth} (resp. \emph{formally unramified} or \emph{formally net}, resp. \emph{formally étale}) if, for every affine scheme $Y'$, every closed subscheme $Y'_0$ of $Y'$ defined by a nilpotent ideal $\sh{J}$ of $\sh{O}_{Y'}$, and every morphism $Y'\to Y$, the map
+Let $f:X\to Y$ be a morphism of preschemes. We say that $f$ is \emph{formally smooth} \textup{(resp.}\ \emph{formally unramified} or \emph{formally net}, \textup{resp.}\ \emph{formally étale}\textup{)} if, for every affine scheme $Y'$, every closed subscheme $Y'_0$ of $Y'$ defined by a nilpotent ideal $\sh{J}$ of $\sh{O}_{Y'}$, and every morphism $Y'\to Y$, the map
 \[
 \label{IV.17.1.1.1}
   \Hom_Y(Y',X)\longrightarrow\Hom_Y(Y'_0,X)
@@ -50,9 +50,9 @@ It is clear that to say that $f$ is formally étale means that it is \emph{both}
 \label{IV.17.1.3}
 \begin{enumerate}
   \item[\textup{(i)}] A monomorphism of preschemes is formally unramified; an open immersion is formally étale.
-  \item[\textup{(ii)}] The composite of two formally smooth (resp. formally unramified, resp. formally étale) morphisms is formally smooth (resp. formally unramified, resp. formally étale).
-  \item[(iii)] If $f:X\to Y$ is a formally smooth (resp. formally unramified, resp. formally étale) $S$-morphism, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
-  \item[(iv)] If $f:X\to X'$ and $g:Y\to Y'$ are two formally smooth (resp. formally unramified, resp. formally étale) $S$-morphisms, then so is $f\times_S g:X\times_S Y\to X'\times_S Y'$.
+  \item[\textup{(ii)}] The composite of two formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)} morphisms is formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)}.
+  \item[(iii)] If $f:X\to Y$ is a formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)} $S$-morphism, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
+  \item[(iv)] If $f:X\to X'$ and $g:Y\to Y'$ are two formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)} $S$-morphisms, then so is $f\times_S g:X\times_S Y\to X'\times_S Y'$.
   \item[\textup{(v)}] Let $f:X\to Y$, $g:Y\to Z$ be two morphisms; if $g\circ f$ is formally unramified, then so is $f$.
   \item[\textup{(vi)}] If $f:X\to Y$ is a formally unramified morphism, then so is $f_{\mathrm{red}}:X_{\mathrm{red}}\to Y_{\mathrm{red}}$.
 \end{enumerate}
@@ -68,14 +68,14 @@ Note that a \emph{closed immersion} is not necessarily a formally smooth morphis
 
 \begin{proposition}[17.1.4]
 \label{IV.17.1.4}
-Let $f:X\to Y$, $g:Y\to Z$ be two morphisms, and suppose $g$ formally unramified. Then, if $g\circ f$ is formally smooth (resp. formally étale), so is $f$.
+Let $f:X\to Y$, $g:Y\to Z$ be two morphisms, and suppose $g$ formally unramified. Then, if $g\circ f$ is formally smooth \textup{(resp.}\ formally étale\textup{)}, so is $f$.
 \end{proposition}
 
 Indeed, let $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal, $h:Y'\to Y$ a morphism, $j:Y'_0\to Y'$ the canonical injection, and $u_0:Y'_0\to X$ a $Y$-morphism, hence such that $f\circ u_0=h\circ j$. Suppose $g\circ f$ formally smooth; then there exists a morphism $u:Y'\to X$ such that $u\circ j=u_0$ and $(g\circ f)\circ u=g\circ h$. But these relations imply that $f\circ u$ and $h$ are two $Z$-morphisms from $Y'$ to $Y$ such that $(f\circ u)\circ j=h\circ j$; by virtue of the hypothesis that $g$ is formally unramified, we deduce that $f\circ u=h$, in other words $u$ is a $Y$-morphism; hence $f$ is formally smooth. Taking into account (17.1.3, (v)), this proves the proposition.
 
 \begin{corollary}[17.1.5]
 \label{IV.17.1.5}
-Suppose $g$ formally étale; then, for $g\circ f$ to be formally smooth (resp. formally unramified, resp. formally étale), it is necessary and sufficient that $f$ be so.
+Suppose $g$ formally étale; then, for $g\circ f$ to be formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)}, it is necessary and sufficient that $f$ be so.
 \end{corollary}
 
 This follows from (17.1.4) and from (17.1.3, (ii) and (v)).
@@ -84,8 +84,8 @@ This follows from (17.1.4) and from (17.1.3, (ii) and (v)).
 \label{IV.17.1.6}
 Let $f:X\to Y$ be a morphism of preschemes.
 \begin{enumerate}
-  \item[\textup{(i)}] Let $(U_\alpha)$ be an open covering of $X$ and, for every $\alpha$, let $i_\alpha:U_\alpha\to X$ be the canonical injection. For $f$ to be formally smooth (resp. formally unramified, resp. formally étale), it is necessary and sufficient that each of the morphisms $f\circ i_\alpha$ be so.
-  \item[\textup{(ii)}] Let $(V_\lambda)$ be an open covering of $Y$. For $f$ to be formally smooth (resp. formally unramified, resp. formally étale), it is necessary and sufficient that each of the restrictions $f^{-1}(V_\lambda)\to V_\lambda$ of $f$ be so.
+  \item[\textup{(i)}] Let $(U_\alpha)$ be an open covering of $X$ and, for every $\alpha$, let $i_\alpha:U_\alpha\to X$ be the canonical injection. For $f$ to be formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)}, it is necessary and sufficient that each of the morphisms $f\circ i_\alpha$ be so.
+  \item[\textup{(ii)}] Let $(V_\lambda)$ be an open covering of $Y$. For $f$ to be formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)}, it is necessary and sufficient that each of the restrictions $f^{-1}(V_\lambda)\to V_\lambda$ of $f$ be so.
 \end{enumerate}
 \end{proposition}
 
@@ -105,7 +105,7 @@ We can therefore say that the notions introduced in (17.1.1) are \emph{local} on
 
 \begin{proposition}[17.2.1]
 \label{IV.17.2.1}
-For a morphism $f:X\to Y$ to be formally unramified, it is necessary and sufficient that $\varOmega_f^1=0$ (which is also written $\varOmega_{X/Y}^1=0$ (16.3.1)).
+For a morphism $f:X\to Y$ to be formally unramified, it is necessary and sufficient that $\varOmega_f^1=0$ \textup{(which is also written $\varOmega_{X/Y}^1=0$ (16.3.1))}.
 \end{proposition}
 
 Taking into account (17.1.6), we are reduced to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and the conclusion then follows from (\textbf{0}, 20.7.4) and from the interpretation of $\varOmega_{X/Y}^1$ in this case (16.3.7).
@@ -125,8 +125,8 @@ This is an immediate consequence of (17.2.1) and of the exact sequence (16.4.19.
 \label{IV.17.2.3}
 Let $f:X\to Y$ be a formally smooth morphism.
 \begin{enumerate}
-  \item[\textup{(i)}] The $\sh{O}_X$-module $\varOmega_{X/Y}^1$ is locally projective \textup{(16.10.1)}. If $f$ is locally of finite type, $\varOmega_{X/Y}^1$ is locally free of finite type.
-  \item[\textup{(ii)}] For every morphism $g:Y\to Z$, the sequence \textup{(16.4.19)} of $\sh{O}_X$-modules
+  \item[\textup{(i)}] The $\sh{O}_X$-Module $\varOmega_{X/Y}^1$ is locally projective \textup{(16.10.1)}. If $f$ is locally of finite type, $\varOmega_{X/Y}^1$ is locally free of finite type.
+  \item[\textup{(ii)}] For every morphism $g:Y\to Z$, the sequence \textup{(16.4.19)} of $\sh{O}_X$-Modules
   \[
   \label{IV.17.2.3.1}
     0\longrightarrow f^*(\varOmega_{Y/Z}^1)\longrightarrow\varOmega_{X/Z}^1\longrightarrow\varOmega_{X/Y}^1\longrightarrow0
@@ -138,13 +138,13 @@ Let $f:X\to Y$ be a formally smooth morphism.
 
 \oldpage[IV-4]{60}
 \begin{enumerate}
-  \item[(i)] We know (16.3.9) that if $f$ is locally of finite type, $\varOmega_f^1$ is an $\sh{O}_X$-module of finite type. To prove that, in all cases, it is locally projective, we may restrict, by virtue of (17.1.6), to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and this follows from the hypothesis on $f$ and from (\textbf{0}, 20.4.9 and 0, 19.2.1).
+  \item[(i)] We know (16.3.9) that if $f$ is locally of finite type, $\varOmega_f^1$ is an $\sh{O}_X$-Module of finite type. To prove that, in all cases, it is locally projective, we may restrict, by virtue of (17.1.6), to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and this follows from the hypothesis on $f$ and from (\textbf{0}, 20.4.9 and 0, 19.2.1).
   \item[(ii)] Here again, we may restrict to the case where $X$, $Y$ and $Z$ are affine (17.1.6), and the conclusion follows in this case from the interpretation of the modules appearing in the sequence (17.2.3.1) and from (\textbf{0}, 20.5.7).
 \end{enumerate}
 
 \begin{corollary}[17.2.4]
 \label{IV.17.2.4}
-If $f:X\to Y$ is a formally étale morphism, then, for every morphism $g:Y\to Z$, the canonical homomorphism of $\sh{O}_X$-modules
+If $f:X\to Y$ is a formally étale morphism, then, for every morphism $g:Y\to Z$, the canonical homomorphism of $\sh{O}_X$-Modules
 \[
   f^*(\varOmega_{Y/Z}^1)\longrightarrow\varOmega_{X/Z}^1
 \]
@@ -155,7 +155,7 @@ This follows from the exactness of the sequence (17.2.3.1) and from the fact tha
 
 \begin{proposition}[17.2.5]
 \label{IV.17.2.5}
-Let $f:X\to Y$ be a morphism, and $X'$ a sub-prescheme of $X$ such that the composite morphism $X'\xrightarrow{j}X\xrightarrow{f}Y$ (where $j$ is the canonical injection) is formally smooth. Then the sequence of $\sh{O}_{X'}$-modules \textup{(16.4.21)}
+Let $f:X\to Y$ be a morphism, and $X'$ a sub-prescheme of $X$ such that the composite morphism $X'\xrightarrow{j}X\xrightarrow{f}Y$ (where $j$ is the canonical injection) is formally smooth. Then the sequence of $\sh{O}_{X'}$-Modules \textup{(16.4.21)}
 \[
 \label{IV.17.2.5.1}
   0\longrightarrow\mathcal{N}_{X'/X}\longrightarrow\varOmega_{X/Y}^1\otimes_{\sh{O}_X}\sh{O}_{X'}\longrightarrow\varOmega_{X'/Y}^1\longrightarrow0
@@ -176,7 +176,7 @@ Let $X$, $Y$ be two preschemes, and $f:X\to Y$ a morphism locally of finite type
 \end{enumerate}
 \end{proposition}
 
-The fact that a) implies c) follows from (8.11.5.1). It is clear that c) implies that $f$ is radicial; let us show that it also follows from c) that $\varOmega_{X/Y}^1=0$, which will prove that c) implies b) (17.2.1). Note that the $\sh{O}_X$-module $\varOmega_{X/Y}^1$ is quasi-coherent of finite type (16.3.9). It therefore follows from (\textbf{I}, 9.1.13.1) that, for $(\varOmega_{X/Y}^1)_x=0$, it is necessary and sufficient that, if we set $Y_1=\Spec(\boldsymbol{k}(y))$, $X_1=f^{-1}(y)=X\times_Y Y_1$, we have $(\varOmega_{X_1/Y_1}^1)_x=0$; but as the morphism $f_1:X_1\to Y_1$ deduced from $f$ is formally unramified by virtue of hypothesis c) (17.1.3), the conclusion follows from (17.2.1). Finally, let us prove that b) implies a); for this, consider the diagonal morphism $g=\Delta_f:X\to X\times_Y X$; since $f$ is radicial, $g$ is surjective (1.8.7.1); on the other hand, $\varOmega_{X/Y}^1$ is by definition the conormal sheaf $\mathscr{G}r_1(g)$ of the immersion $g$ (16.3.1), and to say that $f$ is formally unramified therefore means that
+The fact that a) implies c) follows from (8.11.5.1). It is clear that c) implies that $f$ is radicial; let us show that it also follows from c) that $\varOmega_{X/Y}^1=0$, which will prove that c) implies b) (17.2.1). Note that the $\sh{O}_X$-Module $\varOmega_{X/Y}^1$ is quasi-coherent of finite type (16.3.9). It therefore follows from (\textbf{I}, 9.1.13.1) that, for $(\varOmega_{X/Y}^1)_x=0$, it is necessary and sufficient that, if we set $Y_1=\Spec(\boldsymbol{k}(y))$, $X_1=f^{-1}(y)=X\times_Y Y_1$, we have $(\varOmega_{X_1/Y_1}^1)_x=0$; but as the morphism $f_1:X_1\to Y_1$ deduced from $f$ is formally unramified by virtue of hypothesis c) (17.1.3), the conclusion follows from (17.2.1). Finally, let us prove that b) implies a); for this, consider the diagonal morphism $g=\Delta_f:X\to X\times_Y X$; since $f$ is radicial, $g$ is surjective (1.8.7.1); on the other hand, $\varOmega_{X/Y}^1$ is by definition the conormal sheaf $\mathscr{G}r_1(g)$ of the immersion $g$ (16.3.1), and to say that $f$ is formally unramified therefore means that
 
 \oldpage[IV-4]{61}
 $\mathscr{G}r_1(g)=0$ (17.2.1). Moreover, $g$ is locally of finite presentation (1.4.3.1); hence the hypothesis $\mathscr{G}r_1(g)=0$ implies that $g$ is an open immersion (16.1.10); being surjective, this immersion is an isomorphism, hence $f$ is a monomorphism (\textbf{I}, 5.3.8).
@@ -186,7 +186,7 @@ $\mathscr{G}r_1(g)=0$ (17.2.1). Moreover, $g$ is locally of finite presentation 
 
 \begin{definition}[17.3.1]\label{IV.17.3.1}
 \EGAReaderTarget{ega4.c04.def.17-3-1}{IV.17.3.1}
-We say that a morphism $f:X\to Y$ is \emph{smooth} (resp. \emph{unramified}, or \emph{net}\footnote{The words ``net'' and ``formally net'' seem much preferable to the established terminology of ``unramified'' (resp. ``formally unramified'') and will be used almost exclusively from Chapter V on. In this chapter, we have kept the old terminology so as not to come into conflict with (\textbf{0}, 19.10).}, resp. \emph{étale}) if it is locally of finite presentation and formally smooth (resp. formally unramified, resp. formally étale).
+We say that a morphism $f:X\to Y$ is smooth \textup{(resp.}\ unramified, \textup{or} net\footnote{The words ``net'' and ``formally net'' seem much preferable to the established terminology of ``unramified'' (resp. ``formally unramified'') and will be used almost exclusively from Chapter V on. In this chapter, we have kept the old terminology so as not to come into conflict with (\textbf{0}, 19.10).}, \textup{resp.}\ étale\textup{)} if it is locally of finite presentation and formally smooth \textup{(resp.}\ formally unramified, \textup{resp.}\ formally étale\textup{)}.
 \end{definition}
 
 We then also say that $X$ is \emph{smooth} (resp. \emph{unramified} or \emph{net}, resp. \emph{étale}) over $Y$.
@@ -203,8 +203,8 @@ It is clear that to say that $f$ is étale means that it is \emph{both} smooth a
     Y'\leadsto\Hom_Y(Y',X)
   \]
   considered in (17.1.2, (iii)), since to say that $f$ is locally of finite presentation is equivalent to saying that the preceding functor \emph{commutes with projective limits of affine schemes} (8.14.2).
-  \item[\textup{(ii)}] Let $A$ be a ring, and $B$ an $A$-algebra. We say that $B$ is a \emph{smooth} (resp. \emph{unramified}, resp. \emph{étale}) $A$-algebra if the corresponding morphism $\Spec(B)\to\Spec(A)$ is smooth (resp. unramified, resp. étale). It amounts to the same to say that $B$ is an $A$-algebra \emph{of finite presentation} (1.4.4.6) and formally smooth (resp. formally unramified, resp. formally étale) for the discrete topologies.
-  \item[(iii)] It follows from (17.1.6) and from the definition of a morphism locally of finite presentation (1.4.4.2) that the notions of smooth, unramified and étale morphism are \emph{local on $X$ and on $Y$}.
+  \item[\textup{(ii)}] Let $A$ be a ring, and $B$ an $A$-algebra. We say that $B$ is a \emph{smooth} (resp. \emph{unramified}, resp. \emph{étale}) $A$-algebra if the corresponding morphism $\Spec(B)\to\Spec(A)$ is smooth (resp. unramified, resp. étale). It amounts to the same to say that $B$ is an $A$-algebra \emph{of finite presentation} (1.4.6) and formally smooth (resp. formally unramified, resp. formally étale) for the discrete topologies.
+  \item[(iii)] It follows from (17.1.6) and from the definition of a morphism locally of finite presentation (1.4.2) that the notions of smooth, unramified and étale morphism are \emph{local on $X$ and on $Y$}.
 \end{enumerate}
 \end{remarks}
 
@@ -212,9 +212,9 @@ It is clear that to say that $f$ is étale means that it is \emph{both} smooth a
 \label{IV.17.3.3}
 \begin{enumerate}
   \item[(i)] An open immersion is étale. For an immersion to be unramified, it is necessary and sufficient that it be locally of finite presentation.
-  \item[(ii)] The composite of two smooth (resp. unramified, resp. étale) morphisms is smooth (resp. unramified, resp. étale).
-  \item[(iii)] If $f:X\to Y$ is a smooth (resp. unramified, resp. étale) $S$-morphism, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
-  \item[\textup{(iv)}] If $f:X\to X'$ and $g:Y\to Y'$ are two smooth (resp. unramified, resp. étale) $S$-morphisms, then so is $f\times_S g:X\times_S Y\to X'\times_S Y'$.
+  \item[(ii)] The composite of two smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} morphisms is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}.
+  \item[(iii)] If $f:X\to Y$ is a smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} $S$-morphism, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
+  \item[\textup{(iv)}] If $f:X\to X'$ and $g:Y\to Y'$ are two smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} $S$-morphisms, then so is $f\times_S g:X\times_S Y\to X'\times_S Y'$.
 \end{enumerate}
 
 \oldpage[IV-4]{62}
@@ -228,14 +228,14 @@ This follows immediately from (1.4.3) and from (17.1.3).
 
 \begin{proposition}[17.3.4]
 \label{IV.17.3.4}
-Let $f:X\to Y$, $g:Y\to Z$ be two morphisms, and suppose $g$ unramified. Then, if $g\circ f$ is smooth (resp. unramified, resp. étale), so is $f$.
+Let $f:X\to Y$, $g:Y\to Z$ be two morphisms, and suppose $g$ unramified. Then, if $g\circ f$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}, so is $f$.
 \end{proposition}
 
-Indeed, as $g$ and $g\circ f$ are locally of finite presentation, so is $f$ (1.4.4.3, (v)); the conclusion therefore follows from (17.1.4) and (17.1.3, (v)).
+Indeed, as $g$ and $g\circ f$ are locally of finite presentation, so is $f$ (1.4.3, (v)); the conclusion therefore follows from (17.1.4) and (17.1.3, (v)).
 
 \begin{corollary}[17.3.5]
 \label{IV.17.3.5}
-Suppose $g$ étale; then, for $f$ to be smooth (resp. unramified, resp. étale), it is necessary and sufficient that $g\circ f$ be so.
+Suppose $g$ étale; then, for $f$ to be smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}, it is necessary and sufficient that $g\circ f$ be so.
 \end{corollary}
 
 This follows from (17.3.4) and from (17.3.3, (ii)).
@@ -249,11 +249,11 @@ Let $g:Y\to S$, $h:X\to S$ be two morphisms locally of finite presentation. For 
 be surjective.
 \end{proposition}
 
-As $f$ is then locally of finite presentation (1.4.4.3, (v)), the proposition follows immediately from (17.2.2).
+As $f$ is then locally of finite presentation (1.4.3, (v)), the proposition follows immediately from (17.2.2).
 
 \begin{definition}[17.3.7]\label{IV.17.3.7}
 \EGAReaderTarget{ega4.c04.def.17-3-7}{IV.17.3.7}
-Let $f:X\to Y$ be a morphism. We say that $f$ is \emph{smooth} (resp. \emph{unramified}, resp. \emph{étale}) \emph{at a point} $x\in X$ if there exists an open neighbourhood $U$ of $x$ in $X$ such that the restriction $f|U$ is a smooth (resp. unramified, resp. étale) morphism from $U$ to $Y$.
+Let $f:X\to Y$ be a morphism. We say that $f$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} at a point $x\in X$ if there exists an open neighbourhood $U$ of $x$ in $X$ such that the restriction $f|U$ is a smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} morphism from $U$ to $Y$.
 \end{definition}
 
 We then also say that $X$ is smooth (resp. unramified, resp. étale) over $Y$ at the point $x$.
@@ -264,7 +264,7 @@ It is clear that the set of points of $X$ where a morphism $f:X\to Y$ is smooth 
 
 \begin{proposition}[17.3.8]
 \label{IV.17.3.8}
-For every prescheme $Y$ and every locally free $\sh{O}_Y$-module $\sh{E}$ of finite type, the vector bundle prescheme $\mathbf{V}(\sh{E})$ \textup{(\textbf{II}, 1.7.8)} is a smooth $Y$-prescheme.
+For every prescheme $Y$ and every locally free $\sh{O}_Y$-Module $\sh{E}$ of finite type, the vector bundle prescheme $\mathbf{V}(\sh{E})$ \textup{(\textbf{II}, 1.7.8)} is a smooth $Y$-prescheme.
 \end{proposition}
 
 Indeed (17.3.2, (iii)), we may restrict to the case where $Y=\Spec(A)$ is affine and $\mathbf{V}(\sh{E})=\Spec(A[T_1,\ldots,T_r])$; as $A[T_1,\ldots,T_r]$ is an $A$-algebra that is formally smooth for the discrete topologies (\textbf{0}, 19.3.2) and of finite presentation, this proves the proposition (17.3.2, (ii)).
@@ -287,26 +287,26 @@ Let $f:X\to Y$ be a morphism locally of finite presentation, and $x$ a point of 
 \begin{enumerate}
   \item[\textup{a)}] $f$ is unramified at the point $x$.
   \item[\textup{b)}] The diagonal morphism $\Delta_f:X\to X\times_Y X$ is a local isomorphism at the point $x$.
-  \item[b')] If we set $\Delta_f=(\psi,\theta)$, $Z=X\times_Y X$ and $z=\psi(x)$, the homomorphism $\theta_z^\sharp:\sh{O}_{Z,z}\to\sh{O}_{X,x}$ is bijective.
-  \item[b'')] For every morphism $g:Y'\to Y$, and every point $y'\in Y'$ above $y=f(x)$, every $Y'$-section $s'$ of $X'=X\times_Y Y'$ such that $x'=s'(y')$ is above $x$ is a local isomorphism at the point $y'$.
+  \item[\textup{b$'$)}] If we set $\Delta_f=(\psi,\theta)$, $Z=X\times_Y X$ and $z=\psi(x)$, the homomorphism $\theta_x^\sharp:\sh{O}_{Z,z}\to\sh{O}_{X,x}$ is bijective.
+  \item[\textup{b$''$)}] For every morphism $g:Y'\to Y$, and every point $y'\in Y'$ above $y=f(x)$, every $Y'$-section $s'$ of $X'=X\times_Y Y'$ such that $x'=s'(y')$ is above $x$ is a local isomorphism at the point $y'$.
   \item[\textup{c)}] We have $(\varOmega^1_{X/Y})_x=0$.
   \item[\textup{d)}] The $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is unramified over $\boldsymbol{k}(y)$ at the point $x$.
-  \item[d')] The point $x$ is isolated in $X_y=f^{-1}(y)$ (in other words (Err$_{\mathrm{III}}$, 20), the morphism $f$ is quasi-finite at the point $x$) and the ring $\sh{O}_{X_y,x}$ is a field which is a separable extension of $\boldsymbol{k}(y)$.
-  \item[d'')] The ring $\sh{O}_{X_y,x}=\sh{O}_{X,x}/\mathfrak{m}_y\sh{O}_{X,x}$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$.
+  \item[\textup{d$'$)}] The point $x$ is isolated in $X_y=f^{-1}(y)$ \textup{(in other words (\textbf{Err}$_{\mathrm{III}}$, 20), the morphism $f$ is \emph{quasi-finite at the point} $x$)} and the ring $\sh{O}_{X_y,x}$ is a field which is a separable extension of $\boldsymbol{k}(y)$.
+  \item[\textup{d$''$)}] The ring $\sh{O}_{X_y,x}=\sh{O}_{X,x}/\mathfrak{m}_y\sh{O}_{X,x}$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$.
   \item[\textup{e)}] The ring $\sh{O}_{X,x}$ is a formally unramified $\sh{O}_{Y,y}$-algebra for the discrete topologies.
 \end{enumerate}
 \end{theorem}
 
-As $f$ is locally of finite type, the $\sh{O}_X$-module $\varOmega^1_{X/Y}$ is of finite type (16.3.9), so it amounts to the same to say that $(\varOmega^1_{X/Y})_x=0$ or that there exists an open neighbourhood $U$ of $x$ such that $\varOmega^1_{X/Y}|U=0$. Taking into account (17.2.1), this proves the equivalence of a) and c). On the other hand, if we set $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$, we have $(\varOmega^1_{X/Y})_x=\Omega^1_{B/A}$ (16.4.15), and the equivalence of c) and e) therefore follows from (\textbf{0}, 20.7.4).
+As $f$ is locally of finite type, the $\sh{O}_X$-Module $\varOmega^1_{X/Y}$ is of finite type (16.3.9), so it amounts to the same to say that $(\varOmega^1_{X/Y})_x=0$ or that there exists an open neighbourhood $U$ of $x$ such that $\varOmega^1_{X/Y}|U=0$. Taking into account (17.2.1), this proves the equivalence of a) and c). On the other hand, if we set $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$, we have $(\varOmega^1_{X/Y})_x=\Omega^1_{B/A}$ (16.4.15), and the equivalence of c) and e) therefore follows from (\textbf{0}, 20.7.4).
 
 As d') involves only properties of the morphism $X_y\to\Spec(\boldsymbol{k}(y))$, the equivalence of a) and d') will \emph{ipso facto} imply that of d) and d'). On the other hand, d') and d'') are equivalent, because it amounts to the same to say that $\sh{O}_{X_y,x}$ is a \emph{finite} $\boldsymbol{k}(y)$-algebra or that $x$ is an isolated point of $X_y$, as $X_y$ is a $\boldsymbol{k}(y)$-prescheme locally of finite type (\textbf{I}, 6.4.4).
 
-Let us now prove the equivalence of b) and b'). We may restrict to the case where $Y=\Spec(R)$ and $X=\Spec(S)$ are affine and $f$ is of finite presentation; then we have $Z=\Spec(S\otimes_R S)$ and $\Delta_f$ corresponds to the canonical surjective homomorphism $S\otimes_R S\to S$, whose kernel $\mathfrak{J}$ is, as we know, an ideal of finite type (\textbf{0}, 20.4.4). If we set $\sh{J}=\widetilde{\mathfrak{J}}$, the $\sh{O}_Z$-module $\psi_*(\sh{O}_X)=\sh{O}_Z/\sh{J}$ is therefore of finite presentation, and the hypothesis that the homomorphism $\theta_z: \sh{O}_{Z,z}\to(\psi_*(\sh{O}_X))_z$ is bijective implies that, on replacing $X$ by an open neighbourhood of $x$ if necessary, the homomorphism $\theta:\sh{O}_Z\to\psi_*(\sh{O}_X)$ is itself bijective ($\mathbf{0}_{\mathrm I}$, 5.2.7). This therefore shows that b') implies b); the converse is evident.
+Let us now prove the equivalence of b) and b'). We may restrict to the case where $Y=\Spec(R)$ and $X=\Spec(S)$ are affine and $f$ is of finite presentation; then we have $Z=\Spec(S\otimes_R S)$ and $\Delta_f$ corresponds to the canonical surjective homomorphism $S\otimes_R S\to S$, whose kernel $\mathfrak{J}$ is, as we know, an ideal of finite type (\textbf{0}, 20.4.4). If we set $\sh{J}=\widetilde{\mathfrak{J}}$, the $\sh{O}_Z$-Module $\psi_*(\sh{O}_X)=\sh{O}_Z/\sh{J}$ is therefore of finite presentation, and the hypothesis that the homomorphism $\theta_z: \sh{O}_{Z,z}\to(\psi_*(\sh{O}_X))_z$ is bijective implies that, on replacing $X$ by an open neighbourhood of $x$ if necessary, the homomorphism $\theta:\sh{O}_Z\to\psi_*(\sh{O}_X)$ is itself bijective ($\mathbf{0}_{\mathrm I}$, 5.2.7). This therefore shows that b') implies b); the converse is evident.
 
 On the other hand, the equivalence of b) and b'') follows from (\textbf{I}, 5.3.7) without any finiteness hypothesis on $f$: indeed, to give a $Y'$-section $s':Y'\to X'$ is equivalent to giving a
 
 \oldpage[IV-4]{64}
-$Y$-morphism $h=g'\circ s':Y'\to X$ (where $g':X'\to X$ is the canonical projection), so that $s'=(1_{Y'},h)_X$, and then the diagram
+$Y$-morphism $h=g'\circ s':Y'\to X$ (where $g':X'\to X$ is the canonical projection), so that $s'=(1_{Y'},h)_Y$, and then the diagram
 \[
 \tag{17.4.1.1}
 \label{IV.17.4.1.1}
@@ -322,7 +322,7 @@ To complete the proof of (17.4.1), it suffices to prove the implications
 \textit{d'')}\Rightarrow\textit{c)}\Rightarrow\textit{b)}\Rightarrow\textit{d'')}
 \]
 
-$\textit{d'')}\Rightarrow\textit{c)}$: As $\varOmega^1_{X/Y}$ is an $\sh{O}_X$-module of finite type, it follows from Nakayama's lemma that condition \emph{c)} is equivalent to $(\varOmega^1_{X/Y})_x/\mathfrak{m}_y(\varOmega^1_{X/Y})_x=0$, that is (16.4.5), to $(\varOmega^1_{X_y/\Spec(\mathbf{k}(y))})_x=0$. We are therefore reduced to the case where $Y$ is the spectrum of a field $k$ and $X$ an algebraic $k$-prescheme. The hypothesis that $\sh{O}_{X,x}$ is a field $k'$ which is a finite extension of $k$ implies first that $x$ is \emph{closed} in $X$ (\textbf{I}, 6.4.2), and then that $x$ is a \emph{maximal} point of the Noetherian prescheme $X$, hence is an isolated point of $X$. Replacing $X$ by the open subset $\{x\}$ of $X$, we may therefore suppose that $X=\Spec(k')$; but then the hypothesis that $k'$ is a \emph{finite separable} extension of $k$ implies $\Omega^1_{k'/k}=0$ (\textbf{0}, 20.6.20), which proves c).
+$\textit{d'')}\Rightarrow\textit{c)}$: As $\varOmega^1_{X/Y}$ is an $\sh{O}_X$-Module of finite type, it follows from Nakayama's lemma that condition \emph{c)} is equivalent to $(\varOmega^1_{X/Y})_x/\mathfrak{m}_y(\varOmega^1_{X/Y})_x=0$, that is (16.4.5), to $(\varOmega^1_{X_y/\Spec(\kres(y))})_x=0$. We are therefore reduced to the case where $Y$ is the spectrum of a field $k$ and $X$ an algebraic $k$-prescheme. The hypothesis that $\sh{O}_{X,x}$ is a field $k'$ which is a finite extension of $k$ implies first that $x$ is \emph{closed} in $X$ (\textbf{I}, 6.4.2), and then that $x$ is a \emph{maximal} point of the Noetherian prescheme $X$, hence is an isolated point of $X$. Replacing $X$ by the open subset $\{x\}$ of $X$, we may therefore suppose that $X=\Spec(k')$; but then the hypothesis that $k'$ is a \emph{finite separable} extension of $k$ implies $\Omega^1_{k'/k}=0$ (\textbf{0}, 20.6.20), which proves c).
 
 $\textit{c)}\Rightarrow\textit{b)}$: We have seen above that we then have $\varOmega^1_{X/Y}|U=0$ for an open neighbourhood $U$ of $x$ in $X$; assertion \emph{b)} then follows from the definition of $\varOmega^1_{X/Y}$ (16.3.1) and from (16.1.9).
 
@@ -333,7 +333,7 @@ $\textit{b)}\Rightarrow\textit{d'')}$: Replacing $X$ by an open neighbourhood of
 
 \begin{remark}[17.4.1.2]
 \label{IV.17.4.1.2}
-Suppose only that $f$ is \emph{locally of finite type}. Then $\varOmega^1_{X/Y}$ is again an $\sh{O}_X$-module of finite type (16.3.9), and $\Delta_f$ a morphism locally of finite presentation (1.4.3.1). The whole proof of (17.4.1) is therefore valid, provided that a) is replaced by: \emph{the restriction of $f$ to a suitable neighbourhood of $x$ is a formally unramified morphism}. We see moreover that in this case the restriction of $f$ to a suitable neighbourhood of $x$ is a \emph{locally quasi-finite} morphism.
+Suppose only that $f$ is \emph{locally of finite type}. Then $\varOmega^1_{X/Y}$ is again an $\sh{O}_X$-Module of finite type (16.3.9), and $\Delta_f$ a morphism locally of finite presentation (1.4.3.1). The whole proof of (17.4.1) is therefore valid, provided that a) is replaced by: \emph{the restriction of $f$ to a suitable neighbourhood of $x$ is a formally unramified morphism}. We see moreover that in this case the restriction of $f$ to a suitable neighbourhood of $x$ is a \emph{locally quasi-finite} morphism.
 \end{remark}
 
 \begin{corollary}[17.4.2]
@@ -342,10 +342,10 @@ Let $f:X\to Y$ be a morphism locally of finite presentation. The following prope
 \begin{enumerate}
   \item[\textup{a)}] $f$ is unramified.
   \item[\textup{b)}] The diagonal morphism $\Delta_f:X\to X\times_Y X$ is an open immersion.
-  \item[b')] For every morphism $Y'\to Y$, every $Y'$-section of $X'=X\times_Y Y'$ is an open immersion.
+  \item[\textup{b$'$)}] For every morphism $Y'\to Y$, every $Y'$-section of $X'=X\times_Y Y'$ is an open immersion.
   \item[\textup{c)}] We have $\varOmega^1_{X/Y}=0$.
   \item[\textup{d)}] For every $y\in Y$, the $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is unramified over $\boldsymbol{k}(y)$.
-  \item[d')] For every $y\in Y$, the $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is isomorphic to a prescheme of the form $\coprod_{\lambda\in L}\Spec(K_\lambda)$, where, for every $\lambda\in L$, $K_\lambda$ is a finite and separable extension of $\boldsymbol{k}(y)$.
+  \item[\textup{d$'$)}] For every $y\in Y$, the $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is isomorphic to a prescheme of the form $\coprod_{\lambda\in L}\Spec(K_\lambda)$, where, for every $\lambda\in L$, $K_\lambda$ is a finite and separable extension of $\boldsymbol{k}(y)$.
   \item[\textup{e)}] For every $x\in X$, the ring $\sh{O}_{X,x}$ is a formally unramified $\sh{O}_{Y,f(x)}$-algebra for the discrete topologies.
 \end{enumerate}
 \end{corollary}
@@ -360,11 +360,11 @@ If $f:X\to Y$ is unramified, then $f$ is locally quasi-finite \textup{(\textbf{E
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, and $y=f(x)$. Set $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$, which are Noetherian local rings, and let $k$ be the residue field of $A$. Then the equivalent conditions a) to e) of Theorem (17.4.1) are also equivalent to each of the following:
 \begin{enumerate}
   \item[\textup{f)}] $\widehat{B}\otimes_{\widehat{A}}k$ is a field which is a finite separable extension of $k$ (which implies that $\widehat{B}$ is a finite $\widehat{A}$-algebra).
-  \item[f')] $\widehat{B}$ is a formally unramified $\widehat{A}$-algebra for the adic topologies.
+  \item[\textup{f$'$)}] $\widehat{B}$ is a formally unramified $\widehat{A}$-algebra for the adic topologies.
 \end{enumerate}
 If moreover $\boldsymbol{k}(x)=\boldsymbol{k}(y)$, or if $k$ is separably closed, these conditions are also equivalent to:
 \begin{enumerate}
-  \item[f'')] The homomorphism $\widehat{A}\to\widehat{B}$ is surjective.
+  \item[\textup{f$''$)}] The homomorphism $\widehat{A}\to\widehat{B}$ is surjective.
 \end{enumerate}
 \end{proposition}
 
@@ -374,7 +374,7 @@ Let us note first, by the same reasoning as in (\textbf{0}, 19.3.6), that it amo
 is a $B$-module of finite type (16.3.9), hence \emph{separated} for the $\mathfrak n$-preadic topology (where $\mathfrak n$ is the maximal ideal of $B$) ($\mathbf{0}_{\mathrm I}$, 7.3.5); consequently it amounts to the same to say that $\Omega^1_{B/A}=0$ or that $\widehat{\Omega}^1_{B/A}=0$; hence (\textbf{0}, 20.7.4), it amounts to the same to say that $B$ is a formally unramified $A$-algebra for the \emph{discrete} topologies, or for the \emph{preadic} topologies. This proves the equivalence of conditions e) and f'). If $\mathfrak m$ is the maximal ideal of $A$, we have
 \[
 k=A/\mathfrak m=\widehat A/\mathfrak m\widehat A,
-\qquad
+\qquad\text{hence}\qquad
 \widehat B\otimes_{\widehat A}k=\widehat B/\mathfrak m\widehat B
 =\widehat B\otimes_B(B/\mathfrak m B),
 \]
@@ -387,7 +387,7 @@ Given an $S$-prescheme $Y$ and two $S$-morphisms $f:X\to Y$, $g:X\to Y$, we cano
 
 \begin{proposition}[17.4.6]
 \label{IV.17.4.6}
-Let $h:Y\to S$ be an unramified morphism, and let $f:X\to Y$, $g:X\to Y$ be two $S$-morphisms. Then the prescheme $C$ of coincidences of $f$ and $g$ is a sub-prescheme induced on an open subset of $X$; if moreover $Y$ is an $S$-scheme (\textbf{I}, 5.4.1), $C$ is a closed sub-prescheme of $X$.
+Let $h:Y\to S$ be an unramified morphism, and let $f:X\to Y$, $g:X\to Y$ be two $S$-morphisms. Then the prescheme $C$ of coincidences of $f$ and $g$ is a sub-prescheme induced on an open subset of $X$; if moreover $Y$ is an $S$-scheme \textup{(\textbf{I}, 5.4.1)}, $C$ is a closed sub-prescheme of $X$.
 \end{proposition}
 
 Indeed, since $\Delta_h:Y\to Y\times_S Y$ is an open immersion (17.4.2), the inverse image under $(f,g)_S$ of $\Delta_{Y|S}$ is a sub-prescheme induced on an open subset of $X$ (\textbf{I}, 4.4.1). The last assertion follows from (17.4.5).
@@ -431,7 +431,7 @@ Let $f:X\to Y$ be a morphism locally of finite presentation, $x$ a point of $X$,
 \begin{enumerate}
   \item[\textup{a)}] $f$ is smooth at the point $x$.
   \item[\textup{b)}] $f$ is flat at the point $x$ and the $\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is smooth over $\boldsymbol{k}(y)$ at the point $x$.
-  \item[b')] $f$ is regular at the point $x$ \textup{(6.8.1)}.
+  \item[\textup{b$'$)}] $f$ is regular at the point $x$ \textup{(6.8.1)}.
   \item[\textup{c)}] The ring $\sh{O}_{X,x}$ is a formally smooth $\sh{O}_{Y,y}$-algebra for the discrete topologies.
 \end{enumerate}
 \end{theorem}
@@ -468,16 +468,16 @@ We have thus established the equivalence of the two definitions of ``smooth morp
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, and $y=f(x)$. Set $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$, which are Noetherian local rings. Then the equivalent conditions a) to c) of (17.5.1) are also equivalent to each of the following:
 \begin{enumerate}
   \item[\textup{d)}] $B$ is a formally smooth $A$-algebra for the preadic topologies.
-  \item[d')] $\widehat B$ is a formally smooth $\widehat A$-algebra for the adic topologies.
+  \item[\textup{d$'$)}] $\widehat B$ is a formally smooth $\widehat A$-algebra for the adic topologies.
 \end{enumerate}
 If moreover $\boldsymbol{k}(x)=\boldsymbol{k}(y)$, these conditions are also equivalent to:
 \begin{enumerate}
-  \item[d'')] $\widehat B$ is an $\widehat A$-algebra isomorphic to an algebra of formal power series $\widehat A[[T_1,\ldots,T_n]]$.
+  \item[\textup{d$''$)}] $\widehat B$ is an $\widehat A$-algebra isomorphic to an algebra of formal power series $\widehat A[[T_1,\ldots,T_n]]$.
 \end{enumerate}
 \end{proposition}
 
 \oldpage[IV-4]{69}
-The equivalence of condition c) of (17.5.1) and of d) follows from the equivalence of a) and d) in the Jacobian criterion (\textbf{0}, 22.6.4), and the equivalence of d) and d') follows from (\textbf{0}, 19.3.6). On the other hand, d'') implies d') without any hypothesis on the residue fields (\textbf{0}, 19.3.4). Finally, if $\mathfrak m$ denotes the maximal ideal of $\widehat A$, hypothesis d') implies that $\widehat B/\mathfrak m\widehat B$ is a complete Noetherian local $\boldsymbol{k}(y)$-algebra which is formally smooth for its adic topology (\textbf{0}, 19.3.5); the hypothesis $\boldsymbol{k}(y)=k(x)$ therefore implies that $\widehat B/\mathfrak m\widehat B$ is $\boldsymbol{k}(y)$-isomorphic to an algebra of formal power series $\boldsymbol{k}(y)[[T_1,\ldots,T_n]]$ (\textbf{0}, 19.6.4). As, on the other hand, $\widehat A[[T_1,\ldots,T_n]]$ is a flat $\widehat A$-module and a complete Noetherian local $\widehat A$-algebra, we conclude from (\textbf{0}, 19.7.1.5) that this algebra is isomorphic to $\widehat B$. Hence d') implies d'') under the additional hypothesis $\boldsymbol{k}(x)=\boldsymbol{k}(y)$.
+The equivalence of condition c) of (17.5.1) and of d) follows from the equivalence of a) and d) in the Jacobian criterion (\textbf{0}, 22.6.4), and the equivalence of d) and d') follows from (\textbf{0}, 19.3.6). On the other hand, d'') implies d') without any hypothesis on the residue fields (\textbf{0}, 19.3.4). Finally, if $\mathfrak m$ denotes the maximal ideal of $\widehat A$, hypothesis d') implies that $\widehat B/\mathfrak m\widehat B$ is a complete Noetherian local $\boldsymbol{k}(y)$-algebra which is formally smooth for its adic topology (\textbf{0}, 19.3.5); the hypothesis $\boldsymbol{k}(y)=\boldsymbol{k}(x)$ therefore implies that $\widehat B/\mathfrak m\widehat B$ is $\boldsymbol{k}(y)$-isomorphic to an algebra of formal power series $\boldsymbol{k}(y)[[T_1,\ldots,T_n]]$ (\textbf{0}, 19.6.4). As, on the other hand, $\widehat A[[T_1,\ldots,T_n]]$ is a flat $\widehat A$-module and a complete Noetherian local $\widehat A$-algebra, we conclude from (\textbf{0}, 19.7.1.5) that this algebra is isomorphic to $\widehat B$. Hence d') implies d'') under the additional hypothesis $\boldsymbol{k}(x)=\boldsymbol{k}(y)$.
 
 \begin{remark}[17.5.4]
 \label{IV.17.5.4}
@@ -505,7 +505,7 @@ at this point all the properties defined in (6.8.1). We therefore have the follo
 
 \begin{proposition}[17.5.7]
 \label{IV.17.5.7}
-Let $f:X\to Y$ be a morphism locally of finite presentation, smooth at a point $x\in X$; set $y=f(x)$. Then, for the ring $\sh{O}_{X,x}$ to be reduced (resp. integrally closed, resp. geometrically unibranch), it is necessary and sufficient that $\sh{O}_{Y,y}$ be so.
+Let $f:X\to Y$ be a morphism locally of finite presentation, smooth at a point $x\in X$; set $y=f(x)$. Then, for the ring $\sh{O}_{X,x}$ to be reduced \textup{(resp.}\ integrally closed, \textup{resp.}\ geometrically unibranch\textup{)}, it is necessary and sufficient that $\sh{O}_{Y,y}$ be so.
 \end{proposition}
 
 Indeed, this was proved in (11.3.13) and (11.3.14), supplemented by \textbf{Err}$_{\mathrm{IV}}$, 30.
@@ -530,10 +530,10 @@ These are particular cases of (6.1.2), (6.3.2), (6.4.1) and (6.5.3).
 Let $f:X\to Y$ be a morphism locally of finite presentation, $x$ a point of $X$, and $y=f(x)$. The following conditions are equivalent:
 \begin{enumerate}
   \item[\textup{a)}] $f$ is étale at the point $x$.
-  \item[a')] $f$ is smooth at the point $x$ and unramified at the point $x$.
+  \item[\textup{a$'$)}] $f$ is smooth at the point $x$ and unramified at the point $x$.
   \item[\textup{b)}] $f$ is smooth at the point $x$ and quasi-finite at the point $x$ \textup{(\textbf{Err}$_{\mathrm{III}}$, 20)}.
   \item[\textup{c)}] $f$ is flat at the point $x$ and unramified at the point $x$.
-  \item[c')] $f$ is flat at the point $x$ and the ring $\sh{O}_{X,x}/\mathfrak m_y\sh{O}_{X,x}$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$.
+  \item[\textup{c$'$)}] $f$ is flat at the point $x$ and the ring $\sh{O}_{X,x}/\mathfrak m_y\sh{O}_{X,x}$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$.
   \item[\textup{d)}] The ring $\sh{O}_{X,x}$ is a formally étale $\sh{O}_{Y,y}$-algebra for the discrete topologies.
 \end{enumerate}
 \end{theorem}
@@ -548,30 +548,30 @@ a field since it is Artinian, and it then follows from (\textbf{0}, 19.6.5.1) th
 Let $f:X\to Y$ be a morphism locally of finite presentation. The following conditions are equivalent:
 \begin{enumerate}
   \item[\textup{a)}] $f$ is étale.
-  \item[a')] $f$ is smooth and unramified.
+  \item[\textup{a$'$)}] $f$ is smooth and unramified.
   \item[\textup{b)}] $f$ is smooth and locally quasi-finite \textup{(\textbf{Err}$_{\mathrm{III}}$, 20)}.
   \item[\textup{c)}] $f$ is flat and unramified.
-  \item[c')] $f$ is flat, and every fibre $f^{-1}(y)$ is a $\boldsymbol{k}(y)$-scheme which is a sum of spectra of fields that are finite and separable extensions of $\boldsymbol{k}(y)$.
-  \item[c'')] $f$ is flat, and for every $y\in Y$ and every algebraically closed extension $k'$ of $\boldsymbol{k}(y)$, the ``geometric fibre'' $f^{-1}(y)\otimes_{\mathbf{k}(y)}k'$ is a sum of spectra of fields isomorphic to $k'$.
+  \item[\textup{c$'$)}] $f$ is flat, and every fibre $f^{-1}(y)$ is a $\boldsymbol{k}(y)$-scheme which is a sum of spectra of fields that are finite and separable extensions of $\boldsymbol{k}(y)$.
+  \item[\textup{c$''$)}] $f$ is flat, and for every $y\in Y$ and every algebraically closed extension $k'$ of $\boldsymbol{k}(y)$, the ``geometric fibre'' $f^{-1}(y)\otimes_{\kres(y)}k'$ is a sum of spectra of fields isomorphic to $k'$.
 \end{enumerate}
 \end{corollary}
 
-The only point that remains to be proved is the equivalence of c') and c''). It is clear that c') implies c'') by base change (17.3.3). On the other hand, as the projection morphism $f^{-1}(y)\otimes_{\mathbf{k}(y)}k'\to f^{-1}(y)$ is open (2.4.10), hypothesis c'') implies that the space $f^{-1}(y)$ is discrete; hence, for every point $x\in X_y=f^{-1}(y)$, the local ring $\sh{O}_{X_y,x}=A$ is a finite $\boldsymbol{k}(y)$-algebra, hence an Artinian local ring; moreover it follows from c'') that $\Spec(A\otimes_{\mathbf{k}(y)}k')$ is a sum of spectra of fields isomorphic to $k'$, which is possible only if $A$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$ (4.6.1).
+The only point that remains to be proved is the equivalence of c') and c''). It is clear that c') implies c'') by base change (17.3.3). On the other hand, as the projection morphism $f^{-1}(y)\otimes_{\kres(y)}k'\to f^{-1}(y)$ is open (2.4.10), hypothesis c'') implies that the space $f^{-1}(y)$ is discrete; hence, for every point $x\in X_y=f^{-1}(y)$, the local ring $\sh{O}_{X_y,x}=A$ is a finite $\boldsymbol{k}(y)$-algebra, hence an Artinian local ring; moreover it follows from c'') that $\Spec(A\otimes_{\kres(y)}k')$ is a sum of spectra of fields isomorphic to $k'$, which is possible only if $A$ is a field which is a finite separable extension of $\boldsymbol{k}(y)$ (4.6.1).
 
 \begin{proposition}[17.6.3]
 \label{IV.17.6.3}
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, and $y=f(x)$. Set $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$, which are Noetherian local rings, and let $k$ be the residue field of $A$. Then the equivalent conditions a) to d) of (17.6.1) are also equivalent to each of the following:
 \begin{enumerate}
   \item[\textup{e)}] $\widehat B$ is a formally étale $\widehat A$-algebra for the adic topologies.
-  \item[e')] $\widehat B$ is a free $\widehat A$-module and $\widehat B\otimes_{\widehat A}k$ is a field which is a finite and separable extension of $k$ (which implies that $\widehat B$ is a finite $\widehat A$-algebra).
+  \item[\textup{e$'$)}] $\widehat B$ is a free $\widehat A$-module and $\widehat B\otimes_{\widehat A}k$ is a field which is a finite and separable extension of $k$ (which implies that $\widehat B$ is a finite $\widehat A$-algebra).
 \end{enumerate}
-If moreover $k(x)=\boldsymbol{k}(y)$, or if $k$ is separably closed, these conditions are also equivalent to:
+If moreover $\boldsymbol{k}(x)=\boldsymbol{k}(y)$, or if $k$ is separably closed, these conditions are also equivalent to:
 \begin{enumerate}
-  \item[e'')] The canonical homomorphism $\widehat A\to\widehat B$ is bijective.
+  \item[\textup{e$''$)}] The canonical homomorphism $\widehat A\to\widehat B$ is bijective.
 \end{enumerate}
 \end{proposition}
 
-The equivalence of e) and each of the conditions of (17.6.1) follows immediately from (17.4.4, f')) and (17.5.3, d')). The fact that e) implies e') follows from (17.4.4, f)) and from (\textbf{0}, 19.7.1), taking into account that $\widehat B$ is then a finite $\widehat A$-algebra (17.4.4), so that it amounts to the same to say that $\widehat B$ is a flat $\widehat A$-module or a free $\widehat A$-module ($\mathbf{0}_{\mathrm{III}}$, 10.1.3). Conversely, the fact that e') implies e) follows from (17.4.4) and from (\textbf{0}, 19.7.1). Finally, \emph{e')} implies that the homomorphism $\widehat A\to\widehat B$ is injective, and if $k(x)=\boldsymbol{k}(y)$ or if $k$ is separably closed, this homomorphism is surjective by (17.4.4). The converse is immediate.
+The equivalence of e) and each of the conditions of (17.6.1) follows immediately from (17.4.4, f')) and (17.5.3, d')). The fact that e) implies e') follows from (17.4.4, f)) and from (\textbf{0}, 19.7.1), taking into account that $\widehat B$ is then a finite $\widehat A$-algebra (17.4.4), so that it amounts to the same to say that $\widehat B$ is a flat $\widehat A$-module or a free $\widehat A$-module ($\mathbf{0}_{\mathrm{III}}$, 10.1.3). Conversely, the fact that e') implies e) follows from (17.4.4) and from (\textbf{0}, 19.7.1). Finally, \emph{e')} implies that the homomorphism $\widehat A\to\widehat B$ is injective, and if $\boldsymbol{k}(x)=\boldsymbol{k}(y)$ or if $k$ is separably closed, this homomorphism is surjective by (17.4.4). The converse is immediate.
 
 \begin{proposition}[17.6.4]
 \label{IV.17.6.4}
@@ -591,21 +591,21 @@ This is a particular case of (17.5.8, (i)), since $x$ is isolated in its fibre $
 Let $f:X\to Y$ be a morphism locally of finite presentation, $g:Y'\to Y$ a morphism, $X'=X\times_Y Y'$, and $f'=f_{(Y')}:X'\to Y'$ and $g':X'\to X$ the canonical projections. Let $x'$ be a point of $X'$, and set $x=g'(x')$, $y'=f'(x')$.
 \begin{enumerate}
   \item[\textup{(i)}] If $f'$ is unramified at the point $x'$, then $f$ is unramified at the point $x$.
-  \item[\textup{(ii)}] Suppose moreover that $g$ is flat at the point $y'$. Then, if $f'$ is smooth (resp. étale) at the point $x'$, $f$ is smooth (resp. étale) at the point $x$.
+  \item[\textup{(ii)}] Suppose moreover that $g$ is flat at the point $y'$. Then, if $f'$ is smooth \textup{(resp.}\ étale\textup{)} at the point $x'$, $f$ is smooth \textup{(resp.}\ étale\textup{)} at the point $x$.
 \end{enumerate}
 \end{proposition}
 
-Set $y=f(x)=g(y')$, so that we have $f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}k(y')$; note that $f'$ is locally of finite presentation.
+Set $y=f(x)=g(y')$, so that we have $f'^{-1}(y')=f^{-1}(y)\otimes_{\kres(y)}\boldsymbol{k}(y')$; note that $f'$ is locally of finite presentation.
 
-(i) As the property, for a morphism (locally of finite presentation), of being unramified at a point involves only the fibre of the morphism at this point (17.4.1, $d$)), we may restrict to the case where $Y$ and $Y'$ are spectra of fields. But then it amounts to the same to say that $f$ (resp. $f'$) is unramified at $x$ (resp. $x'$) or that it is étale at this point (17.6.1, $c$)), so (i) is a consequence of (ii).
+(i) As the property, for a morphism (locally of finite presentation), of being unramified at a point involves only the fibre of the morphism at this point (17.4.1, \emph{d)}), we may restrict to the case where $Y$ and $Y'$ are spectra of fields. But then it amounts to the same to say that $f$ (resp. $f'$) is unramified at $x$ (resp. $x'$) or that it is étale at this point (17.6.1, \emph{c)}), so (i) is a consequence of (ii).
 
-(ii) As $f'$ is flat at the point $x'$ (17.5.1), the hypothesis that $g$ is flat at the point $y'$ implies that $f$ is flat at the point $x$, because the projection $g':X'\to X$ is a morphism flat at the point $x'$, and $f\circ g'=g\circ f'$ is a morphism flat at the point $X'$, whence the conclusion (2.2.11, (iv)). The fact that $f$ is smooth (resp. étale) at the point $x$ then involves only the fibre $f^{-1}(y)$ (17.5.1 and 17.6.1), and we are therefore again reduced to the case where $Y=\Spec(k)$ and $Y'=\Spec(k')$ are spectra of fields. To say that $f'$ is smooth at the point $x'$ then means (17.5.1) that $X'$ is a $k'$-prescheme geometrically regular at the point $x'$, and this implies (6.7.8) that $X$ is a $k$-prescheme geometrically regular at the point $x$, hence that $f$ is smooth at the point $x$. Suppose moreover that $f'$ is étale at the point $x'$, so that $x'$ is isolated in $f'^{-1}(y')$ (17.6.1); as the projection $f'^{-1}(y')\to f^{-1}(y)$ is an open morphism (2.4.10), $x$ is isolated in $f^{-1}(y)$; as we already know that $f$ is smooth at the point $x$, it is étale at this point (17.6.1).
+(ii) As $f'$ is flat at the point $x'$ (17.5.1), the hypothesis that $g$ is flat at the point $y'$ implies that $f$ is flat at the point $x$, because the projection $g':X'\to X$ is a morphism flat at the point $x'$, and $f\circ g'=g\circ f'$ is a morphism flat at the point $x'$, whence the conclusion (2.2.11, (iv)). The fact that $f$ is smooth (resp. étale) at the point $x$ then involves only the fibre $f^{-1}(y)$ (17.5.1 and 17.6.1), and we are therefore again reduced to the case where $Y=\Spec(k)$ and $Y'=\Spec(k')$ are spectra of fields. To say that $f'$ is smooth at the point $x'$ then means (17.5.1) that $X'$ is a $k'$-prescheme geometrically regular at the point $x'$, and this implies (6.7.8) that $X$ is a $k$-prescheme geometrically regular at the point $x$, hence that $f$ is smooth at the point $x$. Suppose moreover that $f'$ is étale at the point $x'$, so that $x'$ is isolated in $f'^{-1}(y')$ (17.6.1); as the projection $f'^{-1}(y')\to f^{-1}(y)$ is an open morphism (2.4.10), $x$ is isolated in $f^{-1}(y)$; as we already know that $f$ is smooth at the point $x$, it is étale at this point (17.6.1).
 
 \begin{corollary}[17.7.2]
 \label{IV.17.7.2}
 \begin{enumerate}
-  \item[\textup{(i)}] With the notation of (17.7.1), let $U$ (resp. $U'$) be the set of points of $X$ (resp. $X'$) where $f$ (resp. $f'$) is unramified; then we have $U'=g'^{-1}(U)$.
-  \item[\textup{(ii)}] Suppose moreover that $g$ is flat, and let $V$ (resp. $V'$) be the set of points of $X$ where $f$ (resp. $f'$) is smooth; then $V'=g'^{-1}(V)$.
+  \item[\textup{(i)}] With the notation of \textup{(17.7.1)}, let $U$ \textup{(resp.}\ $U'$\textup{)} be the set of points of $X$ \textup{(resp.}\ $X'$\textup{)} where $f$ \textup{(resp.}\ $f'$\textup{)} is unramified; then we have $U'=g'^{-1}(U)$.
+  \item[\textup{(ii)}] Suppose moreover that $g$ is flat, and let $V$ \textup{(resp.}\ $V'$\textup{)} be the set of points of $X$ where $f$ \textup{(resp.}\ $f'$\textup{)} is smooth; then $V'=g'^{-1}(V)$.
 \end{enumerate}
 \end{corollary}
 
@@ -613,19 +613,17 @@ Set $y=f(x)=g(y')$, so that we have $f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)
 \label{IV.17.7.3}
 \begin{enumerate}
   \item[\textup{(i)}] Suppose $g$ surjective; then, for $f$ to be unramified, it is necessary and sufficient that $f'$ be so.
-  \item[\textup{(ii)}] Let $f:X\to Y$ be an $S$-morphism, and $g:S'\to S$ a faithfully flat morphism. Suppose that $f$ is locally of finite presentation, or that $g$ is quasi-compact. Then, for $f$ to be smooth (resp. unramified, resp. étale), it is necessary and sufficient that $f'$ be so.
+  \item[\textup{(ii)}] Let $f:X\to Y$ be an $S$-morphism, and $g:S'\to S$ a faithfully flat morphism. Suppose that $f$ is locally of finite presentation, or that $g$ is quasi-compact. Then, for $f$ to be smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}, it is necessary and sufficient that $f'$ be so.
 \end{enumerate}
 \end{corollary}
 
-In (ii), the case where $f$ is locally of finite presentation follows from (17.7.1). If $g$ is quasi-compact and $f'$ is smooth (resp. unramified, resp. étale), $f'$ is locally of finite presentation by (2.7.1, (iv)), and we are reduced to the first case.
+In (ii), the case where $f$ is locally of finite presentation follows from (17.7.1). If $g$ is quasi-compact and $f'$ is smooth (resp. unramified, resp. étale), $f$ is locally of finite presentation by (2.7.1, (iv)), and we are reduced to the first case.
 
 \begin{proposition}[17.7.4]
 \label{IV.17.7.4}
 Let $f:X\to Y$ be a morphism, $g:Y'\to Y$ a flat morphism locally of finite presentation, $X'=X\times_Y Y'$, and $f'=f_{(Y')}:X'\to Y'$ and $g':X'\to X$ the
-
 \oldpage[IV-4]{73}
-
-canonical projections. Let $V$ (resp. $V'$) be the set of $x\in X$ (resp. $x'\in X'$) at which $f$ has one of the following properties (resp. at which $f'$ has the same property): being:
+canonical projections. Let $V$ \textup{(resp.}\ $V'$\textup{)} be the set of $x\in X$ \textup{(resp.}\ $x'\in X'$\textup{)} at which $f$ has one of the following properties \textup{(resp.}\ at which $f'$ has the same property\textup{)}: being:
 \begin{enumerate}
   \item[\textup{(i)}] locally of finite type;
   \item[\textup{(ii)}] locally of finite presentation;
@@ -658,9 +656,7 @@ Then $g$ has the same property. If moreover $f$ is quasi-compact or $g$ is quasi
 \end{lemma}
 
 In cases (i) and (ii), we must see that for every $y\in Y$, there are an affine open neighbourhood $V$ of $y$ in $Y$ and an affine open neighbourhood $W$ of $z=g(y)$ in $Z$ containing $g(V)$ such that the morphism $V\to W$, restriction of $g$, is of finite type (resp. of finite presentation). Now, by hypothesis there exist an $x\in X$ such that $f(x)=y$, an affine open neighbourhood $U$ of $x$ in $X$, an affine open neighbourhood $V'$ of $y$ in $Y$ containing $f(U)$, and an affine open neighbourhood $W$ of $z$ in $Z$ containing $g(V')$, such that the morphism $f_1:U\to V'$ restriction of $f$, is flat and of finite presentation, and the morphism $g_1:V'\to W$, restriction of $g$, is such that $g_1\circ f_1$ is of finite type (resp. of finite presentation). Then $f(U)$ is open in $Y$ (2.4.6), and if $V\subset f(U)$ is an affine neighbourhood of $y$, the morphism $f_2:f_1^{-1}(V)\to V$,
-
 \oldpage[IV-4]{74}
-
 restriction of $f_1$, is again of finite presentation and is moreover faithfully flat; furthermore, if $g_2=g_1|V$, $g_2\circ f_2$ is of finite type (resp. of finite presentation), the open subset $f_1^{-1}(V)$ being quasi-compact (resp. quasi-compact and quasi-separated). We are then reduced to the hypotheses of (11.3.16), from which we conclude that $g_2$ is a morphism of finite type (resp. of finite presentation).
 
 In case (iii), the question is local on $Z$, so we may suppose $Z$ affine, and it then follows that $X$ is quasi-compact, hence so is $Y=f(X)$. Case (iii) is therefore a consequence of (i).
@@ -674,15 +670,13 @@ In the assertion relating to property (iv), we cannot drop the hypothesis that $
 
 \begin{proposition}[17.7.7]
 \label{IV.17.7.7}
-Let $f:Y\to S$ and $h:X\to S$ be two morphisms locally of finite presentation, $g:X\to Y$ an $S$-morphism, $x$ a point of $X$, and $y=g(x)$. Suppose that $g$ is flat at the point $x$. Then, if $h$ is smooth (resp. unramified, resp. étale) at the point $x$, $f$ is smooth (resp. unramified, resp. étale) at the point $y$.
+Let $f:Y\to S$ and $h:X\to S$ be two morphisms locally of finite presentation, $g:X\to Y$ an $S$-morphism, $x$ a point of $X$, and $y=g(x)$. Suppose that $g$ is flat at the point $x$. Then, if $h$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} at the point $x$, $f$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} at the point $y$.
 \end{proposition}
 
-Set $s=h(x)=f(y)$. To say that $h$ is unramified at the point $x$ (resp. that $f$ is unramified at the point $y$) is equivalent to saying that $h^{-1}(s)$ is étale over $\boldsymbol{k}(s)$ at the point $x$ (resp. that $f^{-1}(s)$ is étale over $\boldsymbol{k}(s)$ at the point $y$) (17.4.1 and 17.6.1); as the morphism $g_s:h^{-1}(s)\to f^{-1}(s)$ deduced from $g$ is flat at the point $x$, we see that we may restrict to proving the proposition when $h$ is smooth or étale at the point $x$. Moreover, as $h$ is then flat at the point $x$ (17.5.1), $f$ is flat at the point $y$, as follows from (2.2.11, (iv)). It therefore amounts to the same (17.5.1) to say that $f$ is smooth (resp. étale) at the point $y$, or that $f^{-1}(s)$ is smooth (resp. étale) over $\boldsymbol{k}(s)$ at the point $x$. We are thus reduced to the case where $S=\Spec(k)$ is the spectrum of a field.
+Set $s=h(x)=f(y)$. To say that $h$ is unramified at the point $x$ (resp. that $f$ is unramified at the point $y$) is equivalent to saying that $h^{-1}(s)$ is étale over $\boldsymbol{k}(s)$ at the point $x$ (resp. that $f^{-1}(s)$ is étale over $\boldsymbol{k}(s)$ at the point $y$) (17.4.1 and 17.6.1); as the morphism $g_s:h^{-1}(s)\to f^{-1}(s)$ deduced from $g$ is flat at the point $x$, we see that we may restrict to proving the proposition when $h$ is smooth or étale at the point $x$. Moreover, as $h$ is then flat at the point $x$ (17.5.1), $f$ is flat at the point $y$, as follows from (2.2.11, (iv)). It therefore amounts to the same (17.5.1) to say that $f$ is smooth (resp. étale) at the point $y$, or that $f^{-1}(s)$ is smooth (resp. étale) over $\boldsymbol{k}(s)$ at the point $y$. We are thus reduced to the case where $S=\Spec(k)$ is the spectrum of a field.
 
 (i) \emph{Case of smooth morphisms}. As $g$ is a morphism locally of finite presentation (1.4.3, (v)), there is an open neighbourhood $U$ of $x$ in $X$ in which $g$ is flat (11.3.1) and $h$ is smooth. Moreover, $g(U)$ is an open neighbourhood of $y$ in $Y$ (2.4.6); replacing $X$ by $U$ and $Y$ by $g(U)$, we may therefore suppose that $g$ is \emph{faithfully flat} and that $h$ is smooth, and we are reduced to proving that $f$ is then smooth. If $k'$ is an algebraically
-
 \oldpage[IV-4]{75}
-
 closed extension of $k$, $X\otimes_k k'$ is then smooth over $k'$ and by virtue of (17.7.3, (ii)), it suffices to prove that $Y\otimes_k k'$ is smooth over $k'$ (since $\Spec(k')\to\Spec(k)$ is faithfully flat); we may therefore restrict to the case where $k$ is \emph{algebraically closed}. As the set of points of $Y$ rational over $k$ is then very dense in $Y$ (10.4.8), and as the set of points of $Y$ where $Y$ is smooth over $k$ is open, we see that it suffices to prove that $Y$ is smooth over $k$ at every point rational over $k$. But at such a point $y$, to say that $Y$ is smooth over $k$ at this point is equivalent to saying that $Y$ is \emph{regular} at $y$ (17.5.1 and 6.7.8). Now we have $y=g(x)$ for some $x\in X$, and by hypothesis (17.5.1) $X$ is regular at the point $x$; as $X$ and $Y$ are then locally Noetherian and $g$ is flat, $Y$ is indeed regular at the point $y$ (6.5.1, (i)).
 
 (ii) \emph{Case of étale morphisms}. By (i) we already know that $f$ is smooth at the point $y$; by virtue of (17.6.1), it therefore suffices to show that $f$ is \emph{quasi-fini}te at the point $y$, or equivalently that $\sh{O}_{Y,y}$ is a finite $k$-algebra. Now, as $\sh{O}_{X,x}$ is a faithfully flat $\sh{O}_{Y,y}$-module ($\mathbf{0}_{\mathrm I}$, 6.6.2), $\sh{O}_{Y,y}$ is identified with a sub-$k$-module of $\sh{O}_{X,x}$, and as $\sh{O}_{X,x}$ is by hypothesis a finite $k$-algebra, so is $\sh{O}_{Y,y}$.
@@ -691,12 +685,12 @@ closed extension of $k$, $X\otimes_k k'$ is then smooth over $k'$ and by virtue 
 \label{IV.17.7.8}
 The notation being that of \textup{(8.8.1)}, suppose $X_\alpha$ and $Y_\alpha$ locally of finite presentation over $S_\alpha$. Let $f_\alpha:X_\alpha\to Y_\alpha$ be an $S_\alpha$-morphism, and $f:X\to Y$ the corresponding $S$-morphism.
 \begin{enumerate}
-  \item[\textup{(i)}] Let $x$ be a point of $X$, and $x_\lambda$ its canonical projection in $X_\lambda$. For $f$ to be smooth (resp. unramified, resp. étale) at the point $x$, it is necessary and sufficient that there exist $\lambda\geq\alpha$ such that $f_\lambda$ is smooth (resp. unramified, resp. étale) at the point $x_\lambda$.
-  \item[\textup{(ii)}] Suppose moreover $X_\alpha$ quasi-compact. For $f$ to be smooth (resp. unramified, resp. étale), it is necessary and sufficient that there exist $\lambda\geq\alpha$ such that $f_\lambda$ is smooth (resp. unramified, resp. étale).
+  \item[\textup{(i)}] Let $x$ be a point of $X$, and $x_\lambda$ its canonical projection in $X_\lambda$. For $f$ to be smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} at the point $x$, it is necessary and sufficient that there exist $\lambda\geq\alpha$ such that $f_\lambda$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)} at the point $x_\lambda$.
+  \item[\textup{(ii)}] Suppose moreover $X_\alpha$ quasi-compact. For $f$ to be smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}, it is necessary and sufficient that there exist $\lambda\geq\alpha$ such that $f_\lambda$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}.
 \end{enumerate}
 \end{proposition}
 
-(i) If $y=f(x)$, $y_\lambda=f_\lambda(x_\lambda)$ is the canonical projection of $y$ in $Y_\lambda$, and we have $f^{-1}(y)=f_\lambda^{-1}(y_\lambda)\otimes_{\mathbf{k}(y_\lambda)}\boldsymbol{k}(y)$; the part of the statement concerning unramified morphisms thus follows from (17.7.1, (i)), and it therefore suffices to consider the case of smooth morphisms. As $f$ and $f_\lambda$ are locally of finite presentation, it amounts to the same to say that $f^{-1}(y)$ is geometrically regular at the point $x$ or that $f_\lambda^{-1}(y_\lambda)$ is geometrically regular at the point $x_\lambda$ (6.7.8). The proposition therefore follows from (17.5.1) and from (11.2.6).
+(i) If $y=f(x)$, $y_\lambda=f_\lambda(x_\lambda)$ is the canonical projection of $y$ in $Y_\lambda$, and we have $f^{-1}(y)=f_\lambda^{-1}(y_\lambda)\otimes_{\kres(y_\lambda)}\boldsymbol{k}(y)$; the part of the statement concerning unramified morphisms thus follows from (17.7.1, (i)), and it therefore suffices to consider the case of smooth morphisms. As $f$ and $f_\lambda$ are locally of finite presentation, it amounts to the same to say that $f^{-1}(y)$ is geometrically regular at the point $x$ or that $f_\lambda^{-1}(y_\lambda)$ is geometrically regular at the point $x_\lambda$ (6.7.8). The proposition therefore follows from (17.5.1) and from (11.2.6).
 
 (ii) For every $\lambda$, let $U_\lambda$ be the open set of $x_\lambda\in X_\lambda$ such that $f_\lambda$ is smooth (resp. unramified, resp. étale) at the point $x_\lambda$, and let $V_\lambda$ be its inverse image in $X$. As, by hypothesis, for every $x\in X$ there exists, by virtue of (i), a $\lambda$ such that $f_\lambda$ is smooth (resp. unramified, resp. étale) at the point $x_\lambda$, $X$ is the union of the $V_\lambda$. Moreover (17.3.3), for $\lambda\leq\mu$ we have $V_\lambda\subset V_\mu$, so, as $X$ is quasi-compact, there exists an index $\mu$ such that $X=V_\mu$. As the $X_\lambda$ are quasi-compact, it then follows from (8.3.4) that there exists an index $\nu\geq\mu$ such that the inverse image of $U_\mu$ in $X_\nu$ is the whole of $X_\nu$, which means that $f_\nu$ is smooth (resp. unramified, resp. étale) by (17.3.3).
 
@@ -704,11 +698,11 @@ The notation being that of \textup{(8.8.1)}, suppose $X_\alpha$ and $Y_\alpha$ l
 \label{IV.17.7.9}
 Let $S=\Spec(A)$ be an affine scheme, and $f:X\to S$ a morphism. The following conditions are equivalent:
 \begin{enumerate}
-  \item[\textup{a)}] $f$ is a morphism of finite presentation and smooth (resp. unramified, resp. étale).
+  \item[\textup{a)}] $f$ is a morphism of finite presentation and smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}.
 
   \oldpage[IV-4]{76}
 
-  \item[\textup{b)}] There exist a Noetherian affine scheme $S_0=\Spec(A_0)$, a morphism of finite type $f_0:X_0\to S_0$, and a morphism $S\to S_0$ such that the $S$-prescheme $X_0\otimes_{S_0}S$ is $S$-isomorphic to $X$ and $f_0$ is smooth (resp. unramified, resp. étale).
+  \item[\textup{b)}] There exist a Noetherian affine scheme $S_0=\Spec(A_0)$, a morphism of finite type $f_0:X_0\to S_0$, and a morphism $S\to S_0$ such that the $S$-prescheme $X_0\otimes_{S_0}S$ is $S$-isomorphic to $X$ and $f_0$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale\textup{)}.
   \item[\textup{c)}] The conditions of b) are satisfied, and moreover $A_0$ is a sub-$\mathbb{Z}$-algebra of finite type of $A$, the morphism $S\to S_0$ corresponding to the canonical injection $A_0\to A$.
 \end{enumerate}
 \end{corollary}
@@ -728,16 +722,14 @@ The question being local on $S$, $X$ and $Y$, we may suppose that $S$, $X$ and $
 \label{IV.17.7.11}
 Let $S$ be a prescheme, $X$, $Y$ two $S$-preschemes locally of finite presentation over $S$, and $f:X\to Y$ an $S$-morphism. For every $s\in S$, we denote by $X_s$, $Y_s$, $f_s$ the preschemes and the morphism deduced from $X$, $Y$, $f$ by the base change $\Spec(\boldsymbol{k}(s))\to S$. Then:
 \begin{enumerate}
-  \item[\textup{(i)}] The set of $x\in X$ such that, if $s$ is the image of $x$ in $S$, $f_s:X_s\to Y_s$ is smooth (resp. unramified, resp. étale, resp. differentially smooth) at the point $x$, is locally constructible.
-  \item[\textup{(ii)}] Suppose $f$ of finite presentation. The set of $y\in Y$ such that, if $s$ is the image of $y$ in $S$, $f_s$ is smooth (resp. unramified, resp. étale, resp. differentially smooth) at all the points of $f_s^{-1}(y)$, is locally constructible.
-  \item[\textup{(iii)}] Suppose $X$ and $Y$ of finite presentation over $S$. The set of $s\in S$ such that $f_s$ is smooth (resp. unramified, resp. étale, resp. differentially smooth) is locally constructible.
+  \item[\textup{(i)}] The set of $x\in X$ such that, if $s$ is the image of $x$ in $S$, $f_s:X_s\to Y_s$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale, \textup{resp.}\ differentially smooth\textup{)} at the point $x$, is locally constructible.
+  \item[\textup{(ii)}] Suppose $f$ of finite presentation. The set of $y\in Y$ such that, if $s$ is the image of $y$ in $S$, $f_s$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale, \textup{resp.}\ differentially smooth\textup{)} at all the points of $f_s^{-1}(y)$, is locally constructible.
+  \item[\textup{(iii)}] Suppose $X$ and $Y$ of finite presentation over $S$. The set of $s\in S$ such that $f_s$ is smooth \textup{(resp.}\ unramified, \textup{resp.}\ étale, \textup{resp.}\ differentially smooth\textup{)} is locally constructible.
 \end{enumerate}
 \end{proposition}
 
 Let $E$ be the set of $x\in X$ satisfying the property considered in (i). Then the set $F$ of $y\in Y$ satisfying the corresponding property considered in (ii) is
-
 \oldpage[IV-4]{77}
-
 none other than $Y\setmin f(X\setmin E)$, so (ii) follows from (i) and from Chevalley's theorem when $f$ is of finite presentation (1.8.4). Likewise, if $h:Y\to S$ is the structural morphism, the set of $s\in S$ satisfying the corresponding property considered in (iii) is $S\setmin h(Y\setmin F)$, so (iii) again follows from (ii) and from Chevalley's theorem when $f$ and $h$ are of finite presentation. It therefore suffices to prove the assertions of (i).
 
 Let us first prove (i) for the property of being \emph{smooth}. The question being local on $X$, we may restrict to the case where $S=\Spec(A)$, $X=\Spec(B)$ and $Y=\Spec(C)$ are affine, $B$ and $C$ being $A$-algebras of finite presentation. Arguing as at the beginning of (9.9.1) and using (17.7.2, (ii)), we reduce to the case where $A$ is Noetherian. By virtue of ($\mathbf{0}_{\mathrm{III}}$, 9.2.3), we are reduced to seeing that if $x\in E$ (resp. if $x\notin E$), there exists a neighbourhood $V$ of $x$ in $\overline{\{x\}}$ contained in $E$ (resp. in $X\setmin E$). Denoting by $g:X\to S$ and $h:Y\to S$ the structural morphisms, we can first replace $S$ by the reduced sub-prescheme $S'$ of $S$ having $\overline{\{g(x)\}}$ as underlying space, $X$ by $g^{-1}(S')$, and $Y$ by $h^{-1}(S')$, the fibres of $X$ and $X'$ (resp. $Y$ and $Y'$) at the points of $S'$ being the same. In other words, we may restrict to the case where $S$ is \emph{integral} and $\eta=g(x)=h(y)$ (where $y=f(x)$) is its generic point.
@@ -777,14 +769,14 @@ Finally, consider the property of being unramified; note that the diagonal morph
 Let $g:Y\to S$, $h:X\to S$ be two morphisms locally of finite presentation. For an $S$-morphism $f:X\to Y$ to be unramified, it is necessary and sufficient that for every $s\in S$, the morphism $f_s:h^{-1}(s)\to g^{-1}(s)$ deduced from $f$ by the base change $\Spec(\boldsymbol{k}(s))\to S$ be unramified.
 \end{proposition}
 
-This follows immediately from the fact that, for a morphism locally of finite presentation, being unramified is a property of the \emph{fibres} of this morphism (17.4.1, $d$)), and from the fact that, for every $y\in Y$, we have $f^{-1}(y)=f_s^{-1}(y)$ if $s=g(y)$.
+This follows immediately from the fact that, for a morphism locally of finite presentation, being unramified is a property of the \emph{fibres} of this morphism (17.4.1, \emph{d)}), and from the fact that, for every $y\in Y$, we have $f^{-1}(y)=f_s^{-1}(y)$ if $s=g(y)$.
 
 \begin{proposition}[17.8.2]
 \label{IV.17.8.2}
 Let $g:Y\to S$, $h:X\to S$ be two morphisms locally of finite presentation; suppose moreover that $h$ is flat. For an $S$-morphism $f:X\to Y$ to be smooth \textup{(resp.}\ étale\textup{)}, it is necessary and sufficient that, for every $s\in S$, the morphism $f_s:h^{-1}(s)\to g^{-1}(s)$ deduced from $f$ by the base change $\Spec(\boldsymbol{k}(s))\to S$ be smooth \textup{(resp.}\ étale\textup{)}. When this is the case, the morphism $g$ is flat at the points of $f(X)$.
 \end{proposition}
 
-Indeed, we know (11.3.10) that for $f$ to be flat, it is necessary and sufficient that $f_s$ be flat for every $s\in S$, and that $g$ is then flat at the points of $f(X)$. But for a flat morphism locally of finite presentation, being smooth is a property of the \emph{fibres} of this morphism (17.5.1, $b$)), and for every $y\in Y$, we have $f^{-1}(y)=f_s^{-1}(y)$ if $s=g(y)$.
+Indeed, we know (11.3.10) that for $f$ to be flat, it is necessary and sufficient that $f_s$ be flat for every $s\in S$, and that $g$ is then flat at the points of $f(X)$. But for a flat morphism locally of finite presentation, being smooth is a property of the \emph{fibres} of this morphism (17.5.1, \emph{b)}), and for every $y\in Y$, we have $f^{-1}(y)=f_s^{-1}(y)$ if $s=g(y)$.
 
 \begin{remark}[17.8.3]
 \label{IV.17.8.3}
@@ -805,12 +797,10 @@ Let $f:X\to Y$ be a morphism. The following properties are equivalent:
 \end{enumerate}
 \end{theorem}
 
-It follows from (1.4.3, (i)) that a) implies b). Condition b) implies that for every $y\in Y$, the fibre $f^{-1}(y)$ is empty or isomorphic to $\Spec(\boldsymbol{k}(y))$ (8.11.5.1), hence b) implies c), by virtue of (17.6.2, $c$)). It remains to see that c) implies a).
+It follows from (1.4.3, (i)) that a) implies b). Condition b) implies that for every $y\in Y$, the fibre $f^{-1}(y)$ is empty or isomorphic to $\Spec(\boldsymbol{k}(y))$ (8.11.5.1), hence b) implies c), by virtue of (17.6.2, \emph{c)}). It remains to see that c) implies a).
 
 The question being local on $X$ and on $Y$ (since $f$ is injective), we may restrict to the case where $Y$ is affine and $f$ of finite presentation. Since $f$ is flat, it is an \emph{open} morphism (2.4.6), so, replacing $Y$ by $f(X)$, we may suppose that $f$ is \emph{surjective}. For every morphism $Y'\to Y$, $f'=f_{(Y')}:X_{(Y')}\to Y'$ is again étale, radicial, surjective and of finite presentation, hence open, and consequently a homeomorphism; in other words $f$ is a \emph{universal homeomorphism}, and, being of finite type and separated (1.8.7.1), $f$ is \emph{proper}. The hypothesis that $f$ is radicial and of finite type then implies that $f$ is quasi-finite; hence (8.11.1) $f$ is a \emph{finite} morphism. To prove that $f$ is an isomorphism, we may restrict to the case
-
 \oldpage[IV-4]{80}
-
 where $Y=\Spec(A)$, $A$ being a local ring. Since $f$ is of finite presentation, we have $X=\Spec(B)$, where $B$ is a flat $A$-module of finite presentation (1.4.7), hence \emph{free} (Bourbaki, \emph{Alg. comm.}, chap. II, § 5, n\textsuperscript{o} 2, cor. 2 of th. 1). Moreover, if $\mathfrak m$ is the maximal ideal of $A$ and $k$ its residue field, $B/\mathfrak mB$ is by hypothesis a field, at the same time a radicial extension and a finite separable extension of $k$, since $f$ is étale and radicial (17.6.1); hence $B/\mathfrak mB$ is isomorphic to $k$, and since $B$ is a free $A$-module, $B$ is isomorphic to $A$. Q.E.D.
 
 \begin{corollary}[17.9.2]
@@ -822,7 +812,7 @@ Indeed $f$ is étale and radicial, hence an isomorphism of $X$ onto a prescheme 
 
 \begin{corollary}[17.9.3]
 \label{IV.17.9.3}
-Let $f:X\to Y$ be an étale (resp. étale and separated) morphism. Then every $Y$-section $g:Y\to X$ of $X$ is an open (resp. open and closed) immersion; moreover the map $g\leadsto g(Y)$ is a bijection of the set $\Gamma(X/Y)$ of $Y$-sections of $X$ onto the set of open (resp. open and closed) subsets $Z$ of $X$ such that the restriction of $f$ to $Z$ is a surjective and radicial morphism of $Z$ onto $Y$.
+Let $f:X\to Y$ be an étale \textup{(resp.}\ étale and separated\textup{)} morphism. Then every $Y$-section $g:Y\to X$ of $X$ is an open \textup{(resp.}\ open and closed\textup{)} immersion; moreover the map $g\leadsto g(Y)$ is a bijection of the set $\Gamma(X/Y)$ of $Y$-sections of $X$ onto the set of open \textup{(resp.}\ open and closed\textup{)} subsets $Z$ of $X$ such that the restriction of $f$ to $Z$ is a surjective and radicial morphism of $Z$ onto $Y$.
 \end{corollary}
 
 Indeed, the fact that $g$ is an open immersion already follows from the fact that $f$ is unramified (17.4.1, \emph{b$''$)}), and the restriction of $f$ to the open subset $g(Y)$ of $X$ is an isomorphism. Conversely, if $Z$ is an open subset of $X$ such that $f|Z$ is a surjective and radicial morphism of $Z$ onto $Y$, $f|Z$ is an isomorphism by virtue of (17.9.1), since it is étale. If moreover $f$ is separated, we know that $g$ is a closed immersion (\textbf{I}, 5.4.6), which completes the proof of the corollary.
@@ -834,7 +824,7 @@ Let $Y$ be a connected prescheme, $f:X\to Y$ an étale and separated morphism. T
 
 \begin{corollary}[17.9.5]
 \label{IV.17.9.5}
-Let $g:Y\to S$, $h:X\to S$ be two morphisms locally of finite presentation; suppose moreover that $h$ is flat. For an $S$-morphism $f:X\to Y$ to be an open immersion (resp. an isomorphism), it is necessary and sufficient that, for every $s\in S$, the morphism $f_s:h^{-1}(s)\to g^{-1}(s)$ deduced from $f$ by the base change $\Spec(\boldsymbol{k}(s))\to S$ be an open immersion (resp. an isomorphism).
+Let $g:Y\to S$, $h:X\to S$ be two morphisms locally of finite presentation; suppose moreover that $h$ is flat. For an $S$-morphism $f:X\to Y$ to be an open immersion \textup{(resp.}\ an isomorphism\textup{)}, it is necessary and sufficient that, for every $s\in S$, the morphism $f_s:h^{-1}(s)\to g^{-1}(s)$ deduced from $f$ by the base change $\Spec(\boldsymbol{k}(s))\to S$ be an open immersion \textup{(resp.}\ an isomorphism\textup{)}.
 \end{corollary}
 
 Indeed, if $f_s$ is an open immersion for every $s\in S$, it follows from (17.8.3) that $f$ is an étale morphism; since for every $y\in Y$ we have $f^{-1}(y)=f_s^{-1}(y)$ with $s=g(y)$, $f$ is radicial; hence $f$ is an open immersion by virtue of (17.9.1). If moreover $f_s$ is surjective for every $s\in S$, $f$ is surjective, hence an isomorphism.
@@ -847,14 +837,12 @@ Let $S$ be a prescheme, $X$ an $S$-prescheme of finite presentation. Every $S$-e
 \end{proposition}
 
 Let $f:X\to S$ be the structural morphism and $g$ the $S$-endomorphism under consideration. The question is local on $S$, and we may consequently suppose that $S$ is affine. Using (8.9.1) and (8.10.5, (i \emph{bis})), we are reduced to the case where $S=\Spec(A)$, where $A$ is a $\mathbb{Z}$-algebra of finite type, and consequently $X$ is a $\mathbb{Z}$-prescheme of finite type. It already follows from (10.4.11) that $g$ is a bijective morphism, since a monomorphism is radicial (8.11.5.1); it will therefore suffice to show
-
 \oldpage[IV-4]{81}
-
 that $g$ is an open immersion, and since $g$ is radicial, it will suffice, by virtue of (17.9.1), to prove that $g$ is étale. Moreover, since the set of points where $g$ is étale is open and $X$ is a Jacobson prescheme (10.4.7), it will suffice to show that $g$ is étale at every \emph{closed} point $z$ of $X$ (10.3.1). Set $z'=g(z)$; it follows from (10.4.11.1, (i)) that $z'$ is also a closed point of $X$, and since $g$ is a monomorphism, the map $\boldsymbol{k}(z')\to\boldsymbol{k}(z)$ deduced from $g$ is an \emph{isomorphism}. For $g$ to be étale at the point $z$, it is therefore necessary and sufficient that the canonical homomorphism $\widehat{\sh{O}}_{X,z'}\to\widehat{\sh{O}}_{X,z}$ be bijective (17.6.3, \emph{e$''$)}). For this we will prove that for every integer $n$, the canonical homomorphism $\sh{O}_{X,z'}/\mathfrak m_{z'}^{n+1}\to\sh{O}_{X,z}/\mathfrak m_z^{n+1}$ is bijective, from which the conclusion will follow immediately. We may suppose that $z$ belongs to the finite set $T_{p,d}$ of closed points $t$ of $X$ such that $\boldsymbol{k}(t)$ is an extension of $\mathbb{F}_p$ whose degree divides $d$; in which case the same holds for $z'$. Denote by $\sh{J}$ the coherent ideal of $\sh{O}_X$ such that $\sh{J}_x=\sh{O}_x$ for $x\notin T_{p,d}$, and $\sh{J}_x=\mathfrak m_x^{n+1}$ for $x\in T_{p,d}$. Let $T_{p,d,n}$ be the closed sub-prescheme of $X$ defined by $\sh{J}$, and $j:T_{p,d,n}\to X$ the canonical injection; the composite morphism $g\circ j:T_{p,d,n}\to X$ maps the set $T_{p,d}$ into itself, and for every $x\in T_{p,d}$, the homomorphism $\sh{O}_{X,g(x)}\to\sh{O}_{X,x}/\mathfrak m_x^{n+1}$ factors as
 \[
 \sh{O}_{X,g(x)}\to\sh{O}_{X,g(x)}/\mathfrak m_{g(x)}^{n+1}\to\sh{O}_{X,x}/\mathfrak m_x^{n+1}.
 \]
-Hence (I, 4.9) there exists a unique endomorphism $g'$ of $T_{p,d,n}$ such that $j\circ g'=g\circ j$. Since $j$ is a monomorphism, and the same holds for $g$ by hypothesis, we deduce that $g'$ is also a monomorphism, and the proposition will be proved if we show that $g'$ is an \emph{automorphism} of $T_{p,d,n}$. Now, for every $x\in T_{p,d,n}$, we have seen that $\boldsymbol{k}(x)$ is a finite field, and since $\sh{O}_{X,x}$ is Noetherian, each of the $\mathfrak m_x^h/\mathfrak m_x^{h+1}$ is a $\boldsymbol{k}(x)$-vector space of finite rank; from which we conclude immediately that the local ring $\sh{O}_{X,x}/\mathfrak m_x^{n+1}$ of $T_{p,d,n}$ at the point $x$ has a \emph{finite} number of elements, and \emph{a fortiori} is a $\mathbb{Z}$-module of finite type. Since $T_{p,d,n}$ is the sum of finitely many preschemes $\Spec(\sh{O}_{X,x}/\mathfrak m_x^{n+1})$, it is a \emph{finite} $\mathbb{Z}$-prescheme; the endomorphism $g'$ is therefore also \emph{finite} (\textbf{II}, 6.1.5, (v)), hence proper. But a proper monomorphism is a \emph{closed immersion} (8.11.5); if $T_{p,d,n}=\Spec(B)$, $g'$ therefore corresponds to a surjective endomorphism $\varphi:B\to B$ of the ring $B$. Now the set $B$ is finite, hence $\varphi$ is necessarily bijective. Q.E.D.
+Hence (\textbf{I}, 4.1.9) there exists a unique endomorphism $g'$ of $T_{p,d,n}$ such that $j\circ g'=g\circ j$. Since $j$ is a monomorphism, and the same holds for $g$ by hypothesis, we deduce that $g'$ is also a monomorphism, and the proposition will be proved if we show that $g'$ is an \emph{automorphism} of $T_{p,d,n}$. Now, for every $x\in T_{p,d,n}$, we have seen that $\boldsymbol{k}(x)$ is a finite field, and since $\sh{O}_{X,x}$ is Noetherian, each of the $\mathfrak m_x^h/\mathfrak m_x^{h+1}$ is a $\boldsymbol{k}(x)$-vector space of finite rank; from which we conclude immediately that the local ring $\sh{O}_{X,x}/\mathfrak m_x^{n+1}$ of $T_{p,d,n}$ at the point $x$ has a \emph{finite} number of elements, and \emph{a fortiori} is a $\mathbb{Z}$-module of finite type. Since $T_{p,d,n}$ is the sum of finitely many preschemes $\Spec(\sh{O}_{X,x}/\mathfrak m_x^{n+1})$, it is a \emph{finite} $\mathbb{Z}$-prescheme; the endomorphism $g'$ is therefore also \emph{finite} (\textbf{II}, 6.1.5, (v)), hence proper. But a proper monomorphism is a \emph{closed immersion} (8.11.5); if $T_{p,d,n}=\Spec(B)$, $g'$ therefore corresponds to a surjective endomorphism $\varphi:B\to B$ of the ring $B$. Now the set $B$ is finite, hence $\varphi$ is necessarily bijective. Q.E.D.
 
 \subsection{Relative dimension of a prescheme smooth over another}
 \EGAReaderTarget{ega4.c04.subsec.17-10}{subsection:IV.17.10}
@@ -864,19 +852,17 @@ Hence (I, 4.9) there exists a unique endomorphism $g'$ of $T_{p,d,n}$ such that 
 Let $f:X\to Y$ be a morphism locally of finite type. We call \emph{relative dimension of $f$ at the point $x\in X$} (or \emph{relative dimension of $X$ over $Y$ at the point $x$}), and denote by $\dim_x f$, the nonnegative integer $\dim_x(f^{-1}(f(x)))$.
 \end{definition}
 
-To say that $f$ is \emph{quasi-finite} at the point $x$ (\textbf{Err}$_{\mathrm{III}}$, 20) is therefore equivalent to saying that $\dim_x f=0$. We have seen (13.1.3) that the function $x\leadsto\dim_x f$ is upper semi-continuous. Note that, even when the morphism $f$ has property $(S_1)$ (in other words (6.8.1) is flat and such that its fibres have no embedded associated prime cycle), the function $x\leadsto\dim_x f$ is not necessarily continuous, as is shown by the example where $Y=\Spec(k)$, with $k$ a field, and $X=\Spec(k[U,V,W]/\mathfrak p\mathfrak q)$, where $\mathfrak p=(W)$ and $\mathfrak q=(U)+(V-W)$, prime ideals of $k[U,V,W]$ ($X$ thus being the union, in 3-dimensional space, of a plane and a line not parallel to this plane).
+To say that $f$ is \emph{quasi-finite} at the point $x$ (\textbf{Err}$_{\mathrm{III}}$, 20) is therefore equivalent to saying that $\dim_x f=0$. We have seen (13.1.3) that the function $x\leadsto\dim_x f$ is upper semi-continuous. Note that, even when the morphism $f$ has property $(S_1)$ (in other words (6.8.1) is flat and such that its fibres have no embedded associated prime cycle), the function $x\leadsto\dim_x f$ is not necessarily continuous, as is shown by the example where $Y=\Spec(k)$, with $k$ a field, and $X=\Spec(k[U,V,W]/\mathfrak p\mathfrak q)$, where $\mathfrak p=(W)$ and $\mathfrak q=(U)+(V\setmin W)$, prime ideals of $k[U,V,W]$ ($X$ thus being the union, in 3-dimensional space, of a plane and a line not parallel to this plane).
 
 To say that a morphism $f:X\to Y$ locally of finite presentation is étale at the point $x\in X$ also means that $f$ is smooth at the point $x$ and that $\dim_x f=0$ (17.6.1).
 
 \begin{proposition}[17.10.2]
 \label{IV.17.10.2}
-Let $f:X\to Y$ be a smooth morphism. For every $x\in X$, the locally free $\sh{O}_X$-module $\varOmega_f^1$ \textup{(17.2.3)} has rank at $x$ equal to $\dim_x f$ (which implies that $x\leadsto\dim_x f$ is a continuous function on $X$).
+Let $f:X\to Y$ be a smooth morphism. For every $x\in X$, the locally free $\sh{O}_X$-Module $\varOmega_f^1$ \textup{(17.2.3)} has rank at $x$ equal to $\dim_x f$ \textup{(which implies that $x\leadsto\dim_x f$ is a \emph{continuous} function on $X$)}.
 \end{proposition}
 
 Indeed, if $y=f(x)$, $X_y=f^{-1}(y)$ is smooth over $\boldsymbol{k}(y)$, and if $f_y:X_y\to\Spec(\boldsymbol{k}(y))$ is the structural morphism, we have $\varOmega_{f_y}^1=\varOmega_f^1\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y)$ (16.4.5); we may therefore restrict to the case where $Y=\Spec(k)$ is the spectrum of a field; moreover, by virtue of (16.4.5) and (17.7.1), we may replace $k$ by an algebraically closed extension, in other words
-
 \oldpage[IV-4]{82}
-
 suppose $k$ algebraically closed. The set of points of $X$ rational over $k$ then being dense in $X$ (10.4.8), we may restrict to the case where $x$ is rational over $k$. Now (16.4.12) $(\varOmega^1_{X/k})_x\otimes_{\sh{O}_x}\boldsymbol{k}(x)$ is then $k$-isomorphic to $\mathfrak m_x/\mathfrak m_x^2$, and since $\sh{O}_x$ is a regular local ring (17.5.1), $\operatorname{rg}_k(\mathfrak m_x/\mathfrak m_x^2)=\dim(\sh{O}_x)$ (\textbf{0}, 17.1.1); hence $\operatorname{rg}_{\sh{O}_x}(\varOmega^1_{X/k})_x=\dim(\sh{O}_x)$. But since $\boldsymbol{k}(x)=k$, we have $\dim_x f=\dim(\sh{O}_x)$ (5.2.3). Q.E.D.
 
 We will prove a converse of this result further on (17.15.5).
@@ -891,11 +877,11 @@ Let $f:X\to Y$, $g:Y\to Z$ be two smooth morphisms. Then, for every $x\in X$, we
 \end{equation}
 \end{corollary}
 
-Indeed, $g\circ f$ is smooth (17.3.3), hence the three $\sh{O}_X$-modules $\varOmega^1_{X/Y}$, $\varOmega^1_{X/Z}$ and $f^*(\varOmega^1_{Y/Z})$ are locally free (17.2.3 and $\mathbf{0}_{\mathrm I}$, 5.4.5); moreover the rank at $x$ of $f^*(\varOmega^1_{Y/Z})$ is equal to the rank at $y=f(x)$ of $\varOmega^1_{Y/Z}$. Equality (17.10.3.1) is therefore a consequence of (17.10.2) and of the exactness of the sequence (17.2.3.1).
+Indeed, $g\circ f$ is smooth (17.3.3), hence the three $\sh{O}_X$-Modules $\varOmega^1_{X/Y}$, $\varOmega^1_{X/Z}$ and $f^*(\varOmega^1_{Y/Z})$ are locally free (17.2.3 and $\mathbf{0}_{\mathrm I}$, 5.4.5); moreover the rank at $x$ of $f^*(\varOmega^1_{Y/Z})$ is equal to the rank at $y=f(x)$ of $\varOmega^1_{Y/Z}$. Equality (17.10.3.1) is therefore a consequence of (17.10.2) and of the exactness of the sequence (17.2.3.1).
 
 \begin{corollary}[17.10.4]
 \label{IV.17.10.4}
-Let $f:X\to Y$ be a smooth morphism, $X'$ a sub-prescheme of $X$ such that the composite morphism $X'\xrightarrow{j}X\xrightarrow{f}Y$ (where $j$ is the canonical injection) is smooth. Then the conormal sheaf $\sh{N}_{X'/X}$ is a locally free $\sh{O}_{X'}$-module, and for every $x\in X'$, we have
+Let $f:X\to Y$ be a smooth morphism, $X'$ a sub-prescheme of $X$ such that the composite morphism $X'\xrightarrow{j}X\xrightarrow{f}Y$ (where $j$ is the canonical injection) is smooth. Then the conormal sheaf $\sh{N}_{X'/X}$ is a locally free $\sh{O}_{X'}$-Module, and for every $x\in X'$, we have
 \begin{equation}
 \label{IV.17.10.4.1}
 \tag{17.10.4.1}
@@ -920,26 +906,26 @@ Let $f:Y\to S$ and $h:X\to S$ be two morphisms locally of finite presentation, $
   \tag{17.11.1.1}
   (g^*(\varOmega^1_{Y/S}))_x\to(\varOmega^1_{X/S})_x
   \end{equation}
-  is left invertible (in other words, is an isomorphism onto a \emph{direct factor} of $(\varOmega^1_{X/S})_x$).
-  \item[c')] $h$ is smooth at the point $x$, and the canonical homomorphism
+  is left invertible \textup{(in other words, is an isomorphism onto a \emph{direct factor of} $(\varOmega^1_{X/S})_x$)}.
+  \item[\textup{c$'$)}] $h$ is smooth at the point $x$, and the canonical homomorphism
   \begin{equation}
   \label{IV.17.11.1.2}
   \tag{17.11.1.2}
-  ((\varOmega^1_{Y/S})_y\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y))\otimes_{\mathbf{k}(y)}\boldsymbol{k}(x)\to(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)
+  ((\varOmega^1_{Y/S})_y\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y))\otimes_{\kres(y)}\boldsymbol{k}(x)\to(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)
   \end{equation}
   is injective.
 \end{enumerate}
-Suppose moreover that the homomorphism $\boldsymbol{k}(y)\to k(x)$ is bijective. Then the preceding conditions are also equivalent to the following:
+Suppose moreover that the homomorphism $\boldsymbol{k}(y)\to\boldsymbol{k}(x)$ is bijective. Then the preceding conditions are also equivalent to the following:
 \begin{enumerate}
   \item[\textup{d)}] $h$ is smooth at the point $x$, and the canonical map $\mathrm{T}_{X/S}(x)\to\mathrm{T}_{Y/S}(y)$ from the tangent vector space to $X$ at $x$ to the tangent vector space to $Y$ at $y$ \textup{(16.5.12)} is surjective.
 \end{enumerate}
 \end{theorem}
 
-That a) implies b) follows trivially from (17.3.3, (ii)); b) implies c) by application of (17.2.3, (ii)). To see that c) is equivalent to c'), note that by virtue of (17.2.3, (i)), $\varOmega^1_{X/S}$ is a locally free $\sh{O}_X$-module of finite type; it then suffices to apply (\textbf{0}, 19.1.12) to the local ring $\sh{O}_{X,x}$ and to the homomorphism (17.11.1.1) of $\sh{O}_{X,x}$-modules of finite type. When $\boldsymbol{k}(x)=k(y)$, the tangent linear map $\mathrm{T}_{X/S}(x)\to\mathrm{T}_{Y/S}(y)$ is the transpose of (17.11.1.2), by (16.5.12), which establishes in this case the equivalence of c') and d).
+That a) implies b) follows trivially from (17.3.3, (ii)); b) implies c) by application of (17.2.3, (ii)). To see that c) is equivalent to c'), note that by virtue of (17.2.3, (i)), $\varOmega^1_{X/S}$ is a locally free $\sh{O}_X$-Module of finite type; it then suffices to apply (\textbf{0}, 19.1.12) to the local ring $\sh{O}_{X,x}$ and to the homomorphism (17.11.1.1) of $\sh{O}_{X,x}$-modules of finite type. When $\boldsymbol{k}(x)=\boldsymbol{k}(y)$, the tangent linear map $\mathrm{T}_{X/S}(x)\to\mathrm{T}_{Y/S}(y)$ is the transpose of (17.11.1.2), by (16.5.12), which establishes in this case the equivalence of c') and d).
 
 \oldpage[IV-4]{83}
 
-It therefore remains to prove that c) implies a). We may restrict to the case where $S=\Spec(A)$, $Y=\Spec(B)$, $X=\Spec(C)$ are affine. The hypothesis implies (17.2.3, (i)) that $(\varOmega^1_{X/S})_x=\Omega^1_{C_{\mathfrak m}/A_{\mathfrak s}}$ is a free $C_{\mathfrak m}$-module: indeed (16.10.6) there exist elements $t_i$ ($1\leq i\leq r$) of $B_y=\sh{O}_{Y,y}$ such that the differentials $d_{B_y/A_{\mathfrak s}}(t_i)$ generate the $B_y$-module $\Omega^1_{B_y/A_{\mathfrak s}}$ and their images in $\Omega^1_{C_{\mathfrak m}/A_{\mathfrak s}}$ form part of a basis of this free $C_{\mathfrak m}$-module. Since $\Omega^1_{Y/S}$ (resp. $\varOmega^1_{X/S}$) is an $\sh{O}_Y$-module (resp. an $\sh{O}_X$-module) of finite presentation (16.4.22), we may, replacing $X$ and $Y$ if necessary by suitable affine open neighbourhoods of $x$ and $y$ respectively, suppose that $\Omega^1_{C/A}$ is a free $C$-module and that the $t_i$ are the images of elements $s_i$ ($1\leq i\leq r$) of $B$ such that the $d_{B/A}(s_i)$ generate the $B$-module $\Omega^1_{B/A}$ and their images in $\Omega^1_{C/A}$ form part of a basis of this $C$-module (Bourbaki, \emph{Alg. comm.}, chap. II, § 5, n\textsuperscript{o} 1, prop. 2). Let $\varphi$ be the $A$-homomorphism from $B'=A[T_1,\ldots,T_r]$ to $B$ such that $\varphi(T_i)=s_i$ for every $i$; the corresponding di-homomorphism $\Omega^1_{B'/A}\to\Omega^1_{B/A}$ (\textbf{0}, 20.5.2) transforms the $d_{B'/A}(T_i)$, which form a basis of $\Omega^1_{B'/A}$ (\textbf{0}, 20.4.13), into the $d_{B/A}(s_i)$, and is consequently \emph{surjective}; if $Y'=\Spec(B')$, and if $u:Y\to Y'$ is the $S$-morphism corresponding to $\varphi$, we conclude from (17.2.2) that $u$ is \emph{unramified}. If we prove that the composite morphism $u\circ g:X\to Y'$ is smooth at the point $x$, it will therefore follow from (17.7.10) that $u$ is étale at the point $y$, and then from (17.3.5) that $g$ is smooth at the point $x$; finally, since the structural morphism $f':Y'\to S$ is smooth (17.3.8), $f=f'\circ u$ will be smooth at the point $y$. Since the canonical images of the $d_{B'/A}(T_i)$ in $\Omega^1_{C/A}$ are those of the $d_{B/A}(s_i)$, they form part of a basis of $\Omega^1_{C/A}$. We thus see that to prove that c) implies a), we may restrict to the case where $Y'=Y$, and consequently suppose that $f$ is a \emph{smooth} morphism.
+It therefore remains to prove that c) implies a). We may restrict to the case where $S=\Spec(A)$, $Y=\Spec(B)$, $X=\Spec(C)$ are affine. The hypothesis implies (17.2.3, (i)) that $(\varOmega^1_{X/S})_x=\Omega^1_{C_x/A_s}$ is a free $C_x$-module: indeed (16.10.6) there exist elements $t_i$ ($1\leq i\leq r$) of $B_y=\sh{O}_{Y,y}$ such that the differentials $d_{B_y/A_s}(t_i)$ generate the $B_y$-module $\Omega^1_{B_y/A_s}$ and their images in $\Omega^1_{C_x/A_s}$ form part of a basis of this free $C_x$-module. Since $\varOmega^1_{Y/S}$ (resp. $\varOmega^1_{X/S}$) is an $\sh{O}_Y$-Module (resp. an $\sh{O}_X$-Module) of finite presentation (16.4.22), we may, replacing $X$ and $Y$ if necessary by suitable affine open neighbourhoods of $x$ and $y$ respectively, suppose that $\Omega^1_{C/A}$ is a free $C$-module and that the $t_i$ are the images of elements $s_i$ ($1\leq i\leq r$) of $B$ such that the $d_{B/A}(s_i)$ generate the $B$-module $\Omega^1_{B/A}$ and their images in $\Omega^1_{C/A}$ form part of a basis of this $C$-module (Bourbaki, \emph{Alg. comm.}, chap. II, § 5, n\textsuperscript{o} 1, prop. 2). Let $\varphi$ be the $A$-homomorphism from $B'=A[T_1,\ldots,T_r]$ to $B$ such that $\varphi(T_i)=s_i$ for every $i$; the corresponding di-homomorphism $\Omega^1_{B'/A}\to\Omega^1_{B/A}$ (\textbf{0}, 20.5.2) transforms the $d_{B'/A}(T_i)$, which form a basis of $\Omega^1_{B'/A}$ (\textbf{0}, 20.4.13), into the $d_{B/A}(s_i)$, and is consequently \emph{surjective}; if $Y'=\Spec(B')$, and if $u:Y\to Y'$ is the $S$-morphism corresponding to $\varphi$, we conclude from (17.2.2) that $u$ is \emph{unramified}. If we prove that the composite morphism $u\circ g:X\to Y'$ is smooth at the point $x$, it will therefore follow from (17.7.10) that $u$ is étale at the point $y$, and then from (17.3.5) that $g$ is smooth at the point $x$; finally, since the structural morphism $f':Y'\to S$ is smooth (17.3.8), $f=f'\circ u$ will be smooth at the point $y$. Since the canonical images of the $d_{B'/A}(T_i)$ in $\Omega^1_{C/A}$ are those of the $d_{B/A}(s_i)$, they form part of a basis of $\Omega^1_{C/A}$. We thus see that to prove that c) implies a), we may restrict to the case where $Y'=Y$, and consequently suppose that $f$ is a \emph{smooth} morphism.
 
 By virtue of (17.8.2), we may then restrict to the case where $S=\Spec(k)$ is the spectrum of a field; furthermore, thanks to (17.7.1, (ii)), we may suppose that $k$ is algebraically closed; finally, replacing $X$ and $Y$ if necessary by open neighbourhoods of $x$ and $y$ respectively, we may suppose that $f$ and $h$ are both smooth, and that the canonical homomorphism
 \[
@@ -951,7 +937,7 @@ is left invertible (\textbf{0}, 19.1.12). Then the set of points of $X$ rational
 
 \emph{a fortiori} rational over $k$, and since $\sh{O}_{Y,y}$ is then a formally smooth $k$-algebra for the discrete topologies and $\sh{O}_{Y,y}/\mathfrak m_y=k$, it follows from (\textbf{0}, 20.5.14) that the canonical homomorphism $\mathfrak m_y/\mathfrak m_y^2\to(\varOmega^1_{Y/S})_y\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y)$ is bijective; likewise, the canonical homomorphism $\mathfrak m_x/\mathfrak m_x^2\to(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)$ is bijective. Hypothesis c'), which is equivalent to c), therefore means here that the canonical homomorphism
 \[
-(\mathfrak m_y/\mathfrak m_y^2)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(x)\to\mathfrak m_x/\mathfrak m_x^2
+(\mathfrak m_y/\mathfrak m_y^2)\otimes_{\kres(y)}\boldsymbol{k}(x)\to\mathfrak m_x/\mathfrak m_x^2
 \]
 is injective. Since the ring $\sh{O}_{X,x}$ is regular, the conclusion follows from (\textbf{0}, 17.3.3). Q.E.D.
 
@@ -966,9 +952,9 @@ Under the general hypotheses of \textup{(17.11.1)}, the following conditions are
   (g^*(\varOmega^1_{Y/S}))_x\to(\varOmega^1_{X/S})_x
   \]
   is bijective.
-  \item[c')] $h$ is smooth at the point $x$, and the canonical homomorphism
+  \item[\textup{c$'$)}] $h$ is smooth at the point $x$, and the canonical homomorphism
   \[
-  ((\varOmega^1_{Y/S})_y\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y))\otimes_{\mathbf{k}(y)}\boldsymbol{k}(x)\to(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)
+  ((\varOmega^1_{Y/S})_y\otimes_{\sh{O}_{Y,y}}\boldsymbol{k}(y))\otimes_{\kres(y)}\boldsymbol{k}(x)\to(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)
   \]
   is bijective.
 \end{enumerate}
@@ -982,7 +968,7 @@ Each of the conditions \emph{a)}, \emph{b)}, \emph{c)} of (17.11.2) is equivalen
 
 \begin{corollary}[17.11.3]
 \label{IV.17.11.3}
-Let $h:X\to S$ be a smooth morphism, $s_i$ ($1\leq i\leq r$) sections of $\sh{O}_X$ over $X$ (which are also sections of $h_*(\sh{O}_X)$ over $S$), and $g:X\to S[T_1,\ldots,T_r]=\mathbf{V}_S^r$ the $S$-morphism corresponding to the homomorphism of $\sh{O}_S$-modules $\sh{O}_S^r\to h_*(\sh{O}_X)$ defined by these sections \textup{(\textbf{II}, 1.2.7)}. For $g$ to be smooth \textup{(resp.}\ étale\textup{)} at a point $x\in X$, it is necessary and sufficient that the $(d_{X/S}(s_i))_x$ form part of a basis (resp. constitute a basis) of the $\sh{O}_{X,x}$-module $(\varOmega^1_{X/S})_x$.
+Let $h:X\to S$ be a smooth morphism, $s_i$ ($1\leq i\leq r$) sections of $\sh{O}_X$ over $X$ (which are also sections of $h_*(\sh{O}_X)$ over $S$), and $g:X\to S[T_1,\ldots,T_r]=\mathbf{V}_S^r$ the $S$-morphism corresponding to the homomorphism of $\sh{O}_S$-Modules $\sh{O}_S^r\to h_*(\sh{O}_X)$ defined by these sections \textup{(\textbf{II}, 1.2.7)}. For $g$ to be smooth \textup{(resp.}\ étale\textup{)} at a point $x\in X$, it is necessary and sufficient that the $(d_{X/S}(s_i))_x$ form part of a basis \textup{(resp.}\ constitute a basis\textup{)} of the $\sh{O}_{X,x}$-module $(\varOmega^1_{X/S})_x$.
 \end{corollary}
 
 It suffices to apply (17.11.1) (resp. (17.11.2)), taking for $f$ the structural morphism $S[T_1,\ldots,T_r]\to S$.
@@ -1022,7 +1008,7 @@ Let $f:X\to S$, $h:Y\to S$ be two morphisms locally of finite presentation, $j:Y
 
 \oldpage[IV-4]{86}
 
-  \item[c')] $h$ is smooth at the point $y$ and there exists an open neighbourhood $U$ of $y$ in $Y$ such that $j|U:U\to X$ is a quasi-regular immersion (in other words (16.9.8), there exists a neighbourhood $U$ of $y$ in $Y$ in which $\sh{N}_{Y/X}$ is a locally free $\sh{O}_Y$-module and the canonical homomorphism
+  \item[\textup{c$'$)}] $h$ is smooth at the point $y$ and there exists an open neighbourhood $U$ of $y$ in $Y$ such that $j|U:U\to X$ is a quasi-regular immersion (in other words (16.9.8), there exists a neighbourhood $U$ of $y$ in $Y$ in which $\sh{N}_{Y/X}$ is a locally free $\sh{O}_Y$-Module and the canonical homomorphism
   \[
   \mathbf{S}^{\bullet}_{\sh{O}_Y}(\sh{N}_{Y/X})\to\mathscr{G}r^{\bullet}(j)
   \]
@@ -1030,7 +1016,7 @@ Let $f:X\to S$, $h:Y\to S$ be two morphisms locally of finite presentation, $j:Y
 \end{enumerate}
 \end{theorem}
 
-To prove the equivalence of a) and b), we may restrict to the case where $S=\Spec(A)$ and $X=\Spec(B)$ are affine, with $Y=\Spec(B/\mathfrak J)$, where $\mathfrak J$ is an ideal of finite type of $B$, and $B$ is a smooth $A$-algebra (17.3.2, (ii)). It then suffices to apply the Jacobian criterion (\textbf{0}, 22.6.1) as well as (\textbf{0}, 19.1.14), taking into account the fact that $\varOmega^1_{X/S}$ is a locally free $\sh{O}_X$-module in a neighbourhood of $x$ and $\sh{N}_{Y/X}$ an $\sh{O}_Y$-module of finite type (16.1.6).
+To prove the equivalence of a) and b), we may restrict to the case where $S=\Spec(A)$ and $X=\Spec(B)$ are affine, with $Y=\Spec(B/\mathfrak J)$, where $\mathfrak J$ is an ideal of finite type of $B$, and $B$ is a smooth $A$-algebra (17.3.2, (ii)). It then suffices to apply the Jacobian criterion (\textbf{0}, 22.6.1) as well as (\textbf{0}, 19.1.14), taking into account the fact that $\varOmega^1_{X/S}$ is a locally free $\sh{O}_X$-Module in a neighbourhood of $x$ and $\sh{N}_{Y/X}$ an $\sh{O}_Y$-Module of finite type (16.1.6).
 
 Secondly, let us prove that a) implies c'). We may again restrict to the case where $S$, $X$, $Y$ are affine, $B$ and $B/\mathfrak J$ smooth $A$-algebras, and it then follows from (17.7.9) and (8.10.5, (iv)) that there exist a Noetherian subring $A'$ of $A$, an $A'$-algebra of finite type $B'$ and an ideal $\mathfrak J'$ of $B'$ such that $B=B'\otimes_{A'}A$, $\mathfrak J=\mathfrak J'B$ and $B'$ and $B'/\mathfrak J'$ are smooth $A'$-algebras. Note that, by (\textbf{0}, 19.3.8), $B'$ is again a formally smooth $A'$-algebra when $A'$ is given the discrete topology and $B'$ the $\mathfrak J'$-preadic topology. Consequently (\textbf{0}, 19.5.4), $\mathfrak J'/\mathfrak J'^2$ is a projective $(B'/\mathfrak J')$-module and the canonical homomorphism
 \[
@@ -1038,7 +1024,7 @@ Secondly, let us prove that a) implies c'). We may again restrict to the case wh
 \]
 is bijective. In other words (16.9.8), the immersion $\Spec(B'/\mathfrak J')\to\Spec(B')$ is quasi-regular, hence regular since $B'$ is Noetherian (16.9.10). But since by hypothesis $B'/\mathfrak J'$ is a flat $A'$-module (17.5.1) and $B'$ an $A'$-algebra of finite presentation, we may apply (11.3.8), replacing $\sh{F}$ by $\widetilde{\mathfrak J}'$, and we therefore see (by base change) that $j$ is a regular immersion, and \emph{a fortiori} quasi-regular. The fact that $B$ is an $A$-algebra of finite presentation and a flat $A$-module shows moreover, by virtue of (11.3.8), that conditions c') and c) are equivalent, and are stable under base change.
 
-Let us finally show that c) implies a). From the fact that, in (11.3.8), condition b) implies c), we already see that if c) is satisfied, $f$ is \emph{flat} at the point $x$; by virtue of (17.5.1), everything therefore comes down to seeing that under hypothesis \emph{c)}, $f^{-1}(s)$ is smooth over $\boldsymbol{k}(s)$ at the point $x$, setting $s=h(x)$; since we have remarked that condition \emph{c)} is stable under base change, we see that we are reduced to the case where $S=\Spec(k)$ is the spectrum of a field, and taking into account (17.7.1, (ii)) we may suppose that $k$ is \emph{algebraically closed}. It then suffices to prove that $\sh{O}_{X,x}$ is a \emph{regular} ring (17.5.1). Now, by hypothesis we have $\sh{O}_{Y,y}=\sh{O}_{X,x}/\mathfrak J_x$, where $\mathfrak J_x$ is an ideal generated by an $\sh{O}_{X,x}$-regular sequence $(t_i)$, and $\sh{O}_{Y,y}$ is a regular ring; since the $t_i$ form part of a system of parameters for $\sh{O}_{X,x}$ (\textbf{0}, 16.4.1), the conclusion follows from (\textbf{0}, 17.1.7).
+Let us finally show that c) implies a). From the fact that, in (11.3.8), condition b) implies c), we already see that if c) is satisfied, $f$ is \emph{flat} at the point $x$; by virtue of (17.5.1), everything therefore comes down to seeing that under hypothesis \emph{c)}, $f^{-1}(s)$ is smooth over $\boldsymbol{k}(s)$ at the point $x$, setting $s=f(x)$; since we have remarked that condition \emph{c)} is stable under base change, we see that we are reduced to the case where $S=\Spec(k)$ is the spectrum of a field, and taking into account (17.7.1, (ii)) we may suppose that $k$ is \emph{algebraically closed}. It then suffices to prove that $\sh{O}_{X,x}$ is a \emph{regular} ring (17.5.1). Now, by hypothesis we have $\sh{O}_{Y,y}=\sh{O}_{X,x}/\sh{J}_x$, where $\sh{J}_x$ is an ideal generated by an $\sh{O}_{X,x}$-regular sequence $(t_i)$, and $\sh{O}_{Y,y}$ is a regular ring; since the $t_i$ form part of a system of parameters for $\sh{O}_{X,x}$ (\textbf{0}, 16.4.1), the conclusion follows from (\textbf{0}, 17.1.7).
 
 \begin{corollary}[17.12.2]
 \label{IV.17.12.2}
@@ -1049,7 +1035,7 @@ With the notation of (17.12.1), suppose that $f$ is smooth at the point $x$, and
 
 \oldpage[IV-4]{87}
 
-  \item[\textup{c)}] The images of the $d_{X/S}g_i$ in $(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}k(x)$ are elements linearly independent over $k(x)$, and the $(g_i)_x$ generate $\sh{J}_x$.
+  \item[\textup{c)}] The images of the $d_{X/S}g_i$ in $(\varOmega^1_{X/S})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)$ are elements linearly independent over $\boldsymbol{k}(x)$, and the $(g_i)_x$ generate $\sh{J}_x$.
   \item[\textup{d)}] There exist an open neighbourhood $U$ of $x$ in $X$ and sections $g_j$ ($r+1\leq j\leq n$) of $\sh{O}_X$ over $U$ such that the $S$-morphism $u:U\to S[T_1,\ldots,T_n]$ corresponding to the homomorphism $\sh{O}_S^n\to f_*(\sh{O}_U)$ defined by the sections $g_i|U$ \textup{($1\leq i\leq r$)} and $g_j$ ($r+1\leq j\leq n$) \textup{(\textbf{II}, 1.2.7)} is an étale morphism, and the inverse image of the sub-prescheme $Y'=S[T_{r+1},\ldots,T_n]$ under this morphism is the prescheme induced by $j(Y)$ on the open subset $U\cap j(Y)$.
 \end{enumerate}
 \end{corollary}
@@ -1065,7 +1051,7 @@ The conclusion follows from (17.12.1), since $f\circ u=1_S$ is smooth.
 
 \begin{proposition}[17.12.4]
 \label{IV.17.12.4}
-Every smooth morphism $f:X\to S$ is differentially smooth (in other words (16.10.5) $\Delta_f:X\to X\times_SX$ is a quasi-regular immersion). \emph{In particular, the $\sh{P}_f^n=\sh{P}_{X/S}^n$ and the $\operatorname{gr}_n(\sh{P}_{X/S})$ are locally free $\sh{O}_X$-modules of finite type.}
+Every smooth morphism $f:X\to S$ is differentially smooth (in other words (16.10.5) $\Delta_f:X\to X\times_SX$ is a quasi-regular immersion). \emph{In particular, the $\sh{P}_f^n=\sh{P}_{X/S}^n$ and the $\operatorname{gr}_n(\sh{P}_{X/S})$ are locally free $\sh{O}_X$-Modules of finite type.}
 \end{proposition}
 
 It suffices to remark that the structural morphism $p_1:X\times_SX\to X$ is smooth (17.3.3, (iii)) and that $\Delta_f$ is an $X$-section for $p_1$; the conclusion follows from (17.12.3).
@@ -1084,7 +1070,7 @@ Let $f:X\to Y$ be a morphism locally of finite presentation. The following condi
 
 Condition c) is a particular case of b): indeed it suffices to take $Y'=X$ and $g=f$ in b), since then $f'$ is none other than the second projection $p_2$, and $\Delta_f$ is an $X$-section of $X\times_YX$. Secondly, c) implies a), since $p_2$ is a morphism locally of finite presentation, and if $p_2$ is smooth at the points of $\Delta_f(X)$, $\Delta_f$ is a quasi-regular immersion (17.12.3), hence $f$ is differentially smooth. Finally, let us show that a) implies b); if $\Delta_f$ is a quasi-regular immersion, $p_2$ is smooth at all the points of $\Delta_f(X)$ (17.12.3).
 
-Now, if $g':X'\to X$ is the canonical projection, and $v=(g',g')_Y:X'\to X\times_YX$, we verify immediately that the diagram
+Now, if $g':X'\to X$ is the canonical projection, and $v=(g',h\circ f')_Y:X'\to X\times_YX$, we verify immediately that the diagram
 \[
 \xymatrix{
   X\times_Y X \ar[d]_{p_2} & X' \ar[l]_-v \ar[d]^{f'}\\
@@ -1100,14 +1086,12 @@ The notation being that of \textup{(8.8.1)}, suppose $X_\alpha$ quasi-compact, a
 
 The sufficiency of the condition and the last assertion follow from (16.10.4). To prove that the condition is necessary, note that $\Delta_f:X\to X\times_SX$ and $p_2:X\times_SX\to X$ are deduced by base change from $\Delta_{f_\lambda}:X_\lambda\to X_\lambda\times_{S_\lambda}X_\lambda$ and $p_{2,\lambda}:X_\lambda\times_{S_\lambda}X_\lambda\to X_\lambda$. By virtue of (17.12.5), for every $z\in\Delta_f(X)$, there exists an affine open neighbourhood $U(z)$ of $z$ in $X\times_SX$ such that $p_2$ is smooth in $U(z)$; by virtue of (8.2.11) and (17.7.8), there exist an index $\lambda(z)$ and a neighbourhood $U_{\lambda(z)}$ of the projection of $z$ in $X_{\lambda(z)}\times_{S_{\lambda(z)}}X_{\lambda(z)}$ such that $U(z)$ is the inverse image of $U_{\lambda(z)}$ and $p_{2,\lambda(z)}$ is smooth in $U_{\lambda(z)}$. Since $X$ is quasi-compact, we can cover $\Delta_f(X)$ by finitely many neighbourhoods $U(z_i)$; by virtue of (8.3.4), there exists a $\lambda$ greater than all the $\lambda(z_i)$ such that the inverse images of the $U_{\lambda(z_i)}$ in $X_\lambda\times_{S_\lambda}X_\lambda$ form a covering of $\Delta_{f_\lambda}(X_\lambda)$; it then follows from (17.12.5) that this index $\lambda$ has the required property.
 
-\begin{examples}[17.12.7]
+\begin{example}[17.12.7]
 \label{IV.17.12.7}
 Let $S$ be a prescheme, $G$ an $S$-\emph{group prescheme}, locally of finite presentation over $S$. Then, for $G$ to be differentially smooth, it is necessary and sufficient that $G$ be smooth over $S$ at the points of the ``unit section'' $e$ of $G$. The condition is indeed necessary by (17.12.5). Conversely, suppose it is fulfilled; for every morphism $S'\to S$, $G'=G\times_SS'$ is then an $S'$-group prescheme locally of finite presentation over $S'$; we may therefore, by virtue of (17.12.5), restrict to proving that for every $S$-section $s$ of $G$, $f$ is smooth at the points of $s(S)$. Now, if $m:G\times_SG\to G$ is the morphism which defines the group prescheme structure of $G$, $m\circ(s\times1_G):S\times_SG\to G\times_SG\to G$ is an
-
 \oldpage[IV-4]{89}
-
 $S$-isomorphism of the prescheme $G$, the ``left translation'' $\tau_s$, transforming the points of the unit section of $G$ into the points of $s(S)$; we conclude from this that $G$ is smooth over $S$ at the points of $s(S)$.
-\end{examples}
+\end{example}
 
 \begin{remark}[17.12.8]
 \label{IV.17.12.8}
@@ -1116,7 +1100,7 @@ An $S$-group prescheme $G$, of finite type (and even finite) over a locally Noet
 \delta(e')=e'\otimes e'+e''\otimes e'',\qquad
 \delta(e'')=e'\otimes e''+e''\otimes e'.
 \]
-The unit section of the group scheme $G$ corresponds to the homomorphism $E\to D$ which is the identity on $D$ and $0$ on $k$; it is an isomorphism of $S$ onto a connected component of $G$, and \emph{a fortiori} $G$ is differentially smooth over $S$ (17.12.6), but it is clear that $G$ is not $S$-flat.
+The unit section of the group scheme $G$ corresponds to the homomorphism $E\to D$ which is the identity on $D$ and $0$ on $k$; it is an isomorphism of $S$ onto a connected component of $G$, and \emph{a fortiori} $G$ is differentially smooth over $S$ (17.12.7), but it is clear that $G$ is not $S$-flat.
 \end{remark}
 
 
@@ -1135,7 +1119,7 @@ Let $S$ be a prescheme, $X$, $Y$, $X'$ three $S$-preschemes, $i:Y\to X$ an $S$-\
   X & X' \ar[l]^f
 }
 \]
-and $j$ is an $S$-immersion. We then have a commutative diagram of quasi-coherent $\sh{O}_{Y'}$-modules
+and $j$ is an $S$-immersion. We then have a commutative diagram of quasi-coherent $\sh{O}_{Y'}$-Modules
 \[
 \label{IV.17.13.1.2}
 \tag{17.13.1.2}
@@ -1161,11 +1145,11 @@ g^*(\sh{N}_{Y/X})\xrightarrow{\alpha}\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}\sh{
 The notation being that of \textup{(17.13.1)}, let $x'$ be a point of $Y'$, $x=g(x')$ its image in $Y$; suppose $X$ and $Y$ smooth over $S$ at the point $x$, and $X'$ smooth over $S$ at the point $x'$. Let $m$, $m-c$ be the relative dimensions of $X$ and $Y$ over $S$ at the point $x$ \textup{(17.10.1)}, and $n$ that of $X'$ over $S$ at the point $x'$. The following conditions are equivalent:
 \begin{enumerate}
   \item[\textup{a)}] $Y'$ is smooth over $S$ at the point $x'$ and of relative dimension $n-c$.
-  \item[\textup{b)}] The homomorphism $\alpha\otimes1:g^*(\sh{N}_{Y/X})\otimes_{\sh{O}_{Y'}}\boldsymbol{k}(x')\to\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}k(x')$ deduced from the homomorphism $\alpha$ of \textup{(17.13.1.3)} is injective.
+  \item[\textup{b)}] The homomorphism $\alpha\otimes1:g^*(\sh{N}_{Y/X})\otimes_{\sh{O}_{Y'}}\boldsymbol{k}(x')\to\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}\boldsymbol{k}(x')$ deduced from the homomorphism $\alpha$ of \textup{(17.13.1.3)} is injective.
 \end{enumerate}
 Let $s$ be the canonical image of $x$ in $S$, and suppose that $x'$ is rational over $\boldsymbol{k}(s)$. Then conditions a) and b) are also equivalent to the following:
 \begin{enumerate}
-  \item[b')] The homomorphism transpose to $\alpha\otimes1$
+  \item[\textup{b$'$)}] The homomorphism transpose to $\alpha\otimes1$
   \[
   \mathrm{T}_{X'/S}(x')\to(\sh{N}_{Y/X}\otimes_{\sh{O}_Y}\boldsymbol{k}(x))^\vee=\mathrm{T}_{X/S}(x)/\mathrm{T}_{Y/S}(x)
   \]
@@ -1188,18 +1172,16 @@ The fact that if the equivalent conditions a) and b) are satisfied at the point 
 
 By virtue of (17.12.1) applied to $X'$ and $Y'$, to say that $Y'$ is smooth over $S$ at the point $x'$ is equivalent to saying that the homomorphism
 \[
-\delta\otimes1:\sh{N}_{Y'/X'}\otimes_{\sh{O}_{Y'}}\boldsymbol{k}(x')\to\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}k(x')
+\delta\otimes1:\sh{N}_{Y'/X'}\otimes_{\sh{O}_{Y'}}\boldsymbol{k}(x')\to\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}\boldsymbol{k}(x')
 \]
-is injective, taking into account (\textbf{0}, 19.1.12) and the fact that $\varOmega^1_{X'/S}$ is an $\sh{O}_{X'}$-module locally free at the point $x'$ (17.2.3); since then $\varOmega^1_{Y'/S}$ is also an $\sh{O}_{Y'}$-module locally free in a neighbourhood of $x'$ and the sequence
+is injective, taking into account (\textbf{0}, 19.1.12) and the fact that $\varOmega^1_{X'/S}$ is an $\sh{O}_{X'}$-Module locally free at the point $x'$ (17.2.3); since then $\varOmega^1_{Y'/S}$ is also an $\sh{O}_{Y'}$-Module locally free in a neighbourhood of $x'$ and the sequence
 \[
 \label{IV.17.13.2.2}
 \tag{17.13.2.2}
 0\to\sh{N}_{Y'/X'}\to\varOmega^1_{X'/S}\otimes_{\sh{O}_{X'}}\sh{O}_{Y'}\to\varOmega^1_{Y'/S}\to0
 \]
 is exact (17.2.5), to say that $Y'$ is of relative dimension $n-c$ over $S$ at the point $x'$ means, by (17.10.2), that $\sh{N}_{Y'/X'}$ (which is locally free in a neighbourhood of $x'$) is of rank $c$ at the point $x'$. But by virtue of the hypotheses on $X$ and $Y$ at the point $x$, and by the same reasoning, $\sh{N}_{Y/X}$ is locally free and of rank $c$ at the point $x$, hence $g^*(\sh{N}_{Y/X})$ is also locally free and of rank $c$ at the point $x'$. Since the homomorphism $\operatorname{gr}_1(g):g^*(\sh{N}_{Y/X})\to\sh{N}_{Y'/X'}$ is surjective, the preceding conditions are equivalent to saying that this homomorphism is
-
 \oldpage[IV-4]{91}
-
 bijective at the point $x'$ (Bourbaki, \emph{Alg. comm.}, chap. II, § 3, n\textsuperscript{o} 2, cor. of prop. 6), hence also in a neighbourhood of $x'$ ($\mathbf{0}_{\mathrm I}$, 5.2.7); this evidently implies b), as well as the last assertion of the statement, by virtue of the exactness of (17.13.2.2). Conversely, since $\alpha\otimes1$ factors as
 \[
 g^*(\sh{N}_{Y/X})\otimes\boldsymbol{k}(x')\xrightarrow{\operatorname{gr}_1(g)\otimes1}\sh{N}_{Y'/X'}\otimes\boldsymbol{k}(x')\xrightarrow{\delta\otimes1}\varOmega^1_{X'/S}\otimes\boldsymbol{k}(x')
@@ -1210,7 +1192,7 @@ It remains to show the equivalence of b) and b') when $x'$ is rational over $\bo
 \[
 0\to\sh{N}_{Y/X}\to\varOmega^1_{X/S}\otimes_{\sh{O}_X}\sh{O}_Y\to\varOmega^1_{Y/S}\to0
 \]
-is exact at the point $x$ and formed of locally free $\sh{O}_Y$-modules, the dual of $\sh{N}_{Y/X}\otimes_{\sh{O}_Y}\boldsymbol{k}(x)$ is identified with the quotient space $\mathrm{T}_{X/S}(x)/\mathrm{T}_{Y/S}(x)$ (16.5.12); whence the equivalence of b) and b').
+is exact at the point $x$ and formed of locally free $\sh{O}_Y$-Modules, the dual of $\sh{N}_{Y/X}\otimes_{\sh{O}_Y}\boldsymbol{k}(x)$ is identified with the quotient space $\mathrm{T}_{X/S}(x)/\mathrm{T}_{Y/S}(x)$ (16.5.12); whence the equivalence of b) and b').
 
 \begin{definition}[17.13.3]\label{IV.17.13.3}
 \EGAReaderTarget{ega4.c04.def.17-13-3}{IV.17.13.3}
@@ -1245,7 +1227,7 @@ Consider now a prescheme $S$, three $S$-preschemes $X$, $Y$, $Z$, and two $S$-mo
   X\times_S X & Y\times_S Z \ar[l]^{u}
 }
 \]
-making $T$ the product of the $(X\times_SX)$-preschemes $X$ and $Y\times_SZ$, where $u=f\times_Sg$. Since $\Delta$ is an $S$-immersion (\textbf{I}, 5.3.9), we are in the situation of the diagram (17.13.1.1); what corresponds to $\varOmega^1_{X'/S}$ in (17.13.1) is then $(\varOmega^1_{Y/S}\otimes_{\sh{O}_Y}\sh{O}_{Y\times_SZ})\oplus(\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\sh{O}_{Y\times_SZ})$ by virtue of (16.4.23). On the other hand, what corresponds to the $\sh{O}_Y$-module $\sh{N}_{Y/X}$ in (17.13.1) is here by definition $\varOmega^1_{X/S}$ (16.3.1); to (17.13.1.3) there therefore corresponds an exact sequence
+making $T$ the product of the $(X\times_SX)$-preschemes $X$ and $Y\times_SZ$, where $u=f\times_Sg$. Since $\Delta$ is an $S$-immersion (\textbf{I}, 5.3.9), we are in the situation of the diagram (17.13.1.1); what corresponds to $\varOmega^1_{X'/S}$ in (17.13.1) is then $(\varOmega^1_{Y/S}\otimes_{\sh{O}_Y}\sh{O}_{Y\times_SZ})\oplus(\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\sh{O}_{Y\times_SZ})$ by virtue of (16.4.23). On the other hand, what corresponds to the $\sh{O}_Y$-Module $\sh{N}_{Y/X}$ in (17.13.1) is here by definition $\varOmega^1_{X/S}$ (16.3.1); to (17.13.1.3) there therefore corresponds an exact sequence
 \[
 \label{IV.17.13.5.2}
 \tag{17.13.5.2}
@@ -1262,9 +1244,9 @@ where it remains to make the homomorphisms $\rho$ and $\sigma$ explicit. Taking 
 \]
 On the other hand, to evaluate $\rho$, let us use the commutativity of the left-hand square in (17.13.1.2), which, in the present case, comes down first to making explicit the canonical homomorphism
 \[
-\rho':\varOmega^1_{X/S}\to\Omega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_X
+\rho':\varOmega^1_{X/S}\to\varOmega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_X
 \]
-defined in (16.4.21) applied to the immersion $\Delta$. We may restrict to the case where $S=\Spec(A)$, $X=\Spec(B)$ are affine, and then $\rho'$ corresponds to the homomorphism $\delta$ of (\textbf{0}, 20.5.11.2), where $B$ must be replaced by $B\otimes_AB$ and $C$ by $B=(B\otimes_AB)/\mathfrak J_{B/A}$. We then see that $\delta$ maps the class of $x\otimes1-1\otimes x\pmod{\mathfrak J_{B/A}^2}$ (for an $x\in B$) to the image of
+defined in (16.4.21) applied to the immersion $\Delta$. We may restrict to the case where $S=\Spec(A)$, $X=\Spec(B)$ are affine, and then $\rho'$ corresponds to the homomorphism $\delta$ of (\textbf{0}, 20.5.11.2), where $B$ must be replaced by $B\otimes_AB$ and $C$ by $B=(B\otimes_AB)/\mathfrak J_{B/A}$. We then see that $\delta$ maps the class of $x\otimes1-1\otimes x$ mod. $\mathfrak J_{B/A}^2$ (for an $x\in B$) to the image of
 \[
 (x\otimes1-1\otimes x)\otimes(1\otimes1)-(1\otimes1)\otimes(x\otimes1-1\otimes x)
 \]
@@ -1275,9 +1257,9 @@ in $\Omega^1_{(B\otimes_AB)/A}\otimes_{(B\otimes_AB)}B$; but the preceding eleme
 &\quad-((1\otimes x)\otimes(1\otimes1)-(1\otimes1)\otimes(1\otimes x))
 \end{split}
 \]
-and we therefore see that $\rho'$ is the difference of the two homomorphisms $\pi^{(1)}$ and $\pi^{(2)}$ from $\varOmega^1_{X/S}$ to $\Omega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_X$ corresponding respectively to the first and to the second projection of $X\times_SX$ to $X$, by (16.4.3.3). To obtain $\rho$, we must first consider the homomorphism
+and we therefore see that $\rho'$ is the difference of the two homomorphisms $\pi^{(1)}$ and $\pi^{(2)}$ from $\varOmega^1_{X/S}$ to $\varOmega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_X$ corresponding respectively to the first and to the second projection of $X\times_SX$ to $X$, by (16.4.3.3). To obtain $\rho$, we must first consider the homomorphism
 \[
-\rho'':\Omega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_{Y\times_SZ}\to\Omega^1_{(Y\times_SZ)/S}
+\rho'':\varOmega^1_{(X\times_SX)/S}\otimes_{\sh{O}_{X\times_SX}}\sh{O}_{(Y\times_SZ)}\to\varOmega^1_{(Y\times_SZ)/S}
 \]
 corresponding by (16.4.3.3) to the morphism $u$ of (17.13.5.1), then, after tensoring with $\sh{O}_T$, form the composite $(\rho''\otimes1)\circ(\rho'\otimes1)$; it follows from the above that we have, with the notation of (16.4.18)
 \[
@@ -1303,11 +1285,11 @@ Let $S$ be a prescheme, $X$, $Y$, $Z$ three $S$-preschemes $f:Y\to X$, $g:Z\to X
   (\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\boldsymbol{k}(t))
   \]
   where $\rho$ is given by \textup{(17.13.5.4)}, is injective.
-  \item[\textup{c)}] The morphism $T=Y\times_SZ\to X\times_SX$ is transversal to the diagonal of $X\times_SX$ at the point $t$.
+  \item[\textup{c)}] The morphism $Y\times_SZ\to X\times_SX$ is transversal to the diagonal of $X\times_SX$ at the point $t$.
 \end{enumerate}
 If $t$ is rational over the residue field of its image $s$ in $S$, these conditions are also equivalent to the following:
 \begin{enumerate}
-  \item[b')] The homomorphism
+  \item[\textup{b$'$)}] The homomorphism
   \[
   \label{IV.17.13.6.1}
   \tag{17.13.6.1}
@@ -1325,11 +1307,11 @@ Moreover, when conditions a) and b) are satisfied at $t$, they are satisfied in 
 \xrightarrow{\sigma}\varOmega^1_{T/S}\to0
 \]
 (where $\sigma$ is given by (17.13.5.3)) is exact.
+\end{corollary}
 
 The only point that remains to be proved in (17.13.6) concerns \emph{b')}, and follows from the fact that, under the hypothesis that $t$ is rational over $\boldsymbol{k}(s)$, the homomorphism $\rho\otimes1$ is the \emph{transpose} of $\mathrm{T}_y(f)-\mathrm{T}_z(g)$, by virtue of (17.13.5.4).
 
 When the equivalent conditions of (17.13.6) are satisfied, we say that $f$ and $g$ form a \emph{pair of morphisms transversal at the point $t$, relative} to $S$; here again, mention of $S$ is often omitted.
-\end{corollary}
 
 \begin{env}[17.13.7]\label{IV.17.13.7}
 \EGAReaderTarget{ega4.c04.statement.17-13-7}{IV.17.13.7}
@@ -1350,8 +1332,8 @@ $\inf(Y,Z)$ of $X$ (\textbf{I}, 4.4.3), and we have $t=y=z=x$. Instead of saying
 Let $S$ be a prescheme, $X$ an $S$-prescheme locally of finite presentation over $S$, $Y$, $Z$ two sub-preschemes of $X$, $T=\inf(Y,Z)$ the ``intersection'' sub-prescheme of $Y$ and $Z$, and $x$ a point of $T$. The following conditions are equivalent:
 \begin{enumerate}
   \item[\textup{a)}] The canonical injection $i:Y\to X$ is a morphism transversal to $Z$ at the point $x$, relative to $S$ \textup{(17.13.3)}.
-  \item[a')] The canonical injection $j:Z\to X$ is a morphism transversal to $Y$ at the point $x$, relative to $S$.
-  \item[a'')] $Y$ and $Z$ intersect transversally at the point $x$, relative to $S$.
+  \item[\textup{a$'$)}] The canonical injection $j:Z\to X$ is a morphism transversal to $Y$ at the point $x$, relative to $S$.
+  \item[\textup{a$''$)}] $Y$ and $Z$ intersect transversally at the point $x$, relative to $S$.
   \item[\textup{b)}] $X$, $Y$, $Z$ are smooth over $S$ at the point $x$, and the homomorphism $\rho$ \textup{(17.13.5.4)} is such that
   \[
   \rho\otimes1:\varOmega^1_{X/S}\otimes_{\sh{O}_X}\boldsymbol{k}(x)\to
@@ -1362,7 +1344,7 @@ Let $S$ be a prescheme, $X$ an $S$-prescheme locally of finite presentation over
 \end{enumerate}
 When $x$ is rational over $\boldsymbol{k}(s)$ ($s$ the image of $x$ in $S$), these conditions are also equivalent to the following:
 \begin{enumerate}
-  \item[b')] The homomorphism
+  \item[\textup{b$'$)}] The homomorphism
   \[
   \mathrm{T}_x(i)-\mathrm{T}_x(j):\mathrm{T}_{Y/S}(x)\oplus\mathrm{T}_{Z/S}(x)\to\mathrm{T}_{X/S}(x)
   \]
@@ -1390,7 +1372,7 @@ Denote by $\alpha$ and $-\beta$ the homomorphisms appearing on the right-hand si
 (\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\sh{O}_T)
 \xrightarrow{\gamma+\delta}\varOmega^1_{T/S}\to0
 \]
-is exact means that, in the category of $\sh{O}_T$-modules, $\varOmega^1_{X/S}\otimes_{\sh{O}_X}\sh{O}_T$ is canonically identified with the \emph{fibre product} of $\varOmega^1_{Y/S}\otimes_{\sh{O}_Y}\sh{O}_T$ and $\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\sh{O}_T$ over $\varOmega^1_{T/S}$, for the homomorphisms $\gamma$ and $\delta$. The same reasoning as in (\textbf{0}, 18.1.2 and 18.1.3), where rings and two-sided ideals are replaced respectively by modules and submodules, yields a commutative diagram
+is exact means that, in the category of $\sh{O}_T$-Modules, $\varOmega^1_{X/S}\otimes_{\sh{O}_X}\sh{O}_T$ is canonically identified with the \emph{fibre product} of $\varOmega^1_{Y/S}\otimes_{\sh{O}_Y}\sh{O}_T$ and $\varOmega^1_{Z/S}\otimes_{\sh{O}_Z}\sh{O}_T$ over $\varOmega^1_{T/S}$, for the homomorphisms $\gamma$ and $\delta$. The same reasoning as in (\textbf{0}, 18.1.2 and 18.1.3), where rings and two-sided ideals are replaced respectively by modules and submodules, yields a commutative diagram
 {\scriptsize
 \[
 \begin{tikzcd}[column sep=small,row sep=large]
@@ -1430,11 +1412,11 @@ Let then $Y$ be the product of the $S$-preschemes $Y_i$ (for the composite morph
 
 By induction on the number of elements of $I$, it follows from (16.4.23) that $\varOmega^1_{X^I/S}$ (resp. $\varOmega^1_{Y/S}$) is canonically identified with the direct sum of the $p_i^*(\varOmega^1_{X/S})$ (resp. of the $q_i^*(\varOmega^1_{Y_i/S})$, if $q_i:Y\to Y_i$ are the canonical projections).
 
-Suppose now that $X$ is \emph{smooth} over $S$ at a point $x$ (hence in a neighbourhood of this point). The same then holds for $X^I$ at this point (17.3.3, (iv)), and, restricting $X$ to a neighbourhood of $x$, we therefore have (17.2.5) an exact sequence of locally free $\sh{O}_X$-modules
+Suppose now that $X$ is \emph{smooth} over $S$ at a point $x$ (hence in a neighbourhood of this point). The same then holds for $X^I$ at this point (17.3.3, (iv)), and, restricting $X$ to a neighbourhood of $x$, we therefore have (17.2.5) an exact sequence of locally free $\sh{O}_X$-Modules
 \[
 0\to\mathscr{G}r_1(\Delta)\to(\varOmega^1_{X/S})^I\to\varOmega^1_{X/S}\to0.
 \]
-Set $\sh{J}=\mathscr{G}r_1(\Delta)$; from the preceding sequence we deduce an exact sequence of locally free $\sh{O}_T$-modules
+Set $\sh{J}=\mathscr{G}r_1(\Delta)$; from the preceding sequence we deduce an exact sequence of locally free $\sh{O}_T$-Modules
 \[
 \label{IV.17.13.9.1-seq}
 \tag{17.13.9.1}
@@ -1469,16 +1451,17 @@ Under the general hypotheses of \textup{(17.13.9)}, let $t$ be a point of $T$, $
 \end{enumerate}
 When $t$ is rational over the field $\boldsymbol{k}(s)$ (where $s$ is the image of $t$ in $S$), these conditions are also equivalent to the following:
 \begin{enumerate}
-  \item[b')] The homomorphism transpose to $\rho\otimes1$
+  \item[\textup{b$'$)}] The homomorphism transpose to $\rho\otimes1$
   \[
   \bigoplus_{i\in I}\mathrm{T}_{Y_i/X}(y_i)\to(\mathrm{T}_{X/S}(x))^I/\delta(\mathrm{T}_{X/S}(x))
   \]
   (where $\delta$ is the diagonal map) is surjective.
 \end{enumerate}
+\end{corollary}
+
 It suffices to remark that $X^I$ is smooth over $S$ and of relative dimension $d.\operatorname{Card}(I)$, and $Y$ smooth over $S$ of relative dimension $d.\operatorname{Card}(I)+\sum_{i\in I}c_i$.
 
 When the equivalent conditions of (17.13.10) are satisfied, we again say that the $f_i$ form a \emph{family of morphisms transversal at the point $t$, relative} to $S$. We again see that the set of points $t\in T$ where this holds is \emph{open} in $T$. Remark (17.13.4, (ii)) then shows that if $X$ and the $Y_i$ are flat and locally of finite presentation over $S$, and if moreover $T$ is \emph{proper} over $S$, the set of $s\in S$ such that the $f_i$ form a family of transversal morphisms at \emph{all} the points of $T_s$, relative to $S$, is \emph{open} in $S$.
-\end{corollary}
 
 \begin{env}[17.13.11]\label{IV.17.13.11}
 \EGAReaderTarget{ega4.c04.statement.17-13-11}{IV.17.13.11}
@@ -1510,7 +1493,7 @@ We may restrict to the case where the $Y_i$ are closed sub-preschemes of $X$, de
 
 \oldpage[IV-4]{98}
 
-But here the $\sh{O}_T$-modules on the two sides of (17.13.12.2) are locally free and \emph{of the same rank} $\sum_i c_i$ (if $c_i$ is the rank of $\sh{N}_{Y_i/X}$), by virtue of (17.2.5) and of condition \emph{a)} of (17.13.10); we therefore conclude from Bourbaki, \emph{Alg. comm.}, chap. II, § 3, n\textsuperscript{o} 2, cor. of prop. 6, that (17.13.12.2) is bijective, and (17.13.12.1) is the inverse isomorphism.
+But here the $\sh{O}_T$-Modules on the two sides of (17.13.12.2) are locally free and \emph{of the same rank} $\sum_i c_i$ (if $c_i$ is the rank of $\sh{N}_{Y_i/X}$), by virtue of (17.2.5) and of condition \emph{a)} of (17.13.10); we therefore conclude from Bourbaki, \emph{Alg. comm.}, chap. II, § 3, n\textsuperscript{o} 2, cor. of prop. 6, that (17.13.12.2) is bijective, and (17.13.12.1) is the inverse isomorphism.
 
 \subsection{Local and infinitesimal characterizations of smooth morphisms, unramified morphisms and étale morphisms.}
 \EGAReaderTarget{ega4.c04.subsec.17-14}{subsection:IV.17.14}
@@ -1573,9 +1556,7 @@ Let $k$ be a field, $X$ a prescheme locally of finite type over $k$, $x$ a point
 \end{proposition}
 
 If $f$ is étale at the point $x$, then $X$ is smooth over $k$ at the point $x$, since $Y=\operatorname{Spec}(k[T_1,\ldots,T_n])$ is smooth over $k$ (17.3.8); the fact that a) implies b) is therefore a particular case of (17.11.3). Since b) trivially implies c), it remains to see that c) implies a). Let us first note
-
 \oldpage[IV-4]{100}
-
 that the hypothesis implies that the homomorphism $(f^*(\varOmega^1_{Y/k}))_x\to(\varOmega^1_{X/k})_x$ is surjective; hence, replacing $X$ by an open neighbourhood of $x$, we may suppose that the homomorphism $f^*(\varOmega^1_{Y/k})\to\varOmega^1_{X/k}$ is surjective (Bourbaki, \emph{Alg. comm.}, chap. II, § 5, n\textsuperscript{o} 1, prop. 2); consequently $f$ is \emph{unramified} (17.2.2). We will first see that we may restrict to the case where $x$ is \emph{rational over $k$}. Indeed, if we set $k'=\boldsymbol{k}(x)$, and $X'=X\otimes_k k'$, $Y'=Y\otimes_k k'=\operatorname{Spec}(k'[T_1,\ldots,T_n])$, there exists a point $x'\in X'$ above $x$ such that $\boldsymbol{k}(x')=k'$. To prove that $f$ is étale at the point $x$, it suffices to show that $f'=f_{(k')}:X'\to Y'$ is étale at the point $x'$ (17.7.1, (ii)); moreover, $f'$ is unramified (17.3.3, (iii)) and we have $\dim_{x'}(X')=n$ (4.2.7). In the same way, replacing $k'$ by an algebraically closed extension of $k'$, we may suppose that $k$ is \emph{algebraically closed}. Then set $y=f(x)$, $A=\sh{O}_{Y,y}$, $B=\sh{O}_{X,x}$; since the residue field of $B$ is equal to $k$, the same holds for that of $A$, so $x$ (resp. $y$) is a closed point of $X$ (resp. $Y$) (\textbf{I}, 6.4.2), and consequently we have $\dim(A)=\dim(B)=n$. Since $f$ is unramified, the homomorphism $\widehat A\to\widehat B$ is surjective (17.4.4, f'')); but since $\dim(\widehat A)=\dim(\widehat B)=n$, and $\widehat A$, being a regular ring, is integral, the homomorphism $\widehat A\to\widehat B$ is also injective (\textbf{0}, 16.3.10). This homomorphism is therefore bijective, which completes the proof that $f$ is étale at the point $x$ (17.6.3, \emph{e'')}).
 
 \begin{corollary}[17.15.4]
@@ -1583,11 +1564,11 @@ that the hypothesis implies that the homomorphism $(f^*(\varOmega^1_{Y/k}))_x\to
 Under the general hypotheses of (17.15.3), suppose moreover that $\boldsymbol{k}(x)$ is a finite and separable extension of $k$ and that the germs $(g_i)_x$ belong to $\mathfrak m_x$. Then the conditions a), b), c) of (17.15.3) are also equivalent to each of the following:
 \begin{enumerate}
   \item[\textup{d)}] The $n$ germs $(g_i)_x$ generate the maximal ideal $\mathfrak m_x$ of $\sh{O}_{X,x}$.
-  \item[d')] The ring $\sh{O}_{X,x}$ is regular and the $(g_i)_x$ form a regular system of parameters for this ring \textup{(\textbf{0}, 17.1.6)}.
+  \item[\textup{d$'$)}] The ring $\sh{O}_{X,x}$ is regular and the $(g_i)_x$ form a regular system of parameters for this ring \textup{(\textbf{0}, 17.1.6)}.
 \end{enumerate}
 \end{corollary}
 
-Indeed, d') trivially implies d). On the other hand, since $\boldsymbol{k}(x)$ is a finite and separable extension of $k$, we have $\Omega^1_{\mathbf{k}(x)/k}=0$ (\textbf{0}, 20.6.20), and $\boldsymbol{k}(x)=\sh{O}_{X,x}/\mathfrak m_x$ is a formally smooth $k$-algebra for the discrete topologies (\textbf{0}, 19.6.1); hence the exact sequence (\textbf{0}, 20.5.14.1) applies to $A=k$, $B=\sh{O}_{X,x}$, $\mathfrak{K}=\mathfrak m_x$, and yields a canonical isomorphism
+Indeed, d') trivially implies d). On the other hand, since $\boldsymbol{k}(x)$ is a finite and separable extension of $k$, we have $\Omega^1_{\kres(x)/k}=0$ (\textbf{0}, 20.6.20), and $\boldsymbol{k}(x)=\sh{O}_{X,x}/\mathfrak m_x$ is a formally smooth $k$-algebra for the discrete topologies (\textbf{0}, 19.6.1); hence the exact sequence (\textbf{0}, 20.5.14.1) applies to $A=k$, $B=\sh{O}_{X,x}$, $\mathfrak{K}=\mathfrak m_x$, and yields a canonical isomorphism
 \[
 \delta:\mathfrak m_x/\mathfrak m_x^2\xrightarrow{\sim}(\varOmega^1_{X/k})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x).
 \]
@@ -1616,12 +1597,12 @@ Finally, we have already seen that a) implies b) (17.12.4). Conversely, to prove
 
 \begin{corollary}[17.15.6]
 \label{IV.17.15.6}
-Let $X$ be a prescheme of finite type over a field $k$. For $X$ to be smooth over $k$, it is necessary and sufficient that the $\sh{O}_X$-module $\varOmega^1_{X/k}$ be locally free, and that the local rings at the maximal points of $X$ be fields that are separable extensions of $k$ (this last condition being automatically satisfied if $k$ is a perfect field and $X$ a reduced prescheme).
+Let $X$ be a prescheme of finite type over a field $k$. For $X$ to be smooth over $k$, it is necessary and sufficient that the $\sh{O}_X$-Module $\varOmega^1_{X/k}$ be locally free, and that the local rings at the maximal points of $X$ be fields that are separable extensions of $k$ (this last condition being automatically satisfied if $k$ is a perfect field and $X$ a reduced prescheme).
 \end{corollary}
 
 The conditions are necessary, for if $X$ is smooth over $k$, it follows from (17.10.2) that $\varOmega^1_{X/k}$ is locally free; on the other hand, $X$ is regular, hence \emph{a fortiori} reduced, so at every maximal point $x$ of $X$, $\sh{O}_{X,x}$ is a field, which must be a formally smooth $k$-algebra for the discrete topologies (17.5.1), hence a separable extension of $k$ (\textbf{0}, 19.6.1).
 
-The conditions are sufficient. Indeed, we may restrict to the case where $X$ is connected, so that $\varOmega^1_{X/k}$ is locally free of constant rank $n$. For every maximal point $x$ of $X$, we then have $\operatorname{rg}_{\mathbf{k}(x)}\Omega^1_{\mathbf{k}(x)/k}=n$ since $\sh{O}_{X,x}=k(x)$; since by hypothesis $\boldsymbol{k}(x)$ is a separable extension of $k$, we have $\Upsilon_{\mathbf{k}(x)/k}=0$ (\textbf{0}, 20.6.3), hence $\deg.\operatorname{tr}_k \boldsymbol{k}(x)=n$ by Cartier's equality (\textbf{0}, 21.7.1). All the irreducible components of $X$ therefore have the same dimension $n$ (5.2.1), and we conclude that $X$ is smooth over $k$ at every point by virtue of the fact that c) implies a) in (17.15.5).
+The conditions are sufficient. Indeed, we may restrict to the case where $X$ is connected, so that $\varOmega^1_{X/k}$ is locally free of constant rank $n$. For every maximal point $x$ of $X$, we then have $\operatorname{rg}_{\kres(x)}\Omega^1_{\kres(x)/k}=n$ since $\sh{O}_{X,x}=\boldsymbol{k}(x)$; since by hypothesis $\boldsymbol{k}(x)$ is a separable extension of $k$, we have $\Upsilon_{\kres(x)/k}=0$ (\textbf{0}, 20.6.3), hence $\deg.\operatorname{tr}_k \boldsymbol{k}(x)=n$ by Cartier's equality (\textbf{0}, 21.7.1). All the irreducible components of $X$ therefore have the same dimension $n$ (5.2.1), and we conclude that $X$ is smooth over $k$ at every point by virtue of the fact that c) implies a) in (17.15.5).
 
 \begin{corollary}[17.15.7]
 \label{IV.17.15.7}
@@ -1632,13 +1613,13 @@ This follows from (16.12.2) and from the equivalence of b) and a) in (17.15.5).
 
 \begin{proposition}[17.15.8]
 \label{IV.17.15.8}
-Let $k$ be a field, $X$ a prescheme locally of finite type over $k$, and $x$ a point of $X$; set $n=\dim_x(X)$, $r=\dim(\sh{O}_{X,x})$, so that $n-r=\deg.\operatorname{tr}_k \boldsymbol{k}(x)$ \textup{(5.2.3)}. Let $(g_i)_{1\leq i\leq n}$ be a family of $n$ sections of $\sh{O}_X$ over $X$ such that $(g_i)_x\in\mathfrak m_x$ for $1\leq i\leq r$; let $f:X\to Y=\operatorname{Spec}(k[T_1,\ldots,T_n])$ be the morphism corresponding to the $k$-homomorphism $k[T_1,\ldots,T_n]\to\Gamma(X,\sh{O}_X)$ that sends $T_i$ to $g_i$. The following conditions are equivalent (and imply that $X$ is smooth over $k$ at the point $x$ and that $\boldsymbol{k}(x)$ is a separable extension of $k$):
+Let $k$ be a field, $X$ a prescheme locally of finite type over $k$, and $x$ a point of $X$; set $n=\dim_x(X)$, $r=\dim(\sh{O}_{X,x})$, so that $n\setmin r=\deg.\operatorname{tr}_k \boldsymbol{k}(x)$ \textup{(5.2.3)}. Let $(g_i)_{1\leq i\leq n}$ be a family of $n$ sections of $\sh{O}_X$ over $X$ such that $(g_i)_x\in\mathfrak m_x$ for $1\leq i\leq r$; let $f:X\to Y=\operatorname{Spec}(k[T_1,\ldots,T_n])$ be the morphism corresponding to the $k$-homomorphism $k[T_1,\ldots,T_n]\to\Gamma(X,\sh{O}_X)$ that sends $T_i$ to $g_i$. The following conditions are equivalent (and imply that $X$ is smooth over $k$ at the point $x$ and that $\boldsymbol{k}(x)$ is a separable extension of $k$):
 \begin{enumerate}
   \item[\textup{a)}] $f$ is étale at the point $x$.
 
 \oldpage[IV-4]{102}
 
-  \item[\textup{b)}] The $(g_i)_x$ such that $1\leq i\leq r$ generate $\mathfrak m_x$ (and consequently form a regular system of parameters for $\sh{O}_{X,x}$ (0, 17.1.6)), and the images in $\Omega^1_{\mathbf{k}(x)/k}$ of the elements $(d_{X/k}g_i)_x$ for $r+1\leq i\leq n$ generate $\Omega^1_{\mathbf{k}(x)/k}$.
+  \item[\textup{b)}] The $(g_i)_x$ such that $1\leq i\leq r$ generate $\mathfrak m_x$ \textup{(and consequently form a regular system of parameters for $\sh{O}_{X,x}$ (\textbf{0}, 17.1.6))}, and the images in $\Omega^1_{\kres(x)/k}$ of the elements $(d_{X/k}g_j)_x$ for $r+1\leq j\leq n$ generate $\Omega^1_{\kres(x)/k}$.
 \end{enumerate}
 \end{proposition}
 
@@ -1646,15 +1627,15 @@ Indeed, we have (\textbf{0}, 20.5.12.1) the exact sequence of $\boldsymbol{k}(x)
 \[
 \label{IV.17.15.8.1}
 \tag{17.15.8.1}
-\mathfrak m_x/\mathfrak m_x^2\to(\varOmega^1_{X/k})_x\otimes_{\sh{O}_{X,x}}k(x)\to\Omega^1_{\mathbf{k}(x)/k}\to0
+\mathfrak m_x/\mathfrak m_x^2\to(\varOmega^1_{X/k})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)\to\Omega^1_{\kres(x)/k}\to0
 \]
-and condition b) consequently implies that the $(d_{X/k}g_i)_x$ generate $(\varOmega^1_{X/k})_x$, taking into account Nakayama's lemma; the fact that b) implies a) therefore follows from (17.15.3). Conversely, if a) holds, the $(d_{X/k}g_i)_x$ for $1\leq i\leq n$ form a basis of $(\varOmega^1_{X/k})_x$ by virtue of (17.15.3). If $t_i$ ($1\leq i\leq n$) is the image of $(g_i)_x$ in $\boldsymbol{k}(x)$, we conclude from the above that the $dt_i$ generate $\Omega^1_{\mathbf{k}(x)/k}$ for $1\leq i\leq n$, and since by hypothesis $t_i=0$ for $1\leq i\leq r$, the $dt_i$ for $r+1\leq i\leq n$ already generate $\Omega^1_{\mathbf{k}(x)/k}$. Since $\deg.\operatorname{tr}_k \boldsymbol{k}(x)=n\setmin r$, it follows from Cartier's equality (\textbf{0}, 21.7.1) that $\Upsilon_{\mathbf{k}(x)/k}=0$, hence $\boldsymbol{k}(x)$ is a separable extension of $k$ (\textbf{0}, 20.6.3), and the sequence of $\boldsymbol{k}(x)$-vector spaces
+and condition b) consequently implies that the $(d_{X/k}g_i)_x$ generate $(\varOmega^1_{X/k})_x$, taking into account Nakayama's lemma; the fact that b) implies a) therefore follows from (17.15.3). Conversely, if a) holds, the $(d_{X/k}g_i)_x$ for $1\leq i\leq n$ form a basis of $(\varOmega^1_{X/k})_x$ by virtue of (17.15.3). If $t_i$ ($1\leq i\leq n$) is the image of $(g_i)_x$ in $\boldsymbol{k}(x)$, we conclude from the above that the $dt_i$ generate $\Omega^1_{\kres(x)/k}$ for $1\leq i\leq n$, and since by hypothesis $t_i=0$ for $1\leq i\leq r$, the $dt_i$ for $r+1\leq i\leq n$ already generate $\Omega^1_{\kres(x)/k}$. Since $\deg.\operatorname{tr}_k \boldsymbol{k}(x)=n\setmin r$, it follows from Cartier's equality (\textbf{0}, 21.7.1) that $\Upsilon_{\kres(x)/k}=0$, hence $\boldsymbol{k}(x)$ is a separable extension of $k$ (\textbf{0}, 20.6.3), and the sequence of $\boldsymbol{k}(x)$-vector spaces
 \[
 \label{IV.17.15.8.2}
 \tag{17.15.8.2}
-0\to\mathfrak m_x/\mathfrak m_x^2\to(\varOmega^1_{X/k})_x\otimes_{\sh{O}_{X,x}}k(x)\to\Omega^1_{\mathbf{k}(x)/k}\to0
+0\to\mathfrak m_x/\mathfrak m_x^2\to(\varOmega^1_{X/k})_x\otimes_{\sh{O}_{X,x}}\boldsymbol{k}(x)\to\Omega^1_{\kres(x)/k}\to0
 \]
-is exact ((\textbf{0}, 20.5.14) and (\textbf{0}, 19.6.1)); moreover, the $dt_i$ for $r+1\leq i\leq n$ form a basis of $\Omega^1_{\mathbf{k}(x)/k}$, so none of the $t_i$ such that $r+1\leq i\leq n$ can be zero. This shows that the images of the $(g_i)_x$ in $\mathfrak m_x/\mathfrak m_x^2$ for $1\leq i\leq r$ necessarily generate $\mathfrak m_x/\mathfrak m_x^2$, hence the $(g_i)_x$ for $1\leq i\leq r$ generate $\mathfrak m_x$ by virtue of Nakayama's lemma, which completes the proof that a) implies b).
+is exact ((\textbf{0}, 20.5.14) and (\textbf{0}, 19.6.1)); moreover, the $dt_i$ for $r+1\leq i\leq n$ form a basis of $\Omega^1_{\kres(x)/k}$, so none of the $t_i$ such that $r+1\leq i\leq n$ can be zero. This shows that the images of the $(g_i)_x$ in $\mathfrak m_x/\mathfrak m_x^2$ for $1\leq i\leq r$ necessarily generate $\mathfrak m_x/\mathfrak m_x^2$, hence the $(g_i)_x$ for $1\leq i\leq r$ generate $\mathfrak m_x$ by virtue of Nakayama's lemma, which completes the proof that a) implies b).
 
 \begin{corollary}[17.15.9]
 \label{IV.17.15.9}
@@ -1667,22 +1648,20 @@ Let $X$ be a prescheme locally of finite type over a field $k$, $x$ a point of $
   \]
   is injective.
   \item[\textup{c)}] There exist $n$ sections $g_i$ of $\sh{O}_X$ over an open neighbourhood $U$ of $x$ such that $(g_i)_x\in\mathfrak m_x$ for $1\leq i\leq r$ and such that the morphism $U\to\operatorname{Spec}(k[T_1,\ldots,T_n])$ corresponding to the $g_i$ (cf. (17.15.8)) is étale at the point $x$.
-  \item[\textup{d)}] There exist $n$ sections $g_i$ \textup{(}$1\leq i\leq n$\textup{)} of $\sh{O}_X$ over an open neighbourhood $U$ of $x$ such that the $(g_i)_x$ for $1\leq i\leq r$ generate $\mathfrak m_x$ and the images in $\Omega^1_{\mathbf{k}(x)/k}$ of the $(d_{U/k}g_i)_x$ for $r+1\leq i\leq n$ generate $\Omega^1_{\mathbf{k}(x)/k}$.
+  \item[\textup{d)}] There exist $n$ sections $g_i$ \textup{(}$1\leq i\leq n$\textup{)} of $\sh{O}_X$ over an open neighbourhood $U$ of $x$ such that the $(g_i)_x$ for $1\leq i\leq r$ generate $\mathfrak m_x$ and the images in $\Omega^1_{\kres(x)/k}$ of the $(d_{U/k}g_j)_x$ for $r+1\leq j\leq n$ generate $\Omega^1_{\kres(x)/k}$.
 \end{enumerate}
 \end{corollary}
 
-The equivalence of c) and d) follows from (17.15.8). Moreover, we have seen in the proof of (17.15.8) that condition \emph{c)} implies that $X$ is smooth over $k$ at the point $x$ and that the sequence (17.15.8.2) is exact; hence c) implies b). Condition b) implies that the ring $\sh{O}_{X,x}$ is regular, so $\mathfrak m_x/\mathfrak m_x^2$ is of rank $r$; moreover, $(\varOmega^1_{X/k})_x$ is then a free $\sh{O}_{X,x}$-module of rank $n$ (17.10.2); since the sequence (17.15.7.2) is exact by hypothesis, $\Omega^1_{\mathbf{k}(x)/k}$ is of rank $n-r=\deg.\operatorname{tr}_k \boldsymbol{k}(x)$, and Cartier's equality shows that $\Upsilon_{\mathbf{k}(x)/k}=0$, so $\boldsymbol{k}(x)$ is separable over $k$ (\textbf{0}, 20.6.3); thus b) implies a). Finally, if a)
-
+The equivalence of c) and d) follows from (17.15.8). Moreover, we have seen in the proof of (17.15.8) that condition \emph{c)} implies that $X$ is smooth over $k$ at the point $x$ and that the sequence (17.15.8.2) is exact; hence c) implies b). Condition b) implies that the ring $\sh{O}_{X,x}$ is regular, so $\mathfrak m_x/\mathfrak m_x^2$ is of rank $r$; moreover, $(\varOmega^1_{X/k})_x$ is then a free $\sh{O}_{X,x}$-module of rank $n$ (17.10.2); since the sequence (17.15.8.2) is exact by hypothesis, $\Omega^1_{\kres(x)/k}$ is of rank $n\setmin r=\deg.\operatorname{tr}_k \boldsymbol{k}(x)$, and Cartier's equality shows that $\Upsilon_{\kres(x)/k}=0$, so $\boldsymbol{k}(x)$ is separable over $k$ (\textbf{0}, 20.6.3); thus b) implies a). Finally, if a)
 \oldpage[IV-4]{103}
-
-holds, we again deduce from Cartier's equality that $\Omega^1_{\mathbf{k}(x)/k}$ is of rank $n\setmin r$. Since, on the other hand, the ring $\sh{O}_{X,x}$ is regular, the existence of the $g_i$ satisfying the conditions of d) is immediate.
+holds, we again deduce from Cartier's equality that $\Omega^1_{\kres(x)/k}$ is of rank $n\setmin r$. Since, on the other hand, the ring $\sh{O}_{X,x}$ is regular, the existence of the $g_i$ satisfying the conditions of d) is immediate.
 
 \begin{remarks}[17.15.10]
 \label{IV.17.15.10}
 \begin{enumerate}
   \item[(i)] For a prescheme $X$ of finite type over $k$ to be smooth over $k$, it does not suffice that $\varOmega^1_{X/k}$ be locally free, as is shown by the example where $X=\operatorname{Spec}(K)$, $K$ being a finite extension of $k$ that is not separable.
   \item[(ii)] When $k$ is not perfect, it can happen that $X$ is smooth over $k$ without $\boldsymbol{k}(x)$ being separable over $k$. We obtain an example by taking $X=\operatorname{Spec}(k[T])$ and for $x$ the point corresponding to the principal prime ideal $(T^p\setmin\lambda)$ ($p>0$ the characteristic of $k$, $\lambda\in k\setmin k^p$).
-  \item[(iii)] However, if $X$ is a prescheme smooth over $k$, the set of closed points of $X$ such that $\boldsymbol{k}(x)$ is separable (and finite) over $k$ is dense in $X$. Indeed, let $f:X\to\operatorname{Spec}(k)$ be the structural morphism; for every $x_0\in X$, there are an open neighbourhood $U$ of $x_0$ in $X$ and a factorization of $f|U:U\xrightarrow{g}\operatorname{Spec}(k[T_1,\ldots,T_n])\xrightarrow{h}\operatorname{Spec}(k)$ where $g$ is étale (17.11.4). Since we may restrict to the case where $k$ is not perfect, hence infinite, the set of points of the open subset $g(U)$ that are rational over $k$ is non-empty; if $y$ is such a point and $x\in U$ a point above $y$, then $x$ is closed in $X$ and $\boldsymbol{k}(x)$ is separable over $k(y)=k$ (17.6.2).
+  \item[(iii)] However, if $X$ is a prescheme smooth over $k$, the set of closed points of $X$ such that $\boldsymbol{k}(x)$ is \emph{separable} (and finite) over $k$ is \emph{dense} in $X$. Indeed, let $f:X\to\operatorname{Spec}(k)$ be the structural morphism; for every $x_0\in X$, there are an open neighbourhood $U$ of $x_0$ in $X$ and a factorization of $f|U:U\xrightarrow{g}\operatorname{Spec}(k[T_1,\ldots,T_n])\xrightarrow{h}\operatorname{Spec}(k)$ where $g$ is \emph{étale} (17.11.4). Since we may restrict to the case where $k$ is not perfect, hence infinite, the set of points of the open subset $g(U)$ that are \emph{rational} over $k$ is non-empty; if $y$ is such a point and $x\in U$ a point above $y$, then $x$ is closed in $X$ and $\boldsymbol{k}(x)$ is separable over $\boldsymbol{k}(y)=k$ (17.6.2).
 \end{enumerate}
 \end{remarks}
 
@@ -1732,7 +1711,7 @@ When there exists in $X$ a dense and normal open subset (which is always the cas
 \end{enumerate}
 \end{lemma}
 
-The question being local on $X$, we may suppose that $X$ has only finitely many irreducible components; let $X_i$ ($1\leq i\leq m$) be the reduced sub-preschemes of $X$ having these components as underlying spaces. We know (\textbf{II}, 6.3.6) that $X'$ is the sum of the normalizations $X'_i$ of the $X_i$; each of the structural morphisms $f_i:X'_i\to X_i$ is therefore integral and birational, hence $f$ is integral and birational; it is immediate that (ii) implies (ii bis) when there exists a dense and normal open subset $V$ in $X$, by taking $U=V$. Conversely, if conditions (i) and (ii) are fulfilled, $Y$ has only finitely many irreducible components $Y_i$ ($1\leq i\leq m$), $Y_i$ dominating $X_i$ for each index $i$ (6.15.4); $Y$ is the sum of the $Y_i$ since it is normal, and the morphism $g_i:Y_i\to X_i$ through which the restriction $Y_i\to X$ of $f$ factors (\textbf{I}, 5.2.2) is birational; since $X_i$ and $Y_i$ are integral, it then follows from the fact that $g_i$ is integral and $Y_i$ normal that, for every affine open subset $V$ of $X_i$, $\Gamma(g_i^{-1}(V),\sh{O}_{Y_i})$ is the integral closure of $\Gamma(V,\sh{O}_{X_i})$, hence $Y$ is canonically identified with $X'$ (\textbf{II}, 6.3.4). Finally, if we suppose condition (ii \emph{bis}) satisfied, we may restrict to the case where $U$ is the union of disjoint irreducible open subsets $U_i$ ($1\leq i\leq m$), so that $f^{-1}(U)$ is the disjoint union of the $V_i=f^{-1}(U_i)$. Since the $V_i$ are irreducible and $f^{-1}(U)$ is dense in $Y$, the $\overline{V}_i$ are the irreducible components of $Y$, and consequently $f$ is birational.
+The question being local on $X$, we may suppose that $X$ has only finitely many irreducible components; let $X_i$ ($1\leq i\leq m$) be the reduced sub-preschemes of $X$ having these components as underlying spaces. We know (\textbf{II}, 6.3.6) that $X'$ is the sum of the normalizations $X'_i$ of the $X_i$; each of the structural morphisms $f_i:X'_i\to X_i$ is therefore integral and birational, hence $f$ is integral and birational; it is immediate that (ii) implies (ii \emph{bis}) when there exists a dense and normal open subset $V$ in $X$, by taking $U=V$. Conversely, if conditions (i) and (ii) are fulfilled, $Y$ has only finitely many irreducible components $Y_i$ ($1\leq i\leq m$), $Y_i$ dominating $X_i$ for each index $i$ (6.15.4); $Y$ is the sum of the $Y_i$ since it is normal, and the morphism $g_i:Y_i\to X_i$ through which the restriction $Y_i\to X$ of $f$ factors (\textbf{I}, 5.2.2) is birational; since $X_i$ and $Y_i$ are integral, it then follows from the fact that $g_i$ is integral and $Y_i$ normal that, for every affine open subset $V$ of $X_i$, $\Gamma(g_i^{-1}(V),\sh{O}_{Y_i})$ is the integral closure of $\Gamma(V,\sh{O}_{X_i})$, hence $Y$ is canonically identified with $X'$ (\textbf{II}, 6.3.4). Finally, if we suppose condition (ii \emph{bis}) satisfied, we may restrict to the case where $U$ is the union of disjoint irreducible open subsets $U_i$ ($1\leq i\leq m$), so that $f^{-1}(U)$ is the disjoint union of the $V_i=f^{-1}(U_i)$. Since the $V_i$ are irreducible and $f^{-1}(U)$ is dense in $Y$, the $\overline{V}_i$ are the irreducible components of $Y$, and consequently $f$ is birational.
 
 \begin{lemma}[17.15.14.2]
 \label{IV.17.15.14.2}
@@ -1745,7 +1724,7 @@ Let us now return to the proof of (17.15.14), and apply Lemma (17.15.14.2) to $k
 
 \begin{proposition}[17.15.15]
 \label{IV.17.15.15}
-Let $f:X\to Y$ be a morphism locally of finite presentation. For $f$ to be smooth at a point $x\in X$, it is necessary and sufficient that $f$ be flat at the point $x$ and that $\varOmega^1_f$ be an $\sh{O}_X$-module that is locally free in a neighbourhood of $x$, of rank at $x$ equal to $\dim_x f$.
+Let $f:X\to Y$ be a morphism locally of finite presentation. For $f$ to be smooth at a point $x\in X$, it is necessary and sufficient that $f$ be flat at the point $x$ and that $\varOmega^1_f$ be an $\sh{O}_X$-Module that is locally free in a neighbourhood of $x$, of rank at $x$ equal to $\dim_x f$.
 \end{proposition}
 
 The necessity of the conditions follows from (17.5.1) and (17.10.2). Conversely, if these conditions are satisfied, and if $y=f(x)$, it suffices to show (17.5.1) that $f^{-1}(y)$ is smooth over $\boldsymbol{k}(y)$ at the point $x$; but this follows from the definition of $\dim_x f$ (17.10.1), from (16.4.5) and from (17.15.5).
@@ -1761,17 +1740,15 @@ Let $f:X\to S$ be a flat morphism locally of finite presentation. Let $s\in S$, 
 \end{proposition}
 
 The question being local on $X$ and $Y$, we may suppose $f$ of finite presentation. Let $(t_i)_{1\leq i\leq m}$ be a system of parameters of the local ring $\sh{O}_{X_s,x}$; there exist an affine open neighbourhood $V=\Spec(A)$ of $x$ in $X$ and $m$ sections $g_i$ of $\sh{O}_X$ over $V$ such that
-
 \oldpage[IV-4]{106}
-
 the images of the $(g_i)_x\in\sh{O}_{X,x}$ in $\sh{O}_{X_s,x}=\sh{O}_{X,x}/\mathfrak m_s\sh{O}_{X,x}$ are equal to the $t_i$. Let $X'$ be the closed sub-prescheme of $V$ defined by the ideal of $A$ generated by the $g_i$; since the sequence $(t_i)$ is regular by hypothesis (\textbf{0}, 16.5.7), it follows from (11.3.8) that, replacing $V$ if necessary by a smaller open neighbourhood, we may suppose that the morphism $X'\to S$, restriction of $f$, is flat and of finite presentation. On the other hand, since the $t_i$ form a system of parameters of $\sh{O}_{X_s,x}$, the ring $\sh{O}_{X'_s,x}$ is Artinian by definition, and since $x$ is closed in $X'_s$, we conclude that it is isolated in $X'_s$. Replacing $V$ if necessary by a smaller neighbourhood of $x$, we conclude, thanks to (13.1.4), that the morphism $X'\to S$ is quasi-finite.
 
 \begin{corollary}[17.16.2]
 \label{IV.17.16.2}
-Let $f:X\to S$ be a morphism that is faithfully flat and locally of finite presentation. Then there exists a morphism $g:S'\to S$ that is faithfully flat, locally of finite presentation and locally quasi-finite, such that there exists an $S$-morphism $S'\to X$ (in other words, such that there exists an $S'$-section of $X'=X\times_S S'$ \textup{(\textbf{I}, 3.3.14))}. If $S$ is quasi-compact (resp. quasi-compact and quasi-separated), we may suppose $S'$ affine (resp. $S'$ affine and the morphism $g$ quasi-finite).
+Let $f:X\to S$ be a morphism that is faithfully flat and locally of finite presentation. Then there exists a morphism $g:S'\to S$ that is faithfully flat, locally of finite presentation and \textup{locally quasi-finite}, such that there exists an $S$-morphism $S'\to X$ \textup{(in other words, such that there exists an} $S'$-section \textup{of} $X'=X\times_S S'$ \textup{(\textbf{I}, 3.3.14))}. If $S$ is quasi-compact \textup{(resp.} quasi-compact and quasi-separated\textup{)}, we may suppose $S'$ affine \textup{(resp.} $S'$ affine and the morphism $g$ quasi-finite\textup{)}.
 \end{corollary}
 
-For every $s\in S$, the fibre $X_s$ is non-empty by hypothesis and is a prescheme locally of finite type over $\boldsymbol{k}(s)$; the set $U_s$ of points $x$ of $X_s$ at which $\sh{O}_{X_s,x}$ is a Cohen--Macaulay ring is open in $X_s$ (6.11.3) and is non-empty, since it contains the maximal points of $X_s$ (\textbf{0}, 16.5.1); consequently it contains a point $x_s$ closed in $X_s$ (10.4.7). Let $X'(s)$ be an affine sub-prescheme of $X$ containing $x_s$ and satisfying the conditions of (17.16.1). To obtain a prescheme $S'$ satisfying the conditions of the statement, it suffices to take the sum of the $X'(s)$, where $s$ runs through $S$. Since the morphism $X'(s)\to S$ is flat and locally of finite presentation, the image $U(s)$ of $X'(s)$ is open in $S$ (2.4.6); when $S$ is quasi-compact, we can therefore cover $S$ by finitely many $U(s_j)$, and the prescheme $S'$, sum of the $X'(s_j)$, still answers the question and is affine. If moreover $S$ is quasi-separated, we may suppose the open immersions $U(s)\to S$ quasi-compact (1.2.7), hence of finite presentation (1.6.2), and then the morphisms $X'(s_j)\to S$ are of finite presentation (1.6.2), and consequently so is the morphism $S'\to S$.
+For every $s\in S$, the fibre $X_s$ is non-empty by hypothesis and is a prescheme locally of finite type over $\boldsymbol{k}(s)$; the set $U_s$ of points $x$ of $X_s$ at which $\sh{O}_{X_s,x}$ is a Cohen--Macaulay ring is open in $X_s$ (6.11.3) and is non-empty, since it contains the maximal points of $X_s$ (\textbf{0}, 16.5.1); consequently it contains a point $x_s$ \emph{closed} in $X_s$ (10.4.7). Let $X'(s)$ be an affine sub-prescheme of $X$ containing $x_s$ and satisfying the conditions of (17.16.1). To obtain a prescheme $S'$ satisfying the conditions of the statement, it suffices to take the sum of the $X'(s)$, where $s$ runs through $S$. Since the morphism $X'(s)\to S$ is flat and locally of finite presentation, the image $U(s)$ of $X'(s)$ is open in $S$ (2.4.6); when $S$ is quasi-compact, we can therefore cover $S$ by finitely many $U(s_j)$, and the prescheme $S'$, sum of the $X'(s_j)$, still answers the question and is affine. If moreover $S$ is quasi-separated, we may suppose the open immersions $U(s)\to S$ quasi-compact (1.2.7), hence of finite presentation (1.6.2), and then the morphisms $X'(s_j)\to S$ are of finite presentation (1.6.2), and consequently so is the morphism $S'\to S$.
 
 \begin{corollary}[17.16.3]
 \label{IV.17.16.3}
@@ -1781,14 +1758,12 @@ For every $s\in S$, the fibre $X_s$ is non-empty by hypothesis and is a preschem
 \end{enumerate}
 \end{corollary}
 
-It is clear that (ii) is deduced from (i) as (17.16.2) was deduced from (17.16.1), taking into account the fact that, for every $s\in S$, since $X_s$ is non-empty and smooth over $\boldsymbol{k}(s)$, there exists a closed point $x\in X_s$ such that $\boldsymbol{k}(x)$ is separable over $\boldsymbol{k}(s)$ (17.15.10, (iii)). It therefore suffices to prove (i). Note that the ring $\sh{O}_{X_s,x}$ is then regular; if we repeat the construction made in (17.16.1), taking for $(t_i)$ a regular system of parameters of $\sh{O}_{X_s,x}$, the ring $\sh{O}_{X'_s,x}$ is a field isomorphic to $\boldsymbol{k}(x)$, hence separable over $\boldsymbol{k}(s)$ by hypothesis. The conclusion then follows from (17.6.1, \emph{c$'$)}).
+It is clear that (ii) is deduced from (i) as (17.16.2) was deduced from (17.16.1), taking into account the fact that, for every $s\in S$, since $X_s$ is non-empty and smooth over $\boldsymbol{k}(s)$, there exists a closed point $x\in X_s$ such that $\boldsymbol{k}(x)$ is \emph{separable} over $\boldsymbol{k}(s)$ (17.15.10, (iii)). It therefore suffices to prove (i). Note that the ring $\sh{O}_{X_s,x}$ is then regular; if we repeat the construction made in (17.16.1), taking for $(t_i)$ a regular system of parameters of $\sh{O}_{X_s,x}$, the ring $\sh{O}_{X'_s,x}$ is a field isomorphic to $\boldsymbol{k}(x)$, hence separable over $\boldsymbol{k}(s)$ by hypothesis. The conclusion then follows from (17.6.1, \emph{c$'$)}).
 
 \begin{proposition}[17.16.4]
 \label{IV.17.16.4}
 Let $S$ be a quasi-compact and quasi-separated prescheme, and $f:X\to S$ a surjective morphism locally of finite presentation. Then there exists a finite family $(S_i)_{i\in I}$
-
 \oldpage[IV-4]{107}
-
 of affine sub-preschemes of $S$, of finite presentation over $S$, pairwise disjoint, with union $S$, and having the following property: for each $i\in I$, there exist two finite surjective morphisms of finite presentation
 \[
   S_i''\xrightarrow{g_i}S_i'\xrightarrow{h_i}S_i,
@@ -1806,9 +1781,9 @@ We may therefore suppose $X$ \emph{affine} and $f$ of finite presentation. We ca
 
 Let $s_h$ $(1\leq h\leq r)$ be the maximal points of $S$. Let us show that it suffices to prove the statement with $S$ replaced by a sufficiently small open neighbourhood $U_h$ of each of the $s_h$, and $X$ by the inverse image of $U_h$ in $X$. Indeed, suppose the proposition established in this case, and let us argue by Noetherian induction ($\mathbf{0}_{\mathrm I}$, 2.2.2), supposing the statement established for every closed sub-prescheme of $S$ having an underlying space $\neq S$. We may suppose that the $U_h$ pairwise have no point in common; if $T$ is a closed sub-prescheme having $S\setmin(\bigcup_h U_h)$ as underlying space, the induction hypothesis implies that the statement is true for $T$; since it is also true for each of the $U_h$, it is evidently true for $S$.
 
-Since we may evidently (replacing $S$ by $S_{\mathrm{red}}$ and $X$ by $X\times_S S_{\mathrm{red}}$) suppose $S$ reduced, each of the $\sh{O}_{S,s_h}$ is a field $\boldsymbol{k}(s_h)$. Suppose that we have proved the proposition when $S$ is the spectrum of a field and $f$ is of finite type. Then the existence of the $U_h$ follows from the method of (8.1.2, $a$)) and from (8.8.2, (i) and (ii)), (8.10.5, (vi), (vii) and (x)), (11.2.6, (ii)) and (17.7.8, (ii)).
+Since we may evidently (replacing $S$ by $S_{\mathrm{red}}$ and $X$ by $X\times_S S_{\mathrm{red}}$) suppose $S$ reduced, each of the $\sh{O}_{S,s_h}$ is a field $\boldsymbol{k}(s_h)$. Suppose that we have proved the proposition when $S$ is the spectrum of a field and $f$ is of finite type. Then the existence of the $U_h$ follows from the method of (8.1.2, \emph{a)}) and from (8.8.2, (i) and (ii)), (8.10.5, (vi), (vii) and (x)), (11.2.6, (ii)) and (17.7.8, (ii)).
 
-Suppose therefore that $S=\Spec(k)$, where $k$ is a field, $X$ being of finite type over $k$ and $X\neq\varnothing$. Since $X$ is Noetherian, there exists in $X$ a closed point $x$ ($\mathbf{0}_{\mathrm I}$, 2.1.3), so $\boldsymbol{k}(x)$ is a finite extension of $k$ (1.6.4.2). Consequently there is a finite separable extension $k'$ of $k$ such that $k''=\boldsymbol{k}(x)$ is a finite radicial extension of $k'$. We then answer the question by taking $I$ reduced to one element, $S_i'=\Spec(k')$, $S_i''=\Spec(k'')$.
+Suppose therefore that $S=\Spec(k)$, where $k$ is a field, $X$ being of finite type over $k$ and $X\neq\varnothing$. Since $X$ is Noetherian, there exists in $X$ a closed point $x$ ($\mathbf{0}_{\mathrm I}$, 2.1.3), so $\boldsymbol{k}(x)$ is a \emph{finite} extension of $k$ (\textbf{I}, 6.4.2). Consequently there is a finite separable extension $k'$ of $k$ such that $k''=\boldsymbol{k}(x)$ is a finite radicial extension of $k'$. We then answer the question by taking $I$ reduced to one element, $S_i'=\Spec(k')$, $S_i''=\Spec(k'')$.
 
 \oldpage[IV-4]{108}
 
@@ -1830,7 +1805,7 @@ Let $S$ be a quasi-compact and quasi-separated prescheme, and $f:X\to S$ a morph
 where $u_i$ and $h_i$ are finite and locally free \textup{(18.2.7)}, $h_i$ is étale, and $u_i$ is radicial and surjective.
 \end{proposition}
 
-We follow a course analogous to that of (17.16.4). We first reduce to the case where $S$ is affine and $f$ is flat, using the generic flatness theorem (8.9.5) (observe that the sub-preschemes $S_i'$ defined in the proof of (8.9.5) are affine). Since $f$ is of finite presentation, we can then write $X=X_0\times_{S_0}S$, where $S_0$ is Noetherian and $X_0\to S_0$ is a flat morphism of finite type (11.2.7); moreover, each fibre $(X_0)_{s_0}$ is again proper over $\boldsymbol{k}(s_0)$, as follows from (2.7.1, (vii)), and we are therefore reduced to the case where $S$ is Noetherian. By Noetherian induction and application of the procedure of (8.1.2, $a$)) (this time also using (8.10.5, (xii))), we are finally reduced, in order to prove the first assertion, to the case where $S$ is the spectrum of a field, which follows trivially from the hypothesis (with $S_i=S$). We treat in the same way the case where $X_s$ is supposed finite over $\boldsymbol{k}(s)$ for every $s\in S$ (this time one must use (2.7.1, (xv)), (8.10.5, (x), (iv), (vi) and (vii)), (17.7.8) and (2.1.12)), and we are reduced to proving the last assertion of the statement when $S=\Spec(k)$ is the spectrum of a field. But then $X=\Spec(A)$, where $A$ is a finite $k$-algebra (\textbf{I}, 6.4.4); so $A$ is the direct product of finite $k$-algebras $A_j$ that are local rings $(1\leq j\leq m)$; since $A_j$ is an Artinian ring and a
+We follow a course analogous to that of (17.16.4). We first reduce to the case where $S$ is affine and $f$ is flat, using the generic flatness theorem (8.9.5) (observe that the sub-preschemes $S_i'$ defined in the proof of (8.9.5) are affine). Since $f$ is of finite presentation, we can then write $X=X_0\times_{S_0}S$, where $S_0$ is Noetherian and $X_0\to S_0$ is a flat morphism of finite type (11.2.7); moreover, each fibre $(X_0)_{s_0}$ is again proper over $\boldsymbol{k}(s_0)$, as follows from (2.7.1, (vii)), and we are therefore reduced to the case where $S$ is Noetherian. By Noetherian induction and application of the procedure of (8.1.2, \emph{a)}) (this time also using (8.10.5, (xii))), we are finally reduced, in order to prove the first assertion, to the case where $S$ is the spectrum of a field, which follows trivially from the hypothesis (with $S_i=S$). We treat in the same way the case where $X_s$ is supposed finite over $\boldsymbol{k}(s)$ for every $s\in S$ (this time one must use (2.7.1, (xv)), (8.10.5, (x), (iv), (vi) and (vii)), (17.7.8) and (2.1.12)), and we are reduced to proving the last assertion of the statement when $S=\Spec(k)$ is the spectrum of a field. But then $X=\Spec(A)$, where $A$ is a finite $k$-algebra (\textbf{I}, 6.4.4); so $A$ is the direct product of finite $k$-algebras $A_j$ that are local rings $(1\leq j\leq m)$; since $A_j$ is an Artinian ring and a
 
 \oldpage[IV-4]{109}
 

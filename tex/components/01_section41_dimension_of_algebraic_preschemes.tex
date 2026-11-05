@@ -7,9 +7,9 @@
 \label{subsection:IV.4.1}
 
 We shall develop in \S~5 the general theory of the dimension of preschemes.
-The theory of the dimension of algebraic preschemes, however, can be developed more elementarily and also has many special features; we therefore give here a rapid account independent of the general theory.
+The theory of the dimension of \emph{algebraic} preschemes, however, can be developed more elementarily and also has many special features; we therefore give here a rapid account independent of the general theory.
 
-If $K$ is a field and $L$ an extension of $K$, we write $\operatorname{tr.deg}_K L$ for the transcendence degree of $L$ over $K$.
+If $K$ is a field and $L$ an extension of $K$, we write $\operatorname{tr.deg}_K L$ for the \emph{transcendence degree} of $L$ over $K$.
 
 \begin{definition}[4.1.1]
 \phantomsection
@@ -17,21 +17,21 @@ If $K$ is a field and $L$ an extension of $K$, we write $\operatorname{tr.deg}_K
 Let $k$ be a field and $X$ a prescheme locally of finite type over $k$.
 The dimension of $X$ is the number
 \begin{equation}
-\dim(X)=\sup_x\operatorname{tr.deg}_k\kappa(x),
+\dim(X)=\sup_x\operatorname{tr.deg}_k\boldsymbol{k}(x),
 \tag{4.1.1.1}
 \label{IV.4.1.1.1}
 \end{equation}
 where $x$ runs through the set of maximal points of $X$.
 \end{definition}
 
-We shall see in \sref{IV.5.2.2} that Definition \sref{IV.4.1.1} depends only apparently on the base field $k$ over which $X$ is locally of finite type, and that the number $\dim(X)$ so defined agrees with the dimension of the underlying space of $X$ \sref[0]{0.14.1.2}.
+We shall see in \S~5 \sref{IV.5.2.2} that Definition \sref{IV.4.1.1} depends only apparently on the base field $k$ over which $X$ is locally of finite type, and that the number $\dim(X)$ so defined agrees with the dimension of the \emph{underlying space} $X$ (defined in \sref[0]{0.14.1.2}).
 Evidently,
 \[
 \dim(X)=\dim(X_{\mathrm{red}}).
 \]
 
-Each $\kappa(x)$ is an extension of finite type of $k$ \sref[I]{I.6.3.3}, hence has finite transcendence degree over $k$.
-If $X$ is of finite type over $k$ and nonempty, it is Noetherian \sref[I]{I.6.3.7}, hence has only finitely many irreducible components; consequently $\dim(X)$ is finite and nonnegative.
+Each $\boldsymbol{k}(x)$ is an extension \emph{of finite type} of $k$ \sref[I]{I.6.3.3}, hence has finite transcendence degree over $k$.
+If $X$ is of finite type over $k$ and nonempty, it is Noetherian \sref[I]{I.6.3.7}, hence has only finitely many irreducible components; consequently $\dim(X)$ is \emph{finite} and nonnegative.
 Definition \sref{IV.4.1.1} gives
 \[
 \dim(\emptyset)=\setmin\infty.
@@ -43,15 +43,15 @@ If $(X_\alpha)$ denotes the family of reduced closed sub-preschemes of $X$ whose
 \tag{4.1.1.2}
 \label{IV.4.1.1.2}
 \end{equation}
-The calculation of the dimension is thus reduced to the case of integral preschemes locally of finite type over $k$.
-Finally,
+The calculation of the dimension is thus reduced to the case of \emph{integral} preschemes (locally of finite type over $k$).
+Finally, we evidently have
 \begin{equation}
 \dim(X)=\dim(U)
 \tag{4.1.1.3}
 \label{IV.4.1.1.3}
 \end{equation}
-for every induced sub-prescheme on an everywhere dense open subset $U$ of $X$.
-The notion of dimension is thereby reduced to the case of an affine scheme of finite type over $k$.
+for every induced sub-prescheme on an \emph{everywhere dense} open subset $U$ of $X$.
+The notion of dimension is thereby finally reduced to the case of a scheme \emph{affine of finite type over $k$}.
 
 \begin{theorem}[4.1.2]
 \phantomsection
@@ -71,28 +71,26 @@ Let $X$ and $Y$ be two preschemes locally of finite type over a field $k$, and l
 \]
 \item Suppose that $X$ is of finite type over $k$.
 For $\dim(X)\geq n$ (respectively $\dim(X)\leq n$, respectively $\dim(X)=n$), it is necessary and sufficient that there exist an open subset $U$ dense in $X$ and a $k$-morphism
-\[
-g:U\longrightarrow\mathbf{V}_k^n
-=\Spec\bigl(k[T_1,\ldots,T_n]\bigr)
-\]
+$g:U\longrightarrow\mathbf{V}(k^n)$
+$(=\Spec(k[T_1,\ldots,T_n])$, which we shall also denote by $\mathbf{V}_k^n)$
 that is surjective (respectively finite, respectively finite and surjective).
-If $X$ is affine, one may take $U=X$.
+If $X$ is an affine scheme, one may take $U=X$.
 \end{enumerate}
 \end{theorem}
 
 \begin{proof}
 \emph{(i)} Let $y$ be a maximal point of $Y$.
-The fibre $f^{-1}(y)$ contains a maximal point $x$ of $X$ \sref{IV.1.1.5}; hence $\kappa(x)$ is an extension of $\kappa(y)$, and therefore
+The fibre $f^{-1}(y)$ contains a maximal point $x$ of $X$ \sref{IV.1.1.5}; hence $\boldsymbol{k}(x)$ is an extension of $\boldsymbol{k}(y)$, and therefore
 \[
-\operatorname{tr.deg}_k\kappa(y)
+\operatorname{tr.deg}_k\boldsymbol{k}(y)
 \leq
-\operatorname{tr.deg}_k\kappa(x)
+\operatorname{tr.deg}_k\boldsymbol{k}(x)
 \leq
 \dim(X).
 \]
 This proves (i).
 
-\emph{(ii)} If $x$ is a maximal point of $X$, then $\kappa(x)$ is a finite extension of $\kappa(f(x))$ \sref[II]{II.6.2.2}, and hence has the same transcendence degree over $k$.
+\emph{(ii)} If $x$ is a maximal point of $X$, then $\boldsymbol{k}(x)$ is a finite extension of $\boldsymbol{k}(f(x))$ \sref[II]{II.6.2.2}, and hence has the same transcendence degree over $k$.
 On considering the reduced closed sub-prescheme of $Y$ whose underlying space is $\overline{\{f(x)\}}$, we are reduced to the following corollary.
 \end{proof}
 
@@ -111,7 +109,7 @@ Then $Z$ is rare in $Y$ if and only if $\dim(Z)<\dim(Y)$.
 \begin{proof}
 Let $z$ be a maximal point of $Z$.
 By considering one of the reduced closed sub-preschemes of $Y$ whose underlying space is an irreducible component of $Y$ containing $z$, we reduce to the case in which $Y$ is integral, with generic point $y$.
-Then, by taking in $Y$ an affine open neighbourhood of $z$, we reduce to the case in which $Y$ is affine and of finite type over $k$.
+Then, by taking in $Y$ an affine open neighbourhood of $z$, we reduce to the case in which $Y$ is affine and of finite type over $k$, and $Z$ closed in $Y$.
 Write
 \[
 Y=\Spec(A),
@@ -120,7 +118,7 @@ Z=\Spec(A/\mathfrak a),
 \]
 where $A$ is an integral ring and $\mathfrak a$ is an ideal of $A$ distinct from $A$.
 
-By the normalization lemma (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, no.~1, th.~1) there exists a finite sequence $(x_i)_{1\leq i\leq n}$ of elements of $A$, algebraically independent over $k$, such that $A$ is integral over $B=k[x_1,\ldots,x_n]$
+By the normalization lemma (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, n\textsuperscript{o}~1, th.~1) there exists a finite sequence $(x_i)_{1\leq i\leq n}$ of elements of $A$, algebraically independent over $k$, such that $A$ is integral over $B=k[x_1,\ldots,x_n]$
 and $\mathfrak a\cap B$ is generated by a subfamily $(x_i)_{1\leq i\leq p}$, possibly empty, of $(x_i)_{1\leq i\leq n}$.
 Let $g:Y\longrightarrow\Spec(B)=\mathbf{V}_k^n$
 be the finite dominant morphism corresponding to the canonical injection $B\to A$.
@@ -132,23 +130,20 @@ C=B/(\mathfrak a\cap B)
 $g$ induces on $Z$ a finite dominant morphism $Z\longrightarrow\mathbf{V}_k^{n-p}$.
 Thus
 \[
-\operatorname{tr.deg}_k\kappa(y)=n,
+\operatorname{tr.deg}_k\boldsymbol{k}(y)=n,
 \qquad
-\operatorname{tr.deg}_k\kappa(z)=n-p,
+\operatorname{tr.deg}_k\boldsymbol{k}(z)=n-p,
 \]
-because $\kappa(y)$ and $\kappa(z)$ are finite extensions of $\kappa(g(y))$ and $\kappa(g(z))$, respectively.
+because $\boldsymbol{k}(y)$ and $\boldsymbol{k}(z)$ are finite extensions of $\boldsymbol{k}(g(y))$ and $\boldsymbol{k}(g(z))$, respectively.
 This proves the first assertion.
 
 If $p=0$, then necessarily $z=y$, since $y$ is the only point of $Y$ whose image under $g$ is the generic point of $\mathbf{V}_k^n$; in this case $Z$ contains a nonempty open subset of $Y$.
-If $p>0$, then $z\neq y$, and $\overline{\{z\}}$ is rare in $\overline{\{y\}}$.
-This completes the proof.
+If on the contrary $p>0$, we necessarily have $z\neq y$, and $\overline{\{z\}}$ is therefore \emph{rare} in $\overline{\{y\}}$, which completes the proof of \sref{IV.4.1.2.1}.
 \end{proof}
 
 \begin{proof}[Proof of \sref{IV.4.1.2}, continued]
-The corollary proves (ii).
-
-\emph{(iii)} The sufficiency of the stated conditions follows immediately from (i), (ii), and \sref{IV.1.5.4}(v).
-To prove necessity, choose a dense open subset $U$ of $X$ that is the union of pairwise disjoint irreducible affine open subsets $U_i$ $(1\leq i\leq m)$, each containing a maximal point of $X$ \sref[0]{0.2.1.6}.
+\emph{(iii)} The sufficiency of the stated conditions follows immediately from (i), (ii), and \sref{IV.1.5.4},~(v).
+To prove necessity, choose a dense open subset $U$ of $X$ that is the union of pairwise disjoint irreducible affine open subsets $U_i$ $(1\leq i\leq m)$, each containing a maximal point of $X$ \sref[0\textsubscript{\mdseries I}]{0.2.1.6}.
 We may further suppose that $X$ is reduced; if $X$ is affine, we may of course take $U=X$.
 
 \oldpage[IV-2]{54}
@@ -166,13 +161,13 @@ When $n'\geq n$, composing $g$ with the canonical closed immersion $\mathbf{V}_k
 gives a finite morphism $U\to\mathbf{V}_k^{n'}$.
 When $n'\leq n$, compose $g$ with the canonical morphism $p:\mathbf{V}_k^n\longrightarrow\mathbf{V}_k^{n'}$
 corresponding to the canonical injection $k[T_1,\ldots,T_{n'}]\longrightarrow k[T_1,\ldots,T_n]$.
-The morphism $p$ is faithfully flat, hence surjective.
+The morphism $p$ is faithfully flat, hence \emph{surjective}.
 \end{proof}
 
 \begin{remark}[4.1.3]
 \phantomsection
 \label{IV.4.1.3}
-Corollary \sref{IV.4.1.2.1} shows that in formula \sref{IV.4.1.1.1} one may let $x$ run through the set of all points of $X$.
+Corollary \sref{IV.4.1.2.1} shows that in formula \sref{IV.4.1.1.1} one may let $x$ run through the set of \emph{all points} of $X$.
 \end{remark}
 
 \begin{corollary}[4.1.4]
@@ -185,7 +180,7 @@ Then $\dim(X\otimes_k K)=\dim(X)$.
 \begin{proof}
 It is enough to consider the case in which $X$ is of finite type over $k$.
 The morphism $u:X\otimes_k K\longrightarrow X$
-is faithfully flat \sref{IV.2.2.13}(i).
+is faithfully flat \sref{IV.2.2.13},~(i).
 Thus, if $U$ is an everywhere dense open subset of $X$, then $u^{-1}(U)=U\otimes_k K$
 is dense in $X\otimes_k K$ \sref{IV.2.3.10}.
 If $g:U\longrightarrow\mathbf{V}_k^n$
@@ -205,9 +200,9 @@ Then $\dim(X\times_k Y)=\dim(X)+\dim(Y)$.
 It is enough to prove the following.
 Let $U$ and $V$ be affine neighbourhoods of points $x\in X$ and $y\in Y$ such that
 \[
-\operatorname{tr.deg}_k\kappa(x)=m=\dim(U),
+\operatorname{tr.deg}_k\boldsymbol{k}(x)=m=\dim(U),
 \qquad
-\operatorname{tr.deg}_k\kappa(y)=n=\dim(V).
+\operatorname{tr.deg}_k\boldsymbol{k}(y)=n=\dim(V).
 \]
 Then $\dim(U\times_k V)=m+n$.
 Equivalently, by \sref{IV.4.1.2}, we may suppose that there exist finite surjective $k$-morphisms

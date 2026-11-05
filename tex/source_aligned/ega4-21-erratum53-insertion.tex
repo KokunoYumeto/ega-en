@@ -4,19 +4,17 @@ M.~Raynaud.
 
 \begin{proposition}[21.4.9]
 \ifdefined\EGAIVSuppressErratumLabels\else\label{IV.21.4.9}\fi
-Let $X$ and $Y$ be two locally Noetherian preschemes, and let
-$f:X\to Y$ be a faithfully flat morphism.  Suppose in addition either
-that $f$ is quasi-compact or that $f$ is open.  A divisor $D'$ on $X$
-is of the form $f^*(D)$, with $D$ a divisor on $Y$, if and only if the
-following condition holds: for every $y\in Y$ such that
-$\operatorname{prof}(\sh{O}_{Y,y})\leq 1$, put
-\[
- Y_1=\operatorname{Spec}(\sh{O}_{Y,y}),\qquad
- X_1=X\times_Y Y_1,
- \qquad f_1=f_{(Y_1)}:X_1\to Y_1;
-\]
-then the inverse image $D_1'$ of $D'$ on $X_1$ is of the form
-$f_1^*(D_1)$ for some $D_1\in\operatorname{Div}(Y_1)$.
+Let $X$, $Y$ be two locally Noetherian preschemes,
+$f:X\to Y$ a faithfully flat morphism; suppose moreover \textup{either} that
+$f$ is quasi-compact, \textup{or} that $f$ is open. For a divisor
+$D'$ on $X$ to be of the form $f^*(D)$, where $D$ is a divisor on
+$Y$, it is necessary and sufficient that for every $y\in Y$ such that
+$\operatorname{prof}(\sh{O}_{Y,y})\leq 1$, on putting
+$Y_1=\operatorname{Spec}(\sh{O}_{Y,y})$,
+$X_1=X\times_Y Y_1$,
+$f_1=f_{(Y_1)}:X_1\to Y_1$,
+the inverse image $D_1'$ of $D'$ on $X_1$ is of the form
+$f_1^*(D_1)$, where $D_1\in\operatorname{Div}(Y_1)$.
 \end{proposition}
 
 \oldpage[IV]{359}
@@ -26,7 +24,7 @@ inverse images of divisors, all the morphisms in question being flat
 {\hyperref[IV.21.4.4]{(21.4.4)}}.  For every open subset $U$ of $Y$, write $f_U$ for the
 restriction $f^{-1}(U)\to U$ of $f$.  By {\hyperref[IV.21.4.8]{(21.4.8)}}, the map
 \[
- D_U\longmapsto f_U^*(D_U)
+ D_U\leadsto f_U^*(D_U)
 \]
 from $\operatorname{Div}(U)$ to
 $\operatorname{Div}(f^{-1}(U))$ is injective.  Thus, if $U_1,U_2$ are
@@ -37,28 +35,28 @@ two open subsets of $Y$ and
 \]
 then necessarily
 $D_1|U_1\cap U_2=D_2|U_1\cap U_2$.  It follows at once that there is a
-largest open subset $U\subset Y$ for which
+\emph{largest} open subset $U\subset Y$ for which
 \[
  D'|f^{-1}(U)=f_U^*(D_U)
  \quad\text{with}\quad D_U\in\operatorname{Div}(U).
 \]
 We must show that $U=Y$.  Suppose otherwise, and let $y$ be a maximal
-point of $Y\setminus U$.  We shall find an open neighbourhood $V$ of
+point of $Y\setmin U$.  We shall find an open neighbourhood $V$ of
 $y$ in $Y$ such that
 $D'|f^{-1}(V)=f_V^*(D_V)$ for some
 $D_V\in\operatorname{Div}(V)$, contradicting the maximality of $U$.
 
 \textup{I)} \emph{The case where $f$ is quasi-compact.}
-Using the quasi-compactness of $f$ and {\hyperref[IV.20]{(20.3.8)}}, by the method of
-({\hyperref[IV.8.1.2]{8.1.2}}, a), we are reduced to proving---in the notation of the
+Applying the fact that $f$ is quasi-compact and {\hyperref[IV.20.3.8]{(20.3.8)}} following the method of
+({\hyperref[IV.8.1.2]{8.1.2}}, \emph{a)}), we are reduced to proving---in the notation of the
 statement, but without initially imposing a bound on
 $\operatorname{prof}(\sh{O}_{Y,y})$---that $D_1'$ is of the form
 $f_1^*(D_1)$.  If $\operatorname{prof}(\sh{O}_{Y,y})\leq 1$, this is
 precisely the hypothesis.  Suppose therefore that
 $\operatorname{prof}(\sh{O}_{Y,y})\geq 2$.  Since $y$ is a maximal
-point of $Y\setminus U$, the open subset $W=Y_1\cap U$ of $Y_1$ is
-$Y_1\setminus\{y\}$.  We may therefore restrict to the case
-$Y=Y_1$ and $U=Y\setminus\{y\}$.
+point of $Y\setmin U$, the open subset $W=Y_1\cap U$ of $Y_1$ is
+$Y_1\setmin\{y\}$.  We may therefore restrict to the case
+$Y=Y_1$ and $U=Y\setmin\{y\}$.
 
 By hypothesis there is a divisor $D_U\in\operatorname{Div}(U)$ such
 that $f_U^*(D_U)=D'|f^{-1}(U)$.  The divisor $D_U$ is the equivalence
@@ -78,7 +76,7 @@ and put
 Since $f$ is flat, $f^*(\sh{L})$ is canonically isomorphic to
 $\sh{L}'$ {\hyperref[IV.2.3.1]{(2.3.1)}}.  Moreover, flatness and the inequality
 $\operatorname{prof}(\sh{O}_{Y,y})\geq 2$ imply
-$\operatorname{prof}(\sh{O}_{X,x})\geq 2$ for every
+$\operatorname{prof}(\sh{O}_{X,x})\geq 2$ for \emph{every}
 $x\in f^{-1}(y)$ {\hyperref[IV.6.3.1]{(6.3.1)}}.
 
 The divisor $D'$ is the equivalence class of a pair
@@ -93,13 +91,13 @@ $\sh{O}_Y$-Module {\hyperref[IV.2.5.2]{(2.5.2)}}, and hence isomorphic to $\sh{O
 $Y$ is a local scheme.
 
 Furthermore, since $\operatorname{prof}(\sh{O}_{Y,y})\geq 1$, the open
-subset $U=Y\setminus\{y\}$ is schematically dense in $Y$
-({\hyperref[IV.20]{20.2.13}}, (iv)).  The regular meromorphic section $s$ of $\sh{L}_U$
+subset $U=Y\setmin\{y\}$ is schematically dense in $Y$
+({\hyperref[IV.20.2.13]{20.2.13}}, (iv)).  The regular meromorphic section $s$ of $\sh{L}_U$
 over $U$ therefore extends to a regular meromorphic section $s_0$ of
-$\sh{L}$ over $Y$ {\hyperref[IV.20]{(20.2.11)}}.  The equivalence class of
+$\sh{L}$ over $Y$ {\hyperref[IV.20.2.11]{(20.2.11)}}.  The equivalence class of
 $(\sh{L},s_0)$ is thus a divisor $D$ on $Y$.  Plainly $f^*(D)$ and
 $D'$ induce the same divisor on
-$f^{-1}(U)=X\setminus f^{-1}(y)$; and since
+$f^{-1}(U)=X\setmin f^{-1}(y)$; and since
 $\operatorname{prof}(\sh{O}_{X,x})\geq 2$ for every
 $x\in f^{-1}(y)$, {\hyperref[IV.21.1.8]{(21.1.8)}} gives $D'=f^*(D)$.  This proves case I.
 
@@ -216,7 +214,7 @@ add to the condition in the statement that the inverse images of $D'$
 in each group
 $\operatorname{Div}(\operatorname{Spec}(\sh{O}_{X,x}))$ with $x$
 running over the maximal points of $X_y$, are all of the form
-$\operatorname{div}((t_x')^n)$, where $t_x'$ is a uniformizer of
+$\operatorname{div}(t'^n_x)$, where $t_x'$ is a uniformizer of
 $\sh{O}_{X,x}$ and the integer $n$ is the same for all these points.
 \end{remark}
 
@@ -256,9 +254,9 @@ $\sh{L}_\eta$ over $X_\eta$ which corresponds, under an isomorphism,
 to the unit section of $\sh{O}_{X_\eta}$.  Let $U$ be an affine open
 neighbourhood in $X$ of a point $x\in X_\eta$, and let $s$ be a section
 of $\sh{L}$ over $U$ with the same germ at $x$ as $s_\eta$.  Since $U$
-is schematically dense in $X$ ({\hyperref[IV.20]{20.2.13}}, (iv)), $s$ identifies with a
+is schematically dense in $X$ ({\hyperref[IV.20.2.13]{20.2.13}}, (iv)), $s$ identifies with a
 uniquely determined regular meromorphic section of $\sh{L}$ over $X$.
-It is clear from {\hyperref[IV.20]{(20.2.11)}} and {\hyperref[IV.20]{(20.3.5)}} that this section induces on
+It is clear from {\hyperref[IV.20.2.11]{(20.2.11)}} and {\hyperref[IV.20]{(20.3.5)}} that this section induces on
 $X_\eta$ a regular meromorphic section of $\sh{L}_\eta$ equal to
 $s_\eta$, and hence has the required property.
 \end{proof}

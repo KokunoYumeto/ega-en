@@ -8,22 +8,22 @@
 \begin{env}[7.1.1]
 \label{III.7.1.1}
 Given a ring $A$, not necessarily commutative, denote by
-$\cat{Ab}_A$ the category of left $A$-modules, and simply by
+$\cat{Ab}_A$ the category of \emph{left} $A$-\emph{modules}, and simply by
 $\cat{Ab}$ the category of $\bb Z$-modules, which is the same
 as the category of commutative groups.  Let
 \[
   T:\cat{Ab}_A\longrightarrow\cat{Ab}
 \]
-be an additive covariant functor, and let $M$ be an
+be an \emph{additive covariant functor}, and let $M$ be an
 $(A,A)$-\emph{bimodule}.  Then $T(M)$ is naturally endowed with the
-structure of a right $A$-module.
+structure of a \emph{right} $A$-\emph{module}.
 
 Indeed, for every $a\in A$, let $h_{a,M}$, or simply $h_a$,
 denote the endomorphism
 \[
-  x\longmapsto xa
+  x\to xa
 \]
-of the left $A$-module $M$.  By hypothesis, $T(h_a)$ is an
+of the \emph{left} $A$-module $M$.  By hypothesis, $T(h_a)$ is an
 endomorphism of the $\bb Z$-\emph{module} $T(M)$.  Since $T$ is
 covariant and additive, for $a,b\in A$ one has
 \[
@@ -43,15 +43,15 @@ and
 \]
 \par\medskip\noindent Thus
 \[
-  (y,a)\longmapsto T(h_a)(y)
+  (a,y)\to T(h_a)(y)
 \]
 defines a right $A$-module scalar multiplication on $T(M)$.
-In particular, $T(A_s)$ is a right $A$-module.
+In particular, $T(A_s)$ is a \emph{right} $A$-\emph{module}.
 \end{env}
 
 \begin{env}[7.1.2]
 \label{III.7.1.2}
-Suppose that $A$ is commutative.  It follows from
+Suppose that $A$ is \emph{commutative}.  It follows from
 \sref{III.7.1.1} that, for every $A$-module $M$, the group
 $T(M)$ is naturally an $A$-module.  Moreover, if
 $u:M\to N$ is an $A$-linear homomorphism, then, for every
@@ -59,16 +59,17 @@ $a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
 and hence $T(u)\circ T(h_{a,M})
 =
 T(h_{a,N})\circ T(u)$.
-Consequently $T(u):T(M)\to T(N)$ is $A$-linear, and $T$ may be
+Consequently $T(u):T(M)\to T(N)$ is a homomorphism of
+$A$-\emph{modules}, and $T$ may be
 regarded as an additive covariant functor from $\cat{Ab}_A$ to
 itself.
 
-More precisely, this defines a canonical equivalence between
+More precisely, this defines a canonical \emph{equivalence} between
 the category of additive covariant functors
 \[
   \cat{Ab}_A\longrightarrow\cat{Ab}
 \]
-and the category of $A$-linear covariant functors
+and the category of $A$-\emph{linear} covariant functors
 \[
   T:\cat{Ab}_A\longrightarrow\cat{Ab}_A,
 \]
@@ -77,7 +78,7 @@ that is, functors satisfying
   T(h_{a,M})=h_{a,T(M)}
   \qquad(a\in A).
 \]
-The forgetful functor
+The inclusion functor
 \[
   I:\cat{Ab}_A\longrightarrow\cat{Ab},
 \]
@@ -127,8 +128,8 @@ Suppose again that $A$ is commutative, and let
 \[
   T:\cat{Ab}_A\longrightarrow\cat{Ab}_A
 \]
-be an additive covariant $A$-linear functor that commutes with
-direct limits.  For every multiplicative subset $S$ of $A$ and
+be an additive covariant $A$-linear functor that \emph{commutes with
+direct limits}.  For every multiplicative subset $S$ of $A$ and
 every $A$-module $M$, there is a canonical functorial
 isomorphism of $A$-modules
 \begin{env}[7.1.4.1]
@@ -146,7 +147,7 @@ $n\geq0$, of an element $f\in A$.  Then $M_f=\varinjlim M_n$,
 where $(M_n,\vphi_{nm})$ is the direct system of $A$-modules
 with $M_n=M$ and
 \[
-  \vphi_{nm}:z\longmapsto f^{\,n-m}z
+  \vphi_{nm}:z\leadsto f^{\,n-m}z
   \qquad\text{\sref[0]{0.1.6.1}}.
 \]
 Formula \eqref{III.7.1.4.1.eq} follows in this case from the

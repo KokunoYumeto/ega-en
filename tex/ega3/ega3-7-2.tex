@@ -16,9 +16,9 @@ such that
 the two maps being related by $v(t\otimes x)=u(t,x)$.
 On the other hand, giving $u$ is equivalent to giving a
 \oldpage[III]{177}
-$\bb Z$-homomorphism
+$\bb Z$-\emph{homomorphism}
 \[
-  x\longmapsto f_x
+  x\to f_x
 \]
 from $M$ to $\Hom_{\bb Z}(N,P)$ such that
 \[
@@ -35,8 +35,8 @@ Let
   T:\cat{Ab}_A\longrightarrow\cat{Ab}
 \]
 be an additive covariant functor.  For every left $A$-module
-$M$ we shall define a canonical homomorphism of $\bb Z$-modules,
-functorial in $M$,
+$M$ we shall define a \emph{canonical homomorphism of} $\bb Z$-\emph{modules},
+\emph{functorial in} $M$,
 \begin{env}[7.2.2.1]
 \label{III.7.2.2.1}
 \[
@@ -47,7 +47,7 @@ functorial in $M$,
 By \sref{III.7.2.1}, it is enough to define a
 $\bb Z$-homomorphism
 \[
-  x\longmapsto t'_M(x)
+  x\leadsto t'_M(x)
 \]
 from $M$ to $\Hom_{\bb Z}(T(A_s),T(M))$ such that
 \[
@@ -59,9 +59,9 @@ $\Hom_{\bb Z}(T(A_s),T(M))$ is canonically a left $A$-module,
 by virtue of the right $A$-module structure on $T(A_s)$, with
 scalar multiplication defined by
 \[
-  (a\cdot w)(y)=w(ya)
+  (a.v)(y)=v(ya)
 \]
-for $a\in A$, $w\in\Hom_{\bb Z}(T(A_s),T(M))$, and
+for $a\in A$, $v\in\Hom_{\bb Z}(T(A_s),T(M))$, and
 $y\in T(A_s)$.  Define $t'_M$ to be the composite of the two
 canonical homomorphisms
 \[
@@ -72,16 +72,17 @@ canonical homomorphisms
   \Hom_{\bb Z}(T(A_s),T(M)).
 \]
 
-The second arrow sends $w$ to $T(w)$; the first is the canonical
-isomorphism of $A$-modules sending $x$ to the map
-$\theta_x:A_s\to M$ defined by
+The second arrow is the map $u\leadsto T(u)$; the first is the canonical
+isomorphism of $A$-modules $x\leadsto\theta_x$ such that
 \[
   \theta_x(\xi)=\xi x
   \qquad(\xi\in A,\ x\in M).
 \]
-Since $\theta_{ax}=\theta_x\circ h_a$, one has
+One has $\theta_{ax}=\theta_x\circ h_a$, hence
 \[
   T(\theta_{ax})
+  =
+  T(\theta_x\circ h_a)
   =
   T(\theta_x)\circ T(h_a),
 \]
@@ -116,7 +117,7 @@ diagram
 \end{env}
 is commutative.  The functoriality of
 \eqref{III.7.2.2.1.eq} also shows that, when $A$ is
-commutative, $t_M$ is a homomorphism of $A$-modules
+\emph{commutative}, $t_M$ is a homomorphism of $A$-\emph{modules}
 \sref{III.7.1.2}.
 \end{env}
 
@@ -253,9 +254,9 @@ where $L$ and $L'$ are free left $A$-modules.  Since $T$ and
 $T'$ are right exact, there is a commutative diagram
 \[
 \xymatrix{
-  T'(L')\ar[r]\ar[d]^{t_{L'}}
-  & T'(L)\ar[r]\ar[d]^{t_L}
-  & T'(M)\ar[r]\ar[d]^{t_M}
+  T'(L')\ar[r]\ar[d]_{t_{L'}}
+  & T'(L)\ar[r]\ar[d]_{t_L}
+  & T'(M)\ar[r]\ar[d]_{t_M}
   & 0
   \\
   T(L')\ar[r]
@@ -315,9 +316,9 @@ is canonically isomorphic to $T(A_s)$.
 
 Equivalently, the assignments
 \[
-  T\longmapsto T(A_s)
+  T\leadsto T(A_s)
   \qquad\text{and}\qquad
-  N\longmapsto T_N
+  N\leadsto T_N
 \]
 define an equivalence \emph{(T, I, 1.2)} between the category
 of right $A$-modules and the category of additive covariant

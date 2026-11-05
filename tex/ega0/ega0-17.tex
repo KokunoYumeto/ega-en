@@ -25,7 +25,7 @@ The following conditions are equivalent:
 By Nakayama's lemma, $\operatorname{rg}_k(\mathfrak{m}/\mathfrak{m}^2)$ is the smallest number of elements of a system of generators of $\mathfrak{m}$, so b) and c) are equivalent.
 On the other hand, if $(x_i)_{1\leq i\leq r}$ is a system of generators of $\mathfrak{m}$ whose classes $\overline{x}_i$ mod.~$\mathfrak{m}^2$ form a basis of the $k$-vector space $\mathfrak{m}/\mathfrak{m}^2$, $\mathbf{S}^\bullet(\mathfrak{m}/\mathfrak{m}^2)$ is isomorphic to the polynomial ring $k[\mathrm{T}_1,\ldots,\mathrm{T}_r]$;
 \oldpage[0\textsubscript{IV-1}]{40}
-taking into account that every $A$-module of finite type is separated for the $\mathfrak{m}$-preadic filtration \sref[0\textsubscript{I}]{0.7.3.5}, it follows from \sref{0.15.1.9} that conditions a) and d) are equivalent;
+taking into account that every $A$-module of finite type is separated for the $\mathfrak{m}$-preadic filtration \sref[0\textsubscript{\mdseries I}]{0.7.3.5}, it follows from \sref{0.15.1.9} that conditions a) and d) are equivalent;
 moreover, since every $A$-regular sequence of elements of $\mathfrak{m}$ has at most $n$ elements \sref{0.16.4.1}, we see that d) implies c).
 It remains to prove that c) implies a).
 
@@ -39,10 +39,10 @@ For every integer $s>0$, we thus have
 
 Suppose $\mathfrak{J}\neq 0$, so that there exists a homogeneous element $u\in\mathfrak{J}$ of degree $h>0$;
 $\mathfrak{J}_s$ contains $u\mathrm{S}_{s-h}$ for $s\geq h$, and since $u\neq 0$ and $\mathrm{S}$ is integral, $u\mathrm{S}_{s-h}$ is isomorphic to $\mathrm{S}_{s-h}$ as a $k$-vector space;
-we would thus have $\operatorname{long}(\mathfrak{J}_s)\geq\operatorname{long}(\mathrm{S}_{s-h})=\binom{s-h+n\setmin 1}{n\setmin 1}$, whence for $s\geq h$,
+we would thus have $\operatorname{long}(\mathfrak{J}_s)\geq\operatorname{long}(\mathrm{S}_{s-h})=\binom{s\setmin h+n\setmin 1}{n\setmin 1}$, whence for $s\geq h$,
 \[
 \label{0.17.1.1.2}
-  \operatorname{long}(\mathrm{G}_s)\leq\binom{s+n\setmin 1}{n\setmin 1}-\binom{s-h+n\setmin 1}{n\setmin 1}.
+  \operatorname{long}(\mathrm{G}_s)\leq\binom{s+n\setmin 1}{n\setmin 1}\setmin\binom{s\setmin h+n\setmin 1}{n\setmin 1}.
   \tag{17.1.1.2}
 \]
 But the second term of \sref{0.17.1.1.2} is a polynomial in $s$ of degree $\leq n\setmin 2$;
@@ -60,7 +60,7 @@ A regular local ring is integral, integrally closed, and a Cohen-Macaulay ring.
 \end{corollary}
 
 \begin{proof}
-The last assertion follows from \sref{0.17.1.1}[d)];
+The last assertion follows from \sref{0.17.1.1},~(d);
 on the other hand, if $A$ is regular, $\operatorname{gr}^\bullet_\mathfrak{m}(A)$ is integral and completely integrally closed, being isomorphic to $k[\mathrm{T}_1,\ldots,\mathrm{T}_n]$;
 we conclude that $A$ also possesses these two properties (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection2, n\textsuperscript{o}~3, cor.\ of prop.~1 and chap.~V, \textsection1, n\textsuperscript{o}~5, prop.~15).
 \end{proof}
@@ -94,7 +94,7 @@ Given a Noetherian local ring $A$, with maximal ideal $\mathfrak{m}$, we call a 
 
 The existence of such a system is equivalent to the fact that $A$ is regular \sref{0.17.1.1};
 if $(x_i)_{1\leq i\leq n}$ is a regular system of parameters, it is a minimal system of generators of $\mathfrak{m}$, whose classes mod.~$\mathfrak{m}^2$ form a basis of $\mathfrak{m}/\mathfrak{m}^2$ over $k$;
-by virtue of \sref{0.17.1.1}[a)] and \sref{0.15.1.9}, $(x_i)$ is a maximal $A$-regular sequence (whence the terminology).
+by virtue of \sref{0.17.1.1},~(a) and \sref{0.15.1.9}, $(x_i)$ is a maximal $A$-regular sequence (whence the terminology).
 
 One should note however that, in a regular ring, a system of parameters for $A$ that is also an $A$-regular sequence is \emph{not} necessarily a regular system of parameters, as shown by the example of $k$-th powers of a regular system of parameters \sref{0.15.1.20}.
 
@@ -124,7 +124,7 @@ We have an exact sequence
   \tag{17.1.7.1}
 \]
 since $\mathfrak{n}^2=(\mathfrak{m}^2+\mathfrak{J})/\mathfrak{J}$;
-hypothesis a) implies that $\operatorname{rg}_k((\mathfrak{m}^2+\mathfrak{J})/\mathfrak{m}^2)=r$, so $\operatorname{rg}_k(\mathfrak{n}/\mathfrak{n}^2)=n-r=\dim(A/\mathfrak{J})$, which proves b) by virtue of \sref{0.17.1.1}[b)].
+hypothesis a) implies that $\operatorname{rg}_k((\mathfrak{m}^2+\mathfrak{J})/\mathfrak{m}^2)=r$, so $\operatorname{rg}_k(\mathfrak{n}/\mathfrak{n}^2)=n-r=\dim(A/\mathfrak{J})$, which proves b) by virtue of \sref{0.17.1.1},~(b).
 
 Conversely, to prove that b) implies a), note that the fact that the $x_i$ are part of a system of parameters implies $\dim(A/\mathfrak{J})=n-r$ \sref{0.16.3.6};
 the hypothesis that $A/\mathfrak{J}$ is regular implies on the other hand $\operatorname{rg}_k(\mathfrak{n}/\mathfrak{n}^2)=n-r$ \sref{0.17.1.1};
@@ -173,28 +173,28 @@ but since $A/\mathfrak{J}=(A/\mathfrak{J}')/(\mathfrak{J}/\mathfrak{J}')$ and $\
 \begin{env}[17.2.1]
 \label{0.17.2.1}
 Let $A$ be a ring, $M$ an $A$-module.
-Recall (M, VI, 2) that we call \emph{projective dimension} (resp. \emph{injective dimension}) of $M$ and denote $\operatorname{dim.proj}(M)$ or $\operatorname{dim.proj}_A(M)$ (resp. $\operatorname{dim.inj}(M)$ or $\operatorname{dim.inj}_A(M)$) the smallest $n$ (integer or equal to $+\infty$) such that there exists a left projective resolution (resp. a right injective resolution) of $M$ of length $n$.
-It is equivalent (loc.\ cit.) to say that $n$ is the smallest number such that for every $A$-module $N$, we have $\operatorname{Ext}^i_A(M,N)=0$ (resp. $\operatorname{Ext}^i_A(N,M)=0$) for all $i>n$, or only for $i=n+1$.
-For every direct factor $M'$ of $M$, we thus have $\operatorname{dim.proj}(M')\leq\operatorname{dim.proj}(M)$ since $\operatorname{Ext}^i_A(M',N)$ is a direct factor of $\operatorname{Ext}^i_A(M,N)$;
+Recall (M, VI, 2) that we call \emph{projective dimension} (resp. \emph{injective dimension}) of $M$ and denote $\operatorname{dim.proj}(M)$ or $\operatorname{dim.proj}_A(M)$ (resp. $\operatorname{dim.inj}(M)$ or $\operatorname{dim.inj}_A(M)$) the smallest $n$ (integer or equal to $+\infty$) such that there exists a left projective resolution (resp. a right injective resolution) of $M$ \emph{of length $n$}.
+It is equivalent \emph{(loc.\ cit.)} to say that $n$ is the smallest number such that for every $A$-module $N$, we have $\operatorname{Ext}^i_A(M,N)=0$ (resp. $\operatorname{Ext}^i_A(N,M)=0$) for all $i>n$, or only for $i=n+1$.
+For every \emph{direct factor} $M'$ of $M$, we thus have $\operatorname{dim.proj}(M')\leq\operatorname{dim.proj}(M)$ since $\operatorname{Ext}^i_A(M',N)$ is a direct factor of $\operatorname{Ext}^i_A(M,N)$;
 similarly $\operatorname{dim.inj}(M')\leq\operatorname{dim.inj}(M)$.
 A condition equivalent to $\operatorname{dim.proj}(M)=n$ (resp. $\operatorname{dim.inj}(M)=n$) is that $n$ is the smallest number such that, for every exact sequence
 \[
-  0\to\mathrm{R}\to\mathrm{P}_{n-1}\to\ldots\to\mathrm{P}_0\to M\to 0
+  0\to R\to P_{n-1}\to\ldots\to P_0\to M\to 0
 \]
-(resp. $0\to M\to\mathrm{Q}_0\to\ldots\to\mathrm{Q}_{n-1}\to\mathrm{C}\to 0$), where all the $\mathrm{P}_i$ for $0\leq i<n$ are projective (resp. all the $\mathrm{Q}_i$ for $0\leq i<n$ are injective), $\mathrm{R}$ is projective (resp. $\mathrm{C}$ is injective).
+(resp. $0\to M\to Q_0\to\ldots\to Q_{n-1}\to C\to 0$), where all the $P_i$ for $0\leq i<n$ are projective (resp. all the $Q_i$ for $0\leq i<n$ are injective), then $R$ is projective (resp. $C$ is injective).
 \end{env}
 
-\begin{remark}[17.2.2]
+\begin{remarks}[17.2.2]
 \label{0.17.2.2}
 \begin{enumerate}
-  \item[{\rm(i)}] To say that $M$ is a projective (resp. injective) $A$-module is therefore equivalent to saying that $\operatorname{dim.proj}(M)=0$ (resp. $\operatorname{dim.inj}(M)=0$).
-  \item[{\rm(ii)}] Let $\mathrm{T}$ be a covariant additive functor from the category of $A$-modules to an abelian category.
-  It follows immediately from the definitions of \sref{0.17.2.1} and those of derived functors that if $\operatorname{dim.proj}(M)\leq n$ (resp. $\operatorname{dim.inj}(M)\leq n$), we have $\mathrm{L}^i\mathrm{T}(M)=0$ (resp. $\mathrm{R}^i\mathrm{T}(M)=0$) for all $i>n$.
+  \item[{\rm(i)}] To say that $M$ is a \emph{projective} (resp. \emph{injective}) $A$-module is therefore equivalent to saying that $\operatorname{dim.proj}(M)=0$ (resp. $\operatorname{dim.inj}(M)=0$).
+  \item[{\rm(ii)}] Let $T$ be an additive \emph{covariant functor} from the category of $A$-modules to an abelian category.
+  It follows immediately from the definitions of \sref{0.17.2.1} and that of derived functors that if $\operatorname{dim.proj}(M)\leq n$ (resp. $\operatorname{dim.inj}(M)\leq n$), we have $L^i T(M)=0$ (resp. $R^i T(M)=0$) \emph{for all $i>n$}.
 \oldpage[0\textsubscript{IV-1}]{43}
-  \item[{\rm(iii)}] If we suppose $A$ Noetherian and $M$ of finite type, the last interpretation of the projective dimension given in \sref{0.17.2.1} shows that if $\operatorname{dim.proj}(M)=n$, $M$ admits a left resolution of length $n$ formed of projective modules \emph{of finite type}.
-  If moreover $A$ is a Noetherian \emph{local} ring, $M$ admits a resolution of length $n$ by \emph{free} modules of finite type, a projective module of finite type then being free (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection3, n\textsuperscript{o}~2, cor.~2 of prop.~5).
+  \item[{\rm(iii)}] If we suppose $A$ \emph{Noetherian} and $M$ \emph{of finite type}, the last interpretation of the projective dimension given in \sref{0.17.2.1} shows that if $\operatorname{dim.proj}(M)=n$, $M$ admits a left resolution of length $n$ formed of projective modules \emph{of finite type}.
+  If moreover $A$ is a Noetherian \emph{local} ring, $M$ admits a resolution of length $n$ by \emph{free modules of finite type}, a projective $A$-module of finite type then being free (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection3, n\textsuperscript{o}~2, cor.~2 of prop.~5).
 \end{enumerate}
-\end{remark}
+\end{remarks}
 
 \begin{lemma}[17.2.3]
 \label{0.17.2.3}
@@ -203,9 +203,9 @@ For $\operatorname{dim.inj}(M)\leq n$, it is necessary and sufficient that for e
 \end{lemma}
 
 \begin{proof}
-With the notation of \sref{0.17.2.1}, it suffices to prove that $\mathrm{C}$ is injective;
-for every $A$-module $N$, $\operatorname{Ext}^{n+1}_A(N,M)$ is isomorphic to $\operatorname{Ext}^1_A(N,\mathrm{C})$ (M, V, 7), so we have $\operatorname{Ext}^1_A(N,\mathrm{C})=0$ for every module $N$ of the form $A/\mathfrak{J}$, where $\mathfrak{J}$ is any ideal of $A$.
-The exact sequence of Ext then shows that the canonical homomorphism $\Hom(A,\mathrm{C})\to\Hom(\mathfrak{J},\mathrm{C})$ is surjective for every ideal $\mathfrak{J}$ of $A$, which implies that $\mathrm{C}$ is an injective $A$-module (M, I, 3.2).
+With the notation of \sref{0.17.2.1}, it suffices to prove that $C$ is injective;
+for every $A$-module $N$, $\operatorname{Ext}^{n+1}_A(N,M)$ is isomorphic to $\operatorname{Ext}^1_A(N,C)$ (M, V, 7), so we have $\operatorname{Ext}^1_A(N,C)=0$ for every module $N$ of the form $A/\mathfrak{J}$, where $\mathfrak{J}$ is any ideal of $A$.
+The exact sequence of Ext then shows that the canonical homomorphism $\Hom(A,C)\to\Hom(\mathfrak{J},C)$ is surjective for every ideal $\mathfrak{J}$ of $A$, which implies that $C$ is an injective $A$-module (M, I, 3.2).
 \end{proof}
 
 \begin{lemma}[17.2.4]
@@ -217,8 +217,8 @@ For $\operatorname{dim.proj}(M)\leq n$, it is necessary and sufficient that for 
 \begin{proof}
 We know in fact (M, VI, 2.5) that the condition $\operatorname{dim.proj}(M)\leq n$ is equivalent to $\operatorname{Ext}^{n+1}_A(M,N)=0$ for every $A$-module $N$ of finite type;
 to see that the condition of the statement is also sufficient, we argue by induction on the number $m$ of generators of $N$:
-there is a submodule $\mathrm{N}_1$ of $N$ generated by $m-1$ elements and such that $\mathrm{N}_2=N/\mathrm{N}_1$ is monogenic;
-from the exact sequence $0\to\mathrm{N}_1\to N\to\mathrm{N}_2\to 0$, we then deduce the exact sequence $\operatorname{Ext}^{n+1}_A(M,\mathrm{N}_1)\to\operatorname{Ext}^{n+1}_A(M,N)\to\operatorname{Ext}^{n+1}_A(M,\mathrm{N}_2)$ and the induction hypothesis shows that the condition of the statement indeed implies $\operatorname{Ext}^{n+1}_A(M,N)=0$.
+there is a submodule $N_1$ of $N$ generated by $m-1$ elements and such that $N_2=N/N_1$ is monogenic;
+from the exact sequence $0\to N_1\to N\to N_2\to 0$, we then deduce the exact sequence $\operatorname{Ext}^{n+1}_A(M,N_1)\to\operatorname{Ext}^{n+1}_A(M,N)\to\operatorname{Ext}^{n+1}_A(M,N_2)$ and the induction hypothesis shows that the condition of the statement indeed implies $\operatorname{Ext}^{n+1}_A(M,N)=0$.
 \end{proof}
 
 \begin{corollary}[17.2.5]
@@ -261,10 +261,10 @@ For $\operatorname{dim.proj}(M)\leq n$, it is necessary and sufficient that $\op
 \end{lemma}
 
 \begin{proof}
-The necessity is a special case of the remark \sref{0.17.2.2}[(ii)], applied to the covariant functor $M\leadsto k\otimes_A M$.
-To prove the sufficiency, it suffices, with the notation of \sref{0.17.2.1}, to establish that $\mathrm{R}$ is projective when the $\mathrm{P}_i$ are assumed of finite type;
-now $\operatorname{Tor}^A_{n+1}(M,k)$ is isomorphic to $\operatorname{Tor}^A_1(\mathrm{R},k)$ (M, V, 7);
-and we know that, since $\mathrm{R}$ is of finite type, the condition $\operatorname{Tor}^A_1(\mathrm{R},k)=0$ implies that $\mathrm{R}$ is free (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection3, n\textsuperscript{o}~2, cor.~2 of prop.~5).
+The necessity is a special case of the remark \sref{0.17.2.2},~(ii), applied to the covariant functor $M\leadsto k\otimes_A M$.
+To prove the sufficiency, it suffices, with the notation of \sref{0.17.2.1}, to establish that $R$ is projective when the $P_i$ are assumed of finite type;
+now $\operatorname{Tor}^A_{n+1}(M,k)$ is isomorphic to $\operatorname{Tor}^A_1(R,k)$ (M, V, 7);
+and we know that, since $R$ is of finite type, the condition $\operatorname{Tor}^A_1(R,k)=0$ implies that $R$ is free (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection3, n\textsuperscript{o}~2, cor.~2 of prop.~5).
 \end{proof}
 
 \begin{corollary}[17.2.7]
@@ -353,7 +353,7 @@ For $\operatorname{dim.coh}(A)\leq n$, it is necessary that $\operatorname{Tor}^
 \begin{proof}
 Taking into account \sref{0.17.2.6}, it suffices to prove that the relations $\operatorname{dim.coh}(A)\leq n$ and $\operatorname{dim.proj}_A(k)\leq n$ are equivalent.
 It is clear that the first implies the second by definition.
-Conversely, if $\operatorname{dim.proj}_A(k)\leq n$, we have $\operatorname{Tor}^A_i(M,k)=0$ for $i>n$ and for every $A$-module $M$ by \sref{0.17.2.2}[(ii)];
+Conversely, if $\operatorname{dim.proj}_A(k)\leq n$, we have $\operatorname{Tor}^A_i(M,k)=0$ for $i>n$ and for every $A$-module $M$ by \sref{0.17.2.2},~(ii);
 thus $\operatorname{dim.proj}(M)\leq n$, which proves the proposition by \sref{0.17.2.8}.
 \end{proof}
 
@@ -381,16 +381,16 @@ Then we have
 \begin{proof}
 Suppose that $\operatorname{dim.coh}(B)=n$ is finite;
 it suffices to prove that for every pair $(M,N)$ of $A$-modules of finite type, we have $\operatorname{Tor}^A_i(M,N)=0$ for $i>n$ \sref{0.17.2.11}.
-Since $B$ is a faithfully flat $A$-module \sref[0\textsubscript{I}]{0.6.6.2}, it amounts to the same \sref[0\textsubscript{I}]{0.6.4.1} to show that
+Since $B$ is a faithfully flat $A$-module \sref[0\textsubscript{\mdseries I}]{0.6.6.2}, it amounts to the same \sref[0\textsubscript{\mdseries I}]{0.6.4.1} to show that
 \[
 \label{0.17.2.13.2}
   \operatorname{Tor}^A_i(M,N)\otimes_A B=0.
   \tag{17.2.13.2}
 \]
 \oldpage[0\textsubscript{IV-1}]{46}
-Now, if $\mathrm{L}_\bullet=(\mathrm{L}_j)$ is a right resolution of $M$ by free $A$-modules, it follows from the fact that $B$ is a flat $A$-module that $\mathrm{L}_\bullet\otimes_A B=(\mathrm{L}_j\otimes_A B)$ is a right resolution of the $B$-module $M\otimes_A B$ by free $B$-modules;
-moreover, we have $(\mathrm{L}_j\otimes_A B)\otimes_B(N\otimes_A B)=(\mathrm{L}_j\otimes_A N)\otimes_A B$, whence we conclude immediately that the first term of \sref{0.17.2.13.2} is equal to $\operatorname{Tor}^B_i(M\otimes_A B,N\otimes_A B)$;
-the hypothesis on $B$ implies that this $B$-module is zero for $i>n$ \sref{0.17.2.2}[(ii)], whence the conclusion.
+Now, if $L_\bullet=(L_j)$ is a left resolution of $M$ by free $A$-modules, it follows from the fact that $B$ is a flat $A$-module that $L_\bullet\otimes_A B=(L_j\otimes_A B)$ is a left resolution of the $B$-module $M\otimes_A B$ by free $B$-modules;
+moreover, we have $(L_j\otimes_A B)\otimes_B(N\otimes_A B)=(L_j\otimes_A N)\otimes_A B$, whence we conclude immediately that the first term of \sref{0.17.2.13.2} is equal to $\operatorname{Tor}^B_i(M\otimes_A B,N\otimes_A B)$;
+the hypothesis on $B$ implies that this $B$-module is zero for $i>n$ \sref{0.17.2.2},~(ii), whence the conclusion.
 \end{proof}
 
 \begin{env}[17.2.14]
@@ -430,10 +430,10 @@ For $A$ to be of finite cohomological dimension, it is necessary and sufficient 
 \begin{proof}
 Suppose $A$ regular;
 let $\mathfrak{m}$ be its maximal ideal, $\mathbf{x}=(x_i)_{1\leq i\leq n}$ a regular system of parameters of $A$ \sref{0.17.1.6};
-consider the Koszul complex $\mathrm{K}_\bullet(\mathbf{x})$ (\textbf{III}, 1.1.1), which is formed of free $A$-modules, with $\mathrm{K}_i(\mathbf{x})=0$ for $i>n$;
-since $(x_i)$ is a regular sequence, we have $\mathrm{H}_i(\mathrm{K}_\bullet(\mathbf{x}))=0$ for $i>0$ (\textbf{III}, 1.1.4 and 1.1.3.3) and $\mathrm{H}_0(\mathrm{K}_\bullet(\mathbf{x}))=A/(x_1 A+\ldots+x_n A)=A/\mathfrak{m}=k$;
-the $\mathrm{K}_i(\mathbf{x})$ thus form a free resolution of $k$ of length $n$.
-Now, the fact that the $x_i$ belong to $\mathfrak{m}$ immediately implies that in the complex $\mathrm{K}_\bullet(\mathbf{x},k)=\mathrm{K}_\bullet(\mathbf{x})\otimes_A k$, the boundary operator is zero in all dimensions, so that we have, by definition, $\operatorname{Tor}^A_i(k,k)=\textstyle\bigwedge^i(k^n)$;
+consider the exterior algebra complex $K_\bullet(\mathbf{x})$ (\textbf{III}, 1.1.1), which is formed of free $A$-modules, with $K_i(\mathbf{x})=0$ for $i>n$;
+since $(x_i)$ is a regular sequence, we have $H_i(K_\bullet(\mathbf{x}))=0$ for $i>0$ (\textbf{III}, 1.1.4 and 1.1.3.3) and $H_0(K_\bullet(\mathbf{x}))=A/(x_1 A+\ldots+x_n A)=A/\mathfrak{m}=k$;
+the $K_i(\mathbf{x})$ thus form a \emph{free resolution} of $k$ of length $n$.
+Now, the fact that the $x_i$ belong to $\mathfrak{m}$ immediately implies that in the complex $K_\bullet(\mathbf{x},k)=K_\bullet(\mathbf{x})\otimes_A k$, the boundary operator is \emph{zero} in all dimensions, so that we have, by definition, $\operatorname{Tor}^A_i(k,k)=\textstyle\bigwedge^i(k^n)$;
 the equality \sref{0.17.3.1.1} thus follows immediately from \sref{0.17.2.11} (this result is essentially the ``syzygy theorem'' of Hilbert).
 
 Let us now show that if $A$ is a Noetherian local ring, $\mathfrak{m}$ its maximal ideal, and if $\operatorname{dim.proj}_A(\mathfrak{m})$ is \emph{finite}, then $A$ is regular, which will finish proving \sref{0.17.3.1}.
@@ -483,7 +483,7 @@ There exists an exact sequence
 \[
   0\to N\to L\to E\to 0
 \]
-where $L$ is free and $\operatorname{dim.proj}_A(N)=h\setmin 1$ \sref{0.17.2.2}[(iii)], $N$ being of finite type.
+where $L$ is free and $\operatorname{dim.proj}_A(N)=h\setmin 1$ \sref{0.17.2.2},~(iii), $N$ being of finite type.
 Moreover, the sequence
 \[
   0\to N/aN\to L/aL\to E/aE\to 0
@@ -506,7 +506,7 @@ Since $\mathfrak{m}\in\operatorname{Ass}(A)$, there would exist an exact sequenc
   0\to k\to A\to E\to 0.
 \]
 But this is absurd, since, in view of the relation $n\geq 1$, the exact sequence of Tor would give the exact sequence $0\to\operatorname{Tor}^A_{n+1}(E,k)\to\operatorname{Tor}^A_n(k,k)\to 0$;
-but we have $\operatorname{Tor}^A_{n+1}(E,k)=0$ \sref{0.17.2.2}[(ii)] and $\operatorname{Tor}^A_n(k,k)\neq 0$ \sref{0.17.2.11} and we have reached a contradiction.
+but we have $\operatorname{Tor}^A_{n+1}(E,k)=0$ \sref{0.17.2.2},~(ii) and $\operatorname{Tor}^A_n(k,k)\neq 0$ \sref{0.17.2.11} and we have reached a contradiction.
 
 \medskip\noindent II. ---
 We can thus restrict to the case where there exists $a\in\mathfrak{m}\setmin\mathfrak{m}^2$ that is $A$-regular, and consequently also $\mathfrak{m}$-regular.
@@ -613,7 +613,7 @@ For every non-zero $A$-module of finite type $M$, we have
 
 \begin{proof}
 We argue by induction on $m=\operatorname{prof}(M)$.
-If $m=0$, we know \sref{0.16.4.6}[(i)] that there exists a sub-$A$-module $N$ of $M$ isomorphic to $k=A/\mathfrak{m}$;
+If $m=0$, we know \sref{0.16.4.6},~(i) that there exists a sub-$A$-module $N$ of $M$ isomorphic to $k=A/\mathfrak{m}$;
 applying the Tor exact sequence to the exact sequence $0\to N\to M\to M/N\to 0$, we obtain an exact sequence
 \[
   \operatorname{Tor}^A_{n+1}(M/N,k)\to\operatorname{Tor}^A_n(N,k)\to\operatorname{Tor}^A_n(M,k),
@@ -622,7 +622,7 @@ and the hypothesis that $A$ is regular implies $\operatorname{Tor}^A_{n+1}(M/N,k
 applying again \sref{0.17.3.1.1} and \sref{0.17.2.6}, we see that $\operatorname{Tor}^A_n(M,k)\neq 0$, so $\operatorname{dim.proj}(M)\geq n$ by \sref{0.17.2.6};
 but since $\operatorname{dim.proj}(M)\leq n$ by \sref{0.17.3.1.1}, we indeed have $\operatorname{dim.proj}(M)=n$.
 Suppose now $m>0$, and let $x$ be an $M$-regular element belonging to $\mathfrak{m}$;
-we then know \sref{0.16.4.6}[(ii)] that $\operatorname{prof}(M/xM)=m-1$, and on the other hand \sref{0.17.2.7} $\operatorname{dim.proj}(M/xM)=\operatorname{dim.proj}(M)+1$;
+we then know \sref{0.16.4.6},~(ii) that $\operatorname{prof}(M/xM)=m\setmin 1$, and on the other hand \sref{0.17.2.7} $\operatorname{dim.proj}(M/xM)=\operatorname{dim.proj}(M)+1$;
 the induction hypothesis immediately proves the relation \sref{0.17.3.4.1}.
 \end{proof}
 
@@ -639,7 +639,7 @@ the induction hypothesis immediately proves the relation \sref{0.17.3.4.1}.
 
 \begin{proof}
 (i) This follows from \sref{0.17.3.4.1} and from the fact that for an $A$-module of finite type, it is equivalent to saying that this module is projective or free (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection3, n\textsuperscript{o}~2, cor.~2 of prop.~5);
-the free $A$-modules of finite type $M$ are thus characterised by the relation $\operatorname{dim.proj}(M)=0$ \sref{0.17.2.2}[(i)].
+the free $A$-modules of finite type $M$ are thus characterised by the relation $\operatorname{dim.proj}(M)=0$ \sref{0.17.2.2},~(i).
 
 (ii) To say that $B$ is a Cohen-Macaulay ring is equivalent to saying that $B$ is a Cohen-Macaulay $A$-module \sref{0.16.5.3}, so it suffices to apply (i), since $\dim B=\dim A$ \sref{0.16.1.5}.
 \end{proof}
@@ -654,24 +654,24 @@ Moreover, it follows immediately from this definition that for every multiplicat
 
 \begin{proposition}[17.3.7]
 \label{0.17.3.7}
-If $A$ is a regular Noetherian ring, every polynomial ring $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ is regular.
+If $A$ is a regular Noetherian ring, every polynomial ring $A[T_1,\ldots,T_n]$ is regular.
 \end{proposition}
 
 \begin{proof}
-It clearly suffices to prove that the polynomial ring $B=A[\mathrm{T}]$ is regular;
-since $B$ is a free $A$-module, for every prime ideal $\mathfrak{q}$ of $B$, $B_\mathfrak{q}$ is a flat $A_\mathfrak{p}$-module, where $\mathfrak{p}=\mathfrak{q}\cap A$ \sref[0\textsubscript{I}]{0.6.3.1};
-  it thus suffices, by \erratum[IV]{\sref{0.17.3.3}}, to prove that $B_\mathfrak{q}/\mathfrak{p}B_\mathfrak{q}$ is regular, and since this ring is a local ring at a prime ideal of $A_\mathfrak{p}[\mathrm{T}]/\mathfrak{p}A_\mathfrak{p}[\mathrm{T}]=k[\mathrm{T}]$ (where $k$ is the residue field $A_\mathfrak{p}/\mathfrak{p}A_\mathfrak{p}$), it suffices to prove that $k[\mathrm{T}]$ is regular;
-now, $\mathrm{C}=k[\mathrm{T}]$ being principal, the local rings of $\mathrm{C}$ are discrete valuation rings or a field (for the ideal $(0)$), thus regular \sref{0.17.1.4}, which concludes the proof.
+It clearly suffices to prove that the polynomial ring $B=A[T]$ is regular;
+since $B$ is a free $A$-module, for every prime ideal $\mathfrak{q}$ of $B$, $B_\mathfrak{q}$ is a flat $A_\mathfrak{p}$-module, where $\mathfrak{p}=\mathfrak{q}\cap A$ \sref[0\textsubscript{\mdseries I}]{0.6.3.1};
+  it thus suffices, by \erratum[IV]{\sref{0.17.3.3}}, to prove that $B_\mathfrak{q}/\mathfrak{p}B_\mathfrak{q}$ is regular, and since this ring is a local ring at a prime ideal of $A_\mathfrak{p}[T]/\mathfrak{p}A_\mathfrak{p}[T]=k[T]$ (where $k$ is the residue field $A_\mathfrak{p}/\mathfrak{p}A_\mathfrak{p}$), it suffices to prove that $k[T]$ is regular;
+now, $C=k[T]$ being principal, the local rings of $C$ are discrete valuation rings or a field (for the ideal $(0)$), thus regular \sref{0.17.1.4}, which concludes the proof.
 \end{proof}
 
 \begin{corollary}[17.3.8]
 \label{0.17.3.8}
-If $A$ is a regular ring, every formal power series ring $A[[\mathrm{T}_1,\ldots,\mathrm{T}_n]]$ is regular.
+If $A$ is a regular ring, every formal power series ring $A[[T_1,\ldots,T_n]]$ is regular.
 \end{corollary}
 
 \begin{proof}
-Let $\mathfrak{J}$ be the ideal generated by the $\mathrm{T}_i$ in the polynomial ring $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$;
-since the latter is regular by \sref{0.17.3.7}, and $A[[\mathrm{T}_1,\ldots,\mathrm{T}_n]]$ is the completion of $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ for the $\mathfrak{J}$-preadic topology (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection2, n\textsuperscript{o}~12, \emph{Example~$1$}), the conclusion follows from the following lemma.
+Let $\mathfrak{J}$ be the ideal generated by the $T_i$ in the polynomial ring $A[T_1,\ldots,T_n]$;
+since the latter is regular by \sref{0.17.3.7}, and $A[[T_1,\ldots,T_n]]$ is the completion of $A[T_1,\ldots,T_n]$ for the $\mathfrak{J}$-preadic topology (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection2, n\textsuperscript{o}~12, \emph{Example~$1$}), the conclusion follows from the following lemma.
 \end{proof}
 
 \begin{lemma}[17.3.8.1]
@@ -696,8 +696,8 @@ If $C$ is an $A$-algebra of finite type, every ring of fractions $S^{-1}C$ of $C
 \end{corollary}
 
 \begin{proof}
-Indeed, $C$ is a quotient of a polynomial ring $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$;
-since $A=B/\mathfrak{J}$, where $\mathfrak{J}$ is an ideal of $B$, we have $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]=B[\mathrm{T}_1,\ldots,\mathrm{T}_n]/\mathfrak{J}B[\mathrm{T}_1,\ldots,\mathrm{T}_n]$;
+Indeed, $C$ is a quotient of a polynomial ring $A[T_1,\ldots,T_n]$;
+since $A=B/\mathfrak{J}$, where $\mathfrak{J}$ is an ideal of $B$, we have $A[T_1,\ldots,T_n]=B[T_1,\ldots,T_n]/\mathfrak{J}B[T_1,\ldots,T_n]$;
 by \sref{0.17.3.7}, we may restrict to the case where $C$ is a quotient of a regular ring $B'$;
 but if $S'$ is the inverse image of $S$ in $B'$, $S'$ is a multiplicative subset of $B'$ and $S^{-1}C$ is a quotient ring of $S'^{-1}B'$, so that ultimately everything reduces to seeing that when $C$ is regular, $S^{-1}C$ is also regular, which we saw in \sref{0.17.3.6}.
 \end{proof}

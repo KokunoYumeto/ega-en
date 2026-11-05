@@ -77,14 +77,14 @@ The two sides of \eqref{III.4.1.2.2} form projective systems.
 The projective limit of the left-hand side is the completion $\bigl(\RR^n f_*(\sh{F})\bigr)_{/Y'}$,
 which we shall denote by
 \[
-  \widehat{\RR^n f_*(\sh{F})}.
+  \bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}.
 \]
 The homomorphisms \eqref{III.4.1.2.2} are compatible with the projective
 systems and hence define, on passing to the limit, a canonical
 homomorphism
 \[
   \vphi_n:
-  \widehat{\RR^n f_*(\sh{F})}
+  \bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}
   \longrightarrow
   \varprojlim_k\RR^n f_*(\sh{F}_k).
   \tag{4.1.2.3}
@@ -94,7 +94,7 @@ Moreover, \eqref{III.4.1.2.2} is a homomorphism of
 $\sh{O}_Y/\sh{J}^{k+1}$-modules.
 By \sref[I]{I.10.8.3}, it may therefore be regarded as a continuous
 homomorphism of topological $\sh{O}_{\widehat{Y}}$-modules endowed with
-their pseudo-discrete topologies \sref[0]{0.3.8.1}.
+their pseudo-discrete topologies \sref[0\textsubscript{\mdseries I}]{0.3.8.1}.
 Consequently, $\vphi_n$ is a continuous homomorphism of topological
 $\sh{O}_{\widehat{Y}}$-modules.
 \end{env}
@@ -190,13 +190,13 @@ Since $\RR^n f_*(\sh{F})$ is a coherent $\sh{O}_Y$-module
 \[
   j^*(\RR^n f_*(\sh{F}))
   =
-  \widehat{\RR^n f_*(\sh{F})}
+  \bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}
 \]
 \sref[I]{I.10.8.8}.
 There is consequently a canonical homomorphism
 \[
   \rho_n:
-  \widehat{\RR^n f_*(\sh{F})}
+  \bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}
   =
   j^*(\RR^n f_*(\sh{F}))
   \longrightarrow
@@ -211,7 +211,7 @@ defined for ringed spaces in general; see the proof of
 We shall show that the diagram
 \[
   \xymatrix{
-    \widehat{\RR^n f_*(\sh{F})}
+    \bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}
       \ar[rr]^{\rho_n}\ar[dr]_{\vphi_n}
     &&
     \RR^n\widehat{f}_*(\widehat{\sh{F}})
@@ -230,7 +230,7 @@ We may therefore restrict to the case where $Y$ is affine, and it is
 enough to prove that
 \[
   \xymatrix{
-    \widehat{\HH^n(X,\sh{F})}
+    \bigl(\HH^n(X,\sh{F})\bigr)^{\widehat{\,}}
       \ar[rr]^{\rho_n}\ar[dr]_{\vphi_n}
     &&
     \HH^n(\widehat{X},\widehat{\sh{F}})
@@ -252,16 +252,17 @@ commutative diagram
 \[
   \xymatrix{
     \HH^n(X,\sh{F})
-      \ar[r]\ar[dr]
-    &
+      \ar[rr]\ar[dr]
+    &&
     \HH^n(\widehat{X},\widehat{\sh{F}})
       =
     \HH^n(\widehat{X},i^*(\sh{F}))
-      \ar[d]\\
+      \ar[dl]\\
     &
     \HH^n(X,\sh{F}_k)
       =
     \HH^n(X_k,i_k^*(\sh{F})).
+    &
   }
 \]
 The commutativity of \eqref{III.4.1.4.3} follows immediately.
@@ -280,7 +281,7 @@ $\vphi_n$, $\psi_n$, and $\rho_n$ in diagram
 \begin{proof}
 It is enough to prove that $\vphi_n$ and $\psi_n$ are isomorphisms.
 Indeed, $\RR^n f_*(\sh{F})$ is coherent \sref{III.3.2.1}, so its
-completion $\widehat{\RR^n f_*(\sh{F})}$ is coherent
+completion $\bigl(\RR^n f_*(\sh{F})\bigr)^{\widehat{\,}}$ is coherent
 \sref[I]{I.10.8.8}; the bicontinuity of $\vphi_n$, $\psi_n$, and
 $\rho_n$ is then automatic \sref[I]{I.10.11.6}.
 \end{proof}
@@ -331,7 +332,7 @@ of $A$, so that $\sh{F}_k=\sh{F}/\mathfrak{J}^{k+1}\sh{F}$.
 The canonical homomorphism
 \[
   \vphi_n:
-  \widehat{\HH^n(X,\sh{F})}
+  \bigl(\HH^n(X,\sh{F})\bigr)^{\widehat{\,}}
   \longrightarrow
   \varprojlim_k\HH^n(X,\sh{F}_k)
   \tag{4.1.7.1}
@@ -448,14 +449,14 @@ and hence gives a homomorphism
   \tag{4.1.7.8}
   \label{III.4.1.7.8}
 \]
-L $S=\bigoplus_{k\geq0}\mathfrak{J}^k$
+Let $S=\bigoplus_{k\geq0}\mathfrak{J}^k$
 be the graded $A$-algebra.
 We know that the multiplications $\mu_{x,m}$ endow $\mathrm{E}
 =
 \bigoplus_{k\geq0}
 \HH^n(X,\mathfrak{J}^k\sh{F})$
-with the structure of a graded $S$-module of finite type
-\sref{III.3.3.2}; the graded ring $S$ is Noetherian
+with the structure of a \emph{graded module of finite type} over the graded ring $S$
+\sref{III.3.3.2}, which is \emph{Noetherian}
 \sref[II]{II.2.1.5}.
 \end{env}
 
@@ -491,8 +492,6 @@ For every $x\in\mathfrak{J}^m$, the diagram
     &
     \sh{F}
   }
-  \tag{4.1.7.11}
-  \label{III.4.1.7.11}
 \]
 
 \oldpage[III]{127}
@@ -513,6 +512,8 @@ Consequently, the corresponding diagram
     &
     \HH^n(X,\sh{F})
   }
+  \tag{4.1.7.11}
+  \label{III.4.1.7.11}
 \]
 is commutative.
 The interpretation of $\mathrm{R}_k$ as the image of $\HH^n(X,\mathfrak{J}^{k+1}\sh{F})
@@ -572,7 +573,7 @@ integers $k_0$ and $h$ such that
   \mathrm{Q}_{k+h}=S_h\mathrm{Q}_k
   \qquad(k\geq k_0)
 \]
-\sref[II]{II.2.1.6}[ii].
+\sref[II]{II.2.1.6},~(ii).
 This relation and \eqref{III.4.1.7.14} imply that there exists an
 integer $r>0$ such that
 \[
@@ -599,18 +600,17 @@ induces in cohomology an $A$-homomorphism
 For every $x\in\mathfrak{J}^m$, we plainly have the factorization
 \[
   \xymatrix@C=4.5em{
-    \HH^{n+1}(X,\mathfrak{J}^k\sh{F})
+    \mu_{x,0}:\HH^{n+1}(X,\mathfrak{J}^k\sh{F})
       \ar[r]^{\mu_{x,m}}
     &
     \HH^{n+1}(X,\mathfrak{J}^{k+m}\sh{F})
       \ar[r]^{\nu_m}
     &
-    \HH^{n+1}(X,\mathfrak{J}^k\sh{F}),
+    \HH^{n+1}(X,\mathfrak{J}^k\sh{F}).
   }
   \tag{4.1.7.18}
   \label{III.4.1.7.18}
 \]
-whose composite is $\mu_{x,0}$.
 \end{env}
 
 \oldpage[III]{128}
@@ -755,9 +755,7 @@ by \sref{III.1.3.1}, and, for $m>0$, the map $\HH^0(U,\sh{F}_{k+m})
 \HH^0(U,\sh{F}_k)$
 is surjective \sref[I]{I.1.3.9}.
 We may therefore
-
 \oldpage[III]{129}
-
 apply \sref[0]{0.13.3.1}; the canonical homomorphism $\HH^n(\widehat{X},\widehat{\sh{F}})
 \longrightarrow
 \varprojlim_k\HH^n(X,\sh{F}_k)$
@@ -802,7 +800,7 @@ We can now complete the proof of \sref{III.4.1.5}.
 For every affine open subset $V$ of $Y$,
 \[
   \Gamma\bigl(
-    V,\widehat{\RR^n f_*(\sh{F})}
+    V,(\RR^n f_*(\sh{F}))^{\widehat{\,}}
   \bigr)
 \]
 is the separated completion of
@@ -820,7 +818,7 @@ Furthermore,
   \varprojlim_k
   \Gamma\bigl(V,\RR^n f_*(\sh{F}_k)\bigr)
 \]
-by \sref[0]{0.3.2.6}.
+by \sref[0\textsubscript{\mdseries I}]{0.3.2.6}.
 It follows from \sref{III.4.1.7} and \sref{III.1.4.11} that
 $\vphi_n$ is a topological isomorphism.
 Likewise, again by \sref{III.1.4.11}, \sref{III.4.1.7} shows that the
@@ -905,14 +903,12 @@ the following.
 Let $Y$ be a locally Noetherian prescheme, let $f:X\to Y$ be a
 proper morphism, and let $\sh{F}$ be a coherent $\sh{O}_X$-module.
 Then, for every $y\in Y$ and every $p$, $\bigl(\RR^p f_*(\sh{F})\bigr)_y$
-
 \oldpage[III]{130}
-
 is an $\sh{O}_y$-module of finite type and is therefore separated
 for the $\mathfrak{m}_y$-preadic topology.
 Moreover, there is a canonical topological isomorphism
 \[
-  \widehat{\bigl(\RR^p f_*(\sh{F})\bigr)_y}
+  \Bigl(\bigl(\RR^p f_*(\sh{F})\bigr)_y\Bigr)^{\widehat{\,}}
   \isoto
   \varprojlim_k
   \HH^p\left(
@@ -935,7 +931,7 @@ the underlying space of the prescheme $X\times_Y\Spec(\sh{O}_y/\mathfrak{m}_y^k)
 Since $\sh{O}_y$ is a Noetherian local ring and
 $\bigl(\RR^p f_*(\sh{F})\bigr)_y$ is an $\sh{O}_y$-module of finite
 type \sref{III.3.2.1}, the $\mathfrak{m}_y$-preadic topology on this
-module is separated \sref[0]{0.7.3.5}.
+module is separated \sref[0\textsubscript{\mdseries I}]{0.7.3.5}.
 
 When $Y$ is Noetherian and $y$ is closed, the other assertions follow
 from \sref{III.4.1.7}, after replacing $Y$ by an affine neighbourhood
@@ -953,8 +949,8 @@ In general, put
 \]
 and let $f_1=f\times 1_{Y_1}:X_1\longrightarrow Y_1$.
 The prescheme $Y_1$ is Noetherian, the morphism $f_1$ is proper
-\sref[II]{II.5.4.2}[iii], and $\sh{F}_1$ is coherent
-\sref[0]{0.5.3.11}.
+\sref[II]{II.5.4.2},~(iii), and $\sh{F}_1$ is coherent
+\sref[0\textsubscript{\mdseries I}]{0.5.3.11}.
 Let $y_1$ be the unique closed point of $Y_1$.
 The proposition already proved applies to $f_1$, $\sh{F}_1$, and
 $y_1$.
@@ -992,7 +988,7 @@ It remains only to observe that
 \]
 This follows from \sref{III.1.4.15}, since the local morphism
 $\Spec(\sh{O}_y)\to Y$ is flat
-\sref[0]{0.6.7.1}, \sref[I]{I.2.4.2}.
+\sref[0\textsubscript{\mdseries I}]{0.6.7.1}, \sref[I]{I.2.4.2}.
 \end{proof}
 
 The following corollary uses the terminology of dimension theory
@@ -1011,7 +1007,7 @@ $p>r$.
 \begin{proof}
 For every $k$, we have $\HH^p\left(
 f^{-1}(y),
-\sh{F}\otimes_{\sh{O}_Y}
+\sh{F}\otimes
 (\sh{O}_y/\mathfrak{m}_y^k)
 \right)
 =
@@ -1022,7 +1018,7 @@ $\bigl(\RR^p f_*(\sh{F})\bigr)_y$ for the
 $\mathfrak{m}_y$-preadic topology is zero.
 Since this topology is separated, we also have $\bigl(\RR^p f_*(\sh{F})\bigr)_y=0$.
 The conclusion follows because $\RR^p f_*(\sh{F})$ is coherent
-\sref[0]{0.5.2.2}.
+\sref[0\textsubscript{\mdseries I}]{0.5.2.2}.
 \end{proof}
 
 \begin{env}[4.2.3]
@@ -1036,7 +1032,7 @@ We obtain the following corollary.
 Under the hypotheses of \sref{III.4.2.1}, there is a canonical
 topological isomorphism
 \[
-  \widehat{\bigl(f_*(\sh{F})\bigr)_y}
+  \Bigl(\bigl(f_*(\sh{F})\bigr)_y\Bigr)^{\widehat{\,}}
   \isoto
   \varprojlim_k
   \Gamma\left(
@@ -1090,7 +1086,7 @@ $g_*(\sh{O}_{Y'})=\sh{A}(Y')$ and
 $f_*(\sh{O}_X)=\sh{A}(X)$.
 The coherence of $\sh{A}(X)$ is a special case of the finiteness
 theorem \sref{III.3.2.1}.  Since $f$ is proper and $g$ is separated,
-$f'$ is proper \sref[II]{II.5.4.3}[i].  It remains only to prove
+$f'$ is proper \sref[II]{II.5.4.3},~(i).  It remains only to prove
 \sref{III.4.3.2}.
 \end{proof}
 
@@ -1153,24 +1149,24 @@ of $f$.
 
 \begin{remark}[4.3.4]
 \label{III.4.3.4}
-Let $k$ be an extension of the field $\kres(y)$.  If $f^{-1}(y)\otimes_{\kres(y)}k
+Let $k$ be an extension of the field $\kres(y)$.  If the prescheme $f^{-1}(y)\otimes_{\kres(y)}k
 =
 X\times_Y\Spec(k)$
 is connected, then $f^{-1}(y)$ is connected as well, since it is the
 image of the former under a projection morphism
 \sref[I]{I.3.4.7}.  For a morphism $f:X\to Y$ of preschemes and a
 point $y\in Y$, we shall say that the fibre $f^{-1}(y)$ is
-\emph{geometrically connected} if, for every extension $k$ of
+\emph{geometrically connected} if, for \emph{every} extension $k$ of
 $\kres(y)$, the prescheme
 $f^{-1}(y)\otimes_{\kres(y)}k=X\times_Y\Spec(k)$ is connected.
 
 \oldpage[III]{132}
 
 Under the hypotheses of \sref{III.4.3.2}, the conclusion can be
-strengthened: the fibres $f^{-1}(y)$ are geometrically connected.
+strengthened: the fibres $f^{-1}(y)$ are \emph{geometrically connected}.
 Indeed, for every extension $k$ of $\kres(y)$ there exist a local
 Noetherian ring $A$ and a local homomorphism $\varphi:\sh{O}_y\longrightarrow A$
-such that $A$ is a flat $\sh{O}_y$-module and the residue field of
+such that $A$ is a \emph{flat} $\sh{O}_y$-module and the residue field of
 $A$ is $\kres(y)$-isomorphic to $k$ \sref[0]{0.10.3.1}.
 Let $Y_1=\Spec(A)$, and let $h:Y_1\to Y$ be the local morphism
 corresponding to $\varphi$, taking the unique closed point $y_1$ of
@@ -1180,12 +1176,12 @@ $Y_1$ to $y$ \sref[I]{I.2.4.1}.  Set
   \qquad
   f_1=f\times 1_{Y_1}.
 \]
-The prescheme $Y_1$ is Noetherian, $f_1$ is proper
-\sref[II]{II.5.4.2}, and $f_1^{-1}(y_1)$ is a
+Then $f_1$ is proper
+\sref[II]{II.5.4.2},~(iii), and $f_1^{-1}(y_1)$ is a
 $\kres(y_1)$-prescheme isomorphic to $X\times_Y\Spec(k)$.  It is
 therefore enough to prove that $f_{1*}(\sh{O}_{X_1})=\sh{O}_{Y_1}$,
-so that \sref{III.4.3.2} may be applied to $f_1$.  Now $h$ is flat
-by \sref[I]{I.2.4.2}; hence, by \sref{III.1.4.15} with $q=0$, $f_{1*}(\sh{O}_{X_1})
+so that \sref{III.4.3.2} may be applied to $f_1$.  Now $h$ is \emph{flat}
+by \sref[I]{I.2.4.2} and \sref{III.1.4.15.5}; hence, by \sref{III.1.4.15} with $q=0$, $f_{1*}(\sh{O}_{X_1})
 =
 h^*\bigl(f_*(\sh{O}_X)\bigr)
 =
@@ -1206,10 +1202,10 @@ account \sref[I]{I.3.6.4}, it follows from
 $f_1^{-1}(y_1)$ is the number of elements of $g_1^{-1}(y_1)
 =
 g^{-1}(y)\otimes_{\kres(y)}k$.
-If $k$ is chosen algebraically closed, this number is independent of
+If $k$ is chosen \emph{algebraically closed}, this number is independent of
 the algebraically closed extension chosen and is equal to the
 \emph{geometric number of points} of $g^{-1}(y)$
-\sref[I]{I.6.4.7}, or equivalently to $\sum_i[\kres(y'_i):\kres(y)]_s$,
+\sref[I]{I.6.4.7}, or equivalently to the \emph{sum of the separable degrees} $[\kres(y'_i):\kres(y)]_s$,
 where the $y'_i$ range over the finite set $g^{-1}(y)$.  This number
 is called the \emph{geometric number of connected components} of
 $f^{-1}(y)$.  The fields $\kres(y'_i)$ are precisely the residue
@@ -1272,12 +1268,12 @@ integral---a property expressed by saying that $A$ is
 \emph{analytically integral}---then $A$ is unibranch.  Let
 $\mathfrak{m}$ be the maximal ideal of $A$, let $K$ be its field of
 fractions, and let $K'$ be the field of fractions of $\widehat{A}$;
-then $K'=K\otimes_A\widehat{A}$.
+then $K'\supset K\otimes_A\widehat{A}$.
 Let $A'_F$ be a finite $A$-subalgebra of $K$.  The subring $B_F$ of
 $K'$ generated by $\widehat{A}$ and $A'_F$ is isomorphic to $A'_F\otimes_A\widehat{A}$;
 it is a finite $\widehat{A}$-module and is the completion of $A'_F$
 for the $\mathfrak{m}$-adic topology
-\sref[0]{0.7.3.3}, \sref[0]{0.7.3.6}.  Since $A'_F$ is semilocal
+\sref[0\textsubscript{\mdseries I}]{0.7.3.3}, \sref[0\textsubscript{\mdseries I}]{0.7.3.6}.  Since $A'_F$ is semilocal
 (Bourbaki, \emph{Alg\`ebre commutative}, Chapter~IV, \S2, no.~5,
 Corollary~3 to Proposition~9), while its completion is integral,
 $A'_F$ can have only one maximal ideal $\mathfrak{m}'_F$, and
@@ -1359,7 +1355,7 @@ $h^{-1}(\eta)=\{\eta'\}$; moreover
 $\kres(\eta)=\kres(\eta')=\mathrm{R}(Y)$.  Thus $f'^{-1}(\eta')$ is
 isomorphic to $f^{-1}(\eta)$ \sref[I]{I.3.6.4}, and it has a single
 generic point, since $\xi$ is the generic point of
-$f^{-1}(\eta)$ \sref[0]{0.2.1.8}.  By universal openness, every
+$f^{-1}(\eta)$ \sref[0\textsubscript{\mdseries I}]{0.2.1.8}.  By universal openness, every
 irreducible component of $X'$ has its generic point in
 $f'^{-1}(\eta')$.  Hence $X'$ is irreducible; its generic point
 $\xi'$ is that of $f'^{-1}(\eta')$, and
@@ -1426,17 +1422,17 @@ and there exists an open neighbourhood $U$ of $y$ in $Y$ such that
   \simeq
   \sh{O}_Y|_U.
 \]
-In particular, if $Y$ is normal and $\mathrm{R}(Y)$ is algebraically closed
-in $\mathrm{R}(X)$, then $f_*(\sh{O}_X)\simeq\sh{O}_Y$.
+If, more particularly, $Y$ is supposed normal (and $\mathrm{R}(Y)$ algebraically closed
+in $\mathrm{R}(X)$), then $f_*(\sh{O}_X)\simeq\sh{O}_Y$.
 \end{corollary}
 
 \begin{proof}
-The assertion concerning $f^{-1}(y)$ is a special case of
+The first assertion, concerning $f^{-1}(y)$, is a special case of
 \sref{III.4.3.8}.
 
 \oldpage[III]{135}
 
-If $X\xrightarrow{f'}Y'\xrightarrow{g}Y$
+If $f:X\xrightarrow{f'}Y'\xrightarrow{g}Y$
 is the Stein factorization of $f$ \sref{III.4.3.3}, it follows that
 $g^{-1}(y)$ consists of a single point $y'$.  Moreover, $\sh{O}_y
 \subset
@@ -1445,9 +1441,9 @@ $g^{-1}(y)$ consists of a single point $y'$.  Moreover, $\sh{O}_y
 \bigl(f_*(\sh{O}_X)\bigr)_y
 \subset
 \mathrm{R}(X)$.
-Since $\sh{O}_{y'}$ is finite over $\sh{O}_y$, and hence
-\emph{a fortiori} algebraic over $\mathrm{R}(Y)$ inside the relevant
-fraction field, the hypothesis forces it to lie in $\mathrm{R}(Y)$.  Since
+Since $\sh{O}_{y'}$ is finite over $\sh{O}_y$, it is algebraic over
+$\mathrm{R}(Y)$, and is therefore contained in $\mathrm{R}(Y)$ by the
+hypothesis.  Since
 $y$ is normal, necessarily $\sh{O}_{y'}=\sh{O}_y$.  Thus $g$ is a
 local isomorphism at $y'$ \sref[I]{I.6.5.4}, which proves the first
 part.  The second assertion follows from the first: the additional
@@ -1523,7 +1519,7 @@ its complement in $Y$, then $f^{-1}(U)\subset V$.  Thus the inverse
 images under $f$ of a fundamental system of open neighbourhoods of
 $y$ form a fundamental system of open neighbourhoods of $x$.
 The equality $f_*(\sh{O}_X)=\sh{O}_Y$ and the definition of the
-direct image of a sheaf \sref[0]{0.3.4.1}, \sref{III.4.2.1} now
+direct image of a sheaf \sref[0\textsubscript{\mdseries I}]{0.3.4.1}, \sref{III.4.2.1} now
 imply that, if $f=(\psi,\theta)$, the homomorphism $\theta_y^\sharp:\sh{O}_y\longrightarrow\sh{O}_x$
 is an isomorphism.  Hence there are open neighbourhoods $V$ of $x$
 and $U$ of $y$ such that the restriction of $f$ is an isomorphism
@@ -1552,20 +1548,20 @@ morphism.  The following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-Condition~a) implies b) by \sref[II]{II.6.1.2} and
+Condition~\emph{a)} implies \emph{b)} by \sref[II]{II.6.1.2} and
 \sref[II]{II.6.1.11}.  If $f$ is proper and affine, then so is $f^{-1}(y)\longrightarrow\Spec(\kres(y))$
-\sref[II]{II.1.6.2}, \sref[II]{II.5.4.2}.  The finiteness theorem
+\sref[II]{II.1.6.2},~(iii) and \sref[II]{II.5.4.2},~(iii).  The finiteness theorem
 \sref{III.3.2.1}, applied to the structural sheaf of $f^{-1}(y)$,
-shows that $f^{-1}(y)=\Spec(A)$ for a finite
+shows that $f^{-1}(y)=\Spec(A)$ for a \emph{finite}
 $\kres(y)$-algebra $A$.  Thus $f^{-1}(y)$ is a finite set
-\sref[II]{II.6.1.7}, and b) implies c).
+\sref[II]{II.6.1.7}, and \emph{b)} implies \emph{c)}.
 
-Finally, if c) holds, the fibre $f^{-1}(y)$ is an algebraic
-prescheme over $\kres(y)$ whose underlying set is finite, and is
-therefore discrete \sref[I]{I.6.4.4}.  With the notation of
-\sref{III.4.4.1}, we have $X'=X$, so
-$f':X\to Y'$ is an isomorphism.  Since $g$ is finite, c) implies
-a).
+Finally, since $f^{-1}(y)$ is an algebraic prescheme over $\kres(y)$,
+the hypothesis that the set $f^{-1}(y)$ is finite implies that the
+space $f^{-1}(y)$ is discrete \sref[I]{I.6.4.4}.  With the notation of
+\sref{III.4.4.1}, we therefore have $X'=X$, and
+$f':X\to Y'$ is an isomorphism.  Since $g$ is a finite morphism, \emph{c)} implies
+\emph{a)}.
 \end{proof}
 
 \begin{theorem}[4.4.3]
@@ -1733,7 +1729,7 @@ quasi-finite morphism $X\to Y$ is finite.
 \end{corollary}
 
 \begin{proof}
-The complement of $U$ in $Y$ is the image under $f$ of $X-X'$, which
+The complement of $U$ in $Y$ is the image under $f$ of $X\setmin X'$, which
 is closed in $X$ by \sref{III.4.4.10}; since $f$ is a closed map,
 $U$ is open.  Furthermore, \sref[II]{II.6.2.2} shows that
 $f^{-1}(y)$ is finite for every $y\in U$.  Since the restricted
@@ -1850,7 +1846,7 @@ isomorphism,
   =
   \mathrm{E}_2^{pq}(\sh{F},\sh{G})\otimes_A\hat{A}
 \]
-\sref[0]{0.7.3.3}.
+\sref[0\textsubscript{\mdseries I}]{0.7.3.3}.
 
 The flat morphism $i$ defines a canonical homomorphism of spectral
 sequences
@@ -1898,7 +1894,7 @@ and
   \Ext^n_{\sh{O}_{\hat{X}}}
     (\hat{X};\hat{\sh{F}},\hat{\sh{G}}).
 \]
-Since $\hat{A}$ is a flat $A$-module \sref[0]{0.7.3.3}, the
+Since $\hat{A}$ is a flat $A$-module \sref[0\textsubscript{\mdseries I}]{0.7.3.3}, the
 $\hat{A}$-modules $\mathrm{E}_r^{pq}(\sh{F},\sh{G})\otimes_A\hat{A}$
 form a biregular spectral sequence with abutment $\Ext^n_{\sh{O}_X}(X;\sh{F},\sh{G})\otimes_A\hat{A}$,
 and the $\psi_r^{pq}$ and $\psi^n$ form a morphism of spectral
@@ -1923,7 +1919,7 @@ canonically.
 \begin{proof}
 The finite $A$-module
 $\Ext^n_{\sh{O}_X}(X;\sh{F},\sh{G})$ is separated and complete for
-the $\mathfrak J$-preadic topology \sref[0]{0.7.3.6}.
+the $\mathfrak J$-preadic topology \sref[0\textsubscript{\mdseries I}]{0.7.3.6}.
 \end{proof}
 
 The special case $n=0$ of \sref{III.4.5.1} may be stated as follows.
@@ -1974,7 +1970,7 @@ and, for every integer $p\geq0$, the canonical homomorphism
 \begin{proof}
 The $\sh{O}_Y$-module $\RR^n f_*(\sh{F})$ is coherent
 \sref{III.3.2.1}; hence the first assertion will follow once we prove $\bigl(\RR^n f_*(\sh{F})\bigr)_y=0$
-\sref[0]{0.5.2.2}.  By \sref{III.4.2.1}, it is enough to prove that $\HH^n\bigl(f^{-1}(y),
+\sref[0\textsubscript{\mdseries I}]{0.5.2.2}.  By \sref{III.4.2.1}, it is enough to prove that $\HH^n\bigl(f^{-1}(y),
 \sh{F}\otimes_{\sh{O}_Y}
 (\sh{O}_y/\mathfrak m_y^{p+1})\bigr)=0$
 for every $p$.  This is true by hypothesis for $p=0$; we proceed by
@@ -2123,7 +2119,7 @@ Let $Y$ be a locally Noetherian prescheme, let $f:X\to Y$ be a
 proper flat morphism, let $\sh{F}$ and $\sh{G}$ be two locally free
 $\sh{O}_X$-modules, and let $y$ be a point of $Y$.  Put
 \[
-  X_y=f^{-1}(y)=X\times_Y\Spec(\kres(y)),\qquad
+  X_y=f^{-1}(y)=X\otimes_Y\kres(y),\qquad
   \sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\kres(y),\qquad
   \sh{G}_y=\sh{G}\otimes_{\sh{O}_Y}\kres(y),
 \]
@@ -2151,7 +2147,7 @@ Indeed, $\sh{H}$ is locally free and hence, a fortiori, flat over
 $Y$, while the $\sh{O}_{X_y}$-module
 $\sh{H}\otimes_{\sh{O}_Y}\kres(y)$ identifies with
 $\shHom_{\sh{O}_{X_y}}(\sh{F}_y,\sh{G}_y)$
-\sref[0]{0.6.2.2}.  We may suppose that $Y=\Spec(A)$ is affine.
+\sref[0\textsubscript{\mdseries I}]{0.6.2.2}.  We may suppose that $Y=\Spec(A)$ is affine.
 Then \sref{III.1.4.11} gives $\RR^0f_*(\sh{H})
 =
 \bigl(\Hom_{\sh{O}_X}(\sh{F},\sh{G})\bigr)^{\sim}$,
@@ -2186,9 +2182,9 @@ that, if $u_0$ is injective (respectively surjective), then
   \quad\text{(respectively }\Coker u_x=0\text{)}
 \]
 for every $x\in f^{-1}(y)$.  Indeed, $\Ker u$ and $\Coker u$ are
-coherent $\sh{O}_X$-modules \sref[0]{0.5.3.4}; hence there is a
+coherent $\sh{O}_X$-modules \sref[0\textsubscript{\mdseries I}]{0.5.3.4}; hence there is a
 neighbourhood $V$ of $f^{-1}(y)$ in $X$ on which the restriction of
-$\Ker u$ (respectively $\Coker u$) is zero \sref[0]{0.5.2.2}.
+$\Ker u$ (respectively $\Coker u$) is zero \sref[0\textsubscript{\mdseries I}]{0.5.2.2}.
 Since $f$ is closed, there is an open neighbourhood
 $U'\subset U$ of $y$ such that $f^{-1}(U')\subset V$, which proves
 the assertion after replacing $U$ by $U'$.
@@ -2216,7 +2212,7 @@ conclusion follows from Nakayama's lemma (Bourbaki,
 \label{III.4.6.4}
 Let $Y$ be a locally Noetherian prescheme, let $f:X\to Y$ be a
 proper flat morphism, let $y$ be a point of $Y$, and put
-$X_y=X\times_Y\Spec(\kres(y))$.  Let $\sh{E}_0$ be a locally free
+$X_y=X\otimes_Y\kres(y)$.  Let $\sh{E}_0$ be a locally free
 $\sh{O}_{X_y}$-module such that
 \[
 \label{III.4.6.4.1}
@@ -2269,15 +2265,15 @@ are proper.  Let $f:X\to Y$ be a $Z$-morphism, let $z$ be a point
 of $Z$, and put
 \[
   f_z=f\times_Z1:
-  X\times_Z\Spec(\kres(z))
+  X\otimes_Z\kres(z)
   \longrightarrow
-  Y\times_Z\Spec(\kres(z)).
+  Y\otimes_Z\kres(z).
 \]
 \begin{enumerate}
-\item[(i)] If $f_z$ is finite (respectively a closed immersion),
+\item[{\rm(i)}] If $f_z$ is finite \textup{(respectively} a closed immersion),
   there is an open neighbourhood $U$ of $z$ such that the morphism $g^{-1}(U)\longrightarrow h^{-1}(U)$
-  induced by $f$ is finite (respectively a closed immersion).
-\item[(ii)] Suppose in addition that $g$ is flat.  If $f_z$ is an
+  induced by $f$ is finite \textup{(respectively} a closed immersion).
+\item[{\rm(ii)}] Suppose in addition that $g$ is flat.  If $f_z$ is an
   isomorphism, there is an open neighbourhood $U$ of $z$ such that
   the morphism $g^{-1}(U)\to h^{-1}(U)$ induced by $f$ is an
   isomorphism.
@@ -2310,7 +2306,7 @@ canonical homomorphism $u:\sh{O}_Y\longrightarrow\sh{B}$.
 If, for every $y\in h^{-1}(z)$, the homomorphism
 $u_y:\sh{O}_y\to\sh{B}_y$ is surjective, then $u$ is surjective on
 some neighbourhood $V_y$ of $y$, since $\Coker u$ is coherent
-\sref[0]{0.5.3.4}, \sref[0]{0.5.2.2}.  Now the finite morphism
+\sref[0\textsubscript{\mdseries I}]{0.5.3.4}, \sref[0\textsubscript{\mdseries I}]{0.5.2.2}.  Now the finite morphism
 $f_z$ corresponds to $v=u\otimes1:
 \sh{O}_Y\otimes_{\sh{O}_Z}\kres(z)
 \longrightarrow
@@ -2370,7 +2366,7 @@ also its $\mathfrak mB$-adic filtration as a $B$-module.  The
 topology defined by this filtration is separated: $B$ is
 Noetherian, $\mathfrak mB$ is contained in the radical of $B$, and
 $N\otimes_A P$ is a finite $B$-module, since $N$ is finite over $B$
-and $P$ is finite over $A$ \sref[0]{0.7.3.5}.  It is therefore
+and $P$ is finite over $A$ \sref[0\textsubscript{\mdseries I}]{0.7.3.5}.  It is therefore
 enough to prove that $\operatorname{gr}(u\otimes1_P):
 \operatorname{gr}_\bullet(N\otimes_AP)
 \longrightarrow
@@ -2499,9 +2495,9 @@ Let $Y$ be a locally Noetherian prescheme, let $f:X\to Y$ be a
 proper morphism, let $\sh{L}$ be an invertible $\sh{O}_X$-module,
 and let $y$ be a point of $Y$.  Put
 \[
-  X_y=X\times_Y\Spec(\kres(y))=f^{-1}(y),
+  X_y=X\otimes_Y\kres(y)=f^{-1}(y),
 \]
-and let $g:X_y\to X$ be the canonical morphism.  If $\sh{L}_y=g^*(\sh{L})
+and let $g:X_y\to X$ be the projection.  If $\sh{L}_y=g^*(\sh{L})
 =\sh{L}\otimes_{\sh{O}_Y}\kres(y)$
 is ample on $X_y$, then there is an open neighbourhood $U$ of $y$
 in $Y$ such that $\sh{L}|_{f^{-1}(U)}$ is ample for the restriction
@@ -2517,7 +2513,7 @@ of $f$ to $f^{-1}(U)$.
   X'=X\times_Y Y',\qquad
   \sh{L}'=\sh{L}\otimes_{\sh{O}_Y}\sh{O}_y.
 \]
-We first prove that $\sh{L}'$ is ample for $f'=f_{(Y')}$.  We have
+We first prove that $\sh{L}'$ is \emph{ample for} $f'=f_{(Y')}$.  We have
 the commutative diagram
 \[
   \xymatrix{
@@ -2563,7 +2559,7 @@ the graded $\kres(y)$-algebra $S=\operatorname{gr}(\sh{O}_y)
 \mathfrak m^j/\mathfrak m^{j+1}$.
 It is of finite type because $\sh{O}_y$ is Noetherian.  The
 $\sh{O}_X$-algebra $\sh{S}=f^*(\widetilde S)$
-is quasi-coherent and of finite type, and is annihilated by
+is quasi-coherent and of finite type, and is obviously annihilated by
 $\sh{J}$.  Thus, if $\sh{S}_y=g^*(\sh{S})$, then $\sh{S}_y$ is a
 quasi-coherent $\sh{O}_{X_y}$-algebra of finite type and $\sh{S}=g_*(\sh{S}_y)$.
 
@@ -2595,12 +2591,12 @@ finite type and $\sh{M}=g_*(\sh{M}')$.  Moreover, on putting $\sh{M}'_j(n)
 we have $\sh{M}'_j(n)=g^*(\sh{M}_j(n))$.
 
 The morphism $f_y$ is proper \sref[II]{II.5.4.2}, (iii), and
-$\sh{L}_y$ is ample; hence $f_y$ is projective
-\sref[II]{II.5.5.4}, \sref[II]{II.4.6.11}.  We may therefore apply
+$\sh{L}_y$ is ample; hence $f_y$ is \emph{projective}
+\sref[II]{II.5.5.4} and \sref[II]{II.4.6.11}.  We may therefore apply
 \sref{III.2.4.1}, (ii), to
 $\Spec(\kres(y))$, $f_y$, $\sh{S}_y$, $\sh{L}_y$, and $\sh{M}'$.
 There is an integer $N$ such that, for $n\geq N$, $\HH^q(X_y,\sh{M}'_j(n))=0$
-for every $q>0$ and every $j$.  It follows that $\HH^q(X,\sh{M}_j(n))=0$
+for every $q>0$ \emph{and every} $j$.  It follows that $\HH^q(X,\sh{M}_j(n))=0$
 for every $q>0$ and every $j$ (G, II, 4.9.1).
 
 Now put $\sh{F}(n)_j
@@ -2624,21 +2620,21 @@ which proves the assertion.
 
 \oldpage[III]{146}
 
-\noindent\textit{II)} Return to the notation at the beginning of
+\noindent II) Return to the notation at the beginning of
 the proof.  We may suppose that $Y=\Spec(A)$ is affine.  Since
 $f'$ is of finite type and $\sh{L}'$ is ample for $f'$, there is an
 integer $m>0$ such that $\sh{L}'^{\otimes m}$ is very ample for
 $f'$ \sref[II]{II.4.6.11}.  Replacing $\sh{L}$ by
 $\sh{L}^{\otimes m}$, it is enough to consider the case in which
-$\sh{L}'$ is very ample for $f'$ and to prove that
-$\sh{L}|_{f^{-1}(U)}$ is very ample for the restriction of $f$.
+$\sh{L}'$ is \emph{very ample} for $f'$ and to prove that
+$\sh{L}|_{f^{-1}(U)}$ is then very ample for $f$.
 
 Since $f'$ is proper, there is, for a suitable integer $r>0$, a
-closed $Y'$-immersion $j:X'\longrightarrow P=\bb{P}_{Y'}^r$
+\emph{closed} $Y'$-immersion $j:X'\longrightarrow P=\bb{P}_{Y'}^r$
 such that $\sh{L}'\simeq j^*(\sh{O}_P(1))$
 \sref[II]{II.5.5.4}, (ii).  This closed immersion corresponds
-canonically to a surjective $\sh{O}_{X'}$-homomorphism $u:\sh{O}_{X'}^{r+1}\longrightarrow\sh{L}'$
-\sref[II]{II.4.2.3}, or equivalently \sref[0]{0.5.1.1} to
+canonically to a \emph{surjective} $\sh{O}_{X'}$-homomorphism $u:\sh{O}_{X'}^{r+1}\longrightarrow\sh{L}'$
+\sref[II]{II.4.2.3}, or equivalently \sref[0\textsubscript{\mdseries I}]{0.5.1.1} to
 $r+1$ sections $s'_i$ $(0\leq i\leq r)$ of $\sh{L}'$ over $X'$
 which generate this $\sh{O}_{X'}$-module.
 
@@ -2646,7 +2642,7 @@ By definition these are also sections of $f'_*(\sh{L}')$ over
 $Y'$, and $f'_*(\sh{L}')
 =
 f_*(\sh{L})\otimes_{\sh{O}_Y}\sh{O}_{Y'}$
-\sref[0]{0.5.4.10}.  Since $Y$ is affine and $\sh{O}_y$ is the
+\sref[0\textsubscript{\mdseries I}]{0.5.4.10}.  Since $Y$ is affine and $\sh{O}_y$ is the
 local ring of $A$ at the prime ideal $\mathfrak j_y$, each $s'_i$
 has the form $s'_i=s''_i/t_i$,
 where $s''_i$ is a section of $f_*(\sh{L})$ over $Y$ and
@@ -2660,13 +2656,14 @@ therefore define a homomorphism $v:
 \bigl(\sh{O}_X|_{f^{-1}(V)}\bigr)^{r+1}
 \longrightarrow
 \sh{L}|_{f^{-1}(V)}$.
-By construction it is surjective at every point of $f^{-1}(y)$.
-Since $\Coker(v)$ is coherent \sref[0]{0.5.3.4}, its support is
-closed \sref[0]{0.5.2.2}; hence there is an open neighbourhood
-$W\subset f^{-1}(V)$ of $f^{-1}(y)$ on which $v$ is surjective.
-Because $f$ is closed, after shrinking around $y$ we may choose an
-open neighbourhood $U\subset V$ with $f^{-1}(U)\subset W$.
-The conclusion now follows from \sref[II]{II.4.2.3}.
+By hypothesis, it is surjective at every point of $f^{-1}(y)$.
+Since $\Coker(v)$ is coherent \sref[0\textsubscript{\mdseries I}]{0.5.3.4}, its support is
+closed \sref[0\textsubscript{\mdseries I}]{0.5.2.2}; hence there is an open neighbourhood
+$W\subset f^{-1}(V)$ of $f^{-1}(y)$ such that the restriction of $v$ to $W$
+is a \emph{surjective} homomorphism.
+Since the morphism $f$ is closed, we may suppose that $W$ is of the form
+$f^{-1}(U)$, where $U$ is an open neighbourhood of $y$, and the conclusion
+then follows from \sref[II]{II.4.2.3}.
 \end{proof}
 
 
@@ -2716,7 +2713,7 @@ for $m\leq n$,
 \]
 It follows that $\mathfrak{X}\simeq\Spf(A)$, where
 $A=\varprojlim_n A_n$, and the conclusion follows from
-\sref[0]{0.7.2.9}.
+\sref[0\textsubscript{\mdseries I}]{0.7.2.9}.
 
 Finally, to prove that \emph{c)} implies \emph{a)}, we may again
 restrict to the case
