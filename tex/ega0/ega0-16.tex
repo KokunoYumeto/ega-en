@@ -127,7 +127,7 @@ Conversely, consider a chain of prime ideals $\mathfrak{p}_0\subset\mathfrak{p}_
 
 \begin{env}[16.1.7]
 \label{0.16.1.7}
-Let $M$ be an $A$-module; we call the \emph{dimension} of $M$ and denote by $\dim_A(M)$ or $\dim(M)$ the dimension of the ring $A/\operatorname{Ann}(M)$ (isomorphic to the ring of homotheties $A_M$ of $M$).
+Let $M$ be an $A$-module; we call the \emph{dimension of} $M$ and denote by $\dim_A(M)$ or $\dim(M)$ the dimension of the ring $A/\operatorname{Ann}(M)$ (isomorphic to the ring of homotheties $A_M$ of $M$).
 We thus have $\dim(M^k)=\dim(M)$ for every $k>0$.
 If $M$ is \emph{of finite type}, the prime ideals of $A$ containing $\operatorname{Ann}(M)$ are exactly those belonging to $\Supp(M)$ $(\mathbf{0}_\mathrm{I},~1.7.4)$ and the latter is closed in $\Spec(A)$, hence we then have
 \begin{equation}
@@ -205,7 +205,7 @@ Let $A$ be a Noetherian ring; if $M$ is an $A$-module of \emph{finite length}, w
 
 \begin{env}[16.2.1]
 \label{0.16.2.1}
-Let $A$ be a \emph{semi-local Noetherian} ring, $\mathfrak{r}$ its radical; recall that an \emph{ideal of definition} $\mathfrak{q}$ of $A$ is an ideal such that $\mathfrak{q}\subset\mathfrak{r}$ and $\mathfrak{q}$ contains a power of $\mathfrak{r}$, or equivalently, that the only prime ideals containing $\mathfrak{q}$ are \emph{maximal}, or that $A/\mathfrak{q}$ is an Artinian ring.
+Let $A$ be a \emph{semi-local Noetherian} ring, $\mathfrak{r}$ its radical; recall that an \emph{ideal of definition} $\mathfrak{q}$ of $A$ is an ideal such that $\mathfrak{q}\subset\mathfrak{r}$ and $\mathfrak{q}$ contains a power of $\mathfrak{r}$, or equivalently, that the only prime ideals containing $\mathfrak{q}$ are \emph{maximal}, or that $A/\mathfrak{q}$ is an \emph{Artinian} ring.
 Let $M$ be an $A$-module of finite type; for every integer $n>0$, $M/\mathfrak{q}^n M$ is an $A$-module of \emph{finite length}, equal to $\sum_{i=0}^{n\setmin 1}\operatorname{long}(\gr_i(M))$, where $\gr_\bullet(M)$ is the $(A/\mathfrak{q})$-graded module associated to $M$ equipped with the $\mathfrak{q}$-preadic filtration.
 Recall that there exists a \emph{polynomial} $Q(n)$ with rational coefficients such that $\operatorname{long}(\gr_n(M))=Q(n)$ for $n$ sufficiently large $(\mathbf{III},~2.5.4)$; from this one deduces immediately that there exists a polynomial $P_\mathfrak{q}(M,n)$ in $n$, with rational coefficients, such that $\operatorname{long}(M/\mathfrak{q}^n M)=P_\mathfrak{q}(M,n)$ \emph{for $n$ sufficiently large}; it is clear that this polynomial is unique and that its leading coefficient is $>0$ if $M\neq 0$; we call it the \emph{Hilbert--Samuel polynomial} of $M$ for the $\mathfrak{q}$-preadic filtration.
 \end{env}
@@ -214,7 +214,7 @@ Recall that there exists a \emph{polynomial} $Q(n)$ with rational coefficients s
 
 \begin{lemma}[16.2.2.1]
 \label{0.16.2.2.1}
-Let $(M_n)$ be a $\mathfrak{q}$-good filtration of $M$ (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~3, n\textsuperscript{o}~1); then $\operatorname{long}(M/M_n)$ is equal, for $n$ sufficiently large, to a polynomial in $n$ whose degree and leading coefficient are the same as those of $P_\mathfrak{q}(M,n)$.
+Let $(M_n)$ be a $\mathfrak{q}$-good filtration of $M$ \textup{(Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~3, n\textsuperscript{o}~1)}; then $\operatorname{long}(M/M_n)$ is equal, for $n$ sufficiently large, to a polynomial in $n$ whose degree and leading coefficient are the same as those of $P_\mathfrak{q}(M,n)$.
 \end{lemma}
 
 \begin{proof}
@@ -460,7 +460,7 @@ Indeed, $\Supp(N)$ is the set of prime ideals containing $\mathfrak{a}+\operator
 \begin{definition}[16.3.6]
 \label{0.16.3.6}
 Let $A$ be a semi-local Noetherian ring, $\mathfrak{r}$ its radical, $M$ an $A$-module of finite type, and set $n=\dim(M)$.
-A \emph{system of parameters} for $M$ is any family $(x_i)_{1\leq i\leq n}$ of $n$ elements of $\mathfrak{r}$ such that $M/(x_1M+\ldots+x_n M)$ is of \emph{finite length}.
+A system of parameters for $M$ is any family $(x_i)_{1\leq i\leq n}$ of $n$ elements of $\mathfrak{r}$ such that $M/(x_1M+\ldots+x_n M)$ is of \emph{finite length}.
 \end{definition}
 
 We have seen \sref{0.16.2.3} that such systems always exist.
@@ -623,7 +623,7 @@ All maximal $M$-regular sequences of elements of $\mathfrak{m}$ have the same nu
 \begin{definition}[16.4.5]
 \label{0.16.4.5}
 Let $A$ be a local Noetherian ring, $\mathfrak{m}$ its maximal ideal, $M$ an $A$-module of finite type.
-We call the upper bound of the numbers of elements in $M$-regular sequences formed of elements of $\mathfrak{m}$ the \emph{depth} of $M$, and denote it $\operatorname{prof}_AM$ or $\operatorname{prof}(M)$.
+We call the upper bound of the numbers of elements in $M$-regular sequences formed of elements of $\mathfrak{m}$ the depth of $M$, and denote it $\operatorname{prof}_AM$ or $\operatorname{prof}(M)$.
 \end{definition}
 
 We thus have $\operatorname{prof}(M)=+\infty$ if and only if $M=0$, and, by \sref{0.16.4.1},
@@ -639,7 +639,7 @@ We evidently have $\operatorname{prof}(M^k)=\operatorname{prof}(M)$ for every $k
 \label{0.16.4.6}
 Let $A$ be a local Noetherian ring, $\mathfrak{m}$ its maximal ideal, $M$ an $A$-module of finite type.
 \begin{enumerate}
-  \item[\rm{(i)}]\label{0.16.4.6.i} For $\operatorname{prof}(M)=0$, it is necessary and sufficient that $\mathfrak{m}\in\operatorname{Ass}(M)$ (or equivalently that there exists a submodule of $M$ isomorphic to the residue field $k=A/\mathfrak{m}$ of $A$).
+  \item[\rm{(i)}]\label{0.16.4.6.i} For $\operatorname{prof}(M)=0$, it is necessary and sufficient that $\mathfrak{m}\in\operatorname{Ass}(M)$ \textup{(or equivalently that there exists a submodule of $M$ isomorphic to the residue field $k=A/\mathfrak{m}$ of $A$)}.
   \item[\rm{(ii)}] For every $M$-regular element $x$ belonging to the maximal ideal of $A$, we have
   \begin{equation}
   \label{0.16.4.6.1}
@@ -730,15 +730,15 @@ Then
 \begin{proof}
 One can restrict to the case $M\neq 0$; suppose $\operatorname{prof}_A(M_{[\rho]})=n$.
 If $(x_i)_{1\leq i\leq n}$ is a $(M_{[\rho]})$-regular maximal sequence formed of elements of the maximal ideal of $A$, the $\rho(x_i)$ constitute an $M$-regular sequence formed of elements of the maximal ideal of $B$, and we have then, setting $N=M/(\rho(x_1)M+\ldots+\rho(x_n)M)$, $\operatorname{prof}_B(N)=\operatorname{prof}_B(M)-n$ \sref{0.16.4.6}, (ii); similarly $N_{[\rho]}=M_{[\rho]}/(x_1M_{[\rho]}+\ldots+x_n M_{[\rho]})$ and $\operatorname{prof}_A(N_{[\rho]})=0$; one is thus reduced to proving the proposition when $n=0$.
-Let $k$ be the residue field of $A$; since $k$ is a quotient of $A$, the $A$-module $P=\operatorname{Hom}_A(k,M_{[\rho]})$ is a submodule of $\operatorname{Hom}_A(A,M_{[\rho]})=M_{[\rho]}$, and the hypothesis implies that $P\neq 0$ \sref{0.16.4.6}, (i); furthermore, $P$ is an $A$-module of finite type (since $M_{[\rho]}$ is an $A$-module of finite type), hence a finite-dimensional $k$-vector space, annihilated by the maximal ideal of $A$, and finally an $A$-module of \emph{finite length}.
-Moreover, $P$ is also a submodule of the $B$-module $M$, and since it is of finite length as an $A$-module, it is \emph{a fortiori} of finite length as a $B$-module.
+Let $k$ be the residue field of $A$; since $k$ is a quotient of $A$, the $A$-module $P=\operatorname{Hom}_A(k,M_{[\rho]})$ is a submodule of $\operatorname{Hom}_A(A,M_{[\rho]})=M_{[\rho]}$, and the hypothesis implies that $P\neq 0$ \sref{0.16.4.6}, (i); furthermore, $P$ is an $A$-module of finite type (since $M_{[\rho]}$ is an $A$-module of finite type), hence a finite-dimensional $k$-vector space, annihilated by the maximal ideal of $A$, and finally an $A$-module \emph{of finite length}.
+Moreover, $P$ is also a submodule of the \emph{$B$-module} $M$, and since it is of finite length as an $A$-module, it is \emph{a fortiori} of finite length as a $B$-module.
 As it is $\neq 0$, it contains a simple sub-$B$-module, that is to say one isomorphic to the residue field of $B$; one concludes then by \sref{0.16.4.6}, (i) that $\operatorname{prof}_B(M)=0$.
 \end{proof}
 
 \begin{definition}[16.4.9]
 \label{0.16.4.9}
 Let $A$ be a local Noetherian ring, $M$ an $A$-module of finite type.
-If $M\neq 0$, we call the \emph{codepth} of $M$ and denote $\operatorname{coprof}_A(M)$ or $\operatorname{coprof}(M)$, the finite integer $\dim_A(M)-\operatorname{prof}_A(M)\geq 0$ \sref{0.16.4.5.1}.
+If $M\neq 0$, we call the codepth of $M$ and denote $\operatorname{coprof}_A(M)$ or $\operatorname{coprof}(M)$, the finite integer $\dim_A(M)-\operatorname{prof}_A(M)\geq 0$ \sref{0.16.4.5.1}.
 If $M=0$, we set $\operatorname{coprof}(M)=0$.
 \end{definition}
 
@@ -780,14 +780,14 @@ This follows from \sref{0.16.1.9} and \sref{0.16.4.8}.
 \begin{definition}[16.5.1]
 \label{0.16.5.1}
 Let $A$ be a local Noetherian ring.
-An $A$-module of finite type $M$ is called a \emph{Cohen-Macaulay module} if $\operatorname{coprof}(M)=0$, that is, if $M=0$ or $\dim(M)=\operatorname{prof}(M)$.
-We say that $A$ is a \emph{Cohen-Macaulay ring} if the $A$-module $A$ is a Cohen-Macaulay module.
+An $A$-module of finite type $M$ is called a Cohen-Macaulay module if $\operatorname{coprof}(M)=0$, that is, if $M=0$ or $\dim(M)=\operatorname{prof}(M)$.
+We say that $A$ is a Cohen-Macaulay ring if the $A$-module $A$ is a Cohen-Macaulay module.
 \end{definition}
 
 An $A$-module of finite length is a Cohen-Macaulay module since it is of dimension 0 \sref{0.16.1.10}.
-A local reduced ring of dimension 1 is a Cohen-Macaulay ring, since then its maximal ideal $\mathfrak{m}$ cannot be associated to $A$ (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, prop.~10), hence $\operatorname{prof}(A)=1$ by virtue of \sref{0.16.4.6}, (i).
+A local \emph{reduced} ring \emph{of dimension} 1 is a Cohen-Macaulay ring, since then its maximal ideal $\mathfrak{m}$ cannot be associated to $A$ (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, prop.~10), hence $\operatorname{prof}(A)=1$ by virtue of \sref{0.16.4.6}, (i).
 If $A$ is an \emph{integral local integrally closed} ring of dimension $\geq 2$, we have $\operatorname{prof}(A)\geq 2$: indeed, if $x\neq 0$ is an element of $\mathfrak{m}$, we know (Bourbaki, \emph{Alg.~comm.}, chap.~VII, \textsection~1, n\textsuperscript{o}~4, prop.~8) that the prime ideals associated to $A/x A$ are of height 1, hence distinct from $\mathfrak{m}$ and their union is therefore distinct from $\mathfrak{m}$ (Bourbaki, \emph{Alg.~comm.}, chap.~II, \textsection~1, n\textsuperscript{o}~1, prop.~2); there thus exist $(x,y)$ sequences that are $A$-regular and formed of elements of $\mathfrak{m}$, whence our assertion.
-One concludes that an integral local integrally closed ring of dimension 2 is a Cohen-Macaulay ring.
+One concludes that an integral local \emph{integrally closed} ring \emph{of dimension} 2 is a Cohen-Macaulay ring.
 
 \begin{proposition}[16.5.2]
 \label{0.16.5.2}
@@ -852,15 +852,15 @@ Furthermore, when these conditions are satisfied, $N=M/(x_1M+\ldots+x_r M)$ is a
 \end{corollary}
 
 \begin{proof}
-We already know that b) and c) are equivalent \sref{0.16.3.6} and that a) implies c) \sref{0.16.4.1} without any hypothesis on $M$. To see that c) implies a), and to prove the last assertion of the statement, we argue by induction on $r$, the assertion being trivial for $r=0$.
+We already know that \emph{b)} and \emph{c)} are equivalent \sref{0.16.3.6} and that \emph{a)} implies \emph{c)} \sref{0.16.4.1} without any hypothesis on $M$. To see that \emph{c)} implies \emph{a)}, and to prove the last assertion of the statement, we argue by induction on $r$, the assertion being trivial for $r=0$.
 Since $x_1$ forms part of a system of parameters, $\dim(M/x_1M)=\dim(M)\setmin 1$ \sref{0.16.3.6}, hence $x_1$ is $M$-regular and $M/x_1M$ is Cohen-Macaulay by \sref{0.16.5.5}.
 Since the sequence $(x_i)_{2\leq i\leq r}$ forms part of a system of parameters for $P=M/x_1M$, the induction hypothesis shows that $(x_i)_{2\leq i\leq r}$ is a $P$-regular sequence and that $P/(x_2P+\ldots+x_r P)=N$ is a Cohen-Macaulay module; furthermore $(x_i)_{1\leq i\leq r}$ is $M$-regular.
 \end{proof}
 
 \begin{remark}[16.5.7]
 \label{0.16.5.7}
-It follows from \sref{0.16.5.6} that there is an identity between \emph{systems of parameters} for $M$ and the maximal $M$-regular sequences of elements of $\mathfrak{m}$ when $M$ is a Cohen-Macaulay module.
-Conversely, it follows from \sref{0.16.4.1} that if there is any $M$-regular sequence that is a system of parameters for $M$, then $M$ is a Cohen-Macaulay module.
+It follows from \sref{0.16.5.6} that there is an identity between \emph{systems of parameters for $M$ and the maximal $M$-regular sequences of elements of $\mathfrak{m}$} when $M$ is a Cohen-Macaulay module.
+Conversely, it follows from \sref{0.16.4.1} that if there is \emph{any} $M$-regular sequence that is a system of parameters for $M$, then $M$ is a Cohen-Macaulay module.
 The last property stated in \sref{0.16.5.6} also \emph{characterizes} Cohen-Macaulay modules:
 \end{remark}
 
@@ -945,7 +945,7 @@ Indeed, $\Supp(M/\mathfrak{p}M)=\Spec(A/\mathfrak{p})$ $(\mathbf{0}_\mathrm{I},~
 
 \begin{corollary}[16.5.12]
 \label{0.16.5.12}
-Every quotient ring of a local Noetherian ring $A$ satisfying the conditions of \sref{0.16.5.11} (in particular every quotient ring of a local Cohen-Macaulay ring) is \emph{catenary}.
+Every quotient ring of a local Noetherian ring $A$ satisfying the conditions of \sref{0.16.5.11} (in particular every quotient ring of a local Cohen-Macaulay ring) is catenary.
 \end{corollary}
 
 \begin{proof}
