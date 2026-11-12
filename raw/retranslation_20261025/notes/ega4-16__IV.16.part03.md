@@ -1,0 +1,20 @@
+- TRANSCRIPTION? proof of 16.5.3 — "$u:\mathcal{O}_X\to\mathscr{F}$": the $u_V$ are defined on $\Omega^1_{B/A}$, so $u:\Omega^1_{X/S}\to\mathscr{F}$ seems meant.
+- TRANSCRIPTION? 16.5.12 — "$\Gamma(T_{X/S}/S)$" and "germes de $S$-sections": (II, 1.7.9) concerns sections of $T_{X/S}$ over $X$, so $X$ seems meant (possibly already in the original).
+- TRANSCRIPTION? before 16.5.17 — "le problème considéré en (16.5.13)": the problem is posed in (16.5.14).
+- TRANSCRIPTION? 16.5.18 — "Avec les notations de (16.5.16)": the notation is that of (16.5.17).
+- TRANSCRIPTION? 16.6.2 — "endomorphisme de $\psi^*(\mathcal{O}_X)$-Modules gradués": $\psi^*(\mathcal{O}_S)$ seems meant (cf. 16.5.9); $\psi$ is not introduced in 16.6.1.
+- TRANSCRIPTION? proof of 16.6.2 — "(en vertu de (i)) combinaison linéaire …": writing sections as combinations of $g\,df_1\wedge\cdots\wedge df_p$ uses (ii), not (i).
+- TRANSCRIPTION? proof of 16.6.2 — "quels que soient $f$, $g$ dans $A$" after (16.6.2.3): $f$, $g$ range over $B$.
+- TRANSCRIPTION? 16.6.4 — "déduit de l'isomorphisme (16.5.9.1)": (16.5.9.1) is the bracket; the isomorphism is (16.5.10.1).
+- TRANSCRIPTION? 16.6.5 — "les dérivations $D_i$ définies dans (16.5.7)": they are defined in (16.5.8).
+- TERM crochet → bracket; identité de Jacobi → Jacobi identity; ($\Gamma(S,\mathcal O_S)$-)algèbre de Lie → Lie $\Gamma(S,\mathcal O_S)$-algebra
+- TERM antidérivation → antiderivation
+- TERM indice de Kronecker → Kronecker delta
+- TERM base duale → dual basis
+- TERM espace affine (pour un groupe) → affine space; translation à droite/gauche → right/left translation
+- TERM loi externe → external composition law (glossary: loi de composition externe)
+- TERM classes d'isomorphie → isomorphism classes; ensemble de cohomologie → cohomology set; cohomologue → cohomologous
+- TERM flèche pointillée → dotted arrow
+- TERM caractérisation ponctuelle → pointwise characterization
+- TERM composants homogènes → homogeneous components
+- TERM en restreignant $U$ → by shrinking $U$

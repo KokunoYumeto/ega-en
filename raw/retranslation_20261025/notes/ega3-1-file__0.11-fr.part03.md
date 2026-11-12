@@ -1,0 +1,7 @@
+- TRANSCRIPTION? proof of 11.7.2 — "D'autre part, pour tout $r$, $M_{\bullet,r,\bullet}$ est une résolution de Cartan-Eilenberg du complexe simple $K_{\bullet,r}$, le calcul fait dans (M, XV, 2) montre que": two main clauses joined only by a comma; a conjunction (probably "comme") seems missing. Translated as written.
+- TERM complexe simple (also "complexe (simple)") → simple complex (the single/total complex associated with a multicomplex).
+- TERM tricomplexe → tricomplex; multifoncteur → multifunctor.
+- TERM sous-bicomplexe → subbicomplex (closed, per the sub- rule).
+- TERM dérivation (of a complex: "pour la dérivation triviale", "complexe à dérivation triviale") → differential ("with the trivial differential").
+- TERM $\infty$-présentation finie → finite $\infty$-presentation.
+- TERM «~simplexes~» → ``simplices''; chaînes dégénérées → degenerate chains.

@@ -1,0 +1,50 @@
+You carry corrections from the French EGA into the English EGA.
+
+The French EGA (repository ega-fr) was checked page by page against the printed original (Publ. Math. IHÉS, Numdam
+scans); every correction was logged as an exact edit "old" -> "new" of the French LaTeX. The English EGA (repository
+ega-en) is a translation of the French. Many corrections were carried over by a script; the ones in your ITEMS file
+could not be matched automatically, mostly because the French wording differs from the English, a formula is
+written differently in the English, or the same text occurs several times on the page.
+
+Inputs (values below):
+- ITEMS: a JSON list. Each item has "id", "part" and "page" (the printed page: both editions carry the marker
+  \oldpage[PART]{PAGE} at the start of each printed page), "old" and "new" (the French edit), "fr_context" (the
+  corrected French text around the edit), "kind" and "why" (the checker's classification and reason, if any), and
+  "en_file" (the English file that holds that page).
+- The English sources: user\Documents\ega_scan_check_20261101\ega-en\tex (read the page in its file; the
+  passage can also sit just before or after the page marker, since the translation's page breaks fall a few lines
+  differently).
+
+For each item decide one of:
+- "apply": the English has the error the French fix corrects. Give an exact English edit: "en_old" must occur
+  exactly once in the English text of pages PAGE-1 to PAGE+1 of that part (include enough context), and "en_new" is
+  the corrected English. Carry over the meaning of the fix: a corrected formula, reference, number, sign, missing or
+  wrong word, or a restored italic emphasis of a defined term. Translate French wording changes into English that
+  fits the surrounding sentence; never paste French into the English.
+- "already": the English already says what the corrected French says (the translator rendered it correctly).
+- "not_applicable": the fix concerns only the French text: French spelling, accents, French punctuation or
+  spacing, French grammar, the position of a French line or page break, blank lines, or a layout choice of the
+  French print (a display set inline or the reverse) that the English does not reproduce. Typography that the
+  English edition also follows (italic statements, bold roman numerals of chapter references like (I, 1.3.9)) is
+  "apply" when the English has the same construct.
+- "unclear": you cannot match the passage or are not sure; say why in "note".
+
+Rules:
+- Do not edit any file. Write only OUTFILE.
+- Mathematics must end up identical to the corrected French: same symbols, indices, references and numbering.
+- Keep the English edition's own conventions (its macros, e.g. \kres for the bold residue-field k, \sh{O} for script
+  letters, \setmin; British or American spelling as the file already uses) when they render the same as the French
+  fix. Do not convert the English to the French macro names.
+- Never change \oldpage markers, \label/\hyperref targets or file structure.
+- One item can need no edit while another item already covers the same English spot: then "already" with a note.
+- If one English edit covers several items, put it in the first item and give the others "already" with
+  "note": "covered by <id>".
+
+OUTFILE: a JSON list with one object per item, in the order of ITEMS:
+  {"id": ..., "decision": "apply"|"already"|"not_applicable"|"unclear", "en_file": ..., "en_old": ..., "en_new": ...,
+   "note": "..."}
+("en_old"/"en_new" only for "apply"). Check before finishing that every "en_old" occurs exactly once in the English
+pages PAGE-1 to PAGE+1 of its part, with LF line ends, and that no two "apply" edits overlap.
+
+Finish with a short report: counts per decision, and any item where the English translation itself is wrong in a
+way the French fix does not cover (list those separately; do not fix them).

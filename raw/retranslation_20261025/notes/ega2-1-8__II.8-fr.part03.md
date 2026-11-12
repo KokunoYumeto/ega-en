@@ -1,0 +1,3 @@
+- TRANSCRIPTION? 8.8.3, second paragraph: "la \emph{section nulle} de $\mathbf{V}(\mathcal{L})$ (identifiée à $Y$)". The zero section of $\mathbf{V}(\mathcal{L})$ is $j(X)\cong X$ (8.8.2), so "identifiée à $X$" is expected. Translated as written ("identified with $Y$").
+- TERM sous-préschéma des sommets → apex sub-prescheme (built from the glossary's préschéma des sommets → apex prescheme); sommet (of a cone) → apex.
+- TERM contracter / «~contraction~» (of the zero section) → contract / ``contraction''.

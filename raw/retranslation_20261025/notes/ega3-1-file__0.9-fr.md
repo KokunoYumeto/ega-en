@@ -1,0 +1,4 @@
+- TERM semi-continue supérieurement → upper semi-continuous (9.3.4); ensemble ordonné → ordered set.
+- TERM partie fermée irréductible → irreducible closed subset (majority word order in `ours/`).
+- TERM stable par réunion finie / intersection finie / passage au complémentaire → stable under finite union / finite intersection / passage to the complement (9.1.2, 9.1.11).
+- TERM il faut et il suffit que → it is necessary and sufficient that; par rapport à → relative to; intérieur à → interior to (9.2.5).

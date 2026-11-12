@@ -1,0 +1,8 @@
+- TRANSCRIPTION? 1.1.5, after (1.1.5.2) — "les deux membres sont des antidérivations de $\bigwedge F$, et il suffit de vérifier qu'ils coïncident dans $F$": both sides are maps $\bigwedge E\to\bigwedge F$, determined by their values on $E$, so one expects "dans $E$" (and "de $\bigwedge E$ dans $\bigwedge F$"). Translated as written.
+- TERM homothétie → homothety (multiplication by a scalar, Bourbaki usage).
+- TERM antidérivation → antiderivation.
+- TERM antifiltre (Tôhoku's family of supports $\Phi$) → antifilter.
+- TERM homotopiquement trivial → homotopically trivial.
+- TERM edge-homomorphismes (English in the French) → edge homomorphisms.
+- TERM suite exacte de termes de bas degré → exact sequence of low-degree terms; suite exacte d'homologie / de cohomologie → homology / cohomology exact sequence.
+- TERM "Dans ce numéro" → "In this subsection".

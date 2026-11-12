@@ -1,0 +1,2 @@
+- TERM morphisme identique → identity morphism (4.4.10 (i)).
+- TERM préschéma somme → sum prescheme (4.4.11).

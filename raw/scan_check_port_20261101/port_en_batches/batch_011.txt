@@ -1,0 +1,4537 @@
+# English hand pass, batch_011: 153 items on 12 printed pages
+
+=================== PAGE 0\textsubscript{III} 42 ===================
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 41 -----
+\oldpage[0\textsubscript{III}]{41}
+\[
+\label{0.11.6.4.1}
+\tag{11.6.4.1}
+{}'E^2_{pq}=H_p(L_qT(K_\bullet,K'_\bullet))
+\]
+\[
+\label{0.11.6.4.2}
+\tag{11.6.4.2}
+{}''E^2_{pq}=
+\sum_{q'+q''=q}L_pT(H_{q'}(K_\bullet),H_{q''}(K'_\bullet)).
+\]
+Here again it is the second spectral sequence that is regular, the two
+sequences being biregular when complexes $K_\bullet$,
+$K'_\bullet$ bounded below are concerned, or when the objects of the abelian
+categories under consideration have projective resolutions of fixed
+length.
+
+Moreover:
+\end{env}
+
+\begin{proposition}[11.6.5]
+\label{0.11.6.5}
+Let $\boldsymbol{C}$, $\boldsymbol{C}'$, $\boldsymbol{C}''$ be three abelian
+categories and $T$ a covariant biadditive bifunctor from
+$\boldsymbol{C}\times\boldsymbol{C}'$ to $\boldsymbol{C}''$.
+\begin{enumerate}
+\item[{\rm(i)}] {$\mathbf{L}_\bullet T(K_\bullet,K'_\bullet)$ is a homological
+bifunctor in each of the complexes $K_\bullet$, $K'_\bullet$ bounded below
+(consisting respectively of objects of $\boldsymbol{C}$ and of objects of
+$\boldsymbol{C}'$).}
+\item[{\rm(ii)}] {Suppose $K_\bullet$ and $K'_\bullet$ bounded
+below. Let $L_{\bullet\bullet}=(L_{ij})$,
+$L'_{\bullet\bullet}=(L'_{ij})$ be two bicomplexes such that $L_{ij}=0$ and
+$L'_{ij}=0$ for $j<0$, such that for every $i$, $L_{i,\bullet}$ is a
+resolution of $K_i$ and $L'_{i,\bullet}$ a resolution of $K'_i$, and finally such that
+$L_nT(L_{ij},L'_{hk})=0$ for $n>0$ and every system $(i,j,h,k)$. Then we have
+a functorial isomorphism}
+\[
+\label{0.11.6.5.1}
+\tag{11.6.5.1}
+\mathbf{L}_\bullet T(K_\bullet,K'_\bullet)
+\xrightarrow{\sim} H_\bullet(T(L_{\bullet\bullet},L'_{\bullet\bullet})).
+\]
+\item[{\rm(iii)}] {Suppose moreover that for every pair $(i,j)$ and
+every pair $(h,k)$, the functors
+\[
+A\longmapsto T(A,L'_{hk}),\qquad
+A'\longmapsto T(L_{ij},A')
+\]
+are exact on $\boldsymbol{C}$ and $\boldsymbol{C}'$ respectively. Then we have
+functorial isomorphisms}
+\[
+\label{0.11.6.5.2}
+\tag{11.6.5.2}
+\mathbf{L}_\bullet T(K_\bullet,K'_\bullet)
+\xrightarrow{\sim} H_\bullet(T(L_{\bullet\bullet},K'_\bullet))
+\xrightarrow{\sim} H_\bullet(T(K_\bullet,L'_{\bullet\bullet})).
+\]
+\end{enumerate}
+The proofs are analogous to those of
+\textup{(\hyperref[0.11.5.5]{11.5.5})} and \textup{(\hyperref[0.11.5.6]{11.5.6})}.
+\end{proposition}
+
+
+\subsection{Hyperhomology of a functor with respect to a bicomplex
+$K_{\bullet\bullet}$}
+\label{subsection:0.11.7}
+
+\begin{env}[11.7.1]
+\label{0.11.7.1}
+Let $\boldsymbol{C}$ be an abelian category in which every object is a
+quotient of a projective object. Consider a bicomplex
+$K_{\bullet\bullet}=(K_{ij})$ formed of objects of $\boldsymbol{C}$, both of whose
+degrees are bounded below; we may always restrict to the case where
+$K_{ij}=0$ for $i<0$ or $j<0$, and this is what we will do from now on. We
+can regard $K_{\bullet\bullet}$ as a (simple) complex formed of
+objects $K_{i,\bullet}=(K_{ij})_{j\geq 0}$ of the abelian category
+$\boldsymbol{K}$ of complexes of objects of $\boldsymbol{C}$ in positive degrees. It
+follows from Lemma (\hyperref[0.11.5.2.1]{11.5.2.1}) (or rather from the
+``dual'' lemma obtained by ``reversing the arrows'') and from (M, V, 2.2) that
+$K_{\bullet\bullet}$ admits a \emph{projective Cartan--Eilenberg
+resolution} in the category $\boldsymbol{K}$; such a resolution is a
+tricomplex $M_{\bullet\bullet\bullet}=(M_{ijk})$ of $\boldsymbol{C}$, with
+all degrees $\geq 0$, formed of projective objects, such that for every $i$,
+$M_{i,\bullet\bullet}$, $\mathrm B_i^{\mathrm I}(M_{\bullet\bullet\bullet})$,
+$\mathrm Z_i^{\mathrm I}(M_{\bullet\bullet\bullet})$,
+$H_i^{\mathrm I}(M_{\bullet\bullet\bullet})$ constitute projective
+resolutions of $K_{i,\bullet}$,
+$\mathrm B_i^{\mathrm I}(K_{\bullet\bullet})$,
+$\mathrm Z_i^{\mathrm I}(K_{\bullet\bullet})$,
+$H_i^{\mathrm I}(K_{\bullet\bullet})$ respectively in the category
+$\boldsymbol{K}$; in particular, for every pair $(i,j)$,
+$M_{ij,\bullet}$ is a projective resolution of $K_{ij}$ in
+$\boldsymbol{C}$.
+\end{env}
+
+\begin{proposition}[11.7.2]
+\label{0.11.7.2}
+Let $T$ be an additive covariant functor from $\boldsymbol{C}$ to an abelian
+category $\boldsymbol{C}'$. With the notation of
+\textup{(\hyperref[0.11.7.1]{11.7.1})}, \emph{the homology
+$H_\bullet(T(M_{\bullet\bullet\bullet}))$ of the simple complex associated to
+the tricomplex $T(M_{\bullet\bullet\bullet})$ is canonically isomorphic to
+the hyperhomology $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ of the simple
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 42 -----
+\oldpage[0\textsubscript{III}]{42}
+complex associated to $K_{\bullet\bullet}$
+\textup{(\hyperref[0.11.6.2]{11.6.2})}, and is
+the common abutment of six biregular spectral sequences denoted
+$\mathop{}^{(t)}E$ (with $t=a,b,a',b',c$ or $d$), whose $E^2$ terms are
+given by the formulas}
+\[
+\begin{aligned}
+{}^{(a)}E^2_{pq}&=L_pT(H_q(K_{\bullet\bullet}))&
+{}^{(b)}E^2_{pq}&=H_p(\mathbf{L}_q^{\mathrm{II}}T(K_{\bullet\bullet}))\\
+{}^{(a')}E^2_{pq}&=\mathbf{L}_pT(H_q^{\mathrm I}(K_{\bullet\bullet}))&
+{}^{(b')}E^2_{pq}&=H_p(L_qT(K_{\bullet\bullet}))\\
+{}^{(c)}E^2_{pq}&=\mathbf{L}_pT(H_q^{\mathrm{II}}(K_{\bullet\bullet}))&
+{}^{(d)}E^2_{pq}&=H_p(\mathbf{L}_q^{\mathrm I}T(K_{\bullet\bullet}))
+\end{aligned}
+\]
+\end{proposition}
+
+Recall that we use the notation $F(A_\bullet)$ to denote the
+complex of the objects $F(A_i)$, for every complex $A_\bullet=(A_i)$; for
+example, $\mathbf{L}_q^{\mathrm{II}}T(K_{\bullet\bullet})$ denotes the complex
+$(\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet}))_{i\geq0}$, where
+$\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet})$ is the hyperhomology of index $q$ of the
+functor $T$ with respect to the simple complex $K_{i,\bullet}$.
+
+\begin{proof}
+Denote by $L_\bullet$ the simple complex associated to
+$K_{\bullet\bullet}$, so that $L_i=\bigoplus_{r+s=i}K_{rs}$,
+and set $N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+it is clear that for each $i$, $N_{i,\bullet}$ is a projective
+resolution of $L_i$ in $\boldsymbol{C}$; it therefore follows from
+(\hyperref[0.11.6.3]{11.6.3}) and
+(\hyperref[0.11.6.4]{11.6.4}) that we have a functorial isomorphism $\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}))$;
+since the simple complex associated to the bicomplex $T(N_{\bullet\bullet})$ is
+also associated to the tricomplex $T(M_{\bullet\bullet\bullet})$, this proves
+the first assertion of the statement.
+
+Moreover, $\mathbf{L}_\bullet T(L_\bullet)$ is the abutment of the two hyperhomology
+spectral sequences (\hyperref[0.11.6.2]{11.6.2}) of $T$
+relative to the simple complex $L_\bullet$, which are none other than the
+sequences $\mathop{}^{(b')}E$ and $\mathop{}^{(a)}E$ respectively.
+
+Let us now regard $M_{\bullet\bullet\bullet}$ as a bicomplex
+$U_{\bullet\bullet}$ with $U_{ij}=\bigoplus_{r+s=j}M_{irs}$;
+$H_\bullet(T(M_{\bullet\bullet\bullet}))$ is again the abutment of the two
+spectral sequences of the bicomplex $T(U_{\bullet\bullet})$. Now, for every $i$,
+$M_{i,\bullet\bullet}$ is a bicomplex satisfying the conditions of
+(\hyperref[0.11.6.3]{11.6.3}) relative to the simple complex
+$K_{i,\bullet}$; hence
+$H_q^{\mathrm{II}}(T(U_{i,\bullet}))=
+\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet})$, and the first spectral sequence of
+$T(U_{\bullet\bullet})$ is none other than $\mathop{}^{(b)}E$. On the other
+hand, for every $r$, $M_{\bullet,r,\bullet}$ is a Cartan--Eilenberg resolution
+of the simple complex $K_{\bullet,r}$; the computation made in (M, XV, 2)
+shows that $H_q^{\mathrm I}(T(M_{\bullet,rs}))=T(H_q^{\mathrm I}(M_{\bullet,rs}))$,
+whence $H_q^{\mathrm I}(T(U_{\bullet,j}))=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}))$;
+in other words, the simple complex
+$H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ is none other than the simple complex
+associated to the bicomplex
+$T(H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))$. Now, for every $q$,
+$H_q^{\mathrm I}(M_{\bullet\bullet\bullet})$ is a projective resolution of the
+simple complex $H_q^{\mathrm I}(K_{\bullet\bullet})$ in the category
+$\boldsymbol{K}$; applying (\hyperref[0.11.6.3]{11.6.3}), we see that we have
+\[
+H_p^{\mathrm{II}}
+\bigl(T(H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))\bigr)
+=\mathbf{L}_pT(H_q^{\mathrm I}(K_{\bullet\bullet}))
+\]
+and we thus obtain the sequence $\mathop{}^{(a')}E$. Finally, the sequences
+$\mathop{}^{(c)}E$ and $\mathop{}^{(d)}E$ are obtained by interchanging the
+roles of the indices $i$ and $j$ in the definition of the tricomplex
+$M_{\bullet\bullet\bullet}$ and applying the preceding arguments to this new
+tricomplex.
+\end{proof}
+
+We say that $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ is \emph{the hyperhomology} of
+$T$ relative to the bicomplex $K_{\bullet\bullet}$.
+
+\begin{env}[11.7.3]
+\label{0.11.7.3}
+\emph{Remarks}.
+\begin{enumerate}
+\item[{\rm(i)}] It follows from (\hyperref[0.11.6.3]{11.6.3}) that
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ is a homological functor on the
+category of bicomplexes $K_{\bullet\bullet}$ of $\boldsymbol{C}$ bounded below
+in each of their degrees.
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 43 -----
+\oldpage[0\textsubscript{III}]{43}
+\item[{\rm(ii)}] Let $M_{\bullet\bullet\bullet}$ be a tricomplex of
+$\boldsymbol{C}$ such that for each pair $(r,s)$,
+$M_{rs,\bullet}$ is a resolution of $K_{rs}$ and
+$L_nT(M_{ijk})=0$ for all triples $(i,j,k)$ and every $n>0$. Then we have
+an isomorphism $\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
+indeed, with the notation of the proof of
+(\hyperref[0.11.7.2]{11.7.2}), $N_{i,\bullet}$ is a resolution of
+$L_i$ such that $L_nT(N_{ij})=0$ for $n>0$ and every pair $(i,j)$, and it
+suffices to apply (\hyperref[0.11.6.3]{11.6.3}, (iii)).
+\item[{\rm(iii)}] The results of (\hyperref[0.11.7.2]{11.7.2}) generalize
+immediately to covariant multifunctors; for example,
+let $\boldsymbol{C}'$ be a second abelian category in which every object
+is a quotient of a projective object, $K'_{\bullet\bullet}$ a bicomplex of
+$\boldsymbol{C}'$ both of whose degrees are bounded below, and $T$ an
+additive covariant bifunctor from $\boldsymbol{C}\times\boldsymbol{C}'$ to an
+abelian category $\boldsymbol{C}''$. If $L_\bullet$ and $L'_\bullet$ are the
+simple complexes associated to $K_{\bullet\bullet}$ and
+$K'_{\bullet\bullet}$ respectively, we define the hyperhomology of $T$ with
+respect to the two bicomplexes $K_{\bullet\bullet}$,
+$K'_{\bullet\bullet}$ as the hyperhomology
+$\mathbf{L}_\bullet T(L_\bullet,L'_\bullet)$; applying
+(\hyperref[0.11.6.4]{11.6.4}) and
+(\hyperref[0.11.6.5]{11.6.5}), we have, just as in
+(\hyperref[0.11.7.2]{11.7.2}), six spectral sequences abutting to this
+hyperhomology, which we leave to the reader to write down.
+\end{enumerate}
+\end{env}
+
+\subsection{Supplement on the cohomology of simplicial complexes}
+\label{subsection:0.11.8}
+
+\begin{env}[11.8.1]
+\label{0.11.8.1}
+Let $A$ be a finite set and $\Sigma(A)$ the set of finite sequences
+$\sigma=(\alpha_0,\ldots,\alpha_h)$ of elements of $A$ (``simplices'' of
+$A$); we set $|\sigma|=\{\alpha_0,\ldots,\alpha_h\}$; recall that the
+complex of chains $\mathrm C_\bullet(A)$ is the graded free abelian group
+generated by the elements of $\Sigma(A)$,
+$(\alpha_0,\ldots,\alpha_h)$ being of degree $h$, with a differential
+defined by $d(\alpha_0,\ldots,\alpha_h)=\sum_{j=0}^{h}(-1)^j(\alpha_0,\ldots,\widehat{\alpha}_j,\ldots,\alpha_h)$.
+The subgroup $\mathrm D_\bullet(A)$ of $\mathrm C_\bullet(A)$ generated by
+the chains $\sigma=(\alpha_0,\ldots,\alpha_h)$ for which two of the
+$\alpha_i$ are equal, and by the chains
+$\pi(\sigma)-\varepsilon_\pi.\sigma$, where, for every permutation $\pi$, $\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$
+and $\varepsilon_\pi$ is the signature of $\pi$, is a subcomplex of
+$\mathrm C_\bullet(A)$ whose elements are called \emph{degenerate
+chains}; we set
+$\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, and we have a
+natural homomorphism of complexes $p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+On the other hand, we define a homomorphism of complexes $j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)$
+in the following way: we totally order $A$; to the class
+mod.~$\mathrm D_\bullet(A)$ of a simplex
+$\sigma=(\alpha_0,\ldots,\alpha_h)$ we assign $0$ if two of the
+$\alpha_i$ are equal, and $\varepsilon_\pi(\beta_0,\ldots,\beta_h)$ otherwise,
+where $(\beta_0,\ldots,\beta_h)=\pi(\sigma)$ is the sequence of the $\alpha_i$
+arranged in increasing order. It is clear that $p\circ
+j$ is the identity of $\mathrm L_\bullet(A)$.
+\end{env}
+
+\begin{env}[11.8.2]
+\label{0.11.8.2}
+Let $B$ be a second finite set; if $d'$, $d''$ are the differentials of
+$\mathrm C_\bullet(A)$ and $\mathrm C_\bullet(B)$, the tensor product
+complex $\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$ can be
+regarded as the free abelian group generated by the elements of
+$\Sigma(A)\times\Sigma(B)$, with the differential
+\[
+d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)
+\quad\text{if }\deg\sigma=h.
+\]
+The natural homomorphisms
+$\mathrm C_\bullet(A)\to\mathrm L_\bullet(A)$,
+$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ define a homomorphism $p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+the latter tensor product being isomorphic to $(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))/(\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B))$.
+Similarly, by means of the homomorphisms
+$\mathrm L_\bullet(A)\to\mathrm C_\bullet(A)$ and
+$\mathrm L_\bullet(B)\to\mathrm C_\bullet(B)$ defined in
+(\hyperref[0.11.8.1]{11.8.1}) (by means of total orders on $A$ and $B$),
+we define a homomorphism $j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
+such that $p\circ j$ is the identity.
+\end{env}
+----- French corrections on page 0\textsubscript{III} 42 -----
+[id 4904]
+OLD: On rappelle que nous utilisons
+NEW: (On rappelle que nous utilisons
+FRENCH CONTEXT (corrected): mathrm I}(K_{\bullet\bullet}))&
+{}^{(b')}E^2_{pq}&=H_p(L_qT(K_{\bullet\bullet}))\\
+{}^{(c)}E^2_{pq}&=\mathbf{L}_pT(H_q^{\mathrm{II}}(K_{\bullet\bullet}))&
+{}^{(d)}E^2_{pq}&=H_p(\mathbf{L}_q^{\mathrm I}T(K_{\bullet\bullet}))
+\end{aligned}
+\]
+\end{proposition}
+
+(On rappelle que nous utilisons la notation $F(A_\bullet)$ pour désigner le
+complexe des objets $F(A_i)$ pour tout complexe $A_\bullet=(A_i)$; par
+exemple $\mathbf{L}_q^{\mathrm{II}}T(K_{\bullet\bullet})$ désigne le complexe
+$(\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet}))_{i\geq0}$, où
+$\math
+
+[id 4905]
+OLD: au complexe simple $K_{i,\bullet}$.
+NEW: au complexe simple $K_{i,\bullet}$.)
+FRENCH CONTEXT (corrected): et=(A_i)$; par
+exemple $\mathbf{L}_q^{\mathrm{II}}T(K_{\bullet\bullet})$ désigne le complexe
+$(\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet}))_{i\geq0}$, où
+$\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet})$ est l'hyperhomologie d'indice $q$ du
+foncteur $T$ par rapport au complexe simple $K_{i,\bullet}$.)
+
+\begin{proof}
+Désignons par $L_\bullet$ le complexe simple associé à
+$K_{\bullet\bullet}$, de sorte que $L_i=\bigoplus_{r+s=i}K_{rs}$, et
+posons
+$N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+il est clair que pour chaque $i$, $N_{i,\bullet}$ est une \emph{résolution
+pro
+
+[id 4909]
+OLD: de sorte que
+\[
+L_i=\bigoplus_{r+s=i}K_{rs},
+\]
+et posons
+NEW: de sorte que $L_i=\bigoplus_{r+s=i}K_{rs}$, et
+posons
+FRENCH CONTEXT (corrected): bullet}))_{i\geq0}$, où
+$\mathbf{L}_q^{\mathrm{II}}T(K_{i,\bullet})$ est l'hyperhomologie d'indice $q$ du
+foncteur $T$ par rapport au complexe simple $K_{i,\bullet}$.)
+
+\begin{proof}
+Désignons par $L_\bullet$ le complexe simple associé à
+$K_{\bullet\bullet}$, de sorte que $L_i=\bigoplus_{r+s=i}K_{rs}$, et
+posons
+$N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+il est clair que pour chaque $i$, $N_{i,\bullet}$ est une \emph{résolution
+projective} de $L_i$ dans $\boldsymbol{C}$; il résulte donc de
+(\hyperref[0.11.6.3-fr]{11.6.3}) et
+(\hyperref[0.11.6.4-fr]{11.6.4}) que l'on a un iso
+
+[id 4910]
+OLD: \[
+N_{ij}=\bigoplus_{r+s=i}M_{rsj};
+\]
+NEW: $N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+FRENCH CONTEXT (corrected): _{i,\bullet})$ est l'hyperhomologie d'indice $q$ du
+foncteur $T$ par rapport au complexe simple $K_{i,\bullet}$.)
+
+\begin{proof}
+Désignons par $L_\bullet$ le complexe simple associé à
+$K_{\bullet\bullet}$, de sorte que $L_i=\bigoplus_{r+s=i}K_{rs}$, et
+posons
+$N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+il est clair que pour chaque $i$, $N_{i,\bullet}$ est une \emph{résolution
+projective} de $L_i$ dans $\boldsymbol{C}$; il résulte donc de
+(\hyperref[0.11.6.3-fr]{11.6.3}) et
+(\hyperref[0.11.6.4-fr]{11.6.4}) que l'on a un isomorphisme fonctoriel
+$
+\mathbf{L}_\
+
+[id 4911]
+OLD: une résolution
+projective de $L_i$
+NEW: une \emph{résolution
+projective} de $L_i$
+FRENCH CONTEXT (corrected): simple $K_{i,\bullet}$.)
+
+\begin{proof}
+Désignons par $L_\bullet$ le complexe simple associé à
+$K_{\bullet\bullet}$, de sorte que $L_i=\bigoplus_{r+s=i}K_{rs}$, et
+posons
+$N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+il est clair que pour chaque $i$, $N_{i,\bullet}$ est une \emph{résolution
+projective} de $L_i$ dans $\boldsymbol{C}$; il résulte donc de
+(\hyperref[0.11.6.3-fr]{11.6.3}) et
+(\hyperref[0.11.6.4-fr]{11.6.4}) que l'on a un isomorphisme fonctoriel
+$
+\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}))$;
+comme le complexe simpl
+
+[id 4912]
+OLD: isomorphisme fonctoriel
+\[
+NEW: isomorphisme fonctoriel
+$
+FRENCH CONTEXT (corrected): ons
+$N_{ij}=\bigoplus_{r+s=i}M_{rsj}$;
+il est clair que pour chaque $i$, $N_{i,\bullet}$ est une \emph{résolution
+projective} de $L_i$ dans $\boldsymbol{C}$; il résulte donc de
+(\hyperref[0.11.6.3-fr]{11.6.3}) et
+(\hyperref[0.11.6.4-fr]{11.6.4}) que l'on a un isomorphisme fonctoriel
+$
+\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}))$;
+comme le complexe simple associé au bicomplexe $T(N_{\bullet\bullet})$ est
+aussi associé au tricomplexe $T(M_{\bullet\bullet\bullet})$, cela prouve la
+première assertion de l
+
+[id 4915]
+OLD: ;
+\]
+comme le complexe
+NEW: $;
+comme le complexe
+FRENCH CONTEXT (corrected): ution
+projective} de $L_i$ dans $\boldsymbol{C}$; il résulte donc de
+(\hyperref[0.11.6.3-fr]{11.6.3}) et
+(\hyperref[0.11.6.4-fr]{11.6.4}) que l'on a un isomorphisme fonctoriel
+$
+\mathbf{L}_\bullet T(L_\bullet)\xrightarrow{\sim} H_\bullet(T(N_{\bullet\bullet}))$;
+comme le complexe simple associé au bicomplexe $T(N_{\bullet\bullet})$ est
+aussi associé au tricomplexe $T(M_{\bullet\bullet\bullet})$, cela prouve la
+première assertion de l'énoncé.
+
+En outre, $\mathbf{L}_\bullet T(L_\bullet)$ est l'aboutissement des deux suites
+spectrales d'
+
+[id 4917]
+OLD: \[
+U_{ij}=\bigoplus_{r+s=j}M_{irs};
+\]
+NEW: $U_{ij}=\bigoplus_{r+s=j}M_{irs}$;
+FRENCH CONTEXT (corrected): .6.2-fr]{11.6.2}) de $T$
+relativement au complexe simple $L_\bullet$, qui ne sont autres que les suites
+$\mathop{}^{(b')}E$ et $\mathop{}^{(a)}E$ respectivement.
+
+Considérons maintenant $M_{\bullet\bullet\bullet}$ comme un bicomplexe
+$U_{\bullet\bullet}$ avec
+$U_{ij}=\bigoplus_{r+s=j}M_{irs}$;
+$H_\bullet(T(M_{\bullet\bullet\bullet}))$ est encore l'aboutissement des deux
+suites spectrales du bicomplexe $T(U_{\bullet\bullet})$. Or, pour tout $i$,
+$M_{i,\bullet\bullet}$ est un bicomplexe vérifiant les conditions de
+(\hyperref[0.11.6.3-fr]{11.6.3}) rel
+
+[id 4920]
+OLD: montre que
+\[
+H_q^{\mathrm I}(T(M_{\bullet,rs}))
+=T(H_q^{\mathrm I}(M_{\bullet,rs})),
+\]
+NEW: montre que
+$H_q^{\mathrm I}(T(M_{\bullet,rs}))=T(H_q^{\mathrm I}(M_{\bullet,rs}))$,
+FRENCH CONTEXT (corrected): et})$, et la première suite spectrale de
+$T(U_{\bullet\bullet})$ n'est autre que $\mathop{}^{(b)}E$. D'autre part, pour
+tout $r$, $M_{\bullet,r,\bullet}$ est une résolution de Cartan-Eilenberg du
+complexe simple $K_{\bullet,r}$; le calcul fait dans (M, XV, 2) montre que
+$H_q^{\mathrm I}(T(M_{\bullet,rs}))=T(H_q^{\mathrm I}(M_{\bullet,rs}))$,
+d'où $H_q^{\mathrm I}(T(U_{\bullet,j}))=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}))$;
+autrement dit, le complexe simple
+$H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ n'est autre que le complexe simple
+associé au bicomplexe
+$T(H_q^{\mathrm I}(M_{\bullet\bul
+
+[id 4921]
+OLD: 
+d'où
+\[
+H_q^{\mathrm I}(T(U_{\bullet,j}))
+=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}));
+\]
+NEW: 
+d'où $H_q^{\mathrm I}(T(U_{\bullet,j}))=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}))$;
+FRENCH CONTEXT (corrected): mathop{}^{(b)}E$. D'autre part, pour
+tout $r$, $M_{\bullet,r,\bullet}$ est une résolution de Cartan-Eilenberg du
+complexe simple $K_{\bullet,r}$; le calcul fait dans (M, XV, 2) montre que
+$H_q^{\mathrm I}(T(M_{\bullet,rs}))=T(H_q^{\mathrm I}(M_{\bullet,rs}))$,
+d'où $H_q^{\mathrm I}(T(U_{\bullet,j}))=\bigoplus_{r+s=j}T(H_q^{\mathrm I}(M_{\bullet,rs}))$;
+autrement dit, le complexe simple
+$H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ n'est autre que le complexe simple
+associé au bicomplexe
+$T(H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))$. Or, pour tout $q$,
+$H_q^{\mathrm I}(M_{\bullet\bullet\bullet})$ est une résolu
+
+[id 4922]
+OLD: est une résolution projective du
+NEW: est une résolution \emph{projective} du
+FRENCH CONTEXT (corrected): bullet,rs}))$;
+autrement dit, le complexe simple
+$H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ n'est autre que le complexe simple
+associé au bicomplexe
+$T(H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))$. Or, pour tout $q$,
+$H_q^{\mathrm I}(M_{\bullet\bullet\bullet})$ est une résolution \emph{projective} du
+complexe simple $H_q^{\mathrm I}(K_{\bullet\bullet})$ dans la catégorie
+$\boldsymbol{K}$; appliquant (\hyperref[0.11.6.3-fr]{11.6.3}), on voit que l'on a
+\[
+H_p^{\mathrm{II}}
+\bigl(T(H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))\bigr)
+=\mathbf{L}_pT(H_q^{\mathr
+
+[id 4924]
+OLD: On dit que $L_\bullet T(K_{\bullet\bullet})$
+NEW: On dit que $\mathbf{L}_\bullet T(K_{\bullet\bullet})$
+FRENCH CONTEXT (corrected): tes
+$\mathop{}^{(c)}E$ et $\mathop{}^{(d)}E$ s'obtiennent en intervertissant les
+rôles des indices $i$ et $j$ dans la définition du tricomplexe
+$M_{\bullet\bullet\bullet}$ et en appliquant à ce nouveau tricomplexe les
+raisonnements qui précèdent.
+\end{proof}
+
+On dit que $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est l'\emph{hyperhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\
+
+[id 4925]
+OLD: \emph{l'hyperhomologie} de
+NEW: l'\emph{hyperhomologie} de
+FRENCH CONTEXT (corrected): en intervertissant les
+rôles des indices $i$ et $j$ dans la définition du tricomplexe
+$M_{\bullet\bullet\bullet}$ et en appliquant à ce nouveau tricomplexe les
+raisonnements qui précèdent.
+\end{proof}
+
+On dit que $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est l'\emph{hyperhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un \emph{foncteur
+
+[id 4926]
+OLD: relative au bicomplexe
+NEW: relative au \emph{bicomplexe}
+FRENCH CONTEXT (corrected): s indices $i$ et $j$ dans la définition du tricomplexe
+$M_{\bullet\bullet\bullet}$ et en appliquant à ce nouveau tricomplexe les
+raisonnements qui précèdent.
+\end{proof}
+
+On dit que $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est l'\emph{hyperhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un \emph{foncteur homologique} dans la
+catégorie de
+
+[id 4927]
+OLD: \begin{env}[11.7.3]
+\label{0.11.7.3-fr}
+\emph{Remarques}.
+
+NEW: \begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+
+FRENCH CONTEXT (corrected): e
+$M_{\bullet\bullet\bullet}$ et en appliquant à ce nouveau tricomplexe les
+raisonnements qui précèdent.
+\end{proof}
+
+On dit que $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est l'\emph{hyperhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un \emph{foncteur homologique} dans la
+catégorie des bicomplexes $K_{\bullet\bullet}$ de $\boldsymbol{C}$ limités
+inférieurement
+
+[id 4928]
+OLD: $L_\bullet T(K_{\bullet\bullet})$ est un
+NEW: $\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un
+FRENCH CONTEXT (corrected): L}_\bullet T(K_{\bullet\bullet})$ est l'\emph{hyperhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un \emph{foncteur homologique} dans la
+catégorie des bicomplexes $K_{\bullet\bullet}$ de $\boldsymbol{C}$ limités
+inférieurement en chacun de leurs degrés.
+\oldpage[0\textsubscript{III}]{43}
+\item[{\rm(ii)}] Soit $M_{\bullet\bullet\bullet}$ un tricomplexe de
+$\b
+
+[id 4929]
+OLD: foncteur homologique dans la
+NEW: \emph{foncteur homologique} dans la
+FRENCH CONTEXT (corrected): rhomologie} de
+$T$ relative au \emph{bicomplexe} $K_{\bullet\bullet}$.
+
+\begin{remarks}[11.7.3]
+\label{0.11.7.3-fr}
+\upshape
+\begin{enumerate}
+\item[{\rm(i)}] Il résulte de (\hyperref[0.11.6.3-fr]{11.6.3}) que
+$\mathbf{L}_\bullet T(K_{\bullet\bullet})$ est un \emph{foncteur homologique} dans la
+catégorie des bicomplexes $K_{\bullet\bullet}$ de $\boldsymbol{C}$ limités
+inférieurement en chacun de leurs degrés.
+\oldpage[0\textsubscript{III}]{43}
+\item[{\rm(ii)}] Soit $M_{\bullet\bullet\bullet}$ un tricomplexe de
+$\boldsymbol{C}$ tel que pour chaque co
+
+=================== PAGE 0\textsubscript{III} 43 ===================
+----- (English page 0\textsubscript{III} 42: shown above in this file) -----
+----- (English page 0\textsubscript{III} 43: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 44 -----
+\oldpage[0\textsubscript{III}]{44}
+With this notation:
+\begin{proposition}[11.8.3]
+\label{0.11.8.3}
+\emph{There exists a homotopy $h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$,
+such that $h(\sigma,\tau)$ is a linear combination of pairs of simplices
+$(\sigma_i,\tau_i)$ with $|\sigma_i|\subset|\sigma|$,
+$|\tau_i|\subset|\tau|$, and such that, for $f=j\circ p$, we have}
+\[
+\label{0.11.8.3.1}
+\tag{11.8.3.1}
+f-1=h\circ d+d\circ h.
+\]
+\end{proposition}
+
+\begin{proof}
+It suffices to define $h$ on each pair $(\sigma,\tau)$ of simplices,
+arguing by induction on the sum of the degrees of $\sigma$ and $\tau$, since
+we can take $h=0$ when this sum is $0$. Let $\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau))$;
+by virtue of the induction hypothesis and the definition of $d$, we have $\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$.
+We have
+\[
+d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-d(h(d(\sigma,\tau)))
+=h(d(d(\sigma,\tau)))=0
+\]
+by virtue of (\hyperref[0.11.8.3.1]{11.8.3.1}) and the induction
+hypothesis. Now, we have
+$H_q(\mathrm C_\bullet(A))=0$ for $q>0$ (G, I, 3.7.4), hence also
+\[
+H_q(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))=0\quad(q>0),
+\]
+by virtue of the Künneth formula (G, I, 5.5.2). Applying this remark with
+$A$ replaced by $|\sigma|$ and $B$ by $|\tau|$, we see that there exists an
+element $\omega'\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$
+such that $\omega=d\omega'$; taking $h(\sigma,\tau)=\omega'$, we verify
+(\hyperref[0.11.8.3.1]{11.8.3.1}) for the pair $(\sigma,\tau)$ and the
+induction can be continued.
+\end{proof}
+
+\begin{env}[11.8.4]
+\label{0.11.8.4}
+The notation being that of (\hyperref[0.11.8.2]{11.8.2}), we will write
+$(\sigma,\tau)\leq(\sigma',\tau')$ if $|\sigma|\subset|\sigma'|$ and
+$|\tau|\subset|\tau'|$. A \emph{coefficient system} $\mathscr S$ on
+$\Sigma(A)\times\Sigma(B)$ consists of a family
+$(\Gamma_{\sigma,\tau})$ of abelian groups, where
+$\Gamma_{\sigma,\tau}$ depends only on the sets $|\sigma|$ and $|\tau|$,
+and a family of homomorphisms
+\[
+\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}
+\quad\text{for }(\sigma,\tau)\leq(\sigma',\tau'),
+\]
+forming an inductive system for this preorder relation. We then define
+a complex of cochains $\mathrm C^\bullet(A,B;\mathscr S)$ as the set
+of families $\lambda=(\lambda(\sigma,\tau))$, where $(\sigma,\tau)$ ranges over
+$\Sigma(A)\times\Sigma(B)$, with
+$\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$ for every pair
+$(\sigma,\tau)$. The differential is given as follows: if $d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i)$,
+we have $|\sigma_i|\subset|\sigma|$, $|\tau_i|\subset|\tau|$ for every $i$,
+and we take
+\[
+d\lambda(\sigma,\tau)=\sum_i\pm\lambda_i(\sigma_i,\tau_i),
+\]
+where $\lambda_i(\sigma_i,\tau_i)$ denotes the canonical image of
+$\lambda(\sigma_i,\tau_i)$ in $\Gamma_{\sigma,\tau}$.
+
+We will say that a cochain $\lambda\in\mathrm C^\bullet(A,B;\mathscr S)$ is
+\emph{bi-alternating} if $\lambda(\sigma,\tau)=0$ whenever one of the two
+simplices $\sigma$, $\tau$ has two equal terms, and if we have
+\[
+\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau),
+\qquad
+\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)
+\]
+for arbitrary permutations $\pi$, $\pi'$ of the indices. It is clear
+that these cochains generate a subcomplex
+$\mathrm L^\bullet(A,B;\mathscr S)$ of $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5}
+\emph{The canonical injection $\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+defines an isomorphism on the cohomology of these two complexes.}
+\end{proposition}
+
+\begin{proof}
+Note that if $p$ and $j$ have the meaning defined in
+(\hyperref[0.11.8.2]{11.8.2}), the maps
+\[
+{}'p:\lambda\to\lambda\circ p,\qquad
+{}'j:\lambda\to\lambda\circ j
+\]
+are defined on $\mathrm L^\bullet(A,B;\mathscr S)$ and
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectively, the first being none other
+than the canonical injection. Since ${}^tj\circ{}^tp$ is the identity, it
+suffices to prove that ${}^tp\circ{}^tj$ is homotopic to the identity;
+now, by (\hyperref[0.11.8.3]{11.8.3}),
+${}^th:\lambda\to\lambda\circ h$ is defined on
+$\mathrm C^\bullet(A,B;\mathscr S)$, and we can therefore transpose the identity
+(\hyperref[0.11.8.3.1]{11.8.3.1}), which gives the desired result.
+\end{proof}
+
+\begin{env}[11.8.6]
+\label{0.11.8.6}
+----- French corrections on page 0\textsubscript{III} 43 -----
+[id 4933]
+OLD: soit une résolution de $K_{rs}$
+NEW: soit une \emph{résolution} de $K_{rs}$
+FRENCH CONTEXT (corrected): \bullet\bullet}$ de $\boldsymbol{C}$ limités
+inférieurement en chacun de leurs degrés.
+\oldpage[0\textsubscript{III}]{43}
+\item[{\rm(ii)}] Soit $M_{\bullet\bullet\bullet}$ un tricomplexe de
+$\boldsymbol{C}$ tel que pour chaque couple $(r,s)$,
+$M_{rs,\bullet}$ soit une \emph{résolution} de $K_{rs}$ et que
+$L_nT(M_{ijk})=0$ pour tous les triplets $(i,j,k)$ et tout $n>0$. Alors on a
+un isomorphisme
+$
+\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
+en effet, avec les notations de la démonstration de
+(\h
+
+[id 4934]
+OLD: un isomorphisme
+\[
+NEW: un isomorphisme
+$
+FRENCH CONTEXT (corrected): item[{\rm(ii)}] Soit $M_{\bullet\bullet\bullet}$ un tricomplexe de
+$\boldsymbol{C}$ tel que pour chaque couple $(r,s)$,
+$M_{rs,\bullet}$ soit une \emph{résolution} de $K_{rs}$ et que
+$L_nT(M_{ijk})=0$ pour tous les triplets $(i,j,k)$ et tout $n>0$. Alors on a
+un isomorphisme
+$
+\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
+en effet, avec les notations de la démonstration de
+(\hyperref[0.11.7.2-fr]{11.7.2}), $N_{i,\bullet}$ est une résolution de
+$L_i$ telle que $L_nT(N_{ij})=0$ 
+
+[id 4935]
+OLD: 
+L_\bullet T(K_{\bullet\bullet})
+NEW: 
+\mathbf{L}_\bullet T(K_{\bullet\bullet})
+FRENCH CONTEXT (corrected): oit $M_{\bullet\bullet\bullet}$ un tricomplexe de
+$\boldsymbol{C}$ tel que pour chaque couple $(r,s)$,
+$M_{rs,\bullet}$ soit une \emph{résolution} de $K_{rs}$ et que
+$L_nT(M_{ijk})=0$ pour tous les triplets $(i,j,k)$ et tout $n>0$. Alors on a
+un isomorphisme
+$
+\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
+en effet, avec les notations de la démonstration de
+(\hyperref[0.11.7.2-fr]{11.7.2}), $N_{i,\bullet}$ est une résolution de
+$L_i$ telle que $L_nT(N_{ij})=0$ pour $n>0$ et tout couple $(i,j)$, et il
+
+
+[id 4937]
+OLD: ;
+\]
+en effet
+NEW: $;
+en effet
+FRENCH CONTEXT (corrected): $,
+$M_{rs,\bullet}$ soit une \emph{résolution} de $K_{rs}$ et que
+$L_nT(M_{ijk})=0$ pour tous les triplets $(i,j,k)$ et tout $n>0$. Alors on a
+un isomorphisme
+$
+\mathbf{L}_\bullet T(K_{\bullet\bullet})
+\xrightarrow{\sim} H_\bullet(T(M_{\bullet\bullet\bullet}))$;
+en effet, avec les notations de la démonstration de
+(\hyperref[0.11.7.2-fr]{11.7.2}), $N_{i,\bullet}$ est une résolution de
+$L_i$ telle que $L_nT(N_{ij})=0$ pour $n>0$ et tout couple $(i,j)$, et il
+suffit d'appliquer (\hyperref[0.11.6.3-fr]{11.6.3}, (iii)).
+\item[{\rm
+
+[id 4938]
+OLD: $L_\bullet T(L_\bullet,L'_\bullet)$
+NEW: $\mathbf{L}_\bullet T(L_\bullet,L'_\bullet)$
+FRENCH CONTEXT (corrected): \bullet$ et $L'_\bullet$ sont les
+complexes simples associés à $K_{\bullet\bullet}$ et
+$K'_{\bullet\bullet}$ respectivement, on définit l'hyperhomologie de $T$ par
+rapport aux deux bicomplexes $K_{\bullet\bullet}$,
+$K'_{\bullet\bullet}$ comme l'hyperhomologie
+$\mathbf{L}_\bullet T(L_\bullet,L'_\bullet)$; appliquant
+(\hyperref[0.11.6.4-fr]{11.6.4}) et
+(\hyperref[0.11.6.5-fr]{11.6.5}), on a de même que dans
+(\hyperref[0.11.7.2-fr]{11.7.2}) six suites spectrales aboutissant à cette
+hyperhomologie, et que nous laissons le soin d'écrire au lecteur.
+\end{enumerate
+
+[id 4939]
+OLD: \end{enumerate}
+\end{env}
+NEW: \end{enumerate}
+\end{remarks}
+FRENCH CONTEXT (corrected): t,L'_\bullet)$; appliquant
+(\hyperref[0.11.6.4-fr]{11.6.4}) et
+(\hyperref[0.11.6.5-fr]{11.6.5}), on a de même que dans
+(\hyperref[0.11.7.2-fr]{11.7.2}) six suites spectrales aboutissant à cette
+hyperhomologie, et que nous laissons le soin d'écrire au lecteur.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Compléments sur la cohomologie des complexes simpliciaux}
+\label{subsection:0.11.8-fr}
+
+\begin{env}[11.8.1]
+\label{0.11.8.1-fr}
+Soient $A$ un ensemble fini, $\Sigma(A)$ l'ensemble des suites finies
+$\sigma=(\alpha_0,\ldots,\alpha_h)$ d'éléments d
+
+[id 4940]
+OLD: étant de degré $h$
+NEW: étant de \emph{degré} $h$
+FRENCH CONTEXT (corrected):  d'éléments de $A$ («~simplexes~» de
+$A$); on pose $|\sigma|=\{\alpha_0,\ldots,\alpha_h\}$; on rappelle que le
+complexe de chaînes $\mathrm C_\bullet(A)$ est le groupe abélien libre
+gradué engendré par les éléments de $\Sigma(A)$,
+$(\alpha_0,\ldots,\alpha_h)$ étant de \emph{degré} $h$, avec une différentielle
+définie par
+$d(\alpha_0,\ldots,\alpha_h)=\sum_{j=0}^{h}(-1)^j(\alpha_0,\ldots,\widehat{\alpha}_j,\ldots,\alpha_h)$.
+Le sous-groupe $\mathrm D_\bullet(A)$ de $\mathrm C_\bullet(A)$ engendré par
+les chaînes $\sigma=(\alpha_0,\ldots,\alp
+
+[id 4941]
+OLD: définie par
+\[
+d(\alpha_0,\ldots,\alpha_h)=
+\sum_{j=0}^{h}(-1)^j
+(\alpha_0,\ldots,\widehat{\alpha_j},\ldots,\alpha_h).
+\]
+NEW: définie par
+$d(\alpha_0,\ldots,\alpha_h)=\sum_{j=0}^{h}(-1)^j(\alpha_0,\ldots,\widehat{\alpha}_j,\ldots,\alpha_h)$.
+FRENCH CONTEXT (corrected): $|\sigma|=\{\alpha_0,\ldots,\alpha_h\}$; on rappelle que le
+complexe de chaînes $\mathrm C_\bullet(A)$ est le groupe abélien libre
+gradué engendré par les éléments de $\Sigma(A)$,
+$(\alpha_0,\ldots,\alpha_h)$ étant de \emph{degré} $h$, avec une différentielle
+définie par
+$d(\alpha_0,\ldots,\alpha_h)=\sum_{j=0}^{h}(-1)^j(\alpha_0,\ldots,\widehat{\alpha}_j,\ldots,\alpha_h)$.
+Le sous-groupe $\mathrm D_\bullet(A)$ de $\mathrm C_\bullet(A)$ engendré par
+les chaînes $\sigma=(\alpha_0,\ldots,\alpha_h)$ pour lesquelles deux des
+$\alpha_i$ sont égaux, et par les chaînes
+$\pi(\sigma)-\varepsilon_\pi.\sigma$, où pour toute permutation $\p
+
+[id 4943]
+OLD: \[
+\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})
+\]
+NEW: $\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$
+FRENCH CONTEXT (corrected): sous-groupe $\mathrm D_\bullet(A)$ de $\mathrm C_\bullet(A)$ engendré par
+les chaînes $\sigma=(\alpha_0,\ldots,\alpha_h)$ pour lesquelles deux des
+$\alpha_i$ sont égaux, et par les chaînes
+$\pi(\sigma)-\varepsilon_\pi.\sigma$, où pour toute permutation $\pi$,
+$\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$
+et $\varepsilon_\pi$ est la signature de $\pi$, est un sous-complexe de
+$\mathrm C_\bullet(A)$ dont les éléments sont dits chaînes
+\emph{dégénérées}; on pose
+$\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, et on a un
+homomorphisme naturel de
+
+[id 4944]
+OLD: \emph{chaînes
+dégénérées}
+NEW: chaînes
+\emph{dégénérées}
+FRENCH CONTEXT (corrected): es chaînes
+$\pi(\sigma)-\varepsilon_\pi.\sigma$, où pour toute permutation $\pi$,
+$\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$
+et $\varepsilon_\pi$ est la signature de $\pi$, est un sous-complexe de
+$\mathrm C_\bullet(A)$ dont les éléments sont dits chaînes
+\emph{dégénérées}; on pose
+$\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, et on a un
+homomorphisme naturel de complexes
+$p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+On définit d'autre part un homomorphisme de complexes
+$j:\mathrm L_\bullet(A)
+
+[id 4945]
+OLD: \[
+p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A).
+\]
+NEW: $p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+FRENCH CONTEXT (corrected): silon_\pi$ est la signature de $\pi$, est un sous-complexe de
+$\mathrm C_\bullet(A)$ dont les éléments sont dits chaînes
+\emph{dégénérées}; on pose
+$\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, et on a un
+homomorphisme naturel de complexes
+$p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+On définit d'autre part un homomorphisme de complexes
+$j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)$
+de la façon suivante : on ordonne totalement $A$; à la classe
+mod.~$\mathrm D_\bullet(A)$ d'un simplexe
+$\sigma=(\alpha_0,\ldots,\alpha_h)$, on f
+
+[id 4946]
+OLD: \[
+j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)
+\]
+NEW: $j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)$
+FRENCH CONTEXT (corrected): aînes
+\emph{dégénérées}; on pose
+$\mathrm L_\bullet(A)=\mathrm C_\bullet(A)/\mathrm D_\bullet(A)$, et on a un
+homomorphisme naturel de complexes
+$p:\mathrm C_\bullet(A)\longrightarrow\mathrm L_\bullet(A)$.
+On définit d'autre part un homomorphisme de complexes
+$j:\mathrm L_\bullet(A)\longrightarrow\mathrm C_\bullet(A)$
+de la façon suivante : on ordonne totalement $A$; à la classe
+mod.~$\mathrm D_\bullet(A)$ d'un simplexe
+$\sigma=(\alpha_0,\ldots,\alpha_h)$, on fait correspondre $0$ si deux des
+$\alpha_i$ sont égaux, et $\varepsilon_\pi(\beta_0,\ldots,\beta_h)$ sinon, où
+$(\
+
+[id 4947]
+OLD: est l'identité de
+NEW: est l'\emph{identité} de
+FRENCH CONTEXT (corrected): \alpha_h)$, on fait correspondre $0$ si deux des
+$\alpha_i$ sont égaux, et $\varepsilon_\pi(\beta_0,\ldots,\beta_h)$ sinon, où
+$(\beta_0,\ldots,\beta_h)=\pi(\sigma)$ est la suite des $\alpha_i$ rangés \emph{dans l'ordre croissant}. Il est clair que $p\circ
+j$ est l'\emph{identité} de $\mathrm L_\bullet(A)$.
+\end{env}
+
+\begin{env}[11.8.2]
+\label{0.11.8.2-fr}
+Soit $B$ un second ensemble fini; si $d'$, $d''$ sont les différentielles de
+$\mathrm C_\bullet(A)$ et $\mathrm C_\bullet(B)$, le complexe produit
+tensoriel $\mathrm C_\bullet(A)\otime
+
+[id 4948]
+OLD: \[
+p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B),
+\]
+NEW: $p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+FRENCH CONTEXT (corrected): a(B)$, avec la différentielle
+$d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)$ si $\deg\sigma=h$.
+
+Les homomorphismes naturels
+$\mathrm C_\bullet(A)\to\mathrm L_\bullet(A)$,
+$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ définissent un homomorphisme
+$p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+ce dernier produit tensoriel étant isomorphe à
+$(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))/(\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B))$.
+De même, à l'aide des homomorphismes
+$\mathrm L_\bullet(A)\to
+
+[id 4949]
+OLD: \[
+\frac{\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)}
+{\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)
++\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B)}.
+\]
+NEW: $(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))/(\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B))$.
+FRENCH CONTEXT (corrected): \mathrm L_\bullet(A)$,
+$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ définissent un homomorphisme
+$p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+ce dernier produit tensoriel étant isomorphe à
+$(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))/(\mathrm C_\bullet(A)\otimes\mathrm D_\bullet(B)+\mathrm D_\bullet(A)\otimes\mathrm C_\bullet(B))$.
+De même, à l'aide des homomorphismes
+$\mathrm L_\bullet(A)\to\mathrm C_\bullet(A)$ et
+$\mathrm L_\bullet(B)\to\mathrm C_\bullet(B)$ définis dans
+(\hyperref[0.11.8.1-fr]{11.8.1}) (à l'aide d'ordres totaux sur $A$ et $B$),
+on définit un homomorphisme
+$j:\mathrm
+
+[id 4950]
+OLD: \[
+j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)
+\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\]
+NEW: $j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
+FRENCH CONTEXT (corrected): llet(B))$.
+De même, à l'aide des homomorphismes
+$\mathrm L_\bullet(A)\to\mathrm C_\bullet(A)$ et
+$\mathrm L_\bullet(B)\to\mathrm C_\bullet(B)$ définis dans
+(\hyperref[0.11.8.1-fr]{11.8.1}) (à l'aide d'ordres totaux sur $A$ et $B$),
+on définit un homomorphisme
+$j:\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
+tel que $p\circ j$ soit l'identité.
+\end{env}
+
+\oldpage[0\textsubscript{III}]{44}
+Avec ces notations :
+\begin{proposition}[11.8.3]
+\label{0.11.8.3-fr}
+{Il existe une homotopie
+$h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(
+
+[id 5521]
+OLD: rangés dans l'ordre croissant. Il est clair
+NEW: rangés \emph{dans l'ordre croissant}. Il est clair
+FRENCH CONTEXT (corrected): od.~$\mathrm D_\bullet(A)$ d'un simplexe
+$\sigma=(\alpha_0,\ldots,\alpha_h)$, on fait correspondre $0$ si deux des
+$\alpha_i$ sont égaux, et $\varepsilon_\pi(\beta_0,\ldots,\beta_h)$ sinon, où
+$(\beta_0,\ldots,\beta_h)=\pi(\sigma)$ est la suite des $\alpha_i$ rangés \emph{dans l'ordre croissant}. Il est clair que $p\circ
+j$ est l'\emph{identité} de $\mathrm L_\bullet(A)$.
+\end{env}
+
+\begin{env}[11.8.2]
+\label{0.11.8.2-fr}
+Soit $B$ un second ensemble fini; si $d'$, $d''$ sont les différentielles de
+$\mathrm C_\bullet(A)$ et $\mathrm C_\bullet(B)$, le complexe produ
+
+[id 5522]
+OLD: rangés dans l'ordre croissant dans
+NEW: rangés \emph{dans l'ordre croissant} dans
+WHY: adapted to the corrected wording
+
+[id 5523]
+OLD: \[
+d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)
+\quad\text{si }\deg\sigma=h.
+\]
+Les homomorphismes naturels
+NEW: $d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)$ si $\deg\sigma=h$.
+
+Les homomorphismes naturels
+FRENCH CONTEXT (corrected): $\mathrm C_\bullet(A)$ et $\mathrm C_\bullet(B)$, le complexe produit
+tensoriel $\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$ peut être
+considéré comme le groupe abélien libre engendré par les éléments de
+$\Sigma(A)\times\Sigma(B)$, avec la différentielle
+$d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)$ si $\deg\sigma=h$.
+
+Les homomorphismes naturels
+$\mathrm C_\bullet(A)\to\mathrm L_\bullet(A)$,
+$\mathrm C_\bullet(B)\to\mathrm L_\bullet(B)$ définissent un homomorphisme
+$p:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm L_\bullet(A)\otimes\mathrm L_\bullet(B)$,
+ce dernier produit ten
+
+[id 5524]
+OLD: \[
+d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)
+\quad\text{si }\operatorname{Card}|\sigma|=h+1.
+\]
+Les homomorphismes naturels
+NEW: $d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)$ si $\operatorname{Card}|\sigma|=h+1$.
+
+Les homomorphismes naturels
+WHY: adapted to the corrected wording
+
+=================== PAGE 0\textsubscript{III} 44 ===================
+----- (English page 0\textsubscript{III} 43: shown above in this file) -----
+----- (English page 0\textsubscript{III} 44: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 45 -----
+\oldpage[0\textsubscript{III}]{45}
+Proposition (\hyperref[0.11.8.5]{11.8.5}) reduces the computation of the
+cohomology of $\mathrm L^\bullet(A,B;\mathscr S)$ to that of the cohomology of
+$\mathrm C^\bullet(A,B;\mathscr S)$. Recall on the other hand that the latter
+is, by virtue of the Eilenberg--Zilber theorem (G, I, 3.10.2), canonically
+isomorphic to the cohomology of the complex of cochains defined as follows:
+we form the complex of chains $\mathrm P_\bullet(A,B)$, consisting of the
+linear combinations of the $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ such
+that $\sigma$ and $\tau$ have the same degree; the differential of this
+complex is given by $d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$
+if
+\[
+d\sigma=\sum_j(-1)^j\sigma_j,\qquad
+d\tau=\sum_k(-1)^k\tau_k;
+\]
+we then have two canonical homomorphisms of complexes
+\[
+f:\mathrm P_\bullet(A,B)\longrightarrow
+\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),\qquad
+g:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm P_\bullet(A,B),
+\]
+and it is proved (\emph{loc. cit.}) that there are homotopies $h$, $h'$ such
+that
+\[
+f\circ g-1=d\circ h+h\circ d\qquad\text{et}\qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+Moreover, we have
+\[
+f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|),\qquad
+g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)
+\]
+and the homotopies $h$, $h'$ can be chosen such that
+\[
+h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|),\qquad
+h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|).
+\]
+This point comes from the fact that the definition of $h(\sigma,\tau)$ and
+$h'(\sigma,\tau)$ can be made by induction on the sum of the degrees of
+$\sigma$ and $\tau$, and from the fact that
+\[
+H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))
+\quad\text{and}\quad
+H_q(\mathrm P_\bullet(|\sigma|,|\tau|))
+\]
+are zero for $q>0$ (\emph{loc. cit.}); we then argue as in
+(\hyperref[0.11.8.3]{11.8.3}) and the conclusion follows.
+
+We then define $\mathrm P^\bullet(A,B;\mathscr S)$ as the set of
+families $\lambda=(\lambda(\sigma,\tau))$ where $(\sigma,\tau)$ ranges over
+the pairs whose terms have the same degree, with
+$\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$, and since we have
+\[
+d\sigma=\sum_j(-1)^j\sigma_j,\qquad
+d\tau=\sum_k(-1)^k\tau_k,
+\]
+\[
+d\lambda(\sigma,\tau)=
+\sum(-1)^{j+k}\lambda(\sigma_j,\tau_k)
+\]
+is defined and gives the differential of the complex
+$\mathrm P^\bullet(A,B;\mathscr S)$. This being so, the maps
+\[
+{}'f:\lambda\to\lambda\circ f,\quad
+{}'g:\lambda\to\lambda\circ g,\quad
+{}'h:\lambda\to\lambda\circ h,\quad
+{}'h':\lambda\to\lambda\circ h'
+\]
+are all defined by virtue of the preceding remarks;
+${}^tf\circ{}'g$ and ${}^tg\circ{}'f$ are therefore homotopic to
+the identity, whence the desired isomorphism between the cohomology of
+$\mathrm C^\bullet(A,B;\mathscr S)$ and that of
+$\mathrm P^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{env}[11.8.7]
+\label{0.11.8.7}
+\emph{Remark}. The same reasoning as in
+(\hyperref[0.11.8.3]{11.8.3}), but applied to
+$\mathrm C_\bullet(A)$ and $\mathrm L_\bullet(A)$, shows that if $j$ and $p$
+are defined as in (\hyperref[0.11.8.1]{11.8.1}), $f=j\circ p$
+again satisfies a relation (\hyperref[0.11.8.3.1]{11.8.3.1}), with
+$|h(\sigma)|\subset|\sigma|$, from which we deduce, as in
+(\hyperref[0.11.8.5]{11.8.5}), an isomorphism of the cohomology of
+$\mathrm L^\bullet(A;\mathscr S)$ onto that of
+$\mathrm C^\bullet(A;\mathscr S)$, these two complexes being defined in the
+obvious way. This is the result whose proof is sketched in
+(G, I, 3.8.1).
+\end{env}
+
+\begin{env}[11.8.8]
+\label{0.11.8.8}
+Let us now return to the notation and hypotheses of
+(\hyperref[0.11.8.2]{11.8.2}), and consider a complex
+$\mathscr S^\bullet=(\mathscr S^k)$ of coefficient systems on
+$\Sigma(A)\times\Sigma(B)$: for each $(\sigma,\tau)$, the
+$\Gamma^k_{\sigma,\tau}$ thus form a complex of abelian groups
+$(k\in\mathbb Z)$, and we have the commutative diagrams
+\[
+\xymatrix{
+\Gamma^k_{\sigma,\tau}\ar[r]\ar[d] &
+\Gamma^{k+1}_{\sigma,\tau}\ar[d]\\
+\Gamma^k_{\sigma',\tau'}\ar[r] &
+\Gamma^{k+1}_{\sigma',\tau'}
+}
+\]
+----- French corrections on page 0\textsubscript{III} 44 -----
+[id 4956]
+OLD: \emph{Il existe une homotopie
+NEW: {Il existe une homotopie
+FRENCH CONTEXT (corrected): athrm L_\bullet(A)\otimes\mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
+tel que $p\circ j$ soit l'identité.
+\end{env}
+
+\oldpage[0\textsubscript{III}]{44}
+Avec ces notations :
+\begin{proposition}[11.8.3]
+\label{0.11.8.3-fr}
+{Il existe une homotopie
+$h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$,
+telle que $h(\sigma,\tau)$ soit combinaison linéaire de couples de simplexes
+$(\sigma_i,\tau_i)$ avec $|\sigma_i|\subset|\sigma|$,
+$|\tau_i|\sub
+
+[id 4957]
+OLD: \[
+h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),
+\]
+NEW: $h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$,
+FRENCH CONTEXT (corrected): \mathrm L_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$
+tel que $p\circ j$ soit l'identité.
+\end{env}
+
+\oldpage[0\textsubscript{III}]{44}
+Avec ces notations :
+\begin{proposition}[11.8.3]
+\label{0.11.8.3-fr}
+{Il existe une homotopie
+$h:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)\longrightarrow\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)$,
+telle que $h(\sigma,\tau)$ soit combinaison linéaire de couples de simplexes
+$(\sigma_i,\tau_i)$ avec $|\sigma_i|\subset|\sigma|$,
+$|\tau_i|\subset|\tau|$, et que l'on ait pour $f=j\circ p$,}
+\[
+\label{0.11.8.3.1-fr}
+\tag{11.8.3.1}
+f-1=h\circ d+d\circ h.
+\]
+\
+
+[id 4958]
+OLD: \[
+\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau));
+\]
+NEW: $\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau))$;
+FRENCH CONTEXT (corrected): rc d+d\circ h.
+\]
+\end{proposition}
+
+\begin{proof}
+Il suffit de définir $h$ sur chaque couple $(\sigma,\tau)$ de simplexes, en
+raisonnant par récurrence sur la somme des degrés de $\sigma$ et $\tau$, car
+on peut prendre $h=0$ lorsque cette somme est $0$. Soit
+$\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau))$;
+en vertu de l'hypothèse de récurrence et de la définition de $d$, on a
+$\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$.
+On a
+\[
+d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-d(h(d(\sigma,\tau)))
+=h(d(d(\sigma,\tau)))=0
+\]
+en vertu de (\hyper
+
+[id 4959]
+OLD: \[
+\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|).
+\]
+NEW: $\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$.
+FRENCH CONTEXT (corrected): aisonnant par récurrence sur la somme des degrés de $\sigma$ et $\tau$, car
+on peut prendre $h=0$ lorsque cette somme est $0$. Soit
+$\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau))$;
+en vertu de l'hypothèse de récurrence et de la définition de $d$, on a
+$\omega\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$.
+On a
+\[
+d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-d(h(d(\sigma,\tau)))
+=h(d(d(\sigma,\tau)))=0
+\]
+en vertu de (\hyperref[0.11.8.3.1-fr]{11.8.3.1}) et de l'hypothèse de
+récurrence. Or, on a
+$H_q(\mathrm C_\bullet(A))=0$ pour $q>0$ (G, I, 3.7.4), donc aussi
+$H_q
+
+[id 4960]
+OLD: \[
+H_q(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))=0\quad(q>0),
+\]
+NEW: $H_q(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))=0$ pour $q>0$,
+FRENCH CONTEXT (corrected): |)$.
+On a
+\[
+d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-d(h(d(\sigma,\tau)))
+=h(d(d(\sigma,\tau)))=0
+\]
+en vertu de (\hyperref[0.11.8.3.1-fr]{11.8.3.1}) et de l'hypothèse de
+récurrence. Or, on a
+$H_q(\mathrm C_\bullet(A))=0$ pour $q>0$ (G, I, 3.7.4), donc aussi
+$H_q(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))=0$ pour $q>0$,
+en vertu de la formule de Künneth (G, I, 5.5.2). Appliquant cette remarque en
+remplaçant $A$ par $|\sigma|$ et $B$ par $|\tau|$, on voit qu'il existe un
+élément
+$\omega'$ de $\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$
+tel que $\omega=d\omega
+
+[id 4961]
+OLD: \[
+\omega'\in\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)
+\]
+NEW: $\omega'$ de $\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$
+FRENCH CONTEXT (corrected): >0$ (G, I, 3.7.4), donc aussi
+$H_q(\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B))=0$ pour $q>0$,
+en vertu de la formule de Künneth (G, I, 5.5.2). Appliquant cette remarque en
+remplaçant $A$ par $|\sigma|$ et $B$ par $|\tau|$, on voit qu'il existe un
+élément
+$\omega'$ de $\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|)$
+tel que $\omega=d\omega'$; prenant $h(\sigma,\tau)=\omega'$, on vérifie
+(\hyperref[0.11.8.3.1-fr]{11.8.3.1}) pour le couple $(\sigma,\tau)$ et la
+récurrence peut se poursuivre.
+\end{proof}
+
+\begin{env}[11.8.4]
+\label{0.11.8.4-fr}
+Les notations étant celles de
+
+[id 4963]
+OLD: \[
+\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}
+\quad\text{pour }(\sigma,\tau)\leq(\sigma',\tau'),
+\]
+NEW: $\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}$, pour $(\sigma,\tau)\leq(\sigma',\tau')$,
+FRENCH CONTEXT (corrected): emph{système de coefficients} $\mathscr S$ sur
+$\Sigma(A)\times\Sigma(B)$ est constitué par une famille
+$(\Gamma_{\sigma,\tau})$ de groupes abéliens, où
+$\Gamma_{\sigma,\tau}$ ne dépend que des ensembles $|\sigma|$ et $|\tau|$,
+et une famille d'homomorphismes
+$\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}$, pour $(\sigma,\tau)\leq(\sigma',\tau')$,
+formant un \emph{système inductif} pour cette relation de préordre. On définit alors
+un \emph{complexe de cochaînes} $\mathrm C^\bullet(A,B;\mathscr S)$ comme l'ensemble
+des familles $\lambda=(\lambda(\sigma,\tau))$, où $(\sigma,\tau)$ parcourt
+$\Sigma(A)\tim
+
+[id 4964]
+OLD: formant un système inductif
+NEW: formant un \emph{système inductif}
+FRENCH CONTEXT (corrected): e
+$(\Gamma_{\sigma,\tau})$ de groupes abéliens, où
+$\Gamma_{\sigma,\tau}$ ne dépend que des ensembles $|\sigma|$ et $|\tau|$,
+et une famille d'homomorphismes
+$\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}$, pour $(\sigma,\tau)\leq(\sigma',\tau')$,
+formant un \emph{système inductif} pour cette relation de préordre. On définit alors
+un \emph{complexe de cochaînes} $\mathrm C^\bullet(A,B;\mathscr S)$ comme l'ensemble
+des familles $\lambda=(\lambda(\sigma,\tau))$, où $(\sigma,\tau)$ parcourt
+$\Sigma(A)\times\Sigma(B)$, avec
+$\lambda(\sigma,
+
+[id 4965]
+OLD: un complexe de cochaînes
+NEW: un \emph{complexe de cochaînes}
+FRENCH CONTEXT (corrected): ue des ensembles $|\sigma|$ et $|\tau|$,
+et une famille d'homomorphismes
+$\Gamma_{\sigma,\tau}\longrightarrow\Gamma_{\sigma',\tau'}$, pour $(\sigma,\tau)\leq(\sigma',\tau')$,
+formant un \emph{système inductif} pour cette relation de préordre. On définit alors
+un \emph{complexe de cochaînes} $\mathrm C^\bullet(A,B;\mathscr S)$ comme l'ensemble
+des familles $\lambda=(\lambda(\sigma,\tau))$, où $(\sigma,\tau)$ parcourt
+$\Sigma(A)\times\Sigma(B)$, avec
+$\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$ pour tout couple
+$(\sigma,\tau)$. La différentielle 
+
+[id 4967]
+OLD: \[
+d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i),
+\]
+NEW: $d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i)$,
+FRENCH CONTEXT (corrected): comme l'ensemble
+des familles $\lambda=(\lambda(\sigma,\tau))$, où $(\sigma,\tau)$ parcourt
+$\Sigma(A)\times\Sigma(B)$, avec
+$\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$ pour tout couple
+$(\sigma,\tau)$. La différentielle est donnée de la façon suivante : si
+$d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i)$,
+on a $|\sigma_i|\subset|\sigma|$, $|\tau_i|\subset|\tau|$ pour tout $i$, et
+l'on prend
+\[
+d\lambda(\sigma,\tau)=\sum_i\pm\lambda_i(\sigma_i,\tau_i),
+\]
+où $\lambda_i(\sigma_i,\tau_i)$ désigne l'image canonique de
+$\lambda(\sigma_i,\tau_i)$ dans $\Gamma_{\sigm
+
+[id 4969]
+OLD: \[
+\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau),
+\qquad
+\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)
+\]
+NEW: $\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau)$ et
+$\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)$
+FRENCH CONTEXT (corrected): bda(\sigma_i,\tau_i)$ dans $\Gamma_{\sigma,\tau}$.
+
+Nous dirons qu'une cochaîne $\lambda\in\mathrm C^\bullet(A,B;\mathscr S)$ est
+\emph{bi-alternée} si $\lambda(\sigma,\tau)=0$ lorsque l'un des deux
+simplexes $\sigma$, $\tau$ a deux termes égaux, et si l'on a
+$\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau)$ et
+$\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)$
+pour des permutations quelconques $\pi$, $\pi'$ des indices. Il est clair
+que ces cochaînes engendrent un \emph{sous-complexe}
+$\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5-f
+
+[id 4970]
+OLD: engendrent un sous-complexe
+NEW: engendrent un \emph{sous-complexe}
+FRENCH CONTEXT (corrected):  deux termes égaux, et si l'on a
+$\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau)$ et
+$\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)$
+pour des permutations quelconques $\pi$, $\pi'$ des indices. Il est clair
+que ces cochaînes engendrent un \emph{sous-complexe}
+$\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5-fr}
+{L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+définit un isomor
+
+[id 4971]
+OLD: $\mathrm L^\bullet(A,B;\Gamma)$ de $\mathrm C^\bullet(A,B;\Gamma)$.
+NEW: $\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+FRENCH CONTEXT (corrected): lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau)$ et
+$\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau)$
+pour des permutations quelconques $\pi$, $\pi'$ des indices. Il est clair
+que ces cochaînes engendrent un \emph{sous-complexe}
+$\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5-fr}
+{L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+définit un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin
+
+[id 4972]
+OLD: \emph{L'injection canonique
+NEW: {L'injection canonique
+FRENCH CONTEXT (corrected): ur des permutations quelconques $\pi$, $\pi'$ des indices. Il est clair
+que ces cochaînes engendrent un \emph{sous-complexe}
+$\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5-fr}
+{L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+définit un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{1
+
+[id 4973]
+OLD: \[
+\mathrm L^\bullet(A,B;\Gamma)\longrightarrow
+\mathrm C^\bullet(A,B;\Gamma)
+\]
+NEW: $\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+FRENCH CONTEXT (corrected): lconques $\pi$, $\pi'$ des indices. Il est clair
+que ces cochaînes engendrent un \emph{sous-complexe}
+$\mathrm L^\bullet(A,B;\mathscr S)$ de $\mathrm C^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{proposition}[11.8.5]
+\label{0.11.8.5-fr}
+{L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+définit un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{11.8.2}), les applications
+${}^tp:\lambda\to\lambda\circ p$ et
+${}^tj:\lambda\to\lamb
+
+[id 4974]
+OLD: les applications
+\[
+{}'p:
+NEW: les applications
+${}^tp:
+FRENCH CONTEXT (corrected):  L^\bullet(A,B;\mathscr S)\longrightarrow\mathrm C^\bullet(A,B;\mathscr S)$
+définit un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{11.8.2}), les applications
+${}^tp:\lambda\to\lambda\circ p$ et
+${}^tj:\lambda\to\lambda\circ j$
+sont définies dans $\mathrm L^\bullet(A,B;\mathscr S)$ et
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectivement, la première n'étant autre
+que l'injection canonique. Comme ${}^tj\circ{}^tp$ est l'ident
+
+[id 4976]
+OLD: ,\qquad
+{}'j:
+NEW: $ et
+${}^tj:
+FRENCH CONTEXT (corrected):  C^\bullet(A,B;\mathscr S)$
+définit un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{11.8.2}), les applications
+${}^tp:\lambda\to\lambda\circ p$ et
+${}^tj:\lambda\to\lambda\circ j$
+sont définies dans $\mathrm L^\bullet(A,B;\mathscr S)$ et
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectivement, la première n'étant autre
+que l'injection canonique. Comme ${}^tj\circ{}^tp$ est l'identité, il
+suffit de démontrer que ${}^
+
+[id 4978]
+OLD: 
+\]
+sont définies dans
+NEW: $
+sont définies dans
+FRENCH CONTEXT (corrected): un isomorphisme pour la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{11.8.2}), les applications
+${}^tp:\lambda\to\lambda\circ p$ et
+${}^tj:\lambda\to\lambda\circ j$
+sont définies dans $\mathrm L^\bullet(A,B;\mathscr S)$ et
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectivement, la première n'étant autre
+que l'injection canonique. Comme ${}^tj\circ{}^tp$ est l'identité, il
+suffit de démontrer que ${}^tp\circ{}^tj$ est homotope à l'identité; or,
+
+[id 4979]
+OLD: $\mathrm L^\bullet(A,B;\Gamma)$ et
+$\mathrm C^\bullet(A,B;\Gamma)$ respectivement
+NEW: $\mathrm L^\bullet(A,B;\mathscr S)$ et
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectivement
+FRENCH CONTEXT (corrected): la cohomologie de ces deux complexes.}
+\end{proposition}
+
+\begin{proof}
+Notons que si $p$ et $j$ ont le sens défini dans
+(\hyperref[0.11.8.2-fr]{11.8.2}), les applications
+${}^tp:\lambda\to\lambda\circ p$ et
+${}^tj:\lambda\to\lambda\circ j$
+sont définies dans $\mathrm L^\bullet(A,B;\mathscr S)$ et
+$\mathrm C^\bullet(A,B;\mathscr S)$ respectivement, la première n'étant autre
+que l'injection canonique. Comme ${}^tj\circ{}^tp$ est l'identité, il
+suffit de démontrer que ${}^tp\circ{}^tj$ est homotope à l'identité; or,
+d'après (\hyperref[0.11.8.3-fr]{11.8.3}),
+${}^th:\lambda\to\lambda\circ h$ est \emph{défi
+
+[id 4984]
+OLD: $ est définie dans
+NEW: $ est \emph{définie} dans
+FRENCH CONTEXT (corrected): $ respectivement, la première n'étant autre
+que l'injection canonique. Comme ${}^tj\circ{}^tp$ est l'identité, il
+suffit de démontrer que ${}^tp\circ{}^tj$ est homotope à l'identité; or,
+d'après (\hyperref[0.11.8.3-fr]{11.8.3}),
+${}^th:\lambda\to\lambda\circ h$ est \emph{définie} dans
+$\mathrm C^\bullet(A,B;\mathscr S)$ et on peut donc transposer l'identité
+(\hyperref[0.11.8.3.1-fr]{11.8.3.1}), qui fournit le résultat cherché.
+\end{proof}
+
+\oldpage[0\textsubscript{III}]{45}
+\begin{env}[11.8.6]
+\label{0.11.8.6-fr}
+La proposition (\hyperref[
+
+=================== PAGE 0\textsubscript{III} 45 ===================
+----- (English page 0\textsubscript{III} 44: shown above in this file) -----
+----- (English page 0\textsubscript{III} 45: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 46 -----
+\oldpage[0\textsubscript{III}]{46}
+for $(\sigma,\tau)\leq(\sigma',\tau')$. Then one verifies immediately that $\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+is a bicomplex of abelian groups, and $\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+is a subbicomplex of it.
+\end{env}
+
+\begin{proposition}[11.8.9]
+\label{0.11.8.9}
+\emph{The canonical injection $\mathrm L^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
+defines an isomorphism on the cohomology of these two bicomplexes.}
+\end{proposition}
+
+\begin{proof}
+Set $\mathrm C^{\bullet\bullet}=
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$ and
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\mathscr S^\bullet)$ for simplicity, and note that
+since $\mathrm C^{hk}=\mathrm L^{hk}=0$ for $h<0$, the second spectral
+sequences of these bicomplexes are regular
+(\hyperref[0.11.3.3]{11.3.3}); the homomorphism
+$\mathrm L^{\bullet\bullet}\to\mathrm C^{\bullet\bullet}$ therefore gives a
+morphism of spectral sequences ${}''E(\mathrm L^{\bullet\bullet})\to
+{}''E(\mathrm C^{\bullet\bullet})$
+which, for the $E_2$ terms, reduces to
+\[
+\label{0.11.8.9.1}
+\tag{11.8.9.1}
+H^p_{\mathrm{II}}(H^q_{\mathrm I}(\mathrm L^{\bullet\bullet}))
+\longrightarrow
+H^p_{\mathrm{II}}(H^q_{\mathrm I}(\mathrm C^{\bullet\bullet})).
+\]
+But for every $k\in\mathbb Z$, it follows from
+(\hyperref[0.11.8.5]{11.8.5}) that the homomorphism
+$H^q_{\mathrm I}(\mathrm L^{\bullet,k})\to
+H^q_{\mathrm I}(\mathrm C^{\bullet,k})$ is bijective; the conclusion
+therefore follows from (\hyperref[0.11.1.5]{11.1.5}).
+\end{proof}
+
+\begin{env}[11.8.10]
+\label{0.11.8.10}
+Similarly, with the notation of (\hyperref[0.11.8.6]{11.8.6}), we have
+canonical homomorphisms of bicomplexes $\mathrm C^\bullet(A,B;\mathscr S^\bullet)\longrightarrow
+\mathrm P^\bullet(A,B;\mathscr S^\bullet)$
+(with the obvious notation), and the same reasoning as in
+(\hyperref[0.11.8.9]{11.8.9}), based this time on
+(\hyperref[0.11.8.6]{11.8.6}), shows that this homomorphism again gives
+an isomorphism in cohomology.
+\end{env}
+
+\subsection{A lemma on complexes of finite type}
+\label{subsection:0.11.9}
+
+\begin{proposition}[11.9.1]
+\label{0.11.9.1}
+Let $\boldsymbol{C}$ be an abelian category, and $\boldsymbol{K}'$ and $K''$ subsets of
+the set of objects of $\boldsymbol{C}$ such that $K''\subset K'$ and
+satisfying the following conditions:
+\begin{enumerate}
+\item[{\rm(i)}] \emph{For every object $A'\in\boldsymbol{K}'$ and every epimorphism
+$u:A\to A'$ in $\boldsymbol{C}$, there exist an object $B\in\boldsymbol{K}''$ and a morphism
+$v:B\to A$ such that $u\circ v$ is an epimorphism.}
+\item[{\rm(ii)}] \emph{For every pair of objects $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ and
+every epimorphism $u:A\to B$, $\operatorname{Ker}(u)$ belongs to $K'$.}
+\item[{\rm(iii)}] \emph{The product of two objects of $K''$ belongs to
+$K''$.}
+\end{enumerate}
+\emph{Let $P_\bullet=(P_i)_{i\in\mathbb Z}$ be a complex in $\boldsymbol{C}$
+such that $H_i(P_\bullet)\in\boldsymbol{K}'$ for every $i$ and such that there exists $d$
+with $H_i(P_\bullet)=0$ for $i<d$. Then there exist a complex
+$Q_\bullet=(Q_i)_{i\in\mathbb Z}$ in $\boldsymbol{C}$ such that $Q_i\in\boldsymbol{K}''$
+for every $i$ and $Q_i=0$ for $i<d$, and a morphism
+$u:Q_\bullet\to P_\bullet$ of complexes such that the corresponding morphism
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ is an isomorphism.}
+\end{proposition}
+
+\begin{proof}
+Let us first prove the following consequence of property (i):
+
+(i \emph{bis}) \emph{Let $u:C\to B$ be an epimorphism in $\boldsymbol{C}$, $A$ an
+object of $\boldsymbol{K}'$, and $v:A\to B$ a morphism in $\boldsymbol{C}$; then there exist an
+object $D\in\boldsymbol{K}''$, an epimorphism $u':D\to A$ and a morphism $v':D\to C$
+such that the diagram}
+\[
+\xymatrix{
+D\ar[r]^{u'}\ar[d]_{v'} & A\ar[d]^{v}\\
+C\ar[r]_{u} & B
+}
+\tag{11.9.1.1}\label{0.11.9.1.1}
+\]
+\emph{is commutative.}
+
+Indeed, consider the fibre product $C\times_B A$ in $\boldsymbol{C}$ and the
+canonical projections $p:C\times_B A\to C$, $q:C\times_B A\to A$, which make
+the diagram
+----- French corrections on page 0\textsubscript{III} 45 -----
+[id 4736]
+OLD: $\mathrm L^\bullet(A,B;\Gamma)$ à celui de la cohomologie de
+$\mathrm C^\bullet(A,B;\Gamma)$. Rappelons
+NEW: $\mathrm L^\bullet(A,B;\mathscr S)$ à celui de la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$. Rappelons
+FRENCH CONTEXT (corrected): ser l'identité
+(\hyperref[0.11.8.3.1-fr]{11.8.3.1}), qui fournit le résultat cherché.
+\end{proof}
+
+\oldpage[0\textsubscript{III}]{45}
+\begin{env}[11.8.6]
+\label{0.11.8.6-fr}
+La proposition (\hyperref[0.11.8.5-fr]{11.8.5}) ramène le calcul de la
+cohomologie de $\mathrm L^\bullet(A,B;\mathscr S)$ à celui de la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$. Rappelons d'autre part que cette dernière
+est, en vertu du th. d'Eilenberg-Zilber (G, I, 3.10.2), canoniquement
+isomorphe à la cohomologie du complexe de cochaînes défini comme suit : on
+forme le complexe de chaînes $\mathrm P_\bullet(A,B)$, constitué par les
+combinais
+
+[id 4737]
+OLD: aient le même degré;
+NEW: aient \emph{le même degré};
+FRENCH CONTEXT (corrected): canoniquement
+isomorphe à la cohomologie du complexe de cochaînes défini comme suit : on
+forme le complexe de chaînes $\mathrm P_\bullet(A,B)$, constitué par les
+combinaisons linéaires des $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ tels
+que $\sigma$ et $\tau$ aient \emph{le même degré}; la différentielle de ce complexe
+est donnée par
+$d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$ si
+$d\sigma=\sum_j(-1)^j\sigma_j$ et $d\tau=\sum_k(-1)^k\tau_k$;
+on a alors deux homomorphismes canoniques de complexes
+\[
+f:\mathrm P_\bullet(A,B)\
+
+[id 4738]
+OLD: est donnée par
+\[
+d(\sigma,\tau)=\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)
+\]
+si
+
+NEW: est donnée par
+$d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$ si
+
+FRENCH CONTEXT (corrected): înes défini comme suit : on
+forme le complexe de chaînes $\mathrm P_\bullet(A,B)$, constitué par les
+combinaisons linéaires des $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ tels
+que $\sigma$ et $\tau$ aient \emph{le même degré}; la différentielle de ce complexe
+est donnée par
+$d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$ si
+$d\sigma=\sum_j(-1)^j\sigma_j$ et $d\tau=\sum_k(-1)^k\tau_k$;
+on a alors deux homomorphismes canoniques de complexes
+\[
+f:\mathrm P_\bullet(A,B)\longrightarrow
+\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),\qquad
+g:\mathrm C_\bullet(A)\otimes\mathrm C_\bulle
+
+[id 4739]
+OLD: \[
+d\sigma=\sum_j(-1)^j\sigma_j,\qquad
+d\tau=\sum_k(-1)^k\tau_k;
+\]
+on a alors
+NEW: $d\sigma=\sum_j(-1)^j\sigma_j$ et $d\tau=\sum_k(-1)^k\tau_k$;
+on a alors
+FRENCH CONTEXT (corrected): , constitué par les
+combinaisons linéaires des $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ tels
+que $\sigma$ et $\tau$ aient \emph{le même degré}; la différentielle de ce complexe
+est donnée par
+$d:(\sigma,\tau)\leadsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k)$ si
+$d\sigma=\sum_j(-1)^j\sigma_j$ et $d\tau=\sum_k(-1)^k\tau_k$;
+on a alors deux homomorphismes canoniques de complexes
+\[
+f:\mathrm P_\bullet(A,B)\longrightarrow
+\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),\qquad
+g:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm P_\bullet(A,B),
+\]
+et on démontre (\emph{loc
+
+[id 4740]
+OLD: qu'il y a des homotopies $h$
+NEW: qu'il y a des \emph{homotopies} $h$
+FRENCH CONTEXT (corrected): omorphismes canoniques de complexes
+\[
+f:\mathrm P_\bullet(A,B)\longrightarrow
+\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B),\qquad
+g:\mathrm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm P_\bullet(A,B),
+\]
+et on démontre (\emph{loc. cit.}) qu'il y a des \emph{homotopies} $h$, $h'$ telles
+que
+\[
+f\circ g-1=d\circ h+h\circ d\qquad\text{et}\qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+En outre, on a
+$f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ et
+$g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$
+et
+
+[id 4742]
+OLD: En outre, on a
+\[
+f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|),\qquad
+g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)
+\]
+
+NEW: En outre, on a
+$f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ et
+$g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$
+
+FRENCH CONTEXT (corrected): rm C_\bullet(A)\otimes\mathrm C_\bullet(B)
+\longrightarrow\mathrm P_\bullet(A,B),
+\]
+et on démontre (\emph{loc. cit.}) qu'il y a des \emph{homotopies} $h$, $h'$ telles
+que
+\[
+f\circ g-1=d\circ h+h\circ d\qquad\text{et}\qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+En outre, on a
+$f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ et
+$g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$
+et les homotopies $h$, $h'$ \emph{peuvent être prises telles que}
+$h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+Ce point provient de ce que la définition de $h(
+
+[id 4743]
+OLD: $h'$ peuvent être prises telles que
+NEW: $h'$ \emph{peuvent être prises telles que}
+FRENCH CONTEXT (corrected): f\circ g-1=d\circ h+h\circ d\qquad\text{et}\qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+En outre, on a
+$f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ et
+$g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$
+et les homotopies $h$, $h'$ \emph{peuvent être prises telles que}
+$h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+Ce point provient de ce que la définition de $h(\sigma,\tau)$ et
+$h'(\sigma,\tau)$ peut se faire par \emph{récurr
+
+[id 4744]
+OLD: \[
+h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|),\qquad
+h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|).
+\]
+
+NEW: $h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+
+FRENCH CONTEXT (corrected): \qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+En outre, on a
+$f(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ et
+$g(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$
+et les homotopies $h$, $h'$ \emph{peuvent être prises telles que}
+$h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+Ce point provient de ce que la définition de $h(\sigma,\tau)$ et
+$h'(\sigma,\tau)$ peut se faire par \emph{récurrence} sur la somme des degrés de
+$\sigma$ et $\tau$, et de ce que les
+$H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H_q(\m
+
+[id 4745]
+OLD: par récurrence sur
+NEW: par \emph{récurrence} sur
+FRENCH CONTEXT (corrected): ises telles que}
+$h(\sigma,\tau)\in\mathrm C_\bullet(|\sigma|)
+\otimes\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+Ce point provient de ce que la définition de $h(\sigma,\tau)$ et
+$h'(\sigma,\tau)$ peut se faire par \emph{récurrence} sur la somme des degrés de
+$\sigma$ et $\tau$, et de ce que les
+$H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H_q(\mathrm P_\bullet(|\sigma|,|\tau|))$
+sont \emph{nuls} pour $q>0$ (\emph{loc. cit.}); on raisonne alors comme dans
+(\hyperref
+
+[id 4746]
+OLD: sont nuls pour $q>0$
+NEW: sont \emph{nuls} pour $q>0$
+FRENCH CONTEXT (corrected): nition de $h(\sigma,\tau)$ et
+$h'(\sigma,\tau)$ peut se faire par \emph{récurrence} sur la somme des degrés de
+$\sigma$ et $\tau$, et de ce que les
+$H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H_q(\mathrm P_\bullet(|\sigma|,|\tau|))$
+sont \emph{nuls} pour $q>0$ (\emph{loc. cit.}); on raisonne alors comme dans
+(\hyperref[0.11.8.3-fr]{11.8.3}) et la conclusion en résulte.
+
+On définit alors $\mathrm P^\bullet(A,B;\mathscr S)$ comme l'ensemble des
+familles $\lambda=(\lambda(\sigma,\tau))$ où $(\sigma,\tau)$ parcourt les
+
+[id 4748]
+OLD: et comme on a
+\[
+d\sigma=\sum_j(-1)^j\sigma_j,\qquad
+d\tau=\sum_k(-1)^k\tau_k,
+\]
+
+NEW: et comme on a
+$d\sigma=\sum_j(-1)^j\sigma_j\in\mathrm C_\bullet(|\sigma|)$ et
+$d\tau=\sum_k(-1)^k\tau_k\in\mathrm C_\bullet(|\tau|)$,
+
+FRENCH CONTEXT (corrected): lusion en résulte.
+
+On définit alors $\mathrm P^\bullet(A,B;\mathscr S)$ comme l'ensemble des
+familles $\lambda=(\lambda(\sigma,\tau))$ où $(\sigma,\tau)$ parcourt les
+couples dont les termes ont même degré, avec
+$\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$, et comme on a
+$d\sigma=\sum_j(-1)^j\sigma_j\in\mathrm C_\bullet(|\sigma|)$ et
+$d\tau=\sum_k(-1)^k\tau_k\in\mathrm C_\bullet(|\tau|)$,
+\[
+d\lambda(\sigma,\tau)=
+\sum(-1)^{j+k}\lambda(\sigma_j,\tau_k)
+\]
+est défini et donne la différentielle du complexe
+$\mathrm P^\bullet(A,B;\mathscr S)$. Cela étant, les applications
+${}^tf:\lambda\to\lambda\circ f$, ${}^tg:\lambda\to\lambda\circ g$,
+${}^th:\
+
+[id 4751]
+OLD: \[
+{}'f:\lambda\mapsto\lambda\circ f,\quad
+{}'g:\lambda\mapsto\lambda\circ g,\quad
+{}'h:\lambda\mapsto\lambda\circ h,\quad
+{}'h':\lambda\mapsto\lambda\circ h'
+\]
+
+NEW: ${}^tf:\lambda\to\lambda\circ f$, ${}^tg:\lambda\to\lambda\circ g$,
+${}^th:\lambda\to\lambda\circ h$ et ${}^th':\lambda\to\lambda\circ h'$
+
+FRENCH CONTEXT (corrected): ullet(|\sigma|)$ et
+$d\tau=\sum_k(-1)^k\tau_k\in\mathrm C_\bullet(|\tau|)$,
+\[
+d\lambda(\sigma,\tau)=
+\sum(-1)^{j+k}\lambda(\sigma_j,\tau_k)
+\]
+est défini et donne la différentielle du complexe
+$\mathrm P^\bullet(A,B;\mathscr S)$. Cela étant, les applications
+${}^tf:\lambda\to\lambda\circ f$, ${}^tg:\lambda\to\lambda\circ g$,
+${}^th:\lambda\to\lambda\circ h$ et ${}^th':\lambda\to\lambda\circ h'$
+sont toutes \emph{définies} en vertu des remarques qui précèdent;
+${}^tf\circ{}^tg$ et ${}^tg\circ{}^tf$ sont donc homotopes à
+l'identité, d'où l'isomorphisme cherché entre la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$ et celle de
+$\mathrm P^\bullet(A,
+
+[id 4752]
+OLD: sont toutes définies en vertu
+NEW: sont toutes \emph{définies} en vertu
+FRENCH CONTEXT (corrected): )
+\]
+est défini et donne la différentielle du complexe
+$\mathrm P^\bullet(A,B;\mathscr S)$. Cela étant, les applications
+${}^tf:\lambda\to\lambda\circ f$, ${}^tg:\lambda\to\lambda\circ g$,
+${}^th:\lambda\to\lambda\circ h$ et ${}^th':\lambda\to\lambda\circ h'$
+sont toutes \emph{définies} en vertu des remarques qui précèdent;
+${}^tf\circ{}^tg$ et ${}^tg\circ{}^tf$ sont donc homotopes à
+l'identité, d'où l'isomorphisme cherché entre la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$ et celle de
+$\mathrm P^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{en
+
+[id 4753]
+OLD: $\mathop{}'f\circ{}'g$ et $\mathop{}'g\circ{}'f$
+NEW: ${}^tf\circ{}^tg$ et ${}^tg\circ{}^tf$
+FRENCH CONTEXT (corrected): \bullet(A,B;\mathscr S)$. Cela étant, les applications
+${}^tf:\lambda\to\lambda\circ f$, ${}^tg:\lambda\to\lambda\circ g$,
+${}^th:\lambda\to\lambda\circ h$ et ${}^th':\lambda\to\lambda\circ h'$
+sont toutes \emph{définies} en vertu des remarques qui précèdent;
+${}^tf\circ{}^tg$ et ${}^tg\circ{}^tf$ sont donc homotopes à
+l'identité, d'où l'isomorphisme cherché entre la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$ et celle de
+$\mathrm P^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{env}[11.8.7]
+\label{0.11.8.7-fr}
+\emph{Remarque}. Le même raisonnement
+
+[id 4754]
+OLD: $\mathrm C^\bullet(A,B;\Gamma)$ et celle de
+$\mathrm P^\bullet(A,B;\Gamma)$.
+NEW: $\mathrm C^\bullet(A,B;\mathscr S)$ et celle de
+$\mathrm P^\bullet(A,B;\mathscr S)$.
+FRENCH CONTEXT (corrected): }^th:\lambda\to\lambda\circ h$ et ${}^th':\lambda\to\lambda\circ h'$
+sont toutes \emph{définies} en vertu des remarques qui précèdent;
+${}^tf\circ{}^tg$ et ${}^tg\circ{}^tf$ sont donc homotopes à
+l'identité, d'où l'isomorphisme cherché entre la cohomologie de
+$\mathrm C^\bullet(A,B;\mathscr S)$ et celle de
+$\mathrm P^\bullet(A,B;\mathscr S)$.
+\end{env}
+
+\begin{env}[11.8.7]
+\label{0.11.8.7-fr}
+\emph{Remarque}. Le même raisonnement que dans
+(\hyperref[0.11.8.3-fr]{11.8.3}), mais appliqué à
+$\mathrm C_\bullet(A)$ et $\mathrm L_\bullet(A)$, montre que si $j$ et $p$
+sont définis comme dans (\hyperref[0
+
+[id 4755]
+OLD: $\mathrm L^\bullet(A;\Gamma)$ sur celle de
+$\mathrm C^\bullet(A;\Gamma)$
+NEW: $\mathrm L^\bullet(A;\mathscr S)$ sur celle de
+$\mathrm C^\bullet(A;\mathscr S)$
+FRENCH CONTEXT (corrected): inis comme dans (\hyperref[0.11.8.1-fr]{11.8.1}), $f=j\circ p$
+vérifie encore une relation (\hyperref[0.11.8.3.1-fr]{11.8.3.1}), avec
+$|h(\sigma)|\subset|\sigma|$, d'où on déduit comme dans
+(\hyperref[0.11.8.5-fr]{11.8.5}) un isomorphisme de la cohomologie de
+$\mathrm L^\bullet(A;\mathscr S)$ sur celle de
+$\mathrm C^\bullet(A;\mathscr S)$, ces deux complexes étant définis de façon
+évidente. C'est le résultat dont la démonstration est esquissée dans
+(G, I, 3.8.1).
+\end{env}
+
+\begin{env}[11.8.8]
+\label{0.11.8.8-fr}
+Reprenons maintenant les notations et hypothèses de
+(\hyperref[0.11.8.2-fr]{11.8.
+
+[id 4756]
+OLD: considérons un complexe
+
+NEW: considérons un \emph{complexe}
+
+FRENCH CONTEXT (corrected): ux complexes étant définis de façon
+évidente. C'est le résultat dont la démonstration est esquissée dans
+(G, I, 3.8.1).
+\end{env}
+
+\begin{env}[11.8.8]
+\label{0.11.8.8-fr}
+Reprenons maintenant les notations et hypothèses de
+(\hyperref[0.11.8.2-fr]{11.8.2}), et considérons un \emph{complexe}
+$\mathscr S^\bullet=(\mathscr S^k)$ \emph{de systèmes de coefficients} sur
+$\Sigma(A)\times\Sigma(B)$ : pour chaque $(\sigma,\tau)$, les
+$\Gamma^k_{\sigma,\tau}$ forment donc un complexe de groupes abéliens
+$(k\in\mathbb Z)$, et on a les diagrammes commutatifs
+
+[id 4758]
+OLD: de systèmes de coefficients sur
+NEW: \emph{de systèmes de coefficients} sur
+FRENCH CONTEXT (corrected): t la démonstration est esquissée dans
+(G, I, 3.8.1).
+\end{env}
+
+\begin{env}[11.8.8]
+\label{0.11.8.8-fr}
+Reprenons maintenant les notations et hypothèses de
+(\hyperref[0.11.8.2-fr]{11.8.2}), et considérons un \emph{complexe}
+$\mathscr S^\bullet=(\mathscr S^k)$ \emph{de systèmes de coefficients} sur
+$\Sigma(A)\times\Sigma(B)$ : pour chaque $(\sigma,\tau)$, les
+$\Gamma^k_{\sigma,\tau}$ forment donc un complexe de groupes abéliens
+$(k\in\mathbb Z)$, et on a les diagrammes commutatifs
+\[
+\xymatrix{
+\Gamma^k_{\sigma,\tau}\ar[r]\ar[d] &
+\Gamma^{k+1}_{\sigma,\
+
+[id 5519]
+OLD: et de ce que les
+\[
+H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))
+\quad\text{et}\quad
+H_q(\mathrm P_\bullet(|\sigma|,|\tau|))
+\]
+
+NEW: et de ce que les
+$H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H_q(\mathrm P_\bullet(|\sigma|,|\tau|))$
+
+FRENCH CONTEXT (corrected): s\mathrm C_\bullet(|\tau|)$ \emph{et}
+$h'(\sigma,\tau)\in\mathrm P_\bullet(|\sigma|,|\tau|)$.
+Ce point provient de ce que la définition de $h(\sigma,\tau)$ et
+$h'(\sigma,\tau)$ peut se faire par \emph{récurrence} sur la somme des degrés de
+$\sigma$ et $\tau$, et de ce que les
+$H_q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H_q(\mathrm P_\bullet(|\sigma|,|\tau|))$
+sont \emph{nuls} pour $q>0$ (\emph{loc. cit.}); on raisonne alors comme dans
+(\hyperref[0.11.8.3-fr]{11.8.3}) et la conclusion en résulte.
+
+On définit alors $\mathrm P^\bullet(A,B;\mathscr S)$ comme l'ensemble des
+familles $\lambda=(\lambda(\sigma,\tau))$ où $
+
+[id 5520]
+OLD: et de ce que les
+\[
+H^q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))
+\quad\text{et}\quad
+H^q(\mathrm P_\bullet(|\sigma|,|\tau|))
+\]
+
+NEW: et de ce que les
+$H^q(\mathrm C_\bullet(|\sigma|)\otimes\mathrm C_\bullet(|\tau|))$ et
+$H^q(\mathrm P_\bullet(|\sigma|,|\tau|))$
+
+WHY: adapted to the corrected wording
+
+=================== PAGE 0\textsubscript{III} 46 ===================
+----- (English page 0\textsubscript{III} 45: shown above in this file) -----
+----- (English page 0\textsubscript{III} 46: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 47 -----
+\oldpage[0\textsubscript{III}]{47}
+\[
+\xymatrix{
+C\times_B A\ar[r]^{q}\ar[d]_{p} & A\ar[d]^{v}\\
+C\ar[r]_{u} & B
+}
+\tag{11.9.1.2}\label{0.11.9.1.2}
+\]
+commutative. We know ([27], p.~1-12) that the cokernel of $q$ is the
+quotient of $A$ by $v^{-1}(u(C))$; since $u$ is an epimorphism, $u(C)=B$ and
+$v^{-1}(u(C))=A$, so $q$ is an epimorphism; it then suffices to apply
+(i) to the epimorphism $q:C\times_B A\to A$: there exist an object
+$D\in\boldsymbol{K}''$ and a morphism $w:D\to C\times_B A$ such that $q\circ w$ is an
+epimorphism; we take $u'=q\circ w$, $v'=p\circ w$.
+
+This being so, to prove the proposition, we proceed by induction.
+Suppose that, for some $i\geq d-1$, the objects $Q_j$, the morphisms
+$d_j:Q_j\to Q_{j-1}$ and the morphisms $u_j:Q_j\to P_j$ have been
+constructed for $j\leq i$, in such a way that $Q_j=0$ for $j<d$,
+$d_{j-1}\circ d_j=0$ and
+$d_j\circ u_j=u_{j-1}\circ d_j$ for $j\leq i$; moreover, we suppose that
+the following conditions are satisfied:
+\begin{enumerate}
+\item[$(\mathrm I_i)$] We have $Q_j\in\boldsymbol{K}''$ for $j\leq i$ and
+$B_j(Q_\bullet)\in\boldsymbol{K}'$ for $j<i$.
+\item[$(\mathrm{II}_i)$] For $j<i$, the homomorphism
+$H_j(Q_\bullet)\to H_j(P_\bullet)$ deduced from the family $(u_k)_{k\leq i}$
+is an isomorphism.
+\item[$(\mathrm{III}_i)$] The composite morphism $v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+(where the left arrow is the restriction of $u_i$ and the right arrow
+the canonical morphism) is an epimorphism.
+\end{enumerate}
+Note that, by (ii), $Z_i(Q_\bullet)$, the kernel of the epimorphism
+$Q_i\to B_{i-1}(Q_\bullet)$, belongs to $\boldsymbol{K}'$ by virtue of hypothesis
+$(\mathrm I_i)$. We further deduce from (ii) that
+$N_i=\operatorname{Ker}(v_i)$ also belongs to $\boldsymbol{K}'$, taking into account
+hypothesis $(\mathrm{III}_i)$. By virtue of (i \emph{bis}), there exist a
+$Q'_{i+1}\in\boldsymbol{K}''$, an epimorphism $d'_{i+1}:Q'_{i+1}\to N_i$ and a
+morphism $u'_{i+1}:Q'_{i+1}\to P_{i+1}$ such that the diagram
+\[
+\xymatrix{
+Q'_{i+1}\ar[r]^{d'_{i+1}}\ar[d]_{u'_{i+1}} &
+N_i\ar[d]^{u_i}\\
+P_{i+1}\ar[r]_{d_{i+1}} & B_i(P_\bullet)
+}
+\tag{11.9.1.3}\label{0.11.9.1.3}
+\]
+is commutative.
+
+Since the canonical morphism $Z_{i+1}(P_\bullet)\to H_{i+1}(P_\bullet)$ is
+an epimorphism and $H_{i+1}(P_\bullet)\in\boldsymbol{K}'$ by hypothesis, it follows
+from (i) that there exist an object $Q''_{i+1}\in\boldsymbol{K}''$ and a morphism
+$u''_{i+1}:Q''_{i+1}\to Z_{i+1}(P_\bullet)$ such that the composite
+$Q''_{i+1}\to Z_{i+1}(P_\bullet)\to H_{i+1}(P_\bullet)$ is an
+epimorphism. If we take $d''_{i+1}:Q''_{i+1}\to N_i$ equal to $0$, the
+diagram
+\[
+\xymatrix{
+Q''_{i+1}\ar[r]^{d''_{i+1}}\ar[d]_{u''_{i+1}} &
+N_i\ar[d]^{u_i}\\
+Z_{i+1}(P_\bullet)\ar[r]_{d_{i+1}} & P_i
+}
+\tag{11.9.1.4}\label{0.11.9.1.4}
+\]
+is commutative, the lower horizontal arrow being $0$.
+----- French corrections on page 0\textsubscript{III} 46 -----
+[id 4759]
+OLD: aussitôt que
+\[
+\mathrm C^\bullet(A,B;\Gamma^\bullet)
+=\bigl(\mathrm C^h(A,B;\Gamma^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}
+\]
+
+NEW: aussitôt que
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+
+FRENCH CONTEXT (corrected): s commutatifs
+\[
+\xymatrix{
+\Gamma^k_{\sigma,\tau}\ar[r]\ar[d] &
+\Gamma^{k+1}_{\sigma,\tau}\ar[d]\\
+\Gamma^k_{\sigma',\tau'}\ar[r] &
+\Gamma^{k+1}_{\sigma',\tau'}
+}
+\]
+\oldpage[0\textsubscript{III}]{46}
+pour $(\sigma,\tau)\leq(\sigma',\tau')$. Alors on vérifie aussitôt que
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+est un \emph{bicomplexe} de groupes abéliens, et
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+en est un sous-bicomplexe.
+\end{env}
+
+\begin{proposition}[11.8.9]
+\label{0.11.8.9-fr}
+L'injection canonique
+$\mathrm L^\bull
+
+[id 4760]
+OLD: est un bicomplexe de groupes
+NEW: est un \emph{bicomplexe} de groupes
+FRENCH CONTEXT (corrected): amma^{k+1}_{\sigma',\tau'}
+}
+\]
+\oldpage[0\textsubscript{III}]{46}
+pour $(\sigma,\tau)\leq(\sigma',\tau')$. Alors on vérifie aussitôt que
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+est un \emph{bicomplexe} de groupes abéliens, et
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+en est un sous-bicomplexe.
+\end{env}
+
+\begin{proposition}[11.8.9]
+\label{0.11.8.9-fr}
+L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)\to
+\math
+
+[id 4761]
+OLD: abéliens, et
+\[
+\mathrm L^\bullet(A,B;\Gamma^\bullet)
+=\bigl(\mathrm L^h(A,B;\Gamma^k)\bigr)
+\]
+
+NEW: abéliens, et
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+
+FRENCH CONTEXT (corrected): page[0\textsubscript{III}]{46}
+pour $(\sigma,\tau)\leq(\sigma',\tau')$. Alors on vérifie aussitôt que
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm C^h(A,B;\mathscr S^k)\bigr)_{(h,k)\in\mathbb Z\times\mathbb Z}$
+est un \emph{bicomplexe} de groupes abéliens, et
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+en est un sous-bicomplexe.
+\end{env}
+
+\begin{proposition}[11.8.9]
+\label{0.11.8.9-fr}
+L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
+définit un isomorphisme pour la cohomologie de ces deux bicompl
+
+[id 4762]
+OLD: \emph{L'injection canonique
+\[
+\mathrm L^\bullet(A,B;\Gamma^\bullet)\longrightarrow
+\mathrm C^\bullet(A,B;\Gamma^\bullet)
+\]
+définit un isomorphisme pour la cohomologie de ces deux bicomplexes.}
+NEW: L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
+définit un isomorphisme pour la cohomologie de ces deux bicomplexes.
+FRENCH CONTEXT (corrected): )_{(h,k)\in\mathbb Z\times\mathbb Z}$
+est un \emph{bicomplexe} de groupes abéliens, et
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)
+=\bigl(\mathrm L^h(A,B;\mathscr S^k)\bigr)$
+en est un sous-bicomplexe.
+\end{env}
+
+\begin{proposition}[11.8.9]
+\label{0.11.8.9-fr}
+L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
+définit un isomorphisme pour la cohomologie de ces deux bicomplexes.
+\end{proposition}
+
+\begin{proof}
+Posons $\mathrm C^{\bullet\bullet}=
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$ et
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\mathscr S^\bullet)$ pour simplifier, et notons que
+puisque $\mathrm C^{hk}=\mathrm L^{hk}=0$
+
+[id 4763]
+OLD: \mathrm C^\bullet(A,B;\Gamma^\bullet)$ et
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\Gamma^\bullet)$ pour simplifier
+NEW: \mathrm C^\bullet(A,B;\mathscr S^\bullet)$ et
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\mathscr S^\bullet)$ pour simplifier
+FRENCH CONTEXT (corrected): 11.8.9-fr}
+L'injection canonique
+$\mathrm L^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$
+définit un isomorphisme pour la cohomologie de ces deux bicomplexes.
+\end{proposition}
+
+\begin{proof}
+Posons $\mathrm C^{\bullet\bullet}=
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$ et
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\mathscr S^\bullet)$ pour simplifier, et notons que
+puisque $\mathrm C^{hk}=\mathrm L^{hk}=0$ pour $h<0$, les secondes suites
+spectrales de ces bicomplexes sont \emph{régulières}
+(\hyperref[0.11.3.3-fr]{11.3.3}); l'homomorphisme
+$\mathrm L^{\bullet\bullet}\to\mathrm C^{\bullet\bullet}$ fournit d
+
+[id 4764]
+OLD: bicomplexes sont régulières
+NEW: bicomplexes sont \emph{régulières}
+FRENCH CONTEXT (corrected): ^{\bullet\bullet}=
+\mathrm C^\bullet(A,B;\mathscr S^\bullet)$ et
+$\mathrm L^{\bullet\bullet}=
+\mathrm L^\bullet(A,B;\mathscr S^\bullet)$ pour simplifier, et notons que
+puisque $\mathrm C^{hk}=\mathrm L^{hk}=0$ pour $h<0$, les secondes suites
+spectrales de ces bicomplexes sont \emph{régulières}
+(\hyperref[0.11.3.3-fr]{11.3.3}); l'homomorphisme
+$\mathrm L^{\bullet\bullet}\to\mathrm C^{\bullet\bullet}$ fournit donc un
+morphisme de suites spectrales
+${}''E(\mathrm L^{\bullet\bullet})\to
+{}''E(\mathrm C^{\bullet\bullet})$
+qui, pour les termes $E_2$, se 
+
+[id 4765]
+OLD: morphisme de suites spectrales
+\[
+{}''E(\mathrm L^{\bullet\bullet})\longrightarrow
+{}''E(\mathrm C^{\bullet\bullet})
+\]
+
+NEW: morphisme de suites spectrales
+${}''E(\mathrm L^{\bullet\bullet})\to
+{}''E(\mathrm C^{\bullet\bullet})$
+
+FRENCH CONTEXT (corrected): tons que
+puisque $\mathrm C^{hk}=\mathrm L^{hk}=0$ pour $h<0$, les secondes suites
+spectrales de ces bicomplexes sont \emph{régulières}
+(\hyperref[0.11.3.3-fr]{11.3.3}); l'homomorphisme
+$\mathrm L^{\bullet\bullet}\to\mathrm C^{\bullet\bullet}$ fournit donc un
+morphisme de suites spectrales
+${}''E(\mathrm L^{\bullet\bullet})\to
+{}''E(\mathrm C^{\bullet\bullet})$
+qui, pour les termes $E_2$, se réduit à
+\[
+\label{0.11.8.9.1-fr}
+\tag{11.8.9.1}
+H^p_{\mathrm{II}}(H^q_{\mathrm I}(\mathrm L^{\bullet\bullet}))
+\longrightarrow
+H^p_{\mathrm{II}}(H^q_{\mathrm I}(\mathrm C^{\bullet\bullet})).
+\]
+Mais pour tout $k\in\mathbb Z$, il
+
+[id 4766]
+OLD: est bijectif; la conclusion
+NEW: est \emph{bijectif}; la conclusion
+FRENCH CONTEXT (corrected): rightarrow
+H^p_{\mathrm{II}}(H^q_{\mathrm I}(\mathrm C^{\bullet\bullet})).
+\]
+Mais pour tout $k\in\mathbb Z$, il résulte de
+(\hyperref[0.11.8.5-fr]{11.8.5}) que l'homomorphisme
+$H^q_{\mathrm I}(\mathrm L^{\bullet,k})\to
+H^q_{\mathrm I}(\mathrm C^{\bullet,k})$ est \emph{bijectif}; la conclusion résulte
+donc de (\hyperref[0.11.1.5-fr]{11.1.5}).
+\end{proof}
+
+\begin{env}[11.8.10]
+\label{0.11.8.10-fr}
+De même, avec les notations de (\hyperref[0.11.8.6-fr]{11.8.6}), on a des
+homomorphismes canoniques de bicomplexes
+$\mathrm C^\bullet(A,B;\mathscr S^\bull
+
+[id 4767]
+OLD: canoniques de bicomplexes
+\[
+\mathrm C^\bullet(A,B;\Gamma^\bullet)\longrightarrow
+\mathrm P^\bullet(A,B;\Gamma^\bullet)
+\]
+
+NEW: canoniques de bicomplexes
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm P^\bullet(A,B;\mathscr S^\bullet)$
+
+FRENCH CONTEXT (corrected): hrm I}(\mathrm C^{\bullet,k})$ est \emph{bijectif}; la conclusion résulte
+donc de (\hyperref[0.11.1.5-fr]{11.1.5}).
+\end{proof}
+
+\begin{env}[11.8.10]
+\label{0.11.8.10-fr}
+De même, avec les notations de (\hyperref[0.11.8.6-fr]{11.8.6}), on a des
+homomorphismes canoniques de bicomplexes
+$\mathrm C^\bullet(A,B;\mathscr S^\bullet)\to
+\mathrm P^\bullet(A,B;\mathscr S^\bullet)$
+(avec des notations évidentes), et le même raisonnement que dans
+(\hyperref[0.11.8.9-fr]{11.8.9}), basé cette fois sur
+(\hyperref[0.11.8.6-fr]{11.8.6}), montre que cet homomorphisme donne encore
+un \emph{isomorphisme} en cohomologie.
+\end{env}
+
+\subsection{Un 
+
+[id 4768]
+OLD: un isomorphisme en cohomologie.
+NEW: un \emph{isomorphisme} en cohomologie.
+FRENCH CONTEXT (corrected): mathscr S^\bullet)\to
+\mathrm P^\bullet(A,B;\mathscr S^\bullet)$
+(avec des notations évidentes), et le même raisonnement que dans
+(\hyperref[0.11.8.9-fr]{11.8.9}), basé cette fois sur
+(\hyperref[0.11.8.6-fr]{11.8.6}), montre que cet homomorphisme donne encore
+un \emph{isomorphisme} en cohomologie.
+\end{env}
+
+\subsection{Un lemme sur les complexes de type fini}
+\label{subsection:0.11.9-fr}
+
+\begin{proposition}[11.9.1]
+\label{0.11.9.1-fr}
+Soient $\boldsymbol{C}$ une catégorie abélienne, $\boldsymbol{K}'$ et $\boldsymbol{K}''$ des parties de
+l'ensemble de
+
+[id 4769]
+OLD: Soient $\mathcal C$ une catégorie abélienne, $K'$ et $K''$ des parties de
+l'ensemble des objets de $\mathcal C$, telles que $K''\subset K'$, et
+NEW: Soient $\boldsymbol{C}$ une catégorie abélienne, $\boldsymbol{K}'$ et $\boldsymbol{K}''$ des parties de
+l'ensemble des objets de $\boldsymbol{C}$, telles que $\boldsymbol{K}''\subset\boldsymbol{K}'$, et
+FRENCH CONTEXT (corrected): ur
+(\hyperref[0.11.8.6-fr]{11.8.6}), montre que cet homomorphisme donne encore
+un \emph{isomorphisme} en cohomologie.
+\end{env}
+
+\subsection{Un lemme sur les complexes de type fini}
+\label{subsection:0.11.9-fr}
+
+\begin{proposition}[11.9.1]
+\label{0.11.9.1-fr}
+Soient $\boldsymbol{C}$ une catégorie abélienne, $\boldsymbol{K}'$ et $\boldsymbol{K}''$ des parties de
+l'ensemble des objets de $\boldsymbol{C}$, telles que $\boldsymbol{K}''\subset\boldsymbol{K}'$, et
+vérifiant les conditions suivantes :
+\begin{enumerate}
+\item[{\rm(i)}] Pour tout objet $A'\in\boldsymbol{K}'$ et tout épimorphisme
+$u:A\to A'$ dans $\boldsymbol{C}$, il existe un objet $B\in\boldsymbol{K}''$ et un morphisme
+$v:B\to A$ tels que $uv$ soit un ép
+
+[id 4770]
+OLD: \item[{\rm(i)}] \emph{Pour tout objet $A'\in K'$ et tout épimorphisme
+$u:A\to A'$ dans $\mathcal C$, il existe un objet $B\in K''$ et un morphisme
+$v:B\to A$ tels que $u\circ v$ soit un épimorphisme.}
+NEW: \item[{\rm(i)}] Pour tout objet $A'\in\boldsymbol{K}'$ et tout épimorphisme
+$u:A\to A'$ dans $\boldsymbol{C}$, il existe un objet $B\in\boldsymbol{K}''$ et un morphisme
+$v:B\to A$ tels que $uv$ soit un épimorphisme.
+FRENCH CONTEXT (corrected): }
+Soient $\boldsymbol{C}$ une catégorie abélienne, $\boldsymbol{K}'$ et $\boldsymbol{K}''$ des parties de
+l'ensemble des objets de $\boldsymbol{C}$, telles que $\boldsymbol{K}''\subset\boldsymbol{K}'$, et
+vérifiant les conditions suivantes :
+\begin{enumerate}
+\item[{\rm(i)}] Pour tout objet $A'\in\boldsymbol{K}'$ et tout épimorphisme
+$u:A\to A'$ dans $\boldsymbol{C}$, il existe un objet $B\in\boldsymbol{K}''$ et un morphisme
+$v:B\to A$ tels que $uv$ soit un épimorphisme.
+\item[{\rm(ii)}] Pour tout couple d'objets $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $\boldsymbol{K}'$.
+\item[{\rm(iii)}] Le produit de deux objets de $\boldsymbol{K}''$ appartient à
+$\b
+
+[id 4771]
+OLD: \item[{\rm(ii)}] \emph{Pour tout couple d'objets $A\in K'$, $B\in K'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $K'$.}
+NEW: \item[{\rm(ii)}] Pour tout couple d'objets $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $\boldsymbol{K}'$.
+FRENCH CONTEXT (corrected): es conditions suivantes :
+\begin{enumerate}
+\item[{\rm(i)}] Pour tout objet $A'\in\boldsymbol{K}'$ et tout épimorphisme
+$u:A\to A'$ dans $\boldsymbol{C}$, il existe un objet $B\in\boldsymbol{K}''$ et un morphisme
+$v:B\to A$ tels que $uv$ soit un épimorphisme.
+\item[{\rm(ii)}] Pour tout couple d'objets $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $\boldsymbol{K}'$.
+\item[{\rm(iii)}] Le produit de deux objets de $\boldsymbol{K}''$ appartient à
+$\boldsymbol{K}''$.
+\end{enumerate}
+Soit $P_\bullet=(P_i)_{i\in\mathbb Z}$ un complexe dans $\boldsymbol{C}$,
+tel que $H_i(P_\bullet)\in\boldsymbol{K}'$ pour tout $i$, et qu'il exi
+
+[id 4772]
+OLD: \item[{\rm(iii)}] \emph{Le produit de deux objets de $K''$ appartient à
+$K''$.}
+NEW: \item[{\rm(iii)}] Le produit de deux objets de $\boldsymbol{K}''$ appartient à
+$\boldsymbol{K}''$.
+FRENCH CONTEXT (corrected): in\boldsymbol{K}''$ et un morphisme
+$v:B\to A$ tels que $uv$ soit un épimorphisme.
+\item[{\rm(ii)}] Pour tout couple d'objets $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $\boldsymbol{K}'$.
+\item[{\rm(iii)}] Le produit de deux objets de $\boldsymbol{K}''$ appartient à
+$\boldsymbol{K}''$.
+\end{enumerate}
+Soit $P_\bullet=(P_i)_{i\in\mathbb Z}$ un complexe dans $\boldsymbol{C}$,
+tel que $H_i(P_\bullet)\in\boldsymbol{K}'$ pour tout $i$, et qu'il existe $d$ tel que
+$H_i(P_\bullet)=0$ pour $i<d$. Alors il existe un complexe
+$Q_\bullet=(Q_i)_{i\in\m
+
+[id 4773]
+OLD: \emph{Soit $P_\bullet=(P_i)_{i\in\mathbb Z}$ un complexe dans $\mathcal C$,
+tel que $H_i(P_\bullet)\in K'$ pour tout $i$, et qu'il existe $d$ tel que
+$H_i(P_\bullet)=0$ pour $i<d$. Alors il existe un complexe
+$Q_\bullet=(Q_i)_{i\in\mathbb Z}$ dans $\mathcal C$, tel que $Q_i\in K''$
+pour tout $i$ et $Q_i=0$ pour $i<d$, et un morphisme
+$u:Q_\bullet\to P_\bullet$ de complexes tel que le morphisme correspondant
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ soit un isomorphisme.}
+NEW: Soit $P_\bullet=(P_i)_{i\in\mathbb Z}$ un complexe dans $\boldsymbol{C}$,
+tel que $H_i(P_\bullet)\in\boldsymbol{K}'$ pour tout $i$, et qu'il existe $d$ tel que
+$H_i(P_\bullet)=0$ pour $i<d$. Alors il existe un complexe
+$Q_\bullet=(Q_i)_{i\in\mathbb Z}$ dans $\boldsymbol{C}$ tel que $Q_i\in\boldsymbol{K}''$
+pour tout $i$ et $Q_i=0$ pour $i<d$, et un morphisme
+$u:Q_\bullet\to P_\bullet$ de complexes tel que le morphisme correspondant
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ soit un isomorphisme.
+FRENCH CONTEXT (corrected): e d'objets $A\in\boldsymbol{K}'$, $B\in\boldsymbol{K}'$ et
+tout épimorphisme $u:A\to B$, $\operatorname{Ker}(u)$ appartient à $\boldsymbol{K}'$.
+\item[{\rm(iii)}] Le produit de deux objets de $\boldsymbol{K}''$ appartient à
+$\boldsymbol{K}''$.
+\end{enumerate}
+Soit $P_\bullet=(P_i)_{i\in\mathbb Z}$ un complexe dans $\boldsymbol{C}$,
+tel que $H_i(P_\bullet)\in\boldsymbol{K}'$ pour tout $i$, et qu'il existe $d$ tel que
+$H_i(P_\bullet)=0$ pour $i<d$. Alors il existe un complexe
+$Q_\bullet=(Q_i)_{i\in\mathbb Z}$ dans $\boldsymbol{C}$ tel que $Q_i\in\boldsymbol{K}''$
+pour tout $i$ et $Q_i=0$ pour $i<d$, et un morphisme
+$u:Q_\bullet\to P_\bullet$ de complexes tel que le morphisme correspondant
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ soit un isomorphisme.
+\end{proposition}
+
+\begin{proof}
+Démontrons d'abord la conséquence suivante de la propriété (i) :
+
+(i \emph{bis}) \emph{Soient $u:C\to B$ un épimorphisme dans $\boldsymbol{C}$, $A$ un
+objet de $\boldsymbol{K}'$, $v:A\to B$ un morphisme dans $\boldsymbol{C}$; 
+
+[id 4775]
+OLD: épimorphisme dans $\mathcal C$, $A$ un
+objet de $K'$, $v:A\to B$ un morphisme dans $\mathcal C$; il existe alors un
+objet $D\in K''$, un épimorphisme
+NEW: épimorphisme dans $\boldsymbol{C}$, $A$ un
+objet de $\boldsymbol{K}'$, $v:A\to B$ un morphisme dans $\boldsymbol{C}$; il existe alors un
+objet $D\in\boldsymbol{K}''$, un épimorphisme
+FRENCH CONTEXT (corrected): $ de complexes tel que le morphisme correspondant
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ soit un isomorphisme.
+\end{proposition}
+
+\begin{proof}
+Démontrons d'abord la conséquence suivante de la propriété (i) :
+
+(i \emph{bis}) \emph{Soient $u:C\to B$ un épimorphisme dans $\boldsymbol{C}$, $A$ un
+objet de $\boldsymbol{K}'$, $v:A\to B$ un morphisme dans $\boldsymbol{C}$; il existe alors un
+objet $D\in\boldsymbol{K}''$, un épimorphisme $u':D\to A$ et un morphisme $v':D\to C$
+tels que le diagramme}
+\[
+\xymatrix{
+D\ar[r]^{u'}\ar[d]_{v'} & A\ar[d]^{v}\\
+C\ar[r]_{u} & B
+}
+\tag{11.9.1.1}\label{0.11.9.1.1-fr}
+\]
+\emph{soit commutatif.}
+
+Considérons en effet le produit fibré $C\times_B A$ dans $\b
+
+=================== PAGE 0\textsubscript{III} 47 ===================
+----- (English page 0\textsubscript{III} 46: shown above in this file) -----
+----- (English page 0\textsubscript{III} 47: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 48 -----
+\oldpage[0\textsubscript{III}]{48}
+Then take
+\[
+Q_{i+1}=Q'_{i+1}\times Q''_{i+1},\qquad
+d_{i+1}=d'_{i+1}+d''_{i+1},\qquad
+u_{i+1}=u'_{i+1}+u''_{i+1}.
+\]
+Since $d_{i+1}(Q_{i+1})=d'_{i+1}(Q_{i+1})=N_i\subset Z_i(Q_\bullet)$, we have
+$d_i\circ d_{i+1}=0$ and, with the usual notation,
+$B_i(Q_\bullet)=N_i$, which verifies $(\mathrm I_{i+1})$. The commutativity
+of the diagrams (\hyperref[0.11.9.1.3]{11.9.1.3}) and
+(\hyperref[0.11.9.1.4]{11.9.1.4}) shows that
+$d_{i+1}\circ u_{i+1}=u_i\circ d_{i+1}$. By definition of $N_i$, the
+morphism $H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\to H_i(P_\bullet)$
+deduced from the system of the $u_k$ ($k\leq i+1$) is the morphism deduced
+from $v_i$ by passage to the quotients, so it is an isomorphism since $v_i$
+is an epimorphism, whence $(\mathrm{II}_{i+1})$. Finally, we have
+$Q''_{i+1}\subset Z_{i+1}(Q_\bullet)$ by definition; the choice of
+$u''_{i+1}$ shows that the morphism $v_{i+1}:Z_{i+1}(Q_\bullet)\to Z_{i+1}(P_\bullet)
+\to H_{i+1}(P_\bullet)$
+is an epimorphism, since its restriction to $Q''_{i+1}$ already is, whence
+$(\mathrm{III}_{i+1})$. The induction can therefore be continued, and the
+proposition is proved.
+\end{proof}
+
+\begin{corollary}[11.9.2]
+\label{0.11.9.2}
+Let $A$ be a Noetherian ring (not necessarily commutative) and
+$P_\bullet=(P_i)_{i\in\mathbb Z}$ a complex of right $A$-modules. Suppose
+that the $H_i(P_\bullet)$ are $A$-modules of finite type and that there
+exists $d$ such that $H_i(P_\bullet)=0$ for $i<d$. Then there exist a
+complex $Q_\bullet=(Q_i)_{i\in\mathbb Z}$ formed of free right $A$-modules of
+finite rank, such that $Q_i=0$ for $i<d$, and a homomorphism
+$u:Q_\bullet\to P_\bullet$ of complexes such that the homomorphism
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ corresponding to $u$ is
+bijective.
+\end{corollary}
+
+\begin{proof}
+We apply (\hyperref[0.11.9.1]{11.9.1}), taking for $\mathcal C$ the
+category of right $A$-modules, and for $\boldsymbol{K}'$ (resp. $K''$) the set of
+$A$-modules of finite type (resp. the set of free $A$-modules of finite
+rank); the verification of conditions (i), (ii) and (iii) of
+(\hyperref[0.11.9.1]{11.9.1}) is immediate, taking into account the
+hypothesis that $A$ is Noetherian.
+\end{proof}
+
+\begin{env}[11.9.3]
+\label{0.11.9.3}
+\emph{Remarks}.
+\begin{enumerate}
+\item[{\rm(i)}] Under the conditions of
+(\hyperref[0.11.9.2]{11.9.2}), suppose moreover that the $P_i$ are flat
+right $A$-modules. Then, for every left $A$-module $M$,
+the homomorphism of complexes $u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
+again defines an isomorphism
+$H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
+H_\bullet(P_\bullet\otimes_A M)$ of the homology, as we will see in
+Chapter~III.
+\item[{\rm(ii)}] The conclusion of (\hyperref[0.11.9.2]{11.9.2}) is no
+longer necessarily true when $A$ is not assumed Noetherian; indeed,
+applying it to a complex reduced to $0$ except for a single term, we would
+conclude that every right $A$-module of finite type admits a resolution
+by free modules of finite type, which is not true in general
+(cf. Bourbaki, \emph{Alg. comm.}, chap.~I, \S~2, exerc.~6).
+
+However, instead of assuming $A$ Noetherian, we can assume only that
+the $H_i(P_\bullet)$ have a finite $\infty$-presentation (cf. Chapter~IV).
+\end{enumerate}
+\end{env}
+
+\subsection{Euler--Poincaré characteristic of a complex of modules of
+finite length}
+\label{subsection:0.11.10}
+
+\begin{env}[11.10.1]
+\label{0.11.10.1}
+Let $A$ be a ring (not necessarily commutative) and
+\[
+\label{0.11.10.1.1}
+\tag{11.10.1.1}
+M^\bullet:0\longrightarrow M^0\longrightarrow M^1
+\longrightarrow\ldots\longrightarrow M^n\longrightarrow0
+\]
+a complex of left $A$-modules of finite length. We call the
+\emph{Euler--Poincaré characteristic} of this complex the number
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 48 -----
+\section{Supplement on sheaf cohomology}
+\label{section:0.12}
+
+\subsection{Cohomology of sheaves of modules on ringed spaces}
+\label{subsection:0.12.1}
+
+\begin{env}[12.1.1]
+\label{0.12.1.1}
+----- French corrections on page 0\textsubscript{III} 47 -----
+[id 4778]
+OLD: tels que $q\circ w$ soit un épimorphisme; on
+prendra $u'=q\circ w$, $v'=p\circ w$.
+NEW: tels que $qw$ soit un épimorphisme; on
+prendra $u'=qw$, $v'=pw$.
+FRENCH CONTEXT (corrected):  par
+$v^{-1}(u(C))$; comme $u$ est un épimorphisme, $u(C)=B$ et
+$v^{-1}(u(C))=A$, donc $q$ est un épimorphisme; il suffit alors d'appliquer
+(i) à l'épimorphisme $q:C\times_B A\to A$ : il y a un objet $D\in\boldsymbol{K}''$ et un
+morphisme $w:D\to C\times_B A$ tels que $qw$ soit un épimorphisme; on
+prendra $u'=qw$, $v'=pw$.
+
+Cela étant, pour démontrer la proposition, procédons par récurrence.
+Supposons, pour un $i\geq d-1$, construits, pour $j\leq i$, les objets $Q_j$,
+les morphismes $d_j:Q_j\to Q_{j-1}$ et les morphismes $u_j:Q_j\to P_j$ de
+sorte que $Q_j=0$ pour $j<d$, que $d_
+
+[id 4780]
+OLD: On a $Q_j\in K''$ pour $j\leq i$ et
+$B_j(Q_\bullet)\in K'$ pour $j<i$.
+NEW: On a $Q_j\in\boldsymbol{K}''$ pour $j\leq i$ et
+$B_j(Q_\bullet)\in\boldsymbol{K}'$ pour $j<i$.
+FRENCH CONTEXT (corrected): \to Q_{j-1}$ et les morphismes $u_j:Q_j\to P_j$ de
+sorte que $Q_j=0$ pour $j<d$, que $d_{j-1}\circ d_j=0$ et
+$d_j\circ u_j=u_{j-1}\circ d_j$ pour $j\leq i$; en outre, nous supposons
+vérifiées les conditions suivantes :
+\begin{enumerate}
+\item[$(\mathrm I_i)$] On a $Q_j\in\boldsymbol{K}''$ pour $j\leq i$ et
+$B_j(Q_\bullet)\in\boldsymbol{K}'$ pour $j<i$.
+\item[$(\mathrm{II}_i)$] Pour $j<i$, l'homomorphisme
+$H_j(Q_\bullet)\to H_j(P_\bullet)$ déduit de la famille $(u_k)_{k\leq i}$
+est un \emph{isomorphisme}.
+\item[$(\mathrm{III}_i)$] Le morphisme composé
+$v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+
+[id 4781]
+OLD: $(u_k)_{k\leq i}$
+est un isomorphisme.
+NEW: $(u_k)_{k\leq i}$
+est un \emph{isomorphisme}.
+FRENCH CONTEXT (corrected): ns suivantes :
+\begin{enumerate}
+\item[$(\mathrm I_i)$] On a $Q_j\in\boldsymbol{K}''$ pour $j\leq i$ et
+$B_j(Q_\bullet)\in\boldsymbol{K}'$ pour $j<i$.
+\item[$(\mathrm{II}_i)$] Pour $j<i$, l'homomorphisme
+$H_j(Q_\bullet)\to H_j(P_\bullet)$ déduit de la famille $(u_k)_{k\leq i}$
+est un \emph{isomorphisme}.
+\item[$(\mathrm{III}_i)$] Le morphisme composé
+$v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+(où la flèche de gauche est la restriction de $u_i$ et la flèche de droite
+le morphisme canonique) est un \emph{épimorphisme}.
+\end{enumerate}
+Notons que,
+
+[id 4782]
+OLD: Le morphisme composé
+\[
+v_i:Z_i(Q_\bullet)\longrightarrow Z_i(P_\bullet)
+\longrightarrow H_i(P_\bullet)
+\]
+
+NEW: Le morphisme composé
+$v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+
+FRENCH CONTEXT (corrected): dsymbol{K}''$ pour $j\leq i$ et
+$B_j(Q_\bullet)\in\boldsymbol{K}'$ pour $j<i$.
+\item[$(\mathrm{II}_i)$] Pour $j<i$, l'homomorphisme
+$H_j(Q_\bullet)\to H_j(P_\bullet)$ déduit de la famille $(u_k)_{k\leq i}$
+est un \emph{isomorphisme}.
+\item[$(\mathrm{III}_i)$] Le morphisme composé
+$v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+(où la flèche de gauche est la restriction de $u_i$ et la flèche de droite
+le morphisme canonique) est un \emph{épimorphisme}.
+\end{enumerate}
+Notons que, d'après (ii), $Z_i(Q_\bullet)$, noyau de l'épimorphisme
+$Q_i\to B_{i-1}(Q_\bullet)$, appartient à $\bolds
+
+[id 4783]
+OLD: le morphisme canonique) est un épimorphisme.
+NEW: le morphisme canonique) est un \emph{épimorphisme}.
+FRENCH CONTEXT (corrected): (P_\bullet)$ déduit de la famille $(u_k)_{k\leq i}$
+est un \emph{isomorphisme}.
+\item[$(\mathrm{III}_i)$] Le morphisme composé
+$v_i:Z_i(Q_\bullet)\to Z_i(P_\bullet)
+\to H_i(P_\bullet)$
+(où la flèche de gauche est la restriction de $u_i$ et la flèche de droite
+le morphisme canonique) est un \emph{épimorphisme}.
+\end{enumerate}
+Notons que, d'après (ii), $Z_i(Q_\bullet)$, noyau de l'épimorphisme
+$Q_i\to B_{i-1}(Q_\bullet)$, appartient à $\boldsymbol{K}'$ en vertu de l'hypothèse
+$(\mathrm I_i)$. On tire encore de (ii) que
+$N_i=\operatorname{Ker}(v_i)$ appartient aussi 
+
+[id 4790]
+OLD: \]
+est commutatif, la flèche horizontale inférieure étant $0$.
+
+NEW: \]
+
+FRENCH CONTEXT (corrected): }$ et les
+projections canoniques $p:C\times_B A\to C$, $q:C\times_B A\to A$, rendant
+commutatif le diagramme
+\oldpage[0\textsubscript{III}]{47}
+\[
+\xymatrix{
+C\times_B A\ar[r]^{q}\ar[d]_{p} & A\ar[d]^{v}\\
+C\ar[r]_{u} & B
+}
+\tag{11.9.1.2}\label{0.11.9.1.2-fr}
+\]
+On sait ([27], p.~1-12) que le conoyau de $q$ est le quotient de $A$ par
+$v^{-1}(u(C))$; comme $u$ est un épimorphisme, $u(C)=B$ et
+$v^{-1}(u(C))=A$, donc $q$ est un épimorphisme; il suffit alors d'appliquer
+(i) à l'épimorphisme $q:C\times_B A\to A$ : il y a u
+
+=================== PAGE 0\textsubscript{III} 48 ===================
+----- (English page 0\textsubscript{III} 47: shown above in this file) -----
+----- (English page 0\textsubscript{III} 48: shown above in this file) -----
+----- English, ega0/ega0-11.tex, page 0\textsubscript{III} 49 -----
+\oldpage[0\textsubscript{III}]{49}
+\[
+\label{0.11.10.1.2}
+\tag{11.10.1.2}
+\chi(M^\bullet)=\sum_{i=0}^{n}(-1)^i\operatorname{long}M^i.
+\]
+\end{env}
+
+\begin{proposition}[11.10.2]
+\label{0.11.10.2}
+\emph{For every finite complex $M^\bullet$ of left $A$-modules of finite
+length, we have $\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))$
+($H^\bullet(M^\bullet)$ being regarded as a complex with the trivial
+differential). In particular, if the sequence
+\textup{(\hyperref[0.11.10.1.1]{11.10.1.1})} is exact, we have
+$\chi(M^\bullet)=0$.}
+\end{proposition}
+
+\begin{proof}
+For brevity, set $B^i=B^i(M^\bullet)$, $Z^i=Z^i(M^\bullet)$,
+$H^i=H^i(M^\bullet)=Z^i/B^i$; the $B^i$, $Z^i$, $H^i$ are of finite
+length. From the exact sequences
+\[
+0\longrightarrow B^i\longrightarrow Z^i\longrightarrow H^i
+\longrightarrow0,
+\qquad
+0\longrightarrow Z^i\longrightarrow M^i\longrightarrow B^{i+1}
+\longrightarrow0
+\]
+we obtain the relations
+\[
+\operatorname{long}(Z^i)=\operatorname{long}(H^i)+
+\operatorname{long}(B^i),
+\qquad
+\operatorname{long}(M^i)=\operatorname{long}(Z^i)+
+\operatorname{long}(B^{i+1}),
+\]
+whence
+\[
+\operatorname{long}(M^i)-\operatorname{long}(H^i)=
+\operatorname{long}(B^{i+1})+\operatorname{long}(B^i)
+\]
+Multiplying this relation by $(-1)^i$ and summing the relations
+obtained for $0\leq i\leq n$; noting that
+$B^0=B^{n+1}=0$, we obtain the desired equality.
+\end{proof}
+
+\begin{corollary}[11.10.3]
+\label{0.11.10.3}
+Let $E=(E_r^{pq})$ be a spectral sequence in the category of modules over a
+ring $A$. Suppose that the $E_2^{pq}$ are $A$-modules of finite
+length and that there are only finitely many pairs $(p,q)$ such that
+$E_2^{pq}\neq0$. Then the Euler--Poincaré characteristics
+$\chi(E_r^{(\bullet)})$ of all the complexes
+$E_r^{(\bullet)}=(E_r^{(n)})_{n\in\mathbb Z}$
+\textup{(\hyperref[0.11.1.1]{11.1.1})} are all equal. If, moreover, the sequence
+$E$ is weakly convergent and if we set
+\[
+E_\infty^{(n)}=\bigoplus_{p+q=n}E_\infty^{pq}\quad(n\in\mathbb Z),
+\]
+we also have $\chi(E_\infty^{(\bullet)})=\chi(E_2^{(\bullet)})$,
+$E_\infty^{(\bullet)}=(E_\infty^{(n)})_{n\in\mathbb Z}$ being regarded as
+a complex with trivial differential.
+\end{corollary}
+
+\begin{proof}
+Note first that if $E_2^{pq}=0$, then $E_r^{pq}=0$ for
+$2\leq r\leq+\infty$, so all the complexes $E_r^{(\bullet)}$ are finite and
+formed of $A$-modules of finite length; the relation
+$\chi(E_r^{(\bullet)})=\chi(E_{r+1}^\bullet)$ for every finite $r$ therefore
+follows from (\hyperref[0.11.10.2]{11.10.2}) and from the isomorphism
+between $H^\bullet(E_r^{(\bullet)})$ and $E_{r+1}^\bullet$ (as complexes with
+trivial differential). The hypothesis that the $E_r^{pq}$ are of finite length
+implies that for every pair $(p,q)$, the sequences
+$(B_k(E_2^{pq}))_{k\geq2}$ and $(Z_k(E_2^{pq}))_{k\geq2}$ are stationary;
+the hypothesis that $E$ is weakly convergent and that $E_2^{pq}=0$ except
+for finitely many pairs $(p,q)$ therefore implies that there exists an
+integer $r\geq2$ such that $E_\infty^{pq}=E_r^{pq}$ for every pair $(p,q)$;
+whence the assertion concerning $\chi(E_\infty^{(\bullet)})$.
+\end{proof}
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 49 -----
+\oldpage[0\textsubscript{III}]{49}
+Let $(X,\sh{O}_X)$ be a ringed space.
+Recall that, for every $\sh{O}_X$-Module $\sh{F}$, one defines the
+cohomology $\HH^\bullet(X,\sh{F})$, which is a universal cohomological
+functor (T, 2.2) from the category $\cat{C}(X)$ of
+$\sh{O}_X$-Modules to the category of abelian groups; it is the derived
+functor of the left exact functor
+\[
+  \sh{F}\longmapsto\Gamma(X,\sh{F}).
+\]
+The functor $\HH^\bullet(X,\sh{F})$ is isomorphic
+----- French corrections on page 0\textsubscript{III} 48 -----
+[id 4792]
+OLD: Prenons alors
+\[
+Q_{i+1}=Q'_{i+1}\times Q''_{i+1},\qquad
+d_{i+1}=d'_{i+1}+d''_{i+1},\qquad
+u_{i+1}=u'_{i+1}+u''_{i+1}.
+\]
+
+NEW: Prenons alors $Q_{i+1}=Q'_{i+1}\times Q''_{i+1}$,
+qui appartient à $\boldsymbol{K}''$ en vertu de (iii), et
+$d_{i+1}=d'_{i+1}+d''_{i+1}$, $u_{i+1}=u'_{i+1}+u''_{i+1}$.
+
+FRENCH CONTEXT (corrected): me
+\[
+\xymatrix{
+Q''_{i+1}\ar[r]^{d''_{i+1}}\ar[d]_{u''_{i+1}} &
+N_i\ar[d]^{u_i}\\
+Z_{i+1}(P_\bullet)\ar[r]_{d_{i+1}} & P_i
+}
+\tag{11.9.1.4}\label{0.11.9.1.4-fr}
+\]
+\oldpage[0\textsubscript{III}]{48}
+est commutatif, la flèche horizontale inférieure étant $0$. Prenons alors $Q_{i+1}=Q'_{i+1}\times Q''_{i+1}$,
+qui appartient à $\boldsymbol{K}''$ en vertu de (iii), et
+$d_{i+1}=d'_{i+1}+d''_{i+1}$, $u_{i+1}=u'_{i+1}+u''_{i+1}$.
+Comme $d_{i+1}(Q_{i+1})=d'_{i+1}(Q_{i+1})=N_i\subset Z_i(Q_\bullet)$, on a
+$d_i\circ d_{i+1}=0$ et, avec les notations usuelles,
+$B_i(Q_\bullet)=N_i$, ce qui vérifie $(\mathrm I_{i+1})$. La commutativité
+des diagrammes (\hyperref[0.11.9.1.3-fr]{11.9.1.3}) et
+(
+
+[id 4794]
+OLD: morphisme
+\[
+H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\longrightarrow H_i(P_\bullet)
+\]
+
+NEW: morphisme
+$H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\to H_i(P_\bullet)$
+
+FRENCH CONTEXT (corrected): ns usuelles,
+$B_i(Q_\bullet)=N_i$, ce qui vérifie $(\mathrm I_{i+1})$. La commutativité
+des diagrammes (\hyperref[0.11.9.1.3-fr]{11.9.1.3}) et
+(\hyperref[0.11.9.1.4-fr]{11.9.1.4}) montre que
+$d_{i+1}\circ u_{i+1}=u_i\circ d_{i+1}$. Par définition de $N_i$, le
+morphisme
+$H_i(Q_\bullet)=Z_i(Q_\bullet)/N_i\to H_i(P_\bullet)$
+déduit du système des $u_k$ ($k\leq i+1$) est le morphisme déduit de $v_i$
+par passage aux quotients, donc c'est un isomorphisme puisque $v_i$ est un
+épimorphisme, d'où $(\mathrm{II}_{i+1})$. Enfin, on a
+$Q''_{i+1}\subset Z_{i+1}(Q_\bullet)$ par définition; le
+
+[id 4795]
+OLD: le morphisme
+\[
+v_{i+1}:Z_{i+1}(Q_\bullet)\longrightarrow Z_{i+1}(P_\bullet)
+\longrightarrow H_{i+1}(P_\bullet)
+\]
+
+NEW: le morphisme
+$v_{i+1}:Z_{i+1}(Q_\bullet)\to Z_{i+1}(P_\bullet)
+\to H_{i+1}(P_\bullet)$
+
+FRENCH CONTEXT (corrected): eq i+1$) est le morphisme déduit de $v_i$
+par passage aux quotients, donc c'est un isomorphisme puisque $v_i$ est un
+épimorphisme, d'où $(\mathrm{II}_{i+1})$. Enfin, on a
+$Q''_{i+1}\subset Z_{i+1}(Q_\bullet)$ par définition; le choix de
+$u''_{i+1}$ montre que le morphisme
+$v_{i+1}:Z_{i+1}(Q_\bullet)\to Z_{i+1}(P_\bullet)
+\to H_{i+1}(P_\bullet)$
+est un épimorphisme, sa restriction à $Q''_{i+1}$ l'étant déjà, d'où
+$(\mathrm{III}_{i+1})$. La récurrence peut donc se poursuivre, et la
+proposition est démontrée.
+\end{proof}
+
+\begin{corollary}[11.9.2]
+\label{0.11.9.2-fr}
+Soient $A$ un anneau noethérien (non
+
+[id 4796]
+OLD: pour $\mathcal C$ la
+catégorie des $A$-modules à droite, pour $K'$ (resp. $K''$) l'ensemble des
+NEW: pour $\boldsymbol{C}$ la
+catégorie des $A$-modules à droite, pour $\boldsymbol{K}'$ (resp. $\boldsymbol{K}''$) l'ensemble des
+FRENCH CONTEXT (corrected): i<d$, et un homomorphisme
+$u:Q_\bullet\to P_\bullet$ de complexes, tel que l'homomorphisme
+$H_\bullet(Q_\bullet)\to H_\bullet(P_\bullet)$ correspondant à $u$ soit
+bijectif.
+\end{corollary}
+
+\begin{proof}
+On applique (\hyperref[0.11.9.1-fr]{11.9.1}) en prenant pour $\boldsymbol{C}$ la
+catégorie des $A$-modules à droite, pour $\boldsymbol{K}'$ (resp. $\boldsymbol{K}''$) l'ensemble des
+$A$-modules de type fini (resp. l'ensemble des $A$-modules libres de rang
+fini); la vérification des conditions (i), (ii) et (iii) de
+(\hyperref[0.11.9.1-fr]{11.9.1}) est immédiate, compte tenu de l'hypothèse
+que $A$ est noethérien.
+\end{proof}
+
+\begin{env}[1
+
+[id 4797]
+OLD: à droite plats. Alors
+NEW: à droite \emph{plats}. Alors
+FRENCH CONTEXT (corrected): nu de l'hypothèse
+que $A$ est noethérien.
+\end{proof}
+
+\begin{env}[11.9.3]
+\label{0.11.9.3-fr}
+\emph{Remarques}.
+\begin{enumerate}
+\item[{\rm(i)}] Sous les conditions de
+(\hyperref[0.11.9.2-fr]{11.9.2}), supposons en outre que les $P_i$ soient des
+$A$-modules à droite \emph{plats}. Alors, pour tout $A$-module à gauche $M$,
+l'homomorphisme de complexes
+$u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
+définit encore un \emph{isomorphisme}
+$H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
+H_\bullet(P_\bullet\otimes_A M)$ de l'homologie
+
+[id 4798]
+OLD: l'homomorphisme de complexes
+\[
+u\otimes 1:Q_\bullet\otimes_A M\longrightarrow P_\bullet\otimes_A M
+\]
+
+NEW: l'homomorphisme de complexes
+$u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
+
+FRENCH CONTEXT (corrected): }[11.9.3]
+\label{0.11.9.3-fr}
+\emph{Remarques}.
+\begin{enumerate}
+\item[{\rm(i)}] Sous les conditions de
+(\hyperref[0.11.9.2-fr]{11.9.2}), supposons en outre que les $P_i$ soient des
+$A$-modules à droite \emph{plats}. Alors, pour tout $A$-module à gauche $M$,
+l'homomorphisme de complexes
+$u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
+définit encore un \emph{isomorphisme}
+$H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
+H_\bullet(P_\bullet\otimes_A M)$ de l'homologie comme nous le verrons au
+chap.~III.
+\item[{\rm(ii)}] La conclusion de (\hyperref[0.11.9.2-fr]{11.9.2}) n'est
+plus nécessair
+
+[id 4799]
+OLD: définit encore un isomorphisme
+
+NEW: définit encore un \emph{isomorphisme}
+
+FRENCH CONTEXT (corrected): les conditions de
+(\hyperref[0.11.9.2-fr]{11.9.2}), supposons en outre que les $P_i$ soient des
+$A$-modules à droite \emph{plats}. Alors, pour tout $A$-module à gauche $M$,
+l'homomorphisme de complexes
+$u\otimes 1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$
+définit encore un \emph{isomorphisme}
+$H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
+H_\bullet(P_\bullet\otimes_A M)$ de l'homologie comme nous le verrons au
+chap.~III.
+\item[{\rm(ii)}] La conclusion de (\hyperref[0.11.9.2-fr]{11.9.2}) n'est
+plus nécessairement exacte lorsqu'on ne suppose pas 
+
+[id 4801]
+OLD: ne suppose pas $A$ noethérien;
+NEW: ne suppose pas $A$ \emph{noethérien};
+FRENCH CONTEXT (corrected): {isomorphisme}
+$H_\bullet(Q_\bullet\otimes_A M)\xrightarrow{\sim}
+H_\bullet(P_\bullet\otimes_A M)$ de l'homologie comme nous le verrons au
+chap.~III.
+\item[{\rm(ii)}] La conclusion de (\hyperref[0.11.9.2-fr]{11.9.2}) n'est
+plus nécessairement exacte lorsqu'on ne suppose pas $A$ \emph{noethérien}; en
+effet, en l'appliquant à un complexe réduit à $0$ sauf pour un seul terme, on
+en conclurait que tout $A$-module à droite de type fini admet une \emph{résolution}
+par des modules libres de type fini, ce qui n'est pas vrai en général
+(cf. Bourbaki, \emph{Alg
+
+[id 4802]
+OLD: admet une résolution
+NEW: admet une \emph{résolution}
+FRENCH CONTEXT (corrected): usion de (\hyperref[0.11.9.2-fr]{11.9.2}) n'est
+plus nécessairement exacte lorsqu'on ne suppose pas $A$ \emph{noethérien}; en
+effet, en l'appliquant à un complexe réduit à $0$ sauf pour un seul terme, on
+en conclurait que tout $A$-module à droite de type fini admet une \emph{résolution}
+par des modules libres de type fini, ce qui n'est pas vrai en général
+(cf. Bourbaki, \emph{Alg. comm.}, chap.~I, \S~2, exerc.~6).
+
+Toutefois, au lieu de supposer $A$ noethérien, on peut supposer seulement que
+les $H_i(P_\bullet)$ ont une $\infty$-présentation
+
+[id 4803]
+OLD: un complexe de $A$-modules à gauche de longueur finie. On appelle
+NEW: un \emph{complexe} de $A$-modules à gauche de \emph{longueur finie}. On appelle
+FRENCH CONTEXT (corrected): .11.10-fr}
+
+\begin{env}[11.10.1]
+\label{0.11.10.1-fr}
+Soient $A$ un anneau (non nécessairement commutatif),
+\[
+\label{0.11.10.1.1-fr}
+\tag{11.10.1.1}
+M^\bullet:0\longrightarrow M^0\longrightarrow M^1
+\longrightarrow\ldots\longrightarrow M^n\longrightarrow0
+\]
+un \emph{complexe} de $A$-modules à gauche de \emph{longueur finie}. On appelle
+\emph{caractéristique d'Euler-Poincaré} de ce complexe le nombre
+\oldpage[0\textsubscript{III}]{49}
+\[
+\label{0.11.10.1.2-fr}
+\tag{11.10.1.2}
+\chi(M^\bullet)=\sum_{i=0}^{n}(-1)^i\operatorname{long}M^i.
+\]
+\end{env}
+
+\begin{proposition}[11.10.2]
+\label{0.11.10
+
+=================== PAGE 0\textsubscript{III} 49 ===================
+----- (English page 0\textsubscript{III} 48: shown above in this file) -----
+----- (English page 0\textsubscript{III} 49: shown above in this file) -----
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 50 -----
+\oldpage[0\textsubscript{III}]{50}
+to the restriction to the category $\cat{C}(X)$ of the cohomological
+functor defined in the same way on the category of sheaves of abelian
+groups on $X$ (G, II, 7.2.1).
+\end{env}
+
+\begin{env}[12.1.2]
+\label{0.12.1.2}
+Set $A=\Gamma(X,\sh{O}_X)$.
+Since every element of $A$ defines an endomorphism of the abelian group
+$\Gamma(X,\sh{F})$, it defines by functoriality an endomorphism of the
+$\partial$-functor $\HH^\bullet(X,\sh{F})$.
+These endomorphisms endow each $\HH^p(X,\sh{F})$ with an
+$A$-module structure, and the boundary operator $\partial$ is
+$A$-linear.
+Moreover, for any two nonnegative integers $p,q$ and any two
+$\sh{O}_X$-Modules $\sh{F},\sh{G}$, there is a homomorphism of
+$A$-modules, called the \emph{cup product},
+\[
+\label{0.12.1.2.1}
+\tag{12.1.2.1}
+  \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+  \longrightarrow
+  \HH^{p+q}\bigl(X,\sh{F}\otimes_{\sh{O}_X}\sh{G}\bigr)
+\]
+(G, II, 6.6).
+These homomorphisms make the direct sum $S$ of the
+$\HH^p(X,\sh{O}_X)$, for $p\geq0$, an anticommutative graded
+$A$-algebra, and the direct sum of the $\HH^p(X,\sh{F})$ a graded
+$S$-module.
+
+For every open covering $\mathfrak{U}$ of $X$, we shall always denote
+by $\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ (contrary to
+(G, II, 5.1)) the complex of alternating cochains of the nerve of
+$\mathfrak{U}$ with values in the coefficient system
+$\Gamma(U_\sigma,\sh{F})$.
+It is clear that
+$\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ is a graded
+$A$-\emph{module}, so that the cohomology groups
+$\check{\HH}^p(\mathfrak{U},\sh{F})$ of this complex are endowed with
+an $A$-module structure.
+Moreover, the canonical maps $\check{\HH}^p(\mathfrak{U},\sh{F})
+\longrightarrow
+\HH^p(X,\sh{F})$
+(G, II, 5.4) are $A$-linear.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3}
+Let $(X',\sh{O}_{X'})$ be a second ringed space, and let
+$f=(\psi,\theta)$ be a morphism from $X'$ to $X$.
+Set $A'=\Gamma(X',\sh{O}_{X'})$; the $\psi$-morphism $\theta$
+canonically defines a ring homomorphism $A\to A'$.
+Let $\sh{F}$ be an $\sh{O}_X$-Module and $\sh{F}'$ an
+$\sh{O}_{X'}$-Module.
+For every $f$-morphism $u:\sh{F}\to\sh{F}'$
+\sref[0\textsubscript{\mdseries I}]{0.4.4.1}, we shall see that one can define,
+for every $p\geq0$, a di-homomorphism
+\[
+\label{0.12.1.3.1}
+\tag{12.1.3.1}
+  u_p:\HH^p(X,\sh{F})\longrightarrow\HH^p(X',\sh{F}').
+\]
+
+Indeed, since $\psi^*$ is exact in the category of sheaves of abelian
+groups on $X$, the functor
+\[
+  \sh{F}\longmapsto\HH^\bullet(X',\psi^*(\sh{F}))
+\]
+is a $\partial$-functor on that category, and it is known that there is a
+canonical homomorphism of $\partial$-functors
+\[
+\label{0.12.1.3.2}
+\tag{12.1.3.2}
+  \HH^\bullet(X,\sh{F})
+  \longrightarrow
+  \HH^\bullet(X',\psi^*(\sh{F}))
+\]
+uniquely determined by the condition that, in degree $0$, it reduces
+to the canonical homomorphism $\Gamma(X,\sh{F})
+\longrightarrow
+\Gamma(X',\psi^*(\sh{F}))$
+(T, 3.2.2).
+Moreover, every element of $A$ determines an endomorphism $\mu$ of
+$\Gamma(X,\sh{F})$ and an endomorphism $\mu'$ of
+$\Gamma(X',\psi^*(\sh{F}))$ such that the diagram
+\[
+\label{0.12.1.3.3}
+\tag{12.1.3.3}
+  \xymatrix{
+    \Gamma(X,\sh{F})\ar[r]\ar[d]_\mu
+      & \Gamma(X',\psi^*(\sh{F}))\ar[d]^{\mu'}\\
+    \Gamma(X,\sh{F})\ar[r]
+      & \Gamma(X',\psi^*(\sh{F}))
+  }
+\]
+is commutative.
+----- French corrections on page 0\textsubscript{III} 49 -----
+[id 4806]
+OLD: \emph{Pour tout complexe fini $M^\bullet$ de $A$-modules à gauche de longueur
+finie, on a
+\[
+\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))
+\]
+($H^\bullet(M^\bullet)$ étant considéré comme un complexe pour la dérivation
+triviale). En particulier, si la suite
+(\hyperref[0.11.10.1.1-fr]{11.10.1.1}) est exacte, on a
+$\chi(M^\bullet)=0$.}
+NEW: Pour tout complexe fini $M^\bullet$ de $A$-modules à gauche de longueur
+finie, on a $\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))$
+($H^\bullet(M^\bullet)$ étant considéré comme un complexe pour la dérivation
+triviale). En particulier, si la suite
+(\hyperref[0.11.10.1.1-fr]{11.10.1.1}) est exacte, on a
+$\chi(M^\bullet)=0$.
+FRENCH CONTEXT (corrected): caractéristique d'Euler-Poincaré} de ce complexe le nombre
+\oldpage[0\textsubscript{III}]{49}
+\[
+\label{0.11.10.1.2-fr}
+\tag{11.10.1.2}
+\chi(M^\bullet)=\sum_{i=0}^{n}(-1)^i\operatorname{long}M^i.
+\]
+\end{env}
+
+\begin{proposition}[11.10.2]
+\label{0.11.10.2-fr}
+Pour tout complexe fini $M^\bullet$ de $A$-modules à gauche de longueur
+finie, on a $\chi(M^\bullet)=\chi(H^\bullet(M^\bullet))$
+($H^\bullet(M^\bullet)$ étant considéré comme un complexe pour la dérivation
+triviale). En particulier, si la suite
+(\hyperref[0.11.10.1.1-fr]{11.10.1.1}) est exacte, on a
+$\chi(M^\bullet)=0$.
+\end{proposition}
+
+\begin{proof}
+Posons pour abréger $B^i=B^i(M^\bullet)$, $Z^i=Z^i(M^\bullet)$,
+$H^i=H^i(M^\bullet)=Z^i/B^i$; les $B^i$, $Z^i$, $H^i$ sont de longueur
+finie. Des suites exactes
+\[
+0\longrightarrow B^i\longrightarrow Z^i\longrightarrow H^i
+\lo
+
+[id 4807]
+OLD: \longrightarrow0,
+\qquad
+0\longrightarrow Z^i
+NEW: \longrightarrow0
+\]
+\[
+0\longrightarrow Z^i
+FRENCH CONTEXT (corrected): 0$.
+\end{proposition}
+
+\begin{proof}
+Posons pour abréger $B^i=B^i(M^\bullet)$, $Z^i=Z^i(M^\bullet)$,
+$H^i=H^i(M^\bullet)=Z^i/B^i$; les $B^i$, $Z^i$, $H^i$ sont de longueur
+finie. Des suites exactes
+\[
+0\longrightarrow B^i\longrightarrow Z^i\longrightarrow H^i
+\longrightarrow0
+\]
+\[
+0\longrightarrow Z^i\longrightarrow M^i\longrightarrow B^{i+1}
+\longrightarrow0
+\]
+on tire les relations
+\[
+\operatorname{long}(Z^i)=\operatorname{long}(H^i)+
+\operatorname{long}(B^i)
+\]
+\[
+\operatorname{long}(M^i)=\operatorname{long}(Z^i)+
+\operatorname{long}(B^{i+1})
+\]
+d'où
+\[
+
+[id 4808]
+OLD: \operatorname{long}(B^i),
+\qquad
+\operatorname{long}(M^i)=\operatorname{long}(Z^i)+
+\operatorname{long}(B^{i+1}),
+\]
+NEW: \operatorname{long}(B^i)
+\]
+\[
+\operatorname{long}(M^i)=\operatorname{long}(Z^i)+
+\operatorname{long}(B^{i+1})
+\]
+FRENCH CONTEXT (corrected):  suites exactes
+\[
+0\longrightarrow B^i\longrightarrow Z^i\longrightarrow H^i
+\longrightarrow0
+\]
+\[
+0\longrightarrow Z^i\longrightarrow M^i\longrightarrow B^{i+1}
+\longrightarrow0
+\]
+on tire les relations
+\[
+\operatorname{long}(Z^i)=\operatorname{long}(H^i)+
+\operatorname{long}(B^i)
+\]
+\[
+\operatorname{long}(M^i)=\operatorname{long}(Z^i)+
+\operatorname{long}(B^{i+1})
+\]
+d'où
+\[
+\operatorname{long}(M^i)-\operatorname{long}(H^i)=
+\operatorname{long}(B^{i+1})+\operatorname{long}(B^i)
+\]
+Multiplions cette relation par $(-1)^i$ et faisons la somme des relations
+obtenues pour $0\leq i\leq n$; en notant que
+$B^0=B^{n+1}=0$, il vien
+
+[id 4811]
+OLD: $\chi(E_r^\bullet)$ de tous les complexes
+$E_r^\bullet=(E_r^{(n)})_{n\in\mathbb Z}$
+NEW: $\chi(E_r^{(\bullet)})$ de tous les complexes
+$E_r^{(\bullet)}=(E_r^{(n)})_{n\in\mathbb Z}$
+FRENCH CONTEXT (corrected): une suite spectrale dans la catégorie des modules sur un
+anneau $A$. On suppose que les $E_2^{pq}$ sont des $A$-modules de longueur
+finie et qu'il n'y a qu'un nombre fini de couples $(p,q)$ tels que
+$E_2^{pq}\neq0$. Alors les caractéristiques d'Euler-Poincaré
+$\chi(E_r^{(\bullet)})$ de tous les complexes
+$E_r^{(\bullet)}=(E_r^{(n)})_{n\in\mathbb Z}$
+(\hyperref[0.11.1.1-fr]{11.1.1}) sont toutes égales. Si, en outre, la suite
+$E$ est faiblement convergente et si on pose
+$E_\infty^{(n)}=\bigoplus_{p+q=n}E_\infty^{pq}$ pour tout $n\in\mathbb Z$,
+on a aussi $\chi(E_\infty^{(\bullet)})=\chi(E_2^{(\bullet)})$,
+
+
+[id 4812]
+OLD: et si on pose
+\[
+E_\infty^{(n)}=\bigoplus_{p+q=n}E_\infty^{pq}\quad(n\in\mathbb Z),
+\]
+
+NEW: et si on pose
+$E_\infty^{(n)}=\bigoplus_{p+q=n}E_\infty^{pq}$ pour tout $n\in\mathbb Z$,
+
+FRENCH CONTEXT (corrected): $E_2^{pq}\neq0$. Alors les caractéristiques d'Euler-Poincaré
+$\chi(E_r^{(\bullet)})$ de tous les complexes
+$E_r^{(\bullet)}=(E_r^{(n)})_{n\in\mathbb Z}$
+(\hyperref[0.11.1.1-fr]{11.1.1}) sont toutes égales. Si, en outre, la suite
+$E$ est faiblement convergente et si on pose
+$E_\infty^{(n)}=\bigoplus_{p+q=n}E_\infty^{pq}$ pour tout $n\in\mathbb Z$,
+on a aussi $\chi(E_\infty^{(\bullet)})=\chi(E_2^{(\bullet)})$,
+$E_\infty^{(\bullet)}=(E_\infty^{(n)})_{n\in\mathbb Z}$ étant considéré comme
+un complexe à dérivation triviale.
+\end{corollary}
+
+\begin{proof}
+Notons d'abord que si $E_2^{pq}=0$, on a $E_r^{pq}=0$
+
+[id 4816]
+OLD: $\chi(E_r^\bullet)=\chi(E_{r+1}^\bullet)$ pour tout
+NEW: $\chi(E_r^{(\bullet)})=\chi(E_{r+1}^{(\bullet)})$ pour tout
+FRENCH CONTEXT (corrected): mme
+un complexe à dérivation triviale.
+\end{corollary}
+
+\begin{proof}
+Notons d'abord que si $E_2^{pq}=0$, on a $E_r^{pq}=0$ pour
+$2\leq r\leq+\infty$, donc tous les complexes $E_r^{(\bullet)}$ sont finis et
+formés de $A$-modules de longueur finie; la relation
+$\chi(E_r^{(\bullet)})=\chi(E_{r+1}^{(\bullet)})$ pour tout $r$ fini résulte donc de
+(\hyperref[0.11.10.2-fr]{11.10.2}) et de l'isomorphie entre
+$H^\bullet(E_r^{(\bullet)})$ et $E_{r+1}^{(\bullet)}$ (en tant que complexes à
+dérivation triviale). L'hypothèse que les $E_r^{pq}$ sont de longueur finie
+entraîne que pour t
+
+[id 4817]
+OLD: $H^\bullet(E_r^\bullet)$ et $E_{r+1}^\bullet$
+NEW: $H^\bullet(E_r^{(\bullet)})$ et $E_{r+1}^{(\bullet)}$
+FRENCH CONTEXT (corrected): fty$, donc tous les complexes $E_r^{(\bullet)}$ sont finis et
+formés de $A$-modules de longueur finie; la relation
+$\chi(E_r^{(\bullet)})=\chi(E_{r+1}^{(\bullet)})$ pour tout $r$ fini résulte donc de
+(\hyperref[0.11.10.2-fr]{11.10.2}) et de l'isomorphie entre
+$H^\bullet(E_r^{(\bullet)})$ et $E_{r+1}^{(\bullet)}$ (en tant que complexes à
+dérivation triviale). L'hypothèse que les $E_r^{pq}$ sont de longueur finie
+entraîne que pour tout couple $(p,q)$, les suites
+$(B_k(E_2^{pq}))_{k\geq2}$ et $(Z_k(E_2^{pq}))_{k\geq2}$ sont stationnaires;
+l'hypothèse que $E$ est faiblem
+
+[id 4819]
+OLD: on définit la cohomologie
+NEW: on définit la \emph{cohomologie}
+FRENCH CONTEXT (corrected): ion:0.12-fr}
+
+\subsection{Cohomologie des faisceaux de modules sur les espaces annelés}
+\label{subsection:0.12.1-fr}
+
+\begin{env}[12.1.1]
+\label{0.12.1.1-fr}
+Soit $(X,\mathcal O_X)$ un espace annelé. Rappelons que pour tout
+$\mathcal O_X$-Module $\mathcal F$, on définit la \emph{cohomologie}
+$H^\bullet(X,\mathcal F)$, qui est un \emph{foncteur cohomologique universel}
+(T, 2.2) de la catégorie $\boldsymbol{C}(X)$ des $\mathcal O_X$-Modules dans la catégorie
+des groupes abéliens; c'est le foncteur dérivé du foncteur exact à gauche
+$\mathcal F\to\Ga
+
+[id 4820]
+OLD: qui est un foncteur cohomologique universel
+NEW: qui est un \emph{foncteur cohomologique universel}
+FRENCH CONTEXT (corrected): es sur les espaces annelés}
+\label{subsection:0.12.1-fr}
+
+\begin{env}[12.1.1]
+\label{0.12.1.1-fr}
+Soit $(X,\mathcal O_X)$ un espace annelé. Rappelons que pour tout
+$\mathcal O_X$-Module $\mathcal F$, on définit la \emph{cohomologie}
+$H^\bullet(X,\mathcal F)$, qui est un \emph{foncteur cohomologique universel}
+(T, 2.2) de la catégorie $\boldsymbol{C}(X)$ des $\mathcal O_X$-Modules dans la catégorie
+des groupes abéliens; c'est le foncteur dérivé du foncteur exact à gauche
+$\mathcal F\to\Gamma(X,\mathcal F)$. Le foncteur $H^\bullet(X,\mathcal F)$
+est isomorphe
+\oldpa
+
+[id 4821]
+OLD: la catégorie $C(X)$ des
+NEW: la catégorie $\boldsymbol{C}(X)$ des
+FRENCH CONTEXT (corrected): n{env}[12.1.1]
+\label{0.12.1.1-fr}
+Soit $(X,\mathcal O_X)$ un espace annelé. Rappelons que pour tout
+$\mathcal O_X$-Module $\mathcal F$, on définit la \emph{cohomologie}
+$H^\bullet(X,\mathcal F)$, qui est un \emph{foncteur cohomologique universel}
+(T, 2.2) de la catégorie $\boldsymbol{C}(X)$ des $\mathcal O_X$-Modules dans la catégorie
+des groupes abéliens; c'est le foncteur dérivé du foncteur exact à gauche
+$\mathcal F\to\Gamma(X,\mathcal F)$. Le foncteur $H^\bullet(X,\mathcal F)$
+est isomorphe
+\oldpage[0\textsubscript{III}]{50}
+à la restriction à l
+
+=================== PAGE 0\textsubscript{III} 50 ===================
+----- (English page 0\textsubscript{III} 49: shown above in this file) -----
+----- (English page 0\textsubscript{III} 50: shown above in this file) -----
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 51 -----
+\oldpage[0\textsubscript{III}]{51}
+By the uniqueness property for extending morphisms of universal
+cohomological functors (T, 2.2), one obtains unique extensions of
+$\mu$ and $\mu'$ to cohomology which make the diagrams analogous to
+\sref{0.12.1.3.3} commutative.
+Thus \sref{0.12.1.3.2} is a homomorphism of $A$-\emph{modules}.
+
+Now note that $f^*(\sh{F})
+=
+\psi^*(\sh{F})
+\otimes_{\psi^*(\sh{O}_X)}
+\sh{O}_{X'}$,
+and hence that there is a canonical di-homomorphism $\psi^*(\sh{F})\longrightarrow f^*(\sh{F})$
+from the $\psi^*(\sh{O}_X)$-Module $\psi^*(\sh{F})$ to the
+$\sh{O}_{X'}$-Module $f^*(\sh{F})$.
+By functoriality, one therefore obtains a functorial di-homomorphism
+\[
+\label{0.12.1.3.4}
+\tag{12.1.3.4}
+  \HH^p(X',\psi^*(\sh{F}))
+  \longrightarrow
+  \HH^p(X',f^*(\sh{F})),
+\]
+the corresponding rings being $A$ and $A'$.
+Composing this di-homomorphism with \sref{0.12.1.3.2}, one obtains a
+canonical di-homomorphism, functorial in $\sh{F}$,
+\[
+\label{0.12.1.3.5}
+\tag{12.1.3.5}
+  \theta_p:\HH^p(X,\sh{F})
+  \longrightarrow
+  \HH^p(X',f^*(\sh{F})).
+\]
+
+Finally, by functoriality, the homomorphism
+$u^\sharp:f^*(\sh{F})\to\sh{F}'$ gives a homomorphism of
+$A'$-modules $\HH^p(X',f^*(\sh{F}))
+\longrightarrow
+\HH^p(X',\sh{F}')$,
+which, composed with \sref{0.12.1.3.5}, gives
+\sref{0.12.1.3.1}.
+
+Let $f'=(\psi',\theta'):X''\to X'$ be a second morphism of ringed
+spaces, and let $f''=f\circ f'$ be the composite morphism.
+Taking account of the compatibility of the functor $\psi'^*$ with
+tensor products \sref[0\textsubscript{\mdseries I}]{0.4.3.3}, one immediately
+checks that the composite of the di-homomorphism $\HH^p(X',f^*(\sh{F}))
+\longrightarrow
+\HH^p\bigl(X'',f'^*(f^*(\sh{F}))\bigr)$
+with \sref{0.12.1.3.5} is the corresponding di-homomorphism $\HH^p(X,\sh{F})
+\longrightarrow
+\HH^p(X'',f''^*(\sh{F}))$.
+\end{env}
+
+\begin{env}[12.1.4]
+\label{0.12.1.4}
+A direct definition of the homomorphism \sref{0.12.1.3.2} can be
+given as follows.
+Take an injective resolution
+$\sh{L}^\bullet=(\sh{L}^i)$ of $\sh{F}$ consisting of sheaves of
+abelian groups on $X$.
+Since the functor $\psi^*$ is exact,
+$\psi^*(\sh{L}^\bullet)$ is a resolution of $\psi^*(\sh{F})$
+consisting of sheaves on $X'$.
+If $\sh{L}'^\bullet=(\sh{L}'^i)$ is an injective resolution of
+$\psi^*(\sh{F})$ in the category of sheaves of abelian groups on
+$X'$, there is a morphism $\psi^*(\sh{L}^\bullet)\longrightarrow\sh{L}'^\bullet$
+of complexes of sheaves of abelian groups, compatible with the
+augmentations (M, V, 1.1.\emph{a)}, and determined up to homotopy.
+One thereby obtains homomorphisms
+\[
+  \Gamma(X,\sh{L}^\bullet)
+  \longrightarrow
+  \Gamma(X',\psi^*(\sh{L}^\bullet))
+  \longrightarrow
+  \Gamma(X',\sh{L}'^\bullet)
+\]
+of complexes of abelian groups.
+Their composite, on passing to cohomology, gives a morphism of
+$\partial$-functors $\HH^\bullet(X,\sh{F})
+\longrightarrow
+\HH^\bullet(X',\psi^*(\sh{F}))$;
+since it coincides with \sref{0.12.1.3.2} in degree $0$, it is
+identical to it (T, 2.2).
+
+Now consider an open covering
+$\mathfrak{U}=(U_\alpha)$ of $X$, and let
+$\mathfrak{U}'=(f^{-1}(U_\alpha))$ be its inverse-image open covering
+of $X'$.
+For every open subset $V$ of $X$, the canonical homomorphisms $\Gamma(V,\sh{F})
+\longrightarrow
+\Gamma(f^{-1}(V),f^*(\sh{F}))$
+immediately define (cf.\ G, II, 5.1) a homomorphism of complexes $\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})
+\longrightarrow
+\check{\mathrm{C}}^\bullet(\mathfrak{U}',f^*(\sh{F}))$,
+and hence canonical homomorphisms
+\[
+\label{0.12.1.4.1}
+\tag{12.1.4.1}
+  \theta_p:
+  \check{\HH}^p(\mathfrak{U},\sh{F})
+  \longrightarrow
+  \check{\HH}^p(\mathfrak{U}',f^*(\sh{F})).
+\]
+----- French corrections on page 0\textsubscript{III} 50 -----
+[id 4675]
+OLD: catégorie $C(X)$ du
+NEW: catégorie $\boldsymbol{C}(X)$ du
+FRENCH CONTEXT (corrected): \mathcal O_X$-Modules dans la catégorie
+des groupes abéliens; c'est le foncteur dérivé du foncteur exact à gauche
+$\mathcal F\to\Gamma(X,\mathcal F)$. Le foncteur $H^\bullet(X,\mathcal F)$
+est isomorphe
+\oldpage[0\textsubscript{III}]{50}
+à la restriction à la catégorie $\boldsymbol{C}(X)$ du foncteur cohomologique défini de
+même sur la catégorie des \emph{faisceaux de groupes abéliens} sur $X$
+(G, II, 7.2.1).
+\end{env}
+
+\begin{env}[12.1.2]
+\label{0.12.1.2-fr}
+Posons $A=\Gamma(X,\mathcal O_X)$. Comme tout élément de $A$ définit un
+endomorphisme du
+
+[id 4678]
+OLD: $A$-algèbre graduée
+anticommutative
+NEW: $A$-\emph{algèbre graduée
+anticommutative}
+FRENCH CONTEXT (corrected): bel{0.12.1.2.1-fr}
+\tag{12.1.2.1}
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)
+\longrightarrow H^{p+q}(X,\mathcal F\otimes_{\mathcal O_X}\mathcal G)
+\]
+(G, II, 6.6). Ces homomorphismes font de la somme directe $S$ des
+$H^p(X,\mathcal O_X)$ (pour $p\geq0$) une $A$-\emph{algèbre graduée
+anticommutative} et de la somme directe des $H^p(X,\mathcal F)$ un $S$-\emph{module
+gradué}.
+
+Pour tout \emph{recouvrement ouvert} $\mathfrak U$ de $X$, nous désignerons
+toujours par $C^\bullet(\mathfrak U,\mathcal F)$ (contrairement à
+(G, II, 5.1)) le complexe des cochaînes 
+
+[id 4679]
+OLD: $S$-module
+gradué.
+NEW: $S$-\emph{module
+gradué}.
+FRENCH CONTEXT (corrected): w H^{p+q}(X,\mathcal F\otimes_{\mathcal O_X}\mathcal G)
+\]
+(G, II, 6.6). Ces homomorphismes font de la somme directe $S$ des
+$H^p(X,\mathcal O_X)$ (pour $p\geq0$) une $A$-\emph{algèbre graduée
+anticommutative} et de la somme directe des $H^p(X,\mathcal F)$ un $S$-\emph{module
+gradué}.
+
+Pour tout \emph{recouvrement ouvert} $\mathfrak U$ de $X$, nous désignerons
+toujours par $C^\bullet(\mathfrak U,\mathcal F)$ (contrairement à
+(G, II, 5.1)) le complexe des cochaînes \emph{alternées} du nerf de
+$\mathfrak U$ à valeurs dans le système de coeff
+
+[id 4680]
+OLD: toujours par $\check C^\bullet(\mathfrak U,\mathcal F)$
+NEW: toujours par $C^\bullet(\mathfrak U,\mathcal F)$
+FRENCH CONTEXT (corrected): somme directe $S$ des
+$H^p(X,\mathcal O_X)$ (pour $p\geq0$) une $A$-\emph{algèbre graduée
+anticommutative} et de la somme directe des $H^p(X,\mathcal F)$ un $S$-\emph{module
+gradué}.
+
+Pour tout \emph{recouvrement ouvert} $\mathfrak U$ de $X$, nous désignerons
+toujours par $C^\bullet(\mathfrak U,\mathcal F)$ (contrairement à
+(G, II, 5.1)) le complexe des cochaînes \emph{alternées} du nerf de
+$\mathfrak U$ à valeurs dans le système de coefficients
+$\Gamma(U_\sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, d
+
+[id 4682]
+OLD: $\check C^\bullet(\mathfrak U,\mathcal F)$ est un
+NEW: $C^\bullet(\mathfrak U,\mathcal F)$ est un
+FRENCH CONTEXT (corrected): $X$, nous désignerons
+toujours par $C^\bullet(\mathfrak U,\mathcal F)$ (contrairement à
+(G, II, 5.1)) le complexe des cochaînes \emph{alternées} du nerf de
+$\mathfrak U$ à valeurs dans le système de coefficients
+$\Gamma(U_\sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont 
+
+[id 4683]
+OLD: $A$-module gradué, donc
+NEW: $A$-\emph{module gradué}, donc
+FRENCH CONTEXT (corrected): et(\mathfrak U,\mathcal F)$ (contrairement à
+(G, II, 5.1)) le complexe des cochaînes \emph{alternées} du nerf de
+$\mathfrak U$ à valeurs dans le système de coefficients
+$\Gamma(U_\sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont $A$-\emph{linéaires}.
+\end{env}
+
+[id 4684]
+OLD: cohomologie $\check H^p(\mathfrak U,\mathcal F)$
+NEW: cohomologie $H^p(\mathfrak U,\mathcal F)$
+FRENCH CONTEXT (corrected): G, II, 5.1)) le complexe des cochaînes \emph{alternées} du nerf de
+$\mathfrak U$ à valeurs dans le système de coefficients
+$\Gamma(U_\sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont $A$-\emph{linéaires}.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3-fr}
+Soit $(X',\math
+
+[id 4685]
+OLD: structure de $A$-module; en outre
+NEW: structure de $A$-\emph{module}; en outre
+FRENCH CONTEXT (corrected): rak U$ à valeurs dans le système de coefficients
+$\Gamma(U_\sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont $A$-\emph{linéaires}.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3-fr}
+Soit $(X',\mathcal O_{X'})$ un second espace annelé, et soit
+$f=(\psi,\theta)$ un morphi
+
+[id 4686]
+OLD: canoniques
+\[
+\check H^p(\mathfrak U,\mathcal F)\longrightarrow H^p(X,\mathcal F)
+\]
+(G, II, 5.4)
+NEW: canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4)
+FRENCH CONTEXT (corrected): \sigma,\mathcal F)$. Il est clair que
+$C^\bullet(\mathfrak U,\mathcal F)$ est un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont $A$-\emph{linéaires}.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3-fr}
+Soit $(X',\mathcal O_{X'})$ un second espace annelé, et soit
+$f=(\psi,\theta)$ un morphisme de $X'$ dans $X$.
+
+Posons $A'=\Gamma(X',\mathcal O_{X'})$; le $\psi$-morphisme $\theta$ d
+
+[id 4687]
+OLD: sont $A$-linéaires.
+NEW: sont $A$-\emph{linéaires}.
+FRENCH CONTEXT (corrected): st un $A$-\emph{module gradué}, donc les
+groupes de cohomologie $H^p(\mathfrak U,\mathcal F)$ de ce complexe
+sont munis d'une structure de $A$-\emph{module}; en outre, les applications
+canoniques
+$H^p(\mathfrak U,\mathcal F)\to H^p(X,\mathcal F)$
+(G, II, 5.4) sont $A$-\emph{linéaires}.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3-fr}
+Soit $(X',\mathcal O_{X'})$ un second espace annelé, et soit
+$f=(\psi,\theta)$ un morphisme de $X'$ dans $X$.
+
+Posons $A'=\Gamma(X',\mathcal O_{X'})$; le $\psi$-morphisme $\theta$ définit
+canoniquement un hom
+
+[id 4688]
+OLD: $f$-morphisme $u:
+NEW: \emph{$f$-morphisme} $u:
+FRENCH CONTEXT (corrected): un morphisme de $X'$ dans $X$.
+
+Posons $A'=\Gamma(X',\mathcal O_{X'})$; le $\psi$-morphisme $\theta$ définit
+canoniquement un homomorphisme d'anneaux $A\to A'$. Soient $\mathcal F$ un
+$\mathcal O_X$-Module, $\mathcal F'$ un $\mathcal O_{X'}$-Module; pour tout
+\emph{$f$-morphisme} $u:\mathcal F\to\mathcal F'$
+(\hyperref[0.4.4.1-fr]{\textbf{0}\textsubscript{I}, 4.4.1}), nous allons voir qu'on
+peut définir pour tout $p\geq0$, un \emph{di-homomorphisme}
+\[
+\label{0.12.1.3.1-fr}
+\tag{12.1.3.1}
+u_p:H^p(X,\mathcal F)\longrightarrow H^p(X',\mathc
+
+[id 4690]
+OLD: $\mathcal F\to H^\bullet(X',\psi^*(\mathcal F))$ est un
+NEW: $\mathcal F\leadsto H^\bullet(X',\psi^*(\mathcal F))$ est un
+FRENCH CONTEXT (corrected): n
+peut définir pour tout $p\geq0$, un \emph{di-homomorphisme}
+\[
+\label{0.12.1.3.1-fr}
+\tag{12.1.3.1}
+u_p:H^p(X,\mathcal F)\longrightarrow H^p(X',\mathcal F').
+\]
+
+En effet, comme $\psi^*$ est exact dans la catégorie des faisceaux de groupes
+abéliens sur $X$, $\mathcal F\leadsto H^\bullet(X',\psi^*(\mathcal F))$ est un
+$\partial$-foncteur dans cette catégorie, et on sait qu'on a un homomorphisme
+canonique de $\partial$-foncteurs
+\[
+\label{0.12.1.3.2-fr}
+\tag{12.1.3.2}
+H^\bullet(X,\mathcal F)\longrightarrow H^\bullet(X',\psi^*(\mathcal F))
+\]
+uniquement déterminé par la cond
+
+[id 4695]
+OLD: que l'on a
+\[
+f^*(\mathcal F)=\psi^*(\mathcal F)
+\otimes_{\psi^*(\mathcal O_X)}\mathcal O_{X'},
+\]
+et que
+NEW: que l'on a
+$f^*(\mathcal F)=\psi^*(\mathcal F)
+\otimes_{\psi^*(\mathcal O_X)}\mathcal O_{X'}$,
+et que
+FRENCH CONTEXT (corrected): olongements uniques de $\mu$ et $\mu'$ à la cohomologie rendant commutatifs
+les diagrammes analogues à (\hyperref[0.12.1.3.3-fr]{12.1.3.3}), ce qui
+signifie que (\hyperref[0.12.1.3.2-fr]{12.1.3.2}) est un homomorphisme de
+$A$-\emph{modules}. Notons maintenant que l'on a
+$f^*(\mathcal F)=\psi^*(\mathcal F)
+\otimes_{\psi^*(\mathcal O_X)}\mathcal O_{X'}$,
+et que l'on a donc un di-homomorphisme canonique
+$\psi^*(\mathcal F)\to f^*(\mathcal F)$ du
+$\psi^*(\mathcal O_X)$-Module $\psi^*(\mathcal F)$ dans le
+$\mathcal O_{X'}$-Module $f^*(\mathcal F)$. Par fonctorialité, on en déduit
+donc un di-homomorphisme fonctoriel
+\[
+
+
+[id 4696]
+OLD: canonique fonctoriel en
+NEW: canonique \emph{fonctoriel} en
+FRENCH CONTEXT (corrected): 
+\label{0.12.1.3.4-fr}
+\tag{12.1.3.4}
+H^p(X',\psi^*(\mathcal F))\longrightarrow H^p(X',f^*(\mathcal F))
+\]
+les anneaux correspondants étant $A$ et $A'$; en composant ce
+di-homomorphisme avec (\hyperref[0.12.1.3.2-fr]{12.1.3.2}), on obtient un
+di-homomorphisme canonique \emph{fonctoriel} en $\mathcal F$
+\[
+\label{0.12.1.3.5-fr}
+\tag{12.1.3.5}
+\theta_p:H^p(X,\mathcal F)\longrightarrow H^p(X',f^*(\mathcal F)).
+\]
+
+Enfin, par fonctorialité, on déduit de l'homomorphisme
+$u^\sharp:f^*(\mathcal F)\to\mathcal F'$ un homomorphisme de $A'$-modules
+$H^p(X
+
+[id 4700]
+OLD: est une résolution
+de
+NEW: est une \emph{résolution}
+de
+FRENCH CONTEXT (corrected): -fr]{12.1.3.2}) peut s'obtenir de la façon suivante : on
+considère une résolution injective $\mathcal L^\bullet=(\mathcal L^i)$ de
+$\mathcal F$ formée de faisceaux de groupes abéliens sur $X$; comme le
+foncteur $\psi^*$ est exact, $\psi^*(\mathcal L^\bullet)$ est une \emph{résolution}
+de $\psi^*(\mathcal F)$ formée de faisceaux sur $X'$. Si
+$\mathcal L'^\bullet=(\mathcal L'^i)$ est une résolution injective de
+$\psi^*(\mathcal F)$ dans la catégorie des faisceaux de groupes abéliens sur
+$X'$, il y a donc un morphisme
+$\psi^*(\mathcal L^\bullet)
+
+[id 4703]
+OLD: $\check C^\bullet(\mathfrak U,\mathcal F)\to
+\check C^\bullet(\mathfrak U',f^*(\mathcal F))$
+NEW: $C^\bullet(\mathfrak U,\mathcal F)\to
+C^\bullet(\mathfrak U',f^*(\mathcal F))$
+FRENCH CONTEXT (corrected): lpha))$ le recouvrement ouvert de $X'$, image
+réciproque de $\mathfrak U$. Les homomorphismes canoniques
+$\Gamma(V,\mathcal F)\to\Gamma(f^{-1}(V),f^*(\mathcal F))$ pour tout ouvert
+$V$ de $X$ définissent aussitôt (cf. G, II, 5.1) un homomorphisme de complexes
+$C^\bullet(\mathfrak U,\mathcal F)\to
+C^\bullet(\mathfrak U',f^*(\mathcal F))$, d'où des homomorphismes
+canoniques
+\[
+\label{0.12.1.4.1-fr}
+\tag{12.1.4.1}
+\theta_p:H^p(\mathfrak U,\mathcal F)
+\longrightarrow H^p(\mathfrak U',f^*(\mathcal F)).
+\]
+
+\oldpage[0\textsubscript{III}]{52}
+En outre, on a des diagrammes commutatifs
+\[
+\label{0.12
+
+[id 4704]
+OLD: \theta_p:\check H^p(\mathfrak U,\mathcal F)
+\longrightarrow\check H^p(\mathfrak U',f^*(\mathcal F)).
+NEW: \theta_p:H^p(\mathfrak U,\mathcal F)
+\longrightarrow H^p(\mathfrak U',f^*(\mathcal F)).
+FRENCH CONTEXT (corrected): cal F))$ pour tout ouvert
+$V$ de $X$ définissent aussitôt (cf. G, II, 5.1) un homomorphisme de complexes
+$C^\bullet(\mathfrak U,\mathcal F)\to
+C^\bullet(\mathfrak U',f^*(\mathcal F))$, d'où des homomorphismes
+canoniques
+\[
+\label{0.12.1.4.1-fr}
+\tag{12.1.4.1}
+\theta_p:H^p(\mathfrak U,\mathcal F)
+\longrightarrow H^p(\mathfrak U',f^*(\mathcal F)).
+\]
+
+\oldpage[0\textsubscript{III}]{52}
+En outre, on a des diagrammes commutatifs
+\[
+\label{0.12.1.4.2-fr}
+\tag{12.1.4.2}
+\xymatrix{
+H^p(\mathfrak U,\mathcal F)\ar[r]^{\theta_p}\ar[d]
+&H^p(\mathfrak U',f^*(\mathcal F))\ar[d]\\
+H^p(X,\mathcal F)\ar[r]_{\theta_p
+
+=================== PAGE 0\textsubscript{III} 52 ===================
+----- (English page 0\textsubscript{III} 51: shown above in this file) -----
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 52 -----
+\oldpage[0\textsubscript{III}]{52}
+Moreover, there are commutative diagrams
+\[
+\label{0.12.1.4.2}
+\tag{12.1.4.2}
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U},\sh{F})
+      \ar[r]^-{\theta_p}\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',f^*(\sh{F}))\ar[d]\\
+    \HH^p(X,\sh{F})
+      \ar[r]_-{\theta_p}
+      & \HH^p(X',f^*(\sh{F})),
+  }
+\]
+where the vertical arrows are the canonical homomorphisms of
+(G, II, 5.2).
+To prove the commutativity of \sref{0.12.1.4.2}, consider the complex
+of sheaves of alternating cochains of $\sh{F}$ relative to
+$\mathfrak{U}$,
+$\sh{C}^\bullet(\mathfrak{U},\sh{F})$, for which $\Gamma\bigl(X,\sh{C}^\bullet(\mathfrak{U},\sh{F})\bigr)
+=
+\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$
+(G, II, 5.2).
+The canonical homomorphisms $\Gamma(V,\sh{F})
+\longrightarrow
+\Gamma(f^{-1}(V),\psi^*(\sh{F}))$
+then define a $\psi$-morphism $\sh{C}^\bullet(\mathfrak{U},\sh{F})
+\longrightarrow
+\sh{C}^\bullet(\mathfrak{U}',\psi^*(\sh{F}))$,
+and, with the notation above, there is a commutative diagram
+\[
+  \xymatrix{
+    \Gamma\bigl(X,\sh{C}^\bullet(\mathfrak{U},\sh{F})\bigr)
+      \ar[r]\ar[d]
+      & \Gamma\bigl(X',
+          \sh{C}^\bullet(\mathfrak{U}',\psi^*(\sh{F}))\bigr)\ar[d]\\
+    \Gamma(X,\sh{L}^\bullet)\ar[r]
+      & \Gamma(X',\psi^*(\sh{L}^\bullet))\ar[r]
+      & \Gamma(X',\sh{L}'^\bullet).
+  }
+\]
+Passing to cohomology gives commutative diagrams
+\[
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U},\sh{F})\ar[r]\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',\psi^*(\sh{F}))\ar[d]\\
+    \HH^p(X,\sh{F})\ar[r]
+      & \HH^p(X',\psi^*(\sh{F})),
+  }
+\]
+where the vertical arrows are the canonical homomorphisms of
+(G, II, 5.2).
+It remains only to combine these diagrams with the commutative diagrams
+\[
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U}',\psi^*(\sh{F}))\ar[r]\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',f^*(\sh{F}))\ar[d]\\
+    \HH^p(X',\psi^*(\sh{F}))\ar[r]
+      & \HH^p(X',f^*(\sh{F})),
+  }
+\]
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 53 -----
+\oldpage[0\textsubscript{III}]{53}
+which arise from the homomorphism
+$\psi^*(\sh{F})\to f^*(\sh{F})$ and the functoriality of the
+canonical homomorphisms of (G, II, 5.2), to obtain the commutativity
+of \sref{0.12.1.4.2}.
+
+Note that if
+$A=\Gamma(X,\sh{O}_X)$ and $A'=\Gamma(X',\sh{O}_{X'})$, then
+\sref{0.12.1.4.1} is a di-homomorphism of modules corresponding to
+the rings $A$ and $A'$.
+There is a transitivity property for \sref{0.12.1.4.1} with respect
+to a composite of two morphisms, analogous to that of
+\sref{0.12.1.3.5}.
+Finally, in the preceding definitions, instead of an injective
+resolution $\sh{L}^\bullet$ of $\sh{F}$, one could equally well have
+started with a resolution such that
+\[
+  \HH^p(X,\sh{L}^i)=0
+  \qquad\text{for every $i$ and every $p>0$}
+\]
+(G, II, 4.7.1).
+\end{env}
+
+\begin{env}[12.1.5]
+\label{0.12.1.5}
+Let $\sh{F},\sh{G},\sh{H}$ be three $\sh{O}_X$-Modules, and consider
+an $\sh{O}_X$-homomorphism $u:\sh{F}\otimes_{\sh{O}_X}\sh{G}\longrightarrow\sh{H}$,
+which gives, in cohomology, the homomorphisms
+\[
+\label{0.12.1.5.1}
+\tag{12.1.5.1}
+  \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+  \longrightarrow
+  \HH^{p+q}(X,\sh{H})
+\]
+deduced from the cup product \sref{0.12.1.2.1}.
+We show that, under the hypotheses and with the notation of
+\sref{0.12.1.3}, the diagrams
+\[
+\label{0.12.1.5.2}
+\tag{12.1.5.2}
+  \xymatrix@C=10pt{
+    \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X,\sh{H})\ar[d]\\
+    \HH^p(X',f^*(\sh{F}))\otimes_{A'}
+      \HH^q(X',f^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',f^*(\sh{H}))
+  }
+\]
+are commutative, where the vertical arrows come from the canonical
+homomorphisms \sref{0.12.1.3.5}.
+
+Recall for this purpose that \sref{0.12.1.5.1} can be obtained from
+the canonical resolutions (G, II, 4.3)
+$\sh{L}^\bullet,\sh{M}^\bullet,\sh{N}^\bullet$ of
+$\sh{F},\sh{G},\sh{H}$ respectively, which consist of
+$\sh{O}_X$-Modules, and from the linear map $\sh{L}^\bullet\otimes_{\sh{O}_X}\sh{M}^\bullet
+\longrightarrow
+\sh{N}^\bullet$
+of complexes of $\sh{O}_X$-Modules corresponding to $u$.
+This map provides a homomorphism of complexes of $A$-modules $\Gamma(X,\sh{L}^\bullet)\otimes_A\Gamma(X,\sh{M}^\bullet)
+\longrightarrow
+\Gamma(X,\sh{N}^\bullet)$,
+and hence, on passing to cohomology, homomorphisms $\HH^p\bigl(\Gamma(X,\sh{L}^\bullet)\bigr)
+\otimes_A
+\HH^q\bigl(\Gamma(X,\sh{M}^\bullet)\bigr)
+\longrightarrow
+\HH^{p+q}\bigl(\Gamma(X,\sh{N}^\bullet)\bigr)$
+(G, II, 6.6).
+There is clearly a commutative diagram
+\[
+\label{0.12.1.5.3}
+\tag{12.1.5.3}
+  \xymatrix@C=8pt{
+    \Gamma(X,\sh{L}^\bullet)\otimes_A
+      \Gamma(X,\sh{M}^\bullet)
+      \ar[r]\ar[d]
+      & \Gamma(X,\sh{N}^\bullet)\ar[d]\\
+    \Gamma(X',\psi^*(\sh{L}^\bullet))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \Gamma(X',\psi^*(\sh{M}^\bullet))
+      \ar[r]
+      & \Gamma(X',\psi^*(\sh{N}^\bullet)).
+  }
+\]
+----- French corrections on page 0\textsubscript{III} 52 -----
+[id 4706]
+OLD: \check H^p(\mathfrak U,\mathcal F)\ar[r]^{\theta_p}\ar[d]
+&\check H^p(\mathfrak U',f^*(\mathcal F))
+NEW: H^p(\mathfrak U,\mathcal F)\ar[r]^{\theta_p}\ar[d]
+&H^p(\mathfrak U',f^*(\mathcal F))
+FRENCH CONTEXT (corrected): \[
+\label{0.12.1.4.1-fr}
+\tag{12.1.4.1}
+\theta_p:H^p(\mathfrak U,\mathcal F)
+\longrightarrow H^p(\mathfrak U',f^*(\mathcal F)).
+\]
+
+\oldpage[0\textsubscript{III}]{52}
+En outre, on a des diagrammes commutatifs
+\[
+\label{0.12.1.4.2-fr}
+\tag{12.1.4.2}
+\xymatrix{
+H^p(\mathfrak U,\mathcal F)\ar[r]^{\theta_p}\ar[d]
+&H^p(\mathfrak U',f^*(\mathcal F))\ar[d]\\
+H^p(X,\mathcal F)\ar[r]_{\theta_p}
+&H^p(X',f^*(\mathcal F))
+}
+\]
+où les flèches verticales sont les homomorphismes canoniques de (G, II, 5.2).
+Pour établir la commutativité de
+(\hyperref[0.12.1.4.2-fr]{12.1.4.2}), considérons le complexe de faisceaux 
+
+[id 4707]
+OLD: \check C^\bullet(\mathfrak U,\mathcal F)$ (G, II, 5.2)
+NEW: C^\bullet(\mathfrak U,\mathcal F)$ (G, II, 5.2)
+FRENCH CONTEXT (corrected): vité de
+(\hyperref[0.12.1.4.2-fr]{12.1.4.2}), considérons le complexe de faisceaux de
+cochaînes (alternées) de $\mathcal F$ relatives à $\mathfrak U$,
+$\mathcal C^\bullet(\mathfrak U,\mathcal F)$, tel que
+$\Gamma(X,\mathcal C^\bullet(\mathfrak U,\mathcal F))=
+C^\bullet(\mathfrak U,\mathcal F)$ (G, II, 5.2). Les homomorphismes
+canoniques $\Gamma(V,\mathcal F)\to
+\Gamma(f^{-1}(V),\psi^*(\mathcal F))$ définissent alors un $\psi$-morphisme
+$\mathcal C^\bullet(\mathfrak U,\mathcal F)\to
+\mathcal C^\bullet(\mathfrak U',\psi^*(\mathcal F))$, et on a, avec les
+notation
+
+[id 4708]
+OLD: \check H^p(\mathfrak U,\mathcal F)\ar[r]\ar[d]
+&\check H^p(\mathfrak U',\psi^*(\mathcal F))
+NEW: H^p(\mathfrak U,\mathcal F)\ar[r]\ar[d]
+&H^p(\mathfrak U',\psi^*(\mathcal F))
+FRENCH CONTEXT (corrected): ,\mathcal C^\bullet(\mathfrak U',\psi^*(\mathcal F)))\ar[d]\\
+\Gamma(X,\mathcal L^\bullet)\ar[r]
+&\Gamma(X',\psi^*(\mathcal L^\bullet))\ar[r]
+&\Gamma(X',\mathcal L'^\bullet)
+}
+\]
+qui, en passant à la cohomologie, donne des diagrammes commutatifs
+\[
+\xymatrix{
+H^p(\mathfrak U,\mathcal F)\ar[r]\ar[d]
+&H^p(\mathfrak U',\psi^*(\mathcal F))\ar[d]\\
+H^p(X,\mathcal F)\ar[r]
+&H^p(X',\psi^*(\mathcal F))
+}
+\]
+où les flèches verticales sont les homomorphismes canoniques de (G, II, 5.2).
+Il suffit alors de combiner ces diagrammes avec les diagrammes commutatifs
+\[
+\xymatrix{
+H^p(\mathfrak U',\psi^*(\ma
+
+[id 4709]
+OLD: \check H^p(\mathfrak U',\psi^*(\mathcal F))\ar[r]\ar[d]
+&\check H^p(\mathfrak U',f^*(\mathcal F))
+NEW: H^p(\mathfrak U',\psi^*(\mathcal F))\ar[r]\ar[d]
+&H^p(\mathfrak U',f^*(\mathcal F))
+FRENCH CONTEXT (corrected): frak U',\psi^*(\mathcal F))\ar[d]\\
+H^p(X,\mathcal F)\ar[r]
+&H^p(X',\psi^*(\mathcal F))
+}
+\]
+où les flèches verticales sont les homomorphismes canoniques de (G, II, 5.2).
+Il suffit alors de combiner ces diagrammes avec les diagrammes commutatifs
+\[
+\xymatrix{
+H^p(\mathfrak U',\psi^*(\mathcal F))\ar[r]\ar[d]
+&H^p(\mathfrak U',f^*(\mathcal F))\ar[d]\\
+H^p(X',\psi^*(\mathcal F))\ar[r]
+&H^p(X',f^*(\mathcal F))
+}
+\]
+\oldpage[0\textsubscript{III}]{53}
+qui proviennent de l'homomorphisme $\psi^*(\mathcal F)\to f^*(\mathcal F)$
+et du caractère fonctoriel des homomorphismes canoniques de (G, II, 5.2),
+pour
+
+=================== PAGE 0\textsubscript{III} 53 ===================
+----- (English page 0\textsubscript{III} 52: shown above in this file) -----
+----- (English page 0\textsubscript{III} 53: shown above in this file) -----
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 54 -----
+\oldpage[0\textsubscript{III}]{54}
+Passing to cohomology gives commutative diagrams
+\[
+\label{0.12.1.5.4}
+\tag{12.1.5.4}
+  \xymatrix@C=7pt{
+    \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X,\sh{H})\ar[d]\\
+    \HH^p\bigl(\Gamma(X',\psi^*(\sh{L}^\bullet))\bigr)
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q\bigl(\Gamma(X',\psi^*(\sh{M}^\bullet))\bigr)
+      \ar[r]
+      & \HH^{p+q}\bigl(\Gamma(X',\psi^*(\sh{N}^\bullet))\bigr).
+  }
+\]
+But since
+$\psi^*(\sh{L}^\bullet)$,
+$\psi^*(\sh{M}^\bullet)$, and
+$\psi^*(\sh{N}^\bullet)$
+are resolutions of
+$\psi^*(\sh{F})$,
+$\psi^*(\sh{G})$, and
+$\psi^*(\sh{H})$ respectively, there is a commutative diagram
+(G, II, 6.6.1)
+\[
+\label{0.12.1.5.5}
+\tag{12.1.5.5}
+  \xymatrix@C=7pt{
+    \HH^p\bigl(\Gamma(X',\psi^*(\sh{L}^\bullet))\bigr)
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q\bigl(\Gamma(X',\psi^*(\sh{M}^\bullet))\bigr)
+      \ar[r]\ar[d]
+      & \HH^{p+q}\bigl(\Gamma(X',\psi^*(\sh{N}^\bullet))\bigr)
+        \ar[d]\\
+    \HH^p(X',\psi^*(\sh{F}))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q(X',\psi^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',\psi^*(\sh{H})).
+  }
+\]
+Finally, by functoriality, there is a commutative diagram
+\[
+\label{0.12.1.5.6}
+\tag{12.1.5.6}
+  \xymatrix@C=7pt{
+    \HH^p(X',\psi^*(\sh{F}))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q(X',\psi^*(\sh{G}))
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X',\psi^*(\sh{H}))\ar[d]\\
+    \HH^p(X',f^*(\sh{F}))\otimes_{A'}
+      \HH^q(X',f^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',f^*(\sh{H})).
+  }
+\]
+Combining the three diagrams \sref{0.12.1.5.4},
+\sref{0.12.1.5.5}, and \sref{0.12.1.5.6} yields the desired
+commutative diagram \sref{0.12.1.5.2}.
+\end{env}
+
+\begin{remark}[12.1.6]
+\label{0.12.1.6}
+----- French corrections on page 0\textsubscript{III} 53 -----
+[id 4710]
+OLD: $\mathcal G$, $\mathcal H$ trois
+NEW: $\mathcal G$, $\mathcal K$ trois
+FRENCH CONTEXT (corrected): ne résolution injective $\mathcal L^\bullet$ de
+$\mathcal F$, on aurait aussi bien pu partir d'une résolution telle que
+$H^p(X,\mathcal L^i)=0$ pour tout $i$ et tout $p>0$ (G, II, 4.7.1).
+\end{env}
+
+\begin{env}[12.1.5]
+\label{0.12.1.5-fr}
+Soient $\mathcal F$, $\mathcal G$, $\mathcal K$ trois
+$\mathcal O_X$-Modules, et considérons un $\mathcal O_X$-homomorphisme
+$u:\mathcal F\otimes_{\mathcal O_X}\mathcal G\to\mathcal K$, qui donne pour
+la cohomologie des homomorphismes
+\[
+\label{0.12.1.5.1-fr}
+\tag{12.1.5.1}
+H^p(X,\mathcal F)\otimes_A H^q(X,\math
+
+[id 4711]
+OLD: \to\mathcal H$, qui donne
+NEW: \to\mathcal K$, qui donne
+FRENCH CONTEXT (corrected): tout $i$ et tout $p>0$ (G, II, 4.7.1).
+\end{env}
+
+\begin{env}[12.1.5]
+\label{0.12.1.5-fr}
+Soient $\mathcal F$, $\mathcal G$, $\mathcal K$ trois
+$\mathcal O_X$-Modules, et considérons un $\mathcal O_X$-homomorphisme
+$u:\mathcal F\otimes_{\mathcal O_X}\mathcal G\to\mathcal K$, qui donne pour
+la cohomologie des homomorphismes
+\[
+\label{0.12.1.5.1-fr}
+\tag{12.1.5.1}
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)
+\longrightarrow H^{p+q}(X,\mathcal K)
+\]
+déduits du cup-produit (\hyperref[0.12.1.2.1-fr]{12.1.2.1}). Montrons qu'avec
+les hypothèses e
+
+[id 4712]
+OLD: \longrightarrow H^{p+q}(X,\mathcal H)
+NEW: \longrightarrow H^{p+q}(X,\mathcal K)
+FRENCH CONTEXT (corrected): cal O_X$-Modules, et considérons un $\mathcal O_X$-homomorphisme
+$u:\mathcal F\otimes_{\mathcal O_X}\mathcal G\to\mathcal K$, qui donne pour
+la cohomologie des homomorphismes
+\[
+\label{0.12.1.5.1-fr}
+\tag{12.1.5.1}
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)
+\longrightarrow H^{p+q}(X,\mathcal K)
+\]
+déduits du cup-produit (\hyperref[0.12.1.2.1-fr]{12.1.2.1}). Montrons qu'avec
+les hypothèses et notations de (\hyperref[0.12.1.3-fr]{12.1.3}), on a des
+diagrammes commutatifs
+\[
+\label{0.12.1.5.2-fr}
+\tag{12.1.5.2}
+\xymatrix@C=10pt{
+H^p(X,\mathcal F)\otime
+
+[id 4713]
+OLD: &H^{p+q}(X,\mathcal H)\ar[d]
+NEW: &H^{p+q}(X,\mathcal K)\ar[d]
+FRENCH CONTEXT (corrected): ref[0.12.1.2.1-fr]{12.1.2.1}). Montrons qu'avec
+les hypothèses et notations de (\hyperref[0.12.1.3-fr]{12.1.3}), on a des
+diagrammes commutatifs
+\[
+\label{0.12.1.5.2-fr}
+\tag{12.1.5.2}
+\xymatrix@C=10pt{
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)\ar[r]\ar[d]
+&H^{p+q}(X,\mathcal K)\ar[d]\\
+H^p(X',f^*(\mathcal F))\otimes_{A'}H^q(X',f^*(\mathcal G))\ar[r]
+&H^{p+q}(X',f^*(\mathcal K))
+}
+\]
+où les flèches verticales proviennent des homomorphismes canoniques
+(\hyperref[0.12.1.3.5-fr]{12.1.3.5}). Pour cela, rappelons que
+(\hyperref[0.12.1.5.1-fr]{1
+
+[id 4714]
+OLD: &H^{p+q}(X',f^*(\mathcal H))
+NEW: &H^{p+q}(X',f^*(\mathcal K))
+FRENCH CONTEXT (corrected): .3-fr]{12.1.3}), on a des
+diagrammes commutatifs
+\[
+\label{0.12.1.5.2-fr}
+\tag{12.1.5.2}
+\xymatrix@C=10pt{
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)\ar[r]\ar[d]
+&H^{p+q}(X,\mathcal K)\ar[d]\\
+H^p(X',f^*(\mathcal F))\otimes_{A'}H^q(X',f^*(\mathcal G))\ar[r]
+&H^{p+q}(X',f^*(\mathcal K))
+}
+\]
+où les flèches verticales proviennent des homomorphismes canoniques
+(\hyperref[0.12.1.3.5-fr]{12.1.3.5}). Pour cela, rappelons que
+(\hyperref[0.12.1.5.1-fr]{12.1.5.1}) peut s'obtenir en partant des résolutions
+\emph{canoniques} (G, II, 4.3) $\mathcal L^\
+
+[id 4715]
+OLD: $\mathcal G$, $\mathcal H$
+respectivement
+NEW: $\mathcal G$, $\mathcal K$
+respectivement
+FRENCH CONTEXT (corrected): ques
+(\hyperref[0.12.1.3.5-fr]{12.1.3.5}). Pour cela, rappelons que
+(\hyperref[0.12.1.5.1-fr]{12.1.5.1}) peut s'obtenir en partant des résolutions
+\emph{canoniques} (G, II, 4.3) $\mathcal L^\bullet$, $\mathcal M^\bullet$,
+$\mathcal N^\bullet$ de $\mathcal F$, $\mathcal G$, $\mathcal K$
+respectivement (qui sont formées de $\mathcal O_X$-Modules), de l'application
+linéaire $\mathcal L^\bullet\otimes_{\mathcal O_X}\mathcal M^\bullet
+\to\mathcal N^\bullet$ de complexes de $\mathcal O_X$-Modules correspondant
+à $u$, qui fournit un homomorphisme de complexes de
+
+[id 4716]
+OLD: homomorphismes
+\[
+H^p(\Gamma(X,\mathcal L^\bullet))\otimes_A
+H^q(\Gamma(X,\mathcal M^\bullet))
+\longrightarrow H^{p+q}(\Gamma(X,\mathcal N^\bullet))
+\]
+(G, II, 6.6)
+NEW: homomorphismes
+$H^p(\Gamma(X,\mathcal L^\bullet))\otimes_A
+H^q(\Gamma(X,\mathcal M^\bullet))
+\to H^{p+q}(\Gamma(X,\mathcal N^\bullet))$
+(G, II, 6.6)
+FRENCH CONTEXT (corrected): ullet$ de complexes de $\mathcal O_X$-Modules correspondant
+à $u$, qui fournit un homomorphisme de complexes de $A$-modules
+$\Gamma(X,\mathcal L^\bullet)\otimes_A\Gamma(X,\mathcal M^\bullet)
+\to\Gamma(X,\mathcal N^\bullet)$, et en passant à la cohomologie des
+homomorphismes
+$H^p(\Gamma(X,\mathcal L^\bullet))\otimes_A
+H^q(\Gamma(X,\mathcal M^\bullet))
+\to H^{p+q}(\Gamma(X,\mathcal N^\bullet))$
+(G, II, 6.6). Or, on a évidemment un diagramme commutatif
+\[
+\label{0.12.1.5.3-fr}
+\tag{12.1.5.3}
+\xymatrix@C=8pt{
+\Gamma(X,\mathcal L^\bullet)\otimes_A\Gamma(X,\mathcal M^\bullet)
+\ar[r]\ar[d]
+&\Gamma(X,\mathcal N^\bullet)\ar[d]\\
+\Gamma(X',\psi^*(\mathcal L^\bullet))
+\o
+
+=================== PAGE 0\textsubscript{III} 54 ===================
+----- (English page 0\textsubscript{III} 53: shown above in this file) -----
+----- (English page 0\textsubscript{III} 54: shown above in this file) -----
+----- English, ega0/ega0-12.tex, page 0\textsubscript{III} 55 -----
+\oldpage[0\textsubscript{III}]{55}
+With the notation of \sref{0.12.1.3}, suppose that there is a
+commutative diagram
+\[
+\label{0.12.1.6.1}
+\tag{12.1.6.1}
+  \xymatrix{
+    0\ar[r] & \sh{F}\ar[r]^r\ar[d]_u
+      & \sh{G}\ar[r]^s\ar[d]_v
+      & \sh{H}\ar[r]\ar[d]_w & 0\\
+    0\ar[r] & \sh{F}'\ar[r]_{r'}
+      & \sh{G}'\ar[r]_{s'}
+      & \sh{H}'\ar[r] & 0,
+  }
+\]
+where $r,s$ are homomorphisms of $\sh{O}_X$-Modules,
+$r',s'$ are homomorphisms of $\sh{O}_{X'}$-Modules,
+$u,v,w$ are $f$-morphisms, and the rows are exact.
+It follows that the diagram
+\[
+\label{0.12.1.6.2}
+\tag{12.1.6.2}
+  \xymatrix@C=6pt{
+    \ldots\ar[r]
+      & \HH^p(X,\sh{F})\ar[r]\ar[d]_{u_p}
+      & \HH^p(X,\sh{G})\ar[r]\ar[d]_{v_p}
+      & \HH^p(X,\sh{H})\ar[r]^-\partial\ar[d]_{w_p}
+      & \HH^{p+1}(X,\sh{F})\ar[r]\ar[d]_{u_{p+1}}
+      & \ldots\\
+    \ldots\ar[r]
+      & \HH^p(X',\sh{F}')\ar[r]
+      & \HH^p(X',\sh{G}')\ar[r]
+      & \HH^p(X',\sh{H}')\ar[r]_-\partial
+      & \HH^{p+1}(X',\sh{F}')\ar[r]
+      & \ldots
+  }
+\]
+is commutative.
+Indeed, \sref{0.12.1.6.1} factors as
+\[
+  \xymatrix@R=14pt{
+    0\ar[r] & \sh{F}\ar[r]\ar[d]
+      & \sh{G}\ar[r]\ar[d]
+      & \sh{H}\ar[r]\ar[d] & 0\\
+    0\ar[r] & \psi^*(\sh{F})\ar[r]\ar[d]
+      & \psi^*(\sh{G})\ar[r]\ar[d]
+      & \psi^*(\sh{H})\ar[r]\ar[d] & 0\\
+    0\ar[r] & \sh{F}'\ar[r]
+      & \sh{G}'\ar[r]
+      & \sh{H}'\ar[r] & 0,
+  }
+\]
+where the middle row is exact
+\sref[0\textsubscript{\mdseries I}]{0.3.7.2}.
+It is then enough to use the fact that \sref{0.12.1.3.2} is a
+homomorphism of $\partial$-functors and that the
+$\HH^p(X',\sh{F}')$ form a $\partial$-functor in $\sh{F}'$.
+\end{remark}
+
+\begin{env}[12.1.7]
+\label{0.12.1.7}
+With the hypotheses and notation of \sref{0.12.1.3}, consider now the
+case $\sh{F}=f_*(\sh{F}')=\psi_*(\sh{F}')$.
+We shall see that the di-homomorphism defined in \sref{0.12.1.3},
+\[
+  \HH^p(X,f_*(\sh{F}'))\longrightarrow\HH^p(X',\sh{F}'),
+  \tag{12.1.7.1}
+  \label{0.12.1.7.1}
+\]
+can be obtained (up to an automorphism of $\HH^p(X',\sh{F}')$) as an
+edge homomorphism of a spectral sequence for the composite functor $\sh{F}'\leadsto\Gamma(X,\psi_*(\sh{F}'))$
+(T, 2.4).
+The description of \sref{0.12.1.7.1} given in \sref{0.12.1.4} shows
+here that this homomorphism can be obtained as follows.
+Take injective resolutions $\sh{L}^\bullet$ and
+${\sh{L}'}^\bullet$ of $\psi_*(\sh{F}')$ and $\sh{F}'$,
+respectively, and then a homomorphism of complexes $v:\psi^*(\sh{L}^\bullet)\longrightarrow{\sh{L}'}^\bullet$
+``above'' the canonical homomorphism
+$\psi^*(\psi_*(\sh{F}'))\to\sh{F}'$.
+----- French corrections on page 0\textsubscript{III} 54 -----
+[id 4717]
+OLD: &H^{p+q}(X,\mathcal H)\ar[d]
+NEW: &H^{p+q}(X,\mathcal K)\ar[d]
+FRENCH CONTEXT (corrected): ]
+&\Gamma(X',\psi^*(\mathcal N^\bullet))
+}
+\]
+\oldpage[0\textsubscript{III}]{54}
+qui donne en passant à la cohomologie des diagrammes commutatifs
+\[
+\label{0.12.1.5.4-fr}
+\tag{12.1.5.4}
+\xymatrix@C=7pt{
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)\ar[r]\ar[d]
+&H^{p+q}(X,\mathcal K)\ar[d]\\
+H^p(\Gamma(X',\psi^*(\mathcal L^\bullet)))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(\Gamma(X',\psi^*(\mathcal M^\bullet)))\ar[r]
+&H^{p+q}(\Gamma(X',\psi^*(\mathcal N^\bullet))).
+}
+\]
+
+Mais comme $\psi^*(\mathcal L^\bullet)$, $\psi^*(\mathcal M^\bullet)
+
+[id 4718]
+OLD: \mathcal N^\bullet)))
+}
+NEW: \mathcal N^\bullet))).
+}
+FRENCH CONTEXT (corrected): trix@C=7pt{
+H^p(X,\mathcal F)\otimes_A H^q(X,\mathcal G)\ar[r]\ar[d]
+&H^{p+q}(X,\mathcal K)\ar[d]\\
+H^p(\Gamma(X',\psi^*(\mathcal L^\bullet)))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(\Gamma(X',\psi^*(\mathcal M^\bullet)))\ar[r]
+&H^{p+q}(\Gamma(X',\psi^*(\mathcal N^\bullet))).
+}
+\]
+
+Mais comme $\psi^*(\mathcal L^\bullet)$, $\psi^*(\mathcal M^\bullet)$ et
+$\psi^*(\mathcal N^\bullet)$ sont des \emph{résolutions} de
+$\psi^*(\mathcal F)$, $\psi^*(\mathcal G)$, $\psi^*(\mathcal K)$
+respectivement, on a un diagramme commutatif (G, II, 6.6.
+
+[id 4720]
+OLD: $\psi^*(\mathcal H)$
+respectivement
+NEW: $\psi^*(\mathcal K)$
+respectivement
+FRENCH CONTEXT (corrected): \mathcal M^\bullet)))\ar[r]
+&H^{p+q}(\Gamma(X',\psi^*(\mathcal N^\bullet))).
+}
+\]
+
+Mais comme $\psi^*(\mathcal L^\bullet)$, $\psi^*(\mathcal M^\bullet)$ et
+$\psi^*(\mathcal N^\bullet)$ sont des \emph{résolutions} de
+$\psi^*(\mathcal F)$, $\psi^*(\mathcal G)$, $\psi^*(\mathcal K)$
+respectivement, on a un diagramme commutatif (G, II, 6.6.1)
+\[
+\label{0.12.1.5.5-fr}
+\tag{12.1.5.5}
+\xymatrix@C=7pt{
+H^p(\Gamma(X',\psi^*(\mathcal L^\bullet)))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(\Gamma(X',\psi^*(\mathcal M^\bullet)))\ar[r]\ar[d]
+&H^{p+q}(\Gamma(X
+
+[id 4721]
+OLD: &H^{p+q}(X',\psi^*(\mathcal H))
+}
+NEW: &H^{p+q}(X',\psi^*(\mathcal K))
+}
+FRENCH CONTEXT (corrected): t)))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(\Gamma(X',\psi^*(\mathcal M^\bullet)))\ar[r]\ar[d]
+&H^{p+q}(\Gamma(X',\psi^*(\mathcal N^\bullet)))\ar[d]\\
+H^p(X',\psi^*(\mathcal F))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(X',\psi^*(\mathcal G))\ar[r]
+&H^{p+q}(X',\psi^*(\mathcal K))
+}
+\]
+
+Enfin, par fonctorialité, on a un diagramme commutatif
+\[
+\label{0.12.1.5.6-fr}
+\tag{12.1.5.6}
+\xymatrix@C=7pt{
+H^p(X',\psi^*(\mathcal F))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(X',\psi^*(\mathcal G))\ar[r]\ar[d]
+&H^{p+q}(X',\psi^*(\mathcal K))\ar[
+
+[id 4723]
+OLD: \ar[r]\ar[d]
+&H^{p+q}(X',\psi^*(\mathcal H
+NEW: \ar[r]\ar[d]
+&H^{p+q}(X',\psi^*(\mathcal K
+FRENCH CONTEXT (corrected): hcal G))\ar[r]
+&H^{p+q}(X',\psi^*(\mathcal K))
+}
+\]
+
+Enfin, par fonctorialité, on a un diagramme commutatif
+\[
+\label{0.12.1.5.6-fr}
+\tag{12.1.5.6}
+\xymatrix@C=7pt{
+H^p(X',\psi^*(\mathcal F))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(X',\psi^*(\mathcal G))\ar[r]\ar[d]
+&H^{p+q}(X',\psi^*(\mathcal K))\ar[d]\\
+H^p(X',f^*(\mathcal F))\otimes_{A'}H^q(X',f^*(\mathcal G))\ar[r]
+&H^{p+q}(X',f^*(\mathcal K))
+}
+\]
+et par combinaison des trois diagrammes
+(\hyperref[0.12.1.5.4-fr]{12.1.5.4}),
+(\hyperref[0.12.1.5.5-fr]{12.1.5.5}) et
+(\hyperref[0.12.1.5.6-fr]{12.1.5
+
+[id 4724]
+OLD: &H^{p+q}(X',f^*(\mathcal H))
+NEW: &H^{p+q}(X',f^*(\mathcal K))
+FRENCH CONTEXT (corrected): 0.12.1.5.6-fr}
+\tag{12.1.5.6}
+\xymatrix@C=7pt{
+H^p(X',\psi^*(\mathcal F))
+\otimes_{\Gamma(X',\psi^*(\mathcal O_X))}
+H^q(X',\psi^*(\mathcal G))\ar[r]\ar[d]
+&H^{p+q}(X',\psi^*(\mathcal K))\ar[d]\\
+H^p(X',f^*(\mathcal F))\otimes_{A'}H^q(X',f^*(\mathcal G))\ar[r]
+&H^{p+q}(X',f^*(\mathcal K))
+}
+\]
+et par combinaison des trois diagrammes
+(\hyperref[0.12.1.5.4-fr]{12.1.5.4}),
+(\hyperref[0.12.1.5.5-fr]{12.1.5.5}) et
+(\hyperref[0.12.1.5.6-fr]{12.1.5.6}), on obtient le diagramme commutatif
+(\hyperref[0.12.1.5.2-fr]{12.1.5.2}) cherché.
+\end{env}
+
+\oldpa
+

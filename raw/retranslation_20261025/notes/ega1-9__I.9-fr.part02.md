@@ -1,0 +1,3 @@
+- TRANSCRIPTION? proof of (9.5.2) — the closed sub-prescheme called $Y'$ in (9.5.1)/(9.5.2) is written $X'$ throughout the proof (the competitor is $X''$); notation mismatch, possibly already in the original. Kept as in the French.
+- TRANSCRIPTION? (9.5.10) — the statement names the injection $i:Y\to X$, but the proof applies (9.5.1) "à l'injection $j$"; possibly original. Kept.
+- TERM épimorphisme → epimorphism; $\mathscr{B}$-Module quotient → quotient $\mathscr{B}$-module; préschéma image fermée → closed image prescheme; faisceau cohérent d'anneaux → coherent sheaf of rings.

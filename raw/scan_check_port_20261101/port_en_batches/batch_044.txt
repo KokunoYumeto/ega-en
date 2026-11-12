@@ -1,0 +1,2866 @@
+# English hand pass, batch_044: 160 items on 9 printed pages
+
+=================== PAGE IV-2 149 ===================
+----- English, source_aligned/ega4-6.tex, page IV-2 148 -----
+\oldpage[IV-2]{148}
+
+of $k$ \sref{IV.4.3.1}. Nevertheless, if $k'=k(a^{1/p})$, then $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not normal: in $k'[\mathrm{S}]$ one has $\mathrm{S}^p-a=(\mathrm{S}\setmin a^{1/p})^p$,
+and $\mathrm{X}'$ is therefore isomorphic to $\operatorname{Spec}(\mathrm{A}')$, where $\mathrm{A}'=k'[\mathrm{S}][t']$ and $t'$ is a root of $\mathrm{T}^2-\mathrm{S}^p$. The ring $\mathrm{A}'$ is not integrally closed: the element $t''=t'/\mathrm{S}$ of its field of fractions $\mathrm{K}'=k'(\mathrm{S})[t']$ satisfies the integral-dependence equation $t''^2-\mathrm{S}^{p-2}=0$
+over $\mathrm{A}'$, but does not belong to $\mathrm{A}'$. In classical terminology, the ``genus'' over $k'$ of the field $\mathrm{K}'$ of rational functions of $\mathrm{X}'$ is \emph{strictly smaller} than that of $\mathrm{K}$ over $k$.
+
+(ii) As recalled in (i), it follows from \sref{IV.4.6.1} that when $\mathrm{X}$ is not a geometrically reduced algebraic prescheme over $k$, there exist finite radicial extensions $k'$ of $k$ such that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is not reduced. It is interesting to give an example where $\mathrm{X}$ is a regular scheme over $k$, such that $k$ is \emph{algebraically closed} in the field $\mathrm{K}$ of rational functions of $\mathrm{X}$. Let $k$ be a field of characteristic $p>0$, in which there exist two elements $a$, $b$ forming a $p$-free family over $k^p$. Denoting again by $\mathrm{B}$ the ring $k[\mathrm{S},\mathrm{T}]$, consider this time the polynomial $\mathrm{P}(\mathrm{S},\mathrm{T})=\mathrm{T}^p-a\mathrm{S}^p-b$; as $a\mathrm{S}^p+b$ is not a $p$-th power in $k(\mathrm{S})$, $\mathrm{P}$ is irreducible as a polynomial of $k(\mathrm{S})[\mathrm{T}]$, and the scheme $\mathrm{X}_0=\operatorname{Spec}(\mathrm{B}/\mathrm{PB})$ is therefore an integral affine curve over $k$, whose field of rational functions is $\mathrm{K}=k(\mathrm{S})[t]$, where $t$ is a root of $\mathrm{P}$; let us show that $k$ is \emph{algebraically closed} in $\mathrm{K}$. Suppose indeed that $\mathrm{K}$ contains an element $z$ algebraic over $k$ and not in $k$; one would then also have $z\notin k(\mathrm{S})$, so $[k(\mathrm{S})[z]:k(\mathrm{S})]>1$; as $[\mathrm{K}:k(\mathrm{S})]=p$, and as $\mathrm{K}$ is radicial over $k(\mathrm{S})$, one would have $z^p\in k(\mathrm{S})$, so $c=z^p\in k$ since $z$ is algebraic over $k$; but then one would have $t^p=a\mathrm{S}^p+b\in k^p(\mathrm{S}^p)(c)$ hence $a$ and $b$ would belong to $k^p(c)$, which is absurd. So $\mathrm{X}$ is the normalisation of the curve $\mathrm{X}_0$ in $\mathrm{K}$, which is therefore a normal curve (and hence \emph{regular}) over $k$. If $k'=k(a^{1/p},b^{1/p})$, it is clear that $a\mathrm{S}^p+b$ is a $p$-th power in $k'(\mathrm{S})$, hence $\mathrm{K}\otimes_k k'$ is \emph{not reduced}, nor \emph{a fortiori} the scheme $\mathrm{X}\otimes_k k'$.
+\end{remarks}
+
+\begin{definition}[6.7.6]
+\label{IV.6.7.6}
+Let $k$ be a field, $\mathrm{X}$ a $k$-prescheme locally Noetherian. We say that $\mathrm{X}$ is \emph{geometrically regular} at a point $x$ (resp.\ has the property $(\mathrm{R}_n)$ \emph{geometric}) at a point $x$, resp.\ is geometrically normal at a point $x$) if, \emph{for every} finite extension $k'$ of $k$, $\mathrm{X}'=\mathrm{X}_{(k')}=\mathrm{X}\otimes_k k'$ is regular (resp.\ has the property $(\mathrm{R}_n)$\textup{, resp.}\ is normal) at every point $x'$ of $\mathrm{X}'$ whose projection in $\mathrm{X}$ is $x$. We say that $\mathrm{X}$ is \emph{geometrically regular} (resp.\ has the property $(\mathrm{R}_n)$ \emph{geometric}, or equivalently is geometrically regular in codimension $\leqslant n$)\textup{, resp.}\ is \emph{geometrically normal}) if $\mathrm{X}$ is geometrically regular (resp.\ has the property $(\mathrm{R}_n)$ geometric, resp.\ is geometrically normal) at every point.
+
+We say that an algebra $\mathrm{A}$ over $k$ is a \emph{geometrically regular ring} (resp.\ geometrically normal, resp.\ geometrically reduced, resp.\ having the property $(\mathrm{R}_n)$ geometric) if $\operatorname{Spec}(\mathrm{A})$ has the same property.
+
+If $\mathrm{X}=\operatorname{Spec}(\mathrm{K})$, where $\mathrm{K}$ is an extension of $k$, then saying that $\mathrm{X}$ is geometrically regular, or geometrically normal, or \emph{geometrically reduced}, amounts to saying that $\mathrm{K}$ is a \emph{separable} extension of $k$: this follows from \sref{IV.4.6.1} and the fact that if $\mathrm{K}$ is a separable extension of $k$ and $k'$ a finite extension of $k$, $\mathrm{K}\otimes_k k'$ is composed of a direct product of a finite number of fields (Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no~3, cor.~1 of th.~1).
+\end{definition}
+----- English, source_aligned/ega4-6.tex, page IV-2 149 -----
+\oldpage[IV-2]{149}
+
+\begin{proposition}[6.7.7]
+\label{IV.6.7.7}
+Let $k$ be a field, $\mathrm{X}$ a $k$-prescheme locally Noetherian, $x$ a point of $\mathrm{X}$; denote by $\boldsymbol{Q}(k')$ the relation ``$k'$ is an extension of $k$, and $\boldsymbol{P}(\mathrm{X}_{(k')},x')$ is true for every point $x'$ of $\mathrm{X}_{(k')}$ whose projection in $\mathrm{X}$ is $x$'', where $\boldsymbol{P}(\mathrm{Z},z)$ is one of the properties \emph{a)}, \emph{b)}, \emph{c)} of the statement \sref{IV.6.7.4}. Then the following properties are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\boldsymbol{Q}(k')$ is true for every finite extension $k'$ of $k$.
+  \item $\boldsymbol{Q}(k')$ is true for every finite radicial extension $k'$ of $k$.
+  \item $\boldsymbol{Q}(k')$ is true for every extension of finite type $k'$ of $k$.
+\end{enumerate}
+Suppose in addition that $\mathrm{X}$ is locally of finite type over $k$; then the three preceding properties are also equivalent to the following:
+\begin{enumerate}[label=\emph{\alph*)}]
+\setcounter{enumi}{3}
+  \item $\boldsymbol{Q}(k')$ is true for every extension $k'$ of $k$.
+  \item $\boldsymbol{Q}(k')$ is true for a perfect extension $k'$ of $k$.
+  \item $\boldsymbol{Q}(k')$ is true for every extension $k'=k^{p^{-s}}$, where $p$ is the characteristic exponent of $k$, and $s>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+To prove the equivalence of $a)$, $b)$ and $c)$, it clearly suffices to show that $b)$ implies $c)$. Let $\mathrm{K}$ be an extension of finite type of $k$, which is then the field of fractions of a $k$-algebra of finite type $\mathrm{A}$; set $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$. We know \sref{IV.4.6.6} that there exists a finite and radicial extension $k'$ of $k$ such that $\mathrm{Y}'=(\mathrm{Y}\otimes_k k')_{\mathrm{red}}$ is separable over $k'$; if $\eta'$ is the generic point of $\mathrm{Y}'$, $\mathrm{K}'=\boldsymbol{k}(\eta')$ is a separable extension of $k'$ by \sref{IV.4.6.1}. This being so, $\boldsymbol{P}(\mathrm{X}_{(k')},x')$ is true by hypothesis for every point $x'$ of $\mathrm{X}_{(k')}$ above $x$, so it follows from \sref{IV.6.7.4} that $\boldsymbol{P}(\mathrm{X}_{(\mathrm{K}')},x'')$ is true for every point $x''$ of $\mathrm{X}_{(\mathrm{K}')}$ above $x$, since $\mathrm{X}_{(\mathrm{K}')}=(\mathrm{X}_{(k')})_{(\mathrm{K}')}$, $x''$ is above a point $x'$ of $\mathrm{X}_{(k')}$, itself above $x$, and $\mathrm{K}'$ is separable over $k'$. But we also have $\mathrm{X}_{(\mathrm{K}')}=(\mathrm{X}_{(\mathrm{K})})_{(\mathrm{K}')}$ and for every $x_0\in\mathrm{X}_{(\mathrm{K})}$ above $x$, there exists $x''\in\mathrm{X}_{(\mathrm{K}')}$ above $x_0$; it therefore follows from \sref{IV.6.7.4} that $\boldsymbol{P}(\mathrm{X}_{(\mathrm{K})},x_0)$ is true.
+
+Suppose now that $\mathrm{X}$ is locally of finite type over $k$, so that for \emph{every} extension $\mathrm{K}$ of $k$, $\mathrm{X}_{(\mathrm{K})}$ is locally Noetherian. As a radicial extension of $k$ is isomorphic to a sub-extension of a perfect extension of $k$, it follows immediately from \sref{IV.6.7.4} that $e)$ implies $f)$; also, every finite radicial extension of $k$ is contained in an extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, so $f)$ implies $b)$; $d)$ trivially implies $e)$, and finally $e)$ implies $d)$. Indeed, if $\mathrm{K}$ is any extension \emph{whatever} of $k$, there exists an extension $\mathrm{K}'$ of $k$ containing (up to $k$-isomorphisms) $k'$ and $\mathrm{K}$; since $\mathrm{K}'$ is a separable extension of $k'$, one deduces from \sref{IV.6.7.4} that $\boldsymbol{Q}(k')$ is true, then that $Q(\mathrm{K})$ is true, reasoning as in the first part of the proof. It therefore suffices to prove that $b)$ \emph{implies} $e)$. We shall take $k'=k^{p^{-\infty}}$ in $e)$.
+
+The question being local on $\mathrm{X}$, one can furthermore limit oneself to the case where $\mathrm{X}$ is affine and of finite type over $k$, by replacing $\mathrm{X}$ by a neighbourhood of $x$; let then $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}$ is a $k$-algebra of finite type; furthermore, by definition of the property $\boldsymbol{P}$ in the cases considered, one can also replace $\mathrm{X}$ by the local scheme of $\mathrm{X}$ at the point $x$, hence suppose that $\mathrm{B}$ is a \emph{local} Noetherian ring. Set $\mathrm{B}'=\mathrm{B}\otimes_k k'$; $k'$ is the inductive limit of its finite sub-extensions $k'_\lambda$ and if one sets $\mathrm{B}'_\lambda=\mathrm{B}\otimes_k k'_\lambda$, the morphism $f_\lambda:\operatorname{Spec}(\mathrm{B}')\to\operatorname{Spec}(\mathrm{B}'_\lambda)$ is a \emph{homeomorphism} of $\operatorname{Spec}(\mathrm{B}')$ onto $\operatorname{Spec}(\mathrm{B}'_\lambda)$ for every $\lambda$;
+----- English, source_aligned/ega4-6.tex, page IV-2 150 -----
+\oldpage[IV-2]{150}
+
+indeed $f_\lambda$ is bijective by virtue of \sref[I]{I.3.5.2}, \sref{I.3.5.7} and \sref{I.3.5.8}; on the other hand, it is closed by \sref[II]{II.6.1.10}. One can now apply \sref{IV.5.13.6} which proves (by virtue of the hypothesis $b)$) that $b)$ implies $e)$ when $\boldsymbol{P}(\mathrm{Z},z)$ is the property $(\mathrm{R}_n)$ at the point $z$. The case where $\boldsymbol{P}$ is the property of being regular (i.e.\ of having the property $(\mathrm{R}_n)$ for every $n$) follows trivially. Finally, taking into account Serre's normality criterion \sref{IV.5.8.6}, $b)$ implies $e)$ further when $\boldsymbol{P}(\mathrm{Z},z)$ is the property of being normal at the point $z$, since this is equivalent to saying that $\mathrm{Z}$ has at the point $z$ the properties $(\mathrm{S}_2)$ and $(\mathrm{R}_1)$: one applies what precedes for $n=1$, and \sref{IV.6.7.2},~(ii) for $n=2$.
+\end{proof}
+
+\begin{corollary}[6.7.8]
+\label{IV.6.7.8}
+Let $k$ be a field; for a $k$-prescheme locally Noetherian $\mathrm{X}$ and a point $x\in\mathrm{X}$, denote by $\boldsymbol{P}(\mathrm{X},x)$ any of the following properties:
+\begin{enumerate}[label=(\roman*)]
+  \item $\operatorname{coprof}(\sh{O}_x)\leqslant n$.
+  \item $\sh{O}_x$ is a Cohen-Macaulay ring.
+  \item $\mathrm{X}$ satisfies the property $(\mathrm{S}_n)$ at the point $x$.
+  \item $\mathrm{X}$ is geometrically regular at the point $x$.
+  \item $\mathrm{X}$ has the property $(\mathrm{R}_n)$ geometric at the point $x$.
+  \item $\mathrm{X}$ is geometrically normal at the point $x$.
+  \item $\mathrm{X}$ is geometrically reduced (i.e.\ separable) at the point $x$.
+\end{enumerate}
+Let $k'$ be an extension of $k$; one supposes either that $k'$ is of finite type, or that $\mathrm{X}$ is locally of finite type over $k$, so that $\mathrm{X}'=\mathrm{X}\otimes_k k'$ is locally Noetherian. Let $x'$ be a point of $\mathrm{X}'$ whose projection in $\mathrm{X}$ is $x$. Then, for $\boldsymbol{P}(\mathrm{X},x)$ to be true, it is necessary and sufficient that $\boldsymbol{P}(\mathrm{X}',x')$ be so.
+\end{corollary}
+
+\begin{proof}
+This has already been seen for property (vii) \sref{IV.4.6.11}, and for properties (i), (ii), and (iii) \sref{IV.6.7.1}. For (iv), (v), and (vi), this follows from \sref{IV.6.7.7}: the necessity follows from the equivalence of criteria $a)$ and $c)$, and from the equivalence of $c)$ and $d)$ when $\mathrm{X}$ is locally of finite type over $k$. To prove sufficiency, let $k''$ be a finite radicial extension of $k$; one may regard $k'$ and $k''$ as subextensions of an extension $\mathrm{K}$ of $k$. Set $\mathrm{X}''=\mathrm{X}\otimes_k k''$ and $\mathrm{X}_0=\mathrm{X}\otimes_k\mathrm{K}$, and note that, since $k''$ is radicial over $k$, there is only \emph{one} point $x''$ of $\mathrm{X}''$ above $x$ \sref[I]{I.3.5.7} and \sref{I.3.5.8}. Let $x_0$ be any point of $\mathrm{X}_0$ above $x'$. If $\boldsymbol{P}(\mathrm{X}',x')$ is true, then so is $\boldsymbol{P}(\mathrm{X}_0,x_0)$ by \sref{IV.6.7.7},~$c)$ and $d)$ (if $k'$ is of finite type over $k$, one may suppose the same of $\mathrm{K}$; if $\mathrm{X}$ is locally of finite type over $k$, then $\mathrm{X}'$ is locally of finite type over $k'$). It follows from \sref{IV.6.7.4} that $\boldsymbol{Q}(k'')$ is true (with the notation of \sref{IV.6.7.7}), and hence $\boldsymbol{P}(\mathrm{X},x)$ is true by \sref{IV.6.7.7},~$b)$.
+\end{proof}
+
+\subsection{Regular, normal, reduced, smooth morphisms}
+\label{subsection:IV.6.8}
+
+\begin{definition}[6.8.1]
+\label{IV.6.8.1}
+Let $\mathrm{X}$, $\mathrm{Y}$ be two preschemes, $f:\mathrm{X}\to\mathrm{Y}$ a morphism such that the fibre $f^{-1}(y)$ is a locally Noetherian prescheme for every $y\in\mathrm{Y}$, $x$ a point of $\mathrm{X}$. We say that $f$ is respectively a morphism:
+\begin{enumerate}[label=(\roman*)]
+  \item of coprofundity $\leqslant n$ at the point $x$;
+  \item of Cohen-Macaulay at the point $x$;
+----- French corrections on page IV-2 149 -----
+[id 15276]
+OLD: $P(X_{(k')},x')$ est vraie pour
+NEW: $\boldsymbol{P}(X_{(k')},x')$ est vraie pour
+FRENCH CONTEXT (corrected): , cor. 1 du th. 1).
+
+\oldpage[IV-2]{149}
+
+\begin{proposition}[6.7.7]
+\label{IV.2.s6.7.7-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $x$ un
+point de $X$; désignons par $\boldsymbol{Q}(k')$ la relation «$k'$ est une extension de
+$k$, et $\boldsymbol{P}(X_{(k')},x')$ est vraie pour tout point $x'$ de $X_{(k')}$ dont
+$x$ est la projection dans $X$», où $\boldsymbol{P}(Z,z)$ est une des propriétés \textup{a),
+b), c)} de l'énoncé \textup{(6.7.4)}. Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\bold
+
+[id 15277]
+OLD: où $P(Z,z)$
+NEW: où $\boldsymbol{P}(Z,z)$
+FRENCH CONTEXT (corrected): $X$ un $k$-préschéma localement noethérien, $x$ un
+point de $X$; désignons par $\boldsymbol{Q}(k')$ la relation «$k'$ est une extension de
+$k$, et $\boldsymbol{P}(X_{(k')},x')$ est vraie pour tout point $x'$ de $X_{(k')}$ dont
+$x$ est la projection dans $X$», où $\boldsymbol{P}(Z,z)$ est une des propriétés \textup{a),
+b), c)} de l'énoncé \textup{(6.7.4)}. Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie $k'$ de $k$.
+\item[\textup{b)}] $\boldsym
+
+[id 15278]
+OLD: propriétés a),
+b), c) de
+NEW: propriétés \textup{a),
+b), c)} de
+FRENCH CONTEXT (corrected): érien, $x$ un
+point de $X$; désignons par $\boldsymbol{Q}(k')$ la relation «$k'$ est une extension de
+$k$, et $\boldsymbol{P}(X_{(k')},x')$ est vraie pour tout point $x'$ de $X_{(k')}$ dont
+$x$ est la projection dans $X$», où $\boldsymbol{P}(Z,z)$ est une des propriétés \textup{a),
+b), c)} de l'énoncé \textup{(6.7.4)}. Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie $k'$ de $k$.
+\item[\textup{b)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension fin
+
+[id 15280]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): (k')},x')$ est vraie pour tout point $x'$ de $X_{(k')}$ dont
+$x$ est la projection dans $X$», où $\boldsymbol{P}(Z,z)$ est une des propriétés \textup{a),
+b), c)} de l'énoncé \textup{(6.7.4)}. Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie $k'$ de $k$.
+\item[\textup{b)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie radicielle $k'$ de $k$.
+\item[\textup{c)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension de type fini $k'
+
+[id 15281]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): $», où $\boldsymbol{P}(Z,z)$ est une des propriétés \textup{a),
+b), c)} de l'énoncé \textup{(6.7.4)}. Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie $k'$ de $k$.
+\item[\textup{b)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie radicielle $k'$ de $k$.
+\item[\textup{c)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension de type fini $k'$ de $k$.
+\end{enumerate}
+Supposons en outre que $X$ soit localement de type fini sur $k$;
+
+[id 15282]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected):  Alors les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie $k'$ de $k$.
+\item[\textup{b)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension finie radicielle $k'$ de $k$.
+\item[\textup{c)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension de type fini $k'$ de $k$.
+\end{enumerate}
+Supposons en outre que $X$ soit localement de type fini sur $k$; alors les
+trois propriétés précédentes sont aussi équivalentes aux suivantes:
+\begin{enumerate}
+\ite
+
+[id 15283]
+OLD: \item[d)]
+NEW: \item[\textup{d)}]
+FRENCH CONTEXT (corrected): c)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension de type fini $k'$ de $k$.
+\end{enumerate}
+Supposons en outre que $X$ soit localement de type fini sur $k$; alors les
+trois propriétés précédentes sont aussi équivalentes aux suivantes:
+\begin{enumerate}
+\item[\textup{d)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'$ de $k$.
+\item[\textup{e)}] $\boldsymbol{Q}(k')$ est vraie pour \textup{une} extension parfaite $k'$ de $k$.
+\item[\textup{f)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$
+
+[id 15284]
+OLD: \item[e)]
+NEW: \item[\textup{e)}]
+FRENCH CONTEXT (corrected): end{enumerate}
+Supposons en outre que $X$ soit localement de type fini sur $k$; alors les
+trois propriétés précédentes sont aussi équivalentes aux suivantes:
+\begin{enumerate}
+\item[\textup{d)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'$ de $k$.
+\item[\textup{e)}] $\boldsymbol{Q}(k')$ est vraie pour \textup{une} extension parfaite $k'$ de $k$.
+\item[\textup{f)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$ est
+l'exposant caractéristique de $k$, et $s>0$.
+\end{enumerate}
+\end{proposition}
+
+
+[id 15285]
+OLD: \item[f)]
+NEW: \item[\textup{f)}]
+FRENCH CONTEXT (corrected): riétés précédentes sont aussi équivalentes aux suivantes:
+\begin{enumerate}
+\item[\textup{d)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'$ de $k$.
+\item[\textup{e)}] $\boldsymbol{Q}(k')$ est vraie pour \textup{une} extension parfaite $k'$ de $k$.
+\item[\textup{f)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$ est
+l'exposant caractéristique de $k$, et $s>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Pour prouver l'équivalence de \emph{a)}, \emph{b)} et \emph{c)}, il suffit évidemment
+
+[id 15292]
+OLD: une extension parfaite
+NEW: \textup{une} extension parfaite
+FRENCH CONTEXT (corrected): nt de type fini sur $k$; alors les
+trois propriétés précédentes sont aussi équivalentes aux suivantes:
+\begin{enumerate}
+\item[\textup{d)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'$ de $k$.
+\item[\textup{e)}] $\boldsymbol{Q}(k')$ est vraie pour \textup{une} extension parfaite $k'$ de $k$.
+\item[\textup{f)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$ est
+l'exposant caractéristique de $k$, et $s>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Pour prouver l'équivalence de \emph{a)}, \emph{b)} et
+
+[id 15293]
+OLD: l'équivalence de a), b) et c), il
+NEW: l'équivalence de \emph{a)}, \emph{b)} et \emph{c)}, il
+FRENCH CONTEXT (corrected): aie pour \textup{une} extension parfaite $k'$ de $k$.
+\item[\textup{f)}] $\boldsymbol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$ est
+l'exposant caractéristique de $k$, et $s>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Pour prouver l'équivalence de \emph{a)}, \emph{b)} et \emph{c)}, il suffit évidemment d'établir
+que \emph{b)} entraîne \emph{c)}. Soit donc $K$ une extension de type fini de $k$, qui est
+par suite le corps des fractions d'une $k$-algèbre de type fini $A$; posons
+$Y=\operatorname{Spec}(A)$. On sait (4.6.6) qu'il existe une ext
+
+[id 15294]
+OLD: que b) entraîne c). Soit
+NEW: que \emph{b)} entraîne \emph{c)}. Soit
+FRENCH CONTEXT (corrected): ol{Q}(k')$ est vraie pour toute extension $k'=k^{p^{-s}}$, où $p$ est
+l'exposant caractéristique de $k$, et $s>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Pour prouver l'équivalence de \emph{a)}, \emph{b)} et \emph{c)}, il suffit évidemment d'établir
+que \emph{b)} entraîne \emph{c)}. Soit donc $K$ une extension de type fini de $k$, qui est
+par suite le corps des fractions d'une $k$-algèbre de type fini $A$; posons
+$Y=\operatorname{Spec}(A)$. On sait (4.6.6) qu'il existe une extension finie
+et radicielle $k'$ de $k$ telle que $Y'=(Y\otimes_k k'
+
+[id 15296]
+OLD: $P(X_{(k')},x')$ est vraie par
+NEW: $\boldsymbol{P}(X_{(k')},x')$ est vraie par
+FRENCH CONTEXT (corrected): u'il existe une extension finie
+et radicielle $k'$ de $k$ telle que $Y'=(Y\otimes_k k')_{\mathrm{red}}$ soit
+séparable sur $k'$; si $\eta'$ est le point générique de $Y'$, $K'=\boldsymbol{k}(\eta')$
+est une extension séparable de $k'$ par (4.6.1). Cela étant,
+$\boldsymbol{P}(X_{(k')},x')$ est vraie par hypothèse pour tout point $x'$ de $X_{(k')}$
+au-dessus de $x$, donc il résulte de (6.7.4) que $\boldsymbol{P}(X_{(K')},x'')$ est vraie
+pour tout point $x''$ de $X_{(K')}$ au-dessus de $x$, puisque
+$X_{(K')}=(X_{(k')})_{(K')}$, que $x''$ est au-dessus d'un poi
+
+[id 15297]
+OLD: $P(X_{(K')},x'')$
+NEW: $\boldsymbol{P}(X_{(K')},x'')$
+FRENCH CONTEXT (corrected): $ est le point générique de $Y'$, $K'=\boldsymbol{k}(\eta')$
+est une extension séparable de $k'$ par (4.6.1). Cela étant,
+$\boldsymbol{P}(X_{(k')},x')$ est vraie par hypothèse pour tout point $x'$ de $X_{(k')}$
+au-dessus de $x$, donc il résulte de (6.7.4) que $\boldsymbol{P}(X_{(K')},x'')$ est vraie
+pour tout point $x''$ de $X_{(K')}$ au-dessus de $x$, puisque
+$X_{(K')}=(X_{(k')})_{(K')}$, que $x''$ est au-dessus d'un point $x'$ de
+$X_{(k')}$, lui-même au-dessus de $x$, et que $K'$ est séparable sur $k'$.
+Mais on a aussi
+$X_{(K')}=(X_{(K)})_{(K
+
+[id 15298]
+OLD: (X_{(K)})_{(K')}$ et, pour tout
+NEW: (X_{(K)})_{(K')}$ et pour tout
+FRENCH CONTEXT (corrected): _{(K')},x'')$ est vraie
+pour tout point $x''$ de $X_{(K')}$ au-dessus de $x$, puisque
+$X_{(K')}=(X_{(k')})_{(K')}$, que $x''$ est au-dessus d'un point $x'$ de
+$X_{(k')}$, lui-même au-dessus de $x$, et que $K'$ est séparable sur $k'$.
+Mais on a aussi
+$X_{(K')}=(X_{(K)})_{(K')}$ et pour tout $x_0\in X_{(K)}$ au-dessus de
+$x$, il existe $x''\in X_{(K')}$ au-dessus de $x_0$; il résulte donc de
+(6.7.4) que $\boldsymbol{P}(X_{(K)},x_0)$ est vraie.
+
+Supposons maintenant $X$ localement de type fini sur $k$, de sorte que pour
+\emph{toute} extension $K$ 
+
+[id 15299]
+OLD: $P(X_{(K)},x_0)$
+NEW: $\boldsymbol{P}(X_{(K)},x_0)$
+FRENCH CONTEXT (corrected): point $x'$ de
+$X_{(k')}$, lui-même au-dessus de $x$, et que $K'$ est séparable sur $k'$.
+Mais on a aussi
+$X_{(K')}=(X_{(K)})_{(K')}$ et pour tout $x_0\in X_{(K)}$ au-dessus de
+$x$, il existe $x''\in X_{(K')}$ au-dessus de $x_0$; il résulte donc de
+(6.7.4) que $\boldsymbol{P}(X_{(K)},x_0)$ est vraie.
+
+Supposons maintenant $X$ localement de type fini sur $k$, de sorte que pour
+\emph{toute} extension $K$ de $k$, $X_{(K)}$ est localement noethérien. Comme une
+extension radicielle de $k$ est isomorphe à une sous-extension d'une extension
+parfaite q
+
+[id 15300]
+OLD: de sorte que, pour
+NEW: de sorte que pour
+FRENCH CONTEXT (corrected): ussi
+$X_{(K')}=(X_{(K)})_{(K')}$ et pour tout $x_0\in X_{(K)}$ au-dessus de
+$x$, il existe $x''\in X_{(K')}$ au-dessus de $x_0$; il résulte donc de
+(6.7.4) que $\boldsymbol{P}(X_{(K)},x_0)$ est vraie.
+
+Supposons maintenant $X$ localement de type fini sur $k$, de sorte que pour
+\emph{toute} extension $K$ de $k$, $X_{(K)}$ est localement noethérien. Comme une
+extension radicielle de $k$ est isomorphe à une sous-extension d'une extension
+parfaite quelconque de $k$, il résulte aussitôt de (6.7.4) que \emph{e)} implique \emph{f)};
+de mê
+
+[id 15301]
+OLD: toute extension $K$ de $k$, $X_{(K)}$
+NEW: \emph{toute} extension $K$ de $k$, $X_{(K)}$
+FRENCH CONTEXT (corrected): {(K)})_{(K')}$ et pour tout $x_0\in X_{(K)}$ au-dessus de
+$x$, il existe $x''\in X_{(K')}$ au-dessus de $x_0$; il résulte donc de
+(6.7.4) que $\boldsymbol{P}(X_{(K)},x_0)$ est vraie.
+
+Supposons maintenant $X$ localement de type fini sur $k$, de sorte que pour
+\emph{toute} extension $K$ de $k$, $X_{(K)}$ est localement noethérien. Comme une
+extension radicielle de $k$ est isomorphe à une sous-extension d'une extension
+parfaite quelconque de $k$, il résulte aussitôt de (6.7.4) que \emph{e)} implique \emph{f)};
+de même, toute extension finie radicielle de $k$ e
+
+[id 15302]
+OLD: que e) implique f);
+NEW: que \emph{e)} implique \emph{f)};
+FRENCH CONTEXT (corrected): de type fini sur $k$, de sorte que pour
+\emph{toute} extension $K$ de $k$, $X_{(K)}$ est localement noethérien. Comme une
+extension radicielle de $k$ est isomorphe à une sous-extension d'une extension
+parfaite quelconque de $k$, il résulte aussitôt de (6.7.4) que \emph{e)} implique \emph{f)};
+de même, toute extension finie radicielle de $k$ est contenue dans une
+extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, donc \emph{f)} entraîne \emph{b)}; \emph{d)} entraîne
+trivialement \emph{e)}, et enfin \emph{e)} entraîne \emph{d)}. En effet, si $K$ est une
+
+[id 15303]
+OLD: donc f) entraîne b); d) entraîne
+trivialement e), et enfin e) entraîne d).
+NEW: donc \emph{f)} entraîne \emph{b)}; \emph{d)} entraîne
+trivialement \emph{e)}, et enfin \emph{e)} entraîne \emph{d)}.
+FRENCH CONTEXT (corrected): t isomorphe à une sous-extension d'une extension
+parfaite quelconque de $k$, il résulte aussitôt de (6.7.4) que \emph{e)} implique \emph{f)};
+de même, toute extension finie radicielle de $k$ est contenue dans une
+extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, donc \emph{f)} entraîne \emph{b)}; \emph{d)} entraîne
+trivialement \emph{e)}, et enfin \emph{e)} entraîne \emph{d)}. En effet, si $K$ est une extension
+\emph{quelconque} de $k$,
+il existe une extension $K'$ de $k$ contenant (à des $k$-isomorphismes près)
+$k'$ et $K$; comme $K'$ est extension \emph{séparable} de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, 
+
+[id 15304]
+OLD: extension
+quelconque de $k$,
+NEW: extension
+\emph{quelconque} de $k$,
+FRENCH CONTEXT (corrected): de même, toute extension finie radicielle de $k$ est contenue dans une
+extension $k^{p^{-s}}\subset k^{p^{-\infty}}$, donc \emph{f)} entraîne \emph{b)}; \emph{d)} entraîne
+trivialement \emph{e)}, et enfin \emph{e)} entraîne \emph{d)}. En effet, si $K$ est une extension
+\emph{quelconque} de $k$,
+il existe une extension $K'$ de $k$ contenant (à des $k$-isomorphismes près)
+$k'$ et $K$; comme $K'$ est extension \emph{séparable} de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$ est vraie, en raisonnant comme d
+
+[id 15305]
+OLD: est extension séparable de $k'$
+NEW: est extension \emph{séparable} de $k'$
+FRENCH CONTEXT (corrected): aîne \emph{b)}; \emph{d)} entraîne
+trivialement \emph{e)}, et enfin \emph{e)} entraîne \emph{d)}. En effet, si $K$ est une extension
+\emph{quelconque} de $k$,
+il existe une extension $K'$ de $k$ contenant (à des $k$-isomorphismes près)
+$k'$ et $K$; comme $K'$ est extension \emph{séparable} de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$ est vraie, en raisonnant comme dans la
+première partie de la démonstration. Il suffit donc de prouver que \emph{b) entraîne
+e)}. Nous prendrons $k'=k^{p^{-\infty}}$ dans \e
+
+[id 15306]
+OLD: que $Q(k')$ est vraie, puis que $Q(K)$
+NEW: que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$
+FRENCH CONTEXT (corrected):  enfin \emph{e)} entraîne \emph{d)}. En effet, si $K$ est une extension
+\emph{quelconque} de $k$,
+il existe une extension $K'$ de $k$ contenant (à des $k$-isomorphismes près)
+$k'$ et $K$; comme $K'$ est extension \emph{séparable} de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$ est vraie, en raisonnant comme dans la
+première partie de la démonstration. Il suffit donc de prouver que \emph{b) entraîne
+e)}. Nous prendrons $k'=k^{p^{-\infty}}$ dans \emph{e)}.
+
+La question étant locale sur $X$, on peut en outre se borner au cas où $X$
+es
+
+[id 15307]
+OLD: prouver que b) entraîne
+e). Nous
+NEW: prouver que \emph{b) entraîne
+e)}. Nous
+FRENCH CONTEXT (corrected): orphismes près)
+$k'$ et $K$; comme $K'$ est extension \emph{séparable} de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$ est vraie, en raisonnant comme dans la
+première partie de la démonstration. Il suffit donc de prouver que \emph{b) entraîne
+e)}. Nous prendrons $k'=k^{p^{-\infty}}$ dans \emph{e)}.
+
+La question étant locale sur $X$, on peut en outre se borner au cas où $X$
+est affine et de type fini sur $k$, en remplaçant $X$ par un voisinage de $x$;
+soit donc $X=\operatorname{Spec}(B)$, où $B$ est une $k$-
+
+[id 15308]
+OLD: dans e).
+NEW: dans \emph{e)}.
+FRENCH CONTEXT (corrected): de $k'$, on déduit de (6.7.4)
+que $\boldsymbol{Q}(k')$ est vraie, puis que $\boldsymbol{Q}(K)$ est vraie, en raisonnant comme dans la
+première partie de la démonstration. Il suffit donc de prouver que \emph{b) entraîne
+e)}. Nous prendrons $k'=k^{p^{-\infty}}$ dans \emph{e)}.
+
+La question étant locale sur $X$, on peut en outre se borner au cas où $X$
+est affine et de type fini sur $k$, en remplaçant $X$ par un voisinage de $x$;
+soit donc $X=\operatorname{Spec}(B)$, où $B$ est une $k$-algèbre de type fini;
+en outre, par définition 
+
+[id 15309]
+OLD: propriété $P$ dans
+NEW: propriété $\boldsymbol{P}$ dans
+FRENCH CONTEXT (corrected): uestion étant locale sur $X$, on peut en outre se borner au cas où $X$
+est affine et de type fini sur $k$, en remplaçant $X$ par un voisinage de $x$;
+soit donc $X=\operatorname{Spec}(B)$, où $B$ est une $k$-algèbre de type fini;
+en outre, par définition de la propriété $\boldsymbol{P}$ dans les cas considérés, on peut
+aussi remplacer $X$ par le schéma local de $X$ au point $x$, donc supposer que
+$B$ est un anneau \emph{local} noethérien. Posons $B'=B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si 
+
+[id 15310]
+OLD: un anneau local noethérien
+NEW: un anneau \emph{local} noethérien
+FRENCH CONTEXT (corrected): $;
+soit donc $X=\operatorname{Spec}(B)$, où $B$ est une $k$-algèbre de type fini;
+en outre, par définition de la propriété $\boldsymbol{P}$ dans les cas considérés, on peut
+aussi remplacer $X$ par le schéma local de $X$ au point $x$, donc supposer que
+$B$ est un anneau \emph{local} noethérien. Posons $B'=B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si l'on pose
+$B'_\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomo
+
+[id 15311]
+OLD: sous-extensions finies $k'_\lambda$
+NEW: sous-extensions \emph{finies} $k'_\lambda$
+FRENCH CONTEXT (corrected):  définition de la propriété $\boldsymbol{P}$ dans les cas considérés, on peut
+aussi remplacer $X$ par le schéma local de $X$ au point $x$, donc supposer que
+$B$ est un anneau \emph{local} noethérien. Posons $B'=B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si l'on pose
+$B'_\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomorphisme} de $\operatorname{Spec}(B')$ \emph{sur}
+$\operatorname{Spec}(B'_\lambda)$ pour tout $\lambda$;
+
+
+[id 15312]
+OLD: $k'_\lambda$ et, si l'on pose
+NEW: $k'_\lambda$ et si l'on pose
+FRENCH CONTEXT (corrected): boldsymbol{P}$ dans les cas considérés, on peut
+aussi remplacer $X$ par le schéma local de $X$ au point $x$, donc supposer que
+$B$ est un anneau \emph{local} noethérien. Posons $B'=B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si l'on pose
+$B'_\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomorphisme} de $\operatorname{Spec}(B')$ \emph{sur}
+$\operatorname{Spec}(B'_\lambda)$ pour tout $\lambda$;
+\oldpage[IV-2]{1
+
+[id 15313]
+OLD: un homéomorphisme de
+NEW: un \emph{homéomorphisme} de
+FRENCH CONTEXT (corrected): ocal} noethérien. Posons $B'=B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si l'on pose
+$B'_\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomorphisme} de $\operatorname{Spec}(B')$ \emph{sur}
+$\operatorname{Spec}(B'_\lambda)$ pour tout $\lambda$;
+\oldpage[IV-2]{150}
+en effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut ma
+
+[id 15314]
+OLD: $\operatorname{Spec}(B')$ sur
+
+NEW: $\operatorname{Spec}(B')$ \emph{sur}
+
+FRENCH CONTEXT (corrected): =B\otimes_k k'$; $k'$ est
+limite inductive de ses sous-extensions \emph{finies} $k'_\lambda$ et si l'on pose
+$B'_\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomorphisme} de $\operatorname{Spec}(B')$ \emph{sur}
+$\operatorname{Spec}(B'_\lambda)$ pour tout $\lambda$;
+\oldpage[IV-2]{150}
+en effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve
+
+=================== PAGE IV-2 150 ===================
+----- (English page IV-2 149: shown above in this file) -----
+----- (English page IV-2 150: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 151 -----
+\oldpage[IV-2]{151}
+  \item $(\mathrm{S}_n)$ at the point $x$;
+  \item regular at the point $x$;
+  \item $(\mathrm{R}_n)$ at the point $x$;
+  \item normal at the point $x$;
+  \item reduced at the point $x$;
+\end{enumerate}
+if $f$ is flat at the point $x$, and if in addition the corresponding property $\boldsymbol{P}(f^{-1}(f(x)),x)$ \textnormal{(}notation of \sref{IV.6.7.8}\textnormal{)} is true.
+
+We say that $f$ is \emph{smooth} at the point $x$ if it is locally of finite presentation in a neighbourhood of $x$ and if it is regular at the point $x$. We say respectively that $f$ is a morphism: of coprofundity $\leqslant n$, of Cohen-Macaulay, $(\mathrm{S}_n)$, regular, $(\mathrm{R}_n)$, normal, reduced, smooth, if it has the corresponding property at every point of $\mathrm{X}$.
+\end{definition}
+
+\begin{proposition}[6.8.2]
+\label{IV.6.8.2}
+Let $\mathrm{X}$, $\mathrm{Y}$ be two locally Noetherian preschemes, $f:\mathrm{X}\to\mathrm{Y}$ a morphism, $x$ a point of $\mathrm{X}$. Denote by $\boldsymbol{M}(f,x)$ one of the properties (i) to (vii) of the definition \sref{IV.6.8.1}, or the property of being smooth at the point $x$. Let $\mathrm{Y}'$ be a locally Noetherian prescheme, $g:\mathrm{Y}'\to\mathrm{Y}$ a morphism, $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$. Suppose that $f$ or $g$ is locally of finite type. Then, for every $x'\in\mathrm{X}'$ above $x$, the property $\boldsymbol{M}(f,x)$ implies $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Set $y=f(x)$, $y'=f'(x')$; by transitivity of fibres \sref[I]{I.3.6.4}, we have $f'^{-1}(y')=f^{-1}(y)\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$. Since either $f^{-1}(y)$ is locally of finite type over $\boldsymbol{k}(y)$, or $\boldsymbol{k}(y')$ is of finite type over $\boldsymbol{k}(y)$ \sref[I]{I.6.4.11}, it follows from \sref{IV.6.7.8} that the properties $\boldsymbol{P}(f^{-1}(y),x)$ and $\boldsymbol{P}(f'^{-1}(y'),x')$ are equivalent; furthermore, if $f$ is flat at the point $x$, $f'$ is flat at the point $x'$ \sref{IV.2.1.4}, which proves the proposition, taking into account \sref{IV.1.4.3},~(iii).
+\end{proof}
+
+\begin{proposition}[6.8.3]
+\label{IV.6.8.3}
+For a morphism $f$ of locally Noetherian preschemes, let $\boldsymbol{M}(f)$ be one of the following properties: being Cohen-Macaulay, $(\mathrm{S}_n)$, regular, $(\mathrm{R}_n)$, normal, reduced.
+\begin{enumerate}[label=(\roman*)]
+  \item Let $\mathrm{X}$, $\mathrm{Y}$, $\mathrm{Z}$ be three locally Noetherian preschemes, $f:\mathrm{X}\to\mathrm{Y}$, $g:\mathrm{Y}\to\mathrm{Z}$ two morphisms. If $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true, $\boldsymbol{M}(g\circ f)$ is true.
+  \item Conversely, if $f$ is surjective and if $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g\circ f)$ are true, then $\boldsymbol{M}(g)$ is true.
+  \item Let $\mathrm{X}$, $\mathrm{Y}$, $\mathrm{Y}'$ be three locally Noetherian preschemes, $f:\mathrm{X}\to\mathrm{Y}$, $h:\mathrm{Y}'\to\mathrm{Y}$ two morphisms; set $\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$, $f'=f_{(\mathrm{Y}')}:\mathrm{X}'\to\mathrm{Y}'$. Suppose that $f$ or $h$ is locally of finite type. If $\boldsymbol{M}(f)$ is true, then so is $\boldsymbol{M}(f')$; the converse is true when $h$ is faithfully flat.
+\end{enumerate}
+The conclusions of (i) and (iii) are also true when $\boldsymbol{M}$ is the property of being smooth and (in (iii)) $h$ is quasi-compact.
+\end{proposition}
+
+\begin{proof}
+(i) We already know that if $f$ and $g$ are flat, so is $u=g\circ f$, and that if $f$ and $g\circ f$ are flat and $f$ is surjective, then $g$ is flat \sref{IV.2.1.6} and \sref{IV.2.2.13}. On the other hand, for every $z\in\mathrm{Z}$, the morphism $f_z=f\otimes\mathbf{1}_{\boldsymbol{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ is flat (resp.\ faithfully flat if $f$ is) and for every $y\in g^{-1}(z)$, $f^{-1}(y)$ is isomorphic to $f^{-1}(y)$ \sref[I]{I.3.6.4}. If $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true, $\boldsymbol{M}(g\circ f)$ is then true for the cases where $\boldsymbol{M}$ is the property of being Cohen-Macaulay or $(\mathrm{S}_n)$, by virtue of \sref{IV.6.6.1}. On the other hand, let $k'$ be a finite extension of $\boldsymbol{k}(z)$; setting $\mathrm{Y}'_z=g^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, $\mathrm{X}'_z=u^{-1}(z)\otimes_{\boldsymbol{k}(z)}k'$, and $f'_z=f_z\otimes\mathbf{1}_{k'}:\mathrm{X}'_z\to\mathrm{Y}'_z$; the morphism $f'_z$
+----- French corrections on page IV-2 150 -----
+[id 14036]
+OLD: En effet $f_\lambda$
+NEW: en effet $f_\lambda$
+FRENCH CONTEXT (corrected): _\lambda=B\otimes_k k'_\lambda$, le morphisme
+$f_\lambda:\operatorname{Spec}(B')\to\operatorname{Spec}(B'_\lambda)$ est
+un \emph{homéomorphisme} de $\operatorname{Spec}(B')$ \emph{sur}
+$\operatorname{Spec}(B'_\lambda)$ pour tout $\lambda$;
+\oldpage[IV-2]{150}
+en effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve (en vertu de l'hypothèse \emph{b)}) que \emph{b)} entraîne \emph{e)} lorsque
+$\boldsymbol{P}(Z
+
+[id 14039]
+OLD: l'hypothèse b))
+NEW: l'hypothèse \emph{b)})
+FRENCH CONTEXT (corrected): {Spec}(B'_\lambda)$ pour tout $\lambda$;
+\oldpage[IV-2]{150}
+en effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve (en vertu de l'hypothèse \emph{b)}) que \emph{b)} entraîne \emph{e)} lorsque
+$\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$ au point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte
+
+[id 14040]
+OLD: que b) entraîne e) lorsque
+NEW: que \emph{b)} entraîne \emph{e)} lorsque
+FRENCH CONTEXT (corrected): r tout $\lambda$;
+\oldpage[IV-2]{150}
+en effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve (en vertu de l'hypothèse \emph{b)}) que \emph{b)} entraîne \emph{e)} lorsque
+$\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$ au point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte tenu du critère de normalité de Serre
+(5
+
+[id 14041]
+OLD: $P(Z,z)$ est la propriété $(R_n)$
+NEW: $\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$
+FRENCH CONTEXT (corrected): effet $f_\lambda$ est bijectif en vertu de (\textbf{I}, 3.5.2, 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve (en vertu de l'hypothèse \emph{b)}) que \emph{b)} entraîne \emph{e)} lorsque
+$\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$ au point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte tenu du critère de normalité de Serre
+(5.8.6), \emph{b)} entraîne encore \emph{e)} lors
+
+[id 14042]
+OLD: Le cas où $P(Z,z)$
+NEW: Le cas où $\boldsymbol{P}(Z,z)$
+FRENCH CONTEXT (corrected): , 3.5.7 et 3.5.8);
+d'autre part, il est fermé par (\textbf{II}, 6.1.10). On peut maintenant appliquer
+(5.13.6) qui prouve (en vertu de l'hypothèse \emph{b)}) que \emph{b)} entraîne \emph{e)} lorsque
+$\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$ au point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte tenu du critère de normalité de Serre
+(5.8.6), \emph{b)} entraîne encore \emph{e)} lorsque $\boldsymbol{P}(Z,z)$ est la propriété d'ê
+
+[id 14043]
+OLD: (5.8.6), b) entraîne encore e)
+NEW: (5.8.6), \emph{b)} entraîne encore \emph{e)}
+FRENCH CONTEXT (corrected): ue
+$\boldsymbol{P}(Z,z)$ est la propriété $(R_n)$ au point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte tenu du critère de normalité de Serre
+(5.8.6), \emph{b)} entraîne encore \emph{e)} lorsque $\boldsymbol{P}(Z,z)$ est la propriété d'être normal
+au point $z$, car cela équivaut à dire que $Z$ possède au point $z$ les
+propriétés $(S_2)$ et $(R_1)$: on applique alors ce qui précède pour $n=1$,
+et (6.7.2, (ii)) pour $n=2$.
+\end{proof}
+
+\begin{c
+
+[id 14044]
+OLD: $P(Z,z)$ est la propriété d'être normal
+NEW: $\boldsymbol{P}(Z,z)$ est la propriété d'être normal
+FRENCH CONTEXT (corrected): point $z$. Le cas où $\boldsymbol{P}(Z,z)$ est la
+propriété d'être régulier (i.e. de posséder la propriété $(R_n)$ pour tout $n$)
+en résulte trivialement. Enfin, compte tenu du critère de normalité de Serre
+(5.8.6), \emph{b)} entraîne encore \emph{e)} lorsque $\boldsymbol{P}(Z,z)$ est la propriété d'être normal
+au point $z$, car cela équivaut à dire que $Z$ possède au point $z$ les
+propriétés $(S_2)$ et $(R_1)$: on applique alors ce qui précède pour $n=1$,
+et (6.7.2, (ii)) pour $n=2$.
+\end{proof}
+
+\begin{corollary}[6.7.8]
+\label{IV.2.s6.7.8-fr}
+Soit $k$ un corps; po
+
+[id 14045]
+OLD: désigne par $P(X,x)$
+NEW: désigne par $\boldsymbol{P}(X,x)$
+FRENCH CONTEXT (corrected): s
+propriétés $(S_2)$ et $(R_1)$: on applique alors ce qui précède pour $n=1$,
+et (6.7.2, (ii)) pour $n=2$.
+\end{proof}
+
+\begin{corollary}[6.7.8]
+\label{IV.2.s6.7.8-fr}
+Soit $k$ un corps; pour un $k$-préschéma localement noethérien $X$ et un
+point $x\in X$, on désigne par $\boldsymbol{P}(X,x)$ une des propriétés suivantes:
+\begin{enumerate}
+\item[\textup{(i)}] $\operatorname{coprof}(\mathcal O_x)\leq n$.
+\item[\textup{(ii)}] $\mathcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\t
+
+[id 14047]
+OLD: \item[(ii)] $\mathcal O_x$
+NEW: \item[\textup{(ii)}] $\mathcal O_x$
+FRENCH CONTEXT (corrected): abel{IV.2.s6.7.8-fr}
+Soit $k$ un corps; pour un $k$-préschéma localement noethérien $X$ et un
+point $x\in X$, on désigne par $\boldsymbol{P}(X,x)$ une des propriétés suivantes:
+\begin{enumerate}
+\item[\textup{(i)}] $\operatorname{coprof}(\mathcal O_x)\leq n$.
+\item[\textup{(ii)}] $\mathcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\tex
+
+[id 14048]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected): ent noethérien $X$ et un
+point $x\in X$, on désigne par $\boldsymbol{P}(X,x)$ une des propriétés suivantes:
+\begin{enumerate}
+\item[\textup{(i)}] $\operatorname{coprof}(\mathcal O_x)\leq n$.
+\item[\textup{(ii)}] $\mathcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquement normal au point $x$.
+
+[id 14049]
+OLD: \item[(iv)]
+NEW: \item[\textup{(iv)}]
+FRENCH CONTEXT (corrected): P}(X,x)$ une des propriétés suivantes:
+\begin{enumerate}
+\item[\textup{(i)}] $\operatorname{coprof}(\mathcal O_x)\leq n$.
+\item[\textup{(ii)}] $\mathcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquement normal au point $x$.
+\item[\textup{(vii)}] $X$ est géométriquement réduit (\textup{i.e.}
+
+[id 14051]
+OLD: \item[(vi)]
+NEW: \item[\textup{(vi)}]
+FRENCH CONTEXT (corrected): thcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquement normal au point $x$.
+\item[\textup{(vii)}] $X$ est géométriquement réduit (\textup{i.e.} séparable) au point $x$.
+\end{enumerate}
+
+Soit $k'$ une extension de $k$; on suppose, soit que $k'$ est de type fini,
+soit que $X$ est localement 
+
+[id 14052]
+OLD: \item[(vii)]
+NEW: \item[\textup{(vii)}]
+FRENCH CONTEXT (corrected): $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquement normal au point $x$.
+\item[\textup{(vii)}] $X$ est géométriquement réduit (\textup{i.e.} séparable) au point $x$.
+\end{enumerate}
+
+Soit $k'$ une extension de $k$; on suppose, soit que $k'$ est de type fini,
+soit que $X$ est localement de type fini sur $k$, de sorte que
+$X'=X\otimes_k k'$ est localemen
+
+[id 14053]
+OLD: anneau de Cohen--Macaulay.
+NEW: anneau de Cohen-Macaulay.
+FRENCH CONTEXT (corrected): r un $k$-préschéma localement noethérien $X$ et un
+point $x\in X$, on désigne par $\boldsymbol{P}(X,x)$ une des propriétés suivantes:
+\begin{enumerate}
+\item[\textup{(i)}] $\operatorname{coprof}(\mathcal O_x)\leq n$.
+\item[\textup{(ii)}] $\mathcal O_x$ est un anneau de Cohen-Macaulay.
+\item[\textup{(iii)}] $X$ vérifie la propriété $(S_n)$ au point $x$.
+\item[\textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquemen
+
+[id 14054]
+OLD: (i.e. séparable)
+NEW: (\textup{i.e.} séparable)
+FRENCH CONTEXT (corrected): \textup{(iv)}] $X$ est géométriquement régulier au point $x$.
+\item[\textup{(v)}] $X$ possède la propriété $(R_n)$ géométrique au point $x$.
+\item[\textup{(vi)}] $X$ est géométriquement normal au point $x$.
+\item[\textup{(vii)}] $X$ est géométriquement réduit (\textup{i.e.} séparable) au point $x$.
+\end{enumerate}
+
+Soit $k'$ une extension de $k$; on suppose, soit que $k'$ est de type fini,
+soit que $X$ est localement de type fini sur $k$, de sorte que
+$X'=X\otimes_k k'$ est localement noethérien. Soit $x'$ un point de $X'$ dont
+$x$ est la 
+
+[id 14056]
+OLD: pour que $P(X,x)$ soit vraie, il faut
+et il suffit que $P(X',x')$ le soit
+NEW: pour que $\boldsymbol{P}(X,x)$ soit vraie, il faut
+et il suffit que $\boldsymbol{P}(X',x')$ le soit
+FRENCH CONTEXT (corrected): e}
+
+Soit $k'$ une extension de $k$; on suppose, soit que $k'$ est de type fini,
+soit que $X$ est localement de type fini sur $k$, de sorte que
+$X'=X\otimes_k k'$ est localement noethérien. Soit $x'$ un point de $X'$ dont
+$x$ est la projection dans $X$. Alors, pour que $\boldsymbol{P}(X,x)$ soit vraie, il faut
+et il suffit que $\boldsymbol{P}(X',x')$ le soit.
+\end{corollary}
+
+\begin{proof}
+Cela a déjà été vu pour la propriété (vii) (4.6.11), et pour les propriétés
+(i), (ii) et (iii) (6.7.1). Pour (iv), (v) et (vi), cela résulte de (6.7.7):
+en effet, le fait que la condition est nécessaire résulte de l'équivalence
+
+[id 14057]
+OLD: critères a) et c), et de l'équivalence de c) et d) lorsque
+NEW: critères \emph{a)} et \emph{c)}, et de l'équivalence de \emph{c)} et \emph{d)} lorsque
+FRENCH CONTEXT (corrected): d{corollary}
+
+\begin{proof}
+Cela a déjà été vu pour la propriété (vii) (4.6.11), et pour les propriétés
+(i), (ii) et (iii) (6.7.1). Pour (iv), (v) et (vi), cela résulte de (6.7.7):
+en effet, le fait que la condition est nécessaire résulte de l'équivalence des
+critères \emph{a)} et \emph{c)}, et de l'équivalence de \emph{c)} et \emph{d)} lorsque $X$ est localement
+de type fini sur $k$. Pour voir que la condition est suffisante, soit $k''$ une
+extension finie radicielle de $k$; on peut toujours considérer $k'$ et $k''$
+comme sous-extensions d'une extension $K$ de $k$; posons
+$X''=X\otimes_k k''$, $X_0
+
+[id 14058]
+OLD: qu'un seul point
+NEW: qu'\emph{un seul} point
+FRENCH CONTEXT (corrected): $k''$ une
+extension finie radicielle de $k$; on peut toujours considérer $k'$ et $k''$
+comme sous-extensions d'une extension $K$ de $k$; posons
+$X''=X\otimes_k k''$, $X_0=X\otimes_k K$, et notons que puisque $k''$ est une
+extension radicielle de $k$, il n'y a qu'\emph{un seul} point $x''$ de $X''$ au-dessus
+de $x$ (\textbf{I}, 3.5.7 et 3.5.8). Soit alors $x_0$ un point quelconque de $X_0$
+au-dessus de $x'$; si $\boldsymbol{P}(X',x')$ est vraie, il en est de même de $\boldsymbol{P}(X_0,x_0)$
+en vertu de (6.7.7, \emph{c)} et \emph{d)}) (ca
+
+[id 14060]
+OLD: si $P(X',x')$ est vraie, il en est de même de $P(X_0,x_0)$
+NEW: si $\boldsymbol{P}(X',x')$ est vraie, il en est de même de $\boldsymbol{P}(X_0,x_0)$
+FRENCH CONTEXT (corrected): otimes_k k''$, $X_0=X\otimes_k K$, et notons que puisque $k''$ est une
+extension radicielle de $k$, il n'y a qu'\emph{un seul} point $x''$ de $X''$ au-dessus
+de $x$ (\textbf{I}, 3.5.7 et 3.5.8). Soit alors $x_0$ un point quelconque de $X_0$
+au-dessus de $x'$; si $\boldsymbol{P}(X',x')$ est vraie, il en est de même de $\boldsymbol{P}(X_0,x_0)$
+en vertu de (6.7.7, \emph{c)} et \emph{d)}) (car si $k'$ est une extension de $k$ de type
+fini, on peut supposer qu'il en est de même de $K$, et si $X$ est localement
+de type fini sur $k$, $X'$ est localement de type fini sur $k'$). On déduit
+alors de (6.7.4)
+
+[id 14061]
+OLD: (6.7.7, c) et d))
+NEW: (6.7.7, \emph{c)} et \emph{d)})
+FRENCH CONTEXT (corrected): $, il n'y a qu'\emph{un seul} point $x''$ de $X''$ au-dessus
+de $x$ (\textbf{I}, 3.5.7 et 3.5.8). Soit alors $x_0$ un point quelconque de $X_0$
+au-dessus de $x'$; si $\boldsymbol{P}(X',x')$ est vraie, il en est de même de $\boldsymbol{P}(X_0,x_0)$
+en vertu de (6.7.7, \emph{c)} et \emph{d)}) (car si $k'$ est une extension de $k$ de type
+fini, on peut supposer qu'il en est de même de $K$, et si $X$ est localement
+de type fini sur $k$, $X'$ est localement de type fini sur $k'$). On déduit
+alors de (6.7.4) que la propriété $\boldsymbol{Q}(k'')$ est 
+
+[id 14063]
+OLD: donc $P(X,x)$ est vraie
+NEW: donc $\boldsymbol{P}(X,x)$ est vraie
+FRENCH CONTEXT (corrected): de type
+fini, on peut supposer qu'il en est de même de $K$, et si $X$ est localement
+de type fini sur $k$, $X'$ est localement de type fini sur $k'$). On déduit
+alors de (6.7.4) que la propriété $\boldsymbol{Q}(k'')$ est vraie (avec les notations de
+(6.7.7)), donc $\boldsymbol{P}(X,x)$ est vraie par (6.7.7, \emph{b)}).
+\end{proof}
+
+\subsection{Morphismes réguliers, normaux, réduits, lisses.}
+\label{subsection:IV.6.8}
+
+\begin{definition}[6.8.1]
+\label{IV.2.s6.8.1-fr}
+Soient $X$, $Y$ deux préschémas, $f:X\to Y$ un morphisme tel que la fibre
+$f^{-1}(y)$
+
+[id 14064]
+OLD: (6.7.7, b))
+NEW: (6.7.7, \emph{b)})
+FRENCH CONTEXT (corrected): st de même de $K$, et si $X$ est localement
+de type fini sur $k$, $X'$ est localement de type fini sur $k'$). On déduit
+alors de (6.7.4) que la propriété $\boldsymbol{Q}(k'')$ est vraie (avec les notations de
+(6.7.7)), donc $\boldsymbol{P}(X,x)$ est vraie par (6.7.7, \emph{b)}).
+\end{proof}
+
+\subsection{Morphismes réguliers, normaux, réduits, lisses.}
+\label{subsection:IV.6.8}
+
+\begin{definition}[6.8.1]
+\label{IV.2.s6.8.1-fr}
+Soient $X$, $Y$ deux préschémas, $f:X\to Y$ un morphisme tel que la fibre
+$f^{-1}(y)$ soit un préschéma loca
+
+[id 14065]
+OLD: \subsection{Morphismes réguliers, normaux, réduits, lisses}
+NEW: \subsection{Morphismes réguliers, normaux, réduits, lisses.}
+FRENCH CONTEXT (corrected): localement
+de type fini sur $k$, $X'$ est localement de type fini sur $k'$). On déduit
+alors de (6.7.4) que la propriété $\boldsymbol{Q}(k'')$ est vraie (avec les notations de
+(6.7.7)), donc $\boldsymbol{P}(X,x)$ est vraie par (6.7.7, \emph{b)}).
+\end{proof}
+
+\subsection{Morphismes réguliers, normaux, réduits, lisses.}
+\label{subsection:IV.6.8}
+
+\begin{definition}[6.8.1]
+\label{IV.2.s6.8.1-fr}
+Soient $X$, $Y$ deux préschémas, $f:X\to Y$ un morphisme tel que la fibre
+$f^{-1}(y)$ soit un préschéma localement noethérien pour tout $y\in Y$, $x$
+un point de $X$. On dit respectiv
+
+[id 14067]
+OLD: \item[(ii)] de Cohen
+NEW: \item[\textup{(ii)}] de Cohen
+FRENCH CONTEXT (corrected):  $f:X\to Y$ un morphisme tel que la fibre
+$f^{-1}(y)$ soit un préschéma localement noethérien pour tout $y\in Y$, $x$
+un point de $X$. On dit respectivement que $f$ est un morphisme:
+\begin{enumerate}
+\item[\textup{(i)}] de coprofondeur $\leq n$ au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\
+
+[id 14068]
+OLD: Cohen--Macaulay au point $x$;
+NEW: Cohen-Macaulay au point $x$;
+FRENCH CONTEXT (corrected):  tel que la fibre
+$f^{-1}(y)$ soit un préschéma localement noethérien pour tout $y\in Y$, $x$
+un point de $X$. On dit respectivement que $f$ est un morphisme:
+\begin{enumerate}
+\item[\textup{(i)}] de coprofondeur $\leq n$ au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\end{enumerate}
+si $f$ e
+
+=================== PAGE IV-2 151 ===================
+----- (English page IV-2 150: shown above in this file) -----
+----- (English page IV-2 151: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 152 -----
+\oldpage[IV-2]{152}
+
+is flat (resp.\ faithfully flat) and for every $y'\in\mathrm{Y}'_z$, the fibre $f'^{-1}_z(y')$ is isomorphic to $f^{-1}(y)\otimes_{\boldsymbol{k}(y)}\boldsymbol{k}(y')$, denoting by $y$ the image of $y'$ in $g^{-1}(z)$ \sref[I]{I.3.6.4}. When $\boldsymbol{M}$ is the property of being regular, $(\mathrm{R}_n)$, normal or reduced, the hypothesis that $\boldsymbol{M}(f)$ and $\boldsymbol{M}(g)$ are true implies that $\mathrm{Y}'_z$ and each of the fibres $f'^{-1}_z(y')$ for $y'\in\mathrm{Y}'_z$ have the corresponding property among the properties $c)$, $d)$, $e)$, $f)$ of \sref{IV.6.6.1}; one deduces from \sref{IV.6.6.1},~(i) that $\mathrm{X}'_z$ has the same property, hence $\boldsymbol{M}(g\circ f)$ is true.
+
+(ii) Conversely, the hypothesis that $\boldsymbol{M}(g\circ f)$ and $\boldsymbol{M}(f)$ are true and that $f$ is surjective implies that $\mathrm{Y}'_z$ has the corresponding property by virtue of \sref{IV.6.6.1},~(ii), since $f'_z$ is surjective for every $z$; hence $\boldsymbol{M}(g)$ is true.
+
+(iii) The first assertion follows immediately from \sref{IV.6.8.2}. On the other hand, if $h$ is faithfully flat and $f'$ flat, $f$ is flat \sref{IV.2.4.1}; since, with the notations of \sref{IV.6.8.2}, the properties $\boldsymbol{P}(f^{-1}(y),x)$ and $\boldsymbol{P}(f'^{-1}(y'),x')$ are equivalent \sref{IV.6.7.8}, one sees that $\boldsymbol{M}(f)$ and $\boldsymbol{M}(f')$ are then equivalent.
+
+Finally, the last assertion of the proposition follows from \sref{IV.1.4.3},~(iii) and \sref{IV.2.7.1},~(iv).
+\end{proof}
+
+\begin{remarks}[6.8.4]
+\label{IV.6.8.4}
+(i) If $f$ is faithfully flat, $g$ flat and if $g\circ f$ is of coprofundity $\leqslant n$, then $g$ is of coprofundity $\leqslant n$, as follows from the reasoning of \sref{IV.6.6.2}.
+
+(ii) When, in \sref{IV.6.8.1}, one takes for $\mathrm{Y}$ the spectrum of a field $k$, the notions (iv), (v) and (vi) reduce to those defined in \sref{IV.6.7.5}. It is clear that these latter are relative to the base field $k$. The definition \sref{IV.6.8.1} thus leads to saying that a prescheme $\mathrm{X}$ is ``regular (resp.\ $(\mathrm{R}_n)$, resp.\ normal) over $k$'' instead of saying that it is ``geometrically regular (resp.\ $(\mathrm{R}_n)$, resp.\ normal) relative to $k$''; one will avoid confusing this notion with the property of being regular (resp.\ $(\mathrm{R}_n)$, resp.\ normal) which is independent of $k$. One can make in this connection the same remarks as in \sref{IV.4.5.12}.
+\end{remarks}
+
+\begin{proposition}[6.8.5]
+\label{IV.6.8.5}
+Let $k$ be a field, $\mathrm{X}$, $\mathrm{Y}$ two $k$-preschemes locally Noetherian, at least one of which is locally of finite type over $k$. For a $k$-prescheme $\mathrm{Z}$, denote by $\boldsymbol{P}(\mathrm{Z})$ one of the properties $c)$ to $f)$ of \sref{IV.6.6.1}; the property ``$\boldsymbol{P}(\mathrm{Z})$ geometric'' is then defined in \sref{IV.6.7.6} (resp.\ \sref{IV.4.6.1}). Then:
+\begin{enumerate}[label=(\roman*)]
+  \item If $\mathrm{X}$ has the property $\boldsymbol{P}$, and $\mathrm{Y}$ the property $\boldsymbol{P}$ geometric, $\mathrm{X}\times_k\mathrm{Y}$ has the property $\boldsymbol{P}$.
+  \item If $\mathrm{X}$ and $\mathrm{Y}$ have the property $\boldsymbol{P}$ geometric, so does $\mathrm{X}\times_k\mathrm{Y}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Indeed, let $f:\mathrm{X}\times_k\mathrm{Y}\to\mathrm{X}$, $g:\mathrm{X}\to\operatorname{Spec}(k)$ be the structural morphisms, which are flat by \sref{IV.2.1.2} and \sref{IV.2.1.4}. The hypothesis that $\mathrm{Y}$ has the property $\boldsymbol{P}$ geometric implies by virtue of \sref{IV.6.8.2} that $\boldsymbol{M}(f)$ is true, $\boldsymbol{M}$ being the property \sref{IV.6.8.3} which corresponds to $\boldsymbol{P}$; under the hypothesis (ii), $\boldsymbol{M}(g)$ is also true, hence the assertion (ii) follows from \sref{IV.6.8.3},~(i). As for the assertion (i), it follows directly from \sref{IV.6.6.1},~(i).
+\end{proof}
+
+\begin{theorem}[6.8.6]
+\label{IV.6.8.6}
+Let $\mathrm{X}$, $\mathrm{Y}$ be two locally Noetherian preschemes, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type, $x$ a point of $\mathrm{X}$, $y=f(x)$. The following properties are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $f$ is smooth at the point $x$.
+  \item $f$ is regular at the point $x$.
+----- French corrections on page IV-2 151 -----
+[id 14069]
+OLD: \item[(iii)] $(S_n)$
+NEW: \item[\textup{(iii)}] $(S_n)$
+FRENCH CONTEXT (corrected): ocalement noethérien pour tout $y\in Y$, $x$
+un point de $X$. On dit respectivement que $f$ est un morphisme:
+\begin{enumerate}
+\item[\textup{(i)}] de coprofondeur $\leq n$ au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\end{enumerate}
+si $f$ est plat au point $x$, et si en outre la propriété 
+
+[id 14070]
+OLD: \item[(iv)]
+NEW: \item[\textup{(iv)}]
+FRENCH CONTEXT (corrected): 
+un point de $X$. On dit respectivement que $f$ est un morphisme:
+\begin{enumerate}
+\item[\textup{(i)}] de coprofondeur $\leq n$ au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\end{enumerate}
+si $f$ est plat au point $x$, et si en outre la propriété correspondante
+$\boldsymbol{P}(f^{-
+
+[id 14072]
+OLD: \item[(vi)]
+NEW: \item[\textup{(vi)}]
+FRENCH CONTEXT (corrected): tem[\textup{(i)}] de coprofondeur $\leq n$ au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\end{enumerate}
+si $f$ est plat au point $x$, et si en outre la propriété correspondante
+$\boldsymbol{P}(f^{-1}(f(x)),x)$ (notation de \textup{(6.7.8)}) est vraie.
+
+On dit que $f$ est lisse au po
+
+[id 14073]
+OLD: \item[(vii)]
+NEW: \item[\textup{(vii)}]
+FRENCH CONTEXT (corrected):  au point $x$;
+\item[\textup{(ii)}] de Cohen-Macaulay au point $x$;
+\oldpage[IV-2]{151}
+\item[\textup{(iii)}] $(S_n)$ au point $x$;
+\item[\textup{(iv)}] régulier au point $x$;
+\item[\textup{(v)}] $(R_n)$ au point $x$;
+\item[\textup{(vi)}] normal au point $x$;
+\item[\textup{(vii)}] réduit au point $x$;
+\end{enumerate}
+si $f$ est plat au point $x$, et si en outre la propriété correspondante
+$\boldsymbol{P}(f^{-1}(f(x)),x)$ (notation de \textup{(6.7.8)}) est vraie.
+
+On dit que $f$ est lisse au point $x$ s'il est localement de présentation
+
+[id 14076]
+OLD: de
+Cohen--Macaulay
+NEW: de
+Cohen-Macaulay
+FRENCH CONTEXT (corrected): on de \textup{(6.7.8)}) est vraie.
+
+On dit que $f$ est lisse au point $x$ s'il est localement de présentation finie
+dans un voisinage de $x$ dans $X$, et s'il est régulier au point $x$. On dit
+respectivement que $f$ est un morphisme: de coprofondeur $\leq n$, de
+Cohen-Macaulay, $(S_n)$, régulier, $(R_n)$, normal, réduit, lisse, s'il a la
+propriété correspondante en tout point de $X$.
+\end{definition}
+
+\begin{proposition}[6.8.2]
+\label{IV.2.s6.8.2-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme, $
+
+[id 14078]
+OLD: (i) à (vii) de la définition (6.8.1)
+NEW: \textup{(i)} à \textup{(vii)} de la définition \textup{(6.8.1)}
+FRENCH CONTEXT (corrected): rrespondante en tout point de $X$.
+\end{definition}
+
+\begin{proposition}[6.8.2]
+\label{IV.2.s6.8.2-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme, $x$ un point de $X$. Désignons par $\boldsymbol{M}(f,x)$ une des propriétés
+\textup{(i)} à \textup{(vii)} de la définition \textup{(6.8.1)}, ou la propriété pour $f$ d'être lisse au
+point $x$. Soient $Y'$ un préschéma localement noethérien, $g:Y'\to Y$ un
+morphisme, $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. On suppose que $f$
+ou $g$ est localement de type fini. Alors, pour tout $x'\in X'$ au-des
+
+[id 14079]
+OLD: la propriété $M(f,x)$ entraîne $M(f',x')$
+NEW: la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$
+FRENCH CONTEXT (corrected): riété pour $f$ d'être lisse au
+point $x$. Soient $Y'$ un préschéma localement noethérien, $g:Y'\to Y$ un
+morphisme, $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. On suppose que $f$
+ou $g$ est localement de type fini. Alors, pour tout $x'\in X'$ au-dessus de
+$x$, la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Posons $y=f(x)$, $y'=f'(x')$; par transitivité des fibres (\textbf{I}, 3.6.4), on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y
+
+[id 14081]
+OLD: on a
+\[
+f'^{-1}(y')=
+NEW: on a
+$f'^{-1}(y')=
+FRENCH CONTEXT (corrected): $g$ est localement de type fini. Alors, pour tout $x'\in X'$ au-dessus de
+$x$, la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Posons $y=f(x)$, $y'=f'(x')$; par transitivité des fibres (\textbf{I}, 3.6.4), on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y)$, ou bien
+$\boldsymbol{k}(y')$ est de type fini sur $\boldsymbol{k}(y)$ (\textbf{I}, 6.4.11), il résulte de (6.7.8) que
+les propri
+
+[id 14082]
+OLD: (y').
+\]
+Comme ou bien
+NEW: (y')$; comme ou bien
+FRENCH CONTEXT (corrected): dessus de
+$x$, la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Posons $y=f(x)$, $y'=f'(x')$; par transitivité des fibres (\textbf{I}, 3.6.4), on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y)$, ou bien
+$\boldsymbol{k}(y')$ est de type fini sur $\boldsymbol{k}(y)$ (\textbf{I}, 6.4.11), il résulte de (6.7.8) que
+les propriétés $\boldsymbol{P}(f^{-1}(y),x)$ et $\boldsymbol{P}(f'^{-1}(y'),
+
+[id 14083]
+OLD: \otimes_{k(y)}
+NEW: \otimes_{\mathbf{k}(y)}
+FRENCH CONTEXT (corrected): fini. Alors, pour tout $x'\in X'$ au-dessus de
+$x$, la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Posons $y=f(x)$, $y'=f'(x')$; par transitivité des fibres (\textbf{I}, 3.6.4), on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y)$, ou bien
+$\boldsymbol{k}(y')$ est de type fini sur $\boldsymbol{k}(y)$ (\textbf{I}, 6.4.11), il résulte de (6.7.8) que
+les propriétés $\boldsymbol{P}(f^{-1}(y),x
+
+[id 14084]
+OLD: }k(y')
+NEW: }\boldsymbol{k}(y')
+FRENCH CONTEXT (corrected):  $x'\in X'$ au-dessus de
+$x$, la propriété $\boldsymbol{M}(f,x)$ entraîne $\boldsymbol{M}(f',x')$.
+\end{proposition}
+
+\begin{proof}
+Posons $y=f(x)$, $y'=f'(x')$; par transitivité des fibres (\textbf{I}, 3.6.4), on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y)$, ou bien
+$\boldsymbol{k}(y')$ est de type fini sur $\boldsymbol{k}(y)$ (\textbf{I}, 6.4.11), il résulte de (6.7.8) que
+les propriétés $\boldsymbol{P}(f^{-1}(y),x)$ et $\boldsymbol
+
+[id 14089]
+OLD: $P(f^{-1}(y),x)$ et $P(f'^{-1}(y'),x')$
+NEW: $\boldsymbol{P}(f^{-1}(y),x)$ et $\boldsymbol{P}(f'^{-1}(y'),x')$
+FRENCH CONTEXT (corrected): }(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$; comme ou bien $f^{-1}(y)$ est localement de type fini sur $\boldsymbol{k}(y)$, ou bien
+$\boldsymbol{k}(y')$ est de type fini sur $\boldsymbol{k}(y)$ (\textbf{I}, 6.4.11), il résulte de (6.7.8) que
+les propriétés $\boldsymbol{P}(f^{-1}(y),x)$ et $\boldsymbol{P}(f'^{-1}(y'),x')$ sont équivalentes; en
+outre, si $f$ est plat au point $x$, $f'$ est plat au point $x'$ (2.1.4), ce
+qui prouve la proposition, compte tenu de (1.4.3, (iii)).
+\end{proof}
+
+\begin{proposition}[6.8.3]
+\label{IV.2.s6.8.3-fr}
+Pour un morphisme $f$ de préschémas loc
+
+[id 14091]
+OLD: être de Cohen--Macaulay
+NEW: être de Cohen-Macaulay
+FRENCH CONTEXT (corrected): oint $x'$ (2.1.4), ce
+qui prouve la proposition, compte tenu de (1.4.3, (iii)).
+\end{proof}
+
+\begin{proposition}[6.8.3]
+\label{IV.2.s6.8.3-fr}
+Pour un morphisme $f$ de préschémas localement noethériens, soit $\boldsymbol{M}(f)$
+l'une des propriétés suivantes: être de Cohen-Macaulay, $(S_n)$, régulier,
+$(R_n)$, normal, réduit.
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$, $Z$ trois préschémas localement noethériens,
+$f:X\to Y$, $g:Y\to Z$ deux morphismes. Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}
+
+[id 14093]
+OLD: Si $M(f)$ et $M(g)$ sont vraies,
+$M(g\circ f)$ est vraie.
+NEW: Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}(g\circ f)$ est vraie.
+FRENCH CONTEXT (corrected): $\boldsymbol{M}(f)$
+l'une des propriétés suivantes: être de Cohen-Macaulay, $(S_n)$, régulier,
+$(R_n)$, normal, réduit.
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$, $Z$ trois préschémas localement noethériens,
+$f:X\to Y$, $g:Y\to Z$ deux morphismes. Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}(g\circ f)$ est vraie.
+\item[\textup{(ii)}] Inversement, si $f$ est surjectif et si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g\circ f)$
+sont vraies, alors $\boldsymbol{M}(g)$ est vraie.
+\item[\textup{(iii)}] Soient $X$, $Y$, $Y'$ trois préschémas localement noethériens,
+$f:X\to Y$, $
+
+[id 14094]
+OLD: \item[(ii)] Inversement
+NEW: \item[\textup{(ii)}] Inversement
+FRENCH CONTEXT (corrected): R_n)$, normal, réduit.
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$, $Z$ trois préschémas localement noethériens,
+$f:X\to Y$, $g:Y\to Z$ deux morphismes. Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}(g\circ f)$ est vraie.
+\item[\textup{(ii)}] Inversement, si $f$ est surjectif et si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g\circ f)$
+sont vraies, alors $\boldsymbol{M}(g)$ est vraie.
+\item[\textup{(iii)}] Soient $X$, $Y$, $Y'$ trois préschémas localement noethériens,
+$f:X\to Y$, $h:Y'\to Y$ deux morphismes; on po
+
+[id 14095]
+OLD: si $M(f)$ et $M(g\circ f)$
+sont vraies, alors $M(g)$
+NEW: si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g\circ f)$
+sont vraies, alors $\boldsymbol{M}(g)$
+FRENCH CONTEXT (corrected): }] Soient $X$, $Y$, $Z$ trois préschémas localement noethériens,
+$f:X\to Y$, $g:Y\to Z$ deux morphismes. Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}(g\circ f)$ est vraie.
+\item[\textup{(ii)}] Inversement, si $f$ est surjectif et si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g\circ f)$
+sont vraies, alors $\boldsymbol{M}(g)$ est vraie.
+\item[\textup{(iii)}] Soient $X$, $Y$, $Y'$ trois préschémas localement noethériens,
+$f:X\to Y$, $h:Y'\to Y$ deux morphismes; on pose $X'=X\times_Y Y'$,
+$f'=f_{(Y')}:X'\to Y'$. On suppose que $f$ ou $h$ est localement de type
+fini. Alors, si $\bold
+
+[id 14096]
+OLD: \item[(iii)] Soient
+NEW: \item[\textup{(iii)}] Soient
+FRENCH CONTEXT (corrected): . Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont vraies,
+$\boldsymbol{M}(g\circ f)$ est vraie.
+\item[\textup{(ii)}] Inversement, si $f$ est surjectif et si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g\circ f)$
+sont vraies, alors $\boldsymbol{M}(g)$ est vraie.
+\item[\textup{(iii)}] Soient $X$, $Y$, $Y'$ trois préschémas localement noethériens,
+$f:X\to Y$, $h:Y'\to Y$ deux morphismes; on pose $X'=X\times_Y Y'$,
+$f'=f_{(Y')}:X'\to Y'$. On suppose que $f$ ou $h$ est localement de type
+fini. Alors, si $\boldsymbol{M}(f)$ est vraie, il en est de mê
+
+[id 14097]
+OLD: si $M(f)$ est vraie, il en est de même de $M(f')$
+NEW: si $\boldsymbol{M}(f)$ est vraie, il en est de même de $\boldsymbol{M}(f')$
+FRENCH CONTEXT (corrected): ol{M}(g)$ est vraie.
+\item[\textup{(iii)}] Soient $X$, $Y$, $Y'$ trois préschémas localement noethériens,
+$f:X\to Y$, $h:Y'\to Y$ deux morphismes; on pose $X'=X\times_Y Y'$,
+$f'=f_{(Y')}:X'\to Y'$. On suppose que $f$ ou $h$ est localement de type
+fini. Alors, si $\boldsymbol{M}(f)$ est vraie, il en est de même de $\boldsymbol{M}(f')$; la réciproque
+est vraie lorsque $h$ est fidèlement plat.
+\end{enumerate}
+
+Les conclusions de \textup{(i)} et \textup{(iii)} sont encore vraies lorsque $\boldsymbol{M}$ est la propriété
+d'être lisse et que (dans \textup{(iii)}) $h$ est quasi-compact.
+\end{pro
+
+[id 14099]
+OLD: de (i) et (iii) sont
+NEW: de \textup{(i)} et \textup{(iii)} sont
+FRENCH CONTEXT (corrected): Y Y'$,
+$f'=f_{(Y')}:X'\to Y'$. On suppose que $f$ ou $h$ est localement de type
+fini. Alors, si $\boldsymbol{M}(f)$ est vraie, il en est de même de $\boldsymbol{M}(f')$; la réciproque
+est vraie lorsque $h$ est fidèlement plat.
+\end{enumerate}
+
+Les conclusions de \textup{(i)} et \textup{(iii)} sont encore vraies lorsque $\boldsymbol{M}$ est la propriété
+d'être lisse et que (dans \textup{(iii)}) $h$ est quasi-compact.
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] On sait déjà que si $f$ et $g$ sont plats, il en est de même de
+$u=g\circ f$
+
+[id 14100]
+OLD: lorsque $M$ est la propriété
+d'être lisse
+NEW: lorsque $\boldsymbol{M}$ est la propriété
+d'être lisse
+FRENCH CONTEXT (corrected): $h$ est localement de type
+fini. Alors, si $\boldsymbol{M}(f)$ est vraie, il en est de même de $\boldsymbol{M}(f')$; la réciproque
+est vraie lorsque $h$ est fidèlement plat.
+\end{enumerate}
+
+Les conclusions de \textup{(i)} et \textup{(iii)} sont encore vraies lorsque $\boldsymbol{M}$ est la propriété
+d'être lisse et que (dans \textup{(iii)}) $h$ est quasi-compact.
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] On sait déjà que si $f$ et $g$ sont plats, il en est de même de
+$u=g\circ f$, et que si $f$ et $g\circ f$ sont plats et $f$ surjectif, $g$ est
+pl
+
+[id 14101]
+OLD: (dans (iii))
+NEW: (dans \textup{(iii)})
+FRENCH CONTEXT (corrected):  est vraie, il en est de même de $\boldsymbol{M}(f')$; la réciproque
+est vraie lorsque $h$ est fidèlement plat.
+\end{enumerate}
+
+Les conclusions de \textup{(i)} et \textup{(iii)} sont encore vraies lorsque $\boldsymbol{M}$ est la propriété
+d'être lisse et que (dans \textup{(iii)}) $h$ est quasi-compact.
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] On sait déjà que si $f$ et $g$ sont plats, il en est de même de
+$u=g\circ f$, et que si $f$ et $g\circ f$ sont plats et $f$ surjectif, $g$ est
+plat (2.1.6 et 2.2.13). D'autre
+
+=================== PAGE IV-2 152 ===================
+----- (English page IV-2 151: shown above in this file) -----
+----- (English page IV-2 152: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 153 -----
+\oldpage[IV-2]{153}
+  \item $\sh{O}_x$ is a formally smooth $\sh{O}_y$-algebra \sref[0]{0.19.3.1} for the adic topologies on $\sh{O}_x$ and $\sh{O}_y$.
+  \item[\emph{c$'$)}] $\sh{O}_x$ is a formally smooth $\sh{O}_y$-algebra \sref[0]{0.19.3.1} for the discrete topologies on $\sh{O}_x$ and $\sh{O}_y$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The equivalence of $a)$ and $b)$ follows from the definitions \sref{IV.6.8.1} and from the fact that for locally Noetherian preschemes, morphisms locally of finite type are locally of finite presentation \sref{IV.1.4.2}.
+
+Secondly, for $\sh{O}_x$ to be a formally smooth $\sh{O}_y$-algebra for the adic topologies, it is necessary and sufficient that $\sh{O}_x$ be flat over $\sh{O}_y$ and that $\sh{O}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)$ be formally smooth over $\boldsymbol{k}(y)$ for its adic topology \sref[0]{0.19.7.1}. But for $\sh{O}_x\otimes_{\sh{O}_y}\boldsymbol{k}(y)$ to be a formally smooth $\boldsymbol{k}(y)$-algebra for its adic topology, it is necessary and sufficient that it be a geometrically regular $\boldsymbol{k}(y)$-algebra \sref[0]{0.19.6.6}; this proves the equivalence of $b)$ and $c)$. Finally, to prove the equivalence of $c)$ and $c')$, one may reduce to the affine case $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$, $\mathrm{X}=\operatorname{Spec}(\mathrm{C})$, where $\mathrm{A}$ is Noetherian and $\mathrm{C}$ is a finite-type Noetherian $\mathrm{A}$-algebra, say $\mathrm{C}=\mathrm{A}[\mathrm{T}_1,\ldots,\mathrm{T}_n]/\mathfrak{J}$. Since $\mathfrak{J}/\mathfrak{J}^2$ is a finitely presented $\mathrm{C}$-module, the equivalence follows from \sref[0]{0.22.6.4} applied to $\mathrm{A}$, $\mathrm{B}=\mathrm{A}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ and $\mathrm{C}=\mathrm{B}/\mathfrak{J}$.
+\end{proof}
+
+\begin{corollary}[6.8.7]
+\label{IV.6.8.7}
+Let $\mathrm{X}$, $\mathrm{Y}$ be two locally Noetherian preschemes, $f:\mathrm{X}\to\mathrm{Y}$ a morphism locally of finite type. Then the set of points $x\in\mathrm{X}$ where $f$ is smooth \textnormal{(}or regular\textnormal{)} is open in $\mathrm{X}$.
+\end{corollary}
+
+\begin{proof}
+Indeed it follows from \sref[0]{0.22.6.5} that the set of $x\in\mathrm{X}$ satisfying the condition $c')$ of \sref{IV.6.8.6} is open in $\mathrm{X}$, and we conclude by \sref{IV.6.8.6}.
+\end{proof}
+
+\begin{remark}[6.8.8]
+\label{IV.6.8.8}
+In \sref{IV.17.5.1}, we shall show that the equivalence of $b)$ and $c')$ in \sref{IV.6.8.6}, as well as the corollary \sref{IV.6.8.7}, remain valid without the Noetherian hypothesis on $\mathrm{X}$ and $\mathrm{Y}$, provided that one restricts to morphisms \emph{locally of finite presentation}.
+\end{remark}
+
+\subsection{The theorem of generic flatness}
+\label{subsection:IV.6.9}
+
+\begin{theorem}[6.9.1]
+\label{IV.6.9.1}
+Let $\mathrm{Y}$ be a locally Noetherian and integral prescheme, $u:\mathrm{X}\to\mathrm{Y}$ a morphism of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-Module. There then exists a non-empty open subset $\mathrm{U}$ of $\mathrm{Y}$ such that $\sh{F}|u^{-1}(\mathrm{U})$ is flat over $\mathrm{U}$.
+\end{theorem}
+
+\begin{proof}
+One can clearly limit oneself to the case where $\mathrm{Y}=\operatorname{Spec}(\mathrm{A})$ is affine; then $\mathrm{X}$ is a finite union of affine opens $\mathrm{X}_i$ of finite type over $\mathrm{Y}$; if, for each $i$, there exists a non-empty open $\mathrm{U}_i$ in $\mathrm{Y}$ such that $\sh{F}|(\mathrm{X}_i\cap u^{-1}(\mathrm{U}_i))$ is flat over $\mathrm{U}_i$, it is clear that taking for $\mathrm{U}$ the intersection of the $\mathrm{U}_i$, we shall have answered the question; one can therefore suppose that $\mathrm{X}=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}$ is an $\mathrm{A}$-algebra of finite type. We then have $\sh{F}=\widetilde{\mathrm{M}}$, where $\mathrm{M}$ is a $\mathrm{B}$-module of finite type; the theorem will follow from the following:
+\end{proof}
+
+\begin{lemma}[6.9.2]
+\label{IV.6.9.2}
+Let $\mathrm{A}$ be an integral Noetherian ring, $\mathrm{B}$ a finite-type $\mathrm{A}$-algebra, and $\mathrm{M}$ a finite $\mathrm{B}$-module. Then there exists $f\neq 0$ in $\mathrm{A}$ such that $\mathrm{M}_f$ is a free $\mathrm{A}_f$-module.
+\end{lemma}
+
+\begin{proof}
+----- French corrections on page IV-2 152 -----
+[id 14102]
+OLD: =f\otimes\mathbf 1
+NEW: =f\otimes1
+FRENCH CONTEXT (corrected): begin{proof}
+\begin{enumerate}
+\item[(i)] On sait déjà que si $f$ et $g$ sont plats, il en est de même de
+$u=g\circ f$, et que si $f$ et $g\circ f$ sont plats et $f$ surjectif, $g$ est
+plat (2.1.6 et 2.2.13). D'autre part, pour tout $z\in Z$, le morphisme
+$f_z=f\otimes1_{\mathbf{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ est plat (resp.
+fidèlement plat si $f$ l'est) et pour tout $y\in g^{-1}(z)$,
+$f_z^{-1}(y)$ est isomorphe à $f^{-1}(y)$ (\textbf{I}, 3.6.4). Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\ci
+
+[id 14103]
+OLD: 1_{k(z)}:u^{-1}(z)
+NEW: 1_{\mathbf{k}(z)}:u^{-1}(z)
+FRENCH CONTEXT (corrected): of}
+\begin{enumerate}
+\item[(i)] On sait déjà que si $f$ et $g$ sont plats, il en est de même de
+$u=g\circ f$, et que si $f$ et $g\circ f$ sont plats et $f$ surjectif, $g$ est
+plat (2.1.6 et 2.2.13). D'autre part, pour tout $z\in Z$, le morphisme
+$f_z=f\otimes1_{\mathbf{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ est plat (resp.
+fidèlement plat si $f$ l'est) et pour tout $y\in g^{-1}(z)$,
+$f_z^{-1}(y)$ est isomorphe à $f^{-1}(y)$ (\textbf{I}, 3.6.4). Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour
+
+[id 14104]
+OLD: l'est) et, pour tout
+NEW: l'est) et pour tout
+FRENCH CONTEXT (corrected):  est de même de
+$u=g\circ f$, et que si $f$ et $g\circ f$ sont plats et $f$ surjectif, $g$ est
+plat (2.1.6 et 2.2.13). D'autre part, pour tout $z\in Z$, le morphisme
+$f_z=f\otimes1_{\mathbf{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ est plat (resp.
+fidèlement plat si $f$ l'est) et pour tout $y\in g^{-1}(z)$,
+$f_z^{-1}(y)$ est isomorphe à $f^{-1}(y)$ (\textbf{I}, 3.6.4). Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou
+
+[id 14106]
+OLD: Si $M(f)$ et $M(g)$
+sont vraies, $M(g\circ f)$ est donc vraie pour les cas où $M$ est
+NEW: Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est
+FRENCH CONTEXT (corrected): 2.1.6 et 2.2.13). D'autre part, pour tout $z\in Z$, le morphisme
+$f_z=f\otimes1_{\mathbf{k}(z)}:u^{-1}(z)\to g^{-1}(z)$ est plat (resp.
+fidèlement plat si $f$ l'est) et pour tout $y\in g^{-1}(z)$,
+$f_z^{-1}(y)$ est isomorphe à $f^{-1}(y)$ (\textbf{I}, 3.6.4). Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'
+
+[id 14107]
+OLD: d'être de Cohen--Macaulay ou
+NEW: d'être de Cohen-Macaulay ou
+FRENCH CONTEXT (corrected):  si $f$ l'est) et pour tout $y\in g^{-1}(z)$,
+$f_z^{-1}(y)$ est isomorphe à $f^{-1}(y)$ (\textbf{I}, 3.6.4). Si $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage
+
+[id 14109]
+OLD: g^{-1}(z)\otimes_{k(z)}k'
+NEW: g^{-1}(z)\otimes_{\mathbf{k}(z)}k'
+FRENCH CONTEXT (corrected): oldsymbol{M}(g)$
+sont vraies, $\boldsymbol{M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)
+
+[id 14110]
+OLD: u^{-1}(z)\otimes_{k(z)}k'
+NEW: u^{-1}(z)\otimes_{\mathbf{k}(z)}k'
+FRENCH CONTEXT (corrected): M}(g\circ f)$ est donc vraie pour les cas où $\boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ 
+
+[id 14111]
+OLD: f_z\otimes\mathbf 1_{k'}
+NEW: f_z\otimes1_{k'}
+FRENCH CONTEXT (corrected): \boldsymbol{M}$ est la propriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}
+
+[id 14112]
+OLD: Y'_z$. Le
+NEW: Y'_z$; le
+FRENCH CONTEXT (corrected): opriété
+d'être de Cohen-Macaulay ou $(S_n)$, en vertu de (6.6.1). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}(z)$ (\textbf{I}, 
+
+[id 14113]
+OLD: fidèlement plat) et, pour tout
+NEW: fidèlement plat) et pour tout
+FRENCH CONTEXT (corrected): ). D'autre part soit
+$k'$ une extension finie de $\boldsymbol{k}(z)$; posons
+$Y'_z=g^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}(z)$ (\textbf{I}, 3.6.4). Lorsque $\boldsymbol{M}$ est la propriété d'être
+régulier, $(R_n)$, normal 
+
+[id 14115]
+OLD: \otimes_{k(y)}
+NEW: \otimes_{\mathbf{k}(y)}
+FRENCH CONTEXT (corrected): imes_{\mathbf{k}(z)}k'$, $X'_z=u^{-1}(z)\otimes_{\mathbf{k}(z)}k'$, et
+$f'_z=f_z\otimes1_{k'}:X'_z\to Y'_z$; le morphisme $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}(z)$ (\textbf{I}, 3.6.4). Lorsque $\boldsymbol{M}$ est la propriété d'être
+régulier, $(R_n)$, normal ou réduit, l'hypothèse que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont
+vraies entraîn
+
+[id 14118]
+OLD: Lorsque $M$ est la propriété d'être
+NEW: Lorsque $\boldsymbol{M}$ est la propriété d'être
+FRENCH CONTEXT (corrected): me $f'_z$
+\oldpage[IV-2]{152}
+est plat
+(resp. fidèlement plat) et pour tout $y'\in Y'_z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}(z)$ (\textbf{I}, 3.6.4). Lorsque $\boldsymbol{M}$ est la propriété d'être
+régulier, $(R_n)$, normal ou réduit, l'hypothèse que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont
+vraies entraîne que $Y'_z$ et chacune des fibres $f_z'^{-1}(y')$ possèdent
+pour $y'\in Y'_z$ la propriété correspondante parmi les propriétés \emph{c)}, \emph
+
+[id 14119]
+OLD: l'hypothèse que $M(f)$ et $M(g)$ sont
+vraies
+NEW: l'hypothèse que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont
+vraies
+FRENCH CONTEXT (corrected): z$, la fibre $f_z'^{-1}(y')$
+est isomorphe à $f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$, en désignant par $y$ l'image
+de $y'$ dans $g^{-1}(z)$ (\textbf{I}, 3.6.4). Lorsque $\boldsymbol{M}$ est la propriété d'être
+régulier, $(R_n)$, normal ou réduit, l'hypothèse que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont
+vraies entraîne que $Y'_z$ et chacune des fibres $f_z'^{-1}(y')$ possèdent
+pour $y'\in Y'_z$ la propriété correspondante parmi les propriétés \emph{c)}, \emph{d)},
+\emph{e)}, \emph{f)} de (6.6.1); on déduit donc de (6.6.1, (i)) que $X'_z$ possède la même
+propriété, 
+
+[id 14120]
+OLD: propriétés c), d),
+e), f) de (6.6.1)
+NEW: propriétés \emph{c)}, \emph{d)},
+\emph{e)}, \emph{f)} de (6.6.1)
+FRENCH CONTEXT (corrected): M}$ est la propriété d'être
+régulier, $(R_n)$, normal ou réduit, l'hypothèse que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(g)$ sont
+vraies entraîne que $Y'_z$ et chacune des fibres $f_z'^{-1}(y')$ possèdent
+pour $y'\in Y'_z$ la propriété correspondante parmi les propriétés \emph{c)}, \emph{d)},
+\emph{e)}, \emph{f)} de (6.6.1); on déduit donc de (6.6.1, (i)) que $X'_z$ possède la même
+propriété, donc $\boldsymbol{M}(g\circ f)$ est vraie.
+\item[(ii)] Inversement, l'hypothèse que $\boldsymbol{M}(g\circ f)$ et $\boldsymbol{M}(f)$ sont vraies
+et que $f$ est surjectif entraîne que $Y'_z
+
+[id 14122]
+OLD: l'hypothèse que $M(g\circ f)$ et $M(f)$ sont vraies
+NEW: l'hypothèse que $\boldsymbol{M}(g\circ f)$ et $\boldsymbol{M}(f)$ sont vraies
+FRENCH CONTEXT (corrected): 
+pour $y'\in Y'_z$ la propriété correspondante parmi les propriétés \emph{c)}, \emph{d)},
+\emph{e)}, \emph{f)} de (6.6.1); on déduit donc de (6.6.1, (i)) que $X'_z$ possède la même
+propriété, donc $\boldsymbol{M}(g\circ f)$ est vraie.
+\item[(ii)] Inversement, l'hypothèse que $\boldsymbol{M}(g\circ f)$ et $\boldsymbol{M}(f)$ sont vraies
+et que $f$ est surjectif entraîne que $Y'_z$ a la propriété correspondante en
+vertu de (6.6.1, (ii)), $f'_z$ étant surjectif pour tout $z$; donc $\boldsymbol{M}(g)$ est
+vraie.
+\item[(iii)] La première assertion découle aussitôt de (6.8.2). D'autre part,
+si $h
+
+[id 14124]
+OLD: $P(f^{-1}(y),x)$ et
+$P(f'^{-1}(y'),x')$
+NEW: $\boldsymbol{P}(f^{-1}(y),x)$ et
+$\boldsymbol{P}(f'^{-1}(y'),x')$
+FRENCH CONTEXT (corrected): tant surjectif pour tout $z$; donc $\boldsymbol{M}(g)$ est
+vraie.
+\item[(iii)] La première assertion découle aussitôt de (6.8.2). D'autre part,
+si $h$ est fidèlement plat et $f'$ plat, $f$ est plat (2.4.1); comme, avec les
+notations de (6.8.2), les propriétés $\boldsymbol{P}(f^{-1}(y),x)$ et
+$\boldsymbol{P}(f'^{-1}(y'),x')$ sont équivalentes (6.7.8), on voit que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(f')$
+sont alors équivalentes.
+\end{enumerate}
+
+Enfin, la dernière assertion de la proposition résulte de (1.4.3, (iii)) et
+de (2.7.1, (iv)).
+\end{proof}
+
+\begin{remarks}[6.8.4]
+\lab
+
+[id 14125]
+OLD: on voit que $M(f)$ et $M(f')$
+NEW: on voit que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(f')$
+FRENCH CONTEXT (corrected): sertion découle aussitôt de (6.8.2). D'autre part,
+si $h$ est fidèlement plat et $f'$ plat, $f$ est plat (2.4.1); comme, avec les
+notations de (6.8.2), les propriétés $\boldsymbol{P}(f^{-1}(y),x)$ et
+$\boldsymbol{P}(f'^{-1}(y'),x')$ sont équivalentes (6.7.8), on voit que $\boldsymbol{M}(f)$ et $\boldsymbol{M}(f')$
+sont alors équivalentes.
+\end{enumerate}
+
+Enfin, la dernière assertion de la proposition résulte de (1.4.3, (iii)) et
+de (2.7.1, (iv)).
+\end{proof}
+
+\begin{remarks}[6.8.4]
+\label{IV.2.s6.8.4-fr}
+\begin{enumerate}
+\item[(i)] Si $f$ est fidèlement plat, $g$ pla
+
+[id 14127]
+OLD: «régulier
+(resp. $(R_n)$, resp. normal) sur $k$»
+NEW: «\emph{régulier}
+(resp. $(R_n)$, resp. \emph{normal}) \emph{sur} $k$»
+FRENCH CONTEXT (corrected): .1), on prend pour $Y$ le spectre d'un corps
+$k$, les notions (iv), (v) et (vi) se réduisent à celles définies dans (6.7.5).
+Il est clair que ces dernières sont relatives au corps de base $k$. La
+définition (6.8.1) conduit alors à dire qu'un préschéma $X$ est «\emph{régulier}
+(resp. $(R_n)$, resp. \emph{normal}) \emph{sur} $k$» au lieu de dire qu'il est
+«géométriquement régulier (resp. $(R_n)$, resp. normal) relativement à $k$»;
+on évitera de confondre cette notion avec la propriété d'être régulier (resp.
+$(R_n)$, resp. normal) qui est indépendante de $k$. On peut faire à ce propos
+
+
+[id 14128]
+OLD: désignons par $P(Z)$
+NEW: désignons par $\boldsymbol{P}(Z)$
+FRENCH CONTEXT (corrected): s remarques que dans (4.5.12).
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[6.8.5]
+\label{IV.2.s6.8.5-fr}
+Soient $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens,
+dont l'un est localement de type fini sur $k$. Pour un $k$-préschéma $Z$,
+désignons par $\boldsymbol{P}(Z)$ l'une des propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)}; la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \
+
+[id 14129]
+OLD: propriétés c) à f) de (6.6.1);
+NEW: propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)};
+FRENCH CONTEXT (corrected): e}
+\end{remarks}
+
+\begin{proposition}[6.8.5]
+\label{IV.2.s6.8.5-fr}
+Soient $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens,
+dont l'un est localement de type fini sur $k$. Pour un $k$-préschéma $Z$,
+désignons par $\boldsymbol{P}(Z)$ l'une des propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)}; la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$
+
+[id 14130]
+OLD: «$P(Z)$ géométrique»
+NEW: «$\boldsymbol{P}(Z)$ géométrique»
+FRENCH CONTEXT (corrected): ent $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens,
+dont l'un est localement de type fini sur $k$. Pour un $k$-préschéma $Z$,
+désignons par $\boldsymbol{P}(Z)$ l'une des propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)}; la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ 
+
+[id 14132]
+OLD: lorsque
+$P(Z)$ est
+NEW: lorsque
+$\boldsymbol{P}(Z)$ est
+FRENCH CONTEXT (corrected): ement de type fini sur $k$. Pour un $k$-préschéma $Z$,
+désignons par $\boldsymbol{P}(Z)$ l'une des propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)}; la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbo
+
+[id 14133]
+OLD: propriétés c), d), e) (resp. f)) de (6.6.1). Alors
+NEW: propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors
+FRENCH CONTEXT (corrected): éschéma $Z$,
+désignons par $\boldsymbol{P}(Z)$ l'une des propriétés \textup{c)} à \textup{f)} de \textup{(6.6.1)}; la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbol{P}$.
+\item[\textup{(ii)}] Si $X$ et $Y$ possèdent la propriété $\boldsymbol{P
+
+[id 14135]
+OLD: possède la propriété $P$, et $Y$ la propriété $P$
+géométrique, $X\times_kY$ possède la propriété $P$.
+NEW: possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbol{P}$.
+FRENCH CONTEXT (corrected): la propriété
+«$\boldsymbol{P}(Z)$ géométrique» est alors définie dans \textup{(6.7.6) (resp. (4.6.1))} lorsque
+$\boldsymbol{P}(Z)$ est l'une des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbol{P}$.
+\item[\textup{(ii)}] Si $X$ et $Y$ possèdent la propriété $\boldsymbol{P}$ géométrique, il en est
+de même de $X\times_kY$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Soient en effet $f:X\times_kY\to X$, $g:X\to\operatorname{Spec}(k)$ les
+morphismes stru
+
+[id 14136]
+OLD: \item[(ii)] Si $X$
+NEW: \item[\textup{(ii)}] Si $X$
+FRENCH CONTEXT (corrected): des propriétés \textup{c), d), e) (resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbol{P}$.
+\item[\textup{(ii)}] Si $X$ et $Y$ possèdent la propriété $\boldsymbol{P}$ géométrique, il en est
+de même de $X\times_kY$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Soient en effet $f:X\times_kY\to X$, $g:X\to\operatorname{Spec}(k)$ les
+morphismes structuraux, qui sont plats (2.1
+
+[id 14137]
+OLD: possèdent la propriété $P$ géométrique
+NEW: possèdent la propriété $\boldsymbol{P}$ géométrique
+FRENCH CONTEXT (corrected): resp. f))} de \textup{(6.6.1)}. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ possède la propriété $\boldsymbol{P}$, et $Y$ la propriété $\boldsymbol{P}$
+géométrique, $X\times_kY$ possède la propriété $\boldsymbol{P}$.
+\item[\textup{(ii)}] Si $X$ et $Y$ possèdent la propriété $\boldsymbol{P}$ géométrique, il en est
+de même de $X\times_kY$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Soient en effet $f:X\times_kY\to X$, $g:X\to\operatorname{Spec}(k)$ les
+morphismes structuraux, qui sont plats (2.1.2 et 2.1.4). L'hypothèse que
+$Y$ possède la propriété $\bo
+
+[id 14138]
+OLD: $Y$ possède la propriété $P$ géométrique entraîne
+NEW: $Y$ possède la propriété $\boldsymbol{P}$ géométrique entraîne
+FRENCH CONTEXT (corrected):  $\boldsymbol{P}$ géométrique, il en est
+de même de $X\times_kY$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Soient en effet $f:X\times_kY\to X$, $g:X\to\operatorname{Spec}(k)$ les
+morphismes structuraux, qui sont plats (2.1.2 et 2.1.4). L'hypothèse que
+$Y$ possède la propriété $\boldsymbol{P}$ géométrique entraîne en vertu de (6.8.2) que
+$\boldsymbol{M}(f)$ est vraie, $\boldsymbol{M}$ étant la propriété de (6.8.3) qui correspond à $\boldsymbol{P}$; sous
+l'hypothèse (ii), $\boldsymbol{M}(g)$ est aussi vraie, donc l'assertion (ii) résulte de
+(6.8.3, (i)). Quant à l'asser
+
+[id 14139]
+OLD: $M(f)$ est vraie, $M$ étant la propriété de (6.8.3) qui correspond à $P$
+NEW: $\boldsymbol{M}(f)$ est vraie, $\boldsymbol{M}$ étant la propriété de (6.8.3) qui correspond à $\boldsymbol{P}$
+FRENCH CONTEXT (corrected): proposition}
+
+\begin{proof}
+Soient en effet $f:X\times_kY\to X$, $g:X\to\operatorname{Spec}(k)$ les
+morphismes structuraux, qui sont plats (2.1.2 et 2.1.4). L'hypothèse que
+$Y$ possède la propriété $\boldsymbol{P}$ géométrique entraîne en vertu de (6.8.2) que
+$\boldsymbol{M}(f)$ est vraie, $\boldsymbol{M}$ étant la propriété de (6.8.3) qui correspond à $\boldsymbol{P}$; sous
+l'hypothèse (ii), $\boldsymbol{M}(g)$ est aussi vraie, donc l'assertion (ii) résulte de
+(6.8.3, (i)). Quant à l'assertion (i), elle résulte directement de (6.6.1, (i)).
+\end{proof}
+
+\begin{theorem}[6.8.6]
+\label{IV.2.s6.8.6-fr}
+Soient $X$, $Y$ deux prés
+
+[id 14141]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): ).
+\end{proof}
+
+\begin{theorem}[6.8.6]
+\label{IV.2.s6.8.6-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme localement de type fini, $x$ un point de $X$, $y=f(x)$. Les
+propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $f$ est lisse au point $x$.
+\item[\textup{b)}] $f$ est régulier au point $x$.
+\oldpage[IV-2]{153}
+\item[\textup{c)}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies préadiques sur $\mathcal O_
+
+[id 14142]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): V.2.s6.8.6-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme localement de type fini, $x$ un point de $X$, $y=f(x)$. Les
+propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $f$ est lisse au point $x$.
+\item[\textup{b)}] $f$ est régulier au point $x$.
+\oldpage[IV-2]{153}
+\item[\textup{c)}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies préadiques sur $\mathcal O_x$ et $\mathcal O_y$.
+\item[\textup{c')}] $\mat
+
+=================== PAGE IV-2 153 ===================
+----- (English page IV-2 152: shown above in this file) -----
+----- (English page IV-2 153: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 154 -----
+\oldpage[IV-2]{154}
+Denote by $\mathrm{K}$ the field of fractions of $\mathrm{A}$; then $\mathrm{B}\otimes_\mathrm{A}\mathrm{K}$ is an algebra of finite type over $\mathrm{K}$ and $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}$ is a $(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$-module of finite type. We shall reason by induction on the \emph{dimension} $n$ of the support of $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}$, which is either $\setmin\infty$ or finite and $\geqslant 0$. Suppose first $n=\setmin\infty$, i.e.\ $\mathrm{M}\otimes_\mathrm{A}\mathrm{K}=0$; if $(m_i)_{1\leqslant i\leqslant r}$ is a system of generators of the $\mathrm{B}$-module $\mathrm{M}$, there therefore exists $f\neq 0$ in $\mathrm{A}$ such that $fm_i=0$ for $1\leqslant i\leqslant r$; hence $\mathrm{M}_f=0$ and the lemma is true in this case.
+
+Suppose now $n\geqslant 0$. We know that there exists a composition series $\mathrm{M}=\mathrm{M}_1\supset\mathrm{M}_2\supset\ldots\supset\mathrm{M}_q=0$ of the $\mathrm{B}$-module $\mathrm{M}$ such that each quotient $\mathrm{N}_i=\mathrm{M}_i/\mathrm{M}_{i+1}$ is isomorphic to a $\mathrm{B}$-module of the form $\mathrm{B}/\mathfrak{p}_i$, where $\mathfrak{p}_i$ is a prime ideal of $\mathrm{B}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~1, no~4, th.~1). If the theorem is true for each $\mathrm{N}_i$, there exists for each $i$ an $f_i\neq 0$ in $\mathrm{A}$ such that $(\mathrm{N}_i)_{f_i}$ is free over $\mathrm{A}_{f_i}$; setting $f=f_1f_2\ldots f_{q-1}$, it follows that $(\mathrm{N}_i)_f$ is a free $\mathrm{A}_f$-module for $1\leqslant i\leqslant q-1$. But $(\mathrm{N}_i)_f=(\mathrm{M}_i)_f/(\mathrm{M}_{i+1})_f$ \sref[0]{0.1.3.2}, and since an extension of free modules is free, we deduce that $\mathrm{M}_f$ is a free $\mathrm{A}_f$-module.
+
+Replacing $\mathrm{B}$ by $\mathrm{B}/\mathfrak{p}$, where $\mathfrak{p}$ is a prime ideal of $\mathrm{B}$, one can therefore reduce to the case $\mathrm{M}=\mathrm{B}$ with $\mathrm{B}$ integral. We then know (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, no~1, cor.~1 of th.~1) that there exist $g\neq 0$ in $\mathrm{A}$ and elements $t_i$ ($1\leqslant i\leqslant m$) of $\mathrm{B}$, algebraically independent over $\mathrm{A}$, such that $\mathrm{B}_g$ is integral over $\mathrm{A}_g[t_1,\ldots,t_m]$. One can replace $\mathrm{A}$ by $\mathrm{A}_g$, $\mathrm{B}$ by $\mathrm{B}_g$ and suppose that $\mathrm{B}$ is integral over $\mathrm{C}=\mathrm{A}[t_1,\ldots,t_m]$, hence a $\mathrm{C}$-module of finite type and \emph{without torsion}. We know furthermore \sref{IV.4.1.2} that the dimension of $\operatorname{Spec}(\mathrm{B}\otimes_\mathrm{A}\mathrm{K})$ is equal to $m$, hence $m=n$.
+
+This being so, if $h$ is the rank of the $\mathrm{C}$-module without torsion $\mathrm{B}$, there exists a short exact sequence of $\mathrm{C}$-modules
+\[
+0\to\mathrm{C}^h\to\mathrm{B}\to\mathrm{M}'\to 0
+\]
+where $\mathrm{M}'$ is a torsion $\mathrm{C}$-module of finite type; the support of $\mathrm{M}'$ does not therefore contain the generic point of $\operatorname{Spec}(\mathrm{C})$ \sref[I]{I.7.4.6} and hence the support of $\mathrm{M}'\otimes_\mathrm{A}\mathrm{K}$ does not contain the generic point of $\operatorname{Spec}(\mathrm{C}\otimes_\mathrm{A}\mathrm{K})$ \sref[I]{I.9.1.13.1}; one concludes \sref{IV.4.1.2.1} that its dimension is $<n$. By the induction hypothesis, there exists $f\neq 0$ in $\mathrm{A}$ such that $\mathrm{M}'_f$ is a free $\mathrm{A}_f$-module; moreover $\mathrm{C}^h_f$ is a free $\mathrm{A}_f$-module, and therefore so is $\mathrm{B}_f$, which by \sref[0]{0.1.3.2} is an extension of free modules.
+\end{proof}
+
+\begin{corollary}[6.9.3]
+\label{IV.6.9.3}
+Let $\mathrm{S}$ be a Noetherian prescheme, $u:\mathrm{X}\to\mathrm{S}$ a morphism of finite type, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-Module. There then exists a partition $(\mathrm{S}_i)_{1\leqslant i\leqslant n}$ of $\mathrm{S}$ into a finite number of locally closed subsets of $\mathrm{S}$, such that, if one still denotes by $\mathrm{S}_i$ the reduced sub-prescheme having $\mathrm{S}_i$ for underlying space, and if one sets $\mathrm{X}_i=\mathrm{X}\times_\mathrm{S}\mathrm{S}_i$, the $\sh{O}_{\mathrm{X}_i}$-Module $\sh{F}_i=\sh{F}\otimes_{\sh{O}_\mathrm{S}}\sh{O}_{\mathrm{S}_i}$ is flat over $\mathrm{S}_i$.
+\end{corollary}
+
+\begin{proof}
+We proceed by Noetherian induction \sref[0]{0.2.2.2} on the set of closed subsets $\mathrm{T}$ of $\mathrm{S}$ such that the reduced closed sub-prescheme with underlying space $\mathrm{T}$ satisfies the conclusion of \sref{IV.6.9.3}. One can therefore limit oneself to proving the corollary for $\mathrm{S}$ by supposing that it is true for every reduced closed sub-prescheme whose underlying space is a closed subset distinct from $\mathrm{S}$. Since the morphism $\mathrm{S}_\mathrm{red}\to\mathrm{S}$ is of finite type and surjective, one can replace $\mathrm{S}$ by $\mathrm{S}_\mathrm{red}$, hence suppose $\mathrm{S}$ reduced and non-empty. Since $\mathrm{S}$ is Noetherian, the interior $\mathrm{T}$ of an irreducible component of $\mathrm{S}$ is non-empty, and the induced prescheme on $\mathrm{T}$ is integral; there therefore exists by virtue of \sref{IV.6.9.1} a non-empty open $\mathrm{U}\subset\mathrm{T}$
+----- French corrections on page IV-2 153 -----
+[id 14145]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected):  $f:X\to Y$ un
+morphisme localement de type fini, $x$ un point de $X$, $y=f(x)$. Les
+propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $f$ est lisse au point $x$.
+\item[\textup{b)}] $f$ est régulier au point $x$.
+\oldpage[IV-2]{153}
+\item[\textup{c)}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies préadiques sur $\mathcal O_x$ et $\mathcal O_y$.
+\item[\textup{c')}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\
+
+[id 14147]
+OLD: \item[c')]
+NEW: \item[\textup{c')}]
+FRENCH CONTEXT (corrected): t $x$.
+\item[\textup{b)}] $f$ est régulier au point $x$.
+\oldpage[IV-2]{153}
+\item[\textup{c)}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies préadiques sur $\mathcal O_x$ et $\mathcal O_y$.
+\item[\textup{c')}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies discrètes sur $\mathcal O_x$ et $\mathcal O_y$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte des
+
+[id 14149]
+OLD: L'équivalence de a) et b)
+NEW: L'équivalence de \emph{a)} et \emph{b)}
+FRENCH CONTEXT (corrected): mathcal O_x$ et $\mathcal O_y$.
+\item[\textup{c')}] $\mathcal O_x$ est une $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies discrètes sur $\mathcal O_x$ et $\mathcal O_y$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte des définitions (6.8.1) et du fait que
+pour les préschémas localement noethériens, les morphismes localement de type
+fini sont localement de présentation finie (1.4.2).
+
+En second lieu, pour que
+$\mathcal O_x$ soit une $\mathcal O_y$-algèbre formellem
+
+[id 14150]
+OLD: du fait que,
+pour les
+NEW: du fait que
+pour les
+FRENCH CONTEXT (corrected): $\mathcal O_y$-algèbre formellement lisse
+\textup{(\textbf{0}, 19.3.1)} pour les topologies discrètes sur $\mathcal O_x$ et $\mathcal O_y$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte des définitions (6.8.1) et du fait que
+pour les préschémas localement noethériens, les morphismes localement de type
+fini sont localement de présentation finie (1.4.2).
+
+En second lieu, pour que
+$\mathcal O_x$ soit une $\mathcal O_y$-algèbre formellement lisse pour les
+topologies préadiques, il faut et il 
+
+[id 14159]
+OLD: l'équivalence de b) et c). Enfin
+NEW: l'équivalence de \emph{b)} et \emph{c)}. Enfin
+FRENCH CONTEXT (corrected): x\otimes_{\mathcal O_y}\boldsymbol{k}(y)$ soit une $\boldsymbol{k}(y)$-algèbre formellement lisse pour sa topologie préadique,
+il faut et il suffit qu'elle soit une $\boldsymbol{k}(y)$-algèbre géométriquement régulière
+(\textbf{0}, 19.6.6); ceci démontre donc l'équivalence de \emph{b)} et \emph{c)}. Enfin, pour prouver
+l'équivalence de \emph{c)} et \emph{c')}, on peut se borner au cas où $Y=\operatorname{Spec}(A)$
+et $X=\operatorname{Spec}(C)$ sont affines, $A$ étant noethérien et $C$ une
+$A$-algèbre de type fini, que l'on peut donc écrire sous la forme
+$A[T_1
+
+[id 14160]
+OLD: l'équivalence de c) et c'), on peut
+NEW: l'équivalence de \emph{c)} et \emph{c')}, on peut
+FRENCH CONTEXT (corrected): ol{k}(y)$-algèbre formellement lisse pour sa topologie préadique,
+il faut et il suffit qu'elle soit une $\boldsymbol{k}(y)$-algèbre géométriquement régulière
+(\textbf{0}, 19.6.6); ceci démontre donc l'équivalence de \emph{b)} et \emph{c)}. Enfin, pour prouver
+l'équivalence de \emph{c)} et \emph{c')}, on peut se borner au cas où $Y=\operatorname{Spec}(A)$
+et $X=\operatorname{Spec}(C)$ sont affines, $A$ étant noethérien et $C$ une
+$A$-algèbre de type fini, que l'on peut donc écrire sous la forme
+$A[T_1,\ldots,T_n]/\mathfrak J$. Comme ici $\mathfrak J/\mathfrak J^2$
+
+[id 14161]
+OLD: l'équivalence de c) et c') résulte
+NEW: l'équivalence de \emph{c)} et \emph{c')} résulte
+FRENCH CONTEXT (corrected): }(A)$
+et $X=\operatorname{Spec}(C)$ sont affines, $A$ étant noethérien et $C$ une
+$A$-algèbre de type fini, que l'on peut donc écrire sous la forme
+$A[T_1,\ldots,T_n]/\mathfrak J$. Comme ici $\mathfrak J/\mathfrak J^2$ est un
+$C$-module de présentation finie, l'équivalence de \emph{c)} et \emph{c')} résulte de
+(\textbf{0}, 22.6.4) appliqué à $A$, $B=A[T_1,\ldots,T_n]$ et $C=B/\mathfrak J$.
+\end{proof}
+
+\begin{corollary}[6.8.7]
+\label{IV.2.s6.8.7-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme localement de type fini. Alors l'e
+
+[id 14163]
+OLD: (ou régulier)
+NEW: (\textup{ou} régulier)
+FRENCH CONTEXT (corrected): [T_1,\ldots,T_n]$ et $C=B/\mathfrak J$.
+\end{proof}
+
+\begin{corollary}[6.8.7]
+\label{IV.2.s6.8.7-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme localement de type fini. Alors l'ensemble des points $x\in X$ où
+$f$ est lisse (\textup{ou} régulier) est ouvert dans $X$.
+\end{corollary}
+
+\begin{proof}
+Il résulte en effet de (\textbf{0}, 22.6.5) que l'ensemble des $x\in X$ vérifiant la
+condition \emph{c')} de (6.8.6) est ouvert dans $X$, et on conclut par (6.8.6).
+\end{proof}
+
+\begin{remark}[6.8.8]
+\label{
+
+[id 14165]
+OLD: condition c') de
+NEW: condition \emph{c')} de
+FRENCH CONTEXT (corrected): X\to Y$ un
+morphisme localement de type fini. Alors l'ensemble des points $x\in X$ où
+$f$ est lisse (\textup{ou} régulier) est ouvert dans $X$.
+\end{corollary}
+
+\begin{proof}
+Il résulte en effet de (\textbf{0}, 22.6.5) que l'ensemble des $x\in X$ vérifiant la
+condition \emph{c')} de (6.8.6) est ouvert dans $X$, et on conclut par (6.8.6).
+\end{proof}
+
+\begin{remark}[6.8.8]
+\label{IV.2.s6.8.8-fr}
+Dans (17.5.1), nous montrerons que l'équivalence de \emph{b)} et \emph{c')} dans (6.8.6),
+ainsi que le corollaire (6.8.7), restent valables sans 
+
+[id 14166]
+OLD: l'équivalence de b) et c') dans
+NEW: l'équivalence de \emph{b)} et \emph{c')} dans
+FRENCH CONTEXT (corrected): }
+Il résulte en effet de (\textbf{0}, 22.6.5) que l'ensemble des $x\in X$ vérifiant la
+condition \emph{c')} de (6.8.6) est ouvert dans $X$, et on conclut par (6.8.6).
+\end{proof}
+
+\begin{remark}[6.8.8]
+\label{IV.2.s6.8.8-fr}
+Dans (17.5.1), nous montrerons que l'équivalence de \emph{b)} et \emph{c')} dans (6.8.6),
+ainsi que le corollaire (6.8.7), restent valables sans hypothèse noethérienne
+sur $X$ et $Y$, pourvu que l'on se borne aux morphismes \emph{localement de
+présentation finie}.
+\end{remark}
+
+\subsection{Le théorème de platitude générique.}
+\label{subse
+
+[id 14167]
+OLD: morphismes localement de
+présentation finie.
+NEW: morphismes \emph{localement de
+présentation finie}.
+FRENCH CONTEXT (corrected): 
+
+\begin{remark}[6.8.8]
+\label{IV.2.s6.8.8-fr}
+Dans (17.5.1), nous montrerons que l'équivalence de \emph{b)} et \emph{c')} dans (6.8.6),
+ainsi que le corollaire (6.8.7), restent valables sans hypothèse noethérienne
+sur $X$ et $Y$, pourvu que l'on se borne aux morphismes \emph{localement de
+présentation finie}.
+\end{remark}
+
+\subsection{Le théorème de platitude générique.}
+\label{subsection:IV.6.9}
+
+\begin{theorem}[6.9.1]
+\label{IV.2.s6.9.1-fr}
+Soient $Y$ un préschéma localement noethérien et intègre, $u:X\to Y$ un
+morphisme de type fini, $\mathcal F$ un $\mathcal O
+
+[id 14168]
+OLD: \subsection{Le théorème de platitude générique}
+NEW: \subsection{Le théorème de platitude générique.}
+FRENCH CONTEXT (corrected):  montrerons que l'équivalence de \emph{b)} et \emph{c')} dans (6.8.6),
+ainsi que le corollaire (6.8.7), restent valables sans hypothèse noethérienne
+sur $X$ et $Y$, pourvu que l'on se borne aux morphismes \emph{localement de
+présentation finie}.
+\end{remark}
+
+\subsection{Le théorème de platitude générique.}
+\label{subsection:IV.6.9}
+
+\begin{theorem}[6.9.1]
+\label{IV.2.s6.9.1-fr}
+Soient $Y$ un préschéma localement noethérien et intègre, $u:X\to Y$ un
+morphisme de type fini, $\mathcal F$ un $\mathcal O_X$-Module cohérent. Il
+existe alors un ouvert non vide $U$ de 
+
+[id 14169]
+OLD: \mathcal F|_{u^{-1}(U)}
+NEW: \mathcal F|u^{-1}(U)
+FRENCH CONTEXT (corrected): ction:IV.6.9}
+
+\begin{theorem}[6.9.1]
+\label{IV.2.s6.9.1-fr}
+Soient $Y$ un préschéma localement noethérien et intègre, $u:X\to Y$ un
+morphisme de type fini, $\mathcal F$ un $\mathcal O_X$-Module cohérent. Il
+existe alors un ouvert non vide $U$ de $Y$ tel que
+$\mathcal F|u^{-1}(U)$ soit plat sur $U$.
+\end{theorem}
+
+\begin{proof}
+On peut évidemment se borner au cas où $Y=\operatorname{Spec}(A)$ est affine;
+alors $X$ est réunion finie d'ouverts affines $X_i$ de type fini sur $Y$; si,
+pour chaque $i$, il y a un ouvert non vide $U_i$ dans 
+
+[id 14170]
+OLD: \mathcal F|_{X_i\cap u^{-1}(U_i)}
+NEW: \mathcal F|(X_i\cap u^{-1}(U_i))
+FRENCH CONTEXT (corrected): ur $U$.
+\end{theorem}
+
+\begin{proof}
+On peut évidemment se borner au cas où $Y=\operatorname{Spec}(A)$ est affine;
+alors $X$ est réunion finie d'ouverts affines $X_i$ de type fini sur $Y$; si,
+pour chaque $i$, il y a un ouvert non vide $U_i$ dans $Y$ tel que
+$\mathcal F|(X_i\cap u^{-1}(U_i))$ soit plat sur $U_i$, il est clair qu'en
+prenant pour $U$ l'intersection des $U_i$, on répondra à la question; on peut
+donc supposer que $X=\operatorname{Spec}(B)$, où $B$ est une $A$-algèbre de
+type fini. On a alors $\mathcal F=\widetilde M$, où $M$ est un $
+
+[id 14171]
+OLD: par suite du lemme suivant.
+NEW: par suite du
+FRENCH CONTEXT (corrected): ant pour $U$ l'intersection des $U_i$, on répondra à la question; on peut
+donc supposer que $X=\operatorname{Spec}(B)$, où $B$ est une $A$-algèbre de
+type fini. On a alors $\mathcal F=\widetilde M$, où $M$ est un $B$-module de
+type fini; le théorème résultera par suite du
+\end{proof}
+
+\begin{lemma}[6.9.2]
+\label{IV.2.s6.9.2-fr}
+Soient $A$ un anneau intègre noethérien, $B$ une $A$-algèbre de type fini,
+$M$ un $B$-module de type fini. Alors il existe $f\ne0$ dans $A$ tel que
+$M_f$ soit un $A_f$-module libre.
+\end{lemma}
+
+\begin{
+
+=================== PAGE IV-2 154 ===================
+----- (English page IV-2 153: shown above in this file) -----
+----- (English page IV-2 154: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 155 -----
+\oldpage[IV-2]{155}
+
+such that $\sh{F}|u^{-1}(\mathrm{U})$ is flat over $\mathrm{U}$. If $\mathrm{Y}$ is then the reduced closed sub-prescheme of $\mathrm{S}$ with underlying space $\mathrm{S}-\mathrm{U}$, there exists by hypothesis a partition $(\mathrm{Y}_i)$ of $\mathrm{Y}$ into locally closed subsets of $\mathrm{Y}$ (hence of $\mathrm{S}$) such that $\sh{F}_i=\sh{F}\otimes_{\sh{O}_\mathrm{S}}\sh{O}_{\mathrm{Y}_i}$ is flat over $\mathrm{Y}_i$ for every $i$; it is clear that the $\mathrm{Y}_i$ and $\mathrm{U}$ form a partition answering the question.
+\end{proof}
+
+\subsection{Dimension and depth of a module normally flat along a closed sub-prescheme}
+\label{subsection:IV.6.10}
+
+\begin{env}[6.10.1]
+\label{IV.6.10.1}
+Let $\mathrm{X}$ be a locally Noetherian prescheme, $\sh{J}$ a quasi-coherent Ideal of $\sh{O}_\mathrm{X}$, $\mathrm{Y}$ the closed sub-prescheme of $\mathrm{X}$ defined by $\sh{J}$, $j:\mathrm{Y}\to\mathrm{X}$ the canonical injection. For every integer $k\geqslant 0$, the $\sh{O}_\mathrm{X}$-Module $\sh{J}^k\sh{F}/\sh{J}^{k+1}\sh{F}$ is annihilated by $\sh{J}$, hence of the form $j_*(\sh{G}_k)$, where $\sh{G}_k=j^*(\sh{J}^k\sh{F}/\sh{J}^{k+1}\sh{F})=j^*(\sh{J}^k\sh{F})$ is a coherent $\sh{O}_\mathrm{Y}$-Module. By abuse of language, we shall denote by $\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$ the graded $\sh{O}_\mathrm{Y}$-Module equal to the direct sum
+\[
+\bigoplus_{k=0}^{\infty}\sh{G}_k = j^*\Big(\bigoplus_{k=0}^{\infty}\sh{J}^k\sh{F}/\sh{J}^{k+1}\sh{F}\Big);
+\]
+  in particular, we have $\operatorname{gr}^0_\sh{J}(\sh{F})=\sh{G}_0=\sh{F}\otimes_{\sh{O}_\mathrm{X}}\sh{O}_\mathrm{Y}=j^*(\sh{F})$. We shall say (following Hironaka) that $\sh{F}$ is \emph{normally flat along} $\mathrm{Y}$ if $\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$ is a flat $\sh{O}_\mathrm{Y}$-Module. This amounts to the same \sref{IV.2.1.12} and \sref[0]{0.6.1.2} as saying that each of the $\sh{O}_\mathrm{Y}$-Modules $\sh{G}_k=j^*(\sh{J}^k\sh{F})$ is \emph{locally free}.
+\end{env}
+
+\begin{proposition}[6.10.2]
+\label{IV.6.10.2}
+Let $\mathrm{X}$ be a locally Noetherian prescheme, $\mathrm{Y}$ a closed integral sub-prescheme of $\mathrm{X}$. For every coherent $\sh{O}_\mathrm{X}$-Module $\sh{F}$, there exists an open $\mathrm{U}$ of $\mathrm{X}$ such that $\mathrm{Y}\cap\mathrm{U}\neq\varnothing$ and that $\sh{F}|\mathrm{U}$ is normally flat along $\mathrm{Y}\cap\mathrm{U}$.
+\end{proposition}
+
+\begin{proof}
+Indeed, let $\sh{J}$ be the coherent ideal of $\sh{O}_\mathrm{X}$ defining $\mathrm{Y}$. The $\sh{O}_\mathrm{Y}$-algebra $\sh{B}=\operatorname{gr}^{\bullet}_\sh{J}(\sh{O}_\mathrm{X})$ is quasi-coherent and \emph{of finite type}, since it is generated by $\operatorname{gr}^1_\sh{J}(\sh{O}_\mathrm{X})$, the inverse image of $\sh{J}/\sh{J}^2$. Since $\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$ is a quasi-coherent $\sh{B}$-module generated by $\operatorname{gr}^0_\sh{J}(\sh{F})$, it is a $\sh{B}$-Module \emph{of finite type}. If one sets $\mathrm{Z}=\operatorname{Spec}(\sh{B})$, the structural morphism $u:\mathrm{Z}\to\mathrm{Y}$ is of finite type, and if $\sh{H}$ is the coherent $\sh{O}_\mathrm{Z}$-Module such that $u_*(\sh{H})=\operatorname{gr}^{\bullet}_\sh{J}(\sh{F})$, it suffices to apply to $u$ and to $\sh{H}$ the theorem of generic flatness \sref{IV.6.9.1} to prove the proposition.
+\end{proof}
+
+\begin{proposition}[6.10.3]
+\label{IV.6.10.3}
+The notations being those of \sref{IV.6.10.1}, suppose that $\sh{F}$ is normally flat along $\mathrm{Y}$. Then:
+\begin{enumerate}[label=(\roman*)]
+  \item $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})$ is a part both open and closed of $\mathrm{Y}$ (in other words, a union of connected components of $\mathrm{Y}$).
+  \item If $\sh{J}$ is locally nilpotent, $\operatorname{Supp}(\sh{F})$ is an open and closed part of $\mathrm{X}$, and for every $x\in\operatorname{Supp}(\sh{F})$, we have
+\end{enumerate}
+\begin{align}
+  \dim(\sh{F}_x) &= \dim(\sh{O}_{\mathrm{Y},x}) \tag{6.10.3.1}\label{IV.6.10.3.1}\\
+  \operatorname{prof}(\sh{F}_x) &= \operatorname{prof}(\sh{O}_{\mathrm{Y},x}) \tag{6.10.3.2}\label{IV.6.10.3.2}\\
+  \operatorname{coprof}(\sh{F}_x) &= \operatorname{coprof}(\sh{O}_{\mathrm{Y},x}). \tag{6.10.3.3}\label{IV.6.10.3.3}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+(i) With the notations of \sref{IV.6.10.1}, we have $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\operatorname{Supp}(\sh{G}_0)$ \sref[I]{I.9.1.13}, and as by hypothesis $\sh{G}_0$ is a locally free $\sh{O}_\mathrm{Y}$-Module of finite type, its support is at the same time open and closed in $\mathrm{Y}$.
+----- French corrections on page IV-2 154 -----
+[id 14178]
+OLD: n°~4
+NEW: n\textsuperscript{o}~4
+FRENCH CONTEXT (corrected): supset M_2\supset\ldots\supset M_q=0$ du $B$-module $M$
+telle que chacun des quotients $N_i=M_i/M_{i+1}$ soit isomorphe à un
+$B$-module de la forme $B/\mathfrak p_i$, où $\mathfrak p_i$ est un idéal
+premier de $B$ (Bourbaki, \emph{Alg. comm.}, chap. IV, \S~1, n\textsuperscript{o}~4, th.~1).
+Si le théorème est vrai pour chacun des $N_i$, il y a pour chaque $i$ un
+$f_i\ne0$ dans $A$ tel que $(N_i)_{f_i}$ soit libre sur $A_{f_i}$; posant
+$f=f_1f_2\ldots f_{q-1}$, il en résulte que $(N_i)_f$ est un $A_f$-module
+libre pour $1\leq i\leq q\set
+
+[id 14180]
+OLD: i\leq q-1$
+NEW: i\leq q\setmin 1$
+FRENCH CONTEXT (corrected): script{o}~4, th.~1).
+Si le théorème est vrai pour chacun des $N_i$, il y a pour chaque $i$ un
+$f_i\ne0$ dans $A$ tel que $(N_i)_{f_i}$ soit libre sur $A_{f_i}$; posant
+$f=f_1f_2\ldots f_{q-1}$, il en résulte que $(N_i)_f$ est un $A_f$-module
+libre pour $1\leq i\leq q\setmin 1$. Mais $(N_i)_f=(M_i)_f/(M_{i+1})_f$
+$(\mathbf{0}_{\mathrm I},1.3.2)$ et comme une extension de modules libres est libre, on
+en déduit alors que $M_f$ est un $A_f$-module libre. Remplaçant $B$ par
+$B/\mathfrak p$ ($\mathfrak p$ idéal premier de $B$), qui est e
+
+[id 14182]
+OLD: $M=B$ et $B$ est intègre.
+NEW: $M=B$ \emph{et} $B$ \emph{est intègre}.
+FRENCH CONTEXT (corrected): )$ et comme une extension de modules libres est libre, on
+en déduit alors que $M_f$ est un $A_f$-module libre. Remplaçant $B$ par
+$B/\mathfrak p$ ($\mathfrak p$ idéal premier de $B$), qui est encore de type
+fini sur $A$, on voit qu'on peut se borner au cas où $M=B$ \emph{et} $B$ \emph{est intègre}.
+On sait alors (Bourbaki, \emph{Alg. comm.}, chap. V, \S~3, n\textsuperscript{o}~1, cor. 1 du
+th. 1) qu'il existe un élément $g\ne0$ dans $A$ et des éléments $t_i$
+$(1\leq i\leq m)$ de $B$, algébriquement indépendants sur $A$ et tels que
+$B_g$ soit \emph{entie
+
+[id 14183]
+OLD: n°~1
+NEW: n\textsuperscript{o}~1
+FRENCH CONTEXT (corrected): dule libre. Remplaçant $B$ par
+$B/\mathfrak p$ ($\mathfrak p$ idéal premier de $B$), qui est encore de type
+fini sur $A$, on voit qu'on peut se borner au cas où $M=B$ \emph{et} $B$ \emph{est intègre}.
+On sait alors (Bourbaki, \emph{Alg. comm.}, chap. V, \S~3, n\textsuperscript{o}~1, cor. 1 du
+th. 1) qu'il existe un élément $g\ne0$ dans $A$ et des éléments $t_i$
+$(1\leq i\leq m)$ de $B$, algébriquement indépendants sur $A$ et tels que
+$B_g$ soit \emph{entier} sur $A_g[t_1,\ldots,t_m]$. On peut remplacer $A$ par $A_g$,
+$B$ par $B_g$ et su
+
+[id 14184]
+OLD: soit entier sur
+NEW: soit \emph{entier} sur
+FRENCH CONTEXT (corrected): ph{est intègre}.
+On sait alors (Bourbaki, \emph{Alg. comm.}, chap. V, \S~3, n\textsuperscript{o}~1, cor. 1 du
+th. 1) qu'il existe un élément $g\ne0$ dans $A$ et des éléments $t_i$
+$(1\leq i\leq m)$ de $B$, algébriquement indépendants sur $A$ et tels que
+$B_g$ soit \emph{entier} sur $A_g[t_1,\ldots,t_m]$. On peut remplacer $A$ par $A_g$,
+$B$ par $B_g$ et supposer par suite que $B$ est entier sur
+$C=A[t_1,\ldots,t_m]$, donc un $C$-module de type fini et \emph{sans torsion}. On sait
+en outre (4.1.2) que la dimension de $\operatorname{Spec}
+
+[id 14185]
+OLD: type fini et sans torsion.
+NEW: type fini et \emph{sans torsion}.
+FRENCH CONTEXT (corrected): \leq i\leq m)$ de $B$, algébriquement indépendants sur $A$ et tels que
+$B_g$ soit \emph{entier} sur $A_g[t_1,\ldots,t_m]$. On peut remplacer $A$ par $A_g$,
+$B$ par $B_g$ et supposer par suite que $B$ est entier sur
+$C=A[t_1,\ldots,t_m]$, donc un $C$-module de type fini et \emph{sans torsion}. On sait
+en outre (4.1.2) que la dimension de $\operatorname{Spec}(B\otimes_AK)$ est
+égale à $m$, donc on a $m=n$.
+
+Cela étant, si $h$ est le rang du $C$-module sans torsion $B$, il existe une
+suite exacte de $C$-modules
+\[
+0\longrightarrow C^h\longrightarrow 
+
+[id 14186]
+OLD: module de torsion de type fini
+NEW: module \emph{de torsion} de type fini
+FRENCH CONTEXT (corrected): me{Spec}(B\otimes_AK)$ est
+égale à $m$, donc on a $m=n$.
+
+Cela étant, si $h$ est le rang du $C$-module sans torsion $B$, il existe une
+suite exacte de $C$-modules
+\[
+0\longrightarrow C^h\longrightarrow B\longrightarrow M'\longrightarrow0
+\]
+où $M'$ est un $C$-module \emph{de torsion} de type fini; le support de $M'$ ne
+contient donc pas le point générique de $\operatorname{Spec}(C)$ (\textbf{I}, 7.4.6)
+et par suite le support de $M'\otimes_AK$ ne contient pas le point générique
+de $\operatorname{Spec}(C\otimes_AK)$ (\textbf{I}, 9.1.13.1); on en conclu
+
+=================== PAGE IV-2 155 ===================
+----- (English page IV-2 154: shown above in this file) -----
+----- (English page IV-2 155: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 156 -----
+\oldpage[IV-2]{156}
+
+(ii) The hypothesis that $\sh{J}$ is locally nilpotent implies that the underlying spaces of $\mathrm{X}$ and $\mathrm{Y}$ are the same, whence the two first assertions of (ii), taking into account (i); it remains to prove \sref{IV.6.10.3.2} and \sref{IV.6.10.3.3} by difference. Let $(f_i)_{1\leqslant i\leqslant p}$ be a finite family of elements of the maximal ideal of $\sh{O}_{\mathrm{X},x}$ whose images in $\sh{O}_{\mathrm{Y},x}=\sh{O}_{\mathrm{X},x}/\sh{J}_x$ form a maximal $\sh{O}_{\mathrm{Y},x}$-regular sequence; the hypothesis on $\sh{F}$ and $\sh{J}$ implies that the $\sh{O}_{\mathrm{Y},x}$-module $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{F}_x)$ is free of finite type, hence the suite $(f_i)$ is $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{F}_x)$-regular; one deduces that this suite is also $\sh{F}_x$-regular \sref[0]{0.15.1.19}. On the other hand, let $n$ be the largest integer such that $\sh{F}^{(n)}_x=\sh{J}^n_x\sh{F}_x\neq 0$. The hypothesis implies also that $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{F}_x/\sh{F}^{(n)}_x)$ is free of finite type, hence the suite $(f_i)$ is also $(\sh{F}_x/\sh{F}^{(n)}_x)$-regular (\emph{loc.\ cit.}). Applying the lemma \sref{IV.3.4.1.4}, one concludes by induction on $i$ that there is an exact sequence
+\[
+0\to\sh{F}^{(n)}_x\Big/\Big(\sum_{i=1}^p f_i\sh{F}^{(n)}_x\Big) \to \sh{F}_x\Big/\Big(\sum_{i=1}^p f_i\sh{F}_x\Big).
+\]
+But the hypothesis implies that $\sh{F}^{(n)}_x$ is a free $\sh{O}_{\mathrm{Y},x}$-module of finite type and $\neq 0$, hence $\sh{F}^{(n)}_x/(\sum_{i=1}^p f_i\sh{F}^{(n)}_x)$ is isomorphic to a module of the form $(\sh{O}_{\mathrm{Y},x}/(\sum_{i=1}^p f_i\sh{O}_{\mathrm{Y},x}))^m$ with $m>0$; as $\operatorname{prof}(\sh{O}_{\mathrm{Y},x}/(\sum_{i=1}^p f_i\sh{O}_{\mathrm{Y},x}))=0$ \sref[0]{0.16.4.6} one also has, by the characterisation \sref[0]{0.16.4.6},~(i) of modules of zero depth, $\operatorname{prof}(\sh{F}^{(n)}_x/(\sum_{i=1}^p f_i\sh{F}^{(n)}_x))=0$, then $\operatorname{prof}(\sh{F}_x/(\sum_{i=1}^p f_i\sh{F}_x))=0$; the $(f_i)_x$ belonging to the maximal ideal of $\sh{O}_{\mathrm{Y},x}$ and forming a maximal $\sh{F}_x$-regular suite, this shows that $\operatorname{prof}(\sh{F}_x)=p$ \sref[0]{0.16.4.6},~(ii).
+\end{proof}
+
+\begin{corollary}[6.10.4]
+\label{IV.6.10.4}
+Let $\mathrm{U}_{\mathrm{S}_n}(\sh{F})$ (resp.\ $\mathrm{U}_{\mathrm{C}_n}(\sh{F})$) be the set of $x\in\mathrm{X}$ such that $\sh{F}$ satisfies $(\mathrm{S}_n)$ (resp.\ such that $\operatorname{coprof}(\sh{F}_x)\leqslant n$). If $\sh{F}$ is normally flat along $\mathrm{Y}$, if $\operatorname{Supp}(\sh{F})=\mathrm{X}$, and if $\sh{J}$ is locally nilpotent, then $\mathrm{U}_{\mathrm{S}_n}(\sh{F})=\mathrm{U}_{\mathrm{S}_n}(\sh{O}_\mathrm{Y})$ and $\mathrm{U}_{\mathrm{C}_n}(\sh{F})=\mathrm{U}_{\mathrm{C}_n}(\sh{O}_\mathrm{Y})$.
+\end{corollary}
+
+\begin{proposition}[6.10.5]
+\label{IV.6.10.5}
+The notations being those of \sref{IV.6.10.1}, suppose that $\mathrm{Y}$ is connected and non-empty, and that $\sh{F}$ is normally flat along $\mathrm{Y}$. For every integer $n\geqslant 0$, set
+\begin{equation}
+  r(n) = \operatorname{rg}_{\sh{O}_\mathrm{Y}}(\operatorname{gr}^n_\sh{J}(\sh{F})) \tag{6.10.5.1}\label{IV.6.10.5.1}
+\end{equation}
+(the locally free $\sh{O}_\mathrm{Y}$-Module $\operatorname{gr}^n_\sh{J}(\sh{F})$ being necessarily of constant rank). Then:
+\begin{enumerate}[label=(\roman*)]
+  \item There exists a polynomial $\mathrm{P}\in\bb{Q}[\mathrm{T}]$ such that $\mathrm{P}(n)=r(n)$ for all sufficiently large $n$.
+  \item We have $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\varnothing$ (in other words $\sh{F}/\sh{J}\sh{F}=0$), or $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\mathrm{Y}$ (in other words $\mathrm{Y}\subset\operatorname{Supp}(\sh{F})$).
+\end{enumerate}
+In the second case, denote $d\setmin 1$ the degree of $\mathrm{P}$; for every maximal point $y$ of $\mathrm{Y}$, we have
+\begin{equation}
+  \dim(\sh{F}_y) = d \tag{6.10.5.2}\label{IV.6.10.5.2}
+\end{equation}
+and in particular
+\begin{equation}
+  \operatorname{codim}(\mathrm{Y},\operatorname{Supp}(\sh{F})) = d. \tag{6.10.5.3}\label{IV.6.10.5.3}
+\end{equation}
+\begin{enumerate}[label=(\roman*)]
+\setcounter{enumi}{2}
+  \item Suppose $\mathrm{Y}\subset\operatorname{Supp}(\sh{F})$. For every $x\in\mathrm{Y}$, we have
+\end{enumerate}
+\begin{equation}
+  \dim(\sh{F}_x) = \dim(\sh{O}_{\mathrm{Y},x}) + d. \tag{6.10.5.4}\label{IV.6.10.5.4}
+\end{equation}
+More precisely, there exist in $\sh{J}_x$ elements $f_i$ ($1\leqslant i\leqslant d$) forming part of a system of parameters for $\sh{F}_x$ \sref[0]{0.16.3.6} and such that, in $\operatorname{Spec}(\sh{O}_{\mathrm{X},x})$, we have $\mathrm{V}(\sh{J}_x)=\mathrm{V}(\sum_{i=1}^d f_i\sh{O}_{\mathrm{X},x})\cap\operatorname{Supp}(\sh{F})$.
+\end{proposition}
+
+\begin{proof}
+----- French corrections on page IV-2 155 -----
+[id 14461]
+OLD: $\mathcal F|_{u^{-1}(U)}$
+NEW: $\mathcal F|u^{-1}(U)$
+FRENCH CONTEXT (corrected): pposer
+$S$ réduit et non vide. Comme $S$ est noethérien, l'intérieur $T$ d'une
+composante irréductible de $S$ est non vide, et le préschéma induit sur $T$
+est intègre; il y a donc en vertu de (6.9.1) un ouvert non vide $U\subset T$
+\oldpage[IV-2]{155}
+tel que $\mathcal F|u^{-1}(U)$ soit plat sur $U$. Si $Y$ est alors le
+sous-préschéma réduit de $S$ ayant pour espace sous-jacent $S\setmin U$, il y a par
+hypothèse une partition $(Y_i)$ de $Y$ en ensembles localement fermés dans
+$Y$ (donc dans $S$) tels que
+$\mathcal F_i=\mathcal F\otimes_
+
+[id 14462]
+OLD: $S-U$
+NEW: $S\setmin U$
+FRENCH CONTEXT (corrected): e, et le préschéma induit sur $T$
+est intègre; il y a donc en vertu de (6.9.1) un ouvert non vide $U\subset T$
+\oldpage[IV-2]{155}
+tel que $\mathcal F|u^{-1}(U)$ soit plat sur $U$. Si $Y$ est alors le
+sous-préschéma réduit de $S$ ayant pour espace sous-jacent $S\setmin U$, il y a par
+hypothèse une partition $(Y_i)$ de $Y$ en ensembles localement fermés dans
+$Y$ (donc dans $S$) tels que
+$\mathcal F_i=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{Y_i}$ soit plat
+sur $Y_i$ pour tout $i$; il est clair que les $Y_i$ et $U$ forment un
+
+[id 14463]
+OLD: sous-préschéma fermé}
+NEW: sous-préschéma fermé.}
+FRENCH CONTEXT (corrected): _i=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{Y_i}$ soit plat
+sur $Y_i$ pour tout $i$; il est clair que les $Y_i$ et $U$ forment une
+partition répondant à la question.
+\end{proof}
+
+\subsection{Dimension et profondeur d'un Module normalement plat le long d'un
+sous-préschéma fermé.}
+\label{subsection:IV.6.10}
+
+\begin{env}[6.10.1]
+\EGAReaderTarget{ega4.c04.statement.6-10-1}{IV.2.s6.10.1-fr}
+Soient $X$ un préschéma localement noethérien, $\mathcal J$ un Idéal
+quasi-cohérent de $\mathcal O_X$, $Y$ le sous-préschéma fermé de $X$ défini
+par $
+
+[id 14464]
+OLD: où
+\[
+\mathcal G_k=j^*(\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F)
+=j^*(\mathcal J^k\mathcal F)
+\]
+est un
+NEW: où $\mathcal G_k=j^*(\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F)=j^*(\mathcal J^k\mathcal F)$
+est un
+FRENCH CONTEXT (corrected): e sous-préschéma fermé de $X$ défini
+par $\mathcal J$, $j:Y\to X$ l'injection canonique. Pour tout entier $k\geq0$,
+le $\mathcal O_X$-Module
+$\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F$ est annulé par
+$\mathcal J$, donc de la forme $j_*(\mathcal G_k)$, où $\mathcal G_k=j^*(\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F)=j^*(\mathcal J^k\mathcal F)$
+est un $\mathcal O_Y$-Module cohérent. Par abus de langage, nous noterons
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ le
+$\mathcal O_Y$-\emph{Module gradué} égal à la somme directe
+\[
+\bigoplus_{k=0}^{\infty}\mathcal G_k
+=j^*\left(\bigoplus_{k=0}^{\infty}
+
+[id 14465]
+OLD: $\mathcal O_Y$-Module gradué égal
+NEW: $\mathcal O_Y$-\emph{Module gradué} égal
+FRENCH CONTEXT (corrected): forme $j_*(\mathcal G_k)$, où $\mathcal G_k=j^*(\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F)=j^*(\mathcal J^k\mathcal F)$
+est un $\mathcal O_Y$-Module cohérent. Par abus de langage, nous noterons
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ le
+$\mathcal O_Y$-\emph{Module gradué} égal à la somme directe
+\[
+\bigoplus_{k=0}^{\infty}\mathcal G_k
+=j^*\left(\bigoplus_{k=0}^{\infty}
+\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F\right);
+\]
+en particulier, on a
+$\operatorname{gr}_{\mathcal J}^{0}(\mathcal F)=\mathcal G_0
+=\mathcal F\otimes_{\m
+
+[id 14466]
+OLD: est normalement plat le long de $Y$ si
+NEW: est \emph{normalement plat le long de} $Y$ si
+FRENCH CONTEXT (corrected): \infty}
+\mathcal J^k\mathcal F/\mathcal J^{k+1}\mathcal F\right);
+\]
+en particulier, on a
+$\operatorname{gr}_{\mathcal J}^{0}(\mathcal F)=\mathcal G_0
+=\mathcal F\otimes_{\mathcal O_X}\mathcal O_Y=j^*(\mathcal F)$. Nous dirons
+(avec Hironaka) que $\mathcal F$ est \emph{normalement plat le long de} $Y$ si
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ est un
+$\mathcal O_Y$-\emph{Module plat}. Il revient au même ((2.1.12) et
+$(\mathbf{0}_{\mathrm I},6.1.2)$) de dire que chacun des $\mathcal O_Y$-Modules
+$\mathcal G_k=j^*(\mathcal J^k\mathcal F)$ est \em
+
+[id 14467]
+OLD: $\mathcal O_Y$-Module plat. Il revient
+NEW: $\mathcal O_Y$-\emph{Module plat}. Il revient
+FRENCH CONTEXT (corrected): _{\mathcal J}^{0}(\mathcal F)=\mathcal G_0
+=\mathcal F\otimes_{\mathcal O_X}\mathcal O_Y=j^*(\mathcal F)$. Nous dirons
+(avec Hironaka) que $\mathcal F$ est \emph{normalement plat le long de} $Y$ si
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ est un
+$\mathcal O_Y$-\emph{Module plat}. Il revient au même ((2.1.12) et
+$(\mathbf{0}_{\mathrm I},6.1.2)$) de dire que chacun des $\mathcal O_Y$-Modules
+$\mathcal G_k=j^*(\mathcal J^k\mathcal F)$ est \emph{localement libre}.
+\end{env}
+
+\begin{proposition}[6.10.2]
+\label{IV.2.s6.10.2-fr}
+Soient $X$ un préschéma
+
+[id 14469]
+OLD: est localement libre.
+NEW: est \emph{localement libre}.
+FRENCH CONTEXT (corrected):  $Y$ si
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ est un
+$\mathcal O_Y$-\emph{Module plat}. Il revient au même ((2.1.12) et
+$(\mathbf{0}_{\mathrm I},6.1.2)$) de dire que chacun des $\mathcal O_Y$-Modules
+$\mathcal G_k=j^*(\mathcal J^k\mathcal F)$ est \emph{localement libre}.
+\end{env}
+
+\begin{proposition}[6.10.2]
+\label{IV.2.s6.10.2-fr}
+Soient $X$ un préschéma localement noethérien, $Y$ un sous-préschéma fermé
+\textup{intègre} de $X$. Pour tout $\mathcal O_X$-Module cohérent $\mathcal F$, il
+existe un ouvert $U$ de $X$ tel que $Y
+
+[id 14470]
+OLD: fermé
+intègre de $X$
+NEW: fermé
+\textup{intègre} de $X$
+FRENCH CONTEXT (corrected): ,6.1.2)$) de dire que chacun des $\mathcal O_Y$-Modules
+$\mathcal G_k=j^*(\mathcal J^k\mathcal F)$ est \emph{localement libre}.
+\end{env}
+
+\begin{proposition}[6.10.2]
+\label{IV.2.s6.10.2-fr}
+Soient $X$ un préschéma localement noethérien, $Y$ un sous-préschéma fermé
+\textup{intègre} de $X$. Pour tout $\mathcal O_X$-Module cohérent $\mathcal F$, il
+existe un ouvert $U$ de $X$ tel que $Y\cap U\ne\varnothing$ et que
+$\mathcal F|U$ soit normalement plat le long de $Y\cap U$.
+\end{proposition}
+
+\begin{proof}
+Soit en effet $\mathcal J$ l'Idéal cohére
+
+[id 14471]
+OLD: quasi-cohérente et de type fini car
+NEW: quasi-cohérente et \emph{de type fini} car
+FRENCH CONTEXT (corrected):  F|U$ soit normalement plat le long de $Y\cap U$.
+\end{proposition}
+
+\begin{proof}
+Soit en effet $\mathcal J$ l'Idéal cohérent de $\mathcal O_X$ définissant
+$Y$; la $\mathcal O_Y$-Algèbre
+$\mathcal B=\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal O_X)$ est
+quasi-cohérente et \emph{de type fini} car elle est engendrée par
+$\operatorname{gr}_{\mathcal J}^{1}(\mathcal O_X)$, image réciproque de
+$\mathcal J/\mathcal J^2$; comme
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ est un
+$\mathcal B$-module quasi-cohérent engendré par
+$\operatorname{gr}_{\
+
+[id 14472]
+OLD: $\mathcal B$-Module de type fini.
+NEW: $\mathcal B$-Module \emph{de type fini}.
+FRENCH CONTEXT (corrected): {gr}_{\mathcal J}^{1}(\mathcal O_X)$, image réciproque de
+$\mathcal J/\mathcal J^2$; comme
+$\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$ est un
+$\mathcal B$-module quasi-cohérent engendré par
+$\operatorname{gr}_{\mathcal J}^{0}(\mathcal F)$, c'est un
+$\mathcal B$-Module \emph{de type fini}. Si l'on pose
+$Z=\operatorname{Spec}(\mathcal B)$, le morphisme structural $u:Z\to Y$ est
+alors de type fini, et si $\mathcal H$ est le $\mathcal O_Z$-Module cohérent
+tel que $u_*(\mathcal H)=\operatorname{gr}_{\mathcal J}^{\bullet}(\mathcal F)$,
+il suffit d'a
+
+[id 14475]
+OLD: (autrement dit, une réunion
+NEW: \textup{(autrement dit, une} réunion
+FRENCH CONTEXT (corrected): s6.10.3-fr}
+Les notations étant celles de \textup{(6.10.1)}, supposons que $\mathcal F$ soit
+normalement plat le long de $Y$. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] $Y\cap\operatorname{Supp}(\mathcal F)$ est une partie à la fois
+ouverte et fermée de $Y$ \textup{(autrement dit, une} réunion de composantes connexes
+de $Y$).
+\item[\textup{(ii)}] Si $\mathcal J$ est localement nilpotent,
+$\operatorname{Supp}(\mathcal F)$ est une partie ouverte et fermée de $X$, et
+pour tout $x\in\operatorname{Supp}(\mathcal F)$, on a
+\end{enumerate}
+\begin{align}
+\
+
+[id 14476]
+OLD: \item[(ii)] Si $\mathcal J$
+NEW: \item[\textup{(ii)}] Si $\mathcal J$
+FRENCH CONTEXT (corrected):  que $\mathcal F$ soit
+normalement plat le long de $Y$. Alors:
+\begin{enumerate}
+\item[\textup{(i)}] $Y\cap\operatorname{Supp}(\mathcal F)$ est une partie à la fois
+ouverte et fermée de $Y$ \textup{(autrement dit, une} réunion de composantes connexes
+de $Y$).
+\item[\textup{(ii)}] Si $\mathcal J$ est localement nilpotent,
+$\operatorname{Supp}(\mathcal F)$ est une partie ouverte et fermée de $X$, et
+pour tout $x\in\operatorname{Supp}(\mathcal F)$, on a
+\end{enumerate}
+\begin{align}
+\dim(\mathcal F_x)&=\dim(\mathcal O_{Y,x})
+  \tag{6.10.3.1}\label{IV.2.
+
+=================== PAGE IV-2 156 ===================
+----- (English page IV-2 155: shown above in this file) -----
+----- (English page IV-2 156: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 157 -----
+\oldpage[IV-2]{157}
+As $\mathrm{Y}$ is assumed connected, the first assertion of (ii) follows from \sref{IV.6.10.3},~(i). If $\mathrm{Y}\cap\operatorname{Supp}(\sh{F})=\varnothing$, assertion (i) is trivial with $\mathrm{P}=0$. Suppose now that $\operatorname{Supp}(\sh{F})\supset\mathrm{Y}$, and let $y$ be a maximal point of $\mathrm{Y}$. Since then $\mathrm{Y}=\operatorname{Supp}(\sh{F}/\sh{J}\sh{F})$, the module $\sh{F}_y/\sh{J}_y\sh{F}_y$ has finite length \sref{IV.3.1.4}. Setting $s(n)=\operatorname{length}(\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y))$, we know that there exists a polynomial $\mathrm{R}\in\bb{Q}[\mathrm{T}]$ such that $s(n)=\mathrm{R}(n)$ for $n$ large enough, namely $\mathrm{R}(n)=\mathrm{H}(n+1)\setmin \mathrm{H}(n)$, where $\mathrm{H}$ is the Hilbert-Samuel polynomial of $\sh{F}_y$ for the $\sh{J}_y$-adic filtration \sref[0]{0.16.2.1}. Since the $\sh{O}_{\mathrm{Y},y}$-modules $\operatorname{gr}^n_{\sh{J}_y}(\sh{F}_y)$ are free by hypothesis, we have $r(n)=s(n)/m$, denoting by $m$ the length of the $\sh{O}_{\mathrm{X},y}$-module $\sh{O}_{\mathrm{X},y}/\sh{J}_y$; thus (i) holds with $\mathrm{P}=\frac{1}{m}\mathrm{R}$. We know furthermore \sref[0]{0.16.2.3} that $\deg(\mathrm{H})=\dim(\sh{F}_y)$, whence the relation \sref{IV.6.10.5.2}; the relation \sref{IV.6.10.5.3} follows from \sref{IV.5.1.12.2}.
+
+It remains to prove (iii) for any point $x\in\mathrm{Y}$. Set $\mathrm{A}=\sh{O}_{\mathrm{X},x}$, $\mathfrak{J}=\sh{J}_x$, and $\mathrm{M}=\sh{F}_x$, so that $\sh{O}_{\mathrm{Y},x}=\mathrm{A}/\mathfrak{J}$; let $\mathrm{S}=\operatorname{gr}^{\bullet}_\mathfrak{J}(\mathrm{A})$, which is a graded $(\mathrm{A}/\mathfrak{J})$-algebra of finite type, with positive degrees, such that $\mathrm{S}_0=\mathrm{A}/\mathfrak{J}$, and generated by its homogeneous elements of degree $1$; let finally $\mathrm{N}=\operatorname{gr}^{\bullet}_\mathfrak{J}(\mathrm{M})$, which is a graded $\mathrm{S}$-module of finite type, each homogeneous component $\mathrm{N}_n$ being by hypothesis a free $(\mathrm{A}/\mathfrak{J})$-module of rank $r(n)$. Let $\mathfrak{m}$ be the maximal ideal of $\mathrm{A}$, $k=\mathrm{A}/\mathfrak{m}$ its residue field; $\mathrm{B}=\mathrm{S}\otimes_\mathrm{A}k$ is a graded $k$-algebra of finite type, with positive degrees, generated by its homogeneous elements of degree $1$ and such that $\mathrm{B}_0=k$, so that $\mathfrak{q}=\mathrm{B}^+=\bigoplus_{n\geqslant 1}\mathrm{B}_n$ is a maximal ideal of $\mathrm{B}$; $\mathrm{E}=\mathrm{N}\otimes_\mathrm{A}k$ is a graded $\mathrm{B}$-module of finite type such that $\operatorname{rg}_k(\mathrm{E}_n)=r(n)$. Applying \sref[0]{0.16.2.7} to $\mathrm{B}$ and $\mathrm{E}$, choose homogeneous elements $t_i\in\mathrm{B}_{n_i}$ ($1\leqslant i\leqslant d$), and lift each $t_i$ to an element $f_i\in\mathfrak{J}^{n_i}$. For $n\geqslant\sup_i(n_i)$, consider the $\mathrm{A}$-submodule $\sum_{i=1}^d f_i\mathfrak{J}^{n-n_i}\mathrm{M}$ of $\mathrm{M}$; as the homogeneous component of degree $n$ of the submodule $\sum_i t_i\mathrm{E}$ of $\mathrm{E}$ is equal to $\mathrm{E}_n$ as soon as $n$ is large enough, one sees that, for $n$ large enough, we have
+\[
+\mathfrak{J}^n\mathrm{M} = \sum_{i=1}^d f_i\mathfrak{J}^{n-n_i}\mathrm{M}+\mathfrak{m}\mathfrak{J}^n\mathrm{M}
+\]
+and as $\mathfrak{J}^n\mathrm{M}$ is an $\mathrm{A}$-module of finite type, this implies, by Nakayama's lemma,
+\[
+\mathfrak{J}^n\mathrm{M} = \sum_{i=1}^d f_i\mathfrak{J}^{n-n_i}\mathrm{M} \subset \sum_{i=1}^d f_i\mathrm{M}.
+\]
+If $\mathfrak{a}$ is the annihilator of $\mathrm{M}$, we have therefore \sref[0]{0.1.7.5} in $\operatorname{Spec}(\mathrm{A})$
+\[
+\mathrm{V}\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\cap\mathrm{V}(\mathfrak{a})\subset\mathrm{V}(\mathfrak{J}^n)\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})\cap\mathrm{V}(\mathfrak{a})=\mathrm{V}(\mathfrak{J})
+\]
+since by hypothesis $\mathrm{Y}\cap\operatorname{Spec}(\mathrm{A})=\mathrm{V}(\mathfrak{J})\cap\operatorname{Supp}(\mathrm{M})=\mathrm{V}(\mathfrak{J})$. Since on the other hand the $f_i$ belong to $\mathfrak{J}$, we have $\mathrm{V}(\mathfrak{J})\subset\mathrm{V}(\sum_{i=1}^d f_i\mathrm{A})$, which proves the last relation of (iii). It remains to show that the $f_i$ form part of a system of parameters for $\mathrm{M}$. Replacing $\mathrm{A}$ by $\mathrm{A}/\mathfrak{a}$ and the $f_i$ by their images in $\mathrm{A}/\mathfrak{a}$, one can limit oneself to the case where $\mathfrak{a}=0$; we have just seen that $\dim(\mathrm{A}/\mathfrak{J})=\dim\Big(\mathrm{A}/\Big(\sum_{i=1}^d f_i\mathrm{A}\Big)\Big)$,
+and it remains therefore to prove \sref[0]{0.16.3.7} that we have
+\[
+\dim(\mathrm{A})\geqslant\dim(\mathrm{A}/\mathfrak{J})+d.
+\]
+
+Now, let $\mathfrak{p}$ be a prime ideal of $\mathrm{A}$ containing $\mathfrak{J}$ and such that $\dim(\mathrm{A}/\mathfrak{J})=\dim(\mathrm{A}/\mathfrak{p})$, so that $\mathfrak{p}$ is minimal among the prime ideals containing $\mathfrak{J}$. We have therefore $\mathfrak{p}=\mathfrak{i}_y$ where $y\in\operatorname{Spec}(\mathrm{A})$ is a maximal point of $\mathrm{Y}$. But by virtue of \sref{IV.6.10.5.2} and the hypothesis $\operatorname{Spec}(\mathrm{A})=\operatorname{Supp}(\mathrm{M})$, we have $\dim(\mathrm{A}_\mathfrak{p})=d$; the inequality $\dim(\mathrm{A}/\mathfrak{p})+\dim(\mathrm{A}_\mathfrak{p})\leqslant\dim(\mathrm{A})$ \sref[0]{0.16.1.4} completes the proof.
+\end{proof}
+
+\begin{proposition}[6.10.6]
+\label{IV.6.10.6}
+Let $\mathrm{X}$ be a locally Noetherian prescheme, $\sh{F}$ a coherent $\sh{O}_\mathrm{X}$-Module, $\mathrm{Y}$ a closed irreducible sub-prescheme of $\mathrm{X}$, of generic point $y\in\operatorname{Supp}(\sh{F})$. There then exists a neighbourhood $\mathrm{U}$ open and non-empty of $y$ in $\mathrm{X}$ such that, for every $x\in\mathrm{U}\cap\mathrm{Y}$, we have
+\begin{align}
+  \dim(\sh{F}_x) &= \dim(\sh{F}_y)+\dim(\sh{O}_{\mathrm{Y},x}) \tag{6.10.6.1}\label{IV.6.10.6.1}\\
+  \operatorname{prof}(\sh{F}_x) &= \operatorname{prof}(\sh{F}_y)+\operatorname{prof}(\sh{O}_{\mathrm{Y},x}) \tag{6.10.6.2}\label{IV.6.10.6.2}\\
+  \operatorname{coprof}(\sh{F}_x) &= \operatorname{coprof}(\sh{F}_y)+\operatorname{coprof}(\sh{O}_{\mathrm{Y},x}). \tag{6.10.6.3}\label{IV.6.10.6.3}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+----- French corrections on page IV-2 156 -----
+[id 14478]
+OLD: -régulière maximale;
+NEW: -régulière \emph{maximale};
+FRENCH CONTEXT (corrected): ),
+car on en déduira aussitôt (6.10.3.3) par différence. Soit
+$(f_i)_{1\leq i\leq p}$ une suite finie d'éléments de l'idéal maximal de
+$\mathcal O_{X,x}$ dont les images dans
+$\mathcal O_{Y,x}=\mathcal O_{X,x}/\mathcal J_x$ forment une suite
+$\mathcal O_{Y,x}$-régulière \emph{maximale}; l'hypothèse sur $\mathcal F$ et
+$\mathcal J$ entraîne que le $\mathcal O_{Y,x}$-module
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}(\mathcal F_x)$ est libre de type
+fini, donc la suite $(f_i)$ est
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}(\mathcal F_x)$-régu
+
+[id 14479]
+OLD: est aussi $\mathcal F_x$-régulière
+NEW: est aussi $\mathcal F_x$-\emph{régulière}
+FRENCH CONTEXT (corrected): athcal J$ entraîne que le $\mathcal O_{Y,x}$-module
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}(\mathcal F_x)$ est libre de type
+fini, donc la suite $(f_i)$ est
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}(\mathcal F_x)$-régulière; on en
+déduit que cette suite est aussi $\mathcal F_x$-\emph{régulière} (\textbf{0}, 15.1.19). Soit
+d'autre part $n$ le plus grand entier tel que
+$\mathcal F_x^{(n)}=\mathcal J_x^n\mathcal F_x\ne0$. L'hypothèse entraîne
+aussi que
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}
+(\mathcal F_x/\mathcal F_x^{(n)})$ est libre de type fini
+
+[id 14481]
+OLD: $-régulière
+(\emph{loc. cit.})
+NEW: $-\emph{régulière}
+(\emph{loc. cit.})
+FRENCH CONTEXT (corrected): el que
+$\mathcal F_x^{(n)}=\mathcal J_x^n\mathcal F_x\ne0$. L'hypothèse entraîne
+aussi que
+$\operatorname{gr}_{\mathcal J_x}^{\bullet}
+(\mathcal F_x/\mathcal F_x^{(n)})$ est libre de type fini, donc la suite
+$(f_i)$ est aussi $(\mathcal F_x/\mathcal F_x^{(n)})$-\emph{régulière}
+(\emph{loc. cit.}). Appliquant le lemme (3.4.1.4), on en conclut par récurrence
+sur $i$, une suite exacte
+\[
+0\longrightarrow
+\mathcal F_x^{(n)}/\left(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}\right)
+\longrightarrow
+\mathcal F_x/\left(\sum_{i=1}^{p}f_i\mathcal F_x\right).
+\]
+
+Mais l'
+
+[id 14483]
+OLD: comme
+\[
+\operatorname{prof}\left(\mathcal O_{Y,x}/
+\left(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}\right)\right)=0
+\]
+
+NEW: comme
+$\operatorname{prof}(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))=0$
+
+FRENCH CONTEXT (corrected): ue $\mathcal F_x^{(n)}$ est un
+$\mathcal O_{Y,x}$-module libre de type fini et $\ne0$, donc
+$\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)})$ est isomorphe à
+un module de la forme
+$(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))^m$ avec $m>0$; comme
+$\operatorname{prof}(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))=0$
+(\textbf{0}, 16.4.6) on a aussi, par la caractérisation (\textbf{0}, 16.4.6, (i)) des modules
+de profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\math
+
+[id 14484]
+OLD: (0, 16.4.6), on a aussi
+NEW: (\textbf{0}, 16.4.6) on a aussi
+FRENCH CONTEXT (corrected): $, donc
+$\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)})$ est isomorphe à
+un module de la forme
+$(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))^m$ avec $m>0$; comme
+$\operatorname{prof}(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))=0$
+(\textbf{0}, 16.4.6) on a aussi, par la caractérisation (\textbf{0}, 16.4.6, (i)) des modules
+de profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+les $(f_i)_x$ app
+
+[id 14486]
+OLD: nulle,
+\[
+\operatorname{prof}\left(\mathcal F_x^{(n)}/
+\left(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}\right)\right)=0,
+\]
+
+NEW: nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+
+FRENCH CONTEXT (corrected): mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))^m$ avec $m>0$; comme
+$\operatorname{prof}(\mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))=0$
+(\textbf{0}, 16.4.6) on a aussi, par la caractérisation (\textbf{0}, 16.4.6, (i)) des modules
+de profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+les $(f_i)_x$ appartenant à l'idéal maximal de $\mathcal O_{Y,x}$ et formant
+une suite $\mathcal F_x$-\emph{régulière}, cela montre que l'on a
+$\operatorname{prof}(\mathcal F_x)=p$ (\t
+
+[id 14487]
+OLD: \[
+\operatorname{prof}\left(\mathcal F_x/
+\left(\sum_{i=1}^{p}f_i\mathcal F_x\right)\right)=0;
+\]
+
+NEW: $\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+
+FRENCH CONTEXT (corrected): \mathcal O_{Y,x}/(\sum_{i=1}^{p}f_i\mathcal O_{Y,x}))=0$
+(\textbf{0}, 16.4.6) on a aussi, par la caractérisation (\textbf{0}, 16.4.6, (i)) des modules
+de profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+les $(f_i)_x$ appartenant à l'idéal maximal de $\mathcal O_{Y,x}$ et formant
+une suite $\mathcal F_x$-\emph{régulière}, cela montre que l'on a
+$\operatorname{prof}(\mathcal F_x)=p$ (\textbf{0}, 16.4.6, (ii)).
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[6.10
+
+[id 14488]
+OLD: les $(f_i)$ appartenant
+NEW: les $(f_i)_x$ appartenant
+FRENCH CONTEXT (corrected): 6.4.6) on a aussi, par la caractérisation (\textbf{0}, 16.4.6, (i)) des modules
+de profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+les $(f_i)_x$ appartenant à l'idéal maximal de $\mathcal O_{Y,x}$ et formant
+une suite $\mathcal F_x$-\emph{régulière}, cela montre que l'on a
+$\operatorname{prof}(\mathcal F_x)=p$ (\textbf{0}, 16.4.6, (ii)).
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[6.10.4]
+\label{IV.2.s6.10.4-f
+
+[id 14489]
+OLD: suite $\mathcal F_x$-régulière, cela
+NEW: suite $\mathcal F_x$-\emph{régulière}, cela
+FRENCH CONTEXT (corrected): e profondeur nulle,
+$\operatorname{prof}(\mathcal F_x^{(n)}/(\sum_{i=1}^{p}f_i\mathcal F_x^{(n)}))=0$,
+puis
+$\operatorname{prof}(\mathcal F_x/(\sum_{i=1}^{p}f_i\mathcal F_x))=0$;
+les $(f_i)_x$ appartenant à l'idéal maximal de $\mathcal O_{Y,x}$ et formant
+une suite $\mathcal F_x$-\emph{régulière}, cela montre que l'on a
+$\operatorname{prof}(\mathcal F_x)=p$ (\textbf{0}, 16.4.6, (ii)).
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[6.10.4]
+\label{IV.2.s6.10.4-fr}
+Soit $U_{S_n}(\mathcal F)$ \textup{(resp.} $U_{C_n}(\mathcal F)$) l'ensemble des
+$x\in X$ tels q
+
+[id 14491]
+OLD: (resp. $U_{C_n}(\mathcal F)$)
+NEW: \textup{(resp.} $U_{C_n}(\mathcal F)$)
+FRENCH CONTEXT (corrected): l O_{Y,x}$ et formant
+une suite $\mathcal F_x$-\emph{régulière}, cela montre que l'on a
+$\operatorname{prof}(\mathcal F_x)=p$ (\textbf{0}, 16.4.6, (ii)).
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[6.10.4]
+\label{IV.2.s6.10.4-fr}
+Soit $U_{S_n}(\mathcal F)$ \textup{(resp.} $U_{C_n}(\mathcal F)$) l'ensemble des
+$x\in X$ tels que $\mathcal F$ vérifie $(S_n)$ au point $x$ \textup{(resp.} tels que
+$\operatorname{coprof}(\mathcal F_x)\leq n$). Si $\mathcal F$ est normalement
+plat le long de $Y$, si $\operatorname{Supp}(\mathcal F)=X$ et si $\mathcal J$
+es
+
+[id 14492]
+OLD: au point $x$ (resp. tels que
+NEW: au point $x$ \textup{(resp.} tels que
+FRENCH CONTEXT (corrected): e{prof}(\mathcal F_x)=p$ (\textbf{0}, 16.4.6, (ii)).
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[6.10.4]
+\label{IV.2.s6.10.4-fr}
+Soit $U_{S_n}(\mathcal F)$ \textup{(resp.} $U_{C_n}(\mathcal F)$) l'ensemble des
+$x\in X$ tels que $\mathcal F$ vérifie $(S_n)$ au point $x$ \textup{(resp.} tels que
+$\operatorname{coprof}(\mathcal F_x)\leq n$). Si $\mathcal F$ est normalement
+plat le long de $Y$, si $\operatorname{Supp}(\mathcal F)=X$ et si $\mathcal J$
+est localement nilpotent, on a
+$U_{S_n}(\mathcal F)=U_{S_n}(\mathcal O_Y)$ et
+$U_{C_n}(\mathcal F)=U_{
+
+[id 14495]
+OLD: \item[(ii)] On a
+NEW: \item[\textup{(ii)}] On a
+FRENCH CONTEXT (corrected): \mathcal O_Y$-Module localement libre
+$\operatorname{gr}_{\mathcal J}^{n}(\mathcal F)$ étant nécessairement de rang
+constant). Alors:
+\begin{enumerate}
+\item[\textup{(i)}] Il existe un polynôme $P\in\mathbf Q[T]$ tel que $P(n)=r(n)$ pour
+tout $n$ assez grand.
+\item[\textup{(ii)}] On a $Y\cap\operatorname{Supp}(\mathcal F)=\varnothing$
+(autrement dit $\mathcal F/\mathcal J\mathcal F=0$), ou
+$Y\cap\operatorname{Supp}(\mathcal F)=Y$ (autrement dit
+$Y\subset\operatorname{Supp}(\mathcal F)$).
+\end{enumerate}
+Dans le second cas, notons $d\setmin
+
+[id 14497]
+OLD: \item[(iii)] Supposons
+NEW: \item[\textup{(iii)}] Supposons
+FRENCH CONTEXT (corrected): \begin{equation}
+\dim(\mathcal F_y)=d
+\tag{6.10.5.2}\label{IV.2.s6.10.5.2-fr}
+\end{equation}
+et en particulier
+\begin{equation}
+\operatorname{codim}(Y,\operatorname{Supp}(\mathcal F))=d.
+\tag{6.10.5.3}\label{IV.2.s6.10.5.3-fr}
+\end{equation}
+\begin{enumerate}
+\item[\textup{(iii)}] Supposons $Y\subset\operatorname{Supp}(\mathcal F)$. Pour tout
+$x\in Y$, on a
+\end{enumerate}
+\begin{equation}
+\dim(\mathcal F_x)=\dim(\mathcal O_{Y,x})+d.
+\tag{6.10.5.4}\label{IV.2.s6.10.5.4-fr}
+\end{equation}
+
+De façon plus précise, il existe dans $\mathcal J_x$ des 
+
+[id 14500]
+OLD: on ait
+\[
+V(\mathcal J_x)=V\left(\sum_{i=1}^{d}f_i\mathcal O_{X,x}\right)
+\cap\operatorname{Supp}(\mathcal F).
+\]
+NEW: on ait
+$V(\mathcal J_x)=V(\sum_{i=1}^{d}f_i\mathcal O_{X,x})\cap\operatorname{Supp}(\mathcal F)$.
+FRENCH CONTEXT (corrected): r}
+\end{equation}
+
+De façon plus précise, il existe dans $\mathcal J_x$ des éléments $f_i$
+$(1\leq i\leq d)$ faisant partie d'un système de paramètres pour
+$\mathcal F_x$ \textup{(\textbf{0}, 16.3.6)} et tels que, dans
+$\operatorname{Spec}(\mathcal O_{X,x})$, on ait
+$V(\mathcal J_x)=V(\sum_{i=1}^{d}f_i\mathcal O_{X,x})\cap\operatorname{Supp}(\mathcal F)$.
+\end{proposition}
+
+\oldpage[IV-2]{157}
+\begin{proof}
+Comme $Y$ est supposé connexe, la première assertion de (ii) découle de
+(6.10.3, (i)). Si l'on a
+$Y\cap\operatorname{Supp}(\mathcal F)=\varnothing$, l'assertion (i) est
+triviale avec $P=0$. Supposons que
+$\
+
+[id 14504]
+OLD: -module $\mathcal O_{X,y}/\mathcal J_y$;
+NEW: -module $\mathcal O_{Y,y}=\mathcal O_{X,y}/\mathcal J_y$;
+FRENCH CONTEXT (corrected): y$ pour la filtration
+$\mathcal J_y$-préadique (\textbf{0}, 16.2.1). Comme les
+$\mathcal O_{Y,y}$-modules
+$\operatorname{gr}_{\mathcal J_y}^{n}(\mathcal F_y)$ sont libres par
+hypothèse, on a $r(n)=s(n)/m$, en désignant par $m$ la longueur du
+$\mathcal O_{X,y}$-module $\mathcal O_{Y,y}=\mathcal O_{X,y}/\mathcal J_y$; on satisfait donc
+à (i) en
+prenant $P=\frac{1}{m}R$. On sait en outre (\textbf{0}, 16.2.3) que
+$\deg(H)=\dim(\mathcal F_y)$, d'où la relation (6.10.5.2); la relation
+(6.10.5.3) s'en déduit à l'aide de (5.1.12.2).
+
+Reste à prouver (iii) pour un point quelconqu
+
+[id 14505]
+OLD: $P=R/m$
+NEW: $P=\frac{1}{m}R$
+FRENCH CONTEXT (corrected): ,y}$-modules
+$\operatorname{gr}_{\mathcal J_y}^{n}(\mathcal F_y)$ sont libres par
+hypothèse, on a $r(n)=s(n)/m$, en désignant par $m$ la longueur du
+$\mathcal O_{X,y}$-module $\mathcal O_{Y,y}=\mathcal O_{X,y}/\mathcal J_y$; on satisfait donc
+à (i) en
+prenant $P=\frac{1}{m}R$. On sait en outre (\textbf{0}, 16.2.3) que
+$\deg(H)=\dim(\mathcal F_y)$, d'où la relation (6.10.5.2); la relation
+(6.10.5.3) s'en déduit à l'aide de (5.1.12.2).
+
+Reste à prouver (iii) pour un point quelconque $x\in Y$. Posons
+$A=\mathcal O_{X,x}$, $\mathfrak 
+
+=================== PAGE IV-2 157 ===================
+----- (English page IV-2 156: shown above in this file) -----
+----- (English page IV-2 157: shown above in this file) -----
+----- English, source_aligned/ega4-6.tex, page IV-2 158 -----
+\oldpage[IV-2]{158}
+Let $\mathrm{Y}'=\mathrm{Y}_\mathrm{red}$, which is a closed integral sub-prescheme of $\mathrm{Y}$ having the same underlying space, and defined by a locally nilpotent Ideal $\sh{J}$ of $\sh{O}_\mathrm{Y}$ \sref[I]{I.6.1.6}. It follows that $\operatorname{gr}^{\bullet}_{\sh{J}}(\sh{O}_\mathrm{Y})$ is a coherent $\sh{O}_{\mathrm{Y}'}$-Module, and as $\mathrm{Y}'$ is integral, there exists an open neighbourhood $\mathrm{V}$ of $y$ in $\mathrm{Y}'$ such that $\operatorname{gr}^{\bullet}_{\sh{J}}(\sh{O}_\mathrm{Y})|\mathrm{V}$ is locally free \sref[0]{0.5.2.7}; otherwise said, replacing $\mathrm{X}$ by a neighbourhood of $y$, one can suppose that $\sh{O}_\mathrm{Y}$ is \emph{normally flat} along $\mathrm{Y}'$; one then deduces from \sref{IV.6.10.3} that we have
+\[
+\dim(\sh{O}_{\mathrm{Y},x})=\dim(\sh{O}_{\mathrm{Y}',x}),\qquad \operatorname{prof}(\sh{O}_{\mathrm{Y},x})=\operatorname{prof}(\sh{O}_{\mathrm{Y}',x})
+\]
+for every $x\in\mathrm{Y}$; this allows us to limit ourselves to the case where the closed sub-prescheme $\mathrm{Y}$ is \emph{integral}.
+
+This being so, by virtue of \sref{IV.6.10.2}, one can, replacing $\mathrm{X}$ by an open neighbourhood of $y$, suppose that $\sh{F}$ is \emph{normally flat} along $\mathrm{Y}$. Since $y\in\operatorname{Supp}(\sh{F})$, relation \sref{IV.6.10.6.1} follows from \sref{IV.6.10.5.2} and \sref{IV.6.10.5.4}. Suppose now $p=\operatorname{prof}(\sh{F}_y)$; replacing at need $\mathrm{X}$ by an open neighbourhood of $y$, one can further suppose that there exist $p$ sections $f_i$ ($1\leqslant i\leqslant p$) of $\sh{O}_\mathrm{X}$ above $\mathrm{X}$, forming an $\sh{F}$-regular sequence, such that the $(f_i)_y$ belong to the maximal ideal $\mathfrak{m}_y$ of $\sh{O}_{\mathrm{X}}$ at the point $y$ and that $\operatorname{prof}(\sh{F}_y/(\sum_{i=1}^p (f_i)_y\sh{F}_y))=0$ \sref[0]{0.16.4.6}. If $\sh{J}$ is the Ideal of $\sh{O}_\mathrm{X}$ defining $\mathrm{Y}$, we have $\sh{J}_y=\mathfrak{m}_y$ and, replacing $\mathrm{X}$ once more by a neighbourhood of $y$ if necessary, we may suppose that $f_i\in\Gamma(\mathrm{X},\sh{J})$ for $1\leqslant i\leqslant p$. Moreover, setting $\sh{G}=\sh{F}/(\sum_{i=1}^p f_i\sh{F})$, the hypothesis $\operatorname{prof}(\sh{G}_y)=0$ implies that $\sh{G}_y$ contains a sub-module isomorphic to $\sh{O}_{\mathrm{X},y}/\mathfrak{m}_y$ \sref[0]{0.16.4.6}; reasoning as above (taking into account \sref[0]{0.5.3.8} and \sref[0]{0.5.2.7}) shows that one can suppose that there exists a sub-$\sh{O}_\mathrm{X}$-Module $\sh{G}'$ of $\sh{G}$ \emph{isomorphic to} $\sh{O}_\mathrm{X}/\sh{J}$ so that $\sh{G}'_x=\sh{O}_{\mathrm{Y},x}$ for every $x\in\mathrm{Y}$. Setting $\sh{G}''=\sh{G}/\sh{G}'$; replacing $\mathrm{X}$ by an open neighbourhood of $y$, one can, by virtue of \sref{IV.6.10.2}, suppose that $\sh{G}'$ and $\sh{G}''$ are \emph{normally flat} along $\mathrm{Y}$. Let then $x$ be any point of $\mathrm{Y}$, and set $q=\operatorname{prof}(\sh{O}_{\mathrm{Y},x})=\operatorname{prof}(\sh{G}'_x)$; let $(g_j)_{1\leqslant j\leqslant q}$ be a maximal $\sh{G}'_x$-regular sequence of elements of the maximal ideal $\mathfrak{m}_x$ of $\sh{O}_{\mathrm{X},x}$. Each of the homogeneous components of $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is a flat $\sh{O}_{\mathrm{Y},x}$-module of finite type by hypothesis, hence a free $\sh{O}_{\mathrm{Y},x}$-module, and consequently $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$ is free as well; since the sequence $(g_j)$ is $\sh{O}_{\mathrm{Y},x}$-regular, it is therefore $\operatorname{gr}^{\bullet}_{\sh{J}_x}(\sh{G}''_x)$-regular, whence it is $\sh{G}''_x$-regular \sref[0]{0.15.1.19}. Applying the lemma \sref[0]{0.15.1.18} to the exact sequence
+\[
+0\to\sh{G}'_x\to\sh{G}_x\to\sh{G}''_x\to 0
+\]
+by induction on $j$, one concludes an exact sequence
+\[
+0\to\sh{G}'_x\Big/\Big(\sum_{j=1}^q g_j\sh{G}'_x\Big)\to\sh{G}_x\Big/\Big(\sum_{j=1}^q g_j\sh{G}_x\Big).
+\]
+But by hypothesis $\operatorname{prof}(\sh{G}'_x/(\sum_{j=1}^q g_j\sh{G}'_x))=0$ \sref[0]{0.16.4.6}; by the characterisation \sref[0]{0.16.4.6} of modules of zero depth, one concludes that $\operatorname{prof}(\sh{G}_x/(\sum_{j=1}^q g_j\sh{G}_x))=0=\operatorname{prof}(\sh{F}_x/(\sum_{i=1}^p f_i\sh{F}_x+\sum_{j=1}^q g_j\sh{F}_x))$; the sequence $(g_j)$, being $\sh{G}'_x$-regular and $\sh{G}''_x$-regular, is also $\sh{G}_x$-regular; finally, the sequence $((f_i)_x)$ is $\sh{F}_x$-regular by hypothesis and consists of elements of the maximal ideal $\mathfrak{m}_x$; one deduces \sref[0]{0.16.4.6} that $\operatorname{prof}(\sh{F}_x)=p+q$, which completes the proof.
+\end{proof}
+
+
+\subsection{Criteria for the sets \texorpdfstring{$\mathrm{U}_{\mathrm{S}_n}(\sh{F})$}{U\_Sn(F)} or \texorpdfstring{$\mathrm{U}_{\mathrm{C}_n}(\sh{F})$}{U\_Cn(F)} to be open}
+\label{subsection:IV.6.11}
+\label{IV.6.11}
+
+\begin{lemma}[6.11.1]
+\label{IV.6.11.1}
+Let $\mathrm{X}$ be a locally Noetherian prescheme, $\sh{F}$ an $\sh{O}_\mathrm{X}$-Module
+coherent; then the function $x\leadsto\operatorname{dim.proj}(\sh{F}_x)$ is upper semi-continuous in $\mathrm{X}$.
+\end{lemma}
+
+\begin{proof}
+One can restrict to the case where $\mathrm{X}=\operatorname{Spec}(\mathrm{A})$ is the spectrum of a Noetherian ring
+and $\sh{F}=\widetilde{\mathrm{M}}$, where $\mathrm{M}$ is an $\mathrm{A}$-module of finite type. Suppose that for an $x\in\mathrm{X}$, we have
+$\operatorname{dim.proj}(\mathrm{M}_x)=n<+\infty$ (if $n=+\infty$ there is nothing to prove); there exists a resolution
+\[
+  \mathrm{L}_{n-1}\to\mathrm{L}_{n-2}\to\ldots\to\mathrm{L}_0\to\mathrm{M}\to 0
+\]
+----- French corrections on page IV-2 157 -----
+[id 14507]
+OLD: \mathfrak q=B_+=
+NEW: \mathfrak q=B^+=
+FRENCH CONTEXT (corrected): rang $r(n)$. Soient $\mathfrak m$
+l'idéal maximal de $A$, $k=A/\mathfrak m$ son corps résiduel;
+$B=S\otimes_A k$ est une $k$-algèbre graduée de type fini, à degrés
+positifs, engendrée par ses éléments homogènes de degré $1$ et telle que
+$B_0=k$, de sorte que $\mathfrak q=B^+=\bigoplus_{n\geq1}B_n$ est un idéal
+maximal dans $B$; $E=N\otimes_A k$ est un $B$-module gradué de type fini
+tel que $\operatorname{rg}_k(E_n)=r(n)$. Appliquons (\textbf{0}, 16.2.7) à l'anneau
+gradué $B=S\otimes_A k$ et au $B$-module gradué $E=N\otimes_A k$, e
+
+[id 14511]
+OLD: que l'on a
+\[
+\dim(A/\mathfrak J)=
+\dim\left(A/\left(\sum_{i=1}^{d}f_iA\right)\right)
+\]
+et il reste
+NEW: que l'on a
+$\dim(A/\mathfrak J)=\dim(A/(\sum_{i=1}^{d}f_iA))$
+et il reste
+FRENCH CONTEXT (corrected):  dernière
+relation de (iii). Il reste à montrer que les $f_i$ font partie d'un système
+de paramètres pour $M$. Remplaçant $A$ par $A/\mathfrak a$ et les $f_i$ par
+leurs images dans $A/\mathfrak a$, on peut se borner au cas où
+$\mathfrak a=0$; on vient de voir que l'on a
+$\dim(A/\mathfrak J)=\dim(A/(\sum_{i=1}^{d}f_iA))$
+et il reste donc à prouver (\textbf{0}, 16.3.7) que l'on a
+\[
+\dim(A)\geq\dim(A/\mathfrak J)+d.
+\]
+
+Or, soit $\mathfrak p$ un idéal premier de $A$ contenant $\mathfrak J$ et
+tel que $\dim(A/\mathfrak J)=\dim(A/\mathfrak p)$, de sorte que
+$\mathfrak p$ est minimal parmi l
+

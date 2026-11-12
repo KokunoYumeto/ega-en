@@ -1,0 +1,970 @@
+```json
+[
+  {
+    "id": 17742,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "one says that the family $(f_\\lambda)$ is \\emph{schematically dominant}.",
+    "en_new": "one says that the family $(f_\\lambda)$ is schematically dominant."
+  },
+  {
+    "id": 17743,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "one says also that the family $(\\mathrm{Z}_\\lambda)$ is \\emph{schematically dense}.",
+    "en_new": "one says also that the family $(\\mathrm{Z}_\\lambda)$ is schematically dense."
+  },
+  {
+    "id": 17744,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "a condition of the form $b)$ of \\sref{IV.11.10.1}",
+    "en_new": "a condition of the form \\emph{b)} of \\sref{IV.11.10.1}"
+  },
+  {
+    "id": 17745,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "the \\emph{closed image} of $\\mathrm{Z}$ \\emph{by} $f$",
+    "note": "The article is already outside the emphasis."
+  },
+  {
+    "id": 17746,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "\\sref[I]{I.9.5.3} \\emph{is identical to} $\\mathrm{X}$."
+  },
+  {
+    "id": 17747,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "if moreover $\\mathrm{X}$ is \\emph{reduced}, the family $(f_\\lambda)$ is schematically dominant.",
+    "note": "\\emph prints the word upright inside the proposition."
+  },
+  {
+    "id": 17748,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "The first assertion follows immediately from \\sref{IV.11.10.1},~$b$).",
+    "en_new": "The first assertion follows immediately from \\sref{IV.11.10.1},~\\emph{b)}."
+  },
+  {
+    "id": 17752,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "Suppose that $g$ is a flat morphism, and moreover that one of the two following conditions is satisfied:",
+    "en_new": "Suppose that $g$ is a flat morphism, and moreover that \\textup{one} of the two following conditions is satisfied:"
+  },
+  {
+    "id": 17751,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "\\begin{enumerate}[label=(\\roman*)]\n  \\item If $g$ is faithfully flat",
+    "en_new": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item If $g$ is faithfully flat"
+  },
+  {
+    "id": 17758,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-11.tex",
+    "en_old": "One says that the family $(f_\\lambda)$ is \\emph{universally schematically dominant} (relative to $\\mathrm{S}$)",
+    "en_new": "One says that the family $(f_\\lambda)$ is universally schematically dominant (relative to $\\mathrm{S}$)"
+  },
+  {
+    "id": 17763,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Given a morphism \\emph{locally of finite presentation} $f:X\\to Y$"
+  },
+  {
+    "id": 17764,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "for certain \\emph{local} properties $\\boldsymbol{P}$"
+  },
+  {
+    "id": 17767,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "for the \\emph{fibre} $X_{f(x)}$, at the point $x$ of this fibre"
+  },
+  {
+    "id": 17768,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "at the point $x$ of this fibre, is \\emph{locally constructible in} $X$."
+  },
+  {
+    "id": 17769,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "the morphism $f$ is \\emph{flat}, then the set $E$"
+  },
+  {
+    "id": 17770,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "then the set $E$ is in fact \\emph{open in} $X$."
+  },
+  {
+    "id": 17771,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "we have shown that if $f$ is \\emph{of finite presentation},"
+  },
+  {
+    "id": 17773,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\boldsymbol{P}$ denotes certain \\emph{global} properties"
+  },
+  {
+    "id": 17775,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "holds for the fibre $X_y$ is \\emph{locally constructible in} $Y$."
+  },
+  {
+    "id": 17776,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "the morphism $f$ is \\emph{proper} and \\emph{flat},"
+  },
+  {
+    "id": 17777,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$F$ is in fact \\emph{open in} $Y$."
+  },
+  {
+    "id": 17778,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "One first reduces to the case where $Y$ is \\emph{affine} and $X$ of finite presentation;"
+  },
+  {
+    "id": 17781,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "one reduces to the case where $X$ and $Y$ are \\emph{Noetherian}."
+  },
+  {
+    "id": 17782,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "to show that $E$ (resp.\\ $F$) is \\emph{constructible}."
+  },
+  {
+    "id": 17783,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "then every \\emph{generization} $x'$ of $x$ also belongs to $E$."
+  },
+  {
+    "id": 17784,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "one sees that, since $Y$ is \\emph{Noetherian},"
+  },
+  {
+    "id": 17785,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "there exists a spectrum of a \\emph{discrete valuation ring} $Y_1$"
+  },
+  {
+    "id": 17786,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "and that $t$ is $M$-\\emph{regular} (which follows from the flatness hypothesis)"
+  },
+  {
+    "id": 17787,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 17789,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\sh{F}_{f(x)}$ is equidimensional at the point $x$ and possesses the property $(S_k)$",
+    "en_new": "$\\sh{F}_{f(x)}$ is \\textup{equidimensional} at the point $x$ and possesses the property $(S_k)$"
+  },
+  {
+    "id": 17795,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "one can suppose that $\\sh{F}_0$ is $Y_0$-flat (with $Y_0=\\Spec(A_0)$).",
+    "en_new": "one can suppose that $\\sh{F}_0$ is $Y_0$-\\emph{flat} (with $Y_0=\\Spec(A_0)$)."
+  },
+  {
+    "id": 17796,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "One is thus reduced to the case where $A$ and $B$ are Noetherian,",
+    "en_new": "One is thus reduced to the case where $A$ and $B$ are \\emph{Noetherian},"
+  },
+  {
+    "id": 17797,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "one knows that the set $E$ is \\emph{constructible} for all the properties considered"
+  },
+  {
+    "id": 17798,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "where one must prove that $E$ is \\emph{stable under generization}."
+  },
+  {
+    "id": 17800,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "implies that $t$ is $\\sh{F}$-regular \\sref[0\\textsubscript{\\mdseries I}]{0.6.3.4}.",
+    "en_new": "implies that $t$ is $\\sh{F}$-\\emph{regular} \\sref[0\\textsubscript{\\mdseries I}]{0.6.3.4}."
+  },
+  {
+    "id": 17802,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\sh{F}'$ is \\emph{reduced} (resp.\\ \\emph{integral}) at the points of $X\\otimes_A K'$"
+  },
+  {
+    "id": 17804,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\sh{F}_{f(x')}$ is \\emph{reduced} (resp.\\ \\emph{integral}) at every generization $x'$ of $x$."
+  },
+  {
+    "id": 17805,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "the uniformiser $t$ of $A$ being an $M$-\\emph{regular} element."
+  },
+  {
+    "id": 17806,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\sh{F}$ a coherent $\\sh{O}_X$-Module and $f$-flat; for every $y\\in Y$",
+    "en_new": "$\\sh{F}$ a coherent $\\sh{O}_X$-Module and $f$-\\textup{flat}; for every $y\\in Y$"
+  },
+  {
+    "id": 17810,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}resp.\\ of $\\{y'\\}$ in $Y$\\textnormal{)}",
+    "en_new": "\\textup{(resp.} of $\\{y'\\}$ in $Y$\\textup{)}"
+  },
+  {
+    "id": 17811,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}which we will express more precisely later \\sref{IV.13.2.2} by saying that the restriction $Z'\\to Y'$ of $f$ is an equidimensional morphism\\textnormal{)}",
+    "en_new": "\\textup{(which we will express more precisely later \\sref{IV.13.2.2} by saying that the restriction $Z'\\to Y'$ of $f$ is an \\emph{equidimensional} morphism)}"
+  },
+  {
+    "id": 17814,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "one has just seen that \\emph{every} prime cycle associated to $\\sh{F}_{y'}$"
+  },
+  {
+    "id": 17815,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "has the same dimension as \\emph{one} of the prime cycles associated to $\\sh{F}_y$"
+  },
+  {
+    "id": 17816,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "with $\\sh{F}=\\sh{O}_X$ (so that $f$ is \\emph{flat}),"
+  },
+  {
+    "id": 17817,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "is a flat morphism nor even an \\emph{open} morphism."
+  },
+  {
+    "id": 17808,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}resp.\\ $Y'$\\textnormal{)}",
+    "en_new": "\\textup{(resp.\\ $Y'$)}"
+  },
+  {
+    "id": 17809,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}resp.\\ $Y$\\textnormal{)}",
+    "en_new": "\\textup{(resp.\\ $Y$)}"
+  },
+  {
+    "id": 17823,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "this property is true even without supposing $f$ flat.",
+    "en_new": "this property is true \\emph{even without supposing $f$ flat}."
+  },
+  {
+    "id": 17826,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Let $f:X\\to Y$ be a flat morphism locally of finite presentation, and let $k$ be an integer.",
+    "en_new": "Let $f:X\\to Y$ be a \\textup{flat} morphism locally of finite presentation, and let $k$ be an integer."
+  },
+  {
+    "id": 17828,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "is geometrically regular (i.e.\\ smooth) at the point $x$.",
+    "en_new": "is geometrically regular \\textup{(i.e.}\\ smooth\\textup{)} at the point $x$."
+  },
+  {
+    "id": 17832,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\item is regular (or smooth, which amounts to the same);",
+    "en_new": "\\item is regular \\textup{(or} smooth\\textup{, which amounts to the same)};"
+  },
+  {
+    "id": 17833,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "the set of $x\\in X$ where $f$ is \\emph{flat} is \\emph{open}."
+  },
+  {
+    "id": 17834,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "where $f$ is \\emph{flat} is \\emph{open}.\nOne can therefore restrict"
+  },
+  {
+    "id": 17835,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 17836,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Let $f:X\\to Y$ be a \\emph{proper} morphism of finite presentation,",
+    "en_new": "Let $f:X\\to Y$ be a proper morphism of finite presentation,"
+  },
+  {
+    "id": 17831,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item satisfies the property $(S_k)$;"
+  },
+  {
+    "id": 17837,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item The set of $y\\in Y$ such that the set of dimensions of the prime cycles associated to $\\sh{F}_y$ is contained in $\\Phi$."
+  },
+  {
+    "id": 17871,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}resp.\\ $\\operatorname{Supp}(\\sh{F}_{y'})$\\textnormal{)}",
+    "en_new": "\\textup{(resp.\\ $\\operatorname{Supp}(\\sh{F}_{y'})$)}"
+  },
+  {
+    "id": 17873,
+    "decision": "not_applicable",
+    "note": "Removal of display-ending punctuation only."
+  },
+  {
+    "id": 17881,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "The function $y\\leadsto l(y)$ \\sref{IV.12.2.1},~(xi) is upper semi-continuous",
+    "en_new": "The function $y\\leadsto l(y)$ \\sref{IV.12.2.1},~\\textup{(xi)} is upper semi-continuous"
+  },
+  {
+    "id": 17870,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\textnormal{(}resp.\\ $z_j'$\\textnormal{)}",
+    "en_new": "\\textup{(resp.\\ $z_j'$)}"
+  },
+  {
+    "id": 17876,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Under the hypotheses of \\sref{IV.12.2.1}:\n\\begin{enumerate}[label=(\\roman*)]",
+    "en_new": "Under the hypotheses of \\sref{IV.12.2.1}:\n\\begin{enumerate}[label=\\textup{(\\roman*)}]"
+  },
+  {
+    "id": 17892,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "$\\mathfrak{m}$ is an \\emph{embedded} associated prime ideal of $B/Bt^4$."
+  },
+  {
+    "id": 17903,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 17897,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "\\begin{enumerate}[label=(\\roman*)]\n  \\item The set of $y\\in Y$ such that $X_y$ possesses the property $(S_k)$.",
+    "en_new": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item The set of $y\\in Y$ such that $X_y$ possesses the property $(S_k)$."
+  },
+  {
+    "id": 17912,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Here $\\operatorname{Tor.dim}_B(M)$ is the smallest integer $i$ such that"
+  },
+  {
+    "id": 17910,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "Then:\n\\begin{enumerate}[label=(\\roman*)]\n  \\item There exists a left resolution of $M$",
+    "en_new": "Then:\n\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item There exists a left resolution of $M$"
+  },
+  {
+    "id": 17931,
+    "decision": "not_applicable",
+    "note": "Punctuation between displayed sequences only."
+  },
+  {
+    "id": 17932,
+    "decision": "not_applicable",
+    "note": "Punctuation between displayed sequences only."
+  },
+  {
+    "id": 17933,
+    "decision": "not_applicable",
+    "note": "Punctuation between displayed sequences only."
+  },
+  {
+    "id": 17934,
+    "decision": "not_applicable",
+    "note": "Punctuation between displayed sequences only."
+  },
+  {
+    "id": 17937,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "(resp.\\ $(\\mathscr{T}\\!or_n^{\\sh{O}_{X_{f(x)}}}(\\sh{F}_{f(x)},\\sh{G}_{f(x)}))_x=0$)",
+    "en_new": "\\textup{(resp.\\ $(\\mathscr{T}\\!or_n^{\\sh{O}_{X_{f(x)}}}(\\sh{F}_{f(x)},\\sh{G}_{f(x)}))_x=0$)}"
+  },
+  {
+    "id": 17939,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-12.tex",
+    "en_old": "(resp.\\ $\\mathscr{T}\\!or_n^{\\sh{O}_X}(\\sh{F},\\sh{G})|_U=0$).",
+    "en_new": "\\textup{(resp.\\ $\\mathscr{T}\\!or_n^{\\sh{O}_X}(\\sh{F},\\sh{G})|_U=0$)}."
+  },
+  {
+    "id": 17941,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 17943,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 17946,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "that the prescheme $X_0$ is integral, but we shall see",
+    "en_new": "that the prescheme $X_0$ is \\emph{integral}, but we shall see"
+  },
+  {
+    "id": 17944,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "(resp.\\ $\\eta$)",
+    "en_new": "\\textup{(resp.\\ $\\eta$)}"
+  },
+  {
+    "id": 17945,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "the generic point of $X$ (resp.\\ $Y$) and let $e=",
+    "en_new": "the generic point of $X$ \\textup{(resp.\\ $Y$)} and let $e="
+  },
+  {
+    "id": 17955,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "in other words, we can suppose $X$ \\emph{irreducible}."
+  },
+  {
+    "id": 18175,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 18176,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$f:X\\to Y$ a \\emph{dominant} morphism locally of finite type;"
+  },
+  {
+    "id": 18171,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "(resp.\\ $\\eta$)",
+    "en_new": "\\textup{(resp.\\ $\\eta$)}"
+  },
+  {
+    "id": 18172,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "the generic point of $X$ (resp.\\ $Y$) and let $e=",
+    "en_new": "the generic point of $X$ \\textup{(resp.\\ $Y$)} and let $e="
+  },
+  {
+    "id": 18178,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "we say that $f$ is \\emph{equidimensional at the point} $x$",
+    "en_new": "we say that $f$ is \\textup{equidimensional at the point} $x$"
+  },
+  {
+    "id": 18179,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$X$ is \\emph{equidimensional over} $Y$ \\emph{at the point} $x$) if",
+    "en_new": "$X$ is \\textup{equidimensional over $Y$ at the point} $x$) if"
+  },
+  {
+    "id": 18180,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "We say that $f$ is \\emph{equidimensional} (or",
+    "en_new": "We say that $f$ is \\textup{equidimensional} (or"
+  },
+  {
+    "id": 18181,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$X$ is \\emph{equidimensional over} $Y$) if",
+    "en_new": "$X$ is \\textup{equidimensional over $Y$}) if"
+  },
+  {
+    "id": 18182,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$f:X\\to Y$ a dominant morphism locally of finite type; let $\\eta$",
+    "en_new": "$f:X\\to Y$ a \\textup{dominant} morphism locally of finite type; let $\\eta$"
+  },
+  {
+    "id": 18205,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n    \\item $\\dim(B')=\\dim(B)$."
+  },
+  {
+    "id": 18211,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item If $Y'=\\overline{f(X')}$"
+  },
+  {
+    "id": 18215,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "(a condition always implied by (iii) when",
+    "en_new": "(a condition always implied by \\textup{(iii)} when"
+  },
+  {
+    "id": 18218,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "containing $x$ and satisfying conditions (i) to (iv) of \\sref{IV.13.2.7} are exactly",
+    "en_new": "containing $x$ and satisfying conditions \\textup{(i)} to \\textup{(iv)} of \\sref{IV.13.2.7} are exactly"
+  },
+  {
+    "id": 18227,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "(in other words, the \\emph{closed reduced sub-prescheme}",
+    "en_new": "\\textup{(in other words,} the \\emph{closed reduced sub-prescheme}"
+  },
+  {
+    "id": 18228,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "\\emph{closed reduced sub-prescheme} $X_i$ of $X$",
+    "en_new": "closed reduced sub-prescheme $X_i$ of $X$"
+  },
+  {
+    "id": 18241,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$E(y_0)$ is reduced to a \\emph{single} element",
+    "en_new": "$E(y_0)$ is reduced to \\emph{a single} element"
+  },
+  {
+    "id": 18242,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "hence $E(y)$ is \\emph{not constant} in $Y$.",
+    "en_new": "hence $E(y)$ \\emph{is not constant} in $Y$."
+  },
+  {
+    "id": 18243,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 17962,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "a $Y$-morphism quasi-finite $g:U\\to",
+    "en_new": "a $Y$-morphism \\textup{quasi-finite} $g:U\\to"
+  },
+  {
+    "id": 17964,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "(a prescheme we will also denote $Y[T_1,\\ldots,T_e]$, to abbreviate)",
+    "en_new": "\\textup{(a prescheme we will also denote $Y[T_1,\\ldots,T_e]$, to abbreviate)}"
+  },
+  {
+    "id": 17983,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "We say that $f$ is \\emph{equidimensional at the point} $x$ (or that $X$ is \\emph{equidimensional over} $Y$ \\emph{at the point} $x$)",
+    "en_new": "We say that $f$ is \\textup{equidimensional at the point} $x$ (or that $X$ is \\textup{equidimensional over $Y$ at the point} $x$)"
+  },
+  {
+    "id": 17985,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "We say that $f$ is \\emph{equidimensional} (or that $X$ is \\emph{equidimensional over} $Y$) if",
+    "en_new": "We say that $f$ is \\textup{equidimensional} (or that $X$ is \\textup{equidimensional over $Y$)} if"
+  },
+  {
+    "id": 18003,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$g:Y'\\to Y$ a flat morphism, $X'=X\\times_Y Y'$",
+    "en_new": "$g:Y'\\to Y$ a \\textup{flat} morphism, $X'=X\\times_Y Y'$"
+  },
+  {
+    "id": 18004,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "The property of equidimensionality of a morphism $f:X\\to Y$ is \\emph{not} stable by arbitrary base change",
+    "en_new": "The property of equidimensionality of a morphism $f:X\\to Y$ \\emph{is not stable by arbitrary base change}"
+  },
+  {
+    "id": 18006,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "the morphism $f':X'\\to Y'$ is \\emph{not dominant},",
+    "en_new": "the morphism $f':X'\\to Y'$ \\emph{is not dominant},"
+  },
+  {
+    "id": 18008,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-13.tex",
+    "en_old": "$g:Y'\\to Y$ is \\emph{finite} and \\emph{dominant}."
+  },
+  {
+    "id": 17838,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "in terms of properties of the \\emph{fibre} $f^{-1}(f(x))$ of $x$:"
+  },
+  {
+    "id": 17839,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "then $f$ is \\emph{open at the point $\\xi$}."
+  },
+  {
+    "id": 17842,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "no irreducible component $X'$ of $f^{-1}(Y')$ containing $x$ can be contained",
+    "en_new": "no irreducible component $X'$ of $f^{-1}(Y')$ \\emph{containing} $x$ can be contained"
+  },
+  {
+    "id": 17846,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$E(y)=E(y_i)$ (resp.\\ $d(y)=d(y_i)$),",
+    "en_new": "$E(y)=E(y_i)$ \\textup{(resp.\\ $d(y)=d(y_i)$)},"
+  },
+  {
+    "id": 17847,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "the function $E$ (resp.\\ $d$) is constant",
+    "en_new": "the function $E$ \\textup{(resp.\\ $d$)} is constant"
+  },
+  {
+    "id": 17854,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "We say that $f$ is \\emph{universally open at the point $x$} if",
+    "en_new": "We say that $f$ is universally open at the point $x$ if"
+  },
+  {
+    "id": 18012,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$f_1'=f'_{(Y_1')}$."
+  },
+  {
+    "id": 18015,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(in other words, \\emph{there is an irreducible component of $X'$ containing $x'$ and dominating $Y'$}).",
+    "en_new": "\\textup{(in other words,} there is an irreducible component of $X'$ containing $x'$ and dominating $Y'$\\textup{)}."
+  },
+  {
+    "id": 18009,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\begin{enumerate}[label=(\\roman*)]\n  \\item Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms",
+    "en_new": "\\begin{enumerate}[label=\\textup{(\\roman*)}]\n  \\item Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms"
+  },
+  {
+    "id": 18022,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$f_{\\mathrm{red}}$ is flat in a neighbourhood of $f^{-1}(y)$ \\sref{IV.11.1.1}",
+    "en_new": "$f_{\\mathrm{red}}$ is flat in a \\emph{neighbourhood} of $f^{-1}(y)$ \\sref{IV.11.1.1}"
+  },
+  {
+    "id": 18021,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "The notations being those of \\sref{IV.14.3.6}:\n\\begin{enumerate}[label=(\\roman*)]",
+    "en_new": "The notations being those of \\sref{IV.14.3.6}:\n\\begin{enumerate}[label=\\textup{(\\roman*)}]"
+  },
+  {
+    "id": 18025,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$f$ is universally open at all but one point of $X$",
+    "en_new": "$f$ is universally open at \\emph{all but one} point of $X$"
+  },
+  {
+    "id": 18026,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(resp.\\ $X_1=X\\otimes_A K$)",
+    "en_new": "\\textup{(resp.}\\ $X_1=X\\otimes_A K$\\textup{)}"
+  },
+  {
+    "id": 18027,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "at the closed point (resp.\\ at the generic point) of $S$.",
+    "en_new": "at the closed point \\textup{(resp.}\\ at the generic point\\textup{)} of $S$."
+  },
+  {
+    "id": 18029,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "Consider then the closed subset $V(F)$ of $Z$;",
+    "en_new": "Consider then the closed subset $V(F)$ \\emph{in} $Z$;"
+  },
+  {
+    "id": 18038,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "by an open equivalence relation;",
+    "en_new": "by an \\emph{open} equivalence relation;"
+  },
+  {
+    "id": 18040,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "if $Z$ denotes the closure in $X$ of $Z(s')$",
+    "en_new": "if $Z$ denotes the closure \\emph{in} $X$ of $Z(s')$"
+  },
+  {
+    "id": 18044,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(or even at every point of the irreducible component of $X_y$ with generic point $x$ {\\hyperref[IV.14.3.3.1]{(14.3.3.1, (ii))}})",
+    "en_new": "\\textup{(or even at every point of the irreducible component of $X_y$ with generic point $x$ {\\hyperref[IV.14.3.3.1]{(14.3.3.1, (ii))}})}"
+  },
+  {
+    "id": 18045,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(which implies that $Z$ is \\emph{equidimensional} over $Y_0$ at the point $x$ \\sref{IV.13.2.2})",
+    "en_new": "\\textup{(which implies that $Z$ is \\emph{equidimensional} over $Y_0$ at the point $x$ \\sref{IV.13.2.2})}"
+  },
+  {
+    "id": 18049,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(closures \\emph{in} $X$)"
+  },
+  {
+    "id": 18050,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "the weaker hypothesis that $f$ is \\emph{open} at the point $x$."
+  },
+  {
+    "id": 18051,
+    "decision": "not_applicable",
+    "note": "French subsection-heading punctuation."
+  },
+  {
+    "id": 18053,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "Suppose $y$ geometrically unibranch.",
+    "en_new": "Suppose $y$ \\textup{geometrically unibranch}."
+  },
+  {
+    "id": 18057,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(which means that $Z$ is equidimensional over $Y_0$ at the point $x$ \\sref{IV.13.2.2})",
+    "en_new": "\\textup{(which means that $Z$ is \\emph{equidimensional} over $Y_0$ at the point $x$ \\sref{IV.13.2.2})}"
+  },
+  {
+    "id": 18060,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\item[\\emph{c)}] $f$ is open at $x$.",
+    "note": "\\emph makes the label upright inside the theorem."
+  },
+  {
+    "id": 18064,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "Let $A$ be a local integral ring, unibranch,",
+    "en_new": "Let $A$ be a local integral ring, \\textup{unibranch},"
+  },
+  {
+    "id": 18070,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "where $j$ is an \\emph{open immersion} and $g$ a \\emph{finite} morphism"
+  },
+  {
+    "id": 18072,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "one can suppose that $X_1$ is integral, or even that",
+    "en_new": "one can suppose that $X_1$ is \\emph{integral}, or even that"
+  },
+  {
+    "id": 18073,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "(or, what amounts to the same, at the maximal points of $X_y$ {\\hyperref[IV.14.3.3.1]{(14.3.3.1, (ii))}})",
+    "en_new": "\\textup{(or, what amounts to the same, at the maximal points of $X_y$ {\\hyperref[IV.14.3.3.1]{(14.3.3.1, (ii))}})}"
+  },
+  {
+    "id": 18075,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\item[\\emph{b$'$)}] For every $x\\in X_y$ and every open neighbourhood",
+    "note": "\\emph makes the label upright inside the corollary."
+  },
+  {
+    "id": 18077,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\item[\\emph{b$''$)}] For every open set $U$ of $X$",
+    "note": "\\emph makes the label upright inside the corollary."
+  },
+  {
+    "id": 18093,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "in other words, for every change of base $g:Y'\\to Y$, the property",
+    "en_new": "in other words, for \\textup{every} change of base $g:Y'\\to Y$, the property"
+  },
+  {
+    "id": 18095,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\item[\\emph{a$'$)}] The property $\\boldsymbol{P}(Y')$ holds",
+    "note": "\\emph makes the label upright inside the proposition."
+  },
+  {
+    "id": 18097,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "The property $\\boldsymbol{P}(Y')$ holds for every finite morphism $g:Y'\\to Y$.",
+    "en_new": "The property $\\boldsymbol{P}(Y')$ holds for every \\textup{finite} morphism $g:Y'\\to Y$."
+  },
+  {
+    "id": 18098,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "\\item[\\emph{a$''$)}] The property $\\boldsymbol{P}(Y'')$ holds",
+    "note": "\\emph makes the label upright inside the proposition."
+  },
+  {
+    "id": 18100,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "holds for the normalisation $Y''$ of $Y_{\\mathrm{red}}$",
+    "en_new": "holds for the \\textup{normalisation} $Y''$ of $Y_{\\mathrm{red}}$"
+  },
+  {
+    "id": 18101,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$Y_{\\mathrm{red}}$ \\sref[II]{II.6.3.8}."
+  },
+  {
+    "id": 18106,
+    "decision": "already",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$v$ is a \\emph{finite} and surjective morphism"
+  },
+  {
+    "id": 18107,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "$u$ is integral, \\emph{radicial} and dominant, hence surjective",
+    "en_new": "$u$ is integral, \\emph{radicial} and \\emph{dominant}, hence surjective"
+  },
+  {
+    "id": 18108,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 18109,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "a closed (resp.\\ universally closed) and surjective morphism.",
+    "en_new": "a closed \\textup{(resp.}\\ universally closed\\textup{)} and surjective morphism."
+  },
+  {
+    "id": 18110,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "to be open (resp.\\ universally open) at a point $x\\in X$",
+    "en_new": "to be open \\textup{(resp.}\\ universally open\\textup{)} at a point $x\\in X$"
+  },
+  {
+    "id": 18111,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-14.tex",
+    "en_old": "be open (resp.\\ universally open) at all the points of $X_1$ above $x$.",
+    "en_new": "be open \\textup{(resp.}\\ universally open\\textup{)} at all the points of $X_1$ above $x$."
+  }
+]
+```
+source_aligned/ega4-12.tex, 12.1.1 and 12.1.6: the preliminary proof paragraphs are incorrectly included inside the theorem environments.
+source_aligned/ega4-12.tex, 12.1.1.3: “One proceeds then … and using this time …, in the case where” omits the assertion that one is again reduced to that case.
+source_aligned/ega4-12.tex, proof of 12.3.3.3: “so that the sequences” is missing “are exact”.
+source_aligned/ega4-13.tex, proof of 13.3.1: the expression defining \(V_\lambda\) uses the undefined \(f_\lambda\), whereas the restriction was denoted \(f_\alpha\).
+source_aligned/ega4-14.tex, proof of 14.1.2(ii): the neighbourhood \(W\) must meet only those \(Y_i\) that contain \(\psi(x)\), not merely finitely many such \(Y_i\).

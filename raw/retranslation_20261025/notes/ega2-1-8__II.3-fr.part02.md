@@ -1,0 +1,6 @@
+- TRANSCRIPTION? 3.4.7 (Remarks), affine case: "$t_i$ soit la restriction à $p^{-1}(U)$ de $s_ig^n$" does not fit the following "$b_i=a_i(g|W)^{-n}$", which needs $g^nt_i=s_i|p^{-1}(U)$. Translated as written.
+- TRANSCRIPTION? 3.6.2, proof of (i): "on a $G(\varphi)=X$". Here $\varphi:\mathcal S\to\mathcal S'$, so by 3.5.1 $G(\varphi)$ is an open subset of $\operatorname{Proj}(\mathcal S')$, and one expects $G(\varphi)=\operatorname{Proj}(\mathcal S')$ (possibly already in the original). Translated as written.
+- TRANSCRIPTION? 3.6.4, proof: reference "(3.6.1, (i))". 3.6.1 has no item (i); the closed-immersion statement used is 3.6.2, (i). Reference kept.
+- TERM ensemble ouvert → open set (literal; "ouvert", "partie ouverte" → open subset as in the glossary).
+- TERM second membre → right-hand side (3.7.9 (ii)).
+- TERM (TN)-injectif / -surjectif / -bijectif → (TN)-injective / -surjective / -bijective.

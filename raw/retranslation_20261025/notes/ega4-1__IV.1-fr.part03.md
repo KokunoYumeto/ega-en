@@ -1,0 +1,11 @@
+- TRANSCRIPTION? 1.9.3 proof, a') ⇒ a'') — "$X'_\alpha$ est réunion d'ouverts affines $X''_{\alpha\lambda}$ ($\lambda\in L$)", whose sum is then called affine: this needs $L$ finite ($X'_\alpha$ is quasi-compact), so "finie" may be missing. Translated as written.
+- TRANSCRIPTION? after 1.9.3.1 — "théorème de Chevalley (1.8.5)": Chevalley's theorem is (1.8.4); (1.8.5) assumes a Noetherian base, and the proof of 1.9.5 (viii) cites (1.8.4). Reference kept.
+- TRANSCRIPTION? 1.9.5 (iv) — "(rep. ind-constructible)": typo for "resp."; rendered "resp.".
+- TRANSCRIPTION? 1.9.5 proof of (vii) — "puisque $g\circ f$ est quasi-compact": with $g:X''\to X'$, $f:X'\to X$ the composite is $f\circ g$. Math kept.
+- TRANSCRIPTION? 1.9.12 proof — "on est ramené au cas où $X$ est affine, en vertu de (1.9.5, (iv))": (1.9.5, (iv)) localizes on $Y$, where $E$ lies, so "$Y$" may be meant. Translated as written.
+- TRANSCRIPTION? 1.9.14 proof — "traduisent respectivement (1.9.5), (vi), (vii) et (viii)": presumably "(1.9.5, (vi), (vii) et (viii))". Parenthesization kept.
+- TRANSCRIPTION? 1.9.15 proof of (ii) — "voisinage ouvert affine $U$ de $X$ ne contenant pas $y$": a neighbourhood of the point $x$ is meant. Kept $X$.
+- TERM topologie constructible → constructible topology; ensemble pro-constructible / ind-constructible → pro-constructible / ind-constructible set.
+- TERM totalement discontinu → totally disconnected (ours usage); application propre / fermée / ouverte → proper / closed / open map.
+- TERM ouvert en un point → open at a point; intérieur à → interior to (ours usage).
+- TERM Bourbaki locator "chap. I\textsuperscript{er}, 3\textsuperscript{e} éd." kept in French per the glossary rule (ours elsewhere writes "3rd ed.").

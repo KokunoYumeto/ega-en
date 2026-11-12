@@ -1,0 +1,6 @@
+- TRANSCRIPTION? 8.2.6 — "En vertu de (8.1.3), on a $\alpha_X=h_{a_X}$": (8.1.3) only constructs $\alpha$, $\beta$; the bijectivity used is (8.1.4)/(8.1.6), and the parallel step in 8.2.4 cites (8.1.6). Possibly (8.1.6) intended. Kept as written.
+- TERM morphisme fonctoriel → functorial morphism (EGA's term; = natural transformation).
+- TERM loi de groupe → group law; élément neutre → neutral element; foncteur identique → identity functor.
+- TERM domaine d'opérateurs → domain of operators (Bourbaki); ensemble préordonné → preordered set; algèbres augmentées → augmented algebras; axiome de choix → axiom of choice.
+- TERM réduit à un (seul) élément → consisting of a single element (8.1.10); la prop. (8.1.4) → Proposition (8.1.4).
+- TERM Exemples. I : limites projectives / II : Objet final → Examples. I: projective limits / II: Final object.

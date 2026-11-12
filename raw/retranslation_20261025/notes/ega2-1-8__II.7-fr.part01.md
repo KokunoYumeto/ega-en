@@ -1,0 +1,10 @@
+- `TRANSCRIPTION?` proof of (7.1.4) — for condition (i), $A'$ is said to have "un corps des restes algébriquement clos extension de $k(x)$"; (i) needs $k(x)\to k(b)$, i.e. the field of fractions of $A'$ (not its residue field) to extend $k(x)$, which is what (7.1.2) gives. A phrase may be missing, or the slip is in the original. Translated as written.
+- `TRANSCRIPTION?` (7.3.9, (ii)) — "en multipliant les $c_i$ par un élément de $A$ de valuation convenable": making one $c_i$ invertible may need an element of $K$ of negative valuation (e.g. $c_j^{-1}$ with $v(c_j)$ minimal); $K$ expected. Possibly already in the original. Translated as written.
+- `TRANSCRIPTION?` (7.3.12) — citation typed as plain `([13], t.~I, p.~267, th.~9)`, whereas the rest of the chunk uses `\cite[...]{I-13}` for the same work; kept as transcribed.
+- `TERM` corps des restes → residue field (same as corps résiduel).
+- `TERM` extension transcendante pure → purely transcendental extension; polynôme unitaire → monic polynomial (7.1.2).
+- `TERM` th. de Krull-Akizuki → the Krull--Akizuki theorem (en dash, two people) (7.1.7).
+- `TERM` idéal premier de rang $1$ → prime ideal of rank $1$ (EGA's "rang" kept) (7.1.7).
+- `TERM` relation de domination → relation of domination (7.1.1); la donnée de → the datum of (7.3.9, (iii)).
+- `TERM` ce paragraphe → this section (introduction of §7).
+- `TERM` inside `\cite[...]` options: lemme → lemma, et → and (as in other chunks); t., p., th. kept.

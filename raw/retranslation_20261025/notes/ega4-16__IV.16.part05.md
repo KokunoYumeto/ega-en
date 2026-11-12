@@ -1,0 +1,13 @@
+- TRANSCRIPTION? 16.9.3 — the statement indexes the sequence as $(f_i)_{1\leq i\leq m}$, but the last assertion ("$(f'_i)_{1\leq i\leq n}$ de $n$ sections") and the proof ("une base de $n$ éléments") use $n$; $m$ is presumably $n$.
+- TRANSCRIPTION? 16.11.3 (i) — "ne permutant aux produits par les sections de $\mathcal{O}_U$ que si $n=0$": no $n$ occurs in this context; presumably $\mathbf{p}=0$.
+- TERM régulièrement (quasi-régulièrement) immergé → regularly (quasi-regularly) immersed
+- TERM système régulier (quasi-régulier) de générateurs → regular (quasi-regular) system of generators
+- TERM anneau de Dedekind → Dedekind ring
+- TERM diviseur de $0$ → divisor of $0$ (kept with the math $0$; standard "zero divisor")
+- TERM localement projectif → locally projective
+- TERM indice de Kronecker → Kronecker delta
+- TERM formes coordonnées → coordinate forms
+- TERM il faut et il suffit que → it is necessary and sufficient that
+- TERM $\mathfrak{I}$-pré-adique (16.9.9, hyphenated in the French) → $\mathfrak{I}$-preadic (glossary form)
+- TERM l'identité des suites quasi-régulières et des suites régulières → the coincidence of quasi-regular and regular sequences
+- TERM 3\textsuperscript{e} éd. (inside a Bourbaki citation) → kept as is (French abbreviation, glossary Bourbaki rule)

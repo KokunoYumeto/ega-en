@@ -1,0 +1,8 @@
+- `TRANSCRIPTION?` 3.3.2, last sentence — "$M_n\otimes_A S_{(f)}\to(S(n))_{(f)}$": this is the restriction of (3.3.2.4) $p^*(\mathcal{M}_n)\to\widetilde{\mathcal{M}}(n)$ and sends $x\otimes1$ ($x\in M_n$) to $x/1$, so the target should be $(M(n))_{(f)}$; translated as written.
+- `TERM` numéro ("dans tout ce numéro", "du début de ce numéro") → subsection.
+- `TERM` opérations de restriction → restriction operations (cf. "opérateurs de restriction" → restriction operators in II.2 part03).
+- `TERM` premier membre / second membre; les deux membres → left-hand side / right-hand side; the two sides.
+- `TERM` admettre une présentation finie → admit a finite presentation; conoyau → cokernel.
+- `TERM` annulateur → annihilator; isomorphismes identiques → identity isomorphisms.
+- `TERM` principe de recollement des faisceaux → principle of gluing sheaves.
+- `TERM` à partir d'un certain rang → from some index on.

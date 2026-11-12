@@ -1,0 +1,1014 @@
+```json
+[
+  {
+    "id": 12452,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "\\operatorname{Ass}(\\sh{F}\\otimes_S\\sh{G})=\\bigcup_{x\\in\\operatorname{Ass}(\\sh{F})}\\bigg(\\bigcup_{y\\in\\operatorname{Ass}(\\sh{G}_{f(x)})}\\mathrm{I}_{x,y}\\bigg)\n\\tag{3.3.6.1}"
+  },
+  {
+    "id": 12453,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "where for all $s\\in S$, $\\sh{G}_s=\\sh{G}\\otimes_{\\sh{O}_S}\\boldsymbol{k}(s)$.",
+    "note": "Already italic inside the proposition."
+  },
+  {
+    "id": 12467,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "where $C$ is the set of pairs $(x,y)$ such that $x\\in\\operatorname{Ass}(\\sh{F})$, $y\\in\\operatorname{Ass}(\\sh{G})$ and $f(x)=g(y)$.",
+    "note": "Already italic inside the corollary."
+  },
+  {
+    "id": 12468,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 12472,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "(where $q:X\\times_S Y\\to Y$ is the canonical projection).",
+    "note": "Already italic inside the corollary."
+  },
+  {
+    "id": 12473,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12475,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "\\item[\\emph{(ii)}] If $Z$ is not equal to any of the $S_i$, then",
+    "note": "The label is upright through emphasis inside the italic proposition."
+  },
+  {
+    "id": 12476,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "where the sum on the right-hand side is extended to all $i$ such that $Z\\subset S_i$.",
+    "note": "Already italic inside the proposition."
+  },
+  {
+    "id": 12477,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "Suppose that $Z$ is not equal to any of the $S_i$.\n  For the two sides of \\sref{IV.3.4.1.1} to be equal, it is necessary and sufficient that the following two conditions be satisfied:",
+    "note": "Already italic inside the proposition; the reference is upright."
+  },
+  {
+    "id": 12478,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "$t_z$ is $\\sh{F}_z$-regular \\sref[0]{0.15.1.4}.",
+    "note": "Already italic inside the proposition."
+  },
+  {
+    "id": 12480,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "For every $i$ such that $Z\\subset S_i$, the canonical image of the germ $t_z$ in $\\sh{O}_{S_i,z}$ generates the maximal ideal of this ring",
+    "note": "Already italic inside the proposition."
+  },
+  {
+    "id": 12481,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "$\\sh{O}_{S_i,z}$ is a discrete valuation ring and that the image of $t_z$",
+    "en_new": "$\\sh{O}_{S_i,z}$ is a \\emph{discrete valuation ring} and that the image of $t_z$"
+  },
+  {
+    "id": 12482,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "the image of $t_z$ is a uniformizer of this ring",
+    "en_new": "the image of $t_z$ is a \\emph{uniformizer} of this ring"
+  },
+  {
+    "id": 12486,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "where $A$ is a Noetherian local ring and $M$ is a faithful $A$-module.",
+    "en_new": "where $A$ is a Noetherian local ring and $M$ is a \\emph{faithful} $A$-module."
+  },
+  {
+    "id": 12487,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "(in other words, that it is a local Artinian ring)",
+    "en_new": "(in other words, that it is a local \\emph{Artinian} ring)"
+  },
+  {
+    "id": 12488,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "Moreover, equality holds if and only if the following two conditions are satisfied:",
+    "note": "Already italic inside the lemma."
+  },
+  {
+    "id": 12474,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "\\item[\\emph{(i)}] For every $i$ such that $Z\\subset S_i$, $Z$ is an irreducible component of $S_i\\cap Y$.",
+    "note": "The label is upright through emphasis inside the italic proposition."
+  },
+  {
+    "id": 12489,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "\\item[\\emph{$\\alpha$)}] $t$ is $M$-regular;",
+    "note": "Already italic inside the lemma."
+  },
+  {
+    "id": 12490,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "for every $i$ such that $M_{\\mathfrak p_i}\\neq 0$, the image of $t$ in $A/\\mathfrak p_i$ generates the maximal ideal of that ring",
+    "note": "Already italic inside the lemma."
+  },
+  {
+    "id": 12491,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "(which implies that $A/\\mathfrak p_i$ is a discrete valuation ring)",
+    "en_new": "(which implies that $A/\\mathfrak p_i$ is a \\emph{discrete valuation ring})"
+  },
+  {
+    "id": 12493,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "Then $t$ is $P$-regular: if $tx\\in N$",
+    "en_new": "Then $t$ is $P$-\\emph{regular}: if $tx\\in N$"
+  },
+  {
+    "id": 12494,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "We may therefore reduce to the case $M=P$, that is, suppose from the outset that $t$ is $M$-regular.",
+    "en_new": "We may therefore reduce to the case $M=P$, that is, suppose from the outset that $t$ is $M$-\\emph{regular}."
+  },
+  {
+    "id": 12496,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "allows us, moreover, to suppose that $M$ is faithful.",
+    "en_new": "allows us, moreover, to suppose that $M$ is \\emph{faithful}."
+  },
+  {
+    "id": 12497,
+    "decision": "not_applicable",
+    "note": "French prose punctuation; English uses a sentence break."
+  },
+  {
+    "id": 12500,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "then $M$ is cyclic (Bourbaki,",
+    "en_new": "then $M$ is \\emph{cyclic} (Bourbaki,"
+  },
+  {
+    "id": 12501,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "For the same reason, $t$ is both $M'$-regular and $M''$-regular.",
+    "en_new": "For the same reason, $t$ is both $M'$-\\emph{regular} and $M''$-\\emph{regular}."
+  },
+  {
+    "id": 12502,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "For the same reason, $t$ is both $M'$-regular and $M''$-regular.",
+    "note": "covered by 12501"
+  },
+  {
+    "id": 12504,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 12509,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "By the definitions of $x$ and $x_1$, the rings $A/tA$ and $A_1/tA_1$ are Artinian.",
+    "en_new": "By the definitions of $x$ and $x_1$, the rings $A/tA$ and $A_1/tA_1$ are \\emph{Artinian}."
+  },
+  {
+    "id": 12252,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "that $y$ is contained in a \\emph{unique} irreducible component",
+    "en_new": "that $y$ is contained in \\emph{a unique} irreducible component"
+  },
+  {
+    "id": 12256,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 12271,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "We claim that it is bijective.",
+    "en_new": "We claim that it is \\emph{bijective}."
+  },
+  {
+    "id": 12272,
+    "decision": "apply",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "the support of $N'$, which is the intersection of $\\operatorname{Supp}(M')$ with $V(x)$",
+    "en_new": "the support of $N'$, which is the intersection of $\\operatorname{Supp}(M)$ with $V(x)$"
+  },
+  {
+    "id": 12276,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12279,
+    "decision": "already",
+    "en_file": "components/01_section41_dimension_of_algebraic_preschemes.tex",
+    "en_old": "\\dim(X)=\\sup_x\\operatorname{tr.deg}_k\\boldsymbol{k}(x),",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12316,
+    "decision": "not_applicable",
+    "note": "French prose punctuation."
+  },
+  {
+    "id": 12319,
+    "decision": "already",
+    "en_file": "components/01_section41_dimension_of_algebraic_preschemes.tex",
+    "en_old": "\\operatorname{tr.deg}_k\\boldsymbol{k}(x)=m=\\dim(U),",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12321,
+    "decision": "already",
+    "en_file": "components/01_section41_dimension_of_algebraic_preschemes.tex",
+    "en_old": "\\operatorname{tr.deg}_k\\boldsymbol{k}(y)=n=\\dim(V).",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12325,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12326,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\operatorname{tr.deg}_K E=\\operatorname{tr.deg}_k L,\n\\qquad\n\\operatorname{tr.deg}_L E=\\operatorname{tr.deg}_k K,",
+    "note": "The English operators have no trailing full stops."
+  },
+  {
+    "id": 12328,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\operatorname{tr.deg}_k E\n=\\operatorname{tr.deg}_k K+\\operatorname{tr.deg}_k L.",
+    "note": "The English operators have no trailing full stops."
+  },
+  {
+    "id": 12797,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\operatorname{tr.deg}_L E\n=\\operatorname{tr.deg}_L L(\\mathbf t)",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12798,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "=\\operatorname{tr.deg}_L L(\\mathbf t)\n=\\operatorname{Card}(I)",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12799,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "=\\operatorname{Card}(I)\n=\\operatorname{tr.deg}_k K.",
+    "note": "The English operator has no trailing full stop."
+  },
+  {
+    "id": 12802,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "and if $\\sh F$ and the $\\sh G_s$ $(s\\in S)$",
+    "en_new": "and if $\\sh F$ and the $\\sh G_s$ \\textup{(}$s\\in S$\\textup{)}"
+  },
+  {
+    "id": 12803,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "(respectively $\\sh F$ and $\\sh G$) have no embedded associated prime",
+    "en_new": "\\textup{(respectively} $\\sh F$ and $\\sh G$\\textup{)} have no embedded associated prime"
+  },
+  {
+    "id": 12804,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "since every prescheme over a field $k$ is \\emph{flat} over $k$,"
+  },
+  {
+    "id": 12806,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.4.ii}",
+    "en_new": "\\item[\\textup{(ii)}]\n\\phantomsection\n\\label{IV.4.2.4.ii}"
+  },
+  {
+    "id": 12807,
+    "decision": "not_applicable",
+    "note": "English uses an unparenthesized alternative, so there are no corresponding parentheses to set upright."
+  },
+  {
+    "id": 12805,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.4.i}",
+    "en_new": "\\item[\\textup{(i)}]\n\\phantomsection\n\\label{IV.4.2.4.i}"
+  },
+  {
+    "id": 12808,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.4.iii}",
+    "en_new": "\\item[\\textup{(iii)}]\n\\phantomsection\n\\label{IV.4.2.4.iii}"
+  },
+  {
+    "id": 12812,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "Let $k$ be a field, let $X$ and $Y$ be locally Noetherian\n$k$-preschemes, and let $\\sh F$ (respectively $\\sh G$) be a\nquasi-coherent $\\sh O_X$-Module (respectively $\\sh O_Y$-Module).",
+    "en_new": "Let $k$ be a field, let $X$ and $Y$ be locally Noetherian\n$k$-preschemes, and let $\\sh F$ \\textup{(respectively $\\sh G$)} be a\nquasi-coherent $\\sh O_X$-Module \\textup{(respectively} $\\sh O_Y$-Module\\textup{)}."
+  },
+  {
+    "id": 12826,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.7.ii}",
+    "en_new": "\\item[\\textup{(ii)}]\n\\phantomsection\n\\label{IV.4.2.7.ii}"
+  },
+  {
+    "id": 12811,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "$k$-preschemes, and let $\\sh F$ (respectively $\\sh G$) be a",
+    "note": "covered by 12812"
+  },
+  {
+    "id": 12813,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "Let $(Z'_\\lambda)$ (respectively $(Z''_\\mu)$) be the family of prime\ncycles associated with $\\sh F$ (respectively $\\sh G$), and denote again\nby $Z'_\\lambda$ (respectively $Z''_\\mu$) the reduced sub-prescheme of\n$X$ (respectively $Y$) having $Z'_\\lambda$ (respectively $Z''_\\mu$) as\nits underlying space.",
+    "en_new": "Let $(Z'_\\lambda)$ \\textup{(respectively $(Z''_\\mu)$)} be the family of prime\ncycles associated with $\\sh F$ \\textup{(respectively $\\sh G$)}, and denote again\nby $Z'_\\lambda$ \\textup{(respectively $Z''_\\mu$)} the reduced sub-prescheme of\n$X$ \\textup{(respectively $Y$)} having $Z'_\\lambda$ \\textup{(respectively $Z''_\\mu$)} as\nits underlying space."
+  },
+  {
+    "id": 12814,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "cycles associated with $\\sh F$ (respectively $\\sh G$), and denote again",
+    "note": "covered by 12813"
+  },
+  {
+    "id": 12815,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "by $Z'_\\lambda$ (respectively $Z''_\\mu$) the reduced sub-prescheme of",
+    "note": "covered by 12813"
+  },
+  {
+    "id": 12816,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "$X$ (respectively $Y$) having $Z'_\\lambda$ (respectively $Z''_\\mu$) as",
+    "note": "covered by 12813"
+  },
+  {
+    "id": 12817,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "having $Z'_\\lambda$ (respectively $Z''_\\mu$) as\nits underlying space.",
+    "note": "covered by 12813"
+  },
+  {
+    "id": 12820,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "Let $(Z'_\\lambda)$ (respectively $(Z''_\\mu)$) be the family of reduced\nsub-preschemes of $X$ (respectively $Y$) whose underlying spaces are\nthe irreducible components of $X$ (respectively $Y$).",
+    "en_new": "Let $(Z'_\\lambda)$ \\textup{(respectively $(Z''_\\mu)$)} be the family of reduced\nsub-preschemes of $X$ \\textup{(respectively $Y$)} whose underlying spaces are\nthe irreducible components of $X$ \\textup{(respectively $Y$)}."
+  },
+  {
+    "id": 12821,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "sub-preschemes of $X$ (respectively $Y$) whose underlying spaces are",
+    "note": "covered by 12820"
+  },
+  {
+    "id": 12822,
+    "decision": "already",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "the irreducible components of $X$ (respectively $Y$).",
+    "note": "covered by 12820"
+  },
+  {
+    "id": 12825,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.7.i}",
+    "en_new": "\\item[\\textup{(i)}]\n\\phantomsection\n\\label{IV.4.2.7.i}"
+  },
+  {
+    "id": 12827,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.7.iii}",
+    "en_new": "\\item[\\textup{(iii)}]\n\\phantomsection\n\\label{IV.4.2.7.iii}"
+  },
+  {
+    "id": 12828,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "\\item\n\\phantomsection\n\\label{IV.4.2.7.iv}",
+    "en_new": "\\item[\\textup{(iv)}]\n\\phantomsection\n\\label{IV.4.2.7.iv}"
+  },
+  {
+    "id": 12831,
+    "decision": "not_applicable",
+    "note": "English uses commas rather than the French parentheses."
+  },
+  {
+    "id": 12834,
+    "decision": "apply",
+    "en_file": "components/02_section42_associated_prime_cycles.tex",
+    "en_old": "and $\\sh F$ and $\\sh G$ are flat over $k$.",
+    "en_new": "and $\\sh F$ and $\\sh G$ are \\emph{flat} over $k$."
+  },
+  {
+    "id": 12836,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12838,
+    "decision": "apply",
+    "en_file": "components/03_section43_tensor_products_of_fields.tex",
+    "en_old": "If $k$ is separably closed (that is, if its algebraic closure is\nradicial over $k$),",
+    "en_new": "If $k$ is separably closed \\textup{(that is,} if its algebraic closure is\nradicial over $k$\\textup{)},"
+  },
+  {
+    "id": 12839,
+    "decision": "apply",
+    "en_file": "components/03_section43_tensor_products_of_fields.tex",
+    "en_old": "(sometimes called\nthe \\emph{separable algebraic closure} of $k$ in $L$)",
+    "en_new": "\\textup{(sometimes called\nthe \\emph{separable algebraic closure} of $k$ in $L$)}"
+  },
+  {
+    "id": 12840,
+    "decision": "not_applicable",
+    "note": "French prose punctuation; English uses a sentence break."
+  },
+  {
+    "id": 12841,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12842,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "This is the case when $X$ is of finite type over $k$, since then",
+    "en_new": "This is the case when $X$ is \\emph{of finite type} over $k$, since then"
+  },
+  {
+    "id": 12845,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "$f$ is open and surjective (resp.\\ the topological space $X$ is\ncanonically identified with the quotient of $X'$ by the equivalence\nrelation defined by $f$);",
+    "en_new": "$f$ is open and surjective \\textup{(resp.\\ }the topological space $X$ is\ncanonically identified with the quotient of $X'$ by the equivalence\nrelation defined by $f$\\textup{)};"
+  },
+  {
+    "id": 12846,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "relation defined by $f$);",
+    "note": "covered by 12845"
+  },
+  {
+    "id": 12844,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.4.2.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12589,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.4.2.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12590,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "for every $x\\in X$, the fibre $f^{-1}(x)$ is irreducible\n(resp.\\ connected).",
+    "en_new": "for every $x\\in X$, the fibre $f^{-1}(x)$ is irreducible\n\\textup{(resp.\\ }connected\\textup{)}."
+  },
+  {
+    "id": 12591,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "Then $X'$ is irreducible (resp.\\ connected) if and only if $X$ is.",
+    "en_new": "Then $X'$ is irreducible \\textup{(resp.\\ }connected\\textup{)} if and only if $X$ is."
+  },
+  {
+    "id": 12599,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "If $X$ is irreducible (resp.\\ connected), then $X\\otimes_k K$ is\nirreducible (resp.\\ connected) for every extension $K$ of $k$.",
+    "en_new": "If $X$ is irreducible \\textup{(resp.\\ }connected\\textup{)}, then $X\\otimes_k K$ is\nirreducible \\textup{(resp.\\ }connected\\textup{)} for every extension $K$ of $k$."
+  },
+  {
+    "id": 12603,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "If $Z$ is an irreducible (resp.\\ connected) subset of $X$, then\n$p^{-1}(Z)$ is irreducible (resp.\\ connected).\nIn particular, if $X_0$ is an irreducible component\n(resp.\\ the connected component) of $X$ containing $Z$, then\n$p^{-1}(X_0)$ is an irreducible (resp.\\ connected) component of\n$X\\otimes_k K$ containing $p^{-1}(Z)$.",
+    "en_new": "If $Z$ is an irreducible \\textup{(resp.\\ }connected\\textup{)} subset of $X$, then\n$p^{-1}(Z)$ is irreducible \\textup{(resp.\\ }connected\\textup{)}.\nIn particular, if $X_0$ is an irreducible component\n\\textup{(resp.\\ }the connected component\\textup{)} of $X$ containing $Z$, then\n$p^{-1}(X_0)$ is an irreducible \\textup{(resp.\\ }connected\\textup{)} component of\n$X\\otimes_k K$ containing $p^{-1}(Z)$."
+  },
+  {
+    "id": 12604,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "$p^{-1}(Z)$ is irreducible (resp.\\ connected).",
+    "note": "covered by 12603"
+  },
+  {
+    "id": 12605,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "(resp.\\ the connected component) of $X$ containing $Z$, then",
+    "note": "covered by 12603"
+  },
+  {
+    "id": 12606,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "$p^{-1}(X_0)$ is an irreducible (resp.\\ connected) component of\n$X\\otimes_k K$ containing $p^{-1}(Z)$.",
+    "note": "covered by 12603"
+  },
+  {
+    "id": 12611,
+    "decision": "apply",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "is a bijection from the set of irreducible (resp.\\ connected)\ncomponents of $X$ to the set of irreducible (resp.\\ connected)\ncomponents of $X\\otimes_k K$.",
+    "en_new": "is a bijection from the set of irreducible \\textup{(resp.\\ }connected\\textup{)}\ncomponents of $X$ to the set of irreducible \\textup{(resp.\\ }connected\\textup{)}\ncomponents of $X\\otimes_k K$."
+  },
+  {
+    "id": 12612,
+    "decision": "already",
+    "en_file": "components/04_section44_irreducible_connected_over_algebraically_closed.tex",
+    "en_old": "components of $X$ to the set of irreducible (resp.\\ connected)\ncomponents of $X\\otimes_k K$.",
+    "note": "covered by 12611"
+  },
+  {
+    "id": 12614,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12615,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Let $n$ (resp.\\ $n'$) be the cardinality of the set of irreducible\ncomponents (resp.\\ connected components) of $X\\otimes_k\\Omega$.",
+    "en_new": "Let $n$ \\textup{(resp.\\ }$n'$\\textup{)} be the cardinality of the set of irreducible\ncomponents \\textup{(resp.\\ }connected components\\textup{)} of $X\\otimes_k\\Omega$."
+  },
+  {
+    "id": 12616,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "components (resp.\\ connected components) of $X\\otimes_k\\Omega$.",
+    "note": "covered by 12615"
+  },
+  {
+    "id": 12617,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Moreover, for every extension $K$ of $k$, the cardinality of the set of\nirreducible components (resp.\\ connected components) of $X\\otimes_k K$\nis at most $n$ (resp.\\ at most $n'$).",
+    "en_new": "Moreover, for every extension $K$ of $k$, the cardinality of the set of\nirreducible components \\textup{(resp.\\ }connected components\\textup{)} of $X\\otimes_k K$\nis at most $n$ \\textup{(resp.\\ }at most $n'$\\textup{)}."
+  },
+  {
+    "id": 12618,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "is at most $n$ (resp.\\ at most $n'$).",
+    "note": "covered by 12617"
+  },
+  {
+    "id": 12619,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "The cardinality $n$ (resp.\\ $n'$) of \\sref{IV.4.5.1} is called the",
+    "note": "The parenthesis is upright in the definition."
+  },
+  {
+    "id": 12621,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\emph{geometric number of irreducible components}\n(resp.\\ \\emph{of connected components}) of $X$ relative to $k$.",
+    "en_new": "geometric number of irreducible components\n(resp.\\ of connected components) of $X$ relative to $k$."
+  },
+  {
+    "id": 12622,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "(resp.\\ \\emph{of connected components}) of $X$ relative to $k$.",
+    "note": "covered by 12621"
+  },
+  {
+    "id": 12623,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If $n=1$ (resp.\\ $n'\\leq 1$), the $k$-prescheme $X$ is said to be",
+    "note": "The parenthesis is upright in the definition."
+  },
+  {
+    "id": 12624,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\emph{geometrically irreducible} (resp.\\ \\emph{geometrically\nconnected}).",
+    "en_new": "geometrically irreducible (resp.\\ geometrically\nconnected)."
+  },
+  {
+    "id": 12625,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "(resp.\\ \\emph{geometrically\nconnected}).",
+    "note": "covered by 12624"
+  },
+  {
+    "id": 12629,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If $X$ is geometrically irreducible (resp.\\ geometrically connected),\nthen so is $Y$.",
+    "en_new": "If $X$ is geometrically irreducible \\textup{(resp.\\ }geometrically connected\\textup{)},\nthen so is $Y$."
+  },
+  {
+    "id": 12631,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\emph{irreducible} (resp.\\ \\emph{connected}) if, for every $y\\in Y$,",
+    "en_new": "irreducible (resp.\\ connected) if, for every $y\\in Y$,"
+  },
+  {
+    "id": 12632,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\emph{irreducible} (resp.\\ \\emph{connected}) if, for every $y\\in Y$,",
+    "note": "covered by 12631"
+  },
+  {
+    "id": 12634,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "the $\\boldsymbol{k}(y)$-prescheme $f^{-1}(y)$ is geometrically irreducible\n(resp.\\ geometrically connected).",
+    "note": "The parenthesis is upright in the definition."
+  },
+  {
+    "id": 12636,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "The geometric number of irreducible components (resp.\\ connected\ncomponents) of the $K$-prescheme $X\\otimes_k K$, relative to $K$, is\nequal to the geometric number of irreducible components\n(resp.\\ connected components) of $X$, relative to $k$.",
+    "en_new": "The geometric number of irreducible components \\textup{(resp.\\ }connected\ncomponents\\textup{)} of the $K$-prescheme $X\\otimes_k K$, relative to $K$, is\nequal to the geometric number of irreducible components\n\\textup{(resp.\\ }connected components\\textup{)} of $X$, relative to $k$."
+  },
+  {
+    "id": 12637,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "(resp.\\ connected components) of $X$, relative to $k$.",
+    "note": "covered by 12636"
+  },
+  {
+    "id": 12638,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "In particular, $X\\otimes_k K$ is geometrically irreducible\n(resp.\\ geometrically connected) as a $K$-prescheme if and only if",
+    "en_new": "In particular, $X\\otimes_k K$ is geometrically irreducible\n\\textup{(resp.\\ }geometrically connected\\textup{)} as a $K$-prescheme if and only if"
+  },
+  {
+    "id": 12639,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.5.6.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12640,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If $f$ is irreducible (resp.\\ connected), then so is $f'$.",
+    "en_new": "If $f$ is irreducible \\textup{(resp.\\ }connected\\textup{)}, then so is $f'$."
+  },
+  {
+    "id": 12646,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Let $f:X\\to Y$ be a surjective irreducible (resp.\\ connected)\nmorphism, let $g:Y'\\to Y$ be a morphism, and put\n$X'=X\\times_Y Y'$.\nSuppose in addition that $Y'$ is irreducible (resp.\\ connected), and\nthat $f$ is universally open (resp.\\ flat and quasi-compact, or\nuniversally open, or universally closed).\nThen $X'$ is irreducible (resp.\\ connected).",
+    "en_new": "Let $f:X\\to Y$ be a surjective irreducible \\textup{(resp.\\ }connected\\textup{)}\nmorphism, let $g:Y'\\to Y$ be a morphism, and put\n$X'=X\\times_Y Y'$.\nSuppose in addition that $Y'$ is irreducible \\textup{(resp.\\ }connected\\textup{)}, and\nthat $f$ is universally open \\textup{(resp.\\ }flat and quasi-compact, or\nuniversally open, or universally closed\\textup{)}.\nThen $X'$ is irreducible \\textup{(resp.\\ }connected\\textup{)}."
+  },
+  {
+    "id": 12647,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Suppose in addition that $Y'$ is irreducible (resp.\\ connected), and",
+    "note": "covered by 12646"
+  },
+  {
+    "id": 12648,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "that $f$ is universally open (resp.\\ flat and quasi-compact, or\nuniversally open, or universally closed).",
+    "note": "covered by 12646"
+  },
+  {
+    "id": 12649,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Then $X'$ is irreducible (resp.\\ connected).",
+    "note": "covered by 12646"
+  },
+  {
+    "id": 12651,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If $X$ is geometrically irreducible (resp.\\ geometrically connected)\nand $Y$ is irreducible (resp.\\ connected), then $X\\times_k Y$ is\nirreducible (resp.\\ connected).",
+    "en_new": "If $X$ is geometrically irreducible \\textup{(resp.\\ }geometrically connected\\textup{)}\nand $Y$ is irreducible \\textup{(resp.\\ }connected\\textup{)}, then $X\\times_k Y$ is\nirreducible \\textup{(resp.\\ }connected\\textup{)}."
+  },
+  {
+    "id": 12652,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "and $Y$ is irreducible (resp.\\ connected), then $X\\times_k Y$ is",
+    "note": "covered by 12651"
+  },
+  {
+    "id": 12653,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "then $X\\times_k Y$ is\nirreducible (resp.\\ connected).",
+    "note": "covered by 12651"
+  },
+  {
+    "id": 12654,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.5.8.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12655,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If $X$ and $Y$ are geometrically irreducible\n(resp.\\ geometrically connected), then so is $X\\times_k Y$.",
+    "en_new": "If $X$ and $Y$ are geometrically irreducible\n\\textup{(resp.\\ }geometrically connected\\textup{)}, then so is $X\\times_k Y$."
+  },
+  {
+    "id": 12660,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "$X$ is geometrically irreducible; in other words,\n$X\\otimes_k K$ is irreducible for every extension $K$ of $k$;",
+    "en_new": "$X$ is geometrically irreducible; in other words,\n$X\\otimes_k K$ is irreducible for \\emph{every} extension $K$ of $k$;",
+    "note": "English has no corresponding parenthesis; restore the emphasis on “every”."
+  },
+  {
+    "id": 12635,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.5.6.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12650,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.5.8.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12669,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "shows that $X\\otimes_k K$ is irreducible for every\nextension $K$ of $k$.",
+    "en_new": "shows that $X\\otimes_k K$ is irreducible for \\emph{every}\nextension $K$ of $k$."
+  },
+  {
+    "id": 12675,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Notice that \\sref{IV.4.5.11} applies in particular to every\n$k$-prescheme $X$ of finite type over $k$.",
+    "en_new": "Notice that \\sref{IV.4.5.11} applies in particular to every\n$k$-prescheme $X$ \\emph{of finite type over $k$}."
+  },
+  {
+    "id": 12679,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Weil says ``\\emph{absolutely irreducible}'',"
+  },
+  {
+    "id": 12680,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "``\\emph{absolutely connected}'',"
+  },
+  {
+    "id": 12681,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "``\\emph{absolutely normal}'', and so on,"
+  },
+  {
+    "id": 12682,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "an ``algebraic variety'' $V$ is given \\emph{first} as a geometric object over"
+  },
+  {
+    "id": 12685,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "an \\emph{algebraically closed} field $\\Omega$; the datum of a smaller"
+  },
+  {
+    "id": 12693,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.5.13.1.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12692,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.5.13.1.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12516,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\textup{(in particular, if $x$ is a \\emph{rational point} of $X$)}"
+  },
+  {
+    "id": 12520,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.5.15.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12521,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Condition (ii) is satisfied in particular when $X$ is locally of\nfinite type over $k$.",
+    "en_new": "Condition (ii) is satisfied in particular when $X$ is \\emph{locally of\nfinite type over} $k$."
+  },
+  {
+    "id": 12528,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(ii)]\n\\phantomsection\n\\label{IV.4.5.16.ii}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12519,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.5.15.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12527,
+    "decision": "already",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "\\item[\\rm(i)]\n\\phantomsection\n\\label{IV.4.5.16.i}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12531,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "Suppose that $Z'=p^{-1}(Z)$ is contained in a single irreducible",
+    "en_new": "Suppose that $Z'=p^{-1}(Z)$ is contained in \\textup{a single} irreducible"
+  },
+  {
+    "id": 12532,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "If, in addition, $X'_0$ is the only irreducible component of $X'$\nwhich meets $Z'$,",
+    "en_new": "If, in addition, $X'_0$ is the only irreducible component of $X'$\nwhich \\textup{meets} $Z'$,"
+  },
+  {
+    "id": 12542,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "In particular, the irreducible components (resp.\\ connected\ncomponents) of $X$ are geometrically irreducible",
+    "en_new": "In particular, the irreducible components \\textup{(resp.\\ }connected\ncomponents\\textup{)} of $X$ are geometrically irreducible"
+  },
+  {
+    "id": 12543,
+    "decision": "apply",
+    "en_file": "components/05_section45_geometric_irreducibility_connectedness.tex",
+    "en_old": "(resp.\\ geometrically connected).\n\\end{proposition}",
+    "en_new": "\\textup{(resp.\\ }geometrically connected\\textup{)}.\n\\end{proposition}"
+  },
+  {
+    "id": 12544,
+    "decision": "not_applicable",
+    "note": "Heading punctuation; English headings omit the final full stop."
+  },
+  {
+    "id": 12545,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\item[\\rm(a)]\n\\phantomsection\n\\label{IV.4.6.1.a}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12546,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\item[\\rm(b)]\n\\phantomsection\n\\label{IV.4.6.1.b}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12547,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\item[\\rm(c)]\n\\phantomsection\n\\label{IV.4.6.1.c}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12548,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\item[\\rm(d)]\n\\phantomsection\n\\label{IV.4.6.1.d}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12549,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\item[\\rm(e)]\n\\phantomsection\n\\label{IV.4.6.1.e}",
+    "note": "The label is explicitly upright."
+  },
+  {
+    "id": 12552,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "The implications \\emph{(a)}$\\Rightarrow$\\emph{(b)}\n$\\Rightarrow$\\emph{(c)} are immediate."
+  },
+  {
+    "id": 12553,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "\\sref{IV.4.4.1} shows that \\emph{(c)} implies \\emph{(d)}."
+  },
+  {
+    "id": 12554,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "Thus \\emph{(d)} implies \\emph{(e)}."
+  },
+  {
+    "id": 12560,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "Thus \\emph{(e)} implies \\emph{(a)}."
+  },
+  {
+    "id": 12566,
+    "decision": "apply",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "If the equivalent conditions \\emph{(a)}--\\emph{(e)} of\n\\sref{IV.4.6.1} hold,",
+    "en_new": "If the equivalent conditions \\textup{(a)}--\\textup{(e)} of\n\\sref{IV.4.6.1} hold,"
+  },
+  {
+    "id": 12567,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "(or \\emph{geometrically reduced}, or \\emph{universally reduced}) over\n$k$.",
+    "note": "“over” is already upright."
+  },
+  {
+    "id": 12568,
+    "decision": "apply",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "A $k$-prescheme $X$ is said to be \\emph{geometrically integral} over\n$k$ if,",
+    "en_new": "A $k$-prescheme $X$ is said to be \\emph{geometrically integral over}\n$k$ if,"
+  }
+]
+```
+ega4-3.source_aligned_r1.tex, IV-2 p. 51: “the unique point $\mathfrak q$ of $\operatorname{Ass}(N)=\operatorname{Supp}(N)$” incorrectly equates the associated-point set with the support; $\mathfrak q$ is the unique associated point and the generic point of the support.

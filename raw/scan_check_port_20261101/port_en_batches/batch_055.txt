@@ -1,0 +1,3418 @@
+# English hand pass, batch_055: 154 items on 9 printed pages
+
+=================== PAGE IV-3 129 ===================
+----- English, source_aligned/ega4-11.tex, page IV-3 128 -----
+\oldpage[IV-3]{128}
+
+\begin{proof}
+The condition is evidently necessary; let us prove that it is
+sufficient. Since $\mathrm{B}_0$ (and hence $\mathrm{B}$) is an
+$\mathrm{A}_{\mathfrak{q}}$-algebra, we may replace $\mathrm{A}$ by
+$\mathrm{A}_{\mathfrak{q}}$; in other words, we may suppose that
+$\mathrm{A}$ is also a local ring with maximal ideal
+$\mathfrak{q}$. By hypothesis, there is an integer $\mathrm{N}$ such
+that the canonical homomorphism
+\[
+ \left(\bigoplus_{-\mathrm{N}\leqslant i\leqslant\mathrm{N}}
+   \mathrm{M}_i\otimes_{\mathrm{B}_0}\mathrm{B}\right)
+   \otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+ \longrightarrow
+ \mathrm{M}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+\]
+is surjective. This also means that, for every integer $n$, the
+canonical homomorphism of $\boldsymbol{k}(\mathfrak{q})$-modules
+\[
+ \left(\bigoplus_{-\mathrm{N}\leqslant i\leqslant\mathrm{N}}
+   \mathrm{M}_i\otimes_{\mathrm{B}_0}\mathrm{B}_{n-i}\right)
+   \otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+ \longrightarrow
+ \mathrm{M}_n\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+\]
+is surjective. Now $\mathrm{M}_n$ is a finite-type
+$\mathrm{B}_0$-module, $\mathrm{B}_0$ is local, and
+$\mathfrak{q}\mathrm{B}_0\subset\mathfrak{m}$; Nakayama's lemma
+therefore shows that each canonical homomorphism
+\[
+ \bigoplus_{-\mathrm{N}\leqslant i\leqslant\mathrm{N}}
+   \mathrm{M}_i\otimes_{\mathrm{B}_0}\mathrm{B}_{n-i}
+ \longrightarrow \mathrm{M}_n
+\]
+is surjective, which proves the assertion.
+\end{proof}
+
+\begin{corollary}[11.2.9.4]
+\label{IV.11.2.9.4}
+Under the hypotheses of \sref{IV.11.2.9.3}, suppose moreover that each of the $\mathrm{B}_i$ and each $\mathrm{M}_i$ is a finitely presented $\mathrm{B}_0$-module, and that $\mathrm{M}$ is a flat $\mathrm{A}$-module. For $\mathrm{M}$ to be a finitely presented $\mathrm{B}$-module, it is necessary and sufficient that $\mathrm{M}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})$ be a finitely presented $(\mathrm{B}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q}))$-module.
+\end{corollary}
+
+\begin{proof}
+By \sref{IV.11.2.9.3}, if the condition in the statement holds,
+$\mathrm{M}$ is a finite-type $\mathrm{B}$-module. Hence there is a
+finite-type free graded $\mathrm{B}$-module $\mathrm{L}$ (thus having
+a finite basis of homogeneous elements) and a surjective graded
+homomorphism of degree $0$, $u:\mathrm{L}\longrightarrow\mathrm{M}$.
+Let $\mathrm{R}=\operatorname{Ker}(u)$, which is a graded
+$\mathrm{B}$-module. There are finitely many integers $m_j$
+($1\leqslant j\leqslant r$) such that, for every integer $i$,
+$\mathrm{R}_i$ is the kernel of a surjective homomorphism
+\[
+ \bigoplus_{1\leqslant j\leqslant r}\mathrm{B}_{i+m_j}
+ \longrightarrow \mathrm{M}_i.
+\]
+The hypotheses on the $\mathrm{M}_i$ and the $\mathrm{B}_i$ then
+imply that $\mathrm{R}_i$ is a finite-type
+$\mathrm{B}_0$-module (Bourbaki, \emph{Alg.\ comm.}, chap.~I,
+\textsection\,2, n\textsuperscript{o}\,8, lemma~9). To prove that
+$\mathrm{R}$ is a finite-type $\mathrm{B}$-module, observe that,
+by the flatness hypothesis and $(\mathbf{0}_\mathrm{I},~6.1.2)$, the
+sequence
+\[
+ 0\longrightarrow
+ \mathrm{R}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+ \longrightarrow
+ \mathrm{L}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+ \longrightarrow
+ \mathrm{M}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})
+ \longrightarrow 0
+\]
+is exact. The hypothesis therefore implies (Bourbaki,
+\emph{loc.\ cit.}) that
+$\mathrm{R}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q})$ is a
+finite-type
+$(\mathrm{B}\otimes_\mathrm{A}\boldsymbol{k}(\mathfrak{q}))$-module.
+It is therefore enough to apply \sref{IV.11.2.9.3} to $\mathrm{R}$.
+\end{proof}
+
+\medskip
+\noindent III) \emph{Reduction to the case where the homomorphisms of transitions $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}_\mu$ (for $\lambda\leqslant\mu$) are injective.} --- Let $\mathrm{A}'_\lambda$ be the image of $\mathrm{A}_\lambda$ by the canonical homomorphism $\varphi_\lambda:\mathrm{A}_\lambda\to\mathrm{A}$; it is clear that the $\mathrm{A}'_\lambda$ form an inductive system of sub-rings \emph{Noetherian} of $\mathrm{A}$, and the homomorphisms of transition $\mathrm{A}'_\lambda\to\mathrm{A}'_\mu$ (for $\lambda\leqslant\mu$) are injective. Set $\mathrm{B}'_\lambda=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda$, $\mathfrak{J}'_\lambda=\mathfrak{J}_0\mathrm{B}'_\lambda$, $\mathrm{M}'_\lambda=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_\lambda=\mathrm{M}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}'_\lambda$; one has still $\mathrm{B}=\varinjlim\mathrm{B}'_\lambda$, $\mathrm{M}=\varinjlim\mathrm{M}'_\lambda$. Suppose one has proved that there exists $\lambda$ such that, for $\mu\geqslant\lambda$, $\operatorname{gr}^*_{\mathfrak{J}'_\mu}(\mathrm{M}'_\mu)$ is a flat $\mathrm{A}'_\mu$-module. Let $a_\lambda$ be the kernel of the homomorphism $\varphi_\lambda$, which is an ideal of the Noetherian ring $\mathrm{A}_\lambda$. It follows from the definition of the inductive limit that there exists an index $\mu\geqslant\lambda$ such that $\varphi_{\mu\lambda}(a_\lambda)=0$, in other words $\varphi_{\mu\lambda}$ factorises as $\varphi_{\mu\lambda}:\mathrm{A}_\lambda\to\mathrm{A}'_\lambda\to\mathrm{A}_\mu$, and one can write $\mathrm{B}_\mu=\mathrm{B}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$, $\mathfrak{J}_\mu=\mathfrak{J}'_\lambda\mathrm{B}_\mu$ and $\mathrm{M}_\mu=\mathrm{M}'_\lambda\otimes_{\mathrm{A}'_\lambda}\mathrm{A}_\mu$; one deduces then from \sref{IV.11.2.9.2} that $\operatorname{gr}^*_{\mathfrak{J}_\mu}(\mathrm{M}_\mu)$ is a flat $\mathrm{A}_\mu$-module.
+
+\medskip
+\noindent IV) \emph{Reduction to the case where $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ and $\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)=\mathrm{B}_0$.} --- By virtue of the hypothesis, there is a system $(t_i)_{1\leqslant i\leqslant n}$ of generators of the finite-type $\mathrm{A}_0$-algebra $\mathrm{B}_0$, such that the $t_i$ for $i\leqslant m$ generate the ideal $\mathfrak{J}_0$ of $\mathrm{B}_0$. Set $\mathrm{B}'_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, a polynomial algebra (hence Noetherian), and let $\mathfrak{J}'_0$ be the ideal of $\mathrm{B}'_0$ generated by the $\mathrm{T}_i$ with $i\leqslant m$; there is then a surjective $\mathrm{A}_0$-homomorphism $u_0:\mathrm{B}'_0\to\mathrm{B}_0$ taking each $\mathrm{T}_i$ to $t_i$ ($1\leqslant i\leqslant n$), and hence satisfying $u_0(\mathfrak{J}'_0)=\mathfrak{J}_0$. This homomorphism allows us to regard $\mathrm{M}_0$ as a finite-type $\mathrm{B}'_0$-module. Set
+\[
+  \mathrm{B}'_\lambda=\mathrm{B}'_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda
+  =\mathrm{A}_\lambda[\mathrm{T}_1,\ldots,\mathrm{T}_n],
+  \qquad
+  \mathfrak{J}'_\lambda=\mathfrak{J}'_0\mathrm{B}'_\lambda,
+\]
+----- English, source_aligned/ega4-11.tex, page IV-3 129 -----
+\oldpage[IV-3]{129}
+and also
+\[
+  \mathrm{B}'=\mathrm{B}'_0\otimes_{\mathrm{A}_0}\mathrm{A}
+  =\mathrm{A}[\mathrm{T}_1,\ldots,\mathrm{T}_n],
+  \qquad
+  \mathfrak{J}'=\mathfrak{J}'_0\mathrm{B}'.
+\]
+Thus $\mathfrak{J}'$ is the ideal of $\mathrm{B}'$ generated by the $\mathrm{T}_i$ with $i\leqslant m$. Moreover, for every integer $k\geqslant 0$ one clearly has
+\[
+  \mathfrak{J}'^k\mathrm{M}=\mathfrak{J}^k\mathrm{M},
+  \qquad
+  \mathfrak{J}'_\lambda{}^k\mathrm{M}_\lambda
+  =\mathfrak{J}_\lambda^k\mathrm{M}_\lambda
+\]
+for every $\lambda$. Hence
+\[
+  \operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{M})
+  =\operatorname{gr}^*_{\mathfrak{J}}(\mathrm{M})
+\]
+as $\mathrm{A}$-modules, and
+\[
+  \operatorname{gr}^*_{\mathfrak{J}'_\lambda}(\mathrm{M}_\lambda)
+  =\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)
+\]
+as $\mathrm{A}_\lambda$-modules. We may therefore substitute $\mathrm{B}'$, $\mathrm{B}'_\lambda$, $\mathfrak{J}'$, and $\mathfrak{J}'_\lambda$ for $\mathrm{B}$, $\mathrm{B}_\lambda$, $\mathfrak{J}$, and $\mathfrak{J}_\lambda$, respectively, in the proof. Note also that, by construction, $\operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{B}')$ identifies with $\mathrm{B}'$, and $\operatorname{gr}^*_{\mathfrak{J}'_\lambda}(\mathrm{B}'_\lambda)$ with $\mathrm{B}'_\lambda$.
+
+\medskip
+\noindent V) \emph{Proof that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$-module of finite presentation.} --- We thus suppose from now on that $\mathrm{A}_0$ and the $\mathrm{A}_\lambda$ are Noetherian, that the transition homomorphisms $\mathrm{A}_\lambda\to\mathrm{A}_\mu$ are injective, that $\mathrm{B}_0=\mathrm{A}_0[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, and that $\mathfrak{J}_0$ is generated by the $\mathrm{T}_i$ with $i\leqslant m$. The ring $\mathrm{C}_0=\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)$ therefore identifies with $\mathrm{B}_0$, and $\mathrm{C}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ identifies with $\mathrm{B}$; at first, in what follows, we shall use only the fact that $\mathrm{C}\cong\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}$.
+
+We will need the following variant of $(6.9.3)$:
+
+\begin{lemma}[11.2.9.5]
+\label{IV.11.2.9.5}
+Let $\mathrm{A}_0$ be a Noetherian ring, $\mathrm{B}_0$ an
+$\mathrm{A}_0$-algebra of finite type, $\mathfrak{J}_0$ an ideal of
+$\mathrm{B}_0$, $\mathrm{M}_0$ a $\mathrm{B}_0$-module of finite type. There
+exists a sequence $(\mathrm{S}_{0i})_{1\leqslant i\leqslant m}$ of
+subschemes of $\mathrm{S}_0=\Spec(\mathrm{A}_0)$ having the following
+properties:
+\begin{enumerate}[label=\textup{\arabic{enumi}}\textsuperscript{o}]
+  \item The underlying spaces of the $\mathrm{S}_{0i}$ are pairwise disjoint and form a covering of $\mathrm{S}_0$.
+  \item For each $i$, the set $\mathrm{S}_{0i}$ is open in $\bigcup_{j\geqslant i}\mathrm{S}_{0j}$.
+  \item Each scheme $\mathrm{S}_{0i}$ is affine.
+  \item If $\mathrm{A}_{0i}$ is the ring of $\mathrm{S}_{0i}$ and one sets $\mathrm{B}_{0i}=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}_{0i}$, $\mathfrak{J}_{0i}=\mathfrak{J}_0\mathrm{B}_{0i}$, then $\operatorname{gr}^*_{\mathfrak{J}_{0i}}(\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}_{0i})$ is a flat $\mathrm{A}_{0i}$-module.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+We proceed as in $(6.9.3)$ by Noetherian induction, assuming the lemma known after replacing $\mathrm{A}_0$ by $\mathrm{A}'_0=\mathrm{A}_0/\mathfrak{a}_0$,
+where $\mathfrak{a}_0$ is an ideal such that $\mathrm{V}(\mathfrak{a}_0)\neq\mathrm{S}_0$, and replacing $\mathrm{B}_0$, $\mathfrak{J}_0$, and $\mathrm{M}_0$ by
+\[
+  \mathrm{B}'_0=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0,
+  \qquad
+  \mathfrak{J}'_0=\mathfrak{J}_0\mathrm{B}'_0,
+  \qquad
+  \mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0,
+\]
+respectively. Let $\mathfrak{N}_0$ be the nilradical of $\mathrm{A}_0$. It
+is plainly enough to prove the lemma after replacing $\mathrm{A}_0$ by
+$\mathrm{A}_0/\mathfrak{N}_0$ and replacing $\mathrm{B}_0$,
+$\mathfrak{J}_0$, and $\mathrm{M}_0$ by the corresponding objects just
+described. In other words, we may suppose that $\mathrm{A}_0$ is
+\emph{reduced}. Now
+$\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)$ is a finite-type
+$\mathrm{A}_0$-algebra and
+$\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)$ is a finite-type
+$\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{B}_0)$-module. By the generic
+flatness theorem $(6.9.1)$, there exists an open subset
+$\mathrm{D}(t_0)\subset\mathrm{S}_0$ such that, on setting
+$\mathrm{A}_{01}=(\mathrm{A}_0)_{t_0}$,
+\[
+  \operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)
+  \otimes_{\mathrm{A}_0}\mathrm{A}_{01}
+\]
+is a flat $\mathrm{A}_{01}$-module. Since $\mathrm{A}_{01}$ is a flat $\mathrm{A}_0$-module, this module identifies with
+\[
+  \operatorname{gr}^*_{\mathfrak{J}_{01}}
+  (\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}_{01}),
+\]
+where
+\[
+  \mathrm{B}_{01}=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}_{01},
+  \qquad
+  \mathfrak{J}_{01}=\mathfrak{J}_0\mathrm{B}_{01}.
+\]
+The complement of $\mathrm{D}(t_0)$ in $\mathrm{S}_0$ is then of the form $\mathrm{V}(\mathfrak{a}_0)$, and the conclusion follows by applying the Noetherian-induction hypothesis.
+\end{proof}
+
+Apply this lemma to the present situation, keeping the same notations; set $\mathrm{U}_{0i}=\bigcup_{j\leqslant i}\mathrm{S}_{0j}$, which is an open quasi-compact of $\mathrm{S}_0$. There is then a family $(f_{ik})_{1\leqslant i\leqslant m,\,1\leqslant k\leqslant n}$ of elements of $\mathrm{A}_0$ such that for each $i$, $\mathrm{U}_{0i}$ is the union of the $\mathrm{D}(f_{ik})$ ($1\leqslant k\leqslant n$).
+----- English, source_aligned/ega4-11.tex, page IV-3 130 -----
+\oldpage[IV-3]{130}
+
+The $\mathrm{C}_0$-module $\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)$ is generated by finitely many homogeneous elements of degree $0$, so there is an epimorphism of graded $\mathrm{C}_0$-modules
+\[
+  u_0:\mathrm{C}_0^r\longrightarrow\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0).
+\]
+As $\mathrm{C}=\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}$ and the canonical homomorphism $\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)\otimes_{\mathrm{A}_0}\mathrm{A}\to\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is surjective, one therefore deduces from $u_0$ an epimorphism of graded $\mathrm{C}$-modules
+\[
+  u:\mathrm{C}^r\xrightarrow{u_0\otimes 1_{\mathrm{A}}}\operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)\otimes_{\mathrm{A}_0}\mathrm{A}\longrightarrow\operatorname{gr}^*_\mathfrak{J}(\mathrm{M}),
+\]
+and it remains to show that the graded $\mathrm{C}$-module
+$\mathrm{Q}=\operatorname{Ker}(u)$ is \emph{of finite type}.
+\\[0.4\baselineskip]
+\begin{lemma}[11.2.9.6]
+\label{IV.11.2.9.6}
+Under the preceding hypotheses, let $\mathfrak K_0$ be an ideal of $\mathrm{A}_0$; set
+\[
+  \mathrm{A}'_0=\mathrm{A}_0/\mathfrak K_0,\qquad
+  \mathrm{B}'_0=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0
+  =\mathrm{B}_0/\mathfrak K_0\mathrm{B}_0,\qquad
+  \mathfrak{J}'_0=\mathfrak{J}_0\mathrm{B}'_0,
+\]
+and $\mathfrak K=\mathfrak K_0\mathrm{A}$, $\mathrm{A}'=\mathrm{A}/\mathfrak K$, and suppose moreover that
+\[
+  \operatorname{gr}^*_{\mathfrak{J}'_0}
+  (\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0)
+\]
+is a flat $\mathrm{A}'_0$-module. Then there exist finitely many elements $q_h$ ($1\leqslant h\leqslant s$) of $\mathrm{Q}$ such that, for every prime ideal $\mathfrak{p}\supset\mathfrak K\mathrm{B}$ of $\mathrm{B}$, the canonical images of the $q_h$ in $\mathrm{Q}_\mathfrak{p}$ generate the $\mathrm{C}_\mathfrak{p}$-module $\mathrm{Q}_\mathfrak{p}$.
+\end{lemma}
+
+Suppose the lemma proved, and note that it can still be applied after replacing
+$\mathrm{A}_0$ by $(\mathrm{A}_0)_{t_0}$, and $\mathrm{B}_0$,
+$\mathfrak{J}_0$, $\mathrm{M}_0$, $\mathrm{A}_\lambda$, and $\mathrm{A}$ by
+the corresponding localized objects, for any $t_0\in\mathrm{A}_0$, since
+$(\mathrm{A}_0)_{t_0}$ is flat over $\mathrm{A}_0$. Apply the lemma
+successively after replacing $\mathrm{A}_0$ by each of the rings
+$(\mathrm{A}_0)_{f_{ik}}$, and $\mathfrak K_0$ by the ideal
+$\mathfrak K_{ik}$ defining the closed subscheme of $\mathrm{D}(f_{ik})$
+induced by $\mathrm{S}_{0i}$ on the open subset
+$\mathrm{S}_{0i}\cap\mathrm{D}(f_{ik})$ of $\mathrm{S}_{0i}$. Since the
+flatness hypothesis of \sref{IV.11.2.9.6} is satisfied in each of these cases
+by \sref{IV.11.2.9.5}, for every pair $(i,k)$ one obtains a finite family
+$(a_{ikh})_{1\leqslant h\leqslant l}$ of elements of
+$\mathrm{Q}_{f_{ik}}$ whose images in $\mathrm{Q}_{\mathfrak{p}_{ik}}$
+generate this $\mathrm{C}_{\mathfrak{p}_{ik}}$-module for every prime ideal
+$\mathfrak{p}_{ik}$ of $\mathrm{B}_{f_{ik}}$ containing
+$\mathfrak K_{ik}\mathrm{B}_{f_{ik}}$. For a suitable integer $d>0$, one
+may write
+\[
+  a_{ikh}=\frac{b_{ikh}}{f_{ik}^{d}}
+\]
+for all $i,k,h$, with $b_{ikh}\in\mathrm{Q}$. Since the $\mathrm{S}_{0i}$ cover $\mathrm{S}_0$, every prime ideal $\mathfrak{p}$ of $\mathrm{B}$ has image in some $\mathrm{S}_{0i}\cap\mathrm{D}(f_{ik})$, and hence its image $\mathfrak{p}_{ik}$ in $\mathrm{B}_{f_{ik}}$ contains $\mathfrak K_{ik}\mathrm{B}_{f_{ik}}$. The images of the $b_{ikh}$ ($1\leqslant h\leqslant l$) in $\mathrm{Q}_{\mathfrak{p}_{ik}}=\mathrm{Q}_{\mathfrak{p}}$ therefore generate this $\mathrm{C}_{\mathfrak{p}}$-module. It follows that the $b_{ikh}$ ($1\leqslant i\leqslant m$, $1\leqslant k\leqslant n$, $1\leqslant h\leqslant l$) generate the $\mathrm{C}$-module $\mathrm{Q}$ (Bourbaki, \emph{Alg.\ comm.}, chap.~II, \S3, no.~3, th.~1).
+
+It remains to prove Lemma \sref{IV.11.2.9.6}. Set
+\[
+  \mathrm{C}'=\mathrm{C}\otimes_\mathrm{A}\mathrm{A}'=\mathrm{C}/\mathfrak K\mathrm{C},\qquad
+  \mathrm{B}'=\mathrm{B}\otimes_\mathrm{A}\mathrm{A}',\qquad
+  \mathfrak{J}'=\mathfrak{J}\mathrm{B}',\qquad
+  \mathrm{M}'=\mathrm{M}\otimes_\mathrm{A}\mathrm{A}'.
+\]
+By hypothesis $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a flat $\mathrm{A}$-module, hence $\operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{M}')$ identifies with $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})\otimes_\mathrm{A}\mathrm{A}'$ \sref{IV.11.2.9.2}, and one has the exact sequence $(\mathbf{0}_\mathrm{I},~6.1.2)$
+\begin{equation}
+  0\longrightarrow\mathrm{Q}\otimes_\mathrm{A}\mathrm{A}'
+  \longrightarrow(\mathrm{C}')^r
+  \xrightarrow{u\otimes 1_{\mathrm{A}'}}
+  \operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{M}')
+  \longrightarrow 0.
+  \label{IV.11.2.9.7}
+\tag{11.2.9.7}
+\end{equation}
+
+Set $\mathrm{C}'_0=\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0
+=\mathrm{C}_0/\mathfrak K_0\mathrm{C}_0$
+and consider the epimorphism of graded $\mathrm{C}'_0$-modules
+\[
+  u'_0:(\mathrm{C}'_0)^r
+  \xrightarrow{u_0\otimes 1_{\mathrm{A}'_0}}
+  \operatorname{gr}^*_{\mathfrak{J}_0}(\mathrm{M}_0)\otimes_{\mathrm{A}_0}\mathrm{A}'_0
+  \longrightarrow
+  \operatorname{gr}^*_{\mathfrak{J}'_0}
+  (\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0).
+\]
+
+Let $\mathrm{Q}_0=\operatorname{Ker}(u'_0)$. Using the fact that
+\[
+  \operatorname{gr}^*_{\mathfrak{J}'_0}
+  (\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}'_0)
+\]
+is a flat $\mathrm{A}'_0$-module, one sees that its tensor product over $\mathrm{A}'_0$ with $\mathrm{A}'$ identifies with $\operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{M}')$ \sref{IV.11.2.9.2}, and one has the exact sequence $(\mathbf{0}_\mathrm{I},~6.1.2)$
+\begin{equation}
+  0\longrightarrow\mathrm{Q}_0\otimes_{\mathrm{A}'_0}\mathrm{A}'
+  \longrightarrow(\mathrm{C}')^r
+  \xrightarrow{u\otimes 1_{\mathrm{A}'}}
+  \operatorname{gr}^*_{\mathfrak{J}'}(\mathrm{M}')
+  \longrightarrow 0.
+  \label{IV.11.2.9.8}
+\tag{11.2.9.8}
+\end{equation}
+----- French corrections on page IV-3 129 -----
+[id 17092]
+OLD: On pose alors
+\[
+B'_\lambda=B'_0\otimes_{A_0}A_\lambda
+=A_\lambda[T_1,\ldots,T_n],\qquad
+\mathfrak J'_\lambda=\mathfrak J'_0B'_\lambda,
+\]
+\[
+B'=B'_0\otimes_{A_0}A=A[T_1,\ldots,T_n],\qquad
+\mathfrak J'=\mathfrak J'_0B',
+\]
+de sorte
+NEW: On pose alors
+$B'_\lambda=B'_0\otimes_{A_0}A_\lambda
+=A_\lambda[T_1,\ldots,T_n]$, $\mathfrak J'_\lambda=\mathfrak J'_0B'_\lambda$,
+$B'=B'_0\otimes_{A_0}A=A[T_1,\ldots,T_n]$, $\mathfrak J'=\mathfrak J'_0B'$,
+de sorte
+FRENCH CONTEXT (corrected): i\leq m$~; on a alors un
+$A_0$-homomorphisme surjectif $u_0:B'_0\to B_0$ transformant chaque $T_i$ en
+$t_i$ ($1\leq i\leq n$), donc tel que $u_0(\mathfrak J'_0)=\mathfrak J_0$~;
+cet homomorphisme permet de considérer $M_0$ comme un $B'_0$-module de type
+fini. On pose alors
+$B'_\lambda=B'_0\otimes_{A_0}A_\lambda
+=A_\lambda[T_1,\ldots,T_n]$, $\mathfrak J'_\lambda=\mathfrak J'_0B'_\lambda$,
+$B'=B'_0\otimes_{A_0}A=A[T_1,\ldots,T_n]$, $\mathfrak J'=\mathfrak J'_0B'$,
+de sorte que $\mathfrak J'$ est l'idéal de $B'$ engendré par les $T_i$
+d'indice $i\leq m$~; en outre, il est clair que pour tout entier $k\geq0$,
+on a $\mathfrak J'^kM=\mathfrak J^kM$ et
+$\mathfrak J'_\lambda{}^kM_\lambda=\mathfrak J_\lambda^kM_\lambda$ pour tout
+$\la
+
+[id 17093]
+OLD: \operatorname{gr}_{\mathfrak J'}^*(M)=\operatorname{gr}_{\mathfrak J}^*(M)
+NEW: \operatorname{gr}_{\mathfrak J'}^\bullet(M)=\operatorname{gr}_{\mathfrak J}^\bullet(M)
+FRENCH CONTEXT (corrected): k J'$ est l'idéal de $B'$ engendré par les $T_i$
+d'indice $i\leq m$~; en outre, il est clair que pour tout entier $k\geq0$,
+on a $\mathfrak J'^kM=\mathfrak J^kM$ et
+$\mathfrak J'_\lambda{}^kM_\lambda=\mathfrak J_\lambda^kM_\lambda$ pour tout
+$\lambda$~; donc
+$\operatorname{gr}_{\mathfrak J'}^\bullet(M)=\operatorname{gr}_{\mathfrak J}^\bullet(M)$
+en tant que $A$-module et
+$\operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(M_\lambda)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ en tant que
+$A_\lambda$-module~; on peut donc substituer $B'$, $B'_\lambda$,
+$\mathfrak J'$, $\mathfrak J'_\la
+
+[id 17094]
+OLD: \operatorname{gr}_{\mathfrak J'_\lambda}^*(M_\lambda)
+=\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)
+NEW: \operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(M_\lambda)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)
+FRENCH CONTEXT (corrected): k\geq0$,
+on a $\mathfrak J'^kM=\mathfrak J^kM$ et
+$\mathfrak J'_\lambda{}^kM_\lambda=\mathfrak J_\lambda^kM_\lambda$ pour tout
+$\lambda$~; donc
+$\operatorname{gr}_{\mathfrak J'}^\bullet(M)=\operatorname{gr}_{\mathfrak J}^\bullet(M)$
+en tant que $A$-module et
+$\operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(M_\lambda)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ en tant que
+$A_\lambda$-module~; on peut donc substituer $B'$, $B'_\lambda$,
+$\mathfrak J'$, $\mathfrak J'_\lambda$ à $B$, $B_\lambda$, $\mathfrak J$,
+$\mathfrak J_\lambda$ respectivement dans la démonstration~; on notera en
+outre que par construction $\oper
+
+[id 17095]
+OLD: \operatorname{gr}_{\mathfrak J'}^*(B')
+NEW: \operatorname{gr}_{\mathfrak J'}^\bullet(B')
+FRENCH CONTEXT (corrected): mbda)$ en tant que
+$A_\lambda$-module~; on peut donc substituer $B'$, $B'_\lambda$,
+$\mathfrak J'$, $\mathfrak J'_\lambda$ à $B$, $B_\lambda$, $\mathfrak J$,
+$\mathfrak J_\lambda$ respectivement dans la démonstration~; on notera en
+outre que par construction $\operatorname{gr}_{\mathfrak J'}^\bullet(B')$
+s'identifie à $B'$ et $\operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(B'_\lambda)$
+à $B'_\lambda$.
+
+\medskip
+\noindent V) \emph{Preuve du fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de pr
+
+[id 17096]
+OLD: \operatorname{gr}_{\mathfrak J'_\lambda}^*(B'_\lambda)
+NEW: \operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(B'_\lambda)
+FRENCH CONTEXT (corrected):  $B'_\lambda$,
+$\mathfrak J'$, $\mathfrak J'_\lambda$ à $B$, $B_\lambda$, $\mathfrak J$,
+$\mathfrak J_\lambda$ respectivement dans la démonstration~; on notera en
+outre que par construction $\operatorname{gr}_{\mathfrak J'}^\bullet(B')$
+s'identifie à $B'$ et $\operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(B'_\lambda)$
+à $B'_\lambda$.
+
+\medskip
+\noindent V) \emph{Preuve du fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie.} --- Nous
+supposons donc désormais $A_0$ et les $A_\lambda$ noethér
+
+[id 17098]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(M)$ est un
+$\operatorname{gr}_{\mathfrak J}^*(B)$-module
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module
+FRENCH CONTEXT (corrected): dans la démonstration~; on notera en
+outre que par construction $\operatorname{gr}_{\mathfrak J'}^\bullet(B')$
+s'identifie à $B'$ et $\operatorname{gr}_{\mathfrak J'_\lambda}^\bullet(B'_\lambda)$
+à $B'_\lambda$.
+
+\medskip
+\noindent V) \emph{Preuve du fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie.} --- Nous
+supposons donc désormais $A_0$ et les $A_\lambda$ noethériens, les
+homomorphismes de transition $A_\lambda\to A_\mu$ injectifs,
+$B_0=A_0[T_1,\ldots,T_n]$, $\mathfrak J_0$ étant engendré par les $T_i$
+d'indice $i\leq m$~; l'ann
+
+[id 17099]
+OLD: C_0=\operatorname{gr}_{\mathfrak J_0}^*(B_0)
+NEW: C_0=\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)
+FRENCH CONTEXT (corrected): résentation finie.} --- Nous
+supposons donc désormais $A_0$ et les $A_\lambda$ noethériens, les
+homomorphismes de transition $A_\lambda\to A_\mu$ injectifs,
+$B_0=A_0[T_1,\ldots,T_n]$, $\mathfrak J_0$ étant engendré par les $T_i$
+d'indice $i\leq m$~; l'anneau
+$C_0=\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$ s'identifie donc à $B_0$ et
+$C=\operatorname{gr}_{\mathfrak J}^\bullet(B)$ s'identifie à $B$~; nous utiliserons
+seulement tout d'abord dans ce qui suit le fait que
+$C\cong C_0\otimes_{A_0}A$.
+
+Nous aurons besoin de la variante suivante de (6.9.3)~:
+
+\begin{l
+
+[id 17100]
+OLD: $C=\operatorname{gr}_{\mathfrak J}^*(B)$
+NEW: $C=\operatorname{gr}_{\mathfrak J}^\bullet(B)$
+FRENCH CONTEXT (corrected): oethériens, les
+homomorphismes de transition $A_\lambda\to A_\mu$ injectifs,
+$B_0=A_0[T_1,\ldots,T_n]$, $\mathfrak J_0$ étant engendré par les $T_i$
+d'indice $i\leq m$~; l'anneau
+$C_0=\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$ s'identifie donc à $B_0$ et
+$C=\operatorname{gr}_{\mathfrak J}^\bullet(B)$ s'identifie à $B$~; nous utiliserons
+seulement tout d'abord dans ce qui suit le fait que
+$C\cong C_0\otimes_{A_0}A$.
+
+Nous aurons besoin de la variante suivante de (6.9.3)~:
+
+\begin{lemma}[11.2.9.5]
+\label{IV.11.2.9.5-fr}
+Soient $A_0$ un anneau noethérien, $B
+
+[id 17102]
+OLD: \operatorname{gr}_{\mathfrak J_{0i}}^*
+NEW: \operatorname{gr}_{\mathfrak J_{0i}}^\bullet
+FRENCH CONTEXT (corrected): Pour chaque $i$, l'ensemble $S_{0i}$ est ouvert dans
+$\bigcup_{j\geq i}S_{0j}$.
+\item Chaque schéma $S_{0i}$ est affine.
+\item Si $A_{0i}$ est l'anneau de $S_{0i}$ et si l'on pose
+$B_{0i}=B_0\otimes_{A_0}A_{0i}$, $\mathfrak J_{0i}=\mathfrak J_0B_{0i}$,
+alors
+$\operatorname{gr}_{\mathfrak J_{0i}}^\bullet(M_0\otimes_{A_0}A_{0i})$ est un
+$A_{0i}$-module plat.
+\end{enumerate}
+\end{lemma}
+
+On procède comme dans (6.9.3) par récurrence noethérienne, en supposant le
+lemme vrai lorsqu'on y remplace $A_0$ par $A'_0=A_0/\mathfrak a_0$, où
+l'idéal $\mathfrak a_0$ est te
+
+[id 17103]
+OLD: $\operatorname{gr}_{\mathfrak J_0}^*(B_0)$ est une
+NEW: $\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$ est une
+FRENCH CONTEXT (corrected):  N_0$ de $A_0$, et il suffit évidemment de
+prouver le lemme en remplaçant $A_0$ par $A_0/\mathfrak N_0$ et $B_0$,
+$\mathfrak J_0$, $M_0$ par les objets correspondants comme ci-dessus.
+Autrement dit, on peut supposer que $A_0$ est \emph{réduit}~; d'autre part,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$ est une $A_0$-algèbre de type fini
+et $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ un
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$-module de type fini~; en vertu du
+théorème de platitude générique (6.9.1), il existe un ouvert
+$D(t_0)\subset S_0$ tel que si l'
+
+[id 17104]
+OLD: \operatorname{gr}_{\mathfrak J_0}^*(M_0)$ un
+$\operatorname{gr}_{\mathfrak J_0}^*(B_0)$-module
+NEW: \operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ un
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$-module
+FRENCH CONTEXT (corrected): /\mathfrak N_0$ et $B_0$,
+$\mathfrak J_0$, $M_0$ par les objets correspondants comme ci-dessus.
+Autrement dit, on peut supposer que $A_0$ est \emph{réduit}~; d'autre part,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$ est une $A_0$-algèbre de type fini
+et $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ un
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$-module de type fini~; en vertu du
+théorème de platitude générique (6.9.1), il existe un ouvert
+$D(t_0)\subset S_0$ tel que si l'on pose $A_{01}=(A_0)_{t_0}$,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ soit un
+$A_{01}$-module plat~; mais puis
+
+[id 17105]
+OLD: \operatorname{gr}_{\mathfrak J_0}^*(M_0)\otimes_{A_0}A_{01}$ soit un
+NEW: \operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ soit un
+FRENCH CONTEXT (corrected): $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ un
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(B_0)$-module de type fini~; en vertu du
+théorème de platitude générique (6.9.1), il existe un ouvert
+$D(t_0)\subset S_0$ tel que si l'on pose $A_{01}=(A_0)_{t_0}$,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ soit un
+$A_{01}$-module plat~; mais puisque $A_{01}$ est un $A_0$-module plat,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ s'identifie à
+$\operatorname{gr}_{\mathfrak J_{01}}^\bullet(M_0\otimes_{A_0}A_{01})$, où
+$B_{01}=B_0\otimes_{A_0}A_{01}$
+
+[id 17106]
+OLD: \operatorname{gr}_{\mathfrak J_0}^*(M_0)\otimes_{A_0}A_{01}$ s'identifie
+NEW: \operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ s'identifie
+FRENCH CONTEXT (corrected): platitude générique (6.9.1), il existe un ouvert
+$D(t_0)\subset S_0$ tel que si l'on pose $A_{01}=(A_0)_{t_0}$,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ soit un
+$A_{01}$-module plat~; mais puisque $A_{01}$ est un $A_0$-module plat,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ s'identifie à
+$\operatorname{gr}_{\mathfrak J_{01}}^\bullet(M_0\otimes_{A_0}A_{01})$, où
+$B_{01}=B_0\otimes_{A_0}A_{01}$ et $\mathfrak J_{01}=\mathfrak J_0B_{01}$.
+Le complémentaire de $D(t_0)$ dans $S_0$ est alors de la forme
+$V(\mathfrak a_0)$, et on conclut en appliqu
+
+[id 17107]
+OLD: \operatorname{gr}_{\mathfrak J_{01}}^*
+NEW: \operatorname{gr}_{\mathfrak J_{01}}^\bullet
+FRENCH CONTEXT (corrected): on pose $A_{01}=(A_0)_{t_0}$,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ soit un
+$A_{01}$-module plat~; mais puisque $A_{01}$ est un $A_0$-module plat,
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A_{01}$ s'identifie à
+$\operatorname{gr}_{\mathfrak J_{01}}^\bullet(M_0\otimes_{A_0}A_{01})$, où
+$B_{01}=B_0\otimes_{A_0}A_{01}$ et $\mathfrak J_{01}=\mathfrak J_0B_{01}$.
+Le complémentaire de $D(t_0)$ dans $S_0$ est alors de la forme
+$V(\mathfrak a_0)$, et on conclut en appliquant l'hypothèse de récurrence
+noethérienne.
+
+App
+
+[id 17108]
+OLD: Il y a donc une famille
+$(f_{ik})
+NEW: Il y a donc une famille
+finie $(f_{ik})
+FRENCH CONTEXT (corrected):  la forme
+$V(\mathfrak a_0)$, et on conclut en appliquant l'hypothèse de récurrence
+noethérienne.
+
+Appliquons ce lemme à la situation actuelle, en gardant les mêmes notations~;
+posons $U_{0i}=\bigcup_{j\leq i}S_{0j}$, qui est un ouvert quasi-compact de
+$S_0$. Il y a donc une famille
+finie $(f_{ik})_{1\leq i\leq m,\,1\leq k\leq n}$ d'éléments de $A_0$ tels que pour
+chaque $i$, $U_{0i}$ soit réunion des $D(f_{ik})$ ($1\leq k\leq n$).
+
+\oldpage[IV-3]{130}
+
+Le $C_0$-module $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ est engendré par
+un nombre fini d'él
+
+=================== PAGE IV-3 130 ===================
+----- (English page IV-3 129: shown above in this file) -----
+----- (English page IV-3 130: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 131 -----
+\oldpage[IV-3]{131}
+
+whence, by comparison with {\hyperref[IV.11.2.9]{(11.2.9.7)}}, an isomorphism of graded $\mathrm{C}'$-modules $\mathrm{Q}\otimes_\mathrm{A}\mathrm{A}'
+\xrightarrow{\sim}
+\mathrm{Q}_0\otimes_{\mathrm{A}'_0}\mathrm{A}'$.
+
+Since $\mathrm{C}'_0$ is Noetherian, $\mathrm{Q}_0$ is a finite-type $\mathrm{C}'_0$-module; hence $\mathrm{Q}_0\otimes_{\mathrm{A}'_0}\mathrm{A}'$ is a finite-type graded $\mathrm{C}'$-module, and therefore so is $\mathrm{Q}\otimes_\mathrm{A}\mathrm{A}'$. Let $q_h$ ($1\leqslant h\leqslant s$) be homogeneous elements of $\mathrm{Q}$ whose images in $\mathrm{Q}\otimes_\mathrm{A}\mathrm{A}'$ generate this $\mathrm{C}'$-module.
+
+Now consider an arbitrary prime ideal $\mathfrak{p}\supset\mathfrak K\mathrm{B}$ of $\mathrm{B}$. By flatness, $\mathrm{C}_\mathfrak{p}
+=\operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{B}_\mathfrak{p})$,
+and $\operatorname{gr}^0_{\mathfrak{J}_\mathfrak{p}}(\mathrm{B}_\mathfrak{p})=\mathrm{B}_\mathfrak{p}/\mathfrak{J}_\mathfrak{p}$ is either the zero ring or a local ring; to prove the lemma, it plainly suffices to consider the second case. Each $(\mathrm{B}_\mathfrak{p}/\mathfrak{J}_\mathfrak{p})$-module $\operatorname{gr}^i_{\mathfrak{J}_\mathfrak{p}}(\mathrm{B}_\mathfrak{p})$ is then of finite presentation. On the other hand, for every $i$,
+\[
+  \mathrm{M}/\mathfrak{J}^i\mathrm{M}
+  \simeq
+  (\mathrm{M}_0/\mathfrak{J}_0^i\mathrm{M}_0)
+  \otimes_{\mathrm{A}_0}\mathrm{A},
+\]
+and is therefore a finitely presented $\mathrm{B}$-module. By induction on $i$, the hypothesis that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is flat over $\mathrm{A}$ implies, by $(\mathbf{0}_\mathrm{I},~6.1.2)$, that $\mathrm{M}/\mathfrak{J}^i\mathrm{M}$ is flat over $\mathrm{A}$. Applying \sref{IV.11.2.6.1}, with $\mathrm{M}_0$ replaced by $\mathrm{M}_0/\mathfrak{J}_0^k\mathrm{M}_0$ for $k\leqslant i$, shows that there is an index $\lambda_i$ such that, for $\mu\geqslant\lambda_i$, every $\mathrm{M}_\mu/\mathfrak{J}_\mu^{k+1}\mathrm{M}_\mu$ is flat over $\mathrm{A}_\mu$; consequently, again by $(\mathbf{0}_\mathrm{I},~6.1.2)$, every $\operatorname{gr}^k_{\mathfrak{J}_\mu}(\mathrm{M}_\mu)$ is flat over $\mathrm{A}_\mu$ for $k\leqslant i$. It follows from \sref{IV.11.2.9.2} that every $(\mathrm{B}/\mathfrak{J})$-module $\operatorname{gr}^i_\mathfrak{J}(\mathrm{M})$ is of finite presentation, and hence that $\operatorname{gr}^i_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})$ is a finitely presented $(\mathrm{B}_\mathfrak{p}/\mathfrak{J}_\mathfrak{p})$-module.
+
+Moreover, the images of the $q_h$ in $\mathrm{Q}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})
+=
+(\mathrm{Q}\otimes_\mathrm{A}\mathrm{A}')_\mathfrak{p}
+\otimes_{\mathrm{A}'}\boldsymbol{k}(\mathfrak{p})$
+generate this module over $\mathrm{C}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$, since $\mathrm{C}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})
+=
+\mathrm{C}'_\mathfrak{p}\otimes_{\mathrm{A}'}\boldsymbol{k}(\mathfrak{p})$.
+Since there is an exact sequence
+\[
+  \mathrm{Q}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})
+  \longrightarrow
+  \mathrm{C}_\mathfrak{p}^{\,r}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})
+  \longrightarrow
+  \operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})
+  \otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})
+  \longrightarrow 0,
+\]
+it follows that $\operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$ is a finitely presented module over $\mathrm{C}_\mathfrak{p}\otimes_{\mathrm{B}_\mathfrak{p}}\boldsymbol{k}(\mathfrak{p})$. Applying \sref{IV.11.2.9.4}, with $\mathrm{A}$, $\mathrm{B}$, and $\mathrm{M}$ replaced respectively by $\mathrm{B}_\mathfrak{p}$, $\mathrm{C}_\mathfrak{p}$, and $\operatorname{gr}^*_{\mathfrak{J}_\mathfrak{p}}(\mathrm{M}_\mathfrak{p})$, we conclude that $\mathrm{Q}_\mathfrak{p}$ is a finite-type $\mathrm{C}_\mathfrak{p}$-module. Nakayama's lemma (and the fact that $\mathrm{C}=\mathrm{B}$) now shows that the images of the $q_h$ in $\mathrm{Q}_\mathfrak{p}$ generate this $\mathrm{C}_\mathfrak{p}$-module. This completes the proof of \sref{IV.11.2.9.6}, and also proves that $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a finitely presented $\mathrm{C}$-module.
+
+\medskip
+\noindent VI) \emph{End of the proof.} --- For brevity, set $\mathrm{C}_\lambda=\mathrm{C}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda$ (in fact equal to $\mathrm{B}_\lambda$), $\mathrm{N}_\lambda=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$, and $\mathrm{N}=\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$. First note that, for every integer $k$, $\mathfrak{J}^k\mathrm{M}$ identifies with $\varinjlim_\lambda\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ by exactness of the functor $\varinjlim_\lambda$: the image of $\mathfrak{J}_\lambda^k\mathrm{M}_\lambda$ in $\mathrm{M}_\mu$ for $\lambda\leqslant\mu$ (respectively in $\mathrm{M}$) generates $\mathfrak{J}_\mu^k\mathrm{M}_\mu$ (respectively $\mathfrak{J}^k\mathrm{M}$). Using exactness of $\varinjlim$ once more, we conclude that $\mathrm{N}$ identifies canonically with $\varinjlim_\lambda\mathrm{N}_\lambda$. With this identification, we shall first prove:
+\begin{equation}
+\label{IV.11.2.9.9}
+\tag{11.2.9.9}
+\text{\emph{For $\lambda$ sufficiently large, the canonical homomorphism $v_\lambda:\mathrm{N}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}\to\mathrm{N}$ is bijective.}}
+\end{equation}
+Since the $\mathrm{C}_\lambda$ are Noetherian and $\mathrm{N}_\lambda$ is a finite-type $\mathrm{C}_\lambda$-module, the $\mathrm{C}$-modules $\mathrm{N}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}$ are of finite presentation and form a filtered inductive system whose inductive limit identifies canonically with $\mathrm{N}$, since filtered colimits commute with tensor products. Moreover, the transition homomorphisms $v_{\mu\lambda}:\mathrm{N}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}\to\mathrm{N}_\mu\otimes_{\mathrm{A}_\mu}\mathrm{A}$
+----- French corrections on page IV-3 130 -----
+[id 17365]
+OLD: Le $C_0$-module $\operatorname{gr}_{\mathfrak J_0}^*(M_0)$
+NEW: Le $C_0$-module $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$
+FRENCH CONTEXT (corrected): p_{j\leq i}S_{0j}$, qui est un ouvert quasi-compact de
+$S_0$. Il y a donc une famille
+finie $(f_{ik})_{1\leq i\leq m,\,1\leq k\leq n}$ d'éléments de $A_0$ tels que pour
+chaque $i$, $U_{0i}$ soit réunion des $D(f_{ik})$ ($1\leq k\leq n$).
+
+\oldpage[IV-3]{130}
+
+Le $C_0$-module $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ est engendré par
+un nombre fini d'éléments homogènes de degré 0, de sorte qu'il y a un
+épimorphisme de $C_0$-modules gradués
+$u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$.
+Comme $C=C_0\otimes_{A_0}A$ et que l'homomorphisme canonique
+
+[id 17366]
+OLD: épimorphisme de $C_0$-modules gradués
+\[
+u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^*(M_0).
+\]
+
+NEW: épimorphisme de $C_0$-modules gradués
+$u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$.
+
+FRENCH CONTEXT (corrected): 0$ tels que pour
+chaque $i$, $U_{0i}$ soit réunion des $D(f_{ik})$ ($1\leq k\leq n$).
+
+\oldpage[IV-3]{130}
+
+Le $C_0$-module $\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$ est engendré par
+un nombre fini d'éléments homogènes de degré 0, de sorte qu'il y a un
+épimorphisme de $C_0$-modules gradués
+$u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$.
+Comme $C=C_0\otimes_{A_0}A$ et que l'homomorphisme canonique
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif, on déduit donc de
+$u_0$ un épimorphisme de $C$-modules gradués
+\[
+u:C^r\xri
+
+[id 17367]
+OLD: canonique
+$\operatorname{gr}_{\mathfrak J_0}^*(M_0)
+NEW: canonique
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)
+FRENCH CONTEXT (corrected): let(M_0)$ est engendré par
+un nombre fini d'éléments homogènes de degré 0, de sorte qu'il y a un
+épimorphisme de $C_0$-modules gradués
+$u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$.
+Comme $C=C_0\otimes_{A_0}A$ et que l'homomorphisme canonique
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif, on déduit donc de
+$u_0$ un épimorphisme de $C$-modules gradués
+\[
+u:C^r\xrightarrow{u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\longrightarrow\operato
+
+[id 17368]
+OLD: \to\operatorname{gr}_{\mathfrak J}^*(M)$ est surjectif
+NEW: \to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif
+FRENCH CONTEXT (corrected): 0, de sorte qu'il y a un
+épimorphisme de $C_0$-modules gradués
+$u_0:C_0^r\longrightarrow\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)$.
+Comme $C=C_0\otimes_{A_0}A$ et que l'homomorphisme canonique
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif, on déduit donc de
+$u_0$ un épimorphisme de $C$-modules gradués
+\[
+u:C^r\xrightarrow{u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(M),
+\]
+et tout revient à voir que le $C$-mo
+
+[id 17369]
+OLD: u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^*(M_0)
+NEW: u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)
+FRENCH CONTEXT (corrected): C_0\otimes_{A_0}A$ et que l'homomorphisme canonique
+$\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif, on déduit donc de
+$u_0$ un épimorphisme de $C$-modules gradués
+\[
+u:C^r\xrightarrow{u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(M),
+\]
+et tout revient à voir que le $C$-module gradué $Q=\operatorname{Ker}(u)$ est \emph{de type
+fini}.
+
+\begin{lemma}[11.2.9.6]
+\label{IV.11.2.9.6-fr}
+Sous les hypothèses précédentes, soi
+
+[id 17370]
+OLD: \longrightarrow\operatorname{gr}_{\mathfrak J}^*(M),
+NEW: \longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(M),
+FRENCH CONTEXT (corrected): hfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est surjectif, on déduit donc de
+$u_0$ un épimorphisme de $C$-modules gradués
+\[
+u:C^r\xrightarrow{u_0\otimes1_A}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A
+\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(M),
+\]
+et tout revient à voir que le $C$-module gradué $Q=\operatorname{Ker}(u)$ est \emph{de type
+fini}.
+
+\begin{lemma}[11.2.9.6]
+\label{IV.11.2.9.6-fr}
+Sous les hypothèses précédentes, soit $\mathfrak K_0$ un idéal de $A_0$~;
+posons
+$A'_0=A_0/\mathfrak K_0$, $B
+
+[id 17373]
+OLD: posons
+\[
+A'_0=A_0/\mathfrak R_0,\qquad
+B'_0=B_0\otimes_{A_0}A'_0=B_0/\mathfrak R_0B_0,\qquad
+\mathfrak J'_0=\mathfrak J_0B'_0,
+\]
+et $\mathfrak R=\mathfrak R_0A$, $A'=A/\mathfrak R$, et supposons
+NEW: posons
+$A'_0=A_0/\mathfrak K_0$, $B'_0=B_0\otimes_{A_0}A'_0=B_0/\mathfrak K_0B_0$,
+$\mathfrak J'_0=\mathfrak J_0B'_0$, $\mathfrak K=\mathfrak K_0A$, $A'=A/\mathfrak K$, et supposons
+FRENCH CONTEXT (corrected): rname{gr}_{\mathfrak J}^\bullet(M),
+\]
+et tout revient à voir que le $C$-module gradué $Q=\operatorname{Ker}(u)$ est \emph{de type
+fini}.
+
+\begin{lemma}[11.2.9.6]
+\label{IV.11.2.9.6-fr}
+Sous les hypothèses précédentes, soit $\mathfrak K_0$ un idéal de $A_0$~;
+posons
+$A'_0=A_0/\mathfrak K_0$, $B'_0=B_0\otimes_{A_0}A'_0=B_0/\mathfrak K_0B_0$,
+$\mathfrak J'_0=\mathfrak J_0B'_0$, $\mathfrak K=\mathfrak K_0A$, $A'=A/\mathfrak K$, et supposons en outre
+que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ soit un
+$A'_0$-module plat. Alors il existe un nombre fini d'éléments $q_h$
+\textup{(}$1\leq h\leq s$\textup{)} de $Q$ tels que, pour tout idéal premier
+$\mathfrak p\supset\mathfr
+
+[id 17374]
+OLD: que $\operatorname{gr}_{\mathfrak J'_0}^*(M_0\otimes_{A_0}A'_0)$ soit un
+NEW: que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ soit un
+FRENCH CONTEXT (corrected): les hypothèses précédentes, soit $\mathfrak K_0$ un idéal de $A_0$~;
+posons
+$A'_0=A_0/\mathfrak K_0$, $B'_0=B_0\otimes_{A_0}A'_0=B_0/\mathfrak K_0B_0$,
+$\mathfrak J'_0=\mathfrak J_0B'_0$, $\mathfrak K=\mathfrak K_0A$, $A'=A/\mathfrak K$, et supposons en outre
+que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ soit un
+$A'_0$-module plat. Alors il existe un nombre fini d'éléments $q_h$
+\textup{(}$1\leq h\leq s$\textup{)} de $Q$ tels que, pour tout idéal premier
+$\mathfrak p\supset\mathfrak KB$ de $B$, les images canoniques des $q_h$ dans
+$Q_\mathfrak p$ engendrent le $C_\ma
+
+[id 17375]
+OLD: ($1\leq h\leq s$) de $Q$
+NEW: \textup{(}$1\leq h\leq s$\textup{)} de $Q$
+FRENCH CONTEXT (corrected): _0$,
+$\mathfrak J'_0=\mathfrak J_0B'_0$, $\mathfrak K=\mathfrak K_0A$, $A'=A/\mathfrak K$, et supposons en outre
+que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ soit un
+$A'_0$-module plat. Alors il existe un nombre fini d'éléments $q_h$
+\textup{(}$1\leq h\leq s$\textup{)} de $Q$ tels que, pour tout idéal premier
+$\mathfrak p\supset\mathfrak KB$ de $B$, les images canoniques des $q_h$ dans
+$Q_\mathfrak p$ engendrent le $C_\mathfrak p$-module $Q_\mathfrak p$.
+\end{lemma}
+
+Supposons ce lemme démontré, et notons qu'on peut encore l'appli
+
+[id 17376]
+OLD: \mathfrak p\supset\mathfrak RB$ de $B$, les images
+NEW: \mathfrak p\supset\mathfrak KB$ de $B$, les images
+FRENCH CONTEXT (corrected): mathfrak K$, et supposons en outre
+que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ soit un
+$A'_0$-module plat. Alors il existe un nombre fini d'éléments $q_h$
+\textup{(}$1\leq h\leq s$\textup{)} de $Q$ tels que, pour tout idéal premier
+$\mathfrak p\supset\mathfrak KB$ de $B$, les images canoniques des $q_h$ dans
+$Q_\mathfrak p$ engendrent le $C_\mathfrak p$-module $Q_\mathfrak p$.
+\end{lemma}
+
+Supposons ce lemme démontré, et notons qu'on peut encore l'appliquer en
+remplaçant $A_0$ par $(A_0)_{t_0}$, $B_0$, $\mathfrak J_0$, $M_0$,
+$A_\lambda$
+
+[id 17380]
+OLD: recouvrent $S_0$, tout idéal premier
+NEW: recouvrent $S_0$, \emph{tout} idéal premier
+FRENCH CONTEXT (corrected): dule, pour tout
+idéal premier $\mathfrak p_{ik}$ de $B_{f_{ik}}$ contenant
+$\mathfrak K_{ik}B_{f_{ik}}$. On peut écrire, pour un entier $d>0$ convenable,
+$a_{ikh}=b_{ikh}/f_{ik}^d$ pour tous les indices $i$, $k$, $h$, avec
+$b_{ikh}\in Q$. Puisque les $S_{0i}$ recouvrent $S_0$, \emph{tout} idéal premier
+$\mathfrak p$ de $B$ est tel que son image dans $S_0$ appartienne à un
+ensemble $S_{0i}\cap D(f_{ik})$, donc l'image $\mathfrak p_{ik}$ de
+$\mathfrak p$ dans $B_{f_{ik}}$ contient $\mathfrak K_{ik}B_{f_{ik}}$. Comme
+les images des $b_{ikh}$ ($1\leq h\leq l$) 
+
+[id 17382]
+OLD: n$^\circ$~3,
+NEW: n\textsuperscript{o}~3,
+FRENCH CONTEXT (corrected): }$ ($1\leq h\leq l$) dans
+$Q_{\mathfrak p_{ik}}=Q_\mathfrak p$ engendrent ce $C_\mathfrak p$-module,
+on en conclut que les $b_{ikh}$
+($1\leq i\leq m$, $1\leq k\leq n$, $1\leq h\leq l$) engendrent le
+$C$-module $Q$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \S~3, n\textsuperscript{o}~3,
+th.~1).
+
+Reste à démontrer le lemme (11.2.9.6). Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat,
+donc $\operatorname
+
+[id 17383]
+OLD: Posons
+\[
+C'=C\otimes_AA'=C/\mathfrak RC,\qquad
+B'=B\otimes_AA',\qquad \mathfrak J'=\mathfrak JB',\qquad
+M'=M\otimes_AA'.
+\]
+
+NEW: Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+
+FRENCH CONTEXT (corrected): t ce $C_\mathfrak p$-module,
+on en conclut que les $b_{ikh}$
+($1\leq i\leq m$, $1\leq k\leq n$, $1\leq h\leq l$) engendrent le
+$C$-module $Q$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \S~3, n\textsuperscript{o}~3,
+th.~1).
+
+Reste à démontrer le lemme (11.2.9.6). Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat,
+donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie à
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2), et on a la
+suite exacte ($\mathbf 0_{\mathr
+
+[id 17384]
+OLD: Par hypothèse $\operatorname{gr}_{\mathfrak J}^*(M)$
+NEW: Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$
+FRENCH CONTEXT (corrected): l$) engendrent le
+$C$-module $Q$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \S~3, n\textsuperscript{o}~3,
+th.~1).
+
+Reste à démontrer le lemme (11.2.9.6). Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat,
+donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie à
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2), et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q\otimes_A
+
+[id 17385]
+OLD: donc $\operatorname{gr}_{\mathfrak J'}^*(M')$ s'identifie
+NEW: donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie
+FRENCH CONTEXT (corrected): xtsuperscript{o}~3,
+th.~1).
+
+Reste à démontrer le lemme (11.2.9.6). Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat,
+donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie à
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2), et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q\otimes_AA'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\b
+
+[id 17386]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(M)\otimes_AA'$ (11.2.9.2)
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2)
+FRENCH CONTEXT (corrected): . Posons
+$C'=C\otimes_AA'=C/\mathfrak KC$, $B'=B\otimes_AA'$, $\mathfrak J'=\mathfrak JB'$,
+$M'=M\otimes_AA'$.
+Par hypothèse $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat,
+donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie à
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2), et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q\otimes_AA'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0.
+\label{IV.11.2.9.7-fr}
+\tag{11.2.9.7}
+\en
+
+[id 17387]
+OLD: Q\otimes_AA'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^*(M')
+NEW: Q\otimes_AA'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+FRENCH CONTEXT (corrected): bullet(M)$ est un $A$-module plat,
+donc $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ s'identifie à
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)\otimes_AA'$ (11.2.9.2), et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q\otimes_AA'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0.
+\label{IV.11.2.9.7-fr}
+\tag{11.2.9.7}
+\end{equation}
+
+Posons $C'_0=C_0\otimes_{A_0}A'_0=C_0/\mathfrak K_0C_0$ et considérons
+l'épimorphisme de $C'_0$-modules gradués
+\[
+u'_0:C'_0{}^{r}\xrightarrow{u_0\otimes1_{A'_0}}
+\operatorname{gr}_{\math
+
+[id 17390]
+OLD: \operatorname{gr}_{\mathfrak J_0}^*(M_0)\otimes_{A_0}A'_0
+NEW: \operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A'_0
+FRENCH CONTEXT (corrected): mathfrak J'}^\bullet(M')
+\longrightarrow0.
+\label{IV.11.2.9.7-fr}
+\tag{11.2.9.7}
+\end{equation}
+
+Posons $C'_0=C_0\otimes_{A_0}A'_0=C_0/\mathfrak K_0C_0$ et considérons
+l'épimorphisme de $C'_0$-modules gradués
+\[
+u'_0:C'_0{}^{r}\xrightarrow{u_0\otimes1_{A'_0}}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A'_0
+\longrightarrow
+\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $
+
+[id 17391]
+OLD: \operatorname{gr}_{\mathfrak J'_0}^*(M_0\otimes_{A_0}A'_0).
+\]
+NEW: \operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+FRENCH CONTEXT (corrected): 
+\end{equation}
+
+Posons $C'_0=C_0\otimes_{A_0}A'_0=C_0/\mathfrak K_0C_0$ et considérons
+l'épimorphisme de $C'_0$-modules gradués
+\[
+u'_0:C'_0{}^{r}\xrightarrow{u_0\otimes1_{A'_0}}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A'_0
+\longrightarrow
+\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'i
+
+[id 17393]
+OLD: $\operatorname{gr}_{\mathfrak J'_0}^*(M_0\otimes_{A_0}A'_0)$ est un
+NEW: $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+FRENCH CONTEXT (corrected): \[
+u'_0:C'_0{}^{r}\xrightarrow{u_0\otimes1_{A'_0}}
+\operatorname{gr}_{\mathfrak J_0}^\bullet(M_0)\otimes_{A_0}A'_0
+\longrightarrow
+\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{e
+
+[id 17394]
+OLD: $A'_0$-module plat, on voit
+NEW: $A'_0$-module \emph{plat}, on voit
+FRENCH CONTEXT (corrected): hfrak J_0}^\bullet(M_0)\otimes_{A_0}A'_0
+\longrightarrow
+\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q_0\otime
+
+[id 17395]
+OLD: que son produit tensoriel sur $A'_0$ par $A'$
+NEW: que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+FRENCH CONTEXT (corrected): }A'_0
+\longrightarrow
+\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0).
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfr
+
+[id 17396]
+OLD: s'identifie à $\operatorname{gr}_{\mathfrak J'}^*(M')$ (11.2.9.2) et
+NEW: s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et
+FRENCH CONTEXT (corrected): 
+\]
+Soit $Q_0=\operatorname{Ker}(u'_0)$~; utilisant le fait que
+$\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)$ est un
+$A'_0$-module \emph{plat}, on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0,
+\label{IV.11.2.9.8-fr}
+\tag{11.2.9.8}
+
+
+[id 17397]
+OLD: Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^*(M')
+NEW: Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+FRENCH CONTEXT (corrected): , on voit que $\operatorname{gr}_{\mathfrak J'_0}^\bullet(M_0\otimes_{A_0}A'_0)\otimes_{A'_0}A'$
+s'identifie à $\operatorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0,
+\label{IV.11.2.9.8-fr}
+\tag{11.2.9.8}
+\end{equation}
+\oldpage[IV-3]{131}
+d'où, par comparaison avec (11.2.9.7), un isomorphisme de $C'$-modules
+gradués
+$Q\otimes_AA'\xrightarrow{\sim}Q_0\otimes_{A_0}A'$.
+
+Comme $C'_0$ est noethérien, $Q_0$ e
+
+[id 17398]
+OLD: \longrightarrow0.
+\label{IV.11.2.9.8-fr}
+NEW: \longrightarrow0,
+\label{IV.11.2.9.8-fr}
+FRENCH CONTEXT (corrected): eratorname{gr}_{\mathfrak J'}^\bullet(M')$ (11.2.9.2) et on a la
+suite exacte ($\mathbf 0_{\mathrm I}$, 6.1.2)
+\begin{equation}
+0\longrightarrow Q_0\otimes_{A'_0}A'\longrightarrow C'^{r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0,
+\label{IV.11.2.9.8-fr}
+\tag{11.2.9.8}
+\end{equation}
+\oldpage[IV-3]{131}
+d'où, par comparaison avec (11.2.9.7), un isomorphisme de $C'$-modules
+gradués
+$Q\otimes_AA'\xrightarrow{\sim}Q_0\otimes_{A_0}A'$.
+
+Comme $C'_0$ est noethérien, $Q_0$ est un $C'_0$-module de type fini, donc
+$Q
+
+=================== PAGE IV-3 131 ===================
+----- (English page IV-3 130: shown above in this file) -----
+----- (English page IV-3 131: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 132 -----
+\oldpage[IV-3]{132}
+
+for $\lambda\leqslant\mu$, as well as the homomorphisms $v_\lambda$, are
+\emph{surjective}. Fix $\lambda$, and regard $\operatorname{Ker}(v_{\mu\lambda})=\mathrm{N}'_\mu$
+as a $\mathrm{C}$-submodule of
+$\mathrm{N}_\lambda\otimes_{\mathrm{A}_\lambda}\mathrm{A}$. By the
+definition of the inductive limit, the $\mathrm{N}'_\mu$ form an
+increasing filtered family whose union is $\operatorname{Ker}(v_\lambda)$.
+We proved in V) that $\mathrm{N}$ is a finitely presented
+$\mathrm{C}$-module; consequently
+$\operatorname{Ker}(v_\lambda)$ is a finite-type $\mathrm{C}$-module
+(Bourbaki, \emph{Alg.\ comm.}, chap.~I, \S~2, no.~8, lemma~9). Hence
+there is an index $\mu\geqslant\lambda$ such that
+$\mathrm{N}'_\mu=\operatorname{Ker}(v_\lambda)$. Since $v_\mu$ is
+surjective, this equality says that $v_\mu$ is also injective, and
+therefore proves {\hyperref[IV.11.2.9]{(11.2.9.9)}}.
+
+After replacing $\mathrm{A}_0$ and $\mathrm{M}_0$ by
+$\mathrm{A}_\lambda$ and $\mathrm{M}_\lambda$ for a sufficiently large
+$\lambda$, we may therefore assume that the canonical homomorphism
+$v_\lambda$ is bijective for \emph{every} $\lambda$. Put $\mathrm{P}_\lambda
+=\mathrm{N}_0\otimes_{\mathrm{C}_0}\mathrm{C}_\lambda
+=\mathrm{N}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda$,
+so that $\mathrm{N}=\varinjlim\mathrm{P}_\lambda$. Since
+$\mathrm{C}_0$ is a finitely presented $\mathrm{A}_0$-algebra and
+$\mathrm{P}_0$ is a finitely presented $\mathrm{C}_0$-module,
+\sref{IV.11.2.6.1}, applied with
+$\mathrm{B}_0=\mathrm{C}_0$ and $\mathrm{M}_0=\mathrm{P}_0$, shows that
+there is an index $\lambda$ such that $\mathrm{P}_\mu$ is a flat
+$\mathrm{A}_\mu$-module for every $\mu\geqslant\lambda$. For such a
+$\mu$ we have a commutative diagram
+\[
+\xymatrix{
+  \mathrm{P}_\mu \ar[r] \ar[d]_{w_\mu} & \mathrm{N} \ar@{=}[d] \\
+  \mathrm{N}_\mu \ar[r] & \mathrm{N}
+}
+\]
+and the definitions show that $w_\mu$ is \emph{surjective}. By III), the
+homomorphism $\mathrm{A}_\mu\to\mathrm{A}$ is injective; since
+$\mathrm{P}_\mu$ is flat over $\mathrm{A}_\mu$, the canonical
+homomorphism $\mathrm{P}_\mu\longrightarrow
+\mathrm{N}
+=\mathrm{P}_\mu\otimes_{\mathrm{A}_\mu}\mathrm{A}$
+is therefore \emph{injective}. The preceding diagram now shows that
+$w_\mu$ is injective as well, hence bijective. Thus
+$\mathrm{N}_\mu$ is a flat $\mathrm{A}_\mu$-module for
+$\mu\geqslant\lambda$, which completes the proof of
+\sref{IV.11.2.9}.
+\end{proof}
+
+\begin{remark}[11.2.10]
+\label{IV.11.2.10}
+We do not know whether the analogue of Raynaud's theorem for the
+generalization of \sref{IV.11.2.6},~(i), is valid.
+\end{remark}
+
+\subsection{Application to the elimination of Noetherian hypotheses}
+\label{subsection:IV.11.3}
+\label{IV.11.3}
+----- English, source_aligned/ega4-11.tex, page IV-3 132 -----
+\oldpage[IV-3]{132}
+
+\begin{theorem}[11.3.1]
+\label{IV.11.3.1}
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism locally of finite
+presentation, and let $\sh{F}$ be a quasi-coherent
+$\sh{O}_\mathrm{X}$-Module of finite presentation. Then the set
+$\mathrm{U}$ of points $x\in\mathrm{X}$ at which $\sh{F}$ is
+$f$-flat is open in $\mathrm{X}$. If, in addition,
+$\operatorname{Supp}(\sh{F})=\mathrm{X}$, the restriction
+$f|_\mathrm{U}$ is an open morphism.
+\end{theorem}
+
+\begin{proof}
+The second assertion has already been proved in $(2.4.6)$ and is
+included here only for reference.
+
+Since the question is local on $\mathrm{X}$ and $\mathrm{Y}$, we may
+assume that both are affine and that $f$ is of finite presentation. Let
+$x\in\mathrm{X}$ be a point at which $\sh{F}$ is $f$-flat. Applying
+\sref{IV.11.2.7}, we may assume that
+\[
+  \mathrm{X}=\mathrm{X}_0\times_{\mathrm{Y}_0}\mathrm{Y},
+  \qquad
+  f=f_0\times 1,
+  \qquad
+  \sh{F}
+  =\sh{F}_0\otimes_{\sh{O}_{\mathrm{Y}_0}}\sh{O}_\mathrm{Y},
+\]
+where $\mathrm{Y}_0$ is Noetherian,
+$f_0:\mathrm{X}_0\to\mathrm{Y}_0$ is of finite type, and
+$\sh{F}_0$ is a coherent $\sh{O}_{\mathrm{X}_0}$-Module. Moreover, if
+$x_0$ is the canonical projection of $x$ in $\mathrm{X}_0$, we may
+assume that $\sh{F}_0$ is $f_0$-flat at $x_0$. By
+\sref{IV.11.1.1}, the set $\mathrm{U}_0$ of points of
+$\mathrm{X}_0$ at which $\sh{F}_0$ is $f_0$-flat is therefore a
+neighbourhood of $x_0$. It follows from $(2.1.4)$ that $\sh{F}$ is
+$f$-flat at every point of the inverse image of $\mathrm{U}_0$ in
+$\mathrm{X}$; thus $\mathrm{U}$ is a neighbourhood of $x$.
+\end{proof}
+----- French corrections on page IV-3 131 -----
+[id 17401]
+OLD: gradués
+\[
+Q\otimes_AA'\xrightarrow{\sim}Q_0\otimes_{A'_0}A'.
+\]
+Comme $C'_0$
+NEW: gradués
+$Q\otimes_AA'\xrightarrow{\sim}Q_0\otimes_{A'_0}A'$.
+
+Comme $C'_0$
+
+[id 17402]
+OLD: \xrightarrow{\sim}Q_0\otimes_{A'_0}A'
+NEW: \xrightarrow{\sim}Q_0\otimes_{A_0}A'
+FRENCH CONTEXT (corrected): {r}
+\xrightarrow{u\otimes1_{A'}}\operatorname{gr}_{\mathfrak J'}^\bullet(M')
+\longrightarrow0,
+\label{IV.11.2.9.8-fr}
+\tag{11.2.9.8}
+\end{equation}
+\oldpage[IV-3]{131}
+d'où, par comparaison avec (11.2.9.7), un isomorphisme de $C'$-modules
+gradués
+$Q\otimes_AA'\xrightarrow{\sim}Q_0\otimes_{A_0}A'$.
+
+Comme $C'_0$ est noethérien, $Q_0$ est un $C'_0$-module de type fini, donc
+$Q_0\otimes_{A'_0}A'$ est un $C'$-module gradué de type fini, et il en est par
+suite de même de $Q\otimes_AA'$~; soient $q_h$ ($1\leq h\leq s$) des éléments
+homogènes de $Q$ dont le
+
+[id 17403]
+OLD: \supset\mathfrak RB$ de $B$~; on a
+NEW: \supset\mathfrak KB$ de $B$~; on a
+FRENCH CONTEXT (corrected): gradué de type fini, et il en est par
+suite de même de $Q\otimes_AA'$~; soient $q_h$ ($1\leq h\leq s$) des éléments
+homogènes de $Q$ dont les images dans $Q\otimes_AA'$ engendrent ce
+$C'$-module.
+
+Considérons maintenant un idéal premier quelconque
+$\mathfrak p\supset\mathfrak KB$ de $B$~; on a
+$C_\mathfrak p=\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(B_\mathfrak p)$
+par platitude, et
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^0(B_\mathfrak p)
+=B_\mathfrak p/\mathfrak J_\mathfrak p$ est réduit à 0 ou est un anneau
+local~; pour prouver le 
+
+[id 17404]
+OLD: C_\mathfrak p=\operatorname{gr}_{\mathfrak J_\mathfrak p}^*(B_\mathfrak p)
+NEW: C_\mathfrak p=\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(B_\mathfrak p)
+FRENCH CONTEXT (corrected): r
+suite de même de $Q\otimes_AA'$~; soient $q_h$ ($1\leq h\leq s$) des éléments
+homogènes de $Q$ dont les images dans $Q\otimes_AA'$ engendrent ce
+$C'$-module.
+
+Considérons maintenant un idéal premier quelconque
+$\mathfrak p\supset\mathfrak KB$ de $B$~; on a
+$C_\mathfrak p=\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(B_\mathfrak p)$
+par platitude, et
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^0(B_\mathfrak p)
+=B_\mathfrak p/\mathfrak J_\mathfrak p$ est réduit à 0 ou est un anneau
+local~; pour prouver le lemme, on peut évidemment se borner au second cas. Il
+est clair alors que chacun d
+
+[id 17405]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(M)$ est un $A$-module plat entraîne
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat entraîne
+FRENCH CONTEXT (corrected): J_\mathfrak p}^i(B_\mathfrak p)$ est de
+présentation finie. D'autre part, pour tout indice $i$,
+$M/\mathfrak J^iM$ s'identifie à
+$(M_0/\mathfrak J_0^iM_0)\otimes_{A_0}A$, et est donc un $B$-module de
+présentation finie. Par récurrence sur $i$, l'hypothèse que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat entraîne, en
+vertu de ($\mathbf 0_{\mathrm I}$, 6.1.2) que $M/\mathfrak J^iM$ est un
+$A$-module plat. L'application de (11.2.6.1) où l'on remplace $M_0$ par
+$M_0/\mathfrak J_0^kM_0$ pour $k\leq i$ montre qu'il existe un indice
+$\lambda_i$ tel que, pour $\mu\geq\lambda
+
+[id 17407]
+OLD: ailleurs les images des $q_h$ dans
+\[
+Q_\mathfrak p\otimes_{B_\mathfrak p}k(\mathfrak p)
+=(Q\otimes_AA')_\mathfrak p\otimes_{A'}k(\mathfrak p)
+\]
+engendrent ce module sur
+$C_\mathfrak p\otimes_{B_\mathfrak p}k(\mathfrak p)$, puisque
+\[
+C_\mathfrak p\otimes_{B_\mathfrak p}k(\mathfrak p)
+=C'_\mathfrak p\otimes_{A'}k(\mathfrak p)~;
+\]
+comme on a la suite exacte
+NEW: ailleurs les images des $q_h$ dans
+$Q_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+=(Q\otimes_AA')_\mathfrak p\otimes_{A'}\boldsymbol{k}(\mathfrak p)$
+engendrent ce
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p))$-module
+(car $C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+=C'_\mathfrak p\otimes_{A'}\boldsymbol{k}(\mathfrak p)$)~;
+comme on a la suite exacte
+FRENCH CONTEXT (corrected): ) que chacun des
+$(B/\mathfrak J)$-modules $\operatorname{gr}_{\mathfrak J}^i(M)$ est de
+présentation finie, donc
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^i(M_\mathfrak p)$ est un
+$(B_\mathfrak p/\mathfrak J_\mathfrak p)$-module de présentation finie. Par
+ailleurs les images des $q_h$ dans
+$Q_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+=(Q\otimes_AA')_\mathfrak p\otimes_{A'}\boldsymbol{k}(\mathfrak p)$
+engendrent ce
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p))$-module
+(car $C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+=C'_\mathfrak p\otimes_{A'}\boldsymbol{k}(\mathfrak p)$)~;
+comme on a la suite exacte
+\[
+Q_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow C_\mathfrak p^{r}\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\b
+
+[id 17410]
+OLD: \longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^*(M_\mathfrak p)
+
+NEW: \longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+
+FRENCH CONTEXT (corrected): symbol{k}(\mathfrak p)
+=C'_\mathfrak p\otimes_{A'}\boldsymbol{k}(\mathfrak p)$)~;
+comme on a la suite exacte
+\[
+Q_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow C_\mathfrak p^{r}\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)\longrightarrow0
+\]
+on en conclut que
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)$ est un
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsy
+
+[id 17411]
+OLD: \otimes_{B_\mathfrak p}k(\mathfrak p)\longrightarrow0,
+\]
+NEW: \otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)\longrightarrow0
+\]
+FRENCH CONTEXT (corrected): omme on a la suite exacte
+\[
+Q_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow C_\mathfrak p^{r}\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)\longrightarrow0
+\]
+on en conclut que
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)$ est un
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p))$-module de présentation
+finie. Appliquant le le
+
+[id 17412]
+OLD: on en conclut que
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^*(M_\mathfrak p)
+NEW: on en conclut que
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+FRENCH CONTEXT (corrected): symbol{k}(\mathfrak p)
+\longrightarrow C_\mathfrak p^{r}\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)
+\longrightarrow
+\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)\longrightarrow0
+\]
+on en conclut que
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)
+\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p)$ est un
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p))$-module de présentation
+finie. Appliquant le lemme (11.2.9.4) où $A$, $B$, $M$ sont remplacés
+respectivement par $B_\mathfrak p$, $C_
+
+[id 17415]
+OLD: $\operatorname{gr}_{\mathfrak J_\mathfrak p}^*(M_\mathfrak p)$, on en conclut
+NEW: $\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)$, on en conclut
+FRENCH CONTEXT (corrected): hfrak p}\boldsymbol{k}(\mathfrak p)$ est un
+$(C_\mathfrak p\otimes_{B_\mathfrak p}\boldsymbol{k}(\mathfrak p))$-module de présentation
+finie. Appliquant le lemme (11.2.9.4) où $A$, $B$, $M$ sont remplacés
+respectivement par $B_\mathfrak p$, $C_\mathfrak p$ et
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)$, on en conclut
+que $Q_\mathfrak p$ est un $C_\mathfrak p$-module \emph{de type fini}. Utilisant
+maintenant le lemme de Nakayama (et le fait que $C=B$) on en déduit que les
+images des $q_h$ dans $Q_\mathfrak p$ engendrent ce $C_\mathfrak p$-module.
+Ceci achève de prouver le 
+
+[id 17416]
+OLD: $C_\mathfrak p$-module de type fini. Utilisant
+NEW: $C_\mathfrak p$-module \emph{de type fini}. Utilisant
+FRENCH CONTEXT (corrected): -module de présentation
+finie. Appliquant le lemme (11.2.9.4) où $A$, $B$, $M$ sont remplacés
+respectivement par $B_\mathfrak p$, $C_\mathfrak p$ et
+$\operatorname{gr}_{\mathfrak J_\mathfrak p}^\bullet(M_\mathfrak p)$, on en conclut
+que $Q_\mathfrak p$ est un $C_\mathfrak p$-module \emph{de type fini}. Utilisant
+maintenant le lemme de Nakayama (et le fait que $C=B$) on en déduit que les
+images des $q_h$ dans $Q_\mathfrak p$ engendrent ce $C_\mathfrak p$-module.
+Ceci achève de prouver le lemme (11.2.9.6) et le fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est 
+
+[id 17417]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(M)$ est un $C$-module
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $C$-module
+FRENCH CONTEXT (corrected): mathfrak p$-module \emph{de type fini}. Utilisant
+maintenant le lemme de Nakayama (et le fait que $C=B$) on en déduit que les
+images des $q_h$ dans $Q_\mathfrak p$ engendrent ce $C_\mathfrak p$-module.
+Ceci achève de prouver le lemme (11.2.9.6) et le fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $C$-module de présentation
+finie.
+
+\medskip
+\noindent VI) \emph{Fin de la démonstration.} --- Posons pour abréger
+$C_\lambda=C_0\otimes_{A_0}A_\lambda$ (égal en fait à $B_\lambda$),
+$N_\lambda=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ et
+$N=\operatorna
+
+[id 17419]
+OLD: $N_\lambda=\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)$
+NEW: $N_\lambda=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$
+FRENCH CONTEXT (corrected): (11.2.9.6) et le fait que
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $C$-module de présentation
+finie.
+
+\medskip
+\noindent VI) \emph{Fin de la démonstration.} --- Posons pour abréger
+$C_\lambda=C_0\otimes_{A_0}A_\lambda$ (égal en fait à $B_\lambda$),
+$N_\lambda=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ et
+$N=\operatorname{gr}_{\mathfrak J}^\bullet(M)$. Notons d'abord que pour chaque
+entier $k$, $\mathfrak J^kM$ s'identifie à
+$\varinjlim\mathfrak J_\lambda^kM_\lambda$ par exactitude du foncteur
+$\varinjlim$, l'image de $\mathfrak J_\lambda^kM_\lambda$ dans $
+
+[id 17420]
+OLD: $N=\operatorname{gr}_{\mathfrak J}^*(M)$
+NEW: $N=\operatorname{gr}_{\mathfrak J}^\bullet(M)$
+FRENCH CONTEXT (corrected):  un $C$-module de présentation
+finie.
+
+\medskip
+\noindent VI) \emph{Fin de la démonstration.} --- Posons pour abréger
+$C_\lambda=C_0\otimes_{A_0}A_\lambda$ (égal en fait à $B_\lambda$),
+$N_\lambda=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ et
+$N=\operatorname{gr}_{\mathfrak J}^\bullet(M)$. Notons d'abord que pour chaque
+entier $k$, $\mathfrak J^kM$ s'identifie à
+$\varinjlim\mathfrak J_\lambda^kM_\lambda$ par exactitude du foncteur
+$\varinjlim$, l'image de $\mathfrak J_\lambda^kM_\lambda$ dans $M_\mu$ pour
+$\lambda\leq\mu$ (resp. dans $M$) enge
+
+[id 17421]
+OLD: $\varinjlim$~; l'image
+NEW: $\varinjlim$, l'image
+FRENCH CONTEXT (corrected): mbda=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ et
+$N=\operatorname{gr}_{\mathfrak J}^\bullet(M)$. Notons d'abord que pour chaque
+entier $k$, $\mathfrak J^kM$ s'identifie à
+$\varinjlim\mathfrak J_\lambda^kM_\lambda$ par exactitude du foncteur
+$\varinjlim$, l'image de $\mathfrak J_\lambda^kM_\lambda$ dans $M_\mu$ pour
+$\lambda\leq\mu$ (resp. dans $M$) engendrant $\mathfrak J_\mu^kM_\mu$
+(resp. $\mathfrak J^kM$)~; utilisant encore l'exactitude de $\varinjlim$, on
+en conclut que $N$ s'identifie canoniquement à $\varinjlim
+
+[id 17422]
+OLD: nous allons d'abord prouver que~:
+\begin{equation}
+\text{\emph{Pour $\lambda$ assez grand, l'homomorphisme canonique
+$v_\lambda:N_\lambda\otimes_{A_\lambda}A\to N$ est bijectif.}}
+\label{IV.11.2.9.9-fr}
+\tag{11.2.9.9}
+\end{equation}
+Comme les
+NEW: nous allons d'abord prouver que~:
+
+\begin{env}[11.2.9.9]
+\label{IV.11.2.9.9-fr}
+\emph{Pour $\lambda$ assez grand, l'homomorphisme canonique
+$v_\lambda:N_\lambda\otimes_{A_\lambda}A\to N$ est bijectif.}
+\end{env}
+
+Comme les
+FRENCH CONTEXT (corrected): M_\mu$ pour
+$\lambda\leq\mu$ (resp. dans $M$) engendrant $\mathfrak J_\mu^kM_\mu$
+(resp. $\mathfrak J^kM$)~; utilisant encore l'exactitude de $\varinjlim$, on
+en conclut que $N$ s'identifie canoniquement à $\varinjlim N_\lambda$. Faisant
+cette identification, nous allons d'abord prouver que~:
+
+\begin{env}[11.2.9.9]
+\label{IV.11.2.9.9-fr}
+\emph{Pour $\lambda$ assez grand, l'homomorphisme canonique
+$v_\lambda:N_\lambda\otimes_{A_\lambda}A\to N$ est bijectif.}
+\end{env}
+
+Comme les $C_\lambda$ sont noethériens et $N_\lambda$ un $C_\lambda$-module
+de type fini, les $C$-modules $N_\lambda\otimes_{A_\lambda}A$ sont de
+présentation finie et forment un système inductif filtrant, dont la limite
+inductive s'identifie canoniquement à $N$ en ver
+
+=================== PAGE IV-3 132 ===================
+----- (English page IV-3 131: shown above in this file) -----
+----- (English page IV-3 132: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 133 -----
+\oldpage[IV-3]{133}
+
+\begin{corollary}[11.3.2]
+\label{IV.11.3.2}
+Let $f:\mathrm{X}\to\mathrm{Y}$, $g:\mathrm{Y}\to\mathrm{Z}$ be two morphisms of finite presentation, $\sh{F}$ an $\sh{O}_\mathrm{X}$-Module quasi-coherent of finite presentation. Then the set $\mathrm{U}$ of $y\in\mathrm{Y}$ such that, for every generization $y'$ of $y$, $\sh{F}$ is $(g\circ f)$-flat at all the points of $f^{-1}(y')$ (i.e.\ such that $\sh{F}\otimes_\mathrm{Y}\Spec(\sh{O}_{\mathrm{Y},y})$ is flat relative to the morphism $\mathrm{X}\times_\mathrm{Y}\Spec(\sh{O}_{\mathrm{Y},y})\to\mathrm{Z}$) is open in $\mathrm{Y}$.
+\end{corollary}
+
+\begin{proof}
+The same reasoning as in \sref{IV.11.1.5} shows that if $\mathrm{V}$ is the set of $x\in\mathrm{X}$ where $\sh{F}$ is $(g\circ f)$-flat, $\mathrm{U}$ is the set of $y\in\mathrm{Y}$ whose every generization belongs to $\mathrm{E}=\mathrm{Y}-f(\mathrm{X}-\mathrm{V})$. As $g\circ f$ is of finite presentation, $\mathrm{V}$ is open in $\mathrm{X}$ by virtue of \sref{IV.11.3.1}, and hence $\mathrm{V}$ is ind-constructible $(1.9.6)$, and hence $\mathrm{X}-\mathrm{V}$ is pro-constructible; but as $f$ is quasi-compact, $f(\mathrm{X}-\mathrm{V})$ is pro-constructible in $\mathrm{Y}$ $(1.9.5,~(\mathrm{vii}))$, and hence $\mathrm{E}$ is ind-constructible in $\mathrm{Y}$. It then follows from $(1.10.1)$ that $\mathrm{U}$ is the interior of $\mathrm{E}$, and is therefore open in $\mathrm{Y}$.
+\end{proof}
+
+\begin{corollary}[11.3.3]
+\label{IV.11.3.3}
+Let $\mathrm{A}$ be a ring, $\mathrm{B}$ an $\mathrm{A}$-algebra of finite presentation, $\mathrm{C}$ a $\mathrm{B}$-algebra of finite presentation, $\mathrm{M}$ a $\mathrm{C}$-module of finite presentation. Then the set of $\mathfrak{q}\in\Spec(\mathrm{B})$ such that $\mathrm{M}_\mathfrak{q}$ is a flat $\mathrm{A}$-module is open in $\Spec(\mathrm{B})$.
+\end{corollary}
+
+\begin{proposition}[11.3.4]
+\label{IV.11.3.4}
+Let $f:\mathrm{X}\to\mathrm{S}$ be a morphism locally of finite presentation, $\mathscr{J}$ a quasi-coherent Ideal of finite type of $\sh{O}_\mathrm{X}$, $\mathrm{Y}$ the closed sub-prescheme of $\mathrm{X}$ defined by $\mathscr{J}$, $\sh{F}$ an $\sh{O}_\mathrm{X}$-Module of finite presentation. Suppose that $\operatorname{gr}^*_\mathscr{J}(\sh{F})$ is $f$-flat. Under these conditions:
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item $\sh{F}$ is $f$-flat at the points of $\mathrm{Y}$.
+  \item If $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ is $f$-flat, $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ is an $(\sh{O}_\mathrm{X}/\mathscr{J})$-Algebra of finite presentation and $\operatorname{gr}^*_\mathscr{J}(\sh{F})$ is an $(\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X}))$-Module of finite presentation.
+  \item Suppose $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ is $f$-flat (which implies that $\sh{O}_\mathrm{X}/\mathscr{J}$ is $f$-flat). Then the set $\mathrm{W}$ of $y\in\mathrm{Y}$ such that $(\operatorname{gr}^*_\mathscr{J}(\sh{F}))_y$ is a flat $(\sh{O}_\mathrm{X}/\mathscr{J})_y$-module is open in $\mathrm{Y}$.
+  \item Suppose $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ is $f$-flat. Let $\mathrm{S}'\to\mathrm{S}$ be any morphism, let $\mathrm{X}'=\mathrm{X}\times_\mathrm{S}\mathrm{S}'$, and let $p:\mathrm{X}'\to\mathrm{X}$ be the canonical projection. Set $\mathrm{Y}'=p^{-1}(\mathrm{Y})=\mathrm{Y}\times_\mathrm{S}\mathrm{S}'$, the closed sub-prescheme of $\mathrm{X}'$ defined by $\mathscr{J}'=p^*(\mathscr{J})\sh{O}_{\mathrm{X}'}$, and set $\sh{F}'=p^*(\sh{F})=\sh{F}\otimes_{\sh{O}_\mathrm{S}}\sh{O}_{\mathrm{S}'}$. Then, if $\mathrm{W}'=p^{-1}(\mathrm{W})$, one has $\operatorname{gr}^*_{\mathscr{J}'}(\sh{F}')|_{\mathrm{W}'}\cong p^*(\operatorname{gr}^*_\mathscr{J}(\sh{F})|_\mathrm{W})$, and $\operatorname{gr}^*_{\mathscr{J}'}(\sh{F}')$ is a flat $(\sh{O}_{\mathrm{X}'}/\mathscr{J}')$-Module at the points of $\mathrm{W}'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The questions being local on $\mathrm{X}$ and $\mathrm{S}$, we may suppose that
+$\mathrm{S}=\Spec(\mathrm{A})$ and $\mathrm{X}=\Spec(\mathrm{B})$ are affine,
+where $\mathrm{B}$ is an $\mathrm{A}$-algebra of finite presentation, that
+$\sh{F}=\widetilde{\mathrm{M}}$, where $\mathrm{M}$ is a
+$\mathrm{B}$-module of finite presentation, and that
+$\mathscr{J}=\widetilde{\mathfrak{J}}$, where $\mathfrak{J}$ is an ideal
+of finite type of $\mathrm{B}$. By virtue of $(8.9.1)$ and $(8.5.11)$,
+there exist a Noetherian subring $\mathrm{A}_0$ of $\mathrm{A}$, an
+$\mathrm{A}_0$-algebra of finite type $\mathrm{B}_0$ such that
+$\mathrm{B}=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}$, an ideal
+$\mathfrak{J}_0$ of $\mathrm{B}_0$ such that
+$\mathfrak{J}=\mathfrak{J}_0\mathrm{B}$, and a finite-type
+$\mathrm{B}_0$-module $\mathrm{M}_0$ such that
+$\mathrm{M}=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}
+=\mathrm{M}_0\otimes_{\mathrm{B}_0}\mathrm{B}$. Moreover,
+$\mathrm{A}$ is the inductive limit of its finite-type
+$\mathrm{A}_0$-subalgebras $\mathrm{A}_\lambda$. Set
+$\mathrm{B}_\lambda=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda$,
+$\mathrm{M}_\lambda=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda
+=\mathrm{M}_0\otimes_{\mathrm{B}_0}\mathrm{B}_\lambda$, and
+$\mathfrak{J}_\lambda=\mathfrak{J}_0\mathrm{B}_\lambda$, so that
+$\mathrm{B}=\varinjlim\mathrm{B}_\lambda$ and
+$\mathrm{M}=\varinjlim\mathrm{M}_\lambda$. By hypothesis,
+$\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is a flat
+$\mathrm{A}$-module; hence it follows from \sref{IV.11.2.9} that there
+exists $\lambda$ such that
+$\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$ is a
+flat $\mathrm{A}_\lambda$-module. To prove that $\sh{F}$ is $f$-flat at
+the points of $\mathrm{Y}$, we may therefore restrict to the case where
+$\mathrm{S}$ is Noetherian; but then $(\mathbf{0}_\mathrm{I},~6.1.2)$,
+applied by induction on $n$, proves that the
+$\sh{F}/\mathscr{J}^{n+1}\sh{F}$ are $f$-flat, and one concludes by
+$(\mathbf{0}_{\mathrm{III}},~10.2.6)$.
+----- French corrections on page IV-3 132 -----
+[id 17428]
+OLD: n$^\circ$~8
+NEW: n\textsuperscript{o}~8
+FRENCH CONTEXT (corrected):  famille filtrante croissante
+de sous-$C$-modules de $\operatorname{Ker}(v_\lambda)$, dont la réunion est
+$\operatorname{Ker}(v_\lambda)$~; mais on a vu dans V) que $N$ est un $C$-module de
+présentation finie, donc (Bourbaki, \emph{Alg. comm.}, chap.~I, \S~2,
+n\textsuperscript{o}~8, lemme 9) $\operatorname{Ker}(v_\lambda)$ est un $C$-module \emph{de type fini}~; il
+existe par suite un indice $\mu\geq\lambda$ tel que
+$N'_\mu=\operatorname{Ker}(v_\lambda)$, ce qui signifie (vu le fait que $v_{\mu\lambda}$ est
+surjectif) que $v_\mu$ est \e
+
+[id 17430]
+OLD: $C$-module de type fini~; il
+NEW: $C$-module \emph{de type fini}~; il
+FRENCH CONTEXT (corrected): (v_\lambda)$, dont la réunion est
+$\operatorname{Ker}(v_\lambda)$~; mais on a vu dans V) que $N$ est un $C$-module de
+présentation finie, donc (Bourbaki, \emph{Alg. comm.}, chap.~I, \S~2,
+n\textsuperscript{o}~8, lemme 9) $\operatorname{Ker}(v_\lambda)$ est un $C$-module \emph{de type fini}~; il
+existe par suite un indice $\mu\geq\lambda$ tel que
+$N'_\mu=\operatorname{Ker}(v_\lambda)$, ce qui signifie (vu le fait que $v_{\mu\lambda}$ est
+surjectif) que $v_\mu$ est \emph{injectif}~; comme il est surjectif, cela
+prouve (11.2.9.9).
+
+Quitte à remplacer $
+
+[id 17432]
+OLD: $A_\mu$-module
+plat. Or
+NEW: $A_\mu$-module
+\emph{plat}. Or
+FRENCH CONTEXT (corrected): . Comme $C_0$ est une $A_0$-algèbre de présentation
+finie et $P_0$ un $C_0$-module de présentation finie, on peut appliquer à
+$C$ et $N$ le résultat de (11.2.6.1) et on voit donc qu'il existe un indice
+$\lambda$ tel que, pour $\mu\geq\lambda$, $P_\mu$ soit un $A_\mu$-module
+\emph{plat}. Or, pour $\mu\geq\lambda$, on a un diagramme commutatif
+\[
+\xymatrix{
+P_\mu \ar[r] \ar[d]_{w_\mu} & N \ar@{=}[d] \\
+N_\mu \ar[r] & N
+}
+\]
+où il résulte des définitions que $w_\mu$ est \emph{surjectif}. Comme, en
+vertu de III), les homomorphismes $A_\mu\to A$ son
+
+[id 17434]
+OLD: est un $A_\mu$-module plat, l'homomorphisme
+NEW: est un $A_\mu$-module \emph{plat}, l'homomorphisme
+FRENCH CONTEXT (corrected):  a un diagramme commutatif
+\[
+\xymatrix{
+P_\mu \ar[r] \ar[d]_{w_\mu} & N \ar@{=}[d] \\
+N_\mu \ar[r] & N
+}
+\]
+où il résulte des définitions que $w_\mu$ est \emph{surjectif}. Comme, en
+vertu de III), les homomorphismes $A_\mu\to A$ sont injectifs et que $P_\mu$
+est un $A_\mu$-module \emph{plat}, l'homomorphisme canonique
+$P_\mu\to N=P_\mu\otimes_{A_\mu}A$ est \emph{injectif}~; on conclut donc du
+diagramme commutatif précédent que $w_\mu$ est aussi \emph{injectif}, donc bijectif,
+et par suite $N_\mu$ est un $A_\mu$-module \emph{plat} pour $\mu\geq\lambda$, ce qui
+ach
+
+[id 17435]
+OLD: est aussi injectif, donc
+NEW: est aussi \emph{injectif}, donc
+FRENCH CONTEXT (corrected): en
+vertu de III), les homomorphismes $A_\mu\to A$ sont injectifs et que $P_\mu$
+est un $A_\mu$-module \emph{plat}, l'homomorphisme canonique
+$P_\mu\to N=P_\mu\otimes_{A_\mu}A$ est \emph{injectif}~; on conclut donc du
+diagramme commutatif précédent que $w_\mu$ est aussi \emph{injectif}, donc bijectif,
+et par suite $N_\mu$ est un $A_\mu$-module \emph{plat} pour $\mu\geq\lambda$, ce qui
+achève de prouver (11.2.9).
+\end{proof}
+
+\begin{remark}[11.2.10]
+\label{IV.11.2.10-fr}
+Nous ignorons si la généralisation de (11.2.6, (i)) analogue au th. de Raynau
+
+[id 17436]
+OLD: $N_\mu$ est un $A_\mu$-module plat pour
+NEW: $N_\mu$ est un $A_\mu$-module \emph{plat} pour
+FRENCH CONTEXT (corrected): injectifs et que $P_\mu$
+est un $A_\mu$-module \emph{plat}, l'homomorphisme canonique
+$P_\mu\to N=P_\mu\otimes_{A_\mu}A$ est \emph{injectif}~; on conclut donc du
+diagramme commutatif précédent que $w_\mu$ est aussi \emph{injectif}, donc bijectif,
+et par suite $N_\mu$ est un $A_\mu$-module \emph{plat} pour $\mu\geq\lambda$, ce qui
+achève de prouver (11.2.9).
+\end{proof}
+
+\begin{remark}[11.2.10]
+\label{IV.11.2.10-fr}
+Nous ignorons si la généralisation de (11.2.6, (i)) analogue au th. de Raynaud,
+est valable.
+\end{remark}
+
+\subsection{Application à l'élimination 
+
+[id 17437]
+OLD: \subsection{Application à l'élimination d'hypothèses noethériennes}
+NEW: \subsection{Application à l'élimination d'hypothèses noethériennes.}
+FRENCH CONTEXT (corrected): $ est un $A_\mu$-module \emph{plat} pour $\mu\geq\lambda$, ce qui
+achève de prouver (11.2.9).
+\end{proof}
+
+\begin{remark}[11.2.10]
+\label{IV.11.2.10-fr}
+Nous ignorons si la généralisation de (11.2.6, (i)) analogue au th. de Raynaud,
+est valable.
+\end{remark}
+
+\subsection{Application à l'élimination d'hypothèses noethériennes.}
+\label{subsection:IV.11.3-fr}
+\label{IV.11.3-fr}
+
+\begin{theorem}[11.3.1]
+\label{IV.11.3.1-fr}
+Soient $f:X\to Y$ un morphisme localement de présentation finie,
+$\mathcal F$ un $\mathcal O_X$-Module quasi-cohérent de présentation finie.
+Alors l'ensemble $U$ de
+
+[id 17438]
+OLD: peut supposer que
+\[
+X=X_0\times_{Y_0}Y,\qquad f=f_0\times1,\qquad
+\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y,
+\]
+où $Y_0$
+NEW: peut supposer que
+$X=X_0\times_{Y_0}Y$, $f=f_0\times1$,
+$\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$,
+où $Y_0$
+FRENCH CONTEXT (corrected): nsérée que pour
+mémoire.
+
+La question étant locale sur $X$ et $Y$, on peut supposer que $X$ et $Y$ sont
+affines, et que $f$ est un morphisme de présentation finie. Soit $x\in X$ un
+point tel que $\mathcal F$ soit $f$-plat au point $x$. Appliquant (11.2.7), on
+peut supposer que
+$X=X_0\times_{Y_0}Y$, $f=f_0\times1$,
+$\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$,
+où $Y_0$ est noethérien, $f_0:X_0\to Y_0$ un morphisme de type fini,
+$\mathcal F_0$ un $\mathcal O_{X_0}$-Module cohérent~; en outre, si $x_0$ est la
+projection canonique de $x$ dans $X_0$, on peut supposer que $\mathcal F_0$ est
+$f_0$-plat au point $x_0$. Alors, en v
+
+=================== PAGE IV-3 133 ===================
+----- (English page IV-3 132: shown above in this file) -----
+----- (English page IV-3 133: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 134 -----
+\oldpage[IV-3]{134}
+
+The proof of (ii) reduces similarly to the case where $\mathrm{S}$ is Noetherian, using \sref{IV.11.2.9}; the conclusion is then evident, since in this case $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ is a $(\mathrm{B}/\mathfrak{J})$-algebra of finite type and $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is an $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$-module of finite type.
+
+To prove (iii), one reduces as in (i) to the case where $\mathrm{S}$ and $\mathrm{X}$ are affine. With the same notation, one may suppose, by virtue of \sref{IV.11.2.9}, that $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{B}_\lambda)$ and $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$ are flat $\mathrm{A}_\lambda$-modules and that
+\[
+\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})
+=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{B}_\lambda)\otimes_{\mathrm{A}_\lambda}\mathrm{A},
+\qquad
+\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})
+=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)\otimes_{\mathrm{A}_\lambda}\mathrm{A}.
+\]
+Consequently, $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ is a $(\mathrm{B}/\mathfrak{J})$-algebra of finite presentation and $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$ is an $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$-module of finite presentation. If $\mathrm{W}^m$ is the set of $\mathfrak{p}\in\Spec(\mathrm{B}/\mathfrak{J})$ such that $\operatorname{gr}^m_\mathfrak{J}(\mathrm{M})_{\mathfrak{p}}$ is a flat $(\mathrm{B}/\mathfrak{J})_{\mathfrak{p}}$-module, then $\mathrm{W}^m$ is open in $\Spec(\mathrm{B}/\mathfrak{J})$ by \sref{IV.11.3.1}, and $\mathrm{W}=\bigcap_m\mathrm{W}^m$; thus $\mathrm{W}$ is stable under generization. Assertion (iii) now follows from \sref{IV.11.3.2}, applied with $\mathrm{X}=\Spec(\operatorname{gr}^*_\mathfrak{J}(\mathrm{B}))$, $\mathrm{Y}=\mathrm{Z}=\Spec(\mathrm{B}/\mathfrak{J})$, and $\sh{F}=(\operatorname{gr}^*_\mathfrak{J}(\mathrm{M}))^\sim$.
+
+Finally, (iv) follows immediately from \sref{IV.11.2.9.2}.
+
+Generalising the definition of $(6.10.1)$, let $\mathrm{Y}$ be a closed sub-prescheme of a prescheme $\mathrm{X}$, defined by a quasi-coherent ideal $\mathscr{J}$ of $\sh{O}_\mathrm{X}$, and let $\sh{F}$ be a quasi-coherent $\sh{O}_\mathrm{X}$-Module. One says that $\sh{F}$ is \emph{normally flat along $\mathrm{Y}$ at a point $y$} if $(\operatorname{gr}^*_\mathscr{J}(\sh{F}))_y$ is a flat $\sh{O}_{\mathrm{Y},y}$-module. One says that $\sh{F}$ is \emph{normally flat along $\mathrm{Y}$} if this is so at every point of $\mathrm{Y}$.
+\end{proof}
+
+\begin{corollary}[11.3.5]
+\label{IV.11.3.5}
+Under the general hypotheses of \sref{IV.11.3.4}, suppose that $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ and $\operatorname{gr}^*_\mathscr{J}(\sh{F})$ are $f$-flat. Then the set $\mathrm{W}$ of $y\in\mathrm{Y}$ such that $\sh{F}$ is normally flat along $\mathrm{Y}$ at the point $y$ is open in $\mathrm{Y}$, and (with the notations of \sref{IV.11.3.4},~(iv))) $\sh{F}'$ is normally flat along $\mathrm{Y}'$ at all points of $\mathrm{W}'=p^{-1}(\mathrm{W})$.
+\end{corollary}
+
+\begin{proposition}[11.3.6]
+\label{IV.11.3.6}
+The notations being those of $(8.5.1)$ and $(8.8.1)$, suppose $\mathrm{S}_\alpha$ quasi-compact, $\mathrm{X}_\alpha$ of finite presentation over $\mathrm{S}_\alpha$, $\mathrm{Y}_\alpha$ a closed sub-prescheme of $\mathrm{X}_\alpha$ defined by a quasi-coherent Ideal $\mathscr{J}_\alpha$ of finite type of $\sh{O}_{\mathrm{X}_\alpha}$; suppose that $\operatorname{gr}^*_{\mathscr{J}_\alpha}(\sh{O}_{\mathrm{X}_\alpha})$ is flat on $\mathrm{S}_\alpha$; finally suppose that $\sh{F}_\alpha$ is an $\sh{O}_{\mathrm{X}_\alpha}$-Module of finite presentation. For $\sh{F}$ to be normally flat along $\mathrm{Y}$, it is necessary and sufficient that there exist $\lambda$ such that $\sh{F}_\lambda$ be normally flat along $\mathrm{Y}_\lambda$.
+\end{proposition}
+
+\begin{proof}
+Note that $\mathrm{Y}$ (resp.\ $\mathrm{Y}_\lambda$) is the closed sub-prescheme of $\mathrm{X}$ (resp.\ $\mathrm{X}_\lambda$) defined by $\mathscr{J}=\mathscr{J}_\alpha\sh{O}_\mathrm{X}$ (resp.\ $\mathscr{J}_\lambda=\mathscr{J}_\alpha\sh{O}_{\mathrm{X}_\lambda}$). By the hypothesis and \sref{IV.11.2.9.2}, one has
+\[
+\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})
+=\operatorname{gr}^*_{\mathscr{J}_\alpha}(\sh{O}_{\mathrm{X}_\alpha})
+ \otimes_{\sh{O}_{\mathrm{S}_\alpha}}\sh{O}_\mathrm{S},
+\qquad
+\operatorname{gr}^*_{\mathscr{J}_\lambda}(\sh{O}_{\mathrm{X}_\lambda})
+=\operatorname{gr}^*_{\mathscr{J}_\alpha}(\sh{O}_{\mathrm{X}_\alpha})
+ \otimes_{\sh{O}_{\mathrm{S}_\alpha}}\sh{O}_{\mathrm{S}_\lambda}
+\quad(\lambda\geqslant\alpha),
+\]
+and $\operatorname{gr}^*_\mathscr{J}(\sh{O}_\mathrm{X})$ (resp.\ $\operatorname{gr}^*_{\mathscr{J}_\lambda}(\sh{O}_{\mathrm{X}_\lambda})$) is flat over $\mathrm{S}$ (resp.\ $\mathrm{S}_\lambda$). It follows that $\mathrm{Y}$ is flat over $\mathrm{S}$ (resp.\ $\mathrm{Y}_\lambda$ is flat over $\mathrm{S}_\lambda$). If $\sh{F}_\lambda$ is normally flat along $\mathrm{Y}_\lambda$, then $\left.\operatorname{gr}^*_{\mathscr{J}_\lambda}(\sh{F}_\lambda)\right|_{\mathrm{Y}_\lambda}$ is flat over $\mathrm{Y}_\lambda$, hence also over $\mathrm{S}_\lambda$; and since
+\[
+\left.\operatorname{gr}^n_{\mathscr{J}_\lambda}(\sh{F}_\lambda)\right|_{\mathrm{X}_\lambda\setminus\mathrm{Y}_\lambda}=0
+\quad\text{for }n\geqslant0,
+\]
+$\operatorname{gr}^*_{\mathscr{J}_\lambda}(\sh{F}_\lambda)$ is flat over $\mathrm{S}_\lambda$. By \sref{IV.11.2.9.2},
+\[
+\operatorname{gr}^*_\mathscr{J}(\sh{F})
+=\operatorname{gr}^*_{\mathscr{J}_\lambda}(\sh{F}_\lambda)
+ \otimes_{\sh{O}_{\mathrm{S}_\lambda}}\sh{O}_\mathrm{S},
+\]
+so $\sh{F}$ is normally flat along $\mathrm{Y}$.
+
+Conversely, one may suppose that $\mathrm{S}_\alpha$ and $\mathrm{X}_\alpha$ are affine and adopt the notation of \sref{IV.11.2.9}. Since $\operatorname{gr}^*_\mathfrak{J}(\mathrm{B})$ is a flat $\mathrm{A}$-module, the same is true of $\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})$; hence, by \sref{IV.11.2.9}, there exists $\lambda\geqslant\alpha$ such that $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$ is a flat $\mathrm{A}_\lambda$-module and
+\[
+\operatorname{gr}^*_\mathfrak{J}(\mathrm{M})
+=\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)
+ \otimes_{\mathrm{A}_\lambda}\mathrm{A}.
+\]
+Moreover, by \sref{IV.11.3.4},~(ii), $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{M}_\lambda)$ is an $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{B}_\lambda)$-module of finite presentation and $\operatorname{gr}^*_{\mathfrak{J}_\lambda}(\mathrm{B}_\lambda)$ is a $(\mathrm{B}_\lambda/\mathfrak{J}_\lambda)$-algebra of finite presentation. The conclusion now follows from \sref{IV.11.2.6}.
+\end{proof}
+----- French corrections on page IV-3 133 -----
+[id 17439]
+OLD: (i.e. tels que
+NEW: \textup{(i.e.} tels que
+FRENCH CONTEXT (corrected): rphismes de présentation finie,
+$\mathcal F$ un $\mathcal O_X$-Module quasi-cohérent de présentation finie.
+Alors l'ensemble $U$ des $y\in Y$ tels que, pour toute générisation $y'$ de
+$y$, $\mathcal F$ soit $(g\circ f)$-plat en tous les points de $f^{-1}(y')$
+\textup{(i.e.} tels que $\mathcal F\otimes_Y\operatorname{Spec}(\mathcal O_{Y,y})$
+soit plat relativement au morphisme
+$X\times_Y\operatorname{Spec}(\mathcal O_{Y,y})\to Z$\textup{)} est ouvert dans $Y$.
+\end{corollary}
+
+Le même raisonnement que dans (11.1.5) montre que si $V$ est l
+
+[id 17440]
+OLD: \to Z$) est ouvert
+NEW: \to Z$\textup{)} est ouvert
+FRENCH CONTEXT (corrected): érisation $y'$ de
+$y$, $\mathcal F$ soit $(g\circ f)$-plat en tous les points de $f^{-1}(y')$
+\textup{(i.e.} tels que $\mathcal F\otimes_Y\operatorname{Spec}(\mathcal O_{Y,y})$
+soit plat relativement au morphisme
+$X\times_Y\operatorname{Spec}(\mathcal O_{Y,y})\to Z$\textup{)} est ouvert dans $Y$.
+\end{corollary}
+
+Le même raisonnement que dans (11.1.5) montre que si $V$ est l'ensemble des
+$x\in X$ où $\mathcal F$ est $(g\circ f)$-plat, $U$ est l'ensemble des $y\in Y$
+dont toute générisation appartient à $E=Y\setmin f(X\setmin V)$. Comme $g\ci
+
+[id 17441]
+OLD: $E=Y-f(X-V)$
+NEW: $E=Y\setmin f(X\setmin V)$
+FRENCH CONTEXT (corrected): cal O_{Y,y})\to Z$\textup{)} est ouvert dans $Y$.
+\end{corollary}
+
+Le même raisonnement que dans (11.1.5) montre que si $V$ est l'ensemble des
+$x\in X$ où $\mathcal F$ est $(g\circ f)$-plat, $U$ est l'ensemble des $y\in Y$
+dont toute générisation appartient à $E=Y\setmin f(X\setmin V)$. Comme $g\circ f$ est de
+présentation finie, $V$ est ouvert dans $X$ en vertu de (11.3.1), donc
+ind-constructible (1.9.6), et par suite $X\setmin V$ est pro-constructible~; mais comme
+$f$ est quasi-compact, $f(X\setmin V)$ est pro-constructible dans $Y$ (1.9.
+
+[id 17442]
+OLD: et par suite $X-V$ est
+NEW: et par suite $X\setmin V$ est
+FRENCH CONTEXT (corrected): $ où $\mathcal F$ est $(g\circ f)$-plat, $U$ est l'ensemble des $y\in Y$
+dont toute générisation appartient à $E=Y\setmin f(X\setmin V)$. Comme $g\circ f$ est de
+présentation finie, $V$ est ouvert dans $X$ en vertu de (11.3.1), donc
+ind-constructible (1.9.6), et par suite $X\setmin V$ est pro-constructible~; mais comme
+$f$ est quasi-compact, $f(X\setmin V)$ est pro-constructible dans $Y$ (1.9.5, (vii)),
+et par suite $E$ est ind-constructible dans $Y$. Mais il résulte alors de
+(1.10.1) que $U$ est l'intérieur de $E$, donc ouvert dans $Y$.
+
+\beg
+
+[id 17443]
+OLD: $f(X-V)$ est pro-constructible
+NEW: $f(X\setmin V)$ est pro-constructible
+FRENCH CONTEXT (corrected): générisation appartient à $E=Y\setmin f(X\setmin V)$. Comme $g\circ f$ est de
+présentation finie, $V$ est ouvert dans $X$ en vertu de (11.3.1), donc
+ind-constructible (1.9.6), et par suite $X\setmin V$ est pro-constructible~; mais comme
+$f$ est quasi-compact, $f(X\setmin V)$ est pro-constructible dans $Y$ (1.9.5, (vii)),
+et par suite $E$ est ind-constructible dans $Y$. Mais il résulte alors de
+(1.10.1) que $U$ est l'intérieur de $E$, donc ouvert dans $Y$.
+
+\begin{corollary}[11.3.3]
+\label{IV.11.3.3-fr}
+Soient $A$ un anneau, $B$ une $A$-algèbre de prés
+
+[id 17444]
+OLD: On suppose que $\operatorname{gr}_{\mathcal J}^*(\mathcal F)$
+NEW: On suppose que $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$
+FRENCH CONTEXT (corrected): -fr}
+Soient $f:X\to S$ un morphisme localement de présentation finie, $\mathcal J$
+un Idéal quasi-cohérent de type fini de $\mathcal O_X$, $Y$ le sous-préschéma
+fermé de $X$ défini par $\mathcal J$, $\mathcal F$ un $\mathcal O_X$-Module de
+présentation finie. On suppose que $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$
+est $f$-plat. Dans ces conditions~:
+\begin{enumerate}[label=\emph{(\roman*)}]
+\item $\mathcal F$ est $f$-plat aux points de $Y$.
+\item Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X
+
+[id 17445]
+OLD: \item Si $\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$
+NEW: \item Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$
+FRENCH CONTEXT (corrected): , $\mathcal F$ un $\mathcal O_X$-Module de
+présentation finie. On suppose que $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$
+est $f$-plat. Dans ces conditions~:
+\begin{enumerate}[label=\emph{(\roman*)}]
+\item $\mathcal F$ est $f$-plat aux points de $Y$.
+\item Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+$(\mathcal O_X/\mathcal J)$-Algèbre de présentation finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Modu
+
+[id 17446]
+OLD: $f$-plat,
+$\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$ est une
+NEW: $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+FRENCH CONTEXT (corrected): ppose que $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$
+est $f$-plat. Dans ces conditions~:
+\begin{enumerate}[label=\emph{(\roman*)}]
+\item $\mathcal F$ est $f$-plat aux points de $Y$.
+\item Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+$(\mathcal O_X/\mathcal J)$-Algèbre de présentation finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module de présentation
+finie.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bu
+
+[id 17447]
+OLD: finie et
+$\operatorname{gr}_{\mathcal J}^*(\mathcal F)$ est un
+NEW: finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+FRENCH CONTEXT (corrected): mph{(\roman*)}]
+\item $\mathcal F$ est $f$-plat aux points de $Y$.
+\item Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+$(\mathcal O_X/\mathcal J)$-Algèbre de présentation finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module de présentation
+finie.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat
+(ce qui entraîne que $\mathcal O_X/\mathcal J$ est $f$-plat). Alors l'ensemble
+$W$ des $y\in
+
+[id 17448]
+OLD: $(\operatorname{gr}_{\mathcal J}^*(\mathcal O_X))$-Module
+NEW: $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module
+FRENCH CONTEXT (corrected): tem Si $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est $f$-plat,
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+$(\mathcal O_X/\mathcal J)$-Algèbre de présentation finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module de présentation
+finie.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat
+(ce qui entraîne que $\mathcal O_X/\mathcal J$ est $f$-plat). Alors l'ensemble
+$W$ des $y\in Y$ tels que $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F
+
+[id 17449]
+OLD: \item Supposons $\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$ $f$-plat
+(ce qui
+NEW: \item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat
+(ce qui
+FRENCH CONTEXT (corrected): ame{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ est une
+$(\mathcal O_X/\mathcal J)$-Algèbre de présentation finie et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ est un
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module de présentation
+finie.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat
+(ce qui entraîne que $\mathcal O_X/\mathcal J$ est $f$-plat). Alors l'ensemble
+$W$ des $y\in Y$ tels que $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$
+soit un $(\mathcal O_X/\mathcal J)_y$-module plat est ouvert dans $Y$.
+\item Supposons $\operatorname{gr}
+
+[id 17450]
+OLD: $(\operatorname{gr}_{\mathcal J}^*(\mathcal F))_y$
+NEW: $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$
+FRENCH CONTEXT (corrected): ame{gr}_{\mathcal J}^\bullet(\mathcal O_X))$-Module de présentation
+finie.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat
+(ce qui entraîne que $\mathcal O_X/\mathcal J$ est $f$-plat). Alors l'ensemble
+$W$ des $y\in Y$ tels que $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$
+soit un $(\mathcal O_X/\mathcal J)_y$-module plat est ouvert dans $Y$.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat.
+Soit $S'\to S$ un morphisme quelconque~; soient $X'=X\times_SS'$,
+$p:X'\to X$ la projection canonique, $Y'=
+
+[id 17451]
+OLD: \item Supposons $\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$ $f$-plat.
+Soit
+NEW: \item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat.
+Soit
+FRENCH CONTEXT (corrected): et(\mathcal O_X)$ $f$-plat
+(ce qui entraîne que $\mathcal O_X/\mathcal J$ est $f$-plat). Alors l'ensemble
+$W$ des $y\in Y$ tels que $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$
+soit un $(\mathcal O_X/\mathcal J)_y$-module plat est ouvert dans $Y$.
+\item Supposons $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ $f$-plat.
+Soit $S'\to S$ un morphisme quelconque~; soient $X'=X\times_SS'$,
+$p:X'\to X$ la projection canonique, $Y'=p^{-1}(Y)=Y\times_SS'$ le
+sous-préschéma fermé de $X'$, défini par
+$\mathcal J'=p^*(\mathcal J)\mathcal O_{X'}$, $\mathcal F'=p^*(\mathcal F)
+=\mathcal F\oti
+
+[id 17452]
+OLD: $\operatorname{gr}_{\mathcal J'}^*(\mathcal F')|W'
+NEW: $\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')|W'
+FRENCH CONTEXT (corrected): to X$ la projection canonique, $Y'=p^{-1}(Y)=Y\times_SS'$ le
+sous-préschéma fermé de $X'$, défini par
+$\mathcal J'=p^*(\mathcal J)\mathcal O_{X'}$, $\mathcal F'=p^*(\mathcal F)
+=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$~; alors, si
+$W'=p^{-1}(W)$, on a
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')|W'
+\cong p^*(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)|W)$, et
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')$ est un
+$(\mathcal O_{X'}/\mathcal J')$-Module plat aux points de $W'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les questions é
+
+[id 17454]
+OLD: (\operatorname{gr}_{\mathcal J}^*(\mathcal F)|W)$
+NEW: (\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)|W)$
+FRENCH CONTEXT (corrected): préschéma fermé de $X'$, défini par
+$\mathcal J'=p^*(\mathcal J)\mathcal O_{X'}$, $\mathcal F'=p^*(\mathcal F)
+=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$~; alors, si
+$W'=p^{-1}(W)$, on a
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')|W'
+\cong p^*(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)|W)$, et
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')$ est un
+$(\mathcal O_{X'}/\mathcal J')$-Module plat aux points de $W'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les questions étant locales sur $X$ et $S$, on peut supposer que
+$S=\operatornam
+
+[id 17455]
+OLD: $\operatorname{gr}_{\mathcal J'}^*(\mathcal F')$ est un
+NEW: $\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')$ est un
+FRENCH CONTEXT (corrected): l J)\mathcal O_{X'}$, $\mathcal F'=p^*(\mathcal F)
+=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$~; alors, si
+$W'=p^{-1}(W)$, on a
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')|W'
+\cong p^*(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)|W)$, et
+$\operatorname{gr}_{\mathcal J'}^\bullet(\mathcal F')$ est un
+$(\mathcal O_{X'}/\mathcal J')$-Module plat aux points de $W'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les questions étant locales sur $X$ et $S$, on peut supposer que
+$S=\operatorname{Spec}(A)$ et $X=\operatorname{Spec}(B)$ sont affines, $B$ étant
+
+
+[id 17456]
+OLD: $\mathcal F=\widetilde M$, où $M$ est
+NEW: $\mathcal F=\widetilde{\mathbf M}$, où $M$ est
+
+[id 17457]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(M)$ est un $A$-module plat~; donc
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat~; donc
+FRENCH CONTEXT (corrected): \lambda$~; on pose
+$B_\lambda=B_0\otimes_{A_0}A_\lambda$,
+$M_\lambda=M_0\otimes_{A_0}A_\lambda=M_0\otimes_{B_0}B_\lambda$,
+$\mathfrak J_\lambda=\mathfrak J_0B_\lambda$, de sorte que
+$B=\varinjlim B_\lambda$, $M=\varinjlim M_\lambda$. Cela étant, par hypothèse
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat~; donc il résulte
+de (11.2.9) qu'il existe un $\lambda$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat. Pour prouver que $\mathcal F$ est $f$-plat aux points
+de $Y$, on peut donc se borner au cas où $S$ est \emph
+
+[id 17458]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)$ soit un
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+FRENCH CONTEXT (corrected): k J_\lambda=\mathfrak J_0B_\lambda$, de sorte que
+$B=\varinjlim B_\lambda$, $M=\varinjlim M_\lambda$. Cela étant, par hypothèse
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est un $A$-module plat~; donc il résulte
+de (11.2.9) qu'il existe un $\lambda$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat. Pour prouver que $\mathcal F$ est $f$-plat aux points
+de $Y$, on peut donc se borner au cas où $S$ est \emph{noethérien}~; mais alors
+$(\mathbf 0_{\mathrm I},6.1.2)$, appliqué par récurrence sur $n$, prouve que les
+$\mathcal F/\mathca
+
+[id 17459]
+OLD: $S$ est noethérien~; mais alors
+NEW: $S$ est \emph{noethérien}~; mais alors
+FRENCH CONTEXT (corrected): e plat~; donc il résulte
+de (11.2.9) qu'il existe un $\lambda$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat. Pour prouver que $\mathcal F$ est $f$-plat aux points
+de $Y$, on peut donc se borner au cas où $S$ est \emph{noethérien}~; mais alors
+$(\mathbf 0_{\mathrm I},6.1.2)$, appliqué par récurrence sur $n$, prouve que les
+$\mathcal F/\mathcal J^{n+1}\mathcal F$ sont $f$-plats, et on conclut par
+$(\mathbf 0_{\mathrm{III}},10.2.6)$.
+
+La démonstration de (ii) se ramène de la même façon au cas où $S$ 
+
+[id 17799]
+OLD: $\mathcal F=\widetilde{\mathbf M}$, où $M$ est
+NEW: $\mathcal F=\widetilde M$, où $M$ est
+FRENCH CONTEXT (corrected): at aux points de $W'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les questions étant locales sur $X$ et $S$, on peut supposer que
+$S=\operatorname{Spec}(A)$ et $X=\operatorname{Spec}(B)$ sont affines, $B$ étant
+une $A$-algèbre de présentation finie, et $\mathcal F=\widetilde M$, où $M$ est
+un $B$-module de présentation finie, $\mathcal J=\widetilde{\mathfrak J}$, où
+$\mathfrak J$ est un idéal de type fini de $B$~; en vertu de (8.9.1) et
+(8.5.11), il existe un sous-anneau noethérien $A_0$ de $A$, une $A_0$-algèbre
+de type fini $B_0$ tels que $B=
+
+=================== PAGE IV-3 134 ===================
+----- (English page IV-3 133: shown above in this file) -----
+----- (English page IV-3 134: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 135 -----
+\oldpage[IV-3]{135}
+\begin{proposition}[11.3.7]
+\label{IV.11.3.7}
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism locally of finite presentation, $\sh{F}$, $\sh{F}'$ two $\sh{O}_\mathrm{X}$-Modules quasi-coherent of finite presentation, $u:\sh{F}'\to\sh{F}$ an $\sh{O}_\mathrm{X}$-homomorphism, $x$ a point of $\mathrm{X}$ and $y=f(x)$; suppose that $\sh{F}$ is $f$-flat at the point $x$. The following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $(\operatorname{Ker} u)_x=0$ and $\operatorname{Coker} u$ is an $\sh{O}_\mathrm{X}$-Module $f$-flat at the point $x$.
+  \item The homomorphism $(u\otimes 1)_x:(\sh{F}'\otimes_{\sh{O}_\mathrm{Y}}\boldsymbol{k}(y))_x\to(\sh{F}\otimes_{\sh{O}_\mathrm{Y}}\boldsymbol{k}(y))_x$ is injective.
+\end{enumerate}
+If in addition $\sh{F}$ is $f$-flat, the set of points $x$ satisfying the preceding equivalent conditions is open in $\mathrm{X}$.
+\end{proposition}
+
+\begin{proof}
+Condition $a)$ implies $b)$ by virtue of $(\mathbf{0}_\mathrm{I},~6.1.2)$, without any hypothesis on $\sh{F}$. To prove the converse, we may restrict ourselves to the case where $\mathrm{X}$ and $\mathrm{Y}$ are affine and then, by virtue of $(8.9.1)$ and \sref{IV.11.2.7}, suppose that
+\[
+  \mathrm{X}=\mathrm{X}_0\times_{\mathrm{Y}_0}\mathrm{Y},\qquad
+  f=f_0\times 1_\mathrm{Y},\qquad
+  \sh{F}=\sh{F}_0\otimes_{\sh{O}_{\mathrm{Y}_0}}\sh{O}_\mathrm{Y},\qquad
+  \sh{F}'=\sh{F}'_0\otimes_{\sh{O}_{\mathrm{Y}_0}}\sh{O}_\mathrm{Y},\qquad
+  u=u_0\otimes 1_\mathrm{Y},
+\]
+where $\mathrm{Y}_0$ is Noetherian, $f_0:\mathrm{X}_0\to\mathrm{Y}_0$ is a morphism of finite type, $\sh{F}_0$ and $\sh{F}'_0$ are two coherent $\sh{O}_{\mathrm{X}_0}$-Modules, and $u_0:\sh{F}'_0\to\sh{F}_0$ is a homomorphism. Moreover, if $x_0$ is the projection of $x$ in $\mathrm{X}_0$, we may suppose that $\sh{F}_0$ is $f_0$-flat at $x_0$. Set $y_0=f_0(x_0)$. By the transitivity of fibres $(\mathbf{I},~3.6.4)$, the projection $f^{-1}(y)\to f_0^{-1}(y_0)$ is faithfully flat $(2.2.13)$; and since $(u\otimes 1)_x=((u_0\otimes 1)_{x_0})\otimes 1_{\boldsymbol{k}(y)}$,
+the hypothesis that $(u\otimes 1)_x$ is injective implies that $(u_0\otimes 1)_{x_0}$ is injective $(2.2.7)$. Applying $(\mathbf{0}_{\mathrm{III}},~10.2.4)$ to the Noetherian local rings $\sh{O}_{\mathrm{Y}_0,y_0}$ and $\sh{O}_{\mathrm{X}_0,x_0}$ and to the $\sh{O}_{\mathrm{X}_0,x_0}$-modules $(\sh{F}'_0)_{x_0}$ and $(\sh{F}_0)_{x_0}$, the second of which is flat over $\sh{O}_{\mathrm{Y}_0,y_0}$, we obtain
+\[
+  (\operatorname{Ker}u_0)_{x_0}=0
+  \quad\text{and}\quad
+  \operatorname{Coker}u_0\ \text{is $f_0$-flat at }x_0.
+\]
+It follows first that $\operatorname{Coker}u$ is $f$-flat at $x$ $(2.1.4)$. Moreover, by right exactness of the tensor product, $\operatorname{Coker}u=(\operatorname{Coker}u_0)
+\otimes_{\sh{O}_{\mathrm{Y}_0}}\sh{O}_\mathrm{Y}$.
+Applying $(\mathbf{0}_\mathrm{I},~6.1.2)$ to the exact sequence
+\[
+  0\longrightarrow(\sh{F}'_0)_{x_0}
+  \longrightarrow(\sh{F}_0)_{x_0}
+  \longrightarrow(\operatorname{Coker}u_0)_{x_0}
+  \longrightarrow0
+\]
+we conclude that $u_x$ is injective, which proves condition $a)$.
+
+Finally, it follows from \sref{IV.11.1.2} that the set $\mathrm{U}_0$ of points $z_0\in\mathrm{X}_0$ such that $(u_0\otimes 1)_{z_0}$ is injective is open. By flatness, for every $z\in\mathrm{X}$ above a point $z_0\in\mathrm{U}_0$, the homomorphism $(u\otimes 1)_z$ is injective. The set of such points therefore contains the inverse image $\mathrm{U}$ of $\mathrm{U}_0$ in $\mathrm{X}$ and is consequently a neighbourhood of $x$, which completes the proof.
+\end{proof}
+
+\begin{theorem}[11.3.8]
+\label{IV.11.3.8}
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism locally of finite presentation, $\sh{F}$ an $\sh{O}_\mathrm{X}$-Module quasi-coherent of finite presentation, $(g_i)_{1\leqslant i\leqslant n}$ a sequence of sections of $\sh{O}_\mathrm{X}$ above $\mathrm{X}$; set $\sh{F}_i=\sh{F}/\sum_{j=1}^{i}g_j\sh{F}$ for $0\leqslant i\leqslant n$ (with $\sh{F}_0=\sh{F}$). Let $x$ be a point of $\mathrm{X}$, $y=f(x)$, and set $\mathrm{X}_y=f^{-1}(y)=\mathrm{X}\times_\mathrm{Y}\Spec(\boldsymbol{k}(y))$, $\sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\boldsymbol{k}(y)$, which is an $\sh{O}_{\mathrm{X}_y}$-Module. Suppose that the $(g_i)_x$ belong to the maximal ideal $\mathfrak{m}_x$. The following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item The sequence $((g_i)_x)$ is $\sh{F}_x$-regular and the $\sh{F}_i$ ($0\leqslant i\leqslant n$) are $f$-flat at the point $x$.
+  \item The sequence $((g_i)_x)$ is $\sh{F}_x$-regular and $\sh{F}_n$ is $f$-flat at the point $x$.
+  \item[\emph{b$'$)}] There exists a neighbourhood $\mathrm{U}$ of $x$ such that the sequence $(g_i|\mathrm{U})$ is $(\sh{F}|\mathrm{U})$-quasi-regular, and $\sh{F}_n$ is $f$-flat at the point $x$.
+----- French corrections on page IV-3 134 -----
+[id 17461]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(B)$ étant
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ étant
+FRENCH CONTEXT (corrected): \mathcal J^{n+1}\mathcal F$ sont $f$-plats, et on conclut par
+$(\mathbf 0_{\mathrm{III}},10.2.6)$.
+
+La démonstration de (ii) se ramène de la même façon au cas où $S$ est
+noethérien,
+\oldpage[IV-3]{134}
+en utilisant (11.2.9)~; la conclusion est alors évidente,
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ étant dans ce cas une
+$(B/\mathfrak J)$-algèbre de type fini et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de type fini.
+
+Pour prouver (iii), on se ramène comme dans (i) au cas où $S$ et $X$ sont
+affines~; av
+
+[id 17462]
+OLD: type fini et
+$\operatorname{gr}_{\mathfrak J}^*(M)$ un
+NEW: type fini et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+FRENCH CONTEXT (corrected): $.
+
+La démonstration de (ii) se ramène de la même façon au cas où $S$ est
+noethérien,
+\oldpage[IV-3]{134}
+en utilisant (11.2.9)~; la conclusion est alors évidente,
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ étant dans ce cas une
+$(B/\mathfrak J)$-algèbre de type fini et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de type fini.
+
+Pour prouver (iii), on se ramène comme dans (i) au cas où $S$ et $X$ sont
+affines~; avec les mêmes notations, on peut supposer, en vertu de (11.2.9) que
+$\operatorname{gr}_{\mathfrak J_\lambda
+
+[id 17463]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(B)$-module de type fini.
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de type fini.
+FRENCH CONTEXT (corrected): s où $S$ est
+noethérien,
+\oldpage[IV-3]{134}
+en utilisant (11.2.9)~; la conclusion est alors évidente,
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ étant dans ce cas une
+$(B/\mathfrak J)$-algèbre de type fini et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de type fini.
+
+Pour prouver (iii), on se ramène comme dans (i) au cas où $S$ et $X$ sont
+affines~; avec les mêmes notations, on peut supposer, en vertu de (11.2.9) que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ et
+$\operatorname{gr}_{\mathfrak J_\lambda}^
+
+[id 17464]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(B_\lambda)$ et
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ et
+FRENCH CONTEXT (corrected): orname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de type fini.
+
+Pour prouver (iii), on se ramène comme dans (i) au cas où $S$ et $X$ sont
+affines~; avec les mêmes notations, on peut supposer, en vertu de (11.2.9) que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ et
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ sont des
+$A_\lambda$-modules plats et que l'on a
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\
+
+[id 17465]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)$ sont des
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ sont des
+FRENCH CONTEXT (corrected): hfrak J}^\bullet(B)$-module de type fini.
+
+Pour prouver (iii), on se ramène comme dans (i) au cas où $S$ et $X$ sont
+affines~; avec les mêmes notations, on peut supposer, en vertu de (11.2.9) que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ et
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ sont des
+$A_\lambda$-modules plats et que l'on a
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bulle
+
+[id 17466]
+OLD: et que l'on a
+\[
+\operatorname{gr}_{\mathfrak J}^*(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^*(B_\lambda)\otimes_{A_\lambda}A
+\quad\text{et}\quad
+\operatorname{gr}_{\mathfrak J}^*(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)\otimes_{A_\lambda}A.
+\]
+
+NEW: et que l'on a
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+
+FRENCH CONTEXT (corrected): s où $S$ et $X$ sont
+affines~; avec les mêmes notations, on peut supposer, en vertu de (11.2.9) que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ et
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ sont des
+$A_\lambda$-modules plats et que l'on a
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+Par suite $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est une
+$(B/\mathfrak J)$-algèbre de présentation finie et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie. Si $W^m$
+est l'ensemble
+
+[id 17467]
+OLD: Par suite $\operatorname{gr}_{\mathfrak J}^*(B)$
+NEW: Par suite $\operatorname{gr}_{\mathfrak J}^\bullet(B)$
+FRENCH CONTEXT (corrected): 'on a
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+Par suite $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est une
+$(B/\mathfrak J)$-algèbre de présentation finie et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie. Si $W^m$
+est l'ensemble des $\mathfrak p\in\operatorname{Spec}(B/\mathfrak J)
+
+[id 17468]
+OLD: présentation finie et
+$\operatorname{gr}_{\mathfrak J}^*(M)$ un
+NEW: présentation finie et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+FRENCH CONTEXT (corrected): bullet(B_\lambda)\otimes_{A_\lambda}A$
+et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+Par suite $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est une
+$(B/\mathfrak J)$-algèbre de présentation finie et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie. Si $W^m$
+est l'ensemble des $\mathfrak p\in\operatorname{Spec}(B/\mathfrak J)$ tels que
+$\operatorname{gr}_{\mathfrak J}^m(M)_\mathfrak p$ soit un
+$(B/\mathfrak J)$-module plat, $W^m$ 
+
+[id 17469]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(B)$-module de présentation finie. Si
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie. Si
+FRENCH CONTEXT (corrected): k J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+Par suite $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est une
+$(B/\mathfrak J)$-algèbre de présentation finie et
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)$ un
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$-module de présentation finie. Si $W^m$
+est l'ensemble des $\mathfrak p\in\operatorname{Spec}(B/\mathfrak J)$ tels que
+$\operatorname{gr}_{\mathfrak J}^m(M)_\mathfrak p$ soit un
+$(B/\mathfrak J)$-module plat, $W^m$ est ouvert dans
+$\operatorname{Spec}(B/\mathfrak J)$ (11.3.1) et l'on a
+$W=\bi
+
+[id 17470]
+OLD: \operatorname{Spec}(\operatorname{gr}_{\mathfrak J}^*(B))
+NEW: \operatorname{Spec}(\operatorname{gr}_{\mathfrak J}^\bullet(B))
+FRENCH CONTEXT (corrected): m(M)_\mathfrak p$ soit un
+$(B/\mathfrak J)$-module plat, $W^m$ est ouvert dans
+$\operatorname{Spec}(B/\mathfrak J)$ (11.3.1) et l'on a
+$W=\bigcap_mW^m$, donc $W$ est stable par générisation. L'assertion (iii)
+résulte alors de (11.3.2) appliqué en y prenant
+$X=\operatorname{Spec}(\operatorname{gr}_{\mathfrak J}^\bullet(B))$,
+$Y=Z=\operatorname{Spec}(B/\mathfrak J)$ et
+$\mathcal F=(\operatorname{gr}_{\mathfrak J}^\bullet(M))^{\sim}$.
+
+Enfin, (iv) découle aussitôt de (11.2.9.2).
+
+Généralisant la définition de (6.10.1), on dit que pour un préschéma $X$, un
+sous-préschéma fermé $Y$
+
+[id 17471]
+OLD: (\operatorname{gr}_{\mathfrak J}^*(M))^{\sim}
+NEW: (\operatorname{gr}_{\mathfrak J}^\bullet(M))^{\sim}
+FRENCH CONTEXT (corrected): 1) et l'on a
+$W=\bigcap_mW^m$, donc $W$ est stable par générisation. L'assertion (iii)
+résulte alors de (11.3.2) appliqué en y prenant
+$X=\operatorname{Spec}(\operatorname{gr}_{\mathfrak J}^\bullet(B))$,
+$Y=Z=\operatorname{Spec}(B/\mathfrak J)$ et
+$\mathcal F=(\operatorname{gr}_{\mathfrak J}^\bullet(M))^{\sim}$.
+
+Enfin, (iv) découle aussitôt de (11.2.9.2).
+
+Généralisant la définition de (6.10.1), on dit que pour un préschéma $X$, un
+sous-préschéma fermé $Y$ de $X$ défini par un Idéal quasi-cohérent $\mathcal J$
+de $\mathcal O_X$, et un $\mathcal O_X$-Module quasi-c
+
+[id 17472]
+OLD: $(\operatorname{gr}_{\mathcal J}^*(\mathcal F))_y$
+NEW: $(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$
+FRENCH CONTEXT (corrected): ue pour un préschéma $X$, un
+sous-préschéma fermé $Y$ de $X$ défini par un Idéal quasi-cohérent $\mathcal J$
+de $\mathcal O_X$, et un $\mathcal O_X$-Module quasi-cohérent $\mathcal F$,
+$\mathcal F$ est \emph{normalement plat le long de $Y$ en un point $y$} si
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$ est un
+$\mathcal O_{Y,y}$-module \emph{plat}. On dit que $\mathcal F$ est
+\emph{normalement plat le long de $Y$} s'il l'est en tous les points de $Y$.
+\end{proof}
+
+\begin{corollary}[11.3.5]
+\label{IV.11.3.5-fr}
+Sous les hypothèses générales de \textup{(11.3.4
+
+[id 17473]
+OLD: $\mathcal O_{Y,y}$-module plat.
+NEW: $\mathcal O_{Y,y}$-module \emph{plat}.
+FRENCH CONTEXT (corrected): ini par un Idéal quasi-cohérent $\mathcal J$
+de $\mathcal O_X$, et un $\mathcal O_X$-Module quasi-cohérent $\mathcal F$,
+$\mathcal F$ est \emph{normalement plat le long de $Y$ en un point $y$} si
+$(\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F))_y$ est un
+$\mathcal O_{Y,y}$-module \emph{plat}. On dit que $\mathcal F$ est
+\emph{normalement plat le long de $Y$} s'il l'est en tous les points de $Y$.
+\end{proof}
+
+\begin{corollary}[11.3.5]
+\label{IV.11.3.5-fr}
+Sous les hypothèses générales de \textup{(11.3.4)}, on suppose que
+$\operatorname{gr}_{\mathca
+
+[id 17474]
+OLD: $\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$ et
+NEW: $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ et
+FRENCH CONTEXT (corrected): _{Y,y}$-module \emph{plat}. On dit que $\mathcal F$ est
+\emph{normalement plat le long de $Y$} s'il l'est en tous les points de $Y$.
+\end{proof}
+
+\begin{corollary}[11.3.5]
+\label{IV.11.3.5-fr}
+Sous les hypothèses générales de \textup{(11.3.4)}, on suppose que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ soient $f$-plats. Alors
+l'ensemble $W$ des $y\in Y$ tels que $\mathcal F$ soit normalement plat le long
+de $Y$ au point $y$ est ouvert dans $Y$, et (avec les notations de
+\textup{(11.3.4, (iv)))} $\mathcal 
+
+[id 17475]
+OLD: $\operatorname{gr}_{\mathcal J}^*(\mathcal F)$ soient
+NEW: $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ soient
+FRENCH CONTEXT (corrected): mph{normalement plat le long de $Y$} s'il l'est en tous les points de $Y$.
+\end{proof}
+
+\begin{corollary}[11.3.5]
+\label{IV.11.3.5-fr}
+Sous les hypothèses générales de \textup{(11.3.4)}, on suppose que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ soient $f$-plats. Alors
+l'ensemble $W$ des $y\in Y$ tels que $\mathcal F$ soit normalement plat le long
+de $Y$ au point $y$ est ouvert dans $Y$, et (avec les notations de
+\textup{(11.3.4, (iv)))} $\mathcal F'$ est normalement plat le long de $Y'$ en tous les
+points 
+
+[id 17477]
+OLD: (11.3.4, (iv)))
+NEW: \textup{(11.3.4, (iv)))}
+FRENCH CONTEXT (corrected): athcal J}^\bullet(\mathcal O_X)$ et
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)$ soient $f$-plats. Alors
+l'ensemble $W$ des $y\in Y$ tels que $\mathcal F$ soit normalement plat le long
+de $Y$ au point $y$ est ouvert dans $Y$, et (avec les notations de
+\textup{(11.3.4, (iv)))} $\mathcal F'$ est normalement plat le long de $Y'$ en tous les
+points de $W'=p^{-1}(W)$.
+\end{corollary}
+
+\begin{proposition}[11.3.6]
+\label{IV.11.3.6-fr}
+Les notations étant celles de \textup{(8.5.1)} et \textup{(8.8.1)}, on suppose $S_\alpha$
+quasi-compact,
+
+[id 17480]
+OLD: $\operatorname{gr}_{\mathcal J_\alpha}^*(\mathcal O_{X_\alpha})$ soit plat
+NEW: $\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})$ soit plat
+FRENCH CONTEXT (corrected):  et \textup{(8.8.1)}, on suppose $S_\alpha$
+quasi-compact, $X_\alpha$ de présentation finie sur $S_\alpha$, $Y_\alpha$ un
+sous-préschéma fermé de $X_\alpha$ défini par un Idéal quasi-cohérent
+$\mathcal J_\alpha$ de type fini de $\mathcal O_{X_\alpha}$ tel que
+$\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})$ soit plat sur
+$S_\alpha$~; enfin on suppose que $\mathcal F_\alpha$ est un
+$\mathcal O_{X_\alpha}$-Module de présentation finie. Pour que $\mathcal F$
+soit normalement plat le long de $Y$, il faut et il suffit qu'il existe
+$\lambda$ tel que $\mathcal F_\lambda$ soit no
+
+[id 17481]
+OLD: on a
+\[
+\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)
+=\operatorname{gr}_{\mathcal J_\alpha}^*(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_S
+\]
+et
+\[
+\operatorname{gr}_{\mathcal J_\lambda}^*(\mathcal O_{X_\lambda})
+=\operatorname{gr}_{\mathcal J_\alpha}^*(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_{S_\lambda}
+\quad\text{pour }\lambda\geq\alpha,
+\]
+
+NEW: on a
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_S$
+et
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_{S_\lambda}$
+pour $\lambda\geq\alpha$,
+
+FRENCH CONTEXT (corrected): f}
+Notons que $Y$ (resp. $Y_\lambda$) est le sous-préschéma fermé de $X$ (resp.
+$X_\lambda$) défini par $\mathcal J=\mathcal J_\alpha\mathcal O_X$ (resp.
+$\mathcal J_\lambda=\mathcal J_\alpha\mathcal O_{X_\lambda}$)~; en vertu de
+l'hypothèse et de (11.2.9.2), on a
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_S$
+et
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_{S_\lambda}$
+pour $\lambda\geq\alpha$,
+et $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ (resp.
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})$) est plat
+sur $S$ (resp. $S_\lambda$), ce qui entraîne que $Y$ est plat sur $S$ (resp.
+$Y_\lambda$ plat sur $S_\lambda$). 
+
+[id 17482]
+OLD: et $\operatorname{gr}_{\mathcal J}^*(\mathcal O_X)$ (resp.
+NEW: et $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ (resp.
+FRENCH CONTEXT (corrected): thcal O_{S_\alpha}}\mathcal O_S$
+et
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_{S_\lambda}$
+pour $\lambda\geq\alpha$,
+et $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ (resp.
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})$) est plat
+sur $S$ (resp. $S_\lambda$), ce qui entraîne que $Y$ est plat sur $S$ (resp.
+$Y_\lambda$ plat sur $S_\lambda$). Si $\mathcal F_\lambda$ est normalement plat
+le long de $Y_\lamb
+
+[id 17483]
+OLD: $\operatorname{gr}_{\mathcal J_\lambda}^*(\mathcal O_{X_\lambda})$) est plat
+NEW: $\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})$) est plat
+FRENCH CONTEXT (corrected): J_\lambda}^\bullet(\mathcal O_{X_\lambda})
+=\operatorname{gr}_{\mathcal J_\alpha}^\bullet(\mathcal O_{X_\alpha})
+ \otimes_{\mathcal O_{S_\alpha}}\mathcal O_{S_\lambda}$
+pour $\lambda\geq\alpha$,
+et $\operatorname{gr}_{\mathcal J}^\bullet(\mathcal O_X)$ (resp.
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})$) est plat
+sur $S$ (resp. $S_\lambda$), ce qui entraîne que $Y$ est plat sur $S$ (resp.
+$Y_\lambda$ plat sur $S_\lambda$). Si $\mathcal F_\lambda$ est normalement plat
+le long de $Y_\lambda$, $\operatorname{gr}_{\mathcal J_\lambda}^\bullet
+(\mathcal F_\lambda)|Y_\lambda
+
+[id 17484]
+OLD: $Y_\lambda$, $\operatorname{gr}_{\mathcal J_\lambda}^*
+(
+NEW: $Y_\lambda$, $\operatorname{gr}_{\mathcal J_\lambda}^\bullet
+(
+FRENCH CONTEXT (corrected): $ (resp.
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal O_{X_\lambda})$) est plat
+sur $S$ (resp. $S_\lambda$), ce qui entraîne que $Y$ est plat sur $S$ (resp.
+$Y_\lambda$ plat sur $S_\lambda$). Si $\mathcal F_\lambda$ est normalement plat
+le long de $Y_\lambda$, $\operatorname{gr}_{\mathcal J_\lambda}^\bullet
+(\mathcal F_\lambda)|Y_\lambda$ est plat sur $Y_\lambda$, donc aussi sur
+$S_\lambda$, et comme
+$(\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda))_{x_\lambda}=0$
+pour $x_\lambda\notin Y_\lambda$,
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet
+
+[id 17485]
+OLD: et comme
+$\operatorname{gr}_{\mathcal J_\lambda}^*(\mathcal F_\lambda)|x_\lambda=0$
+NEW: et comme
+$(\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda))_{x_\lambda}=0$
+FRENCH CONTEXT (corrected): t plat sur $S$ (resp.
+$Y_\lambda$ plat sur $S_\lambda$). Si $\mathcal F_\lambda$ est normalement plat
+le long de $Y_\lambda$, $\operatorname{gr}_{\mathcal J_\lambda}^\bullet
+(\mathcal F_\lambda)|Y_\lambda$ est plat sur $Y_\lambda$, donc aussi sur
+$S_\lambda$, et comme
+$(\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda))_{x_\lambda}=0$
+pour $x_\lambda\notin Y_\lambda$,
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)$ est plat sur
+$S_\lambda$. On en conclut (11.2.9.2) que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)
+=\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\
+
+[id 17486]
+OLD: $\operatorname{gr}_{\mathcal J_\lambda}^*(\mathcal F_\lambda)$ est plat sur
+NEW: $\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)$ est plat sur
+FRENCH CONTEXT (corrected): operatorname{gr}_{\mathcal J_\lambda}^\bullet
+(\mathcal F_\lambda)|Y_\lambda$ est plat sur $Y_\lambda$, donc aussi sur
+$S_\lambda$, et comme
+$(\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda))_{x_\lambda}=0$
+pour $x_\lambda\notin Y_\lambda$,
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)$ est plat sur
+$S_\lambda$. On en conclut (11.2.9.2) que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)
+=\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)
+ \otimes_{\mathcal O_{S_\lambda}}\mathcal O_S$,
+donc $\mathcal F$ est normalement plat le long de
+
+[id 17487]
+OLD: que
+\[
+\operatorname{gr}_{\mathcal J}^*(\mathcal F)
+=\operatorname{gr}_{\mathcal J_\lambda}^*(\mathcal F_\lambda)
+ \otimes_{\mathcal O_{S_\lambda}}\mathcal O_S,
+\]
+
+NEW: que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)
+=\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)
+ \otimes_{\mathcal O_{S_\lambda}}\mathcal O_S$,
+
+FRENCH CONTEXT (corrected): S_\lambda$, et comme
+$(\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda))_{x_\lambda}=0$
+pour $x_\lambda\notin Y_\lambda$,
+$\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)$ est plat sur
+$S_\lambda$. On en conclut (11.2.9.2) que
+$\operatorname{gr}_{\mathcal J}^\bullet(\mathcal F)
+=\operatorname{gr}_{\mathcal J_\lambda}^\bullet(\mathcal F_\lambda)
+ \otimes_{\mathcal O_{S_\lambda}}\mathcal O_S$,
+donc $\mathcal F$ est normalement plat le long de $Y$. Pour prouver la
+réciproque, on peut supposer que $S_\alpha$ et $X_\alpha$ sont affines et
+adopter les notations de (11.2.9)~; puisque
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est un $A$-module plat, il
+
+[id 17488]
+OLD: $\operatorname{gr}_{\mathfrak J}^*(B)$ est un $A$-module plat
+NEW: $\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est un $A$-module plat
+FRENCH CONTEXT (corrected): et(\mathcal F_\lambda)
+ \otimes_{\mathcal O_{S_\lambda}}\mathcal O_S$,
+donc $\mathcal F$ est normalement plat le long de $Y$. Pour prouver la
+réciproque, on peut supposer que $S_\alpha$ et $X_\alpha$ sont affines et
+adopter les notations de (11.2.9)~; puisque
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est un $A$-module plat, il en est de même
+de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc, en vertu de (11.2.9), il
+existe $\lambda\geq\alpha$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathf
+
+[id 17489]
+OLD: de $\operatorname{gr}_{\mathfrak J}^*(M)$, donc
+NEW: de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc
+FRENCH CONTEXT (corrected): $ est normalement plat le long de $Y$. Pour prouver la
+réciproque, on peut supposer que $S_\alpha$ et $X_\alpha$ sont affines et
+adopter les notations de (11.2.9)~; puisque
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est un $A$-module plat, il en est de même
+de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc, en vertu de (11.2.9), il
+existe $\lambda\geq\alpha$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lam
+
+[id 17490]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)$ soit un
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+FRENCH CONTEXT (corrected): nt affines et
+adopter les notations de (11.2.9)~; puisque
+$\operatorname{gr}_{\mathfrak J}^\bullet(B)$ est un $A$-module plat, il en est de même
+de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc, en vertu de (11.2.9), il
+existe $\lambda\geq\alpha$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operator
+
+[id 17491]
+OLD: d'où
+$\operatorname{gr}_{\mathfrak J}^*(M)
+=
+NEW: d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=
+FRENCH CONTEXT (corrected): llet(B)$ est un $A$-module plat, il en est de même
+de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc, en vertu de (11.2.9), il
+existe $\lambda\geq\alpha$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+fi
+
+[id 17492]
+OLD: =\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)\otimes_{A_\lambda}A$.
+En outre
+NEW: =\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre
+FRENCH CONTEXT (corrected): e
+de $\operatorname{gr}_{\mathfrak J}^\bullet(M)$, donc, en vertu de (11.2.9), il
+existe $\lambda\geq\alpha$ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+finie et $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ une
+$(B_\lambda/\math
+
+[id 17493]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(M_\lambda)$ est un
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+FRENCH CONTEXT (corrected): $ tel que
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+finie et $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ une
+$(B_\lambda/\mathfrak J_\lambda)$-algèbre de présentation finie. La conclusion
+résulte alors de (11.2
+
+[id 17494]
+OLD: $\operatorname{gr}_{\mathfrak J_\lambda}^*(B_\lambda)$-module de présentation
+NEW: $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+FRENCH CONTEXT (corrected): )$ soit un
+$A_\lambda$-module plat, d'où
+$\operatorname{gr}_{\mathfrak J}^\bullet(M)
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+finie et $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ une
+$(B_\lambda/\mathfrak J_\lambda)$-algèbre de présentation finie. La conclusion
+résulte alors de (11.2.6).
+\end{proof}
+
+\oldpage[IV-3]{135}
+
+\begin{proposition}[11.3.7]
+\label{IV.11.3.7-
+
+[id 17495]
+OLD: finie et $\operatorname{gr}_{\mathfrak J_\lambda}^*(B_\lambda)$ une
+NEW: finie et $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ une
+FRENCH CONTEXT (corrected): 
+=\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)\otimes_{A_\lambda}A$.
+En outre (11.3.4, (ii)),
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(M_\lambda)$ est un
+$\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$-module de présentation
+finie et $\operatorname{gr}_{\mathfrak J_\lambda}^\bullet(B_\lambda)$ une
+$(B_\lambda/\mathfrak J_\lambda)$-algèbre de présentation finie. La conclusion
+résulte alors de (11.2.6).
+\end{proof}
+
+\oldpage[IV-3]{135}
+
+\begin{proposition}[11.3.7]
+\label{IV.11.3.7-fr}
+Soient $f:X\to Y$ un morphisme localement de présentation finie,
+$\mat
+
+=================== PAGE IV-3 135 ===================
+----- (English page IV-3 134: shown above in this file) -----
+----- (English page IV-3 135: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 136 -----
+\oldpage[IV-3]{136}
+  \item $\sh{F}$ is $f$-flat at the point $x$, and the sequence $((g_i\otimes 1)_x)$ of elements of $\sh{O}_{\mathrm{X}_y,x}$ images of the $(g_i)_x$ is $(\sh{F}_y)_x$-regular.
+  \item $\sh{F}$ is $f$-flat at the point $x$, and for every morphism $\mathrm{Y}'\to\mathrm{Y}$ and every point $x'\in\mathrm{X}'=\mathrm{X}\times_\mathrm{Y}\mathrm{Y}'$ above $x$, if one sets $\sh{F}'=\sh{F}\otimes_\mathrm{Y}\mathrm{Y}'$, the sequence $(g_i\otimes 1)_{x'}$ of elements of $\sh{O}_{\mathrm{X}',x'}$ is $\sh{F}'_{x'}$-regular.
+\end{enumerate}
+Moreover, the set of $x\in\mathrm{X}$ satisfying these conditions is open in the set $\mathrm{Z}$ of $x$ such that $g_i(x)=0$ for every $i$.
+\end{theorem}
+
+\begin{proof}
+The fact that $a)$ implies $d)$ follows immediately from $(\mathbf{0},~15.1.15)$, and $c)$ is a particular case of $d)$; moreover, $a)$ implies $b)$ trivially. Let us show that $b)$ or $c)$ implies $a)$. Since the $\sh{F}_i$ are of finite presentation, the fact that $c)$ implies $a)$ follows immediately from \sref{IV.11.3.7} by induction on $n$, and this also shows that the set of $x\in\mathrm{X}$ satisfying $c)$ is open in $\mathrm{Z}$.
+
+To show that $b)$ implies $a)$, induction on $n$ reduces us immediately to the case $n=1$; we write $g$ instead of $g_1$. Since the question is local on $\mathrm{X}$ and $\mathrm{Y}$, we may suppose that $\mathrm{Y}=\Spec(\mathrm{A})$ and $\mathrm{X}=\Spec(\mathrm{B})$ are affine, that $\mathrm{B}$ is an $\mathrm{A}$-algebra of finite presentation, and that $\sh{F}=\widetilde{\mathrm{M}}$, where $\mathrm{M}$ is a $\mathrm{B}$-module of finite presentation. By $(8.9.1)$, we may then write
+\[
+  \mathrm{B}=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A},
+  \qquad
+  \mathrm{M}=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A},
+\]
+where $\mathrm{A}_0$ is a Noetherian subring of $\mathrm{A}$, $\mathrm{B}_0$ is an $\mathrm{A}_0$-algebra of finite type, and $\mathrm{M}_0$ is a $\mathrm{B}_0$-module of finite type. Moreover, $\mathrm{A}$ is the filtered inductive limit of its subrings $\mathrm{A}_\lambda$ that are $\mathrm{A}_0$-algebras of finite type (and hence Noetherian). If we set
+\[
+  \mathrm{B}_\lambda=\mathrm{B}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda,
+  \qquad
+  \mathrm{M}_\lambda=\mathrm{M}_0\otimes_{\mathrm{A}_0}\mathrm{A}_\lambda,
+\]
+then $\mathrm{B}_\lambda$ is an $\mathrm{A}_\lambda$-algebra of finite type, $\mathrm{M}_\lambda$ is a $\mathrm{B}_\lambda$-module of finite type, and
+\[
+  \mathrm{B}=\varinjlim_\lambda\mathrm{B}_\lambda,
+  \qquad
+  \mathrm{M}=\varinjlim_\lambda\mathrm{M}_\lambda.
+\]
+There therefore exist an index $\lambda$ and an element $g_\lambda\in\mathrm{B}_\lambda$ such that $g=g_\lambda\otimes 1$. Returning to geometric notation and setting
+\[
+  \mathrm{Y}_\lambda=\Spec(\mathrm{A}_\lambda),
+  \qquad
+  \mathrm{X}_\lambda=\Spec(\mathrm{B}_\lambda),
+  \qquad
+  \sh{F}_\lambda=\widetilde{\mathrm{M}_\lambda},
+\]
+it will suffice to prove that there exists $\mu\geqslant\lambda$ such that, at the point $x_\mu\in\mathrm{X}_\mu$ that is the projection of $x$, $(g_\mu)_{x_\mu}$ is $(\sh{F}_\mu)_{x_\mu}$-regular and $\sh{F}_\mu/g_\mu\sh{F}_\mu$ is flat over $\mathrm{Y}_\mu$ at $x_\mu$. Indeed, it will then follow from $(\mathbf{0},~15.1.16)$ that $\sh{F}_\mu$ is flat over $\mathrm{Y}_\mu$ at $x_\mu$, and hence that $\sh{F}$ is flat over $\mathrm{Y}$ at $x$.
+
+The fact that $b)$ implies $a)$ will therefore follow from the following proposition.
+
+\begin{proposition}[11.3.9]
+\label{IV.11.3.9}
+With the notation and general hypotheses of $(8.5.1)$ and $(8.8.1)$, suppose that $f_\alpha:\mathrm{X}_\alpha\to\mathrm{Y}_\alpha$ is a morphism locally of finite presentation. Let $\sh{F}_\alpha$ and $\sh{G}_\alpha$ be two quasi-coherent $\sh{O}_{\mathrm{X}_\alpha}$-Modules of finite presentation, let $h_\alpha:\sh{F}_\alpha\to\sh{G}_\alpha$ be an $\sh{O}_{\mathrm{X}_\alpha}$-homomorphism, and let $\sh{H}_\alpha$ be its cokernel. Finally, let $x$ be a point of $\mathrm{X}$, and let $x_\lambda$ be its projection in $\mathrm{X}_\lambda$ for $\lambda\geqslant\alpha$. In order that $h_x$ be injective and that $\sh{H}=\operatorname{Coker}h$ be $f$-flat at $x$, it is necessary and sufficient that there exist $\lambda\geqslant\alpha$ such that $(h_\lambda)_{x_\lambda}$ is injective and $\sh{H}_\lambda=\operatorname{Coker}h_\lambda$ is $f_\lambda$-flat at $x_\lambda$. Moreover, the set of $x\in\mathrm{X}$ having the preceding properties is open in $\mathrm{X}$.
+\end{proposition}
+
+\begin{proof}
+Recall that, by the right exactness of the tensor product,
+\[
+  \sh{H}_\mu=v^*_{\lambda\mu}(\sh{H}_\lambda)
+  \quad\text{for }\lambda\leqslant\mu,
+  \qquad
+  \sh{H}=v^*_\lambda(\sh{H}_\lambda),
+\]
+which justifies the notation.
+
+The sufficiency of the condition follows from the fact that, if the sequence
+\[
+  0\longrightarrow(\sh{F}_\lambda)_{x_\lambda}
+  \longrightarrow(\sh{G}_\lambda)_{x_\lambda}
+  \longrightarrow(\sh{H}_\lambda)_{x_\lambda}
+  \longrightarrow0
+\]
+is exact and $(\sh{H}_\lambda)_{x_\lambda}$ is a flat $\sh{O}_{f_\lambda(x_\lambda)}$-module, then $\sh{H}_x$ is a flat $\sh{O}_{f(x)}$-module by base change $(2.1.4)$ and the sequence $0\longrightarrow\sh{F}_x
+\longrightarrow\sh{G}_x
+\longrightarrow\sh{H}_x
+\longrightarrow0$
+is exact $(2.1.8)$. To prove that
+----- French corrections on page IV-3 135 -----
+[id 17266]
+OLD: \[
+(u\otimes1)_x:(\mathcal F'\otimes_{\mathcal O_Y}k(y))_x
+\longrightarrow(\mathcal F\otimes_{\mathcal O_Y}k(y))_x
+\]
+NEW: $(u\otimes1)_x:(\mathcal F'\otimes_{\mathcal O_Y}k(y))_x
+\longrightarrow(\mathcal F\otimes_{\mathcal O_Y}k(y))_x$
+
+[id 17267]
+OLD: \mathcal F'\otimes_{\mathcal O_Y}k(y)
+NEW: \mathcal F'\otimes_{\mathcal O_Y}\boldsymbol{k}(y)
+FRENCH CONTEXT (corrected): u point $x$. Les conditions suivantes sont alors
+équivalentes~:
+\begin{enumerate}[label=\emph{\alph*)}]
+\item On a $(\operatorname{Ker}u)_x=0$ et $\operatorname{Coker}u$ est un
+$\mathcal O_X$-Module $f$-plat au point $x$.
+\item L'homomorphisme
+$(u\otimes1)_x:(\mathcal F'\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x
+\longrightarrow(\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x$
+est injectif.
+\end{enumerate}
+
+Si de plus $\mathcal F$ est $f$-plat, l'ensemble des points $x$ vérifiant les
+conditions équivalentes précédentes est ouvert dans $X$.
+\end{proposition}
+
+\
+
+[id 17268]
+OLD: (\mathcal F\otimes_{\mathcal O_Y}k(y))_x
+NEW: (\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x
+FRENCH CONTEXT (corrected): n{enumerate}[label=\emph{\alph*)}]
+\item On a $(\operatorname{Ker}u)_x=0$ et $\operatorname{Coker}u$ est un
+$\mathcal O_X$-Module $f$-plat au point $x$.
+\item L'homomorphisme
+$(u\otimes1)_x:(\mathcal F'\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x
+\longrightarrow(\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x$
+est injectif.
+\end{enumerate}
+
+Si de plus $\mathcal F$ est $f$-plat, l'ensemble des points $x$ vérifiant les
+conditions équivalentes précédentes est ouvert dans $X$.
+\end{proposition}
+
+\begin{proof}
+La condition \emph{a)} entraîne \emph{b)} en vertu de $(\ma
+
+[id 17270]
+OLD: La condition a) entraîne b) en vertu
+NEW: La condition \emph{a)} entraîne \emph{b)} en vertu
+FRENCH CONTEXT (corrected): tarrow(\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y))_x$
+est injectif.
+\end{enumerate}
+
+Si de plus $\mathcal F$ est $f$-plat, l'ensemble des points $x$ vérifiant les
+conditions équivalentes précédentes est ouvert dans $X$.
+\end{proposition}
+
+\begin{proof}
+La condition \emph{a)} entraîne \emph{b)} en vertu de $(\mathbf 0_{\mathrm I},6.1.2)$, sans
+hypothèse sur $\mathcal F$. Pour démontrer la réciproque, on peut se borner au
+cas où $X$ et $Y$ sont affines, puis, en vertu de (8.9.1) et (11.2.7), supposer
+que l'on a
+$X=X_0\times_{Y_0}Y$, $f=f_0\times1$,
+$\mathcal 
+
+[id 17271]
+OLD: \[
+X=X_0\times_{Y_0}Y,\quad f=f_0\times1,\quad
+\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y,
+\]
+\[
+\mathcal F'=\mathcal F'_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y,
+\qquad u=u_0\otimes1_Y,
+\]
+NEW: $X=X_0\times_{Y_0}Y$, $f=f_0\times1$,
+$\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$,
+$\mathcal F'=\mathcal F'_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$, $u=u_0\otimes1_Y$,
+FRENCH CONTEXT (corrected):  condition \emph{a)} entraîne \emph{b)} en vertu de $(\mathbf 0_{\mathrm I},6.1.2)$, sans
+hypothèse sur $\mathcal F$. Pour démontrer la réciproque, on peut se borner au
+cas où $X$ et $Y$ sont affines, puis, en vertu de (8.9.1) et (11.2.7), supposer
+que l'on a
+$X=X_0\times_{Y_0}Y$, $f=f_0\times1$,
+$\mathcal F=\mathcal F_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$,
+$\mathcal F'=\mathcal F'_0\otimes_{\mathcal O_{Y_0}}\mathcal O_Y$, $u=u_0\otimes1_Y$,
+où $Y_0$ est noethérien, $f_0:X_0\to Y_0$ un morphisme de type fini,
+$\mathcal F_0$, $\mathcal F'_0$ deux $\mathcal O_{X_0}$-Modules cohérents,
+$u_0:\mathcal F'_0\to\mathcal F_0$ un homomorphisme~; en outre, si $x_0$ est la
+projection de $x$ dans $X_0$, on pe
+
+[id 17272]
+OLD: \[
+(u\otimes1)_x=((u_0\otimes1)_{x_0})\otimes1_{k(y)},
+\]
+NEW: $(u\otimes1)_x=((u_0\otimes1)_{x_0})\otimes1_{k(y)}$,
+
+[id 17273]
+OLD: \otimes1_{k(y)}
+NEW: \otimes1_{\mathbf{k}(y)}
+FRENCH CONTEXT (corrected): e $\mathcal F_0$ est
+$f_0$-plat au point $x_0$. Posons $y_0=f_0(x_0)$~; en vertu de la transitivité
+des fibres $(\mathbf I,3.6.4)$, le morphisme projection
+$f^{-1}(y)\to f_0^{-1}(y_0)$ est fidèlement plat (2.2.13), et comme
+$(u\otimes1)_x=((u_0\otimes1)_{x_0})\otimes1_{\mathbf{k}(y)}$,
+l'hypothèse que $(u\otimes1)_x$ est injectif entraîne qu'il en est de même de
+$(u_0\otimes1)_{x_0}$ (2.2.7). Or, cela entraîne, par
+$(\mathbf 0_{\mathrm{III}},10.2.4)$ appliqué aux anneaux locaux \emph{noethériens}
+$\mathcal O_{y_0}$ et $\mathcal O_{x_0}$ e
+
+[id 17274]
+OLD: locaux noethériens
+NEW: locaux \emph{noethériens}
+FRENCH CONTEXT (corrected): t comme
+$(u\otimes1)_x=((u_0\otimes1)_{x_0})\otimes1_{\mathbf{k}(y)}$,
+l'hypothèse que $(u\otimes1)_x$ est injectif entraîne qu'il en est de même de
+$(u_0\otimes1)_{x_0}$ (2.2.7). Or, cela entraîne, par
+$(\mathbf 0_{\mathrm{III}},10.2.4)$ appliqué aux anneaux locaux \emph{noethériens}
+$\mathcal O_{y_0}$ et $\mathcal O_{x_0}$ et aux
+$\mathcal O_{x_0}$-modules $(\mathcal F'_0)_{x_0}$ et
+$(\mathcal F_0)_{x_0}$ (dont le second est \emph{plat} sur $\mathcal O_{y_0}$)
+que l'on a $(\operatorname{Ker}u_0)_{x_0}=0$ et que $\operatorname{Coker}u_0$ 
+
+[id 17278]
+OLD: second est plat
+NEW: second est \emph{plat}
+FRENCH CONTEXT (corrected): s1)_{x_0}$ (2.2.7). Or, cela entraîne, par
+$(\mathbf 0_{\mathrm{III}},10.2.4)$ appliqué aux anneaux locaux \emph{noethériens}
+$\mathcal O_{y_0}$ et $\mathcal O_{x_0}$ et aux
+$\mathcal O_{x_0}$-modules $(\mathcal F'_0)_{x_0}$ et
+$(\mathcal F_0)_{x_0}$ (dont le second est \emph{plat} sur $\mathcal O_{y_0}$)
+que l'on a $(\operatorname{Ker}u_0)_{x_0}=0$ et que $\operatorname{Coker}u_0$ est
+$f_0$-plat au point $x_0$. On déduit d'abord de là que
+$\operatorname{Coker}u$ est $f$-plat au point $x$ (2.1.4)~; en vertu de
+l'exactitude à droite du p
+
+[id 17279]
+OLD: sur $\mathcal O_{Y_0,y_0}$
+NEW: sur $\mathcal O_{y_0}$
+FRENCH CONTEXT (corrected):  cela entraîne, par
+$(\mathbf 0_{\mathrm{III}},10.2.4)$ appliqué aux anneaux locaux \emph{noethériens}
+$\mathcal O_{y_0}$ et $\mathcal O_{x_0}$ et aux
+$\mathcal O_{x_0}$-modules $(\mathcal F'_0)_{x_0}$ et
+$(\mathcal F_0)_{x_0}$ (dont le second est \emph{plat} sur $\mathcal O_{y_0}$)
+que l'on a $(\operatorname{Ker}u_0)_{x_0}=0$ et que $\operatorname{Coker}u_0$ est
+$f_0$-plat au point $x_0$. On déduit d'abord de là que
+$\operatorname{Coker}u$ est $f$-plat au point $x$ (2.1.4)~; en vertu de
+l'exactitude à droite du produit tensoriel, on a 
+
+[id 17280]
+OLD: ),
+que l'on a
+NEW: )
+que l'on a
+FRENCH CONTEXT (corrected): \mathbf 0_{\mathrm{III}},10.2.4)$ appliqué aux anneaux locaux \emph{noethériens}
+$\mathcal O_{y_0}$ et $\mathcal O_{x_0}$ et aux
+$\mathcal O_{x_0}$-modules $(\mathcal F'_0)_{x_0}$ et
+$(\mathcal F_0)_{x_0}$ (dont le second est \emph{plat} sur $\mathcal O_{y_0}$)
+que l'on a $(\operatorname{Ker}u_0)_{x_0}=0$ et que $\operatorname{Coker}u_0$ est
+$f_0$-plat au point $x_0$. On déduit d'abord de là que
+$\operatorname{Coker}u$ est $f$-plat au point $x$ (2.1.4)~; en vertu de
+l'exactitude à droite du produit tensoriel, on a d'ailleurs
+$
+
+[id 17282]
+OLD: \[
+\operatorname{Coker}u=(\operatorname{Coker}u_0)
+ \otimes_{\mathcal O_{Y_0}}\mathcal O_Y~;
+\]
+NEW: $\operatorname{Coker}u=(\operatorname{Coker}u_0)
+ \otimes_{\mathcal O_{Y_0}}\mathcal O_Y$~;
+FRENCH CONTEXT (corrected): a $(\operatorname{Ker}u_0)_{x_0}=0$ et que $\operatorname{Coker}u_0$ est
+$f_0$-plat au point $x_0$. On déduit d'abord de là que
+$\operatorname{Coker}u$ est $f$-plat au point $x$ (2.1.4)~; en vertu de
+l'exactitude à droite du produit tensoriel, on a d'ailleurs
+$\operatorname{Coker}u=(\operatorname{Coker}u_0)
+ \otimes_{\mathcal O_{Y_0}}\mathcal O_Y$~;
+appliquant alors $(\mathbf 0_{\mathrm I},6.1.2)$ à la suite (exacte par
+hypothèse)
+\[
+0\longrightarrow(\mathcal F'_0)_{x_0}\longrightarrow
+(\mathcal F_0)_{x_0}\longrightarrow(\operatorname{Coker}u_0)_{x_0}
+\longrightarrow0
+\]
+on en déduit que $u_x$ est un hom
+
+[id 17284]
+OLD: \[
+\mathcal F_i=\mathcal F\big/\sum_{j=1}^{i}g_j\mathcal F
+\quad\text{pour }0\leq i\leq n
+\quad(\text{avec }\mathcal F_0=\mathcal F).
+\]
+NEW: $\mathcal F_i=\mathcal F\big/\sum_{j=1}^{i}g_j\mathcal F$
+pour $0\leq i\leq n$
+\textup{(}avec $\mathcal F_0=\mathcal F$\textup{)}.
+FRENCH CONTEXT (corrected): 11.3.8]
+\label{IV.11.3.8-fr}
+Soient $f:X\to Y$ un morphisme localement de présentation finie,
+$\mathcal F$ un $\mathcal O_X$-Module quasi-cohérent de présentation finie,
+$(g_i)_{1\leq i\leq n}$ une suite de sections de $\mathcal O_X$ au-dessus de
+$X$~; posons
+$\mathcal F_i=\mathcal F\big/\sum_{j=1}^{i}g_j\mathcal F$
+pour $0\leq i\leq n$
+\textup{(}avec $\mathcal F_0=\mathcal F$\textup{)}.
+Soient $x$ un point de $X$, $y=f(x)$, et posons
+$X_y=f^{-1}(y)=X\times_Y\operatorname{Spec}(\boldsymbol{k}(y))$,
+$\mathcal F_y=\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y)$, qui est un
+$\mathcal O_{X_y}$-Module. On suppose que les $(g_i)_x$ appartiennent
+
+[id 17285]
+OLD: \operatorname{Spec}(k(y))
+NEW: \operatorname{Spec}(\boldsymbol{k}(y))
+FRENCH CONTEXT (corrected):  de sections de $\mathcal O_X$ au-dessus de
+$X$~; posons
+$\mathcal F_i=\mathcal F\big/\sum_{j=1}^{i}g_j\mathcal F$
+pour $0\leq i\leq n$
+\textup{(}avec $\mathcal F_0=\mathcal F$\textup{)}.
+Soient $x$ un point de $X$, $y=f(x)$, et posons
+$X_y=f^{-1}(y)=X\times_Y\operatorname{Spec}(\boldsymbol{k}(y))$,
+$\mathcal F_y=\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y)$, qui est un
+$\mathcal O_{X_y}$-Module. On suppose que les $(g_i)_x$ appartiennent à l'idéal
+maximal $\mathfrak m_x$. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}[label=\emph{
+
+[id 17286]
+OLD: _y=\mathcal F\otimes_{\mathcal O_Y}k(y)
+NEW: _y=\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y)
+FRENCH CONTEXT (corrected): sons
+$\mathcal F_i=\mathcal F\big/\sum_{j=1}^{i}g_j\mathcal F$
+pour $0\leq i\leq n$
+\textup{(}avec $\mathcal F_0=\mathcal F$\textup{)}.
+Soient $x$ un point de $X$, $y=f(x)$, et posons
+$X_y=f^{-1}(y)=X\times_Y\operatorname{Spec}(\boldsymbol{k}(y))$,
+$\mathcal F_y=\mathcal F\otimes_{\mathcal O_Y}\boldsymbol{k}(y)$, qui est un
+$\mathcal O_{X_y}$-Module. On suppose que les $(g_i)_x$ appartiennent à l'idéal
+maximal $\mathfrak m_x$. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}[label=\emph{\alph*)}]
+\item La suite $((g_i)_x)$ est $\mathcal F_x$-régulière 
+
+=================== PAGE IV-3 136 ===================
+----- (English page IV-3 135: shown above in this file) -----
+----- (English page IV-3 136: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 137 -----
+\oldpage[IV-3]{137}
+
+the condition is necessary, note that $\sh{H}$ is of finite presentation. Since the question is local on $\mathrm{X}$ and $\mathrm{Y}$, we may suppose that $\mathrm{X}$ and $\mathrm{Y}$ are affine and, by \sref{IV.11.3.1}, that $\sh{H}$ is $f$-flat. We now record the following lemma.
+
+\begin{lemma}[11.3.9.1]
+\label{IV.11.3.9.1}
+Let $f:\mathrm{X}\to\mathrm{Y}$ be a morphism locally of finite presentation, $\sh{G}$, $\sh{H}$ two $\sh{O}_\mathrm{X}$-Modules quasi-coherent of finite presentation such that $\sh{H}$ is $f$-flat, $p:\sh{G}\to\sh{H}$ a surjective homomorphism. Then $\operatorname{Ker}(p)$ is an $\sh{O}_\mathrm{X}$-Module of finite presentation.
+\end{lemma}
+
+\begin{proof}
+We may indeed suppose that $\mathrm{X}$ and $\mathrm{Y}$ are affine and that there exist a morphism $\mathrm{Y}\to\mathrm{Y}_0$, where $\mathrm{Y}_0$ is Noetherian, a morphism $f_0:\mathrm{X}_0\to\mathrm{Y}_0$ of finite type such that $\mathrm{X}=\mathrm{X}_0\times_{\mathrm{Y}_0}\mathrm{Y}$ and $f=(f_0)_{(\mathrm{Y})}$, two coherent $\sh{O}_{\mathrm{X}_0}$-Modules $\sh{G}_0$, $\sh{H}_0$, and a homomorphism $p_0:\sh{G}_0\to\sh{H}_0$ such that $\sh{G}$, $\sh{H}$, and $p$ are obtained from $\sh{G}_0$, $\sh{H}_0$, and $p_0$ by base change $(8.9.1\text{ and }8.5.2)$. We may moreover suppose that $p_0$ is surjective $(8.5.7)$ and that $\sh{H}_0$ is $f_0$-flat \sref{IV.11.2.7}. Then, if $\sh{K}_0=\operatorname{Ker}(p_0)$, $\sh{K}_0$ is a coherent $\sh{O}_{\mathrm{X}_0}$-Module $(\mathbf{0}_\mathrm{I},~5.3.4)$, and by $(\mathbf{0}_\mathrm{I},~6.1.2)$, $\sh{K}=\operatorname{Ker}(p)$ is obtained from $\sh{K}_0$ by base change and is therefore of finite presentation.
+\end{proof}
+
+This lemma being proved, set $\sh{K}=\operatorname{Ker}(\sh{G}\to\sh{H})$, which is therefore of finite presentation. There is a canonical homomorphism $q:\sh{F}\to\sh{K}$, and by hypothesis $q_x:\sh{F}_x\to\sh{K}_x$ is an isomorphism. Hence, by $(\mathbf{0}_\mathrm{I},~5.2.7)$, there exists a neighbourhood $\mathrm{U}$ of $x$ such that $q|_{\mathrm{U}}$ is an isomorphism; after restricting $\mathrm{X}$, we may therefore suppose that the sequence
+\[
+  0\to\sh{F}\xrightarrow{h}\sh{G}\to\sh{H}\to 0
+\]
+is \emph{exact}. This being so, it follows from \sref{IV.11.2.6} that, for all sufficiently large $\lambda$, $\sh{H}_\lambda$ is $f_\lambda$-flat. Set $\sh{K}_\lambda=\operatorname{Ker}(\sh{G}_\lambda\to\sh{H}_\lambda)$ and $\sh{K}_\mu=v^*_{\lambda\mu}(\sh{K}_\lambda)$ for $\mu\geqslant\lambda$. It follows from $(\mathbf{0}_\mathrm{I},~6.1.2)$ that
+\[
+  \sh{K}_\mu=\operatorname{Ker}(\sh{G}_\mu\to\sh{H}_\mu)
+  \quad\text{and}\quad
+  \sh{K}=v^*_\lambda(\sh{K}_\lambda)
+  =\operatorname{Ker}(\sh{G}\to\sh{H})=\sh{F}.
+\]
+On the other hand, for every $\mu\geqslant\lambda$ there is a canonical homomorphism $q_\mu:\sh{F}_\mu\to\sh{K}_\mu$ such that $q_\mu=v^*_{\lambda\mu}(q_\lambda)$ and $q=v^*_\mu(q_\mu)$. Since $q$ is an isomorphism, it follows from $(8.5.2.4)$ and \sref{IV.11.3.9.1} that there exists $\mu\geqslant\lambda$ for which $q_\mu$ is an isomorphism, and hence $h_\mu:\sh{F}_\mu\to\sh{G}_\mu$ is injective.
+\end{proof}
+
+Let us return to the proof of \sref{IV.11.3.8}.
+
+Since the set of $x\in\mathrm{X}$ satisfying $b)$ is open in $\mathrm{X}$, it is clear that $b)$ implies $b')$. Let us finally show that $b')$ implies $c)$. First, $\sh{F}_n$ is $f$-flat in a neighbourhood of $x$ \sref{IV.11.3.1}; we may therefore reduce to the case where $\mathrm{U}=\mathrm{X}$ and $\sh{F}_n$ is $f$-flat. Since, by definition, $\operatorname{gr}^*_\mathscr{J}(\sh{F})$ is isomorphic to $\sh{F}_n\otimes_{\sh{O}_\mathrm{Y}}\sh{O}_\mathrm{Y}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ $(\mathbf{0},~15.2.2)$, it is $f$-flat, and it follows from \sref{IV.11.3.4},~(i), that $\sh{F}$ itself is $f$-flat in a neighbourhood of $x$. On the other hand, if $(\mathscr{J}_y)_x$ is the ideal of $\sh{O}_{\mathrm{X}_y,x}$ generated by the $(g_i\otimes 1)_x$, it follows from \sref{IV.11.2.9.2} that, in the diagram
+\[
+\xymatrix{
+  ((\operatorname{gr}^0_{\mathscr{J}_x}(\sh{F}_x))[\mathrm{T}_1,\ldots,\mathrm{T}_n])\otimes_{\sh{O}_y}\boldsymbol{k}(y) \ar[r] \ar[d] & \operatorname{gr}^*_{\mathscr{J}_x}(\sh{F}_x)\otimes_{\sh{O}_y}\boldsymbol{k}(y) \ar[d] \\
+  (\operatorname{gr}^0_{(\mathscr{J}_y)_x}((\sh{F}_y)_x))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r] & \operatorname{gr}^*_{(\mathscr{J}_y)_x}((\sh{F}_y)_x)
+}
+\]
+----- French corrections on page IV-3 136 -----
+[id 17288]
+OLD: Le fait que a) entraîne d) résulte
+NEW: Le fait que \emph{a)} entraîne \emph{d)} résulte
+FRENCH CONTEXT (corrected): imes1)_{x'}$
+d'éléments de $\mathcal O_{X',x'}$ est $\mathcal F'_{x'}$-régulière.
+\end{enumerate}
+
+En outre l'ensemble des $x\in X$ vérifiant ces conditions est ouvert dans
+l'ensemble $Z$ des $x$ tels que $g_i(x)=0$ pour tout $i$.
+\end{theorem}
+
+\begin{proof}
+Le fait que \emph{a)} entraîne \emph{d)} résulte aussitôt de $(\mathbf 0,15.1.15)$, et \emph{c)} est
+un cas particulier de \emph{d)}~; par ailleurs \emph{a)} implique \emph{b)} trivialement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \
+
+[id 17289]
+OLD: et c) est
+un cas particulier de d)~;
+NEW: et \emph{c)} est
+un cas particulier de \emph{d)}~;
+FRENCH CONTEXT (corrected): nd{enumerate}
+
+En outre l'ensemble des $x\in X$ vérifiant ces conditions est ouvert dans
+l'ensemble $Z$ des $x$ tels que $g_i(x)=0$ pour tout $i$.
+\end{theorem}
+
+\begin{proof}
+Le fait que \emph{a)} entraîne \emph{d)} résulte aussitôt de $(\mathbf 0,15.1.15)$, et \emph{c)} est
+un cas particulier de \emph{d)}~; par ailleurs \emph{a)} implique \emph{b)} trivialement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$,
+
+[id 17290]
+OLD: par ailleurs a) implique b) trivialement
+NEW: par ailleurs \emph{a)} implique \emph{b)} trivialement
+FRENCH CONTEXT (corrected): ifiant ces conditions est ouvert dans
+l'ensemble $Z$ des $x$ tels que $g_i(x)=0$ pour tout $i$.
+\end{theorem}
+
+\begin{proof}
+Le fait que \emph{a)} entraîne \emph{d)} résulte aussitôt de $(\mathbf 0,15.1.15)$, et \emph{c)} est
+un cas particulier de \emph{d)}~; par ailleurs \emph{a)} implique \emph{b)} trivialement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$, et cela montre aussi que l'ensemble des $x\in X$ vérif
+
+[id 17291]
+OLD: que b) ou c) entraîne a). Les
+NEW: que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les
+FRENCH CONTEXT (corrected):  que $g_i(x)=0$ pour tout $i$.
+\end{theorem}
+
+\begin{proof}
+Le fait que \emph{a)} entraîne \emph{d)} résulte aussitôt de $(\mathbf 0,15.1.15)$, et \emph{c)} est
+un cas particulier de \emph{d)}~; par ailleurs \emph{a)} implique \emph{b)} trivialement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$, et cela montre aussi que l'ensemble des $x\in X$ vérifiant \emph{c)} est ouvert
+dans $Z$. Pour montrer que \emph{b)
+
+[id 17292]
+OLD: fait que c) implique a) résulte
+NEW: fait que \emph{c)} implique \emph{a)} résulte
+FRENCH CONTEXT (corrected): )} résulte aussitôt de $(\mathbf 0,15.1.15)$, et \emph{c)} est
+un cas particulier de \emph{d)}~; par ailleurs \emph{a)} implique \emph{b)} trivialement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$, et cela montre aussi que l'ensemble des $x\in X$ vérifiant \emph{c)} est ouvert
+dans $Z$. Pour montrer que \emph{b)} entraîne \emph{a)}, on est aussitôt ramené, par
+récurrence sur $n$, au cas $n=1$~; nous écr
+
+[id 17293]
+OLD: vérifiant c) est ouvert
+NEW: vérifiant \emph{c)} est ouvert
+FRENCH CONTEXT (corrected): ement. Montrons
+que \emph{b)} ou \emph{c)} entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$, et cela montre aussi que l'ensemble des $x\in X$ vérifiant \emph{c)} est ouvert
+dans $Z$. Pour montrer que \emph{b)} entraîne \emph{a)}, on est aussitôt ramené, par
+récurrence sur $n$, au cas $n=1$~; nous écrirons $g$ au lieu de $g_1$. La
+question étant locale sur $X$ et $Y$, on peut supposer
+$Y=\operatorname{Spec}(A)$, $X=\operatorname{
+
+[id 17294]
+OLD: Pour montrer que b) entraîne a), on
+NEW: Pour montrer que \emph{b)} entraîne \emph{a)}, on
+FRENCH CONTEXT (corrected): } entraîne \emph{a)}. Les $\mathcal F_i$ sont de présentation finie~; le
+fait que \emph{c)} implique \emph{a)} résulte alors aussitôt de (11.3.7) par récurrence sur
+$n$, et cela montre aussi que l'ensemble des $x\in X$ vérifiant \emph{c)} est ouvert
+dans $Z$. Pour montrer que \emph{b)} entraîne \emph{a)}, on est aussitôt ramené, par
+récurrence sur $n$, au cas $n=1$~; nous écrirons $g$ au lieu de $g_1$. La
+question étant locale sur $X$ et $Y$, on peut supposer
+$Y=\operatorname{Spec}(A)$, $X=\operatorname{Spec}(B)$ affines, $B$ étant une
+$A$-algèbre de présentation
+
+[id 17295]
+OLD: (donc
+noethériens)
+NEW: (donc
+noethériennes)
+FRENCH CONTEXT (corrected): M_0\otimes_{A_0}A$, où $A_0$ est un sous-anneau
+noethérien de $A$, $B_0$ une $A_0$-algèbre de type fini et $M_0$ un
+$B_0$-module de type fini. En outre $A$ est limite inductive filtrante de ses
+sous-anneaux $A_\lambda$ qui sont des $A_0$-algèbres de type fini (donc
+noethériennes), et si l'on pose
+$B_\lambda=B_0\otimes_{A_0}A_\lambda$,
+$M_\lambda=M_0\otimes_{A_0}A_\lambda$, $B_\lambda$ est une
+$A_\lambda$-algèbre de type fini, $M_\lambda$ un $B_\lambda$-module de type
+fini et l'on a $B=\varinjlim B_\lambda$, $M=\varinjlim M_\lambda$. I
+
+[id 17296]
+OLD: \widetilde{M_\lambda}
+NEW: \widetilde{M}_\lambda
+FRENCH CONTEXT (corrected): existe
+donc un indice $\lambda$ et un élément $g_\lambda\in B_\lambda$ tels que
+$g=g_\lambda\otimes1$~; revenant aux notations géométriques et posant
+$Y_\lambda=\operatorname{Spec}(A_\lambda)$,
+$X_\lambda=\operatorname{Spec}(B_\lambda)$ et
+$\mathcal F_\lambda=\widetilde{M}_\lambda$, il nous suffira de prouver qu'il y
+a un $\mu\geq\lambda$ tel qu'au point $x_\mu\in X_\mu$ projection de $x$,
+$(g_\mu)_{x_\mu}$ soit $(\mathcal F_\mu)_{x_\mu}$-régulier et
+$\mathcal F_\mu/g_\mu\mathcal F_\mu$ plat sur $Y_\mu$ au point $x_\mu$. On en
+déduira 
+
+[id 17297]
+OLD: Le fait que b) entraîne a) résultera
+NEW: Le fait que \emph{b)} entraîne \emph{a)} résultera
+FRENCH CONTEXT (corrected): cal F_\mu)_{x_\mu}$-régulier et
+$\mathcal F_\mu/g_\mu\mathcal F_\mu$ plat sur $Y_\mu$ au point $x_\mu$. On en
+déduira en effet, par $(\mathbf 0,15.1.16)$ que $\mathcal F_\mu$ est plat sur
+$Y_\mu$ au point $x_\mu$, donc $\mathcal F$ plat sur $Y$ au point $x$.
+
+Le fait que \emph{b)} entraîne \emph{a)} résultera donc de la proposition suivante~:
+
+\begin{proposition}[11.3.9]
+\label{IV.11.3.9-fr}
+Les notations et hypothèses générales étant celles de \textup{(8.5.1)} et \textup{(8.8.1)},
+supposons que $f_\alpha:X_\alpha\to Y_\alpha$ soit un morphisme localement de
+prése
+
+=================== PAGE IV-3 137 ===================
+----- (English page IV-3 136: shown above in this file) -----
+----- (English page IV-3 137: shown above in this file) -----
+----- English, source_aligned/ega4-11.tex, page IV-3 138 -----
+\oldpage[IV-3]{138}
+the vertical arrows are isomorphisms. Since the first horizontal arrow is an isomorphism, so is the second; hence the sequence $((g_i\otimes 1)_x)$ is $(\sh{F}_y)_x$-quasi-regular, and therefore regular, since $\mathrm{X}_y$ is locally of finite type over $\boldsymbol{k}(y)$.
+\end{proof}
+
+\begin{theorem}[11.3.10]
+\label{IV.11.3.10}
+(Flatness criterion by fibres). --- Let $\mathrm{S}$ be a prescheme, $g:\mathrm{X}\to\mathrm{S}$, $h:\mathrm{Y}\to\mathrm{S}$ two morphisms, $f:\mathrm{X}\to\mathrm{Y}$ an $\mathrm{S}$-morphism, $\sh{F}$ a quasi-coherent $\sh{O}_\mathrm{X}$-Module, $x$ a point of $\mathrm{X}$, $y=f(x)$, $s=h(y)=g(x)$. Suppose that one of the following two hypotheses holds:
+\begin{enumerate}[label=\textup{\arabic{enumi}\textsuperscript{o}}]
+  \item $\mathrm{S}$, $\mathrm{X}$ and $\mathrm{Y}$ are locally Noetherian and $\sh{F}$ is coherent.
+  \item $g$ and $h$ are locally of finite presentation and $\sh{F}$ is of finite presentation.
+\end{enumerate}
+Then, with the notation of $(9.4.1)$, if $\sh{F}_x\neq 0$, the following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\sh{F}$ is $g$-flat at the point $x$ and $\sh{F}_s$ is $f_s$-flat at the point $x$.
+  \item $h$ is flat at the point $y$ and $\sh{F}$ is $f$-flat at the point $x$.
+\end{enumerate}
+Moreover, under hypothesis 2\textsuperscript{o}, the set of $x\in\mathrm{X}$ satisfying condition $b)$ is open in $\mathrm{X}$.
+\end{theorem}
+
+\begin{proof}
+The last assertion results from \sref{IV.11.3.1} applied to $\sh{O}_\mathrm{Y}$ and to the morphism $h$ on the one hand, and to $\sh{F}$ and to the morphism $f$ (which is locally of finite presentation) on the other.
+
+As $g=h\circ f$, it is clear that $b)$ implies $a)$ without assuming 1\textsuperscript{o} or 2\textsuperscript{o} $(2.1.6$ and $2.1.4)$. To prove that $a)$ implies $b)$, we may reduce to the case where $\mathrm{S}$, $\mathrm{X}$, and $\mathrm{Y}$ are affine; under hypothesis 2\textsuperscript{o}, by applying \sref{IV.11.2.7}, we reduce further to the case where $\mathrm{S}$ is \emph{Noetherian}, that is, to the case where hypothesis 1\textsuperscript{o} holds. The assertion is then equivalent to the following lemma, which improves $(\mathbf{0}_{\mathrm{III}},~10.2.5)$:
+
+\begin{lemma}[11.3.10.1]
+\label{IV.11.3.10.1}
+Let $\rho:\mathrm{A}\to\mathrm{B}$, $\sigma:\mathrm{B}\to\mathrm{C}$ be homomorphisms of local Noetherian rings, $k$ the residue field of $\mathrm{A}$, $\mathrm{M}$ a $\mathrm{C}$-module $\neq 0$ of finite type. Then the following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\mathrm{M}$ is a flat $\mathrm{A}$-module and $\mathrm{M}\otimes_\mathrm{A} k$ is a flat $(\mathrm{B}\otimes_\mathrm{A} k)$-module.
+  \item $\mathrm{B}$ is a flat $\mathrm{A}$-module and $\mathrm{M}$ is a flat $\mathrm{B}$-module.
+\end{enumerate}
+\end{lemma}
+
+We will first establish the more general following lemma:
+
+\begin{lemma}[11.3.10.2]
+\label{IV.11.3.10.2}
+Let $\mathrm{A}$ be a commutative ring, $\mathrm{B}$ a commutative $\mathrm{A}$-algebra, $\mathfrak{J}$ an ideal of $\mathrm{A}$, and $\mathrm{M}$ a $\mathrm{B}$-module. Consider first the following conditions:
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item $\mathfrak{J}$ is nilpotent.
+  \item $\mathrm{B}$ is Noetherian and $\mathrm{M}$ is ideally separated for the $\mathfrak{J}\mathrm{B}$-preadic topology $(\mathbf{0}_{\mathrm{III}},~10.2.1)$.
+  \item $\mathfrak{J}\mathrm{B}$ is contained in the radical of $\mathrm{B}$.
+\end{enumerate}
+Consider, on the other hand, the following four properties:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\mathrm{M}$ is a flat $\mathrm{B}$-module.
+  \item $\mathrm{B}$ is a flat $\mathrm{A}$-module.
+  \item $\mathrm{M}$ is a flat $\mathrm{A}$-module and $\mathrm{M}/\mathfrak{J}\mathrm{M}$ is a flat $(\mathrm{B}/\mathfrak{J}\mathrm{B})$-module.
+  \item $\mathrm{B}/\mathfrak{J}\mathrm{B}$ is a flat $(\mathrm{A}/\mathfrak{J})$-module and for every maximal ideal $\mathfrak{m}\supset\mathfrak{J}\mathrm{B}$ of $\mathrm{B}$ one has $\mathfrak{m}\mathrm{M}\neq\mathrm{M}$.
+\end{enumerate}
+Then:
+\begin{enumerate}[label=\textup{\arabic{enumi}\textsuperscript{o}}]
+  \item If one of the conditions (i) or (ii) holds, the conjunction of $a)$ and $b)$ implies $c)$, and $c)$ implies $a)$.
+  \item 
+----- French corrections on page IV-3 137 -----
+[id 17302]
+OLD: est $f$-plat. Notons
+NEW: est \emph{$f$-plat}. Notons
+FRENCH CONTEXT (corrected): st exacte (2.1.8).
+Pour prouver que
+\oldpage[IV-3]{137}
+la condition est nécessaire, notons que $\mathcal H$ est de présentation
+finie~; la question étant locale sur $X$, on peut supposer $X$ et $Y$ affines,
+et, en vertu de (11.3.1), supposer que $\mathcal H$ est \emph{$f$-plat}. Notons
+maintenant le
+
+\begin{lemma}[11.3.9.1]
+\label{IV.11.3.9.1-fr}
+Soient $f:X\to Y$ un morphisme localement de présentation finie,
+$\mathcal G$, $\mathcal H$ deux $\mathcal O_X$-Modules quasi-cohérents de
+présentation finie tels que $\mathcal H$ soit $f$-plat,
+$p
+
+[id 17310]
+OLD: vérifiant b) est ouvert
+NEW: vérifiant \emph{b)} est ouvert
+FRENCH CONTEXT (corrected): l résulte de (8.5.2.4) et
+(11.3.9.1) qu'il existe $\mu\geq\lambda$ tel que $q_\mu$ soit un isomorphisme,
+et par suite $h_\mu:\mathcal F_\mu\to\mathcal G_\mu$ un homomorphisme
+injectif.
+
+Revenons à la démonstration de (11.3.8).
+
+Puisque l'ensemble des $x\in X$ vérifiant \emph{b)} est ouvert dans $X$, il est clair
+que \emph{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est 
+
+[id 17311]
+OLD: clair
+que b) entraîne
+NEW: clair
+que \emph{b)} entraîne
+FRENCH CONTEXT (corrected): e $\mu\geq\lambda$ tel que $q_\mu$ soit un isomorphisme,
+et par suite $h_\mu:\mathcal F_\mu\to\mathcal G_\mu$ un homomorphisme
+injectif.
+
+Revenons à la démonstration de (11.3.8).
+
+Puisque l'ensemble des $x\in X$ vérifiant \emph{b)} est ouvert dans $X$, il est clair
+que \emph{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{
+
+[id 17312]
+OLD: b$'$. Montrons
+NEW: \emph{b$'$)}. Montrons
+FRENCH CONTEXT (corrected): _\mu$ soit un isomorphisme,
+et par suite $h_\mu:\mathcal F_\mu\to\mathcal G_\mu$ un homomorphisme
+injectif.
+
+Revenons à la démonstration de (11.3.8).
+
+Puisque l'ensemble des $x\in X$ vérifiant \emph{b)} est ouvert dans $X$, il est clair
+que \emph{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bull
+
+[id 17313]
+OLD: que b$'$ entraîne c).
+NEW: que \emph{b$'$)} entraîne \emph{c)}.
+FRENCH CONTEXT (corrected): t par suite $h_\mu:\mathcal F_\mu\to\mathcal G_\mu$ un homomorphisme
+injectif.
+
+Revenons à la démonstration de (11.3.8).
+
+Puisque l'ensemble des $x\in X$ vérifiant \emph{b)} est ouvert dans $X$, il est clair
+que \emph{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)$ est isomorphe à
+$\mathcal F
+
+[id 17314]
+OLD: (11.3.1) et on peut
+NEW: (11.3.1), et on peut
+FRENCH CONTEXT (corrected):  de (11.3.8).
+
+Puisque l'ensemble des $x\in X$ vérifiant \emph{b)} est ouvert dans $X$, il est clair
+que \emph{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)$ est isomorphe à
+$\mathcal F_n\otimes_{\mathcal O_Y}\mathcal O_Y[T_1,\ldots,T_n]$
+$(\mathbf 0,15.2.2)$, il est \emph{$f
+
+[id 17315]
+OLD: \operatorname{gr}_{\mathcal J}^*(\mathcal F)
+NEW: \operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)
+FRENCH CONTEXT (corrected): h{b)} entraîne \emph{b$'$)}. Montrons enfin que \emph{b$'$)} entraîne \emph{c)}. En premier lieu,
+$\mathcal F_n$ est $f$-plat dans un voisinage de $x$ (11.3.1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)$ est isomorphe à
+$\mathcal F_n\otimes_{\mathcal O_Y}\mathcal O_Y[T_1,\ldots,T_n]$
+$(\mathbf 0,15.2.2)$, il est \emph{$f$-plat}, et on en conclut par (11.3.4, (i)) que
+$\mathcal F$ lui-même est \emph{$f$-plat} au voisinage de $x$. D'autre part, si
+$(\mathcal J
+
+[id 17316]
+OLD: il est $f$-plat, et
+NEW: il est \emph{$f$-plat}, et
+FRENCH CONTEXT (corrected): .1), et on peut donc
+se borner au cas où $U=X$ et où $\mathcal F_n$ est $f$-plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)$ est isomorphe à
+$\mathcal F_n\otimes_{\mathcal O_Y}\mathcal O_Y[T_1,\ldots,T_n]$
+$(\mathbf 0,15.2.2)$, il est \emph{$f$-plat}, et on en conclut par (11.3.4, (i)) que
+$\mathcal F$ lui-même est \emph{$f$-plat} au voisinage de $x$. D'autre part, si
+$(\mathcal J_y)_x$ est l'idéal de $\mathcal O_{X_y,x}$ engendré par les
+$(g_i\otimes1)_x$, il résulte de (11.2.9.2) que, dans le diagramme
+\[
+\
+
+[id 17317]
+OLD: lui-même est $f$-plat au
+NEW: lui-même est \emph{$f$-plat} au
+FRENCH CONTEXT (corrected): plat. Comme par
+définition $\operatorname{gr}_{\mathfrak J}^\bullet(\mathcal F)$ est isomorphe à
+$\mathcal F_n\otimes_{\mathcal O_Y}\mathcal O_Y[T_1,\ldots,T_n]$
+$(\mathbf 0,15.2.2)$, il est \emph{$f$-plat}, et on en conclut par (11.3.4, (i)) que
+$\mathcal F$ lui-même est \emph{$f$-plat} au voisinage de $x$. D'autre part, si
+$(\mathcal J_y)_x$ est l'idéal de $\mathcal O_{X_y,x}$ engendré par les
+$(g_i\otimes1)_x$, il résulte de (11.2.9.2) que, dans le diagramme
+\[
+\xymatrix{
+((\operatorname{gr}_{\mathfrak J_x}^0(\mathcal F_x))[T_1,\ldots,T_n])
+ 
+
+[id 17318]
+OLD: (\operatorname{gr}_{\mathcal J_x}^0(\mathcal F_x)[T_1,\ldots,T_n])
+NEW: ((\operatorname{gr}_{\mathfrak J_x}^0(\mathcal F_x))[T_1,\ldots,T_n])
+FRENCH CONTEXT (corrected): clut par (11.3.4, (i)) que
+$\mathcal F$ lui-même est \emph{$f$-plat} au voisinage de $x$. D'autre part, si
+$(\mathcal J_y)_x$ est l'idéal de $\mathcal O_{X_y,x}$ engendré par les
+$(g_i\otimes1)_x$, il résulte de (11.2.9.2) que, dans le diagramme
+\[
+\xymatrix{
+((\operatorname{gr}_{\mathfrak J_x}^0(\mathcal F_x))[T_1,\ldots,T_n])
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[r] \ar[d] &
+\operatorname{gr}_{\mathfrak J_x}^\bullet(\mathcal F_x)
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[d] \\
+(\operatorname{gr}_{(\mathfrak J_y)_x}^0((\mathcal F_y)_x))
+ [T_1,\ldots,T_n] \ar[r] &
+\operato
+
+[id 17320]
+OLD: \operatorname{gr}_{\mathcal J_x}^*(\mathcal F_x)
+NEW: \operatorname{gr}_{\mathfrak J_x}^\bullet(\mathcal F_x)
+FRENCH CONTEXT (corrected): st l'idéal de $\mathcal O_{X_y,x}$ engendré par les
+$(g_i\otimes1)_x$, il résulte de (11.2.9.2) que, dans le diagramme
+\[
+\xymatrix{
+((\operatorname{gr}_{\mathfrak J_x}^0(\mathcal F_x))[T_1,\ldots,T_n])
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[r] \ar[d] &
+\operatorname{gr}_{\mathfrak J_x}^\bullet(\mathcal F_x)
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[d] \\
+(\operatorname{gr}_{(\mathfrak J_y)_x}^0((\mathcal F_y)_x))
+ [T_1,\ldots,T_n] \ar[r] &
+\operatorname{gr}_{(\mathfrak J_y)_x}^\bullet((\mathcal F_y)_x)
+}
+\]
+\oldpage[IV-3]{138}
+les flèches verticales sont des 
+
+[id 17323]
+OLD: \operatorname{gr}_{(\mathcal J_y)_x}^*((\mathcal F_y)_x)
+NEW: \operatorname{gr}_{(\mathfrak J_y)_x}^\bullet((\mathcal F_y)_x)
+FRENCH CONTEXT (corrected): ts,T_n])
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[r] \ar[d] &
+\operatorname{gr}_{\mathfrak J_x}^\bullet(\mathcal F_x)
+ \otimes_{\mathcal O_y}\boldsymbol{k}(y) \ar[d] \\
+(\operatorname{gr}_{(\mathfrak J_y)_x}^0((\mathcal F_y)_x))
+ [T_1,\ldots,T_n] \ar[r] &
+\operatorname{gr}_{(\mathfrak J_y)_x}^\bullet((\mathcal F_y)_x)
+}
+\]
+\oldpage[IV-3]{138}
+les flèches verticales sont des isomorphismes~; comme la première ligne est un
+isomorphisme, il en est de même de la seconde, donc la suite
+$((g_i\otimes1)_x)$ est $(\mathcal F_y)_x$-quasi-régulière, et par suite aussi
+$(\mathcal F_y)
+

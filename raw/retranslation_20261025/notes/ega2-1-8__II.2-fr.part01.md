@@ -1,0 +1,10 @@
+- TRANSCRIPTION? 2.2.2 (proof) — reference text "0, I.4.6" for label key 0.1.4.6; the "I" looks like a misread "1" (0, 1.4.6). Kept as in the French.
+- TRANSCRIPTION? 2.2.3 — same: reference text "0, I.4.1" for label key 0.1.4.1. Kept.
+- TRANSCRIPTION? 2.2.7 — "formé des éléments d'ordre $0$": elsewhere the text says "de degré $0$"; possibly "de degré" in the original. Translated literally "of order $0$".
+- TERM système libre (2.2.1) → linearly independent family.
+- TERM p.p.c.m. (2.1.6) → l.c.m.
+- TERM composant homogène → homogeneous component.
+- TERM diviseur de $0$ → divisor of $0$; annulateur → annihilator; "réduit à $0$" → "consist of $0$ alone" (avoids a clash with "reduced").
+- TERM ensemble de base (2.3.1, of the scheme structure on Proj) → underlying set.
+- TERM applications décroissantes (2.3.12) → decreasing maps.
+- TERM "du lemme (2.1.3)" → "from Lemma (2.1.3)".

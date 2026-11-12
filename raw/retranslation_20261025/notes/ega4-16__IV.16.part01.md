@@ -1,0 +1,10 @@
+- TRANSCRIPTION? paragraph after (16.1.2) — "par la puissance $(\mathscr{I}_f/\mathscr{I}_f^{n+1})^m$ de l'Idéal d'augmentation de $\mathcal{O}_{Y^{(n)}}$": for $\mathcal{O}_{Y^{(n)}}$ to be the quotient of $\mathcal{O}_{Y^{(m)}}$ the power should be $(\mathscr{I}_f/\mathscr{I}_f^{m+1})^{n+1}$ of the augmentation ideal of $\mathcal{O}_{Y^{(m)}}$. Translated as is.
+- TRANSCRIPTION? 16.2.3 (ii) — cites (16.1.6) for the $\mathcal{O}_Y$-algebra structure defined by $g$; that structure is constructed in (16.1.7) (cited correctly in 16.3.2). Translated as is.
+- TRANSCRIPTION? proof of 16.2.3 (i) — "le morphisme $g$ étant une immersion": $g:X\to Y$ is not an immersion; (16.2.2, (ii)) needs the section $f$ to be one. Translated as is.
+- TRANSCRIPTION? 16.2.5 (ii) — "Par exemple (avec les notations de la démonstration de (16.2.2, (ii)), il": the opening parenthesis is never closed. Kept as is.
+- TERM paragraphe (\S) → section
+- TERM faisceau d'anneaux $\mathcal{O}_Y$-augmenté → $\mathcal{O}_Y$-augmented sheaf of rings; homomorphisme de transition → transition homomorphism; inverse à droite / à gauche → right / left inverse
+- TERM automorphisme involutif → involutive automorphism; lemme des cinq → five lemma; tensorisation → tensoring
+- TERM préschéma formel complété de $X$ le long de $Y$ → formal prescheme completion of $X$ along $Y$
+- TERM Géométrie différentielle → Differential Geometry (capitalized like Algebraic Geometry); connexions, transformations infinitésimales, champ de vecteurs, jets → connections, infinitesimal transformations, vector field, jets
+- TERM exposés II et VII de [42] → Exposés II and VII of [42]

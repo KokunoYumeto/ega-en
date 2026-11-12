@@ -1,0 +1,12 @@
+- TRANSCRIPTION? 16.4.2 — first arrow of the composite is `\rho'^*(\nu_n^\#)`, but (16.4.1.3) defines $\nu_n:\rho^*(\mathscr P^n_{X/S})\to\mathscr P^n_{X'/S'}$ with no $^\#$; $\rho'^*(\nu_n)$ seems meant. Copied as is.
+- TRANSCRIPTION? proof of 16.4.23 — the injective $p_{Z/X/S}:p^*(\mathscr P^n_{X/S})\to\mathscr P^n_{Z/S}$ is of type (16.4.18.2) and the surjection $\mathscr P^n_{Z/S}\to\mathscr P^n_{Z/Y}$ of type (16.4.18.1); the two references look swapped (perhaps already in the original).
+- TRANSCRIPTION? 16.4.24 (i) — "(16.4.21.2)" does not exist; 16.4.21 has only (16.4.21.1) (its left-hand map seems meant).
+- TERM corps des fractions rationnelles → field of rational functions
+- TERM partie multiplicativement stable → multiplicatively stable subset
+- TERM produit tensoriel gradué → graded tensor product; gradués associés → associated graded objects
+- TERM section universelle → universal section; formule d'associativité → associativity formula
+- TERM (noyau) supplémentaire de (l'image) → complementary to (the image)
+- TERM inversible à gauche → left invertible
+- TERM modules d'imperfection → modules of imperfection (form used in ours/, 0 §20.6)
+- TERM le présent paragraphe (§16) → the present section (ours/: "section" 39 : "paragraph" 12)
+- TERM en factorisant par $\mathscr K^{n+1}$ → by factoring out $\mathscr K^{n+1}$

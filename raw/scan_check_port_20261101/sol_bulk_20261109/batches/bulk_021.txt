@@ -1,0 +1,5094 @@
+# English hand pass, bulk_021: 139 items on 19 printed pages
+
+=================== PAGE IV-2 85 ===================
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 84 -----
+\oldpage[IV-2]{84}
+be a field of characteristic $p>0$, let
+$k=k_0(s,t)$ be the field of rational functions in two
+indeterminates, let
+\[
+L=k(s^{1/p},t^{1/p}),
+\qquad
+X=\Spec(L),
+\]
+let $u$ be a third indeterminate, and put $K=k\bigl(u,s^{1/p}+ut^{1/p}\bigr)$.
+One readily verifies that $k$ is algebraically closed in $K$ and that
+$L\otimes_kK$ has a nonzero nilradical, so $X_{(K)}$ is not reduced.
+But $(X_{(K)})_{\mathrm{red}}$ is not defined over $k$, while $K$
+contains no intermediate extension of finite degree over $k$ other
+than $k$ itself.
+Hence the smallest field of definition of
+$(X_{(K)})_{\mathrm{red}}$ cannot be finite over $k$.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.8.15.ii}
+Given an object in one of the target sets in \sref{IV.4.8.2} and an
+extension $K_1/K$, the object has a smallest field of definition if
+and only if its image under $\varepsilon_{K_1,K}$ does; the two smallest
+subfields are necessarily the same, as observed in
+\sref{IV.4.8.4}.
+\end{enumerate}
+\end{remarks}
+----- English, components/09_section49_fields_of_definition_of_subsets.tex, page IV-2 84 -----
+\subsection{Fields of definition of subsets of a prescheme}
+\phantomsection
+\label{subsection:IV.4.9}
+
+\begin{proposition}[4.9.1]
+\phantomsection
+\label{IV.4.9.1}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $K/k$ be an
+extension, let $\overline T$ be a closed subset of $X_{(K)}$, and let
+$K'$ be an intermediate field of $K/k$.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.1.a}
+$\overline T$ is defined over $K'$.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.1.b}
+The open subset $\overline U=X_{(K)}\setmin\overline T$ of $X_{(K)}$ is
+defined over $K'$.
+\item[\rm(b$'$)]
+\phantomsection
+\label{IV.4.9.1.bprime}
+The sub-prescheme of $X_{(K)}$ induced on the open subset
+$\overline U$ is defined over $K'$.
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.9.1.c}
+There exists a closed sub-prescheme $\overline Z$ of $X_{(K)}$,
+defined over $K'$, whose underlying space is $\overline T$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Let $g:X_{(K)}\to X_{(K')}$ be the canonical projection.
+To say that $\overline T$ is defined over $K'$ means that there is a
+closed subset $T'$ of $X_{(K')}$ such that
+$\overline T=g^{-1}(T')$.
+Since $g^{-1}(X_{(K')}\setmin T')=X_{(K)}\setmin g^{-1}(T')$
+for every subset $T'$ of $X_{(K')}$, conditions
+\textup{a)}, \textup{b)}, and
+\textup{b')} are equivalent.
+
+If $\overline Z$, whose underlying space is $\overline T$, is defined
+over $K'$, then $\overline Z=Z'\otimes_{K'}K$
+for a closed sub-prescheme $Z'$ of $X_{(K')}$.
+If $T'$ is the underlying space of $Z'$, then
+$\overline T=g^{-1}(T')$ \sref[I]{I.4.4.1}; thus
+\textup{c)} implies \textup{a)}.
+Conversely, if \textup{a)} holds, choose a closed sub-prescheme
+$Z'$ of $X_{(K')}$ whose underlying space is $T'$
+\sref[I]{I.5.2.1}, and take
+$\overline Z=Z'\otimes_{K'}K$.
+\end{proof}
+
+\begin{corollary}[4.9.2]
+\phantomsection
+\label{IV.4.9.2}
+With the notation of \sref{IV.4.9.1}, suppose that $K'$ is a field
+of definition of $\overline T$.
+Every intermediate field $K''$ with $k\subset K''\subset K'$ for
+which $K'/K''$ is radicial is also a field of definition of
+$\overline T$.
+\end{corollary}
+
+\begin{proof}
+The canonical projection $g:X_{(K')}\longrightarrow X_{(K'')}$
+is integral, surjective, and radicial, hence is a homeomorphism
+\sref{IV.2.4.5}.
+\end{proof}
+
+\begin{remark}[4.9.3]
+\phantomsection
+\label{IV.4.9.3}
+It follows from \sref{IV.4.9.2} that a closed subset
+$\overline T$ of $X_{(K)}$ need not have a smallest field of
+definition.
+For example, let $K=k(t)$, where $t$ is an indeterminate and $k$ is
+a perfect field of characteristic $p>0$.
+A closed subset $\overline F$ of $X_{(K)}$ can have a smallest field
+of definition only if it is already defined over $k$.
+Indeed, for every subfield $K'$ of $K$ containing $k$ with
+$K'\ne k$, one has $(K')^p\ne K'$, the field $(K')^p$ contains $k$,
+and $K'/(K')^p$ is radicial.
+Thus, if $K'$ is a field of definition of $\overline F$, then so is
+$(K')^p$.
+Nevertheless, one has the following result.
+\end{remark}
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 85 -----
+\section{Dimension, depth, and regularity in locally Noetherian preschemes}
+\phantomsection
+\label{section:IV.5}
+----- English, components/09_section49_fields_of_definition_of_subsets.tex, page IV-2 85 -----
+\oldpage[IV-2]{85}
+
+\begin{proposition}[4.9.4]
+\phantomsection
+\label{IV.4.9.4}
+With the notation of \sref{IV.4.9.1}, suppose that $K/K'$ is
+separable.
+Then $K'$ is a field of definition of $\overline T$ if and only if
+it is a field of definition of the reduced sub-prescheme of
+$X_{(K)}$ whose underlying space is $\overline T$.
+\end{proposition}
+
+\begin{proof}
+The condition is sufficient by \sref{IV.4.9.1}.
+Conversely, suppose that
+$\overline T=g^{-1}(T')$, where $T'$ is a closed subset of
+$X_{(K')}$, and let $Z'$ be the reduced sub-prescheme of $X_{(K')}$
+whose underlying space is $T'$.
+Then $\overline Z=Z'\otimes_{K'}K=\Spec(K)\times_{K'}Z'$
+is reduced by \sref{IV.4.6.1},~e) and the separability of $K/K'$,
+and its underlying space is $\overline T$.
+\end{proof}
+
+\begin{corollary}[4.9.5]
+\phantomsection
+\label{IV.4.9.5}
+Suppose that one of the following hypotheses holds:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.5.a}
+$k$ has characteristic zero.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.5.b}
+$K/k$ is algebraic and $X$ is of finite type over $k$.
+\end{enumerate}
+Then every closed subset $\overline T$ of $X_{(K)}$ has a smallest
+field of definition.
+This field is a separable extension of $k$, and under
+\textup{b)} it is finite over $k$.
+\end{corollary}
+
+\begin{proof}
+Under \textup{a)}, $K$ is separable over each of its
+subfields.
+It follows from \sref{IV.4.9.4} that the fields of definition of
+$\overline T$ are exactly those of the reduced sub-prescheme of
+$X_{(K)}$ whose underlying space is $\overline T$.
+The assertion therefore follows from \sref{IV.4.8.11}.
+
+Under \textup{b)}, the extension $K$ is radicial over a
+separable extension $K_1$ of $k$.
+For every intermediate field $K'$ of $K/k$, the extension
+$K'/(K'\cap K_1)$ is radicial.
+By \sref{IV.4.9.2}, $K'$ is a field of definition of
+$\overline T$ if and only if $K'\cap K_1$ is.
+This reduces the question to the case $K=K_1$, hence to the case of
+a separable algebraic extension of $k$, and the argument finishes as
+under \textup{a)}.
+\end{proof}
+
+\begin{proposition}[4.9.6]
+\phantomsection
+\label{IV.4.9.6}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $K/k$ be an
+extension, let $\overline U$ be a subset of $X_{(K)}$ that is both
+open and closed, and let $\overline V$ be its complement.
+For an intermediate field $K'$ of $K/k$, the following conditions
+are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.6.a}
+$K'$ is a field of definition of the subset $\overline U$ of
+$X_{(K)}$.
+\item[\rm(a$'$)]
+\phantomsection
+\label{IV.4.9.6.aprime}
+$K'$ is a field of definition of the closed sub-prescheme of
+$X_{(K)}$ induced on the open subset $\overline U$.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.6.b}
+$K'$ is a field of definition of the subset $\overline V$ of
+$X_{(K)}$.
+\item[\rm(b$'$)]
+\phantomsection
+\label{IV.4.9.6.bprime}
+$K'$ is a field of definition of the closed sub-prescheme of
+$X_{(K)}$ induced on the open subset $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that
+{\hyperref[IV.4.9.6.aprime]{(a$'$)}} implies
+{\hyperref[IV.4.9.6.a]{(a)}}, and
+{\hyperref[IV.4.9.6.a]{(a)}} implies
+{\hyperref[IV.4.9.6.bprime]{(b$'$)}} by \sref{IV.4.9.1}.
+Since $\overline U$ and $\overline V$ play symmetric roles,
+{\hyperref[IV.4.9.6.bprime]{(b$'$)}} implies
+{\hyperref[IV.4.9.6.b]{(b)}}, and
+{\hyperref[IV.4.9.6.b]{(b)}} implies
+{\hyperref[IV.4.9.6.aprime]{(a$'$)}}.
+\end{proof}
+
+\begin{corollary}[4.9.7]
+\phantomsection
+\label{IV.4.9.7}
+Under the hypotheses of \sref{IV.4.9.6}, there is a smallest field
+of definition $K'$ for the subset $\overline U$ of $X_{(K)}$.
+It is also the smallest field of definition of the subset
+$\overline V$ and of the closed sub-preschemes of $X_{(K)}$ induced
+on the open subsets $\overline U$ and $\overline V$.
+If, in addition, $X$ is of finite type over $k$, then $K'/k$ is
+finite and separable.
+\end{corollary}
+
+\begin{proof}
+In view of \sref{IV.4.9.6} and \sref{IV.4.8.11}, only the last
+assertion remains to be proved.
+By \sref{IV.4.8.15},~(ii), we may reduce to the case in which $K$ is
+algebraically closed.
+Let $\overline k$ be the algebraic closure of $k$ contained in $K$,
+and let $W_i$ $(1\le i\le m)$ be the connected components of
+$X_{(\overline k)}$.
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 86 -----
+\oldpage[IV-2]{86}
+
+This section merely restates, in geometric language and with various
+technical complements, the notions and results of commutative algebra
+set out in Chapter~0, \S\S~16 and~17.
+
+\subsection{Dimension of preschemes}
+\phantomsection
+\label{subsection:IV.5.1}
+
+\begin{env}[5.1.1]
+\phantomsection
+\label{IV.5.1.1}
+Let $A$ be a ring and let $\mathfrak J$ be an ideal of $A$.
+Recall \sref[0]{0.16.1} that the definitions in the theory of the
+dimension of a ring \sref[0]{0.16.1.1} and those in the theory of the
+combinatorial dimension of topological spaces \sref[0]{0.14.1.2} give
+the following relations:
+\begin{align}
+\dim(\Spec(A))&=\dim(A)
+\tag{5.1.1.1}\label{IV.5.1.1.1}\\
+\dim(\mathrm V(\mathfrak J))&=\dim(A/\mathfrak J)
+\tag{5.1.1.2}\label{IV.5.1.1.2}\\
+\operatorname{codim}(\mathrm V(\mathfrak J),\Spec(A))
+  &=\operatorname{ht}(\mathfrak J)
+\tag{5.1.1.3}\label{IV.5.1.1.3}
+\end{align}
+
+\begin{enumerate}
+\item[\textbf{(5.1.1.4)}]
+\phantomsection
+\egalabel{IV.5.1.1.4}{5.1.1.4}
+$\Spec(A)$ is a catenary space if and only if $A$ is a catenary ring.
+\item[\textbf{(5.1.1.5)}]
+\phantomsection
+\egalabel{IV.5.1.1.5}{5.1.1.5}
+$\Spec(A)$ is equidimensional if and only if $A$ is equidimensional,
+if and only if the minimal prime ideals $\mathfrak p_\alpha$ of $A$
+are such that the rings $A/\mathfrak p_\alpha$ all have the same
+dimension.
+\item[\textbf{(5.1.1.6)}]
+\phantomsection
+\egalabel{IV.5.1.1.6}{5.1.1.6}
+$\Spec(A)$ is equicodimensional if and only if $A$ is
+equicodimensional, if and only if all maximal ideals of $A$ have the
+same height.
+\end{enumerate}
+
+Recall that a Noetherian ring $A$ is said to be
+\emph{biequidimensional} if $\Spec(A)$ is biequidimensional; that is,
+if $\Spec(A)$ is Noetherian and $A$ is equidimensional,
+equicodimensional, catenary, and of finite dimension.
+\end{env}
+
+\begin{proposition}[5.1.2]
+\phantomsection
+\label{IV.5.1.2}
+Let $X$ be a prescheme, let $Y$ be an irreducible closed subset of
+$X$, and let $y$ be the generic point of $Y$. Then
+\begin{equation}
+\operatorname{codim}(Y,X)=\dim(\sh O_{X,y}).
+\tag{5.1.2.1}\label{IV.5.1.2.1}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Indeed, the irreducible closed subsets of $X$ containing $y$ are
+canonically in bijection with the irreducible closed subsets of
+$\Spec(\sh O_{X,y})$ \sref[I]{I.2.4.2}, and hence with the prime
+ideals of $\sh O_{X,y}$; formula \eqref{IV.5.1.2.1} follows from the
+definitions.
+
+In particular, this recovers the fact that the generic points of the
+irreducible components of $X$ are the only points $x\in X$ such that
+$\dim(\sh O_x)=0$ \sref[I]{I.1.1.14}.
+\end{proof}
+----- English, components/09_section49_fields_of_definition_of_subsets.tex, page IV-2 86 -----
+\oldpage[IV-2]{86}
+If $p:X_{(K)}\longrightarrow X_{(\overline k)}$
+is the canonical projection, then the $p^{-1}(W_i)$ are the
+connected components of $X_{(K)}$ \sref{IV.4.4.6}.
+Thus $\overline U$ is a union of some of these components and is
+therefore defined over $\overline k$.
+The conclusion follows from \sref{IV.4.9.5},~b).
+\end{proof}
+----- French corrections on page IV-2 85 -----
+[id 12850]
+OLD: (4.6.1, e))
+NEW: (4.6.1, \emph{e)})
+FRENCH CONTEXT (corrected): erline T=g^{-1}(T')$, où $T'$ est une
+partie fermée de $X_{(K')}$, et si $Z'$ est le sous-préschéma réduit de
+$X_{(K')}$ ayant $T'$ pour espace sous-jacent, alors
+$\overline Z=Z'\otimes_{K'}K=\operatorname{Spec}(K)\times_{K'}Z'$ est réduit
+en vertu du critère (4.6.1, \emph{e)}) et de l'hypothèse sur $K$ et a pour espace
+sous-jacent $\overline T$.
+\end{proof}
+
+\begin{corollary}[4.9.5]
+\label{IV.2.4.9.5-fr}
+Supposons vérifiée l'une des hypothèses suivantes:
+\begin{enumerate}
+\item[\textup{a)}] $k$ est de caractéristique $0$.
+\item[\te
+
+[id 12851]
+OLD: \item[a)] $k$ est
+NEW: \item[\textup{a)}] $k$ est
+FRENCH CONTEXT (corrected): es_{K'}Z'$ est réduit
+en vertu du critère (4.6.1, \emph{e)}) et de l'hypothèse sur $K$ et a pour espace
+sous-jacent $\overline T$.
+\end{proof}
+
+\begin{corollary}[4.9.5]
+\label{IV.2.4.9.5-fr}
+Supposons vérifiée l'une des hypothèses suivantes:
+\begin{enumerate}
+\item[\textup{a)}] $k$ est de caractéristique $0$.
+\item[\textup{b)}] $K$ est une extension algébrique de $k$ et $X$ est de type fini sur
+$k$.
+\end{enumerate}
+Alors toute partie fermée $\overline T$ de $X_{(K)}$ possède un plus petit
+corps de définition, qui est une extension séparable
+
+[id 12852]
+OLD: \item[b)] $K$ est
+NEW: \item[\textup{b)}] $K$ est
+FRENCH CONTEXT (corrected): emph{e)}) et de l'hypothèse sur $K$ et a pour espace
+sous-jacent $\overline T$.
+\end{proof}
+
+\begin{corollary}[4.9.5]
+\label{IV.2.4.9.5-fr}
+Supposons vérifiée l'une des hypothèses suivantes:
+\begin{enumerate}
+\item[\textup{a)}] $k$ est de caractéristique $0$.
+\item[\textup{b)}] $K$ est une extension algébrique de $k$ et $X$ est de type fini sur
+$k$.
+\end{enumerate}
+Alors toute partie fermée $\overline T$ de $X_{(K)}$ possède un plus petit
+corps de définition, qui est une extension séparable de $k$ (et finie sur $k$
+dans l'hypothèse \textup{
+
+[id 12853]
+OLD: dans l'hypothèse b))
+NEW: dans l'hypothèse \textup{b))}
+FRENCH CONTEXT (corrected): item[\textup{b)}] $K$ est une extension algébrique de $k$ et $X$ est de type fini sur
+$k$.
+\end{enumerate}
+Alors toute partie fermée $\overline T$ de $X_{(K)}$ possède un plus petit
+corps de définition, qui est une extension séparable de $k$ (et finie sur $k$
+dans l'hypothèse \textup{b))}.
+\end{corollary}
+
+\begin{proof}
+Dans l'hypothèse \emph{a)}, $K$ est séparable sur chacun de ses sous-corps, et il
+résulte donc de (4.9.4) que les corps de définition de $\overline T$ sont les
+mêmes que ceux du sous-préschéma réduit de $X_{(K)}$ ayant $\overli
+
+[id 12854]
+OLD: Dans l'hypothèse a),
+NEW: Dans l'hypothèse \emph{a)},
+FRENCH CONTEXT (corrected): X$ est de type fini sur
+$k$.
+\end{enumerate}
+Alors toute partie fermée $\overline T$ de $X_{(K)}$ possède un plus petit
+corps de définition, qui est une extension séparable de $k$ (et finie sur $k$
+dans l'hypothèse \textup{b))}.
+\end{corollary}
+
+\begin{proof}
+Dans l'hypothèse \emph{a)}, $K$ est séparable sur chacun de ses sous-corps, et il
+résulte donc de (4.9.4) que les corps de définition de $\overline T$ sont les
+mêmes que ceux du sous-préschéma réduit de $X_{(K)}$ ayant $\overline T$ pour
+espace sous-jacent. Le corollaire résulte alors d
+
+[id 12855]
+OLD: Dans l'hypothèse
+b) on sait
+NEW: Dans l'hypothèse
+\emph{b)} on sait
+FRENCH CONTEXT (corrected): arable sur chacun de ses sous-corps, et il
+résulte donc de (4.9.4) que les corps de définition de $\overline T$ sont les
+mêmes que ceux du sous-préschéma réduit de $X_{(K)}$ ayant $\overline T$ pour
+espace sous-jacent. Le corollaire résulte alors de (4.8.11). Dans l'hypothèse
+\emph{b)} on sait que $K$ est une extension radicielle d'une extension séparable
+$K_1$ de $k$. Alors, pour toute sous-extension $K'$ de $K$, $K'$ est
+radicielle sur $K'\cap K_1$, donc, en vertu de (4.9.2), $K'$ est un corps de
+définition de $\overline T$ si et seulement si $K'
+
+[id 12856]
+OLD: extension algébrique
+séparable de $k$
+NEW: extension \emph{algébrique
+séparable} de $k$
+FRENCH CONTEXT (corrected): rs, pour toute sous-extension $K'$ de $K$, $K'$ est
+radicielle sur $K'\cap K_1$, donc, en vertu de (4.9.2), $K'$ est un corps de
+définition de $\overline T$ si et seulement si $K'\cap K_1$ l'est. Cela nous
+ramène au cas où $K=K_1$, donc au cas où $K'$ est une extension \emph{algébrique
+séparable} de $k$, et on achève le raisonnement comme dans le cas \emph{a)}.
+\end{proof}
+
+\begin{proposition}[4.9.6]
+\label{IV.2.4.9.6-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline U$ une partie à la fois ouverte et fermée de $X_{(K)}$,
+$\
+
+[id 12857]
+OLD: dans le cas a).
+NEW: dans le cas \emph{a)}.
+FRENCH CONTEXT (corrected): donc, en vertu de (4.9.2), $K'$ est un corps de
+définition de $\overline T$ si et seulement si $K'\cap K_1$ l'est. Cela nous
+ramène au cas où $K=K_1$, donc au cas où $K'$ est une extension \emph{algébrique
+séparable} de $k$, et on achève le raisonnement comme dans le cas \emph{a)}.
+\end{proof}
+
+\begin{proposition}[4.9.6]
+\label{IV.2.4.9.6-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline U$ une partie à la fois ouverte et fermée de $X_{(K)}$,
+$\overline V$ son complémentaire. Soit $K'$ une sous-extensio
+
+[id 12858]
+OLD: \item[a)] $K'$
+NEW: \item[\textup{a)}] $K'$
+FRENCH CONTEXT (corrected): orps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline U$ une partie à la fois ouverte et fermée de $X_{(K)}$,
+$\overline V$ son complémentaire. Soit $K'$ une sous-extension de $K$;
+alors les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $K'$ est un corps de définition de la partie $\overline U$ de
+$X_{(K)}$.
+\item[\textup{a')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline U$.
+\item[\textup{b)}] $K'$ est un corps de définition de la partie $\o
+
+[id 12859]
+OLD: \item[a')]
+NEW: \item[\textup{a')}]
+FRENCH CONTEXT (corrected): erte et fermée de $X_{(K)}$,
+$\overline V$ son complémentaire. Soit $K'$ une sous-extension de $K$;
+alors les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $K'$ est un corps de définition de la partie $\overline U$ de
+$X_{(K)}$.
+\item[\textup{a')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline U$.
+\item[\textup{b)}] $K'$ est un corps de définition de la partie $\overline V$ de
+$X_{(K)}$.
+\item[\textup{b')}] $K'$ est un corps de définition du sous-pré
+
+[id 12860]
+OLD: \item[b)] $K'$
+NEW: \item[\textup{b)}] $K'$
+FRENCH CONTEXT (corrected): vantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $K'$ est un corps de définition de la partie $\overline U$ de
+$X_{(K)}$.
+\item[\textup{a')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline U$.
+\item[\textup{b)}] $K'$ est un corps de définition de la partie $\overline V$ de
+$X_{(K)}$.
+\item[\textup{b')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \
+
+[id 12861]
+OLD: \item[b')]
+NEW: \item[\textup{b')}]
+FRENCH CONTEXT (corrected): on de la partie $\overline U$ de
+$X_{(K)}$.
+\item[\textup{a')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline U$.
+\item[\textup{b)}] $K'$ est un corps de définition de la partie $\overline V$ de
+$X_{(K)}$.
+\item[\textup{b')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \emph{a')} entraîne \emph{a)}, et \emph{a)} entraîne \emph{b')} en vertu de (4.9.1).
+Comm
+
+[id 12862]
+OLD: que a') entraîne a), et a) entraîne b')
+NEW: que \emph{a')} entraîne \emph{a)}, et \emph{a)} entraîne \emph{b')}
+FRENCH CONTEXT (corrected):  $K'$ est un corps de définition de la partie $\overline V$ de
+$X_{(K)}$.
+\item[\textup{b')}] $K'$ est un corps de définition du sous-préschéma fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \emph{a')} entraîne \emph{a)}, et \emph{a)} entraîne \emph{b')} en vertu de (4.9.1).
+Comme $\overline U$ et $\overline V$ jouent des rôles symétriques, \emph{b')}
+entraîne \emph{b)} et \emph{b)} entraîne \emph{a')}, ce qui achève la démonstration.
+\end{proof}
+
+\begin{corollary}[4.9.7]
+\label{IV.2.4.9.7-fr}
+Sous les hypoth
+
+[id 12863]
+OLD: symétriques, b')
+entraîne b) et b) entraîne a')
+NEW: symétriques, \emph{b')}
+entraîne \emph{b)} et \emph{b)} entraîne \emph{a')}
+FRENCH CONTEXT (corrected):  fermé de
+$X_{(K)}$ induit sur l'ouvert $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \emph{a')} entraîne \emph{a)}, et \emph{a)} entraîne \emph{b')} en vertu de (4.9.1).
+Comme $\overline U$ et $\overline V$ jouent des rôles symétriques, \emph{b')}
+entraîne \emph{b)} et \emph{b)} entraîne \emph{a')}, ce qui achève la démonstration.
+\end{proof}
+
+\begin{corollary}[4.9.7]
+\label{IV.2.4.9.7-fr}
+Sous les hypothèses de \textup{(4.9.6)}, il existe un plus petit corps de définition
+$K'$ pour la partie $\overline U$ de $X_{(K)}$, et $K'$ est aussi le plus
+petit c
+
+=================== PAGE IV-2 86 ===================
+----- (English page IV-2 85: shown above in this file) -----
+----- (English page IV-2 86: shown above in this file) -----
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 87 -----
+\oldpage[IV-2]{87}
+
+\begin{corollary}[5.1.3]
+\phantomsection
+\label{IV.5.1.3}
+For every closed subset $Y$ of a prescheme $X$, one has
+\begin{equation}
+\operatorname{codim}(Y,X)=\inf_{y\in Y}\dim(\sh O_{X,y}).
+\tag{5.1.3.1}\label{IV.5.1.3.1}
+\end{equation}
+Moreover, if $X$ is locally Noetherian, then for every $x\in Y$,
+\begin{equation}
+\operatorname{codim}_x(Y,X)
+=\inf_{\substack{y\in Y\\x\in\overline{\{y\}}}}
+  \dim(\sh O_{X,y}).
+\tag{5.1.3.2}\label{IV.5.1.3.2}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Formula \eqref{IV.5.1.3.2} follows from
+\eqref{IV.5.1.3.1} and \sref[0]{0.14.2.6}.
+This corollary allows us to \emph{define}, for any subset $Y$ of a
+prescheme $X$, the \emph{codimension}
+$\operatorname{codim}(Y,X)$ of $Y$ in $X$ to be the right-hand side
+of \eqref{IV.5.1.3.1}.
+\end{proof}
+
+\begin{proposition}[5.1.4]
+\phantomsection
+\label{IV.5.1.4}
+For every prescheme $X$, one has
+\begin{equation}
+\dim(X)=\sup_{x\in X}\dim(\sh O_x).
+\tag{5.1.4.1}\label{IV.5.1.4.1}
+\end{equation}
+If every irreducible closed subset of $X$ contains a closed point,
+then one also has
+\begin{equation}
+\dim(X)=\sup_{x\in F}\dim(\sh O_x),
+\tag{5.1.4.2}\label{IV.5.1.4.2}
+\end{equation}
+where $F$ is the set of closed points of $X$.
+\end{proposition}
+
+\begin{proof}
+It suffices to observe, by \sref[I]{I.2.4.2}, that the chains of
+irreducible closed subsets of $X$ correspond bijectively to the
+chains of irreducible closed subsets of a local scheme of $X$.
+When every irreducible closed subset of $X$ contains a closed point,
+one may plainly restrict to the local schemes at closed points of
+$X$.
+
+Every irreducible closed subset of $X$ contains a closed point when
+$X$ is quasi-compact \sref[0\textsubscript{\mdseries I}]{0.2.1.3}; we shall see below
+\sref{IV.5.1.11} that the same is true when $X$ is locally
+Noetherian.
+\end{proof}
+
+\begin{corollary}[5.1.5]
+\phantomsection
+\label{IV.5.1.5}
+A prescheme $X$ is catenary if and only if the local ring $\sh O_x$
+is catenary for every $x\in X$.
+If, in addition, every irreducible closed subset of $X$ contains a
+closed point, then for $X$ to be catenary it is enough that
+$\sh O_x$ be catenary for every closed point $x$ of $X$.
+\end{corollary}
+
+\begin{proof}
+The argument is the same as in \sref{IV.5.1.4}, since it is a matter
+of comparing chains of irreducible closed subsets with the same
+endpoints.
+\end{proof}
+
+\begin{env}[5.1.6]
+\phantomsection
+\label{IV.5.1.6}
+We now examine the more special properties tied to Noetherian
+hypotheses.
+
+Recall \sref[0]{0.16.2.3} that a Noetherian local ring $A\ne0$ has
+finite dimension, equal to the minimum number of generators of an
+ideal of definition of $A$.
+For every prime ideal $\mathfrak p$ of $A$, its height, equal to
+$\dim(A_{\mathfrak p})$, is therefore also finite.
+Together with \eqref{IV.5.1.2.1}, \eqref{IV.5.1.3.1}, and
+\eqref{IV.5.1.4.1}, these facts show the following.
+\end{env}
+
+\begin{proposition}[5.1.7]
+\phantomsection
+\label{IV.5.1.7}
+For every nonempty closed subset $Y$ of a locally Noetherian
+prescheme $X$, the number $\operatorname{codim}(Y,X)$ is finite.
+If $X$ is Noetherian and affine and $Y$ is an irreducible closed
+subset of $X$, then $\operatorname{codim}(Y,X)$ is the minimum
+number of sections $s_i$ of $\sh O_X$ over $X$ such that $Y$ is an
+irreducible component of the set of points $x\in X$ for which
+$s_i(x)=0$ for every $i$.
+\end{proposition}
+
+\begin{corollary}[5.1.8]
+\phantomsection
+\label{IV.5.1.8}
+Let $X$ be a locally Noetherian prescheme, let $\sh L$ be an
+invertible $\sh O_X$-Module, and let $f$ be a section of $\sh L$ over
+$X$.
+Every irreducible component of the set $Z$ of points $x\in X$ such
+that $f(x)=0$ has codimension at most $1$ in $X$; it has codimension
+$1$ if $Z$ contains no irreducible component of $X$.
+\end{corollary}
+
+\begin{proof}
+We may restrict to the case $\sh L=\sh O_X$.
+If $y$ is a generic point of an irreducible component $Y$ of $Z$,
+the ideal $(f_y)$ of $\sh O_{X,y}$ must be such that
+$\sh O_{X,y}/(f_y)$ has only one prime ideal.
+Thus $f_y$ generates an ideal of definition of the Noetherian local
+ring $\sh O_{X,y}$, and
+$\operatorname{codim}(Y,X)\leq1$ by \sref{IV.5.1.7}.
+If $Z$ contains no irreducible component of $X$, then
+$\operatorname{codim}(Y,X)$ cannot be $0$ by
+\sref[0]{0.14.2.1}.
+\end{proof}
+----- French corrections on page IV-2 86 -----
+[id 12867]
+OLD: (4.9.5, b))
+NEW: (4.9.5, \emph{b)})
+FRENCH CONTEXT (corrected): la projection canonique, on sait que les
+$p^{-1}(W_i)$ sont les composantes connexes de $X_{(K)}$ (4.4.6), donc
+$\overline U$ est une réunion d'un certain nombre de ces composantes, et est
+par suite défini sur $\overline k$; la conclusion résulte par suite de
+(4.9.5, \emph{b)}).
+\end{proof}
+\section{Dimension, profondeur, régularité dans les préschémas localement
+noethériens}
+
+Ce paragraphe se borne à reprendre, dans le langage géométrique, et avec
+divers compléments de nature technique, les notions et résultats d'Algèbre
+commutativ
+
+[id 12869]
+OLD: \subsection{Dimension des préschémas}
+NEW: \subsection{Dimension des préschémas.}
+FRENCH CONTEXT (corrected): é dans les préschémas localement
+noethériens}
+
+Ce paragraphe se borne à reprendre, dans le langage géométrique, et avec
+divers compléments de nature technique, les notions et résultats d'Algèbre
+commutative exposés dans le chapitre \textbf{0}, \S\S~16 et 17.
+
+\subsection{Dimension des préschémas.}
+
+\begin{env}[5.1.1]
+\label{IV.2.5.1.1-fr}
+Soient $A$ un anneau, $\mathfrak J$ un idéal de $A$. Rappelons
+$(\mathbf{0},16.1)$ que les définitions de la théorie de la dimension d'un anneau
+$(\mathbf{0},16.1.1)$ et celles de la théorie de la dimension combinatoi
+
+[id 12880]
+OLD: =\dim(\mathcal O_{X,y}).
+NEW: =\dim(\mathcal O_{X,y})
+FRENCH CONTEXT (corrected): 
+équicodimensionnel, caténaire et de dimension finie.
+\end{env}
+
+\begin{proposition}[5.1.2]
+\label{IV.2.5.1.2-fr}
+Soient $X$ un préschéma, $Y$ une partie fermée irréductible de $X$, $y$ le
+point générique de $Y$. On a
+\begin{equation}
+\operatorname{codim}(Y,X)=\dim(\mathcal O_{X,y})
+\tag{5.1.2.1}\label{IV.2.5.1.2.1-fr}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+En effet (\textbf{I}, 2.4.2) les parties fermées irréductibles de $X$ contenant $y$
+sont canoniquement en correspondance biunivoque avec les parties fermées
+irréductibles de 
+
+=================== PAGE IV-2 88 ===================
+----- (English page IV-2 87: shown above in this file) -----
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 88 -----
+\oldpage[IV-2]{88}
+
+\begin{proposition}[5.1.9]
+\phantomsection
+\label{IV.5.1.9}
+Let $X$ be a locally Noetherian prescheme and let $Y$ be a closed
+subset of $X$.
+If $x\in Y$ and $\sh O_{X,x}$ is a catenary ring, then
+\begin{equation}
+\begin{split}
+\operatorname{codim}_x(Y,X)
+&=\dim(\sh O_{X,x})\setmin\operatorname{codim}(\overline{\{x\}},Y)\\
+&=\dim(\sh O_{X,x})\setmin\dim(\sh O_{Y,x})
+\end{split}
+\tag{5.1.9.1}\label{IV.5.1.9.1}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Let $Y_i$ ($1\leq i\leq n$) be the irreducible components of $Y$
+containing $x$ (which are \emph{finite} in number since $Y$ is locally
+Noetherian).
+Let $y_i$ be the generic point of $Y_i$.
+Put $A=\sh O_{X,x}$, and let $\mathfrak p_i$ be the prime ideal of
+$A$ corresponding to $Y_i\cap\Spec(A)$.
+The irreducible closed subsets of $Y$ containing $x$ correspond
+bijectively to the prime ideals of $A$ containing one of the
+$\mathfrak p_i$, so $\dim(\sh O_{Y,x})=\sup_i\dim(A/\mathfrak p_i)$.
+On the other hand, $\sh O_{X,y_i}=A_{\mathfrak p_i}$, and the
+hypothesis on $A$ gives $\dim(A)=\dim(A/\mathfrak p_i)+\dim(A_{\mathfrak p_i})$
+by \sref[0]{0.16.1.4}.
+The conclusion therefore follows from the relation $\operatorname{codim}_x(Y,X)
+=\inf_i(\dim(\sh O_{X,y_i}))$
+\sref{IV.5.1.2}, \sref[0]{0.14.2.6}.
+\end{proof}
+
+\begin{proposition}[5.1.10]
+\phantomsection
+\label{IV.5.1.10}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.1.10.i}
+In every prescheme $X$, every nonempty locally constructible subset
+$E$ contains a point $x$ such that $\{x\}$ is locally closed in $X$;
+equivalently, $x$ is isolated in $\overline{\{x\}}$.
+\item
+\phantomsection
+\label{IV.5.1.10.ii}
+Let $X$ be a locally Noetherian prescheme and let $x\in X$ be such
+that $\{x\}$ is locally closed in $X$.
+Then $\dim(\overline{\{x\}})\leq1$; consequently, every point
+$y\ne x$ of $\overline{\{x\}}$ is closed in $X$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\textup{(i)} is a special case of the following lemma.
+\end{proof}
+
+\begin{lemma}[5.1.10.1]
+\phantomsection
+\label{IV.5.1.10.1}
+Let $X$ be a topological space with the following property: for every
+nonempty locally closed subset $Z$ of $X$, there exist a subset
+$Z'$ of $Z$, locally closed in $X$ (or, equivalently, in $Z$), and
+a point $x\in Z'$ that is closed in $Z'$.
+Then every nonempty locally closed subset $Z$ of $X$ contains a point
+$x$ isolated in $\overline{\{x\}}$.
+\end{lemma}
+
+\begin{proof}
+Let $Z'\subset Z$ be a locally closed subset of $Z$ containing a
+point $x$ that is closed in $Z'$.
+There is an open neighbourhood $U$ of $x$ in $X$ such that $x$ is
+closed in $U$; hence $U\cap\overline{\{x\}}=\{x\}$,
+which says precisely that $x$ is isolated in $\overline{\{x\}}$.
+
+The lemma applies to the underlying space of every prescheme $X$.
+Indeed, $Z$ is then itself the underlying space of a prescheme
+\sref[I]{I.5.2.1}, and one may take for $Z'$ an affine open subset of
+$Z$, which is a quasi-compact Kolmogorov space and therefore contains
+a closed point \sref[0\textsubscript{\mdseries I}]{0.2.1.3}.
+\end{proof}
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 89 -----
+\oldpage[IV-2]{89}
+
+\begin{proof}[Proof of \sref{IV.5.1.10},~(ii)]
+Let $Z$ be the reduced sub-prescheme of $X$ whose underlying space is
+$\overline{\{x\}}$.
+The hypothesis implies that $\{x\}$ is open in $Z$.
+Thus, for every $z\in Z$, the generic point $x$ of
+$\Spec(\sh O_{Z,z})$ is isolated in $\Spec(\sh O_{Z,z})$.
+The ring $A=\sh O_{Z,z}$ is a Noetherian local integral domain, and
+the hypothesis implies that there exists $f\in A$ such that $A_f$ is
+a field.
+It follows from \sref[0]{0.16.3.3} that $\dim(A)\leq1$.
+Since $\dim(\sh O_{Z,z})\leq1$ for every $z\in Z$, one has
+$\dim(Z)\leq1$.
+\end{proof}
+
+\begin{corollary}[5.1.11]
+\phantomsection
+\label{IV.5.1.11}
+If $X$ is a locally Noetherian prescheme, every nonempty closed
+subset of $X$ contains a closed point.
+\end{corollary}
+
+\begin{proof}
+Every closed subset of $X$ is constructible
+\sref[0\textsubscript{\mdseries III}]{0.9.1.1} and \sref[0\textsubscript{\mdseries III}]{0.9.1.5}, so it suffices to apply
+\sref{IV.5.1.10}.
+\end{proof}
+
+\begin{env}[5.1.12]
+\phantomsection
+\label{IV.5.1.12}
+Let $X$ be a prescheme, let $\sh F$ be a quasi-coherent
+$\sh O_X$-Module of finite type, and let
+$S=\operatorname{Supp}(\sh F)$ be its support, which is closed in
+$X$ \sref[0\textsubscript{\mdseries I}]{0.5.2.2}.
+For every $x\in X$, regard $\operatorname{Supp}(\sh F_x)$ as a closed
+subset of the local scheme $\Spec(\sh O_x)$.
+By definition \sref[0]{0.16.1.7}, $\dim(\sh F_x)=\dim(\operatorname{Supp}(\sh F_x))$.
+But
+\[
+\operatorname{Supp}(\sh F_x)
+  =S\cap\Spec(\sh O_{X,x})
+  =\Spec(\sh O_{S,x}),
+\]
+where in the last expression $S$ denotes any closed sub-prescheme of
+$X$ whose underlying space is $S$.
+The irreducible components of $\Spec(\sh O_{S,x})$ are the
+intersections of $\Spec(\sh O_{X,x})$ with the irreducible components
+of $S$ containing $x$, and correspond bijectively to the latter.
+Hence, by \eqref{IV.5.1.1.1},
+\begin{equation}
+\dim(\sh F_x)=\dim(\sh O_{S,x}).
+\tag{5.1.12.1}\label{IV.5.1.12.1}
+\end{equation}
+It also follows from \eqref{IV.5.1.2.1} that, if $X$ is locally
+Noetherian,
+\begin{equation}
+\dim(\sh F_x)=\operatorname{codim}(\overline{\{x\}},S).
+\tag{5.1.12.2}\label{IV.5.1.12.2}
+\end{equation}
+
+We say that $\sh F$ is \emph{equidimensional at the point} $x\in X$
+if $\sh F_x$ is an equidimensional $\sh O_{X,x}$-module; that is
+\sref[0]{0.16.1.7}, if $\operatorname{Supp}(\sh F_x)$ is
+equidimensional as a closed subset of $\Spec(\sh O_{X,x})$.
+Equivalently, the ring $\sh O_{S,x}$ is equidimensional.
+
+The \emph{dimension} of $\sh F$, denoted $\dim(\sh F)$, is the
+dimension of its support $\operatorname{Supp}(\sh F)$.
+Equations \eqref{IV.5.1.4.1} and \eqref{IV.5.1.12.1} give
+\begin{equation}
+\dim(\sh F)=\sup_{x\in X}\dim(\sh F_x).
+\tag{5.1.12.3}\label{IV.5.1.12.3}
+\end{equation}
+
+If $X=\Spec(A)$ is affine and $\sh F=\widetilde M$, where $M$ is a
+finite $A$-module, then
+$\dim(\sh F)=\dim(M)$ by \sref[0]{0.16.1.7} and
+\eqref{IV.5.1.4.1}.
+\end{env}
+
+\begin{proposition}[5.1.13]
+\phantomsection
+\label{IV.5.1.13}
+Let $X$ be a prescheme, let $\sh F$ be a quasi-coherent
+$\sh O_X$-Module of finite type, let $x\in X$, and let $x'$ be a
+generization of $x$ in $X$. Then
+\begin{equation}
+\dim(\sh F_{x'})\leq\dim(\sh F_x).
+\tag{5.1.13.1}\label{IV.5.1.13.1}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+This follows immediately from \eqref{IV.5.1.12.1} and the
+definitions.
+\end{proof}
+----- English, components/02_section52_dimension_of_algebraic_preschemes.tex, page IV-2 89 -----
+\subsection{Dimension of an algebraic prescheme}
+\phantomsection
+\label{subsection:IV.5.2}
+----- French corrections on page IV-2 88 -----
+[id 12893]
+OLD: en nombre fini
+NEW: en nombre \emph{fini}
+FRENCH CONTEXT (corrected): im}(\overline{\{x\}},Y)\notag\\
+&=\dim(\mathcal O_{X,x})\setmin\dim(\mathcal O_{Y,x})
+\tag{5.1.9.1}\label{IV.2.5.1.9.1-fr}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+Soient $Y_i$ ($1\leq i\leq n$) les composantes irréductibles de $Y$
+contenant $x$ (qui sont en nombre \emph{fini} puisque $Y$ est localement
+noethérien), et soit $y_i$ le point générique de $Y_i$. Si l'on pose
+$A=\mathcal O_{X,x}$, et si $\mathfrak p_i$ est l'idéal premier de $A$
+correspondant à $Y_i\cap\operatorname{Spec}(A)$, les parties fermées
+irréductibles de $Y$ co
+
+[id 12898]
+OLD: (ou, ce qui revient au même, tel que $x$ soit isolé dans
+$\overline{\{x\}}$)
+NEW: \textup{(ou, ce qui revient au même, tel que $x$ soit \emph{isolé dans}
+$\overline{\{x\}}$)}
+FRENCH CONTEXT (corrected): ).
+\end{proof}
+
+\begin{proposition}[5.1.10]
+\label{IV.2.5.1.10-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Dans tout préschéma $X$, toute partie localement constructible non
+vide $E$ contient un point $x$ tel que $\{x\}$ soit une partie localement
+fermée de $X$ \textup{(ou, ce qui revient au même, tel que $x$ soit \emph{isolé dans}
+$\overline{\{x\}}$)}.
+\item[\textup{(ii)}] Soient $X$ un préschéma localement noethérien, $x$ un point de
+$X$ tel que $\{x\}$ soit localement fermé dans $X$; alors on a
+$\dim(\overline{\{x\}})\leq1$; tout point $y\ne x$ de
+$\overline{\{x\}}$ est par suite fermé dans $X$.
+\end{enu
+
+[id 12899]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): xtup{(i)}] Dans tout préschéma $X$, toute partie localement constructible non
+vide $E$ contient un point $x$ tel que $\{x\}$ soit une partie localement
+fermée de $X$ \textup{(ou, ce qui revient au même, tel que $x$ soit \emph{isolé dans}
+$\overline{\{x\}}$)}.
+\item[\textup{(ii)}] Soient $X$ un préschéma localement noethérien, $x$ un point de
+$X$ tel que $\{x\}$ soit localement fermé dans $X$; alors on a
+$\dim(\overline{\{x\}})\leq1$; tout point $y\ne x$ de
+$\overline{\{x\}}$ est par suite fermé dans $X$.
+\end{enumerate}
+\end{propositi
+
+[id 12900]
+OLD: (ou dans $Z$, ce qui revient au même)
+NEW: \textup{(ou \emph{dans} $Z$, ce qui revient au même)}
+FRENCH CONTEXT (corrected): lemme suivant:
+\end{proof}
+
+\begin{lemma}[5.1.10.1]
+\label{IV.2.5.1.10.1-fr}
+Soit $X$ un espace topologique ayant la propriété suivante: pour toute partie
+localement fermée $Z\ne\varnothing$ de $X$, il existe une partie $Z'$ de $Z$,
+localement fermée dans $X$ \textup{(ou \emph{dans} $Z$, ce qui revient au même)} et un point
+$x\in Z'$, fermé \textup{dans} $Z'$. Alors toute partie localement fermée
+$Z\ne\varnothing$ de $X$ contient un point $x$ isolé dans
+$\overline{\{x\}}$.
+\end{lemma}
+
+\begin{proof}
+En effet, soit $Z'\subset Z$ une partie localement fermée de $Z$ con
+
+[id 12901]
+OLD: fermé dans $Z'$. Alors
+NEW: fermé \textup{dans} $Z'$. Alors
+FRENCH CONTEXT (corrected): Soit $X$ un espace topologique ayant la propriété suivante: pour toute partie
+localement fermée $Z\ne\varnothing$ de $X$, il existe une partie $Z'$ de $Z$,
+localement fermée dans $X$ \textup{(ou \emph{dans} $Z$, ce qui revient au même)} et un point
+$x\in Z'$, fermé \textup{dans} $Z'$. Alors toute partie localement fermée
+$Z\ne\varnothing$ de $X$ contient un point $x$ isolé dans
+$\overline{\{x\}}$.
+\end{lemma}
+
+\begin{proof}
+En effet, soit $Z'\subset Z$ une partie localement fermée de $Z$ contenant un
+point $x$ tel que $x$ soit fermé \emph{dans} 
+
+[id 12902]
+OLD: soit fermé dans $U$
+NEW: soit fermé \emph{dans} $U$
+FRENCH CONTEXT (corrected): nt $x$ isolé dans
+$\overline{\{x\}}$.
+\end{lemma}
+
+\begin{proof}
+En effet, soit $Z'\subset Z$ une partie localement fermée de $Z$ contenant un
+point $x$ tel que $x$ soit fermé \emph{dans} $Z'$. Il y a un voisinage ouvert
+$U$ de $x$ dans $X$ tel que $Z'\cap U$ soit fermé \emph{dans} $U$, donc $x$ est aussi
+fermé dans $U$; cela signifie que $U\cap\overline{\{x\}}=\{x\}$, autrement
+dit que $x$ est isolé dans $\overline{\{x\}}$.
+
+Le lemme s'applique à tout espace sous-jacent à un préschéma $X$, car $Z$ est
+alors aussi espace sous-jacent à un pr
+
+[id 12904]
+OLD: ouvert affine dans $Z$
+NEW: ouvert affine \emph{dans} $Z$
+FRENCH CONTEXT (corrected): rline{\{x\}}=\{x\}$, autrement
+dit que $x$ est isolé dans $\overline{\{x\}}$.
+
+Le lemme s'applique à tout espace sous-jacent à un préschéma $X$, car $Z$ est
+alors aussi espace sous-jacent à un préschéma (\textbf{I}, 5.2.1) et il suffit de
+prendre pour $Z'$ un ouvert affine \emph{dans} $Z$, qui est un espace de Kolmogoroff
+quasi-compact, donc contient un point fermé $(\mathbf{0}_{\mathrm I},2.1.3)$.
+\end{proof}
+
+\oldpage[IV-2]{89}
+
+\begin{proof}
+\textup{(ii)} Soit $Z$ le sous-préschéma réduit de $X$ ayant
+$\overline{\{x\}}$ pour espace
+sous-jac
+
+[id 12897]
+OLD: \item[(i)]
+NEW: \item[\textup{(i)}]
+FRENCH CONTEXT (corrected): thfrak p_i})$ $(\mathbf{0},16.1.4)$; la
+conclusion résulte donc de la relation
+$\operatorname{codim}_x(Y,X)=\inf_i(\dim(\mathcal O_{X,y_i}))$ ((5.1.2) et
+$(\mathbf{0},14.2.6)$).
+\end{proof}
+
+\begin{proposition}[5.1.10]
+\label{IV.2.5.1.10-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Dans tout préschéma $X$, toute partie localement constructible non
+vide $E$ contient un point $x$ tel que $\{x\}$ soit une partie localement
+fermée de $X$ \textup{(ou, ce qui revient au même, tel que $x$ soit \emph{isolé dans}
+$\overline{\{x\}}$)}.
+\item[\tex
+
+=================== PAGE IV-2 89 ===================
+----- (English page IV-2 88: shown above in this file) -----
+----- (English page IV-2 89: shown above in this file) -----
+----- English, components/02_section52_dimension_of_algebraic_preschemes.tex, page IV-2 90 -----
+\oldpage[IV-2]{90}
+
+\begin{proposition}[5.2.1]
+\phantomsection
+\label{IV.5.2.1}
+Let $k$ be a field, let $X$ be an irreducible prescheme locally of
+finite type over $k$, and let $\xi$ be its generic point.
+Then $X$ is biequidimensional and
+\[
+\dim(X)=\operatorname{tr.deg}_k\kres(\xi).
+\]
+\end{proposition}
+
+\begin{proof}
+Every local ring $\sh O_x$ is a local ring of a finite-type
+$k$-algebra, hence is a quotient of a regular local ring
+\sref[0]{0.17.3.9}.
+Such rings are catenary \sref[0]{0.16.5.12}; consequently $X$ is a
+catenary space \sref{IV.5.1.5}.
+Since $X$ is irreducible, it follows from \sref{IV.5.1.1} that it is
+enough to prove, for \emph{every closed point} $x\in X$, that
+\begin{equation}
+\dim(\sh O_x)=\operatorname{tr.deg}_k\kres(\xi).
+\tag{5.2.1.1}\label{IV.5.2.1.1}
+\end{equation}
+
+We may plainly suppose that $X$ is reduced and affine, hence \emph{integral},
+with ring $A$, where $A$ is a finite-type $k$-algebra.
+Put
+\[
+n=\operatorname{tr.deg}_k\kres(\xi),
+\qquad K=\kres(\xi)=\operatorname{Frac}(A).
+\]
+There exists a $k$-subalgebra
+\[
+B=k[t_1,\ldots,t_n]\subset A,
+\]
+where the $t_i$ are algebraically independent over $k$, such that $A$
+is a \emph{finite} $B$-algebra
+(Bourbaki, \emph{Alg\`ebre commutative}, chap.~V, \S~3,
+n\textsuperscript{o}~1, th.~1).
+Let $\mathfrak m=\mathfrak j_x$, which is maximal by hypothesis.
+Then $\mathfrak n=B\cap\mathfrak m$ is a maximal ideal of $B$
+(ibid., chap.~V, \S~2, n\textsuperscript{o}~1, prop.~1), and
+$A_{\mathfrak m}$ is a local ring of the \emph{finite}
+$B_{\mathfrak n}$-algebra $S^{-1}A$, where
+$S=B\setmin\mathfrak n$.
+Since $B_{\mathfrak n}$ is integrally closed and $S^{-1}A$ is
+integral, $\dim(A_{\mathfrak m})=\dim(B_{\mathfrak n})$
+by \sref[0]{0.16.1.6}.
+
+We may therefore reduce to $A=k[t_1,\ldots,t_n]$.
+The residue field $k'=\kres(x)$ is then a \emph{finite} extension of $k$
+\sref[I]{I.6.4.2}.
+Put $A'=k'[t_1,\ldots,t_n]$.
+By \sref[I]{I.2.4.6} and \sref[I]{I.3.3.14}, there exists a maximal
+ideal $\mathfrak m'$ of $A'$ lying above $\mathfrak m$ such that $k'$
+is the residue field of $A'_{\mathfrak m'}$.
+Since $A'$ is integral and finite over $A$, the preceding argument
+gives $\dim(A'_{\mathfrak m'})=\dim(A_{\mathfrak m})$,
+so we are reduced to the case $A/\mathfrak m=k$.
+
+In that case $\mathfrak m$ is generated by the polynomials
+$t_i-a_i$, where $a_i\in k$ is the image of $t_i$ in
+$A/\mathfrak m$.
+Replacing $t_i$ by $t_i-a_i$, we are finally reduced to $\mathfrak m=\sum_{i=1}^n At_i$.
+The completion of $A_{\mathfrak m}$ is then the formal power-series
+ring $k[[t_1,\ldots,t_n]]$.
+It has the same dimension as $A_{\mathfrak m}$
+\sref[0]{0.16.2.4}, while
+$\dim(k[[t_1,\ldots,t_n]])=n$ by \sref[0]{0.17.1.4}.
+This proves \eqref{IV.5.2.1.1}.
+\end{proof}
+
+\begin{corollary}[5.2.2]
+\phantomsection
+\label{IV.5.2.2}
+For a prescheme $X$ locally of finite type over a field $k$
+$\dim(X)$ agrees with the number defined in \sref{IV.4.1.1}.
+\end{corollary}
+
+\begin{proof}
+Let $X_\alpha$ be the reduced sub-preschemes whose underlying spaces
+are the irreducible components of $X$.
+Then
+\[
+\dim(X)=\sup_\alpha\dim(X_\alpha)
+\]
+by \sref[0]{0.14.1.2.1}, and it suffices to apply
+\sref{IV.5.2.1} to the $X_\alpha$.
+\end{proof}
+
+\begin{corollary}[5.2.3]
+\phantomsection
+\label{IV.5.2.3}
+Let $X$ be a prescheme locally of finite type over a field $k$, and
+let $x\in X$. Then
+\begin{equation}
+\dim_x(X)=\dim(\sh O_x)+\operatorname{tr.deg}_k\kres(x).
+\tag{5.2.3.1}\label{IV.5.2.3.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+There is an open neighbourhood $U$ of $x$ in $X$ such that
+$\dim_x(X)=\dim(U)$ \sref[0]{0.14.1.4.1}.
+We may suppose that the irreducible components of $U$ are the
+$X_i\cap U$, where the $X_i$ are the irreducible components of $X$
+containing $x$.
+----- French corrections on page IV-2 89 -----
+[id 12906]
+OLD: est isolé dans
+NEW: est \emph{isolé} dans
+FRENCH CONTEXT (corrected): }
+\textup{(ii)} Soit $Z$ le sous-préschéma réduit de $X$ ayant
+$\overline{\{x\}}$ pour espace
+sous-jacent; l'hypothèse entraîne que $\{x\}$ est ouvert \emph{dans} $Z$;
+donc, pour tout $z\in Z$, le point générique $x$ de
+$\operatorname{Spec}(\mathcal O_{Z,z})$ est \emph{isolé} dans
+$\operatorname{Spec}(\mathcal O_{Z,z})$; mais l'anneau
+$A=\mathcal O_{Z,z}$ est un anneau local noethérien intègre, et l'hypothèse
+entraîne qu'il existe un $f\in A$ tel que $A_f$ soit un \emph{corps}; on sait
+$(\mathbf{0},16.3.3)$ que cela entraîne $\dim(A)\l
+
+[id 12907]
+OLD: soit un corps;
+NEW: soit un \emph{corps};
+FRENCH CONTEXT (corrected): t générique $x$ de
+$\operatorname{Spec}(\mathcal O_{Z,z})$ est \emph{isolé} dans
+$\operatorname{Spec}(\mathcal O_{Z,z})$; mais l'anneau
+$A=\mathcal O_{Z,z}$ est un anneau local noethérien intègre, et l'hypothèse
+entraîne qu'il existe un $f\in A$ tel que $A_f$ soit un \emph{corps}; on sait
+$(\mathbf{0},16.3.3)$ que cela entraîne $\dim(A)\leq1$. Comme
+$\dim(\mathcal O_{Z,z})\leq1$ pour tout $z\in Z$, on a bien $\dim(Z)\leq1$.
+\end{proof}
+
+\begin{corollary}[5.1.11]
+\label{IV.2.5.1.11-fr}
+Si $X$ est un préschéma localement noethérien, tout
+
+[id 12914]
+OLD: $\mathcal O_{S,x}$ est équidimensionnel.
+NEW: $\mathcal O_{S,x}$ est \emph{équidimensionnel}.
+FRENCH CONTEXT (corrected): _x$ est un $\mathcal O_{X,x}$-module équidimensionnel,
+c'est-à-dire $(\mathbf{0},16.1.7)$ si $\operatorname{Supp}(\mathcal F_x)$ est
+équidimensionnel en tant que partie fermée de
+$\operatorname{Spec}(\mathcal O_{X,x})$; il revient au même de dire que
+l'anneau $\mathcal O_{S,x}$ est \emph{équidimensionnel}.
+
+On appelle \emph{dimension de} $\mathcal F$ et l'on note $\dim(\mathcal F)$
+la dimension du \emph{support} $\operatorname{Supp}(\mathcal F)$; il résulte
+de (5.1.4) et (5.1.12.1) que l'on a
+\begin{equation}
+\dim(\mathcal F)=\sup_{x\in X}\dim(\mathcal F_x).
+\t
+
+[id 12916]
+OLD: \leq\dim(\mathcal F_x).
+NEW: \leq\dim(\mathcal F_x)
+FRENCH CONTEXT (corrected): d{env}
+
+\begin{proposition}[5.1.13]
+\label{IV.2.5.1.13-fr}
+Soient $X$ un préschéma, $\mathcal F$ un $\mathcal O_X$-Module
+quasi-cohérent de type fini, $x$ un point de $X$, $x'$ une générisation de
+$x$ dans $X$; on a alors
+\begin{equation}
+\dim(\mathcal F_{x'})\leq\dim(\mathcal F_x)
+\tag{5.1.13.1}\label{IV.2.5.1.13.1-fr}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Cela résulte aussitôt de (5.1.12.1) et des définitions.
+\end{proof}
+
+\oldpage[IV-2]{90}
+\subsection{Dimension d'un préschéma algébrique.}
+
+\begin{proposition}[5.2.1]
+\label
+
+[id 12917]
+OLD: préschéma algébrique}
+NEW: préschéma algébrique.}
+FRENCH CONTEXT (corrected): gin{equation}
+\dim(\mathcal F_{x'})\leq\dim(\mathcal F_x)
+\tag{5.1.13.1}\label{IV.2.5.1.13.1-fr}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Cela résulte aussitôt de (5.1.12.1) et des définitions.
+\end{proof}
+
+\oldpage[IV-2]{90}
+\subsection{Dimension d'un préschéma algébrique.}
+
+\begin{proposition}[5.2.1]
+\label{IV.2.5.2.1-fr}
+Soient $k$ un corps, $X$ un préschéma irréductible localement de type fini sur
+$k$, $\xi$ son point générique. Alors $X$ est biéquidimensionnel et l'on a
+$\dim(X)=\operatorname{deg.tr}_k \boldsymbol{k}(\xi)$.
+
+
+=================== PAGE IV-2 90 ===================
+----- (English page IV-2 89: shown above in this file) -----
+----- (English page IV-2 90: shown above in this file) -----
+----- English, components/02_section52_dimension_of_algebraic_preschemes.tex, page IV-2 91 -----
+\oldpage[IV-2]{91}
+
+Since $U\cap X_i$ is dense in $X_i$, formula \sref{IV.4.1.1.3}
+gives $\dim(X_i)=\dim(U\cap X_i)$, and hence $\dim_x(X)=\sup_i\dim(X_i)$.
+The minimal prime ideals of $\sh O_x$ correspond to the generic
+points of the $X_i$, so $\dim(\sh O_{X,x})=\sup_i\dim(\sh O_{X_i,x})$
+by \sref[0]{0.16.1.1.1}.
+We are therefore reduced to the case where $X$ is irreducible.
+Since $X$ is biequidimensional by \sref{IV.5.2.1}, $\dim(X)
+=\dim(\overline{\{x\}})
++\operatorname{codim}(\overline{\{x\}},X)$
+by \sref[0]{0.14.3.5.1}.
+Finally,
+\[
+\dim(\overline{\{x\}})
+  =\operatorname{tr.deg}_k\kres(x)
+\]
+by \sref{IV.5.2.1}, while $\operatorname{codim}(\overline{\{x\}},X)=\dim(\sh O_x)$
+by \sref{IV.5.1.2}.
+\end{proof}
+
+\begin{corollary}[5.2.4]
+\phantomsection
+\label{IV.5.2.4}
+Let $X$ be a prescheme locally of finite type over a field $k$, let
+$\sh L$ be an invertible $\sh O_X$-Module, and let $f$ be a section
+of $\sh L$ over $X$ such that the set
+\[
+Y=\{x\in X\mid f(x)=0\}
+\]
+is rare in $X$.
+Then $\dim(Y)\leq\dim(X)-1$.
+Equality holds if $Y$ meets every irreducible component of $X$ having
+maximum dimension.
+\end{corollary}
+
+\begin{proof}
+If $(X_\alpha)$ is the family of irreducible components of $X$, then
+\[
+\dim(Y)=\sup_\alpha\dim(Y\cap X_\alpha).
+\]
+We are therefore reduced to the case where $X$ is irreducible,
+because $Y\cap X_\alpha$ is rare in $X_\alpha$ and every
+$X_\alpha$ has nonempty interior in $X$.
+We may also suppose that $Y\ne\varnothing$.
+For every maximal point $x$ of $Y$, biequidimensionality gives $\dim(\overline{\{x\}})
+=\dim(X)-\operatorname{codim}(\overline{\{x\}},X)$.
+Since $Y$ is rare in $X$,
+\[
+\operatorname{codim}(\overline{\{x\}},X)=1
+\]
+by \sref{IV.5.1.8}, and the result follows.
+\end{proof}
+
+\begin{remarks}[5.2.5]
+\phantomsection
+\label{IV.5.2.5}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.2.5.i}
+Unlike an algebraic $k$-prescheme, a locally Noetherian prescheme
+$X$ need not be catenary; see \sref{IV.5.6.11}.
+It is catenary, however, if all its local rings $\sh O_x$ are
+quotients of regular local rings \sref[0]{0.16.5.12}, and in
+particular if $X$ is regular \sref[I]{I.4.1.4}.
+
+Nevertheless, even an integral scheme $X=\Spec(A)$ with $A$ regular
+need not be biequidimensional.
+In other words, the closed points of $X$ need not all have the same
+codimension \sref[0]{0.14.3.3}.
+For example, let $B$ be a discrete valuation ring, let
+$\mathfrak m=B\pi$ be its maximal ideal, let
+$k=B/\mathfrak m$ be its residue field, let $K$ be its fraction
+field, and put $A=B[T]$.
+The ring $A$ has maximal ideals of height $2$, such as
+$(\pi)+(T)$, but also maximal ideals of height $1$, such as the
+principal ideal $(\pi T-1)$.
+Indeed, a nonzero principal prime ideal has height $1$
+\sref{IV.5.1.8}, while
+\[
+A/(\pi T-1)\simeq B_\pi=K
+\]
+by \sref[0\textsubscript{\mdseries I}]{0.1.2.3}; thus $(\pi T-1)$ is maximal and has height $1$.
+
+\item
+\phantomsection
+\label{IV.5.2.5.ii}
+If $X$ is locally of finite type over a field, then
+$\dim(U)=\dim(X)$ for every dense open subset $U$ of $X$
+\sref{IV.4.1.1.3}.
+This does not extend to regular Noetherian preschemes, even when they
+are biequidimensional.
+For example, let $B$ be a discrete valuation ring with maximal ideal
+$\mathfrak m$.
+Then $X=\Spec(B)$ has two points, $(0)$ and $\mathfrak m$, the latter
+being its only closed point.
+One has $\dim(X)=1$, whereas the open subset $U=\{(0)\}$ has
+dimension $0$ (see \S~10).\footnote{The printed French text has
+$X=\Spec(A)$ here; the ring just specified, and the asserted
+two-point spectrum, require $X=\Spec(B)$.}
+\end{enumerate}
+\end{remarks}
+----- English, components/03_section53_support_dimension_and_hilbert_polynomial.tex, page IV-2 91 -----
+\subsection{Dimension of the support of a Module and Hilbert polynomial}
+\phantomsection
+\label{subsection:IV.5.3}
+----- French corrections on page IV-2 90 -----
+[id 13244]
+OLD: caténaire (5.1.5) et comme
+NEW: caténaire (5.1.5), et comme
+FRENCH CONTEXT (corrected): }
+
+\begin{proof}
+Tout anneau local $\mathcal O_x$ est anneau local d'une $k$-algèbre de type
+fini, donc quotient d'un anneau local régulier $(\mathbf{0},17.3.9)$, et l'on sait
+$(\mathbf{0},16.5.12)$ que ces anneaux sont caténaires; par suite $X$ est un espace
+caténaire (5.1.5), et comme $X$ est irréductible, il suffit (5.1.1) de montrer
+que pour \emph{tout point fermé} $x\in X$, on a
+\begin{equation}
+\dim(\mathcal O_x)=\operatorname{deg.tr}_k \boldsymbol{k}(\xi).
+\tag{5.2.1.1}\label{IV.2.5.2.1.1-fr}
+\end{equation}
+
+On peut évidemment suppose
+
+[id 13255]
+OLD: et d'autre part la dimension
+NEW: et d'autre part, la dimension
+FRENCH CONTEXT (corrected): oit finalement qu'on est ramené au cas où
+$\mathfrak m=\sum_{i=1}^nAt_i$. Le complété de l'anneau local
+$A_{\mathfrak m}$ est alors l'anneau de séries formelles
+$k[[t_1,\ldots,t_n]]$; on sait qu'il a même dimension que $A_{\mathfrak m}$
+$(\mathbf{0},16.2.4)$, et d'autre part, la dimension de $k[[t_1,\ldots,t_n]]$ est égale
+à $n$ $(\mathbf{0},17.1.4)$; d'où la conclusion.
+\end{proof}
+
+\begin{corollary}[5.2.2]
+\label{IV.2.5.2.2-fr}
+Pour un préschéma $X$ localement de type fini sur un corps $k$, $\dim(X)$
+coïncide avec le nombre défini dans \text
+
+=================== PAGE IV-2 93 ===================
+----- English, components/03_section53_support_dimension_and_hilbert_polynomial.tex, page IV-2 92 -----
+\oldpage[IV-2]{92}
+
+This section uses the results of Chapter~III; it will not be used in
+the remainder of this chapter.
+
+\begin{proposition}[5.3.1]
+\phantomsection
+\label{IV.5.3.1}
+Let $A$ be an Artinian local ring, let $X$ be a projective scheme over
+$\Spec(A)$, let $\sh L$ be an invertible $\sh O_X$-Module that is very
+ample relative to $A$, and let $\sh F$ be a nonzero coherent
+$\sh O_X$-Module. Put
+\[
+\sh F(n)=\sh F\otimes_{\sh O_X}\sh L^{\otimes n}
+\qquad(n\in\bb Z).
+\]
+Then the degree of the Hilbert polynomial $P(n)=\chi_A(\sh F(n))$
+of $\sh F$ relative to $A$ \sref[III]{III.2.5.3} equals
+$\dim(\operatorname{Supp}(\sh F))$.
+\end{proposition}
+
+\begin{proof}
+We argue by induction on $d=\dim(\operatorname{Supp}(\sh F))$.
+There is a closed subprescheme $Y$ of $X$ whose underlying space is
+$\operatorname{Supp}(\sh F)$, together with a coherent
+$\sh O_Y$-Module $\sh G$ such that $\sh F=j_*(\sh G)$, where
+$j:Y\to X$ is the canonical injection
+(\textbf{Err}\textsubscript{\textbf{III}},~30).
+The Hilbert polynomials of $\sh F$ and $\sh G$ are plainly the same,
+so we may restrict to the case
+$X=\operatorname{Supp}(\sh F)$.
+
+Suppose first that $d=0$.
+Every point of $X$ is then closed, and $X$ is an Artinian scheme
+\sref[I]{I.6.2.2}; hence $\sh F(n)=\sh F$ for every integer $n$.
+Consequently, by \sref[III]{III.2.5.3},
+\[
+\chi_A(\sh F(n))
+  =\operatorname{length}_A\bigl(\Gamma(X,\sh F)\bigr)
+\]
+for all sufficiently large $n$, and the Hilbert polynomial therefore
+has degree $0$.
+
+Suppose now that $d>0$, and put
+$Z=\operatorname{Ass}(\sh F)$, a finite set \sref{IV.3.1.6}.
+There are an integer $m>0$ and a section
+$f\in\Gamma(X,\sh L^{\otimes m})$ such that $X_f$ is a neighbourhood
+of $Z$ \sref[II]{II.4.5.4}.
+Multiplication by $f$ is an injective homomorphism
+\[
+\mu_f:\sh F\longrightarrow\sh F(m)
+\]
+by \sref{IV.3.1.8}; thus there is an exact sequence
+\begin{equation}
+0\longrightarrow\sh F
+ \xrightarrow{\mu_f}\sh F(m)
+ \longrightarrow\sh G
+ \longrightarrow0
+\tag{5.3.1.1}\label{IV.5.3.1.1}
+\end{equation}
+where $\sh G$ is coherent.
+By Nakayama's lemma, the points
+$x\in\operatorname{Supp}(\sh G)$ are exactly those for which
+$f(x)=0$.
+We shall deduce that
+\begin{equation}
+\dim(\operatorname{Supp}(\sh G))=d-1.
+\tag{5.3.1.2}\label{IV.5.3.1.2}
+\end{equation}
+This follows from the next lemma.
+\end{proof}
+
+\begin{lemma}[5.3.1.3]
+\phantomsection
+\label{IV.5.3.1.3}
+Let $A$ be an Artinian local ring, let $X$ be a projective scheme over
+$\Spec(A)$, and let $\sh L$ be an invertible $\sh O_X$-Module that is
+ample relative to $A$.
+For every section $g$ of $\sh L$ over $X$, the set
+\[
+X\setminus X_g=\{x\in X\mid g(x)=0\}
+\]
+meets every irreducible component of $X$ having nonzero dimension.
+\end{lemma}
+
+\begin{proof}
+Indeed, $X_g$ is an affine open subset of $X$
+\sref[II]{II.5.5.7}.
+If it contains an irreducible component $X'$ of $X$, the reduced
+closed subprescheme of $X$ whose underlying space is $X'$ is both
+projective and affine over $A$, hence finite over $A$
+\sref[III]{III.4.4.2}.
+It is therefore an Artinian scheme and has dimension $0$.
+\end{proof}
+
+\begin{proof}[Proof of \emph{{\hyperref[IV.5.3.1]{(5.3.1)}}}, continued]
+Since $Z$ contains the maximal points of $X$, the open subset $X_f$
+is dense; hence $\operatorname{Supp}(\sh G)$ is rare in $X$.
+Equation \eqref{IV.5.3.1.2} now follows from the lemma and
+\sref{IV.5.2.4}.
+----- English, components/03_section53_support_dimension_and_hilbert_polynomial.tex, page IV-2 93 -----
+\oldpage[IV-2]{93}
+
+From the exact sequence \eqref{IV.5.3.1.1}, for every $n$ we obtain
+the exact sequence
+\[
+0\longrightarrow\sh F(n)
+ \longrightarrow\sh F(n+m)
+ \longrightarrow\sh G(n)
+ \longrightarrow0.
+\]
+For all sufficiently large $n$, there is therefore also an exact
+sequence \sref[III]{III.2.2.3}
+\[
+0\longrightarrow\Gamma(X,\sh F(n))
+ \longrightarrow\Gamma(X,\sh F(n+m))
+ \longrightarrow\Gamma(X,\sh G(n))
+ \longrightarrow0.
+\]
+Taking \sref[III]{III.2.5.3} into account, we have, for all
+sufficiently large $n$,
+\[
+\chi_A(\sh G(n))
+  =\chi_A(\sh F(n+m))-\chi_A(\sh F(n)).
+\]
+By \eqref{IV.5.3.1.2} and the induction hypothesis, the polynomial
+$\chi_A(\sh G(n))$ has degree $d-1$.
+The preceding relation therefore implies that
+$\chi_A(\sh F(n))$ has degree $d$.
+\end{proof}
+----- English, components/04_section54_dimension_of_morphism_image.tex, page IV-2 93 -----
+\subsection{Dimension of the image of a morphism}
+\phantomsection
+\label{subsection:IV.5.4}
+
+\begin{proposition}[5.4.1]
+\phantomsection
+\label{IV.5.4.1}
+Let $X$ and $Y$ be locally Noetherian preschemes, and let
+$f:X\to Y$ be a morphism.
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.4.1.i}
+If $f$ is quasi-finite, then $\dim(X)\leq\dim(\overline{f(X)})\leq\dim(Y)$.
+\item
+\phantomsection
+\label{IV.5.4.1.ii}
+If $f$ is surjective and open (respectively, surjective and closed),
+then $\dim(X)\geq\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}[{\rm(i)}]
+\item
+We may replace $f$ by $f_{\mathrm{red}}$ \sref[II]{II.6.2.4}, and
+therefore suppose that $X$ and $Y$ are reduced.
+Let $Z$ be the reduced closed subprescheme of $Y$ whose underlying
+space is $\overline{f(X)}$.
+Then $f=j\circ g$, where $j:Z\to Y$ is the canonical injection and
+$g:X\to Z$ is quasi-finite
+\sref[I]{I.5.2.2}, \sref[II]{II.6.2.4}.
+We may thus restrict to the case in which $f(X)$ is dense in $Y$.
+
+For every $x\in X$, the ring $\sh O_x$ is then a quasi-finite
+$\sh O_{f(x)}$-module \sref[II]{II.6.2.2}; consequently $\mathfrak m_{f(x)}\sh O_x$
+is an ideal of definition of $\sh O_x$ \sref[0\textsubscript{\mdseries I}]{0.7.4.4}.
+If $A\to B$ is a local homomorphism of Noetherian local rings, with
+maximal ideal $\mathfrak m$ of $A$, and if $\mathfrak mB$ is an ideal
+of definition of $B$, then $\dim(B)\leq\dim(A)$
+by \sref[0]{0.16.3.10}.
+Part~(i) now follows from \sref{IV.5.1.4}.
+
+\item
+By the definition of dimension \sref[0]{0.14.1.2}, it is enough to
+prove the following.
+For every sequence $(y_i)_{0\leq i\leq n}$ of distinct points of $Y$
+such that
+\[
+y_i\in\overline{\{y_{i+1}\}}
+\qquad(0\leq i\leq n-1),
+\]
+there is a sequence $(x_i)_{0\leq i\leq n}$ of points of $X$ such
+that
+\[
+x_i\in\overline{\{x_{i+1}\}}
+\qquad(0\leq i\leq n-1)
+\]
+and $f(x_i)=y_i$ for every $i$.
+
+Suppose first that $f$ is surjective and open.
+We construct the $x_i$ by induction on $i$.
+Surjectivity gives an $x_0\in X$ such that $f(x_0)=y_0$.
+Suppose the $x_i$ have been chosen for $i\leq m$ so that
+$f(x_i)=y_i$ for $i\leq m$ and
+$x_i\in\overline{\{x_{i+1}\}}$ for $i<m$.
+Since $f$ is open and $y_{m+1}$ is a generization of $y_m$, there is
+an $x_{m+1}\in f^{-1}(y_{m+1})$ that is a generization of $x_m$
+\sref{IV.1.10.3}.
+The induction therefore continues.
+----- English, components/05_section55_dimension_formula_finite_type.tex, page IV-2 93 -----
+\subsection{Dimension formula for a morphism of finite type}
+\phantomsection
+\label{subsection:IV.5.5}
+\label{IV.5.5}
+
+\begin{env}[5.5.1]
+\phantomsection
+\label{IV.5.5.1}
+----- English, components/04_section54_dimension_of_morphism_image.tex, page IV-2 94 -----
+\oldpage[IV-2]{94}
+
+Suppose now that $f$ is surjective and closed.
+We construct the $x_i$ by descending induction on $i$.
+Surjectivity gives an $x_n$ such that $f(x_n)=y_n$.
+Suppose the $x_i$ have been chosen with the required properties for
+$i>m$.
+Because $f$ is closed,
+\[
+f\bigl(\overline{\{x_{m+1}\}}\bigr)
+  =\overline{\{f(x_{m+1})\}}
+  =\overline{\{y_{m+1}\}}
+\]
+(Bourbaki, \emph{Topologie g\'en\'erale}, chap.~I,
+3\textsuperscript{rd} ed., \S~5, n\textsuperscript{o}~4, prop.~9).
+There is therefore an
+$x_m\in\overline{\{x_{m+1}\}}$ such that $f(x_m)=y_m$, and the
+descending induction continues.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[5.4.2]
+\phantomsection
+\label{IV.5.4.2}
+Let $X$ and $Y$ be locally Noetherian preschemes, and let
+$f:X\to Y$ be a finite morphism, hence a closed morphism.
+Then
+\[
+\dim(X)=\dim(f(X)).
+\]
+If $f$ is moreover surjective, then $\dim(X)=\dim(Y)$.
+\end{corollary}
+
+\begin{remarks}[5.4.3]
+\phantomsection
+\label{IV.5.4.3}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.4.3.i}
+We saw in \sref{IV.4.1.2} that if $X$ and $Y$ are preschemes locally
+of finite type over a field $k$, and $f$ is a $k$-morphism, the
+inequality $\dim(Y)\leq\dim(X)$
+already holds when $f$ is quasi-compact and dominant.
+By contrast, if one assumes only that $X$ and $Y$ are locally
+Noetherian, it is possible to have $\dim(Y)>\dim(X)$ even when $f$ is
+of finite type, bijective, and a local immersion.
+
+For example, let $A$ be a discrete valuation ring, let $K$ be its
+fraction field, and let $k$ be its residue field.
+Put $Y=\Spec(A)$, and denote by $a$ the generic point of $Y$ and by
+$b$ its closed point; thus $\kres(a)=K$ and $\kres(b)=k$.
+Let
+\[
+X=\Spec(K)\amalg\Spec(k),
+\]
+and let $f:X\to Y$ agree on the two summands with the respective
+canonical morphisms \sref[I]{I.2.4.5}.
+The morphism $f$ is plainly a bijective local immersion, since
+$\{a\}$ is open in $Y$.
+It is also of finite type: if $\pi$ is a uniformizer of $A$, then
+$K=A[\pi^{-1}]$, so $K$ is a finitely generated $A$-algebra.
+Nevertheless,
+\[
+\dim(X)=0
+\qquad\text{and}\qquad
+\dim(Y)=1.
+\]
+
+\item
+\phantomsection
+\label{IV.5.4.3.ii}
+Let $A\subset B$ be Noetherian rings, with $B$ a finite
+$A$-algebra.
+Corollary~\sref{IV.5.4.2} again gives $\dim(B)=\dim(A)$
+\sref[0]{0.16.1.5}.
+Suppose in addition that $A$ is a Noetherian local ring.
+Then $B$ is a Noetherian semilocal ring
+(Bourbaki, \emph{Alg\`ebre commutative}, chap.~IV, \S~2,
+n\textsuperscript{o}~5, cor.~3 of prop.~9).
+If $\mathfrak n_i$ $(1\leq i\leq r)$ are the maximal ideals of $B$,
+then
+\begin{equation}
+\dim(A)=\sup_i\dim(B_{\mathfrak n_i}).
+\tag{5.4.3.1}\label{IV.5.4.3.1}
+\end{equation}
+
+Under these hypotheses one need not have $\dim(B_{\mathfrak n_i})=\dim(A)$
+for every $i$; replacing $B$ by the direct product of $B$ with the
+residue field $k$ of $A$ gives an immediate example.
+There are even examples in which $A$ and $B$ are integral domains of
+dimension $2$ and some of the $B_{\mathfrak n_i}$ have dimension
+strictly less than $\dim(A)$ \sref{IV.5.6.11}.
+We shall see later, in \sref{IV.5.6.4} and \sref{IV.5.6.10}, that
+this last phenomenon cannot occur when $A$ is a quotient of a
+regular local ring.
+\end{enumerate}
+\end{remarks}
+----- English, components/05_section55_dimension_formula_finite_type.tex, page IV-2 94 -----
+\oldpage[IV-2]{94}
+
+Recall \sref[0]{0.16.3.9} that if $A$ and $B$ are Noetherian local
+rings, $k$ is the residue field of $A$, and
+$\varphi:A\to B$ is a local homomorphism, then
+\begin{equation}
+\dim(B)\leq\dim(A)+\dim(B\otimes_A k).
+\tag{5.5.1.1}\label{IV.5.5.1.1}
+\end{equation}
+\end{env}
+
+We deduce the following.
+
+\begin{proposition}[5.5.2]
+\phantomsection
+\label{IV.5.5.2}
+Let $X$ and $Y$ be locally Noetherian preschemes, let
+$f:X\to Y$ be a morphism, let $x\in X$, and put $y=f(x)$.
+Then
+\begin{equation}
+\dim(\sh O_x)
+ \leq\dim(\sh O_y)
+   +\dim\bigl(\sh O_x\otimes_{\sh O_y}\kres(y)\bigr).
+\tag{5.5.2.1}\label{IV.5.5.2.1}
+\end{equation}
+In particular, if $x$ is a maximal point of the fibre $f^{-1}(y)$,
+then
+\begin{equation}
+\dim(\sh O_x)\leq\dim(\sh O_y),
+\tag{5.5.2.2}\label{IV.5.5.2.2}
+\end{equation}
+because $\sh O_x\otimes_{\sh O_y}\kres(y)
+=\sh O_x/\mathfrak m_y\sh O_x$
+is the local ring of $x$ in the prescheme $f^{-1}(y)$ and therefore
+has dimension $0$.
+\end{proposition}
+----- French corrections on page IV-2 93 -----
+[id 13284]
+OLD: \subsection{Dimension de l'image d'un morphisme}
+NEW: \subsection{Dimension de l'image d'un morphisme.}
+FRENCH CONTEXT (corrected): hcal F(n+m))-\chi_A(\mathcal F(n)).
+\]
+
+Comme en vertu de (5.3.1.2) et de l'hypothèse de récurrence, le degré du
+polynôme $\chi_A(\mathcal G(n))$ est $d-1$, la relation précédente entraîne
+que le degré de $\chi_A(\mathcal F(n))$ est $d$, C.Q.F.D.
+\end{proof}
+
+\subsection{Dimension de l'image d'un morphisme.}
+\label{IV.2.s5.4-fr}
+
+\begin{proposition}[5.4.1]
+\label{IV.2.s5.4.1-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme.
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leq\dim(\overline{f(X)})\leq\di
+
+[id 13286]
+OLD: \item[(ii)] Si $f$
+NEW: \item[\textup{(ii)}] Si $f$
+FRENCH CONTEXT (corrected): {IV.2.s5.4-fr}
+
+\begin{proposition}[5.4.1]
+\label{IV.2.s5.4.1-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme.
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leq\dim(\overline{f(X)})\leq\dim(Y)$.
+\item[\textup{(ii)}] Si $f$ est surjectif et ouvert \textup{(resp.} surjectif et fermé\textup{)}, on a
+$\dim(X)\geq\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] On peut remplacer $f$ par $f_{\mathrm{red}}$ (\textbf{II}, 6.2.4), donc
+supposer $X$
+
+[id 13287]
+OLD: (resp. surjectif et fermé)
+NEW: \textup{(resp.} surjectif et fermé\textup{)}
+FRENCH CONTEXT (corrected): .2.s5.4.1-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme.
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leq\dim(\overline{f(X)})\leq\dim(Y)$.
+\item[\textup{(ii)}] Si $f$ est surjectif et ouvert \textup{(resp.} surjectif et fermé\textup{)}, on a
+$\dim(X)\geq\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] On peut remplacer $f$ par $f_{\mathrm{red}}$ (\textbf{II}, 6.2.4), donc
+supposer $X$ et $Y$ réduits; si $Z$ est le sous-préschéma fermé réduit de $Y$
+aya
+
+[id 13295]
+OLD: n-1$, il
+existe
+NEW: n-1$ il
+existe
+FRENCH CONTEXT (corrected): montrer (i) en vertu
+de (5.1.4).
+
+\item[(ii)] La définition de la dimension (\textbf{0}, 14.1.2) montre qu'il suffit de
+prouver que pour toute suite $(y_i)_{0\leq i\leq n}$ d'éléments distincts de
+$Y$ telle que $y_i\in\overline{\{y_{i+1}\}}$ pour $0\leq i\leq n-1$ il
+existe une suite $(x_i)_{0\leq i\leq n}$ de points de $X$ telle que
+$x_i\in\overline{\{x_{i+1}\}}$ pour $0\leq i\leq n-1$ et $f(x_i)=y_i$
+pour tout $i$. Supposons d'abord $f$ surjectif et \emph{ouvert} et démontrons
+l'existence de $x_i$ par récurrence sur $i$; l'exi
+
+[id 13296]
+OLD: surjectif et ouvert et démontrons
+NEW: surjectif et \emph{ouvert} et démontrons
+FRENCH CONTEXT (corrected):  distincts de
+$Y$ telle que $y_i\in\overline{\{y_{i+1}\}}$ pour $0\leq i\leq n-1$ il
+existe une suite $(x_i)_{0\leq i\leq n}$ de points de $X$ telle que
+$x_i\in\overline{\{x_{i+1}\}}$ pour $0\leq i\leq n-1$ et $f(x_i)=y_i$
+pour tout $i$. Supposons d'abord $f$ surjectif et \emph{ouvert} et démontrons
+l'existence de $x_i$ par récurrence sur $i$; l'existence de $x_0\in X$ tel
+que $f(x_0)=y_0$ résulte de ce que $f$ est surjectif. Si les $x_i$ ont été
+déterminés pour $i\leq m$ de façon à satisfaire à $f(x_i)=y_i$ pour
+$i\leq m$ et $x_i\in\overline{\{x_{i+1}\}
+
+[id 13285]
+OLD: \item[(i)] Si $f$
+NEW: \item[\textup{(i)}] Si $f$
+FRENCH CONTEXT (corrected):  F(n))$ est $d$, C.Q.F.D.
+\end{proof}
+
+\subsection{Dimension de l'image d'un morphisme.}
+\label{IV.2.s5.4-fr}
+
+\begin{proposition}[5.4.1]
+\label{IV.2.s5.4.1-fr}
+Soient $X$, $Y$ deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme.
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leq\dim(\overline{f(X)})\leq\dim(Y)$.
+\item[\textup{(ii)}] Si $f$ est surjectif et ouvert \textup{(resp.} surjectif et fermé\textup{)}, on a
+$\dim(X)\geq\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+
+=================== PAGE IV-2 94 ===================
+----- (English page IV-2 93: shown above in this file) -----
+----- (English page IV-2 94: shown above in this file) -----
+----- English, components/05_section55_dimension_formula_finite_type.tex, page IV-2 95 -----
+\oldpage[IV-2]{95}
+
+We shall now obtain a formula more precise than
+\eqref{IV.5.5.2.1} when $f$ is assumed to be of finite type.
+
+\begin{proposition}[5.5.3]
+\phantomsection
+\label{IV.5.5.3}
+Let $A$ be a Noetherian ring, let $T$ be an indeterminate, and let
+$\mathfrak p$ be a prime ideal of $A$.
+Then $\mathfrak p'=\mathfrak pA[T]$
+is a prime ideal of $B=A[T]$, and
+$\mathfrak p'\cap A=\mathfrak p$.
+There are infinitely many prime ideals of $B$, distinct from
+$\mathfrak p'$, whose intersection with $A$ is $\mathfrak p$; these
+prime ideals are pairwise incomparable.
+Moreover, if $\mathfrak q$ is any such ideal, then
+\begin{equation}
+\dim(B_{\mathfrak q})
+  =\dim(B_{\mathfrak p'})+1
+  =\dim(A_{\mathfrak p})+1.
+\tag{5.5.3.1}\label{IV.5.5.3.1}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+For the first assertions, replacing $A$ by $A/\mathfrak p$ and using $A[T]/\mathfrak pA[T]=(A/\mathfrak p)[T]$
+reduces us immediately to the case $\mathfrak p=0$.
+The prime ideals of $B=A[T]$ whose intersection with $A$ is $0$ are
+exactly those disjoint from the multiplicative set
+$S=A\setmin\{0\}$ of the domain $A$.
+There is an inclusion-preserving bijection from this set of prime
+ideals to the prime ideals of $S^{-1}A[T]=K[T]$,
+where $K$ is the fraction field of $A$
+(Bourbaki, \emph{Alg\`ebre commutative}, chap.~II, \S~2,
+n\textsuperscript{o}~5, prop.~11).
+The assertions follow.
+
+Furthermore, by \eqref{IV.5.5.1.1},\footnote{The printed French text
+cites \emph{(5.5.1.2)}, which does not exist.  The displayed
+inequality used here is \emph{{\hyperref[IV.5.5.1.1]{(5.5.1.1)}}}.} $\dim(B_{\mathfrak q})
+\leq\dim(A_{\mathfrak p})
++\dim(B_{\mathfrak q}/\mathfrak pB_{\mathfrak q})$.
+Let $k$ be the fraction field of $A/\mathfrak p$.
+The ring $B_{\mathfrak q}/\mathfrak pB_{\mathfrak q}$ is canonically
+identified with
+\[
+(k[T])_{\overline{\mathfrak q}},
+\]
+where $\overline{\mathfrak q}$ is a nonzero prime ideal of $k[T]$.
+It is therefore a discrete valuation ring and has dimension $1$.
+Thus $\dim(B_{\mathfrak q})\leq\dim(A_{\mathfrak p})+1$.
+
+Let $\mathfrak p=\mathfrak p_0
+\supset\mathfrak p_1
+\supset\ldots
+\supset\mathfrak p_m$
+be a chain of prime ideals of $A$ of maximum length.
+The ideals $\mathfrak p_jB$ $(0\leq j\leq m)$ are prime in $B$,
+pairwise distinct, and contained in $\mathfrak q$.
+Hence $\dim(B_{\mathfrak q})
+\geq m+1
+=\dim(A_{\mathfrak p})+1$.
+It follows that $\operatorname{ht}(\mathfrak q)
+=\operatorname{ht}(\mathfrak p)+1$.
+Since $\mathfrak q\neq\mathfrak p'$, we also have $\operatorname{ht}(\mathfrak q)
+\geq\operatorname{ht}(\mathfrak p')+1
+\geq\operatorname{ht}(\mathfrak p)+1$.
+All these inequalities are equalities, and
+\eqref{IV.5.5.3.1} follows.
+\end{proof}
+
+\begin{corollary}[5.5.4]
+\phantomsection
+\label{IV.5.5.4}
+For every Noetherian ring $A$,
+\begin{equation}
+\dim(A[T_1,\ldots,T_r])=\dim(A)+r,
+\tag{5.5.4.1}\label{IV.5.5.4.1}
+\end{equation}
+where the $T_i$ are indeterminates.
+\end{corollary}
+
+By contrast, there are examples of non-Noetherian local rings $A$
+such that
+\[
+\dim(A)=1
+\qquad\text{and}\qquad
+\dim(A[T])=3
+\]
+[30].
+
+\begin{corollary}[5.5.5]
+\phantomsection
+\label{IV.5.5.5}
+For every locally Noetherian prescheme $X$, the dimension of $X[T_1,\ldots,T_r]
+=X\otimes_{\bb Z}\bb Z[T_1,\ldots,T_r]$,
+where the $T_i$ are indeterminates, is $\dim(X)+r$.
+\end{corollary}
+
+\begin{proof}
+This follows from \sref{IV.5.5.4} and \sref[0]{0.14.1.7}.
+\end{proof}
+
+\begin{corollary}[5.5.6]
+\phantomsection
+\label{IV.5.5.6}
+Under the hypotheses of \sref{IV.5.5.3}, let $\mathfrak q$ be a
+prime ideal of $B=A[T]$ such that
+$\mathfrak q\cap A=\mathfrak p$.
+If $k$ and $k'$ are the residue fields of $A_{\mathfrak p}$ and
+$B_{\mathfrak q}$, respectively, then
+\begin{equation}
+\dim(A_{\mathfrak p})+1
+ =\dim(B_{\mathfrak q})+\operatorname{tr.deg}_k k'
+\tag{5.5.6.1}\label{IV.5.5.6.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+----- French corrections on page IV-2 94 -----
+[id 13297]
+OLD: surjectif et fermé et démontrons
+NEW: surjectif et \emph{fermé} et démontrons
+FRENCH CONTEXT (corrected): i\in\overline{\{x_{i+1}\}}$ pour $i<m$, on note que puisque
+$f$ est ouvert et $y_{m+1}$ une générisation de $y_m$, il existe
+$x_{m+1}\in f^{-1}(y_{m+1})$ qui est une générisation de $x_m$ (1.10.3) et
+la récurrence peut se poursuivre.
+
+Supposons maintenant $f$ surjectif et \emph{fermé} et démontrons l'existence de
+$x_i$ par récurrence \emph{descendante} sur $i$, l'existence de $x_n$ tel que
+$f(x_n)=y_n$ résultant encore de ce que $f$ est surjectif. Si les $x_i$ ont
+été déterminés de façon à satisfaire aux conditions voulues pour $i>m$, on
+note que $f(\ov
+
+[id 13298]
+OLD: récurrence descendante sur
+NEW: récurrence \emph{descendante} sur
+FRENCH CONTEXT (corrected): st ouvert et $y_{m+1}$ une générisation de $y_m$, il existe
+$x_{m+1}\in f^{-1}(y_{m+1})$ qui est une générisation de $x_m$ (1.10.3) et
+la récurrence peut se poursuivre.
+
+Supposons maintenant $f$ surjectif et \emph{fermé} et démontrons l'existence de
+$x_i$ par récurrence \emph{descendante} sur $i$, l'existence de $x_n$ tel que
+$f(x_n)=y_n$ résultant encore de ce que $f$ est surjectif. Si les $x_i$ ont
+été déterminés de façon à satisfaire aux conditions voulues pour $i>m$, on
+note que $f(\overline{\{x_{m+1}\}})$ est l'adhérence de
+$\{f(x_{m+1})\}=\{
+
+[id 13300]
+OLD: (donc fermé)
+NEW: \textup{(donc} fermé\textup{)}
+FRENCH CONTEXT (corrected): \in\overline{\{x_{m+1}\}}$ tel que $f(x_m)=y_m$ et la récurrence
+descendante se poursuit encore.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[5.4.2]
+\label{IV.2.s5.4.2-fr}
+Si $X$, $Y$ sont deux préschémas localement noethériens, $f:X\to Y$ un
+morphisme fini \textup{(donc} fermé\textup{)}, on a
+$\dim(X)=\dim(f(X))$. Si en outre $f$ est surjectif, on a
+$\dim(X)=\dim(Y)$.
+\end{corollary}
+
+\begin{remarks}[5.4.3]
+\label{IV.2.s5.4.3-fr}
+\begin{enumerate}
+\item[(i)] On a vu dans (4.1.2) que si $X$ et $Y$ sont des préschémas
+localement de type fini s
+
+[id 13301]
+OLD: quasi-compact et
+dominant.
+NEW: \emph{quasi-compact et
+dominant}.
+FRENCH CONTEXT (corrected): remarks}[5.4.3]
+\label{IV.2.s5.4.3-fr}
+\begin{enumerate}
+\item[(i)] On a vu dans (4.1.2) que si $X$ et $Y$ sont des préschémas
+localement de type fini sur un corps $k$ et $f$ un $k$-morphisme, l'inégalité
+$\dim(Y)\leq\dim(X)$ est déjà vérifiée lorsque $f$ est \emph{quasi-compact et
+dominant}. Au contraire, on peut avoir $\dim(Y)>\dim(X)$ même lorsque $f$ est
+\emph{de type fini}, \emph{bijectif} et une \emph{immersion locale}, si l'on suppose seulement
+$X$ et $Y$ localement noethériens. Par exemple soient $A$ un anneau de
+valuation discrète, $K$ so
+
+[id 13302]
+OLD: $f$ est
+de type fini,
+NEW: $f$ est
+\emph{de type fini},
+FRENCH CONTEXT (corrected): si $X$ et $Y$ sont des préschémas
+localement de type fini sur un corps $k$ et $f$ un $k$-morphisme, l'inégalité
+$\dim(Y)\leq\dim(X)$ est déjà vérifiée lorsque $f$ est \emph{quasi-compact et
+dominant}. Au contraire, on peut avoir $\dim(Y)>\dim(X)$ même lorsque $f$ est
+\emph{de type fini}, \emph{bijectif} et une \emph{immersion locale}, si l'on suppose seulement
+$X$ et $Y$ localement noethériens. Par exemple soient $A$ un anneau de
+valuation discrète, $K$ son corps des fractions, $k$ son corps résiduel; si
+$Y=\operatorname{Spec}(A)$, et si $a$ 
+
+[id 13303]
+OLD: bijectif et une
+NEW: \emph{bijectif} et une
+FRENCH CONTEXT (corrected): émas
+localement de type fini sur un corps $k$ et $f$ un $k$-morphisme, l'inégalité
+$\dim(Y)\leq\dim(X)$ est déjà vérifiée lorsque $f$ est \emph{quasi-compact et
+dominant}. Au contraire, on peut avoir $\dim(Y)>\dim(X)$ même lorsque $f$ est
+\emph{de type fini}, \emph{bijectif} et une \emph{immersion locale}, si l'on suppose seulement
+$X$ et $Y$ localement noethériens. Par exemple soient $A$ un anneau de
+valuation discrète, $K$ son corps des fractions, $k$ son corps résiduel; si
+$Y=\operatorname{Spec}(A)$, et si $a$ est le point générique 
+
+[id 13304]
+OLD: immersion locale, si
+NEW: \emph{immersion locale}, si
+FRENCH CONTEXT (corrected):  fini sur un corps $k$ et $f$ un $k$-morphisme, l'inégalité
+$\dim(Y)\leq\dim(X)$ est déjà vérifiée lorsque $f$ est \emph{quasi-compact et
+dominant}. Au contraire, on peut avoir $\dim(Y)>\dim(X)$ même lorsque $f$ est
+\emph{de type fini}, \emph{bijectif} et une \emph{immersion locale}, si l'on suppose seulement
+$X$ et $Y$ localement noethériens. Par exemple soient $A$ un anneau de
+valuation discrète, $K$ son corps des fractions, $k$ son corps résiduel; si
+$Y=\operatorname{Spec}(A)$, et si $a$ est le point générique de $Y$ et $b$
+son point ferm
+
+[id 13307]
+OLD: préschéma
+somme de
+NEW: préschéma
+\emph{somme} de
+FRENCH CONTEXT (corrected):  $A$ un anneau de
+valuation discrète, $K$ son corps des fractions, $k$ son corps résiduel; si
+$Y=\operatorname{Spec}(A)$, et si $a$ est le point générique de $Y$ et $b$
+son point fermé, on a donc $\boldsymbol{k}(a)=K$, $\boldsymbol{k}(b)=k$. Soit alors $X$ le préschéma
+\emph{somme} de $\operatorname{Spec}(K)$ et de $\operatorname{Spec}(k)$,
+$f:X\to Y$ le morphisme qui coïncide dans $\operatorname{Spec}(K)$ et
+$\operatorname{Spec}(k)$ avec les morphismes canoniques respectifs
+(\textbf{I}, 2.4.5); il est clair que $f$ est une immersion local
+
+[id 13309]
+OLD: algèbre finie, le corollaire
+NEW: algèbre \emph{finie}, le corollaire
+FRENCH CONTEXT (corrected): type fini, car
+$K=A[\pi^{-1}]$, où $\pi$ est une uniformisante de $A$, donc $K$ est une
+$A$-algèbre de type fini. Cependant on a $\dim(X)=0$ et $\dim(Y)=1$.
+
+\item[(ii)] Si $A$ et $B$ sont deux anneaux noethériens tels que $A\subset B$
+et que $B$ soit une $A$-algèbre \emph{finie}, le corollaire (5.4.2) montre à nouveau
+que $\dim(B)=\dim(A)$ (\textbf{0}, 16.1.5). Supposons en outre que $A$ soit un anneau
+\emph{local} noethérien; alors $B$ est un anneau noethérien \emph{semi-local} (Bourbaki,
+\emph{Alg. comm.}, chap. IV, \S~2, n\textsuperscript{o}~5, 
+
+[id 13311]
+OLD: anneau
+local noethérien;
+NEW: anneau
+\emph{local} noethérien;
+FRENCH CONTEXT (corrected):  et $\dim(Y)=1$.
+
+\item[(ii)] Si $A$ et $B$ sont deux anneaux noethériens tels que $A\subset B$
+et que $B$ soit une $A$-algèbre \emph{finie}, le corollaire (5.4.2) montre à nouveau
+que $\dim(B)=\dim(A)$ (\textbf{0}, 16.1.5). Supposons en outre que $A$ soit un anneau
+\emph{local} noethérien; alors $B$ est un anneau noethérien \emph{semi-local} (Bourbaki,
+\emph{Alg. comm.}, chap. IV, \S~2, n\textsuperscript{o}~5, cor.~3 de la
+prop.~9); si $\mathfrak n_i$ $(1\leq i\leq r)$ sont les idéaux maximaux de
+$B$, on a donc
+\begin{equation}
+\dim(A)=\sup_i\d
+
+[id 13312]
+OLD: noethérien semi-local
+NEW: noethérien \emph{semi-local}
+FRENCH CONTEXT (corrected): neaux noethériens tels que $A\subset B$
+et que $B$ soit une $A$-algèbre \emph{finie}, le corollaire (5.4.2) montre à nouveau
+que $\dim(B)=\dim(A)$ (\textbf{0}, 16.1.5). Supposons en outre que $A$ soit un anneau
+\emph{local} noethérien; alors $B$ est un anneau noethérien \emph{semi-local} (Bourbaki,
+\emph{Alg. comm.}, chap. IV, \S~2, n\textsuperscript{o}~5, cor.~3 de la
+prop.~9); si $\mathfrak n_i$ $(1\leq i\leq r)$ sont les idéaux maximaux de
+$B$, on a donc
+\begin{equation}
+\dim(A)=\sup_i\dim(B_{\mathfrak n_i}).
+\tag{5.4.3.1}\label{IV.2.s5.4.
+
+[id 13314]
+OLD: pour tout $i$:
+NEW: pour \emph{tout} $i$:
+FRENCH CONTEXT (corrected): leq r)$ sont les idéaux maximaux de
+$B$, on a donc
+\begin{equation}
+\dim(A)=\sup_i\dim(B_{\mathfrak n_i}).
+\tag{5.4.3.1}\label{IV.2.s5.4.3.1-fr}
+\end{equation}
+
+On observera que, dans ces conditions, on n'a pas nécessairement
+$\dim(B_{\mathfrak n_i})=\dim(A)$ pour \emph{tout} $i$: il suffit pour le voir de
+remplacer $B$ par la composée directe de $B$ et du corps résiduel $k$ de
+$A$. Mais on a même des exemples où $A$ et $B$ sont en outre des \emph{anneaux
+intègres de dimension} $2$ et où certains des $B_{\mathfrak n_i}$ ont une
+dimensi
+
+[id 13315]
+OLD: des anneaux
+intègres de dimension $2$
+NEW: des \emph{anneaux
+intègres de dimension} $2$
+FRENCH CONTEXT (corrected): s ces conditions, on n'a pas nécessairement
+$\dim(B_{\mathfrak n_i})=\dim(A)$ pour \emph{tout} $i$: il suffit pour le voir de
+remplacer $B$ par la composée directe de $B$ et du corps résiduel $k$ de
+$A$. Mais on a même des exemples où $A$ et $B$ sont en outre des \emph{anneaux
+intègres de dimension} $2$ et où certains des $B_{\mathfrak n_i}$ ont une
+dimension $<\dim(A)$ (5.6.11). Nous verrons toutefois plus loin ((5.6.4) et
+(5.6.10)) que ce dernier phénomène ne peut se présenter lorsque l'on suppose
+que $A$ est un quotient d'anneau local régulier.
+\end{enume
+
+[id 13317]
+OLD: \subsection{Formule des dimensions pour un morphisme de type fini}
+NEW: \subsection{Formule des dimensions pour un morphisme de type fini.}
+FRENCH CONTEXT (corrected): B_{\mathfrak n_i}$ ont une
+dimension $<\dim(A)$ (5.6.11). Nous verrons toutefois plus loin ((5.6.4) et
+(5.6.10)) que ce dernier phénomène ne peut se présenter lorsque l'on suppose
+que $A$ est un quotient d'anneau local régulier.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Formule des dimensions pour un morphisme de type fini.}
+\label{IV.2.s5.5-fr}
+
+\begin{env}[5.5.1]
+\label{IV.2.s5.5.1-fr}
+Rappelons (\textbf{0}, 16.3.9) que si $A$, $B$ sont deux anneaux locaux noethériens,
+$k$ le corps résiduel de $A$, $\varphi:A\to B$ un homomorphisme local, on a
+\begin{equation}
+\dim(B)\leq\dim(A
+
+=================== PAGE IV-2 95 ===================
+----- (English page IV-2 94: shown above in this file) -----
+----- (English page IV-2 95: shown above in this file) -----
+----- English, components/05_section55_dimension_formula_finite_type.tex, page IV-2 96 -----
+\oldpage[IV-2]{96}
+
+If $\mathfrak q=\mathfrak pB$, then $\dim(B_{\mathfrak q})=\dim(A_{\mathfrak p})$
+by \eqref{IV.5.5.3.1}, while $k'=k(T)$.
+Thus \eqref{IV.5.5.6.1} holds.
+If $\mathfrak q\neq\mathfrak pB$, then $\dim(B_{\mathfrak q})=\dim(A_{\mathfrak p})+1$,
+and $\mathfrak q$ corresponds to a nonzero prime ideal of $k[T]$.
+Consequently $k'$ is algebraic over $k$, and
+\eqref{IV.5.5.6.1} again holds.
+\end{proof}
+
+\begin{lemma}[5.5.7]
+\phantomsection
+\label{IV.5.5.7}
+Let $A$ be a Noetherian local domain, let $\mathfrak m$ be its
+maximal ideal, and let $k$ be its residue field.
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.5.7.i}
+Let $B$ be a domain containing $A$ such that $B=A[x]$ for some
+$x\in B$, and let $\mathfrak q$ be a prime ideal of $B$ such that
+$\mathfrak q\cap A=\mathfrak m$.
+Then
+\begin{equation}
+\dim(A)+\operatorname{tr.deg}_A B
+ \geq\dim(B_{\mathfrak q})+\operatorname{tr.deg}_k k',
+\tag{5.5.7.1}\label{IV.5.5.7.1}
+\end{equation}
+where $k'$ is the residue field of $B_{\mathfrak q}$ and
+$\operatorname{tr.deg}_A B$ denotes the transcendence degree of the
+fraction field of $B$ over that of $A$.
+
+\item
+\phantomsection
+\label{IV.5.5.7.ii}
+Suppose that for every maximal ideal $\mathfrak n$ of $A[T]$ such
+that $\mathfrak n\cap A=\mathfrak m$, the ring
+$(A[T])_{\mathfrak n}$ is catenary.
+Then the two sides of \eqref{IV.5.5.7.1} are equal.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\begin{enumerate}[{\rm(i)}]
+\item
+If $x$ is transcendental over the fraction field of $A$, then
+$\operatorname{tr.deg}_A B=1$, and the two sides of
+\eqref{IV.5.5.7.1} are equal by \sref{IV.5.5.6}.
+
+Suppose instead that $x$ is algebraic over the fraction field of
+$A$.
+Then $B=A[T]/\mathfrak p$,
+where $\mathfrak p$ is a nonzero prime ideal of $A[T]$ such that
+$\mathfrak p\cap A=0$, because $B$ contains $A$.
+Thus $\operatorname{ht}(\mathfrak p)=1$
+by \sref{IV.5.5.3}.
+The ideal $\mathfrak q$ is of the form
+$\mathfrak n/\mathfrak p$, where
+$\mathfrak n\supset\mathfrak p$ is a prime ideal of $A[T]$ satisfying
+$\mathfrak n\cap A=\mathfrak m$, and $B_{\mathfrak q}
+=(A[T])_{\mathfrak n}/\mathfrak p(A[T])_{\mathfrak n}$.
+Formula \sref[0]{0.16.1.4.1}, applied to
+\[
+X=\Spec((A[T])_{\mathfrak n})
+\quad\text{and}\quad
+Y=\Spec(B_{\mathfrak q}),
+\]
+gives
+\begin{equation}
+\begin{split}
+\dim((A[T])_{\mathfrak n})
+ &\geq
+ \operatorname{ht}\bigl(\mathfrak p(A[T])_{\mathfrak n}\bigr)
+   +\dim(B_{\mathfrak q}) \\
+ &=1+\dim(B_{\mathfrak q}).
+\end{split}
+\tag{5.5.7.2}\label{IV.5.5.7.2}
+\end{equation}
+Indeed, $\operatorname{ht}\bigl(\mathfrak p(A[T])_{\mathfrak n}\bigr)
+=\operatorname{ht}(\mathfrak p)=1$
+by the bijection between prime ideals of $A[T]$ contained in
+$\mathfrak n$ and prime ideals of $(A[T])_{\mathfrak n}$.
+Finally, \eqref{IV.5.5.6.1} gives
+\begin{equation}
+\dim((A[T])_{\mathfrak n})
+ =\dim(A)+1\setmin\operatorname{tr.deg}_k k',
+\tag{5.5.7.3}\label{IV.5.5.7.3}
+\end{equation}
+because $B_{\mathfrak q}$ and $(A[T])_{\mathfrak n}$ have the same
+residue field.
+Here $\operatorname{tr.deg}_A B=0$, and
+\eqref{IV.5.5.7.1} follows.
+
+\item
+If $(A[T])_{\mathfrak n}$ is catenary, the two sides of
+\eqref{IV.5.5.7.2} are equal \sref[0]{0.16.1.4}; hence the two sides
+of \eqref{IV.5.5.7.1} are equal as well.
+\end{enumerate}
+\end{proof}
+
+\begin{theorem}[5.5.8][dimension formula]
+\phantomsection
+\label{IV.5.5.8}
+Let $A$ be a Noetherian local domain, let $B$ be a domain containing
+$A$ and finitely generated as an $A$-algebra, and let $\mathfrak q$
+be a prime ideal of $B$ such that
+$\mathfrak q\cap A$ is the maximal ideal $\mathfrak m$ of $A$.
+Let $k$ and $k'$ be the residue fields of $A$ and
+$B_{\mathfrak q}$, respectively.
+Then
+\begin{equation}
+\dim(A)+\operatorname{tr.deg}_A B
+ \geq\dim(B_{\mathfrak q})+\operatorname{tr.deg}_k k'.
+\tag{5.5.8.1}\label{IV.5.5.8.1}
+\end{equation}
+Moreover, the two sides are equal if, for every finitely generated
+$A$-subalgebra $A'$ of $B[T]$ and every maximal ideal
+$\mathfrak m'$ of $A'$ such that
+$\mathfrak m'\cap A=\mathfrak m$, the local ring
+$A'_{\mathfrak m'}$ is catenary.
+\end{theorem}
+
+\begin{proof}
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 96 -----
+\subsection{Dimension formula and universally catenary rings}
+\phantomsection
+\label{subsection:IV.5.6}
+\label{IV.5.6}
+----- French corrections on page IV-2 95 -----
+[id 13926]
+OLD: est un morphisme de type fini.
+NEW: est un morphisme \emph{de type fini}.
+FRENCH CONTEXT (corrected): athcal O_y}\boldsymbol{k}(y)
+=\mathcal O_x/\mathfrak m_y\mathcal O_x$ est l'anneau local de $x$ dans le
+préschéma $f^{-1}(y)$, et est donc de dimension $0$ par hypothèse.
+
+Nous allons obtenir une formule plus précise que (5.5.2.1) lorsque l'on
+suppose que $f$ est un morphisme \emph{de type fini}.
+
+\begin{proposition}[5.5.3]
+\label{IV.2.s5.5.3-fr}
+Soient $A$ un anneau noethérien, $T$ une indéterminée, $\mathfrak p$ un idéal
+premier de $A$; alors $\mathfrak p'=\mathfrak pA[T]$ est premier dans
+$B=A[T]$ et $\mathfrak p'\cap A=\mathfrak p$. Il existe une 
+
+[id 13928]
+OLD: de l'anneau intègre
+$A$;
+NEW: de l'anneau \emph{intègre}
+$A$;
+FRENCH CONTEXT (corrected): /\mathfrak pA[T]=(A/\mathfrak p)[T]$, au cas $\mathfrak p=0$; elles
+résultent alors du fait que les idéaux premiers de $B=A[T]$ dont
+l'intersection avec $A$ se réduit à $0$ sont exactement ceux qui ne
+rencontrent pas la partie multiplicative $S=A\setmin\{0\}$ de l'anneau \emph{intègre}
+$A$; or on sait qu'il y a une bijection croissante de l'ensemble de ces
+idéaux sur l'ensemble des idéaux premiers de $S^{-1}A[T]=K[T]$, où $K$ est
+le corps des fractions de $A$ (Bourbaki, \emph{Alg. comm.}, chap. II,
+\S~2, n\textsuperscript{o}~5, prop.~11). En out
+
+[id 13931]
+OLD: locaux non noethériens
+NEW: locaux \emph{non noethériens}
+FRENCH CONTEXT (corrected): .5-5-4}{IV.2.s5.5.4-fr}
+Pour tout anneau noethérien $A$, on a
+\begin{equation}
+\dim(A[T_1,\ldots,T_r])=\dim(A)+r
+\tag{5.5.4.1}\label{IV.2.s5.5.4.1-fr}
+\end{equation}
+($T_i$ indéterminées).
+\end{corollary}
+
+On notera par contre qu'il y a des exemples d'anneaux locaux \emph{non noethériens}
+$A$ tels que $\dim(A)=1$ et $\dim(A[T])=3$ [30].
+
+\begin{corollary}[5.5.5]
+\label{IV.2.s5.5.5-fr}
+Pour tout préschéma localement noethérien $X$, la dimension de
+$X[T_1,\ldots,T_r]=X\otimes_{\mathbf Z}\mathbf Z[T_1,\ldots,T_r]$
+($T_i$ indéterminées) est $\dim(
+
+[id 13934]
+OLD: \operatorname{deg.tr.}_k
+NEW: \operatorname{deg.tr}_k
+FRENCH CONTEXT (corrected): )}, soit $\mathfrak q$ un idéal premier de
+$B=A[T]$ tel que $\mathfrak q\cap A=\mathfrak p$; si $k$ et $k'$ sont les
+corps résiduels de $A_{\mathfrak p}$ et $B_{\mathfrak q}$ respectivement,
+on a
+\begin{equation}
+\dim(A_{\mathfrak p})+1
+=\dim(B_{\mathfrak q})+\operatorname{deg.tr}_k k'
+\tag{5.5.6.1}\label{IV.2.s5.5.6.1-fr}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+\oldpage[IV-2]{96}
+
+Si $\mathfrak q=\mathfrak pB$, on a, d'après (5.5.3.1),
+$\dim(B_{\mathfrak q})=\dim(A_{\mathfrak p})$, et dans ce cas $k'=k(T)$,
+donc la formule (5.5.6.
+
+=================== PAGE IV-2 96 ===================
+----- (English page IV-2 95: shown above in this file) -----
+----- (English page IV-2 96: shown above in this file) -----
+----- English, components/05_section55_dimension_formula_finite_type.tex, page IV-2 97 -----
+\oldpage[IV-2]{97}
+
+Write $B=A[x_1,\ldots,x_n]$
+and argue by induction on $n$.
+Put
+\[
+C=A[x_1,\ldots,x_{n-1}],
+\qquad
+\mathfrak r=\mathfrak q\cap C.
+\]
+The ring $C_{\mathfrak r}$ is a Noetherian local domain.
+Let
+\[
+S=C\setmin\mathfrak r,\qquad
+B'=S^{-1}B,\qquad
+\mathfrak q'=S^{-1}\mathfrak q.
+\]
+Then
+\[
+B_{\mathfrak q}=B'_{\mathfrak q'},
+\qquad
+B'=C_{\mathfrak r}[x_n],
+\qquad
+\mathfrak q'\cap C_{\mathfrak r}
+  =\mathfrak rC_{\mathfrak r}.
+\]
+Moreover, the fraction fields of $B'$ and $C_{\mathfrak r}$ are
+those of $B$ and $C$, respectively.
+If $k_1$ is the residue field of $C_{\mathfrak r}$, then
+\eqref{IV.5.5.7.1} gives
+\begin{equation}
+\dim(C_{\mathfrak r})+\operatorname{tr.deg}_C B
+ \geq\dim(B_{\mathfrak q})+\operatorname{tr.deg}_{k_1}k'.
+\tag{5.5.8.2}\label{IV.5.5.8.2}
+\end{equation}
+The induction hypothesis gives
+\begin{equation}
+\dim(A)+\operatorname{tr.deg}_A C
+ \geq\dim(C_{\mathfrak r})+\operatorname{tr.deg}_k k_1.
+\tag{5.5.8.3}\label{IV.5.5.8.3}
+\end{equation}
+Adding \eqref{IV.5.5.8.2} and \eqref{IV.5.5.8.3} term by term yields
+\eqref{IV.5.5.8.1}.
+
+For the second assertion, first note that every finitely generated
+$A$-subalgebra of $C[T]$ is also a finitely generated
+$A$-subalgebra of $B[T]$.
+By induction on $n$, we may therefore suppose that the two sides of
+\eqref{IV.5.5.8.3} are equal.
+
+By \sref{IV.5.5.7}, to prove equality in
+\eqref{IV.5.5.8.2}, it is enough to show that whenever
+$\mathfrak n$ is a maximal ideal of $C_{\mathfrak r}[T]$ satisfying $\mathfrak n\cap C_{\mathfrak r}
+=\mathfrak rC_{\mathfrak r}$,
+the ring $(C_{\mathfrak r}[T])_{\mathfrak n}$ is catenary.
+We have $C_{\mathfrak r}[T]=S^{-1}C[T]$.
+Thus $\mathfrak n=S^{-1}\mathfrak n'$ for a prime ideal
+$\mathfrak n'$ of $C[T]$ such that
+$\mathfrak n'\cap C=\mathfrak r$, and $(C_{\mathfrak r}[T])_{\mathfrak n}
+=(C[T])_{\mathfrak n'}$.
+Choose a maximal ideal $\mathfrak m'$ of $C[T]$ containing
+$\mathfrak n'$.
+Then $\mathfrak m'\cap A=\mathfrak m$, and
+$(C[T])_{\mathfrak m'}$ is catenary by hypothesis.
+Since $(C[T])_{\mathfrak n'}$ is a localization of this ring, it too
+is catenary \sref[0]{0.16.1.4}.
+\end{proof}
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 97 -----
+\oldpage[IV-2]{97}
+
+\begin{proposition}[5.6.1]
+\phantomsection
+\label{IV.5.6.1}
+Let $A$ be a Noetherian ring.  The following properties are
+equivalent:
+\begin{enumerate}[{\rm(a)}]
+\item
+\phantomsection
+\label{IV.5.6.1.a}
+Every polynomial ring $A[T_1,\ldots,T_n]$ is catenary.
+
+\item
+\phantomsection
+\label{IV.5.6.1.b}
+Every $A$-algebra of finite type is catenary.
+
+\item
+\phantomsection
+\label{IV.5.6.1.c}
+The ring $A$ is catenary, and the following dimension formula holds.
+Let $B'$ be any integral local $A$-algebra essentially of finite type
+\sref{IV.1.3.8}; let $\mathfrak q$ be its maximal ideal and
+$\mathfrak p$ the inverse image of $\mathfrak q$ in $A$; let $A'$
+be the image of $A_{\mathfrak p}$ in $B'$; and let $k$ and $k'$ be
+the residue fields of $A'$ and $B'$, respectively.  Then
+\begin{equation}
+\dim(A')+\operatorname{tr.deg}_{A'}B'
+ =\dim(B')+\operatorname{tr.deg}_k k'.
+\tag{5.6.1.1}\label{IV.5.6.1.1}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Suppose first that condition
+{\hyperref[IV.5.6.1.b]{\textup{(b)}}} holds.  Then $B'$ is a local
+$A'$-algebra essentially of finite type \sref{IV.1.3.10}; hence $B'=B''_{\mathfrak q''}$,
+where $B''$ is a finitely generated $A'$-subalgebra of $B'$ and
+$\mathfrak q''$ is a prime ideal of $B''$ lying over the maximal
+ideal of $A'$.  Moreover, $B'$ and $B''$ have the same fraction
+field, so
+\[
+\operatorname{tr.deg}_{A'}B'
+ =\operatorname{tr.deg}_{A'}B''.
+\]
+To prove \eqref{IV.5.6.1.1}, it is enough to show that every
+finitely generated $A'$-subalgebra $A_1$ of $B'[T]$ is catenary.
+Indeed, the two sides of \eqref{IV.5.5.8.1}, applied to $A'$, $B''$,
+and $\mathfrak q''$, are then equal.  But
+Condition {\hyperref[IV.5.6.1.b]{\textup{(b)}}} implies that every
+$A$-algebra essentially of
+finite type is catenary \sref[0]{0.16.1.4}, and $A_1$ is such an
+$A$-algebra \sref{IV.1.3.9}.  Thus (b) implies (c).
+
+It is immediate that (b) implies (a).  Conversely, (a) implies (b),
+because every $A$-algebra of finite type is a quotient of a
+polynomial algebra \sref[0]{0.16.1.4}.
+
+It remains to prove that (c) implies (b).  Since every quotient by a
+prime ideal of an $A$-algebra of finite type is an integral
+$A$-algebra of finite type, it is enough to prove the following.
+Let $B$ be an integral $A$-algebra of finite type, and let
+$\mathfrak q'\subset\mathfrak q$ be prime ideals of $B$.  Then
+\begin{equation}
+\dim(B_{\mathfrak q}/\mathfrak q'B_{\mathfrak q})
+ +\dim(B_{\mathfrak q'})
+ =\dim(B_{\mathfrak q}).
+\tag{5.6.1.2}\label{IV.5.6.1.2}
+\end{equation}
+By \sref[0]{0.16.1.4.2}, this is precisely the required catenarity
+condition.
+----- French corrections on page IV-2 96 -----
+[id 13937]
+OLD: \item[(ii)] Supposons
+NEW: \item[\textup{(ii)}] Supposons
+FRENCH CONTEXT (corrected): hfrak q})+\operatorname{deg.tr}_k k'
+\tag{5.5.7.1}\label{IV.2.s5.5.7.1-fr}
+\end{equation}
+en désignant par $k'$ le corps résiduel de $B_{\mathfrak q}$ et par
+$\operatorname{deg.tr}_A B$ le degré de transcendance du corps des
+fractions de $B$ sur celui de $A$.
+\item[\textup{(ii)}] Supposons que pour tout idéal maximal $\mathfrak n$ de $A[T]$
+tel que $\mathfrak n\cap A=\mathfrak m$, l'anneau $(A[T])_{\mathfrak n}$
+soit caténaire; alors les deux membres de \textup{(5.5.7.1)} sont égaux.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\begin{enumerate}
+
+
+[id 13938]
+OLD: on a
+\begin{equation}
+\dim(A)+\operatorname{deg.tr.}_A B
+NEW: on a
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A B
+FRENCH CONTEXT (corrected):  $\mathfrak m$ son idéal
+maximal, $k$ son corps résiduel.
+\begin{enumerate}
+\item[\textup{(i)}] Pour tout anneau intègre $B$ contenant $A$, tel que $B=A[x]$
+(pour un $x\in B$) et tout idéal premier $\mathfrak q$ de $B$ tel que
+$\mathfrak q\cap A=\mathfrak m$, on a
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A B
+\geq\dim(B_{\mathfrak q})+\operatorname{deg.tr}_k k'
+\tag{5.5.7.1}\label{IV.2.s5.5.7.1-fr}
+\end{equation}
+en désignant par $k'$ le corps résiduel de $B_{\mathfrak q}$ et par
+$\operatorname{deg.tr}_A B$ le degré de transcendance du corps des
+fractions de $B$ s
+
+[id 13947]
+OLD: l'inégalité
+\begin{equation}
+\dim(A)+\operatorname{deg.tr.}_A B
+NEW: l'inégalité
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A B
+FRENCH CONTEXT (corrected):  intègre contenant
+$A$ et qui est une $A$-algèbre de type fini, $\mathfrak q$ un idéal premier
+de $B$ tel que $\mathfrak q\cap A$ soit l'idéal maximal $\mathfrak m$ de
+$A$, $k$ et $k'$ les corps résiduels de $A$ et $B_{\mathfrak q}$
+respectivement. On a alors l'inégalité
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A B
+\geq\dim(B_{\mathfrak q})+\operatorname{deg.tr}_k k'.
+\tag{5.5.8.1}\label{IV.2.s5.5.8.1-fr}
+\end{equation}
+
+En outre les deux membres sont égaux si, pour toute sous-$A$-algèbre $A'$ de
+type fini de $B[T]$ et tout idéal maximal $\mathfrak m'$ de $A'$ tel que
+$
+
+[id 13936]
+OLD: \item[(i)] Pour tout
+NEW: \item[\textup{(i)}] Pour tout
+FRENCH CONTEXT (corrected): $k'$ est une
+extension algébrique de $k$, donc on a encore la formule (5.5.6.1).
+\end{proof}
+
+\begin{lemma}[5.5.7]
+\label{IV.2.s5.5.7-fr}
+Soient $A$ un anneau local intègre noethérien, $\mathfrak m$ son idéal
+maximal, $k$ son corps résiduel.
+\begin{enumerate}
+\item[\textup{(i)}] Pour tout anneau intègre $B$ contenant $A$, tel que $B=A[x]$
+(pour un $x\in B$) et tout idéal premier $\mathfrak q$ de $B$ tel que
+$\mathfrak q\cap A=\mathfrak m$, on a
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A B
+\geq\dim(B_{\mathfrak q})+\operatorname{deg.tr}_k
+
+=================== PAGE IV-2 97 ===================
+----- (English page IV-2 96: shown above in this file) -----
+----- (English page IV-2 97: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 98 -----
+\oldpage[IV-2]{98}
+
+Let $\mathfrak p$ and $\mathfrak p'$ be the inverse images in $A$ of
+$\mathfrak q$ and $\mathfrak q'$, respectively, and let
+$\mathfrak n$ be the kernel of $A_{\mathfrak p}\longrightarrow B_{\mathfrak q}$.
+The image of $A_{\mathfrak p}$ in $B_{\mathfrak q}$ is isomorphic to
+$A_{\mathfrak p}/\mathfrak n$.  Applying
+\eqref{IV.5.6.1.1} to this image and to $B_{\mathfrak q}$ gives
+\begin{equation}
+\begin{split}
+\dim(A_{\mathfrak p}/\mathfrak n)
+ &+\operatorname{tr.deg}_{A_{\mathfrak p}/\mathfrak n}
+       B_{\mathfrak q}\\
+ &=\dim(B_{\mathfrak q})
+   +\operatorname{tr.deg}_{\kres(\mathfrak p)}
+       \kres(\mathfrak q).
+\end{split}
+\tag{5.6.1.3}\label{IV.5.6.1.3}
+\end{equation}
+
+The kernel of
+$A_{\mathfrak p'}\to B_{\mathfrak q'}$ is
+$\mathfrak nA_{\mathfrak p'}$.  Applying
+\eqref{IV.5.6.1.1} again gives
+\begin{equation}
+\begin{split}
+\dim(A_{\mathfrak p'}/\mathfrak nA_{\mathfrak p'})
+ &+\operatorname{tr.deg}_{
+      A_{\mathfrak p'}/\mathfrak nA_{\mathfrak p'}}
+      B_{\mathfrak q'}\\
+ &=\dim(B_{\mathfrak q'})
+   +\operatorname{tr.deg}_{\kres(\mathfrak p')}
+      \kres(\mathfrak q').
+\end{split}
+\tag{5.6.1.4}\label{IV.5.6.1.4}
+\end{equation}
+
+Finally, $B/\mathfrak q'$ is an integral $A$-algebra of finite type.
+The inverse image of $\mathfrak q/\mathfrak q'$ in $A$ is
+$\mathfrak p$, and the kernel of $A_{\mathfrak p}\longrightarrow
+B_{\mathfrak q}/\mathfrak q'B_{\mathfrak q}$
+is $\mathfrak p'A_{\mathfrak p}$.  Hence
+\begin{equation}
+\begin{split}
+\dim(A_{\mathfrak p}/\mathfrak p'A_{\mathfrak p})
+ &+\operatorname{tr.deg}_{\kres(\mathfrak p')}
+   (B_{\mathfrak q}/\mathfrak q'B_{\mathfrak q})\\
+ &=\dim(B_{\mathfrak q}/\mathfrak q'B_{\mathfrak q})
+   +\operatorname{tr.deg}_{\kres(\mathfrak p)}
+      \kres(\mathfrak q).
+\end{split}
+\tag{5.6.1.5}\label{IV.5.6.1.5}
+\end{equation}
+
+Add \eqref{IV.5.6.1.4} and \eqref{IV.5.6.1.5} term by term.
+The fields $\kres(\mathfrak p')$ and
+$\kres(\mathfrak q')$ are the fraction fields of
+$A_{\mathfrak p}/\mathfrak p'A_{\mathfrak p}$ and
+$B_{\mathfrak q}/\mathfrak q'B_{\mathfrak q}$, respectively.
+Furthermore,
+$A_{\mathfrak p'}/\mathfrak nA_{\mathfrak p'}$ and
+$A_{\mathfrak p}/\mathfrak n$ have the same fraction field, as do
+$B_{\mathfrak q'}$ and $B_{\mathfrak q}$.  Since $A$ is catenary,
+\sref[0]{0.16.1.4.2} gives
+\[
+\dim(A_{\mathfrak p}/\mathfrak p'A_{\mathfrak p})
+ +\dim(A_{\mathfrak p'}/\mathfrak nA_{\mathfrak p'})
+ =\dim(A_{\mathfrak p}/\mathfrak n)
+\]
+Taking these observations and \eqref{IV.5.6.1.3} into account yields
+\eqref{IV.5.6.1.2}.
+\end{proof}
+
+\begin{definition}[5.6.2]
+\phantomsection
+\label{IV.5.6.2}
+A Noetherian ring is said to be \emph{universally catenary} if it
+satisfies the equivalent conditions of \sref{IV.5.6.1}.
+\end{definition}
+
+\begin{remarks}[5.6.3]
+\phantomsection
+\label{IV.5.6.3}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.6.3.i}
+If $A$ is universally catenary, then so is $S^{-1}A$ for every
+multiplicative subset $S$ of $A$.  This follows at once from
+{\hyperref[IV.5.6.1.a]{5.6.1\textup{(a)}}} and the fact that every ring
+of fractions of a
+catenary ring is catenary.
+
+Conversely, suppose that $A_{\mathfrak p}$ is universally catenary
+for every prime ideal $\mathfrak p$ of $A$.  Then $A$ is universally
+catenary.  Indeed, apply
+{\hyperref[IV.5.6.1.c]{5.6.1\textup{(c)}}}; if
+$S=A\setmin\mathfrak p$, then $S^{-1}B$ is an
+$A_{\mathfrak p}$-algebra of finite type and $B_{\mathfrak q}=(S^{-1}B)_{S^{-1}\mathfrak q}$.
+
+\item
+\phantomsection
+\label{IV.5.6.3.ii}
+A locally Noetherian prescheme $X$ is said to be
+\emph{universally catenary} if $\sh O_x$ is universally catenary for
+every $x\in X$.  By (i), a Noetherian ring $A$ is universally
+catenary if and only if $\Spec(A)$ is universally catenary.
+
+\item
+\phantomsection
+\label{IV.5.6.3.iii}
+The criterion {\hyperref[IV.5.6.1.c]{5.6.1\textup{(c)}}} involves only
+the images of $A$ in
+integral $A$-algebras of finite type, hence only integral quotient
+rings of $A$.
+----- French corrections on page IV-2 97 -----
+[id 13951]
+OLD: +\operatorname{deg.tr.}_C B
+NEW: +\operatorname{deg.tr}_C B
+FRENCH CONTEXT (corrected): rC_{\mathfrak r}$; en outre les
+corps des fractions
+\oldpage[IV-2]{97}
+de $B'$ et $C_{\mathfrak r}$ sont ceux de $B$ et $C$
+respectivement. Si $k_1$ est le corps résiduel de $C_{\mathfrak r}$, on a
+donc, d'après (5.5.7.1)
+\begin{equation}
+\dim(C_{\mathfrak r})+\operatorname{deg.tr}_C B
+\geq\dim(B_{\mathfrak q})+\operatorname{deg.tr}_{k_1}k'.
+\tag{5.5.8.2}\label{IV.2.s5.5.8.2-fr}
+\end{equation}
+
+D'autre part l'hypothèse de récurrence donne
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A C
+\geq\dim(C_{\mathfrak r})+\operatorname{deg.tr}_k k_
+
+[id 13954]
+OLD: +\operatorname{deg.tr.}_A C
+NEW: +\operatorname{deg.tr}_A C
+FRENCH CONTEXT (corrected): près (5.5.7.1)
+\begin{equation}
+\dim(C_{\mathfrak r})+\operatorname{deg.tr}_C B
+\geq\dim(B_{\mathfrak q})+\operatorname{deg.tr}_{k_1}k'.
+\tag{5.5.8.2}\label{IV.2.s5.5.8.2-fr}
+\end{equation}
+
+D'autre part l'hypothèse de récurrence donne
+\begin{equation}
+\dim(A)+\operatorname{deg.tr}_A C
+\geq\dim(C_{\mathfrak r})+\operatorname{deg.tr}_k k_1
+\tag{5.5.8.3}\label{IV.2.s5.5.8.3-fr}
+\end{equation}
+d'où (5.5.8.1) en ajoutant (5.5.8.2) et (5.5.8.3) membre à membre. Pour
+démontrer la seconde assertion, notons d'abord que toute sous-$A$-algèbre de
+typ
+
+[id 13958]
+OLD: \subsection{Formule des dimensions et anneaux universellement caténaires}
+NEW: \subsection{Formule des dimensions et anneaux universellement caténaires.}
+FRENCH CONTEXT (corrected):  maximal de $C[T]$ contenant $\mathfrak n'$,
+$(C[T])_{\mathfrak n'}$ est donc un anneau local de l'anneau
+$(C[T])_{\mathfrak m'}$, et comme par hypothèse ce dernier est caténaire, il
+en est de même de $(C[T])_{\mathfrak n'}$ (\textbf{0}, 16.1.4).
+\end{proof}
+
+\subsection{Formule des dimensions et anneaux universellement caténaires.}
+\label{IV.2.s5.6-fr}
+
+\begin{proposition}[5.6.1]
+\EGAReaderTarget{ega4.c04.prop.5-6-1}{IV.2.s5.6.1-fr}
+Soit $A$ un anneau noethérien. Les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] Tout anneau de polynômes $A[T_1,\ldots,T_n]$
+
+[id 13959]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): {Formule des dimensions et anneaux universellement caténaires.}
+\label{IV.2.s5.6-fr}
+
+\begin{proposition}[5.6.1]
+\EGAReaderTarget{ega4.c04.prop.5-6-1}{IV.2.s5.6.1-fr}
+Soit $A$ un anneau noethérien. Les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] Tout anneau de polynômes $A[T_1,\ldots,T_n]$ est caténaire.
+\item[\textup{b)}] Toute algèbre de type fini sur $A$ est caténaire.
+\item[\textup{c)}] $A$ est caténaire, et pour toute $A$-algèbre intègre locale,
+essentiellement de type fini \textup{(1.3.8)} $B'$
+
+[id 13960]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): 6-fr}
+
+\begin{proposition}[5.6.1]
+\EGAReaderTarget{ega4.c04.prop.5-6-1}{IV.2.s5.6.1-fr}
+Soit $A$ un anneau noethérien. Les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] Tout anneau de polynômes $A[T_1,\ldots,T_n]$ est caténaire.
+\item[\textup{b)}] Toute algèbre de type fini sur $A$ est caténaire.
+\item[\textup{c)}] $A$ est caténaire, et pour toute $A$-algèbre intègre locale,
+essentiellement de type fini \textup{(1.3.8)} $B'$, on a, en désignant par
+$\mathfrak p$ l'image réciproque dans $A$ de l'idéal m
+
+[id 13961]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): 1}{IV.2.s5.6.1-fr}
+Soit $A$ un anneau noethérien. Les propriétés suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] Tout anneau de polynômes $A[T_1,\ldots,T_n]$ est caténaire.
+\item[\textup{b)}] Toute algèbre de type fini sur $A$ est caténaire.
+\item[\textup{c)}] $A$ est caténaire, et pour toute $A$-algèbre intègre locale,
+essentiellement de type fini \textup{(1.3.8)} $B'$, on a, en désignant par
+$\mathfrak p$ l'image réciproque dans $A$ de l'idéal maximal $\mathfrak q$
+de $B'$, par $A'$ l'image de $A_{\mathfrak p}$ d
+
+[id 13963]
+OLD: \dim(A')+\operatorname{deg.tr.}_{A'}(B')
+NEW: \dim(A')+\operatorname{deg.tr}_{A'}(B')
+FRENCH CONTEXT (corrected): tup{(1.3.8)} $B'$, on a, en désignant par
+$\mathfrak p$ l'image réciproque dans $A$ de l'idéal maximal $\mathfrak q$
+de $B'$, par $A'$ l'image de $A_{\mathfrak p}$ dans $B'$, par $k$ et $k'$
+les corps résiduels de $A'$ et $B'$ respectivement,
+\begin{equation}
+\dim(A')+\operatorname{deg.tr}_{A'}(B')
+=\dim(B')+\operatorname{deg.tr}_k k'.
+\tag{5.6.1.1}\label{IV.2.s5.6.1.1-fr}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+Le fait que \emph{b)} entraîne \emph{c)} résulte de (5.5.8); en effet, $B'$ est une
+$A'$-algèbre locale essentiellement de type fini 
+
+[id 13964]
+OLD: =\dim(B')+\operatorname{deg.tr.}_k k'.
+NEW: =\dim(B')+\operatorname{deg.tr}_k k'.
+FRENCH CONTEXT (corrected): r
+$\mathfrak p$ l'image réciproque dans $A$ de l'idéal maximal $\mathfrak q$
+de $B'$, par $A'$ l'image de $A_{\mathfrak p}$ dans $B'$, par $k$ et $k'$
+les corps résiduels de $A'$ et $B'$ respectivement,
+\begin{equation}
+\dim(A')+\operatorname{deg.tr}_{A'}(B')
+=\dim(B')+\operatorname{deg.tr}_k k'.
+\tag{5.6.1.1}\label{IV.2.s5.6.1.1-fr}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+Le fait que \emph{b)} entraîne \emph{c)} résulte de (5.5.8); en effet, $B'$ est une
+$A'$-algèbre locale essentiellement de type fini (1.3.10), donc de la forme
+$B''_{\math
+
+[id 13965]
+OLD: Le fait que b)
+NEW: Le fait que \emph{b)}
+FRENCH CONTEXT (corrected): ns $B'$, par $k$ et $k'$
+les corps résiduels de $A'$ et $B'$ respectivement,
+\begin{equation}
+\dim(A')+\operatorname{deg.tr}_{A'}(B')
+=\dim(B')+\operatorname{deg.tr}_k k'.
+\tag{5.6.1.1}\label{IV.2.s5.6.1.1-fr}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+Le fait que \emph{b)} entraîne \emph{c)} résulte de (5.5.8); en effet, $B'$ est une
+$A'$-algèbre locale essentiellement de type fini (1.3.10), donc de la forme
+$B''_{\mathfrak q''}$, où $B''$ est une sous-$A'$-algèbre de type fini de
+$B'$, $\mathfrak q''$ un idéal premier de $B''$
+
+[id 13966]
+OLD: c) résulte de (5.5.8)
+NEW: \emph{c)} résulte de (5.5.8)
+FRENCH CONTEXT (corrected): rps résiduels de $A'$ et $B'$ respectivement,
+\begin{equation}
+\dim(A')+\operatorname{deg.tr}_{A'}(B')
+=\dim(B')+\operatorname{deg.tr}_k k'.
+\tag{5.6.1.1}\label{IV.2.s5.6.1.1-fr}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+Le fait que \emph{b)} entraîne \emph{c)} résulte de (5.5.8); en effet, $B'$ est une
+$A'$-algèbre locale essentiellement de type fini (1.3.10), donc de la forme
+$B''_{\mathfrak q''}$, où $B''$ est une sous-$A'$-algèbre de type fini de
+$B'$, $\mathfrak q''$ un idéal premier de $B''$ au-dessus de l'idéal maximal
+$\mathfr
+
+[id 13967]
+OLD: $\operatorname{deg.tr.}_{A'}(B')
+NEW: $\operatorname{deg.tr}_{A'}(B')
+FRENCH CONTEXT (corrected): c de la forme
+$B''_{\mathfrak q''}$, où $B''$ est une sous-$A'$-algèbre de type fini de
+$B'$, $\mathfrak q''$ un idéal premier de $B''$ au-dessus de l'idéal maximal
+$\mathfrak p'$ de $A'$; en outre les corps des fractions de $B'$ et $B''$
+sont les mêmes, donc
+$\operatorname{deg.tr}_{A'}(B')=\operatorname{deg.tr}_{A'}(B'')$.
+Pour démontrer (5.6.1.1), il suffit de montrer que (sous l'hypothèse \emph{b)}) toute
+sous-$A'$-algèbre $A_1$ de type fini de $B'[T]$ est caténaire; en effet les
+deux membres de (5.5.8.1), où on remplace $A$, $B$ et $\mathfra
+
+[id 13968]
+OLD: \operatorname{deg.tr.}_{A'}(B'')
+NEW: \operatorname{deg.tr}_{A'}(B'')
+FRENCH CONTEXT (corrected): '}$, où $B''$ est une sous-$A'$-algèbre de type fini de
+$B'$, $\mathfrak q''$ un idéal premier de $B''$ au-dessus de l'idéal maximal
+$\mathfrak p'$ de $A'$; en outre les corps des fractions de $B'$ et $B''$
+sont les mêmes, donc
+$\operatorname{deg.tr}_{A'}(B')=\operatorname{deg.tr}_{A'}(B'')$.
+Pour démontrer (5.6.1.1), il suffit de montrer que (sous l'hypothèse \emph{b)}) toute
+sous-$A'$-algèbre $A_1$ de type fini de $B'[T]$ est caténaire; en effet les
+deux membres de (5.5.8.1), où on remplace $A$, $B$ et $\mathfrak q$ par
+$A'$, $B''$ et $\mathfr
+
+[id 13969]
+OLD: (sous l'hypothèse b))
+NEW: (sous l'hypothèse \emph{b)})
+FRENCH CONTEXT (corrected): l premier de $B''$ au-dessus de l'idéal maximal
+$\mathfrak p'$ de $A'$; en outre les corps des fractions de $B'$ et $B''$
+sont les mêmes, donc
+$\operatorname{deg.tr}_{A'}(B')=\operatorname{deg.tr}_{A'}(B'')$.
+Pour démontrer (5.6.1.1), il suffit de montrer que (sous l'hypothèse \emph{b)}) toute
+sous-$A'$-algèbre $A_1$ de type fini de $B'[T]$ est caténaire; en effet les
+deux membres de (5.5.8.1), où on remplace $A$, $B$ et $\mathfrak q$ par
+$A'$, $B''$ et $\mathfrak q''$, seront alors égaux, d'où l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} en
+
+[id 13970]
+OLD: Or l'hypothèse b)
+NEW: Or l'hypothèse \emph{b)}
+FRENCH CONTEXT (corrected): sous l'hypothèse \emph{b)}) toute
+sous-$A'$-algèbre $A_1$ de type fini de $B'[T]$ est caténaire; en effet les
+deux membres de (5.5.8.1), où on remplace $A$, $B$ et $\mathfrak q$ par
+$A'$, $B''$ et $\mathfrak q''$, seront alors égaux, d'où l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} entraîne que toute $A$-algèbre essentiellement de type fini
+est caténaire (\textbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type 
+
+[id 13972]
+OLD: trivial que b)
+NEW: trivial que \emph{b)}
+FRENCH CONTEXT (corrected): k q$ par
+$A'$, $B''$ et $\mathfrak q''$, seront alors égaux, d'où l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} entraîne que toute $A$-algèbre essentiellement de type fini
+est caténaire (\textbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[
+
+[id 13973]
+OLD: entraîne a);
+NEW: entraîne \emph{a)};
+FRENCH CONTEXT (corrected): t $\mathfrak q''$, seront alors égaux, d'où l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} entraîne que toute $A$-algèbre essentiellement de type fini
+est caténaire (\textbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[IV-2]{98}
+d'une $A$-
+
+[id 13974]
+OLD: inversement, a)
+NEW: inversement, \emph{a)}
+FRENCH CONTEXT (corrected): eront alors égaux, d'où l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} entraîne que toute $A$-algèbre essentiellement de type fini
+est caténaire (\textbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[IV-2]{98}
+d'une $A$-algèbre de type fini es
+
+[id 13975]
+OLD: entraîne b), toute
+NEW: entraîne \emph{b)}, toute
+FRENCH CONTEXT (corrected):  l'égalité (5.6.1.1).
+Or l'hypothèse \emph{b)} entraîne que toute $A$-algèbre essentiellement de type fini
+est caténaire (\textbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[IV-2]{98}
+d'une $A$-algèbre de type fini est une $A$-algèbre intègre 
+
+[id 13977]
+OLD: prouver que c)
+NEW: prouver que \emph{c)}
+FRENCH CONTEXT (corrected): extbf{0}, 16.1.4), et $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[IV-2]{98}
+d'une $A$-algèbre de type fini est une $A$-algèbre intègre de type fini, il
+s'agit de voir que, si $B$ est une $A$-algèbre intègre de type fini,
+$\mathfrak q$ et $\mathfrak q'$ de
+
+[id 13978]
+OLD: entraîne b). Comme
+NEW: entraîne \emph{b)}. Comme
+FRENCH CONTEXT (corrected): $A_1$ est une telle $A$-algèbre (1.3.9).
+
+Il est trivial que \emph{b)} entraîne \emph{a)}; inversement, \emph{a)} entraîne \emph{b)}, toute
+$A$-algèbre de type fini étant quotient d'une algèbre de polynômes
+(\textbf{0}, 16.1.4).
+
+Reste à prouver que \emph{c)} entraîne \emph{b)}. Comme tout quotient par un idéal premier
+\oldpage[IV-2]{98}
+d'une $A$-algèbre de type fini est une $A$-algèbre intègre de type fini, il
+s'agit de voir que, si $B$ est une $A$-algèbre intègre de type fini,
+$\mathfrak q$ et $\mathfrak q'$ deux idéaux premiers de $B$ 
+
+=================== PAGE IV-2 98 ===================
+----- (English page IV-2 97: shown above in this file) -----
+----- (English page IV-2 98: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 99 -----
+\oldpage[IV-2]{99}
+
+It follows that if
+$\mathfrak p_i$ $(1\leq i\leq n)$ are the minimal prime ideals of
+$A$, then $A$ is universally catenary if and only if every
+$A/\mathfrak p_i$ is universally catenary.  Likewise, a locally
+Noetherian prescheme $X$ is universally catenary if and only if
+$X_{\mathrm{red}}$ is universally catenary.
+
+\item
+\phantomsection
+\label{IV.5.6.3.iv}
+The criterion {\hyperref[IV.5.6.1.b]{5.6.1\textup{(b)}}} and (i) show
+that every $A$-algebra
+essentially of finite type over a universally catenary ring $A$ is
+universally catenary \sref{IV.1.3.8}.
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[5.6.4]
+\phantomsection
+\label{IV.5.6.4}
+Every quotient ring of a regular ring is universally catenary.
+\end{proposition}
+
+\begin{proof}
+By {\hyperref[IV.5.6.3.iv]{5.6.3\textup{(iv)}}}, it is enough to show
+that every regular ring
+$A$ is universally catenary.  Each polynomial ring
+$A[T_1,\ldots,T_n]$ is regular \sref[0]{0.17.3.7}, hence catenary
+\sref[0]{0.16.5.12}, and the assertion follows from
+{\hyperref[IV.5.6.1.a]{5.6.1\textup{(a)}}}.
+\end{proof}
+
+In particular, Cohen's theorem \sref[0]{0.19.8.8} implies that every
+complete Noetherian local ring is universally catenary.  Likewise,
+every algebra of finite type over a field is universally catenary,
+and every prescheme locally of finite type over a field is
+universally catenary.
+
+We shall see in \sref{IV.6.3.7} that ``regular ring'' may be replaced
+by ``Cohen--Macaulay ring'' in \sref{IV.5.6.4}.
+
+\begin{proposition}[5.6.5]
+\phantomsection
+\label{IV.5.6.5}
+Let $Y$ be an irreducible locally Noetherian prescheme, let $X$ be
+an irreducible prescheme, and let $f:X\to Y$ be a dominant morphism
+locally of finite type.  Let $\xi$ and $\eta$ be the generic points
+of $X$ and $Y$, respectively, and put
+\[
+e=\dim(f^{-1}(\eta))
+  =\operatorname{tr.deg}_{\kres(\eta)}\kres(\xi),
+\]
+the dimension of the generic fibre
+\sref[0\textsubscript{\mdseries I}]{0.2.1.8}, \sref{IV.4.1.1}.
+For every $x\in X$, with $y=f(x)$, one has
+\begin{equation}
+e+\dim(\sh O_y)
+ \geq \operatorname{tr.deg}_{\kres(y)}\kres(x)
+       +\dim(\sh O_x)
+\tag{5.6.5.1}\label{IV.5.6.5.1}
+\end{equation}
+and
+\begin{equation}
+\dim(\sh O_x)
+ \leq \dim(\sh O_y)
+      +\dim(\sh O_x\otimes_{\sh O_y}\kres(y))
+      \setmin\delta(x),
+\tag{5.6.5.2}\label{IV.5.6.5.2}
+\end{equation}
+where $\delta(x)=\dim_x(f^{-1}(y))\setmin e$.
+If $Y$ is universally catenary, equality holds in
+\eqref{IV.5.6.5.1} and \eqref{IV.5.6.5.2}.  If, in addition, $x$ is
+closed in $f^{-1}(y)$, then
+\begin{equation}
+\dim(\sh O_x)=\dim(\sh O_y)+e.
+\tag{5.6.5.3}\label{IV.5.6.5.3}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+We may restrict to the case in which $X$ and $Y$ are affine, and
+hence $f$ is of finite type, and then replace both preschemes by
+their reductions \sref{IV.1.5.4}.  Thus $X$ and $Y$ may be assumed
+integral.
+
+Since $f$ is dominant, $\sh O_y$ identifies with a subring of
+$\sh O_x$, and their fraction fields are
+$\kres(\eta)$ and $\kres(\xi)$, respectively
+\sref[I]{I.8.2.7}.  Moreover, $\sh O_x$ is the localization at a
+prime ideal $\mathfrak q$ of an integral $\sh O_y$-algebra $B$ of
+finite type \sref[I]{I.3.6.5}.  Applying
+\eqref{IV.5.5.8.1} to $A=\sh O_y$, $B$, and $\mathfrak q$ gives
+\eqref{IV.5.6.5.1}.
+
+Furthermore, $\sh O_x\otimes_{\sh O_y}\kres(y)
+=\sh O_x/\mathfrak m_y\sh O_x$
+is the local ring of the fibre $f^{-1}(y)$ at $x$
+\sref[I]{I.3.6.1}.  Since $f^{-1}(y)$ is a prescheme of finite type over
+$\kres(y)$, it follows from \sref{IV.5.2.3} that
+\[
+\dim(\sh O_x\otimes_{\sh O_y}\kres(y))
+ =\dim_x(f^{-1}(y))
+  \setmin\operatorname{tr.deg}_{\kres(y)}\kres(x).
+\]
+Thus \eqref{IV.5.6.5.2} is simply another form of
+\eqref{IV.5.6.5.1}.
+----- French corrections on page IV-2 98 -----
+[id 13980]
+OLD: $B'=B_{\mathfrak q}$ s'écrit
+NEW: $B'=B_{\mathfrak q}$, s'écrit
+FRENCH CONTEXT (corrected):  q'$ respectivement dans $A$, $\mathfrak n$ le
+noyau de l'homomorphisme $A_{\mathfrak p}\to B_{\mathfrak q}$.
+
+L'image $A'$ de $A_{\mathfrak p}$ dans $B_{\mathfrak q}$ étant isomorphe à
+$A_{\mathfrak p}/\mathfrak n$, la formule (5.6.1.1) appliquée à $A'$ et à
+$B'=B_{\mathfrak q}$, s'écrit
+\begin{equation}
+\dim(A_{\mathfrak p}/\mathfrak n)
++\operatorname{deg.tr}_{A_{\mathfrak p}/\mathfrak n}(B_{\mathfrak q})
+=\dim(B_{\mathfrak q})
++\operatorname{deg.tr}_{\mathbf{k}(\mathfrak p)}\boldsymbol{k}(\mathfrak q).
+\tag{5.6.1.3}\label{IV.2.s5.6.1.3-fr}
+
+
+[id 13992]
+OLD: est \emph{universellement caténaire} s'il
+NEW: est universellement caténaire s'il
+FRENCH CONTEXT (corrected): (A_{\mathfrak p'}/\mathfrak nA_{\mathfrak p'})
+=\dim(A_{\mathfrak p}/\mathfrak n)
+\]
+
+Tenant compte de ces remarques et de (5.6.1.3), il vient la relation
+(5.6.1.2). C.Q.F.D.
+
+\begin{definition}[5.6.2]
+\label{IV.2.s5.6.2-fr}
+On dit qu'un anneau noethérien $A$ est universellement caténaire s'il
+vérifie les conditions équivalentes \textup{a), b), c)} de \textup{(5.6.1)}.
+\end{definition}
+
+\begin{remarks}[5.6.3]
+\label{IV.2.s5.6.3-fr}
+\begin{enumerate}
+\item[(i)] Si $A$ est universellement caténaire, il en est de même de
+$S^{-1}A$ pour toute partie mu
+
+[id 13993]
+OLD: équivalentes a), b), c)
+NEW: équivalentes \textup{a), b), c)}
+FRENCH CONTEXT (corrected): athfrak p}/\mathfrak n)
+\]
+
+Tenant compte de ces remarques et de (5.6.1.3), il vient la relation
+(5.6.1.2). C.Q.F.D.
+
+\begin{definition}[5.6.2]
+\label{IV.2.s5.6.2-fr}
+On dit qu'un anneau noethérien $A$ est universellement caténaire s'il
+vérifie les conditions équivalentes \textup{a), b), c)} de \textup{(5.6.1)}.
+\end{definition}
+
+\begin{remarks}[5.6.3]
+\label{IV.2.s5.6.3-fr}
+\begin{enumerate}
+\item[(i)] Si $A$ est universellement caténaire, il en est de même de
+$S^{-1}A$ pour toute partie multiplicative $S$ de $A$, comme il résulte
+aussitôt de (5
+
+[id 13995]
+OLD: aussitôt de (5.6.1, a))
+NEW: aussitôt de (5.6.1, \emph{a)})
+FRENCH CONTEXT (corrected): up{a), b), c)} de \textup{(5.6.1)}.
+\end{definition}
+
+\begin{remarks}[5.6.3]
+\label{IV.2.s5.6.3-fr}
+\begin{enumerate}
+\item[(i)] Si $A$ est universellement caténaire, il en est de même de
+$S^{-1}A$ pour toute partie multiplicative $S$ de $A$, comme il résulte
+aussitôt de (5.6.1, \emph{a)}) et du fait que tout anneau de fractions d'un anneau
+caténaire est caténaire. Inversement, si, pour tout idéal premier
+$\mathfrak p$ de $A$, l'anneau $A_{\mathfrak p}$ est universellement
+caténaire, alors $A$ est universellement caténaire: cela résulte de
+(5.6
+
+[id 13996]
+OLD: (5.6.1, c)), si l'on
+NEW: (5.6.1, \emph{c)}), si l'on
+FRENCH CONTEXT (corrected): a)}) et du fait que tout anneau de fractions d'un anneau
+caténaire est caténaire. Inversement, si, pour tout idéal premier
+$\mathfrak p$ de $A$, l'anneau $A_{\mathfrak p}$ est universellement
+caténaire, alors $A$ est universellement caténaire: cela résulte de
+(5.6.1, \emph{c)}), si l'on remarque qu'en posant $S=A\setmin\mathfrak p$, $S^{-1}B$
+est une $A_{\mathfrak p}$-algèbre de type fini, et
+$B_{\mathfrak q}=(S^{-1}B)_{S^{-1}\mathfrak q}$.
+\item[(ii)] On dit qu'un préschéma localement noethérien $X$ est
+\emph{universellement caténaire} si, 
+
+[id 13998]
+OLD: Le critère (5.6.1, c))
+NEW: Le critère (5.6.1, \emph{c)})
+FRENCH CONTEXT (corrected): rsellement caténaire} si, pour tout $x\in X$, l'anneau
+$\mathcal O_x$ est universellement caténaire. Il résulte de (i) que pour que
+$A$ soit un anneau universellement caténaire, il faut et il suffit que le
+schéma $\operatorname{Spec}(A)$ le soit.
+\item[(iii)] Le critère (5.6.1, \emph{c)}) ne fait intervenir que les images de $A$
+dans des $A$-algèbres intègres de type fini, donc des \emph{anneaux quotients
+intègres} de $A$. On en conclut que si
+\oldpage[IV-2]{99}
+$\mathfrak p_i$ ($1\leq i\leq n$) sont les idéaux premiers minimaux de $A$,
+il rev
+
+[id 13999]
+OLD: donc des anneaux quotients
+intègres de $A$
+NEW: donc des \emph{anneaux quotients
+intègres} de $A$
+FRENCH CONTEXT (corrected): i) que pour que
+$A$ soit un anneau universellement caténaire, il faut et il suffit que le
+schéma $\operatorname{Spec}(A)$ le soit.
+\item[(iii)] Le critère (5.6.1, \emph{c)}) ne fait intervenir que les images de $A$
+dans des $A$-algèbres intègres de type fini, donc des \emph{anneaux quotients
+intègres} de $A$. On en conclut que si
+\oldpage[IV-2]{99}
+$\mathfrak p_i$ ($1\leq i\leq n$) sont les idéaux premiers minimaux de $A$,
+il revient au même de dire que $A$ est universellement caténaire ou que
+chacun des $A/\mathfrak p_i$ l'est. Cela montre aussi qu'il revient au
+
+=================== PAGE IV-2 99 ===================
+----- (English page IV-2 98: shown above in this file) -----
+----- (English page IV-2 99: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 100 -----
+\oldpage[IV-2]{100}
+
+When $Y$ is universally catenary, equality in
+\eqref{IV.5.6.5.1} is exactly \eqref{IV.5.6.1.1}, applied to
+$A=\sh O_y$ and $B'=\sh O_x$.  Finally, if $x$ is closed in the
+fibre, then in general
+\[
+\operatorname{tr.deg}_{\kres(y)}\kres(x)
+ =\dim(\overline{\{x\}}\cap f^{-1}(y));
+\]
+this follows from \sref{IV.5.2.1}, applied to the reduced closed
+sub-prescheme of $f^{-1}(y)$ whose underlying space is the displayed
+subspace.  Equation \eqref{IV.5.6.5.3} follows.
+\end{proof}
+
+We shall prove in \sref{IV.13.1.1} that under the hypotheses of
+\sref{IV.5.6.5} one always has $\delta(x)\geq0$.  Thus in this case
+\eqref{IV.5.6.5.2} sharpens \eqref{IV.5.5.2.1}.
+
+\begin{corollary}[5.6.6]
+\phantomsection
+\label{IV.5.6.6}
+Under the general hypotheses of \sref{IV.5.6.5},
+\begin{equation}
+\dim(X)\leq\dim(Y)+e.
+\tag{5.6.6.1}\label{IV.5.6.6.1}
+\end{equation}
+If $Y$ is universally catenary, equality holds in
+\eqref{IV.5.6.6.1} if and only if
+\begin{equation}
+\dim(Y)=\sup_{y\in f(X)}\dim(\sh O_y).
+\tag{5.6.6.2}\label{IV.5.6.6.2}
+\end{equation}
+In particular, equality holds in \eqref{IV.5.6.6.1} when $Y$ is
+locally of finite type over a field.
+\end{corollary}
+
+\begin{proof}
+Apply \eqref{IV.5.6.5.1} at a closed point $x$ of $X$, and use
+\sref{IV.5.1.4.2} and \sref{IV.5.1.11}; this gives
+\eqref{IV.5.6.6.1}.  Conversely, every nonempty fibre $f^{-1}(y)$
+contains a point closed in that fibre \sref{IV.5.1.11}.  If $Y$ is
+universally catenary, \eqref{IV.5.6.5.3} holds at such a point.
+Taking suprema in \eqref{IV.5.6.5.3} as $x$ ranges over $X$, and
+observing that every point closed in $X$ is \emph{a fortiori} closed
+in $f^{-1}(f(x))$, yields the second assertion by
+\sref{IV.5.1.4.1} and \sref{IV.5.1.4.2}.
+
+For the last assertion, choose an affine open neighbourhood $U$ of
+the generic point of $X$ such that $f|_U$ is of finite type.  Then
+$f(U)$ is \emph{constructible} \sref{IV.1.8.5} and dense in $Y$, and
+therefore contains a nonempty open, hence dense, subset of $Y$
+\sref[0\textsubscript{\mdseries III}]{0.9.2.2}.  Since $Y$ is locally of finite type over a
+field, it is universally catenary \sref{IV.5.6.4}; moreover, the two
+sides of \eqref{IV.5.6.6.2} are equal by
+\sref{IV.5.2.2} and \sref{IV.4.1.1.3}.
+
+Condition \eqref{IV.5.6.6.2} is trivially satisfied when $f$ is
+surjective.
+\end{proof}
+
+\begin{corollary}[5.6.7]
+\phantomsection
+\label{IV.5.6.7}
+Let $Y$ be a locally Noetherian prescheme, let $f:X\to Y$ be a
+morphism locally of finite type, and let $n$ be an integer.  If $\dim(f^{-1}(y))\leq n$
+for every $y\in Y$, then
+\begin{equation}
+\dim(X)\leq\dim(Y)+n.
+\tag{5.6.7.1}\label{IV.5.6.7.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+By \sref[0]{0.14.1.7} and \sref{IV.1.5.4}, we may assume that $X$
+and $Y$ are affine and reduced, so that $f$ is of finite type.
+Let $X_i$ $(1\leq i\leq m)$ be the integral closed sub-preschemes
+whose underlying spaces are the irreducible components of $X$.
+Then $\dim(X)=\sup_i\dim(X_i)$.
+Let $Z_i$ be the reduced closed sub-prescheme of $Y$ whose
+underlying space is $\overline{f(X_i)}$.  It is integral
+\sref[0\textsubscript{\mdseries I}]{0.2.1.5}, and the restriction of $f$ factors as $X_i\xrightarrow{g_i}Z_i\xrightarrow{j_i}Y$,
+where $j_i$ is the canonical injection \sref[I]{I.5.2.2}, and $g_i$
+is dominant and of finite type \sref{IV.1.5.4}.
+----- French corrections on page IV-2 99 -----
+[id 14002]
+OLD: Le critère (5.6.1, b))
+NEW: Le critère (5.6.1, \emph{b)})
+FRENCH CONTEXT (corrected): même de dire que $A$ est universellement caténaire ou que
+chacun des $A/\mathfrak p_i$ l'est. Cela montre aussi qu'il revient au même
+de dire qu'un préschéma localement noethérien $X$ est universellement
+caténaire, ou que $X_{\mathrm{red}}$ l'est.
+\item[(iv)] Le critère (5.6.1, \emph{b)}) et la remarque (i) montrent que, si $A$
+est un anneau universellement caténaire, il en est de même de toute
+$A$-\emph{algèbre essentiellement de type fini} (1.3.8).
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[5.6.4]
+\label{IV.2.s5.6.4-fr}
+Tout anneau q
+
+[id 14003]
+OLD: $A$-algèbre essentiellement de type fini (1.3.8)
+NEW: $A$-\emph{algèbre essentiellement de type fini} (1.3.8)
+FRENCH CONTEXT (corrected): ire qu'un préschéma localement noethérien $X$ est universellement
+caténaire, ou que $X_{\mathrm{red}}$ l'est.
+\item[(iv)] Le critère (5.6.1, \emph{b)}) et la remarque (i) montrent que, si $A$
+est un anneau universellement caténaire, il en est de même de toute
+$A$-\emph{algèbre essentiellement de type fini} (1.3.8).
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[5.6.4]
+\label{IV.2.s5.6.4-fr}
+Tout anneau quotient d'un anneau régulier est universellement caténaire.
+\end{proposition}
+
+Tout revient à voir qu'un anneau régulier $A$ est universellement caténaire
+(5.6.3, (
+
+[id 14006]
+OLD: conclut par (5.6.1, a))
+NEW: conclut par (5.6.1, \emph{a)})
+FRENCH CONTEXT (corrected): r est universellement caténaire.
+\end{proposition}
+
+Tout revient à voir qu'un anneau régulier $A$ est universellement caténaire
+(5.6.3, (iv)); or, on sait que $A[T_1,\ldots,T_n]$ est régulier (\textbf{0}, 17.3.7),
+donc caténaire (\textbf{0}, 16.5.12), et l'on conclut par (5.6.1, \emph{a)}).
+
+En particulier, il résulte du théorème de Cohen (\textbf{0}, 19.8.8) que tout \emph{anneau
+local noethérien complet} est universellement caténaire. De même, toute
+algèbre de type fini sur un corps étant quotient d'un anneau régulier, tout
+préschéma \emph{lo
+
+[id 14008]
+OLD: que tout anneau
+local noethérien complet est
+NEW: que tout \emph{anneau
+local noethérien complet} est
+FRENCH CONTEXT (corrected): universellement caténaire
+(5.6.3, (iv)); or, on sait que $A[T_1,\ldots,T_n]$ est régulier (\textbf{0}, 17.3.7),
+donc caténaire (\textbf{0}, 16.5.12), et l'on conclut par (5.6.1, \emph{a)}).
+
+En particulier, il résulte du théorème de Cohen (\textbf{0}, 19.8.8) que tout \emph{anneau
+local noethérien complet} est universellement caténaire. De même, toute
+algèbre de type fini sur un corps étant quotient d'un anneau régulier, tout
+préschéma \emph{localement de type fini sur un corps} est universellement caténaire.
+
+Nous verrons plus loin (6.3.7) que dans (5.6.4), on peu
+
+[id 14009]
+OLD: préschéma localement de type fini sur un corps est
+NEW: préschéma \emph{localement de type fini sur un corps} est
+FRENCH CONTEXT (corrected): (5.6.1, \emph{a)}).
+
+En particulier, il résulte du théorème de Cohen (\textbf{0}, 19.8.8) que tout \emph{anneau
+local noethérien complet} est universellement caténaire. De même, toute
+algèbre de type fini sur un corps étant quotient d'un anneau régulier, tout
+préschéma \emph{localement de type fini sur un corps} est universellement caténaire.
+
+Nous verrons plus loin (6.3.7) que dans (5.6.4), on peut remplacer « anneau
+régulier » par « anneau de Cohen-Macaulay ».
+
+\begin{proposition}[5.6.5]
+\EGAReaderTarget{ega4.c04.prop.5-6-5}{IV.2.s5.6.5-fr}
+Soient $Y$ un préschéma irré
+
+[id 14010]
+OLD: $\xi$ (resp. $\eta$)
+NEW: $\xi$ \textup{(resp. $\eta$)}
+FRENCH CONTEXT (corrected): au de Cohen-Macaulay ».
+
+\begin{proposition}[5.6.5]
+\EGAReaderTarget{ega4.c04.prop.5-6-5}{IV.2.s5.6.5-fr}
+Soient $Y$ un préschéma irréductible localement noethérien, $X$ un préschéma
+irréductible, $f:X\to Y$ un morphisme dominant localement de type fini. Soit
+$\xi$ \textup{(resp. $\eta$)} le point générique de $X$ \textup{(resp. $Y$)}, et soit
+$e=\dim(f^{-1}(\eta))=\operatorname{deg.tr}_{\mathbf{k}(\eta)}\boldsymbol{k}(\xi)$
+\textup{(« dimension de la fibre générique », cf. $(\mathbf{0}_{\mathrm I},2.1.8)$ et
+(4.1.1))}. Pour tout $x\in X$, on 
+
+[id 14011]
+OLD: de $X$ (resp. $Y$)
+NEW: de $X$ \textup{(resp. $Y$)}
+FRENCH CONTEXT (corrected): 5]
+\EGAReaderTarget{ega4.c04.prop.5-6-5}{IV.2.s5.6.5-fr}
+Soient $Y$ un préschéma irréductible localement noethérien, $X$ un préschéma
+irréductible, $f:X\to Y$ un morphisme dominant localement de type fini. Soit
+$\xi$ \textup{(resp. $\eta$)} le point générique de $X$ \textup{(resp. $Y$)}, et soit
+$e=\dim(f^{-1}(\eta))=\operatorname{deg.tr}_{\mathbf{k}(\eta)}\boldsymbol{k}(\xi)$
+\textup{(« dimension de la fibre générique », cf. $(\mathbf{0}_{\mathrm I},2.1.8)$ et
+(4.1.1))}. Pour tout $x\in X$, on a alors, en posant $y=f(x)$,
+\begin{equation}
+e
+
+=================== PAGE IV-2 100 ===================
+----- (English page IV-2 99: shown above in this file) -----
+----- (English page IV-2 100: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 101 -----
+\oldpage[IV-2]{101}
+
+We have $\dim(Z_i)\leq\dim(Y)$.  If $z_i$ is the generic point
+of $Z_i$, then $\dim(g_i^{-1}(z_i))\leq n$
+by hypothesis.  Thus it is enough to show $\dim(X_i)\leq\dim(Z_i)+n$
+for every $i$, and this is \eqref{IV.5.6.6.1}.
+\end{proof}
+
+\begin{corollary}[5.6.8]
+\phantomsection
+\label{IV.5.6.8}
+Let $Y$ be a locally Noetherian prescheme, let $X$ be irreducible,
+let $f:X\to Y$ be a morphism locally of finite type, and let
+$n\geq0$ be an integer.  Suppose that $Y$ is universally catenary
+and that
+\[
+\dim(f^{-1}(y))\geq n
+\quad\text{for every }y\in Y.
+\]
+Then
+\begin{equation}
+\dim(X)\geq\dim(Y)+n.
+\tag{5.6.8.1}\label{IV.5.6.8.1}
+\end{equation}
+If instead every fibre has dimension exactly $n$, then
+\begin{equation}
+\dim(X)=\dim(Y)+n.
+\tag{5.6.8.2}\label{IV.5.6.8.2}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Since $n\geq0$, either hypothesis implies that $f$ is surjective,
+and therefore $Y$ is irreducible.  If $\eta$ is the generic point of
+$Y$, then $\dim(f^{-1}(\eta))\geq n$, respectively
+$\dim(f^{-1}(\eta))=n$.  The conclusion follows from
+\sref{IV.5.6.6}.
+\end{proof}
+
+\begin{remarks}[5.6.9]
+\phantomsection
+\label{IV.5.6.9}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.6.9.i}
+Even if $Y$ is regular, $X$ is irreducible, and $f:X\to Y$ is
+dominant and of finite type, the two sides of
+\eqref{IV.5.6.6.1} need not be equal.  Take
+$Y=\Spec(A)$ for a discrete valuation ring $A$, take
+$X=\Spec(K)$ for its fraction field $K$, and let $f$ be the
+canonical morphism.
+
+\item
+\phantomsection
+\label{IV.5.6.9.ii}
+Example {\hyperref[IV.5.4.3.i]{5.4.3\textup{(i)}}} shows that the
+hypothesis that $X$ is
+irreducible cannot be omitted from \sref{IV.5.6.6} or
+\sref{IV.5.6.8}, even when all the other hypotheses hold.  We shall
+see in \sref{IV.10.6.1} that such phenomena cannot occur under
+additional hypotheses on $Y$, satisfied for example when $Y$ is
+locally of finite type over a field or over a Dedekind ring having
+infinitely many prime ideals.
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[5.6.10]
+\phantomsection
+\label{IV.5.6.10}
+Let $A$ be an integral universally catenary Noetherian local ring,
+and let $B$ be an integral finite $A$-algebra containing $A$.  For
+every maximal ideal $\mathfrak n$ of $B$, $\dim(B_{\mathfrak n})=\dim(A)$.
+\end{proposition}
+
+\begin{proof}
+We have $\operatorname{tr.deg}_A B=0$, and the residue field of
+$B_{\mathfrak n}$ is algebraic over the residue field of
+$A$.\footnote{The printed French text says ``the fraction field of
+$A$''.  Here the field required by the dimension formula is the
+residue field of $A$.}  Every maximal ideal of $B$ lies over the
+maximal ideal of $A$, so the assertion follows from
+\eqref{IV.5.6.1.1}.
+\end{proof}
+
+\begin{example}[5.6.11]
+\phantomsection
+\label{IV.5.6.11}
+Let $A$ be an integral, integrally closed Noetherian local ring.
+Then \sref[0]{0.16.1.6} shows that the conclusion of
+\sref{IV.5.6.10} holds for every integral finite $A$-algebra $B$
+containing $A$.  We now construct, by contrast, an integral
+catenary Noetherian local ring $A$ for which that conclusion fails.
+
+Use the construction of {\hyperref[IV.5.2.5.i]{5.2.5\textup{(i)}}}.
+Let $k_0$ be a field,
+let
+\[
+k=k_0(S_i)_{i\in\bb N}
+\]
+be a purely transcendental extension of infinite transcendence
+degree, and let $V=k[S]_{(S)}$ be the discrete valuation ring
+obtained by localizing $k[S]$ at $(S)$.  Put $E=V[T]$.  In $E$, the
+maximal ideal $\mathfrak m=(S)+(T)$
+has height $2$, whereas the maximal ideal $\mathfrak m'=(ST-1)$
+has height $1$.
+----- French corrections on page IV-2 100 -----
+[id 13326]
+OLD: générale, $\operatorname{deg.tr.}
+NEW: générale, $\operatorname{deg.tr}
+FRENCH CONTEXT (corrected):  est
+universellement
+\oldpage[IV-2]{100}
+caténaire n'est autre que l'égalité (5.6.1.1), appliquée à
+$A=\mathcal O_y$ et $B'=\mathcal O_x$. Pour démontrer que l'on a de plus
+(5.6.5.3) lorsque $x$ est fermé dans $f^{-1}(y)$, il suffit de remarquer que,
+de façon générale, $\operatorname{deg.tr}_{\mathbf{k}(y)}\boldsymbol{k}(x)$ est la dimension de
+$\overline{\{x\}}\cap f^{-1}(y)$, comme il résulte de (5.2.1) appliqué au
+sous-préschéma fermé réduit de $f^{-1}(y)$ ayant ce sous-espace comme espace
+sous-jacent.
+
+Nous démontrerons plus loin (13.1.1) que
+
+[id 13329]
+OLD: (5.6.5), on
+a toujours
+NEW: (5.6.5), \emph{on
+a toujours}
+FRENCH CONTEXT (corrected): ol{k}(x)$ est la dimension de
+$\overline{\{x\}}\cap f^{-1}(y)$, comme il résulte de (5.2.1) appliqué au
+sous-préschéma fermé réduit de $f^{-1}(y)$ ayant ce sous-espace comme espace
+sous-jacent.
+
+Nous démontrerons plus loin (13.1.1) que, sous les conditions de (5.6.5), \emph{on
+a toujours} $\delta(x)\geq0$, et (5.6.5.2) précise donc dans ce cas (5.5.2.1).
+
+\begin{corollary}[5.6.6]
+\label{IV.2.s5.6.6-fr}
+Sous les hypothèses générales de \textup{(5.6.5)}, on a
+\begin{equation}
+\dim(X)\leq\dim(Y)+e.
+\tag{5.6.6.1}\label{IV.2.s5.6.6.1-fr}
+\end{equat
+
+[id 13335]
+OLD: $f$
+est surjectif.
+NEW: $f$
+est \emph{surjectif}.
+FRENCH CONTEXT (corrected): calement de type fini
+sur un corps assure alors, d'une part que $Y$ est universellement caténaire
+(5.6.4), et d'autre part que les deux membres de (5.6.6.2) sont égaux
+(5.2.2 et 4.1.1.3).
+
+On notera que la condition (5.6.6.2) est trivialement vérifiée lorsque $f$
+est \emph{surjectif}.
+
+\begin{corollary}[5.6.7]
+\label{IV.2.s5.6.7-fr}
+Soient $Y$ un préschéma localement noethérien, $f:X\to Y$ un morphisme
+localement de type fini, $n$ un entier. Si, pour tout $y\in Y$,
+$\dim(f^{-1}(y))\leq n$, alors on a
+\begin{equation}
+\dim(X)\leq\dim(Y)+n.
+
+
+=================== PAGE IV-2 101 ===================
+----- (English page IV-2 100: shown above in this file) -----
+----- (English page IV-2 101: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 102 -----
+\oldpage[IV-2]{102}
+
+The corresponding residue fields are
+\[
+\kres(\mathfrak m)=k,
+\qquad
+\kres(\mathfrak m')=k(S),
+\]
+the latter being the fraction field of $V$.  By the choice of $k$,
+these fields are isomorphic.  Let
+\[
+\varepsilon:E\longrightarrow E/\mathfrak m=\kres(\mathfrak m),
+\qquad
+\varepsilon':E\longrightarrow E/\mathfrak m'=\kres(\mathfrak m')
+\]
+be the canonical homomorphisms, choose an isomorphism
+\[
+\sigma:\kres(\mathfrak m)\xrightarrow{\sim}\kres(\mathfrak m'),
+\]
+and let $C$ be the subring of $E$ formed by the elements $x$ such
+that $\varepsilon'(x)=\sigma(\varepsilon(x))$.
+This is a special case of the ``gluing procedures'' to be studied
+systematically in Chapter~V.
+
+It is immediate that $\mathfrak n=\mathfrak m\mathfrak m'
+=\mathfrak m\cap\mathfrak m'$
+is a maximal ideal of $C$, and that $C/\mathfrak n$ identifies with
+the subfield of
+$(E/\mathfrak m)\times(E/\mathfrak m')$ formed by the pairs
+$(z,\sigma(z))$.  Moreover, $E=C+C(ST-1)$,
+so $E$ is a finite $C$-algebra; it is plainly the integral closure
+of $C$.  We next prove that $C$ is Noetherian.
+
+\begin{lemma}[5.6.11.1]
+\phantomsection
+\label{IV.5.6.11.1}
+Let $R$ be a ring, let $S$ be a subring, and let $\mathfrak K=\operatorname{Ann}_S(R/S)$
+be the conductor of $S$ in $R$, that is, the largest ideal of $S$
+which is also an ideal of $R$.
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.6.11.1.i}
+For every ideal $\mathfrak J\subset\mathfrak K$ of $R$, there is a
+strictly increasing map from the set of ideals $\mathfrak L$ of $S$
+such that $R.\mathfrak L=\mathfrak J$ to the set of
+$(S/\mathfrak K)$-submodules of
+$\mathfrak J/\mathfrak K\mathfrak J$.
+
+\item
+\phantomsection
+\label{IV.5.6.11.1.ii}
+If $S/\mathfrak K$ and $R$ are Noetherian and $R$ is a finite
+$S$-module, then every increasing sequence of ideals of $S$
+contained in $\mathfrak K$ is stationary.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) Indeed, we have $\mathfrak K\mathfrak J
+=\mathfrak K(R.\mathfrak L)
+=\mathfrak K\mathfrak L
+\subset\mathfrak L$ ($\mathfrak L$ being an ideal of $S$), whence the
+conclusion.
+
+(ii) Let $(\mathfrak L_n)$ be an increasing sequence of ideals
+of $S$ contained in $\mathfrak K$.  The sequence of ideals
+$R.\mathfrak L_n$ of $R$ is stationary since $R$ is Noetherian; we may
+therefore suppose that all the ideals $R.\mathfrak L_n$ are equal to one
+and the same ideal $\mathfrak J$ of $R$.  Since $R$ is Noetherian,
+$\mathfrak J/\mathfrak K\mathfrak J$ is a finite $R$-module, hence also
+a finite $S$-module, and consequently a finite $(S/\mathfrak K)$-module.
+But since $S/\mathfrak K$ is Noetherian,
+$\mathfrak J/\mathfrak K\mathfrak J$ is a Noetherian
+$(S/\mathfrak K)$-module, and the conclusion follows from (i).
+\end{proof}
+
+We shall apply this lemma taking $R=E$, $S=C$; it is clear that
+$\mathfrak n$ is the conductor of $C$ in $E$; moreover, for every ideal
+$\mathfrak a$ of $C$,
+\[
+\mathfrak a/(\mathfrak n\cap\mathfrak a)
+ \simeq(\mathfrak a+\mathfrak n)/\mathfrak n
+\]
+is a submodule of the simple $C$-module $C/\mathfrak n$.  It is
+therefore enough to prove that every ideal
+$\mathfrak a\cap\mathfrak n$ is finitely generated; this follows
+from \sref{IV.5.6.11.1}.
+
+By \sref[0]{0.16.1.5}, $\dim(C)=\dim(E)=2$.
+Set $A=C_{\mathfrak n}$ and $U=C\setmin\mathfrak n$.  Then $B=U^{-1}E$
+is the integral closure of $A$ and is a finite $A$-module.  The
+ideals $\mathfrak m$ and $\mathfrak m'$ are the only prime ideals of
+$E$ containing $\mathfrak n$.  Hence $B$ is semilocal, and its local
+rings at its two maximal ideals are isomorphic to
+$E_{\mathfrak m}$ and $E_{\mathfrak m'}$, of dimensions $2$ and
+$1$, respectively.  Thus $\dim(B)=2$ and, by
+\sref[0]{0.16.1.5}, $\dim(A)=2$.
+
+Since $A$ is an integral local ring of dimension $2$, it is
+catenary: every prime ideal other than $0$ and the maximal ideal has
+height $1$.  Nevertheless it does not satisfy the conclusion of
+\sref{IV.5.6.10}, and therefore is not universally catenary.
+
+The ideal $\mathfrak n$ has height $2$ in $C$.  If $\mathfrak p$ is
+a height-$1$ prime ideal of $C$, there is a unique prime ideal
+$\mathfrak p'$ of $E$ above $\mathfrak p$; it has height $1$, and $C_{\mathfrak p}=E_{\mathfrak p'}$.
+Existence follows from integrality, and the Cohen--Seidenberg theorem
+shows that every prime ideal of $E$ above $\mathfrak p$ has height
+$1$.
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 102 -----
+\subsection{Depth and property \texorpdfstring{$(S_k)$.}{(Sk)}}
+\phantomsection
+\label{subsection:IV.5.7}
+----- French corrections on page IV-2 101 -----
+[id 13343]
+OLD: préschéma
+irréductible,
+NEW: préschéma
+\textup{irréductible},
+FRENCH CONTEXT (corrected): $
+par hypothèse; on voit ainsi que pour prouver (5.6.7.1), il suffit de
+démontrer que $\dim(X_i)\leq\dim(Z_i)+n$ pour tout $i$, ce qui résulte de
+(5.6.6.1).
+
+\begin{corollary}[5.6.8]
+\label{IV.2.s5.6.8-fr}
+Soient $Y$ un préschéma localement noethérien, $X$ un préschéma
+\textup{irréductible}, $f:X\to Y$ un morphisme localement de type fini, $n$ un entier
+$\geq0$. On suppose que $Y$ est universellement caténaire, et que pour tout
+$y\in Y$, on ait $\dim(f^{-1}(y))\geq n$ \textup{(resp.}
+$\dim(f^{-1}(y))=n$\textup{)}. Alors on a
+\begin{equation}
+\dim
+
+[id 13344]
+OLD: (resp.
+$\dim(f^{-1}(y))=n$)
+NEW: \textup{(resp.}
+$\dim(f^{-1}(y))=n$\textup{)}
+FRENCH CONTEXT (corrected): $Y$ un préschéma localement noethérien, $X$ un préschéma
+\textup{irréductible}, $f:X\to Y$ un morphisme localement de type fini, $n$ un entier
+$\geq0$. On suppose que $Y$ est universellement caténaire, et que pour tout
+$y\in Y$, on ait $\dim(f^{-1}(y))\geq n$ \textup{(resp.}
+$\dim(f^{-1}(y))=n$\textup{)}. Alors on a
+\begin{equation}
+\dim(X)\geq\dim(Y)+n
+\tag{5.6.8.1}\label{IV.2.s5.6.8.1-fr}
+\end{equation}
+\textup{(resp.}
+\begin{equation}
+\dim(X)=\dim(Y)+n).
+\tag{5.6.8.2}\label{IV.2.s5.6.8.2-fr}
+\end{equation}
+\end{corollary}
+
+Comme $n\geq0$, l'hypothèse entra
+
+[id 13345]
+OLD: \end{equation}
+(resp.
+\begin{equation}
+NEW: \end{equation}
+\textup{(resp.}
+\begin{equation}
+FRENCH CONTEXT (corrected): n entier
+$\geq0$. On suppose que $Y$ est universellement caténaire, et que pour tout
+$y\in Y$, on ait $\dim(f^{-1}(y))\geq n$ \textup{(resp.}
+$\dim(f^{-1}(y))=n$\textup{)}. Alors on a
+\begin{equation}
+\dim(X)\geq\dim(Y)+n
+\tag{5.6.8.1}\label{IV.2.s5.6.8.1-fr}
+\end{equation}
+\textup{(resp.}
+\begin{equation}
+\dim(X)=\dim(Y)+n).
+\tag{5.6.8.2}\label{IV.2.s5.6.8.2-fr}
+\end{equation}
+\end{corollary}
+
+Comme $n\geq0$, l'hypothèse entraîne que $f$ est \emph{surjectif}, donc $Y$
+irréductible; en outre, si $\eta$ est le point générique de $Y$, on a
+$\dim(f^{-1}(\eta))\geq
+
+[id 13346]
+OLD: que $f$ est surjectif, donc
+NEW: que $f$ est \emph{surjectif}, donc
+FRENCH CONTEXT (corrected): ors on a
+\begin{equation}
+\dim(X)\geq\dim(Y)+n
+\tag{5.6.8.1}\label{IV.2.s5.6.8.1-fr}
+\end{equation}
+\textup{(resp.}
+\begin{equation}
+\dim(X)=\dim(Y)+n).
+\tag{5.6.8.2}\label{IV.2.s5.6.8.2-fr}
+\end{equation}
+\end{corollary}
+
+Comme $n\geq0$, l'hypothèse entraîne que $f$ est \emph{surjectif}, donc $Y$
+irréductible; en outre, si $\eta$ est le point générique de $Y$, on a
+$\dim(f^{-1}(\eta))\geq n$ (resp. $\dim(f^{-1}(\eta))=n$). La conclusion
+résulte donc de (5.6.6).
+
+\begin{remarks}[5.6.9]
+\label{IV.2.s5.6.9-fr}
+\begin{enumerate}
+\item[(i)] Même si $Y$
+
+[id 13348]
+OLD: intègre et intégralement clos;
+NEW: intègre et \emph{intégralement clos};
+FRENCH CONTEXT (corrected): \mathfrak n}$ est une extension algébrique du corps résiduel de
+$A$. La conclusion résulte de la formule (5.6.1.1), tout idéal maximal de
+$B$ étant au-dessus de celui de $A$.
+
+\begin{example}[5.6.11]
+\label{IV.2.s5.6.11-fr}
+Soit $A$ un anneau local noethérien intègre et \emph{intégralement clos}; alors, on
+a vu (\textbf{0}, 16.1.6) que la conclusion de (5.6.10) est valable pour toute
+$A$-algèbre finie intègre $B$ contenant $A$. Par contre, nous allons
+construire un exemple d'anneau local noethérien intègre \emph{caténaire} $A$ pour
+lequel la conclusio
+
+[id 13350]
+OLD: intègre caténaire $A$
+NEW: intègre \emph{caténaire} $A$
+FRENCH CONTEXT (corrected): ocal noethérien intègre et \emph{intégralement clos}; alors, on
+a vu (\textbf{0}, 16.1.6) que la conclusion de (5.6.10) est valable pour toute
+$A$-algèbre finie intègre $B$ contenant $A$. Par contre, nous allons
+construire un exemple d'anneau local noethérien intègre \emph{caténaire} $A$ pour
+lequel la conclusion de (5.6.10) sera en défaut. Nous utiliserons la
+construction de (5.2.5, (i)). Soient $k_0$ un corps, $k$ une extension
+transcendante pure $k_0(S_i)_{i\in\mathbb N}$ de degré de transcendance
+infini, $V$ l'anneau de valuation discrète
+
+=================== PAGE IV-2 102 ===================
+----- (English page IV-2 101: shown above in this file) -----
+----- (English page IV-2 102: shown above in this file) -----
+----- English, components/06_section56_dimension_formula_universally_catenary.tex, page IV-2 103 -----
+\oldpage[IV-2]{103}
+
+Moreover, $E$ is a finite $C$-algebra and
+$C_{\mathfrak p}$ is integrally closed
+(Bourbaki, \emph{Alg\`ebre commutative}, chap.~V, \S~1,
+n\textsuperscript{o}~5, cor.~5 of prop.~16).  This proves uniqueness
+and the displayed equality.
+
+It would be interesting to know whether every integral Noetherian
+local ring satisfying the conclusion of \sref{IV.5.6.10} is
+universally catenary.  Nagata asserted this [33], but his proof does
+not appear to be complete.
+\end{example}
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 103 -----
+\oldpage[IV-2]{103}
+
+\begin{definition}[5.7.1]
+\phantomsection
+\label{IV.5.7.1}
+Let $X$ be a locally Noetherian prescheme and let $\sh F$ be a
+coherent $\sh O_X$-Module.  The depth \textup{(}respectively,
+codepth\textup{)} of $\sh F$ at a point $x\in X$ is the number
+$\operatorname{prof}(\sh F_x)$ \textup{(}respectively,
+$\operatorname{coprof}(\sh F_x)$\textup{)}
+\sref[0]{0.16.4.5}, \sref[0]{0.16.4.9}.  The codepth of
+$\sh F$ is the number
+\begin{equation}
+\operatorname{coprof}(\sh F)
+ =\sup_{x\in X}\operatorname{coprof}(\sh F_x).
+\tag{5.7.1.1}\label{IV.5.7.1.1}
+\end{equation}
+
+We say that $\sh F$ is a Cohen--Macaulay $\sh O_X$-Module at the point
+$x$ if $\sh F_x$ is a Cohen--Macaulay $\sh O_x$-module, that is
+\sref[0]{0.16.5.1}, if
+$\operatorname{coprof}(\sh F_x)=0$.  We say that $\sh F$ is a
+Cohen--Macaulay $\sh O_X$-Module if it is so at every point,
+in other words if $\operatorname{coprof}(\sh F)=0$.  A point
+$x\in X$ such that $\sh O_x$ is a Cohen--Macaulay ring is also
+called a Cohen--Macaulay point of $X$.
+\end{definition}
+
+The \emph{codepth} of $X$, denoted by $\operatorname{coprof}(X)$,
+is the number $\operatorname{coprof}(\sh O_X)$.  We say that $X$
+is a \emph{Cohen--Macaulay prescheme} if $\sh O_X$ is a
+Cohen--Macaulay $\sh O_X$-Module, in other words if
+$\operatorname{coprof}(X)=0$.  Every locally Noetherian prescheme of
+\emph{dimension} $0$ is evidently a Cohen--Macaulay prescheme.  To say that
+$\Spec(A)$ is a Cohen--Macaulay scheme means that $A$ is a Cohen--Macaulay
+ring \sref[0]{0.16.5.13}.
+
+\begin{definition}[5.7.2]
+\phantomsection
+\label{IV.5.7.2}
+Let $X$ be a locally Noetherian prescheme, let $\sh F$ be a coherent
+$\sh O_X$-Module, and let $k$ be an integer, positive or negative.
+We say that $\sh F$ has property $(S_k)$ if, for every
+$x\in X$, we have
+\begin{equation}
+\operatorname{prof}(\sh F_x)
+ \geq \inf(k,\dim(\sh F_x)).
+\tag{5.7.2.1}\label{IV.5.7.2.1}
+\end{equation}
+We say that $\sh F$ has property $(S_k)$ at a point $x\in X$
+if, for every generization $x'$ of $x$ in $X$, we have
+\begin{equation}
+\operatorname{prof}(\sh F_{x'})
+ \geq \inf(k,\dim(\sh F_{x'})).
+\tag{5.7.2.2}\label{IV.5.7.2.2}
+\end{equation}
+\end{definition}
+
+We say that $X$ satisfies property $(S_k)$
+(resp.\ satisfies property $(S_k)$ at a point $x$) if $\sh O_X$ satisfies
+property $(S_k)$ (resp.\ satisfies property $(S_k)$ at the point $x$).
+
+For $\sh F$ to satisfy property $(S_k)$, it is evidently necessary and
+sufficient that it satisfy it at every point of $X$.  If $U$ is an open
+subset of $X$ and if $\sh F$ satisfies $(S_k)$, so does $\sh F|U$;
+conversely, if $(U_\alpha)$ is an open covering of $X$ and if
+$\sh F|U_\alpha$ satisfies $(S_k)$ for every $\alpha$, then
+$\sh F$ satisfies $(S_k)$.
+
+\begin{remarks}[5.7.3]
+\phantomsection
+\label{IV.5.7.3}
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.7.3.i}
+Recall that we always have
+$\operatorname{prof}(\sh F_x)\leq\dim(\sh F_x)$
+\sref[0]{0.16.4.5.1} if $\sh F_x\neq0$.  To say that $\sh F$ has
+property $(S_k)$ therefore means that we have
+$\operatorname{prof}(\sh F_x)\geq k$ \emph{except} at the points $x\in X$
+such that $\dim(\sh F_x)<k$, and that at these latter points we have
+$\dim(\sh F_x)=\operatorname{prof}(\sh F_x)$, that is
+\sref[0]{0.16.5.1}, that $\sh F$ is a \emph{Cohen--Macaulay}
+$\sh O_X$-Module at these points; note that at the points where
+$\dim(\sh F_x)=k$, we have $\operatorname{prof}(\sh F_x)=k$,
+----- French corrections on page IV-2 102 -----
+[id 13359]
+OLD: ces corps sont isomorphes.
+NEW: ces corps sont \emph{isomorphes}.
+FRENCH CONTEXT (corrected): $ est de hauteur 2 et l'idéal maximal
+$\mathfrak m'=(ST-1)$ de hauteur 1;
+\oldpage[IV-2]{102}
+les corps résiduels correspondants sont $\boldsymbol{k}(\mathfrak m)=k$ et
+$\boldsymbol{k}(\mathfrak m')=k(S)$, corps des fractions de $V$; en vertu du choix de
+$k$, ces corps sont \emph{isomorphes}. Désignons par $\varepsilon$ et
+$\varepsilon'$ les homomorphismes canoniques de $E$ sur
+$E/\mathfrak m=\boldsymbol{k}(\mathfrak m)$ et $E/\mathfrak m'=\boldsymbol{k}(\mathfrak m')$
+respectivement; soit d'autre part $\sigma$ un isomorphisme de
+$\boldsymbol{k}(\
+
+[id 13360]
+OLD: $C$-algèbre finie et est évidemment
+NEW: $C$-algèbre \emph{finie} et est évidemment
+FRENCH CONTEXT (corrected): athfrak m\mathfrak m'=\mathfrak m\cap\mathfrak m'$ est un
+idéal maximal de $C$, $C/\mathfrak m\mathfrak m'$ s'identifiant au
+sous-corps de $(E/\mathfrak m)\times(E/\mathfrak m')$ formé des couples
+$(z,\sigma(z))$. On a $E=C+C(ST-1)$, autrement dit $E$ est une
+$C$-algèbre \emph{finie} et est évidemment la clôture intégrale de $C$; nous allons
+voir en outre que $C$ est \emph{noethérien}: cela résultera du lemme suivant:
+
+\begin{lemma}[5.6.11.1]
+\EGAReaderTarget{ega4.c04.lem.5-6-11-1}{IV.2.s5.6.11.1-fr}
+Soient $R$ un anneau, $S$ un sous-anneau,
+$\mathfrak K=\
+
+[id 13361]
+OLD: $C$ est noethérien:
+NEW: $C$ est \emph{noethérien}:
+FRENCH CONTEXT (corrected): k m'$ s'identifiant au
+sous-corps de $(E/\mathfrak m)\times(E/\mathfrak m')$ formé des couples
+$(z,\sigma(z))$. On a $E=C+C(ST-1)$, autrement dit $E$ est une
+$C$-algèbre \emph{finie} et est évidemment la clôture intégrale de $C$; nous allons
+voir en outre que $C$ est \emph{noethérien}: cela résultera du lemme suivant:
+
+\begin{lemma}[5.6.11.1]
+\EGAReaderTarget{ega4.c04.lem.5-6-11-1}{IV.2.s5.6.11.1-fr}
+Soient $R$ un anneau, $S$ un sous-anneau,
+$\mathfrak K=\operatorname{Ann}_S(R/S)$ le conducteur de $S$ dans $R$
+(plus grand idéal de $S$ qui e
+
+[id 13365]
+OLD: \item[(ii)] Si $S/\mathfrak K$
+NEW: \item[\textup{(ii)}] Si $S/\mathfrak K$
+FRENCH CONTEXT (corrected): athfrak J\subset\mathfrak K$ de $R$, il existe
+une application strictement croissante de l'ensemble des idéaux
+$\mathfrak L$ de $S$ tels que $R.\mathfrak L=\mathfrak J$ sur l'ensemble des
+sous-$(S/\mathfrak K)$-modules de
+$\mathfrak J/\mathfrak K\mathfrak J$.
+\item[\textup{(ii)}] Si $S/\mathfrak K$ et $R$ sont noethériens et si $R$ est un
+$S$-module de type fini, alors toute suite croissante d'idéaux de $S$
+contenus dans $\mathfrak K$ est stationnaire.
+\end{enumerate}
+\end{lemma}
+
+(i) On a en effet,
+$\mathfrak K\mathfrak J=\mathfrak K(R.\mathfrak L)
+=\m
+
+[id 13369]
+OLD: idéaux $R\mathfrak L_n$ sont égaux
+NEW: idéaux $R.\mathfrak L_n$ sont égaux
+FRENCH CONTEXT (corrected): t un idéal de $S$), d'où la conclusion.
+
+(ii) Soit $(\mathfrak L_n)$ une suite croissante d'idéaux de $S$ contenus
+dans $\mathfrak K$. La suite des idéaux $R.\mathfrak L_n$ de $R$ est
+stationnaire puisque $R$ est noethérien; on peut donc supposer que tous les
+idéaux $R.\mathfrak L_n$ sont égaux à un même idéal $\mathfrak J$ de $R$.
+Comme $R$ est noethérien, $\mathfrak J/\mathfrak K\mathfrak J$ est un
+$R$-module de type fini, donc aussi un $S$-module de type fini, et par suite
+un $(S/\mathfrak K)$-module de type fini. Mais comme $S/\mathfrak K$ est
+n
+
+[id 13373]
+OLD: il existe un
+seul idéal
+NEW: il existe \emph{un
+seul} idéal
+FRENCH CONTEXT (corrected): de hauteur 1); mais il ne vérifie pas la
+conclusion de (5.6.10), et \emph{a fortiori} n'est pas universellement
+caténaire.
+
+Notons encore que $\mathfrak n$ est un idéal de hauteur 2 dans $C$, et que
+pour tout idéal premier $\mathfrak p$ de hauteur 1 dans $C$, il existe \emph{un
+seul} idéal premier $\mathfrak p'$ de $E$ au-dessus de $\mathfrak p$,
+nécessairement de hauteur 1, et tel que
+$C_{\mathfrak p}=E_{\mathfrak p'}$. En effet, il y a au moins un idéal
+premier $\mathfrak p'$ de $E$ au-dessus de $\mathfrak p$ et il résulte du
+théorème de Cohe
+
+[id 13362]
+OLD: \item[(i)] Pour tout idéal
+NEW: \item[\textup{(i)}] Pour tout idéal
+FRENCH CONTEXT (corrected): ma}[5.6.11.1]
+\EGAReaderTarget{ega4.c04.lem.5-6-11-1}{IV.2.s5.6.11.1-fr}
+Soient $R$ un anneau, $S$ un sous-anneau,
+$\mathfrak K=\operatorname{Ann}_S(R/S)$ le conducteur de $S$ dans $R$
+(plus grand idéal de $S$ qui est aussi un idéal de $R$).
+\begin{enumerate}
+\item[\textup{(i)}] Pour tout idéal $\mathfrak J\subset\mathfrak K$ de $R$, il existe
+une application strictement croissante de l'ensemble des idéaux
+$\mathfrak L$ de $S$ tels que $R.\mathfrak L=\mathfrak J$ sur l'ensemble des
+sous-$(S/\mathfrak K)$-modules de
+$\mathfrak J/\mathfrak K\mathfrak 
+
+=================== PAGE IV-2 103 ===================
+----- (English page IV-2 102: shown above in this file) -----
+----- (English page IV-2 103: shown above in this file) -----
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 104 -----
+\oldpage[IV-2]{104}
+so $\sh F$ is again a Cohen--Macaulay $\sh O_X$-Module at these
+points.  To say that $\sh F$ has property $(S_k)$ \emph{for every}
+$k$ therefore means that $\sh F$ is a \emph{Cohen--Macaulay
+$\sh O_X$-Module}.  It is clear that for $k'\geq k$, property
+$(S_{k'})$ implies $(S_k)$; for $k\leq0$, \emph{every} coherent
+$\sh O_X$-Module has property $(S_k)$.
+
+\item
+\phantomsection
+\label{IV.5.7.3.ii}
+To verify condition \eqref{IV.5.7.2.1}, we may restrict ourselves to
+the case where $x\in\operatorname{Supp}(\sh F)$; in the contrary case we
+indeed have $\dim(\sh F_x)=-\infty$ \sref[0]{0.14.1.2}.
+
+\item
+\phantomsection
+\label{IV.5.7.3.iii}
+If $X=\Spec(A)$, where $A$ is a Noetherian ring, and
+$\sh F=\widetilde M$, where $M$ is a finite $A$-module, we say that $M$
+has property $(S_k)$ if $\sh F$ has this property.
+For an arbitrary locally Noetherian prescheme $X$, to say that
+$\sh F$ has property $(S_k)$ \emph{at a point} $x\in X$ therefore means
+that, if we set $Y=\Spec(\sh O_x)$, the $\sh O_Y$-Module
+$\widetilde{\mathscr F}_x$ has property $(S_k)$; note that condition
+\eqref{IV.5.7.2.1} in general \emph{does not imply}
+\eqref{IV.5.7.2.2} for every generization $x'$ of $x$, since there is
+no relation of inequality between
+$\operatorname{prof}(\sh F_x)$ and
+$\operatorname{prof}(\sh F_{x'})$ \sref[0]{0.16.4.6}.
+
+\item
+\phantomsection
+\label{IV.5.7.3.iv}
+It follows immediately from the definition that if $\sh F$
+satisfies $(S_k)$ at a point $x$, it also satisfies $(S_k)$ at every point
+$x'$ that is a \emph{generization} of $x$.
+
+\item
+\phantomsection
+\label{IV.5.7.3.v}
+Property $(S_k)$ is especially important for $k=1$ and $k=2$; it was
+introduced for $k=2$ by Serre, to express his normality
+criterion; see \sref{IV.5.8.6}.\footnote{The printed French text points to
+\textup{(5.8.5)}; Serre's normality criterion is Theorem
+\textup{(5.8.6)}.}
+
+\item
+\phantomsection
+\label{IV.5.7.3.vi}
+Let $X$ be a locally Noetherian prescheme, $Y$ a closed sub-prescheme
+of $X$, $j:Y\to X$ the canonical injection, and $\sh G$ a coherent
+$\sh O_Y$-Module.  It is clear that for every $x\in Y$, we have
+\[
+\dim(\sh G_x)=\dim((j_*(\sh G))_x),\qquad
+\operatorname{prof}(\sh G_x)
+ =\operatorname{prof}((j_*(\sh G))_x),
+\]
+whence $\operatorname{coprof}(\sh G_x)
+=\operatorname{coprof}((j_*(\sh G))_x)$.
+For $\sh G$ to satisfy $(S_k)$, it is necessary and sufficient that
+$j_*(\sh G)$ satisfy $(S_k)$.
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[5.7.4]
+\phantomsection
+\label{IV.5.7.4}
+Let $X$ be a locally Noetherian prescheme and let $\sh F$ be a
+coherent $\sh O_X$-Module.  Put
+$S=\operatorname{Supp}(\sh F)$, and for every $n\geq0$ let $Z_n$ be
+the set of points $z\in X$ such that
+$\operatorname{coprof}(\sh F_z)>n$, so that $Z_n\subset S$.
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.7.4.i}
+For $\sh F$ to satisfy property $(S_k)$, it is necessary and sufficient
+that, for every $n\geq0$, we have
+\begin{equation}
+\operatorname{codim}(Z_n,S)>n+k.
+\tag{5.7.4.1}\label{IV.5.7.4.1}
+\end{equation}
+
+\item
+\phantomsection
+\label{IV.5.7.4.ii}
+Suppose in addition that the $Z_n$ are closed in $X$.  Then, for
+$\sh F$ to satisfy property $(S_k)$ at a point $x\in S$, it is necessary
+and sufficient that, for every $n\geq0$, we have
+\begin{equation}
+\operatorname{codim}_x(Z_n,S)>n+k.
+\tag{5.7.4.2}\label{IV.5.7.4.2}
+\end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}[{\rm(i)}]
+\item
+Indeed, by definition \sref{IV.5.1.3}, $\operatorname{codim}(Z_n,S)
+=\inf_{z\in Z_n}(\dim(\sh O_{S,z}))$,
+and the inequality \eqref{IV.5.7.4.1} therefore means
+\sref{IV.5.1.12.2} that, for every $z\in X$ and every $n\geq0$, the
+relation
+\[
+\dim(\sh F_z)-\operatorname{prof}(\sh F_z)\geq n+1
+\]
+implies the relation
+\[
+\dim(\sh F_z)\geq n+k+1.
+\]
+But if we set $a=\dim(\sh F_z)$,
+$b=\operatorname{prof}(\sh F_z)$, we have $b\leq a$, and to say that for
+every $n\geq0$ the relation $b\leq a-n-1$ implies $k\leq a-n-1$ is
+equivalent to saying that $b\geq\inf(k,a)$, whence the proposition.
+----- French corrections on page IV-2 103 -----
+[id 13378]
+OLD: \emph{profondeur}
+NEW: profondeur
+FRENCH CONTEXT (corrected): }
+
+\subsection{\texorpdfstring{Profondeur et propriété $(S_k)$.}{Profondeur et propriété (S\string_k)}}
+
+\begin{definition}[5.7.1]
+\label{IV.2.s5.7.1-fr}
+Soient $X$ un préschéma localement noethérien, $\mathscr F$ un
+$\mathcal O_X$-Module cohérent. On appelle profondeur \textup{(resp.}
+coprofondeur\textup{)} de $\mathscr F$ en un point $x\in X$ le nombre
+$\operatorname{prof}(\mathscr F_x)$ \textup{(resp.}
+$\operatorname{coprof}(\mathscr F_x)$\textup{)} \textup{(\textbf{0}, 16.4.5 et 16.4.9)}. On appelle
+coprofondeur de $\mat
+
+[id 13379]
+OLD: (resp.
+\emph{coprofondeur})
+NEW: \textup{(resp.}
+coprofondeur\textup{)}
+FRENCH CONTEXT (corrected): ion{\texorpdfstring{Profondeur et propriété $(S_k)$.}{Profondeur et propriété (S\string_k)}}
+
+\begin{definition}[5.7.1]
+\label{IV.2.s5.7.1-fr}
+Soient $X$ un préschéma localement noethérien, $\mathscr F$ un
+$\mathcal O_X$-Module cohérent. On appelle profondeur \textup{(resp.}
+coprofondeur\textup{)} de $\mathscr F$ en un point $x\in X$ le nombre
+$\operatorname{prof}(\mathscr F_x)$ \textup{(resp.}
+$\operatorname{coprof}(\mathscr F_x)$\textup{)} \textup{(\textbf{0}, 16.4.5 et 16.4.9)}. On appelle
+coprofondeur de $\mathscr F$ le nombre
+\begin{equation}
+\ope
+
+[id 13380]
+OLD: (resp.
+$\operatorname{coprof}(\mathscr F_x)$)
+NEW: \textup{(resp.}
+$\operatorname{coprof}(\mathscr F_x)$\textup{)}
+FRENCH CONTEXT (corrected): abel{IV.2.s5.7.1-fr}
+Soient $X$ un préschéma localement noethérien, $\mathscr F$ un
+$\mathcal O_X$-Module cohérent. On appelle profondeur \textup{(resp.}
+coprofondeur\textup{)} de $\mathscr F$ en un point $x\in X$ le nombre
+$\operatorname{prof}(\mathscr F_x)$ \textup{(resp.}
+$\operatorname{coprof}(\mathscr F_x)$\textup{)} \textup{(\textbf{0}, 16.4.5 et 16.4.9)}. On appelle
+coprofondeur de $\mathscr F$ le nombre
+\begin{equation}
+\operatorname{coprof}(\mathscr F)
+=\sup_{x\in X}\operatorname{coprof}(\mathscr F_x).
+\tag{5.7.1.1}\label{IV.2.s5.7.1.1-fr}
+\end{equation}
+
+On dit que $
+
+[id 13382]
+OLD: \emph{coprofondeur de $\mathscr F$} le nombre
+NEW: coprofondeur de $\mathscr F$ le nombre
+FRENCH CONTEXT (corrected): On appelle profondeur \textup{(resp.}
+coprofondeur\textup{)} de $\mathscr F$ en un point $x\in X$ le nombre
+$\operatorname{prof}(\mathscr F_x)$ \textup{(resp.}
+$\operatorname{coprof}(\mathscr F_x)$\textup{)} \textup{(\textbf{0}, 16.4.5 et 16.4.9)}. On appelle
+coprofondeur de $\mathscr F$ le nombre
+\begin{equation}
+\operatorname{coprof}(\mathscr F)
+=\sup_{x\in X}\operatorname{coprof}(\mathscr F_x).
+\tag{5.7.1.1}\label{IV.2.s5.7.1.1-fr}
+\end{equation}
+
+On dit que $\mathscr F$ est un $\mathcal O_X$-Module de Cohen-Macaulay au
+point $x$ si $\mathscr F_x$ e
+
+[id 13384]
+OLD: \emph{point de Cohen-Macaulay}
+NEW: point de Cohen-Macaulay
+FRENCH CONTEXT (corrected): thscr F_x)=0$. On dit
+que $\mathscr F$ est un $\mathcal O_X$-Module de Cohen-Macaulay s'il l'est
+en tout point, autrement dit si $\operatorname{coprof}(\mathscr F)=0$. Un
+point $x\in X$ tel que $\mathcal O_x$ soit un anneau de Cohen-Macaulay est
+encore appelé point de Cohen-Macaulay de $X$.
+\end{definition}
+
+On appelle \emph{coprofondeur} de $X$ et on note $\operatorname{coprof}(X)$
+le nombre $\operatorname{coprof}(\mathcal O_X)$. On dit que $X$ est un
+\emph{préschéma de Cohen-Macaulay} si $\mathcal O_X$ est un
+$\mathcal O_X$-Module de C
+
+[id 13392]
+OLD: \geq k$ sauf aux
+NEW: \geq k$ \emph{sauf} aux
+FRENCH CONTEXT (corrected): te}
+\item[(i)] Rappelons que l'on a toujours
+$\operatorname{prof}(\mathscr F_x)\leq\dim(\mathscr F_x)$ (\textbf{0}, 16.4.5.1)
+si $\mathscr F_x\neq0$. Dire que $\mathscr F$ possède la propriété $(S_k)$
+signifie donc que l'on a $\operatorname{prof}(\mathscr F_x)\geq k$ \emph{sauf} aux
+points $x\in X$ tels que $\dim(\mathscr F_x)<k$ et qu'en ces derniers points
+on a $\dim(\mathscr F_x)=\operatorname{prof}(\mathscr F_x)$, c'est-à-dire
+(\textbf{0}, 16.5.1) que $\mathscr F$ est un $\mathcal O_X$-Module \emph{de
+Cohen-Macaulay} en ces points; o
+
+[id 13394]
+OLD: $\mathcal O_X$-Module de
+Cohen-Macaulay en ces points;
+NEW: $\mathcal O_X$-Module \emph{de
+Cohen-Macaulay} en ces points;
+FRENCH CONTEXT (corrected): 'on a $\operatorname{prof}(\mathscr F_x)\geq k$ \emph{sauf} aux
+points $x\in X$ tels que $\dim(\mathscr F_x)<k$ et qu'en ces derniers points
+on a $\dim(\mathscr F_x)=\operatorname{prof}(\mathscr F_x)$, c'est-à-dire
+(\textbf{0}, 16.5.1) que $\mathscr F$ est un $\mathcal O_X$-Module \emph{de
+Cohen-Macaulay} en ces points; on notera qu'aux points où
+$\dim(\mathscr F_x)=k$, on a $\operatorname{prof}(\mathscr F_x)=k$,
+\oldpage[IV-2]{104}
+donc $\mathscr F$ est encore un $\mathcal O_X$-Module de Cohen-Macaulay en
+ces points. Dire que $\mathscr F$ possède la propriété $(S_k)$ \emph{
+
+=================== PAGE IV-2 104 ===================
+----- (English page IV-2 103: shown above in this file) -----
+----- (English page IV-2 104: shown above in this file) -----
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 105 -----
+\oldpage[IV-2]{105}
+
+\item
+The reasoning is the same as in
+{\hyperref[IV.5.7.4.i]{\textup{(i)}}}, except that we must restrict
+ourselves to the $z\in X$ which are \emph{generizations} of $x$, and
+take \sref{IV.5.1.3.2} into account.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}[5.7.5]
+\phantomsection
+\label{IV.5.7.5}
+Let $X$ be a locally Noetherian prescheme and let $\sh F$ be a
+coherent $\sh O_X$-Module.  For $\sh F$ to satisfy $(S_k)$
+\textup{(}$k\geq1$\textup{)}, it is necessary and sufficient that, for
+every integer $r$ such that $0\leq r<k$, every open subset $U$ of
+$X$, and every $(\sh F|U)$-regular sequence
+$(f_i)_{1\leq i\leq r}$ of sections of $\sh O_X$ over $U$,
+$(\sh F|U)/(\sum_{i=1}^{r}f_i(\sh F|U))$
+have no embedded associated prime cycle.
+\end{proposition}
+
+\begin{proof}
+Let us first prove the proposition for $k=1$; it can then also be stated
+by saying that \emph{for $\sh F$ to satisfy $(S_1)$, it is necessary and
+sufficient that $\sh F$ have no embedded associated prime cycle}.  Indeed,
+to say that $\sh F$ satisfies $(S_1)$ means that at the points
+$x\in\operatorname{Supp}(\sh F)$ such that $\dim(\sh F_x)>0$, we have
+$\operatorname{prof}(\sh F_x)\geq1$ (since at the other points of
+$\operatorname{Supp}(\sh F)$ we have $\dim(\sh F_x)=0$, hence
+$\operatorname{prof}(\sh F_x)=0$); but to say that
+$\operatorname{prof}(\sh F_x)\geq1$ means that $\mathfrak m_x$
+\emph{is not associated with} $\sh F_x$ \sref[0]{0.16.4.6},~(i), or
+again that $x$ is not associated with $\sh F$ \sref{IV.3.1.1}; on the
+other hand, if $S$ is a sub-prescheme of $X$ having
+$\operatorname{Supp}(\sh F)$ as underlying space, we have
+\sref{IV.5.1.12.1} $\dim(\sh F_x)=\dim(\sh O_{S,x})$; to say that
+$\dim(\sh F_x)>0$ therefore means that $x$ is not a maximal point of
+$\operatorname{Supp}(\sh F)$ \sref{IV.5.1.2}, whence the conclusion.
+
+Secondly, let us show that, for arbitrary $k>1$, the condition of the
+statement is \emph{necessary}.  We may restrict ourselves to the case
+where $U=X$, and our assertion will be proved (by induction on $k$ and by
+virtue of the first part of the reasoning) if we show that when $\sh F$
+satisfies $(S_k)$ ($k>1$) and $f$ is an $\sh F$-\emph{regular} section
+of $\sh O_X$ over $X$, then $\sh F/f\sh F$ \emph{satisfies}
+$(S_{k-1})$ (i.e.\ satisfies \eqref{IV.5.7.2.1} with $k$ replaced by
+$k-1$).  Now, for every $x\in X$, $f_x$ is an $\sh F_x$-regular element;
+if it is invertible, we have $\sh F_x/f_x\sh F_x=0$ and the conclusion is
+trivial.  If on the contrary $f_x\in\mathfrak m_x$, we know that
+$\operatorname{prof}(\sh F_x/f_x\sh F_x)
+=\operatorname{prof}(\sh F_x)-1$ \sref[0]{0.16.4.6},~(i), and
+$\dim(\sh F_x/f_x\sh F_x)=\dim(\sh F_x)-1$ \sref[0]{0.16.3.4}, and our
+assertion follows.
+
+Finally, let us prove that for $k>1$, the condition of the statement is
+\emph{sufficient}.  We shall proceed by induction on $k$; let $x$ be a
+point of $X$, and suppose first that $\dim(\sh F_x)\geq k$.  The
+induction hypothesis implies that $\sh F$ satisfies $(S_{k-1})$, hence
+$\operatorname{prof}(\sh F_x)\geq k-1$; taking \sref[0]{0.15.2.4} into
+account, there is therefore an open neighbourhood $U$ of $x$ and an
+$(\sh F|U)$-regular sequence $(f_i)_{1\leq i\leq k-1}$ of sections of
+$\sh O_X$ over $U$ such that $(f_i)_x\in\mathfrak m_x$ for
+$1\leq i\leq k-1$.  The hypothesis implies that
+$\sh G=(\sh F|U)/(\sum_{i=1}^{k-1}f_i(\sh F|U))$
+has no embedded associated prime cycle; but we have
+$\dim(\sh G_x)=\dim(\sh F_x)-(k-1)\geq1$ \sref[0]{0.16.3.4}, so $x$
+is not associated with $\sh G$; we therefore have
+$\operatorname{prof}(\sh G_x)\geq1$ \sref[0]{0.16.4.6}, and since
+$\operatorname{prof}(\sh G_x)=\operatorname{prof}(\sh F_x)-(k-1)$
+\sref[0]{0.16.4.6}, we have $\operatorname{prof}(\sh F_x)\geq k$.
+Suppose secondly that $\dim(\sh F_x)=r<k$; since $\sh F$ satisfies
+$(S_{k-1})$, we have
+$\operatorname{prof}(\sh F_x)\geq\inf(k-1,r)=r$, and this completes the
+proof.
+\end{proof}
+
+\begin{corollary}[5.7.6]
+\phantomsection
+\label{IV.5.7.6}
+Suppose that $\sh F$ satisfies $(S_k)$, where $k\geq1$.  If
+$(f_i)_{1\leq i\leq r}$ is an $\sh F$-regular sequence of sections
+of $\sh O_X$ over $X$ and $r<k$, then $\sh F\Big/\Big(\sum_{i=1}^{r}f_i\sh F\Big)$
+satisfies $(S_{k-r})$.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \sref{IV.5.7.5}.
+\end{proof}
+
+\begin{corollary}[5.7.7]
+\phantomsection
+\label{IV.5.7.7}
+For $\sh F$ to satisfy $(S_2)$, it is necessary and sufficient that
+$\sh F$ have no embedded associated prime cycle and that, for every open
+subset $U$ of $X$ and every $(\sh F|U)$-regular section $f$ of $\sh O_X$
+over $U$, $(\sh F|U)/f(\sh F|U)$ have no embedded associated prime
+cycle.
+\end{corollary}
+----- French corrections on page IV-2 104 -----
+[id 13397]
+OLD: $(S_k)$ pour tout
+$k$ signifie
+NEW: $(S_k)$ \emph{pour tout}
+$k$ signifie
+FRENCH CONTEXT (corrected): en ces points; on notera qu'aux points où
+$\dim(\mathscr F_x)=k$, on a $\operatorname{prof}(\mathscr F_x)=k$,
+\oldpage[IV-2]{104}
+donc $\mathscr F$ est encore un $\mathcal O_X$-Module de Cohen-Macaulay en
+ces points. Dire que $\mathscr F$ possède la propriété $(S_k)$ \emph{pour tout}
+$k$ signifie donc que $\mathscr F$ est un $\mathcal O_X$-\emph{Module de
+Cohen-Macaulay}. Il est clair que pour $k'\geq k$, la propriété $(S_{k'})$
+implique $(S_k)$; pour $k\leq0$, \emph{tout} $\mathcal O_X$-Module cohérent a la
+propriété $(S_k)$.
+
+\item[(ii)] Pour vérifi
+
+[id 13398]
+OLD: $\mathcal O_X$-Module de
+Cohen-Macaulay. Il est
+NEW: $\mathcal O_X$-\emph{Module de
+Cohen-Macaulay}. Il est
+FRENCH CONTEXT (corrected): n a $\operatorname{prof}(\mathscr F_x)=k$,
+\oldpage[IV-2]{104}
+donc $\mathscr F$ est encore un $\mathcal O_X$-Module de Cohen-Macaulay en
+ces points. Dire que $\mathscr F$ possède la propriété $(S_k)$ \emph{pour tout}
+$k$ signifie donc que $\mathscr F$ est un $\mathcal O_X$-\emph{Module de
+Cohen-Macaulay}. Il est clair que pour $k'\geq k$, la propriété $(S_{k'})$
+implique $(S_k)$; pour $k\leq0$, \emph{tout} $\mathcal O_X$-Module cohérent a la
+propriété $(S_k)$.
+
+\item[(ii)] Pour vérifier la condition (5.7.2.1), on peut se borner au cas
+où $x\in\operatorname{Supp}(\mat
+
+[id 13399]
+OLD: tout $\mathcal O_X$-Module cohérent a la
+NEW: \emph{tout} $\mathcal O_X$-Module cohérent a la
+FRENCH CONTEXT (corrected): es points. Dire que $\mathscr F$ possède la propriété $(S_k)$ \emph{pour tout}
+$k$ signifie donc que $\mathscr F$ est un $\mathcal O_X$-\emph{Module de
+Cohen-Macaulay}. Il est clair que pour $k'\geq k$, la propriété $(S_{k'})$
+implique $(S_k)$; pour $k\leq0$, \emph{tout} $\mathcal O_X$-Module cohérent a la
+propriété $(S_k)$.
+
+\item[(ii)] Pour vérifier la condition (5.7.2.1), on peut se borner au cas
+où $x\in\operatorname{Supp}(\mathscr F)$; dans le cas contraire on a en
+effet $\dim(\mathscr F_x)=-\infty$ (\textbf{0}, 14.1.2).
+
+\item[(iii)] Si $X=\operatorname{S
+
+[id 13401]
+OLD: $(S_k)$ en un point $x\in X$
+signifie
+NEW: $(S_k)$ \emph{en un point} $x\in X$
+signifie
+FRENCH CONTEXT (corrected): érien, et $\mathscr F=\widetilde M$, où $M$ est un $A$-module de type
+fini, on dit que $M$ possède la propriété $(S_k)$ si $\mathscr F$ possède
+cette propriété. Pour un préschéma localement noethérien quelconque $X$,
+dire que $\mathscr F$ possède la propriété $(S_k)$ \emph{en un point} $x\in X$
+signifie donc que si on pose $Y=\operatorname{Spec}(\mathcal O_x)$, le
+$\mathcal O_Y$-Module $\widetilde{\mathscr F}_x$ possède la propriété
+$(S_k)$; on notera que la condition (5.7.2.1) en général \emph{n'entraîne pas}
+(5.7.2.2) pour toute générisation $x'$ de $x$, v
+
+[id 13403]
+OLD: en général n'entraîne pas
+NEW: en général \emph{n'entraîne pas}
+FRENCH CONTEXT (corrected): ue $\mathscr F$ possède la propriété $(S_k)$ \emph{en un point} $x\in X$
+signifie donc que si on pose $Y=\operatorname{Spec}(\mathcal O_x)$, le
+$\mathcal O_Y$-Module $\widetilde{\mathscr F}_x$ possède la propriété
+$(S_k)$; on notera que la condition (5.7.2.1) en général \emph{n'entraîne pas}
+(5.7.2.2) pour toute générisation $x'$ de $x$, vu qu'on n'a aucune relation
+d'inégalité entre $\operatorname{prof}(\mathscr F_x)$ et
+$\operatorname{prof}(\mathscr F_{x'})$ (\textbf{0}, 16.4.6).
+
+\item[(iv)] Il résulte aussitôt de la définition que si $\mathsc
+
+[id 13405]
+OLD: $x'$
+générisation de $x$.
+NEW: $x'$
+\emph{générisation} de $x$.
+FRENCH CONTEXT (corrected): d'inégalité entre $\operatorname{prof}(\mathscr F_x)$ et
+$\operatorname{prof}(\mathscr F_{x'})$ (\textbf{0}, 16.4.6).
+
+\item[(iv)] Il résulte aussitôt de la définition que si $\mathscr F$ vérifie
+$(S_k)$ en un point $x$, il vérifie aussi $(S_k)$ en tout point $x'$
+\emph{générisation} de $x$.
+
+\item[(v)] La propriété $(S_k)$ est surtout importante pour $k=1$ et
+$k=2$; elle a été introduite pour $k=2$ par Serre, pour exprimer son critère
+de normalité (cf. (5.8.6)).
+
+\item[(vi)] Soient $X$ un préschéma localement noethérien, $Y$ un
+sous-préschéma fe
+
+[id 13407]
+OLD: \item[(ii)] Supposons
+NEW: \item[\textup{(ii)}] Supposons
+FRENCH CONTEXT (corrected): _n\subset S$.
+\begin{enumerate}
+\item[\textup{(i)}] Pour que $\mathscr F$ vérifie la propriété $(S_k)$, il faut et il
+suffit que, pour tout $n\geq0$, on ait
+\begin{equation}
+\operatorname{codim}(Z_n,S)>n+k.
+\tag{5.7.4.1}\label{IV.2.s5.7.4.1-fr}
+\end{equation}
+\item[\textup{(ii)}] Supposons en outre que les $Z_n$ soient fermés dans $X$. Alors,
+pour que $\mathscr F$ vérifie la propriété $(S_k)$ en un point $x\in S$, il
+faut et il suffit que, pour tout $n\geq0$, on ait
+\begin{equation}
+\operatorname{codim}_x(Z_n,S)>n+k.
+\tag{5.7.4.2}\label{IV.2.s5
+
+[id 13406]
+OLD: \item[(i)] Pour que
+NEW: \item[\textup{(i)}] Pour que
+FRENCH CONTEXT (corrected): en, $\mathscr F$ un
+$\mathcal O_X$-Module cohérent. Posons $S=\operatorname{Supp}(\mathscr F)$,
+et pour tout $n\geq0$, désignons par $Z_n$ l'ensemble des $z\in X$ tels que
+$\operatorname{coprof}(\mathscr F_z)>n$, de sorte que $Z_n\subset S$.
+\begin{enumerate}
+\item[\textup{(i)}] Pour que $\mathscr F$ vérifie la propriété $(S_k)$, il faut et il
+suffit que, pour tout $n\geq0$, on ait
+\begin{equation}
+\operatorname{codim}(Z_n,S)>n+k.
+\tag{5.7.4.1}\label{IV.2.s5.7.4.1-fr}
+\end{equation}
+\item[\textup{(ii)}] Supposons en outre que les $Z_n$ soient
+
+=================== PAGE IV-2 105 ===================
+----- (English page IV-2 104: shown above in this file) -----
+----- (English page IV-2 105: shown above in this file) -----
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 106 -----
+\oldpage[IV-2]{106}
+
+\begin{remarks}[5.7.8]
+\phantomsection
+\label{IV.5.7.8}
+Let $X$ be a locally Noetherian prescheme of dimension $1$.  The
+following conditions are equivalent: $X$ is Cohen--Macaulay; $X$
+satisfies $(S_1)$; $X$ satisfies $(S_n)$ for some $n\geq1$.  This
+follows from Definitions \sref{IV.5.7.1} and \sref{IV.5.7.2}.
+By \sref{IV.5.7.5}, these conditions are also equivalent to the
+absence of an embedded associated prime cycle.  In particular,
+every reduced locally Noetherian prescheme of dimension $1$ is
+Cohen--Macaulay.
+\end{remarks}
+
+\begin{proposition}[5.7.9]
+\phantomsection
+\label{IV.5.7.9}
+Let $A$ and $B$ be Noetherian rings, let $\rho:A\to B$ be a ring
+homomorphism, and let $M$ be a $B$-module such that the
+$A$-module $M_{[\rho]}$ is finite.  Let $\mathfrak p$ be a prime
+ideal of $A$.  The prime ideals of $B$ lying over $\mathfrak p$ and
+belonging to $\operatorname{Supp}(M)$ are finite in number.  If
+$(\mathfrak q_i)_{1\leq i\leq n}$ is the family of these ideals,
+then
+\begin{align}
+\dim_{A_{\mathfrak p}}(M_{\mathfrak p})
+ &=\sup_i\dim_{B_{\mathfrak q_i}}(M_{\mathfrak q_i})
+\tag{5.7.9.1}\label{IV.5.7.9.1}\\
+\operatorname{prof}_{A_{\mathfrak p}}(M_{\mathfrak p})
+ &=\inf_i\operatorname{prof}_{B_{\mathfrak q_i}}
+   (M_{\mathfrak q_i}).
+\tag{5.7.9.2}\label{IV.5.7.9.2}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+Let $\mathfrak b$ be the annihilator of $M$.  The ring
+$B/\mathfrak b$ identifies with an $A$-submodule of
+$\operatorname{End}_A(M_{[\rho]})$, and is therefore finite over
+$A$.  Hence only finitely many prime ideals of $B$ lie over
+$\mathfrak p$ and contain $\mathfrak b$; these are precisely the
+ones belonging to $\operatorname{Supp}(M)$.
+
+Replacing $B$ by $B/\mathfrak b$ does not change the right-hand
+sides of \eqref{IV.5.7.9.1} and \eqref{IV.5.7.9.2}
+\sref[0]{0.16.1.9}, \sref[0]{0.16.4.8}; we may therefore suppose
+that $B$ is finite over $A$.  Put $S=A\setmin\mathfrak p$ and
+$B'=S^{-1}B$.  Then $B'$ is a Noetherian semilocal ring whose
+maximal ideals are $S^{-1}\mathfrak q_i$, and $\dim_{A_{\mathfrak p}}(M_{\mathfrak p})
+=\dim_{B'}(M_{\mathfrak p})$
+\sref[0]{0.16.1.9}.  Formula \eqref{IV.5.7.9.1} is now the
+semilocal dimension formula \sref[0]{0.16.1.7.4}.
+
+For \eqref{IV.5.7.9.2}, as in \sref[0]{0.16.4.8}, it is enough to
+treat the case
+$\operatorname{prof}_{A_{\mathfrak p}}(M_{\mathfrak p})=0$.  The
+same argument shows that $M_{\mathfrak p}$ contains a
+$B'$-submodule of finite length, and hence a simple
+$B'$-submodule.  Such a module is isomorphic to the residue field
+of one of the local rings $B_{\mathfrak q_i}$.  Thus $\operatorname{prof}_{B_{\mathfrak q_i}}(M_{\mathfrak q_i})=0$
+for at least one $i$ \sref[0]{0.16.4.6}, proving the formula.
+\end{proof}
+
+\begin{corollary}[5.7.10]
+\phantomsection
+\label{IV.5.7.10}
+Assume the hypotheses of \sref{IV.5.7.9}, and suppose in addition
+that $A$ is \emph{local}.  The $A$-module $M_{[\rho]}$ is Cohen--Macaulay
+if and only if every $M_{\mathfrak q_i}$, for
+$\mathfrak q_i$ lying over the maximal ideal of $A$, is a
+Cohen--Macaulay $B_{\mathfrak q_i}$-module and all the numbers
+$\dim_{B_{\mathfrak q_i}}(M_{\mathfrak q_i})$ are equal.
+\end{corollary}
+
+\begin{proof}
+By \eqref{IV.5.7.9.1} and \eqref{IV.5.7.9.2}, these conditions are
+equivalent to
+\[
+\dim_A(M_{[\rho]})
+ =\operatorname{prof}_A(M_{[\rho]}).
+\]
+\end{proof}
+
+\begin{corollary}[5.7.11]
+\phantomsection
+\label{IV.5.7.11}
+Assume the hypotheses of \sref{IV.5.7.9}.
+\begin{enumerate}[{\rm(i)}]
+\item
+\phantomsection
+\label{IV.5.7.11.i}
+If $M_{[\rho]}$ satisfies $(S_k)$, then $M$ satisfies $(S_k)$.
+
+\item
+\phantomsection
+\label{IV.5.7.11.ii}
+Suppose that for every pair of prime ideals
+$\mathfrak q,\mathfrak q'$ of $B$ satisfying
+$\rho^{-1}(\mathfrak q)=\rho^{-1}(\mathfrak q')$, one has $\dim_{B_{\mathfrak q}}(M_{\mathfrak q})
+=\dim_{B_{\mathfrak q'}}(M_{\mathfrak q'})$.
+If $M$ satisfies $(S_k)$, then $M_{[\rho]}$ satisfies $(S_k)$.
+\end{enumerate}
+\end{corollary}
+----- French corrections on page IV-2 105 -----
+[id 13150]
+OLD: des générisations de
+NEW: des \emph{générisations} de
+FRENCH CONTEXT (corrected): re que pour tout
+$n\geq0$, la relation $b\leq a-n-1$ implique $k\leq a-n-1$ équivaut à dire
+que $b\geq\inf(k,a)$, d'où la proposition.
+
+\oldpage[IV-2]{105}
+
+(ii) Le raisonnement est le même que dans (i), à cela près qu'il faut se
+limiter aux $z\in X$ qui sont des \emph{générisations} de $x$, et tenir compte de
+(5.1.3.2).
+
+\begin{proposition}[5.7.5]
+\label{IV.2.s5.7.5-fr}
+Soient $X$ un préschéma localement noethérien, $\mathscr F$ un
+$\mathcal O_X$-Module cohérent. Pour que $\mathscr F$ vérifie $(S_k)$
+($k\geq1$), il faut et il suffit que pou
+
+[id 13152]
+OLD: disant que pour que $\mathscr F$ vérifie $(S_1)$, il faut et il suffit que
+$\mathscr F$ soit sans cycle premier associé immergé.
+NEW: disant que \emph{pour que $\mathscr F$ vérifie $(S_1)$, il faut et il suffit que
+$\mathscr F$ soit sans cycle premier associé immergé}.
+FRENCH CONTEXT (corrected): e $(f_i)_{1\leq i\leq r}$ de sections de
+$\mathcal O_X$ au-dessus de $U$,
+$(\mathscr F|U)/(\sum_{i=1}^r f_i(\mathscr F|U))$
+soit sans cycle premier associé immergé.
+\end{proposition}
+
+Démontrons d'abord la proposition pour $k=1$; elle s'énonce alors encore en
+disant que \emph{pour que $\mathscr F$ vérifie $(S_1)$, il faut et il suffit que
+$\mathscr F$ soit sans cycle premier associé immergé}. En effet, dire que
+$\mathscr F$ vérifie $(S_1)$ signifie qu'aux points
+$x\in\operatorname{Supp}(\mathscr F)$ tels que $\dim(\mathscr F_x)>0$, on a
+$\operatorname{prof}(\mathscr F_x)\geq1$ (puisque aux autres points de
+$\operatorname{Supp}(\mathscr F)$ on a $\
+
+[id 13153]
+OLD: n'est pas associé à $\mathscr F_x$
+NEW: \emph{n'est pas associé à} $\mathscr F_x$
+FRENCH CONTEXT (corrected): peratorname{prof}(\mathscr F_x)\geq1$ (puisque aux autres points de
+$\operatorname{Supp}(\mathscr F)$ on a $\dim(\mathscr F_x)=0$, donc
+$\operatorname{prof}(\mathscr F_x)=0$); mais dire que
+$\operatorname{prof}(\mathscr F_x)\geq1$ signifie que $\mathfrak m_x$
+\emph{n'est pas associé à} $\mathscr F_x$ (\textbf{0}, 16.4.6, (i)), ou encore que $x$
+n'est pas associé à $\mathscr F$ (3.1.1); d'autre part, si $S$ est un
+sous-préschéma de $X$ ayant pour espace sous-jacent
+$\operatorname{Supp}(\mathscr F)$, on a (5.1.12.1)
+$\dim(\mathscr F_x)=\dim(\mathcal O_{S,x}
+
+[id 13155]
+OLD: est nécessaire.
+NEW: est \emph{nécessaire}.
+FRENCH CONTEXT (corrected): scr F_x)=\dim(\mathcal O_{S,x})$; dire que
+$\dim(\mathscr F_x)>0$ signifie donc que $x$ n'est pas point maximal de
+$\operatorname{Supp}(\mathscr F)$ (5.1.2), d'où la conclusion.
+
+En second lieu, montrons que, pour $k$ quelconque $>1$, la condition de
+l'énoncé est \emph{nécessaire}. On peut se borner à considérer le cas où $U=X$,
+et notre assertion sera prouvée (par récurrence sur $k$ et en vertu de la
+première partie du raisonnement) si nous montrons que lorsque $\mathscr F$
+vérifie $(S_k)$ ($k>1$) et que $f$ est une section $\mathscr F
+
+[id 13156]
+OLD: une section $\mathscr F$-régulière
+NEW: une section $\mathscr F$-\emph{régulière}
+FRENCH CONTEXT (corrected):  est \emph{nécessaire}. On peut se borner à considérer le cas où $U=X$,
+et notre assertion sera prouvée (par récurrence sur $k$ et en vertu de la
+première partie du raisonnement) si nous montrons que lorsque $\mathscr F$
+vérifie $(S_k)$ ($k>1$) et que $f$ est une section $\mathscr F$-\emph{régulière}
+de $\mathcal O_X$ au-dessus de $X$, alors $\mathscr F/f\mathscr F$ \emph{vérifie}
+$(S_{k-1})$ (i.e. vérifie (5.7.2.1) où $k$ est remplacé par $k-1$). Or,
+pour tout $x\in X$, $f_x$ est un élément $\mathscr F_x$-régulier; s'il est
+inversible, on a $\mathscr F_x
+
+[id 13157]
+OLD: alors $\mathscr F/f\mathscr F$ vérifie
+NEW: alors $\mathscr F/f\mathscr F$ \emph{vérifie}
+FRENCH CONTEXT (corrected): re assertion sera prouvée (par récurrence sur $k$ et en vertu de la
+première partie du raisonnement) si nous montrons que lorsque $\mathscr F$
+vérifie $(S_k)$ ($k>1$) et que $f$ est une section $\mathscr F$-\emph{régulière}
+de $\mathcal O_X$ au-dessus de $X$, alors $\mathscr F/f\mathscr F$ \emph{vérifie}
+$(S_{k-1})$ (i.e. vérifie (5.7.2.1) où $k$ est remplacé par $k-1$). Or,
+pour tout $x\in X$, $f_x$ est un élément $\mathscr F_x$-régulier; s'il est
+inversible, on a $\mathscr F_x/f_x\mathscr F_x=0$ et la conclusion est
+triviale. Si au contraire $f_x\in\mathfra
+
+[id 13160]
+OLD: est suffisante.
+NEW: est \emph{suffisante}.
+FRENCH CONTEXT (corrected): cr F_x/f_x\mathscr F_x)
+=\operatorname{prof}(\mathscr F_x)-1$ (\textbf{0}, 16.4.6, (i)), et
+$\dim(\mathscr F_x/f_x\mathscr F_x)=\dim(\mathscr F_x)-1$ (\textbf{0}, 16.3.4), et
+notre assertion en résulte.
+
+Prouvons enfin que pour $k>1$, la condition de l'énoncé est \emph{suffisante}. Nous
+allons procéder par récurrence sur $k$; soit $x$ un point de $X$, et
+supposons d'abord que $\dim(\mathscr F_x)\geq k$. L'hypothèse de récurrence
+entraîne que $\mathscr F$ vérifie $(S_{k-1})$, donc
+$\operatorname{prof}(\mathscr F_x)\geq k-1$; compte tenu 
+
+=================== PAGE IV-2 106 ===================
+----- (English page IV-2 105: shown above in this file) -----
+----- (English page IV-2 106: shown above in this file) -----
+----- English, components/07_section57_depth_and_property_sk.tex, page IV-2 107 -----
+\oldpage[IV-2]{107}
+
+\begin{proof}
+This follows immediately from \eqref{IV.5.7.9.1},
+\eqref{IV.5.7.9.2}, and the definition of $(S_k)$.
+\end{proof}
+
+\begin{env}[5.7.12]
+\phantomsection
+\label{IV.5.7.12}
+In accordance with the definitions of \sref{IV.5.7.1}, given an
+\emph{arbitrary} Noetherian ring $A$ and a finite $A$-module $M$, we define
+\[
+\operatorname{coprof}_A(M)
+ =\operatorname{coprof}(M)
+ =\sup_{x\in X}(\operatorname{coprof}_{A_x}(M_x)),
+\qquad X=\Spec(A).
+\]
+We shall see later \sref{IV.6.11.5} that this definition \emph{agrees} with
+that of \sref[0]{0.16.4.9} when $A$ is a Noetherian \emph{local} ring.
+\end{env}
+
+\begin{corollary}[5.7.13]
+\phantomsection
+\label{IV.5.7.13}
+Let $A$ and $B$ be Noetherian rings, let $\rho:A\to B$ be a ring
+homomorphism, and let $M$ be a $B$-module such that $M_{[\rho]}$ is
+a finite $A$-module.  Then
+\begin{equation}
+\operatorname{coprof}_A(M_{[\rho]})
+ \geq \operatorname{coprof}_B(M).
+\tag{5.7.13.1}\label{IV.5.7.13.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+This follows from \sref{IV.5.7.12} and
+\eqref{IV.5.7.9.1}, \eqref{IV.5.7.9.2}.
+\end{proof}
+----- English, components/08_section58_regular_preschemes_serre_criterion.tex, page IV-2 107 -----
+\subsection{Regular preschemes and property
+\texorpdfstring{$(\mathrm{R}_k)$}{(Rk)}. Serre's normality criterion}
+\label{subsection:IV.5.8}
+
+\begin{env}[5.8.1]
+\label{IV.5.8.1}
+Recall \sref[0\textsubscript{\mdseries I}]{0.4.1.4} that a ringed space $(X,\sh O_X)$ is said
+to be \emph{regular} at a point $x\in X$ if $\sh O_x$ is a regular
+local ring.  When dealing with preschemes, we shall use this
+terminology in this chapter only when $X$ is locally Noetherian.
+\end{env}
+
+\begin{definition}[5.8.2]
+\label{IV.5.8.2}
+A locally Noetherian prescheme $X$ is said to be \emph{regular in
+codimension $\leq k$}, or to satisfy property $(\mathrm R_k)$, if the
+set of points where $X$ is not regular has codimension $>k$.  In other
+words \sref{IV.5.1.3}, for every $x\in X$,
+\[
+  \dim(\sh O_x)\leq k
+  \quad\Longrightarrow\quad
+  \sh O_x\ \text{is regular}.
+\]
+\end{definition}
+
+To say that $X$ is regular means that $X$ satisfies $(\mathrm R_k)$
+for every $k$.
+
+If $X=\Spec(A)$, where $A$ is a Noetherian ring, we say that $A$
+satisfies $(\mathrm R_k)$ if $X$ does; to say that $X$ is regular is
+to say that the ring $A$ is regular \sref[0]{0.17.3.6}.  For an
+arbitrary locally Noetherian prescheme $X$, we say that $X$ satisfies
+$(\mathrm R_k)$ \emph{at a point} $x\in X$ if the local ring
+$\sh O_x$ satisfies $(\mathrm R_k)$.  Thus, for every generization
+$x'$ of $x$ in $X$, the relation
+$\dim(\sh O_{x'})\leq k$ must imply that $\sh O_{x'}$ is a regular
+local ring.  By \sref[0]{0.17.3.6}, saying that $X$ is regular at
+$x$ is equivalent to saying that $X$ satisfies $(\mathrm R_n)$ at
+$x$ for every $n\geq0$.
+
+\begin{proposition}[5.8.3]
+\label{IV.5.8.3}
+Let $k$ be a field and let $X$ be a prescheme locally of finite type
+over $k$.  For every $x\in X$, there is an open neighbourhood of $x$
+in $X$ which is isomorphic to a subscheme of a regular $k$-scheme.
+\end{proposition}
+
+\begin{proof}
+There is an affine open neighbourhood $U$ of $x$ isomorphic to a
+$k$-scheme $\Spec(A)$, where $A$ is a $k$-algebra of finite type.
+The algebra $A$ is therefore isomorphic to a quotient of a polynomial
+algebra $k[T_1,\ldots,T_n]$, and the latter is a regular ring
+\sref[0]{0.17.3.7}.
+\end{proof}
+
+\begin{env}[5.8.4]
+\label{IV.5.8.4}
+By \sref{IV.5.8.2}, saying that $X$ satisfies $(\mathrm R_0)$ means
+that, at every maximal point $x$ of $X$, the ring $\sh O_x$ is a
+field \sref[0]{0.17.1.4}; in other words, $X$ is reduced at $x$.
+The set $U$ of points where $X$ is reduced is open, because the
+nilradical of $X$ is a coherent $\sh O_X$-Module
+\sref[I]{I.6.1.1}, \sref[0\textsubscript{\mdseries I}]{0.5.2.2}.  Consequently, saying that
+$X$ satisfies $(\mathrm R_0)$ is equivalent to saying that $U$ is
+everywhere dense.
+\end{env}
+----- French corrections on page IV-2 106 -----
+[id 13166]
+OLD: noethérien de dimension 1;
+NEW: noethérien \emph{de dimension} 1;
+FRENCH CONTEXT (corrected): n $(\mathscr F|U)$-régulière $f$ de $\mathcal O_X$ au-dessus
+de $U$, $(\mathscr F|U)/f(\mathscr F|U)$ soit sans cycle premier associé
+immergé.
+\end{corollary}
+
+\oldpage[IV-2]{106}
+
+\begin{remarks}[5.7.8]
+\label{IV.2.s5.7.8-fr}
+Soit $X$ un préschéma localement noethérien \emph{de dimension} 1; il revient alors
+au même de dire que $X$ est un préschéma de Cohen-Macaulay, ou qu'il vérifie
+$(S_1)$, ou qu'il vérifie une des propriétés $(S_n)$ pour $n\geq1$, en vertu
+des définitions (5.7.1) et (5.7.2). En vertu de (5.7.5), il revient donc
+encore au même,
+
+[id 13167]
+OLD: noethérien réduit de dimension
+NEW: noethérien \emph{réduit} de dimension
+FRENCH CONTEXT (corrected): définitions (5.7.1) et (5.7.2). En vertu de (5.7.5), il revient donc
+encore au même, pour les préschémas de dimension 1, de dire que $X$ est un
+préschéma de Cohen-Macaulay ou qu'il n'a pas de cycle premier associé
+immergé. Par exemple, un préschéma localement noethérien \emph{réduit} de dimension
+1 est un préschéma de Cohen-Macaulay.
+\end{remarks}
+
+\begin{proposition}[5.7.9]
+\label{IV.2.s5.7.9-fr}
+Soient $A$, $B$ deux anneaux noethériens, $\rho:A\to B$ un homomorphisme
+d'anneaux, $M$ un $B$-module tel que $M_{[\rho]}$ soit un $A$-module de type
+fini. 
+
+[id 13171]
+OLD: $A$-algèbre finie.
+NEW: $A$-algèbre \emph{finie}.
+FRENCH CONTEXT (corrected): ont
+précisément ceux qui appartiennent à $\operatorname{Supp}(M)$. Remplaçant
+$B$ par $B/\mathfrak b$, ce qui ne change pas les seconds membres de
+(5.7.9.1) et (5.7.9.2) (par (\textbf{0}, 16.1.9) et (\textbf{0}, 16.4.8)), on peut donc
+supposer que $B$ est une $A$-algèbre \emph{finie}. Posons $S=A\setmin\mathfrak p$, et
+$B'=S^{-1}B$; $B'$ est un anneau semi-local noethérien dont les idéaux
+maximaux sont $S^{-1}\mathfrak q_i$ ($1\leq i\leq n$) et comme
+$M_{\mathfrak p}$ est un $A_{\mathfrak p}$-module de type fini, on a
+$\dim_{A_{\mathfrak p
+
+[id 13177]
+OLD: de longueur finie
+NEW: de \emph{longueur finie}
+FRENCH CONTEXT (corrected):  la relation (5.7.9.2), on se ramène aussitôt
+comme dans (\textbf{0}, 16.4.8) au cas où
+$\operatorname{prof}_{A_{\mathfrak p}}(M_{\mathfrak p})=0$, et le même
+raisonnement que dans (\textbf{0}, 16.4.8) montre que $M_{\mathfrak p}$ contient un
+sous-$B'$-module de \emph{longueur finie}, et par suite aussi un sous-$B'$-module
+\emph{simple}; mais un tel sous-module est nécessairement isomorphe au corps
+résiduel de l'un des $B_{\mathfrak q_i}$, donc il y a au moins un indice $i$
+tel que
+$\operatorname{prof}_{B_{\mathfrak q_i}}(M_{\mathfrak q_i
+
+[id 13178]
+OLD: sous-$B'$-module
+simple;
+NEW: sous-$B'$-module
+\emph{simple};
+FRENCH CONTEXT (corrected): mme dans (\textbf{0}, 16.4.8) au cas où
+$\operatorname{prof}_{A_{\mathfrak p}}(M_{\mathfrak p})=0$, et le même
+raisonnement que dans (\textbf{0}, 16.4.8) montre que $M_{\mathfrak p}$ contient un
+sous-$B'$-module de \emph{longueur finie}, et par suite aussi un sous-$B'$-module
+\emph{simple}; mais un tel sous-module est nécessairement isomorphe au corps
+résiduel de l'un des $B_{\mathfrak q_i}$, donc il y a au moins un indice $i$
+tel que
+$\operatorname{prof}_{B_{\mathfrak q_i}}(M_{\mathfrak q_i})=0$
+(\textbf{0}, 16.4.6), ce qui termine la démonstra
+
+[id 13183]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): tion
+$\dim_A(M)=\operatorname{prof}_A(M)$.
+
+\begin{corollary}[5.7.11]
+\label{IV.2.s5.7.11-fr}
+Supposons vérifiées les hypothèses de \textup{(5.7.9)}.
+\begin{enumerate}
+\item[\textup{(i)}] Si $M_{[\rho]}$ vérifie la propriété $(S_k)$, il en est de même
+de $M$.
+\item[\textup{(ii)}] Supposons que pour tout couple d'idéaux premiers
+$\mathfrak q$, $\mathfrak q'$ de $B$ tels que
+$\rho^{-1}(\mathfrak q)=\rho^{-1}(\mathfrak q')$, on ait
+$\dim_{B_{\mathfrak q}}(M_{\mathfrak q})
+=\dim_{B_{\mathfrak q'}}(M_{\mathfrak q'})$. Alors, si $M$ vérifie
+
+[id 13182]
+OLD: \item[(i)]
+NEW: \item[\textup{(i)}]
+FRENCH CONTEXT (corrected): y}
+
+Il résulte en effet de (5.7.9.1) et de (5.7.9.2) que ces conditions
+équivalent à la relation
+$\dim_A(M)=\operatorname{prof}_A(M)$.
+
+\begin{corollary}[5.7.11]
+\label{IV.2.s5.7.11-fr}
+Supposons vérifiées les hypothèses de \textup{(5.7.9)}.
+\begin{enumerate}
+\item[\textup{(i)}] Si $M_{[\rho]}$ vérifie la propriété $(S_k)$, il en est de même
+de $M$.
+\item[\textup{(ii)}] Supposons que pour tout couple d'idéaux premiers
+$\mathfrak q$, $\mathfrak q'$ de $B$ tels que
+$\rho^{-1}(\mathfrak q)=\rho^{-1}(\mathfrak q')$, on ait
+$\dim_{B_{\mat
+

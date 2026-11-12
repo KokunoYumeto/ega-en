@@ -1,0 +1,8 @@
+- `TRANSCRIPTION?` proof of (6.7.1.1) — `(\hyperref[I.3.6.5-fr]{I, 3.6.6})`: key and shown text disagree; EGA I §3.6 ends at 3.6.5, which is the statement used (on $X\times_Y\operatorname{Spec}(\mathcal{O}_y)$). Kept as transcribed.
+- `TRANSCRIPTION?` proof of (6.7.1.1) — display `\theta\otimes1:K^m=C^m\otimes K\to M_{[\varphi]}\otimes K`: $u_y$ is a stalk at $y$, so its source is $(\mathcal{O}_Y^m)_y=k^m=C^m\otimes_C k$; $K$ (field of $x$) stands where $k$ is expected. Possibly already in the original. Copied as is.
+- `TRANSCRIPTION?` proof of (6.7.1.1) — "$g_x$ étant par hypothèse un générateur de $(\mathcal{L}^{\otimes n})_x$": $g_x$ generates $\mathcal{L}_x$; the generator of $(\mathcal{L}^{\otimes n})_x$ is $g_x^{\otimes n}$. Translated as written.
+- `TERM` anneau total des fractions → total ring of fractions (6.6.6).
+- `TERM` normalisé (n.) → normalization (6.6.13).
+- `TERM` préschéma somme → sum prescheme (proof of 6.6.3); summandes → summands (6.6.11).
+- `TERM` suite exacte de cohomologie → exact cohomology sequence (6.7.1).
+- `TERM` ce numéro / le numéro suivant → this subsection / the next subsection.

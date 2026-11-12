@@ -1,0 +1,7 @@
+- TRANSCRIPTION? 8.10.6: the page marker \oldpage[II]{188} falls inside "quasi-cohérent" ("un faisceau quasi-", blank line, \oldpage, "cohérent"), so the paragraph breaks in mid-word. Mirrored in the English ("quasi-" / "coherent").
+- TRANSCRIPTION? 8.11.6, statement: "supposons outre que"; "en" is missing ("supposons en outre que"). Translated "suppose moreover that".
+- TERM fibre in "local sur chaque fibre" (for $\mu^\sharp$, $\nu^\sharp$, 8.11.1 proof) → "local on each stalk" (glossary: fibre of a sheaf → stalk).
+- TERM non diviseur de 0 → not a zero divisor.
+- TERM sous-anneau supplémentaire de $\mathfrak{J}$ → subring complementary to $\mathfrak{J}$ (8.10.1, proof).
+- TERM anneau de séries formelles → formal power series ring.
+- TERM calcul élémentaire d'intersections → elementary intersection computation (8.10.7).

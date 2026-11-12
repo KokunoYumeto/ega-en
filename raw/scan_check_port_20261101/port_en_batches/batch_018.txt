@@ -1,0 +1,4714 @@
+# English hand pass, batch_018: 153 items on 6 printed pages
+
+=================== PAGE III 150 ===================
+----- English, ega3/ega3-4.tex, page III 149 -----
+\oldpage[III]{149}
+is finite if and only if it is proper and all its fibres
+$f^{-1}(y)$, for $y\in\mathfrak{Y}$, are finite.
+\end{proposition}
+
+\begin{proof}
+By the definitions \sref{III.3.4.1} and \sref{III.4.8.2}, the
+assertion reduces immediately to the same assertion for $f_0$
+(with the notation of \sref{III.4.8.1}), which is precisely
+\sref{III.4.4.2}.
+\end{proof}
+----- English, ega3/ega3-5.tex, page III 149 -----
+\section{An existence theorem for coherent algebraic sheaves}
+\label{section:III.5}
+
+
+\subsection{Statement of the theorem}
+\label{subsection:III.5.1}
+
+\begin{env}[5.1.1]
+\label{III.5.1.1}
+Let $A$ be an adic Noetherian ring and $\mathfrak{J}$ an ideal of
+definition of $A$, so that $A$ is separated and complete for the
+$\mathfrak{J}$-adic topology.  If $Y=\Spec(A)$, the affine formal
+prescheme $\Spf(A)$ is identified with the completion
+$\widehat{Y}$ of $Y$ along the closed subset
+$Y'=\mathrm{V}(\mathfrak{J})$ \sref[I]{I.10.10.1}.  Let $X$ be an
+ordinary $Y$-prescheme of finite type, with structural morphism
+$f:X\to Y$.  We denote by $\widehat{X}$ the completion of $X$ along
+the closed subset $X'=f^{-1}(Y')$, or equivalently the formal
+$\widehat{Y}$-prescheme $X\times_Y\widehat{Y}$, and by
+$\widehat{f}:\widehat{X}\to\widehat{Y}$ the extension of $f$ to the
+completions.  Finally, for every coherent $\sh{O}_X$-module
+$\sh{F}$, we denote by $\widehat{\sh{F}}$ its completion
+$\sh{F}_{/X'}$, which is a coherent
+$\sh{O}_{\widehat{X}}$-module.
+\end{env}
+
+\begin{proposition}[5.1.2]
+\label{III.5.1.2}
+With the hypotheses and notation of \sref{III.5.1.1}, let $\sh{F}$
+be a coherent $\sh{O}_X$-module whose support is proper over $Y$
+\sref[II]{II.5.4.10}.  The canonical homomorphisms
+\sref{III.4.1.4}
+\[
+  \rho_i:
+  \HH^i(X,\sh{F})
+  \longrightarrow
+  \HH^i(\widehat{X},\widehat{\sh{F}})
+\]
+are isomorphisms.
+\end{proposition}
+
+\begin{proof}
+The $A$-module $\HH^i(X,\sh{F})$ is of finite type
+\sref{III.3.2.4}, and is therefore identical with its separated
+completion for the $\mathfrak{J}$-preadic topology
+\sref[0]{0.7.3.6}.  The proposition is consequently a special case
+of \sref{III.4.1.10}.
+\end{proof}
+
+Recall that the canonical isomorphisms $\rho_i$ commute with the
+connecting homomorphisms associated with every exact sequence $0\longrightarrow\sh{F}'
+\longrightarrow\sh{F}
+\longrightarrow\sh{F}''
+\longrightarrow0$
+of coherent $\sh{O}_X$-modules
+\sref[0]{0.12.1.6} \sref[I]{I.10.8.9}.
+
+\begin{corollary}[5.1.3]
+\label{III.5.1.3}
+Let $\sh{F}$ and $\mathscr G$, be coherent $\sh{O}_X$-modules such that
+the intersection of their supports is proper over $Y$.  The
+canonical homomorphism
+\[
+  \Hom_{\sh{O}_X}(\sh{F},\sh{G})
+  \longrightarrow
+  \Hom_{\sh{O}_{\widehat{X}}}
+  (\widehat{\sh{F}},\widehat{\sh{G}})
+  \tag{5.1.3.1}
+  \label{III.5.1.3.1.eq}
+\]
+which sends a homomorphism $u:\sh{F}\to\sh{G}$ to its completion
+$\widehat{u}:\widehat{\sh{F}}\to\widehat{\sh{G}}$, is an
+isomorphism.  Moreover, when $f$ is closed,
+$\widehat{u}$ is injective (respectively, surjective) if and only
+if $u$ is injective (respectively, surjective).
+\end{corollary}
+
+\begin{proof}
+The first assertion is a special case of \sref{III.4.5.3}; it also
+follows from the fact that the source of \eqref{III.5.1.3.1.eq} is
+an $A$-module of finite type and is therefore identical with its
+separated completion.  For the second assertion, note that, by
+\sref[I]{I.10.8.14}, $\widehat{u}$ is injective (respectively,
+surjective) if and only if there is a neighbourhood of $X'$ in
+$X$ on which $u$ is injective (respectively, surjective).  The
+conclusion therefore follows from the lemma below.
+\end{proof}
+----- English, ega3/ega3-6.tex, page III 149 -----
+\oldpage[III]{149} $\shTor_n^S(\sh P_\bullet,\sh Q_\bullet)$.
+Finally, for every open subset $U$ of $X$ and every open subset
+$V$ of $Y$, its restriction to $U\times_SV$ is canonically
+isomorphic to $\shTor_n^S(\sh P_\bullet|U,\sh Q_\bullet|V)$.
+\end{env}
+
+\begin{env}[6.5.3]
+\label{III.6.5.3}
+Pass now to the general case, where $S$ is arbitrary.  Let
+$(S_\alpha)$ be a covering of $S$ by affine open subsets, and let
+$X_\alpha$ and $Y_\alpha$ be the inverse images of $S_\alpha$ in
+$X$ and $Y$.  We must show that the sheaves
+\[
+  \sh G_\alpha
+  =
+  \shTor_n^{S_\alpha}
+  (\sh P_\bullet|X_\alpha,\sh Q_\bullet|Y_\alpha)
+\]
+satisfy the gluing condition.
+
+For every affine open subset
+$T\subset S_\alpha\cap S_\beta$, let $U$ and $V$ be its inverse
+images in $X$ and $Y$.  It is enough to define canonical
+isomorphisms between the restrictions of $\sh G_\alpha$ and
+$\sh G_\beta$ to $U\times_SV$ and $\shTor_n^T(\sh P_\bullet|U,\sh Q_\bullet|V)$.
+We may further restrict to the case in which
+$T=\mathrm D(f_\alpha)=\mathrm D(f_\beta)$, where $f_\alpha$ and
+$f_\beta$ are sections of $\sh O_S$ over $S_\alpha$ and
+$S_\beta$, respectively.  By \sref{III.6.4.2}, $\shTor_n^T(\sh P_\bullet|U,\sh Q_\bullet|V)$
+is canonically isomorphic both to
+$\shTor_n^{S_\alpha}(\sh P_\bullet|U,\sh Q_\bullet|V)$ and to
+$\shTor_n^{S_\beta}(\sh P_\bullet|U,\sh Q_\bullet|V)$.
+Combining these isomorphisms with the local identifications of
+\sref{III.6.5.2} completes the definition of the
+$\sh O_Z$-module $\shTor_n^S(\sh P_\bullet,\sh Q_\bullet)$.
+For every open subset $U$ of $X$ and every open subset $V$ of
+$Y$, the restriction of this module to $U\times_SV$ is
+canonically isomorphic to $\shTor_n^S(\sh P_\bullet|U,\sh Q_\bullet|V)$.
+
+This construction plainly defines, on the categories of
+bounded-below complexes of quasi-coherent modules, a
+bi-$\partial$-functor $\shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)$
+with values in $\sh O_Z$-modules.  Indeed the assertion is local
+on $X$, $Y$, and $S$, by \sref{III.6.4.5} and by the fact that
+\sref{III.6.4.4.2} is a morphism of bi-$\partial$-functors.
+
+If $\sh P_\bullet$ and $\sh Q_\bullet$ are concentrated in degree
+zero, with respective terms $\sh F$ and $\sh G$, then
+\[
+  \shTor_0^S(\sh F,\sh G)
+  =
+  \sh F\otimes_S\sh G,
+\]
+the external tensor product defined in \sref[I]{I.9.1.2}; this
+follows from \sref{III.6.4.1.1} and \sref[I]{I.9.1.3}.
+\end{env}
+
+\begin{env}[6.5.4]
+\label{III.6.5.4}
+The preceding construction and \sref{III.6.4.6} show that
+$\shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)$ is the common abutment
+of two spectral functors
+$'\sh E(\sh P_\bullet,\sh Q_\bullet)$ and
+$''\sh E(\sh P_\bullet,\sh Q_\bullet)$, whose $E_2$-terms are
+\[
+  '\sh E_{pq}^2
+  =
+  \sh H_p\bigl(\shTor_q^S(\sh P_\bullet,\sh Q_\bullet)\bigr)
+  \tag{6.5.4.1}\label{III.6.5.4.1}
+\]
+and
+\[
+  ''\sh E_{pq}^2
+  =
+  \bigoplus_{q'+q''=q}
+  \shTor_p^S
+  \bigl(\sh H_{q'}(\sh P_\bullet),
+        \sh H_{q''}(\sh Q_\bullet)\bigr)
+  \tag{6.5.4.2}\label{III.6.5.4.2}
+\]
+The spectral sequence \sref{III.6.5.4.2} is always regular.  Both
+spectral sequences are biregular when $\sh P_\bullet$ and
+$\sh Q_\bullet$ are bounded below.  A further case in which they
+are biregular is described next.
+\end{env}
+
+\begin{env}[6.5.5]
+\label{III.6.5.5}
+Let $T$ be a topological space.  A sheaf of rings $\sh A$ on $T$
+is said to have \emph{cohomological dimension at most $n$} if the
+ring $\sh A_t$ has cohomological dimension at most $n$ for every
+$t\in T$.  In this case the ringed space $(T,\sh A)$ is also said
+to have cohomological dimension at most $n$.  A sheaf of rings, or
+a ringed space, has \emph{finite cohomological dimension} if this
+holds for some integer $n$.
+
+If the $\sh A_t$ are Noetherian commutative local rings, saying
+that they have cohomological dimension at most $n$ means that
+they are regular and have Krull dimension at most $n$
+----- English, ega3/ega3-5.tex, page III 150 -----
+\oldpage[III]{150}
+
+\begin{lemma}[5.1.3.1]
+\label{III.5.1.3.1}
+Under the hypotheses of \sref{III.5.1.1}, suppose in addition that
+$f$ is closed.  Every neighbourhood of $X'$ in $X$ is then equal
+to $X$.
+\end{lemma}
+
+\begin{proof}
+We first reduce to the case $f(X)=Y$.  Indeed, by hypothesis,
+$f(X)$ is a closed subset $Z$ of $Y$.  We may replace $f$ by
+$f_{\mathrm{red}}$ \sref[I]{I.6.3.4}, and hence suppose that $X$
+and $Y$ are reduced; we may then replace $Y$ by the reduced closed
+subprescheme having $Z$ as its underlying space
+\sref[I]{I.5.2.2}, since every ideal of $A$ is closed and every
+quotient ring of $A$ is therefore adic and Noetherian.
+
+We then have $f(X')=Y'$.  If $V$ is an open neighbourhood of $X'$
+in $X$, the set $f(X\setmin V)$ is closed in $Y$ and does not meet $Y'$.
+This is impossible unless $X\setmin V$ is empty, because $\mathfrak{J}$
+is contained in the radical of $A$
+\sref[I]{I.1.1.15} \sref[0]{0.7.1.10}.  Thus $V=X$.
+\end{proof}
+
+If we restrict attention to coherent $\sh{O}_X$-modules whose
+support is proper over $Y$, \sref{III.5.1.3} says, in categorical
+language, that the functor
+\[
+  \sh{F}\longmapsto\widehat{\sh{F}}
+\]
+is fully faithful from the category of such $\sh{O}_X$-modules to
+the category of coherent $\sh{O}_{\widehat{X}}$-modules.  It thus
+gives an equivalence of the former category with a full
+subcategory of the latter \sref[0]{0.8.1.6}.  The existence theorem
+will show that, when $X$ is proper over $Y$, this subcategory is in
+fact the category of all coherent
+$\sh{O}_{\widehat{X}}$-modules.  More precisely:
+
+\begin{theorem}[5.1.4]
+\label{III.5.1.4}
+Let $A$ be an adic Noetherian ring, let $Y=\Spec(A)$, let
+$\mathfrak{J}$ be an ideal of definition of $A$, and put
+$Y'=\mathrm{V}(\mathfrak{J})$.  Let $f:X\to Y$ be a separated
+morphism of finite type and put $X'=f^{-1}(Y')$.  Let
+\[
+  \widehat{Y}=Y_{/Y'}=\Spf(A),\qquad
+  \widehat{X}=X_{/X'}
+\]
+be the completions of $Y$ and $X$ along $Y'$ and $X'$, and let
+$\widehat{f}:\widehat{X}\to\widehat{Y}$ be the extension of $f$ to
+the completions.  Then the functor
+\[
+  \sh{F}\longmapsto\sh{F}_{/X'}=\widehat{\sh{F}}
+\]
+is an equivalence from the category of coherent
+$\sh{O}_X$-modules whose support is proper over $\Spec(A)$ to the
+category of coherent $\sh{O}_{\widehat{X}}$-modules whose support
+is proper over $\Spf(A)$.
+\end{theorem}
+
+In other words, in view of \sref{III.5.1.3}:
+
+\begin{corollary}[5.1.5]
+\label{III.5.1.5}
+An $\sh{O}_{\widehat{X}}$-module is isomorphic to the completion of
+a coherent $\sh{O}_X$-module whose support is proper over
+$\Spec(A)$ if and only if it is coherent and its support is proper
+over $\Spf(A)$.
+\end{corollary}
+
+The most important case is the following:
+
+\begin{corollary}[5.1.6]
+\label{III.5.1.6}
+Suppose that $X$ is proper over $Y=\Spec(A)$.  Then the functor
+$\sh{F}\leadsto\widehat{\sh{F}}$ is an equivalence between the
+category of coherent $\sh{O}_X$-modules and the category of
+coherent $\sh{O}_{\widehat{X}}$-modules.
+\end{corollary}
+
+\begin{env}[5.1.7]
+\label{III.5.1.7}
+\emph{Scholium.}
+Taking account of the characterization of coherent sheaves on
+formal preschemes \sref[I]{I.10.11.3}, we see that, under the
+conditions of \sref{III.5.1.1}, giving a coherent
+$\sh{O}_X$-module whose support is proper over $\Spec(A)$ is
+equivalent---if
+\[
+  Y_n=\Spec(A/\mathfrak{J}^{n+1}),\qquad
+  X_n=X\times_Y Y_n
+\]
+---to giving a projective system $(\sh{F}_n)$ of coherent
+$\sh{O}_{X_n}$-modules such that, for $m\leq n$,
+\[
+  \sh{F}_m
+  =
+  \sh{F}_n\otimes_{\sh{O}_{Y_n}}\sh{O}_{Y_m},
+  \qquad\text{or equivalently}\qquad
+  \sh{F}_m
+  =
+  \sh{F}_n/\mathfrak{J}^{m+1}\sh{F}_n,
+\]
+and such that the support of $\sh{F}_0$ is a subset of $X_0$
+proper over $Y_0$.  By \sref[I]{I.10.11.4}, homomorphisms of
+coherent $\sh{O}_X$-modules are interpreted similarly as
+homomorphisms of projective systems of coherent
+$\sh{O}_{X_n}$-modules.
+----- English, ega3/ega3-6.tex, page III 150 -----
+\oldpage[III]{150}
+(\sref[0]{0.17.3.1}).  In the terminology of dimension theory to
+be introduced in Chapter IV, a locally Noetherian prescheme $T$ has
+cohomological dimension at most $n$ exactly when it is regular
+(\sref[0]{0.4.1.4}) and has dimension at most $n$.  Equivalently,
+for every affine open subset $U$ of $T$, the ring
+$\Gamma(U,\sh O_T)$ has cohomological dimension at most $n$
+(\sref[0]{0.17.2.6}).
+
+Consequently, if $S$ is locally Noetherian and has finite
+cohomological dimension, then \sref{III.6.3.2} shows that both
+$'\sh E(\sh P_\bullet,\sh Q_\bullet)$ and
+$''\sh E(\sh P_\bullet,\sh Q_\bullet)$ are biregular.
+
+Finally, under the canonical isomorphism
+$X\times_SY\xrightarrow{\sim}Y\times_SX$,
+$\shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)$ corresponds
+canonically to
+$\shTor_\bullet^S(\sh Q_\bullet,\sh P_\bullet)$.
+\end{env}
+
+\begin{proposition}[6.5.6]
+\label{III.6.5.6}
+Let $(\sh P_{\alpha\bullet})$ be a filtered direct system of
+complexes of quasi-coherent $\sh O_X$-modules.  There is a
+canonical isomorphism
+\[
+  \varinjlim_\alpha
+  \shTor_\bullet^S(\sh P_{\alpha\bullet},\sh Q_\bullet)
+  \xrightarrow{\sim}
+  \shTor_\bullet^S
+  \left(\varinjlim\sh P_{\alpha\bullet},\sh Q_\bullet\right).
+  \tag{6.5.6.1}\label{III.6.5.6.1}
+\]
+\end{proposition}
+
+\begin{proof}
+The question is local on $S$, $X$, and $Y$.  We may therefore
+suppose that $S$, $X$, and $Y$ are affine, in which case the
+proposition reduces to \sref{III.6.3.6}.
+\end{proof}
+
+\begin{env}[6.5.7]
+\label{III.6.5.7}
+\emph{Remarks.}
+
+\textnormal{(i)} Consider in particular the case $S=X=Y$, with
+$\sh P_\bullet$ and $\sh Q_\bullet$ two complexes of
+quasi-coherent $\sh O_S$-modules.  Then the
+$\shTor_n^S(\sh P_\bullet,\sh Q_\bullet)$ are quasi-coherent
+$\sh O_S$-modules.  Moreover, for every point $z\in S$,
+\sref{III.6.5.6} gives a canonical isomorphism
+\[
+  \bigl(\shTor_n^S(\sh P_\bullet,\sh Q_\bullet)\bigr)_z
+  \xrightarrow{\sim}
+  \mathbf{Tor}_n^{\sh O_z}
+  \bigl((\sh P_\bullet)_z,(\sh Q_\bullet)_z\bigr),
+  \tag{6.5.7.1}\label{III.6.5.7.1}
+\]
+because the question is local and, by \sref{III.6.4.1.1},
+reduces to the case of modules.
+
+\textnormal{(ii)} The definition of hypertor can be generalized
+to two complexes $\sh P_\bullet,\sh Q_\bullet$ of
+$\sh O_X$-modules on the same ringed space $(X,\sh O_X)$.  For
+every open subset $U$ of $X$, put
+\[
+  A(U)=\Gamma(U,\sh O_X),\qquad
+  P_\bullet(U)=\Gamma(U,\sh P_\bullet),\qquad
+  Q_\bullet(U)=\Gamma(U,\sh Q_\bullet).
+\]
+The $A(U)$-modules $\mathbf{Tor}_n^{A(U)}\bigl(P_\bullet(U),Q_\bullet(U)\bigr)$
+then form a presheaf on $X$; denote the associated
+$\sh O_X$-module by
+$\shTor_n^X(\sh P_\bullet,\sh Q_\bullet)$.  When $X$ is a
+prescheme, \sref{III.6.3.12} shows that this module is
+canonically isomorphic to the hypertor defined above.  We shall
+not pursue this generalization further.
+\end{env}
+
+\begin{proposition}[6.5.8]
+\label{III.6.5.8}
+Let $X$ and $Y$ be two $S$-preschemes, and let $\sh F$
+(respectively $\sh G$) be a quasi-coherent $\sh O_X$-module
+(respectively $\sh O_Y$-module).  If $\sh F$ or $\sh G$ is
+$S$-flat, then
+\[
+  \shTor_n^S(\sh F,\sh G)=0\qquad(n\ne0).
+\]
+\end{proposition}
+
+\begin{proof}
+The question is local on $X$ and $Y$, so we may suppose that
+$X$, $Y$, and $S$ are affine, with respective rings $B$, $C$,
+and $A$, and write $\sh F=\widetilde M$ and
+$\sh G=\widetilde N$, where $M$ is a $B$-module and $N$ a
+$C$-module.  Suppose, for example, that $\sh F$ is $S$-flat.
+This means that, for every $s\in S$, $M_s$ is a flat
+$A_s$-module (\sref[0]{0.6.7.1}); hence $M$ is a flat
+$A$-module (\sref[0]{0.6.3.3}).  Thus
+$\Tor_n^A(M,N)=0$ for $n>0$ and every $C$-module $N$
+(\sref[0]{0.6.1.1}), and the conclusion follows from
+\sref{III.6.4.1.1}.
+\end{proof}
+
+\begin{corollary}[6.5.9]
+\label{III.6.5.9}
+Let $X$ and $Y$ be two $S$-preschemes, and let
+$\sh P_\bullet$ (respectively $\sh Q_\bullet$) be a
+----- English, ega3/ega3-5.tex, page III 151 -----
+\oldpage[III]{151}
+
+In all known applications, $A$ is in fact a local adic Noetherian
+ring.  Thus the $Y_n$ are spectra of local Artinian rings, and the
+results of this subsection and of the preceding ones reduce, to a
+large extent, algebraic geometry over a local adic Noetherian ring
+to algebraic geometry over local Artinian rings.
+\end{env}
+
+\begin{corollary}[5.1.8]
+\label{III.5.1.8}
+Under the hypotheses of \sref{III.5.1.4}, the map
+\[
+  Z\longmapsto\widehat{Z}=Z_{/(Z\cap X')}
+\]
+is a bijection from the set of closed subpreschemes $Z$ of $X$
+which are proper over $Y$ onto the set of closed formal
+subpreschemes of $\widehat{X}$ which are proper over
+$\widehat{Y}$.
+\end{corollary}
+
+\begin{proof}
+A closed formal subprescheme of $\widehat{X}$ has the form $\bigl(T,
+(\sh{O}_{\widehat{X}}/\sh{A})|_T\bigr)$,
+where $\sh{A}$ is a coherent ideal of
+$\sh{O}_{\widehat{X}}$ \sref[I]{I.10.14.2}.  If $T$ is proper over
+$\widehat{Y}$, \sref{III.5.1.4} shows that
+$\sh{O}_{\widehat{X}}/\sh{A}$ is isomorphic to an
+$\sh{O}_{\widehat{X}}$-module of the form
+$\widehat{\sh{F}}$, where $\sh{F}$ is a coherent
+$\sh{O}_X$-module whose support is proper over $Y$.  Moreover,
+\sref{III.5.1.3} shows that the canonical homomorphism $\sh{O}_{\widehat{X}}
+\longrightarrow
+\sh{O}_{\widehat{X}}/\sh{A}$
+has the form $\widehat{u}$, where
+$u:\sh{O}_X\to\sh{F}$ is a surjective homomorphism of
+$\sh{O}_X$-modules.  Consequently
+$\sh{F}=\sh{O}_X/\sh{N}$ for a coherent ideal $\sh{N}$ of
+$\sh{O}_X$, and
+$\sh{A}=\widehat{\sh{N}}$ \sref[I]{I.10.8.8}.  The conclusion now
+follows from \sref[I]{I.10.14.7}.
+\end{proof}
+
+
+\subsection{Proof of the existence theorem: the projective and quasi-projective case}
+\label{subsection:III.5.2}
+
+\begin{env}[5.2.1]
+\label{III.5.2.1}
+Under the conditions of \sref{III.5.1.4}, we shall say
+provisionally that a coherent $\sh{O}_{\widehat{X}}$-module is
+\emph{algebraizable} if it is isomorphic to the completion
+$\widehat{\sh{F}}$ of a coherent $\sh{O}_X$-module $\sh{F}$ whose
+support is proper over $Y$.
+\end{env}
+
+\begin{lemma}[5.2.2]
+\label{III.5.2.2}
+Let $\sh{F}'$ and $\sh{G}'$ be algebraizable
+$\sh{O}_{\widehat{X}}$-modules.  For every homomorphism
+$u:\sh{F}'\to\sh{G}'$, the modules
+$\Ker(u)$, $\Im(u)$, and $\Coker(u)$ are algebraizable.
+\end{lemma}
+
+\begin{proof}
+Write
+\[
+  \sh{F}'=\widehat{\sh{F}},\qquad
+  \sh{G}'=\widehat{\sh{G}},
+\]
+where $\sh{F}$ and $\sh{G}$ are coherent $\sh{O}_X$-modules whose
+supports are proper over $Y$.  By \sref{III.5.1.3},
+$u=\widehat{v}$ for a homomorphism
+$v:\sh{F}\to\sh{G}$.  Since completion is exact,
+$\Ker(\widehat{v})\simeq\widehat{\Ker(v)}$; and because the support
+of $\Ker(v)$ is contained in that of $\sh{F}$, it follows that
+$\Ker(u)$ is algebraizable.  The arguments for $\Im(u)$ and
+$\Coker(u)$ are the same.
+\end{proof}
+
+\begin{proposition}[5.2.3]
+\label{III.5.2.3}
+Let $A$ be an adic Noetherian ring, $\mathfrak{J}$ an ideal of
+definition of $A$, $\mathfrak{Y}=\Spf(A)$, and
+$f:\mathfrak{X}\to\mathfrak{Y}$ a proper morphism of formal
+preschemes.  Put
+\[
+  Y_k=\Spec(A/\mathfrak{J}^{k+1}),\qquad
+  X_k=\mathfrak{X}\times_{\mathfrak{Y}}Y_k,
+\]
+and, for every $\sh{O}_{\mathfrak{X}}$-module $\sh{F}$, put $\sh{F}_k
+=
+\sh{F}\otimes_{\sh{O}_{\mathfrak{X}}}\sh{O}_{X_k}
+=
+\sh{F}/\mathfrak{J}^{k+1}\sh{F}$.
+Let $\sh{L}$ be an invertible $\sh{O}_{\mathfrak{X}}$-module, and
+suppose that
+$\sh{L}_0=\sh{L}/\mathfrak{J}\sh{L}$ is an ample
+$\sh{O}_{X_0}$-module.  For every
+$\sh{O}_{\mathfrak{X}}$-module $\sh{F}$ and every integer $n$, set $\sh{F}(n)=\sh{F}\otimes\sh{L}^{\otimes n}$.
+Then, for every coherent $\sh{O}_{\mathfrak{X}}$-module $\sh{F}$,
+there is an integer $n_0$ such that, for every $n\geq n_0$:
+\begin{enumerate}
+  \item[\rm{(i)}] the canonical homomorphism $\HH^0(\mathfrak{X},\sh{F}(n))
+\longrightarrow
+\HH^0(\mathfrak{X},\sh{F}_k(n))$
+    is surjective for every $k\geq0$;
+  \item[\rm{(ii)}]
+    $\HH^q(\mathfrak{X},\sh{F}(n))=0$ for every $q>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The underlying spaces of $\mathfrak{X}$ and $X_0$ are the same.
+The sheaves $\sh{M}_k
+=
+\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}$,
+being annihilated by $\mathfrak{J}$, may be regarded as coherent
+$\sh{O}_{X_0}$-modules \sref[0]{0.5.3.10}.  Moreover, if $\sh{M}_k(n)
+=
+\sh{M}_k\otimes_{\sh{O}_{X_0}}\sh{L}_0^{\otimes n}$,
+then $\sh{M}_k(n)
+=
+\mathfrak{J}^k\sh{F}(n)/
+\mathfrak{J}^{k+1}\sh{F}(n)$.
+Since $\sh{L}_0$ is ample for $f_0:X_0\to Y_0$ and $f_0$ is
+proper,
+----- English, ega3/ega3-6.tex, page III 151 -----
+\oldpage[III]{151}
+bounded-below complex of quasi-coherent $\sh O_X$-modules
+(respectively $\sh O_Y$-modules).  Suppose that every
+$\sh P_i$ is $S$-flat.  Then there is a canonical isomorphism of
+$\partial$-functors in $\sh Q_\bullet$
+\[
+  \shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)
+  \xrightarrow{\sim}
+  \sh H_\bullet(\sh P_\bullet\otimes_S\sh Q_\bullet).
+  \tag{6.5.9.1}\label{III.6.5.9.1}
+\]
+\end{corollary}
+
+\begin{proof}
+When $S$, $X$, and $Y$ are affine, this is precisely
+\sref{III.6.3.7}; the general case follows by the arguments of
+\sref{III.6.5.2} and \sref{III.6.5.3}.
+\end{proof}
+
+\begin{env}[6.5.10]
+\label{III.6.5.10}
+\emph{Corollary.}
+Suppose that $X$ is flat over $S$ (\sref[0]{0.6.7.1}), that
+$\sh P_\bullet$ and $\sh Q_\bullet$ are bounded below, and that
+every $\sh P_i$ is a locally free $\sh O_X$-module, not
+necessarily of finite type.  Then the homomorphism
+\sref{III.6.5.9.1} is bijective.
+
+Indeed, the hypothesis of \sref{III.6.5.9} is satisfied:
+flatness is, by definition, a pointwise property on $X$, and
+every direct sum of flat modules is flat (\sref[0]{0.6.1.2}).
+\end{env}
+
+\begin{proposition}[6.5.11]
+\label{III.6.5.11}
+Let $X'$ and $Y'$ be two $S$-preschemes, and let
+$f:X\to X'$ and $g:Y\to Y'$ be two affine $S$-morphisms.  For a
+complex $\sh P_\bullet$ of quasi-coherent $\sh O_X$-modules and
+a complex $\sh Q_\bullet$ of quasi-coherent $\sh O_Y$-modules,
+there is a canonical functorial isomorphism
+\[
+  (f\times_Sg)_*
+  \bigl(\shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \shTor_\bullet^S(f_*\sh P_\bullet,g_*\sh Q_\bullet).
+  \tag{6.5.11.1}\label{III.6.5.11.1}
+\]
+\end{proposition}
+
+\begin{proof}
+Since $f$ and $g$ are affine, $f_*\sh P_\bullet$ and
+$g_*\sh Q_\bullet$ are complexes of quasi-coherent modules
+(\sref[II]{II.1.2.6}).  If $Z'=X'\times_SY'$, both sides of
+\sref{III.6.5.11.1} are quasi-coherent $\sh O_{Z'}$-modules by
+\sref{III.6.5.1}.  We readily reduce to the case in which $S$,
+$X'$, and $Y'$ are affine; then $X$ and $Y$ are affine as well,
+and the assertion follows immediately from
+\sref{III.6.4.1.1} and \sref[I]{I.1.6.3}.
+\end{proof}
+
+\begin{env}[6.5.12]
+\label{III.6.5.12}
+\emph{Remark.}
+Let $X'$ and $Y'$ be two $S$-preschemes, with $X'$ flat over
+$S$.  Let $X$ be a closed subprescheme of $X'$, and let
+$i:X\to X'$ be the canonical immersion.  Let $\sh P_\bullet$
+(respectively $\sh Q_\bullet$) be a bounded-below complex of
+quasi-coherent $\sh O_X$-modules (respectively
+$\sh O_{Y'}$-modules).  Finally, let $\sh L'_{\bullet\bullet}$
+be a resolution of $i_*\sh P_\bullet$ consisting of locally free
+$\sh O_{X'}$-modules, such that every point of $X'$ has an
+affine open neighborhood $U$ for which
+$\sh L'_{j\bullet}|U$ is a free resolution of
+$i_*\sh P_j|U$, for every $j$.  There is then a canonical
+isomorphism
+\[
+  (i\times_S1)_*
+  \bigl(\shTor_\bullet^S(\sh P_\bullet,\sh Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \sh H_\bullet(\sh L'_{\bullet\bullet}\otimes_S\sh Q_\bullet).
+  \tag{6.5.12.1}\label{III.6.5.12.1}
+\]
+
+If $S$, $X'$, and $Y'$ are affine, and if
+$\sh L'_{j\bullet}$ is a free resolution of $i_*\sh P_j$ for
+every $j$, then \sref{III.6.5.11} reduces us to the case
+$X'=X$, with $X$ flat over $S$, and it is enough to apply
+\sref{III.6.3.4}.  In general, \sref{III.6.5.12.1} is defined
+locally, and it remains to verify that these local definitions
+give a global isomorphism.
+
+For this, recall the definition of the first isomorphism
+\sref{III.6.3.4.1}.  It comes from an isomorphism of spectral
+sequences (\sref[0]{0.11.6.5} and \sref[0]{0.11.5.3}), itself
+obtained from a morphism of bicomplexes $L_{\bullet\bullet}\longrightarrow L''_{\bullet\bullet}$,
+where $L_{\bullet\bullet}$ is the given resolution of
+$P_\bullet$, and
+----- French corrections on page III 150 -----
+[id 6352]
+OLD: est pleinement fidèle
+NEW: est \emph{pleinement fidèle}
+FRENCH CONTEXT (corrected): usion.
+\end{proof}
+
+Lorsqu'on se borne aux $\mathcal O_X$-Modules cohérents dont le support est propre
+sur $Y$, (\hyperref[III.5.1.3-fr]{5.1.3}) peut s'énoncer, dans le langage des
+catégories, en disant que le foncteur
+$\mathcal F\leadsto\widehat{\mathcal F}$ est \emph{pleinement fidèle} de la catégorie des
+$\mathcal O_X$-Modules du type précédent, dans la catégorie des
+$\mathcal O_{\widehat X}$-Modules cohérents, et établit par suite une \emph{équivalence} de
+la première de ces catégories avec une sous-catégorie \emph{pleine} de la seconde
+(
+
+[id 6353]
+OLD: par suite une équivalence de
+NEW: par suite une \emph{équivalence} de
+FRENCH CONTEXT (corrected): langage des
+catégories, en disant que le foncteur
+$\mathcal F\leadsto\widehat{\mathcal F}$ est \emph{pleinement fidèle} de la catégorie des
+$\mathcal O_X$-Modules du type précédent, dans la catégorie des
+$\mathcal O_{\widehat X}$-Modules cohérents, et établit par suite une \emph{équivalence} de
+la première de ces catégories avec une sous-catégorie \emph{pleine} de la seconde
+(\textbf{0}, 8.1.6). Le théorème d'existence va prouver que lorsque $X$ est propre sur $Y$,
+cette sous-catégorie est en fait la catégorie de \emph{tous} les
+$\mathcal O_{\wideha
+
+[id 6354]
+OLD: sous-catégorie pleine de
+NEW: sous-catégorie \emph{pleine} de
+FRENCH CONTEXT (corrected): at{\mathcal F}$ est \emph{pleinement fidèle} de la catégorie des
+$\mathcal O_X$-Modules du type précédent, dans la catégorie des
+$\mathcal O_{\widehat X}$-Modules cohérents, et établit par suite une \emph{équivalence} de
+la première de ces catégories avec une sous-catégorie \emph{pleine} de la seconde
+(\textbf{0}, 8.1.6). Le théorème d'existence va prouver que lorsque $X$ est propre sur $Y$,
+cette sous-catégorie est en fait la catégorie de \emph{tous} les
+$\mathcal O_{\widehat X}$-Modules cohérents. De façon précise~:
+
+\begin{theorem}[5.1.4]
+\la
+
+[id 6355]
+OLD: ($0$, 8.1.6)
+NEW: (\textbf{0}, 8.1.6)
+FRENCH CONTEXT (corrected): } de la catégorie des
+$\mathcal O_X$-Modules du type précédent, dans la catégorie des
+$\mathcal O_{\widehat X}$-Modules cohérents, et établit par suite une \emph{équivalence} de
+la première de ces catégories avec une sous-catégorie \emph{pleine} de la seconde
+(\textbf{0}, 8.1.6). Le théorème d'existence va prouver que lorsque $X$ est propre sur $Y$,
+cette sous-catégorie est en fait la catégorie de \emph{tous} les
+$\mathcal O_{\widehat X}$-Modules cohérents. De façon précise~:
+
+\begin{theorem}[5.1.4]
+\label{III.5.1.4-fr}
+Soient $A$ un
+
+[id 6356]
+OLD: la catégorie de tous les
+NEW: la catégorie de \emph{tous} les
+FRENCH CONTEXT (corrected): ents, et établit par suite une \emph{équivalence} de
+la première de ces catégories avec une sous-catégorie \emph{pleine} de la seconde
+(\textbf{0}, 8.1.6). Le théorème d'existence va prouver que lorsque $X$ est propre sur $Y$,
+cette sous-catégorie est en fait la catégorie de \emph{tous} les
+$\mathcal O_{\widehat X}$-Modules cohérents. De façon précise~:
+
+\begin{theorem}[5.1.4]
+\label{III.5.1.4-fr}
+Soient $A$ un anneau adique noethérien, $Y=\operatorname{Spec}(A)$,
+$\mathfrak J$ un idéal de définition de $A$, $Y'=\mathrm V(\mathfrak J)$,
+$f:X\to 
+
+[id 6359]
+OLD: \begin{env}[5.1.7]
+\label{III.5.1.7-fr}
+\emph{Scholie.}
+
+NEW: \begin{scholium}[5.1.7]
+\label{III.5.1.7-fr}
+
+FRENCH CONTEXT (corrected): $X$ propre sur $Y=\operatorname{Spec}(A)$. Alors le foncteur
+$\mathcal F\leadsto\widehat{\mathcal F}$ est une équivalence de la catégorie des
+$\mathcal O_X$-Modules cohérents et de la catégorie des
+$\mathcal O_{\widehat X}$-Modules cohérents.
+\end{corollary}
+
+\begin{scholium}[5.1.7]
+\label{III.5.1.7-fr}
+Si on tient compte de la caractérisation des faisceaux cohérents sur les préschémas
+formels (\textbf{I}, 10.11.3), on voit que sous les conditions de
+(\hyperref[III.5.1.1-fr]{5.1.1}), la donnée d'un $\mathcal O_X$-Module cohérent de
+support propre sur $\operat
+
+[id 6361]
+OLD: équivaut (en posant
+NEW: \emph{équivaut} (en posant
+FRENCH CONTEXT (corrected): e de la caractérisation des faisceaux cohérents sur les préschémas
+formels (\textbf{I}, 10.11.3), on voit que sous les conditions de
+(\hyperref[III.5.1.1-fr]{5.1.1}), la donnée d'un $\mathcal O_X$-Module cohérent de
+support propre sur $\operatorname{Spec}(A)$ \emph{équivaut} (en posant
+$Y_n=\operatorname{Spec}(A/\mathfrak J^{n+1})$ et $X_n=X\times_Y Y_n$) à la donnée
+d'un système projectif de $\mathcal O_{X_n}$-Modules cohérents $(\mathcal F_n)$ tel
+que pour $m\leq n$ on ait
+$\mathcal F_m=\mathcal F_n\otimes_{Y_n}\mathcal O_{Y_m}$
+(ou encor
+
+[id 6362]
+OLD: on ait
+\[
+\mathcal F_m=\mathcal F_n\otimes_{\mathcal O_{Y_n}}\mathcal O_{Y_m}
+\quad\text{(ou encore }\mathcal F_m=\mathcal F_n/\mathfrak J^{m+1}\mathcal F_n\text{)}
+\]
+NEW: on ait
+$\mathcal F_m=\mathcal F_n\otimes_{Y_n}\mathcal O_{Y_m}$
+(ou encore $\mathcal F_m=\mathcal F_n/\mathfrak J^{m+1}\mathcal F_n$)
+FRENCH CONTEXT (corrected): de
+support propre sur $\operatorname{Spec}(A)$ \emph{équivaut} (en posant
+$Y_n=\operatorname{Spec}(A/\mathfrak J^{n+1})$ et $X_n=X\times_Y Y_n$) à la donnée
+d'un système projectif de $\mathcal O_{X_n}$-Modules cohérents $(\mathcal F_n)$ tel
+que pour $m\leq n$ on ait
+$\mathcal F_m=\mathcal F_n\otimes_{Y_n}\mathcal O_{Y_m}$
+(ou encore $\mathcal F_m=\mathcal F_n/\mathfrak J^{m+1}\mathcal F_n$)
+et que le support de $\mathcal F_0$ soit une partie de $X_0$ propre sur $Y_0$. Au
+moyen de (\textbf{I}, 10.11.4), on interprète de même les homomorphismes de
+$\mathcal O_X$-Modules cohérents comme des homomorphismes de systèmes projectifs de
+$\mathcal O_{X_n}
+
+[id 7117]
+OLD: réguliers et
+NEW: \emph{réguliers} et
+FRENCH CONTEXT (corrected): entier $n$ tel qu'il soit de dimension cohomologique
+$\leqslant n$. On notera que si les $\mathscr A_t$ sont des \emph{anneaux locaux
+(commutatifs) noethériens},
+\oldpage[III]{150}
+dire qu'ils sont de dimension cohomologique $\leqslant n$ signifie qu'ils sont
+\emph{réguliers} et de \emph{dimension} (de Krull) $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.3.1).
+Avec la terminologie de la théorie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{d
+
+[id 7118]
+OLD: dimension (de Krull)
+NEW: \emph{dimension} (de Krull)
+FRENCH CONTEXT (corrected): it de dimension cohomologique
+$\leqslant n$. On notera que si les $\mathscr A_t$ sont des \emph{anneaux locaux
+(commutatifs) noethériens},
+\oldpage[III]{150}
+dire qu'ils sont de dimension cohomologique $\leqslant n$ signifie qu'ils sont
+\emph{réguliers} et de \emph{dimension} (de Krull) $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.3.1).
+Avec la terminologie de la théorie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{dimension cohomologique} $\leqsl
+
+[id 7120]
+OLD: qu'un préschéma localement noethérien $T$
+NEW: qu'un \emph{préschéma localement noethérien} $T$
+FRENCH CONTEXT (corrected): ologique $\leqslant n$ signifie qu'ils sont
+\emph{réguliers} et de \emph{dimension} (de Krull) $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.3.1).
+Avec la terminologie de la théorie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{dimension cohomologique} $\leqslant n$, ou de dire qu'il est \emph{régulier}
+($\mathbf{0}_{\mathrm I}$, 4.1.4) et de \emph{dimension} $\leqslant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph
+
+[id 7121]
+OLD: est de dimension cohomologique $\leqslant n$, ou
+NEW: est de \emph{dimension cohomologique} $\leqslant n$, ou
+FRENCH CONTEXT (corrected): {réguliers} et de \emph{dimension} (de Krull) $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.3.1).
+Avec la terminologie de la théorie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{dimension cohomologique} $\leqslant n$, ou de dire qu'il est \emph{régulier}
+($\mathbf{0}_{\mathrm I}$, 4.1.4) et de \emph{dimension} $\leqslant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph{de
+dimension cohomologique} $\leqslant n$ ($\mathbf{0}_
+
+[id 7122]
+OLD: est régulier
+NEW: est \emph{régulier}
+FRENCH CONTEXT (corrected): 0}_{\mathrm{IV}}$, 17.3.1).
+Avec la terminologie de la théorie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{dimension cohomologique} $\leqslant n$, ou de dire qu'il est \emph{régulier}
+($\mathbf{0}_{\mathrm I}$, 4.1.4) et de \emph{dimension} $\leqslant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph{de
+dimension cohomologique} $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.2.6). Cela étan
+
+[id 7124]
+OLD: dimension $\leqslant n$; cela
+NEW: \emph{dimension} $\leqslant n$; cela
+FRENCH CONTEXT (corrected): ie de la dimension que nous introduirons au
+chap. IV, il revient au même de dire qu'un \emph{préschéma localement noethérien} $T$
+est de \emph{dimension cohomologique} $\leqslant n$, ou de dire qu'il est \emph{régulier}
+($\mathbf{0}_{\mathrm I}$, 4.1.4) et de \emph{dimension} $\leqslant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph{de
+dimension cohomologique} $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.2.6). Cela étant,
+cette dernière remarque, jointe à (6.3.2), prouve que si $S$ est \emph{loc
+
+[id 7125]
+OLD: est de
+dimension cohomologique
+NEW: est \emph{de
+dimension cohomologique}
+FRENCH CONTEXT (corrected): rien} $T$
+est de \emph{dimension cohomologique} $\leqslant n$, ou de dire qu'il est \emph{régulier}
+($\mathbf{0}_{\mathrm I}$, 4.1.4) et de \emph{dimension} $\leqslant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph{de
+dimension cohomologique} $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.2.6). Cela étant,
+cette dernière remarque, jointe à (6.3.2), prouve que si $S$ est \emph{localement
+noethérien et de dimension cohomologique finie}, les suites spectrales
+$'\mathscr E(\mathscr P_\bullet,\mathscr Q
+
+[id 7127]
+OLD: est localement
+noethérien et de dimension cohomologique finie, les
+NEW: est \emph{localement
+noethérien et de dimension cohomologique finie}, les
+FRENCH CONTEXT (corrected): lant n$; cela signifie que pour
+tout ouvert affine $U$ de $T$, l'anneau $\Gamma(U,\mathscr O_T)$ est \emph{de
+dimension cohomologique} $\leqslant n$ ($\mathbf{0}_{\mathrm{IV}}$, 17.2.6). Cela étant,
+cette dernière remarque, jointe à (6.3.2), prouve que si $S$ est \emph{localement
+noethérien et de dimension cohomologique finie}, les suites spectrales
+$'\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ et
+$''\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont \emph{birégulières}.
+
+Il est clair que
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+tran
+
+[id 7128]
+OLD: sont birégulières.
+NEW: sont \emph{birégulières}.
+FRENCH CONTEXT (corrected): te dernière remarque, jointe à (6.3.2), prouve que si $S$ est \emph{localement
+noethérien et de dimension cohomologique finie}, les suites spectrales
+$'\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ et
+$''\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont \emph{birégulières}.
+
+Il est clair que
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+transforme en
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr Q_\bullet,\mathscr P_\bullet)$ (à un
+isomorphisme près) par l'isomorphisme canonique de $X\time
+
+[id 7129]
+OLD: $\mathscr{T}\!or_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+NEW: $\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+FRENCH CONTEXT (corrected): ve que si $S$ est \emph{localement
+noethérien et de dimension cohomologique finie}, les suites spectrales
+$'\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ et
+$''\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont \emph{birégulières}.
+
+Il est clair que
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+transforme en
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr Q_\bullet,\mathscr P_\bullet)$ (à un
+isomorphisme près) par l'isomorphisme canonique de $X\times_S Y$ sur
+$Y\times_S X$.
+\end{env}
+
+\begin{proposition}[6.5.6]
+Soit $(\mathscr P_{\alpha\bullet})$ u
+
+[id 7130]
+OLD: $\mathscr{T}\!or_\bullet^S(\mathscr Q_\bullet,\mathscr P_\bullet)$
+NEW: $\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr Q_\bullet,\mathscr P_\bullet)$
+FRENCH CONTEXT (corrected): ectrales
+$'\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ et
+$''\mathscr E(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont \emph{birégulières}.
+
+Il est clair que
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ se
+transforme en
+$\boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr Q_\bullet,\mathscr P_\bullet)$ (à un
+isomorphisme près) par l'isomorphisme canonique de $X\times_S Y$ sur
+$Y\times_S X$.
+\end{env}
+
+\begin{proposition}[6.5.6]
+Soit $(\mathscr P_{\alpha\bullet})$ un système inductif filtrant de complexes
+de $\mathscr O_X$-Modules quasi-cohérents; il existe 
+
+[id 7131]
+OLD: \varinjlim_\alpha
+  \mathscr{T}\!or_\bullet^S
+  (\mathscr P_{\alpha\bullet},\mathscr Q_\bullet)
+
+NEW: \varinjlim
+  (\boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (\mathscr P_{\alpha\bullet},\mathscr Q_\bullet))
+
+FRENCH CONTEXT (corrected): rphisme canonique de $X\times_S Y$ sur
+$Y\times_S X$.
+\end{env}
+
+\begin{proposition}[6.5.6]
+Soit $(\mathscr P_{\alpha\bullet})$ un système inductif filtrant de complexes
+de $\mathscr O_X$-Modules quasi-cohérents; il existe alors un isomorphisme
+canonique
+\[
+  \varinjlim
+  (\boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (\mathscr P_{\alpha\bullet},\mathscr Q_\bullet))
+  \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  \left(\varinjlim\mathscr P_{\alpha\bullet},\mathscr Q_\bullet\right).
+  \tag{6.5.6.1}\label{III.6.5.6.1.fr}
+\]
+\end{proposition}
+
+\begin{proof}
+La question étant locale sur $S$, $X$ et $Y$, on peu
+
+[id 7132]
+OLD: \xrightarrow{\sim}
+  \mathscr{T}\!or_\bullet^S
+NEW: \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+FRENCH CONTEXT (corrected): r P_{\alpha\bullet})$ un système inductif filtrant de complexes
+de $\mathscr O_X$-Modules quasi-cohérents; il existe alors un isomorphisme
+canonique
+\[
+  \varinjlim
+  (\boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (\mathscr P_{\alpha\bullet},\mathscr Q_\bullet))
+  \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  \left(\varinjlim\mathscr P_{\alpha\bullet},\mathscr Q_\bullet\right).
+  \tag{6.5.6.1}\label{III.6.5.6.1.fr}
+\]
+\end{proposition}
+
+\begin{proof}
+La question étant locale sur $S$, $X$ et $Y$, on peut supposer $S$, $X$, $Y$
+affines et la proposition se réduit 
+
+[id 7134]
+OLD: $\mathscr{T}\!or_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont
+NEW: $\boldsymbol{\mathscr{T}\!or}_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont
+FRENCH CONTEXT (corrected): uit alors à (6.3.6).
+\end{proof}
+
+\begin{namedtheorem}[6.5.7]{Remarques}
+\textnormal{(i)} Considérons en particulier le cas où $S=X=Y$,
+$\mathscr P_\bullet$ et $\mathscr Q_\bullet$ étant donc deux complexes de
+$\mathscr O_S$-Modules quasi-cohérents; alors les
+$\boldsymbol{\mathscr{T}\!or}_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont des
+$\mathscr O_S$-Modules quasi-cohérents; en outre, pour tout point $z\in S$, il
+résulte de (6.5.6) que l'on a un isomorphisme canonique
+\[
+  \bigl(\boldsymbol{\mathscr{T}\!or}_n^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)_z
+  \xrightarrow{\sim}
+  \
+
+[id 7135]
+OLD: \bigl(\mathscr{T}\!or_n^S
+NEW: \bigl(\boldsymbol{\mathscr{T}\!or}_n^S
+FRENCH CONTEXT (corrected): $-Modules quasi-cohérents; alors les
+$\boldsymbol{\mathscr{T}\!or}_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont des
+$\mathscr O_S$-Modules quasi-cohérents; en outre, pour tout point $z\in S$, il
+résulte de (6.5.6) que l'on a un isomorphisme canonique
+\[
+  \bigl(\boldsymbol{\mathscr{T}\!or}_n^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)_z
+  \xrightarrow{\sim}
+  \mathbf{Tor}_n^{\mathscr O_z}
+  \bigl((\mathscr P_\bullet)_z,(\mathscr Q_\bullet)_z\bigr)
+  \tag{6.5.7.1}\label{III.6.5.7.1.fr}
+\]
+car la question est locale et on est ramené au cas de
+
+[id 7136]
+OLD: cas de
+deux complexes de $\mathscr O_X$-Modules $\mathscr P_\bullet$
+NEW: cas de
+\emph{deux complexes de $\mathscr O_X$-Modules} $\mathscr P_\bullet$
+FRENCH CONTEXT (corrected): z}
+  \bigl((\mathscr P_\bullet)_z,(\mathscr Q_\bullet)_z\bigr)
+  \tag{6.5.7.1}\label{III.6.5.7.1.fr}
+\]
+car la question est locale et on est ramené au cas des modules, en vertu de
+(6.4.1.1).
+
+\textnormal{(ii)} On peut généraliser la définition des hypertor au cas de
+\emph{deux complexes de $\mathscr O_X$-Modules} $\mathscr P_\bullet$,
+$\mathscr Q_\bullet$ sur un même \emph{espace annelé} $(X,\mathscr O_X)$; pour tout
+ouvert $U$ de $X$, posons en effet
+$A(U)=\Gamma(U,\mathscr O_X)$,
+$P_\bullet(U)=\Gamma(U,\mathscr P_\bullet)$,
+$Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet)$; les $A(U)$-modules
+
+[id 7137]
+OLD: même espace annelé
+NEW: même \emph{espace annelé}
+FRENCH CONTEXT (corrected): ar la question est locale et on est ramené au cas des modules, en vertu de
+(6.4.1.1).
+
+\textnormal{(ii)} On peut généraliser la définition des hypertor au cas de
+\emph{deux complexes de $\mathscr O_X$-Modules} $\mathscr P_\bullet$,
+$\mathscr Q_\bullet$ sur un même \emph{espace annelé} $(X,\mathscr O_X)$; pour tout
+ouvert $U$ de $X$, posons en effet
+$A(U)=\Gamma(U,\mathscr O_X)$,
+$P_\bullet(U)=\Gamma(U,\mathscr P_\bullet)$,
+$Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet)$; les $A(U)$-modules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+for
+
+[id 7138]
+OLD: les $A(U)$-modules
+\[
+  \mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))
+\]
+forment
+NEW: les $A(U)$-modules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+forment
+FRENCH CONTEXT (corrected): mathscr P_\bullet$,
+$\mathscr Q_\bullet$ sur un même \emph{espace annelé} $(X,\mathscr O_X)$; pour tout
+ouvert $U$ de $X$, posons en effet
+$A(U)=\Gamma(U,\mathscr O_X)$,
+$P_\bullet(U)=\Gamma(U,\mathscr P_\bullet)$,
+$Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet)$; les $A(U)$-modules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+forment alors un \emph{préfaisceau} sur $X$, et l'on désigne par
+$\boldsymbol{\mathscr{T}\!or}_n^X(\mathscr P_\bullet,\mathscr Q_\bullet)$ le
+$\mathscr O_X$-Module associé à ce préfaisceau. Lorsque $X$ est un \emph{préschéma},
+il résulte de (6.3.12) que ce $\mathscr 
+
+[id 7139]
+OLD: un préfaisceau sur
+NEW: un \emph{préfaisceau} sur
+FRENCH CONTEXT (corrected): cr O_X)$; pour tout
+ouvert $U$ de $X$, posons en effet
+$A(U)=\Gamma(U,\mathscr O_X)$,
+$P_\bullet(U)=\Gamma(U,\mathscr P_\bullet)$,
+$Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet)$; les $A(U)$-modules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+forment alors un \emph{préfaisceau} sur $X$, et l'on désigne par
+$\boldsymbol{\mathscr{T}\!or}_n^X(\mathscr P_\bullet,\mathscr Q_\bullet)$ le
+$\mathscr O_X$-Module associé à ce préfaisceau. Lorsque $X$ est un \emph{préschéma},
+il résulte de (6.3.12) que ce $\mathscr O_X$-Module est canoniquement is
+
+[id 7140]
+OLD: $\mathscr{T}\!or_n^X
+NEW: $\boldsymbol{\mathscr{T}\!or}_n^X
+FRENCH CONTEXT (corrected): fet
+$A(U)=\Gamma(U,\mathscr O_X)$,
+$P_\bullet(U)=\Gamma(U,\mathscr P_\bullet)$,
+$Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet)$; les $A(U)$-modules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+forment alors un \emph{préfaisceau} sur $X$, et l'on désigne par
+$\boldsymbol{\mathscr{T}\!or}_n^X(\mathscr P_\bullet,\mathscr Q_\bullet)$ le
+$\mathscr O_X$-Module associé à ce préfaisceau. Lorsque $X$ est un \emph{préschéma},
+il résulte de (6.3.12) que ce $\mathscr O_X$-Module est canoniquement isomorphe
+à l'hypertor défini ci-dessus. Nous ne développeron
+
+[id 7141]
+OLD: est un préschéma,
+NEW: est un \emph{préschéma},
+FRENCH CONTEXT (corrected): odules
+$\mathbf{Tor}_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$
+forment alors un \emph{préfaisceau} sur $X$, et l'on désigne par
+$\boldsymbol{\mathscr{T}\!or}_n^X(\mathscr P_\bullet,\mathscr Q_\bullet)$ le
+$\mathscr O_X$-Module associé à ce préfaisceau. Lorsque $X$ est un \emph{préschéma},
+il résulte de (6.3.12) que ce $\mathscr O_X$-Module est canoniquement isomorphe
+à l'hypertor défini ci-dessus. Nous ne développerons pas davantage cette
+généralisation.
+\end{namedtheorem}
+
+\begin{proposition}[6.5.8]
+Soient $X$, $Y$ deux $S$-préschémas, $\math
+
+[id 7142]
+OLD: $\mathscr F$ (resp. $\mathscr G$) un
+NEW: $\mathscr F$ \textup{(resp.} $\mathscr G$\textup{)} un
+FRENCH CONTEXT (corrected): héma},
+il résulte de (6.3.12) que ce $\mathscr O_X$-Module est canoniquement isomorphe
+à l'hypertor défini ci-dessus. Nous ne développerons pas davantage cette
+généralisation.
+\end{namedtheorem}
+
+\begin{proposition}[6.5.8]
+Soient $X$, $Y$ deux $S$-préschémas, $\mathscr F$ \textup{(resp.} $\mathscr G$\textup{)} un
+$\mathscr O_X$-Module \textup{(resp.} un $\mathscr O_Y$-Module\textup{)} quasi-cohérent. Si
+$\mathscr F$ ou $\mathscr G$ est $S$-plat, on a
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)=0$ pour $n\neq0$.
+\end{proposition}
+
+\begin{proof}
+La question étant locale
+
+[id 7143]
+OLD: (resp. un $\mathscr O_Y$-Module) quasi-cohérent
+NEW: \textup{(resp.} un $\mathscr O_Y$-Module\textup{)} quasi-cohérent
+FRENCH CONTEXT (corrected): isomorphe
+à l'hypertor défini ci-dessus. Nous ne développerons pas davantage cette
+généralisation.
+\end{namedtheorem}
+
+\begin{proposition}[6.5.8]
+Soient $X$, $Y$ deux $S$-préschémas, $\mathscr F$ \textup{(resp.} $\mathscr G$\textup{)} un
+$\mathscr O_X$-Module \textup{(resp.} un $\mathscr O_Y$-Module\textup{)} quasi-cohérent. Si
+$\mathscr F$ ou $\mathscr G$ est $S$-plat, on a
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)=0$ pour $n\neq0$.
+\end{proposition}
+
+\begin{proof}
+La question étant locale sur $X$ et $Y$, on peut supposer $X$, $Y$ et $S$
+affines, d'anneaux respectifs $B$, $C$
+
+[id 7147]
+OLD: (resp.
+$\mathscr Q_\bullet$) un
+NEW: \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un
+FRENCH CONTEXT (corrected): sait que
+$\operatorname{Tor}_n^A(M,N)=0$ pour $n>0$ et pour tout $C$-module $N$
+($\mathbf{0}_{\mathrm I}$, 6.1.1), d'où la conclusion par (6.4.1.1).
+\end{proof}
+
+\begin{namedtheorem}[6.5.9]{Corollaire}
+Soient $X$, $Y$ deux $S$-préschémas, $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe de
+\oldpage[III]{151}
+$\mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules\textup{)} quasi-cohérents limité
+inférieurement. Supposons que tous les $\mathscr P_i$ soient $S$-plats. Alors
+il existe un isomorphisme canonique de $\partial$-fo
+
+=================== PAGE III 151 ===================
+----- (English page III 150: shown above in this file) -----
+----- (English page III 151: shown above in this file) -----
+----- English, ega3/ega3-5.tex, page III 152 -----
+\oldpage[III]{152}
+$f_0$ is projective \sref[II]{II.5.5.4}.  Let $S=\bigoplus_{k\geq0}
+\mathfrak{J}^k/\mathfrak{J}^{k+1}$
+be the graded $A$-algebra associated with the
+$\mathfrak{J}$-adic filtration of $A$.  It is of finite type
+because $A$ is Noetherian.  Put
+\[
+  \sh{S}'=f_0^*(\widetilde{S}),\qquad
+  \sh{M}=\bigoplus_{k\geq0}\sh{M}_k.
+\]
+Then $\sh{S}'$ is a quasi-coherent $\sh{O}_{X_0}$-algebra of
+finite type, and $\sh{M}$ is a quasi-coherent graded
+$\sh{S}'$-module of finite type, since $\sh{F}_0$ is coherent and
+generates $\sh{M}$ as an $\sh{S}'$-module.  Theorem
+\sref{III.2.4.1},~\emph{(ii)}, therefore gives an integer $n_0$
+such that, for $n\geq n_0$ and every $k$,
+\[
+  \HH^q(X_0,\sh{M}_k(n))=0
+  \qquad(q>0).
+  \tag{5.2.3.1}
+  \label{III.5.2.3.1}
+\]
+Regarded now as an $\sh{O}_{\mathfrak{X}}$-module,
+$\sh{M}_k(n)$ consequently also satisfies
+\[
+  \HH^q(\mathfrak{X},\sh{M}_k(n))=0
+  \qquad(q>0,\ n\geq n_0).
+\]
+
+Apply the exact cohomology sequence to
+\[
+  0\longrightarrow
+  \frac{\mathfrak{J}^k\sh{F}(n)}
+       {\mathfrak{J}^{k+1}\sh{F}(n)}
+  \longrightarrow
+  \frac{\mathfrak{J}^h\sh{F}(n)}
+       {\mathfrak{J}^{k+1}\sh{F}(n)}
+  \longrightarrow
+  \frac{\mathfrak{J}^h\sh{F}(n)}
+       {\mathfrak{J}^{k}\sh{F}(n)}
+  \longrightarrow0.
+\]
+For $0\leq h<k$, $n\geq n_0$, and $q>0$, induction on $k-h$
+gives
+\[
+  \HH^q\left(
+    \mathfrak{X},
+    \frac{\mathfrak{J}^h\sh{F}(n)}
+         {\mathfrak{J}^{k}\sh{F}(n)}
+  \right)=0,
+  \tag{5.2.3.2}
+  \label{III.5.2.3.2}
+\]
+and in particular, for $h=0$,
+\[
+  \HH^q(\mathfrak{X},\sh{F}_k(n))=0
+  \qquad(n\geq n_0,\ k\geq0,\ q>0).
+  \tag{5.2.3.3}
+  \label{III.5.2.3.3}
+\]
+Another part of the exact cohomology sequence, with $h=0$, gives
+\[
+  \HH^0(\mathfrak{X},\sh{F}_{k+1}(n))
+  \longrightarrow
+  \HH^0(\mathfrak{X},\sh{F}_k(n))
+  \longrightarrow
+  \HH^1\left(
+    \mathfrak{X},
+    \frac{\mathfrak{J}^k\sh{F}(n)}
+         {\mathfrak{J}^{k+1}\sh{F}(n)}
+  \right)
+  =0.
+  \tag{5.2.3.4}
+  \label{III.5.2.3.4}
+\]
+It follows that, for $h\leq k$, the canonical map
+\[
+  \HH^0(\mathfrak{X},\sh{F}_k(n))
+  \longrightarrow
+  \HH^0(\mathfrak{X},\sh{F}_h(n))
+  \tag{5.2.3.5}
+  \label{III.5.2.3.5}
+\]
+is \emph{surjective}.  Thus, for every $q$, the projective system $\bigl(\HH^q(\mathfrak{X},\sh{F}_k(n))\bigr)\quad(k\geq0)$
+satisfies condition (ML) when $n\geq n_0$.
+
+Furthermore, every formal affine open $U$ of $\mathfrak{X}$ is an
+affine open in each $X_k$ \sref[I]{I.10.5.2}.  Hence
+$\HH^q(U,\sh{F}_k(n))=0$ for $q>0$ \sref[I]{I.1.3.1}, and $\HH^0(U,\sh{F}_k(n))
+\longrightarrow
+\HH^0(U,\sh{F}_h(n))$
+is surjective for $h\leq k$ \sref[I]{I.1.3.9}.  The hypotheses of
+\sref[0]{0.13.3.1} are therefore satisfied.  For $n\geq n_0$ we
+obtain:
+\begin{enumerate}
+  \item[$1^\circ$] for every $q>0$, the map $\HH^q(\mathfrak{X},\sh{F}(n))
+\longrightarrow
+\varprojlim_k
+\HH^q(\mathfrak{X},\sh{F}_k(n))$
+    is bijective; hence, by \eqref{III.5.2.3.3},
+    $\HH^q(\mathfrak{X},\sh{F}(n))=0$;
+  \item[$2^\circ$] the homomorphism $\HH^0(\mathfrak{X},\sh{F}(n))
+\longrightarrow
+\varprojlim_k
+\HH^0(\mathfrak{X},\sh{F}_k(n))$
+    is bijective.  Since the homomorphisms
+    \eqref{III.5.2.3.5} are surjective, so is each homomorphism
+    \[
+      \varprojlim_k
+      \HH^0(\mathfrak{X},\sh{F}_k(n))
+      \longrightarrow
+      \HH^0(\mathfrak{X},\sh{F}_h(n)).
+    \]
+\end{enumerate}
+This proves both assertions.
+\end{proof}
+
+\begin{corollary}[5.2.4]
+\label{III.5.2.4}
+Under the hypotheses of \sref{III.5.2.3}, for every coherent
+$\sh{O}_{\mathfrak{X}}$-module $\sh{F}$ there is an integer $N$
+such that, for $n\geq N$, $\sh{F}(n)$ is generated by its sections
+over
+----- English, ega3/ega3-6.tex, page III 152 -----
+\oldpage[III]{152}
+$L''_{\bullet\bullet}$ is a projective resolution of
+$P_\bullet$ in the category of bounded-below complexes of
+$A$-modules (\sref[0]{0.11.5.2.2}).  The assertion follows from
+the fact that \sref{III.6.3.4.1} is independent of the chosen
+projective resolution $L''_{\bullet\bullet}$, since any two such
+resolutions are related by a homotopism (\emph{M}, V, 1.2).
+\end{env}
+
+\begin{proposition}[6.5.13]
+\label{III.6.5.13}
+Let $X$ and $Y$ be two $S$-preschemes, and suppose that one of
+the following conditions holds:
+\begin{enumerate}
+  \item[\textup{(i)}] $X$ and $Z=X\times_SY$ are locally Noetherian, and
+    $X$ is flat over $S$;
+  \item[\textup{(ii)}] $S$ and $X$ are locally Noetherian, and $Y$ is of
+    finite type over $S$.
+\end{enumerate}
+Let $\sh P_\bullet$ (respectively $\sh Q_\bullet$) be a
+bounded-below complex of quasi-coherent $\sh O_X$-modules
+(respectively $\sh O_Y$-modules).  Suppose in addition that, for
+every $n$, $\sh H_n(\sh P_\bullet)$ (respectively
+$\sh H_n(\sh Q_\bullet)$) is an $\sh O_X$-module
+(respectively $\sh O_Y$-module) of finite type.  Then $\shTor_n^S(\sh P_\bullet,\sh Q_\bullet)$
+is a coherent $\sh O_Z$-module for every $n$.
+\end{proposition}
+
+\begin{proof}
+Since $\sh P_\bullet$ and $\sh Q_\bullet$ are bounded below, the
+spectral sequence
+$''\sh E(\sh P_\bullet,\sh Q_\bullet)$ is biregular by
+\sref{III.6.5.4}.  In either case (i) or (ii), $Z$ is locally
+Noetherian, so \sref[0]{0.11.1.8} reduces the assertion to the
+coherence of the terms $''\sh E_{pq}^2$.  The finite-type
+hypothesis on the homology modules and formula
+\sref{III.6.5.4.2} reduce the proposition to the special case in
+which $\sh P_\bullet$ and $\sh Q_\bullet$ are concentrated in
+degree zero, namely the following corollary.
+\end{proof}
+
+\begin{corollary}[6.5.14]
+\label{III.6.5.14}
+Suppose that one of conditions \emph{(i)} and \emph{(ii)} of
+\sref{III.6.5.13} holds, and let $\sh F$ (respectively $\sh G$)
+be a quasi-coherent $\sh O_X$-module (respectively
+$\sh O_Y$-module) of finite type.  Then
+$\shTor_n^S(\sh F,\sh G)$ is a coherent $\sh O_Z$-module for
+every $n$.
+\end{corollary}
+
+\begin{proof}
+The question is local on $X$ and $Y$, so we may suppose that
+$S$, $X$, and $Y$ are affine.
+
+\textnormal{(i)} Under the hypotheses of (i), $X$ and $Z$
+are Noetherian.  There is therefore a locally free resolution
+$\sh L_\bullet$ of $\sh F$ consisting of $\sh O_X$-modules of
+finite type (\sref[I]{I.1.3.7}).  Since $X$ is flat over $S$,
+\sref{III.6.3.4} gives $\shTor_n^S(\sh F,\sh G)
+=
+\sh H_n(\sh L_\bullet\otimes_S\sh G)$.
+The modules $\sh L_i\otimes_S\sh G$ are quasi-coherent
+$\sh O_Z$-modules of finite type (\sref[I]{I.9.1.1}), hence are
+coherent.  It follows that
+$\sh H_n(\sh L_\bullet\otimes_S\sh G)$ is coherent
+(\sref[0]{0.5.3.4}).
+
+\textnormal{(ii)} Now suppose that condition (ii) holds.  Since
+$A(Y)$ is a quotient of a polynomial $A(S)$-algebra in finitely
+many indeterminates (\sref[I]{I.6.3.3}), $Y$ is a closed
+subprescheme of an affine $S$-scheme $Y'$ that is flat and of
+finite type over $S$.  The scheme $Y'$ is Noetherian
+(\sref[I]{I.6.3.7}), so there exists a locally free resolution
+$\sh M_\bullet$ of $j_*\sh G$ by $\sh O_{Y'}$-modules of finite
+type, where $j:Y\to Y'$ is the canonical immersion.  By
+\sref{III.6.5.12}, $\shTor_n^S(\sh F,\sh G)$ is the inverse image
+under $1\times j$ of the $\sh O_{Z'}$-module
+\[
+  \sh H_n(\sh F\otimes_S\sh M_\bullet),
+  \qquad Z'=X\times_SY'.
+\]
+As in (i), the $\sh F\otimes_S\sh M_i$ are coherent
+$\sh O_{Z'}$-modules, and \sref[0]{0.5.3.4} again gives the
+conclusion.
+\end{proof}
+
+\begin{env}[6.5.15]
+\label{III.6.5.15}
+The theory developed above for two complexes
+$\sh P_\bullet,\sh Q_\bullet$ of quasi-coherent sheaves on two
+$S$-preschemes $X$ and $Y$ extends without difficulty to an
+arbitrary finite family of $S$-preschemes $X^{(i)}$
+$(1\leq i\leq m)$, each equipped with a complex
+$\sh P_\bullet^{(i)}$ of quasi-coherent
+$\sh O_{X^{(i)}}$-modules.  If $Z=X^{(1)}\times_SX^{(2)}\times_S\ldots\times_SX^{(m)}$
+one thereby defines a quasi-coherent $\sh O_Z$-module $\shTor_q^S
+\bigl(\sh P_\bullet^{(1)},\sh P_\bullet^{(2)},\ldots,
+\sh P_\bullet^{(m)}\bigr)$.
+We leave the development of the theory in this general case to
+the reader, and record only, for later reference, the $E_2$-term
+of the second, regular spectral sequence whose abutment is this
+hypertor:
+----- French corrections on page III 151 -----
+[id 6302]
+OLD: adique local
+noethérien
+NEW: adique \emph{local}
+noethérien
+FRENCH CONTEXT (corrected): 11.4), on interprète de même les homomorphismes de
+$\mathcal O_X$-Modules cohérents comme des homomorphismes de systèmes projectifs de
+$\mathcal O_{X_n}$-Modules cohérents.
+
+\oldpage[III]{151}
+
+Dans tous les cas d'application connus, $A$ est en fait un anneau adique \emph{local}
+noethérien, donc les $Y_n$ sont des spectres d'anneaux \emph{artiniens locaux}, et les
+résultats de ce paragraphe et des précédents réduisent dans une large mesure la
+géométrie algébrique sur un anneau adique local noethérien, à la géométrie algébrique
+sur des anneaux l
+
+[id 6303]
+OLD: d'anneaux artiniens locaux
+NEW: d'anneaux \emph{artiniens locaux}
+FRENCH CONTEXT (corrected): -Modules cohérents comme des homomorphismes de systèmes projectifs de
+$\mathcal O_{X_n}$-Modules cohérents.
+
+\oldpage[III]{151}
+
+Dans tous les cas d'application connus, $A$ est en fait un anneau adique \emph{local}
+noethérien, donc les $Y_n$ sont des spectres d'anneaux \emph{artiniens locaux}, et les
+résultats de ce paragraphe et des précédents réduisent dans une large mesure la
+géométrie algébrique sur un anneau adique local noethérien, à la géométrie algébrique
+sur des anneaux locaux artiniens.
+\end{scholium}
+
+\begin{corollary}[5.1.8]
+\label{III
+
+[id 6304]
+OLD: artiniens.
+\end{env}
+NEW: artiniens.
+\end{scholium}
+FRENCH CONTEXT (corrected):  les $Y_n$ sont des spectres d'anneaux \emph{artiniens locaux}, et les
+résultats de ce paragraphe et des précédents réduisent dans une large mesure la
+géométrie algébrique sur un anneau adique local noethérien, à la géométrie algébrique
+sur des anneaux locaux artiniens.
+\end{scholium}
+
+\begin{corollary}[5.1.8]
+\label{III.5.1.8-fr}
+Sous les conditions de \textup{(\hyperref[III.5.1.4-fr]{5.1.4})}, l'application
+$Z\leadsto\widehat Z=Z_{/(Z\cap X')}$ est une bijection de l'ensemble des
+sous-préschémas fermés $Z$ de $X$, propres sur $Y$, sur l'
+
+[id 6310]
+OLD: est algébrisable s'il
+NEW: est \emph{algébrisable} s'il
+FRENCH CONTEXT (corrected): théorème d'existence : cas projectif et quasi-projectif}
+\label{subsection:III.5.2-fr}
+
+\begin{env}[5.2.1]
+\label{III.5.2.1-fr}
+Sous les conditions de (\hyperref[III.5.1.4-fr]{5.1.4}), nous dirons provisoirement
+qu'un $\mathcal O_{\widehat X}$-Module cohérent est \emph{algébrisable} s'il est isomorphe
+à un complété $\widehat{\mathcal F}$ d'un $\mathcal O_X$-Module cohérent
+$\mathcal F$ de support propre sur $Y$.
+\end{env}
+
+\begin{lemma}[5.2.2]
+\label{III.5.2.2-fr}
+Soient $\mathcal F'$, $\mathcal G'$ deux $\mathcal O_{\widehat X}$-Modules
+algé
+
+[id 6312]
+OLD: $\widehat{\operatorname{Ker}(v)}$
+NEW: $(\operatorname{Ker}(v))^{\wedge}$
+FRENCH CONTEXT (corrected): upports propres sur $Y$, on a
+$u=\widehat v$, où $v:\mathcal F\to\mathcal G$ est un homomorphisme
+(\hyperref[III.5.1.3-fr]{5.1.3}). En vertu de l'exactitude du foncteur
+$\mathcal F\leadsto\widehat{\mathcal F}$,
+$\operatorname{Ker}(\widehat v)$ est isomorphe à
+$(\operatorname{Ker}(v))^{\wedge}$ et comme le support de
+$\operatorname{Ker}(v)$ est contenu dans celui de $\mathcal F$, on voit que
+$\operatorname{Ker}(u)$ est algébrisable~; démonstration analogue pour
+$\operatorname{Im}(u)$ et $\operatorname{Coker}(u)$.
+\end{proof}
+
+\begin{proposition}[5.2
+
+[id 6313]
+OLD: $\mathcal F$,
+\[
+\mathcal F_k=\mathcal F\otimes_{\mathcal O_{\mathfrak X}}\mathcal O_{X_k}
+=\mathcal F/\mathfrak J^{k+1}\mathcal F.
+\]
+NEW: $\mathcal F$,
+$\mathcal F_k=\mathcal F\otimes_{\mathcal O_{\mathfrak X}}\mathcal O_{X_k}
+=\mathcal F/\mathfrak J^{k+1}\mathcal F$.
+FRENCH CONTEXT (corrected): $A$, $\mathfrak Y=\operatorname{Spf}(A)$,
+$f:\mathfrak X\to\mathfrak Y$ un morphisme propre de préschémas formels. On pose
+$Y_k=\operatorname{Spec}(A/\mathfrak J^{k+1})$,
+$X_k=\mathfrak X\times_{\mathfrak Y}Y_k$, et pour tout
+$\mathcal O_{\mathfrak X}$-Module $\mathcal F$,
+$\mathcal F_k=\mathcal F\otimes_{\mathcal O_{\mathfrak X}}\mathcal O_{X_k}
+=\mathcal F/\mathfrak J^{k+1}\mathcal F$.
+Soit $\mathcal L$ un $\mathcal O_{\mathfrak X}$-Module inversible, et supposons que
+$\mathcal L_0=\mathcal L/\mathfrak J\mathcal L$ soit un
+$\mathcal O_{X_0}$-Module ample~; pour tout $\mathcal O_{\mathfrak X}$-Module
+$\mathcal F$ et tout entier $n$, posons
+$
+
+[id 6316]
+OLD: les faisceaux
+\[
+\mathcal M_k=\mathfrak J^k\mathcal F/\mathfrak J^{k+1}\mathcal F
+\]
+étant
+NEW: les faisceaux
+$\mathcal M_k=\mathfrak J^k\mathcal F/\mathfrak J^{k+1}\mathcal F$
+étant
+FRENCH CONTEXT (corrected):  F_k(n))$ est surjectif pour tout $k\geq0$.
+\item[\textup{(ii)}] On a $\mathrm H^q(\mathfrak X,\mathcal F(n))=0$ pour tout $q>0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+On sait que les espaces sous-jacents à $\mathfrak X$ et à $X_0$ sont les mêmes~;
+les faisceaux
+$\mathcal M_k=\mathfrak J^k\mathcal F/\mathfrak J^{k+1}\mathcal F$
+étant annulés par $\mathfrak J$, peuvent être considérés comme des
+$\mathcal O_{X_0}$-Modules cohérents ($\mathbf{0}_{\mathrm I}$, 5.3.10)~; en outre, si on
+pose $\mathcal M_k(n)=\mathcal M_k\otimes_{\mathcal O_{X_0}}
+\mathcal L_0^{\otimes n}$, on voit aussitôt que
+
+[id 6318]
+OLD: on voit aussitôt que
+\[
+\mathcal M_k(n)=\mathfrak J^k\mathcal F(n)/
+\mathfrak J^{k+1}\mathcal F(n).
+\]
+NEW: on voit aussitôt que
+$\mathcal M_k(n)=\mathfrak J^k\mathcal F(n)/
+\mathfrak J^{k+1}\mathcal F(n)$.
+FRENCH CONTEXT (corrected): +1}\mathcal F$
+étant annulés par $\mathfrak J$, peuvent être considérés comme des
+$\mathcal O_{X_0}$-Modules cohérents ($\mathbf{0}_{\mathrm I}$, 5.3.10)~; en outre, si on
+pose $\mathcal M_k(n)=\mathcal M_k\otimes_{\mathcal O_{X_0}}
+\mathcal L_0^{\otimes n}$, on voit aussitôt que
+$\mathcal M_k(n)=\mathfrak J^k\mathcal F(n)/
+\mathfrak J^{k+1}\mathcal F(n)$.
+Notons que, puisque $\mathcal L_0$ est ample pour $f_0:X_0\to Y_0$, et
+\oldpage[III]{152}
+que $f_0$ est propre, on en conclut que $f_0$ est \emph{projectif} (\textbf{II}, 5.5.4). Soit $S$ la $A$-algèbre
+graduée $\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+
+
+[id 7149]
+OLD: (resp. de $\mathscr O_Y$-Modules) quasi-cohérents limité
+NEW: \textup{(resp.} de $\mathscr O_Y$-Modules\textup{)} quasi-cohérents limité
+FRENCH CONTEXT (corrected): $, 6.1.1), d'où la conclusion par (6.4.1.1).
+\end{proof}
+
+\begin{namedtheorem}[6.5.9]{Corollaire}
+Soient $X$, $Y$ deux $S$-préschémas, $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe de
+\oldpage[III]{151}
+$\mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules\textup{)} quasi-cohérents limité
+inférieurement. Supposons que tous les $\mathscr P_i$ soient $S$-plats. Alors
+il existe un isomorphisme canonique de $\partial$-foncteurs en
+$\mathscr Q_\bullet$
+\[
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)
+  \xrightarrow
+
+[id 7150]
+OLD:   \mathscr{T}\!or_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)
+  \xrightarrow
+NEW:   \boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)
+  \xrightarrow
+FRENCH CONTEXT (corrected): athscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules\textup{)} quasi-cohérents limité
+inférieurement. Supposons que tous les $\mathscr P_i$ soient $S$-plats. Alors
+il existe un isomorphisme canonique de $\partial$-foncteurs en
+$\mathscr Q_\bullet$
+\[
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S(\mathscr P_\bullet,\mathscr Q_\bullet)
+  \xrightarrow{\sim}
+  \mathscr H_\bullet(\mathscr P_\bullet\otimes_S\mathscr Q_\bullet).
+  \tag{6.5.9.1}\label{III.6.5.9.1.fr}
+\]
+\end{namedtheorem}
+
+\begin{proof}
+Ce n'est autre que (6.3.7) lorsque $S$, $X$, $Y$ sont affines; on passe de là
+au cas général par les raisonne
+
+[id 7154]
+OLD: Soit $\mathscr P_\bullet$ (resp.
+$\mathscr Q_\bullet$) un complexe
+NEW: Soit $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe
+FRENCH CONTEXT (corrected): tuelle sur $X$ par définition et toute somme directe de modules plats étant
+un module plat ($\mathbf{0}_{\mathrm I}$, 6.1.2).
+\end{proof}
+
+\begin{proposition}[6.5.11]
+Soient $X'$, $Y'$ deux $S$-préschémas, $f:X\to X'$, $g:Y\to Y'$ deux
+$S$-morphismes affines. Soit $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe de $\mathscr O_X$-Modules \textup{(resp.} de
+$\mathscr O_Y$-Modules\textup{)} quasi-cohérents; on a alors un isomorphisme canonique
+fonctoriel
+\[
+  (f\times_S g)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr
+
+[id 7155]
+OLD: -Modules (resp. de
+$\mathscr O_Y$-Modules) quasi-cohérents; on a
+NEW: -Modules \textup{(resp.} de
+$\mathscr O_Y$-Modules\textup{)} quasi-cohérents; on a
+FRENCH CONTEXT (corrected): }_{\mathrm I}$, 6.1.2).
+\end{proof}
+
+\begin{proposition}[6.5.11]
+Soient $X'$, $Y'$ deux $S$-préschémas, $f:X\to X'$, $g:Y\to Y'$ deux
+$S$-morphismes affines. Soit $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe de $\mathscr O_X$-Modules \textup{(resp.} de
+$\mathscr O_Y$-Modules\textup{)} quasi-cohérents; on a alors un isomorphisme canonique
+fonctoriel
+\[
+  (f\times_S g)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (f_*(\mathscr P_\bullet),g_*(\math
+
+[id 7156]
+OLD: (f\times_S g)_*
+  \bigl(\mathscr{T}\!or
+NEW: (f\times_S g)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}
+FRENCH CONTEXT (corrected): ux
+$S$-morphismes affines. Soit $\mathscr P_\bullet$ \textup{(resp.}
+$\mathscr Q_\bullet$\textup{)} un complexe de $\mathscr O_X$-Modules \textup{(resp.} de
+$\mathscr O_Y$-Modules\textup{)} quasi-cohérents; on a alors un isomorphisme canonique
+fonctoriel
+\[
+  (f\times_S g)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (f_*(\mathscr P_\bullet),g_*(\mathscr Q_\bullet)).
+  \tag{6.5.11.1}\label{III.6.5.11.1.fr}
+\]
+\end{proposition}
+
+\begin{proof}
+Comme $f
+
+[id 7157]
+OLD: \mathscr{T}\!or_\bullet^S
+  (f_*
+NEW: \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (f_*
+FRENCH CONTEXT (corrected): s \textup{(resp.} de
+$\mathscr O_Y$-Modules\textup{)} quasi-cohérents; on a alors un isomorphisme canonique
+fonctoriel
+\[
+  (f\times_S g)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^S
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \boldsymbol{\mathscr{T}\!or}_\bullet^S
+  (f_*(\mathscr P_\bullet),g_*(\mathscr Q_\bullet)).
+  \tag{6.5.11.1}\label{III.6.5.11.1.fr}
+\]
+\end{proposition}
+
+\begin{proof}
+Comme $f$ et $g$ sont affines, $f_*(\mathscr P_\bullet)$ et
+$g_*(\mathscr Q_\bullet)$ sont des complexes de Modules quasi-cohérents
+(\tex
+
+[id 7160]
+OLD: soit $S$-plat;
+NEW: soit $S$-\emph{plat};
+FRENCH CONTEXT (corrected): Y'$ sont affines; mais alors il en est de même
+par hypothèse de $X$ et $Y$ et la vérification résulte aussitôt de (6.4.1.1) et
+(\textbf{I}, 1.6.3).
+\end{proof}
+
+\begin{namedtheorem}[6.5.12]{Remarque}
+Soient $X'$, $Y'$ deux $S$-préschémas et supposons que $X'$ soit $S$-\emph{plat};
+soient $X$ un sous-préschéma fermé de $X'$, $i:X\to X'$ l'injection canonique,
+$\mathscr P_\bullet$ (resp. $\mathscr Q_\bullet$) un complexe de
+$\mathscr O_X$-Modules (resp. de $\mathscr O_{Y'}$-Modules) quasi-cohérents,
+limité inférieurement. Soit enfin $\ma
+
+[id 7161]
+OLD: (i\times_S 1)_*
+  \bigl(\mathscr{T}\!or_\bullet^S
+NEW: (i\times_S 1)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^{\mathbf S}
+FRENCH CONTEXT (corrected): de $\mathscr O_{X'}$-Modules localement
+libres, telle que tout point de $X'$ ait un voisinage ouvert affine $U$ pour
+lequel $\mathscr L'_{j,\bullet}|U$ soit une résolution libre de
+$i_*(\mathscr P_j)|U$ pour tout $j$. On a alors un isomorphisme canonique
+\[
+  (i\times_S 1)_*
+  \bigl(\boldsymbol{\mathscr{T}\!or}_\bullet^{\mathbf S}
+    (\mathscr P_\bullet,\mathscr Q_\bullet)\bigr)
+  \xrightarrow{\sim}
+  \mathscr H_\bullet
+  (\mathscr L'_{\bullet\bullet}\otimes_S\mathscr Q_\bullet).
+  \tag{6.5.12.1}\label{III.6.5.12.1.fr}
+\]
+
+Si $S$, $X'$, $Y'$ sont affines et si $\mathscr L'_{j,\bullet}
+
+=================== PAGE III 152 ===================
+----- (English page III 151: shown above in this file) -----
+----- (English page III 152: shown above in this file) -----
+----- English, ega3/ega3-5.tex, page III 153 -----
+\oldpage[III]{153}
+$\mathfrak{X}$.  Equivalently, $\sh{F}$ is isomorphic to a quotient
+of an $\sh{O}_{\mathfrak{X}}$-module of the form
+$(\sh{O}_{\mathfrak{X}}(\setmin n))^k$.
+\end{corollary}
+
+\begin{proof}
+Since $X_0$ is Noetherian, the hypothesis on $\sh{L}_0$ and
+\sref[II]{II.4.5.5} give an integer $n_0$ such that
+$\sh{F}_0(n)$ is generated by its sections over $\mathfrak{X}$ for
+$n\geq n_0$.  We may take $n_0$ large enough that $\Gamma(\mathfrak{X},\sh{F}(n))
+\longrightarrow
+\Gamma(\mathfrak{X},\sh{F}_0(n))$
+is also surjective for $n\geq n_0$ \sref{III.5.2.3}.  There are
+therefore finitely many sections
+$s_i\in\Gamma(\mathfrak{X},\sh{F}(n))$ whose images generate
+$\sh{F}_0(n)$ \sref[0]{0.5.2.3}.  Since $\mathfrak{J}$ is
+contained in the maximal ideal of the local ring at every point
+of $\mathfrak{X}$, Nakayama's lemma applied to those local rings
+shows that the $s_i$ generate $\sh{F}(n)$
+\sref[0]{0.5.1.1}.
+\end{proof}
+
+\begin{env}[5.2.5]
+\label{III.5.2.5}
+\emph{Proof of the existence theorem: the projective case.}
+With the notation of \sref{III.5.1.4}, suppose that $f$ is
+projective, so that there is an ample $\sh{O}_X$-module $\sh{L}$
+\sref[I]{I.5.5.4}.  By definition, $X_n=\widehat{X}\times_{\widehat{Y}}Y_n$
+is the closed subprescheme
+$X\times_Y Y_n=f^{-1}(Y_n)$ of $X$.  If $\sh{L}'=\sh{L}\otimes_{\sh{O}_X}\sh{O}_{\widehat{X}}$
+is the completion of $\sh{L}$, then
+$\sh{L}'_0=\sh{L}/\mathfrak{J}\sh{L}$, regarded as an
+$\sh{O}_{X_0}$-module; this module is ample
+\sref[II]{II.4.6.13}[(i~\emph{bis})].
+
+We may therefore apply \sref{III.5.2.4} to $\sh{L}'$ and to any
+coherent $\sh{O}_{\widehat{X}}$-module $\sh{F}$.  It follows that
+$\sh{F}$ is isomorphic to a quotient of $\sh{G}=
+\bigl(\sh{L}'^{\otimes(-n)}\bigr)^k$
+for suitable integers $n>0$ and $k>0$.  The module $\sh{G}$ is the
+completion of $(\sh{L}^{\otimes(-n)})^k$
+\sref[I]{I.10.8.10}, and is therefore algebraizable.  Let
+$u:\sh{G}\to\sh{F}$ be the canonical surjection, and put
+$\sh{H}=\Ker(u)$; this is a coherent
+$\sh{O}_{\widehat{X}}$-module \sref[0]{0.5.3.4}.  Applying the same
+argument to $\sh{H}$, we find an algebraizable
+$\sh{O}_{\widehat{X}}$-module $\sh{K}$ and a homomorphism
+$v:\sh{K}\to\sh{G}$ such that $\sh{H}=\Im(v)$.  Thus
+$\sh{F}=\Coker(v)$, and $\sh{F}$ is algebraizable by
+\sref{III.5.2.2}.
+\end{env}
+
+\begin{env}[5.2.6]
+\label{III.5.2.6}
+\emph{Proof of the existence theorem: the quasi-projective case.}
+Retain the notation of \sref{III.5.1.4}, and now suppose that $f$
+is quasi-projective.  There is a projective morphism
+$g:Z\to Y$ such that $X$ is identified with the $Y$-prescheme
+induced on an open subset of $Z$ \sref[II]{II.5.3.2}.  If
+$Z'=g^{-1}(Y')$, then $X'=X\cap Z'$.  Consequently the completion
+$\widehat{X}=X_{/X'}$ is identified with the formal prescheme
+induced by $\widehat{Z}=Z_{/Z'}$ on the open subset $X\cap Z'$ of
+$\widehat{Z}$ \sref[I]{I.10.8.5}.
+
+Let $\sh{F}'$ be a coherent $\sh{O}_{\widehat{X}}$-module whose
+support $T'$ is proper over $\widehat{Y}$.  By definition, there
+is a closed subprescheme of $X'$ with underlying space
+$T'\subset X'$ such that the restriction $T'\to Y'$ of $f$ is
+proper.  Hence $T'$ is proper over $Y$, and is therefore closed in
+$Z'$ \sref[II]{II.5.4.10}.  It follows that $\sh{F}'$ is induced
+on $\widehat{X}$ by the $\sh{O}_{\widehat{Z}}$-module $\sh{G}'$
+obtained by gluing $\sh{F}'$, on the open $\widehat{X}$, with the
+zero sheaf on the open $\widehat Z\setmin T'$; the two sheaves agree on
+their intersection $\widehat X\setmin T'$.
+
+The module $\sh{G}'$ is coherent.  By \sref{III.5.2.5}, there is a
+coherent $\sh{O}_Z$-module $\sh{G}$ such that
+$\sh{G}'=\widehat{\sh{G}}$.  Let $T$ be the support of $\sh{G}$;
+then $T'=T\cap Z'$ \sref[I]{I.10.8.12}.  If $h$ is the restriction
+of $g$ to the reduced closed subprescheme of $Z$ having $T$ as
+its underlying space, then $T'=h^{-1}(Y')=T\cap g^{-1}(Y')$.
+Thus $X\cap T$ is an open subset of $T$ containing $T'$.
+----- English, ega3/ega3-6.tex, page III 153 -----
+\oldpage[III]{153}
+
+\[
+  ''\sh E_{pq}^2
+  =
+  \bigoplus_{q_1+q_2+\ldots+q_m=q}
+  \shTor_p^S
+  \bigl(
+    \sh H_{q_1}(\sh P_\bullet^{(1)}),\ldots,
+    \sh H_{q_m}(\sh P_\bullet^{(m)})
+  \bigr).
+  \tag{6.5.15.1}\label{III.6.5.15.1}
+\]
+In \sref{III.6.8} we shall study the associativity spectral
+sequences to which these hypertor functors of an arbitrary
+finite number of complexes give rise.
+\end{env}
+
+\subsection{Global hypertor functors of complexes of
+quasi-coherent modules and K\"unneth spectral sequences: the
+affine-base case}
+\label{subsection:III.6.6}
+
+\begin{env}[6.6.1]
+\label{III.6.6.1}
+Let $S=\Spec(A)$ be an affine scheme, and let $X^{(i)}$
+$(i=1,2)$ be two quasi-compact $S$-schemes.  For $i=1,2$, let
+$\sh P_\bullet^{(i)}$ be a bounded-below complex of
+quasi-coherent $\sh O_{X^{(i)}}$-modules whose differential has
+degree $-1$.  Choose a finite covering $\mathfrak U^{(i)}=(U_\alpha^{(i)})$
+of $X^{(i)}$ by affine open subsets.  Put $X=X^{(1)}\times_S X^{(2)}$.
+This is a quasi-compact $S$-scheme
+(\sref[I]{I.5.5.1} and \sref[I]{I.6.6.4}), and
+$\mathfrak U=\mathfrak U^{(1)}\times_S\mathfrak U^{(2)}$ is the
+covering of $X$ by the affine open subsets
+$U_\alpha^{(1)}\times_SU_\beta^{(2)}$.
+
+For $p\leq0$ and $q\in\bb Z$, the group of $(-p)$-alternating
+cochains $C^{-p}(\mathfrak U^{(i)},\sh P_q^{(i)})$
+of the covering $\mathfrak U^{(i)}$ with coefficients in
+$\sh P_q^{(i)}$ (\emph{G}, II, 5.1) is an $A$-module.  For
+$p>0$, put
+$C^p(\mathfrak U^{(i)},\sh P_q^{(i)})=0$.  This defines a
+bicomplex of $A$-modules $C^\bullet(\mathfrak U^{(i)},\sh P_\bullet^{(i)})$
+whose two differentials have degree $-1$.
+
+It follows from the definitions (\sref[0]{0.12.1.2}) that the
+homology module $H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\sh P_\bullet^{(i)})\bigr)$
+of this bicomplex, viewed in the usual way as a simple complex
+for the total degree, is the hypercohomology module $\HH^{-n}
+\bigl(\mathfrak U^{(i)},\sh P^{(i)\bullet}\bigr)$,
+where $\sh P^{(i)\bullet}$ is the complex with differential of
+degree $+1$ whose component of degree $q$ is
+$\sh P_{-q}^{(i)}$.  By abuse of notation we write this as $\HH^{-n}
+\bigl(\mathfrak U^{(i)},\sh P_\bullet^{(i)}\bigr)$.
+By \sref{III.6.2.2}, this module is canonically isomorphic to $\HH^{-n}\bigl(X^{(i)},\sh P^{(i)\bullet}\bigr)$,
+also written
+$\HH^{-n}(X^{(i)},\sh P_\bullet^{(i)})$.  It is therefore
+independent of the chosen finite covering
+$\mathfrak U^{(i)}$.
+\end{env}
+
+\begin{env}[6.6.2]
+\label{III.6.6.2}
+Apply the general theory of hyperhomology of functors with
+respect to bicomplexes ((0,~11.7.4)) to the two
+bicomplexes of $A$-modules
+\[
+  L_{\bullet\bullet}^{(i)}
+  =
+  C^\bullet(\mathfrak U^{(i)},\sh P_\bullet^{(i)})
+  \qquad(i=1,2)
+\]
+and to the covariant bifunctor
+$L_{\bullet\bullet}^{(1)}\otimes_A
+ L_{\bullet\bullet}^{(2)}$.
+Because the cochains are alternating and the coverings
+$\mathfrak U^{(i)}$ are finite, the modules $C^{-p}(\mathfrak U^{(i)},\sh P_q^{(i)})$
+are nonzero for only finitely many values of $p$, independently
+of $q$.  In particular, both degrees of each
+$L_{\bullet\bullet}^{(i)}$ are bounded below.
+
+Denote by $\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+or by $\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})$
+the $n$-th hyperhomology module of
+$L_{\bullet\bullet}^{(1)}\otimes_A
+ L_{\bullet\bullet}^{(2)}$.  We call it the hypertor of index
+$n$ of $\sh P_\bullet^{(1)}$ and $\sh P_\bullet^{(2)}$ relative
+to the coverings $\mathfrak U^{(1)}$ and
+$\mathfrak U^{(2)}$.  When these complexes are concentrated in
+degree zero, with terms $\sh F^{(1)}$ and $\sh F^{(2)}$, write $\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh F^{(1)},\sh F^{(2)})$
+for their hypertor.  Following the general conventions, the
+same notation $\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})$
+also denotes the bicomplex whose component of bidegree $(j,k)$
+is $\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_j^{(1)},\sh P_k^{(2)})$.
+
+The construction $L_{\bullet\bullet}^{(i)}$ is exact in
+$\sh P_\bullet^{(i)}$, since all intersections of members of
+----- French corrections on page III 152 -----
+[id 6321]
+OLD: $f_0$ est projectif
+NEW: $f_0$ est \emph{projectif}
+FRENCH CONTEXT (corrected): 0}}
+\mathcal L_0^{\otimes n}$, on voit aussitôt que
+$\mathcal M_k(n)=\mathfrak J^k\mathcal F(n)/
+\mathfrak J^{k+1}\mathcal F(n)$.
+Notons que, puisque $\mathcal L_0$ est ample pour $f_0:X_0\to Y_0$, et
+\oldpage[III]{152}
+que $f_0$ est propre, on en conclut que $f_0$ est \emph{projectif} (\textbf{II}, 5.5.4). Soit $S$ la $A$-algèbre
+graduée $\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+1}$ associée à la filtration $\mathfrak J$-adique de $A$, qui est
+de type fini puisque $A$ est noethérien~; si on pose
+$\mathcal S'=f_0^*(\widetilde S)$,
+$\m
+
+[id 6323]
+OLD: Soit
+\[
+S=\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+1}
+\]
+la $A$-algèbre graduée associée
+NEW: Soit $S$ la $A$-algèbre
+graduée $\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+1}$ associée
+FRENCH CONTEXT (corrected): ue
+$\mathcal M_k(n)=\mathfrak J^k\mathcal F(n)/
+\mathfrak J^{k+1}\mathcal F(n)$.
+Notons que, puisque $\mathcal L_0$ est ample pour $f_0:X_0\to Y_0$, et
+\oldpage[III]{152}
+que $f_0$ est propre, on en conclut que $f_0$ est \emph{projectif} (\textbf{II}, 5.5.4). Soit $S$ la $A$-algèbre
+graduée $\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+1}$ associée à la filtration $\mathfrak J$-adique de $A$, qui est
+de type fini puisque $A$ est noethérien~; si on pose
+$\mathcal S'=f_0^*(\widetilde S)$,
+$\mathcal S'$ est une
+$\mathcal O_{X_0}$-Algèbre quasi-cohérente de type fini, et
+$\mathcal M=\bigoplus_{k\geq0}\mathc
+
+[id 6324]
+OLD: $\mathcal M=\bigoplus_{k\geq0}\mathcal M_k$, $\mathcal S'$ est une
+$\mathcal O_{X_0}$-Algèbre quasi-cohérente de type fini, et $\mathcal M$ un
+NEW: $\mathcal S'$ est une
+$\mathcal O_{X_0}$-Algèbre quasi-cohérente de type fini, et
+$\mathcal M=\bigoplus_{k\geq0}\mathcal M_k$ un
+FRENCH CONTEXT (corrected): if} (\textbf{II}, 5.5.4). Soit $S$ la $A$-algèbre
+graduée $\bigoplus_{k\geq0}\mathfrak J^k/\mathfrak J^{k+1}$ associée à la filtration $\mathfrak J$-adique de $A$, qui est
+de type fini puisque $A$ est noethérien~; si on pose
+$\mathcal S'=f_0^*(\widetilde S)$,
+$\mathcal S'$ est une
+$\mathcal O_{X_0}$-Algèbre quasi-cohérente de type fini, et
+$\mathcal M=\bigoplus_{k\geq0}\mathcal M_k$ un
+$\mathcal S'$-Module gradué quasi-cohérent et de type fini (puisque $\mathcal F_0$
+est cohérent et engendre le $\mathcal S'$-Module $\mathcal M$). On est donc dans les
+conditions d'application du théorème (2.4.1, (ii)), et on en conclut qu'il existe
+$n_0$ tel
+
+[id 6325]
+OLD: et pour tout $k$, on ait
+NEW: et pour \emph{tout} $k$, on ait
+FRENCH CONTEXT (corrected): radué quasi-cohérent et de type fini (puisque $\mathcal F_0$
+est cohérent et engendre le $\mathcal S'$-Module $\mathcal M$). On est donc dans les
+conditions d'application du théorème (2.4.1, (ii)), et on en conclut qu'il existe
+$n_0$ tel que, pour $n\geq n_0$ et pour \emph{tout} $k$, on ait
+\begin{equation}
+\mathrm H^q(X_0,\mathcal M_k(n))=0\qquad\text{\emph{pour tout} }q>0.
+\tag{5.2.3.1}
+\label{III.5.2.3.1-fr}
+\end{equation}
+On a donc aussi $\mathrm H^q(\mathfrak X,\mathcal M_k(n))=0$ pour $q>0$ et
+$n\geq n_0$, $\mathcal M_k(n)$ étant cette foi
+
+[id 6326]
+OLD: \qquad\text{pour tout }q>0.
+NEW: \qquad\text{\emph{pour tout} }q>0.
+FRENCH CONTEXT (corrected): re le $\mathcal S'$-Module $\mathcal M$). On est donc dans les
+conditions d'application du théorème (2.4.1, (ii)), et on en conclut qu'il existe
+$n_0$ tel que, pour $n\geq n_0$ et pour \emph{tout} $k$, on ait
+\begin{equation}
+\mathrm H^q(X_0,\mathcal M_k(n))=0\qquad\text{\emph{pour tout} }q>0.
+\tag{5.2.3.1}
+\label{III.5.2.3.1-fr}
+\end{equation}
+On a donc aussi $\mathrm H^q(\mathfrak X,\mathcal M_k(n))=0$ pour $q>0$ et
+$n\geq n_0$, $\mathcal M_k(n)$ étant cette fois considéré comme
+$\mathcal O_{\mathfrak X}$-Module. Appliquant la suite exacte de coh
+
+[id 6327]
+OLD: \frac{\mathfrak J^k\mathcal F(n)}{\mathfrak J^{k+1}\mathcal F(n)}
+\to
+\frac{\mathfrak J^h\mathcal F(n)}{\mathfrak J^{k+1}\mathcal F(n)}
+\to
+\frac{\mathfrak J^h\mathcal F(n)}{\mathfrak J^k\mathcal F(n)}
+NEW: \mathfrak J^k\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n)
+FRENCH CONTEXT (corrected): el{III.5.2.3.1-fr}
+\end{equation}
+On a donc aussi $\mathrm H^q(\mathfrak X,\mathcal M_k(n))=0$ pour $q>0$ et
+$n\geq n_0$, $\mathcal M_k(n)$ étant cette fois considéré comme
+$\mathcal O_{\mathfrak X}$-Module. Appliquant la suite exacte de cohomologie à
+\[
+0\to
+\mathfrak J^k\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n)
+\to0
+\]
+on en déduit tout d'abord que pour $0\leq h<k$, $n\geq n_0$ et $q>0$, on a par
+récurrence sur $k-h$
+\begin{equation}
+\mathrm H^q(\mathfrak X,
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n))=0
+\tag{5.2.3.2}
+\label{III.5.2.3.2-fr}
+\end{equation}
+
+
+[id 6329]
+OLD: \mathrm H^q\left(\mathfrak X,
+\frac{\mathfrak J^h\mathcal F(n)}{\mathfrak J^k\mathcal F(n)}\right)=0
+NEW: \mathrm H^q(\mathfrak X,
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n))=0
+FRENCH CONTEXT (corrected): }\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n)
+\to
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n)
+\to0
+\]
+on en déduit tout d'abord que pour $0\leq h<k$, $n\geq n_0$ et $q>0$, on a par
+récurrence sur $k-h$
+\begin{equation}
+\mathrm H^q(\mathfrak X,
+\mathfrak J^h\mathcal F(n)/\mathfrak J^k\mathcal F(n))=0
+\tag{5.2.3.2}
+\label{III.5.2.3.2-fr}
+\end{equation}
+et en particulier pour $h=0$
+\begin{equation}
+\mathrm H^q(\mathfrak X,\mathcal F_k(n))=0
+\qquad\text{pour }n\geq n_0,\ k\geq0\text{ et }q>0.
+\tag{5.2.3.3}
+\label{III.5.2.3.3-fr}
+\end{equation}
+Une autre port
+
+[id 6330]
+OLD: \mathrm H^1\left(\mathfrak X,
+\frac{\mathfrak J^k\mathcal F(n)}{\mathfrak J^{k+1}\mathcal F(n)}\right)=0
+NEW: \mathrm H^1(\mathfrak X,
+\mathfrak J^k\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n))=0
+FRENCH CONTEXT (corrected): t{ et }q>0.
+\tag{5.2.3.3}
+\label{III.5.2.3.3-fr}
+\end{equation}
+Une autre portion de la suite exacte de cohomologie, pour $h=0$, donne la suite
+exacte
+\begin{equation}
+\mathrm H^0(\mathfrak X,\mathcal F_{k+1}(n))\to
+\mathrm H^0(\mathfrak X,\mathcal F_k(n))\to
+\mathrm H^1(\mathfrak X,
+\mathfrak J^k\mathcal F(n)/\mathfrak J^{k+1}\mathcal F(n))=0
+\tag{5.2.3.4}
+\label{III.5.2.3.4-fr}
+\end{equation}
+d'où on déduit que pour $h\leq k$, l'application canonique
+\begin{equation}
+\mathrm H^0(\mathfrak X,\mathcal F_k(n))\longrightarrow
+\mathrm H^0(\mathfrak X,\mathcal F_h(n))
+\tag{5.2.3.5}
+\label{III.5.2.3.5-f
+
+[id 6332]
+OLD: Pour tout $q$
+NEW: Pour \emph{tout} $q$
+FRENCH CONTEXT (corrected): d{equation}
+d'où on déduit que pour $h\leq k$, l'application canonique
+\begin{equation}
+\mathrm H^0(\mathfrak X,\mathcal F_k(n))\longrightarrow
+\mathrm H^0(\mathfrak X,\mathcal F_h(n))
+\tag{5.2.3.5}
+\label{III.5.2.3.5-fr}
+\end{equation}
+est \emph{surjective}. Pour \emph{tout} $q$, le système projectif
+$(\mathrm H^q(\mathfrak X,\mathcal F_k(n)))\quad(k\geq0)$ vérifie donc la condition
+(ML) pour $n\geq n_0$. Par ailleurs, tout ouvert formel affine $U$ de $\mathfrak X$
+est aussi un ouvert affine dans chacun des $X_k$ (\textbf{I}, 10.5.2)
+
+[id 6335]
+OLD: (I, 1.3.1)
+NEW: (1.3.1)
+FRENCH CONTEXT (corrected): )))\quad(k\geq0)$ vérifie donc la condition
+(ML) pour $n\geq n_0$. Par ailleurs, tout ouvert formel affine $U$ de $\mathfrak X$
+est aussi un ouvert affine dans chacun des $X_k$ (\textbf{I}, 10.5.2), donc on a
+$\mathrm H^q(U,\mathcal F_k(n))=0$ pour tout $q>0$ (1.3.1), et
+$\mathrm H^0(U,\mathcal F_k(n))\to\mathrm H^0(U,\mathcal F_h(n))$ est surjective
+pour $h\leq k$ (\textbf{I}, 1.3.9). Les conditions d'application de (\textbf{0}, 13.3.1) sont par
+suite remplies, et on en conclut que, pour $n\geq n_0$~:
+\begin{enumerate}
+\
+
+[id 6337]
+OLD: ($0$, 13.3.1)
+NEW: (\textbf{0}, 13.3.1)
+FRENCH CONTEXT (corrected): hacun des $X_k$ (\textbf{I}, 10.5.2), donc on a
+$\mathrm H^q(U,\mathcal F_k(n))=0$ pour tout $q>0$ (1.3.1), et
+$\mathrm H^0(U,\mathcal F_k(n))\to\mathrm H^0(U,\mathcal F_h(n))$ est surjective
+pour $h\leq k$ (\textbf{I}, 1.3.9). Les conditions d'application de (\textbf{0}, 13.3.1) sont par
+suite remplies, et on en conclut que, pour $n\geq n_0$~:
+\begin{enumerate}
+\item[$1^\circ$] Pour tout $q>0$,
+$\mathrm H^q(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^q(\mathfrak X,\mathcal F_k(n))$
+est bijectif, donc, en vertu de
+
+[id 6338]
+OLD: Pour tout $q>0$,
+\[
+\mathrm H^q(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^q(\mathfrak X,\mathcal F_k(n))
+\]
+est bijectif
+NEW: Pour tout $q>0$,
+$\mathrm H^q(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^q(\mathfrak X,\mathcal F_k(n))$
+est bijectif
+FRENCH CONTEXT (corrected): 0(U,\mathcal F_k(n))\to\mathrm H^0(U,\mathcal F_h(n))$ est surjective
+pour $h\leq k$ (\textbf{I}, 1.3.9). Les conditions d'application de (\textbf{0}, 13.3.1) sont par
+suite remplies, et on en conclut que, pour $n\geq n_0$~:
+\begin{enumerate}
+\item[$1^\circ$] Pour tout $q>0$,
+$\mathrm H^q(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^q(\mathfrak X,\mathcal F_k(n))$
+est bijectif, donc, en vertu de (\ref{III.5.2.3.3-fr}),
+$\mathrm H^q(\mathfrak X,\mathcal F(n))=0$.
+\item[$2^\circ$] L'homomorphisme
+$\mathrm H^0(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^0(\mathfrak X,\mathcal F_k(n))$
+est bijectif~; par ailleurs, 
+
+[id 6339]
+OLD: L'homomorphisme
+\[
+\mathrm H^0(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^0(\mathfrak X,\mathcal F_k(n))
+\]
+est bijectif~;
+NEW: L'homomorphisme
+$\mathrm H^0(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^0(\mathfrak X,\mathcal F_k(n))$
+est bijectif~;
+FRENCH CONTEXT (corrected): item[$1^\circ$] Pour tout $q>0$,
+$\mathrm H^q(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^q(\mathfrak X,\mathcal F_k(n))$
+est bijectif, donc, en vertu de (\ref{III.5.2.3.3-fr}),
+$\mathrm H^q(\mathfrak X,\mathcal F(n))=0$.
+\item[$2^\circ$] L'homomorphisme
+$\mathrm H^0(\mathfrak X,\mathcal F(n))\longrightarrow
+\varprojlim_k\mathrm H^0(\mathfrak X,\mathcal F_k(n))$
+est bijectif~; par ailleurs, comme les homomorphismes
+(\ref{III.5.2.3.5-fr}) sont surjectifs, il en est de même de chacun des
+homomorphismes
+\[
+\varprojlim_k\mathrm H^0(\mathfrak X,\mathcal F_k(n))
+\longrightarrow\mathrm H^0(\mathfrak X,\mathcal F_h(n))
+\]
+\end{enumerate}
+c
+
+[id 7167]
+OLD: (resp. $\mathscr Q_\bullet$) un complexe
+NEW: \textup{(resp.} $\mathscr Q_\bullet$) un complexe
+FRENCH CONTEXT (corrected): begin{enumerate}
+  \item[\textup{(i)}] $X$ et $Z=X\times_S Y$ sont localement noethériens et $X$ est plat
+    sur $S$.
+  \item[\textup{(ii)}] $S$ et $X$ sont localement noethériens et $Y$ est de type fini
+    sur $S$.
+\end{enumerate}
+Soit $\mathscr P_\bullet$ \textup{(resp.} $\mathscr Q_\bullet$) un complexe de
+$\mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules) quasi-cohérents,
+limité inférieurement. On suppose en outre que, pour tout $n$,
+$\mathscr H_n(\mathscr P_\bullet)$ \textup{(resp.}
+$\mathscr H_n(\mathscr Q_\bullet)$) est un $\mathscr O_X$-M
+
+[id 7168]
+OLD: (resp. de $\mathscr O_Y$-Modules)
+NEW: \textup{(resp.} de $\mathscr O_Y$-Modules)
+FRENCH CONTEXT (corrected): t noethériens et $X$ est plat
+    sur $S$.
+  \item[\textup{(ii)}] $S$ et $X$ sont localement noethériens et $Y$ est de type fini
+    sur $S$.
+\end{enumerate}
+Soit $\mathscr P_\bullet$ \textup{(resp.} $\mathscr Q_\bullet$) un complexe de
+$\mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules) quasi-cohérents,
+limité inférieurement. On suppose en outre que, pour tout $n$,
+$\mathscr H_n(\mathscr P_\bullet)$ \textup{(resp.}
+$\mathscr H_n(\mathscr Q_\bullet)$) est un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) de type fini. Alors l
+
+[id 7169]
+OLD: (resp.
+$\mathscr H_n(\mathscr Q_\bullet)$)
+NEW: \textup{(resp.}
+$\mathscr H_n(\mathscr Q_\bullet)$)
+FRENCH CONTEXT (corrected): Soit $\mathscr P_\bullet$ \textup{(resp.} $\mathscr Q_\bullet$) un complexe de
+$\mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules) quasi-cohérents,
+limité inférieurement. On suppose en outre que, pour tout $n$,
+$\mathscr H_n(\mathscr P_\bullet)$ \textup{(resp.}
+$\mathscr H_n(\mathscr Q_\bullet)$) est un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) de type fini. Alors les
+$\mathscr{T}\!or_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont des
+$\mathscr O_Z$-Modules cohérents.
+\end{proposition}
+
+\begin{proof}
+Comme $\mathscr P_\bullet$ 
+
+[id 7170]
+OLD: (resp. un
+$\mathscr O_Y$-Module) de type fini.
+NEW: \textup{(resp.} un
+$\mathscr O_Y$-Module) de type fini.
+FRENCH CONTEXT (corrected): mathscr O_X$-Modules \textup{(resp.} de $\mathscr O_Y$-Modules) quasi-cohérents,
+limité inférieurement. On suppose en outre que, pour tout $n$,
+$\mathscr H_n(\mathscr P_\bullet)$ \textup{(resp.}
+$\mathscr H_n(\mathscr Q_\bullet)$) est un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) de type fini. Alors les
+$\mathscr{T}\!or_n^S(\mathscr P_\bullet,\mathscr Q_\bullet)$ sont des
+$\mathscr O_Z$-Modules cohérents.
+\end{proposition}
+
+\begin{proof}
+Comme $\mathscr P_\bullet$ et $\mathscr Q_\bullet$ sont limités
+inférieurement, la suite spectrale
+$''\mathscr E
+
+[id 7172]
+OLD: conditions (i), (ii) de
+NEW: conditions \textup{(i), (ii)} de
+FRENCH CONTEXT (corrected): }^2$ montrent donc que la proposition est équivalente à son
+cas particulier correspondant à $\mathscr P_\bullet$ et
+$\mathscr Q_\bullet$ réduits à leurs termes de degré 0, autrement dit à son
+\end{proof}
+
+\begin{corollary}[6.5.14]
+Supposons vérifiée l'une des conditions \textup{(i), (ii)} de \textup{(6.5.13)}, et soit
+$\mathscr F$ \textup{(resp.} $\mathscr G$) un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) quasi-cohérent de type fini; alors les
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)$ sont des $\mathscr O_Z$-Modules
+cohére
+
+[id 7174]
+OLD: (resp. $\mathscr G$) un
+NEW: \textup{(resp.} $\mathscr G$) un
+FRENCH CONTEXT (corrected): er correspondant à $\mathscr P_\bullet$ et
+$\mathscr Q_\bullet$ réduits à leurs termes de degré 0, autrement dit à son
+\end{proof}
+
+\begin{corollary}[6.5.14]
+Supposons vérifiée l'une des conditions \textup{(i), (ii)} de \textup{(6.5.13)}, et soit
+$\mathscr F$ \textup{(resp.} $\mathscr G$) un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) quasi-cohérent de type fini; alors les
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)$ sont des $\mathscr O_Z$-Modules
+cohérents.
+\end{corollary}
+
+\begin{proof}
+La question étant locale sur $X$ et $
+
+[id 7175]
+OLD: (resp. un
+$\mathscr O_Y$-Module) quasi-cohérent
+NEW: \textup{(resp.} un
+$\mathscr O_Y$-Module) quasi-cohérent
+FRENCH CONTEXT (corrected): \bullet$ réduits à leurs termes de degré 0, autrement dit à son
+\end{proof}
+
+\begin{corollary}[6.5.14]
+Supposons vérifiée l'une des conditions \textup{(i), (ii)} de \textup{(6.5.13)}, et soit
+$\mathscr F$ \textup{(resp.} $\mathscr G$) un $\mathscr O_X$-Module \textup{(resp.} un
+$\mathscr O_Y$-Module) quasi-cohérent de type fini; alors les
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)$ sont des $\mathscr O_Z$-Modules
+cohérents.
+\end{corollary}
+
+\begin{proof}
+La question étant locale sur $X$ et $Y$, on peut supposer $S$, $X$, $Y$
+affines.
+
+\textnormal{(i)} Sous les hypothès
+
+[id 7177]
+OLD: que l'on a
+\[
+  \mathscr{T}\!or_n^S(\mathscr F,\mathscr G)
+  =\mathscr H_n(\mathscr L_\bullet\otimes_S\mathscr G);
+\]
+or,
+NEW: que l'on a
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)
+=\mathscr H_n(\mathscr L_\bullet\otimes_S\mathscr G)$;
+or,
+FRENCH CONTEXT (corrected): s les hypothèses de (i), $S$, $X$ et $Z$ sont noethériens.
+Il existe donc une résolution localement libre $\mathscr L_\bullet$ de
+$\mathscr F$ formée de $\mathscr O_X$-Modules de type fini (\textbf{I}, 1.3.7); comme
+$X$ est plat sur $S$, il résulte de (6.3.4) que l'on a
+$\mathscr{T}\!or_n^S(\mathscr F,\mathscr G)
+=\mathscr H_n(\mathscr L_\bullet\otimes_S\mathscr G)$;
+or, les $\mathscr L_i\otimes_S\mathscr G$ sont des $\mathscr O_Z$-Modules
+quasi-cohérents de type fini (\textbf{I}, 9.1.1), donc cohérents. On en conclut que
+$\mathscr H_n(\mathscr L_\bullet\otimes_S\mathscr G)$ est cohérent
+($\mathbf{0}_{\mathrm I}$, 5.3.4).
+
+\t
+
+=================== PAGE III 153 ===================
+----- (English page III 152: shown above in this file) -----
+----- (English page III 153: shown above in this file) -----
+----- English, ega3/ega3-5.tex, page III 154 -----
+\oldpage[III]{154}
+Since $h$ is proper \sref[II]{II.5.4.2}, and hence closed,
+\sref{III.5.1.3.1} gives $X\cap T=T$.  Thus $T\subset X$; and
+since $T$ is closed in $Z$, it is proper over $Y$.  If $\sh{F}$ is
+the sheaf induced on $X$ by $\sh{G}$, its completion
+$\widehat{\sh{F}}$ is induced on $\widehat{X}$ by
+$\widehat{\sh{G}}$ \sref[I]{I.10.8.4}, and is therefore equal to
+$\sh{F}'$.  This completes the proof.
+\end{env}
+
+
+\subsection{Proof of the existence theorem: the general case}
+\label{subsection:III.5.3}
+
+\begin{lemma}[5.3.1]
+\label{III.5.3.1}
+Under the conditions of \sref{III.5.1.4}, let $0\longrightarrow\sh{H}\longrightarrow\sh{F}
+\longrightarrow\sh{G}\longrightarrow0$
+be an exact sequence of coherent
+$\sh{O}_{\widehat{X}}$-modules.  If $\sh{G}$ and $\sh{H}$ are
+algebraizable, then $\sh{F}$ is algebraizable.
+\end{lemma}
+
+\begin{proof}
+Suppose that
+\[
+  \sh{G}=\widehat{\sh{B}},
+  \qquad
+  \sh{H}=\widehat{\sh{C}},
+\]
+where $\sh{B}$ and $\sh{C}$ are coherent $\sh{O}_X$-modules whose
+supports are proper over $Y$.  The module $\sh{F}$ canonically
+defines an element of the $A$-module $\Ext^1_{\sh{O}_{\widehat{X}}}
+(\widehat{X};\widehat{\sh{B}},\widehat{\sh{C}})$
+\sref[0]{0.12.3.2}.  The hypotheses imply that this $A$-module is
+canonically isomorphic to $\Ext^1_{\sh{O}_X}(X;\sh{B},\sh{C})$
+\sref{III.4.5.2}.  There is therefore an exact sequence $0\longrightarrow\sh{C}\longrightarrow\sh{A}
+\longrightarrow\sh{B}\longrightarrow0$
+of coherent $\sh{O}_X$-modules whose canonical class maps to the
+class corresponding to $\sh{F}$.  By definition, taking account of
+\sref[I]{I.10.8.8}, (ii), this says that $\sh{F}$ is isomorphic to
+$\widehat{\sh{A}}$.  The lemma follows, since
+$\Supp(\sh{A})$ is contained in
+$\Supp(\sh{B})\cup\Supp(\sh{C})$ and is therefore proper over $Y$.
+\end{proof}
+
+\begin{corollary}[5.3.2]
+\label{III.5.3.2}
+Under the conditions of \sref{III.5.1.1}, let
+$u:\sh{F}\to\sh{G}$ be a homomorphism of coherent
+$\sh{O}_{\widehat{X}}$-modules.  If $\sh{G}$, $\Ker(u)$, and
+$\Coker(u)$ are algebraizable, then $\sh{F}$ is algebraizable.
+\end{corollary}
+
+\begin{proof}
+Lemma \sref{III.5.2.2}, applied to
+$\sh{G}\to\Coker(u)$, shows that $\Im(u)$ is algebraizable.  It then
+suffices to apply Lemma \sref{III.5.3.1} to the exact sequence $0\longrightarrow\Ker(u)\longrightarrow\sh{F}
+\longrightarrow\Im(u)\longrightarrow0$.
+\end{proof}
+
+\begin{lemma}[5.3.3]
+\label{III.5.3.3}
+Under the conditions of \sref{III.5.1.1}, let $h:Z\to Y$ be a
+morphism of finite type, let $\widehat{Z}$ be the completion of $Z$
+along $Z'=h^{-1}(Y')$, let $g:Z\to X$ be a proper $Y$-morphism,
+and let $\widehat{g}:\widehat{Z}\to\widehat{X}$ be its extension to
+the completions.  For every algebraizable
+$\sh{O}_{\widehat{Z}}$-module $\sh{F}'$, the module
+$\widehat{g}_*(\sh{F}')$ is an algebraizable
+$\sh{O}_{\widehat{X}}$-module.
+\end{lemma}
+
+\begin{proof}
+If $\sh{F}$ is a coherent $\sh{O}_Z$-module such that
+$\sh{F}'=\widehat{\sh{F}}$, the first comparison theorem
+\sref{III.4.1.5} identifies
+$\widehat{g}_*(\widehat{\sh{F}})$ with the completion of
+$g_*(\sh{F})$.
+\end{proof}
+
+\begin{lemma}[5.3.4]
+\label{III.5.3.4}
+Let $X$ be an ordinary Noetherian scheme, let $X'$ be a closed
+subset of $X$, let $f:Z\to X$ be a proper morphism, and put
+\[
+  Z'=f^{-1}(X'),\qquad
+  \widehat{X}=X_{/X'},\qquad
+  \widehat{Z}=Z_{/Z'}.
+\]
+Let $\widehat{f}:\widehat{Z}\to\widehat{X}$ be the extension of $f$
+to the completions.  Let $\sh{M}$ be a coherent ideal of
+$\sh{O}_X$ such that, if $U=X-\Supp(\sh{O}_X/\sh{M})$,
+the restriction $f^{-1}(U)\to U$ of $f$ is an isomorphism.  Then,
+for every coherent $\sh{O}_{\widehat{X}}$-module $\sh{F}$, there is
+an integer $n>0$ such that the kernel and cokernel of the canonical
+homomorphism $\rho_{\sh{F}}:
+\sh{F}\longrightarrow
+\widehat{f}_*\bigl(\widehat{f}^{\,*}(\sh{F})\bigr)$
+\sref[0]{0.4.4.3} are annihilated by
+$\widehat{\sh{M}}^{\,n}$.
+\end{lemma}
+
+\begin{proof}
+We may restrict to the case $X=\Spec(B)$, where $B$ is a
+Noetherian ring; then $X'=\mathrm{V}(\mathfrak{K})$ for an ideal
+$\mathfrak{K}$ of $B$.  We first reduce to the case in which $B$ is
+adic Noetherian and $\mathfrak{K}$ is an ideal of definition.
+
+Let $B_1$ be the separated completion of $B$ for the
+$\mathfrak{K}$-preadic topology.
+----- English, ega3/ega3-6.tex, page III 154 -----
+\oldpage[III]{154}
+$\mathfrak U^{(i)}$ are affine
+(\sref[I]{I.5.5.6} and \sref[I]{I.1.3.11}).  Consequently $\mathbf{Tor}_\bullet^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})$
+is a covariant bi-$\partial$-functor in
+$\sh P_\bullet^{(1)}$ and $\sh P_\bullet^{(2)}$, with values in
+the category of $A$-modules (\sref[0]{0.11.7.3}).  By
+\sref[0]{0.11.7.2}, it is the common abutment of six biregular
+spectral functors, denoted ${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})$,
+or simply ${}^{(t)}E
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})$,
+where $t$ is one of $a,b,a',b',c,d$.  Their $E_2$-terms are
+\[
+\begin{aligned}
+  {}^{(a)}E_{pq}^2
+  &=
+  \bigoplus_{q_1+q_2=q}
+  \Tor_p^A
+  \bigl(H_{q_1}(L_{\bullet\bullet}^{(1)}),
+        H_{q_2}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(b)}E_{pq}^2
+  &=
+  H_p\bigl(
+    \mathbf{Tor}_q^{A,\mathrm{II}}
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})
+  \bigr)\\
+  {}^{(a')}E_{pq}^2
+  &=
+  \bigoplus_{q_1+q_2=q}
+  \Tor_p^A
+  \bigl(H_{q_1}^{\mathrm I}(L_{\bullet\bullet}^{(1)}),
+        H_{q_2}^{\mathrm I}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(b')}E_{pq}^2
+  &=
+  H_p\bigl(
+    \mathbf{Tor}_q^A
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})
+  \bigr)\\
+  {}^{(c)}E_{pq}^2
+  &=
+  \bigoplus_{q_1+q_2=q}
+  \Tor_p^A
+  \bigl(H_{q_1}^{\mathrm{II}}(L_{\bullet\bullet}^{(1)}),
+        H_{q_2}^{\mathrm{II}}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(d)}E_{pq}^2
+  &=
+  H_p\bigl(
+    \mathbf{Tor}_q^{A,\mathrm I}
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})
+  \bigr).
+\end{aligned}
+\]
+These notations agree with those of the general theory of
+hyperhomology.  We now make the initial terms more explicit.
+\end{env}
+
+\begin{env}[6.6.3]
+\label{III.6.6.3}
+\emph{Spectral sequences \textnormal{(a)} and
+\textnormal{(a$'$)}.}
+By \sref{III.6.6.1},
+\[
+  H_n(L_{\bullet\bullet}^{(i)})
+  =
+  \HH^{-n}(X^{(i)},\sh P_\bullet^{(i)}),
+\]
+and hence
+\[
+  {}^{(a)}E_{pq}^2
+  =
+  \bigoplus_{q_1+q_2=q}
+  \Tor_p^A
+  \bigl(
+    \HH^{-q_1}(X^{(1)},\sh P_\bullet^{(1)}),
+    \HH^{-q_2}(X^{(2)},\sh P_\bullet^{(2)})
+  \bigr).
+\]
+
+By definition, the component of degree $k$ of the complex
+$H_n^{\mathrm I}(L_{\bullet\bullet}^{(i)})$ is
+\[
+  H_n\bigl(
+    C^\bullet(\mathfrak U^{(i)},\sh P_k^{(i)})
+  \bigr)
+  =
+  \HH^{-n}(\mathfrak U^{(i)},\sh P_k^{(i)}).
+\]
+By \sref{III.1.4.1}, this module is canonically isomorphic to
+$\HH^{-n}(X^{(i)},\sh P_k^{(i)})$.  Therefore
+\[
+  {}^{(a')}E_{pq}^2
+  =
+  \bigoplus_{q_1+q_2=q}
+  \Tor_p^A
+  \bigl(
+    \HH^{-q_1}(X^{(1)},\sh P_\bullet^{(1)}),
+    \HH^{-q_2}(X^{(2)},\sh P_\bullet^{(2)})
+  \bigr),
+\]
+where each $\HH^{-q_i}(X^{(i)},\sh P_\bullet^{(i)})$ in this
+last formula denotes the complex obtained by taking cohomology
+term by term.
+\end{env}
+
+\begin{env}[6.6.4]
+\label{III.6.6.4}
+\emph{Spectral sequences \textnormal{(b)} and
+\textnormal{(b$'$)}.}
+By definition, $\mathbf{Tor}_q^{A,\mathrm{II}}
+(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+is a bicomplex whose component of bidegree $(h,k)$ is
+\[
+  \Tor_q^A
+  \bigl(
+    C^{-h}(\mathfrak U^{(1)},\sh P_\bullet^{(1)}),
+    C^{-k}(\mathfrak U^{(2)},\sh P_\bullet^{(2)})
+  \bigr).
+\]
+Let $\Phi^{(i)}$ be the index set of $\mathfrak U^{(i)}$.  For
+$r\geq0$, the complex
+$C^r(\mathfrak U^{(i)},\sh P_\bullet^{(i)})$ is the direct sum
+of the complexes $\Gamma(U_\rho^{(i)},\sh P_\bullet^{(i)})$,
+where $U_\rho^{(i)}$ is the intersection of the
+$U_\xi^{(i)}$ for $\xi\in\rho$, and $\rho$ ranges over the
+appropriate elements of $\mathfrak P(\Phi^{(i)})$.
+Consequently
+\[
+  \Tor_q^A
+  \bigl(
+    C^{-h}(\mathfrak U^{(1)},\sh P_\bullet^{(1)}),
+    C^{-k}(\mathfrak U^{(2)},\sh P_\bullet^{(2)})
+  \bigr)
+\]
+is the direct sum of the $A$-modules $\Tor_q^A
+\bigl(
+\Gamma(U_\sigma^{(1)},\sh P_\bullet^{(1)}),
+\Gamma(U_\tau^{(2)},\sh P_\bullet^{(2)})
+\bigr)$,
+where $\sigma$ and $\tau$ range over
+$\mathfrak P(\Phi^{(1)})$ and $\mathfrak P(\Phi^{(2)})$ with
+\[
+  \operatorname{Card}(\sigma)=1-h,
+  \qquad
+  \operatorname{Card}(\tau)=1-k,
+\]
+respectively.  Since $X^{(1)}$ and $X^{(2)}$ are schemes, the
+$U_\rho^{(i)}$ are affine.  Thus \sref{III.6.4.1.1} gives
+\[
+  \Tor_q^A
+  \bigl(
+    \Gamma(U_\sigma^{(1)},\sh P_\bullet^{(1)}),
+    \Gamma(U_\tau^{(2)},\sh P_\bullet^{(2)})
+  \bigr)
+  =
+  \Gamma\bigl(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \shTor_q^S(\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})
+  \bigr).
+\]
+----- French corrections on page III 153 -----
+[id 6583]
+OLD: \[
+\Gamma(\mathfrak X,\mathcal F(n))\longrightarrow
+\Gamma(\mathfrak X,\mathcal F_0(n))
+\]
+NEW: $\Gamma(\mathfrak X,\mathcal F(n))\longrightarrow
+\Gamma(\mathfrak X,\mathcal F_0(n))$
+FRENCH CONTEXT (corrected): 'hypothèse sur $\mathcal L_0$ et de
+(\textbf{II}, 4.5.5) qu'il existe $n_0$ tel que, pour $n\geq n_0$, $\mathcal F_0(n)$ soit
+engendré par ses sections au-dessus de $\mathfrak X$~; par ailleurs, on peut supposer
+$n_0$ pris assez grand pour que l'homomorphisme
+$\Gamma(\mathfrak X,\mathcal F(n))\longrightarrow
+\Gamma(\mathfrak X,\mathcal F_0(n))$
+soit surjectif pour $n\geq n_0$ (\hyperref[III.5.2.3-fr]{5.2.3}). Il existe donc
+un nombre fini de sections $s_i\in\Gamma(\mathfrak X,\mathcal F(n))$ dont les
+images dans $\Gamma(\mathfrak X,\mathcal F_0(n))$ engendrent $\mathcal F_0(n)$
+($\mathbf{0}_{\mathrm
+
+[id 6586]
+OLD: \emph{Démonstration du théorème d'existence : cas projectif.}
+NEW: \textbf{Démonstration du théorème d'existence : cas projectif.}
+FRENCH CONTEXT (corrected):  l'idéal maximal de
+l'anneau local en tout point de $\mathfrak X$, il résulte du lemme de Nakayama,
+appliqué à ces anneaux locaux, que les $s_i$ engendrent $\mathcal F(n)$
+($\mathbf{0}_{\mathrm I}$, 5.1.1).
+\end{proof}
+
+\begin{env}[5.2.5]
+\label{III.5.2.5-fr}
+\textbf{Démonstration du théorème d'existence : cas projectif.}
+
+Les notations étant celles de (\hyperref[III.5.1.4-fr]{5.1.4}), supposons $f$
+\emph{projectif}, de sorte qu'il existe un $\mathcal O_X$-Module ample $\mathcal L$
+(\textbf{I}, 5.5.4). Par définition, $X_n=\widehat X\times_{\widehat Y}Y_n$ est égal au
+sous-pré
+
+[id 6588]
+OLD: supposons $f$
+projectif,
+NEW: supposons $f$
+\emph{projectif},
+FRENCH CONTEXT (corrected): , que les $s_i$ engendrent $\mathcal F(n)$
+($\mathbf{0}_{\mathrm I}$, 5.1.1).
+\end{proof}
+
+\begin{env}[5.2.5]
+\label{III.5.2.5-fr}
+\textbf{Démonstration du théorème d'existence : cas projectif.}
+
+Les notations étant celles de (\hyperref[III.5.1.4-fr]{5.1.4}), supposons $f$
+\emph{projectif}, de sorte qu'il existe un $\mathcal O_X$-Module ample $\mathcal L$
+(\textbf{I}, 5.5.4). Par définition, $X_n=\widehat X\times_{\widehat Y}Y_n$ est égal au
+sous-préschéma fermé $X\times_Y Y_n=f^{-1}(Y_n)$ de $X$~; si
+$\mathcal L'$ est le
+complété $\mathcal L\ot
+
+[id 6590]
+OLD: $\mathcal L'=\mathcal L\otimes_{\mathcal O_X}\mathcal O_{\widehat X}$ est le
+complété de $\mathcal L$
+NEW: $\mathcal L'$ est le
+complété $\mathcal L\otimes_{\mathcal O_X}\mathcal O_{\widehat X}$ de $\mathcal L$
+FRENCH CONTEXT (corrected): fr]{5.1.4}), supposons $f$
+\emph{projectif}, de sorte qu'il existe un $\mathcal O_X$-Module ample $\mathcal L$
+(\textbf{I}, 5.5.4). Par définition, $X_n=\widehat X\times_{\widehat Y}Y_n$ est égal au
+sous-préschéma fermé $X\times_Y Y_n=f^{-1}(Y_n)$ de $X$~; si
+$\mathcal L'$ est le
+complété $\mathcal L\otimes_{\mathcal O_X}\mathcal O_{\widehat X}$ de $\mathcal L$, on a donc
+$\mathcal L'_0=\mathcal L/\mathfrak J\mathcal L$, considéré comme
+$\mathcal O_{X_0}$-Module~; on sait que $\mathcal L'_0$ est \emph{ample}
+(\textbf{II}, 4.6.13, (i \emph{bis})). On peut donc appliquer à $\mathcal L'$ et à tout
+$\mathcal O_{\widehat
+
+[id 6591]
+OLD: est ample
+NEW: est \emph{ample}
+FRENCH CONTEXT (corrected): {-1}(Y_n)$ de $X$~; si
+$\mathcal L'$ est le
+complété $\mathcal L\otimes_{\mathcal O_X}\mathcal O_{\widehat X}$ de $\mathcal L$, on a donc
+$\mathcal L'_0=\mathcal L/\mathfrak J\mathcal L$, considéré comme
+$\mathcal O_{X_0}$-Module~; on sait que $\mathcal L'_0$ est \emph{ample}
+(\textbf{II}, 4.6.13, (i \emph{bis})). On peut donc appliquer à $\mathcal L'$ et à tout
+$\mathcal O_{\widehat X}$-Module cohérent $\mathcal F$ le cor.
+(\hyperref[III.5.2.4-fr]{5.2.4})~; on voit donc que $\mathcal F$ est isomorphe à
+un quotient de
+$\mathcal G=
+
+[id 6593]
+OLD: (i bis)
+NEW: (i \emph{bis})
+FRENCH CONTEXT (corrected): t le
+complété $\mathcal L\otimes_{\mathcal O_X}\mathcal O_{\widehat X}$ de $\mathcal L$, on a donc
+$\mathcal L'_0=\mathcal L/\mathfrak J\mathcal L$, considéré comme
+$\mathcal O_{X_0}$-Module~; on sait que $\mathcal L'_0$ est \emph{ample}
+(\textbf{II}, 4.6.13, (i \emph{bis})). On peut donc appliquer à $\mathcal L'$ et à tout
+$\mathcal O_{\widehat X}$-Module cohérent $\mathcal F$ le cor.
+(\hyperref[III.5.2.4-fr]{5.2.4})~; on voit donc que $\mathcal F$ est isomorphe à
+un quotient de
+$\mathcal G=(\mathcal L'^{\otimes(-n)})^k$
+pour d
+
+[id 6594]
+OLD: \[
+\mathcal G=(\mathcal L'^{\otimes(-n)})^k
+\]
+NEW: $\mathcal G=(\mathcal L'^{\otimes(-n)})^k$
+FRENCH CONTEXT (corrected): \emph{ample}
+(\textbf{II}, 4.6.13, (i \emph{bis})). On peut donc appliquer à $\mathcal L'$ et à tout
+$\mathcal O_{\widehat X}$-Module cohérent $\mathcal F$ le cor.
+(\hyperref[III.5.2.4-fr]{5.2.4})~; on voit donc que $\mathcal F$ est isomorphe à
+un quotient de
+$\mathcal G=(\mathcal L'^{\otimes(-n)})^k$
+pour des entiers $n>0$ et $k>0$ convenables. Or, il est clair que $\mathcal G$ est
+le complété de $(\mathcal L^{\otimes(-n)})^k$ (\textbf{I}, 10.8.10), donc est
+algébrisable. Considérons ensuite l'homomorphisme canonique surjectif
+$u:\mathcal G\to\mathcal F$,
+
+[id 6597]
+OLD: \emph{Démonstration du théorème d'existence; cas quasi-projectif.}
+NEW: \textbf{Démonstration du théorème d'existence; cas quasi-projectif.}
+FRENCH CONTEXT (corrected): morphisme $v:\mathcal K\to\mathcal G$ tel que
+$\mathcal H=\operatorname{Im}(v)$. On a alors
+$\mathcal F=\operatorname{Coker}(v)$, et $\mathcal F$ est algébrisable en vertu de
+(\hyperref[III.5.2.2-fr]{5.2.2}).
+\end{env}
+
+\begin{env}[5.2.6]
+\label{III.5.2.6-fr}
+\textbf{Démonstration du théorème d'existence; cas quasi-projectif.}
+
+Les notations étant toujours celles de (\hyperref[III.5.1.4-fr]{5.1.4}), supposons
+maintenant que $f$ soit \emph{quasi-projectif}. Il existe alors un morphisme projectif
+$g:Z\to Y$ tel que $X$ s'identifie au $Y$-préschéma induit sur un ouvert de $Z$
+(\textbf
+
+[id 6599]
+OLD: soit quasi-projectif. Il existe
+NEW: soit \emph{quasi-projectif}. Il existe
+FRENCH CONTEXT (corrected): de
+(\hyperref[III.5.2.2-fr]{5.2.2}).
+\end{env}
+
+\begin{env}[5.2.6]
+\label{III.5.2.6-fr}
+\textbf{Démonstration du théorème d'existence; cas quasi-projectif.}
+
+Les notations étant toujours celles de (\hyperref[III.5.1.4-fr]{5.1.4}), supposons
+maintenant que $f$ soit \emph{quasi-projectif}. Il existe alors un morphisme projectif
+$g:Z\to Y$ tel que $X$ s'identifie au $Y$-préschéma induit sur un ouvert de $Z$
+(\textbf{II}, 5.3.2)~; si on pose $Z'=g^{-1}(Y')$, on a $X'=X\cap Z'$. Par suite, le
+complété $\widehat X=X_{/X'}$ s'identifie au préschéma formel ind
+
+[id 6602]
+OLD: est
+propre sur $\widehat Y$
+NEW: est
+\emph{propre sur} $\widehat Y$
+FRENCH CONTEXT (corrected): e, le
+complété $\widehat X=X_{/X'}$ s'identifie au préschéma formel induit par le complété
+$\widehat Z=Z_{/Z'}$ sur l'ouvert $X\cap Z'$ de $\widehat Z$ (\textbf{I}, 10.8.5). Soit
+$\mathcal F'$ un $\mathcal O_{\widehat X}$-Module cohérent, dont le support $T'$ est
+\emph{propre sur} $\widehat Y$~; cela signifie par définition qu'il existe un sous-préschéma
+fermé de $X'$, ayant $T'\subset X'$ comme espace sous-jacent, tel que la restriction
+$T'\to Y'$ de $f$ soit propre~; on en conclut que $T'$ est propre \emph{sur} $Y$, donc
+\emph{fermé dans} $Z'$ (\
+
+[id 6603]
+OLD: propre sur $Y$, donc
+NEW: propre \emph{sur} $Y$, donc
+FRENCH CONTEXT (corrected): nt le support $T'$ est
+\emph{propre sur} $\widehat Y$~; cela signifie par définition qu'il existe un sous-préschéma
+fermé de $X'$, ayant $T'\subset X'$ comme espace sous-jacent, tel que la restriction
+$T'\to Y'$ de $f$ soit propre~; on en conclut que $T'$ est propre \emph{sur} $Y$, donc
+\emph{fermé dans} $Z'$ (\textbf{II}, 5.4.10). Il en résulte que $\mathcal F'$ est le faisceau induit
+sur $\widehat X$ par le $\mathcal O_{\widehat Z}$-Module $\mathcal G'$ obtenu par
+recollement de $\mathcal F'$ (défini sur l'ouvert $\widehat X$ de $\widehat 
+
+[id 6604]
+OLD: donc
+fermé dans $Z'$
+NEW: donc
+\emph{fermé dans} $Z'$
+FRENCH CONTEXT (corrected): \emph{propre sur} $\widehat Y$~; cela signifie par définition qu'il existe un sous-préschéma
+fermé de $X'$, ayant $T'\subset X'$ comme espace sous-jacent, tel que la restriction
+$T'\to Y'$ de $f$ soit propre~; on en conclut que $T'$ est propre \emph{sur} $Y$, donc
+\emph{fermé dans} $Z'$ (\textbf{II}, 5.4.10). Il en résulte que $\mathcal F'$ est le faisceau induit
+sur $\widehat X$ par le $\mathcal O_{\widehat Z}$-Module $\mathcal G'$ obtenu par
+recollement de $\mathcal F'$ (défini sur l'ouvert $\widehat X$ de $\widehat Z$) et
+du faisceau $0$ 
+
+[id 7187]
+OLD: cas de la base affine}
+NEW: cas de la base affine.}
+FRENCH CONTEXT (corrected): ns dans (6.8) les suites spectrales d'associativité auxquelles
+donnent lieu ces foncteurs hypertor d'un nombre quelconque de complexes.
+\end{env}
+
+\subsection{Foncteurs hypertor globaux de complexes de Modules quasi-cohérents
+et suites spectrales de Künneth : cas de la base affine.}
+\label{subsection:III.6.6.fr}
+
+\begin{env}[6.6.1]
+Considérons un schéma affine $S=\operatorname{Spec}(A)$ et deux $S$-\emph{schémas}
+quasi-compacts $X^{(i)}$ ($i=1,2$); soit $\mathscr P_\bullet^{(i)}$ un complexe
+de $\mathscr O_{X^{(i)}}$-Modules quasi-cohére
+
+[id 7188]
+OLD: deux $S$-schémas
+NEW: deux $S$-\emph{schémas}
+FRENCH CONTEXT (corrected): s.
+\end{env}
+
+\subsection{Foncteurs hypertor globaux de complexes de Modules quasi-cohérents
+et suites spectrales de Künneth : cas de la base affine.}
+\label{subsection:III.6.6.fr}
+
+\begin{env}[6.6.1]
+Considérons un schéma affine $S=\operatorname{Spec}(A)$ et deux $S$-\emph{schémas}
+quasi-compacts $X^{(i)}$ ($i=1,2$); soit $\mathscr P_\bullet^{(i)}$ un complexe
+de $\mathscr O_{X^{(i)}}$-Modules quasi-cohérents, \emph{limité inférieurement}, dont
+l'opérateur de dérivation est de degré $-1$ ($i=1,2$). Considérons d'autre
+part un recouvreme
+
+[id 7189]
+OLD: limité inférieurement, dont
+NEW: \emph{limité inférieurement}, dont
+FRENCH CONTEXT (corrected): el{subsection:III.6.6.fr}
+
+\begin{env}[6.6.1]
+Considérons un schéma affine $S=\operatorname{Spec}(A)$ et deux $S$-\emph{schémas}
+quasi-compacts $X^{(i)}$ ($i=1,2$); soit $\mathscr P_\bullet^{(i)}$ un complexe
+de $\mathscr O_{X^{(i)}}$-Modules quasi-cohérents, \emph{limité inférieurement}, dont
+l'opérateur de dérivation est de degré $-1$ ($i=1,2$). Considérons d'autre
+part un recouvrement \emph{fini}
+$\mathfrak U^{(i)}=(U_\alpha^{(i)})$ de $X^{(i)}$ par des ouverts affines;
+soit
+$X=X^{(1)}\times_S X^{(2)}$,
+qui est un $S$-schéma quasi-compact (\text
+
+[id 7190]
+OLD: part un recouvrement fini
+NEW: part un recouvrement \emph{fini}
+FRENCH CONTEXT (corrected): $S$-\emph{schémas}
+quasi-compacts $X^{(i)}$ ($i=1,2$); soit $\mathscr P_\bullet^{(i)}$ un complexe
+de $\mathscr O_{X^{(i)}}$-Modules quasi-cohérents, \emph{limité inférieurement}, dont
+l'opérateur de dérivation est de degré $-1$ ($i=1,2$). Considérons d'autre
+part un recouvrement \emph{fini}
+$\mathfrak U^{(i)}=(U_\alpha^{(i)})$ de $X^{(i)}$ par des ouverts affines;
+soit
+$X=X^{(1)}\times_S X^{(2)}$,
+qui est un $S$-schéma quasi-compact (\textbf{I}, 5.5.1 et 6.6.4), et soit
+$\mathfrak U=\mathfrak U^{(1)}\times_S\mathfrak U^{(2)}$ le recouvrement de
+
+
+[id 7191]
+OLD: soit
+\[
+  X=X^{(1)}\times_S X^{(2)},
+\]
+qui est
+NEW: soit
+$X=X^{(1)}\times_S X^{(2)}$,
+qui est
+FRENCH CONTEXT (corrected): scr O_{X^{(i)}}$-Modules quasi-cohérents, \emph{limité inférieurement}, dont
+l'opérateur de dérivation est de degré $-1$ ($i=1,2$). Considérons d'autre
+part un recouvrement \emph{fini}
+$\mathfrak U^{(i)}=(U_\alpha^{(i)})$ de $X^{(i)}$ par des ouverts affines;
+soit
+$X=X^{(1)}\times_S X^{(2)}$,
+qui est un $S$-schéma quasi-compact (\textbf{I}, 5.5.1 et 6.6.4), et soit
+$\mathfrak U=\mathfrak U^{(1)}\times_S\mathfrak U^{(2)}$ le recouvrement de
+$X$ formé des ouverts affines
+$U_\alpha^{(1)}\times_S U_\beta^{(2)}$. Pour tout couple d'entiers
+$p\leqslant0$, $q\in
+
+[id 7193]
+OLD: alternées
+\[
+  C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})
+\]
+du recouvrement
+NEW: alternées
+$C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$
+du recouvrement
+FRENCH CONTEXT (corrected): .5.1 et 6.6.4), et soit
+$\mathfrak U=\mathfrak U^{(1)}\times_S\mathfrak U^{(2)}$ le recouvrement de
+$X$ formé des ouverts affines
+$U_\alpha^{(1)}\times_S U_\beta^{(2)}$. Pour tout couple d'entiers
+$p\leqslant0$, $q\in\mathbf Z$, le groupe des $(-p)$-cochaînes alternées
+$C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$
+du recouvrement $\mathfrak U^{(i)}$ à coefficients dans le faisceau
+$\mathscr P_q^{(i)}$ (G, II, 5.1) est un $A$-module; pour $p>0$, on posera
+$C^p(\mathfrak U^{(i)},\mathscr P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bulle
+
+[id 7194]
+OLD: défini un
+bicomplexe
+NEW: défini un
+\emph{bicomplexe}
+FRENCH CONTEXT (corrected): s alternées
+$C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$
+du recouvrement $\mathfrak U^{(i)}$ à coefficients dans le faisceau
+$\mathscr P_q^{(i)}$ (G, II, 5.1) est un $A$-module; pour $p>0$, on posera
+$C^p(\mathfrak U^{(i)},\mathscr P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules, dont les \emph{deux} opérateurs de dérivation sont de degré $-1$. Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(
+
+[id 7195]
+OLD: \[
+  C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})
+\]
+de $A$-modules
+NEW: $C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules
+FRENCH CONTEXT (corrected): k U^{(i)},\mathscr P_q^{(i)})$
+du recouvrement $\mathfrak U^{(i)}$ à coefficients dans le faisceau
+$\mathscr P_q^{(i)}$ (G, II, 5.1) est un $A$-module; pour $p>0$, on posera
+$C^p(\mathfrak U^{(i)},\mathscr P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules, dont les \emph{deux} opérateurs de dérivation sont de degré $-1$. Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'or
+
+[id 7196]
+OLD: dont les deux opérateurs
+NEW: dont les \emph{deux} opérateurs
+FRENCH CONTEXT (corrected): fficients dans le faisceau
+$\mathscr P_q^{(i)}$ (G, II, 5.1) est un $A$-module; pour $p>0$, on posera
+$C^p(\mathfrak U^{(i)},\mathscr P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules, dont les \emph{deux} opérateurs de dérivation sont de degré $-1$. Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'ordinaire comme un complexe simple 
+
+[id 7197]
+OLD: ($0_{\mathrm I}$, 12.1.2)
+NEW: (\textbf{0}, 12.1.2)
+FRENCH CONTEXT (corrected): n posera
+$C^p(\mathfrak U^{(i)},\mathscr P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules, dont les \emph{deux} opérateurs de dérivation sont de degré $-1$. Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'ordinaire comme un complexe simple pour le
+degré total) n'est autre que le $A$-module d'\emph{hypercohomologie}
+$\mat
+
+[id 7198]
+OLD: d'homologie
+\[
+  \mathrm H_n\bigl(C^\bullet
+  (\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)
+\]
+de ce bicomplexe
+NEW: d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe
+FRENCH CONTEXT (corrected): r P_q^{(i)})=0$; on a ainsi défini un
+\emph{bicomplexe}
+$C^\bullet(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$
+de $A$-modules, dont les \emph{deux} opérateurs de dérivation sont de degré $-1$. Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'ordinaire comme un complexe simple pour le
+degré total) n'est autre que le $A$-module d'\emph{hypercohomologie}
+$\mathbf H^{-n}
+(\mathfrak U^{(i)},\mathscr P^{(i)\bullet})$
+où $\mathscr P^{(i)\bullet}$ est le complexe à opérateur de dérivation 
+
+[id 7199]
+OLD: que le $A$-module d'hypercohomologie
+NEW: que le $A$-module d'\emph{hypercohomologie}
+FRENCH CONTEXT (corrected): . Il
+résulte des définitions (\textbf{0}, 12.1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'ordinaire comme un complexe simple pour le
+degré total) n'est autre que le $A$-module d'\emph{hypercohomologie}
+$\mathbf H^{-n}
+(\mathfrak U^{(i)},\mathscr P^{(i)\bullet})$
+où $\mathscr P^{(i)\bullet}$ est le complexe à opérateur de dérivation de
+degré $+1$ obtenu en prenant $\mathscr P_{-q}^{(i)}$ pour composante de degré
+$q$; par abus de notation, nous l'écrirons
+$\m
+
+[id 7200]
+OLD: \[
+  \mathbf H^{-n}
+  (\mathfrak U^{(i)},\mathscr P^{(i)\bullet}),
+\]
+où
+NEW: $\mathbf H^{-n}
+(\mathfrak U^{(i)},\mathscr P^{(i)\bullet})$
+où
+FRENCH CONTEXT (corrected): .1.2) que le $A$-module
+d'homologie
+$\mathrm H_n\bigl(C^\bullet
+(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})\bigr)$
+de ce bicomplexe (considéré à l'ordinaire comme un complexe simple pour le
+degré total) n'est autre que le $A$-module d'\emph{hypercohomologie}
+$\mathbf H^{-n}
+(\mathfrak U^{(i)},\mathscr P^{(i)\bullet})$
+où $\mathscr P^{(i)\bullet}$ est le complexe à opérateur de dérivation de
+degré $+1$ obtenu en prenant $\mathscr P_{-q}^{(i)}$ pour composante de degré
+$q$; par abus de notation, nous l'écrirons
+$\mathbf H^{-n}(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})$. Il ré
+
+[id 7201]
+OLD: ($0_{\mathrm I}$, 11.7.4)
+NEW: (\textbf{0}, 11.7.4)
+FRENCH CONTEXT (corrected): t(\mathfrak U^{(i)},\mathscr P_\bullet^{(i)})
+  \qquad(i=1,2)
+\]
+et au bifoncteur covariant
+$L_{\bullet\bullet}^{(1)}\otimes_A L_{\bullet\bullet}^{(2)}$ en ces deux
+bicomplexes, la théorie générale de l'hyperhomologie des foncteurs par rapport
+aux bicomplexes (\textbf{0}, 11.7.4). Comme les cochaînes considérées sont
+\emph{alternées} et les recouvrements $\mathfrak U^{(i)}$ finis, on notera que les
+modules $C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p
+
+[id 7202]
+OLD: sont
+alternées
+NEW: sont
+\emph{alternées}
+FRENCH CONTEXT (corrected): (i=1,2)
+\]
+et au bifoncteur covariant
+$L_{\bullet\bullet}^{(1)}\otimes_A L_{\bullet\bullet}^{(2)}$ en ces deux
+bicomplexes, la théorie générale de l'hyperhomologie des foncteurs par rapport
+aux bicomplexes (\textbf{0}, 11.7.4). Comme les cochaînes considérées sont
+\emph{alternées} et les recouvrements $\mathfrak U^{(i)}$ finis, on notera que les
+modules $C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun d
+
+[id 7203]
+OLD: nombre fini (indépendant de $q$)
+NEW: nombre \emph{fini (indépendant de $q$)}
+FRENCH CONTEXT (corrected): ncteurs par rapport
+aux bicomplexes (\textbf{0}, 11.7.4). Comme les cochaînes considérées sont
+\emph{alternées} et les recouvrements $\mathfrak U^{(i)}$ finis, on notera que les
+modules $C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun des $L_{\bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak
+
+[id 7204]
+OLD: les
+deux degrés
+NEW: les
+\emph{deux} degrés
+FRENCH CONTEXT (corrected):  considérées sont
+\emph{alternées} et les recouvrements $\mathfrak U^{(i)}$ finis, on notera que les
+modules $C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun des $L_{\bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathsc
+
+[id 7205]
+OLD: sont limités
+inférieurement.
+NEW: sont \emph{limités
+inférieurement}.
+FRENCH CONTEXT (corrected): ak U^{(i)}$ finis, on notera que les
+modules $C^{-p}(\mathfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun des $L_{\bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+le $n$-ème module d'hyperhomologie de
+$L_{\bullet\bullet}
+
+[id 7206]
+OLD: \[
+  \mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})
+\]
+NEW: $\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+FRENCH CONTEXT (corrected): hfrak U^{(i)},\mathscr P_q^{(i)})$ ne sont $\ne0$ que pour
+un nombre \emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun des $L_{\bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+le $n$-ème module d'hyperhomologie de
+$L_{\bullet\bullet}^{(1)}\otimes_A L_{\bullet\bullet}^{(2)}$, que nous
+appellerons l'\emph{hypertor} d'indice 
+
+[id 7207]
+OLD: ou
+\[
+  \mathbf{Tor}_n^S
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})
+\]
+NEW: ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+FRENCH CONTEXT (corrected): emph{fini (indépendant de $q$)} de valeurs de $p$, et en particulier les
+\emph{deux} degrés de chacun des $L_{\bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+le $n$-ème module d'hyperhomologie de
+$L_{\bullet\bullet}^{(1)}\otimes_A L_{\bullet\bullet}^{(2)}$, que nous
+appellerons l'\emph{hypertor} d'indice $n$ de
+$\mathscr P_\bullet^{(1)}$ et $\mathscr P_\bullet^{(2)}$, relatif aux
+recouvrements $\mathfrak U^{(1)}$ 
+
+[id 7208]
+OLD: le $n$-ième module
+NEW: le $n$-ème module
+FRENCH CONTEXT (corrected): bullet\bullet}^{(i)}$ sont \emph{limités
+inférieurement}. Nous désignerons par
+$\mathbf{Tor}_n^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+ou
+$\mathbf{Tor}_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+le $n$-ème module d'hyperhomologie de
+$L_{\bullet\bullet}^{(1)}\otimes_A L_{\bullet\bullet}^{(2)}$, que nous
+appellerons l'\emph{hypertor} d'indice $n$ de
+$\mathscr P_\bullet^{(1)}$ et $\mathscr P_\bullet^{(2)}$, relatif aux
+recouvrements $\mathfrak U^{(1)}$ et $\mathfrak U^{(
+
+[id 7209]
+OLD: on écrit
+\[
+  \mathbf{Tor}_n^S
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr F^{(1)},\mathscr F^{(2)})
+\]
+leur hypertor.
+NEW: on écrit
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr F^{(1)},\mathscr F^{(2)})$
+leur hypertor.
+FRENCH CONTEXT (corrected): llet^{(1)}$ et $\mathscr P_\bullet^{(2)}$, relatif aux
+recouvrements $\mathfrak U^{(1)}$ et $\mathfrak U^{(2)}$. Lorsque
+$\mathscr P_\bullet^{(1)}$ et $\mathscr P_\bullet^{(2)}$ sont réduits à leurs
+termes de degré 0, $\mathscr F^{(1)}$ et $\mathscr F^{(2)}$, on écrit
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr F^{(1)},\mathscr F^{(2)})$
+leur hypertor. On désignera par
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+suivant les conventions générales, le \emph{bicomplexe} dont le composant d'indices
+$(j,k)$ est
+$\mathscr{T}\!or_n^S
+(\mathfrak U^
+
+[id 7210]
+OLD: On désignera par
+\[
+  \mathbf{Tor}_n^S
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)}),
+\]
+suivant
+NEW: On désignera par
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+suivant
+FRENCH CONTEXT (corrected): e
+$\mathscr P_\bullet^{(1)}$ et $\mathscr P_\bullet^{(2)}$ sont réduits à leurs
+termes de degré 0, $\mathscr F^{(1)}$ et $\mathscr F^{(2)}$, on écrit
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr F^{(1)},\mathscr F^{(2)})$
+leur hypertor. On désignera par
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+suivant les conventions générales, le \emph{bicomplexe} dont le composant d'indices
+$(j,k)$ est
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_j^{(1)},\mathscr P_k^{(2)})$.
+
+Comme $L_{\bullet\bullet}^{(i)}$ est un foncteur exact en
+$\mathscr P_
+
+[id 7211]
+OLD: le bicomplexe dont
+NEW: le \emph{bicomplexe} dont
+FRENCH CONTEXT (corrected): or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr F^{(1)},\mathscr F^{(2)})$
+leur hypertor. On désignera par
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+suivant les conventions générales, le \emph{bicomplexe} dont le composant d'indices
+$(j,k)$ est
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_j^{(1)},\mathscr P_k^{(2)})$.
+
+Comme $L_{\bullet\bullet}^{(i)}$ est un foncteur exact en
+$\mathscr P_\bullet^{(i)}$, puisque les intersections des ensembl
+
+[id 7212]
+OLD: est
+\[
+  \mathbf{Tor}_n^S
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr P_j^{(1)},\mathscr P_k^{(2)}).
+\]
+NEW: est
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_j^{(1)},\mathscr P_k^{(2)})$.
+FRENCH CONTEXT (corrected): (1)},\mathscr F^{(2)})$
+leur hypertor. On désignera par
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+suivant les conventions générales, le \emph{bicomplexe} dont le composant d'indices
+$(j,k)$ est
+$\mathscr{T}\!or_n^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_j^{(1)},\mathscr P_k^{(2)})$.
+
+Comme $L_{\bullet\bullet}^{(i)}$ est un foncteur exact en
+$\mathscr P_\bullet^{(i)}$, puisque les intersections des ensembles
+\oldpage[III]{154}
+de $\mathfrak U^{(i)}$ sont affines (\textbf{I}, 5.5.6 et 1.3.11),
+$\mathbf{Tor}_\bullet^S
+(\mathfrak U^{(1)},\ma
+
+=================== PAGE III 154 ===================
+----- (English page III 153: shown above in this file) -----
+----- (English page III 154: shown above in this file) -----
+----- English, ega3/ega3-5.tex, page III 155 -----
+\oldpage[III]{155}
+If $\mathfrak{K}_1=\mathfrak{K}B_1$, then $B_1$ is an adic
+Noetherian ring and $\mathfrak{K}_1$ is an ideal of definition.
+Put $X_1=\Spec(B_1)$, and let $h:X_1\to X$ be the morphism
+corresponding to the canonical homomorphism $B\to B_1$.  If
+$X'_1=h^{-1}(X')$, then $X'_1=\mathrm{V}(\mathfrak{K}_1)$.  Finally
+put
+\[
+  Z_1=Z\times_X X_1,\qquad f_1:Z_1\longrightarrow X_1.
+\]
+The morphism $f_1$ is proper \sref[II]{II.5.4.2}.  Denote by
+$\widehat{X}_1$ the completion of $X_1$ along $X'_1$, by $\widehat{Z}_1=
+Z_1\times_{X_1}\widehat{X}_1$
+the completion of $Z_1$ along
+$Z'_1=f_1^{-1}(X'_1)$, and by
+$\widehat{f}_1$ the extension of $f_1$ to the completions.
+
+The extension
+$\widehat{h}:\widehat{X}_1\to\widehat{X}$ corresponds to the
+identity map of $B_1$ and is therefore an isomorphism
+\sref[I]{I.10.9.1}.  The corresponding morphism
+$\widehat{Z}_1\to\widehat{Z}$ is consequently also an isomorphism,
+and these isomorphisms identify $\widehat{f}_1$ with
+$\widehat{f}$.  Moreover,
+$\sh{M}_1=h^*(\sh{M})$ is a coherent ideal of $\sh{O}_{X_1}$ and $\Supp(\sh{O}_{X_1}/\sh{M}_1)
+=h^{-1}\bigl(\Supp(\sh{O}_X/\sh{M})\bigr)$
+\sref[I]{I.9.1.13}.  Thus, if
+$U_1=X_1\setmin\Supp(\sh{O}_{X_1}/\sh{M}_1)$, then
+$U_1=h^{-1}(U)$, and the restriction
+$f_1^{-1}(U_1)\to U_1$ is an isomorphism
+\sref[I]{I.3.2.7}.  Finally, $\widehat{\sh{M}}$ and
+$\widehat{\sh{M}}_1$ are identified by $\widehat{h}$
+\sref[I]{I.10.9.5}.  All the hypotheses of the lemma are therefore
+satisfied by $X_1$, $X'_1$, $f_1$, and $\sh{M}_1$; henceforth we
+may suppose that $B$ is adic Noetherian and that $\mathfrak{K}$ is
+an ideal of definition.
+
+We then have $\widehat{X}=\Spf(B)$ and
+$\sh{F}=N^\Delta$, where $N$ is a finite-type $B$-module.  Thus
+$\sh{F}=\widehat{\sh{G}}$, where $\sh{G}$ is the coherent
+$\sh{O}_X$-module $\widetilde{N}$ \sref[I]{I.10.10.5}, and
+\[
+  \widehat{f}^{\,*}(\sh{F})
+  =\widehat{f^*(\sh{G})}
+\]
+\sref[I]{I.10.9.5}.  By the first comparison theorem
+\sref{III.4.1.5},
+\[
+  \widehat{f}_*
+  \bigl(\widehat{f^*(\sh{G})}\bigr)
+  \simeq
+  \widehat{f_*\bigl(f^*(\sh{G})\bigr)},
+\]
+and, by \sref{III.5.1.3}, the canonical homomorphism
+$\rho_{\sh{F}}$ is precisely $\widehat{\rho}_{\sh{G}}$.
+
+The kernel $\sh{P}$ and cokernel $\sh{R}$ of $\rho_{\sh{G}}:
+\sh{G}\longrightarrow f_*\bigl(f^*(\sh{G})\bigr)$
+are coherent $\sh{O}_X$-modules, and their restrictions to $U$ are
+zero.  There is therefore an integer $n>0$ such that $\sh{M}^n\sh{P}=\sh{M}^n\sh{R}=0$
+\sref[I]{I.9.3.4}.  It follows that $\widehat{\sh{M}}^{\,n}\widehat{\sh{P}}
+=
+\widehat{\sh{M}}^{\,n}\widehat{\sh{R}}
+=0$
+\sref[I]{I.10.8.8} \sref[I]{I.10.8.10}, which proves the lemma.
+\end{proof}
+
+\begin{env}[5.3.5]
+\label{III.5.3.5}
+\emph{End of the proof of the existence theorem.}
+Retain the hypotheses of \sref{III.5.1.4}.  We use Noetherian
+induction \sref[0]{0.2.2.2}, assuming the theorem known for every
+closed subprescheme $T$ of $X$ whose underlying space is distinct
+from $X$; here $\widehat{T}$ denotes the completion of $T$ along
+$T\cap X'$.  We may suppose that $X$ is nonempty.
+
+Since $f$ is separated and of finite type, Chow's lemma
+\sref[II]{II.5.6.1} gives a $Y$-scheme $Z$ and a $Y$-morphism
+$g:Z\to X$ such that the structural morphism $h:Z\to Y$ is
+quasi-projective, $g$ is projective and surjective, and there is a
+nonempty open subset $U$ of $X$ for which
+$g^{-1}(U)\to U$ is an isomorphism.  Let $\sh{M}$ be a coherent
+ideal of $\sh{O}_X$ defining a closed subprescheme with underlying
+space $X\setmin U$ \sref[I]{I.5.2.2}, and let $\sh{F}$ be a coherent
+$\sh{O}_{\widehat{X}}$-module whose support $E$ is proper over $Y$.
+Denote by $\widehat{Z}$ the completion of $Z$ along
+$h^{-1}(Y')$, and by
+$\widehat{g}:\widehat{Z}\to\widehat{X}$ the extension of $g$ to
+the completions.
+
+The module $\widehat{g}^{\,*}(\sh{F})$ is a coherent
+$\sh{O}_{\widehat{Z}}$-module whose support is contained in
+$g^{-1}(E)$ and is therefore proper over $Y$, since $g$ is
+projective and hence proper \sref[II]{II.5.4.6}.  Since $h$ is
+quasi-projective, $\widehat{g}^{\,*}(\sh{F})$ is algebraizable by
+\sref{III.5.2.6}.
+----- English, ega3/ega3-6.tex, page III 155 -----
+\oldpage[III]{155}
+
+It follows that ${}^{(b)}E_{pq}^2$ is the $(-p)$-th cohomology
+module of the complex $L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathcal S)$
+of bialternating cochains on $\Phi^{(1)}$ and $\Phi^{(2)}$ with
+values in the coefficient system
+\[
+  \mathcal S:(\sigma,\tau)\longmapsto
+  \Gamma\bigl(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \shTor_q^S(\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})
+  \bigr)
+  \tag{6.6.4.1}\label{III.6.6.4.1}
+\]
+(\sref[0]{0.11.8.4}).  By \sref[0]{0.11.8.5} and
+\sref[0]{0.11.8.6}, this complex has the same cohomology as the
+complex of all cochains $C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathcal S)$
+and as the complex $P^\bullet(\Phi^{(1)},\Phi^{(2)};\mathcal S)$,
+whose elements are linear combinations of
+\[
+  \lambda(\sigma,\tau)\in
+  \Gamma\bigl(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \shTor_q^S(\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})
+  \bigr),
+\]
+where
+\[
+  \sigma=(\alpha_0,\ldots,\alpha_h),
+  \qquad
+  \tau=(\beta_0,\ldots,\beta_h)
+\]
+are sequences with the same number of terms.  Now
+\[
+\begin{split}
+  U_\sigma^{(1)}\times_SU_\tau^{(2)}
+  &=
+  (U_{\alpha_0}^{(1)}\times_SU_{\beta_0}^{(2)})
+  \cap\cdots\cap
+  (U_{\alpha_h}^{(1)}\times_SU_{\beta_h}^{(2)})
+\end{split}
+\]
+by \sref[I]{I.3.2.7}.  Let $\mathfrak U$ be the covering of
+$Z=X^{(1)}\times_SX^{(2)}$ by the affine open subsets
+$U_\alpha^{(1)}\times_SU_\beta^{(2)}$.  Since $Z$ is a scheme,
+\sref{III.1.3.1} yields
+\[
+  {}^{(b)}E_{pq}^2
+  =
+  \HH^{-p}
+  \bigl(
+    Z,\shTor_q^S
+    (\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})
+  \bigr).
+  \tag{6.6.4.2}\label{III.6.6.4.2}
+\]
+
+Next, $\mathbf{Tor}_q^A
+(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+is a bicomplex whose component of bidegree $(h,k)$ is the direct
+sum of the $A$-modules
+\[
+  \Tor_q^A
+  \bigl(
+    C^{-h_1}(\mathfrak U^{(1)},\sh P_{k_1}^{(1)}),
+    C^{-h_2}(\mathfrak U^{(2)},\sh P_{k_2}^{(2)})
+  \bigr),
+\]
+where $h_1+h_2=h$ and $k_1+k_2=k$.  Expanding the cochain
+modules as above shows that this component is also the direct
+sum of
+\[
+  \Gamma\bigl(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \shTor_q^S(\sh P_{k_1}^{(1)},\sh P_{k_2}^{(2)})
+  \bigr),
+\]
+where $k_1+k_2=k$ and $\operatorname{Card}(\sigma)
++\operatorname{Card}(\tau)=2-h$.
+
+The term ${}^{(b')}E_{pq}^2$ is the $(-p)$-th cohomology module
+of a bicomplex $N^{\bullet\bullet}=(N^{hk})$.  For fixed $k$,
+the simple complex $N^{\bullet k}$ consists of bialternating
+cochains on $\Phi^{(1)}$ and $\Phi^{(2)}$ with values in the
+coefficient system
+\[
+  \mathcal S_k:(\sigma,\tau)\longmapsto
+  \Gamma\left(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \shTor_q^S(\sh P_{-k_1}^{(1)},\sh P_{-k_2}^{(2)})
+  \right).
+\]
+These coefficient systems form a complex
+$\mathcal S^\bullet$, whose differential is induced by that of
+the simple complex associated to the bicomplex $\shTor_q^S
+(\sh P^{(1)\bullet},\sh P^{(2)\bullet})$.
+By \sref[0]{0.11.8.9}, $N^{\bullet\bullet}$ has the same
+cohomology as $C^\bullet
+(\Phi^{(1)},\Phi^{(2)};\mathcal S^\bullet)$,
+and also the same cohomology as $P^\bullet
+(\Phi^{(1)},\Phi^{(2)};\mathcal S^\bullet)$,
+whose elements of bidegree $(h,k)$ are linear combinations of
+\[
+  \lambda(\sigma,\tau)\in
+  \Gamma\left(
+    U_\sigma^{(1)}\times_SU_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \shTor_q^S(\sh P_{-k_1}^{(1)},\sh P_{-k_2}^{(2)})
+  \right)
+\]
+with $\sigma=(\alpha_0,\ldots,\alpha_h)$ and
+$\tau=(\beta_0,\ldots,\beta_h)$ having the same number of terms
+(\sref[0]{0.11.8.10}).  As above, ${}^{(b')}E_{pq}^2$ is
+therefore the $(-p)$-th cohomology module of $C^\bullet(\mathfrak U,\mathcal Q^\bullet)$,
+where $\mathcal Q^\bullet$ is the simple complex associated to
+the bicomplex $\shTor_q^S
+(\sh P^{(1)\bullet},\sh P^{(2)\bullet})$
+of $\sh O_Z$-modules.  With the conventions of
+\sref{III.6.6.1}, we obtain
+\[
+  {}^{(b')}E_{pq}^2
+  =
+  \HH^{-p}
+  \bigl(
+    Z,\shTor_q^S
+    (\sh P_\bullet^{(1)},\sh P_\bullet^{(2)})
+  \bigr).
+  \tag{6.6.4.3}\label{III.6.6.4.3}
+\]
+\end{env}
+----- French corrections on page III 154 -----
+[id 6613]
+OLD: \subsection{Démonstration du théorème d'existence : cas général}
+NEW: \subsection{Démonstration du théorème d'existence : cas général.}
+FRENCH CONTEXT (corrected): ur $Y$. Si $\mathcal F$ est le
+faisceau induit sur $X$ par $\mathcal G$, son complété $\widehat{\mathcal F}$ est
+induit sur $\widehat X$ par $\widehat{\mathcal G}$ (\textbf{I}, 10.8.4), donc est égal à
+$\mathcal F'$, ce qui achève la démonstration.
+\end{env}
+
+\subsection{Démonstration du théorème d'existence : cas général.}
+\label{subsection:III.5.3-fr}
+
+\begin{lemma}[5.3.1]
+\label{III.5.3.1-fr}
+Sous les conditions de \textup{(\hyperref[III.5.1.4-fr]{5.1.4})}, si
+$0\to\mathcal H\to\mathcal F\to\mathcal G\to0$
+est une suite exacte de $\mathcal O_{\widehat X}$-Modules cohérents te
+
+[id 6615]
+OLD: \[
+0\to\mathcal H\to\mathcal F\to\mathcal G\to0
+\]
+NEW: $0\to\mathcal H\to\mathcal F\to\mathcal G\to0$
+FRENCH CONTEXT (corrected): cal F'$, ce qui achève la démonstration.
+\end{env}
+
+\subsection{Démonstration du théorème d'existence : cas général.}
+\label{subsection:III.5.3-fr}
+
+\begin{lemma}[5.3.1]
+\label{III.5.3.1-fr}
+Sous les conditions de \textup{(\hyperref[III.5.1.4-fr]{5.1.4})}, si
+$0\to\mathcal H\to\mathcal F\to\mathcal G\to0$
+est une suite exacte de $\mathcal O_{\widehat X}$-Modules cohérents telle que
+$\mathcal G$ et $\mathcal H$ soient algébrisables, alors $\mathcal F$ est
+algébrisable.
+\end{lemma}
+
+\begin{proof}
+En effet, supposons que $\mathcal G=\widehat{\mathcal B}$,
+$\mathc
+
+[id 6616]
+OLD: \[
+\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})
+\]
+NEW: $\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})$
+FRENCH CONTEXT (corrected): oof}
+En effet, supposons que $\mathcal G=\widehat{\mathcal B}$,
+$\mathcal H=\widehat{\mathcal C}$, $\mathcal B$ et $\mathcal C$ étant des
+$\mathcal O_X$-Modules cohérents à supports propres sur $Y$~; $\mathcal F$ définit
+canoniquement un élément du $A$-module
+$\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})$
+(\textbf{0}, 12.3.2), et les hypothèses entraînent que ce $A$-module est canoniquement
+isomorphe à
+$\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$
+(4.5.2)~; il existe donc une suite exacte
+$0\to\mathcal C\to\mathcal A\to\mathcal B\to0$ de $\mat
+
+[id 6617]
+OLD: ($0$, 12.3.2)
+NEW: (\textbf{0}, 12.3.2)
+FRENCH CONTEXT (corrected): hcal B$ et $\mathcal C$ étant des
+$\mathcal O_X$-Modules cohérents à supports propres sur $Y$~; $\mathcal F$ définit
+canoniquement un élément du $A$-module
+$\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})$
+(\textbf{0}, 12.3.2), et les hypothèses entraînent que ce $A$-module est canoniquement
+isomorphe à
+$\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$
+(4.5.2)~; il existe donc une suite exacte
+$0\to\mathcal C\to\mathcal A\to\mathcal B\to0$ de $\mathcal O_X$-Modules
+coh
+
+[id 6618]
+OLD: \[
+\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)
+\]
+NEW: $\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$
+FRENCH CONTEXT (corrected): athcal F$ définit
+canoniquement un élément du $A$-module
+$\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})$
+(\textbf{0}, 12.3.2), et les hypothèses entraînent que ce $A$-module est canoniquement
+isomorphe à
+$\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$
+(4.5.2)~; il existe donc une suite exacte
+$0\to\mathcal C\to\mathcal A\to\mathcal B\to0$ de $\mathcal O_X$-Modules
+cohérents telle que l'image canonique de l'élément de
+$\operatorname{Ext}^1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$ correspondant à
+$\mathcal A
+
+[id 6619]
+OLD: (I, 10.8.8, (iii))
+NEW: (\textbf{I}, 10.8.8, (ii))
+FRENCH CONTEXT (corrected): 1_{\mathcal O_X}(X;\mathcal B,\mathcal C)$ correspondant à
+$\mathcal A$ soit l'élément de
+$\operatorname{Ext}^1_{\mathcal O_{\widehat X}}
+(\widehat X;\widehat{\mathcal B},\widehat{\mathcal C})$ correspondant à
+$\mathcal F$. Mais par définition (compte tenu de (\textbf{I}, 10.8.8, (ii))), cela signifie
+que $\mathcal F$ est isomorphe à $\widehat{\mathcal A}$, d'où le lemme, car
+$\operatorname{Supp}(\mathcal A)$ est contenu dans la réunion de
+$\operatorname{Supp}(\mathcal B)$ et $\operatorname{Supp}(\mathcal C)$, donc est
+propre sur $Y$.
+\end{
+
+[id 6621]
+OLD: \[
+0\to\operatorname{Ker}(u)\to\mathcal F\to\operatorname{Im}(u)\to0.
+\]
+NEW: $0\to\operatorname{Ker}(u)\to\mathcal F\to\operatorname{Im}(u)\to0$.
+FRENCH CONTEXT (corrected):  lemme (\hyperref[III.5.2.2-fr]{5.2.2}) appliqué à l'homomorphisme
+$\mathcal G\to\operatorname{Coker}(u)$ montre en effet que
+$\operatorname{Im}(u)$ est algébrisable, et il suffit ensuite d'appliquer le lemme
+(\hyperref[III.5.3.1-fr]{5.3.1}) à la suite exacte
+$0\to\operatorname{Ker}(u)\to\mathcal F\to\operatorname{Im}(u)\to0$.
+\end{proof}
+
+\begin{lemma}[5.3.3]
+\label{III.5.3.3-fr}
+Sous les conditions de \textup{(\hyperref[III.5.1.1-fr]{5.1.1})}, soient $h:Z\to Y$ un
+morphisme de type fini, $\widehat Z$ le complété de $Z$ le long de
+$Z'=h^{-1}(Y')$, $g:Z\to X$ un $Y$-morphisme propr
+
+[id 6623]
+OLD: U=X-\operatorname{Supp}
+NEW: U=X\setmin\operatorname{Supp}
+FRENCH CONTEXT (corrected): ne partie fermée de $X$,
+$f:Z\to X$ un morphisme propre, $Z'=f^{-1}(X')$,
+$\widehat X=X_{/X'}$, $\widehat Z=Z_{/Z'}$,
+$\widehat f:\widehat Z\to\widehat X$ le prolongement de $f$ aux complétés. Soit
+$\mathcal M$ un Idéal cohérent de $\mathcal O_X$ tel que, si
+$U=X\setmin\operatorname{Supp}(\mathcal O_X/\mathcal M)$, la restriction
+$f^{-1}(U)\to U$ de $f$ soit un isomorphisme. Alors, pour tout
+$\mathcal O_{\widehat X}$-Module cohérent $\mathcal F$, il existe un entier $n>0$
+tel que le noyau et le conoyau de l'homomorphisme canonique
+$\rho_{\math
+
+[id 6624]
+OLD: \[
+\rho_{\mathcal F}:\mathcal F\longrightarrow
+\widehat f_*\bigl(\widehat f^{,*}(\mathcal F)\bigr)
+\]
+NEW: $\rho_{\mathcal F}:\mathcal F\longrightarrow
+\widehat f_*\bigl(\widehat f^{*}(\mathcal F)\bigr)$
+FRENCH CONTEXT (corrected): orname{Supp}(\mathcal O_X/\mathcal M)$, la restriction
+$f^{-1}(U)\to U$ de $f$ soit un isomorphisme. Alors, pour tout
+$\mathcal O_{\widehat X}$-Module cohérent $\mathcal F$, il existe un entier $n>0$
+tel que le noyau et le conoyau de l'homomorphisme canonique
+$\rho_{\mathcal F}:\mathcal F\longrightarrow
+\widehat f_*\bigl(\widehat f^{*}(\mathcal F)\bigr)$
+\textup{($\mathbf{0}_{\mathrm I}$, 4.4.3)} soient annulés par $\widehat{\mathcal M}^{n}$.
+\end{lemma}
+
+\begin{proof}
+On peut se borner au cas où $X=\operatorname{Spec}(B)$ où $B$ est un anneau
+noethérien, donc $X'=\mathrm V(\mathfrak K)$, où $\mathfrak K$ est
+
+[id 6626]
+OLD: \widehat{\mathcal M}^{,n}
+NEW: \widehat{\mathcal M}^{n}
+FRENCH CONTEXT (corrected): $\mathcal F$, il existe un entier $n>0$
+tel que le noyau et le conoyau de l'homomorphisme canonique
+$\rho_{\mathcal F}:\mathcal F\longrightarrow
+\widehat f_*\bigl(\widehat f^{*}(\mathcal F)\bigr)$
+\textup{($\mathbf{0}_{\mathrm I}$, 4.4.3)} soient annulés par $\widehat{\mathcal M}^{n}$.
+\end{lemma}
+
+\begin{proof}
+On peut se borner au cas où $X=\operatorname{Spec}(B)$ où $B$ est un anneau
+noethérien, donc $X'=\mathrm V(\mathfrak K)$, où $\mathfrak K$ est un idéal de
+$B$. Nous allons voir qu'on peut se ramener au cas où $B$ est un anneau \em
+
+[id 6627]
+OLD: un anneau adique
+noethérien
+NEW: un anneau \emph{adique}
+noethérien
+FRENCH CONTEXT (corrected): athcal M}^{n}$.
+\end{lemma}
+
+\begin{proof}
+On peut se borner au cas où $X=\operatorname{Spec}(B)$ où $B$ est un anneau
+noethérien, donc $X'=\mathrm V(\mathfrak K)$, où $\mathfrak K$ est un idéal de
+$B$. Nous allons voir qu'on peut se ramener au cas où $B$ est un anneau \emph{adique}
+noethérien et $\mathfrak K$ un idéal de définition de $B$. Soit en effet $B_1$ le
+séparé complété de $B$ pour la topologie $\mathfrak K$-préadique~; si
+$\mathfrak K_1=\mathfrak K B_1$, $B_1$ est donc un
+\oldpage[III]{155}
+anneau adique noethérien dont $\mathfrak K_1$ es
+
+[id 7214]
+OLD: bi-$\partial$-foncteur covariant
+NEW: \emph{bi-$\partial$-foncteur covariant}
+FRENCH CONTEXT (corrected): let^{(i)}$, puisque les intersections des ensembles
+\oldpage[III]{154}
+de $\mathfrak U^{(i)}$ sont affines (\textbf{I}, 5.5.6 et 1.3.11),
+$\mathbf{Tor}_\bullet^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+ \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$ est un
+\emph{bi-$\partial$-foncteur covariant} en $\mathscr P_\bullet^{(1)}$,
+$\mathscr P_\bullet^{(2)}$, à valeurs dans la catégorie des $A$-modules
+(\textbf{0}, 11.7.3). En outre, on sait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que
+
+[id 7215]
+OLD: ($0_{\mathrm I}$, 11.7.3)
+NEW: (\textbf{0}, 11.7.3)
+FRENCH CONTEXT (corrected): hbf{Tor}_\bullet^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+ \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$ est un
+\emph{bi-$\partial$-foncteur covariant} en $\mathscr P_\bullet^{(1)}$,
+$\mathscr P_\bullet^{(2)}$, à valeurs dans la catégorie des $A$-modules
+(\textbf{0}, 11.7.3). En outre, on sait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que nous désignerons par la notation
+${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bu
+
+[id 7216]
+OLD: ($0_{\mathrm I}$, 11.7.2)
+NEW: (\textbf{0}, 11.7.2)
+FRENCH CONTEXT (corrected): athfrak U^{(2)};
+ \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$ est un
+\emph{bi-$\partial$-foncteur covariant} en $\mathscr P_\bullet^{(1)}$,
+$\mathscr P_\bullet^{(2)}$, à valeurs dans la catégorie des $A$-modules
+(\textbf{0}, 11.7.3). En outre, on sait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que nous désignerons par la notation
+${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+ou
+${}^{(t)}E
+(\mathfrak U^
+
+[id 7217]
+OLD: spectraux biréguliers,
+NEW: spectraux \emph{biréguliers},
+FRENCH CONTEXT (corrected): bi-$\partial$-foncteur covariant} en $\mathscr P_\bullet^{(1)}$,
+$\mathscr P_\bullet^{(2)}$, à valeurs dans la catégorie des $A$-modules
+(\textbf{0}, 11.7.3). En outre, on sait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que nous désignerons par la notation
+${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+ou
+${}^{(t)}E
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+où $t$ doit êt
+
+[id 7218]
+OLD: \[
+  {}^{(t)}\mathscr E^S
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})
+\]
+NEW: ${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+FRENCH CONTEXT (corrected): mathscr P_\bullet^{(2)}$, à valeurs dans la catégorie des $A$-modules
+(\textbf{0}, 11.7.3). En outre, on sait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que nous désignerons par la notation
+${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+ou
+${}^{(t)}E
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+où $t$ doit être remplacé par une des lettres $a$, $b$, $a'$, $b'$, $c$,
+$d$, et dont les termes $E_2$ sont les suivants :
+\[
+\begin{aligned}
+  {}^{(a)}E_
+
+[id 7219]
+OLD: \[
+  {}^{(t)}\mathscr E
+  (\mathfrak U^{(1)},\mathfrak U^{(2)};
+   \mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)}),
+\]
+NEW: ${}^{(t)}E
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+FRENCH CONTEXT (corrected): ait (\textbf{0}, 11.7.2) que ce
+bifoncteur est l'aboutissement commun de six foncteurs spectraux \emph{biréguliers},
+que nous désignerons par la notation
+${}^{(t)}E^S
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$
+ou
+${}^{(t)}E
+(\mathfrak U^{(1)},\mathfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+où $t$ doit être remplacé par une des lettres $a$, $b$, $a'$, $b'$, $c$,
+$d$, et dont les termes $E_2$ sont les suivants :
+\[
+\begin{aligned}
+  {}^{(a)}E_{pq}^2
+  &=\bigoplus_{q_1+q_2=q}
+    \operatorname{Tor}_p^A
+    \bigl(\mathrm H_{q_1}(L_{\bullet\bullet}^
+
+[id 7221]
+OLD: \mathbf{Tor}_p^A
+    \bigl(\mathrm H_{q_1}(L
+NEW: \operatorname{Tor}_p^A
+    \bigl(\mathrm H_{q_1}(L
+FRENCH CONTEXT (corrected): thfrak U^{(2)};
+\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})$,
+où $t$ doit être remplacé par une des lettres $a$, $b$, $a'$, $b'$, $c$,
+$d$, et dont les termes $E_2$ sont les suivants :
+\[
+\begin{aligned}
+  {}^{(a)}E_{pq}^2
+  &=\bigoplus_{q_1+q_2=q}
+    \operatorname{Tor}_p^A
+    \bigl(\mathrm H_{q_1}(L_{\bullet\bullet}^{(1)}),
+          \mathrm H_{q_2}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(b)}E_{pq}^2
+  &=\mathrm H_p\bigl(
+    \mathbf{Tor}_q^{A,\mathrm{II}}
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(a')}E_{pq}^2
+  &=\bigoplus_
+
+[id 7228]
+OLD: \mathbf{Tor}_q^A
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})\bigr),\\
+NEW: \operatorname{Tor}_q^A
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})\bigr)\\
+FRENCH CONTEXT (corrected): )\bigr)\\
+  {}^{(a')}E_{pq}^2
+  &=\bigoplus_{q_1+q_2=q}
+    \mathbf{Tor}_p^A
+    \bigl(\mathrm H_{q_1}^{\mathrm I}(L_{\bullet\bullet}^{(1)}),
+          \mathrm H_{q_2}^{\mathrm I}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(b')}E_{pq}^2
+  &=\mathrm H_p\bigl(
+    \operatorname{Tor}_q^A
+    (L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(c)}E_{pq}^2
+  &=\bigoplus_{q_1+q_2=q}
+    \mathbf{Tor}_p^A
+    \bigl(\mathrm H_{q_1}^{\mathrm{II}}(L_{\bullet\bullet}^{(1)}),
+          \mathrm H_{q_2}^{\mathrm{II}}(L_{\bullet\bullet}^{(2)})\bigr)\\
+  {}^{(d)}E_{pq}^2
+  &=\mathrm H_p\bigl(
+    \mathbf
+
+[id 7232]
+OLD: {}^{(a)}\mathscr E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+NEW: {}^{(a)}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \operatorname{Tor}_p^A
+FRENCH CONTEXT (corrected): nv}[6.6.3]
+\emph{Suites spectrales $(a)$ et $(a')$.} Nous avons vu en (6.6.1) que le
+module d'homologie $\mathrm H_n(L_{\bullet\bullet}^{(i)})$ du bicomplexe
+$L_{\bullet\bullet}^{(i)}$ était égal à
+$\mathbf H^{-n}(X^{(i)},\mathscr P_\bullet^{(i)})$; donc
+\[
+  {}^{(a)}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \operatorname{Tor}_p^A
+   \bigl(\mathbf H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathbf H^{-q_2}(X^{(2)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+Par définition, le complexe
+$\mathrm H_n^{\mathrm I}(L_{\bullet\bullet}^{(i)})$ a pour terme de degré $k$
+le module d'homologie
+
+
+[id 7233]
+OLD: le module de cohomologie
+NEW: le module de \emph{cohomologie}
+FRENCH CONTEXT (corrected): },\mathscr P_\bullet^{(2)})\bigr).
+\]
+Par définition, le complexe
+$\mathrm H_n^{\mathrm I}(L_{\bullet\bullet}^{(i)})$ a pour terme de degré $k$
+le module d'homologie
+$\mathrm H_n(C^\bullet(\mathfrak U^{(i)},\mathscr P_k^{(i)}))$, c'est-à-dire,
+par définition, le module de \emph{cohomologie}
+$\mathrm H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$; on sait (1.4.1) que
+ce module est canoniquement isomorphe à
+$\mathrm H^{-n}(X^{(i)},\mathscr P_k^{(i)})$; donc
+\[
+  {}^{(a')}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathrm H^{-q_1
+
+[id 7234]
+OLD: $\mathbf H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$
+NEW: $\mathrm H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$
+FRENCH CONTEXT (corrected): ).
+\]
+Par définition, le complexe
+$\mathrm H_n^{\mathrm I}(L_{\bullet\bullet}^{(i)})$ a pour terme de degré $k$
+le module d'homologie
+$\mathrm H_n(C^\bullet(\mathfrak U^{(i)},\mathscr P_k^{(i)}))$, c'est-à-dire,
+par définition, le module de \emph{cohomologie}
+$\mathrm H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$; on sait (1.4.1) que
+ce module est canoniquement isomorphe à
+$\mathrm H^{-n}(X^{(i)},\mathscr P_k^{(i)})$; donc
+\[
+  {}^{(a')}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathrm H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathrm H
+
+[id 7235]
+OLD: $\mathbf H^{-n}(X^{(i)},\mathscr P_k^{(i)})$
+NEW: $\mathrm H^{-n}(X^{(i)},\mathscr P_k^{(i)})$
+FRENCH CONTEXT (corrected): odule d'homologie
+$\mathrm H_n(C^\bullet(\mathfrak U^{(i)},\mathscr P_k^{(i)}))$, c'est-à-dire,
+par définition, le module de \emph{cohomologie}
+$\mathrm H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$; on sait (1.4.1) que
+ce module est canoniquement isomorphe à
+$\mathrm H^{-n}(X^{(i)},\mathscr P_k^{(i)})$; donc
+\[
+  {}^{(a')}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathrm H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathrm H^{-q_2}(X^{(2)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+\end{env}
+
+\begin{env}[6.6.4]
+\emph{Suites spectrales 
+
+[id 7236]
+OLD: {}^{(a')}\mathscr E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathbf H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathbf H^{-q_2}(X^{(2)},\mathscr P_\bullet^{(2)})\bigr).
+NEW: {}^{(a')}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathrm H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathrm H^{-q_2}(X^{(2)},\mathscr P_\bullet^{(2)})\bigr).
+FRENCH CONTEXT (corrected): )},\mathscr P_k^{(i)}))$, c'est-à-dire,
+par définition, le module de \emph{cohomologie}
+$\mathrm H^{-n}(\mathfrak U^{(i)},\mathscr P_k^{(i)})$; on sait (1.4.1) que
+ce module est canoniquement isomorphe à
+$\mathrm H^{-n}(X^{(i)},\mathscr P_k^{(i)})$; donc
+\[
+  {}^{(a')}E_{pq}^2
+  =\bigoplus_{q_1+q_2=q}
+   \mathbf{Tor}_p^A
+   \bigl(\mathrm H^{-q_1}(X^{(1)},\mathscr P_\bullet^{(1)}),
+         \mathrm H^{-q_2}(X^{(2)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+\end{env}
+
+\begin{env}[6.6.4]
+\emph{Suites spectrales $(b)$ et $(b')$.} Par définition,
+$\mathbf{Tor}_q^{A,\mathrm{II}}
+(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$ est un bicomplexe dont
+le terme de degré $(h,k)$ est le $A$-module
+\[
+  \mathbf{Tor
+
+[id 7237]
+OLD: des $A$-modules
+\[
+  \mathbf{Tor}_q^A
+  \bigl(\Gamma(U_\sigma^{(1)},\mathscr P_\bullet^{(1)}),
+        \Gamma(U_\tau^{(2)},\mathscr P_\bullet^{(2)})\bigr),
+\]
+NEW: des $A$-modules
+$\mathbf{Tor}_q^A
+\bigl(\Gamma(U_\sigma^{(1)},\mathscr P_\bullet^{(1)}),
+\Gamma(U_\tau^{(2)},\mathscr P_\bullet^{(2)})\bigr)$,
+FRENCH CONTEXT (corrected): ^{(i)}$ pour $\xi\in\rho$, et $\rho$ parcourt
+$\mathfrak P(\Phi^{(i)})$; donc le $A$-module
+\[
+  \mathbf{Tor}_q^A
+  \bigl(C^{-h}(\mathfrak U^{(1)},\mathscr P_\bullet^{(1)}),
+        C^{-k}(\mathfrak U^{(2)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+est somme directe des $A$-modules
+$\mathbf{Tor}_q^A
+\bigl(\Gamma(U_\sigma^{(1)},\mathscr P_\bullet^{(1)}),
+\Gamma(U_\tau^{(2)},\mathscr P_\bullet^{(2)})\bigr)$,
+où $\sigma$ (resp. $\tau$) parcourt les éléments de
+$\mathfrak P(\Phi^{(1)})$ (resp. $\mathfrak P(\Phi^{(2)})$) tels que
+$\operatorname{Card}(\sigma)=-(h+1)$ (resp.
+$\operatorname{Card}(\tau)=-(k+1)$). Comme $X^{(1)}$ et $X^{(2)}$ sont des
+schémas, les $U_\rh
+
+=================== PAGE III 155 ===================
+----- (English page III 154: shown above in this file) -----
+----- (English page III 155: shown above in this file) -----
+----- English, ega3/ega3-5.tex, page III 156 -----
+\oldpage[III]{156}
+It follows from \sref{III.5.3.3}, since $g$ is proper, that $\widehat{g}_*
+\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$
+is an algebraizable $\sh{O}_{\widehat{X}}$-module.
+
+Apply \sref{III.5.3.4} to $\sh{F}$ and $g$.  The kernel $\sh{P}$
+and cokernel $\sh{R}$ of $\rho_{\sh{F}}:
+\sh{F}\longrightarrow
+\widehat{g}_*\bigl(\widehat{g}^{\,*}(\sh{F})\bigr)$
+are annihilated by a power $\widehat{\sh{M}}^{\,n}$.  Let $T$ be
+the closed subprescheme of $X$ defined by $\sh{M}^n$, whose
+underlying space is $X\setmin U$, and let $j:T\to X$ be the canonical
+injection.  Its extension
+$\widehat{j}:\widehat{T}\to\widehat{X}$ is the canonical injection
+\sref[I]{I.10.14.7}, and we may write
+\[
+  \sh{P}=
+  \widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{P})\bigr),
+  \qquad
+  \sh{R}=
+  \widehat{j}_*\bigl(\widehat{j}^{\,*}(\sh{R})\bigr).
+\]
+Since $U$ is nonempty, the induction hypothesis shows that
+$\widehat{j}^{\,*}(\sh{P})$ and
+$\widehat{j}^{\,*}(\sh{R})$ are algebraizable
+$\sh{O}_{\widehat{T}}$-modules.  Lemma \sref{III.5.3.3} then shows
+that $\sh{P}$ and $\sh{R}$ are algebraizable, and
+\sref{III.5.3.2} finally proves that $\sh{F}$ is algebraizable.
+\end{env}
+
+
+\subsection{Application: comparison between morphisms of ordinary preschemes and morphisms of formal preschemes. Algebraizable formal preschemes}
+\label{subsection:III.5.4}
+
+\begin{theorem}[5.4.1]
+\label{III.5.4.1}
+Let $A$ be an adic Noetherian ring, let $\mathfrak{J}$ be an ideal
+of definition of $A$, and put
+\[
+  S=\Spec(A),\qquad S'=\mathrm{V}(\mathfrak{J}).
+\]
+Let $u:X\to S$ be a proper morphism and let $v:Y\to S$ be a
+separated morphism of finite type.  Let
+$\widehat{S}$, $\widehat{X}$, and $\widehat{Y}$ be the completions
+of $S$, $X$, and $Y$ along $S'$, $u^{-1}(S')$, and $v^{-1}(S')$,
+respectively.  For every $S$-morphism $f:X\to Y$, let
+$\widehat{f}:\widehat{X}\to\widehat{Y}$ be its extension to the
+completions.  Then the map $f\leadsto\widehat{f}$ is a bijection
+\[
+  \Hom_S(X,Y)
+  \xrightarrow{\ \sim\ }
+  \Hom_{\widehat{S}}(\widehat{X},\widehat{Y}).
+\]
+\end{theorem}
+
+\begin{proof}
+We first prove injectivity.  Suppose that $f,g:X\to Y$ are
+$S$-morphisms such that $\widehat{f}=\widehat{g}$.  There is then
+an open neighbourhood $V$ of $X'=u^{-1}(S')$ on which $f$ and $g$
+coincide \sref[I]{I.10.9.4}.  Since $u$ is closed,
+\sref{III.5.1.3.1} gives $V=X$, and hence $f=g$.
+
+We now prove surjectivity.  Let
+$h:\widehat{X}\to\widehat{Y}$ be an
+$\widehat{S}$-morphism.  Put $Z=X\times_S Y$,
+and denote the canonical projections by $p:Z\to X$ and
+$q:Z\to Y$.  The prescheme $Z$ is of finite type over $S$
+\sref[I]{I.6.3.4}, and is therefore Noetherian.  Let
+$\widehat{Z}$ be its completion along $Z'=p^{-1}\bigl(u^{-1}(S')\bigr)$.
+The formal prescheme $\widehat{Z}$ is canonically identified with
+$\widehat{X}\times_{\widehat{S}}\widehat{Y}$, and its projections
+onto $\widehat{X}$ and $\widehat{Y}$ are identified with
+$\widehat{p}$ and $\widehat{q}$ \sref[I]{I.10.9.7}.
+
+Since $Y$ is separated over $S$, $\widehat{Y}$ is separated over
+$\widehat{S}$ \sref[I]{I.10.15.7}.  The graph morphism $\Gamma_h=(1_{\widehat{X}},h):
+\widehat{X}\longrightarrow\widehat{Z}$
+is consequently a closed immersion \sref[I]{I.10.15.4}.  Let
+$\mathfrak{T}$ be the closed formal subprescheme of
+$\widehat{Z}$ associated with this immersion, and let
+$j:\mathfrak{T}\to\widehat{Z}$ be the canonical injection.  Thus $\Gamma_h=j\circ w$,
+where $w:\widehat{X}\to\mathfrak{T}$ is an isomorphism
+\sref[I]{I.10.14.3} whose inverse is
+$\widehat{p}\circ j$.  Moreover, $\mathfrak{T}$ is proper over
+$\widehat{S}$ because $\widehat{X}$ is.  It follows from
+\sref{III.5.1.8} that there is a closed subprescheme $T$ of $Z$
+such that $\mathfrak{T}
+=\widehat{T}
+=T_{/(T\cap Z')}$,
+and that $j=\widehat{i}$, where $i:T\to Z$ is the canonical
+injection \sref[I]{I.10.14.7}.
+
+The morphism $p\circ i:T\to X$ is an isomorphism: its extension to
+the completions is the isomorphism
+$\widehat{p}\circ\widehat{i}$, and it suffices to apply
+\sref{III.4.6.8}, noting as above that $S$ is the only
+neighbourhood of $S'$ in $S$.
+----- English, ega3/ega3-6.tex, page III 156 -----
+\oldpage[III]{156}
+
+\begin{env}[6.6.5]
+\label{III.6.6.5}
+\emph{Spectral sequences \textnormal{(c)} and
+\textnormal{(d)}.}
+By definition, the component of degree $h$ of the complex
+$H_n^{\mathrm{II}}(L_{\bullet\bullet}^{(i)})$ is the
+$A$-module $C^{-h}
+\bigl(
+\mathfrak U^{(i)},
+\sh H_n(\sh P_\bullet^{(i)})
+\bigr)$,
+because the functor $C^{-h}$ is exact.  Hence, by the definition
+of the hypertor of two modules relative to two coverings
+(\sref{III.6.6.2}),
+\[
+  {}^{(c)}E_{pq}^2
+  =
+  \bigoplus_{q_1+q_2=q}
+  \operatorname{Tor}_p^S
+  \bigl(
+    \mathfrak U^{(1)},\mathfrak U^{(2)};
+    \sh H_{q_1}(\sh P_\bullet^{(1)}),
+    \sh H_{q_2}(\sh P_\bullet^{(2)})
+  \bigr).
+\]
+
+Finally, by definition, $\operatorname{Tor}_q^{A,\mathrm I}
+(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$
+is a bicomplex whose component of bidegree $(h,k)$ is the
+$A$-module $\operatorname{Tor}_q^S
+\bigl(
+\mathfrak U^{(1)},\mathfrak U^{(2)};
+\sh P_h^{(1)},\sh P_k^{(2)}
+\bigr)$.
+Consequently
+\[
+  {}^{(d)}E_{pq}^2
+  =
+  H_p\left(
+    \operatorname{Tor}_q^S
+    \bigl(
+      \mathfrak U^{(1)},\mathfrak U^{(2)};
+      \sh P_\bullet^{(1)},\sh P_\bullet^{(2)}
+    \bigr)
+  \right).
+\]
+\end{env}
+
+\begin{env}[6.6.6]
+\label{III.6.6.6}
+The theory of hyperhomology for functors of bicomplexes
+(\sref[0]{0.11.7.3}) shows, as in \sref{III.6.3.4}, that for
+every \emph{flat} Cartan--Eilenberg resolution
+$M_{\bullet\bullet\bullet}^{(i)}$ of $L_{\bullet\bullet}^{(i)}$ in the
+category of complexes of modules bounded below $(i=1,2)$, there
+are canonical isomorphisms of bi-$\partial$-functors
+\begin{env}[6.6.6.1]
+\label{III.6.6.6.1}
+\[
+\begin{split}
+  \mathbf{Tor}_\bullet^S
+  \bigl(
+    \mathfrak U^{(1)},\mathfrak U^{(2)};
+    \sh P_\bullet^{(1)},\sh P_\bullet^{(2)}
+  \bigr)
+  &\xrightarrow{\sim}
+  H_\bullet
+  \bigl(
+    M_{\bullet\bullet\bullet}^{(1)}
+    \otimes_A M_{\bullet\bullet\bullet}^{(2)}
+  \bigr)\\
+  &\xrightarrow{\sim}
+  H_\bullet
+  \bigl(
+    M_{\bullet\bullet\bullet}^{(1)}
+    \otimes_A L_{\bullet\bullet}^{(2)}
+  \bigr)\\
+  &\xrightarrow{\sim}
+  H_\bullet
+  \bigl(
+    L_{\bullet\bullet}^{(1)}
+    \otimes_A M_{\bullet\bullet\bullet}^{(2)}
+  \bigr).
+\end{split}
+\tag{6.6.6.1}
+\]
+\end{env}
+\end{env}
+
+\begin{env}[6.6.7]
+\label{III.6.6.7}
+We shall now show that the global hypertor defined in
+\sref{III.6.6.2}, and the six corresponding spectral sequences,
+do not depend, up to canonical isomorphisms, on the finite affine
+open coverings $\mathfrak U^{(i)}$ used to define them.  It is
+enough to show that if $\mathfrak V^{(i)}$ are two other
+coverings of the same kind, with $\mathfrak V^{(i)}$ finer than
+$\mathfrak U^{(i)}$ for $i=1,2$, then there are canonical
+isomorphisms of spectral functors
+\begin{env}[6.6.7, $t$]
+\label{III.6.6.7.t}
+\[
+  {}^{(t)}E
+  \bigl(
+    \mathfrak U^{(1)},\mathfrak U^{(2)};
+    \sh P_\bullet^{(1)},\sh P_\bullet^{(2)}
+  \bigr)
+  \xrightarrow{\sim}
+  {}^{(t)}E
+  \bigl(
+    \mathfrak V^{(1)},\mathfrak V^{(2)};
+    \sh P_\bullet^{(1)},\sh P_\bullet^{(2)}
+  \bigr),
+  \tag{6.6.7, $t$)}\label{III.6.6.7.t.eq}
+\]
+\end{env}
+where $t$ is one of $a,b,a',b',c,d$.
+
+For $i=1,2$ there are homomorphisms of bicomplexes
+\[
+  C^\bullet
+  (\mathfrak U^{(i)},\sh P_\bullet^{(i)})
+  \longrightarrow
+  C^\bullet
+  (\mathfrak V^{(i)},\sh P_\bullet^{(i)})
+\]
+that are well defined up to homotopy
+((G,~II, 5.7.1)).  It follows at once that the
+homomorphisms \eqref{III.6.6.7.t.eq} are canonically defined and
+compatible with the boundary operators in their abutments
+(\sref[0]{0.11.3.2}).  Moreover, the calculation of the
+$E_2$-terms of the spectral sequences
+\textnormal{(a)}, \textnormal{(b)}, \textnormal{(a$'$)}, and
+\textnormal{(b$'$)} shows that
+\eqref{III.6.6.7.t.eq} is an isomorphism on their $E_2$-terms.
+Since these spectral sequences are biregular, it follows that
+\eqref{III.6.6.7.t.eq} is an isomorphism for these spectral
+functors, and hence an isomorphism of bi-$\partial$-functors on
+their common abutment (\sref[0]{0.11.1.5}).
+
+In particular, if $\sh F^{(i)}$ is a quasi-coherent
+$\sh O_{X^{(i)}}$-module $(i=1,2)$, the canonical homomorphism
+\[
+  \mathbf{Tor}_\bullet^S
+  \bigl(
+    \mathfrak U^{(1)},\mathfrak U^{(2)};
+    \sh F^{(1)},\sh F^{(2)}
+  \bigr)
+  \longrightarrow
+  \mathbf{Tor}_\bullet^S
+  \bigl(
+    \mathfrak V^{(1)},\mathfrak V^{(2)};
+    \sh F^{(1)},\sh F^{(2)}
+  \bigr)
+\]
+is bijective.  In view of the calculation in
+\sref{III.6.6.5}, the homomorphism
+\eqref{III.6.6.7.t.eq} is therefore also an isomorphism on
+$E_2$-terms for $t=c$ and $t=d$.  As above, we conclude that it
+is an isomorphism of spectral sequences for these two values of
+$t$.
+----- French corrections on page III 155 -----
+[id 6632]
+OLD: \[
+\operatorname{Supp}(\mathcal O_{X_1}/\mathcal M_1)
+=h^{-1}(\operatorname{Supp}(\mathcal O_X/\mathcal M))
+\]
+NEW: $\operatorname{Supp}(\mathcal O_{X_1}/\mathcal M_1)
+=h^{-1}(\operatorname{Supp}(\mathcal O_X/\mathcal M))$
+FRENCH CONTEXT (corrected): 10.9.1)~; on en conclut que l'homomorphisme correspondant
+$\widehat Z_1\to\widehat Z$ est aussi un isomorphisme, ces isomorphismes identifiant
+$\widehat f_1$ et $\widehat f$. Enfin,
+$\mathcal M_1=h^*(\mathcal M)$ est un Idéal cohérent de $\mathcal O_{X_1}$ et
+$\operatorname{Supp}(\mathcal O_{X_1}/\mathcal M_1)
+=h^{-1}(\operatorname{Supp}(\mathcal O_X/\mathcal M))$
+(\textbf{I}, 9.1.13), donc, si
+$U_1=X_1\setmin\operatorname{Supp}(\mathcal O_{X_1}/\mathcal M_1)$, on a
+$U_1=h^{-1}(U)$, d'où résulte aussitôt que la restriction
+$f_1^{-1}(U_1)\to U_1$ de $f_1$ est un isomorphisme (\textbf{I}, 3.2.7)~; en outre, les
+complétés
+
+[id 6638]
+OLD: \[
+\widehat f^{,*}(\mathcal F)=\widehat{f^*(\mathcal G)}
+\]
+NEW: $\widehat f^{*}(\mathcal F)=(f^*(\mathcal G))^{\widehat{\,}}$
+FRENCH CONTEXT (corrected): $. On a alors
+$\widehat X=\operatorname{Spf}(B)$, et $\mathcal F=N^\Delta$, où $N$ est un
+$B$-module de type fini, d'où $\mathcal F=\widehat{\mathcal G}$, où $\mathcal G$
+est le $\mathcal O_X$-Module cohérent $\widetilde N$ (\textbf{I}, 10.10.5), et par suite
+$\widehat f^{*}(\mathcal F)=(f^*(\mathcal G))^{\widehat{\,}}$
+(\textbf{I}, 10.9.5). En outre, en vertu du premier théorème de comparaison (4.1.5),
+$\widehat f_*((f^*(\mathcal G))^{\widehat{\,}})$ s'identifie canoniquement à
+$(f_*(f^*(\mathcal G)))^{\widehat{\,}}$,
+et l'homomorphisme canonique $\rho_{\mathcal F}$ n'est a
+
+[id 6640]
+OLD: \[
+\widehat f_*\bigl(\widehat{f^*(\mathcal G)}\bigr)
+\simeq\widehat{f_*\bigl(f^*(\mathcal G)\bigr)},
+\]
+NEW: $\widehat f_*((f^*(\mathcal G))^{\widehat{\,}})$ s'identifie canoniquement à
+$(f_*(f^*(\mathcal G)))^{\widehat{\,}}$,
+FRENCH CONTEXT (corrected): al G}$, où $\mathcal G$
+est le $\mathcal O_X$-Module cohérent $\widetilde N$ (\textbf{I}, 10.10.5), et par suite
+$\widehat f^{*}(\mathcal F)=(f^*(\mathcal G))^{\widehat{\,}}$
+(\textbf{I}, 10.9.5). En outre, en vertu du premier théorème de comparaison (4.1.5),
+$\widehat f_*((f^*(\mathcal G))^{\widehat{\,}})$ s'identifie canoniquement à
+$(f_*(f^*(\mathcal G)))^{\widehat{\,}}$,
+et l'homomorphisme canonique $\rho_{\mathcal F}$ n'est autre que
+$\widehat{\rho}_{\mathcal G}$ en vertu de
+(\hyperref[III.5.1.3-fr]{5.1.3}). Or, le noyau $\mathcal P$ et le conoyau
+$\mathcal R$ de
+$\rho_{\mathcal G}:\mathcal G\longrightarrow f_*\bigl(f^*(\mat
+
+[id 6641]
+OLD: \[
+\rho_{\mathcal G}:\mathcal G\longrightarrow f_*\bigl(f^*(\mathcal G)\bigr)
+\]
+NEW: $\rho_{\mathcal G}:\mathcal G\longrightarrow f_*\bigl(f^*(\mathcal G)\bigr)$
+FRENCH CONTEXT (corrected): tifie canoniquement à
+$(f_*(f^*(\mathcal G)))^{\widehat{\,}}$,
+et l'homomorphisme canonique $\rho_{\mathcal F}$ n'est autre que
+$\widehat{\rho}_{\mathcal G}$ en vertu de
+(\hyperref[III.5.1.3-fr]{5.1.3}). Or, le noyau $\mathcal P$ et le conoyau
+$\mathcal R$ de
+$\rho_{\mathcal G}:\mathcal G\longrightarrow f_*\bigl(f^*(\mathcal G)\bigr)$
+sont des $\mathcal O_X$-Modules cohérents, et par hypothèse leurs restrictions à
+$U$ sont évidemment nulles. Il existe par suite un entier $n>0$ tel que
+$\mathcal M^n\mathcal P=\mathcal M^n\mathcal R=0$ (\textbf{I}, 9.3.4)~; on en conclut que
+$\widehat{\mathc
+
+[id 6646]
+OLD: \begin{env}[5.3.5]
+\label{III.5.3.5-fr}
+
+NEW: \par\medskip\noindent\textbf{5.3.5.}\ \label{III.5.3.5-fr}
+
+FRENCH CONTEXT (corrected): uite un entier $n>0$ tel que
+$\mathcal M^n\mathcal P=\mathcal M^n\mathcal R=0$ (\textbf{I}, 9.3.4)~; on en conclut que
+$\widehat{\mathcal M}^{n}\widehat{\mathcal P}=
+\widehat{\mathcal M}^{n}\widehat{\mathcal R}=0$
+(\textbf{I}, 10.8.8 et 10.8.10).
+\end{proof}
+
+\par\medskip\noindent\textbf{5.3.5.}\ \label{III.5.3.5-fr}
+\textbf{Fin de la démonstration du théorème d'existence.}
+
+Les hypothèses étant celles de (\hyperref[III.5.1.4-fr]{5.1.4}), nous allons
+utiliser le principe de récurrence noethérienne ($\mathbf{0}_{\mathrm I}$, 2.2.2) en supposant
+donc le théorème vrai pour to
+
+[id 6647]
+OLD: \emph{Fin de la démonstration du théorème d'existence.}
+NEW: \textbf{Fin de la démonstration du théorème d'existence.}
+FRENCH CONTEXT (corrected): al M^n\mathcal R=0$ (\textbf{I}, 9.3.4)~; on en conclut que
+$\widehat{\mathcal M}^{n}\widehat{\mathcal P}=
+\widehat{\mathcal M}^{n}\widehat{\mathcal R}=0$
+(\textbf{I}, 10.8.8 et 10.8.10).
+\end{proof}
+
+\par\medskip\noindent\textbf{5.3.5.}\ \label{III.5.3.5-fr}
+\textbf{Fin de la démonstration du théorème d'existence.}
+
+Les hypothèses étant celles de (\hyperref[III.5.1.4-fr]{5.1.4}), nous allons
+utiliser le principe de récurrence noethérienne ($\mathbf{0}_{\mathrm I}$, 2.2.2) en supposant
+donc le théorème vrai pour tout sous-préschéma fermé $T$ de $X$ dont l'espace
+sous-jac
+
+[id 7239]
+OLD: \[
+  L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)
+\]
+NEW: $L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$
+FRENCH CONTEXT (corrected): 2)})\bigr)
+  =\Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+\oldpage[III]{155}
+On voit donc que ${}^{(b)}E_{pq}^2$ est le $(-p)$-ème module de
+cohomologie du complexe
+$L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$
+des cochaînes \emph{bi-alternées} sur $\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans le
+\emph{système de coefficients}
+\[
+  \mathscr S:(\sigma,\tau)\leadsto
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},
+
+[id 7240]
+OLD: des cochaînes bi-alternées
+NEW: des cochaînes \emph{bi-alternées}
+FRENCH CONTEXT (corrected): _S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+\oldpage[III]{155}
+On voit donc que ${}^{(b)}E_{pq}^2$ est le $(-p)$-ème module de
+cohomologie du complexe
+$L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$
+des cochaînes \emph{bi-alternées} sur $\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans le
+\emph{système de coefficients}
+\[
+  \mathscr S:(\sigma,\tau)\leadsto
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+
+[id 7241]
+OLD: dans le
+système de coefficients
+NEW: dans le
+\emph{système de coefficients}
+FRENCH CONTEXT (corrected): cr P_\bullet^{(2)})\bigr).
+\]
+\oldpage[III]{155}
+On voit donc que ${}^{(b)}E_{pq}^2$ est le $(-p)$-ème module de
+cohomologie du complexe
+$L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$
+des cochaînes \emph{bi-alternées} sur $\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans le
+\emph{système de coefficients}
+\[
+  \mathscr S:(\sigma,\tau)\leadsto
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+(\textbf{0}, 11.8.4). On sait alors (\textbf{0}, 11.8.5 et 11.8.6)
+que la cohomol
+
+[id 7242]
+OLD: ($0_{\mathrm I}$, 11.8.4)
+NEW: (\textbf{0}, 11.8.4)
+FRENCH CONTEXT (corrected): sur $\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans le
+\emph{système de coefficients}
+\[
+  \mathscr S:(\sigma,\tau)\leadsto
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+(\textbf{0}, 11.8.4). On sait alors (\textbf{0}, 11.8.5 et 11.8.6)
+que la cohomologie de ce complexe est la même que celle du complexe
+$C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$ de \emph{toutes} les cochaînes sur
+$\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans $\mathscr S$, et aus
+
+[id 7243]
+OLD: ($0_{\mathrm I}$, 11.8.5 et 11.8.6)
+NEW: (\textbf{0}, 11.8.5 et 11.8.6)
+FRENCH CONTEXT (corrected): aleurs dans le
+\emph{système de coefficients}
+\[
+  \mathscr S:(\sigma,\tau)\leadsto
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+(\textbf{0}, 11.8.4). On sait alors (\textbf{0}, 11.8.5 et 11.8.6)
+que la cohomologie de ce complexe est la même que celle du complexe
+$C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$ de \emph{toutes} les cochaînes sur
+$\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans $\mathscr S$, et aussi que celle du
+complexe $P^\bullet(\Phi^{(1)}
+
+[id 7244]
+OLD: de toutes les cochaînes
+NEW: de \emph{toutes} les cochaînes
+FRENCH CONTEXT (corrected): cr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+(\textbf{0}, 11.8.4). On sait alors (\textbf{0}, 11.8.5 et 11.8.6)
+que la cohomologie de ce complexe est la même que celle du complexe
+$C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$ de \emph{toutes} les cochaînes sur
+$\Phi^{(1)}$ et $\Phi^{(2)}$ à valeurs dans $\mathscr S$, et aussi que celle du
+complexe $P^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S)$, dont les éléments sont
+les combinaisons linéaires des
+\[
+  \lambda(\sigma,\tau)\in
+  \Gamma\bigl(U_\sigma^{(1)}\times_S
+
+[id 7246]
+OLD: ayant même nombre d'éléments.
+NEW: ayant \emph{même nombre d'éléments}.
+FRENCH CONTEXT (corrected): 
+\[
+  \lambda(\sigma,\tau)\in
+  \Gamma\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+où $\sigma=(\alpha_0,\ldots,\alpha_h)$ et
+$\tau=(\beta_0,\ldots,\beta_h)$ sont des suites ayant \emph{même nombre d'éléments}.
+Mais on a alors
+$U_\sigma^{(1)}\times_S U_\tau^{(2)}
+=(U_{\alpha_0}^{(1)}\times_S U_{\beta_0}^{(2)})\cap\ldots\cap
+(U_{\alpha_h}^{(1)}\times_S U_{\beta_h}^{(2)})$
+(\textbf{I}, 3.2.7).
+Si l'on désigne par $\mathfrak U$ le recouvrement de
+$Z=X^{(1)}\times_S X^{
+
+[id 7247]
+OLD: Mais on a alors
+\[
+  U_\sigma^{(1)}\times_S U_\tau^{(2)}
+  =(U_{\alpha_0}^{(1)}\times_S U_{\beta_0}^{(2)})\cap\cdots\cap
+    (U_{\alpha_h}^{(1)}\times_S U_{\beta_h}^{(2)})
+  \qquad\text{(I, 3.2.7)}.
+\]
+NEW: Mais on a alors
+$U_\sigma^{(1)}\times_S U_\tau^{(2)}
+=(U_{\alpha_0}^{(1)}\times_S U_{\beta_0}^{(2)})\cap\ldots\cap
+(U_{\alpha_h}^{(1)}\times_S U_{\beta_h}^{(2)})$
+(\textbf{I}, 3.2.7).
+FRENCH CONTEXT (corrected): a\bigl(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr)
+\]
+où $\sigma=(\alpha_0,\ldots,\alpha_h)$ et
+$\tau=(\beta_0,\ldots,\beta_h)$ sont des suites ayant \emph{même nombre d'éléments}.
+Mais on a alors
+$U_\sigma^{(1)}\times_S U_\tau^{(2)}
+=(U_{\alpha_0}^{(1)}\times_S U_{\beta_0}^{(2)})\cap\ldots\cap
+(U_{\alpha_h}^{(1)}\times_S U_{\beta_h}^{(2)})$
+(\textbf{I}, 3.2.7).
+Si l'on désigne par $\mathfrak U$ le recouvrement de
+$Z=X^{(1)}\times_S X^{(2)}$ par les ouverts affines
+$U_\alpha^{(1)}\times_S U_\beta^{(2)}$, on voit finalement, compte tenu de ce
+que $X^{(1)}\times_S X^{(2)}$ est un \emph{schéma}, que l'on a, en vertu de 
+
+[id 7248]
+OLD: est un schéma, que
+NEW: est un \emph{schéma}, que
+FRENCH CONTEXT (corrected): mes_S U_{\beta_h}^{(2)})$
+(\textbf{I}, 3.2.7).
+Si l'on désigne par $\mathfrak U$ le recouvrement de
+$Z=X^{(1)}\times_S X^{(2)}$ par les ouverts affines
+$U_\alpha^{(1)}\times_S U_\beta^{(2)}$, on voit finalement, compte tenu de ce
+que $X^{(1)}\times_S X^{(2)}$ est un \emph{schéma}, que l'on a, en vertu de (1.3.1),
+\[
+  {}^{(b)}E_{pq}^2
+  =\mathbf H^{-p}\bigl(X^{(1)}\times_S X^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+
+En second lieu,
+$\operatorname{Tor}_q^A(L_{\bullet\bullet}^{(1)},L_{\
+
+[id 7250]
+OLD: $\mathbf{Tor}_q^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$ est un
+NEW: $\operatorname{Tor}_q^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$ est un
+FRENCH CONTEXT (corrected): e $X^{(1)}\times_S X^{(2)}$ est un \emph{schéma}, que l'on a, en vertu de (1.3.1),
+\[
+  {}^{(b)}E_{pq}^2
+  =\mathbf H^{-p}\bigl(X^{(1)}\times_S X^{(2)},
+    \mathscr{T}\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+
+En second lieu,
+$\operatorname{Tor}_q^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$ est un
+bicomplexe dont le terme de degré $(h,k)$ est la somme directe des $A$-modules
+\[
+  \operatorname{Tor}_q^A
+  \bigl(C^{-h_1}(\mathfrak U^{(1)},\mathscr P_{k_1}^{(1)}),
+        C^{-h_2}(\mathfrak U^{(2)},\mathscr P_{k_2}^{(2)})\bigr)
+\]
+tels que $h_1+h_2=h$ et 
+
+[id 7251]
+OLD: \mathbf{Tor}_q^A
+  \bigl(C^{-h_1}
+NEW: \operatorname{Tor}_q^A
+  \bigl(C^{-h_1}
+FRENCH CONTEXT (corrected): }\!or_q^S
+    (\mathscr P_\bullet^{(1)},\mathscr P_\bullet^{(2)})\bigr).
+\]
+
+En second lieu,
+$\operatorname{Tor}_q^A(L_{\bullet\bullet}^{(1)},L_{\bullet\bullet}^{(2)})$ est un
+bicomplexe dont le terme de degré $(h,k)$ est la somme directe des $A$-modules
+\[
+  \operatorname{Tor}_q^A
+  \bigl(C^{-h_1}(\mathfrak U^{(1)},\mathscr P_{k_1}^{(1)}),
+        C^{-h_2}(\mathfrak U^{(2)},\mathscr P_{k_2}^{(2)})\bigr)
+\]
+tels que $h_1+h_2=h$ et $k_1+k_2=k$; explicitant les modules
+$C^r(\mathfrak U^{(i)},\mathscr P_s^{(i)})$ comme ci-dessus, on voit encore
+que ce term
+
+[id 7254]
+OLD: de cochaînes bi-alternées
+NEW: de cochaînes \emph{bi-alternées}
+FRENCH CONTEXT (corrected): tels que
+$\operatorname{Card}(\sigma)+\operatorname{Card}(\tau)=-h-2$. Le terme
+${}^{(b')}E_{pq}^2$ que nous calculons est le $(-p)$-ème module de
+cohomologie d'un bicomplexe $N^{\bullet\bullet}=(N^{hk})$, où le complexe
+simple $N^{\bullet k}$ est le complexe de cochaînes \emph{bi-alternées} sur
+$\Phi^{(1)}$ et $\Phi^{(2)}$, à valeurs dans le système de coefficients
+\[
+  \mathscr S_k:(\sigma,\tau)\leadsto
+  \Gamma\left(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \mathscr{T}\!or_q^S
+    (\mathscr P_{-k_1}^{(1)},\mathscr P_{-
+
+[id 7256]
+OLD: formant un complexe
+NEW: formant un \emph{complexe}
+FRENCH CONTEXT (corrected): e système de coefficients
+\[
+  \mathscr S_k:(\sigma,\tau)\leadsto
+  \Gamma\left(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \mathscr{T}\!or_q^S
+    (\mathscr P_{-k_1}^{(1)},\mathscr P_{-k_2}^{(2)})\right)
+\]
+ces systèmes de coefficients formant un \emph{complexe} $\mathscr S^\bullet$ où la
+différentielle provient de celle du complexe simple associé au bicomplexe
+$\mathscr{T}\!or_q^S
+(\mathscr P^{(1)\bullet},\mathscr P^{(2)\bullet})$. On sait que la
+cohomologie de $N^{\bullet\bullet}$ est la même que celle du bicomplex
+
+[id 7258]
+OLD: ($0_{\mathrm I}$, 11.8.9)
+NEW: (\textbf{0}, 11.8.9)
+FRENCH CONTEXT (corrected): elle du complexe simple associé au bicomplexe
+$\mathscr{T}\!or_q^S
+(\mathscr P^{(1)\bullet},\mathscr P^{(2)\bullet})$. On sait que la
+cohomologie de $N^{\bullet\bullet}$ est la même que celle du bicomplexe
+$C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S^\bullet)$
+(\textbf{0}, 11.8.9), et aussi la même que celle du bicomplexe
+$P^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr S^\bullet)$, où les éléments de
+degrés $(h,k)$ sont les combinaisons linéaires des
+\[
+  \lambda(\sigma,\tau)\in
+  \Gamma\left(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \bigoplu
+
+[id 7260]
+OLD: ayant même nombre
+d'éléments
+NEW: ayant \emph{même nombre
+d'éléments}
+FRENCH CONTEXT (corrected): \tau)\in
+  \Gamma\left(U_\sigma^{(1)}\times_S U_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \mathscr{T}\!or_q^S
+    (\mathscr P_{-k_1}^{(1)},\mathscr P_{-k_2}^{(2)})\right)
+\]
+$\sigma=(\alpha_0,\ldots,\alpha_h)$,
+$\tau=(\beta_0,\ldots,\beta_h)$ étant des suites ayant \emph{même nombre
+d'éléments} (\textbf{0}, 11.8.10). On voit alors comme ci-dessus que
+${}^{(b')}E_{pq}^2$ est le $(-p)$-ème module de cohomologie du
+bicomplexe $C^\bullet(\mathfrak U,\mathscr Q^\bullet)$, où
+$\mathscr Q^\bullet$ est le complexe simple associé au bicomplexe
+$\mathscr{T}\!
+
+[id 7261]
+OLD: ($0_{\mathrm I}$, 11.8.10)
+NEW: (\textbf{0}, 11.8.10)
+FRENCH CONTEXT (corrected): }\times_S U_\tau^{(2)},
+    \bigoplus_{k_1+k_2=k}
+    \mathscr{T}\!or_q^S
+    (\mathscr P_{-k_1}^{(1)},\mathscr P_{-k_2}^{(2)})\right)
+\]
+$\sigma=(\alpha_0,\ldots,\alpha_h)$,
+$\tau=(\beta_0,\ldots,\beta_h)$ étant des suites ayant \emph{même nombre
+d'éléments} (\textbf{0}, 11.8.10). On voit alors comme ci-dessus que
+${}^{(b')}E_{pq}^2$ est le $(-p)$-ème module de cohomologie du
+bicomplexe $C^\bullet(\mathfrak U,\mathscr Q^\bullet)$, où
+$\mathscr Q^\bullet$ est le complexe simple associé au bicomplexe
+$\mathscr{T}\!or_q^S
+(\mathscr P^{(1
+

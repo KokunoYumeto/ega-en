@@ -1,0 +1,5 @@
+- TRANSCRIPTION? (0, 2.1.6) erratum display — `Z_i\cap C\left(\bigcup_{j\ne i}Z_j\right)`: the plain `C` is presumably the complement sign (the text of 0, 2.1.6 writes `\complement\Bigl(\bigcup_{j\neq i}Z_j\Bigr)`). Copied as is.
+- TERM quoted words of the corrected French text («~inter-section~»/«~intersection~», «~faisceaux~»/«~faisceau~», «~$A$-algèbre~», «~$\mathcal O_{\mathfrak X}$-Module cohérent~»/«~Idéal cohérent de …~») → translated: ``inter-section''/``intersection'', ``sheaves''/``sheaf'', ``$A$-algebra'', ``coherent $\mathcal O_{\mathfrak X}$-module''/``coherent ideal of …''. Page and line numbers refer to the French edition and are kept.
+- TERM Errata et Addenda (Liste 1) → Errata and Addenda (List 1); Ligne $n$ du bas de la p. → Line $n$ from the bottom of p.; lire → read; Insérer après → Insert after.
+- TERM réduit à un point → consisting of a single point (1.8.4, 1.8.8); ces numéros → these numbers.
+- TERM second membre → right-hand side; les deux membres → the two sides; calqué sur → modelled on; conoyau → cokernel.

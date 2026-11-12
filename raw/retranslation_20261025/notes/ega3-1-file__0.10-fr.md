@@ -1,0 +1,4 @@
+- TRANSCRIPTION? 10.3.1.1 (0.10.3.1.1-fr) — "dont l'idéal maximal $\mathfrak L=\mathfrak J B$" has no verb (presumably "dont l'idéal maximal est …"); rendered "with maximal ideal $\mathfrak L=\mathfrak J B$", nothing added.
+- TERM homothétie ($f_M:x\mapsto fx$) → homothety
+- TERM polynôme unitaire → monic polynomial
+- TERM ordinal sans prédécesseur → ordinal without a predecessor (kept literal; = limit ordinal or 0)

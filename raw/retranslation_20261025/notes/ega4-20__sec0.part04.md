@@ -1,0 +1,11 @@
+- TRANSCRIPTION? 20.4.6, condition (P) — the square has no left vertical arrow $\Spec(k(a))\to\Spec(k(x))$; copied as is.
+- TRANSCRIPTION? 20.4.6, proof — "$h(x')$ est une spécialisation de $h'_x(x)=y$" (and again "$h(x')$ est une spécialisation de $y$"): since $y=h'_1(a)$ with $a$ the closed point and $h(x')=h'_1(b)$, it is $y$ that is a specialization of $h(x')$ (i.e. $h(x')$ is a generization of $y$), which is what the next steps ($h(U)\subset Y'$, $y\in p^{-1}(x)$) use. Translated literally.
+- TRANSCRIPTION? 20.4.11, proof — "$B$ étant une $A$-algèbre de type fini": the hypotheses only make $Y$ affine over $S$, and the next sentence uses an arbitrary family $(T_\lambda)_{\lambda\in L}$; "de type fini" looks spurious. Kept.
+- TERM schématiquement dense → schematically dense; universellement schématiquement dense par rapport à $S$ / relativement à $S$ → universally schematically dense with respect to $S$ / relative to $S$ (the two French phrasings kept distinct).
+- TERM pseudo-morphisme de $X$ dans $Y$ relativement à $S$ → pseudo-morphism from $X$ to $Y$ relative to $S$; pseudo-fonctions sur $X$ relatives à $S$ → pseudo-functions on $X$ relative to $S$.
+- TERM sous-préschéma des coïncidences → sub-prescheme of coincidences; majorer → dominate (after "majoré par → dominated by").
+- TERM préschéma adhérence → closure prescheme; morphisme projection → projection morphism.
+- TERM $X$-section rationnelle → rational $X$-section; point normal, point isolé → normal point, isolated point.
+- TERM « fonction multiforme » → ``multivalued function''.
+- TERM son « Main theorem » (Zariski) → his ``Main theorem'' (capital M as in the French); schémas algébriques → algebraic schemes.
+- TERM ce numéro → this section; répond à la question → has the required properties.

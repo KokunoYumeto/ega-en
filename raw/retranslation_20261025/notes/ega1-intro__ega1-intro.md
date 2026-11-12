@@ -1,0 +1,8 @@
+- TERM paragraphe → paragraph (EGA's §-level unit, as in ours); section → section ("la section du paragraphe" → "the section of the paragraph").
+- TERM Chapitre Premier / chapitre premier → Chapter One.
+- TERM langage fonctoriel → functorial language.
+- TERM sections multiformes → multivalued sections.
+- TERM espaces fibrés principaux → principal fibre spaces; fibrés, fibrés principaux homogènes → fibre bundles, principal homogeneous fibre bundles.
+- TERM Géométrie algébrique, Algèbre commutative, Algèbre homologique, Théorie des faisceaux, Topologie algébrique, Géométrie analytique, Géométrie diophantienne, Théorie des Ensembles → Algebraic Geometry, Commutative Algebra, Homological Algebra, Sheaf Theory, Algebraic Topology, Analytic Geometry, Diophantine Geometry, Set Theory (initial capitals kept as in the French).
+- TERM Titles kept in French: \emph{Éléments} (Bourbaki's and EGA's), \emph{Séminaire de Géométrie algébrique} (Chevalley); Zariski's \emph{Théorie des fonctions holomorphes} → \emph{Theory of holomorphic functions}.
+- TERM \textsc{xix}\textsuperscript{e} / \textsc{xx}\textsuperscript{e} siècle → nineteenth / twentieth century (French century typography replaced by English words; the \textsc/\textsuperscript macros are therefore not in the English).

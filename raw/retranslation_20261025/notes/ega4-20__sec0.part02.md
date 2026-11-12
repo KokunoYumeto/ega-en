@@ -1,0 +1,6 @@
+- TRANSCRIPTION? (20.2.8) — `\Hom(V,\bb{Z}[T])`: the correspondence of (I, 3.3.15) is with morphisms $V\to\Spec(\bb{Z}[T])$; presumably `\Hom(V,\Spec(\bb{Z}[T]))` (or an abuse of notation in the original). Copied as is.
+- TRANSCRIPTION? (20.2.12) — "l'ensemble des éléments réguliers de $X$": presumably "de $A$". Translated as written.
+- TERM schématiquement dense → schematically dense; application rationnelle stricte → strict rational map.
+- TERM pseudo-$S$-morphisme, $X$-pseudo-morphisme, pseudo-fonction → pseudo-$S$-morphism, $X$-pseudo-morphism, pseudo-function (glossary has pseudo-morphisme).
+- TERM Idéal des dénominateurs → ideal of denominators (lowercase per glossary); annulateur → annihilator.
+- TERM idéaux premiers immergés → embedded prime ideals; cofinal à → cofinal in; $A$-régulier → $A$-regular.

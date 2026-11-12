@@ -1,0 +1,6 @@
+- TRANSCRIPTION? 8.1.3 proof — "comme $A-\mathfrak p\subset M$, on a $A_\mathfrak p\subset M$": the inference needs the elements of $A-\mathfrak p$ to be invertible in $M$, i.e. $A-\mathfrak p\subset M-\mathfrak m(M)$; "$-\mathfrak m(M)$" may have been dropped. Translated as written.
+- TRANSCRIPTION? 8.2.2 proof — "$x\in V(\mathfrak a)=W\cap F$ pour $x\in U$": since $F=W\cap V(\mathfrak a)$, the equality $V(\mathfrak a)=W\cap F$ does not hold as written (expected something like $W\cap V(\mathfrak a)=F$ for $x\in W$). Translated as written.
+- TRANSCRIPTION? 8.2.8 proof and 8.3.2 — a blank line before `\oldpage[I]{168}` and before `\oldpage[I]{169}` splits a sentence into two paragraphs; kept as in the French.
+- TERM relation de domination (anneaux locaux) → relation of domination (8.1.1)
+- TERM homomorphisme identique → identity homomorphism (8.2.2)
+- TERM extension de type fini (d'un corps) → extension of finite type (8.3.2)

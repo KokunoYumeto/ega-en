@@ -1,0 +1,8 @@
+- TRANSCRIPTION? 1.4.3 proof of (ii) — "d'aute part": misspelling of "d'autre part"; translated "on the other hand".
+- TRANSCRIPTION? 1.4.5 — "le sous-préschéma fermé de $Y$ associé à $j$": this sub-prescheme is closed in $U$ (its ideal $\mathcal J$ is an ideal of $\mathcal O_U$), so "de $U$" may be meant. Translated as written.
+- TRANSCRIPTION? 1.4.7 proof — "$w=v\circ u:B''\to B$": with $v:B''\to B'$ and $u:B'\to B$ the composite is $u\circ v$. Math kept as written.
+- TRANSCRIPTION? 1.4.7 proof — "Inversement, si $B'$ est un $A$-module de présentation finie": the converse needs this hypothesis on $B$ ($B'$ is free of finite rank anyway), so "$B$" is presumably meant. Kept $B'$.
+- TERM paragraphe (ce paragraphe) → section; numéro (ces numéros du chapitre I) → subsection.
+- TERM essentiellement de type fini → essentially of finite type.
+- TERM polynôme unitaire → monic polynomial.
+- TERM lemme (inside a Bourbaki locator: "lemme 9") → lemma (ours usage); the other Bourbaki abbreviations are kept.

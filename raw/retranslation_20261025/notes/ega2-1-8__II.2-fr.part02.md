@@ -1,0 +1,7 @@
+- TRANSCRIPTION? 2.6.4 — "un $\mathcal{O}_X$ module" lacks the hyphen (and capital M) of "$\mathcal{O}_X$-Module"; rendered "$\mathcal{O}_X$-module".
+- TRANSCRIPTION? 2.6.2 — the word "canoni-/quement" is split across \oldpage[II]{37} (with blank lines around the marker); the English keeps "canonically" whole before the marker, blank lines unchanged.
+- TERM conoyau → cokernel; isomorphismes identiques (2.6.5) → identity isomorphisms.
+- TERM "ce paragraphe" (2.5.10) → "this section"; "ce numéro" (2.6) → "this number" (as in ours/ega3).
+- TERM "de la prop. (2.5.13)" → "from Proposition (2.5.13)".
+- TERM "sont images l'un de l'autre par" (2.5.16) → "are images of each other under".
+- TERM permutabilité aux limites inductives (2.5.4) → commutation with inductive limits.

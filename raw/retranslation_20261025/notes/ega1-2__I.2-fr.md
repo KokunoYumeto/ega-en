@@ -1,0 +1,10 @@
+- `TRANSCRIPTION?` proof of 2.1.5 — "et par suite $Y\subset\overline{U}$ est l'adhérence de $x$ dans $X$": this formula does not express the conclusion (Y is the closure of x because U∩Y is dense in Y); something like $Y=\overline{U\cap Y}$ is expected. Translated as written.
+- `TRANSCRIPTION?` 2.5.4 — "pour tout $S'$-préschéma, le morphisme composé $X\to S'\to S$": the name X is missing after "$S'$-préschéma". Translated as written.
+- `TERM` ouvert affine → affine open set; voisinage ouvert affine → affine open neighbourhood.
+- `TERM` générisation → generization (Vakil; Stacks says "generalization").
+- `TERM` recollement → gluing.
+- `TERM` fraction rationnelle → rational fraction (2.3.2).
+- `TERM` préschéma intègre / localement intègre → integral / locally integral prescheme.
+- `TERM` morphisme structural → structural morphism (as in ours/ega3/ega3-2.tex); faisceau structural → structure sheaf.
+- `TERM` factoriel → factorial; être au-dessus de → lie over.
+- `TERM` réduit à un point → consisting of a single point.

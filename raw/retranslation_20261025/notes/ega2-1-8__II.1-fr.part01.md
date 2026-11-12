@@ -1,0 +1,9 @@
+- TRANSCRIPTION? proof of (1.2.7) — "$U=D(\lambda)$, avec $\lambda\in S$": $D(\lambda)$ needs an element of the ring $A$ of $S$; $\lambda\in A$ expected. Translated as written.
+- TRANSCRIPTION? proof of (1.3.7) — "comme $\Gamma(U,\widetilde{B})=B$": no $U$ is introduced in this proof; $\Gamma(S,\widetilde{B})=B$ expected. Translated as written.
+- TRANSCRIPTION? proof of (1.4.5) — "où $B$ est une $A$-algèbre de type fini (I, 9.6.2)": (1.4.5) does not assume $\mathcal{B}$ of finite type; possibly already in the original. Translated as written.
+- TERM ce paragraphe (a § of a chapter) → this section; chapitre~I\textsuperscript{er} → Chapter~I.
+- TERM di-isomorphisme → di-isomorphism (hyphenated like di-homomorphism).
+- TERM $h$-morphisme, $q$-morphisme → $h$-morphism, $q$-morphism.
+- TERM admettre une présentation finie → admit a finite presentation (1.4.8).
+- TERM passage aux fibres → passage to fibres; caractère fonctoriel → functorial character.
+- TERM plan affine où le point $0$ a été dédoublé → affine plane in which the point $0$ has been doubled (1.3.3).

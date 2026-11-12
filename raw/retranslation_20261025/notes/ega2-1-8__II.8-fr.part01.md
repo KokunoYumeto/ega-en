@@ -1,0 +1,8 @@
+- TRANSCRIPTION? remark after (8.1.3), "Lorsqu'on remplace $\mathcal{I}$ par $\mathcal{I}^d$ ... canoniquement isomorphe $X'$ (8.1.1)": (8.1.1) only treats the twist by an invertible $\mathcal{J}$; replacing $\mathcal{I}$ by $\mathcal{I}^d$ replaces $\mathcal{S}$ by $\mathcal{S}^{(d)}$, for which (3.1.8) would be expected. Possibly already in the original; translated as written.
+- TERM Idéal fractionnaire (de $\mathcal{R}(Y)$) → fractional ideal (8.1.2 onwards).
+- TERM birationnel → birational (8.1.4).
+- TERM homomorphismes d'injection → injection homomorphisms (8.1.5).
+- TERM multiplication tensorielle par $s$ → tensor multiplication by $s$ (8.1.9).
+- TERM (anneau, module) non gradué → ungraded (8.2.3, 8.2.5, 8.2.6).
+- TERM di-isomorphisme → di-isomorphism (8.2.5, 8.2.9), hyphenated like di-homomorphism.
+- TERM (TN)-bijectif, (TN)-injectif → (TN)-bijective, (TN)-injective (8.2.12).

@@ -1,0 +1,7 @@
+- TRANSCRIPTION? 8.12.1: "un $\mathcal{O}_{\widehat{C}}$-Module gradué quasi-cohérent $\operatorname{Proj}_0(\widehat{\mathcal{M}})$". $\operatorname{Proj}_0$ of a graded $\widehat{\mathcal{S}}$-module is an ungraded $\mathcal{O}_{\widehat{C}}$-module, so "gradué" looks misplaced (possibly already in the printed text). Translated as written.
+- TRANSCRIPTION? 8.12.5, second paragraph: "et $\mathcal{S}_X$ par $(\mathcal{S}_X^{\geq})^{\wedge}$". (8.12.5.1) contains $\mathcal{S}_X^{\geq}$, not $\mathcal{S}_X$; "$\mathcal{S}_X^{\geq}$ par …" seems meant. Translated as written.
+- TRANSCRIPTION? 8.12.8, proof: "des isomorphismes (8.12.5.4) et (8.12.6.1)". (8.12.5.4) is only an $r$-morphism (its restriction (8.12.6.1) is the isomorphism); the $u$-isomorphism (8.12.5.3) seems intended. Translated as written.
+- TERM «~variable homogénéisante~» → ``homogenizing variable'' (glossary has variable d'homogénéisation → homogenization variable).
+- TERM premier membre / second membre → left-hand side / right-hand side.
+- TERM di-isomorphisme → di-isomorphism (hyphenated, like di-homomorphism).
+- TERM (Module) non gradué → ungraded (module).

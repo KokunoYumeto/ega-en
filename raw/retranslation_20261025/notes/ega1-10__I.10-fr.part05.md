@@ -1,0 +1,4 @@
+- TRANSCRIPTION? (10.15.5) — "$\mathfrak{X}$ un $\mathfrak{S}$-préschéma de type fini": elsewhere "$\mathfrak{S}$-préschéma formel" (10.13.3, 10.15.4); "formel" may be missing. Translated as written ("an $\mathfrak{S}$-prescheme of finite type").
+- TERM $\mathfrak{S}$-schéma formel → formal $\mathfrak{S}$-scheme (10.15.1).
+- TERM extension du préschéma formel de base → extension of the base formal prescheme (10.15.3 (iii)).
+- TERM sous-espace fermé → closed subspace (10.15.4).

@@ -1,0 +1,9 @@
+- TRANSCRIPTION? 4.4.3 (I.4.4.3-fr): "canoniquement isomorphée" is a garbled "isomorphe"; translated "canonically isomorphic".
+- TRANSCRIPTION? 4.1.7, 4.1.9 (I.4.1.7-fr, I.4.1.9-fr): $\omega^b$ presumably renders $\omega^\flat$ (same convention in 0, 4); math copied unchanged.
+- TERM morphisme d'immersion; morphisme d'injection (canonique) → immersion morphism; (canonical) injection morphism
+- TERM majoré par → majorized by
+- TERM factorisation canonique → canonical factorization
+- TERM fibre (d'un faisceau: « restrictions aux fibres ») → stalk
+- TERM immersion locale; isomorphisme local → local immersion; local isomorphism
+- TERM borne inférieure; relation d'ordre → greatest lower bound; order relation
+- TERM faisceau structural → structure sheaf

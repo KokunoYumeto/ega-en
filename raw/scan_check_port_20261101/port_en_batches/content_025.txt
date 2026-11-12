@@ -1,0 +1,241 @@
+# English hand pass, content_025: 6 items on 3 printed pages
+
+=================== PAGE IV-4 330 ===================
+----- English, source_aligned/ega4-21.tex, page IV-4 329 -----
+\oldpage[IV-4]{329}
+(iv) The result of \sref{IV.21.14.3} was first proved by C.~Seshadri \cite{IV-44} in the particular case where $\mathrm{S}$ is an algebraic normal scheme over an algebraically closed field $k$ and $\mathrm{X}=\mathrm{S}\times_k\mathrm{T}$, where $\mathrm{T}$ is a $k$-algebraic prescheme smooth over $k$.
+The proof of Seshadri \cite[pp.~188--189]{IV-44} is of global nature and uses the theory of Picard schemes.
+It gives moreover (\emph{loc.\ cit.}) results such as the following (for which one does not currently possess a proof by local methods).
+Let $\mathrm{S}$ and $\mathrm{T}$ be two preschemes locally of finite type over a field $k$, put $\mathrm{X}=\mathrm{S}\times_k\mathrm{T}$, and let $\mathrm{Z}$ be a $1$-codimensional cycle on $\mathrm{X}$ (regarded as an $\mathrm{S}$-prescheme). Suppose that the following conditions hold:
+\begin{enumerate}[label=\arabic*\textsuperscript{o}]
+  \item $\mathrm{S}$ and $\mathrm{T}$ are geometrically normal over $k$ \sref{IV.6.7.6};
+  \item For every maximal point $\eta$ of $\mathrm{S}$, the $1$-codimensional cycle $\mathrm{Z}_\eta$ on the fibre $\mathrm{X}_\eta$, having the same multiplicity as $\mathrm{Z}$ at every point of $\mathrm{X}^{(1)}\cap\mathrm{X}_\eta$, is locally principal (in other words, it is the image of a divisor of $\mathrm{X}_\eta$, since $\mathrm{X}_\eta$ is normal);
+  \item For all $s\in\mathrm{S}$, $\mathrm{Z}$ is principal at the maximal points of the fibre $\mathrm{X}_s$.
+\end{enumerate}
+Then $\mathrm{Z}$ is locally principal.
+In other words, since $\mathrm{X}$ is normal \sref{IV.6.14.1}, for every $x\in\mathrm{X}$ which is not maximal in its fibre $\mathrm{X}_s$ and which belongs to none of the ``generic fibres'' $\mathrm{X}_\eta$ (which implies $\dim(\sh{O}_{\mathrm{X},x})\geq2$ by \sref{IV.6.1.1}), the local ring $\sh{O}_{\mathrm{X},x}$, is parafactorial, by \sref{IV.21.13.15},~(b).\footnote{In the cited paper Seshadri in fact assumes that $k$ is algebraically closed and that $\mathrm{T}$ is separated and ``semi-complete'' (that is, $\Gamma(\mathrm{T},\sh{O}_{\mathrm{T}})\simeq k$), and replaces condition $3^{\mathrm{o}}$ by the stronger hypothesis that $\operatorname{Supp}(\mathrm{Z})$ contains no fibre $\mathrm{X}_s$, $s\in\mathrm{S}$. Since the statement is local on $\mathrm{S}$, however, condition $3^{\mathrm{o}}$ suffices. The resulting conclusion, interpreted as above in terms of parafactoriality of the rings $\sh{O}_{\mathrm{X},x}$, is local on both $\mathrm{S}$ and $\mathrm{T}$; this removes altogether the assumptions that $\mathrm{T}$ is semi-complete and that $k$ is algebraically closed. Indeed, after first passing to an algebraic closure of $k$, one may assume that $\mathrm{T}$ is affine, embed it as an open subscheme of a normal projective prescheme over $k$, and apply Seshadri's result. This reduction also shows that it is enough to prove Seshadri's theorem when $\mathrm{T}$ is projective (rather than merely semi-complete), the case in which the Picard-scheme theory used by Seshadri is contained in chap.~VI of this Treatise.}.
+\end{env}
+
+\subsection{Relative divisors}
+\label{subsection:IV.21.15}
+\label{IV.21.15}
+
+\begin{env}[21.15.1]
+\label{IV.21.15.1}
+Let $\mathrm{S}$ be a prescheme, $f:\mathrm{X}\to\mathrm{S}$ a \emph{flat} morphism and locally of finite presentation.
+We defined in \sref{IV.20.6.1} the sheaf of rings $\mathscr{M}_{\mathrm{X}/\mathrm{S}}$ of the \emph{germs of meromorphic functions on $\mathrm{X}$ relative to $\mathrm{S}$}, sub-sheaf of $\mathscr{M}_{\mathrm{X}}$; it is clear that the canonical injection $\sh{O}_{\mathrm{X}}\hookrightarrow\mathscr{M}_{\mathrm{X}}$ \sref{IV.20.1.4.1} maps $\sh{O}_{\mathrm{X}}$ into a sub-sheaf of $\mathscr{M}_{\mathrm{X}/\mathrm{S}}$, with which we identify it.
+Let $\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*$ be the sheaf (of multiplicative groups) of germs of invertible sections of $\mathscr{M}_{\mathrm{X}/\mathrm{S}}$; it is therefore a sub-sheaf of $\mathscr{M}_{\mathrm{X}}^*$ and contains $\sh{O}_{\mathrm{X}}^*$ as a sub-sheaf.
+\end{env}
+
+\begin{definition}[21.15.2]
+\label{IV.21.15.2}
+We call \emph{sheaf of divisors on $\mathrm{X}$ relative to $\mathrm{S}$}, or \emph{sheaf of divisors on $\mathrm{X}$ transversal to $f$}, and denote $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$ the quotient sheaf (of commutative groups) $\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*/\sh{O}_{\mathrm{X}}^*$; the sections of this sheaf over $\mathrm{X}$ are called \emph{divisors relative to $\mathrm{S}$}, or \emph{divisors on $\mathrm{X}$ transversal to $f$}; they form a commutative group denoted $\operatorname{Div}(\mathrm{X}/\mathrm{S})$.
+\end{definition}
+
+It is clear that $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$ identifies canonically with a sub-sheaf of $\mathscr{D}iv_{\mathrm{X}}$, and hence $\operatorname{Div}(\mathrm{X}/\mathrm{S})$ with a subgroup of $\operatorname{Div}(\mathrm{X})$, which we denote also \emph{additively}.
+----- English, source_aligned/ega4-21.tex, page IV-4 330 -----
+\oldpage[IV-4]{330}
+For every open $\mathrm{U}$ of $\mathrm{X}$, we have $\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*|\mathrm{U}=\mathscr{M}_{\mathrm{U}/\mathrm{S}}^*$, hence $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}|\mathrm{U}=\mathscr{D}iv_{\mathrm{U}/\mathrm{S}}$, and the sheaf $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$ is therefore equal to the presheaf $\mathrm{U}\leadsto\operatorname{Div}(\mathrm{U}/\mathrm{S})$.
+
+Since $\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*$ is a sub-sheaf of $\mathscr{M}_{\mathrm{X}}^*$, the definitions, notations and formulas relative to divisors of sections of $\mathscr{M}_{\mathrm{X}}$ over $\mathrm{X}$ \sref{IV.21.1.3} apply without change to sections of $\mathscr{M}_{\mathrm{X}/\mathrm{S}}$ over $\mathrm{X}$.
+
+\begin{env}[21.15.3]
+\label{IV.21.15.3}
+The structure of sheaf of ordered groups on $\mathscr{D}iv_{\mathrm{X}}$ \sref{IV.21.1.6} induces on the sub-sheaf $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$ a structure of sheaf of ordered groups, for which the sheaf of monoids of germs of positive sections is $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}^+=\mathscr{D}iv_{\mathrm{X}}^+\cap\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$, which we denote $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}^+$.
+We have $\Gamma(\mathrm{X},\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}^+)=\operatorname{Div}^+(\mathrm{X})\cap\operatorname{Div}(\mathrm{X}/\mathrm{S})$; we denote this sub-monoid of $\operatorname{Div}(\mathrm{X}/\mathrm{S})$ by $\operatorname{Div}^+(\mathrm{X}/\mathrm{S})$, and it consists of elements $\geq 0$ with respect to the ordered group structure on $\operatorname{Div}(\mathrm{X}/\mathrm{S})$.
+It follows from \sref{IV.21.5.1} that $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}^+$ is the image in $\mathscr{D}iv_{\mathrm{X}/\mathrm{S}}$ of the sub-sheaf of monoids
+\[
+\label{IV.21.15.3.1}
+  \sh{O}_{\mathrm{X}/\mathrm{S}}^{\operatorname{reg}}=\sh{O}_{\mathrm{X}}\cap\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*
+  \tag{21.15.3.1}
+\]
+\end{env}
+
+For every open $\mathrm{U}$ of $\mathrm{X}$, $\Gamma(\mathrm{U},\sh{O}_{\mathrm{X}/\mathrm{S}}^{\operatorname{reg}})$ is the set of sections $t$ of $\sh{O}_{\mathrm{X}}$ over $\mathrm{U}$ such that $t$ is regular and that $1/t$ belongs to $\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}/\mathrm{S}})$, which means, with the notations of \sref{IV.20.6.1}, that $t\in\mathrm{T}_{\mathrm{X}/\mathrm{S}}(\mathrm{U})$, so that the sheaf $\sh{O}_{\mathrm{X}/\mathrm{S}}^{\operatorname{reg}}$ is none other than the sheaf denoted $\mathscr{T}_{\mathrm{X}/\mathrm{S}}$ in \sref{IV.20.6.1}.
+We can therefore write
+\[
+\label{IV.21.15.3.2}
+  \mathscr{D}iv_{\mathrm{X}/\mathrm{S}}^+=\sh{O}_{\mathrm{X}/\mathrm{S}}^{\operatorname{reg}}/\sh{O}_{\mathrm{X}}^*
+  \tag{21.15.3.2}
+\]
+up to canonical isomorphism.
+
+\begin{env}[21.15.3.3]
+\label{IV.21.15.3.3}
+Let $\mathrm{D}\in\operatorname{Div}^+(\mathrm{X}/\mathrm{S})$ and consider the closed sub-prescheme $\mathrm{Y}(\mathrm{D})$ defined by the ideal $\mathscr I_{\mathrm{X}}(\mathrm{D})$ of $\sh{O}_{\mathrm{X}}$ \sref{IV.21.6.5}; by virtue of what precedes, for all $x\in\mathrm{Y}(\mathrm{D})$, there is an open neighbourhood $\mathrm{U}$ of $x$ in $\mathrm{X}$ and a section $t\in\mathrm{T}_{\mathrm{X}/\mathrm{S}}(\mathrm{U})$ such that $\mathscr I_{\mathrm{X}}(\mathrm{D})|\mathrm{U}=\sh{O}_{\mathrm{U}}.t$; since $x\in\mathrm{Y}(\mathrm{D})$, the image $t_{f(x)}$ of $t$ in $\Gamma(\mathrm{U}\cap\mathrm{X}_{f(x)},\sh{O}_{\mathrm{X}_{f(x)}})$ belongs to the maximal ideal of $\sh{O}_{\mathrm{X}_{f(x)},x}$, and furthermore, by definition, for all $s\in\mathrm{S}$, the image $t_s$ of $t$ in $\Gamma(\mathrm{U}\cap\mathrm{X}_s,\sh{O}_{\mathrm{X}_s})$ is a regular section.
+We deduce therefore from \sref{IV.11.3.8} and \sref{IV.19.2.4} that the canonical injection $\mathrm{Y}(\mathrm{D})\to\mathrm{X}$ is \emph{transversely regular relative to $\mathrm{S}$ and of codimension $1$}.
+The converse being immediate, we see that one can \emph{identify} canonically the positive divisors on $\mathrm{X}$ relative to $\mathrm{S}$ with the closed sub-preschemes $\mathrm{Y}$ of $\mathrm{X}$ such that the canonical injection $\mathrm{Y}\to\mathrm{X}$ is a transversely regular immersion relative to $\mathrm{S}$ and of codimension $1$.
+We will ordinarily make this identification.
+\end{env}
+
+\begin{proposition}[21.15.4]
+\label{IV.21.15.4}
+Let $\mathrm{D}$ be a divisor on $\mathrm{X}$, and let $\mathscr I_{\mathrm{X}}(\mathrm{D})$ be the corresponding invertible fractional ideal \sref{IV.21.2.5}.
+For $\mathrm{D}\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$, it is necessary and sufficient that, for all $x\in\mathrm{X}$, $(\mathscr I_{\mathrm{X}}(\mathrm{D})\cap\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*)_x\neq 0$ (or equivalently, that $\mathscr I_{\mathrm{X}}(\mathrm{D})\subset\mathscr{M}_{\mathrm{X}/\mathrm{S}}$ and $\mathscr I_{\mathrm{X}}(\mathrm{D})^{-1}\subset\mathscr{M}_{\mathrm{X}/\mathrm{S}}$).
+\end{proposition}
+
+\begin{proof}
+Indeed, to say that $\mathrm{D}\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$ means that for all $x\in\mathrm{X}$, there exists an open neighbourhood $\mathrm{U}$ of $x$ and a section $f\in\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}/\mathrm{S}}^*)$ such that $\mathrm{D}|\mathrm{U}=\operatorname{div}_{\mathrm{U}}(f)$, where $f\in\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}}^*)$; since $\mathscr I_{\mathrm{X}}(\mathrm{D})|\mathrm{U}$ is the fractional ideal $\sh{O}_{\mathrm{U}}\cdot f$, the proposition follows immediately.
+\end{proof}
+----- English, source_aligned/ega4-21.tex, page IV-4 331 -----
+\oldpage[IV-4]{331}
+\begin{proposition}[21.15.5]
+\label{IV.21.15.5}
+Let $\mathrm{D}$ be a divisor on $\mathrm{X}$, let $\sh{O}_{\mathrm{X}}(\mathrm{D})$ be the invertible fractional ideal, and let $s_{\mathrm{D}}$ be the regular meromorphic section of $\sh{O}_{\mathrm{X}}(\mathrm{D})$ canonically defined by $\mathrm{D}$ \sref{IV.21.2.8} and \sref{IV.21.2.9}.
+For $\mathrm{D}\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$, it is necessary and sufficient that $s_{\mathrm{D}}\in\Gamma(\mathrm{X},\mathscr{M}_{\mathrm{X}/\mathrm{S}}(\sh{O}_{\mathrm{X}}(\mathrm{D})))$.
+\end{proposition}
+
+\begin{proof}
+Indeed, if $\mathrm{U}$ is an open of $\mathrm{X}$ such that $\mathrm{D}|\mathrm{U}=\operatorname{div}_{\mathrm{U}}(f)$, where $f\in\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}}^*)$, to say that $s_{\mathrm{D}}\in\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}/\mathrm{S}}(\sh{O}_{\mathrm{X}}(\mathrm{D})))$ means, by virtue of the definitions \sref{IV.20.6.2}, that $f^{-1}\in\Gamma(\mathrm{U},\mathscr{M}_{\mathrm{X}/\mathrm{S}})$, whence the proposition.
+\end{proof}
+
+The interpretation of the divisors on $\mathrm{X}$ by means of the classes $\operatorname{cl}(\mathscr{L},s)$ \sref{IV.21.2.11} allows us therefore to interpret the elements of $\operatorname{Div}(\mathrm{X}/\mathrm{S})$ as the pairs $(\mathscr{L},s)$ (up to isomorphism) such that $\mathscr{L}$ is an invertible $\sh{O}_{\mathrm{X}}$-module and $s$ is a meromorphic section of $\mathscr{L}$ regular relative to $\mathrm{S}$ \sref{IV.20.6.5},~(iii)).
+
+\begin{proposition}[21.15.6]
+\label{IV.21.15.6}
+Let $\mathrm{D}$ be a divisor on $\mathrm{X}$ relative to $\mathrm{S}$, and suppose that for all $x\in\mathrm{X}$ such that $\operatorname{prof}(\sh{O}_{\mathrm{X}_{f(x)},x})=1$, we have $\mathrm{D}_x\geq 0$ (resp.\ $\mathrm{D}_x=0$).
+Then $\mathrm{D}\geq 0$ (resp.\ $\mathrm{D}=0$).
+\end{proposition}
+
+\begin{proof}
+As in \sref{IV.21.1.8}, we may restrict to the case where $\mathrm{D}=\operatorname{div}(\varphi)$, with $\varphi$ a meromorphic function regular relative to $\mathrm{S}$. It is then enough to show that, if $\mathrm{D}_x\geq0$ at every point $x\in\mathrm{X}$ for which $\operatorname{prof}(\sh{O}_{\mathrm{X}_{f(x)},x})=1$, then $\varphi$ is defined everywhere on $\mathrm{X}$.
+This hypothesis means that, if $\mathrm{T}=\mathrm{X}\setmin\operatorname{dom}(\varphi)$, then $\operatorname{prof}(\sh{O}_{\mathrm{X}_{f(x)},x})\geq2$ for every $x\in\mathrm{T}$; the conclusion follows from \sref{IV.20.6.6}.
+\end{proof}
+
+\begin{env}[21.15.7]
+\label{IV.21.15.7}
+Let $\mathrm{X}'$ be a second S-prescheme flat and locally of finite presentation over $\mathrm{S}$, and let $g:\mathrm{X}'\to\mathrm{X}$ be an S-morphism.
+If the S-morphism $g$ is \emph{flat}, we know \sref{IV.21.4.5} that the inverse image by $g$ of every divisor on $\mathrm{X}$ is defined; if furthermore $\mathrm{D}\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$, it follows from the definition \sref{IV.21.15.2} and from \sref{IV.20.6.8} that $g^*(\mathrm{D})\in\operatorname{Div}(\mathrm{X}'/\mathrm{S})$.
+\end{env}
+
+\begin{env}[21.15.8]
+\label{IV.21.15.8}
+Let $\mathrm{X}'$ be a second S-prescheme flat and locally of finite presentation over $\mathrm{S}$, and let $g:\mathrm{X}'\to\mathrm{X}$ be an S-morphism \emph{finite} and \emph{flat}.
+We note that $g$ is also necessarily of finite presentation \sref{IV.1.4.3},~\sref{IV.1.4.6} and \sref{IV.1.6.3}, hence $g_*(\sh{O}_{\mathrm{X}'})$ is a $\sh{O}_{\mathrm{X}}$-Module flat and of finite presentation, and therefore \emph{locally free} \sref{IV.2.1.12}, in other words $g$ is a locally free morphism \sref{IV.18.2.7}; for all $s\in\mathrm{S}$, the corresponding morphism $g_s:\mathrm{X}_s'\to\mathrm{X}_s$ is also finite and locally free.
+We deduce from \sref{IV.21.5.2} and \sref{IV.20.6.1} that, for every open $\mathrm{U}$ of $\mathrm{X}$ and every section $t'\in\Gamma(g^{-1}(\mathrm{U}),\mathscr{T}_{\mathrm{X}'/\mathrm{S}})$, the norm $\mathrm{N}_{\mathrm{X}'/\mathrm{X}}(t')$ belongs to $\Gamma(\mathrm{U},\mathscr{T}_{\mathrm{X}/\mathrm{S}})$. The argument of \sref{IV.21.5.3} then shows that, for every invertible $\sh{O}_{\mathrm{X}'}$-module $\mathscr{L}'$ and every meromorphic section $u'$ of $\mathscr{L}'$ over $\mathrm{X}'$ which is regular relative to $\mathrm{S}$, the norm $\mathrm{N}_{\mathrm{X}'/\mathrm{X}}(u')$ is a meromorphic section of $\mathscr{L}=\mathrm{N}_{\mathrm{X}'/\mathrm{X}}(\mathscr{L}')$ over $\mathrm{X}$, regular relative to $\mathrm{S}$.
+The interpretation of divisors relative to $\mathrm{S}$ given in \sref{IV.21.15.5}, together with the definition of the direct image of a divisor \sref{IV.21.5.5}, therefore proves that \emph{for every divisor} $\mathrm{D}'\in\operatorname{Div}(\mathrm{X}'/\mathrm{S})$, one has $g_*(\mathrm{D}')\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$.
+\end{env}
+
+\begin{env}[21.15.9]
+\label{IV.21.15.9}
+----- French corrections on page IV-4 330 -----
+[id 23706]
+OLD: fermé $Y(D)$
+NEW: fermé $\boldsymbol{\mathsf{Y}}(D)$
+FRENCH CONTEXT (corrected): abel{IV.21.15.3.2}
+  \mathscr{D}iv_{X/S}^+=\mathcal O_{X/S}^{\mathrm{reg}}/\mathcal O_X^*
+  \tag{21.15.3.2}
+\]
+à un isomorphisme canonique près.
+
+\begin{env}[21.15.3.3]
+\label{IV.21.15.3.3}
+Soit $D\in\operatorname{Div}^+(X/S)$ et considérons le sous-préschéma fermé $\boldsymbol{\mathsf{Y}}(D)$
+de $X$ défini par l'Idéal $\mathscr I_X(D)$ de $\mathcal O_X$ (21.6.5); en vertu de
+ce qui précède, pour tout $x\in\boldsymbol{\mathsf{Y}}(D)$, il y a un voisinage ouvert $U$ de $x$ dans $X$
+et une section $t\in T_{X/S}(U)$ telle que
+$\mathscr I_X(D)|U=\mathc
+
+[id 23708]
+OLD: pour tout $x\in Y(D)$
+NEW: pour tout $x\in\boldsymbol{\mathsf{Y}}(D)$
+FRENCH CONTEXT (corrected): que près.
+
+\begin{env}[21.15.3.3]
+\label{IV.21.15.3.3}
+Soit $D\in\operatorname{Div}^+(X/S)$ et considérons le sous-préschéma fermé $\boldsymbol{\mathsf{Y}}(D)$
+de $X$ défini par l'Idéal $\mathscr I_X(D)$ de $\mathcal O_X$ (21.6.5); en vertu de
+ce qui précède, pour tout $x\in\boldsymbol{\mathsf{Y}}(D)$, il y a un voisinage ouvert $U$ de $x$ dans $X$
+et une section $t\in T_{X/S}(U)$ telle que
+$\mathscr I_X(D)|U=\mathcal O_U.t$; puisque $x\in Y(D)$, l'image $t_{f(x)}$ de
+$t$ dans $\Gamma(U\cap X_{f(x)},\mathcal O_{X_{f(x)}})$ appartient à l'idéal maximal
+de $
+
+[id 23713]
+OLD: $Y(D)\to X$
+NEW: $\boldsymbol{\mathsf{Y}}(D)\to X$
+FRENCH CONTEXT (corrected):  à l'idéal maximal
+de $\mathcal O_{X_{f(x)},x}$, et en outre, par définition, pour tout $s\in S$, l'image
+$t_s$ de $t$ dans $\Gamma(U\cap X_s,\mathcal O_{X_s})$ est une section
+\emph{régulière}. On déduit donc de (11.3.8) et (19.2.4) que l'immersion canonique
+$\boldsymbol{\mathsf{Y}}(D)\to X$ est \emph{transversalement régulière relativement à $S$ et de
+codimension $1$} au point $x$. La réciproque étant immédiate, on voit qu'on peut
+\emph{identifier} canoniquement les diviseurs positifs sur $X$ relatifs à $S$ aux
+sous-préschémas fermés $Y$ de $X$ 
+
+=================== PAGE IV-4 331 ===================
+----- (English page IV-4 330: shown above in this file) -----
+----- (English page IV-4 331: shown above in this file) -----
+----- English, source_aligned/ega4-21.tex, page IV-4 332 -----
+\oldpage[IV-4]{332}
+Consider finally an arbitrary morphism $\mathrm{S}'\to\mathrm{S}$, and (under the hypotheses of \sref{IV.21.15.1}) set $\mathrm{X}'=\mathrm{X}\times_{\mathrm{S}}\mathrm{S}'$, which is flat and locally of finite presentation over $\mathrm{S}'$; if $p:\mathrm{X}'\to\mathrm{X}$ is the canonical projection, we have seen \sref{IV.20.6.9} that there is a canonical homomorphism $p^*(\mathscr{M}_{\mathrm{X}/\mathrm{S}})\to\mathscr{M}_{\mathrm{X}'/\mathrm{S}'}$, which transforms every section of $\mathscr{M}_{\mathrm{X}/\mathrm{S}}$ over $\mathrm{U}$, \emph{regular relative to $\mathrm{S}$}, into a section of $\mathscr{M}_{\mathrm{X}'/\mathrm{S}'}$ regular relative to $\mathrm{S}'$ \sref{IV.20.6.5},~(iii); we conclude then from the definition \sref{IV.21.15.2} and the right exactness of the functor $p^*$, that the preceding homomorphism defines by passage to quotients a canonical homomorphism
+\[
+\label{IV.21.15.9.1}
+  \operatorname{Div}(\mathrm{X}/\mathrm{S})\to\operatorname{Div}(\mathrm{X}'/\mathrm{S}')
+  \tag{21.15.9.1}
+\]
+which evidently transforms elements of $\operatorname{Div}^+(\mathrm{X}/\mathrm{S})$ into elements of $\operatorname{Div}^+(\mathrm{X}'/\mathrm{S}')$.
+We also set $\operatorname{Div}(\mathrm{X}'/\mathrm{S}')=\operatorname{Div}_{\mathrm{X}/\mathrm{S}}(\mathrm{S}')$ (resp.\ $\operatorname{Div}^+(\mathrm{X}'/\mathrm{S}')=\operatorname{Div}_{\mathrm{X}/\mathrm{S}}^+(\mathrm{S}')$), and we see immediately that we have thus defined two contravariant functors
+\[
+  \operatorname{Div}_{\mathrm{X}/\mathrm{S}}:\mathbf{Sch}_{/\mathrm{S}}\to\mathbf{Ab},\qquad\operatorname{Div}_{\mathrm{X}/\mathrm{S}}^+:\mathbf{Sch}_{/\mathrm{S}}\to\mathbf{Ens}
+\]
+from the category of S-preschemes into that of commutative groups (resp.\ sets).
+We will see further (chap.~VI) the important cases where the functor $\operatorname{Div}_{\mathrm{X}/\mathrm{S}}^+$ is \emph{representable} $(\mathbf{0}_{\mathrm{III}}$, $8.1.8)$.
+
+For every divisor $\mathrm{D}\in\operatorname{Div}(\mathrm{X}/\mathrm{S})$, the image of $\mathrm{D}$ by the homomorphism \sref{IV.21.15.9.1} is none other than the \emph{inverse image} $p^*(\mathrm{D})$ (in the sense of \sref{IV.21.4.2}): the existence of this inverse image and the preceding assertions are immediate consequences of \sref{IV.20.6.5},~(iii) and \sref{IV.20.6.9}.
+
+The elements of $\operatorname{Div}(\mathrm{X}'/\mathrm{S}')$ are often called, by abuse of language, ``\emph{families of divisors on $\mathrm{X}$ relative to $\mathrm{S}$, parametrised by the S-prescheme $\mathrm{S}'$}''; this terminology is used especially when it concerns positive divisors.
+\end{env}
+----- French corrections on page IV-4 331 -----
+[id 23724]
+OLD: $f^{-1}\in\Gamma(U,\mathscr M_{X/S})$
+NEW: $f^{-1}\in\Gamma(U,\mathscr M_{X/S}^*)$
+FRENCH CONTEXT (corrected): ))$.
+\end{proposition}
+
+\begin{proof}
+En effet, si $U$ est un ouvert de $X$ tel que $D|U=\operatorname{div}_U(f)$, où
+$f\in\Gamma(U,\mathscr M_X^*)$, dire que
+$s_D\in\Gamma(U,\mathscr M_{X/S}(\mathcal O_X(D)))$ signifie, en vertu des
+définitions (20.6.2), que $f^{-1}\in\Gamma(U,\mathscr M_{X/S}^*)$, d'où la
+proposition.
+\end{proof}
+
+L'interprétation des diviseurs sur $X$ à l'aide des classes
+$\operatorname{cl}(\mathscr L,s)$ (21.2.11) permet donc d'interpréter les éléments de
+$\operatorname{Div}(X/S)$ comme les couples (à isomorphisme près) $(\mathscr L
+
+=================== PAGE IV-4 332 ===================
+----- (English page IV-4 331: shown above in this file) -----
+----- (English page IV-4 332: shown above in this file) -----
+----- French corrections on page IV-4 332 -----
+[id 23734]
+OLD: \mathbf{Sch}_{/S}\longrightarrow\mathbf{Ab}
+NEW: \boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ab}}
+FRENCH CONTEXT (corrected): {Div}^+(X'/S')$. On pose encore
+$\operatorname{Div}(X'/S')=\operatorname{Div}_{X/S}(S')$ (resp.
+$\operatorname{Div}^+(X'/S')=\operatorname{Div}_{X/S}^+(S')$), et on voit aussitôt
+qu'on a ainsi défini deux foncteurs contravariants
+\[
+  \operatorname{Div}_{X/S}:\boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ab}},\qquad
+  \operatorname{Div}_{X/S}^+:\boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ens}}
+\]
+de la catégorie des $S$-préschémas dans celle des groupes commutatifs (resp. des
+ensembles). On verra plus loin (chap.~VI) des cas importants où le f
+
+[id 23735]
+OLD: \mathbf{Sch}_{/S}\longrightarrow\mathbf{Ens}
+NEW: \boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ens}}
+FRENCH CONTEXT (corrected): name{Div}^+(X'/S')=\operatorname{Div}_{X/S}^+(S')$), et on voit aussitôt
+qu'on a ainsi défini deux foncteurs contravariants
+\[
+  \operatorname{Div}_{X/S}:\boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ab}},\qquad
+  \operatorname{Div}_{X/S}^+:\boldsymbol{\mathit{Sch}}_{/S}\longrightarrow\boldsymbol{\mathit{Ens}}
+\]
+de la catégorie des $S$-préschémas dans celle des groupes commutatifs (resp. des
+ensembles). On verra plus loin (chap.~VI) des cas importants où le foncteur
+$\operatorname{Div}_{X/S}^+$ est \emph{représentable} $(\mathbf 0_{\mathrm{III}},
+8.1.8)$.
+
+Pour to
+

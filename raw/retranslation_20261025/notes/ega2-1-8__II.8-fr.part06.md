@@ -1,0 +1,5 @@
+- TERM ce numéro → this number (EGA's numbered subsection; 8.14.12).
+- TERM périodique de période $d$ → periodic of period $d$ (8.14.12, 8.14.14).
+- TERM di-isomorphisme, $h$-di-isomorphisme → di-isomorphism, $h$-di-isomorphism (hyphenated like di-homomorphism; 8.14.13).
+- TERM isomorphismes identiques → identity isomorphisms (8.14.10); les deux membres → the two sides (8.14.13).
+- TERM à degrés positifs et négatifs → in positive and negative degrees (8.14.12).

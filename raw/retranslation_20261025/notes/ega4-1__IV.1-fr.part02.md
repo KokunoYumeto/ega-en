@@ -1,0 +1,5 @@
+- TRANSCRIPTION? 1.8.3 proof — "ramené à prouver le lemme lorsque $X_i$ est \emph{affine} d'anneau $A$": the rest of the proof works with $X$ affine of ring $A$ ($X_{f_i}$, $Z'$ closed in $X$), so "$X$" may be meant. Translated as written.
+- TRANSCRIPTION? 1.8.5 proof — "(compte tenu de (1.5.4, (iii)) qu'on est ramené": the first opening parenthesis is never closed. Kept as written.
+- TRANSCRIPTION? 1.8.5.1 — the statement has neither "$g\neq0$" nor "$B$ containing $A$"; with $g=0$ it is vacuous, and its uses in 1.8.5 and 1.8.6 need $g\neq0$ and $A\to B$ injective. A word may be missing. Translated as written.
+- TERM numéro (ce numéro) → subsection.
+- TERM sous-$\mathbf Z$-algèbre → sub-$\mathbf Z$-algebra (hyphen before a math prefix, as sub-$\mathcal O_X$-module).

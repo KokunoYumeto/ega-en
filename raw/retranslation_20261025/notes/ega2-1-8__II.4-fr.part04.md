@@ -1,0 +1,5 @@
+- TRANSCRIPTION? 4.6.13, proof of (ii) — plain-text reference "(4.6.1.13, (i))" after $X_{s'_i}=f^{-1}(Y_{s_i})$: evidently Lemma (4.6.13.1, (i)) with digits transposed (and not linked). Kept as written.
+- TRANSCRIPTION? 4.6.13, proof of (ii) — "$t_{ij}\in\Gamma(X,\mathcal{L}^{\otimes n_{ij}})$": the $t_{ij}$ come from the ampleness of $\mathcal{L}|X_{s'_i}$ and $t_{ij}\otimes s_i'^{\otimes m}$ is then extended from $X_{s'_i}$ to $X$ by (I, 9.3.1), so sections over $X_{s'_i}$ ($\Gamma(X_{s'_i},\dots)$) are expected. Math copied unchanged.
+- TRANSCRIPTION? 4.6.13, proof of (ii) — "par définition des images réciproques ((0, 3.7.1) et (4.4.1))": the second reference is linked to II.4.4.1 (immersions into projective bundles), which does not concern inverse images; a Chapter 0 number (e.g. 0, 4.4.1) may be meant. Kept as written.
+- TERM explicitation (des homomorphismes) → explicit description (4.6.3).
+- TERM on se gardera de croire que → one should be careful not to believe that (4.6.14).

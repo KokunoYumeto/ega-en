@@ -1,0 +1,6 @@
+- `TRANSCRIPTION?` proof of 1.4.1, c) ⇒ b) — "au faisceau associé au module $\widetilde{N}$, conoyau de ...": the module (the cokernel) should be N, with associated sheaf Ñ; the tilde looks misplaced. Translated as written.
+- `TRANSCRIPTION?` proof of 1.6.3 — "$\Gamma(D(f'),\widetilde{A'})$-Modules" is capitalized although these are modules over a ring (capital M is for sheaves of modules). Kept.
+- `TERM` C.Q.F.D. → Q.E.D.
+- `TERM` catégorie duale → "category dual to" (the opposite category), after 1.7.4.
+- `TERM` corps des restes → residue field.
+- `TERM` image directe → direct image.

@@ -1,0 +1,15 @@
+- TRANSCRIPTION? 5.2.1 proof (c') implies b)) — "$x\in X_f\subset X-U$": $U$ is an open neighbourhood of $x$, and $f$ vanishes on $X-U$ with $f(x)=1_x$, so the argument gives $X_f\subset U$. Copied as is.
+- TRANSCRIPTION? 5.4.2 proof — "(I, 4.3.2 et 3.3.3)" links 3.3.3 to key II.3.3.3-fr (about $X_f$ in Proj); the fact used, $Y\times_YY'=Y'$, is I, 3.3.3 ($X\times_SS=X$). Key kept.
+- TRANSCRIPTION? 5.4.2 proof display — French `~;` inside \[…\] after $X\times_YZ$; kept, since mathematics is copied verbatim.
+- TRANSCRIPTION? after 5.3.1 — "Nagata [26]" is plain text, whereas 5.5.4 (iv) (part02) writes \cite{II-26}; kept.
+- TRANSCRIPTION? proof of 5.1.6, proof of 5.2.1, 5.4.9 — blank lines around \oldpage (pp. 96, 98, 103) split a sentence into two paragraphs; kept as in the French.
+- TERM immersion graphe → graph immersion (glossary: morphisme graphe → graph morphism).
+- TERM homomorphisme / morphisme identique → identity homomorphism / morphism.
+- TERM base de la topologie → base of the topology; $f$-amplitude → $f$-ampleness.
+- TERM sous-$\mathcal{O}_Y$-Algèbre → sub-$\mathcal{O}_Y$-algebra; sous-$Y$-schéma → sub-$Y$-scheme; sous-Module → submodule.
+- TERM suite exacte des termes de bas degré (de la suite spectrale de Leray) → exact sequence of terms of low degree (of the Leray spectral sequence); suite exacte de cohomologie → exact cohomology sequence.
+- TERM schémas algébriques non singuliers → nonsingular algebraic schemes.
+- TERM morphisme fermé → closed morphism; procédé général (5.4.3) → general procedure.
+- TERM partie propre / partie $Y$-propre (5.4.10) → proper subset / $Y$-proper subset (glossary); "proper" means proper over $Y$ here, not strict inclusion.
+- TERM la déf. (5.4.1) → Def. (5.4.1); la définition (5.x.y) → Definition (5.x.y).
+- TERM il revient au même de dire → it amounts to the same thing to say; être dans les conditions d'application de → be in a position to apply.

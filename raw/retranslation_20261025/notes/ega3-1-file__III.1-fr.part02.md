@@ -1,0 +1,3 @@
+- TRANSCRIPTION? proof of 1.4.16 — "il résulte de (1.4.15)" is the only internal reference in this chunk written as plain text, without \hyperref[III.1.4.15-fr]{...}; kept as plain text.
+- TERM faisceaux images directes → direct image sheaves; $\varphi$-morphisme → $\varphi$-morphism.
+- TERM premier membre / second membre (of an equality) → left-hand side / right-hand side.

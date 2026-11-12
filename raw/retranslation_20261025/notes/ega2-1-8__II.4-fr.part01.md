@@ -1,0 +1,5 @@
+- TRANSCRIPTION? 4.3.2, before Lemma 4.3.2.4: "(en revenant au cas affine, à l'aide de (I, 3.2.7 et (3.2.3))". One closing parenthesis is missing, and the second reference (label I.3.2.3) is displayed as "3.2.3" without "I,"; probably "(I, 3.2.7 et 3.2.3)". Kept as in the French.
+- TRANSCRIPTION? 4.2.1: "un faisceau inversible $\mathcal L_r$ sur $\mathcal O_X$"; "sur $X$" (or "$\mathcal O_X$-Module inversible") expected. Translated literally.
+- TERM grassmanniennes (schémas «~») → ``Grassmannian'' schemes.
+- TERM bien déterminé (à un isomorphisme près) → uniquely determined (up to isomorphism) (4.2.7).
+- TERM trace (d'un idéal sur $\mathbf S_n(E)$) → trace (4.3.6).

@@ -1,0 +1,57 @@
+ENGLISH EGA: FIX THE TRANSLATION SLIPS IN YOUR FILES
+
+The English EGA (user\Documents\ega_scan_check_20261101\ega-en\tex) is an AI translation of the French
+EGA. The French has just been checked page by page against the printed original, and its corrections have been carried
+into the English. While doing that, checkers found English passages that are wrong for reasons of the translation
+itself: omitted sentences or clauses, garbled or misplaced passages, proofs that are not translations of the French,
+wrong letters, indices or references, untranslated French words, lost emphasis. They are listed in
+user\Documents\ega_scan_check_20261101\ENGLISH_SLIPS.md. Your job: fix the items of that list that fall in
+YOUR FILES (given below), with the corrected French as the authority.
+
+The French (read only; the corrected edition, which the translation follows):
+  user\Documents\ega_scan_check_20261101\ega-fr\editions\2026-10-24-r20\current\packages\
+      BASE\native\ega1 (chapter 0 §§1-13 is ega0-1-fr.tex there; EGA I), BASE\native\ega2 (EGA II),
+      BASE\native\ega3 (EGA III: ega3-1-fr §§1-5, ega3-6-fr, ega3-7-fr), IV1\native\ega4 (chapter 0 §§14-23, IV §1),
+      IV2\native\ega4 (IV §§2-7), IV3\native\ega4 (IV §§8-15), IV4\native\ega4 (IV §§16-21 and end matter).
+Both editions carry the same page markers \oldpage[PART]{N} at the printed page breaks: find the English place, note the
+nearest marker before it, and find the same marker in the French with grep (e.g. grep -rn "oldpage\[IV-4\]{217}").
+
+For each item of ENGLISH_SLIPS.md in your files:
+1. Find the English passage and the French passage of the same page.
+2. Decide: a real slip -> fix it; already right (fixed meanwhile) -> "already"; the English is a faithful rendering and
+   the report was wrong -> "not_a_slip"; cannot decide -> "unclear" (say why).
+3. Fix with the smallest edit that makes the English a faithful translation of the French. For RETRANSLATE items and
+   for omitted, garbled, misplaced or paraphrased passages, translate the French passage yourself, faithfully, sentence
+   by sentence, in the register and terminology of the surrounding English (EGA's English terms as this edition uses
+   them: prescheme, Module with a capital M where the French writes Module for a sheaf of modules, etc.). Keep the
+   mathematics exactly as in the French: letters, alphabets, indices, references, numbering.
+4. Do not use any other English translation of EGA, in any form: translate from the French yourself.
+
+TeX conventions of the English edition (follow what the surrounding English does):
+- references: \sref{KEY} prints "(n.n.n)" with its own parentheses and a link; another chapter: \sref[II]{II.5.4.2};
+  chapter 0 of a given volume: \sref[0\textsubscript{\mdseries I}]{0.1.5.4}; a sub-item: \sref{KEY},~(i). Never put
+  parentheses around \sref. Find the key of a paragraph with grep for its \label in the English tree.
+- \kres{...} or \kres(...) is the bold residue field k; \sh{F} script letters; \setmin set difference; \leadsto where
+  the French has \leadsto; \cat{C} bold italic category letters; \boldsymbol for the print's bold italic letters.
+- already done for the whole edition, do not redo: doubled parentheses around \sref, "\sref{..}[(i)]" forms, \kappa(...)
+  and \mathbf{k}(...) residue fields -> \kres.
+
+Rules:
+- Edit ONLY your files. Other agents are editing other files at the same time.
+- Also fix any other translation slip you notice in the passages you read for your items (an omitted or added clause,
+  a condensed or paraphrased proof, a wrong letter, index or reference, a lost emphasis or upright parenthesis of the
+  print), checked against the French; log it with the note "extra". Do not read the whole files to look for more.
+- Helper scripts: give any script you write a name that starts with your OUTFILE's base name (the scratchpad is
+  shared with other agents).
+- Do not touch \oldpage markers or \label keys unless the item is about them (e.g. missing markers: add them at the
+  place matching the French).
+- Keep the TeX valid: after each edit, the edited region must have balanced braces, $ and \( \) / \[ \] pairs, and
+  matching \begin/\end. No compilation needed; the coordinator compiles the whole edition afterwards.
+- Economy: read only the passages you need (grep for the paragraph number or label, then read around it); do not read
+  whole files; no repeated rereading.
+
+Write your log to OUTFILE as a JSON list, one object per item (and one per extra fix):
+  {"item": "<the line of ENGLISH_SLIPS.md, shortened>", "file": "<english file>", "status": "fixed|already|not_a_slip|unclear",
+   "old": "<short English before>", "new": "<short English after>", "note": "<one line>"}
+Write the file once at the end (or update it as you go). Your final answer to the coordinator: counts by status, and
+anything the coordinator must decide (items outside your files that you noticed, or real doubts). No other report.

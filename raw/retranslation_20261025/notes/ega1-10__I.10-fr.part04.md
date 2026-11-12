@@ -1,0 +1,6 @@
+- TRANSCRIPTION? proof of (10.12.3.1) — no punctuation after the display $\mathfrak{K}/\mathfrak{K}^{n+1}=(B/\mathfrak{K}^{n+1})\rho_n(\ldots)$; the following "comme l'homomorphisme $\rho$ … est égal à $\varprojlim\rho_n$" begins a new statement (a ";" is probably lost). Translated as written ("since …", lowercase).
+- TERM $(S_n)$-système inductif adique → adic $(S_n)$-inductive system (likewise adic $(Y_n)$-inductive system, 10.13.1 b)).
+- TERM ouvert formel affine noethérien → Noetherian affine formal open subset; voisinage ouvert formel affine noethérien → Noetherian affine formal open neighbourhood.
+- TERM bicontinu → bicontinuous (10.11.7); topologie de groupe → group topology (10.11.8).
+- TERM second membre → right-hand side; les deux membres → the two sides.
+- TERM par adjonction → by adjunction; monomorphisme d'espaces annelés → monomorphism of ringed spaces (10.14.2–10.14.6).

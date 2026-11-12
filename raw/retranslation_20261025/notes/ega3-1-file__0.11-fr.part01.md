@@ -1,0 +1,8 @@
+- TRANSCRIPTION? 11.3.3, proof 4° (0.11.3.3-fr) — the display ends with "." although the sentence continues ("dès que $p-r+1+j_0<n$, …"); the parallel display in 3° has no period. Math copied unchanged.
+- TERM Compléments d'algèbre homologique → Supplement on homological algebra (glossary pattern "Compléments sur → Supplement on")
+- TERM opérateur de dérivation; dérivation (of a complex, bicomplex) → differential (not "differential operator", which is EGA IV's opérateur différentiel)
+- TERM complexe simple (vs bicomplexe) → simple complex
+- TERM dérivations permutables → differentials that commute
+- TERM «~edge-homomorphisme~» → ``edge homomorphism''
+- TERM limité inférieurement / supérieurement (complex, graded object) → bounded below / above
+- TERM co-régulière → coregular (glossary form)

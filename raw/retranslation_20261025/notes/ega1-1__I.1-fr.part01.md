@@ -1,0 +1,12 @@
+- `TRANSCRIPTION?` 1.2.5 (I.1.2.5-fr) — "on retrouve (1.1.12)": what is recovered (Spec(A/a) identified with V(a)) is 1.1.11; 1.1.12 is only the case a = N. Possibly (1.1.11) intended; kept 1.1.12.
+- `TERM` racine (d'un idéal) → radical; "le radical R(A)" (1.1.15, Jacobson radical) also stays "radical", distinguished by the notation.
+- `TERM` anneau intègre → integral domain.
+- `TERM` espace de Kolmogoroff → Kolmogorov space.
+- `TERM` partout dense → dense.
+- `TERM` fibre (of a sheaf) → stalk.
+- `TERM` fonctions continues numériques → continuous real-valued functions; "topologie initiale de Y" → "original topology of Y" (the given topology, not an initial topology).
+- `TERM` ensemble filtrant croissant → increasing directed set.
+- `TERM` (partie) multiplicative (saturée) → (saturated) multiplicative subset.
+- `TERM` correspondance biunivoque → one-to-one correspondence; il faut et il suffit → it is necessary and sufficient.
+- `TERM` base de la topologie → base for the topology.
+- `TERM` réduit à 0 → "consist of 0 alone" (avoids a clash with "reduced").

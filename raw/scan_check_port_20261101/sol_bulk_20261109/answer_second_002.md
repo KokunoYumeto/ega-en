@@ -1,0 +1,240 @@
+```json
+[
+  {
+    "id": 24014,
+    "decision": "apply",
+    "en_file": "source_aligned/ega4-21-erratum53-insertion.tex",
+    "en_old": "Assume the hypotheses of {\\hyperref[IV.21.4.11]{(21.4.11)}}.  For every invertible",
+    "en_new": "Assume the hypotheses of \\textup{\\hyperref[IV.21.4.11]{(21.4.11)}}.  For every invertible",
+    "note": "The literal parentheses need upright markup inside the corollary."
+  },
+  {
+    "id": 8816,
+    "decision": "unclear",
+    "note": "Only English page 6 is supplied; the chapter heading on page 5 is unavailable."
+  },
+  {
+    "id": 8842,
+    "decision": "not_applicable",
+    "note": "English step (16.2.3.2) contains only the formula; there are no introductory words to emphasize."
+  },
+  {
+    "id": 8851,
+    "decision": "not_applicable",
+    "note": "English step (16.2.3.3) contains only the formula; there are no introductory words to emphasize."
+  },
+  {
+    "id": 8859,
+    "decision": "not_applicable",
+    "note": "English step (16.2.3.4) contains only the formula; there are no introductory words to emphasize."
+  },
+  {
+    "id": 8865,
+    "decision": "already",
+    "en_file": "ega0/ega0-16.tex",
+    "en_old": "such that $(\\mathbf{III},~2.5.4)$ for $n$ sufficiently large,",
+    "note": "The whole citation is in math mode: its parentheses, digits, and bold chapter numeral are already upright."
+  },
+  {
+    "id": 9359,
+    "decision": "apply",
+    "en_file": "ega0/ega0-19.tex",
+    "en_old": "where $u$ is a continuous $\\Lambda$-homomorphism, also factors as $B\\xrightarrow{v}C\\to C/\\mathfrak{J}$, where $v$ is a continuous \\textup{$A$-homomorphism}.",
+    "en_new": "where $u$ is a continuous \\textup{$\\Lambda$-homomorphism}, also factors as $B\\xrightarrow{v}C\\to C/\\mathfrak{J}$, where $v$ is a continuous \\textup{$A$-homomorphism}."
+  },
+  {
+    "id": 10171,
+    "decision": "already",
+    "en_file": "ega0/ega0-20.tex",
+    "en_old": "If $A'$, $B$ are two $A$-algebras and $B'=B\\otimes_A A'$, the canonical homomorphism \\sref{0.20.5.4.1}",
+    "note": "The citation is generated entirely by \\sref, which already prints it upright."
+  },
+  {
+    "id": 10039,
+    "decision": "unclear",
+    "note": "The affected occurrence belongs to an equivalence clause omitted from the English, which instead concludes relative formal smoothness. There is no corresponding occurrence to emphasize."
+  },
+  {
+    "id": 10110,
+    "decision": "already",
+    "en_file": "ega0/ega0-20.tex",
+    "en_old": "For $B$ to be formally non-ramified \\sref{0.19.10.2},",
+    "note": "The citation is generated entirely by \\sref, which already prints it upright."
+  },
+  {
+    "id": 10117,
+    "decision": "already",
+    "en_file": "ega0/ega0-20.tex",
+    "en_old": "is a formal bimorphism \\sref{0.19.1.2}.",
+    "note": "The citation is generated entirely by \\sref, which already prints it upright."
+  },
+  {
+    "id": 10221,
+    "decision": "already",
+    "en_file": "ega0/ega0-21.tex",
+    "en_old": "The equivalent conditions of \\textnormal{(i)} are satisfied",
+    "note": "\\textnormal already resets the label to the upright document font."
+  },
+  {
+    "id": 10950,
+    "decision": "already",
+    "en_file": "ega0/ega0-22.tex",
+    "en_old": "\\item[$\\gamma'$)] \\emph{The homomorphism $u_{\\mathrm{B}/\\mathrm{A}/\\Lambda}\\otimes 1_\\mathrm{C}:\\Omega^1_{\\mathrm{A}/\\Lambda}\\otimes_\\mathrm{A}\\mathrm{C}\\to\\Omega^1_{\\mathrm{B}/\\Lambda}\\otimes_\\mathrm{B}\\mathrm{C}$ is injective.}",
+    "note": "The entire assertion, including “is injective”, is explicitly emphasized."
+  },
+  {
+    "id": 11117,
+    "decision": "apply",
+    "en_file": "ega0/ega0-22.tex",
+    "en_old": "if $a_i$ is the class of $f_i$ modulo $\\mathfrak{m}$, suppose that the family",
+    "en_new": "if $a_i$ is the class of $f_i$ \\textup{modulo} $\\mathfrak{m}$, suppose that the family",
+    "note": "English spells out the mathematical abbreviation as “modulo”."
+  },
+  {
+    "id": 11861,
+    "decision": "already",
+    "en_file": "ega4-2.source_aligned_r1.tex",
+    "en_old": "\\item[\\textnormal{(ii)}] Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms, $\\sh{F}$ a quasi-coherent $\\sh{O}_X$-Module faithfully flat relative to $Y$.",
+    "note": "\\textnormal already makes the item label upright."
+  },
+  {
+    "id": 11862,
+    "decision": "already",
+    "en_file": "ega4-2.source_aligned_r1.tex",
+    "en_old": "\\item[\\textnormal{(iii)}] Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms, $\\sh{G}$ a quasi-coherent $\\sh{O}_Y$-Module.",
+    "note": "\\textnormal already makes the item label upright."
+  },
+  {
+    "id": 11863,
+    "decision": "already",
+    "en_file": "ega4-2.source_aligned_r1.tex",
+    "en_old": "\\item[\\textnormal{(iv)}] Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms, $x$ a point of $X$.",
+    "note": "\\textnormal already makes the item label upright."
+  },
+  {
+    "id": 11860,
+    "decision": "already",
+    "en_file": "ega4-2.source_aligned_r1.tex",
+    "en_old": "\\item[\\textnormal{(i)}] Let $f:X\\to Y$, $g:Y'\\to Y$ be two morphisms, $X'=X\\times_Y Y'$, $\\sh{F}$ a quasi-coherent $\\sh{O}_X$-Module.",
+    "note": "\\textnormal already makes the item label upright."
+  },
+  {
+    "id": 11871,
+    "decision": "already",
+    "en_file": "ega4-2.source_aligned_r1.tex",
+    "en_old": "\\item[\\textnormal{(iii)}] Let $f:X\\to Y$, $g:Y\\to Z$ be two morphisms such that $f$ is faithfully flat.",
+    "note": "\\textnormal already makes the item label upright."
+  },
+  {
+    "id": 12107,
+    "decision": "already",
+    "en_file": "ega4-3.source_aligned_r1.tex",
+    "en_old": "\\begin{proposition}[3.3.1]\n\\label{IV.3.3.1}\nLet $f:X\\to Y$ be a morphism, $\\sh{F}$ a quasi-coherent $\\sh{O}_X$-module that is $f$-flat, and $\\sh{E}$ a quasi-coherent $\\sh{O}_Y$-module.\nIf, for every $y\\in Y$, we set $\\sh{F}_y=\\sh{F}\\otimes_{\\sh{O}_Y}\\boldsymbol{k}(y)$, then\n\\[\n\\label{IV.3.3.1.1}\n\\operatorname{Ass}(\\sh{E}\\otimes_{\\sh{O}_Y}\\sh{F})\\supset\\bigcup_{y\\in\\operatorname{Ass}(\\sh{E})}\\operatorname{Ass}(\\sh{F}_y)\n\\tag{3.3.1.1}\n\\]\nand the two sides are equal if $Y$ is locally Noetherian.\n\\end{proposition}",
+    "note": "English keeps the continuation inside the proposition, whose body is already italic."
+  },
+  {
+    "id": 12807,
+    "decision": "not_applicable",
+    "note": "English uses an unparenthesized “or equivalently” clause; the French parenthesis-specific typography has no counterpart."
+  },
+  {
+    "id": 12831,
+    "decision": "not_applicable",
+    "note": "English sets “over all triples” off with commas, not parentheses."
+  },
+  {
+    "id": 12701,
+    "decision": "not_applicable",
+    "note": "English uses a semicolon followed by “that is”, without the French explanatory parenthesis."
+  },
+  {
+    "id": 12703,
+    "decision": "not_applicable",
+    "note": "English makes this a nonparenthetical clause; the defined term is already explicitly emphasized."
+  },
+  {
+    "id": 14452,
+    "decision": "already",
+    "en_file": "components/06_section46_geometrically_reduced_preschemes.tex",
+    "en_old": "It follows that $x$ has an open neighbourhood $U$ such that\n$\\sh F|U$ is \\emph{geometrically reduced} \\sref{IV.4.6.13}.",
+    "note": "The corresponding neighbourhood assertion is already emphasized; the English reference is (4.6.13)."
+  },
+  {
+    "id": 13004,
+    "decision": "not_applicable",
+    "note": "English does not repeat “resp.” before the sub-prescheme alternative."
+  },
+  {
+    "id": 13005,
+    "decision": "not_applicable",
+    "note": "English does not repeat “resp.” before the K-morphism alternative."
+  },
+  {
+    "id": 13042,
+    "decision": "not_applicable",
+    "note": "English separates these alternatives with a semicolon and does not repeat “resp.”."
+  },
+  {
+    "id": 13043,
+    "decision": "not_applicable",
+    "note": "English introduces this alternative with “or”, not a repeated “resp.”."
+  },
+  {
+    "id": 13047,
+    "decision": "not_applicable",
+    "note": "English refers collectively to the equivalent conditions of (4.8.6), without printing their individual labels."
+  },
+  {
+    "id": 12902,
+    "decision": "not_applicable",
+    "note": "English omits the intermediate clause saying that the intersection of Z' and U is closed in U; the emphasized word belongs to that omitted clause."
+  },
+  {
+    "id": 13300,
+    "decision": "not_applicable",
+    "note": "English says “hence a closed morphism” without a parenthesis."
+  },
+  {
+    "id": 13307,
+    "decision": "not_applicable",
+    "note": "English expresses the sum with the mathematical symbol \\amalg, without a corresponding word to emphasize."
+  },
+  {
+    "id": 13969,
+    "decision": "not_applicable",
+    "note": "English omits this redundant parenthetical reminder of hypothesis (b), leaving no label at this occurrence to emphasize."
+  },
+  {
+    "id": 13993,
+    "decision": "not_applicable",
+    "note": "English refers collectively to the equivalent conditions of (5.6.1), without printing their individual labels."
+  },
+  {
+    "id": 14010,
+    "decision": "not_applicable",
+    "note": "English combines the generic points using “and” and “respectively”, without a parenthesis."
+  },
+  {
+    "id": 14011,
+    "decision": "not_applicable",
+    "note": "English combines X and Y using “and” and “respectively”, without a parenthesis."
+  },
+  {
+    "id": 13344,
+    "decision": "not_applicable",
+    "note": "English states the alternative hypothesis separately, without the French “resp.” parenthesis."
+  },
+  {
+    "id": 13345,
+    "decision": "not_applicable",
+    "note": "English gives the alternative conclusion as a separate statement, without the French “resp.” parenthesis."
+  },
+  {
+    "id": 13195,
+    "decision": "not_applicable",
+    "note": "English recasts the parenthetical explanation as a separate sentence beginning “In other words”."
+  }
+]
+```
+
+ega0/ega0-20.tex, proof of (20.6.3): English omits the equivalence between formal smoothness of \(K/k\) and formal smoothness relative to the prime field \(P\), replacing it with “it follows that”.

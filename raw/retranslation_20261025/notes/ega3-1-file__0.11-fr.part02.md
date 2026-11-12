@@ -1,0 +1,10 @@
+- TRANSCRIPTION? 11.4.4 (0.11.4.4-fr) — no env heading: the number exists only as a \phantomsection label inside env 11.4.3 ("Sauf mention expresse du contraire…"), so "(11.4.4)", cited in the proof of 11.4.5, is never displayed. Structure kept as is.
+- TRANSCRIPTION? 11.5.2.1 (ii) (0.11.5.2.1-fr) — with $Q^0=Q'^1$ and $f'^i=0$ for $i\leq0$, $f^0=f'^1\circ d^0$ need not be injective (e.g. $A^\bullet$ concentrated in degree 0), against "$f^i$ est injectif pour tout $i$"; 2° for $i=0$ forces $\mathrm Z^0(Q^\bullet)=0$. Check "$i\geq1$", "$Q^0=Q'^1$", "$i\leq0$" and 2° "$i\geq0$" against the scan (possibly a slip of the original). Translated as written.
+- TRANSCRIPTION? 11.6.2 (0.11.6.2-fr) — "les critères de (11.3.4)": the regularity criteria for bicomplexes with differentials of degree −1 are (11.3.6); (11.3.4) is the edge homomorphism. Reference kept.
+- TERM résolution droite / gauche (cohomologique / homologique) → right / left (cohomological / homological) resolution
+- TERM résolution de Cartan-Eilenberg (droite, gauche, injective, projective) → (right, left, injective, projective) Cartan--Eilenberg resolution
+- TERM quadricomplexe; tricomplexe → quadricomplex; tricomplex (lit.)
+- TERM permuter (commuter) aux limites inductives → commute with inductive limits
+- TERM dérivé gauche $L_pT$ → left derived functor
+- TERM «~renversement des flèches~» → ``reversing the arrows''
+- TERM second membre → right-hand side

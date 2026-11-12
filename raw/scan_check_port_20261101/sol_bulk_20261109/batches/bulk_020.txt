@@ -1,0 +1,4532 @@
+# English hand pass, bulk_020: 149 items on 16 printed pages
+
+=================== PAGE IV-2 69 ===================
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 68 -----
+\oldpage[IV-2]{68}
+
+In particular, the irreducible components (resp.\ connected
+components) of $X$ are geometrically irreducible
+(resp.\ geometrically connected).
+\end{proposition}
+
+\begin{proof}
+By definition, $k'/k$ is radicial.
+The morphism $\Spec(k')\to\Spec(k)$ is integral, surjective, and
+radicial, so the first assertion follows from
+\sref{IV.2.4.5},~(i).
+The second follows from the first and \sref{IV.4.5.1}.
+\end{proof}
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 68 -----
+\subsection{Geometrically reduced algebraic preschemes}
+\label{subsection:IV.4.6}
+\label{IV.4.6}
+
+\begin{proposition}[4.6.1]
+\phantomsection
+\label{IV.4.6.1}
+Let $k$ be a field, let $X$ be a $k$-prescheme, and let $\Omega$ be a
+perfect extension of $k$.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.6.1.a}
+for every reduced $k$-prescheme $S$, the prescheme $X\times_k S$ is
+reduced;
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.6.1.b}
+for every extension $K$ of $k$, the prescheme $X\otimes_k K$ is
+reduced;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.6.1.c}
+the prescheme $X\otimes_k\Omega$ is reduced;
+
+\item[\rm(d)]
+\phantomsection
+\label{IV.4.6.1.d}
+for every finite radicial extension $k'$ of $k$, the prescheme
+$X\otimes_k k'$ is reduced;
+
+\item[\rm(e)]
+\phantomsection
+\label{IV.4.6.1.e}
+$X$ is reduced and, for every irreducible component $X_\alpha$ of
+$X$, with generic point $x_\alpha$, the field $\kres(x_\alpha)$ is a
+separable extension of $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The implications \emph{(a)}$\Rightarrow$\emph{(b)}
+$\Rightarrow$\emph{(c)} are immediate.
+Since $k'$ may be regarded as a subextension of $\Omega$,
+\sref{IV.4.4.1} shows that \emph{(c)} implies \emph{(d)}.
+
+Suppose \emph{(d)}.
+Taking $k'=k$ first shows that $X$ is reduced.
+To prove that $\kres(x_\alpha)$ is separable over $k$, it suffices to
+show that $\kres(x_\alpha)\otimes_k k'$ is reduced for every finite
+radicial extension $k'$ of $k$ \sref{IV.4.3.5}.
+We may reduce to the case $X=\Spec(A)$, where $A$ is a reduced
+$k$-algebra.
+Then $A\otimes_k k'$ is reduced by hypothesis \sref[I]{I.5.1.4}, and
+$\kres(x_\alpha)\otimes_k k'$ is a ring of fractions of this ring;
+hence it is reduced \sref[0\textsubscript{\mdseries I}]{0.1.2.8}.
+Thus \emph{(d)} implies \emph{(e)}.
+
+Finally, suppose \emph{(e)}.
+We may reduce to the affine case
+$X=\Spec(A)$ and $S=\Spec(B)$, where $A$ and $B$ are $k$-algebras.
+The fields $\kres(x_\alpha)$ are the fields of fractions of the
+quotient rings $A/\mathfrak p_\alpha$, where
+$\mathfrak p_\alpha=\mathfrak j_{x_\alpha}$ are the minimal prime
+ideals of $A$.
+Since $\bigcap_\alpha\mathfrak p_\alpha=0$, the algebra $A$ embeds in
+$\prod_\alpha A/\mathfrak p_\alpha$, and hence in
+$\prod_\alpha\kres(x_\alpha)$.
+Likewise, $B$ may be regarded as a subalgebra of a product
+$\prod_\beta L_\beta$ of extensions of $k$.
+It follows that $A\otimes_k B$ embeds in $\left(\prod_\alpha\kres(x_\alpha)\right)
+\otimes_k
+\left(\prod_\beta L_\beta\right)$,
+and this tensor product itself embeds in $\prod_{\alpha,\beta}
+\bigl(\kres(x_\alpha)\otimes_k L_\beta\bigr)$
+(Bourbaki, \emph{Alg.}, chap.~II, 3rd ed., \S~7,
+n\textsuperscript{o}~7, prop.~15).
+By hypothesis the rings
+$\kres(x_\alpha)\otimes_k L_\beta$ are reduced
+\sref{IV.4.3.5}; hence $A\otimes_k B$ is reduced.
+Thus \emph{(e)} implies \emph{(a)}.
+\end{proof}
+
+\begin{definition}[4.6.2]
+\phantomsection
+\label{IV.4.6.2}
+If the equivalent conditions \emph{(a)}--\emph{(e)} of
+\sref{IV.4.6.1} hold, $X$ is said to be \emph{separable}
+(or \emph{geometrically reduced}, or \emph{universally reduced}) over
+$k$.
+A $k$-prescheme $X$ is said to be \emph{geometrically integral} over
+$k$ if, for every extension $K$ of $k$, the prescheme
+$X\otimes_k K$ is integral.
+By \sref{IV.4.6.1}, this is equivalent to saying that $X$ is separable
+and geometrically irreducible over $k$.
+\end{definition}
+
+A commutative $k$-algebra $A$ is said to be \emph{separable} if
+$\Spec(A)$ is separable over $k$; equivalently, for every extension
+$K$ of $k$, the ring $A_{(K)}=A\otimes_k K$ is reduced.
+This definition agrees with that of Bourbaki, \emph{Alg.}, chap.~VIII,
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 69 -----
+\oldpage[IV-2]{69}
+\S~7, n\textsuperscript{o}~5, def.~1, when $A$ has finite rank over
+$k$ (loc.\ cit., corollary to prop.~7), but not in general: a
+$k$-algebra may have nonzero radical even when it is integral.
+
+\begin{corollary}[4.6.3]
+\phantomsection
+\label{IV.4.6.3}
+Let $X$ be an integral $k$-prescheme.
+Then $X$ is geometrically reduced (resp.\ geometrically integral) over
+$k$ if and only if its field of rational functions $\mathrm{R}(X)$ is
+a separable (resp.\ separable and primary) extension of $k$.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \sref{IV.4.5.9} and
+\sref{IV.4.6.1}.
+\end{proof}
+
+\begin{corollary}[4.6.4]
+\phantomsection
+\label{IV.4.6.4}
+Let $X$ be a reduced $k$-prescheme.
+For every separable extension $k'$ of $k$, the prescheme
+$X'=X\otimes_k k'$ is reduced.
+\end{corollary}
+
+\begin{proof}
+Apply the equivalence of \emph{(a)} and \emph{(e)} in
+\sref{IV.4.6.1}, replacing $X$ there by $\Spec(k')$ and $S$ by $X$.
+\end{proof}
+
+\begin{proposition}[4.6.5]
+\phantomsection
+\label{IV.4.6.5}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.6.5.i}
+Let $X$ be a $k$-prescheme and let $K$ be an extension of $k$.
+Then $X$ is geometrically reduced (resp.\ geometrically integral) over
+$k$ if and only if $X\otimes_k K$ is geometrically reduced
+(resp.\ geometrically integral) over $K$.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.6.5.ii}
+Let $X$ and $Y$ be two $k$-preschemes.
+If $X$ and $Y$ are geometrically reduced
+(resp.\ geometrically integral) over $k$, then so is $X\times_k Y$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Assertion~\emph{(i)} is an immediate consequence of the definitions
+and \sref{IV.4.4.1}.
+For the reduced assertion in~\emph{(ii)}, let $\Omega$ be an
+algebraically closed extension of $k$.
+Then $(X\times_k Y)\otimes_k\Omega=X\times_k(Y\otimes_k\Omega)$.
+Since $Y\otimes_k\Omega$ is reduced, the right-hand side is reduced by
+\sref{IV.4.6.1},~a).
+The remainder of~\emph{(ii)} follows from this and
+\sref{IV.4.5.8},~(ii).
+\end{proof}
+
+\begin{proposition}[4.6.6]
+\phantomsection
+\label{IV.4.6.6}
+Let $X$ be a $k$-prescheme of finite type.
+There exists a finite radicial extension $k'$ of $k$ such that
+$(X_{(k')})_{\mathrm{red}}$ is geometrically reduced over $k'$.
+\end{proposition}
+
+\begin{proof}
+Since $X$ is covered by finitely many affine open subsets $U_i$, we
+may reduce to the affine case.
+Indeed, suppose for each $i$ that $k_i$ is a finite radicial extension
+of $k$ such that
+$(U_i\otimes_k k_i)_{\mathrm{red}}$ is geometrically reduced over
+$k_i$.
+We may choose a common finite radicial extension $k'$ of $k$ containing
+all the $k_i$.
+By \sref[I]{I.5.1.8},
+\[
+ (U_i\otimes_k k')_{\mathrm{red}}
+ \simeq
+ (U_i\otimes_k k_i)_{\mathrm{red}}\otimes_{k_i}k',
+\]
+and this is geometrically reduced over $k'$.
+Thus the same holds for $(X\otimes_k k')_{\mathrm{red}}$.
+
+Now let $X=\Spec(A)$, where $A$ is a $k$-algebra of finite type, and
+let $\Omega$ be an algebraic closure of $k$.
+Write $\mathfrak N'$ for the nilradical of $A\otimes_k\Omega$.
+Since $A\otimes_k\Omega$ is Noetherian, $\mathfrak N'$ is generated by
+finitely many elements
+\[
+ y_i=\sum_j x_{ij}\otimes\xi_{ij},
+ \qquad x_{ij}\in A,\quad \xi_{ij}\in\Omega.
+\]
+Let $K$ be a finite subextension of $\Omega$ containing all the
+$\xi_{ij}$, and let $\mathfrak N$ be the ideal of $A\otimes_kK$
+generated by the $y_i$, regarding $A\otimes_kK$ as a subring of
+$A\otimes_k\Omega$.
+The $y_i$ are nilpotent in $A\otimes_kK$.
+Moreover,
+$\mathfrak N\otimes_K\Omega=\mathfrak N'$, and hence $\mathfrak N'\cap(A\otimes_kK)=\mathfrak N$.
+Thus $\mathfrak N$ contains the nilradical of $A\otimes_kK$ and is
+therefore equal to it.
+Since $(A\otimes_k\Omega)/\mathfrak N'
+=\bigl((A\otimes_k K)/\mathfrak N\bigr)\otimes_K\Omega$,
+the prescheme
+$(X\otimes_kK)_{\mathrm{red}}\otimes_K\Omega$ is reduced.
+Consequently $(X_{(K)})_{\mathrm{red}}$ is geometrically reduced over
+$K$ by \sref{IV.4.6.1}.
+
+Replacing $K$ by the quasi-Galois extension of $k$ that it generates
+in $\Omega$, we may further suppose, by \sref[I]{I.5.1.8}, that $K$ is
+quasi-Galois over $k$.
+It is then a separable extension of a finite radicial extension $k'$
+of $k$ (Bourbaki, \emph{Alg.}, chap.~V, \S~10,
+n\textsuperscript{o}~9, prop.~14).
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 70 -----
+\oldpage[IV-2]{70}
+By \sref[I]{I.5.1.8},
+$(X_{(k')})_{\mathrm{red}}\otimes_{k'}K$ is isomorphic to
+$(X_{(K)})_{\mathrm{red}}$, and hence is geometrically reduced.
+It follows from \sref{IV.4.6.5},~(i) that
+$(X_{(k')})_{\mathrm{red}}$ is geometrically reduced.
+\end{proof}
+
+\begin{corollary}[4.6.7]
+\phantomsection
+\label{IV.4.6.7}
+If $K$ is an extension of finite type of $k$, there exists a finite
+radicial extension $k'$ of $k$ such that the residue fields of the
+semilocal ring $K\otimes_k k'$ are separable over $k'$.
+\end{corollary}
+
+\begin{proof}
+Apply \sref{IV.4.6.6} to $X=\Spec(A)$, where $A$ is a $k$-algebra of
+finite type having $K$ as its field of fractions.
+\end{proof}
+
+\begin{corollary}[4.6.8]
+\phantomsection
+\label{IV.4.6.8}
+Let $X$ be a $k$-prescheme of finite type.
+There exists a finite extension $k'$ of $k$ such that
+$(X_{(k')})_{\mathrm{red}}$ is geometrically reduced over $k'$, the
+irreducible components of $X_{(k')}$ are geometrically irreducible,
+and its connected components are geometrically connected.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \sref{IV.4.6.6},
+\sref{IV.4.5.10}, and \sref{IV.4.5.15}.
+\end{proof}
+
+\begin{definition}[4.6.9]
+\phantomsection
+\label{IV.4.6.9}
+Let $k$ be a field, let $X$ be a $k$-prescheme, and let $x\in X$.
+We say that $X$ is \emph{geometrically reduced}
+(or \emph{separable}) (resp.\ \emph{geometrically punctually
+integral}) at $x$ over $k$ if, for every extension $k'$ of $k$ and
+every point $x'$ of $X'=X\otimes_k k'$ above $x$, the prescheme $X'$
+is reduced (resp.\ integral) at $x'$; that is,
+$\sh O_{X',x'}$ is reduced (resp.\ integral).
+
+We say that $X$ is \emph{geometrically punctually integral} if it is
+geometrically punctually integral at all of its points.
+Equivalently, for every extension $k'$ of $k$, all local rings of
+$X\otimes_k k'$ are integral; in that case $X\otimes_k k'$ is also
+said to be \emph{punctually integral}.
+\end{definition}
+
+By \sref{IV.4.6.2}, $X$ is geometrically reduced over $k$ if and only
+if it is geometrically reduced over $k$ at every point $x\in X$.
+
+\begin{proposition}[4.6.10]
+\phantomsection
+\label{IV.4.6.10}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $k'$ be an
+extension of $k$, and let $x'$ be a point of
+$X'=X\otimes_k k'$ with image $x$ in $X$.
+Then $X$ is geometrically reduced
+(resp.\ geometrically punctually integral) at $x$ over $k$ if and only
+if $X'$ has the corresponding property at $x'$ over $k'$.
+In particular, $X$ is geometrically punctually integral over $k$ if
+and only if $X'$ is geometrically punctually integral over $k'$.
+\end{proposition}
+
+\begin{proof}
+It is enough to prove the first assertion.
+Necessity is immediate.
+Suppose conversely that $X'$ is geometrically reduced
+(resp.\ geometrically punctually integral) at $x'$ over $k'$.
+Let $k''$ be an extension of $k$ and let $x''$ be a point of
+$X''=X\otimes_k k''$ above $x$.
+There is a point $z$ of $X'\times_X X''$ projecting to $x'$ and $x''$
+\sref[I]{I.3.4.7}.
+Let $s$ be the image of $z$ in
+$\Spec(k'\otimes_k k'')$ \sref[I]{I.3.4.9}, put
+$K=\kres(s)$, and put $Z=X\otimes_kK$.
+Then $K$ may be regarded as a composite extension of $k'$ and $k''$,
+and $z$ as a point of $Z$ whose images in $X'$ and $X''$ are,
+respectively, $x'$ and $x''$.
+By hypothesis, $\sh O_{Z,z}$ is reduced (resp.\ integral).
+Since $\sh O_{Z,z}$ is a faithfully flat
+$\sh O_{X'',x''}$-module, it follows that $\sh O_{X'',x''}$ is
+reduced (resp.\ integral) \sref[0\textsubscript{\mdseries I}]{0.6.5.1}.
+\end{proof}
+
+\begin{corollary}[4.6.11]
+\phantomsection
+\label{IV.4.6.11}
+Suppose that $k$ is perfect (resp.\ algebraically closed).
+Then $X$ is geometrically reduced
+(resp.\ geometrically punctually integral) at $x$ over $k$ if and
+only if $\sh O_{X,x}$ is reduced (resp.\ integral).
+\end{corollary}
+
+\begin{proof}
+Necessity is immediate.
+Conversely, for every extension $k'$ of $k$, the prescheme
+$\Spec(\sh O_{X,x})\otimes_k k'$ is reduced
+\sref{IV.4.6.4} (resp.\ integral \sref{IV.4.4.4}).
+----- French corrections on page IV-2 69 -----
+[id 12572]
+OLD: réduit
+(resp. géométriquement intègre)
+NEW: réduit
+\textup{(resp.} géométriquement intègre\textup{)}
+FRENCH CONTEXT (corrected): r
+$k$ (\emph{loc. cit.}, cor. de la prop.~7), mais non en général, une $k$-algèbre
+pouvant avoir un radical $\neq0$ même si elle est intègre.
+
+\begin{corollary}[4.6.3]
+\label{IV.2.4.6.3-fr}
+Soit $X$ un $k$-préschéma intègre~; pour que $X$ soit géométriquement réduit
+\textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et il suffit que son corps de
+fonctions rationnelles $\mathrm R(X)$ soit une extension séparable \textup{(resp.}
+séparable et primaire\textup{)} de $k$.
+\end{corollary}
+
+\begin{proof}
+Cela résulte aussitôt de (4.5.9) et (4.6.1).
+\end{proof}
+
+
+
+[id 12573]
+OLD: (resp.
+séparable et primaire)
+NEW: \textup{(resp.}
+séparable et primaire\textup{)}
+FRENCH CONTEXT (corrected): bel{IV.2.4.6.3-fr}
+Soit $X$ un $k$-préschéma intègre~; pour que $X$ soit géométriquement réduit
+\textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et il suffit que son corps de
+fonctions rationnelles $\mathrm R(X)$ soit une extension séparable \textup{(resp.}
+séparable et primaire\textup{)} de $k$.
+\end{corollary}
+
+\begin{proof}
+Cela résulte aussitôt de (4.5.9) et (4.6.1).
+\end{proof}
+
+\begin{corollary}[4.6.4]
+\label{IV.2.4.6.4-fr}
+Soit $X$ un $k$-préschéma réduit. Alors, pour toute extension séparable $k'$ de
+$k$, $X'=X\otimes_k k'$ est réduit.
+
+[id 12574]
+OLD: de a) et e) dans
+NEW: de \emph{a)} et \emph{e)} dans
+FRENCH CONTEXT (corrected): 5.9) et (4.6.1).
+\end{proof}
+
+\begin{corollary}[4.6.4]
+\label{IV.2.4.6.4-fr}
+Soit $X$ un $k$-préschéma réduit. Alors, pour toute extension séparable $k'$ de
+$k$, $X'=X\otimes_k k'$ est réduit.
+\end{corollary}
+
+\begin{proof}
+Il suffit d'appliquer l'équivalence de \emph{a)} et \emph{e)} dans (4.6.1), en remplaçant
+$X$ par $\operatorname{Spec}(k')$ et $S$ par $X$.
+\end{proof}
+
+\begin{proposition}[4.6.5]
+\label{IV.2.4.6.5-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Pour que $X$
+soit géométriqueme
+
+[id 12576]
+OLD: réduit (resp. géométriquement intègre) sur $k$
+NEW: réduit \textup{(resp.} géométriquement intègre\textup{)} sur $k$
+FRENCH CONTEXT (corrected): .6.1), en remplaçant
+$X$ par $\operatorname{Spec}(k')$ et $S$ par $X$.
+\end{proof}
+
+\begin{proposition}[4.6.5]
+\label{IV.2.4.6.5-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Pour que $X$
+soit géométriquement réduit \textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et
+il suffit que $X\otimes_k K$ soit géométriquement réduit \textup{(resp.} géométriquement
+intègre\textup{)} sur $K$.
+\item[\textup{(ii)}] Soient $X$, $Y$ deux $k$-préschémas. Si $X$ et $Y$ sont
+géométriquement réduits \textup{(resp.} géométriquemen
+
+[id 12577]
+OLD: (resp. géométriquement
+intègre)
+NEW: \textup{(resp.} géométriquement
+intègre\textup{)}
+FRENCH CONTEXT (corrected): begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Pour que $X$
+soit géométriquement réduit \textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et
+il suffit que $X\otimes_k K$ soit géométriquement réduit \textup{(resp.} géométriquement
+intègre\textup{)} sur $K$.
+\item[\textup{(ii)}] Soient $X$, $Y$ deux $k$-préschémas. Si $X$ et $Y$ sont
+géométriquement réduits \textup{(resp.} géométriquement intègres\textup{)} sur $k$, il en est de
+même de $X\times_k Y$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+L'as
+
+[id 12578]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): chéma, $K$ une extension de $k$. Pour que $X$
+soit géométriquement réduit \textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et
+il suffit que $X\otimes_k K$ soit géométriquement réduit \textup{(resp.} géométriquement
+intègre\textup{)} sur $K$.
+\item[\textup{(ii)}] Soient $X$, $Y$ deux $k$-préschémas. Si $X$ et $Y$ sont
+géométriquement réduits \textup{(resp.} géométriquement intègres\textup{)} sur $k$, il en est de
+même de $X\times_k Y$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+L'assertion (i) est conséquence tr
+
+[id 12579]
+OLD: (resp. géométriquement intègres)
+NEW: \textup{(resp.} géométriquement intègres\textup{)}
+FRENCH CONTEXT (corrected): ment intègre\textup{)} sur $k$, il faut et
+il suffit que $X\otimes_k K$ soit géométriquement réduit \textup{(resp.} géométriquement
+intègre\textup{)} sur $K$.
+\item[\textup{(ii)}] Soient $X$, $Y$ deux $k$-préschémas. Si $X$ et $Y$ sont
+géométriquement réduits \textup{(resp.} géométriquement intègres\textup{)} sur $k$, il en est de
+même de $X\times_k Y$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+L'assertion (i) est conséquence triviale des définitions et de (4.4.1). Pour
+démontrer la partie de l'assertion de (ii) concernant la séparabilité, on observe
+que si
+
+[id 12582]
+OLD: (4.6.1, a))
+NEW: (4.6.1, \emph{a)})
+FRENCH CONTEXT (corrected): nt la séparabilité, on observe
+que si $\Omega$ est une extension algébriquement close de $k$, on a
+$(X\times_k Y)\otimes_k\Omega=X\times_k(Y\otimes_k\Omega)$~;
+comme $Y\otimes_k\Omega$ est réduit, il en est de même de
+$X\times_k(Y\otimes_k\Omega)$ en vertu de (4.6.1, \emph{a)}). Le reste de l'assertion
+(ii) résulte de ce qui précède et de (4.5.8, (ii)).
+\end{proof}
+
+\begin{proposition}[4.6.6]
+\label{IV.2.4.6.6-fr}
+Soit $X$ un $k$-préschéma de type fini. Il existe une extension radicielle finie
+$k'$ de $k$ telle que $(X_{(k')})_{\mat
+
+[id 12575]
+OLD: \item[(i)]
+NEW: \item[\textup{(i)}]
+FRENCH CONTEXT (corrected):  réduit.
+\end{corollary}
+
+\begin{proof}
+Il suffit d'appliquer l'équivalence de \emph{a)} et \emph{e)} dans (4.6.1), en remplaçant
+$X$ par $\operatorname{Spec}(k')$ et $S$ par $X$.
+\end{proof}
+
+\begin{proposition}[4.6.5]
+\label{IV.2.4.6.5-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Pour que $X$
+soit géométriquement réduit \textup{(resp.} géométriquement intègre\textup{)} sur $k$, il faut et
+il suffit que $X\otimes_k K$ soit géométriquement réduit \textup{(resp.} géométriquement
+intè
+
+=================== PAGE IV-2 70 ===================
+----- (English page IV-2 69: shown above in this file) -----
+----- (English page IV-2 70: shown above in this file) -----
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 71 -----
+\oldpage[IV-2]{71}
+For every point $x'$ of $X'=X\otimes_k k'$ above $x$, the local ring
+$\sh O_{X',x'}$ is isomorphic to a local ring of
+$\Spec(\sh O_{X,x})\otimes_k k'$, and is therefore reduced
+(resp.\ integral).
+\end{proof}
+
+\begin{proposition}[4.6.12]
+\phantomsection
+\label{IV.4.6.12}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $x\in X$, and let
+$\Omega$ be a perfect extension of $k$.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.6.12.a}
+$X$ is geometrically reduced over $k$ at $x$; that is, for every
+extension $k'$ of $k$ and every point $x'$ of
+$X'=X\otimes_k k'$ above $x$, the local ring
+$\sh O_{X',x'}$ is reduced;
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.6.12.b}
+the prescheme $X\otimes_k\Omega$ is reduced at one point above $x$;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.6.12.c}
+for every finite radicial extension $k'$ of $k$, the prescheme
+$X'=X\otimes_k k'$ is reduced at the unique point above $x$;
+
+\item[\rm(d)]
+\phantomsection
+\label{IV.4.6.12.d}
+the prescheme $\Spec(\sh O_{X,x})$ is geometrically reduced over $k$;
+
+\item[\rm(e)]
+\phantomsection
+\label{IV.4.6.12.e}
+the local ring $\sh O_{X,x}$ is reduced and, for every irreducible
+component $Z$ of $X$ containing $x$, with generic point $z$, the field
+$\kres(z)$ is a \emph{separable} extension of $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The implications
+\emph{(d)}$\Rightarrow$\emph{(a)}$\Rightarrow$\emph{(b)}
+$\Rightarrow$\emph{(c)} are immediate, using for the last implication
+\sref{IV.4.6.10}, \sref{IV.4.6.11}, and the fact that every radicial
+extension of $k$ is isomorphic to a subextension of $\Omega$.
+
+Suppose \emph{(c)}.
+By \sref{IV.4.6.1}, it suffices to show that
+$\sh O_{X,x}\otimes_k k'$ is reduced for every finite radicial
+extension $k'$ of $k$.
+This ring is the local ring of $X'=X\otimes_k k'$ at the unique point
+$x'$ above $x$ \sref[I]{I.3.5.8} \sref[I]{I.3.5.7}, and is reduced by
+\emph{(c)}.
+Thus \emph{(c)} implies \emph{(d)}.
+
+Finally, the equivalence of \emph{(d)} and \emph{(e)} follows from the
+equivalence of \emph{(b)} and \emph{(e)} in \sref{IV.4.6.1}, since the
+irreducible components of $X$ containing $x$ correspond bijectively
+to the irreducible components of $\Spec(\sh O_{X,x})$
+\sref[I]{I.2.4.2}.
+\end{proof}
+
+\begin{corollary}[4.6.13]
+\phantomsection
+\label{IV.4.6.13}
+Under the hypotheses of \sref{IV.4.6.12}, suppose in addition that
+$X$ is locally Noetherian.
+Then conditions \emph{(a)}--\emph{(e)} of \sref{IV.4.6.12} are also
+equivalent to:
+\begin{enumerate}
+\item[\rm(f)]
+\phantomsection
+\label{IV.4.6.13.f}
+there exists an open neighbourhood $U$ of $x$ that is geometrically
+reduced over $k$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Condition~\emph{(f)} plainly implies that $X$ is geometrically reduced
+at $x$ over $k$.
+Conversely, suppose that $X$ is geometrically reduced at $x$.
+Since $\sh O_{X,x}$ is reduced, there is a reduced open neighbourhood
+$U$ of $x$ in $X$ \sref[I]{I.6.1.13}.
+After shrinking $U$, we may further suppose that it meets no
+irreducible component of $X$ that does not contain $x$.
+Condition~\emph{(e)} of \sref{IV.4.6.12}, together with
+condition~\emph{(e)} of \sref{IV.4.6.1}, then shows that $U$ is
+geometrically reduced over $k$.
+\end{proof}
+
+It follows from \sref{IV.4.6.13} that, when $X$ is locally Noetherian,
+the set of points $x\in X$ at which $X$ is geometrically reduced over
+$k$ is \emph{open}; it is the largest open subset of $X$ that is
+geometrically reduced over $k$.
+
+\begin{env}[4.6.14]
+\phantomsection
+\label{IV.4.6.14}
+It follows from \sref{IV.4.6.10} and \sref{IV.4.6.11} that, if
+$\Omega$ is an algebraically closed extension of $k$, saying that $X$
+is geometrically punctually integral at $x$ is equivalent to saying
+that $X\otimes_k\Omega$ is integral at \emph{one} point above $x$.
+
+For $X$ to be geometrically punctually integral at $x$, it is
+necessary that $X$ be integral at $x$ and that, if $z$ is the generic
+point of the unique irreducible component of $X$ containing $x$, the
+field $\kres(z)$ be a separable extension of $k$.
+This follows from \sref{IV.4.6.10}.
+But these conditions \emph{are not sufficient}, as follows from the
+example \sref{IV.4.5.12},~(ii).
+A sufficient but not necessary condition is that $X$ be geometrically
+reduced at $x$ and belong to only one irreducible component of $X$,
+and that this component be \emph{geometrically irreducible}.
+----- French corrections on page IV-2 70 -----
+[id 12699]
+OLD: (resp.
+\emph{géométriquement ponctuellement intègre})
+NEW: \textup{(resp.}
+\emph{géométriquement ponctuellement intègre})
+FRENCH CONTEXT (corrected): oof}
+Cela résulte aussitôt de (4.6.6), de (4.5.10) et (4.5.15).
+\end{proof}
+
+\begin{definition}[4.6.9]
+\label{IV.2.4.6.9-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $x$ un point de $X$. On dit que $X$
+est \emph{géométriquement réduit} (ou \emph{séparable}) \textup{(resp.}
+\emph{géométriquement ponctuellement intègre}) au point $x$ sur $k$, si, pour
+toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $X'$ est réduit \textup{(resp.} intègre) en $x'$
+\textup{(i.e.,} $\mathcal O_{X',x'}$ est réduit \textup{(resp.} intègre)). On dit que $X$ es
+
+[id 12700]
+OLD: réduit (resp. intègre) en $x'$
+NEW: réduit \textup{(resp.} intègre) en $x'$
+FRENCH CONTEXT (corrected): n dit que $X$
+est \emph{géométriquement réduit} (ou \emph{séparable}) \textup{(resp.}
+\emph{géométriquement ponctuellement intègre}) au point $x$ sur $k$, si, pour
+toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $X'$ est réduit \textup{(resp.} intègre) en $x'$
+\textup{(i.e.,} $\mathcal O_{X',x'}$ est réduit \textup{(resp.} intègre)). On dit que $X$ est
+\emph{géométriquement ponctuellement intègre} si $X$ est géométriquement
+ponctuellement intègre en tous ses points, autrement dit si, pour toute
+extension $k'$ de $k
+
+[id 12701]
+OLD: (i.e., $\mathcal O
+NEW: \textup{(i.e.,} $\mathcal O
+FRENCH CONTEXT (corrected): réduit} (ou \emph{séparable}) \textup{(resp.}
+\emph{géométriquement ponctuellement intègre}) au point $x$ sur $k$, si, pour
+toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $X'$ est réduit \textup{(resp.} intègre) en $x'$
+\textup{(i.e.,} $\mathcal O_{X',x'}$ est réduit \textup{(resp.} intègre)). On dit que $X$ est
+\emph{géométriquement ponctuellement intègre} si $X$ est géométriquement
+ponctuellement intègre en tous ses points, autrement dit si, pour toute
+extension $k'$ de $k$, tous les anneaux locaux d
+
+[id 12702]
+OLD: réduit (resp. intègre)). On dit
+NEW: réduit \textup{(resp.} intègre)). On dit
+FRENCH CONTEXT (corrected): sp.}
+\emph{géométriquement ponctuellement intègre}) au point $x$ sur $k$, si, pour
+toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $X'$ est réduit \textup{(resp.} intègre) en $x'$
+\textup{(i.e.,} $\mathcal O_{X',x'}$ est réduit \textup{(resp.} intègre)). On dit que $X$ est
+\emph{géométriquement ponctuellement intègre} si $X$ est géométriquement
+ponctuellement intègre en tous ses points, autrement dit si, pour toute
+extension $k'$ de $k$, tous les anneaux locaux de $X\otimes_k k'$ sont intègres
+\textup{(auquel cas on
+
+[id 12703]
+OLD: (auquel cas on dit aussi que $X\otimes_k k'$ est ponctuellement intègre).
+NEW: \textup{(auquel cas on dit aussi que $X\otimes_k k'$ est} ponctuellement intègre\textup{)}.
+FRENCH CONTEXT (corrected): sp.} intègre)). On dit que $X$ est
+\emph{géométriquement ponctuellement intègre} si $X$ est géométriquement
+ponctuellement intègre en tous ses points, autrement dit si, pour toute
+extension $k'$ de $k$, tous les anneaux locaux de $X\otimes_k k'$ sont intègres
+\textup{(auquel cas on dit aussi que $X\otimes_k k'$ est} ponctuellement intègre\textup{)}.
+\end{definition}
+
+Notons que, pour que $X$ soit géométriquement réduit sur $k$ (4.6.2), il faut
+et il suffit qu'il soit géométriquement réduit sur $k$ en tout point $x\in X$.
+
+\begin{proposition}[4.6.10]
+\label{IV.2.4.6.10-fr}
+Soient $k$ un corps, $X$ un $k$-
+
+[id 12704]
+OLD: (resp. géométriquement ponctuellement intègre) en $x$
+NEW: \textup{(resp.} géométriquement ponctuellement intègre) en $x$
+FRENCH CONTEXT (corrected): uit sur $k$ en tout point $x\in X$.
+
+\begin{proposition}[4.6.10]
+\label{IV.2.4.6.10-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $k'$ une extension de $k$, $x'$ un
+point de $X'=X\otimes_k k'$, $x$ son image dans $X$. Pour que $X$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre) en $x$
+sur $k$, il faut et il suffit que $X'$ le soit en $x'$ sur $k'$. En particulier,
+pour que $X$ soit géométriquement ponctuellement intègre sur $k$, il faut et il
+suffit que $X'$ soit géométriquement ponctuellement intègre sur $k'$.
+\end{proposition}
+
+\begin{pr
+
+[id 12709]
+OLD: parfait (resp. algébriquement clos)
+NEW: parfait \textup{(resp.} algébriquement clos)
+FRENCH CONTEXT (corrected): , et comme
+$\mathcal O_{Z,z}$ est un $\mathcal O_{X'',x''}$-module fidèlement plat, il
+s'ensuit que $\mathcal O_{X'',x''}$ est réduit (resp. intègre)
+$(\mathbf{0}_{\mathrm I},6.5.1)$.
+\end{proof}
+
+\begin{corollary}[4.6.11]
+\label{IV.2.4.6.11-fr}
+Supposons $k$ parfait \textup{(resp.} algébriquement clos). Pour que $X$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre) au point
+$x$ sur $k$, il faut et il suffit que $\mathcal O_{X,x}$ soit réduit \textup{(resp.}
+intègre).
+\end{corollary}
+
+\begin{proof}
+C'est évidemment nécessair
+
+[id 12710]
+OLD: (resp. géométriquement ponctuellement intègre) au point
+$x$ sur
+NEW: \textup{(resp.} géométriquement ponctuellement intègre) au point
+$x$ sur
+FRENCH CONTEXT (corrected): s'ensuit que $\mathcal O_{X'',x''}$ est réduit (resp. intègre)
+$(\mathbf{0}_{\mathrm I},6.5.1)$.
+\end{proof}
+
+\begin{corollary}[4.6.11]
+\label{IV.2.4.6.11-fr}
+Supposons $k$ parfait \textup{(resp.} algébriquement clos). Pour que $X$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre) au point
+$x$ sur $k$, il faut et il suffit que $\mathcal O_{X,x}$ soit réduit \textup{(resp.}
+intègre).
+\end{corollary}
+
+\begin{proof}
+C'est évidemment nécessaire. Inversement, si cette condition est remplie,
+alors, pour toute extension $k'$ de $k$,
+$\operatorname{Spec}(\math
+
+[id 12711]
+OLD: soit réduit (resp.
+intègre).
+NEW: soit réduit \textup{(resp.}
+intègre).
+FRENCH CONTEXT (corrected): lary}[4.6.11]
+\label{IV.2.4.6.11-fr}
+Supposons $k$ parfait \textup{(resp.} algébriquement clos). Pour que $X$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre) au point
+$x$ sur $k$, il faut et il suffit que $\mathcal O_{X,x}$ soit réduit \textup{(resp.}
+intègre).
+\end{corollary}
+
+\begin{proof}
+C'est évidemment nécessaire. Inversement, si cette condition est remplie,
+alors, pour toute extension $k'$ de $k$,
+$\operatorname{Spec}(\mathcal O_{X,x})\otimes_k k'$ est réduit (4.6.4) (resp.
+intègre (4.4.4))~;
+\oldpage[IV-2]{7
+
+=================== PAGE IV-2 71 ===================
+----- (English page IV-2 70: shown above in this file) -----
+----- (English page IV-2 71: shown above in this file) -----
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 72 -----
+\oldpage[IV-2]{72}
+If in addition $X$ is locally Noetherian, then $x$ has an open
+neighbourhood in $X$ that is \emph{geometrically integral}.
+\end{env}
+
+Recall that a \emph{locally Noetherian} prescheme that is punctually integral
+is \emph{locally integral} \sref[I]{I.6.1.13}.
+Thus, if a $k$-prescheme $X$ locally of finite type over $k$ is
+geometrically punctually integral over $k$, then
+$X\otimes_k k'$ is \emph{locally integral} for every extension $k'$ of $k$.
+In this case $X$ is also said to be
+\emph{geometrically locally integral}.
+
+\begin{proposition}[4.6.15]
+\phantomsection
+\label{IV.4.6.15}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.6.15.i}
+Let $k$ be a field and let $X$ be a $k$-prescheme of finite type.
+Then $X$ is geometrically punctually integral if and only if it is
+geometrically reduced and its geometric number of irreducible
+components equals its geometric number of connected components.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.6.15.ii}
+Let $X$ be a prescheme locally of finite type over $k$.
+If $X$ is geometrically punctually integral at $x$, then $x$ has an
+open neighbourhood $U$ that is geometrically punctually integral.
+Equivalently, the set of points $x\in X$ at which $X$ is geometrically
+punctually integral is open in $X$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[\rm(i)]
+Let $\Omega$ be an algebraically closed extension of $k$.
+The prescheme $X_{(\Omega)}$ is punctually integral
+(equivalently, locally integral, since it is Noetherian) if and only
+if it is reduced and the number of its connected components equals
+the number of its irreducible components \sref[I]{I.6.1.10}.
+Now apply \sref{IV.4.5.1}, \sref{IV.4.6.1}, and the first observation
+in \sref{IV.4.6.14}.
+
+\item[\rm(ii)]
+The question is local on $X$, so we may reduce to the case in which
+$X$ is of finite type over $k$.
+By \sref{IV.4.6.13}, $x$ has a geometrically reduced open
+neighbourhood; hence we may suppose that $X$ itself is geometrically
+reduced.
+By \sref{IV.4.6.8}, there is a finite extension $k'$ of $k$ such that
+$X'=X\otimes_k k'$ is reduced and its irreducible components are
+geometrically irreducible.
+Let $p:X'\to X$ be the canonical projection, which is finite and
+surjective, and let $x'_j$ ($1\leq j\leq r$) be the points of
+$p^{-1}(x)$.
+By hypothesis $X'$ is integral at each $x'_j$, so each $x'_j$ has an
+integral open neighbourhood $V'_j$ in $X'$.
+Since $p$ is closed \sref[II]{II.6.1.10}, there is an open
+neighbourhood $U$ of $x$ such that $p^{-1}(U)$ is contained in
+$\bigcup_jV'_j$.
+Thus $p^{-1}(U)$ is integral at every point, and hence locally
+integral.
+Its irreducible components are consequently open and pairwise
+disjoint; since they are geometrically irreducible
+\sref{IV.4.5.9}, assertion~\emph{(i)} shows that
+$p^{-1}(U)=U\otimes_k k'$ is geometrically punctually integral.
+By definition the same is true of $U$.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}[4.6.16]
+\phantomsection
+\label{IV.4.6.16}
+Let $k$ be a field, let $X$ be a locally Noetherian $k$-prescheme,
+and let $\sh F$ be a coherent $\sh O_X$-Module.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.6.16.a}
+for every extension of finite type $k'$ of $k$, if
+$X'=X\otimes_k k'$, then
+$\sh F'=\sh F\otimes_k k'$ is a reduced
+$\sh O_{X'}$-Module \sref{IV.3.2.2};
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.6.16.b}
+for every finite radicial extension $k'$ of $k$, the Module $\sh F'$
+is a reduced $\sh O_{X'}$-Module;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.6.16.c}
+$\sh F$ is reduced and, if $\sh J$ is the Ideal of $\sh O_X$
+annihilating $\sh F$, the closed sub-prescheme defined by $\sh J$ is
+geometrically reduced over $k$.
+\end{enumerate}
+If, moreover, $X$ is locally of finite type over $k$, these conditions
+are also equivalent to:
+----- French corrections on page IV-2 71 -----
+[id 12714]
+OLD: un corps~; $X$
+NEW: un corps, $X$
+FRENCH CONTEXT (corrected): '$ de $X'=X\otimes_k k'$ au-dessus de $x$,
+$\mathcal O_{X',x'}$, qui est isomorphe à un anneau local de
+$\operatorname{Spec}(\mathcal O_{X,x})\otimes_k k'$, est réduit (resp.
+intègre).
+\end{proof}
+
+\begin{proposition}[4.6.12]
+\label{IV.2.4.6.12-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $x$ un point de $X$, $\Omega$ une
+extension parfaite de $k$. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement réduit sur $k$ au point $x$, autrement dit,
+pour toute extension $k'$ de $
+
+[id 12715]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected):  est réduit (resp.
+intègre).
+\end{proof}
+
+\begin{proposition}[4.6.12]
+\label{IV.2.4.6.12-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $x$ un point de $X$, $\Omega$ une
+extension parfaite de $k$. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement réduit sur $k$ au point $x$, autrement dit,
+pour toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $\mathcal O_{X',x'}$ est réduit.
+\item[\textup{b)}] Le préschéma $X\otimes_k\Omega$ est réduit en u
+
+[id 12716]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement réduit sur $k$ au point $x$, autrement dit,
+pour toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $\mathcal O_{X',x'}$ est réduit.
+\item[\textup{b)}] Le préschéma $X\otimes_k\Omega$ est réduit en un point au-dessus de
+$x$.
+\item[\textup{c)}] Pour toute extension finie radicielle $k'$ de $k$,
+$X'=X\otimes_k k'$ est réduit en l'unique point au-dessus de $x$.
+\item[\textup{d)}] $\operatorname{Spec}(\mathcal O
+
+[id 12717]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): éduit sur $k$ au point $x$, autrement dit,
+pour toute extension $k'$ de $k$ et tout point $x'$ de
+$X'=X\otimes_k k'$ au-dessus de $x$, $\mathcal O_{X',x'}$ est réduit.
+\item[\textup{b)}] Le préschéma $X\otimes_k\Omega$ est réduit en un point au-dessus de
+$x$.
+\item[\textup{c)}] Pour toute extension finie radicielle $k'$ de $k$,
+$X'=X\otimes_k k'$ est réduit en l'unique point au-dessus de $x$.
+\item[\textup{d)}] $\operatorname{Spec}(\mathcal O_{X,x})$ est géométriquement réduit
+sur $k$.
+\item[\textup{e)}] $\mathcal O_{X,x}$ est rédui
+
+[id 12718]
+OLD: \item[d)]
+NEW: \item[\textup{d)}]
+FRENCH CONTEXT (corrected): \mathcal O_{X',x'}$ est réduit.
+\item[\textup{b)}] Le préschéma $X\otimes_k\Omega$ est réduit en un point au-dessus de
+$x$.
+\item[\textup{c)}] Pour toute extension finie radicielle $k'$ de $k$,
+$X'=X\otimes_k k'$ est réduit en l'unique point au-dessus de $x$.
+\item[\textup{d)}] $\operatorname{Spec}(\mathcal O_{X,x})$ est géométriquement réduit
+sur $k$.
+\item[\textup{e)}] $\mathcal O_{X,x}$ est réduit, et pour toute composante irréductible
+$Z$ de $X$ contenant $x$, de point générique $z$, $\boldsymbol{k}(z)$ est une extension
+\emph{s
+
+[id 12719]
+OLD: \item[e)]
+NEW: \item[\textup{e)}]
+FRENCH CONTEXT (corrected): n un point au-dessus de
+$x$.
+\item[\textup{c)}] Pour toute extension finie radicielle $k'$ de $k$,
+$X'=X\otimes_k k'$ est réduit en l'unique point au-dessus de $x$.
+\item[\textup{d)}] $\operatorname{Spec}(\mathcal O_{X,x})$ est géométriquement réduit
+sur $k$.
+\item[\textup{e)}] $\mathcal O_{X,x}$ est réduit, et pour toute composante irréductible
+$Z$ de $X$ contenant $x$, de point générique $z$, $\boldsymbol{k}(z)$ est une extension
+\emph{séparable} de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les implications \emph{d)} $
+
+[id 12721]
+OLD: séparable de $k$.
+NEW: \emph{séparable} de $k$.
+FRENCH CONTEXT (corrected): up{d)}] $\operatorname{Spec}(\mathcal O_{X,x})$ est géométriquement réduit
+sur $k$.
+\item[\textup{e)}] $\mathcal O_{X,x}$ est réduit, et pour toute composante irréductible
+$Z$ de $X$ contenant $x$, de point générique $z$, $\boldsymbol{k}(z)$ est une extension
+\emph{séparable} de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les implications \emph{d)} $\Rightarrow$ \emph{a)} $\Rightarrow$ \emph{b)} $\Rightarrow$ \emph{c)} sont
+immédiates, en tenant compte pour la dernière de (4.6.10), (4.6.11) et de ce
+que toute extension radiciell
+
+[id 12722]
+OLD: Les implications d) $\Rightarrow$ a) $\Rightarrow$ b) $\Rightarrow$ c) sont
+NEW: Les implications \emph{d)} $\Rightarrow$ \emph{a)} $\Rightarrow$ \emph{b)} $\Rightarrow$ \emph{c)} sont
+FRENCH CONTEXT (corrected): 
+sur $k$.
+\item[\textup{e)}] $\mathcal O_{X,x}$ est réduit, et pour toute composante irréductible
+$Z$ de $X$ contenant $x$, de point générique $z$, $\boldsymbol{k}(z)$ est une extension
+\emph{séparable} de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les implications \emph{d)} $\Rightarrow$ \emph{a)} $\Rightarrow$ \emph{b)} $\Rightarrow$ \emph{c)} sont
+immédiates, en tenant compte pour la dernière de (4.6.10), (4.6.11) et de ce
+que toute extension radicielle de $k$ est isomorphe à une sous-extension de
+$\Omega$. Prouvons que \emph{c)} implique \emph{d)}. Il suffit de montrer que pour toute
+extension radicie
+
+[id 12723]
+OLD: Prouvons que c) implique d).
+NEW: Prouvons que \emph{c)} implique \emph{d)}.
+FRENCH CONTEXT (corrected): lications \emph{d)} $\Rightarrow$ \emph{a)} $\Rightarrow$ \emph{b)} $\Rightarrow$ \emph{c)} sont
+immédiates, en tenant compte pour la dernière de (4.6.10), (4.6.11) et de ce
+que toute extension radicielle de $k$ est isomorphe à une sous-extension de
+$\Omega$. Prouvons que \emph{c)} implique \emph{d)}. Il suffit de montrer que pour toute
+extension radicielle finie $k'$ de $k$, $\mathcal O_{X,x}\otimes_k k'$ est
+réduit (4.6.1)~; or cet anneau est l'anneau local de $X'=X\otimes_k k'$ en
+l'unique point $x'$ de $X'$ au-dessus de $x$ (\textbf{I}, 3.5.8 et 3.5.7)
+
+[id 12725]
+OLD: l'hypothèse c).
+NEW: l'hypothèse \emph{c)}.
+FRENCH CONTEXT (corrected): te
+extension radicielle finie $k'$ de $k$, $\mathcal O_{X,x}\otimes_k k'$ est
+réduit (4.6.1)~; or cet anneau est l'anneau local de $X'=X\otimes_k k'$ en
+l'unique point $x'$ de $X'$ au-dessus de $x$ (\textbf{I}, 3.5.8 et 3.5.7)~; il est donc
+réduit en vertu de l'hypothèse \emph{c)}. Enfin, l'équivalence de \emph{d)} et de \emph{e)}
+résulte de l'équivalence de \emph{b)} et \emph{e)} dans (4.6.1), puisque les composantes
+irréductibles de $X$ contenant $x$ correspondent biunivoquement aux composantes
+irréductibles de $\operatorname{Spec}(\m
+
+[id 12726]
+OLD: de d) et de e)
+NEW: de \emph{d)} et de \emph{e)}
+FRENCH CONTEXT (corrected): \mathcal O_{X,x}\otimes_k k'$ est
+réduit (4.6.1)~; or cet anneau est l'anneau local de $X'=X\otimes_k k'$ en
+l'unique point $x'$ de $X'$ au-dessus de $x$ (\textbf{I}, 3.5.8 et 3.5.7)~; il est donc
+réduit en vertu de l'hypothèse \emph{c)}. Enfin, l'équivalence de \emph{d)} et de \emph{e)}
+résulte de l'équivalence de \emph{b)} et \emph{e)} dans (4.6.1), puisque les composantes
+irréductibles de $X$ contenant $x$ correspondent biunivoquement aux composantes
+irréductibles de $\operatorname{Spec}(\mathcal O_{X,x})$ (\textbf{I}, 2.4.2).
+\end{proof}
+
+
+[id 12727]
+OLD: de b) et e) dans
+NEW: de \emph{b)} et \emph{e)} dans
+FRENCH CONTEXT (corrected): cet anneau est l'anneau local de $X'=X\otimes_k k'$ en
+l'unique point $x'$ de $X'$ au-dessus de $x$ (\textbf{I}, 3.5.8 et 3.5.7)~; il est donc
+réduit en vertu de l'hypothèse \emph{c)}. Enfin, l'équivalence de \emph{d)} et de \emph{e)}
+résulte de l'équivalence de \emph{b)} et \emph{e)} dans (4.6.1), puisque les composantes
+irréductibles de $X$ contenant $x$ correspondent biunivoquement aux composantes
+irréductibles de $\operatorname{Spec}(\mathcal O_{X,x})$ (\textbf{I}, 2.4.2).
+\end{proof}
+
+\begin{corollary}[4.6.13]
+\label{IV.2.4.6.13-fr}
+Sous l
+
+[id 12731]
+OLD: \item[f)]
+NEW: \item[\textup{f)}]
+FRENCH CONTEXT (corrected): 
+\end{proof}
+
+\begin{corollary}[4.6.13]
+\label{IV.2.4.6.13-fr}
+Sous les hypothèses de \textup{(4.6.12)}, supposons de plus que $X$ soit localement
+noethérien. Alors les conditions a) à e) de \textup{(4.6.12)} équivalent aussi à la
+suivante~:
+\begin{enumerate}
+\item[\textup{f)}] Il existe un voisinage ouvert $U$ de $x$ qui est géométriquement
+réduit sur $k$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+En effet, cette condition implique trivialement que $X$ est géométriquement
+réduit au point $x$ sur $k$. Inversement, s'il en est a
+
+[id 12733]
+OLD: (4.6.12, e))
+NEW: (4.6.12, \emph{e)})
+FRENCH CONTEXT (corrected): ,x}$ est réduit, il existe un voisinage ouvert $U$ de $x$ dans
+$X$ qui est réduit (\textbf{I}, 6.1.13)~; prenant $U$ assez petit, on peut en outre
+supposer que $U$ ne rencontre aucune des composantes irréductibles de $X$ ne
+contenant pas $x$. Alors le critère (4.6.12, \emph{e)}) prouve que $U$ est
+géométriquement réduit sur $k$, compte tenu du critère (4.6.1, \emph{e)}).
+\end{proof}
+
+Il résulte de (4.6.13) que lorsque $X$ est localement noethérien, l'ensemble
+des $x\in X$ où $X$ est géométriquement réduit sur $k$ est \emph{ouvert}, e
+
+[id 12734]
+OLD: (4.6.1, e))
+NEW: (4.6.1, \emph{e)})
+FRENCH CONTEXT (corrected):  6.1.13)~; prenant $U$ assez petit, on peut en outre
+supposer que $U$ ne rencontre aucune des composantes irréductibles de $X$ ne
+contenant pas $x$. Alors le critère (4.6.12, \emph{e)}) prouve que $U$ est
+géométriquement réduit sur $k$, compte tenu du critère (4.6.1, \emph{e)}).
+\end{proof}
+
+Il résulte de (4.6.13) que lorsque $X$ est localement noethérien, l'ensemble
+des $x\in X$ où $X$ est géométriquement réduit sur $k$ est \emph{ouvert}, et
+c'est le plus grand ouvert de $X$ qui soit géométriquement réduit sur $k$.
+
+\begin{env}[4.6
+
+[id 12735]
+OLD: intègre en un point
+NEW: intègre en \emph{un} point
+FRENCH CONTEXT (corrected): gin{env}[4.6.14]
+\label{IV.2.4.6.14-fr}
+Il résulte de (4.6.10) et (4.6.11) que si $\Omega$ est une extension
+algébriquement close de $k$, il revient au même de dire que $X$ est
+géométriquement ponctuellement intègre au point $x$, ou que $X\otimes_k\Omega$
+est intègre en \emph{un} point au-dessus de $x$.
+
+Pour que $X$ soit géométriquement ponctuellement intègre au point $x$, il est
+nécessaire que $X$ soit intègre au point $x$, et que si $z$ est le point
+générique de l'unique composante irréductible de $X$ contenant $x$, $\boldsymbol{k}(z)$ s
+
+=================== PAGE IV-2 72 ===================
+----- (English page IV-2 71: shown above in this file) -----
+----- (English page IV-2 72: shown above in this file) -----
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 73 -----
+\oldpage[IV-2]{73}
+\begin{enumerate}
+\item[\rm(d)]
+\phantomsection
+\label{IV.4.6.16.d}
+for every extension $k'$ of $k$
+(or for one algebraically closed extension $k'$ of $k$), the Module
+$\sh F'$ is a reduced $\sh O_{X'}$-Module.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that \emph{(a)} implies \emph{(b)}.
+Condition~\emph{(b)} first implies that $\sh F$ is reduced.
+By \sref{IV.3.2.3}, this means the following.
+If $Y$ is the closed sub-prescheme of $X$ defined by the coherent
+Ideal $\sh J$ annihilating $\sh F$, then $Y$ is reduced and there is a
+coherent torsion-free $\sh O_Y$-Module $\sh G$, of rank~$1$ on every
+irreducible component of $Y$, such that
+$j_*(\sh G)=\sh F$, where $j:Y\to X$ is the canonical immersion.
+
+For every extension $k'$ of $k$, the annihilator of $\sh F'$ is
+$\sh J'=\sh J\otimes_k k'$, since the projection $X'\to X$ is flat
+\sref{IV.2.1.11}.
+The closed sub-prescheme of $X'$ defined by $\sh J'$ is
+$Y'=Y\otimes_k k'$.
+If $j':Y'\to X'$ is the canonical immersion and
+$\sh G'=\sh G\otimes_k k'$, then
+$\sh F'=j'_*(\sh G')$.
+For every extension $k'$ for which $X'$ is locally Noetherian, the
+Module $\sh F'$ has no embedded associated prime cycle
+\sref{IV.4.2.7}.
+Moreover, every maximal point $y'$ of $Y'$ lies above a maximal point
+$y$ of $Y$; since
+$\sh G_y\simeq\sh O_{Y,y}$, one has
+$\sh G'_{y'}\simeq\sh O_{Y',y'}$.
+Consequently, by \sref{IV.3.2.3}, when $X'$ is locally Noetherian,
+$\sh F'$ is reduced if and only if $Y'$ is reduced.
+
+It now follows from conditions~\emph{(d)} and~\emph{(b)} of
+\sref{IV.4.6.1} that \emph{(b)} implies \emph{(c)} and
+\emph{(c)} implies \emph{(a)}.
+In~\emph{(a)}, the finite-type hypothesis on $k'/k$ serves only to
+ensure that $X'$ is locally Noetherian.
+When $X$ is locally of finite type over $k$, the prescheme $X'$ is
+locally Noetherian for every extension $k'$ of $k$; this proves the
+equivalence of~\emph{(d)} with the other conditions in that case.
+\end{proof}
+
+\begin{definition}[4.6.17]
+\phantomsection
+\label{IV.4.6.17}
+When $\sh F$ satisfies the equivalent conditions of
+\sref{IV.4.6.16}, it is said to be \emph{geometrically reduced} over
+$k$, or \emph{separable} over $k$.
+\end{definition}
+
+\begin{proposition}[4.6.18]
+\phantomsection
+\label{IV.4.6.18}
+Let $k$ be a field, let $X$ be a locally Noetherian $k$-prescheme,
+and let $\sh F$ be a coherent $\sh O_X$-Module.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.6.18.a}
+for every extension of finite type $k'$ of $k$, if
+$X'=X\otimes_k k'$, then
+$\sh F'=\sh F\otimes_k k'$ is an integral
+$\sh O_{X'}$-Module \sref{IV.3.2.4};
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.6.18.b}
+for every finite extension $k'$ of $k$, the Module $\sh F'$ is an
+integral $\sh O_{X'}$-Module;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.6.18.c}
+$\sh F$ is reduced (or integral) and, if $\sh J$ is the Ideal of
+$\sh O_X$ annihilating $\sh F$, the closed sub-prescheme defined by
+$\sh J$ is geometrically integral over $k$.
+\end{enumerate}
+If, moreover, $X$ is locally of finite type over $k$, these conditions
+are also equivalent to:
+\begin{enumerate}
+\item[\rm(d)]
+\phantomsection
+\label{IV.4.6.18.d}
+for every extension $k'$ of $k$
+(or for one algebraically closed extension $k'$ of $k$), the Module
+$\sh F'$ is an integral $\sh O_{X'}$-Module.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Conditions~\emph{(a)}, \emph{(b)}, and \emph{(c)} imply that $\sh F$
+is integral.
+Hence $\operatorname{Ass}(\sh F)$ consists of one point $x$, the
+generic point of $\operatorname{Supp}(\sh F)$.
+For every extension $k'$ of $k$ for which $X'$ is locally
+Noetherian, the prime cycles associated to $\sh F'$ are therefore
+nonembedded and are the maximal points of
+$\operatorname{Supp}(\sh F')$, all lying above $x$.
+By \sref{IV.4.6.16}, each of conditions~\emph{(a)}, \emph{(b)}, and
+\emph{(c)} also implies that $\sh F$ is geometrically reduced.
+It is immediate that \emph{(a)} implies \emph{(b)}, and
+\emph{(b)} implies that $\operatorname{Supp}(\sh F)$ is geometrically
+irreducible \sref{IV.4.5.9}.
+Thus \emph{(b)} implies \emph{(c)}, because the closed sub-prescheme
+$Y$ defined by $\sh J$ is geometrically reduced and geometrically
+irreducible, and hence geometrically integral.
+----- French corrections on page IV-2 72 -----
+[id 12739]
+OLD: un préschéma localement noethérien est
+NEW: un préschéma \emph{localement noethérien} est
+FRENCH CONTEXT (corrected): éductible de
+$X$, que
+\oldpage[IV-2]{72}
+l'on suppose en outre \emph{géométriquement irréductible}~; si de plus $X$ est
+localement noethérien, il y a alors un voisinage ouvert de $x$ dans $X$ qui est
+\emph{géométriquement intègre}.
+\end{env}
+
+Rappelons que si un préschéma \emph{localement noethérien} est ponctuellement intègre,
+il est \emph{localement intègre} (\textbf{I}, 6.1.13). Si un $k$-préschéma $X$, localement de
+type fini sur $k$, est géométriquement ponctuellement intègre sur $k$, il
+résulte donc de cette remarque que, pour toute extension $k'$ de $k
+
+[id 12740]
+OLD: il est localement intègre
+NEW: il est \emph{localement intègre}
+FRENCH CONTEXT (corrected): éométriquement irréductible}~; si de plus $X$ est
+localement noethérien, il y a alors un voisinage ouvert de $x$ dans $X$ qui est
+\emph{géométriquement intègre}.
+\end{env}
+
+Rappelons que si un préschéma \emph{localement noethérien} est ponctuellement intègre,
+il est \emph{localement intègre} (\textbf{I}, 6.1.13). Si un $k$-préschéma $X$, localement de
+type fini sur $k$, est géométriquement ponctuellement intègre sur $k$, il
+résulte donc de cette remarque que, pour toute extension $k'$ de $k$,
+$X\otimes_k k'$ est \emph{localement intègre} (on dit 
+
+[id 12743]
+OLD: un corps~; $X$
+NEW: un corps, $X$
+FRENCH CONTEXT (corrected):  toute extension $k'$ de $k$,
+$X\otimes_k k'$ est \emph{localement intègre} (on dit encore dans ce cas que
+$X$ est \emph{géométriquement localement intègre}).
+
+\begin{proposition}[4.6.15]
+\label{IV.2.4.6.15-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $k$ un corps, $X$ un $k$-préschéma de type fini. Pour que $X$
+soit géométriquement ponctuellement intègre, il faut et il suffit qu'il soit
+géométriquement réduit et que le nombre géométrique de ses composantes
+irréductibles soit égal au nombre géométrique de ses composantes co
+
+[id 12744]
+OLD: \item[(ii)] Soit $X$
+NEW: \item[\textup{(ii)}] Soit $X$
+FRENCH CONTEXT (corrected): préschéma de type fini. Pour que $X$
+soit géométriquement ponctuellement intègre, il faut et il suffit qu'il soit
+géométriquement réduit et que le nombre géométrique de ses composantes
+irréductibles soit égal au nombre géométrique de ses composantes connexes.
+\item[\textup{(ii)}] Soit $X$ un préschéma localement de type fini sur $k$. Si $X$ est
+géométriquement ponctuellement intègre en un point $x$, il existe un voisinage
+ouvert $U$ de $x$ qui est géométriquement ponctuellement intègre. En d'autres
+termes, l'ensemble des $x\in X$ où $X$ est gé
+
+[id 12747]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): on.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}[4.6.16]
+\label{IV.2.4.6.16-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Les conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] Pour toute extension de type fini $k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module réduit \textup{(3.2.2)}.
+\item[\textup{b)}] Pour toute extension finie radicielle $k'$ de $k$, $\mathscr
+
+[id 12749]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): s conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] Pour toute extension de type fini $k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module réduit \textup{(3.2.2)}.
+\item[\textup{b)}] Pour toute extension finie radicielle $k'$ de $k$, $\mathscr F'$ est
+un $\mathcal O_{X'}$-Module réduit.
+\item[\textup{c)}] $\mathscr F$ est réduit, et si $\mathscr J$ est l'Idéal de
+$\mathcal O_X$ annulateur de $\mathscr F$, le sous-préschéma fermé défini pa
+
+[id 12750]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): $, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module réduit \textup{(3.2.2)}.
+\item[\textup{b)}] Pour toute extension finie radicielle $k'$ de $k$, $\mathscr F'$ est
+un $\mathcal O_{X'}$-Module réduit.
+\item[\textup{c)}] $\mathscr F$ est réduit, et si $\mathscr J$ est l'Idéal de
+$\mathcal O_X$ annulateur de $\mathscr F$, le sous-préschéma fermé défini par
+$\mathscr J$ est géométriquement réduit sur $k$.
+\end{enumerate}
+
+\oldpage[IV-2]{73}
+
+En outre, si $X$ est localement de t
+
+[id 12742]
+OLD: \item[(i)] Soient
+NEW: \item[\textup{(i)}] Soient
+FRENCH CONTEXT (corrected): onc de cette remarque que, pour toute extension $k'$ de $k$,
+$X\otimes_k k'$ est \emph{localement intègre} (on dit encore dans ce cas que
+$X$ est \emph{géométriquement localement intègre}).
+
+\begin{proposition}[4.6.15]
+\label{IV.2.4.6.15-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $k$ un corps, $X$ un $k$-préschéma de type fini. Pour que $X$
+soit géométriquement ponctuellement intègre, il faut et il suffit qu'il soit
+géométriquement réduit et que le nombre géométrique de ses composantes
+irréductibles soit égal au nombre géométrique de 
+
+=================== PAGE IV-2 73 ===================
+----- (English page IV-2 72: shown above in this file) -----
+----- (English page IV-2 73: shown above in this file) -----
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 74 -----
+\oldpage[IV-2]{74}
+Conversely, if $Y$ is geometrically integral, then for \emph{every} extension
+$k'$ of $k$, the support $\operatorname{Supp}(\sh F')$ is
+irreducible.
+Consequently, whenever $X'$ is locally Noetherian, $\sh F'$ is
+integral.
+This proves that \emph{(c)} implies \emph{(a)}, and also that
+\emph{(c)} implies \emph{(d)} when $X$ is locally of finite type over
+$k$.
+\end{proof}
+
+\begin{definition}[4.6.19]
+\phantomsection
+\label{IV.4.6.19}
+When $\sh F$ satisfies the equivalent conditions of
+\sref{IV.4.6.18}, it is said to be geometrically integral over
+$k$.
+\end{definition}
+
+\begin{proposition}[4.6.20]
+\phantomsection
+\label{IV.4.6.20}
+Let $k$ be a field, let $X$ be a locally Noetherian $k$-prescheme,
+let $\sh F$ be a coherent $\sh O_X$-Module, and let $K$ be an
+extension of $k$ such that $X\otimes_kK$ is locally Noetherian.
+If $\sh F$ is geometrically reduced
+(resp.\ geometrically integral) over $k$, then
+$\sh F\otimes_kK$ is geometrically reduced
+(resp.\ geometrically integral) over $K$.
+\end{proposition}
+
+\begin{proof}
+For every finite extension $K'$ of $K$,
+$(X\otimes_k K)\otimes_K K'=X\otimes_k K'$
+is locally Noetherian.
+The proofs of \sref{IV.4.6.16} and \sref{IV.4.6.18} show that the
+hypothesis on $\sh F$ implies that $\sh F\otimes_kK'$ is reduced
+(resp.\ integral), which proves the assertion.
+\end{proof}
+
+\begin{proposition}[4.6.21]
+\phantomsection
+\label{IV.4.6.21}
+Let $k$ be a field, let $X$ and $Y$ be two locally Noetherian
+$k$-preschemes such that $X\times_kY$ is locally Noetherian, let
+$\sh F$ be a coherent $\sh O_X$-Module, and let $\sh G$ be a coherent
+$\sh O_Y$-Module.
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.6.21.i}
+If $\sh F$ is geometrically reduced
+(resp.\ geometrically integral) and $\sh G$ is reduced
+(resp.\ integral), then $\sh F\otimes_k\sh G$ is reduced
+(resp.\ integral).
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.6.21.ii}
+If $\sh F$ and $\sh G$ are both geometrically reduced
+(resp.\ geometrically integral), then so is
+$\sh F\otimes_k\sh G$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[\rm(i)]
+Using \sref{IV.3.2.3}, \sref{IV.4.6.16}, and
+\sref{IV.4.6.18}, we may reduce to the case in which
+\[
+ \operatorname{Supp}(\sh F)=X,\qquad
+ \operatorname{Supp}(\sh G)=Y,
+\]
+$X$ is geometrically reduced (resp.\ geometrically integral), $Y$ is
+reduced (resp.\ integral), $\sh F$ and $\sh G$ have no embedded
+associated prime cycles, and
+\[
+ \sh F_x\simeq\sh O_x,\qquad
+ \sh G_y\simeq\sh O_y
+\]
+at every maximal point $x$ of $X$ and $y$ of $Y$.
+Then $\sh F\otimes_k\sh G$ has no embedded associated prime cycle
+\sref{IV.4.2.3}, and its associated prime cycles are exactly the
+irreducible components of $X\times_kY$ \sref{IV.4.2.5}.
+We may therefore reduce further to the case in which $X$ and $Y$ are
+irreducible.
+If $X$ is geometrically reduced and $Y$ is reduced, then
+$X\times_kY$ is reduced \sref{IV.4.2.4},~(ii).
+If $X$ is geometrically integral and $Y$ is integral, then
+$X\times_kY$ is moreover irreducible \sref{IV.4.5.8},~(i), and hence
+integral.
+Finally, every maximal point $z$ of $X\times_kY$ lies above a maximal
+point $x$ of $X$ and a maximal point $y$ of $Y$.
+The hypotheses on $\sh F$ and $\sh G$ therefore imply, by
+\sref[I]{I.9.1.12}, that
+$(\sh F\otimes_k\sh G)_z\simeq\sh O_z$.
+
+\item[\rm(ii)]
+The argument is analogous.
+After reducing to
+$X=\operatorname{Supp}(\sh F)$ and
+$Y=\operatorname{Supp}(\sh G)$, the prescheme $X\times_kY$ is
+geometrically reduced (resp.\ geometrically integral) by
+\sref{IV.4.6.5},~(ii).
+\end{enumerate}
+\end{proof}
+
+The definitions in \sref{IV.4.6.17} and \sref{IV.4.6.19} localize as
+follows.
+
+\begin{definition}[4.6.22]
+\phantomsection
+\label{IV.4.6.22}
+Let $k$ be a field, let $X$ be a locally Noetherian $k$-prescheme,
+and let $\sh F$ be a coherent $\sh O_X$-Module.
+We say that $\sh F$ is \emph{geometrically reduced}, or
+\emph{separable} (resp.\ \emph{geometrically punctually integral}),
+at a point $x\in X$ if, for every finite radicial
+(resp.\ finite) extension $k'$ of $k$, the Module
+$\sh F\otimes_k k'$ is reduced (resp.\ integral) at every point $x'$
+of $X\otimes_k k'$ above $x$; see \sref{IV.3.2.2} and
+\sref{IV.3.2.4}.
+\end{definition}
+----- French corrections on page IV-2 73 -----
+[id 12751]
+OLD: \item[d)] Pour toute extension $k'$ de $k$ (ou pour une extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module réduit.
+NEW: \item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module réduit.
+FRENCH CONTEXT (corrected): mathscr F$, le sous-préschéma fermé défini par
+$\mathscr J$ est géométriquement réduit sur $k$.
+\end{enumerate}
+
+\oldpage[IV-2]{73}
+
+En outre, si $X$ est localement de type fini sur $k$, ces conditions sont aussi
+équivalentes à la suivante~:
+\begin{enumerate}
+\item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module réduit.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \emph{a)} entraîne \emph{b)}. La condition \emph{b)} entraîne d'abord que
+$\mathscr F$ est réduit~: cela signifie (3.2.3) que si $Y$ est le
+sous-préschéma fermé de $X$ défini par l'Idéal cohére
+
+[id 12752]
+OLD: Il est clair que a) entraîne b). La condition b) entraîne
+NEW: Il est clair que \emph{a)} entraîne \emph{b)}. La condition \emph{b)} entraîne
+FRENCH CONTEXT (corrected): a suivante~:
+\begin{enumerate}
+\item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module réduit.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que \emph{a)} entraîne \emph{b)}. La condition \emph{b)} entraîne d'abord que
+$\mathscr F$ est réduit~: cela signifie (3.2.3) que si $Y$ est le
+sous-préschéma fermé de $X$ défini par l'Idéal cohérent $\mathscr J$ de
+$\mathcal O_X$, annulateur de $\mathscr F$, $Y$ est \emph{réduit}, et il y a un
+$\mathcal O_Y$-Module cohéren
+
+[id 12753]
+OLD: $Y$ est réduit, et il y a
+NEW: $Y$ est \emph{réduit}, et il y a
+FRENCH CONTEXT (corrected): que \emph{a)} entraîne \emph{b)}. La condition \emph{b)} entraîne d'abord que
+$\mathscr F$ est réduit~: cela signifie (3.2.3) que si $Y$ est le
+sous-préschéma fermé de $X$ défini par l'Idéal cohérent $\mathscr J$ de
+$\mathcal O_X$, annulateur de $\mathscr F$, $Y$ est \emph{réduit}, et il y a un
+$\mathcal O_Y$-Module cohérent sans torsion $\mathscr G$ de rang~1 sur toute
+composante irréductible de $Y$, tel que $j_*(\mathscr G)=\mathscr F$,
+$j:Y\to X$ étant l'injection canonique. Or, pour \emph{toute} extension $k'$ de $k$,
+l'annulateur de $\mathsc
+
+[id 12754]
+OLD: Or, pour toute extension
+NEW: Or, pour \emph{toute} extension
+FRENCH CONTEXT (corrected): al O_X$, annulateur de $\mathscr F$, $Y$ est \emph{réduit}, et il y a un
+$\mathcal O_Y$-Module cohérent sans torsion $\mathscr G$ de rang~1 sur toute
+composante irréductible de $Y$, tel que $j_*(\mathscr G)=\mathscr F$,
+$j:Y\to X$ étant l'injection canonique. Or, pour \emph{toute} extension $k'$ de $k$,
+l'annulateur de $\mathscr F'$ est $\mathscr J'=\mathscr J\otimes_k k'$, le
+morphisme projection $X'\to X$ étant plat (2.1.11)~; le sous-préschéma fermé de
+$X'$ défini par $\mathscr J'$ est $Y'=Y\otimes_k k'$, et si
+$j':Y'\to X'$ est l'injection c
+
+[id 12755]
+OLD: $X'$
+est localement noethérien.
+NEW: $X'$
+est \emph{localement noethérien}.
+FRENCH CONTEXT (corrected): l $y$ de $Y$~; comme $\mathscr G_y$ est isomorphe à
+$\mathcal O_{Y,y}$, $\mathscr G'_{y'}$ est isomorphe à
+$\mathcal O_{Y',y'}$. On voit donc (par (3.2.3)) qu'il revient au même de dire
+que $\mathscr F'$ est réduit ou que le préschéma $Y'$ est réduit, lorsque $X'$
+est \emph{localement noethérien}. Le fait que \emph{b)} entraîne \emph{c)} et que \emph{c)} entraîne
+\emph{a)} est donc conséquence de (4.6.1, \emph{d)} et \emph{b)})~; dans \emph{a)}, l'hypothèse que
+$k'$ est une extension de type fini de $k$ n'est faite que pour assurer que
+$X'$ est localem
+
+[id 12756]
+OLD: Le fait que b) entraîne c) et que c) entraîne
+a) est donc
+NEW: Le fait que \emph{b)} entraîne \emph{c)} et que \emph{c)} entraîne
+\emph{a)} est donc
+FRENCH CONTEXT (corrected):  isomorphe à
+$\mathcal O_{Y,y}$, $\mathscr G'_{y'}$ est isomorphe à
+$\mathcal O_{Y',y'}$. On voit donc (par (3.2.3)) qu'il revient au même de dire
+que $\mathscr F'$ est réduit ou que le préschéma $Y'$ est réduit, lorsque $X'$
+est \emph{localement noethérien}. Le fait que \emph{b)} entraîne \emph{c)} et que \emph{c)} entraîne
+\emph{a)} est donc conséquence de (4.6.1, \emph{d)} et \emph{b)})~; dans \emph{a)}, l'hypothèse que
+$k'$ est une extension de type fini de $k$ n'est faite que pour assurer que
+$X'$ est localement noethérien. Lorsque $X$ est localement de type fini, $X'$
+est localement noethérie
+
+[id 12757]
+OLD: (4.6.1, d) et b))
+NEW: (4.6.1, \emph{d)} et \emph{b)})
+FRENCH CONTEXT (corrected): c (par (3.2.3)) qu'il revient au même de dire
+que $\mathscr F'$ est réduit ou que le préschéma $Y'$ est réduit, lorsque $X'$
+est \emph{localement noethérien}. Le fait que \emph{b)} entraîne \emph{c)} et que \emph{c)} entraîne
+\emph{a)} est donc conséquence de (4.6.1, \emph{d)} et \emph{b)})~; dans \emph{a)}, l'hypothèse que
+$k'$ est une extension de type fini de $k$ n'est faite que pour assurer que
+$X'$ est localement noethérien. Lorsque $X$ est localement de type fini, $X'$
+est localement noethérien pour toute extension $k'$ de $k$, ce qui prou
+
+[id 12758]
+OLD: dans a), l'hypothèse
+NEW: dans \emph{a)}, l'hypothèse
+FRENCH CONTEXT (corrected): ême de dire
+que $\mathscr F'$ est réduit ou que le préschéma $Y'$ est réduit, lorsque $X'$
+est \emph{localement noethérien}. Le fait que \emph{b)} entraîne \emph{c)} et que \emph{c)} entraîne
+\emph{a)} est donc conséquence de (4.6.1, \emph{d)} et \emph{b)})~; dans \emph{a)}, l'hypothèse que
+$k'$ est une extension de type fini de $k$ n'est faite que pour assurer que
+$X'$ est localement noethérien. Lorsque $X$ est localement de type fini, $X'$
+est localement noethérien pour toute extension $k'$ de $k$, ce qui prouve dans
+ce cas l'équivalence d
+
+[id 12759]
+OLD: l'équivalence de d) et des autres
+NEW: l'équivalence de \emph{d)} et des autres
+FRENCH CONTEXT (corrected): )}, l'hypothèse que
+$k'$ est une extension de type fini de $k$ n'est faite que pour assurer que
+$X'$ est localement noethérien. Lorsque $X$ est localement de type fini, $X'$
+est localement noethérien pour toute extension $k'$ de $k$, ce qui prouve dans
+ce cas l'équivalence de \emph{d)} et des autres conditions.
+\end{proof}
+
+\begin{definition}[4.6.17]
+\label{IV.2.4.6.17-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.16)}, on dit
+que $\mathscr F$ est géométriquement réduit sur $k$, ou séparable
+sur $k$.
+\end{definition}
+
+\begi
+
+[id 12761]
+OLD: \emph{géométriquement réduit} sur $k$
+NEW: géométriquement réduit sur $k$
+FRENCH CONTEXT (corrected): '$ de $k$, ce qui prouve dans
+ce cas l'équivalence de \emph{d)} et des autres conditions.
+\end{proof}
+
+\begin{definition}[4.6.17]
+\label{IV.2.4.6.17-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.16)}, on dit
+que $\mathscr F$ est géométriquement réduit sur $k$, ou séparable
+sur $k$.
+\end{definition}
+
+\begin{proposition}[4.6.18]
+\label{IV.2.4.6.18-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Les conditions suivantes sont
+équivalentes~:
+\begin{en
+
+[id 12762]
+OLD: \emph{séparable}
+sur
+NEW: séparable
+sur
+FRENCH CONTEXT (corrected): s l'équivalence de \emph{d)} et des autres conditions.
+\end{proof}
+
+\begin{definition}[4.6.17]
+\label{IV.2.4.6.17-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.16)}, on dit
+que $\mathscr F$ est géométriquement réduit sur $k$, ou séparable
+sur $k$.
+\end{definition}
+
+\begin{proposition}[4.6.18]
+\label{IV.2.4.6.18-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Les conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\te
+
+[id 12763]
+OLD: un corps~; $X$
+NEW: un corps, $X$
+FRENCH CONTEXT (corrected): el{IV.2.4.6.17-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.16)}, on dit
+que $\mathscr F$ est géométriquement réduit sur $k$, ou séparable
+sur $k$.
+\end{definition}
+
+\begin{proposition}[4.6.18]
+\label{IV.2.4.6.18-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Les conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] Pour toute extension de type fini $k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\m
+
+[id 12764]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): rable
+sur $k$.
+\end{definition}
+
+\begin{proposition}[4.6.18]
+\label{IV.2.4.6.18-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Les conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] Pour toute extension de type fini $k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module intègre \textup{(3.2.4)}.
+\item[\textup{b)}] Pour toute extension finie $k'$ de $k$, $\mathscr F'$ est u
+
+[id 12766]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected):  conditions suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] Pour toute extension de type fini $k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module intègre \textup{(3.2.4)}.
+\item[\textup{b)}] Pour toute extension finie $k'$ de $k$, $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+\item[\textup{c)}] $\mathscr F$ est réduit (ou intègre), et si $\mathscr J$ est
+l'Idéal de $\mathcal O_X$ annulateur de $\mathscr F$, le sous-préschéma fermé
+défini
+
+[id 12767]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): k'$ de $k$, si l'on pose
+$X'=X\otimes_k k'$, alors $\mathscr F'=\mathscr F\otimes_k k'$ est un
+$\mathcal O_{X'}$-Module intègre \textup{(3.2.4)}.
+\item[\textup{b)}] Pour toute extension finie $k'$ de $k$, $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+\item[\textup{c)}] $\mathscr F$ est réduit (ou intègre), et si $\mathscr J$ est
+l'Idéal de $\mathcal O_X$ annulateur de $\mathscr F$, le sous-préschéma fermé
+défini par $\mathscr J$ est géométriquement intègre.
+\end{enumerate}
+En outre, si $X$ est localement de type fini sur $k
+
+[id 12768]
+OLD: \item[d)] Pour toute extension $k'$ de $k$ (ou pour une extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+NEW: \item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+FRENCH CONTEXT (corrected): athcal O_X$ annulateur de $\mathscr F$, le sous-préschéma fermé
+défini par $\mathscr J$ est géométriquement intègre.
+\end{enumerate}
+En outre, si $X$ est localement de type fini sur $k$, ces conditions sont aussi
+équivalentes à la suivante~:
+\begin{enumerate}
+\item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les conditions \emph{a)}, \emph{b)} et \emph{c)} entraînent que $\mathscr F$ est intègre, donc
+$\operatorname{Ass}(\mathscr F)$ réduit à un seul point $x$, qui est le point
+générique de $\operatorname{Supp}(\ma
+
+[id 12769]
+OLD: Les conditions a), b) et c) entraînent
+NEW: Les conditions \emph{a)}, \emph{b)} et \emph{c)} entraînent
+FRENCH CONTEXT (corrected):  suivante~:
+\begin{enumerate}
+\item[\textup{d)}] Pour toute extension $k'$ de $k$ \textup{(ou} pour \emph{une} extension
+algébriquement close $k'$ de $k$), $\mathscr F'$ est un
+$\mathcal O_{X'}$-Module intègre.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Les conditions \emph{a)}, \emph{b)} et \emph{c)} entraînent que $\mathscr F$ est intègre, donc
+$\operatorname{Ass}(\mathscr F)$ réduit à un seul point $x$, qui est le point
+générique de $\operatorname{Supp}(\mathscr F)$. Pour \emph{toute} extension $k'$ de
+$k$ pour laquelle $X'$ est localement noethérien, les cycles p
+
+[id 12770]
+OLD: Pour toute extension $k'$ de
+$k$ pour laquelle
+NEW: Pour \emph{toute} extension $k'$ de
+$k$ pour laquelle
+FRENCH CONTEXT (corrected): rate}
+\end{proposition}
+
+\begin{proof}
+Les conditions \emph{a)}, \emph{b)} et \emph{c)} entraînent que $\mathscr F$ est intègre, donc
+$\operatorname{Ass}(\mathscr F)$ réduit à un seul point $x$, qui est le point
+générique de $\operatorname{Supp}(\mathscr F)$. Pour \emph{toute} extension $k'$ de
+$k$ pour laquelle $X'$ est localement noethérien, les cycles premiers associés
+à $\mathscr F'$ sont donc non immergés, et sont les points maximaux de
+$\operatorname{Supp}(\mathscr F')$, qui sont tous au-dessus de $x$. D'autre
+part, en vertu de (4.6.16), chacune des conditions 
+
+[id 12771]
+OLD: chacune des conditions a), b), c) entraîne
+NEW: chacune des conditions \emph{a)}, \emph{b)}, \emph{c)} entraîne
+FRENCH CONTEXT (corrected): '$ de
+$k$ pour laquelle $X'$ est localement noethérien, les cycles premiers associés
+à $\mathscr F'$ sont donc non immergés, et sont les points maximaux de
+$\operatorname{Supp}(\mathscr F')$, qui sont tous au-dessus de $x$. D'autre
+part, en vertu de (4.6.16), chacune des conditions \emph{a)}, \emph{b)}, \emph{c)} entraîne que
+$\mathscr F$ est géométriquement réduit~; il est trivial que \emph{a)} entraîne \emph{b)},
+et \emph{b)} entraîne que $\operatorname{Supp}(\mathscr F)$ est géométriquement
+irréductible (4.5.9), donc \emph{c)}, puisque le sous-préschéma $Y$ défini
+\oldpage[
+
+[id 12772]
+OLD: il est trivial que a) entraîne b),
+et b) entraîne
+NEW: il est trivial que \emph{a)} entraîne \emph{b)},
+et \emph{b)} entraîne
+FRENCH CONTEXT (corrected):  non immergés, et sont les points maximaux de
+$\operatorname{Supp}(\mathscr F')$, qui sont tous au-dessus de $x$. D'autre
+part, en vertu de (4.6.16), chacune des conditions \emph{a)}, \emph{b)}, \emph{c)} entraîne que
+$\mathscr F$ est géométriquement réduit~; il est trivial que \emph{a)} entraîne \emph{b)},
+et \emph{b)} entraîne que $\operatorname{Supp}(\mathscr F)$ est géométriquement
+irréductible (4.5.9), donc \emph{c)}, puisque le sous-préschéma $Y$ défini
+\oldpage[IV-2]{74}
+par $\mathscr J$ est alors géométriquement réduit et géométriquement
+irréductible, donc géométriquement int
+
+[id 12773]
+OLD: donc c), puisque
+NEW: donc \emph{c)}, puisque
+FRENCH CONTEXT (corrected): hacune des conditions \emph{a)}, \emph{b)}, \emph{c)} entraîne que
+$\mathscr F$ est géométriquement réduit~; il est trivial que \emph{a)} entraîne \emph{b)},
+et \emph{b)} entraîne que $\operatorname{Supp}(\mathscr F)$ est géométriquement
+irréductible (4.5.9), donc \emph{c)}, puisque le sous-préschéma $Y$ défini
+\oldpage[IV-2]{74}
+par $\mathscr J$ est alors géométriquement réduit et géométriquement
+irréductible, donc géométriquement intègre. Inversement, si $Y$ est
+géométriquement intègre, pour \emph{toute} extension $k'$ de $k$,
+$\operat
+
+=================== PAGE IV-2 74 ===================
+----- (English page IV-2 73: shown above in this file) -----
+----- (English page IV-2 74: shown above in this file) -----
+----- English, components/06_section46_geometrically_reduced_preschemes.tex, page IV-2 75 -----
+\oldpage[IV-2]{75}
+If $\sh F$ is reduced at $x$, there is an open neighbourhood $U$ of
+$x$ such that $\sh F|U$ is reduced \sref{IV.3.2.2}.
+Arguing as in \sref{IV.4.6.16}, one sees that $\sh F$ is
+geometrically reduced at $x$ if and only if $\sh F$ is reduced at $x$
+and the closed sub-prescheme $Y$ defined by the annihilator $\sh J$ of
+$\sh F$ is geometrically reduced at $x$.
+It follows that $x$ has an open neighbourhood $U$ such that
+$\sh F|U$ is geometrically reduced \sref{IV.4.6.13}.
+The arguments of \sref{IV.4.6.16} and \sref{IV.4.6.18} likewise show
+that, if $X$ is locally of finite type over $k$, then $\sh F$ is
+geometrically punctually integral at $x$ if and only if $\sh F$ is
+reduced at $x$ and $Y$ is geometrically punctually integral at $x$.
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 75 -----
+\subsection{Multiplicities in the primary decomposition on an algebraic prescheme}
+\phantomsection
+\label{subsection:IV.4.7}
+
+\begin{lemma}[4.7.1]
+\phantomsection
+\label{IV.4.7.1}
+Let $A$ and $B$ be two local rings, let $\mathfrak m$ be the maximal
+ideal of $A$, and let $\rho:A\to B$ be a local homomorphism.
+Suppose that $B$ is flat as an $A$-module and that $B/\mathfrak mB$
+has finite length as a $B$-module.
+Then an $A$-module $M$ has finite length if and only if $M_{(B)}$ has
+finite length as a $B$-module, and
+\begin{equation}
+\operatorname{length}_B(M_{(B)})
+=\operatorname{length}_A(M)
+ .\operatorname{length}_B(B/\mathfrak mB).
+\tag{4.7.1.1}
+\label{IV.4.7.1.1}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+This is a special case of \sref{IV.2.5.5.2}.
+\end{proof}
+
+\begin{corollary}[4.7.2]
+\phantomsection
+\label{IV.4.7.2}
+Let $A$ and $B$ be two Noetherian rings, and let
+$\rho:A\to B$ be a ring homomorphism such that $B$ is flat as an
+$A$-module.
+Let $\mathfrak q$ be a minimal prime ideal of $B$, put
+$\mathfrak p=\rho^{-1}(\mathfrak q)$, and let $M$ be an $A$-module
+of finite type.
+Then $\mathfrak p$ is a minimal prime ideal of $A$,
+$M_{\mathfrak p}$ has finite length as an $A_{\mathfrak p}$-module,
+and
+\begin{equation}
+\operatorname{length}_{B_{\mathfrak q}}
+ (M_{(B)})_{\mathfrak q}
+=
+(\operatorname{length}_{A_{\mathfrak p}}(M_{\mathfrak p}))
+(\operatorname{length}_{B_{\mathfrak q}}
+ (B_{\mathfrak q}/\mathfrak pB_{\mathfrak q})).
+\tag{4.7.2.1}
+\label{IV.4.7.2.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The ring $B_{\mathfrak q}$ is flat over $A_{\mathfrak p}$
+\sref[0\textsubscript{\mdseries I}]{0.6.3.2}, and the homomorphism
+$A_{\mathfrak p}\to B_{\mathfrak q}$ is local; hence
+$B_{\mathfrak q}$ is faithfully flat over $A_{\mathfrak p}$
+\sref[0\textsubscript{\mdseries I}]{0.6.6.2}.
+It follows from \sref{IV.2.3.5} that $\mathfrak p$ is minimal in $A$.
+The ring $A_{\mathfrak p}$ is therefore Artinian
+(Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~2,
+n\textsuperscript{o}~5, prop.~9), so $M_{\mathfrak p}$ has finite
+length over $A_{\mathfrak p}$.
+Formula \sref{IV.4.7.2.1} is now a special case of
+\sref{IV.4.7.1.1}.
+\end{proof}
+
+\begin{proposition}[4.7.3]
+\phantomsection
+\label{IV.4.7.3}
+Let $k$ be a field of characteristic exponent $p$, let $X$ be an
+integral locally Noetherian prescheme, and let
+$K=\mathrm R(X)$ be the field of rational functions on $X$.
+Let $k'$ be an extension of $k$, let $(X'_\alpha)$ be the family of
+irreducible components of $X'=X_{(k')}$, and let $x'_\alpha$ be the
+generic point of $X'_\alpha$.
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.7.3.i}
+Suppose that $X'$ is locally Noetherian \textup{(which is the case if
+$X$ is \emph{locally of finite type over} $k$, or if $k'$ is an
+extension \emph{of finite type} of $k$)}.
+Let then $k''$ be any extension of $k'$, set
+$X''=X\otimes_k k''$, and let $(X''_\beta)$ be the family of
+irreducible components of $X''$, with generic points $x''_\beta$.
+If $x''_\beta$ lies above $x'_\alpha$, we have
+\begin{equation}
+\operatorname{length}(\sh O_{x''_\beta})
+=
+\operatorname{length}(\sh O_{x'_\alpha})
+ .\operatorname{length}(\sh O_{Z'',x''_\beta})
+\tag{4.7.3.1}
+\label{IV.4.7.3.1}
+\end{equation}
+where we have set $Z''=(X'_{\mathrm{red}})\otimes_{k'}k''$.
+In particular, if $k''$ is a \emph{separable} extension of $k'$ such that
+$Z''$ is locally Noetherian, then
+\[
+\operatorname{length}(\sh O_{x''_\beta})
+=\operatorname{length}(\sh O_{x'_\alpha}).
+\]
+----- French corrections on page IV-2 74 -----
+[id 12776]
+OLD: pour toute extension $k'$ de $k$,
+NEW: pour \emph{toute} extension $k'$ de $k$,
+FRENCH CONTEXT (corrected): ent
+irréductible (4.5.9), donc \emph{c)}, puisque le sous-préschéma $Y$ défini
+\oldpage[IV-2]{74}
+par $\mathscr J$ est alors géométriquement réduit et géométriquement
+irréductible, donc géométriquement intègre. Inversement, si $Y$ est
+géométriquement intègre, pour \emph{toute} extension $k'$ de $k$,
+$\operatorname{Supp}(\mathscr F')$ est irréductible, donc, si $X'$ est
+localement noethérien, $\mathscr F'$ est intègre~; cela montre que \emph{c)} entraîne
+\emph{a)}, et que \emph{c)} entraîne \emph{d)} lorsque $X$ est localement de type fini sur $k$.
+\end{p
+
+[id 12777]
+OLD: cela montre que c) entraîne
+a), et que c) entraîne d) lorsque
+NEW: cela montre que \emph{c)} entraîne
+\emph{a)}, et que \emph{c)} entraîne \emph{d)} lorsque
+FRENCH CONTEXT (corrected): ent
+irréductible, donc géométriquement intègre. Inversement, si $Y$ est
+géométriquement intègre, pour \emph{toute} extension $k'$ de $k$,
+$\operatorname{Supp}(\mathscr F')$ est irréductible, donc, si $X'$ est
+localement noethérien, $\mathscr F'$ est intègre~; cela montre que \emph{c)} entraîne
+\emph{a)}, et que \emph{c)} entraîne \emph{d)} lorsque $X$ est localement de type fini sur $k$.
+\end{proof}
+
+\begin{definition}[4.6.19]
+\label{IV.2.4.6.19-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.18)}, on dit
+que $\mathscr F$ est géométriquement intègre sur $k$.
+\end{definition
+
+[id 12779]
+OLD: \emph{géométriquement intègre} sur $k$.
+NEW: géométriquement intègre sur $k$.
+FRENCH CONTEXT (corrected): a)}, et que \emph{c)} entraîne \emph{d)} lorsque $X$ est localement de type fini sur $k$.
+\end{proof}
+
+\begin{definition}[4.6.19]
+\label{IV.2.4.6.19-fr}
+Lorsque $\mathscr F$ vérifie les conditions équivalentes de \textup{(4.6.18)}, on dit
+que $\mathscr F$ est géométriquement intègre sur $k$.
+\end{definition}
+
+\begin{proposition}[4.6.20]
+\label{IV.2.4.6.20-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Soit $K$ une extension de $k$ telle que
+$X\otimes_k K$ soit localement noethé
+
+[id 12780]
+OLD: (resp. géométriquement intègre) sur $k$,
+NEW: \textup{(resp.} géométriquement intègre) sur $k$,
+FRENCH CONTEXT (corrected): .2.4.6.20-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. Soit $K$ une extension de $k$ telle que
+$X\otimes_k K$ soit localement noethérien. Alors, si $\mathscr F$ est
+géométriquement réduit \textup{(resp.} géométriquement intègre) sur $k$,
+$\mathscr F\otimes_k K$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) sur $K$.
+\end{proposition}
+
+\begin{proof}
+En effet, pour toute extension finie $K'$ de $K$,
+$(X\otimes_k K)\otimes_K K'=X\otimes_k K'$
+est localement noethérien, et on
+
+[id 12781]
+OLD: réduit (resp. géométriquement
+intègre) sur $K$.
+NEW: réduit \textup{(resp.} géométriquement
+intègre) sur $K$.
+FRENCH CONTEXT (corrected):  $\mathcal O_X$-Module cohérent. Soit $K$ une extension de $k$ telle que
+$X\otimes_k K$ soit localement noethérien. Alors, si $\mathscr F$ est
+géométriquement réduit \textup{(resp.} géométriquement intègre) sur $k$,
+$\mathscr F\otimes_k K$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) sur $K$.
+\end{proposition}
+
+\begin{proof}
+En effet, pour toute extension finie $K'$ de $K$,
+$(X\otimes_k K)\otimes_K K'=X\otimes_k K'$
+est localement noethérien, et on a vu dans les démonstrations de (4.6.16) et
+(4.6.18) que l'hypothèse sur $\mathscr F$ entraîne que
+$
+
+[id 12784]
+OLD: réduit (resp. géométriquement
+intègre) et
+NEW: réduit \textup{(resp.} géométriquement
+intègre) et
+FRENCH CONTEXT (corrected): éschémas localement noethériens tels
+que $X\times_k Y$ soit localement noethérien. Soient $\mathscr F$ un
+$\mathcal O_X$-Module cohérent, $\mathscr G$ un $\mathcal O_Y$-Module cohérent.
+\begin{enumerate}
+\item[\textup{(i)}] Si $\mathscr F$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ sont géométriquement réduits \textup{(resp.}
+géométriquement intègres), il en est de 
+
+[id 12785]
+OLD: réduit (resp. intègre), alors
+NEW: réduit \textup{(resp.} intègre), alors
+FRENCH CONTEXT (corrected): lement noethérien. Soient $\mathscr F$ un
+$\mathcal O_X$-Module cohérent, $\mathscr G$ un $\mathcal O_Y$-Module cohérent.
+\begin{enumerate}
+\item[\textup{(i)}] Si $\mathscr F$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ sont géométriquement réduits \textup{(resp.}
+géométriquement intègres), il en est de même de
+$\mathscr F\otimes_k\mathscr G$.
+\end{enumer
+
+[id 12786]
+OLD: est réduit (resp. intègre).
+NEW: est réduit \textup{(resp.} intègre).
+FRENCH CONTEXT (corrected): t, $\mathscr G$ un $\mathcal O_Y$-Module cohérent.
+\begin{enumerate}
+\item[\textup{(i)}] Si $\mathscr F$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ sont géométriquement réduits \textup{(resp.}
+géométriquement intègres), il en est de même de
+$\mathscr F\otimes_k\mathscr G$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] Ut
+
+[id 12787]
+OLD: \item[(ii)] Si
+NEW: \item[\textup{(ii)}] Si
+FRENCH CONTEXT (corrected): ule cohérent.
+\begin{enumerate}
+\item[\textup{(i)}] Si $\mathscr F$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ sont géométriquement réduits \textup{(resp.}
+géométriquement intègres), il en est de même de
+$\mathscr F\otimes_k\mathscr G$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] Utilisant (3.2.3), (4.6.16
+
+[id 12788]
+OLD: réduits (resp.
+géométriquement intègres)
+NEW: réduits \textup{(resp.}
+géométriquement intègres)
+FRENCH CONTEXT (corrected): ométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ sont géométriquement réduits \textup{(resp.}
+géométriquement intègres), il en est de même de
+$\mathscr F\otimes_k\mathscr G$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] Utilisant (3.2.3), (4.6.16) et (4.6.18), on peut se borner au cas où
+$\operatorname{Supp}(\mathscr F)=X$, $\operatorname{Supp}
+
+[id 12790]
+OLD: \emph{séparable} (resp. géométriquement
+ponctuellement intègre)
+NEW: \emph{séparable} \textup{(resp. géométriquement
+ponctuellement intègre)}
+FRENCH CONTEXT (corrected): .6.17) et (4.6.19) se localisent~:
+
+\begin{definition}[4.6.22]
+\label{IV.2.4.6.22-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. On dit que $\mathscr F$ est
+\emph{géométriquement réduit} ou \emph{séparable} \textup{(resp. géométriquement
+ponctuellement intègre)} en un point $x\in X$ si, pour toute extension finie
+radicielle \textup{(resp.} finie) $k'$ de $k$, $\mathscr F\otimes_k k'$ est réduit
+\textup{(resp.} intègre) en chacun des points $x'$ de $X\otimes_k k'$ au-dessus de $x$
+\textup{(cf. (3.2.2) et (3.2.4))}.
+\e
+
+[id 12791]
+OLD: radicielle (resp. finie)
+NEW: radicielle \textup{(resp.} finie)
+FRENCH CONTEXT (corrected): ma localement noethérien, $\mathscr F$
+un $\mathcal O_X$-Module cohérent. On dit que $\mathscr F$ est
+\emph{géométriquement réduit} ou \emph{séparable} \textup{(resp. géométriquement
+ponctuellement intègre)} en un point $x\in X$ si, pour toute extension finie
+radicielle \textup{(resp.} finie) $k'$ de $k$, $\mathscr F\otimes_k k'$ est réduit
+\textup{(resp.} intègre) en chacun des points $x'$ de $X\otimes_k k'$ au-dessus de $x$
+\textup{(cf. (3.2.2) et (3.2.4))}.
+\end{definition}
+
+\oldpage[IV-2]{75}
+
+Si $\mathscr F$ est réduit en $x$, il y a un voisi
+
+[id 12792]
+OLD: est réduit
+(resp. intègre) en chacun
+NEW: est réduit
+\textup{(resp.} intègre) en chacun
+FRENCH CONTEXT (corrected): . On dit que $\mathscr F$ est
+\emph{géométriquement réduit} ou \emph{séparable} \textup{(resp. géométriquement
+ponctuellement intègre)} en un point $x\in X$ si, pour toute extension finie
+radicielle \textup{(resp.} finie) $k'$ de $k$, $\mathscr F\otimes_k k'$ est réduit
+\textup{(resp.} intègre) en chacun des points $x'$ de $X\otimes_k k'$ au-dessus de $x$
+\textup{(cf. (3.2.2) et (3.2.4))}.
+\end{definition}
+
+\oldpage[IV-2]{75}
+
+Si $\mathscr F$ est réduit en $x$, il y a un voisinage ouvert $U$ de $x$ tel
+que $\mathscr F|U$ soit réduit (3.2.2). En raisonnant com
+
+[id 12783]
+OLD: \item[(i)] Si
+NEW: \item[\textup{(i)}] Si
+FRENCH CONTEXT (corrected): V.2.4.6.21-fr}
+Soient $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens tels
+que $X\times_k Y$ soit localement noethérien. Soient $\mathscr F$ un
+$\mathcal O_X$-Module cohérent, $\mathscr G$ un $\mathcal O_Y$-Module cohérent.
+\begin{enumerate}
+\item[\textup{(i)}] Si $\mathscr F$ est géométriquement réduit \textup{(resp.} géométriquement
+intègre) et $\mathscr G$ réduit \textup{(resp.} intègre), alors
+$\mathscr F\otimes_k\mathscr G$ est réduit \textup{(resp.} intègre).
+\item[\textup{(ii)}] Si $\mathscr F$ et $\mathscr G$ s
+
+=================== PAGE IV-2 75 ===================
+----- (English page IV-2 74: shown above in this file) -----
+----- (English page IV-2 75: shown above in this file) -----
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 76 -----
+\oldpage[IV-2]{76}
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.7.3.ii}
+If $X$ is locally of finite type over $k$, or if the extension $k'/k$
+is of finite type, then each number
+\[
+\operatorname{length}(\sh O_{x'_\alpha})
+\]
+is a power of $p$.
+
+\item[\rm(iii)]
+\phantomsection
+\label{IV.4.7.3.iii}
+Suppose that $X$ is locally of finite type over $k$.
+If $k'$ is perfect, all the numbers
+$\operatorname{length}(\sh O_{x'_\alpha})$ are equal and depend
+only on the extension $K/k$ \textup{(and not on the particular perfect
+extension $k'$ of $k$ under consideration)}.
+Moreover, there exists a finite radicial extension $k_1$ of $k$ such
+that, if $x_1$ is the generic point of
+$X_1=X\otimes_k k_1$ \textup{(}which is irreducible\textup{)}, then
+\[
+\operatorname{length}(\sh O_{x'_\alpha})
+=\operatorname{length}(\sh O_{x_1})
+\quad\text{for every }\alpha.
+\]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item[\rm(i)]
+Recall from \sref{IV.4.2.4} that the finitely many irreducible
+components $X'_\alpha$ correspond bijectively to the minimal prime
+ideals $\mathfrak p_\alpha$ of $K\otimes_k k'$, and that
+$\sh O_{x'_\alpha}$ is an \emph{Artinian} ring isomorphic to
+$(K\otimes_k k')_{\mathfrak p_\alpha}$.
+These rings therefore depend only on the extensions $K/k$ and $k'/k$;
+in particular, with $k'$ fixed, they are the same for every integral
+$k$-prescheme having $K$ as its field of rational functions.
+
+Formula \sref{IV.4.7.3.1} follows from \sref{IV.4.7.2.1}.
+Indeed, apply that formula to the Noetherian ring $A$ of an affine
+neighbourhood of $x'_\alpha$ in $X'$ and to the ring $B$ of a
+sufficiently small affine neighbourhood of $x''_\beta$ in $X''$,
+where $\mathfrak p$ and $\mathfrak q$ are the minimal prime ideals
+corresponding respectively to $x'_\alpha$ and $x''_\beta$, and take
+$M=A$.
+Here $A/\mathfrak p$ is the ring of an affine neighbourhood of
+$x'_\alpha$ in $X'_{\mathrm{red}}$, while
+$B=A\otimes_{k'}k''$.
+If $\mathfrak q'=\mathfrak q/\mathfrak pB$, a minimal prime ideal of
+$B/\mathfrak pB$, then $\sh O_{Z'',x''_\beta}
+=(B/\mathfrak pB)_{\mathfrak q'}
+=B_{\mathfrak q}/\mathfrak pB_{\mathfrak q}$,
+which proves \sref{IV.4.7.3.1}.
+The last assertion of \emph{(i)} follows because $Z''$ is reduced in
+this case \sref{IV.4.2.4}, and hence
+$\mathfrak pB_{\mathfrak q}=\mathfrak qB_{\mathfrak q}$.
+
+\item[\rm(ii)]
+If $k'$ is of finite type over $k$, there is a purely transcendental
+extension $k'_0$ of $k$ such that $k'$ is finite over $k'_0$.
+Since $k'_0/k$ is separable, \emph{(i)}, applied with $k'$ and $k''$
+replaced by $k$ and $k'_0$, shows that we may replace $X$ by
+$X\otimes_k k'_0$; thus we may assume that $k'$ is a \emph{finite}
+extension of $k$.
+There is then a finite quasi-Galois extension $k''/k$ containing
+$k'$, and \sref{IV.4.7.3.1} shows that it suffices to prove the
+assertion for $k''$.
+But $k''$ is a \emph{separable} extension of a finite radicial extension
+$k_1$ of $k$, so \emph{(i)} reduces us to proving the assertion when
+$k'=k_1$ is in addition \emph{radicial}.
+The ring $K\otimes_k k_1$ is then Artinian and has a unique minimal
+prime ideal \sref{IV.4.3.2}.
+If $\overline K$ is an algebraic closure of $K$, the length of
+$K\otimes_k k_1$ divides the length of the Artinian ring
+$\overline K\otimes_k k_1$ by \sref{IV.4.7.1.1}.
+The Artinian $\overline K$-algebra
+$\overline K\otimes_k k_1$ has a unique prime ideal, necessarily
+maximal, and its quotient by that ideal is a finite extension of
+$\overline K$, hence is $\overline K$.
+Its length is therefore its rank over $\overline K$, namely
+$[k_1:k]$, a power of $p$.
+
+Suppose next that $X$ is locally of finite type over $k$.
+Then $X''$ is locally Noetherian for every extension $k''$ of $k'$.
+Taking $k''$ algebraically closed, \sref{IV.4.7.3.1} reduces us to
+the case in which $k'$ is \emph{algebraically closed}.
+Since $k'$ is then a \emph{separable} extension of the algebraic closure
+$\overline k$ of $k$, another application of \emph{(i)} reduces us to
+$k'=\overline k$.
+----- French corrections on page IV-2 75 -----
+[id 12920]
+OLD: est géométriquement réduit au point $x$; il en
+NEW: est \emph{géométriquement réduit au point} $x$; il en
+FRENCH CONTEXT (corrected): 2.2). En raisonnant comme dans (4.6.16), on
+voit que dire que $\mathscr F$ est géométriquement réduit au point $x$
+équivaut à dire que $\mathscr F$ est réduit au point $x$ et que le
+sous-préschéma fermé $Y$ défini par l'annulateur $\mathscr J$ de $\mathscr F$
+est \emph{géométriquement réduit au point} $x$; il en résulte qu'il y a un voisinage
+ouvert $U$ de $x$ tel que $\mathscr F|U$ soit \emph{géométriquement réduit} (4.6.13).
+Les raisonnements de (4.6.16) et (4.6.18) montrent aussi que si $X$ est
+localement de type fini sur $k$, dire que $\mathscr F$ est géométrique
+
+[id 12921]
+OLD: $Y$ est géométriquement
+ponctuellement intègre au point $x$.
+NEW: $Y$ est \emph{géométriquement
+ponctuellement intègre au point} $x$.
+FRENCH CONTEXT (corrected): aisonnements de (4.6.16) et (4.6.18) montrent aussi que si $X$ est
+localement de type fini sur $k$, dire que $\mathscr F$ est géométriquement
+ponctuellement intègre au point $x$ équivaut à dire que $\mathscr F$ est
+réduit au point $x$ et que le sous-préschéma $Y$ est \emph{géométriquement
+ponctuellement intègre au point} $x$.
+
+\subsection{Multiplicités dans la décomposition primaire sur un préschéma
+algébrique.}
+\label{subsection:IV.4.7-fr}
+
+\begin{lemma}[4.7.1]
+\label{IV.2.4.7.1-fr}
+Soient $A$, $B$ deux anneaux locaux, $\mathfrak m$ l'idéal maximal de $A$,
+$\rho:A\to B$ un homomo
+
+[id 12922]
+OLD: préschéma
+algébrique}
+NEW: préschéma
+algébrique.}
+FRENCH CONTEXT (corrected): iquement
+ponctuellement intègre au point $x$ équivaut à dire que $\mathscr F$ est
+réduit au point $x$ et que le sous-préschéma $Y$ est \emph{géométriquement
+ponctuellement intègre au point} $x$.
+
+\subsection{Multiplicités dans la décomposition primaire sur un préschéma
+algébrique.}
+\label{subsection:IV.4.7-fr}
+
+\begin{lemma}[4.7.1]
+\label{IV.2.4.7.1-fr}
+Soient $A$, $B$ deux anneaux locaux, $\mathfrak m$ l'idéal maximal de $A$,
+$\rho:A\to B$ un homomorphisme local. On suppose que $B$ soit un $A$-module
+plat, et $B/\mathfrak mB$ un $B$-mo
+
+[id 12929]
+OLD: (ce qui a lieu si
+$X$ est localement de type fini sur $k$, ou si $k'$ est une extension de type
+fini de $k$)
+NEW: \textup{(ce qui a lieu si
+$X$ est \emph{localement de type fini sur} $k$, ou si $k'$ est une extension \emph{de type
+fini} de $k$)}
+FRENCH CONTEXT (corrected): ationnelles
+sur $X$. Soient $k'$ une extension de $k$, $(X'_\alpha)$ la famille des
+composantes irréductibles de $X'=X_{(k')}$, $x'_\alpha$ le point générique de
+$X'_\alpha$.
+\begin{enumerate}
+\item[\textup{(i)}] On suppose que $X'$ soit localement noethérien \textup{(ce qui a lieu si
+$X$ est \emph{localement de type fini sur} $k$, ou si $k'$ est une extension \emph{de type
+fini} de $k$)}. Soient alors $k''$ une extension quelconque de $k'$,
+$X''=X\otimes_k k''$, $(X''_\beta)$ la famille des composantes irréductibles
+de $X''$, $x''_\beta$ le point générique de $X''_\beta$. Si $x''_\beta$ est
+au-dessus de $x'_\alpha$, on a
+\begin{equation}
+\ope
+
+[id 12930]
+OLD: (\mathcal O_{x'_\alpha})
+ \operatorname{long}(\mathcal O_{Z'',x''_\beta})
+NEW: (\mathcal O_{x'_\alpha})
+ .\operatorname{long}(\mathcal O_{Z'',x''_\beta})
+FRENCH CONTEXT (corrected): X\otimes_k k''$, $(X''_\beta)$ la famille des composantes irréductibles
+de $X''$, $x''_\beta$ le point générique de $X''_\beta$. Si $x''_\beta$ est
+au-dessus de $x'_\alpha$, on a
+\begin{equation}
+\operatorname{long}(\mathcal O_{x''_\beta})
+=\operatorname{long}(\mathcal O_{x'_\alpha})
+ .\operatorname{long}(\mathcal O_{Z'',x''_\beta})
+\tag{4.7.3.1}
+\label{IV.2.4.7.3.1-fr}
+\end{equation}
+où l'on a posé $Z''=(X'_{\mathrm{red}})\otimes_{k'}k''$. En particulier, si
+$k''$ est une extension \emph{séparable} de $k'$ telle que $Z''$ soit localement
+noethérien, on a
+$\operatorname{long}(\mathcal O_
+
+[id 12931]
+OLD: extension séparable de $k'$
+NEW: extension \emph{séparable} de $k'$
+FRENCH CONTEXT (corrected): athcal O_{x''_\beta})
+=\operatorname{long}(\mathcal O_{x'_\alpha})
+ .\operatorname{long}(\mathcal O_{Z'',x''_\beta})
+\tag{4.7.3.1}
+\label{IV.2.4.7.3.1-fr}
+\end{equation}
+où l'on a posé $Z''=(X'_{\mathrm{red}})\otimes_{k'}k''$. En particulier, si
+$k''$ est une extension \emph{séparable} de $k'$ telle que $Z''$ soit localement
+noethérien, on a
+$\operatorname{long}(\mathcal O_{x''_\beta})
+=\operatorname{long}(\mathcal O_{x'_\alpha})$.
+
+\oldpage[IV-2]{76}
+
+\item[\textup{(ii)}] Si $X$ est localement de type fini sur $k$, ou si $k'$ est une
+extension de 
+
+[id 14451]
+OLD: soit géométriquement réduit (4.6.13).
+NEW: soit \emph{géométriquement réduit} (4.6.13).
+FRENCH CONTEXT (corrected): dire que $\mathscr F$ est réduit au point $x$ et que le
+sous-préschéma fermé $Y$ défini par l'annulateur $\mathscr J$ de $\mathscr F$
+est \emph{géométriquement réduit au point} $x$; il en résulte qu'il y a un voisinage
+ouvert $U$ de $x$ tel que $\mathscr F|U$ soit \emph{géométriquement réduit} (4.6.13).
+Les raisonnements de (4.6.16) et (4.6.18) montrent aussi que si $X$ est
+localement de type fini sur $k$, dire que $\mathscr F$ est géométriquement
+ponctuellement intègre au point $x$ équivaut à dire que $\mathscr F$ est
+réduit au point $x$ et que le sous-prés
+
+[id 14452]
+OLD: soit géométriquement réduit (4.6.11)
+NEW: soit \emph{géométriquement réduit} (4.6.11)
+WHY: adapted to the corrected wording
+
+[id 12928]
+OLD: \item[(i)] On suppose
+NEW: \item[\textup{(i)}] On suppose
+FRENCH CONTEXT (corrected): re
+localement noethérien, $K=\mathrm R(X)$ le corps des fonctions rationnelles
+sur $X$. Soient $k'$ une extension de $k$, $(X'_\alpha)$ la famille des
+composantes irréductibles de $X'=X_{(k')}$, $x'_\alpha$ le point générique de
+$X'_\alpha$.
+\begin{enumerate}
+\item[\textup{(i)}] On suppose que $X'$ soit localement noethérien \textup{(ce qui a lieu si
+$X$ est \emph{localement de type fini sur} $k$, ou si $k'$ est une extension \emph{de type
+fini} de $k$)}. Soient alors $k''$ une extension quelconque de $k'$,
+$X''=X\otimes_k k''$, $(X''_\beta)$ l
+
+=================== PAGE IV-2 76 ===================
+----- (English page IV-2 75: shown above in this file) -----
+----- (English page IV-2 76: shown above in this file) -----
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 77 -----
+\oldpage[IV-2]{77}
+
+After replacing $X$ by an affine open of finite type over $k$, there
+is a finite radicial extension $k_1/k$ such that
+$(X\otimes_k k_1)_{\mathrm{red}}$ is separable over $k_1$
+\sref{IV.4.6.6}.
+Consequently,
+$(X\otimes_k k_1)_{\mathrm{red}}\otimes_{k_1}\overline k$ is reduced
+\sref{IV.4.6.4}.
+By \sref{IV.4.7.3.1}, this again reduces us to the case in which
+$k'$ is a finite radicial extension of $k$, and the preceding
+argument applies.
+
+\item[\rm(iii)]
+Any two extensions $k'$ and $k''$ of $k$ embed in a common
+algebraically closed extension of $k$.
+To show that the set of numbers
+$\operatorname{length}(\sh O_{x'_\alpha})$ for \emph{perfect} $k'$ does
+not depend on $k'$, it is therefore enough to compare them with those
+obtained after an algebraically closed extension $k''/k'$; the
+assertion then follows from \emph{(i)}, since $k''$ is \emph{separable}
+over $k'$.
+To prove that all these numbers are equal, we may thus assume
+$k'=\overline k$.
+For the finite radicial extension $k_1/k$ chosen in \emph{(ii)}, all
+the points $x'_\alpha$ lie above the unique generic point $x_1$ of
+$X_1=X\otimes_k k_1$.
+The equality
+\[
+\operatorname{length}(\sh O_{x'_\alpha})
+=\operatorname{length}(\sh O_{x_1})
+\]
+for every $\alpha$ follows once more from \sref{IV.4.7.3.1} and the
+choice of $k_1$.
+\end{enumerate}
+\end{proof}
+
+\begin{definition}[4.7.4]
+\phantomsection
+\label{IV.4.7.4}
+Let $k$ be a field, let $X$ be an integral $k$-prescheme, and let $K$
+be the field of rational functions on $X$.
+The \emph{radicial multiplicity} of $K$ (or of $X$) over $k$ is the
+supremum of the lengths of the Artinian rings $K\otimes_k k_1$, as
+$k_1$ ranges over the finite radicial extensions of $k$.
+The \emph{separable multiplicity} of $K$ (or of $X$) over $k$ is the
+geometric number of irreducible components of $X$ if this number is
+finite, and $+\infty$ otherwise.
+Finally, the \emph{total multiplicity} of $K$ (or of $X$) over $k$ is
+the product of its radicial and separable multiplicities.
+\end{definition}
+
+If $p$ is the characteristic exponent of $k$ and the radicial
+multiplicity of $K$ over $k$ is finite, then it is a power
+$q=p^f$ of $p$, by \sref{IV.4.7.3},~(ii).
+When $p\ne1$, the well-defined integer $f$ is called the
+\emph{inseparability exponent} of $K$ over $k$; when $p=1$, the
+radicial multiplicity is always $1$.
+
+To say that the radicial (resp.\ separable, resp.\ total)
+multiplicity of $X$ over $k$ is $1$ means that $X$ is geometrically
+reduced (resp.\ geometrically irreducible, resp.\ geometrically
+integral) over $k$.
+
+When $X$ is locally of finite type, its radicial multiplicity over
+$k$ is also the common length of the local rings $A_i$ at
+the minimal prime ideals of the total ring of fractions $A$ of
+$K\otimes_k k'$, for every perfect extension $k'/k$.
+Its separable multiplicity is the number of minimal prime ideals of
+$A=K\otimes_k\Omega$, for every algebraically closed extension
+$\Omega/k$.
+Finally, its total multiplicity is the sum of the lengths of the local
+rings $A_i$ of $A=K\otimes_k\Omega$ at its minimal prime
+ideals.
+In this case all three numbers are \emph{finite}.
+
+\begin{definition}[4.7.5]
+\phantomsection
+\label{IV.4.7.5}
+Let $k$ be a field, let $X$ be a $k$-prescheme locally of finite type
+over $k$, let $\sh F$ be a coherent $\sh O_X$-Module, and let $x\in X$
+be such that $\sh F_x$ has finite length as an $\sh O_x$-module.
+The \emph{geometric length} of $\sh F$ at $x$ (relative to $k$), or
+\emph{radicial multiplicity} of $x$ for $\sh F$, is the product
+\[
+\lambda_x(\sh F)
+=(\operatorname{length}_{\sh O_x}(\sh F_x))
+ \mu_i(\kres(x)\mid k),
+\]
+where $\mu_i(\kres(x)\mid k)$ denotes the radicial multiplicity of
+$\kres(x)$ over $k$.
+\end{definition}
+
+When $X$ is \emph{integral} and $x$ is its generic point,
+$\operatorname{length}(\sh O_x)=1$.
+Thus the radicial multiplicity of $x$ for $\sh O_X$ is precisely the
+radicial multiplicity of $X$ over $k$ defined in
+\sref{IV.4.7.4}.
+----- French corrections on page IV-2 76 -----
+[id 12933]
+OLD: \item[(ii)] Si $X$
+NEW: \item[\textup{(ii)}] Si $X$
+FRENCH CONTEXT (corrected): athrm{red}})\otimes_{k'}k''$. En particulier, si
+$k''$ est une extension \emph{séparable} de $k'$ telle que $Z''$ soit localement
+noethérien, on a
+$\operatorname{long}(\mathcal O_{x''_\beta})
+=\operatorname{long}(\mathcal O_{x'_\alpha})$.
+
+\oldpage[IV-2]{76}
+
+\item[\textup{(ii)}] Si $X$ est localement de type fini sur $k$, ou si $k'$ est une
+extension de type fini de $k$, les nombres
+$\operatorname{long}(\mathcal O_{x'_\alpha})$ sont des puissances de $p$.
+
+\item[\textup{(iii)}] On suppose que $X$ est localement de type fini sur $k$. Alors,
+
+
+[id 12934]
+OLD: \item[(iii)] On suppose
+NEW: \item[\textup{(iii)}] On suppose
+FRENCH CONTEXT (corrected): name{long}(\mathcal O_{x'_\alpha})$.
+
+\oldpage[IV-2]{76}
+
+\item[\textup{(ii)}] Si $X$ est localement de type fini sur $k$, ou si $k'$ est une
+extension de type fini de $k$, les nombres
+$\operatorname{long}(\mathcal O_{x'_\alpha})$ sont des puissances de $p$.
+
+\item[\textup{(iii)}] On suppose que $X$ est localement de type fini sur $k$. Alors,
+si $k'$ est parfait, tous les nombres
+$\operatorname{long}(\mathcal O_{x'_\alpha})$ sont égaux et ne dépendent que
+de l'extension $K$ de $k$ \textup{(et non de l'extension parfaite particulière $k'$
+de $k$ c
+
+[id 12935]
+OLD: (et non de l'extension parfaite particulière $k'$
+de $k$ considérée)
+NEW: \textup{(et non de l'extension parfaite particulière $k'$
+de $k$ considérée)}
+FRENCH CONTEXT (corrected): a})$ sont des puissances de $p$.
+
+\item[\textup{(iii)}] On suppose que $X$ est localement de type fini sur $k$. Alors,
+si $k'$ est parfait, tous les nombres
+$\operatorname{long}(\mathcal O_{x'_\alpha})$ sont égaux et ne dépendent que
+de l'extension $K$ de $k$ \textup{(et non de l'extension parfaite particulière $k'$
+de $k$ considérée)}. En outre, il existe une extension radicielle finie $k_1$
+de $k$ telle que, si $x_1$ est le point générique de
+$X_1=X\otimes_k k_1$ (qui est irréductible), on ait
+$\operatorname{long}(\mathcal O_{x'_\alpha})
+=\operatorname{long}(\mathcal O_{x_1})$ pour tout $
+
+[id 12937]
+OLD: un anneau artinien, isomorphe
+NEW: un anneau \emph{artinien}, isomorphe
+FRENCH CONTEXT (corrected): roof}
+\begin{enumerate}
+\item[(i)] Rappelons (4.2.4) que les composantes irréductibles $X'_\alpha$,
+qui sont en nombre fini, correspondent biunivoquement aux idéaux premiers
+minimaux $\mathfrak p_\alpha$ de $K\otimes_k k'$, et que
+$\mathcal O_{x'_\alpha}$ est un anneau \emph{artinien}, isomorphe à
+$(K\otimes_k k')_{\mathfrak p_\alpha}$; ces anneaux ne dépendent donc que des
+extensions $K$ et $k'$ de $k$ (et sont par suite les mêmes ($k'$ étant fixé)
+pour tous les $k$-préschémas intègres ayant même corps $K$ de fonctions
+rationnelles). La formule (4.7
+
+[id 12939]
+OLD: extension finie de $k$. Il y a
+NEW: extension \emph{finie} de $k$. Il y a
+FRENCH CONTEXT (corrected): e $k'$ soit une extension
+finie de $k'_0$; comme $k'_0$ est séparable sur $k$, il résulte de (i)
+appliqué en remplaçant $k'$ et $k''$ par $k$ et $k'_0$ respectivement, que
+l'on peut remplacer $X$ par $X\otimes_k k'_0$, autrement dit, supposer que
+$k'$ est une extension \emph{finie} de $k$. Il y a alors une extension finie
+quasi-galoisienne $k''$ de $k$ contenant $k'$, et la formule (4.7.3.1) montre
+qu'il suffit de prouver l'assertion pour $k''$. Mais $k''$ est une extension
+\emph{séparable} d'une extension radicielle finie $k_1$ de $k$, donc, en vertu
+
+[id 12940]
+OLD: séparable d'une extension
+NEW: \emph{séparable} d'une extension
+FRENCH CONTEXT (corrected): autrement dit, supposer que
+$k'$ est une extension \emph{finie} de $k$. Il y a alors une extension finie
+quasi-galoisienne $k''$ de $k$ contenant $k'$, et la formule (4.7.3.1) montre
+qu'il suffit de prouver l'assertion pour $k''$. Mais $k''$ est une extension
+\emph{séparable} d'une extension radicielle finie $k_1$ de $k$, donc, en vertu de
+(i), on est ramené dans ce cas à prouver l'assertion lorsque $k'=k_1$ est en
+outre \emph{radicielle}. On sait alors que $K\otimes_k k_1$ est un anneau artinien
+n'ayant qu'un seul idéal premier minimal (4.3.2); 
+
+[id 12941]
+OLD: outre radicielle.
+NEW: outre \emph{radicielle}.
+FRENCH CONTEXT (corrected): ormule (4.7.3.1) montre
+qu'il suffit de prouver l'assertion pour $k''$. Mais $k''$ est une extension
+\emph{séparable} d'une extension radicielle finie $k_1$ de $k$, donc, en vertu de
+(i), on est ramené dans ce cas à prouver l'assertion lorsque $k'=k_1$ est en
+outre \emph{radicielle}. On sait alors que $K\otimes_k k_1$ est un anneau artinien
+n'ayant qu'un seul idéal premier minimal (4.3.2); si $\overline K$ est une
+clôture algébrique de $K$, la longueur de $K\otimes_k k_1$ divise celle de
+l'anneau artinien $\overline K\otimes_k k_1$ en ver
+
+[id 12942]
+OLD: est algébriquement clos.
+NEW: est \emph{algébriquement clos}.
+FRENCH CONTEXT (corrected): te que $X$ soit localement de type fini sur $k$; alors, $X''$
+est localement noethérien pour toute extension $k''$ de $k'$. Prenant pour
+$k''$ une extension algébriquement close de $k'$, on est ramené, en vertu de
+(4.7.3.1), à prouver l'assertion lorsque $k'$ est \emph{algébriquement clos}. Comme
+$k'$ est alors une extension \emph{séparable} de la clôture algébrique $\overline k$
+de $k$, il résulte encore de (i) qu'on est ramené au cas où
+$k'=\overline k$. Or, on sait (en remplaçant $X$ par un ouvert affine de type
+fini sur $k$) qu'il y a une ex
+
+[id 12943]
+OLD: séparable de la clôture
+NEW: \emph{séparable} de la clôture
+FRENCH CONTEXT (corrected): ocalement noethérien pour toute extension $k''$ de $k'$. Prenant pour
+$k''$ une extension algébriquement close de $k'$, on est ramené, en vertu de
+(4.7.3.1), à prouver l'assertion lorsque $k'$ est \emph{algébriquement clos}. Comme
+$k'$ est alors une extension \emph{séparable} de la clôture algébrique $\overline k$
+de $k$, il résulte encore de (i) qu'on est ramené au cas où
+$k'=\overline k$. Or, on sait (en remplaçant $X$ par un ouvert affine de type
+fini sur $k$) qu'il y a une extension radicielle
+\oldpage[IV-2]{77}
+finie $k_1$ de $k$ telle que
+
+=================== PAGE IV-2 77 ===================
+----- (English page IV-2 76: shown above in this file) -----
+----- (English page IV-2 77: shown above in this file) -----
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 78 -----
+\oldpage[IV-2]{78}
+
+\begin{proposition}[4.7.6]
+\phantomsection
+\label{IV.4.7.6}
+Let $0\longrightarrow\sh F'\longrightarrow\sh F
+\longrightarrow\sh F''\longrightarrow0$
+be an exact sequence of coherent $\sh O_X$-Modules.
+At a point $x\in X$, the geometric length $\lambda_x(\sh F)$ is
+defined if and only if both $\lambda_x(\sh F')$ and
+$\lambda_x(\sh F'')$ are defined; in that case
+\begin{equation}
+\lambda_x(\sh F)=\lambda_x(\sh F')+\lambda_x(\sh F'')
+\tag{4.7.6.1}
+\label{IV.4.7.6.1}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+This follows immediately from the definition: the length of
+$\sh F_x$ is finite if and only if the lengths of $\sh F'_x$ and
+$\sh F''_x$ are finite, and then
+\[
+\operatorname{length}(\sh F_x)
+=\operatorname{length}(\sh F'_x)+
+ \operatorname{length}(\sh F''_x).
+\]
+\end{proof}
+
+\begin{env}[4.7.7]
+\phantomsection
+\label{IV.4.7.7}
+Under the hypotheses of \sref{IV.4.7.5}, the only points $x\in X$ for
+which $\sh F_x$ is an $\sh O_x$-module of \emph{nonzero} finite length
+are, by \sref{IV.3.1.2}, \emph{the maximal points of}
+$\operatorname{Supp}(\sh F)$.
+This follows from Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~2,
+n\textsuperscript{o}~5, cor.~2 to prop.~7, since the question is local
+on $X$.
+There is a closed sub-prescheme $Y$ with underlying space
+$\operatorname{Supp}(\sh F)$ and a coherent $\sh O_Y$-Module $\sh G$
+such that $\sh F=j_*(\sh G)$, where $j:Y\to X$ is the canonical
+injection.
+If $x$ is a maximal point of $Y$, then the geometric lengths of
+$\sh F$ and $\sh G$ at $x$ are \emph{equal}, because
+$\sh O_{X,x}$ and $\sh O_{Y,x}$ have the same residue field.
+This gives the following characterization of geometric length.
+\end{env}
+
+\begin{proposition}[4.7.8]
+\phantomsection
+\label{IV.4.7.8}
+Under the hypotheses of \sref{IV.4.7.5}, let $x$ be a maximal point
+of $\operatorname{Supp}(\sh F)$.
+Let $k'$ be a perfect extension of $k$, and set
+$X'=X\otimes_k k'$ and $\sh F'=\sh F\otimes_k k'$.
+Then the geometric length $\lambda_x(\sh F)$ of $\sh F$ at $x$ is equal
+to the length of the $\sh O_{x'}$-module $\sh F'_{x'}$ at every
+maximal point $x'$ of $\operatorname{Supp}(\sh F')$ above $x$.
+Moreover, there exists a finite radicial extension $k_1$ of $k$ such
+that, on setting $X_1=X\otimes_k k_1$ and
+$\sh F_1=\sh F\otimes_k k_1$, $\lambda_x(\sh F)$ is equal to the length
+of the $\sh O_{x_1}$-module $(\sh F_1)_{x_1}$ at every
+maximal point $x_1$ of $\operatorname{Supp}(\sh F_1)$ above $x$.
+\end{proposition}
+
+\begin{proof}
+The remark in \sref{IV.4.7.7} reduces us to the case in which $x$ is
+a maximal point of $X$.
+Since the question is local on $X$, suppose
+$X=\Spec(A)$ is affine Noetherian and $\sh F=\widetilde M$, where
+$M$ is an $A$-module of finite type.
+Put $B=A\otimes_k k'$, and let $\mathfrak p$ and $\mathfrak q$ be the
+minimal prime ideals of $A$ and $B$ corresponding respectively to
+$x$ and $x'$.
+Formula \sref{IV.4.7.2.1} gives
+\[
+\operatorname{length}_{\sh O_{x'}}(\sh F'_{x'})
+=\operatorname{length}_{\sh O_x}(\sh F_x)
+ .\operatorname{length}_{B_{\mathfrak q}}
+ (B_{\mathfrak q}/\mathfrak pB_{\mathfrak q}).
+\]
+Since
+$\kres(x)=A_{\mathfrak p}/\mathfrak pA_{\mathfrak p}$, the argument
+of \sref{IV.4.7.3} shows that the last factor is the length of
+$(B/\mathfrak pB)_{\mathfrak q'}$, where
+$\mathfrak q'=\mathfrak q/\mathfrak pB$.
+This is a local ring of
+$(A/\mathfrak p)\otimes_k k'$ at a minimal prime ideal, and therefore
+also a local ring of the total ring of fractions of
+$\kres(x)\otimes_k k'$.
+By definition its length is $\mu_i(\kres(x)\mid k)$, proving the
+first assertion.
+The second follows in the same way by replacing $k'$ with $k_1$ and
+using \sref{IV.4.7.3},~(iii).
+\end{proof}
+
+When $x$ is a maximal point of $\operatorname{Supp}(\sh F)$, the
+geometric length of $\sh F$ at $x$ is also called the
+\emph{radicial multiplicity of the maximal prime cycle}
+$\overline{\{x\}}$ associated with $\sh F$.
+
+\begin{corollary}[4.7.9]
+\phantomsection
+\label{IV.4.7.9}
+Under the hypotheses of \sref{IV.4.7.5}, let $k'$ be an extension of
+$k$, set $X'=X\otimes_k k'$ and $\sh F'=\sh F\otimes_k k'$, and let
+$Z$ be an irreducible component of $\operatorname{Supp}(\sh F)$.
+If $Z'$ is an irreducible component of
+$\operatorname{Supp}(\sh F')$ dominating $Z$
+\sref{IV.4.2.7}, then the radicial multiplicities of $Z$ with respect
+to $\sh F$ and of $Z'$ with respect to $\sh F'$ are equal.
+\end{corollary}
+----- French corrections on page IV-2 77 -----
+[id 12946]
+OLD: $k'$ parfaite, ne dépend
+NEW: $k'$ \emph{parfaite}, ne dépend
+FRENCH CONTEXT (corrected):  de $k$, et on conclut comme plus haut.
+
+\item[(iii)] Notons que deux extensions $k'$, $k''$ de $k$ sont contenues
+dans une même extension algébriquement close de $k$; pour montrer que
+l'ensemble des nombres $\operatorname{long}(\mathcal O_{x'_\alpha})$, pour
+$k'$ \emph{parfaite}, ne dépend pas du choix de $k'$, on peut donc se borner à
+comparer ces nombres pour $k'$ et pour une extension algébriquement close
+$k''$ de $k'$; dans ce cas, l'assertion résulte de (i), puisque $k''$ est
+\emph{séparable} sur $k'$. Pour montrer que tous les nombres
+$\o
+
+[id 12947]
+OLD: séparable sur $k'$.
+NEW: \emph{séparable} sur $k'$.
+FRENCH CONTEXT (corrected): }(\mathcal O_{x'_\alpha})$, pour
+$k'$ \emph{parfaite}, ne dépend pas du choix de $k'$, on peut donc se borner à
+comparer ces nombres pour $k'$ et pour une extension algébriquement close
+$k''$ de $k'$; dans ce cas, l'assertion résulte de (i), puisque $k''$ est
+\emph{séparable} sur $k'$. Pour montrer que tous les nombres
+$\operatorname{long}(\mathcal O_{x'_\alpha})$ sont égaux, on peut donc se
+borner au cas où $k'=\overline k$, clôture algébrique de $k$. Or, l'extension
+radicielle finie $k_1$ de $k$ étant alors déterminée comme dans (ii), les
+
+[id 12948]
+OLD: trois finis dans ce cas
+NEW: trois \emph{finis} dans ce cas
+FRENCH CONTEXT (corrected): iers minimaux de $A=K\otimes_k\Omega$ pour
+toute extension algébriquement close $\Omega$ de $k$, et enfin la multiplicité
+totale est la somme des longueurs des anneaux locaux $A_i$ de
+$A=K\otimes_k\Omega$ en ses idéaux premiers minimaux; ces nombres sont tous
+trois \emph{finis} dans ce cas.
+
+\begin{definition}[4.7.5]
+\label{IV.2.4.7.5-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement de type fini sur $k$,
+$\mathscr F$ un $\mathcal O_X$-Module cohérent, $x$ un point de $X$ tel que
+$\mathscr F_x$ soit un $\mathcal O_x$-module de longueur f
+
+[id 12949]
+OLD: \emph{multiplicité radicielle de $x$ pour $\mathscr F$}
+NEW: \emph{multiplicité radicielle} de $x$ pour $\mathscr F$
+FRENCH CONTEXT (corrected): éma localement de type fini sur $k$,
+$\mathscr F$ un $\mathcal O_X$-Module cohérent, $x$ un point de $X$ tel que
+$\mathscr F_x$ soit un $\mathcal O_x$-module de longueur finie. On appelle
+\emph{longueur géométrique} de $\mathscr F$ en $x$ (relative à $k$), ou
+\emph{multiplicité radicielle} de $x$ pour $\mathscr F$ le produit
+$\lambda_x(\mathscr F)
+=(\operatorname{long}_{\mathcal O_x}(\mathscr F_x))\mu_i(\boldsymbol{k}(x)\mid k)$,
+où $\mu_i(\boldsymbol{k}(x)\mid k)$ désigne la multiplicité radicielle de $\boldsymbol{k}(x)$ sur $k$.
+\end{definition}
+
+Lorsque $X$ est \emp
+
+[id 12955]
+OLD: $X$ est intègre, et
+NEW: $X$ est \emph{intègre}, et
+FRENCH CONTEXT (corrected): $\mathscr F$ le produit
+$\lambda_x(\mathscr F)
+=(\operatorname{long}_{\mathcal O_x}(\mathscr F_x))\mu_i(\boldsymbol{k}(x)\mid k)$,
+où $\mu_i(\boldsymbol{k}(x)\mid k)$ désigne la multiplicité radicielle de $\boldsymbol{k}(x)$ sur $k$.
+\end{definition}
+
+Lorsque $X$ est \emph{intègre}, et $x$ le point générique de $X$, on a
+$\operatorname{long}(\mathcal O_x)=1$, donc la multiplicité radicielle de $x$
+pour $\mathcal O_X$ n'est autre que la multiplicité radicielle de $X$ sur $k$,
+définie dans (4.7.4).
+
+\oldpage[IV-2]{78}
+
+\begin{proposition}[4.7
+
+=================== PAGE IV-2 78 ===================
+----- (English page IV-2 77: shown above in this file) -----
+----- (English page IV-2 78: shown above in this file) -----
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 79 -----
+\oldpage[IV-2]{79}
+
+\begin{proof}
+Choose a perfect extension $k''$ of $k'$, set
+$X''=X\otimes_k k''$ and $\sh F''=\sh F\otimes_k k''$, and choose a
+maximal point $x''$ of $\operatorname{Supp}(\sh F'')$ above the
+generic point of $Z'$.
+It follows from \sref{IV.4.7.8} that
+$\operatorname{length}(\sh F''_{x''})$ equals both multiplicities.
+\end{proof}
+
+\begin{proposition}[4.7.10]
+\phantomsection
+\label{IV.4.7.10}
+Let $k$ be a field, let $X$ be a $k$-prescheme locally of finite type
+over $k$, let $\sh F$ be a coherent $\sh O_X$-Module, let $x\in X$,
+and let $\xi_i$ be the generic points of the irreducible components
+of $\operatorname{Supp}(\sh F)$ that contain $x$.
+Then $\sh F$ is geometrically reduced at $x$
+\sref{IV.4.6.22} if and only if $x$ belongs to no embedded associated
+prime cycle of $\sh F$ and
+$\lambda_{\xi_i}(\sh F)=1$ for every $i$.
+\end{proposition}
+
+\begin{proof}
+First suppose the stated conditions hold.
+Let $k'/k$ be finite, let $x'$ be a point of
+$X'=X\otimes_k k'$ above $x$, and put
+$\sh F'=\sh F\otimes_k k'$.
+By \sref{IV.4.2.7}, $x'$ belongs to no embedded associated prime cycle
+of $\sh F'$.
+Moreover, \sref{IV.4.7.8} shows that $\sh F'$ has geometric length
+$1$ at every generic point $\xi'$ of an irreducible component of
+$\operatorname{Supp}(\sh F')$ containing $x'$; by
+\sref{IV.2.3.4}, such a point lies above one of the $\xi_i$.
+A fortiori,
+$\operatorname{length}(\sh F'_{\xi'})=1$, so $\sh F'$ is reduced at
+$x'$.
+
+Conversely, \sref{IV.4.2.7} first shows that if, for one finite
+extension $k'/k$, the Module $\sh F'$ is reduced at every point $x'$
+above $x$, then $x$ belongs to no embedded associated prime cycle of
+$\sh F$.
+For each $\xi_i$, take for $k'$ the field $k_1$ supplied by
+\sref{IV.4.7.8}.
+The hypothesis that $\sh F$ is geometrically reduced at $x$ then
+implies $\lambda_{\xi_i}(\sh F)=1$.
+\end{proof}
+
+\begin{proposition}[4.7.11]
+\phantomsection
+\label{IV.4.7.11}
+Let $k$ be a field, let $X$ be a prescheme locally of finite type
+over $k$, let $\sh F$ be a coherent $\sh O_X$-Module, let $k'$ be an
+extension of $k$, set $X'=X\otimes_k k'$ and
+$\sh F'=\sh F\otimes_k k'$, and let $x'\in X'$ lie above $x\in X$.
+Then $\sh F$ is geometrically reduced
+(resp.\ geometrically punctually integral) at $x$ if and only if
+$\sh F'$ is geometrically reduced
+(resp.\ geometrically punctually integral) at $x'$.
+\end{proposition}
+
+\begin{proof}
+Every irreducible component of $\operatorname{Supp}(\sh F')$
+containing $x'$ dominates an irreducible component of
+$\operatorname{Supp}(\sh F)$ containing $x$, and conversely every
+such component downstairs is dominated by one containing $x'$
+(\sref{IV.4.2.7},~(i) and \sref{IV.2.3.4}).
+The assertion concerning geometric reducedness therefore follows
+from \sref{IV.4.2.7},~(ii), \sref{IV.4.7.9}, and
+\sref{IV.4.7.10}.
+
+Let $Y$ be the closed sub-prescheme of $X$ defined by the annihilator
+Ideal $\sh J$ of $\sh F$.
+Then $Y'=Y\otimes_k k'$ is the closed sub-prescheme of $X'$ defined by
+the annihilator Ideal
+$\sh J'=\sh J\otimes_k k'$ of $\sh F'$.
+To say that $\sh F$ (resp.\ $\sh F'$) is geometrically punctually
+integral at $x$ (resp.\ $x'$) is to say that $\sh F$ (resp.\
+$\sh F'$) is geometrically reduced at $x$ (resp.\ $x'$) and that
+$Y$ (resp.\ $Y'$) is geometrically punctually integral at $x$
+(resp.\ $x'$).
+By the assertion just proved, either of the two geometric
+pointwise-integrality hypotheses implies that $Y$ has a separable
+neighbourhood of $x$.
+The conclusion follows from \sref{IV.4.6.10}.
+\end{proof}
+
+\begin{definition}[4.7.12]
+\phantomsection
+\label{IV.4.7.12}
+Let $k$ be a field, let $X$ be a $k$-prescheme locally of finite type
+over $k$, let $\sh F$ be a coherent $\sh O_X$-Module, and let $x$ be
+a maximal point of $\operatorname{Supp}(\sh F)$.
+The
+----- French corrections on page IV-2 78 -----
+[id 12959]
+OLD: finie non nulle sont
+NEW: finie \emph{non nulle} sont
+FRENCH CONTEXT (corrected): cr F_x)
+=\operatorname{long}(\mathscr F'_x)+\operatorname{long}(\mathscr F''_x)$.
+\end{proof}
+
+\begin{env}[4.7.7]
+\label{IV.2.4.7.7-fr}
+Sous les hypothèses de (4.7.5), les seuls points $x\in X$ tels que
+$\mathscr F_x$ soit un $\mathcal O_x$-module de longueur finie \emph{non nulle} sont
+(en vertu de (3.1.2)) \emph{les points maximaux de}
+$\operatorname{Supp}(\mathscr F)$, comme il résulte de Bourbaki,
+\emph{Alg. comm.}, chap.~IV, \S~2, n\textsuperscript{o}~5, cor.~2 de la
+prop.~7, la question étant locale sur $X$. On sait qu'il existe un
+sou
+
+[id 12960]
+OLD: (3.1.2)) les points maximaux de
+NEW: (3.1.2)) \emph{les points maximaux de}
+FRENCH CONTEXT (corrected): x)+\operatorname{long}(\mathscr F''_x)$.
+\end{proof}
+
+\begin{env}[4.7.7]
+\label{IV.2.4.7.7-fr}
+Sous les hypothèses de (4.7.5), les seuls points $x\in X$ tels que
+$\mathscr F_x$ soit un $\mathcal O_x$-module de longueur finie \emph{non nulle} sont
+(en vertu de (3.1.2)) \emph{les points maximaux de}
+$\operatorname{Supp}(\mathscr F)$, comme il résulte de Bourbaki,
+\emph{Alg. comm.}, chap.~IV, \S~2, n\textsuperscript{o}~5, cor.~2 de la
+prop.~7, la question étant locale sur $X$. On sait qu'il existe un
+sous-préschéma fermé $Y$ ayant $\operatorname{Supp}(\ma
+
+[id 12961]
+OLD: sont égales,
+NEW: sont \emph{égales},
+FRENCH CONTEXT (corrected): pace
+sous-jacent, et un $\mathcal O_Y$-Module cohérent $\mathscr G$ tel que
+$\mathscr F=j_*(\mathscr G)$, $j:Y\to X$ étant l'injection canonique. Si $x$
+est point maximal de $Y$, on voit que les longueurs géométriques de
+$\mathscr F$ et de $\mathscr G$ en $x$ sont \emph{égales}, $\mathcal O_{X,x}$ et
+$\mathcal O_{Y,x}$ ayant même corps résiduels. On en déduit la caractérisation
+suivante de la longueur géométrique:
+\end{env}
+
+\begin{proposition}[4.7.8]
+\label{IV.2.4.7.8-fr}
+Sous les hypothèses de \textup{(4.7.5)}, soit $x$ un point ma
+
+[id 12968]
+OLD: la multiplicité radicielle du cycle premier maximal
+NEW: la \emph{multiplicité radicielle du cycle premier maximal}
+FRENCH CONTEXT (corrected):  assertion. La seconde se démontre de
+même, en remplaçant $k'$ par $k_1$ et utilisant (4.7.3, (iii)).
+\end{proof}
+
+On dit encore, dans le cas où $x$ est point maximal de
+$\operatorname{Supp}(\mathscr F)$, que la longueur géométrique de $\mathscr F$
+en $x$ est la \emph{multiplicité radicielle du cycle premier maximal}
+$\overline{\{x\}}$ associé à $\mathscr F$.
+
+\begin{corollary}[4.7.9]
+\label{IV.2.4.7.9-fr}
+Sous les hypothèses de \textup{(4.7.5)}, soient $k'$ une extension de $k$,
+$X'=X\otimes_k k'$, $\mathscr F'=\mathscr F\otimes_k k'$; soient $Z$ une
+composante irréducti
+
+=================== PAGE IV-2 79 ===================
+----- (English page IV-2 78: shown above in this file) -----
+----- (English page IV-2 79: shown above in this file) -----
+----- English, components/07_section47_multiplicities_primary_decomposition.tex, page IV-2 80 -----
+\oldpage[IV-2]{80}
+total multiplicity of $x$ (or of the prime cycle
+$\overline{\{x\}}$) for $\sh F$ (relative to $k$) is the product of
+the radicial multiplicity of $x$ for $\sh F$ and the separable
+multiplicity of $\kres(x)$ over $k$.
+\end{definition}
+
+Equivalently, the total multiplicity of $x$ for $\sh F$ is the
+product of the \emph{length}
+$\operatorname{length}_{\sh O_x}(\sh F_x)$ and the total
+multiplicity of $\kres(x)$ over $k$ \sref{IV.4.7.4}.
+With the notation of \sref{IV.4.7.11}, the total multiplicity of $x$
+for $\sh F$ is equal to the \emph{sum} of the total multiplicities, for $\sh F'$, of
+the maximal points $x'_i$ of $\operatorname{Supp}(\sh F')$ above $x$;
+moreover, there exists a \emph{finite} extension $k'$ of $k$ such that the total
+multiplicity of $x$ for $\sh F$ is \emph{equal to} $\sum_i\operatorname{length}(\sh F'_{x'_i})$.
+
+\begin{proposition}[4.7.13]
+\phantomsection
+\label{IV.4.7.13}
+Under the hypotheses and notation of \sref{IV.4.7.10}, it is
+sufficient, for $\sh F$ to be geometrically punctually integral at
+$x$, that $x$ belong to only one associated prime cycle of $\sh F$
+(necessarily non-embedded), and that the total multiplicity for
+$\sh F$ of the generic point $z$ of that cycle be $1$.
+\end{proposition}
+
+\begin{proof}
+Let $k'/k$ be finite, let $x'$ be a point of
+$X'=X\otimes_k k'$ above $x$, and put
+$\sh F'=\sh F\otimes_k k'$.
+The point $x'$ can belong to only one associated prime cycle of
+$\sh F'$, since by hypothesis there is only one maximal point of
+$\operatorname{Supp}(\sh F')$ above $z$.
+Moreover, $\sh F$ is geometrically reduced by
+\sref{IV.4.7.10}.
+The conclusion follows.
+\end{proof}
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 80 -----
+\subsection{Fields of definition}
+\phantomsection
+\label{subsection:IV.4.8}
+
+\begin{env}[4.8.1]
+\phantomsection
+\label{IV.4.8.1}
+Given a prescheme $X$, throughout this section we denote by
+$\mathfrak S(X)$ the set of sub-preschemes of $X$, and, as usual, by
+$\mathfrak P(X)$ the set of subsets of the underlying space of $X$.
+For every quasi-coherent $\sh O_X$-Module $\sh F$, we denote by
+$\Phi(\sh F)$ the set of quasi-coherent sub-$\sh O_X$-Modules of
+$\sh F$.
+\end{env}
+
+\begin{env}[4.8.2]
+\phantomsection
+\label{IV.4.8.2}
+Let $k$ be a field, let $X$ and $Y$ be two $k$-preschemes, let
+$\sh F$ and $\sh G$ be two quasi-coherent $\sh O_X$-Modules, and let
+$K'\subset K$ be two extensions of $k$.
+Corresponding to the morphism $\Spec(K)\to\Spec(K')$, there are
+canonical maps
+\begin{align}
+\Phi(\sh F\otimes_kK')
+  &\longrightarrow \Phi(\sh F\otimes_kK)
+\tag{4.8.2.1}
+\label{IV.4.8.2.1}\\
+\operatorname{Hom}(\sh F\otimes_kK',\sh G\otimes_kK')
+  &\longrightarrow
+   \operatorname{Hom}(\sh F\otimes_kK,\sh G\otimes_kK)
+\tag{4.8.2.2}
+\label{IV.4.8.2.2}\\
+\mathfrak S(X_{(K')})
+  &\longrightarrow \mathfrak S(X_{(K)}),
+\tag{4.8.2.3}
+\label{IV.4.8.2.3}\\
+\operatorname{Hom}_{K'}(X_{(K')},Y_{(K')})
+  &\longrightarrow \operatorname{Hom}_{K}(X_{(K)},Y_{(K)})
+\tag{4.8.2.4}
+\label{IV.4.8.2.4}\\
+\mathfrak P(X_{(K')})
+  &\longrightarrow \mathfrak P(X_{(K)})
+\tag{4.8.2.5}
+\label{IV.4.8.2.5}
+\end{align}
+If $p_X:X_{(K)}\to X_{(K')}$ is the canonical projection, then
+\sref{IV.4.8.2.5} sends $M$ to $p_X^{-1}(M)$, and similarly
+\sref{IV.4.8.2.3} sends $Z$ to
+$p_X^{-1}(Z)=Z\otimes_{K'}K$ \sref[I]{I.4.4.1}.
+Map \sref{IV.4.8.2.1} is $\sh H\leadsto
+p_X^*(\sh H)
+=
+\sh H\otimes_{\sh O_{X_{(K')}}}\sh O_{X_{(K)}}$;
+\sref{IV.4.8.2.2} sends $u$ to $p_X^*(u)$; and
+\sref{IV.4.8.2.4} sends $f$ to $f_{(K)}$.
+
+If $\varepsilon_{K,K'}$ denotes any one of these canonical maps, and if
+$K''\subset K'\subset K$ are three extensions of $k$, then
+\begin{equation}
+\varepsilon_{K,K''}=\varepsilon_{K,K'}\circ\varepsilon_{K',K''}.
+\tag{4.8.2.6}
+\label{IV.4.8.2.6}
+\end{equation}
+\end{env}
+----- French corrections on page IV-2 79 -----
+[id 12972]
+OLD: pour une extension finie
+NEW: pour \emph{une} extension finie
+FRENCH CONTEXT (corrected):  contenant $x'$, un tel point étant
+au-dessus d'un des $z_i$ en vertu de (2.3.4); \emph{a fortiori} on a
+$\operatorname{long}(\mathscr F'_{z'_j})=1$, ce qui prouve que $\mathscr F'$
+est réduit au point $x'$.
+
+Inversement, il résulte d'abord de (4.2.7) que si, pour \emph{une} extension finie
+$k'$ de $k$, $\mathscr F'$ est réduit en tous les points $x'$ de $X'$
+au-dessus de $x$, alors $x$ n'appartient à aucun cycle premier associé immergé
+de $\mathscr F$. En outre, en prenant pour $k'$ le corps $k_1$ de l'énoncé de
+(4.7.8) (où $x$ est remplacé par
+
+[id 12973]
+OLD: réduit (resp. géométriquement ponctuellement intègre) au point
+$x$,
+NEW: réduit \textup{(resp.} géométriquement ponctuellement intègre\textup{)} au point
+$x$,
+FRENCH CONTEXT (corrected):  de type fini sur $k$,
+$\mathscr F$ un $\mathcal O_X$-Module cohérent, $k'$ une extension de $k$,
+$X'=X\otimes_k k'$, $\mathscr F'=\mathscr F\otimes_k k'$, $x$ un point de
+$X$, $x'$ un point de $X'$ au-dessus de $x$. Pour que $\mathscr F$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre\textup{)} au point
+$x$, il faut et il suffit que $\mathscr F'$ soit géométriquement réduit \textup{(resp.}
+géométriquement ponctuellement intègre\textup{)} au point $x'$.
+\end{proposition}
+
+\begin{proof}
+Les composantes irréductibles de $\operatorname{Supp}(\mathscr F')$ contenant
+$
+
+[id 12974]
+OLD: réduit (resp.
+géométriquement ponctuellement intègre) au point $x'$.
+NEW: réduit \textup{(resp.}
+géométriquement ponctuellement intègre\textup{)} au point $x'$.
+FRENCH CONTEXT (corrected): es_k k'$, $x$ un point de
+$X$, $x'$ un point de $X'$ au-dessus de $x$. Pour que $\mathscr F$ soit
+géométriquement réduit \textup{(resp.} géométriquement ponctuellement intègre\textup{)} au point
+$x$, il faut et il suffit que $\mathscr F'$ soit géométriquement réduit \textup{(resp.}
+géométriquement ponctuellement intègre\textup{)} au point $x'$.
+\end{proposition}
+
+\begin{proof}
+Les composantes irréductibles de $\operatorname{Supp}(\mathscr F')$ contenant
+$x'$ dominent chacune une composante irréductible de
+$\operatorname{Supp}(\mathscr F)$ contenant $x$, et inversement chacune de
+ces dernières est do
+
+[id 12976]
+OLD: On appelle \emph{multiplicité}
+NEW: On appelle multiplicité
+FRENCH CONTEXT (corrected): ion résulte de (4.6.10).
+\end{proof}
+
+\begin{definition}[4.7.12]
+\label{IV.2.4.7.12-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement de type fini sur $k$,
+$\mathscr F$ un $\mathcal O_X$-Module cohérent, $x$ un point maximal du
+support de $\mathscr F$. On appelle multiplicité
+\oldpage[IV-2]{80}
+totale de $x$ (ou du
+cycle premier $\overline{\{x\}}$) pour $\mathscr F$ (relative à $k$) le
+produit de la multiplicité radicielle de $x$ pour $\mathscr F$ par la
+multiplicité séparable de $\boldsymbol{k}(x)$ sur $k$.
+\end{definition}
+
+Il r
+
+=================== PAGE IV-2 80 ===================
+----- (English page IV-2 79: shown above in this file) -----
+----- (English page IV-2 80: shown above in this file) -----
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 81 -----
+\oldpage[IV-2]{81}
+
+\begin{proposition}[4.8.3]
+\phantomsection
+\label{IV.4.8.3}
+The canonical maps \sref{IV.4.8.2.1}--\sref{IV.4.8.2.5} are
+injective.
+\end{proposition}
+
+\begin{proof}
+The morphism $p_X$ is faithfully flat and \emph{quasi-compact}.
+The injectivity of \sref{IV.4.8.2.5} follows from the surjectivity of
+$p_X$.
+The injectivity of \sref{IV.4.8.2.1} follows from
+\sref{IV.2.2.2}, that of \sref{IV.4.8.2.2} from
+\sref{IV.2.2.7}, that of \sref{IV.4.8.2.3} from
+\sref{IV.2.2.15}, and that of \sref{IV.4.8.2.4} from
+\sref{IV.2.2.16}.
+\end{proof}
+
+\begin{definition}[4.8.4]
+\phantomsection
+\label{IV.4.8.4}
+With the notation of \sref{IV.4.8.2}, a quasi-coherent
+sub-$\sh O_{X_{(K)}}$-Module of $\sh F\otimes_kK$
+(resp.\ a homomorphism
+$\sh F\otimes_kK\to\sh G\otimes_kK$, a sub-prescheme of $X_{(K)}$,
+a $K$-morphism $X_{(K)}\to Y_{(K)}$, or a subset of $X_{(K)}$\textup{)}
+is said to be \emph{defined over $K'$} if it belongs to the image of
+\sref{IV.4.8.2.1}
+(resp.\ \sref{IV.4.8.2.2}, \sref{IV.4.8.2.3},
+\sref{IV.4.8.2.4}, or \sref{IV.4.8.2.5}).
+The field $K'$ is then called a \emph{field of definition} of the
+object in question.
+\end{definition}
+
+Clearly, $K$ itself is a field of definition for every object in any
+of the five target sets in \sref{IV.4.8.2}.
+One should note, however, that for a $K$-prescheme $Z$, to say that a
+quasi-coherent $\sh O_Z$-Module $\sh H$ is ``defined over a subfield
+$K'$ of $K$'' has no meaning unless $Z$ has been \emph{given} in the
+form $X_{(K)}$ for a prescheme $X$ over a subfield $k$ of $K$, and
+unless $\sh H$ is a sub-$\sh O_Z$-Module of an $\sh O_Z$-Module that
+has been \emph{given} in the form $\sh F\otimes_kK$, where $\sh F$ is
+a quasi-coherent $\sh O_X$-Module.
+Analogous remarks apply to the other notions.
+
+It follows from \sref{IV.4.8.2.6} that if an object in one of the
+five target sets in \sref{IV.4.8.2} is defined over $K'$, then it is
+also defined over every intermediate field $K''$ with
+$K'\subset K''\subset K$.
+Finally, if $K_1/K$ is an extension, then an object in a source set
+of $\varepsilon_{K_1,K}$ is defined over $K'$ if and only if its image under
+$\varepsilon_{K_1,K}$ is defined over $K'$; this follows from $\varepsilon_{K_1,K'}=\varepsilon_{K_1,K}\circ\varepsilon_{K,K'}$.
+
+\begin{proposition}[4.8.5]
+\phantomsection
+\label{IV.4.8.5}
+With the notation of \sref{IV.4.8.2}, let $(X_\alpha)$ be an open
+covering of $X$.
+For an element $\sh H\in\Phi(\sh F\otimes_kK)$ \textup{(resp.}
+$u\in\operatorname{Hom}(\sh F\otimes_kK,\sh G\otimes_kK)$, \textup{resp.}
+$Z\in\mathfrak S(X_{(K)})$, \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)}
+to be defined over $K'$, it is necessary and sufficient that, for every
+$\alpha$, $\sh H|(X_\alpha)_{(K)}$ \textup{(resp.} $u|(X_\alpha)_{(K)}$,
+$Z\cap(X_\alpha)_{(K)}$, $M\cap(X_\alpha)_{(K)}$\textup{)} be defined over $K'$.
+\end{proposition}
+
+\begin{proof}
+This follows immediately from the injectivity of the maps
+\sref{IV.4.8.2.1}, \sref{IV.4.8.2.2}, \sref{IV.4.8.2.3}, and
+\sref{IV.4.8.2.5}: for example, if for every $\alpha$ there is a
+quasi-coherent sub-$\sh O_{(X_\alpha)_{(K')}}$-Module
+$\sh H'_\alpha$ of $(\sh F|X_\alpha)\otimes_kK'$ such that
+$\sh H|(X_\alpha)_{(K)}=\sh H'_\alpha\otimes_{K'}K$, then for any two
+indices $\alpha$, $\beta$ we shall have
+\[
+\sh H|(X_\alpha\cap X_\beta)_{(K)}
+=\bigl(\sh H'_\alpha|(X_\alpha\cap X_\beta)_{(K')}\bigr)\otimes_{K'}K
+=\bigl(\sh H'_\beta|(X_\alpha\cap X_\beta)_{(K')}\bigr)\otimes_{K'}K,
+\]
+hence necessarily
+$\sh H'_\alpha|(X_\alpha\cap X_\beta)_{(K')}=\sh H'_\beta|(X_\alpha\cap X_\beta)_{(K')}$
+whatever $\alpha$ and $\beta$ are, and there is therefore a quasi-coherent
+sub-$\sh O_{X_{(K')}}$-Module $\sh H'$ of $\sh F\otimes_kK'$ such that
+$\sh H'|(X_\alpha)_{(K')}=\sh H'_\alpha$ for every $\alpha$, hence
+$\sh H=\sh H'\otimes_{K'}K$.
+One reasons in the same way in the other cases.
+\end{proof}
+
+\begin{lemma}[4.8.6]
+\phantomsection
+\label{IV.4.8.6}
+Let $k$ be a field, let $K/k$ be an extension, let $A$ be a
+$k$-algebra, let $M$ be an $A$-module, let $\overline N$ be an
+$A_{(K)}$-submodule of $M_{(K)}$, and let $K'$ be an intermediate
+field of $K/k$.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.8.6.a}
+$\overline N=N'\otimes_{K'}K$, where $N'$ is an
+$A_{(K')}$-submodule of $M_{(K')}$;
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.8.6.b}
+if $X=\Spec(A)$, the quasi-coherent
+$\sh O_{X_{(K)}}$-Module $(\overline N)^{\sim}$ on
+$X_{(K)}=\Spec(A_{(K)})$ is defined over $K'$;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.8.6.c}
+$\overline N=N'\otimes_{K'}K$, where $N'$ is a $K'$-vector
+subspace of $M_{(K')}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+----- French corrections on page IV-2 80 -----
+[id 12978]
+OLD: \emph{totale de $x$}
+NEW: totale de $x$
+FRENCH CONTEXT (corrected): n{definition}[4.7.12]
+\label{IV.2.4.7.12-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma localement de type fini sur $k$,
+$\mathscr F$ un $\mathcal O_X$-Module cohérent, $x$ un point maximal du
+support de $\mathscr F$. On appelle multiplicité
+\oldpage[IV-2]{80}
+totale de $x$ (ou du
+cycle premier $\overline{\{x\}}$) pour $\mathscr F$ (relative à $k$) le
+produit de la multiplicité radicielle de $x$ pour $\mathscr F$ par la
+multiplicité séparable de $\boldsymbol{k}(x)$ sur $k$.
+\end{definition}
+
+Il revient au même de dire que la mul
+
+[id 12980]
+OLD: la longueur
+NEW: la \emph{longueur}
+FRENCH CONTEXT (corrected): (relative à $k$) le
+produit de la multiplicité radicielle de $x$ pour $\mathscr F$ par la
+multiplicité séparable de $\boldsymbol{k}(x)$ sur $k$.
+\end{definition}
+
+Il revient au même de dire que la multiplicité totale de $x$ pour $\mathscr F$
+est le produit de la \emph{longueur}
+$\operatorname{long}_{\mathcal O_x}(\mathscr F_x)$ par la multiplicité totale
+de $\boldsymbol{k}(x)$ sur $k$ (4.7.4). Avec les notations de (4.7.11), la multiplicité
+totale de $x$ pour $\mathscr F$ est égale à la \emph{somme} des multiplicités totales
+pour $\
+
+[id 12982]
+OLD: la somme des
+NEW: la \emph{somme} des
+FRENCH CONTEXT (corrected): $\mathscr F$
+est le produit de la \emph{longueur}
+$\operatorname{long}_{\mathcal O_x}(\mathscr F_x)$ par la multiplicité totale
+de $\boldsymbol{k}(x)$ sur $k$ (4.7.4). Avec les notations de (4.7.11), la multiplicité
+totale de $x$ pour $\mathscr F$ est égale à la \emph{somme} des multiplicités totales
+pour $\mathscr F'$ des points maximaux $x'_i$ de
+$\operatorname{Supp}(\mathscr F')$ qui sont au-dessus de $x$; en outre, il
+existe une extension \emph{finie} $k'$ de $k$, telle que la multiplicité totale de
+$x$ pour $\mathscr F$ soit \em
+
+[id 12983]
+OLD: extension finie $k'$
+NEW: extension \emph{finie} $k'$
+FRENCH CONTEXT (corrected): notations de (4.7.11), la multiplicité
+totale de $x$ pour $\mathscr F$ est égale à la \emph{somme} des multiplicités totales
+pour $\mathscr F'$ des points maximaux $x'_i$ de
+$\operatorname{Supp}(\mathscr F')$ qui sont au-dessus de $x$; en outre, il
+existe une extension \emph{finie} $k'$ de $k$, telle que la multiplicité totale de
+$x$ pour $\mathscr F$ soit \emph{égale à}
+$\sum_i\operatorname{long}(\mathscr F'_{x'_i})$.
+
+\begin{proposition}[4.7.13]
+\label{IV.2.4.7.13-fr}
+Les hypothèses et les notations étant celles de \textup{(4.7.10)}, pour 
+
+[id 12984]
+OLD: soit égale à
+$\sum_i
+NEW: soit \emph{égale à}
+$\sum_i
+FRENCH CONTEXT (corrected): mme} des multiplicités totales
+pour $\mathscr F'$ des points maximaux $x'_i$ de
+$\operatorname{Supp}(\mathscr F')$ qui sont au-dessus de $x$; en outre, il
+existe une extension \emph{finie} $k'$ de $k$, telle que la multiplicité totale de
+$x$ pour $\mathscr F$ soit \emph{égale à}
+$\sum_i\operatorname{long}(\mathscr F'_{x'_i})$.
+
+\begin{proposition}[4.7.13]
+\label{IV.2.4.7.13-fr}
+Les hypothèses et les notations étant celles de \textup{(4.7.10)}, pour que
+$\mathscr F$ soit géométriquement ponctuellement intègre au point $x$, il
+suffit que $x$ n
+
+[id 12986]
+OLD: \subsection{Corps de définition}
+NEW: \subsection{Corps de définition.}
+FRENCH CONTEXT (corrected): à un seul
+cycle premier associé à $\mathscr F'$, puisqu'il n'y a qu'un seul point
+maximal de $\operatorname{Supp}(\mathscr F')$ au-dessus de $z$ par hypothèse;
+en outre, $\mathscr F$ est géométriquement réduit d'après (4.7.10), d'où la
+conclusion.
+\end{proof}
+\subsection{Corps de définition.}
+\label{subsection:IV.4.8-fr}
+
+\begin{env}[4.8.1]
+\label{IV.2.4.8.1-fr}
+Étant donné un préschéma $X$, nous désignerons, dans ce numéro, par
+$\mathfrak S(X)$ l'ensemble des sous-préschémas de $X$, et comme d'ordinaire
+par $\mathfrak P(X)$ l'ensemble des parties
+
+[id 12989]
+OLD: \mathfrak S(X_{(K)}),
+NEW: \mathfrak S(X_{(K)})
+FRENCH CONTEXT (corrected): \tag{4.8.2.1}
+\label{IV.2.4.8.2.1-fr}\\
+\operatorname{Hom}(\mathscr F\otimes_kK',\mathscr G\otimes_kK')
+&\longrightarrow
+\operatorname{Hom}(\mathscr F\otimes_kK,\mathscr G\otimes_kK)
+\tag{4.8.2.2}
+\label{IV.2.4.8.2.2-fr}\\
+\mathfrak S(X_{(K')})&\longrightarrow\mathfrak S(X_{(K)})
+\tag{4.8.2.3}
+\label{IV.2.4.8.2.3-fr}\\
+\operatorname{Hom}_{K'}(X_{(K')},Y_{(K')})
+&\longrightarrow\operatorname{Hom}_K(X_{(K)},Y_{(K)})
+\tag{4.8.2.4}
+\label{IV.2.4.8.2.4-fr}\\
+\mathfrak P(X_{(K')})&\longrightarrow\mathfrak P(X_{(K)})
+\tag{4.8.2.5}
+\label{IV.
+
+=================== PAGE IV-2 81 ===================
+----- (English page IV-2 80: shown above in this file) -----
+----- (English page IV-2 81: shown above in this file) -----
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 82 -----
+\oldpage[IV-2]{82}
+The equivalence of \emph{(a)} and \emph{(b)} follows immediately from
+\sref[I]{I.1.6.5}, and \emph{(a)} plainly implies \emph{(c)}.
+Conversely, if \emph{(c)} holds, then, up to the canonical
+identification, $N'=\overline N\cap M_{(K')}$.
+Since $\overline N$ and $M_{(K')}$ are $A_{(K')}$-submodules, so is
+$N'$.
+\end{proof}
+
+\begin{corollary}[4.8.7]
+\phantomsection
+\label{IV.4.8.7}
+Under the hypotheses of \sref{IV.4.8.6}, there is a smallest subfield
+$K'$ of $K$ containing $k$ for which the equivalent conditions of
+\sref{IV.4.8.6} hold.
+\end{corollary}
+
+\begin{proof}
+It is enough to use condition \emph{(c)}, for which the assertion is
+Bourbaki, \emph{Alg.}, chap.~II, 3rd ed., \S~8,
+n\textsuperscript{o}~6, prop.~6.
+\end{proof}
+
+\begin{lemma}[4.8.8]
+\phantomsection
+\label{IV.4.8.8}
+With the notation of \sref{IV.4.8.2}:
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.8.8.i}
+Let
+$\overline u:\sh F\otimes_kK\to\sh G\otimes_kK$ be an
+$\sh O_{X_{(K)}}$-homomorphism, and let $\overline{\sh H}\subset
+(\sh F\otimes_kK)\oplus(\sh G\otimes_kK)$
+be its graph.
+Then $\overline u$ is defined over $K'$ if and only if
+$\overline{\sh H}$ is.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.8.8.ii}
+Let $\overline Z$ be a closed sub-prescheme of $X_{(K)}$, and let
+$\overline{\sh J}$ be the quasi-coherent Ideal of
+$\sh O_{X_{(K)}}$ defining $\overline Z$.
+Then $\overline Z$ is defined over $K'$ if and only if
+$\overline{\sh J}$ is.
+
+\item[\rm\textup{(iii)}]
+\phantomsection
+\label{IV.4.8.8.iii}
+Let $\overline f:X_{(K)}\to Y_{(K)}$ be a $K$-morphism, and let
+$\overline Z$ be its graph, regarded as a sub-prescheme of
+$X_{(K)}\times_KY_{(K)}$ \sref[I]{I.5.3.11}.
+Then $\overline f$ is defined over $K'$ if and only if
+$\overline Z$ is.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Assertion \emph{(ii)} follows immediately from \sref[I]{I.4.4.5}.
+Necessity in \emph{(iii)} is clear.
+Conversely, suppose
+$\overline Z=Z'_{(K)}$, where $Z'$ is a sub-prescheme of
+$(X\times_kY)_{(K')}$.
+If $p':Z'\to X_{(K')}$ is the restriction of the first projection,
+then $p'_{(K)}$ is an isomorphism, and hence so is $p'$
+\sref{IV.2.7.1},~(viii).
+Thus $Z'$ is the graph of a $K'$-morphism
+$f':X_{(K')}\to Y_{(K')}$ \sref[I]{I.5.3.11}, and
+$\overline f=f'_{(K)}$ \sref[I]{I.5.3.12}.
+
+Finally, to prove \emph{(i)}, \sref{IV.4.8.5} permits us to assume
+$X=\Spec(A)$ affine, with $\sh F=\widetilde M$,
+$\sh G=\widetilde N$, and
+$\overline u=\widetilde{\overline v}$ for an
+$A_{(K)}$-homomorphism
+$\overline v:M_{(K)}\to N_{(K)}$.
+Suppose the graph of $\overline v$ is
+$P'_{(K)}$, where $P'$ is an $A_{(K')}$-submodule of
+$M_{(K')}\oplus N_{(K')}$.
+If $p':P'\to M_{(K')}$ is the restriction of the first projection,
+then $p'\otimes1_K$ is an isomorphism of $A_{(K)}$-modules.
+Faithful flatness \sref[0\textsubscript{\mdseries I}]{0.6.4.1} implies that $p'$ is an
+isomorphism of $A_{(K')}$-modules.
+Hence $P'$ is the graph of an $A_{(K')}$-homomorphism
+$v':M_{(K')}\to N_{(K')}$, and plainly
+$\overline v=v'\otimes1_K$.
+\end{proof}
+
+\begin{proposition}[4.8.9]
+\phantomsection
+\label{IV.4.8.9}
+Let $k$ be a field, let $K/k$ be an extension, let $X$ be a
+$k$-prescheme, let $\sh F$ be a quasi-coherent $\sh O_X$-Module, and
+let $\overline{\sh H}$ be a quasi-coherent
+sub-$\sh O_{X_{(K)}}$-Module of
+$\sh F\otimes_kK$.
+Then $\overline{\sh H}$ has a smallest field of definition.
+\end{proposition}
+
+\begin{proof}
+When $X$ is affine, this is precisely \sref{IV.4.8.7}.
+In general, let $(X_\alpha)$ be an affine open covering of $X$.
+By what precedes, for every $\alpha$ there is a smallest subfield $K'_\alpha$ of $K$
+containing $k$ and such that
+$\overline{\sh H}|(X_\alpha)_{(K)}$ is defined over $K'_\alpha$.
+By \sref{IV.4.8.5}, the subfield of $K$ generated by the
+$K'_\alpha$ is the smallest field of definition of $\overline{\sh H}$.
+\end{proof}
+
+\begin{corollary}[4.8.10]
+\phantomsection
+\label{IV.4.8.10}
+With the notation of \sref{IV.4.8.9}, let $\sh G$ be a second
+quasi-coherent $\sh O_X$-Module and let $\overline u:\sh F\otimes_kK\longrightarrow\sh G\otimes_kK$
+be an $\sh O_{X_{(K)}}$-homomorphism.
+Then $\overline u$ has a smallest field of definition.
+\end{corollary}
+
+\begin{proof}
+By \sref{IV.4.8.8},~(i), such a field is also the smallest field of
+definition of the graph of $\overline u$, whose existence follows
+from \sref{IV.4.8.9}.
+\end{proof}
+----- French corrections on page IV-2 81 -----
+[id 13000]
+OLD: est fidèlement plat
+NEW: est \emph{fidèlement plat}
+FRENCH CONTEXT (corrected): el{IV.2.4.8.2.6-fr}
+\end{equation}
+\end{env}
+
+\oldpage[IV-2]{81}
+
+\begin{proposition}[4.8.3]
+\label{IV.2.4.8.3-fr}
+Les applications canoniques \textup{(4.8.2.1)} à \textup{(4.8.2.5)} sont injectives.
+\end{proposition}
+
+\begin{proof}
+On sait en effet que $p_X$ est \emph{fidèlement plat} et \emph{quasi-compact}; le fait que
+(4.8.2.5) soit injectif résulte donc de ce que $p_X$ est surjectif.
+L'injectivité de (4.8.2.1) résulte de (2.2.2), celle de (4.8.2.2) de (2.2.7),
+celle de (4.8.2.3) de (2.2.15) et enfin celle de (4.8.2.4) de (2.2.16).
+\end
+
+[id 13003]
+OLD: (resp. un homomorphisme
+NEW: \textup{(resp.} un homomorphisme
+FRENCH CONTEXT (corrected): 4.8.2.3) de (2.2.15) et enfin celle de (4.8.2.4) de (2.2.16).
+\end{proof}
+
+\begin{definition}[4.8.4]
+\label{IV.2.4.8.4-fr}
+Les notations étant celles de \textup{(4.8.2)}, on dit qu'un
+sous-$\mathcal O_{X_{(K)}}$-Module quasi-cohérent de
+$\mathscr F\otimes_kK$ \textup{(resp.} un homomorphisme
+$\mathscr F\otimes_kK\to\mathscr G\otimes_kK$, \textup{resp.} un sous-préschéma de
+$X_{(K)}$, \textup{resp.} un $K$-morphisme $X_{(K)}\to Y_{(K)}$, \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)} est \emph{défini sur $K'$} s'il appartient à
+l'image de 
+
+[id 13004]
+OLD: resp. un sous-préschéma
+NEW: \textup{resp.} un sous-préschéma
+FRENCH CONTEXT (corrected): n{definition}[4.8.4]
+\label{IV.2.4.8.4-fr}
+Les notations étant celles de \textup{(4.8.2)}, on dit qu'un
+sous-$\mathcal O_{X_{(K)}}$-Module quasi-cohérent de
+$\mathscr F\otimes_kK$ \textup{(resp.} un homomorphisme
+$\mathscr F\otimes_kK\to\mathscr G\otimes_kK$, \textup{resp.} un sous-préschéma de
+$X_{(K)}$, \textup{resp.} un $K$-morphisme $X_{(K)}\to Y_{(K)}$, \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)} est \emph{défini sur $K'$} s'il appartient à
+l'image de l'application \textup{(4.8.2.1) (resp. (4.8.2.2), resp. (4.8.2.3), resp.
+(4.8.2.
+
+[id 13005]
+OLD: resp. un $K$-morphisme
+NEW: \textup{resp.} un $K$-morphisme
+FRENCH CONTEXT (corrected): notations étant celles de \textup{(4.8.2)}, on dit qu'un
+sous-$\mathcal O_{X_{(K)}}$-Module quasi-cohérent de
+$\mathscr F\otimes_kK$ \textup{(resp.} un homomorphisme
+$\mathscr F\otimes_kK\to\mathscr G\otimes_kK$, \textup{resp.} un sous-préschéma de
+$X_{(K)}$, \textup{resp.} un $K$-morphisme $X_{(K)}\to Y_{(K)}$, \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)} est \emph{défini sur $K'$} s'il appartient à
+l'image de l'application \textup{(4.8.2.1) (resp. (4.8.2.2), resp. (4.8.2.3), resp.
+(4.8.2.4), resp. (4.8.2.5))}. On dit alors que $K'$ e
+
+[id 13006]
+OLD: resp. un
+sous-ensemble de $X_{(K)}$)
+NEW: \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)}
+FRENCH CONTEXT (corrected): un
+sous-$\mathcal O_{X_{(K)}}$-Module quasi-cohérent de
+$\mathscr F\otimes_kK$ \textup{(resp.} un homomorphisme
+$\mathscr F\otimes_kK\to\mathscr G\otimes_kK$, \textup{resp.} un sous-préschéma de
+$X_{(K)}$, \textup{resp.} un $K$-morphisme $X_{(K)}\to Y_{(K)}$, \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)} est \emph{défini sur $K'$} s'il appartient à
+l'image de l'application \textup{(4.8.2.1) (resp. (4.8.2.2), resp. (4.8.2.3), resp.
+(4.8.2.4), resp. (4.8.2.5))}. On dit alors que $K'$ est un corps de
+définition de l'objet considéré.
+\end{definition}
+
+Il est clai
+
+[id 13008]
+OLD: \emph{corps de
+définition}
+NEW: corps de
+définition
+FRENCH CONTEXT (corrected): K)}\to Y_{(K)}$, \textup{resp.} un
+sous-ensemble de $X_{(K)}$\textup{)} est \emph{défini sur $K'$} s'il appartient à
+l'image de l'application \textup{(4.8.2.1) (resp. (4.8.2.2), resp. (4.8.2.3), resp.
+(4.8.2.4), resp. (4.8.2.5))}. On dit alors que $K'$ est un corps de
+définition de l'objet considéré.
+\end{definition}
+
+Il est clair que $K$ lui-même est corps de définition d'un élément de l'un
+quelconque des cinq ensembles d'arrivée des applications (4.8.2.1) à
+(4.8.2.5). On notera toutefois que pour un $K$-préschéma $Z$, dire par exem
+
+[id 13009]
+OLD: (4.8.2) est défini sur
+NEW: (4.8.2) est \emph{défini sur}
+FRENCH CONTEXT (corrected): a été donné} sous la forme $\mathscr F\otimes_kK$, où $\mathscr F$ est
+un $\mathcal O_X$-Module quasi-cohérent; on a des remarques analogues pour les
+autres notions. Il résulte de (4.8.2.6) que si un élément de l'un des ensembles
+d'arrivée des applications de (4.8.2) est \emph{défini sur} $K'$, il est aussi défini
+sur tout corps $K''$ tel que $K'\subset K''\subset K$. Enfin, avec les
+notations de (4.8.2.6), si $K_1$ est une extension de $K$, pour qu'un élément
+de l'ensemble d'arrivée de $\varepsilon_{K,K'}$ soit défini sur $K'$, il
+faut et il 
+
+[id 13011]
+OLD: (resp.
+$u\in
+NEW: \textup{(resp.}
+$u\in
+FRENCH CONTEXT (corrected): silon_{K_1,K'}=\varepsilon_{K_1,K}\circ\varepsilon_{K,K'}$.
+
+\begin{proposition}[4.8.5]
+\label{IV.2.4.8.5-fr}
+Avec les notations de \textup{(4.8.2)}, soit $(X_\alpha)$ un recouvrement ouvert de
+$X$. Pour qu'un élément $\mathscr H\in\Phi(\mathscr F\otimes_kK)$ \textup{(resp.}
+$u\in\operatorname{Hom}(\mathscr F\otimes_kK,\mathscr G\otimes_kK)$, \textup{resp.}
+$Z\in\mathfrak S(X_{(K)})$, \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)} soit défini sur
+$K'$, il faut et il suffit que pour tout $\alpha$,
+$\mathscr H|(X_\alpha)_{(K)}$ \tex
+
+[id 13012]
+OLD: , resp.
+$Z\in
+NEW: , \textup{resp.}
+$Z\in
+FRENCH CONTEXT (corrected): 8.5]
+\label{IV.2.4.8.5-fr}
+Avec les notations de \textup{(4.8.2)}, soit $(X_\alpha)$ un recouvrement ouvert de
+$X$. Pour qu'un élément $\mathscr H\in\Phi(\mathscr F\otimes_kK)$ \textup{(resp.}
+$u\in\operatorname{Hom}(\mathscr F\otimes_kK,\mathscr G\otimes_kK)$, \textup{resp.}
+$Z\in\mathfrak S(X_{(K)})$, \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)} soit défini sur
+$K'$, il faut et il suffit que pour tout $\alpha$,
+$\mathscr H|(X_\alpha)_{(K)}$ \textup{(resp.} $u|(X_\alpha)_{(K)}$,
+$Z\cap(X_\alpha)_{(K)}$, $M\cap(X_\alpha)_{(K)}$\t
+
+[id 13013]
+OLD: resp. $M\in\mathfrak P(X_{(K)})$)
+NEW: \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)}
+FRENCH CONTEXT (corrected):  de \textup{(4.8.2)}, soit $(X_\alpha)$ un recouvrement ouvert de
+$X$. Pour qu'un élément $\mathscr H\in\Phi(\mathscr F\otimes_kK)$ \textup{(resp.}
+$u\in\operatorname{Hom}(\mathscr F\otimes_kK,\mathscr G\otimes_kK)$, \textup{resp.}
+$Z\in\mathfrak S(X_{(K)})$, \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)} soit défini sur
+$K'$, il faut et il suffit que pour tout $\alpha$,
+$\mathscr H|(X_\alpha)_{(K)}$ \textup{(resp.} $u|(X_\alpha)_{(K)}$,
+$Z\cap(X_\alpha)_{(K)}$, $M\cap(X_\alpha)_{(K)}$\textup{)} soit défini sur $K'$.
+\end{proposition}
+
+\begin{proof}
+Cela résul
+
+[id 13014]
+OLD: (resp. $u|(X_\alpha)_{(K)}$
+NEW: \textup{(resp.} $u|(X_\alpha)_{(K)}$
+FRENCH CONTEXT (corrected): u\in\operatorname{Hom}(\mathscr F\otimes_kK,\mathscr G\otimes_kK)$, \textup{resp.}
+$Z\in\mathfrak S(X_{(K)})$, \textup{resp.} $M\in\mathfrak P(X_{(K)})$\textup{)} soit défini sur
+$K'$, il faut et il suffit que pour tout $\alpha$,
+$\mathscr H|(X_\alpha)_{(K)}$ \textup{(resp.} $u|(X_\alpha)_{(K)}$,
+$Z\cap(X_\alpha)_{(K)}$, $M\cap(X_\alpha)_{(K)}$\textup{)} soit défini sur $K'$.
+\end{proposition}
+
+\begin{proof}
+Cela résulte aussitôt de l'injectivité des applications (4.8.2.1), (4.8.2.2),
+(4.8.2.3) et (4.8.2.5): par exemple, si pour tout $\alpha$, il y a
+
+[id 13017]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): .6]
+\label{IV.2.4.8.6-fr}
+Soient $k$ un corps, $K$ une extension de $k$, $A$ une $k$-algèbre, $M$ un
+$A$-module, $\overline N$ un sous-$A_{(K)}$-module de $M_{(K)}$, $K'$ une
+sous-extension de $K$. Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\overline N$ est de la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$A_{(K')}$-module de $M_{(K')}$. 
+\item[\textup{b)}] Si $X=\operatorname{Spec}(A)$, le
+$\mathcal O_{X_{(K)}}$-Module quasi-cohérent $(\overline N)^{\sim}$ sur
+$X_{(K)}=\operatorname{Spec}(A_
+
+[id 13018]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): e N$ un sous-$A_{(K)}$-module de $M_{(K)}$, $K'$ une
+sous-extension de $K$. Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\overline N$ est de la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$A_{(K')}$-module de $M_{(K')}$. 
+\item[\textup{b)}] Si $X=\operatorname{Spec}(A)$, le
+$\mathcal O_{X_{(K)}}$-Module quasi-cohérent $(\overline N)^{\sim}$ sur
+$X_{(K)}=\operatorname{Spec}(A_{(K)})$ est défini sur $K'$.
+\item[\textup{c)}] $\overline N$ est de la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$K'$-
+
+[id 13020]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): e $N'\otimes_{K'}K$, où $N'$ est un
+sous-$A_{(K')}$-module de $M_{(K')}$. 
+\item[\textup{b)}] Si $X=\operatorname{Spec}(A)$, le
+$\mathcal O_{X_{(K)}}$-Module quasi-cohérent $(\overline N)^{\sim}$ sur
+$X_{(K)}=\operatorname{Spec}(A_{(K)})$ est défini sur $K'$.
+\item[\textup{c)}] $\overline N$ est de la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$K'$-espace vectoriel de $M_{(K')}$. 
+\end{enumerate}
+\end{lemma}
+
+\oldpage[IV-2]{82}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte trivialement de (\textbf{I}, 1.6.5); il e
+
+=================== PAGE IV-2 82 ===================
+----- (English page IV-2 81: shown above in this file) -----
+----- (English page IV-2 82: shown above in this file) -----
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 83 -----
+\oldpage[IV-2]{83}
+
+\begin{corollary}[4.8.11]
+\phantomsection
+\label{IV.4.8.11}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $K/k$ be an
+extension, and let $\overline Z$ be a closed sub-prescheme of
+$X_{(K)}$.
+Then $\overline Z$ has a smallest field of definition.
+\end{corollary}
+
+\begin{proof}
+Let $\overline{\sh J}$ be the quasi-coherent Ideal of
+$\sh O_{X_{(K)}}$ defining $\overline Z$.
+By \sref{IV.4.8.8},~(ii), a field defines $\overline Z$ if and only if
+it defines $\overline{\sh J}$, and the assertion follows from
+\sref{IV.4.8.9}.
+\end{proof}
+
+\begin{corollary}[4.8.12]
+\phantomsection
+\label{IV.4.8.12}
+Let $k$ be a field, let $X$ and $Y$ be two $k$-preschemes with $Y$
+separated, let $K/k$ be an extension, and let
+$\overline f:X_{(K)}\to Y_{(K)}$ be a $K$-morphism.
+Then $\overline f$ has a smallest field of definition.
+\end{corollary}
+
+\begin{proof}
+By \sref{IV.4.8.8},~(iii), the existence of such a field is equivalent
+to the existence of a smallest field of definition for the graph
+$\overline Z$ of $\overline f$.
+Since $\overline Z$ is a closed sub-prescheme of
+$(X\times_kY)_{(K)}$ \sref[I]{I.5.4.3}, the assertion follows from
+\sref{IV.4.8.11}.
+\end{proof}
+
+\begin{proposition}[4.8.13]
+\phantomsection
+\label{IV.4.8.13}
+Under the hypotheses of \sref{IV.4.8.11}
+(resp.\ \sref{IV.4.8.9}, \sref{IV.4.8.10}, or
+\sref{IV.4.8.12}), suppose in addition that $X$ is of finite type
+over $k$
+(resp.\ that $X$ is of finite type over $k$ and $\sh F$ is coherent;
+that $X$ is of finite type over $k$ and both $\sh F$ and $\sh G$ are
+coherent; or that $X$ and $Y$ are of finite type over $k$\textup{)}.
+Then the smallest field of definition of $\overline Z$
+(resp.\ $\overline{\sh H}$, $\overline u$, or $\overline f$\textup{)} is an extension of
+finite type of $k$.
+\end{proposition}
+
+\begin{proof}
+It is enough to treat \sref{IV.4.8.9}, and we may assume that $X$ is
+affine because it is a finite union of affine opens of finite type
+over $k$.
+With the notation of \sref{IV.4.8.6}, it remains to show that if $A$
+is a $k$-algebra of finite type and $M$ an $A$-module of finite type,
+then one of the fields $K'$ satisfying the equivalent conditions of
+\sref{IV.4.8.6} may be chosen of finite type over $k$.
+
+Let $(m_i)_{1\le i\le n}$ generate $M$ over $A$.
+Since $A$ is Noetherian, so is $A_{(K)}$, and the
+$A_{(K)}$-submodule $\overline N$ of $M_{(K)}$ has a finite set of
+generators $n_j$ $(1\le j\le r)$.
+Write
+\[
+n_j=\sum_i(m_i\otimes1)b_{ij},
+\qquad b_{ij}\in A_{(K)},
+\]
+and then
+\[
+b_{ij}=\sum_h a_{ijh}\otimes c_{ijh},
+\qquad a_{ijh}\in A,\quad c_{ijh}\in K.
+\]
+The extension $K'$ of $k$ generated by the finitely many
+$c_{ijh}$ has the required property.
+\end{proof}
+
+\begin{proposition}[4.8.14]
+\phantomsection
+\label{IV.4.8.14}
+Let $k$ be a field, let $X$ be a $k$-prescheme of finite type, and
+let $K/k$ be an extension containing a perfect extension of $k$.
+Then the smallest field of definition of the closed sub-prescheme
+$(X_{(K)})_{\mathrm{red}}$ of $X_{(K)}$ is a finite radicial
+extension of $k$.
+\end{proposition}
+
+\begin{proof}
+If $p$ is the characteristic exponent of $k$, the hypothesis implies
+that $k'=k^{p^{-\infty}}$ is contained in $K$.
+The prescheme $(X_{(k')})_{\mathrm{red}}$ is geometrically reduced
+over $k'$ \sref{IV.4.6.1}.
+Thus $(X_{(k')})_{\mathrm{red}}\otimes_{k'}K$
+is reduced and is consequently equal to
+$(X_{(K)})_{\mathrm{red}}$ \sref[I]{I.5.1.8}.
+In other words, $k'$ is a field of definition of
+$(X_{(K)})_{\mathrm{red}}$.
+Since $k'/k$ is algebraic, the conclusion follows from
+\sref{IV.4.8.13}.
+\end{proof}
+
+\begin{remarks}[4.8.15]
+\phantomsection
+\label{IV.4.8.15}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.8.15.i}
+The conclusion of \sref{IV.4.8.14} need not hold if $K$ is not
+assumed to contain a perfect extension of $k$.
+For example, let $k_0$
+----- French corrections on page IV-2 82 -----
+[id 13021]
+OLD: de a) et b) résulte
+NEW: de \emph{a)} et \emph{b)} résulte
+FRENCH CONTEXT (corrected): {(K)}=\operatorname{Spec}(A_{(K)})$ est défini sur $K'$.
+\item[\textup{c)}] $\overline N$ est de la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$K'$-espace vectoriel de $M_{(K')}$. 
+\end{enumerate}
+\end{lemma}
+
+\oldpage[IV-2]{82}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte trivialement de (\textbf{I}, 1.6.5); il est clair
+d'autre part que \emph{a)} entraîne \emph{c)}. Inversement, si \emph{c)} est vérifiée, on sait que
+l'on peut écrire (à identification canonique près)
+$N'=\overline N\cap M_{(K')}$. Comme $\overline N$ et $M_{(
+
+[id 13023]
+OLD: que a) entraîne c).
+NEW: que \emph{a)} entraîne \emph{c)}.
+FRENCH CONTEXT (corrected): la forme $N'\otimes_{K'}K$, où $N'$ est un
+sous-$K'$-espace vectoriel de $M_{(K')}$. 
+\end{enumerate}
+\end{lemma}
+
+\oldpage[IV-2]{82}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte trivialement de (\textbf{I}, 1.6.5); il est clair
+d'autre part que \emph{a)} entraîne \emph{c)}. Inversement, si \emph{c)} est vérifiée, on sait que
+l'on peut écrire (à identification canonique près)
+$N'=\overline N\cap M_{(K')}$. Comme $\overline N$ et $M_{(K')}$ sont par
+hypothèse des $A_{(K')}$-modules, il en est de même de $N'$.
+\end{proof}
+
+\begin{c
+
+[id 13024]
+OLD: si c) est vérifiée
+NEW: si \emph{c)} est vérifiée
+FRENCH CONTEXT (corrected): -$K'$-espace vectoriel de $M_{(K')}$. 
+\end{enumerate}
+\end{lemma}
+
+\oldpage[IV-2]{82}
+
+\begin{proof}
+L'équivalence de \emph{a)} et \emph{b)} résulte trivialement de (\textbf{I}, 1.6.5); il est clair
+d'autre part que \emph{a)} entraîne \emph{c)}. Inversement, si \emph{c)} est vérifiée, on sait que
+l'on peut écrire (à identification canonique près)
+$N'=\overline N\cap M_{(K')}$. Comme $\overline N$ et $M_{(K')}$ sont par
+hypothèse des $A_{(K')}$-modules, il en est de même de $N'$.
+\end{proof}
+
+\begin{corollary}[4.8.7]
+\label{IV.2.4.8.7-fr}
+
+
+[id 13027]
+OLD: condition c), où
+NEW: condition \emph{c)}, où
+FRENCH CONTEXT (corrected): ]
+\label{IV.2.4.8.7-fr}
+Sous les hypothèses de \textup{(4.8.6)}, il existe un plus petit sous-corps $K'$ de $K$
+contenant $k$ tel que les conditions équivalentes de \textup{(4.8.6)} soient vérifiées.
+\end{corollary}
+
+\begin{proof}
+Il suffit de le voir pour la condition \emph{c)}, où cela résulte de Bourbaki,
+\emph{Alg.}, chap.~II, 3\textsuperscript{e} éd., \S~8,
+n\textsuperscript{o}~6, prop.~6.
+\end{proof}
+
+\begin{lemma}[4.8.8]
+\label{IV.2.4.8.8-fr}
+Les notations étant celles de \textup{(4.8.2)}:
+\begin{enumerate}
+\item[\textup{(i)}] Soi
+
+[id 13030]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected):  G\otimes_kK$ un
+$\mathcal O_{X_{(K)}}$-homomorphisme, et soit
+$\overline{\mathscr H}\subset
+(\mathscr F\otimes_kK)\oplus(\mathscr G\otimes_kK)$ son graphe. Pour que
+$\overline u$ soit défini sur $K'$, il faut et il suffit que
+$\overline{\mathscr H}$ le soit.
+\item[\textup{(ii)}] Soit $\overline Z$ un sous-préschéma fermé de $X_{(K)}$, et soit
+$\overline{\mathscr J}$ l'Idéal quasi-cohérent de $\mathcal O_{X_{(K)}}$
+définissant $\overline Z$. Pour que $\overline Z$ soit défini sur $K'$, il
+faut et il suffit que $\overline{\mathscr J}$ 
+
+[id 13029]
+OLD: \item[(i)]
+NEW: \item[\textup{(i)}]
+FRENCH CONTEXT (corrected): condition \emph{c)}, où cela résulte de Bourbaki,
+\emph{Alg.}, chap.~II, 3\textsuperscript{e} éd., \S~8,
+n\textsuperscript{o}~6, prop.~6.
+\end{proof}
+
+\begin{lemma}[4.8.8]
+\label{IV.2.4.8.8-fr}
+Les notations étant celles de \textup{(4.8.2)}:
+\begin{enumerate}
+\item[\textup{(i)}] Soit
+$\overline u:\mathscr F\otimes_kK\to\mathscr G\otimes_kK$ un
+$\mathcal O_{X_{(K)}}$-homomorphisme, et soit
+$\overline{\mathscr H}\subset
+(\mathscr F\otimes_kK)\oplus(\mathscr G\otimes_kK)$ son graphe. Pour que
+$\overline u$ soit défini sur $K'$, il faut 
+
+=================== PAGE IV-2 83 ===================
+----- (English page IV-2 82: shown above in this file) -----
+----- (English page IV-2 83: shown above in this file) -----
+----- English, components/08_section48_fields_of_definition.tex, page IV-2 84 -----
+\oldpage[IV-2]{84}
+be a field of characteristic $p>0$, let
+$k=k_0(s,t)$ be the field of rational functions in two
+indeterminates, let
+\[
+L=k(s^{1/p},t^{1/p}),
+\qquad
+X=\Spec(L),
+\]
+let $u$ be a third indeterminate, and put $K=k\bigl(u,s^{1/p}+ut^{1/p}\bigr)$.
+One readily verifies that $k$ is algebraically closed in $K$ and that
+$L\otimes_kK$ has a nonzero nilradical, so $X_{(K)}$ is not reduced.
+But $(X_{(K)})_{\mathrm{red}}$ is not defined over $k$, while $K$
+contains no intermediate extension of finite degree over $k$ other
+than $k$ itself.
+Hence the smallest field of definition of
+$(X_{(K)})_{\mathrm{red}}$ cannot be finite over $k$.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.8.15.ii}
+Given an object in one of the target sets in \sref{IV.4.8.2} and an
+extension $K_1/K$, the object has a smallest field of definition if
+and only if its image under $\varepsilon_{K_1,K}$ does; the two smallest
+subfields are necessarily the same, as observed in
+\sref{IV.4.8.4}.
+\end{enumerate}
+\end{remarks}
+----- English, components/09_section49_fields_of_definition_of_subsets.tex, page IV-2 84 -----
+\subsection{Fields of definition of subsets of a prescheme}
+\phantomsection
+\label{subsection:IV.4.9}
+
+\begin{proposition}[4.9.1]
+\phantomsection
+\label{IV.4.9.1}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $K/k$ be an
+extension, let $\overline T$ be a closed subset of $X_{(K)}$, and let
+$K'$ be an intermediate field of $K/k$.
+The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.1.a}
+$\overline T$ is defined over $K'$.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.1.b}
+The open subset $\overline U=X_{(K)}\setmin\overline T$ of $X_{(K)}$ is
+defined over $K'$.
+\item[\rm(b$'$)]
+\phantomsection
+\label{IV.4.9.1.bprime}
+The sub-prescheme of $X_{(K)}$ induced on the open subset
+$\overline U$ is defined over $K'$.
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.9.1.c}
+There exists a closed sub-prescheme $\overline Z$ of $X_{(K)}$,
+defined over $K'$, whose underlying space is $\overline T$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Let $g:X_{(K)}\to X_{(K')}$ be the canonical projection.
+To say that $\overline T$ is defined over $K'$ means that there is a
+closed subset $T'$ of $X_{(K')}$ such that
+$\overline T=g^{-1}(T')$.
+Since $g^{-1}(X_{(K')}\setmin T')=X_{(K)}\setmin g^{-1}(T')$
+for every subset $T'$ of $X_{(K')}$, conditions
+\textup{a)}, \textup{b)}, and
+\textup{b')} are equivalent.
+
+If $\overline Z$, whose underlying space is $\overline T$, is defined
+over $K'$, then $\overline Z=Z'\otimes_{K'}K$
+for a closed sub-prescheme $Z'$ of $X_{(K')}$.
+If $T'$ is the underlying space of $Z'$, then
+$\overline T=g^{-1}(T')$ \sref[I]{I.4.4.1}; thus
+\textup{c)} implies \textup{a)}.
+Conversely, if \textup{a)} holds, choose a closed sub-prescheme
+$Z'$ of $X_{(K')}$ whose underlying space is $T'$
+\sref[I]{I.5.2.1}, and take
+$\overline Z=Z'\otimes_{K'}K$.
+\end{proof}
+
+\begin{corollary}[4.9.2]
+\phantomsection
+\label{IV.4.9.2}
+With the notation of \sref{IV.4.9.1}, suppose that $K'$ is a field
+of definition of $\overline T$.
+Every intermediate field $K''$ with $k\subset K''\subset K'$ for
+which $K'/K''$ is radicial is also a field of definition of
+$\overline T$.
+\end{corollary}
+
+\begin{proof}
+The canonical projection $g:X_{(K')}\longrightarrow X_{(K'')}$
+is integral, surjective, and radicial, hence is a homeomorphism
+\sref{IV.2.4.5}.
+\end{proof}
+
+\begin{remark}[4.9.3]
+\phantomsection
+\label{IV.4.9.3}
+It follows from \sref{IV.4.9.2} that a closed subset
+$\overline T$ of $X_{(K)}$ need not have a smallest field of
+definition.
+For example, let $K=k(t)$, where $t$ is an indeterminate and $k$ is
+a perfect field of characteristic $p>0$.
+A closed subset $\overline F$ of $X_{(K)}$ can have a smallest field
+of definition only if it is already defined over $k$.
+Indeed, for every subfield $K'$ of $K$ containing $k$ with
+$K'\ne k$, one has $(K')^p\ne K'$, the field $(K')^p$ contains $k$,
+and $K'/(K')^p$ is radicial.
+Thus, if $K'$ is a field of definition of $\overline F$, then so is
+$(K')^p$.
+Nevertheless, one has the following result.
+\end{remark}
+----- French corrections on page IV-2 83 -----
+[id 13038]
+OLD: fermé de
+$(X\times_kY)_{(K)}$
+NEW: \emph{fermé} de
+$(X\times_kY)_{(K)}$
+FRENCH CONTEXT (corrected): éfinition de $\overline f$.
+\end{corollary}
+
+\begin{proof}
+En effet, l'existence d'un tel corps, en vertu de (4.8.8), équivaut à celle
+d'un plus petit corps de définition du graphe $\overline Z$ de $\overline f$;
+mais comme $\overline Z$ est un sous-préschéma \emph{fermé} de
+$(X\times_kY)_{(K)}$ (\textbf{I}, 5.4.3), l'existence d'un plus petit corps de
+définition de $\overline Z$ résulte de (4.8.11).
+\end{proof}
+
+\begin{proposition}[4.8.13]
+\label{IV.2.4.8.13-fr}
+Sous les hypothèses de \textup{(4.8.11) (resp. (4.8.9), (4.8.10), (4.8.12))}
+supposons e
+
+[id 13041]
+OLD: sur $k$ (resp. que $X$ soit de
+NEW: sur $k$ \textup{(resp.} que $X$ soit de
+FRENCH CONTEXT (corrected): d'un plus petit corps de
+définition de $\overline Z$ résulte de (4.8.11).
+\end{proof}
+
+\begin{proposition}[4.8.13]
+\label{IV.2.4.8.13-fr}
+Sous les hypothèses de \textup{(4.8.11) (resp. (4.8.9), (4.8.10), (4.8.12))}
+supposons en outre que $X$ soit de type fini sur $k$ \textup{(resp.} que $X$ soit de
+type fini sur $k$ et $\mathscr F$ cohérent, \textup{resp.} que $X$ soit de type fini
+sur $k$ et $\mathscr F$ et $\mathscr G$ cohérents, \textup{resp.} que $X$ et $Y$
+soient de type fini sur $k$\textup{)}. Alors le plus petit corps de définition de
+$\overline 
+
+[id 13042]
+OLD: cohérent, resp. que
+NEW: cohérent, \textup{resp.} que
+FRENCH CONTEXT (corrected): \end{proof}
+
+\begin{proposition}[4.8.13]
+\label{IV.2.4.8.13-fr}
+Sous les hypothèses de \textup{(4.8.11) (resp. (4.8.9), (4.8.10), (4.8.12))}
+supposons en outre que $X$ soit de type fini sur $k$ \textup{(resp.} que $X$ soit de
+type fini sur $k$ et $\mathscr F$ cohérent, \textup{resp.} que $X$ soit de type fini
+sur $k$ et $\mathscr F$ et $\mathscr G$ cohérents, \textup{resp.} que $X$ et $Y$
+soient de type fini sur $k$\textup{)}. Alors le plus petit corps de définition de
+$\overline Z$ \textup{(resp.} de $\overline{\mathscr H}$, de $\overline u$
+
+[id 13043]
+OLD: cohérents, resp. que
+NEW: cohérents, \textup{resp.} que
+FRENCH CONTEXT (corrected): tup{(4.8.11) (resp. (4.8.9), (4.8.10), (4.8.12))}
+supposons en outre que $X$ soit de type fini sur $k$ \textup{(resp.} que $X$ soit de
+type fini sur $k$ et $\mathscr F$ cohérent, \textup{resp.} que $X$ soit de type fini
+sur $k$ et $\mathscr F$ et $\mathscr G$ cohérents, \textup{resp.} que $X$ et $Y$
+soient de type fini sur $k$\textup{)}. Alors le plus petit corps de définition de
+$\overline Z$ \textup{(resp.} de $\overline{\mathscr H}$, de $\overline u$, de $\overline f$\textup{)} est
+une extension de type fini de $k$.
+\end{proposition}
+
+\begi
+
+[id 13045]
+OLD: $\overline Z$ (resp. de
+NEW: $\overline Z$ \textup{(resp.} de
+FRENCH CONTEXT (corrected): $X$ soit de
+type fini sur $k$ et $\mathscr F$ cohérent, \textup{resp.} que $X$ soit de type fini
+sur $k$ et $\mathscr F$ et $\mathscr G$ cohérents, \textup{resp.} que $X$ et $Y$
+soient de type fini sur $k$\textup{)}. Alors le plus petit corps de définition de
+$\overline Z$ \textup{(resp.} de $\overline{\mathscr H}$, de $\overline u$, de $\overline f$\textup{)} est
+une extension de type fini de $k$.
+\end{proposition}
+
+\begin{proof}
+On peut se borner à traiter le cas de (4.8.9), et supposer $X$ affine puisque
+$X$ est réunion finie d'ouverts affines
+
+[id 13047]
+OLD: conditions a), b) ou c)
+NEW: conditions \emph{a)}, \emph{b)} ou \emph{c)}
+FRENCH CONTEXT (corrected):  puisque
+$X$ est réunion finie d'ouverts affines de type fini sur $k$. Avec les
+notations de (4.8.6), tout revient à montrer que si $A$ est une algèbre de
+type fini sur $k$ et $M$ un $A$-module de type fini, il y a une sous-extension
+$K'$ de $K$ vérifiant les conditions \emph{a)}, \emph{b)} ou \emph{c)} et qui soit de type fini sur
+$k$ (toute sous-extension d'une extension de type fini étant de type fini).
+Or, soit $(m_i)_{1\leq i\leq n}$ un système de générateurs du $A$-module $M$;
+comme $A$ est noethérien, il en est de même de $A_{(K)}$, donc $\overline N$
+
+=================== PAGE IV-2 84 ===================
+----- (English page IV-2 83: shown above in this file) -----
+----- (English page IV-2 84: shown above in this file) -----
+----- English, components/01_section51_dimension_of_preschemes.tex, page IV-2 85 -----
+\section{Dimension, depth, and regularity in locally Noetherian preschemes}
+\phantomsection
+\label{section:IV.5}
+----- English, components/09_section49_fields_of_definition_of_subsets.tex, page IV-2 85 -----
+\oldpage[IV-2]{85}
+
+\begin{proposition}[4.9.4]
+\phantomsection
+\label{IV.4.9.4}
+With the notation of \sref{IV.4.9.1}, suppose that $K/K'$ is
+separable.
+Then $K'$ is a field of definition of $\overline T$ if and only if
+it is a field of definition of the reduced sub-prescheme of
+$X_{(K)}$ whose underlying space is $\overline T$.
+\end{proposition}
+
+\begin{proof}
+The condition is sufficient by \sref{IV.4.9.1}.
+Conversely, suppose that
+$\overline T=g^{-1}(T')$, where $T'$ is a closed subset of
+$X_{(K')}$, and let $Z'$ be the reduced sub-prescheme of $X_{(K')}$
+whose underlying space is $T'$.
+Then $\overline Z=Z'\otimes_{K'}K=\Spec(K)\times_{K'}Z'$
+is reduced by \sref{IV.4.6.1},~e) and the separability of $K/K'$,
+and its underlying space is $\overline T$.
+\end{proof}
+
+\begin{corollary}[4.9.5]
+\phantomsection
+\label{IV.4.9.5}
+Suppose that one of the following hypotheses holds:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.5.a}
+$k$ has characteristic zero.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.5.b}
+$K/k$ is algebraic and $X$ is of finite type over $k$.
+\end{enumerate}
+Then every closed subset $\overline T$ of $X_{(K)}$ has a smallest
+field of definition.
+This field is a separable extension of $k$, and under
+\textup{b)} it is finite over $k$.
+\end{corollary}
+
+\begin{proof}
+Under \textup{a)}, $K$ is separable over each of its
+subfields.
+It follows from \sref{IV.4.9.4} that the fields of definition of
+$\overline T$ are exactly those of the reduced sub-prescheme of
+$X_{(K)}$ whose underlying space is $\overline T$.
+The assertion therefore follows from \sref{IV.4.8.11}.
+
+Under \textup{b)}, the extension $K$ is radicial over a
+separable extension $K_1$ of $k$.
+For every intermediate field $K'$ of $K/k$, the extension
+$K'/(K'\cap K_1)$ is radicial.
+By \sref{IV.4.9.2}, $K'$ is a field of definition of
+$\overline T$ if and only if $K'\cap K_1$ is.
+This reduces the question to the case $K=K_1$, hence to the case of
+a separable algebraic extension of $k$, and the argument finishes as
+under \textup{a)}.
+\end{proof}
+
+\begin{proposition}[4.9.6]
+\phantomsection
+\label{IV.4.9.6}
+Let $k$ be a field, let $X$ be a $k$-prescheme, let $K/k$ be an
+extension, let $\overline U$ be a subset of $X_{(K)}$ that is both
+open and closed, and let $\overline V$ be its complement.
+For an intermediate field $K'$ of $K/k$, the following conditions
+are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.9.6.a}
+$K'$ is a field of definition of the subset $\overline U$ of
+$X_{(K)}$.
+\item[\rm(a$'$)]
+\phantomsection
+\label{IV.4.9.6.aprime}
+$K'$ is a field of definition of the closed sub-prescheme of
+$X_{(K)}$ induced on the open subset $\overline U$.
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.9.6.b}
+$K'$ is a field of definition of the subset $\overline V$ of
+$X_{(K)}$.
+\item[\rm(b$'$)]
+\phantomsection
+\label{IV.4.9.6.bprime}
+$K'$ is a field of definition of the closed sub-prescheme of
+$X_{(K)}$ induced on the open subset $\overline V$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that
+{\hyperref[IV.4.9.6.aprime]{(a$'$)}} implies
+{\hyperref[IV.4.9.6.a]{(a)}}, and
+{\hyperref[IV.4.9.6.a]{(a)}} implies
+{\hyperref[IV.4.9.6.bprime]{(b$'$)}} by \sref{IV.4.9.1}.
+Since $\overline U$ and $\overline V$ play symmetric roles,
+{\hyperref[IV.4.9.6.bprime]{(b$'$)}} implies
+{\hyperref[IV.4.9.6.b]{(b)}}, and
+{\hyperref[IV.4.9.6.b]{(b)}} implies
+{\hyperref[IV.4.9.6.aprime]{(a$'$)}}.
+\end{proof}
+
+\begin{corollary}[4.9.7]
+\phantomsection
+\label{IV.4.9.7}
+Under the hypotheses of \sref{IV.4.9.6}, there is a smallest field
+of definition $K'$ for the subset $\overline U$ of $X_{(K)}$.
+It is also the smallest field of definition of the subset
+$\overline V$ and of the closed sub-preschemes of $X_{(K)}$ induced
+on the open subsets $\overline U$ and $\overline V$.
+If, in addition, $X$ is of finite type over $k$, then $K'/k$ is
+finite and separable.
+\end{corollary}
+
+\begin{proof}
+In view of \sref{IV.4.9.6} and \sref{IV.4.8.11}, only the last
+assertion remains to be proved.
+By \sref{IV.4.8.15},~(ii), we may reduce to the case in which $K$ is
+algebraically closed.
+Let $\overline k$ be the algebraic closure of $k$ contained in $K$,
+and let $W_i$ $(1\le i\le m)$ be the connected components of
+$X_{(\overline k)}$.
+----- French corrections on page IV-2 84 -----
+[id 13053]
+OLD: d'une partie d'un préschéma}
+NEW: d'une partie d'un préschéma.}
+FRENCH CONTEXT (corrected): petit corps de définition ou que son image
+par $\varepsilon_{K_1,K}$ admet un plus petit sous-corps de définition (les
+deux sous-corps étant nécessairement les mêmes), comme on l'a vu dans
+(4.8.4).
+\end{enumerate}
+\end{remarks}
+\subsection{Corps de définition d'une partie d'un préschéma.}
+
+\begin{proposition}[4.9.1]
+\label{IV.2.4.9.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline T$ une partie fermée de $X_{(K)}$, $K'$ une sous-extension de $K$.
+Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+
+
+[id 13054]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): 
+
+\begin{proposition}[4.9.1]
+\label{IV.2.4.9.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline T$ une partie fermée de $X_{(K)}$, $K'$ une sous-extension de $K$.
+Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\overline T$ est définie sur $K'$.
+\item[\textup{b)}] La partie ouverte $\overline U=X_{(K)}\setmin\overline T$ de $X_{(K)}$
+est définie sur $K'$.
+\item[\textup{b')}] Le sous-préschéma de $X_{(K)}$ induit sur l'ouvert $\overline U$
+est défini sur $K'$.
+\item
+
+[id 13055]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): nt $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$,
+$\overline T$ une partie fermée de $X_{(K)}$, $K'$ une sous-extension de $K$.
+Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\overline T$ est définie sur $K'$.
+\item[\textup{b)}] La partie ouverte $\overline U=X_{(K)}\setmin\overline T$ de $X_{(K)}$
+est définie sur $K'$.
+\item[\textup{b')}] Le sous-préschéma de $X_{(K)}$ induit sur l'ouvert $\overline U$
+est défini sur $K'$.
+\item[\textup{c)}] Il existe un sous-préschéma fermé $\overl
+
+[id 13057]
+OLD: \item[b')]
+NEW: \item[\textup{b')}]
+FRENCH CONTEXT (corrected): K'$ une sous-extension de $K$.
+Les conditions suivantes sont équivalentes:
+\begin{enumerate}
+\item[\textup{a)}] $\overline T$ est définie sur $K'$.
+\item[\textup{b)}] La partie ouverte $\overline U=X_{(K)}\setmin\overline T$ de $X_{(K)}$
+est définie sur $K'$.
+\item[\textup{b')}] Le sous-préschéma de $X_{(K)}$ induit sur l'ouvert $\overline U$
+est défini sur $K'$.
+\item[\textup{c)}] Il existe un sous-préschéma fermé $\overline Z$ de $X_{(K)}$ ayant
+$\overline T$ pour espace sous-jacent, et défini sur $K'$.
+\end{enumerate}
+\end{proposi
+
+[id 13058]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): {a)}] $\overline T$ est définie sur $K'$.
+\item[\textup{b)}] La partie ouverte $\overline U=X_{(K)}\setmin\overline T$ de $X_{(K)}$
+est définie sur $K'$.
+\item[\textup{b')}] Le sous-préschéma de $X_{(K)}$ induit sur l'ouvert $\overline U$
+est défini sur $K'$.
+\item[\textup{c)}] Il existe un sous-préschéma fermé $\overline Z$ de $X_{(K)}$ ayant
+$\overline T$ pour espace sous-jacent, et défini sur $K'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Si $g:X_{(K)}\to X_{(K')}$ est la projection canonique, dire que
+$\overline T$ est d
+
+[id 13061]
+OLD: a), b) et b') sont
+NEW: \emph{a)}, \emph{b)} et \emph{b')} sont
+FRENCH CONTEXT (corrected): projection canonique, dire que
+$\overline T$ est définie sur $K'$ signifie qu'il existe une partie fermée
+$T'$ de $X_{(K')}$ telle que $\overline T=g^{-1}(T')$; comme
+$g^{-1}(X_{(K')}\setmin T')=X_{(K)}\setmin g^{-1}(T')$ pour toute partie $T'$ de
+$X_{(K')}$, \emph{a)}, \emph{b)} et \emph{b')} sont équivalentes. Si $\overline Z$, ayant
+$\overline T$ pour espace sous-jacent, est défini sur $K'$, on a
+$\overline Z=Z'\otimes_{K'}K$, où $Z'$ est un sous-préschéma fermé de
+$X_{(K')}$, et si $T'$ est le sous-espace sous-jacent à $Z'$, on sait que
+$\overline T
+
+[id 13063]
+OLD: que a) entraîne c),
+NEW: que \emph{a)} entraîne \emph{c)},
+FRENCH CONTEXT (corrected):  on a
+$\overline Z=Z'\otimes_{K'}K$, où $Z'$ est un sous-préschéma fermé de
+$X_{(K')}$, et si $T'$ est le sous-espace sous-jacent à $Z'$, on sait que
+$\overline T=g^{-1}(T')$ (\textbf{I}, 4.4.1), donc $\overline T$ est définie sur
+$K'$. Inversement, pour voir que \emph{a)} entraîne \emph{c)}, il suffit de considérer un
+sous-préschéma fermé $Z'$ de $X_{(K')}$ ayant pour espace sous-jacent $T'$
+(\textbf{I}, 5.2.1) et de prendre $\overline Z=Z'\otimes_{K'}K$.
+\end{proof}
+
+\begin{corollary}[4.9.2]
+\label{IV.2.4.9.2-fr}
+Avec les notations de \textup{(4
+
+[id 13066]
+OLD: définie sur $k$;
+NEW: définie sur $k$:
+FRENCH CONTEXT (corrected): de \emph{plus petit} corps de définition. Par exemple, si
+$K=k(t)$, où $t$ est une indéterminée et $k$ un corps parfait de
+caractéristique $p>0$, une partie fermée $\overline F$ de $X_{(K)}$ ne peut
+avoir de plus petit corps de définition que si elle est déjà définie sur $k$:
+en effet, pour tout sous-corps $K'$ de $K$ contenant $k$ et $\ne k$, on a
+$K'^p\ne K'$, $K'^p$ contient $k$ et $K'$
+\oldpage[IV-2]{85}
+est une extension radicielle de $K'^p$, donc si $K'$ est corps de définition
+de $\overline F$, il en est de même de $K'^p$. 
+

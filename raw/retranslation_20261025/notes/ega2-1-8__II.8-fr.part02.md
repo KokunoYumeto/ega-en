@@ -1,0 +1,9 @@
+- TRANSCRIPTION? (8.4.3) "les immersions canoniques $E\to\widehat{E}$ et $\widehat{E}\to\widehat{C}$": the justification just given (the underlying spaces of $E$ and $\widehat{E}$ are non-closed open subsets of $\widehat{C}$) points to $E\to\widehat{C}$ for the first immersion. Possibly already in the original; translated as written.
+- TERM ce numéro (a numbered subsection of a §) → this subsection (8.3.1).
+- TERM diviseur de $0$ → divisor of $0$ (8.3.2, 8.3.2.7).
+- TERM ($Y$-)schéma en groupes (commutatif) → (commutative) ($Y$-)group scheme (8.3.9).
+- TERM application de symétrie (in a group) → symmetry map (8.3.9).
+- TERM domaine d'opérateurs (universel) → (universal) domain of operators; ensemble muni d'un groupe d'opérateurs → set endowed with a group of operators; loi externe → external law; projecteurs → projectors (8.3.9).
+- TERM $Y$-schéma en ensembles munis de groupes d'opérateurs → $Y$-scheme in sets endowed with groups of operators (lit.) (8.3.9).
+- TERM $q$-morphisme d'Algèbres graduées → $q$-morphism of graded algebras (8.5.1, 8.5.3).
+- TERM sous-$\mathcal{O}_X$-Algèbre → sub-$\mathcal{O}_X$-algebra (8.6.1), like sub-$\mathcal{O}_X$-module.

@@ -1,0 +1,2 @@
+- TERM birationnel → birational (6.5.5)
+- TERM algèbre de polynômes → polynomial algebra (6.5.1)

@@ -1,0 +1,7 @@
+- TERM Sommaire → Summary
+- TERM cycles premiers associés → associated prime cycles
+- TERM (immersions) transversalement régulières → transversally regular (immersions)
+- TERM prolongements infinitésimaux → infinitesimal extensions (glossary: prolongement → extension)
+- TERM anneaux locaux henséliens → Henselian local rings
+- TERM paragraphes (= the §§ of the chapter) → sections
+- TERM chap.~V (EGA's own chapter, in prose) → kept as "chap.~V"

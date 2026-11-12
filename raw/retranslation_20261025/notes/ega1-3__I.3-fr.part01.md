@@ -1,0 +1,13 @@
+- TERM somme (de préschémas) → sum (of preschemes)
+- TERM extension du préschéma de base → extension of the base prescheme; changement de préschéma de base → change of base prescheme
+- TERM image réciproque (d'un préschéma, d'un morphisme) → inverse image
+- TERM problème d'application universelle → universal mapping problem
+- TERM morphisme graphe → graph morphism
+- TERM correspondance biunivoque / correspondre biunivoquement → one-to-one correspondence / correspond one-to-one
+- TERM faisceau structural → structure sheaf
+- TERM point de X à valeurs dans T; point géométrique → point of X with values in T; geometric point
+- TERM localité; corps des valeurs; localisé en x → locality; field of values; localized at x
+- TERM point rationnel sur K → point rational over K
+- TERM produit fibré (d'ensembles) → fibre product
+- TERM types d'extensions composées → types of composite extensions
+- TERM c.q.f.d. → Q.E.D.

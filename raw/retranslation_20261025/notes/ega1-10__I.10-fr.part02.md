@@ -1,0 +1,8 @@
+- TRANSCRIPTION? (10.6.2) proof — `$g=(\psi,\omega^b)$`: the map $\mathscr{O}_{\mathfrak{Y}}\to\psi_*(\mathscr{O}_{\mathfrak{X}})$ deduced from $\omega$ is EGA's $\omega^\flat$ (counterpart of the $\theta_\lambda^\sharp$ used just before); "^b" looks like a transcription of the flat sign. Kept.
+- TRANSCRIPTION? (10.6.3) b) — "pour tout $x\in X$": no $X$ is defined in 10.6.3 (the space is $\mathfrak{X}$); presumably $x\in\mathfrak{X}$. Kept.
+- TRANSCRIPTION? (10.6.4) statement — $\mathscr{J}$ in "$\mathscr{J}^{(n)}=\mathscr{J}^{n+1}$" and "$\mathscr{J}/\mathscr{J}^2$" is never defined; the conclusion $\mathscr{J}/\mathscr{J}^2\cong\mathscr{J}_1$ requires $\mathscr{J}=\mathscr{J}^{(0)}$; a defining clause may be missing. Translated as written.
+- TRANSCRIPTION? (10.6.4) proof — "$\mathscr{J}_{ij}=\widetilde{\mathfrak{J}_{ji}}$": 10.6.3 defines no $\mathscr{J}_{ij}$ (it shows that the kernel of $u_{ji}$ is $\widetilde{\mathfrak{J}_{ji}}$); possibly $\mathscr{J}_{ji}$, or the original's shorthand for that kernel. Kept.
+- TERM loi externe (10.6.3 proof) → external law.
+- TERM numéro ("ce numéro", 10.7.4) → subsection.
+- TERM $\mathfrak{S}$-préschéma formel → formal $\mathfrak{S}$-prescheme; $\mathfrak{S}$-schéma formel affine → affine formal $\mathfrak{S}$-scheme (10.6.11, 10.7).
+- TERM la prop. (3.2.2) (10.7.3 proof) → Proposition (3.2.2).

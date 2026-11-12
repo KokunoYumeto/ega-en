@@ -1,0 +1,6 @@
+- TERM algèbre tensorielle → tensor algebra (std).
+- TERM idéal bilatère → two-sided ideal (std).
+- TERM permutabilité de $\mathbf{S}$ avec les limites inductives (1.7.4) → commutation of $\mathbf{S}$ with inductive limits.
+- TERM $S$-schéma d'anneaux / $S$-schéma de modules (1.7.13) → $S$-scheme of rings / $S$-scheme of modules (lit.; std "ring scheme", "module scheme").
+- TERM bare "sous-Module" (1.7.14) → submodule (closed sub- word); "sous-$\mathcal{O}_S$-Module" → sub-$\mathcal{O}_S$-module.
+- TERM "la catégorie dont les éléments sont les couples" (1.7.13) → "the category whose elements are the pairs" (EGA's "éléments" = objects, kept).

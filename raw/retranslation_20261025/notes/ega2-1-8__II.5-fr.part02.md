@@ -1,0 +1,8 @@
+- TRANSCRIPTION? 5.5.4 (iii) — "$\mathcal{S}_y=\mathbf{S}_{k(y)}((k(y))^{r+1})$ (1.7.3)": (1.7.3) (symmetric algebra and localization) gives the stalk $\mathbf{S}_{\mathcal{O}_y}(\mathcal{O}_y^{r+1})$; the form over $k(y)$ is the fibre $\mathcal{S}_y\otimes k(y)$ used in 5.5.3. Possibly in the original; copied as is.
+- TRANSCRIPTION? 5.6.1 B) — the quasi-compact immersion $S_i\to S$ is justified by "(5.3.4, (ii))" and the composite $T_{ij}\to S$ by "(5.3.4, (iii))"; by the statement of 5.3.4 these are (i) (quasi-compact immersion) and (ii) (composition), (iii) being base change. Kept.
+- TRANSCRIPTION? 5.6.1 A), C), D) and 5.6.3 — blank lines around \oldpage (pp. 107–110) split a sentence into two paragraphs; kept as in the French.
+- TERM application identique → identity map.
+- TERM majorer (un sous-préschéma) → dominate (glossary: majoré par → dominated by).
+- TERM répondre à la question → meet the requirements.
+- TERM l'adhérence par rapport à → the closure with respect to.
+- TERM morphisme birationnel → birational morphism; annulateur → annihilator; indéterminées → indeterminates.

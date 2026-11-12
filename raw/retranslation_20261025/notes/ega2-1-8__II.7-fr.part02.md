@@ -1,0 +1,7 @@
+- `TRANSCRIPTION?` introduction of 7.4 and proof of (7.4.1) — plain bracket citations "[23]" (Chevalley's book) and "([1], p.~4-06, th.~2)", whereas other chunks cite [1] as `\cite[...]{I-1}`; kept as transcribed.
+- REFERENCE TEXT end of proof of (7.4.15.1): `\hyperref[II.4.2.6-fr]{4.2.6, exemple 1\textsuperscript{o}}` → `{4.2.6, example 1\textsuperscript{o}}`; key unchanged (as "et" → "and" in other chunks).
+- `TERM` Remarques (title argument of `namedtheorem` 7.4.19) → Remarks.
+- `TERM` droite projective → projective line; point à l'infini → point at infinity (7.4.14).
+- `TERM` degré de transcendance → transcendence degree; transcendant → transcendental; extension régulière → regular extension (7.4.19).
+- `TERM` normalisée (n.) → normalization (7.4.8, 7.4.11); $k$-monomorphisme → $k$-monomorphism (7.4.13).
+- `TERM` ce numéro / tout le numéro → this subsection / throughout this subsection.

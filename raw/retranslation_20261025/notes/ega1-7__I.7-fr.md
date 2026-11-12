@@ -1,0 +1,6 @@
+- TRANSCRIPTION? 7.4.5 proof — the display `\[ ... =(R(X))^{(I)}~; \]` contains the French `~;` inside the mathematics; kept verbatim (math is copied), so the English output has a space before that semicolon.
+- TERM composants locaux (d'un anneau artinien) → local components (7.1.8)
+- TERM (morphisme) non prolongeable → non-extendable (morphism) (after 7.2.2.1)
+- TERM trace sur → trace on (7.2.8, 7.2.8.1)
+- TERM ensemble cofinal; relation de préordre → cofinal set; preorder relation (7.1.9)
+- TERM par tensorisation → by tensoring (7.4.1)

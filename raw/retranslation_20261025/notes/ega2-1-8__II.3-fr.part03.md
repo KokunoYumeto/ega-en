@@ -1,0 +1,7 @@
+- TRANSCRIPTION? 3.8.2, proof: "la restriction de $r$ à $U_\alpha$ soit une immersion fermée de $V_\alpha$ dans $D_+(s_\alpha)$". $U_\alpha$ is not defined; $V_\alpha=r^{-1}(D_+(s_\alpha))$ is meant. Translated as written.
+- TRANSCRIPTION? 3.8.5, proof: "Comme $q^{-1}(U_i)$ est compact". In EGA's terminology this should be "quasi-compact" ($q$ of finite type). Translated as "compact".
+- TRANSCRIPTION? 3.8.5, proof: "une puissance $s_{ij}^\rho$ telle que $\rho m_{ijk}n_{ij}=n$". For $s_{ij}^\rho\in S_n$ and $t_{ijk}s_{ij}^{\rho-m_{ijk}}\in S_n$ one needs $\rho n_{ij}=n$. Translated as written.
+- TRANSCRIPTION? 3.8.5, proof: "un sous-$\mathcal O_Y$-Module cohérent de type fini $\mathcal E_i$". (I, 9.4.7) and the statement concern quasi-coherent submodules of finite type; "quasi-cohérent" expected. Translated as "coherent".
+- TRANSCRIPTION? 3.8.5, proof, last line: "tel que $f|V$ soit une base". $f$ is not defined here; $f_{ij}|V$ is meant. Translated as written.
+- TERM isomorphie canonique → canonical isomorphism.
+- TERM quasi-compacité → quasi-compactness.

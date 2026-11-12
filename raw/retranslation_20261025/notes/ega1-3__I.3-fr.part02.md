@@ -1,0 +1,7 @@
+- TRANSCRIPTION? after Def. 3.5.4 (I.3.5.4-fr): "(T, 1.1)", whereas the chunk elsewhere cites "(T, I, 1.1)"; kept as is.
+- TRANSCRIPTION? 3.6.4 (I.3.6.4-fr): optional argument "3.6.4) («~transitivité des fibres~»" has unbalanced parentheses (heading workaround); structure kept, only the quoted words translated.
+- TERM radiciel; universellement injectif; extension radicielle → radicial; universally injective; radicial extension
+- TERM idéal de définition; topologie $\mathfrak{m}_y$-préadique → ideal of definition; $\mathfrak{m}_y$-preadic topology
+- TERM majorer (un sous-préschéma) → majorize
+- TERM espace projectif type → standard projective space
+- TERM Traité; ce numéro → Treatise; this subsection

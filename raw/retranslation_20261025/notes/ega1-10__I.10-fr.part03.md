@@ -1,0 +1,7 @@
+- TRANSCRIPTION? (10.8.8, (i)) third display — ends with the French punctuation `~;` inside the math (`\widehat{M''}~;`); kept verbatim because mathematics is copied unchanged (English typography would be `;`).
+- TERM sections formelles (de $\mathscr{F}$ le long de $X'$) (10.8.4) → formal sections (of $\mathscr{F}$ along $X'$).
+- TERM $(\mathscr{O}_X)_{/X'}$-Module topologique (after 10.8.4) → topological $(\mathscr{O}_X)_{/X'}$-module.
+- TERM sous-préschéma formel induit (after 10.8.5) → formal sub-prescheme induced (on an open subset).
+- TERM par tensorisation (10.8.7) → by tensoring.
+- TERM prolongement par continuité (10.9.4) → extension by continuity.
+- TERM paragraphe ("Dans tout ce paragraphe", 10.10.1) → section.

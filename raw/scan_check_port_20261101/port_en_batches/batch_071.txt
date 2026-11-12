@@ -1,0 +1,2131 @@
+# English hand pass, batch_071: 140 items on 9 printed pages
+
+=================== PAGE IV-4 205 ===================
+----- English, source_aligned/ega4-19.tex, page IV-4 204 -----
+\oldpage[IV-4]{204}
+of these two regular rings are equal (\sref[0]{0.17.1.9}).
+By (\sref[0]{0.17.3.3}), this is equivalent to equality of the dimensions of
+$\sh{O}_{X',x'}\otimes_{\sh{O}_{X,x}}\mathbf{k}(x)$ and
+$\sh{O}_{Z,z}\otimes_{\sh{O}_{X,x}}\mathbf{k}(x)$.
+We may therefore replace $X'$ and $Z$ by the fibres $q^{-1}(x)$ and $Z\cap p^{-1}(x)$ respectively, and reduce to proving that the morphism
+$q^{-1}(x)\to Z\cap p^{-1}(x)$ induced by $j$ is an isomorphism.
+We may now suppose that $X=\operatorname{Spec}(\mathrm{B})$, where $\mathrm{B}=\sh{O}_{X,x}$, and that $\mathrm{E}=\mathrm{B}^m$, so that $\mathrm{S}=\mathrm{B}[\mathrm{T}_1,\ldots,\mathrm{T}_m]$.
+The hypothesis means that there is a regular system of parameters $(t_j)_{1\leq j\leq n}$ of $\mathrm{B}$ such that $u(\mathrm{T}_i)=t_i$ for $1\leq i\leq m$ (\sref[0]{0.17.1.7}).
+Let $\mathfrak{J}$ be the image of $u$, and let $\mathfrak{m}$ be the maximal ideal of $\mathrm{B}$. Then $\mathfrak{J}^n\otimes_\mathrm{B}(\mathrm{B}/\mathfrak{m})
+=\mathfrak{J}^n/\mathfrak{m}\mathfrak{J}^n
+=(\mathfrak{J}^n/\mathfrak{J}^{n+1})\otimes_\mathrm{B}(\mathrm{B}/\mathfrak{m})$,
+and consequently, by \sref{IV.16.9.4.1},
+$(\bigoplus_{n\geq0}\mathfrak{J}^n)\otimes_\mathrm{B}\mathbf{k}(x)$ is identified with
+$\mathbf{k}(x)[\mathrm{T}_1,\ldots,\mathrm{T}_m]$.
+It follows that the immersion $q^{-1}(x)\to p^{-1}(x)$ is an isomorphism; this implies \emph{a fortiori} that the closed sub-prescheme $Z\cap p^{-1}(x)$ is identical with $j(q^{-1}(x))$, and completes the proof of \sref{IV.19.4.11}.
+\end{proof}
+
+\subsection{Criteria for M-regularity}
+\label{subsection:IV.19.5}
+
+We resume here, in completed form, the criteria for a sequence of elements of a ring $\mathrm{A}$ to be M-regular or M-quasi-regular, where $\mathrm{M}$ is an $\mathrm{A}$-module, already studied in (\sref[0]{0.15.1}).
+
+\begin{theorem}[19.5.1]
+\label{IV.19.5.1}
+Let $\mathrm{A}$ be a ring, $\mathbf{f}=(f_i)_{1\leq i\leq n}$ a sequence of elements of $\mathrm{A}$, and $\mathrm{M}$ an $\mathrm{A}$-module. Consider the following properties:
+\begin{enumerate}
+\item[\rm a)] The sequence $\mathbf{f}$ is M-regular.
+\item[\rm b)] $\mathrm{H}_i(\mathbf{f},\mathrm{M})=0$ for every $i>0$ (\sref[III]{III.1.1.3}).
+\item[\rm b')] $\mathrm{H}_1(\mathbf{f},\mathrm{M})=0$.
+\item[\rm c)] The sequence $\mathbf{f}$ is M-quasi-regular.
+\end{enumerate}
+Then we have the implications
+\[
+  \text{a)}\Longrightarrow\text{b)}\Longrightarrow\text{b')}
+  \qquad\text{and}\qquad
+  \text{a)}\Longrightarrow\text{c)}.
+\]
+Put $\mathfrak{J}=\sum_{i=1}^n f_i\mathrm{A}$.
+If the modules $\mathrm{M}_i=\mathrm{M}/(\sum_{j=1}^i f_j\mathrm{M})$ are separated for the $\mathfrak{J}$-preadic topology (respectively, if every quotient module of a submodule of $\mathrm{M}$ is separated for the $\mathfrak{J}$-preadic topology), then we also have the implication c)$\Rightarrow$a) (respectively, b')$\Rightarrow$a)).
+\end{theorem}
+
+\begin{proof}
+The implications a)$\Rightarrow$c), and c)$\Rightarrow$a) when the $\mathrm{M}_i$ are separated for the $\mathfrak{J}$-preadic topology, were already proved in (\sref[0]{0.15.1.9}) and are recalled only for completeness.
+We have also shown in (\sref[III]{III.1.1.4}) and (\sref[III]{III.1.1.3.3}) that a) implies b), and b) trivially implies b').
+It therefore remains to prove that, when every quotient module of a submodule of $\mathrm{M}$ is separated for the $\mathfrak{J}$-preadic topology, b') implies a).
+We argue by induction on $n$.
+For $n=1$, the assertion follows immediately from the definitions, since $\mathrm{H}_1(\mathbf{f},\mathrm{M})$ is precisely the kernel in $\mathrm{M}$ of multiplication $z\leadsto f_1z$ (\sref[III]{III.1.1.1}, \sref[III]{III.1.1.2}).
+Suppose then that $n\geq2$, and put $\mathbf{f}'=(f_i)_{1\leq i\leq n-1}$.
+With the notation of (\sref[III]{III.1.1.2}),
+$\mathrm{K}_\bullet(\mathbf{f},\mathrm{M})=\mathrm{K}_\bullet(f_n)\otimes_\mathrm{A}\mathrm{K}_\bullet(\mathbf{f}',\mathrm{M})$.
+We therefore have (\sref[III]{III.1.1.4.1}) the exact sequence
+\[
+  0\longrightarrow\mathrm{H}_0(f_n,\mathrm{H}_1(\mathbf{f}',\mathrm{M}))
+  \longrightarrow\mathrm{H}_1(\mathbf{f},\mathrm{M})
+  \longrightarrow\mathrm{H}_1(f_n,\mathrm{H}_0(\mathbf{f}',\mathrm{M}))
+  \longrightarrow0.
+  \tag{19.5.1.1}\label{IV.19.5.1.1}
+\]
+----- English, source_aligned/ega4-19.tex, page IV-4 205 -----
+\oldpage[IV-4]{205}
+
+The relation $\mathrm{H}_1(\mathbf{f},\mathrm{M})=0$ implies therefore $\mathrm{H}_0(f_n,\mathrm{H}_1(\mathbf{f}',\mathrm{M}))=0$ and $\mathrm{H}_1(f_n,\mathrm{H}_0(\mathbf{f}',\mathrm{M}))=0$.
+The first of these two relations means that we have $f_n\mathrm{H}_1(\mathbf{f}',\mathrm{M})=\mathrm{H}_1(\mathbf{f}',\mathrm{M})$ \quad (\textbf{III},
+$1.1.3.5$). Now, by definition (\textbf{III}, $1.1.1$), $\mathrm{H}_1(\mathbf{f}',\mathrm{M})$ is isomorphic to a quotient of a submodule $\mathrm{N}$ of $\mathrm{M}^{n-1}$; taking on $\mathrm{M}^{n-1}$ the filtration of the $\mathrm{M}^j$ for $j\leqslant n-1$, on $\mathrm{N}$ the induced filtration and on $\mathrm{H}_1(\mathbf{f}',\mathrm{M})$ the quotient filtration from that of $\mathrm{N}$, we obtain on $\mathrm{H}_1(\mathbf{f}',\mathrm{M})$ a finite filtration whose quotients are isomorphic to quotients of submodules of $\mathrm{M}$, hence are separated for the $\mathfrak{J}$-preadic topology by hypothesis.
+As the relation $f_n\mathrm{H}_1(\mathbf{f}',\mathrm{M})=\mathrm{H}_1(\mathbf{f}',\mathrm{M})$ implies \emph{a fortiori} $\mathfrak{J}\mathrm{H}_1(\mathbf{f}',\mathrm{M})=\mathrm{H}_1(\mathbf{f}',\mathrm{M})$,
+we deduce from the hypothesis and the preceding remarks that $\mathrm{H}_1(\mathbf{f}',\mathrm{M})=0$. The induction hypothesis proves then that the sequence $\mathbf{f}'$ is M-regular. On the other hand, the relation
+$\mathrm{H}_1(f_n,\mathrm{H}_0(\mathbf{f}',\mathrm{M}))=0$ means that $f_n$ is $(\mathrm{M}/(\sum_{i=1}^{n-1}f_i\mathrm{M}))$-regular, hence the sequence $\mathbf{f}$ is M-regular.
+\end{proof}
+
+\begin{corollary}[19.5.2]
+\label{IV.19.5.2}
+Suppose that $\mathrm{A}$ is a Noetherian ring, that the $f_i$ $(1\leqslant i\leqslant n)$ belong to the radical of $\mathrm{A}$, and that $\mathrm{M}$ is a finitely generated $\mathrm{A}$-module. Then the four conditions \emph{a)}, \emph{b)}, \emph{b')}, \emph{c)} of \emph{(\sref{IV.19.5.1})} are equivalent.
+\end{corollary}
+
+\begin{proof}
+We know indeed from $(\mathbf{0}_\mathrm{I},7.3.5)$ that every finitely generated $\mathrm{A}$-module is separated for the $\mathfrak{J}$-preadic topology.
+\end{proof}
+
+\begin{proposition}[19.5.3]
+\label{IV.19.5.3}
+Let
+\[
+  0\to\mathrm{M}'\to\mathrm{M}\to\mathrm{M}''\to 0
+\]
+be an exact sequence of $\mathrm{A}$-modules, $\mathbf{f}=(f_i)_{1\leqslant i\leqslant n}$ an M-regular sequence, $\mathfrak{J}=\sum_{i=1}^{n}f_i\mathrm{A}$. Consider the following properties:
+\begin{enumerate}
+\item[\rm a)] The sequence $\mathbf{f}$ is $\mathrm{M}''$-regular.
+\item[\rm b)] The $\mathfrak{J}$-preadic filtration of $\mathrm{M}'$ is induced on $\mathrm{M}'$ by the $\mathfrak{J}$-preadic filtration of $\mathrm{M}$ (in other words, the canonical homomorphism $\operatorname{gr}_\mathfrak{J}^*(\mathrm{M}')\to\operatorname{gr}_\mathfrak{J}^*(\mathrm{M})$ is injective).
+\item[\rm c)] The canonical homomorphism $\mathrm{M}'/(\sum_{i=1}^{n}f_i\mathrm{M}')\to\mathrm{M}/(\sum_{i=1}^{n}f_i\mathrm{M})$ is injective.
+\end{enumerate}
+Then we have the implications \emph{a)} $\Rightarrow$ \emph{b)} $\Rightarrow$ \emph{c)}, and \emph{a)} implies moreover that the sequence $\mathbf{f}$ is $\mathrm{M}'$-regular.
+If every quotient of a submodule of $\mathrm{M}''$ is separated for the $\mathfrak{J}$-preadic topology, the conditions \emph{a)}, \emph{b)} and \emph{c)} are equivalent.
+\end{proposition}
+
+\begin{proof}
+It is clear that $c)$ is a consequence of $b)$. Let us prove that under all the hypotheses of the last assertion, $c)$ implies $a)$: since $\mathbf{f}$ is M-regular, by \sref{IV.19.5.1}, $\mathrm{H}_1(\mathbf{f},\mathrm{M})=0$, whence an exact sequence, portion of the exact homology sequence
+\[
+  0\to\mathrm{H}_1(\mathbf{f},\mathrm{M}'')\to\mathrm{H}_0(\mathbf{f},\mathrm{M}')\to\mathrm{H}_0(\mathbf{f},\mathrm{M}).
+\]
+Now, condition $c)$ expresses that the homomorphism $\mathrm{H}_0(\mathbf{f},\mathrm{M}')\to\mathrm{H}_0(\mathbf{f},\mathrm{M})$ is injective (\textbf{III}, $1.1.3.5$); it is therefore equivalent to $\mathrm{H}_1(\mathbf{f},\mathrm{M}'')=0$, whence, by virtue of the separation hypothesis and \sref{IV.19.5.1}, the fact that $\mathbf{f}$ is $\mathrm{M}''$-regular.
+
+Let us show next that $a)$ implies $c)$, and also that the sequence $\mathbf{f}$ is $\mathrm{M}'$-regular, proceeding by induction on $n$. For $n=1$, $f_1$ being M-regular is also $\mathrm{M}'$-regular and property $c)$ is precisely the lemma (\sref{IV.3.4.1.4}). For $n>1$, the induction hypothesis shows that
+----- English, source_aligned/ega4-19.tex, page IV-4 206 -----
+\oldpage[IV-4]{206}
+if we set $\mathbf{f}'=(f_1,\ldots,f_{n-1})$, the sequence $\mathbf{f}'$ is $\mathrm{M}'$-regular and, by virtue of $c)$, we have an exact sequence
+\[
+  0\to\mathrm{M}'/(\textstyle\sum_{i=1}^{n-1}f_i\mathrm{M}')\to\mathrm{M}/(\textstyle\sum_{i=1}^{n-1}f_i\mathrm{M})\to\mathrm{M}''/(\textstyle\sum_{i=1}^{n-1}f_i\mathrm{M}'')\to 0.
+\]
+By hypothesis, $f_n$ is $(\mathrm{M}/(\sum_{i=1}^{n-1}f_i\mathrm{M}))$-regular and $(\mathrm{M}''/(\sum_{i=1}^{n-1}f_i\mathrm{M}''))$-regular. The same reasoning shows, on the one hand, that $f_n$ is also $(\mathrm{M}'/(\sum_{i=1}^{n-1}f_i\mathrm{M}'))$-regular and, on the other hand, by (\sref{IV.3.4.1.4}), that the sequence
+\[
+  0\to\mathrm{M}'/(\textstyle\sum_{i=1}^{n}f_i\mathrm{M}')\to\mathrm{M}/(\textstyle\sum_{i=1}^{n}f_i\mathrm{M})\to\mathrm{M}''/(\textstyle\sum_{i=1}^{n}f_i\mathrm{M}'')\to 0
+\]
+is exact, whence $c)$.
+
+Let us show finally that $a)$ implies $b)$. As the sequence $\mathbf{f}$ is then M-regular and $\mathrm{M}'$-regular, hence M-quasi-regular and $\mathrm{M}'$-quasi-regular, we have canonical isomorphisms
+\[
+  \operatorname{gr}_\mathfrak{J}^*(\mathrm{M}')\xrightarrow{\sim}\operatorname{gr}_\mathfrak{J}^0(\mathrm{M}')[\mathrm{T}_1,\ldots,\mathrm{T}_n],\qquad
+  \operatorname{gr}_\mathfrak{J}^*(\mathrm{M})\xrightarrow{\sim}\operatorname{gr}_\mathfrak{J}^0(\mathrm{M})[\mathrm{T}_1,\ldots,\mathrm{T}_n]
+\]
+$(\mathbf{0},15.1.7)$, and as we saw above that $\operatorname{gr}_\mathfrak{J}^0(\mathrm{M}')\to\operatorname{gr}_\mathfrak{J}^0(\mathrm{M})$ is injective, the same holds for $\operatorname{gr}_\mathfrak{J}^*(\mathrm{M}')\to\operatorname{gr}_\mathfrak{J}^*(\mathrm{M})$.
+
+We note moreover that the equivalence of conditions $a)$, $b)$, $c)$ of \sref{IV.19.5.3} holds in particular when $\mathrm{A}$ is Noetherian, $\mathrm{M}''$ is a finitely generated $\mathrm{A}$-module, and the $f_i$ belong to the radical of $\mathrm{A}$.
+\end{proof}
+
+\begin{env}[19.5.4]
+\label{IV.19.5.4}
+In the rest of this number, we preserve the notations $\mathrm{A}$, $\mathbf{f}$, $\mathrm{M}$, $\mathfrak{J}$, and we suppose moreover $\mathrm{M}$ endowed with a decreasing filtration $(\mathrm{M}_k)$ formed of sub-$\mathrm{A}$-modules, such that $\mathrm{M}_0=\mathrm{M}$. Recall $(\mathbf{0},15.1.5)$ that we then define on $\mathrm{M}$ a second decreasing filtration formed of submodules
+\[
+  \mathrm{M}_k'=\mathrm{M}_k+\mathfrak{J}\mathrm{M}_{k-1}+\ldots+\mathfrak{J}^{k-1}\mathrm{M}_1+\mathfrak{J}^k\mathrm{M}_0
+\]
+and that, if $\operatorname{gr}_\bullet(\mathrm{M})$ and $\operatorname{gr}_\bullet'(\mathrm{M})$ are the graded $\mathrm{A}$-modules associated to the filtrations $(\mathrm{M}_k)$ and $(\mathrm{M}_k')$ respectively, we define a surjective graded homomorphism of degree $0$ $(\mathbf{0},15.1.5.2)$
+\[
+  \psi_\mathbf{M}:(\operatorname{gr}_\bullet(\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]\to\operatorname{gr}_\bullet'(\mathrm{M})
+\]
+Recall also that we have the canonical surjective homomorphism $(\mathbf{0},15.1.1.1)$
+\[
+  \varphi_{\operatorname{gr}_\bullet(\mathrm{M})}:(\operatorname{gr}_\bullet(\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]\to\operatorname{gr}_\mathfrak{J}^\bullet(\operatorname{gr}_\bullet(\mathrm{M}))
+\]
+\end{env}
+
+\begin{theorem}[19.5.5]
+\label{IV.19.5.5}
+With the notations of \emph{(\sref{IV.19.5.4})}, consider the following properties:
+\begin{enumerate}
+\item[\rm a)] The sequence $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{M})$-regular.
+\item[\rm b)] The canonical homomorphism $\psi_\mathbf{M}$ is bijective.
+\item[\rm c)] The canonical homomorphism $\varphi_{\operatorname{gr}_\bullet(\mathrm{M})}$ is bijective (in other words $(\mathbf{0},15.1.7)$, the sequence $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{M})$-quasi-regular).
+\end{enumerate}
+----- French corrections on page IV-4 205 -----
+[id 22287]
+OLD: $j\leq n-1$
+NEW: $j\leq n\setmin 1$
+FRENCH CONTEXT (corrected): hbf f',M)=\operatorname{H}_1(\mathbf f',M)$ (\textbf{III}, 1.1.3.5). Or, par définition (\textbf{III}, 1.1.1), $\operatorname{H}_1(\mathbf f',M)$ est isomorphe à un quotient d'un sous-module $N$ de $M^{n-1}$; prenant sur $M^{n-1}$ la filtration des $M^j$ pour $j\leq n\setmin 1$, sur $N$ la filtration induite et sur $\operatorname{H}_1(\mathbf f',M)$ la filtration quotient de celle de $N$, on obtient sur $\operatorname{H}_1(\mathbf f',M)$ une filtration finie dont les quotients sont isomorphes à des quotients de sous-modules de $M$, 
+
+[id 22289]
+OLD: conditions $a)$, $b)$, $b')$, $c)$ de (19.5.1) sont
+NEW: conditions \textup{a), b), b$'$), c)} de \textup{(19.5.1)} sont
+FRENCH CONTEXT (corrected):  suite $\mathbf f$ est M-régulière.
+
+\begin{corollary}[19.5.2]
+\label{IV.19.5.2}
+Supposons que $A$ soit un anneau noethérien, que les $f_i$ \textup{($1\leq i\leq n$)} appartiennent au radical de $A$ et que $M$ soit un $A$-module de type fini. Alors les quatre conditions \textup{a), b), b$'$), c)} de \textup{(19.5.1)} sont équivalentes.
+\end{corollary}
+
+On sait en effet alors ($\mathbf{0}_{\mathrm I}$, 7.3.5) que tout $A$-module de type fini est séparé pour la topologie $\mathfrak J$-préadique.
+
+\begin{proposition}[19.5.3]
+\label{IV.19.5.3}
+Soient
+\[
+  0\longrightarrow M'\longr
+
+[id 22291]
+OLD: \item[a)] La suite $\mathbf f$ est $M''$
+NEW: \item[\textup{a)}] La suite $\mathbf f$ est $M''$
+FRENCH CONTEXT (corrected): [
+  0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0
+\]
+une suite exacte de $A$-modules, $\mathbf f=(f_i)_{1\leq i\leq n}$ une suite M-régulière, $\mathfrak J=\sum_{i=1}^n f_iA$. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $M''$-régulière.
+  \item[\textup{b)}] La filtration $\mathfrak J$-préadique de $M'$ est induite sur $M'$ par la filtration $\mathfrak J$-préadique de $M$ \textup{(autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{
+
+[id 22292]
+OLD: \item[b)] La filtration
+NEW: \item[\textup{b)}] La filtration
+FRENCH CONTEXT (corrected): grightarrow0
+\]
+une suite exacte de $A$-modules, $\mathbf f=(f_i)_{1\leq i\leq n}$ une suite M-régulière, $\mathfrak J=\sum_{i=1}^n f_iA$. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $M''$-régulière.
+  \item[\textup{b)}] La filtration $\mathfrak J$-préadique de $M'$ est induite sur $M'$ par la filtration $\mathfrak J$-préadique de $M$ \textup{(autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est \emph{inject
+
+[id 22293]
+OLD: \item[c)] L'homomorphisme canonique $M'
+NEW: \item[\textup{c)}] L'homomorphisme canonique $M'
+FRENCH CONTEXT (corrected): ak J$-préadique de $M'$ est induite sur $M'$ par la filtration $\mathfrak J$-préadique de $M$ \textup{(autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est \emph{injectif})}.
+  \item[\textup{c)}] L'homomorphisme canonique $M'/(\sum_{i=1}^n f_iM')\to M/(\sum_{i=1}^n f_iM)$ est injectif.
+\end{enumerate}
+
+Alors on a les implications \textup{a)}$\Rightarrow$\textup{b)}$\Rightarrow$\textup{c)}, et \textup{a)} entraîne en outre que la suite $\mathbf f$ est $M'$-régulière.
+
+Si tout quoti
+
+[id 22294]
+OLD: (autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^*(M')\to\operatorname{gr}_{\mathfrak J}^*(M)$ est injectif).
+NEW: \textup{(autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^*(M')\to\operatorname{gr}_{\mathfrak J}^*(M)$ est \emph{injectif})}.
+
+[id 22295]
+OLD: canonique $\operatorname{gr}_{\mathfrak J}^*(M')\to\operatorname{gr}_{\mathfrak J}^*(M)$ est
+NEW: canonique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est
+FRENCH CONTEXT (corrected): :
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $M''$-régulière.
+  \item[\textup{b)}] La filtration $\mathfrak J$-préadique de $M'$ est induite sur $M'$ par la filtration $\mathfrak J$-préadique de $M$ \textup{(autrement dit, l'homomorphisme canonique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est \emph{injectif})}.
+  \item[\textup{c)}] L'homomorphisme canonique $M'/(\sum_{i=1}^n f_iM')\to M/(\sum_{i=1}^n f_iM)$ est injectif.
+\end{enumerate}
+
+Alors on a les implications \textup{a)}$\Rightarrow$\textup{b)}$\Rightarrow$\textup{c)}, et \textup{a)} entraîn
+
+[id 22297]
+OLD: les implications $a)\Rightarrow b)\Rightarrow c)$, et $a)$ entraîne
+NEW: les implications \textup{a)}$\Rightarrow$\textup{b)}$\Rightarrow$\textup{c)}, et \textup{a)} entraîne
+FRENCH CONTEXT (corrected): nique $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$ est \emph{injectif})}.
+  \item[\textup{c)}] L'homomorphisme canonique $M'/(\sum_{i=1}^n f_iM')\to M/(\sum_{i=1}^n f_iM)$ est injectif.
+\end{enumerate}
+
+Alors on a les implications \textup{a)}$\Rightarrow$\textup{b)}$\Rightarrow$\textup{c)}, et \textup{a)} entraîne en outre que la suite $\mathbf f$ est $M'$-régulière.
+
+Si tout quotient d'un sous-module de $M''$ est séparé pour la topologie $\mathfrak J$-préadique, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{proposition}
+
+Il est clair q
+
+[id 22299]
+OLD: $-préadique, les conditions $a)$, $b)$ et $c)$ sont équivalentes.
+NEW: $-préadique, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+FRENCH CONTEXT (corrected): erate}
+
+Alors on a les implications \textup{a)}$\Rightarrow$\textup{b)}$\Rightarrow$\textup{c)}, et \textup{a)} entraîne en outre que la suite $\mathbf f$ est $M'$-régulière.
+
+Si tout quotient d'un sous-module de $M''$ est séparé pour la topologie $\mathfrak J$-préadique, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{proposition}
+
+Il est clair que \emph{c)} est conséquence de \emph{b)}. Prouvons que sous les hypothèses de la dernière assertion, \emph{c)} entraîne \emph{a)}: puisque $\mathbf f$ est M-régulière, on a, par (19.5.1), $\operatorname{H}_1(\mathbf f,M)=0$, 
+
+[id 22300]
+OLD: Il est clair que $c)$ est conséquence de $b)$. Prouvons que sous les hypothèses de la dernière assertion, $c)$ entraîne $a)$:
+NEW: Il est clair que \emph{c)} est conséquence de \emph{b)}. Prouvons que sous les hypothèses de la dernière assertion, \emph{c)} entraîne \emph{a)}:
+FRENCH CONTEXT (corrected): p{a)} entraîne en outre que la suite $\mathbf f$ est $M'$-régulière.
+
+Si tout quotient d'un sous-module de $M''$ est séparé pour la topologie $\mathfrak J$-préadique, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{proposition}
+
+Il est clair que \emph{c)} est conséquence de \emph{b)}. Prouvons que sous les hypothèses de la dernière assertion, \emph{c)} entraîne \emph{a)}: puisque $\mathbf f$ est M-régulière, on a, par (19.5.1), $\operatorname{H}_1(\mathbf f,M)=0$, d'où une suite exacte, portion de la suite exacte d'homologie
+\[
+  0\longrightarrow\operatorname{H}_1(\mathbf f,M'')\longrightarrow\operatorname{H}_0(\mathbf f,M')\l
+
+[id 22301]
+OLD: la condition $c)$ exprime
+NEW: la condition \emph{c)} exprime
+FRENCH CONTEXT (corrected): .1), $\operatorname{H}_1(\mathbf f,M)=0$, d'où une suite exacte, portion de la suite exacte d'homologie
+\[
+  0\longrightarrow\operatorname{H}_1(\mathbf f,M'')\longrightarrow\operatorname{H}_0(\mathbf f,M')\longrightarrow\operatorname{H}_0(\mathbf f,M).
+\]
+Or, la condition \emph{c)} exprime que l'homomorphisme $\operatorname{H}_0(\mathbf f,M')\to\operatorname{H}_0(\mathbf f,M)$ est injectif (\textbf{III}, 1.1.3.5); elle équivaut donc à $\operatorname{H}_1(\mathbf f,M'')=0$, d'où, en vertu de l'hypothèse de séparation et de (19.5.1), le fait que 
+
+[id 22303]
+OLD: Montrons ensuite que $a)$ entraîne $c)$ et
+NEW: Montrons ensuite que \emph{a)} entraîne \emph{c)} et
+FRENCH CONTEXT (corrected): e{H}_0(\mathbf f,M')\to\operatorname{H}_0(\mathbf f,M)$ est injectif (\textbf{III}, 1.1.3.5); elle équivaut donc à $\operatorname{H}_1(\mathbf f,M'')=0$, d'où, en vertu de l'hypothèse de séparation et de (19.5.1), le fait que $\mathbf f$ est $M''$-régulière.
+
+Montrons ensuite que \emph{a)} entraîne \emph{c)} et le fait que $\mathbf f$ est $M'$-régulière, en procédant par récurrence sur $n$. Pour $n=1$, $f_1$ étant M-régulier est aussi $M'$-régulier et la propriété \emph{c)} n'est autre que le lemme (3.4.1.4). Pour $n>1$, l'hypothèse de récurrence montre que
+\oldpage
+
+[id 22304]
+OLD: la propriété $c)$ n'est autre
+NEW: la propriété \emph{c)} n'est autre
+FRENCH CONTEXT (corrected): n et de (19.5.1), le fait que $\mathbf f$ est $M''$-régulière.
+
+Montrons ensuite que \emph{a)} entraîne \emph{c)} et le fait que $\mathbf f$ est $M'$-régulière, en procédant par récurrence sur $n$. Pour $n=1$, $f_1$ étant M-régulier est aussi $M'$-régulier et la propriété \emph{c)} n'est autre que le lemme (3.4.1.4). Pour $n>1$, l'hypothèse de récurrence montre que
+\oldpage[IV-4]{206}
+si l'on pose $\mathbf f'=(f_1,\ldots,f_{n-1})$, la suite $\mathbf f'$ est $M'$-régulière et l'on a, en vertu de \emph{c)} appliqué à $\mathbf f'$, une suite exacte
+\[
+
+=================== PAGE IV-4 206 ===================
+----- (English page IV-4 205: shown above in this file) -----
+----- (English page IV-4 206: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 207 -----
+\oldpage[IV-4]{207}
+Then we have the implications\footnote{The implication \emph{b)}$\Rightarrow$\emph{c)}, without the separation hypothesis on the $\operatorname{gr}_k(\mathrm{M})$, is due to P.~Deligne, whose demonstration we reproduce below.}
+\[
+  \text{a)}\Rightarrow\text{b)}\Rightarrow\text{c)}.
+\]
+Moreover, if for every integer $k\geqslant 0$, the quotient modules of submodules of $\operatorname{gr}_k(\mathrm{M})$ are separated for the $\mathfrak{J}$-preadic topology (which is the case when $\mathrm{A}$ is Noetherian, the $f_i$ belong to the radical of $\mathrm{A}$, and the $\operatorname{gr}_k(\mathrm{M})$ are finitely generated $\mathrm{A}$-modules), \emph{then all conditions} \emph{a)}, \emph{b)} and \emph{c)} \emph{are equivalent}.
+\end{theorem}
+
+\begin{proof}
+The implication \emph{a)}$\Rightarrow$\emph{b)} has been demonstrated in $(\mathbf{0},15.1.8)$; the implication \emph{c)}$\Rightarrow$\emph{a)} under the separation hypothesis is a particular case of $(\mathbf{0},15.1.9)$. It remains to prove that $b)$ implies $c)$, which will be done in several steps.
+
+We denote by $\mathfrak{J}$ the ideal $\sum_{i=1}^{n}f_i\mathrm{A}$ generated by the $f_i$; for every sequence $\mathbf{q}=(q_1,\ldots,q_n)$ of $n$ integers $\geqslant 0$, we set $|\mathbf{q}|=\sum_{i=1}^{n}q_i$ and $\mathbf{f}^\mathbf{q}=f_1^{q_1}f_2^{q_2}\ldots f_n^{q_n}$.
+
+\begin{env}[19.5.5.1]
+\label{IV.19.5.5.1}
+For the map $\psi_\mathbf{M}$ to be injective (and hence bijective), it is necessary and sufficient that the following condition be satisfied:
+
+$(\mathrm{I}_{q,p})$ \emph{For every family $(x_\mathbf{q}^p)_{|\mathbf{q}|=q}$ of elements of $\mathrm{M}_p$, the relation}
+\[
+  \textstyle\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q} x_\mathbf{q}^p\in\textstyle\sum_{i=1}^{q}\mathfrak{J}^{q-i}\mathrm{M}_{p+i}+\mathrm{M}_{p+q+1}'
+\]
+\emph{implies} $x_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}\mathrm{M}_p$ \emph{for every $\mathbf{q}$ such that $|\mathbf{q}|=q$.}
+
+We proceed as in $(\mathbf{0},15.1.6)$ by considering the sub-$\mathrm{A}$-module $\mathrm{Q}_k$ (resp. $\mathrm{Q}_k'$) as a term of degree $k$ in the first (resp. second) member of $(\mathbf{0},15.1.5.2)$. We endow $\mathrm{Q}_k$ with the filtration
+\[
+  (\mathrm{Q}_k)_i=\textstyle\sum_{j\leqslant k-i}\bigl(\textstyle\sum_{|\mathbf{l}|=j}(\operatorname{gr}_{k-j}(\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))\bigr)\mathrm{T}^\mathbf{l}
+\]
+and $\mathrm{Q}_k'$ the image filtration formed by $\psi_\mathbf{M}((\mathrm{Q}_k)_i)=(\mathrm{Q}_k')_i$; it suffices then to prove that the homomorphisms $(\psi_\mathbf{M})_{ki}:\operatorname{gr}_i(\mathrm{Q}_k)\to\operatorname{gr}_i(\mathrm{Q}_k')$ are injective. Now, we have
+\[
+  \operatorname{gr}_i(\mathrm{Q}_k)=\textstyle\sum_{|\mathbf{l}|=k-i}\bigl((\mathrm{M}_i/\mathrm{M}_{i+1})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})\bigr)\mathrm{T}^\mathbf{l}
+  =\textstyle\sum_{|\mathbf{l}|=k-i}\bigl(\mathrm{M}_i/(\mathfrak{J}\mathrm{M}_i+\mathrm{M}_{i+1})\bigr)\mathrm{T}^\mathbf{l}
+\]
+----- French corrections on page IV-4 206 -----
+[id 22307]
+OLD: en vertu de $c)$ appliqué
+NEW: en vertu de \emph{c)} appliqué
+FRENCH CONTEXT (corrected): lier est aussi $M'$-régulier et la propriété \emph{c)} n'est autre que le lemme (3.4.1.4). Pour $n>1$, l'hypothèse de récurrence montre que
+\oldpage[IV-4]{206}
+si l'on pose $\mathbf f'=(f_1,\ldots,f_{n-1})$, la suite $\mathbf f'$ est $M'$-régulière et l'on a, en vertu de \emph{c)} appliqué à $\mathbf f'$, une suite exacte
+\[
+  0\longrightarrow M'/(\textstyle\sum_{i=1}^{n-1}f_iM')\longrightarrow M/(\textstyle\sum_{i=1}^{n-1}f_iM)\longrightarrow M''/(\textstyle\sum_{i=1}^{n-1}f_iM'')\longrightarrow0.
+\]
+Par hypothèse, $f_n$ est $(M/(\sum_{i=1}^{n
+
+[id 22308]
+OLD: est exacte, d'où $c)$.
+NEW: est exacte, d'où \emph{c)}.
+FRENCH CONTEXT (corrected): _{i=1}^{n-1}f_iM'))$-régulier, et d'autre part, en vertu de (3.4.1.4), que la suite
+\[
+  0\longrightarrow M'/(\textstyle\sum_{i=1}^{n}f_iM')\longrightarrow M/(\textstyle\sum_{i=1}^{n}f_iM)\longrightarrow M''/(\textstyle\sum_{i=1}^{n}f_iM'')\longrightarrow0
+\]
+est exacte, d'où \emph{c)}.
+
+Montrons enfin que \emph{a)} entraîne \emph{b)}. Comme la suite $\mathbf f$ est alors M-régulière et $M'$-régulière, donc M-quasi-régulière et $M'$-quasi-régulière, on a des isomorphismes canoniques
+\[
+  \operatorname{gr}_{\mathfrak J}^\bullet(M')\xrightarro
+
+[id 22309]
+OLD: Montrons enfin que $a)$ entraîne $b)$.
+NEW: Montrons enfin que \emph{a)} entraîne \emph{b)}.
+FRENCH CONTEXT (corrected): , et d'autre part, en vertu de (3.4.1.4), que la suite
+\[
+  0\longrightarrow M'/(\textstyle\sum_{i=1}^{n}f_iM')\longrightarrow M/(\textstyle\sum_{i=1}^{n}f_iM)\longrightarrow M''/(\textstyle\sum_{i=1}^{n}f_iM'')\longrightarrow0
+\]
+est exacte, d'où \emph{c)}.
+
+Montrons enfin que \emph{a)} entraîne \emph{b)}. Comme la suite $\mathbf f$ est alors M-régulière et $M'$-régulière, donc M-quasi-régulière et $M'$-quasi-régulière, on a des isomorphismes canoniques
+\[
+  \operatorname{gr}_{\mathfrak J}^\bullet(M')\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M')[T_1,\
+
+[id 22310]
+OLD: \operatorname{gr}_{\mathfrak J}^*(M')\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M')[T_1,\ldots,T_n],
+  \qquad
+  \operatorname{gr}_{\mathfrak J}^*(M)\xrightarrow{\sim}
+NEW: \operatorname{gr}_{\mathfrak J}^\bullet(M')\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M')[T_1,\ldots,T_n],
+  \qquad
+  \operatorname{gr}_{\mathfrak J}^\bullet(M)\xrightarrow{\sim}
+FRENCH CONTEXT (corrected): f_iM'')\longrightarrow0
+\]
+est exacte, d'où \emph{c)}.
+
+Montrons enfin que \emph{a)} entraîne \emph{b)}. Comme la suite $\mathbf f$ est alors M-régulière et $M'$-régulière, donc M-quasi-régulière et $M'$-quasi-régulière, on a des isomorphismes canoniques
+\[
+  \operatorname{gr}_{\mathfrak J}^\bullet(M')\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M')[T_1,\ldots,T_n],
+  \qquad
+  \operatorname{gr}_{\mathfrak J}^\bullet(M)\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M)[T_1,\ldots,T_n]
+\]
+(\textbf{0}, 15.1.7), et comme on a vu ci-dessus que $\operatorname{gr}_{\mathfrak J}^0(M')\to\operatorname{gr}_{\mathfrak J}^0(M)$ est injectif, il en est de même de $\operatorname{gr}_{\mathfrak J}^\bul
+
+[id 22311]
+OLD: ($0$, 15.1.7), et comme
+NEW: (\textbf{0}, 15.1.7), et comme
+FRENCH CONTEXT (corrected):  canoniques
+\[
+  \operatorname{gr}_{\mathfrak J}^\bullet(M')\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M')[T_1,\ldots,T_n],
+  \qquad
+  \operatorname{gr}_{\mathfrak J}^\bullet(M)\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M)[T_1,\ldots,T_n]
+\]
+(\textbf{0}, 15.1.7), et comme on a vu ci-dessus que $\operatorname{gr}_{\mathfrak J}^0(M')\to\operatorname{gr}_{\mathfrak J}^0(M)$ est injectif, il en est de même de $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$.
+
+On notera encore que l'équival
+
+[id 22312]
+OLD: de même de $\operatorname{gr}_{\mathfrak J}^*(M')\to\operatorname{gr}_{\mathfrak J}^*(M)$
+NEW: de même de $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$
+FRENCH CONTEXT (corrected): e{gr}_{\mathfrak J}^\bullet(M)\xrightarrow{\sim}\operatorname{gr}_{\mathfrak J}^0(M)[T_1,\ldots,T_n]
+\]
+(\textbf{0}, 15.1.7), et comme on a vu ci-dessus que $\operatorname{gr}_{\mathfrak J}^0(M')\to\operatorname{gr}_{\mathfrak J}^0(M)$ est injectif, il en est de même de $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$.
+
+On notera encore que l'équivalence des conditions \emph{a)}, \emph{b)}, \emph{c)} de (19.5.3) est valable en particulier lorsque $A$ \emph{est noethérien}, $M''$ \emph{un $A$-module de type fini et que les $f_i$ appartiennent au radical de} $A$.
+
+\begin{env
+
+[id 22313]
+OLD: l'équivalence des conditions $a)$, $b)$, $c)$ de
+NEW: l'équivalence des conditions \emph{a)}, \emph{b)}, \emph{c)} de
+FRENCH CONTEXT (corrected):  et comme on a vu ci-dessus que $\operatorname{gr}_{\mathfrak J}^0(M')\to\operatorname{gr}_{\mathfrak J}^0(M)$ est injectif, il en est de même de $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$.
+
+On notera encore que l'équivalence des conditions \emph{a)}, \emph{b)}, \emph{c)} de (19.5.3) est valable en particulier lorsque $A$ \emph{est noethérien}, $M''$ \emph{un $A$-module de type fini et que les $f_i$ appartiennent au radical de} $A$.
+
+\begin{env}[19.5.4]
+\label{IV.19.5.4}
+Dans la suite de ce numéro, nous conservons les notations $
+
+[id 22314]
+OLD: lorsque $A$ est noethérien, $M''$ un $A$-module de type fini et que les $f_i$ appartiennent au radical de $A$.
+NEW: lorsque $A$ \emph{est noethérien}, $M''$ \emph{un $A$-module de type fini et que les $f_i$ appartiennent au radical de} $A$.
+FRENCH CONTEXT (corrected): k J}^0(M)$ est injectif, il en est de même de $\operatorname{gr}_{\mathfrak J}^\bullet(M')\to\operatorname{gr}_{\mathfrak J}^\bullet(M)$.
+
+On notera encore que l'équivalence des conditions \emph{a)}, \emph{b)}, \emph{c)} de (19.5.3) est valable en particulier lorsque $A$ \emph{est noethérien}, $M''$ \emph{un $A$-module de type fini et que les $f_i$ appartiennent au radical de} $A$.
+
+\begin{env}[19.5.4]
+\label{IV.19.5.4}
+Dans la suite de ce numéro, nous conservons les notations $A$, $\mathbf f$, $M$, $\mathfrak J$ de (19.5.1), et nous supposons de plus $M$ muni d'une filtration décroissante $(M_k)$ formée de sous-$A$-modules, telle que $
+
+[id 22315]
+OLD: Rappelons ($0$, 15.1.5) que
+NEW: Rappelons (\textbf{0}, 15.1.5) que
+FRENCH CONTEXT (corrected): {env}[19.5.4]
+\label{IV.19.5.4}
+Dans la suite de ce numéro, nous conservons les notations $A$, $\mathbf f$, $M$, $\mathfrak J$ de (19.5.1), et nous supposons de plus $M$ muni d'une filtration décroissante $(M_k)$ formée de sous-$A$-modules, telle que $M_0=M$. Rappelons (\textbf{0}, 15.1.5) que l'on définit alors sur $M$ une seconde filtration décroissante formée des sous-modules
+\[
+  M_k'=M_k+\mathfrak JM_{k-1}+\ldots+\mathfrak J^{k-1}M_1+\mathfrak J^kM_0
+\]
+et que, si $\operatorname{gr}_\bullet(M)$ et $\operatorname{gr}_\bullet'(M)$ sont les $A$-m
+
+[id 22317]
+OLD: de degré $0$ ($0$, 15.1.5.2)
+NEW: de degré $0$ (\textbf{0}, 15.1.5.2)
+FRENCH CONTEXT (corrected): \ldots+\mathfrak J^{k-1}M_1+\mathfrak J^kM_0
+\]
+et que, si $\operatorname{gr}_\bullet(M)$ et $\operatorname{gr}_\bullet'(M)$ sont les $A$-modules gradués associés aux filtrations $(M_k)$ et $(M_k')$ respectivement, on définit un homomorphisme gradué surjectif de degré $0$ (\textbf{0}, 15.1.5.2)
+\[
+  \psi_M:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(M)
+\]
+Rappelons aussi que l'on a l'homomorphisme canonique surjectif (\textbf{0}, 15.1.1.1)
+\[
+  \varphi_{\operatorname{gr}_\bullet(M)}
+
+[id 22318]
+OLD: \operatorname{gr}_\bullet'(M).
+\]
+NEW: \operatorname{gr}_\bullet'(M)
+\]
+FRENCH CONTEXT (corrected):  $A$-modules gradués associés aux filtrations $(M_k)$ et $(M_k')$ respectivement, on définit un homomorphisme gradué surjectif de degré $0$ (\textbf{0}, 15.1.5.2)
+\[
+  \psi_M:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(M)
+\]
+Rappelons aussi que l'on a l'homomorphisme canonique surjectif (\textbf{0}, 15.1.1.1)
+\[
+  \varphi_{\operatorname{gr}_\bullet(M)}:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(\ope
+
+[id 22319]
+OLD: surjectif ($0$, 15.1.1.1)
+NEW: surjectif (\textbf{0}, 15.1.1.1)
+FRENCH CONTEXT (corrected): éfinit un homomorphisme gradué surjectif de degré $0$ (\textbf{0}, 15.1.5.2)
+\[
+  \psi_M:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(M)
+\]
+Rappelons aussi que l'on a l'homomorphisme canonique surjectif (\textbf{0}, 15.1.1.1)
+\[
+  \varphi_{\operatorname{gr}_\bullet(M)}:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(\operatorname{gr}_\bullet(M))
+\]
+\end{env}
+
+\begin{theorem}[19.5.5]
+\label{IV.19.5.5}
+Avec
+
+[id 22321]
+OLD: (\operatorname{gr}_\bullet(M)).
+\]
+NEW: (\operatorname{gr}_\bullet(M))
+\]
+FRENCH CONTEXT (corrected): M)
+\]
+Rappelons aussi que l'on a l'homomorphisme canonique surjectif (\textbf{0}, 15.1.1.1)
+\[
+  \varphi_{\operatorname{gr}_\bullet(M)}:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(\operatorname{gr}_\bullet(M))
+\]
+\end{env}
+
+\begin{theorem}[19.5.5]
+\label{IV.19.5.5}
+Avec les notations de \textup{(19.5.4)}, considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] 
+
+[id 22323]
+OLD: \item[a)] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$
+NEW: \item[\textup{a)}] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$
+FRENCH CONTEXT (corrected):  J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak J}^\bullet(\operatorname{gr}_\bullet(M))
+\]
+\end{env}
+
+\begin{theorem}[19.5.5]
+\label{IV.19.5.5}
+Avec les notations de \textup{(19.5.4)}, considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] L'homomorphisme canonique $\psi_M$ est bijectif.
+  \item[\textup{c)}] L'homomorphisme canonique $\varphi_{\operatorname{gr}_\bullet(M)}$ est bijectif \textup{(autrement dit (\textbf{0}, 15.1.7), la suite $\mathbf f$ est $\opera
+
+[id 22324]
+OLD: \item[b)] L'homomorphisme canonique $\psi_M$
+NEW: \item[\textup{b)}] L'homomorphisme canonique $\psi_M$
+FRENCH CONTEXT (corrected): {gr}_\bullet(M))
+\]
+\end{env}
+
+\begin{theorem}[19.5.5]
+\label{IV.19.5.5}
+Avec les notations de \textup{(19.5.4)}, considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] L'homomorphisme canonique $\psi_M$ est bijectif.
+  \item[\textup{c)}] L'homomorphisme canonique $\varphi_{\operatorname{gr}_\bullet(M)}$ est bijectif \textup{(autrement dit (\textbf{0}, 15.1.7), la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$\emph{-quasi-régulière})}.
+\end{enumerate}
+
+
+
+[id 22325]
+OLD: \item[c)] L'homomorphisme canonique $\varphi
+NEW: \item[\textup{c)}] L'homomorphisme canonique $\varphi
+FRENCH CONTEXT (corrected): 5}
+Avec les notations de \textup{(19.5.4)}, considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] L'homomorphisme canonique $\psi_M$ est bijectif.
+  \item[\textup{c)}] L'homomorphisme canonique $\varphi_{\operatorname{gr}_\bullet(M)}$ est bijectif \textup{(autrement dit (\textbf{0}, 15.1.7), la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$\emph{-quasi-régulière})}.
+\end{enumerate}
+
+\oldpage[IV-4]{207}
+
+On a alors les implications\footnote{L'implicatio
+
+[id 22326]
+OLD: est bijectif (autrement dit ($0$, 15.1.7), la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-quasi-régulière).
+NEW: est bijectif \textup{(autrement dit ($0$, 15.1.7), la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$\emph{-quasi-régulière})}.
+
+[id 22327]
+OLD: dit ($0$, 15.1.7)
+NEW: dit (\textbf{0}, 15.1.7)
+FRENCH CONTEXT (corrected): }] La suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] L'homomorphisme canonique $\psi_M$ est bijectif.
+  \item[\textup{c)}] L'homomorphisme canonique $\varphi_{\operatorname{gr}_\bullet(M)}$ est bijectif \textup{(autrement dit (\textbf{0}, 15.1.7), la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$\emph{-quasi-régulière})}.
+\end{enumerate}
+
+\oldpage[IV-4]{207}
+
+On a alors les implications\footnote{L'implication \emph{b)}$\Rightarrow$\emph{c)}, sans hypothèse de séparation sur les $\operatorname{gr
+
+=================== PAGE IV-4 207 ===================
+----- (English page IV-4 206: shown above in this file) -----
+----- (English page IV-4 207: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 208 -----
+\oldpage[IV-4]{208}
+on the other hand, $(\mathrm{Q}_k')_{i+1}$ is the image of $\sum_{h=0}^{k-i-1}\mathfrak{J}^{k-i-h-1}\mathrm{M}_{i+h+1}$ in $\mathrm{M}_k'/\mathrm{M}_{k+1}'$. To write that $(\psi_\mathbf{M})_{ki}$ is injective is therefore equivalent to writing the condition $(\mathrm{I}_{k-i,i})$; whence our assertion.
+\end{env}
+
+\begin{env}[19.5.5.2]
+\label{IV.19.5.5.2}
+\emph{For the sequence $\mathbf{f}$ to be $\operatorname{gr}_\bullet(\mathrm{M})$-quasi-regular, it suffices that, for $p\geqslant 0$ and $q\geqslant 0$, the following condition be satisfied:}
+
+$(\mathrm{S}_{q,p})$ \emph{For every family $(x_\mathbf{q}^p)_{|\mathbf{q}|=q}$ of elements of $\mathrm{M}_p$, the relation}
+\[
+  \textstyle\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q}x_\mathbf{q}^p\in\mathrm{M}_{p+1}
+\]
+\emph{implies $x_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}\mathrm{M}_p$ for every $\mathbf{q}$ such that $|\mathbf{q}|=q$.}
+
+By definition, saying that $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{M})$-quasi-regular means that, for every $p\geqslant 0$ and every $q\geqslant 0$, the relation
+\[
+  \textstyle\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q} x_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}^{q+1}\mathrm{M}_p
+\]
+for a family $(x_\mathbf{q}^p)_{|\mathbf{q}|=q}$ of elements of $\mathrm{M}_p$ implies $x_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}\mathrm{M}_p$ for every $\mathbf{q}$ such that $|\mathbf{q}|=q$. The hypothesis on the family $(x_\mathbf{q}^p)_{|\mathbf{q}|=q}$ means that there exists a family $(y_\mathbf{q}^p)_{|\mathbf{q}|=q}$ of elements of $\mathfrak{J}\mathrm{M}_p$ such that $\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q}(x_\mathbf{q}^p-y_\mathbf{q}^p)\in\mathrm{M}_{p+1}$; condition $(\mathrm{S}_{q,p})$ then implies $x_\mathbf{q}^p-y_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}\mathrm{M}_p$, whence $x_\mathbf{q}^p\in\mathrm{M}_{p+1}+\mathfrak{J}\mathrm{M}_p$; hence one sees that the conditions $(\mathrm{S}_{q,p})$ imply that the sequence $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{M})$-quasi-regular.
+\end{env}
+
+It suffices therefore to prove the following proposition:
+
+\begin{env}[19.5.5.3]
+\label{IV.19.5.5.3}
+\emph{For every $r\geqslant 0$, if the conditions $(\mathrm{I}_{q,p})$ are satisfied for $p+q<r$, then the conditions $(\mathrm{S}_{q,p})$ are satisfied for $p+q<r$.}
+
+Let us introduce the conditions
+
+$(\mathrm{A}_{q,p})$ \emph{For every family $(x_\mathbf{q}^p)_{|\mathbf{q}|=q}$ of elements of $\mathrm{M}_p$, the relation}
+\[
+  \textstyle\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q}x_\mathbf{q}^p\in\mathrm{M}_{p+1}
+\]
+\emph{implies}
+\[
+  \textstyle\sum_{|\mathbf{q}|=q}\mathbf{f}^\mathbf{q}x_\mathbf{q}^p
+  \in\textstyle\sum_{i=1}^{q}\mathfrak{J}^{q-i}\mathrm{M}_{p+i}.
+\]
+
+It is clear that the conjunction of $(\mathrm{A}_{q,p})$ and $(\mathrm{I}_{q,p})$ implies $(\mathrm{S}_{q,p})$. On the other hand, the conditions $(\mathrm{A}_{1,p})$ and $(\mathrm{S}_{0,p})$ are trivial. Consequently, \sref{IV.19.5.5.3} will follow from the following proposition:
+\end{env}
+
+\begin{env}[19.5.5.4]
+\label{IV.19.5.5.4}
+\emph{For all $p\geqslant 0$ and $q\geqslant 1$, the condition $(\mathrm{A}_{q+1,p})$ is implied by the conjunction of the conditions $(\mathrm{A}_{q,p})$, $(\mathrm{I}_{q-1,p+1})$, $(\mathrm{I}_{q-2,p+2})$, $\ldots$, $(\mathrm{I}_{0,p+q})$.}
+
+Indeed, once this proposition is proved, the conditions $(\mathrm{I}_{q,p})$ supposed satisfied for $p+q<r$ will imply, for each $p\leqslant r$, the condition $(\mathrm{A}_{q,p})$ for $1\leqslant q<r\setmin p$, by induction on $q$.
+
+Let us prove \sref{IV.19.5.5.4}. Let us note that the condition $(\mathrm{A}_{q,p})$ is also equivalent to
+\end{env}
+
+\begin{env}[19.5.5.5]
+\label{IV.19.5.5.5}
+\[
+  \mathfrak{J}^q\mathrm{M}_p\cap\mathrm{M}_{p+1}\subset\textstyle\sum_{i=1}^{q}\mathfrak{J}^{q-i}\mathrm{M}_{p+i}.
+\]
+
+Let therefore $m\in\mathfrak{J}^{q+1}\mathrm{M}_p\cap\mathrm{M}_{p+1}\subset\mathfrak{J}^q\mathrm{M}_p\cap\mathrm{M}_{p+1}$. Applying condition $(\mathrm{A}_{q,p})$, we see that for each $i$ such that $1\leqslant i\leqslant q$, there exists a family $(y_\mathbf{q}^{p+i})_{|\mathbf{q}|=q-i}$ of elements of $\mathrm{M}_{p+i}$ such that
+\[
+  m=\textstyle\sum_{i=1}^{q}\bigl(\textstyle\sum_{|\mathbf{q}|=q-i}\mathbf{f}^\mathbf{q} y_\mathbf{q}^{p+i}\bigr).
+\]
+Suppose that for $1\leqslant i<j$ ($j\geqslant 1$), we have proved that
+\[
+  y_\mathbf{q}^{p+i}\in\mathfrak{J}\mathrm{M}_{p+i}+\mathrm{M}_{p+i+1}\qquad(\text{for }|\mathbf{q}|=q-i).
+\]
+We deduce by definition \sref{IV.19.5.4}
+\[
+  m-\textstyle\sum_{i<j}\bigl(\textstyle\sum_{|\mathbf{q}|=q-i}\mathbf{f}^\mathbf{q} y_\mathbf{q}^{p+i}\bigr)\in\mathrm{M}_{p+q+1}',
+\]
+Since by hypothesis $(\mathrm{I}_{q-j,p+j})$ is satisfied, we deduce
+\[
+  y_\mathbf{q}^{p+j}\in\mathfrak{J}\mathrm{M}_{p+j}+\mathrm{M}_{p+j+1}
+\]
+----- French corrections on page IV-4 207 -----
+[id 22328]
+OLD:   a)\Rightarrow b)\Rightarrow c).
+
+NEW:   \textup{a)}\Rightarrow\textup{b)}\Rightarrow\textup{c)}.
+
+FRENCH CONTEXT (corrected): d{enumerate}
+
+\oldpage[IV-4]{207}
+
+On a alors les implications\footnote{L'implication \emph{b)}$\Rightarrow$\emph{c)}, sans hypothèse de séparation sur les $\operatorname{gr}_k(M)$, est due à P. Deligne, dont nous reproduisons ci-dessous la démonstration.}
+\[
+  \textup{a)}\Rightarrow\textup{b)}\Rightarrow\textup{c)}.
+\]
+En outre, si, pour tout entier $k\geq0$, les modules quotients des sous-modules de $\operatorname{gr}_k(M)$ sont séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui est le cas lorsque $A$ est noethérien, que les $f_i$ sont dans le radical de $
+
+[id 22329]
+OLD: (ce qui est le cas lorsque $A$ est noethérien, que les $f_i$ sont dans le radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)
+NEW: \textup{(ce qui est le cas lorsque $A$ est noethérien, que les $f_i$ sont dans le radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}
+FRENCH CONTEXT (corrected): s ci-dessous la démonstration.}
+\[
+  \textup{a)}\Rightarrow\textup{b)}\Rightarrow\textup{c)}.
+\]
+En outre, si, pour tout entier $k\geq0$, les modules quotients des sous-modules de $\operatorname{gr}_k(M)$ sont séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui est le cas lorsque $A$ est noethérien, que les $f_i$ sont dans le radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}, alors les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)}$\Rightarrow$\emph{b)} a été démontrée dans (\textbf{0}, 15.1.8); l'implication \emph{c)}$\Rightarrow$\emph{a)} sous l'hypothèse de séparati
+
+[id 22330]
+OLD: alors les conditions $a)$, $b)$ et $c)$ sont équivalentes.
+NEW: alors les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+FRENCH CONTEXT (corrected): odules de $\operatorname{gr}_k(M)$ sont séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui est le cas lorsque $A$ est noethérien, que les $f_i$ sont dans le radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}, alors les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)}$\Rightarrow$\emph{b)} a été démontrée dans (\textbf{0}, 15.1.8); l'implication \emph{c)}$\Rightarrow$\emph{a)} sous l'hypothèse de séparation est un cas particulier de (\textbf{0}, 15.1.9). Il reste à prouver que \emph{b
+
+[id 22333]
+OLD: dans ($0$, 15.1.8)
+NEW: dans (\textbf{0}, 15.1.8)
+FRENCH CONTEXT (corrected): $ sont dans le radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}, alors les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)}$\Rightarrow$\emph{b)} a été démontrée dans (\textbf{0}, 15.1.8); l'implication \emph{c)}$\Rightarrow$\emph{a)} sous l'hypothèse de séparation est un cas particulier de (\textbf{0}, 15.1.9). Il reste à prouver que \emph{b)} implique \emph{c)}, ce qui va se faire en plusieurs étapes.
+
+Nous désignerons par $\mathfrak J$ l'id
+
+[id 22335]
+OLD: particulier de ($0$, 15.1.9)
+NEW: particulier de (\textbf{0}, 15.1.9)
+FRENCH CONTEXT (corrected): nditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)}$\Rightarrow$\emph{b)} a été démontrée dans (\textbf{0}, 15.1.8); l'implication \emph{c)}$\Rightarrow$\emph{a)} sous l'hypothèse de séparation est un cas particulier de (\textbf{0}, 15.1.9). Il reste à prouver que \emph{b)} implique \emph{c)}, ce qui va se faire en plusieurs étapes.
+
+Nous désignerons par $\mathfrak J$ l'idéal $\sum_{i=1}^n f_iA$ engendré par les $f_i$; pour toute suite $\mathbf q=(q_1,\ldots,q_n)$ de $n$ entiers $\geq0$, on pose
+
+[id 22336]
+OLD: que $b)$ implique $c)$, ce qui
+NEW: que \emph{b)} implique \emph{c)}, ce qui
+FRENCH CONTEXT (corrected): uivalentes.
+\end{theorem}
+
+L'implication \emph{a)}$\Rightarrow$\emph{b)} a été démontrée dans (\textbf{0}, 15.1.8); l'implication \emph{c)}$\Rightarrow$\emph{a)} sous l'hypothèse de séparation est un cas particulier de (\textbf{0}, 15.1.9). Il reste à prouver que \emph{b)} implique \emph{c)}, ce qui va se faire en plusieurs étapes.
+
+Nous désignerons par $\mathfrak J$ l'idéal $\sum_{i=1}^n f_iA$ engendré par les $f_i$; pour toute suite $\mathbf q=(q_1,\ldots,q_n)$ de $n$ entiers $\geq0$, on posera $|\mathbf q|=\sum_{i=1}^nq_i$ et $\mathbf f^{\mathbf q}=f_
+
+[id 22338]
+OLD: Pour que l'application $\psi_M$ soit injective (et par suite bijective), il faut et il suffit que pour $p\geq0$ et $q\geq0$ la condition suivante soit vérifiée:
+NEW: \emph{Pour que l'application $\psi_M$ soit injective (et par suite bijective), il faut et il suffit que pour $p\geq0$ et $q\geq0$ la condition suivante soit vérifiée:}
+FRENCH CONTEXT (corrected): $\sum_{i=1}^n f_iA$ engendré par les $f_i$; pour toute suite $\mathbf q=(q_1,\ldots,q_n)$ de $n$ entiers $\geq0$, on posera $|\mathbf q|=\sum_{i=1}^nq_i$ et $\mathbf f^{\mathbf q}=f_1^{q_1}f_2^{q_2}\ldots f_n^{q_n}$.
+
+\begin{env}[19.5.5.1]
+\label{IV.19.5.5.1}
+\emph{Pour que l'application $\psi_M$ soit injective (et par suite bijective), il faut et il suffit que pour $p\geq0$ et $q\geq0$ la condition suivante soit vérifiée:}
+
+$(\mathrm I_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation}
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}+M_{p+q+1}'
+\]
+\emph{implique $x_{\mathbf q
+
+[id 22339]
+OLD: $(\mathrm I_{q,p})$ Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation
+NEW: $(\mathrm I_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation}
+FRENCH CONTEXT (corrected): \mathbf q}=f_1^{q_1}f_2^{q_2}\ldots f_n^{q_n}$.
+
+\begin{env}[19.5.5.1]
+\label{IV.19.5.5.1}
+\emph{Pour que l'application $\psi_M$ soit injective (et par suite bijective), il faut et il suffit que pour $p\geq0$ et $q\geq0$ la condition suivante soit vérifiée:}
+
+$(\mathrm I_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation}
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}+M_{p+q+1}'
+\]
+\emph{implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+
+On procède comme dans (\textbf{0}, 1
+
+[id 22340]
+OLD: M_{p+q+1}'
+\]
+implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.
+NEW: M_{p+q+1}'
+\]
+\emph{implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+FRENCH CONTEXT (corrected): eq0$ la condition suivante soit vérifiée:}
+
+$(\mathrm I_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation}
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}+M_{p+q+1}'
+\]
+\emph{implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+
+On procède comme dans (\textbf{0}, 15.1.6) en considérant le sous-$A$-module $Q_k$ (resp. $Q_k'$) des termes de degré $k$ au premier (resp. second) membre de (\textbf{0}, 15.1.5.2). On munit $Q_k$ de la filtration
+\[
+  (Q_k)_i=\sum_{j\leq k-i}\left(\sum_{|\m
+
+[id 22341]
+OLD: comme dans ($0$, 15.1.6)
+NEW: comme dans (\textbf{0}, 15.1.6)
+FRENCH CONTEXT (corrected): ts de $M_p$, la relation}
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}+M_{p+q+1}'
+\]
+\emph{implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+
+On procède comme dans (\textbf{0}, 15.1.6) en considérant le sous-$A$-module $Q_k$ (resp. $Q_k'$) des termes de degré $k$ au premier (resp. second) membre de (\textbf{0}, 15.1.5.2). On munit $Q_k$ de la filtration
+\[
+  (Q_k)_i=\sum_{j\leq k-i}\left(\sum_{|\mathbf j|=j}(\operatorname{gr}_{k-j}(M)\otime
+
+[id 22342]
+OLD: membre de ($0$, 15.1.5.2)
+NEW: membre de (\textbf{0}, 15.1.5.2)
+FRENCH CONTEXT (corrected): 
+\]
+\emph{implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+
+On procède comme dans (\textbf{0}, 15.1.6) en considérant le sous-$A$-module $Q_k$ (resp. $Q_k'$) des termes de degré $k$ au premier (resp. second) membre de (\textbf{0}, 15.1.5.2). On munit $Q_k$ de la filtration
+\[
+  (Q_k)_i=\sum_{j\leq k-i}\left(\sum_{|\mathbf j|=j}(\operatorname{gr}_{k-j}(M)\otimes_A(A/\mathfrak J))\mathbf T^{\mathbf j}\right)
+\]
+et $Q_k'$ de la filtration image formée des $\psi_M((Q_k)_i)=(Q_k')_i$; il suffit encor
+
+[id 22343]
+OLD: \sum_{|\mathbf l|=j}(\operatorname{gr}_{k-j}(M)\otimes_A(A/\mathfrak J))T^{\mathbf l}
+NEW: \sum_{|\mathbf j|=j}(\operatorname{gr}_{k-j}(M)\otimes_A(A/\mathfrak J))\mathbf T^{\mathbf j}
+FRENCH CONTEXT (corrected): f q|=q$.}
+
+On procède comme dans (\textbf{0}, 15.1.6) en considérant le sous-$A$-module $Q_k$ (resp. $Q_k'$) des termes de degré $k$ au premier (resp. second) membre de (\textbf{0}, 15.1.5.2). On munit $Q_k$ de la filtration
+\[
+  (Q_k)_i=\sum_{j\leq k-i}\left(\sum_{|\mathbf j|=j}(\operatorname{gr}_{k-j}(M)\otimes_A(A/\mathfrak J))\mathbf T^{\mathbf j}\right)
+\]
+et $Q_k'$ de la filtration image formée des $\psi_M((Q_k)_i)=(Q_k')_i$; il suffit encore de prouver que les homomorphismes $(\psi_M)_{ki}:\operatorname{gr}_i(Q_k)\to\operatorname{gr}_i(Q_k')$ sont injectifs. Or, on a
+\[
+  \operatorname{gr}_i(Q_k)=\s
+
+[id 22344]
+OLD: \sum_{|\mathbf l|=k-i}((M_i/M_{i+1})\otimes_A(A/\mathfrak J))T^{\mathbf l}
+  =\sum_{|\mathbf l|=k-i}(M_i/(\mathfrak JM_i+M_{i+1}))T^{\mathbf l}
+NEW: \sum_{|\mathbf j|=k-i}((M_i/M_{i+1})\otimes_A(A/\mathfrak J))\mathbf T^{\mathbf j}
+  =\sum_{|\mathbf j|=k-i}(M_i/(\mathfrak JM_i+M_{i+1}))\mathbf T^{\mathbf j}
+FRENCH CONTEXT (corrected): j}\right)
+\]
+et $Q_k'$ de la filtration image formée des $\psi_M((Q_k)_i)=(Q_k')_i$; il suffit encore de prouver que les homomorphismes $(\psi_M)_{ki}:\operatorname{gr}_i(Q_k)\to\operatorname{gr}_i(Q_k')$ sont injectifs. Or, on a
+\[
+  \operatorname{gr}_i(Q_k)=\sum_{|\mathbf j|=k-i}((M_i/M_{i+1})\otimes_A(A/\mathfrak J))\mathbf T^{\mathbf j}
+  =\sum_{|\mathbf j|=k-i}(M_i/(\mathfrak JM_i+M_{i+1}))\mathbf T^{\mathbf j};
+\]
+d'autre part, $(Q_k')_{i+1}$ est l'image de $\sum_{h=0}^{k-i-1}\mathfrak J^{k-i-h-1}M_{i+h+1}$ dans $M_k'/M_{k+1}'$. Écrire que $(\psi_M)_{ki}$ est injectif équivaut donc à écrire la condition $(\mathrm I_{k-i,i})$; d'où notre assertion.
+\end{env}
+
+\begin
+
+=================== PAGE IV-4 208 ===================
+----- (English page IV-4 207: shown above in this file) -----
+----- (English page IV-4 208: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 209 -----
+\oldpage[IV-4]{209}
+and, by induction on $j$, one sees therefore that this condition is satisfied for \emph{every} $j$ such that $1\leqslant j\leqslant q$. We have therefore
+\[
+  m\in\textstyle\sum_{i=1}^{q}\mathfrak{J}^{q-i}(\mathfrak{J}\mathrm{M}_{p+i}+\mathrm{M}_{p+i+1})=\textstyle\sum_{i=1}^{q+1}\mathfrak{J}^{q-i+1}\mathrm{M}_{p+i}
+\]
+and we have thus proved $(\mathrm{A}_{q+1,p})$ and completed the demonstration of \sref{IV.19.5.5}.
+\end{env}
+\end{proof}
+
+\begin{remarks}[19.5.6]
+\label{IV.19.5.6}
+\medskip\noindent
+\begin{enumerate}
+\item[\rm(i)] The results of this number remain valid when, instead of an $\mathrm{A}$-module $\mathrm{M}$ and elements $f_i\in\mathrm{A}$, one takes an object $\mathrm{M}$ of any abelian category, and $n$ endomorphisms $f_i$ of $\mathrm{M}$ that mutually commute; the demonstrations adapt without difficulty to this more general case. The hypothesis of separation for an $\mathrm{A}$-module $\mathrm{N}$ relative to the $\mathfrak{J}$-preadic topology must here be replaced by the hypothesis that every sub-object of $\mathrm{N}$ contained in all the $\sum f_i^r(\mathrm{N})$ ($r$ an arbitrary integer) is necessarily zero. The same remark applies to the results of \sref{IV.19.7}.
+\item[\rm(ii)] Suppose that $\mathrm{A}$ is a \emph{graded} ring in degrees $\geq0$. If $\mathrm{M}$ (resp. each $\operatorname{gr}_p(\mathrm{M})$) is a graded $\mathrm{A}$-module with degrees bounded below, and if the $f_i$ contain no homogeneous component of degree $0$, the separation hypothesis of $(\mathbf{0},15.1.9)$ is \emph{ipso facto} satisfied for $\mathrm{M}$ (resp. each $\operatorname{gr}_p(\mathrm{M})$), and one sees that in this case we have the implication \emph{c)}$\Rightarrow$\emph{a)} in \sref{IV.19.5.1} (resp. \sref{IV.19.5.5}).
+\item[\rm(iii)] Recall that, without the separation hypothesis, the implication \emph{c)}$\Rightarrow$\emph{b)} is no longer valid even for $n=1$ $(\mathbf{0},15.1.12,\text{ (iii)})$.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Regular sequences relative to a filtered quotient module}
+\label{subsection:IV.19.6}
+
+\begin{env}[19.6.1]
+\label{IV.19.6.1}
+Let $\mathrm{A}$ be a ring, $\mathbf{f}=(f_1,\ldots,f_n)$ a finite sequence of elements of $\mathrm{A}$, $\mathfrak{J}=f_1\mathrm{A}+\ldots+f_n\mathrm{A}$ the ideal it generates, and consider an exact sequence of $\mathrm{A}$-modules
+\[
+  0\to\mathrm{R}\xrightarrow{j}\mathrm{N}\xrightarrow{p}\mathrm{M}\to 0
+\]
+where one supposes that $\mathrm{N}$ is endowed with a decreasing filtration $(\mathrm{N}_k)$ of sub-$\mathrm{A}$-modules, with $\mathrm{N}_0=\mathrm{N}$. We set $\mathrm{R}_k=\mathrm{R}\cap\mathrm{N}_k$ (filtration induced by $(\mathrm{N}_k)$), $\mathrm{M}_k=p(\mathrm{N}_k)$ (quotient filtration of $(\mathrm{N}_k)$) and we denote by $\operatorname{gr}_\bullet(\mathrm{N})$, $\operatorname{gr}_\bullet(\mathrm{R})$ and $\operatorname{gr}_\bullet(\mathrm{M})$ the graded $\mathrm{A}$-modules associated with these three filtrations. We set on the other hand for all $k$,
+\[
+  \mathrm{N}_k'=\mathrm{N}_k+\mathfrak{J}\mathrm{N}_{k-1}+\ldots+\mathfrak{J}^{k-1}\mathrm{N}_1+\mathfrak{J}^k\mathrm{N}_0
+\]
+so that $\mathrm{M}_k'=p(\mathrm{N}_k')=\mathrm{M}_k+\mathfrak{J}\mathrm{M}_{k-1}+\ldots+\mathfrak{J}^{k-1}\mathrm{M}_1+\mathfrak{J}^k\mathrm{M}_0$; we set on the other hand $\mathrm{R}_k'=\mathrm{R}\cap\mathrm{N}_k'$ (filtration \emph{induced} by $(\mathrm{N}_k')$), and we denote by $\operatorname{gr}_\bullet'(\mathrm{N})$, $\operatorname{gr}_\bullet'(\mathrm{M})$ and $\operatorname{gr}_\bullet'(\mathrm{R})$ the graded $\mathrm{A}$-modules associated with these three filtrations; we thus have a commutative diagram of exact sequences
+\[
+\xymatrix{
+  0 \ar[r] & \operatorname{gr}_\bullet(\mathrm{R}) \ar[r]^-{\operatorname{gr}(j)} \ar[d] & \operatorname{gr}_\bullet(\mathrm{N}) \ar[r]^-{\operatorname{gr}(p)} \ar[d] & \operatorname{gr}_\bullet(\mathrm{M}) \ar[r] \ar[d] & 0 \\
+  0 \ar[r] & \operatorname{gr}_\bullet'(\mathrm{R}) \ar[r]^-{\operatorname{gr}'(j)} & \operatorname{gr}_\bullet'(\mathrm{N}) \ar[r]^-{\operatorname{gr}'(p)} & \operatorname{gr}_\bullet'(\mathrm{M}) \ar[r] & 0
+}
+\tag{19.6.1.1}
+\label{IV.19.6.1.1}
+\]
+----- French corrections on page IV-4 208 -----
+[id 22347]
+OLD: Pour que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(M)$-quasi-régulière, il suffit que, pour $p\geq0$ et $q\geq0$, la condition suivante soit vérifiée:
+NEW: \emph{Pour que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(M)$-quasi-régulière, il suffit que, pour $p\geq0$ et $q\geq0$, la condition suivante soit vérifiée:}
+FRENCH CONTEXT (corrected): t l'image de $\sum_{h=0}^{k-i-1}\mathfrak J^{k-i-h-1}M_{i+h+1}$ dans $M_k'/M_{k+1}'$. Écrire que $(\psi_M)_{ki}$ est injectif équivaut donc à écrire la condition $(\mathrm I_{k-i,i})$; d'où notre assertion.
+\end{env}
+
+\begin{env}[19.5.5.2]
+\label{IV.19.5.5.2}
+\emph{Pour que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(M)$-quasi-régulière, il suffit que, pour $p\geq0$ et $q\geq0$, la condition suivante soit vérifiée:}
+
+$(\mathrm S_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$
+
+[id 22348]
+OLD: $(\mathrm S_{q,p})$ Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}
+\]
+implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.
+NEW: $(\mathrm S_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+FRENCH CONTEXT (corrected): m I_{k-i,i})$; d'où notre assertion.
+\end{env}
+
+\begin{env}[19.5.5.2]
+\label{IV.19.5.5.2}
+\emph{Pour que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(M)$-quasi-régulière, il suffit que, pour $p\geq0$ et $q\geq0$, la condition suivante soit vérifiée:}
+
+$(\mathrm S_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$.}
+
+Par définition, dire que $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-quasi-régulière signifie que, pour tout $p\geq0$ et tout $q\geq0$, une relation
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}+\mathfrak J^{q+1}M_p
+\]
+\oldpage[
+
+[id 22350]
+OLD: \mathbf f^{\mathbf q}(x_{\mathbf q}^p-y_{\mathbf q}^p)
+NEW: \mathbf f^{\mathbf q}(x_{\mathbf q}^p\setmin y_{\mathbf q}^p)
+FRENCH CONTEXT (corrected): M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$. Or l'hypothèse sur la suite $(x_{\mathbf q}^p)$ signifie qu'il existe une famille $(y_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $\mathfrak JM_p$ telle que l'on ait $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}(x_{\mathbf q}^p\setmin y_{\mathbf q}^p)\in M_{p+1}$. La condition $(\mathrm S_{q,p})$ entraîne alors $x_{\mathbf q}^p\setmin y_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$, d'où $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$; on voit donc que les conditions $(
+
+[id 22351]
+OLD: alors $x_{\mathbf q}^p-y_{\mathbf q}^p\in
+NEW: alors $x_{\mathbf q}^p\setmin y_{\mathbf q}^p\in
+FRENCH CONTEXT (corrected): $ signifie qu'il existe une famille $(y_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $\mathfrak JM_p$ telle que l'on ait $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}(x_{\mathbf q}^p\setmin y_{\mathbf q}^p)\in M_{p+1}$. La condition $(\mathrm S_{q,p})$ entraîne alors $x_{\mathbf q}^p\setmin y_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$ pour tout $\mathbf q$ tel que $|\mathbf q|=q$, d'où $x_{\mathbf q}^p\in M_{p+1}+\mathfrak JM_p$; on voit donc que les conditions $(\mathrm S_{q,p})$ entraînent que la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-quasi-régulière
+
+[id 22352]
+OLD: Pour tout $r\geq0$, si les conditions $(\mathrm I_{q,p})$ sont vérifiées pour $p+q<r$, alors les conditions $(\mathrm S_{q,p})$ sont vérifiées pour $p+q<r$.
+NEW: \emph{Pour tout $r\geq0$, si les conditions $(\mathrm I_{q,p})$ sont vérifiées pour $p+q<r$, alors les conditions $(\mathrm S_{q,p})$ sont vérifiées pour $p+q<r$.}
+FRENCH CONTEXT (corrected): athfrak JM_p$; on voit donc que les conditions $(\mathrm S_{q,p})$ entraînent que la suite $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-quasi-régulière.
+\end{env}
+
+Il suffit donc de prouver la proposition suivante:
+
+\begin{env}[19.5.5.3]
+\label{IV.19.5.5.3}
+\emph{Pour tout $r\geq0$, si les conditions $(\mathrm I_{q,p})$ sont vérifiées pour $p+q<r$, alors les conditions $(\mathrm S_{q,p})$ sont vérifiées pour $p+q<r$.}
+
+Introduisons les conditions
+
+$(\mathrm A_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $\sum_{|\mathbf q|=q}\mathbf f^{\mat
+
+[id 22353]
+OLD: $(\mathrm A_{q,p})$ Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}
+\]
+implique
+\[
+  \sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}.
+\]
+NEW: $(\mathrm A_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}$.}
+FRENCH CONTEXT (corrected):  proposition suivante:
+
+\begin{env}[19.5.5.3]
+\label{IV.19.5.5.3}
+\emph{Pour tout $r\geq0$, si les conditions $(\mathrm I_{q,p})$ sont vérifiées pour $p+q<r$, alors les conditions $(\mathrm S_{q,p})$ sont vérifiées pour $p+q<r$.}
+
+Introduisons les conditions
+
+$(\mathrm A_{q,p})$ \emph{Pour toute famille $(x_{\mathbf q}^p)_{|\mathbf q|=q}$ d'éléments de $M_p$, la relation $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in M_{p+1}$ implique $\sum_{|\mathbf q|=q}\mathbf f^{\mathbf q}x_{\mathbf q}^p\in\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}$.}
+
+Il est clair que la conjonction de $(\mathrm A_{q,p})$ et de $(\mathrm I_{q,p})$ implique $(\mathrm S_{q,p})$. D'autre part, les conditions $(\mathrm A_{1,p})$ et $(\mathrm S_{0,p})$ sont triviales. Par suite, (19.5.5.3) résultera de la proposition suivante:
+
+[id 22354]
+OLD: Quels que soient $p\geq0$ et $q\geq1$, la condition $(\mathrm A_{q+1,p})$ est entraînée par la conjonction des conditions $(\mathrm A_{q,p})$, $(\mathrm I_{q-1,p+1})$, $(\mathrm I_{q-2,p+2})$, $\ldots$, $(\mathrm I_{0,p+q})$.
+NEW: \emph{Quels que soient $p\geq0$ et $q\geq1$, la condition $(\mathrm A_{q+1,p})$ est entraînée par la conjonction des conditions $(\mathrm A_{q,p})$, $(\mathrm I_{q-1,p+1})$, $(\mathrm I_{q-2,p+2})$, $\ldots$, $(\mathrm I_{0,p+q})$.}
+FRENCH CONTEXT (corrected): )$ et de $(\mathrm I_{q,p})$ implique $(\mathrm S_{q,p})$. D'autre part, les conditions $(\mathrm A_{1,p})$ et $(\mathrm S_{0,p})$ sont triviales. Par suite, (19.5.5.3) résultera de la proposition suivante:
+\end{env}
+
+\begin{env}[19.5.5.4]
+\label{IV.19.5.5.4}
+\emph{Quels que soient $p\geq0$ et $q\geq1$, la condition $(\mathrm A_{q+1,p})$ est entraînée par la conjonction des conditions $(\mathrm A_{q,p})$, $(\mathrm I_{q-1,p+1})$, $(\mathrm I_{q-2,p+2})$, $\ldots$, $(\mathrm I_{0,p+q})$.}
+
+En effet, une fois prouvée cette proposition, les conditions $(\mathrm I_{q,p})$ supposées vérifiées pour $p+q<r$ entraîneront, pour chaque $p\leq r$, la condition $(\mathrm A_{q,p})$ pour $1\leq q<r\setmin p$, par récurrence sur $q$.
+
+Prouvons donc (19.5.5.
+
+[id 22356]
+OLD: équivaut aussi à
+\end{env}
+
+\begin{env}[19.5.5.5]
+\label{IV.19.5.5.5}
+\[
+  \mathfrak J^qM_p\cap M_{p+1}\subset\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}.
+\]
+NEW: équivaut aussi à
+\begin{equation}
+  \mathfrak J^qM_p\cap M_{p+1}\subset\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}.
+  \tag{19.5.5.5}\label{IV.19.5.5.5}
+\end{equation}
+FRENCH CONTEXT (corrected): les conditions $(\mathrm I_{q,p})$ supposées vérifiées pour $p+q<r$ entraîneront, pour chaque $p\leq r$, la condition $(\mathrm A_{q,p})$ pour $1\leq q<r\setmin p$, par récurrence sur $q$.
+
+Prouvons donc (19.5.5.4). Notons que la condition $(\mathrm A_{q,p})$ équivaut aussi à
+\begin{equation}
+  \mathfrak J^qM_p\cap M_{p+1}\subset\sum_{i=1}^q\mathfrak J^{q-i}M_{p+i}.
+  \tag{19.5.5.5}\label{IV.19.5.5.5}
+\end{equation}
+
+Soit donc $m\in\mathfrak J^{q+1}M_p\cap M_{p+1}\subset\mathfrak J^qM_p\cap M_{p+1}$. Appliquant la condition $(\mathrm A_{q,p})$, on voit qu'il existe, pour chaque $i$ tel que $1\leq i\leq q$, une famille $(y_{\mathbf q}^{p+i})_{|\mathbf q|=q-i}$ d'éléments 
+
+[id 22358]
+OLD: (\text{pour }|\mathbf q|=q-i)
+NEW: (\text{pour }|\mathbf q|=q\setmin i)
+FRENCH CONTEXT (corrected): }$ d'éléments de $M_{p+i}$ telle que
+\[
+  m=\sum_{i=1}^q\left(\sum_{|\mathbf q|=q-i}\mathbf f^{\mathbf q}y_{\mathbf q}^{p+i}\right).
+\]
+
+Supposons que, pour $1\leq i<j$ ($j\geq1$), on ait prouvé que
+\[
+  y_{\mathbf q}^{p+i}\in\mathfrak JM_{p+i}+M_{p+i+1}\qquad(\text{pour }|\mathbf q|=q\setmin i).
+\]
+On en déduit par définition (19.5.4)
+\[
+  m\setmin\sum_{i<j}\left(\sum_{|\mathbf q|=q-i}\mathbf f^{\mathbf q}y_{\mathbf q}^{p+i}\right)\in M_{p+q+1}'.
+\]
+
+Puisque par hypothèse $(\mathrm I_{q-j,p+j})$ est vérifiée, on en déduit
+\[
+  y_{\mathbf q}^{p+j}\in
+
+[id 22359]
+OLD: m-\sum_{i<j}
+NEW: m\setmin\sum_{i<j}
+FRENCH CONTEXT (corrected): }\mathbf f^{\mathbf q}y_{\mathbf q}^{p+i}\right).
+\]
+
+Supposons que, pour $1\leq i<j$ ($j\geq1$), on ait prouvé que
+\[
+  y_{\mathbf q}^{p+i}\in\mathfrak JM_{p+i}+M_{p+i+1}\qquad(\text{pour }|\mathbf q|=q\setmin i).
+\]
+On en déduit par définition (19.5.4)
+\[
+  m\setmin\sum_{i<j}\left(\sum_{|\mathbf q|=q-i}\mathbf f^{\mathbf q}y_{\mathbf q}^{p+i}\right)\in M_{p+q+1}'.
+\]
+
+Puisque par hypothèse $(\mathrm I_{q-j,p+j})$ est vérifiée, on en déduit
+\[
+  y_{\mathbf q}^{p+j}\in\mathfrak JM_{p+j}+M_{p+j+1}
+\]
+\oldpage[IV-4]{209}
+et, par récur
+
+=================== PAGE IV-4 209 ===================
+----- (English page IV-4 208: shown above in this file) -----
+----- (English page IV-4 209: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 210 -----
+\oldpage[IV-4]{210}
+where the vertical arrows are the canonical homomorphisms from a graded module associated with a filtration to a graded module associated with a coarser filtration.
+
+We note that if one sets
+\[
+  \mathrm{R}_k''=\mathrm{R}_k+\mathfrak{J}\mathrm{R}_{k-1}+\ldots+\mathfrak{J}^{k-1}\mathrm{R}_1+\mathfrak{J}^k\mathrm{R}_0
+\]
+we evidently have $\mathrm{R}_k''\subset\mathrm{R}_k'$, but the filtrations $(\mathrm{R}_k'')$ and $(\mathrm{R}_k')$ are in general distinct; we denote by $\operatorname{gr}_\bullet''(\mathrm{R})$ the graded $\mathrm{A}$-module associated with the filtration $(\mathrm{R}_k'')$.
+\end{env}
+
+\begin{env}[19.6.2]
+\label{IV.19.6.2}
+We defined in $(\mathbf{0},15.1.5.2)$ the surjective graded homomorphisms of degree $0$
+\begin{align*}
+  \psi_\mathrm{N} &: (\operatorname{gr}_\bullet(\mathrm{N})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \to \operatorname{gr}_\bullet'(\mathrm{N}) \\
+  \psi_\mathrm{M} &: (\operatorname{gr}_\bullet(\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \to \operatorname{gr}_\bullet'(\mathrm{M}) \\
+  \psi_\mathrm{R} &: (\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \to \operatorname{gr}_\bullet''(\mathrm{R})
+\end{align*}
+the first two of which are deduced from the last two vertical arrows of \sref{IV.19.6.1.1}.
+
+As the filtration $(\mathrm{R}_k'')$ is finer than $(\mathrm{R}_k')$, on $\mathrm{R}$ we have a canonical homomorphism $\gamma:\operatorname{gr}_\bullet''(\mathrm{R})\to\operatorname{gr}_\bullet'(\mathrm{R})$; we will denote by $\psi_\mathrm{R}'$ the composite homomorphism $\gamma\circ\psi_\mathrm{R}$. It then follows immediately from the definitions that we have a commutative diagram
+\[
+\xymatrix{
+  & 0 \ar[d] \\
+  (\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{R}'} \ar[d]_{j'} & \operatorname{gr}_\bullet'(\mathrm{R}) \ar[d]^{\operatorname{gr}'(j)} \\
+  (\operatorname{gr}_\bullet(\mathrm{N})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{N}} \ar[d]_{p'} & \operatorname{gr}_\bullet'(\mathrm{N}) \ar[d]^{\operatorname{gr}'(p)} \\
+  (\operatorname{gr}_\bullet(\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{M}} \ar[d] & \operatorname{gr}_\bullet'(\mathrm{M}) \ar[d] \\
+  0 & 0
+}
+\tag{19.6.2.1}
+\label{IV.19.6.2.1}
+\]
+where the columns are exact.
+\end{env}
+
+\begin{proposition}[19.6.3]
+\label{IV.19.6.3}
+With the preceding notations, suppose that the sequence $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{N})$-regular. Consider the following properties:
+\begin{enumerate}
+\item[\rm a)] $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{M})$-regular.
+\item[\rm b)] $\psi_\mathrm{M}$ is bijective.
+\item[\rm c)] $\psi_\mathrm{R}'$ is surjective (in other words $\operatorname{gr}_\bullet'(\mathrm{R})$ is generated as $\operatorname{gr}_\mathfrak{J}^*(\mathrm{A})$-module by $\operatorname{Im}(\operatorname{gr}_\bullet(\mathrm{R})\to\operatorname{gr}_\bullet'(\mathrm{R})))$.
+\item[\rm d)] $\psi_\mathrm{R}'$ is injective.
+\item[\rm \textup{d$'$)}] The homomorphism $(\psi_\mathrm{R}')_0:\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})\to\operatorname{gr}_\bullet'(\mathrm{R})$ obtained by restricting $\psi_\mathrm{R}'$ to polynomials of degree $0$, is injective.
+\item[\rm e)] $\psi_\mathrm{R}'$ is bijective.
+\item[\rm f)] $j'$ is injective.
+----- French corrections on page IV-4 209 -----
+[id 22363]
+OLD: pour tout $j$ tel que
+NEW: pour \emph{tout} $j$ tel que
+FRENCH CONTEXT (corrected): }^{p+i}\right)\in M_{p+q+1}'.
+\]
+
+Puisque par hypothèse $(\mathrm I_{q-j,p+j})$ est vérifiée, on en déduit
+\[
+  y_{\mathbf q}^{p+j}\in\mathfrak JM_{p+j}+M_{p+j+1}
+\]
+\oldpage[IV-4]{209}
+et, par récurrence sur $j$, on voit donc que cette condition est vérifiée pour \emph{tout} $j$ tel que $1\leq j\leq q$. On a donc
+\[
+  m\in\sum_{i=1}^q\mathfrak J^{q-i}(\mathfrak JM_{p+i}+M_{p+i+1})=\sum_{i=1}^{q+1}\mathfrak J^{q-i+1}M_{p+i}
+\]
+et on a ainsi prouvé $(\mathrm A_{q+1,p})$ et terminé la démonstration de (19.5.5).
+\end{env}
+
+\begin{remarks}[19.5.6
+
+[id 22364]
+OLD: séparation de ($0$, 15.1.9)
+NEW: séparation de (\textbf{0}, 15.1.9)
+FRENCH CONTEXT (corrected): (ii)] Supposons que $A$ soit un anneau \emph{gradué} à degrés $\geq0$. Si $M$ (resp. chaque $\operatorname{gr}_p(M)$) est un $A$-module gradué à degrés bornés inférieurement et si les $f_i$ ne contiennent pas de composant homogène de degré $0$, l'hypothèse de séparation de (\textbf{0}, 15.1.9) est \emph{ipso facto} vérifiée pour $M$ (resp. chaque $\operatorname{gr}_p(M)$), et on voit donc que dans ce cas on a l'implication \emph{c)}$\Rightarrow$\emph{a)} dans (19.5.1) (resp. (19.5.5)).
+  \item[(iii)] Rappelons que, sans hypothèse de séparation, l'i
+
+[id 22367]
+OLD: ($0$, 15.1.12, (iii))
+NEW: (\textbf{0}, 15.1.12, (iii))
+FRENCH CONTEXT (corrected): $), et on voit donc que dans ce cas on a l'implication \emph{c)}$\Rightarrow$\emph{a)} dans (19.5.1) (resp. (19.5.5)).
+  \item[(iii)] Rappelons que, sans hypothèse de séparation, l'implication \emph{c)}$\Rightarrow$\emph{b)} n'est plus valable même pour $n=1$ (\textbf{0}, 15.1.12, (iii)).
+\end{enumerate}
+\end{remarks}
+
+\subsection{Suites régulières relativement à un module filtré quotient.}
+\EGAReaderTarget{ega4.c04.subsec.19-6}{subsection:IV.19.6}
+
+\begin{env}[19.6.1]
+\label{IV.19.6.1}
+Soient $A$ un anneau, $\mathbf f=(f_1,\ldots,f_n)$ une s
+
+[id 22371]
+OLD: \ar[r]^-{\operatorname{gr}'(j)} & \operatorname{gr}_\bullet'(N) \ar[r]^-{\operatorname{gr}'(p)}
+NEW: \ar[r]_-{\operatorname{gr}'(j)} & \operatorname{gr}_\bullet'(N) \ar[r]_-{\operatorname{gr}'(p)}
+FRENCH CONTEXT (corrected): ion}
+\xymatrix{
+  0 \ar[r] & \operatorname{gr}_\bullet(R) \ar[r]^-{\operatorname{gr}(j)} \ar[d] & \operatorname{gr}_\bullet(N) \ar[r]^-{\operatorname{gr}(p)} \ar[d] & \operatorname{gr}_\bullet(M) \ar[r] \ar[d] & 0 \\
+  0 \ar[r] & \operatorname{gr}_\bullet'(R) \ar[r]_-{\operatorname{gr}'(j)} & \operatorname{gr}_\bullet'(N) \ar[r]_-{\operatorname{gr}'(p)} & \operatorname{gr}_\bullet'(M) \ar[r] & 0
+}
+\tag{19.6.1.1}\label{IV.19.6.1.1}
+\end{equation}
+\oldpage[IV-4]{210}
+où les flèches verticales sont les homomorphismes canoniques d'un module gradué associé à une filtration dans le module gradué associé à une filt
+
+=================== PAGE IV-4 210 ===================
+----- (English page IV-4 209: shown above in this file) -----
+----- (English page IV-4 210: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 211 -----
+\oldpage[IV-4]{211}
+\item[\rm \textup{f$'$)}] The homomorphism $\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})\to\operatorname{gr}_\bullet(\mathrm{N})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})$ obtained by restricting $j'$ to polynomials of degree $0$, is injective.
+\item[\rm g)] The $\mathfrak{J}$-preadic filtration of $\operatorname{gr}_\bullet(\mathrm{R})$ is induced by that of $\operatorname{gr}_\bullet(\mathrm{N})$.
+\item[\rm h)] The filtrations $(\mathrm{R}_k')$ and $(\mathrm{R}_k'')$ on $\mathrm{R}$ are identical.
+\end{enumerate}
+Then we have the following implications:
+\[
+\xymatrix@C=2.4em@R=1.8em{
+  \text{a)} \ar@{=>}[r] \ar@{=>}[dr] &
+  \text{e)} \ar@{=>}[r] \ar@{=>}[dr] &
+  \text{b)} \ar@{<=>}[r] &
+  \text{c)} \ar@{<=>}[r] &
+  \text{h)} \\
+  & \text{g)} \ar@{=>}[r] &
+  \text{d)} \ar@{<=>}[r] &
+  \text{d$'$)} \ar@{<=>}[r] &
+  \text{f)} \ar@{<=>}[r] &
+  \text{f$'$)}
+}
+\]
+
+Moreover, when every quotient module of a submodule of $\operatorname{gr}_k(\mathrm{M})$ is separated for the $\mathfrak{J}$-preadic topology (which is the case when $\mathrm{A}$ is Noetherian, the $f_i$ belong to the radical of $\mathrm{A}$, and the $\operatorname{gr}_k(\mathrm{M})$ are finitely generated $\mathrm{A}$-modules), \emph{then all conditions} \emph{a)} to \emph{h)} \emph{are equivalent}.
+\end{proposition}
+
+\begin{proof}
+Let us note that, from \sref{IV.19.5.5}, the hypothesis that $\mathbf{f}$ is $\operatorname{gr}_\bullet(\mathrm{N})$-regular implies that $\psi_\mathrm{N}$ is \emph{bijective}; as $\operatorname{gr}'(j)$ is injective, the equivalence of $d)$ and $f)$ results from the diagram \sref{IV.19.6.2.1}. Likewise $d')$ and $f')$ are equivalent, while $f)$ and $f')$ are trivially equivalent; this proves the equivalence of $d)$, $d')$, $f)$ and $f')$.
+
+As one already knows that $\psi_\mathrm{M}$ is surjective and $\psi_\mathrm{N}$ bijective, the equivalence of $b)$ and $c)$ also follows from the diagram \sref{IV.19.6.2.1} by a particular case of the five lemma.
+
+The relation $\psi_\mathrm{R}'=\gamma\circ\psi_\mathrm{R}$ \sref{IV.19.6.2} and the fact that $\psi_\mathrm{R}$ is surjective show that condition $c)$ is equivalent to saying that $\gamma$ is surjective, which is also equivalent to condition $h)$; hence we have proved the equivalence of $b)$, $c)$ and $h)$.
+
+It is trivial that $e)$ is equivalent to the conjunction of $c)$ and $d)$, and hence also of $b)$ and $d)$. Let us note now that $a)$ implies $b)$ and that $b)$ implies $a)$ under the separation hypothesis \sref{IV.19.5.5}. On the other hand, the implications $a)\Rightarrow g)\Rightarrow f')$, and the implication $f')\Rightarrow a)$ under the separation hypothesis, result from \sref{IV.19.5.3}. Hence we have proved $a)$ implies $e)$ (equivalent to the conjunction of $b)$ and $f')$), and also that all conditions are equivalent under the separation hypothesis.
+\end{proof}
+
+\begin{corollary}[19.6.4]
+\label{IV.19.6.4}
+Let $\mathfrak K$ be an ideal of $\mathrm{A}$, $\mathfrak{L}=\mathfrak{J}+\mathfrak K$. Suppose that the filtration $(\mathrm{N}_k)$ (hence also $(\mathrm{M}_k)$) is the $\mathfrak K$-preadic filtration, so that the filtrations $(\mathrm{M}_k')$ and $(\mathrm{N}_k')$ are $\mathfrak{L}$-preadic filtrations. Consider $\operatorname{gr}_\bullet(\mathrm{R})$ (resp. $\operatorname{gr}_\bullet'(\mathrm{R})$) as a graded module over $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$ (resp. $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$).
+\begin{enumerate}
+\item[\rm(i)] Let $\mathrm{S}$ be a part of $\operatorname{gr}_\bullet(\mathrm{R})$ that generates $\operatorname{gr}_\bullet(\mathrm{R})$ as a $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-module. Then condition \emph{c)} of \emph{(\sref{IV.19.6.3})} is equivalent to the following condition:
+\item[\rm \textup{c$'$)}] The image of $\mathrm{S}$ in $\operatorname{gr}_\bullet'(\mathrm{R})$ by $\psi_\mathrm{R}'$ generates $\operatorname{gr}_\bullet'(\mathrm{R})$ as a $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$-module.
+\item[\rm(ii)] Suppose condition \emph{e)} of \emph{(\sref{IV.19.6.3})} is satisfied, and also that the quotients of $\operatorname{gr}_k(\mathrm{R})$ are separated for the $\mathfrak{J}$-preadic topology (which is the case when $\mathrm{A}$ is Noetherian, the $f_i$ belong to the radical of $\mathrm{A}$, and the $\operatorname{gr}_k(\mathrm{N})$ are finitely generated $\mathrm{A}$-modules). Then, \emph{for a part $\mathrm{S}$ of $\operatorname{gr}_\bullet(\mathrm{R})$ formed of homogeneous elements to generate $\operatorname{gr}_\bullet(\mathrm{R})$ as a $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-module, it is necessary and sufficient that its image by $\psi_\mathrm{R}'$ generates $\operatorname{gr}_\bullet'(\mathrm{R})$ as a $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$-module.}
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+----- French corrections on page IV-4 210 -----
+[id 22383]
+OLD: ($0$, 15.1.5.2)
+NEW: (\textbf{0}, 15.1.5.2)
+FRENCH CONTEXT (corrected): ment $R_k''\subset R_k'$, mais les filtrations $(R_k'')$ et $(R_k')$ sont en général distinctes; on notera $\operatorname{gr}_\bullet''(R)$ le $A$-module gradué associé à la filtration $(R_k'')$.
+\end{env}
+
+\begin{env}[19.6.2]
+\label{IV.19.6.2}
+On a défini en (\textbf{0}, 15.1.5.2) les homomorphismes surjectifs gradués de degré $0$
+\begin{align*}
+  \psi_N&:(\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(N)\\
+  \psi_M&:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T
+
+[id 22384]
+OLD: \operatorname{gr}_\bullet'(N),\\
+NEW: \operatorname{gr}_\bullet'(N)\\
+FRENCH CONTEXT (corrected):  $(R_k'')$.
+\end{env}
+
+\begin{env}[19.6.2]
+\label{IV.19.6.2}
+On a défini en (\textbf{0}, 15.1.5.2) les homomorphismes surjectifs gradués de degré $0$
+\begin{align*}
+  \psi_N&:(\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(N)\\
+  \psi_M&:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(M)\\
+  \psi_R&:(\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet''(R)
+\end{a
+
+[id 22385]
+OLD: \operatorname{gr}_\bullet'(M),\\
+NEW: \operatorname{gr}_\bullet'(M)\\
+FRENCH CONTEXT (corrected): s gradués de degré $0$
+\begin{align*}
+  \psi_N&:(\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(N)\\
+  \psi_M&:(\operatorname{gr}_\bullet(M)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(M)\\
+  \psi_R&:(\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet''(R)
+\end{align*}
+dont les deux premiers sont déduits des deux dernières flèches verticales de (19.6.1.1).
+
+Comme la filtration $(R_k'')$ 
+
+[id 22389]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): 
+où les colonnes sont exactes.
+\end{env}
+
+\begin{proposition}[19.6.3]
+\label{IV.19.6.3}
+Avec les notations précédentes, supposons que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(N)$-régulière. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] $\psi_M$ est bijectif.
+  \item[\textup{c)}] $\psi_R'$ est surjectif \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bull
+
+[id 22390]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): .19.6.3}
+Avec les notations précédentes, supposons que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(N)$-régulière. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] $\psi_M$ est bijectif.
+  \item[\textup{c)}] $\psi_R'$ est surjectif \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bullet(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorna
+
+[id 22391]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): posons que la suite $\mathbf f$ soit $\operatorname{gr}_\bullet(N)$-régulière. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] $\psi_M$ est bijectif.
+  \item[\textup{c)}] $\psi_R'$ est surjectif \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bullet(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorname{gr}_\bullet'(R))$)}.
+  \item[\textup{d)}]
+
+[id 22392]
+OLD: \item[d)]
+NEW: \item[\textup{d)}]
+FRENCH CONTEXT (corrected): \item[\textup{c)}] $\psi_R'$ est surjectif \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bullet(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorname{gr}_\bullet'(R))$)}.
+  \item[\textup{d)}] $\psi_R'$ est injectif.
+  \item[\textup{d$'$)}] L'homomorphisme $(\psi_R')_0:\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet'(R)$ obtenu en restreignant $\psi_R'$ aux polynômes de degré $0$, est injectif.
+  \item[\textup{e)}] 
+
+[id 22394]
+OLD: \item[e)]
+NEW: \item[\textup{e)}]
+FRENCH CONTEXT (corrected):  \item[\textup{d)}] $\psi_R'$ est injectif.
+  \item[\textup{d$'$)}] L'homomorphisme $(\psi_R')_0:\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet'(R)$ obtenu en restreignant $\psi_R'$ aux polynômes de degré $0$, est injectif.
+  \item[\textup{e)}] $\psi_R'$ est bijectif.
+  \item[\textup{f)}] $j'$ est injectif.
+
+\oldpage[IV-4]{211}
+
+  \item[\textup{f$'$)}] L'homomorphisme $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J)$ obtenu en restreignant 
+
+[id 22395]
+OLD: \item[f)]
+NEW: \item[\textup{f)}]
+FRENCH CONTEXT (corrected):  \item[\textup{d$'$)}] L'homomorphisme $(\psi_R')_0:\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet'(R)$ obtenu en restreignant $\psi_R'$ aux polynômes de degré $0$, est injectif.
+  \item[\textup{e)}] $\psi_R'$ est bijectif.
+  \item[\textup{f)}] $j'$ est injectif.
+
+\oldpage[IV-4]{211}
+
+  \item[\textup{f$'$)}] L'homomorphisme $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J)$ obtenu en restreignant $j'$ aux polynômes de degré $0$, est injectif
+
+[id 22396]
+OLD: (autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^*(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorname{gr}_\bullet'(R))$)
+NEW: \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bullet(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorname{gr}_\bullet'(R))$)}
+FRENCH CONTEXT (corrected): atorname{gr}_\bullet(N)$-régulière. Considérons les propriétés suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\mathbf f$ est $\operatorname{gr}_\bullet(M)$-régulière.
+  \item[\textup{b)}] $\psi_M$ est bijectif.
+  \item[\textup{c)}] $\psi_R'$ est surjectif \textup{(autrement dit $\operatorname{gr}_\bullet'(R)$ est engendré comme $\operatorname{gr}_{\mathfrak J}^\bullet(A)$-module par $\operatorname{Im}(\operatorname{gr}_\bullet(R)\to\operatorname{gr}_\bullet'(R))$)}.
+  \item[\textup{d)}] $\psi_R'$ est injectif.
+  \item[\textup{d$'$)}] L'homomorphisme $(\psi_R')_0:\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet'(R)$ obtenu en restreignant $\psi_R'$ aux polynômes de degré $0$, est injectif.
+
+=================== PAGE IV-4 211 ===================
+----- (English page IV-4 210: shown above in this file) -----
+----- (English page IV-4 211: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 212 -----
+\oldpage[IV-4]{212}
+\begin{enumerate}
+\item[\rm(i)] Consider the homomorphism of degree $0$
+\[
+  \psi_\mathrm{A}:(\operatorname{gr}_\mathfrak K^*(\mathrm{A})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]\to\operatorname{gr}_\bullet'(\mathrm{A})=\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})
+\]
+$(\mathbf{0},15.1.5.2)$. The fact that this homomorphism is \emph{surjective} implies that the sub-$\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$-module of $\operatorname{gr}_\bullet'(\mathrm{R})$ generated by $\mathrm{S}'=\psi_\mathrm{R}'(\mathrm{S})$ is none other than $\operatorname{Im}(\psi_\mathrm{R}')$, whence the equivalence of $c)$ and $c')$.
+
+\item[\rm(ii)] Since condition $e)$ is satisfied, it follows by (i) that it remains to prove the sufficiency of the condition in the statement. Now, as $\psi_\mathrm{R}'$ is bijective, to say that $\mathrm{S}'$ generates $\operatorname{gr}_\bullet'(\mathrm{R})$ considered as a $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$-module amounts to saying that $\mathrm{S}$ generates $(\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ as a $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$-module, and by the surjectivity of $\psi_\mathrm{A}$, we can in this statement replace the ring $\operatorname{gr}_\mathfrak{L}^*(\mathrm{A})$ by $(\operatorname{gr}_\mathfrak K^*(\mathrm{A})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]$. It amounts to saying that $\mathrm{S}$ generates $\operatorname{gr}_\bullet(\mathrm{R})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})$ as a module over the ring $\operatorname{gr}_\mathfrak K^*(\mathrm{A})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})$, or also as a $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-module. Now, if $\mathrm{T}$ is the graded sub-$\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-module of $\operatorname{gr}_\bullet(\mathrm{R})$ generated by $\mathrm{S}$, and if we set $\mathrm{T}'=\operatorname{gr}_\bullet(\mathrm{R})/\mathrm{T}$, then by hypothesis $\mathrm{T}'/\mathfrak{J}\mathrm{T}'=0$, or $\mathfrak{J}\mathrm{T}'=\mathrm{T}'$; but $\mathrm{T}'$ is a graded module, and each $\mathrm{T}_p'$ is a quotient of a submodule of $\operatorname{gr}_p(\mathrm{R})$, hence separated for the $\mathfrak{J}$-preadic topology. The hypothesis therefore implies $\mathrm{T}'=0$, which completes the proof of the corollary.
+\end{enumerate}
+\end{proof}
+
+\subsection{Hironaka's normal flatness criterion}
+\label{subsection:IV.19.7}
+\label{IV.19.7}
+
+\begin{theorem}[19.7.1]
+\label{IV.19.7.1}
+\textup{(Hironaka).}
+Let $\mathrm{A}$ be a ring, $\mathfrak K$ an ideal of $\mathrm{A}$, $\mathbf{f}=(f_1,\ldots,f_n)$ a sequence of elements of $\mathrm{A}$ that is $(\mathrm{A}/\mathfrak K)$-regular, $\mathfrak{J}=f_1\mathrm{A}+\ldots+f_n\mathrm{A}$ the ideal generated by $\mathbf{f}$, $\mathfrak{L}=\mathfrak{J}+\mathfrak K$, $\mathrm{M}$ an $\mathrm{A}$-module.
+In this case $(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})=(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{L})=(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, since $(\mathfrak K^n\mathrm{M}/\mathfrak K^{n+1}\mathrm{M})\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{J})=\mathfrak K^n\mathrm{M}/(\mathfrak K^{n+1}+\mathfrak{J}\mathfrak K^n)\mathrm{M}=\mathfrak K^n\mathrm{M}/(\mathfrak K^{n+1}+\mathfrak{L}\mathfrak K^n)\mathrm{M}$, and the last equality is a result of Bourbaki, \emph{Alg.}, chap.~II, $3^e$~ed., \textsection~3, n\textsuperscript{o}~7, cor.~2 of prop.~6.
+
+Consider the following conditions:
+\begin{enumerate}
+\item[\rm a)] $\operatorname{gr}_\mathfrak K^*(\mathrm{M})$ is a flat $(\mathrm{A}/\mathfrak K)$-module.
+\item[\rm b)] $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$ is a flat $(\mathrm{A}/\mathfrak{L})$-module and the canonical homomorphism $(\mathbf{0},15.1.5.2)$
+\[
+  \psi_\mathrm{M}:((\operatorname{gr}_\mathfrak K^*(\mathrm{M}))\otimes_\mathrm{A}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]\to\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})
+\]
+is bijective.
+\item[\rm c)] $(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$ is a flat $(\mathrm{A}/\mathfrak{L})$-module and the sequence $\mathbf{f}$ is $(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))$-regular.
+\item[\rm d)] $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$ is a flat $(\mathrm{A}/\mathfrak{L})$-module, and for every $\mathfrak{p}\in\operatorname{Ass}_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, $(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))_\mathfrak{p}$ is a flat $(\mathrm{A}/\mathfrak K)_\mathfrak{p}$-module.
+\end{enumerate}
+Then we have the implications
+\[
+\xymatrix@C=3em@R=1.6em{
+  \text{a)} \ar@{=>}[r] \ar@{=>}[dr] & \text{c)} \ar@{=>}[r] & \text{b)} \\
+  & \text{d)}
+}
+\]
+
+When every quotient of a submodule of $\operatorname{gr}_\mathfrak K^k(\mathrm{M})$ $(k\geqslant 0)$ is ideally separated for $\mathfrak{J}$ (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~5, n\textsuperscript{o}~1), the conditions \emph{a)}, \emph{b)}, \emph{c)} are equivalent.
+----- French corrections on page IV-4 211 -----
+[id 22398]
+OLD: \item[g)]
+NEW: \item[\textup{g)}]
+FRENCH CONTEXT (corrected): $ est injectif.
+
+\oldpage[IV-4]{211}
+
+  \item[\textup{f$'$)}] L'homomorphisme $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)\to\operatorname{gr}_\bullet(N)\otimes_A(A/\mathfrak J)$ obtenu en restreignant $j'$ aux polynômes de degré $0$, est injectif.
+  \item[\textup{g)}] La filtration $\mathfrak J$-préadique de $\operatorname{gr}_\bullet(R)$ est induite par celle de $\operatorname{gr}_\bullet(N)$.
+  \item[\textup{h)}] Les filtrations $(R_k')$ et $(R_k'')$ sur $R$ sont identiques.
+\end{enumerate}
+
+On a alors les implications s
+
+[id 22399]
+OLD: \item[h)]
+NEW: \item[\textup{h)}]
+FRENCH CONTEXT (corrected): }_\bullet(N)\otimes_A(A/\mathfrak J)$ obtenu en restreignant $j'$ aux polynômes de degré $0$, est injectif.
+  \item[\textup{g)}] La filtration $\mathfrak J$-préadique de $\operatorname{gr}_\bullet(R)$ est induite par celle de $\operatorname{gr}_\bullet(N)$.
+  \item[\textup{h)}] Les filtrations $(R_k')$ et $(R_k'')$ sur $R$ sont identiques.
+\end{enumerate}
+
+On a alors les implications suivantes:
+\[
+\xymatrix@C=2.4em@R=1.8em{
+  \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{e)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{b)} \ar@{<=>}[r] & \te
+
+[id 22401]
+OLD:   a) \ar@{=>}[r] \ar@{=>}[dr] & e) \ar@{=>}[r] \ar@{=>}[dr] & b) \ar@{<=>}[r] & c) \ar@{<=>}[r] & h) \\
+  & g) \ar@{=>}[r] & d) \ar@{<=>}[r] & d') \ar@{<=>}[r] & f) \ar@{<=>}[r] & f')
+NEW:   \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{e)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{b)} \ar@{<=>}[r] & \textup{c)} \ar@{<=>}[r] & \textup{h)} \\
+  & \textup{g)} \ar@{=>}[r] & \textup{d)} \ar@{<=>}[r] & \textup{d$'$)} \ar@{<=>}[r] & \textup{f)} \ar@{<=>}[r] & \textup{f$'$)}
+FRENCH CONTEXT (corrected): e $\operatorname{gr}_\bullet(R)$ est induite par celle de $\operatorname{gr}_\bullet(N)$.
+  \item[\textup{h)}] Les filtrations $(R_k')$ et $(R_k'')$ sur $R$ sont identiques.
+\end{enumerate}
+
+On a alors les implications suivantes:
+\[
+\xymatrix@C=2.4em@R=1.8em{
+  \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{e)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{b)} \ar@{<=>}[r] & \textup{c)} \ar@{<=>}[r] & \textup{h)} \\
+  & \textup{g)} \ar@{=>}[r] & \textup{d)} \ar@{<=>}[r] & \textup{d$'$)} \ar@{<=>}[r] & \textup{f)} \ar@{<=>}[r] & \textup{f$'$)}
+}
+\]
+
+En outre, lorsque tout module quotient d'un sous-module d'un $\operatorname{gr}_k(M)$ est séparé pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$ et que les $
+
+[id 22403]
+OLD: (ce qui sera le cas lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)
+NEW: \textup{(ce qui sera le cas lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}
+FRENCH CONTEXT (corrected): } \ar@{=>}[r] & \textup{d)} \ar@{<=>}[r] & \textup{d$'$)} \ar@{<=>}[r] & \textup{f)} \ar@{<=>}[r] & \textup{f$'$)}
+}
+\]
+
+En outre, lorsque tout module quotient d'un sous-module d'un $\operatorname{gr}_k(M)$ est séparé pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}, alors les conditions \textup{a)} à \textup{h)} sont toutes équivalentes.
+\end{proposition}
+
+Notons que d'après (19.5.5), de l'hypothèse que $\mathbf f$ est $\operatorname{gr}_\bullet(N)$-régulière, il résulte que $\psi_N$ est \emph{bijectif}; comme $\operato
+
+[id 22404]
+OLD: alors les conditions $a)$ à $h)$ sont toutes
+NEW: alors les conditions \textup{a)} à \textup{h)} sont toutes
+FRENCH CONTEXT (corrected): e d'un $\operatorname{gr}_k(M)$ est séparé pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$ et que les $\operatorname{gr}_k(M)$ sont des $A$-modules de type fini)}, alors les conditions \textup{a)} à \textup{h)} sont toutes équivalentes.
+\end{proposition}
+
+Notons que d'après (19.5.5), de l'hypothèse que $\mathbf f$ est $\operatorname{gr}_\bullet(N)$-régulière, il résulte que $\psi_N$ est \emph{bijectif}; comme $\operatorname{gr}'(j)$ est injectif, l'équivalence de \emph{d)} et \
+
+[id 22405]
+OLD: l'équivalence de $d)$ et $f)$ résulte
+NEW: l'équivalence de \emph{d)} et \emph{f)} résulte
+FRENCH CONTEXT (corrected): p{a)} à \textup{h)} sont toutes équivalentes.
+\end{proposition}
+
+Notons que d'après (19.5.5), de l'hypothèse que $\mathbf f$ est $\operatorname{gr}_\bullet(N)$-régulière, il résulte que $\psi_N$ est \emph{bijectif}; comme $\operatorname{gr}'(j)$ est injectif, l'équivalence de \emph{d)} et \emph{f)} résulte du diagramme (19.6.2.1), ainsi que celle de \emph{d$'$)} et \emph{f$'$)}; par ailleurs \emph{f)} et \emph{f$'$)} sont trivialement équivalentes, ce qui montre l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+
+Comme on sait déjà que $\psi_M
+
+[id 22406]
+OLD: ainsi que celle de $d')$ et $f')$;
+NEW: ainsi que celle de \emph{d$'$)} et \emph{f$'$)};
+FRENCH CONTEXT (corrected): ue d'après (19.5.5), de l'hypothèse que $\mathbf f$ est $\operatorname{gr}_\bullet(N)$-régulière, il résulte que $\psi_N$ est \emph{bijectif}; comme $\operatorname{gr}'(j)$ est injectif, l'équivalence de \emph{d)} et \emph{f)} résulte du diagramme (19.6.2.1), ainsi que celle de \emph{d$'$)} et \emph{f$'$)}; par ailleurs \emph{f)} et \emph{f$'$)} sont trivialement équivalentes, ce qui montre l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+
+Comme on sait déjà que $\psi_M$ est surjectif et $\psi_N$ bijectif, l'équivalence de \emph{b)} et \emph{
+
+[id 22407]
+OLD: par ailleurs $f)$ et $f')$ sont
+NEW: par ailleurs \emph{f)} et \emph{f$'$)} sont
+FRENCH CONTEXT (corrected): f$ est $\operatorname{gr}_\bullet(N)$-régulière, il résulte que $\psi_N$ est \emph{bijectif}; comme $\operatorname{gr}'(j)$ est injectif, l'équivalence de \emph{d)} et \emph{f)} résulte du diagramme (19.6.2.1), ainsi que celle de \emph{d$'$)} et \emph{f$'$)}; par ailleurs \emph{f)} et \emph{f$'$)} sont trivialement équivalentes, ce qui montre l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+
+Comme on sait déjà que $\psi_M$ est surjectif et $\psi_N$ bijectif, l'équivalence de \emph{b)} et \emph{c)} découle aussi du diagramme (19.6.2.1) pa
+
+[id 22408]
+OLD: l'équivalence de $d)$, $d')$, $f)$ et $f')$.
+NEW: l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+FRENCH CONTEXT (corrected): jectif}; comme $\operatorname{gr}'(j)$ est injectif, l'équivalence de \emph{d)} et \emph{f)} résulte du diagramme (19.6.2.1), ainsi que celle de \emph{d$'$)} et \emph{f$'$)}; par ailleurs \emph{f)} et \emph{f$'$)} sont trivialement équivalentes, ce qui montre l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+
+Comme on sait déjà que $\psi_M$ est surjectif et $\psi_N$ bijectif, l'équivalence de \emph{b)} et \emph{c)} découle aussi du diagramme (19.6.2.1) par un cas particulier du lemme des cinq.
+
+La relation $\psi_R'=\gamma\circ\psi_R$ (19.6.2) et le fait que $\psi
+
+[id 22409]
+OLD: l'équivalence de $b)$ et $c)$ découle
+NEW: l'équivalence de \emph{b)} et \emph{c)} découle
+FRENCH CONTEXT (corrected): lle de \emph{d$'$)} et \emph{f$'$)}; par ailleurs \emph{f)} et \emph{f$'$)} sont trivialement équivalentes, ce qui montre l'équivalence de \emph{d)}, \emph{d$'$)}, \emph{f)} et \emph{f$'$)}.
+
+Comme on sait déjà que $\psi_M$ est surjectif et $\psi_N$ bijectif, l'équivalence de \emph{b)} et \emph{c)} découle aussi du diagramme (19.6.2.1) par un cas particulier du lemme des cinq.
+
+La relation $\psi_R'=\gamma\circ\psi_R$ (19.6.2) et le fait que $\psi_R$ est surjectif montrent que la condition \emph{c)} équivaut à dire que $\gamma$ est surjectif, ce qui équivaut enc
+
+[id 22410]
+OLD: la condition $c)$ équivaut à dire
+NEW: la condition \emph{c)} équivaut à dire
+FRENCH CONTEXT (corrected): M$ est surjectif et $\psi_N$ bijectif, l'équivalence de \emph{b)} et \emph{c)} découle aussi du diagramme (19.6.2.1) par un cas particulier du lemme des cinq.
+
+La relation $\psi_R'=\gamma\circ\psi_R$ (19.6.2) et le fait que $\psi_R$ est surjectif montrent que la condition \emph{c)} équivaut à dire que $\gamma$ est surjectif, ce qui équivaut encore à la condition \emph{h)}; on a donc prouvé l'équivalence de \emph{b)}, \emph{c)} et \emph{h)}.
+
+Il est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \em
+
+[id 22411]
+OLD: à la condition $h)$; on a donc prouvé l'équivalence de $b)$, $c)$ et $h)$.
+NEW: à la condition \emph{h)}; on a donc prouvé l'équivalence de \emph{b)}, \emph{c)} et \emph{h)}.
+FRENCH CONTEXT (corrected): si du diagramme (19.6.2.1) par un cas particulier du lemme des cinq.
+
+La relation $\psi_R'=\gamma\circ\psi_R$ (19.6.2) et le fait que $\psi_R$ est surjectif montrent que la condition \emph{c)} équivaut à dire que $\gamma$ est surjectif, ce qui équivaut encore à la condition \emph{h)}; on a donc prouvé l'équivalence de \emph{b)}, \emph{c)} et \emph{h)}.
+
+Il est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \emph{d)}. Notons maintenant que \emph{a)} implique \emph{b)} et que \emph{b)} implique \emph{a)} sous l'hypothèse de séparation (19.5.5). D'autre pa
+
+[id 22412]
+OLD: Il est trivial que $e)$ équivaut à la conjonction de $c)$ et $d)$, donc aussi de $b)$ et $d)$.
+NEW: Il est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \emph{d)}.
+FRENCH CONTEXT (corrected): a\circ\psi_R$ (19.6.2) et le fait que $\psi_R$ est surjectif montrent que la condition \emph{c)} équivaut à dire que $\gamma$ est surjectif, ce qui équivaut encore à la condition \emph{h)}; on a donc prouvé l'équivalence de \emph{b)}, \emph{c)} et \emph{h)}.
+
+Il est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \emph{d)}. Notons maintenant que \emph{a)} implique \emph{b)} et que \emph{b)} implique \emph{a)} sous l'hypothèse de séparation (19.5.5). D'autre part, les implications \emph{a)} $\Rightarrow$ \emph{g)} $\Rightarrow$ \emph{f$'$)}, et l'implication \emph{f$'$)} $\Righta
+
+[id 22413]
+OLD: Notons maintenant que $a)$ implique $b)$ et que $b)$ implique $a)$ sous
+NEW: Notons maintenant que \emph{a)} implique \emph{b)} et que \emph{b)} implique \emph{a)} sous
+FRENCH CONTEXT (corrected): amma$ est surjectif, ce qui équivaut encore à la condition \emph{h)}; on a donc prouvé l'équivalence de \emph{b)}, \emph{c)} et \emph{h)}.
+
+Il est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \emph{d)}. Notons maintenant que \emph{a)} implique \emph{b)} et que \emph{b)} implique \emph{a)} sous l'hypothèse de séparation (19.5.5). D'autre part, les implications \emph{a)} $\Rightarrow$ \emph{g)} $\Rightarrow$ \emph{f$'$)}, et l'implication \emph{f$'$)} $\Rightarrow$ \emph{a)} sous l'hypothèse de séparation, résultent de (19.5.3). On a donc prouvé que 
+
+[id 22414]
+OLD: les implications $a)\Rightarrow g)\Rightarrow f')$, et l'implication $f')\Rightarrow a)$ sous
+NEW: les implications \emph{a)} $\Rightarrow$ \emph{g)} $\Rightarrow$ \emph{f$'$)}, et l'implication \emph{f$'$)} $\Rightarrow$ \emph{a)} sous
+FRENCH CONTEXT (corrected):  est trivial que \emph{e)} équivaut à la conjonction de \emph{c)} et \emph{d)}, donc aussi de \emph{b)} et \emph{d)}. Notons maintenant que \emph{a)} implique \emph{b)} et que \emph{b)} implique \emph{a)} sous l'hypothèse de séparation (19.5.5). D'autre part, les implications \emph{a)} $\Rightarrow$ \emph{g)} $\Rightarrow$ \emph{f$'$)}, et l'implication \emph{f$'$)} $\Rightarrow$ \emph{a)} sous l'hypothèse de séparation, résultent de (19.5.3). On a donc prouvé que \emph{a)} entraîne \emph{e)} (équivalente à la conjonction de \emph{b)} et \emph{f$'$)}), et aussi que toutes les conditions sont équivalentes sous l'hypothèse de séparation. C.Q.F.D.
+
+\be
+
+[id 22415]
+OLD: On a donc prouvé que $a)$ entraîne $e)$ (équivalente à la conjonction de $b)$ et $f')$),
+NEW: On a donc prouvé que \emph{a)} entraîne \emph{e)} (équivalente à la conjonction de \emph{b)} et \emph{f$'$)}),
+FRENCH CONTEXT (corrected): plique \emph{a)} sous l'hypothèse de séparation (19.5.5). D'autre part, les implications \emph{a)} $\Rightarrow$ \emph{g)} $\Rightarrow$ \emph{f$'$)}, et l'implication \emph{f$'$)} $\Rightarrow$ \emph{a)} sous l'hypothèse de séparation, résultent de (19.5.3). On a donc prouvé que \emph{a)} entraîne \emph{e)} (équivalente à la conjonction de \emph{b)} et \emph{f$'$)}), et aussi que toutes les conditions sont équivalentes sous l'hypothèse de séparation. C.Q.F.D.
+
+\begin{corollary}[19.6.4]
+\label{IV.19.6.4}
+Soient $\mathfrak K$ un idéal de $A$, $\mathfrak L=\mathfrak J+\mathfrak K$. Supposons que la filtration $(N_k)$ (donc a
+
+[id 22416]
+OLD: Soient $\mathfrak R$ un idéal de $A$, $\mathfrak L=\mathfrak J+\mathfrak R$.
+NEW: Soient $\mathfrak K$ un idéal de $A$, $\mathfrak L=\mathfrak J+\mathfrak K$.
+FRENCH CONTEXT (corrected): (19.5.3). On a donc prouvé que \emph{a)} entraîne \emph{e)} (équivalente à la conjonction de \emph{b)} et \emph{f$'$)}), et aussi que toutes les conditions sont équivalentes sous l'hypothèse de séparation. C.Q.F.D.
+
+\begin{corollary}[19.6.4]
+\label{IV.19.6.4}
+Soient $\mathfrak K$ un idéal de $A$, $\mathfrak L=\mathfrak J+\mathfrak K$. Supposons que la filtration $(N_k)$ (donc aussi $(M_k)$) soit la filtration $\mathfrak K$-préadique, de sorte que les filtrations $(M_k')$ et $(N_k')$ sont les filtrations $\mathfrak L$-préadiques. Considérons $\operatorname{gr}_\bullet(R)$ \textup{(resp. $\o
+
+[id 22418]
+OLD: (resp. $\operatorname{gr}_\bullet'(R)$)
+NEW: \textup{(resp. $\operatorname{gr}_\bullet'(R)$)}
+FRENCH CONTEXT (corrected): ak J+\mathfrak K$. Supposons que la filtration $(N_k)$ (donc aussi $(M_k)$) soit la filtration $\mathfrak K$-préadique, de sorte que les filtrations $(M_k')$ et $(N_k')$ sont les filtrations $\mathfrak L$-préadiques. Considérons $\operatorname{gr}_\bullet(R)$ \textup{(resp. $\operatorname{gr}_\bullet'(R)$)} comme un module gradué sur $\operatorname{gr}_{\mathfrak K}^\bullet(A)$ \textup{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}.
+\begin{enumerate}
+  \item[\textup{(i)}] Soit $S$ une partie de $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr
+
+[id 22419]
+OLD: gradué sur $\operatorname{gr}_{\mathfrak R}^*(A)$
+NEW: gradué sur $\operatorname{gr}_{\mathfrak K}^\bullet(A)$
+FRENCH CONTEXT (corrected): i $(M_k)$) soit la filtration $\mathfrak K$-préadique, de sorte que les filtrations $(M_k')$ et $(N_k')$ sont les filtrations $\mathfrak L$-préadiques. Considérons $\operatorname{gr}_\bullet(R)$ \textup{(resp. $\operatorname{gr}_\bullet'(R)$)} comme un module gradué sur $\operatorname{gr}_{\mathfrak K}^\bullet(A)$ \textup{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}.
+\begin{enumerate}
+  \item[\textup{(i)}] Soit $S$ une partie de $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module.
+
+[id 22420]
+OLD: (resp. $\operatorname{gr}_{\mathfrak L}^*(A)$)
+NEW: \textup{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}
+FRENCH CONTEXT (corrected): e sorte que les filtrations $(M_k')$ et $(N_k')$ sont les filtrations $\mathfrak L$-préadiques. Considérons $\operatorname{gr}_\bullet(R)$ \textup{(resp. $\operatorname{gr}_\bullet'(R)$)} comme un module gradué sur $\operatorname{gr}_{\mathfrak K}^\bullet(A)$ \textup{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}.
+\begin{enumerate}
+  \item[\textup{(i)}] Soit $S$ une partie de $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Alors la condition \textup{c)} de \textup{(19.6.3)} équivaut 
+
+[id 22422]
+OLD: comme $\operatorname{gr}_{\mathfrak R}^*(A)$-module. Alors
+NEW: comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Alors
+FRENCH CONTEXT (corrected): le gradué sur $\operatorname{gr}_{\mathfrak K}^\bullet(A)$ \textup{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}.
+\begin{enumerate}
+  \item[\textup{(i)}] Soit $S$ une partie de $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Alors la condition \textup{c)} de \textup{(19.6.3)} équivaut à la condition suivante:
+  \item[\textup{c$'$)}] L'image de $S$ dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A
+
+[id 22423]
+OLD: la condition $c)$ de (19.6.3) équivaut
+NEW: la condition \textup{c)} de \textup{(19.6.3)} équivaut
+FRENCH CONTEXT (corrected): p{(resp. $\operatorname{gr}_{\mathfrak L}^\bullet(A)$)}.
+\begin{enumerate}
+  \item[\textup{(i)}] Soit $S$ une partie de $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Alors la condition \textup{c)} de \textup{(19.6.3)} équivaut à la condition suivante:
+  \item[\textup{c$'$)}] L'image de $S$ dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+  \item[\textup{(ii)}] Supposons vérifiée la
+
+[id 22425]
+OLD: dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^*(A)$-module
+NEW: dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module
+FRENCH CONTEXT (corrected):  $\operatorname{gr}_\bullet(R)$ qui engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Alors la condition \textup{c)} de \textup{(19.6.3)} équivaut à la condition suivante:
+  \item[\textup{c$'$)}] L'image de $S$ dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+  \item[\textup{(ii)}] Supposons vérifiée la condition \textup{e)} de \textup{(19.6.3)}, et de plus que les quotients des $\operatorname{gr}_k(R)$ soient séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien
+
+[id 22426]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected):  \textup{c)} de \textup{(19.6.3)} équivaut à la condition suivante:
+  \item[\textup{c$'$)}] L'image de $S$ dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+  \item[\textup{(ii)}] Supposons vérifiée la condition \textup{e)} de \textup{(19.6.3)}, et de plus que les quotients des $\operatorname{gr}_k(R)$ soient séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, les $f_i$ dans le radi
+
+[id 22427]
+OLD: la condition $e)$ de (19.6.3), et de plus
+NEW: la condition \textup{e)} de \textup{(19.6.3)}, et de plus
+FRENCH CONTEXT (corrected): ut à la condition suivante:
+  \item[\textup{c$'$)}] L'image de $S$ dans $\operatorname{gr}_\bullet'(R)$ par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+  \item[\textup{(ii)}] Supposons vérifiée la condition \textup{e)} de \textup{(19.6.3)}, et de plus que les quotients des $\operatorname{gr}_k(R)$ soient séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, les $f_i$ dans le radical de $A$ et les $\operatorname{gr}_k(N)$ des $A$-modules de type fini)}. Al
+
+[id 22428]
+OLD: (ce qui sera le cas lorsque $A$ est noethérien, les $f_i$ dans le radical de $A$ et les $\operatorname{gr}_k(N)$ des $A$-modules de type fini)
+NEW: \textup{(ce qui sera le cas lorsque $A$ est noethérien, les $f_i$ dans le radical de $A$ et les $\operatorname{gr}_k(N)$ des $A$-modules de type fini)}
+FRENCH CONTEXT (corrected): me $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+  \item[\textup{(ii)}] Supposons vérifiée la condition \textup{e)} de \textup{(19.6.3)}, et de plus que les quotients des $\operatorname{gr}_k(R)$ soient séparés pour la topologie $\mathfrak J$-préadique \textup{(ce qui sera le cas lorsque $A$ est noethérien, les $f_i$ dans le radical de $A$ et les $\operatorname{gr}_k(N)$ des $A$-modules de type fini)}. Alors, pour qu'une partie $S$ de $\operatorname{gr}_\bullet(R)$ formée d'éléments homogènes engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module, il faut et il suffit que son image par $\psi_R'$ engendre $\operato
+
+[id 22429]
+OLD: comme $\operatorname{gr}_{\mathfrak R}^*(A)$-module, il faut
+NEW: comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module, il faut
+FRENCH CONTEXT (corrected): as lorsque $A$ est noethérien, les $f_i$ dans le radical de $A$ et les $\operatorname{gr}_k(N)$ des $A$-modules de type fini)}. Alors, pour qu'une partie $S$ de $\operatorname{gr}_\bullet(R)$ formée d'éléments homogènes engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module, il faut et il suffit que son image par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+\end{enumerate}
+\end{corollary}
+
+\oldpage[IV-4]{212}
+
+\begin{enumerate}
+  \item[(i)] Considérons l'homomorphisme de de
+
+[id 22430]
+OLD: que son image par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^*(A)$-module.
+NEW: que son image par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+FRENCH CONTEXT (corrected): rname{gr}_k(N)$ des $A$-modules de type fini)}. Alors, pour qu'une partie $S$ de $\operatorname{gr}_\bullet(R)$ formée d'éléments homogènes engendre $\operatorname{gr}_\bullet(R)$ comme $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module, il faut et il suffit que son image par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+\end{enumerate}
+\end{corollary}
+
+\oldpage[IV-4]{212}
+
+\begin{enumerate}
+  \item[(i)] Considérons l'homomorphisme de degré $0$
+  \[
+    \psi_A:(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_
+
+=================== PAGE IV-4 212 ===================
+----- (English page IV-4 211: shown above in this file) -----
+----- (English page IV-4 212: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 213 -----
+\oldpage[IV-4]{213}
+Finally, when $\mathrm{A}$ is Noetherian, the $f_i$ belong to the radical of $\mathrm{A}$, the sequence $\mathbf{f}$ is $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-regular, and $\mathrm{M}$ is a finitely generated $\mathrm{A}$-module, the conditions \emph{a)}, \emph{b)}, \emph{c)}, \emph{d)} are equivalent.
+\end{theorem}
+
+\begin{proof}
+The implication \emph{a)} $\Rightarrow$ \emph{c)} is immediate $(\mathbf{0},15.1.13)$. If $c)$ is satisfied, it results from \sref{IV.19.5.5} that $\psi_\mathrm{M}$ is bijective; moreover, $(\operatorname{gr}_\mathfrak K^*(\mathrm{M})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ is a flat $(\mathrm{A}/\mathfrak{L})$-module, and hence so is $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$, since $\psi_\mathrm{M}$ is an $(\mathrm{A}/\mathfrak{L})$-isomorphism; thus $c)$ implies $b)$. The fact that $a)$ also implies $d)$ is immediate.
+
+When every quotient of a submodule of $\operatorname{gr}_\mathfrak K^k(\mathrm{M})$ is ideally separated for $\mathfrak{J}$, it results from \sref{IV.19.5.5} that condition $b)$ implies that $\mathbf{f}$ is $(\operatorname{gr}_\mathfrak K^*(\mathrm{M}))$-regular; moreover, $(\operatorname{gr}_\mathfrak K^*(\mathrm{M})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ is isomorphic to $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$ and hence is flat over $\mathrm{A}/\mathfrak{L}$. Its degree-zero direct summand $\operatorname{gr}_\mathfrak K^*(\mathrm{M})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$ is therefore flat; this proves that $b)$ implies $c)$. On the other hand, under the same hypothesis, $c)$ implies $a)$ by virtue of $(\mathbf{0},15.1.21)$ (where we can replace the Noetherian hypothesis by the hypothesis that $\mathrm{M}$ is ideally separated for $\mathfrak{J}$, by virtue of $(\mathbf{0}_\mathrm{III},10.2.1)$).
+
+It remains therefore to prove that when $\mathrm{A}$ is Noetherian, $\mathrm{M}$ of finite type, and the $f_i$ belong to the radical of $\mathrm{A}$, $d)$ implies $a)$.
+
+There exists a free $\mathrm{A}$-module $\mathrm{N}$ of \emph{finite type} and an exact sequence $0\to\mathrm{R}\to\mathrm{N}\to\mathrm{M}\to 0$. It suffices to prove that $d)$ implies $b)$, since every quotient of a sub-$\operatorname{gr}_\mathfrak K^k(\mathrm{M})$ is then ideally separated for $\mathfrak{J}$, by virtue of the fact that $\operatorname{gr}_\mathfrak K^k(\mathrm{M})$ is a finitely generated $\mathrm{A}$-module, that $\mathfrak{J}$ is contained in the radical of $\mathrm{A}$, and that $\mathrm{A}$ is Noetherian (Bourbaki, \emph{Alg.~comm.}, chap.~III, \textsection~5, n\textsuperscript{o}~1); in other words, it suffices to show that $\psi_\mathrm{M}$ is \emph{bijective}.
+
+As $\mathrm{N}$ is free and the sequence $\mathbf{f}$ is $\operatorname{gr}_\mathfrak K^*(\mathrm{A})$-regular by hypothesis, it is also $\operatorname{gr}_\mathfrak K^*(\mathrm{N})$-regular. One can therefore apply \sref{IV.19.6.3}, since every quotient module of a sub-$\operatorname{gr}_k(\mathrm{M})$ is separated for the $\mathfrak{J}$-preadic topology, the $f_i$ belonging to the radical of $\mathrm{A}$ by hypothesis. The diagram \sref{IV.19.6.2.1} here reads
+\[
+\xymatrix{
+  & 0 \ar[d] \\
+  (\operatorname{gr}_\mathfrak K^*(\mathrm{R},\mathrm{N})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{R}'} \ar[d] & \operatorname{gr}_\mathfrak{L}^*(\mathrm{R},\mathrm{N}) \ar[d] \\
+  (\operatorname{gr}_\mathfrak K^*(\mathrm{N})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{N}} \ar[d] & \operatorname{gr}_\mathfrak{L}^*(\mathrm{N}) \ar[d] \\
+  (\operatorname{gr}_\mathfrak K^*(\mathrm{M})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L}))[\mathrm{T}_1,\ldots,\mathrm{T}_n] \ar[r]^-{\psi_\mathrm{M}} \ar[d] & \operatorname{gr}_\mathfrak{L}^*(\mathrm{M}) \ar[d] \\
+  0 & 0
+}
+\tag{19.7.1.1}
+\label{IV.19.7.1.1}
+\]
+where $\operatorname{gr}_\mathfrak K^*(\mathrm{R},\mathrm{N})$ (resp. $\operatorname{gr}_\mathfrak{L}^*(\mathrm{R},\mathrm{N})$) is the graded associated to $\mathrm{R}$ for the filtration $\mathrm{R}\cap\mathfrak K^m\mathrm{N}$ (resp. $\mathrm{R}\cap\mathfrak{L}^m\mathrm{N}$); recall that in this diagram the columns are exact and that $\psi_\mathrm{N}$ is \emph{bijective}.
+----- French corrections on page IV-4 212 -----
+[id 22431]
+OLD: \psi_A:(\operatorname{gr}_{\mathfrak R}^*(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(A)=\operatorname{gr}_{\mathfrak L}^*(A)
+NEW: \psi_A:(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(A)=\operatorname{gr}_{\mathfrak L}^\bullet(A)
+FRENCH CONTEXT (corrected):  son image par $\psi_R'$ engendre $\operatorname{gr}_\bullet'(R)$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module.
+\end{enumerate}
+\end{corollary}
+
+\oldpage[IV-4]{212}
+
+\begin{enumerate}
+  \item[(i)] Considérons l'homomorphisme de degré $0$
+  \[
+    \psi_A:(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(A)=\operatorname{gr}_{\mathfrak L}^\bullet(A)
+  \]
+  (\textbf{0}, 15.1.5.2). Le fait que cet homomorphisme soit \emph{surjectif} entraîne que la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre de $\operatorname{gr}_\bullet'(R)$ engendrée par $S'=\psi_R'(S)$ n'est autre que $\operatorname{Im}(\p
+
+[id 22432]
+OLD: ($0$, 15.1.5.2). Le fait
+NEW: (\textbf{0}, 15.1.5.2). Le fait
+FRENCH CONTEXT (corrected): enumerate}
+  \item[(i)] Considérons l'homomorphisme de degré $0$
+  \[
+    \psi_A:(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(A)=\operatorname{gr}_{\mathfrak L}^\bullet(A)
+  \]
+  (\textbf{0}, 15.1.5.2). Le fait que cet homomorphisme soit \emph{surjectif} entraîne que la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre de $\operatorname{gr}_\bullet'(R)$ engendrée par $S'=\psi_R'(S)$ n'est autre que $\operatorname{Im}(\psi_R')$, d'où l'équivalence de \emph{c)
+
+[id 22433]
+OLD: la sous-$\operatorname{gr}_{\mathfrak L}^*(A)$-algèbre
+NEW: la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre
+FRENCH CONTEXT (corrected): orname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_\bullet'(A)=\operatorname{gr}_{\mathfrak L}^\bullet(A)
+  \]
+  (\textbf{0}, 15.1.5.2). Le fait que cet homomorphisme soit \emph{surjectif} entraîne que la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre de $\operatorname{gr}_\bullet'(R)$ engendrée par $S'=\psi_R'(S)$ n'est autre que $\operatorname{Im}(\psi_R')$, d'où l'équivalence de \emph{c)} et \emph{c$'$)}.
+  \item[(ii)] Puisque \emph{e)} est vérifiée, il en est de même de \emph{c)}, et en vertu de (i), i
+
+[id 22434]
+OLD: d'où l'équivalence de $c)$ et $c')$.
+NEW: d'où l'équivalence de \emph{c)} et \emph{c$'$)}.
+FRENCH CONTEXT (corrected): \textbf{0}, 15.1.5.2). Le fait que cet homomorphisme soit \emph{surjectif} entraîne que la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre de $\operatorname{gr}_\bullet'(R)$ engendrée par $S'=\psi_R'(S)$ n'est autre que $\operatorname{Im}(\psi_R')$, d'où l'équivalence de \emph{c)} et \emph{c$'$)}.
+  \item[(ii)] Puisque \emph{e)} est vérifiée, il en est de même de \emph{c)}, et en vertu de (i), il reste à prouver la suffisance de la condition de l'énoncé. Or, comme $\psi_R'$ est bijectif, dire que $S'$ engendre $\operatorname{gr}_\bullet'(R)$ considéré 
+
+[id 22435]
+OLD: Puisque $e)$ est vérifiée, il en est de même de $c)$
+NEW: Puisque \emph{e)} est vérifiée, il en est de même de \emph{c)}
+FRENCH CONTEXT (corrected): {surjectif} entraîne que la sous-$\operatorname{gr}_{\mathfrak L}^\bullet(A)$-algèbre de $\operatorname{gr}_\bullet'(R)$ engendrée par $S'=\psi_R'(S)$ n'est autre que $\operatorname{Im}(\psi_R')$, d'où l'équivalence de \emph{c)} et \emph{c$'$)}.
+  \item[(ii)] Puisque \emph{e)} est vérifiée, il en est de même de \emph{c)}, et en vertu de (i), il reste à prouver la suffisance de la condition de l'énoncé. Or, comme $\psi_R'$ est bijectif, dire que $S'$ engendre $\operatorname{gr}_\bullet'(R)$ considéré comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module équivaut à dire que
+
+[id 22436]
+OLD: considéré comme $\operatorname{gr}_{\mathfrak L}^*(A)$-module
+NEW: considéré comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module
+FRENCH CONTEXT (corrected): ph{c$'$)}.
+  \item[(ii)] Puisque \emph{e)} est vérifiée, il en est de même de \emph{c)}, et en vertu de (i), il reste à prouver la suffisance de la condition de l'énoncé. Or, comme $\psi_R'$ est bijectif, dire que $S'$ engendre $\operatorname{gr}_\bullet'(R)$ considéré comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module équivaut à dire que $S$ engendre $(\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module, et en vertu de la surjectivité de $\psi_A$, on peut dans cet énoncé remplacer l'anneau $\opera
+
+[id 22437]
+OLD: [T_1,\ldots,T_n]$ comme $\operatorname{gr}_{\mathfrak L}^*(A)$-module, et en vertu
+NEW: [T_1,\ldots,T_n]$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module, et en vertu
+FRENCH CONTEXT (corrected): n de l'énoncé. Or, comme $\psi_R'$ est bijectif, dire que $S'$ engendre $\operatorname{gr}_\bullet'(R)$ considéré comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module équivaut à dire que $S$ engendre $(\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module, et en vertu de la surjectivité de $\psi_A$, on peut dans cet énoncé remplacer l'anneau $\operatorname{gr}_{\mathfrak L}^\bullet(A)$ par $(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$. Il revient évidemment au même de dire que $S$ e
+
+[id 22438]
+OLD: remplacer l'anneau $\operatorname{gr}_{\mathfrak L}^*(A)$ par $(\operatorname{gr}_{\mathfrak R}^*(A)\otimes_A(A/\mathfrak J))
+NEW: remplacer l'anneau $\operatorname{gr}_{\mathfrak L}^\bullet(A)$ par $(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))
+FRENCH CONTEXT (corrected): frak L}^\bullet(A)$-module équivaut à dire que $S$ engendre $(\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$ comme $\operatorname{gr}_{\mathfrak L}^\bullet(A)$-module, et en vertu de la surjectivité de $\psi_A$, on peut dans cet énoncé remplacer l'anneau $\operatorname{gr}_{\mathfrak L}^\bullet(A)$ par $(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$. Il revient évidemment au même de dire que $S$ engendre $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)$ en tant que module sur l'anneau $\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J)$, ou aussi en tant que $\operat
+
+[id 22439]
+OLD: sur l'anneau $\operatorname{gr}_{\mathfrak R}^*(A)\otimes_A(A/\mathfrak J)$, ou aussi en tant que $\operatorname{gr}_{\mathfrak R}^*(A)$-module.
+NEW: sur l'anneau $\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J)$, ou aussi en tant que $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module.
+FRENCH CONTEXT (corrected): atorname{gr}_{\mathfrak L}^\bullet(A)$ par $(\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J))[T_1,\ldots,T_n]$. Il revient évidemment au même de dire que $S$ engendre $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)$ en tant que module sur l'anneau $\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J)$, ou aussi en tant que $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Or, si $T$ est le sous-$\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module gradué de $\operatorname{gr}_\bullet(R)$ engendré par $S$, et si l'on pose $T'=\operatorname{gr}_\bullet(R)/T$, on a par hypothèse $T'/\mathfrak JT'=0$, ou $\mathfrak JT'=T'$; mais $T'
+
+[id 22440]
+OLD: le sous-$\operatorname{gr}_{\mathfrak R}^*(A)$-module gradué
+NEW: le sous-$\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module gradué
+FRENCH CONTEXT (corrected):  $S$ engendre $\operatorname{gr}_\bullet(R)\otimes_A(A/\mathfrak J)$ en tant que module sur l'anneau $\operatorname{gr}_{\mathfrak K}^\bullet(A)\otimes_A(A/\mathfrak J)$, ou aussi en tant que $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module. Or, si $T$ est le sous-$\operatorname{gr}_{\mathfrak K}^\bullet(A)$-module gradué de $\operatorname{gr}_\bullet(R)$ engendré par $S$, et si l'on pose $T'=\operatorname{gr}_\bullet(R)/T$, on a par hypothèse $T'/\mathfrak JT'=0$, ou $\mathfrak JT'=T'$; mais $T'$ est un module gradué, et chaque $T_p'$ est un quotient de $\operatorname{gr}_p(R
+
+[id 22445]
+OLD: On a dans ce cas
+\[
+  (\operatorname{gr}_{\mathfrak R}^*(M))\otimes_A(A/\mathfrak J)
+  =(\operatorname{gr}_{\mathfrak R}^*(M))\otimes_A(A/\mathfrak L)
+  =(\operatorname{gr}_{\mathfrak R}^*(M))\otimes_{A/\mathfrak R}(A/\mathfrak L),
+\]
+car
+\[
+  (\mathfrak R^nM/\mathfrak R^{n+1}M)\otimes_A(A/\mathfrak J)
+  =\mathfrak R^nM/(\mathfrak R^{n+1}+\mathfrak J\mathfrak R^n)M
+  =\mathfrak R^nM/(\mathfrak R^{n+1}+\mathfrak L\mathfrak R^n)M,
+\]
+et la dernière égalité
+NEW: On a dans ce cas $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak J)=(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L)=(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$, car $(\mathfrak K^nM/\mathfrak K^{n+1}M)\otimes_A(A/\mathfrak J)=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak J\mathfrak K^n)M=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak L\mathfrak K^n)M$, et la dernière égalité
+FRENCH CONTEXT (corrected): un anneau, $\mathfrak K$ un idéal de $A$, $\mathbf f=(f_1,\ldots,f_n)$ une suite d'éléments de $A$ qui est $(A/\mathfrak K)$-régulière, $\mathfrak J=f_1A+\ldots+f_nA$ l'idéal engendré par $\mathbf f$, $\mathfrak L=\mathfrak J+\mathfrak K$, $M$ un $A$-module.
+
+On a dans ce cas $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak J)=(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L)=(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$, car $(\mathfrak K^nM/\mathfrak K^{n+1}M)\otimes_A(A/\mathfrak J)=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak J\mathfrak K^n)M=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak L\mathfrak K^n)M$, et la dernière égalité résulte de \textup{Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un
+
+[id 22446]
+OLD: résulte de Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6.
+NEW: résulte de \textup{Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+FRENCH CONTEXT (corrected): let(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$, car $(\mathfrak K^nM/\mathfrak K^{n+1}M)\otimes_A(A/\mathfrak J)=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak J\mathfrak K^n)M=\mathfrak K^nM/(\mathfrak K^{n+1}+\mathfrak L\mathfrak K^n)M$, et la dernière égalité résulte de \textup{Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module 
+
+[id 22447]
+OLD: \item[a)]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): (\mathfrak K^{n+1}+\mathfrak L\mathfrak K^n)M$, et la dernière égalité résulte de \textup{Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \ps
+
+[id 22448]
+OLD: $\operatorname{gr}_{\mathfrak R}^*(M)$ est un $(A/\mathfrak R)$-module plat.
+NEW: $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+FRENCH CONTEXT (corrected): \mathfrak L\mathfrak K^n)M$, et la dernière égalité résulte de \textup{Bourbaki, \emph{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldo
+
+[id 22449]
+OLD: \item[b)]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): h{Alg.}, chap. II, 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarro
+
+[id 22450]
+OLD: $\operatorname{gr}_{\mathfrak L}^*(M)$ est un $(A/\mathfrak L)$-module plat et
+NEW: $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et
+FRENCH CONTEXT (corrected): 3\textsuperscript{e} éd., § 3, n\textsuperscript{o} 7, cor. 2 de la prop. 6}.
+
+Considérons les conditions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}]
+
+[id 22451]
+OLD: canonique ($0$, 15.1.5.2)
+NEW: canonique \textup{(\textbf{0}, 15.1.5.2)}
+FRENCH CONTEXT (corrected): ions suivantes:
+\begin{enumerate}
+  \item[\textup{a)}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\
+
+[id 22452]
+OLD: \psi_M:((\operatorname{gr}_{\mathfrak R}^*(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^*(M)
+NEW: \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+FRENCH CONTEXT (corrected): )}] $\operatorname{gr}_{\mathfrak K}^\bullet(M)$ est un $(A/\mathfrak K)$-module plat.
+  \item[\textup{b)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+  \item[\
+
+[id 22453]
+OLD: \item[c)]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): L)$-module plat et l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+  \item[\textup{d)}] $\operatorname{gr}_{\mathfrak 
+
+[id 22454]
+OLD: $(\operatorname{gr}_{\mathfrak R}^*(M))\otimes_{A/\mathfrak R}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak R}^*(M))$-régulière.
+NEW: $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+FRENCH CONTEXT (corrected): l'homomorphisme canonique \textup{(\textbf{0}, 15.1.5.2)}
+  \[
+    \psi_M:((\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]\longrightarrow\operatorname{gr}_{\mathfrak L}^\bullet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+  \item[\textup{d)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat, et pour tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak K}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak K}^\bullet(M))_{\mathfrak p}$ est un $(A/\ma
+
+[id 22455]
+OLD: \item[d)]
+NEW: \item[\textup{d)}]
+FRENCH CONTEXT (corrected): llet(M)
+  \]
+  est bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+  \item[\textup{d)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat, et pour tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak K}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak K}^\bullet(M))_{\mathfrak p}$ est un $(A/\mathfrak K)_{\mathfrak 
+
+[id 22456]
+OLD: $\operatorname{gr}_{\mathfrak L}^*(M)$ est un $(A/\mathfrak L)$-module plat, et pour tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak R}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak R}^*(M))_{\mathfrak p}$ est un $(A/\mathfrak R)_{\mathfrak p}$-module plat.
+NEW: $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat, et pour tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak K}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak K}^\bullet(M))_{\mathfrak p}$ est un $(A/\mathfrak K)_{\mathfrak p}$-module plat.
+FRENCH CONTEXT (corrected): bijectif.
+  \item[\textup{c)}] $(\operatorname{gr}_{\mathfrak K}^\bullet(M))\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat et la suite $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière.
+  \item[\textup{d)}] $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ est un $(A/\mathfrak L)$-module plat, et pour tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak K}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak K}^\bullet(M))_{\mathfrak p}$ est un $(A/\mathfrak K)_{\mathfrak p}$-module plat.
+\end{enumerate}
+
+On a alors les implications
+\[
+\xymatrix@C=3em@R=1.6em{
+  \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{c)} \ar@{=>}[r] & \textup{b)} \\
+  & \textup{d)}
+}
+\]
+
+Lorsque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$
+
+[id 22458]
+OLD:   a) \ar@{=>}[r] \ar@{=>}[dr] & c) \ar@{=>}[r] & b) \\
+  & d)
+NEW:   \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{c)} \ar@{=>}[r] & \textup{b)} \\
+  & \textup{d)}
+FRENCH CONTEXT (corrected): r tout $\mathfrak p\in\operatorname{Ass}_{A/\mathfrak K}(A/\mathfrak L)$, $(\operatorname{gr}_{\mathfrak K}^\bullet(M))_{\mathfrak p}$ est un $(A/\mathfrak K)_{\mathfrak p}$-module plat.
+\end{enumerate}
+
+On a alors les implications
+\[
+\xymatrix@C=3em@R=1.6em{
+  \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{c)} \ar@{=>}[r] & \textup{b)} \\
+  & \textup{d)}
+}
+\]
+
+Lorsque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ \textup{($p\geq0$)} est idéalement séparé pour $\mathfrak J$ \textup{(Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)}, les conditions \textup{a)}, \
+
+[id 22462]
+OLD: (Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)
+NEW: \textup{(Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)}
+FRENCH CONTEXT (corrected): em@R=1.6em{
+  \textup{a)} \ar@{=>}[r] \ar@{=>}[dr] & \textup{c)} \ar@{=>}[r] & \textup{b)} \\
+  & \textup{d)}
+}
+\]
+
+Lorsque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ \textup{($p\geq0$)} est idéalement séparé pour $\mathfrak J$ \textup{(Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)}, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+
+\oldpage[IV-4]{213}
+
+Enfin, lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$, que la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-réguli
+
+[id 22463]
+OLD: les conditions $a)$, $b)$ et $c)$ sont équivalentes.
+NEW: les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+FRENCH CONTEXT (corrected): textup{b)} \\
+  & \textup{d)}
+}
+\]
+
+Lorsque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ \textup{($p\geq0$)} est idéalement séparé pour $\mathfrak J$ \textup{(Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)}, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+
+\oldpage[IV-4]{213}
+
+Enfin, lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$, que la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière et que $M$ est un $A$-module de type fini, les conditions \textup{a)}, 
+
+=================== PAGE IV-4 213 ===================
+----- (English page IV-4 212: shown above in this file) -----
+----- (English page IV-4 213: shown above in this file) -----
+----- English, source_aligned/ega4-19.tex, page IV-4 214 -----
+\oldpage[IV-4]{214}
+
+\begin{env}[19.7.1.2]
+\label{IV.19.7.1.2}
+Set $\mathrm{B}=\operatorname{gr}_\mathfrak{R}^*\mathrm{A}\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, $\mathrm{P}=\operatorname{gr}_\mathfrak{R}^*(\mathrm{N})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, $\mathrm{Q}=\operatorname{gr}_\mathfrak{L}^*(\mathrm{R},\mathrm{N})$; since $\psi_\mathrm{N}$ is bijective, $\mathrm{P}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ identifies with $\operatorname{gr}_\mathfrak{L}^*(\mathrm{N})$, and $\mathrm{Q}$ is a sub-$\mathrm{B}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$-module of $\mathrm{P}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$; we will first show that we have
+\end{env}
+\begin{env}[19.7.1.3]
+\label{IV.19.7.1.3}
+\[
+  \mathrm{Q}=(\mathrm{Q}\cap\mathrm{P})[\mathrm{T}_1,\ldots,\mathrm{T}_n].
+\]
+\end{env}
+
+For this, set $\mathrm{Z}=\mathrm{Q}/((\mathrm{Q}\cap\mathrm{P})[\mathrm{T}_1,\ldots,\mathrm{T}_n])$.
+This is a sub-$\mathrm{B}[\mathrm{T}_1,\ldots,\mathrm{T}_n]$-module of
+\[
+  \begin{aligned}
+  &\mathrm{P}[\mathrm{T}_1,\ldots,\mathrm{T}_n]
+  /((\mathrm{Q}\cap\mathrm{P})[\mathrm{T}_1,\ldots,\mathrm{T}_n])\\
+  &\qquad=(\mathrm{P}/(\mathrm{Q}\cap\mathrm{P}))[\mathrm{T}_1,\ldots,\mathrm{T}_n].
+  \end{aligned}
+\]
+As an $(\mathrm{A}/\mathfrak{L})$-module, it is therefore isomorphic to a submodule of a direct sum of $(\mathrm{A}/\mathfrak{L})$-modules isomorphic to $\mathrm{P}/(\mathrm{Q}\cap\mathrm{P})=(\mathrm{P}+\mathrm{Q})/\mathrm{Q}$.
+But $(\mathrm{P}+\mathrm{Q})/\mathrm{Q}$ is an $(\mathrm{A}/\mathfrak{L})$-module isomorphic to a submodule of $\mathrm{P}[\mathrm{T}_1,\ldots,\mathrm{T}_n]/\mathrm{Q}$, which is none other than $\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})$ by the diagram \sref{IV.19.7.1.1}.
+
+\begin{equation}
+  \operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\mathrm{Z})\subset\operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\operatorname{gr}_\mathfrak{L}^*(\mathrm{M})).
+  \tag{19.7.1.4}\label{IV.19.7.1.4}
+\end{equation}
+
+But each $\operatorname{gr}_\mathfrak{L}^m(\mathrm{M})$ is by hypothesis a \emph{flat} $(\mathrm{A}/\mathfrak{L})$-module of finite type, hence projective since $\mathrm{A}/\mathfrak{L}$ is Noetherian, and we therefore have $\operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\operatorname{gr}_\mathfrak{L}^*(\mathrm{M}))\subset\operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\mathrm{A}/\mathfrak{L})$. To see that $\mathrm{Z}=0$, it suffices by (Bourbaki, \emph{Alg.~comm.}, chap.~IV, \textsection~1, n\textsuperscript{o}~1, cor.~1 of prop.~2 and n\textsuperscript{o}~3, prop.~7) to see that for every $\mathfrak{q}\in\operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\mathrm{A}/\mathfrak{L})$, $\mathrm{Z}_\mathfrak{q}=0$. But the ideals of $\operatorname{Ass}_{\mathrm{A}/\mathfrak{L}}(\mathrm{A}/\mathfrak{L})$ are of the form $\mathfrak{p}/(\mathfrak{L}/\mathfrak{R})$, where $\mathfrak{p}\in\operatorname{Ass}_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, and it comes down to the same to see that $\mathrm{Z}_\mathfrak{p}=0$ for every $\mathfrak{p}\in\operatorname{Ass}_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$. Now, if $\mathfrak{p}=\mathfrak{r}/\mathfrak{R}$, where $\mathfrak{r}$ is a prime ideal of $\mathrm{A}$, then $(\operatorname{gr}_\mathfrak{R}^*(\mathrm{M}))_\mathfrak{p}=\operatorname{gr}_{\mathfrak K_\mathfrak{r}}^*(\mathrm{M}_\mathfrak{r})$ and $(\mathrm{A}/\mathfrak{L})_\mathfrak{p}=\mathrm{A}_\mathfrak{r}/\mathfrak{L}_\mathfrak{r}$, and the images of the $f_i$ in $\mathrm{A}_\mathfrak{r}$ form a $\operatorname{gr}_{\mathfrak K_\mathfrak{r}}^*(\mathrm{A}_\mathfrak{r})$-regular sequence $(\mathbf{0},15.1.14)$; applying to $\mathrm{A}_\mathfrak{r}$, $\mathfrak K_\mathfrak{r}$ and $\mathrm{M}_\mathfrak{r}$ the implication $a)\Rightarrow b)$ of the statement, we see from the hypothesis $d)$ that $\psi_{\mathrm{M}_\mathfrak{r}}$ is bijective, hence also $\psi_{\mathrm{R}_\mathfrak{r}}'$ by virtue of \sref{IV.19.6.3}; in other words, $\mathrm{Q}_\mathfrak{r}=\mathrm{Q}_\mathfrak{r}'[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, where we have set $\mathrm{Q}'=\operatorname{gr}_\mathfrak{R}^*(\mathrm{R},\mathrm{N})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$, which is here a sub-$\mathrm{B}$-module of $\mathrm{P}$; in particular $\mathrm{Q}_\mathfrak{r}'=\mathrm{Q}_\mathfrak{r}\cap\mathrm{P}_\mathfrak{r}$; hence finally $\mathrm{Z}_\mathfrak{r}=\mathrm{Z}_\mathfrak{p}=0$, which completes the demonstration of \sref{IV.19.7.1.3}.
+
+\begin{env}[19.7.1.5]
+\label{IV.19.7.1.5}
+By virtue of \sref{IV.19.7.1.3}, to prove that $\psi_\mathrm{R}'$ is surjective, it suffices to show that every homogeneous element of degree $m$ of $\mathrm{Q}\cap\mathrm{P}$ is the image of an element of the same degree of $\mathrm{Q}'=\operatorname{gr}_\mathfrak{R}^*(\mathrm{R},\mathrm{N})\otimes_{\mathrm{A}/\mathfrak K}(\mathrm{A}/\mathfrak{L})$. Now, the elements of degree $m$ of $\mathrm{P}$ identify (by $\psi_\mathrm{N}$) with the elements of $(\mathfrak K^m\mathrm{N}+\mathfrak{L}^{m+1}\mathrm{N})/\mathfrak{L}^{m+1}\mathrm{N}$; those which belong to $\mathrm{Q}$ identify with the elements of $((\mathrm{R}\cap\mathfrak{L}^m\mathrm{N})+\mathfrak{L}^{m+1}\mathrm{N})/\mathfrak{L}^{m+1}\mathrm{N}$; and the images of the elements of degree $m$ of $\mathrm{Q}'$ identify with the elements of $((\mathrm{R}\cap\mathfrak{R}^m\mathrm{N})+\mathfrak{L}^{m+1}\mathrm{N})/\mathfrak{L}^{m+1}\mathrm{N}$. It will therefore suffice to prove, for $m>0$, the inclusion
+\[
+  ((\mathrm{R}\cap\mathfrak{L}^m\mathrm{N})+\mathfrak{L}^{m+1}\mathrm{N})\cap(\mathfrak{R}^m\mathrm{N}+\mathfrak{L}^{m+1}\mathrm{N})\subset(\mathrm{R}\cap\mathfrak{R}^m\mathrm{N})+\mathfrak{L}^{m+1}\mathrm{N}.
+\]
+As $\mathfrak K\subset\mathfrak{L}$, we see immediately that the first member of this relation is equal to $(\mathrm{R}\cap(\mathfrak{R}^m\mathrm{N}+\mathfrak{L}^{m+1}\mathrm{N}))+\mathfrak{L}^{m+1}\mathrm{N}$, so that everything reduces to proving
+\end{env}
+\begin{env}[19.7.1.6]
+\label{IV.19.7.1.6}
+\[
+  \mathrm{R}\cap(\mathfrak{R}^m\mathrm{N}+\mathfrak{L}^{m+1}\mathrm{N})\subset(\mathrm{R}\cap\mathfrak{R}^m\mathrm{N})+\mathfrak{L}^{m+1}\mathrm{N}.
+\]
+\end{env}
+----- French corrections on page IV-4 213 -----
+[id 22464]
+OLD: la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak R}^*(A)$-régulière et que
+NEW: la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière et que
+FRENCH CONTEXT (corrected): extup{(Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1)}, les conditions \textup{a)}, \textup{b)} et \textup{c)} sont équivalentes.
+
+\oldpage[IV-4]{213}
+
+Enfin, lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$, que la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière et que $M$ est un $A$-module de type fini, les conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)} $\Rightarrow$ \emph{c)} est immédiate (\textbf{0}, 15.1.13). Si \emph{c)} est vérifiée, il résulte 
+
+[id 22465]
+OLD: les conditions $a)$, $b)$, $c)$, $d)$ sont équivalentes.
+NEW: les conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+FRENCH CONTEXT (corrected): extup{c)} sont équivalentes.
+
+\oldpage[IV-4]{213}
+
+Enfin, lorsque $A$ est noethérien, que les $f_i$ appartiennent au radical de $A$, que la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière et que $M$ est un $A$-module de type fini, les conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)} $\Rightarrow$ \emph{c)} est immédiate (\textbf{0}, 15.1.13). Si \emph{c)} est vérifiée, il résulte de (19.5.5) que $\psi_M$ est bijectif; en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\ope
+
+[id 22467]
+OLD: ($0$, 15.1.13)
+NEW: (\textbf{0}, 15.1.13)
+FRENCH CONTEXT (corrected): $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière et que $M$ est un $A$-module de type fini, les conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)} $\Rightarrow$ \emph{c)} est immédiate (\textbf{0}, 15.1.13). Si \emph{c)} est vérifiée, il résulte de (19.5.5) que $\psi_M$ est bijectif; en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak 
+
+[id 22468]
+OLD: Si $c)$ est vérifiée
+NEW: Si \emph{c)} est vérifiée
+FRENCH CONTEXT (corrected): thfrak K}^\bullet(A)$-régulière et que $M$ est un $A$-module de type fini, les conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)} $\Rightarrow$ \emph{c)} est immédiate (\textbf{0}, 15.1.13). Si \emph{c)} est vérifiée, il résulte de (19.5.5) que $\psi_M$ est bijectif; en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat, donc il en
+
+[id 22469]
+OLD: en outre, $\operatorname{gr}_{\mathfrak R}^*(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak R}^*(M)\otimes_{A/\mathfrak R}(A/\mathfrak L)$
+NEW: en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$
+FRENCH CONTEXT (corrected): s conditions \textup{a)}, \textup{b)}, \textup{c)}, \textup{d)} sont équivalentes.
+\end{theorem}
+
+L'implication \emph{a)} $\Rightarrow$ \emph{c)} est immédiate (\textbf{0}, 15.1.13). Si \emph{c)} est vérifiée, il résulte de (19.5.5) que $\psi_M$ est bijectif; en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat, donc il en est de même de $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]$, et par suite de $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ puisque $\psi_M$ est un $(A/\mathfrak L)$-isom
+
+[id 22470]
+OLD: de même de $(\operatorname{gr}_{\mathfrak R}^*(M)\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]$, et par suite de $\operatorname{gr}_{\mathfrak L}^*(M)$
+NEW: de même de $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]$, et par suite de $\operatorname{gr}_{\mathfrak L}^\bullet(M)$
+FRENCH CONTEXT (corrected): résulte de (19.5.5) que $\psi_M$ est bijectif; en outre, $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L)=\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$ est un $(A/\mathfrak L)$-module plat, donc il en est de même de $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]$, et par suite de $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ puisque $\psi_M$ est un $(A/\mathfrak L)$-isomorphisme; donc \emph{c)} entraîne \emph{b)}. Le fait que \emph{a)} implique \emph{b)} montre aussitôt que \emph{a)} implique aussi \emph{d)}.
+
+Lorsque tout quotient d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est 
+
+[id 22471]
+OLD: donc $c)$ entraîne $b)$. Le fait que $a)$ implique $b)$ montre aussitôt que $a)$ implique aussi $d)$.
+NEW: donc \emph{c)} entraîne \emph{b)}. Le fait que \emph{a)} implique \emph{b)} montre aussitôt que \emph{a)} implique aussi \emph{d)}.
+FRENCH CONTEXT (corrected): A/\mathfrak L)$-module plat, donc il en est de même de $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_A(A/\mathfrak L))[T_1,\ldots,T_n]$, et par suite de $\operatorname{gr}_{\mathfrak L}^\bullet(M)$ puisque $\psi_M$ est un $(A/\mathfrak L)$-isomorphisme; donc \emph{c)} entraîne \emph{b)}. Le fait que \emph{a)} implique \emph{b)} montre aussitôt que \emph{a)} implique aussi \emph{d)}.
+
+Lorsque tout quotient d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est idéalement séparé pour $\mathfrak J$, il résulte de (19.5.5) que la condition \emph{b)} entraîne que $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière; en outre, com
+
+[id 22473]
+OLD: que la condition $b)$ entraîne que
+NEW: que la condition \emph{b)} entraîne que
+FRENCH CONTEXT (corrected):  \emph{c)} entraîne \emph{b)}. Le fait que \emph{a)} implique \emph{b)} montre aussitôt que \emph{a)} implique aussi \emph{d)}.
+
+Lorsque tout quotient d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est idéalement séparé pour $\mathfrak J$, il résulte de (19.5.5) que la condition \emph{b)} entraîne que $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière; en outre, comme $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^\bullet(M)$, est alors
+
+[id 22474]
+OLD: est $(\operatorname{gr}_{\mathfrak R}^*(M))$-régulière; en outre, comme $(\operatorname{gr}_{\mathfrak R}^*(M)\otimes_{A/\mathfrak R}(A/\mathfrak L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^*(M)$
+NEW: est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière; en outre, comme $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^\bullet(M)$
+FRENCH CONTEXT (corrected):  implique \emph{b)} montre aussitôt que \emph{a)} implique aussi \emph{d)}.
+
+Lorsque tout quotient d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est idéalement séparé pour $\mathfrak J$, il résulte de (19.5.5) que la condition \emph{b)} entraîne que $\mathbf f$ est $(\operatorname{gr}_{\mathfrak K}^\bullet(M))$-régulière; en outre, comme $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^\bullet(M)$, est alors un $(A/\mathfrak L)$-module plat, il en est de même de $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$, qui en est un facteur direct; cela prouve donc que \emph{b)} entraîne alors \emph{c)}. D'autre part, sous la 
+
+[id 22475]
+OLD: il en est de même de $\operatorname{gr}_{\mathfrak R}^*(M)\otimes_{A/\mathfrak R}(A/\mathfrak L)$, qui
+NEW: il en est de même de $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$, qui
+FRENCH CONTEXT (corrected): }_{\mathfrak K}^\bullet(M))$-régulière; en outre, comme $(\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^\bullet(M)$, est alors un $(A/\mathfrak L)$-module plat, il en est de même de $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$, qui en est un facteur direct; cela prouve donc que \emph{b)} entraîne alors \emph{c)}. D'autre part, sous la même hypothèse, \emph{c)} entraîne \emph{a)} en vertu de (\textbf{0}, 15.1.21) (où on peut remplacer l'hypothèse noethérienne par l'hypothèse que $M$ est 
+
+[id 22476]
+OLD: cela prouve donc que $b)$ entraîne alors $c)$. D'autre part, sous la même hypothèse, $c)$ entraîne $a)$ en vertu
+NEW: cela prouve donc que \emph{b)} entraîne alors \emph{c)}. D'autre part, sous la même hypothèse, \emph{c)} entraîne \emph{a)} en vertu
+FRENCH CONTEXT (corrected):  L))[T_1,\ldots,T_n]$, isomorphe à $\operatorname{gr}_{\mathfrak L}^\bullet(M)$, est alors un $(A/\mathfrak L)$-module plat, il en est de même de $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$, qui en est un facteur direct; cela prouve donc que \emph{b)} entraîne alors \emph{c)}. D'autre part, sous la même hypothèse, \emph{c)} entraîne \emph{a)} en vertu de (\textbf{0}, 15.1.21) (où on peut remplacer l'hypothèse noethérienne par l'hypothèse que $M$ est idéalement séparé pour $\mathfrak J$, en vertu de ($\mathbf{0}_{\mathrm{III}}$, 10.2.1)).
+
+Il reste donc à prouver que lorsque $A$ est noethérien, $M$ de type 
+
+[id 22477]
+OLD: ($0$, 15.1.21)
+NEW: (\textbf{0}, 15.1.21)
+FRENCH CONTEXT (corrected): e même de $\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L)$, qui en est un facteur direct; cela prouve donc que \emph{b)} entraîne alors \emph{c)}. D'autre part, sous la même hypothèse, \emph{c)} entraîne \emph{a)} en vertu de (\textbf{0}, 15.1.21) (où on peut remplacer l'hypothèse noethérienne par l'hypothèse que $M$ est idéalement séparé pour $\mathfrak J$, en vertu de ($\mathbf{0}_{\mathrm{III}}$, 10.2.1)).
+
+Il reste donc à prouver que lorsque $A$ est noethérien, $M$ de type fini et que les $f_i$ app
+
+[id 22479]
+OLD: de $A$, $d)$ entraîne $a)$.
+NEW: de $A$, \emph{d)} entraîne \emph{a)}.
+FRENCH CONTEXT (corrected):  l'hypothèse noethérienne par l'hypothèse que $M$ est idéalement séparé pour $\mathfrak J$, en vertu de ($\mathbf{0}_{\mathrm{III}}$, 10.2.1)).
+
+Il reste donc à prouver que lorsque $A$ est noethérien, $M$ de type fini et que les $f_i$ appartiennent au radical de $A$, \emph{d)} entraîne \emph{a)}.
+
+Il existe par hypothèse un $A$-module \emph{libre de type fini} $N$ et une suite exacte $0\to R\to N\to M\to0$. Il suffit de prouver que \emph{d)} entraîne \emph{b)}, puisque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est alor
+
+[id 22480]
+OLD: Il suffit de prouver que $d)$ entraîne $b)$, puisque
+NEW: Il suffit de prouver que \emph{d)} entraîne \emph{b)}, puisque
+FRENCH CONTEXT (corrected): te donc à prouver que lorsque $A$ est noethérien, $M$ de type fini et que les $f_i$ appartiennent au radical de $A$, \emph{d)} entraîne \emph{a)}.
+
+Il existe par hypothèse un $A$-module \emph{libre de type fini} $N$ et une suite exacte $0\to R\to N\to M\to0$. Il suffit de prouver que \emph{d)} entraîne \emph{b)}, puisque tout quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^p(M)$ est alors idéalement séparé pour $\mathfrak J$, en vertu du fait que $\operatorname{gr}_{\mathfrak K}^p(M)$ est un $A$-module de type fini, que $\mathfrak J$ est contenu dans le radica
+
+[id 22483]
+OLD: Comme par hypothèse la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak R}^*(A)$-régulière, elle est aussi $\operatorname{gr}_{\mathfrak R}^*(N)$-régulière
+NEW: Comme par hypothèse la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière, elle est aussi $\operatorname{gr}_{\mathfrak K}^\bullet(N)$-régulière
+FRENCH CONTEXT (corrected): M)$ est un $A$-module de type fini, que $\mathfrak J$ est contenu dans le radical de $A$, et que $A$ est noethérien (Bourbaki, \emph{Alg. comm.}, chap. III, § 5, n\textsuperscript{o} 1); en d'autres termes, il s'agit de voir que $\psi_M$ est \emph{bijectif}.
+
+Comme par hypothèse la suite $\mathbf f$ est $\operatorname{gr}_{\mathfrak K}^\bullet(A)$-régulière, elle est aussi $\operatorname{gr}_{\mathfrak K}^\bullet(N)$-régulière; on peut par suite appliquer (19.6.3), car tout module quotient d'un sous-module d'un $\operatorname{gr}_{\mathfrak K}^k(M)$ est alors séparé pour la topologie $\mathfrak J$-préadique puisque les $f_i$ appartiennent au radical de $A$ par hypothèse. Le diagram
+
+[id 22485]
+OLD: (\operatorname{gr}_{\mathfrak R}^*(R,N)\otimes_{A/\mathfrak R}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_R'} \ar[d] & \operatorname{gr}_{\mathfrak L}^*(R,N)
+NEW: (\operatorname{gr}_{\mathfrak K}^\bullet(R,N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_R'} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(R,N)
+FRENCH CONTEXT (corrected): \operatorname{gr}_{\mathfrak K}^k(M)$ est alors séparé pour la topologie $\mathfrak J$-préadique puisque les $f_i$ appartiennent au radical de $A$ par hypothèse. Le diagramme commutatif (19.6.2.1) s'écrit donc ici
+\begin{equation}
+\xymatrix{
+  & 0 \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(R,N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_R'} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(R,N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_N} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(
+
+[id 22486]
+OLD: (\operatorname{gr}_{\mathfrak R}^*(N)\otimes_{A/\mathfrak R}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_N} \ar[d] & \operatorname{gr}_{\mathfrak L}^*(N)
+NEW: (\operatorname{gr}_{\mathfrak K}^\bullet(N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_N} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(N)
+FRENCH CONTEXT (corrected):  (19.6.2.1) s'écrit donc ici
+\begin{equation}
+\xymatrix{
+  & 0 \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(R,N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_R'} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(R,N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_N} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_M} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(M) \ar[d] \\
+  0 & 0
+}
+\tag{19.7.1.1}\label{IV.19.7.1.1}
+\end{equation}
+où $\opera
+
+[id 22487]
+OLD: (\operatorname{gr}_{\mathfrak R}^*(M)\otimes_{A/\mathfrak R}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_M} \ar[d] & \operatorname{gr}_{\mathfrak L}^*(M)
+NEW: (\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_M} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(M)
+FRENCH CONTEXT (corrected): r]^-{\psi_R'} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(R,N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(N)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_N} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_M} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(M) \ar[d] \\
+  0 & 0
+}
+\tag{19.7.1.1}\label{IV.19.7.1.1}
+\end{equation}
+où $\operatorname{gr}_{\mathfrak K}^\bullet(R,N)$ (resp. $\operatorname{gr}_{\mathfrak L}^\bullet(R,N)$) est le gradué associé à $R$ pour la filtration des $R\cap\mathfrak K^mN$ (resp. $R\ca
+
+[id 22488]
+OLD: où $\operatorname{gr}_{\mathfrak R}^*(R,N)$ (resp. $\operatorname{gr}_{\mathfrak L}^*(R,N)$) est le gradué associé à $R$ pour la filtration des $R\cap\mathfrak R^mN$
+NEW: où $\operatorname{gr}_{\mathfrak K}^\bullet(R,N)$ (resp. $\operatorname{gr}_{\mathfrak L}^\bullet(R,N)$) est le gradué associé à $R$ pour la filtration des $R\cap\mathfrak K^mN$
+FRENCH CONTEXT (corrected): \bullet(N) \ar[d] \\
+  (\operatorname{gr}_{\mathfrak K}^\bullet(M)\otimes_{A/\mathfrak K}(A/\mathfrak L))[T_1,\ldots,T_n] \ar[r]^-{\psi_M} \ar[d] & \operatorname{gr}_{\mathfrak L}^\bullet(M) \ar[d] \\
+  0 & 0
+}
+\tag{19.7.1.1}\label{IV.19.7.1.1}
+\end{equation}
+où $\operatorname{gr}_{\mathfrak K}^\bullet(R,N)$ (resp. $\operatorname{gr}_{\mathfrak L}^\bullet(R,N)$) est le gradué associé à $R$ pour la filtration des $R\cap\mathfrak K^mN$ (resp. $R\cap\mathfrak L^mN$); rappelons que dans ce diagramme les colonnes sont exactes et que $\psi_N$
+\oldpage[IV-4]{214}
+est \emph{bijectif}. Il s'agit, en vertu de (19.6.3), de prouver que $\psi_R'$ est \emph{surjectif}, ce qui va être fait en plusieurs 
+

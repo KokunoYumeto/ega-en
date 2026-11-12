@@ -1,0 +1,9 @@
+- TRANSCRIPTION? (10.3.6) proof display — `\Gamma\bigl(\mathfrak{D}(f^n),(\mathfrak{J}^n)^\Delta\bigr)`: the chain concerns $\mathfrak{D}(f)$; expected `\mathfrak{D}(f)` (harmless, since $\mathfrak{D}(f^n)=\mathfrak{D}(f)$). Kept.
+- TRANSCRIPTION? proof of (10.5.4), affine case — cites (10.3.4) (restriction to $\mathfrak{D}(f)$), but the argument rests on the description of all ideals of definition of $\operatorname{Spf}(A)$ in (10.3.5); possibly (10.3.5) intended. Kept.
+- TRANSCRIPTION? proof of (10.5.6)(i) — `(\psi,\omega^b)`: EGA writes the adjoint as $\omega^\flat$ (cf. $\theta^\sharp$); `^b` is probably a rendering of `^\flat`. Kept.
+- TERM idéal premier ouvert → open prime ideal; catégorie duale → dual category; monomorphisme → monomorphism; sans topologie → without topology.
+- TERM $\mathfrak{S}$-préschéma formel, $A$-préschéma formel → formal $\mathfrak{S}$-prescheme, formal $A$-prescheme (10.4.7).
+- TERM ouvert formel affine adique / noethérien → adic / Noetherian affine formal open subset; voisinage ouvert formel affine → affine formal open neighbourhood (10.4.1–10.4.2).
+- TERM faisceau d'anneaux (topologiques) pseudo-discrets → pseudo-discrete sheaf of (topological) rings, following the glossary entry (10.1.1, 10.1.2, 10.5.3).
+- TERM n'est pas réduit à 0 → does not consist of 0 alone (after 10.1.6).
+- TERM Correction éditoriale (footnote label, 10.3.2) → Editorial correction.

@@ -1,0 +1,3302 @@
+# English hand pass, batch_051: 144 items on 17 printed pages
+
+=================== PAGE IV-3 37 ===================
+----- English, source_aligned/ega4-8.tex, page IV-3 36 -----
+\oldpage[IV-3]{36}
+finite presentation \sref{IV.1.6.2},~(i).
+It therefore suffices that $T'_j$ be of finite presentation over $U_j$; in other words, we may already reduce to the case where $U_j=S$ and $T_j=T$ is closed and constructible in $S$.
+
+Write $S=\operatorname{Spec}(A)$, and regard $A$ as the inductive limit of its finitely generated $\mathbf{Z}$-subalgebras, so that $S=\varprojlim S_\lambda$, where the $S_\lambda$ are affine and Noetherian.
+By \sref{IV.8.3.11}, there exist $\lambda$ and a closed (necessarily constructible) subset $T_\lambda$ of $S_\lambda$ such that $T=u_\lambda^{-1}(T_\lambda)$, where $u_\lambda:S\to S_\lambda$ is the canonical morphism.
+Give $T_\lambda$ a subprescheme structure and take $T'=T_\lambda\times_{S_\lambda}S$.
+Since the canonical immersion $T_\lambda\to S_\lambda$ is of finite presentation \sref{IV.1.6.1}, so is the immersion $T'\to S$.
+As $T'$ is affine, we see finally that it is enough to treat the case where $T'=S$ is affine.
+
+Then, with the notation of \sref{IV.8.9.1}, there exist $\lambda$, a morphism of finite type $u_\lambda:X_\lambda\to S_\lambda$, and a coherent $\sh{O}_{X_\lambda}$-Module $\sh{F}_\lambda$ such that $X$ is isomorphic to $X_\lambda\times_{S_\lambda}S$ and $\sh{F}$ to $\sh{F}_\lambda\otimes_{\sh{O}_{X_\lambda}}\sh{O}_X$.
+Applying \sref{IV.6.9.3} to $S_\lambda$, $X_\lambda$, and $\sh{F}_\lambda$, we obtain subpreschemes $S'_{\lambda i}$ of $S_\lambda$ whose underlying sets form a partition of $S_\lambda$ and which are such that, on putting $X_{\lambda i}=X_\lambda\times_{S_\lambda}S'_{\lambda i}$, the Module $\sh{F}_{\lambda i}=\sh{F}_\lambda\otimes_{\sh{O}_{X_\lambda}}\sh{O}_{X_{\lambda i}}$
+is flat over $S'_{\lambda i}$.
+The subpreschemes $S'_i=S'_{\lambda i}\times_{S_\lambda}S$ of $S$ then have the required properties by \sref{IV.2.1.4}.
+\end{proof}
+
+\subsection{Properties of permanence of morphisms by passage to the projective limit}
+\label{subsection:IV.8.10}
+
+In this section, we preserve the general hypotheses and the notations of \sref{IV.8.8.1}.
+
+\begin{proposition}[8.10.1]
+\label{IV.8.10.1}
+If there exists $\lambda$ such that, for $\mu\geqslant\lambda$, $f_\mu$ is an open morphism (resp.\ universally open), then $f$ is an open morphism (resp.\ universally open).
+\end{proposition}
+
+\begin{proof}
+As $X=X_\lambda\times_{Y_\lambda}Y$, the assertion relative to universally open morphisms is a particular case of \sref{IV.2.4.3},~(iii).
+Let us therefore suppose $f_\mu$ open for $\mu\geqslant\lambda$; it suffices to see that for every open \emph{quasi-compact} $U$ of $X$, $f(U)$ is open in $Y$.
+Now, there exists $\mu\geqslant\lambda$ such that $U=v_\mu^{-1}(U_\mu)$, where $U_\mu$ is an open quasi-compact in $X_\mu$ \sref{IV.2.3.11}; one has then $f(v_\mu^{-1}(U_\mu))=w_\mu^{-1}(f_\mu(U_\mu))$ \sref[I]{I.3.4.8}, hence $f(U)$ is open in $Y$.
+\end{proof}
+
+\begin{corollary}[8.10.2]
+\label{IV.8.10.2}
+Let $f:X\to Y$ be a morphism.
+For $f$ to be universally open, it suffices that, for every integer $n>0$, if one sets $Y_n=Y\otimes_\mathbf{Z}\mathbf{Z}[T_1,\ldots,T_n](=\mathbf{V}_Y^n)$, and $X_n=X\times_Y Y_n$, $f_n=f\times 1_{Y_n}:X_n\to Y_n$, the projection $f_n$ be an open morphism.
+\end{corollary}
+
+\begin{proof}
+To prove that $f$ is universally open, it suffices to prove that it remains so for every affine $U$ of $Y$; by hypothesis, if $U_n=U\otimes_\mathbf{Z}\mathbf{Z}[T_1,\ldots,T_n]$ is the inverse image of $U$ in $Y_n$, the morphism $f_n^{-1}(U_n)\to U_n$, restriction of $f_n$, is open, and one sees that one can restrict to the case where $Y=\operatorname{Spec}(A)$ is affine.
+Furthermore, it suffices evidently to show that for every morphism $Y'\to Y$, where $Y'=\operatorname{Spec}(A')$ is also \emph{affine}, $f'=f_{|Y'}$ is open.
+Let us suppose first that $A'$ is an $A$-algebra of finite type, hence a \emph{quotient} of a polynomial algebra $A[T_1,\ldots,T_n]$; then $Y'$ is a closed sub-prescheme of $Y_n$ and $f'$ the restriction
+----- English, source_aligned/ega4-8.tex, page IV-3 37 -----
+\oldpage[IV-3]{37}
+of $f_n$ to $f_n^{-1}(Y')$; but for every open $V$ of $X_n$, one has $f_n(V\cap f_n^{-1}(Y'))=f_n(V)\cap Y'$, and as by hypothesis $f_n(V)$ is open in $Y_n$, this shows that $f'$ is also an open morphism.
+When $A'$ is arbitrary, it can be considered as an inductive limit of its sub-$A$-algebras of finite type $A'_\lambda$, and the fact that $f'$ is an open morphism follows from the preceding and from \sref{IV.8.10.1}.
+\end{proof}
+
+\begin{proposition}[8.10.3]
+\label{IV.8.10.3}
+Suppose that there exists $\alpha$ such that: $1^\circ$ $S_\alpha$ is quasi-compact; $2^\circ$ the morphisms $X_\alpha\to S_\alpha$, $Y_\alpha\to S_\alpha$ are quasi-compact and the morphism $Y_\alpha\to S_\alpha$ quasi-separated; $3^\circ$ for $\alpha\leqslant\lambda\leqslant\mu$, the morphisms $u_{\lambda\mu}:S_\mu\to S_\lambda$ are flat; $4^\circ$ $\overline{f_\alpha(X_\alpha)}$ is constructible in $Y_\alpha$.
+Then, for $f$ to be dominant, it is necessary and sufficient that there exist $\lambda\geqslant\alpha$ such that $f_\lambda$ be dominant.
+\end{proposition}
+
+\begin{proof}
+The hypotheses imply that $Y_\alpha$ is quasi-compact and that the morphism $f_\alpha$ is quasi-compact \sref{IV.1.2.4}; hence $f_\alpha(X_\alpha)=Z_\alpha$ is pro-constructible \sref{IV.1.9.5},~(vii) in $Y_\alpha$.
+If one sets $Z_\lambda=w_{\alpha\lambda}^{-1}(Z_\alpha)$ for $\lambda\geqslant\alpha$ and $Z=w_\alpha^{-1}(Z_\alpha)$, we have $Z_\lambda=f_\lambda(X_\lambda)$ and $Z=f(X)$ \sref[I]{I.3.4.8}, and $Z_\lambda$ is pro-constructible in $Y_\lambda$ \sref{IV.1.9.5},~(vii).
+It suffices then to apply \sref{IV.8.3.13} by replacing $S_\lambda$, $Z'_\lambda$, and $Z''_\lambda$ by $Y_\lambda$, $Y_\lambda$, and $Z_\lambda$ respectively.
+\end{proof}
+
+\begin{proposition}[8.10.4]
+\label{IV.8.10.4}
+Suppose that there exists $\alpha$ such that $Y_\alpha$ is quasi-compact and $f_\alpha$ is of finite type and quasi-separated.
+For the morphism $f$ to be separated, it is necessary and sufficient that there exist $\lambda\geqslant\alpha$ such that $f_\lambda$ be separated.
+\end{proposition}
+
+\begin{proof}
+The question being local on $Y_\alpha$ (since $Y_\alpha$ is quasi-compact and $L$ filtered), one can restrict to the case where $Y_\alpha$ is affine, hence quasi-separated, and the hypothesis implies that $X_\alpha$ (hence the $X_\lambda$ and $X$) are quasi-compact and quasi-separated.
+Set $X'_\lambda=X_\lambda\times_{Y_\lambda}X_\lambda$ for $\lambda\geqslant\alpha$ and $X'=X\times_Y X$; one has $X'_\lambda=X'_\alpha\times_{Y_\alpha}Y_\lambda$ and $X'=X'_\alpha\times_{Y_\alpha}Y$. The first projection $X'_\alpha\to X_\alpha$ is quasi-compact and quasi-separated by hypothesis \sref{IV.1.2.3},~(iii), hence $X'_\lambda$ is quasi-compact and quasi-separated.
+Note now that if we denote by $\Delta_\lambda$ (resp.\ $\Delta$) the diagonal of $X_\lambda\times_{Y_\lambda}X_\lambda$ (resp.\ $X\times_Y X$), it results from \sref[I]{I.5.3.4} and \sref[I]{I.3.4.8} that $\Delta_\mu$ (resp.\ $\Delta$) is the inverse image of $\Delta_\lambda$ by the map $v'_{\lambda\mu}:X'_\mu\to X'_\lambda$ (resp.\ $v'_\lambda:X'\to X'_\lambda$).
+On the other hand, $\Delta_\lambda$ is \emph{constructible} in $X'_\lambda$: indeed, since $f_\lambda$ is quasi-separated, the diagonal immersion $X_\lambda\to X'_\lambda$ is quasi-compact, and locally of finite presentation since $f_\lambda$ is of finite type \sref[I]{I.1.4.3} and \sref[I]{I.1.5.4},~(iii); it results then from \sref{IV.1.8.4.1} that $\Delta_\lambda$ is locally constructible, hence constructible since $X'_\lambda$ is quasi-compact.
+One can now apply \sref{IV.8.3.12} by replacing $S_\lambda$ and $Z_\lambda$ by $X'_\lambda$ and $\Delta_\lambda$ respectively.
+\end{proof}
+
+\begin{theorem}[8.10.5]
+\label{IV.8.10.5}
+Suppose $S_0$ quasi-compact, $X_\alpha$ and $Y_\alpha$ of finite presentation over $S_\alpha$, and let $f_\alpha:X_\alpha\to Y_\alpha$ be an $S_\alpha$-morphism.
+Consider, for a morphism, the property of being:
+\begin{enumerate}[label=(\roman*)]
+\item an isomorphism;
+\item[\rm(i\,\emph{bis})] a monomorphism;
+\item an immersion;
+\item an open immersion;
+\item a closed immersion;
+\item separated;
+\item surjective;
+----- English, source_aligned/ega4-8.tex, page IV-3 38 -----
+\oldpage[IV-3]{38}
+\item radicial;
+\item affine;
+\item quasi-affine;
+\item finite;
+\item quasi-finite;
+\item proper.
+\end{enumerate}
+Then, if $\mathbf{P}$ denotes one of the preceding properties, for $f$ to possess the property $\mathbf{P}$, it is necessary and sufficient that there exist $\lambda\geqslant\alpha$ such that $f_\lambda$ possess the property $\mathbf{P}$ (in which case $f_\mu$ also possesses it for $\mu\geqslant\lambda$).
+
+If $S_0$ is furthermore supposed quasi-separated, the same conclusion holds when $\mathbf{P}$ is the property of being:
+\begin{enumerate}[label=(\roman*)]
+\setcounter{enumi}{12}
+\item projective;
+\item quasi-projective.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The case where $\mathbf{P}$ is one of the properties (i) or (v) was included in the statement only as a reminder; in these cases, the theorem follows from what has been proved respectively in \sref{IV.8.8.2.4} and \sref{IV.8.10.4}.
+Furthermore, taking into account \sref[I]{I.5.4.1} and \sref[I]{I.5.3.4}, (v) also results from (iv).
+The case (i\,\emph{bis}) follows immediately from (i), by using \sref[I]{I.5.3.8} and by noting (as we have already used in \sref{IV.8.10.4}) that the diagonal $\Delta_f$ is deduced from $\Delta_{f_\lambda}$ by the base change $S\to S_\lambda$.
+
+We will note on the other hand that (vi), (vii), and (xi) are in fact conditions on the \emph{fibres} $f^{-1}(y)$ of the morphisms considered, taking into account the transitivity of the fibres by base change \sref[I]{I.3.6.4}: condition (vi) means indeed that all the fibres must be non-empty, condition (vii) that they must be radicial \sref[I]{I.3.5.8}, and condition (xi) that they must be finite \sref[III]{III.6.2.2} and \sref[III]{III.6.2.3} and \sref[I]{I.6.4.4}, taking into account that $f$ and the $f_\lambda$ are morphisms of finite type by \sref{IV.1.5.4},~(v).
+The theorem in these three cases will be yet another consequence of a general result on this type of properties, which will be established in \sref{IV.9.3.3}; we therefore postpone until then the proof of the theorem in the case (xi) (of course, the reader will be able to verify that, except for n\textsuperscript{os}~{\hyperref[IV.8.11]{8.11}} and {\hyperref[IV.8.12]{8.12}}, we will make no use of the theorem in these cases until \sref{IV.9.3.3} and that \sref{IV.8.11} and \sref{IV.8.12} will not be used before \sref{IV.9.3.3}).
+
+For the cases that remain to be proved, one can restrict to proving that the condition of the statement is necessary, all the properties $\mathbf{P}$ considered being invariant by base change (see chap.~I\textsuperscript{er} and II for the references concerning each of these properties).
+One can furthermore suppose that $S_\alpha=S_0$ and that $Y_\alpha=S_\alpha$, hence $Y_\lambda=S_\lambda$ for every $\lambda\geqslant\alpha$.
+Finally, the properties (i) through (xii) are local on $S_0$, hence as $S_0$ is a finite union of open affines and $L$ filtered, one can restrict to proving them for $S_0=\operatorname{Spec}(A_0)$ \emph{affine} (hence quasi-separated).
+We shall denote by $A_\lambda$ (resp.\ $A$) the ring of $S_\lambda$ (resp.\ $S$).
+
+\emph{Cases} (ii), (iii), (iv): Suppose that $f$ is an immersion (resp.\ an open immersion, a closed immersion), and let $X'$ be the sub-prescheme (resp.\ induced on an open, resp.\ closed) of $S$ associated to $f$, which is therefore an $S$-prescheme of finite presentation.
+----- French corrections on page IV-3 37 -----
+[id 16048]
+OLD: soient plats~;
+NEW: soient \textup{plats}~;
+FRENCH CONTEXT (corrected): xtsuperscript{o} les morphismes $X_\alpha\to S_\alpha$,
+$Y_\alpha\to S_\alpha$ soient quasi-compacts et le morphisme
+$Y_\alpha\to S_\alpha$ quasi-séparé~; 3\textsuperscript{o} pour
+$\alpha\leq\lambda\leq\mu$, les morphismes
+$u_{\lambda\mu}:S_\mu\to S_\lambda$ soient \textup{plats}~; 4\textsuperscript{o}
+$\overline{f_\alpha(X_\alpha)}$ soit constructible dans $Y_\alpha$. Alors,
+pour que $f$ soit dominant, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ soit dominant.
+\end{proposition}
+
+\begin{proof}
+Les hypothèse
+
+[id 16049]
+OLD: (I, 1.2.4)
+NEW: (1.2.4)
+FRENCH CONTEXT (corrected): ,
+pour que $f$ soit dominant, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ soit dominant.
+\end{proposition}
+
+\begin{proof}
+Les hypothèses entraînent que $Y_\alpha$ est quasi-compact et que le morphisme
+$f_\alpha$ est quasi-compact (1.2.4)~; par suite
+$f_\alpha(X_\alpha)=Z_\alpha$ est pro-constructible (1.9.5,
+(vii)) dans $Y_\alpha$. Si l'on pose
+$Z_\lambda=w_{\alpha\lambda}^{-1}(Z_\alpha)$ pour $\lambda\geq\alpha$ et
+$Z=w_\alpha^{-1}(Z_\alpha)$, on a donc
+$Z_\lambda=f_\lambda(X_\lambda)$ et
+$Z
+
+[id 16051]
+OLD: (I, 1.9.5,
+(vii)) dans
+NEW: (1.9.5,
+(vii)) dans
+FRENCH CONTEXT (corrected): \geq\alpha$ tel que $f_\lambda$ soit dominant.
+\end{proposition}
+
+\begin{proof}
+Les hypothèses entraînent que $Y_\alpha$ est quasi-compact et que le morphisme
+$f_\alpha$ est quasi-compact (1.2.4)~; par suite
+$f_\alpha(X_\alpha)=Z_\alpha$ est pro-constructible (1.9.5,
+(vii)) dans $Y_\alpha$. Si l'on pose
+$Z_\lambda=w_{\alpha\lambda}^{-1}(Z_\alpha)$ pour $\lambda\geq\alpha$ et
+$Z=w_\alpha^{-1}(Z_\alpha)$, on a donc
+$Z_\lambda=f_\lambda(X_\lambda)$ et
+$Z=f(X)$ (\textbf{I}, 3.4.8) et $Z_\lambda$ est pro-constructible dans
+$Y_\lambda$ (1.
+
+[id 16055]
+OLD: , et $Z_\lambda$ est
+NEW:  et $Z_\lambda$ est
+FRENCH CONTEXT (corrected): alpha)=Z_\alpha$ est pro-constructible (1.9.5,
+(vii)) dans $Y_\alpha$. Si l'on pose
+$Z_\lambda=w_{\alpha\lambda}^{-1}(Z_\alpha)$ pour $\lambda\geq\alpha$ et
+$Z=w_\alpha^{-1}(Z_\alpha)$, on a donc
+$Z_\lambda=f_\lambda(X_\lambda)$ et
+$Z=f(X)$ (\textbf{I}, 3.4.8) et $Z_\lambda$ est pro-constructible dans
+$Y_\lambda$ (1.9.5, (vi)). Il suffit alors d'appliquer (8.3.13) en
+remplaçant $S_\lambda$, $Z'_\lambda$ et $Z''_\lambda$ par $Y_\lambda$,
+$Y_\lambda$ et $Z_\lambda$ respectivement.
+\end{proof}
+
+\begin{proposition}[8.10.4]
+\label{IV.8.10
+
+[id 16056]
+OLD: (I, 1.9.5, (vii)). Il suffit
+NEW: (1.9.5, (vi)). Il suffit
+FRENCH CONTEXT (corrected): ans $Y_\alpha$. Si l'on pose
+$Z_\lambda=w_{\alpha\lambda}^{-1}(Z_\alpha)$ pour $\lambda\geq\alpha$ et
+$Z=w_\alpha^{-1}(Z_\alpha)$, on a donc
+$Z_\lambda=f_\lambda(X_\lambda)$ et
+$Z=f(X)$ (\textbf{I}, 3.4.8) et $Z_\lambda$ est pro-constructible dans
+$Y_\lambda$ (1.9.5, (vi)). Il suffit alors d'appliquer (8.3.13) en
+remplaçant $S_\lambda$, $Z'_\lambda$ et $Z''_\lambda$ par $Y_\lambda$,
+$Y_\lambda$ et $Z_\lambda$ respectivement.
+\end{proof}
+
+\begin{proposition}[8.10.4]
+\label{IV.8.10.4-fr}
+Supposons qu'il existe $\alpha$ tel que $Y_\alpha$ so
+
+[id 16057]
+OLD: (I, 1.2.3, (iii))
+NEW: (1.2.3, (iii))
+FRENCH CONTEXT (corrected): ambda}X_\lambda$ pour
+$\lambda\geq\alpha$ et $X'=X\times_YX$~; on a
+$X'_\lambda=X'_\alpha\times_{Y_\alpha}Y_\lambda$ et
+$X'=X'_\alpha\times_{Y_\alpha}Y$~; le morphisme première projection
+$X'_\alpha\to X_\alpha$ est quasi-compact et quasi-séparé par hypothèse
+(1.2.3, (iii)), donc $X'_\lambda$ est quasi-compact et quasi-séparé.
+Notons maintenant que si l'on désigne par $\Delta_\lambda$ (resp. $\Delta$)
+la diagonale de $X_\lambda\times_{Y_\lambda}X_\lambda$ (resp. de
+$X\times_YX$), il résulte de (\textbf{I}, 5.3.4 et 3.4.8) que $\
+
+[id 16059]
+OLD: est
+constructible dans $X'_\lambda$~:
+NEW: est
+\emph{constructible} dans $X'_\lambda$~:
+FRENCH CONTEXT (corrected): X\times_YX$), il résulte de (\textbf{I}, 5.3.4 et 3.4.8) que $\Delta_\mu$ (resp.
+$\Delta$) est l'image réciproque de $\Delta_\lambda$ par l'application
+$v'_{\lambda\mu}:X'_\mu\to X'_\lambda$ (resp.
+$v'_\lambda:X'\to X'_\lambda$). D'autre part $\Delta_\lambda$ est
+\emph{constructible} dans $X'_\lambda$~: en effet, puisque $f_\lambda$ est
+quasi-séparé, l'immersion diagonale $X_\lambda\to X'_\lambda$ est
+quasi-compacte, et localement de présentation finie puisque $f_\lambda$ est
+de type fini (1.4.3 et 1.5.4, (iii))~; il résulte alors de (1.8.4.1) que
+$\Delta_\l
+
+[id 16060]
+OLD: (I, 4.3 et I, 5.4, (iii))
+NEW: (1.4.3 et 1.5.4, (iii))
+FRENCH CONTEXT (corrected): tre part $\Delta_\lambda$ est
+\emph{constructible} dans $X'_\lambda$~: en effet, puisque $f_\lambda$ est
+quasi-séparé, l'immersion diagonale $X_\lambda\to X'_\lambda$ est
+quasi-compacte, et localement de présentation finie puisque $f_\lambda$ est
+de type fini (1.4.3 et 1.5.4, (iii))~; il résulte alors de (1.8.4.1) que
+$\Delta_\lambda$ est localement constructible, donc constructible puisque
+$X'_\lambda$ est quasi-compact. On peut maintenant appliquer (8.3.12) en
+remplaçant $S_\lambda$ et $Z_\lambda$ par $X'_\lambda$ et $\Delta_\lambda$
+r
+
+[id 16062]
+OLD: \item[(i \emph{bis})]
+NEW: \item[\textup{(i \emph{bis})}]
+FRENCH CONTEXT (corrected):  $S_0$ quasi-compact, $X_\alpha$ et $Y_\alpha$ de présentation finie
+sur $S_\alpha$, et soit $f_\alpha:X_\alpha\to Y_\alpha$ un
+$S_\alpha$-morphisme. Considérons, pour un morphisme, la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(i)}] un isomorphisme~;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+
+[id 16063]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): présentation finie
+sur $S_\alpha$, et soit $f_\alpha:X_\alpha\to Y_\alpha$ un
+$S_\alpha$-morphisme. Considérons, pour un morphisme, la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(i)}] un isomorphisme~;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\
+
+[id 16064]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected):  soit $f_\alpha:X_\alpha\to Y_\alpha$ un
+$S_\alpha$-morphisme. Considérons, pour un morphisme, la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(i)}] un isomorphisme~;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\te
+
+[id 16065]
+OLD: \item[(iv)]
+NEW: \item[\textup{(iv)}]
+FRENCH CONTEXT (corrected): lpha$-morphisme. Considérons, pour un morphisme, la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(i)}] un isomorphisme~;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-
+
+[id 16067]
+OLD: \item[(vi)]
+NEW: \item[\textup{(vi)}]
+FRENCH CONTEXT (corrected): egin{enumerate}
+\item[\textup{(i)}] un isomorphisme~;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsym
+
+=================== PAGE IV-3 38 ===================
+----- (English page IV-3 37: shown above in this file) -----
+----- (English page IV-3 38: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 39 -----
+\oldpage[IV-3]{39}
+By virtue of \sref{IV.8.6.3}, there then exists $\lambda\geqslant\alpha$ and a sub-prescheme $X'_\lambda$ of $S_\lambda$, of finite presentation over $S_\lambda$, such that $X'$ is isomorphic to $X'_\lambda\times_{S_\lambda}S$.
+For every $\mu\geqslant\lambda$, $X'_\mu=X'_\lambda\times_{S_\lambda}S_\mu$ is therefore a sub-prescheme (resp.\ induced on an open, resp.\ closed) of $S_\mu$, and it results therefore from \sref{IV.8.8.2.4} and \sref{IV.8.8.2.5} that there exists $\mu\geqslant\lambda$ and an isomorphism $g_\mu:X_\mu\to X'_\mu$ such that $g=g_\mu\times 1_S$ is the isomorphism $X\to X'$ associated to $f$; whence the conclusion.
+
+\emph{Cases} (vi) \emph{and} (vii): We know \sref{IV.1.8.4.1} that $Z_\alpha=f_\alpha(X_\alpha)$ is constructible in $S_\alpha$; if we set $Z_\lambda=u_{\alpha\lambda}^{-1}(Z_\alpha)$ for $\lambda\geqslant\alpha$ and $Z=u_\alpha^{-1}(Z_\alpha)$, we have $Z_\lambda=f_\lambda(X_\lambda)$ and $Z=f(X)$ \sref[I]{I.3.4.8}.
+As $Z_\alpha$ is pro-constructible in $S_\alpha$, and by virtue of \sref{IV.8.3.11} the canonical map $\varinjlim\mathfrak{C}(S_\lambda)\to\mathfrak{C}(S)$ is injective, the relation $f(X)=S$ implies the existence of $\lambda\geqslant\alpha$ such that $f_\lambda(X_\lambda)=S_\lambda$, which proves the theorem in the case (vi).
+To prove it in case~(vii), note that the structural morphism $X_\alpha\times_{S_\alpha}X_\alpha\to S_\alpha$ is of finite presentation, since the first projection $X_\alpha\times_{S_\alpha}X_\alpha\to X_\alpha$ is so \sref{IV.1.6.2}. It is therefore enough, by \sref{IV.1.8.7.1}, to apply case~(vi) to the diagonal morphism $\Delta_{f_\alpha}:X_\alpha\longrightarrow X_\alpha\times_{S_\alpha}X_\alpha$,
+noting that $\Delta_{f_\lambda}=\Delta_{f_\alpha}\times1_{S_\lambda}$ and $\Delta_f=\Delta_{f_\alpha}\times1_S$ \sref[I]{I.5.3.4} and \sref[I]{I.3.3.11}.
+
+\emph{Cases} (viii) \emph{and} (ix): As $S=\operatorname{Spec}(A)$ is affine, to say that $f:X\to S$ is affine (resp.\ quasi-affine) means that there exists an integer $r$ and a closed immersion (resp.\ an immersion) $j:X\to\mathbf{V}^r_S=\operatorname{Spec}(A[T_1,\ldots,T_r])$ of $S$-preschemes, since $f$ is of finite type and $S$ quasi-compact \sref[II]{II.5.1.9}.
+As $\mathbf{V}^r_S=\mathbf{V}^r_{S_0}\times_{S_0}S$, and $\mathbf{V}^r_{S_0}$ is an $S_0$-prescheme of finite presentation, it results from \sref{IV.8.8.2},~(i) applied to the $S$-morphism $j$, that there exists $\lambda$ and an $S_\lambda$-morphism $j_\lambda:X_\lambda\to\mathbf{V}^r_{S_\lambda}$ such that $j=j_\lambda\times 1_S$; applying (iv) (resp.\ (ii)) to $j$, one deduces that there exists $\mu\geqslant\lambda$ such that $j_\mu$ is a closed immersion (resp.\ an immersion); hence $f_\mu$ is affine (resp.\ quasi-affine).
+
+\emph{Case} (x): By hypothesis, $X=\operatorname{Spec}(B)$, where $B$ is an $A$-algebra which is an $A$-module of finite presentation \sref{IV.1.4.7}; it results therefore from \sref{IV.8.5.2},~(ii) that there is $\lambda$ and an $A_\lambda$-\emph{module} of finite presentation $B_\lambda$ such that the $A$-\emph{module} $B$ is isomorphic to $B_\lambda\otimes_{A_\lambda}A$.
+The structure of $A$-algebra of $B$ is defined by an $A$-homomorphism $m:B\otimes_A B\to B$; as $B\otimes_A B=(B_\lambda\otimes_{A_\lambda}B_\lambda)\otimes_{A_\lambda} A$, there exists by \sref{IV.8.5.2},~(i) $\mu\geqslant\lambda$ and an $A_\mu$-homomorphism $m_\mu:B_\mu\otimes_{A_\mu}B_\mu\to B_\mu$ such that $m=m_\mu\otimes 1$.
+Considering the usual diagrams expressing the associativity and the commutativity of $m$, one sees by applying again \sref{IV.8.5.2},~(i) that one can suppose $\nu$ taken large enough so that $m_\nu$ defines on $B_\nu$ an associative and commutative multiplication.
+In the same way one can suppose $\nu$ large enough so that $B_\nu$ thus defined admits a unit element.
+If $X'_\nu=\operatorname{Spec}(B_\nu)$, it is clear then that $X$ is $S$-isomorphic to $X'_\nu\times_{S_\nu}S$, hence, by virtue of (i), there exists $\rho\geqslant\nu$ such that $X_\rho$ and $X'_\rho$ are $S_\rho$-isomorphic, which completes the proof in this case.
+
+To prove the theorem in the case (xii), we shall first prove the following proposition:
+\end{proof}
+
+\begin{proposition}[8.10.5.1]
+\label{IV.8.10.5.1}
+(Chow's lemma for morphisms of finite presentation). --- Let $\mathrm{A}$ be a ring, let $X$ and $Y$ be two $\mathrm{A}$-preschemes of finite presentation, and let $f:X\to Y$ be a separated $\mathrm{A}$-morphism. Then there exist two $\mathrm{A}$-preschemes $X'$ and $P$ of finite presentation, and $\mathrm{A}$-morphisms $p:P\to Y$, $j:X'\to P$, and $g:X'\to X$, such that the diagram
+----- French corrections on page IV-3 38 -----
+[id 16068]
+OLD: \item[(vii)]
+NEW: \item[\textup{(vii)}]
+FRENCH CONTEXT (corrected): ;
+\item[\textup{(i \emph{bis})}] un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour 
+
+[id 16069]
+OLD: \item[(viii)]
+NEW: \item[\textup{(viii)}]
+FRENCH CONTEXT (corrected): un monomorphisme~;
+\item[\textup{(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\bol
+
+[id 16070]
+OLD: \item[(ix)]
+NEW: \item[\textup{(ix)}]
+FRENCH CONTEXT (corrected): {(ii)}] une immersion~;
+\item[\textup{(iii)}] une immersion ouverte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suf
+
+[id 16072]
+OLD: \item[(xi)]
+NEW: \item[\textup{(xi)}]
+FRENCH CONTEXT (corrected): erte~;
+\item[\textup{(iv)}] une immersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possèd
+
+[id 16073]
+OLD: \item[(xii)]
+NEW: \item[\textup{(xii)}]
+FRENCH CONTEXT (corrected): mersion fermée~;
+\item[\textup{(v)}] séparé~;
+\item[\textup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(au
+
+[id 16075]
+OLD: si $\mathbf P$ désigne
+NEW: si $\boldsymbol{P}$ désigne
+FRENCH CONTEXT (corrected): extup{(vi)}] surjectif~;
+\oldpage[IV-3]{38}
+\item[\textup{(vii)}] radiciel~;
+\item[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+S
+
+[id 16076]
+OLD: la propriété $\mathbf P$, il faut
+NEW: la propriété $\boldsymbol{P}$, il faut
+FRENCH CONTEXT (corrected): m[\textup{(viii)}] affine~;
+\item[\textup{(ix)}] quasi-affine~;
+\item[\textup{(x)}] fini~;
+\item[\textup{(xi)}] quasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+Si $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymb
+
+[id 16077]
+OLD: la propriété $\mathbf P$
+(auquel
+NEW: la propriété $\boldsymbol{P}$
+(auquel
+FRENCH CONTEXT (corrected): uasi-fini~;
+\item[\textup{(xii)}] propre.
+\end{enumerate}
+
+Alors, si $\boldsymbol{P}$ désigne une des propriétés précédentes, pour que $f$
+possède la propriété $\boldsymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+Si $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymbol{P}$ est la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(xiii)}] projectif~;
+\item[\textup{(xiv)}] quas
+
+[id 16078]
+OLD: lorsque $\mathbf P$ est
+NEW: lorsque $\boldsymbol{P}$ est
+FRENCH CONTEXT (corrected): ymbol{P}$, il faut et il suffit qu'il existe
+$\lambda\geq\alpha$ tel que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+Si $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymbol{P}$ est la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(xiii)}] projectif~;
+\item[\textup{(xiv)}] quasi-projectif.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Le cas où $\boldsymbol{P}$ est l'une des propriétés (i) ou (v) n'a été inséré dans
+l'énoncé que pour
+
+[id 16079]
+OLD: \item[(xiii)]
+NEW: \item[\textup{(xiii)}]
+FRENCH CONTEXT (corrected): que $f_\lambda$ possède la propriété $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+Si $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymbol{P}$ est la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(xiii)}] projectif~;
+\item[\textup{(xiv)}] quasi-projectif.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Le cas où $\boldsymbol{P}$ est l'une des propriétés (i) ou (v) n'a été inséré dans
+l'énoncé que pour mémoire~; dans ces cas, le théorème découle de ce qui a été
+dé
+
+[id 16080]
+OLD: \item[(xiv)]
+NEW: \item[\textup{(xiv)}]
+FRENCH CONTEXT (corrected): é $\boldsymbol{P}$
+(auquel cas $f_\mu$ la possède aussi pour $\mu\geq\lambda$).
+
+Si $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymbol{P}$ est la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(xiii)}] projectif~;
+\item[\textup{(xiv)}] quasi-projectif.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Le cas où $\boldsymbol{P}$ est l'une des propriétés (i) ou (v) n'a été inséré dans
+l'énoncé que pour mémoire~; dans ces cas, le théorème découle de ce qui a été
+démontré respectivement dans (8.8.2.
+
+[id 16081]
+OLD: Le cas où $\mathbf P$ est
+NEW: Le cas où $\boldsymbol{P}$ est
+FRENCH CONTEXT (corrected): $S_0$ est en outre supposé quasi-séparé, la même conclusion est valable
+lorsque $\boldsymbol{P}$ est la propriété d'être~:
+\begin{enumerate}
+\item[\textup{(xiii)}] projectif~;
+\item[\textup{(xiv)}] quasi-projectif.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Le cas où $\boldsymbol{P}$ est l'une des propriétés (i) ou (v) n'a été inséré dans
+l'énoncé que pour mémoire~; dans ces cas, le théorème découle de ce qui a été
+démontré respectivement dans (8.8.2.4) et (8.10.4). D'ailleurs, compte tenu de
+(\textbf{I}, 5.4.1 et 5.3.4), (v) résulte aussi de
+
+[id 16087]
+OLD: (III, 6.2.2
+NEW: (\textbf{II}, 6.2.2
+FRENCH CONTEXT (corrected): es fibres par changement de base (\textbf{I}, 3.6.4)~: la condition (vi)
+signifie en effet que toutes les fibres doivent être non vides, la condition
+(vii) qu'elles doivent être radicielles (\textbf{I}, 3.5.8) et la condition (xi)
+qu'elles doivent être finies (\textbf{II}, 6.2.2 et 6.2.3 et \textbf{I}, 6.4.4, compte tenu de
+ce que $f$ et les $f_\lambda$ sont des morphismes de type fini par (1.5.4,
+(v)). Le théorème dans ces trois cas sera donc encore conséquence d'un
+résultat général sur ce type de propriétés ne concernant que les fi
+
+[id 16089]
+OLD: (I, 5.4,
+(v))
+NEW: (1.5.4,
+(v))
+FRENCH CONTEXT (corrected): es, la condition
+(vii) qu'elles doivent être radicielles (\textbf{I}, 3.5.8) et la condition (xi)
+qu'elles doivent être finies (\textbf{II}, 6.2.2 et 6.2.3 et \textbf{I}, 6.4.4, compte tenu de
+ce que $f$ et les $f_\lambda$ sont des morphismes de type fini par (1.5.4,
+(v)). Le théorème dans ces trois cas sera donc encore conséquence d'un
+résultat général sur ce type de propriétés ne concernant que les fibres, qui
+sera établi dans (9.3.3)~; nous repoussons donc jusqu'à ce moment-là la
+démonstration du théorème dans le cas (xi) (
+
+[id 16090]
+OLD: les propriétés $\mathbf P$
+envisagées
+NEW: les propriétés $\boldsymbol{P}$
+envisagées
+FRENCH CONTEXT (corrected): .11 et 8.12, nous ne ferons pas
+usage du théorème dans ce cas jusqu'à (9.3.3) et que (8.11) et (8.12) ne
+seront pas utilisés avant (9.3.3)).
+
+Pour les cas qui restent à démontrer, on peut se borner à prouver que la
+condition de l'énoncé est nécessaire, toutes les propriétés $\boldsymbol{P}$
+envisagées étant invariantes par changement de base (voir chap. I\textsuperscript{er}
+et II dans les numéros concernant chacune de ces propriétés). On peut en
+outre supposer que $S_\alpha=S_0$ et que $Y_\alpha=S_\alpha$, donc
+$Y_\lambda=S_\lambda$ pour tout $\lambda\geq
+
+[id 16091]
+OLD: est affine (donc quasi-séparé)
+NEW: est \emph{affine} (donc quasi-séparé)
+FRENCH CONTEXT (corrected): $Y_\lambda=S_\lambda$ pour tout $\lambda\geq\alpha$. Enfin, les propriétés
+(i) à (xii) sont locales sur $S_0$, donc, comme $S_0$ est réunion finie
+d'ouverts affines et $L$ filtrant, on peut se borner pour les démontrer au cas
+où $S_0=\operatorname{Spec}(A_0)$ est \emph{affine} (donc quasi-séparé). On désignera
+par $A_\lambda$ (resp. $A$) l'anneau de $S_\lambda$ (resp. $S$).
+
+\emph{Cas} (ii), (iii), (iv)~: Supposons que $f$ soit une immersion (resp.
+une immersion ouverte, resp. une immersion fermée), et soit $X'$ le
+sous-préschéma (resp. induit sur un 
+
+=================== PAGE IV-3 39 ===================
+----- (English page IV-3 38: shown above in this file) -----
+----- (English page IV-3 39: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 40 -----
+\oldpage[IV-3]{40}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X' \arrow[r,"j"] \arrow[d,"g"'] & P \arrow[d,"p"] \\
+X \arrow[r,"f"'] & Y
+\end{tikzcd}
+\]
+is commutative, and such that: $1^\circ$ $p$ is projective; $2^\circ$ $g$ is projective and surjective; $3^\circ$ $j$ is an open immersion.
+\end{proposition}
+
+\begin{proof}
+Choose $\mathrm{A}_0\subset\mathrm{A}$, $X_0$, $Y_0$, and $f_0$ as in \sref{IV.8.9.1}, with $Y_0$ Noetherian and $f_0$ of finite type; by \sref{IV.8.10.4}, one may moreover suppose that $f_0$ is separated. Chow's lemma \sref[II]{II.5.6.1} then gives morphisms of finite type $p_0:P_0\to Y_0$, $g_0:X'_0\to X_0$, and $j_0:X'_0\to P_0$ such that
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X'_0 \arrow[r,"j_0"] \arrow[d,"g_0"'] & P_0 \arrow[d,"p_0"] \\
+X_0 \arrow[r,"f_0"'] & Y_0
+\end{tikzcd}
+\]
+is commutative, $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. The assertions follow from the invariance of these properties under base change \sref[II]{II.5.5.5},~(iii), \sref[I]{I.3.5.2}, and \sref[I]{I.4.3.2}.
+\end{proof}
+
+\begin{proof}[Continuation of the proof of \sref{IV.8.10.5}]
+\emph{Case (xii).} Apply \sref{IV.8.10.5.1} to $f_0:X_0\to S_0$. We obtain a commutative diagram
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X'_0 \arrow[r,"j_0"] \arrow[d,"g_0"'] & P_0 \arrow[d,"p_0"] \\
+X_0 \arrow[r,"f_0"'] & S_0
+\end{tikzcd}
+\]
+where $p_0$ is projective, $g_0$ is projective and surjective, and $j_0$ is an open immersion. For each $\lambda$ one obtains the analogous diagram in which $p_\lambda=p_0\times1_{S_\lambda}$, $g_\lambda=g_0\times1_{S_\lambda}$, and $j_\lambda=j_0\times1_{S_\lambda}$ have the same respective properties, and similarly for the inverse-limit morphisms $p=p_0\times1_S$, $g=g_0\times1_S$, and $j=j_0\times1_S$. Since $g$ is proper \sref[II]{II.5.5.3}, so is $p\circ j=f\circ g$ \sref[II]{II.5.4.2}; and since $p$ is separated, $j$ is proper, hence a closed immersion. Apply case~(iv) to $j$, noting that $X'_0$ and $P_0$ are $S_0$-preschemes of finite presentation by \sref{IV.8.10.5.1} and \sref{IV.1.6.2}. There exists $\lambda$ such that $j_\lambda$ is a closed immersion, hence proper \sref[II]{II.5.4.2}. Thus $f_\lambda\circ g_\lambda=p_\lambda\circ j_\lambda$
+is proper \sref[II]{II.5.5.3} and \sref[II]{II.5.4.2}. Since $g_\lambda$ is surjective and, by the hypothesis on $f$ and case~(v), $f_\lambda$ may be supposed separated, \sref[II]{II.5.4.3} shows that $f_\lambda$ is proper.
+
+\emph{Cases (xiii) and (xiv).} By case~(xii) and \sref[II]{II.5.5.3}, which applies because the $S_\lambda$ are quasi-compact and quasi-separated by \sref{IV.1.7.19}, it is enough to consider the case where $f$ is quasi-projective. Suppose there is an invertible $\sh{O}_X$-Module $\sh{L}$ which is ample for $f$. Since $S_0$ is quasi-compact and quasi-separated, so is $X_0$ \sref{IV.1.2.3}; hence there are $\lambda$ and a quasi-coherent $\sh{O}_{X_\lambda}$-Module $\sh{L}_\lambda$ of finite presentation such that $\sh{L}=v_\lambda^*(\sh{L}_\lambda)$ \sref{IV.8.5.2},~(ii). By \sref{IV.8.5.5}, one may moreover suppose $\sh{L}_\lambda$ invertible. The assertion now follows from the more precise lemma below.
+
+\begin{lemma}[8.10.5.2]
+\label{IV.8.10.5.2}
+----- French corrections on page IV-3 39 -----
+[id 16093]
+OLD: \emph{Cas (vi) et (vii)}
+NEW: \emph{Cas} (vi) \emph{et} (vii)
+FRENCH CONTEXT (corrected):  $S_\mu$, de présentation finie sur
+$S_\mu$, et il résulte donc de (8.8.2.4) et (8.8.2.5) qu'il existe un
+$\mu\geq\lambda$ et un isomorphisme $g_\mu:X_\mu\to X'_\mu$ tel que
+$g=g_\mu\times1_S$ soit l'isomorphisme $X\to X'$ associé à $f$~; d'où la
+conclusion.
+
+\emph{Cas} (vi) \emph{et} (vii)~: On sait (1.8.4.1) que
+$Z_\alpha=f_\alpha(X_\alpha)$ est constructible dans $S_\alpha$~; si l'on
+pose $Z_\lambda=u_{\alpha\lambda}^{-1}(Z_\alpha)$ pour $\lambda\geq\alpha$
+et $Z=u_\alpha^{-1}(Z_\alpha)$, on a $Z_\lambda=f_\lambda(X_\lambda)$ et
+$Z=f(X)$ (\te
+
+[id 16096]
+OLD: \emph{Cas (viii) et (ix)}
+NEW: \emph{Cas} (viii) \emph{et} (ix)
+FRENCH CONTEXT (corrected): as (vi) du théorème au morphisme diagonal
+$\Delta_{f_\alpha}:X_\alpha\to X_\alpha\times_{S_\alpha}X_\alpha$ en notant
+que l'on a $\Delta_{f_\lambda}=\Delta_{f_\alpha}\times1_{S_\lambda}$ et
+$\Delta_f=\Delta_{f_\alpha}\times1_S$ (\textbf{I}, 5.3.4 et 3.3.11).
+
+\emph{Cas} (viii) \emph{et} (ix)~: Comme $S=\operatorname{Spec}(A)$ est affine, dire
+que $f:X\to S$ est affine (resp. quasi-affine) signifie qu'il existe un entier
+$r$ et une immersion fermée (resp. une immersion)
+$j:X\to\mathbf V_S^r=\operatorname{Spec}(A[T_1,\ldots,T_r])$ de
+$S$-préschémas
+
+[id 16098]
+OLD: \emph{Cas (x)}
+NEW: \emph{Cas} (x)
+FRENCH CONTEXT (corrected): mathbf V_{S_\lambda}^r$ tel que
+$j=j_\lambda\times1_S$~; appliquant alors (iv) (resp. (ii)) à $j$, on en
+déduit qu'il existe $\mu\geq\lambda$ tel que $j_\mu$ soit une immersion
+fermée (resp. une immersion)~; par suite $f_\mu$ est affine (resp.
+quasi-affine).
+
+\emph{Cas} (x)~: Par hypothèse, on a $X=\operatorname{Spec}(B)$, où $B$ est
+une $A$-algèbre qui est un $A$-module de présentation finie (1.4.7)~; il
+résulte donc de (8.5.2, (ii)) qu'il y a un $\lambda$ et un $A_\lambda$-\emph{module}
+de présentation finie $B_\lambda$ tels q
+
+=================== PAGE IV-3 40 ===================
+----- (English page IV-3 39: shown above in this file) -----
+----- (English page IV-3 40: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 41 -----
+\oldpage[IV-3]{41}
+Suppose that $S_0$ is quasi-compact, and let $\sh{L}_\lambda$ be an invertible $\sh{O}_{X_\lambda}$-Module. For $\sh{L}$ to be ample for $f$ (resp.\ very ample for $f$), it is necessary and sufficient that there exist $\mu\geqslant\lambda$ such that $\sh{L}_\mu$ is ample for $f_\mu$ (resp.\ very ample for $f_\mu$).
+\end{lemma}
+
+\begin{proof}
+The condition is plainly sufficient \sref[II]{II.4.4.10} and \sref[II]{II.4.6.13}. Conversely, since the $S_\lambda$ are quasi-compact and the $f_\lambda$ are of finite type, after replacing $\sh{L}$ by a suitable tensor power, one may reduce to the case where $\sh{L}$ is very ample \sref[II]{II.4.6.11}. The question is local on $S_0$ by \sref[II]{II.4.4.5} and the fact that $L$ is filtered, so one may suppose that $S_0$, and hence $S$, is affine. By \sref[II]{II.4.4.1},~(ii) and \sref[II]{II.4.1.2}, there is an $S$-immersion
+\[
+  j:X\longrightarrow\mathbf{P}^r_S=P
+\]
+such that $\sh{L}\simeq j^*(\sh{O}_P(1))$. By \sref{IV.8.8.2},~(i), case~(ii), and \sref[II]{II.4.1.3}, there exist $\mu\geqslant\lambda$ and an immersion $j_\mu:X_\mu\to\mathbf{P}^r_{S_\mu}=P_\mu$ such that $j=j_\mu\times1_S$. Then \sref[II]{II.4.1.3.2} and \sref{IV.8.5.2.5} give $\nu\geqslant\mu$ such that
+\[
+  \sh{L}_\nu\simeq j_\nu^*(\sh{O}_{P_\nu}(1)),
+\]
+which shows that $\sh{L}_\nu$ is very ample for $f_\nu$ \sref[II]{II.4.4.2}.
+\end{proof}
+\end{proof}
+
+\subsection{Application to quasi-finite morphisms}
+\label{subsection:IV.8.11}
+\label{IV.8.11}
+
+We propose in this section to prove the two following theorems:
+
+\begin{theorem}[8.11.1]
+\label{IV.8.11.1}
+Let $f:X\to Y$ be a proper morphism, locally of finite presentation, and quasi-finite.
+Then the morphism $f$ is finite.
+\end{theorem}
+
+\begin{theorem}[8.11.2]
+\label{IV.8.11.2}
+Let $f:X\to Y$ be a morphism locally of finite presentation, quasi-finite and separated.
+Then the morphism $f$ is quasi-affine, and a fortiori quasi-projective.
+\end{theorem}
+
+\begin{remark}[8.11.3]
+\label{IV.8.11.3}
+We will see below that one can reduce, for the proof of \sref{IV.8.11.1} and \sref{IV.8.11.2}, to the case where $Y$ is locally Noetherian; one will note that in this case one will thus obtain another proof of the theorem of Chevalley \sref[III]{III.4.4.2}.
+\end{remark}
+
+\begin{env}[8.11.4]
+\label{IV.8.11.4}
+The hypotheses and the conclusions of \sref{IV.8.11.1} and \sref{IV.8.11.2} are all local on $Y$.
+Indeed, this follows from \sref{IV.1.6.1}, \sref{IV.1.2.6}, \sref[II]{II.5.1.1}, \sref[II]{II.5.4.1}, and \sref[II]{II.6.2.2}.
+Therefore one can suppose $Y=\operatorname{Spec}(A)$ affine.
+One knows that there then exists a subring $A_0$ of $A$, which is a $\bb{Z}$-algebra of finite type, and a morphism of finite type $f_0:X_0\to\operatorname{Spec}(A_0)$ such that $X$ identifies with $X_0\otimes_{A_0}A$ and $f$ with $f_0\times 1$ \sref{IV.8.9.1}.
+Furthermore, $A$ can be considered as inductive limit of its subrings containing $A_0$ and which are $\bb{Z}$-algebras of finite type; using the method of \sref{IV.8.1.2},~$c$)) as well as \sref{IV.8.10.5},~(v),~(xi) and (xii)), one sees that it suffices to prove the theorems \sref{IV.8.11.1} and \sref{IV.8.11.2} for $f_0$.
+Suppose henceforth $Y$ Noetherian; using now the method of \sref{IV.8.1.2},~$a$)) as well as \sref{IV.8.10.5},~(v),~(ix),~(x),~(xi) and (xii)) one can replace $Y$ by $\operatorname{Spec}(\sh{O}_y)$, where $y$ is an
+----- French corrections on page IV-3 40 -----
+[id 16101]
+OLD: 1\textsuperscript{o} $p$
+NEW: \textup{1\textsuperscript{o}} $p$
+FRENCH CONTEXT (corrected): tion finie, et des $A$-morphismes $p:P\to Y$, $j:X'\to P$,
+$g:X'\to X$, tels que le diagramme
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X' \arrow[r,"j"] \arrow[d,"g"'] & P \arrow[d,"p"] \\
+X \arrow[r,"f"'] & Y
+\end{tikzcd}
+\]
+soit commutatif, et que~: \textup{1\textsuperscript{o}} $p$ soit projectif~;
+\textup{2\textsuperscript{o}} $g$ soit projectif et surjectif~;
+\textup{3\textsuperscript{o}} $j$ soit une immersion ouverte.
+\end{proposition}
+
+\begin{proof}
+En effet, soient $A_0\subset A$, $X_0$, $Y_0$ et $f_0$ déterminés comme dans
+(8.9.1
+
+[id 16102]
+OLD: 2\textsuperscript{o} $g$
+NEW: \textup{2\textsuperscript{o}} $g$
+FRENCH CONTEXT (corrected): \to P$,
+$g:X'\to X$, tels que le diagramme
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X' \arrow[r,"j"] \arrow[d,"g"'] & P \arrow[d,"p"] \\
+X \arrow[r,"f"'] & Y
+\end{tikzcd}
+\]
+soit commutatif, et que~: \textup{1\textsuperscript{o}} $p$ soit projectif~;
+\textup{2\textsuperscript{o}} $g$ soit projectif et surjectif~;
+\textup{3\textsuperscript{o}} $j$ soit une immersion ouverte.
+\end{proposition}
+
+\begin{proof}
+En effet, soient $A_0\subset A$, $X_0$, $Y_0$ et $f_0$ déterminés comme dans
+(8.9.1) de sorte que $Y_0$ est noethérien et $f_0$ de typ
+
+[id 16103]
+OLD: 3\textsuperscript{o} $j$
+NEW: \textup{3\textsuperscript{o}} $j$
+FRENCH CONTEXT (corrected): umn sep=large,row sep=large]
+X' \arrow[r,"j"] \arrow[d,"g"'] & P \arrow[d,"p"] \\
+X \arrow[r,"f"'] & Y
+\end{tikzcd}
+\]
+soit commutatif, et que~: \textup{1\textsuperscript{o}} $p$ soit projectif~;
+\textup{2\textsuperscript{o}} $g$ soit projectif et surjectif~;
+\textup{3\textsuperscript{o}} $j$ soit une immersion ouverte.
+\end{proposition}
+
+\begin{proof}
+En effet, soient $A_0\subset A$, $X_0$, $Y_0$ et $f_0$ déterminés comme dans
+(8.9.1) de sorte que $Y_0$ est noethérien et $f_0$ de type fini~; on peut en
+outre supposer $f_0$ séparé d'après (8.10.4)
+
+[id 16108]
+OLD: \emph{Cas (xii)}
+NEW: \emph{Cas} (xii)
+FRENCH CONTEXT (corrected): if, $g_0$ projectif et surjectif et
+$j_0$ une immersion ouverte. Les propriétés de l'énoncé résultent alors de
+l'invariance des propriétés précédentes par changement de base (\textbf{II}, 5.5.5,
+(iii) et \textbf{I}, 3.5.2 et 4.3.2).
+\end{proof}
+
+\begin{proof}
+\emph{Cas} (xii)~: Appliquons au morphisme $f_0:X_0\to S_0$ la prop.
+(8.10.5.1)~: on a donc un diagramme commutatif
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X'_0 \arrow[r,"j_0"] \arrow[d,"g_0"'] & P_0 \arrow[d,"p_0"] \\
+X_0 \arrow[r,"f_0"'] & S_0
+\end{tikzcd}
+\]
+où $
+
+[id 16111]
+OLD: donc une immersion fermée~;
+NEW: donc une \emph{immersion fermée}~;
+FRENCH CONTEXT (corrected): priétés, et de même pour les morphismes limites
+projectives $p=p_0\times1_S$, $g=g_0\times1_S$, $j=j_0\times1_S$. Comme $g$
+est propre (\textbf{II}, 5.5.3), il en est de même de $p\circ j=f\circ g$ (\textbf{II}, 5.4.2)
+et comme $p$ est séparé, $j$ est propre, donc une \emph{immersion fermée}~;
+appliquant le cas (iv) au morphisme $j$ (en notant que $X'_0$ et $P_0$ sont
+des $S_0$-préschémas de présentation finie (8.10.5.1 et 1.6.2)), on voit
+qu'il existe $\lambda$ tel que $j_\lambda$ soit une immersion fermée, donc
+soit propre (\textbf{II}, 5.4.2). M
+
+[id 16115]
+OLD: \emph{Cas (xiii) et (xiv)}
+NEW: \emph{Cas} (xiii) \emph{et} (xiv)
+FRENCH CONTEXT (corrected): \lambda=j_\lambda\circ p_\lambda$ est propre (\textbf{II}, 5.5.3 et
+5.4.2) et comme $g_\lambda$ est surjectif, et qu'on peut supposer $f_\lambda$
+séparé en vertu de l'hypothèse sur $f$ et de (v), il résulte de (\textbf{II}, 5.4.3)
+que $f_\lambda$ est propre.
+
+\emph{Cas} (xiii) \emph{et} (xiv)~: En vertu de (xii) et de (\textbf{II}, 5.5.3) (qui est
+applicable puisque les $S_\lambda$ sont quasi-compacts et quasi-séparés,
+compte tenu de (1.7.19)), il suffit de
+\oldpage[IV-3]{41}
+considérer le cas où $f$ est quasi-projectif. Supposons donc qu'il exist
+
+=================== PAGE IV-3 41 ===================
+----- (English page IV-3 40: shown above in this file) -----
+----- (English page IV-3 41: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 42 -----
+\oldpage[IV-3]{42}
+arbitrary point of $Y$, so one can finally suppose that $Y=\operatorname{Spec}(A)$, where $A$ is a \emph{local Noetherian ring}.
+Let $\mathfrak{m}$ be the maximal ideal of $A$, and let $\hat{A}$ be the completion of $A$ for the $\mathfrak{m}$-adic topology. The ring $\hat{A}$ is Noetherian local and $\operatorname{Spec}(\hat{A})\to\operatorname{Spec}(A)$ is faithfully flat and quasi-compact \sref[0]{0.7.3.5}; applying \sref{IV.2.7.1},~(i), (vii), (xiv), (xv) and (xvi), we may therefore reduce to the case where $A$ is \emph{complete}.
+It then follows from \sref[II]{II.6.2.6} that $X=X'\sqcup X''$, where $X'$ is a finite $Y$-scheme and $X''$ a quasi-finite $Y$-scheme such that $X''\cap f^{-1}(y)=\varnothing$.
+\end{env}
+
+Let us first place ourselves in the hypotheses of \sref{IV.8.11.1}; as $f$ is proper, $X''$, which is closed in $X$, is proper over $Y$ \sref[II]{II.5.4.10}, so $f(X'')$ is closed in $Y$; but $y$ is not contained in $f(X'')$, and moreover $y$ is adherent to every point of $Y$, so $f(X'')=\varnothing$, and consequently $X''$ is empty and $f$ is \emph{finite}.
+
+Let us now place ourselves in the hypotheses of \sref{IV.8.11.2} and, restricting ourselves further (as one can do from what precedes) to the case where $Y=\operatorname{Spec}(A)$ is affine and Noetherian of finite dimension, let us moreover reason by induction on the dimension of $Y$.
+Reducing as above to the case where $A$ is furthermore local and complete, one has $\dim(\sh{O}_y)=\dim(A)=\dim(Y)$ and for all $z\neq y$, $\dim(\sh{O}_z)<\dim(\sh{O}_y)$, so $\dim(Y\setmin\{y\})<\dim(Y)$.
+Now, by hypothesis one has $f(X'')\subset Y\setmin\{y\}$ and the restriction of $f$ to $X''$ is evidently a quasi-finite and separated morphism; applying the hypothesis of induction to $Y\setmin\{y\}$ and to $X''$, one sees that $X''$ is quasi-affine over $Y\setmin\{y\}$; but the open subset $Y\setmin\{y\}$ being quasi-affine over $Y$ since $Y$ is Noetherian, $X''$ is also quasi-affine over $Y$ \sref[II]{II.5.1.10},~(ii)); as moreover $X'$ is finite (and \emph{a fortiori} affine) over $Y$, $X$ is quasi-affine over $Y$ \sref[II]{II.4.6.17} and \sref[II]{II.5.1.2},~$c'$)).
+
+\begin{proposition}[8.11.5]
+\label{IV.8.11.5}
+Let $f:X\to Y$ be a morphism of finite presentation.
+The following properties are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $f$ is a closed immersion.
+  \item $f$ is a proper monomorphism.
+  \item $f$ is proper and for all $y\in Y$, $f^{-1}(y)$ is radicial and geometrically reduced over $\boldsymbol{k}(y)$ (that is to say empty or $\boldsymbol{k}(y)$-isomorphic to $\operatorname{Spec}(\boldsymbol{k}(y))$).
+\end{enumerate}
+\end{proposition}
+
+It is clear that \emph{a)} implies \emph{b)}.
+To see that \emph{b)} implies \emph{c)}, let us note \sref[I]{I.3.3.12} that for all $y\in Y$, the morphism $f^{-1}(y)\to\operatorname{Spec}(\boldsymbol{k}(y))$ deduced from $f$ by extension of the base is a monomorphism, hence injective, and consequently $f^{-1}(y)$ is empty or reduced to a point, and in every case affine.
+Furthermore, if $A$ is the ring of $f^{-1}(y)$, the canonical homomorphism $A\otimes_k A\to A$ is bijective \sref[I]{I.5.3.8}.
+This evidently implies that $A=k$, for otherwise there would exist an element $a\in A$ not in $k$ and the images of $a\otimes 1$ and of $1\otimes a$ in $A$ would both be equal to $a$, whereas $a\otimes 1\neq1\otimes a$ since $1$ and $a$ form a free system over $k$.
+
+It remains to prove that \emph{c)} implies \emph{a)}.
+It follows first from \sref{IV.8.11.1} that $f$ is a \emph{finite} morphism, so $X=\operatorname{Spec}(\sh{A})$, where $\sh{A}$ is a finite $\sh{O}_Y$-Algebra.
+It suffices therefore to prove that the canonical homomorphism $\sh{O}_Y\to\sh{A}$ is \emph{surjective} \sref[II]{II.1.4.10}, or equivalently that for all $y\in Y$, the homomorphism $\sh{O}_y\to\sh{A}_y$ is surjective.
+But by hypothesis
+----- French corrections on page IV-3 41 -----
+[id 16117]
+OLD: (8.5.5) on peut
+NEW: (8.5.5), on peut
+FRENCH CONTEXT (corrected): i-séparé il en est de même de $X_0$ (1.2.3), et il y
+a donc un $\lambda$ et un $\mathcal O_{X_\lambda}$-Module quasi-cohérent
+$\mathcal L_\lambda$ de présentation finie tel que
+$\mathcal L=v_\lambda^*(\mathcal L_\lambda)$ (8.5.2, (ii))~; en outre, en
+vertu de (8.5.5), on peut supposer $\mathcal L_\lambda$ \emph{inversible}. Le théorème
+dans ce cas est alors conséquence du lemme plus précis suivant~:
+
+\begin{lemma}[8.10.5.2]
+\label{IV.8.10.5.2-fr}
+Supposons $S_0$ quasi-compact, et soit $\mathcal L_\lambda$ un
+$\mathcal O_{X_\lambda
+
+[id 16118]
+OLD: inversible. Le théorème
+NEW: \emph{inversible}. Le théorème
+FRENCH CONTEXT (corrected):  il y
+a donc un $\lambda$ et un $\mathcal O_{X_\lambda}$-Module quasi-cohérent
+$\mathcal L_\lambda$ de présentation finie tel que
+$\mathcal L=v_\lambda^*(\mathcal L_\lambda)$ (8.5.2, (ii))~; en outre, en
+vertu de (8.5.5), on peut supposer $\mathcal L_\lambda$ \emph{inversible}. Le théorème
+dans ce cas est alors conséquence du lemme plus précis suivant~:
+
+\begin{lemma}[8.10.5.2]
+\label{IV.8.10.5.2-fr}
+Supposons $S_0$ quasi-compact, et soit $\mathcal L_\lambda$ un
+$\mathcal O_{X_\lambda}$-Module inversible. Pour que $\mathcal L$ soit un
+$\mathcal
+
+[id 16119]
+OLD: lemme plus précis suivant.
+NEW: lemme plus précis suivant~:
+FRENCH CONTEXT (corrected): i-cohérent
+$\mathcal L_\lambda$ de présentation finie tel que
+$\mathcal L=v_\lambda^*(\mathcal L_\lambda)$ (8.5.2, (ii))~; en outre, en
+vertu de (8.5.5), on peut supposer $\mathcal L_\lambda$ \emph{inversible}. Le théorème
+dans ce cas est alors conséquence du lemme plus précis suivant~:
+
+\begin{lemma}[8.10.5.2]
+\label{IV.8.10.5.2-fr}
+Supposons $S_0$ quasi-compact, et soit $\mathcal L_\lambda$ un
+$\mathcal O_{X_\lambda}$-Module inversible. Pour que $\mathcal L$ soit un
+$\mathcal O_X$-Module ample pour $f$ \textup{(resp.} très ample pour $f$\t
+
+[id 16120]
+OLD: (resp. très ample pour $f$)
+NEW: \textup{(resp.} très ample pour $f$\textup{)}
+FRENCH CONTEXT (corrected): quence du lemme plus précis suivant~:
+
+\begin{lemma}[8.10.5.2]
+\label{IV.8.10.5.2-fr}
+Supposons $S_0$ quasi-compact, et soit $\mathcal L_\lambda$ un
+$\mathcal O_{X_\lambda}$-Module inversible. Pour que $\mathcal L$ soit un
+$\mathcal O_X$-Module ample pour $f$ \textup{(resp.} très ample pour $f$\textup{)}, il faut et
+il suffit qu'il existe $\mu\geq\lambda$ tel que $\mathcal L_\mu$ soit ample
+pour $f_\mu$ \textup{(resp.} très ample pour $f_\mu$\textup{)}.
+\end{lemma}
+
+La condition étant évidemment suffisante (\textbf{II}, 4.4.10 et 4.6.13), montrons
+qu'elle est
+
+[id 16121]
+OLD: (resp. très ample pour $f_\mu$)
+NEW: \textup{(resp.} très ample pour $f_\mu$\textup{)}
+FRENCH CONTEXT (corrected): n
+$\mathcal O_{X_\lambda}$-Module inversible. Pour que $\mathcal L$ soit un
+$\mathcal O_X$-Module ample pour $f$ \textup{(resp.} très ample pour $f$\textup{)}, il faut et
+il suffit qu'il existe $\mu\geq\lambda$ tel que $\mathcal L_\mu$ soit ample
+pour $f_\mu$ \textup{(resp.} très ample pour $f_\mu$\textup{)}.
+\end{lemma}
+
+La condition étant évidemment suffisante (\textbf{II}, 4.4.10 et 4.6.13), montrons
+qu'elle est nécessaire~; les $S_\lambda$ étant quasi-compacts et les
+$f_\lambda$ de type fini, on peut, en remplaçant $\mathcal L$ par une puissance
+tensorielle c
+
+[id 16125]
+OLD: est affine. Alors
+NEW: est \emph{affine}. Alors
+FRENCH CONTEXT (corrected): le convenable, se borner à considérer le cas où $\mathcal L$ est très
+ample (\textbf{II}, 4.6.11). En outre, la question étant ici locale sur $S_0$ (vu
+(\textbf{II}, 4.4.5) et le fait que $L$ est filtrant), on peut se borner au cas où
+$S_0$ (et par suite $S$) est \emph{affine}. Alors, en vertu de (\textbf{II}, 4.4.1, (ii) et
+\textbf{II}, 4.1.2), il existe une $S$-immersion
+$j:X\to\mathbf P_S^r=P$ telle que $\mathcal L$ soit isomorphe à
+$j^*(\mathcal O_P(1))$. Compte tenu de (8.8.2, (i)), de (ii) et de
+(\textbf{II}, 4.1.3), il existe donc 
+
+[id 16131]
+OLD: \subsection{Application aux morphismes quasi-finis}
+NEW: \subsection{Application aux morphismes quasi-finis.}
+FRENCH CONTEXT (corrected): lisant ensuite (\textbf{II}, 4.1.3.2) et (8.5.2.5), on voit
+qu'il existe $\nu\geq\mu$ tel que $\mathcal L_\nu$ soit isomorphe à
+$j_\nu^*(\mathcal O_{P_\nu}(1))$, ce qui montre que $\mathcal L_\nu$ est très
+ample pour $f_\nu$ (\textbf{II}, 4.4.2).
+\end{proof}
+
+\subsection{Application aux morphismes quasi-finis.}
+\label{subsection:IV.8.11-fr}
+\label{IV.8.11-fr}
+
+Nous nous proposons dans cette section de démontrer les deux théorèmes
+suivants~:
+
+\begin{theorem}[8.11.1]
+\EGAReaderTarget{ega4.c04.thm.8-11-1}{IV.8.11.1-fr}
+Soit $f:X\to Y$ un morphisme propre, localement de
+
+[id 16133]
+OLD: (I, 6.1, I, 2.6,
+NEW: (1.6.1, 1.2.6,
+FRENCH CONTEXT (corrected): ; on notera que
+dans ce cas on obtiendra ainsi une autre démonstration du théorème de
+Chevalley (\textbf{III}, 4.4.2).
+\end{remark}
+
+\begin{env}[8.11.4]
+\label{IV.8.11.4-fr}
+Les hypothèses et les conclusions de (8.11.1) et (8.11.2) sont toutes locales
+sur $Y$ (1.6.1, 1.2.6, (\textbf{II}, 5.1.1), (\textbf{II}, 5.4.1) et (\textbf{II}, 6.2.2)), donc on
+peut supposer $Y=\operatorname{Spec}(A)$ affine. On sait qu'il existe alors un
+sous-anneau $A_0$ de $A$, qui est une $\mathbf Z$-algèbre de type fini, et un
+morphisme de type fini $f
+
+[id 16137]
+OLD: tel que $X$
+NEW: tels que $X$
+FRENCH CONTEXT (corrected): , 5.4.1) et (\textbf{II}, 6.2.2)), donc on
+peut supposer $Y=\operatorname{Spec}(A)$ affine. On sait qu'il existe alors un
+sous-anneau $A_0$ de $A$, qui est une $\mathbf Z$-algèbre de type fini, et un
+morphisme de type fini $f_0:X_0\to\operatorname{Spec}(A_0)$ tels que $X$
+s'identifie à $X_0\otimes_{A_0}A$ et $f$ à $f_0\times1$ (8.9.1). En outre,
+$A$ peut être considéré comme limite inductive de ses sous-anneaux contenant
+$A_0$ et qui sont des $\mathbf Z$-algèbres de type fini~; utilisant la méthode
+de (8.1.2, \emph{c)}) ainsi 
+
+[id 16138]
+OLD: (8.1.2, c))
+NEW: (8.1.2, \emph{c)})
+FRENCH CONTEXT (corrected): {Spec}(A_0)$ tels que $X$
+s'identifie à $X_0\otimes_{A_0}A$ et $f$ à $f_0\times1$ (8.9.1). En outre,
+$A$ peut être considéré comme limite inductive de ses sous-anneaux contenant
+$A_0$ et qui sont des $\mathbf Z$-algèbres de type fini~; utilisant la méthode
+de (8.1.2, \emph{c)}) ainsi que (8.10.5, (v), (xi) et (xii)), on voit qu'il suffit de
+démontrer les théorèmes (8.11.1) et (8.11.2) pour $f_0$. Supposons donc
+désormais $Y$ noethérien~; utilisant maintenant la méthode de (8.1.2, \emph{a)})
+ainsi que (8.10.5, (v), (ix), (x), (xi) et
+
+[id 16139]
+OLD: (8.1.2, a))
+NEW: (8.1.2, \emph{a)})
+FRENCH CONTEXT (corrected): res de type fini~; utilisant la méthode
+de (8.1.2, \emph{c)}) ainsi que (8.10.5, (v), (xi) et (xii)), on voit qu'il suffit de
+démontrer les théorèmes (8.11.1) et (8.11.2) pour $f_0$. Supposons donc
+désormais $Y$ noethérien~; utilisant maintenant la méthode de (8.1.2, \emph{a)})
+ainsi que (8.10.5, (v), (ix), (x), (xi) et (xii)) on peut remplacer $Y$ par
+$\operatorname{Spec}(\mathcal O_y)$, où $y$ est un
+\oldpage[IV-3]{42}
+point quelconque de $Y$, donc on voit finalement que l'on peut supposer que
+$Y=\operatorname{Spec}(A)$, où $A$ es
+
+=================== PAGE IV-3 42 ===================
+----- (English page IV-3 41: shown above in this file) -----
+----- (English page IV-3 42: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 43 -----
+\oldpage[IV-3]{43}
+$f^{-1}(y)=\operatorname{Spec}(\sh{A}_y/\mathfrak{m}_y\sh{A}_y)$ \sref[II]{II.1.5.5} is such that the corresponding homomorphism $\boldsymbol{k}(y)=\sh{O}_y/\mathfrak{m}_y\to\sh{A}_y/\mathfrak{m}_y\sh{A}_y$ is surjective; as $\sh{A}_y$ is an $\sh{O}_y$-module of finite type, the lemma of Nakayama shows that $\sh{O}_y\to\sh{A}_y$ is surjective, which completes the proof.
+
+\begin{remark}[8.11.5.1]
+\label{IV.8.11.5.1}
+One will note that the preceding reasoning proves that if $f$ is a \emph{monomorphism}, then, for all $y\in Y$, $f^{-1}(y)$ is empty or $\boldsymbol{k}(y)$-isomorphic to $\operatorname{Spec}(\boldsymbol{k}(y))$.
+\end{remark}
+
+\begin{proposition}[8.11.6]
+\label{IV.8.11.6}
+If a morphism $f:X\to Y$ of finite presentation is a universal homeomorphism, it is finite, surjective and radicial (the converse being true by \sref{IV.2.4.5},~(i))).
+\end{proposition}
+
+\begin{proof}
+Indeed, $f$ being of finite type, universally closed, and separated by virtue of \sref{IV.2.4.4}, is proper by definition \sref[II]{II.5.4.1}.
+As it is evidently quasi-finite \sref[II]{II.6.2.3}, it is finite by \sref{IV.8.11.1}.
+One knows moreover that it is radicial \sref{IV.2.4.4}, and evidently surjective.
+\end{proof}
+
+\subsection{New proof and generalisation of the ``Main Theorem'' of Zariski.}
+\label{subsection:IV.8.12}
+\label{IV.8.12}
+
+\begin{lemma}[8.12.1]
+\label{IV.8.12.1}
+Let $f:X\to Y$ be a quasi-compact and quasi-separated morphism, $\sh{C}$ an $\sh{O}_Y$-Algebra quasi-coherent, $Z=\operatorname{Spec}(\sh{C})$, which is an affine $Y$-prescheme over $Y$.
+Let $g:X\to Z$ be a $Y$-morphism, $\varphi=\sh{A}(g):\sh{C}\to f_*(\sh{O}_X)$ the corresponding $\sh{O}_Y$-homomorphism of $\sh{O}_Y$-Algebras \sref[II]{II.1.2.7}.
+Suppose that $g$ is an immersion.
+Then, for the closed image of $X$ by $g$ \sref[I]{I.9.5.3} to equal $Z$, it is necessary and sufficient that $\varphi$ be injective; $g$ is then an open immersion.
+\end{lemma}
+
+\begin{proof}
+The hypothesis implies that $f_*(\sh{O}_X)$ is an $\sh{O}_Y$-Algebra quasi-coherent \sref{IV.1.7.5}; furthermore, as the canonical morphism $h:Z\to Y$ is affine, hence quasi-compact and separated, $g$ is a quasi-compact and quasi-separated morphism \sref{IV.1.2.2} and \sref{IV.1.1.2}, hence $g_*(\sh{O}_X)$ is an $\sh{O}_Z$-Algebra quasi-coherent \sref{IV.1.7.5}.
+This being so, saying that the closed image of $X$ by $g$ equals $Z$ signifies \sref[I]{I.9.5.2} that the canonical homomorphism $\theta:\sh{O}_Z\to g_*(\sh{O}_X)$ is injective.
+But one has $h_*(\sh{O}_Z)=\sh{C}$ by definition of $Z$ \sref[II]{II.1.3.1}, and $h_*(g_*(\sh{O}_X))=f_*(\sh{O}_X)$.
+As $Z$ is affine over $Y$, it amounts to the same to say that the homomorphism $\theta:\sh{O}_Z\to g_*(\sh{O}_X)$ is injective or that the corresponding homomorphism $\varphi=h_*(\theta):\sh{C}\to f_*(\sh{O}_X)$ is injective \sref[I]{I.1.3.9}.
+The fact that $g$ is then an open immersion follows from \sref[I]{I.9.5.10} and the hypothesis.
+\end{proof}
+
+\begin{lemma}[8.12.2]
+\label{IV.8.12.2}
+Let $Y$ be a prescheme quasi-compact and quasi-separated, $f:X\to Y$ a quasi-separated morphism of finite type, $\sh{C}$ an $\sh{O}_Y$-Algebra quasi-coherent, $Z=\operatorname{Spec}(\sh{C})$.
+Let $g:X\to Z$ be a $Y$-morphism, $\varphi:\sh{C}\to f_*(\sh{O}_X)$ the corresponding $\sh{O}_Y$-homomorphism of $\sh{O}_Y$-Algebras.
+Let $(\sh{C}_\lambda)$ be the filtered increasing family of sub-$\sh{O}_Y$-Algebras quasi-coherent of finite type of $\sh{C}$ (where $\sh{C}$ is the union \sref[I]{I.9.6.6} and \sref{IV.1.7.9}); set $Z_\lambda=\operatorname{Spec}(\sh{C}_\lambda)$ and let $g_\lambda$ be the morphism composed $X\xrightarrow{g}Z\to Z_\lambda$.
+Then the following propriétés are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $g$ is an immersion.
+  \item There exists $\lambda$ such that $g_\lambda$ is an immersion.
+\end{enumerate}
+----- French corrections on page IV-3 42 -----
+[id 16141]
+OLD: quant à (2.7.1
+NEW: appliquant (2.7.1
+FRENCH CONTEXT (corrected):  $A$
+pour la topologie $\mathfrak m$-préadique~; on sait que $\widehat A$ est un
+anneau local noethérien et que le morphisme
+$\operatorname{Spec}(\widehat A)\to\operatorname{Spec}(A)$ est fidèlement
+plat et quasi-compact (\textbf{0}\textsubscript{I}, 7.3.5)~; appliquant (2.7.1, (i),
+(vii), (xiv), (xv) et (xvi)), on voit en outre qu'on peut se borner au cas où
+$A$ est \emph{complet}. Il résulte alors de (\textbf{II}, 6.2.6) que
+$X=X'\amalg X''$, où $X'$ est un $Y$-schéma fini et $X''$ un $Y$-schéma
+quasi-fini tel que $X''\cap f^{-1}
+
+[id 16144]
+OLD: en nous ramenant
+encore (comme
+NEW: en nous bornant
+(comme
+FRENCH CONTEXT (corrected): (X'')$ est fermé dans $Y$~; mais $y$ n'est pas contenu dans $f(X'')$, et
+par ailleurs est adhérent à tout point de $Y$, donc $f(X'')=\varnothing$, et
+par suite $X''$ est vide et $f$ est \emph{fini}.
+
+Plaçons-nous maintenant dans les hypothèses de (8.11.2) et, en nous bornant
+(comme on peut le faire d'après ce qui précède) au cas où
+$Y=\operatorname{Spec}(A)$ est affine et noethérien de dimension finie,
+raisonnons en outre par récurrence sur la dimension de $Y$. En se ramenant
+comme ci-dessus au cas où $A$ est en outre local et complet, 
+
+[id 16149]
+OLD: mais $Y
+NEW: mais l'ouvert $Y
+FRENCH CONTEXT (corrected): r, par hypothèse on a
+$f(X'')\subset Y\setmin\{y\}$ et la restriction de $f$ à $X''$ est évidemment un
+morphisme quasi-fini et séparé~; appliquant à $Y\setmin\{y\}$ et à $X''$
+l'hypothèse de récurrence, on voit que $X''$ est quasi-affine sur
+$Y\setmin\{y\}$~; mais l'ouvert $Y\setmin\{y\}$ étant quasi-affine sur $Y$ puisque $Y$ est
+noethérien, $X''$ est aussi quasi-affine sur $Y$ (\textbf{II}, 5.1.10, (ii))~; comme
+par ailleurs $X'$ est fini (et \emph{a fortiori} affine) sur $Y$, $X$ est
+quasi-affine sur $Y$ (\textbf{II}, 4.6.17 et
+
+[id 16153]
+OLD: c'))
+NEW: \emph{c')})
+FRENCH CONTEXT (corrected): {y\}$ étant quasi-affine sur $Y$ puisque $Y$ est
+noethérien, $X''$ est aussi quasi-affine sur $Y$ (\textbf{II}, 5.1.10, (ii))~; comme
+par ailleurs $X'$ est fini (et \emph{a fortiori} affine) sur $Y$, $X$ est
+quasi-affine sur $Y$ (\textbf{II}, 4.6.17 et 5.1.2, \emph{c')}).
+
+\begin{proposition}[8.11.5]
+\label{IV.8.11.5-fr}
+Soit $f:X\to Y$ un morphisme de présentation finie. Les propriétés suivantes
+sont équivalentes~:
+\begin{enumerate}
+\item[\emph{a)}] $f$ est une immersion fermée.
+\item[\emph{b)}] $f$ est un monomorphisme prop
+
+[id 16161]
+OLD: $a\otimes1$ et $1\otimes a$
+NEW: $a\otimes1$ et de $1\otimes a$
+FRENCH CONTEXT (corrected): int, et en tout cas affine. De plus, si $A$ est l'anneau de
+$f^{-1}(y)$, l'homomorphisme canonique $A\otimes_kA\to A$ est bijectif
+(\textbf{I}, 5.3.8). Cela entraîne évidemment que $A=k$, sans quoi il y aurait un
+élément $a\in A$ non dans $k$ et les images de $a\otimes1$ et de $1\otimes a$
+dans $A$ seraient toutes deux égales à $a$, alors que $a\otimes1\neq1\otimes a$
+puisque $1$ et $a$ forment un système libre sur $k$.
+
+Reste à prouver que \emph{c)} entraîne \emph{a)}. Il résulte tout d'abord de
+(8.11.1) que $f$ est un morphisme \emph{fini}, d
+
+=================== PAGE IV-3 43 ===================
+----- (English page IV-3 42: shown above in this file) -----
+----- (English page IV-3 43: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 44 -----
+\oldpage[IV-3]{44}
+Furthermore, when $g_\lambda$ is an immersion, the same is true of $g_\mu$ for $\mu\geqslant\lambda$.
+
+It suffices to apply \sref[II]{II.3.8.4} by replacing $\sh{L}$ by $\sh{O}_X$ and $\sh{S}$ by $\sh{C}[\mathrm{T}]$, and taking into account \sref[II]{II.3.1.7}.
+\end{lemma}
+
+\begin{proposition}[8.12.3]
+\label{IV.8.12.3}
+Let $Y$ be a prescheme quasi-compact and quasi-separated, $f:X\to Y$ a separated morphism of finite type.
+Let $\sh{B}=f_*(\sh{O}_X)$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[I]{I.9.2.2}; let $\sh{C}$ be the integral closure of $\sh{O}_Y$ in $\sh{B}$, which is an $\sh{O}_Y$-Algebra quasi-coherent \sref[II]{II.6.3.4}; set $Z=\operatorname{Spec}(\sh{C})$, and let $g:X\to Z$ be the $Y$-morphism corresponding to the canonical injection $\varphi:\sh{C}\to\sh{B}=f_*(\sh{O}_X)$ \sref[II]{II.1.2.7}. Let $(\sh{C}_\lambda)$ be the filtered increasing family of quasi-coherent sub-$\sh{O}_Y$-Algebras of finite type of $\sh{C}$ (whose union is $\sh{C}$ \sref[I]{I.9.6.6} and \sref{IV.1.7.9}), and for all $\lambda$, let $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\sh{C}_\lambda)$ be the $Y$-morphism corresponding to the injection $\sh{C}_\lambda\to\sh{B}=f_*(\sh{O}_X)$.
+Then the following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item[\emph{a)}] There exists a factorisation of $f$ as
+\[
+X\xrightarrow{f'}Y'\xrightarrow{u}Y
+\]
+where $f'$ is an immersion and $u$ a finite morphism.
+  \item[\emph{a$'$)}] There exists a factorisation $X\xrightarrow{f'}Y'\xrightarrow{u}Y$ of $f$, where $f'$ is an open immersion and $u$ a finite morphism.
+  \item[\emph{b)}] The morphism $g:X\to Z$ is an immersion.
+  \item[\emph{c)}] There exists $\lambda$ such that $g_\lambda:X\to Z_\lambda$ is an immersion.
+\end{enumerate}
+Furthermore, when $g_\lambda$ is an immersion, $g$ is an open immersion, $g(X)$ is dense in $Z$, and there exists $\lambda$ such that for $\mu\geqslant\lambda$, $g_\mu$ is an open immersion.
+\end{proposition}
+
+As the homomorphism $\varphi:\sh{C}\to f_*(\sh{O}_X)$ is injective, it follows from \sref{IV.8.12.1} that if $g$ is an immersion, it is an open immersion and $g(X)$ is dense in $Z$, and the same is true for $g_\lambda$.
+The fact that \emph{a)} implies \emph{a$'$)} follows also from \sref{IV.8.12.1}, applied by replacing $Z$ by $Y'$ and $g$ by $f'$ (since $Y'$ is finite over $Y$, hence affine over $Y$): indeed if $Y''$ is the closed image of $X$ by $f'$, $Y''$ is finite over $Y$ and $f'$ factorises as $X\xrightarrow{f''}Y''\xrightarrow{j}Y'$, where $j$ is the canonical injection, and $f''$ is an immersion \sref[I]{I.4.1.10}; it follows therefore from \sref{IV.8.12.1} that $f''$ is an open immersion.
+
+The equivalence of \emph{b)} and \emph{c)} follows from \sref{IV.8.12.2} as well as the fact that $g_\lambda$ is then an immersion for $\lambda$ large enough.
+It is clear that \emph{c)} implies \emph{a)}, since $Z_\lambda$ is finite over $Y$ \sref[II]{II.6.3.4} and \sref[II]{II.6.1.2}.
+Let us finally show that \emph{a)} implies \emph{c)}.
+One has seen above that one can suppose that $Y'$ is the closed image of $X$ by $f'$, and it then follows from \sref{IV.8.12.1} that if one sets $\sh{B}'=u_*(\sh{O}_{Y'})$, so that $Y'$ identifies with $\operatorname{Spec}(\sh{B}')$, the homomorphism $\varphi':\sh{B}'\to\sh{B}=f_*(\sh{O}_X)$ is \emph{injective}.
+But as by hypothesis $\sh{B}'$ is a finite $\sh{O}_Y$-algebra, it identifies by definition of $\sh{C}$ with one of the $\sh{O}_Y$-subalgebras $\sh{C}_\lambda$, which proves \emph{c)}.
+
+We will say that a morphism $f:X\to Y$, where $Y$ is quasi-compact and quasi-separated, is \emph{pseudo-finite}, if it is of finite type and satisfies condition \emph{a)} of \sref{IV.8.12.3} (in which case it is necessarily separated).
+
+\begin{corollary}[8.12.4]
+\label{IV.8.12.4}
+Let $Y$ be a prescheme quasi-compact and quasi-separated, $f:X\to Y$ a morphism.
+----- French corrections on page IV-3 43 -----
+[id 16167]
+OLD: (la réciproque étant vraie
+d'après (2.4.5, (i)))
+NEW: \textup{(la réciproque étant vraie
+d'après (2.4.5, (i)))}
+FRENCH CONTEXT (corrected): de ou
+$\boldsymbol{k}(y)$-isomorphe à $\operatorname{Spec}(\boldsymbol{k}(y))$.
+\end{remark}
+
+\begin{proposition}[8.11.6]
+\label{IV.8.11.6-fr}
+Si un morphisme $f:X\to Y$ de présentation finie est un homéomorphisme
+universel, il est fini, surjectif et radiciel \textup{(la réciproque étant vraie
+d'après (2.4.5, (i)))}.
+\end{proposition}
+
+\begin{proof}
+En effet, $f$ étant de type fini, universellement fermé, et séparé en vertu de
+(2.4.4), est propre par définition (\textbf{II}, 5.4.1). Comme il est évidemment
+quasi-fini (\textbf{II}, 6.2.3), il est fini d'après (8.11.1). On
+
+[id 16171]
+OLD: (II, 1.2.7)
+NEW: \textup{(\textbf{II}, 1.2.7)}
+FRENCH CONTEXT (corrected): érente, $Z=\operatorname{Spec}(\mathcal C)$,
+qui est un $Y$-préschéma affine au-dessus de $Y$. Soient $g:X\to Z$ un
+$Y$-morphisme, $\varphi=\mathcal A(g):\mathcal C\to f_*(\mathcal O_X)$ le
+$\mathcal O_Y$-homomorphisme correspondant de $\mathcal O_Y$-Algèbres
+\textup{(\textbf{II}, 1.2.7)}. Supposons que $g$ soit une immersion. Alors, pour que l'image
+fermée de $X$ par $g$ \textup{(\textbf{I}, 9.5.3)} soit égale à $Z$, il faut et il suffit que
+$\varphi$ soit injectif~; $g$ est alors une immersion ouverte.
+\end{lemma}
+
+\begin{proof}
+L'hypothèse 
+
+=================== PAGE IV-3 44 ===================
+----- (English page IV-3 43: shown above in this file) -----
+----- (English page IV-3 44: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 45 -----
+\oldpage[IV-3]{45}
+\begin{enumerate}[label=(\roman*)]
+  \item Suppose $f$ pseudo-finite.
+Then, for all morphisms $Y'\to Y$, where $Y'$ is quasi-compact and quasi-separated, $f_{(Y')}:X'=X_{(Y')}\to Y'$ is pseudo-finite.
+  \item Let $(U_\lambda)$ be a covering of $Y$ by quasi-compact open subsets.
+For $f$ to be pseudo-finite, it is necessary and sufficient that for all $\lambda$, the restriction $f_\lambda:f^{-1}(U_\lambda)\to U_\lambda$ of $f$ be a pseudo-finite morphism.
+  \item Suppose furthermore $Y$ Noetherian, and $f$ of finite type.
+Then, for $f$ to be pseudo-finite, it is necessary and sufficient that, for all $y\in Y$, the morphism $f_y=f\times 1:X_y=X\times_Y\operatorname{Spec}(\sh{O}_y)\to\operatorname{Spec}(\sh{O}_y)$ be pseudo-finite.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) It is clear that $f_{(Y')}$ is of finite type \sref{IV.1.5.4}. Moreover, a factorisation $X\xrightarrow{g}Z\xrightarrow{u}Y$ with $g$ an immersion and $u$ finite, induces a factorisation $X'\xrightarrow{g'}Z'\xrightarrow{u'}Y'$ of $f_{(Y')}$, where $Z'=Z_{(Y')}$, $g'=g_{(Y')}$ and $u'=u_{(Y')}$. The morphism $g'$ is an immersion \sref[I]{I.4.3.2} and $u'$ is finite \sref[II]{II.6.1.5}; hence $f_{(Y')}$ is pseudo-finite.
+
+(ii) The condition is necessary by virtue of (i), the $U_\lambda$ being quasi-separated since $Y$ is.
+To see that it is sufficient, observe (with the notation of \sref{IV.8.12.3}) that if one sets $X_\lambda=f^{-1}(U_\lambda)$, then $\sh{B}|U_\lambda=(f_\lambda)_*(\sh{O}_{X_\lambda})$, and $\sh{C}|U_\lambda$ is the integral closure of $\sh{O}_{U_\lambda}$ in $\sh{B}|U_\lambda$. Consequently, if $h:Z\to Y$ is the canonical morphism, $Z_\lambda=\operatorname{Spec}(\sh{C}|U_\lambda)$ identifies with $h^{-1}(U_\lambda)$. For $g:X\to Z$ to be an immersion, it is necessary and sufficient that for every $\lambda$ its restriction $g_\lambda:f^{-1}(U_\lambda)\to h^{-1}(U_\lambda)$ be an immersion \sref[I]{I.4.2.4}. The conclusion now follows from \sref{IV.8.12.3}.
+
+(iii) It suffices, in virtue of (ii), to prove that for all $y\in Y$ there exists a neighbourhood $U$ of $y$ such that the restriction $f^{-1}(U)\to U$ of $f$ be pseudo-finite.
+Designate by $(U_\lambda)$ the decreasing projective filtering system of affine open neighbourhoods of $y$, and apply the method of \sref{IV.8.1.2},~$a$)).
+Since $Y$ is Noetherian, the restrictions $f_\lambda:f^{-1}(U_\lambda)\to U_\lambda$ of $f$ are of finite presentation, and the same is true of $f_y$.
+By hypothesis $f_y$ factorises as $X_y\xrightarrow{g_y}Z_y\xrightarrow{u_y}\operatorname{Spec}(\sh{O}_y)$, where $u_y$ is finite and $g_y$ is an immersion.
+As $\sh{O}_y$ is Noetherian, so is $Z_y$; and since $Z_y$ is of finite presentation over $\operatorname{Spec}(\sh{O}_y)$, there exist $\lambda$ and a morphism of finite presentation $u_\lambda:Z_\lambda\to U_\lambda$ such that $Z_y$ identifies with $Z_\lambda\times_{U_\lambda}\operatorname{Spec}(\sh{O}_y)$ and $u_y$ with $u_\lambda\times 1$ \sref{IV.8.8.2},~(ii)). Moreover, there exists a morphism $g_\lambda:X_\lambda\to Z_\lambda$ such that $g_y=g_\lambda\times 1$ and $f_\lambda=u_\lambda\circ g_\lambda$ \sref{IV.8.8.2},~(i)). One may further take $\lambda$ so that $g_\lambda$ is an immersion and $u_\lambda$ a finite morphism \sref{IV.8.10.5},~(ii) and (x)), which proves that $f_\lambda$ is pseudo-finite.
+\end{proof}
+
+\begin{env}[8.12.5]
+\label{IV.8.12.5}
+We can now give the ``Main theorem'' of Zariski \sref[III]{III.4.4.3}), a proof not using the ``global'' cohomological results of chap.~III, but rather appealing to the finer properties of local Noetherian rings; we will furthermore generalise the statement of the theorem by removing the Noetherian hypotheses:
+\end{env}
+
+\begin{theorem}[8.12.6]
+\label{IV.8.12.6}
+(``Main theorem'' of Zariski). --- Let $Y$ be a prescheme quasi-compact and quasi-separated.
+If a morphism $f:X\to Y$ is quasi-finite, separated and of finite presentation, there exists a factorisation of $f$
+\begin{equation}
+\label{IV.8.12.6.1}
+X\xrightarrow{f'}Y'\xrightarrow{u}Y \tag{8.12.6.1}
+\end{equation}
+where $f'$ is an open immersion and $u$ a finite morphism.
+\end{theorem}
+----- French corrections on page IV-3 44 -----
+[id 16180]
+OLD: pour $\mu\geq\lambda$.
+
+Il suffit
+NEW: pour $\mu\geq\lambda$.
+\end{lemma}
+
+Il suffit
+FRENCH CONTEXT (corrected): ivalentes~:
+\begin{enumerate}
+\item[\emph{a)}] $g$ est une immersion.
+\item[\emph{b)}] Il existe $\lambda$ tel que $g_\lambda$ soit une immersion.
+\end{enumerate}
+\oldpage[IV-3]{44}
+
+De plus, lorsque $g_\lambda$ est une immersion, il en est de même de $g_\mu$
+pour $\mu\geq\lambda$.
+\end{lemma}
+
+Il suffit d'appliquer (\textbf{II}, 3.8.4) en remplaçant $\mathcal L$ par
+$\mathcal O_X$ et $\mathcal S$ par $\mathcal C[\mathrm T]$, et tenant
+compte de (\textbf{II}, 3.1.7).
+\begin{proposition}[8.12.3]
+\EGAReaderTarget{ega4.c04.prop.8-12-3}{IV.8.12.3-fr}
+Soient $Y$ u
+
+[id 16181]
+OLD: \end{lemma}
+
+\begin{proposition}[8.12.3]
+NEW: \begin{proposition}[8.12.3]
+FRENCH CONTEXT (corrected): est une immersion, il en est de même de $g_\mu$
+pour $\mu\geq\lambda$.
+\end{lemma}
+
+Il suffit d'appliquer (\textbf{II}, 3.8.4) en remplaçant $\mathcal L$ par
+$\mathcal O_X$ et $\mathcal S$ par $\mathcal C[\mathrm T]$, et tenant
+compte de (\textbf{II}, 3.1.7).
+\begin{proposition}[8.12.3]
+\EGAReaderTarget{ega4.c04.prop.8-12-3}{IV.8.12.3-fr}
+Soient $Y$ un préschéma quasi-compact et quasi-séparé, $f:X\to Y$ un
+morphisme séparé de type fini. Soit $\mathcal B=f_*(\mathcal O_X)$, qui est
+une $\mathcal O_Y$-Algèbre quasi-cohérente \textup{(\textbf{I
+
+[id 16183]
+OLD: et en tenant
+NEW: et tenant
+FRENCH CONTEXT (corrected): e[IV-3]{44}
+
+De plus, lorsque $g_\lambda$ est une immersion, il en est de même de $g_\mu$
+pour $\mu\geq\lambda$.
+\end{lemma}
+
+Il suffit d'appliquer (\textbf{II}, 3.8.4) en remplaçant $\mathcal L$ par
+$\mathcal O_X$ et $\mathcal S$ par $\mathcal C[\mathrm T]$, et tenant
+compte de (\textbf{II}, 3.1.7).
+\begin{proposition}[8.12.3]
+\EGAReaderTarget{ega4.c04.prop.8-12-3}{IV.8.12.3-fr}
+Soient $Y$ un préschéma quasi-compact et quasi-séparé, $f:X\to Y$ un
+morphisme séparé de type fini. Soit $\mathcal B=f_*(\mathcal O_X)$, qui est
+u
+
+[id 16186]
+OLD: (II, 6.3.4)
+NEW: \textup{(\textbf{II}, 6.3.4)}
+FRENCH CONTEXT (corrected):  type fini. Soit $\mathcal B=f_*(\mathcal O_X)$, qui est
+une $\mathcal O_Y$-Algèbre quasi-cohérente \textup{(\textbf{I}, 9.2.2)}~; soit $\mathcal C$ la
+fermeture intégrale de $\mathcal O_Y$ dans $\mathcal B$, qui est une
+$\mathcal O_Y$-Algèbre quasi-cohérente \textup{(\textbf{II}, 6.3.4)}~; posons
+$Z=\operatorname{Spec}(\mathcal C)$, et soit $g:X\to Z$ le $Y$-morphisme
+correspondant à l'injection canonique
+$\varphi:\mathcal C\to\mathcal B=f_*(\mathcal O_X)$ \textup{(\textbf{II}, 1.2.7)}. Soit
+$(\mathcal C_\lambda)$ la famille filtrante croissa
+
+[id 16187]
+OLD: (II, 1.2.7)
+NEW: \textup{(\textbf{II}, 1.2.7)}
+FRENCH CONTEXT (corrected): al B$, qui est une
+$\mathcal O_Y$-Algèbre quasi-cohérente \textup{(\textbf{II}, 6.3.4)}~; posons
+$Z=\operatorname{Spec}(\mathcal C)$, et soit $g:X\to Z$ le $Y$-morphisme
+correspondant à l'injection canonique
+$\varphi:\mathcal C\to\mathcal B=f_*(\mathcal O_X)$ \textup{(\textbf{II}, 1.2.7)}. Soit
+$(\mathcal C_\lambda)$ la famille filtrante croissante des
+sous-$\mathcal O_Y$-Algèbres quasi-cohérentes de type fini de $\mathcal C$
+(dont $\mathcal C$ est la réunion \textup{((\textbf{I}, 9.6.6)} et \textup{(1.7.9)))}, et, pour tout
+$\lambda$, soit $g
+
+[id 16190]
+OLD: posons $Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$, et
+soit $g_\lambda:X\to Z_\lambda$ le
+NEW: soit $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$ le
+FRENCH CONTEXT (corrected): 1.2.7)}. Soit
+$(\mathcal C_\lambda)$ la famille filtrante croissante des
+sous-$\mathcal O_Y$-Algèbres quasi-cohérentes de type fini de $\mathcal C$
+(dont $\mathcal C$ est la réunion \textup{((\textbf{I}, 9.6.6)} et \textup{(1.7.9)))}, et, pour tout
+$\lambda$, soit $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$ le $Y$-morphisme correspondant à l'injection
+$\mathcal C_\lambda\to\mathcal B=f_*(\mathcal O_X)$. Alors les conditions
+suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\emph{a)}] Il existe une factorisation de $f$ en
+\[
+X\xrightarrow{f'}Y'\xrightarrow{u}Y
+\
+
+[id 16191]
+OLD: f_*(\mathcal O_X)$~; les conditions
+NEW: f_*(\mathcal O_X)$. Alors les conditions
+FRENCH CONTEXT (corrected): ont $\mathcal C$ est la réunion \textup{((\textbf{I}, 9.6.6)} et \textup{(1.7.9)))}, et, pour tout
+$\lambda$, soit $g_\lambda:X\to Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$ le $Y$-morphisme correspondant à l'injection
+$\mathcal C_\lambda\to\mathcal B=f_*(\mathcal O_X)$. Alors les conditions
+suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\emph{a)}] Il existe une factorisation de $f$ en
+\[
+X\xrightarrow{f'}Y'\xrightarrow{u}Y
+\]
+où $f'$ est une immersion et $u$ un morphisme fini.
+\item[\emph{a$'$)}] Il existe une factorisation
+$X\xrightarrow
+
+[id 16194]
+OLD: et il en est de même pour
+NEW: et de même pour
+FRENCH CONTEXT (corrected): mu\geq\lambda$,
+$g_\mu$ soit une immersion ouverte.
+\end{proposition}
+
+Comme l'homomorphisme $\varphi:\mathcal C\to f_*(\mathcal O_X)$ est
+injectif, il résulte de (8.12.1) que si $g$ est une immersion, c'est une
+immersion ouverte et $g(X)$ est dense dans $Z$, et de même pour
+$g_\lambda$. Le fait que \emph{a)} entraîne \emph{a$'$)} résulte aussi de
+(8.12.1), appliqué en y remplaçant $Z$ par $Y'$ et $g$ par $f'$ ($Y'$ étant
+fini, donc affine au-dessus de $Y$)~: en effet si $Y''$ est l'image fermée de
+$X$ par $f'$, $Y''$ est fini au
+
+[id 16195]
+OLD: appliqué en remplaçant
+NEW: appliqué en y remplaçant
+FRENCH CONTEXT (corrected): i:\mathcal C\to f_*(\mathcal O_X)$ est
+injectif, il résulte de (8.12.1) que si $g$ est une immersion, c'est une
+immersion ouverte et $g(X)$ est dense dans $Z$, et de même pour
+$g_\lambda$. Le fait que \emph{a)} entraîne \emph{a$'$)} résulte aussi de
+(8.12.1), appliqué en y remplaçant $Z$ par $Y'$ et $g$ par $f'$ ($Y'$ étant
+fini, donc affine au-dessus de $Y$)~: en effet si $Y''$ est l'image fermée de
+$X$ par $f'$, $Y''$ est fini au-dessus de $Y$ et $f'$ se factorise en
+$X\xrightarrow{f''}Y''\xrightarrow{j}Y'$, où $j$ est l'injection canon
+
+=================== PAGE IV-3 45 ===================
+----- (English page IV-3 44: shown above in this file) -----
+----- (English page IV-3 45: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 46 -----
+\oldpage[IV-3]{46}
+
+\begin{proof}
+By virtue of \sref{IV.8.12.4},~(ii)) and the local character (on $Y$) of the notions of quasi-finite morphism, separated and of finite presentation, one can restrict to the case where $Y=\operatorname{Spec}(A)$ is affine.
+Applying \sref{IV.8.9.1}), one can suppose that there is a subring $A_0$ of $A$, which is a $\bb{Z}$-algebra of finite type, and an $A$-isomorphism $X_0\otimes_{A_0}A\xrightarrow{\sim}X$, $f$ identifying by this isomorphism with $f_0\times 1$, where $f_0:X_0\to\operatorname{Spec}(A_0)$ is a morphism \emph{of finite type}; furthermore \sref{IV.8.10.5},~(v) and (xi)) one can suppose that $f_0$ is separated and quasi-finite; if one proves that $f_0$ is pseudo-finite, the same will be true of $f$ by \sref{IV.8.12.4},~(i)).
+As $A_0$ is then Noetherian and the notions of morphism of finite type, separated and quasi-finite are preserved by base change, it follows from \sref{IV.8.12.4},~(iii)) that one can even suppose that $A$ is a local ring, \emph{essentially of finite type over} $\bb{Z}$ \sref{IV.1.3.8}).
+Set $n=\dim(A)$, and let us proceed by induction on $n$; for $n=0$, the theorem is evident, $A$ being a field and the morphism $f$ being already finite \sref[II]{II.6.2.2}).
+Set $B=\Gamma(X,\sh{O}_X)$; denote by $C$ the integral closure of $A$ in $B$, set $Z=\operatorname{Spec}(C)$ and let $g:X\to Z$ be the $Y$-morphism corresponding to the canonical injective $A$-homomorphism $C\to B$; by virtue of \sref{IV.8.12.3}), it suffices to show that $g$ is an open immersion.
+Let $a$ be the closed point of $Y$, and $U=Y\setmin\{a\}$; $U$ is Noetherian and all its local rings are essentially of finite type over $\bb{Z}$ and of dimension $<n$; taking into account the hypothesis of induction, one sees that the restriction $f^{-1}(U)\to U$ of $f$ is a pseudo-finite morphism.
+One concludes from \sref{IV.8.12.3}) that, if $h:Z\to Y$ is the structural morphism, the restriction $f^{-1}(U)\to h^{-1}(U)$ of $g$ is an open immersion.
+Set $A'=\hat{A}$, $Y'=\operatorname{Spec}(A')$, $X'=X_{(Y')}$, $f'=f_{(Y')}:X'\to Y'$.
+As the canonical morphism $u:Y'\to Y$ is flat, it follows from \sref{IV.2.3.1}) that $B'=\Gamma(X',\sh{O}_{X'})$ identifies with the $A'$-algebra $B\otimes_A A'$.
+On the other hand, as $A$ is a local ring excellent \sref{IV.7.8.3}), the morphism $u:Y'\to Y$ is regular, and consequently \sref{IV.6.14.4}) \emph{the integral closure of $A'$ in $B'$ is equal to} $C'=C\otimes_A A'$.
+One sees therefore that $Z'=\operatorname{Spec}(C')$ is equal to $Z_{(Y')}$ and the morphism $g':X'\to Z'$ coming from the canonical injection $C'\to B'$ is equal to $g_{(Y')}$.
+As $u:Y'\to Y$ is faithfully flat and quasi-compact, to prove that $g$ is an open immersion, it suffices to prove that $g'$ is an open immersion \sref{IV.2.7.1},~(x)).
+Now $u^{-1}(a)$ consists of the closed point $a'$ of $Y'$, and consequently $U'=Y'\setmin\{a'\}=u^{-1}(U)$.
+If $h':Z'\to Y'$ is the canonical morphism, the fact that the restriction $f^{-1}(U)\to h^{-1}(U)$ of $g$ is an open immersion implies that the same is true of the restriction $f'^{-1}(U')\to h'^{-1}(U')$ of $g'$.
+The morphism $f'$ is separated and quasi-finite \sref[II]{II.6.2.4}; as $A'$ is \emph{complete}, one deduces from \sref[II]{II.6.2.6} that $X'$ is $Y'$-isomorphic to a sum $X'_1\sqcup X'_2$, where the restriction $f'|X'_1=f'_1:X'_1\to Y'$ is a morphism \emph{finite}, and $X'_2\subset f'^{-1}(U')$.
+It follows from this that $B'$ is the direct product of the two $A'$-algebras $\Gamma(X'_1,\sh{O}_{X'_1})=B'_1$ and $\Gamma(X'_2,\sh{O}_{X'_2})=B'_2$; one concludes immediately that the integral closure $C'$ of $A'$ in $B'$ is the direct product of the integral closures $C'_1$, $C'_2$ of $A'$ in $B'_1$, $B'_2$ respectively, whence $Z'=Z'_1\sqcup Z'_2$, where $Z'_i=\operatorname{Spec}(C'_i)$ ($i=1,2$); and the canonical morphism $g':X'\to Z'$ is such that $g'|X'_i$ is the canonical morphism $g'_i:X'_i\to Z'_i$ ($i=1,2$).
+But as $B'_1$ is already a finite $A'$-algebra, one has $C'_1=B'_1$, and $g'_1$ is therefore an isomorphism.
+On the other hand, as $X'_2\subset f'^{-1}(U')$ and is open in $f'^{-1}(U')$, one
+----- French corrections on page IV-3 45 -----
+[id 15977]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): ompact et quasi-séparé, $f:X\to Y$ un
+morphisme.
+\oldpage[IV-3]{45}
+\begin{enumerate}
+\item[\textup{(i)}] Supposons $f$ pseudo-fini. Alors, pour tout morphisme $Y'\to Y$,
+où $Y'$ est quasi-compact et quasi-séparé,
+$f_{(Y')}:X'=X_{(Y')}\to Y'$ est pseudo-fini.
+\item[\textup{(ii)}] Soit $(U_\lambda)$ un recouvrement de $Y$ formé d'ouverts
+quasi-compacts. Pour que $f$ soit pseudo-fini, il faut et il suffit que pour
+tout $\lambda$, la restriction
+$f_\lambda:f^{-1}(U_\lambda)\to U_\lambda$ de $f$ soit un morphisme
+pseudo-fini.
+\item[\textu
+
+[id 15978]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected): extup{(ii)}] Soit $(U_\lambda)$ un recouvrement de $Y$ formé d'ouverts
+quasi-compacts. Pour que $f$ soit pseudo-fini, il faut et il suffit que pour
+tout $\lambda$, la restriction
+$f_\lambda:f^{-1}(U_\lambda)\to U_\lambda$ de $f$ soit un morphisme
+pseudo-fini.
+\item[\textup{(iii)}] Supposons en outre $Y$ noethérien, et $f$ de type fini. Alors,
+pour que $f$ soit pseudo-fini, il faut et il suffit que, pour tout $y\in Y$,
+le morphisme
+$f_y=f\times 1:X_y=X\times_Y\operatorname{Spec}(\mathcal O_y)
+\to\operatorname{Spec}(\mathcal O_y)$ le soi
+
+[id 15982]
+OLD: dans $\mathcal B|U_\lambda$ et
+NEW: dans $\mathcal B_\lambda$ et
+FRENCH CONTEXT (corrected): qu'elle est suffisante, observons
+(avec les notations de (8.12.3)) que si l'on pose
+$X_\lambda=f^{-1}(U_\lambda)$, on a
+$\mathcal B|U_\lambda=(f_\lambda)_*(\mathcal O_{X_\lambda})$,
+$\mathcal C|U_\lambda$ est la fermeture intégrale de $\mathcal O_{U_\lambda}$
+dans $\mathcal B_\lambda$ et par suite, si $h:Z\to Y$ est le morphisme
+canonique, $Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$ s'identifie à
+$h^{-1}(U_\lambda)$. Or, pour que $g:X\to Z$ soit une immersion, il faut et
+il suffit que pour tout $\lambda$, la restriction
+$g_\lambda:f^{
+
+[id 15983]
+OLD: \operatorname{Spec}(\mathcal C|U_\lambda)
+NEW: \operatorname{Spec}(\mathcal C_\lambda)
+FRENCH CONTEXT (corrected): a=f^{-1}(U_\lambda)$, on a
+$\mathcal B|U_\lambda=(f_\lambda)_*(\mathcal O_{X_\lambda})$,
+$\mathcal C|U_\lambda$ est la fermeture intégrale de $\mathcal O_{U_\lambda}$
+dans $\mathcal B_\lambda$ et par suite, si $h:Z\to Y$ est le morphisme
+canonique, $Z_\lambda=\operatorname{Spec}(\mathcal C_\lambda)$ s'identifie à
+$h^{-1}(U_\lambda)$. Or, pour que $g:X\to Z$ soit une immersion, il faut et
+il suffit que pour tout $\lambda$, la restriction
+$g_\lambda:f^{-1}(U_\lambda)\to h^{-1}(U_\lambda)$ de $g$ le soit
+(\textbf{I}, 4.2.4). Cela entraîne la conclusion en 
+
+=================== PAGE IV-3 47 ===================
+----- (English page IV-3 46: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 47 -----
+\oldpage[IV-3]{47}
+already knows that $g'_2$ is an open immersion.
+One concludes that $g'$ is indeed an open immersion.
+\end{proof}
+
+\begin{remark}[8.12.7]
+\label{IV.8.12.7}
+When, in \sref{IV.8.12.6}), one supposes that $Y$ is an affine \emph{scheme}, the proof by reduction to the Noetherian case shows that, in the factorisation \sref{IV.8.12.6.1}), the morphisms $f'$ and $u$ are also morphisms \emph{of finite presentation} \sref{IV.1.6.2}).
+\end{remark}
+
+\begin{corollary}[8.12.8]
+\label{IV.8.12.8}
+Let $Y$ be a quasi-compact scheme such that there exists an $\sh{O}_Y$-Module ample \sref[II]{II.4.5.3}), $f:X\to Y$ a quasi-finite and quasi-projective morphism.
+Then there exists a factorisation of $f$ as
+\[
+X\xrightarrow{f'}Y'\xrightarrow{u}Y
+\]
+where $f'$ is an open immersion and $u$ a finite morphism.
+\end{corollary}
+
+\begin{proof}
+The hypothesis implies that $X$ identifies with a sub-$Y$-scheme quasi-compact of a $Y$-scheme of the form $Z=\mathbf{P}^r_Y$ \sref[II]{II.5.3.3}).
+There is therefore a quasi-compact open neighbourhood $U$ of $X$ in $Z$ such that $X$ is closed in $U$; as $Z$ is a scheme, the canonical injection $U\to Z$ is a morphism of finite presentation (\sref{IV.1.2.7} and \sref{IV.1.6.2})), hence the composite morphism $g:U\to Z\to Y$ is also a morphism of finite presentation (the fact that $\mathbf{P}^r_Y$ is of finite presentation over $Y$ following immediately from the definition \sref[II]{II.4.1.1})).
+Let $\sh{J}$ be the quasi-coherent Ideal of $\sh{O}_U$ defining the closed sub-prescheme $X$; as $U$ is a quasi-compact scheme, $\sh{J}$ is the filtered inductive limit of its sub-Ideals quasi-coherent of finite type $\sh{J}_\lambda$ \sref[I]{I.9.4.9}).
+If $X_\lambda$ is the closed sub-prescheme of $U$ defined by $\sh{J}_\lambda$, one therefore has $X=\bigcap X_\lambda$.
+For all $y\in Y$, one therefore has $f^{-1}(y)=\bigcap(X_\lambda\cap g^{-1}(y))$, and as the sets $X_\lambda\cap g^{-1}(y)$ are closed in the Noetherian space $g^{-1}(y)$, there exists for all $y$ an index $\lambda(y)$ such that $f^{-1}(y)=X_{\lambda(y)}\cap g^{-1}(y)$.
+Denote by $E_\lambda$ the set of $y\in Y$ such that the fibre $X_\lambda\cap g^{-1}(y)$ of the restriction of $g$ to $X_\lambda$ is a $\boldsymbol{k}(y)$-prescheme finite.
+The hypothesis that $f$ is quasi-finite implies, by virtue of what precedes, that $Y=\bigcup_\lambda E_\lambda$.
+Now, each of the $X_\lambda$ is, by definition, \emph{of finite presentation} over $Y$; it follows therefore from \sref{IV.9.2.3} and \sref{IV.9.2.6})~($^1$) that the $E_\lambda$ are \emph{constructible} sets in the scheme $Y$; as they form a filtered increasing family, there exists an index $\lambda$ such that $E_\lambda=Y$ \sref{IV.1.9.9}), and for this $\lambda$, the morphism $f_\lambda:X_\lambda\to Y$, restriction of $g$ to $X_\lambda$, is quasi-finite. Since it is of finite presentation and separated, one can apply \sref{IV.8.12.6}), and $f_\lambda$ factorises as
+\[
+X_\lambda\xrightarrow{j_\lambda}Y'_\lambda\xrightarrow{u_\lambda}Y
+\]
+where $j_\lambda$ is an open immersion and $u_\lambda$ a finite morphism.
+As $X$ is a closed sub-prescheme of $X_\lambda$, one has thus proved that $f$ possesses the property \sref{IV.8.12.3},~$a$)), whence the corollary by virtue of the equivalence of \sref{IV.8.12.3},~$a$)) and \sref{IV.8.12.3},~$a'$)).
+\end{proof}
+
+\footnotetext{($^1$) The reader will verify that the corollaries \sref{IV.8.12.8} to \sref{IV.8.12.11} are not used in \textsection~9.}
+
+\begin{corollary}[8.12.9]
+\label{IV.8.12.9}
+----- English, source_aligned/ega4-8.tex, page IV-3 48 -----
+\oldpage[IV-3]{48}
+Let $f:X\to Y$ be a locally quasi-finite morphism $(\mathbf{Err}_{\text{III}},~20)$.
+For all $x\in X$ there exist an open neighbourhood $U$ of $x$ in $X$, an open neighbourhood $V$ of $y=f(x)$ in $Y$, such that $f(U)\subset V$ and a factorisation
+\[
+U\xrightarrow{f'}V'\xrightarrow{u}V
+\]
+of the restriction of $f$ to $U$, where $f'$ is an open immersion and $u$ a finite morphism.
+\end{corollary}
+
+\begin{proof}
+It evidently suffices to take for $V$ an affine neighbourhood of $y$ in $Y$, for $U$ an affine neighbourhood of $x$ in $X$ contained in $f^{-1}(V)$ and such that $f|U$ is quasi-finite.
+The morphism $U\to V$ restriction of $f$ being then affine (hence quasi-projective), one can apply \sref{IV.8.12.8}).
+\end{proof}
+
+\begin{corollary}[8.12.10]
+\label{IV.8.12.10}
+Let $Y$ be an integral normal prescheme, $X$ an integral prescheme, and $f:X\to Y$ a birational, locally quasi-finite morphism $(\mathbf{Err}_{\text{III}},~20)$.
+Then $f$ is a local isomorphism; for $f$ to be an open immersion, it is necessary and sufficient that $f$ be separated in addition.
+\end{corollary}
+
+\begin{proof}
+The second assertion follows immediately from the first and from \sref[I]{I.8.2.8}).
+To prove the first assertion, one may suppose $X$ and $Y$ affine and $f$ quasi-finite; consider the factorisation $f=u\circ f'$ of \sref{IV.8.12.8}, which identifies $X$, via $f'$, with the subprescheme induced on an open subset of $Y'$.
+As $X$ is integral, one can, by virtue of \sref[I]{I.5.2.3}), replace $Y'$ by the reduced sub-prescheme of $Y'$ having underlying space $\overline{X}$, hence one can also suppose that $Y'$ is \emph{integral}.
+Furthermore, since $f$ is birational, $u$ is also.
+The conclusion then follows from the following lemma:
+\end{proof}
+
+\begin{lemma}[8.12.10.1]
+\label{IV.8.12.10.1}
+Let $Y'$ be an integral prescheme, $Y$ an integral prescheme and normal; then a morphism $u:Y'\to Y$ finite and birational is an isomorphism.
+\end{lemma}
+
+\begin{proof}
+Set $\sh{A}=u_*(\sh{O}_{Y'})$; then $\sh{A}$ is a finite $\sh{O}_Y$-algebra and $Y'$ identifies with $\operatorname{Spec}(\sh{A})$ \sref[II]{II.1.3.6}.
+If $R(Y)$ is the field of rational functions of $Y$, one therefore has, for all $y\in Y$, $\sh{O}_{Y,y}\subset\sh{A}_y\subset R(Y)$; but as the ring $\sh{O}_{Y,y}$ is by hypothesis integrally closed and $R(Y)$ a field of fractions, one necessarily has $\sh{A}_y=\sh{O}_{Y,y}$, whence the lemma.
+\end{proof}
+
+\begin{corollary}[8.12.11]
+\label{IV.8.12.11}
+Let $Y$ be an integral prescheme and $X$ an integral normal prescheme, and let $f:X\to Y$ be a dominant, locally quasi-finite morphism.
+Let $K$ and $L$ (an extension of $K$) be the fields of rational functions of $Y$ and $X$ respectively; and let $Y'$ be the integral closure of $Y$ relative to $L$ \sref[II]{II.6.3.4}); then $f$ factorises in a unique way as $f:X\xrightarrow{f'}Y'\xrightarrow{u}Y$, where $f'$ is birational and corresponds to the identity automorphism of $L$; $f'$ is then a local isomorphism, and for $f'$ to be an open immersion, it is necessary and sufficient that $f$ be separated.
+\end{corollary}
+
+\begin{proof}
+The existence and uniqueness of the factorisation of $f$ follow from \sref[II]{II.6.3.9}).
+It follows further from \sref[II]{II.6.2.4},~(v)), reducing to the affine case, that $f'$ is locally quasi-finite; furthermore, it follows from \sref[I]{I.5.5.1}) that, for $f'$ to be separated, it is necessary and sufficient that $f$ be, since $u$ is affine, hence separated; the last two assertions are therefore consequences of \sref{IV.8.12.10}) applied to $f'$.
+\end{proof}
+----- French corrections on page IV-3 47 -----
+[id 15994]
+OLD: immersion ouverte.
+\end{proof}
+NEW: immersion ouverte, C.Q.F.D.
+\end{proof}
+FRENCH CONTEXT (corrected): ne
+$A'$-algèbre finie, on a $C'_1=B'_1$, et $g'_1$ est donc un isomorphisme.
+D'autre part, comme $X'_2\subset f'^{-1}(U')$ et est ouvert dans
+$f'^{-1}(U')$, on sait
+\oldpage[IV-3]{47}
+déjà que $g'_2$ est une immersion ouverte. On conclut bien que $g'$ est une
+immersion ouverte, C.Q.F.D.
+\end{proof}
+
+\begin{remark}[8.12.7]
+\label{IV.8.12.7-fr}
+Lorsque, dans (8.12.6), on suppose que $Y$ est un \emph{schéma affine}, la
+démonstration par réduction au cas noethérien montre que, dans la
+factorisation (8.12.6.1), les morphismes $f'$ et $u$ sont aussi des
+morph
+
+[id 15995]
+OLD: (II, 4.5.3)
+NEW: \textup{(\textbf{II}, 4.5.3)}
+FRENCH CONTEXT (corrected): actorisation (8.12.6.1), les morphismes $f'$ et $u$ sont aussi des
+morphismes \emph{de présentation finie} (1.6.2).
+\end{remark}
+
+\begin{corollary}[8.12.8]
+\label{IV.8.12.8-fr}
+Soient $Y$ un schéma quasi-compact tel qu'il existe un $\mathcal O_Y$-Module
+ample \textup{(\textbf{II}, 4.5.3)}, $f:X\to Y$ un morphisme quasi-fini et quasi-projectif.
+Alors il existe une factorisation de $f$ en
+\[
+X\xrightarrow{f'}Y'\xrightarrow{u}Y
+\]
+où $f'$ est une immersion ouverte et $u$ un morphisme fini.
+\end{corollary}
+
+\begin{proof}
+L'hypothèse entraîne que $
+
+[id 16000]
+OLD: est donc
+quasi-fini.
+NEW: est donc
+\emph{quasi-fini}.
+FRENCH CONTEXT (corrected):  \emph{constructibles} dans le schéma $Y$~; comme ils forment un
+ensemble filtrant croissant, il existe un indice $\lambda$ tel que
+$E_\lambda=Y$ (1.9.9), et pour cet indice $\lambda$, le morphisme
+$f_\lambda:X_\lambda\to Y$, restriction de $g$ à $X_\lambda$, est donc
+\emph{quasi-fini}. Comme il est de présentation finie et séparé, on peut lui
+appliquer (8.12.6), et $f_\lambda$ se factorise donc en
+\[
+X_\lambda\xrightarrow{j_\lambda}Y'_\lambda
+\xrightarrow{u_\lambda}Y
+\]
+où $j_\lambda$ est une immersion et $u_\lambda$ un morphisme fini. Comm
+
+=================== PAGE IV-3 48 ===================
+----- (English page IV-3 47: shown above in this file) -----
+----- (English page IV-3 48: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 49 -----
+\oldpage[IV-3]{49}
+
+\subsection{Translation in terms of pro-objects}
+\label{subsection:IV.8.13}
+
+The following proposition is essentially equivalent to \sref{IV.8.8.2},~(i):
+
+\begin{proposition}[8.13.1]
+\label{IV.8.13.1}
+Let $S$ be a prescheme, and let $(X_\lambda,v_{\lambda\mu})$ be a filtered projective system of $S$-preschemes; suppose that there exists $\alpha$ such that $v_{\alpha\lambda}$ is an affine morphism for all $\lambda\geqslant\alpha$ (which implies by \sref[II]{II.1.6.2} that $v_{\lambda\mu}$ is affine for $\alpha\leqslant\lambda\leqslant\mu$), so that the projective limit $X=\varprojlim X_\lambda$ exists in the category of $S$-preschemes \sref{IV.8.2.3}.
+Let $Y$ be an $S$-prescheme, and, for all $\lambda\geqslant\alpha$, let $e_\lambda:\operatorname{Hom}_S(X_\lambda,Y)\to\operatorname{Hom}_S(X,Y)$ be the map which, to every $S$-morphism $f_\lambda:X_\lambda\to Y$, makes correspond $f=f_\lambda\circ v_\lambda$, where $v_\lambda:X\to X_\lambda$ is the canonical morphism.
+The family $(e_\lambda)$ is an inductive system of maps, which therefore defines a canonical map
+\begin{equation}
+\label{IV.8.13.1.1}
+\varinjlim\operatorname{Hom}_S(X_\lambda,Y)\to\operatorname{Hom}_S(X,Y). \tag{8.13.1.1}
+\end{equation}
+
+Suppose that $X_\alpha$ is quasi-compact (\textup{resp.} quasi-compact and quasi-separated), and that the structural morphism $Y\to S$ is locally of finite type (resp. locally of finite presentation).
+Then the map \sref{IV.8.13.1.1} is injective (\textup{resp.} bijective).
+\end{proposition}
+
+\begin{proof}
+For $\lambda\geqslant\alpha$, set $Z_\lambda=Y\times_S X_\lambda$, so that $Z_\lambda=Z_\alpha\times_{X_\alpha}X_\lambda$.
+Similarly, set $Z=Y\times_S X=Z_\alpha\times_{X_\alpha}X$; it then follows from \sref{IV.8.2.5} that, if one also sets $w_{\lambda\mu}=1\times v_{\lambda\mu}:Z_\mu\to Z_\lambda$ for $\alpha\leqslant\lambda\leqslant\mu$ and $w_\lambda=1\times v_\lambda:Z\to Z_\lambda$ for $\alpha\leqslant\lambda$, then $Z$ is the projective limit of the system $(Z_\lambda,w_{\lambda\mu})$, and the $w_\lambda$ are the corresponding canonical morphisms.
+Furthermore, the morphism $Z_\alpha\to X_\alpha$ is locally of finite type (resp. locally of finite presentation) by \sref{IV.1.3.4} and \sref{IV.1.4.3}.
+Finally, by \sref[I]{I.3.3.14}, one has
+\[
+\operatorname{Hom}_S(X_\lambda,Y)=\operatorname{Hom}_{X_\lambda}(X_\lambda,Z_\lambda) \quad\text{and}\quad \operatorname{Hom}_S(X,Y)=\operatorname{Hom}_X(X,Z)
+\]
+It now suffices to apply \sref{IV.8.8.2},~(i), taking $X_\lambda=S_\lambda$ and replacing $Y_\lambda$ by $Z_\lambda$.
+\end{proof}
+
+\begin{corollary}[8.13.2]
+\label{IV.8.13.2}
+With the notation of \sref{IV.8.13.1}, suppose that $X_\alpha$ is quasi-compact and quasi-separated, and that the $v_{\alpha\lambda}$ are affine for $\alpha\leqslant\lambda$; suppose furthermore that $Y=\varprojlim Y_\rho$, where $(Y_\rho,t_{\rho\sigma})$ is a filtered projective system of $S$-preschemes such that, for each $\rho$, the structural morphism $Y_\rho\to S$ is locally of finite presentation.
+Then one has a canonical bijection
+\begin{equation}
+\label{IV.8.13.2.1}
+\operatorname{Hom}_S(X,Y)\xrightarrow{\sim}\varprojlim_\rho\left(\varinjlim_\lambda\operatorname{Hom}_S(X_\lambda,Y_\rho)\right). \tag{8.13.2.1}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Indeed, since $Y$ is the projective limit of the $Y_\rho$, the canonical map $\operatorname{Hom}_S(X,Y)\to\varprojlim_\rho\operatorname{Hom}_S(X,Y_\rho)$ is bijective; on the other hand, the hypotheses give, for each $\rho$, a canonical bijection $\operatorname{Hom}_S(X,Y_\rho)\xrightarrow{\sim}\varinjlim_\lambda\operatorname{Hom}_S(X_\lambda,Y_\rho)$ by \sref{IV.8.13.1}; whence the conclusion.
+\end{proof}
+
+\begin{env}[8.13.3]
+\label{IV.8.13.3}
+The preceding results allow one to interpret in the theory of preschemes the notions of ``pro-variety'' and ``pro-scheme'' which arise in certain applications (for example in local class field theory following the ideas of Serre~[39], or in N\'eron's theory of the reduction of
+----- French corrections on page IV-3 48 -----
+[id 16003]
+OLD: -Algèbre finie,
+NEW: -Algèbre \emph{finie},
+FRENCH CONTEXT (corrected): -fr}
+Soient $Y'$ un préschéma intègre, $Y$ un préschéma intègre et normal~; alors
+un morphisme $u:Y'\to Y$ fini et birationnel est un isomorphisme.
+\end{lemma}
+
+Posons en effet $\mathcal A=u_*(\mathcal O_{Y'})$, de sorte que $\mathcal A$
+est une $\mathcal O_Y$-Algèbre \emph{finie}, $Y'$ s'identifiant à
+$\operatorname{Spec}(\mathcal A)$ (\textbf{II}, 1.3.6). Si $R(Y)$ est le corps des
+fonctions rationnelles de $Y$, on a donc, pour tout $y\in Y$,
+$\mathcal O_{Y,y}\subset\mathcal A_y\subset R(Y)$~; mais comme l'anneau
+$\mathcal O_{Y,y}$ es
+
+[id 16005]
+OLD: (II, 6.3.4)
+NEW: \textup{(\textbf{II}, 6.3.4)}
+FRENCH CONTEXT (corrected): X$ un préschéma intègre et normal,
+$f:X\to Y$ un morphisme dominant et localement quasi-fini. Soient $K$ et
+$L$ (extension de $K$) les corps de fonctions rationnelles de $Y$ et $X$
+respectivement~; et soit $Y'$ la fermeture intégrale de $Y$ relativement à
+$L$ \textup{(\textbf{II}, 6.3.4)}~; alors $f$ se factorise d'une seule manière en
+$f:X\xrightarrow{f'}Y'\xrightarrow{u}Y$, où $f'$ est birationnel, et
+correspond à l'automorphisme identique de $L$~; $f'$ est alors un
+isomorphisme local, et pour que $f'$ soit une immersion ouverte, il faut et
+
+
+=================== PAGE IV-3 49 ===================
+----- (English page IV-3 48: shown above in this file) -----
+----- (English page IV-3 49: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 50 -----
+\oldpage[IV-3]{50}
+abelian varieties~[32]).
+Let us recall here rapidly the notion of \emph{pro-object} of a category, referring to chap.~V for more ample developments (we will moreover not use before chap.~V the interpretation that follows, and the reader can therefore omit it until the end of this number).
+Given a category $\mathcal{C}$, the category $\mathbf{Pro}(\mathcal{C})$ of \emph{pro-objects} of $\mathcal{C}$ has as its objects the \emph{projective systems} (in the universe under consideration) $\mathbf{X}=(X_\mu)_{\mu\in M}$ of objects of $\mathcal{C}$ whose index sets (which depend on the projective system) are assumed to be filtered preordered sets.
+Given two such pro-objects $\mathbf{X}=(X_\mu)_{\mu\in M}$ and $\mathbf{X}'=(X'_{\mu'})_{\mu'\in M'}$, the \emph{morphisms} from $\mathbf{X}$ to $\mathbf{X}'$ are by definition the elements of the set $\varprojlim_{\mu'}(\varinjlim_\mu\operatorname{Hom}(X_\mu,X'_{\mu'}))$; that these sets may serve as morphism sets is immediate. The composition of systems of morphisms $u_{\mu'}^\mu:X_\mu\to X'_{\mu'}$ and $u_{\mu''}^{\prime\mu'}:X'_{\mu'}\to X''_{\mu''}$, which are inductive in the upper index and projective in the lower index, is performed ``argument by argument'', that is, by considering the system $u_{\mu''}^{\prime\prime\mu}=u_{\mu''}^{\prime\mu'}\circ u_{\mu'}^\mu$.
+\end{env}
+
+\begin{env}[8.13.4]
+\label{IV.8.13.4}
+Let $S$ be a quasi-compact and quasi-separated prescheme, and denote by $\mathcal{C}$ the full subcategory of the category $(\mathbf{Sch})_{/S}$ of $S$-preschemes, formed of the $S$-preschemes $X$ having the following property: the structural morphism $X\to S$ factorises as $X\xrightarrow{g}X_0\xrightarrow{f}S$, where $g:X\to X_0$ is affine and $f:X_0\to S$ is \emph{of finite presentation}; we will say for short that the preschemes of $\mathcal{C}$ are \emph{essentially affine over} $S$.
+Consider on the other hand the full subcategory $\mathcal{C}'_0$ of $(\mathbf{Sch})_{/S}$ formed of the $S$-preschemes \emph{of finite presentation}, and the category $\mathbf{Pro}(\mathcal{C}'_0)$ of pro-objects of $\mathcal{C}'_0$.
+We will say that an object $\mathbf{X}=(X_\mu)_{\mu\in M}$ of $\mathbf{Pro}(\mathcal{C}'_0)$ is \emph{essentially affine} if there exists a $\gamma\in M$ such that for $\mu\geqslant\gamma$, the transition morphism $v_{\gamma\mu}:X_\mu\to X_\gamma$ is affine (which implies that for $\gamma\leqslant\nu\leqslant\mu$, $v_{\nu\mu}:X_\mu\to X_\nu$ is affine).
+One will note that an object of $\mathbf{Pro}(\mathcal{C}'_0)$ isomorphic to an essentially affine object \emph{is not} necessarily itself essentially affine.
+We will denote by $\mathcal{C}'$ the full subcategory of $\mathbf{Pro}(\mathcal{C}'_0)$ formed of pro-objects essentially affine.
+
+This being so, it follows from \sref{IV.8.2.2} and \sref{IV.8.2.3} that for every object $\mathbf{X}=(X_\mu)_{\mu\in M}$ of $\mathcal{C}'$, the $S$-prescheme $X=\varprojlim_\mu X_\mu$ exists; furthermore, since the morphism $X\to X_\mu$ is affine for all sufficiently large $\mu$ \sref{IV.8.2.2}, $X$ is \emph{essentially affine over} $S$ by definition.
+Set $X=L(\mathbf{X})$; let us show that one has thus defined a canonical \emph{functor}
+\begin{equation}
+\label{IV.8.13.4.1}
+L:\mathcal{C}'\to\mathcal{C} \tag{8.13.4.1}
+\end{equation}
+
+For two objects $\mathbf{X}=(X_\mu)$ and $\mathbf{X}'=(X'_{\mu'})$ of $\mathcal{C}'$, one has, for each $\mu'$, a canonical map
+\[
+\varinjlim_\mu\operatorname{Hom}_S(X_\mu,X'_{\mu'})\to\operatorname{Hom}_S(\varprojlim_\mu X_\mu,X'_{\mu'})
+\]
+defined in \sref{IV.8.13.1.1}; on the other hand, by definition of the projective limit, there is a canonical bijection
+\[
+\varprojlim_{\mu'}\operatorname{Hom}_S(\varprojlim_\mu X_\mu,X'_{\mu'})\xrightarrow{\sim}\operatorname{Hom}_S(\varprojlim_\mu X_\mu,\varprojlim_{\mu'}X'_{\mu'})
+\]
+----- French corrections on page IV-3 49 -----
+[id 16009]
+OLD: \subsection{Traduction en termes de pro-objets}
+NEW: \subsection{Traduction en termes de pro-objets.}
+FRENCH CONTEXT (corrected):  en outre, il résulte de (\textbf{I}, 5.5.1) que, pour que
+$f'$ soit séparé, il faut et il suffit que $f$ le soit, puisque $u$ est
+affine, donc séparé~; les deux dernières assertions sont donc des
+conséquences de (8.12.10) appliqué à $f'$.
+
+\oldpage[IV-3]{49}
+\subsection{Traduction en termes de pro-objets.}
+\label{subsection:IV.8.13-fr}
+
+La proposition suivante est essentiellement équivalente à (8.8.2, (i))~:
+
+\begin{proposition}[8.13.1]
+\label{IV.8.13.1-fr}
+Soient $S$ un préschéma, $(X_\lambda,v_{\lambda\mu})$ un système projectif
+filtrant de $S$-préschémas~; o
+
+[id 16010]
+OLD: entraîne (II, 1.6.2)
+NEW: entraîne \textup{(\textbf{II}, 1.6.2)}
+FRENCH CONTEXT (corrected): 3.1]
+\label{IV.8.13.1-fr}
+Soient $S$ un préschéma, $(X_\lambda,v_{\lambda\mu})$ un système projectif
+filtrant de $S$-préschémas~; on suppose qu'il existe $\alpha$ tel que
+$v_{\alpha\lambda}$ soit un morphisme affine pour tout $\lambda\geqslant
+\alpha$ (ce qui entraîne \textup{(\textbf{II}, 1.6.2)} que $v_{\lambda\mu}$ est affine pour
+$\alpha\leqslant\lambda\leqslant\mu$), de sorte que la limite projective
+$X=\varprojlim X_\lambda$ existe dans la catégorie des $S$-préschémas
+\textup{(8.2.3)}. Soit $Y$ un $S$-préschéma, et, pour tout $\lambda\geqslant\al
+
+[id 16011]
+OLD: $v_{\lambda\mu}$ soit affine
+NEW: $v_{\lambda\mu}$ est affine
+FRENCH CONTEXT (corrected): schéma, $(X_\lambda,v_{\lambda\mu})$ un système projectif
+filtrant de $S$-préschémas~; on suppose qu'il existe $\alpha$ tel que
+$v_{\alpha\lambda}$ soit un morphisme affine pour tout $\lambda\geqslant
+\alpha$ (ce qui entraîne \textup{(\textbf{II}, 1.6.2)} que $v_{\lambda\mu}$ est affine pour
+$\alpha\leqslant\lambda\leqslant\mu$), de sorte que la limite projective
+$X=\varprojlim X_\lambda$ existe dans la catégorie des $S$-préschémas
+\textup{(8.2.3)}. Soit $Y$ un $S$-préschéma, et, pour tout $\lambda\geqslant\alpha$,
+soit
+$e_\lambda:\operatorn
+
+[id 16014]
+OLD: soit
+\[
+e_\lambda:\operatorname{Hom}_S(X_\lambda,Y)
+\longrightarrow\operatorname{Hom}_S(X,Y)
+\]
+l'application
+NEW: soit
+$e_\lambda:\operatorname{Hom}_S(X_\lambda,Y)
+\to\operatorname{Hom}_S(X,Y)$
+l'application
+FRENCH CONTEXT (corrected): v_{\lambda\mu}$ est affine pour
+$\alpha\leqslant\lambda\leqslant\mu$), de sorte que la limite projective
+$X=\varprojlim X_\lambda$ existe dans la catégorie des $S$-préschémas
+\textup{(8.2.3)}. Soit $Y$ un $S$-préschéma, et, pour tout $\lambda\geqslant\alpha$,
+soit
+$e_\lambda:\operatorname{Hom}_S(X_\lambda,Y)
+\to\operatorname{Hom}_S(X,Y)$
+l'application qui, à tout $S$-morphisme $f_\lambda:X_\lambda\to Y$, fait
+correspondre $f=f_\lambda\circ v_\lambda$, où $v_\lambda:X\to X_\lambda$
+est le morphisme canonique. La famille $(e_\lambda)$ est un système inductif
+d'applications, qui définit donc une application c
+
+[id 16018]
+OLD: type fini (resp. localement
+NEW: type fini (\textup{resp.} localement
+FRENCH CONTEXT (corrected): 3.1.1-fr}
+\varinjlim\operatorname{Hom}_S(X_\lambda,Y)
+\longrightarrow\operatorname{Hom}_S(X,Y). \tag{8.13.1.1}
+\end{equation}
+
+Supposons $X_\alpha$ quasi-compact (\textup{resp.} quasi-compact et quasi-séparé), et le
+morphisme structural $Y\to S$ localement de type fini (\textup{resp.} localement de
+présentation finie). Alors l'application \textup{(8.13.1.1)} est injective (\textup{resp.}
+bijective).
+\end{proposition}
+
+Posons en effet, pour $\lambda\geqslant\alpha$,
+$Z_\lambda=Y\times_S X_\lambda$, de sorte que l'on a
+$Z_\lambda=Z_\alpha\times_{X_\alp
+
+[id 16021]
+OLD: \[
+w_{\lambda\mu}=1\times v_{\lambda\mu}:Z_\mu\to Z_\lambda
+\quad(\alpha\leqslant\lambda\leqslant\mu),
+\qquad
+w_\lambda=1\times v_\lambda:Z\to Z_\lambda
+\quad(\alpha\leqslant\lambda),
+\]
+$Z$ est limite
+NEW: $w_{\lambda\mu}=1\times v_{\lambda\mu}:Z_\mu\to Z_\lambda$
+pour $\alpha\leqslant\lambda\leqslant\mu$ et
+$w_\lambda=1\times v_\lambda:Z\to Z_\lambda$ pour $\alpha\leqslant\lambda$,
+$Z$ est limite
+FRENCH CONTEXT (corrected): on}
+
+Posons en effet, pour $\lambda\geqslant\alpha$,
+$Z_\lambda=Y\times_S X_\lambda$, de sorte que l'on a
+$Z_\lambda=Z_\alpha\times_{X_\alpha}X_\lambda$. Posons de même
+$Z=Y\times_S X=Z_\alpha\times_{X_\alpha}X$~; on sait alors (8.2.5) que, si
+l'on pose aussi
+$w_{\lambda\mu}=1\times v_{\lambda\mu}:Z_\mu\to Z_\lambda$
+pour $\alpha\leqslant\lambda\leqslant\mu$ et
+$w_\lambda=1\times v_\lambda:Z\to Z_\lambda$ pour $\alpha\leqslant\lambda$,
+$Z$ est limite projective du système projectif $(Z_\lambda,w_{\lambda\mu})$
+et les $w_\lambda$ sont les morphismes canoniques correspondants. Notons
+d'autre part que le morphisme $Z_\alpha\to X_\alpha$ est localement de type
+fini (resp. localement de présentation finie) (1.
+
+[id 16025]
+OLD: canonique
+\[
+\operatorname{Hom}_S(X,Y)\longrightarrow
+\varprojlim_\rho\operatorname{Hom}_S(X,Y_\rho)
+\]
+est bijective
+NEW: canonique
+$\operatorname{Hom}_S(X,Y)\to
+\varprojlim_\rho\operatorname{Hom}_S(X,Y_\rho)$
+est bijective
+FRENCH CONTEXT (corrected): )
+\xrightarrow{\sim}
+\varprojlim_\rho\left(\varinjlim_\lambda
+\operatorname{Hom}_S(X_\lambda,Y_\rho)\right). \tag{8.13.2.1}
+\end{equation}
+\end{corollary}
+
+En effet, le fait que $Y$ soit limite projective des $Y_\rho$ entraîne en
+particulier que l'application canonique
+$\operatorname{Hom}_S(X,Y)\to
+\varprojlim_\rho\operatorname{Hom}_S(X,Y_\rho)$
+est bijective~; et d'autre part, les hypothèses entraînent, pour chaque
+$\rho$, l'existence d'une bijection canonique
+$\operatorname{Hom}_S(X,Y_\rho)\xrightarrow{\sim}
+\varinjlim_\lambda\operatorname{Hom}_S(S_\lambda,Y_\rho)$
+en vertu de (8.13.1)~; d'où la conclusion.
+
+\be
+
+[id 16026]
+OLD: \[
+\operatorname{Hom}_S(X,Y_\rho)\xrightarrow{\sim}
+\varinjlim_\lambda\operatorname{Hom}_S(S_\lambda,Y_\rho)
+\]
+en vertu
+NEW: $\operatorname{Hom}_S(X,Y_\rho)\xrightarrow{\sim}
+\varinjlim_\lambda\operatorname{Hom}_S(S_\lambda,Y_\rho)$
+en vertu
+FRENCH CONTEXT (corrected): es $Y_\rho$ entraîne en
+particulier que l'application canonique
+$\operatorname{Hom}_S(X,Y)\to
+\varprojlim_\rho\operatorname{Hom}_S(X,Y_\rho)$
+est bijective~; et d'autre part, les hypothèses entraînent, pour chaque
+$\rho$, l'existence d'une bijection canonique
+$\operatorname{Hom}_S(X,Y_\rho)\xrightarrow{\sim}
+\varinjlim_\lambda\operatorname{Hom}_S(S_\lambda,Y_\rho)$
+en vertu de (8.13.1)~; d'où la conclusion.
+
+\begin{env}[8.13.3]
+\label{IV.8.13.3-fr}
+Les résultats précédents permettent d'interpréter dans la théorie des
+préschémas les notions de «~pro-variété~» ou de «~pro-schéma~» qui
+s'introduisent dans certaines applications (pa
+
+=================== PAGE IV-3 50 ===================
+----- (English page IV-3 49: shown above in this file) -----
+----- (English page IV-3 50: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 51 -----
+\oldpage[IV-3]{51}
+
+whence a canonical map
+\begin{equation}
+\label{IV.8.13.4.2}
+\varprojlim_{\mu'}\varinjlim_\mu\operatorname{Hom}_S(X_\mu,X'_{\mu'})\to\operatorname{Hom}_S(\varprojlim_\mu X_\mu,\varprojlim_{\mu'}X'_{\mu'}) \tag{8.13.4.2}
+\end{equation}
+evidently functorial in $\mathbf{X}$ and $\mathbf{X}'$, and which completes the definition of the functor $L$.
+\end{env}
+
+\begin{proposition}[8.13.5]
+\label{IV.8.13.5}
+Under the hypotheses and notation of \sref{IV.8.13.4}, the functor $L$ is fully faithful.
+If furthermore $S$ is a Noetherian prescheme (which already implies that $S$ is quasi-compact and quasi-separated \sref{IV.1.2.8}), $L$ is \emph{an equivalence of categories}.
+\end{proposition}
+
+\begin{proof}
+To say that $L$ is fully faithful means that the map \sref{IV.8.13.4.2} is bijective, which is a special case of \sref{IV.8.13.2}.
+Indeed, the structural morphisms $X_\mu\to S$ being of finite presentation, are in particular quasi-compact and quasi-separated, hence the $X_\mu$ are quasi-compact and quasi-separated.
+
+To show that when $S$ is Noetherian $L$ is an equivalence of categories, it suffices, since one already knows that $L$ is fully faithful, to prove that every essentially affine $S$-prescheme $X$ is $S$-\emph{isomorphic} to an object of the form $L(\mathbf{X})$ where $\mathbf{X}\in\mathcal{C}'$ $(\mathbf{0}_{\text{III}},~8.1.5)$.
+Now, by hypothesis there is a factorisation $X\xrightarrow{g}X_0\xrightarrow{f}S$ of the structural morphism, $f$ being of finite presentation and $g$ affine.
+One can therefore write $X=\operatorname{Spec}(\sh{A})$, where $\sh{A}$ is a quasi-coherent $\sh{O}_{X_0}$-Algebra \sref[II]{II.1.3.1}.
+Now, as $X_0$ is Noetherian (since it is of finite type over $S$ and $S$ is Noetherian), $\sh{A}$ is the filtered inductive limit of the family $(\sh{A}_\lambda)$ of its quasi-coherent sub-$\sh{O}_{X_0}$-Algebras of finite type \sref[I]{I.9.6.6}.
+Set $X_\lambda=\operatorname{Spec}(\sh{A}_\lambda)$; the morphisms $X_\lambda\to X_0$ are of finite type, hence of finite presentation since $X_0$ is Noetherian, and consequently the same is true of the composite morphisms $X_\lambda\to X_0\to S$ \sref{IV.1.6.2}; in other words, the $X_\lambda$ belong to $\mathcal{C}'_0$, and since the morphisms $X_\lambda\to X_0$ are affine, $\mathbf{X}=(X_\lambda)$ is an object of $\mathcal{C}'$ whose projective limit exists and is $S$-isomorphic to $X$ by \sref{IV.8.2.2}.
+This completes the proof.
+\end{proof}
+
+\begin{remark}[8.13.6]
+\label{IV.8.13.6}
+It follows from \sref{IV.1.6.2} and \sref[II]{II.1.6.2} that if $X$ and $Y$ are essentially affine over $S$, the same is true of $X\times_S Y$.
+One concludes for example $(\mathbf{0}_{\text{III}},~8.2.5)$ that a $\mathcal{C}$-group is nothing other than a $(\mathbf{Sch})_{/S}$-group which is a prescheme essentially affine over $S$.
+On the other hand, the finite products exist in the category $\mathcal{C}'$: indeed, if $\mathbf{X}=(X_\mu)_{\mu\in M}$, $\mathbf{Y}=(Y_\rho)_{\rho\in R}$ are two objects of $\mathcal{C}'$, the products $X_\mu\times_S Y_\rho$ are $S$-preschemes of finite presentation, and taking for transition morphisms $X_\nu\times_S Y_\sigma\to X_\mu\times_S Y_\rho$ the products of the transition morphisms $X_\nu\to X_\mu$ and $Y_\sigma\to Y_\rho$, one sees immediately that $(X_\mu\times_S Y_\rho)$ is a product of $\mathbf{X}$ and $\mathbf{Y}$ in $\mathbf{Pro}(\mathcal{C}'_0)$; furthermore, by \sref[II]{II.1.6.2}, the transition morphisms thus defined are affine for $\mu$ and $\rho$ large enough, hence the product $\mathbf{X}\times\mathbf{Y}$ also belongs to $\mathcal{C}'$.
+One concludes then as above that a $\mathcal{C}'$-group is a $\mathbf{Pro}(\mathcal{C}'_0)$-group which is essentially affine.
+One deduces from \sref{IV.8.13.5} that the categories of the $\mathcal{C}'$-groups and the $\mathcal{C}$-groups are \emph{equivalent} when $S$ is \emph{Noetherian}.
+It seems plausible that when $S$ is the spectrum of a field $k$, the category of $\mathcal{C}$-groups is \emph{equivalent} to that of the $\boldsymbol{K}$-\emph{groups}, where $\boldsymbol{K}$ is the category of $S$-preschemes \emph{quasi-compact}; in other words, every prescheme in groups quasi-compact over $k$ would be essentially affine.
+On the other hand, if one denotes
+----- French corrections on page IV-3 50 -----
+[id 16198]
+OLD: une catégorie $\mathcal C$, la catégorie
+$\mathbf{Pro}(\mathcal C)$ des \emph{pro-objets} de $\mathcal C$ a
+NEW: une catégorie $\boldsymbol{C}$, la catégorie
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C})$ des \emph{pro-objets} de $\boldsymbol{C}$ a
+FRENCH CONTEXT (corrected): {pro-objet} d'une
+catégorie, renvoyant au chap.~V pour de plus amples développements (nous
+n'utiliserons d'ailleurs pas avant le chap.~V l'interprétation qui va suivre,
+et le lecteur peut donc omettre jusque-là la lecture de la fin de ce numéro).
+Étant donnée une catégorie $\boldsymbol{C}$, la catégorie
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C})$ des \emph{pro-objets} de $\boldsymbol{C}$ a pour objets
+les \emph{systèmes projectifs} (dans l'univers où l'on se place)
+$\mathbf X=(X_\mu)_{\mu\in M}$ d'objets de $\boldsymbol{C}$ dont les ensembles
+d'indices (dépendant du système projectif considéré) sont supposés préordonnés
+filtrants. Étant donnés 
+
+[id 16199]
+OLD: d'objets de $\mathcal C$ dont
+NEW: d'objets de $\boldsymbol{C}$ dont
+FRENCH CONTEXT (corrected): éro).
+Étant donnée une catégorie $\boldsymbol{C}$, la catégorie
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C})$ des \emph{pro-objets} de $\boldsymbol{C}$ a pour objets
+les \emph{systèmes projectifs} (dans l'univers où l'on se place)
+$\mathbf X=(X_\mu)_{\mu\in M}$ d'objets de $\boldsymbol{C}$ dont les ensembles
+d'indices (dépendant du système projectif considéré) sont supposés préordonnés
+filtrants. Étant donnés deux tels pro-objets
+$\mathbf X=(X_\mu)_{\mu\in M}$,
+$\mathbf X'=(X'_{\mu'})_{\mu'\in M'}$, les \emph{morphismes} de $\mathbf X$
+dans $\mathbf
+
+[id 16200]
+OLD: de l'ensemble
+\[
+\varprojlim_{\mu'}\left(\varinjlim_\mu
+\operatorname{Hom}(X_\mu,X'_{\mu'})\right)~;
+\]
+la vérification
+NEW: de l'ensemble
+$\varprojlim_{\mu'}\left(\varinjlim_\mu
+\operatorname{Hom}(X_\mu,X'_{\mu'})\right)$~;
+la vérification
+FRENCH CONTEXT (corrected):  système projectif considéré) sont supposés préordonnés
+filtrants. Étant donnés deux tels pro-objets
+$\mathbf X=(X_\mu)_{\mu\in M}$,
+$\mathbf X'=(X'_{\mu'})_{\mu'\in M'}$, les \emph{morphismes} de $\mathbf X$
+dans $\mathbf X'$ sont par définition les éléments de l'ensemble
+$\varprojlim_{\mu'}\left(\varinjlim_\mu
+\operatorname{Hom}(X_\mu,X'_{\mu'})\right)$~;
+la vérification du fait que l'on peut prendre ces ensembles pour ensembles de
+morphismes est immédiate, la composition de systèmes de morphismes
+$u_{\mu'}^\mu:X_\mu\to X'_{\mu'}$,
+$u_{\mu''}^{\prime\mu'}:X'_{\mu'}\to X''_{\mu''}$ qui sont inductifs en
+l'indice supérieur et p
+
+[id 16202]
+OLD: par $\mathcal C$ la sous-catégorie pleine de la catégorie
+$(\mathbf{Sch})_{/S}$ des
+NEW: par $\boldsymbol{C}$ la sous-catégorie pleine de la catégorie
+$(\boldsymbol{\mathit{Sch}})_{/S}$ des
+FRENCH CONTEXT (corrected):  argument~», autrement dit en considérant le système des
+$u_{\mu''}^{\prime\prime\mu}=u_{\mu''}^{\prime\mu'}\circ u_{\mu'}^\mu$.
+\end{env}
+
+\begin{env}[8.13.4]
+\label{IV.8.13.4-fr}
+Considérons alors un préschéma quasi-compact et quasi-séparé $S$, et désignons
+par $\boldsymbol{C}$ la sous-catégorie pleine de la catégorie
+$(\boldsymbol{\mathit{Sch}})_{/S}$ des $S$-préschémas, formée des $S$-préschémas $X$ ayant
+la propriété suivante~: le morphisme structural $X\to S$ se factorise en
+$X\xrightarrow{g}X_0\xrightarrow{f}S$,
+où $g:X\to X_0$ est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~; nous
+dirons po
+
+[id 16203]
+OLD: se factorise en
+\[
+X\xrightarrow{g}X_0\xrightarrow{f}S,
+\]
+où $g:X\to X_0$
+NEW: se factorise en
+$X\xrightarrow{g}X_0\xrightarrow{f}S$,
+où $g:X\to X_0$
+FRENCH CONTEXT (corrected): a quasi-compact et quasi-séparé $S$, et désignons
+par $\boldsymbol{C}$ la sous-catégorie pleine de la catégorie
+$(\boldsymbol{\mathit{Sch}})_{/S}$ des $S$-préschémas, formée des $S$-préschémas $X$ ayant
+la propriété suivante~: le morphisme structural $X\to S$ se factorise en
+$X\xrightarrow{g}X_0\xrightarrow{f}S$,
+où $g:X\to X_0$ est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~; nous
+dirons pour abréger que les préschémas de $\boldsymbol{C}$ sont
+\emph{essentiellement affines au-dessus de $S$}.
+
+Considérons d'autre part la sous-catégorie pleine $\boldsymbol{C}'_0$ de
+$(
+
+[id 16204]
+OLD: est affine et $f:X_0\to S$ de présentation finie~;
+NEW: est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~;
+FRENCH CONTEXT (corrected): la sous-catégorie pleine de la catégorie
+$(\boldsymbol{\mathit{Sch}})_{/S}$ des $S$-préschémas, formée des $S$-préschémas $X$ ayant
+la propriété suivante~: le morphisme structural $X\to S$ se factorise en
+$X\xrightarrow{g}X_0\xrightarrow{f}S$,
+où $g:X\to X_0$ est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~; nous
+dirons pour abréger que les préschémas de $\boldsymbol{C}$ sont
+\emph{essentiellement affines au-dessus de $S$}.
+
+Considérons d'autre part la sous-catégorie pleine $\boldsymbol{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée des $S$-préschémas \emph{
+
+[id 16205]
+OLD: les préschémas de $\mathcal C$ sont
+NEW: les préschémas de $\boldsymbol{C}$ sont
+FRENCH CONTEXT (corrected): , formée des $S$-préschémas $X$ ayant
+la propriété suivante~: le morphisme structural $X\to S$ se factorise en
+$X\xrightarrow{g}X_0\xrightarrow{f}S$,
+où $g:X\to X_0$ est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~; nous
+dirons pour abréger que les préschémas de $\boldsymbol{C}$ sont
+\emph{essentiellement affines au-dessus de $S$}.
+
+Considérons d'autre part la sous-catégorie pleine $\boldsymbol{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée des $S$-préschémas \emph{de présentation finie},
+et la catégorie $\boldsymbol{\mathit{Pro}}(\b
+
+[id 16206]
+OLD: pleine $\mathcal C'_0$ de
+$(\mathbf{Sch})_{/S}$ formée
+NEW: pleine $\boldsymbol{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée
+FRENCH CONTEXT (corrected): rightarrow{f}S$,
+où $g:X\to X_0$ est \emph{affine} et $f:X_0\to S$ \emph{de présentation finie}~; nous
+dirons pour abréger que les préschémas de $\boldsymbol{C}$ sont
+\emph{essentiellement affines au-dessus de $S$}.
+
+Considérons d'autre part la sous-catégorie pleine $\boldsymbol{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée des $S$-préschémas \emph{de présentation finie},
+et la catégorie $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ des pro-objets de
+$\boldsymbol{C}'_0$. Nous dirons qu'un objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ est
+
+[id 16207]
+OLD: et la catégorie $\mathbf{Pro}(\mathcal C'_0)$ des pro-objets de
+$\mathcal C'_0$. Nous dirons
+NEW: et la catégorie $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ des pro-objets de
+$\boldsymbol{C}'_0$. Nous dirons
+FRENCH CONTEXT (corrected): r que les préschémas de $\boldsymbol{C}$ sont
+\emph{essentiellement affines au-dessus de $S$}.
+
+Considérons d'autre part la sous-catégorie pleine $\boldsymbol{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée des $S$-préschémas \emph{de présentation finie},
+et la catégorie $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ des pro-objets de
+$\boldsymbol{C}'_0$. Nous dirons qu'un objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ est
+\emph{essentiellement affine} s'il existe un $\gamma\in M$ tel que pour tout
+$\mu\geqslant\gamma$, le morphisme de transition
+$v_{\gamma\mu}:X_\mu\to X_\gamma$ so
+
+[id 16208]
+OLD: de $\mathbf{Pro}(\mathcal C'_0)$ est
+\emph{essentiellement affine}
+NEW: de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ est
+\emph{essentiellement affine}
+FRENCH CONTEXT (corrected): l{C}'_0$ de
+$(\boldsymbol{\mathit{Sch}})_{/S}$ formée des $S$-préschémas \emph{de présentation finie},
+et la catégorie $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ des pro-objets de
+$\boldsymbol{C}'_0$. Nous dirons qu'un objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ est
+\emph{essentiellement affine} s'il existe un $\gamma\in M$ tel que pour tout
+$\mu\geqslant\gamma$, le morphisme de transition
+$v_{\gamma\mu}:X_\mu\to X_\gamma$ soit \emph{affine} (ce qui entraîne que pour
+$\gamma\leqslant\mu\leqslant\nu$, $v_{\mu\nu}:X_\nu\to X_\mu$ est affine).
+On notera
+
+[id 16209]
+OLD: soit affine (ce qui
+NEW: soit \emph{affine} (ce qui
+FRENCH CONTEXT (corrected): ns qu'un objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ est
+\emph{essentiellement affine} s'il existe un $\gamma\in M$ tel que pour tout
+$\mu\geqslant\gamma$, le morphisme de transition
+$v_{\gamma\mu}:X_\mu\to X_\gamma$ soit \emph{affine} (ce qui entraîne que pour
+$\gamma\leqslant\mu\leqslant\nu$, $v_{\mu\nu}:X_\nu\to X_\mu$ est affine).
+On notera qu'un objet de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ \emph{isomorphe} à un
+objet essentiellement affine \emph{n'est pas} nécessairement essentielle
+
+[id 16210]
+OLD: objet de $\mathbf{Pro}(\mathcal C'_0)$ \emph{isomorphe}
+NEW: objet de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ \emph{isomorphe}
+FRENCH CONTEXT (corrected): xiste un $\gamma\in M$ tel que pour tout
+$\mu\geqslant\gamma$, le morphisme de transition
+$v_{\gamma\mu}:X_\mu\to X_\gamma$ soit \emph{affine} (ce qui entraîne que pour
+$\gamma\leqslant\mu\leqslant\nu$, $v_{\mu\nu}:X_\nu\to X_\mu$ est affine).
+On notera qu'un objet de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ \emph{isomorphe} à un
+objet essentiellement affine \emph{n'est pas} nécessairement essentiellement
+affine lui-même.
+Nous désignerons par $\boldsymbol{C}'$ la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ formée des pro-objets de $\boldsymbol{C}'_0$
+e
+
+[id 16212]
+OLD: par $\mathcal C'$ la sous-catégorie pleine de
+$\mathbf{Pro}(\mathcal C'_0)$ formée des pro-objets de $\mathcal C'_0$
+NEW: par $\boldsymbol{C}'$ la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ formée des pro-objets de $\boldsymbol{C}'_0$
+FRENCH CONTEXT (corrected): leqslant\nu$, $v_{\mu\nu}:X_\nu\to X_\mu$ est affine).
+On notera qu'un objet de $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ \emph{isomorphe} à un
+objet essentiellement affine \emph{n'est pas} nécessairement essentiellement
+affine lui-même.
+Nous désignerons par $\boldsymbol{C}'$ la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ formée des pro-objets de $\boldsymbol{C}'_0$
+essentiellement affines.
+
+Cela étant, il résulte de (8.2.2) et (8.2.3) que pour tout objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{C}'$, le $S$-préschéma
+$X=\varprojlim_\mu X_\mu$ existe~; en outre, comme, pour $\mu$ assez grand,
+le morphisme $X\to X_\
+
+[id 16213]
+OLD: de $\mathcal C'$, le $S$-préschéma
+NEW: de $\boldsymbol{C}'$, le $S$-préschéma
+FRENCH CONTEXT (corrected): $\boldsymbol{C}'$ la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$ formée des pro-objets de $\boldsymbol{C}'_0$
+essentiellement affines.
+
+Cela étant, il résulte de (8.2.2) et (8.2.3) que pour tout objet
+$\mathbf X=(X_\mu)_{\mu\in M}$ de $\boldsymbol{C}'$, le $S$-préschéma
+$X=\varprojlim_\mu X_\mu$ existe~; en outre, comme, pour $\mu$ assez grand,
+le morphisme $X\to X_\mu$ est affine (8.2.2), $X$ est
+\emph{essentiellement affine au-dessus de $S$} par définition. Posons
+$X=L(\mathbf X)$~; montrons qu'on a ainsi défini un \emph{f
+
+[id 16214]
+OLD: \emph{foncteur canonique}
+NEW: \emph{foncteur} canonique
+FRENCH CONTEXT (corrected): éschéma
+$X=\varprojlim_\mu X_\mu$ existe~; en outre, comme, pour $\mu$ assez grand,
+le morphisme $X\to X_\mu$ est affine (8.2.2), $X$ est
+\emph{essentiellement affine au-dessus de $S$} par définition. Posons
+$X=L(\mathbf X)$~; montrons qu'on a ainsi défini un \emph{foncteur} canonique
+\begin{equation}
+\label{IV.8.13.4.1-fr}
+L:\boldsymbol{C}'\longrightarrow\boldsymbol{C} \tag{8.13.4.1}
+\end{equation}
+On a en effet, pour deux objets $\mathbf X=(X_\mu)$,
+$\mathbf X'=(X'_{\mu'})$ de $\boldsymbol{C}'$, une application canonique pour
+chaque $\mu
+
+[id 16215]
+OLD: L:\mathcal C'\longrightarrow\mathcal C
+NEW: L:\boldsymbol{C}'\longrightarrow\boldsymbol{C}
+FRENCH CONTEXT (corrected): \mu$ assez grand,
+le morphisme $X\to X_\mu$ est affine (8.2.2), $X$ est
+\emph{essentiellement affine au-dessus de $S$} par définition. Posons
+$X=L(\mathbf X)$~; montrons qu'on a ainsi défini un \emph{foncteur} canonique
+\begin{equation}
+\label{IV.8.13.4.1-fr}
+L:\boldsymbol{C}'\longrightarrow\boldsymbol{C} \tag{8.13.4.1}
+\end{equation}
+On a en effet, pour deux objets $\mathbf X=(X_\mu)$,
+$\mathbf X'=(X'_{\mu'})$ de $\boldsymbol{C}'$, une application canonique pour
+chaque $\mu'$
+\[
+\varinjlim_\mu\operatorname{Hom}_S(X_\mu,X'_{\mu'})
+\longrightarrow
+\operatorname
+
+[id 16218]
+OLD: de $\mathcal C'$, une application
+NEW: de $\boldsymbol{C}'$, une application
+FRENCH CONTEXT (corrected): X)$~; montrons qu'on a ainsi défini un \emph{foncteur} canonique
+\begin{equation}
+\label{IV.8.13.4.1-fr}
+L:\boldsymbol{C}'\longrightarrow\boldsymbol{C} \tag{8.13.4.1}
+\end{equation}
+On a en effet, pour deux objets $\mathbf X=(X_\mu)$,
+$\mathbf X'=(X'_{\mu'})$ de $\boldsymbol{C}'$, une application canonique pour
+chaque $\mu'$
+\[
+\varinjlim_\mu\operatorname{Hom}_S(X_\mu,X'_{\mu'})
+\longrightarrow
+\operatorname{Hom}_S(\varprojlim X_\mu,X'_{\mu'})
+\]
+définie dans (8.13.1.1), et d'autre part, par définition de la limite
+projective, une bijection canonique
+
+
+=================== PAGE IV-3 51 ===================
+----- (English page IV-3 50: shown above in this file) -----
+----- (English page IV-3 51: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 52 -----
+\oldpage[IV-3]{52}
+by $\mathcal{C}'_0$-$\boldsymbol{gr}$ the category of the $\mathcal{C}'_0$-groups, it is very likely that the category of the $\mathcal{C}'$-groups is equivalent to the full subcategory of $\mathbf{Pro}(\mathcal{C}'_0\text{-}\boldsymbol{gr})$ formed of the ``proalgebraic groups essentially affine'', that is to say the projective systems $\mathbf{G}=(G_\mu)_{\mu\in M}$, where the $G_\mu$ are algebraic groups over $k$ and the transition morphisms $G_\nu\to G_\mu$ are affine for $\mu$ large enough (which is what one can also express by saying that $\mathbf{G}$ is an extension of an algebraic group by a pro-algebraic group affine).
+The conjunction of these two conjectures is moreover equivalent to the following: every quasi-compact group prescheme over $k$ is an extension of an ``algebraic group'' (i.e.\ a group prescheme of finite type over $k$) by a group prescheme \emph{affine} over $k$.
+The only pro-algebraic groups encountered in practice until now being in fact essentially affine, it would therefore be advantageous to substitute for the study of general pro-algebraic groups (introduced and studied by Serre~[40]) that of schemes in groups quasi-compact over $k$, whose definition is conceptually much simpler.
+\end{remark}
+
+\subsection{Characterisation of a prescheme locally of finite presentation over another, in terms of the functor it represents}
+\label{subsection:IV.8.14}
+
+\begin{env}[8.14.1]
+\label{IV.8.14.1}
+Given a prescheme $S$, we will say, as in \sref{IV.8.13.4}, that a filtered projective system $(X_\lambda,v_{\lambda\mu})$ of $S$-preschemes is \emph{essentially affine} if there exists $\alpha$ such that $v_{\alpha\lambda}$ is an affine morphism for $\lambda\geqslant\alpha$.
+
+The following statement, which will be especially useful in chap.~V, makes \sref{IV.8.8.2},~(i) more precise by providing a converse:
+\end{env}
+
+\begin{proposition}[8.14.2]
+\label{IV.8.14.2}
+Let $S$ be a prescheme, $f:X\to S$ a morphism.
+For every $S$-prescheme $T$, set
+\[
+h_X(T)=\operatorname{Hom}_S(T,X)
+\]
+so that $h_X$ is a contravariant functor from the category $(\mathbf{Sch})_{/S}$ of $S$-preschemes to the category $\mathbf{Ens}$ of sets $(\mathbf{0}_{\text{III}},~8.1.1)$, and $X$ is an object representing this functor $(\mathbf{0}_{\text{III}},~8.1.8)$.
+The following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $f$ is locally of finite presentation.
+  \item For every filtered projective system $(Z_\lambda)$ of $S$-preschemes, essentially affine \sref{IV.8.13.4} and formed of quasi-compact and quasi-separated preschemes, the canonical map \sref{IV.8.13.1.1}
+\begin{equation}
+\label{IV.8.14.2.1}
+\varinjlim_\lambda h_X(Z_\lambda)\to h_X(\varprojlim_\lambda Z_\lambda) \tag{8.14.2.1}
+\end{equation}
+is bijective.
+  \item For every filtered projective system $(Z_\lambda)$ of $S$-preschemes such that the $Z_\lambda$ are affine schemes, the map \sref{IV.8.14.2.1} is bijective.
+  \item[\rm c$'$)] For every affine open subset $U$ of $S$ and every filtered projective system $(Z_\lambda)$ of $U$-preschemes such that the $Z_\lambda$ are affine schemes, the map \sref{IV.8.14.2.1} is bijective.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The fact that \emph{a)} implies \emph{b)} is precisely \sref{IV.8.13.1}; it is trivial that \emph{b)} implies \emph{c)} and that \emph{c)} implies \emph{c$'$)}.
+It remains to see that \emph{c$'$)} implies \emph{a)}, and as the property \emph{a)} is local on $S$, one can restrict to the case where $S$ is \emph{affine}.
+----- French corrections on page IV-3 51 -----
+[id 16223]
+OLD: (ce qui implique
+déjà que $S$ est quasi-compact et quasi-séparé (1.2.8))
+NEW: \textup{(ce qui implique
+déjà que $S$ est quasi-compact et quasi-séparé (1.2.8))}
+FRENCH CONTEXT (corrected): bf X'$, et qui complète la
+définition du foncteur $L$.
+\end{env}
+
+\begin{proposition}[8.13.5]
+\label{IV.8.13.5-fr}
+Les hypothèses et notations étant celles de \textup{(8.13.4)}, le foncteur $L$ est
+pleinement fidèle. Si de plus $S$ est un préschéma noethérien \textup{(ce qui implique
+déjà que $S$ est quasi-compact et quasi-séparé (1.2.8))}, $L$ est une
+équivalence de catégories.
+\end{proposition}
+
+Dire que $L$ est pleinement fidèle signifie que l'application (8.13.4.2) est
+bijective quels que soient $\mathbf X$, $\mathbf X'$ dans $\boldsymbol{C}'$, ce
+qui est un cas particulier de (8.13.2)~: en
+
+[id 16224]
+OLD: \emph{équivalence de catégories}
+NEW: équivalence de catégories
+FRENCH CONTEXT (corrected): label{IV.8.13.5-fr}
+Les hypothèses et notations étant celles de \textup{(8.13.4)}, le foncteur $L$ est
+pleinement fidèle. Si de plus $S$ est un préschéma noethérien \textup{(ce qui implique
+déjà que $S$ est quasi-compact et quasi-séparé (1.2.8))}, $L$ est une
+équivalence de catégories.
+\end{proposition}
+
+Dire que $L$ est pleinement fidèle signifie que l'application (8.13.4.2) est
+bijective quels que soient $\mathbf X$, $\mathbf X'$ dans $\boldsymbol{C}'$, ce
+qui est un cas particulier de (8.13.2)~: en effet, les morphismes structuraux
+$X_\
+
+[id 16225]
+OLD: dans $\mathcal C'$, ce
+NEW: dans $\boldsymbol{C}'$, ce
+FRENCH CONTEXT (corrected):  qui implique
+déjà que $S$ est quasi-compact et quasi-séparé (1.2.8))}, $L$ est une
+équivalence de catégories.
+\end{proposition}
+
+Dire que $L$ est pleinement fidèle signifie que l'application (8.13.4.2) est
+bijective quels que soient $\mathbf X$, $\mathbf X'$ dans $\boldsymbol{C}'$, ce
+qui est un cas particulier de (8.13.2)~: en effet, les morphismes structuraux
+$X_\mu\to S$ étant de présentation finie, sont en particulier quasi-compacts
+et quasi-séparés, donc les $X_\mu$ sont quasi-compacts et quasi-séparés.
+
+Pour montrer que lorsque $S$ e
+
+[id 16226]
+OLD: $\mathbf X\in\mathcal C'$
+NEW: $\mathbf X\in\boldsymbol{C}'$
+FRENCH CONTEXT (corrected): e lorsque $S$ est noethérien $L$ est une équivalence de
+catégories, il suffit, puisque l'on sait déjà que $L$ est pleinement fidèle,
+de prouver que tout $S$-préschéma essentiellement affine $X$ est
+$S$-\emph{isomorphe} à un objet de la forme $L(\mathbf X)$ où
+$\mathbf X\in\boldsymbol{C}'$ $(\mathbf 0_{\mathrm{III}},8.1.5)$.
+Or, il y a par hypothèse une factorisation
+$X\xrightarrow{g}X_0\xrightarrow{f}S$ du morphisme structural, $f$ étant de
+présentation finie et $g$ affine. On peut donc écrire
+$X=\operatorname{Spec}(\mathcal A)$, où $\mathcal 
+
+[id 16230]
+OLD: appartiennent à $\mathcal C'_0$ et comme
+NEW: appartiennent à $\boldsymbol{C}'_0$ et comme
+FRENCH CONTEXT (corrected): {Spec}(\mathcal A_\lambda)$~; les morphismes
+$X_\lambda\to X_0$ sont de type fini, donc de présentation finie puisque
+$X_0$ est noethérien, et par suite il en est de même des morphismes composés
+$X_\lambda\to X_0\to S$ (1.6.2)~; autrement dit, les $X_\lambda$
+appartiennent à $\boldsymbol{C}'_0$ et comme les morphismes $X_\lambda\to X_0$
+sont affines, $\mathbf X=(X_\lambda)$ est un objet de $\boldsymbol{C}'$ dont la
+limite projective existe et est $S$-isomorphe à $X$ en vertu de (8.2.2). Ceci
+achève la démonstration.
+
+\begin{remark}[8.13.6]
+\label{IV.8.13.6-f
+
+[id 16231]
+OLD: est un objet de $\mathcal C'$ dont la
+NEW: est un objet de $\boldsymbol{C}'$ dont la
+FRENCH CONTEXT (corrected): 
+$X_0$ est noethérien, et par suite il en est de même des morphismes composés
+$X_\lambda\to X_0\to S$ (1.6.2)~; autrement dit, les $X_\lambda$
+appartiennent à $\boldsymbol{C}'_0$ et comme les morphismes $X_\lambda\to X_0$
+sont affines, $\mathbf X=(X_\lambda)$ est un objet de $\boldsymbol{C}'$ dont la
+limite projective existe et est $S$-isomorphe à $X$ en vertu de (8.2.2). Ceci
+achève la démonstration.
+
+\begin{remark}[8.13.6]
+\label{IV.8.13.6-fr}
+Il résulte de (1.6.2) et de (\textbf{II}, 1.6.2) que si $X$ et $Y$ sont
+essentiellement affines au-dessus de $S
+
+[id 16233]
+OLD: qu'un $\mathcal C$
+NEW: qu'un $\boldsymbol{C}$
+FRENCH CONTEXT (corrected): begin{remark}[8.13.6]
+\label{IV.8.13.6-fr}
+Il résulte de (1.6.2) et de (\textbf{II}, 1.6.2) que si $X$ et $Y$ sont
+essentiellement affines au-dessus de $S$, alors il en est de même de
+$X\times_S Y$. On en conclut par exemple $(\mathbf 0_{\mathrm{III}},8.2.5)$
+qu'un $\boldsymbol{C}$-\emph{groupe} n'est autre qu'un $(\boldsymbol{\mathit{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu
+
+[id 16234]
+OLD: -groupe n'est autre
+NEW: -\emph{groupe} n'est autre
+FRENCH CONTEXT (corrected): \label{IV.8.13.6-fr}
+Il résulte de (1.6.2) et de (\textbf{II}, 1.6.2) que si $X$ et $Y$ sont
+essentiellement affines au-dessus de $S$, alors il en est de même de
+$X\times_S Y$. On en conclut par exemple $(\mathbf 0_{\mathrm{III}},8.2.5)$
+qu'un $\boldsymbol{C}$-\emph{groupe} n'est autre qu'un $(\boldsymbol{\mathit{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rh
+
+[id 16235]
+OLD: $(\mathbf{Sch})_{/S}$
+NEW: $(\boldsymbol{\mathit{Sch}})_{/S}$
+FRENCH CONTEXT (corrected): e (1.6.2) et de (\textbf{II}, 1.6.2) que si $X$ et $Y$ sont
+essentiellement affines au-dessus de $S$, alors il en est de même de
+$X\times_S Y$. On en conclut par exemple $(\mathbf 0_{\mathrm{III}},8.2.5)$
+qu'un $\boldsymbol{C}$-\emph{groupe} n'est autre qu'un $(\boldsymbol{\mathit{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rho)_{\rho\in R}$ sont deux
+objets de $\bol
+
+[id 16236]
+OLD: -groupe qui
+est un préschéma
+NEW: -\emph{groupe} qui
+est un préschéma
+FRENCH CONTEXT (corrected): 2) que si $X$ et $Y$ sont
+essentiellement affines au-dessus de $S$, alors il en est de même de
+$X\times_S Y$. On en conclut par exemple $(\mathbf 0_{\mathrm{III}},8.2.5)$
+qu'un $\boldsymbol{C}$-\emph{groupe} n'est autre qu'un $(\boldsymbol{\mathit{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rho)_{\rho\in R}$ sont deux
+objets de $\boldsymbol{C}'$, les produits $X_\mu\t
+
+[id 16237]
+OLD: la catégorie $\mathcal C'$~:
+NEW: la catégorie $\boldsymbol{C}'$~:
+FRENCH CONTEXT (corrected): par exemple $(\mathbf 0_{\mathrm{III}},8.2.5)$
+qu'un $\boldsymbol{C}$-\emph{groupe} n'est autre qu'un $(\boldsymbol{\mathit{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rho)_{\rho\in R}$ sont deux
+objets de $\boldsymbol{C}'$, les produits $X_\mu\times_S Y_\rho$ sont des
+$S$-préschémas de présentation finie, et en prenant pour morphismes de
+transition
+$X_\nu\times_S 
+
+[id 16238]
+OLD: objets de $\mathcal C'$, les produits
+NEW: objets de $\boldsymbol{C}'$, les produits
+FRENCH CONTEXT (corrected): it{Sch}})_{/S}$-\emph{groupe} qui
+est un préschéma essentiellement affine au-dessus de $S$. D'autre part, les
+produits finis existent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rho)_{\rho\in R}$ sont deux
+objets de $\boldsymbol{C}'$, les produits $X_\mu\times_S Y_\rho$ sont des
+$S$-préschémas de présentation finie, et en prenant pour morphismes de
+transition
+$X_\nu\times_S Y_\sigma\longrightarrow X_\mu\times_S Y_\rho$
+les produits des morphismes de transition $X_\nu\to X_\mu$ et
+$Y_\sigma\to Y_\rho$, 
+
+[id 16239]
+OLD: pour morphismes de
+transition
+\[
+X_\nu\times_S Y_\sigma\longrightarrow X_\mu\times_S Y_\rho
+\]
+les produits
+NEW: pour morphismes de
+transition
+$X_\nu\times_S Y_\sigma\longrightarrow X_\mu\times_S Y_\rho$
+les produits
+FRENCH CONTEXT (corrected): xistent dans la catégorie $\boldsymbol{C}'$~: en effet, si
+$\mathbf X=(X_\mu)_{\mu\in M}$, $\mathbf Y=(Y_\rho)_{\rho\in R}$ sont deux
+objets de $\boldsymbol{C}'$, les produits $X_\mu\times_S Y_\rho$ sont des
+$S$-préschémas de présentation finie, et en prenant pour morphismes de
+transition
+$X_\nu\times_S Y_\sigma\longrightarrow X_\mu\times_S Y_\rho$
+les produits des morphismes de transition $X_\nu\to X_\mu$ et
+$Y_\sigma\to Y_\rho$, on voit aussitôt que
+$(X_\mu\times_S Y_\rho)$ est produit de $\mathbf X$ et de $\mathbf Y$ dans
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$~; en outre (\textbf{II}, 1.6.2) les morphisme
+
+[id 16240]
+OLD: $\mathbf{Pro}(\mathcal C'_0)$~;
+NEW: $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$~;
+FRENCH CONTEXT (corrected): smes de
+transition
+$X_\nu\times_S Y_\sigma\longrightarrow X_\mu\times_S Y_\rho$
+les produits des morphismes de transition $X_\nu\to X_\mu$ et
+$Y_\sigma\to Y_\rho$, on voit aussitôt que
+$(X_\mu\times_S Y_\rho)$ est produit de $\mathbf X$ et de $\mathbf Y$ dans
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$~; en outre (\textbf{II}, 1.6.2) les morphismes de
+transition ainsi définis sont affines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\bold
+
+[id 16242]
+OLD: bien à
+$\mathcal C'$. On conclut
+NEW: bien à
+$\boldsymbol{C}'$. On conclut
+FRENCH CONTEXT (corrected): et de $\mathbf Y$ dans
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$~; en outre (\textbf{II}, 1.6.2) les morphismes de
+transition ainsi définis sont affines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$
+
+[id 16243]
+OLD: haut qu'un $\mathcal C'$
+NEW: haut qu'un $\boldsymbol{C}'$
+FRENCH CONTEXT (corrected): dsymbol{C}'_0)$~; en outre (\textbf{II}, 1.6.2) les morphismes de
+transition ainsi définis sont affines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ 
+
+[id 16244]
+OLD: -groupe est
+un
+NEW: -\emph{groupe} est
+un
+FRENCH CONTEXT (corrected): \textbf{II}, 1.6.2) les morphismes de
+transition ainsi définis sont affines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}
+
+[id 16245]
+OLD: $\mathbf{Pro}(\mathcal C'_0)$-
+NEW: $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-
+FRENCH CONTEXT (corrected): s morphismes de
+transition ainsi définis sont affines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}. Il semble plausible que lorsque $S$ est le spe
+
+[id 16246]
+OLD: groupe qui est essentiellement affine. On
+NEW: \emph{groupe} qui est essentiellement affine. On
+FRENCH CONTEXT (corrected): ffines pour $\mu$ et $\rho$ assez grands, donc
+le produit $\mathbf X\times\mathbf Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}. Il semble plausible que lorsque $S$ est le spectre d'un
+corps $k$, la catégorie des $\boldsymb
+
+[id 16247]
+OLD: catégories des $\mathcal C'$-groupes et des
+$\mathcal C$-groupes
+NEW: catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes
+FRENCH CONTEXT (corrected):  Y$ ainsi défini appartient bien à
+$\boldsymbol{C}'$. On conclut alors comme plus haut qu'un $\boldsymbol{C}'$-\emph{groupe} est
+un $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0)$-\emph{groupe} qui est essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}. Il semble plausible que lorsque $S$ est le spectre d'un
+corps $k$, la catégorie des $\boldsymbol{C}$-groupes soit \emph{équivalente} à
+celle des $\boldsymbol K$-\emph{groupes}, où $\boldsymbol K$ est
+
+[id 16248]
+OLD: la catégorie des $\mathcal C$-groupes soit
+NEW: la catégorie des $\boldsymbol{C}$-groupes soit
+FRENCH CONTEXT (corrected):  essentiellement affine. On
+déduit donc de (8.13.5) que les catégories des $\boldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}. Il semble plausible que lorsque $S$ est le spectre d'un
+corps $k$, la catégorie des $\boldsymbol{C}$-groupes soit \emph{équivalente} à
+celle des $\boldsymbol K$-\emph{groupes}, où $\boldsymbol K$ est la catégorie des
+$S$-préschémas \emph{quasi-compacts}~; autrement dit, tout préschéma en
+groupes sur $k$ qui est quasi-compact serait essentiellement affine. D'autre
+part, s
+
+[id 16249]
+OLD: $\boldsymbol K$-groupes, où
+NEW: $\boldsymbol K$-\emph{groupes}, où
+FRENCH CONTEXT (corrected): oldsymbol{C}'$-groupes et des
+$\boldsymbol{C}$-groupes sont \emph{équivalentes} lorsque $S$ est
+\emph{noethérien}. Il semble plausible que lorsque $S$ est le spectre d'un
+corps $k$, la catégorie des $\boldsymbol{C}$-groupes soit \emph{équivalente} à
+celle des $\boldsymbol K$-\emph{groupes}, où $\boldsymbol K$ est la catégorie des
+$S$-préschémas \emph{quasi-compacts}~; autrement dit, tout préschéma en
+groupes sur $k$ qui est quasi-compact serait essentiellement affine. D'autre
+part, si l'on désigne
+\oldpage[IV-3]{52}
+par $\boldsymbol{C}'_0$-$\boldsy
+
+=================== PAGE IV-3 52 ===================
+----- (English page IV-3 51: shown above in this file) -----
+----- (English page IV-3 52: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 53 -----
+\oldpage[IV-3]{53}
+
+Suppose first that $X$ is also affine; the assertion to prove is then equivalent to the following:
+
+\begin{corollary}[8.14.2.2]
+\label{IV.8.14.2.2}
+Let $A$ be a ring, $B$ an $A$-algebra.
+In order that, for every filtered inductive system $(C_\lambda)$ of $A$-algebras, the canonical map
+\begin{equation}
+\label{IV.8.14.2.3}
+\varinjlim_\lambda\operatorname{Hom}_{A\text{-}\mathrm{alg.}}(B,C_\lambda)\to\operatorname{Hom}_{A\text{-}\mathrm{alg.}}(B,\varinjlim_\lambda C_\lambda) \tag{8.14.2.3}
+\end{equation}
+be bijective, it is necessary and sufficient that $B$ be an $A$-algebra of finite presentation.
+\end{corollary}
+
+It remains only to show that the condition is necessary.
+First, for $(C_\lambda)$ take the filtered inductive system of sub-$A$-algebras of finite type of $B$, so that $\varinjlim C_\lambda=B$.
+The fact that \sref{IV.8.14.2.3} is bijective implies in particular that the identity map $1_B:B\to B$ factorises as $B\to C_\lambda\to B$ for a suitable $\lambda$, which implies that $C_\lambda=B$, hence $B$ is an $A$-algebra \emph{of finite type}.
+Write $B=C/\mathfrak{J}$, where $C=A[T_1,\ldots,T_n]$ and $\mathfrak{J}$ is an ideal of $C$. The ideal $\mathfrak{J}$ is the filtered inductive limit of its ideals of finite type $\mathfrak{J}_\lambda\subset\mathfrak{J}$; setting $C_\lambda=C/\mathfrak{J}_\lambda$ and using the exactness of filtered inductive limits, one sees that $B$ is again isomorphic to the inductive limit of the filtered inductive system $(C_\lambda)$.
+There exists therefore a $\lambda$ and an $A$-homomorphism $u:B\to C_\lambda$ such that the composite $B\xrightarrow{u}C_\lambda\xrightarrow{p_\lambda}B$ (where $p_\lambda$ is the canonical homomorphism) is the identity.
+Let $q_\lambda:C\to C_\lambda$ be the canonical homomorphism, and set
+$t_i=p_\lambda(q_\lambda(T_i))$.
+Then $p_\lambda(u(t_i))=p_\lambda(q_\lambda(T_i))$, in other words
+$u(t_i)\setmin q_\lambda(T_i)\in\mathfrak{J}/\mathfrak{J}_\lambda$.
+There is therefore a $\mu\geqslant\lambda$ such that these $n$ elements belong to
+$\mathfrak{J}_\mu/\mathfrak{J}_\lambda$ ($1\leqslant i\leqslant n$).
+If $p_{\mu\lambda}:C_\lambda\to C_\mu$ is the canonical homomorphism, then
+$p_{\mu\lambda}(u(t_i))=p_{\mu\lambda}(q_\lambda(T_i))=q_\mu(T_i)$.
+Replacing $\lambda$ by $\mu$ and $u$ by $p_{\mu\lambda}\circ u$, we may therefore
+suppose that $u(t_i)=q_\lambda(T_i)$ for every $i$; and if
+$r=p_\lambda\circ q_\lambda$ is the canonical homomorphism
+$C\to C/\mathfrak{J}=B$, we may write $u(r(T_i))=q_\lambda(T_i)$ for every $i$,
+whence $q_\lambda=u\circ r$.
+This necessarily implies that $\mathfrak{J}=\mathfrak{J}_\lambda$: if $z\in\mathfrak{J}$, then $r(z)=0$, hence $q_\lambda(z)=u(r(z))=0$ and $z\in\mathfrak{J}_\lambda$. Thus $B=C_\lambda$.
+
+Let us now pass to the case where $S$ is affine and $X$ arbitrary; what amounts to proving is that an affine open subset $V$ of $X$ is of finite presentation over $S$, and by virtue of what has just been shown, it suffices to prove that for every filtered projective system $(Z_\lambda)$ of affine $S$-preschemes, the map
+\begin{equation}
+\label{IV.8.14.2.4}
+\varinjlim_\lambda\operatorname{Hom}_S(Z_\lambda,V)\to\operatorname{Hom}_S(\varprojlim_\lambda Z_\lambda,V) \tag{8.14.2.4}
+\end{equation}
+is bijective.
+It is immediate that this map is injective, for if $(v_\lambda)$, $(v'_\lambda)$ are two inductive systems of $S$-homomorphisms $v_\lambda:Z_\lambda\to V$, $v'_\lambda:Z_\lambda\to V$ such that the corresponding morphisms
+\[
+Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{v_\lambda}V,\qquad
+Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{v'_\lambda}V
+\]
+are equal ($u_\lambda$ being the canonical morphism), then the morphisms
+\[
+Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{v_\lambda}V\xrightarrow{j}X,\qquad Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{v'_\lambda}V\xrightarrow{j}X
+\]
+(where $j$ is the canonical injection) are equal, which implies $j\circ v_\lambda=j\circ v'_\lambda$ by hypothesis for a suitable $\lambda$, hence $v_\lambda=v'_\lambda$.
+----- French corrections on page IV-3 52 -----
+[id 16250]
+OLD: par $\mathcal C'_0$-$\boldsymbol{gr}$ la catégorie des
+$\mathcal C'_0$-groupes
+NEW: par $\boldsymbol{C}'_0$-$\boldsymbol{gr}$ la catégorie des
+$\boldsymbol{C}'_0$-groupes
+FRENCH CONTEXT (corrected): boldsymbol K$-\emph{groupes}, où $\boldsymbol K$ est la catégorie des
+$S$-préschémas \emph{quasi-compacts}~; autrement dit, tout préschéma en
+groupes sur $k$ qui est quasi-compact serait essentiellement affine. D'autre
+part, si l'on désigne
+\oldpage[IV-3]{52}
+par $\boldsymbol{C}'_0$-$\boldsymbol{gr}$ la catégorie des
+$\boldsymbol{C}'_0$-groupes, il est vraisemblable que la catégorie des
+$\boldsymbol{C}'$-groupes est équivalente à la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0\text{-}\boldsymbol{gr})$ formée des «~groupes
+proalgébriques essentiellement affines~», c'est-à-dir
+
+[id 16251]
+OLD: $\mathcal C'$-groupes est équivalente
+NEW: $\boldsymbol{C}'$-groupes est équivalente
+FRENCH CONTEXT (corrected): réschéma en
+groupes sur $k$ qui est quasi-compact serait essentiellement affine. D'autre
+part, si l'on désigne
+\oldpage[IV-3]{52}
+par $\boldsymbol{C}'_0$-$\boldsymbol{gr}$ la catégorie des
+$\boldsymbol{C}'_0$-groupes, il est vraisemblable que la catégorie des
+$\boldsymbol{C}'$-groupes est équivalente à la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0\text{-}\boldsymbol{gr})$ formée des «~groupes
+proalgébriques essentiellement affines~», c'est-à-dire des systèmes
+projectifs $\mathbf G=(G_\mu)_{\mu\in M}$, où les $G_\mu$ sont des gro
+
+[id 16252]
+OLD: $\mathbf{Pro}(\mathcal C'_0\text{-}\boldsymbol{gr})$
+NEW: $\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0\text{-}\boldsymbol{gr})$
+FRENCH CONTEXT (corrected):  affine. D'autre
+part, si l'on désigne
+\oldpage[IV-3]{52}
+par $\boldsymbol{C}'_0$-$\boldsymbol{gr}$ la catégorie des
+$\boldsymbol{C}'_0$-groupes, il est vraisemblable que la catégorie des
+$\boldsymbol{C}'$-groupes est équivalente à la sous-catégorie pleine de
+$\boldsymbol{\mathit{Pro}}(\boldsymbol{C}'_0\text{-}\boldsymbol{gr})$ formée des «~groupes
+proalgébriques essentiellement affines~», c'est-à-dire des systèmes
+projectifs $\mathbf G=(G_\mu)_{\mu\in M}$, où les $G_\mu$ sont des groupes
+algébriques sur $k$ et les morphismes de transition $G_\nu\to G_\mu$ sont
+affines pour $\mu$ as
+
+[id 16253]
+OLD: qu'il représente}
+NEW: qu'il représente.}
+FRENCH CONTEXT (corrected):  et
+étudiés par Serre [40]) celle des schémas en groupes quasi-compacts sur $k$,
+dont la définition est conceptuellement plus simple.
+\end{remark}
+
+\subsection{Caractérisation d'un préschéma localement de présentation finie sur un autre, en termes du foncteur qu'il représente.}
+\label{subsection:IV.8.14-fr}
+
+\begin{env}[8.14.1]
+\label{IV.8.14.1-fr}
+Étant donné un préschéma $S$, nous dirons encore, comme en (8.13.4), qu'un
+système projectif filtrant $(X_\lambda,v_{\lambda\mu})$ de $S$-préschémas est
+\emph{essentiellement affine} s'il
+
+[id 16256]
+OLD: \varinjlim_\lambda h_X(Z_\lambda)
+\longrightarrow h_X(\varprojlim_\lambda Z_\lambda)
+NEW: \varinjlim h_X(Z_\lambda)
+\longrightarrow h_X(\varprojlim Z_\lambda)
+FRENCH CONTEXT (corrected): item Pour tout système projectif filtrant $(Z_\lambda)$ de
+  $S$-préschémas, essentiellement affine \textup{(8.13.4)} et formé de préschémas
+  quasi-compacts et quasi-séparés, l'application canonique \textup{(8.13.1.1)}
+\begin{equation}
+\label{IV.8.14.2.1-fr}
+\varinjlim h_X(Z_\lambda)
+\longrightarrow h_X(\varprojlim Z_\lambda) \tag{8.14.2.1}
+\end{equation}
+  est bijective.
+  \item Pour tout système projectif filtrant $(Z_\lambda)$ de
+  $S$-préschémas, tel que les $Z_\lambda$ soient des schémas affines,
+  l'application \textup{(8.14.2.1)} est bijective.
+  \item[\rm c$'$)] Pour tout 
+
+=================== PAGE IV-3 53 ===================
+----- (English page IV-3 52: shown above in this file) -----
+----- (English page IV-3 53: shown above in this file) -----
+----- English, source_aligned/ega4-8.tex, page IV-3 54 -----
+\oldpage[IV-3]{54}
+
+It remains to prove that \sref{IV.8.14.2.4} is surjective.
+Let $v:Z\to V$ be an $S$-morphism.
+By hypothesis there exist an index $\lambda$ and an $S$-morphism
+$w_\lambda:Z_\lambda\to X$ such that $j\circ v$ factors as $Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X$.
+It suffices to prove that there is a $\mu\geqslant\lambda$ such that
+\[
+ Z_\mu\xrightarrow{u_{\lambda\mu}}Z_\lambda\xrightarrow{w_\lambda}X
+\]
+(where $u_{\lambda\mu}$ is the transition morphism) factors as $Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
+For every $\mu\geqslant\lambda$, set
+$U_\mu=u_{\lambda\mu}^{-1}(w_\lambda^{-1}(V))$.
+Then $u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z$.
+The $Z_\lambda$ are quasi-compact and the $U_\mu$, being open, are
+ind-constructible \sref{IV.1.9.6}; hence \sref{IV.8.3.4} gives a
+$\mu\geqslant\lambda$ for which $U_\mu=Z_\mu$.
+\end{proof}
+
+\begin{remark}[8.14.3]
+\label{IV.8.14.3}
+The fact that the map \sref{IV.8.14.2.1} is injective when $f$ is locally of finite
+type \sref{IV.8.8.2},~(i) naturally leads one to ask whether this result has a converse.
+It does not, even when $S$ and $X$ are affine, since there exist monomorphisms
+$X\to S$ which are not of finite type \sref[I]{I.2.4.2}, and these disprove such a
+conjecture.
+\end{remark}
+----- English, source_aligned/ega4-9.tex, page IV-3 54 -----
+\section{Constructible properties}
+\label{section:IV.9}
+
+Let $S$ be a prescheme, $f:X\to S$ a morphism of \emph{finite presentation}~\sref{IV.1.6.1},
+$\sh{F}$ a quasi-coherent $\sh{O}_X$-Module of \emph{finite presentation}.
+We propose in this paragraph to give criteria ensuring, for example, that the set of $s\in S$ such that the $\mathbf{k}(s)$-prescheme $X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\mathbf{k}(s))$ has a certain property, or such that the $\sh{O}_{X_s}$-Module $\sh{F}_s=\sh{F}\otimes_{\sh{O}_X}\mathbf{k}(s)$ has a certain property, is \emph{locally constructible}, or at least \emph{ind-constructible}~\sref{IV.1.9.4}; we will see that this is the case for the majority of properties that arise in algebraic Geometry.
+Assuming only $f$ \emph{locally of finite presentation}, we will also give~{\hyperref[IV.9.9]{(9.9)}} criteria for the set of points $x\in X$ where the fibre $X_{f(x)}$ (or the $\sh{O}_{X_{f(x)}}$-Module $\sh{F}_{f(x)}$) has a certain property, to be \emph{locally constructible}.
+We will see in \textsection12 that these results, together with the additional hypothesis that $f$ is \emph{flat} (resp.\ \emph{proper and flat}), allow us to prove that the sets considered in $X$ (resp.\ in $S$) are even \emph{open} in many cases.
+
+\subsection{The finite extension principle}
+\label{subsection:IV.9.1}
+
+\begin{proposition}[9.1.1]
+\label{IV.9.1.1}
+\textnormal{(Finite extension principle).}
+Let $k$ be a field, $\mathcal{C}$ a set of extensions of $k$.
+Suppose that the following conditions are satisfied:
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item If $K\in\mathcal{C}$ and if there exists a $k$-homomorphism $K\to K'$ (where $K'$ belongs to the universe where we have placed ourselves), then $K'\in\mathcal{C}$.
+  \item If $K\in\mathcal{C}$, there exists a sub-extension $K'$ of $K$, of finite type over $k$, such that $K'\in\mathcal{C}$.
+  \item If $K\in\mathcal{C}$ is the field of fractions of an integral $k$-algebra of finite type $A$, there exists $f\in A\setmin\{0\}$ such that for every maximal ideal $\mathfrak{m}$ of $A$ we have $A_f/\mathfrak{m}\in\mathcal{C}$.
+\end{enumerate}
+----- French corrections on page IV-3 53 -----
+[id 16259]
+OLD: \varinjlim_\lambda\operatorname{Hom}_{A\text{-}\mathrm{alg.}}(B,C_\lambda)
+\longrightarrow
+\operatorname{Hom}_{A\text{-}\mathrm{alg.}}
+(B,\varinjlim_\lambda C_\lambda)
+NEW: \varinjlim\operatorname{Hom}_{A\text{-}\mathrm{alg.}}(B,C_\lambda)
+\longrightarrow
+\operatorname{Hom}_{A\text{-}\mathrm{alg.}}
+(B,\varinjlim C_\lambda)
+FRENCH CONTEXT (corrected): st alors
+équivalente au
+
+\begin{corollary}[8.14.2.2]
+\label{IV.8.14.2.2-fr}
+Soient $A$ un anneau, $B$ une $A$-algèbre. Afin que, pour tout système
+inductif filtrant $(C_\lambda)$ de $A$-algèbres, l'application canonique
+\begin{equation}
+\label{IV.8.14.2.3-fr}
+\varinjlim\operatorname{Hom}_{A\text{-}\mathrm{alg.}}(B,C_\lambda)
+\longrightarrow
+\operatorname{Hom}_{A\text{-}\mathrm{alg.}}
+(B,\varinjlim C_\lambda) \tag{8.14.2.3}
+\end{equation}
+soit bijective, il faut et il suffit que $B$ soit une $A$-algèbre de
+présentation finie.
+\end{corollary}
+
+Il reste seulement à montrer que la condition est nécessaire. Prenons d'abord
+pour $(C_\lambda)$ le système inductif filtra
+
+[id 16261]
+OLD: le composé
+\[
+B\xrightarrow{u}C_\lambda\xrightarrow{p_\lambda}B
+\]
+(où
+NEW: le composé
+$B\xrightarrow{u}C_\lambda\xrightarrow{p_\lambda}B$
+(où
+FRENCH CONTEXT (corrected): =C/\mathfrak J_\lambda$, et utilisant l'exactitude du foncteur
+$\varinjlim$, on voit que $B$ est encore isomorphe à la limite inductive du
+système inductif filtrant $(C_\lambda)$. Il existe donc un $\lambda$ et un
+$A$-homomorphisme $u:B\to C_\lambda$ tels que le composé
+$B\xrightarrow{u}C_\lambda\xrightarrow{p_\lambda}B$
+(où $p_\lambda$ est l'homomorphisme canonique) soit l'identité. Soit
+$q_\lambda:C\to C_\lambda$ l'homomorphisme canonique, et posons
+$t_i=p_\lambda(q_\lambda(T_i))$~; on a donc
+$p_\lambda(u(t_i))=p_\lambda(q_\lambda(T_i))$, autrement dit
+$u(t_i)\setmin q_\lambda(
+
+[id 16262]
+OLD: autrement dit
+\[
+u(t_i)-q_\lambda(T_i)\in\mathfrak J/\mathfrak J_\lambda.
+\]
+Il existe
+NEW: autrement dit
+$u(t_i)-q_\lambda(T_i)\in\mathfrak J/\mathfrak J_\lambda$.
+Il existe
+
+[id 16265]
+OLD: on a par
+suite
+\[
+p_{\mu\lambda}(u(t_i))
+=p_{\mu\lambda}(q_\lambda(T_i))=q_\mu(T_i).
+\]
+Remplaçant
+NEW: on a par
+suite
+$p_{\mu\lambda}(u(t_i))
+=p_{\mu\lambda}(q_\lambda(T_i))=q_\mu(T_i)$.
+Remplaçant
+FRENCH CONTEXT (corrected): \lambda$.
+Il existe donc un $\mu\geqslant\lambda$ tel que les $n$ éléments
+$u(t_i)\setmin q_\lambda(T_i)$ appartiennent à
+$\mathfrak J_\mu/\mathfrak J_\lambda$ $(1\leqslant i\leqslant n)$~; si
+$p_{\mu\lambda}:C_\lambda\to C_\mu$ est l'homomorphisme canonique, on a par
+suite
+$p_{\mu\lambda}(u(t_i))
+=p_{\mu\lambda}(q_\lambda(T_i))=q_\mu(T_i)$.
+Remplaçant $\lambda$ par $\mu$ et $u$ par $p_{\mu\lambda}\circ u$, on peut
+donc supposer que $u(t_i)=q_\lambda(T_i)$ pour tout $i$, et si
+$r=p_\lambda\circ q_\lambda$ est l'homomorphisme canonique
+$C\to C/\mathfrak J=B$, on peut donc écrire
+$u(r(T_i))=q_\lambda(T_i)$ po
+
+[id 16266]
+OLD: \varinjlim_\lambda\operatorname{Hom}_S(Z_\lambda,V)
+\longrightarrow
+\operatorname{Hom}_S(\varprojlim_\lambda Z_\lambda,V)
+NEW: \varinjlim\operatorname{Hom}_S(Z_\lambda,V)
+\longrightarrow
+\operatorname{Hom}_S(\varprojlim Z_\lambda,V)
+FRENCH CONTEXT (corrected): vert affine $V$ de $X$ est de présentation finie sur $S$, et
+en vertu de ce qui vient d'être démontré, il suffit de prouver que pour tout
+système projectif filtrant $(Z_\lambda)$ de $S$-préschémas affines,
+l'application
+\begin{equation}
+\label{IV.8.14.2.4-fr}
+\varinjlim\operatorname{Hom}_S(Z_\lambda,V)
+\longrightarrow
+\operatorname{Hom}_S(\varprojlim Z_\lambda,V) \tag{8.14.2.4}
+\end{equation}
+est bijective. Il est immédiat que cette application est injective, car si
+$(v_\lambda)$, $(v'_\lambda)$ sont deux systèmes inductifs de
+$S$-homomorphismes $v_\lambda:Z_\lambda\to V$,
+$v'_\lambda:Z_\lambda\to V$ tels que les morp
+
+=================== PAGE IV-3 54 ===================
+----- (English page IV-3 53: shown above in this file) -----
+----- (English page IV-3 54: shown above in this file) -----
+----- English, source_aligned/ega4-9.tex, page IV-3 55 -----
+\oldpage[IV-3]{55}
+
+Let then $\Omega$ be an algebraically closed extension of $k$ (in the universe considered).
+The following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\mathcal{C}$ is non-empty.
+  \item There exists $K'\in\mathcal{C}$ which is a finite extension of $k$.
+  \item We have $\Omega\in\mathcal{C}$.
+\end{enumerate}
+\end{proposition}
+
+The condition~(i) obviously implies that \emph{b)} entails \emph{c)}, and \emph{c)} trivially entails \emph{a)};
+let us prove that \emph{a)} entails \emph{b)}.
+By virtue of~(ii) and~(iii) there exists an extension $K'\in\mathcal{C}$ which is of the form $A/\mathfrak{m}$, where $A$ is a $k$-algebra of finite type over $k$ and $\mathfrak{m}$ is a maximal ideal of $A$.
+We know, by Hilbert's Nullstellensatz (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \textsection3, n\textsuperscript{o}~1, cor.~2 of th.~1), that $K'$ is a finite extension of $k$.
+
+\begin{corollary}[9.1.2]
+\label{IV.9.1.2}
+Under the hypotheses~\emph{(i)}, \emph{(ii)}, \emph{(iii)} of~\sref{IV.9.1.1}, if $k$ is algebraically closed and if $\mathcal{C}$ is non-empty, $\mathcal{C}$ contains all the extensions of $k$ in the universe considered.
+\end{corollary}
+
+Indeed, as \emph{a)} entails \emph{c)}, we have $k\in\mathcal{C}$, and the conclusion follows from the hypothesis~(i).
+
+\begin{remark}[9.1.3]
+\label{IV.9.1.3}
+In practice, one will verify the condition~(ii) of~\sref{IV.9.1.1} by noting that $K$ is the inductive limit of its sub-extensions of finite type $K_\alpha$, and by applying the results of \textsection8, taking into account eventually that for $K_\alpha\subset K_\beta$, $K_\beta$ is faithfully flat over $K_\alpha$.
+Frequently the set $\mathcal{C}$ is formed of \emph{fields} belonging to a set $\mathcal{C}'$ of $k$-algebras satisfying the following condition:
+\begin{enumerate}[label=(\roman*~bis)]
+  \item If $A\in\mathcal{C}'$ and if there exists a homomorphism of $k$-algebras $A\to A'$ (where $A'$ belongs to the universe where we have placed ourselves), then $A'\in\mathcal{C}'$.
+\end{enumerate}
+\end{remark}
+
+Since this is so, the condition~(i) is trivially satisfied, and one will verify generally the condition~(iii) of~\sref{IV.9.1.1} by noting that the field of fractions $K$ of $A$ is the inductive limit of the algebras $A_f$ (for the relation $D(f)\supset D(g)$), and by applying the results of \textsection8, taking into account eventually that the morphisms $D(g)\to D(f)$ are open immersions.
+
+On the other hand, when (i~bis) is not satisfied, the proof of~(iii) is often more delicate, and is linked to constructibility criteria that will be developed further on.
+
+Here are some typical examples of application of the finite extension principle:
+
+\begin{proposition}[9.1.4]
+\label{IV.9.1.4}
+Let $k$ be a field, $\Omega$ an algebraically closed extension of $k$, $X$ and $Y$ two preschemes of finite type over $k$.
+The following conditions are equivalent:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item There exists an $\Omega$-morphism $X_{(\Omega)}\to Y_{(\Omega)}$ \textnormal{(}resp.\ an $\Omega$-morphism possessing one (specified) of the properties~\emph{(i)} to~\emph{(xiv)} of~\sref{IV.8.10.5}\textnormal{)}.
+  \item There exists a finite extension $k'$ of $k$ and a $k'$-morphism $X_{(k')}\to Y_{(k')}$ \textnormal{(}resp.\ a $k'$-morphism possessing the property considered\textnormal{)}.
+  \item There exists an extension $K$ of $k$ and a $K$-morphism $X_{(K)}\to Y_{(K)}$ \textnormal{(}resp.\ a $K$-morphism possessing the property considered\textnormal{)}.
+\end{enumerate}
+\end{proposition}
+
+We apply the remark~\sref{IV.9.1.3} taking for $\mathcal{C}'$ the set of all $k$-algebras $A$ (of the universe where we have placed ourselves) such that there exists an $A$-morphism $X\otimes_k A\to Y\otimes_k A$ (resp.\ a morphism having the particular property of~\sref{IV.8.10.5} under consideration).
+The condition~(i~bis) of~\sref{IV.9.1.3} is then satisfied thanks to the fact that the
+----- French corrections on page IV-3 54 -----
+[id 16267]
+OLD: se factorise en
+\[
+Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X,
+\]
+et tout revient
+NEW: se factorise en
+$Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X$,
+et tout revient
+FRENCH CONTEXT (corrected): lambda$
+convenable, donc $v_\lambda=v'_\lambda$.
+
+\oldpage[IV-3]{54}
+Reste à prouver que (8.14.2.4) est surjective. Soit donc $v:Z\to V$ un
+$S$-morphisme~; par hypothèse il existe un $\lambda$ et un $S$-morphisme
+$w_\lambda:Z_\lambda\to X$ tels que $j\circ v$ se factorise en
+$Z\xrightarrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X$,
+et tout revient à prouver qu'il existe $\mu\geqslant\lambda$ tel que le
+morphisme
+\[
+Z_\mu\xrightarrow{u_{\lambda\mu}}Z_\lambda
+\xrightarrow{w_\lambda}X
+\]
+(où $u_{\lambda\mu}$ est le morphisme de transition) se factorise en
+$Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
+Poson
+
+[id 16268]
+OLD: se factorise en
+\[
+Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X.
+\]
+Posons
+NEW: se factorise en
+$Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
+Posons
+FRENCH CONTEXT (corrected): rrow{u_\lambda}Z_\lambda\xrightarrow{w_\lambda}X$,
+et tout revient à prouver qu'il existe $\mu\geqslant\lambda$ tel que le
+morphisme
+\[
+Z_\mu\xrightarrow{u_{\lambda\mu}}Z_\lambda
+\xrightarrow{w_\lambda}X
+\]
+(où $u_{\lambda\mu}$ est le morphisme de transition) se factorise en
+$Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
+Posons, pour tout $\mu\geqslant\lambda$,
+$U_\mu=u_{\lambda\mu}^{-1}(w_\lambda^{-1}(V))$. On a
+$u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z$.
+Comme les $Z_\lambda$ sont quasi-compacts et que les $U_\mu$, étant ouverts,
+s
+
+[id 16269]
+OLD: On a
+\[
+u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z.
+\]
+Comme
+NEW: On a
+$u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z$.
+Comme
+FRENCH CONTEXT (corrected): row{u_{\lambda\mu}}Z_\lambda
+\xrightarrow{w_\lambda}X
+\]
+(où $u_{\lambda\mu}$ est le morphisme de transition) se factorise en
+$Z_\mu\xrightarrow{v_\mu}V\xrightarrow{j}X$.
+Posons, pour tout $\mu\geqslant\lambda$,
+$U_\mu=u_{\lambda\mu}^{-1}(w_\lambda^{-1}(V))$. On a
+$u_\mu^{-1}(U_\mu)=u_\lambda^{-1}(U_\lambda)
+=u_\lambda^{-1}(w_\lambda^{-1}(V))=v^{-1}(V)=Z$.
+Comme les $Z_\lambda$ sont quasi-compacts et que les $U_\mu$, étant ouverts,
+sont ind-constructibles (1.9.6), on déduit de (8.3.4) qu'il existe
+$\mu\geqslant\lambda$ tel que $U_\mu=Z_\mu$. C.Q.F.D.
+
+\begin{remark}[8.14.3]
+\label{IV.8.14.3-fr}
+Le fait que l'applicat
+
+[id 16271]
+OLD: $k(s)$-préschéma
+NEW: $\boldsymbol{k}(s)$-préschéma
+FRENCH CONTEXT (corrected): \to S$ un morphisme de
+\emph{présentation finie} (1.6.1), $\mathcal F$ un $\mathcal O_X$-Module
+quasi-cohérent de \emph{présentation finie}. On se propose dans ce paragraphe
+de donner des critères assurant, par exemple, que l'ensemble des $s\in S$ tels
+que le $\boldsymbol{k}(s)$-préschéma
+$X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\boldsymbol{k}(s))$ a une certaine propriété,
+ou tels que le $\mathcal O_{X_s}$-Module
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_X}\boldsymbol{k}(s)$ a une certaine propriété,
+est \emph{localement constructible}, 
+
+[id 16272]
+OLD: \operatorname{Spec}(k(s))
+NEW: \operatorname{Spec}(\boldsymbol{k}(s))
+FRENCH CONTEXT (corrected): 1), $\mathcal F$ un $\mathcal O_X$-Module
+quasi-cohérent de \emph{présentation finie}. On se propose dans ce paragraphe
+de donner des critères assurant, par exemple, que l'ensemble des $s\in S$ tels
+que le $\boldsymbol{k}(s)$-préschéma
+$X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\boldsymbol{k}(s))$ a une certaine propriété,
+ou tels que le $\mathcal O_{X_s}$-Module
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_X}\boldsymbol{k}(s)$ a une certaine propriété,
+est \emph{localement constructible}, ou tout au moins
+\emph{ind-constructible} (1.9.4)~; on verra qu
+
+[id 16273]
+OLD: \otimes_{\mathcal O_X}k(s)
+NEW: \otimes_{\mathcal O_X}\boldsymbol{k}(s)
+FRENCH CONTEXT (corrected): es critères assurant, par exemple, que l'ensemble des $s\in S$ tels
+que le $\boldsymbol{k}(s)$-préschéma
+$X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\boldsymbol{k}(s))$ a une certaine propriété,
+ou tels que le $\mathcal O_{X_s}$-Module
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_X}\boldsymbol{k}(s)$ a une certaine propriété,
+est \emph{localement constructible}, ou tout au moins
+\emph{ind-constructible} (1.9.4)~; on verra que c'est le cas pour la plupart
+des propriétés qui s'introduisent en Géométrie algébrique. En supposant
+seulement $f$ \emph{localemen
+
+[id 16274]
+OLD: \subsection{Le principe de l'extension finie}
+NEW: \subsection{Le principe de l'extension finie.}
+FRENCH CONTEXT (corrected): ible}. On verra au \S~12 que ces
+résultats, joints à l'hypothèse supplémentaire que $f$ est \emph{plat}
+(resp. \emph{propre et plat}), permettent de prouver que les ensembles
+considérés dans $X$ (resp. dans $S$) sont même \emph{ouverts} dans de nombreux
+cas.
+
+\subsection{Le principe de l'extension finie.}
+\label{subsection:IV.9.1-fr}
+
+\begin{proposition}[9.1.1]
+\label{IV.9.1.1-fr}
+\textnormal{(Principe de l'extension finie).} Soient $k$ un corps,
+$\boldsymbol{C}$ un ensemble d'extensions de $k$. On suppose vérifiées les
+conditions suivantes~:
+\begin{enumerate}
+
+[id 16275]
+OLD: $\mathcal C$ un ensemble d'extensions
+NEW: $\boldsymbol{C}$ un ensemble d'extensions
+FRENCH CONTEXT (corrected): $X$ (resp. dans $S$) sont même \emph{ouverts} dans de nombreux
+cas.
+
+\subsection{Le principe de l'extension finie.}
+\label{subsection:IV.9.1-fr}
+
+\begin{proposition}[9.1.1]
+\label{IV.9.1.1-fr}
+\textnormal{(Principe de l'extension finie).} Soient $k$ un corps,
+$\boldsymbol{C}$ un ensemble d'extensions de $k$. On suppose vérifiées les
+conditions suivantes~:
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item Si $K\in\boldsymbol{C}$ et s'il existe un $k$-homomorphisme $K\to K'$
+  (où $K'$ appartient à l'univers où l'on se place), alors
+  $K'\in\boldsymbol{C}
+
+[id 16277]
+OLD: Si $K\in\mathcal C$ et s'il existe
+NEW: Si $K\in\boldsymbol{C}$ et s'il existe
+FRENCH CONTEXT (corrected): in{proposition}[9.1.1]
+\label{IV.9.1.1-fr}
+\textnormal{(Principe de l'extension finie).} Soient $k$ un corps,
+$\boldsymbol{C}$ un ensemble d'extensions de $k$. On suppose vérifiées les
+conditions suivantes~:
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item Si $K\in\boldsymbol{C}$ et s'il existe un $k$-homomorphisme $K\to K'$
+  (où $K'$ appartient à l'univers où l'on se place), alors
+  $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$, il existe une sous-extension $K'$ de $K$, de
+  type fini sur $k$, telle que $K'\in\boldsymbol{C}$.
+  \item Si $
+
+[id 16278]
+OLD: $K'\in\mathcal C$.
+  \item Si $K\in\mathcal C$, il existe
+NEW: $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$, il existe
+FRENCH CONTEXT (corrected): nsemble d'extensions de $k$. On suppose vérifiées les
+conditions suivantes~:
+\begin{enumerate}[label=\textup{(\roman*)}]
+  \item Si $K\in\boldsymbol{C}$ et s'il existe un $k$-homomorphisme $K\to K'$
+  (où $K'$ appartient à l'univers où l'on se place), alors
+  $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$, il existe une sous-extension $K'$ de $K$, de
+  type fini sur $k$, telle que $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$ est le corps de fractions d'une $k$-algèbre
+  intègre de type fini $A$, il existe $f\in A\setmin\{0\}$ tel que pour tout idéal
+  maximal $
+
+[id 16279]
+OLD: telle que $K'\in\mathcal C$.
+NEW: telle que $K'\in\boldsymbol{C}$.
+FRENCH CONTEXT (corrected):  \item Si $K\in\boldsymbol{C}$ et s'il existe un $k$-homomorphisme $K\to K'$
+  (où $K'$ appartient à l'univers où l'on se place), alors
+  $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$, il existe une sous-extension $K'$ de $K$, de
+  type fini sur $k$, telle que $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$ est le corps de fractions d'une $k$-algèbre
+  intègre de type fini $A$, il existe $f\in A\setmin\{0\}$ tel que pour tout idéal
+  maximal $\mathfrak m$ de $A$ on ait $A_f/\mathfrak m\in\boldsymbol{C}$.
+\end{enumerate}
+\oldpage[I
+
+[id 16280]
+OLD: Si $K\in\mathcal C$ est le corps
+NEW: Si $K\in\boldsymbol{C}$ est le corps
+FRENCH CONTEXT (corrected): iste un $k$-homomorphisme $K\to K'$
+  (où $K'$ appartient à l'univers où l'on se place), alors
+  $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$, il existe une sous-extension $K'$ de $K$, de
+  type fini sur $k$, telle que $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$ est le corps de fractions d'une $k$-algèbre
+  intègre de type fini $A$, il existe $f\in A\setmin\{0\}$ tel que pour tout idéal
+  maximal $\mathfrak m$ de $A$ on ait $A_f/\mathfrak m\in\boldsymbol{C}$.
+\end{enumerate}
+\oldpage[IV-3]{55}
+
+Soit alors $\Omega$ une extension a
+
+[id 16282]
+OLD: $A_f/\mathfrak m\in\mathcal C$
+NEW: $A_f/\mathfrak m\in\boldsymbol{C}$
+FRENCH CONTEXT (corrected):  $K$, de
+  type fini sur $k$, telle que $K'\in\boldsymbol{C}$.
+  \item Si $K\in\boldsymbol{C}$ est le corps de fractions d'une $k$-algèbre
+  intègre de type fini $A$, il existe $f\in A\setmin\{0\}$ tel que pour tout idéal
+  maximal $\mathfrak m$ de $A$ on ait $A_f/\mathfrak m\in\boldsymbol{C}$.
+\end{enumerate}
+\oldpage[IV-3]{55}
+
+Soit alors $\Omega$ une extension algébriquement close de $k$ (dans l'univers
+considéré). Les conditions suivantes sont équivalentes~:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\boldsymbol{C}$ est non vide.
+  \item 
+

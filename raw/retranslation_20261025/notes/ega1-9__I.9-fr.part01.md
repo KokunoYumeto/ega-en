@@ -1,0 +1,5 @@
+- TRANSCRIPTION? (9.1.13.1) — `\operatorname{Supp}(p^{-1}(\mathscr{F}))`: the reduction is to $\mathscr{F}\otimes_S\mathscr{O}_Y=p^*(\mathscr{F})$, and the stalk argument that follows ($\mathscr{O}_z/\mathfrak{m}_x\mathscr{O}_z\neq0$) is needed only for $p^*$; expected `p^*(\mathscr{F})`. Kept as in the French.
+- TRANSCRIPTION? proof after (9.1.1) — "si $\mathscr{F}$ est cohérent, on peut supposer qu'il est le conoyau…": the quasi-coherent $\mathscr{H}om$ assertion needs this reduction for $\mathscr{F}$ of finite presentation; the original may read "admet une présentation finie". Translated as written.
+- TERM ensemble bien ordonné → well-ordered set; type d'ordre → order type; ordinal limite → limit ordinal; récurrence transfinie → transfinite induction (9.4.6).
+- TERM admettre une présentation finie → admit a finite presentation (9.1.1).
+- TERM Précision éditoriale (footnote label, 9.4.6) → Editorial clarification.

@@ -1,0 +1,10 @@
+- TRANSCRIPTION? 20.6.2 — "$M(X/S,F)$": presumably $M(X/S,\sh{F})$ (script letter lost). Kept.
+- TRANSCRIPTION? 20.6.5 (i) — "$\varphi=\pi/T$ est une fonction méromorphe sur $S$ relative à $S$": $\varphi$ lives on $X=S[T]$, so "sur $X$" is presumably meant. Translated literally.
+- TERM schématiquement dense; universellement schématiquement dense relativement à $S$ → schematically dense; universally schematically dense relative to $S$.
+- TERM faisceau des germes de fonctions méromorphes sur $X$ relatives à $S$ → sheaf of germs of meromorphic functions on $X$ relative to $S$; sections méromorphes relatives à $S$ → meromorphic sections relative to $S$.
+- TERM strictement sans torsion → strictly torsion-free; sans torsion relativement à $S$ → torsion-free relative to $S$.
+- TERM Idéal des dénominateurs → ideal of denominators (lowercase, per the ideal convention).
+- TERM section régulière; $(\sh{F}|U)$-régulière; fonction (section) méromorphe régulière (relativement à $S$) → regular section; $(\sh{F}|U)$-regular; regular meromorphic function (section) (relative to $S$).
+- TERM uniformisante → uniformizer.
+- TERM les deux membres (de 20.6.5.1) → the two sides.
+- TERM Moyennant l'identification permise par → With the identification permitted by.

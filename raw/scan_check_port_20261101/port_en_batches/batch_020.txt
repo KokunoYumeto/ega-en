@@ -1,0 +1,5812 @@
+# English hand pass, batch_020: 160 items on 14 printed pages
+
+=================== PAGE III 167 ===================
+----- English, ega3/ega3-5.tex, page III 166 -----
+\oldpage[III]{166}
+
+\S~13. Projective limits in homological algebra \dotfill 64
+
+13.1. The Mittag--Leffler condition \dotfill 64
+
+13.2. The Mittag--Leffler condition for abelian groups \dotfill 65
+
+13.3. Application: cohomology of a projective limit of sheaves \dotfill 68
+
+13.4. Mittag--Leffler condition and graded objects associated with projective
+systems \dotfill 69
+
+13.5. Projective limits of spectral sequences of filtered complexes
+\dotfill 71
+
+13.6. Spectral sequence of a functor relative to an object equipped with a
+finite filtration \dotfill 73
+
+13.7. Derived functors of a projective limit of arguments \dotfill 75
+
+\medskip
+\textsc{Chapter III.} --- \textbf{Cohomological study of coherent sheaves}
+\dotfill 81
+
+\medskip
+\S~1. Cohomology of affine schemes \dotfill 82
+
+1.1. Review of the exterior algebra complex \dotfill 82
+
+1.2. \v Cech cohomology of an open cover \dotfill 85
+
+1.3. Cohomology of an affine scheme \dotfill 88
+
+1.4. Application to the cohomology of arbitrary preschemes \dotfill 89
+
+\medskip
+\S~2. Cohomological study of projective morphisms \dotfill 95
+
+2.1. Explicit calculations of certain cohomology groups \dotfill 95
+
+2.2. The fundamental theorem of projective morphisms \dotfill 100
+
+2.3. Application to graded sheaves of algebras and modules \dotfill 102
+
+2.4. A generalisation of the fundamental theorem \dotfill 107
+
+2.5. Euler--Poincaré characteristic and the Hilbert polynomial \dotfill 109
+
+2.6. Application: ampleness criteria \dotfill 111
+
+\medskip
+\S~3. Finiteness theorem for proper morphisms \dotfill 115
+
+3.1. The dévissage lemma \dotfill 115
+
+3.2. The finiteness theorem: the case of usual schemes \dotfill 116
+
+3.3. Generalization of the finiteness theorem (usual schemes) \dotfill 118
+
+3.4. Finiteness theorem: the case of formal schemes \dotfill 119
+
+\medskip
+\S~4. The fundamental theorem of proper morphisms. Applications \dotfill 122
+
+4.1. The fundamental theorem \dotfill 122
+
+4.2. Particular cases and variants \dotfill 129
+
+4.3. Zariski's connectedness theorem \dotfill 130
+
+4.4. Zariski's ``main theorem'' \dotfill 135
+
+4.5. Completions of modules of homomorphisms \dotfill 138
+
+4.6. Relations between formal morphisms and ordinary morphisms \dotfill 139
+
+4.7. An ampleness criterion \dotfill 145
+
+4.8. Finite morphisms of formal preschemes \dotfill 146
+----- English, ega3/ega3-6.tex, page III 166 -----
+\oldpage[III]{166}
+\subsection{The base change spectral sequences of global hypertor}
+\label{subsection:III.6.9}
+\label{III.6.9}
+
+\begin{env}[6.9.1]
+\label{III.6.9.1}
+Retain the hypotheses and notation of \sref{III.6.7.11}; in
+particular, the complexes $\sh P_\bullet^{(i)}$ are bounded below.
+Let $g:S'\to S$ be a morphism of preschemes, and set
+\[
+  Y^{\prime(i)}=Y_{(S')}^{(i)},
+  \qquad
+  X^{\prime(i)}=X_{(S')}^{(i)},
+  \qquad
+  \sh P_\bullet^{\prime(i)}
+  =
+  \sh P_\bullet^{(i)}
+  \otimes_{\sh O_S}\sh O_{S'}.
+\]
+Thus $\sh P_\bullet^{\prime(i)}$ is a complex of quasi-coherent
+$\sh O_{X^{\prime(i)}}$-modules.  Let
+\[
+  f_i'=(f_i)_{(S')}:
+  X^{\prime(i)}\longrightarrow Y^{\prime(i)};
+\]
+this morphism is separated and quasi-compact
+(\sref[I]{I.5.5.1} and \sref{III.6.6.4}).
+
+We shall study the relation between the quasi-coherent
+$\sh O_{Y'}$-modules $\mathfrak{Tor}_n^{S'}
+\bigl(
+(f_i')_{i\in I};
+(\sh P_\bullet^{\prime(i)})_{i\in I}
+\bigr)$
+and $\mathfrak{Tor}_n^S
+\bigl(
+(f_i)_{i\in I};
+(\sh P_\bullet^{(i)})_{i\in I}
+\bigr)
+\otimes_{\sh O_S}\sh O_{S'}$,
+where $Y'=Y\times_SS'=Y_{(S')}$.
+The following particularly simple case reduces to
+(I,~1.4.15) when $I$ has a single element and
+$\sh P_\bullet$ consists of a single module.
+\end{env}
+
+\begin{proposition}[6.9.2]
+\label{III.6.9.2}
+If $g:S'\to S$ is flat, there is a canonical isomorphism of
+$\partial$-functors in the complexes $\sh P_\bullet^{(i)}$:
+\begin{env}[6.9.2.1]
+\label{III.6.9.2.1}
+\[
+  \mathfrak{Tor}_n^S
+  \bigl(
+    (f_i)_{i\in I};
+    (\sh P_\bullet^{(i)})_{i\in I}
+  \bigr)
+  \otimes_{\sh O_S}\sh O_{S'}
+  \xrightarrow{\sim}
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    (f_i')_{i\in I};
+    (\sh P_\bullet^{\prime(i)})_{i\in I}
+  \bigr).
+  \tag{6.9.2.1}\label{III.6.9.2.1.eq}
+\]
+\end{env}
+\end{proposition}
+
+\begin{proof}
+It is enough to consider the case where $S$, $S'$, and all the
+$Y^{(i)}$ are affine; the gluing is carried out by the methods of
+\sref{III.6.7.1} and \sref{III.6.7.2}.  Write
+\[
+  S=\Spec(A),
+  \qquad
+  S'=\Spec(A'),
+\]
+and choose for each $i$ a finite affine open covering
+$\mathfrak U^{(i)}$ of $X^{(i)}$.  If
+$u_i:X^{\prime(i)}\to X^{(i)}$ is the canonical projection, then $\mathfrak U^{\prime(i)}
+=
+u_i^{-1}(\mathfrak U^{(i)})$
+is a finite affine open covering of $X^{\prime(i)}$
+(\sref[II]{II.1.5.5}), and $C^\bullet
+\bigl(
+\mathfrak U^{\prime(i)},\sh P_\bullet^{\prime(i)}
+\bigr)
+=
+C^\bullet
+\bigl(
+\mathfrak U^{(i)},\sh P_\bullet^{(i)}
+\bigr)
+\otimes_AA'$.
+
+Let $M_{\bullet\bullet\bullet}^{(i)}$ be a projective
+Cartan--Eilenberg resolution, in the sense of
+\sref[0]{0.11.7.1}, of $L_{\bullet\bullet}^{(i)}
+=
+C^\bullet
+\bigl(
+\mathfrak U^{(i)},\sh P_\bullet^{(i)}
+\bigr)$
+by $A$-modules.  Since $A'$ is flat over $A$, $M_{\bullet\bullet\bullet}^{(i)}\otimes_AA'$
+is a projective Cartan--Eilenberg resolution, over $A'$, of
+$L_{\bullet\bullet}^{(i)}\otimes_AA'$.  The same flatness gives
+\[
+\begin{split}
+  H_\bullet
+  \left(
+    \bigotimes_{i=1}^{m}
+    (M_{\bullet\bullet\bullet}^{(i)}\otimes_AA')
+  \right)
+  =
+  H_\bullet
+  \left(
+    \bigotimes_{i=1}^{m}
+    M_{\bullet\bullet\bullet}^{(i)}
+  \right)
+  \otimes_AA',
+\end{split}
+\]
+which proves \eqref{III.6.9.2.1.eq}.
+\end{proof}
+
+\begin{env}[6.9.2.2]
+\label{III.6.9.2.2}
+When $I$ consists of the single element $1$,
+\eqref{III.6.9.2.1.eq} also follows directly from
+\sref{III.6.7.7}.  Indeed, take
+\[
+  Y_2=X_2=S',
+  \qquad
+  f_2=1_{S'},
+\]
+and let $\sh P_\bullet^{(2)}$ be concentrated in degree $0$ with
+value $\sh O_{S'}$.  Then $\sh H^n(1_{S'},\sh O_{S'})$
+vanishes for $n\neq0$ and equals $\sh O_{S'}$ for $n=0$
+(\sref{III.6.2.1}).
+\end{env}
+
+In the general case, replace $\sh O_{S'}$ by a bounded-below
+complex $\sh Q_\bullet'$ of quasi-coherent
+$\sh O_{S'}$-modules.  Taking, for simplicity,
+$I=\{1,2,\ldots,m\}$, one can then consider the
+$\partial$-functor
+\[
+  \mathfrak{Tor}_\bullet^S
+  \bigl(
+    f_1,\ldots,f_m,1_{S'};
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr).
+\]
+
+\begin{proposition}[6.9.3]
+\label{III.6.9.3}
+There are three canonical biregular spectral functors, denoted
+\[
+  {}^{(t)}\sh E
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr),
+  \qquad
+  t=e,f,f',
+\]
+with common abutment
+\[
+  \mathfrak{Tor}_\bullet^S
+  \bigl(
+    f_1,\ldots,f_m,1_{S'};
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr),
+\]
+and whose $E_2$-terms are respectively as follows.
+----- English, ega3/ega3-5.tex, page III 167 -----
+\oldpage[III]{167}
+
+\S~5. An existence theorem for coherent algebraic sheaves \dotfill 149
+
+5.1. Statement of the theorem \dotfill 149
+
+5.2. Proof of the existence theorem: the projective and quasi-projective case
+\dotfill 151
+
+5.3. Proof of the existence theorem: the general case \dotfill 154
+
+5.4. Application: comparison between morphisms of ordinary preschemes and
+morphisms of formal preschemes. Algebraizable formal preschemes \dotfill 156
+
+5.5. A decomposition of certain preschemes \dotfill 159
+
+\medskip
+\textsc{Bibliography (continued)} \dotfill 161
+
+\textsc{Index of notation} \dotfill 162
+
+\textsc{Terminological index} \dotfill 163
+
+\begin{flushright}
+\emph{Received June 28, 1961.}
+\end{flushright}
+\end{flushleft}
+----- English, ega3/ega3-6.tex, page III 167 -----
+\oldpage[III]{167}
+
+\begin{env}[6.9.3.1]
+\label{III.6.9.3.1}
+\[
+\begin{split}
+  {}^{(e)}\sh E_{pq}^2
+  =
+  \bigoplus_{q'+q''=q}
+  \shTor_p^S
+  \Bigl(
+    &
+    \mathfrak{Tor}_{q'}^S
+    \bigl(
+      f_1,\ldots,f_m;
+      \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+    \bigr),
+    \\
+    &
+    \sh H_{q''}(\sh Q_\bullet')
+  \Bigr).
+\end{split}
+  \tag{6.9.3.1}\label{III.6.9.3.1.eq}
+\]
+\end{env}
+
+\begin{env}[6.9.3.2]
+\label{III.6.9.3.2}
+\[
+\begin{split}
+  {}^{(f)}\sh E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \shTor_p^{S'}
+  \Bigl(
+    &
+    \mathfrak{Tor}_{q_1}^S
+    \bigl(
+      f_1,1_{S'};
+      \sh P_\bullet^{(1)},\sh O_{S'}
+    \bigr),
+    \ldots,
+    \\
+    &
+    \mathfrak{Tor}_{q_m}^S
+    \bigl(
+      f_m,1_{S'};
+      \sh P_\bullet^{(m)},\sh O_{S'}
+    \bigr),
+    \sh H_{q_{m+1}}(\sh Q_\bullet')
+  \Bigr).
+\end{split}
+  \tag{6.9.3.2}\label{III.6.9.3.2.eq}
+\]
+\end{env}
+
+\begin{env}[6.9.3.3]
+\label{III.6.9.3.3}
+\[
+\begin{split}
+  {}^{(f')}\sh E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_m=q}
+  \mathfrak{Tor}_p^{S'}
+  \Bigl(
+    &
+    f_1',\ldots,f_m',1_{S'};
+    \\
+    &
+    \shTor_{q_1}^S
+    \bigl(
+      \sh P_\bullet^{(1)},\sh O_{S'}
+    \bigr),
+    \ldots,
+    \shTor_{q_m}^S
+    \bigl(
+      \sh P_\bullet^{(m)},\sh O_{S'}
+    \bigr),
+    \sh Q_\bullet'
+  \Bigr).
+\end{split}
+  \tag{6.9.3.3}\label{III.6.9.3.3.eq}
+\]
+\end{env}
+\end{proposition}
+
+\begin{proof}
+The sequence $(e)$ is precisely the associativity sequence of
+\sref{III.6.8.2}, with $r=m$.  To define the other two spectral
+sequences, it is again enough to treat the case in which $S$, $S'$,
+and the $Y^{(i)}$ are affine.  The passage to the general case uses
+the methods of \sref{III.6.7.1} and \sref{III.6.7.2} and is left to
+the reader.  Thus it remains to prove the following affine
+statement.
+\end{proof}
+
+\begin{corollary}[6.9.4]
+\label{III.6.9.4}
+Let $A$ be a ring, let $A'$ be an $A$-algebra, and put
+\[
+  S=\Spec(A),
+  \qquad
+  S'=\Spec(A').
+\]
+Let $X^{(i)}$, $1\leq i\leq m$, be quasi-compact $S$-schemes, and
+for each $i$ put
+\[
+  X^{\prime(i)}=X_{(S')}^{(i)};
+\]
+this is a quasi-compact $S'$-scheme.  For each $i$, let
+$\sh P_\bullet^{(i)}$ be a bounded-below complex of quasi-coherent
+$\sh O_{X^{(i)}}$-modules.  Finally, let $Q_\bullet'$ be a
+bounded-below complex of $A'$-modules, and let
+$\widetilde Q_\bullet'$ be the associated complex.
+
+There are three biregular spectral functors in the
+$\sh P_\bullet^{(i)}$ and in $Q_\bullet'$, with common abutment
+\[
+  \mathbf{Tor}_\bullet^S
+  \bigl(
+    X^{(1)},\ldots,X^{(m)},S';
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \widetilde Q_\bullet'
+  \bigr),
+\]
+and whose $E_2$-terms are respectively
+\[
+\begin{split}
+  {}^{(e)}E_{pq}^2
+  =
+  \bigoplus_{q'+q''=q}
+  \Tor_p^A
+  \Bigl(
+    &
+    \mathbf{Tor}_{q'}^S
+    \bigl(
+      X^{(1)},\ldots,X^{(m)};
+      \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+    \bigr),
+    \\
+    &
+    H_{q''}(Q_\bullet')
+  \Bigr)
+\end{split}
+\]
+\[
+\begin{split}
+  {}^{(f)}E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \Tor_p^{A'}
+  \Bigl(
+    &
+    \mathbf{Tor}_{q_1}^S
+    \bigl(
+      X^{(1)},S';
+      \sh P_\bullet^{(1)},\sh O_{S'}
+    \bigr),
+    \ldots,
+    \\
+    &
+    \mathbf{Tor}_{q_m}^S
+    \bigl(
+      X^{(m)},S';
+      \sh P_\bullet^{(m)},\sh O_{S'}
+    \bigr),
+    H_{q_{m+1}}(Q_\bullet')
+  \Bigr)
+\end{split}
+\]
+and
+\[
+\begin{split}
+  {}^{(f')}E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_m=q}
+  \mathbf{Tor}_p^{S'}
+  \Bigl(
+    &
+    X^{\prime(1)},\ldots,X^{\prime(m)},S';
+    \\
+    &
+    \shTor_{q_1}^S
+    \bigl(
+      \sh P_\bullet^{(1)},\sh O_{S'}
+    \bigr),
+    \ldots,
+    \shTor_{q_m}^S
+    \bigl(
+      \sh P_\bullet^{(m)},\sh O_{S'}
+    \bigr),
+    \widetilde Q_\bullet'
+  \Bigr).
+\end{split}
+\]
+\end{corollary}
+
+\begin{proof}
+We do not return to the first of these spectral functors, which was
+treated in \sref{III.6.8.3} and is included here only for reference.
+To define the other two, choose for each $i$ a finite affine open
+covering $\mathfrak U^{(i)}$ of $X^{(i)}$.  If
+\[
+  u_i:X^{\prime(i)}\longrightarrow X^{(i)}
+\]
+is the canonical projection, put $\mathfrak U^{\prime(i)}
+=
+u_i^{-1}(\mathfrak U^{(i)})$.
+
+By \sref{III.6.6.6}, the common abutment is obtained by choosing,
+for $1\leq i\leq m$, a projective Cartan--Eilenberg resolution
+$M_{\bullet\bullet\bullet}^{(i)}$ of $L_{\bullet\bullet}^{(i)}
+=
+C^\bullet
+\bigl(
+\mathfrak U^{(i)},\sh P_\bullet^{(i)}
+\bigr)$
+in the sense of \sref[0]{0.11.7.1}, and then taking the homology of
+the tricomplex
+\[
+  M_{\bullet\bullet\bullet}
+  =
+  M_{\bullet\bullet\bullet}^{(1)}
+  \otimes_A\ldots\otimes_A
+  M_{\bullet\bullet\bullet}^{(m)}
+  \otimes_A Q_\bullet',
+\]
+where $Q_\bullet'$ is regarded as a tricomplex whose last two
+degrees are zero.  Set $M_{\bullet\bullet\bullet}^{\prime(i)}
+=
+M_{\bullet\bullet\bullet}^{(i)}\otimes_AA'$.
+Since $Q_\bullet'$ is a complex of $A'$-modules, we may rewrite
+\[
+  M_{\bullet\bullet\bullet}
+  =
+  M_{\bullet\bullet\bullet}^{\prime(1)}
+  \otimes_{A'}\ldots\otimes_{A'}
+  M_{\bullet\bullet\bullet}^{\prime(m)}
+  \otimes_{A'}Q_\bullet'.
+\]
+
+Regard each $M_{\bullet\bullet\bullet}^{\prime(i)}$ as a simple
+complex for its total degree.  Its terms are projective
+$A'$-modules; hence \sref{III.6.3.7}, extended to any finite number
+of complexes, identifies the homology of
+$M_{\bullet\bullet\bullet}$ with $\Tor_\bullet^{A'}
+\bigl(
+M_{\bullet\bullet\bullet}^{\prime(1)},\ldots,
+M_{\bullet\bullet\bullet}^{\prime(m)},Q_\bullet'
+\bigr)$.
+By \sref{III.6.5.15}, this is the abutment of a spectral sequence
+having the required regularity properties and $E_2$-term
+\[
+\begin{split}
+  E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \Tor_p^{A'}
+  \Bigl(
+    &
+    H_{q_1}(M_{\bullet\bullet\bullet}^{\prime(1)}),\ldots,
+    H_{q_m}(M_{\bullet\bullet\bullet}^{\prime(m)}),
+    \\
+    &
+    H_{q_{m+1}}(Q_\bullet')
+  \Bigr).
+\end{split}
+\]
+----- English, ega3/ega3-6.tex, page III 168 -----
+\oldpage[III]{168}
+
+By the definition of global hypertors,
+\[
+  H_{q_i}(M_{\bullet\bullet\bullet}^{\prime(i)})
+  =
+  \mathbf{Tor}_{q_i}^S
+  \bigl(
+    X^{(i)},S';
+    \sh P_\bullet^{(i)},\sh O_{S'}
+  \bigr),
+\]
+which gives the sequence $(f)$.
+
+On the other hand, regard
+$M_{\bullet\bullet\bullet}^{\prime(i)}$ as a bicomplex whose first
+degree is the sum of the first two degrees of the tricomplex and
+whose second degree is its third degree.  Since its terms are
+projective $A'$-modules, the general theory of hyperhomology shows
+that the homology of
+\[
+  M_{\bullet\bullet\bullet}^{\prime(1)}
+  \otimes_{A'}\ldots\otimes_{A'}
+  M_{\bullet\bullet\bullet}^{\prime(m)}
+  \otimes_{A'}Q_\bullet'
+\]
+is canonically isomorphic to its hyperhomology
+(\sref[0]{0.11.6.5}).  It is therefore the abutment of a spectral
+sequence with $E_2$-term
+\[
+\begin{split}
+  E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \Tor_p^{A'}
+  \Bigl(
+    &
+    H_{q_1}^{\mathrm{II}}
+    (M_{\bullet\bullet\bullet}^{\prime(1)}),\ldots,
+    H_{q_m}^{\mathrm{II}}
+    (M_{\bullet\bullet\bullet}^{\prime(m)}),
+    \\
+    &
+    H_{q_{m+1}}^{\mathrm{II}}(Q_\bullet')
+  \Bigr).
+\end{split}
+\]
+The second degree of $Q_\bullet'$ is zero, so
+\[
+  H_n^{\mathrm{II}}(Q_\bullet')=0
+  \quad(n\neq0),
+  \qquad
+  H_0^{\mathrm{II}}(Q_\bullet')=Q_\bullet',
+\]
+and the preceding formula becomes
+\[
+\begin{split}
+  E_{pq}^2
+  =
+  \bigoplus_{q_1+\ldots+q_m=q}
+  \Tor_p^{A'}
+  \Bigl(
+    &
+    H_{q_1}^{\mathrm{II}}
+    (M_{\bullet\bullet\bullet}^{\prime(1)}),\ldots,
+    \\
+    &
+    H_{q_m}^{\mathrm{II}}
+    (M_{\bullet\bullet\bullet}^{\prime(m)}),
+    Q_\bullet'
+  \Bigr).
+\end{split}
+\]
+
+Moreover, by \sref{III.6.3.4},
+\[
+\begin{split}
+  H_{q_i}^{\mathrm{II}}
+  (M_{\bullet\bullet\bullet}^{\prime(i)})
+  &=
+  H_{q_i}^{\mathrm{II}}
+  (M_{\bullet\bullet\bullet}^{(i)}\otimes_AA')
+  \\
+  &=
+  \Tor_{q_i}^A(L_{\bullet\bullet}^{(i)},A').
+\end{split}
+\]
+Now $L_{-j,k}^{(i)}$ is the direct sum of the modules
+$\Gamma(V,\sh P_k^{(i)})$, where $V$ runs through the affine
+intersections of $j+1$ members of $\mathfrak U^{(i)}$.  If
+$V'=u_i^{-1}(V)$, then $V'$ is affine in $X^{\prime(i)}$, and
+\sref{III.6.4.1.1} gives
+\[
+  \Gamma
+  \bigl(
+    V',
+    \shTor_{q_i}^S
+    (\sh P_k^{(i)},\sh O_{S'})
+  \bigr)
+  =
+  \Tor_{q_i}^A
+  \bigl(
+    \Gamma(V,\sh P_k^{(i)}),A'
+  \bigr).
+\]
+Consequently, the bicomplex
+$H_{q_i}^{\mathrm{II}}
+(M_{\bullet\bullet\bullet}^{\prime(i)})$
+is
+\[
+  C^\bullet
+  \bigl(
+    \mathfrak U^{\prime(i)},
+    \shTor_{q_i}^S
+    (\sh P_\bullet^{(i)},\sh O_{S'})
+  \bigr).
+\]
+This gives the asserted $E_2$-term of the sequence $(f')$.  Its
+biregularity under the stated hypotheses follows in the usual way,
+since, when $\sh P_\bullet^{(i)}$ is bounded below, every degree of
+$M_{\bullet\bullet\bullet}^{\prime(i)}$ is bounded below.
+\end{proof}
+
+\begin{remark}[6.9.5]
+\label{III.6.9.5}
+As in \sref{III.6.7.6}, replacing the complexes
+$\sh P_\bullet^{(i)}$ and $\sh Q_\bullet'$ by respectively
+homotopic complexes does not change the spectral sequences $(e)$,
+$(f)$, and $(f')$, up to canonical isomorphism.
+
+Moreover, for the sequence $(f)$, homomorphisms of complexes
+\[
+  \sh P_\bullet^{(i)}\longrightarrow\sh R_\bullet^{(i)},
+  \qquad
+  \sh Q_\bullet'\longrightarrow\sh T_\bullet'
+\]
+which induce isomorphisms in homology
+\[
+  \sh H_\bullet(\sh P_\bullet^{(i)})
+  \xrightarrow{\sim}
+  \sh H_\bullet(\sh R_\bullet^{(i)}),
+  \qquad
+  \sh H_\bullet(\sh Q_\bullet')
+  \xrightarrow{\sim}
+  \sh H_\bullet(\sh T_\bullet')
+\]
+also induce an isomorphism of spectral sequences
+\[
+\begin{split}
+  {}^{(f)}\sh E
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr)
+  \xrightarrow{\sim}\;&
+  {}^{(f)}\sh E
+  \bigl(
+    f_1,\ldots,f_m;
+    \\
+    &
+    \sh R_\bullet^{(1)},\ldots,\sh R_\bullet^{(m)},
+    \sh T_\bullet'
+  \bigr).
+\end{split}
+\]
+The proof is the same as that of \sref{III.6.7.6}, taking into
+account the result of that section and the regularity of the
+sequence $(f)$.
+\end{remark}
+
+\begin{corollary}[6.9.6]
+\label{III.6.9.6}
+Under the hypotheses of \sref{III.6.9.1}, suppose that:
+\begin{enumerate}
+  \item[$1^\circ$] the complexes $\sh P_\bullet^{(i)}$ consist of
+  $S$-flat modules, and the $\sh O_Y$-modules
+  \[
+    \mathfrak{Tor}_n^S
+    \bigl(
+      f_1,\ldots,f_m;
+      \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+    \bigr)
+  \]
+  are $S$-flat;
+  \item[$2^\circ$] the complexes $\sh P_\bullet^{(i)}$ and
+  $\sh Q_\bullet'$ are bounded below.
+\end{enumerate}
+----- French corrections on page III 167 -----
+[id 5790]
+OLD: \S~5. Un théorème
+NEW: \hfill\textsc{Pages}
+
+\S~5. Un théorème
+FRENCH CONTEXT (corrected): ll 135
+
+4.5. Complétés de modules d'homomorphismes \dotfill 138
+
+4.6. Relations entre morphismes formels et morphismes usuels \dotfill 139
+
+4.7. Un critère d'amplitude \dotfill 145
+
+4.8. Morphismes finis de préschémas formels \dotfill 146
+
+\oldpage[III]{167}
+
+\hfill\textsc{Pages}
+
+\S~5. Un théorème d'existence de faisceaux algébriques cohérents \dotfill 149
+
+5.1. Énoncé du théorème \dotfill 149
+
+5.2. Démonstration du théorème d'existence~: cas projectif et quasi-projectif
+\dotfill 151
+
+5.3. Démonstration du théorème d'existence~: cas général \dotfill 15
+
+[id 5791]
+OLD: comparaison de morphismes
+NEW: comparaison des morphismes
+FRENCH CONTEXT (corrected): aux algébriques cohérents \dotfill 149
+
+5.1. Énoncé du théorème \dotfill 149
+
+5.2. Démonstration du théorème d'existence~: cas projectif et quasi-projectif
+\dotfill 151
+
+5.3. Démonstration du théorème d'existence~: cas général \dotfill 154
+
+5.4. Application~: comparaison des morphismes de schémas usuels et de
+morphismes de schémas formels. Schémas formels algébrisables \dotfill 156
+
+5.5. Une décomposition de certains schémas \dotfill 159
+
+\medskip
+\textsc{Bibliographie} \textit{(suite)} \dotfill 161
+
+\textsc{Index des notations} \dotfill 16
+
+[id 5792]
+OLD: \textsc{Bibliographie (suite)}
+NEW: \textsc{Bibliographie} \textit{(suite)}
+FRENCH CONTEXT (corrected): théorème d'existence~: cas général \dotfill 154
+
+5.4. Application~: comparaison des morphismes de schémas usuels et de
+morphismes de schémas formels. Schémas formels algébrisables \dotfill 156
+
+5.5. Une décomposition de certains schémas \dotfill 159
+
+\medskip
+\textsc{Bibliographie} \textit{(suite)} \dotfill 161
+
+\textsc{Index des notations} \dotfill 162
+
+\textsc{Index terminologique} \dotfill 163
+
+\begin{flushright}
+\emph{Reçu le 28 juin 1961.}
+\end{flushright}
+\end{flushleft}
+
+
+[id 7706]
+OLD: \ldots,\\
+  &\mathfrak{Tor}_{q_m}^S
+NEW: \ldots,\\
+  &\ldots,\mathfrak{Tor}_{q_m}^S
+FRENCH CONTEXT (corrected): \mathscr H_{q''}(\mathscr Q'_\bullet)
+  \Bigr)
+\end{split}
+\]
+\[
+\begin{split}
+  {}^{(f)}\mathscr E_{pq}^2
+  =\bigoplus_{q_1+q_2+\ldots+q_{m+1}=q}
+  \mathscr{T}\!or_p^{S'}\Bigl(
+  &\mathfrak{Tor}_{q_1}^S
+  (f_1,1_{S'};\mathscr P_\bullet^{(1)},\mathscr O_{S'}),\ldots,\\
+  &\ldots,\mathfrak{Tor}_{q_m}^S
+  (f_m,1_{S'};\mathscr P_\bullet^{(m)},\mathscr O_{S'}),
+  \mathscr H_{q_{m+1}}(\mathscr Q'_\bullet)
+  \Bigr)
+\end{split}
+\]
+\[
+\begin{split}
+  {}^{(f')}\mathscr E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_m=q}
+  \mathfrak{Tor}_p^{S'}\Bigl(
+  &f'_1,\ldots,f'_m,1_{S'}
+
+[id 7709]
+OLD:   \mathscr Q'_\bullet
+  \Bigr).
+NEW:   \mathscr Q'_\bullet
+  \Bigr)
+FRENCH CONTEXT (corrected): athscr E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_m=q}
+  \mathfrak{Tor}_p^{S'}\Bigl(
+  &f'_1,\ldots,f'_m,1_{S'};\\
+  &\mathscr{T}\!or_{q_1}^S
+  (\mathscr P_\bullet^{(1)},\mathscr O_{S'}),\ldots,
+  \mathscr{T}\!or_{q_m}^S
+  (\mathscr P_\bullet^{(m)},\mathscr O_{S'}),
+  \mathscr Q'_\bullet
+  \Bigr)
+\end{split}
+\]
+\end{proposition}
+
+\begin{proof}
+La suite $(e)$ n'est autre que la suite d'associativité de (6.8.2) pour
+$r=m$. Pour définir les deux autres suites spectrales, on va encore se limiter
+au cas où $S$, $S'$ et les $Y^{(i)}$ sont affines, le passag
+
+[id 7710]
+OLD: quasi-compacts et, pour chaque
+NEW: quasi-compacts et pour chaque
+FRENCH CONTEXT (corrected): de (6.7.1) et (6.7.2) et étant laissé au lecteur.
+Nous démontrerons donc le
+\end{proof}
+
+\begin{corollary}[6.9.4]
+Soient $A$ un anneau, $A'$ une $A$-algèbre,
+$S=\operatorname{Spec}(A)$, $S'=\operatorname{Spec}(A')$,
+$X^{(i)}$ ($1\leq i\leq m$) des $S$-schémas quasi-compacts et pour chaque
+$i$, soit $X'^{(i)}=X_{(S')}^{(i)}$, qui est un $S'$-schéma quasi-compact.
+Pour chaque $i$, soit $\mathscr P_\bullet^{(i)}$ un complexe de
+$\mathscr O_{X^{(i)}}$-Modules quasi-cohérents; soit enfin $Q'_\bullet$ un
+complexe de $A'$-modules, ces complexes étant
+
+[id 7711]
+OLD: \widetilde{Q'_\bullet})
+\]
+NEW: \widetilde{Q}'_\bullet)
+\]
+FRENCH CONTEXT (corrected): nt. Il
+existe trois foncteurs spectraux biréguliers en les
+$\mathscr P_\bullet^{(i)}$ et en $Q'_\bullet$, ayant pour aboutissement commun
+\[
+  \mathbf{Tor}_\bullet^S
+  (X^{(1)},\ldots,X^{(m)},S';
+   \mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)},
+   \widetilde{Q}'_\bullet)
+\]
+et dont les termes $E_2$ sont respectivement
+\[
+\begin{split}
+  {}^{(e)}E_{pq}^2
+  =\bigoplus_{q'+q''=q}
+  \operatorname{Tor}_p^A\Bigl(
+  &\mathbf{Tor}_{q'}^S
+  (X^{(1)},\ldots,X^{(m)};
+   \mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)}),\\
+  &H_{q''
+
+[id 7714]
+OLD: \ldots,\\
+  &\mathbf{Tor}_{q_m}^S
+NEW: \ldots,\\
+  &\ldots,\mathbf{Tor}_{q_m}^S
+FRENCH CONTEXT (corrected): cr P_\bullet^{(m)}),\\
+  &H_{q''}(Q'_\bullet)
+  \Bigr)
+\end{split}
+\]
+\[
+\begin{split}
+  {}^{(f)}E_{pq}^2
+  =\bigoplus_{q_1+q_2+\ldots+q_{m+1}=q}
+  \operatorname{Tor}_p^{A'}\Bigl(
+  &\mathbf{Tor}_{q_1}^S
+  (X^{(1)},S';\mathscr P_\bullet^{(1)},\mathscr O_{S'}),\ldots,\\
+  &\ldots,\mathbf{Tor}_{q_m}^S
+  (X^{(m)},S';\mathscr P_\bullet^{(m)},\mathscr O_{S'}),
+  H_{q_{m+1}}(Q'_\bullet)
+  \Bigr)
+\end{split}
+\]
+\[
+\begin{split}
+  {}^{(f')}E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_m=q}
+  \mathbf{Tor}_p^{S'}\Bigl(
+  &X'^{(1)},\ldots,X'^{(m)},S';\\
+  &\mathscr{T}\!or_{q
+
+[id 7716]
+OLD: \widetilde{Q'_\bullet}
+  \Bigr).
+NEW: \widetilde{Q}'_\bullet
+  \Bigr).
+FRENCH CONTEXT (corrected): ')}E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_m=q}
+  \mathbf{Tor}_p^{S'}\Bigl(
+  &X'^{(1)},\ldots,X'^{(m)},S';\\
+  &\mathscr{T}\!or_{q_1}^S
+  (\mathscr P_\bullet^{(1)},\mathscr O_{S'}),\ldots,
+  \mathscr{T}\!or_{q_m}^S
+  (\mathscr P_\bullet^{(m)},\mathscr O_{S'}),
+  \widetilde{Q}'_\bullet
+  \Bigr).
+\end{split}
+\]
+\end{corollary}
+
+\begin{proof}
+Nous ne reviendrons pas sur le premier de ces foncteurs spectraux, qui a été
+traité dans (6.8.3) et n'est inclus ici que pour mémoire. Pour définir les
+autres, considérons pour chaque $i$ un recouvrement ouvert af
+
+[id 7719]
+OLD: \widetilde{Q'_\bullet})$ s'obtient
+NEW: \widetilde{Q}'_\bullet)$ s'obtient
+FRENCH CONTEXT (corrected): $ est la projection canonique, le recouvrement ouvert
+affine fini correspondant
+$\mathfrak U'^{(i)}=u_i^{-1}(\mathfrak U^{(i)})$.
+En vertu de (6.6.6),
+$\mathbf{Tor}_\bullet^S(X^{(1)},\ldots,X^{(m)},S';
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)},
+\widetilde{Q}'_\bullet)$ s'obtient en prenant pour $1\leq i\leq m$ une
+résolution projective de Cartan-Eilenberg
+$M_{\bullet\bullet\bullet}^{(i)}$ de
+$L_{\bullet\bullet}^{(i)}=C^\bullet(\mathfrak U^{(i)},
+\mathscr P_\bullet^{(i)})$ (au sens de (\textbf{0}, 11.7.1)), considérant le
+tricomplexe
+
+
+[id 7721]
+OLD: tricomplexe
+\[
+  M_{\bullet\bullet\bullet}
+  =M_{\bullet\bullet\bullet}^{(1)}\otimes_A
+   M_{\bullet\bullet\bullet}^{(2)}\otimes_A\cdots\otimes_A
+   M_{\bullet\bullet\bullet}^{(m)}\otimes_A Q'_\bullet
+\]
+(où
+NEW: tricomplexe
+$M_{\bullet\bullet\bullet}
+=M_{\bullet\bullet\bullet}^{(1)}\otimes_A
+M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A
+M_{\bullet\bullet\bullet}^{(m)}\otimes_A Q'_\bullet$
+(où
+FRENCH CONTEXT (corrected): )$ s'obtient en prenant pour $1\leq i\leq m$ une
+résolution projective de Cartan-Eilenberg
+$M_{\bullet\bullet\bullet}^{(i)}$ de
+$L_{\bullet\bullet}^{(i)}=C^\bullet(\mathfrak U^{(i)},
+\mathscr P_\bullet^{(i)})$ (au sens de (\textbf{0}, 11.7.1)), considérant le
+tricomplexe
+$M_{\bullet\bullet\bullet}
+=M_{\bullet\bullet\bullet}^{(1)}\otimes_A
+M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A
+M_{\bullet\bullet\bullet}^{(m)}\otimes_A Q'_\bullet$
+(où $Q'_\bullet$ est considéré comme un tricomplexe dont les deux derniers
+degrés se réduisent à $0$), et en en prenant l'homologie. Si l'on pose
+$M_{\bullet\bullet\bullet}'^{(i)}=
+M_{\bullet\bullet\bullet}^{(i)}\otimes_A A'$, on a (en se rappelant que
+$Q'_\bulle
+
+[id 7722]
+OLD: $A'$-modules)
+\[
+  M_{\bullet\bullet\bullet}
+  =M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+   M_{\bullet\bullet\bullet}'^{(2)}\otimes_{A'}\cdots\otimes_{A'}
+   M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet.
+\]
+Or,
+NEW: $A'$-modules)
+$M_{\bullet\bullet\bullet}
+=M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$.
+Or,
+FRENCH CONTEXT (corrected): idéré comme un tricomplexe dont les deux derniers
+degrés se réduisent à $0$), et en en prenant l'homologie. Si l'on pose
+$M_{\bullet\bullet\bullet}'^{(i)}=
+M_{\bullet\bullet\bullet}^{(i)}\otimes_A A'$, on a (en se rappelant que
+$Q'_\bullet$ est un complexe de $A'$-modules)
+$M_{\bullet\bullet\bullet}
+=M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$.
+Or, considérons chacun des complexes
+$M_{\bullet\bullet\bullet}'^{(i)}$ comme un complexe simple (pour son degré
+total) et notons que ce complexe est formé de $A'$-modules \emph{projectifs}; il
+résulte de (6.3.7) (étendu à un nombre quelconque de complexes) que
+$
+
+[id 7723]
+OLD: $A'$-modules projectifs;
+NEW: $A'$-modules \emph{projectifs};
+FRENCH CONTEXT (corrected): et\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$.
+Or, considérons chacun des complexes
+$M_{\bullet\bullet\bullet}'^{(i)}$ comme un complexe simple (pour son degré
+total) et notons que ce complexe est formé de $A'$-modules \emph{projectifs}; il
+résulte de (6.3.7) (étendu à un nombre quelconque de complexes) que
+$H_\bullet(M_{\bullet\bullet\bullet})$ est aussi égal à
+$\mathbf{Tor}_\bullet^{A'}
+(M_{\bullet\bullet\bullet}'^{(1)},\ldots,
+M_{\bullet\bullet\bullet}'^{(m)},Q'_\bullet)$;
+c'est donc (6.5.
+
+[id 7724]
+OLD: égal à
+\[
+  \operatorname{Tor}_\bullet^{A'}
+  (M_{\bullet\bullet\bullet}'^{(1)},\ldots,
+   M_{\bullet\bullet\bullet}'^{(m)},Q'_\bullet);
+\]
+c'est donc
+NEW: égal à
+$\mathbf{Tor}_\bullet^{A'}
+(M_{\bullet\bullet\bullet}'^{(1)},\ldots,
+M_{\bullet\bullet\bullet}'^{(m)},Q'_\bullet)$;
+c'est donc
+FRENCH CONTEXT (corrected): llet\bullet}'^{(i)}$ comme un complexe simple (pour son degré
+total) et notons que ce complexe est formé de $A'$-modules \emph{projectifs}; il
+résulte de (6.3.7) (étendu à un nombre quelconque de complexes) que
+$H_\bullet(M_{\bullet\bullet\bullet})$ est aussi égal à
+$\mathbf{Tor}_\bullet^{A'}
+(M_{\bullet\bullet\bullet}'^{(1)},\ldots,
+M_{\bullet\bullet\bullet}'^{(m)},Q'_\bullet)$;
+c'est donc (6.5.15) l'aboutissement d'une suite spectrale ayant les propriétés
+de régularité voulues (les trois degrés de
+$M_{\bullet\bullet\bullet}^{(i)}$ étant limités inférieurement lorsque
+$\mathscr P_\bullet^{(i)}$ est limité inférieurement) et dont le terme $E_2$
+
+
+=================== PAGE III 168 ===================
+----- (English page III 167: shown above in this file) -----
+----- (English page III 168: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 169 -----
+\oldpage[III]{169}
+
+Put $\sh P_\bullet^{\prime(i)}
+=
+\sh P_\bullet^{(i)}
+\otimes_{\sh O_S}\sh O_{S'}$.
+There are canonical functorial isomorphisms
+\begin{env}[6.9.6.1]
+\label{III.6.9.6.1}
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    f_1',\ldots,f_m',1_{S'};
+    \sh P_\bullet^{\prime(1)},\ldots,
+    \sh P_\bullet^{\prime(m)},\sh Q_\bullet'
+  \bigr)
+  \xrightarrow{\sim}
+  \\
+  &\qquad\xrightarrow{\sim}
+  \bigoplus_{n'+n''=n}
+  \mathfrak{Tor}_{n'}^S
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+  \bigr)
+  \otimes_{\sh O_S}
+  \sh H_{n''}(\sh Q_\bullet').
+\end{split}
+  \tag{6.9.6.1}\label{III.6.9.6.1.eq}
+\]
+\end{env}
+
+In particular, when $\sh Q_\bullet'$ consists of a single term
+$\sh F'$ in degree $0$, there are canonical functorial
+isomorphisms
+\begin{env}[6.9.6.2]
+\label{III.6.9.6.2}
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    f_1',\ldots,f_m',1_{S'};
+    \sh P_\bullet^{\prime(1)},\ldots,
+    \sh P_\bullet^{\prime(m)},\sh F'
+  \bigr)
+  \xrightarrow{\sim}
+  \\
+  &\qquad
+  \mathfrak{Tor}_n^S
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+  \bigr)
+  \otimes_{\sh O_S}\sh F'.
+\end{split}
+  \tag{6.9.6.2}\label{III.6.9.6.2.eq}
+\]
+\end{env}
+More particularly, for $\sh F'=\sh O_{S'}$,
+\begin{env}[6.9.6.3]
+\label{III.6.9.6.3}
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    f_1',\ldots,f_m';
+    \sh P_\bullet^{\prime(1)},\ldots,
+    \sh P_\bullet^{\prime(m)}
+  \bigr)
+  \xrightarrow{\sim}
+  \\
+  &\qquad
+  \mathfrak{Tor}_n^S
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+  \bigr)
+  \otimes_{\sh O_S}\sh O_{S'}.
+\end{split}
+  \tag{6.9.6.3}\label{III.6.9.6.3.eq}
+\]
+\end{env}
+\end{corollary}
+
+\begin{proof}
+The flatness of the terms of $\sh P_\bullet^{(i)}$ implies that
+\[
+  \shTor_{q_i}^S
+  \bigl(
+    \sh P_\bullet^{(i)},\sh O_{S'}
+  \bigr)
+  =
+  0
+  \qquad(q_i\neq0)
+\]
+by \sref{III.6.5.8}.  Thus the sequence $(f')$ degenerates.
+Hypothesis $2^\circ$ also makes it biregular
+(\sref{III.6.9.3}), so the edge homomorphism
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^S
+  \bigl(
+    f_1,\ldots,f_m,1_{S'};
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr)
+  \longrightarrow
+  {}^{(f')}\sh E_{n0}^2
+  \\
+  &\qquad =
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    f_1',\ldots,f_m',1_{S'};
+    \sh P_\bullet^{\prime(1)},\ldots,
+    \sh P_\bullet^{\prime(m)},\sh Q_\bullet'
+  \bigr)
+\end{split}
+  \tag{6.9.6.4}\label{III.6.9.6.4.eq}
+\]
+is bijective by \sref[0]{0.11.1.6}.
+
+The flatness of the modules
+\[
+  \mathfrak{Tor}_n^S
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+  \bigr)
+\]
+implies, by \sref{III.6.5.8}, that
+${}^{(e)}\sh E_{pq}^2=0$ for $p\neq0$.  Hence $(e)$ also
+degenerates, and its biregularity makes the edge homomorphism
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^S
+  \bigl(
+    f_1,\ldots,f_m,1_{S'};
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)},
+    \sh Q_\bullet'
+  \bigr)
+  \longrightarrow
+  {}^{(e)}\sh E_{0n}^2
+  \\
+  &\qquad =
+  \bigoplus_{n'+n''=n}
+  \mathfrak{Tor}_{n'}^S
+  \bigl(
+    f_1,\ldots,f_m;
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+  \bigr)
+  \otimes_{\sh O_S}
+  \sh H_{n''}(\sh Q_\bullet')
+\end{split}
+  \tag{6.9.6.5}\label{III.6.9.6.5.eq}
+\]
+bijective.  Combining these two edge isomorphisms gives
+\sref{III.6.9.6.1}.  Formula \sref{III.6.9.6.2} follows because
+$\sh H_q(\sh Q_\bullet')=0$ for $q\neq0$ and
+$\sh H_0(\sh Q_\bullet')=\sh F'$.  Finally, taking
+$\sh F'=\sh O_{S'}$ in \sref{III.6.9.6.2} and using
+\sref{III.6.7.12} gives \sref{III.6.9.6.3}.
+\end{proof}
+
+\begin{corollary}[6.9.7]
+\label{III.6.9.7}
+Under the hypotheses of \sref{III.6.9.1}, suppose that $S$ and
+$S'$ are affine, and choose an integer $d_i$ for each
+$1\leq i\leq m$.  There is an integer $N$, depending only on $S$,
+the $X^{(i)}$, and the $d_i$, with the following property.  For
+every integer $n_0$, the canonical isomorphisms
+\sref{III.6.9.6.3} hold for $n\leq n_0$ and for every system of
+complexes $\sh P_\bullet^{(i)}$ satisfying:
+\begin{enumerate}
+  \item[$1^\circ$] $\sh P_k^{(i)}=0$ for $k<d_i$;
+  \item[$2^\circ$] $\sh P_k^{(i)}$ is $S$-flat for
+  $k<n_0+N$;
+  \item[$3^\circ$] $\mathfrak{Tor}_q^S
+\bigl(
+f_1,\ldots,f_m;
+\sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+\bigr)$
+  is $S$-flat for $q<n_0+N$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Suppose that $\sh P_k^{(i)}$ is $S$-flat for $k<r$.  Then
+\[
+  \shTor_{q_i}^S
+  \bigl(
+    \sh P_k^{(i)},\sh O_{S'}
+  \bigr)
+  =
+  0
+  \qquad
+  (k<r,\ q_i\neq0).
+\]
+Consider
+\[
+\begin{split}
+  \mathfrak{Tor}_p^{S'}
+  \Bigl(
+    &
+    f_1',\ldots,f_m';
+    \shTor_{q_1}^S
+    (\sh P_\bullet^{(1)},\sh O_{S'}),\ldots,
+    \\
+    &
+    \shTor_{q_m}^S
+    (\sh P_\bullet^{(m)},\sh O_{S'})
+  \Bigr).
+\end{split}
+  \tag{6.9.7.1}\label{III.6.9.7.1.eq}
+\]
+----- French corrections on page III 168 -----
+[id 7726]
+OLD: On a d'ailleurs
+\[
+  H_{q_i}(M_{\bullet\bullet\bullet}'^{(i)})
+  =H_{q_i}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+  =\mathbf{Tor}_{q_i}^S
+  (X^{(i)},S';\mathscr P_\bullet^{(i)},\mathscr O_{S'})
+\]
+en vertu
+NEW: On a d'ailleurs
+$H_{q_i}(M_{\bullet\bullet\bullet}'^{(i)})
+=H_{q_i}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+=\mathbf{Tor}_{q_i}^S
+(X^{(i)},S';\mathscr P_\bullet^{(i)},\mathscr O_{S'})$
+en vertu
+FRENCH CONTEXT (corrected):  dont le terme $E_2$
+est donné par
+\[
+  E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \operatorname{Tor}_p^{A'}
+  (H_{q_1}(M_{\bullet\bullet\bullet}'^{(1)}),\ldots,
+   H_{q_m}(M_{\bullet\bullet\bullet}'^{(m)}),H_{q_{m+1}}(Q'_\bullet)).
+\]
+
+\oldpage[III]{168}
+On a d'ailleurs
+$H_{q_i}(M_{\bullet\bullet\bullet}'^{(i)})
+=H_{q_i}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+=\mathbf{Tor}_{q_i}^S
+(X^{(i)},S';\mathscr P_\bullet^{(i)},\mathscr O_{S'})$
+en vertu de la définition des hypertor globaux, ce qui donne la suite $(f)$
+cherchée. On peut d'autre part considérer
+$M_{\bullet\bullet\bullet}'^{(i)}$ comme un bicomplexe dans lequel le premier
+degré est la somme du premier et du second degré du tricomplexe
+$M_{\bul
+
+[id 7727]
+OLD: $A'$-modules projectifs, la
+NEW: $A'$-modules \emph{projectifs}, la
+FRENCH CONTEXT (corrected): exe dans lequel le premier
+degré est la somme du premier et du second degré du tricomplexe
+$M_{\bullet\bullet\bullet}^{(i)}$, le second degré étant le troisième degré
+de ce tricomplexe; comme les modules formant les
+$M_{\bullet\bullet\bullet}'^{(i)}$ sont des $A'$-modules \emph{projectifs}, la théorie
+générale de l'hyperhomologie montre que l'homologie du bicomplexe
+$M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$
+est canoniquement isomor
+
+[id 7728]
+OLD: du bicomplexe
+\[
+  M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+  M_{\bullet\bullet\bullet}'^{(2)}\otimes_{A'}\cdots\otimes_{A'}
+  M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet
+\]
+est canoniquement
+NEW: du bicomplexe
+$M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$
+est canoniquement
+FRENCH CONTEXT (corrected): \bullet\bullet\bullet}^{(i)}$, le second degré étant le troisième degré
+de ce tricomplexe; comme les modules formant les
+$M_{\bullet\bullet\bullet}'^{(i)}$ sont des $A'$-modules \emph{projectifs}, la théorie
+générale de l'hyperhomologie montre que l'homologie du bicomplexe
+$M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$
+est canoniquement isomorphe à son \emph{hyperhomologie} (\textbf{0}, 11.6.5); c'est donc
+l'aboutissement d'une suite spectrale de terme $E_2$ égal à
+\[
+  E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \mathbf{Tor}_p^{A'}
+  (H_{q_1}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(1)
+
+[id 7729]
+OLD: son hyperhomologie
+NEW: son \emph{hyperhomologie}
+FRENCH CONTEXT (corrected): ie
+générale de l'hyperhomologie montre que l'homologie du bicomplexe
+$M_{\bullet\bullet\bullet}'^{(1)}\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$
+est canoniquement isomorphe à son \emph{hyperhomologie} (\textbf{0}, 11.6.5); c'est donc
+l'aboutissement d'une suite spectrale de terme $E_2$ égal à
+\[
+  E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \mathbf{Tor}_p^{A'}
+  (H_{q_1}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(1)}),\ldots,
+   H_{q_m}^{\mathrm{II}}(M_
+
+[id 7731]
+OLD: \bigoplus_{q_1+\cdots+q_{m+1}=q}
+  \operatorname{Tor}_p^{A'}
+NEW: \bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \mathbf{Tor}_p^{A'}
+FRENCH CONTEXT (corrected): let}'^{(2)}\otimes\ldots\otimes_{A'}
+M_{\bullet\bullet\bullet}'^{(m)}\otimes_{A'} Q'_\bullet$
+est canoniquement isomorphe à son \emph{hyperhomologie} (\textbf{0}, 11.6.5); c'est donc
+l'aboutissement d'une suite spectrale de terme $E_2$ égal à
+\[
+  E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_{m+1}=q}
+  \mathbf{Tor}_p^{A'}
+  (H_{q_1}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(1)}),\ldots,
+   H_{q_m}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(m)}),
+   H_{q_{m+1}}^{\mathrm{II}}(Q'_\bullet)).
+\]
+
+Or, comme le second degré de $Q'_\bullet$ se réduit à $0$, on a
+$H_n^{\mathrm{II}}(Q'
+
+[id 7735]
+OLD: on a
+\[
+  H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(i)})
+  =H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+  =\operatorname{Tor}_{q_i}^A(L_{\bullet\bullet}^{(i)},A')
+\]
+en vertu de (6.3.4)
+NEW: on a
+$H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(i)})
+=H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+=\operatorname{Tor}_{q_i}^A(L_{\bullet\bullet}^{(i)},A')$
+en vertu de (6.3.4)
+FRENCH CONTEXT (corrected): $; la formule précédente s'écrit
+aussi
+\[
+  E_{pq}^2
+  =\bigoplus_{q_1+\ldots+q_m=q}
+  \mathbf{Tor}_p^{A'}
+  (H_{q_1}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(1)}),\ldots,
+   H_{q_m}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(m)}),Q'_\bullet).
+\]
+
+En outre, on a
+$H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(i)})
+=H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}^{(i)}\otimes_A A')
+=\operatorname{Tor}_{q_i}^A(L_{\bullet\bullet}^{(i)},A')$
+en vertu de (6.3.4); mais
+$L_{-j,k}^{(i)}=C^j(\mathfrak U^{(i)},\mathscr P_k^{(i)})$, somme directe des
+$\Gamma(V,\mathscr P_k^{(i)})$, où $V$ parcourt les intersections (affines) de
+$j+1$ ensembles du recouvrement $\mathfrak U^{(i)}$; si
+$V'=u_i^{-1}(V)$, $V'$ est affine dans $
+
+[id 7736]
+OLD: $X'^{(i)}$ et il résulte
+NEW: $X'^{(i)}$, et il résulte
+FRENCH CONTEXT (corrected): ); mais
+$L_{-j,k}^{(i)}=C^j(\mathfrak U^{(i)},\mathscr P_k^{(i)})$, somme directe des
+$\Gamma(V,\mathscr P_k^{(i)})$, où $V$ parcourt les intersections (affines) de
+$j+1$ ensembles du recouvrement $\mathfrak U^{(i)}$; si
+$V'=u_i^{-1}(V)$, $V'$ est affine dans $X'^{(i)}$, et il résulte de (6.4.1.1)
+que l'on a
+\[
+  \Gamma\bigl(V',\mathscr{T}\!or_{q_i}^S
+  (\mathscr P_k^{(i)},\mathscr O_{S'})\bigr)
+  =\operatorname{Tor}_{q_i}^A(\Gamma(V,\mathscr P_k^{(i)}),A')
+\]
+d'où pour le bicomplexe
+$H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(i)})
+
+[id 7737]
+OLD: \mathscr O_{S'})\bigr),
+\]
+NEW: \mathscr O_{S'})\bigr)
+\]
+FRENCH CONTEXT (corrected): )\bigr)
+  =\operatorname{Tor}_{q_i}^A(\Gamma(V,\mathscr P_k^{(i)}),A')
+\]
+d'où pour le bicomplexe
+$H_{q_i}^{\mathrm{II}}(M_{\bullet\bullet\bullet}'^{(i)})$ l'expression
+\[
+  C^\bullet\bigl(\mathfrak U'^{(i)},
+  \mathscr{T}\!or_{q_i}^S(\mathscr P_\bullet^{(i)},\mathscr O_{S'})\bigr)
+\]
+ce qui donne finalement l'expression cherchée pour le terme $E_2$ de la
+suite $(f')$. Le fait que cette suite soit birégulière sous les conditions
+indiquées se vérifie comme d'ordinaire, tenant compte de ce que, si
+$\mathscr P_\bullet^{(i)}$ est limité inféri
+
+[id 7738]
+OLD: respectivement homotopes
+NEW: respectivement \emph{homotopes}
+FRENCH CONTEXT (corrected): nt, tous les degrés de
+$M_{\bullet\bullet\bullet}'^{(i)}$ sont limités inférieurement.
+\end{proof}
+
+\begin{remark}[6.9.5]
+On voit comme dans (6.7.6) que le remplacement des
+$\mathscr P_\bullet^{(i)}$ et de $\mathscr Q'_\bullet$ par des complexes qui
+leur sont respectivement \emph{homotopes} ne change pas les suites $(e)$, $(f)$ et
+$(f')$ à un isomorphisme canonique près. En outre, pour la suite $(f)$, des
+homomorphismes
+$\mathscr P_\bullet^{(i)}\to\mathscr R_\bullet^{(i)}$,
+$\mathscr Q'_\bullet\to\mathscr T'_\bullet$ de complexes qui donnent des
+
+[id 7777]
+OLD: spectrales
+\[
+\begin{split}
+  {}^{(f)}\mathscr E
+  (f_1,\ldots,f_m;
+   \mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)},
+   \mathscr Q'_\bullet)
+  \xrightarrow{\sim}\;&
+  {}^{(f)}\mathscr E
+  (f_1,\ldots,f_m;\\
+  &\mathscr R_\bullet^{(1)},\ldots,\mathscr R_\bullet^{(m)},
+   \mathscr T'_\bullet);
+\end{split}
+\]
+la démonstration
+NEW: spectrales
+${}^{(f)}\mathscr E
+(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)},
+\mathscr Q'_\bullet)
+\xrightarrow{\sim}
+{}^{(f)}\mathscr E
+(f_1,\ldots,f_m;
+\mathscr R_\bullet^{(1)},\ldots,\mathscr R_\bullet^{(m)},
+\mathscr T'_\bullet)$;
+la démonstration
+WHY: formula set inline as in the print (findings_167_171 #46 with ';', the correct reading, for the printed ':')
+FRENCH CONTEXT (corrected):  homologie
+$\mathscr H_\bullet(\mathscr P_\bullet^{(i)})\xrightarrow{\sim}
+\mathscr H_\bullet(\mathscr R_\bullet^{(i)})$,
+$\mathscr H_\bullet(\mathscr Q'_\bullet)\xrightarrow{\sim}
+\mathscr H_\bullet(\mathscr T'_\bullet)$ fournissent un isomorphisme de suites
+spectrales
+${}^{(f)}\mathscr E
+(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)},
+\mathscr Q'_\bullet)
+\xrightarrow{\sim}
+{}^{(f)}\mathscr E
+(f_1,\ldots,f_m;
+\mathscr R_\bullet^{(1)},\ldots,\mathscr R_\bullet^{(m)},
+\mathscr T'_\bullet)$;
+la démonstration est la même que pour (6.7.6) en tenant compte du résultat
+de (6.7.6) et de la régularité de la suite $(f)$.
+\end{remark}
+
+\begin{corollary}[6.9.6]
+Sous les conditions de \textup{(6.9.1)}, supposons que :
+\begin{enumerate}
+  \item[$1^\circ$] Les complexes $\ma
+
+=================== PAGE III 169 ===================
+----- (English page III 168: shown above in this file) -----
+----- (English page III 169: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 170 -----
+\oldpage[III]{170}
+
+Compute \eqref{III.6.9.7.1.eq} by the method of
+\sref{III.6.6.2}, using the inverse images of fixed finite affine
+open coverings $\mathfrak U^{(i)}$ of $X^{(i)}$.  These coverings
+are independent of $S'$ and of the complexes
+$\sh P_\bullet^{(i)}$.  The terms $L_{jk}^{(i)}$ vanish for
+$j<\setmin N_i$, where $N_i$ depends only on $\mathfrak U^{(i)}$.
+
+If some $q_i$ is nonzero, the simple complex whose homology in
+degree $p$ is \eqref{III.6.9.7.1.eq} has zero terms in every degree
+\[
+  <
+  r+\sum_{j\neq i}d_j-\sum_{\ell=1}^mN_\ell.
+\]
+Consequently \eqref{III.6.9.7.1.eq} vanishes for $p<r\setmin N$, where
+\[
+  N
+  =
+  \max_i
+  \left(
+    \sum_{\ell=1}^mN_\ell-\sum_{j\neq i}d_j
+  \right).
+\]
+It follows that
+${}^{(f')}\sh E_{pq}^2=0$ for $q\neq0$ and $p<r\setmin N$.
+Since also ${}^{(f')}\sh E_{pq}^2=0$ for $q<0$, the edge
+homomorphism \eqref{III.6.9.6.4.eq} is bijective for $n<r\setmin N$
+(M, XV, 5.6), when $\sh Q_\bullet'=\sh O_{S'}$.
+
+Secondly, if $\mathfrak{Tor}_q^S
+\bigl(
+f_1,\ldots,f_m;
+\sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(m)}
+\bigr)$
+is $S$-flat for $q<r$, then
+${}^{(e)}\sh E_{pq}^2=0$ for $p\neq0$ and $q<r$; moreover,
+${}^{(e)}\sh E_{pq}^2=0$ for $p<0$.  Thus the edge homomorphism
+\eqref{III.6.9.6.5.eq} is bijective for $n<r$, which completes the
+proof.
+\end{proof}
+
+The case of \sref{III.6.9.3} most important in applications is
+$m=1$, with $\sh Q_\bullet'$ reduced to a single term $\sh F'$ in
+degree $0$.  We state it again for later reference.\footnote{The
+case treated in \sref{III.6.9.8}, and in particular the spectral
+sequences \sref{III.6.9.8.3} and \sref{III.6.9.8.4}, was pointed
+out to us by J.-P.~Serre in 1957.}
+
+\begin{proposition}[6.9.8]
+\label{III.6.9.8}
+Let $S$ be a prescheme, let $g:S'\to S$ be a morphism, and let
+$f:X\to Y$ be a separated and quasi-compact $S$-morphism of
+$S$-preschemes.  Let $\sh P_\bullet$ be a bounded-below complex of
+quasi-coherent $\sh O_X$-modules, and let $\sh F'$ be a
+quasi-coherent $\sh O_{S'}$-module.  There are two biregular
+spectral functors in $\sh P_\bullet$ and $\sh F'$, with values in
+the category of quasi-coherent $\sh O_{Y_{(S')}}$-modules, having
+the same abutment $\mathfrak{Tor}_\bullet^S
+\bigl(
+f,1_{S'};\sh P_\bullet,\sh F'
+\bigr)$,
+and whose $E_2$-terms are
+\begin{env}[6.9.8.1]
+\label{III.6.9.8.1}
+\[
+  {}'\sh E_{pq}^2
+  =
+  \shTor_p^S
+  \bigl(
+    \sh H^{-q}(f,\sh P_\bullet),\sh F'
+  \bigr)
+  \tag{6.9.8.1}\label{III.6.9.8.1.eq}
+\]
+\end{env}
+and
+\begin{env}[6.9.8.2]
+\label{III.6.9.8.2}
+\[
+  {}''\sh E_{pq}^2
+  =
+  \sh H^{-p}
+  \bigl(
+    f',
+    \shTor_q^S(\sh P_\bullet,\sh F')
+  \bigr),
+  \tag{6.9.8.2}\label{III.6.9.8.2.eq}
+\]
+\end{env}
+where $f'=f_{(S')}:
+X_{(S')}\longrightarrow Y_{(S')}$.
+\end{proposition}
+
+\begin{proof}
+These spectral sequences may also be obtained, without starting
+from \sref{III.6.9.3}, from the sequences $(a)$ and $(b')$ of
+\sref{III.6.7.3}, by taking
+\[
+  X^{(1)}=X,\quad
+  Y^{(1)}=Y,\quad
+  X^{(2)}=Y^{(2)}=S',\quad
+  f_1=f,\quad
+  f_2=1_{S'}.
+\]
+When $S=S'=Y$ and $Y$ is affine, one obtains two spectral
+sequences with $E_2$-terms
+\[
+  {}'\sh E_{pq}^2
+  =
+  \shTor_p^Y
+  \bigl(
+    \sh H^{-q}(f,\sh P_\bullet),\sh F
+  \bigr)
+  \tag{6.9.8.3}\label{III.6.9.8.3}
+\]
+and
+\[
+  {}''\sh E_{pq}^2
+  =
+  \sh H^{-p}
+  \bigl(
+    f,\shTor_q^Y(\sh P_\bullet,\sh F)
+  \bigr).
+  \tag{6.9.8.4}\label{III.6.9.8.4}
+\]
+By \sref{III.6.7.6}, both abut to the hypercohomology $\sh H^\bullet
+\bigl(
+f,\sh P_\bullet\otimes_Y\sh F
+\bigr)$
+of $f_*$ with respect to the complex
+$\sh P_\bullet\otimes_Y\sh F$ of $\sh O_X$-modules, for every
+quasi-coherent $Y$-flat $\sh O_Y$-module $\sh F$; if the terms of
+$\sh P_\bullet$ are $Y$-flat, $\sh F$ may be any quasi-coherent
+$\sh O_Y$-module.  These spectral sequences are distinct from
+those of \sref{III.6.2.1}.
+\end{proof}
+
+\begin{corollary}[6.9.9]
+\label{III.6.9.9}
+Under the hypotheses of \sref{III.6.9.8}, suppose that
+$\sh P_\bullet$ is bounded below, consists of $S$-flat modules,
+and that the $\sh O_Y$-modules
+$\sh H^n(f,\sh P_\bullet)$ are $S$-flat.
+----- French corrections on page III 169 -----
+[id 7740]
+OLD: \otimes_{\mathscr O_S}\mathscr H_{n''}(\mathscr Q'_\bullet).
+NEW: \otimes_S\mathscr H_{n''}(\mathscr Q'_\bullet).
+FRENCH CONTEXT (corrected):  P_\bullet'^{(1)},\ldots,
+   \mathscr P_\bullet'^{(m)},\mathscr Q'_\bullet)
+  \xrightarrow{\sim}\\
+  &\qquad\xrightarrow{\sim}
+  \bigoplus_{n'+n''=n}
+  \mathfrak{Tor}_{n'}^S
+  (f_1,\ldots,f_m;
+   \mathscr P_\bullet^{(1)},\ldots,
+   \mathscr P_\bullet^{(m)})
+  \otimes_S\mathscr H_{n''}(\mathscr Q'_\bullet).
+\end{split}
+\tag{6.9.6.1}\label{III.6.9.6.1.fr}
+\]
+En particulier, pour $\mathscr Q'_\bullet$ réduit à un seul terme
+$\mathscr F'$ de degré $0$, on a des isomorphismes canoniques fonctoriels
+\[
+\begin{split}
+  &\mathfrak{Tor}_n^{S'}
+  (f'_1,\ldots,f'_m,1_{S'}
+
+[id 7742]
+OLD: {}^{(f')}\mathscr E_{n0}^2\\
+NEW: {}^{(f')}\mathscr E_{n0}^2=\\
+FRENCH CONTEXT (corrected): e
+$2^\circ$ entraîne d'ailleurs qu'elle est birégulière (6.9.3), donc le
+edge-homomorphisme
+\[
+\begin{split}
+  &\mathfrak{Tor}_n^S
+  (f_1,\ldots,f_m,1_{S'};
+   \mathscr P_\bullet^{(1)},\ldots,
+   \mathscr P_\bullet^{(m)},\mathscr Q'_\bullet)
+  \longrightarrow {}^{(f')}\mathscr E_{n0}^2=\\
+  &\qquad=
+  \mathfrak{Tor}_n^{S'}
+  (f'_1,\ldots,f'_m,1_{S'};
+   \mathscr P_\bullet'^{(1)},\ldots,
+   \mathscr P_\bullet'^{(m)},\mathscr Q'_\bullet)
+\end{split}
+\tag{6.9.6.4}\label{III.6.9.6.4.fr}
+\]
+est bijectif (\textbf{0}, 11.1.6). L'hypothèse de platitud
+
+[id 7744]
+OLD: {}^{(e)}\mathscr E_{0n}^2\\
+NEW: {}^{(e)}\mathscr E_{0n}^2=\\
+FRENCH CONTEXT (corrected):  suite
+$(e)$ est donc aussi dégénérée, et comme elle est birégulière, le
+edge-homomorphisme
+\[
+\begin{split}
+  &\mathfrak{Tor}_n^S
+  (f_1,\ldots,f_m,1_{S'};
+   \mathscr P_\bullet^{(1)},\ldots,
+   \mathscr P_\bullet^{(m)},\mathscr Q'_\bullet)
+  \longrightarrow {}^{(e)}\mathscr E_{0n}^2=\\
+  &\qquad=
+  \bigoplus_{n'+n''=n}
+  \mathfrak{Tor}_{n'}^S
+  (f_1,\ldots,f_m;
+   \mathscr P_\bullet^{(1)},\ldots,
+   \mathscr P_\bullet^{(m)})
+  \otimes_{\mathscr O_S}\mathscr H_{n''}(\mathscr Q'_\bullet)
+\end{split}
+\tag{6.9.6.5}\label{III.6.9.6.5.fr}
+\]
+est 
+
+[id 7748]
+OLD: suivantes :
+\begin{enumerate}
+  \item[$1^\circ$] $\mathscr P_k^{(i)}=0$ pour $k<d_i$;
+  \item[$2^\circ$] $\mathscr P_k^{(i)}$ est plat sur $S$ pour $k<n_0+N$;
+  \item[$3^\circ$]
+  $\mathfrak{Tor}_q^S(f_1,\ldots,f_m;
+  \mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})$ est plat sur
+  $S$ pour $q<n_0+N$.
+\end{enumerate}
+NEW: suivantes :
+$1^\circ$ $\mathscr P_k^{(i)}=0$ pour $k<d_i$;
+$2^\circ$ $\mathscr P_k^{(i)}$ est plat sur $S$ pour $k<n_0+N$;
+$3^\circ$
+$\mathfrak{Tor}_q^S(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})$ est plat sur
+$S$ pour $q<n_0+N$.
+FRENCH CONTEXT (corrected): dépendant que de $S$, des $X^{(i)}$ et des $d_i$, ayant la
+propriété suivante : pour tout entier $n_0$, on a des isomorphismes canoniques
+\textup{(6.9.6.3)} pour $n\leq n_0$ et pour tout système de complexes
+$\mathscr P_\bullet^{(i)}$ vérifiant les conditions suivantes :
+$1^\circ$ $\mathscr P_k^{(i)}=0$ pour $k<d_i$;
+$2^\circ$ $\mathscr P_k^{(i)}$ est plat sur $S$ pour $k<n_0+N$;
+$3^\circ$
+$\mathfrak{Tor}_q^S(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})$ est plat sur
+$S$ pour $q<n_0+N$.
+\end{corollary}
+
+\begin{proof}
+Supposons $\mathscr P_k^{(i)}$ plat sur $S$ pour $k<r$; alors
+$\mathscr{T}\!or_{q_i}^S(\mathscr P_k^{(i)},\mathscr O_{S'})=0$ pour $k<r$
+et $q_i\ne0$; calculons
+\[
+\begin{split}
+  \mathfrak{Tor}_p^{S'}\Bigl(
+  &f'_1,\ldots,f'_m;
+
+[id 7749]
+OLD: \Bigr).
+NEW: \Bigr)
+FRENCH CONTEXT (corrected): )=0$ pour $k<r$
+et $q_i\ne0$; calculons
+\[
+\begin{split}
+  \mathfrak{Tor}_p^{S'}\Bigl(
+  &f'_1,\ldots,f'_m;
+  \mathscr{T}\!or_{q_1}^S(\mathscr P_\bullet^{(1)},\mathscr O_{S'}),
+  \ldots,\\
+  &\mathscr{T}\!or_{q_m}^S(\mathscr P_\bullet^{(m)},\mathscr O_{S'})
+  \Bigr)
+\end{split}
+\tag{6.9.7.1}\label{III.6.9.7.1.fr}
+\]
+\oldpage[III]{170}
+par la méthode de (6.6.2), à l'aide de l'image réciproque d'un recouvrement
+affine fixe $\mathfrak U^{(i)}$ de $X^{(i)}$ ($1\leq i\leq m$)
+(indépendant de $S'$ et des $\mathscr P_\bullet^{(
+
+=================== PAGE III 170 ===================
+----- (English page III 169: shown above in this file) -----
+----- (English page III 170: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 171 -----
+\oldpage[III]{171}
+
+Put $\sh P_\bullet'
+=
+\sh P_\bullet\otimes_{\sh O_S}\sh O_{S'}$.
+There are canonical functorial isomorphisms
+\begin{env}[6.9.9.1]
+\label{III.6.9.9.1}
+\[
+\begin{split}
+  &
+  \mathfrak{Tor}_n^{S'}
+  \bigl(
+    f',1_{S'};\sh P_\bullet',\sh F'
+  \bigr)
+  \xrightarrow{\sim}
+  \\
+  &\qquad
+  \sh H^{-n}(f,\sh P_\bullet)
+  \otimes_{\sh O_S}\sh F'.
+\end{split}
+  \tag{6.9.9.1}\label{III.6.9.9.1.eq}
+\]
+\end{env}
+In particular, for $\sh F'=\sh O_{S'}$,
+\begin{env}[6.9.9.2]
+\label{III.6.9.9.2}
+\[
+  \sh H^n(f',\sh P_\bullet')
+  \xrightarrow{\sim}
+  \sh H^n(f,\sh P_\bullet)
+  \otimes_{\sh O_S}\sh O_{S'}.
+  \tag{6.9.9.2}\label{III.6.9.9.2.eq}
+\]
+\end{env}
+This is the case $m=1$ of \sref{III.6.9.6}.
+\end{corollary}
+
+\begin{corollary}[6.9.10]
+\label{III.6.9.10}
+Let $S$ be a prescheme, let $f:X\to Y$ be a separated and
+quasi-compact $S$-morphism of $S$-preschemes, and let
+$\sh P_\bullet$ be a bounded-below complex of quasi-coherent
+$\sh O_X$-modules that are flat over $S$.  Suppose further that
+the $\sh O_Y$-modules $\sh H^n(f,\sh P_\bullet)$ are flat over
+$S$.
+
+For $s\in S$, write $X_s$ and $Y_s$ for the fibres
+\[
+  X\times_S\Spec(\kres(s)),
+  \qquad
+  Y\times_S\Spec(\kres(s)),
+\]
+write $f_s:X_s\longrightarrow Y_s$
+for the morphism $f\times_S1$, and put
+\[
+  \sh P_\bullet^s
+  =
+  \sh P_\bullet\otimes_{\sh O_S}\kres(s).
+\]
+Then there are canonical functorial isomorphisms
+\begin{env}[6.9.10.1]
+\label{III.6.9.10.1}
+\[
+  \sh H^n(f_s,\sh P_\bullet^s)
+  \xrightarrow{\sim}
+  \sh H^n(f,\sh P_\bullet)
+  \otimes_{\sh O_S}\kres(s).
+  \tag{6.9.10.1}\label{III.6.9.10.1.eq}
+\]
+\end{env}
+\end{corollary}
+
+Thus, under suitable flatness hypotheses, the formation of the
+derived functors $\mathrm R^nf_*(\sh F)$ ``commutes with passage to the
+fibres.''  We shall obtain this result again by another method in
+\S\,7.
+
+\subsection{Local structure of certain cohomological functors}
+\label{subsection:III.6.10}
+\label{III.6.10}
+
+\begin{proposition}[6.10.1]
+\label{III.6.10.1}
+Let $S=\Spec(A)$ be an affine scheme, and let
+$Y^{(i)}$ $(1\leq i\leq n)$ be a finite family of affine
+$S$-schemes, flat over $S$.  For each $i$, let $f_i:X^{(i)}\longrightarrow Y^{(i)}$
+be a separated and quasi-compact $S$-morphism, and let
+$\sh P_\bullet^{(i)}$ be a bounded-below complex of
+quasi-coherent $\sh O_{X^{(i)}}$-modules.  Let $Y$ be the product
+over $S$ of the schemes $Y^{(i)}$.
+
+There exists a complex $\sh R_\bullet$ of quasi-coherent
+$\sh O_Y$-modules, flat over $S$, with the following property.
+For every affine $S$-scheme $S'$ and every bounded-below complex
+$\sh Q_\bullet'$ of quasi-coherent $\sh O_{S'}$-modules, there is
+an isomorphism
+\begin{env}[6.10.1.1]
+\label{III.6.10.1.1}
+\[
+  \mathfrak{Tor}_\bullet^S
+  \bigl(
+    f_1,\ldots,f_n,1_{S'};
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(n)},
+    \sh Q_\bullet'
+  \bigr)
+  \xrightarrow{\sim}
+  \sh H_\bullet
+  \bigl(
+    \sh R_\bullet\otimes_{\sh O_S}\sh Q_\bullet'
+  \bigr),
+  \tag{6.10.1.1}\label{III.6.10.1.1.eq}
+\]
+\end{env}
+which is an isomorphism of $\partial$-functors in
+$\sh Q_\bullet'$.
+
+Moreover, for every $S$-morphism
+$u:S''\to S'$ of affine $S$-schemes, the diagram
+\begin{env}[6.10.1.2]
+\label{III.6.10.1.2}
+\[
+\xymatrix@C=12pt@R=30pt{
+  {\begin{gathered}
+    \mathfrak{Tor}_\bullet^S
+    (f_1,\ldots,f_n,1_{S'};\\
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(n)},
+    \sh Q_\bullet')
+  \end{gathered}}
+  \ar[r]^-{\sim}\ar[d]
+  &
+  {\sh H_\bullet
+    (\sh R_\bullet\otimes_{\sh O_S}\sh Q_\bullet')}
+  \ar[d]
+  \\
+  {\begin{gathered}
+    \mathfrak{Tor}_\bullet^S
+    (f_1,\ldots,f_n,1_{S''};\\
+    \sh P_\bullet^{(1)},\ldots,\sh P_\bullet^{(n)},
+    u^*(\sh Q_\bullet'))
+  \end{gathered}}
+  \ar[r]^-{\sim}
+  &
+  {\sh H_\bullet
+    (\sh R_\bullet\otimes_{\sh O_S}u^*(\sh Q_\bullet'))}
+}
+\tag{6.10.1.2}\label{III.6.10.1.2.eq}
+\]
+\end{env}
+commutes.  Here the vertical arrows are the canonical
+$(1_Y\times_Su)$-morphisms defined in \sref{III.6.7.10}.
+\end{proposition}
+
+\ifdefined\EGAIIIStopAfterPageOneSevenOne
+  \expandafter\endinput
+\fi
+
+\begin{proof}
+----- French corrections on page III 170 -----
+[id 7752]
+OLD: degrés
+\[
+  <r+\sum_{j\ne i}d_j-\sum_{i=1}^m N_i,
+\]
+donc
+NEW: degrés
+$<r+\sum_{j\ne i}d_j-\sum_{i=1}^m N_i$,
+donc
+
+[id 7753]
+OLD: d_j-\sum_{i=1}^m N_i
+NEW: d_j\setmin\sum_{i=1}^m N_i
+FRENCH CONTEXT (corrected): (i)}$); les termes
+$L_{jk}^{(i)}$ sont nuls pour $j<\setmin N_i$ (ne dépendant que de
+$\mathfrak U^{(i)}$); si l'un des $q_i$ n'est pas nul, le complexe simple dont
+l'homologie de degré $p$ est (6.9.7.1) a ses termes nuls pour tous les degrés
+$<r+\sum_{j\ne i}d_j\setmin\sum_{i=1}^m N_i$,
+donc (6.9.7.1) est nul pour $p<r\setmin N$, en désignant par $N$ le plus grand des
+nombres
+$\sum_{i=1}^m N_i\setmin\sum_{j\ne i}d_j$.
+On en conclut que l'on a ${}^{(f')}\mathscr E_{pq}^2=0$ pour $q\ne0$ et
+$p<r\setmin N$; comme d'autre part ${}^{(f')}\maths
+
+[id 7755]
+OLD: nombres
+\[
+  \sum_{i=1}^m N_i-\sum_{j\ne i}d_j.
+\]
+On en
+NEW: nombres
+$\sum_{i=1}^m N_i-\sum_{j\ne i}d_j$.
+On en
+
+[id 7756]
+OLD: N_i-\sum_{j\ne i}d_j
+NEW: N_i\setmin\sum_{j\ne i}d_j
+FRENCH CONTEXT (corrected): s nul, le complexe simple dont
+l'homologie de degré $p$ est (6.9.7.1) a ses termes nuls pour tous les degrés
+$<r+\sum_{j\ne i}d_j\setmin\sum_{i=1}^m N_i$,
+donc (6.9.7.1) est nul pour $p<r\setmin N$, en désignant par $N$ le plus grand des
+nombres
+$\sum_{i=1}^m N_i\setmin\sum_{j\ne i}d_j$.
+On en conclut que l'on a ${}^{(f')}\mathscr E_{pq}^2=0$ pour $q\ne0$ et
+$p<r\setmin N$; comme d'autre part ${}^{(f')}\mathscr E_{pq}^2=0$ pour $q<0$, on
+voit que le edge-homomorphisme (6.9.6.4) est bijectif pour $n<r\setmin N$
+(M, XV, 5.6) (pour $\mathscr Q
+
+[id 7759]
+OLD: si
+\[
+  \mathfrak{Tor}_q^S
+  (f_1,\ldots,f_m;
+   \mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})
+\]
+est plat
+NEW: si
+$\mathfrak{Tor}_q^S
+(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})$
+est plat
+FRENCH CONTEXT (corrected): r E_{pq}^2=0$ pour $q\ne0$ et
+$p<r\setmin N$; comme d'autre part ${}^{(f')}\mathscr E_{pq}^2=0$ pour $q<0$, on
+voit que le edge-homomorphisme (6.9.6.4) est bijectif pour $n<r\setmin N$
+(M, XV, 5.6) (pour $\mathscr Q'_\bullet=\mathscr O_{S'}$). En second lieu, si
+$\mathfrak{Tor}_q^S
+(f_1,\ldots,f_m;
+\mathscr P_\bullet^{(1)},\ldots,\mathscr P_\bullet^{(m)})$
+est plat sur $S$ pour $q<r$, on a ${}^{(e)}\mathscr E_{pq}^2=0$ pour $p\ne0$
+et $q<r$; par ailleurs ${}^{(e)}\mathscr E_{pq}^2=0$ pour $p<0$, donc le
+edge-homomorphisme (6.9.6.5) est bijectif pour $n<r$, ce qui achève la
+démonstration.
+\end{proof}
+
+Le cas le plus impo
+
+[id 7760]
+OLD: \]
+et
+\[
+NEW: \]
+\[
+FRENCH CONTEXT (corrected):  même aboutissement
+$\mathfrak{Tor}_\bullet^S(f,1_{S'};\mathscr P_\bullet,\mathscr F')$, et dont
+les termes $E_2$ sont
+\[
+  {}'\mathscr E_{pq}^2
+  =\mathscr{T}\!or_p^S
+  (\mathscr H^{-q}(f,\mathscr P_\bullet),\mathscr F')
+  \tag{6.9.8.1}\label{III.6.9.8.1.fr}
+\]
+\[
+  {}''\mathscr E_{pq}^2
+  =\mathscr H^{-p}
+  (f',\mathscr{T}\!or_q^S(\mathscr P_\bullet,\mathscr F')),
+  \tag{6.9.8.2}\label{III.6.9.8.2.fr}
+\]
+où $f'=f_{(S')}:X_{(S')}\to Y_{(S')}$. 
+\end{proposition}
+
+\begin{proof}
+Les suites en question peuvent aussi s'obt
+
+[id 7761]
+OLD: $Y$-plat $\mathscr F$
+NEW: $Y$-\emph{plat} $\mathscr F$
+FRENCH CONTEXT (corrected): vertu de (6.7.6)) à l'hypercohomologie
+$\mathscr H^\bullet(f,\mathscr P_\bullet\otimes_Y\mathscr F)$ du foncteur
+$f_*$ par rapport au complexe
+$\mathscr P_\bullet\otimes_Y\mathscr F$ de $\mathscr O_X$-Modules, pour tout
+$\mathscr O_Y$-Module quasi-cohérent et $Y$-\emph{plat} $\mathscr F$ (ou pour tout
+$\mathscr O_Y$-Module quasi-cohérent $\mathscr F$ lorsque
+$\mathscr P_\bullet$ est formé de $\mathscr O_X$-Modules $Y$-\emph{plats}), qui sont
+distinctes de celles de (6.2.1).
+\end{proof}
+
+\begin{corollary}[6.9.9]
+Sous les conditions de \textup{
+
+[id 7762]
+OLD: $Y$-plats)
+NEW: $Y$-\emph{plats})
+FRENCH CONTEXT (corrected): llet\otimes_Y\mathscr F$ de $\mathscr O_X$-Modules, pour tout
+$\mathscr O_Y$-Module quasi-cohérent et $Y$-\emph{plat} $\mathscr F$ (ou pour tout
+$\mathscr O_Y$-Module quasi-cohérent $\mathscr F$ lorsque
+$\mathscr P_\bullet$ est formé de $\mathscr O_X$-Modules $Y$-\emph{plats}), qui sont
+distinctes de celles de (6.2.1).
+\end{proof}
+
+\begin{corollary}[6.9.9]
+Sous les conditions de \textup{(6.9.8)}, supposons que le complexe
+$\mathscr P_\bullet$ soit limité inférieurement, formé de Modules plats sur
+$S$, et que les $\mathscr O_Y$-Modu
+
+=================== PAGE III 171 ===================
+----- (English page III 170: shown above in this file) -----
+----- (English page III 171: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 172 -----
+\oldpage[III]{172}
+Compute the hypertor by the method of \sref{III.6.6.2}, taking
+account of Remark \sref{III.6.6.6}.  With the notation used
+there, each $L_{\bullet\bullet}^{(i)}$ is a bicomplex of
+$A_i$-modules, where $A_i$ denotes the ring of $Y^{(i)}$.
+It therefore has a projective Cartan-Eilenberg resolution
+$M_{\bullet\bullet\bullet}^{(i)}$ (in the sense of
+\sref[0]{0.11.7.1}) by projective $A_i$-modules.  By
+\sref{III.6.6.6}, the left side of
+\eqref{III.6.10.1.1.eq} is canonically isomorphic to $\HH_\bullet
+\bigl(
+M_{\bullet\bullet\bullet}\otimes_AQ_\bullet'
+\bigr)$,
+where $M_{\bullet\bullet\bullet}
+=
+M_{\bullet\bullet\bullet}^{(1)}
+\otimes_A
+M_{\bullet\bullet\bullet}^{(2)}
+\otimes_A\ldots\otimes_A
+M_{\bullet\bullet\bullet}^{(n)}$
+and $\sh Q_\bullet'=\widetilde{Q_\bullet'}$.
+
+By hypothesis, the rings $A_i$ are flat $A$-modules.  Hence the
+$M_{\bullet\bullet\bullet}^{(i)}$ are tricomplexes of flat
+$A$-modules \sref[0]{0.6.2.1}, and so is
+$M_{\bullet\bullet\bullet}$.  Furthermore, if $B$ is the ring of
+$Y$, that is, the tensor product over $A$ of the $A_i$, then
+$M_{\bullet\bullet\bullet}$ is a tricomplex of $B$-modules.
+Consequently the complex
+\[
+  \sh R_\bullet
+  =
+  \widetilde{M_{\bullet\bullet\bullet}},
+\]
+where $M_{\bullet\bullet\bullet}$ is regarded as a simple
+complex, has the required properties, as follows immediately
+from \sref{III.6.7.10}.
+\end{proof}
+
+\begin{corollary}[6.10.2]
+\label{III.6.10.2}
+In Proposition \sref{III.6.10.1}, the complex
+$\sh R_\bullet$ may be taken to be bounded below.  If the
+$\sh P_\bullet^{(i)}$ are bounded above and the $Y^{(i)}$ have
+finite cohomological dimension, then $\sh R_\bullet$ may be
+taken to be bounded above.
+\end{corollary}
+
+\begin{proof}
+The first assertion follows because all three degrees of each
+$M_{\bullet\bullet\bullet}^{(i)}$ are bounded below.  On the
+other hand, if the rings $A_i$ have finite cohomological
+dimension, the third degree of each
+$M_{\bullet\bullet\bullet}^{(i)}$ assumes only finitely many
+values, and by its construction the same is true of its first
+degree \sref{III.6.6.2}.  Its second degree is bounded above
+precisely when the degree of $\sh P_\bullet^{(i)}$ is bounded
+above \sref{III.6.6.2}, which proves the second assertion.
+\end{proof}
+
+\begin{remarks}[6.10.3]
+\label{III.6.10.3}
+\textnormal{(i)}
+With the notation of \sref{III.6.10.1},
+\[
+  \sh H_\bullet
+  (\sh R_\bullet\otimes_S\sh Q_\bullet')
+  \simeq
+  \mathscr{T}\!or_\bullet(\sh R_\bullet,\sh Q_\bullet'),
+\]
+because $\sh R_\bullet$ consists of $\sh O_Y$-modules that are
+flat over $S$ \sref{III.6.5.9}.  It is therefore
+\sref{III.6.5.4} the abutment of a regular spectral sequence
+whose $E^2$-term is
+\begin{env}[6.10.3.1]
+\label{III.6.10.3.1}
+\[
+  E^2_{pq}
+  =
+  \bigoplus_{q'+q''=q}
+  \shTor_p^S
+  \bigl(
+    \sh H_{q'}(\sh R_\bullet),
+    \sh H_{q''}(\sh Q_\bullet')
+  \bigr).
+  \tag{6.10.3.1}\label{III.6.10.3.1.eq}
+\]
+\end{env}
+This is precisely the spectral sequence (e) for base change in
+\sref{III.6.9.3}.
+
+\medskip
+\textnormal{(ii)}
+Let $\sh R_\bullet'$ be another complex of quasi-coherent
+$\sh O_Y$-modules, flat over $S$, and let $g:\sh R_\bullet'\longrightarrow\sh R_\bullet$
+be a homomorphism of complexes for which $\sh H_\bullet(g):
+\sh H_\bullet(\sh R_\bullet')
+\longrightarrow
+\sh H_\bullet(\sh R_\bullet)$
+is an isomorphism.  By \sref{III.6.3.3} and
+\sref{III.6.5.9}, $g$ induces an isomorphism of
+$\partial$-functors in $\sh Q_\bullet'$, $\sh H_\bullet
+(\sh R_\bullet'\otimes_S\sh Q_\bullet')
+\xrightarrow{\sim}
+\sh H_\bullet
+(\sh R_\bullet\otimes_S\sh Q_\bullet')$,
+such that the diagram
+\[
+\xymatrix@C=28pt@R=30pt{
+  \sh H_\bullet
+  (\sh R_\bullet'\otimes_S\sh Q_\bullet')
+  \ar[r]^-{\sim}\ar[d]
+  &
+  \sh H_\bullet
+  (\sh R_\bullet\otimes_S\sh Q_\bullet')
+  \ar[d]
+  \\
+  \sh H_\bullet
+  (\sh R_\bullet'\otimes_Su^*(\sh Q_\bullet'))
+  \ar[r]^-{\sim}
+  &
+  \sh H_\bullet
+  (\sh R_\bullet\otimes_Su^*(\sh Q_\bullet'))
+}
+\]
+\par\medskip\noindent
+commutes.  Thus the properties in \sref{III.6.10.1} do not
+determine the complex $\sh R_\bullet$ completely.
+
+\medskip
+----- French corrections on page III 171 -----
+[id 7764]
+OLD: C'est le cas particulier $m=1$ de (6.9.6). Plus particulièrement :
+NEW: \textup{C'est le cas particulier $m=1$ de (6.9.6). Plus particulièrement :}
+FRENCH CONTEXT (corrected):  $\mathscr F'=\mathscr O_{S'}$, on a
+des isomorphismes canoniques fonctoriels
+\[
+  \mathscr H^n(f',\mathscr P'_\bullet)
+  \xrightarrow{\sim}
+  \mathscr H^n(f,\mathscr P_\bullet)
+  \otimes_{\mathscr O_S}\mathscr O_{S'}.
+  \tag{6.9.9.2}\label{III.6.9.9.2.fr}
+\]
+\textup{C'est le cas particulier $m=1$ de (6.9.6). Plus particulièrement :}
+\end{corollary}
+
+\begin{corollary}[6.9.10]
+Soient $S$ un préschéma, $f:X\to Y$ un $S$-morphisme séparé et
+quasi-compact de $S$-préschémas, $\mathscr P_\bullet$ un complexe limité
+inférieurement, formé de $\mathscr O_X$-Modules quasi-cohérents, plats sur
+$S$. 
+
+[id 7765]
+OLD: $X\otimes_S k(s)$
+NEW: $X\otimes_S \boldsymbol{k}(s)$
+FRENCH CONTEXT (corrected):  complexe limité
+inférieurement, formé de $\mathscr O_X$-Modules quasi-cohérents, plats sur
+$S$. On suppose en outre que les $\mathscr O_Y$-Modules
+$\mathscr H^n(f,\mathscr P_\bullet)$ soient plats sur $S$. Pour tout $s\in S$,
+notons $X_s$ et $Y_s$ les fibres
+$X\otimes_S \boldsymbol{k}(s)$, $Y\otimes_S \boldsymbol{k}(s)$,
+$f_s:X_s\to Y_s$ le morphisme $f\times_S1$,
+$\mathscr P_\bullet^s$ le complexe
+$\mathscr P_\bullet\otimes_{\mathscr O_S}\boldsymbol{k}(s)$ de
+$\mathscr O_{X_s}$-Modules. On a alors des isomorphismes canoniques
+fonctoriels
+\[
+ 
+
+[id 7766]
+OLD: $Y\otimes_S k(s)$
+NEW: $Y\otimes_S \boldsymbol{k}(s)$
+FRENCH CONTEXT (corrected):  formé de $\mathscr O_X$-Modules quasi-cohérents, plats sur
+$S$. On suppose en outre que les $\mathscr O_Y$-Modules
+$\mathscr H^n(f,\mathscr P_\bullet)$ soient plats sur $S$. Pour tout $s\in S$,
+notons $X_s$ et $Y_s$ les fibres
+$X\otimes_S \boldsymbol{k}(s)$, $Y\otimes_S \boldsymbol{k}(s)$,
+$f_s:X_s\to Y_s$ le morphisme $f\times_S1$,
+$\mathscr P_\bullet^s$ le complexe
+$\mathscr P_\bullet\otimes_{\mathscr O_S}\boldsymbol{k}(s)$ de
+$\mathscr O_{X_s}$-Modules. On a alors des isomorphismes canoniques
+fonctoriels
+\[
+  \mathscr H^n(f_s,\mathscr P_\bu
+
+[id 7767]
+OLD: \otimes_{\mathscr O_S}k(s)$ de
+NEW: \otimes_{\mathscr O_S}\boldsymbol{k}(s)$ de
+FRENCH CONTEXT (corrected): f,\mathscr P_\bullet)$ soient plats sur $S$. Pour tout $s\in S$,
+notons $X_s$ et $Y_s$ les fibres
+$X\otimes_S \boldsymbol{k}(s)$, $Y\otimes_S \boldsymbol{k}(s)$,
+$f_s:X_s\to Y_s$ le morphisme $f\times_S1$,
+$\mathscr P_\bullet^s$ le complexe
+$\mathscr P_\bullet\otimes_{\mathscr O_S}\boldsymbol{k}(s)$ de
+$\mathscr O_{X_s}$-Modules. On a alors des isomorphismes canoniques
+fonctoriels
+\[
+  \mathscr H^n(f_s,\mathscr P_\bullet^s)
+  \xrightarrow{\sim}
+  \mathscr H^n(f,\mathscr P_\bullet)\otimes_{\mathscr O_S}\boldsymbol{k}(s).
+  \tag{6.9.10.1}\label{III.6.9.10.1.f
+
+[id 7768]
+OLD: \otimes_{\mathscr O_S}k(s).
+NEW: \otimes_{\mathscr O_S}\boldsymbol{k}(s).
+FRENCH CONTEXT (corrected): ^s$ le complexe
+$\mathscr P_\bullet\otimes_{\mathscr O_S}\boldsymbol{k}(s)$ de
+$\mathscr O_{X_s}$-Modules. On a alors des isomorphismes canoniques
+fonctoriels
+\[
+  \mathscr H^n(f_s,\mathscr P_\bullet^s)
+  \xrightarrow{\sim}
+  \mathscr H^n(f,\mathscr P_\bullet)\otimes_{\mathscr O_S}\boldsymbol{k}(s).
+  \tag{6.9.10.1}\label{III.6.9.10.1.fr}
+\]
+\end{corollary}
+
+On a donc, moyennant des hypothèses de platitude convenables, un cas où la
+formation des foncteurs dérivés $\mathrm R^nf_*(\mathscr F)$ « commute au passage aux
+fibres », que nous retrouverons par un
+
+[id 7770]
+OLD: affines, plats
+sur
+NEW: affines, \textup{plats}
+sur
+FRENCH CONTEXT (corrected):  nous retrouverons par une autre méthode au §~7.
+
+\subsection{Structure locale de certains foncteurs cohomologiques.}
+
+\begin{proposition}[6.10.1]
+Soient $S=\operatorname{Spec}(A)$ un schéma affine,
+$Y^{(i)}$ ($1\leq i\leq n$) une famille finie de $S$-schémas affines, \textup{plats}
+sur $S$; pour chaque $i$, soit $f_i:X^{(i)}\to Y^{(i)}$ un $S$-morphisme
+séparé et quasi-compact, et soit $\mathscr P_\bullet^{(i)}$ un complexe de
+$\mathscr O_{X^{(i)}}$-Modules quasi-cohérents limité inférieurement. Soit
+$Y$ le produit des $S$-schémas $Y^{(i)}$
+
+[id 7771]
+OLD: et plats sur
+$S$, ayant
+NEW: et \textup{plats} sur
+$S$, ayant
+FRENCH CONTEXT (corrected): ompact, et soit $\mathscr P_\bullet^{(i)}$ un complexe de
+$\mathscr O_{X^{(i)}}$-Modules quasi-cohérents limité inférieurement. Soit
+$Y$ le produit des $S$-schémas $Y^{(i)}$. Il existe un complexe
+$\mathscr R_\bullet$ de $\mathscr O_Y$-Modules quasi-cohérents et \textup{plats} sur
+$S$, ayant la propriété suivante : pour tout $S$-schéma affine $S'$ et tout
+complexe de $\mathscr O_{S'}$-Modules quasi-cohérents
+$\mathscr Q'_\bullet$ limité inférieurement, il y a un isomorphisme
+\[
+  \mathfrak{Tor}_\bullet^S
+  (f_1,\ldots,f_n,1_{S'};
+   \mathscr P_\b
+
+=================== PAGE III 172 ===================
+----- (English page III 171: shown above in this file) -----
+----- (English page III 172: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 173 -----
+\oldpage[III]{173}
+\textnormal{(iii)}
+In the proof of \sref{III.6.10.1}, the
+$M_{\bullet\bullet\bullet}^{(i)}$ may be chosen to consist of
+free $A_i$-modules, as follows immediately by dualising the
+proof of \sref[0]{0.11.5.2.1}.  The $M_{\bullet\bullet\bullet}^{(i)}\otimes_{A_i}B$
+then consist of free $B$-\emph{modules}; since
+$M_{\bullet\bullet\bullet}$ is their tensor product over $B$,
+one may in addition require in \sref{III.6.10.1} that
+$\sh R_\bullet$ be associated with a complex of free
+$B$-modules.
+
+Moreover, by (M, XVII, 1.2), the tricomplex
+$M_{\bullet\bullet\bullet}$ depends functorially on each of the
+bicomplexes $L_{\bullet\bullet}^{(i)}$, hence on each
+$\sh P_\bullet^{(i)}$ once a finite covering of each
+$X^{(i)}$ has been fixed.  Here ``morphisms'' of tricomplexes
+are understood as homomorphism classes modulo homotopy.
+Replacing a covering of $X^{(i)}$ by a finer one gives, for
+$L_{\bullet\bullet}^{(i)}$, homomorphisms defined up to homotopy
+by \sref{III.6.6.8}; thus, with the preceding convention on
+morphisms, $M_{\bullet\bullet\bullet}$ is a functor in each
+$\sh P_\bullet^{(i)}$.
+
+We shall make this functorial dependence more precise, in
+particular the behaviour of $\sh R_\bullet$ with respect to
+short exact sequences $0\longrightarrow\sh P_\bullet^{\prime(i)}
+\longrightarrow\sh P_\bullet^{(i)}
+\longrightarrow\sh P_\bullet^{\prime\prime(i)}
+\longrightarrow0$,
+in the chapter devoted to a general algebra of cohomological
+functors mentioned in \sref{III.6.1.3}.
+\end{remarks}
+
+\begin{scholium}[6.10.4]
+\label{III.6.10.4}
+The fact that $\sh R_\bullet$ consists of $\sh O_Y$-modules
+flat over $S$ immediately implies that $\sh H_\bullet
+(\sh R_\bullet\otimes_S\sh Q_\bullet')$
+is a homological functor in $\sh Q_\bullet'$; compare the
+argument of \sref{III.7.7.1}.  As noted in
+\sref{III.6.1.1}, this property motivates the introduction of
+hypertor.
+
+Put
+\[
+  X=X^{(1)}\times_SX^{(2)}\times_S\ldots\times_SX^{(n)},
+  \qquad
+  f=f_1\times_Sf_2\times_S\ldots\times_Sf_n,
+\]
+\[
+  \sh P_\bullet
+  =
+  \sh P_\bullet^{(1)}
+  \otimes_S\sh P_\bullet^{(2)}
+  \otimes_S\ldots\otimes_S\sh P_\bullet^{(n)},
+\]
+and
+\[
+  X'=X\times_SS',
+  \qquad
+  Y'=Y\times_SS',
+  \qquad
+  f'=f\times_S1_{S'}.
+\]
+Problems of base change lead one to study the hypercohomology
+\[
+  \sh H^*_{f'}
+  (\sh P_\bullet\otimes_S\sh N')
+\]
+as a functor of the quasi-coherent $\sh O_{S'}$-module
+$\sh N'$, or equivalently the hypercohomology
+\[
+  \sh H^*_f
+  (\sh P_\bullet\otimes_S\sh N)
+\]
+as a functor of the quasi-coherent $\sh O_S$-module $\sh N$.
+When the $\sh P_\bullet^{(i)}$, and therefore
+$\sh P_\bullet$, are flat over $S$, the preceding results and
+\sref{III.6.7.6} show that this is indeed a cohomological
+functor in $\sh N$.  This is no longer true when the flatness
+of the $\sh P_\bullet^{(i)}$ is not assumed, and the study of
+\[
+  \sh H^*_f(\sh P_\bullet\otimes_S\sh N)
+\]
+can then no longer be approached by the usual methods of
+homological algebra.
+
+We shall chiefly use the case $n=1$, $Y=S$, in which
+$\sh P_\bullet$ consists of $\sh O_X$-modules flat over $Y$.
+In this case we have the following theorem.
+\end{scholium}
+
+\begin{theorem}[6.10.5]
+\label{III.6.10.5}
+Let $Y=\Spec(A)$ be an affine Noetherian scheme, let
+$f:X\to Y$ be a proper morphism, and let $\sh P_\bullet$ be a
+bounded-below complex of coherent $\sh O_X$-modules flat over
+$Y$.  There exists a bounded-below complex $\sh L_\bullet$ of
+$\sh O_Y$-modules, whose terms have the form
+\[
+  \sh L_i=\sh O_Y^{m_i},
+\]
+and an isomorphism
+\begin{env}[6.10.5.1]
+\label{III.6.10.5.1}
+\[
+  \sh H^*
+  (f,\sh P_\bullet\otimes_Y\sh Q_\bullet)
+  \xrightarrow{\sim}
+  \sh H_\bullet
+  (\sh L_\bullet\otimes_Y\sh Q_\bullet)
+  \tag{6.10.5.1}\label{III.6.10.5.1.eq}
+\]
+\end{env}
+of $\partial$-functors in the bounded-below complex
+$\sh Q_\bullet$ of quasi-coherent $\sh O_Y$-modules.
+
+Moreover, for every morphism $u:Y'\to Y$, put
+\[
+  X'=X_{(Y')},
+  \qquad
+  f'=f_{(Y')},
+  \qquad
+  \sh P_\bullet'
+  =
+  \sh P_\bullet\otimes_Y\sh O_{Y'},
+  \qquad
+  \sh L_\bullet'=u^*(\sh L_\bullet).
+\]
+----- French corrections on page III 172 -----
+[id 7780]
+OLD: $A_i$-modules, et en vertu
+NEW: $A_i$-\emph{modules}, et en vertu
+FRENCH CONTEXT (corrected): 6.2), chaque
+$L_{\bullet\bullet}^{(i)}$ est un bicomplexe de $A_i$-modules, en désignant par
+$A_i$ l'anneau de $Y^{(i)}$; il admet donc une résolution de Cartan-Eilenberg
+projective $M_{\bullet\bullet\bullet}^{(i)}$ (au sens de (\textbf{0}, 11.7.1)) formée de
+$A_i$-\emph{modules}, et en vertu de (6.6.6), le premier membre de (6.10.1.1) est
+canoniquement isomorphe à
+$\mathrm H_\bullet(M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet)$, où
+$M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\o
+
+[id 7781]
+OLD: isomorphe à
+\[
+  \mathscr H_\bullet
+  (M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet),
+\]
+où
+NEW: isomorphe à
+$\mathrm H_\bullet(M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet)$, où
+FRENCH CONTEXT (corrected): i$ l'anneau de $Y^{(i)}$; il admet donc une résolution de Cartan-Eilenberg
+projective $M_{\bullet\bullet\bullet}^{(i)}$ (au sens de (\textbf{0}, 11.7.1)) formée de
+$A_i$-\emph{modules}, et en vertu de (6.6.6), le premier membre de (6.10.1.1) est
+canoniquement isomorphe à
+$\mathrm H_\bullet(M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet)$, où
+$M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A M_{\bullet\bullet\bullet}^{(n)}$
+et $\mathscr Q'_\bullet=\widetilde{Q}'_\bullet$. Comme, par hypothèse, les
+anneaux $A_i$ sont des $A$-mo
+
+[id 7782]
+OLD: \[
+  M_{\bullet\bullet\bullet}
+  =
+  M_{\bullet\bullet\bullet}^{(1)}
+  \otimes_A M_{\bullet\bullet\bullet}^{(2)}
+  \otimes_A\cdots\otimes_A M_{\bullet\bullet\bullet}^{(n)}
+\]
+
+NEW: $M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A M_{\bullet\bullet\bullet}^{(n)}$
+
+FRENCH CONTEXT (corrected): ve $M_{\bullet\bullet\bullet}^{(i)}$ (au sens de (\textbf{0}, 11.7.1)) formée de
+$A_i$-\emph{modules}, et en vertu de (6.6.6), le premier membre de (6.10.1.1) est
+canoniquement isomorphe à
+$\mathrm H_\bullet(M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet)$, où
+$M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A M_{\bullet\bullet\bullet}^{(n)}$
+et $\mathscr Q'_\bullet=\widetilde{Q}'_\bullet$. Comme, par hypothèse, les
+anneaux $A_i$ sont des $A$-modules \emph{plats}, les
+$M_{\bullet\bullet\bullet}^{(i)}$ sont des tricomplexes de $A$-modules plats
+($\mathbf{0}_{\mathrm I}$, 6.2.1), et il en est de même
+
+[id 7783]
+OLD: \widetilde{Q'_\bullet}
+NEW: \widetilde{Q}'_\bullet
+FRENCH CONTEXT (corrected): omorphe à
+$\mathrm H_\bullet(M_{\bullet\bullet\bullet}\otimes_A Q'_\bullet)$, où
+$M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A M_{\bullet\bullet\bullet}^{(n)}$
+et $\mathscr Q'_\bullet=\widetilde{Q}'_\bullet$. Comme, par hypothèse, les
+anneaux $A_i$ sont des $A$-modules \emph{plats}, les
+$M_{\bullet\bullet\bullet}^{(i)}$ sont des tricomplexes de $A$-modules plats
+($\mathbf{0}_{\mathrm I}$, 6.2.1), et il en est de même de
+$M_{\bullet\bullet\bullet}$; en outre, si 
+
+[id 7784]
+OLD: sont des $A$-modules plats, les
+NEW: sont des $A$-modules \emph{plats}, les
+FRENCH CONTEXT (corrected): '_\bullet)$, où
+$M_{\bullet\bullet\bullet}=M_{\bullet\bullet\bullet}^{(1)}\otimes_A M_{\bullet\bullet\bullet}^{(2)}\otimes\ldots\otimes_A M_{\bullet\bullet\bullet}^{(n)}$
+et $\mathscr Q'_\bullet=\widetilde{Q}'_\bullet$. Comme, par hypothèse, les
+anneaux $A_i$ sont des $A$-modules \emph{plats}, les
+$M_{\bullet\bullet\bullet}^{(i)}$ sont des tricomplexes de $A$-modules plats
+($\mathbf{0}_{\mathrm I}$, 6.2.1), et il en est de même de
+$M_{\bullet\bullet\bullet}$; en outre, si $B$ est l'anneau de $Y$, produit
+tensoriel des $A_i$, $M_{\bullet\bullet\bullet}$
+
+[id 7787]
+OLD: le complexe
+\[
+  \mathscr R_\bullet=(M_{\bullet\bullet\bullet})^\sim
+\]
+de
+NEW: le complexe
+$\mathscr R_\bullet=(M_{\bullet\bullet\bullet})^\sim$ de
+FRENCH CONTEXT (corrected):  tricomplexes de $A$-modules plats
+($\mathbf{0}_{\mathrm I}$, 6.2.1), et il en est de même de
+$M_{\bullet\bullet\bullet}$; en outre, si $B$ est l'anneau de $Y$, produit
+tensoriel des $A_i$, $M_{\bullet\bullet\bullet}$ est un tricomplexe de
+$B$-\emph{modules}; le complexe
+$\mathscr R_\bullet=(M_{\bullet\bullet\bullet})^\sim$ de $\mathscr O_Y$-Modules (où $M_{\bullet\bullet\bullet}$ est considéré comme
+complexe simple) répond donc à la question, comme il résulte aisément de
+(6.7.10).
+\end{proof}
+
+\begin{corollary}[6.10.2]
+Dans l'énoncé de (6.10.1), on peut supposer $\mathscr R_\bulle
+
+[id 7790]
+OLD: tel
+que
+\[
+  \mathscr H_\bullet(g):
+  \mathscr H_\bullet(\mathscr R'_\bullet)
+  \longrightarrow
+  \mathscr H_\bullet(\mathscr R_\bullet)
+\]
+soit un isomorphisme
+NEW: tel
+que $\mathscr H_\bullet(g):\mathscr H_\bullet(\mathscr R'_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit un isomorphisme
+FRENCH CONTEXT (corrected): pectrale $(e)$ du changement de base (6.9.3).
+
+\medskip
+\textnormal{(ii)} Soit $\mathscr R'_\bullet$ un second complexe de
+$\mathscr O_Y$-Modules quasi-cohérents, plat sur $S$, et soit
+$g:\mathscr R'_\bullet\to\mathscr R_\bullet$ un homomorphisme de complexes tel
+que $\mathscr H_\bullet(g):\mathscr H_\bullet(\mathscr R'_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit un isomorphisme. Alors, en vertu de (6.3.3) et (6.5.9), on déduit de $g$
+un isomorphisme de $\partial$-foncteurs en $\mathscr Q'_\bullet$ :
+$\mathscr H_\bullet(\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)\xrightarrow{\sim}\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\ma
+
+[id 7791]
+OLD: en $\mathscr Q'_\bullet$
+\[
+  \mathscr H_\bullet
+  (\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)
+  \xrightarrow{\sim}
+  \mathscr H_\bullet
+  (\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)
+\]
+tel que le diagramme
+NEW: en $\mathscr Q'_\bullet$ :
+$\mathscr H_\bullet(\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)\xrightarrow{\sim}\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+tel que le diagramme
+FRENCH CONTEXT (corrected): sme de complexes tel
+que $\mathscr H_\bullet(g):\mathscr H_\bullet(\mathscr R'_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit un isomorphisme. Alors, en vertu de (6.3.3) et (6.5.9), on déduit de $g$
+un isomorphisme de $\partial$-foncteurs en $\mathscr Q'_\bullet$ :
+$\mathscr H_\bullet(\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)\xrightarrow{\sim}\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+tel que le diagramme
+\[
+\xymatrix@C=28pt@R=30pt{
+  \mathscr H_\bullet
+  (\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)
+  \ar[r]^-{\sim}\ar[d]
+  &
+  \mathscr H_\bullet
+  (\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)
+  \ar[d]
+  \\
+  \mathscr H_\bullet
+  (\mathscr R'_\bullet\o
+
+=================== PAGE III 173 ===================
+----- (English page III 172: shown above in this file) -----
+----- (English page III 173: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 174 -----
+\oldpage[III]{174}
+Then $\sh L_\bullet'$ is a complex of locally free
+$\sh O_{Y'}$-modules of finite type, and there is an isomorphism
+\begin{env}[6.10.5.2]
+\label{III.6.10.5.2}
+\[
+  \sh H^*
+  (f',\sh P_\bullet'\otimes_{Y'}\sh Q_\bullet')
+  \xrightarrow{\sim}
+  \sh H_\bullet
+  (\sh L_\bullet'\otimes_{Y'}\sh Q_\bullet')
+  \tag{6.10.5.2}\label{III.6.10.5.2.eq}
+\]
+\end{env}
+of $\partial$-functors in the bounded-below complex
+$\sh Q_\bullet'$ of quasi-coherent $\sh O_{Y'}$-modules.  These
+isomorphisms may be chosen so that the diagram
+\begin{env}[6.10.5.3]
+\label{III.6.10.5.3}
+\[
+\xymatrix@C=24pt@R=30pt{
+  \sh H^*
+  (f,\sh P_\bullet\otimes_Y\sh Q_\bullet)
+  \ar[r]^-{\sim}\ar[d]
+  &
+  \sh H_\bullet
+  (\sh L_\bullet\otimes_Y\sh Q_\bullet)
+  \ar[d]
+  \\
+  \sh H^*
+  (f',\sh P_\bullet'\otimes_{Y'}u^*(\sh Q_\bullet))
+  \ar[r]^-{\sim}
+  &
+  \sh H_\bullet
+  (\sh L_\bullet'\otimes_{Y'}u^*(\sh Q_\bullet))
+}
+\tag{6.10.5.3}\label{III.6.10.5.3.eq}
+\]
+\end{env}
+commutes.
+\end{theorem}
+
+\begin{proof}
+Proposition \sref{III.6.10.1} first gives a bounded-below
+complex $\sh R_\bullet$ \sref{III.6.10.2} of quasi-coherent
+$\sh O_Y$-modules that are free over $Y$
+\sref{III.6.10.3}~(iii), together with an isomorphism
+\begin{env}[6.10.5.4]
+\label{III.6.10.5.4}
+\[
+  \sh H^*
+  (f,\sh P_\bullet\otimes_Y\sh Q_\bullet)
+  \xrightarrow{\sim}
+  \sh H_\bullet
+  (\sh R_\bullet\otimes_Y\sh Q_\bullet)
+  \tag{6.10.5.4}\label{III.6.10.5.4.eq}
+\]
+\end{env}
+of $\partial$-functors in $\sh Q_\bullet$.  The terms of
+$\sh R_\bullet$ need not, \emph{a priori}, be
+$\sh O_Y$-modules of finite type.
+
+Apply \eqref{III.6.10.5.4.eq} when $\sh Q_\bullet$ is the
+complex concentrated in one degree with sole term $\sh O_Y$.
+It follows that $\sh H_\bullet(\sh R_\bullet)$ is isomorphic to
+$\sh H^*(f,\sh P_\bullet)$ and hence consists of coherent
+$\sh O_Y$-modules \sref{III.6.2.5}.  By
+\sref[0]{0.11.9.2}, there is therefore a bounded-below complex
+$\sh L_\bullet$ whose terms are associated with free
+$A$-modules of finite type, and a homomorphism $\sh L_\bullet\longrightarrow\sh R_\bullet$
+which induces an isomorphism
+\[
+  \sh H_\bullet(\sh L_\bullet)
+  \xrightarrow{\sim}
+  \sh H_\bullet(\sh R_\bullet).
+\]
+Formula \eqref{III.6.10.5.1.eq} now follows from
+\sref{III.6.10.3}~(ii).
+
+The remaining assertions of \sref{III.6.10.5} follow from
+\sref{III.6.10.1} and \sref{III.6.10.3}~(ii) when $Y'$ is
+affine.  In the general case, cover $Y'$ by affine open subsets
+$(V_\alpha)$.  If
+\eqref{III.6.10.5.2.eq} is formed over each $V_\alpha$, its
+restrictions from $V_\alpha$ and $V_\beta$ to an affine open
+subset $W\subset V_\alpha\cap V_\beta$
+both coincide with the isomorphism formed over $W$.  This
+follows from the commutativity of
+\eqref{III.6.10.1.2.eq}, applied to the canonical inclusions
+$W\to V_\alpha$ and $W\to V_\beta$, and proves that the local
+isomorphisms glue.
+\end{proof}
+
+\begin{remark}[6.10.6]
+\label{III.6.10.6}
+In the following chapters we shall apply \sref{III.6.10.5}
+chiefly when $\sh P_\bullet$ is concentrated in one degree and
+its sole term is a coherent $\sh O_X$-module $\sh F$ flat over
+$Y$.  Since
+\[
+  \sh H_n(\sh L_\bullet)
+  =
+  \sh H^{-n}(f,\sh F)
+  =
+  R^{-n}f_*(\sh F)
+  \qquad\text{\sref{III.6.2.1}},
+\]
+the $\sh H_n(\sh L_\bullet)$ vanish for $n>0$.  We shall see
+later \sref{III.7.7.12}~(i) that $\sh L_\bullet$ may then be
+chosen to have terms only in degrees $\leq0$, and hence only
+finitely many terms, provided the requirement that its terms
+be associated with free $A$-modules of finite type is replaced
+by the requirement that they be locally free of finite type.
+
+The complex $\sh L_\bullet$ corresponding to such an
+$\sh O_X$-module $\sh F$ seems to have no special property
+----- French corrections on page III 173 -----
+[id 7792]
+OLD: $A_i$-modules libres (comme
+NEW: $A_i$-modules \emph{libres} (comme
+FRENCH CONTEXT (corrected): rouve donc que le complexe $\mathscr R_\bullet$ n'est
+pas entièrement déterminé par les propriétés de (6.10.1).
+
+\medskip
+\oldpage[III]{173}
+\textnormal{(iii)} Dans la démonstration de (6.10.1), on peut supposer les
+$M_{\bullet\bullet\bullet}^{(i)}$ formés de $A_i$-modules \emph{libres} (comme il
+résulte aisément de la démonstration de (\textbf{0}, 11.5.2.1) « dualisée »); les
+$M_{\bullet\bullet\bullet}^{(i)}\otimes_{A_i}B$
+sont alors formés de $B$-modules libres, et comme
+$M_{\bullet\bullet\bullet}$ est égal à leur produit tensoriel sur $B$, on vo
+
+[id 7794]
+OLD: les
+\[
+  M_{\bullet\bullet\bullet}^{(i)}\otimes_{A_i}B
+\]
+sont alors
+NEW: les
+$M_{\bullet\bullet\bullet}^{(i)}\otimes_{A_i}B$
+sont alors
+FRENCH CONTEXT (corrected): dskip
+\oldpage[III]{173}
+\textnormal{(iii)} Dans la démonstration de (6.10.1), on peut supposer les
+$M_{\bullet\bullet\bullet}^{(i)}$ formés de $A_i$-modules \emph{libres} (comme il
+résulte aisément de la démonstration de (\textbf{0}, 11.5.2.1) « dualisée »); les
+$M_{\bullet\bullet\bullet}^{(i)}\otimes_{A_i}B$
+sont alors formés de $B$-modules libres, et comme
+$M_{\bullet\bullet\bullet}$ est égal à leur produit tensoriel sur $B$, on voit
+qu'on peut supposer en outre dans (6.10.1) que $\mathscr R_\bullet$ est associé
+à un complexe de $B$-modules \emph{libres}. En outre, en vert
+
+[id 7795]
+OLD: $B$-modules libres. En outre
+NEW: $B$-modules \emph{libres}. En outre
+FRENCH CONTEXT (corrected): llet\bullet}^{(i)}\otimes_{A_i}B$
+sont alors formés de $B$-modules libres, et comme
+$M_{\bullet\bullet\bullet}$ est égal à leur produit tensoriel sur $B$, on voit
+qu'on peut supposer en outre dans (6.10.1) que $\mathscr R_\bullet$ est associé
+à un complexe de $B$-modules \emph{libres}. En outre, en vertu de (M, XVII, 1.2), le
+tricomplexe $M_{\bullet\bullet\bullet}$ dépend \emph{fonctoriellement} de chacun des
+bicomplexes $L_{\bullet\bullet}^{(i)}$ (donc de chacun des
+$\mathscr P_\bullet^{(i)}$, lorsqu'on fixe un recouvrement fini de chacun des
+$X^{(
+
+[id 7796]
+OLD: dépend fonctoriellement
+NEW: dépend \emph{fonctoriellement}
+FRENCH CONTEXT (corrected): t}$ est égal à leur produit tensoriel sur $B$, on voit
+qu'on peut supposer en outre dans (6.10.1) que $\mathscr R_\bullet$ est associé
+à un complexe de $B$-modules \emph{libres}. En outre, en vertu de (M, XVII, 1.2), le
+tricomplexe $M_{\bullet\bullet\bullet}$ dépend \emph{fonctoriellement} de chacun des
+bicomplexes $L_{\bullet\bullet}^{(i)}$ (donc de chacun des
+$\mathscr P_\bullet^{(i)}$, lorsqu'on fixe un recouvrement fini de chacun des
+$X^{(i)}$), les « morphismes » de tricomplexes devant être ici entendus comme
+les \emph{classes d'homomorphi
+
+[id 7797]
+OLD: les classes d'homomorphismes
+NEW: les \emph{classes d'homomorphismes}
+FRENCH CONTEXT (corrected): dépend \emph{fonctoriellement} de chacun des
+bicomplexes $L_{\bullet\bullet}^{(i)}$ (donc de chacun des
+$\mathscr P_\bullet^{(i)}$, lorsqu'on fixe un recouvrement fini de chacun des
+$X^{(i)}$), les « morphismes » de tricomplexes devant être ici entendus comme
+les \emph{classes d'homomorphismes} pour la relation d'homotopie; d'ailleurs, le
+remplacement d'un recouvrement de $X^{(i)}$ par un recouvrement plus fin
+donnant lieu pour les $L_{\bullet\bullet}^{(i)}$ à des homomorphismes définis
+précisément à homotopie près (6.6.8), on voit finalement qu'ave
+
+[id 7798]
+OLD: est un foncteur en chacun
+NEW: est un \emph{foncteur} en chacun
+FRENCH CONTEXT (corrected): ar un recouvrement plus fin
+donnant lieu pour les $L_{\bullet\bullet}^{(i)}$ à des homomorphismes définis
+précisément à homotopie près (6.6.8), on voit finalement qu'avec la convention
+précédente pour les morphismes, le tricomplexe
+$M_{\bullet\bullet\bullet}$ est un \emph{foncteur} en chacun des
+$\mathscr P_\bullet^{(i)}$. Nous préciserons cette dépendance fonctorielle, et
+notamment le comportement de $\mathscr R_\bullet$ relativement à des suites
+exactes $0\longrightarrow\mathscr P_\bullet^{\prime(i)}\longrightarrow\mathscr P_\bullet^{(i)}\longr
+
+[id 7799]
+OLD: exactes
+\[
+  0\longrightarrow\mathscr P_\bullet^{\prime(i)}
+  \longrightarrow\mathscr P_\bullet^{(i)}
+  \longrightarrow\mathscr P_\bullet^{\prime\prime(i)}
+  \longrightarrow0
+\]
+de complexes
+NEW: exactes $0\longrightarrow\mathscr P_\bullet^{\prime(i)}\longrightarrow\mathscr P_\bullet^{(i)}\longrightarrow\mathscr P_\bullet^{\prime\prime(i)}\longrightarrow0$
+de complexes
+FRENCH CONTEXT (corrected): nte pour les morphismes, le tricomplexe
+$M_{\bullet\bullet\bullet}$ est un \emph{foncteur} en chacun des
+$\mathscr P_\bullet^{(i)}$. Nous préciserons cette dépendance fonctorielle, et
+notamment le comportement de $\mathscr R_\bullet$ relativement à des suites
+exactes $0\longrightarrow\mathscr P_\bullet^{\prime(i)}\longrightarrow\mathscr P_\bullet^{(i)}\longrightarrow\mathscr P_\bullet^{\prime\prime(i)}\longrightarrow0$
+de complexes, dans le chapitre consacré à une algèbre générale de foncteurs
+cohomologiques, mentionné dans (6.1.3).
+\end{remarks}
+
+\begin{scholium}[6.10.4]
+Le fait que $\mathscr R_\bullet$ est formé de $\mathscr O_Y$-Modules
+$S$-\emph{plats} entraîne aisément que $\mathsc
+
+[id 7800]
+OLD: $S$-plats entraîne
+NEW: $S$-\emph{plats} entraîne
+FRENCH CONTEXT (corrected): {\prime\prime(i)}\longrightarrow0$
+de complexes, dans le chapitre consacré à une algèbre générale de foncteurs
+cohomologiques, mentionné dans (6.1.3).
+\end{remarks}
+
+\begin{scholium}[6.10.4]
+Le fait que $\mathscr R_\bullet$ est formé de $\mathscr O_Y$-Modules
+$S$-\emph{plats} entraîne aisément que $\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+est un foncteur \emph{homologique} en $\mathscr Q'_\bullet$ (voir le raisonnement de
+(7.7.1)). C'est cette propriété qui, ainsi qu'on l'a mentionné en (6.1.1), est
+la motivation
+
+[id 7801]
+OLD: aisément que
+\[
+  \mathscr H_\bullet
+  (\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)
+\]
+est un
+NEW: aisément que $\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+est un
+FRENCH CONTEXT (corrected): tarrow0$
+de complexes, dans le chapitre consacré à une algèbre générale de foncteurs
+cohomologiques, mentionné dans (6.1.3).
+\end{remarks}
+
+\begin{scholium}[6.10.4]
+Le fait que $\mathscr R_\bullet$ est formé de $\mathscr O_Y$-Modules
+$S$-\emph{plats} entraîne aisément que $\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+est un foncteur \emph{homologique} en $\mathscr Q'_\bullet$ (voir le raisonnement de
+(7.7.1)). C'est cette propriété qui, ainsi qu'on l'a mentionné en (6.1.1), est
+la motivation de l'introduction de l'hypertor. Posons en effet
+\[
+  X=X^{(1)}\times_SX^{(2)}\times_S\l
+
+[id 7802]
+OLD: foncteur homologique en
+NEW: foncteur \emph{homologique} en
+FRENCH CONTEXT (corrected): mologiques, mentionné dans (6.1.3).
+\end{remarks}
+
+\begin{scholium}[6.10.4]
+Le fait que $\mathscr R_\bullet$ est formé de $\mathscr O_Y$-Modules
+$S$-\emph{plats} entraîne aisément que $\mathscr H_\bullet(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$
+est un foncteur \emph{homologique} en $\mathscr Q'_\bullet$ (voir le raisonnement de
+(7.7.1)). C'est cette propriété qui, ainsi qu'on l'a mentionné en (6.1.1), est
+la motivation de l'introduction de l'hypertor. Posons en effet
+\[
+  X=X^{(1)}\times_SX^{(2)}\times_S\ldots\times_SX^{(n)},
+  \qquad
+ 
+
+[id 7805]
+OLD: f'=f\times_S1_{S'}.
+\]
+Les problèmes
+NEW: f'=f\times_S1_{S'};
+\]
+les problèmes
+FRENCH CONTEXT (corrected):   \qquad
+  f=f_1\times_Sf_2\times_S\ldots\times_Sf_n,
+\]
+\[
+  \mathscr P_\bullet
+  =
+  \mathscr P_\bullet^{(1)}
+  \otimes_S\mathscr P_\bullet^{(2)}
+  \otimes\ldots\otimes_S\mathscr P_\bullet^{(n)},
+\]
+\[
+  X'=X\times_SS',
+  \qquad
+  Y'=Y\times_SS',
+  \qquad
+  f'=f\times_S1_{S'};
+\]
+les problèmes de changement de base amènent à étudier l'hypercohomologie $\mathscr H^\bullet_{f'}(\mathscr P_\bullet\otimes_S\mathscr N')$
+en tant que foncteur par rapport au $\mathscr O_{S'}$-Module quasi-cohérent
+$\mathscr N'$, ou encore l'hypercohomologie $\mathscr H^\b
+
+[id 7806]
+OLD: l'hypercohomologie
+\[
+  \mathscr H^\bullet_{f'}
+  (\mathscr P_\bullet\otimes_S\mathscr N')
+\]
+en tant que
+NEW: l'hypercohomologie $\mathscr H^\bullet_{f'}(\mathscr P_\bullet\otimes_S\mathscr N')$
+en tant que
+FRENCH CONTEXT (corrected): let
+  =
+  \mathscr P_\bullet^{(1)}
+  \otimes_S\mathscr P_\bullet^{(2)}
+  \otimes\ldots\otimes_S\mathscr P_\bullet^{(n)},
+\]
+\[
+  X'=X\times_SS',
+  \qquad
+  Y'=Y\times_SS',
+  \qquad
+  f'=f\times_S1_{S'};
+\]
+les problèmes de changement de base amènent à étudier l'hypercohomologie $\mathscr H^\bullet_{f'}(\mathscr P_\bullet\otimes_S\mathscr N')$
+en tant que foncteur par rapport au $\mathscr O_{S'}$-Module quasi-cohérent
+$\mathscr N'$, ou encore l'hypercohomologie $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+comme foncteur en le $\mathscr O_S$-Module quasi-cohérent $\mathscr N$. Lorsque
+les $\mat
+
+[id 7807]
+OLD: l'hypercohomologie
+\[
+  \mathscr H^\bullet_f
+  (\mathscr P_\bullet\otimes_S\mathscr N)
+\]
+comme
+NEW: l'hypercohomologie $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+comme
+FRENCH CONTEXT (corrected): f\times_S1_{S'};
+\]
+les problèmes de changement de base amènent à étudier l'hypercohomologie $\mathscr H^\bullet_{f'}(\mathscr P_\bullet\otimes_S\mathscr N')$
+en tant que foncteur par rapport au $\mathscr O_{S'}$-Module quasi-cohérent
+$\mathscr N'$, ou encore l'hypercohomologie $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+comme foncteur en le $\mathscr O_S$-Module quasi-cohérent $\mathscr N$. Lorsque
+les $\mathscr P_\bullet^{(i)}$ (donc aussi $\mathscr P_\bullet$) sont
+$S$-\emph{plats}, il résulte de ce qui précède et de (6.7.6) que ce foncteur est bien
+un foncteur \emph{cohomologiq
+
+[id 7808]
+OLD: $S$-plats, il résulte
+NEW: $S$-\emph{plats}, il résulte
+FRENCH CONTEXT (corrected): ent
+$\mathscr N'$, ou encore l'hypercohomologie $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+comme foncteur en le $\mathscr O_S$-Module quasi-cohérent $\mathscr N$. Lorsque
+les $\mathscr P_\bullet^{(i)}$ (donc aussi $\mathscr P_\bullet$) sont
+$S$-\emph{plats}, il résulte de ce qui précède et de (6.7.6) que ce foncteur est bien
+un foncteur \emph{cohomologique} en $\mathscr N$; mais il n'en est plus de même
+lorsqu'on ne fait plus l'hypothèse de platitude sur les
+$\mathscr P_\bullet^{(i)}$, et l'on ne peut plus alors aborder l'é
+
+[id 7809]
+OLD: foncteur cohomologique en
+NEW: foncteur \emph{cohomologique} en
+FRENCH CONTEXT (corrected): otimes_S\mathscr N)$
+comme foncteur en le $\mathscr O_S$-Module quasi-cohérent $\mathscr N$. Lorsque
+les $\mathscr P_\bullet^{(i)}$ (donc aussi $\mathscr P_\bullet$) sont
+$S$-\emph{plats}, il résulte de ce qui précède et de (6.7.6) que ce foncteur est bien
+un foncteur \emph{cohomologique} en $\mathscr N$; mais il n'en est plus de même
+lorsqu'on ne fait plus l'hypothèse de platitude sur les
+$\mathscr P_\bullet^{(i)}$, et l'on ne peut plus alors aborder l'étude de $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+par les méthodes usuell
+
+[id 7810]
+OLD: l'étude de
+\[
+  \mathscr H^\bullet_f
+  (\mathscr P_\bullet\otimes_S\mathscr N)
+\]
+par
+NEW: l'étude de $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+par
+FRENCH CONTEXT (corrected): lte de ce qui précède et de (6.7.6) que ce foncteur est bien
+un foncteur \emph{cohomologique} en $\mathscr N$; mais il n'en est plus de même
+lorsqu'on ne fait plus l'hypothèse de platitude sur les
+$\mathscr P_\bullet^{(i)}$, et l'on ne peut plus alors aborder l'étude de $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+par les méthodes usuelles de l'Algèbre homologique.
+
+Nous aurons toutefois surtout à utiliser le cas où $n=1$, $Y=S$ et où
+$\mathscr P_\bullet$ est formé de $\mathscr O_X$-Modules $Y$-\emph{plats}. On a dans
+ce cas le
+\end{scholium}
+
+\begin{theorem}[6.10.5]
+Soien
+
+[id 7811]
+OLD: $Y$-plats. On a
+NEW: $Y$-\emph{plats}. On a
+FRENCH CONTEXT (corrected): border l'étude de $\mathscr H^\bullet_f(\mathscr P_\bullet\otimes_S\mathscr N)$
+par les méthodes usuelles de l'Algèbre homologique.
+
+Nous aurons toutefois surtout à utiliser le cas où $n=1$, $Y=S$ et où
+$\mathscr P_\bullet$ est formé de $\mathscr O_X$-Modules $Y$-\emph{plats}. On a dans
+ce cas le
+\end{scholium}
+
+\begin{theorem}[6.10.5]
+Soient $Y=\operatorname{Spec}(A)$ un schéma affine noethérien,
+$f:X\to Y$ un morphisme propre, $\mathscr P_\bullet$ un complexe de
+$\mathscr O_X$-Modules cohérents, \textup{plats} sur $Y$, limité inférieu
+
+[id 7812]
+OLD: cohérents, plats sur $Y$
+NEW: cohérents, \textup{plats} sur $Y$
+FRENCH CONTEXT (corrected): é de $\mathscr O_X$-Modules $Y$-\emph{plats}. On a dans
+ce cas le
+\end{scholium}
+
+\begin{theorem}[6.10.5]
+Soient $Y=\operatorname{Spec}(A)$ un schéma affine noethérien,
+$f:X\to Y$ un morphisme propre, $\mathscr P_\bullet$ un complexe de
+$\mathscr O_X$-Modules cohérents, \textup{plats} sur $Y$, limité inférieurement. Il
+existe alors un complexe $\mathscr L_\bullet$ de $\mathscr O_Y$-Modules,
+limité inférieurement, dont les termes $\mathscr L_i$ sont des
+$\mathscr O_Y$-Modules de la forme $\mathscr O_Y^{m_i}$, et un isomorphisme
+\[
+  \mathscr H^\bul
+
+=================== PAGE III 174 ===================
+----- (English page III 173: shown above in this file) -----
+----- (English page III 174: shown above in this file) -----
+----- English, ega3/ega3-6.tex, page III 175 -----
+\oldpage[III]{175}
+apart from the preceding restriction on its degrees.  One may
+therefore ask conversely whether, given a bounded-below complex
+$\sh L_\bullet$ whose terms are $\sh O_Y$-modules associated
+with projective $A$-modules of finite type and whose terms of
+degree $>0$ vanish, there exist a $Y$-scheme $X$, projective and
+flat over $Y$, and a locally free $\sh O_X$-module $\sh F$ such
+that there is an isomorphism $\sh H^*
+(f,\sh F\otimes_Y\sh Q_\bullet)
+\xrightarrow{\sim}
+\sh H_\bullet
+(\sh L_\bullet\otimes_Y\sh Q_\bullet)$
+functorial in $\sh Q_\bullet$.  Such a result would reduce the
+cohomological theory of coherent modules flat over $Y$ on
+proper $Y$-schemes entirely to the theory, ``up to homotopy,''
+of complexes of projective $A$-modules of finite type over a
+Noetherian ring $A$.
+\end{remark}
+----- English, ega3/ega3-7.tex, page III 175 -----
+\section{Base change for homological functors of sheaves of modules}
+\label{section:III.7}
+
+
+\subsection{Functors of $A$-modules.}
+\label{subsection:III.7.1}
+
+\begin{env}[7.1.1]
+\label{III.7.1.1}
+Given a ring $A$, not necessarily commutative, denote by
+$\cat{Ab}_A$ the category of left $A$-modules, and simply by
+$\cat{Ab}$ the category of $\bb Z$-modules, which is the same
+as the category of commutative groups.  Let
+\[
+  T:\cat{Ab}_A\longrightarrow\cat{Ab}
+\]
+be an additive covariant functor, and let $M$ be an
+$(A,A)$-\emph{bimodule}.  Then $T(M)$ is naturally endowed with the
+structure of a right $A$-module.
+
+Indeed, for every $a\in A$, let $h_{a,M}$, or simply $h_a$,
+denote the endomorphism
+\[
+  x\longmapsto xa
+\]
+of the left $A$-module $M$.  By hypothesis, $T(h_a)$ is an
+endomorphism of the $\bb Z$-\emph{module} $T(M)$.  Since $T$ is
+covariant and additive, for $a,b\in A$ one has
+\[
+  T(h_{ab})
+  =
+  T(h_b\circ h_a)
+  =
+  T(h_b)\circ T(h_a)
+\]
+and
+\[
+  T(h_{a+b})
+  =
+  T(h_a+h_b)
+  =
+  T(h_a)+T(h_b).
+\]
+\par\medskip\noindent Thus
+\[
+  (y,a)\longmapsto T(h_a)(y)
+\]
+defines a right $A$-module scalar multiplication on $T(M)$.
+In particular, $T(A_s)$ is a right $A$-module.
+\end{env}
+
+\begin{env}[7.1.2]
+\label{III.7.1.2}
+Suppose that $A$ is commutative.  It follows from
+\sref{III.7.1.1} that, for every $A$-module $M$, the group
+$T(M)$ is naturally an $A$-module.  Moreover, if
+$u:M\to N$ is an $A$-linear homomorphism, then, for every
+$a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+and hence $T(u)\circ T(h_{a,M})
+=
+T(h_{a,N})\circ T(u)$.
+Consequently $T(u):T(M)\to T(N)$ is $A$-linear, and $T$ may be
+regarded as an additive covariant functor from $\cat{Ab}_A$ to
+itself.
+
+More precisely, this defines a canonical equivalence between
+the category of additive covariant functors
+\[
+  \cat{Ab}_A\longrightarrow\cat{Ab}
+\]
+and the category of $A$-linear covariant functors
+\[
+  T:\cat{Ab}_A\longrightarrow\cat{Ab}_A,
+\]
+that is, functors satisfying
+\[
+  T(h_{a,M})=h_{a,T(M)}
+  \qquad(a\in A).
+\]
+The forgetful functor
+\[
+  I:\cat{Ab}_A\longrightarrow\cat{Ab},
+\]
+which sends an $A$-module to its underlying $\bb Z$-module, is
+exact and faithful.  The two functors corresponding under the
+preceding equivalence therefore have the same exactness
+properties.
+\end{env}
+
+\begin{env}[7.1.3]
+\label{III.7.1.3}
+Continue to suppose that $A$ is commutative.  Let $B$ be an
+$A$-algebra, not necessarily commutative, and let $\rho:A\longrightarrow B$
+be the ring homomorphism defining the algebra structure.  It
+defines an
+----- French corrections on page III 174 -----
+[id 7814]
+OLD: Modules de type fini. Mais
+NEW: Modules \emph{de type fini}. Mais
+FRENCH CONTEXT (corrected): thscr H_\bullet
+  (\mathscr R_\bullet\otimes_Y\mathscr Q_\bullet)
+  \tag{6.10.5.4}\label{III.6.10.5.4.fr}
+\]
+de $\partial$-foncteurs en $\mathscr Q_\bullet$, mais \emph{a priori} les
+termes de $\mathscr R_\bullet$ ne sont pas nécessairement des
+$\mathscr O_Y$-Modules \emph{de type fini}. Mais si l'on applique (6.10.5.4) au cas
+où $\mathscr Q_\bullet$ est un complexe réduit à un seul terme
+$\mathscr O_Y$, on voit que $\mathscr H_\bullet(\mathscr R_\bullet)$ est
+isomorphe à $\mathscr H^\bullet(f,\mathscr P_\bullet)$, et est par suite formé
+de $\math
+
+[id 7815]
+OLD: Modules cohérents (6.2.5)
+NEW: Modules \emph{cohérents} (6.2.5)
+FRENCH CONTEXT (corrected): applique (6.10.5.4) au cas
+où $\mathscr Q_\bullet$ est un complexe réduit à un seul terme
+$\mathscr O_Y$, on voit que $\mathscr H_\bullet(\mathscr R_\bullet)$ est
+isomorphe à $\mathscr H^\bullet(f,\mathscr P_\bullet)$, et est par suite formé
+de $\mathscr O_Y$-Modules \emph{cohérents} (6.2.5). On sait alors (\textbf{0}, 11.9.2) qu'il
+existe un complexe $\mathscr L_\bullet$ limité inférieurement, formé de
+$\mathscr O_Y$-Modules associés à des $A$-modules libres \emph{de type fini}, et un
+homomorphisme $\mathscr L_\bullet\longrightarrow\mathscr R_\b
+
+[id 7817]
+OLD: libres de type fini, et un
+NEW: libres \emph{de type fini}, et un
+FRENCH CONTEXT (corrected): \mathscr P_\bullet)$, et est par suite formé
+de $\mathscr O_Y$-Modules \emph{cohérents} (6.2.5). On sait alors (\textbf{0}, 11.9.2) qu'il
+existe un complexe $\mathscr L_\bullet$ limité inférieurement, formé de
+$\mathscr O_Y$-Modules associés à des $A$-modules libres \emph{de type fini}, et un
+homomorphisme $\mathscr L_\bullet\longrightarrow\mathscr R_\bullet$,
+tels que l'homomorphisme correspondant pour l'homologie,
+$\mathscr H_\bullet(\mathscr L_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit bijectif; d'où l'isomorphisme (6.1
+
+[id 7818]
+OLD: homomorphisme
+\[
+  \mathscr L_\bullet\longrightarrow\mathscr R_\bullet,
+\]
+tels que
+NEW: homomorphisme $\mathscr L_\bullet\longrightarrow\mathscr R_\bullet$,
+tels que
+FRENCH CONTEXT (corrected): uite formé
+de $\mathscr O_Y$-Modules \emph{cohérents} (6.2.5). On sait alors (\textbf{0}, 11.9.2) qu'il
+existe un complexe $\mathscr L_\bullet$ limité inférieurement, formé de
+$\mathscr O_Y$-Modules associés à des $A$-modules libres \emph{de type fini}, et un
+homomorphisme $\mathscr L_\bullet\longrightarrow\mathscr R_\bullet$,
+tels que l'homomorphisme correspondant pour l'homologie,
+$\mathscr H_\bullet(\mathscr L_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit bijectif; d'où l'isomorphisme (6.10.5.1), en vertu de (6.10.3, (ii)).
+Les autres assertions de (6.10.5) résulten
+
+[id 7819]
+OLD: pour l'homologie
+\[
+  \mathscr H_\bullet(\mathscr L_\bullet)
+  \longrightarrow
+  \mathscr H_\bullet(\mathscr R_\bullet)
+\]
+soit bijectif
+NEW: pour l'homologie,
+$\mathscr H_\bullet(\mathscr L_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit bijectif
+FRENCH CONTEXT (corrected): te un complexe $\mathscr L_\bullet$ limité inférieurement, formé de
+$\mathscr O_Y$-Modules associés à des $A$-modules libres \emph{de type fini}, et un
+homomorphisme $\mathscr L_\bullet\longrightarrow\mathscr R_\bullet$,
+tels que l'homomorphisme correspondant pour l'homologie,
+$\mathscr H_\bullet(\mathscr L_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit bijectif; d'où l'isomorphisme (6.10.5.1), en vertu de (6.10.3, (ii)).
+Les autres assertions de (6.10.5) résultent de (6.10.1) et (6.10.3, (ii))
+lorsque $Y'$ est \emph{affine}; dans le cas général, il suffit de vérifier que
+lorsqu'on considère un recouvrement $(V_\alph
+
+[id 7820]
+OLD: est affine;
+NEW: est \emph{affine};
+FRENCH CONTEXT (corrected): ie,
+$\mathscr H_\bullet(\mathscr L_\bullet)\longrightarrow\mathscr H_\bullet(\mathscr R_\bullet)$
+soit bijectif; d'où l'isomorphisme (6.10.5.1), en vertu de (6.10.3, (ii)).
+Les autres assertions de (6.10.5) résultent de (6.10.1) et (6.10.3, (ii))
+lorsque $Y'$ est \emph{affine}; dans le cas général, il suffit de vérifier que
+lorsqu'on considère un recouvrement $(V_\alpha)$ de $Y'$ par des ouverts
+affines, et l'isomorphisme correspondant (6.10.5.2) relatif à chacun des
+$V_\alpha$, les restrictions à un ouvert affine
+$W\subset V_\alpha
+
+[id 7821]
+OLD: Comme on a alors
+\[
+  \mathscr H_n(\mathscr L_\bullet)
+  =
+  \mathscr H^{-n}(f,\mathscr F)
+  =
+  R^{-n}f_*(\mathscr F)
+  \qquad(6.2.1),
+\]
+on voit
+NEW: Comme on a alors
+$\mathscr H_n(\mathscr L_\bullet)=\mathscr H^{-n}(f,\mathscr F)=\mathrm R^{-n}f_*(\mathscr F)$ (6.2.1),
+on voit
+FRENCH CONTEXT (corrected): ns canoniques $W\to V_\alpha$ et $W\to V_\beta$.
+\end{proof}
+
+\begin{remark}[6.10.6]
+Dans les chapitres suivants, nous appliquerons surtout (6.10.5) au cas où
+$\mathscr P_\bullet$ est réduit à un seul $\mathscr O_X$-Module cohérent
+$\mathscr F$, plat sur $Y$. Comme on a alors
+$\mathscr H_n(\mathscr L_\bullet)=\mathscr H^{-n}(f,\mathscr F)=\mathrm R^{-n}f_*(\mathscr F)$ (6.2.1),
+on voit que les $\mathscr H_n(\mathscr L_\bullet)$ sont nuls pour $n>0$;
+nous verrons plus loin (7.7.12, (i)) qu'on peut alors supposer que
+$\mathscr L_\bullet$ \emph{n'a que des termes de degrés} $\leqslant0$ (donc en
+nombre \emph{fini}), à condition de remplacer l'
+
+[id 7822]
+OLD: n'a que des termes de degrés
+NEW: \emph{n'a que des termes de degrés}
+FRENCH CONTEXT (corrected): hscr H_n(\mathscr L_\bullet)=\mathscr H^{-n}(f,\mathscr F)=\mathrm R^{-n}f_*(\mathscr F)$ (6.2.1),
+on voit que les $\mathscr H_n(\mathscr L_\bullet)$ sont nuls pour $n>0$;
+nous verrons plus loin (7.7.12, (i)) qu'on peut alors supposer que
+$\mathscr L_\bullet$ \emph{n'a que des termes de degrés} $\leqslant0$ (donc en
+nombre \emph{fini}), à condition de remplacer l'hypothèse que les $\mathscr L_i$
+sont associés à des $A$-modules libres de type fini par celle que les
+$\mathscr L_i$ sont \emph{localement libres} de type fini.
+
+Le complexe $\mathscr L_\b
+
+[id 7823]
+OLD: nombre fini)
+NEW: nombre \emph{fini})
+FRENCH CONTEXT (corrected): =\mathrm R^{-n}f_*(\mathscr F)$ (6.2.1),
+on voit que les $\mathscr H_n(\mathscr L_\bullet)$ sont nuls pour $n>0$;
+nous verrons plus loin (7.7.12, (i)) qu'on peut alors supposer que
+$\mathscr L_\bullet$ \emph{n'a que des termes de degrés} $\leqslant0$ (donc en
+nombre \emph{fini}), à condition de remplacer l'hypothèse que les $\mathscr L_i$
+sont associés à des $A$-modules libres de type fini par celle que les
+$\mathscr L_i$ sont \emph{localement libres} de type fini.
+
+Le complexe $\mathscr L_\bullet$ correspondant à un tel
+$\mathscr O_
+
+[id 7824]
+OLD: sont localement libres de type fini.
+NEW: sont \emph{localement libres} de type fini.
+FRENCH CONTEXT (corrected): s supposer que
+$\mathscr L_\bullet$ \emph{n'a que des termes de degrés} $\leqslant0$ (donc en
+nombre \emph{fini}), à condition de remplacer l'hypothèse que les $\mathscr L_i$
+sont associés à des $A$-modules libres de type fini par celle que les
+$\mathscr L_i$ sont \emph{localement libres} de type fini.
+
+Le complexe $\mathscr L_\bullet$ correspondant à un tel
+$\mathscr O_X$-Module $\mathscr F$ ne paraît posséder aucune
+\oldpage[III]{175}
+propriété particulière, en dehors de la restriction précédente sur les
+degrés. On peut alors se demander si inversement, é
+
+=================== PAGE III 175 ===================
+----- (English page III 174: shown above in this file) -----
+----- (English page III 175: shown above in this file) -----
+----- English, ega3/ega3-7-2.tex, page III 176 -----
+\subsection{Characterisation of the tensor product functor}
+\label{subsection:III.7.2}
+
+\begin{env}[7.2.1]
+\label{III.7.2.1}
+Let $A$ be a ring, not necessarily commutative; let $M$
+(respectively $N$) be a left (respectively right) $A$-module,
+and let $P$ be a $\bb Z$-module.  Recall that giving a
+$\bb Z$-homomorphism $v:N\otimes_A M\longrightarrow P$
+is equivalent to giving a $\bb Z$-bilinear map $u:N\times M\longrightarrow P$
+such that
+\[
+  u(ta,x)=u(t,ax)
+  \qquad(a\in A,\ t\in N,\ x\in M),
+\]
+the two maps being related by $v(t\otimes x)=u(t,x)$.
+On the other hand, giving $u$ is equivalent to giving a
+----- English, ega3/ega3-7.tex, page III 176 -----
+\oldpage[III]{176}
+additive covariant functor $\rho_*:M\leadsto M_{[\rho]}$
+from the category $\cat{Ab}_B$ of left $B$-modules to
+$\cat{Ab}_A$.  By composition one obtains the additive
+covariant functor
+\[
+  T_{(B)}:
+  \cat{Ab}_B
+  \xrightarrow{\rho_*}
+  \cat{Ab}_A
+  \xrightarrow{T}
+  \cat{Ab}.
+\]
+For typographical reasons this functor will also be denoted
+$T^{(B)}$ or $T\otimes_AB$, and is said to be obtained from $T$
+by extension of scalars from $A$ to $B$.
+
+If $B$ is commutative, $T_{(B)}$ may of course be regarded as a
+functor from $\cat{Ab}_B$ to itself \sref{III.7.1.2}.  If $B$ is
+commutative and $C$ is a $B$-algebra, then $T_{(C)}=(T_{(B)})_{(C)}$.
+Extension of scalars is plainly functorial and additive in
+$T$.  Furthermore, if $T$ commutes with direct limits or direct
+sums, then so does $T_{(B)}$; and if $T$ is left exact, right
+exact, or exact, respectively, the same is true of $T_{(B)}$.
+Indeed, $\rho_*$ is exact and commutes with direct limits and
+direct sums.
+\end{env}
+
+\begin{env}[7.1.4]
+\label{III.7.1.4}
+Suppose again that $A$ is commutative, and let
+\[
+  T:\cat{Ab}_A\longrightarrow\cat{Ab}_A
+\]
+be an additive covariant $A$-linear functor that commutes with
+direct limits.  For every multiplicative subset $S$ of $A$ and
+every $A$-module $M$, there is a canonical functorial
+isomorphism of $A$-modules
+\begin{env}[7.1.4.1]
+\label{III.7.1.4.1}
+\[
+  T(S^{-1}M)
+  \xrightarrow{\sim}
+  S^{-1}T(M).
+  \tag{7.1.4.1}\label{III.7.1.4.1.eq}
+\]
+\end{env}
+
+First suppose that $S$ is the set of powers $f^n$,
+$n\geq0$, of an element $f\in A$.  Then $M_f=\varinjlim M_n$,
+where $(M_n,\vphi_{nm})$ is the direct system of $A$-modules
+with $M_n=M$ and
+\[
+  \vphi_{nm}:z\longmapsto f^{\,n-m}z
+  \qquad\text{\sref[0]{0.1.6.1}}.
+\]
+Formula \eqref{III.7.1.4.1.eq} follows in this case from the
+hypothesis on $T$.  For arbitrary $S$, the module $S^{-1}M$ is
+the direct limit of the $M_f$, for $f\in S$
+\sref[0]{0.1.4.5}, and the same argument applies.
+
+The functoriality of \eqref{III.7.1.4.1.eq} also shows that it
+is an isomorphism of $S^{-1}A$-\emph{modules}.  Thus, up to canonical
+isomorphism, one may write
+\begin{env}[7.1.4.2]
+\label{III.7.1.4.2}
+\[
+  T_{(S^{-1}A)}(S^{-1}M)
+  =
+  S^{-1}T(M)
+  =
+  T(S^{-1}M).
+  \tag{7.1.4.2}\label{III.7.1.4.2.eq}
+\]
+\end{env}
+If $S=A\setmin\mathfrak p$ is the complement of a prime ideal
+$\mathfrak p$ of $A$, write $T_{\mathfrak p}$ instead of
+$T_{(A_{\mathfrak p})}$.
+\end{env}
+
+\begin{proposition}[7.1.5]
+\label{III.7.1.5}
+Under the hypotheses of \sref{III.7.1.4}, suppose that
+$T_{\mathfrak m}$ is left exact, respectively right exact or
+exact, for every maximal ideal $\mathfrak m$ of $A$.  Then $T$
+is left exact, respectively right exact or exact.
+\end{proposition}
+
+\begin{proof}
+If two submodules $N$ and $P$ of an $A$-module $M$ satisfy $N_{\mathfrak m}=P_{\mathfrak m}$
+for every maximal ideal $\mathfrak m$ of $A$, then $N=P$
+(Bourbaki, \emph{Alg\`ebre commutative}, chap.~II, \S~3,
+no.~3, th.~1).  Applying this fact to the kernels and images in
+question proves the assertion.
+\end{proof}
+
+\input{ega3/ega3-7-2}
+\ifdefined\EGAIIIStopAfterPageOneSevenNine
+  \expandafter\endinput
+\fi
+\input{ega3/ega3-7-3}
+
+
+\input{ega3/ega3-7-4}
+\ifdefined\EGAIIIStopAfterPageOneEightNine
+  \expandafter\endinput
+\fi
+
+
+\input{ega3/ega3-7-5}
+
+\input{ega3/ega3-7-6}
+\input{ega3/ega3-7-7}
+\ifdefined\EGAIIIStopAfterPageOneNineNine
+  \expandafter\endinput
+\fi
+\input{ega3/ega3-7-8}
+\ifdefined\EGAIIIStopAfterPageTwoZeroEight
+  \expandafter\endinput
+\fi
+\input{ega3/ega3-7-9}
+----- French corrections on page III 175 -----
+[id 7825]
+OLD: isomorphisme
+\[
+  \mathscr H^\bullet
+  (f,\mathscr F\otimes_Y\mathscr Q_\bullet)
+  \xrightarrow{\sim}
+  \mathscr H_\bullet
+  (\mathscr L_\bullet\otimes_Y\mathscr Q_\bullet)
+\]
+fonctoriel
+NEW: isomorphisme $\mathscr H^\bullet(f,\mathscr F\otimes_Y\mathscr Q_\bullet)\xrightarrow{\sim}\mathscr H_\bullet(\mathscr L_\bullet\otimes_Y\mathscr Q_\bullet)$
+fonctoriel
+FRENCH CONTEXT (corrected): Modules associés à des
+$A$-modules projectifs de type fini, limité inférieurement et dont les termes
+de degré $>0$ sont nuls, il existe un $Y$-schéma $X$, projectif et plat sur
+$Y$ et un $\mathscr O_X$-Module localement libre $\mathscr F$, tels qu'il y
+ait un isomorphisme $\mathscr H^\bullet(f,\mathscr F\otimes_Y\mathscr Q_\bullet)\xrightarrow{\sim}\mathscr H_\bullet(\mathscr L_\bullet\otimes_Y\mathscr Q_\bullet)$
+fonctoriel en $\mathscr Q_\bullet$. L'intérêt d'un tel résultat serait de
+réduire complètement la théorie cohomologique des Modules cohérents et
+$Y$-plats sur des $Y$-schémas propres, à la théorie « à homotopie près » des
+complexes de $A$-modules projectifs de type fini
+
+[id 7848]
+OLD: noterons
+$\mathbf{Ab}_A$ la
+NEW: noterons
+$\boldsymbol{Ab}_A$ la
+FRENCH CONTEXT (corrected): ude du changement de base dans les foncteurs homologiques covariants de Modules}
+\label{section:III.7.fr}
+
+\subsection{Foncteurs de $A$-modules.}
+\label{subsection:III.7.1.fr}
+
+\begin{env}[7.1.1]
+Étant donné un anneau $A$ (non nécessairement commutatif), nous noterons
+$\boldsymbol{Ab}_A$ la catégorie des $A$-\emph{modules à gauche}, et nous noterons
+simplement $\boldsymbol{Ab}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, e
+
+[id 7849]
+OLD: $A$-modules à gauche, et nous
+NEW: $A$-\emph{modules à gauche}, et nous
+FRENCH CONTEXT (corrected): omologiques covariants de Modules}
+\label{section:III.7.fr}
+
+\subsection{Foncteurs de $A$-modules.}
+\label{subsection:III.7.1.fr}
+
+\begin{env}[7.1.1]
+Étant donné un anneau $A$ (non nécessairement commutatif), nous noterons
+$\boldsymbol{Ab}_A$ la catégorie des $A$-\emph{modules à gauche}, et nous noterons
+simplement $\boldsymbol{Ab}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+a
+
+[id 7850]
+OLD: simplement $\mathbf{Ab}$ la
+NEW: simplement $\boldsymbol{Ab}$ la
+FRENCH CONTEXT (corrected): ion:III.7.fr}
+
+\subsection{Foncteurs de $A$-modules.}
+\label{subsection:III.7.1.fr}
+
+\begin{env}[7.1.1]
+Étant donné un anneau $A$ (non nécessairement commutatif), nous noterons
+$\boldsymbol{Ab}_A$ la catégorie des $A$-\emph{modules à gauche}, et nous noterons
+simplement $\boldsymbol{Ab}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une struct
+
+[id 7851]
+OLD: Soit
+\[
+  T:\mathbf{Ab}_A\longrightarrow\mathbf{Ab}
+\]
+un
+NEW: Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un
+FRENCH CONTEXT (corrected): 
+Étant donné un anneau $A$ (non nécessairement commutatif), nous noterons
+$\boldsymbol{Ab}_A$ la catégorie des $A$-\emph{modules à gauche}, et nous noterons
+simplement $\boldsymbol{Ab}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une structure de $A$-\emph{module à droite}. En
+effet, pour tout $a\in A$, notons $h_{a,M}$ (ou simplement $h_a$)
+l'endomorphisme $x\to xa$ d
+
+[id 7852]
+OLD: foncteur covariant additif, et soit
+NEW: \emph{foncteur covariant additif}, et soit
+FRENCH CONTEXT (corrected): nous noterons
+$\boldsymbol{Ab}_A$ la catégorie des $A$-\emph{modules à gauche}, et nous noterons
+simplement $\boldsymbol{Ab}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une structure de $A$-\emph{module à droite}. En
+effet, pour tout $a\in A$, notons $h_{a,M}$ (ou simplement $h_a$)
+l'endomorphisme $x\to xa$ du $A$-module \emph{à gauche} $M$. Par hypot
+
+[id 7854]
+OLD: structure de $A$-module à droite
+NEW: structure de $A$-\emph{module à droite}
+FRENCH CONTEXT (corrected): b}$ la catégorie des $\mathbf Z$-modules, identiques aux
+groupes commutatifs. Soit $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une structure de $A$-\emph{module à droite}. En
+effet, pour tout $a\in A$, notons $h_{a,M}$ (ou simplement $h_a$)
+l'endomorphisme $x\to xa$ du $A$-module \emph{à gauche} $M$. Par hypothèse,
+$T(h_a)$ est un endomorphisme du $\mathbf Z$-\emph{module} $T(M)$; en outre, comme
+$T$ est un foncteur covariant 
+
+[id 7855]
+OLD: $x\mapsto xa$
+NEW: $x\to xa$
+FRENCH CONTEXT (corrected): bol{Ab}$
+un \emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une structure de $A$-\emph{module à droite}. En
+effet, pour tout $a\in A$, notons $h_{a,M}$ (ou simplement $h_a$)
+l'endomorphisme $x\to xa$ du $A$-module \emph{à gauche} $M$. Par hypothèse,
+$T(h_a)$ est un endomorphisme du $\mathbf Z$-\emph{module} $T(M)$; en outre, comme
+$T$ est un foncteur covariant additif, on a, pour $a\in A$, $b\in A$,
+\[
+  T(h_{ab})
+  =
+  T(h_b\circ h_a)
+  =
+  T(h_b)\circ T
+
+[id 7856]
+OLD: $A$-module à gauche $M$
+NEW: $A$-module \emph{à gauche} $M$
+FRENCH CONTEXT (corrected): emph{foncteur covariant additif}, et soit $M$ un $(A,A)$-\emph{bimodule}; $T(M)$ est
+alors muni de façon naturelle d'une structure de $A$-\emph{module à droite}. En
+effet, pour tout $a\in A$, notons $h_{a,M}$ (ou simplement $h_a$)
+l'endomorphisme $x\to xa$ du $A$-module \emph{à gauche} $M$. Par hypothèse,
+$T(h_a)$ est un endomorphisme du $\mathbf Z$-\emph{module} $T(M)$; en outre, comme
+$T$ est un foncteur covariant additif, on a, pour $a\in A$, $b\in A$,
+\[
+  T(h_{ab})
+  =
+  T(h_b\circ h_a)
+  =
+  T(h_b)\circ T(h_a)
+  \qquad\text{et}\qquad
+  T(
+
+[id 7859]
+OLD: l'application
+\[
+  (a,y)\longmapsto T(h_a)(y)
+\]
+est
+NEW: l'application $(a,y)\to T(h_a)(y)$
+est
+FRENCH CONTEXT (corrected): h{module} $T(M)$; en outre, comme
+$T$ est un foncteur covariant additif, on a, pour $a\in A$, $b\in A$,
+\[
+  T(h_{ab})
+  =
+  T(h_b\circ h_a)
+  =
+  T(h_b)\circ T(h_a)
+  \qquad\text{et}\qquad
+  T(h_{a+b})
+  =
+  T(h_a+h_b)
+  =
+  T(h_a)+T(h_b);
+\]
+cela prouve que l'application $(a,y)\to T(h_a)(y)$
+est une loi externe de $A$-module à droite sur $T(M)$. En particulier,
+$T(A_s)$ est un $A$-\emph{module à droite}.
+\end{env}
+
+\begin{env}[7.1.2]
+Lorsque $A$ est un anneau \emph{commutatif}, il résulte de (7.1.1) que pour tout
+$A$-module $M$, $T(M)$ est naturellem
+
+[id 7860]
+OLD: $T(A_s)$ est un $A$-module à droite.
+NEW: $T(A_s)$ est un $A$-\emph{module à droite}.
+FRENCH CONTEXT (corrected): 
+  T(h_{ab})
+  =
+  T(h_b\circ h_a)
+  =
+  T(h_b)\circ T(h_a)
+  \qquad\text{et}\qquad
+  T(h_{a+b})
+  =
+  T(h_a+h_b)
+  =
+  T(h_a)+T(h_b);
+\]
+cela prouve que l'application $(a,y)\to T(h_a)(y)$
+est une loi externe de $A$-module à droite sur $T(M)$. En particulier,
+$T(A_s)$ est un $A$-\emph{module à droite}.
+\end{env}
+
+\begin{env}[7.1.2]
+Lorsque $A$ est un anneau \emph{commutatif}, il résulte de (7.1.1) que pour tout
+$A$-module $M$, $T(M)$ est naturellement muni d'une structure de $A$-module;
+en outre, si $u:M\to N$ est un homomorphisme de $A$-modules, on a, pour
+
+[id 7861]
+OLD: anneau commutatif, il
+NEW: anneau \emph{commutatif}, il
+FRENCH CONTEXT (corrected): b})
+  =
+  T(h_a+h_b)
+  =
+  T(h_a)+T(h_b);
+\]
+cela prouve que l'application $(a,y)\to T(h_a)(y)$
+est une loi externe de $A$-module à droite sur $T(M)$. En particulier,
+$T(A_s)$ est un $A$-\emph{module à droite}.
+\end{env}
+
+\begin{env}[7.1.2]
+Lorsque $A$ est un anneau \emph{commutatif}, il résulte de (7.1.1) que pour tout
+$A$-module $M$, $T(M)$ est naturellement muni d'une structure de $A$-module;
+en outre, si $u:M\to N$ est un homomorphisme de $A$-modules, on a, pour tout
+$a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+d'où $T(u)\circ T(h_{a,M})=T(
+
+[id 7862]
+OLD: $a\in A$,
+\[
+  u\circ h_{a,M}=h_{a,N}\circ u,
+\]
+d'où
+\[
+  T(u)\circ T(h_{a,M})
+  =
+  T(h_{a,N})\circ T(u),
+\]
+ce qui
+NEW: $a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+d'où $T(u)\circ T(h_{a,M})=T(h_{a,N})\circ T(u)$,
+ce qui
+FRENCH CONTEXT (corrected): env}
+
+\begin{env}[7.1.2]
+Lorsque $A$ est un anneau \emph{commutatif}, il résulte de (7.1.1) que pour tout
+$A$-module $M$, $T(M)$ est naturellement muni d'une structure de $A$-module;
+en outre, si $u:M\to N$ est un homomorphisme de $A$-modules, on a, pour tout
+$a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+d'où $T(u)\circ T(h_{a,M})=T(h_{a,N})\circ T(u)$,
+ce qui prouve que $T(u):T(M)\to T(N)$ est un homomorphisme de $A$-\emph{modules}; on
+voit donc que $T$ peut être considéré comme un foncteur covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalen
+
+[id 7863]
+OLD: $A$-modules; on
+voit
+NEW: $A$-\emph{modules}; on
+voit
+FRENCH CONTEXT (corrected): ne structure de $A$-module;
+en outre, si $u:M\to N$ est un homomorphisme de $A$-modules, on a, pour tout
+$a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+d'où $T(u)\circ T(h_{a,M})=T(h_{a,N})\circ T(u)$,
+ce qui prouve que $T(u):T(M)\to T(N)$ est un homomorphisme de $A$-\emph{modules}; on
+voit donc que $T$ peut être considéré comme un foncteur covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}
+
+[id 7864]
+OLD: catégorie $\mathbf{Ab}_A$ dans elle-même
+NEW: catégorie $\boldsymbol{Ab}_A$ dans elle-même
+FRENCH CONTEXT (corrected): t
+$a\in A$, $u\circ h_{a,M}=h_{a,N}\circ u$,
+d'où $T(u)\circ T(h_{a,M})=T(h_{a,N})\circ T(u)$,
+ce qui prouve que $T(u):T(M)\to T(N)$ est un homomorphisme de $A$-\emph{modules}; on
+voit donc que $T$ peut être considéré comme un foncteur covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\
+
+[id 7865]
+OLD: une équivalence canonique
+NEW: une \emph{équivalence} canonique
+FRENCH CONTEXT (corrected): \circ T(u)$,
+ce qui prouve que $T(u):T(M)\to T(N)$ est un homomorphisme de $A$-\emph{modules}; on
+voit donc que $T$ peut être considéré comme un foncteur covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour 
+
+[id 7866]
+OLD: additifs $\mathbf{Ab}_A\to\mathbf{Ab}$
+NEW: additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$
+FRENCH CONTEXT (corrected): $-\emph{modules}; on
+voit donc que $T$ peut être considéré comme un foncteur covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour tout $a\in A$.
+Comme le foncteur d'inclusion $I:\boldsymbol{Ab}_A\longrightarrow\boldsymbol
+
+[id 7867]
+OLD: covariants $A$-linéaires
+NEW: covariants $A$-\emph{linéaires}
+FRENCH CONTEXT (corrected): covariant additif de
+la catégorie $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour tout $a\in A$.
+Comme le foncteur d'inclusion $I:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$,
+faisant correspondre à tout $A$-module le $\mathbf Z$-m
+
+[id 7868]
+OLD: \[
+  T:\mathbf{Ab}_A\longrightarrow\mathbf{Ab}_A,
+\]
+c'est-à-dire tels que
+\[
+  T(h_{a,M})=h_{a,T(M)}
+  \qquad\text{pour tout }a\in A.
+\]
+
+NEW: $T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour tout $a\in A$.
+
+FRENCH CONTEXT (corrected): e $\boldsymbol{Ab}_A$ dans elle-même. De façon précise, on a ainsi
+défini une \emph{équivalence} canonique entre la catégorie des foncteurs covariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour tout $a\in A$.
+Comme le foncteur d'inclusion $I:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$,
+faisant correspondre à tout $A$-module le $\mathbf Z$-module sous-jacent, est
+exact et fidèle, les propriétés d'exactitude des deux foncteurs associés par
+l'équivalence précéden
+
+[id 7869]
+OLD: inclusion
+\[
+  I:\mathbf{Ab}_A\longrightarrow\mathbf{Ab},
+\]
+faisant
+NEW: inclusion $I:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$,
+faisant
+FRENCH CONTEXT (corrected): ovariants
+additifs $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ et la catégorie des foncteurs
+covariants $A$-\emph{linéaires}
+$T:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}_A$,
+c'est-à-dire tels que
+$T(h_{a,M})=h_{a,T(M)}$ pour tout $a\in A$.
+Comme le foncteur d'inclusion $I:\boldsymbol{Ab}_A\longrightarrow\boldsymbol{Ab}$,
+faisant correspondre à tout $A$-module le $\mathbf Z$-module sous-jacent, est
+exact et fidèle, les propriétés d'exactitude des deux foncteurs associés par
+l'équivalence précédente sont les mêmes.
+\end{env}
+
+\begin{env}[7.1.3]
+L'anneau $A$ étant toujours supposé commu
+
+[id 7870]
+OLD: $A$-algèbre (non
+NEW: $A$-\emph{algèbre} (non
+FRENCH CONTEXT (corrected):  $A$-module le $\mathbf Z$-module sous-jacent, est
+exact et fidèle, les propriétés d'exactitude des deux foncteurs associés par
+l'équivalence précédente sont les mêmes.
+\end{env}
+
+\begin{env}[7.1.3]
+L'anneau $A$ étant toujours supposé commutatif, soit $B$ une $A$-\emph{algèbre} (non
+nécessairement commutative), et soit $\rho:A\to B$ l'homomorphisme d'anneaux
+correspondant à cette structure d'algèbre; cet homomorphisme définit un
+foncteur covariant
+\oldpage[III]{176}
+additif $\rho_*:M\leadsto M_{[\rho]}$
+de la catégorie $\boldsymbol{Ab}_B
+
+=================== PAGE III 176 ===================
+----- (English page III 175: shown above in this file) -----
+----- (English page III 176: shown above in this file) -----
+----- English, ega3/ega3-7-2.tex, page III 177 -----
+\oldpage[III]{177}
+$\bb Z$-homomorphism
+\[
+  x\longmapsto f_x
+\]
+from $M$ to $\Hom_{\bb Z}(N,P)$ such that
+\[
+  f_{ax}(t)=f_x(ta)
+  \qquad(a\in A,\ t\in N,\ x\in M),
+\]
+the two maps being related by $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+\label{III.7.2.2}
+Let
+\[
+  T:\cat{Ab}_A\longrightarrow\cat{Ab}
+\]
+be an additive covariant functor.  For every left $A$-module
+$M$ we shall define a canonical homomorphism of $\bb Z$-modules,
+functorial in $M$,
+\begin{env}[7.2.2.1]
+\label{III.7.2.2.1}
+\[
+  t_M:T(A_s)\otimes_A M\longrightarrow T(M).
+  \tag{7.2.2.1}\label{III.7.2.2.1.eq}
+\]
+\end{env}
+By \sref{III.7.2.1}, it is enough to define a
+$\bb Z$-homomorphism
+\[
+  x\longmapsto t'_M(x)
+\]
+from $M$ to $\Hom_{\bb Z}(T(A_s),T(M))$ such that
+\[
+  t'_M(ax)(y)=t'_M(x)(ya)
+  \qquad(a\in A,\ x\in M,\ y\in T(A_s)).
+\]
+For this purpose, note that
+$\Hom_{\bb Z}(T(A_s),T(M))$ is canonically a left $A$-module,
+by virtue of the right $A$-module structure on $T(A_s)$, with
+scalar multiplication defined by
+\[
+  (a\cdot w)(y)=w(ya)
+\]
+for $a\in A$, $w\in\Hom_{\bb Z}(T(A_s),T(M))$, and
+$y\in T(A_s)$.  Define $t'_M$ to be the composite of the two
+canonical homomorphisms
+\[
+  M
+  \xrightarrow{\sim}
+  \Hom_A(A_s,M)
+  \xrightarrow{T}
+  \Hom_{\bb Z}(T(A_s),T(M)).
+\]
+
+The second arrow sends $w$ to $T(w)$; the first is the canonical
+isomorphism of $A$-modules sending $x$ to the map
+$\theta_x:A_s\to M$ defined by
+\[
+  \theta_x(\xi)=\xi x
+  \qquad(\xi\in A,\ x\in M).
+\]
+Since $\theta_{ax}=\theta_x\circ h_a$, one has
+\[
+  T(\theta_{ax})
+  =
+  T(\theta_x)\circ T(h_a),
+\]
+and consequently, for $y\in T(A_s)$,
+\[
+  T(\theta_{ax})(y)
+  =
+  T(\theta_x)\bigl(T(h_a)(y)\bigr)
+  =
+  T(\theta_x)(ya)
+\]
+by the definition of the right $A$-module structure on
+$T(A_s)$.  This proves the existence of $t_M$.
+
+It is immediate that this homomorphism is functorial in $M$:
+for every homomorphism $w:M\to M'$ of left $A$-modules, the
+diagram
+\begin{env}[7.2.2.2]
+\label{III.7.2.2.2}
+\[
+\xymatrix{
+  T(A_s)\otimes_A M
+    \ar[r]^-{t_M}\ar[d]_{1\otimes w}
+  & T(M)\ar[d]^{T(w)}
+  \\
+  T(A_s)\otimes_A M'
+    \ar[r]_-{t_{M'}}
+  & T(M')
+}
+\tag{7.2.2.2}\label{III.7.2.2.2.eq}
+\]
+\end{env}
+is commutative.  The functoriality of
+\eqref{III.7.2.2.1.eq} also shows that, when $A$ is
+commutative, $t_M$ is a homomorphism of $A$-modules
+\sref{III.7.1.2}.
+\end{env}
+
+\begin{env}[7.2.3]
+\label{III.7.2.3}
+When $A$ is commutative, one can more generally define a
+canonical homomorphism of $A$-modules
+\begin{env}[7.2.3.1]
+\label{III.7.2.3.1}
+\[
+  T(N)\otimes_A M
+  \longrightarrow
+  T(N\otimes_A M).
+  \tag{7.2.3.1}\label{III.7.2.3.1.eq}
+\]
+\end{env}
+for every $A$-module $N$: in the construction of
+\sref{III.7.2.2}, replace $\theta_x$ by the homomorphism of
+$A$-modules
+\[
+  N\longrightarrow N\otimes_A M,
+  \qquad
+  y\longmapsto y\otimes x.
+\]
+It is immediate that this homomorphism is functorial in both
+$M$ and $N$.
+----- French corrections on page III 176 -----
+[id 7826]
+OLD: additif
+\[
+  \rho_*:M\longmapsto M_{[\rho]}
+\]
+de la catégorie
+NEW: additif $\rho_*:M\leadsto M_{[\rho]}$
+de la catégorie
+FRENCH CONTEXT (corrected):  étant toujours supposé commutatif, soit $B$ une $A$-\emph{algèbre} (non
+nécessairement commutative), et soit $\rho:A\to B$ l'homomorphisme d'anneaux
+correspondant à cette structure d'algèbre; cet homomorphisme définit un
+foncteur covariant
+\oldpage[III]{176}
+additif $\rho_*:M\leadsto M_{[\rho]}$
+de la catégorie $\boldsymbol{Ab}_B$ des $B$-modules à gauche dans la catégorie
+$\boldsymbol{Ab}_A$ des $A$-modules. Par composition, on en déduit un foncteur $T_{(B)}:\boldsymbol{Ab}_B\xrightarrow{\rho_*}\boldsymbol{Ab}_A\xrightarrow{T}\boldsymbol{Ab}$,
+évidemment covariant 
+
+[id 7827]
+OLD: $\mathbf{Ab}_B$ des $B$-modules à gauche dans la catégorie
+$\mathbf{Ab}_A$ des
+NEW: $\boldsymbol{Ab}_B$ des $B$-modules à gauche dans la catégorie
+$\boldsymbol{Ab}_A$ des
+FRENCH CONTEXT (corrected): emph{algèbre} (non
+nécessairement commutative), et soit $\rho:A\to B$ l'homomorphisme d'anneaux
+correspondant à cette structure d'algèbre; cet homomorphisme définit un
+foncteur covariant
+\oldpage[III]{176}
+additif $\rho_*:M\leadsto M_{[\rho]}$
+de la catégorie $\boldsymbol{Ab}_B$ des $B$-modules à gauche dans la catégorie
+$\boldsymbol{Ab}_A$ des $A$-modules. Par composition, on en déduit un foncteur $T_{(B)}:\boldsymbol{Ab}_B\xrightarrow{\rho_*}\boldsymbol{Ab}_A\xrightarrow{T}\boldsymbol{Ab}$,
+évidemment covariant et additif, que nous noterons aussi $T^{(B)}$ (pour des
+raisons typographiques) ou $T\o
+
+[id 7828]
+OLD: foncteur
+\[
+  T_{(B)}:
+  \mathbf{Ab}_B
+  \xrightarrow{\rho_*}
+  \mathbf{Ab}_A
+  \xrightarrow{T}
+  \mathbf{Ab},
+\]
+évidemment
+NEW: foncteur $T_{(B)}:\boldsymbol{Ab}_B\xrightarrow{\rho_*}\boldsymbol{Ab}_A\xrightarrow{T}\boldsymbol{Ab}$,
+évidemment
+FRENCH CONTEXT (corrected): èbre; cet homomorphisme définit un
+foncteur covariant
+\oldpage[III]{176}
+additif $\rho_*:M\leadsto M_{[\rho]}$
+de la catégorie $\boldsymbol{Ab}_B$ des $B$-modules à gauche dans la catégorie
+$\boldsymbol{Ab}_A$ des $A$-modules. Par composition, on en déduit un foncteur $T_{(B)}:\boldsymbol{Ab}_B\xrightarrow{\rho_*}\boldsymbol{Ab}_A\xrightarrow{T}\boldsymbol{Ab}$,
+évidemment covariant et additif, que nous noterons aussi $T^{(B)}$ (pour des
+raisons typographiques) ou $T\otimes_A B$, et que nous dirons obtenu à partir
+de $T$ par \emph{extension des scalaires} de $A$ à $B$. Bien entendu, si $B$ est
+commutative, on peut considérer $T
+
+[id 7829]
+OLD: par extension des scalaires
+NEW: par \emph{extension des scalaires}
+FRENCH CONTEXT (corrected): r $T_{(B)}:\boldsymbol{Ab}_B\xrightarrow{\rho_*}\boldsymbol{Ab}_A\xrightarrow{T}\boldsymbol{Ab}$,
+évidemment covariant et additif, que nous noterons aussi $T^{(B)}$ (pour des
+raisons typographiques) ou $T\otimes_A B$, et que nous dirons obtenu à partir
+de $T$ par \emph{extension des scalaires} de $A$ à $B$. Bien entendu, si $B$ est
+commutative, on peut considérer $T_{(B)}$ comme un foncteur de
+$\boldsymbol{Ab}_B$ dans elle-même (7.1.2). Lorsque $B$ est commutative, et $C$
+une $B$-algèbre, on voit aussitôt que $T_{(C)}=(T_{(B)})_{(C)}$;
+il est imméd
+
+[id 7830]
+OLD: $\mathbf{Ab}_B$ dans elle-même
+NEW: $\boldsymbol{Ab}_B$ dans elle-même
+FRENCH CONTEXT (corrected): us noterons aussi $T^{(B)}$ (pour des
+raisons typographiques) ou $T\otimes_A B$, et que nous dirons obtenu à partir
+de $T$ par \emph{extension des scalaires} de $A$ à $B$. Bien entendu, si $B$ est
+commutative, on peut considérer $T_{(B)}$ comme un foncteur de
+$\boldsymbol{Ab}_B$ dans elle-même (7.1.2). Lorsque $B$ est commutative, et $C$
+une $B$-algèbre, on voit aussitôt que $T_{(C)}=(T_{(B)})_{(C)}$;
+il est immédiat que l'extension des scalaires est \emph{fonctorielle} et \emph{additive} en
+$T$; en outre, lorsque $T$ commute aux limites inductives
+
+[id 7831]
+OLD: aussitôt que
+\[
+  T_{(C)}=(T_{(B)})_{(C)};
+\]
+il est
+NEW: aussitôt que $T_{(C)}=(T_{(B)})_{(C)}$;
+il est
+FRENCH CONTEXT (corrected): u à partir
+de $T$ par \emph{extension des scalaires} de $A$ à $B$. Bien entendu, si $B$ est
+commutative, on peut considérer $T_{(B)}$ comme un foncteur de
+$\boldsymbol{Ab}_B$ dans elle-même (7.1.2). Lorsque $B$ est commutative, et $C$
+une $B$-algèbre, on voit aussitôt que $T_{(C)}=(T_{(B)})_{(C)}$;
+il est immédiat que l'extension des scalaires est \emph{fonctorielle} et \emph{additive} en
+$T$; en outre, lorsque $T$ commute aux limites inductives ou aux sommes
+directes (resp. est exact à gauche, exact à droite, exact), il en est de même
+de $T_{(B)}$: en effet, 
+
+[id 7832]
+OLD: est fonctorielle et additive en
+NEW: est \emph{fonctorielle} et \emph{additive} en
+FRENCH CONTEXT (corrected): $ est
+commutative, on peut considérer $T_{(B)}$ comme un foncteur de
+$\boldsymbol{Ab}_B$ dans elle-même (7.1.2). Lorsque $B$ est commutative, et $C$
+une $B$-algèbre, on voit aussitôt que $T_{(C)}=(T_{(B)})_{(C)}$;
+il est immédiat que l'extension des scalaires est \emph{fonctorielle} et \emph{additive} en
+$T$; en outre, lorsque $T$ commute aux limites inductives ou aux sommes
+directes (resp. est exact à gauche, exact à droite, exact), il en est de même
+de $T_{(B)}$: en effet, $\rho_*$ est exact et commute aux limites inductives
+et aux sommes directes.
+\end{env
+
+[id 7833]
+OLD: soit
+$T:\mathbf{Ab}_A\to\mathbf{Ab}_A$ un foncteur covariant additif
+$A$-linéaire, commutant aux limites inductives.
+NEW: soit
+$T$ un foncteur covariant additif
+$A$-linéaire $\boldsymbol{Ab}_A\to\boldsymbol{Ab}_A$, \emph{commutant aux limites inductives}.
+FRENCH CONTEXT (corrected): u aux sommes
+directes (resp. est exact à gauche, exact à droite, exact), il en est de même
+de $T_{(B)}$: en effet, $\rho_*$ est exact et commute aux limites inductives
+et aux sommes directes.
+\end{env}
+
+\begin{env}[7.1.4]
+Supposons toujours $A$ commutatif, et soit
+$T$ un foncteur covariant additif
+$A$-linéaire $\boldsymbol{Ab}_A\to\boldsymbol{Ab}_A$, \emph{commutant aux limites inductives}. Alors, pour toute partie
+multiplicative $S$ de $A$ et tout $A$-module $M$, on a un isomorphisme
+canonique fonctoriel de $A$-modules
+\[
+  T(S^{-1}M)\xrightarrow{\sim}S^{-1}T(M).
+  \tag{7.1.4.1}\label{III.7.1.4.1.fr}
+\]
+
+Supposons en effet d'abord que $S$ soit 
+
+[id 7835]
+OLD: que
+\[
+  M_f=\varinjlim M_n,
+\]
+où
+NEW: que $M_f=\varinjlim M_n$,
+où
+FRENCH CONTEXT (corrected): somorphisme
+canonique fonctoriel de $A$-modules
+\[
+  T(S^{-1}M)\xrightarrow{\sim}S^{-1}T(M).
+  \tag{7.1.4.1}\label{III.7.1.4.1.fr}
+\]
+
+Supposons en effet d'abord que $S$ soit l'ensemble des puissances $f^n$
+$(n\geqslant0)$ d'un élément $f\in A$. On sait alors que $M_f=\varinjlim M_n$,
+où $(M_n,\varphi_{nm})$ est le système inductif des $A$-modules $M_n=M$,
+avec $\varphi_{nm}:z\leadsto f^{\,n-m}z$ ($\mathbf{0}_{\mathrm I}$, 1.6.1);
+d'où dans ce cas l'isomorphisme (7.1.4.1) en vertu de l'hypothèse sur $T$; si
+ensuite $S$ est quelconque, $S^{-1}
+
+[id 7836]
+OLD: avec
+\[
+  \varphi_{nm}:z\longmapsto f^{\,n-m}z
+  \qquad(0_{\mathrm I}, 1.6.1);
+\]
+d'où
+NEW: avec $\varphi_{nm}:z\leadsto f^{\,n-m}z$ ($\mathbf{0}_{\mathrm I}$, 1.6.1);
+d'où
+FRENCH CONTEXT (corrected): {7.1.4.1}\label{III.7.1.4.1.fr}
+\]
+
+Supposons en effet d'abord que $S$ soit l'ensemble des puissances $f^n$
+$(n\geqslant0)$ d'un élément $f\in A$. On sait alors que $M_f=\varinjlim M_n$,
+où $(M_n,\varphi_{nm})$ est le système inductif des $A$-modules $M_n=M$,
+avec $\varphi_{nm}:z\leadsto f^{\,n-m}z$ ($\mathbf{0}_{\mathrm I}$, 1.6.1);
+d'où dans ce cas l'isomorphisme (7.1.4.1) en vertu de l'hypothèse sur $T$; si
+ensuite $S$ est quelconque, $S^{-1}M$ est limite inductive des $M_f$, pour
+$f\in S$ ($\mathbf{0}_{\mathrm I}$, 1.4.5) et l'on conclut de la même façon. En outre,
+la fonctorialité de l'is
+
+[id 7841]
+OLD: (resp. exact à droite, exact) pour
+NEW: \textup{(resp.} exact à droite, exact) pour
+FRENCH CONTEXT (corrected): $S=A\setmin\mathfrak p$ est le complémentaire d'un idéal premier
+$\mathfrak p$ de $A$, on écrit $T_{\mathfrak p}$ au lieu de
+$T_{(A_{\mathfrak p})}$.
+\end{env}
+
+\begin{proposition}[7.1.5]
+Sous les hypothèses de (7.1.4), si $T_{\mathfrak m}$ est exact à gauche
+\textup{(resp.} exact à droite, exact) pour tout idéal maximal $\mathfrak m$ de $A$,
+$T$ est exact à gauche \textup{(resp.} exact à droite, exact).
+\end{proposition}
+
+\begin{proof}
+On sait en effet que lorsque deux sous-modules $N$, $P$ d'un $A$-module $M$
+sont tels que $N_{\mathfrak m}=P_{\mathfrak m}
+
+[id 7842]
+OLD: (resp. exact à droite, exact).
+NEW: \textup{(resp.} exact à droite, exact).
+FRENCH CONTEXT (corrected): k p}$ au lieu de
+$T_{(A_{\mathfrak p})}$.
+\end{env}
+
+\begin{proposition}[7.1.5]
+Sous les hypothèses de (7.1.4), si $T_{\mathfrak m}$ est exact à gauche
+\textup{(resp.} exact à droite, exact) pour tout idéal maximal $\mathfrak m$ de $A$,
+$T$ est exact à gauche \textup{(resp.} exact à droite, exact).
+\end{proposition}
+
+\begin{proof}
+On sait en effet que lorsque deux sous-modules $N$, $P$ d'un $A$-module $M$
+sont tels que $N_{\mathfrak m}=P_{\mathfrak m}$ pour tout idéal maximal
+$\mathfrak m$ de $A$, on a $N=P$ (Bourbaki, \emph{Alg. comm.}, chap. II,
+\S~3,
+
+[id 7843]
+OLD: no~3
+NEW: n\textsuperscript{o}~3
+FRENCH CONTEXT (corrected): \end{proposition}
+
+\begin{proof}
+On sait en effet que lorsque deux sous-modules $N$, $P$ d'un $A$-module $M$
+sont tels que $N_{\mathfrak m}=P_{\mathfrak m}$ pour tout idéal maximal
+$\mathfrak m$ de $A$, on a $N=P$ (Bourbaki, \emph{Alg. comm.}, chap. II,
+\S~3, n\textsuperscript{o}~3, th.~1).
+\end{proof}
+
+\subsection{Caractérisations du foncteur produit tensoriel.}
+\label{subsection:III.7.2.fr}
+
+\begin{env}[7.2.1]
+Soient $A$ un anneau (non nécessairement commutatif), $M$ (resp. $N$) un
+$A$-module à gauche (resp. à droite), $P$ un $\mathbf
+
+[id 7844]
+OLD: \subsection{Caractérisations du foncteur produit tensoriel}
+NEW: \subsection{Caractérisations du foncteur produit tensoriel.}
+FRENCH CONTEXT (corrected): ffet que lorsque deux sous-modules $N$, $P$ d'un $A$-module $M$
+sont tels que $N_{\mathfrak m}=P_{\mathfrak m}$ pour tout idéal maximal
+$\mathfrak m$ de $A$, on a $N=P$ (Bourbaki, \emph{Alg. comm.}, chap. II,
+\S~3, n\textsuperscript{o}~3, th.~1).
+\end{proof}
+
+\subsection{Caractérisations du foncteur produit tensoriel.}
+\label{subsection:III.7.2.fr}
+
+\begin{env}[7.2.1]
+Soient $A$ un anneau (non nécessairement commutatif), $M$ (resp. $N$) un
+$A$-module à gauche (resp. à droite), $P$ un $\mathbf Z$-module. Rappelons
+que la donnée d'un $\mathbf Z$-homomorphisme $v:N\otimes_A M\
+
+[id 7845]
+OLD: homomorphisme
+\[
+  v:N\otimes_A M\longrightarrow P
+\]
+équivaut
+NEW: homomorphisme $v:N\otimes_A M\longrightarrow P$
+équivaut
+FRENCH CONTEXT (corrected): u foncteur produit tensoriel.}
+\label{subsection:III.7.2.fr}
+
+\begin{env}[7.2.1]
+Soient $A$ un anneau (non nécessairement commutatif), $M$ (resp. $N$) un
+$A$-module à gauche (resp. à droite), $P$ un $\mathbf Z$-module. Rappelons
+que la donnée d'un $\mathbf Z$-homomorphisme $v:N\otimes_A M\longrightarrow P$
+équivaut à la donnée d'une application $\mathbf Z$-bilinéaire $u:N\times M\longrightarrow P$
+telle que $u(ta,x)=u(t,ax)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $v(t\otimes x)=u(t,x)$. D'autre part,
+la donnée de $u$ équivaut à celle 
+
+[id 7846]
+OLD: bilinéaire
+\[
+  u:N\times M\longrightarrow P
+\]
+telle que
+\[
+  u(ta,x)=u(t,ax)
+  \qquad\text{pour }a\in A,\ t\in N,\ x\in M,
+\]
+les deux
+NEW: bilinéaire $u:N\times M\longrightarrow P$
+telle que $u(ta,x)=u(t,ax)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux
+FRENCH CONTEXT (corrected): au (non nécessairement commutatif), $M$ (resp. $N$) un
+$A$-module à gauche (resp. à droite), $P$ un $\mathbf Z$-module. Rappelons
+que la donnée d'un $\mathbf Z$-homomorphisme $v:N\otimes_A M\longrightarrow P$
+équivaut à la donnée d'une application $\mathbf Z$-bilinéaire $u:N\times M\longrightarrow P$
+telle que $u(ta,x)=u(t,ax)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $v(t\otimes x)=u(t,x)$. D'autre part,
+la donnée de $u$ équivaut à celle d'un
+\oldpage[III]{177}
+$\mathbf Z$-\emph{homomorphisme} $x\to f_x$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(N,P)$ tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in
+
+=================== PAGE III 177 ===================
+----- (English page III 176: shown above in this file) -----
+----- (English page III 177: shown above in this file) -----
+----- English, ega3/ega3-7-2.tex, page III 178 -----
+\oldpage[III]{178}
+In particular, if $B$ is an $A$-algebra, not necessarily
+commutative, there is a homomorphism, functorial in $M$,
+\begin{env}[7.2.3.2]
+\label{III.7.2.3.2}
+\[
+  (T(M))_{(B)}
+  =
+  T(M)\otimes_A B
+  \longrightarrow
+  T(M\otimes_A B)
+  =
+  T_{(B)}(M_{(B)}).
+  \tag{7.2.3.2}\label{III.7.2.3.2.eq}
+\]
+\end{env}
+By the functoriality of \eqref{III.7.2.3.1.eq} in $M$, this is
+a homomorphism of $B$-\emph{modules}.
+
+There is moreover a commutative diagram
+\begin{env}[7.2.3.3]
+\label{III.7.2.3.3}
+\[
+\xymatrix{
+  T(A)\otimes_A M
+    \ar[r]^-{t_M}\ar[d]
+  & T(M)\ar[d]
+  \\
+  T_{(B)}(B_s)\otimes_B M_{(B)}
+    \ar[r]_-{t_{M_{(B)}}}
+  & T_{(B)}(M_{(B)})
+}
+\tag{7.2.3.3}\label{III.7.2.3.3.eq}
+\]
+\end{env}
+The right vertical arrow is the composite
+\[
+  T(M)
+  \longrightarrow
+  T(M)\otimes_A B
+  \longrightarrow
+  T(M\otimes_A B)
+  =
+  T_{(B)}(M_{(B)})
+\]
+of the canonical homomorphism and
+\eqref{III.7.2.3.2.eq}.  The left vertical arrow in
+\eqref{III.7.2.3.3.eq} is the homomorphism $T(A)\otimes_A M\longrightarrow T_{(B)}(B_s)\otimes_B(B\otimes_A M)=T_{(B)}(B_s)\otimes_A M$,
+where $T(A)\longrightarrow T_{(B)}(B_s)=T(B)$
+is $T(\rho)$, with $\rho$ regarded as the homomorphism of
+$A$-modules $A\to B_{[\rho]}$.
+\end{env}
+
+\begin{lemma}[7.2.4]
+\label{III.7.2.4}
+If $T$ is an additive covariant functor from $\cat{Ab}_A$ to
+$\cat{Ab}$ that commutes with direct sums, then the canonical
+homomorphism $t_L$ of \eqref{III.7.2.2.1.eq} is an isomorphism
+for every free $A$-module $L$.
+\end{lemma}
+
+\begin{proof}
+Write $L=\bigoplus_{\alpha\in I}L_\alpha$,
+where every $L_\alpha$ is isomorphic to $A_s$.  The definition
+of $t_M$ in \sref{III.7.2.2} shows that $t_L=\bigoplus_{\alpha\in I}t_{L_\alpha}$,
+because
+\[
+  T:
+  \Hom_A(A_s,L)
+  \longrightarrow
+  \Hom_{\bb Z}(T(A_s),T(L))
+\]
+is the direct sum of the $\bb Z$-linear maps $T_\alpha:
+\Hom_A(A_s,L_\alpha)
+\longrightarrow
+\Hom_{\bb Z}(T(A_s),T(L_\alpha))$
+by the hypothesis on $T$.  It therefore remains only to prove
+the lemma for $L=A_s$; but then $t_L$ is precisely the canonical
+isomorphism $T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)$,
+valid for every right $A$-module.
+\end{proof}
+
+\begin{proposition}[7.2.5]
+\label{III.7.2.5}
+Let $T$ be an additive covariant functor from $\cat{Ab}_A$ to
+$\cat{Ab}$ that commutes with direct sums.  The following
+conditions are equivalent:
+\begin{enumerate}
+  \item[(a)] $T$ is right exact;
+  \item[(b)] the canonical homomorphism $t_M$ of
+    \eqref{III.7.2.2.1.eq} is an isomorphism for every left
+    $A$-module $M$;
+  \item[($\mathrm{b}'$)] $T$ is semi-exact and $t_M$ is
+    surjective for every left $A$-module $M$;
+  \item[(c)] $T$ is isomorphic to a functor of $M$ of the form
+    $N\otimes_A M$, where $N$ is a right $A$-module.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that (b) implies (c), and that (c) implies (a).
+Let us prove that (a) implies (b).
+----- French corrections on page III 177 -----
+[id 7287]
+OLD: [III]{177}
+$\mathbf Z$-homomorphisme
+NEW: [III]{177}
+$\mathbf Z$-\emph{homomorphisme}
+FRENCH CONTEXT (corrected): d'une application $\mathbf Z$-bilinéaire $u:N\times M\longrightarrow P$
+telle que $u(ta,x)=u(t,ax)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $v(t\otimes x)=u(t,x)$. D'autre part,
+la donnée de $u$ équivaut à celle d'un
+\oldpage[III]{177}
+$\mathbf Z$-\emph{homomorphisme} $x\to f_x$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(N,P)$ tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+Soit $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ un 
+
+[id 7288]
+OLD: $x\mapsto f_x$
+NEW: $x\to f_x$
+FRENCH CONTEXT (corrected): N\times M\longrightarrow P$
+telle que $u(ta,x)=u(t,ax)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $v(t\otimes x)=u(t,x)$. D'autre part,
+la donnée de $u$ équivaut à celle d'un
+\oldpage[III]{177}
+$\mathbf Z$-\emph{homomorphisme} $x\to f_x$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(N,P)$ tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+Soit $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ un foncteur co
+
+[id 7289]
+OLD: tel que
+\[
+  f_{ax}(t)=f_x(ta)
+  \qquad\text{pour }a\in A,\ t\in N,\ x\in M,
+\]
+
+NEW: tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+
+FRENCH CONTEXT (corrected): $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $v(t\otimes x)=u(t,x)$. D'autre part,
+la donnée de $u$ équivaut à celle d'un
+\oldpage[III]{177}
+$\mathbf Z$-\emph{homomorphisme} $x\to f_x$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(N,P)$ tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+Soit $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ un foncteur covariant additif. Nous
+allons définir pour tout $A$-module à gauche $M$, un \emph{homomorphisme canonique
+fonctorie
+
+[id 7290]
+OLD: $T:\mathbf{Ab}_A\to\mathbf{Ab}$
+NEW: $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$
+FRENCH CONTEXT (corrected): [III]{177}
+$\mathbf Z$-\emph{homomorphisme} $x\to f_x$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(N,P)$ tel que
+$f_{ax}(t)=f_x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+Soit $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ un foncteur covariant additif. Nous
+allons définir pour tout $A$-module à gauche $M$, un \emph{homomorphisme canonique
+fonctoriel en} $M$, \emph{de} $\mathbf Z$-\emph{modules}
+\[
+  t_M:T(A_s)\otimes_A M\longrightarrow T(M).
+  \tag{7.2.2.1}\label{III.7.2.2.1.f
+
+[id 7291]
+OLD: un homomorphisme canonique
+fonctoriel en $M$, de $\mathbf Z$-modules
+NEW: un \emph{homomorphisme canonique
+fonctoriel en} $M$, \emph{de} $\mathbf Z$-\emph{modules}
+FRENCH CONTEXT (corrected): x(ta)$ pour $a\in A$, $t\in N$, $x\in M$,
+les deux applications étant reliées par $u(t,x)=f_x(t)$.
+\end{env}
+
+\begin{env}[7.2.2]
+Soit $T:\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ un foncteur covariant additif. Nous
+allons définir pour tout $A$-module à gauche $M$, un \emph{homomorphisme canonique
+fonctoriel en} $M$, \emph{de} $\mathbf Z$-\emph{modules}
+\[
+  t_M:T(A_s)\otimes_A M\longrightarrow T(M).
+  \tag{7.2.2.1}\label{III.7.2.2.1.fr}
+\]
+
+Il suffira pour cela, en vertu de (7.2.1), de définir un
+$\mathbf Z$-homomorphisme $x\leadsto t'_M(x)$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$, tel que
+
+[id 7293]
+OLD: $x\mapsto t'_M(x)$
+NEW: $x\leadsto t'_M(x)$
+FRENCH CONTEXT (corrected): \emph{homomorphisme canonique
+fonctoriel en} $M$, \emph{de} $\mathbf Z$-\emph{modules}
+\[
+  t_M:T(A_s)\otimes_A M\longrightarrow T(M).
+  \tag{7.2.2.1}\label{III.7.2.2.1.fr}
+\]
+
+Il suffira pour cela, en vertu de (7.2.1), de définir un
+$\mathbf Z$-homomorphisme $x\leadsto t'_M(x)$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$, tel que l'on ait
+$t'_M(ax)(y)=t'_M(x)(ya)$ pour $a\in A$, $x\in M$ et $y\in T(A_s)$.
+Notons pour cela que
+$\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$ est canoniquement muni d'une
+structure de $A$-mo
+
+[id 7294]
+OLD: tel que l'on ait
+\[
+  t'_M(ax)(y)=t'_M(x)(ya)
+  \qquad\text{pour }a\in A,\ x\in M,\ y\in T(A_s).
+\]
+
+NEW: tel que l'on ait
+$t'_M(ax)(y)=t'_M(x)(ya)$ pour $a\in A$, $x\in M$ et $y\in T(A_s)$.
+
+FRENCH CONTEXT (corrected): odules}
+\[
+  t_M:T(A_s)\otimes_A M\longrightarrow T(M).
+  \tag{7.2.2.1}\label{III.7.2.2.1.fr}
+\]
+
+Il suffira pour cela, en vertu de (7.2.1), de définir un
+$\mathbf Z$-homomorphisme $x\leadsto t'_M(x)$ de $M$ dans
+$\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$, tel que l'on ait
+$t'_M(ax)(y)=t'_M(x)(ya)$ pour $a\in A$, $x\in M$ et $y\in T(A_s)$.
+Notons pour cela que
+$\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$ est canoniquement muni d'une
+structure de $A$-module à gauche provenant de la structure de $A$-module à
+droite de $T(A_s)$, la loi externe étant telle que si
+$a\in A$, $v\in\operatorname{Hom}_{
+
+[id 7295]
+OLD: \[
+  (a\cdot v)(y)=v(ya)
+  \qquad\text{pour }y\in T(A_s).
+\]
+
+NEW: $(a.v)(y)=v(ya)$ pour $y\in T(A_s)$.
+
+FRENCH CONTEXT (corrected): ratorname{Hom}_{\mathbf Z}(T(A_s),T(M))$ est canoniquement muni d'une
+structure de $A$-module à gauche provenant de la structure de $A$-module à
+droite de $T(A_s)$, la loi externe étant telle que si
+$a\in A$, $v\in\operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))$,
+$(a.v)(y)=v(ya)$ pour $y\in T(A_s)$.
+Cela étant, nous définirons $t'_M$ comme composé des deux homomorphismes
+canoniques
+\[
+  M\xrightarrow{\sim}\operatorname{Hom}_A(A_s,M)
+  \xrightarrow{T}
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))
+\]
+la seconde flèche étant l'application $u\leadsto T(u)$, l
+
+[id 7297]
+OLD: $u\mapsto T(u)$
+NEW: $u\leadsto T(u)$
+FRENCH CONTEXT (corrected): our $y\in T(A_s)$.
+Cela étant, nous définirons $t'_M$ comme composé des deux homomorphismes
+canoniques
+\[
+  M\xrightarrow{\sim}\operatorname{Hom}_A(A_s,M)
+  \xrightarrow{T}
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))
+\]
+la seconde flèche étant l'application $u\leadsto T(u)$, la première
+l'isomorphisme canonique de $A$-modules $x\leadsto\theta_x$ tel que
+$\theta_x(\xi)=\xi x$ pour $\xi\in A$, $x\in M$. On a
+$\theta_{ax}=\theta_x\circ h_a$, donc
+$T(\theta_{ax})=T(\theta_x\circ h_a)=T(\theta_x)\circ T(h_a)$
+et par suite, pour $y\in
+
+[id 7298]
+OLD: $x\mapsto\theta_x$
+NEW: $x\leadsto\theta_x$
+FRENCH CONTEXT (corrected): s deux homomorphismes
+canoniques
+\[
+  M\xrightarrow{\sim}\operatorname{Hom}_A(A_s,M)
+  \xrightarrow{T}
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(M))
+\]
+la seconde flèche étant l'application $u\leadsto T(u)$, la première
+l'isomorphisme canonique de $A$-modules $x\leadsto\theta_x$ tel que
+$\theta_x(\xi)=\xi x$ pour $\xi\in A$, $x\in M$. On a
+$\theta_{ax}=\theta_x\circ h_a$, donc
+$T(\theta_{ax})=T(\theta_x\circ h_a)=T(\theta_x)\circ T(h_a)$
+et par suite, pour $y\in T(A_s)$,
+\[
+  T(\theta_{ax})(y)
+  =
+  T(\theta_x)(T(h_a)(y))
+  =
+  T(\th
+
+[id 7299]
+OLD: donc
+\[
+  T(\theta_{ax})
+  =
+  T(\theta_x\circ h_a)
+  =
+  T(\theta_x)\circ T(h_a)
+\]
+
+NEW: donc
+$T(\theta_{ax})=T(\theta_x\circ h_a)=T(\theta_x)\circ T(h_a)$
+
+FRENCH CONTEXT (corrected): ame{Hom}_{\mathbf Z}(T(A_s),T(M))
+\]
+la seconde flèche étant l'application $u\leadsto T(u)$, la première
+l'isomorphisme canonique de $A$-modules $x\leadsto\theta_x$ tel que
+$\theta_x(\xi)=\xi x$ pour $\xi\in A$, $x\in M$. On a
+$\theta_{ax}=\theta_x\circ h_a$, donc
+$T(\theta_{ax})=T(\theta_x\circ h_a)=T(\theta_x)\circ T(h_a)$
+et par suite, pour $y\in T(A_s)$,
+\[
+  T(\theta_{ax})(y)
+  =
+  T(\theta_x)(T(h_a)(y))
+  =
+  T(\theta_x)(ya)
+\]
+par définition de la loi externe sur $T(A_s)$, ce qui prouve l'existence de
+$t_M$; il est immédiat de vérifier que cet homomorphisme est fonctoriel e
+
+[id 7300]
+OLD: est
+commutatif, c'est un homomorphisme de $A$-modules
+NEW: est
+\emph{commutatif}, c'est un homomorphisme de $A$-\emph{modules}
+FRENCH CONTEXT (corrected): (A_s)\otimes_A M
+  \ar[r]^-{t_M}\ar[d]_{1\otimes w}
+  &
+  T(M)\ar[d]^{T(w)}
+  \\
+  T(A_s)\otimes_A M'
+  \ar[r]_-{t_{M'}}
+  &
+  T(M')
+}
+\tag{7.2.2.2}\label{III.7.2.2.2.fr}
+\]
+est commutatif.
+
+La fonctorialité de l'homomorphisme (7.2.2.1) montre que lorsque $A$ est
+\emph{commutatif}, c'est un homomorphisme de $A$-\emph{modules} (cf. (7.1.2)).
+\end{env}
+
+\begin{env}[7.2.3]
+Lorsque $A$ est commutatif, on peut plus généralement définir un
+homomorphisme canonique de $A$-modules
+\[
+  T(N)\otimes_A M\longrightarrow T(N\otimes_A M)
+  \tag{7.2.3.1}\label{III.7.2.3.1.fr}
+\]
+pour tout $A$-mod
+
+[id 7301]
+OLD: de $A$-modules
+\[
+  N\longrightarrow N\otimes_A M
+\]
+
+NEW: de $A$-modules
+$N\longrightarrow N\otimes_A M$
+
+FRENCH CONTEXT (corrected): homomorphisme canonique de $A$-modules
+\[
+  T(N)\otimes_A M\longrightarrow T(N\otimes_A M)
+  \tag{7.2.3.1}\label{III.7.2.3.1.fr}
+\]
+pour tout $A$-module $N$; il suffit dans la construction de (7.2.2) de
+remplacer l'homomorphisme $\theta_x$ par l'homomorphisme de $A$-modules
+$N\longrightarrow N\otimes_A M$
+qui à tout $y\in N$ fait correspondre $y\otimes x$. Il est immédiat que cet
+homomorphisme est \emph{fonctoriel en} $M$ \emph{et} $N$.
+\oldpage[III]{178}
+En particulier, si $B$ est une $A$-algèbre (non nécessairement commutative),
+on a un homomorphisme fonctori
+
+[id 7302]
+OLD: est fonctoriel en $M$ et
+NEW: est \emph{fonctoriel en} $M$ \emph{et}
+FRENCH CONTEXT (corrected): tout $A$-module $N$; il suffit dans la construction de (7.2.2) de
+remplacer l'homomorphisme $\theta_x$ par l'homomorphisme de $A$-modules
+$N\longrightarrow N\otimes_A M$
+qui à tout $y\in N$ fait correspondre $y\otimes x$. Il est immédiat que cet
+homomorphisme est \emph{fonctoriel en} $M$ \emph{et} $N$.
+\oldpage[III]{178}
+En particulier, si $B$ est une $A$-algèbre (non nécessairement commutative),
+on a un homomorphisme fonctoriel en $M$
+\[
+  (T(M))_{(B)}
+  =
+  T(M)\otimes_A B
+  \longrightarrow
+  T(M\otimes_A B)
+  =
+  T_{(B)}(M_{(B)})
+  \tag{7.2.3.2}\lab
+
+=================== PAGE III 178 ===================
+----- (English page III 177: shown above in this file) -----
+----- (English page III 178: shown above in this file) -----
+----- English, ega3/ega3-7-2.tex, page III 179 -----
+\oldpage[III]{179}
+Put $T'(M)=T(A_s)\otimes_A M$
+for every left $A$-module $M$.  There is an exact sequence $L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+where $L$ and $L'$ are free left $A$-modules.  Since $T$ and
+$T'$ are right exact, there is a commutative diagram
+\[
+\xymatrix{
+  T'(L')\ar[r]\ar[d]^{t_{L'}}
+  & T'(L)\ar[r]\ar[d]^{t_L}
+  & T'(M)\ar[r]\ar[d]^{t_M}
+  & 0
+  \\
+  T(L')\ar[r]
+  & T(L)\ar[r]
+  & T(M)\ar[r]
+  & 0
+}
+\]
+whose rows are exact.  By \sref{III.7.2.4}, $t_L$ and
+$t_{L'}$ are isomorphisms; hence so is $t_M$, by the five
+lemma.
+
+It is clear that (b) implies ($\mathrm{b}'$).  To show that
+($\mathrm{b}'$) implies (a), it is enough to prove the following
+lemma.
+\end{proof}
+
+\begin{lemma}[7.2.5.1]
+\label{III.7.2.5.1}
+Let $\cat{K}$ and $\cat{K}'$ be abelian categories, let $F$ and
+$G$ be additive covariant functors from $\cat{K}$ to
+$\cat{K}'$, and let $f:F\longrightarrow G$
+be a natural transformation \emph{(T, I, 1.2)} such that $f_E:F(E)\longrightarrow G(E)$
+is an epimorphism for every object $E$ of $\cat{K}$.  If $F$ is
+right exact and $G$ is semi-exact, then $G$ is right exact.
+\end{lemma}
+
+\begin{proof}
+It is enough to show that, for every epimorphism
+$v:E'\to E$ in $\cat{K}$, $G(v):G(E')\longrightarrow G(E)$
+is an epimorphism.  There is a commutative diagram
+\[
+\xymatrix{
+  F(E')\ar[r]^{F(v)}\ar[d]_{f_{E'}}
+  & F(E)\ar[d]^{f_E}
+  \\
+  G(E')\ar[r]_{G(v)}
+  & G(E)
+}
+\]
+Here $F(v)$, $f_{E'}$, and $f_E$ are epimorphisms; consequently
+$G(v)$ is also an epimorphism.
+\end{proof}
+
+\begin{remark}[7.2.6]
+\label{III.7.2.6}
+For every right $A$-module $N$, put $T_N(M)=N\otimes_A M$
+\par\medskip\noindent
+for every left $A$-module $M$.  Thus $T_N$ is an additive
+covariant functor from $\cat{Ab}_A$ to $\cat{Ab}$, is right
+exact, and commutes with direct sums.  If $T_N(A_s)$ is
+canonically identified with $N$, the corresponding homomorphism
+\eqref{III.7.2.2.1.eq} is immediately seen to be the identity.
+It follows that the right $A$-module $N$ in
+\sref{III.7.2.5}(c) is determined up to unique isomorphism and
+is canonically isomorphic to $T(A_s)$.
+
+Equivalently, the assignments
+\[
+  T\longmapsto T(A_s)
+  \qquad\text{and}\qquad
+  N\longmapsto T_N
+\]
+define an equivalence \emph{(T, I, 1.2)} between the category
+of right $A$-modules and the category of additive covariant
+functors
+\[
+  \cat{Ab}_A\longrightarrow\cat{Ab}
+\]
+that are right exact and commute with direct sums.
+\end{remark}
+
+\begin{proposition}[7.2.7]
+\label{III.7.2.7}
+Let $A$ be a left Artinian ring whose quotient by its radical
+$\mathfrak m$ is a field $k$, and let $T$ be an additive
+covariant functor from $\cat{Ab}_A$ to $\cat{Ab}$ that commutes
+with direct sums.  The conditions of \sref{III.7.2.5} are then
+also equivalent to the following condition:
+\begin{enumerate}
+  \item[(d)] $T$ is semi-exact and the homomorphism $T(\varepsilon):T(A_s)\longrightarrow T(k)$
+    induced by the canonical homomorphism
+    $\varepsilon:A_s\to k$ is surjective.
+\end{enumerate}
+\end{proposition}
+
+\ifdefined\EGAIIIStopAfterPageOneSevenNine
+  \expandafter\endinput
+\fi
+
+\begin{proof}
+----- French corrections on page III 178 -----
+[id 7305]
+OLD: c'est l'homomorphisme
+\[
+  T(A)\otimes_A M
+  \longrightarrow
+  T_{(B)}(B_s)\otimes_B(B\otimes_A M)
+  =
+  T_{(B)}(B_s)\otimes_A M
+\]
+
+NEW: c'est l'homomorphisme
+$T(A)\otimes_A M\longrightarrow T_{(B)}(B_s)\otimes_B(B\otimes_A M)=T_{(B)}(B_s)\otimes_A M$
+
+FRENCH CONTEXT (corrected): lèche verticale de droite est l'homomorphisme composé
+\[
+  T(M)
+  \longrightarrow
+  T(M)\otimes_A B
+  \longrightarrow
+  T(M\otimes_A B)
+  =
+  T_{(B)}(M_{(B)})
+\]
+de (7.2.3.2) et de l'homomorphisme canonique; quant à la flèche verticale de
+gauche de (7.2.3.3), c'est l'homomorphisme
+$T(A)\otimes_A M\longrightarrow T_{(B)}(B_s)\otimes_B(B\otimes_A M)=T_{(B)}(B_s)\otimes_A M$
+où
+$T(A)\longrightarrow T_{(B)}(B_s)=T(B)$
+est $T(\rho)$, $\rho$ étant considéré comme homomorphisme de $A$-modules
+$A\to B_{[\rho]}$.
+\end{env}
+
+\begin{lemma}[7.2.4]
+Si $T$ est un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commu
+
+[id 7306]
+OLD: où
+\[
+  T(A)\longrightarrow T_{(B)}(B_s)=T(B)
+\]
+
+NEW: où
+$T(A)\longrightarrow T_{(B)}(B_s)=T(B)$
+
+FRENCH CONTEXT (corrected): ow
+  T(M\otimes_A B)
+  =
+  T_{(B)}(M_{(B)})
+\]
+de (7.2.3.2) et de l'homomorphisme canonique; quant à la flèche verticale de
+gauche de (7.2.3.3), c'est l'homomorphisme
+$T(A)\otimes_A M\longrightarrow T_{(B)}(B_s)\otimes_B(B\otimes_A M)=T_{(B)}(B_s)\otimes_A M$
+où
+$T(A)\longrightarrow T_{(B)}(B_s)=T(B)$
+est $T(\rho)$, $\rho$ étant considéré comme homomorphisme de $A$-modules
+$A\to B_{[\rho]}$.
+\end{env}
+
+\begin{lemma}[7.2.4]
+Si $T$ est un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant avec les sommes directes, l'homomorphi
+
+[id 7307]
+OLD: de $\mathbf{Ab}_A$ dans
+$\mathbf{Ab}$, commutant avec
+NEW: de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant avec
+FRENCH CONTEXT (corrected): _s)\otimes_B(B\otimes_A M)=T_{(B)}(B_s)\otimes_A M$
+où
+$T(A)\longrightarrow T_{(B)}(B_s)=T(B)$
+est $T(\rho)$, $\rho$ étant considéré comme homomorphisme de $A$-modules
+$A\to B_{[\rho]}$.
+\end{env}
+
+\begin{lemma}[7.2.4]
+Si $T$ est un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant avec les sommes directes, l'homomorphisme canonique
+$t_L$ \textup{(7.2.2.1)} est un isomorphisme pour tout $A$-module libre $L$.
+\end{lemma}
+
+\begin{proof}
+En effet, on a
+$L=\bigoplus_{\alpha\in I}L_\alpha$
+où $L_\alpha$ est isomorphe à $A_s$ pour tout $\alpha\in 
+
+[id 7309]
+OLD: on a
+\[
+  L=\bigoplus_{\alpha\in I}L_\alpha
+\]
+
+NEW: on a
+$L=\bigoplus_{\alpha\in I}L_\alpha$
+
+FRENCH CONTEXT (corrected): T$ est un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant avec les sommes directes, l'homomorphisme canonique
+$t_L$ \textup{(7.2.2.1)} est un isomorphisme pour tout $A$-module libre $L$.
+\end{lemma}
+
+\begin{proof}
+En effet, on a
+$L=\bigoplus_{\alpha\in I}L_\alpha$
+où $L_\alpha$ est isomorphe à $A_s$ pour tout $\alpha\in I$; la définition de
+$t_M$ donnée dans (7.2.2) montre que
+$t_L=\bigoplus_{\alpha\in I}t_{L_\alpha}$,
+puisque
+\[
+  T:
+  \operatorname{Hom}_A(A_s,L)
+  \longrightarrow
+  \operatorname{Hom}_{\mathbf Z}(T(A_s
+
+[id 7310]
+OLD: montre que
+\[
+  t_L=\bigoplus_{\alpha\in I}t_{L_\alpha},
+\]
+
+NEW: montre que
+$t_L=\bigoplus_{\alpha\in I}t_{L_\alpha}$,
+
+FRENCH CONTEXT (corrected): 
+$t_L$ \textup{(7.2.2.1)} est un isomorphisme pour tout $A$-module libre $L$.
+\end{lemma}
+
+\begin{proof}
+En effet, on a
+$L=\bigoplus_{\alpha\in I}L_\alpha$
+où $L_\alpha$ est isomorphe à $A_s$ pour tout $\alpha\in I$; la définition de
+$t_M$ donnée dans (7.2.2) montre que
+$t_L=\bigoplus_{\alpha\in I}t_{L_\alpha}$,
+puisque
+\[
+  T:
+  \operatorname{Hom}_A(A_s,L)
+  \longrightarrow
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(L))
+\]
+est somme directe des applications $\mathbf Z$-linéaires
+$T_\alpha:\operatorname{Hom}_A(A_s,L_\alpha)\longrightarrow\operatorname{Hom}_{\mathbf Z}(
+
+[id 7311]
+OLD: \[
+  T_\alpha:
+  \operatorname{Hom}_A(A_s,L_\alpha)
+  \longrightarrow
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(L_\alpha))
+\]
+
+NEW: $T_\alpha:\operatorname{Hom}_A(A_s,L_\alpha)\longrightarrow\operatorname{Hom}_{\mathbf Z}(T(A_s),T(L_\alpha))$
+
+FRENCH CONTEXT (corrected): nition de
+$t_M$ donnée dans (7.2.2) montre que
+$t_L=\bigoplus_{\alpha\in I}t_{L_\alpha}$,
+puisque
+\[
+  T:
+  \operatorname{Hom}_A(A_s,L)
+  \longrightarrow
+  \operatorname{Hom}_{\mathbf Z}(T(A_s),T(L))
+\]
+est somme directe des applications $\mathbf Z$-linéaires
+$T_\alpha:\operatorname{Hom}_A(A_s,L_\alpha)\longrightarrow\operatorname{Hom}_{\mathbf Z}(T(A_s),T(L_\alpha))$
+en vertu de l'hypothèse sur $T$. On est donc ramené à prouver le lemme pour
+$L=A_s$; mais $t_L$ n'est autre alors que l'isomorphisme canonique
+$T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)$
+valable pour tout $A$-module à droite.
+\end{proof}
+
+\begin{proposition}
+
+[id 7312]
+OLD: \[
+  T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)
+\]
+
+NEW: $T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)$
+
+FRENCH CONTEXT (corrected): aires
+$T_\alpha:\operatorname{Hom}_A(A_s,L_\alpha)\longrightarrow\operatorname{Hom}_{\mathbf Z}(T(A_s),T(L_\alpha))$
+en vertu de l'hypothèse sur $T$. On est donc ramené à prouver le lemme pour
+$L=A_s$; mais $t_L$ n'est autre alors que l'isomorphisme canonique
+$T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)$
+valable pour tout $A$-module à droite.
+\end{proof}
+
+\begin{proposition}[7.2.5]
+Soit $T$ un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant aux sommes directes. Les conditions suivantes sont
+équivalentes :
+\begin{enumerate}
+ 
+
+[id 7313]
+OLD: de $\mathbf{Ab}_A$ dans
+$\mathbf{Ab}$, commutant aux
+NEW: de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant aux
+FRENCH CONTEXT (corrected): mené à prouver le lemme pour
+$L=A_s$; mais $t_L$ n'est autre alors que l'isomorphisme canonique
+$T(A_s)\otimes_A A_s\xrightarrow{\sim}T(A_s)$
+valable pour tout $A$-module à droite.
+\end{proof}
+
+\begin{proposition}[7.2.5]
+Soit $T$ un foncteur covariant additif de $\boldsymbol{Ab}_A$ dans
+$\boldsymbol{Ab}$, commutant aux sommes directes. Les conditions suivantes sont
+équivalentes :
+\begin{enumerate}
+  \item[a)] $T$ est exact à droite.
+  \item[b)] L'homomorphisme canonique $t_M$ \textup{(7.2.2.1)} est un isomorphisme pour
+    tout $A$-module à gauche $M$.
+  \item[$b'$)] $T$ es
+
+=================== PAGE III 179 ===================
+----- (English page III 178: shown above in this file) -----
+----- (English page III 179: shown above in this file) -----
+----- English, ega3/ega3-7-2.tex, page III 180 -----
+\oldpage[III]{180}
+It is clear that condition ($\mathrm{b}'$) of
+\sref{III.7.2.5} implies (d).  We prove that (d) implies
+($\mathrm{b}'$).  There is an integer $n$ such that
+$\mathfrak m^n=0$.  For every $A$-module $M$, put $M_h=\mathfrak m^hM$.
+We shall prove, by descending induction on $h$, that $t_{M_h}$
+is surjective.  The assertion is clear for $h=n$.  If $h<n$,
+there is an exact sequence
+\[
+  0\longrightarrow M_{h+1}
+  \longrightarrow M_h
+  \longrightarrow M_h/M_{h+1}
+  \longrightarrow0,
+\]
+and the induction hypothesis says that $t_{M_{h+1}}$ is
+surjective.  Moreover, $M_h/M_{h+1}$ is annihilated by
+$\mathfrak m$, and is therefore an $(A/\mathfrak m)$-module;
+in other words, it is a direct sum of $A$-modules isomorphic to
+$k$.  Since $T$ commutes with direct sums, it is therefore
+enough, in order to prove that $t_{M_h/M_{h+1}}$ is surjective,
+to prove that $t_k$ is surjective.  The diagram
+\[
+\xymatrix{
+  T(A_s)\otimes_A A_s
+    \ar[r]^-{t_{A_s}}\ar[d]_{1\otimes\varepsilon}
+  & T(A_s)\ar[d]^{T(\varepsilon)}
+  \\
+  T(A_s)\otimes_A k
+    \ar[r]_-{t_k}
+  & T(k)
+}
+\]
+is commutative.  Condition (d), together with
+\sref{III.7.2.4}, therefore shows that $t_k$ is surjective.
+
+To finish the proof, it remains to show that if $0\longrightarrow M'\longrightarrow M\xrightarrow{v}M''\longrightarrow 0$
+is an exact sequence of $A$-modules for which $t_{M'}$ and
+$t_{M''}$ are surjective, then $t_M$ is surjective.  There is a
+commutative diagram
+\[
+\xymatrix{
+  T'(M')\ar[r]\ar[d]_{t_{M'}}
+  & T'(M)\ar[r]\ar[d]_{t_M}
+  & T'(M'')\ar[r]\ar[d]_{t_{M''}}
+  & 0\ar[d]
+  \\
+  T(M')\ar[r]
+  & T(M)\ar[r]_{T(v)}
+  & T(M'')\ar[r]
+  & \Coker(T(v))
+}
+\]
+whose two rows are exact, by the hypothesis that $T$ is
+semi-exact.  The induction hypothesis says that $t_{M'}$ and
+$t_{M''}$ are epimorphisms, while the last vertical arrow is a
+monomorphism.  The five lemma \emph{(M, I, 1.1)} therefore
+shows that $t_M$ is an epimorphism.
+\end{proof}
+----- English, ega3/ega3-7-3.tex, page III 180 -----
+\subsection{Exactness criteria for homological functors of modules.}
+\label{subsection:III.7.3}
+
+\begin{proposition}[7.3.1]
+\label{III.7.3.1}
+Let $A$ be a ring, not necessarily commutative, and let
+$T_\bullet$ be a covariant homological functor
+\emph{(T, II, 2.1)} from $\cat{Ab}_A$ to $\cat{Ab}$ that
+commutes with direct sums.  Let $p$ be an integer such that
+$T_p$ and $T_{p-1}$ are defined.  The following conditions are
+equivalent:
+\begin{enumerate}
+  \item[(a)] $T_p$ is right exact;
+  \item[(b)] $T_{p-1}$ is left exact;
+----- French corrections on page III 179 -----
+[id 7315]
+OLD: Posons
+\[
+  T'(M)=T(A_s)\otimes_A M
+\]
+
+NEW: Posons
+$T'(M)=T(A_s)\otimes_A M$
+
+FRENCH CONTEXT (corrected): omorphe à un foncteur en $M$ de la forme
+    $N\otimes_A M$, où $N$ est un $A$-module à droite.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que $b)$ implique $c)$ et que $c)$ implique $a)$; montrons que
+$a)$ implique $b)$.
+\oldpage[III]{179}
+Posons
+$T'(M)=T(A_s)\otimes_A M$
+pour tout $A$-module à gauche $M$. Il existe une suite exacte
+$L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+où $L$ et $L'$ sont deux $A$-modules à gauche \emph{libres}; comme $T$ et $T'$ sont
+exacts à droite, on a donc le diagramme commutatif
+\[
+\xym
+
+[id 7316]
+OLD: \[
+  L'\longrightarrow L\longrightarrow M\longrightarrow0,
+\]
+
+NEW: $L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+
+FRENCH CONTEXT (corrected): 
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que $b)$ implique $c)$ et que $c)$ implique $a)$; montrons que
+$a)$ implique $b)$.
+\oldpage[III]{179}
+Posons
+$T'(M)=T(A_s)\otimes_A M$
+pour tout $A$-module à gauche $M$. Il existe une suite exacte
+$L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+où $L$ et $L'$ sont deux $A$-modules à gauche \emph{libres}; comme $T$ et $T'$ sont
+exacts à droite, on a donc le diagramme commutatif
+\[
+\xymatrix@C=22pt@R=25pt{
+  T'(L')\ar[r]\ar[d]_{t_{L'}}
+  &
+  T'(L)\ar[r]\ar[d]_{t_L}
+  &
+  T'(M)\ar[r]\ar[d]_{t_M}
+  &
+  0
+
+[id 7317]
+OLD: à gauche libres;
+NEW: à gauche \emph{libres};
+FRENCH CONTEXT (corrected): $c)$ implique $a)$; montrons que
+$a)$ implique $b)$.
+\oldpage[III]{179}
+Posons
+$T'(M)=T(A_s)\otimes_A M$
+pour tout $A$-module à gauche $M$. Il existe une suite exacte
+$L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+où $L$ et $L'$ sont deux $A$-modules à gauche \emph{libres}; comme $T$ et $T'$ sont
+exacts à droite, on a donc le diagramme commutatif
+\[
+\xymatrix@C=22pt@R=25pt{
+  T'(L')\ar[r]\ar[d]_{t_{L'}}
+  &
+  T'(L)\ar[r]\ar[d]_{t_L}
+  &
+  T'(M)\ar[r]\ar[d]_{t_M}
+  &
+  0
+  \\
+  T(L')\ar[r]
+  &
+  T(L)\ar[r]
+  &
+  T(M)\ar[r]
+  &
+  
+
+[id 7318]
+OLD: T'(L')\ar[r]\ar[d]^{t_{L'}}
+  &
+  T'(L)\ar[r]\ar[d]^{t_L}
+  &
+  T'(M)\ar[r]\ar[d]^{t_M}
+NEW: T'(L')\ar[r]\ar[d]_{t_{L'}}
+  &
+  T'(L)\ar[r]\ar[d]_{t_L}
+  &
+  T'(M)\ar[r]\ar[d]_{t_M}
+FRENCH CONTEXT (corrected): gauche $M$. Il existe une suite exacte
+$L'\longrightarrow L\longrightarrow M\longrightarrow0$,
+où $L$ et $L'$ sont deux $A$-modules à gauche \emph{libres}; comme $T$ et $T'$ sont
+exacts à droite, on a donc le diagramme commutatif
+\[
+\xymatrix@C=22pt@R=25pt{
+  T'(L')\ar[r]\ar[d]_{t_{L'}}
+  &
+  T'(L)\ar[r]\ar[d]_{t_L}
+  &
+  T'(M)\ar[r]\ar[d]_{t_M}
+  &
+  0
+  \\
+  T(L')\ar[r]
+  &
+  T(L)\ar[r]
+  &
+  T(M)\ar[r]
+  &
+  0
+}
+\]
+où les deux lignes sont exactes; comme $t_L$ et $t_{L'}$ sont des
+isomorphismes en vertu de (7.2.4), il en est de même de $t_M$ par le lemme des
+cinq. Enfin, il est clair que $b)$ entra
+
+[id 7319]
+OLD: il suffit de prouver le lemme suivant.
+NEW: il suffit de prouver le
+FRENCH CONTEXT (corrected):   T(M)\ar[r]
+  &
+  0
+}
+\]
+où les deux lignes sont exactes; comme $t_L$ et $t_{L'}$ sont des
+isomorphismes en vertu de (7.2.4), il en est de même de $t_M$ par le lemme des
+cinq. Enfin, il est clair que $b)$ entraîne $b')$. Pour montrer que $b')$
+entraîne $a)$, il suffit de prouver le
+\end{proof}
+
+\begin{lemma}[7.2.5.1]
+Soient $\boldsymbol{K}$, $\boldsymbol{K}'$ deux catégories abéliennes, $F$, $G$ deux
+foncteurs covariants additifs de $\boldsymbol{K}$ dans $\boldsymbol{K}'$,
+$f:F\to G$ un morphisme fonctoriel \textup{(T, I, 1.2)} tel que,
+
+[id 7320]
+OLD: Soient $\mathcal K$, $\mathcal K'$ deux
+NEW: Soient $\boldsymbol{K}$, $\boldsymbol{K}'$ deux
+FRENCH CONTEXT (corrected): omme $t_L$ et $t_{L'}$ sont des
+isomorphismes en vertu de (7.2.4), il en est de même de $t_M$ par le lemme des
+cinq. Enfin, il est clair que $b)$ entraîne $b')$. Pour montrer que $b')$
+entraîne $a)$, il suffit de prouver le
+\end{proof}
+
+\begin{lemma}[7.2.5.1]
+Soient $\boldsymbol{K}$, $\boldsymbol{K}'$ deux catégories abéliennes, $F$, $G$ deux
+foncteurs covariants additifs de $\boldsymbol{K}$ dans $\boldsymbol{K}'$,
+$f:F\to G$ un morphisme fonctoriel \textup{(T, I, 1.2)} tel que, pour tout objet $E$
+de la catégorie $\boldsymbol{K}$,
+$f_E:F(E)\longrightarrow G(E)
+
+[id 7321]
+OLD: de $\mathcal K$ dans $\mathcal K'$
+NEW: de $\boldsymbol{K}$ dans $\boldsymbol{K}'$
+FRENCH CONTEXT (corrected): . Enfin, il est clair que $b)$ entraîne $b')$. Pour montrer que $b')$
+entraîne $a)$, il suffit de prouver le
+\end{proof}
+
+\begin{lemma}[7.2.5.1]
+Soient $\boldsymbol{K}$, $\boldsymbol{K}'$ deux catégories abéliennes, $F$, $G$ deux
+foncteurs covariants additifs de $\boldsymbol{K}$ dans $\boldsymbol{K}'$,
+$f:F\to G$ un morphisme fonctoriel \textup{(T, I, 1.2)} tel que, pour tout objet $E$
+de la catégorie $\boldsymbol{K}$,
+$f_E:F(E)\longrightarrow G(E)$
+soit un épimorphisme. Alors, si $F$ est exact à droite et $G$ semi-exact,
+$G$ est exact à droite.
+\end{lemma
+
+[id 7323]
+OLD: de la catégorie $\mathcal K$,
+NEW: de la catégorie $\boldsymbol{K}$,
+FRENCH CONTEXT (corrected): lemma}[7.2.5.1]
+Soient $\boldsymbol{K}$, $\boldsymbol{K}'$ deux catégories abéliennes, $F$, $G$ deux
+foncteurs covariants additifs de $\boldsymbol{K}$ dans $\boldsymbol{K}'$,
+$f:F\to G$ un morphisme fonctoriel \textup{(T, I, 1.2)} tel que, pour tout objet $E$
+de la catégorie $\boldsymbol{K}$,
+$f_E:F(E)\longrightarrow G(E)$
+soit un épimorphisme. Alors, si $F$ est exact à droite et $G$ semi-exact,
+$G$ est exact à droite.
+\end{lemma}
+
+\begin{proof}
+Tout revient en effet à démontrer que pour tout épimorphisme
+$v:E'\to E$ dans $\boldsymbol{K}$,
+$G(v):G
+
+[id 7324]
+OLD: \[
+  f_E:F(E)\longrightarrow G(E)
+\]
+
+NEW: $f_E:F(E)\longrightarrow G(E)$
+
+FRENCH CONTEXT (corrected): l{K}$, $\boldsymbol{K}'$ deux catégories abéliennes, $F$, $G$ deux
+foncteurs covariants additifs de $\boldsymbol{K}$ dans $\boldsymbol{K}'$,
+$f:F\to G$ un morphisme fonctoriel \textup{(T, I, 1.2)} tel que, pour tout objet $E$
+de la catégorie $\boldsymbol{K}$,
+$f_E:F(E)\longrightarrow G(E)$
+soit un épimorphisme. Alors, si $F$ est exact à droite et $G$ semi-exact,
+$G$ est exact à droite.
+\end{lemma}
+
+\begin{proof}
+Tout revient en effet à démontrer que pour tout épimorphisme
+$v:E'\to E$ dans $\boldsymbol{K}$,
+$G(v):G(E')\longrightarrow G(E)$
+est un
+
+[id 7325]
+OLD: $v:E'\to E$ dans $\mathcal K$,
+NEW: $v:E'\to E$ dans $\boldsymbol{K}$,
+FRENCH CONTEXT (corrected): bjet $E$
+de la catégorie $\boldsymbol{K}$,
+$f_E:F(E)\longrightarrow G(E)$
+soit un épimorphisme. Alors, si $F$ est exact à droite et $G$ semi-exact,
+$G$ est exact à droite.
+\end{lemma}
+
+\begin{proof}
+Tout revient en effet à démontrer que pour tout épimorphisme
+$v:E'\to E$ dans $\boldsymbol{K}$,
+$G(v):G(E')\longrightarrow G(E)$
+est un épimorphisme; or, on a le diagramme commutatif
+\[
+\xymatrix@C=35pt@R=30pt{
+  F(E')\ar[r]^{F(v)}\ar[d]_{f_{E'}}
+  &
+  F(E)\ar[d]^{f_E}
+  \\
+  G(E')\ar[r]_{G(v)}
+  &
+  G(E)
+}
+\]
+dans lequel $F(v)$, $f_{E'}$ et $f_E$ sont 
+
+[id 7326]
+OLD: \[
+  G(v):G(E')\longrightarrow G(E)
+\]
+
+NEW: $G(v):G(E')\longrightarrow G(E)$
+
+FRENCH CONTEXT (corrected): ol{K}$,
+$f_E:F(E)\longrightarrow G(E)$
+soit un épimorphisme. Alors, si $F$ est exact à droite et $G$ semi-exact,
+$G$ est exact à droite.
+\end{lemma}
+
+\begin{proof}
+Tout revient en effet à démontrer que pour tout épimorphisme
+$v:E'\to E$ dans $\boldsymbol{K}$,
+$G(v):G(E')\longrightarrow G(E)$
+est un épimorphisme; or, on a le diagramme commutatif
+\[
+\xymatrix@C=35pt@R=30pt{
+  F(E')\ar[r]^{F(v)}\ar[d]_{f_{E'}}
+  &
+  F(E)\ar[d]^{f_E}
+  \\
+  G(E')\ar[r]_{G(v)}
+  &
+  G(E)
+}
+\]
+dans lequel $F(v)$, $f_{E'}$ et $f_E$ sont des épimorphismes; il en est donc
+
+
+[id 7327]
+OLD: posons
+\[
+  T_N(M)=N\otimes_A M
+\]
+
+NEW: posons
+$T_N(M)=N\otimes_A M$
+
+FRENCH CONTEXT (corrected): \ar[r]^{F(v)}\ar[d]_{f_{E'}}
+  &
+  F(E)\ar[d]^{f_E}
+  \\
+  G(E')\ar[r]_{G(v)}
+  &
+  G(E)
+}
+\]
+dans lequel $F(v)$, $f_{E'}$ et $f_E$ sont des épimorphismes; il en est donc
+de même de $G(v)$.
+\end{proof}
+
+\begin{remark}[7.2.6]
+Pour tout $A$-module à droite $N$, posons
+$T_N(M)=N\otimes_A M$
+pour tout $A$-module à gauche $M$, de sorte que $T_N$ est un foncteur
+covariant additif de $\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, exact à droite et
+commutant aux sommes directes. Si on identifie canoniquement $T_N(A_s)$ à
+$N$, on vérifie aussitôt que l'ho
+
+[id 7328]
+OLD: de $\mathbf{Ab}_A$ dans $\mathbf{Ab}$, exact à droite
+NEW: de $\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, exact à droite
+FRENCH CONTEXT (corrected): {E'}$ et $f_E$ sont des épimorphismes; il en est donc
+de même de $G(v)$.
+\end{proof}
+
+\begin{remark}[7.2.6]
+Pour tout $A$-module à droite $N$, posons
+$T_N(M)=N\otimes_A M$
+pour tout $A$-module à gauche $M$, de sorte que $T_N$ est un foncteur
+covariant additif de $\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, exact à droite et
+commutant aux sommes directes. Si on identifie canoniquement $T_N(A_s)$ à
+$N$, on vérifie aussitôt que l'homomorphisme correspondant (7.2.2.1) devient
+l'identité. On en conclut que le $A$-module à droite $N$ de l'énoncé de
+(7.2.5, $c)$) est déterminé à un 
+
+[id 7329]
+OLD: fonctoriels
+\[
+  T\longmapsto T(A_s),
+  \qquad
+  N\longmapsto T_N
+\]
+
+NEW: fonctoriels
+$T\leadsto T(A_s)$ et $N\leadsto T_N$
+
+FRENCH CONTEXT (corrected): l'homomorphisme correspondant (7.2.2.1) devient
+l'identité. On en conclut que le $A$-module à droite $N$ de l'énoncé de
+(7.2.5, $c)$) est déterminé à un isomorphisme unique près et est
+canoniquement isomorphe à $T(A_s)$. On peut encore dire que les morphismes
+fonctoriels
+$T\leadsto T(A_s)$ et $N\leadsto T_N$
+constituent une \emph{équivalence} (T, I, 1.2) de la catégorie des $A$-modules à
+droite et de la catégorie des foncteurs covariants additifs
+$\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ qui sont exacts à droite et commutent aux
+sommes directes.
+\end{remark}
+
+\begin{p
+
+[id 7330]
+OLD: une équivalence (T, I, 1.2)
+NEW: une \emph{équivalence} (T, I, 1.2)
+FRENCH CONTEXT (corrected):  en conclut que le $A$-module à droite $N$ de l'énoncé de
+(7.2.5, $c)$) est déterminé à un isomorphisme unique près et est
+canoniquement isomorphe à $T(A_s)$. On peut encore dire que les morphismes
+fonctoriels
+$T\leadsto T(A_s)$ et $N\leadsto T_N$
+constituent une \emph{équivalence} (T, I, 1.2) de la catégorie des $A$-modules à
+droite et de la catégorie des foncteurs covariants additifs
+$\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ qui sont exacts à droite et commutent aux
+sommes directes.
+\end{remark}
+
+\begin{proposition}[7.2.7]
+Soient $A$ un anneau artini
+
+[id 7331]
+OLD: $\mathbf{Ab}_A\to\mathbf{Ab}$ qui sont
+NEW: $\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ qui sont
+FRENCH CONTEXT (corrected): quement isomorphe à $T(A_s)$. On peut encore dire que les morphismes
+fonctoriels
+$T\leadsto T(A_s)$ et $N\leadsto T_N$
+constituent une \emph{équivalence} (T, I, 1.2) de la catégorie des $A$-modules à
+droite et de la catégorie des foncteurs covariants additifs
+$\boldsymbol{Ab}_A\to\boldsymbol{Ab}$ qui sont exacts à droite et commutent aux
+sommes directes.
+\end{remark}
+
+\begin{proposition}[7.2.7]
+Soient $A$ un anneau artinien à gauche, dont le quotient par son radical
+$\mathfrak m$ est un corps $k$. Soit $T$ un foncteur covariant additif de
+$\boldsymbol{Ab}_A$ d
+
+[id 7332]
+OLD: $\mathbf{Ab}_A$ dans $\mathbf{Ab}$, commutant aux
+NEW: $\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, commutant aux
+FRENCH CONTEXT (corrected): dsymbol{Ab}$ qui sont exacts à droite et commutent aux
+sommes directes.
+\end{remark}
+
+\begin{proposition}[7.2.7]
+Soient $A$ un anneau artinien à gauche, dont le quotient par son radical
+$\mathfrak m$ est un corps $k$. Soit $T$ un foncteur covariant additif de
+$\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, commutant aux sommes directes. Les
+conditions de \textup{(7.2.5)} sont alors aussi équivalentes à
+\begin{enumerate}
+  \item[d)] $T$ est semi-exact et l'homomorphisme
+    $T(\varepsilon):T(A_s)\longrightarrow T(k)$
+    déduit de l'homomorphisme canonique $\varepsilon:A_s\to
+
+[id 7334]
+OLD: \[
+      T(\varepsilon):T(A_s)\longrightarrow T(k)
+    \]
+
+NEW: $T(\varepsilon):T(A_s)\longrightarrow T(k)$
+
+FRENCH CONTEXT (corrected): k$. Soit $T$ un foncteur covariant additif de
+$\boldsymbol{Ab}_A$ dans $\boldsymbol{Ab}$, commutant aux sommes directes. Les
+conditions de \textup{(7.2.5)} sont alors aussi équivalentes à
+\begin{enumerate}
+  \item[d)] $T$ est semi-exact et l'homomorphisme
+    $T(\varepsilon):T(A_s)\longrightarrow T(k)$
+    déduit de l'homomorphisme canonique $\varepsilon:A_s\to k$ est surjectif.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\oldpage[III]{180}
+Il est clair que la condition $b')$ de (7.2.5) entraîne $d)$; prouvons que
+$d)$ entraîne $b')$.
+Il existe un entie
+
+=================== PAGE III 180 ===================
+----- (English page III 179: shown above in this file) -----
+----- (English page III 180: shown above in this file) -----
+----- English, ega3/ega3-7-3.tex, page III 181 -----
+\oldpage[III]{181}
+
+  \item[(c)] for every left $A$-module $M$, the canonical
+    functorial homomorphism \eqref{III.7.2.2.1.eq}
+    \[
+      T_p(A_s)\otimes_A M
+      \longrightarrow
+      T_p(M)
+      \tag{7.3.1.1}\label{III.7.3.1.1.eq}
+    \]
+    is an isomorphism;
+  \item[(d)] for every left $A$-module $M$, the homomorphism
+    \eqref{III.7.3.1.1.eq} is an epimorphism;
+  \item[(e)] $T_p$ is isomorphic to a functor of the form
+    \[
+      M\longmapsto N\otimes_A M,
+    \]
+    where $N$ is a right $A$-module.
+\end{enumerate}
+If, in addition, the conditions of \sref{III.7.2.7} on $A$ and
+$\mathfrak m$ are satisfied, the preceding conditions are also
+equivalent to
+\begin{enumerate}
+  \item[(f)] the canonical homomorphism $T_p(\varepsilon):T_p(A_s)\longrightarrow T_p(k)$
+    is an epimorphism.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+By definition of a homological functor, $T_i$ is semi-exact for
+every $i$ for which it is defined; moreover, for every exact
+sequence $0\longrightarrow M'\xrightarrow{u}M\xrightarrow{v}M''\longrightarrow0$,
+one has $\Ker\bigl(T_{i-1}(u)\bigr)
+=
+\Coker\bigl(T_i(v)\bigr)$.
+It is therefore clear that (a) and (b) are equivalent, and the
+other assertions follow immediately from \sref{III.7.2.5} and
+\sref{III.7.2.7}.
+\end{proof}
+
+\begin{corollary}[7.3.2]
+\label{III.7.3.2}
+Let $A$ be a commutative ring.  With the notation of
+\sref{III.7.3.1}, suppose that $T_p$ is right exact.  If
+$f\in A$ annihilates no nonzero element of an $A$-module $M$,
+then it annihilates no nonzero element of $T_{p-1}(M)$.  In
+particular, if $A$ is an integral domain, the $A$-module
+$T_{p-1}(A)$ is torsion-free.
+\end{corollary}
+
+\begin{proof}
+If $h_f$ denotes the homothety $x\to fx$ of $M$, the
+hypothesis says that $h_f$ is injective.  Condition (b) of
+\sref{III.7.3.1} then shows that $T_{p-1}(h_f)$ is injective
+as well.
+\end{proof}
+
+\begin{proposition}[7.3.3]
+\label{III.7.3.3}
+Let $A$ be a ring, and let $T_\bullet$ be a covariant
+homological functor from $\cat{Ab}_A$ to $\cat{Ab}$ that
+commutes with direct sums.  Let $p$ be an integer such that
+$T_{p-1}$, $T_p$, and $T_{p+1}$ are defined.  The following
+conditions are equivalent:
+\begin{enumerate}
+  \item[(a)] $T_p$ is exact;
+  \item[(b)] $T_{p+1}$ and $T_p$ are right exact;
+  \item[(c)] $T_p$ and $T_{p-1}$ are left exact;
+  \item[(d)] $T_{p+1}$ is right exact and $T_{p-1}$ is left
+    exact;
+  \item[(e)] for every $A$-module $M$, the canonical
+    homomorphisms
+    \[
+      T_i(A_s)\otimes_A M
+      \longrightarrow
+      T_i(M)
+      \tag{7.3.3.1}\label{III.7.3.3.1.eq}
+    \]
+    are isomorphisms for $i=p$ and $i=p+1$;
+  \item[($\mathrm{e}'$)] for every $A$-module $M$, the
+    homomorphisms \eqref{III.7.3.3.1.eq} are epimorphisms for
+    $i=p$ and $i=p+1$;
+  \item[(f)] for every $A$-module $M$, the homomorphism
+    \eqref{III.7.3.3.1.eq} is an isomorphism for $i=p$, and
+    $T_p(A_s)$ is flat as a right $A$-module;
+  \item[($\mathrm{f}'$)] for every $A$-module $M$, the
+    homomorphism \eqref{III.7.3.3.1.eq} is an epimorphism for
+    $i=p$, and $T_p(A_s)$ is flat as a right $A$-module.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The equivalence of (a), (b), (c), and (d) follows from the
+equivalence of conditions (a) and (b) of \sref{III.7.3.1}.
+The equivalence of (b), (e), and ($\mathrm{e}'$) follows from
+the equivalence of (a), (c), and (d) in \sref{III.7.3.1}.
+Finally, to say that $T_p(A_s)$ is flat means that the functor
+\[
+  M\longmapsto T_p(A_s)\otimes_A M
+\]
+is left exact; the equivalence of (a), (f), and
+($\mathrm{f}'$) again follows from the equivalence of (a), (c),
+and (d) in \sref{III.7.3.1}.
+\end{proof}
+----- French corrections on page III 180 -----
+[id 7336]
+OLD: \[
+  0\longrightarrow M'
+  \longrightarrow M
+  \xrightarrow{v}M''
+  \longrightarrow 0
+\]
+
+NEW: $0\longrightarrow M'\longrightarrow M\xrightarrow{v}M''\longrightarrow 0$
+
+FRENCH CONTEXT (corrected): arepsilon}
+  &
+  T(A_s)\ar[d]^{T(\varepsilon)}
+  \\
+  T(A_s)\otimes_A k
+  \ar[r]_-{t_k}
+  &
+  T(k)
+}
+\]
+et de (7.2.4), l'hypothèse $d)$ entraîne que $t_k$ est bien surjectif. Pour
+terminer la démonstration, il suffira de prouver que si l'on a une suite
+exacte
+$0\longrightarrow M'\longrightarrow M\xrightarrow{v}M''\longrightarrow 0$
+de $A$-modules, telle que $t_{M'}$ et $t_{M''}$ sont surjectifs, alors $t_M$
+est surjectif. Or, on a un diagramme commutatif
+\[
+\xymatrix@C=27pt@R=30pt{
+  T'(M')\ar[r]\ar[d]_{t_{M'}}
+  &
+  T'(M)\ar[r]\ar[d]_{t_M}
+  &
+  T'(M'')\ar[r]\ar[d]_{t_{M''}}
+  &
+  0\ar[
+
+[id 7338]
+OLD: (T, II, 2.1)
+NEW: \textup{(T, II, 2.1)}
+FRENCH CONTEXT (corrected):  épimorphisme.
+\end{proof}
+
+\subsection{Critères d'exactitude des foncteurs homologiques de modules.}
+\label{subsection:III.7.3.fr}
+
+\begin{proposition}[7.3.1]
+Soient $A$ un anneau (non nécessairement commutatif), $T_\bullet$ un foncteur
+homologique covariant \textup{(T, II, 2.1)} de la catégorie $\boldsymbol{Ab}_A$ dans la
+catégorie $\boldsymbol{Ab}$, commutant aux sommes directes. Soit $p$ un entier tel
+que $T_p$ et $T_{p-1}$ soient définis. Les conditions suivantes sont
+équivalentes :
+\begin{enumerate}
+  \item[a)] $T_p$ est exact à 
+
+[id 7339]
+OLD: catégorie $\mathbf{Ab}_A$ dans la
+catégorie $\mathbf{Ab}$,
+NEW: catégorie $\boldsymbol{Ab}_A$ dans la
+catégorie $\boldsymbol{Ab}$,
+FRENCH CONTEXT (corrected): \subsection{Critères d'exactitude des foncteurs homologiques de modules.}
+\label{subsection:III.7.3.fr}
+
+\begin{proposition}[7.3.1]
+Soient $A$ un anneau (non nécessairement commutatif), $T_\bullet$ un foncteur
+homologique covariant \textup{(T, II, 2.1)} de la catégorie $\boldsymbol{Ab}_A$ dans la
+catégorie $\boldsymbol{Ab}$, commutant aux sommes directes. Soit $p$ un entier tel
+que $T_p$ et $T_{p-1}$ soient définis. Les conditions suivantes sont
+équivalentes :
+\begin{enumerate}
+  \item[a)] $T_p$ est exact à droite.
+  \item[b)] $T_{p-1}$ est exact à gauche.
+  \oldpage[III]{181}
+  
+

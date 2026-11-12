@@ -1,0 +1,53 @@
+You carry corrections from the French EGA into the English EGA.
+
+The French EGA was checked page by page against the printed original (Publ. Math. IHÉS); every correction is an
+exact edit OLD -> NEW of the French LaTeX. The English EGA is a translation of the French, made before these
+corrections. The corrections in your batch could not be carried over by a script, mostly because the French wording
+differs from the English.
+
+Your batch file: {BATCH} (plain text; read it in parts with offset/limit). It has one block per printed page:
+"=== PAGE <part> <page> ===", then the English text of that page and of its neighbours ("----- English, <file>,
+page <part> <p> -----": the translation's page breaks fall a few lines differently, so the passage can sit on the
+page before or after), then the French corrections of that page: "[id N]", OLD, NEW, sometimes WHY (the checker's
+reason) and FRENCH CONTEXT (the corrected French around the edit).
+
+For each id decide:
+- "apply": the English has the error that the French fix corrects. Give an exact English edit: "en_file" (as named
+  in the block), "en_old" (an exact substring of that English text, long enough to occur only once in the English
+  pages of the block) and "en_new" (the corrected English). Carry over the meaning of the fix: a corrected formula,
+  index, sign, reference, number or letter; a missing or wrong word (translated, never pasted in French); an italic
+  emphasis \emph{...} restored on a defined term or an emphasized phrase (put it on the English words that translate
+  the French ones); an upright parenthesis \textup{(...)} inside an italic statement (proposition, theorem, corollary,
+  lemma) where the English has the same parenthesis; a missing or wrong parenthesis, bracket or punctuation mark that
+  belongs to the mathematics or the meaning.
+- "already": the English already says what the corrected French says.
+- "not_applicable": the fix concerns only the French: spelling, accents, French punctuation or spacing (espaces
+  before ; : ! ?, guillemets), grammar, a French line or page break, blank lines, a display set inline or the reverse,
+  or another layout choice of the French print that the English does not follow.
+- "unclear": you cannot find the passage or are not sure; say why in "note".
+
+Rules:
+- Do not edit any file. Write only {OUTFILE}.
+- Mathematics must end up identical to the corrected French: same symbols, indices, references and numbering.
+- Keep the English edition's conventions and macros where they render the same as the French (\kres for the bold
+  residue field k, \sh{O} for script letters, \sref[I]{...} references; British or American spelling as the file uses).
+- References: the English prints chapter numbers in references in bold and references upright by itself (\sref and
+  the \textbf{0}, \textbf{I} in reference texts), so a French fix that only does that is "already".
+- Never change \oldpage markers, \label or \hyperref/\sref keys, or file structure.
+- If one English edit covers several ids, put it in the first and give the others "already" with note
+  "covered by <id>". No two "apply" edits may overlap.
+- Use LF line breaks (\n) in en_old and en_new, exactly as in the English text shown.
+
+{OUTFILE}: one JSON list, one object per id, in the batch's order:
+  {"id": N, "decision": "apply"|"already"|"not_applicable"|"unclear", "en_file": ..., "en_old": ..., "en_new": ...,
+   "note": "..."}
+("en_file", "en_old", "en_new" only for "apply"; "note" short, and only where useful).
+
+Work economically: read the batch file in large parts (about 1,500 lines per Read), keep your decisions as you go,
+and write OUTFILE with a single Write at the end. Then run once
+  python -I user\Documents\ega_scan_check_20261101\apply_port_decisions.py {OUTFILE} --dry
+which checks every "apply" edit without changing anything and prints the ids it rejects; correct only those and
+write OUTFILE again. No other scripts or tools.
+
+Final message, short: counts per decision, then (separately, one line each) any place where the English translation
+itself is wrong in a way the French fix does not cover (do not fix those). Nothing else.

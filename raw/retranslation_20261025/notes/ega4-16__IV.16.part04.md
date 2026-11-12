@@ -1,0 +1,15 @@
+- TRANSCRIPTION? 16.7.1 display, (16.7.4.1), 16.7.7 second display — `X,qquad`, `t,qquad`, `(\mathscr{F})qquad(n\leq m)`: `qquad` lacks the backslash of `\qquad`; copied as is.
+- TRANSCRIPTION? 16.8.1 (paragraph after the definition) — "Pour $n\geq0$, un opérateur différentiel n'est pas en général un homomorphisme de $\mathcal{O}_X$-Modules": the preceding sentence says order-0 operators are exactly the $\mathcal{O}_X$-homomorphisms, so presumably $n>0$.
+- TRANSCRIPTION? (16.8.3.1) — left side written $\mathscr{H}\!om_{\mathcal{O}_U}$ (sheaf Hom), but the map is an isomorphism of additive groups onto the group $\operatorname{Diff}_{U/S}^n(\ldots)$; presumably $\operatorname{Hom}_{\mathcal{O}_U}$.
+- TRANSCRIPTION? 16.8.7 — "les flèches horizontales sont les isomorphismes (16.8.4.2)": there is no (16.8.4.2); the isomorphism is (16.8.4.1).
+- TRANSCRIPTION? proof of 16.8.8 — the displayed expansion $\sum_{H}(\prod_{i\in H}a_i)\otimes((\prod_{i\notin H}a_i)t)$ carries no sign; expanding $\prod(a_i\otimes1-1\otimes a_i)$ gives the factor $(-1)^{n+1-\operatorname{Card}(H)}$, which matches (16.8.8.2) only up to a global sign (possibly so in the original).
+- TRANSCRIPTION? (16.7.8.2) — the citation "(Bourbaki, Alg., 3e éd., §5, no 3)" lacks the "chap. II" of the citation just before (possibly so in the original).
+- TERM 3\textsuperscript{e} éd. (inside Bourbaki citations) → kept as is (French abbreviation, glossary Bourbaki rule)
+- TERM semi-linéaire → semi-linear
+- TERM (algèbre) unitaire → unital
+- TERM «schéma des jets» → ``jet scheme''
+- TERM $\mathcal{O}_X$-Bimodule → $\mathcal{O}_X$-bimodule (lowercase, as for Module)
+- TERM (structures) permutables → (structures) which commute with each other
+- TERM tensorisation → tensoring
+- TERM premier membre / second membre → left-hand side / right-hand side
+- TERM Exposé VII de [42] → Exposé VII of [42]

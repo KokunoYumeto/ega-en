@@ -1,0 +1,4537 @@
+# English hand pass, batch_037: 155 items on 15 printed pages
+
+=================== PAGE IV-2 50 ===================
+----- English, ega4-3.source_aligned_r1.tex, page IV-2 49 -----
+\oldpage[IV-2]{49}
+
+\begin{corollary}[3.4.2]
+\phantomsection
+\label{IV.3.4.2}
+Under the general hypotheses of \sref{IV.3.4.1}, suppose that $Z$ is not equal to any of the $S_i$ and that $\operatorname{length}((\sh{F}/t\sh{F})_z)=1$.
+Then there is a unique $S_i$ containing $Z$, and for this value of $i$, $\operatorname{length}(\sh{F}_{s_i})=1$; moreover, $\sh{O}_{S,z}$ is a discrete valuation ring with uniformizer $t_z$, and $t_z$ is $\sh{F}_z$-regular.
+\end{corollary}
+
+\begin{proof}
+This follows from \sref{IV.3.4.1}, the two sides of \sref{IV.3.4.1.1} being then equal.
+\end{proof}
+
+\begin{proposition}[3.4.3]
+\phantomsection
+\label{IV.3.4.3}
+Let $X$ be a locally Noetherian prescheme, $t$ a section of $\sh{O}_X$ over $X$, and $Y$ the closed sub-prescheme of $X$ defined by the ideal $t\sh{O}_X$.
+Let $\sh{F}$ be a coherent $\sh{O}_X$-module, let $T$ be an associated prime cycle of $\sh{F}$, let $T'$ be an irreducible component of $T\cap Y$, and let $x$ be the generic point of $T'$.
+Suppose that $t_x$ is $\sh{F}_x$-regular; then $x\in\operatorname{Ass}(\sh{F}/t\sh{F})$.
+\end{proposition}
+
+\begin{proof}
+As in the proof of \sref{IV.3.4.1}, we may reduce to the case $X=\operatorname{Spec}(\sh{O}_x)$.
+Taking \sref{IV.3.1.2} into account, the proposition is then a consequence of \sref[0]{0.16.4.6.3}.
+\end{proof}
+
+\begin{proposition}[3.4.4]
+\phantomsection
+\label{IV.3.4.4}
+Let $X$ be a locally Noetherian prescheme, $t$ a section of $\sh{O}_X$ over $X$, and $Y$ the closed sub-prescheme of $X$ defined by the ideal $t\sh{O}_X$.
+Let $\sh{F}$ be a coherent $\sh{O}_X$-module, and let $(S_i)$ be the family of irreducible components of $\operatorname{Supp}(\sh{F})$.
+Let $y$ be a point of $Y$ such that $t_y$ is $\sh{F}_y$-regular and no embedded associated prime cycle of $\sh{F}/t\sh{F}$ contains $y$.
+Then the irreducible components of $\operatorname{Supp}(\sh{F}/t\sh{F})$ containing $y$ are precisely the irreducible components of the $S_i\cap Y$ containing $y$, and the associated prime cycles of $\sh{F}$ containing $y$ are non-embedded.
+\end{proposition}
+
+\begin{proof}
+Let us first prove the last assertion.
+Let $T\supset T_1$ be two associated prime cycles of $\sh{F}$ containing $y$.
+If $x$ is the generic point of an irreducible component of $T\cap Y$ containing $y$, then $x$ is a generization of $y$, and hence belongs to every neighbourhood of $y$.
+The hypothesis that $t_y$ is $\sh{F}_y$-regular therefore implies that $t_x$ is $\sh{F}_x$-regular \sref[0]{0.15.2.4}, so \sref{IV.3.4.3} gives $x\in\operatorname{Ass}(\sh{F}/t\sh{F})$.
+Let $x_1$ be the generic point of an irreducible component of $T_1\cap Y$ containing $y$, and let $x$ be the generic point of an irreducible component of $T\cap Y$ containing $x_1$.
+The preceding argument shows that $x_1$ and $x$ both belong to $\operatorname{Ass}(\sh{F}/t\sh{F})$.
+Since $x_1\in\overline{\{x\}}$, the hypothesis implies $x_1=x$.
+
+Again denote by $T$ and $T_1$ the integral closed sub-preschemes of $X$ having these spaces as their respective underlying spaces, and set
+\[
+A=\sh{O}_{T,x},
+\qquad
+A_1=\sh{O}_{T_1,x}.
+\]
+Then $A_1=A/\mathfrak p$ for a prime ideal $\mathfrak p$ of $A$.
+By the definitions of $x$ and $x_1$, the rings $A/tA$ and $A_1/tA_1$ are Artinian.
+On the other hand, we saw above that $t_x$ is $\sh{F}_x$-regular, so $x\notin\operatorname{Ass}(\sh{F})$, and consequently $A_1$ is not Artinian.
+Thus $\dim A=\dim A_1=1$.
+This implies $\mathfrak p=0$ and $A=A_1$ \sref[0]{0.16.1.2.2}.
+Since $\operatorname{Spec}(A)$ and $\operatorname{Spec}(A_1)$ are respectively dense in $T$ and $T_1$, it follows that $T=T_1$.
+
+The $S_i$ containing $y$ are therefore all the associated prime cycles of $\sh{F}$ containing $y$.
+If $x$ is the generic point of an irreducible component of $S_i\cap Y$ containing $y$, then \sref[0]{0.15.2.4} again shows that $t_x$ is $\sh{F}_x$-regular, and \sref{IV.3.4.3} gives $x\in\operatorname{Ass}(\sh{F}/t\sh{F})$.
+This proves the first assertion of \sref{IV.3.4.4}.
+\end{proof}
+
+\begin{proposition}[3.4.5]
+\phantomsection
+\label{IV.3.4.5}
+Let $X$ be a locally Noetherian prescheme, $t$ a section of $\sh{O}_X$ over $X$, and $Y$ the closed sub-prescheme of $X$ defined by the ideal $t\sh{O}_X$.
+Let $\sh{F}$ be a coherent $\sh{O}_X$-module and $y$ a point of $Y$.
+----- English, ega4-3.source_aligned_r1.tex, page IV-2 50 -----
+\oldpage[IV-2]{50}
+Suppose that $t_y$ is $\sh{F}_y$-regular and that $\sh{F}/t\sh{F}$ is integral at $y$ \sref{IV.3.2.4}.
+Then $\sh{F}$ is integral at the point $y$.
+\end{proposition}
+
+\begin{proof}
+Taking into account \sref{IV.3.4.4}, it suffices to prove that $y$ is contained in a \emph{unique} irreducible component of $\operatorname{Supp}(\sh{F})$, and that if $s$ is the generic point of this component, $\operatorname{length}(\sh{F}_s)=1$.
+By hypothesis, $y$ belongs to only one irreducible component of $\operatorname{Supp}(\sh{F}/t\sh{F})$, and if $z$ is the generic point of this component, then $\operatorname{length}((\sh{F}/t\sh{F})_z)=1$.
+The conclusion follows from \sref{IV.3.4.2}.
+\end{proof}
+
+\begin{proposition}[3.4.6]
+\phantomsection
+\label{IV.3.4.6}
+The hypotheses being those of \sref{IV.3.4.1}, let $x$ be a point of $Y$.
+Suppose that $Y$ does not contain any of the $S_i$ containing $x$, and that $\sh{F}/t\sh{F}$ is reduced at the point $x$ \sref{IV.3.2.2}.
+Then $t_x$ is $\sh{F}_x$-regular and $\sh{F}$ is reduced at the point $x$.
+Moreover, if $z_j$ is the generic point of an irreducible component of $\operatorname{Supp}(\sh{F}/t\sh{F})$ containing $x$, then $z_j$ is contained in a unique $S_i$, and $\sh{O}_{S,z_j}$ is a discrete valuation ring with uniformizer $t_{z_j}$.
+\end{proposition}
+
+\begin{proof}
+The assertion that $t_x$ is $\sh{F}_x$-regular follows by applying the following lemma to the ring $\sh{O}_x$.
+
+\begin{lemma}[3.4.6.1]
+\phantomsection
+\label{IV.3.4.6.1}
+Let $A$ be a Noetherian ring, $M$ an $A$-module of finite type, $\mathfrak p_i$ the minimal elements of $\operatorname{Supp}(M)$, and $t\in A$.
+Suppose that $t$ belongs to none of the $\mathfrak p_i$ and that $M/tM$ is a reduced $A$-module \sref{IV.3.2.2}.
+Then $t$ is $M$-regular.
+\end{lemma}
+
+\begin{proof}
+Every prime ideal $\mathfrak p\in\operatorname{Supp}(M)$ contains one of the $\mathfrak p_i$.
+Since $t$ belongs to none of the $\mathfrak p_i$, multiplication by $t$ on $M_{\mathfrak p}$ is not nilpotent (Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \textsection~1, no~4, cor.\ of prop.~9).
+Let $N$ be the submodule of $M$ consisting of the elements annihilated by a power of $t$, and set $P=M/N$.
+We shall prove that $N=0$.
+Since $t$ is $P$-regular, \sref{IV.3.4.1.4} gives an exact sequence
+\[
+0\longrightarrow N/tN
+ \longrightarrow M/tM
+ \longrightarrow P/tP
+ \longrightarrow 0.
+\]
+Since $N$ is of finite type, it is annihilated by a power of $t$, and it therefore suffices to prove that $N/tN=0$.
+As $N/tN$ is a submodule of $M/tM$, it suffices to prove that $(N/tN)_{\mathfrak p}=0$ for every $\mathfrak p\in\operatorname{Ass}(M/tM)$, or equivalently that $u_{\mathfrak p}:(M/tM)_{\mathfrak p}\longrightarrow(P/tP)_{\mathfrak p}$
+is bijective for every $\mathfrak p\in\operatorname{Ass}(M/tM)$.
+Now $(P/tP)_{\mathfrak p}\neq 0$.
+Indeed, $\mathfrak p\in\operatorname{Supp}(M/tM)
+=\operatorname{Supp}(M)\cap V(t)$
+by \sref[0]{0.1.7.5}, so the image of $t$ in $A_{\mathfrak p}$ lies in the maximal ideal $\mathfrak pA_{\mathfrak p}$.
+The equality $P_{\mathfrak p}=tP_{\mathfrak p}$ would therefore imply $P_{\mathfrak p}=0$ by Nakayama's lemma.
+We would then have $M_{\mathfrak p}=N_{\mathfrak p}$, and multiplication by $t$ on $M_{\mathfrak p}$ would be nilpotent, contradicting the observation above because $\mathfrak p\in\operatorname{Supp}(M)$.
+Finally, since $M/tM$ is reduced, $\operatorname{length}((M/tM)_{\mathfrak p})=1$.
+As $(P/tP)_{\mathfrak p}\neq 0$, the map $u_{\mathfrak p}$ is necessarily bijective.
+This proves the lemma.
+\end{proof}
+
+By hypothesis, no embedded associated prime cycle of $\sh{F}/t\sh{F}$ contains $x$.
+It follows from \sref{IV.3.4.4} that no embedded associated prime cycle of $\sh{F}$ contains $x$.
+On the other hand, applying \sref{IV.3.4.2} to an irreducible component of $\operatorname{Supp}(\sh{F}/t\sh{F})$ containing $x$, we find that $\operatorname{length}(\sh{F}_{s_i})=1$ for every $S_i$ containing $x$.
+This completes the proof that $\sh{F}_x$ is reduced.
+The final assertions also follow from \sref{IV.3.4.2}.
+\end{proof}
+
+\begin{corollary}[3.4.7]
+\phantomsection
+\label{IV.3.4.7}
+Let $A$ be a Noetherian local ring, $\mathfrak m$ its maximal ideal, $M$ an $A$-module of finite type, and $(x_i)_{1\leqslant i\leqslant k}$ a family of elements of $\mathfrak m$ forming part of a system of parameters for $M$ \sref[0]{0.16.3.6}.
+----- English, components/01_section41_dimension_of_algebraic_preschemes.tex, page IV-2 51 -----
+\section{Change of base field for algebraic preschemes}
+\label{section:IV.4}
+----- English, ega4-3.source_aligned_r1.tex, page IV-2 51 -----
+\oldpage[IV-2]{51}
+If the $A$-module $N=M\Big/\Big(\sum_{i=1}^k x_iM\Big)$
+is integral \sref{IV.3.2.4}, then $M$ is integral and the sequence $(x_i)_{1\leqslant i\leqslant k}$ is $M$-regular.
+\end{corollary}
+
+\begin{proof}
+Induction on $k$ immediately reduces us to the case $k=1$; write $x$ for $x_1$.
+The hypothesis that $x$ forms part of a system of parameters for $M$ implies $\dim(N)=\dim(M)\setmin 1$
+by \sref[0]{0.16.3.7}.
+Put $n=\dim(N)$.
+There is therefore a minimal element $\mathfrak p$ of $\operatorname{Supp}(M)$ such that $\dim(M/\mathfrak pM)=n+1$
+by \sref[0]{0.16.3.4}; for every integer $j>0$ one also has $\dim(M/\mathfrak p^jM)=n+1$
+by \sref[0]{0.16.3.5}.
+Moreover, $x$ forms part of a system of parameters for $M/\mathfrak p^jM$ \sref[0]{0.16.3.5}.
+Set
+\[
+M'=M/\mathfrak p^jM,
+\qquad
+N'=M'/xM';
+\]
+then $\dim(N')=n$.
+
+There is an evident surjective homomorphism $v:N\to N'$.
+We claim that it is bijective.
+Indeed, if $P=\operatorname{Ker}(v)$, then $\operatorname{Ass}(P)\subset\operatorname{Ass}(N)$.
+Since $N$ is integral, if $P\neq 0$, then $\operatorname{Ass}(P)$ and $\operatorname{Ass}(N)$ would both consist of the unique point $\mathfrak q$ of $\operatorname{Ass}(N)=\operatorname{Supp}(N)$.
+But $\dim(N')=\dim(N)$ implies $N'_{\mathfrak q}\neq 0$, and $\operatorname{length}(N_{\mathfrak q})=1$ implies $\operatorname{length}(N'_{\mathfrak q})=1$, since $N_{\mathfrak q}\to N'_{\mathfrak q}$ is surjective.
+Thus $P_{\mathfrak q}=0$, a contradiction.
+Hence $v$ is bijective.
+
+It follows that $N'$, being isomorphic to $N$, is integral.
+Moreover, the support of $N'$, which is the intersection of $\operatorname{Supp}(M')$ with $V(x)$, cannot contain $\operatorname{Supp}(M')$, and the latter is irreducible by construction.
+Since $M'/xM'$ is integral, and hence reduced, \sref{IV.3.4.6} shows that $x$ is $M'$-regular.
+Consequently the kernel of multiplication by $x$ on $M$ is contained in $\mathfrak p^jM\subset\mathfrak m^jM$
+for every integer $j$, and this kernel is therefore zero by \sref[0]{0.7.3.5}.
+Thus $x$ is $M$-regular.
+Applying \sref{IV.3.4.5}, we conclude that $M$ is integral.
+\end{proof}
+
+\begin{remark}[3.4.8]
+\phantomsection
+\label{IV.3.4.8}
+The analogue of \sref{IV.3.4.7} obtained by replacing ``integral'' by ``reduced'' need not be true.
+For example, let $C=K[X,Y,Z]$ be the polynomial ring over a field $K$, let
+\[
+B=C/\mathfrak p\mathfrak q,
+\qquad
+\mathfrak p=CZ,
+\qquad
+\mathfrak q=CX^2+CY,
+\]
+and let $A$ be the local ring of $B$ corresponding to the maximal ideal that is the image of $CX+CY+CZ$ in $B$.
+If $x,z$ are the canonical images of $X,Z$ in $A$, then $xz\neq 0$ but $x^2z^2=0$.
+On the other hand, $A/xA$ is isomorphic to $K[Y,Z]/(YZ)$, so $\dim(A/xA)=1$ whereas $\dim(A)=2$.
+Thus $x$ belongs to a system of parameters of $A$ \sref[0]{0.16.3.4}, and $A/xA$ is reduced, but $A$ is not.
+\end{remark}
+
+\begin{proposition}[3.4.9]
+\phantomsection
+\label{IV.3.4.9}
+Let $A$ be a Noetherian ring, $M$ an $A$-module of finite type, and $f\in A$ an $M$-regular element such that $M/fM$ has no embedded associated prime ideals.
+If $\mathfrak p_i$ $(1\leqslant i\leqslant m)$ are the prime ideals associated to $M/fM$, then, for every integer $n>0$, $f^nM$ is the intersection of the inverse images of the $f^nM_{\mathfrak p_i}$ under the canonical maps $M\to M_{\mathfrak p_i}$ $(1\leqslant i\leqslant m)$.
+\end{proposition}
+
+\begin{proof}
+It suffices to prove that the $\mathfrak p_i$ are also the prime ideals associated to $M/f^nM$, for then the $\mathfrak p_i$-saturations of $f^nM$ are the components of the necessarily unique reduced primary decomposition of $f^nM$ in $M$.
+Now, we have
+\[
+\operatorname{Ass}(f^{n-1}M/f^nM)
+\subset
+\operatorname{Ass}(M/f^nM)
+\subset
+\operatorname{Ass}(M/f^{n-1}M)
+\cup
+\operatorname{Ass}(f^{n-1}M/f^nM)
+\]
+by \sref{IV.3.1.7}.
+Since $f$ is $M$-regular, $f^{n-1}M/f^nM$ is isomorphic to $M/fM$, and the result follows by induction on $n$.
+\end{proof}
+----- French corrections on page IV-2 50 -----
+[id 12252]
+OLD: une
+\emph{seule}
+NEW: \emph{une
+seule}
+FRENCH CONTEXT (corrected):  $t_y$
+soit $\mathcal F_y$-régulier et que $\mathcal F/t\mathcal F$ soit intègre au
+point $y$ \textup{(3.2.4)}. Alors $\mathcal F$ est intègre au point $y$.
+\end{proposition}
+
+\begin{proof}
+Compte tenu de (3.4.4), il suffit de prouver que $y$ est contenu dans \emph{une
+seule} composante irréductible de $\operatorname{Supp}(\mathcal F)$, et
+que si $s$ est le point générique de cette composante, on a
+$\operatorname{long}(\mathcal F_s)=1$. Or, par hypothèse, $y$ n'appartient
+qu'à une seule composante irréductible de
+$\operatorname{Su
+
+[id 12256]
+OLD: $\mathfrak p_i$,
+et que
+NEW: $\mathfrak p_i$
+et que
+FRENCH CONTEXT (corrected): thcal O_x$~:
+
+\begin{lemma}[3.4.6.1]
+\label{IV.2.3.4.6.1-fr}
+Soient $A$ un anneau noethérien, $M$ un $A$-module de type fini,
+$\mathfrak p_i$ les éléments minimaux de $\operatorname{Supp}(M)$, $t$ un
+élément de $A$. On suppose que $t$ n'appartient à aucun des $\mathfrak p_i$
+et que $M/tM$ est un $A$-module réduit \textup{(3.2.2)}. Alors $t$ est $M$-régulier.
+\end{lemma}
+
+\begin{proof}
+Tout idéal premier $\mathfrak p\in\operatorname{Supp}(M)$ contient un des
+$\mathfrak p_i$~; comme $t$ n'appartient à aucun des $\mathfrak p_i$,
+l'homothét
+
+[id 12259]
+OLD: l'homomorphisme
+\[
+u_{\mathfrak p}:(M/tM)_{\mathfrak p}\longrightarrow(P/tP)_{\mathfrak p}
+\]
+est bijectif
+NEW: l'homomorphisme
+$u_{\mathfrak p}:(M/tM)_{\mathfrak p}\longrightarrow(P/tP)_{\mathfrak p}$
+est bijectif
+FRENCH CONTEXT (corrected): est de type fini, il est annulé par une puissance de $t$, et il
+suffit donc de montrer que $N/tN=0$. Comme $N/tN$ est un sous-module de
+$M/tM$, il suffit de prouver que $(N/tN)_{\mathfrak p}=0$ pour tout
+$\mathfrak p\in\operatorname{Ass}(M/tM)$, ou encore que l'homomorphisme
+$u_{\mathfrak p}:(M/tM)_{\mathfrak p}\longrightarrow(P/tP)_{\mathfrak p}$
+est bijectif pour tout $\mathfrak p\in\operatorname{Ass}(M/tM)$. Or on a
+$(P/tP)_{\mathfrak p}\neq0$~; en effet, comme
+$\mathfrak p\in\operatorname{Supp}(M/tM)
+=\operatorname{Supp}(M)\cap V(t)$ $(\mathbf{0}_{\mathrm I},1.7.5)$, l'image de $t$ dans
+$A_{\mathfrak p}$ est co
+
+=================== PAGE IV-2 51 ===================
+----- (English page IV-2 50: shown above in this file) -----
+----- (English page IV-2 51: shown above in this file) -----
+----- English, components/01_section41_dimension_of_algebraic_preschemes.tex, page IV-2 52 -----
+\oldpage[IV-2]{52}
+
+\subsection{Dimension of algebraic preschemes}
+\label{subsection:IV.4.1}
+
+We shall develop in \S~5 the general theory of the dimension of preschemes.
+The theory of the dimension of algebraic preschemes, however, can be developed more elementarily and also has many special features; we therefore give here a rapid account independent of the general theory.
+
+If $K$ is a field and $L$ an extension of $K$, we write $\operatorname{tr.deg}_K L$ for the transcendence degree of $L$ over $K$.
+
+\begin{definition}[4.1.1]
+\phantomsection
+\label{IV.4.1.1}
+Let $k$ be a field and $X$ a prescheme locally of finite type over $k$.
+The dimension of $X$ is the number
+\begin{equation}
+\dim(X)=\sup_x\operatorname{tr.deg}_k\kappa(x),
+\tag{4.1.1.1}
+\label{IV.4.1.1.1}
+\end{equation}
+where $x$ runs through the set of maximal points of $X$.
+\end{definition}
+
+We shall see in \sref{IV.5.2.2} that Definition \sref{IV.4.1.1} depends only apparently on the base field $k$ over which $X$ is locally of finite type, and that the number $\dim(X)$ so defined agrees with the dimension of the underlying space of $X$ \sref[0]{0.14.1.2}.
+Evidently,
+\[
+\dim(X)=\dim(X_{\mathrm{red}}).
+\]
+
+Each $\kappa(x)$ is an extension of finite type of $k$ \sref[I]{I.6.3.3}, hence has finite transcendence degree over $k$.
+If $X$ is of finite type over $k$ and nonempty, it is Noetherian \sref[I]{I.6.3.7}, hence has only finitely many irreducible components; consequently $\dim(X)$ is finite and nonnegative.
+Definition \sref{IV.4.1.1} gives
+\[
+\dim(\emptyset)=\setmin\infty.
+\]
+
+If $(X_\alpha)$ denotes the family of reduced closed sub-preschemes of $X$ whose underlying spaces are the irreducible components of $X$ \sref[I]{I.5.2.1}, then clearly
+\begin{equation}
+\dim(X)=\sup_\alpha\dim(X_\alpha).
+\tag{4.1.1.2}
+\label{IV.4.1.1.2}
+\end{equation}
+The calculation of the dimension is thus reduced to the case of integral preschemes locally of finite type over $k$.
+Finally,
+\begin{equation}
+\dim(X)=\dim(U)
+\tag{4.1.1.3}
+\label{IV.4.1.1.3}
+\end{equation}
+for every induced sub-prescheme on an everywhere dense open subset $U$ of $X$.
+The notion of dimension is thereby reduced to the case of an affine scheme of finite type over $k$.
+
+\begin{theorem}[4.1.2]
+\phantomsection
+\label{IV.4.1.2}
+Let $X$ and $Y$ be two preschemes locally of finite type over a field $k$, and let $f:X\to Y$ be a $k$-morphism.
+----- French corrections on page IV-2 51 -----
+[id 12263]
+OLD: $(0,16.3.6)$
+NEW: $(\mathbf{0},16.3.6)$
+FRENCH CONTEXT (corrected): 4.7-fr}
+Soient $A$ un anneau local noethérien, $\mathfrak m$ son idéal maximal, $M$ un
+$A$-module de type fini, $(x_i)_{1\leqslant i\leqslant k}$ une famille
+d'éléments de $\mathfrak m$ formant une partie d'un système de
+\oldpage[IV-2]{51}
+paramètres pour $M$ $(\mathbf{0},16.3.6)$. Si le $A$-module
+$N=M/(\sum_{i=1}^k x_iM)$
+est intègre \textup{(3.2.4)}, alors $M$ est intègre et la suite
+$(x_i)_{1\leqslant i\leqslant k}$ est $M$-régulière.
+\end{corollary}
+
+\begin{proof}
+Par récurrence sur $k$, on est aussitôt ramené au cas $k=1$~; nous 
+
+[id 12264]
+OLD: Si le $A$-module
+\[
+N=M\Big/\Big(\sum_{i=1}^k x_iM\Big)
+\]
+est intègre
+NEW: Si le $A$-module
+$N=M/(\sum_{i=1}^k x_iM)$
+est intègre
+FRENCH CONTEXT (corrected): nneau local noethérien, $\mathfrak m$ son idéal maximal, $M$ un
+$A$-module de type fini, $(x_i)_{1\leqslant i\leqslant k}$ une famille
+d'éléments de $\mathfrak m$ formant une partie d'un système de
+\oldpage[IV-2]{51}
+paramètres pour $M$ $(\mathbf{0},16.3.6)$. Si le $A$-module
+$N=M/(\sum_{i=1}^k x_iM)$
+est intègre \textup{(3.2.4)}, alors $M$ est intègre et la suite
+$(x_i)_{1\leqslant i\leqslant k}$ est $M$-régulière.
+\end{corollary}
+
+\begin{proof}
+Par récurrence sur $k$, on est aussitôt ramené au cas $k=1$~; nous écrirons
+$x$ au lieu de $x_1$~; l'hypothèse que $x$ fait
+
+[id 12267]
+OLD: $(0,16.3.7)$
+NEW: $(\mathbf{0},16.3.7)$
+FRENCH CONTEXT (corrected): }$ est $M$-régulière.
+\end{corollary}
+
+\begin{proof}
+Par récurrence sur $k$, on est aussitôt ramené au cas $k=1$~; nous écrirons
+$x$ au lieu de $x_1$~; l'hypothèse que $x$ fait partie d'un système de
+paramètres pour $M$ entraîne que
+$\dim(N)=\dim(M)\setmin 1$ $(\mathbf{0},16.3.7)$. Posons $n=\dim(N)$~; il y a donc un élément
+minimal $\mathfrak p$ de $\operatorname{Supp}(M)$ tel que
+$\dim(M/\mathfrak pM)=n+1$ $(\mathbf{0},16.3.4)$, et pour tout entier $j>0$ on a alors
+aussi $\dim(M/\mathfrak p^jM)=n+1$ $(\mathbf{0},16.3.5)$~; en outre $
+
+[id 12268]
+OLD: $(0,16.3.4)$, et pour
+NEW: $(\mathbf{0},16.3.4)$, et pour
+FRENCH CONTEXT (corrected): l'hypothèse que $x$ fait partie d'un système de
+paramètres pour $M$ entraîne que
+$\dim(N)=\dim(M)\setmin 1$ $(\mathbf{0},16.3.7)$. Posons $n=\dim(N)$~; il y a donc un élément
+minimal $\mathfrak p$ de $\operatorname{Supp}(M)$ tel que
+$\dim(M/\mathfrak pM)=n+1$ $(\mathbf{0},16.3.4)$, et pour tout entier $j>0$ on a alors
+aussi $\dim(M/\mathfrak p^jM)=n+1$ $(\mathbf{0},16.3.5)$~; en outre $x$ fait partie
+d'un système de paramètres pour $M/\mathfrak p^jM$ $(\mathbf{0},16.3.5)$, donc, si
+l'on pose $M'=M/\mathfrak p^jM$ et $N'=M'/xM'$, on a $\dim(N')=
+
+[id 12269]
+OLD: $(0,16.3.5)$~; en outre
+NEW: $(\mathbf{0},16.3.5)$~; en outre
+FRENCH CONTEXT (corrected): M)\setmin 1$ $(\mathbf{0},16.3.7)$. Posons $n=\dim(N)$~; il y a donc un élément
+minimal $\mathfrak p$ de $\operatorname{Supp}(M)$ tel que
+$\dim(M/\mathfrak pM)=n+1$ $(\mathbf{0},16.3.4)$, et pour tout entier $j>0$ on a alors
+aussi $\dim(M/\mathfrak p^jM)=n+1$ $(\mathbf{0},16.3.5)$~; en outre $x$ fait partie
+d'un système de paramètres pour $M/\mathfrak p^jM$ $(\mathbf{0},16.3.5)$, donc, si
+l'on pose $M'=M/\mathfrak p^jM$ et $N'=M'/xM'$, on a $\dim(N')=n$. Il est
+clair que l'on a un homomorphisme surjectif $v:N\to N'$~; montrons que $v$ est
+\emph{b
+
+[id 12270]
+OLD: $(0,16.3.5)$, donc
+NEW: $(\mathbf{0},16.3.5)$, donc
+FRENCH CONTEXT (corrected): $ de $\operatorname{Supp}(M)$ tel que
+$\dim(M/\mathfrak pM)=n+1$ $(\mathbf{0},16.3.4)$, et pour tout entier $j>0$ on a alors
+aussi $\dim(M/\mathfrak p^jM)=n+1$ $(\mathbf{0},16.3.5)$~; en outre $x$ fait partie
+d'un système de paramètres pour $M/\mathfrak p^jM$ $(\mathbf{0},16.3.5)$, donc, si
+l'on pose $M'=M/\mathfrak p^jM$ et $N'=M'/xM'$, on a $\dim(N')=n$. Il est
+clair que l'on a un homomorphisme surjectif $v:N\to N'$~; montrons que $v$ est
+\emph{bijectif}. En effet, si $P=\operatorname{Ker}(v)$, on a
+$\operatorname{Ass}(P)\subset\operatorna
+
+[id 12271]
+OLD: est
+bijectif.
+NEW: est
+\emph{bijectif}.
+FRENCH CONTEXT (corrected): ~; en outre $x$ fait partie
+d'un système de paramètres pour $M/\mathfrak p^jM$ $(\mathbf{0},16.3.5)$, donc, si
+l'on pose $M'=M/\mathfrak p^jM$ et $N'=M'/xM'$, on a $\dim(N')=n$. Il est
+clair que l'on a un homomorphisme surjectif $v:N\to N'$~; montrons que $v$ est
+\emph{bijectif}. En effet, si $P=\operatorname{Ker}(v)$, on a
+$\operatorname{Ass}(P)\subset\operatorname{Ass}(N)$ et puisque $N$ est
+intègre, l'hypothèse $P\neq0$ entraînerait que $\operatorname{Ass}(P)$ et
+$\operatorname{Ass}(N)$ seraient tous deux réduits à l'unique point
+$
+
+[id 12272]
+OLD: l'intersection de $\operatorname{Supp}(M')$
+NEW: l'intersection de $\operatorname{Supp}(M)$
+FRENCH CONTEXT (corrected): '_{\mathfrak q})=1$ puisque
+$N_{\mathfrak q}\to N'_{\mathfrak q}$ est surjective. On aurait donc
+$P_{\mathfrak q}=0$, contrairement à l'hypothèse, d'où notre assertion.
+Mais alors $N'$, étant isomorphe à $N$, est intègre~; en outre, le support de
+$N'$ (égal à l'intersection de $\operatorname{Supp}(M)$ et de $V(x)$) ne
+peut contenir $\operatorname{Supp}(M')$, et ce dernier ensemble est
+irréductible par construction. L'hypothèse que $M'/xM'$ est intègre (donc
+réduit) entraîne alors que $x$ est $M'$-régulier en vertu de (3.4.6). On en
+conclut que le noyau de 
+
+[id 12273]
+OLD: $z\mapsto xz$
+NEW: $z\to xz$
+FRENCH CONTEXT (corrected): ) ne
+peut contenir $\operatorname{Supp}(M')$, et ce dernier ensemble est
+irréductible par construction. L'hypothèse que $M'/xM'$ est intègre (donc
+réduit) entraîne alors que $x$ est $M'$-régulier en vertu de (3.4.6). On en
+conclut que le noyau de l'homothétie $z\to xz$ dans $M$ est contenu dans
+$\mathfrak p^jM\subset\mathfrak m^jM$ pour tout entier $j$, et ce noyau est
+donc réduit à $0$ $(\mathbf{0}_{\mathrm I},7.3.5)$, ce qui prouve que $x$ est
+$M$-régulier. On peut alors appliquer (3.4.5), ce qui prouve que $M$ est
+intègr
+
+[id 12275]
+OLD: $(0,16.3.4)$, $A/xA$
+NEW: $(\mathbf{0},16.3.4)$, $A/xA$
+FRENCH CONTEXT (corrected):  $x$, $z$ sont les images canoniques
+de $X$, $Z$ dans $A$, il est clair que $xz\neq0$ mais $x^2z^2=0$~; d'autre
+part, comme $A/xA$ est isomorphe à $K[Y,Z]/(YZ)$, on a
+$\dim(A/xA)=1$ tandis que $\dim(A)=2$, donc $x$ appartient à un système de
+paramètres de $A$ $(\mathbf{0},16.3.4)$, $A/xA$ est réduit, mais $A$ ne l'est pas.
+\end{remark}
+
+\begin{proposition}[3.4.9]
+\label{IV.2.3.4.9-fr}
+Soient $A$ un anneau noethérien, $M$ un $A$-module de type fini, $f$ un
+élément $M$-régulier de $A$ tel que $M/fM$ n'ait pas d'idéaux premiers
+associés immergés.
+
+=================== PAGE IV-2 52 ===================
+----- (English page IV-2 51: shown above in this file) -----
+----- (English page IV-2 52: shown above in this file) -----
+----- English, components/01_section41_dimension_of_algebraic_preschemes.tex, page IV-2 53 -----
+\oldpage[IV-2]{53}
+
+\begin{enumerate}[(i)]
+\item If $f$ is quasi-compact and dominant, then
+\[
+\dim(Y)\leq\dim(X).
+\]
+\item If $f$ is quasi-finite, then
+\[
+\dim(X)\leq\dim(Y).
+\]
+\item Suppose that $X$ is of finite type over $k$.
+For $\dim(X)\geq n$ (respectively $\dim(X)\leq n$, respectively $\dim(X)=n$), it is necessary and sufficient that there exist an open subset $U$ dense in $X$ and a $k$-morphism
+\[
+g:U\longrightarrow\mathbf{V}_k^n
+=\Spec\bigl(k[T_1,\ldots,T_n]\bigr)
+\]
+that is surjective (respectively finite, respectively finite and surjective).
+If $X$ is affine, one may take $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\emph{(i)} Let $y$ be a maximal point of $Y$.
+The fibre $f^{-1}(y)$ contains a maximal point $x$ of $X$ \sref{IV.1.1.5}; hence $\kappa(x)$ is an extension of $\kappa(y)$, and therefore
+\[
+\operatorname{tr.deg}_k\kappa(y)
+\leq
+\operatorname{tr.deg}_k\kappa(x)
+\leq
+\dim(X).
+\]
+This proves (i).
+
+\emph{(ii)} If $x$ is a maximal point of $X$, then $\kappa(x)$ is a finite extension of $\kappa(f(x))$ \sref[II]{II.6.2.2}, and hence has the same transcendence degree over $k$.
+On considering the reduced closed sub-prescheme of $Y$ whose underlying space is $\overline{\{f(x)\}}$, we are reduced to the following corollary.
+\end{proof}
+
+\begin{corollary}[4.1.2.1]
+\phantomsection
+\label{IV.4.1.2.1}
+Let $Y$ be a $k$-prescheme locally of finite type.
+For every sub-prescheme $Z$ of $Y$, one has
+\[
+\dim(Z)\leq\dim(Y).
+\]
+Suppose in addition that all the irreducible components of $Y$ have the same dimension.
+Then $Z$ is rare in $Y$ if and only if $\dim(Z)<\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+Let $z$ be a maximal point of $Z$.
+By considering one of the reduced closed sub-preschemes of $Y$ whose underlying space is an irreducible component of $Y$ containing $z$, we reduce to the case in which $Y$ is integral, with generic point $y$.
+Then, by taking in $Y$ an affine open neighbourhood of $z$, we reduce to the case in which $Y$ is affine and of finite type over $k$.
+Write
+\[
+Y=\Spec(A),
+\qquad
+Z=\Spec(A/\mathfrak a),
+\]
+where $A$ is an integral ring and $\mathfrak a$ is an ideal of $A$ distinct from $A$.
+
+By the normalization lemma (Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~3, no.~1, th.~1) there exists a finite sequence $(x_i)_{1\leq i\leq n}$ of elements of $A$, algebraically independent over $k$, such that $A$ is integral over $B=k[x_1,\ldots,x_n]$
+and $\mathfrak a\cap B$ is generated by a subfamily $(x_i)_{1\leq i\leq p}$, possibly empty, of $(x_i)_{1\leq i\leq n}$.
+Let $g:Y\longrightarrow\Spec(B)=\mathbf{V}_k^n$
+be the finite dominant morphism corresponding to the canonical injection $B\to A$.
+Since
+\[
+C=B/(\mathfrak a\cap B)
+\cong k[x_{p+1},\ldots,x_n],
+\]
+$g$ induces on $Z$ a finite dominant morphism $Z\longrightarrow\mathbf{V}_k^{n-p}$.
+Thus
+\[
+\operatorname{tr.deg}_k\kappa(y)=n,
+\qquad
+\operatorname{tr.deg}_k\kappa(z)=n-p,
+\]
+because $\kappa(y)$ and $\kappa(z)$ are finite extensions of $\kappa(g(y))$ and $\kappa(g(z))$, respectively.
+This proves the first assertion.
+
+If $p=0$, then necessarily $z=y$, since $y$ is the only point of $Y$ whose image under $g$ is the generic point of $\mathbf{V}_k^n$; in this case $Z$ contains a nonempty open subset of $Y$.
+If $p>0$, then $z\neq y$, and $\overline{\{z\}}$ is rare in $\overline{\{y\}}$.
+This completes the proof.
+\end{proof}
+
+\begin{proof}[Proof of \sref{IV.4.1.2}, continued]
+The corollary proves (ii).
+
+\emph{(iii)} The sufficiency of the stated conditions follows immediately from (i), (ii), and \sref{IV.1.5.4}(v).
+To prove necessity, choose a dense open subset $U$ of $X$ that is the union of pairwise disjoint irreducible affine open subsets $U_i$ $(1\leq i\leq m)$, each containing a maximal point of $X$ \sref[0]{0.2.1.6}.
+We may further suppose that $X$ is reduced; if $X$ is affine, we may of course take $U=X$.
+----- French corrections on page IV-2 52 -----
+[id 12276]
+OLD: \subsection{Dimension des préschémas algébriques}
+NEW: \subsection{Dimension des préschémas algébriques.}
+FRENCH CONTEXT (corrected): 
+par (3.1.7), et comme $f$ est $M$-régulier,
+$f^{n-1}M/f^nM$ est isomorphe à $M/fM$~; il suffit alors de raisonner par
+récurrence sur $n$.
+\end{proof}
+\oldpage[IV-2]{52}
+
+\section{Changement du corps de base dans les préschémas algébriques}
+\label{IV.2.4-fr}
+
+\subsection{Dimension des préschémas algébriques.}
+\label{subsection:IV.2.4.1-fr}
+
+Nous développerons au \S~5 la théorie générale de la dimension des préschémas~;
+mais la théorie de la dimension des préschémas \emph{algébriques} peut se
+développer de façon plus élémentaire, et comme elle présente en outre de
+
+
+[id 12279]
+OLD: \sup_x\operatorname{deg.tr.}
+NEW: \sup_x\operatorname{deg.tr}
+FRENCH CONTEXT (corrected): degré de transcendance} de $L$ sur $K$.
+
+\begin{definition}[4.1.1]
+\label{IV.2.4.1.1-fr}
+Soient $k$ un corps, $X$ un préschéma localement de type fini sur $k$. On
+appelle dimension de $X$ le nombre
+\begin{equation}
+\tag{4.1.1.1}
+\label{IV.2.4.1.1.1-fr}
+\dim X=\sup_x\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\end{equation}
+où $x$ parcourt l'ensemble des points maximaux de $X$.
+\end{definition}
+
+Nous verrons au \S~5 (5.2.2) que la définition (4.1.1) ne dépend qu'en
+apparence du corps de base $k$ sur lequel $X$ est localement de type fini, et
+qu
+
+[id 12280]
+OLD: _k k(x)
+\end{equation}
+NEW: _k \boldsymbol{k}(x)
+\end{equation}
+FRENCH CONTEXT (corrected): $L$ sur $K$.
+
+\begin{definition}[4.1.1]
+\label{IV.2.4.1.1-fr}
+Soient $k$ un corps, $X$ un préschéma localement de type fini sur $k$. On
+appelle dimension de $X$ le nombre
+\begin{equation}
+\tag{4.1.1.1}
+\label{IV.2.4.1.1.1-fr}
+\dim X=\sup_x\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\end{equation}
+où $x$ parcourt l'ensemble des points maximaux de $X$.
+\end{definition}
+
+Nous verrons au \S~5 (5.2.2) que la définition (4.1.1) ne dépend qu'en
+apparence du corps de base $k$ sur lequel $X$ est localement de type fini, et
+que le nombre $\dim(X)$ ainsi défini 
+
+[id 12281]
+OLD: $(0,14.1.2)$
+NEW: $(\mathbf{0},14.1.2)$
+FRENCH CONTEXT (corrected): us verrons au \S~5 (5.2.2) que la définition (4.1.1) ne dépend qu'en
+apparence du corps de base $k$ sur lequel $X$ est localement de type fini, et
+que le nombre $\dim(X)$ ainsi défini coïncide avec la dimension de
+l'\emph{espace sous-jacent} $X$ (définie dans $(\mathbf{0},14.1.2)$). On a évidemment
+$\dim X=\dim X_{\mathrm{red}}$.
+
+On notera que chaque $\boldsymbol{k}(x)$ est une extension \emph{de type fini} de $k$
+(\textbf{I}, 6.3.3) donc a un degré de transcendance fini sur $k$. Si $X$ est de type
+fini sur $k$ et non vide, il est noe
+
+[id 12282]
+OLD: chaque $k(x)$
+NEW: chaque $\boldsymbol{k}(x)$
+FRENCH CONTEXT (corrected):  de base $k$ sur lequel $X$ est localement de type fini, et
+que le nombre $\dim(X)$ ainsi défini coïncide avec la dimension de
+l'\emph{espace sous-jacent} $X$ (définie dans $(\mathbf{0},14.1.2)$). On a évidemment
+$\dim X=\dim X_{\mathrm{red}}$.
+
+On notera que chaque $\boldsymbol{k}(x)$ est une extension \emph{de type fini} de $k$
+(\textbf{I}, 6.3.3) donc a un degré de transcendance fini sur $k$. Si $X$ est de type
+fini sur $k$ et non vide, il est noethérien (\textbf{I}, 6.3.7), donc n'a qu'un nombre
+fini de composantes irréductibles, et par
+
+=================== PAGE IV-2 53 ===================
+----- (English page IV-2 52: shown above in this file) -----
+----- (English page IV-2 53: shown above in this file) -----
+----- English, components/01_section41_dimension_of_algebraic_preschemes.tex, page IV-2 54 -----
+\oldpage[IV-2]{54}
+
+The same argument as in \sref{IV.4.1.2.1} shows that, if $\dim(U_i)=n_i$, there exists a $k$-morphism $g_i:U_i\longrightarrow\mathbf{V}_k^{n_i}$
+that is finite and dominant, hence surjective \sref[II]{II.6.1.10}.
+Set $n=\dim(X)=\sup_i n_i$.
+For every $n_i$ there is a morphism $h_i:\mathbf{V}_k^{n_i}\longrightarrow\mathbf{V}_k^n$
+which is the closed immersion corresponding to the canonical homomorphism $k[T_1,\ldots,T_n]\longrightarrow k[T_1,\ldots,T_{n_i}]$
+and is the identity when $n_i=n$.
+Since $U$ is the disjoint union of the $U_i$, define $g$ on each $U_i$ to be $h_i\circ g_i$.
+Then $g$ is finite and surjective.
+
+When $n'\geq n$, composing $g$ with the canonical closed immersion $\mathbf{V}_k^n\longrightarrow\mathbf{V}_k^{n'}$
+gives a finite morphism $U\to\mathbf{V}_k^{n'}$.
+When $n'\leq n$, compose $g$ with the canonical morphism $p:\mathbf{V}_k^n\longrightarrow\mathbf{V}_k^{n'}$
+corresponding to the canonical injection $k[T_1,\ldots,T_{n'}]\longrightarrow k[T_1,\ldots,T_n]$.
+The morphism $p$ is faithfully flat, hence surjective.
+\end{proof}
+
+\begin{remark}[4.1.3]
+\phantomsection
+\label{IV.4.1.3}
+Corollary \sref{IV.4.1.2.1} shows that in formula \sref{IV.4.1.1.1} one may let $x$ run through the set of all points of $X$.
+\end{remark}
+
+\begin{corollary}[4.1.4]
+\phantomsection
+\label{IV.4.1.4}
+Let $X$ be a prescheme locally of finite type over a field $k$, and let $K$ be an extension of $k$.
+Then $\dim(X\otimes_k K)=\dim(X)$.
+\end{corollary}
+
+\begin{proof}
+It is enough to consider the case in which $X$ is of finite type over $k$.
+The morphism $u:X\otimes_k K\longrightarrow X$
+is faithfully flat \sref{IV.2.2.13}(i).
+Thus, if $U$ is an everywhere dense open subset of $X$, then $u^{-1}(U)=U\otimes_k K$
+is dense in $X\otimes_k K$ \sref{IV.2.3.10}.
+If $g:U\longrightarrow\mathbf{V}_k^n$
+is finite and surjective, then so is $g_{(K)}:U\otimes_k K\longrightarrow\mathbf{V}_K^n$
+\sref[I]{I.3.5.2} and \sref[II]{II.6.1.5}.
+The corollary follows.
+\end{proof}
+
+\begin{corollary}[4.1.5]
+\phantomsection
+\label{IV.4.1.5}
+Let $X$ and $Y$ be two preschemes locally of finite type over a field $k$.
+Then $\dim(X\times_k Y)=\dim(X)+\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+It is enough to prove the following.
+Let $U$ and $V$ be affine neighbourhoods of points $x\in X$ and $y\in Y$ such that
+\[
+\operatorname{tr.deg}_k\kappa(x)=m=\dim(U),
+\qquad
+\operatorname{tr.deg}_k\kappa(y)=n=\dim(V).
+\]
+Then $\dim(U\times_k V)=m+n$.
+Equivalently, by \sref{IV.4.1.2}, we may suppose that there exist finite surjective $k$-morphisms
+\[
+f:X\longrightarrow\mathbf{V}_k^m,
+\qquad
+g:Y\longrightarrow\mathbf{V}_k^n.
+\]
+The product morphism $f\times g:X\times_k Y\longrightarrow\mathbf{V}_k^{m+n}$
+is finite and surjective \sref[I]{I.3.5.2} and \sref[II]{II.6.1.5}, and the result follows.
+\end{proof}
+----- English, components/02_section42_associated_prime_cycles.tex, page IV-2 54 -----
+\subsection{Associated prime cycles on algebraic preschemes}
+\label{subsection:IV.4.2}
+
+\begin{proposition}[4.2.1]
+\phantomsection
+\label{IV.4.2.1}
+Let $K$ and $L$ be two extensions of a field $k$ such that
+$K\otimes_k L$ is Noetherian.
+Then the prime ideals associated with $K\otimes_k L$ are minimal, and if
+$E$ is the residue field of the local ring at such an ideal, then
+\begin{equation}
+\operatorname{tr.deg}_K E=\operatorname{tr.deg}_k L,
+\qquad
+\operatorname{tr.deg}_L E=\operatorname{tr.deg}_k K,
+\tag{4.2.1.1}
+\label{IV.4.2.1.1}
+\end{equation}
+whence
+\begin{equation}
+\operatorname{tr.deg}_k E
+=\operatorname{tr.deg}_k K+\operatorname{tr.deg}_k L.
+\tag{4.2.1.2}
+\label{IV.4.2.1.2}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+It is known that $K$ is an algebraic extension of a purely transcendental
+extension
+\[
+K'=k(\mathbf t),
+\qquad
+\mathbf t=(t_\alpha)_{\alpha\in I},
+\]
+where $(t_\alpha)_{\alpha\in I}$ is a family of indeterminates.
+The ring $k[\mathbf t]\otimes_k L=L[\mathbf t]$
+is integral, and hence so is $K'\otimes_k L$, which is a ring of fractions
+of it; the field of fractions of $K'\otimes_k L$ is $L(\mathbf t)$.
+There is a commutative diagram of canonical homomorphisms
+----- French corrections on page IV-2 53 -----
+[id 12289]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): .1.2]
+\label{IV.2.4.1.2-fr}
+Soient $X$, $Y$ deux préschémas localement de type fini sur un corps $k$,
+$f:X\to Y$ un $k$-morphisme.
+
+\oldpage[IV-2]{53}
+
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-compact et dominant, on a
+$\dim(Y)\leqslant\dim(X)$.
+\item[\textup{(ii)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leqslant\dim(Y)$.
+\item[\textup{(iii)}] Supposons que $X$ soit de type fini sur $k$. Pour que
+$\dim(X)\geqslant n$ \textup{(resp. $\dim(X)\leqslant n$, $\dim(X)=n$)}, il faut et il
+suffit qu'il existe un ouvert $U$ dense d
+
+[id 12290]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected): pe fini sur un corps $k$,
+$f:X\to Y$ un $k$-morphisme.
+
+\oldpage[IV-2]{53}
+
+\begin{enumerate}
+\item[\textup{(i)}] Si $f$ est quasi-compact et dominant, on a
+$\dim(Y)\leqslant\dim(X)$.
+\item[\textup{(ii)}] Si $f$ est quasi-fini, on a
+$\dim(X)\leqslant\dim(Y)$.
+\item[\textup{(iii)}] Supposons que $X$ soit de type fini sur $k$. Pour que
+$\dim(X)\geqslant n$ \textup{(resp. $\dim(X)\leqslant n$, $\dim(X)=n$)}, il faut et il
+suffit qu'il existe un ouvert $U$ dense dans $X$, et un $k$-morphisme
+$g:U\longrightarrow\mathbf V(k^n)$
+$(=\operatorn
+
+[id 12292]
+OLD: et un $k$-morphisme
+\[
+g:U\longrightarrow\mathbf V(k^n)
+=\operatorname{Spec}(k[T_1,\ldots,T_n]),
+\]
+que nous noterons aussi $\mathbf V_k^n$, qui soit surjectif
+NEW: et un $k$-morphisme
+$g:U\longrightarrow\mathbf V(k^n)$
+$(=\operatorname{Spec}(k[T_1,\ldots,T_n])$,
+que nous noterons aussi $\mathbf V_k^n)$ qui soit surjectif
+FRENCH CONTEXT (corrected): st quasi-fini, on a
+$\dim(X)\leqslant\dim(Y)$.
+\item[\textup{(iii)}] Supposons que $X$ soit de type fini sur $k$. Pour que
+$\dim(X)\geqslant n$ \textup{(resp. $\dim(X)\leqslant n$, $\dim(X)=n$)}, il faut et il
+suffit qu'il existe un ouvert $U$ dense dans $X$, et un $k$-morphisme
+$g:U\longrightarrow\mathbf V(k^n)$
+$(=\operatorname{Spec}(k[T_1,\ldots,T_n])$,
+que nous noterons aussi $\mathbf V_k^n)$ qui soit surjectif \textup{(resp.} fini,
+\textup{resp.} fini et surjectif\textup{)}. Si $X$ est un schéma affine, on peut prendre $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Soit $y$ un point maximal de $Y$~; on sait que $f^{-1}(y)$ contient un
+point maximal $x$ de 
+
+[id 12293]
+OLD: (resp. fini,
+resp. fini et surjectif).
+NEW: \textup{(resp.} fini,
+\textup{resp.} fini et surjectif\textup{)}.
+FRENCH CONTEXT (corrected): $\dim(X)\leqslant n$, $\dim(X)=n$)}, il faut et il
+suffit qu'il existe un ouvert $U$ dense dans $X$, et un $k$-morphisme
+$g:U\longrightarrow\mathbf V(k^n)$
+$(=\operatorname{Spec}(k[T_1,\ldots,T_n])$,
+que nous noterons aussi $\mathbf V_k^n)$ qui soit surjectif \textup{(resp.} fini,
+\textup{resp.} fini et surjectif\textup{)}. Si $X$ est un schéma affine, on peut prendre $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Soit $y$ un point maximal de $Y$~; on sait que $f^{-1}(y)$ contient un
+point maximal $x$ de $X$ (1.1.5), donc $\boldsymbol{k}(x)$ est une extension de $\bolds
+
+[id 12294]
+OLD: donc $k(x)$
+NEW: donc $\boldsymbol{k}(x)$
+FRENCH CONTEXT (corrected): p.} fini,
+\textup{resp.} fini et surjectif\textup{)}. Si $X$ est un schéma affine, on peut prendre $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Soit $y$ un point maximal de $Y$~; on sait que $f^{-1}(y)$ contient un
+point maximal $x$ de $X$ (1.1.5), donc $\boldsymbol{k}(x)$ est une extension de $\boldsymbol{k}(y)$,
+d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui démontre (i).
+
+(ii) Si $x$ est point maximal de $X$, $\boldsymbol{k}(x)$ est une
+
+[id 12295]
+OLD: extension de $k(y)$
+NEW: extension de $\boldsymbol{k}(y)$
+FRENCH CONTEXT (corrected): surjectif\textup{)}. Si $X$ est un schéma affine, on peut prendre $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Soit $y$ un point maximal de $Y$~; on sait que $f^{-1}(y)$ contient un
+point maximal $x$ de $X$ (1.1.5), donc $\boldsymbol{k}(x)$ est une extension de $\boldsymbol{k}(y)$,
+d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui démontre (i).
+
+(ii) Si $x$ est point maximal de $X$, $\boldsymbol{k}(x)$ est une extension finie de
+$\boldsymbol{k}(f(x))
+
+[id 12296]
+OLD: d'où l'inégalité
+\[
+\operatorname{deg.tr.}_k k(y)
+\leqslant\operatorname{deg.tr.}_k k(x)
+\leqslant\dim(X),
+\]
+ce qui
+NEW: d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui
+FRENCH CONTEXT (corrected):  schéma affine, on peut prendre $U=X$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) Soit $y$ un point maximal de $Y$~; on sait que $f^{-1}(y)$ contient un
+point maximal $x$ de $X$ (1.1.5), donc $\boldsymbol{k}(x)$ est une extension de $\boldsymbol{k}(y)$,
+d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui démontre (i).
+
+(ii) Si $x$ est point maximal de $X$, $\boldsymbol{k}(x)$ est une extension finie de
+$\boldsymbol{k}(f(x))$ (\textbf{II}, 6.2.2), donc a même degré de transcendance sur $k$. Si l'on
+considère le sous-préschéma fermé réduit de $Y$ ayant $\overli
+
+[id 12297]
+OLD: $k(x)$ est une extension finie
+NEW: $\boldsymbol{k}(x)$ est une extension finie
+FRENCH CONTEXT (corrected): ), donc $\boldsymbol{k}(x)$ est une extension de $\boldsymbol{k}(y)$,
+d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui démontre (i).
+
+(ii) Si $x$ est point maximal de $X$, $\boldsymbol{k}(x)$ est une extension finie de
+$\boldsymbol{k}(f(x))$ (\textbf{II}, 6.2.2), donc a même degré de transcendance sur $k$. Si l'on
+considère le sous-préschéma fermé réduit de $Y$ ayant $\overline{\{f(x)\}}$
+comme espace sous-jacent, on voit qu'on est ramené à démontrer le
+\end{proof}
+
+\beg
+
+[id 12298]
+OLD: $k(f(x))$
+NEW: $\boldsymbol{k}(f(x))$
+FRENCH CONTEXT (corrected): e $\boldsymbol{k}(y)$,
+d'où l'inégalité
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)
+\leqslant\operatorname{deg.tr}_k \boldsymbol{k}(x)
+\leqslant\dim(X)$,
+ce qui démontre (i).
+
+(ii) Si $x$ est point maximal de $X$, $\boldsymbol{k}(x)$ est une extension finie de
+$\boldsymbol{k}(f(x))$ (\textbf{II}, 6.2.2), donc a même degré de transcendance sur $k$. Si l'on
+considère le sous-préschéma fermé réduit de $Y$ ayant $\overline{\{f(x)\}}$
+comme espace sous-jacent, on voit qu'on est ramené à démontrer le
+\end{proof}
+
+\begin{corollary}[4.1.2.1]
+\la
+
+[id 12300]
+OLD: démontrer le corollaire
+suivant.
+NEW: démontrer le
+FRENCH CONTEXT (corrected): k}(x)$ est une extension finie de
+$\boldsymbol{k}(f(x))$ (\textbf{II}, 6.2.2), donc a même degré de transcendance sur $k$. Si l'on
+considère le sous-préschéma fermé réduit de $Y$ ayant $\overline{\{f(x)\}}$
+comme espace sous-jacent, on voit qu'on est ramené à démontrer le
+\end{proof}
+
+\begin{corollary}[4.1.2.1]
+\label{IV.2.4.1.2.1-fr}
+Soient $Y$ un $k$-préschéma localement de type fini~; pour tout sous-préschéma
+$Z$ de $Y$, on a $\dim(Z)\leqslant\dim(Y)$. Supposons en outre que les
+composantes irréductibles de $Y$ aient toutes
+
+[id 12302]
+OLD: donc
+$\operatorname{deg.tr.}
+NEW: donc
+$\operatorname{deg.tr}
+FRENCH CONTEXT (corrected): atorname{Spec}(B)=\mathbf V_k^n$ le morphisme fini dominant qui
+correspond à l'injection canonique $B\to A$~; comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de 
+
+[id 12303]
+OLD: _k k(y)=n
+NEW: _k \boldsymbol{k}(y)=n
+FRENCH CONTEXT (corrected): _k^n$ le morphisme fini dominant qui
+correspond à l'injection canonique $B\to A$~; comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, s
+
+[id 12304]
+OLD: et
+$\operatorname{deg.tr.}
+NEW: et
+$\operatorname{deg.tr}
+FRENCH CONTEXT (corrected): dominant qui
+correspond à l'injection canonique $B\to A$~; comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairemen
+
+[id 12305]
+OLD: _k k(z)
+NEW: _k \boldsymbol{k}(z)
+FRENCH CONTEXT (corrected):  l'injection canonique $B\to A$~; comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est
+
+[id 12306]
+OLD: =n-p$,
+NEW: =n\setmin p$,
+FRENCH CONTEXT (corrected): ue $B\to A$~; comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est le seul poin
+
+[id 12307]
+OLD: puisque $k(y)$
+NEW: puisque $\boldsymbol{k}(y)$
+FRENCH CONTEXT (corrected): comme
+$C=B/(\mathfrak a\cap B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est le seul point de $Y$ dont l'image par $g
+
+[id 12308]
+OLD: (resp. $k(z)$)
+NEW: (resp. $\boldsymbol{k}(z)$)
+FRENCH CONTEXT (corrected): B)$ est isomorphe à $k[x_{p+1},\ldots,x_n]$, $g$ induit
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est le seul point de $Y$ dont l'image par $g$ soit le point générique de
+
+[id 12309]
+OLD: $k(g(y))$
+NEW: $\boldsymbol{k}(g(y))$
+FRENCH CONTEXT (corrected): 
+sur $Z$ un morphisme fini dominant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est le seul point de $Y$ dont l'image par $g$ soit le point générique de
+$\mathbf V_k^n$~; dans ce cas, $Z$ contient donc 
+
+[id 12310]
+OLD: $k(g(z))$
+NEW: $\boldsymbol{k}(g(z))$
+FRENCH CONTEXT (corrected): inant $Z\to\mathbf V_k^{n-p}$~; on a donc
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(z)=n\setmin p$, puisque $\boldsymbol{k}(y)$ (resp. $\boldsymbol{k}(z)$) est une
+extension finie de $\boldsymbol{k}(g(y))$ (resp. $\boldsymbol{k}(g(z))$). Cela démontre la première
+assertion de (4.1.2.1). En outre, si $p=0$, on a nécessairement $z=y$, car $y$
+est le seul point de $Y$ dont l'image par $g$ soit le point générique de
+$\mathbf V_k^n$~; dans ce cas, $Z$ contient donc un ouvert non vide de $Y$. Si
+
+
+[id 12311]
+OLD: est donc rare dans
+NEW: est donc \emph{rare} dans
+FRENCH CONTEXT (corrected):  on a nécessairement $z=y$, car $y$
+est le seul point de $Y$ dont l'image par $g$ soit le point générique de
+$\mathbf V_k^n$~; dans ce cas, $Z$ contient donc un ouvert non vide de $Y$. Si
+au contraire $p>0$, on a nécessairement $z\neq y$ et
+$\overline{\{z\}}$ est donc \emph{rare} dans $\overline{\{y\}}$, ce qui achève de
+prouver (4.1.2.1).
+\end{proof}
+
+\begin{proof}
+(iii) Le fait que les conditions énoncées sont suffisantes résulte aussitôt de
+(i) et (ii) et de (1.5.4, (v)). Pour prouver qu'elles sont nécessaires, on peut
+considérer un ouv
+
+=================== PAGE IV-2 54 ===================
+----- (English page IV-2 53: shown above in this file) -----
+----- (English page IV-2 54: shown above in this file) -----
+----- English, components/02_section42_associated_prime_cycles.tex, page IV-2 55 -----
+\oldpage[IV-2]{55}
+
+\begin{equation}
+\xymatrix@C=3.5em@R=2.8em{
+K \ar[r] &
+K\otimes_k L \ar[r] &
+K\otimes_{K'}L(\mathbf t)
+\\
+K' \ar[u] \ar[r] &
+K'\otimes_k L \ar[u] \ar[r] &
+L(\mathbf t) \ar[u]
+\\
+k \ar[u] \ar[r] &
+L \ar[u] &
+}
+\tag{4.2.1.3}
+\label{IV.4.2.1.3}
+\end{equation}
+
+Since $K$ is faithfully flat over $K'$, $K\otimes_k L
+=K\otimes_{K'}(K'\otimes_k L)$
+is faithfully flat over $K'\otimes_k L$, and therefore
+$K'\otimes_k L$ is Noetherian
+\sref[0\textsubscript{\mdseries I}]{0.6.5.2}.
+Moreover, $K'\otimes_k L$ identifies with a subring of
+$K\otimes_k L$.
+The contraction to $K'\otimes_k L$ of a prime ideal $\mathfrak p$
+associated with $K\otimes_k L$ is the zero ideal, since no nonzero element
+of $K'\otimes_k L$ is a zero-divisor in $K\otimes_k L$
+\sref[0\textsubscript{\mdseries I}]{0.6.3.4} and
+Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~1, no.~1,
+cor.~3 to prop.~2.
+
+Since $K$ is algebraic over $K'$, the ring $K\otimes_k L$ is integral
+over $K'\otimes_k L$, and the prime ideals of $K\otimes_k L$ lying over
+the zero ideal of $K'\otimes_k L$ are necessarily pairwise incomparable
+(Bourbaki, \emph{Alg.\ comm.}, chap.~V, \S~2, no.~1,
+cor.~1 to prop.~1).
+This proves the first assertion
+(Bourbaki, \emph{Alg.\ comm.}, chap.~IV, \S~1, no.~3,
+cor.~1 to prop.~7).
+
+Furthermore, the residue field $E$ of $\mathfrak p$ is algebraic over the
+residue field of the zero ideal of $K'\otimes_k L$, namely
+$L(\mathbf t)$.
+Consequently
+\[
+\operatorname{tr.deg}_L E
+=\operatorname{tr.deg}_L L(\mathbf t)
+=\operatorname{Card}(I)
+=\operatorname{tr.deg}_k K.
+\]
+This gives the second equality in \sref{IV.4.2.1.1}; interchanging the
+roles of $K$ and $L$ gives the first, and
+\sref{IV.4.2.1.2} follows.
+\end{proof}
+
+\begin{corollary}[4.2.2]
+\phantomsection
+\label{IV.4.2.2}
+Under the hypotheses of \sref{IV.3.3.6}, if the preschemes
+$T_{x,y}$ are locally Noetherian, they have no immersed associated
+prime cycle.
+\end{corollary}
+
+\begin{corollary}[4.2.3]
+\phantomsection
+\label{IV.4.2.3}
+Under the hypotheses of \sref{IV.3.3.6}
+(respectively \sref{IV.3.3.7}), if the $T_{x,y}$ are locally Noetherian
+and if $\sh F$ and the $\sh G_s$ $(s\in S)$
+(respectively $\sh F$ and $\sh G$) have no immersed associated prime
+cycle, then neither does $\sh F\otimes_{\sh S}\sh G$.
+\end{corollary}
+
+This follows from \sref{IV.4.2.2}, \sref{IV.3.3.2}, and the proof of
+\sref{IV.3.3.6}.
+In particular, since every prescheme over a field $k$ is flat over $k$,
+we have thereby proved assertion~{\hyperref[IV.4.2.4.i]{(i)}} of the
+following proposition.
+
+\begin{proposition}[4.2.4]
+\phantomsection
+\label{IV.4.2.4}
+Let $k$ be a field, and let $X$ and $Y$ be two locally Noetherian
+$k$-preschemes such that $X\times_k Y$ is locally Noetherian.
+Suppose in addition that $X$ and $Y$ are integral.
+Then:
+\begin{enumerate}[(i)]
+\item
+\phantomsection
+\label{IV.4.2.4.i}
+$X\times_k Y$ has no immersed associated prime cycle.
+Each irreducible component of $X\times_k Y$ dominates $X$ and $Y$, and
+the set of these components is in bijective correspondence with the set
+of irreducible components of $\Spec\bigl(\mathrm R(X)\otimes_k\mathrm R(Y)\bigr)$,
+or equivalently with the set of minimal prime ideals of
+$\mathrm R(X)\otimes_k\mathrm R(Y)$, where $\mathrm R(X)$ and
+$\mathrm R(Y)$ are the fields of rational functions of $X$ and $Y$,
+respectively.
+
+\item
+\phantomsection
+\label{IV.4.2.4.ii}
+If a maximal point $z$ of $X\times_k Y$ is identified with a minimal
+prime ideal $\mathfrak p$ of
+$\mathrm R(X)\otimes_k\mathrm R(Y)$, then the local ring $\sh O_{X\times_k Y,z}$
+is isomorphic to the ring of fractions $\bigl(\mathrm R(X)\otimes_k\mathrm R(Y)\bigr)_{\mathfrak p}$.
+In particular, if $\mathrm R(X)$ or $\mathrm R(Y)$ is separable over
+$k$, then $X\times_k Y$ is reduced.
+----- French corrections on page IV-2 54 -----
+[id 12316]
+OLD: Lorsque $n'\geqslant n$, on aura
+NEW: Lorsque $n'\geqslant n$ on aura
+FRENCH CONTEXT (corrected): homomorphisme canonique
+$k[T_1,\ldots,T_n]\to k[T_1,\ldots,T_{n_i}]$, et qui est l'identité pour
+$n_i=n$. Comme $U$ est somme des $U_i$, on prendra pour $g$ le morphisme qui
+dans chaque $U_i$ coïncide avec $h_i\circ g_i$~; il est évidemment fini et
+surjectif. Lorsque $n'\geqslant n$ on aura un morphisme fini
+$U\to\mathbf V_k^{n'}$ en composant l'immersion fermée canonique
+$\mathbf V_k^n\to\mathbf V_k^{n'}$ avec $g$~; lorsque $n'\leqslant n$, on
+compose de même avec $g$ le morphisme canonique
+$p:\mathbf V_k^n\to\mathbf V_k^{n'}$ correspondant à l
+
+[id 12319]
+OLD: tel que
+$\operatorname{deg.tr.}
+NEW: tel que
+$\operatorname{deg.tr}
+FRENCH CONTEXT (corrected): $X$ et $Y$ deux préschémas localement de type fini sur un corps $k$~;
+alors $\dim(X\times_k Y)=\dim(X)+\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+Il suffit de démontrer que si $U$ (resp. $V$) est un voisinage affine d'un
+point $x$ (resp. $y$) de $X$ (resp. $Y$) tel que
+$\operatorname{deg.tr}_k \boldsymbol{k}(x)=m=\dim U$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n=\dim V$, alors on a
+$\dim(U\times_k V)=m+n$, autrement dit, on peut supposer en vertu de (4.1.2)
+qu'il existe des $k$-morphismes finis surjectifs
+$f:X\to\mathbf V_k^m$, $g:Y\to\math
+
+[id 12320]
+OLD: _k k(x)=m
+NEW: _k \boldsymbol{k}(x)=m
+FRENCH CONTEXT (corrected): alement de type fini sur un corps $k$~;
+alors $\dim(X\times_k Y)=\dim(X)+\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+Il suffit de démontrer que si $U$ (resp. $V$) est un voisinage affine d'un
+point $x$ (resp. $y$) de $X$ (resp. $Y$) tel que
+$\operatorname{deg.tr}_k \boldsymbol{k}(x)=m=\dim U$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n=\dim V$, alors on a
+$\dim(U\times_k V)=m+n$, autrement dit, on peut supposer en vertu de (4.1.2)
+qu'il existe des $k$-morphismes finis surjectifs
+$f:X\to\mathbf V_k^m$, $g:Y\to\mathbf V_k^n$~; alors
+$f\t
+
+[id 12321]
+OLD: et
+$\operatorname{deg.tr.}
+NEW: et
+$\operatorname{deg.tr}
+FRENCH CONTEXT (corrected): ps $k$~;
+alors $\dim(X\times_k Y)=\dim(X)+\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+Il suffit de démontrer que si $U$ (resp. $V$) est un voisinage affine d'un
+point $x$ (resp. $y$) de $X$ (resp. $Y$) tel que
+$\operatorname{deg.tr}_k \boldsymbol{k}(x)=m=\dim U$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n=\dim V$, alors on a
+$\dim(U\times_k V)=m+n$, autrement dit, on peut supposer en vertu de (4.1.2)
+qu'il existe des $k$-morphismes finis surjectifs
+$f:X\to\mathbf V_k^m$, $g:Y\to\mathbf V_k^n$~; alors
+$f\times g:X\times_k Y\to\mathbf V_k^{
+
+[id 12322]
+OLD: _k k(y)=n
+NEW: _k \boldsymbol{k}(y)=n
+FRENCH CONTEXT (corrected): mes_k Y)=\dim(X)+\dim(Y)$.
+\end{corollary}
+
+\begin{proof}
+Il suffit de démontrer que si $U$ (resp. $V$) est un voisinage affine d'un
+point $x$ (resp. $y$) de $X$ (resp. $Y$) tel que
+$\operatorname{deg.tr}_k \boldsymbol{k}(x)=m=\dim U$ et
+$\operatorname{deg.tr}_k \boldsymbol{k}(y)=n=\dim V$, alors on a
+$\dim(U\times_k V)=m+n$, autrement dit, on peut supposer en vertu de (4.1.2)
+qu'il existe des $k$-morphismes finis surjectifs
+$f:X\to\mathbf V_k^m$, $g:Y\to\mathbf V_k^n$~; alors
+$f\times g:X\times_k Y\to\mathbf V_k^{m+n}$ est fini et surj
+
+[id 12325]
+OLD: \subsection{Cycles premiers associés sur les préschémas algébriques}
+NEW: \subsection{Cycles premiers associés sur les préschémas algébriques.}
+FRENCH CONTEXT (corrected): ertu de (4.1.2)
+qu'il existe des $k$-morphismes finis surjectifs
+$f:X\to\mathbf V_k^m$, $g:Y\to\mathbf V_k^n$~; alors
+$f\times g:X\times_k Y\to\mathbf V_k^{m+n}$ est fini et surjectif
+(\textbf{I}, 3.5.2 et \textbf{II}, 6.1.5), d'où le corollaire.
+\end{proof}
+
+\subsection{Cycles premiers associés sur les préschémas algébriques.}
+\label{subsection:IV.2.4.2-fr}
+
+\begin{proposition}[4.2.1]
+\EGAReaderTarget{ega4.c04.prop.4-2-1}{IV.2.4.2.1-fr}
+Soient $K$ et $L$ deux extensions d'un corps $k$, telles que $K\otimes_k L$
+soit noethérien. Alors les idéaux premiers associés à $K\otimes_k L$ so
+
+[id 12326]
+OLD: \operatorname{deg.tr.}_K E=\operatorname{deg.tr.}_k L,
+\qquad
+\operatorname{deg.tr.}_L E=\operatorname{deg.tr.}_k K
+NEW: \operatorname{deg.tr}_K E=\operatorname{deg.tr}_k L,
+\qquad
+\operatorname{deg.tr}_L E=\operatorname{deg.tr}_k K
+FRENCH CONTEXT (corrected): ensions d'un corps $k$, telles que $K\otimes_k L$
+soit noethérien. Alors les idéaux premiers associés à $K\otimes_k L$ sont
+minimaux, et si $E$ est le corps résiduel de l'anneau local d'un tel idéal, on
+a
+\begin{equation}
+\tag{4.2.1.1}
+\label{IV.2.4.2.1.1-fr}
+\operatorname{deg.tr}_K E=\operatorname{deg.tr}_k L,
+\qquad
+\operatorname{deg.tr}_L E=\operatorname{deg.tr}_k K
+\end{equation}
+d'où
+\begin{equation}
+\tag{4.2.1.2}
+\label{IV.2.4.2.1.2-fr}
+\operatorname{deg.tr}_k E
+=\operatorname{deg.tr}_k K+\operatorname{deg.tr}_k L.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+On sait que $K$ est une extension algébrique d'une exten
+
+[id 12328]
+OLD: \operatorname{deg.tr.}_k E
+=\operatorname{deg.tr.}_k K+\operatorname{deg.tr.}_k L.
+NEW: \operatorname{deg.tr}_k E
+=\operatorname{deg.tr}_k K+\operatorname{deg.tr}_k L.
+FRENCH CONTEXT (corrected): n tel idéal, on
+a
+\begin{equation}
+\tag{4.2.1.1}
+\label{IV.2.4.2.1.1-fr}
+\operatorname{deg.tr}_K E=\operatorname{deg.tr}_k L,
+\qquad
+\operatorname{deg.tr}_L E=\operatorname{deg.tr}_k K
+\end{equation}
+d'où
+\begin{equation}
+\tag{4.2.1.2}
+\label{IV.2.4.2.1.2-fr}
+\operatorname{deg.tr}_k E
+=\operatorname{deg.tr}_k K+\operatorname{deg.tr}_k L.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+On sait que $K$ est une extension algébrique d'une extension transcendante
+pure $K'=k(\mathbf t)$, où $\mathbf t=(t_\alpha)_{\alpha\in I}$ est une famille
+d'indéterminées~; l'anneau $k[\mathbf t]\otimes_k L=L[\m
+
+=================== PAGE IV-2 55 ===================
+----- (English page IV-2 54: shown above in this file) -----
+----- (English page IV-2 55: shown above in this file) -----
+----- English, components/02_section42_associated_prime_cycles.tex, page IV-2 56 -----
+\oldpage[IV-2]{56}
+
+\item
+\phantomsection
+\label{IV.4.2.4.iii}
+If, in addition, $X$ and $Y$ are locally of finite type over $k$, then
+every irreducible component of $X\times_k Y$ has dimension $\dim(X)+\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Assertion~{\hyperref[IV.4.2.4.iii]{(iii)}} follows from
+\sref{IV.4.2.1.2}, taking account of
+{\hyperref[IV.4.2.4.i]{(i)}} and {\hyperref[IV.4.2.4.ii]{(ii)}}.
+
+To prove {\hyperref[IV.4.2.4.ii]{(ii)}}, we may plainly reduce to the case
+in which
+\[
+X=\Spec(A),
+\qquad
+Y=\Spec(B)
+\]
+are affine, with $A$ and $B$ integral rings having respective fields of
+fractions
+\[
+K=\mathrm R(X),
+\qquad
+L=\mathrm R(Y).
+\]
+Assertion~{\hyperref[IV.4.2.4.i]{(i)}} shows that every minimal prime ideal
+$\mathfrak q$ of $A\otimes_k B$ is the contraction to $A\otimes_k B$
+of a minimal prime ideal $\mathfrak p$ of $K\otimes_k L$.
+Since $K\otimes_k L$ is a ring of fractions of $A\otimes_k B$, the
+isomorphism
+\[
+(A\otimes_k B)_{\mathfrak q}
+\simeq
+(K\otimes_k L)_{\mathfrak p}
+\]
+follows from \sref[0\textsubscript{\mdseries I}]{0.1.2.5}.
+
+Finally, if, for example, $\mathrm R(Y)$ is separable over $k$, then
+$\mathrm R(X)\otimes_k\mathrm R(Y)$ is reduced
+(Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no.~3, th.~1).
+The local rings at the maximal points of $X\times_k Y$ are therefore
+also reduced, and it follows that $X\times_k Y$ is reduced
+\sref{IV.3.2.1}.
+\end{proof}
+
+\begin{proposition}[4.2.5]
+\phantomsection
+\label{IV.4.2.5}
+Let $k$ be a field, let $X$ and $Y$ be locally Noetherian
+$k$-preschemes, and let $\sh F$ (respectively $\sh G$) be a
+quasi-coherent $\sh O_X$-Module (respectively $\sh O_Y$-Module).
+Let $(Z'_\lambda)$ (respectively $(Z''_\mu)$) be the family of prime
+cycles associated with $\sh F$ (respectively $\sh G$), and denote again
+by $Z'_\lambda$ (respectively $Z''_\mu$) the reduced sub-prescheme of
+$X$ (respectively $Y$) having $Z'_\lambda$ (respectively $Z''_\mu$) as
+its underlying space.
+If $Z'_\lambda\times_k Z''_\mu$ is locally Noetherian, then its
+irreducible components $Z_{\lambda\mu\nu}$ dominate $Z'_\lambda$ and
+$Z''_\mu$, and $(Z_{\lambda\mu\nu})$ is the family of distinct prime
+cycles associated with $\sh F\otimes_k\sh G$.
+\end{proposition}
+
+\begin{proof}
+It suffices to apply \sref{IV.4.2.4} to the product
+\[
+\Spec\bigl(\kappa(x)\bigr)\times_k\Spec\bigl(\kappa(y)\bigr).
+\]
+\end{proof}
+
+\begin{corollary}[4.2.6]
+\phantomsection
+\label{IV.4.2.6}
+Let $k$ be a field, and let $X$ and $Y$ be two locally Noetherian
+$k$-preschemes such that $X\times_k Y$ is locally Noetherian.
+Let $(Z'_\lambda)$ (respectively $(Z''_\mu)$) be the family of reduced
+sub-preschemes of $X$ (respectively $Y$) whose underlying spaces are
+the irreducible components of $X$ (respectively $Y$).
+Then the irreducible components $Z_{\lambda\mu\nu}$ of
+$Z'_\lambda\times_k Z''_\mu$ dominate $Z'_\lambda$ and $Z''_\mu$, and
+$(Z_{\lambda\mu\nu})$ is the family of irreducible components of
+$X\times_k Y$.
+\end{corollary}
+
+\begin{proof}
+We may reduce to the case in which $X$ and $Y$ are reduced
+\sref[I]{I.5.1.8}.
+The irreducible components of $X$ (respectively $Y$) are then the prime
+cycles associated with $\sh O_X$ (respectively $\sh O_Y$)
+\sref{IV.3.2.1}.
+Apply \sref{IV.4.2.5} with
+\[
+\sh F=\sh O_X,
+\qquad
+\sh G=\sh O_Y,
+\]
+noting that, by definition, $\sh O_X\otimes_k\sh O_Y=\sh O_{X\times_k Y}$.
+The corollary follows because $\sh O_X\otimes_k\sh O_Y$ has no immersed
+associated prime cycles, since by hypothesis the same is true of
+$\sh O_X$ and $\sh O_Y$ \sref{IV.4.2.3}.
+\end{proof}
+
+We apply the preceding results to the case in which $Y$ is the spectrum
+of an extension $K$ of $k$.
+
+\begin{proposition}[4.2.7]
+\phantomsection
+\label{IV.4.2.7}
+Let $k$ be a field, let $X$ be a $k$-prescheme, and let $K$ be an
+\emph{extension} of $k$ such that $X\otimes_k K$ is locally Noetherian.
+Let $\sh F$ be a quasi-coherent $\sh O_X$-Module, let $x'$ be a point
+of $X\otimes_k K$, and let $x$ be its image in $X$.
+\begin{enumerate}[(i)]
+\item
+\phantomsection
+\label{IV.4.2.7.i}
+Let $(Z_\lambda)$ be the family of reduced sub-preschemes of $X$ whose
+underlying spaces are the prime cycles associated with $\sh F$.
+Then the irreducible components $Z_{\lambda\mu}$ of
+$Z_\lambda\otimes_k K$ are the prime cycles associated with
+$\sh F\otimes_k K$, and $Z_{\lambda\mu}$ dominates $Z_\lambda$.
+Moreover, $Z_{\lambda\mu}$ is immersed if and only if $Z_\lambda$ is
+immersed.
+
+\item
+\phantomsection
+\label{IV.4.2.7.ii}
+The point $x$ belongs to an immersed prime cycle associated with
+$\sh F$ if and only if $x'$ belongs to an immersed prime cycle
+associated with $\sh F\otimes_k K$.
+The Module $\sh F$ has no immersed associated prime cycle if and only if
+the same is true of $\sh F\otimes_k K$.
+----- French corrections on page IV-2 55 -----
+[id 12797]
+OLD: $\operatorname{deg.tr.}_L E
+NEW: $\operatorname{deg.tr}_L E
+FRENCH CONTEXT (corrected): assertion (Bourbaki, \emph{Alg. comm.}, chap.~IV, \S~1,
+n\textsuperscript{o}~3, cor.~1 de la prop.~7). De plus, le corps résiduel $E$
+de $\mathfrak p$ est algébrique sur le corps résiduel de l'idéal $(0)$ de
+$K'\otimes_k L$, c'est-à-dire $L(\mathbf t)$~; donc
+$\operatorname{deg.tr}_L E=\operatorname{deg.tr}_L L(\mathbf t)
+=\operatorname{Card}(I)=\operatorname{deg.tr}_k K$, autrement dit on a la
+première relation (4.2.1.1)~; échangeant les rôles de $K$ et $L$, on a la
+seconde relation (4.2.1.1), d'où (4.2.1.2).
+\end{proof}
+
+\begin{corollary}
+
+[id 12798]
+OLD: E=\operatorname{deg.tr.}_L L
+NEW: E=\operatorname{deg.tr}_L L
+FRENCH CONTEXT (corrected): h{Alg. comm.}, chap.~IV, \S~1,
+n\textsuperscript{o}~3, cor.~1 de la prop.~7). De plus, le corps résiduel $E$
+de $\mathfrak p$ est algébrique sur le corps résiduel de l'idéal $(0)$ de
+$K'\otimes_k L$, c'est-à-dire $L(\mathbf t)$~; donc
+$\operatorname{deg.tr}_L E=\operatorname{deg.tr}_L L(\mathbf t)
+=\operatorname{Card}(I)=\operatorname{deg.tr}_k K$, autrement dit on a la
+première relation (4.2.1.1)~; échangeant les rôles de $K$ et $L$, on a la
+seconde relation (4.2.1.1), d'où (4.2.1.2).
+\end{proof}
+
+\begin{corollary}[4.2.2]
+\label{IV.2.4.2.2-
+
+[id 12799]
+OLD: =\operatorname{deg.tr.}_k K
+NEW: =\operatorname{deg.tr}_k K
+FRENCH CONTEXT (corrected): de la prop.~7). De plus, le corps résiduel $E$
+de $\mathfrak p$ est algébrique sur le corps résiduel de l'idéal $(0)$ de
+$K'\otimes_k L$, c'est-à-dire $L(\mathbf t)$~; donc
+$\operatorname{deg.tr}_L E=\operatorname{deg.tr}_L L(\mathbf t)
+=\operatorname{Card}(I)=\operatorname{deg.tr}_k K$, autrement dit on a la
+première relation (4.2.1.1)~; échangeant les rôles de $K$ et $L$, on a la
+seconde relation (4.2.1.1), d'où (4.2.1.2).
+\end{proof}
+
+\begin{corollary}[4.2.2]
+\label{IV.2.4.2.2-fr}
+Sous les hypothèses de \textup{(3.3.6)}, si les préschéma
+
+[id 12802]
+OLD: (pour $s\in S$)
+NEW: \textup{(}pour $s\in S$\textup{)}
+FRENCH CONTEXT (corrected): ens, ils n'ont pas de cycle premier associé immergé.
+\end{corollary}
+
+\begin{corollary}[4.2.3]
+\label{IV.2.4.2.3-fr}
+Sous les hypothèses de \textup{(3.3.6) (resp. (3.3.7))}, si les $T_{x,y}$ sont
+localement noethériens et si $\mathcal F$ et les $\mathcal G_s$ \textup{(}pour $s\in S$\textup{)}
+\textup{(resp.} $\mathcal F$ et $\mathcal G$\textup{)} sont sans cycle premier associé immergé,
+il en est de même de $\mathcal F\otimes_S\mathcal G$.
+\end{corollary}
+
+Cela résulte de (4.2.2), (3.3.2) et de la démonstration de (3.3.6). En
+particulier, comme to
+
+[id 12803]
+OLD: (resp. $\mathcal F$ et $\mathcal G$) sont
+NEW: \textup{(resp.} $\mathcal F$ et $\mathcal G$\textup{)} sont
+FRENCH CONTEXT (corrected): r associé immergé.
+\end{corollary}
+
+\begin{corollary}[4.2.3]
+\label{IV.2.4.2.3-fr}
+Sous les hypothèses de \textup{(3.3.6) (resp. (3.3.7))}, si les $T_{x,y}$ sont
+localement noethériens et si $\mathcal F$ et les $\mathcal G_s$ \textup{(}pour $s\in S$\textup{)}
+\textup{(resp.} $\mathcal F$ et $\mathcal G$\textup{)} sont sans cycle premier associé immergé,
+il en est de même de $\mathcal F\otimes_S\mathcal G$.
+\end{corollary}
+
+Cela résulte de (4.2.2), (3.3.2) et de la démonstration de (3.3.6). En
+particulier, comme tout préschéma sur un corps $k$ est \emph{plat} sur $k$, on
+a 
+
+[id 12804]
+OLD: \emph{plat sur $k$}
+NEW: \emph{plat} sur $k$
+FRENCH CONTEXT (corrected): \mathcal G$\textup{)} sont sans cycle premier associé immergé,
+il en est de même de $\mathcal F\otimes_S\mathcal G$.
+\end{corollary}
+
+Cela résulte de (4.2.2), (3.3.2) et de la démonstration de (3.3.6). En
+particulier, comme tout préschéma sur un corps $k$ est \emph{plat} sur $k$, on
+a ainsi démontré l'assertion (i) de la
+
+\begin{proposition}[4.2.4]
+\label{IV.2.4.2.4-fr}
+Soient $k$ un corps, $X$ et $Y$ deux $k$-préschémas localement noethériens
+tels que $X\times_k Y$ soit localement noethérien. Supposons de plus $X$ et
+$Y$ intègres. A
+
+[id 12806]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): mposantes irréductibles de
+$\operatorname{Spec}(R(X)\otimes_k R(Y))$ \textup{(autrement dit} l'ensemble des
+idéaux premiers minimaux de $R(X)\otimes_k R(Y)$\textup{)}, où $R(X)$ et $R(Y)$ sont
+les corps des fonctions rationnelles de $X$ et $Y$ respectivement.
+\item[\textup{(ii)}] Si un point maximal $z$ de $X\times_k Y$ est identifié à un idéal
+premier minimal $\mathfrak p$ de $R(X)\otimes_k R(Y)$, l'anneau local
+$\mathcal O_{X\times_k Y,z}$ est isomorphe à l'anneau de fractions
+$(R(X)\otimes_k R(Y))_{\mathfrak p}$. En particulier, si
+
+[id 12807]
+OLD: (autrement dit l'ensemble des
+idéaux premiers minimaux de $R(X)\otimes_k R(Y)$),
+NEW: \textup{(autrement dit} l'ensemble des
+idéaux premiers minimaux de $R(X)\otimes_k R(Y)$\textup{)},
+FRENCH CONTEXT (corrected): le premier associé immergé~; chacune des
+composantes irréductibles de $X\times_k Y$ domine $X$ et $Y$, et l'ensemble de
+ces composantes est en correspondance biunivoque avec l'ensemble des
+composantes irréductibles de
+$\operatorname{Spec}(R(X)\otimes_k R(Y))$ \textup{(autrement dit} l'ensemble des
+idéaux premiers minimaux de $R(X)\otimes_k R(Y)$\textup{)}, où $R(X)$ et $R(Y)$ sont
+les corps des fonctions rationnelles de $X$ et $Y$ respectivement.
+\item[\textup{(ii)}] Si un point maximal $z$ de $X\times_k Y$ est identifié à un idéal
+premier minimal $\mathfrak p$ de $R(X)\otimes_k R(Y)$, l'anneau local
+$\mathcal 
+
+=================== PAGE IV-2 56 ===================
+----- (English page IV-2 55: shown above in this file) -----
+----- (English page IV-2 56: shown above in this file) -----
+----- English, components/02_section42_associated_prime_cycles.tex, page IV-2 57 -----
+\oldpage[IV-2]{57}
+
+\item
+\phantomsection
+\label{IV.4.2.7.iii}
+The indices $\lambda$ for which $x\in Z_\lambda$ are precisely those for
+which there exists an index $\mu$ such that
+$x'\in Z_{\lambda\mu}$.
+In particular, if $x'$ belongs to only one prime cycle associated with
+$\sh F\otimes_k K$, then $x$ belongs to only one prime cycle associated
+with $\sh F$.
+
+\item
+\phantomsection
+\label{IV.4.2.7.iv}
+If $X$ is locally of finite type over $k$, then $\dim(Z_{\lambda\mu})=\dim(Z_\lambda)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The hypothesis implies that $X$ itself is locally Noetherian
+\sref{IV.2.2.13} and \sref{IV.2.2.14}.
+Assertion~{\hyperref[IV.4.2.7.i]{(i)}} follows from
+\sref{IV.4.2.5} and the proof of \sref{IV.4.2.3}, with
+$\sh G=\sh O_Y$ and $Y=\Spec(K)$.
+Assertions~{\hyperref[IV.4.2.7.ii]{(ii)}} and
+{\hyperref[IV.4.2.7.iii]{(iii)}} follow from
+{\hyperref[IV.4.2.7.i]{(i)}} and \sref{IV.2.3.5}.
+Finally, {\hyperref[IV.4.2.7.iv]{(iv)}} is a special case of
+{\hyperref[IV.4.2.4.iii]{\sref{IV.4.2.4}, (iii)}}.
+\end{proof}
+
+\begin{corollary}[4.2.8]
+\phantomsection
+\label{IV.4.2.8}
+If $X$ is locally of finite type over $k$, then the set of dimensions
+of the prime cycles associated with $\sh F$ is the same as that of the
+prime cycles associated with $\sh F\otimes_k K$.
+The set of dimensions of the irreducible components is likewise the
+same for $X$ and $X\otimes_k K$.
+\end{corollary}
+
+\begin{proposition}[4.2.9]
+\phantomsection
+\label{IV.4.2.9}
+Suppose that the hypotheses of \sref{IV.4.2.5} hold, and suppose in
+addition that $\sh F$ and $\sh G$ are coherent.
+Let $(\sh F_\lambda)_{\lambda\in L}$ and
+$(\sh G_\mu)_{\mu\in M}$ be irredundant decompositions of $\sh F$ and
+$\sh G$, respectively.
+For every pair $(\lambda,\mu)\in L\times M$, let $(\sh H_{\lambda\mu\nu})_{\nu\in S(\lambda,\mu)}$
+be a reduced irredundant decomposition of
+$\sh F_\lambda\otimes_k\sh G_\mu$, where $S(\lambda,\mu)
+=\operatorname{Ass}(\sh F_\lambda\otimes_k\sh G_\mu)$
+\sref{IV.3.2.5}.
+Then $(\sh H_{\lambda\mu\nu})$, over all triples
+$(\lambda,\mu,\nu)$, is an irredundant decomposition of
+$\sh F\otimes_k\sh G$.
+It is reduced if $(\sh F_\lambda)$ and $(\sh G_\mu)$ are reduced.
+\end{proposition}
+
+\begin{proof}
+The Module $\sh F\otimes_k\sh G$ and each
+$\sh F_\lambda\otimes_k\sh G_\mu$ are coherent, and each
+$\sh F_\lambda\otimes_k\sh G_\mu$ identifies with a quotient of
+$\sh F\otimes_k\sh G$.
+By definition, each $\sh H_{\lambda\mu\nu}$ identifies with a coherent
+quotient of $\sh F_\lambda\otimes_k\sh G_\mu$, and hence also with a
+coherent quotient of $\sh F\otimes_k\sh G$.
+
+The family of supports of the $\sh H_{\lambda\mu\nu}$ is locally finite.
+Indeed,
+\[
+\Supp(\sh F_\lambda\otimes_k\sh G_\mu)
+\subset
+\bigl|\Supp(\sh F_\lambda)\times_k\Supp(\sh G_\mu)\bigr|,
+\]
+where $\Supp(\sh F_\lambda)$ and $\Supp(\sh G_\mu)$ denote the
+corresponding reduced closed sub-preschemes.
+For fixed $\lambda$ and $\mu$, the family of supports of the
+$\sh H_{\lambda\mu\nu}$ is locally finite by hypothesis; the assertion
+therefore follows from the local finiteness of the families
+$(\Supp(\sh F_\lambda))$ and $(\Supp(\sh G_\mu))$.
+
+It remains to show that the canonical homomorphism $\sh F\otimes_k\sh G
+\longrightarrow
+\bigoplus_{\lambda,\mu,\nu}\sh H_{\lambda\mu\nu}$
+is injective.
+It is the composite
+\[
+\begin{aligned}
+\sh F\otimes_k\sh G
+&\longrightarrow
+\left(\bigoplus_\lambda\sh F_\lambda\right)
+\otimes_k
+\left(\bigoplus_\mu\sh G_\mu\right)
+\\
+&\simeq
+\bigoplus_{\lambda,\mu}
+(\sh F_\lambda\otimes_k\sh G_\mu)
+\longrightarrow
+\bigoplus_{\lambda,\mu,\nu}\sh H_{\lambda\mu\nu}.
+\end{aligned}
+\]
+The last homomorphism is injective by definition, and the first is
+injective because it is the tensor product of the canonical injections
+\[
+\sh F\longrightarrow\bigoplus_\lambda\sh F_\lambda,
+\qquad
+\sh G\longrightarrow\bigoplus_\mu\sh G_\mu,
+\]
+and $\sh F$ and $\sh G$ are flat over $k$.
+
+Finally, if $(\sh F_\lambda)$ and $(\sh G_\mu)$ are reduced, we may
+suppose that
+\[
+L=\operatorname{Ass}(\sh F),
+\qquad
+M=\operatorname{Ass}(\sh G).
+\]
+The $\sh H_{\lambda\mu\nu}$ then form a reduced decomposition because,
+by \sref{IV.4.2.2}, the sets $\operatorname{Ass}(\sh F_\lambda\otimes_k\sh G_\mu)$
+partition
+$\operatorname{Ass}(\sh F\otimes_k\sh G)$
+\sref{IV.3.2.5}.
+\end{proof}
+
+\begin{corollary}[4.2.10]
+\phantomsection
+\label{IV.4.2.10}
+Under the hypotheses of \sref{IV.4.2.7}, suppose in addition that
+$\sh F$ is coherent, and let
+$(\sh F_\lambda)_{\lambda\in L}$ be an irredundant decomposition of
+$\sh F$.
+For every $\lambda\in L$, let $(\sh F_{\lambda\mu})_{
+\mu\in\operatorname{Ass}(\sh F_\lambda\otimes_k K)}$
+be a reduced irredundant decomposition of
+$\sh F_\lambda\otimes_k K$.
+Then $(\sh F_{\lambda\mu})$ is an irredundant decomposition of
+$\sh F\otimes_k K$.
+It is reduced if $(\sh F_\lambda)$ is reduced.
+\end{corollary}
+
+\begin{proof}
+Apply \sref{IV.4.2.9} with
+\[
+Y=\Spec(K),
+\qquad
+\sh G=\sh O_Y=K,
+\]
+and with $M$ consisting of a single element.
+\end{proof}
+----- English, components/03_section43_tensor_products_of_fields.tex, page IV-2 57 -----
+
+----- French corrections on page IV-2 56 -----
+[id 12808]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected): hfrak p$ de $R(X)\otimes_k R(Y)$, l'anneau local
+$\mathcal O_{X\times_k Y,z}$ est isomorphe à l'anneau de fractions
+$(R(X)\otimes_k R(Y))_{\mathfrak p}$. En particulier, si $R(X)$ ou $R(Y)$ est
+séparable sur $k$, $X\times_k Y$ est réduit.
+
+\oldpage[IV-2]{56}
+
+\item[\textup{(iii)}] Si en outre $X$ et $Y$ sont localement de type fini sur $k$,
+toute composante irréductible de $X\times_k Y$ est de dimension
+$\dim(X)+\dim(Y)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+L'assertion (iii) résulte de (4.2.1.2), compte tenu de (i) et (ii)
+
+[id 12812]
+OLD: (resp. un
+$\mathcal O_Y$-Module)
+NEW: \textup{(resp.} un
+$\mathcal O_Y$-Module\textup{)}
+FRENCH CONTEXT (corrected): Y$. On en déduit
+que $X\times_k Y$ est réduit (3.2.1).
+\end{proof}
+
+\begin{proposition}[4.2.5]
+\label{IV.2.4.2.5-fr}
+Soient $k$ un corps, $X$ et $Y$ des $k$-préschémas localement noethériens,
+$\mathcal F$ \textup{(resp. $\mathcal G$)} un $\mathcal O_X$-Module \textup{(resp.} un
+$\mathcal O_Y$-Module\textup{)} quasi-cohérent. Soit $(Z'_\lambda)$ \textup{(resp.
+$(Z''_\mu)$)} la famille des cycles premiers associés à $\mathcal F$ \textup{(resp.
+$\mathcal G$)}, et désignons encore par $Z'_\lambda$ \textup{(resp. $Z''_\mu$)} le
+sous-préschéma réduit de $X$ \textup{(res
+
+[id 12818]
+OLD: \operatorname{Spec}(k(x))
+NEW: \operatorname{Spec}(\boldsymbol{k}(x))
+FRENCH CONTEXT (corrected): }$
+de $Z'_\lambda\times_k Z''_\mu$ dominent $Z'_\lambda$ et $Z''_\mu$, et
+$(Z_{\lambda\mu\nu})$ est la famille des cycles premiers distincts associés à
+$\mathcal F\otimes_k\mathcal G$.
+\end{proposition}
+
+\begin{proof}
+Il suffit d'appliquer (4.2.4) au produit
+$\operatorname{Spec}(\boldsymbol{k}(x))\times_k\operatorname{Spec}(\boldsymbol{k}(y))$.
+\end{proof}
+
+En particulier~:
+
+\begin{corollary}[4.2.6]
+\label{IV.2.4.2.6-fr}
+Soient $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens tels
+que $X\times_k Y$ soit localement noethérien. Soit $(Z'
+
+[id 12819]
+OLD: \operatorname{Spec}(k(y))
+NEW: \operatorname{Spec}(\boldsymbol{k}(y))
+FRENCH CONTEXT (corrected): '_\lambda$ et $Z''_\mu$, et
+$(Z_{\lambda\mu\nu})$ est la famille des cycles premiers distincts associés à
+$\mathcal F\otimes_k\mathcal G$.
+\end{proposition}
+
+\begin{proof}
+Il suffit d'appliquer (4.2.4) au produit
+$\operatorname{Spec}(\boldsymbol{k}(x))\times_k\operatorname{Spec}(\boldsymbol{k}(y))$.
+\end{proof}
+
+En particulier~:
+
+\begin{corollary}[4.2.6]
+\label{IV.2.4.2.6-fr}
+Soient $k$ un corps, $X$, $Y$ deux $k$-préschémas localement noethériens tels
+que $X\times_k Y$ soit localement noethérien. Soit $(Z'_\lambda)$ \textup{(resp.
+$(Z''_\mu)$)} la fam
+
+[id 12826]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): s irréductibles $Z_{\lambda\mu}$ des
+$Z_\lambda\otimes_k K$ sont les cycles premiers associés à
+$\mathcal F\otimes_k K$, et $Z_{\lambda\mu}$ domine $Z_\lambda$~; en outre,
+pour qu'un $Z_{\lambda\mu}$ soit immergé, il faut et il suffit que $Z_\lambda$
+le soit.
+\item[\textup{(ii)}] Pour que $x$ appartienne à un cycle premier associé immergé de
+$\mathcal F$, il faut et il suffit que $x'$ appartienne à un cycle premier
+associé immergé de $\mathcal F\otimes_k K$~; pour que $\mathcal F$ soit sans
+cycle premier associé immergé, il faut et il
+
+=================== PAGE IV-2 57 ===================
+----- (English page IV-2 56: shown above in this file) -----
+----- (English page IV-2 57: shown above in this file) -----
+----- English, components/03_section43_tensor_products_of_fields.tex, page IV-2 58 -----
+\oldpage[IV-2]{58}
+
+\subsection{Reminders on tensor products of fields}
+\label{subsection:IV.4.3}
+
+For the reader's convenience, we recall here certain properties of
+tensor products of fields that we shall use in the following numbers;
+for the proofs, we refer to [1].
+
+\begin{env}[4.3.1]
+\phantomsection
+\label{IV.4.3.1}
+Recall that an extension $L$ of a field $k$ is called
+\emph{primary} if the largest separable algebraic extension of $k$
+contained in $L$ is $k$ itself.
+\end{env}
+
+\begin{proposition}[4.3.2]
+\phantomsection
+\label{IV.4.3.2}
+Let $K$ and $L$ be two extensions of a field $k$.
+If $L$ is a primary extension of $k$, then
+$\Spec(L\otimes_k K)$ is irreducible and, if $\zeta$ is its generic
+point, $\kappa(\zeta)$ is a primary extension of $K$.
+Conversely, if $\Spec(L\otimes_k K)$ is irreducible for every finite
+separable extension $K$ of $k$, then $L$ is a primary extension of $k$.
+\end{proposition}
+
+\begin{proof}
+See [1], pp.~14-03 to 14-06.
+\end{proof}
+
+\begin{corollary}[4.3.3]
+\phantomsection
+\label{IV.4.3.3}
+If $k$ is separably closed (that is, if its algebraic closure is
+radicial over $k$), then $\Spec(L\otimes_k K)$ is irreducible for every
+two extensions $K$ and $L$ of $k$; conversely, if this conclusion holds
+for every such pair, then $k$ is separably closed.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \sref{IV.4.3.2}.
+\end{proof}
+
+\begin{corollary}[4.3.4]
+\phantomsection
+\label{IV.4.3.4}
+Let $L$ be an extension of a field $k$, and let $L_s$ be the largest
+separable algebraic extension of $k$ contained in $L$ (sometimes called
+the separable algebraic closure of $k$ in $L$).
+Suppose that $L_s$ is of finite degree over $k$, and let $K$ be a
+Galois extension of $k$ containing $L_s$.
+Then $\Spec(L\otimes_k K)$ has $[L_s:k]$ irreducible components and is
+their union, and the residue fields at their generic points are primary
+extensions of $K$.
+\end{corollary}
+
+\begin{proof}
+Indeed, $L\otimes_k K
+=L\otimes_{L_s}(L_s\otimes_k K)$,
+and $L_s\otimes_k K$ is isomorphic to a product of $[L_s:k]$ fields,
+each isomorphic to $K$
+(Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no.~3,
+cor.~2 to th.~1).
+Thus $L\otimes_k K$ is isomorphic to a product of $[L_s:k]$ rings,
+each isomorphic to $L\otimes_{L_s}K$.
+Since $L$ is a primary extension of $L_s$, the conclusion follows from
+\sref{IV.4.3.2}.
+\end{proof}
+
+\begin{proposition}[4.3.5]
+\phantomsection
+\label{IV.4.3.5}
+Let $K$ and $L$ be two extensions of a field $k$.
+If $L$ is a separable extension of $k$, then the ring
+$L\otimes_k K$ is reduced.
+Conversely, if $L\otimes_k K$ is reduced for every finite radicial
+extension $K$ of $k$, then $L$ is a separable extension of $k$.
+\end{proposition}
+
+\begin{proof}
+See Bourbaki, \emph{Alg.}, chap.~VIII, \S~7, no.~3, th.~1.
+\end{proof}
+
+\begin{corollary}[4.3.6]
+\phantomsection
+\label{IV.4.3.6}
+If $k$ is perfect, then $K\otimes_k L$ is reduced for every two
+extensions $K$ and $L$ of $k$; conversely, if this conclusion holds for
+every such pair, then $k$ is perfect.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \sref{IV.4.3.5}.
+\end{proof}
+
+\begin{corollary}[4.3.7]
+\phantomsection
+\label{IV.4.3.7}
+Let $L$ be a separable extension of $k$, and let $K$ be an extension of
+$k$ such that either $K$ or $L$ is finite over $k$.
+Then the residue fields of the semilocal ring $L\otimes_k K$ are
+separable extensions of $K$.
+\end{corollary}
+
+\begin{proof}
+The ring $L\otimes_k K$ is the direct product of its residue fields
+$E_i$.
+For every extension $K'$ of $K$, the ring $L\otimes_k K'$ is therefore
+isomorphic to the direct product of the rings $E_i\otimes_K K'$.
+Since $L\otimes_k K'$ is reduced, the fields $E_i$ are separable over
+$K$ by \sref{IV.4.3.5}.
+\end{proof}
+
+\begin{corollary}[4.3.8]
+\phantomsection
+\label{IV.4.3.8}
+If $K$ and $L$ are two finite separable extensions of $k$, then
+$K\otimes_k L$ is a product of finitely many separable extensions of
+$k$.
+\end{corollary}
+----- French corrections on page IV-2 57 -----
+[id 12827]
+OLD: \item[(iii)]
+NEW: \item[\textup{(iii)}]
+FRENCH CONTEXT (corrected):  il faut et il suffit que $x'$ appartienne à un cycle premier
+associé immergé de $\mathcal F\otimes_k K$~; pour que $\mathcal F$ soit sans
+cycle premier associé immergé, il faut et il suffit qu'il en soit ainsi de
+$\mathcal F\otimes_k K$.
+
+\oldpage[IV-2]{57}
+
+\item[\textup{(iii)}] Les indices $\lambda$ tels que $x\in Z_\lambda$ sont les mêmes
+que ceux pour lesquels il existe un indice $\mu$ tel que
+$x'\in Z_{\lambda\mu}$. En particulier, si $x'$ n'appartient qu'à un seul
+cycle premier associé à $\mathcal F\otimes_k K$, $x$ n'appartient
+
+[id 12828]
+OLD: \item[(iv)]
+NEW: \item[\textup{(iv)}]
+FRENCH CONTEXT (corrected): t les mêmes
+que ceux pour lesquels il existe un indice $\mu$ tel que
+$x'\in Z_{\lambda\mu}$. En particulier, si $x'$ n'appartient qu'à un seul
+cycle premier associé à $\mathcal F\otimes_k K$, $x$ n'appartient qu'à un
+seul cycle premier associé à $\mathcal F$.
+\item[\textup{(iv)}] Si $X$ est localement de type fini sur $k$, on a
+$\dim(Z_{\lambda\mu})=\dim(Z_\lambda)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+On notera que l'hypothèse entraîne que $X$ lui-même est localement noethérien
+(2.2.13 et 2.2.14)~; l'assertion (i) résult
+
+[id 12831]
+OLD: (pour tous les triplets
+$(\lambda,\mu,\nu)$)
+NEW: \textup{(}pour tous les triplets
+$(\lambda,\mu,\nu)$\textup{)}
+FRENCH CONTEXT (corrected): da\mu\nu})_{\nu\in S(\lambda,\mu)}$ une décomposition
+irredondante réduite de $\mathcal F_\lambda\otimes_k\mathcal G_\mu$, où
+$S(\lambda,\mu)=\operatorname{Ass}(\mathcal F_\lambda\otimes_k\mathcal G_\mu)$
+\textup{(3.2.5)}. Alors $(\mathcal H_{\lambda\mu\nu})$ \textup{(}pour tous les triplets
+$(\lambda,\mu,\nu)$\textup{)} est une décomposition irredondante de
+$\mathcal F\otimes_k\mathcal G$~; elle est réduite si
+$(\mathcal F_\lambda)$ et $(\mathcal G_\mu)$ le sont.
+\end{proposition}
+
+\begin{proof}
+Notons que $\mathcal F\otimes_k\mathcal G$ et chacun des
+$\mathcal F_\lambda\oti
+
+[id 12832]
+OLD: l'homomorphisme canonique
+\[
+\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}
+\]
+est injectif~;
+NEW: l'homomorphisme canonique
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$
+est injectif~;
+FRENCH CONTEXT (corrected): \operatorname{Supp}(\mathcal F_\lambda))$ et
+$(\operatorname{Supp}(\mathcal G_\mu))$ sont localement finies. Pour démontrer
+que $(\mathcal H_{\lambda\mu\nu})$ est une décomposition irredondante de
+$\mathcal F\otimes_k\mathcal G$, il suffit donc de prouver que
+l'homomorphisme canonique
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$
+est injectif~; or, il est composé des homomorphismes
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu}(\mathcal F_\lambda\otimes_k\mathcal G_\mu)
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$~;
+le second de ces homomorphismes est 
+
+[id 12833]
+OLD: des homomorphismes
+\[
+\mathcal F\otimes_k\mathcal G
+\longrightarrow
+\left(\bigoplus_\lambda\mathcal F_\lambda\right)\otimes_k
+\left(\bigoplus_\mu\mathcal G_\mu\right)
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}~;
+\]
+le second
+NEW: des homomorphismes
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu}(\mathcal F_\lambda\otimes_k\mathcal G_\mu)
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$~;
+le second
+FRENCH CONTEXT (corrected): t une décomposition irredondante de
+$\mathcal F\otimes_k\mathcal G$, il suffit donc de prouver que
+l'homomorphisme canonique
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$
+est injectif~; or, il est composé des homomorphismes
+$\mathcal F\otimes_k\mathcal G
+\longrightarrow\bigoplus_{\lambda,\mu}(\mathcal F_\lambda\otimes_k\mathcal G_\mu)
+\longrightarrow\bigoplus_{\lambda,\mu,\nu}\mathcal H_{\lambda\mu\nu}$~;
+le second de ces homomorphismes est injectif par définition, et il en est de
+même du premier, qui n'est autre que le produit tensoriel des homomorphismes
+canoniques injectifs
+$\mathcal F\to\bigoplus_\lambda\mathcal F_\lambda$,
+$\mathcal G\to\bigoplus_\mu\mathcal G_\mu$
+
+[id 12834]
+OLD: \emph{plats sur $k$}
+NEW: \emph{plats} sur $k$
+FRENCH CONTEXT (corrected):  en est de
+même du premier, qui n'est autre que le produit tensoriel des homomorphismes
+canoniques injectifs
+$\mathcal F\to\bigoplus_\lambda\mathcal F_\lambda$,
+$\mathcal G\to\bigoplus_\mu\mathcal G_\mu$ (on se souviendra que
+$\mathcal F$ et $\mathcal G$ sont \emph{plats} sur $k$). Enfin, si
+$(\mathcal F_\lambda)$ et $(\mathcal G_\mu)$ sont réduites, on peut supposer
+que $L=\operatorname{Ass}(\mathcal F)$ et
+$M=\operatorname{Ass}(\mathcal G)$~; le fait que les
+$\mathcal H_{\lambda\mu\nu}$ forment alors une décomposition réduite résult
+
+=================== PAGE IV-2 58 ===================
+----- (English page IV-2 57: shown above in this file) -----
+----- (English page IV-2 58: shown above in this file) -----
+----- English, components/03_section43_tensor_products_of_fields.tex, page IV-2 59 -----
+\oldpage[IV-2]{59}
+
+\begin{proposition}[4.3.9]
+\phantomsection
+\label{IV.4.3.9}
+If $k$ is algebraically closed, then the ring $L\otimes_k K$ is an
+integral domain for every two extensions $K$ and $L$ of $k$; conversely,
+if this conclusion holds for every such pair, then $k$ is algebraically
+closed.
+\end{proposition}
+
+\begin{proof}
+This follows from \sref{IV.4.3.3} and \sref{IV.4.3.6}, since a field
+that is both perfect and separably closed is algebraically closed.
+\end{proof}
+----- English, components/04_section44_irreducible_connected_over_algebraically_closed.tex, page IV-2 59 -----
+\subsection{Irreducible preschemes and connected preschemes over an algebraically closed field}
+\label{subsection:IV.4.4}
+
+\begin{env}[4.4.1]
+\phantomsection
+\label{IV.4.4.1}
+Let $k$ be a field, let $X$ be a $k$-prescheme, and let $K$ be an
+extension of $k$.
+Since the morphism $\Spec(K)\longrightarrow\Spec(k)$
+is faithfully flat, quasi-compact, and universally open
+\sref{IV.2.4.9}, the same is true of the projection $p:X\otimes_k K\longrightarrow X$
+\sref{IV.2.2.13}.
+It therefore follows from \sref{IV.2.3.5} that every irreducible
+component of $X\otimes_k K$ dominates an irreducible component of $X$,
+and, since $p$ is surjective, every irreducible component of $X$ is
+dominated by an irreducible component of $X\otimes_k K$.
+Thus $p$ induces a surjective map from the set of irreducible components
+of $X\otimes_k K$ to the set of irreducible components of $X$.
+
+Likewise, because $p$ is continuous and surjective, every connected
+component of $X$ is the image under $p$ of a union of connected
+components of $X\otimes_k K$.
+Hence there is a surjective map from the set of connected components of
+$X\otimes_k K$ to the set of connected components of $X$.
+It follows that every irreducible (resp.\ connected) component $Z'$ of
+$X\otimes_k K$ is contained in a unique set of the form $p^{-1}(Z)$,
+where $Z$ is an irreducible (resp.\ connected) component of $X$.
+For every sub-prescheme of $X$ having $Z$ as its underlying space (and
+again denoted by $Z$), the space $Z'$ is an irreducible
+(resp.\ connected) component of $Z\otimes_k K$.
+
+In particular, suppose that $X\otimes_k K$ has finitely many
+irreducible (resp.\ connected) components, say $n$ (resp.\ $n'$).
+This is the case when $X$ is of finite type over $k$, since then
+$X\otimes_k K$ is of finite type over $K$ and hence Noetherian.
+The number of irreducible (resp.\ connected) components of $X$ is then
+at most $n$ (resp.\ at most $n'$).
+Equality with $n$ (resp.\ $n'$) means that, for every reduced
+sub-prescheme $Z$ of $X$ whose underlying space is an irreducible
+(resp.\ connected) component of $X$, the prescheme $Z\otimes_k K$ is
+irreducible (resp.\ connected) \sref[I]{I.5.1.8}.
+Consequently, the number of irreducible (resp.\ connected) components of
+$X\otimes_k K$ is independent of $K$ if and only if, for every
+irreducible (resp.\ connected) component $Z$ of $X$, the prescheme
+$Z\otimes_k K$ is irreducible (resp.\ connected) for every extension
+$K$ of $k$.
+
+In particular, if $X\otimes_k K$ is irreducible (resp.\ connected), then
+so is $X$, as also follows directly from the surjectivity of $p$.
+Similarly, if $X\otimes_k K$ is reduced (resp.\ integral), then so is
+$X$, since $p$ is faithfully flat \sref{IV.2.1.13}.
+
+In this number and the next, we shall examine more closely what can be
+said about the irreducible (resp.\ connected) components of
+$X\otimes_k K$ as $K$ varies.
+The preceding observations already show that the number of these
+components is an increasing function of $K$.
+\end{env}
+
+\begin{lemma}[4.4.2]
+\phantomsection
+\label{IV.4.4.2}
+Let $X'$ and $X$ be two topological spaces, and let
+$f:X'\to X$ be a continuous map.
+Suppose that the following conditions hold:
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.4.2.i}
+$f$ is open and surjective (resp.\ the topological space $X$ is
+canonically identified with the quotient of $X'$ by the equivalence
+relation defined by $f$);
+----- French corrections on page IV-2 58 -----
+[id 12836]
+OLD: \subsection{Rappels sur les produits tensoriels de corps}
+NEW: \subsection{Rappels sur les produits tensoriels de corps.}
+FRENCH CONTEXT (corrected): ante de
+$\mathcal F\otimes_k K$~; elle est réduite si $(\mathcal F_\lambda)$ l'est.
+\end{corollary}
+
+\begin{proof}
+On applique (4.2.9) avec $Y=\operatorname{Spec}(K)$,
+$\mathcal G=\mathcal O_Y=K$, $M$ réduit à un seul élément.
+\end{proof}
+
+\oldpage[IV-2]{58}
+
+\subsection{Rappels sur les produits tensoriels de corps.}
+\label{subsection:IV.2.4.3-fr}
+
+Pour la commodité du lecteur, nous rappelons ici certaines propriétés des
+produits tensoriels de corps dont nous ferons usage dans les numéros suivants~;
+pour les démonstrations, nous renvoyons à [1].
+
+\begin{env}[4.3.1]
+\label
+
+[id 12837]
+OLD: $k(\xi)$
+NEW: $\boldsymbol{k}(\xi)$
+FRENCH CONTEXT (corrected): k$ lui-même.
+\end{env}
+
+\begin{proposition}[4.3.2]
+\label{IV.2.4.3.2-fr}
+Soient $K$, $L$ deux extensions d'un corps $k$. Si $L$ est une extension
+primaire de $k$, alors $\operatorname{Spec}(L\otimes_k K)$ est irréductible,
+et si $\xi$ est son point générique, $\boldsymbol{k}(\xi)$ est une extension primaire de
+$K$. Réciproquement, si pour toute extension finie séparable $K$ de $k$,
+$\operatorname{Spec}(L\otimes_k K)$ est irréductible, $L$ est une extension
+primaire de $k$.
+\end{proposition}
+
+\begin{proof}
+Voir la démonstration dans [1]
+
+[id 12838]
+OLD: (i.e. si sa clôture algébrique est radicielle sur
+$k$),
+NEW: \textup{(i.e.} si sa clôture algébrique est radicielle sur
+$k$\textup{)},
+FRENCH CONTEXT (corrected): atorname{Spec}(L\otimes_k K)$ est irréductible, $L$ est une extension
+primaire de $k$.
+\end{proposition}
+
+\begin{proof}
+Voir la démonstration dans [1], p.~14-03 à 14-06.
+\end{proof}
+
+\begin{corollary}[4.3.3]
+\label{IV.2.4.3.3-fr}
+Si $k$ est séparablement clos \textup{(i.e.} si sa clôture algébrique est radicielle sur
+$k$\textup{)}, alors, pour deux extensions quelconques $K$, $L$ de $k$,
+$\operatorname{Spec}(L\otimes_k K)$ est irréductible, et réciproquement.
+\end{corollary}
+
+\begin{proof}
+Cela découle aussitôt de (4.3.2).
+\end{proof}
+
+\begin{corollary}[4.3.4]
+\label{IV.2.4.3.4-fr}
+Soie
+
+[id 12839]
+OLD: (parfois appelée la
+\emph{fermeture algébrique séparable} de $k$ dans $L$)
+NEW: \textup{(parfois appelée la
+\emph{fermeture algébrique séparable} de $k$ dans $L$)}
+FRENCH CONTEXT (corrected):  réciproquement.
+\end{corollary}
+
+\begin{proof}
+Cela découle aussitôt de (4.3.2).
+\end{proof}
+
+\begin{corollary}[4.3.4]
+\label{IV.2.4.3.4-fr}
+Soient $L$ une extension d'un corps $k$, $L_s$ la plus grande extension
+algébrique séparable de $k$ contenue dans $L$ \textup{(parfois appelée la
+\emph{fermeture algébrique séparable} de $k$ dans $L$)}~; supposons $L_s$ de
+degré fini sur $k$, et soit $K$ une extension galoisienne de $k$ contenant
+$L_s$. Alors $\operatorname{Spec}(L\otimes_k K)$ a $[L_s:k]$ composantes
+irréductibles dont il est la somme et les corps résiduels aux points génériques
+de ces com
+
+[id 12840]
+OLD: soit finie sur $k$, alors
+NEW: soit finie sur $k$~; alors
+FRENCH CONTEXT (corrected): imes_k L$ est réduit, et réciproquement.
+\end{corollary}
+
+\begin{proof}
+Cela résulte aussitôt de (4.3.5).
+\end{proof}
+
+\begin{corollary}[4.3.7]
+\label{IV.2.4.3.7-fr}
+Soit $L$ une extension séparable de $k$ et soit $K$ une extension de $k$ telle
+que $K$ ou $L$ soit finie sur $k$~; alors les corps résiduels de l'anneau
+semi-local $L\otimes_k K$ sont des extensions séparables de $K$.
+\end{corollary}
+
+\begin{proof}
+On sait en effet que $L\otimes_k K$ est composé direct de ces corps résiduels
+$E_i$~; pour toute extension $K'$ de $K$, $L\otimes_k
+
+=================== PAGE IV-2 59 ===================
+----- (English page IV-2 58: shown above in this file) -----
+----- (English page IV-2 59: shown above in this file) -----
+----- English, components/04_section44_irreducible_connected_over_algebraically_closed.tex, page IV-2 60 -----
+\oldpage[IV-2]{60}
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.4.2.ii}
+for every $x\in X$, the fibre $f^{-1}(x)$ is irreducible
+(resp.\ connected).
+\end{enumerate}
+Then $X'$ is irreducible (resp.\ connected) if and only if $X$ is.
+\end{lemma}
+
+\begin{proof}
+The assertion concerning connectedness is Bourbaki,
+\emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~11, no.~3, prop.~7.
+We prove the assertion concerning irreducibility.
+The condition is plainly necessary because $f$ is surjective; let us
+prove that it is sufficient.
+
+Let $X'_1$ and $X'_2$ be two closed subsets of $X'$ such that
+$X'=X'_1\cup X'_2$, and, for $i=1,2$, let $X_i$ be the set of
+$x\in X$ such that $f^{-1}(x)\subset X'_i$.
+Then
+\[
+X-X_i=f(X'\setmin X'_i),
+\]
+and, since $f$ is open, $X_i$ is a closed subset of $X$.
+For every $x\in X$, the fibre $f^{-1}(x)$ is irreducible by hypothesis
+and is the union of the two closed subsets
+\[
+X'_1\cap f^{-1}(x)
+\quad\text{and}\quad
+X'_2\cap f^{-1}(x).
+\]
+One of them must equal $f^{-1}(x)$, so $x\in X_1$ or $x\in X_2$.
+Thus $X=X_1\cup X_2$.
+Since $X$ is irreducible, $X=X_1$ or $X=X_2$, and therefore
+$X'=X'_1$ or $X'=X'_2$.
+\end{proof}
+
+\begin{remark}[4.4.3]
+\phantomsection
+\label{IV.4.4.3}
+If the topology of $X$ is not the quotient of that of $X'$ by the
+equivalence relation defined by $f$, it can happen that $X$ and all the
+fibres $f^{-1}(x)$ are irreducible without $X'$ being connected.
+For example, take for $X$ an irreducible scheme---the affine line
+$\Spec(k[T])$ over an algebraically closed field $k$, say---choose a
+closed point $x_0$ of $X$, and take for $X'$ the topological sum of
+$\{x_0\}$ and the open subspace $X\setmin\{x_0\}$ of $X$.
+
+Likewise, if the hypothesis that $f$ is open is replaced by the
+hypothesis that $f$ is closed, or even proper, then it can happen that
+$X$ and all the fibres $f^{-1}(x)$ are irreducible without $X'$ being
+irreducible, even though this replacement does ensure that the topology
+of $X$ is the quotient of that of $X'$ by the relation defined by $f$.
+Again take $X$ to be the affine line over $k$, and put $S=X\times_k P$,
+where $P$ is the projective line over $k$.
+Let $x_0$ be a closed point of $X$, let $t_0$ be a closed point of
+$P$, and let
+\[
+p:S\longrightarrow X,
+\qquad
+q:S\longrightarrow\mathbf P
+\]
+be the projections.
+Let $X'$ be the reduced sub-prescheme whose underlying space is the
+closed set $p^{-1}(x_0)\cup q^{-1}(t_0)$,
+and let $f$ be the restriction of $p$ to $X'$.
+Then $f$ is proper, but $X'$ is not irreducible.
+\end{remark}
+
+\begin{theorem}[4.4.4]
+\phantomsection
+\label{IV.4.4.4}
+Let $k$ be an algebraically closed field and let $X$ be a
+$k$-prescheme.
+If $X$ is irreducible (resp.\ connected), then $X\otimes_k K$ is
+irreducible (resp.\ connected) for every extension $K$ of $k$.
+\end{theorem}
+
+\begin{proof}
+We saw in \sref{IV.4.4.1} that $p:X\otimes_k K\longrightarrow X$
+is faithfully flat and open.
+To apply \sref{IV.4.4.2}, it therefore suffices to verify that every
+fibre $p^{-1}(x)$ is irreducible.
+The $\kappa(x)$-prescheme $p^{-1}(x)$ is isomorphic to
+\[
+\Spec\bigl(\kappa(x)\otimes_k K\bigr)
+\]
+\sref[I]{I.3.6.2}, and is therefore integral by the hypothesis on $k$
+and \sref{IV.4.3.9}.
+\end{proof}
+
+\begin{corollary}[4.4.5]
+\phantomsection
+\label{IV.4.4.5}
+Let $k$ be an algebraically closed field, let $X$ be a $k$-prescheme,
+let $K$ be an extension of $k$, and let $p:X\otimes_k K\longrightarrow X$
+be the canonical projection.
+If $Z$ is an irreducible (resp.\ connected) subset of $X$, then
+$p^{-1}(Z)$ is irreducible (resp.\ connected).
+In particular, if $X_0$ is an irreducible component
+(resp.\ the connected component) of $X$ containing $Z$, then
+$p^{-1}(X_0)$ is an irreducible (resp.\ connected) component of
+$X\otimes_k K$ containing $p^{-1}(Z)$.
+\end{corollary}
+
+\begin{proof}
+The second assertion follows from \sref{IV.4.4.1} and the first assertion
+applied after replacing $Z$ by $X_0$.
+To prove the first, let $X'$ be the underlying space of
+$X\otimes_k K$, and put $Z'=p^{-1}(Z)$.
+----- French corrections on page IV-2 59 -----
+[id 12841]
+OLD: algébriquement clos}
+NEW: algébriquement clos.}
+FRENCH CONTEXT (corrected): t intègre, et réciproquement.
+\end{proposition}
+
+\begin{proof}
+C'est une conséquence de (4.3.3) et (4.3.6), un corps parfait et séparablement
+clos étant algébriquement clos.
+\end{proof}
+
+\subsection{Préschémas irréductibles et préschémas connexes sur un corps
+algébriquement clos.}
+\label{subsection:IV.2.4.4-fr}
+
+\begin{env}[4.4.1]
+\label{IV.2.4.4.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $K$ une extension de $k$. Comme le
+morphisme $\operatorname{Spec}(K)\to\operatorname{Spec}(k)$ est fidèlement
+plat, quasi-compact, et universel
+
+[id 12842]
+OLD: \emph{de type fini sur
+$k$}
+NEW: \emph{de type fini} sur
+$k$
+FRENCH CONTEXT (corrected): ace sous-jacent (et encore noté $Z$), $Z'$ est une
+composante irréductible (resp. connexe) de $Z\otimes_k K$. En particulier, si
+$X\otimes_k K$ a un nombre fini $n$ (resp. $n'$) de composantes irréductibles
+(resp. connexes) (ce qui sera le cas lorsque $X$ est \emph{de type fini} sur
+$k$, car alors $X\otimes_k K$ est de type fini sur $K$, donc noethérien), le
+nombre de composantes irréductibles (resp. connexes) de $X$ est $\leqslant n$
+(resp. $\leqslant n'$)~; dire qu'il est égal à $n$ (resp. $n'$) signifie que
+pour tout sous-préschéma réduit
+
+[id 12845]
+OLD: ouverte (resp. telle que
+NEW: ouverte \textup{(resp.} telle que
+FRENCH CONTEXT (corrected): mma}[4.4.2]
+\EGAReaderTarget{ega4.c04.lem.4-4-2}{IV.2.4.4.2-fr}
+Soient $X'$, $X$ deux espaces topologiques, $f:X'\to X$ une application
+continue. On suppose que les conditions suivantes sont vérifiées~:
+\begin{enumerate}
+\item[\textup{(i)}] $f$ est surjective ouverte \textup{(resp.} telle que l'espace topologique
+$X$ s'identifie canoniquement au quotient de $X'$ par la relation d'équivalence
+définie par $f$\textup{)}.
+
+\oldpage[IV-2]{60}
+
+\item[\textup{(ii)}] Pour tout $x\in X$, $f^{-1}(x)$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{
+
+[id 12846]
+OLD: définie par $f$).
+NEW: définie par $f$\textup{)}.
+FRENCH CONTEXT (corrected): 
+continue. On suppose que les conditions suivantes sont vérifiées~:
+\begin{enumerate}
+\item[\textup{(i)}] $f$ est surjective ouverte \textup{(resp.} telle que l'espace topologique
+$X$ s'identifie canoniquement au quotient de $X'$ par la relation d'équivalence
+définie par $f$\textup{)}.
+
+\oldpage[IV-2]{60}
+
+\item[\textup{(ii)}] Pour tout $x\in X$, $f^{-1}(x)$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{enumerate}
+Alors pour que $X'$ soit irréductible \textup{(resp.} connexe\textup{)}, il faut et il suffit
+que $X$ le soit.
+\end{l
+
+=================== PAGE IV-2 60 ===================
+----- (English page IV-2 59: shown above in this file) -----
+----- (English page IV-2 60: shown above in this file) -----
+----- English, components/04_section44_irreducible_connected_over_algebraically_closed.tex, page IV-2 61 -----
+\oldpage[IV-2]{61}
+
+The equivalence relation $R$ defined by $p$ on $X'$ is open.
+The induced relation $R_{Z'}$ on the saturated subset $Z'$ is therefore
+also open, and $Z$ identifies with the quotient space $Z'/R_{Z'}$
+(Bourbaki, \emph{Top.\ g\'en.}, chap.~I, 3rd ed., \S~5, no.~2,
+prop.~4).
+We may thus apply \sref{IV.4.4.2} to $Z$ and $Z'$, proving the first
+assertion of \sref{IV.4.4.5}.
+\end{proof}
+
+\begin{corollary}[4.4.6]
+\phantomsection
+\label{IV.4.4.6}
+Under the hypotheses and notation of \sref{IV.4.4.5}, the map
+\[
+Z\longmapsto p^{-1}(Z)
+\]
+is a bijection from the set of irreducible (resp.\ connected)
+components of $X$ to the set of irreducible (resp.\ connected)
+components of $X\otimes_k K$.
+Its inverse is
+\[
+Z'\longmapsto p(Z').
+\]
+\end{corollary}
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 61 -----
+\subsection{Geometrically irreducible and geometrically connected preschemes}
+\label{subsection:IV.4.5}
+\label{IV.4.5}
+
+\begin{proposition}[4.5.1]
+\phantomsection
+\label{IV.4.5.1}
+Let $k$ be a field, let $X$ be a $k$-prescheme, and let $\Omega$ be an
+algebraically closed extension of $k$.
+Let $n$ (resp.\ $n'$) be the cardinality of the set of irreducible
+components (resp.\ connected components) of $X\otimes_k\Omega$.
+This cardinality is independent of the chosen algebraically closed
+extension $\Omega$.
+Moreover, for every extension $K$ of $k$, the cardinality of the set of
+irreducible components (resp.\ connected components) of $X\otimes_k K$
+is at most $n$ (resp.\ at most $n'$).
+\end{proposition}
+
+\begin{proof}
+Two algebraically closed extensions $\Omega$ and $\Omega'$ of $k$ may
+always be regarded as subextensions of a common extension $E$ of $k$.
+Applying \sref{IV.4.4.6} to $X\otimes_k\Omega$ and
+$X\otimes_k\Omega'$, and to the common extensions $E/\Omega$ and
+$E/\Omega'$, proves the first assertion.
+For the second, take $\Omega$ to be an algebraically closed extension of
+$K$ and use \sref{IV.4.4.1}.
+\end{proof}
+
+\begin{definition}[4.5.2]
+\phantomsection
+\label{IV.4.5.2}
+The cardinality $n$ (resp.\ $n'$) of \sref{IV.4.5.1} is called the
+\emph{geometric number of irreducible components}
+(resp.\ \emph{of connected components}) of $X$ relative to $k$.
+If $n=1$ (resp.\ $n'\leq 1$), the $k$-prescheme $X$ is said to be
+\emph{geometrically irreducible} (resp.\ \emph{geometrically
+connected}).
+\end{definition}
+
+This recovers the definition given in the special case
+\sref[III]{III.4.3.4}.
+By \sref{IV.4.5.1}, the following properties are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.5.2.a}
+$X$ is geometrically irreducible (resp.\ geometrically connected);
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.5.2.b}
+for one algebraically closed extension $\Omega$ of $k$,
+$X\otimes_k\Omega$ is irreducible (resp.\ connected);
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.5.2.c}
+for every extension $K$ of $k$, $X\otimes_k K$ is irreducible
+(resp.\ connected).
+\end{enumerate}
+
+\begin{env}[4.5.3]
+\phantomsection
+\label{IV.4.5.3}
+Let $X$ be a $k$-prescheme and let $Z$ be a locally closed subset of
+$X$.
+If any sub-prescheme of $X$ having $Z$ as underlying space is again
+denoted by $Z$ \sref[I]{I.5.2.1}, it follows from \sref[I]{I.5.1.8}
+that, for an extension $K$ of $k$, the number of irreducible
+(resp.\ connected) components of $Z\otimes_k K$ is independent of the
+chosen sub-prescheme with underlying space $Z$.
+The \emph{geometric number of irreducible components}
+(resp.\ \emph{of connected components}) of $Z$ is therefore defined to
+be that of any sub-prescheme of $X$ having $Z$ as underlying space.
+\end{env}
+
+\begin{proposition}[4.5.4]
+\phantomsection
+\label{IV.4.5.4}
+Let $X$ and $Y$ be two $k$-preschemes, and let $f:X\to Y$ be a
+surjective $k$-morphism.
+If $X$ is geometrically irreducible (resp.\ geometrically connected),
+then so is $Y$.
+\end{proposition}
+----- French corrections on page IV-2 60 -----
+[id 12589]
+OLD: \item[(ii)]
+NEW: \item[\textup{(ii)}]
+FRENCH CONTEXT (corrected): es sont vérifiées~:
+\begin{enumerate}
+\item[\textup{(i)}] $f$ est surjective ouverte \textup{(resp.} telle que l'espace topologique
+$X$ s'identifie canoniquement au quotient de $X'$ par la relation d'équivalence
+définie par $f$\textup{)}.
+
+\oldpage[IV-2]{60}
+
+\item[\textup{(ii)}] Pour tout $x\in X$, $f^{-1}(x)$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{enumerate}
+Alors pour que $X'$ soit irréductible \textup{(resp.} connexe\textup{)}, il faut et il suffit
+que $X$ le soit.
+\end{lemma}
+
+\begin{proof}
+L'assertion relative 
+
+[id 12590]
+OLD: est irréductible (resp. connexe).
+\end{enumerate}
+NEW: est irréductible \textup{(resp.} connexe\textup{)}.
+\end{enumerate}
+FRENCH CONTEXT (corrected): i)}] $f$ est surjective ouverte \textup{(resp.} telle que l'espace topologique
+$X$ s'identifie canoniquement au quotient de $X'$ par la relation d'équivalence
+définie par $f$\textup{)}.
+
+\oldpage[IV-2]{60}
+
+\item[\textup{(ii)}] Pour tout $x\in X$, $f^{-1}(x)$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{enumerate}
+Alors pour que $X'$ soit irréductible \textup{(resp.} connexe\textup{)}, il faut et il suffit
+que $X$ le soit.
+\end{lemma}
+
+\begin{proof}
+L'assertion relative à la connexité n'est autre que Bourbaki,
+\emph{Top. gén.}, chap.~I\textsuperscript{er}, 3\textsupers
+
+[id 12591]
+OLD: soit irréductible (resp. connexe), il faut
+NEW: soit irréductible \textup{(resp.} connexe\textup{)}, il faut
+FRENCH CONTEXT (corrected): ntifie canoniquement au quotient de $X'$ par la relation d'équivalence
+définie par $f$\textup{)}.
+
+\oldpage[IV-2]{60}
+
+\item[\textup{(ii)}] Pour tout $x\in X$, $f^{-1}(x)$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{enumerate}
+Alors pour que $X'$ soit irréductible \textup{(resp.} connexe\textup{)}, il faut et il suffit
+que $X$ le soit.
+\end{lemma}
+
+\begin{proof}
+L'assertion relative à la connexité n'est autre que Bourbaki,
+\emph{Top. gén.}, chap.~I\textsuperscript{er}, 3\textsuperscript{e} éd.,
+\S~11, n\textsuperscript{o}~3, prop.~7. Prouvons l'assertion relati
+
+[id 12592]
+OLD: $X_i=X-f
+NEW: $X_i=X\setmin f
+FRENCH CONTEXT (corrected): écessaire puisque $f$
+est surjective, prouvons qu'elle est suffisante. Soient donc $X'_1$, $X'_2$
+deux parties fermées de $X'$ telles que $X'=X'_1\cup X'_2$, et désignons par
+$X_i$ $(i=1,2)$ l'ensemble des $x\in X$ tels que $f^{-1}(x)\subset X'_i$~; on
+a donc $X_i=X\setmin f(X'\setmin X'_i)$, et comme $f$ est ouverte, on en conclut que $X_i$
+est une partie \emph{fermée} de $X$ $(i=1,2)$. D'autre part, pour tout
+$x\in X$, $f^{-1}(x)$ est irréductible par hypothèse, et est réunion des deux
+parties fermées $X'_1\cap f^{-1}(x)$ et $X
+
+[id 12597]
+OLD: point fermé de $\mathbf P$
+NEW: point fermé de $P$
+FRENCH CONTEXT (corrected): $ et toutes les fibres $f^{-1}(x)$ soient irréductibles sans que $X'$ le
+soit. Prenons encore pour $X$ la droite affine sur $k$, désignons par $S$ le
+produit $X\times_k P$, où $P$ est la droite projective sur
+$k$~; si $x_0$ est un point fermé de $X$, $t_0$ un point fermé de $P$,
+$p:S\to X$, $q:S\to P$ les projections, désignons par $X'$ le
+sous-préschéma réduit ayant pour espace sous-jacent l'ensemble fermé
+$p^{-1}(x_0)\cup q^{-1}(t_0)$, et prenons pour $f$ la restriction à $X'$ de
+$p$~; $f$ est propre mais $X'$ n'est pas irréductib
+
+[id 12598]
+OLD: $q:S\to\mathbf P$
+NEW: $q:S\to P$
+FRENCH CONTEXT (corrected): )$ soient irréductibles sans que $X'$ le
+soit. Prenons encore pour $X$ la droite affine sur $k$, désignons par $S$ le
+produit $X\times_k P$, où $P$ est la droite projective sur
+$k$~; si $x_0$ est un point fermé de $X$, $t_0$ un point fermé de $P$,
+$p:S\to X$, $q:S\to P$ les projections, désignons par $X'$ le
+sous-préschéma réduit ayant pour espace sous-jacent l'ensemble fermé
+$p^{-1}(x_0)\cup q^{-1}(t_0)$, et prenons pour $f$ la restriction à $X'$ de
+$p$~; $f$ est propre mais $X'$ n'est pas irréductible.
+\end{remark}
+
+\begin
+
+[id 12599]
+OLD: (resp. connexe), il en est de même de $X\otimes_k K$
+NEW: \textup{(resp.} connexe\textup{)}, il en est de même de $X\otimes_k K$
+FRENCH CONTEXT (corrected): q^{-1}(t_0)$, et prenons pour $f$ la restriction à $X'$ de
+$p$~; $f$ est propre mais $X'$ n'est pas irréductible.
+\end{remark}
+
+\begin{theorem}[4.4.4]
+\label{IV.2.4.4.4-fr}
+Soient $k$ un corps algébriquement clos, $X$ un $k$-préschéma. Si $X$ est
+irréductible \textup{(resp.} connexe\textup{)}, il en est de même de $X\otimes_k K$ pour toute
+extension $K$ de $k$.
+\end{theorem}
+
+\begin{proof}
+On a vu en effet (4.4.1) que le morphisme $p:X\otimes_k K\to X$ est
+fidèlement plat et ouvert~; pour pouvoir appliquer le lemme (4.4.2), il suffit
+donc de vérifier que les fibres $p^{-1}(x)$ sont i
+
+[id 12600]
+OLD: le $k(x)$-préschéma
+NEW: le $\boldsymbol{k}(x)$-préschéma
+FRENCH CONTEXT (corrected): {theorem}
+
+\begin{proof}
+On a vu en effet (4.4.1) que le morphisme $p:X\otimes_k K\to X$ est
+fidèlement plat et ouvert~; pour pouvoir appliquer le lemme (4.4.2), il suffit
+donc de vérifier que les fibres $p^{-1}(x)$ sont irréductibles pour tout
+$x\in X$. Mais le $\boldsymbol{k}(x)$-préschéma $p^{-1}(x)$ est isomorphe à
+$\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)$ (\textbf{I}, 3.6.2), donc intègre en vertu de
+l'hypothèse sur $k$ et de (4.3.9).
+\end{proof}
+
+\begin{corollary}[4.4.5]
+\label{IV.2.4.4.5-fr}
+Soient $k$ un corps algébriquement clo
+
+[id 12601]
+OLD: \operatorname{Spec}(k(x)\otimes_k K)
+NEW: \operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)
+FRENCH CONTEXT (corrected): isme $p:X\otimes_k K\to X$ est
+fidèlement plat et ouvert~; pour pouvoir appliquer le lemme (4.4.2), il suffit
+donc de vérifier que les fibres $p^{-1}(x)$ sont irréductibles pour tout
+$x\in X$. Mais le $\boldsymbol{k}(x)$-préschéma $p^{-1}(x)$ est isomorphe à
+$\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)$ (\textbf{I}, 3.6.2), donc intègre en vertu de
+l'hypothèse sur $k$ et de (4.3.9).
+\end{proof}
+
+\begin{corollary}[4.4.5]
+\label{IV.2.4.4.5-fr}
+Soient $k$ un corps algébriquement clos, $X$ un $k$-préschéma, $K$ une
+extension de $k$, $p:X\otimes_k K\to X$ la pro
+
+[id 12603]
+OLD: partie irréductible (resp. connexe) de $X$
+NEW: partie irréductible \textup{(resp.} connexe\textup{)} de $X$
+FRENCH CONTEXT (corrected): e en vertu de
+l'hypothèse sur $k$ et de (4.3.9).
+\end{proof}
+
+\begin{corollary}[4.4.5]
+\label{IV.2.4.4.5-fr}
+Soient $k$ un corps algébriquement clos, $X$ un $k$-préschéma, $K$ une
+extension de $k$, $p:X\otimes_k K\to X$ la projection canonique. Si $Z$ est
+une partie irréductible \textup{(resp.} connexe\textup{)} de $X$, $p^{-1}(Z)$ est irréductible
+\textup{(resp.} connexe\textup{)}~; en particulier, si $X_0$ est une composante irréductible
+\textup{(resp.} la composante connexe\textup{)} de $X$ contenant $Z$, $p^{-1}(X_0)$ est une
+composante irréductible \textup{(resp.} conn
+
+[id 12604]
+OLD: (resp. connexe)~; en particulier
+NEW: \textup{(resp.} connexe\textup{)}~; en particulier
+FRENCH CONTEXT (corrected): el{IV.2.4.4.5-fr}
+Soient $k$ un corps algébriquement clos, $X$ un $k$-préschéma, $K$ une
+extension de $k$, $p:X\otimes_k K\to X$ la projection canonique. Si $Z$ est
+une partie irréductible \textup{(resp.} connexe\textup{)} de $X$, $p^{-1}(Z)$ est irréductible
+\textup{(resp.} connexe\textup{)}~; en particulier, si $X_0$ est une composante irréductible
+\textup{(resp.} la composante connexe\textup{)} de $X$ contenant $Z$, $p^{-1}(X_0)$ est une
+composante irréductible \textup{(resp.} connexe\textup{)} de $X\otimes_k K$ contenant
+$p^{-1}(Z)$.
+\end{corollary}
+
+\begin{pr
+
+[id 12605]
+OLD: (resp. la composante connexe)
+NEW: \textup{(resp.} la composante connexe\textup{)}
+FRENCH CONTEXT (corrected): nsion de $k$, $p:X\otimes_k K\to X$ la projection canonique. Si $Z$ est
+une partie irréductible \textup{(resp.} connexe\textup{)} de $X$, $p^{-1}(Z)$ est irréductible
+\textup{(resp.} connexe\textup{)}~; en particulier, si $X_0$ est une composante irréductible
+\textup{(resp.} la composante connexe\textup{)} de $X$ contenant $Z$, $p^{-1}(X_0)$ est une
+composante irréductible \textup{(resp.} connexe\textup{)} de $X\otimes_k K$ contenant
+$p^{-1}(Z)$.
+\end{corollary}
+
+\begin{proof}
+La seconde assertion résulte de (4.4.1) et de la première appliquée en
+remplaçant $Z$
+
+[id 12606]
+OLD: composante irréductible (resp. connexe) de $X\otimes_k K$
+NEW: composante irréductible \textup{(resp.} connexe\textup{)} de $X\otimes_k K$
+FRENCH CONTEXT (corrected): ble \textup{(resp.} connexe\textup{)} de $X$, $p^{-1}(Z)$ est irréductible
+\textup{(resp.} connexe\textup{)}~; en particulier, si $X_0$ est une composante irréductible
+\textup{(resp.} la composante connexe\textup{)} de $X$ contenant $Z$, $p^{-1}(X_0)$ est une
+composante irréductible \textup{(resp.} connexe\textup{)} de $X\otimes_k K$ contenant
+$p^{-1}(Z)$.
+\end{corollary}
+
+\begin{proof}
+La seconde assertion résulte de (4.4.1) et de la première appliquée en
+remplaçant $Z$ par $X_0$~; pour prouver la première, soient $X'$ l'espace
+sous-jacent à $X\otimes_k K$, $Z'=p^{-1}(Z)$~; la
+\oldpage[I
+
+=================== PAGE IV-2 61 ===================
+----- (English page IV-2 60: shown above in this file) -----
+----- (English page IV-2 61: shown above in this file) -----
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 62 -----
+\oldpage[IV-2]{62}
+
+\begin{proof}
+For every extension $K$ of $k$, the morphism
+\[
+f_K:X\otimes_k K\longrightarrow Y\otimes_k K
+\]
+is surjective \sref[I]{I.3.5.2}.
+Since $X\otimes_k K$ is irreducible (resp.\ connected) by hypothesis,
+the same is true of $Y\otimes_k K$.
+\end{proof}
+
+\begin{definition}[4.5.5]
+\phantomsection
+\label{IV.4.5.5}
+A morphism $f:X\to Y$ of preschemes is said to be
+\emph{irreducible} (resp.\ \emph{connected}) if, for every $y\in Y$,
+the $\kappa(y)$-prescheme $f^{-1}(y)$ is geometrically irreducible
+(resp.\ geometrically connected).
+\end{definition}
+
+\begin{proposition}[4.5.6]
+\phantomsection
+\label{IV.4.5.6}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.6.i}
+Let $X$ be a $k$-prescheme and let $K$ be an extension of $k$.
+The geometric number of irreducible components (resp.\ connected
+components) of the $K$-prescheme $X\otimes_k K$, relative to $K$, is
+equal to the geometric number of irreducible components
+(resp.\ connected components) of $X$, relative to $k$.
+In particular, $X\otimes_k K$ is geometrically irreducible
+(resp.\ geometrically connected) as a $K$-prescheme if and only if
+$X$ is so as a $k$-prescheme.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.6.ii}
+Let $f:X\to Y$ and $g:Y'\to Y$ be two morphisms, and put
+\[
+X'=X_{(Y')}=X\times_Y Y',
+\qquad
+f'=f_{(Y')}:X'\longrightarrow Y'.
+\]
+If $f$ is irreducible (resp.\ connected), then so is $f'$.
+The converse holds if $g$ is surjective.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+For (i), if $\Omega$ is an algebraically closed extension of $K$, then
+\[
+X\otimes_k\Omega
+  =(X\otimes_k K)\otimes_K\Omega,
+\]
+which proves the assertion.
+
+For (ii), for every $y'\in Y'$, put $y=g(y')$.
+Then
+\[
+f'^{-1}(y')
+  =f^{-1}(y)\otimes_{\kappa(y)}\kappa(y')
+\]
+\sref[I]{I.3.6.4}, so both assertions follow from (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\phantomsection
+\label{IV.4.5.7}
+Let $f:X\to Y$ be a surjective irreducible (resp.\ connected)
+morphism, let $g:Y'\to Y$ be a morphism, and put
+$X'=X\times_Y Y'$.
+Suppose in addition that $Y'$ is irreducible (resp.\ connected), and
+that $f$ is universally open (resp.\ flat and quasi-compact, or
+universally open, or universally closed).
+Then $X'$ is irreducible (resp.\ connected).
+\end{proposition}
+
+\begin{proof}
+All the properties of $f$ under consideration are stable under base
+change, so it is enough to treat the case $Y'=Y$.
+The result then follows from \sref{IV.4.4.2}, taking
+\sref{IV.2.3.12} into account.
+\end{proof}
+
+\begin{corollary}[4.5.8]
+\phantomsection
+\label{IV.4.5.8}
+Let $X$ and $Y$ be two $k$-preschemes.
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.8.i}
+If $X$ is geometrically irreducible (resp.\ geometrically connected)
+and $Y$ is irreducible (resp.\ connected), then $X\times_k Y$ is
+irreducible (resp.\ connected).
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.8.ii}
+If $X$ and $Y$ are geometrically irreducible
+(resp.\ geometrically connected), then so is $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+For (i), the structure morphism
+$X\to\Spec(k)$ is surjective and universally open
+\sref{IV.2.4.9}, and it is also irreducible (resp.\ connected).
+It is therefore enough to apply \sref{IV.4.5.7}.
+
+For (ii), if $\Omega$ is an algebraically closed extension of $k$, then
+\[
+(X\times_k Y)\otimes_k\Omega
+  =(X\otimes_k\Omega)\times_\Omega(Y\otimes_k\Omega)
+\]
+\sref[I]{I.3.3.10}.
+By hypothesis and \sref{IV.4.5.6}, the two factors on the right are
+geometrically irreducible (resp.\ geometrically connected)
+$\Omega$-preschemes, so (i) applies.
+\end{proof}
+
+\begin{proposition}[4.5.9]
+\phantomsection
+\label{IV.4.5.9}
+Let $X$ be a $k$-prescheme.  The following conditions are equivalent:
+\begin{enumerate}
+\item[\rm(a)]
+\phantomsection
+\label{IV.4.5.9.a}
+$X$ is geometrically irreducible; in other words,
+$X\otimes_k K$ is irreducible for every extension $K$ of $k$;
+
+\item[\rm(b)]
+\phantomsection
+\label{IV.4.5.9.b}
+$X\otimes_k K$ is irreducible for every finite separable extension
+$K$ of $k$;
+
+\item[\rm(c)]
+\phantomsection
+\label{IV.4.5.9.c}
+$X$ is irreducible and, if $x$ is its generic point,
+$\kappa(x)$ is a primary extension of $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that (a) implies (b).
+To see that (b) implies (c), let $K$ be a finite separable extension
+of $k$ and let $p:X\otimes_k K\longrightarrow X$
+be the canonical projection.
+The maximal points of $X\otimes_k K$ are those of the fibre $p^{-1}(x)=\Spec\bigl(\kappa(x)\otimes_k K\bigr)$
+\sref{IV.2.3.4} and $(\mathbf{0}_{\mathrm I},2.1.8)$.
+Thus, saying that this fibre is irreducible for every finite separable
+extension $K$ of $k$ is equivalent, by \sref{IV.4.3.2}, to saying that
+$\kappa(x)$ is a primary extension of $k$.
+Conversely, if (c) holds, the same argument, again using
+\sref{IV.4.3.2}, shows that $X\otimes_k K$ is irreducible for every
+extension $K$ of $k$.
+Hence (c) implies (a).
+\end{proof}
+----- French corrections on page IV-2 61 -----
+[id 12610]
+OLD: $Z\mapsto p^{-1}(Z)$
+NEW: $Z\leadsto p^{-1}(Z)$
+FRENCH CONTEXT (corrected): tsuperscript{o}~2, prop.~4)~; on peut donc appliquer à $Z$ et $Z'$
+le lemme (4.4.2), d'où la première assertion de (4.4.4).
+\end{proof}
+
+\begin{corollary}[4.4.6]
+\label{IV.2.4.4.6-fr}
+Les hypothèses et notations étant celles de \textup{(4.4.5)}, l'application
+$Z\leadsto p^{-1}(Z)$ est une bijection de l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\en
+
+[id 12611]
+OLD: (resp. connexes) de $X$ sur
+NEW: \textup{(resp.} connexes\textup{)} de $X$ sur
+FRENCH CONTEXT (corrected):  d'où la première assertion de (4.4.4).
+\end{proof}
+
+\begin{corollary}[4.4.6]
+\label{IV.2.4.4.6-fr}
+Les hypothèses et notations étant celles de \textup{(4.4.5)}, l'application
+$Z\leadsto p^{-1}(Z)$ est une bijection de l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\end{corollary}
+
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subs
+
+[id 12612]
+OLD: (resp. connexes) de $X\otimes_k K$, dont
+NEW: \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont
+FRENCH CONTEXT (corrected): .2.4.4.6-fr}
+Les hypothèses et notations étant celles de \textup{(4.4.5)}, l'application
+$Z\leadsto p^{-1}(Z)$ est une bijection de l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\end{corollary}
+
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subsection:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k
+
+[id 12613]
+OLD: $Z'\mapsto p(Z')$
+NEW: $Z'\leadsto p(Z')$
+FRENCH CONTEXT (corrected): n
+$Z\leadsto p^{-1}(Z)$ est une bijection de l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\end{corollary}
+
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subsection:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $\Omega$ une extension
+algébriquem
+
+[id 12614]
+OLD: géométriquement
+connexes}
+NEW: géométriquement
+connexes.}
+FRENCH CONTEXT (corrected): {(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\end{corollary}
+
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subsection:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $\Omega$ une extension
+algébriquement close de $k$. Soit $n$ \textup{(resp.} $n'$\textup{)} le cardinal de l'ensemble
+des composantes i
+
+[id 12615]
+OLD: Soit $n$ (resp. $n'$) le
+NEW: Soit $n$ \textup{(resp.} $n'$\textup{)} le
+FRENCH CONTEXT (corrected): 
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subsection:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $\Omega$ une extension
+algébriquement close de $k$. Soit $n$ \textup{(resp.} $n'$\textup{)} le cardinal de l'ensemble
+des composantes irréductibles \textup{(resp.} des composantes connexes\textup{)} de
+$X\otimes_k\Omega$~; ce nombre est indépendant de l'extension algébriquement
+close $\Omega$ choisie. En outre, pour toute extension $K$ de $k$, le cardi
+
+[id 12616]
+OLD: (resp. des composantes connexes) de
+$X\otimes_k\Omega$
+NEW: \textup{(resp.} des composantes connexes\textup{)} de
+$X\otimes_k\Omega$
+FRENCH CONTEXT (corrected): ction:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $\Omega$ une extension
+algébriquement close de $k$. Soit $n$ \textup{(resp.} $n'$\textup{)} le cardinal de l'ensemble
+des composantes irréductibles \textup{(resp.} des composantes connexes\textup{)} de
+$X\otimes_k\Omega$~; ce nombre est indépendant de l'extension algébriquement
+close $\Omega$ choisie. En outre, pour toute extension $K$ de $k$, le cardinal
+de l'ensemble des composantes irréductibles \textup{(resp.} des composantes connexes\textup{)}
+de $X\otimes_k K$ est $\leq
+
+[id 12617]
+OLD: (resp. des composantes connexes)
+de $X\otimes_k K$
+NEW: \textup{(resp.} des composantes connexes\textup{)}
+de $X\otimes_k K$
+FRENCH CONTEXT (corrected): ibles \textup{(resp.} des composantes connexes\textup{)} de
+$X\otimes_k\Omega$~; ce nombre est indépendant de l'extension algébriquement
+close $\Omega$ choisie. En outre, pour toute extension $K$ de $k$, le cardinal
+de l'ensemble des composantes irréductibles \textup{(resp.} des composantes connexes\textup{)}
+de $X\otimes_k K$ est $\leqslant n$ \textup{(resp.} $\leqslant n'$\textup{)}.
+\end{proposition}
+
+\begin{proof}
+En effet, deux extensions algébriquement closes $\Omega$, $\Omega'$ de $k$
+peuvent toujours être considérées comme des sous-extensions d'une même
+extension $E$ de $k$
+
+[id 12618]
+OLD: (resp. $\leqslant n'$)
+NEW: \textup{(resp.} $\leqslant n'$\textup{)}
+FRENCH CONTEXT (corrected): bre est indépendant de l'extension algébriquement
+close $\Omega$ choisie. En outre, pour toute extension $K$ de $k$, le cardinal
+de l'ensemble des composantes irréductibles \textup{(resp.} des composantes connexes\textup{)}
+de $X\otimes_k K$ est $\leqslant n$ \textup{(resp.} $\leqslant n'$\textup{)}.
+\end{proposition}
+
+\begin{proof}
+En effet, deux extensions algébriquement closes $\Omega$, $\Omega'$ de $k$
+peuvent toujours être considérées comme des sous-extensions d'une même
+extension $E$ de $k$~; il suffit alors d'appliquer (4.4.6) à
+$X\otimes_k\Omega$
+
+[id 12619]
+OLD: cardinal $n$ (resp. $n'$)
+NEW: cardinal $n$ \textup{(resp.} $n'$\textup{)}
+FRENCH CONTEXT (corrected): tension commune $E$ de
+$\Omega$ et $\Omega'$ pour démontrer la première assertion. La seconde
+s'obtient en prenant pour $\Omega$ une extension algébriquement close de $K$
+et en utilisant (4.4.1).
+\end{proof}
+
+\begin{definition}[4.5.2]
+\label{IV.2.4.5.2-fr}
+Le cardinal $n$ \textup{(resp.} $n'$\textup{)} de \textup{(4.5.1)} s'appelle le nombre géométrique
+de composantes irréductibles \textup{(resp.} de composantes connexes\textup{)} de $X$
+(relativement à $k$). Si $n=1$ \textup{(resp.} $n'\leqslant1$\textup{)} on dit que $X$ est un
+$k$-préschéma géométriqueme
+
+[id 12621]
+OLD: \emph{nombre géométrique
+de composantes irréductibles}
+NEW: nombre géométrique
+de composantes irréductibles
+FRENCH CONTEXT (corrected): tion. La seconde
+s'obtient en prenant pour $\Omega$ une extension algébriquement close de $K$
+et en utilisant (4.4.1).
+\end{proof}
+
+\begin{definition}[4.5.2]
+\label{IV.2.4.5.2-fr}
+Le cardinal $n$ \textup{(resp.} $n'$\textup{)} de \textup{(4.5.1)} s'appelle le nombre géométrique
+de composantes irréductibles \textup{(resp.} de composantes connexes\textup{)} de $X$
+(relativement à $k$). Si $n=1$ \textup{(resp.} $n'\leqslant1$\textup{)} on dit que $X$ est un
+$k$-préschéma géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)}.
+\end{definitio
+
+[id 12622]
+OLD: (resp. \emph{de composantes connexes})
+NEW: \textup{(resp.} de composantes connexes\textup{)}
+FRENCH CONTEXT (corrected): ga$ une extension algébriquement close de $K$
+et en utilisant (4.4.1).
+\end{proof}
+
+\begin{definition}[4.5.2]
+\label{IV.2.4.5.2-fr}
+Le cardinal $n$ \textup{(resp.} $n'$\textup{)} de \textup{(4.5.1)} s'appelle le nombre géométrique
+de composantes irréductibles \textup{(resp.} de composantes connexes\textup{)} de $X$
+(relativement à $k$). Si $n=1$ \textup{(resp.} $n'\leqslant1$\textup{)} on dit que $X$ est un
+$k$-préschéma géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)}.
+\end{definition}
+
+On retrouve ainsi une définition donnée pour u
+
+[id 12623]
+OLD: (resp. $n'\leqslant1$)
+NEW: \textup{(resp.} $n'\leqslant1$\textup{)}
+FRENCH CONTEXT (corrected): in{definition}[4.5.2]
+\label{IV.2.4.5.2-fr}
+Le cardinal $n$ \textup{(resp.} $n'$\textup{)} de \textup{(4.5.1)} s'appelle le nombre géométrique
+de composantes irréductibles \textup{(resp.} de composantes connexes\textup{)} de $X$
+(relativement à $k$). Si $n=1$ \textup{(resp.} $n'\leqslant1$\textup{)} on dit que $X$ est un
+$k$-préschéma géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)}.
+\end{definition}
+
+On retrouve ainsi une définition donnée pour un cas particulier dans
+(\textbf{III}, 4.3.4). En vertu de (4.5.1), les propriét
+
+[id 12624]
+OLD: \emph{géométriquement irréductible}
+NEW: géométriquement irréductible
+FRENCH CONTEXT (corrected): composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X$ sur l'ensemble des composantes
+irréductibles \textup{(resp.} connexes\textup{)} de $X\otimes_k K$, dont la bijection réciproque
+est $Z'\leadsto p(Z')$.
+\end{corollary}
+
+\subsection{Préschémas géométriquement irréductibles et géométriquement
+connexes.}
+\label{subsection:IV.2.4.5-fr}
+
+\begin{proposition}[4.5.1]
+\label{IV.2.4.5.1-fr}
+Soient $k$ un corps, $X$ un $k$-préschéma, $\Omega$ une extension
+algébriquement close de $k$. Soit $n$ \textup{(resp.} $n'$\textup{)} le cardinal 
+
+[id 12625]
+OLD: (resp. \emph{géométriquement
+connexe})
+NEW: \textup{(resp.} géométriquement
+connexe\textup{)}
+FRENCH CONTEXT (corrected): .1)} s'appelle le nombre géométrique
+de composantes irréductibles \textup{(resp.} de composantes connexes\textup{)} de $X$
+(relativement à $k$). Si $n=1$ \textup{(resp.} $n'\leqslant1$\textup{)} on dit que $X$ est un
+$k$-préschéma géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)}.
+\end{definition}
+
+On retrouve ainsi une définition donnée pour un cas particulier dans
+(\textbf{III}, 4.3.4). En vertu de (4.5.1), les propriétés suivantes sont
+équivalentes~:
+\begin{enumerate}
+\item[$a)$] $X$ est géométriquement irréductible (resp. géométri
+
+[id 12629]
+OLD: (resp. géométriquement connexe), il en
+NEW: \textup{(resp.} géométriquement connexe\textup{)}, il en
+FRENCH CONTEXT (corrected): de $Z$ comme celui de tout
+sous-préschéma de $X$ ayant $Z$ pour espace sous-jacent.
+\end{env}
+
+\begin{proposition}[4.5.4]
+\label{IV.2.4.5.4-fr}
+Soient $X$, $Y$ deux $k$-préschémas, $f:X\to Y$ un $k$-morphisme surjectif.
+Si $X$ est géométriquement irréductible \textup{(resp.} géométriquement connexe\textup{)}, il en
+est de même de $Y$.
+\end{proposition}
+
+\oldpage[IV-2]{62}
+
+\begin{proof}
+En effet, pour toute extension $K$ de $k$, $f_{(K)}:X_{(K)}\to Y_{(K)}$ est
+surjectif (\textbf{I}, 3.5.2), et $X_{(K)}$ étant irréductible (resp. connexe) par
+hypothèse, il en est de mêm
+
+=================== PAGE IV-2 62 ===================
+----- (English page IV-2 61: shown above in this file) -----
+----- (English page IV-2 62: shown above in this file) -----
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 63 -----
+\oldpage[IV-2]{63}
+
+\begin{corollary}[4.5.10]
+\phantomsection
+\label{IV.4.5.10}
+Let $X$ be an irreducible $k$-prescheme, let $x$ be its generic point,
+let $k'$ be the separable algebraic closure of $k$ in $\kappa(x)$,
+and let $k''$ be a Galois extension of $k$, of finite degree or not,
+containing $k'$.
+Suppose that $k'$ is finite over $k$.
+Then the irreducible components of $X\otimes_k k''$ are geometrically
+irreducible; their number is $[k':k]$, and this is also the geometric
+number of irreducible components of $X$.
+\end{corollary}
+
+\begin{proof}
+As in \sref{IV.4.5.9}, it is enough to consider the maximal points of
+\[
+\Spec\bigl(\kappa(x)\otimes_k k''\bigr).
+\]
+By \sref{IV.4.3.4}, there are $[k':k]$ of them, and their residue
+fields, which are also the residue fields at the maximal points of
+$X\otimes_k k''$, are primary extensions of $k''$.
+The result follows from \sref{IV.4.5.9}.
+\end{proof}
+
+\begin{corollary}[4.5.11]
+\phantomsection
+\label{IV.4.5.11}
+Let $X$ be a $k$-prescheme.
+Suppose that $X$ has only finitely many maximal points
+$x_i$ $(1\leq i\leq r)$ and that, for each $i$, the separable
+algebraic closure $k'_i$ of $k$ in $\kappa(x_i)$ has finite degree
+over $k$.
+Then there is a finite separable extension $L$ of $k$ such that the
+irreducible components of $X\otimes_k L$ are geometrically
+irreducible.
+Their number, equal to $\sum_i[k'_i:k]$,
+is the geometric number of irreducible components of $X$.
+\end{corollary}
+
+\begin{proof}
+The maximal points of $X\otimes_k L$ are those of the various fibres
+\[
+\Spec\bigl(\kappa(x_i)\otimes_k L\bigr),
+\]
+by \sref{IV.2.3.4} and $(\mathbf{0}_{\mathrm I},2.1.8)$, applied to
+the irreducible components of $X$ and their inverse images in
+$X\otimes_k L$.
+It therefore suffices to take for $L$ a finite Galois extension of
+$k$ containing all the $k'_i$ and to apply \sref{IV.4.5.10}.
+\end{proof}
+
+Notice that \sref{IV.4.5.11} applies in particular to every
+$k$-prescheme $X$ of finite type over $k$.
+Indeed, $X$ is then Noetherian, so it has only finitely many
+irreducible components; moreover, each $\kappa(x_i)$ is an extension
+of finite type of $k$, and therefore so is the algebraic closure of
+$k$ in $\kappa(x_i)$ ([1], p.~6-06, Lemma~5).
+
+\begin{remarks}[4.5.12]
+\phantomsection
+\label{IV.4.5.12}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.12.i}
+The notions defined in \sref{IV.4.5.2} depend on the base field $k$.
+For brevity, when it is necessary to name the base field, we may say
+``$k$-irreducible'' (resp.\ ``$k$-connected'') instead of
+``geometrically irreducible (resp.\ connected) relative to $k$''.
+This terminology is natural in the context of schemes, but is exactly
+opposite to Weil's.
+For Weil, ``$k$-irreducible'' (resp.\ ``$k$-connected'',
+``$k$-normal'', and so on) designates an intrinsic property of a
+prescheme $X$, independent of the field $k$ chosen as base field
+(that is, independent of the chosen morphism
+$X\to\Spec(k)$); we express these properties simply by saying that
+$X$ is irreducible (resp.\ connected, normal, and so on).
+On the other hand, Weil says ``absolutely irreducible'',
+``absolutely connected'', ``absolutely normal'', and so on, for the
+corresponding notions relative to $X\otimes_k\Omega$, where $\Omega$
+is a suitable algebraically closed extension of $k$.
+This terminology is explained by his different point of view:
+an ``algebraic variety'' $V$ is first given as a geometric object over
+----- French corrections on page IV-2 62 -----
+[id 12631]
+OLD: \emph{irréductible}
+NEW: irréductible
+FRENCH CONTEXT (corrected): ble \textup{(resp.} géométriquement connexe\textup{)}, il en
+est de même de $Y$.
+\end{proposition}
+
+\oldpage[IV-2]{62}
+
+\begin{proof}
+En effet, pour toute extension $K$ de $k$, $f_{(K)}:X_{(K)}\to Y_{(K)}$ est
+surjectif (\textbf{I}, 3.5.2), et $X_{(K)}$ étant irréductible (resp. connexe) par
+hypothèse, il en est de même de $Y_{(K)}$.
+\end{proof}
+
+\begin{definition}[4.5.5]
+\label{IV.2.4.5.5-fr}
+On dit qu'un morphisme $f:X\to Y$ de préschémas est irréductible
+\textup{(resp.} connexe\textup{)}, si, pour tout $y\in Y$, le $\boldsy
+
+[id 12632]
+OLD: (resp. \emph{connexe})
+NEW: \textup{(resp.} connexe\textup{)}
+FRENCH CONTEXT (corrected): )}$ est
+surjectif (\textbf{I}, 3.5.2), et $X_{(K)}$ étant irréductible (resp. connexe) par
+hypothèse, il en est de même de $Y_{(K)}$.
+\end{proof}
+
+\begin{definition}[4.5.5]
+\label{IV.2.4.5.5-fr}
+On dit qu'un morphisme $f:X\to Y$ de préschémas est irréductible
+\textup{(resp.} connexe\textup{)}, si, pour tout $y\in Y$, le $\boldsymbol{k}(y)$-préschéma
+$f^{-1}(y)$ est géométriquement irréductible \textup{(resp.} géométriquement connexe\textup{)}.
+\end{definition}
+
+\begin{proposition}[4.5.6]
+\label{IV.2.4.5.6-fr}
+\begin{enumerate}
+\item[\textup{(i)}] 
+
+[id 12633]
+OLD: le $k(y)$-préschéma
+NEW: le $\boldsymbol{k}(y)$-préschéma
+FRENCH CONTEXT (corrected): rréductible (resp. connexe) par
+hypothèse, il en est de même de $Y_{(K)}$.
+\end{proof}
+
+\begin{definition}[4.5.5]
+\label{IV.2.4.5.5-fr}
+On dit qu'un morphisme $f:X\to Y$ de préschémas est irréductible
+\textup{(resp.} connexe\textup{)}, si, pour tout $y\in Y$, le $\boldsymbol{k}(y)$-préschéma
+$f^{-1}(y)$ est géométriquement irréductible \textup{(resp.} géométriquement connexe\textup{)}.
+\end{definition}
+
+\begin{proposition}[4.5.6]
+\label{IV.2.4.5.6-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Alo
+
+[id 12634]
+OLD: (resp. géométriquement connexe).
+NEW: \textup{(resp.} géométriquement connexe\textup{)}.
+FRENCH CONTEXT (corrected): d{proof}
+
+\begin{definition}[4.5.5]
+\label{IV.2.4.5.5-fr}
+On dit qu'un morphisme $f:X\to Y$ de préschémas est irréductible
+\textup{(resp.} connexe\textup{)}, si, pour tout $y\in Y$, le $\boldsymbol{k}(y)$-préschéma
+$f^{-1}(y)$ est géométriquement irréductible \textup{(resp.} géométriquement connexe\textup{)}.
+\end{definition}
+
+\begin{proposition}[4.5.6]
+\label{IV.2.4.5.6-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Alors le
+nombre géométrique de composantes irréductibles \textup{(resp.} connexes\textup{)} de $X_{
+
+[id 12636]
+OLD: (resp. connexes) de $X_{(K)}$
+NEW: \textup{(resp.} connexes\textup{)} de $X_{(K)}$
+FRENCH CONTEXT (corrected): (resp.} géométriquement connexe\textup{)}.
+\end{definition}
+
+\begin{proposition}[4.5.6]
+\label{IV.2.4.5.6-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Alors le
+nombre géométrique de composantes irréductibles \textup{(resp.} connexes\textup{)} de $X_{(K)}$
+relativement à $K$ est égal au nombre géométrique de composantes irréductibles
+\textup{(resp.} connexes\textup{)} de $X$ relativement à $k$. En particulier, pour que le
+$K$-préschéma $X_{(K)}$ soit géométriquement irréductible \textup{(resp.}
+géométriquement 
+
+[id 12637]
+OLD: (resp. connexes) de $X$ relativement
+NEW: \textup{(resp.} connexes\textup{)} de $X$ relativement
+FRENCH CONTEXT (corrected): 
+\item[\textup{(i)}] Soient $X$ un $k$-préschéma, $K$ une extension de $k$. Alors le
+nombre géométrique de composantes irréductibles \textup{(resp.} connexes\textup{)} de $X_{(K)}$
+relativement à $K$ est égal au nombre géométrique de composantes irréductibles
+\textup{(resp.} connexes\textup{)} de $X$ relativement à $k$. En particulier, pour que le
+$K$-préschéma $X_{(K)}$ soit géométriquement irréductible \textup{(resp.}
+géométriquement connexe\textup{)}, il faut et il suffit que le $k$-préschéma $X$ le
+soit.
+\item[\textup{(ii)}] Soient $f:X\to Y$, $g:Y'\to Y$ deux mor
+
+[id 12638]
+OLD: (resp.
+géométriquement connexe), il faut
+NEW: \textup{(resp.}
+géométriquement connexe\textup{)}, il faut
+FRENCH CONTEXT (corrected):  connexes\textup{)} de $X_{(K)}$
+relativement à $K$ est égal au nombre géométrique de composantes irréductibles
+\textup{(resp.} connexes\textup{)} de $X$ relativement à $k$. En particulier, pour que le
+$K$-préschéma $X_{(K)}$ soit géométriquement irréductible \textup{(resp.}
+géométriquement connexe\textup{)}, il faut et il suffit que le $k$-préschéma $X$ le
+soit.
+\item[\textup{(ii)}] Soient $f:X\to Y$, $g:Y'\to Y$ deux morphismes, et posons
+$X'=X_{(Y')}=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. Si $f$ est irréductible
+\textup{(resp.} connexe\textup{)}, il en est de même de $
+
+[id 12639]
+OLD: \item[(ii)] Soient $f
+NEW: \item[\textup{(ii)}] Soient $f
+FRENCH CONTEXT (corrected): ibles
+\textup{(resp.} connexes\textup{)} de $X$ relativement à $k$. En particulier, pour que le
+$K$-préschéma $X_{(K)}$ soit géométriquement irréductible \textup{(resp.}
+géométriquement connexe\textup{)}, il faut et il suffit que le $k$-préschéma $X$ le
+soit.
+\item[\textup{(ii)}] Soient $f:X\to Y$, $g:Y'\to Y$ deux morphismes, et posons
+$X'=X_{(Y')}=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. Si $f$ est irréductible
+\textup{(resp.} connexe\textup{)}, il en est de même de $f'$. La réciproque est vraie si $g$ est
+surjectif.
+\end{enumerate}
+\end{propos
+
+[id 12640]
+OLD: (resp. connexe), il en est de même de $f'$
+NEW: \textup{(resp.} connexe\textup{)}, il en est de même de $f'$
+FRENCH CONTEXT (corrected): textup{(resp.}
+géométriquement connexe\textup{)}, il faut et il suffit que le $k$-préschéma $X$ le
+soit.
+\item[\textup{(ii)}] Soient $f:X\to Y$, $g:Y'\to Y$ deux morphismes, et posons
+$X'=X_{(Y')}=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. Si $f$ est irréductible
+\textup{(resp.} connexe\textup{)}, il en est de même de $f'$. La réciproque est vraie si $g$ est
+surjectif.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Si $\Omega$ est une extension algébriquement close de $K$, on a
+$X\otimes_k\Omega=X_{(K)}\otimes_K\Omega$, d'où l'assertion.
+
+(ii) Pour tout $y'\in Y'$, si l'o
+
+[id 12641]
+OLD: Pour (i), si
+NEW: (i) Si
+FRENCH CONTEXT (corrected): deux morphismes, et posons
+$X'=X_{(Y')}=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. Si $f$ est irréductible
+\textup{(resp.} connexe\textup{)}, il en est de même de $f'$. La réciproque est vraie si $g$ est
+surjectif.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Si $\Omega$ est une extension algébriquement close de $K$, on a
+$X\otimes_k\Omega=X_{(K)}\otimes_K\Omega$, d'où l'assertion.
+
+(ii) Pour tout $y'\in Y'$, si l'on pose $y=g(y')$, on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$ (\textbf{I}, 3.
+
+[id 12642]
+OLD: Pour (ii), pour tout
+NEW: (ii) Pour tout
+FRENCH CONTEXT (corrected): tup{)}, il en est de même de $f'$. La réciproque est vraie si $g$ est
+surjectif.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Si $\Omega$ est une extension algébriquement close de $K$, on a
+$X\otimes_k\Omega=X_{(K)}\otimes_K\Omega$, d'où l'assertion.
+
+(ii) Pour tout $y'\in Y'$, si l'on pose $y=g(y')$, on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$ (\textbf{I}, 3.6.4), donc les deux assertions
+résultent de (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\label{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphi
+
+[id 12643]
+OLD: \otimes_{k(y)}
+NEW: \otimes_{\mathbf{k}(y)}
+FRENCH CONTEXT (corrected): f.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Si $\Omega$ est une extension algébriquement close de $K$, on a
+$X\otimes_k\Omega=X_{(K)}\otimes_K\Omega$, d'où l'assertion.
+
+(ii) Pour tout $y'\in Y'$, si l'on pose $y=g(y')$, on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$ (\textbf{I}, 3.6.4), donc les deux assertions
+résultent de (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\label{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphisme surjectif irréductible \textup{(resp.} connexe\textup{)},
+$g:Y'\to Y$ un morphisme,
+
+[id 12644]
+OLD: k(y')$
+NEW: \boldsymbol{k}(y')$
+FRENCH CONTEXT (corrected): {proposition}
+
+\begin{proof}
+(i) Si $\Omega$ est une extension algébriquement close de $K$, on a
+$X\otimes_k\Omega=X_{(K)}\otimes_K\Omega$, d'où l'assertion.
+
+(ii) Pour tout $y'\in Y'$, si l'on pose $y=g(y')$, on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$ (\textbf{I}, 3.6.4), donc les deux assertions
+résultent de (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\label{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphisme surjectif irréductible \textup{(resp.} connexe\textup{)},
+$g:Y'\to Y$ un morphisme, et posons $X'=X\ti
+
+[id 12646]
+OLD: surjectif irréductible (resp. connexe),
+NEW: surjectif irréductible \textup{(resp.} connexe\textup{)},
+FRENCH CONTEXT (corrected): \in Y'$, si l'on pose $y=g(y')$, on a
+$f'^{-1}(y')=f^{-1}(y)\otimes_{\mathbf{k}(y)}\boldsymbol{k}(y')$ (\textbf{I}, 3.6.4), donc les deux assertions
+résultent de (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\label{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphisme surjectif irréductible \textup{(resp.} connexe\textup{)},
+$g:Y'\to Y$ un morphisme, et posons $X'=X\times_Y Y'$. Si en outre $Y'$ est
+irréductible \textup{(resp.} connexe\textup{)}, et $f$ universellement ouvert \textup{(resp.} plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé\textup{)}, alo
+
+[id 12647]
+OLD: (resp. connexe), et $f$ universellement
+NEW: \textup{(resp.} connexe\textup{)}, et $f$ universellement
+FRENCH CONTEXT (corrected): s
+résultent de (i).
+\end{proof}
+
+\begin{proposition}[4.5.7]
+\label{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphisme surjectif irréductible \textup{(resp.} connexe\textup{)},
+$g:Y'\to Y$ un morphisme, et posons $X'=X\times_Y Y'$. Si en outre $Y'$ est
+irréductible \textup{(resp.} connexe\textup{)}, et $f$ universellement ouvert \textup{(resp.} plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé\textup{)}, alors
+$X'$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{proposition}
+
+\begin{proof}
+Les propriétés de $f$ que l'on considère étant toutes 
+
+[id 12648]
+OLD: (resp. plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé)
+NEW: \textup{(resp.} plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé\textup{)}
+FRENCH CONTEXT (corrected): l{IV.2.4.5.7-fr}
+Soient $f:X\to Y$ un morphisme surjectif irréductible \textup{(resp.} connexe\textup{)},
+$g:Y'\to Y$ un morphisme, et posons $X'=X\times_Y Y'$. Si en outre $Y'$ est
+irréductible \textup{(resp.} connexe\textup{)}, et $f$ universellement ouvert \textup{(resp.} plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé\textup{)}, alors
+$X'$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{proposition}
+
+\begin{proof}
+Les propriétés de $f$ que l'on considère étant toutes stables par changement
+de base, on peut se borner au cas où $Y'=Y$~; il suffit alors d'appliquer
+(4.4.2) (co
+
+[id 12649]
+OLD: $X'$ est irréductible (resp. connexe).
+NEW: $X'$ est irréductible \textup{(resp.} connexe\textup{)}.
+FRENCH CONTEXT (corrected): :Y'\to Y$ un morphisme, et posons $X'=X\times_Y Y'$. Si en outre $Y'$ est
+irréductible \textup{(resp.} connexe\textup{)}, et $f$ universellement ouvert \textup{(resp.} plat et
+quasi-compact, ou universellement ouvert, ou universellement fermé\textup{)}, alors
+$X'$ est irréductible \textup{(resp.} connexe\textup{)}.
+\end{proposition}
+
+\begin{proof}
+Les propriétés de $f$ que l'on considère étant toutes stables par changement
+de base, on peut se borner au cas où $Y'=Y$~; il suffit alors d'appliquer
+(4.4.2) (compte tenu de (2.3.12)).
+\end{proof}
+
+\begin{corollary}[4.5.8]
+\l
+
+[id 12651]
+OLD: (resp. géométriquement
+connexe) et $Y$
+NEW: \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$
+FRENCH CONTEXT (corrected): er au cas où $Y'=Y$~; il suffit alors d'appliquer
+(4.4.2) (compte tenu de (2.3.12)).
+\end{proof}
+
+\begin{corollary}[4.5.8]
+\label{IV.2.4.5.8-fr}
+Soient $X$, $Y$ deux $k$-préschémas.
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ est géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$ irréductible \textup{(resp.} connexe\textup{)}, alors $X\times_k Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même
+
+[id 12652]
+OLD: irréductible (resp. connexe), alors
+NEW: irréductible \textup{(resp.} connexe\textup{)}, alors
+FRENCH CONTEXT (corrected):  (compte tenu de (2.3.12)).
+\end{proof}
+
+\begin{corollary}[4.5.8]
+\label{IV.2.4.5.8-fr}
+Soient $X$, $Y$ deux $k$-préschémas.
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ est géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$ irréductible \textup{(resp.} connexe\textup{)}, alors $X\times_k Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\b
+
+[id 12653]
+OLD: Y$ est
+irréductible (resp. connexe).
+NEW: Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+FRENCH CONTEXT (corrected): 
+\label{IV.2.4.5.8-fr}
+Soient $X$, $Y$ deux $k$-préschémas.
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ est géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$ irréductible \textup{(resp.} connexe\textup{)}, alors $X\times_k Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) Le morphisme structural $X\to\operatorname{Spec}(k
+
+[id 12654]
+OLD: \item[(ii)] Si $X$ et
+NEW: \item[\textup{(ii)}] Si $X$ et
+FRENCH CONTEXT (corrected): mas.
+\begin{enumerate}
+\item[\textup{(i)}] Si $X$ est géométriquement irréductible \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$ irréductible \textup{(resp.} connexe\textup{)}, alors $X\times_k Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) Le morphisme structural $X\to\operatorname{Spec}(k)$ est surjectif et
+universelle
+
+[id 12655]
+OLD: (resp.
+géométriquement connexes), il en
+NEW: \textup{(resp.}
+géométriquement connexes\textup{)}, il en
+FRENCH CONTEXT (corrected): irréductible \textup{(resp.} géométriquement
+connexe\textup{)} et $Y$ irréductible \textup{(resp.} connexe\textup{)}, alors $X\times_k Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) Le morphisme structural $X\to\operatorname{Spec}(k)$ est surjectif et
+universellement ouvert (2.4.9) et en outre irréductible (resp. connexe)~; il
+suffit donc d'appliquer (4.5.7)
+
+[id 12656]
+OLD: Pour (i), le morphisme
+NEW: (i) Le morphisme
+FRENCH CONTEXT (corrected): Y$ est
+irréductible \textup{(resp.} connexe\textup{)}.
+\item[\textup{(ii)}] Si $X$ et $Y$ sont géométriquement irréductibles \textup{(resp.}
+géométriquement connexes\textup{)}, il en est de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) Le morphisme structural $X\to\operatorname{Spec}(k)$ est surjectif et
+universellement ouvert (2.4.9) et en outre irréductible (resp. connexe)~; il
+suffit donc d'appliquer (4.5.7).
+
+(ii) Si $\Omega$ est une extension algébriquement close de $k$, on a
+$(X\times_k Y)_{(\Omeg
+
+[id 12657]
+OLD: Pour (ii), si
+NEW: (ii) Si
+FRENCH CONTEXT (corrected): t de même de $X\times_k Y$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) Le morphisme structural $X\to\operatorname{Spec}(k)$ est surjectif et
+universellement ouvert (2.4.9) et en outre irréductible (resp. connexe)~; il
+suffit donc d'appliquer (4.5.7).
+
+(ii) Si $\Omega$ est une extension algébriquement close de $k$, on a
+$(X\times_k Y)_{(\Omega)}=X_{(\Omega)}\times_\Omega Y_{(\Omega)}$
+(\textbf{I}, 3.3.10)~; par hypothèse $X_{(\Omega)}$ et $Y_{(\Omega)}$ sont des
+$\Omega$-préschémas géométriquement irréductibles (re
+
+[id 12659]
+OLD: \item[$a)$]
+NEW: \item[\textup{a)}]
+FRENCH CONTEXT (corrected): s géométriquement irréductibles (resp. géométriquement
+connexes) (4.5.6) et il suffit donc d'appliquer (i).
+\end{proof}
+
+\begin{proposition}[4.5.9]
+\label{IV.2.4.5.9-fr}
+Soit $X$ un $k$-préschéma. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement irréductible \textup{(autrement dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}.
+\item[\textup{b)}] Pour toute extension finie séparable $K$ de $k$, $X\otimes_k K$
+est irréductible.
+\item[\textup{c)}] $X$
+
+[id 12660]
+OLD: (autrement dit, pour toute
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)
+NEW: \textup{(autrement dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}
+FRENCH CONTEXT (corrected): onnexes) (4.5.6) et il suffit donc d'appliquer (i).
+\end{proof}
+
+\begin{proposition}[4.5.9]
+\label{IV.2.4.5.9-fr}
+Soit $X$ un $k$-préschéma. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement irréductible \textup{(autrement dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}.
+\item[\textup{b)}] Pour toute extension finie séparable $K$ de $k$, $X\otimes_k K$
+est irréductible.
+\item[\textup{c)}] $X$ est irréductible, et si $x$ est son point générique, $\boldsymbol{k}(x)$
+est une extension primaire de $k$.
+\end{enumerate}
+\end{propo
+
+[id 12661]
+OLD: \item[$b)$]
+NEW: \item[\textup{b)}]
+FRENCH CONTEXT (corrected): IV.2.4.5.9-fr}
+Soit $X$ un $k$-préschéma. Les conditions suivantes sont équivalentes~:
+\begin{enumerate}
+\item[\textup{a)}] $X$ est géométriquement irréductible \textup{(autrement dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}.
+\item[\textup{b)}] Pour toute extension finie séparable $K$ de $k$, $X\otimes_k K$
+est irréductible.
+\item[\textup{c)}] $X$ est irréductible, et si $x$ est son point générique, $\boldsymbol{k}(x)$
+est une extension primaire de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proo
+
+[id 12662]
+OLD: \item[$c)$]
+NEW: \item[\textup{c)}]
+FRENCH CONTEXT (corrected): te}
+\item[\textup{a)}] $X$ est géométriquement irréductible \textup{(autrement dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}.
+\item[\textup{b)}] Pour toute extension finie séparable $K$ de $k$, $X\otimes_k K$
+est irréductible.
+\item[\textup{c)}] $X$ est irréductible, et si $x$ est son point générique, $\boldsymbol{k}(x)$
+est une extension primaire de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que $a)$ entraîne $b)$. Pour voir que $b)$ entraîne $c)$,
+considérons une extension f
+
+[id 12663]
+OLD: $k(x)$
+est une extension primaire
+NEW: $\boldsymbol{k}(x)$
+est une extension primaire
+FRENCH CONTEXT (corrected): nt dit, pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible)}.
+\item[\textup{b)}] Pour toute extension finie séparable $K$ de $k$, $X\otimes_k K$
+est irréductible.
+\item[\textup{c)}] $X$ est irréductible, et si $x$ est son point générique, $\boldsymbol{k}(x)$
+est une extension primaire de $k$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Il est clair que $a)$ entraîne $b)$. Pour voir que $b)$ entraîne $c)$,
+considérons une extension finie séparable $K$ de $k$~; si
+$p:X\otimes_k K\to X$ est la projection canonique, les
+\oldpage[IV-2]{63}
+
+=================== PAGE IV-2 63 ===================
+----- (English page IV-2 62: shown above in this file) -----
+----- (English page IV-2 63: shown above in this file) -----
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 64 -----
+\oldpage[IV-2]{64}
+
+an algebraically closed field $\Omega$; the datum of a smaller
+``field of definition'' $k$ (that is, a scheme over $k$ which yields
+$V$ after extension of the base field to $\Omega$) is an additional
+and, to some extent, secondary structure.
+Thus his use of ``absolute'' or ``intrinsic'' on the one hand and
+``relative to $k$'' on the other is opposite to ours.\footnote{Zariski's
+point of view is already closer to ours, and his terminology is not
+generally in conflict with that introduced here.}
+We shall therefore avoid the qualifier ``absolute'', which may cause
+confusion; whenever we use the abbreviated terminology introduced
+above, in conflict with established terminology, we shall refer to
+\sref{IV.4.5.12} to avoid ambiguity.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.12.ii}
+Proposition \sref{IV.4.5.9} gives a ``birational'' criterion---one
+depending only on the residue field at the generic point---for a
+$k$-prescheme $X$ to be geometrically irreducible.
+There is no analogous criterion for geometric connectedness.
+For example, take $X=\Spec\bigl(\mathbf{R}[[T,U]]/(T^2+U^2)\bigr)$,
+where $T$ and $U$ are indeterminates.
+Then $X$ is an integral $\mathbf{R}$-scheme, and its field of rational
+functions $\kappa(x)$ is $\mathbf{C}((T))$, as is readily verified.
+The scheme $X\otimes_{\mathbf R}\mathbf C$ is the union of two
+irreducible components, the two ``isotropic lines'', which have a
+point in common: the maximal ideal in
+$\mathbf C[[T,U]]/(T^2+U^2)$ induced by the maximal ideal
+$(T)+(U)$ of $\mathbf C[[T,U]]$.
+Thus $X\otimes_{\mathbf R}\mathbf C$ is connected.
+Let $X'$ be the open complement of the closed point of $X$
+corresponding to the maximal ideal $(T)+(U)$ of
+$\mathbf R[[T,U]]$.
+Then $X'\otimes_{\mathbf R}\mathbf C$ is not connected, although $X$
+and $X'$ have the same field of rational functions.
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[4.5.13]
+\phantomsection
+\label{IV.4.5.13}
+Let $X$ and $Y$ be two $k$-preschemes and let
+$f:Y\to X$ be a $k$-morphism.
+Suppose that $Y$ is nonempty and geometrically connected, and that
+$X$ is connected.
+Then $X$ is geometrically connected.
+\end{proposition}
+
+\begin{proof}
+Let $\Omega$ be an algebraic closure of $k$, put
+\[
+X'=X\otimes_k\Omega,\qquad
+Y'=Y\otimes_k\Omega,
+\]
+and let $f'=f_{(\Omega)}:Y'\to X'$.
+It is enough to prove that $X'$ is connected.
+Let $U'$ be a nonempty open-and-closed subset of $X'$.
+The projections
+\[
+p:X'\longrightarrow X,\qquad q:Y'\longrightarrow Y
+\]
+are open \sref{IV.2.4.10}, and they are closed because $\Omega/k$ is
+algebraic \sref[II]{II.6.1.10}.
+Consequently $U=p(U')$ is a nonempty open-and-closed subset of $X$,
+and hence $U=X$.
+Since $Y$ is nonempty, it follows from \sref[I]{I.3.4.7} that $V'=f'^{-1}(U')$
+is nonempty.
+It is also open and closed in $Y'$, which is connected by hypothesis,
+so $V'=Y'$.
+We conclude that $U'=X'$: otherwise, applying the same argument to
+the open-and-closed subset $X'\setminus U'$ would give
+$f'^{-1}(X'\setminus U')=Y'$, which is impossible because $Y'$ is
+nonempty.
+\end{proof}
+
+\begin{corollary}[4.5.13.1]
+\phantomsection
+\label{IV.4.5.13.1}
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.13.1.i}
+Let $X$ and $Y$ be two $k$-preschemes and let $f:Y\to X$ be a
+$k$-morphism.
+If $Y$ is nonempty and geometrically connected, then the connected
+component $X_0$ of $X$ containing $f(Y)$ is geometrically connected.
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.13.1.ii}
+Let $X$ be a $k$-prescheme.
+If $Y$ is a geometrically irreducible irreducible component of $X$,
+then the connected component $X_0$ of $X$ containing $Y$ is
+geometrically connected.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+For (i), we may suppose that $Y$ is reduced, so that $f$ factors as $Y\xrightarrow{g}X_0\xrightarrow{j}X$,
+where $X_0$ denotes the reduced sub-prescheme of $X$ whose underlying
+space is the connected component $X_0$ \sref[I]{I.5.2.2}.
+Apply \sref{IV.4.5.13} to $g$.
+
+For (ii), choose a prescheme structure on the underlying space $Y$.
+Since a geometrically irreducible prescheme is in particular
+geometrically connected, (i) applies to the canonical injection
+$Y\to X$.
+\end{proof}
+----- French corrections on page IV-2 63 -----
+[id 12666]
+OLD: \operatorname{Spec}(k(x)\otimes_k K)
+NEW: \operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)
+FRENCH CONTEXT (corrected): ir que $a)$ entraîne $b)$. Pour voir que $b)$ entraîne $c)$,
+considérons une extension finie séparable $K$ de $k$~; si
+$p:X\otimes_k K\to X$ est la projection canonique, les
+\oldpage[IV-2]{63}
+points maximaux de $X\otimes_k K$ sont ceux de la fibre
+$p^{-1}(x)=\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)$ ((2.3.4) et
+$(\mathbf{0}_{\mathrm I},2.1.8)$)~; dire que cette fibre est irréductible pour toute
+extension finie séparable $K$ de $k$ revient à dire que $\boldsymbol{k}(y)$ est une
+extension primaire de $k$, en vertu de (4.3.2). Inversement, si $c)$ est
+véri
+
+[id 12668]
+OLD: $k(y)$
+NEW: $\boldsymbol{k}(y)$
+FRENCH CONTEXT (corrected): maux de $X\otimes_k K$ sont ceux de la fibre
+$p^{-1}(x)=\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k K)$ ((2.3.4) et
+$(\mathbf{0}_{\mathrm I},2.1.8)$)~; dire que cette fibre est irréductible pour toute
+extension finie séparable $K$ de $k$ revient à dire que $\boldsymbol{k}(y)$ est une
+extension primaire de $k$, en vertu de (4.3.2). Inversement, si $c)$ est
+vérifiée, le même raisonnement (compte tenu de (4.3.2)) montre que pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible, donc $c)$ implique
+$a)$.
+\end{proof}
+
+
+
+[id 12669]
+OLD: montre que pour toute
+NEW: montre que pour \emph{toute}
+FRENCH CONTEXT (corrected): re que cette fibre est irréductible pour toute
+extension finie séparable $K$ de $k$ revient à dire que $\boldsymbol{k}(y)$ est une
+extension primaire de $k$, en vertu de (4.3.2). Inversement, si $c)$ est
+vérifiée, le même raisonnement (compte tenu de (4.3.2)) montre que pour \emph{toute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible, donc $c)$ implique
+$a)$.
+\end{proof}
+
+\begin{corollary}[4.5.10]
+\label{IV.2.4.5.10-fr}
+Soient $X$ un $k$-préschéma irréductible, $x$ son point générique, $k'$ la
+fermeture algébrique séparable de $k$ dans
+
+[id 12670]
+OLD: dans $k(x)$, $k''$
+NEW: dans $\boldsymbol{k}(x)$, $k''$
+FRENCH CONTEXT (corrected): ute}
+extension $K$ de $k$, $X\otimes_k K$ est irréductible, donc $c)$ implique
+$a)$.
+\end{proof}
+
+\begin{corollary}[4.5.10]
+\label{IV.2.4.5.10-fr}
+Soient $X$ un $k$-préschéma irréductible, $x$ son point générique, $k'$ la
+fermeture algébrique séparable de $k$ dans $\boldsymbol{k}(x)$, $k''$ une extension
+galoisienne de $k$ (de degré fini ou non) contenant $k'$. On suppose $k'$ fini
+sur $k$~; alors les composantes irréductibles de $X\otimes_k k''$ sont
+géométriquement irréductibles~; leur nombre est égal à $[k':k]$ et est aussi le
+nombre géométri
+
+[id 12671]
+OLD: \operatorname{Spec}(k(x)\otimes_k k'')
+NEW: \operatorname{Spec}(\boldsymbol{k}(x)\otimes_k k'')
+FRENCH CONTEXT (corrected): _k k''$ sont
+géométriquement irréductibles~; leur nombre est égal à $[k':k]$ et est aussi le
+nombre géométrique de composantes irréductibles de $X$.
+\end{corollary}
+
+\begin{proof}
+Comme dans (4.5.9), on est ramené à considérer les points maximaux de la fibre
+$\operatorname{Spec}(\boldsymbol{k}(x)\otimes_k k'')$~; en vertu de (4.3.4), ils sont au
+nombre de $[k':k]$ et les corps résiduels en ces points (qui sont aussi ceux de
+$X\otimes_k k''$) sont des extensions primaires de $k''$, ce qui, compte tenu
+de (4.5.9), prouve le corollaire.
+\end{proof}
+
+\begin{corollary}[
+
+[id 12672]
+OLD: dans $k(x_i)$ soit
+NEW: dans $\boldsymbol{k}(x_i)$ soit
+FRENCH CONTEXT (corrected): y}[4.5.11]
+\EGAReaderTarget{ega4.c04.cor.4-5-11}{IV.2.4.5.11-fr}
+Soit $X$ un $k$-préschéma~; supposons que $X$ n'ait qu'un nombre fini de
+points maximaux $x_i$ $(1\leqslant i\leqslant r)$ et que pour chaque $i$, la
+fermeture algébrique séparable $k'_i$ de $k$ dans $\boldsymbol{k}(x_i)$ soit de degré fini
+sur $k$. Alors il existe une extension finie séparable $L$ de $k$ telle que les
+composantes irréductibles de $X\otimes_k L$ soient géométriquement
+irréductibles~; leur nombre, égal à $\sum_i[k'_i:k]$, est le nombre géométrique
+des composantes ir
+
+[id 12673]
+OLD: \operatorname{Spec}(k(x_i)\otimes_k L)
+NEW: \operatorname{Spec}(\boldsymbol{k}(x_i)\otimes_k L)
+FRENCH CONTEXT (corrected):  de $X\otimes_k L$ soient géométriquement
+irréductibles~; leur nombre, égal à $\sum_i[k'_i:k]$, est le nombre géométrique
+des composantes irréductibles de $X$.
+\end{corollary}
+
+\begin{proof}
+Les points maximaux de $X\otimes_k L$ sont ceux des diverses fibres
+$\operatorname{Spec}(\boldsymbol{k}(x_i)\otimes_k L)$ en vertu de (2.3.4) et
+$(\mathbf{0}_{\mathrm I},2.1.8)$ appliqué aux composantes irréductibles de $X$ et à
+leurs images réciproques dans $X\otimes_k L$. Il suffit donc de prendre pour
+$L$ une extension galoisienne finie de $k$ contenant tous les $k'_i$ et
+d'
+
+[id 12675]
+OLD: $X$ de
+type fini sur $k$,
+NEW: $X$ \emph{de
+type fini sur $k$},
+FRENCH CONTEXT (corrected):  et à
+leurs images réciproques dans $X\otimes_k L$. Il suffit donc de prendre pour
+$L$ une extension galoisienne finie de $k$ contenant tous les $k'_i$ et
+d'appliquer (4.5.10).
+\end{proof}
+
+On notera que (4.5.11) s'applique en particulier à tout $k$-préschéma $X$ \emph{de
+type fini sur $k$}, car $X$ est alors noethérien, donc n'a qu'un nombre fini de
+composantes irréductibles, et chacun des $\boldsymbol{k}(x_i)$ est une extension de type
+fini de $k$, donc il en est de même de la fermeture algébrique de $k$ dans
+$\boldsymbol{k}(x_i)$ ([1], p.~6-06
+
+[id 12676]
+OLD: chacun des $k(x_i)$
+NEW: chacun des $\boldsymbol{k}(x_i)$
+FRENCH CONTEXT (corrected): k$ contenant tous les $k'_i$ et
+d'appliquer (4.5.10).
+\end{proof}
+
+On notera que (4.5.11) s'applique en particulier à tout $k$-préschéma $X$ \emph{de
+type fini sur $k$}, car $X$ est alors noethérien, donc n'a qu'un nombre fini de
+composantes irréductibles, et chacun des $\boldsymbol{k}(x_i)$ est une extension de type
+fini de $k$, donc il en est de même de la fermeture algébrique de $k$ dans
+$\boldsymbol{k}(x_i)$ ([1], p.~6-06, lemme~5).
+
+\begin{remarks}[4.5.12]
+\label{IV.2.4.5.12-fr}
+\begin{enumerate}
+\item[(i)] Les notions définies dans (4.5.2) 
+
+[id 12677]
+OLD: $k(x_i)$ ([1]
+NEW: $\boldsymbol{k}(x_i)$ ([1]
+FRENCH CONTEXT (corrected): ma $X$ \emph{de
+type fini sur $k$}, car $X$ est alors noethérien, donc n'a qu'un nombre fini de
+composantes irréductibles, et chacun des $\boldsymbol{k}(x_i)$ est une extension de type
+fini de $k$, donc il en est de même de la fermeture algébrique de $k$ dans
+$\boldsymbol{k}(x_i)$ ([1], p.~6-06, lemme~5).
+
+\begin{remarks}[4.5.12]
+\label{IV.2.4.5.12-fr}
+\begin{enumerate}
+\item[(i)] Les notions définies dans (4.5.2) dépendent du corps de base $k$.
+Pour abréger, et lorsqu'il sera nécessaire de mentionner le corps de base, on
+pourra dire «~$k$-
+
+[id 12678]
+OLD: \begin{remark}[4.5.12]
+NEW: \begin{remarks}[4.5.12]
+FRENCH CONTEXT (corrected): alors noethérien, donc n'a qu'un nombre fini de
+composantes irréductibles, et chacun des $\boldsymbol{k}(x_i)$ est une extension de type
+fini de $k$, donc il en est de même de la fermeture algébrique de $k$ dans
+$\boldsymbol{k}(x_i)$ ([1], p.~6-06, lemme~5).
+
+\begin{remarks}[4.5.12]
+\label{IV.2.4.5.12-fr}
+\begin{enumerate}
+\item[(i)] Les notions définies dans (4.5.2) dépendent du corps de base $k$.
+Pour abréger, et lorsqu'il sera nécessaire de mentionner le corps de base, on
+pourra dire «~$k$-irréductible~» (resp. «~$k$-connexe~») au lie
+
+[id 12679]
+OLD: «~absolument irréductible~»
+NEW: «~\emph{absolument irréductible}~»
+FRENCH CONTEXT (corrected): ma $X$, indépendante du corps $k$ pris
+comme «~corps de base~» (autrement dit, du morphisme
+$X\to\operatorname{Spec}(k)$ choisi)~; nous exprimons ces propriétés en disant
+simplement que $X$ est irréductible (resp. connexe, normal, etc.). Weil dit
+d'autre part «~\emph{absolument irréductible}~», «~\emph{absolument connexe}~», «~\emph{absolument
+normal}~», etc., pour les notions correspondantes relatives au préschéma
+$X\otimes_k\Omega$, où $\Omega$ est une extension algébriquement close
+convenable de $k$. Cette terminologie s'explique par le point de
+
+[id 12680]
+OLD: «~absolument connexe~»
+NEW: «~\emph{absolument connexe}~»
+FRENCH CONTEXT (corrected): is
+comme «~corps de base~» (autrement dit, du morphisme
+$X\to\operatorname{Spec}(k)$ choisi)~; nous exprimons ces propriétés en disant
+simplement que $X$ est irréductible (resp. connexe, normal, etc.). Weil dit
+d'autre part «~\emph{absolument irréductible}~», «~\emph{absolument connexe}~», «~\emph{absolument
+normal}~», etc., pour les notions correspondantes relatives au préschéma
+$X\otimes_k\Omega$, où $\Omega$ est une extension algébriquement close
+convenable de $k$. Cette terminologie s'explique par le point de vue différent
+auquel se place 
+
+[id 12681]
+OLD: «~absolument
+normal~»
+NEW: «~\emph{absolument
+normal}~»
+FRENCH CONTEXT (corrected): rement dit, du morphisme
+$X\to\operatorname{Spec}(k)$ choisi)~; nous exprimons ces propriétés en disant
+simplement que $X$ est irréductible (resp. connexe, normal, etc.). Weil dit
+d'autre part «~\emph{absolument irréductible}~», «~\emph{absolument connexe}~», «~\emph{absolument
+normal}~», etc., pour les notions correspondantes relatives au préschéma
+$X\otimes_k\Omega$, où $\Omega$ est une extension algébriquement close
+convenable de $k$. Cette terminologie s'explique par le point de vue différent
+auquel se place cet auteur~: pour lui, une «~v
+
+[id 12682]
+OLD: donnée d'abord
+NEW: donnée \emph{d'abord}
+FRENCH CONTEXT (corrected): respondantes relatives au préschéma
+$X\otimes_k\Omega$, où $\Omega$ est une extension algébriquement close
+convenable de $k$. Cette terminologie s'explique par le point de vue différent
+auquel se place cet auteur~: pour lui, une «~variété algébrique~» $V$ est
+donnée \emph{d'abord} comme un objet
+\oldpage[IV-2]{64}
+géométrique au-dessus d'un corps \emph{algébriquement clos} $\Omega$~; la donnée d'un
+«~corps de définition~» $k$ plus petit (i.e., d'un schéma sur $k$ définissant
+$V$ par extension du corps de base à $\Omega$) est pour lui u
+
+=================== PAGE IV-2 64 ===================
+----- (English page IV-2 63: shown above in this file) -----
+----- (English page IV-2 64: shown above in this file) -----
+----- English, components/05_section45_geometric_irreducibility_connectedness.tex, page IV-2 65 -----
+\oldpage[IV-2]{65}
+
+\begin{corollary}[4.5.14]
+\phantomsection
+\label{IV.4.5.14}
+Let $X$ be a $k$-prescheme.
+If $x\in X$ is such that $\kappa(x)$ is a primary extension of $k$
+(in particular, if $x$ is a rational point of $X$), then the
+connected component of $x$ in $X$ is geometrically connected.
+\end{corollary}
+
+\begin{proof}
+Apply \sref{IV.4.5.13.1} to
+$Y=\Spec(\kappa(x))$ and to the canonical morphism $Y\to X$.
+By \sref{IV.4.5.9}, the prescheme $Y$ is geometrically irreducible.
+\end{proof}
+
+\begin{proposition}[4.5.15]
+\phantomsection
+\label{IV.4.5.15}
+Let $X$ be a $k$-prescheme, let $x\in X$, and let $k'$ be the
+separable algebraic closure of $k$ in $\kappa(x)$.
+Suppose that:
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.15.i}
+$X$ is connected;
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.15.ii}
+$k'$ is a finite extension of $k$.
+\end{enumerate}
+Then the geometric number of connected components of $X$ is at most
+$[k':k]$.
+Moreover, if $k''$ is a finite Galois extension of $k$ containing
+$k'$, the connected components of $X\otimes_k k''$ are geometrically
+connected.
+\end{proposition}
+
+Condition (ii) is satisfied in particular when $X$ is locally of
+finite type over $k$.
+
+\begin{proof}
+By (ii), there are finite Galois extensions $k''$ of $k$ containing
+$k'$.
+Put $X''=X\otimes_k k''$.
+The projection $p:X''\to X$ is faithfully flat and finite, hence
+closed \sref[II]{II.6.1.10}.
+It follows from \sref{IV.2.3.6},~(ii), that the image under $p$ of
+every connected component $X''_\alpha$ of $X''$ is all of $X$.
+Thus $X''_\alpha$ contains a point
+$x''_\alpha\in p^{-1}(x)$.
+
+The number of points of $p^{-1}(x)$ is the number of irreducible
+components of
+\[
+\Spec\bigl(\kappa(x)\otimes_k k''\bigr)
+\]
+\sref[I]{I.3.4.9}, namely $[k':k]$ by \sref{IV.4.3.4}.
+Therefore the number of connected components of $X''$ is at most
+$[k':k]$.
+For every $x''_\alpha\in p^{-1}(x)$, the field
+$\kappa(x''_\alpha)$ is a primary extension of $k''$, by
+\sref{IV.4.3.5} and \sref[I]{I.3.4.9}.
+Corollary \sref{IV.4.5.14}, applied to $x''_\alpha$ and $X''$, now
+shows that every connected component of $X''$ is geometrically
+connected.
+\end{proof}
+
+\begin{corollary}[4.5.16]
+\phantomsection
+\label{IV.4.5.16}
+Let $X$ be a $k$-prescheme, let $(X_\alpha)$ be the family of its
+connected components, and choose $x_\alpha\in X_\alpha$ for every
+$\alpha$.
+Suppose that:
+\begin{enumerate}
+\item[\rm(i)]
+\phantomsection
+\label{IV.4.5.16.i}
+the family $(X_\alpha)$ is finite;
+
+\item[\rm(ii)]
+\phantomsection
+\label{IV.4.5.16.ii}
+for every $\alpha$, the separable algebraic closure $k'_\alpha$ of
+$k$ in $\kappa(x_\alpha)$ is a finite extension of $k$.
+\end{enumerate}
+Then the geometric number of connected components of $X$ is at most $\sum_\alpha[k'_\alpha:k]$,
+and there exists a finite separable extension $k''$ of $k$ such that
+all the connected components of $X\otimes_k k''$ are geometrically
+connected.
+\end{corollary}
+
+\begin{proof}
+By (i), the connected components of $X$ are open.
+Apply \sref{IV.4.5.15} to each sub-prescheme induced on the open
+subset $X_\alpha$.
+To obtain one extension $k''$ with the asserted property, take a
+finite Galois extension of $k$ containing all the $k'_\alpha$.
+\end{proof}
+----- French corrections on page IV-2 64 -----
+[id 12685]
+OLD: d'un corps algébriquement clos $\Omega$
+NEW: d'un corps \emph{algébriquement clos} $\Omega$
+FRENCH CONTEXT (corrected): tension algébriquement close
+convenable de $k$. Cette terminologie s'explique par le point de vue différent
+auquel se place cet auteur~: pour lui, une «~variété algébrique~» $V$ est
+donnée \emph{d'abord} comme un objet
+\oldpage[IV-2]{64}
+géométrique au-dessus d'un corps \emph{algébriquement clos} $\Omega$~; la donnée d'un
+«~corps de définition~» $k$ plus petit (i.e., d'un schéma sur $k$ définissant
+$V$ par extension du corps de base à $\Omega$) est pour lui une structure
+supplémentaire et, dans une certaine mesure, secondaire, de sorte que sa
+qualification d'«
+
+[id 12686]
+OLD: $k(x)$ est $\mathbf C((T))$
+NEW: $\boldsymbol{k}(x)$ est $\mathbf C((T))$
+FRENCH CONTEXT (corrected): uctible. Il n'y a pas de critère
+analogue pour que $X$ soit géométriquement connexe. Par exemple, prenons
+$X=\operatorname{Spec}(\mathbf R[[T,U]]/(T^2+U^2))$ ($T,U$ indéterminées)~;
+$X$ est un $\mathbf R$-schéma intègre, et son corps de fonctions rationnelles
+$\boldsymbol{k}(x)$ est $\mathbf C((T))$, comme on le vérifie aisément~; $X\otimes_{\mathbf
+R}\mathbf C$ se décompose en deux composantes irréductibles (les deux
+«~droites isotropes~») qui ont un point commun (l'idéal maximal image dans
+$\mathbf C[[T,U]]/(T^2+U^2)$ de l'idéal maximal $(T)+(U)$ de
+$\
+
+[id 12687]
+OLD: \end{enumerate}
+\end{remark}
+NEW: \end{enumerate}
+\end{remarks}
+FRENCH CONTEXT (corrected): st connexe. Soit
+$X'$ le complémentaire (ouvert) du point fermé de $X$ correspondant à l'idéal
+maximal $(T)+(U)$ de $\mathbf R[[T,U]]$~; alors $X'\otimes_{\mathbf R}\mathbf C$
+n'est pas connexe, bien que $X$ et $X'$ aient même corps de fonctions
+rationnelles.
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[4.5.13]
+\label{IV.2.4.5.13-fr}
+Soient $X$, $Y$ deux $k$-préschémas, $f:Y\to X$ un $k$-morphisme. Supposons
+$Y$ géométriquement connexe et non vide, et $X$ connexe. Alors $X$ est
+géométriquement connexe.
+\end{proposition}
+
+\begin{proof}
+So
+
+[id 12690]
+OLD: ouvert et fermé $X'-U'$
+NEW: ouvert et fermé $X'\setmin U'$
+FRENCH CONTEXT (corrected): lut (\textbf{I}, 3.4.7) que
+$V'=f'^{-1}(U')$ n'est pas vide~; d'ailleurs, c'est une partie ouverte et
+fermée de $Y'$, et ce dernier espace est connexe par hypothèse~; donc $V'=Y'$.
+On en déduit que $U'=X'$, sans quoi le même raisonnement appliqué à l'ensemble
+ouvert et fermé $X'\setmin U'$, montrerait que $f'^{-1}(X'\setmin U')=Y'$, ce qui est absurde
+puisque $Y'$ n'est pas vide.
+\end{proof}
+
+\begin{corollary}[4.5.13.1]
+\label{IV.2.4.5.13.1-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$ deux $k$-préschémas, $f:Y\to X$ un $k$-morphism
+
+[id 12691]
+OLD: f'^{-1}(X'-U')
+NEW: f'^{-1}(X'\setmin U')
+FRENCH CONTEXT (corrected): st pas vide~; d'ailleurs, c'est une partie ouverte et
+fermée de $Y'$, et ce dernier espace est connexe par hypothèse~; donc $V'=Y'$.
+On en déduit que $U'=X'$, sans quoi le même raisonnement appliqué à l'ensemble
+ouvert et fermé $X'\setmin U'$, montrerait que $f'^{-1}(X'\setmin U')=Y'$, ce qui est absurde
+puisque $Y'$ n'est pas vide.
+\end{proof}
+
+\begin{corollary}[4.5.13.1]
+\label{IV.2.4.5.13.1-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$ deux $k$-préschémas, $f:Y\to X$ un $k$-morphisme.
+Si $Y$ est géométriquement connexe e
+
+[id 12693]
+OLD: \item[(ii)] Soit $X$
+NEW: \item[\textup{(ii)}] Soit $X$
+FRENCH CONTEXT (corrected): ]
+\label{IV.2.4.5.13.1-fr}
+\begin{enumerate}
+\item[\textup{(i)}] Soient $X$, $Y$ deux $k$-préschémas, $f:Y\to X$ un $k$-morphisme.
+Si $Y$ est géométriquement connexe et non vide, la composante connexe $X_0$ de
+$X$ contenant $f(Y)$ est géométriquement connexe.
+\item[\textup{(ii)}] Soit $X$ un $k$-préschéma. Si $Y$ est une composante irréductible
+de $X$ qui est géométriquement irréductible, alors la composante connexe $X_0$
+de $X$ contenant $Y$ est géométriquement connexe.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) On peut supposer $Y$ r
+
+[id 12694]
+OLD: Pour (i), on peut
+NEW: (i) On peut
+FRENCH CONTEXT (corrected): em[\textup{(ii)}] Soit $X$ un $k$-préschéma. Si $Y$ est une composante irréductible
+de $X$ qui est géométriquement irréductible, alors la composante connexe $X_0$
+de $X$ contenant $Y$ est géométriquement connexe.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) On peut supposer $Y$ réduit, de sorte que $f$ se factorise en
+$f:Y\xrightarrow{g}X_0\xrightarrow{j}X$, $X_0$
+\oldpage[IV-2]{65}
+désignant le sous-préschéma réduit de $X$ ayant $X_0$ pour espace sous-jacent
+(\textbf{I}, 5.2.2)~; il suffit d'appliquer (4.5.13) à $g$.
+
+
+
+[id 12695]
+OLD: $Y\xrightarrow{g}X_0
+NEW: $f:Y\xrightarrow{g}X_0
+FRENCH CONTEXT (corrected): ante irréductible
+de $X$ qui est géométriquement irréductible, alors la composante connexe $X_0$
+de $X$ contenant $Y$ est géométriquement connexe.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(i) On peut supposer $Y$ réduit, de sorte que $f$ se factorise en
+$f:Y\xrightarrow{g}X_0\xrightarrow{j}X$, $X_0$
+\oldpage[IV-2]{65}
+désignant le sous-préschéma réduit de $X$ ayant $X_0$ pour espace sous-jacent
+(\textbf{I}, 5.2.2)~; il suffit d'appliquer (4.5.13) à $g$.
+
+(ii) En considérant un préschéma ayant $Y$ pour espace sous-jacent, et
+remarq
+

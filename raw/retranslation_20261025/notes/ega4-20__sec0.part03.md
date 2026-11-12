@@ -1,0 +1,14 @@
+- TRANSCRIPTION? 20.3.1 — "On a $\operatorname{dom}(f\circ\omega)=\operatorname{dom}(\omega)$": in general only $\operatorname{dom}(f\circ\omega)\supset\operatorname{dom}(\omega)$ holds (if $Z$ is a point, $f\circ\omega$ is everywhere defined while $\omega$ need not be, e.g. $(x:y)$ from the affine plane to $\mathbf{P}^1$). 20.3.3 cites it as an equality but only needs the inclusion. Kept.
+- TRANSCRIPTION? 20.3.2 — the open subset is named $V'=f^{-1}(\operatorname{dom}_S(\omega))$, but the next clause writes $u\circ(f|U')$; $V'$ is presumably meant. Kept.
+- TRANSCRIPTION? 20.3.8.4 — the statement names the open set $V_\alpha$ (inverse images $V_\lambda$, $V$), then speaks of $U_\alpha$, $U_\lambda$, $U$, as does the proof; the same set is presumably meant. Kept.
+- TRANSCRIPTION? 20.3.8.6 — "appartiennent au même pseudo-homomorphisme": a pseudo-($S_\lambda$-)morphism is meant; translated literally as "pseudo-homomorphism".
+- TERM schématiquement dense → schematically dense.
+- TERM pseudo-morphisme, pseudo-$S$-morphisme, pseudo-fonction → pseudo-morphism, pseudo-$S$-morphism, pseudo-function.
+- TERM sous-préfaisceau → subpresheaf (glossary rule: sub- words closed except sub-prescheme, sub-sheaf, sub-$\mathcal O_X$-module).
+- TERM généralisation (of a point; the French here writes "généralisation", not "générisation") → generization.
+- TERM morphisme de transition → transition morphism.
+- TERM sous-préschéma des coïncidences → sub-prescheme of coincidences.
+- TERM majorer (a sub-prescheme majorizes an open subset) → dominate, after the glossary's "majoré par → dominated by".
+- TERM ind-constructible, pro-constructible → ind-constructible, pro-constructible.
+- TERM premier membre → left-hand side; Fin de la démonstration de → End of the proof of.
+- TERM Bourbaki citation (20.3.8.3): "2\textsuperscript{e} éd." kept as a French abbreviation; "Exemple~I" → "Example~I".

@@ -1,0 +1,13 @@
+- TRANSCRIPTION? (20.1.8) — "une section $s$ de $\sh{L}$ au-dessus de $X$ sera appelée une section méromorphe régulière de $\sh{L}$": the context (regular meromorphic sections over $U$) suggests a section of $\sh{M}_X(\sh{L})$. Translated as written.
+- TRANSCRIPTION? (20.1.13) — `\sref{IV.20.2.13}[(i)]` for $M(Y)=R(Y)$: that identification is stated in (20.2.13, (ii)), not (i). Kept.
+- TRANSCRIPTION? (20.1.13) — "$Y^\mathrm{an}$ ayant même espace topologique sous-jacent": the points of $Y^{\mathrm{an}}$ are the closed points of $Y$, with the classical topology; possibly missing words or an imprecision of the original. Translated as written.
+- TERM anneau total des fractions → total ring of fractions; élément régulier → regular element; homothétie → homothety.
+- TERM strictement sans torsion → strictly torsion-free (glossary: sans torsion → torsion-free).
+- TERM faisceau d'anneaux (de modules) de fractions à dénominateurs dans $\sh{S}$ → sheaf of rings (of modules) of fractions with denominators in $\sh{S}$.
+- TERM faisceau des germes de fonctions (sections) méromorphes → sheaf of germs of meromorphic functions (sections); fonction / section méromorphe régulière → regular meromorphic function / section.
+- TERM « fibre par fibre » (stalks of a sheaf, 20.1.3) → ``stalk by stalk'' (glossary: fibre of a sheaf → stalk).
+- TERM anneau (local) factoriel → factorial (local) ring; anneau local parafactoriel → parafactorial local ring; cycle $1$-codimensionnel → $1$-codimensional cycle.
+- TERM immersion transversalement régulière → transversally regular immersion; diviseur relatif → relative divisor; fonction méromorphe relative → relative meromorphic function.
+- TERM diviseurs positifs → positive divisors (EGA's term, i.e. effective divisors; glossary "positif" = ≥ 0).
+- TERM profondeur → depth; section hyperplane → hyperplane section; groupe de Picard → Picard group; espace analytique complexe → complex analytic space; fidèle platitude → faithful flatness.
+- TERM chap.~I, chap.~II à IV (EGA's own chapters) → Chapter~I, Chapters~II to IV; « Main theorem » de Zariski → Zariski's ``main theorem'' (glossary); Les n\textsuperscript{os} → N\textsuperscript{os} (n\textsuperscript{o} kept as reference text).
