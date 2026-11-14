@@ -34,7 +34,9 @@
 \makeatother
 \usepackage[hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}% unique link targets for tagged formulas
 \usepackage{bookmark}
-\setlength{\emergencystretch}{3em}
+\setlength{\emergencystretch}{6em}
+% Contents: room for four-digit page numbers.
+\makeatletter\renewcommand\@pnumwidth{2.1em}\renewcommand\@tocrmarg{3.1em}\makeatother
 
 % ---- notation ---------------------------------------------------------------
 \newcommand{\sh}[1]{\mathscr{#1}}
@@ -91,8 +93,16 @@
   \else
     \marginnote{\scriptsize[#1\if\relax\detokenize{#1}\relax\else\,|\,\fi#2]}%
   \fi}
+% At the start of a list item (a proof, an enumerated item) the note waits until the item label is set; set before it,
+% it stops the label from being placed and the label is printed over the first words.
 \AddToHook{para/begin}{\ifx\ega@pendingnote\relax\else
-  \let\ega@note\ega@pendingnote\global\let\ega@pendingnote\relax\marginnote{\ega@note}\fi}
+  \let\ega@note\ega@pendingnote\global\let\ega@pendingnote\relax
+  \if@inlabel\global\let\ega@labelnote\ega@note
+    \everypar\expandafter{\the\everypar\ega@emitlabelnote}%
+  \else\marginnote{\ega@note}\fi\fi}
+\def\ega@emitlabelnote{\ifx\ega@labelnote\relax\else
+  \marginnote{\ega@labelnote}\global\let\ega@labelnote\relax\fi}
+\global\let\ega@labelnote\relax
 \makeatother
 
 % ---- numbered paragraphs and statements -------------------------------------
