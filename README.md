@@ -43,6 +43,8 @@ All editions of EGA, FGA and SGA made in this project are listed in
 
 ## Contents
 
+The current release is [v2026-11-14-english-edition](https://github.com/KokunoYumeto/ega-en/releases/tag/v2026-11-14-english-edition): [the PDF](https://github.com/KokunoYumeto/ega-en/releases/download/v2026-11-14-english-edition/EGA_EN.pdf) and [the LaTeX sources (ZIP)](https://github.com/KokunoYumeto/ega-en/releases/download/v2026-11-14-english-edition/EGA_EN_tex_sources.zip).
+
 [pdf/EGA_EN.pdf](pdf/EGA_EN.pdf) is the whole translation in one PDF: the Introduction; Chapter 0, §§1–23;
 Chapters I–IV; and the bibliographies, indexes, errata and addenda of the original volumes, each after the chapter it
 belongs to.
